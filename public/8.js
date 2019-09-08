@@ -2055,7 +2055,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
-                        src: __webpack_require__(536),
+                        src: __webpack_require__(531),
                         alt: "cust1"
                       }
                     })
@@ -2108,7 +2108,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
-                        src: __webpack_require__(539),
+                        src: __webpack_require__(534),
                         alt: "cust2"
                       }
                     })
@@ -2630,14 +2630,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 536:
+/***/ 531:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 539:
+/***/ 534:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";

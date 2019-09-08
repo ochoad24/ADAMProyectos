@@ -873,7 +873,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "full",
                       attrs: {
-                        src: __webpack_require__(536),
+                        src: __webpack_require__(531),
                         alt: "1"
                       }
                     })
@@ -885,7 +885,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "full",
                       attrs: {
-                        src: __webpack_require__(537),
+                        src: __webpack_require__(532),
                         alt: "2"
                       }
                     })
@@ -895,7 +895,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "full",
                       attrs: {
-                        src: __webpack_require__(538),
+                        src: __webpack_require__(533),
                         alt: "2"
                       }
                     })
@@ -1418,7 +1418,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             images: [__webpack_require__(669), __webpack_require__(670), __webpack_require__(757)],
             profile_name: ['Clinton Leo', 'Tony', 'Jenny Kerry'],
-            profile_pic: [__webpack_require__(679), __webpack_require__(536), __webpack_require__(537)],
+            profile_pic: [__webpack_require__(679), __webpack_require__(531), __webpack_require__(532)],
             desig: ['Designer,', 'Editor,', 'Tester,'],
             desigtag: ['Team Lead.', 'Manager.', 'Trainee.'],
             currentNumber: 0
@@ -25496,21 +25496,21 @@ return jQuery;
 
 /***/ }),
 
-/***/ 536:
+/***/ 531:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 537:
+/***/ 532:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 538:
+/***/ 533:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";

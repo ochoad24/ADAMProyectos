@@ -26162,7 +26162,7 @@ module.exports = function isNumber(num) {
 /***/ 1609:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isBuffer = __webpack_require__(541);
+var isBuffer = __webpack_require__(542);
 var toString = Object.prototype.toString;
 
 /**
@@ -27090,7 +27090,7 @@ function toRegex(pattern, contains, isNegated) {
 /***/ 1619:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isBuffer = __webpack_require__(541);
+var isBuffer = __webpack_require__(542);
 var toString = Object.prototype.toString;
 
 /**
@@ -41242,7 +41242,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 541:
+/***/ 542:
 /***/ (function(module, exports) {
 
 /*!

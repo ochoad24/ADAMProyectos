@@ -1,22 +1,22 @@
 webpackJsonp([70],{
 
-/***/ 1553:
+/***/ 1409:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1554);
+var content = __webpack_require__(1410);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("48ff5b68", content, false, {});
+var update = __webpack_require__(26)("0d394800", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48d12674\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./simple_tables.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48d12674\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./simple_tables.vue");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-86fcc26e\",\"scoped\":true,\"hasInlineConfig\":true}!./alertmessage.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-86fcc26e\",\"scoped\":true,\"hasInlineConfig\":true}!./alertmessage.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1554:
+/***/ 1410:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,14 +35,14 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.table td{\n    vertical-align: middle;\n}\n", ""]);
+exports.push([module.i, "\n.alert-message[data-v-86fcc26e] {\n    margin      : 13px 0;\n    padding     : 20px;\n    border-left : 3px solid #eee;\n}\n.alert-message h4[data-v-86fcc26e] {\n    margin-top    : 0;\n    margin-bottom : 5px;\n}\n.alert-message p[data-v-86fcc26e]:last-child {\n    margin-bottom : 0;\n}\n.alert-message code[data-v-86fcc26e] {\n    background-color : #fff;\n    border-radius    : 3px;\n}\n.alert-message-success[data-v-86fcc26e] {\n    background-color : #F4FDF0;\n    border-color     : #22d69d;\n}\n.alert-message-success h4[data-v-86fcc26e] {\n    color : #22d69d;\n}\n.alert-message-danger[data-v-86fcc26e] {\n    background-color : #fdf7f7;\n    border-color     : #fb8678;\n}\n.alert-message-danger h4[data-v-86fcc26e] {\n    color : #fb8678;\n}\n.alert-message-warning[data-v-86fcc26e] {\n    background-color : #fcf8f2;\n    border-color     : #ffb65f;\n}\n.alert-message-warning h4[data-v-86fcc26e] {\n    color : #ffb65f;\n}\n.alert-message-info[data-v-86fcc26e] {\n    background-color : #f4f8fa;\n    border-color     : #4fc1e9;\n}\n.alert-message-info h4[data-v-86fcc26e] {\n    color : #4fc1e9;\n}\n.alert-message-default[data-v-86fcc26e] {\n    background-color : #EEE;\n    border-color     : #dcdcdc;\n}\n.alert-message-notice[data-v-86fcc26e] {\n    background-color : #FCFCDD;\n    border-color     : #BDBD89;\n}\n.alert-message-notice h4[data-v-86fcc26e] {\n    color : #444;\n}\n/*list styles*/\n.styled-ul[data-v-86fcc26e] {\n    list-style: disc;\n}\n.styled-ul li ul[data-v-86fcc26e] {\n    list-style-type: circle;\n}\n/*breadcrumbs*/\n.breadcrumb1 > li + li[data-v-86fcc26e]:before {\n    content: \"\\BB\";\n}\n.breadcrumb2 > li + li[data-v-86fcc26e]:before {\n    content: \"\\203A\";\n}\n.breadcrumb3 > li + li[data-v-86fcc26e]:before {\n    content: \"\\2013   \";\n}\n/*progress bar*/\n.box-body .progress[data-v-86fcc26e] {\n    margin-top :4px;\n}\n/*card*/\n.card[data-v-86fcc26e]{\n    margin-bottom: 2rem;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1555:
+/***/ 1411:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -478,2114 +478,907 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "simple_tables",
+    name: "general_components",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
+    data: function data() {
+        return {
+            items: [{
+                text: 'Dashboard',
+                href: '#'
+            }, {
+                text: 'UI Features',
+                href: '#'
+            }, {
+                text: 'General Components',
+                active: true
+            }]
+        };
+    },
 
     mounted: function mounted() {},
-    methods: {
-        hideModal: function hideModal() {
-            this.$refs.myModalRef.hide();
-            this.$refs.myModalRefTwo.hide();
-        }
-    },
     destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1556:
+/***/ 1412:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-lg-6" },
-          [
-            _c(
-              "card",
-              {
-                attrs: {
-                  title: "<i class='ti-layout-cta-left'></i> Basic Table"
-                }
-              },
-              [
-                _c("div", { staticClass: "table-responsive" }, [
-                  _c(
-                    "table",
-                    { staticClass: "table", attrs: { id: "table1" } },
-                    [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("#")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("First Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Last Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("City")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Department")])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Trey")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Armstrong")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Isadoreborough")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jewelery")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Cecile")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Kirlin")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("North Reillyshire")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Sports")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Murl")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Denesik")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Alvismouth")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Tools")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("4")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Allison")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Gleason")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("East Dinaton")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Electronics")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("5")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Mathilde")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Cassin")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("New Royce")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Home")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("6")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Maeve")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Gutkowski")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Lake Justynport")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Tools")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("7")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Hobart")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Marquardt")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Lake Martinefurt")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Kids")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("8")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Otha")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Legros")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("West Ameliaview")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Games")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("9")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Clint")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Metz")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Lake Rhianna")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Garden")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("10")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Patience")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Ferry")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Lake Veronica")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Games")])
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-lg-6" },
-          [
-            _c(
-              "card",
-              { attrs: { title: "<i class='ti-menu'></i> Bordered Table" } },
-              [
-                _c("div", { staticClass: "table-responsive" }, [
-                  _c(
-                    "table",
-                    { staticClass: "table table-bordered table-hover" },
-                    [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("#")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("First Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Last Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Department")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Status")])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Loyce")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Larson")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Industrial")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "span",
-                              { staticClass: "badge badge-success p-1" },
-                              [_vm._v("Approved")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Vincenzo")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Bashirian")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Baby")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-danger" }, [
-                              _vm._v("Blocked")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Winona")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Hagenes")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Health")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "span",
-                              { staticClass: "badge badge-success p-1" },
-                              [_vm._v("Approved")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("4")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Clark")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Ebert")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Tools")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "span",
-                              { staticClass: "badge badge-success p-1" },
-                              [_vm._v("Approved")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("5")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Waino")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Labadie")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Music")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "span",
-                              { staticClass: "badge badge-success p-1" },
-                              [_vm._v("Suspended")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("6")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jackson")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Abshire")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Shoes")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-danger" }, [
-                              _vm._v("Blocked")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("7")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Erica")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Lehner")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Shoes")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-warning" }, [
-                              _vm._v("Suspended")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("8")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Dorris")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Bins")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Outdoors")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "span",
-                              { staticClass: "badge badge-success p-1" },
-                              [_vm._v("Approved")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("9")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Norene")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Rolfson")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Baby")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-info" }, [
-                              _vm._v("Pending")
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("10")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Katharina")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Kovacek")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Garden")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-info" }, [
-                              _vm._v("Suspended")
-                            ])
-                          ])
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-lg-12" },
-          [
-            _c(
-              "card",
-              {
-                attrs: {
-                  title:
-                    "<i class='ti-list'></i> Data Table with Action buttons"
-                }
-              },
-              [
-                _c("div", { staticClass: "table-responsive" }, [
-                  _c(
-                    "table",
-                    {
-                      staticClass: "table table-bordred table-striped",
-                      attrs: { id: "mytable" }
-                    },
-                    [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("email")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Phone")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Edit")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Delete")])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("Ambrose Schulist")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Ambrose.Schulist@hotmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("098-354-8863")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Bernadette Medhurst")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v("Bernadette.Medhurst75@hotmail.com")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("258-452-3348")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Hoyt Franecki")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Hoyt.Franecki@yahoo.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("648-323-5530")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Kianna Lockman")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Kianna.Lockman@gmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("551-834-3163")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Sheldon Howe")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Sheldon_Howe94@yahoo.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("704-582-5580")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Timmothy Mertz")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Timmothy72@gmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("641-915-3609")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Faye Mayer")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Faye34@gmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("786-093-2620")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Alfred Watsica")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Alfred34@gmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("294-242-3621")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Vella Hammes")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Vella.Hammes40@hotmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("063-136-5606")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Evans Trantow")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Evans90@yahoo.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("171-105-6990")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaledit",
-                                        modifiers: { modaledit: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "primary" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-pencil"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "p",
-                              [
-                                _c(
-                                  "b-btn",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "b-modal",
-                                        rawName: "v-b-modal.modaldelete",
-                                        modifiers: { modaldelete: true }
-                                      }
-                                    ],
-                                    attrs: { variant: "danger" }
-                                  },
-                                  [
-                                    _c("span", {
-                                      staticClass: "fa fa-fw ti-trash"
-                                    })
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
       _c(
-        "b-modal",
-        {
-          ref: "myModalRefTwo",
-          attrs: { id: "modaledit", title: "Edit details", "ok-only": true }
-        },
+        "div",
+        { staticClass: "col-md-6" },
         [
-          _c("div", { staticClass: "modal-body" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "form-control ",
-                attrs: { type: "text", placeholder: "Joseph Lynch" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "form-control ",
-                attrs: { type: "text", placeholder: "joseph34@testmail.com" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "form-control ",
-                attrs: { type: "text", placeholder: "456-632-5687" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
           _c(
-            "div",
-            {
-              staticClass: "w-100",
-              attrs: { slot: "modal-footer" },
-              slot: "modal-footer"
-            },
+            "card",
+            { attrs: { title: "<i class='ti-layers'></i> Tabbed card" } },
             [
               _c(
-                "b-btn",
-                {
-                  staticClass: "float-right",
-                  attrs: { size: "sm", variant: "success" },
-                  on: { click: _vm.hideModal }
-                },
+                "b-tabs",
                 [
-                  _c("span", { staticClass: "ti-check" }),
-                  _vm._v("Update\n            ")
+                  _c("b-tab", { attrs: { title: "Tab 1", active: "" } }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n                            When an unknown printer took a galley of type and scrambled it to make a\n                            type specimenbook.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "It has survived not only five centuries, but also the leap into electronic\n                            typesetting, remaining essentially unchanged.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "It was popularised in the 1960s with the release of Letraset sheets\n                            containing Lorem Ipsum passages, and software like Aldus PageMaker.\n                        "
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("b-tab", { attrs: { title: "Tab 2" } }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n                            When an unknown printer took a galley of type and scrambled it to make a\n                            type specimenbook.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "It has survived not only five centuries, but also the leap into electronic\n                            typesetting, remaining essentially unchanged.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "It was popularised in the 1960s with the release of Letraset sheets\n                            containing Lorem Ipsum passages, and software like Aldus PageMaker.\n                        "
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-menu'></i> Progress Bars" } },
+            [
+              _c(
+                "div",
+                { staticClass: "box-body" },
+                [
+                  _c("p", [_vm._v("Default")]),
+                  _vm._v(" "),
+                  _c("b-progress", {
+                    staticClass: "mb-3",
+                    attrs: { value: 25, max: 100 }
+                  }),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Striped")]),
+                  _vm._v(" "),
+                  _c("b-progress", {
+                    staticClass: "mb-2",
+                    attrs: { value: 50, variant: "success", striped: true }
+                  }),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Active")]),
+                  _vm._v(" "),
+                  _c("b-progress", {
+                    staticClass: "mb-3",
+                    attrs: { value: 75, variant: "danger", animated: true }
+                  })
+                ],
+                1
+              )
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-alert'></i> Alerts" } },
+            [
+              _c("div", { staticClass: "alert alert-success" }, [
+                _c("p", { staticClass: "mt-1 mb-1" }, [
+                  _vm._v(
+                    "\n                        Well done! You are reading a default Alert message.\n                    "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "alert alert-danger" }, [
+                _c("strong", [_vm._v("Oh! You can")]),
+                _vm._v(" "),
+                _c("a", { staticClass: "alert-link", attrs: { href: "#" } }, [
+                  _vm._v(
+                    "\n                        Redirect to me\n                    "
+                  )
+                ]),
+                _vm._v(" clicking the link on the Alert.\n                ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "b-alert",
+                { attrs: { show: "", dismissible: "", variant: "primary" } },
+                [
+                  _c("strong", [_vm._v("Heads up!")]),
+                  _vm._v(
+                    " You are looking at a Dismissable Alert.\n                "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-alert",
+                { attrs: { show: "", dismissible: "", variant: "warning" } },
+                [
+                  _vm._v(
+                    "\n                    Hey! You are looking at Dismissable Alert with animation.\n                "
+                  )
                 ]
               )
             ],
             1
           )
-        ]
+        ],
+        1
       ),
       _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
       _c(
-        "b-modal",
-        {
-          ref: "myModalRef",
-          attrs: { id: "modaldelete", title: "Delete Details" }
-        },
+        "div",
+        { staticClass: "col-md-6" },
         [
-          _c("div", { staticClass: "modal-body" }, [
-            _c("div", { staticClass: "alert alert-info" }, [
-              _c("span", { staticClass: "glyphicon glyphicon-info-sign" }),
-              _vm._v(
-                "  Are you sure you want to\n                delete this record ?\n            "
-              )
-            ])
-          ]),
-          _vm._v(" "),
           _c(
-            "div",
-            {
-              staticClass: "float-right",
-              attrs: { slot: "modal-footer" },
-              slot: "modal-footer"
-            },
+            "card",
+            { attrs: { title: " <i class='ti-notepad'></i> Notes" } },
             [
               _c(
-                "button",
-                {
-                  staticClass: "btn btn-danger",
-                  attrs: { type: "button", "data-dismiss": "modal" },
-                  on: { click: _vm.hideModal }
-                },
+                "div",
+                { staticClass: "alert-message alert-message-success" },
                 [
-                  _c("span", { staticClass: "ti-check" }),
-                  _vm._v(" Yes\n            ")
+                  _c("h4", [
+                    _vm._v(
+                      "\n                        Alert Message Success\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "fnt_size" }, [
+                    _vm._v(
+                      "\n                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n                        Ipsum has been the industry's standard dummy text ever since the 1500s.\n                        "
+                    ),
+                    _c("strong", [
+                      _vm._v(
+                        "\n                            strong message\n                        "
+                      )
+                    ]),
+                    _vm._v(" .\n                    ")
+                  ])
                 ]
               ),
               _vm._v(" "),
               _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  attrs: { type: "button", "data-dismiss": "modal" },
-                  on: { click: _vm.hideModal }
-                },
+                "div",
+                { staticClass: "alert-message alert-message-default" },
                 [
-                  _c("span", { staticClass: "ti-close" }),
-                  _vm._v(" No\n            ")
+                  _c("h4", [
+                    _vm._v(
+                      "\n                        Alert Message Default\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "fnt_size" }, [
+                    _vm._v(
+                      "\n                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem\n                        Ipsum has been the industry's standard dummy text ever since the 1500s.\n                        "
+                    ),
+                    _c("strong", [
+                      _vm._v(
+                        "\n                            strong message\n                        "
+                      )
+                    ]),
+                    _vm._v(" .\n                    ")
+                  ])
                 ]
               )
             ]
           )
-        ]
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: { title: "<i class='ti-settings'></i> Typography Heading" }
+            },
+            [
+              _c("div", { staticClass: "box-body text-center" }, [
+                _c("h1", [
+                  _vm._v(
+                    "\n                        h1. Bootstrap heading\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h2", [
+                  _vm._v(
+                    "\n                        h2. Bootstrap heading\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h3", [
+                  _vm._v(
+                    "\n                        h3. Bootstrap heading\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [
+                  _vm._v(
+                    "\n                        h4. Bootstrap heading\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h5", [
+                  _vm._v(
+                    "\n                        h5. Bootstrap heading\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h6", [
+                  _vm._v(
+                    "\n                        h6. Bootstrap heading\n                    "
+                  )
+                ])
+              ])
+            ]
+          )
+        ],
+        1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
-            _c(
-              "card",
-              { attrs: { title: "<i class='ti-list-ol'></i> Basic Table 2" } },
-              [
-                _c("div", { staticClass: "table-responsive" }, [
-                  _c(
-                    "table",
-                    { staticClass: "table table-bordered table-hover" },
-                    [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("#")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("User Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Phone")])
-                        ])
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: " <i class='ti-menu'></i> Horizontal Description"
+              }
+            },
+            [
+              _c("div", { staticClass: "box-body" }, [
+                _c("dl", { staticClass: "row" }, [
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v(
+                      "\n                            Description lists\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            A description list is perfect for defining terms.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v("Question")
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            Vestibulum id ligula porta felis euismod semper eget lacinia odio.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v(
+                      "\n                            Progress bar\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            Etiam porta sem malesuada magna mollis euismod.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v("Answer")
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, justo\n                            sit amet risus.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v(
+                      "\n                            Description lists\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            A description list is perfect for defining terms.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v("Question")
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            Vestibulum id ligula porta felis euismod semper.\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("dt", { staticClass: "col-4 text-right" }, [
+                    _vm._v("Answer")
+                  ]),
+                  _vm._v(" "),
+                  _c("dd", { staticClass: "col-8" }, [
+                    _vm._v(
+                      "\n                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, justo\n                            sit amet risus.\n                        "
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-4" },
+        [
+          _c(
+            "card",
+            {
+              attrs: { title: "<i class='ti-view-list-alt'></i> Unstyled List" }
+            },
+            [
+              _c("div", { staticClass: "box-body" }, [
+                _c("ul", { staticClass: "list-unstyled" }, [
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Lorem ipsum dolor sit amet\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Consectetur adipiscing elit\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Integer molestie lorem at massa\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Facilisis in pretium nisl aliquet\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Nulla volutpat aliquam velit\n                            "
+                    ),
+                    _c("ul", [
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Phasellus iaculis neque\n                                "
+                        )
                       ]),
                       _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-default" }, [
-                            _vm._v("1")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-default" }, [
-                            _vm._v("Duncan Carroll")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-default" }, [
-                            _vm._v("Duncan43")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-default" }, [
-                            _vm._v("597-819-8431")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("2")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("Dewitt Cormier")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("Dewitt_Cormier99")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("741-099-5054")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("3")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Jarrod Gislason")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Jarrod4")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("834-470-1425")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("4")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Hailey Bruen")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Hailey.Bruen23")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("970-037-5586")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-danger" }, [_vm._v("5")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("Carmella Sanford")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("Carmella_Sanford54")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("833-679-6170")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("6")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Rafaela Reilly")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Rafaela.Reilly33")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("350-714-3505")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("7")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("Reta Beatty")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("Reta67")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-warning" }, [
-                            _vm._v("489-997-1458")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("8")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Allene Wisozk")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Allene.Wisozk18")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("367-444-4071")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("9")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Mariela Corwin")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Mariela.Corwin")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("158-603-0375")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("10")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Katlyn Kovacek")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Katlyn.Kovacek")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("883-968-9177")
-                          ])
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-md-6" },
-          [
-            _c(
-              "card",
-              { attrs: { title: "<i class='ti-list-ol'></i> Basic Table 3" } },
-              [
-                _c("div", { staticClass: "table-responsive" }, [
-                  _c(
-                    "table",
-                    { staticClass: "table table-bordered table-hover" },
-                    [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("#")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Name")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Department")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Salary")])
-                        ])
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Purus sodales ultricies\n                                "
+                        )
                       ]),
                       _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("1")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Joelle Ward")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Beauty")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$22777")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Sammie Bailey")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Movies")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$13132")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("3")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Kenton Tillman")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Grocery")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$6543")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("4")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Braxton Kohler")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Automotive")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$15224")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("5")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Delpha Durgan")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Automotive")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$21147")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("6")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Judy Abshire")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Tools")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$5690")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("7")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Ava Bogisich")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Games")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$33835")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("8")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Marta Osinski")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Toys")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$40918")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("9")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Salma Luettgen")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Shoes")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$47338")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("10")]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-success" }, [
-                            _vm._v("Breana Wolf")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-primary" }, [
-                            _vm._v("Games")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "bg-danger" }, [
-                            _vm._v("$14756")
-                          ])
-                        ])
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Vestibulum laoreet porttitor sem\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Ac tristique libero volutpat at\n                                "
+                        )
                       ])
-                    ]
-                  )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Faucibus porta lacus fringilla vel\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Aenean sit amet erat nunc\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Eget porttitor lorem\n                        "
+                    )
+                  ])
                 ])
-              ]
-            )
-          ],
-          1
-        )
-      ]),
+              ])
+            ]
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-lg-12" },
-          [
-            _c(
-              "card",
-              {
-                attrs: {
-                  title: "<i class='ti-layout-grid3'></i> Responsive Table"
-                }
-              },
-              [
-                _c("div", { staticClass: "table-responsive" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-4" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-list'></i> Unordered List" } },
+            [
+              _c("div", { staticClass: "box-body" }, [
+                _c("ul", { staticClass: "styled-ul" }, [
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Lorem ipsum dolor sit amet\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Consectetur adipiscing elit\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Integer molestie lorem at massa\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Facilisis in pretium nisl aliquet\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Nulla volutpat aliquam velit\n                            "
+                    ),
+                    _c("ul", [
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Phasellus iaculis neque\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Purus sodales ultricies\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Vestibulum laoreet porttitor sem\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Ac tristique libero volutpat at\n                                "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Faucibus porta lacus fringilla vel\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Aenean sit amet erat nunc\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Eget porttitor lorem\n                        "
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-4" },
+        [
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-list-ol'></i> Ordered Lists" } },
+            [
+              _c("div", { staticClass: "box-body" }, [
+                _c("ol", [
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Lorem ipsum dolor sit amet\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Consectetur adipiscing elit\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Integer molestie lorem at massa\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Facilisis in pretium nisl aliquet\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Nulla volutpat aliquam velit\n                            "
+                    ),
+                    _c("ol", [
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Phasellus iaculis neque\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Purus sodales ultricies\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Vestibulum laoreet porttitor sem\n                                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                                    Ac tristique libero volutpat at\n                                "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Faucibus porta lacus fringilla vel\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Aenean sit amet erat nunc\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                            Eget porttitor lorem\n                        "
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class='ti-angle-double-right'></i> Breadcrumbs"
+              }
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "bs-example" },
+                [
+                  _c("b-breadcrumb", { attrs: { items: _vm.items } }),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "breadcrumb breadcrumb1 brdr_mrg" }, [
+                    _c("li", { staticClass: "next1" }, [
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("Dashboard")])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "next1" }, [
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("Charts")])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _vm._v(
+                        "\n                            Flot Charts\n                        "
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
                   _c(
-                    "table",
-                    { staticClass: "table table-bordered table-striped" },
+                    "ul",
+                    {
+                      staticClass: "breadcrumb breadcrumb2 brdr_mrg",
+                      staticStyle: { "margin-bottom": "20px" }
+                    },
                     [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("Company")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("email")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Phone")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Department")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Salary")])
-                        ])
+                      _c("li", { staticClass: "next2" }, [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Dashboard")])
                       ]),
                       _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("Durgan - Sauer")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Durgan-Sauer23@yahoo.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("032-563-1943")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Music")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("44631")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Hickle LLC")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("HickleLLC.Cremin62@hotmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("158-351-5915")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Garden")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("4669")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Padberg - Cronin")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v("Padberg-Cronin.Kunde10@hotmail.com")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("265-460-4774")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Automotive")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("10214")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Lakin - Cronin")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Lakin-Cronin_Batz61@hotmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("443-924-7214")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Shoes")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("2949")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Bednar - Padberg")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Bednar-Padberg22@yahoo.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("700-808-9992")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Grocery")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("48239")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Gibson - DuBuque")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v("Gibson-DuBuque_Buckridge@yahoo.com")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("372-126-7393")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Sports")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("11656")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Huels - Schoen")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v("Huels-Schoen_Lubowitz40@hotmail.com")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("408-586-4486")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Books")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("43464")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Harber and Sons")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("HarberandSons60@hotmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("506-397-7192")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jewelery")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("10454")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Beer, Murray and Stracke")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v("BeerMurrayandStracke.Mertz@gmail.com")
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("202-293-9914")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Clothing")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("35082")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Schroeder Inc")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("SchroederInc_Grimes98@gmail.com")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("379-212-1752")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Baby")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("20828")])
-                        ])
+                      _c("li", { staticClass: "next2" }, [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Tables")])
                       ]),
                       _vm._v(" "),
-                      _c("tfoot", [
-                        _c("tr", [
-                          _c("th", [_vm._v("Company")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("email")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Phone")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Department")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Salary")])
-                        ])
+                      _c("li", [
+                        _vm._v(
+                          "\n                            Data Tables\n                        "
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "breadcrumb breadcrumb3 brdr_mrg",
+                      staticStyle: { "margin-bottom": "15px" }
+                    },
+                    [
+                      _c("li", { staticClass: "next" }, [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Dashboard")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "next1" }, [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Forms")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "\n                            Form Elements\n                        "
+                        )
                       ])
                     ]
                   )
-                ])
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ],
-    1
-  )
+                ],
+                1
+              )
+            ]
+          )
+        ],
+        1
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "modal fade",
-        attrs: {
-          id: "delete",
-          tabindex: "-1",
-          role: "dialog",
-          "aria-labelledby": "edit",
-          "aria-hidden": "true"
-        }
-      },
-      [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: {
-                    type: "button",
-                    "data-dismiss": "modal",
-                    "aria-hidden": "true"
-                  }
-                },
-                [_vm._v("×")]
-              ),
-              _vm._v(" "),
-              _c(
-                "h4",
-                {
-                  staticClass: "modal-title custom_align",
-                  attrs: { id: "Heading5" }
-                },
-                [_vm._v("Delete this entry")]
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header bg-primary" }, [
+            _c("h3", { staticClass: "card-title text-white" }, [
+              _vm._v(
+                "\n                        Card Primary\n                    "
               )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("div", { staticClass: "alert alert-info" }, [
-                _c("span", { staticClass: "glyphicon glyphicon-info-sign" }),
-                _vm._v(
-                  "  Are you sure you want to\n                        delete this record ?\n                    "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-footer " }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-danger",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [
-                  _c("span", { staticClass: "glyphicon glyphicon-ok-sign" }),
-                  _vm._v(" Yes\n                    ")
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [
-                  _c("span", { staticClass: "glyphicon glyphicon-remove" }),
-                  _vm._v(" No\n                    ")
-                ]
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _vm._v(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
               )
             ])
           ])
         ])
-      ]
-    )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header  bg-success" }, [
+            _c("h3", { staticClass: "card-title text-white" }, [
+              _vm._v(
+                "\n                        Card Success\n                    "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _vm._v(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header bg-warning" }, [
+            _c("h3", { staticClass: "card-title text-white" }, [
+              _vm._v(
+                "\n                        Card Warning\n                    "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _vm._v(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header bg-danger" }, [
+            _c("h3", { staticClass: "card-title text-white" }, [
+              _vm._v(
+                "\n                        Card Danger\n                    "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _vm._v(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header bg-info text-white" }, [
+            _c("h3", { staticClass: "card-title" }, [_vm._v("Card Info")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _vm._v(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _c("h3", { staticClass: "card-title" }, [
+              _vm._v(
+                "\n                        Card Default\n                    "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _vm._v(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -2593,31 +1386,31 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-48d12674", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-86fcc26e", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 476:
+/***/ 456:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1553)
+  __webpack_require__(1409)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1555)
+var __vue_script__ = __webpack_require__(1411)
 /* template */
-var __vue_template__ = __webpack_require__(1556)
+var __vue_template__ = __webpack_require__(1412)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-86fcc26e"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -2628,7 +1421,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/simple_tables.vue"
+Component.options.__file = "resources/components/pages/general_components.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -2637,9 +1430,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-48d12674", Component.options)
+    hotAPI.createRecord("data-v-86fcc26e", Component.options)
   } else {
-    hotAPI.reload("data-v-48d12674", Component.options)
+    hotAPI.reload("data-v-86fcc26e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

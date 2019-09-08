@@ -185,7 +185,7 @@ const routes = [{
             component: resolve => require(['./components/pages/complex_forms.vue'], resolve),
             meta: {
                 title: 'Complex Forms',
-                breadcrumb: [{
+                breadcrumb:  [{
                     html: '<i class="ti-home"></i> Dashboard',
                     href: '#/',
                 }, {

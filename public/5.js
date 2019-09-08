@@ -762,7 +762,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*chat*/\n.personal-chat .panel-heading span {\n    margin-top: 3px;\n}\n.personal-chat .panel-body {\n    padding: 0;\n}\n.personal-chat .options .dropdown-menu {\n    min-width: 100px;\n}\n.personal-chat .header-elements {\n    padding-top: 5px;\n    line-height: 18px;\n}\n.personal-chat .header-elements .status b {\n    color: #777;\n}\n.personal-chat .header-elements .status:after {\n    content: \"\";\n    position: absolute;\n    height: 9px;\n    width: 9px;\n    left: 45px;\n    top: 37px;\n    border: 2px solid #fff;\n    border-radius: 50%;\n    display: block;\n    background-color: #6cd187;\n}\n.personal-chat .chat-image {\n    margin-right: 10px;\n}\n.personal-chat .options {\n    margin-top: 5px;\n}\n.personal-chat .options .dropdown-menu li {\n    border-bottom: 1px solid #e5e5e5;\n}\n.personal-chat .options .dropdown-menu li:last-child {\n    border-bottom: 0;\n}\n.personal-chat .options .more {\n    -webkit-transform: rotate(90deg);\n    -moz-transform: rotate(90deg);\n    -ms-transform: rotate(90deg);\n    -o-transform: rotate(90deg);\n    transform: rotate(90deg);\n    display: inline-block;\n}\n.personal-chat .options .attachment {\n    -webkit-transform: rotate(45deg);\n    -moz-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    -o-transform: rotate(45deg);\n    transform: rotate(945deg);\n    display: inline-block;\n    font-size: 18px;\n}\n.personal-chat .options i {\n    padding: 5px;\n}\n.personal-chat .chat-conversation {\n    background-image: url(" + escape(__webpack_require__(542)) + ");\n}\n.personal-chat .conversation-list {\n    list-style: none;\n    padding: 0 9px 0 0;\n    margin: 0;\n}\n.personal-chat .conversation-list .chat-avatar {\n    display: inline-block;\n    float: left;\n    text-align: center;\n    width: 42px;\n}\n.personal-chat .conversation-list .chat-avatar img {\n    border-radius: 100%;\n    width: 100%;\n}\n.personal-chat .conversation-list .chat-avatar i {\n    font-size: 12px;\n    font-style: normal;\n}\n.personal-chat .conversation-list .conversation-text {\n    display: inline-block;\n    float: left;\n    font-size: 13px;\n    margin-left: 15px;\n    width: 70%;\n}\n.personal-chat .conversation-list  .ctext-wrap {\n    border-radius: 3px;\n    display: inline-block;\n    padding: 5px 10px;\n    position: relative;\n    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n}\n.personal-chat .conversation-list .conversers1 .ctext-wrap {\n    background: #D8F1E4;\n}\n.personal-chat .conversation-list .conversers2 .ctext-wrap {\n    background: #fff;\n}\n.personal-chat .conversation-list .conversers2 .ctext-wrap:after {\n    border-top-color: #fff;\n    border-right-color: #fff;\n}\n.personal-chat .conversation-list .ctext-wrap i {\n    color: #777;\n    display: block;\n    font-size: 11px;\n    font-style: normal;\n    position: relative;\n}\n.personal-chat .conversation-list .ctext-wrap p {\n    margin: 0;\n    padding-top: 3px;\n}\n.personal-chat .conversation-list .ctext-wrap:after {\n    right: 98%;\n    top: 0;\n    content: \" \";\n    height: 0;\n    width: 0;\n    position: absolute;\n    margin-left: -1px;\n    border-top: 0 solid #fff;\n    border-right: 12px solid #fff;\n    border-bottom: 14px solid transparent;\n}\n.personal-chat .conversation-list .odd .conversation-text {\n    float: right;\n    margin-right: 5px;\n    text-align: right;\n    width: 78%;\n}\n.personal-chat .conversation-list .odd .ctext-wrap:after {\n    border-color: rgba(238, 238, 242, 0);\n    left: 99%;\n    margin-right: -1px;\n    border-top: 0 solid #D8F1E4;\n    border-left: 12px solid #D8F1E4;\n    border-bottom: 14px solid transparent;\n}\n.personal-chat .text-field {\n    padding: 6px 10px;\n}\n.personal-chat #main_input_box .custom_textbox {\n    min-height: 42px;\n}\n.personal-chat .text-field .send-btn {\n    padding: 8px 8px 3px 2px;\n}\n.personal-chat .text-field .send-btn i {\n    font-size: 25px;\n    -webkit-transform: rotate(133deg);\n    -moz-transform: rotate(133deg);\n    -ms-transform: rotate(133deg);\n    -o-transform: rotate(133deg);\n    transform: rotate(133deg);\n    display: inline-block;\n}\n\n\n/*chat loader*/\n.personal-chat .ctext-wrap .reply {\n    width: 98px;\n    color: #777;\n}\n.personal-chat .spinner {\n    padding-top: 6px;\n}\n.personal-chat .spinner>div {\n    width: 5px;\n    height: 5px;\n    background-color: #777;\n    margin-right: 2px;\n    border-radius: 50%;\n    display: inline-block;\n    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n    animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n}\n.personal-chat .spinner .bounce1 {\n    -webkit-animation-delay: -0.32s;\n    animation-delay: -0.32s;\n}\n.personal-chat .spinner .bounce2 {\n    -webkit-animation-delay: -0.16s;\n    animation-delay: -0.16s;\n}\n@keyframes sk-bouncedelay {\n0%,\n    80%,\n    100% {\n        -webkit-transform: scale(0);\n        transform: translateY(-7px);\n}\n40% {\n        -webkit-transform: scale(1.0);\n        transform: translateY(0);\n}\n}\n.personal-chat .chat-conversation .ss-container{\n    height:380px !important;\n}\n@media(min-width: 768px) and (max-width:1024px){\n.personal-chat .chat-conversation .ss-container{\n        height:475px !important;\n}\n}\n.personal-chat .btn-secondary{\n    background-color: #0F9E5E;\n}\n.personal-chat .dropdown-menu .dropdown-item{\n    border-bottom: 1px solid #333 !important;\n}\n.personal-chat .btn-secondary,.personal-chat .btn-secondary:active{\n    background-color:rgba(0, 0, 0, 0.0) !important;\n    color: #333 !important;\n    border: none;\n    box-shadow: none !important;\n}\n.personal-chat .attachment-menu .btn-secondary:after,.personal-chat .content-menu .btn-secondary:after{\n    display: none;\n}\n.personal-chat .dropdown-menu{\n    padding: 0;\n}\n/*chat end*/\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*chat*/\n.personal-chat .panel-heading span {\n    margin-top: 3px;\n}\n.personal-chat .panel-body {\n    padding: 0;\n}\n.personal-chat .options .dropdown-menu {\n    min-width: 100px;\n}\n.personal-chat .header-elements {\n    padding-top: 5px;\n    line-height: 18px;\n}\n.personal-chat .header-elements .status b {\n    color: #777;\n}\n.personal-chat .header-elements .status:after {\n    content: \"\";\n    position: absolute;\n    height: 9px;\n    width: 9px;\n    left: 45px;\n    top: 37px;\n    border: 2px solid #fff;\n    border-radius: 50%;\n    display: block;\n    background-color: #6cd187;\n}\n.personal-chat .chat-image {\n    margin-right: 10px;\n}\n.personal-chat .options {\n    margin-top: 5px;\n}\n.personal-chat .options .dropdown-menu li {\n    border-bottom: 1px solid #e5e5e5;\n}\n.personal-chat .options .dropdown-menu li:last-child {\n    border-bottom: 0;\n}\n.personal-chat .options .more {\n    -webkit-transform: rotate(90deg);\n    -moz-transform: rotate(90deg);\n    -ms-transform: rotate(90deg);\n    -o-transform: rotate(90deg);\n    transform: rotate(90deg);\n    display: inline-block;\n}\n.personal-chat .options .attachment {\n    -webkit-transform: rotate(45deg);\n    -moz-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    -o-transform: rotate(45deg);\n    transform: rotate(945deg);\n    display: inline-block;\n    font-size: 18px;\n}\n.personal-chat .options i {\n    padding: 5px;\n}\n.personal-chat .chat-conversation {\n    background-image: url(" + escape(__webpack_require__(541)) + ");\n}\n.personal-chat .conversation-list {\n    list-style: none;\n    padding: 0 9px 0 0;\n    margin: 0;\n}\n.personal-chat .conversation-list .chat-avatar {\n    display: inline-block;\n    float: left;\n    text-align: center;\n    width: 42px;\n}\n.personal-chat .conversation-list .chat-avatar img {\n    border-radius: 100%;\n    width: 100%;\n}\n.personal-chat .conversation-list .chat-avatar i {\n    font-size: 12px;\n    font-style: normal;\n}\n.personal-chat .conversation-list .conversation-text {\n    display: inline-block;\n    float: left;\n    font-size: 13px;\n    margin-left: 15px;\n    width: 70%;\n}\n.personal-chat .conversation-list  .ctext-wrap {\n    border-radius: 3px;\n    display: inline-block;\n    padding: 5px 10px;\n    position: relative;\n    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n}\n.personal-chat .conversation-list .conversers1 .ctext-wrap {\n    background: #D8F1E4;\n}\n.personal-chat .conversation-list .conversers2 .ctext-wrap {\n    background: #fff;\n}\n.personal-chat .conversation-list .conversers2 .ctext-wrap:after {\n    border-top-color: #fff;\n    border-right-color: #fff;\n}\n.personal-chat .conversation-list .ctext-wrap i {\n    color: #777;\n    display: block;\n    font-size: 11px;\n    font-style: normal;\n    position: relative;\n}\n.personal-chat .conversation-list .ctext-wrap p {\n    margin: 0;\n    padding-top: 3px;\n}\n.personal-chat .conversation-list .ctext-wrap:after {\n    right: 98%;\n    top: 0;\n    content: \" \";\n    height: 0;\n    width: 0;\n    position: absolute;\n    margin-left: -1px;\n    border-top: 0 solid #fff;\n    border-right: 12px solid #fff;\n    border-bottom: 14px solid transparent;\n}\n.personal-chat .conversation-list .odd .conversation-text {\n    float: right;\n    margin-right: 5px;\n    text-align: right;\n    width: 78%;\n}\n.personal-chat .conversation-list .odd .ctext-wrap:after {\n    border-color: rgba(238, 238, 242, 0);\n    left: 99%;\n    margin-right: -1px;\n    border-top: 0 solid #D8F1E4;\n    border-left: 12px solid #D8F1E4;\n    border-bottom: 14px solid transparent;\n}\n.personal-chat .text-field {\n    padding: 6px 10px;\n}\n.personal-chat #main_input_box .custom_textbox {\n    min-height: 42px;\n}\n.personal-chat .text-field .send-btn {\n    padding: 8px 8px 3px 2px;\n}\n.personal-chat .text-field .send-btn i {\n    font-size: 25px;\n    -webkit-transform: rotate(133deg);\n    -moz-transform: rotate(133deg);\n    -ms-transform: rotate(133deg);\n    -o-transform: rotate(133deg);\n    transform: rotate(133deg);\n    display: inline-block;\n}\n\n\n/*chat loader*/\n.personal-chat .ctext-wrap .reply {\n    width: 98px;\n    color: #777;\n}\n.personal-chat .spinner {\n    padding-top: 6px;\n}\n.personal-chat .spinner>div {\n    width: 5px;\n    height: 5px;\n    background-color: #777;\n    margin-right: 2px;\n    border-radius: 50%;\n    display: inline-block;\n    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n    animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n}\n.personal-chat .spinner .bounce1 {\n    -webkit-animation-delay: -0.32s;\n    animation-delay: -0.32s;\n}\n.personal-chat .spinner .bounce2 {\n    -webkit-animation-delay: -0.16s;\n    animation-delay: -0.16s;\n}\n@keyframes sk-bouncedelay {\n0%,\n    80%,\n    100% {\n        -webkit-transform: scale(0);\n        transform: translateY(-7px);\n}\n40% {\n        -webkit-transform: scale(1.0);\n        transform: translateY(0);\n}\n}\n.personal-chat .chat-conversation .ss-container{\n    height:380px !important;\n}\n@media(min-width: 768px) and (max-width:1024px){\n.personal-chat .chat-conversation .ss-container{\n        height:475px !important;\n}\n}\n.personal-chat .btn-secondary{\n    background-color: #0F9E5E;\n}\n.personal-chat .dropdown-menu .dropdown-item{\n    border-bottom: 1px solid #333 !important;\n}\n.personal-chat .btn-secondary,.personal-chat .btn-secondary:active{\n    background-color:rgba(0, 0, 0, 0.0) !important;\n    color: #333 !important;\n    border: none;\n    box-shadow: none !important;\n}\n.personal-chat .attachment-menu .btn-secondary:after,.personal-chat .content-menu .btn-secondary:after{\n    display: none;\n}\n.personal-chat .dropdown-menu{\n    padding: 0;\n}\n/*chat end*/\n\n", ""]);
 
 // exports
 
@@ -1868,7 +1868,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(539),
+                    src: __webpack_require__(534),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1888,7 +1888,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(536),
+                    src: __webpack_require__(531),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1908,7 +1908,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(537),
+                    src: __webpack_require__(532),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1928,7 +1928,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(538),
+                    src: __webpack_require__(533),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1968,7 +1968,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(537),
+                    src: __webpack_require__(532),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -14283,35 +14283,35 @@ return jQuery;
 
 /***/ }),
 
-/***/ 536:
+/***/ 531:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 537:
+/***/ 532:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 538:
+/***/ 533:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 539:
+/***/ 534:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 542:
+/***/ 541:
 /***/ (function(module, exports) {
 
 module.exports = "/images/brick-wall.png?effad1520fc39d8897385d7004d2dbf4";

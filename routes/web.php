@@ -55,10 +55,12 @@ Route::group(['middleware'=>['guest']],function(){
     Route::put('/User/desactivar', 'UserController@desactivate');
 
     // Rutas para los Usuarios
+    // Rutas para las actividades
     Route::get('/Actividad', 'ActividadController@index');
-    // Route::post('/User/nuevo', 'UserController@store');
-    // Route::delete('/User/{usuario}/delete', 'UserController@drop');
-    // Route::put('/User/activar', 'UserController@activate');
-    // Route::put('/User/desactivar', 'UserController@desactivate');
+    Route::post('/actividad/registrar', 'ActividadController@store');
+    Route::post('/actividad/actualizar', 'ActividadController@edit');
+    Route::put('/actividad/activate', 'ActividadController@activate');
+    Route::put('/actividad/deactivate', 'ActividadController@deactivate');
+    Route::put('/actividad/delete', 'ActividadController@destroy');
 
 });

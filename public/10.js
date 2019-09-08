@@ -1833,7 +1833,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(539),
+                              src: __webpack_require__(534),
                               alt: "user"
                             }
                           })
@@ -1869,7 +1869,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(537),
+                              src: __webpack_require__(532),
                               alt: "user"
                             }
                           })
@@ -1905,7 +1905,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(538),
+                              src: __webpack_require__(533),
                               alt: "user"
                             }
                           })
@@ -12712,21 +12712,21 @@ if (false) {
 
 /***/ }),
 
-/***/ 537:
+/***/ 532:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 538:
+/***/ 533:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 539:
+/***/ 534:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
