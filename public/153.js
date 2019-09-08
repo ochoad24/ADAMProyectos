@@ -1,22 +1,22 @@
 webpackJsonp([153],{
 
-/***/ 1708:
+/***/ 2245:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1709);
+var content = __webpack_require__(2246);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("5caa5130", content, false, {});
+var update = __webpack_require__(26)("7460f0ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-77993d30\",\"scoped\":false,\"hasInlineConfig\":true}!./chartist.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-77993d30\",\"scoped\":false,\"hasInlineConfig\":true}!./chartist.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7644d2fd\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7644d2fd\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,38 +27,38 @@ if(false) {
 
 /***/ }),
 
-/***/ 1709:
+/***/ 2246:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);", ""]);
 
 // module
-exports.push([module.i, "\n.ct-label {\n  fill: rgba(0, 0, 0, 0.4);\n  color: rgba(0, 0, 0, 0.4);\n  font-size: 0.75rem;\n  line-height: 1;\n}\n.ct-chart-line .ct-label,\n.ct-chart-bar .ct-label {\n  display: block;\n  display: -webkit-box;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: -webkit-flex;\n  display: flex;\n}\n.ct-chart-pie .ct-label,\n.ct-chart-donut .ct-label {\n  dominant-baseline: central;\n}\n.ct-label.ct-horizontal.ct-start {\n  -webkit-box-align: flex-end;\n  -webkit-align-items: flex-end;\n  -ms-flex-align: flex-end;\n  align-items: flex-end;\n  -webkit-box-pack: flex-start;\n  -webkit-justify-content: flex-start;\n  -ms-flex-pack: flex-start;\n  justify-content: flex-start;\n  text-align: left;\n  text-anchor: start;\n}\n.ct-label.ct-horizontal.ct-end {\n  -webkit-box-align: flex-start;\n  -webkit-align-items: flex-start;\n  -ms-flex-align: flex-start;\n  align-items: flex-start;\n  -webkit-box-pack: flex-start;\n  -webkit-justify-content: flex-start;\n  -ms-flex-pack: flex-start;\n  justify-content: flex-start;\n  text-align: left;\n  text-anchor: start;\n}\n.ct-label.ct-vertical.ct-start {\n  -webkit-box-align: flex-end;\n  -webkit-align-items: flex-end;\n  -ms-flex-align: flex-end;\n  align-items: flex-end;\n  -webkit-box-pack: flex-end;\n  -webkit-justify-content: flex-end;\n  -ms-flex-pack: flex-end;\n  justify-content: flex-end;\n  text-align: right;\n  text-anchor: end;\n}\n.ct-label.ct-vertical.ct-end {\n  -webkit-box-align: flex-end;\n  -webkit-align-items: flex-end;\n  -ms-flex-align: flex-end;\n  align-items: flex-end;\n  -webkit-box-pack: flex-start;\n  -webkit-justify-content: flex-start;\n  -ms-flex-pack: flex-start;\n  justify-content: flex-start;\n  text-align: left;\n  text-anchor: start;\n}\n.ct-chart-bar .ct-label.ct-horizontal.ct-start {\n  -webkit-box-align: flex-end;\n  -webkit-align-items: flex-end;\n  -ms-flex-align: flex-end;\n  align-items: flex-end;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  text-align: center;\n  text-anchor: start;\n}\n.ct-chart-bar .ct-label.ct-horizontal.ct-end {\n  -webkit-box-align: flex-start;\n  -webkit-align-items: flex-start;\n  -ms-flex-align: flex-start;\n  align-items: flex-start;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  text-align: center;\n  text-anchor: start;\n}\n.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start {\n  -webkit-box-align: flex-end;\n  -webkit-align-items: flex-end;\n  -ms-flex-align: flex-end;\n  align-items: flex-end;\n  -webkit-box-pack: flex-start;\n  -webkit-justify-content: flex-start;\n  -ms-flex-pack: flex-start;\n  justify-content: flex-start;\n  text-align: left;\n  text-anchor: start;\n}\n.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {\n  -webkit-box-align: flex-start;\n  -webkit-align-items: flex-start;\n  -ms-flex-align: flex-start;\n  align-items: flex-start;\n  -webkit-box-pack: flex-start;\n  -webkit-justify-content: flex-start;\n  -ms-flex-pack: flex-start;\n  justify-content: flex-start;\n  text-align: left;\n  text-anchor: start;\n}\n.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start {\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: flex-end;\n  -webkit-justify-content: flex-end;\n  -ms-flex-pack: flex-end;\n  justify-content: flex-end;\n  text-align: right;\n  text-anchor: end;\n}\n.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end {\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: flex-start;\n  -webkit-justify-content: flex-start;\n  -ms-flex-pack: flex-start;\n  justify-content: flex-start;\n  text-align: left;\n  text-anchor: end;\n}\n.ct-grid {\n  stroke: rgba(0, 0, 0, 0.2);\n  stroke-width: 1px;\n  stroke-dasharray: 2px;\n}\n.ct-grid-background {\n  fill: none;\n}\n.ct-point {\n  stroke-width: 10px;\n  stroke-linecap: round;\n}\n.ct-line {\n  fill: none;\n  stroke-width: 4px;\n}\n.ct-area {\n  stroke: none;\n  fill-opacity: 0.1;\n}\n.ct-bar {\n  fill: none;\n  stroke-width: 10px;\n}\n.ct-slice-donut {\n  fill: none;\n  stroke-width: 60px;\n}\n.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut {\n  stroke: #d70206;\n}\n.ct-series-a .ct-slice-pie, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-area {\n  fill: #d70206;\n}\n.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut {\n  stroke: #f05b4f;\n}\n.ct-series-b .ct-slice-pie, .ct-series-b .ct-slice-donut-solid, .ct-series-b .ct-area {\n  fill: #f05b4f;\n}\n.ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut {\n  stroke: #f4c63d;\n}\n.ct-series-c .ct-slice-pie, .ct-series-c .ct-slice-donut-solid, .ct-series-c .ct-area {\n  fill: #f4c63d;\n}\n.ct-series-d .ct-point, .ct-series-d .ct-line, .ct-series-d .ct-bar, .ct-series-d .ct-slice-donut {\n  stroke: #d17905;\n}\n.ct-series-d .ct-slice-pie, .ct-series-d .ct-slice-donut-solid, .ct-series-d .ct-area {\n  fill: #d17905;\n}\n.ct-series-e .ct-point, .ct-series-e .ct-line, .ct-series-e .ct-bar, .ct-series-e .ct-slice-donut {\n  stroke: #453d3f;\n}\n.ct-series-e .ct-slice-pie, .ct-series-e .ct-slice-donut-solid, .ct-series-e .ct-area {\n  fill: #453d3f;\n}\n.ct-series-f .ct-point, .ct-series-f .ct-line, .ct-series-f .ct-bar, .ct-series-f .ct-slice-donut {\n  stroke: #59922b;\n}\n.ct-series-f .ct-slice-pie, .ct-series-f .ct-slice-donut-solid, .ct-series-f .ct-area {\n  fill: #59922b;\n}\n.ct-series-g .ct-point, .ct-series-g .ct-line, .ct-series-g .ct-bar, .ct-series-g .ct-slice-donut {\n  stroke: #0544d3;\n}\n.ct-series-g .ct-slice-pie, .ct-series-g .ct-slice-donut-solid, .ct-series-g .ct-area {\n  fill: #0544d3;\n}\n.ct-series-h .ct-point, .ct-series-h .ct-line, .ct-series-h .ct-bar, .ct-series-h .ct-slice-donut {\n  stroke: #6b0392;\n}\n.ct-series-h .ct-slice-pie, .ct-series-h .ct-slice-donut-solid, .ct-series-h .ct-area {\n  fill: #6b0392;\n}\n.ct-series-i .ct-point, .ct-series-i .ct-line, .ct-series-i .ct-bar, .ct-series-i .ct-slice-donut {\n  stroke: #f05b4f;\n}\n.ct-series-i .ct-slice-pie, .ct-series-i .ct-slice-donut-solid, .ct-series-i .ct-area {\n  fill: #f05b4f;\n}\n.ct-series-j .ct-point, .ct-series-j .ct-line, .ct-series-j .ct-bar, .ct-series-j .ct-slice-donut {\n  stroke: #dda458;\n}\n.ct-series-j .ct-slice-pie, .ct-series-j .ct-slice-donut-solid, .ct-series-j .ct-area {\n  fill: #dda458;\n}\n.ct-series-k .ct-point, .ct-series-k .ct-line, .ct-series-k .ct-bar, .ct-series-k .ct-slice-donut {\n  stroke: #eacf7d;\n}\n.ct-series-k .ct-slice-pie, .ct-series-k .ct-slice-donut-solid, .ct-series-k .ct-area {\n  fill: #eacf7d;\n}\n.ct-series-l .ct-point, .ct-series-l .ct-line, .ct-series-l .ct-bar, .ct-series-l .ct-slice-donut {\n  stroke: #86797d;\n}\n.ct-series-l .ct-slice-pie, .ct-series-l .ct-slice-donut-solid, .ct-series-l .ct-area {\n  fill: #86797d;\n}\n.ct-series-m .ct-point, .ct-series-m .ct-line, .ct-series-m .ct-bar, .ct-series-m .ct-slice-donut {\n  stroke: #b2c326;\n}\n.ct-series-m .ct-slice-pie, .ct-series-m .ct-slice-donut-solid, .ct-series-m .ct-area {\n  fill: #b2c326;\n}\n.ct-series-n .ct-point, .ct-series-n .ct-line, .ct-series-n .ct-bar, .ct-series-n .ct-slice-donut {\n  stroke: #6188e2;\n}\n.ct-series-n .ct-slice-pie, .ct-series-n .ct-slice-donut-solid, .ct-series-n .ct-area {\n  fill: #6188e2;\n}\n.ct-series-o .ct-point, .ct-series-o .ct-line, .ct-series-o .ct-bar, .ct-series-o .ct-slice-donut {\n  stroke: #a748ca;\n}\n.ct-series-o .ct-slice-pie, .ct-series-o .ct-slice-donut-solid, .ct-series-o .ct-area {\n  fill: #a748ca;\n}\n.ct-square {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-square:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 100%;\n}\n.ct-square:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-square > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-minor-second {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-minor-second:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 93.75%;\n}\n.ct-minor-second:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-minor-second > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-second {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-second:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 88.8888888889%;\n}\n.ct-major-second:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-second > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-minor-third {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-minor-third:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 83.3333333333%;\n}\n.ct-minor-third:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-minor-third > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-third {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-third:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 80%;\n}\n.ct-major-third:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-third > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-perfect-fourth {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-perfect-fourth:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 75%;\n}\n.ct-perfect-fourth:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-perfect-fourth > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-perfect-fifth {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-perfect-fifth:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 66.6666666667%;\n}\n.ct-perfect-fifth:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-perfect-fifth > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-minor-sixth {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-minor-sixth:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 62.5%;\n}\n.ct-minor-sixth:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-minor-sixth > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-golden-section {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-golden-section:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 61.804697157%;\n}\n.ct-golden-section:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-golden-section > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-sixth {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-sixth:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 60%;\n}\n.ct-major-sixth:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-sixth > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-minor-seventh {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-minor-seventh:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 56.25%;\n}\n.ct-minor-seventh:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-minor-seventh > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-seventh {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-seventh:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 53.3333333333%;\n}\n.ct-major-seventh:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-seventh > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-octave {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-octave:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 50%;\n}\n.ct-octave:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-octave > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-tenth {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-tenth:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 40%;\n}\n.ct-major-tenth:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-tenth > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-eleventh {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-eleventh:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 37.5%;\n}\n.ct-major-eleventh:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-eleventh > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-major-twelfth {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-major-twelfth:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 33.3333333333%;\n}\n.ct-major-twelfth:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-major-twelfth > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}\n.ct-double-octave {\n  display: block;\n  position: relative;\n  width: 100%;\n}\n.ct-double-octave:before {\n    display: block;\n    float: left;\n    content: \"\";\n    width: 0;\n    height: 0;\n    padding-bottom: 25%;\n}\n.ct-double-octave:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n.ct-double-octave > svg {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n}", ""]);
+exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General style\n----------------------------*/\nbody[data-v-7644d2fd] {\n    font-family: 'Open Sans', sans-serif;\n    height: 100%;\n    padding: 6.5% 0;\n}\n#sign-in[data-v-7644d2fd],\n#sign-up[data-v-7644d2fd] {\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n}\n.login-form[data-v-7644d2fd] {\n    background-color: rgba(255, 255, 255, .9);\n    border-radius: 4px;\n    padding-top: 15px;\n    padding-bottom: 15px;\n}\n.btn-primary[data-v-7644d2fd],\n.primary[data-v-7644d2fd],\n.tags a.primary[data-v-7644d2fd] {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.btn[data-v-7644d2fd]{\n    cursor: pointer;\n}\n.btn-primary[data-v-7644d2fd]:hover {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.icheckbox_minimal-blue[data-v-7644d2fd] {\n    background-position: -20px 0;\n}\na[data-v-7644d2fd]:hover,\na[data-v-7644d2fd]:focus {\n    text-decoration: none;\n}\n.social a[data-v-7644d2fd] {\n    border-radius: 50px;\n    padding: 10px 12px 2px 12px;\n    font-size: 25px;\n}\n.btn-facebook[data-v-7644d2fd],\n.btn-facebook[data-v-7644d2fd]:hover,\n.btn-facebook[data-v-7644d2fd]:focus {\n    color: #5F7AB3;\n    border: 1px solid #5F7AB3;\n}\n.btn-twitter[data-v-7644d2fd],\n.btn-twitter[data-v-7644d2fd]:hover,\n.btn-twitter[data-v-7644d2fd]:focus {\n    background: #3BACF2;\n    color: rgba(255, 255, 255, .85);\n    border: 1px solid #3BACF2;\n}\n.has-error .help-block[data-v-7644d2fd],\n.has-error .control-label[data-v-7644d2fd],\n.has-error .radio[data-v-7644d2fd],\n.has-error .checkbox[data-v-7644d2fd],\n.has-error .radio-inline[data-v-7644d2fd],\n.has-error .checkbox-inline[data-v-7644d2fd] {\n    color: #ff6666;\n}\n.has-error.radio label[data-v-7644d2fd],\n.has-error.checkbox label[data-v-7644d2fd],\n.has-success.radio label[data-v-7644d2fd],\n.has-success.checkbox label[data-v-7644d2fd] {\n    color: #333;\n}\n.radio[data-v-7644d2fd],\n.checkbox[data-v-7644d2fd] {\n    display: block;\n}\n.has-error .form-control[data-v-7644d2fd],\n.has-error .form-control[data-v-7644d2fd]:focus {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-success .form-control[data-v-7644d2fd],\n.has-success .form-control[data-v-7644d2fd]:focus {\n    border-color: #66cc99;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.btn-google[data-v-7644d2fd],\n.btn-google[data-v-7644d2fd]:hover,\n.btn-google[data-v-7644d2fd]:focus {\n    color: #dd4b39;\n    border: 1px solid #dd4b39;\n}\n.social .alter[data-v-7644d2fd] {\n    font-size: 21px;\n    color: #666;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n#forgot[data-v-7644d2fd]:hover {\n    color: #2a6496 !important;\n}\n@media screen and (max-width: 400px) {\n.mar-left5[data-v-7644d2fd] {\n        margin-left: 18px !important;\n        margin-top: -10px;\n}\n.mar-top4[data-v-7644d2fd] {\n        margin-top: -10px;\n}\n.mar-left[data-v-7644d2fd] {\n        margin-left: -5px !important;\n}\n.sign-up[data-v-7644d2fd] {\n        float: left !important;\n}\n#forgot[data-v-7644d2fd]::after {\n        content: \"\\A\";\n        white-space: pre;\n}\n}\n\n\n/* Chrome, Safari, Opera */\n@-webkit-keyframes CAnimation-data-v-7644d2fd {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n\n\n/* Standard syntax */\n@keyframes CAnimation-data-v-7644d2fd {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n.forgot[data-v-7644d2fd] {\n    color: #428BCA !important;\n}\na[data-v-7644d2fd]:hover {\n    text-decoration: none;\n}\n.radio label[data-v-7644d2fd],\n.checkbox label[data-v-7644d2fd] {\n    padding-left: 0;\n}\n@media (min-width: 768px) {\n.form_width[data-v-7644d2fd] {\n        margin-left: 12%;\n}\n}\n\n\n/* ===== Preloader =====*/\n.preloader[data-v-7644d2fd] {\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 100000;\n    backface-visibility: hidden;\n    background: #ffffff;\n}\n.loader_img[data-v-7644d2fd] {\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    background-position: center;\n    margin: -25px 0 0 -25px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1710:
+/***/ 2247:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1711);
+var content = __webpack_require__(2248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("1046cb21", content, false, {});
+var update = __webpack_require__(26)("59d4d976", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-77993d30\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./chartist.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-77993d30\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./chartist.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7644d2fd\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./reset_pass.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7644d2fd\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./reset_pass.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,50 +69,29 @@ if(false) {
 
 /***/ }),
 
-/***/ 1711:
+/***/ 2248:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.piechart .ct-label{\n    fill:#fff;\n}\n.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut{\n    stroke:#6699cc;\n}\n.ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut{\n    stroke:#66cc99;\n}\n.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut{\n    stroke: #ff6666;\n}\n.ct-series-c .ct-slice-pie{\n    fill:#66cc99;\n}\n.ct-series-a .ct-slice-pie{\n    fill:#6699cc;\n}\n.ct-series-b .ct-slice-pie{\n    fill:#ff6666;\n}\n.card-header div{\n    font-size: 16px;\n}\n@media(max-width:768px){\n#app .v-chartist-container .ct-labels foreignObject span{\n        transform: translate(-10px,15px)rotate(45deg);\n}\n}\n@media(max-width:320px){\n#app .v-chartist-container .ct-labels foreignObject span{\n        transform: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid.reset[data-v-7644d2fd] {\n    padding-top: 6.5%;\n    width: 100%;\n    top: 0;\n    height:100vh;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    background-size: 100% 100%;\n    overflow-y: auto;\n}\n.help.is-danger[data-v-7644d2fd],.fa-warning[data-v-7644d2fd]{\n    font-size: 13px;\n}\n.input.is-danger[data-v-7644d2fd]{\n    border: 1px solid #ff6666;\n}\n.reset .btn[data-v-7644d2fd]{\n    box-shadow: none;\n}\n#authentication .input[data-v-7644d2fd]:focus{\n        border-color: #6699cc;\n        box-shadow: none;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1712:
+/***/ 2249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_chartist__ = __webpack_require__(564);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_chartist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_v_chartist__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_chartist__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_chartist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_chartist__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(661);
 //
 //
 //
@@ -155,585 +134,248 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-var unsub;
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vee_validate__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "charts",
-    components: {
-        VueChartist: __WEBPACK_IMPORTED_MODULE_0_v_chartist___default.a
+    name: "reset_password",
+    mounted: function mounted() {},
+    methods: {
+        validateForm: function validateForm(scope) {
+            this.$validator.validateAll(scope).then(function (result) {
+                if (result) {
+                    // eslint-disable-next-line
+                    alert('Form Submitted!');
+                }
+            });
+        }
     },
-    mounted: function mounted() {
-        var _this = this;
-
-        unsub = this.$store.subscribe(function (mutation, state) {
-            if (mutation.type == "left_menu") {
-                setTimeout(function () {
-                    _this.$refs.area.renderChart();
-                    _this.$refs.chartist2.renderChart();
-                    _this.$refs.chartist3.renderChart();
-                    _this.$refs.chartist4.renderChart();
-                    _this.$refs.chartist6.renderChart();
-                    _this.$refs.chartist7.renderChart();
-                    _this.$refs.chartist8.renderChart();
-                });
-            }
-        });
-    },
-    data: function data() {
-        return {
-            // =======line chart start===========
-            line: {
-                data: {
-                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                    series: [[12, 9, 7, 8, 5], [2, 1, 3.5, 7, 3], [1, 3, 4, 5, 6]]
-                },
-                options: {
-                    fullWidth: true,
-                    chartPadding: {
-
-                        right: 40
-                    }
-                }
-            },
-            // =======Line chart end========
-            // =======area chart start========
-            area: {
-                data: {
-                    labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016'],
-                    series: [[2, 8, 3, 7, 4, 6, 4], [5, 2, 6, 2, 7, 2, 6]]
-                },
-                options: {
-                    top: 0,
-                    low: 1,
-                    showPoint: true,
-                    fullWidth: true,
-
-                    axisY: {
-                        labelInterpolationFnc: function labelInterpolationFnc(value) {
-                            return value / 1 + 'k';
-                        }
-                    },
-                    showArea: true
-                }
-            },
-            // =======area chart end========
-            series: {
-                data: {
-                    labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
-                    // Naming the series with the series object array notation
-                    series: [{
-                        name: 'series-1',
-                        data: [5, 2, -4, 2, 0, -2, 5, -3]
-                    }, {
-                        name: 'series-2',
-                        data: [4, 3, 5, 3, 1, 3, 6, 4]
-                    }, {
-                        name: 'series-3',
-                        data: [2, 4, 3, 1, 4, 5, 3, 2]
-                    }]
-                },
-                options: {
-                    fullWidth: true,
-                    // Within the series options you can use the series names
-                    // to specify configuration that will only be used for the
-                    // specific series.
-                    series: {
-                        'series-1': {
-                            lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist___default.a.Interpolation.step()
-                        },
-                        'series-2': {
-                            lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist___default.a.Interpolation.simple(),
-                            showArea: true
-                        },
-                        'series-3': {
-                            showPoint: false
-                        }
-                    }
-                },
-                responsiveOptions: [
-                // You can even use responsive configuration overrides to
-                // customize your series configuration even further!
-                ['screen and (max-width: 320px)', {
-                    series: {
-                        'series-1': {
-                            lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist___default.a.Interpolation.none()
-                        },
-                        'series-2': {
-                            lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist___default.a.Interpolation.none(),
-                            showArea: false
-                        },
-                        'series-3': {
-                            lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist___default.a.Interpolation.none(),
-                            showPoint: true
-                        }
-                    }
-                }]]
-            },
-            // =========================axis chart===========
-            axischart: {
-                data: {
-                    labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-                    series: [[12, 9, 7, 8, 5, 4, 6, 2, 3, 3, 4, 6], [4, 5, 3, 7, 3, 5, 5, 3, 4, 4, 5, 5], [5, 3, 4, 5, 6, 3, 3, 4, 5, 6, 3, 4]]
-                },
-                options: {
-                    fullWidth: true,
-                    axisX: {
-                        onlyInteger: true
-                    },
-                    axisY: {
-                        ticks: [0, 50, 75, 87.5, 100],
-                        low: 0
-                    },
-                    lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist___default.a.Interpolation.step(),
-                    showPoint: false
-                }
-            },
-            bar: {
-                data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                    series: [[5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8], [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]]
-                },
-                options: {
-                    seriesBarDistance: 15
-                },
-                responsiveOptions: [['screen and (min-width: 641px) and (max-width: 1024px)', {
-                    seriesBarDistance: 10,
-                    axisX: {
-                        labelInterpolationFnc: function labelInterpolationFnc(value) {
-                            return value;
-                        }
-                    }
-                }], ['screen and (max-width: 640px)', {
-                    seriesBarDistance: 5,
-                    axisX: {
-                        labelInterpolationFnc: function labelInterpolationFnc(value) {
-                            return value[0];
-                        }
-                    }
-                }]]
-            },
-            horizontal: {
-                data: {
-                    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                    series: [[5, 4, 3, 7, 5, 10, 3], [3, 2, 9, 5, 4, 6, 4]]
-                },
-                options: {
-                    seriesBarDistance: 10,
-                    reverseData: true,
-                    horizontalBars: true,
-                    axisY: {
-                        offset: 70
-                    }
-                }
-            },
-            // ======pie chart start=======
-            pie: {
-                data: {
-                    labels: ['A', 'B', 'C'],
-                    series: [20, 15, 40]
-                },
-                options: {
-                    labelInterpolationFnc: function labelInterpolationFnc(value) {
-                        return value[0];
-                    }
-                },
-                responsiveoptions: [['screen and (min-width: 640px)', {
-                    chartPadding: 30,
-                    labelOffset: 50,
-                    labelDirection: 'explode',
-                    labelInterpolationFnc: function labelInterpolationFnc(value) {
-                        return value;
-                    }
-                }], ['screen and (min-width: 1024px)', {
-                    labelOffset: 45,
-                    chartPadding: 20
-                }]]
-            },
-            // ======pie chart end================
-            // ======donut chart start=======
-            donut: {
-                data: {
-                    labels: ['A', 'B', 'C'],
-                    series: [30, 20, 50]
-                },
-                options: {
-                    donut: true,
-                    donutWidth: 60,
-                    labelInterpolationFnc: function labelInterpolationFnc(value) {
-                        return value[0];
-                    }
-                },
-                responsiveoptions: [['screen and (min-width: 640px)', {
-                    chartPadding: 30,
-                    labelOffset: 60,
-                    labelDirection: 'explode',
-                    labelInterpolationFnc: function labelInterpolationFnc(value) {
-                        return value;
-                    }
-                }], ['screen and (min-width: 1024px)', {
-                    labelOffset: 50,
-                    chartPadding: 20
-                }]]
-            },
-            // ======donut chart end================
-
-            //            //===========ploar chart===================
-            polar: {
-                data: {
-                    color: ['red'],
-                    labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],
-                    series: [[1, 2, 4, 8, 6, -2, -1, -4, -6, -2]]
-                },
-                options: {
-                    high: 10,
-                    low: -10,
-                    axisX: {
-                        labelInterpolationFnc: function labelInterpolationFnc(value, index) {
-                            return index % 2 === 0 ? value : null;
-                        }
-                    }
-                }
-            },
-            //            //===========ploar chart end===================
-            // =======line chart start===========
-            time: {
-                data: {
-                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                    series: [{
-                        name: 'series-1',
-                        data: [{ x: new Date(143134652600), y: 53 }, { x: new Date(143234652600), y: 40 }, { x: new Date(143340052600), y: 45 }, { x: new Date(143366652600), y: 40 }, { x: new Date(143410652600), y: 20 }, { x: new Date(143508652600), y: 32 }, { x: new Date(143569652600), y: 18 }, { x: new Date(143579652600), y: 11 }]
-                    }, {
-                        name: 'series-2',
-                        data: [{ x: new Date(143134652600), y: 53 }, { x: new Date(143234652600), y: 35 }, { x: new Date(143334652600), y: 30 }, { x: new Date(143384652600), y: 30 }, { x: new Date(143568652600), y: 10 }]
-                    }]
-                },
-                options: {
-                    fullWidth: true,
-                    chartPadding: {
-                        right: 40
-                    }
-                }
-            }
-            // =======Line chart end========
-
-        };
-    },
-
-    methods: {},
-    beforeRouteLeave: function beforeRouteLeave(to, from, next) {
-        unsub();next();
-    }
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1713:
+/***/ 2250:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "container-fluid reset" }, [
     _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-primary-card",
-              attrs: { header: "Chartist Line", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist3",
-                attrs: {
-                  data: _vm.line.data,
-                  options: _vm.line.options,
-                  type: "Line"
+      _c("div", { staticClass: "col-lg-4 col-sm-8 col-10 m-auto login-form" }, [
+        _c("h2", { staticClass: "text-center" }, [
+          _c("img", {
+            attrs: {
+              src: __webpack_require__(601),
+              alt: "Logo"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-xl-12" }, [
+            _c(
+              "form",
+              {
+                staticClass: "reset_validator",
+                attrs: { id: "authentication", "data-vv-scope": "form-1" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.validateForm("form-1")
+                  }
                 }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-primary-card",
-              attrs: { header: "Chartist Area", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "area",
-                attrs: {
-                  data: _vm.area.data,
-                  options: _vm.area.options,
-                  type: "Line"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-info-card",
-              attrs: { header: "Chartist bar", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist2",
-                attrs: {
-                  data: _vm.bar.data,
-                  options: _vm.bar.options,
-                  responsiveOptions: _vm.bar.responsiveOptions,
-                  type: "Bar"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-info-card",
-              attrs: { header: "Horizontal bar", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist2",
-                attrs: {
-                  data: _vm.horizontal.data,
-                  options: _vm.horizontal.options,
-                  type: "Bar"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-success-card",
-              attrs: { header: "Series Override", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist4",
-                attrs: {
-                  data: _vm.series.data,
-                  options: _vm.series.options,
-                  responsiveOptions: _vm.series.responsiveOptions,
-                  type: "Line"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-success-card",
-              attrs: { header: " Fixed Scale Axis Chart", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist5",
-                attrs: {
-                  data: _vm.axischart.data,
-                  options: _vm.axischart.options,
-                  type: "Line"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-info-card piechart",
-              attrs: { header: "Pie Chart", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist6",
-                attrs: {
-                  data: _vm.pie.data,
-                  options: _vm.pie.options,
-                  type: "Pie",
-                  responsiveOptions: _vm.pie.responsiveoptions
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-info-card",
-              attrs: { header: "Donut Chart", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist6",
-                attrs: {
-                  data: _vm.donut.data,
-                  options: _vm.donut.options,
-                  type: "Pie",
-                  responsiveOptions: _vm.donut.responsiveoptions
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-primary-card",
-              attrs: { header: "Polar Chart", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist7",
-                attrs: {
-                  data: _vm.polar.data,
-                  options: _vm.polar.options,
-                  type: "Bar"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-sm-6" },
-        [
-          _c(
-            "b-card",
-            {
-              staticClass: "bg-primary-card",
-              attrs: { header: "Time Series With Moment", "header-tag": "h4" }
-            },
-            [
-              _c("vue-chartist", {
-                ref: "chartist8",
-                attrs: {
-                  data: _vm.time.data,
-                  options: _vm.time.options,
-                  type: "Line"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      )
+              },
+              [
+                _c("div", { staticClass: "column is-12 row" }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass: "control has-icon has-icon-right col-sm-12"
+                    },
+                    [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "validate",
+                            rawName: "v-validate",
+                            value: "required|min:6",
+                            expression: "'required|min:6'"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        class: {
+                          input: true,
+                          "is-danger": _vm.errors.has("form-1.password")
+                        },
+                        attrs: {
+                          name: "password",
+                          type: "password",
+                          placeholder: "Password"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("i", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: _vm.errors.has("form-1.password"),
+                            expression: "errors.has('form-1.password')"
+                          }
+                        ],
+                        staticClass: "fa fa-warning text-danger"
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: _vm.errors.has("form-1.password"),
+                              expression: "errors.has('form-1.password')"
+                            }
+                          ],
+                          staticClass: "help is-danger text-danger"
+                        },
+                        [_vm._v(_vm._s(_vm.errors.first("form-1.password")))]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "column is-12 row" }, [
+                  _c(
+                    "p",
+                    {
+                      staticClass: "control has-icon has-icon-right col-sm-12"
+                    },
+                    [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "validate",
+                            rawName: "v-validate",
+                            value: "required|min:6|confirmed:password",
+                            expression: "'required|min:6|confirmed:password'"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        class: {
+                          input: true,
+                          "is-danger": _vm.errors.has("form-1.confirmpassword")
+                        },
+                        attrs: {
+                          name: "confirmpassword",
+                          type: "password",
+                          placeholder: "Confirm Password"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("i", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: _vm.errors.has("form-1.confirmpassword"),
+                            expression: "errors.has('form-1.confirmpassword')"
+                          }
+                        ],
+                        staticClass: "fa fa-warning text-danger"
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: _vm.errors.has("form-1.confirmpassword"),
+                              expression: "errors.has('form-1.confirmpassword')"
+                            }
+                          ],
+                          staticClass: "help is-danger text-danger"
+                        },
+                        [
+                          _vm._v(
+                            _vm._s(_vm.errors.first("form-1.confirmpassword"))
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(1)
+              ]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-xl-12" }, [
+      _c("h4", { staticClass: "text-center marginTB" }, [
+        _vm._v("Reset Password")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 text-center" }, [
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          staticClass: "btn btn-primary center-block",
+          attrs: { type: "submit", value: "Reset Password" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-77993d30", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7644d2fd", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 472:
+/***/ 513:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1708)
-  __webpack_require__(1710)
+  __webpack_require__(2245)
+  __webpack_require__(2247)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1712)
+var __vue_script__ = __webpack_require__(2249)
 /* template */
-var __vue_template__ = __webpack_require__(1713)
+var __vue_template__ = __webpack_require__(2250)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-7644d2fd"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -744,7 +386,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/chartist.vue"
+Component.options.__file = "resources/components/pages/reset_pass.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -753,9 +395,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-77993d30", Component.options)
+    hotAPI.createRecord("data-v-7644d2fd", Component.options)
   } else {
-    hotAPI.reload("data-v-77993d30", Component.options)
+    hotAPI.reload("data-v-7644d2fd", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -767,4506 +409,5118 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 601:
+/***/ (function(module, exports) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
-  if (true) {
-    // AMD. Register as an anonymous module unless amdModuleId is set
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-      return (root['Chartist'] = factory());
-    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof module === 'object' && module.exports) {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like environments that support module.exports,
-    // like Node.
-    module.exports = factory();
-  } else {
-    root['Chartist'] = factory();
-  }
-}(this, function () {
-
-/* Chartist.js 0.11.0
- * Copyright © 2017 Gion Kunz
- * Free to use under either the WTFPL license or the MIT license.
- * https://raw.githubusercontent.com/gionkunz/chartist-js/master/LICENSE-WTFPL
- * https://raw.githubusercontent.com/gionkunz/chartist-js/master/LICENSE-MIT
- */
-/**
- * The core module of Chartist that is mainly providing static functions and higher level functions for chart modules.
- *
- * @module Chartist.Core
- */
-var Chartist = {
-  version: '0.11.0'
-};
-
-(function (window, document, Chartist) {
-  'use strict';
-
-  /**
-   * This object contains all namespaces used within Chartist.
-   *
-   * @memberof Chartist.Core
-   * @type {{svg: string, xmlns: string, xhtml: string, xlink: string, ct: string}}
-   */
-  Chartist.namespaces = {
-    svg: 'http://www.w3.org/2000/svg',
-    xmlns: 'http://www.w3.org/2000/xmlns/',
-    xhtml: 'http://www.w3.org/1999/xhtml',
-    xlink: 'http://www.w3.org/1999/xlink',
-    ct: 'http://gionkunz.github.com/chartist-js/ct'
-  };
-
-  /**
-   * Helps to simplify functional style code
-   *
-   * @memberof Chartist.Core
-   * @param {*} n This exact value will be returned by the noop function
-   * @return {*} The same value that was provided to the n parameter
-   */
-  Chartist.noop = function (n) {
-    return n;
-  };
-
-  /**
-   * Generates a-z from a number 0 to 26
-   *
-   * @memberof Chartist.Core
-   * @param {Number} n A number from 0 to 26 that will result in a letter a-z
-   * @return {String} A character from a-z based on the input number n
-   */
-  Chartist.alphaNumerate = function (n) {
-    // Limit to a-z
-    return String.fromCharCode(97 + n % 26);
-  };
-
-  /**
-   * Simple recursive object extend
-   *
-   * @memberof Chartist.Core
-   * @param {Object} target Target object where the source will be merged into
-   * @param {Object...} sources This object (objects) will be merged into target and then target is returned
-   * @return {Object} An object that has the same reference as target but is extended and merged with the properties of source
-   */
-  Chartist.extend = function (target) {
-    var i, source, sourceProp;
-    target = target || {};
-
-    for (i = 1; i < arguments.length; i++) {
-      source = arguments[i];
-      for (var prop in source) {
-        sourceProp = source[prop];
-        if (typeof sourceProp === 'object' && sourceProp !== null && !(sourceProp instanceof Array)) {
-          target[prop] = Chartist.extend(target[prop], sourceProp);
-        } else {
-          target[prop] = sourceProp;
-        }
-      }
-    }
-
-    return target;
-  };
-
-  /**
-   * Replaces all occurrences of subStr in str with newSubStr and returns a new string.
-   *
-   * @memberof Chartist.Core
-   * @param {String} str
-   * @param {String} subStr
-   * @param {String} newSubStr
-   * @return {String}
-   */
-  Chartist.replaceAll = function(str, subStr, newSubStr) {
-    return str.replace(new RegExp(subStr, 'g'), newSubStr);
-  };
-
-  /**
-   * Converts a number to a string with a unit. If a string is passed then this will be returned unmodified.
-   *
-   * @memberof Chartist.Core
-   * @param {Number} value
-   * @param {String} unit
-   * @return {String} Returns the passed number value with unit.
-   */
-  Chartist.ensureUnit = function(value, unit) {
-    if(typeof value === 'number') {
-      value = value + unit;
-    }
-
-    return value;
-  };
-
-  /**
-   * Converts a number or string to a quantity object.
-   *
-   * @memberof Chartist.Core
-   * @param {String|Number} input
-   * @return {Object} Returns an object containing the value as number and the unit as string.
-   */
-  Chartist.quantity = function(input) {
-    if (typeof input === 'string') {
-      var match = (/^(\d+)\s*(.*)$/g).exec(input);
-      return {
-        value : +match[1],
-        unit: match[2] || undefined
-      };
-    }
-    return { value: input };
-  };
-
-  /**
-   * This is a wrapper around document.querySelector that will return the query if it's already of type Node
-   *
-   * @memberof Chartist.Core
-   * @param {String|Node} query The query to use for selecting a Node or a DOM node that will be returned directly
-   * @return {Node}
-   */
-  Chartist.querySelector = function(query) {
-    return query instanceof Node ? query : document.querySelector(query);
-  };
-
-  /**
-   * Functional style helper to produce array with given length initialized with undefined values
-   *
-   * @memberof Chartist.Core
-   * @param length
-   * @return {Array}
-   */
-  Chartist.times = function(length) {
-    return Array.apply(null, new Array(length));
-  };
-
-  /**
-   * Sum helper to be used in reduce functions
-   *
-   * @memberof Chartist.Core
-   * @param previous
-   * @param current
-   * @return {*}
-   */
-  Chartist.sum = function(previous, current) {
-    return previous + (current ? current : 0);
-  };
-
-  /**
-   * Multiply helper to be used in `Array.map` for multiplying each value of an array with a factor.
-   *
-   * @memberof Chartist.Core
-   * @param {Number} factor
-   * @returns {Function} Function that can be used in `Array.map` to multiply each value in an array
-   */
-  Chartist.mapMultiply = function(factor) {
-    return function(num) {
-      return num * factor;
-    };
-  };
-
-  /**
-   * Add helper to be used in `Array.map` for adding a addend to each value of an array.
-   *
-   * @memberof Chartist.Core
-   * @param {Number} addend
-   * @returns {Function} Function that can be used in `Array.map` to add a addend to each value in an array
-   */
-  Chartist.mapAdd = function(addend) {
-    return function(num) {
-      return num + addend;
-    };
-  };
-
-  /**
-   * Map for multi dimensional arrays where their nested arrays will be mapped in serial. The output array will have the length of the largest nested array. The callback function is called with variable arguments where each argument is the nested array value (or undefined if there are no more values).
-   *
-   * @memberof Chartist.Core
-   * @param arr
-   * @param cb
-   * @return {Array}
-   */
-  Chartist.serialMap = function(arr, cb) {
-    var result = [],
-        length = Math.max.apply(null, arr.map(function(e) {
-          return e.length;
-        }));
-
-    Chartist.times(length).forEach(function(e, index) {
-      var args = arr.map(function(e) {
-        return e[index];
-      });
-
-      result[index] = cb.apply(null, args);
-    });
-
-    return result;
-  };
-
-  /**
-   * This helper function can be used to round values with certain precision level after decimal. This is used to prevent rounding errors near float point precision limit.
-   *
-   * @memberof Chartist.Core
-   * @param {Number} value The value that should be rounded with precision
-   * @param {Number} [digits] The number of digits after decimal used to do the rounding
-   * @returns {number} Rounded value
-   */
-  Chartist.roundWithPrecision = function(value, digits) {
-    var precision = Math.pow(10, digits || Chartist.precision);
-    return Math.round(value * precision) / precision;
-  };
-
-  /**
-   * Precision level used internally in Chartist for rounding. If you require more decimal places you can increase this number.
-   *
-   * @memberof Chartist.Core
-   * @type {number}
-   */
-  Chartist.precision = 8;
-
-  /**
-   * A map with characters to escape for strings to be safely used as attribute values.
-   *
-   * @memberof Chartist.Core
-   * @type {Object}
-   */
-  Chartist.escapingMap = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    '\'': '&#039;'
-  };
-
-  /**
-   * This function serializes arbitrary data to a string. In case of data that can't be easily converted to a string, this function will create a wrapper object and serialize the data using JSON.stringify. The outcoming string will always be escaped using Chartist.escapingMap.
-   * If called with null or undefined the function will return immediately with null or undefined.
-   *
-   * @memberof Chartist.Core
-   * @param {Number|String|Object} data
-   * @return {String}
-   */
-  Chartist.serialize = function(data) {
-    if(data === null || data === undefined) {
-      return data;
-    } else if(typeof data === 'number') {
-      data = ''+data;
-    } else if(typeof data === 'object') {
-      data = JSON.stringify({data: data});
-    }
-
-    return Object.keys(Chartist.escapingMap).reduce(function(result, key) {
-      return Chartist.replaceAll(result, key, Chartist.escapingMap[key]);
-    }, data);
-  };
-
-  /**
-   * This function de-serializes a string previously serialized with Chartist.serialize. The string will always be unescaped using Chartist.escapingMap before it's returned. Based on the input value the return type can be Number, String or Object. JSON.parse is used with try / catch to see if the unescaped string can be parsed into an Object and this Object will be returned on success.
-   *
-   * @memberof Chartist.Core
-   * @param {String} data
-   * @return {String|Number|Object}
-   */
-  Chartist.deserialize = function(data) {
-    if(typeof data !== 'string') {
-      return data;
-    }
-
-    data = Object.keys(Chartist.escapingMap).reduce(function(result, key) {
-      return Chartist.replaceAll(result, Chartist.escapingMap[key], key);
-    }, data);
-
-    try {
-      data = JSON.parse(data);
-      data = data.data !== undefined ? data.data : data;
-    } catch(e) {}
-
-    return data;
-  };
-
-  /**
-   * Create or reinitialize the SVG element for the chart
-   *
-   * @memberof Chartist.Core
-   * @param {Node} container The containing DOM Node object that will be used to plant the SVG element
-   * @param {String} width Set the width of the SVG element. Default is 100%
-   * @param {String} height Set the height of the SVG element. Default is 100%
-   * @param {String} className Specify a class to be added to the SVG element
-   * @return {Object} The created/reinitialized SVG element
-   */
-  Chartist.createSvg = function (container, width, height, className) {
-    var svg;
-
-    width = width || '100%';
-    height = height || '100%';
-
-    // Check if there is a previous SVG element in the container that contains the Chartist XML namespace and remove it
-    // Since the DOM API does not support namespaces we need to manually search the returned list http://www.w3.org/TR/selectors-api/
-    Array.prototype.slice.call(container.querySelectorAll('svg')).filter(function filterChartistSvgObjects(svg) {
-      return svg.getAttributeNS(Chartist.namespaces.xmlns, 'ct');
-    }).forEach(function removePreviousElement(svg) {
-      container.removeChild(svg);
-    });
-
-    // Create svg object with width and height or use 100% as default
-    svg = new Chartist.Svg('svg').attr({
-      width: width,
-      height: height
-    }).addClass(className);
-
-    svg._node.style.width = width;
-    svg._node.style.height = height;
-
-    // Add the DOM node to our container
-    container.appendChild(svg._node);
-
-    return svg;
-  };
-
-  /**
-   * Ensures that the data object passed as second argument to the charts is present and correctly initialized.
-   *
-   * @param  {Object} data The data object that is passed as second argument to the charts
-   * @return {Object} The normalized data object
-   */
-  Chartist.normalizeData = function(data, reverse, multi) {
-    var labelCount;
-    var output = {
-      raw: data,
-      normalized: {}
-    };
-
-    // Check if we should generate some labels based on existing series data
-    output.normalized.series = Chartist.getDataArray({
-      series: data.series || []
-    }, reverse, multi);
-
-    // If all elements of the normalized data array are arrays we're dealing with
-    // multi series data and we need to find the largest series if they are un-even
-    if (output.normalized.series.every(function(value) {
-        return value instanceof Array;
-      })) {
-      // Getting the series with the the most elements
-      labelCount = Math.max.apply(null, output.normalized.series.map(function(series) {
-        return series.length;
-      }));
-    } else {
-      // We're dealing with Pie data so we just take the normalized array length
-      labelCount = output.normalized.series.length;
-    }
-
-    output.normalized.labels = (data.labels || []).slice();
-    // Padding the labels to labelCount with empty strings
-    Array.prototype.push.apply(
-      output.normalized.labels,
-      Chartist.times(Math.max(0, labelCount - output.normalized.labels.length)).map(function() {
-        return '';
-      })
-    );
-
-    if(reverse) {
-      Chartist.reverseData(output.normalized);
-    }
-
-    return output;
-  };
-
-  /**
-   * This function safely checks if an objects has an owned property.
-   *
-   * @param {Object} object The object where to check for a property
-   * @param {string} property The property name
-   * @returns {boolean} Returns true if the object owns the specified property
-   */
-  Chartist.safeHasProperty = function(object, property) {
-    return object !== null &&
-      typeof object === 'object' &&
-      object.hasOwnProperty(property);
-  };
-
-  /**
-   * Checks if a value is considered a hole in the data series.
-   *
-   * @param {*} value
-   * @returns {boolean} True if the value is considered a data hole
-   */
-  Chartist.isDataHoleValue = function(value) {
-    return value === null ||
-      value === undefined ||
-      (typeof value === 'number' && isNaN(value));
-  };
-
-  /**
-   * Reverses the series, labels and series data arrays.
-   *
-   * @memberof Chartist.Core
-   * @param data
-   */
-  Chartist.reverseData = function(data) {
-    data.labels.reverse();
-    data.series.reverse();
-    for (var i = 0; i < data.series.length; i++) {
-      if(typeof(data.series[i]) === 'object' && data.series[i].data !== undefined) {
-        data.series[i].data.reverse();
-      } else if(data.series[i] instanceof Array) {
-        data.series[i].reverse();
-      }
-    }
-  };
-
-  /**
-   * Convert data series into plain array
-   *
-   * @memberof Chartist.Core
-   * @param {Object} data The series object that contains the data to be visualized in the chart
-   * @param {Boolean} [reverse] If true the whole data is reversed by the getDataArray call. This will modify the data object passed as first parameter. The labels as well as the series order is reversed. The whole series data arrays are reversed too.
-   * @param {Boolean} [multi] Create a multi dimensional array from a series data array where a value object with `x` and `y` values will be created.
-   * @return {Array} A plain array that contains the data to be visualized in the chart
-   */
-  Chartist.getDataArray = function(data, reverse, multi) {
-    // Recursively walks through nested arrays and convert string values to numbers and objects with value properties
-    // to values. Check the tests in data core -> data normalization for a detailed specification of expected values
-    function recursiveConvert(value) {
-      if(Chartist.safeHasProperty(value, 'value')) {
-        // We are dealing with value object notation so we need to recurse on value property
-        return recursiveConvert(value.value);
-      } else if(Chartist.safeHasProperty(value, 'data')) {
-        // We are dealing with series object notation so we need to recurse on data property
-        return recursiveConvert(value.data);
-      } else if(value instanceof Array) {
-        // Data is of type array so we need to recurse on the series
-        return value.map(recursiveConvert);
-      } else if(Chartist.isDataHoleValue(value)) {
-        // We're dealing with a hole in the data and therefore need to return undefined
-        // We're also returning undefined for multi value output
-        return undefined;
-      } else {
-        // We need to prepare multi value output (x and y data)
-        if(multi) {
-          var multiValue = {};
-
-          // Single series value arrays are assumed to specify the Y-Axis value
-          // For example: [1, 2] => [{x: undefined, y: 1}, {x: undefined, y: 2}]
-          // If multi is a string then it's assumed that it specified which dimension should be filled as default
-          if(typeof multi === 'string') {
-            multiValue[multi] = Chartist.getNumberOrUndefined(value);
-          } else {
-            multiValue.y = Chartist.getNumberOrUndefined(value);
-          }
-
-          multiValue.x = value.hasOwnProperty('x') ? Chartist.getNumberOrUndefined(value.x) : multiValue.x;
-          multiValue.y = value.hasOwnProperty('y') ? Chartist.getNumberOrUndefined(value.y) : multiValue.y;
-
-          return multiValue;
-
-        } else {
-          // We can return simple data
-          return Chartist.getNumberOrUndefined(value);
-        }
-      }
-    }
-
-    return data.series.map(recursiveConvert);
-  };
-
-  /**
-   * Converts a number into a padding object.
-   *
-   * @memberof Chartist.Core
-   * @param {Object|Number} padding
-   * @param {Number} [fallback] This value is used to fill missing values if a incomplete padding object was passed
-   * @returns {Object} Returns a padding object containing top, right, bottom, left properties filled with the padding number passed in as argument. If the argument is something else than a number (presumably already a correct padding object) then this argument is directly returned.
-   */
-  Chartist.normalizePadding = function(padding, fallback) {
-    fallback = fallback || 0;
-
-    return typeof padding === 'number' ? {
-      top: padding,
-      right: padding,
-      bottom: padding,
-      left: padding
-    } : {
-      top: typeof padding.top === 'number' ? padding.top : fallback,
-      right: typeof padding.right === 'number' ? padding.right : fallback,
-      bottom: typeof padding.bottom === 'number' ? padding.bottom : fallback,
-      left: typeof padding.left === 'number' ? padding.left : fallback
-    };
-  };
-
-  Chartist.getMetaData = function(series, index) {
-    var value = series.data ? series.data[index] : series[index];
-    return value ? value.meta : undefined;
-  };
-
-  /**
-   * Calculate the order of magnitude for the chart scale
-   *
-   * @memberof Chartist.Core
-   * @param {Number} value The value Range of the chart
-   * @return {Number} The order of magnitude
-   */
-  Chartist.orderOfMagnitude = function (value) {
-    return Math.floor(Math.log(Math.abs(value)) / Math.LN10);
-  };
-
-  /**
-   * Project a data length into screen coordinates (pixels)
-   *
-   * @memberof Chartist.Core
-   * @param {Object} axisLength The svg element for the chart
-   * @param {Number} length Single data value from a series array
-   * @param {Object} bounds All the values to set the bounds of the chart
-   * @return {Number} The projected data length in pixels
-   */
-  Chartist.projectLength = function (axisLength, length, bounds) {
-    return length / bounds.range * axisLength;
-  };
-
-  /**
-   * Get the height of the area in the chart for the data series
-   *
-   * @memberof Chartist.Core
-   * @param {Object} svg The svg element for the chart
-   * @param {Object} options The Object that contains all the optional values for the chart
-   * @return {Number} The height of the area in the chart for the data series
-   */
-  Chartist.getAvailableHeight = function (svg, options) {
-    return Math.max((Chartist.quantity(options.height).value || svg.height()) - (options.chartPadding.top +  options.chartPadding.bottom) - options.axisX.offset, 0);
-  };
-
-  /**
-   * Get highest and lowest value of data array. This Array contains the data that will be visualized in the chart.
-   *
-   * @memberof Chartist.Core
-   * @param {Array} data The array that contains the data to be visualized in the chart
-   * @param {Object} options The Object that contains the chart options
-   * @param {String} dimension Axis dimension 'x' or 'y' used to access the correct value and high / low configuration
-   * @return {Object} An object that contains the highest and lowest value that will be visualized on the chart.
-   */
-  Chartist.getHighLow = function (data, options, dimension) {
-    // TODO: Remove workaround for deprecated global high / low config. Axis high / low configuration is preferred
-    options = Chartist.extend({}, options, dimension ? options['axis' + dimension.toUpperCase()] : {});
-
-    var highLow = {
-        high: options.high === undefined ? -Number.MAX_VALUE : +options.high,
-        low: options.low === undefined ? Number.MAX_VALUE : +options.low
-      };
-    var findHigh = options.high === undefined;
-    var findLow = options.low === undefined;
-
-    // Function to recursively walk through arrays and find highest and lowest number
-    function recursiveHighLow(data) {
-      if(data === undefined) {
-        return undefined;
-      } else if(data instanceof Array) {
-        for (var i = 0; i < data.length; i++) {
-          recursiveHighLow(data[i]);
-        }
-      } else {
-        var value = dimension ? +data[dimension] : +data;
-
-        if (findHigh && value > highLow.high) {
-          highLow.high = value;
-        }
-
-        if (findLow && value < highLow.low) {
-          highLow.low = value;
-        }
-      }
-    }
-
-    // Start to find highest and lowest number recursively
-    if(findHigh || findLow) {
-      recursiveHighLow(data);
-    }
-
-    // Overrides of high / low based on reference value, it will make sure that the invisible reference value is
-    // used to generate the chart. This is useful when the chart always needs to contain the position of the
-    // invisible reference value in the view i.e. for bipolar scales.
-    if (options.referenceValue || options.referenceValue === 0) {
-      highLow.high = Math.max(options.referenceValue, highLow.high);
-      highLow.low = Math.min(options.referenceValue, highLow.low);
-    }
-
-    // If high and low are the same because of misconfiguration or flat data (only the same value) we need
-    // to set the high or low to 0 depending on the polarity
-    if (highLow.high <= highLow.low) {
-      // If both values are 0 we set high to 1
-      if (highLow.low === 0) {
-        highLow.high = 1;
-      } else if (highLow.low < 0) {
-        // If we have the same negative value for the bounds we set bounds.high to 0
-        highLow.high = 0;
-      } else if (highLow.high > 0) {
-        // If we have the same positive value for the bounds we set bounds.low to 0
-        highLow.low = 0;
-      } else {
-        // If data array was empty, values are Number.MAX_VALUE and -Number.MAX_VALUE. Set bounds to prevent errors
-        highLow.high = 1;
-        highLow.low = 0;
-      }
-    }
-
-    return highLow;
-  };
-
-  /**
-   * Checks if a value can be safely coerced to a number. This includes all values except null which result in finite numbers when coerced. This excludes NaN, since it's not finite.
-   *
-   * @memberof Chartist.Core
-   * @param value
-   * @returns {Boolean}
-   */
-  Chartist.isNumeric = function(value) {
-    return value === null ? false : isFinite(value);
-  };
-
-  /**
-   * Returns true on all falsey values except the numeric value 0.
-   *
-   * @memberof Chartist.Core
-   * @param value
-   * @returns {boolean}
-   */
-  Chartist.isFalseyButZero = function(value) {
-    return !value && value !== 0;
-  };
-
-  /**
-   * Returns a number if the passed parameter is a valid number or the function will return undefined. On all other values than a valid number, this function will return undefined.
-   *
-   * @memberof Chartist.Core
-   * @param value
-   * @returns {*}
-   */
-  Chartist.getNumberOrUndefined = function(value) {
-    return Chartist.isNumeric(value) ? +value : undefined;
-  };
-
-  /**
-   * Checks if provided value object is multi value (contains x or y properties)
-   *
-   * @memberof Chartist.Core
-   * @param value
-   */
-  Chartist.isMultiValue = function(value) {
-    return typeof value === 'object' && ('x' in value || 'y' in value);
-  };
-
-  /**
-   * Gets a value from a dimension `value.x` or `value.y` while returning value directly if it's a valid numeric value. If the value is not numeric and it's falsey this function will return `defaultValue`.
-   *
-   * @memberof Chartist.Core
-   * @param value
-   * @param dimension
-   * @param defaultValue
-   * @returns {*}
-   */
-  Chartist.getMultiValue = function(value, dimension) {
-    if(Chartist.isMultiValue(value)) {
-      return Chartist.getNumberOrUndefined(value[dimension || 'y']);
-    } else {
-      return Chartist.getNumberOrUndefined(value);
-    }
-  };
-
-  /**
-   * Pollard Rho Algorithm to find smallest factor of an integer value. There are more efficient algorithms for factorization, but this one is quite efficient and not so complex.
-   *
-   * @memberof Chartist.Core
-   * @param {Number} num An integer number where the smallest factor should be searched for
-   * @returns {Number} The smallest integer factor of the parameter num.
-   */
-  Chartist.rho = function(num) {
-    if(num === 1) {
-      return num;
-    }
-
-    function gcd(p, q) {
-      if (p % q === 0) {
-        return q;
-      } else {
-        return gcd(q, p % q);
-      }
-    }
-
-    function f(x) {
-      return x * x + 1;
-    }
-
-    var x1 = 2, x2 = 2, divisor;
-    if (num % 2 === 0) {
-      return 2;
-    }
-
-    do {
-      x1 = f(x1) % num;
-      x2 = f(f(x2)) % num;
-      divisor = gcd(Math.abs(x1 - x2), num);
-    } while (divisor === 1);
-
-    return divisor;
-  };
-
-  /**
-   * Calculate and retrieve all the bounds for the chart and return them in one array
-   *
-   * @memberof Chartist.Core
-   * @param {Number} axisLength The length of the Axis used for
-   * @param {Object} highLow An object containing a high and low property indicating the value range of the chart.
-   * @param {Number} scaleMinSpace The minimum projected length a step should result in
-   * @param {Boolean} onlyInteger
-   * @return {Object} All the values to set the bounds of the chart
-   */
-  Chartist.getBounds = function (axisLength, highLow, scaleMinSpace, onlyInteger) {
-    var i,
-      optimizationCounter = 0,
-      newMin,
-      newMax,
-      bounds = {
-        high: highLow.high,
-        low: highLow.low
-      };
-
-    bounds.valueRange = bounds.high - bounds.low;
-    bounds.oom = Chartist.orderOfMagnitude(bounds.valueRange);
-    bounds.step = Math.pow(10, bounds.oom);
-    bounds.min = Math.floor(bounds.low / bounds.step) * bounds.step;
-    bounds.max = Math.ceil(bounds.high / bounds.step) * bounds.step;
-    bounds.range = bounds.max - bounds.min;
-    bounds.numberOfSteps = Math.round(bounds.range / bounds.step);
-
-    // Optimize scale step by checking if subdivision is possible based on horizontalGridMinSpace
-    // If we are already below the scaleMinSpace value we will scale up
-    var length = Chartist.projectLength(axisLength, bounds.step, bounds);
-    var scaleUp = length < scaleMinSpace;
-    var smallestFactor = onlyInteger ? Chartist.rho(bounds.range) : 0;
-
-    // First check if we should only use integer steps and if step 1 is still larger than scaleMinSpace so we can use 1
-    if(onlyInteger && Chartist.projectLength(axisLength, 1, bounds) >= scaleMinSpace) {
-      bounds.step = 1;
-    } else if(onlyInteger && smallestFactor < bounds.step && Chartist.projectLength(axisLength, smallestFactor, bounds) >= scaleMinSpace) {
-      // If step 1 was too small, we can try the smallest factor of range
-      // If the smallest factor is smaller than the current bounds.step and the projected length of smallest factor
-      // is larger than the scaleMinSpace we should go for it.
-      bounds.step = smallestFactor;
-    } else {
-      // Trying to divide or multiply by 2 and find the best step value
-      while (true) {
-        if (scaleUp && Chartist.projectLength(axisLength, bounds.step, bounds) <= scaleMinSpace) {
-          bounds.step *= 2;
-        } else if (!scaleUp && Chartist.projectLength(axisLength, bounds.step / 2, bounds) >= scaleMinSpace) {
-          bounds.step /= 2;
-          if(onlyInteger && bounds.step % 1 !== 0) {
-            bounds.step *= 2;
-            break;
-          }
-        } else {
-          break;
-        }
-
-        if(optimizationCounter++ > 1000) {
-          throw new Error('Exceeded maximum number of iterations while optimizing scale step!');
-        }
-      }
-    }
-
-    var EPSILON = 2.221E-16;
-    bounds.step = Math.max(bounds.step, EPSILON);
-    function safeIncrement(value, increment) {
-      // If increment is too small use *= (1+EPSILON) as a simple nextafter
-      if (value === (value += increment)) {
-      	value *= (1 + (increment > 0 ? EPSILON : -EPSILON));
-      }
-      return value;
-    }
-
-    // Narrow min and max based on new step
-    newMin = bounds.min;
-    newMax = bounds.max;
-    while (newMin + bounds.step <= bounds.low) {
-    	newMin = safeIncrement(newMin, bounds.step);
-    }
-    while (newMax - bounds.step >= bounds.high) {
-    	newMax = safeIncrement(newMax, -bounds.step);
-    }
-    bounds.min = newMin;
-    bounds.max = newMax;
-    bounds.range = bounds.max - bounds.min;
-
-    var values = [];
-    for (i = bounds.min; i <= bounds.max; i = safeIncrement(i, bounds.step)) {
-      var value = Chartist.roundWithPrecision(i);
-      if (value !== values[values.length - 1]) {
-        values.push(value);
-      }
-    }
-    bounds.values = values;
-    return bounds;
-  };
-
-  /**
-   * Calculate cartesian coordinates of polar coordinates
-   *
-   * @memberof Chartist.Core
-   * @param {Number} centerX X-axis coordinates of center point of circle segment
-   * @param {Number} centerY X-axis coordinates of center point of circle segment
-   * @param {Number} radius Radius of circle segment
-   * @param {Number} angleInDegrees Angle of circle segment in degrees
-   * @return {{x:Number, y:Number}} Coordinates of point on circumference
-   */
-  Chartist.polarToCartesian = function (centerX, centerY, radius, angleInDegrees) {
-    var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
-
-    return {
-      x: centerX + (radius * Math.cos(angleInRadians)),
-      y: centerY + (radius * Math.sin(angleInRadians))
-    };
-  };
-
-  /**
-   * Initialize chart drawing rectangle (area where chart is drawn) x1,y1 = bottom left / x2,y2 = top right
-   *
-   * @memberof Chartist.Core
-   * @param {Object} svg The svg element for the chart
-   * @param {Object} options The Object that contains all the optional values for the chart
-   * @param {Number} [fallbackPadding] The fallback padding if partial padding objects are used
-   * @return {Object} The chart rectangles coordinates inside the svg element plus the rectangles measurements
-   */
-  Chartist.createChartRect = function (svg, options, fallbackPadding) {
-    var hasAxis = !!(options.axisX || options.axisY);
-    var yAxisOffset = hasAxis ? options.axisY.offset : 0;
-    var xAxisOffset = hasAxis ? options.axisX.offset : 0;
-    // If width or height results in invalid value (including 0) we fallback to the unitless settings or even 0
-    var width = svg.width() || Chartist.quantity(options.width).value || 0;
-    var height = svg.height() || Chartist.quantity(options.height).value || 0;
-    var normalizedPadding = Chartist.normalizePadding(options.chartPadding, fallbackPadding);
-
-    // If settings were to small to cope with offset (legacy) and padding, we'll adjust
-    width = Math.max(width, yAxisOffset + normalizedPadding.left + normalizedPadding.right);
-    height = Math.max(height, xAxisOffset + normalizedPadding.top + normalizedPadding.bottom);
-
-    var chartRect = {
-      padding: normalizedPadding,
-      width: function () {
-        return this.x2 - this.x1;
-      },
-      height: function () {
-        return this.y1 - this.y2;
-      }
-    };
-
-    if(hasAxis) {
-      if (options.axisX.position === 'start') {
-        chartRect.y2 = normalizedPadding.top + xAxisOffset;
-        chartRect.y1 = Math.max(height - normalizedPadding.bottom, chartRect.y2 + 1);
-      } else {
-        chartRect.y2 = normalizedPadding.top;
-        chartRect.y1 = Math.max(height - normalizedPadding.bottom - xAxisOffset, chartRect.y2 + 1);
-      }
-
-      if (options.axisY.position === 'start') {
-        chartRect.x1 = normalizedPadding.left + yAxisOffset;
-        chartRect.x2 = Math.max(width - normalizedPadding.right, chartRect.x1 + 1);
-      } else {
-        chartRect.x1 = normalizedPadding.left;
-        chartRect.x2 = Math.max(width - normalizedPadding.right - yAxisOffset, chartRect.x1 + 1);
-      }
-    } else {
-      chartRect.x1 = normalizedPadding.left;
-      chartRect.x2 = Math.max(width - normalizedPadding.right, chartRect.x1 + 1);
-      chartRect.y2 = normalizedPadding.top;
-      chartRect.y1 = Math.max(height - normalizedPadding.bottom, chartRect.y2 + 1);
-    }
-
-    return chartRect;
-  };
-
-  /**
-   * Creates a grid line based on a projected value.
-   *
-   * @memberof Chartist.Core
-   * @param position
-   * @param index
-   * @param axis
-   * @param offset
-   * @param length
-   * @param group
-   * @param classes
-   * @param eventEmitter
-   */
-  Chartist.createGrid = function(position, index, axis, offset, length, group, classes, eventEmitter) {
-    var positionalData = {};
-    positionalData[axis.units.pos + '1'] = position;
-    positionalData[axis.units.pos + '2'] = position;
-    positionalData[axis.counterUnits.pos + '1'] = offset;
-    positionalData[axis.counterUnits.pos + '2'] = offset + length;
-
-    var gridElement = group.elem('line', positionalData, classes.join(' '));
-
-    // Event for grid draw
-    eventEmitter.emit('draw',
-      Chartist.extend({
-        type: 'grid',
-        axis: axis,
-        index: index,
-        group: group,
-        element: gridElement
-      }, positionalData)
-    );
-  };
-
-  /**
-   * Creates a grid background rect and emits the draw event.
-   *
-   * @memberof Chartist.Core
-   * @param gridGroup
-   * @param chartRect
-   * @param className
-   * @param eventEmitter
-   */
-  Chartist.createGridBackground = function (gridGroup, chartRect, className, eventEmitter) {
-    var gridBackground = gridGroup.elem('rect', {
-        x: chartRect.x1,
-        y: chartRect.y2,
-        width: chartRect.width(),
-        height: chartRect.height(),
-      }, className, true);
-
-      // Event for grid background draw
-      eventEmitter.emit('draw', {
-        type: 'gridBackground',
-        group: gridGroup,
-        element: gridBackground
-      });
-  };
-
-  /**
-   * Creates a label based on a projected value and an axis.
-   *
-   * @memberof Chartist.Core
-   * @param position
-   * @param length
-   * @param index
-   * @param labels
-   * @param axis
-   * @param axisOffset
-   * @param labelOffset
-   * @param group
-   * @param classes
-   * @param useForeignObject
-   * @param eventEmitter
-   */
-  Chartist.createLabel = function(position, length, index, labels, axis, axisOffset, labelOffset, group, classes, useForeignObject, eventEmitter) {
-    var labelElement;
-    var positionalData = {};
-
-    positionalData[axis.units.pos] = position + labelOffset[axis.units.pos];
-    positionalData[axis.counterUnits.pos] = labelOffset[axis.counterUnits.pos];
-    positionalData[axis.units.len] = length;
-    positionalData[axis.counterUnits.len] = Math.max(0, axisOffset - 10);
-
-    if(useForeignObject) {
-      // We need to set width and height explicitly to px as span will not expand with width and height being
-      // 100% in all browsers
-      var content = document.createElement('span');
-      content.className = classes.join(' ');
-      content.setAttribute('xmlns', Chartist.namespaces.xhtml);
-      content.innerText = labels[index];
-      content.style[axis.units.len] = Math.round(positionalData[axis.units.len]) + 'px';
-      content.style[axis.counterUnits.len] = Math.round(positionalData[axis.counterUnits.len]) + 'px';
-
-      labelElement = group.foreignObject(content, Chartist.extend({
-        style: 'overflow: visible;'
-      }, positionalData));
-    } else {
-      labelElement = group.elem('text', positionalData, classes.join(' ')).text(labels[index]);
-    }
-
-    eventEmitter.emit('draw', Chartist.extend({
-      type: 'label',
-      axis: axis,
-      index: index,
-      group: group,
-      element: labelElement,
-      text: labels[index]
-    }, positionalData));
-  };
-
-  /**
-   * Helper to read series specific options from options object. It automatically falls back to the global option if
-   * there is no option in the series options.
-   *
-   * @param {Object} series Series object
-   * @param {Object} options Chartist options object
-   * @param {string} key The options key that should be used to obtain the options
-   * @returns {*}
-   */
-  Chartist.getSeriesOption = function(series, options, key) {
-    if(series.name && options.series && options.series[series.name]) {
-      var seriesOptions = options.series[series.name];
-      return seriesOptions.hasOwnProperty(key) ? seriesOptions[key] : options[key];
-    } else {
-      return options[key];
-    }
-  };
-
-  /**
-   * Provides options handling functionality with callback for options changes triggered by responsive options and media query matches
-   *
-   * @memberof Chartist.Core
-   * @param {Object} options Options set by user
-   * @param {Array} responsiveOptions Optional functions to add responsive behavior to chart
-   * @param {Object} eventEmitter The event emitter that will be used to emit the options changed events
-   * @return {Object} The consolidated options object from the defaults, base and matching responsive options
-   */
-  Chartist.optionsProvider = function (options, responsiveOptions, eventEmitter) {
-    var baseOptions = Chartist.extend({}, options),
-      currentOptions,
-      mediaQueryListeners = [],
-      i;
-
-    function updateCurrentOptions(mediaEvent) {
-      var previousOptions = currentOptions;
-      currentOptions = Chartist.extend({}, baseOptions);
-
-      if (responsiveOptions) {
-        for (i = 0; i < responsiveOptions.length; i++) {
-          var mql = window.matchMedia(responsiveOptions[i][0]);
-          if (mql.matches) {
-            currentOptions = Chartist.extend(currentOptions, responsiveOptions[i][1]);
-          }
-        }
-      }
-
-      if(eventEmitter && mediaEvent) {
-        eventEmitter.emit('optionsChanged', {
-          previousOptions: previousOptions,
-          currentOptions: currentOptions
-        });
-      }
-    }
-
-    function removeMediaQueryListeners() {
-      mediaQueryListeners.forEach(function(mql) {
-        mql.removeListener(updateCurrentOptions);
-      });
-    }
-
-    if (!window.matchMedia) {
-      throw 'window.matchMedia not found! Make sure you\'re using a polyfill.';
-    } else if (responsiveOptions) {
-
-      for (i = 0; i < responsiveOptions.length; i++) {
-        var mql = window.matchMedia(responsiveOptions[i][0]);
-        mql.addListener(updateCurrentOptions);
-        mediaQueryListeners.push(mql);
-      }
-    }
-    // Execute initially without an event argument so we get the correct options
-    updateCurrentOptions();
-
-    return {
-      removeMediaQueryListeners: removeMediaQueryListeners,
-      getCurrentOptions: function getCurrentOptions() {
-        return Chartist.extend({}, currentOptions);
-      }
-    };
-  };
-
-
-  /**
-   * Splits a list of coordinates and associated values into segments. Each returned segment contains a pathCoordinates
-   * valueData property describing the segment.
-   *
-   * With the default options, segments consist of contiguous sets of points that do not have an undefined value. Any
-   * points with undefined values are discarded.
-   *
-   * **Options**
-   * The following options are used to determine how segments are formed
-   * ```javascript
-   * var options = {
-   *   // If fillHoles is true, undefined values are simply discarded without creating a new segment. Assuming other options are default, this returns single segment.
-   *   fillHoles: false,
-   *   // If increasingX is true, the coordinates in all segments have strictly increasing x-values.
-   *   increasingX: false
-   * };
-   * ```
-   *
-   * @memberof Chartist.Core
-   * @param {Array} pathCoordinates List of point coordinates to be split in the form [x1, y1, x2, y2 ... xn, yn]
-   * @param {Array} values List of associated point values in the form [v1, v2 .. vn]
-   * @param {Object} options Options set by user
-   * @return {Array} List of segments, each containing a pathCoordinates and valueData property.
-   */
-  Chartist.splitIntoSegments = function(pathCoordinates, valueData, options) {
-    var defaultOptions = {
-      increasingX: false,
-      fillHoles: false
-    };
-
-    options = Chartist.extend({}, defaultOptions, options);
-
-    var segments = [];
-    var hole = true;
-
-    for(var i = 0; i < pathCoordinates.length; i += 2) {
-      // If this value is a "hole" we set the hole flag
-      if(Chartist.getMultiValue(valueData[i / 2].value) === undefined) {
-      // if(valueData[i / 2].value === undefined) {
-        if(!options.fillHoles) {
-          hole = true;
-        }
-      } else {
-        if(options.increasingX && i >= 2 && pathCoordinates[i] <= pathCoordinates[i-2]) {
-          // X is not increasing, so we need to make sure we start a new segment
-          hole = true;
-        }
-
-
-        // If it's a valid value we need to check if we're coming out of a hole and create a new empty segment
-        if(hole) {
-          segments.push({
-            pathCoordinates: [],
-            valueData: []
-          });
-          // As we have a valid value now, we are not in a "hole" anymore
-          hole = false;
-        }
-
-        // Add to the segment pathCoordinates and valueData
-        segments[segments.length - 1].pathCoordinates.push(pathCoordinates[i], pathCoordinates[i + 1]);
-        segments[segments.length - 1].valueData.push(valueData[i / 2]);
-      }
-    }
-
-    return segments;
-  };
-}(window, document, Chartist));
-;/**
- * Chartist path interpolation functions.
- *
- * @module Chartist.Interpolation
- */
-/* global Chartist */
-(function(window, document, Chartist) {
-  'use strict';
-
-  Chartist.Interpolation = {};
-
-  /**
-   * This interpolation function does not smooth the path and the result is only containing lines and no curves.
-   *
-   * @example
-   * var chart = new Chartist.Line('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5],
-   *   series: [[1, 2, 8, 1, 7]]
-   * }, {
-   *   lineSmooth: Chartist.Interpolation.none({
-   *     fillHoles: false
-   *   })
-   * });
-   *
-   *
-   * @memberof Chartist.Interpolation
-   * @return {Function}
-   */
-  Chartist.Interpolation.none = function(options) {
-    var defaultOptions = {
-      fillHoles: false
-    };
-    options = Chartist.extend({}, defaultOptions, options);
-    return function none(pathCoordinates, valueData) {
-      var path = new Chartist.Svg.Path();
-      var hole = true;
-
-      for(var i = 0; i < pathCoordinates.length; i += 2) {
-        var currX = pathCoordinates[i];
-        var currY = pathCoordinates[i + 1];
-        var currData = valueData[i / 2];
-
-        if(Chartist.getMultiValue(currData.value) !== undefined) {
-
-          if(hole) {
-            path.move(currX, currY, false, currData);
-          } else {
-            path.line(currX, currY, false, currData);
-          }
-
-          hole = false;
-        } else if(!options.fillHoles) {
-          hole = true;
-        }
-      }
-
-      return path;
-    };
-  };
-
-  /**
-   * Simple smoothing creates horizontal handles that are positioned with a fraction of the length between two data points. You can use the divisor option to specify the amount of smoothing.
-   *
-   * Simple smoothing can be used instead of `Chartist.Smoothing.cardinal` if you'd like to get rid of the artifacts it produces sometimes. Simple smoothing produces less flowing lines but is accurate by hitting the points and it also doesn't swing below or above the given data point.
-   *
-   * All smoothing functions within Chartist are factory functions that accept an options parameter. The simple interpolation function accepts one configuration parameter `divisor`, between 1 and ∞, which controls the smoothing characteristics.
-   *
-   * @example
-   * var chart = new Chartist.Line('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5],
-   *   series: [[1, 2, 8, 1, 7]]
-   * }, {
-   *   lineSmooth: Chartist.Interpolation.simple({
-   *     divisor: 2,
-   *     fillHoles: false
-   *   })
-   * });
-   *
-   *
-   * @memberof Chartist.Interpolation
-   * @param {Object} options The options of the simple interpolation factory function.
-   * @return {Function}
-   */
-  Chartist.Interpolation.simple = function(options) {
-    var defaultOptions = {
-      divisor: 2,
-      fillHoles: false
-    };
-    options = Chartist.extend({}, defaultOptions, options);
-
-    var d = 1 / Math.max(1, options.divisor);
-
-    return function simple(pathCoordinates, valueData) {
-      var path = new Chartist.Svg.Path();
-      var prevX, prevY, prevData;
-
-      for(var i = 0; i < pathCoordinates.length; i += 2) {
-        var currX = pathCoordinates[i];
-        var currY = pathCoordinates[i + 1];
-        var length = (currX - prevX) * d;
-        var currData = valueData[i / 2];
-
-        if(currData.value !== undefined) {
-
-          if(prevData === undefined) {
-            path.move(currX, currY, false, currData);
-          } else {
-            path.curve(
-              prevX + length,
-              prevY,
-              currX - length,
-              currY,
-              currX,
-              currY,
-              false,
-              currData
-            );
-          }
-
-          prevX = currX;
-          prevY = currY;
-          prevData = currData;
-        } else if(!options.fillHoles) {
-          prevX = currX = prevData = undefined;
-        }
-      }
-
-      return path;
-    };
-  };
-
-  /**
-   * Cardinal / Catmull-Rome spline interpolation is the default smoothing function in Chartist. It produces nice results where the splines will always meet the points. It produces some artifacts though when data values are increased or decreased rapidly. The line may not follow a very accurate path and if the line should be accurate this smoothing function does not produce the best results.
-   *
-   * Cardinal splines can only be created if there are more than two data points. If this is not the case this smoothing will fallback to `Chartist.Smoothing.none`.
-   *
-   * All smoothing functions within Chartist are factory functions that accept an options parameter. The cardinal interpolation function accepts one configuration parameter `tension`, between 0 and 1, which controls the smoothing intensity.
-   *
-   * @example
-   * var chart = new Chartist.Line('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5],
-   *   series: [[1, 2, 8, 1, 7]]
-   * }, {
-   *   lineSmooth: Chartist.Interpolation.cardinal({
-   *     tension: 1,
-   *     fillHoles: false
-   *   })
-   * });
-   *
-   * @memberof Chartist.Interpolation
-   * @param {Object} options The options of the cardinal factory function.
-   * @return {Function}
-   */
-  Chartist.Interpolation.cardinal = function(options) {
-    var defaultOptions = {
-      tension: 1,
-      fillHoles: false
-    };
-
-    options = Chartist.extend({}, defaultOptions, options);
-
-    var t = Math.min(1, Math.max(0, options.tension)),
-      c = 1 - t;
-
-    return function cardinal(pathCoordinates, valueData) {
-      // First we try to split the coordinates into segments
-      // This is necessary to treat "holes" in line charts
-      var segments = Chartist.splitIntoSegments(pathCoordinates, valueData, {
-        fillHoles: options.fillHoles
-      });
-
-      if(!segments.length) {
-        // If there were no segments return 'Chartist.Interpolation.none'
-        return Chartist.Interpolation.none()([]);
-      } else if(segments.length > 1) {
-        // If the split resulted in more that one segment we need to interpolate each segment individually and join them
-        // afterwards together into a single path.
-          var paths = [];
-        // For each segment we will recurse the cardinal function
-        segments.forEach(function(segment) {
-          paths.push(cardinal(segment.pathCoordinates, segment.valueData));
-        });
-        // Join the segment path data into a single path and return
-        return Chartist.Svg.Path.join(paths);
-      } else {
-        // If there was only one segment we can proceed regularly by using pathCoordinates and valueData from the first
-        // segment
-        pathCoordinates = segments[0].pathCoordinates;
-        valueData = segments[0].valueData;
-
-        // If less than two points we need to fallback to no smoothing
-        if(pathCoordinates.length <= 4) {
-          return Chartist.Interpolation.none()(pathCoordinates, valueData);
-        }
-
-        var path = new Chartist.Svg.Path().move(pathCoordinates[0], pathCoordinates[1], false, valueData[0]),
-          z;
-
-        for (var i = 0, iLen = pathCoordinates.length; iLen - 2 * !z > i; i += 2) {
-          var p = [
-            {x: +pathCoordinates[i - 2], y: +pathCoordinates[i - 1]},
-            {x: +pathCoordinates[i], y: +pathCoordinates[i + 1]},
-            {x: +pathCoordinates[i + 2], y: +pathCoordinates[i + 3]},
-            {x: +pathCoordinates[i + 4], y: +pathCoordinates[i + 5]}
-          ];
-          if (z) {
-            if (!i) {
-              p[0] = {x: +pathCoordinates[iLen - 2], y: +pathCoordinates[iLen - 1]};
-            } else if (iLen - 4 === i) {
-              p[3] = {x: +pathCoordinates[0], y: +pathCoordinates[1]};
-            } else if (iLen - 2 === i) {
-              p[2] = {x: +pathCoordinates[0], y: +pathCoordinates[1]};
-              p[3] = {x: +pathCoordinates[2], y: +pathCoordinates[3]};
-            }
-          } else {
-            if (iLen - 4 === i) {
-              p[3] = p[2];
-            } else if (!i) {
-              p[0] = {x: +pathCoordinates[i], y: +pathCoordinates[i + 1]};
-            }
-          }
-
-          path.curve(
-            (t * (-p[0].x + 6 * p[1].x + p[2].x) / 6) + (c * p[2].x),
-            (t * (-p[0].y + 6 * p[1].y + p[2].y) / 6) + (c * p[2].y),
-            (t * (p[1].x + 6 * p[2].x - p[3].x) / 6) + (c * p[2].x),
-            (t * (p[1].y + 6 * p[2].y - p[3].y) / 6) + (c * p[2].y),
-            p[2].x,
-            p[2].y,
-            false,
-            valueData[(i + 2) / 2]
-          );
-        }
-
-        return path;
-      }
-    };
-  };
-
-  /**
-   * Monotone Cubic spline interpolation produces a smooth curve which preserves monotonicity. Unlike cardinal splines, the curve will not extend beyond the range of y-values of the original data points.
-   *
-   * Monotone Cubic splines can only be created if there are more than two data points. If this is not the case this smoothing will fallback to `Chartist.Smoothing.none`.
-   *
-   * The x-values of subsequent points must be increasing to fit a Monotone Cubic spline. If this condition is not met for a pair of adjacent points, then there will be a break in the curve between those data points.
-   *
-   * All smoothing functions within Chartist are factory functions that accept an options parameter.
-   *
-   * @example
-   * var chart = new Chartist.Line('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5],
-   *   series: [[1, 2, 8, 1, 7]]
-   * }, {
-   *   lineSmooth: Chartist.Interpolation.monotoneCubic({
-   *     fillHoles: false
-   *   })
-   * });
-   *
-   * @memberof Chartist.Interpolation
-   * @param {Object} options The options of the monotoneCubic factory function.
-   * @return {Function}
-   */
-  Chartist.Interpolation.monotoneCubic = function(options) {
-    var defaultOptions = {
-      fillHoles: false
-    };
-
-    options = Chartist.extend({}, defaultOptions, options);
-
-    return function monotoneCubic(pathCoordinates, valueData) {
-      // First we try to split the coordinates into segments
-      // This is necessary to treat "holes" in line charts
-      var segments = Chartist.splitIntoSegments(pathCoordinates, valueData, {
-        fillHoles: options.fillHoles,
-        increasingX: true
-      });
-
-      if(!segments.length) {
-        // If there were no segments return 'Chartist.Interpolation.none'
-        return Chartist.Interpolation.none()([]);
-      } else if(segments.length > 1) {
-        // If the split resulted in more that one segment we need to interpolate each segment individually and join them
-        // afterwards together into a single path.
-          var paths = [];
-        // For each segment we will recurse the monotoneCubic fn function
-        segments.forEach(function(segment) {
-          paths.push(monotoneCubic(segment.pathCoordinates, segment.valueData));
-        });
-        // Join the segment path data into a single path and return
-        return Chartist.Svg.Path.join(paths);
-      } else {
-        // If there was only one segment we can proceed regularly by using pathCoordinates and valueData from the first
-        // segment
-        pathCoordinates = segments[0].pathCoordinates;
-        valueData = segments[0].valueData;
-
-        // If less than three points we need to fallback to no smoothing
-        if(pathCoordinates.length <= 4) {
-          return Chartist.Interpolation.none()(pathCoordinates, valueData);
-        }
-
-        var xs = [],
-          ys = [],
-          i,
-          n = pathCoordinates.length / 2,
-          ms = [],
-          ds = [], dys = [], dxs = [],
-          path;
-
-        // Populate x and y coordinates into separate arrays, for readability
-
-        for(i = 0; i < n; i++) {
-          xs[i] = pathCoordinates[i * 2];
-          ys[i] = pathCoordinates[i * 2 + 1];
-        }
-
-        // Calculate deltas and derivative
-
-        for(i = 0; i < n - 1; i++) {
-          dys[i] = ys[i + 1] - ys[i];
-          dxs[i] = xs[i + 1] - xs[i];
-          ds[i] = dys[i] / dxs[i];
-        }
-
-        // Determine desired slope (m) at each point using Fritsch-Carlson method
-        // See: http://math.stackexchange.com/questions/45218/implementation-of-monotone-cubic-interpolation
-
-        ms[0] = ds[0];
-        ms[n - 1] = ds[n - 2];
-
-        for(i = 1; i < n - 1; i++) {
-          if(ds[i] === 0 || ds[i - 1] === 0 || (ds[i - 1] > 0) !== (ds[i] > 0)) {
-            ms[i] = 0;
-          } else {
-            ms[i] = 3 * (dxs[i - 1] + dxs[i]) / (
-              (2 * dxs[i] + dxs[i - 1]) / ds[i - 1] +
-              (dxs[i] + 2 * dxs[i - 1]) / ds[i]);
-
-            if(!isFinite(ms[i])) {
-              ms[i] = 0;
-            }
-          }
-        }
-
-        // Now build a path from the slopes
-
-        path = new Chartist.Svg.Path().move(xs[0], ys[0], false, valueData[0]);
-
-        for(i = 0; i < n - 1; i++) {
-          path.curve(
-            // First control point
-            xs[i] + dxs[i] / 3,
-            ys[i] + ms[i] * dxs[i] / 3,
-            // Second control point
-            xs[i + 1] - dxs[i] / 3,
-            ys[i + 1] - ms[i + 1] * dxs[i] / 3,
-            // End point
-            xs[i + 1],
-            ys[i + 1],
-
-            false,
-            valueData[i + 1]
-          );
-        }
-
-        return path;
-      }
-    };
-  };
-
-  /**
-   * Step interpolation will cause the line chart to move in steps rather than diagonal or smoothed lines. This interpolation will create additional points that will also be drawn when the `showPoint` option is enabled.
-   *
-   * All smoothing functions within Chartist are factory functions that accept an options parameter. The step interpolation function accepts one configuration parameter `postpone`, that can be `true` or `false`. The default value is `true` and will cause the step to occur where the value actually changes. If a different behaviour is needed where the step is shifted to the left and happens before the actual value, this option can be set to `false`.
-   *
-   * @example
-   * var chart = new Chartist.Line('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5],
-   *   series: [[1, 2, 8, 1, 7]]
-   * }, {
-   *   lineSmooth: Chartist.Interpolation.step({
-   *     postpone: true,
-   *     fillHoles: false
-   *   })
-   * });
-   *
-   * @memberof Chartist.Interpolation
-   * @param options
-   * @returns {Function}
-   */
-  Chartist.Interpolation.step = function(options) {
-    var defaultOptions = {
-      postpone: true,
-      fillHoles: false
-    };
-
-    options = Chartist.extend({}, defaultOptions, options);
-
-    return function step(pathCoordinates, valueData) {
-      var path = new Chartist.Svg.Path();
-
-      var prevX, prevY, prevData;
-
-      for (var i = 0; i < pathCoordinates.length; i += 2) {
-        var currX = pathCoordinates[i];
-        var currY = pathCoordinates[i + 1];
-        var currData = valueData[i / 2];
-
-        // If the current point is also not a hole we can draw the step lines
-        if(currData.value !== undefined) {
-          if(prevData === undefined) {
-            path.move(currX, currY, false, currData);
-          } else {
-            if(options.postpone) {
-              // If postponed we should draw the step line with the value of the previous value
-              path.line(currX, prevY, false, prevData);
-            } else {
-              // If not postponed we should draw the step line with the value of the current value
-              path.line(prevX, currY, false, currData);
-            }
-            // Line to the actual point (this should only be a Y-Axis movement
-            path.line(currX, currY, false, currData);
-          }
-
-          prevX = currX;
-          prevY = currY;
-          prevData = currData;
-        } else if(!options.fillHoles) {
-          prevX = prevY = prevData = undefined;
-        }
-      }
-
-      return path;
-    };
-  };
-
-}(window, document, Chartist));
-;/**
- * A very basic event module that helps to generate and catch events.
- *
- * @module Chartist.Event
- */
-/* global Chartist */
-(function (window, document, Chartist) {
-  'use strict';
-
-  Chartist.EventEmitter = function () {
-    var handlers = [];
-
-    /**
-     * Add an event handler for a specific event
-     *
-     * @memberof Chartist.Event
-     * @param {String} event The event name
-     * @param {Function} handler A event handler function
-     */
-    function addEventHandler(event, handler) {
-      handlers[event] = handlers[event] || [];
-      handlers[event].push(handler);
-    }
-
-    /**
-     * Remove an event handler of a specific event name or remove all event handlers for a specific event.
-     *
-     * @memberof Chartist.Event
-     * @param {String} event The event name where a specific or all handlers should be removed
-     * @param {Function} [handler] An optional event handler function. If specified only this specific handler will be removed and otherwise all handlers are removed.
-     */
-    function removeEventHandler(event, handler) {
-      // Only do something if there are event handlers with this name existing
-      if(handlers[event]) {
-        // If handler is set we will look for a specific handler and only remove this
-        if(handler) {
-          handlers[event].splice(handlers[event].indexOf(handler), 1);
-          if(handlers[event].length === 0) {
-            delete handlers[event];
-          }
-        } else {
-          // If no handler is specified we remove all handlers for this event
-          delete handlers[event];
-        }
-      }
-    }
-
-    /**
-     * Use this function to emit an event. All handlers that are listening for this event will be triggered with the data parameter.
-     *
-     * @memberof Chartist.Event
-     * @param {String} event The event name that should be triggered
-     * @param {*} data Arbitrary data that will be passed to the event handler callback functions
-     */
-    function emit(event, data) {
-      // Only do something if there are event handlers with this name existing
-      if(handlers[event]) {
-        handlers[event].forEach(function(handler) {
-          handler(data);
-        });
-      }
-
-      // Emit event to star event handlers
-      if(handlers['*']) {
-        handlers['*'].forEach(function(starHandler) {
-          starHandler(event, data);
-        });
-      }
-    }
-
-    return {
-      addEventHandler: addEventHandler,
-      removeEventHandler: removeEventHandler,
-      emit: emit
-    };
-  };
-
-}(window, document, Chartist));
-;/**
- * This module provides some basic prototype inheritance utilities.
- *
- * @module Chartist.Class
- */
-/* global Chartist */
-(function(window, document, Chartist) {
-  'use strict';
-
-  function listToArray(list) {
-    var arr = [];
-    if (list.length) {
-      for (var i = 0; i < list.length; i++) {
-        arr.push(list[i]);
-      }
-    }
-    return arr;
-  }
-
-  /**
-   * Method to extend from current prototype.
-   *
-   * @memberof Chartist.Class
-   * @param {Object} properties The object that serves as definition for the prototype that gets created for the new class. This object should always contain a constructor property that is the desired constructor for the newly created class.
-   * @param {Object} [superProtoOverride] By default extens will use the current class prototype or Chartist.class. With this parameter you can specify any super prototype that will be used.
-   * @return {Function} Constructor function of the new class
-   *
-   * @example
-   * var Fruit = Class.extend({
-     * color: undefined,
-     *   sugar: undefined,
-     *
-     *   constructor: function(color, sugar) {
-     *     this.color = color;
-     *     this.sugar = sugar;
-     *   },
-     *
-     *   eat: function() {
-     *     this.sugar = 0;
-     *     return this;
-     *   }
-     * });
-   *
-   * var Banana = Fruit.extend({
-     *   length: undefined,
-     *
-     *   constructor: function(length, sugar) {
-     *     Banana.super.constructor.call(this, 'Yellow', sugar);
-     *     this.length = length;
-     *   }
-     * });
-   *
-   * var banana = new Banana(20, 40);
-   * console.log('banana instanceof Fruit', banana instanceof Fruit);
-   * console.log('Fruit is prototype of banana', Fruit.prototype.isPrototypeOf(banana));
-   * console.log('bananas prototype is Fruit', Object.getPrototypeOf(banana) === Fruit.prototype);
-   * console.log(banana.sugar);
-   * console.log(banana.eat().sugar);
-   * console.log(banana.color);
-   */
-  function extend(properties, superProtoOverride) {
-    var superProto = superProtoOverride || this.prototype || Chartist.Class;
-    var proto = Object.create(superProto);
-
-    Chartist.Class.cloneDefinitions(proto, properties);
-
-    var constr = function() {
-      var fn = proto.constructor || function () {},
-        instance;
-
-      // If this is linked to the Chartist namespace the constructor was not called with new
-      // To provide a fallback we will instantiate here and return the instance
-      instance = this === Chartist ? Object.create(proto) : this;
-      fn.apply(instance, Array.prototype.slice.call(arguments, 0));
-
-      // If this constructor was not called with new we need to return the instance
-      // This will not harm when the constructor has been called with new as the returned value is ignored
-      return instance;
-    };
-
-    constr.prototype = proto;
-    constr.super = superProto;
-    constr.extend = this.extend;
-
-    return constr;
-  }
-
-  // Variable argument list clones args > 0 into args[0] and retruns modified args[0]
-  function cloneDefinitions() {
-    var args = listToArray(arguments);
-    var target = args[0];
-
-    args.splice(1, args.length - 1).forEach(function (source) {
-      Object.getOwnPropertyNames(source).forEach(function (propName) {
-        // If this property already exist in target we delete it first
-        delete target[propName];
-        // Define the property with the descriptor from source
-        Object.defineProperty(target, propName,
-          Object.getOwnPropertyDescriptor(source, propName));
-      });
-    });
-
-    return target;
-  }
-
-  Chartist.Class = {
-    extend: extend,
-    cloneDefinitions: cloneDefinitions
-  };
-
-}(window, document, Chartist));
-;/**
- * Base for all chart types. The methods in Chartist.Base are inherited to all chart types.
- *
- * @module Chartist.Base
- */
-/* global Chartist */
-(function(window, document, Chartist) {
-  'use strict';
-
-  // TODO: Currently we need to re-draw the chart on window resize. This is usually very bad and will affect performance.
-  // This is done because we can't work with relative coordinates when drawing the chart because SVG Path does not
-  // work with relative positions yet. We need to check if we can do a viewBox hack to switch to percentage.
-  // See http://mozilla.6506.n7.nabble.com/Specyfing-paths-with-percentages-unit-td247474.html
-  // Update: can be done using the above method tested here: http://codepen.io/gionkunz/pen/KDvLj
-  // The problem is with the label offsets that can't be converted into percentage and affecting the chart container
-  /**
-   * Updates the chart which currently does a full reconstruction of the SVG DOM
-   *
-   * @param {Object} [data] Optional data you'd like to set for the chart before it will update. If not specified the update method will use the data that is already configured with the chart.
-   * @param {Object} [options] Optional options you'd like to add to the previous options for the chart before it will update. If not specified the update method will use the options that have been already configured with the chart.
-   * @param {Boolean} [override] If set to true, the passed options will be used to extend the options that have been configured already. Otherwise the chart default options will be used as the base
-   * @memberof Chartist.Base
-   */
-  function update(data, options, override) {
-    if(data) {
-      this.data = data || {};
-      this.data.labels = this.data.labels || [];
-      this.data.series = this.data.series || [];
-      // Event for data transformation that allows to manipulate the data before it gets rendered in the charts
-      this.eventEmitter.emit('data', {
-        type: 'update',
-        data: this.data
-      });
-    }
-
-    if(options) {
-      this.options = Chartist.extend({}, override ? this.options : this.defaultOptions, options);
-
-      // If chartist was not initialized yet, we just set the options and leave the rest to the initialization
-      // Otherwise we re-create the optionsProvider at this point
-      if(!this.initializeTimeoutId) {
-        this.optionsProvider.removeMediaQueryListeners();
-        this.optionsProvider = Chartist.optionsProvider(this.options, this.responsiveOptions, this.eventEmitter);
-      }
-    }
-
-    // Only re-created the chart if it has been initialized yet
-    if(!this.initializeTimeoutId) {
-      this.createChart(this.optionsProvider.getCurrentOptions());
-    }
-
-    // Return a reference to the chart object to chain up calls
-    return this;
-  }
-
-  /**
-   * This method can be called on the API object of each chart and will un-register all event listeners that were added to other components. This currently includes a window.resize listener as well as media query listeners if any responsive options have been provided. Use this function if you need to destroy and recreate Chartist charts dynamically.
-   *
-   * @memberof Chartist.Base
-   */
-  function detach() {
-    // Only detach if initialization already occurred on this chart. If this chart still hasn't initialized (therefore
-    // the initializationTimeoutId is still a valid timeout reference, we will clear the timeout
-    if(!this.initializeTimeoutId) {
-      window.removeEventListener('resize', this.resizeListener);
-      this.optionsProvider.removeMediaQueryListeners();
-    } else {
-      window.clearTimeout(this.initializeTimeoutId);
-    }
-
-    return this;
-  }
-
-  /**
-   * Use this function to register event handlers. The handler callbacks are synchronous and will run in the main thread rather than the event loop.
-   *
-   * @memberof Chartist.Base
-   * @param {String} event Name of the event. Check the examples for supported events.
-   * @param {Function} handler The handler function that will be called when an event with the given name was emitted. This function will receive a data argument which contains event data. See the example for more details.
-   */
-  function on(event, handler) {
-    this.eventEmitter.addEventHandler(event, handler);
-    return this;
-  }
-
-  /**
-   * Use this function to un-register event handlers. If the handler function parameter is omitted all handlers for the given event will be un-registered.
-   *
-   * @memberof Chartist.Base
-   * @param {String} event Name of the event for which a handler should be removed
-   * @param {Function} [handler] The handler function that that was previously used to register a new event handler. This handler will be removed from the event handler list. If this parameter is omitted then all event handlers for the given event are removed from the list.
-   */
-  function off(event, handler) {
-    this.eventEmitter.removeEventHandler(event, handler);
-    return this;
-  }
-
-  function initialize() {
-    // Add window resize listener that re-creates the chart
-    window.addEventListener('resize', this.resizeListener);
-
-    // Obtain current options based on matching media queries (if responsive options are given)
-    // This will also register a listener that is re-creating the chart based on media changes
-    this.optionsProvider = Chartist.optionsProvider(this.options, this.responsiveOptions, this.eventEmitter);
-    // Register options change listener that will trigger a chart update
-    this.eventEmitter.addEventHandler('optionsChanged', function() {
-      this.update();
-    }.bind(this));
-
-    // Before the first chart creation we need to register us with all plugins that are configured
-    // Initialize all relevant plugins with our chart object and the plugin options specified in the config
-    if(this.options.plugins) {
-      this.options.plugins.forEach(function(plugin) {
-        if(plugin instanceof Array) {
-          plugin[0](this, plugin[1]);
-        } else {
-          plugin(this);
-        }
-      }.bind(this));
-    }
-
-    // Event for data transformation that allows to manipulate the data before it gets rendered in the charts
-    this.eventEmitter.emit('data', {
-      type: 'initial',
-      data: this.data
-    });
-
-    // Create the first chart
-    this.createChart(this.optionsProvider.getCurrentOptions());
-
-    // As chart is initialized from the event loop now we can reset our timeout reference
-    // This is important if the chart gets initialized on the same element twice
-    this.initializeTimeoutId = undefined;
-  }
-
-  /**
-   * Constructor of chart base class.
-   *
-   * @param query
-   * @param data
-   * @param defaultOptions
-   * @param options
-   * @param responsiveOptions
-   * @constructor
-   */
-  function Base(query, data, defaultOptions, options, responsiveOptions) {
-    this.container = Chartist.querySelector(query);
-    this.data = data || {};
-    this.data.labels = this.data.labels || [];
-    this.data.series = this.data.series || [];
-    this.defaultOptions = defaultOptions;
-    this.options = options;
-    this.responsiveOptions = responsiveOptions;
-    this.eventEmitter = Chartist.EventEmitter();
-    this.supportsForeignObject = Chartist.Svg.isSupported('Extensibility');
-    this.supportsAnimations = Chartist.Svg.isSupported('AnimationEventsAttribute');
-    this.resizeListener = function resizeListener(){
-      this.update();
-    }.bind(this);
-
-    if(this.container) {
-      // If chartist was already initialized in this container we are detaching all event listeners first
-      if(this.container.__chartist__) {
-        this.container.__chartist__.detach();
-      }
-
-      this.container.__chartist__ = this;
-    }
-
-    // Using event loop for first draw to make it possible to register event listeners in the same call stack where
-    // the chart was created.
-    this.initializeTimeoutId = setTimeout(initialize.bind(this), 0);
-  }
-
-  // Creating the chart base class
-  Chartist.Base = Chartist.Class.extend({
-    constructor: Base,
-    optionsProvider: undefined,
-    container: undefined,
-    svg: undefined,
-    eventEmitter: undefined,
-    createChart: function() {
-      throw new Error('Base chart type can\'t be instantiated!');
-    },
-    update: update,
-    detach: detach,
-    on: on,
-    off: off,
-    version: Chartist.version,
-    supportsForeignObject: false
-  });
-
-}(window, document, Chartist));
-;/**
- * Chartist SVG module for simple SVG DOM abstraction
- *
- * @module Chartist.Svg
- */
-/* global Chartist */
-(function(window, document, Chartist) {
-  'use strict';
-
-  /**
-   * Chartist.Svg creates a new SVG object wrapper with a starting element. You can use the wrapper to fluently create sub-elements and modify them.
-   *
-   * @memberof Chartist.Svg
-   * @constructor
-   * @param {String|Element} name The name of the SVG element to create or an SVG dom element which should be wrapped into Chartist.Svg
-   * @param {Object} attributes An object with properties that will be added as attributes to the SVG element that is created. Attributes with undefined values will not be added.
-   * @param {String} className This class or class list will be added to the SVG element
-   * @param {Object} parent The parent SVG wrapper object where this newly created wrapper and it's element will be attached to as child
-   * @param {Boolean} insertFirst If this param is set to true in conjunction with a parent element the newly created element will be added as first child element in the parent element
-   */
-  function Svg(name, attributes, className, parent, insertFirst) {
-    // If Svg is getting called with an SVG element we just return the wrapper
-    if(name instanceof Element) {
-      this._node = name;
-    } else {
-      this._node = document.createElementNS(Chartist.namespaces.svg, name);
-
-      // If this is an SVG element created then custom namespace
-      if(name === 'svg') {
-        this.attr({
-          'xmlns:ct': Chartist.namespaces.ct
-        });
-      }
-    }
-
-    if(attributes) {
-      this.attr(attributes);
-    }
-
-    if(className) {
-      this.addClass(className);
-    }
-
-    if(parent) {
-      if (insertFirst && parent._node.firstChild) {
-        parent._node.insertBefore(this._node, parent._node.firstChild);
-      } else {
-        parent._node.appendChild(this._node);
-      }
-    }
-  }
-
-  /**
-   * Set attributes on the current SVG element of the wrapper you're currently working on.
-   *
-   * @memberof Chartist.Svg
-   * @param {Object|String} attributes An object with properties that will be added as attributes to the SVG element that is created. Attributes with undefined values will not be added. If this parameter is a String then the function is used as a getter and will return the attribute value.
-   * @param {String} [ns] If specified, the attribute will be obtained using getAttributeNs. In order to write namepsaced attributes you can use the namespace:attribute notation within the attributes object.
-   * @return {Object|String} The current wrapper object will be returned so it can be used for chaining or the attribute value if used as getter function.
-   */
-  function attr(attributes, ns) {
-    if(typeof attributes === 'string') {
-      if(ns) {
-        return this._node.getAttributeNS(ns, attributes);
-      } else {
-        return this._node.getAttribute(attributes);
-      }
-    }
-
-    Object.keys(attributes).forEach(function(key) {
-      // If the attribute value is undefined we can skip this one
-      if(attributes[key] === undefined) {
-        return;
-      }
-
-      if (key.indexOf(':') !== -1) {
-        var namespacedAttribute = key.split(':');
-        this._node.setAttributeNS(Chartist.namespaces[namespacedAttribute[0]], key, attributes[key]);
-      } else {
-        this._node.setAttribute(key, attributes[key]);
-      }
-    }.bind(this));
-
-    return this;
-  }
-
-  /**
-   * Create a new SVG element whose wrapper object will be selected for further operations. This way you can also create nested groups easily.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} name The name of the SVG element that should be created as child element of the currently selected element wrapper
-   * @param {Object} [attributes] An object with properties that will be added as attributes to the SVG element that is created. Attributes with undefined values will not be added.
-   * @param {String} [className] This class or class list will be added to the SVG element
-   * @param {Boolean} [insertFirst] If this param is set to true in conjunction with a parent element the newly created element will be added as first child element in the parent element
-   * @return {Chartist.Svg} Returns a Chartist.Svg wrapper object that can be used to modify the containing SVG data
-   */
-  function elem(name, attributes, className, insertFirst) {
-    return new Chartist.Svg(name, attributes, className, this, insertFirst);
-  }
-
-  /**
-   * Returns the parent Chartist.SVG wrapper object
-   *
-   * @memberof Chartist.Svg
-   * @return {Chartist.Svg} Returns a Chartist.Svg wrapper around the parent node of the current node. If the parent node is not existing or it's not an SVG node then this function will return null.
-   */
-  function parent() {
-    return this._node.parentNode instanceof SVGElement ? new Chartist.Svg(this._node.parentNode) : null;
-  }
-
-  /**
-   * This method returns a Chartist.Svg wrapper around the root SVG element of the current tree.
-   *
-   * @memberof Chartist.Svg
-   * @return {Chartist.Svg} The root SVG element wrapped in a Chartist.Svg element
-   */
-  function root() {
-    var node = this._node;
-    while(node.nodeName !== 'svg') {
-      node = node.parentNode;
-    }
-    return new Chartist.Svg(node);
-  }
-
-  /**
-   * Find the first child SVG element of the current element that matches a CSS selector. The returned object is a Chartist.Svg wrapper.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} selector A CSS selector that is used to query for child SVG elements
-   * @return {Chartist.Svg} The SVG wrapper for the element found or null if no element was found
-   */
-  function querySelector(selector) {
-    var foundNode = this._node.querySelector(selector);
-    return foundNode ? new Chartist.Svg(foundNode) : null;
-  }
-
-  /**
-   * Find the all child SVG elements of the current element that match a CSS selector. The returned object is a Chartist.Svg.List wrapper.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} selector A CSS selector that is used to query for child SVG elements
-   * @return {Chartist.Svg.List} The SVG wrapper list for the element found or null if no element was found
-   */
-  function querySelectorAll(selector) {
-    var foundNodes = this._node.querySelectorAll(selector);
-    return foundNodes.length ? new Chartist.Svg.List(foundNodes) : null;
-  }
-
-  /**
-   * Returns the underlying SVG node for the current element.
-   *
-   * @memberof Chartist.Svg
-   * @returns {Node}
-   */
-  function getNode() {
-    return this._node;
-  }
-
-  /**
-   * This method creates a foreignObject (see https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) that allows to embed HTML content into a SVG graphic. With the help of foreignObjects you can enable the usage of regular HTML elements inside of SVG where they are subject for SVG positioning and transformation but the Browser will use the HTML rendering capabilities for the containing DOM.
-   *
-   * @memberof Chartist.Svg
-   * @param {Node|String} content The DOM Node, or HTML string that will be converted to a DOM Node, that is then placed into and wrapped by the foreignObject
-   * @param {String} [attributes] An object with properties that will be added as attributes to the foreignObject element that is created. Attributes with undefined values will not be added.
-   * @param {String} [className] This class or class list will be added to the SVG element
-   * @param {Boolean} [insertFirst] Specifies if the foreignObject should be inserted as first child
-   * @return {Chartist.Svg} New wrapper object that wraps the foreignObject element
-   */
-  function foreignObject(content, attributes, className, insertFirst) {
-    // If content is string then we convert it to DOM
-    // TODO: Handle case where content is not a string nor a DOM Node
-    if(typeof content === 'string') {
-      var container = document.createElement('div');
-      container.innerHTML = content;
-      content = container.firstChild;
-    }
-
-    // Adding namespace to content element
-    content.setAttribute('xmlns', Chartist.namespaces.xmlns);
-
-    // Creating the foreignObject without required extension attribute (as described here
-    // http://www.w3.org/TR/SVG/extend.html#ForeignObjectElement)
-    var fnObj = this.elem('foreignObject', attributes, className, insertFirst);
-
-    // Add content to foreignObjectElement
-    fnObj._node.appendChild(content);
-
-    return fnObj;
-  }
-
-  /**
-   * This method adds a new text element to the current Chartist.Svg wrapper.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} t The text that should be added to the text element that is created
-   * @return {Chartist.Svg} The same wrapper object that was used to add the newly created element
-   */
-  function text(t) {
-    this._node.appendChild(document.createTextNode(t));
-    return this;
-  }
-
-  /**
-   * This method will clear all child nodes of the current wrapper object.
-   *
-   * @memberof Chartist.Svg
-   * @return {Chartist.Svg} The same wrapper object that got emptied
-   */
-  function empty() {
-    while (this._node.firstChild) {
-      this._node.removeChild(this._node.firstChild);
-    }
-
-    return this;
-  }
-
-  /**
-   * This method will cause the current wrapper to remove itself from its parent wrapper. Use this method if you'd like to get rid of an element in a given DOM structure.
-   *
-   * @memberof Chartist.Svg
-   * @return {Chartist.Svg} The parent wrapper object of the element that got removed
-   */
-  function remove() {
-    this._node.parentNode.removeChild(this._node);
-    return this.parent();
-  }
-
-  /**
-   * This method will replace the element with a new element that can be created outside of the current DOM.
-   *
-   * @memberof Chartist.Svg
-   * @param {Chartist.Svg} newElement The new Chartist.Svg object that will be used to replace the current wrapper object
-   * @return {Chartist.Svg} The wrapper of the new element
-   */
-  function replace(newElement) {
-    this._node.parentNode.replaceChild(newElement._node, this._node);
-    return newElement;
-  }
-
-  /**
-   * This method will append an element to the current element as a child.
-   *
-   * @memberof Chartist.Svg
-   * @param {Chartist.Svg} element The Chartist.Svg element that should be added as a child
-   * @param {Boolean} [insertFirst] Specifies if the element should be inserted as first child
-   * @return {Chartist.Svg} The wrapper of the appended object
-   */
-  function append(element, insertFirst) {
-    if(insertFirst && this._node.firstChild) {
-      this._node.insertBefore(element._node, this._node.firstChild);
-    } else {
-      this._node.appendChild(element._node);
-    }
-
-    return this;
-  }
-
-  /**
-   * Returns an array of class names that are attached to the current wrapper element. This method can not be chained further.
-   *
-   * @memberof Chartist.Svg
-   * @return {Array} A list of classes or an empty array if there are no classes on the current element
-   */
-  function classes() {
-    return this._node.getAttribute('class') ? this._node.getAttribute('class').trim().split(/\s+/) : [];
-  }
-
-  /**
-   * Adds one or a space separated list of classes to the current element and ensures the classes are only existing once.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} names A white space separated list of class names
-   * @return {Chartist.Svg} The wrapper of the current element
-   */
-  function addClass(names) {
-    this._node.setAttribute('class',
-      this.classes(this._node)
-        .concat(names.trim().split(/\s+/))
-        .filter(function(elem, pos, self) {
-          return self.indexOf(elem) === pos;
-        }).join(' ')
-    );
-
-    return this;
-  }
-
-  /**
-   * Removes one or a space separated list of classes from the current element.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} names A white space separated list of class names
-   * @return {Chartist.Svg} The wrapper of the current element
-   */
-  function removeClass(names) {
-    var removedClasses = names.trim().split(/\s+/);
-
-    this._node.setAttribute('class', this.classes(this._node).filter(function(name) {
-      return removedClasses.indexOf(name) === -1;
-    }).join(' '));
-
-    return this;
-  }
-
-  /**
-   * Removes all classes from the current element.
-   *
-   * @memberof Chartist.Svg
-   * @return {Chartist.Svg} The wrapper of the current element
-   */
-  function removeAllClasses() {
-    this._node.setAttribute('class', '');
-
-    return this;
-  }
-
-  /**
-   * Get element height using `getBoundingClientRect`
-   *
-   * @memberof Chartist.Svg
-   * @return {Number} The elements height in pixels
-   */
-  function height() {
-    return this._node.getBoundingClientRect().height;
-  }
-
-  /**
-   * Get element width using `getBoundingClientRect`
-   *
-   * @memberof Chartist.Core
-   * @return {Number} The elements width in pixels
-   */
-  function width() {
-    return this._node.getBoundingClientRect().width;
-  }
-
-  /**
-   * The animate function lets you animate the current element with SMIL animations. You can add animations for multiple attributes at the same time by using an animation definition object. This object should contain SMIL animation attributes. Please refer to http://www.w3.org/TR/SVG/animate.html for a detailed specification about the available animation attributes. Additionally an easing property can be passed in the animation definition object. This can be a string with a name of an easing function in `Chartist.Svg.Easing` or an array with four numbers specifying a cubic Bézier curve.
-   * **An animations object could look like this:**
-   * ```javascript
-   * element.animate({
-   *   opacity: {
-   *     dur: 1000,
-   *     from: 0,
-   *     to: 1
-   *   },
-   *   x1: {
-   *     dur: '1000ms',
-   *     from: 100,
-   *     to: 200,
-   *     easing: 'easeOutQuart'
-   *   },
-   *   y1: {
-   *     dur: '2s',
-   *     from: 0,
-   *     to: 100
-   *   }
-   * });
-   * ```
-   * **Automatic unit conversion**
-   * For the `dur` and the `begin` animate attribute you can also omit a unit by passing a number. The number will automatically be converted to milli seconds.
-   * **Guided mode**
-   * The default behavior of SMIL animations with offset using the `begin` attribute is that the attribute will keep it's original value until the animation starts. Mostly this behavior is not desired as you'd like to have your element attributes already initialized with the animation `from` value even before the animation starts. Also if you don't specify `fill="freeze"` on an animate element or if you delete the animation after it's done (which is done in guided mode) the attribute will switch back to the initial value. This behavior is also not desired when performing simple one-time animations. For one-time animations you'd want to trigger animations immediately instead of relative to the document begin time. That's why in guided mode Chartist.Svg will also use the `begin` property to schedule a timeout and manually start the animation after the timeout. If you're using multiple SMIL definition objects for an attribute (in an array), guided mode will be disabled for this attribute, even if you explicitly enabled it.
-   * If guided mode is enabled the following behavior is added:
-   * - Before the animation starts (even when delayed with `begin`) the animated attribute will be set already to the `from` value of the animation
-   * - `begin` is explicitly set to `indefinite` so it can be started manually without relying on document begin time (creation)
-   * - The animate element will be forced to use `fill="freeze"`
-   * - The animation will be triggered with `beginElement()` in a timeout where `begin` of the definition object is interpreted in milli seconds. If no `begin` was specified the timeout is triggered immediately.
-   * - After the animation the element attribute value will be set to the `to` value of the animation
-   * - The animate element is deleted from the DOM
-   *
-   * @memberof Chartist.Svg
-   * @param {Object} animations An animations object where the property keys are the attributes you'd like to animate. The properties should be objects again that contain the SMIL animation attributes (usually begin, dur, from, and to). The property begin and dur is auto converted (see Automatic unit conversion). You can also schedule multiple animations for the same attribute by passing an Array of SMIL definition objects. Attributes that contain an array of SMIL definition objects will not be executed in guided mode.
-   * @param {Boolean} guided Specify if guided mode should be activated for this animation (see Guided mode). If not otherwise specified, guided mode will be activated.
-   * @param {Object} eventEmitter If specified, this event emitter will be notified when an animation starts or ends.
-   * @return {Chartist.Svg} The current element where the animation was added
-   */
-  function animate(animations, guided, eventEmitter) {
-    if(guided === undefined) {
-      guided = true;
-    }
-
-    Object.keys(animations).forEach(function createAnimateForAttributes(attribute) {
-
-      function createAnimate(animationDefinition, guided) {
-        var attributeProperties = {},
-          animate,
-          timeout,
-          easing;
-
-        // Check if an easing is specified in the definition object and delete it from the object as it will not
-        // be part of the animate element attributes.
-        if(animationDefinition.easing) {
-          // If already an easing Bézier curve array we take it or we lookup a easing array in the Easing object
-          easing = animationDefinition.easing instanceof Array ?
-            animationDefinition.easing :
-            Chartist.Svg.Easing[animationDefinition.easing];
-          delete animationDefinition.easing;
-        }
-
-        // If numeric dur or begin was provided we assume milli seconds
-        animationDefinition.begin = Chartist.ensureUnit(animationDefinition.begin, 'ms');
-        animationDefinition.dur = Chartist.ensureUnit(animationDefinition.dur, 'ms');
-
-        if(easing) {
-          animationDefinition.calcMode = 'spline';
-          animationDefinition.keySplines = easing.join(' ');
-          animationDefinition.keyTimes = '0;1';
-        }
-
-        // Adding "fill: freeze" if we are in guided mode and set initial attribute values
-        if(guided) {
-          animationDefinition.fill = 'freeze';
-          // Animated property on our element should already be set to the animation from value in guided mode
-          attributeProperties[attribute] = animationDefinition.from;
-          this.attr(attributeProperties);
-
-          // In guided mode we also set begin to indefinite so we can trigger the start manually and put the begin
-          // which needs to be in ms aside
-          timeout = Chartist.quantity(animationDefinition.begin || 0).value;
-          animationDefinition.begin = 'indefinite';
-        }
-
-        animate = this.elem('animate', Chartist.extend({
-          attributeName: attribute
-        }, animationDefinition));
-
-        if(guided) {
-          // If guided we take the value that was put aside in timeout and trigger the animation manually with a timeout
-          setTimeout(function() {
-            // If beginElement fails we set the animated attribute to the end position and remove the animate element
-            // This happens if the SMIL ElementTimeControl interface is not supported or any other problems occured in
-            // the browser. (Currently FF 34 does not support animate elements in foreignObjects)
-            try {
-              animate._node.beginElement();
-            } catch(err) {
-              // Set animated attribute to current animated value
-              attributeProperties[attribute] = animationDefinition.to;
-              this.attr(attributeProperties);
-              // Remove the animate element as it's no longer required
-              animate.remove();
-            }
-          }.bind(this), timeout);
-        }
-
-        if(eventEmitter) {
-          animate._node.addEventListener('beginEvent', function handleBeginEvent() {
-            eventEmitter.emit('animationBegin', {
-              element: this,
-              animate: animate._node,
-              params: animationDefinition
-            });
-          }.bind(this));
-        }
-
-        animate._node.addEventListener('endEvent', function handleEndEvent() {
-          if(eventEmitter) {
-            eventEmitter.emit('animationEnd', {
-              element: this,
-              animate: animate._node,
-              params: animationDefinition
-            });
-          }
-
-          if(guided) {
-            // Set animated attribute to current animated value
-            attributeProperties[attribute] = animationDefinition.to;
-            this.attr(attributeProperties);
-            // Remove the animate element as it's no longer required
-            animate.remove();
-          }
-        }.bind(this));
-      }
-
-      // If current attribute is an array of definition objects we create an animate for each and disable guided mode
-      if(animations[attribute] instanceof Array) {
-        animations[attribute].forEach(function(animationDefinition) {
-          createAnimate.bind(this)(animationDefinition, false);
-        }.bind(this));
-      } else {
-        createAnimate.bind(this)(animations[attribute], guided);
-      }
-
-    }.bind(this));
-
-    return this;
-  }
-
-  Chartist.Svg = Chartist.Class.extend({
-    constructor: Svg,
-    attr: attr,
-    elem: elem,
-    parent: parent,
-    root: root,
-    querySelector: querySelector,
-    querySelectorAll: querySelectorAll,
-    getNode: getNode,
-    foreignObject: foreignObject,
-    text: text,
-    empty: empty,
-    remove: remove,
-    replace: replace,
-    append: append,
-    classes: classes,
-    addClass: addClass,
-    removeClass: removeClass,
-    removeAllClasses: removeAllClasses,
-    height: height,
-    width: width,
-    animate: animate
-  });
-
-  /**
-   * This method checks for support of a given SVG feature like Extensibility, SVG-animation or the like. Check http://www.w3.org/TR/SVG11/feature for a detailed list.
-   *
-   * @memberof Chartist.Svg
-   * @param {String} feature The SVG 1.1 feature that should be checked for support.
-   * @return {Boolean} True of false if the feature is supported or not
-   */
-  Chartist.Svg.isSupported = function(feature) {
-    return document.implementation.hasFeature('http://www.w3.org/TR/SVG11/feature#' + feature, '1.1');
-  };
-
-  /**
-   * This Object contains some standard easing cubic bezier curves. Then can be used with their name in the `Chartist.Svg.animate`. You can also extend the list and use your own name in the `animate` function. Click the show code button to see the available bezier functions.
-   *
-   * @memberof Chartist.Svg
-   */
-  var easingCubicBeziers = {
-    easeInSine: [0.47, 0, 0.745, 0.715],
-    easeOutSine: [0.39, 0.575, 0.565, 1],
-    easeInOutSine: [0.445, 0.05, 0.55, 0.95],
-    easeInQuad: [0.55, 0.085, 0.68, 0.53],
-    easeOutQuad: [0.25, 0.46, 0.45, 0.94],
-    easeInOutQuad: [0.455, 0.03, 0.515, 0.955],
-    easeInCubic: [0.55, 0.055, 0.675, 0.19],
-    easeOutCubic: [0.215, 0.61, 0.355, 1],
-    easeInOutCubic: [0.645, 0.045, 0.355, 1],
-    easeInQuart: [0.895, 0.03, 0.685, 0.22],
-    easeOutQuart: [0.165, 0.84, 0.44, 1],
-    easeInOutQuart: [0.77, 0, 0.175, 1],
-    easeInQuint: [0.755, 0.05, 0.855, 0.06],
-    easeOutQuint: [0.23, 1, 0.32, 1],
-    easeInOutQuint: [0.86, 0, 0.07, 1],
-    easeInExpo: [0.95, 0.05, 0.795, 0.035],
-    easeOutExpo: [0.19, 1, 0.22, 1],
-    easeInOutExpo: [1, 0, 0, 1],
-    easeInCirc: [0.6, 0.04, 0.98, 0.335],
-    easeOutCirc: [0.075, 0.82, 0.165, 1],
-    easeInOutCirc: [0.785, 0.135, 0.15, 0.86],
-    easeInBack: [0.6, -0.28, 0.735, 0.045],
-    easeOutBack: [0.175, 0.885, 0.32, 1.275],
-    easeInOutBack: [0.68, -0.55, 0.265, 1.55]
-  };
-
-  Chartist.Svg.Easing = easingCubicBeziers;
-
-  /**
-   * This helper class is to wrap multiple `Chartist.Svg` elements into a list where you can call the `Chartist.Svg` functions on all elements in the list with one call. This is helpful when you'd like to perform calls with `Chartist.Svg` on multiple elements.
-   * An instance of this class is also returned by `Chartist.Svg.querySelectorAll`.
-   *
-   * @memberof Chartist.Svg
-   * @param {Array<Node>|NodeList} nodeList An Array of SVG DOM nodes or a SVG DOM NodeList (as returned by document.querySelectorAll)
-   * @constructor
-   */
-  function SvgList(nodeList) {
-    var list = this;
-
-    this.svgElements = [];
-    for(var i = 0; i < nodeList.length; i++) {
-      this.svgElements.push(new Chartist.Svg(nodeList[i]));
-    }
-
-    // Add delegation methods for Chartist.Svg
-    Object.keys(Chartist.Svg.prototype).filter(function(prototypeProperty) {
-      return ['constructor',
-          'parent',
-          'querySelector',
-          'querySelectorAll',
-          'replace',
-          'append',
-          'classes',
-          'height',
-          'width'].indexOf(prototypeProperty) === -1;
-    }).forEach(function(prototypeProperty) {
-      list[prototypeProperty] = function() {
-        var args = Array.prototype.slice.call(arguments, 0);
-        list.svgElements.forEach(function(element) {
-          Chartist.Svg.prototype[prototypeProperty].apply(element, args);
-        });
-        return list;
-      };
-    });
-  }
-
-  Chartist.Svg.List = Chartist.Class.extend({
-    constructor: SvgList
-  });
-}(window, document, Chartist));
-;/**
- * Chartist SVG path module for SVG path description creation and modification.
- *
- * @module Chartist.Svg.Path
- */
-/* global Chartist */
-(function(window, document, Chartist) {
-  'use strict';
-
-  /**
-   * Contains the descriptors of supported element types in a SVG path. Currently only move, line and curve are supported.
-   *
-   * @memberof Chartist.Svg.Path
-   * @type {Object}
-   */
-  var elementDescriptions = {
-    m: ['x', 'y'],
-    l: ['x', 'y'],
-    c: ['x1', 'y1', 'x2', 'y2', 'x', 'y'],
-    a: ['rx', 'ry', 'xAr', 'lAf', 'sf', 'x', 'y']
-  };
-
-  /**
-   * Default options for newly created SVG path objects.
-   *
-   * @memberof Chartist.Svg.Path
-   * @type {Object}
-   */
-  var defaultOptions = {
-    // The accuracy in digit count after the decimal point. This will be used to round numbers in the SVG path. If this option is set to false then no rounding will be performed.
-    accuracy: 3
-  };
-
-  function element(command, params, pathElements, pos, relative, data) {
-    var pathElement = Chartist.extend({
-      command: relative ? command.toLowerCase() : command.toUpperCase()
-    }, params, data ? { data: data } : {} );
-
-    pathElements.splice(pos, 0, pathElement);
-  }
-
-  function forEachParam(pathElements, cb) {
-    pathElements.forEach(function(pathElement, pathElementIndex) {
-      elementDescriptions[pathElement.command.toLowerCase()].forEach(function(paramName, paramIndex) {
-        cb(pathElement, paramName, pathElementIndex, paramIndex, pathElements);
-      });
-    });
-  }
-
-  /**
-   * Used to construct a new path object.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Boolean} close If set to true then this path will be closed when stringified (with a Z at the end)
-   * @param {Object} options Options object that overrides the default objects. See default options for more details.
-   * @constructor
-   */
-  function SvgPath(close, options) {
-    this.pathElements = [];
-    this.pos = 0;
-    this.close = close;
-    this.options = Chartist.extend({}, defaultOptions, options);
-  }
-
-  /**
-   * Gets or sets the current position (cursor) inside of the path. You can move around the cursor freely but limited to 0 or the count of existing elements. All modifications with element functions will insert new elements at the position of this cursor.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} [pos] If a number is passed then the cursor is set to this position in the path element array.
-   * @return {Chartist.Svg.Path|Number} If the position parameter was passed then the return value will be the path object for easy call chaining. If no position parameter was passed then the current position is returned.
-   */
-  function position(pos) {
-    if(pos !== undefined) {
-      this.pos = Math.max(0, Math.min(this.pathElements.length, pos));
-      return this;
-    } else {
-      return this.pos;
-    }
-  }
-
-  /**
-   * Removes elements from the path starting at the current position.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} count Number of path elements that should be removed from the current position.
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function remove(count) {
-    this.pathElements.splice(this.pos, count);
-    return this;
-  }
-
-  /**
-   * Use this function to add a new move SVG path element.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} x The x coordinate for the move element.
-   * @param {Number} y The y coordinate for the move element.
-   * @param {Boolean} [relative] If set to true the move element will be created with relative coordinates (lowercase letter)
-   * @param {*} [data] Any data that should be stored with the element object that will be accessible in pathElement
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function move(x, y, relative, data) {
-    element('M', {
-      x: +x,
-      y: +y
-    }, this.pathElements, this.pos++, relative, data);
-    return this;
-  }
-
-  /**
-   * Use this function to add a new line SVG path element.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} x The x coordinate for the line element.
-   * @param {Number} y The y coordinate for the line element.
-   * @param {Boolean} [relative] If set to true the line element will be created with relative coordinates (lowercase letter)
-   * @param {*} [data] Any data that should be stored with the element object that will be accessible in pathElement
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function line(x, y, relative, data) {
-    element('L', {
-      x: +x,
-      y: +y
-    }, this.pathElements, this.pos++, relative, data);
-    return this;
-  }
-
-  /**
-   * Use this function to add a new curve SVG path element.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} x1 The x coordinate for the first control point of the bezier curve.
-   * @param {Number} y1 The y coordinate for the first control point of the bezier curve.
-   * @param {Number} x2 The x coordinate for the second control point of the bezier curve.
-   * @param {Number} y2 The y coordinate for the second control point of the bezier curve.
-   * @param {Number} x The x coordinate for the target point of the curve element.
-   * @param {Number} y The y coordinate for the target point of the curve element.
-   * @param {Boolean} [relative] If set to true the curve element will be created with relative coordinates (lowercase letter)
-   * @param {*} [data] Any data that should be stored with the element object that will be accessible in pathElement
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function curve(x1, y1, x2, y2, x, y, relative, data) {
-    element('C', {
-      x1: +x1,
-      y1: +y1,
-      x2: +x2,
-      y2: +y2,
-      x: +x,
-      y: +y
-    }, this.pathElements, this.pos++, relative, data);
-    return this;
-  }
-
-  /**
-   * Use this function to add a new non-bezier curve SVG path element.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} rx The radius to be used for the x-axis of the arc.
-   * @param {Number} ry The radius to be used for the y-axis of the arc.
-   * @param {Number} xAr Defines the orientation of the arc
-   * @param {Number} lAf Large arc flag
-   * @param {Number} sf Sweep flag
-   * @param {Number} x The x coordinate for the target point of the curve element.
-   * @param {Number} y The y coordinate for the target point of the curve element.
-   * @param {Boolean} [relative] If set to true the curve element will be created with relative coordinates (lowercase letter)
-   * @param {*} [data] Any data that should be stored with the element object that will be accessible in pathElement
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function arc(rx, ry, xAr, lAf, sf, x, y, relative, data) {
-    element('A', {
-      rx: +rx,
-      ry: +ry,
-      xAr: +xAr,
-      lAf: +lAf,
-      sf: +sf,
-      x: +x,
-      y: +y
-    }, this.pathElements, this.pos++, relative, data);
-    return this;
-  }
-
-  /**
-   * Parses an SVG path seen in the d attribute of path elements, and inserts the parsed elements into the existing path object at the current cursor position. Any closing path indicators (Z at the end of the path) will be ignored by the parser as this is provided by the close option in the options of the path object.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {String} path Any SVG path that contains move (m), line (l) or curve (c) components.
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function parse(path) {
-    // Parsing the SVG path string into an array of arrays [['M', '10', '10'], ['L', '100', '100']]
-    var chunks = path.replace(/([A-Za-z])([0-9])/g, '$1 $2')
-      .replace(/([0-9])([A-Za-z])/g, '$1 $2')
-      .split(/[\s,]+/)
-      .reduce(function(result, element) {
-        if(element.match(/[A-Za-z]/)) {
-          result.push([]);
-        }
-
-        result[result.length - 1].push(element);
-        return result;
-      }, []);
-
-    // If this is a closed path we remove the Z at the end because this is determined by the close option
-    if(chunks[chunks.length - 1][0].toUpperCase() === 'Z') {
-      chunks.pop();
-    }
-
-    // Using svgPathElementDescriptions to map raw path arrays into objects that contain the command and the parameters
-    // For example {command: 'M', x: '10', y: '10'}
-    var elements = chunks.map(function(chunk) {
-        var command = chunk.shift(),
-          description = elementDescriptions[command.toLowerCase()];
-
-        return Chartist.extend({
-          command: command
-        }, description.reduce(function(result, paramName, index) {
-          result[paramName] = +chunk[index];
-          return result;
-        }, {}));
-      });
-
-    // Preparing a splice call with the elements array as var arg params and insert the parsed elements at the current position
-    var spliceArgs = [this.pos, 0];
-    Array.prototype.push.apply(spliceArgs, elements);
-    Array.prototype.splice.apply(this.pathElements, spliceArgs);
-    // Increase the internal position by the element count
-    this.pos += elements.length;
-
-    return this;
-  }
-
-  /**
-   * This function renders to current SVG path object into a final SVG string that can be used in the d attribute of SVG path elements. It uses the accuracy option to round big decimals. If the close parameter was set in the constructor of this path object then a path closing Z will be appended to the output string.
-   *
-   * @memberof Chartist.Svg.Path
-   * @return {String}
-   */
-  function stringify() {
-    var accuracyMultiplier = Math.pow(10, this.options.accuracy);
-
-    return this.pathElements.reduce(function(path, pathElement) {
-        var params = elementDescriptions[pathElement.command.toLowerCase()].map(function(paramName) {
-          return this.options.accuracy ?
-            (Math.round(pathElement[paramName] * accuracyMultiplier) / accuracyMultiplier) :
-            pathElement[paramName];
-        }.bind(this));
-
-        return path + pathElement.command + params.join(',');
-      }.bind(this), '') + (this.close ? 'Z' : '');
-  }
-
-  /**
-   * Scales all elements in the current SVG path object. There is an individual parameter for each coordinate. Scaling will also be done for control points of curves, affecting the given coordinate.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} x The number which will be used to scale the x, x1 and x2 of all path elements.
-   * @param {Number} y The number which will be used to scale the y, y1 and y2 of all path elements.
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function scale(x, y) {
-    forEachParam(this.pathElements, function(pathElement, paramName) {
-      pathElement[paramName] *= paramName[0] === 'x' ? x : y;
-    });
-    return this;
-  }
-
-  /**
-   * Translates all elements in the current SVG path object. The translation is relative and there is an individual parameter for each coordinate. Translation will also be done for control points of curves, affecting the given coordinate.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Number} x The number which will be used to translate the x, x1 and x2 of all path elements.
-   * @param {Number} y The number which will be used to translate the y, y1 and y2 of all path elements.
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function translate(x, y) {
-    forEachParam(this.pathElements, function(pathElement, paramName) {
-      pathElement[paramName] += paramName[0] === 'x' ? x : y;
-    });
-    return this;
-  }
-
-  /**
-   * This function will run over all existing path elements and then loop over their attributes. The callback function will be called for every path element attribute that exists in the current path.
-   * The method signature of the callback function looks like this:
-   * ```javascript
-   * function(pathElement, paramName, pathElementIndex, paramIndex, pathElements)
-   * ```
-   * If something else than undefined is returned by the callback function, this value will be used to replace the old value. This allows you to build custom transformations of path objects that can't be achieved using the basic transformation functions scale and translate.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Function} transformFnc The callback function for the transformation. Check the signature in the function description.
-   * @return {Chartist.Svg.Path} The current path object for easy call chaining.
-   */
-  function transform(transformFnc) {
-    forEachParam(this.pathElements, function(pathElement, paramName, pathElementIndex, paramIndex, pathElements) {
-      var transformed = transformFnc(pathElement, paramName, pathElementIndex, paramIndex, pathElements);
-      if(transformed || transformed === 0) {
-        pathElement[paramName] = transformed;
-      }
-    });
-    return this;
-  }
-
-  /**
-   * This function clones a whole path object with all its properties. This is a deep clone and path element objects will also be cloned.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Boolean} [close] Optional option to set the new cloned path to closed. If not specified or false, the original path close option will be used.
-   * @return {Chartist.Svg.Path}
-   */
-  function clone(close) {
-    var c = new Chartist.Svg.Path(close || this.close);
-    c.pos = this.pos;
-    c.pathElements = this.pathElements.slice().map(function cloneElements(pathElement) {
-      return Chartist.extend({}, pathElement);
-    });
-    c.options = Chartist.extend({}, this.options);
-    return c;
-  }
-
-  /**
-   * Split a Svg.Path object by a specific command in the path chain. The path chain will be split and an array of newly created paths objects will be returned. This is useful if you'd like to split an SVG path by it's move commands, for example, in order to isolate chunks of drawings.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {String} command The command you'd like to use to split the path
-   * @return {Array<Chartist.Svg.Path>}
-   */
-  function splitByCommand(command) {
-    var split = [
-      new Chartist.Svg.Path()
-    ];
-
-    this.pathElements.forEach(function(pathElement) {
-      if(pathElement.command === command.toUpperCase() && split[split.length - 1].pathElements.length !== 0) {
-        split.push(new Chartist.Svg.Path());
-      }
-
-      split[split.length - 1].pathElements.push(pathElement);
-    });
-
-    return split;
-  }
-
-  /**
-   * This static function on `Chartist.Svg.Path` is joining multiple paths together into one paths.
-   *
-   * @memberof Chartist.Svg.Path
-   * @param {Array<Chartist.Svg.Path>} paths A list of paths to be joined together. The order is important.
-   * @param {boolean} close If the newly created path should be a closed path
-   * @param {Object} options Path options for the newly created path.
-   * @return {Chartist.Svg.Path}
-   */
-
-  function join(paths, close, options) {
-    var joinedPath = new Chartist.Svg.Path(close, options);
-    for(var i = 0; i < paths.length; i++) {
-      var path = paths[i];
-      for(var j = 0; j < path.pathElements.length; j++) {
-        joinedPath.pathElements.push(path.pathElements[j]);
-      }
-    }
-    return joinedPath;
-  }
-
-  Chartist.Svg.Path = Chartist.Class.extend({
-    constructor: SvgPath,
-    position: position,
-    remove: remove,
-    move: move,
-    line: line,
-    curve: curve,
-    arc: arc,
-    scale: scale,
-    translate: translate,
-    transform: transform,
-    parse: parse,
-    stringify: stringify,
-    clone: clone,
-    splitByCommand: splitByCommand
-  });
-
-  Chartist.Svg.Path.elementDescriptions = elementDescriptions;
-  Chartist.Svg.Path.join = join;
-}(window, document, Chartist));
-;/* global Chartist */
-(function (window, document, Chartist) {
-  'use strict';
-
-  var axisUnits = {
-    x: {
-      pos: 'x',
-      len: 'width',
-      dir: 'horizontal',
-      rectStart: 'x1',
-      rectEnd: 'x2',
-      rectOffset: 'y2'
-    },
-    y: {
-      pos: 'y',
-      len: 'height',
-      dir: 'vertical',
-      rectStart: 'y2',
-      rectEnd: 'y1',
-      rectOffset: 'x1'
-    }
-  };
-
-  function Axis(units, chartRect, ticks, options) {
-    this.units = units;
-    this.counterUnits = units === axisUnits.x ? axisUnits.y : axisUnits.x;
-    this.chartRect = chartRect;
-    this.axisLength = chartRect[units.rectEnd] - chartRect[units.rectStart];
-    this.gridOffset = chartRect[units.rectOffset];
-    this.ticks = ticks;
-    this.options = options;
-  }
-
-  function createGridAndLabels(gridGroup, labelGroup, useForeignObject, chartOptions, eventEmitter) {
-    var axisOptions = chartOptions['axis' + this.units.pos.toUpperCase()];
-    var projectedValues = this.ticks.map(this.projectValue.bind(this));
-    var labelValues = this.ticks.map(axisOptions.labelInterpolationFnc);
-
-    projectedValues.forEach(function(projectedValue, index) {
-      var labelOffset = {
-        x: 0,
-        y: 0
-      };
-
-      // TODO: Find better solution for solving this problem
-      // Calculate how much space we have available for the label
-      var labelLength;
-      if(projectedValues[index + 1]) {
-        // If we still have one label ahead, we can calculate the distance to the next tick / label
-        labelLength = projectedValues[index + 1] - projectedValue;
-      } else {
-        // If we don't have a label ahead and we have only two labels in total, we just take the remaining distance to
-        // on the whole axis length. We limit that to a minimum of 30 pixel, so that labels close to the border will
-        // still be visible inside of the chart padding.
-        labelLength = Math.max(this.axisLength - projectedValue, 30);
-      }
-
-      // Skip grid lines and labels where interpolated label values are falsey (execpt for 0)
-      if(Chartist.isFalseyButZero(labelValues[index]) && labelValues[index] !== '') {
-        return;
-      }
-
-      // Transform to global coordinates using the chartRect
-      // We also need to set the label offset for the createLabel function
-      if(this.units.pos === 'x') {
-        projectedValue = this.chartRect.x1 + projectedValue;
-        labelOffset.x = chartOptions.axisX.labelOffset.x;
-
-        // If the labels should be positioned in start position (top side for vertical axis) we need to set a
-        // different offset as for positioned with end (bottom)
-        if(chartOptions.axisX.position === 'start') {
-          labelOffset.y = this.chartRect.padding.top + chartOptions.axisX.labelOffset.y + (useForeignObject ? 5 : 20);
-        } else {
-          labelOffset.y = this.chartRect.y1 + chartOptions.axisX.labelOffset.y + (useForeignObject ? 5 : 20);
-        }
-      } else {
-        projectedValue = this.chartRect.y1 - projectedValue;
-        labelOffset.y = chartOptions.axisY.labelOffset.y - (useForeignObject ? labelLength : 0);
-
-        // If the labels should be positioned in start position (left side for horizontal axis) we need to set a
-        // different offset as for positioned with end (right side)
-        if(chartOptions.axisY.position === 'start') {
-          labelOffset.x = useForeignObject ? this.chartRect.padding.left + chartOptions.axisY.labelOffset.x : this.chartRect.x1 - 10;
-        } else {
-          labelOffset.x = this.chartRect.x2 + chartOptions.axisY.labelOffset.x + 10;
-        }
-      }
-
-      if(axisOptions.showGrid) {
-        Chartist.createGrid(projectedValue, index, this, this.gridOffset, this.chartRect[this.counterUnits.len](), gridGroup, [
-          chartOptions.classNames.grid,
-          chartOptions.classNames[this.units.dir]
-        ], eventEmitter);
-      }
-
-      if(axisOptions.showLabel) {
-        Chartist.createLabel(projectedValue, labelLength, index, labelValues, this, axisOptions.offset, labelOffset, labelGroup, [
-          chartOptions.classNames.label,
-          chartOptions.classNames[this.units.dir],
-          (axisOptions.position === 'start' ? chartOptions.classNames[axisOptions.position] : chartOptions.classNames['end'])
-        ], useForeignObject, eventEmitter);
-      }
-    }.bind(this));
-  }
-
-  Chartist.Axis = Chartist.Class.extend({
-    constructor: Axis,
-    createGridAndLabels: createGridAndLabels,
-    projectValue: function(value, index, data) {
-      throw new Error('Base axis can\'t be instantiated!');
-    }
-  });
-
-  Chartist.Axis.units = axisUnits;
-
-}(window, document, Chartist));
-;/**
- * The auto scale axis uses standard linear scale projection of values along an axis. It uses order of magnitude to find a scale automatically and evaluates the available space in order to find the perfect amount of ticks for your chart.
- * **Options**
- * The following options are used by this axis in addition to the default axis options outlined in the axis configuration of the chart default settings.
- * ```javascript
- * var options = {
- *   // If high is specified then the axis will display values explicitly up to this value and the computed maximum from the data is ignored
- *   high: 100,
- *   // If low is specified then the axis will display values explicitly down to this value and the computed minimum from the data is ignored
- *   low: 0,
- *   // This option will be used when finding the right scale division settings. The amount of ticks on the scale will be determined so that as many ticks as possible will be displayed, while not violating this minimum required space (in pixel).
- *   scaleMinSpace: 20,
- *   // Can be set to true or false. If set to true, the scale will be generated with whole numbers only.
- *   onlyInteger: true,
- *   // The reference value can be used to make sure that this value will always be on the chart. This is especially useful on bipolar charts where the bipolar center always needs to be part of the chart.
- *   referenceValue: 5
- * };
- * ```
- *
- * @module Chartist.AutoScaleAxis
- */
-/* global Chartist */
-(function (window, document, Chartist) {
-  'use strict';
-
-  function AutoScaleAxis(axisUnit, data, chartRect, options) {
-    // Usually we calculate highLow based on the data but this can be overriden by a highLow object in the options
-    var highLow = options.highLow || Chartist.getHighLow(data, options, axisUnit.pos);
-    this.bounds = Chartist.getBounds(chartRect[axisUnit.rectEnd] - chartRect[axisUnit.rectStart], highLow, options.scaleMinSpace || 20, options.onlyInteger);
-    this.range = {
-      min: this.bounds.min,
-      max: this.bounds.max
-    };
-
-    Chartist.AutoScaleAxis.super.constructor.call(this,
-      axisUnit,
-      chartRect,
-      this.bounds.values,
-      options);
-  }
-
-  function projectValue(value) {
-    return this.axisLength * (+Chartist.getMultiValue(value, this.units.pos) - this.bounds.min) / this.bounds.range;
-  }
-
-  Chartist.AutoScaleAxis = Chartist.Axis.extend({
-    constructor: AutoScaleAxis,
-    projectValue: projectValue
-  });
-
-}(window, document, Chartist));
-;/**
- * The fixed scale axis uses standard linear projection of values along an axis. It makes use of a divisor option to divide the range provided from the minimum and maximum value or the options high and low that will override the computed minimum and maximum.
- * **Options**
- * The following options are used by this axis in addition to the default axis options outlined in the axis configuration of the chart default settings.
- * ```javascript
- * var options = {
- *   // If high is specified then the axis will display values explicitly up to this value and the computed maximum from the data is ignored
- *   high: 100,
- *   // If low is specified then the axis will display values explicitly down to this value and the computed minimum from the data is ignored
- *   low: 0,
- *   // If specified then the value range determined from minimum to maximum (or low and high) will be divided by this number and ticks will be generated at those division points. The default divisor is 1.
- *   divisor: 4,
- *   // If ticks is explicitly set, then the axis will not compute the ticks with the divisor, but directly use the data in ticks to determine at what points on the axis a tick need to be generated.
- *   ticks: [1, 10, 20, 30]
- * };
- * ```
- *
- * @module Chartist.FixedScaleAxis
- */
-/* global Chartist */
-(function (window, document, Chartist) {
-  'use strict';
-
-  function FixedScaleAxis(axisUnit, data, chartRect, options) {
-    var highLow = options.highLow || Chartist.getHighLow(data, options, axisUnit.pos);
-    this.divisor = options.divisor || 1;
-    this.ticks = options.ticks || Chartist.times(this.divisor).map(function(value, index) {
-      return highLow.low + (highLow.high - highLow.low) / this.divisor * index;
-    }.bind(this));
-    this.ticks.sort(function(a, b) {
-      return a - b;
-    });
-    this.range = {
-      min: highLow.low,
-      max: highLow.high
-    };
-
-    Chartist.FixedScaleAxis.super.constructor.call(this,
-      axisUnit,
-      chartRect,
-      this.ticks,
-      options);
-
-    this.stepLength = this.axisLength / this.divisor;
-  }
-
-  function projectValue(value) {
-    return this.axisLength * (+Chartist.getMultiValue(value, this.units.pos) - this.range.min) / (this.range.max - this.range.min);
-  }
-
-  Chartist.FixedScaleAxis = Chartist.Axis.extend({
-    constructor: FixedScaleAxis,
-    projectValue: projectValue
-  });
-
-}(window, document, Chartist));
-;/**
- * The step axis for step based charts like bar chart or step based line charts. It uses a fixed amount of ticks that will be equally distributed across the whole axis length. The projection is done using the index of the data value rather than the value itself and therefore it's only useful for distribution purpose.
- * **Options**
- * The following options are used by this axis in addition to the default axis options outlined in the axis configuration of the chart default settings.
- * ```javascript
- * var options = {
- *   // Ticks to be used to distribute across the axis length. As this axis type relies on the index of the value rather than the value, arbitrary data that can be converted to a string can be used as ticks.
- *   ticks: ['One', 'Two', 'Three'],
- *   // If set to true the full width will be used to distribute the values where the last value will be at the maximum of the axis length. If false the spaces between the ticks will be evenly distributed instead.
- *   stretch: true
- * };
- * ```
- *
- * @module Chartist.StepAxis
- */
-/* global Chartist */
-(function (window, document, Chartist) {
-  'use strict';
-
-  function StepAxis(axisUnit, data, chartRect, options) {
-    Chartist.StepAxis.super.constructor.call(this,
-      axisUnit,
-      chartRect,
-      options.ticks,
-      options);
-
-    var calc = Math.max(1, options.ticks.length - (options.stretch ? 1 : 0));
-    this.stepLength = this.axisLength / calc;
-  }
-
-  function projectValue(value, index) {
-    return this.stepLength * index;
-  }
-
-  Chartist.StepAxis = Chartist.Axis.extend({
-    constructor: StepAxis,
-    projectValue: projectValue
-  });
-
-}(window, document, Chartist));
-;/**
- * The Chartist line chart can be used to draw Line or Scatter charts. If used in the browser you can access the global `Chartist` namespace where you find the `Line` function as a main entry point.
- *
- * For examples on how to use the line chart please check the examples of the `Chartist.Line` method.
- *
- * @module Chartist.Line
- */
-/* global Chartist */
-(function(window, document, Chartist){
-  'use strict';
-
-  /**
-   * Default options in line charts. Expand the code view to see a detailed list of options with comments.
-   *
-   * @memberof Chartist.Line
-   */
-  var defaultOptions = {
-    // Options for X-Axis
-    axisX: {
-      // The offset of the labels to the chart area
-      offset: 30,
-      // Position where labels are placed. Can be set to `start` or `end` where `start` is equivalent to left or top on vertical axis and `end` is equivalent to right or bottom on horizontal axis.
-      position: 'end',
-      // Allows you to correct label positioning on this axis by positive or negative x and y offset.
-      labelOffset: {
-        x: 0,
-        y: 0
-      },
-      // If labels should be shown or not
-      showLabel: true,
-      // If the axis grid should be drawn or not
-      showGrid: true,
-      // Interpolation function that allows you to intercept the value from the axis label
-      labelInterpolationFnc: Chartist.noop,
-      // Set the axis type to be used to project values on this axis. If not defined, Chartist.StepAxis will be used for the X-Axis, where the ticks option will be set to the labels in the data and the stretch option will be set to the global fullWidth option. This type can be changed to any axis constructor available (e.g. Chartist.FixedScaleAxis), where all axis options should be present here.
-      type: undefined
-    },
-    // Options for Y-Axis
-    axisY: {
-      // The offset of the labels to the chart area
-      offset: 40,
-      // Position where labels are placed. Can be set to `start` or `end` where `start` is equivalent to left or top on vertical axis and `end` is equivalent to right or bottom on horizontal axis.
-      position: 'start',
-      // Allows you to correct label positioning on this axis by positive or negative x and y offset.
-      labelOffset: {
-        x: 0,
-        y: 0
-      },
-      // If labels should be shown or not
-      showLabel: true,
-      // If the axis grid should be drawn or not
-      showGrid: true,
-      // Interpolation function that allows you to intercept the value from the axis label
-      labelInterpolationFnc: Chartist.noop,
-      // Set the axis type to be used to project values on this axis. If not defined, Chartist.AutoScaleAxis will be used for the Y-Axis, where the high and low options will be set to the global high and low options. This type can be changed to any axis constructor available (e.g. Chartist.FixedScaleAxis), where all axis options should be present here.
-      type: undefined,
-      // This value specifies the minimum height in pixel of the scale steps
-      scaleMinSpace: 20,
-      // Use only integer values (whole numbers) for the scale steps
-      onlyInteger: false
-    },
-    // Specify a fixed width for the chart as a string (i.e. '100px' or '50%')
-    width: undefined,
-    // Specify a fixed height for the chart as a string (i.e. '100px' or '50%')
-    height: undefined,
-    // If the line should be drawn or not
-    showLine: true,
-    // If dots should be drawn or not
-    showPoint: true,
-    // If the line chart should draw an area
-    showArea: false,
-    // The base for the area chart that will be used to close the area shape (is normally 0)
-    areaBase: 0,
-    // Specify if the lines should be smoothed. This value can be true or false where true will result in smoothing using the default smoothing interpolation function Chartist.Interpolation.cardinal and false results in Chartist.Interpolation.none. You can also choose other smoothing / interpolation functions available in the Chartist.Interpolation module, or write your own interpolation function. Check the examples for a brief description.
-    lineSmooth: true,
-    // If the line chart should add a background fill to the .ct-grids group.
-    showGridBackground: false,
-    // Overriding the natural low of the chart allows you to zoom in or limit the charts lowest displayed value
-    low: undefined,
-    // Overriding the natural high of the chart allows you to zoom in or limit the charts highest displayed value
-    high: undefined,
-    // Padding of the chart drawing area to the container element and labels as a number or padding object {top: 5, right: 5, bottom: 5, left: 5}
-    chartPadding: {
-      top: 15,
-      right: 15,
-      bottom: 5,
-      left: 10
-    },
-    // When set to true, the last grid line on the x-axis is not drawn and the chart elements will expand to the full available width of the chart. For the last label to be drawn correctly you might need to add chart padding or offset the last label with a draw event handler.
-    fullWidth: false,
-    // If true the whole data is reversed including labels, the series order as well as the whole series data arrays.
-    reverseData: false,
-    // Override the class names that get used to generate the SVG structure of the chart
-    classNames: {
-      chart: 'ct-chart-line',
-      label: 'ct-label',
-      labelGroup: 'ct-labels',
-      series: 'ct-series',
-      line: 'ct-line',
-      point: 'ct-point',
-      area: 'ct-area',
-      grid: 'ct-grid',
-      gridGroup: 'ct-grids',
-      gridBackground: 'ct-grid-background',
-      vertical: 'ct-vertical',
-      horizontal: 'ct-horizontal',
-      start: 'ct-start',
-      end: 'ct-end'
-    }
-  };
-
-  /**
-   * Creates a new chart
-   *
-   */
-  function createChart(options) {
-    var data = Chartist.normalizeData(this.data, options.reverseData, true);
-
-    // Create new svg object
-    this.svg = Chartist.createSvg(this.container, options.width, options.height, options.classNames.chart);
-    // Create groups for labels, grid and series
-    var gridGroup = this.svg.elem('g').addClass(options.classNames.gridGroup);
-    var seriesGroup = this.svg.elem('g');
-    var labelGroup = this.svg.elem('g').addClass(options.classNames.labelGroup);
-
-    var chartRect = Chartist.createChartRect(this.svg, options, defaultOptions.padding);
-    var axisX, axisY;
-
-    if(options.axisX.type === undefined) {
-      axisX = new Chartist.StepAxis(Chartist.Axis.units.x, data.normalized.series, chartRect, Chartist.extend({}, options.axisX, {
-        ticks: data.normalized.labels,
-        stretch: options.fullWidth
-      }));
-    } else {
-      axisX = options.axisX.type.call(Chartist, Chartist.Axis.units.x, data.normalized.series, chartRect, options.axisX);
-    }
-
-    if(options.axisY.type === undefined) {
-      axisY = new Chartist.AutoScaleAxis(Chartist.Axis.units.y, data.normalized.series, chartRect, Chartist.extend({}, options.axisY, {
-        high: Chartist.isNumeric(options.high) ? options.high : options.axisY.high,
-        low: Chartist.isNumeric(options.low) ? options.low : options.axisY.low
-      }));
-    } else {
-      axisY = options.axisY.type.call(Chartist, Chartist.Axis.units.y, data.normalized.series, chartRect, options.axisY);
-    }
-
-    axisX.createGridAndLabels(gridGroup, labelGroup, this.supportsForeignObject, options, this.eventEmitter);
-    axisY.createGridAndLabels(gridGroup, labelGroup, this.supportsForeignObject, options, this.eventEmitter);
-
-    if (options.showGridBackground) {
-      Chartist.createGridBackground(gridGroup, chartRect, options.classNames.gridBackground, this.eventEmitter);
-    }
-
-    // Draw the series
-    data.raw.series.forEach(function(series, seriesIndex) {
-      var seriesElement = seriesGroup.elem('g');
-
-      // Write attributes to series group element. If series name or meta is undefined the attributes will not be written
-      seriesElement.attr({
-        'ct:series-name': series.name,
-        'ct:meta': Chartist.serialize(series.meta)
-      });
-
-      // Use series class from series data or if not set generate one
-      seriesElement.addClass([
-        options.classNames.series,
-        (series.className || options.classNames.series + '-' + Chartist.alphaNumerate(seriesIndex))
-      ].join(' '));
-
-      var pathCoordinates = [],
-        pathData = [];
-
-      data.normalized.series[seriesIndex].forEach(function(value, valueIndex) {
-        var p = {
-          x: chartRect.x1 + axisX.projectValue(value, valueIndex, data.normalized.series[seriesIndex]),
-          y: chartRect.y1 - axisY.projectValue(value, valueIndex, data.normalized.series[seriesIndex])
-        };
-        pathCoordinates.push(p.x, p.y);
-        pathData.push({
-          value: value,
-          valueIndex: valueIndex,
-          meta: Chartist.getMetaData(series, valueIndex)
-        });
-      }.bind(this));
-
-      var seriesOptions = {
-        lineSmooth: Chartist.getSeriesOption(series, options, 'lineSmooth'),
-        showPoint: Chartist.getSeriesOption(series, options, 'showPoint'),
-        showLine: Chartist.getSeriesOption(series, options, 'showLine'),
-        showArea: Chartist.getSeriesOption(series, options, 'showArea'),
-        areaBase: Chartist.getSeriesOption(series, options, 'areaBase')
-      };
-
-      var smoothing = typeof seriesOptions.lineSmooth === 'function' ?
-        seriesOptions.lineSmooth : (seriesOptions.lineSmooth ? Chartist.Interpolation.monotoneCubic() : Chartist.Interpolation.none());
-      // Interpolating path where pathData will be used to annotate each path element so we can trace back the original
-      // index, value and meta data
-      var path = smoothing(pathCoordinates, pathData);
-
-      // If we should show points we need to create them now to avoid secondary loop
-      // Points are drawn from the pathElements returned by the interpolation function
-      // Small offset for Firefox to render squares correctly
-      if (seriesOptions.showPoint) {
-
-        path.pathElements.forEach(function(pathElement) {
-          var point = seriesElement.elem('line', {
-            x1: pathElement.x,
-            y1: pathElement.y,
-            x2: pathElement.x + 0.01,
-            y2: pathElement.y
-          }, options.classNames.point).attr({
-            'ct:value': [pathElement.data.value.x, pathElement.data.value.y].filter(Chartist.isNumeric).join(','),
-            'ct:meta': Chartist.serialize(pathElement.data.meta)
-          });
-
-          this.eventEmitter.emit('draw', {
-            type: 'point',
-            value: pathElement.data.value,
-            index: pathElement.data.valueIndex,
-            meta: pathElement.data.meta,
-            series: series,
-            seriesIndex: seriesIndex,
-            axisX: axisX,
-            axisY: axisY,
-            group: seriesElement,
-            element: point,
-            x: pathElement.x,
-            y: pathElement.y
-          });
-        }.bind(this));
-      }
-
-      if(seriesOptions.showLine) {
-        var line = seriesElement.elem('path', {
-          d: path.stringify()
-        }, options.classNames.line, true);
-
-        this.eventEmitter.emit('draw', {
-          type: 'line',
-          values: data.normalized.series[seriesIndex],
-          path: path.clone(),
-          chartRect: chartRect,
-          index: seriesIndex,
-          series: series,
-          seriesIndex: seriesIndex,
-          seriesMeta: series.meta,
-          axisX: axisX,
-          axisY: axisY,
-          group: seriesElement,
-          element: line
-        });
-      }
-
-      // Area currently only works with axes that support a range!
-      if(seriesOptions.showArea && axisY.range) {
-        // If areaBase is outside the chart area (< min or > max) we need to set it respectively so that
-        // the area is not drawn outside the chart area.
-        var areaBase = Math.max(Math.min(seriesOptions.areaBase, axisY.range.max), axisY.range.min);
-
-        // We project the areaBase value into screen coordinates
-        var areaBaseProjected = chartRect.y1 - axisY.projectValue(areaBase);
-
-        // In order to form the area we'll first split the path by move commands so we can chunk it up into segments
-        path.splitByCommand('M').filter(function onlySolidSegments(pathSegment) {
-          // We filter only "solid" segments that contain more than one point. Otherwise there's no need for an area
-          return pathSegment.pathElements.length > 1;
-        }).map(function convertToArea(solidPathSegments) {
-          // Receiving the filtered solid path segments we can now convert those segments into fill areas
-          var firstElement = solidPathSegments.pathElements[0];
-          var lastElement = solidPathSegments.pathElements[solidPathSegments.pathElements.length - 1];
-
-          // Cloning the solid path segment with closing option and removing the first move command from the clone
-          // We then insert a new move that should start at the area base and draw a straight line up or down
-          // at the end of the path we add an additional straight line to the projected area base value
-          // As the closing option is set our path will be automatically closed
-          return solidPathSegments.clone(true)
-            .position(0)
-            .remove(1)
-            .move(firstElement.x, areaBaseProjected)
-            .line(firstElement.x, firstElement.y)
-            .position(solidPathSegments.pathElements.length + 1)
-            .line(lastElement.x, areaBaseProjected);
-
-        }).forEach(function createArea(areaPath) {
-          // For each of our newly created area paths, we'll now create path elements by stringifying our path objects
-          // and adding the created DOM elements to the correct series group
-          var area = seriesElement.elem('path', {
-            d: areaPath.stringify()
-          }, options.classNames.area, true);
-
-          // Emit an event for each area that was drawn
-          this.eventEmitter.emit('draw', {
-            type: 'area',
-            values: data.normalized.series[seriesIndex],
-            path: areaPath.clone(),
-            series: series,
-            seriesIndex: seriesIndex,
-            axisX: axisX,
-            axisY: axisY,
-            chartRect: chartRect,
-            index: seriesIndex,
-            group: seriesElement,
-            element: area
-          });
-        }.bind(this));
-      }
-    }.bind(this));
-
-    this.eventEmitter.emit('created', {
-      bounds: axisY.bounds,
-      chartRect: chartRect,
-      axisX: axisX,
-      axisY: axisY,
-      svg: this.svg,
-      options: options
-    });
-  }
-
-  /**
-   * This method creates a new line chart.
-   *
-   * @memberof Chartist.Line
-   * @param {String|Node} query A selector query string or directly a DOM element
-   * @param {Object} data The data object that needs to consist of a labels and a series array
-   * @param {Object} [options] The options object with options that override the default options. Check the examples for a detailed list.
-   * @param {Array} [responsiveOptions] Specify an array of responsive option arrays which are a media query and options object pair => [[mediaQueryString, optionsObject],[more...]]
-   * @return {Object} An object which exposes the API for the created chart
-   *
-   * @example
-   * // Create a simple line chart
-   * var data = {
-   *   // A labels array that can contain any sort of values
-   *   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-   *   // Our series array that contains series objects or in this case series data arrays
-   *   series: [
-   *     [5, 2, 4, 2, 0]
-   *   ]
-   * };
-   *
-   * // As options we currently only set a static size of 300x200 px
-   * var options = {
-   *   width: '300px',
-   *   height: '200px'
-   * };
-   *
-   * // In the global name space Chartist we call the Line function to initialize a line chart. As a first parameter we pass in a selector where we would like to get our chart created. Second parameter is the actual data object and as a third parameter we pass in our options
-   * new Chartist.Line('.ct-chart', data, options);
-   *
-   * @example
-   * // Use specific interpolation function with configuration from the Chartist.Interpolation module
-   *
-   * var chart = new Chartist.Line('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5],
-   *   series: [
-   *     [1, 1, 8, 1, 7]
-   *   ]
-   * }, {
-   *   lineSmooth: Chartist.Interpolation.cardinal({
-   *     tension: 0.2
-   *   })
-   * });
-   *
-   * @example
-   * // Create a line chart with responsive options
-   *
-   * var data = {
-   *   // A labels array that can contain any sort of values
-   *   labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-   *   // Our series array that contains series objects or in this case series data arrays
-   *   series: [
-   *     [5, 2, 4, 2, 0]
-   *   ]
-   * };
-   *
-   * // In addition to the regular options we specify responsive option overrides that will override the default configutation based on the matching media queries.
-   * var responsiveOptions = [
-   *   ['screen and (min-width: 641px) and (max-width: 1024px)', {
-   *     showPoint: false,
-   *     axisX: {
-   *       labelInterpolationFnc: function(value) {
-   *         // Will return Mon, Tue, Wed etc. on medium screens
-   *         return value.slice(0, 3);
-   *       }
-   *     }
-   *   }],
-   *   ['screen and (max-width: 640px)', {
-   *     showLine: false,
-   *     axisX: {
-   *       labelInterpolationFnc: function(value) {
-   *         // Will return M, T, W etc. on small screens
-   *         return value[0];
-   *       }
-   *     }
-   *   }]
-   * ];
-   *
-   * new Chartist.Line('.ct-chart', data, null, responsiveOptions);
-   *
-   */
-  function Line(query, data, options, responsiveOptions) {
-    Chartist.Line.super.constructor.call(this,
-      query,
-      data,
-      defaultOptions,
-      Chartist.extend({}, defaultOptions, options),
-      responsiveOptions);
-  }
-
-  // Creating line chart type in Chartist namespace
-  Chartist.Line = Chartist.Base.extend({
-    constructor: Line,
-    createChart: createChart
-  });
-
-}(window, document, Chartist));
-;/**
- * The bar chart module of Chartist that can be used to draw unipolar or bipolar bar and grouped bar charts.
- *
- * @module Chartist.Bar
- */
-/* global Chartist */
-(function(window, document, Chartist){
-  'use strict';
-
-  /**
-   * Default options in bar charts. Expand the code view to see a detailed list of options with comments.
-   *
-   * @memberof Chartist.Bar
-   */
-  var defaultOptions = {
-    // Options for X-Axis
-    axisX: {
-      // The offset of the chart drawing area to the border of the container
-      offset: 30,
-      // Position where labels are placed. Can be set to `start` or `end` where `start` is equivalent to left or top on vertical axis and `end` is equivalent to right or bottom on horizontal axis.
-      position: 'end',
-      // Allows you to correct label positioning on this axis by positive or negative x and y offset.
-      labelOffset: {
-        x: 0,
-        y: 0
-      },
-      // If labels should be shown or not
-      showLabel: true,
-      // If the axis grid should be drawn or not
-      showGrid: true,
-      // Interpolation function that allows you to intercept the value from the axis label
-      labelInterpolationFnc: Chartist.noop,
-      // This value specifies the minimum width in pixel of the scale steps
-      scaleMinSpace: 30,
-      // Use only integer values (whole numbers) for the scale steps
-      onlyInteger: false
-    },
-    // Options for Y-Axis
-    axisY: {
-      // The offset of the chart drawing area to the border of the container
-      offset: 40,
-      // Position where labels are placed. Can be set to `start` or `end` where `start` is equivalent to left or top on vertical axis and `end` is equivalent to right or bottom on horizontal axis.
-      position: 'start',
-      // Allows you to correct label positioning on this axis by positive or negative x and y offset.
-      labelOffset: {
-        x: 0,
-        y: 0
-      },
-      // If labels should be shown or not
-      showLabel: true,
-      // If the axis grid should be drawn or not
-      showGrid: true,
-      // Interpolation function that allows you to intercept the value from the axis label
-      labelInterpolationFnc: Chartist.noop,
-      // This value specifies the minimum height in pixel of the scale steps
-      scaleMinSpace: 20,
-      // Use only integer values (whole numbers) for the scale steps
-      onlyInteger: false
-    },
-    // Specify a fixed width for the chart as a string (i.e. '100px' or '50%')
-    width: undefined,
-    // Specify a fixed height for the chart as a string (i.e. '100px' or '50%')
-    height: undefined,
-    // Overriding the natural high of the chart allows you to zoom in or limit the charts highest displayed value
-    high: undefined,
-    // Overriding the natural low of the chart allows you to zoom in or limit the charts lowest displayed value
-    low: undefined,
-    // Unless low/high are explicitly set, bar chart will be centered at zero by default. Set referenceValue to null to auto scale.
-    referenceValue: 0,
-    // Padding of the chart drawing area to the container element and labels as a number or padding object {top: 5, right: 5, bottom: 5, left: 5}
-    chartPadding: {
-      top: 15,
-      right: 15,
-      bottom: 5,
-      left: 10
-    },
-    // Specify the distance in pixel of bars in a group
-    seriesBarDistance: 15,
-    // If set to true this property will cause the series bars to be stacked. Check the `stackMode` option for further stacking options.
-    stackBars: false,
-    // If set to 'overlap' this property will force the stacked bars to draw from the zero line.
-    // If set to 'accumulate' this property will form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
-    stackMode: 'accumulate',
-    // Inverts the axes of the bar chart in order to draw a horizontal bar chart. Be aware that you also need to invert your axis settings as the Y Axis will now display the labels and the X Axis the values.
-    horizontalBars: false,
-    // If set to true then each bar will represent a series and the data array is expected to be a one dimensional array of data values rather than a series array of series. This is useful if the bar chart should represent a profile rather than some data over time.
-    distributeSeries: false,
-    // If true the whole data is reversed including labels, the series order as well as the whole series data arrays.
-    reverseData: false,
-    // If the bar chart should add a background fill to the .ct-grids group.
-    showGridBackground: false,
-    // Override the class names that get used to generate the SVG structure of the chart
-    classNames: {
-      chart: 'ct-chart-bar',
-      horizontalBars: 'ct-horizontal-bars',
-      label: 'ct-label',
-      labelGroup: 'ct-labels',
-      series: 'ct-series',
-      bar: 'ct-bar',
-      grid: 'ct-grid',
-      gridGroup: 'ct-grids',
-      gridBackground: 'ct-grid-background',
-      vertical: 'ct-vertical',
-      horizontal: 'ct-horizontal',
-      start: 'ct-start',
-      end: 'ct-end'
-    }
-  };
-
-  /**
-   * Creates a new chart
-   *
-   */
-  function createChart(options) {
-    var data;
-    var highLow;
-
-    if(options.distributeSeries) {
-      data = Chartist.normalizeData(this.data, options.reverseData, options.horizontalBars ? 'x' : 'y');
-      data.normalized.series = data.normalized.series.map(function(value) {
-        return [value];
-      });
-    } else {
-      data = Chartist.normalizeData(this.data, options.reverseData, options.horizontalBars ? 'x' : 'y');
-    }
-
-    // Create new svg element
-    this.svg = Chartist.createSvg(
-      this.container,
-      options.width,
-      options.height,
-      options.classNames.chart + (options.horizontalBars ? ' ' + options.classNames.horizontalBars : '')
-    );
-
-    // Drawing groups in correct order
-    var gridGroup = this.svg.elem('g').addClass(options.classNames.gridGroup);
-    var seriesGroup = this.svg.elem('g');
-    var labelGroup = this.svg.elem('g').addClass(options.classNames.labelGroup);
-
-    if(options.stackBars && data.normalized.series.length !== 0) {
-
-      // If stacked bars we need to calculate the high low from stacked values from each series
-      var serialSums = Chartist.serialMap(data.normalized.series, function serialSums() {
-        return Array.prototype.slice.call(arguments).map(function(value) {
-          return value;
-        }).reduce(function(prev, curr) {
-          return {
-            x: prev.x + (curr && curr.x) || 0,
-            y: prev.y + (curr && curr.y) || 0
-          };
-        }, {x: 0, y: 0});
-      });
-
-      highLow = Chartist.getHighLow([serialSums], options, options.horizontalBars ? 'x' : 'y');
-
-    } else {
-
-      highLow = Chartist.getHighLow(data.normalized.series, options, options.horizontalBars ? 'x' : 'y');
-    }
-
-    // Overrides of high / low from settings
-    highLow.high = +options.high || (options.high === 0 ? 0 : highLow.high);
-    highLow.low = +options.low || (options.low === 0 ? 0 : highLow.low);
-
-    var chartRect = Chartist.createChartRect(this.svg, options, defaultOptions.padding);
-
-    var valueAxis,
-      labelAxisTicks,
-      labelAxis,
-      axisX,
-      axisY;
-
-    // We need to set step count based on some options combinations
-    if(options.distributeSeries && options.stackBars) {
-      // If distributed series are enabled and bars need to be stacked, we'll only have one bar and therefore should
-      // use only the first label for the step axis
-      labelAxisTicks = data.normalized.labels.slice(0, 1);
-    } else {
-      // If distributed series are enabled but stacked bars aren't, we should use the series labels
-      // If we are drawing a regular bar chart with two dimensional series data, we just use the labels array
-      // as the bars are normalized
-      labelAxisTicks = data.normalized.labels;
-    }
-
-    // Set labelAxis and valueAxis based on the horizontalBars setting. This setting will flip the axes if necessary.
-    if(options.horizontalBars) {
-      if(options.axisX.type === undefined) {
-        valueAxis = axisX = new Chartist.AutoScaleAxis(Chartist.Axis.units.x, data.normalized.series, chartRect, Chartist.extend({}, options.axisX, {
-          highLow: highLow,
-          referenceValue: 0
-        }));
-      } else {
-        valueAxis = axisX = options.axisX.type.call(Chartist, Chartist.Axis.units.x, data.normalized.series, chartRect, Chartist.extend({}, options.axisX, {
-          highLow: highLow,
-          referenceValue: 0
-        }));
-      }
-
-      if(options.axisY.type === undefined) {
-        labelAxis = axisY = new Chartist.StepAxis(Chartist.Axis.units.y, data.normalized.series, chartRect, {
-          ticks: labelAxisTicks
-        });
-      } else {
-        labelAxis = axisY = options.axisY.type.call(Chartist, Chartist.Axis.units.y, data.normalized.series, chartRect, options.axisY);
-      }
-    } else {
-      if(options.axisX.type === undefined) {
-        labelAxis = axisX = new Chartist.StepAxis(Chartist.Axis.units.x, data.normalized.series, chartRect, {
-          ticks: labelAxisTicks
-        });
-      } else {
-        labelAxis = axisX = options.axisX.type.call(Chartist, Chartist.Axis.units.x, data.normalized.series, chartRect, options.axisX);
-      }
-
-      if(options.axisY.type === undefined) {
-        valueAxis = axisY = new Chartist.AutoScaleAxis(Chartist.Axis.units.y, data.normalized.series, chartRect, Chartist.extend({}, options.axisY, {
-          highLow: highLow,
-          referenceValue: 0
-        }));
-      } else {
-        valueAxis = axisY = options.axisY.type.call(Chartist, Chartist.Axis.units.y, data.normalized.series, chartRect, Chartist.extend({}, options.axisY, {
-          highLow: highLow,
-          referenceValue: 0
-        }));
-      }
-    }
-
-    // Projected 0 point
-    var zeroPoint = options.horizontalBars ? (chartRect.x1 + valueAxis.projectValue(0)) : (chartRect.y1 - valueAxis.projectValue(0));
-    // Used to track the screen coordinates of stacked bars
-    var stackedBarValues = [];
-
-    labelAxis.createGridAndLabels(gridGroup, labelGroup, this.supportsForeignObject, options, this.eventEmitter);
-    valueAxis.createGridAndLabels(gridGroup, labelGroup, this.supportsForeignObject, options, this.eventEmitter);
-
-    if (options.showGridBackground) {
-      Chartist.createGridBackground(gridGroup, chartRect, options.classNames.gridBackground, this.eventEmitter);
-    }
-
-    // Draw the series
-    data.raw.series.forEach(function(series, seriesIndex) {
-      // Calculating bi-polar value of index for seriesOffset. For i = 0..4 biPol will be -1.5, -0.5, 0.5, 1.5 etc.
-      var biPol = seriesIndex - (data.raw.series.length - 1) / 2;
-      // Half of the period width between vertical grid lines used to position bars
-      var periodHalfLength;
-      // Current series SVG element
-      var seriesElement;
-
-      // We need to set periodHalfLength based on some options combinations
-      if(options.distributeSeries && !options.stackBars) {
-        // If distributed series are enabled but stacked bars aren't, we need to use the length of the normaizedData array
-        // which is the series count and divide by 2
-        periodHalfLength = labelAxis.axisLength / data.normalized.series.length / 2;
-      } else if(options.distributeSeries && options.stackBars) {
-        // If distributed series and stacked bars are enabled we'll only get one bar so we should just divide the axis
-        // length by 2
-        periodHalfLength = labelAxis.axisLength / 2;
-      } else {
-        // On regular bar charts we should just use the series length
-        periodHalfLength = labelAxis.axisLength / data.normalized.series[seriesIndex].length / 2;
-      }
-
-      // Adding the series group to the series element
-      seriesElement = seriesGroup.elem('g');
-
-      // Write attributes to series group element. If series name or meta is undefined the attributes will not be written
-      seriesElement.attr({
-        'ct:series-name': series.name,
-        'ct:meta': Chartist.serialize(series.meta)
-      });
-
-      // Use series class from series data or if not set generate one
-      seriesElement.addClass([
-        options.classNames.series,
-        (series.className || options.classNames.series + '-' + Chartist.alphaNumerate(seriesIndex))
-      ].join(' '));
-
-      data.normalized.series[seriesIndex].forEach(function(value, valueIndex) {
-        var projected,
-          bar,
-          previousStack,
-          labelAxisValueIndex;
-
-        // We need to set labelAxisValueIndex based on some options combinations
-        if(options.distributeSeries && !options.stackBars) {
-          // If distributed series are enabled but stacked bars aren't, we can use the seriesIndex for later projection
-          // on the step axis for label positioning
-          labelAxisValueIndex = seriesIndex;
-        } else if(options.distributeSeries && options.stackBars) {
-          // If distributed series and stacked bars are enabled, we will only get one bar and therefore always use
-          // 0 for projection on the label step axis
-          labelAxisValueIndex = 0;
-        } else {
-          // On regular bar charts we just use the value index to project on the label step axis
-          labelAxisValueIndex = valueIndex;
-        }
-
-        // We need to transform coordinates differently based on the chart layout
-        if(options.horizontalBars) {
-          projected = {
-            x: chartRect.x1 + valueAxis.projectValue(value && value.x ? value.x : 0, valueIndex, data.normalized.series[seriesIndex]),
-            y: chartRect.y1 - labelAxis.projectValue(value && value.y ? value.y : 0, labelAxisValueIndex, data.normalized.series[seriesIndex])
-          };
-        } else {
-          projected = {
-            x: chartRect.x1 + labelAxis.projectValue(value && value.x ? value.x : 0, labelAxisValueIndex, data.normalized.series[seriesIndex]),
-            y: chartRect.y1 - valueAxis.projectValue(value && value.y ? value.y : 0, valueIndex, data.normalized.series[seriesIndex])
-          }
-        }
-
-        // If the label axis is a step based axis we will offset the bar into the middle of between two steps using
-        // the periodHalfLength value. Also we do arrange the different series so that they align up to each other using
-        // the seriesBarDistance. If we don't have a step axis, the bar positions can be chosen freely so we should not
-        // add any automated positioning.
-        if(labelAxis instanceof Chartist.StepAxis) {
-          // Offset to center bar between grid lines, but only if the step axis is not stretched
-          if(!labelAxis.options.stretch) {
-            projected[labelAxis.units.pos] += periodHalfLength * (options.horizontalBars ? -1 : 1);
-          }
-          // Using bi-polar offset for multiple series if no stacked bars or series distribution is used
-          projected[labelAxis.units.pos] += (options.stackBars || options.distributeSeries) ? 0 : biPol * options.seriesBarDistance * (options.horizontalBars ? -1 : 1);
-        }
-
-        // Enter value in stacked bar values used to remember previous screen value for stacking up bars
-        previousStack = stackedBarValues[valueIndex] || zeroPoint;
-        stackedBarValues[valueIndex] = previousStack - (zeroPoint - projected[labelAxis.counterUnits.pos]);
-
-        // Skip if value is undefined
-        if(value === undefined) {
-          return;
-        }
-
-        var positions = {};
-        positions[labelAxis.units.pos + '1'] = projected[labelAxis.units.pos];
-        positions[labelAxis.units.pos + '2'] = projected[labelAxis.units.pos];
-
-        if(options.stackBars && (options.stackMode === 'accumulate' || !options.stackMode)) {
-          // Stack mode: accumulate (default)
-          // If bars are stacked we use the stackedBarValues reference and otherwise base all bars off the zero line
-          // We want backwards compatibility, so the expected fallback without the 'stackMode' option
-          // to be the original behaviour (accumulate)
-          positions[labelAxis.counterUnits.pos + '1'] = previousStack;
-          positions[labelAxis.counterUnits.pos + '2'] = stackedBarValues[valueIndex];
-        } else {
-          // Draw from the zero line normally
-          // This is also the same code for Stack mode: overlap
-          positions[labelAxis.counterUnits.pos + '1'] = zeroPoint;
-          positions[labelAxis.counterUnits.pos + '2'] = projected[labelAxis.counterUnits.pos];
-        }
-
-        // Limit x and y so that they are within the chart rect
-        positions.x1 = Math.min(Math.max(positions.x1, chartRect.x1), chartRect.x2);
-        positions.x2 = Math.min(Math.max(positions.x2, chartRect.x1), chartRect.x2);
-        positions.y1 = Math.min(Math.max(positions.y1, chartRect.y2), chartRect.y1);
-        positions.y2 = Math.min(Math.max(positions.y2, chartRect.y2), chartRect.y1);
-
-        var metaData = Chartist.getMetaData(series, valueIndex);
-
-        // Create bar element
-        bar = seriesElement.elem('line', positions, options.classNames.bar).attr({
-          'ct:value': [value.x, value.y].filter(Chartist.isNumeric).join(','),
-          'ct:meta': Chartist.serialize(metaData)
-        });
-
-        this.eventEmitter.emit('draw', Chartist.extend({
-          type: 'bar',
-          value: value,
-          index: valueIndex,
-          meta: metaData,
-          series: series,
-          seriesIndex: seriesIndex,
-          axisX: axisX,
-          axisY: axisY,
-          chartRect: chartRect,
-          group: seriesElement,
-          element: bar
-        }, positions));
-      }.bind(this));
-    }.bind(this));
-
-    this.eventEmitter.emit('created', {
-      bounds: valueAxis.bounds,
-      chartRect: chartRect,
-      axisX: axisX,
-      axisY: axisY,
-      svg: this.svg,
-      options: options
-    });
-  }
-
-  /**
-   * This method creates a new bar chart and returns API object that you can use for later changes.
-   *
-   * @memberof Chartist.Bar
-   * @param {String|Node} query A selector query string or directly a DOM element
-   * @param {Object} data The data object that needs to consist of a labels and a series array
-   * @param {Object} [options] The options object with options that override the default options. Check the examples for a detailed list.
-   * @param {Array} [responsiveOptions] Specify an array of responsive option arrays which are a media query and options object pair => [[mediaQueryString, optionsObject],[more...]]
-   * @return {Object} An object which exposes the API for the created chart
-   *
-   * @example
-   * // Create a simple bar chart
-   * var data = {
-   *   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-   *   series: [
-   *     [5, 2, 4, 2, 0]
-   *   ]
-   * };
-   *
-   * // In the global name space Chartist we call the Bar function to initialize a bar chart. As a first parameter we pass in a selector where we would like to get our chart created and as a second parameter we pass our data object.
-   * new Chartist.Bar('.ct-chart', data);
-   *
-   * @example
-   * // This example creates a bipolar grouped bar chart where the boundaries are limitted to -10 and 10
-   * new Chartist.Bar('.ct-chart', {
-   *   labels: [1, 2, 3, 4, 5, 6, 7],
-   *   series: [
-   *     [1, 3, 2, -5, -3, 1, -6],
-   *     [-5, -2, -4, -1, 2, -3, 1]
-   *   ]
-   * }, {
-   *   seriesBarDistance: 12,
-   *   low: -10,
-   *   high: 10
-   * });
-   *
-   */
-  function Bar(query, data, options, responsiveOptions) {
-    Chartist.Bar.super.constructor.call(this,
-      query,
-      data,
-      defaultOptions,
-      Chartist.extend({}, defaultOptions, options),
-      responsiveOptions);
-  }
-
-  // Creating bar chart type in Chartist namespace
-  Chartist.Bar = Chartist.Base.extend({
-    constructor: Bar,
-    createChart: createChart
-  });
-
-}(window, document, Chartist));
-;/**
- * The pie chart module of Chartist that can be used to draw pie, donut or gauge charts
- *
- * @module Chartist.Pie
- */
-/* global Chartist */
-(function(window, document, Chartist) {
-  'use strict';
-
-  /**
-   * Default options in line charts. Expand the code view to see a detailed list of options with comments.
-   *
-   * @memberof Chartist.Pie
-   */
-  var defaultOptions = {
-    // Specify a fixed width for the chart as a string (i.e. '100px' or '50%')
-    width: undefined,
-    // Specify a fixed height for the chart as a string (i.e. '100px' or '50%')
-    height: undefined,
-    // Padding of the chart drawing area to the container element and labels as a number or padding object {top: 5, right: 5, bottom: 5, left: 5}
-    chartPadding: 5,
-    // Override the class names that are used to generate the SVG structure of the chart
-    classNames: {
-      chartPie: 'ct-chart-pie',
-      chartDonut: 'ct-chart-donut',
-      series: 'ct-series',
-      slicePie: 'ct-slice-pie',
-      sliceDonut: 'ct-slice-donut',
-      sliceDonutSolid: 'ct-slice-donut-solid',
-      label: 'ct-label'
-    },
-    // The start angle of the pie chart in degrees where 0 points north. A higher value offsets the start angle clockwise.
-    startAngle: 0,
-    // An optional total you can specify. By specifying a total value, the sum of the values in the series must be this total in order to draw a full pie. You can use this parameter to draw only parts of a pie or gauge charts.
-    total: undefined,
-    // If specified the donut CSS classes will be used and strokes will be drawn instead of pie slices.
-    donut: false,
-    // If specified the donut segments will be drawn as shapes instead of strokes.
-    donutSolid: false,
-    // Specify the donut stroke width, currently done in javascript for convenience. May move to CSS styles in the future.
-    // This option can be set as number or string to specify a relative width (i.e. 100 or '30%').
-    donutWidth: 60,
-    // If a label should be shown or not
-    showLabel: true,
-    // Label position offset from the standard position which is half distance of the radius. This value can be either positive or negative. Positive values will position the label away from the center.
-    labelOffset: 0,
-    // This option can be set to 'inside', 'outside' or 'center'. Positioned with 'inside' the labels will be placed on half the distance of the radius to the border of the Pie by respecting the 'labelOffset'. The 'outside' option will place the labels at the border of the pie and 'center' will place the labels in the absolute center point of the chart. The 'center' option only makes sense in conjunction with the 'labelOffset' option.
-    labelPosition: 'inside',
-    // An interpolation function for the label value
-    labelInterpolationFnc: Chartist.noop,
-    // Label direction can be 'neutral', 'explode' or 'implode'. The labels anchor will be positioned based on those settings as well as the fact if the labels are on the right or left side of the center of the chart. Usually explode is useful when labels are positioned far away from the center.
-    labelDirection: 'neutral',
-    // If true the whole data is reversed including labels, the series order as well as the whole series data arrays.
-    reverseData: false,
-    // If true empty values will be ignored to avoid drawing unncessary slices and labels
-    ignoreEmptyValues: false
-  };
-
-  /**
-   * Determines SVG anchor position based on direction and center parameter
-   *
-   * @param center
-   * @param label
-   * @param direction
-   * @return {string}
-   */
-  function determineAnchorPosition(center, label, direction) {
-    var toTheRight = label.x > center.x;
-
-    if(toTheRight && direction === 'explode' ||
-      !toTheRight && direction === 'implode') {
-      return 'start';
-    } else if(toTheRight && direction === 'implode' ||
-      !toTheRight && direction === 'explode') {
-      return 'end';
-    } else {
-      return 'middle';
-    }
-  }
-
-  /**
-   * Creates the pie chart
-   *
-   * @param options
-   */
-  function createChart(options) {
-    var data = Chartist.normalizeData(this.data);
-    var seriesGroups = [],
-      labelsGroup,
-      chartRect,
-      radius,
-      labelRadius,
-      totalDataSum,
-      startAngle = options.startAngle;
-
-    // Create SVG.js draw
-    this.svg = Chartist.createSvg(this.container, options.width, options.height,options.donut ? options.classNames.chartDonut : options.classNames.chartPie);
-    // Calculate charting rect
-    chartRect = Chartist.createChartRect(this.svg, options, defaultOptions.padding);
-    // Get biggest circle radius possible within chartRect
-    radius = Math.min(chartRect.width() / 2, chartRect.height() / 2);
-    // Calculate total of all series to get reference value or use total reference from optional options
-    totalDataSum = options.total || data.normalized.series.reduce(function(previousValue, currentValue) {
-      return previousValue + currentValue;
-    }, 0);
-
-    var donutWidth = Chartist.quantity(options.donutWidth);
-    if (donutWidth.unit === '%') {
-      donutWidth.value *= radius / 100;
-    }
-
-    // If this is a donut chart we need to adjust our radius to enable strokes to be drawn inside
-    // Unfortunately this is not possible with the current SVG Spec
-    // See this proposal for more details: http://lists.w3.org/Archives/Public/www-svg/2003Oct/0000.html
-    radius -= options.donut && !options.donutSolid ? donutWidth.value / 2  : 0;
-
-    // If labelPosition is set to `outside` or a donut chart is drawn then the label position is at the radius,
-    // if regular pie chart it's half of the radius
-    if(options.labelPosition === 'outside' || options.donut && !options.donutSolid) {
-      labelRadius = radius;
-    } else if(options.labelPosition === 'center') {
-      // If labelPosition is center we start with 0 and will later wait for the labelOffset
-      labelRadius = 0;
-    } else if(options.donutSolid) {
-      labelRadius = radius - donutWidth.value / 2;
-    } else {
-      // Default option is 'inside' where we use half the radius so the label will be placed in the center of the pie
-      // slice
-      labelRadius = radius / 2;
-    }
-    // Add the offset to the labelRadius where a negative offset means closed to the center of the chart
-    labelRadius += options.labelOffset;
-
-    // Calculate end angle based on total sum and current data value and offset with padding
-    var center = {
-      x: chartRect.x1 + chartRect.width() / 2,
-      y: chartRect.y2 + chartRect.height() / 2
-    };
-
-    // Check if there is only one non-zero value in the series array.
-    var hasSingleValInSeries = data.raw.series.filter(function(val) {
-      return val.hasOwnProperty('value') ? val.value !== 0 : val !== 0;
-    }).length === 1;
-
-    // Creating the series groups
-    data.raw.series.forEach(function(series, index) {
-      seriesGroups[index] = this.svg.elem('g', null, null);
-    }.bind(this));
-    //if we need to show labels we create the label group now
-    if(options.showLabel) {
-      labelsGroup = this.svg.elem('g', null, null);
-    }
-
-    // Draw the series
-    // initialize series groups
-    data.raw.series.forEach(function(series, index) {
-      // If current value is zero and we are ignoring empty values then skip to next value
-      if (data.normalized.series[index] === 0 && options.ignoreEmptyValues) return;
-
-      // If the series is an object and contains a name or meta data we add a custom attribute
-      seriesGroups[index].attr({
-        'ct:series-name': series.name
-      });
-
-      // Use series class from series data or if not set generate one
-      seriesGroups[index].addClass([
-        options.classNames.series,
-        (series.className || options.classNames.series + '-' + Chartist.alphaNumerate(index))
-      ].join(' '));
-
-      // If the whole dataset is 0 endAngle should be zero. Can't divide by 0.
-      var endAngle = (totalDataSum > 0 ? startAngle + data.normalized.series[index] / totalDataSum * 360 : 0);
-
-      // Use slight offset so there are no transparent hairline issues
-      var overlappigStartAngle = Math.max(0, startAngle - (index === 0 || hasSingleValInSeries ? 0 : 0.2));
-
-      // If we need to draw the arc for all 360 degrees we need to add a hack where we close the circle
-      // with Z and use 359.99 degrees
-      if(endAngle - overlappigStartAngle >= 359.99) {
-        endAngle = overlappigStartAngle + 359.99;
-      }
-
-      var start = Chartist.polarToCartesian(center.x, center.y, radius, overlappigStartAngle),
-        end = Chartist.polarToCartesian(center.x, center.y, radius, endAngle);
-
-      var innerStart,
-        innerEnd,
-        donutSolidRadius;
-
-      // Create a new path element for the pie chart. If this isn't a donut chart we should close the path for a correct stroke
-      var path = new Chartist.Svg.Path(!options.donut || options.donutSolid)
-        .move(end.x, end.y)
-        .arc(radius, radius, 0, endAngle - startAngle > 180, 0, start.x, start.y);
-
-      // If regular pie chart (no donut) we add a line to the center of the circle for completing the pie
-      if(!options.donut) {
-        path.line(center.x, center.y);
-      } else if (options.donutSolid) {
-        donutSolidRadius = radius - donutWidth.value;
-        innerStart = Chartist.polarToCartesian(center.x, center.y, donutSolidRadius, startAngle - (index === 0 || hasSingleValInSeries ? 0 : 0.2));
-        innerEnd = Chartist.polarToCartesian(center.x, center.y, donutSolidRadius, endAngle);
-        path.line(innerStart.x, innerStart.y);
-        path.arc(donutSolidRadius, donutSolidRadius, 0, endAngle - startAngle  > 180, 1, innerEnd.x, innerEnd.y);
-      }
-
-      // Create the SVG path
-      // If this is a donut chart we add the donut class, otherwise just a regular slice
-      var pathClassName = options.classNames.slicePie;
-      if (options.donut) {
-        pathClassName = options.classNames.sliceDonut;
-        if (options.donutSolid) {
-          pathClassName = options.classNames.sliceDonutSolid;
-        }
-      }
-      var pathElement = seriesGroups[index].elem('path', {
-        d: path.stringify()
-      }, pathClassName);
-
-      // Adding the pie series value to the path
-      pathElement.attr({
-        'ct:value': data.normalized.series[index],
-        'ct:meta': Chartist.serialize(series.meta)
-      });
-
-      // If this is a donut, we add the stroke-width as style attribute
-      if(options.donut && !options.donutSolid) {
-        pathElement._node.style.strokeWidth = donutWidth.value + 'px';
-      }
-
-      // Fire off draw event
-      this.eventEmitter.emit('draw', {
-        type: 'slice',
-        value: data.normalized.series[index],
-        totalDataSum: totalDataSum,
-        index: index,
-        meta: series.meta,
-        series: series,
-        group: seriesGroups[index],
-        element: pathElement,
-        path: path.clone(),
-        center: center,
-        radius: radius,
-        startAngle: startAngle,
-        endAngle: endAngle
-      });
-
-      // If we need to show labels we need to add the label for this slice now
-      if(options.showLabel) {
-        var labelPosition;
-        if(data.raw.series.length === 1) {
-          // If we have only 1 series, we can position the label in the center of the pie
-          labelPosition = {
-            x: center.x,
-            y: center.y
-          };
-        } else {
-          // Position at the labelRadius distance from center and between start and end angle
-          labelPosition = Chartist.polarToCartesian(
-            center.x,
-            center.y,
-            labelRadius,
-            startAngle + (endAngle - startAngle) / 2
-          );
-        }
-
-        var rawValue;
-        if(data.normalized.labels && !Chartist.isFalseyButZero(data.normalized.labels[index])) {
-          rawValue = data.normalized.labels[index];
-        } else {
-          rawValue = data.normalized.series[index];
-        }
-
-        var interpolatedValue = options.labelInterpolationFnc(rawValue, index);
-
-        if(interpolatedValue || interpolatedValue === 0) {
-          var labelElement = labelsGroup.elem('text', {
-            dx: labelPosition.x,
-            dy: labelPosition.y,
-            'text-anchor': determineAnchorPosition(center, labelPosition, options.labelDirection)
-          }, options.classNames.label).text('' + interpolatedValue);
-
-          // Fire off draw event
-          this.eventEmitter.emit('draw', {
-            type: 'label',
-            index: index,
-            group: labelsGroup,
-            element: labelElement,
-            text: '' + interpolatedValue,
-            x: labelPosition.x,
-            y: labelPosition.y
-          });
-        }
-      }
-
-      // Set next startAngle to current endAngle.
-      // (except for last slice)
-      startAngle = endAngle;
-    }.bind(this));
-
-    this.eventEmitter.emit('created', {
-      chartRect: chartRect,
-      svg: this.svg,
-      options: options
-    });
-  }
-
-  /**
-   * This method creates a new pie chart and returns an object that can be used to redraw the chart.
-   *
-   * @memberof Chartist.Pie
-   * @param {String|Node} query A selector query string or directly a DOM element
-   * @param {Object} data The data object in the pie chart needs to have a series property with a one dimensional data array. The values will be normalized against each other and don't necessarily need to be in percentage. The series property can also be an array of value objects that contain a value property and a className property to override the CSS class name for the series group.
-   * @param {Object} [options] The options object with options that override the default options. Check the examples for a detailed list.
-   * @param {Array} [responsiveOptions] Specify an array of responsive option arrays which are a media query and options object pair => [[mediaQueryString, optionsObject],[more...]]
-   * @return {Object} An object with a version and an update method to manually redraw the chart
-   *
-   * @example
-   * // Simple pie chart example with four series
-   * new Chartist.Pie('.ct-chart', {
-   *   series: [10, 2, 4, 3]
-   * });
-   *
-   * @example
-   * // Drawing a donut chart
-   * new Chartist.Pie('.ct-chart', {
-   *   series: [10, 2, 4, 3]
-   * }, {
-   *   donut: true
-   * });
-   *
-   * @example
-   * // Using donut, startAngle and total to draw a gauge chart
-   * new Chartist.Pie('.ct-chart', {
-   *   series: [20, 10, 30, 40]
-   * }, {
-   *   donut: true,
-   *   donutWidth: 20,
-   *   startAngle: 270,
-   *   total: 200
-   * });
-   *
-   * @example
-   * // Drawing a pie chart with padding and labels that are outside the pie
-   * new Chartist.Pie('.ct-chart', {
-   *   series: [20, 10, 30, 40]
-   * }, {
-   *   chartPadding: 30,
-   *   labelOffset: 50,
-   *   labelDirection: 'explode'
-   * });
-   *
-   * @example
-   * // Overriding the class names for individual series as well as a name and meta data.
-   * // The name will be written as ct:series-name attribute and the meta data will be serialized and written
-   * // to a ct:meta attribute.
-   * new Chartist.Pie('.ct-chart', {
-   *   series: [{
-   *     value: 20,
-   *     name: 'Series 1',
-   *     className: 'my-custom-class-one',
-   *     meta: 'Meta One'
-   *   }, {
-   *     value: 10,
-   *     name: 'Series 2',
-   *     className: 'my-custom-class-two',
-   *     meta: 'Meta Two'
-   *   }, {
-   *     value: 70,
-   *     name: 'Series 3',
-   *     className: 'my-custom-class-three',
-   *     meta: 'Meta Three'
-   *   }]
-   * });
-   */
-  function Pie(query, data, options, responsiveOptions) {
-    Chartist.Pie.super.constructor.call(this,
-      query,
-      data,
-      defaultOptions,
-      Chartist.extend({}, defaultOptions, options),
-      responsiveOptions);
-  }
-
-  // Creating pie chart type in Chartist namespace
-  Chartist.Pie = Chartist.Base.extend({
-    constructor: Pie,
-    createChart: createChart,
-    determineAnchorPosition: determineAnchorPosition
-  });
-
-}(window, document, Chartist));
-
-return Chartist;
-
-}));
-
+module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";
 
 /***/ }),
 
-/***/ 564:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 661:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-!function(e,t){ true?module.exports=t(__webpack_require__(528)):"function"==typeof define&&define.amd?define(["Chartist"],t):"object"==typeof exports?exports.VueChartist=t(require("chartist")):e.VueChartist=t(e.Chartist)}(this,function(e){return function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=2)}([function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(1),o=n.n(r),i=n(4),s=n(3),u=s(o.a,i.a,null,null,null);u.options.__file="src/vue-chartist.vue",u.esModule&&Object.keys(u.esModule).some(function(e){return"default"!==e&&"__"!==e.substr(0,2)})&&console.error("named exports are not supported in *.vue files."),u.options.functional&&console.error("[vue-loader] vue-chartist.vue: functional components are not supported with templates, they should use render functions."),t.default=u.exports},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(5),o=function(e){return e&&e.__esModule?e:{default:e}}(r);t.default={name:"vue-chartist",props:{type:{type:String,validator:function(e){return"Pie"===e||"Line"===e||"Bar"===e},default:function(){return"Line"}},data:{type:Object,required:!0},options:{type:Object},listener:{type:Object},responsiveOptions:{type:Array}},data:function(){return{chartist:void 0}},methods:{updateEventListener:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"on";e=e||{};for(var n in e)e.hasOwnProperty(n)&&this.chartist[t](n,e[n])},renderChart:function(){var e=this.data,t=this.options?this.options:{},n=this.responsiveOptions?this.responsiveOptions:[];this.chartist?this.chartist.update(e,t,n):(this.chartist=new o.default[this.type](this.$el,e,t,n),this.updateEventListener(this.listener,"on"))}},watch:{data:{handler:"renderChart",deep:!0},options:{handler:"renderChart",deep:!0},responsiveOptions:{handler:"renderChart",deep:!0},listener:function(e,t){this.updateEventListener(t,"off"),this.updateEventListener(e,"on")}},mounted:function(){this.renderChart()},destroyed:function(){this.chartist&&this.chartist.detach()}}},function(e,t,n){"use strict";var r=n(0),o=function(e){return e&&e.__esModule?e:{default:e}}(r);e.exports=o.default},function(e,t){e.exports=function(e,t,n,r,o){var i,s=e=e||{},u=typeof e.default;"object"!==u&&"function"!==u||(i=e,s=e.default);var a="function"==typeof s?s.options:s;t&&(a.render=t.render,a.staticRenderFns=t.staticRenderFns),r&&(a._scopeId=r);var c;if(o?(c=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),n&&n.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(o)},a._ssrRegister=c):n&&(c=n),c){var d=a.functional,p=d?a.render:a.beforeCreate;d?a.render=function(e,t){return c.call(t),p(e,t)}:a.beforeCreate=p?[].concat(p,c):[c]}return{esModule:i,exports:s,options:a}}},function(e,t,n){"use strict";var r=function(){var e=this,t=e.$createElement;return(e._self._c||t)("div",{staticClass:"v-chartist-container"})},o=[];r._withStripped=!0;var i={render:r,staticRenderFns:o};t.a=i},function(t,n){t.exports=e}])});
+"use strict";
+/* unused harmony export install */
+/* unused harmony export use */
+/* unused harmony export directive */
+/* unused harmony export mixin */
+/* unused harmony export mapFields */
+/* unused harmony export Validator */
+/* unused harmony export ErrorBag */
+/* unused harmony export Rules */
+/* unused harmony export ErrorComponent */
+/* unused harmony export version */
+/**
+  * vee-validate v2.0.9
+  * (c) 2018 Abdelrahman Awad
+  * @license MIT
+  */
+var supportsPassive = true;
+var detectPassiveSupport = function () {
+    try {
+        var opts = Object.defineProperty({}, 'passive', {
+            get: function get() {
+                supportsPassive = true;
+            }
+        });
+        window.addEventListener('testPassive', null, opts);
+        window.removeEventListener('testPassive', null, opts);
+    } catch (e) {
+        supportsPassive = false;
+    }
+    return supportsPassive;
+};
+var addEventListener = function (el, eventName, cb) {
+    el.addEventListener(eventName, cb, supportsPassive ? {
+        passive: true
+    } : false);
+};
+var isTextInput = function (el) { return ['text','number','password','search','email','tel',
+    'url','textarea'].indexOf(el.type) !== -1; };
+var isCheckboxOrRadioInput = function (el) { return ['radio','checkbox'].indexOf(el.type) !== -1; };
+var getDataAttribute = function (el, name) { return el.getAttribute(("data-vv-" + name)); };
+var isNullOrUndefined = function (value) { return value === null || value === undefined; };
+var createFlags = function () { return ({
+    untouched: true,
+    touched: false,
+    dirty: false,
+    pristine: true,
+    valid: null,
+    invalid: null,
+    validated: false,
+    pending: false,
+    required: false,
+    changed: false
+}); };
+var isEqual = function (lhs, rhs) {
+    if (lhs instanceof RegExp && rhs instanceof RegExp) {
+        return isEqual(lhs.source, rhs.source) && isEqual(lhs.flags, rhs.flags);
+    }
+    if (Array.isArray(lhs) && Array.isArray(rhs)) {
+        if (lhs.length !== rhs.length) 
+            { return false; }
+        for (var i = 0;i < lhs.length; i++) {
+            if (!isEqual(lhs[i], rhs[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+    if (isObject(lhs) && isObject(rhs)) {
+        return Object.keys(lhs).every(function (key) { return isEqual(lhs[key], rhs[key]); }) && Object.keys(rhs).every(function (key) { return isEqual(lhs[key], rhs[key]); });
+    }
+    return lhs === rhs;
+};
+var getScope = function (el) {
+    var scope = getDataAttribute(el, 'scope');
+    if (isNullOrUndefined(scope)) {
+        var form = getForm(el);
+        if (form) {
+            scope = getDataAttribute(form, 'scope');
+        }
+    }
+    return !isNullOrUndefined(scope) ? scope : null;
+};
+var getForm = function (el) {
+    if (isNullOrUndefined(el)) 
+        { return null; }
+    if (el.tagName === "FORM") 
+        { return el; }
+    if (!isNullOrUndefined(el.form)) 
+        { return el.form; }
+    return !isNullOrUndefined(el.parentNode) ? getForm(el.parentNode) : null;
+};
+var getPath = function (path, target, def) {
+    if ( def === void 0 ) def = undefined;
+
+    if (!path || !target) 
+        { return def; }
+    var value = target;
+    path.split('.').every(function (prop) {
+        if (!Object.prototype.hasOwnProperty.call(value, prop) && value[prop] === undefined) {
+            value = def;
+            return false;
+        }
+        value = value[prop];
+        return true;
+    });
+    return value;
+};
+var hasPath = function (path, target) {
+    var obj = target;
+    return path.split('.').every(function (prop) {
+        if (!Object.prototype.hasOwnProperty.call(obj, prop)) {
+            return false;
+        }
+        obj = obj[prop];
+        return true;
+    });
+};
+var parseRule = function (rule) {
+    var params = [];
+    var name = rule.split(':')[0];
+    if (~rule.indexOf(':')) {
+        params = rule.split(':').slice(1).join(':').split(',');
+    }
+    return {
+        name: name,
+        params: params
+    };
+};
+var debounce = function (fn, wait, immediate, token) {
+    if ( wait === void 0 ) wait = 0;
+    if ( immediate === void 0 ) immediate = false;
+    if ( token === void 0 ) token = {
+    cancelled: false
+};
+
+    if (wait === 0) {
+        return fn;
+    }
+    var timeout;
+    return function () {
+        var args = [], len = arguments.length;
+        while ( len-- ) args[ len ] = arguments[ len ];
+
+        var later = function () {
+            timeout = null;
+            if (!immediate && !token.cancelled) 
+                { fn.apply(void 0, args); }
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) 
+            { fn.apply(void 0, args); }
+    };
+};
+var normalizeRules = function (rules) {
+    if (!rules) {
+        return {};
+    }
+    if (isObject(rules)) {
+        return Object.keys(rules).reduce(function (prev, curr) {
+            var params = [];
+            if (rules[curr] === true) {
+                params = [];
+            } else if (Array.isArray(rules[curr])) {
+                params = rules[curr];
+            } else {
+                params = [rules[curr]];
+            }
+            if (rules[curr] !== false) {
+                prev[curr] = params;
+            }
+            return prev;
+        }, {});
+    }
+    if (typeof rules !== 'string') {
+        warn('rules must be either a string or an object.');
+        return {};
+    }
+    return rules.split('|').reduce(function (prev, rule) {
+        var parsedRule = parseRule(rule);
+        if (!parsedRule.name) {
+            return prev;
+        }
+        prev[parsedRule.name] = parsedRule.params;
+        return prev;
+    }, {});
+};
+var warn = function (message) {
+    console.warn(("[vee-validate] " + message));
+};
+var createError = function (message) { return new Error(("[vee-validate] " + message)); };
+var isObject = function (obj) { return obj !== null && obj && typeof obj === 'object' && !Array.isArray(obj); };
+var isCallable = function (func) { return typeof func === 'function'; };
+var hasClass = function (el, className) {
+    if (el.classList) {
+        return el.classList.contains(className);
+    }
+    return !(!el.className.match(new RegExp(("(\\s|^)" + className + "(\\s|$)"))));
+};
+var addClass = function (el, className) {
+    if (el.classList) {
+        el.classList.add(className);
+        return;
+    }
+    if (!hasClass(el, className)) {
+        el.className += " " + className;
+    }
+};
+var removeClass = function (el, className) {
+    if (el.classList) {
+        el.classList.remove(className);
+        return;
+    }
+    if (hasClass(el, className)) {
+        var reg = new RegExp(("(\\s|^)" + className + "(\\s|$)"));
+        el.className = el.className.replace(reg, ' ');
+    }
+};
+var toggleClass = function (el, className, status) {
+    if (!el || !className) 
+        { return; }
+    if (Array.isArray(className)) {
+        className.forEach(function (item) { return toggleClass(el, item, status); });
+        return;
+    }
+    if (status) {
+        return addClass(el, className);
+    }
+    removeClass(el, className);
+};
+var toArray = function (arrayLike) {
+    if (isCallable(Array.from)) {
+        return Array.from(arrayLike);
+    }
+    var array = [];
+    var length = arrayLike.length;
+    for (var i = 0;i < length; i++) {
+        array.push(arrayLike[i]);
+    }
+    return array;
+};
+var assign = function (target) {
+    var others = [], len = arguments.length - 1;
+    while ( len-- > 0 ) others[ len ] = arguments[ len + 1 ];
+
+    if (isCallable(Object.assign)) {
+        return Object.assign.apply(Object, [ target ].concat( others ));
+    }
+    if (target == null) {
+        throw new TypeError('Cannot convert undefined or null to object');
+    }
+    var to = Object(target);
+    others.forEach(function (arg) {
+        if (arg != null) {
+            Object.keys(arg).forEach(function (key) {
+                to[key] = arg[key];
+            });
+        }
+    });
+    return to;
+};
+var id = 0;
+var idTemplate = '{id}';
+var uniqId = function () {
+    if (id >= 9999) {
+        id = 0;
+        idTemplate = idTemplate.replace('{id}', '_{id}');
+    }
+    id++;
+    var newId = idTemplate.replace('{id}', String(id));
+    return newId;
+};
+var find = function (arrayLike, predicate) {
+    var array = Array.isArray(arrayLike) ? arrayLike : toArray(arrayLike);
+    for (var i = 0;i < array.length; i++) {
+        if (predicate(array[i])) {
+            return array[i];
+        }
+    }
+    return undefined;
+};
+var isBuiltInComponent = function (vnode) {
+    if (!vnode) {
+        return false;
+    }
+    var tag = vnode.componentOptions.tag;
+    return /keep-alive|transition|transition-group/.test(tag);
+};
+var makeEventsArray = function (events) { return typeof events === 'string' && events.length ? events.split('|') : []; };
+var makeDelayObject = function (events, delay, delayConfig) {
+    if (typeof delay === 'number') {
+        return events.reduce(function (prev, e) {
+            prev[e] = delay;
+            return prev;
+        }, {});
+    }
+    return events.reduce(function (prev, e) {
+        if (typeof delay === 'object' && e in delay) {
+            prev[e] = delay[e];
+            return prev;
+        }
+        if (typeof delayConfig === 'number') {
+            prev[e] = delayConfig;
+            return prev;
+        }
+        prev[e] = delayConfig && delayConfig[e] || 0;
+        return prev;
+    }, {});
+};
+var deepParseInt = function (input) {
+    if (typeof input === 'number') 
+        { return input; }
+    if (typeof input === 'string') 
+        { return parseInt(input); }
+    var map = {};
+    for (var element in input) {
+        map[element] = parseInt(input[element]);
+    }
+    return map;
+};
+var merge = function (target, source) {
+    if (!(isObject(target) && isObject(source))) {
+        return target;
+    }
+    Object.keys(source).forEach(function (key) {
+        var obj, obj$1;
+
+        if (isObject(source[key])) {
+            if (!target[key]) {
+                assign(target, ( obj = {}, obj[key] = {}, obj ));
+            }
+            merge(target[key], source[key]);
+            return;
+        }
+        assign(target, ( obj$1 = {}, obj$1[key] = source[key], obj$1 ));
+    });
+    return target;
+};
+
+var ErrorBag = function ErrorBag() {
+    this.items = [];
+};
+ErrorBag.prototype[typeof Symbol === 'function' ? Symbol.iterator : '@@iterator'] = function () {
+        var this$1 = this;
+
+    var index = 0;
+    return {
+        next: function () { return ({
+            value: this$1.items[index++],
+            done: index > this$1.items.length
+        }); }
+    };
+};
+ErrorBag.prototype.add = function add (error) {
+        var ref;
+
+    if (arguments.length > 1) {
+        error = {
+            field: arguments[0],
+            msg: arguments[1],
+            rule: arguments[2],
+            scope: !isNullOrUndefined(arguments[3]) ? arguments[3] : null,
+            regenerate: null
+        };
+    }
+    (ref = this.items).push.apply(ref, this._normalizeError(error));
+};
+ErrorBag.prototype._normalizeError = function _normalizeError (error) {
+    if (Array.isArray(error)) {
+        return error.map(function (e) {
+            e.scope = !isNullOrUndefined(e.scope) ? e.scope : null;
+            return e;
+        });
+    }
+    error.scope = !isNullOrUndefined(error.scope) ? error.scope : null;
+    return [error];
+};
+ErrorBag.prototype.regenerate = function regenerate () {
+    this.items.forEach(function (i) {
+        i.msg = isCallable(i.regenerate) ? i.regenerate() : i.msg;
+    });
+};
+ErrorBag.prototype.update = function update (id, error) {
+    var item = find(this.items, function (i) { return i.id === id; });
+    if (!item) {
+        return;
+    }
+    var idx = this.items.indexOf(item);
+    this.items.splice(idx, 1);
+    item.scope = error.scope;
+    this.items.push(item);
+};
+ErrorBag.prototype.all = function all (scope) {
+    if (isNullOrUndefined(scope)) {
+        return this.items.map(function (e) { return e.msg; });
+    }
+    return this.items.filter(function (e) { return e.scope === scope; }).map(function (e) { return e.msg; });
+};
+ErrorBag.prototype.any = function any (scope) {
+    if (isNullOrUndefined(scope)) {
+        return !(!this.items.length);
+    }
+    return !(!this.items.filter(function (e) { return e.scope === scope; }).length);
+};
+ErrorBag.prototype.clear = function clear (scope) {
+        var this$1 = this;
+
+    if (isNullOrUndefined(scope)) {
+        scope = null;
+    }
+    for (var i = 0;i < this.items.length; ++i) {
+        if (this$1.items[i].scope === scope) {
+            this$1.items.splice(i, 1);
+            --i;
+        }
+    }
+};
+ErrorBag.prototype.collect = function collect (field, scope, map) {
+        if ( map === void 0 ) map = true;
+
+    if (!field) {
+        var collection = {};
+        this.items.forEach(function (e) {
+            if (!collection[e.field]) {
+                collection[e.field] = [];
+            }
+            collection[e.field].push(map ? e.msg : e);
+        });
+        return collection;
+    }
+    field = !isNullOrUndefined(field) ? String(field) : field;
+    if (isNullOrUndefined(scope)) {
+        return this.items.filter(function (e) { return e.field === field; }).map(function (e) { return map ? e.msg : e; });
+    }
+    return this.items.filter(function (e) { return e.field === field && e.scope === scope; }).map(function (e) { return map ? e.msg : e; });
+};
+ErrorBag.prototype.count = function count () {
+    return this.items.length;
+};
+ErrorBag.prototype.firstById = function firstById (id) {
+    var error = find(this.items, function (i) { return i.id === id; });
+    return error ? error.msg : null;
+};
+ErrorBag.prototype.first = function first (field, scope) {
+        var this$1 = this;
+        if ( scope === void 0 ) scope = null;
+
+    if (isNullOrUndefined(field)) {
+        return null;
+    }
+    field = String(field);
+    var selector = this._selector(field);
+    var scoped = this._scope(field);
+    if (scoped) {
+        var result = this.first(scoped.name, scoped.scope);
+        if (result) {
+            return result;
+        }
+    }
+    if (selector) {
+        return this.firstByRule(selector.name, selector.rule, scope);
+    }
+    for (var i = 0;i < this.items.length; ++i) {
+        if (this$1.items[i].field === field && this$1.items[i].scope === scope) {
+            return this$1.items[i].msg;
+        }
+    }
+    return null;
+};
+ErrorBag.prototype.firstRule = function firstRule (field, scope) {
+    var errors = this.collect(field, scope, false);
+    return errors.length && errors[0].rule || null;
+};
+ErrorBag.prototype.has = function has (field, scope) {
+        if ( scope === void 0 ) scope = null;
+
+    return !(!this.first(field, scope));
+};
+ErrorBag.prototype.firstByRule = function firstByRule (name, rule, scope) {
+        if ( scope === void 0 ) scope = null;
+
+    var error = this.collect(name, scope, false).filter(function (e) { return e.rule === rule; })[0];
+    return error && error.msg || null;
+};
+ErrorBag.prototype.firstNot = function firstNot (name, rule, scope) {
+        if ( rule === void 0 ) rule = 'required';
+        if ( scope === void 0 ) scope = null;
+
+    var error = this.collect(name, scope, false).filter(function (e) { return e.rule !== rule; })[0];
+    return error && error.msg || null;
+};
+ErrorBag.prototype.removeById = function removeById (id) {
+        var this$1 = this;
+
+    if (Array.isArray(id)) {
+        this.items = this.items.filter(function (i) { return id.indexOf(i.id) === -1; });
+        return;
+    }
+    for (var i = 0;i < this.items.length; ++i) {
+        if (this$1.items[i].id === id) {
+            this$1.items.splice(i, 1);
+            --i;
+        }
+    }
+};
+ErrorBag.prototype.remove = function remove (field, scope) {
+        var this$1 = this;
+
+    field = !isNullOrUndefined(field) ? String(field) : field;
+    var removeCondition = function (e) {
+        if (!isNullOrUndefined(scope)) {
+            return e.field === field && e.scope === scope;
+        }
+        return e.field === field && e.scope === null;
+    };
+    for (var i = 0;i < this.items.length; ++i) {
+        if (removeCondition(this$1.items[i])) {
+            this$1.items.splice(i, 1);
+            --i;
+        }
+    }
+};
+ErrorBag.prototype._selector = function _selector (field) {
+    if (field.indexOf(':') > -1) {
+        var ref = field.split(':');
+            var name = ref[0];
+            var rule = ref[1];
+        return {
+            name: name,
+            rule: rule
+        };
+    }
+    return null;
+};
+ErrorBag.prototype._scope = function _scope (field) {
+    if (field.indexOf('.') > -1) {
+        var ref = field.split('.');
+            var scope = ref[0];
+            var name = ref.slice(1);
+        return {
+            name: name.join('.'),
+            scope: scope
+        };
+    }
+    return null;
+};
+
+var LOCALE = 'en';
+var Dictionary = function Dictionary(dictionary) {
+    if ( dictionary === void 0 ) dictionary = {};
+
+    this.container = {};
+    this.merge(dictionary);
+};
+
+var prototypeAccessors = { locale: { configurable: true } };
+prototypeAccessors.locale.get = function () {
+    return LOCALE;
+};
+prototypeAccessors.locale.set = function (value) {
+    LOCALE = value || 'en';
+};
+Dictionary.prototype.hasLocale = function hasLocale (locale) {
+    return !(!this.container[locale]);
+};
+Dictionary.prototype.setDateFormat = function setDateFormat (locale, format) {
+    if (!this.container[locale]) {
+        this.container[locale] = {};
+    }
+    this.container[locale].dateFormat = format;
+};
+Dictionary.prototype.getDateFormat = function getDateFormat (locale) {
+    if (!this.container[locale] || !this.container[locale].dateFormat) {
+        return null;
+    }
+    return this.container[locale].dateFormat;
+};
+Dictionary.prototype.getMessage = function getMessage (locale, key, data) {
+    var message = null;
+    if (!this.hasMessage(locale, key)) {
+        message = this._getDefaultMessage(locale);
+    } else {
+        message = this.container[locale].messages[key];
+    }
+    return isCallable(message) ? message.apply(void 0, data) : message;
+};
+Dictionary.prototype.getFieldMessage = function getFieldMessage (locale, field, key, data) {
+    if (!this.hasLocale(locale)) {
+        return this.getMessage(locale, key, data);
+    }
+    var dict = this.container[locale].custom && this.container[locale].custom[field];
+    if (!dict || !dict[key]) {
+        return this.getMessage(locale, key, data);
+    }
+    var message = dict[key];
+    return isCallable(message) ? message.apply(void 0, data) : message;
+};
+Dictionary.prototype._getDefaultMessage = function _getDefaultMessage (locale) {
+    if (this.hasMessage(locale, '_default')) {
+        return this.container[locale].messages._default;
+    }
+    return this.container.en.messages._default;
+};
+Dictionary.prototype.getAttribute = function getAttribute (locale, key, fallback) {
+        if ( fallback === void 0 ) fallback = '';
+
+    if (!this.hasAttribute(locale, key)) {
+        return fallback;
+    }
+    return this.container[locale].attributes[key];
+};
+Dictionary.prototype.hasMessage = function hasMessage (locale, key) {
+    return !(!(this.hasLocale(locale) && this.container[locale].messages && this.container[locale].messages[key]));
+};
+Dictionary.prototype.hasAttribute = function hasAttribute (locale, key) {
+    return !(!(this.hasLocale(locale) && this.container[locale].attributes && this.container[locale].attributes[key]));
+};
+Dictionary.prototype.merge = function merge$1 (dictionary) {
+    merge(this.container, dictionary);
+};
+Dictionary.prototype.setMessage = function setMessage (locale, key, message) {
+    if (!this.hasLocale(locale)) {
+        this.container[locale] = {
+            messages: {},
+            attributes: {}
+        };
+    }
+    this.container[locale].messages[key] = message;
+};
+Dictionary.prototype.setAttribute = function setAttribute (locale, key, attribute) {
+    if (!this.hasLocale(locale)) {
+        this.container[locale] = {
+            messages: {},
+            attributes: {}
+        };
+    }
+    this.container[locale].attributes[key] = attribute;
+};
+
+Object.defineProperties( Dictionary.prototype, prototypeAccessors );
+
+var normalizeValue = function (value) {
+    if (isObject(value)) {
+        return Object.keys(value).reduce(function (prev, key) {
+            prev[key] = normalizeValue(value[key]);
+            return prev;
+        }, {});
+    }
+    if (isCallable(value)) {
+        return value('{0}', ['{1}','{2}','{3}']);
+    }
+    return value;
+};
+var normalizeFormat = function (locale) {
+    var messages = normalizeValue(locale.messages);
+    var custom = normalizeValue(locale.custom);
+    return {
+        messages: messages,
+        custom: custom,
+        attributes: locale.attributes,
+        dateFormat: locale.dateFormat
+    };
+};
+var I18nDictionary = function I18nDictionary(i18n, rootKey) {
+    this.i18n = i18n;
+    this.rootKey = rootKey;
+};
+
+var prototypeAccessors$1 = { locale: { configurable: true } };
+prototypeAccessors$1.locale.get = function () {
+    return this.i18n.locale;
+};
+prototypeAccessors$1.locale.set = function (value) {
+    warn('Cannot set locale from the validator when using vue-i18n, use i18n.locale setter instead');
+};
+I18nDictionary.prototype.getDateFormat = function getDateFormat (locale) {
+    return this.i18n.getDateTimeFormat(locale || this.locale);
+};
+I18nDictionary.prototype.setDateFormat = function setDateFormat (locale, value) {
+    this.i18n.setDateTimeFormat(locale || this.locale, value);
+};
+I18nDictionary.prototype.getMessage = function getMessage (locale, key, data) {
+    var path = (this.rootKey) + ".messages." + key;
+    if (!this.i18n.te(path)) {
+        return this.i18n.t(((this.rootKey) + ".messages._default"), locale, data);
+    }
+    return this.i18n.t(path, locale, data);
+};
+I18nDictionary.prototype.getAttribute = function getAttribute (locale, key, fallback) {
+        if ( fallback === void 0 ) fallback = '';
+
+    var path = (this.rootKey) + ".attributes." + key;
+    if (!this.i18n.te(path)) {
+        return fallback;
+    }
+    return this.i18n.t(path, locale);
+};
+I18nDictionary.prototype.getFieldMessage = function getFieldMessage (locale, field, key, data) {
+    var path = (this.rootKey) + ".custom." + field + "." + key;
+    if (this.i18n.te(path)) {
+        return this.i18n.t(path);
+    }
+    return this.getMessage(locale, key, data);
+};
+I18nDictionary.prototype.merge = function merge$1 (dictionary) {
+        var this$1 = this;
+
+    Object.keys(dictionary).forEach(function (localeKey) {
+            var obj;
+
+        var clone = merge({}, getPath((localeKey + "." + (this$1.rootKey)), this$1.i18n.messages, {}));
+        var locale = merge(clone, normalizeFormat(dictionary[localeKey]));
+        this$1.i18n.mergeLocaleMessage(localeKey, ( obj = {}, obj[this$1.rootKey] = locale, obj ));
+        if (locale.dateFormat) {
+            this$1.i18n.setDateTimeFormat(localeKey, locale.dateFormat);
+        }
+    });
+};
+I18nDictionary.prototype.setMessage = function setMessage (locale, key, value) {
+        var obj, obj$1;
+
+    this.merge(( obj$1 = {}, obj$1[locale] = {
+            messages: ( obj = {}, obj[key] = value, obj )
+        }, obj$1 ));
+};
+I18nDictionary.prototype.setAttribute = function setAttribute (locale, key, value) {
+        var obj, obj$1;
+
+    this.merge(( obj$1 = {}, obj$1[locale] = {
+            attributes: ( obj = {}, obj[key] = value, obj )
+        }, obj$1 ));
+};
+
+Object.defineProperties( I18nDictionary.prototype, prototypeAccessors$1 );
+
+var defaultConfig = {
+    locale: 'en',
+    delay: 0,
+    errorBagName: 'errors',
+    dictionary: null,
+    strict: true,
+    fieldsBagName: 'fields',
+    classes: false,
+    classNames: null,
+    events: 'input|blur',
+    inject: true,
+    fastExit: true,
+    aria: true,
+    validity: false,
+    i18n: null,
+    i18nRootKey: 'validation'
+};
+var currentConfig = assign({}, defaultConfig);
+var dependencies = {
+    dictionary: new Dictionary({
+        en: {
+            messages: {},
+            attributes: {},
+            custom: {}
+        }
+    })
+};
+var Config = function Config () {};
+
+var staticAccessors = { default: { configurable: true },current: { configurable: true } };
+
+staticAccessors.default.get = function () {
+    return defaultConfig;
+};
+staticAccessors.current.get = function () {
+    return currentConfig;
+};
+Config.dependency = function dependency (key) {
+    return dependencies[key];
+};
+Config.merge = function merge$$1 (config) {
+    currentConfig = assign({}, currentConfig, config);
+    if (currentConfig.i18n) {
+        Config.register('dictionary', new I18nDictionary(currentConfig.i18n, currentConfig.i18nRootKey));
+    }
+};
+Config.register = function register (key, value) {
+    dependencies[key] = value;
+};
+Config.resolve = function resolve (context) {
+    var selfConfig = getPath('$options.$_veeValidate', context, {});
+    return assign({}, Config.current, selfConfig);
+};
+
+Object.defineProperties( Config, staticAccessors );
+
+var Generator = function Generator () {};
+
+Generator.generate = function generate (el, binding, vnode) {
+    var model = Generator.resolveModel(binding, vnode);
+    var options = Config.resolve(vnode.context);
+    return {
+        name: Generator.resolveName(el, vnode),
+        el: el,
+        listen: !binding.modifiers.disable,
+        scope: Generator.resolveScope(el, binding, vnode),
+        vm: Generator.makeVM(vnode.context),
+        expression: binding.value,
+        component: vnode.componentInstance,
+        classes: options.classes,
+        classNames: options.classNames,
+        getter: Generator.resolveGetter(el, vnode, model),
+        events: Generator.resolveEvents(el, vnode) || options.events,
+        model: model,
+        delay: Generator.resolveDelay(el, vnode, options),
+        rules: Generator.resolveRules(el, binding),
+        initial: !(!binding.modifiers.initial),
+        validity: options.validity,
+        aria: options.aria,
+        initialValue: Generator.resolveInitialValue(vnode)
+    };
+};
+Generator.getCtorConfig = function getCtorConfig (vnode) {
+    if (!vnode.componentInstance) 
+        { return null; }
+    var config = getPath('componentInstance.$options.$_veeValidate', vnode);
+    return config;
+};
+Generator.resolveRules = function resolveRules (el, binding) {
+    if (!binding.value && (!binding || !binding.expression)) {
+        return getDataAttribute(el, 'rules');
+    }
+    if (binding.value && ~['string','object'].indexOf(typeof binding.value.rules)) {
+        return binding.value.rules;
+    }
+    return binding.value;
+};
+Generator.resolveInitialValue = function resolveInitialValue (vnode) {
+    var model = vnode.data.model || find(vnode.data.directives, function (d) { return d.name === 'model'; });
+    return model && model.value;
+};
+Generator.makeVM = function makeVM (vm) {
+    return {
+        get $el() {
+            return vm.$el;
+        },
+        get $refs() {
+            return vm.$refs;
+        },
+        $watch: vm.$watch ? vm.$watch.bind(vm) : function () {},
+        $validator: vm.$validator ? {
+            errors: vm.$validator.errors,
+            validate: vm.$validator.validate.bind(vm.$validator),
+            update: vm.$validator.update.bind(vm.$validator)
+        } : null
+    };
+};
+Generator.resolveDelay = function resolveDelay (el, vnode, options) {
+    var delay = getDataAttribute(el, 'delay');
+    var globalDelay = options && 'delay' in options ? options.delay : 0;
+    if (!delay && vnode.componentInstance && vnode.componentInstance.$attrs) {
+        delay = vnode.componentInstance.$attrs['data-vv-delay'];
+    }
+    if (!isObject(globalDelay)) {
+        return deepParseInt(delay || globalDelay);
+    }
+    if (!isNullOrUndefined(delay)) {
+        globalDelay.input = delay;
+    }
+    return deepParseInt(globalDelay);
+};
+Generator.resolveEvents = function resolveEvents (el, vnode) {
+    var events = getDataAttribute(el, 'validate-on');
+    if (!events && vnode.componentInstance && vnode.componentInstance.$attrs) {
+        events = vnode.componentInstance.$attrs['data-vv-validate-on'];
+    }
+    if (!events && vnode.componentInstance) {
+        var config = Generator.getCtorConfig(vnode);
+        events = config && config.events;
+    }
+    return events;
+};
+Generator.resolveScope = function resolveScope (el, binding, vnode) {
+        if ( vnode === void 0 ) vnode = {};
+
+    var scope = null;
+    if (vnode.componentInstance && isNullOrUndefined(scope)) {
+        scope = vnode.componentInstance.$attrs && vnode.componentInstance.$attrs['data-vv-scope'];
+    }
+    return !isNullOrUndefined(scope) ? scope : getScope(el);
+};
+Generator.resolveModel = function resolveModel (binding, vnode) {
+    if (binding.arg) {
+        return {
+            expression: binding.arg
+        };
+    }
+    var model = vnode.data.model || find(vnode.data.directives, function (d) { return d.name === 'model'; });
+    if (!model) {
+        return null;
+    }
+    var watchable = !/[^\w.$]/.test(model.expression) && hasPath(model.expression, vnode.context);
+    var lazy = !(!(model.modifiers && model.modifiers.lazy));
+    if (!watchable) {
+        return {
+            expression: null,
+            lazy: lazy
+        };
+    }
+    return {
+        expression: model.expression,
+        lazy: lazy
+    };
+};
+Generator.resolveName = function resolveName (el, vnode) {
+    var name = getDataAttribute(el, 'name');
+    if (!name && !vnode.componentInstance) {
+        return el.name;
+    }
+    if (!name && vnode.componentInstance && vnode.componentInstance.$attrs) {
+        name = vnode.componentInstance.$attrs['data-vv-name'] || vnode.componentInstance.$attrs['name'];
+    }
+    if (!name && vnode.componentInstance) {
+        var config = Generator.getCtorConfig(vnode);
+        if (config && isCallable(config.name)) {
+            var boundGetter = config.name.bind(vnode.componentInstance);
+            return boundGetter();
+        }
+        return vnode.componentInstance.name;
+    }
+    return name;
+};
+Generator.resolveGetter = function resolveGetter (el, vnode, model) {
+    if (model && model.expression) {
+        return function () { return getPath(model.expression, vnode.context); };
+    }
+    if (vnode.componentInstance) {
+        var path = getDataAttribute(el, 'value-path') || vnode.componentInstance.$attrs && vnode.componentInstance.$attrs['data-vv-value-path'];
+        if (path) {
+            return function () { return getPath(path, vnode.componentInstance); };
+        }
+        var config = Generator.getCtorConfig(vnode);
+        if (config && isCallable(config.value)) {
+            var boundGetter = config.value.bind(vnode.componentInstance);
+            return function () { return boundGetter(); };
+        }
+        return function () { return vnode.componentInstance.value; };
+    }
+    switch (el.type) {
+        case 'checkbox':
+            return function () {
+                var els = document.querySelectorAll(("input[name=\"" + (el.name) + "\"]"));
+                els = toArray(els).filter(function (el) { return el.checked; });
+                if (!els.length) 
+                    { return undefined; }
+                return els.map(function (checkbox) { return checkbox.value; });
+            };
+        case 'radio':
+            return function () {
+                var els = document.querySelectorAll(("input[name=\"" + (el.name) + "\"]"));
+                var elm = find(els, function (el) { return el.checked; });
+                return elm && elm.value;
+            };
+        case 'file':
+            return function (context) { return toArray(el.files); };
+        case 'select-multiple':
+            return function () { return toArray(el.options).filter(function (opt) { return opt.selected; }).map(function (opt) { return opt.value; }); };
+        default:
+            return function () { return el && el.value; };
+    }
+};
+
+var DEFAULT_OPTIONS = {
+    targetOf: null,
+    initial: false,
+    scope: null,
+    listen: true,
+    name: null,
+    rules: {},
+    vm: null,
+    classes: false,
+    validity: true,
+    aria: true,
+    events: 'input|blur',
+    delay: 0,
+    classNames: {
+        touched: 'touched',
+        untouched: 'untouched',
+        valid: 'valid',
+        invalid: 'invalid',
+        pristine: 'pristine',
+        dirty: 'dirty'
+    }
+};
+var Field = function Field(options) {
+    if ( options === void 0 ) options = {};
+
+    this.id = uniqId();
+    this.el = options.el;
+    this.updated = false;
+    this.dependencies = [];
+    this.watchers = [];
+    this.events = [];
+    this.delay = 0;
+    this.rules = {};
+    this._cacheId(options);
+    this.classNames = assign({}, DEFAULT_OPTIONS.classNames);
+    options = assign({}, DEFAULT_OPTIONS, options);
+    this._delay = !isNullOrUndefined(options.delay) ? options.delay : 0;
+    this.validity = options.validity;
+    this.aria = options.aria;
+    this.flags = createFlags();
+    this.vm = options.vm;
+    this.component = options.component;
+    this.ctorConfig = this.component ? getPath('$options.$_veeValidate', this.component) : undefined;
+    this.update(options);
+    this.initialValue = this.value;
+    this.updated = false;
+};
+
+var prototypeAccessors$2 = { validator: { configurable: true },isRequired: { configurable: true },isDisabled: { configurable: true },alias: { configurable: true },value: { configurable: true },rejectsFalse: { configurable: true } };
+prototypeAccessors$2.validator.get = function () {
+    if (!this.vm || !this.vm.$validator) {
+        warn('No validator instance detected.');
+        return {
+            validate: function () {}
+        };
+    }
+    return this.vm.$validator;
+};
+prototypeAccessors$2.isRequired.get = function () {
+    return !(!this.rules.required);
+};
+prototypeAccessors$2.isDisabled.get = function () {
+    return !(!(this.component && this.component.disabled)) || !(!(this.el && this.el.disabled));
+};
+prototypeAccessors$2.alias.get = function () {
+    if (this._alias) {
+        return this._alias;
+    }
+    var alias = null;
+    if (this.el) {
+        alias = getDataAttribute(this.el, 'as');
+    }
+    if (!alias && this.component) {
+        return this.component.$attrs && this.component.$attrs['data-vv-as'];
+    }
+    return alias;
+};
+prototypeAccessors$2.value.get = function () {
+    if (!isCallable(this.getter)) {
+        return undefined;
+    }
+    return this.getter();
+};
+prototypeAccessors$2.rejectsFalse.get = function () {
+    if (this.component && this.ctorConfig) {
+        return !(!this.ctorConfig.rejectsFalse);
+    }
+    if (!this.el) {
+        return false;
+    }
+    return this.el.type === 'checkbox';
+};
+Field.prototype.matches = function matches (options) {
+    if (!options) {
+        return true;
+    }
+    if (options.id) {
+        return this.id === options.id;
+    }
+    if (options.name === undefined && options.scope === undefined) {
+        return true;
+    }
+    if (options.scope === undefined) {
+        return this.name === options.name;
+    }
+    if (options.name === undefined) {
+        return this.scope === options.scope;
+    }
+    return options.name === this.name && options.scope === this.scope;
+};
+Field.prototype._cacheId = function _cacheId (options) {
+    if (this.el && !options.targetOf) {
+        this.el._veeValidateId = this.id;
+    }
+};
+Field.prototype.update = function update (options) {
+    this.targetOf = options.targetOf || null;
+    this.initial = options.initial || this.initial || false;
+    if (!isNullOrUndefined(options.scope) && options.scope !== this.scope && isCallable(this.validator.update)) {
+        this.validator.update(this.id, {
+            scope: options.scope
+        });
+    }
+    this.scope = !isNullOrUndefined(options.scope) ? options.scope : !isNullOrUndefined(this.scope) ? this.scope : null;
+    this.name = (!isNullOrUndefined(options.name) ? String(options.name) : options.name) || this.name || null;
+    this.rules = options.rules !== undefined ? normalizeRules(options.rules) : this.rules;
+    this.model = options.model || this.model;
+    this.listen = options.listen !== undefined ? options.listen : this.listen;
+    this.classes = (options.classes || this.classes || false) && !this.component;
+    this.classNames = isObject(options.classNames) ? merge(this.classNames, options.classNames) : this.classNames;
+    this.getter = isCallable(options.getter) ? options.getter : this.getter;
+    this._alias = options.alias || this._alias;
+    this.events = options.events ? makeEventsArray(options.events) : this.events;
+    this.delay = makeDelayObject(this.events, options.delay || this.delay, this._delay);
+    this.updateDependencies();
+    this.addActionListeners();
+    if (!this.name && !this.targetOf) {
+        warn('A field is missing a "name" or "data-vv-name" attribute');
+    }
+    if (options.rules !== undefined) {
+        this.flags.required = this.isRequired;
+    }
+    if (this.flags.validated && options.rules !== undefined && this.updated) {
+        this.validator.validate(("#" + (this.id)));
+    }
+    this.updated = true;
+    this.addValueListeners();
+    if (!this.el) {
+        return;
+    }
+    this.updateClasses();
+    this.updateAriaAttrs();
+};
+Field.prototype.reset = function reset () {
+        var this$1 = this;
+
+    if (this._cancellationToken) {
+        this._cancellationToken.cancelled = true;
+        delete this._cancellationToken;
+    }
+    var defaults = createFlags();
+    Object.keys(this.flags).filter(function (flag) { return flag !== 'required'; }).forEach(function (flag) {
+        this$1.flags[flag] = defaults[flag];
+    });
+    this.addActionListeners();
+    this.updateClasses();
+    this.updateAriaAttrs();
+    this.updateCustomValidity();
+};
+Field.prototype.setFlags = function setFlags (flags) {
+        var this$1 = this;
+
+    var negated = {
+        pristine: 'dirty',
+        dirty: 'pristine',
+        valid: 'invalid',
+        invalid: 'valid',
+        touched: 'untouched',
+        untouched: 'touched'
+    };
+    Object.keys(flags).forEach(function (flag) {
+        this$1.flags[flag] = flags[flag];
+        if (negated[flag] && flags[negated[flag]] === undefined) {
+            this$1.flags[negated[flag]] = !flags[flag];
+        }
+    });
+    if (flags.untouched !== undefined || flags.touched !== undefined || flags.dirty !== undefined || flags.pristine !== undefined) {
+        this.addActionListeners();
+    }
+    this.updateClasses();
+    this.updateAriaAttrs();
+    this.updateCustomValidity();
+};
+Field.prototype.updateDependencies = function updateDependencies () {
+        var this$1 = this;
+
+    this.dependencies.forEach(function (d) { return d.field.destroy(); });
+    this.dependencies = [];
+    var fields = Object.keys(this.rules).reduce(function (prev, r) {
+        if (Validator.isTargetRule(r)) {
+            var selector = this$1.rules[r][0];
+            if (r === 'confirmed' && !selector) {
+                selector = (this$1.name) + "_confirmation";
+            }
+            prev.push({
+                selector: selector,
+                name: r
+            });
+        }
+        return prev;
+    }, []);
+    if (!fields.length || !this.vm || !this.vm.$el) 
+        { return; }
+    fields.forEach(function (ref) {
+            var selector = ref.selector;
+            var name = ref.name;
+
+        var el = null;
+        if (selector[0] === '$') {
+            var ref$1 = this$1.vm.$refs[selector.slice(1)];
+            el = Array.isArray(ref$1) ? ref$1[0] : ref$1;
+        } else {
+            try {
+                el = this$1.vm.$el.querySelector(selector);
+            } catch (err) {
+                el = null;
+            }
+        }
+        if (!el) {
+            try {
+                el = this$1.vm.$el.querySelector(("input[name=\"" + selector + "\"]"));
+            } catch (err) {
+                el = null;
+            }
+        }
+        if (!el) {
+            return;
+        }
+        var options = {
+            vm: this$1.vm,
+            classes: this$1.classes,
+            classNames: this$1.classNames,
+            delay: this$1.delay,
+            scope: this$1.scope,
+            events: this$1.events.join('|'),
+            initial: this$1.initial,
+            targetOf: this$1.id
+        };
+        if (isCallable(el.$watch)) {
+            options.component = el;
+            options.el = el.$el;
+            options.getter = Generator.resolveGetter(el.$el, {
+                child: el
+            });
+        } else {
+            options.el = el;
+            options.getter = Generator.resolveGetter(el, {});
+        }
+        this$1.dependencies.push({
+            name: name,
+            field: new Field(options)
+        });
+    });
+};
+Field.prototype.unwatch = function unwatch (tag) {
+        if ( tag === void 0 ) tag = null;
+
+    if (!tag) {
+        this.watchers.forEach(function (w) { return w.unwatch(); });
+        this.watchers = [];
+        return;
+    }
+    this.watchers.filter(function (w) { return tag.test(w.tag); }).forEach(function (w) { return w.unwatch(); });
+    this.watchers = this.watchers.filter(function (w) { return !tag.test(w.tag); });
+};
+Field.prototype.updateClasses = function updateClasses () {
+        var this$1 = this;
+
+    if (!this.classes || this.isDisabled) 
+        { return; }
+    var applyClasses = function (el) {
+        toggleClass(el, this$1.classNames.dirty, this$1.flags.dirty);
+        toggleClass(el, this$1.classNames.pristine, this$1.flags.pristine);
+        toggleClass(el, this$1.classNames.touched, this$1.flags.touched);
+        toggleClass(el, this$1.classNames.untouched, this$1.flags.untouched);
+        if (!isNullOrUndefined(this$1.flags.valid) && this$1.flags.validated) {
+            toggleClass(el, this$1.classNames.valid, this$1.flags.valid);
+        }
+        if (!isNullOrUndefined(this$1.flags.invalid) && this$1.flags.validated) {
+            toggleClass(el, this$1.classNames.invalid, this$1.flags.invalid);
+        }
+    };
+    if (!isCheckboxOrRadioInput(this.el)) {
+        applyClasses(this.el);
+        return;
+    }
+    var els = document.querySelectorAll(("input[name=\"" + (this.el.name) + "\"]"));
+    toArray(els).forEach(applyClasses);
+};
+Field.prototype.addActionListeners = function addActionListeners () {
+        var this$1 = this;
+
+    this.unwatch(/class/);
+    if (!this.el) 
+        { return; }
+    var onBlur = function () {
+        this$1.flags.touched = true;
+        this$1.flags.untouched = false;
+        if (this$1.classes) {
+            toggleClass(this$1.el, this$1.classNames.touched, true);
+            toggleClass(this$1.el, this$1.classNames.untouched, false);
+        }
+        this$1.unwatch(/^class_blur$/);
+    };
+    var inputEvent = isTextInput(this.el) ? 'input' : 'change';
+    var onInput = function () {
+        this$1.flags.dirty = true;
+        this$1.flags.pristine = false;
+        if (this$1.classes) {
+            toggleClass(this$1.el, this$1.classNames.pristine, false);
+            toggleClass(this$1.el, this$1.classNames.dirty, true);
+        }
+        this$1.unwatch(/^class_input$/);
+    };
+    if (this.component && isCallable(this.component.$once)) {
+        this.component.$once('input', onInput);
+        this.component.$once('blur', onBlur);
+        this.watchers.push({
+            tag: 'class_input',
+            unwatch: function () {
+                this$1.component.$off('input', onInput);
+            }
+        });
+        this.watchers.push({
+            tag: 'class_blur',
+            unwatch: function () {
+                this$1.component.$off('blur', onBlur);
+            }
+        });
+        return;
+    }
+    if (!this.el) 
+        { return; }
+    addEventListener(this.el, inputEvent, onInput);
+    var blurEvent = isCheckboxOrRadioInput(this.el) ? 'change' : 'blur';
+    addEventListener(this.el, blurEvent, onBlur);
+    this.watchers.push({
+        tag: 'class_input',
+        unwatch: function () {
+            this$1.el.removeEventListener(inputEvent, onInput);
+        }
+    });
+    this.watchers.push({
+        tag: 'class_blur',
+        unwatch: function () {
+            this$1.el.removeEventListener(blurEvent, onBlur);
+        }
+    });
+};
+Field.prototype.checkValueChanged = function checkValueChanged () {
+    if (this.initialValue === null && this.value === '' && isTextInput(this.el)) {
+        return false;
+    }
+    return this.value !== this.initialValue;
+};
+Field.prototype.addValueListeners = function addValueListeners () {
+        var this$1 = this;
+
+    this.unwatch(/^input_.+/);
+    if (!this.listen || !this.el) 
+        { return; }
+    var token = {
+        cancelled: false
+    };
+    var fn = this.targetOf ? function () {
+        this$1.flags.changed = this$1.checkValueChanged();
+        this$1.validator.validate(("#" + (this$1.targetOf)));
+    } : function () {
+            var args = [], len = arguments.length;
+            while ( len-- ) args[ len ] = arguments[ len ];
+
+        if (args.length === 0 || isCallable(Event) && args[0] instanceof Event || args[0] && args[0].srcElement) {
+            args[0] = this$1.value;
+        }
+        this$1.flags.changed = this$1.checkValueChanged();
+        this$1.validator.validate(("#" + (this$1.id)), args[0]);
+    };
+    var inputEvent = this.component || isTextInput(this.el) ? 'input' : 'change';
+    inputEvent = this.model && this.model.lazy ? 'change' : inputEvent;
+    var events = !this.events.length || this.component || isTextInput(this.el) ? this.events : ['change'];
+    if (this.model && this.model.expression && events.indexOf(inputEvent) !== -1) {
+        var debouncedFn = debounce(fn, this.delay[inputEvent], false, token);
+        var unwatch = this.vm.$watch(this.model.expression, function () {
+                var args = [], len = arguments.length;
+                while ( len-- ) args[ len ] = arguments[ len ];
+
+            this$1.flags.pending = true;
+            this$1._cancellationToken = token;
+            debouncedFn.apply(void 0, args);
+        });
+        this.watchers.push({
+            tag: 'input_model',
+            unwatch: unwatch
+        });
+        events = events.filter(function (e) { return e !== inputEvent; });
+    }
+    events.forEach(function (e) {
+        var debouncedFn = debounce(fn, this$1.delay[e], false, token);
+        var validate = function () {
+                var args = [], len = arguments.length;
+                while ( len-- ) args[ len ] = arguments[ len ];
+
+            this$1.flags.pending = true;
+            this$1._cancellationToken = token;
+            debouncedFn.apply(void 0, args);
+        };
+        this$1._addComponentEventListener(e, validate);
+        this$1._addHTMLEventListener(e, validate);
+    });
+};
+Field.prototype._addComponentEventListener = function _addComponentEventListener (evt, validate) {
+        var this$1 = this;
+
+    if (!this.component) 
+        { return; }
+    this.component.$on(evt, validate);
+    this.watchers.push({
+        tag: 'input_vue',
+        unwatch: function () {
+            this$1.component.$off(evt, validate);
+        }
+    });
+};
+Field.prototype._addHTMLEventListener = function _addHTMLEventListener (evt, validate) {
+        var this$1 = this;
+
+    if (!this.el || this.component) 
+        { return; }
+    var addListener = function (el) {
+        addEventListener(el, evt, validate);
+        this$1.watchers.push({
+            tag: 'input_native',
+            unwatch: function () {
+                el.removeEventListener(evt, validate);
+            }
+        });
+    };
+    addListener(this.el);
+    if (!isCheckboxOrRadioInput(this.el)) {
+        return;
+    }
+    var els = document.querySelectorAll(("input[name=\"" + (this.el.name) + "\"]"));
+    toArray(els).forEach(function (el) {
+        if (el._veeValidateId && el !== this$1.el) {
+            return;
+        }
+        addListener(el);
+    });
+};
+Field.prototype.updateAriaAttrs = function updateAriaAttrs () {
+        var this$1 = this;
+
+    if (!this.aria || !this.el || !isCallable(this.el.setAttribute)) 
+        { return; }
+    var applyAriaAttrs = function (el) {
+        el.setAttribute('aria-required', this$1.isRequired ? 'true' : 'false');
+        el.setAttribute('aria-invalid', this$1.flags.invalid ? 'true' : 'false');
+    };
+    if (!isCheckboxOrRadioInput(this.el)) {
+        applyAriaAttrs(this.el);
+        return;
+    }
+    var els = document.querySelectorAll(("input[name=\"" + (this.el.name) + "\"]"));
+    toArray(els).forEach(applyAriaAttrs);
+};
+Field.prototype.updateCustomValidity = function updateCustomValidity () {
+    if (!this.validity || !this.el || !isCallable(this.el.setCustomValidity) || !this.validator.errors) 
+        { return; }
+    this.el.setCustomValidity(this.flags.valid ? '' : this.validator.errors.firstById(this.id) || '');
+};
+Field.prototype.destroy = function destroy () {
+    this.unwatch();
+    this.dependencies.forEach(function (d) { return d.field.destroy(); });
+    this.dependencies = [];
+};
+
+Object.defineProperties( Field.prototype, prototypeAccessors$2 );
+
+var FieldBag = function FieldBag() {
+    this.items = [];
+};
+
+var prototypeAccessors$3 = { length: { configurable: true } };
+FieldBag.prototype[typeof Symbol === 'function' ? Symbol.iterator : '@@iterator'] = function () {
+        var this$1 = this;
+
+    var index = 0;
+    return {
+        next: function () { return ({
+            value: this$1.items[index++],
+            done: index > this$1.items.length
+        }); }
+    };
+};
+prototypeAccessors$3.length.get = function () {
+    return this.items.length;
+};
+FieldBag.prototype.find = function find$1 (matcher) {
+    return find(this.items, function (item) { return item.matches(matcher); });
+};
+FieldBag.prototype.filter = function filter (matcher) {
+    if (Array.isArray(matcher)) {
+        return this.items.filter(function (item) { return matcher.some(function (m) { return item.matches(m); }); });
+    }
+    return this.items.filter(function (item) { return item.matches(matcher); });
+};
+FieldBag.prototype.map = function map (mapper) {
+    return this.items.map(mapper);
+};
+FieldBag.prototype.remove = function remove (matcher) {
+    var item = null;
+    if (matcher instanceof Field) {
+        item = matcher;
+    } else {
+        item = this.find(matcher);
+    }
+    if (!item) 
+        { return null; }
+    var index = this.items.indexOf(item);
+    this.items.splice(index, 1);
+    return item;
+};
+FieldBag.prototype.push = function push (item) {
+    if (!(item instanceof Field)) {
+        throw createError('FieldBag only accepts instances of Field that has an id defined.');
+    }
+    if (!item.id) {
+        throw createError('Field id must be defined.');
+    }
+    if (this.find({
+        id: item.id
+    })) {
+        throw createError(("Field with id " + (item.id) + " is already added."));
+    }
+    this.items.push(item);
+};
+
+Object.defineProperties( FieldBag.prototype, prototypeAccessors$3 );
+
+var RULES = {};
+var STRICT_MODE = true;
+var TARGET_RULES = ['confirmed','after','before'];
+var Validator = function Validator(validations, options) {
+    var this$1 = this;
+    if ( options === void 0 ) options = {
+    fastExit: true
+};
+
+    this.strict = STRICT_MODE;
+    this.errors = new ErrorBag();
+    this.fields = new FieldBag();
+    this.flags = {};
+    this._createFields(validations);
+    this.paused = false;
+    this.fastExit = options.fastExit || false;
+    this.ownerId = options.vm && options.vm._uid;
+    this._localeListener = (function () {
+        this$1.errors.regenerate();
+    });
+    if (this._vm) {
+        this._vm.$on('localeChanged', this._localeListener);
+    }
+};
+
+var prototypeAccessors$4 = { dictionary: { configurable: true },_vm: { configurable: true },locale: { configurable: true },rules: { configurable: true } };
+var staticAccessors$1 = { dictionary: { configurable: true },locale: { configurable: true },rules: { configurable: true } };
+prototypeAccessors$4.dictionary.get = function () {
+    return Config.dependency('dictionary');
+};
+prototypeAccessors$4._vm.get = function () {
+    return Config.dependency('vm');
+};
+staticAccessors$1.dictionary.get = function () {
+    return Config.dependency('dictionary');
+};
+prototypeAccessors$4.locale.get = function () {
+    return this.dictionary.locale;
+};
+prototypeAccessors$4.locale.set = function (value) {
+    Validator.locale = value;
+};
+staticAccessors$1.locale.get = function () {
+    return Validator.dictionary.locale;
+};
+staticAccessors$1.locale.set = function (value) {
+    var hasChanged = value !== Validator.dictionary.locale;
+    Validator.dictionary.locale = value;
+    if (hasChanged && Config.dependency('vm')) {
+        Config.dependency('vm').$emit('localeChanged');
+    }
+};
+prototypeAccessors$4.rules.get = function () {
+    return RULES;
+};
+staticAccessors$1.rules.get = function () {
+    return RULES;
+};
+Validator.create = function create (validations, options) {
+    return new Validator(validations, options);
+};
+Validator.extend = function extend (name, validator, options) {
+        if ( options === void 0 ) options = {};
+
+    Validator._guardExtend(name, validator);
+    Validator._merge(name, validator);
+    if (options && options.hasTarget) {
+        TARGET_RULES.push(name);
+    }
+};
+Validator.remove = function remove (name) {
+    delete RULES[name];
+    var idx = TARGET_RULES.indexOf(name);
+    if (idx === -1) 
+        { return; }
+    TARGET_RULES.splice(idx, 1);
+};
+Validator.isTargetRule = function isTargetRule (name) {
+    return TARGET_RULES.indexOf(name) !== -1;
+};
+Validator.setStrictMode = function setStrictMode (strictMode) {
+        if ( strictMode === void 0 ) strictMode = true;
+
+    STRICT_MODE = strictMode;
+};
+Validator.prototype.localize = function localize (lang, dictionary) {
+    Validator.localize(lang, dictionary);
+};
+Validator.localize = function localize (lang, dictionary) {
+        var obj;
+
+    if (isObject(lang)) {
+        Validator.dictionary.merge(lang);
+        return;
+    }
+    if (dictionary) {
+        var locale = lang || dictionary.name;
+        dictionary = assign({}, dictionary);
+        Validator.dictionary.merge(( obj = {}, obj[locale] = dictionary, obj ));
+    }
+    if (lang) {
+        Validator.locale = lang;
+    }
+};
+Validator.prototype.attach = function attach (field) {
+    if (arguments.length > 1) {
+        warn('This signature of the attach method has been deprecated, please consult the docs.');
+        field = assign({}, {
+            name: arguments[0],
+            rules: arguments[1]
+        }, arguments[2] || {
+            vm: {
+                $validator: this
+            }
+        });
+    }
+    var value = field.initialValue;
+    if (!(field instanceof Field)) {
+        field = new Field(field);
+    }
+    this.fields.push(field);
+    if (field.initial) {
+        this.validate(("#" + (field.id)), value || field.value);
+    } else {
+        this._validate(field, value || field.value, true).then(function (result) {
+            field.flags.valid = result.valid;
+            field.flags.invalid = !result.valid;
+        });
+    }
+    this._addFlag(field, field.scope);
+    return field;
+};
+Validator.prototype.flag = function flag (name, flags) {
+    var field = this._resolveField(name);
+    if (!field || !flags) {
+        return;
+    }
+    field.setFlags(flags);
+};
+Validator.prototype.detach = function detach (name, scope) {
+    var field = name instanceof Field ? name : this._resolveField(name, scope);
+    if (!field) 
+        { return; }
+    field.destroy();
+    this.errors.remove(field.name, field.scope, field.id);
+    this.fields.remove(field);
+    var flags = this.flags;
+    if (!isNullOrUndefined(field.scope) && flags[("$" + (field.scope))]) {
+        delete flags[("$" + (field.scope))][field.name];
+    } else if (isNullOrUndefined(field.scope)) {
+        delete flags[field.name];
+    }
+    this.flags = assign({}, flags);
+};
+Validator.prototype.extend = function extend (name, validator, options) {
+        if ( options === void 0 ) options = {};
+
+    Validator.extend(name, validator, options);
+};
+Validator.prototype.reset = function reset (matcher) {
+    return new Promise((function ($return, $error) {
+        return this._vm.$nextTick().then((function ($await_1) {
+            try {
+                return this._vm.$nextTick().then((function ($await_2) {
+                        var this$1 = this;
+
+                    try {
+                        this.fields.filter(matcher).forEach(function (field) {
+                            field.reset();
+                            this$1.errors.remove(field.name, field.scope, field.id);
+                        });
+                        return $return();
+                    } catch ($boundEx) {
+                        return $error($boundEx);
+                    }
+                }).bind(this), $error);
+            } catch ($boundEx) {
+                return $error($boundEx);
+            }
+        }).bind(this), $error);
+    }).bind(this));
+};
+Validator.prototype.update = function update (id, ref) {
+        var scope = ref.scope;
+
+    var field = this._resolveField(("#" + id));
+    if (!field) 
+        { return; }
+    this.errors.update(id, {
+        scope: scope
+    });
+    if (!isNullOrUndefined(field.scope) && this.flags[("$" + (field.scope))]) {
+        delete this.flags[("$" + (field.scope))][field.name];
+    } else if (isNullOrUndefined(field.scope)) {
+        delete this.flags[field.name];
+    }
+    this._addFlag(field, scope);
+};
+Validator.prototype.remove = function remove (name) {
+    Validator.remove(name);
+};
+Validator.prototype.validate = function validate (name, value, scope, silent) {
+        if ( scope === void 0 ) scope = null;
+        if ( silent === void 0 ) silent = false;
+
+    var $args = arguments;
+    return new Promise((function ($return, $error) {
+        var matched, field, result;
+        if (this.paused) 
+            { return $return(Promise.resolve(true)); }
+        if ($args.length === 0) {
+            return $return(this.validateScopes());
+        }
+        if ($args.length === 1 && $args[0] === '*') {
+            return $return(this.validateAll());
+        }
+        if ($args.length === 1 && typeof $args[0] === 'string' && /^(.+)\.\*$/.test($args[0])) {
+            matched = $args[0].match(/^(.+)\.\*$/)[1];
+            return $return(this.validateAll(matched));
+        }
+        field = this._resolveField(name, scope);
+        if (!field) {
+            return $return(this._handleFieldNotFound(name, scope));
+        }
+        if (!silent) 
+            { field.flags.pending = true; }
+        if ($args.length === 1) {
+            value = field.value;
+        }
+        return this._validate(field, value).then((function ($await_3) {
+            try {
+                result = $await_3;
+                if (!silent) {
+                    this._handleValidationResults([result]);
+                }
+                return $return(result.valid);
+            } catch ($boundEx) {
+                return $error($boundEx);
+            }
+        }).bind(this), $error);
+    }).bind(this));
+};
+Validator.prototype.pause = function pause () {
+    this.paused = true;
+    return this;
+};
+Validator.prototype.resume = function resume () {
+    this.paused = false;
+    return this;
+};
+Validator.prototype.validateAll = function validateAll (values, scope, silent) {
+        if ( scope === void 0 ) scope = null;
+        if ( silent === void 0 ) silent = false;
+
+    return new Promise((function ($return, $error) {
+            var this$1 = this;
+
+        var results;
+        var matcher, providedValues;
+        if (this.paused) 
+            { return $return(true); }
+        matcher = null;
+        providedValues = false;
+        if (typeof values === 'string') {
+            matcher = {
+                scope: values
+            };
+        } else if (isObject(values)) {
+            matcher = Object.keys(values).map(function (key) { return ({
+                name: key,
+                scope: scope
+            }); });
+            providedValues = true;
+        } else if (Array.isArray(values)) {
+            matcher = values.map(function (key) { return ({
+                name: key,
+                scope: scope
+            }); });
+        } else {
+            matcher = {
+                scope: scope
+            };
+        }
+        return Promise.all(this.fields.filter(matcher).map(function (field) { return this$1._validate(field, providedValues ? values[field.name] : field.value); })).then((function ($await_4) {
+            try {
+                results = $await_4;
+                if (!silent) {
+                    this._handleValidationResults(results);
+                }
+                return $return(results.every(function (t) { return t.valid; }));
+            } catch ($boundEx) {
+                return $error($boundEx);
+            }
+        }).bind(this), $error);
+    }).bind(this));
+};
+Validator.prototype.validateScopes = function validateScopes (silent) {
+        if ( silent === void 0 ) silent = false;
+
+    return new Promise((function ($return, $error) {
+            var this$1 = this;
+
+        var results;
+        if (this.paused) 
+            { return $return(true); }
+        return Promise.all(this.fields.map(function (field) { return this$1._validate(field, field.value); })).then((function ($await_5) {
+            try {
+                results = $await_5;
+                if (!silent) {
+                    this._handleValidationResults(results);
+                }
+                return $return(results.every(function (t) { return t.valid; }));
+            } catch ($boundEx) {
+                return $error($boundEx);
+            }
+        }).bind(this), $error);
+    }).bind(this));
+};
+Validator.prototype.destroy = function destroy () {
+    this._vm.$off('localeChanged', this._localeListener);
+};
+Validator.prototype._createFields = function _createFields (validations) {
+        var this$1 = this;
+
+    if (!validations) 
+        { return; }
+    Object.keys(validations).forEach(function (field) {
+        var options = assign({}, {
+            name: field,
+            rules: validations[field]
+        });
+        this$1.attach(options);
+    });
+};
+Validator.prototype._getDateFormat = function _getDateFormat (validations) {
+    var format = null;
+    if (validations.date_format && Array.isArray(validations.date_format)) {
+        format = validations.date_format[0];
+    }
+    return format || this.dictionary.getDateFormat(this.locale);
+};
+Validator.prototype._isADateRule = function _isADateRule (rule) {
+    return !(!(~['after','before','date_between','date_format'].indexOf(rule)));
+};
+Validator.prototype._formatErrorMessage = function _formatErrorMessage (field, rule, data, targetName) {
+        if ( data === void 0 ) data = {};
+        if ( targetName === void 0 ) targetName = null;
+
+    var name = this._getFieldDisplayName(field);
+    var params = this._getLocalizedParams(rule, targetName);
+    return this.dictionary.getFieldMessage(this.locale, field.name, rule.name, [name,
+        params,data]);
+};
+Validator.prototype._getLocalizedParams = function _getLocalizedParams (rule, targetName) {
+        if ( targetName === void 0 ) targetName = null;
+
+    if (~TARGET_RULES.indexOf(rule.name) && rule.params && rule.params[0]) {
+        var localizedName = targetName || this.dictionary.getAttribute(this.locale, rule.params[0], rule.params[0]);
+        return [localizedName].concat(rule.params.slice(1));
+    }
+    return rule.params;
+};
+Validator.prototype._getFieldDisplayName = function _getFieldDisplayName (field) {
+    return field.alias || this.dictionary.getAttribute(this.locale, field.name, field.name);
+};
+Validator.prototype._addFlag = function _addFlag (field, scope) {
+        var obj, obj$1, obj$2;
+
+        if ( scope === void 0 ) scope = null;
+    if (isNullOrUndefined(scope)) {
+        this.flags = assign({}, this.flags, ( obj = {}, obj[("" + (field.name))] = field.flags, obj ));
+        return;
+    }
+    var scopeObj = assign({}, this.flags[("$" + scope)] || {}, ( obj$1 = {}, obj$1[("" + (field.name))] = field.flags, obj$1 ));
+    this.flags = assign({}, this.flags, ( obj$2 = {}, obj$2[("$" + scope)] = scopeObj, obj$2 ));
+};
+Validator.prototype._test = function _test (field, value, rule) {
+        var this$1 = this;
+
+    var validator = RULES[rule.name];
+    var params = Array.isArray(rule.params) ? toArray(rule.params) : [];
+    var targetName = null;
+    if (!validator || typeof validator !== 'function') {
+        throw createError(("No such validator '" + (rule.name) + "' exists."));
+    }
+    if (TARGET_RULES.indexOf(rule.name) !== -1) {
+        var target = find(field.dependencies, function (d) { return d.name === rule.name; });
+        if (target) {
+            targetName = target.field.alias;
+            params = [target.field.value].concat(params.slice(1));
+        }
+    } else if (rule.name === 'required' && field.rejectsFalse) {
+        params = params.length ? params : [true];
+    }
+    if (this._isADateRule(rule.name)) {
+        var dateFormat = this._getDateFormat(field.rules);
+        if (rule.name !== 'date_format') {
+            params.push(dateFormat);
+        }
+    }
+    var result = validator(value, params);
+    if (isCallable(result.then)) {
+        return result.then(function (values) {
+            var allValid = true;
+            var data = {};
+            if (Array.isArray(values)) {
+                allValid = values.every(function (t) { return isObject(t) ? t.valid : t; });
+            } else {
+                allValid = isObject(values) ? values.valid : values;
+                data = values.data;
+            }
+            return {
+                valid: allValid,
+                errors: allValid ? [] : [this$1._createFieldError(field, rule, data, targetName)]
+            };
+        });
+    }
+    if (!isObject(result)) {
+        result = {
+            valid: result,
+            data: {}
+        };
+    }
+    return {
+        valid: result.valid,
+        errors: result.valid ? [] : [this._createFieldError(field, rule, result.data, targetName)]
+    };
+};
+Validator._merge = function _merge (name, validator) {
+    if (isCallable(validator)) {
+        RULES[name] = validator;
+        return;
+    }
+    RULES[name] = validator.validate;
+    if (validator.getMessage) {
+        Validator.dictionary.setMessage(this.locale, name, validator.getMessage);
+    }
+};
+Validator._guardExtend = function _guardExtend (name, validator) {
+    if (isCallable(validator)) {
+        return;
+    }
+    if (!isCallable(validator.validate)) {
+        throw createError(("Extension Error: The validator '" + name + "' must be a function or have a 'validate' method."));
+    }
+};
+Validator.prototype._createFieldError = function _createFieldError (field, rule, data, targetName) {
+        var this$1 = this;
+
+    return {
+        id: field.id,
+        field: field.name,
+        msg: this._formatErrorMessage(field, rule, data, targetName),
+        rule: rule.name,
+        scope: field.scope,
+        regenerate: function () { return this$1._formatErrorMessage(field, rule, data, targetName); }
+    };
+};
+Validator.prototype._resolveField = function _resolveField (name, scope) {
+    if (!isNullOrUndefined(scope)) {
+        return this.fields.find({
+            name: name,
+            scope: scope
+        });
+    }
+    if (name[0] === '#') {
+        return this.fields.find({
+            id: name.slice(1)
+        });
+    }
+    if (name.indexOf('.') > -1) {
+        var ref = name.split('.');
+            var fieldScope = ref[0];
+            var fieldName = ref.slice(1);
+        var field = this.fields.find({
+            name: fieldName.join('.'),
+            scope: fieldScope
+        });
+        if (field) {
+            return field;
+        }
+    }
+    return this.fields.find({
+        name: name,
+        scope: null
+    });
+};
+Validator.prototype._handleFieldNotFound = function _handleFieldNotFound (name, scope) {
+    if (!this.strict) 
+        { return true; }
+    var fullName = isNullOrUndefined(scope) ? name : ("" + (!isNullOrUndefined(scope) ? scope + '.' : '') + name);
+    throw createError(("Validating a non-existent field: \"" + fullName + "\". Use \"attach()\" first."));
+};
+Validator.prototype._handleValidationResults = function _handleValidationResults (results) {
+    var matchers = results.map(function (result) { return ({
+        id: result.id
+    }); });
+    this.errors.removeById(matchers.map(function (m) { return m.id; }));
+    var allErrors = results.reduce(function (prev, curr) {
+        prev.push.apply(prev, curr.errors);
+        return prev;
+    }, []);
+    this.errors.add(allErrors);
+    this.fields.filter(matchers).forEach(function (field) {
+        var result = find(results, function (r) { return r.id === field.id; });
+        field.setFlags({
+            pending: false,
+            valid: result.valid,
+            validated: true
+        });
+    });
+};
+Validator.prototype._validate = function _validate (field, value) {
+    return new Promise((function ($return, $error) {
+            var this$1 = this;
+
+        var promises, errors;
+        var isExitEarly;
+        if (field.isDisabled || !field.isRequired && (isNullOrUndefined(value) || value === '')) {
+            return $return({
+                valid: true,
+                id: field.id,
+                errors: []
+            });
+        }
+        promises = [];
+        errors = [];
+        isExitEarly = false;
+        Object.keys(field.rules).some(function (rule) {
+            var result = this$1._test(field, value, {
+                name: rule,
+                params: field.rules[rule]
+            });
+            if (isCallable(result.then)) {
+                promises.push(result);
+            } else if (this$1.fastExit && !result.valid) {
+                errors.push.apply(errors, result.errors);
+                isExitEarly = true;
+            } else {
+                promises.push(new Promise(function (resolve) { return resolve(result); }));
+            }
+            return isExitEarly;
+        });
+        if (isExitEarly) {
+            return $return({
+                valid: false,
+                errors: errors,
+                id: field.id
+            });
+        }
+        return Promise.all(promises).then((function ($await_6) {
+            try {
+                return $return($await_6.reduce(function (prev, v) {
+                        var ref;
+
+                    if (!v.valid) {
+                        (ref = prev.errors).push.apply(ref, v.errors);
+                    }
+                    prev.valid = prev.valid && v.valid;
+                    return prev;
+                }, {
+                    valid: true,
+                    errors: errors,
+                    id: field.id
+                }));
+            } catch ($boundEx) {
+                return $error($boundEx);
+            }
+        }).bind(this), $error);
+    }).bind(this));
+};
+
+Object.defineProperties( Validator.prototype, prototypeAccessors$4 );
+Object.defineProperties( Validator, staticAccessors$1 );
+
+var requestsValidator = function (injections) {
+    if (isObject(injections) && injections.$validator) {
+        return true;
+    }
+    return false;
+};
+var createValidator = function (vm, options) { return new Validator(null, {
+    vm: vm,
+    fastExit: options.fastExit
+}); };
+var mixin = {
+    provide: function provide() {
+        if (this.$validator && !isBuiltInComponent(this.$vnode)) {
+            return {
+                $validator: this.$validator
+            };
+        }
+        return {};
+    },
+    beforeCreate: function beforeCreate() {
+        if (isBuiltInComponent(this.$vnode)) {
+            return;
+        }
+        if (!this.$parent) {
+            Config.merge(this.$options.$_veeValidate || {});
+        }
+        var options = Config.resolve(this);
+        var Vue = this.$options._base;
+        if (this.$options.$validates) {
+            warn('The ctor $validates option has been deprecated please set the $_veeValidate.validator option to "new" instead');
+            this.$validator = createValidator(this, options);
+        }
+        if (!this.$parent || this.$options.$_veeValidate && /new/.test(this.$options.$_veeValidate.validator)) {
+            this.$validator = createValidator(this, options);
+        }
+        var requested = requestsValidator(this.$options.inject);
+        if (!this.$validator && options.inject && !requested) {
+            this.$validator = createValidator(this, options);
+        }
+        if (!requested && !this.$validator) {
+            return;
+        }
+        if (!requested && this.$validator) {
+            Vue.util.defineReactive(this.$validator, 'errors', this.$validator.errors);
+            Vue.util.defineReactive(this.$validator, 'flags', this.$validator.flags);
+        }
+        if (!this.$options.computed) {
+            this.$options.computed = {};
+        }
+        this.$options.computed[options.errorBagName || 'errors'] = function errorBagGetter() {
+            return this.$validator.errors;
+        };
+        this.$options.computed[options.fieldsBagName || 'fields'] = function fieldBagGetter() {
+            return this.$validator.flags;
+        };
+    },
+    beforeDestroy: function beforeDestroy() {
+        if (isBuiltInComponent(this.$vnode)) 
+            { return; }
+        if (this.$validator && this.$validator.ownerId === this._uid) {
+            this.$validator.pause();
+            this.$validator.destroy();
+        }
+    }
+}
+
+function findField(el, context) {
+    if (!context || !context.$validator) {
+        return null;
+    }
+    return context.$validator.fields.find({
+        id: el._veeValidateId
+    });
+}
+var directive = {
+    bind: function bind(el, binding, vnode) {
+        var validator = vnode.context.$validator;
+        if (!validator) {
+            warn("No validator instance is present on vm, did you forget to inject '$validator'?");
+            return;
+        }
+        var fieldOptions = Generator.generate(el, binding, vnode);
+        validator.attach(fieldOptions);
+    },
+    inserted: function inserted(el, binding, vnode) {
+        var field = findField(el, vnode.context);
+        var scope = Generator.resolveScope(el, binding, vnode);
+        if (!field || scope === field.scope) 
+            { return; }
+        field.update({
+            scope: scope
+        });
+        field.updated = false;
+    },
+    update: function update(el, binding, vnode) {
+        var field = findField(el, vnode.context);
+        if (!field || field.updated && isEqual(binding.value, binding.oldValue)) 
+            { return; }
+        var scope = Generator.resolveScope(el, binding, vnode);
+        var rules = Generator.resolveRules(el, binding);
+        field.update({
+            scope: scope,
+            rules: rules
+        });
+    },
+    unbind: function unbind(el, binding, ref) {
+        var context = ref.context;
+
+        var field = findField(el, context);
+        if (!field) 
+            { return; }
+        context.$validator.detach(field);
+    }
+}
+
+var Vue;
+function install(_Vue, options) {
+    if ( options === void 0 ) options = {};
+
+    if (Vue && _Vue === Vue) {
+        if (true) {
+            warn('already installed, Vue.use(VeeValidate) should only be called once.');
+        }
+        return;
+    }
+    detectPassiveSupport();
+    Vue = _Vue;
+    var localVue = new Vue();
+    Config.register('vm', localVue);
+    Config.merge(options);
+    var ref = Config.current;
+    var dictionary = ref.dictionary;
+    var i18n = ref.i18n;
+    if (dictionary) {
+        Validator.localize(dictionary);
+    }
+    if (i18n && i18n._vm && isCallable(i18n._vm.$watch)) {
+        i18n._vm.$watch('locale', function () {
+            localVue.$emit('localeChanged');
+        });
+    }
+    if (!i18n && options.locale) {
+        Validator.localize(options.locale);
+    }
+    Validator.setStrictMode(Config.current.strict);
+    Vue.mixin(mixin);
+    Vue.directive('validate', directive);
+}
+
+var formatFileSize = function (size) {
+    var units = ['Byte','KB','MB','GB','TB','PB','EB','ZB','YB'];
+    var threshold = 1024;
+    size = Number(size) * threshold;
+    var i = size === 0 ? 0 : Math.floor(Math.log(size) / Math.log(threshold));
+    return (((size / Math.pow(threshold, i)).toFixed(2) * 1) + " " + (units[i]));
+};
+var isDefinedGlobally = function () { return typeof VeeValidate !== 'undefined'; };
+
+var obj;
+var messages = {
+    _default: function (field) { return ("The " + field + " value is not valid."); },
+    after: function (field, ref) {
+        var target = ref[0];
+        var inclusion = ref[1];
+
+        return ("The " + field + " must be after " + (inclusion ? 'or equal to ' : '') + target + ".");
+},
+    alpha_dash: function (field) { return ("The " + field + " field may contain alpha-numeric characters as well as dashes and underscores."); },
+    alpha_num: function (field) { return ("The " + field + " field may only contain alpha-numeric characters."); },
+    alpha_spaces: function (field) { return ("The " + field + " field may only contain alphabetic characters as well as spaces."); },
+    alpha: function (field) { return ("The " + field + " field may only contain alphabetic characters."); },
+    before: function (field, ref) {
+        var target = ref[0];
+        var inclusion = ref[1];
+
+        return ("The " + field + " must be before " + (inclusion ? 'or equal to ' : '') + target + ".");
+},
+    between: function (field, ref) {
+        var min = ref[0];
+        var max = ref[1];
+
+        return ("The " + field + " field must be between " + min + " and " + max + ".");
+},
+    confirmed: function (field) { return ("The " + field + " confirmation does not match."); },
+    credit_card: function (field) { return ("The " + field + " field is invalid."); },
+    date_between: function (field, ref) {
+        var min = ref[0];
+        var max = ref[1];
+
+        return ("The " + field + " must be between " + min + " and " + max + ".");
+},
+    date_format: function (field, ref) {
+        var format = ref[0];
+
+        return ("The " + field + " must be in the format " + format + ".");
+},
+    decimal: function (field, ref) {
+        if ( ref === void 0 ) ref = [];
+        var decimals = ref[0]; if ( decimals === void 0 ) decimals = '*';
+
+        return ("The " + field + " field must be numeric and may contain " + (!decimals || decimals === '*' ? '' : decimals) + " decimal points.");
+},
+    digits: function (field, ref) {
+        var length = ref[0];
+
+        return ("The " + field + " field must be numeric and exactly contain " + length + " digits.");
+},
+    dimensions: function (field, ref) {
+        var width = ref[0];
+        var height = ref[1];
+
+        return ("The " + field + " field must be " + width + " pixels by " + height + " pixels.");
+},
+    email: function (field) { return ("The " + field + " field must be a valid email."); },
+    ext: function (field) { return ("The " + field + " field must be a valid file."); },
+    image: function (field) { return ("The " + field + " field must be an image."); },
+    in: function (field) { return ("The " + field + " field must be a valid value."); },
+    integer: function (field) { return ("The " + field + " field must be an integer."); },
+    ip: function (field) { return ("The " + field + " field must be a valid ip address."); },
+    length: function (field, ref) {
+        var length = ref[0];
+        var max = ref[1];
+
+        if (max) {
+            return ("The " + field + " length must be between " + length + " and " + max + ".");
+        }
+        return ("The " + field + " length must be " + length + ".");
+    },
+    max: function (field, ref) {
+        var length = ref[0];
+
+        return ("The " + field + " field may not be greater than " + length + " characters.");
+},
+    max_value: function (field, ref) {
+        var max = ref[0];
+
+        return ("The " + field + " field must be " + max + " or less.");
+},
+    mimes: function (field) { return ("The " + field + " field must have a valid file type."); },
+    min: function (field, ref) {
+        var length = ref[0];
+
+        return ("The " + field + " field must be at least " + length + " characters.");
+},
+    min_value: function (field, ref) {
+        var min = ref[0];
+
+        return ("The " + field + " field must be " + min + " or more.");
+},
+    not_in: function (field) { return ("The " + field + " field must be a valid value."); },
+    numeric: function (field) { return ("The " + field + " field may only contain numeric characters."); },
+    regex: function (field) { return ("The " + field + " field format is invalid."); },
+    required: function (field) { return ("The " + field + " field is required."); },
+    size: function (field, ref) {
+        var size = ref[0];
+
+        return ("The " + field + " size must be less than " + (formatFileSize(size)) + ".");
+},
+    url: function (field) { return ("The " + field + " field is not a valid URL."); }
+};
+var locale = {
+    name: 'en',
+    messages: messages,
+    attributes: {}
+};
+if (isDefinedGlobally()) {
+    VeeValidate.Validator.localize(( obj = {}, obj[locale.name] = locale, obj ));
+}
+
+function use(plugin, options) {
+    if ( options === void 0 ) options = {};
+
+    if (!isCallable(plugin)) {
+        return warn('The plugin must be a callable function');
+    }
+    plugin({
+        Validator: Validator,
+        ErrorBag: ErrorBag,
+        Rules: Validator.rules
+    }, options);
+}
+
+var MILLISECONDS_IN_HOUR = 3600000;
+var MILLISECONDS_IN_MINUTE = 60000;
+var DEFAULT_ADDITIONAL_DIGITS = 2;
+var patterns = {
+    dateTimeDelimeter: /[T ]/,
+    plainTime: /:/,
+    YY: /^(\d{2})$/,
+    YYY: [/^([+-]\d{2})$/,/^([+-]\d{3})$/,/^([+-]\d{4})$/],
+    YYYY: /^(\d{4})/,
+    YYYYY: [/^([+-]\d{4})/,/^([+-]\d{5})/,/^([+-]\d{6})/],
+    MM: /^-(\d{2})$/,
+    DDD: /^-?(\d{3})$/,
+    MMDD: /^-?(\d{2})-?(\d{2})$/,
+    Www: /^-?W(\d{2})$/,
+    WwwD: /^-?W(\d{2})-?(\d{1})$/,
+    HH: /^(\d{2}([.,]\d*)?)$/,
+    HHMM: /^(\d{2}):?(\d{2}([.,]\d*)?)$/,
+    HHMMSS: /^(\d{2}):?(\d{2}):?(\d{2}([.,]\d*)?)$/,
+    timezone: /([Z+-].*)$/,
+    timezoneZ: /^(Z)$/,
+    timezoneHH: /^([+-])(\d{2})$/,
+    timezoneHHMM: /^([+-])(\d{2}):?(\d{2})$/
+};
+function toDate(argument, dirtyOptions) {
+    if (arguments.length < 1) {
+        throw new TypeError('1 argument required, but only ' + arguments.length + ' present');
+    }
+    if (argument === null) {
+        return new Date(NaN);
+    }
+    var options = dirtyOptions || {};
+    var additionalDigits = options.additionalDigits === undefined ? DEFAULT_ADDITIONAL_DIGITS : Number(options.additionalDigits);
+    if (additionalDigits !== 2 && additionalDigits !== 1 && additionalDigits !== 0) {
+        throw new RangeError('additionalDigits must be 0, 1 or 2');
+    }
+    if (argument instanceof Date) {
+        return new Date(argument.getTime());
+    } else if (typeof argument !== 'string') {
+        return new Date(argument);
+    }
+    var dateStrings = splitDateString(argument);
+    var parseYearResult = parseYear(dateStrings.date, additionalDigits);
+    var year = parseYearResult.year;
+    var restDateString = parseYearResult.restDateString;
+    var date = parseDate(restDateString, year);
+    if (date) {
+        var timestamp = date.getTime();
+        var time = 0;
+        var offset;
+        if (dateStrings.time) {
+            time = parseTime(dateStrings.time);
+        }
+        if (dateStrings.timezone) {
+            offset = parseTimezone(dateStrings.timezone);
+        } else {
+            offset = new Date(timestamp + time).getTimezoneOffset();
+            offset = new Date(timestamp + time + offset * MILLISECONDS_IN_MINUTE).getTimezoneOffset();
+        }
+        return new Date(timestamp + time + offset * MILLISECONDS_IN_MINUTE);
+    } else {
+        return new Date(argument);
+    }
+}
+
+function splitDateString(dateString) {
+    var dateStrings = {};
+    var array = dateString.split(patterns.dateTimeDelimeter);
+    var timeString;
+    if (patterns.plainTime.test(array[0])) {
+        dateStrings.date = null;
+        timeString = array[0];
+    } else {
+        dateStrings.date = array[0];
+        timeString = array[1];
+    }
+    if (timeString) {
+        var token = patterns.timezone.exec(timeString);
+        if (token) {
+            dateStrings.time = timeString.replace(token[1], '');
+            dateStrings.timezone = token[1];
+        } else {
+            dateStrings.time = timeString;
+        }
+    }
+    return dateStrings;
+}
+
+function parseYear(dateString, additionalDigits) {
+    var patternYYY = patterns.YYY[additionalDigits];
+    var patternYYYYY = patterns.YYYYY[additionalDigits];
+    var token;
+    token = patterns.YYYY.exec(dateString) || patternYYYYY.exec(dateString);
+    if (token) {
+        var yearString = token[1];
+        return {
+            year: parseInt(yearString, 10),
+            restDateString: dateString.slice(yearString.length)
+        };
+    }
+    token = patterns.YY.exec(dateString) || patternYYY.exec(dateString);
+    if (token) {
+        var centuryString = token[1];
+        return {
+            year: parseInt(centuryString, 10) * 100,
+            restDateString: dateString.slice(centuryString.length)
+        };
+    }
+    return {
+        year: null
+    };
+}
+
+function parseDate(dateString, year) {
+    if (year === null) {
+        return null;
+    }
+    var token;
+    var date;
+    var month;
+    var week;
+    if (dateString.length === 0) {
+        date = new Date(0);
+        date.setUTCFullYear(year);
+        return date;
+    }
+    token = patterns.MM.exec(dateString);
+    if (token) {
+        date = new Date(0);
+        month = parseInt(token[1], 10) - 1;
+        date.setUTCFullYear(year, month);
+        return date;
+    }
+    token = patterns.DDD.exec(dateString);
+    if (token) {
+        date = new Date(0);
+        var dayOfYear = parseInt(token[1], 10);
+        date.setUTCFullYear(year, 0, dayOfYear);
+        return date;
+    }
+    token = patterns.MMDD.exec(dateString);
+    if (token) {
+        date = new Date(0);
+        month = parseInt(token[1], 10) - 1;
+        var day = parseInt(token[2], 10);
+        date.setUTCFullYear(year, month, day);
+        return date;
+    }
+    token = patterns.Www.exec(dateString);
+    if (token) {
+        week = parseInt(token[1], 10) - 1;
+        return dayOfISOYear(year, week);
+    }
+    token = patterns.WwwD.exec(dateString);
+    if (token) {
+        week = parseInt(token[1], 10) - 1;
+        var dayOfWeek = parseInt(token[2], 10) - 1;
+        return dayOfISOYear(year, week, dayOfWeek);
+    }
+    return null;
+}
+
+function parseTime(timeString) {
+    var token;
+    var hours;
+    var minutes;
+    token = patterns.HH.exec(timeString);
+    if (token) {
+        hours = parseFloat(token[1].replace(',', '.'));
+        return hours % 24 * MILLISECONDS_IN_HOUR;
+    }
+    token = patterns.HHMM.exec(timeString);
+    if (token) {
+        hours = parseInt(token[1], 10);
+        minutes = parseFloat(token[2].replace(',', '.'));
+        return hours % 24 * MILLISECONDS_IN_HOUR + minutes * MILLISECONDS_IN_MINUTE;
+    }
+    token = patterns.HHMMSS.exec(timeString);
+    if (token) {
+        hours = parseInt(token[1], 10);
+        minutes = parseInt(token[2], 10);
+        var seconds = parseFloat(token[3].replace(',', '.'));
+        return hours % 24 * MILLISECONDS_IN_HOUR + minutes * MILLISECONDS_IN_MINUTE + seconds * 1000;
+    }
+    return null;
+}
+
+function parseTimezone(timezoneString) {
+    var token;
+    var absoluteOffset;
+    token = patterns.timezoneZ.exec(timezoneString);
+    if (token) {
+        return 0;
+    }
+    token = patterns.timezoneHH.exec(timezoneString);
+    if (token) {
+        absoluteOffset = parseInt(token[2], 10) * 60;
+        return token[1] === '+' ? -absoluteOffset : absoluteOffset;
+    }
+    token = patterns.timezoneHHMM.exec(timezoneString);
+    if (token) {
+        absoluteOffset = parseInt(token[2], 10) * 60 + parseInt(token[3], 10);
+        return token[1] === '+' ? -absoluteOffset : absoluteOffset;
+    }
+    return 0;
+}
+
+function dayOfISOYear(isoYear, week, day) {
+    week = week || 0;
+    day = day || 0;
+    var date = new Date(0);
+    date.setUTCFullYear(isoYear, 0, 4);
+    var fourthOfJanuaryDay = date.getUTCDay() || 7;
+    var diff = week * 7 + day + 1 - fourthOfJanuaryDay;
+    date.setUTCDate(date.getUTCDate() + diff);
+    return date;
+}
+
+function addMilliseconds(dirtyDate, dirtyAmount, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var timestamp = toDate(dirtyDate, dirtyOptions).getTime();
+    var amount = Number(dirtyAmount);
+    return new Date(timestamp + amount);
+}
+
+function cloneObject(dirtyObject) {
+    dirtyObject = dirtyObject || {};
+    var object = {};
+    for (var property in dirtyObject) {
+        if (dirtyObject.hasOwnProperty(property)) {
+            object[property] = dirtyObject[property];
+        }
+    }
+    return object;
+}
+
+var MILLISECONDS_IN_MINUTE$2 = 60000;
+function addMinutes(dirtyDate, dirtyAmount, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var amount = Number(dirtyAmount);
+    return addMilliseconds(dirtyDate, amount * MILLISECONDS_IN_MINUTE$2, dirtyOptions);
+}
+
+function isValid(dirtyDate, dirtyOptions) {
+    if (arguments.length < 1) {
+        throw new TypeError('1 argument required, but only ' + arguments.length + ' present');
+    }
+    var date = toDate(dirtyDate, dirtyOptions);
+    return !isNaN(date);
+}
+
+var formatDistanceLocale = {
+    lessThanXSeconds: {
+        one: 'less than a second',
+        other: 'less than {{count}} seconds'
+    },
+    xSeconds: {
+        one: '1 second',
+        other: '{{count}} seconds'
+    },
+    halfAMinute: 'half a minute',
+    lessThanXMinutes: {
+        one: 'less than a minute',
+        other: 'less than {{count}} minutes'
+    },
+    xMinutes: {
+        one: '1 minute',
+        other: '{{count}} minutes'
+    },
+    aboutXHours: {
+        one: 'about 1 hour',
+        other: 'about {{count}} hours'
+    },
+    xHours: {
+        one: '1 hour',
+        other: '{{count}} hours'
+    },
+    xDays: {
+        one: '1 day',
+        other: '{{count}} days'
+    },
+    aboutXMonths: {
+        one: 'about 1 month',
+        other: 'about {{count}} months'
+    },
+    xMonths: {
+        one: '1 month',
+        other: '{{count}} months'
+    },
+    aboutXYears: {
+        one: 'about 1 year',
+        other: 'about {{count}} years'
+    },
+    xYears: {
+        one: '1 year',
+        other: '{{count}} years'
+    },
+    overXYears: {
+        one: 'over 1 year',
+        other: 'over {{count}} years'
+    },
+    almostXYears: {
+        one: 'almost 1 year',
+        other: 'almost {{count}} years'
+    }
+};
+function formatDistance(token, count, options) {
+    options = options || {};
+    var result;
+    if (typeof formatDistanceLocale[token] === 'string') {
+        result = formatDistanceLocale[token];
+    } else if (count === 1) {
+        result = formatDistanceLocale[token].one;
+    } else {
+        result = formatDistanceLocale[token].other.replace('{{count}}', count);
+    }
+    if (options.addSuffix) {
+        if (options.comparison > 0) {
+            return 'in ' + result;
+        } else {
+            return result + ' ago';
+        }
+    }
+    return result;
+}
+
+var tokensToBeShortedPattern = /MMMM|MM|DD|dddd/g;
+function buildShortLongFormat(format) {
+    return format.replace(tokensToBeShortedPattern, function (token) {
+        return token.slice(1);
+    });
+}
+
+function buildFormatLongFn(obj) {
+    var formatLongLocale = {
+        LTS: obj.LTS,
+        LT: obj.LT,
+        L: obj.L,
+        LL: obj.LL,
+        LLL: obj.LLL,
+        LLLL: obj.LLLL,
+        l: obj.l || buildShortLongFormat(obj.L),
+        ll: obj.ll || buildShortLongFormat(obj.LL),
+        lll: obj.lll || buildShortLongFormat(obj.LLL),
+        llll: obj.llll || buildShortLongFormat(obj.LLLL)
+    };
+    return function (token) {
+        return formatLongLocale[token];
+    };
+}
+
+var formatLong = buildFormatLongFn({
+    LT: 'h:mm aa',
+    LTS: 'h:mm:ss aa',
+    L: 'MM/DD/YYYY',
+    LL: 'MMMM D YYYY',
+    LLL: 'MMMM D YYYY h:mm aa',
+    LLLL: 'dddd, MMMM D YYYY h:mm aa'
+});
+
+var formatRelativeLocale = {
+    lastWeek: '[last] dddd [at] LT',
+    yesterday: '[yesterday at] LT',
+    today: '[today at] LT',
+    tomorrow: '[tomorrow at] LT',
+    nextWeek: 'dddd [at] LT',
+    other: 'L'
+};
+function formatRelative(token, date, baseDate, options) {
+    return formatRelativeLocale[token];
+}
+
+function buildLocalizeFn(values, defaultType, indexCallback) {
+    return function (dirtyIndex, dirtyOptions) {
+        var options = dirtyOptions || {};
+        var type = options.type ? String(options.type) : defaultType;
+        var valuesArray = values[type] || values[defaultType];
+        var index = indexCallback ? indexCallback(Number(dirtyIndex)) : Number(dirtyIndex);
+        return valuesArray[index];
+    };
+}
+
+function buildLocalizeArrayFn(values, defaultType) {
+    return function (dirtyOptions) {
+        var options = dirtyOptions || {};
+        var type = options.type ? String(options.type) : defaultType;
+        return values[type] || values[defaultType];
+    };
+}
+
+var weekdayValues = {
+    narrow: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+    short: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+    long: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+};
+var monthValues = {
+    short: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    long: ['January','February','March','April','May','June','July','August','September',
+        'October','November','December']
+};
+var timeOfDayValues = {
+    uppercase: ['AM','PM'],
+    lowercase: ['am','pm'],
+    long: ['a.m.','p.m.']
+};
+function ordinalNumber(dirtyNumber, dirtyOptions) {
+    var number = Number(dirtyNumber);
+    var rem100 = number % 100;
+    if (rem100 > 20 || rem100 < 10) {
+        switch (rem100 % 10) {
+            case 1:
+                return number + 'st';
+            case 2:
+                return number + 'nd';
+            case 3:
+                return number + 'rd';
+        }
+    }
+    return number + 'th';
+}
+
+var localize = {
+    ordinalNumber: ordinalNumber,
+    weekday: buildLocalizeFn(weekdayValues, 'long'),
+    weekdays: buildLocalizeArrayFn(weekdayValues, 'long'),
+    month: buildLocalizeFn(monthValues, 'long'),
+    months: buildLocalizeArrayFn(monthValues, 'long'),
+    timeOfDay: buildLocalizeFn(timeOfDayValues, 'long', function (hours) {
+        return hours / 12 >= 1 ? 1 : 0;
+    }),
+    timesOfDay: buildLocalizeArrayFn(timeOfDayValues, 'long')
+};
+
+function buildMatchFn(patterns, defaultType) {
+    return function (dirtyString, dirtyOptions) {
+        var options = dirtyOptions || {};
+        var type = options.type ? String(options.type) : defaultType;
+        var pattern = patterns[type] || patterns[defaultType];
+        var string = String(dirtyString);
+        return string.match(pattern);
+    };
+}
+
+function buildParseFn(patterns, defaultType) {
+    return function (matchResult, dirtyOptions) {
+        var options = dirtyOptions || {};
+        var type = options.type ? String(options.type) : defaultType;
+        var patternsArray = patterns[type] || patterns[defaultType];
+        var string = matchResult[1];
+        return patternsArray.findIndex(function (pattern) {
+            return pattern.test(string);
+        });
+    };
+}
+
+function buildMatchPatternFn(pattern) {
+    return function (dirtyString) {
+        var string = String(dirtyString);
+        return string.match(pattern);
+    };
+}
+
+function parseDecimal(matchResult) {
+    return parseInt(matchResult[1], 10);
+}
+
+var matchOrdinalNumbersPattern = /^(\d+)(th|st|nd|rd)?/i;
+var matchWeekdaysPatterns = {
+    narrow: /^(su|mo|tu|we|th|fr|sa)/i,
+    short: /^(sun|mon|tue|wed|thu|fri|sat)/i,
+    long: /^(sunday|monday|tuesday|wednesday|thursday|friday|saturday)/i
+};
+var parseWeekdayPatterns = {
+    any: [/^su/i,/^m/i,/^tu/i,/^w/i,/^th/i,/^f/i,/^sa/i]
+};
+var matchMonthsPatterns = {
+    short: /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i,
+    long: /^(january|february|march|april|may|june|july|august|september|october|november|december)/i
+};
+var parseMonthPatterns = {
+    any: [/^ja/i,/^f/i,/^mar/i,/^ap/i,/^may/i,/^jun/i,/^jul/i,/^au/i,/^s/i,/^o/i,
+        /^n/i,/^d/i]
+};
+var matchTimesOfDayPatterns = {
+    short: /^(am|pm)/i,
+    long: /^([ap]\.?\s?m\.?)/i
+};
+var parseTimeOfDayPatterns = {
+    any: [/^a/i,/^p/i]
+};
+var match = {
+    ordinalNumbers: buildMatchPatternFn(matchOrdinalNumbersPattern),
+    ordinalNumber: parseDecimal,
+    weekdays: buildMatchFn(matchWeekdaysPatterns, 'long'),
+    weekday: buildParseFn(parseWeekdayPatterns, 'any'),
+    months: buildMatchFn(matchMonthsPatterns, 'long'),
+    month: buildParseFn(parseMonthPatterns, 'any'),
+    timesOfDay: buildMatchFn(matchTimesOfDayPatterns, 'long'),
+    timeOfDay: buildParseFn(parseTimeOfDayPatterns, 'any')
+};
+
+var locale$1 = {
+    formatDistance: formatDistance,
+    formatLong: formatLong,
+    formatRelative: formatRelative,
+    localize: localize,
+    match: match,
+    options: {
+        weekStartsOn: 0,
+        firstWeekContainsDate: 1
+    }
+};
+
+var MILLISECONDS_IN_DAY$1 = 86400000;
+function getUTCDayOfYear(dirtyDate, dirtyOptions) {
+    var date = toDate(dirtyDate, dirtyOptions);
+    var timestamp = date.getTime();
+    date.setUTCMonth(0, 1);
+    date.setUTCHours(0, 0, 0, 0);
+    var startOfYearTimestamp = date.getTime();
+    var difference = timestamp - startOfYearTimestamp;
+    return Math.floor(difference / MILLISECONDS_IN_DAY$1) + 1;
+}
+
+function startOfUTCISOWeek(dirtyDate, dirtyOptions) {
+    var weekStartsOn = 1;
+    var date = toDate(dirtyDate, dirtyOptions);
+    var day = date.getUTCDay();
+    var diff = (day < weekStartsOn ? 7 : 0) + day - weekStartsOn;
+    date.setUTCDate(date.getUTCDate() - diff);
+    date.setUTCHours(0, 0, 0, 0);
+    return date;
+}
+
+function getUTCISOWeekYear(dirtyDate, dirtyOptions) {
+    var date = toDate(dirtyDate, dirtyOptions);
+    var year = date.getUTCFullYear();
+    var fourthOfJanuaryOfNextYear = new Date(0);
+    fourthOfJanuaryOfNextYear.setUTCFullYear(year + 1, 0, 4);
+    fourthOfJanuaryOfNextYear.setUTCHours(0, 0, 0, 0);
+    var startOfNextYear = startOfUTCISOWeek(fourthOfJanuaryOfNextYear, dirtyOptions);
+    var fourthOfJanuaryOfThisYear = new Date(0);
+    fourthOfJanuaryOfThisYear.setUTCFullYear(year, 0, 4);
+    fourthOfJanuaryOfThisYear.setUTCHours(0, 0, 0, 0);
+    var startOfThisYear = startOfUTCISOWeek(fourthOfJanuaryOfThisYear, dirtyOptions);
+    if (date.getTime() >= startOfNextYear.getTime()) {
+        return year + 1;
+    } else if (date.getTime() >= startOfThisYear.getTime()) {
+        return year;
+    } else {
+        return year - 1;
+    }
+}
+
+function startOfUTCISOWeekYear(dirtyDate, dirtyOptions) {
+    var year = getUTCISOWeekYear(dirtyDate, dirtyOptions);
+    var fourthOfJanuary = new Date(0);
+    fourthOfJanuary.setUTCFullYear(year, 0, 4);
+    fourthOfJanuary.setUTCHours(0, 0, 0, 0);
+    var date = startOfUTCISOWeek(fourthOfJanuary, dirtyOptions);
+    return date;
+}
+
+var MILLISECONDS_IN_WEEK$2 = 604800000;
+function getUTCISOWeek(dirtyDate, dirtyOptions) {
+    var date = toDate(dirtyDate, dirtyOptions);
+    var diff = startOfUTCISOWeek(date, dirtyOptions).getTime() - startOfUTCISOWeekYear(date, dirtyOptions).getTime();
+    return Math.round(diff / MILLISECONDS_IN_WEEK$2) + 1;
+}
+
+var formatters = {
+    'M': function (date) {
+        return date.getUTCMonth() + 1;
+    },
+    'Mo': function (date, options) {
+        var month = date.getUTCMonth() + 1;
+        return options.locale.localize.ordinalNumber(month, {
+            unit: 'month'
+        });
+    },
+    'MM': function (date) {
+        return addLeadingZeros(date.getUTCMonth() + 1, 2);
+    },
+    'MMM': function (date, options) {
+        return options.locale.localize.month(date.getUTCMonth(), {
+            type: 'short'
+        });
+    },
+    'MMMM': function (date, options) {
+        return options.locale.localize.month(date.getUTCMonth(), {
+            type: 'long'
+        });
+    },
+    'Q': function (date) {
+        return Math.ceil((date.getUTCMonth() + 1) / 3);
+    },
+    'Qo': function (date, options) {
+        var quarter = Math.ceil((date.getUTCMonth() + 1) / 3);
+        return options.locale.localize.ordinalNumber(quarter, {
+            unit: 'quarter'
+        });
+    },
+    'D': function (date) {
+        return date.getUTCDate();
+    },
+    'Do': function (date, options) {
+        return options.locale.localize.ordinalNumber(date.getUTCDate(), {
+            unit: 'dayOfMonth'
+        });
+    },
+    'DD': function (date) {
+        return addLeadingZeros(date.getUTCDate(), 2);
+    },
+    'DDD': function (date) {
+        return getUTCDayOfYear(date);
+    },
+    'DDDo': function (date, options) {
+        return options.locale.localize.ordinalNumber(getUTCDayOfYear(date), {
+            unit: 'dayOfYear'
+        });
+    },
+    'DDDD': function (date) {
+        return addLeadingZeros(getUTCDayOfYear(date), 3);
+    },
+    'dd': function (date, options) {
+        return options.locale.localize.weekday(date.getUTCDay(), {
+            type: 'narrow'
+        });
+    },
+    'ddd': function (date, options) {
+        return options.locale.localize.weekday(date.getUTCDay(), {
+            type: 'short'
+        });
+    },
+    'dddd': function (date, options) {
+        return options.locale.localize.weekday(date.getUTCDay(), {
+            type: 'long'
+        });
+    },
+    'd': function (date) {
+        return date.getUTCDay();
+    },
+    'do': function (date, options) {
+        return options.locale.localize.ordinalNumber(date.getUTCDay(), {
+            unit: 'dayOfWeek'
+        });
+    },
+    'E': function (date) {
+        return date.getUTCDay() || 7;
+    },
+    'W': function (date) {
+        return getUTCISOWeek(date);
+    },
+    'Wo': function (date, options) {
+        return options.locale.localize.ordinalNumber(getUTCISOWeek(date), {
+            unit: 'isoWeek'
+        });
+    },
+    'WW': function (date) {
+        return addLeadingZeros(getUTCISOWeek(date), 2);
+    },
+    'YY': function (date) {
+        return addLeadingZeros(date.getUTCFullYear(), 4).substr(2);
+    },
+    'YYYY': function (date) {
+        return addLeadingZeros(date.getUTCFullYear(), 4);
+    },
+    'GG': function (date) {
+        return String(getUTCISOWeekYear(date)).substr(2);
+    },
+    'GGGG': function (date) {
+        return getUTCISOWeekYear(date);
+    },
+    'H': function (date) {
+        return date.getUTCHours();
+    },
+    'HH': function (date) {
+        return addLeadingZeros(date.getUTCHours(), 2);
+    },
+    'h': function (date) {
+        var hours = date.getUTCHours();
+        if (hours === 0) {
+            return 12;
+        } else if (hours > 12) {
+            return hours % 12;
+        } else {
+            return hours;
+        }
+    },
+    'hh': function (date) {
+        return addLeadingZeros(formatters['h'](date), 2);
+    },
+    'm': function (date) {
+        return date.getUTCMinutes();
+    },
+    'mm': function (date) {
+        return addLeadingZeros(date.getUTCMinutes(), 2);
+    },
+    's': function (date) {
+        return date.getUTCSeconds();
+    },
+    'ss': function (date) {
+        return addLeadingZeros(date.getUTCSeconds(), 2);
+    },
+    'S': function (date) {
+        return Math.floor(date.getUTCMilliseconds() / 100);
+    },
+    'SS': function (date) {
+        return addLeadingZeros(Math.floor(date.getUTCMilliseconds() / 10), 2);
+    },
+    'SSS': function (date) {
+        return addLeadingZeros(date.getUTCMilliseconds(), 3);
+    },
+    'Z': function (date, options) {
+        var originalDate = options._originalDate || date;
+        return formatTimezone(originalDate.getTimezoneOffset(), ':');
+    },
+    'ZZ': function (date, options) {
+        var originalDate = options._originalDate || date;
+        return formatTimezone(originalDate.getTimezoneOffset());
+    },
+    'X': function (date, options) {
+        var originalDate = options._originalDate || date;
+        return Math.floor(originalDate.getTime() / 1000);
+    },
+    'x': function (date, options) {
+        var originalDate = options._originalDate || date;
+        return originalDate.getTime();
+    },
+    'A': function (date, options) {
+        return options.locale.localize.timeOfDay(date.getUTCHours(), {
+            type: 'uppercase'
+        });
+    },
+    'a': function (date, options) {
+        return options.locale.localize.timeOfDay(date.getUTCHours(), {
+            type: 'lowercase'
+        });
+    },
+    'aa': function (date, options) {
+        return options.locale.localize.timeOfDay(date.getUTCHours(), {
+            type: 'long'
+        });
+    }
+};
+function formatTimezone(offset, delimeter) {
+    delimeter = delimeter || '';
+    var sign = offset > 0 ? '-' : '+';
+    var absOffset = Math.abs(offset);
+    var hours = Math.floor(absOffset / 60);
+    var minutes = absOffset % 60;
+    return sign + addLeadingZeros(hours, 2) + delimeter + addLeadingZeros(minutes, 2);
+}
+
+function addLeadingZeros(number, targetLength) {
+    var output = Math.abs(number).toString();
+    while (output.length < targetLength) {
+        output = '0' + output;
+    }
+    return output;
+}
+
+function addUTCMinutes(dirtyDate, dirtyAmount, dirtyOptions) {
+    var date = toDate(dirtyDate, dirtyOptions);
+    var amount = Number(dirtyAmount);
+    date.setUTCMinutes(date.getUTCMinutes() + amount);
+    return date;
+}
+
+var longFormattingTokensRegExp = /(\[[^[]*])|(\\)?(LTS|LT|LLLL|LLL|LL|L|llll|lll|ll|l)/g;
+var defaultFormattingTokensRegExp = /(\[[^[]*])|(\\)?(x|ss|s|mm|m|hh|h|do|dddd|ddd|dd|d|aa|a|ZZ|Z|YYYY|YY|X|Wo|WW|W|SSS|SS|S|Qo|Q|Mo|MMMM|MMM|MM|M|HH|H|GGGG|GG|E|Do|DDDo|DDDD|DDD|DD|D|A|.)/g;
+function format(dirtyDate, dirtyFormatStr, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var formatStr = String(dirtyFormatStr);
+    var options = dirtyOptions || {};
+    var locale = options.locale || locale$1;
+    if (!locale.localize) {
+        throw new RangeError('locale must contain localize property');
+    }
+    if (!locale.formatLong) {
+        throw new RangeError('locale must contain formatLong property');
+    }
+    var localeFormatters = locale.formatters || {};
+    var formattingTokensRegExp = locale.formattingTokensRegExp || defaultFormattingTokensRegExp;
+    var formatLong = locale.formatLong;
+    var originalDate = toDate(dirtyDate, options);
+    if (!isValid(originalDate, options)) {
+        return 'Invalid Date';
+    }
+    var timezoneOffset = originalDate.getTimezoneOffset();
+    var utcDate = addUTCMinutes(originalDate, -timezoneOffset, options);
+    var formatterOptions = cloneObject(options);
+    formatterOptions.locale = locale;
+    formatterOptions.formatters = formatters;
+    formatterOptions._originalDate = originalDate;
+    var result = formatStr.replace(longFormattingTokensRegExp, function (substring) {
+        if (substring[0] === '[') {
+            return substring;
+        }
+        if (substring[0] === '\\') {
+            return cleanEscapedString(substring);
+        }
+        return formatLong(substring);
+    }).replace(formattingTokensRegExp, function (substring) {
+        var formatter = localeFormatters[substring] || formatters[substring];
+        if (formatter) {
+            return formatter(utcDate, formatterOptions);
+        } else {
+            return cleanEscapedString(substring);
+        }
+    });
+    return result;
+}
+
+function cleanEscapedString(input) {
+    if (input.match(/\[[\s\S]/)) {
+        return input.replace(/^\[|]$/g, '');
+    }
+    return input.replace(/\\/g, '');
+}
+
+function subMinutes(dirtyDate, dirtyAmount, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var amount = Number(dirtyAmount);
+    return addMinutes(dirtyDate, -amount, dirtyOptions);
+}
+
+function isAfter(dirtyDate, dirtyDateToCompare, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var date = toDate(dirtyDate, dirtyOptions);
+    var dateToCompare = toDate(dirtyDateToCompare, dirtyOptions);
+    return date.getTime() > dateToCompare.getTime();
+}
+
+function isBefore(dirtyDate, dirtyDateToCompare, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var date = toDate(dirtyDate, dirtyOptions);
+    var dateToCompare = toDate(dirtyDateToCompare, dirtyOptions);
+    return date.getTime() < dateToCompare.getTime();
+}
+
+function isEqual$1(dirtyLeftDate, dirtyRightDate, dirtyOptions) {
+    if (arguments.length < 2) {
+        throw new TypeError('2 arguments required, but only ' + arguments.length + ' present');
+    }
+    var dateLeft = toDate(dirtyLeftDate, dirtyOptions);
+    var dateRight = toDate(dirtyRightDate, dirtyOptions);
+    return dateLeft.getTime() === dateRight.getTime();
+}
+
+var patterns$1 = {
+    'M': /^(1[0-2]|0?\d)/,
+    'D': /^(3[0-1]|[0-2]?\d)/,
+    'DDD': /^(36[0-6]|3[0-5]\d|[0-2]?\d?\d)/,
+    'W': /^(5[0-3]|[0-4]?\d)/,
+    'YYYY': /^(\d{1,4})/,
+    'H': /^(2[0-3]|[0-1]?\d)/,
+    'm': /^([0-5]?\d)/,
+    'Z': /^([+-])(\d{2}):(\d{2})/,
+    'ZZ': /^([+-])(\d{2})(\d{2})/,
+    singleDigit: /^(\d)/,
+    twoDigits: /^(\d{2})/,
+    threeDigits: /^(\d{3})/,
+    fourDigits: /^(\d{4})/,
+    anyDigits: /^(\d+)/
+};
+function parseDecimal$1(matchResult) {
+    return parseInt(matchResult[1], 10);
+}
+
+var parsers = {
+    'YY': {
+        unit: 'twoDigitYear',
+        match: patterns$1.twoDigits,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult);
+        }
+    },
+    'YYYY': {
+        unit: 'year',
+        match: patterns$1.YYYY,
+        parse: parseDecimal$1
+    },
+    'GG': {
+        unit: 'isoYear',
+        match: patterns$1.twoDigits,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult) + 1900;
+        }
+    },
+    'GGGG': {
+        unit: 'isoYear',
+        match: patterns$1.YYYY,
+        parse: parseDecimal$1
+    },
+    'Q': {
+        unit: 'quarter',
+        match: patterns$1.singleDigit,
+        parse: parseDecimal$1
+    },
+    'Qo': {
+        unit: 'quarter',
+        match: function (string, options) {
+            return options.locale.match.ordinalNumbers(string, {
+                unit: 'quarter'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.ordinalNumber(matchResult, {
+                unit: 'quarter'
+            });
+        }
+    },
+    'M': {
+        unit: 'month',
+        match: patterns$1.M,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult) - 1;
+        }
+    },
+    'Mo': {
+        unit: 'month',
+        match: function (string, options) {
+            return options.locale.match.ordinalNumbers(string, {
+                unit: 'month'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.ordinalNumber(matchResult, {
+                unit: 'month'
+            }) - 1;
+        }
+    },
+    'MM': {
+        unit: 'month',
+        match: patterns$1.twoDigits,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult) - 1;
+        }
+    },
+    'MMM': {
+        unit: 'month',
+        match: function (string, options) {
+            return options.locale.match.months(string, {
+                type: 'short'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.month(matchResult, {
+                type: 'short'
+            });
+        }
+    },
+    'MMMM': {
+        unit: 'month',
+        match: function (string, options) {
+            return options.locale.match.months(string, {
+                type: 'long'
+            }) || options.locale.match.months(string, {
+                type: 'short'
+            });
+        },
+        parse: function (matchResult, options) {
+            var parseResult = options.locale.match.month(matchResult, {
+                type: 'long'
+            });
+            if (parseResult == null) {
+                parseResult = options.locale.match.month(matchResult, {
+                    type: 'short'
+                });
+            }
+            return parseResult;
+        }
+    },
+    'W': {
+        unit: 'isoWeek',
+        match: patterns$1.W,
+        parse: parseDecimal$1
+    },
+    'Wo': {
+        unit: 'isoWeek',
+        match: function (string, options) {
+            return options.locale.match.ordinalNumbers(string, {
+                unit: 'isoWeek'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.ordinalNumber(matchResult, {
+                unit: 'isoWeek'
+            });
+        }
+    },
+    'WW': {
+        unit: 'isoWeek',
+        match: patterns$1.twoDigits,
+        parse: parseDecimal$1
+    },
+    'd': {
+        unit: 'dayOfWeek',
+        match: patterns$1.singleDigit,
+        parse: parseDecimal$1
+    },
+    'do': {
+        unit: 'dayOfWeek',
+        match: function (string, options) {
+            return options.locale.match.ordinalNumbers(string, {
+                unit: 'dayOfWeek'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.ordinalNumber(matchResult, {
+                unit: 'dayOfWeek'
+            });
+        }
+    },
+    'dd': {
+        unit: 'dayOfWeek',
+        match: function (string, options) {
+            return options.locale.match.weekdays(string, {
+                type: 'narrow'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.weekday(matchResult, {
+                type: 'narrow'
+            });
+        }
+    },
+    'ddd': {
+        unit: 'dayOfWeek',
+        match: function (string, options) {
+            return options.locale.match.weekdays(string, {
+                type: 'short'
+            }) || options.locale.match.weekdays(string, {
+                type: 'narrow'
+            });
+        },
+        parse: function (matchResult, options) {
+            var parseResult = options.locale.match.weekday(matchResult, {
+                type: 'short'
+            });
+            if (parseResult == null) {
+                parseResult = options.locale.match.weekday(matchResult, {
+                    type: 'narrow'
+                });
+            }
+            return parseResult;
+        }
+    },
+    'dddd': {
+        unit: 'dayOfWeek',
+        match: function (string, options) {
+            return options.locale.match.weekdays(string, {
+                type: 'long'
+            }) || options.locale.match.weekdays(string, {
+                type: 'short'
+            }) || options.locale.match.weekdays(string, {
+                type: 'narrow'
+            });
+        },
+        parse: function (matchResult, options) {
+            var parseResult = options.locale.match.weekday(matchResult, {
+                type: 'long'
+            });
+            if (parseResult == null) {
+                parseResult = options.locale.match.weekday(matchResult, {
+                    type: 'short'
+                });
+                if (parseResult == null) {
+                    parseResult = options.locale.match.weekday(matchResult, {
+                        type: 'narrow'
+                    });
+                }
+            }
+            return parseResult;
+        }
+    },
+    'E': {
+        unit: 'dayOfISOWeek',
+        match: patterns$1.singleDigit,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult);
+        }
+    },
+    'D': {
+        unit: 'dayOfMonth',
+        match: patterns$1.D,
+        parse: parseDecimal$1
+    },
+    'Do': {
+        unit: 'dayOfMonth',
+        match: function (string, options) {
+            return options.locale.match.ordinalNumbers(string, {
+                unit: 'dayOfMonth'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.ordinalNumber(matchResult, {
+                unit: 'dayOfMonth'
+            });
+        }
+    },
+    'DD': {
+        unit: 'dayOfMonth',
+        match: patterns$1.twoDigits,
+        parse: parseDecimal$1
+    },
+    'DDD': {
+        unit: 'dayOfYear',
+        match: patterns$1.DDD,
+        parse: parseDecimal$1
+    },
+    'DDDo': {
+        unit: 'dayOfYear',
+        match: function (string, options) {
+            return options.locale.match.ordinalNumbers(string, {
+                unit: 'dayOfYear'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.ordinalNumber(matchResult, {
+                unit: 'dayOfYear'
+            });
+        }
+    },
+    'DDDD': {
+        unit: 'dayOfYear',
+        match: patterns$1.threeDigits,
+        parse: parseDecimal$1
+    },
+    'A': {
+        unit: 'timeOfDay',
+        match: function (string, options) {
+            return options.locale.match.timesOfDay(string, {
+                type: 'short'
+            });
+        },
+        parse: function (matchResult, options) {
+            return options.locale.match.timeOfDay(matchResult, {
+                type: 'short'
+            });
+        }
+    },
+    'aa': {
+        unit: 'timeOfDay',
+        match: function (string, options) {
+            return options.locale.match.timesOfDay(string, {
+                type: 'long'
+            }) || options.locale.match.timesOfDay(string, {
+                type: 'short'
+            });
+        },
+        parse: function (matchResult, options) {
+            var parseResult = options.locale.match.timeOfDay(matchResult, {
+                type: 'long'
+            });
+            if (parseResult == null) {
+                parseResult = options.locale.match.timeOfDay(matchResult, {
+                    type: 'short'
+                });
+            }
+            return parseResult;
+        }
+    },
+    'H': {
+        unit: 'hours',
+        match: patterns$1.H,
+        parse: parseDecimal$1
+    },
+    'HH': {
+        unit: 'hours',
+        match: patterns$1.twoDigits,
+        parse: parseDecimal$1
+    },
+    'h': {
+        unit: 'timeOfDayHours',
+        match: patterns$1.M,
+        parse: parseDecimal$1
+    },
+    'hh': {
+        unit: 'timeOfDayHours',
+        match: patterns$1.twoDigits,
+        parse: parseDecimal$1
+    },
+    'm': {
+        unit: 'minutes',
+        match: patterns$1.m,
+        parse: parseDecimal$1
+    },
+    'mm': {
+        unit: 'minutes',
+        match: patterns$1.twoDigits,
+        parse: parseDecimal$1
+    },
+    's': {
+        unit: 'seconds',
+        match: patterns$1.m,
+        parse: parseDecimal$1
+    },
+    'ss': {
+        unit: 'seconds',
+        match: patterns$1.twoDigits,
+        parse: parseDecimal$1
+    },
+    'S': {
+        unit: 'milliseconds',
+        match: patterns$1.singleDigit,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult) * 100;
+        }
+    },
+    'SS': {
+        unit: 'milliseconds',
+        match: patterns$1.twoDigits,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult) * 10;
+        }
+    },
+    'SSS': {
+        unit: 'milliseconds',
+        match: patterns$1.threeDigits,
+        parse: parseDecimal$1
+    },
+    'Z': {
+        unit: 'timezone',
+        match: patterns$1.Z,
+        parse: function (matchResult) {
+            var sign = matchResult[1];
+            var hours = parseInt(matchResult[2], 10);
+            var minutes = parseInt(matchResult[3], 10);
+            var absoluteOffset = hours * 60 + minutes;
+            return sign === '+' ? absoluteOffset : -absoluteOffset;
+        }
+    },
+    'ZZ': {
+        unit: 'timezone',
+        match: patterns$1.ZZ,
+        parse: function (matchResult) {
+            var sign = matchResult[1];
+            var hours = parseInt(matchResult[2], 10);
+            var minutes = parseInt(matchResult[3], 10);
+            var absoluteOffset = hours * 60 + minutes;
+            return sign === '+' ? absoluteOffset : -absoluteOffset;
+        }
+    },
+    'X': {
+        unit: 'timestamp',
+        match: patterns$1.anyDigits,
+        parse: function (matchResult) {
+            return parseDecimal$1(matchResult) * 1000;
+        }
+    },
+    'x': {
+        unit: 'timestamp',
+        match: patterns$1.anyDigits,
+        parse: parseDecimal$1
+    }
+};
+parsers['a'] = parsers['A'];
+
+function setUTCDay(dirtyDate, dirtyDay, dirtyOptions) {
+    var options = dirtyOptions || {};
+    var locale = options.locale;
+    var localeWeekStartsOn = locale && locale.options && locale.options.weekStartsOn;
+    var defaultWeekStartsOn = localeWeekStartsOn === undefined ? 0 : Number(localeWeekStartsOn);
+    var weekStartsOn = options.weekStartsOn === undefined ? defaultWeekStartsOn : Number(options.weekStartsOn);
+    if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+        throw new RangeError('weekStartsOn must be between 0 and 6 inclusively');
+    }
+    var date = toDate(dirtyDate, dirtyOptions);
+    var day = Number(dirtyDay);
+    var currentDay = date.getUTCDay();
+    var remainder = day % 7;
+    var dayIndex = (remainder + 7) % 7;
+    var diff = (dayIndex < weekStartsOn ? 7 : 0) + day - currentDay;
+    date.setUTCDate(date.getUTCDate() + diff);
+    return date;
+}
+
+function setUTCISODay(dirtyDate, dirtyDay, dirtyOptions) {
+    var day = Number(dirtyDay);
+    if (day % 7 === 0) {
+        day = day - 7;
+    }
+    var weekStartsOn = 1;
+    var date = toDate(dirtyDate, dirtyOptions);
+    var currentDay = date.getUTCDay();
+    var remainder = day % 7;
+    var dayIndex = (remainder + 7) % 7;
+    var diff = (dayIndex < weekStartsOn ? 7 : 0) + day - currentDay;
+    date.setUTCDate(date.getUTCDate() + diff);
+    return date;
+}
+
+function setUTCISOWeek(dirtyDate, dirtyISOWeek, dirtyOptions) {
+    var date = toDate(dirtyDate, dirtyOptions);
+    var isoWeek = Number(dirtyISOWeek);
+    var diff = getUTCISOWeek(date, dirtyOptions) - isoWeek;
+    date.setUTCDate(date.getUTCDate() - diff * 7);
+    return date;
+}
+
+var MILLISECONDS_IN_DAY$3 = 86400000;
+function setUTCISOWeekYear(dirtyDate, dirtyISOYear, dirtyOptions) {
+    var date = toDate(dirtyDate, dirtyOptions);
+    var isoYear = Number(dirtyISOYear);
+    var dateStartOfYear = startOfUTCISOWeekYear(date, dirtyOptions);
+    var diff = Math.floor((date.getTime() - dateStartOfYear.getTime()) / MILLISECONDS_IN_DAY$3);
+    var fourthOfJanuary = new Date(0);
+    fourthOfJanuary.setUTCFullYear(isoYear, 0, 4);
+    fourthOfJanuary.setUTCHours(0, 0, 0, 0);
+    date = startOfUTCISOWeekYear(fourthOfJanuary, dirtyOptions);
+    date.setUTCDate(date.getUTCDate() + diff);
+    return date;
+}
+
+var MILLISECONDS_IN_MINUTE$6 = 60000;
+function setTimeOfDay(hours, timeOfDay) {
+    var isAM = timeOfDay === 0;
+    if (isAM) {
+        if (hours === 12) {
+            return 0;
+        }
+    } else {
+        if (hours !== 12) {
+            return 12 + hours;
+        }
+    }
+    return hours;
+}
+
+var units = {
+    twoDigitYear: {
+        priority: 10,
+        set: function (dateValues, value) {
+            var century = Math.floor(dateValues.date.getUTCFullYear() / 100);
+            var year = century * 100 + value;
+            dateValues.date.setUTCFullYear(year, 0, 1);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    year: {
+        priority: 10,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCFullYear(value, 0, 1);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    isoYear: {
+        priority: 10,
+        set: function (dateValues, value, options) {
+            dateValues.date = startOfUTCISOWeekYear(setUTCISOWeekYear(dateValues.date, value, options), options);
+            return dateValues;
+        }
+    },
+    quarter: {
+        priority: 20,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCMonth((value - 1) * 3, 1);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    month: {
+        priority: 30,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCMonth(value, 1);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    isoWeek: {
+        priority: 40,
+        set: function (dateValues, value, options) {
+            dateValues.date = startOfUTCISOWeek(setUTCISOWeek(dateValues.date, value, options), options);
+            return dateValues;
+        }
+    },
+    dayOfWeek: {
+        priority: 50,
+        set: function (dateValues, value, options) {
+            dateValues.date = setUTCDay(dateValues.date, value, options);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    dayOfISOWeek: {
+        priority: 50,
+        set: function (dateValues, value, options) {
+            dateValues.date = setUTCISODay(dateValues.date, value, options);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    dayOfMonth: {
+        priority: 50,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCDate(value);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    dayOfYear: {
+        priority: 50,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCMonth(0, value);
+            dateValues.date.setUTCHours(0, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    timeOfDay: {
+        priority: 60,
+        set: function (dateValues, value, options) {
+            dateValues.timeOfDay = value;
+            return dateValues;
+        }
+    },
+    hours: {
+        priority: 70,
+        set: function (dateValues, value, options) {
+            dateValues.date.setUTCHours(value, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    timeOfDayHours: {
+        priority: 70,
+        set: function (dateValues, value, options) {
+            var timeOfDay = dateValues.timeOfDay;
+            if (timeOfDay != null) {
+                value = setTimeOfDay(value, timeOfDay);
+            }
+            dateValues.date.setUTCHours(value, 0, 0, 0);
+            return dateValues;
+        }
+    },
+    minutes: {
+        priority: 80,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCMinutes(value, 0, 0);
+            return dateValues;
+        }
+    },
+    seconds: {
+        priority: 90,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCSeconds(value, 0);
+            return dateValues;
+        }
+    },
+    milliseconds: {
+        priority: 100,
+        set: function (dateValues, value) {
+            dateValues.date.setUTCMilliseconds(value);
+            return dateValues;
+        }
+    },
+    timezone: {
+        priority: 110,
+        set: function (dateValues, value) {
+            dateValues.date = new Date(dateValues.date.getTime() - value * MILLISECONDS_IN_MINUTE$6);
+            return dateValues;
+        }
+    },
+    timestamp: {
+        priority: 120,
+        set: function (dateValues, value) {
+            dateValues.date = new Date(value);
+            return dateValues;
+        }
+    }
+};
+
+var TIMEZONE_UNIT_PRIORITY = 110;
+var MILLISECONDS_IN_MINUTE$7 = 60000;
+var longFormattingTokensRegExp$1 = /(\[[^[]*])|(\\)?(LTS|LT|LLLL|LLL|LL|L|llll|lll|ll|l)/g;
+var defaultParsingTokensRegExp = /(\[[^[]*])|(\\)?(x|ss|s|mm|m|hh|h|do|dddd|ddd|dd|d|aa|a|ZZ|Z|YYYY|YY|X|Wo|WW|W|SSS|SS|S|Qo|Q|Mo|MMMM|MMM|MM|M|HH|H|GGGG|GG|E|Do|DDDo|DDDD|DDD|DD|D|A|.)/g;
+function parse(dirtyDateString, dirtyFormatString, dirtyBaseDate, dirtyOptions) {
+    if (arguments.length < 3) {
+        throw new TypeError('3 arguments required, but only ' + arguments.length + ' present');
+    }
+    var dateString = String(dirtyDateString);
+    var options = dirtyOptions || {};
+    var weekStartsOn = options.weekStartsOn === undefined ? 0 : Number(options.weekStartsOn);
+    if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+        throw new RangeError('weekStartsOn must be between 0 and 6 inclusively');
+    }
+    var locale = options.locale || locale$1;
+    var localeParsers = locale.parsers || {};
+    var localeUnits = locale.units || {};
+    if (!locale.match) {
+        throw new RangeError('locale must contain match property');
+    }
+    if (!locale.formatLong) {
+        throw new RangeError('locale must contain formatLong property');
+    }
+    var formatString = String(dirtyFormatString).replace(longFormattingTokensRegExp$1, function (substring) {
+        if (substring[0] === '[') {
+            return substring;
+        }
+        if (substring[0] === '\\') {
+            return cleanEscapedString$1(substring);
+        }
+        return locale.formatLong(substring);
+    });
+    if (formatString === '') {
+        if (dateString === '') {
+            return toDate(dirtyBaseDate, options);
+        } else {
+            return new Date(NaN);
+        }
+    }
+    var subFnOptions = cloneObject(options);
+    subFnOptions.locale = locale;
+    var tokens = formatString.match(locale.parsingTokensRegExp || defaultParsingTokensRegExp);
+    var tokensLength = tokens.length;
+    var setters = [{
+        priority: TIMEZONE_UNIT_PRIORITY,
+        set: dateToSystemTimezone,
+        index: 0
+    }];
+    var i;
+    for (i = 0; i < tokensLength; i++) {
+        var token = tokens[i];
+        var parser = localeParsers[token] || parsers[token];
+        if (parser) {
+            var matchResult;
+            if (parser.match instanceof RegExp) {
+                matchResult = parser.match.exec(dateString);
+            } else {
+                matchResult = parser.match(dateString, subFnOptions);
+            }
+            if (!matchResult) {
+                return new Date(NaN);
+            }
+            var unitName = parser.unit;
+            var unit = localeUnits[unitName] || units[unitName];
+            setters.push({
+                priority: unit.priority,
+                set: unit.set,
+                value: parser.parse(matchResult, subFnOptions),
+                index: setters.length
+            });
+            var substring = matchResult[0];
+            dateString = dateString.slice(substring.length);
+        } else {
+            var head = tokens[i].match(/^\[.*]$/) ? tokens[i].replace(/^\[|]$/g, '') : tokens[i];
+            if (dateString.indexOf(head) === 0) {
+                dateString = dateString.slice(head.length);
+            } else {
+                return new Date(NaN);
+            }
+        }
+    }
+    var uniquePrioritySetters = setters.map(function (setter) {
+        return setter.priority;
+    }).sort(function (a, b) {
+        return a - b;
+    }).filter(function (priority, index, array) {
+        return array.indexOf(priority) === index;
+    }).map(function (priority) {
+        return setters.filter(function (setter) {
+            return setter.priority === priority;
+        }).reverse();
+    }).map(function (setterArray) {
+        return setterArray[0];
+    });
+    var date = toDate(dirtyBaseDate, options);
+    if (isNaN(date)) {
+        return new Date(NaN);
+    }
+    var utcDate = subMinutes(date, date.getTimezoneOffset());
+    var dateValues = {
+        date: utcDate
+    };
+    var settersLength = uniquePrioritySetters.length;
+    for (i = 0; i < settersLength; i++) {
+        var setter = uniquePrioritySetters[i];
+        dateValues = setter.set(dateValues, setter.value, subFnOptions);
+    }
+    return dateValues.date;
+}
+
+function dateToSystemTimezone(dateValues) {
+    var date = dateValues.date;
+    var time = date.getTime();
+    var offset = date.getTimezoneOffset();
+    offset = new Date(time + offset * MILLISECONDS_IN_MINUTE$7).getTimezoneOffset();
+    dateValues.date = new Date(time + offset * MILLISECONDS_IN_MINUTE$7);
+    return dateValues;
+}
+
+function cleanEscapedString$1(input) {
+    if (input.match(/\[[\s\S]/)) {
+        return input.replace(/^\[|]$/g, '');
+    }
+    return input.replace(/\\/g, '');
+}
+
+function parseDate$1(date, format$$1) {
+    if (typeof date !== 'string') {
+        return isValid(date) ? date : null;
+    }
+    var parsed = parse(date, format$$1, new Date());
+    if (!isValid(parsed) || format(parsed, format$$1) !== date) {
+        return null;
+    }
+    return parsed;
+}
+
+function after (value, ref) {
+    var otherValue = ref[0];
+    var inclusion = ref[1];
+    var format$$1 = ref[2];
+
+    if (typeof format$$1 === 'undefined') {
+        format$$1 = inclusion;
+        inclusion = false;
+    }
+    value = parseDate$1(value, format$$1);
+    otherValue = parseDate$1(otherValue, format$$1);
+    if (!value || !otherValue) {
+        return false;
+    }
+    return isAfter(value, otherValue) || inclusion && isEqual$1(value, otherValue);
+}
+
+var alpha = {
+    en: /^[A-Z]*$/i,
+    cs: /^[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]*$/i,
+    da: /^[A-ZÆØÅ]*$/i,
+    de: /^[A-ZÄÖÜß]*$/i,
+    es: /^[A-ZÁÉÍÑÓÚÜ]*$/i,
+    fr: /^[A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ]*$/i,
+    lt: /^[A-ZĄČĘĖĮŠŲŪŽ]*$/i,
+    nl: /^[A-ZÉËÏÓÖÜ]*$/i,
+    hu: /^[A-ZÁÉÍÓÖŐÚÜŰ]*$/i,
+    pl: /^[A-ZĄĆĘŚŁŃÓŻŹ]*$/i,
+    pt: /^[A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ]*$/i,
+    ru: /^[А-ЯЁ]*$/i,
+    sk: /^[A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ]*$/i,
+    sr: /^[A-ZČĆŽŠĐ]*$/i,
+    tr: /^[A-ZÇĞİıÖŞÜ]*$/i,
+    uk: /^[А-ЩЬЮЯЄІЇҐ]*$/i,
+    ar: /^[ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ]*$/
+};
+var alphaSpaces = {
+    en: /^[A-Z\s]*$/i,
+    cs: /^[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ\s]*$/i,
+    da: /^[A-ZÆØÅ\s]*$/i,
+    de: /^[A-ZÄÖÜß\s]*$/i,
+    es: /^[A-ZÁÉÍÑÓÚÜ\s]*$/i,
+    fr: /^[A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ\s]*$/i,
+    lt: /^[A-ZĄČĘĖĮŠŲŪŽ\s]*$/i,
+    nl: /^[A-ZÉËÏÓÖÜ\s]*$/i,
+    hu: /^[A-ZÁÉÍÓÖŐÚÜŰ\s]*$/i,
+    pl: /^[A-ZĄĆĘŚŁŃÓŻŹ\s]*$/i,
+    pt: /^[A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ\s]*$/i,
+    ru: /^[А-ЯЁ\s]*$/i,
+    sk: /^[A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ\s]*$/i,
+    sr: /^[A-ZČĆŽŠĐ\s]*$/i,
+    tr: /^[A-ZÇĞİıÖŞÜ\s]*$/i,
+    uk: /^[А-ЩЬЮЯЄІЇҐ\s]*$/i,
+    ar: /^[ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ\s]*$/
+};
+var alphanumeric = {
+    en: /^[0-9A-Z]*$/i,
+    cs: /^[0-9A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]*$/i,
+    da: /^[0-9A-ZÆØÅ]$/i,
+    de: /^[0-9A-ZÄÖÜß]*$/i,
+    es: /^[0-9A-ZÁÉÍÑÓÚÜ]*$/i,
+    fr: /^[0-9A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ]*$/i,
+    lt: /^[0-9A-ZĄČĘĖĮŠŲŪŽ]*$/i,
+    hu: /^[0-9A-ZÁÉÍÓÖŐÚÜŰ]*$/i,
+    nl: /^[0-9A-ZÉËÏÓÖÜ]*$/i,
+    pl: /^[0-9A-ZĄĆĘŚŁŃÓŻŹ]*$/i,
+    pt: /^[0-9A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ]*$/i,
+    ru: /^[0-9А-ЯЁ]*$/i,
+    sk: /^[0-9A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ]*$/i,
+    sr: /^[0-9A-ZČĆŽŠĐ]*$/i,
+    tr: /^[0-9A-ZÇĞİıÖŞÜ]*$/i,
+    uk: /^[0-9А-ЩЬЮЯЄІЇҐ]*$/i,
+    ar: /^[٠١٢٣٤٥٦٧٨٩0-9ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ]*$/
+};
+var alphaDash = {
+    en: /^[0-9A-Z_-]*$/i,
+    cs: /^[0-9A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ_-]*$/i,
+    da: /^[0-9A-ZÆØÅ_-]*$/i,
+    de: /^[0-9A-ZÄÖÜß_-]*$/i,
+    es: /^[0-9A-ZÁÉÍÑÓÚÜ_-]*$/i,
+    fr: /^[0-9A-ZÀÂÆÇÉÈÊËÏÎÔŒÙÛÜŸ_-]*$/i,
+    lt: /^[0-9A-ZĄČĘĖĮŠŲŪŽ_-]*$/i,
+    nl: /^[0-9A-ZÉËÏÓÖÜ_-]*$/i,
+    hu: /^[0-9A-ZÁÉÍÓÖŐÚÜŰ_-]*$/i,
+    pl: /^[0-9A-ZĄĆĘŚŁŃÓŻŹ_-]*$/i,
+    pt: /^[0-9A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ_-]*$/i,
+    ru: /^[0-9А-ЯЁ_-]*$/i,
+    sk: /^[0-9A-ZÁÄČĎÉÍĹĽŇÓŔŠŤÚÝŽ_-]*$/i,
+    sr: /^[0-9A-ZČĆŽŠĐ_-]*$/i,
+    tr: /^[0-9A-ZÇĞİıÖŞÜ_-]*$/i,
+    uk: /^[0-9А-ЩЬЮЯЄІЇҐ_-]*$/i,
+    ar: /^[٠١٢٣٤٥٦٧٨٩0-9ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٰ_-]*$/
+};
+
+var validate = function (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var locale = ref[0]; if ( locale === void 0 ) locale = null;
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate(val, [locale]); });
+    }
+    if (!locale) {
+        return Object.keys(alpha).some(function (loc) { return alpha[loc].test(value); });
+    }
+    return (alpha[locale] || alpha.en).test(value);
+};
+
+var validate$1 = function (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var locale = ref[0]; if ( locale === void 0 ) locale = null;
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$1(val, [locale]); });
+    }
+    if (!locale) {
+        return Object.keys(alphaDash).some(function (loc) { return alphaDash[loc].test(value); });
+    }
+    return (alphaDash[locale] || alphaDash.en).test(value);
+};
+
+var validate$2 = function (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var locale = ref[0]; if ( locale === void 0 ) locale = null;
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$2(val, [locale]); });
+    }
+    if (!locale) {
+        return Object.keys(alphanumeric).some(function (loc) { return alphanumeric[loc].test(value); });
+    }
+    return (alphanumeric[locale] || alphanumeric.en).test(value);
+};
+
+var validate$3 = function (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var locale = ref[0]; if ( locale === void 0 ) locale = null;
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$3(val, [locale]); });
+    }
+    if (!locale) {
+        return Object.keys(alphaSpaces).some(function (loc) { return alphaSpaces[loc].test(value); });
+    }
+    return (alphaSpaces[locale] || alphaSpaces.en).test(value);
+};
+
+function before (value, ref) {
+    var otherValue = ref[0];
+    var inclusion = ref[1];
+    var format$$1 = ref[2];
+
+    if (typeof format$$1 === 'undefined') {
+        format$$1 = inclusion;
+        inclusion = false;
+    }
+    value = parseDate$1(value, format$$1);
+    otherValue = parseDate$1(otherValue, format$$1);
+    if (!value || !otherValue) {
+        return false;
+    }
+    return isBefore(value, otherValue) || inclusion && isEqual$1(value, otherValue);
+}
+
+var validate$4 = function (value, ref) {
+    var min = ref[0];
+    var max = ref[1];
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$4(val, [min,max]); });
+    }
+    return Number(min) <= value && Number(max) >= value;
+};
+
+function confirmed (value, other) { return String(value) === String(other); }
+
+function unwrapExports (x) {
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var assertString_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = assertString;
+    function assertString(input) {
+        var isString = typeof input === 'string' || input instanceof String;
+        if (!isString) {
+            throw new TypeError('This library (validator.js) validates strings only');
+        }
+    }
+    
+    module.exports = exports['default'];
+});
+var assertString = unwrapExports(assertString_1)
+
+var assertString$1 = /*#__PURE__*/Object.freeze({
+  default: assertString,
+  __moduleExports: assertString_1
+});
+
+var _assertString = ( assertString$1 && assertString ) || assertString$1;
+
+var isCreditCard_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = isCreditCard;
+    var _assertString2 = _interopRequireDefault(_assertString);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    
+    var creditCard = /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|(222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}|62[0-9]{14})$/;
+    function isCreditCard(str) {
+        (0, _assertString2.default)(str);
+        var sanitized = str.replace(/[- ]+/g, '');
+        if (!creditCard.test(sanitized)) {
+            return false;
+        }
+        var sum = 0;
+        var digit = void 0;
+        var tmpNum = void 0;
+        var shouldDouble = void 0;
+        for (var i = sanitized.length - 1;i >= 0; i--) {
+            digit = sanitized.substring(i, i + 1);
+            tmpNum = parseInt(digit, 10);
+            if (shouldDouble) {
+                tmpNum *= 2;
+                if (tmpNum >= 10) {
+                    sum += tmpNum % 10 + 1;
+                } else {
+                    sum += tmpNum;
+                }
+            } else {
+                sum += tmpNum;
+            }
+            shouldDouble = !shouldDouble;
+        }
+        return !(!(sum % 10 === 0 ? sanitized : false));
+    }
+    
+    module.exports = exports['default'];
+});
+var isCreditCard = unwrapExports(isCreditCard_1)
+
+function credit_card (value) { return isCreditCard(String(value)); }
+
+var validate$5 = function (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var decimals = ref[0]; if ( decimals === void 0 ) decimals = '*';
+    var separator = ref[1]; if ( separator === void 0 ) separator = '.';
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$5(val, [decimals,separator]); });
+    }
+    if (value === null || value === undefined || value === '') {
+        return true;
+    }
+    if (Number(decimals) === 0) {
+        return /^-?\d*$/.test(value);
+    }
+    var regexPart = decimals === '*' ? '+' : ("{1," + decimals + "}");
+    var regex = new RegExp(("^-?\\d*(\\" + separator + "\\d" + regexPart + ")?$"));
+    if (!regex.test(value)) {
+        return false;
+    }
+    var parsedValue = parseFloat(value);
+    return parsedValue === parsedValue;
+};
+
+function date_between (value, params) {
+    var assign, assign$1;
+
+    var min$$1;
+    var max$$1;
+    var format$$1;
+    var inclusivity = '()';
+    if (params.length > 3) {
+        (assign = params, min$$1 = assign[0], max$$1 = assign[1], inclusivity = assign[2], format$$1 = assign[3]);
+    } else {
+        (assign$1 = params, min$$1 = assign$1[0], max$$1 = assign$1[1], format$$1 = assign$1[2]);
+    }
+    var minDate = parseDate$1(String(min$$1), format$$1);
+    var maxDate = parseDate$1(String(max$$1), format$$1);
+    var dateVal = parseDate$1(String(value), format$$1);
+    if (!minDate || !maxDate || !dateVal) {
+        return false;
+    }
+    if (inclusivity === '()') {
+        return isAfter(dateVal, minDate) && isBefore(dateVal, maxDate);
+    }
+    if (inclusivity === '(]') {
+        return isAfter(dateVal, minDate) && (isEqual$1(dateVal, maxDate) || isBefore(dateVal, maxDate));
+    }
+    if (inclusivity === '[)') {
+        return isBefore(dateVal, maxDate) && (isEqual$1(dateVal, minDate) || isAfter(dateVal, minDate));
+    }
+    return isEqual$1(dateVal, maxDate) || isEqual$1(dateVal, minDate) || isBefore(dateVal, maxDate) && isAfter(dateVal, minDate);
+}
+
+function date_format (value, ref) {
+	var format = ref[0];
+
+	return !(!parseDate$1(value, format));
+}
+
+var validate$6 = function (value, ref) {
+    var length = ref[0];
+
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$6(val, [length]); });
+    }
+    var strVal = String(value);
+    return /^[0-9]*$/.test(strVal) && strVal.length === Number(length);
+};
+
+var validateImage = function (file, width, height) {
+    var URL = window.URL || window.webkitURL;
+    return new Promise(function (resolve) {
+        var image = new Image();
+        image.onerror = (function () { return resolve({
+            valid: false
+        }); });
+        image.onload = (function () { return resolve({
+            valid: image.width === Number(width) && image.height === Number(height)
+        }); });
+        image.src = URL.createObjectURL(file);
+    });
+};
+function dimensions (files, ref) {
+    var width = ref[0];
+    var height = ref[1];
+
+    var list = [];
+    for (var i = 0;i < files.length; i++) {
+        if (!/\.(jpg|svg|jpeg|png|bmp|gif)$/i.test(files[i].name)) {
+            return false;
+        }
+        list.push(files[i]);
+    }
+    return Promise.all(list.map(function (file) { return validateImage(file, width, height); }));
+}
+
+var merge_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = merge;
+    function merge() {
+        var obj = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        var defaults = arguments[1];
+        for (var key in defaults) {
+            if (typeof obj[key] === 'undefined') {
+                obj[key] = defaults[key];
+            }
+        }
+        return obj;
+    }
+    
+    module.exports = exports['default'];
+});
+var merge$1 = unwrapExports(merge_1)
+
+var merge$2 = /*#__PURE__*/Object.freeze({
+  default: merge$1,
+  __moduleExports: merge_1
+});
+
+var isByteLength_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+        return typeof obj;
+    } : function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    exports.default = isByteLength;
+    var _assertString2 = _interopRequireDefault(_assertString);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    
+    function isByteLength(str, options) {
+        (0, _assertString2.default)(str);
+        var min = void 0;
+        var max = void 0;
+        if ((typeof options === 'undefined' ? 'undefined' : _typeof(options)) === 'object') {
+            min = options.min || 0;
+            max = options.max;
+        } else {
+            min = arguments[1];
+            max = arguments[2];
+        }
+        var len = encodeURI(str).split(/%..|./).length - 1;
+        return len >= min && (typeof max === 'undefined' || len <= max);
+    }
+    
+    module.exports = exports['default'];
+});
+var isByteLength = unwrapExports(isByteLength_1)
+
+var isByteLength$1 = /*#__PURE__*/Object.freeze({
+  default: isByteLength,
+  __moduleExports: isByteLength_1
+});
+
+var _merge = ( merge$2 && merge$1 ) || merge$2;
+
+var isFQDN_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = isFQDN;
+    var _assertString2 = _interopRequireDefault(_assertString);
+    var _merge2 = _interopRequireDefault(_merge);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    
+    var default_fqdn_options = {
+        require_tld: true,
+        allow_underscores: false,
+        allow_trailing_dot: false
+    };
+    function isFQDN(str, options) {
+        (0, _assertString2.default)(str);
+        options = (0, _merge2.default)(options, default_fqdn_options);
+        if (options.allow_trailing_dot && str[str.length - 1] === '.') {
+            str = str.substring(0, str.length - 1);
+        }
+        var parts = str.split('.');
+        if (options.require_tld) {
+            var tld = parts.pop();
+            if (!parts.length || !/^([a-z\u00a1-\uffff]{2,}|xn[a-z0-9-]{2,})$/i.test(tld)) {
+                return false;
+            }
+            if (/[\s\u2002-\u200B\u202F\u205F\u3000\uFEFF\uDB40\uDC20]/.test(tld)) {
+                return false;
+            }
+        }
+        for (var part, i = 0;i < parts.length; i++) {
+            part = parts[i];
+            if (options.allow_underscores) {
+                part = part.replace(/_/g, '');
+            }
+            if (!/^[a-z\u00a1-\uffff0-9-]+$/i.test(part)) {
+                return false;
+            }
+            if (/[\uff01-\uff5e]/.test(part)) {
+                return false;
+            }
+            if (part[0] === '-' || part[part.length - 1] === '-') {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    module.exports = exports['default'];
+});
+var isFQDN = unwrapExports(isFQDN_1)
+
+var isFQDN$1 = /*#__PURE__*/Object.freeze({
+  default: isFQDN,
+  __moduleExports: isFQDN_1
+});
+
+var _isByteLength = ( isByteLength$1 && isByteLength ) || isByteLength$1;
+
+var _isFQDN = ( isFQDN$1 && isFQDN ) || isFQDN$1;
+
+var isEmail_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = isEmail;
+    var _assertString2 = _interopRequireDefault(_assertString);
+    var _merge2 = _interopRequireDefault(_merge);
+    var _isByteLength2 = _interopRequireDefault(_isByteLength);
+    var _isFQDN2 = _interopRequireDefault(_isFQDN);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    
+    var default_email_options = {
+        allow_display_name: false,
+        require_display_name: false,
+        allow_utf8_local_part: true,
+        require_tld: true
+    };
+    var displayName = /^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~\.\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~\,\.\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF\s]*<(.+)>$/i;
+    var emailUserPart = /^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~]+$/i;
+    var quotedEmailUser = /^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f]))*$/i;
+    var emailUserUtf8Part = /^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+$/i;
+    var quotedEmailUserUtf8 = /^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*$/i;
+    function isEmail(str, options) {
+        (0, _assertString2.default)(str);
+        options = (0, _merge2.default)(options, default_email_options);
+        if (options.require_display_name || options.allow_display_name) {
+            var display_email = str.match(displayName);
+            if (display_email) {
+                str = display_email[1];
+            } else if (options.require_display_name) {
+                return false;
+            }
+        }
+        var parts = str.split('@');
+        var domain = parts.pop();
+        var user = parts.join('@');
+        var lower_domain = domain.toLowerCase();
+        if (lower_domain === 'gmail.com' || lower_domain === 'googlemail.com') {
+            user = user.replace(/\./g, '').toLowerCase();
+        }
+        if (!(0, _isByteLength2.default)(user, {
+            max: 64
+        }) || !(0, _isByteLength2.default)(domain, {
+            max: 254
+        })) {
+            return false;
+        }
+        if (!(0, _isFQDN2.default)(domain, {
+            require_tld: options.require_tld
+        })) {
+            return false;
+        }
+        if (user[0] === '"') {
+            user = user.slice(1, user.length - 1);
+            return options.allow_utf8_local_part ? quotedEmailUserUtf8.test(user) : quotedEmailUser.test(user);
+        }
+        var pattern = options.allow_utf8_local_part ? emailUserUtf8Part : emailUserPart;
+        var user_parts = user.split('.');
+        for (var i = 0;i < user_parts.length; i++) {
+            if (!pattern.test(user_parts[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    module.exports = exports['default'];
+});
+var isEmail = unwrapExports(isEmail_1)
+
+var validate$7 = function (value) {
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return isEmail(String(val)); });
+    }
+    return isEmail(String(value));
+};
+
+function ext (files, extensions) {
+    var regex = new RegExp((".(" + (extensions.join('|')) + ")$"), 'i');
+    return files.every(function (file) { return regex.test(file.name); });
+}
+
+function image (files) { return files.every(function (file) { return /\.(jpg|svg|jpeg|png|bmp|gif)$/i.test(file.name); }); }
+
+var validate$8 = function (value, options) {
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$8(val, options); });
+    }
+    return !(!options.filter(function (option) { return option == value; }).length);
+};
+
+var isIP_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = isIP;
+    var _assertString2 = _interopRequireDefault(_assertString);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    
+    var ipv4Maybe = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/;
+    var ipv6Block = /^[0-9A-F]{1,4}$/i;
+    function isIP(str) {
+        var version = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+        (0, _assertString2.default)(str);
+        version = String(version);
+        if (!version) {
+            return isIP(str, 4) || isIP(str, 6);
+        } else if (version === '4') {
+            if (!ipv4Maybe.test(str)) {
+                return false;
+            }
+            var parts = str.split('.').sort(function (a, b) {
+                return a - b;
+            });
+            return parts[3] <= 255;
+        } else if (version === '6') {
+            var blocks = str.split(':');
+            var foundOmissionBlock = false;
+            var foundIPv4TransitionBlock = isIP(blocks[blocks.length - 1], 4);
+            var expectedNumberOfBlocks = foundIPv4TransitionBlock ? 7 : 8;
+            if (blocks.length > expectedNumberOfBlocks) {
+                return false;
+            }
+            if (str === '::') {
+                return true;
+            } else if (str.substr(0, 2) === '::') {
+                blocks.shift();
+                blocks.shift();
+                foundOmissionBlock = true;
+            } else if (str.substr(str.length - 2) === '::') {
+                blocks.pop();
+                blocks.pop();
+                foundOmissionBlock = true;
+            }
+            for (var i = 0;i < blocks.length; ++i) {
+                if (blocks[i] === '' && i > 0 && i < blocks.length - 1) {
+                    if (foundOmissionBlock) {
+                        return false;
+                    }
+                    foundOmissionBlock = true;
+                } else if (foundIPv4TransitionBlock && i === blocks.length - 1) ; else if (!ipv6Block.test(blocks[i])) {
+                    return false;
+                }
+            }
+            if (foundOmissionBlock) {
+                return blocks.length >= 1;
+            }
+            return blocks.length === expectedNumberOfBlocks;
+        }
+        return false;
+    }
+    
+    module.exports = exports['default'];
+});
+var isIP = unwrapExports(isIP_1)
+
+function ip (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var version = ref[0]; if ( version === void 0 ) version = 4;
+
+    if (isNullOrUndefined(value)) {
+        value = '';
+    }
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return isIP(val, version); });
+    }
+    return isIP(value, version);
+}
+
+function is (value, ref) {
+	if ( ref === void 0 ) ref = [];
+	var other = ref[0];
+
+	return value === other;
+}
+
+function is_not (value, ref) {
+	if ( ref === void 0 ) ref = [];
+	var other = ref[0];
+
+	return value !== other;
+}
+
+var compare = function (value, length, max) {
+    if (max === undefined) {
+        return value.length === length;
+    }
+    max = Number(max);
+    return value.length >= length && value.length <= max;
+};
+function length (value, ref) {
+    var length = ref[0];
+    var max = ref[1]; if ( max === void 0 ) max = undefined;
+
+    length = Number(length);
+    if (value === undefined || value === null) {
+        return false;
+    }
+    if (typeof value === 'number') {
+        value = String(value);
+    }
+    if (!value.length) {
+        value = toArray(value);
+    }
+    return compare(value, length, max);
+}
+
+function integer (value) {
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return /^-?[0-9]+$/.test(String(val)); });
+    }
+    return /^-?[0-9]+$/.test(String(value));
+}
+
+function max$1 (value, ref) {
+    var length = ref[0];
+
+    if (value === undefined || value === null) {
+        return length >= 0;
+    }
+    return String(value).length <= length;
+}
+
+function max_value (value, ref) {
+    var max = ref[0];
+
+    if (Array.isArray(value) || value === null || value === undefined || value === '') {
+        return false;
+    }
+    return Number(value) <= max;
+}
+
+function mimes (files, mimes) {
+    var regex = new RegExp(((mimes.join('|').replace('*', '.+')) + "$"), 'i');
+    return files.every(function (file) { return regex.test(file.type); });
+}
+
+function min$1 (value, ref) {
+    var length = ref[0];
+
+    if (value === undefined || value === null) {
+        return false;
+    }
+    return String(value).length >= length;
+}
+
+function min_value (value, ref) {
+    var min = ref[0];
+
+    if (Array.isArray(value) || value === null || value === undefined || value === '') {
+        return false;
+    }
+    return Number(value) >= min;
+}
+
+var validate$9 = function (value, options) {
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return validate$9(val, options); });
+    }
+    return !options.filter(function (option) { return option == value; }).length;
+};
+
+function numeric (value) {
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return /^[0-9]+$/.test(String(val)); });
+    }
+    return /^[0-9]+$/.test(String(value));
+}
+
+function regex (value, ref) {
+    var regex = ref[0];
+    var flags = ref.slice(1);
+
+    if (regex instanceof RegExp) {
+        return regex.test(value);
+    }
+    return new RegExp(regex, flags).test(String(value));
+}
+
+function required (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var invalidateFalse = ref[0]; if ( invalidateFalse === void 0 ) invalidateFalse = false;
+
+    if (Array.isArray(value)) {
+        return !(!value.length);
+    }
+    if (value === false && invalidateFalse) {
+        return false;
+    }
+    if (value === undefined || value === null) {
+        return false;
+    }
+    return !(!String(value).trim().length);
+}
+
+function size (files, ref) {
+    var size = ref[0];
+
+    if (isNaN(size)) {
+        return false;
+    }
+    var nSize = Number(size) * 1024;
+    for (var i = 0;i < files.length; i++) {
+        if (files[i].size > nSize) {
+            return false;
+        }
+    }
+    return true;
+}
+
+var isURL_1 = createCommonjsModule(function (module, exports) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = isURL;
+    var _assertString2 = _interopRequireDefault(_assertString);
+    var _isFQDN2 = _interopRequireDefault(_isFQDN);
+    var _isIP2 = _interopRequireDefault(isIP_1);
+    var _merge2 = _interopRequireDefault(_merge);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    
+    var default_url_options = {
+        protocols: ['http','https','ftp'],
+        require_tld: true,
+        require_protocol: false,
+        require_host: true,
+        require_valid_protocol: true,
+        allow_underscores: false,
+        allow_trailing_dot: false,
+        allow_protocol_relative_urls: false
+    };
+    var wrapped_ipv6 = /^\[([^\]]+)\](?::([0-9]+))?$/;
+    function isRegExp(obj) {
+        return Object.prototype.toString.call(obj) === '[object RegExp]';
+    }
+    
+    function checkHost(host, matches) {
+        for (var i = 0;i < matches.length; i++) {
+            var match = matches[i];
+            if (host === match || isRegExp(match) && match.test(host)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    function isURL(url, options) {
+        (0, _assertString2.default)(url);
+        if (!url || url.length >= 2083 || /[\s<>]/.test(url)) {
+            return false;
+        }
+        if (url.indexOf('mailto:') === 0) {
+            return false;
+        }
+        options = (0, _merge2.default)(options, default_url_options);
+        var protocol = void 0, auth = void 0, host = void 0, hostname = void 0, port = void 0, port_str = void 0, split = void 0, ipv6 = void 0;
+        split = url.split('#');
+        url = split.shift();
+        split = url.split('?');
+        url = split.shift();
+        split = url.split('://');
+        if (split.length > 1) {
+            protocol = split.shift();
+            if (options.require_valid_protocol && options.protocols.indexOf(protocol) === -1) {
+                return false;
+            }
+        } else if (options.require_protocol) {
+            return false;
+        } else if (options.allow_protocol_relative_urls && url.substr(0, 2) === '//') {
+            split[0] = url.substr(2);
+        }
+        url = split.join('://');
+        if (url === '') {
+            return false;
+        }
+        split = url.split('/');
+        url = split.shift();
+        if (url === '' && !options.require_host) {
+            return true;
+        }
+        split = url.split('@');
+        if (split.length > 1) {
+            auth = split.shift();
+            if (auth.indexOf(':') >= 0 && auth.split(':').length > 2) {
+                return false;
+            }
+        }
+        hostname = split.join('@');
+        port_str = null;
+        ipv6 = null;
+        var ipv6_match = hostname.match(wrapped_ipv6);
+        if (ipv6_match) {
+            host = '';
+            ipv6 = ipv6_match[1];
+            port_str = ipv6_match[2] || null;
+        } else {
+            split = hostname.split(':');
+            host = split.shift();
+            if (split.length) {
+                port_str = split.join(':');
+            }
+        }
+        if (port_str !== null) {
+            port = parseInt(port_str, 10);
+            if (!/^[0-9]+$/.test(port_str) || port <= 0 || port > 65535) {
+                return false;
+            }
+        }
+        if (!(0, _isIP2.default)(host) && !(0, _isFQDN2.default)(host, options) && (!ipv6 || !(0, _isIP2.default)(ipv6, 6))) {
+            return false;
+        }
+        host = host || ipv6;
+        if (options.host_whitelist && !checkHost(host, options.host_whitelist)) {
+            return false;
+        }
+        if (options.host_blacklist && checkHost(host, options.host_blacklist)) {
+            return false;
+        }
+        return true;
+    }
+    
+    module.exports = exports['default'];
+});
+var isURL = unwrapExports(isURL_1)
+
+function url (value, ref) {
+    if ( ref === void 0 ) ref = [];
+    var requireProtocol = ref[0]; if ( requireProtocol === void 0 ) requireProtocol = false;
+
+    var options = {
+        require_protocol: !(!requireProtocol),
+        allow_underscores: true
+    };
+    if (isNullOrUndefined(value)) {
+        value = '';
+    }
+    if (Array.isArray(value)) {
+        return value.every(function (val) { return isURL(val, options); });
+    }
+    return isURL(value, options);
+}
+
+var Rules = {
+    after: after,
+    alpha_dash: validate$1,
+    alpha_num: validate$2,
+    alpha_spaces: validate$3,
+    alpha: validate,
+    before: before,
+    between: validate$4,
+    confirmed: confirmed,
+    credit_card: credit_card,
+    date_between: date_between,
+    date_format: date_format,
+    decimal: validate$5,
+    digits: validate$6,
+    dimensions: dimensions,
+    email: validate$7,
+    ext: ext,
+    image: image,
+    in: validate$8,
+    integer: integer,
+    length: length,
+    ip: ip,
+    is_not: is_not,
+    is: is,
+    max: max$1,
+    max_value: max_value,
+    mimes: mimes,
+    min: min$1,
+    min_value: min_value,
+    not_in: validate$9,
+    numeric: numeric,
+    regex: regex,
+    required: required,
+    size: size,
+    url: url
+}
+
+var normalize = function (fields) {
+    if (Array.isArray(fields)) {
+        return fields.reduce(function (prev, curr) {
+            if (~curr.indexOf('.')) {
+                prev[curr.split('.')[1]] = curr;
+            } else {
+                prev[curr] = curr;
+            }
+            return prev;
+        }, {});
+    }
+    return fields;
+};
+var combine = function (lhs, rhs) {
+    var mapper = {
+        pristine: function (lhs, rhs) { return lhs && rhs; },
+        dirty: function (lhs, rhs) { return lhs || rhs; },
+        touched: function (lhs, rhs) { return lhs || rhs; },
+        untouched: function (lhs, rhs) { return lhs && rhs; },
+        valid: function (lhs, rhs) { return lhs && rhs; },
+        invalid: function (lhs, rhs) { return lhs || rhs; },
+        pending: function (lhs, rhs) { return lhs || rhs; },
+        required: function (lhs, rhs) { return lhs || rhs; },
+        validated: function (lhs, rhs) { return lhs && rhs; }
+    };
+    return Object.keys(mapper).reduce(function (flags, flag) {
+        flags[flag] = mapper[flag](lhs[flag], rhs[flag]);
+        return flags;
+    }, {});
+};
+var mapScope = function (scope, deep) {
+    if ( deep === void 0 ) deep = true;
+
+    return Object.keys(scope).reduce(function (flags, field) {
+    if (!flags) {
+        flags = assign({}, scope[field]);
+        return flags;
+    }
+    var isScope = field.indexOf('$') === 0;
+    if (deep && isScope) {
+        return combine(mapScope(scope[field]), flags);
+    } else if (!deep && isScope) {
+        return flags;
+    }
+    flags = combine(flags, scope[field]);
+    return flags;
+}, null);
+};
+var mapFields = function (fields) {
+    if (!fields) {
+        return function () {
+            return mapScope(this.$validator.flags);
+        };
+    }
+    var normalized = normalize(fields);
+    return Object.keys(normalized).reduce(function (prev, curr) {
+        var field = normalized[curr];
+        prev[curr] = function mappedField() {
+            if (this.$validator.flags[field]) {
+                return this.$validator.flags[field];
+            }
+            if (normalized[curr] === '*') {
+                return mapScope(this.$validator.flags, false);
+            }
+            var index = field.indexOf('.');
+            if (index <= 0) {
+                return {};
+            }
+            var ref = field.split('.');
+            var scope = ref[0];
+            var name = ref.slice(1);
+            scope = this.$validator.flags[("$" + scope)];
+            name = name.join('.');
+            if (name === '*' && scope) {
+                return mapScope(scope);
+            }
+            if (scope && scope[name]) {
+                return scope[name];
+            }
+            return {};
+        };
+        return prev;
+    }, {});
+};
+
+var ErrorComponent = {
+    name: 'vv-error',
+    inject: ['$validator'],
+    functional: true,
+    props: {
+        for: {
+            type: String,
+            required: true
+        },
+        tag: {
+            type: String,
+            default: 'span'
+        }
+    },
+    render: function render(createElement, ref) {
+        var props = ref.props;
+        var injections = ref.injections;
+
+        return createElement(props.tag, injections.$validator.errors.first(props.for));
+    }
+};
+
+var version = '2.0.9';
+var rulesPlugin = function (ref) {
+    var Validator$$1 = ref.Validator;
+
+    Object.keys(Rules).forEach(function (rule) {
+        Validator$$1.extend(rule, Rules[rule]);
+    });
+    Validator$$1.localize('en', locale);
+};
+use(rulesPlugin);
+var index_esm = {
+    install: install,
+    use: use,
+    directive: directive,
+    mixin: mixin,
+    mapFields: mapFields,
+    Validator: Validator,
+    ErrorBag: ErrorBag,
+    ErrorComponent: ErrorComponent,
+    Rules: Rules,
+    version: version
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (index_esm);
+
+
 
 /***/ })
 

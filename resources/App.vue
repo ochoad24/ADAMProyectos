@@ -1,7 +1,9 @@
 <template>
 <div id="app">
+    <v-app id="app">
     <preloader v-show="this.$store.state.preloader"></preloader>
     <router-view></router-view>
+    </v-app>
 </div>
 </template>
 <script>
@@ -18,3 +20,5 @@ export default {
 <style lang="scss" src="./sass/bootstrap/bootstrap.scss"></style>
 <style src="font-awesome/css/font-awesome.min.css"></style>
 <style src="themify-icons/css/themify-icons.css"></style>
+
+

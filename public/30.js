@@ -1,140 +1,186 @@
 webpackJsonp([30],{
 
-/***/ 1462:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1463);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("35096bdc", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1463:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1464:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1465);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("2d1df132", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr_notificatons.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr_notificatons.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1465:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.btn {\n    padding: 6px 4px;\n}\n.btn.clear {\n    color: #333;\n}\n.toast-success {\n    background-color: #66cc99;\n}\n.toast-info {\n    background-color: #66ccff;\n}\n.toast-error {\n    background-color: #ff6666;\n}\n.toast-warning {\n    background-color: #f0ad4e;\n}\n.text-info.message {\n    margin-bottom: 20px;\n}\n\n\n/* buttons xs responsive*/\n@media only screen and (max-width: 480px) {\n.toastrshow {\n        margin-top: 10px;\n}\n}\n\n\n/*notification.html*/\n.notify_page .btn {\n    margin-top: 20px;\n}\ntextarea {\n    resize: vertical;\n}\n\n\n/*outline buttons*/\n.btn-outline-default,\n.btn-outline-default:hover,\n.btn-outline-default:focus {\n    background-color: rgba(220, 220, 220, .1);\n    border: 1px solid #dcdcdc;\n    color: #dcdcdc;\n    border-radius: 2px;\n}\n.btn-outline-primary,\n.btn-outline-primary:hover,\n.btn-outline-primary:focus {\n    background-color: rgba(66, 139, 202, .1);\n    border: 1px solid #6699cc;\n    color: #6699cc;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-primary {\n    background-color: rgba(102, 153, 204, 1);\n    border: 1px solid #0069C4;\n}\n.btn-outline-success,\n.btn-outline-success:hover,\n.btn-outline-success:focus {\n    background-color: rgba(34, 214, 157, .1);\n    border: 1px solid #66cc99;\n    color: #66cc99;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-success {\n    background-color: rgba(102, 204, 153, 1);\n    border: 1px solid #66cc99;\n}\n.btn-outline-info,\n.btn-outline-info:hover,\n.btn-outline-info:focus {\n    background-color: rgba(79, 193, 233, .1);\n    border: 1px solid #66ccff;\n    color: #66ccff;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-info {\n    background-color: rgba(102, 204, 255, 1);\n    border: 1px solid #66ccff;\n}\n.btn-outline-danger,\n.btn-outline-danger:hover,\n.btn-outline-danger:focus {\n    background-color: rgba(251, 134, 120, .1);\n    border: 1px solid #ff6666;\n    color: #ff6666;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-danger {\n    background-color: rgba(255, 102, 102, 1);\n    border: 1px solid #ff6666;\n}\n.btn-outline-warning,\n.btn-outline-warning:hover,\n.btn-outline-warning:focus {\n    background-color: rgba(255, 182, 95, .1);\n    border: 1px solid #ffcc66;\n    color: #ffcc66;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-warning {\n    background-color: rgba(240, 173, 78, 1);\n    border: 1px solid #f0ad4e;\n}\n.source {\n    width: 80%;\n}\n.notif-types {\n    margin: 0 0 18px 0;\n    border: 1px solid #eee;\n    padding-bottom: 19px;\n    border-radius: 2px;\n}\n.m-t-30 {\n    margin-top: 30px;\n}\n.m-t-35 {\n    margin-top: 35px;\n}\n.ui-pnotify.translucent.ui-pnotify-fade-in {\n    opacity: .8;\n}\n\n\n/* Notification Responsive */\n@media only screen and (max-width: 767px) {\nhtml > body > .ui-pnotify {\n        bottom: auto !important;\n        left: 0 !important;\n        margin: 0 !important;\n        right: 0 !important;\n        top: 60px !important;\n        width: auto !important;\n}\nhtml > body > .ui-pnotify .notification {\n        border-radius: 0 !important;\n        height: auto !important;\n        position: static !important;\n        width: 100%;\n}\nhtml > body > .ui-pnotify .notification .ui-pnotify-title,\n    html > body > .ui-pnotify .notification .ui-pnotify-text {\n        padding-right: 35px !important;\n}\nhtml > body > .ui-pnotify .notification .ui-pnotify-sticker {\n        display: none !important;\n}\nhtml > body > .ui-pnotify .notification .ui-pnotify-closer {\n        display: block !important;\n        font-size: 24px !important;\n        visibility: visible !important;\n}\n}\n.btn:active{\n    color: #fff !important;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1466:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1467);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("1dc85e7a", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./toastr_notifications.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./toastr_notifications.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1467:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@media(max-width:320px){\nbody #app .header .navbar-nav .messages-menu > .dropdown-menu{\n    transform: translate3d(-80px, 55px, 0px) !important;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ 1468:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1469);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("6a9e6c33", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./clockface.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./clockface.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1469:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.clearfix {\r\n  *zoom: 1;\n}\n.clearfix:before,\r\n.clearfix:after {\r\n  display: table;\r\n  content: \"\";\r\n  line-height: 0;\n}\n.clearfix:after {\r\n  clear: both;\n}\n.hide-text {\r\n  font: 0/0 a;\r\n  color: transparent;\r\n  text-shadow: none;\r\n  background-color: transparent;\r\n  border: 0;\n}\n.input-block-level {\r\n  display: block;\r\n  width: 100%;\r\n  min-height: 30px;\r\n  -webkit-box-sizing: border-box;\r\n  -moz-box-sizing: border-box;\r\n  box-sizing: border-box;\n}\n.clockface {\r\n  width: 160px;\r\n  padding: 3px;\r\n  text-align: center;\r\n  /*\r\n    .l3 .center span {\r\n    \tvertical-align: middle;\r\n\t\tdisplay: inline-block;\r\n\t\t.ie7-inline-block();  \r\n\t\tpadding: 0 2px;  \t\r\n    }\r\n    */\r\n\r\n  /*\r\n    input {\r\n    \twidth: 20px;\r\n    \tmargin: 0;\r\n    \tvertical-align: top; \r\n     }\t\r\n\r\n    a {\r\n    \ttext-decoration: none;\r\n    \tpadding: 0 3px;\r\n    \tvertical-align: top;\r\n    \tfont-size: 0.85em;\r\n    \t.border-radius(3px);\r\n\r\n    \t&.am {margin-right: 8px;}\t\r\n    \t\r\n    \t&.active,\r\n    \t&.active:hover {\r\n    \t\t.buttonBackground(@btnSuccessBackground, spin(@btnSuccessBackground, 20));\r\n    \t}\r\n    }\r\n    */\n}\n.clockface > div {\r\n  clear: both;\r\n  overflow: auto;\n}\n.clockface .outer,\r\n.clockface .inner {\r\n  width: 22px;\r\n  height: 22px;\r\n  line-height: 22px;\r\n  cursor: default;\r\n  -webkit-border-radius: 4px;\r\n  -moz-border-radius: 4px;\r\n  border-radius: 4px;\n}\n.clockface .outer.active,\r\n.clockface .inner.active,\r\n.clockface .outer.active:hover,\r\n.clockface .inner.active:hover {\r\n  color: #fff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\n}\n.clockface .outer:hover,\r\n.clockface .inner:hover {\r\n  background-color: #dcdcdc;\n}\n.clockface .outer {\r\n  color: gray;\r\n  font-size: 0.8em;\n}\n.clockface .outer.active,\r\n.clockface .outer.active:hover {\r\n  color: #ffffff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\r\n  background-color: #5bb75b;\r\n  background-image: -moz-linear-gradient(top, #62c462, #51a351);\r\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));\r\n  background-image: -webkit-linear-gradient(top, #62c462, #51a351);\r\n  background-image: -o-linear-gradient(top, #62c462, #51a351);\r\n  background-image: linear-gradient(to bottom, #62c462, #51a351);\r\n  background-repeat: repeat-x;\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);\r\n  border-color: #51a351 #51a351 #387038;\r\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n  *background-color: #51a351;\r\n  /* Darken IE7 buttons by default so they stand out more given they won't have borders */\r\n\r\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.clockface .outer.active:hover,\r\n.clockface .outer.active:hover:hover,\r\n.clockface .outer.active:active,\r\n.clockface .outer.active:hover:active,\r\n.clockface .outer.active.active,\r\n.clockface .outer.active:hover.active,\r\n.clockface .outer.active.disabled,\r\n.clockface .outer.active:hover.disabled,\r\n.clockface .outer.active[disabled],\r\n.clockface .outer.active:hover[disabled] {\r\n  color: #ffffff;\r\n  background-color: #51a351;\r\n  *background-color: #499249;\n}\n.clockface .outer.active:active,\r\n.clockface .outer.active:hover:active,\r\n.clockface .outer.active.active,\r\n.clockface .outer.active:hover.active {\r\n  background-color: #408140 \\9;\n}\n.clockface .inner.active,\r\n.clockface .inner.active:hover {\r\n  color: #ffffff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\r\n  background-color: #006dcc;\r\n  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));\r\n  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: -o-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: linear-gradient(to bottom, #0088cc, #0044cc);\r\n  background-repeat: repeat-x;\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);\r\n  border-color: #0044cc #0044cc #002a80;\r\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n  *background-color: #0044cc;\r\n  /* Darken IE7 buttons by default so they stand out more given they won't have borders */\r\n\r\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.clockface .inner.active:hover,\r\n.clockface .inner.active:hover:hover,\r\n.clockface .inner.active:active,\r\n.clockface .inner.active:hover:active,\r\n.clockface .inner.active.active,\r\n.clockface .inner.active:hover.active,\r\n.clockface .inner.active.disabled,\r\n.clockface .inner.active:hover.disabled,\r\n.clockface .inner.active[disabled],\r\n.clockface .inner.active:hover[disabled] {\r\n  color: #ffffff;\r\n  background-color: #0044cc;\r\n  *background-color: #003bb3;\n}\n.clockface .inner.active:active,\r\n.clockface .inner.active:hover:active,\r\n.clockface .inner.active.active,\r\n.clockface .inner.active:hover.active {\r\n  background-color: #003399 \\9;\n}\n.clockface .l1 .cell,\r\n.clockface .l5 .cell {\r\n  width: 22px;\r\n  display: inline-block;\r\n  *display: inline;\r\n  /* IE7 inline-block hack */\r\n\r\n  *zoom: 1;\n}\n.clockface .l1 .outer {\r\n  margin-bottom: 3px;\n}\n.clockface .l5 .outer {\r\n  margin-top: 3px;\n}\n.clockface .l2 .outer,\r\n.clockface .l3 .outer,\r\n.clockface .l4 .outer,\r\n.clockface .l2 .inner,\r\n.clockface .l3 .inner,\r\n.clockface .l4 .inner {\r\n  display: inline-block;\r\n  *display: inline;\r\n  /* IE7 inline-block hack */\r\n\r\n  *zoom: 1;\r\n  vertical-align: middle;\n}\n.clockface .l2 .left,\r\n.clockface .l3 .left,\r\n.clockface .l4 .left {\r\n  float: left;\n}\n.clockface .l2 .left .outer,\r\n.clockface .l3 .left .outer,\r\n.clockface .l4 .left .outer {\r\n  margin-right: 3px;\n}\n.clockface .l2 .right,\r\n.clockface .l3 .right,\r\n.clockface .l4 .right {\r\n  float: right;\n}\n.clockface .l2 .right .outer,\r\n.clockface .l3 .right .outer,\r\n.clockface .l4 .right .outer {\r\n  margin-left: 3px;\n}\n.clockface .ampm {\r\n  font-size: 0.8em;\r\n  text-decoration: none;\r\n  border-bottom: dashed 1px;\n}\n.clockface .ampm:focus {\r\n  outline: 0;\r\n  outline: thin dotted \\9;\r\n  /* IE6-9 */\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1470:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1471);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("5722bc59", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-clockpicker.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-clockpicker.min.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1471:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\n * ClockPicker v0.0.7 for Bootstrap (http://weareoutman.github.io/clockpicker/)\n * Copyright 2014 Wang Shenwei.\n * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)\n */\n.clockpicker .input-group-addon{cursor:pointer\n}\n.clockpicker-moving{cursor:move\n}\n.clockpicker-align-left.popover>.arrow{left:25px\n}\n.clockpicker-align-top.popover>.arrow{top:17px\n}\n.clockpicker-align-right.popover>.arrow{left:auto;right:25px\n}\n.clockpicker-align-bottom.popover>.arrow{top:auto;bottom:6px\n}\n.clockpicker-popover .popover-title{background-color:#fff;color:#999;font-size:24px;font-weight:700;line-height:30px;text-align:center\n}\n.clockpicker-popover .popover-title span{cursor:pointer\n}\n.clockpicker-popover .popover-content{background-color:#f8f8f8;padding:12px\n}\n.popover-content:last-child{border-bottom-left-radius:5px;border-bottom-right-radius:5px\n}\n.clockpicker-plate{background-color:#fff;border:1px solid #ccc;border-radius:50%;width:200px;height:200px;overflow:visible;position:relative;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none\n}\n.clockpicker-canvas,.clockpicker-dial{width:200px;height:200px;position:absolute;left:-1px;top:-1px\n}\n.clockpicker-minutes{visibility:hidden\n}\n.clockpicker-tick{border-radius:50%;color:#666;line-height:26px;text-align:center;width:26px;height:26px;position:absolute;cursor:pointer\n}\n.clockpicker-tick.active,.clockpicker-tick:hover{background-color:#c0e5f7;background-color:rgba(0,149,221,.25)\n}\n.clockpicker-button{background-image:none;background-color:#fff;border-width:1px 0 0;border-top-left-radius:0;border-top-right-radius:0;margin:0;padding:10px 0\n}\n.clockpicker-button:hover{background-image:none;background-color:#ebebeb\n}\n.clockpicker-button:focus{outline:0!important\n}\n.clockpicker-dial{-webkit-transition:-webkit-transform 350ms,opacity 350ms;-moz-transition:-moz-transform 350ms,opacity 350ms;-ms-transition:-ms-transform 350ms,opacity 350ms;-o-transition:-o-transform 350ms,opacity 350ms;transition:transform 350ms,opacity 350ms\n}\n.clockpicker-dial-out{opacity:0\n}\n.clockpicker-hours.clockpicker-dial-out{-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2);-ms-transform:scale(1.2,1.2);-o-transform:scale(1.2,1.2);transform:scale(1.2,1.2)\n}\n.clockpicker-minutes.clockpicker-dial-out{-webkit-transform:scale(.8,.8);-moz-transform:scale(.8,.8);-ms-transform:scale(.8,.8);-o-transform:scale(.8,.8);transform:scale(.8,.8)\n}\n.clockpicker-canvas{-webkit-transition:opacity 175ms;-moz-transition:opacity 175ms;-ms-transition:opacity 175ms;-o-transition:opacity 175ms;transition:opacity 175ms\n}\n.clockpicker-canvas-out{opacity:.25\n}\n.clockpicker-canvas-bearing,.clockpicker-canvas-fg{stroke:none;fill:#0095dd\n}\n.clockpicker-canvas-bg{stroke:none;fill:#c0e5f7\n}\n.clockpicker-canvas-bg-trans{fill:rgba(0,149,221,.25)\n}\n.clockpicker-canvas line{stroke:#0095dd;stroke-width:1;stroke-linecap:round\n}\n.clockpicker-button.am-button{margin:1px;padding:5px;border:1px solid rgba(0,0,0,.2);border-radius:4px\n}\n.clockpicker-button.pm-button{margin:1px 1px 1px 136px;padding:5px;border:1px solid rgba(0,0,0,.2);border-radius:4px\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1472:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1473);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("1f4be9ea", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1473:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n *  Bootstrap TouchSpin - v3.1.1\n *  A mobile and touch friendly input spinner component for Bootstrap 3.\n *  http://www.virtuosoft.eu/code/bootstrap-touchspin/\n *\n *  Made by István Ujj-Mészáros\n *  Under Apache License v2.0 License\n */\n.bootstrap-touchspin .input-group-btn-vertical{position:relative;white-space:nowrap;width:1%;vertical-align:middle;display:table-cell\n}\n.bootstrap-touchspin .input-group-btn-vertical>.btn{display:block;float:none;width:100%;max-width:100%;padding:8px 10px;margin-left:-1px;position:relative\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up{border-radius:0;border-top-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{margin-top:-2px;border-radius:0;border-bottom-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical i{position:absolute;top:3px;left:5px;font-size:9px;font-weight:400\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1474:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1475);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("7d84c737", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./pickers.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./pickers.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1475:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#example28 + .btn-group > .multiselect {\n    min-width : 65px;\n}\n.bootstrap-touchspin-up, .bootstrap-touchspin-down {\n    border-radius : 0 !important;\n}\n.clockface > div {\n    overflow : hidden;\n}\n@media only screen and (min-width : 769px ) and (max-width : 1440px ) {\n#example28-values {\n        margin-top : 10px;\n}\n}\n@media (max-width : 320px ) {\n.bootstrap-datetimepicker-widget.dropdown-menu {\n        width : 100%;\n        left  : 30px !important;\n}\n}\n.btn-default,#toggle-btn{\n    color:#333;\n}\n.bootstrap-touchspin .input-group-btn-vertical{\n    width:5%;\n}\n@media(max-width: 768px){\n.bootstrap-touchspin .input-group-btn-vertical i{\n        left:7px;\n}\n.bootstrap-touchspin .input-group-btn-vertical{\n        width: 4%;\n}\n}\n@media(min-width: 320px) and (max-width: 425px){\n.bootstrap-touchspin .input-group-btn-vertical{\n        width: 8% !important;\n}\n}\n@media(max-width: 320px){\n.bootstrap-touchspin .input-group-btn-vertical i{\n        left:5px;\n}\n}\n.clockpicker-popover,.clockface{\n    z-index: 99;\n}\n.content .btn:hover{\n    color:#333;\n    background-color: #c3c3c3;\n}\n#button-a:hover{\n    background-color: #6699cc;\n    color:#fff;\n}\n.bootstrap-touchspin-prefix,.bootstrap-touchspin-postfix{\n    background-color: #ddd ;\n}\n\n\n/*touch spin bootstrap 3 version overrides*/\n.pickers .input-group-lg .bootstrap-touchspin-down,.pickers .input-group-lg .bootstrap-touchspin-up{\n    padding: 0.85rem 0.75rem;\n}\n.pickers .input-group-lg .btn, .pickers .input-group-sm .btn{\n    border-radius:0 ;\n}\n.pickers .bootstrap-touchspin-down,.pickers .bootstrap-touchspin-up{\n    padding: 0.39rem 0.75rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1476:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(505);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(539);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__ = __webpack_require__(1477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__ = __webpack_require__(1478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(697);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__);
 //
 //
 //
@@ -272,141 +318,747 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+var moment = __webpack_require__(0);
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "toastr_notification",
+    name: "pickers",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            selected: '',
-            lasttoast: "",
-            toastCount: 0,
-            msg: "Gnome &amp; Growl type non-blocking notifications",
-            title: "Toastr Notifications",
-            type: "success",
-            showDuration: "1000",
-            hideDuration: "1000",
-            timeOut: "5000",
-            extendedTimeOut: "1000",
-            closeButton: true,
-            newestOnTop: false,
-            progressBar: false,
-            preventDuplicates: false,
-            positionClass: "toast-top-right",
-            showEasing: "swing",
-            hideEasing: "swing",
-            showMethod: "show",
-            hideMethod: "hide"
-        };
+    mounted: function mounted() {
+        "use strict";
+
+        $(document).ready(function () {
+
+            $('#t1').clockface();
+            $('#t3').clockface({
+                format: 'H:mm'
+            }).clockface('show', '14:30');
+
+            $('#t2').clockface({
+                format: 'HH:mm',
+                trigger: 'manual'
+            });
+
+            $('#toggle-btn').on('click', function (e) {
+                e.stopPropagation();
+                $('#t2').clockface('toggle');
+            });
+
+            var input = $('#input-a');
+            input.clockpicker({
+                autoclose: true
+            });
+
+            // Manual operations
+            $('#button-a').click(function (e) {
+                // Have to stop propagation here
+                e.stopPropagation();
+                input.clockpicker('show').clockpicker('toggleView', 'minutes');
+            });
+
+            //datetimepicker
+            $("input[name='demo1']").TouchSpin({
+                min: 0,
+                max: 100,
+                step: 0.1,
+                decimals: 2,
+                boostat: 5,
+                maxboostedstep: 10,
+                postfix: '%'
+            });
+
+            $("input[name='demo2']").TouchSpin({
+                min: -1000000000,
+                max: 1000000000,
+                stepinterval: 50,
+                maxboostedstep: 10000000,
+                prefix: '$'
+            });
+
+            $("input[name='demo_vertical']").TouchSpin({
+                verticalbuttons: true,
+                verticalupclass: 'ti-angle-up',
+                verticaldownclass: 'ti-angle-down'
+            });
+
+            $("input[name='demo_vertical2']").TouchSpin({
+                verticalbuttons: true,
+                verticalupclass: 'ti-plus',
+                verticaldownclass: 'ti-minus'
+            });
+
+            $("input[name='demo3']").TouchSpin();
+
+            $("input[name='demo3_21']").TouchSpin({
+                initval: 40
+            });
+
+            $("input[name='demo3_22']").TouchSpin({
+                initval: 40
+            });
+
+            $("input[name='demo4']").TouchSpin({
+                postfix: "a button",
+                postfix_extraclass: "btn btn-default"
+            });
+
+            $("input[name='demo4_2']").TouchSpin({
+                postfix: "a button",
+                postfix_extraclass: "btn btn-default"
+            });
+
+            $("input[name='demo5']").TouchSpin({
+                prefix: "pre",
+                postfix: "post"
+            });
+
+            $("input[name='demo6']").TouchSpin({
+                buttondown_class: "btn btn-link",
+                buttonup_class: "btn btn-link"
+            });
+        });
     },
-
-    computed: {
-        toastrOptions: function toastrOptions() {
-            return 'Command: toastr["' + this.type + '"]("' + this.msg + (this.title ? '", "' + this.title : '') + '")\n\ntoastr.options = ' + JSON.stringify(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options, null, 2);
-        }
-    },
-    methods: {
-        show_toast: function show_toast() {
-            this.toastCount++;
-
-            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options = {
-                closeButton: this.closeButton,
-                newestOnTop: this.newestOnTop,
-                progressBar: this.progressBar,
-                positionClass: this.positionClass,
-                preventDuplicates: this.preventDuplicates,
-                onclick: null
-            };
-
-            if (this.showDuration) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.showDuration = this.showDuration;
-            }
-            if (this.timeOut) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.timeOut = this.timeOut;
-            }
-
-            if (this.extendedTimeOut) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.extendedTimeOut = this.extendedTimeOut;
-            }
-            if (this.hideDuration) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.hideDuration = this.hideDuration;
-            }
-            if (this.showEasing) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.showEasing = this.showEasing;
-            }
-
-            if (this.hideEasing) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.hideEasing = this.hideEasing;
-            }
-
-            if (this.showMethod) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.showMethod = this.showMethod;
-            }
-
-            if (this.hideMethod) {
-                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.hideMethod = this.hideMethod;
-            }
-
-            var $toast = __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a[this.type](this.msg, this.title); // Wire up an event handler to a button in the toast, if it exists
-            this.lasttoast = $toast;
-
-            if (typeof $toast === 'undefined') {
-                return;
-            }
-        },
-        getLastToast: function getLastToast() {
-            return this.lasttoast;
-        },
-        clearlast: function clearlast() {
-            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.clear(this.getLastToast());
-        },
-        clearall: function clearall() {
-            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.clear();
-        }
-    },
-    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(520)))
 
 /***/ }),
 
-/***/ 1469:
+/***/ 1477:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
+* Clockface - v1.0.1
+* Clockface timepicker for Twitter Bootstrap
+*
+* Confusion with noon and midnight: 
+* http://en.wikipedia.org/wiki/12-hour_clock
+* Here considered '00:00 am' as midnight and '12:00 pm' as noon.
+*
+* Author: Vitaliy Potapov
+* Project page: http://github.com/vitalets/clockface
+* Copyright (c) 2012 Vitaliy Potapov. Released under MIT License.
+**/
+(function ($) {
+
+    var Clockface = function (element, options) {
+        this.$element = $(element);
+        this.options = $.extend({}, $.fn.clockface.defaults, options, this.$element.data());
+        this.init();  
+     };
+
+    Clockface.prototype = {
+        constructor: Clockface, 
+        init: function () {
+          //apply template
+          this.$clockface = $($.fn.clockface.template);
+          this.$clockface.find('.l1 .cell, .left.cell').html('<div class="outer"></div><div class="inner"></div>'); 
+          this.$clockface.find('.l5 .cell, .right.cell').html('<div class="inner"></div><div class="outer"></div>'); 
+          this.$clockface.hide();
+
+          this.$outer = this.$clockface.find('.outer');
+          this.$inner = this.$clockface.find('.inner');
+          this.$ampm = this.$clockface.find('.ampm');
+
+          //internal vars
+          this.ampm = null;
+          this.hour = null;
+          this.minute = null;
+          
+          //click am/pm 
+          this.$ampm.click($.proxy(this.clickAmPm, this));
+
+          //click cell
+          this.$clockface.on('click', '.cell', $.proxy(this.click, this));
+
+          this.parseFormat();
+          this.prepareRegexp();
+
+          //set ampm text
+          this.ampmtext = this.is24 ? {am: '12-23', pm: '0-11'} : {am: 'AM', pm: 'PM'};
+
+          this.isInline = this.$element.is('div');
+          if(this.isInline) {
+            this.$clockface.addClass('clockface-inline').appendTo(this.$element);
+          } else {
+            this.$clockface.addClass('dropdown-menu').appendTo('body');
+            if(this.options.trigger === 'focus') {
+              this.$element.on('focus.clockface', $.proxy(function(e) { this.show(); }, this));
+            }
+
+            // Click outside hide it. Register single handler for all clockface widgets
+            $(document).off('click.clockface').on('click.clockface', $.proxy(function (e) {
+                var $target = $(e.target);
+                //click inside some clockface --> do nothing
+                if ($target.closest('.clockface').length) {
+                  return;
+                }
+                //iterate all open clockface and close all except current
+                $('.clockface-open').each(function(){
+                  if(this === e.target) {
+                    return;
+                  }
+                  $(this).clockface('hide');
+                });
+            }, this));
+          }
+
+          //fill minutes once
+          this.fill('minute');
+        },
+
+        /*
+        Displays widget with specified value
+        */
+        show: function(value) {
+            if(this.$clockface.is(':visible')) {
+              return;
+            }
+            if(!this.isInline) {
+                if(value === undefined) {
+                  value = this.$element.val();
+                }
+                this.$element.addClass('clockface-open');
+                this.$element.on('keydown.clockface', $.proxy(this.keydown, this));
+                this.place();
+                $(window).on('resize.clockface', $.proxy(this.place, this));
+            }
+            this.$clockface.show();
+            this.setTime(value);
+
+            //trigger shown event
+            this.$element.triggerHandler('shown.clockface', this.getTime(true));
+        },
+        /*
+        hides widget
+        */
+        hide: function() {
+            this.$clockface.hide();
+            if(!this.isInline) {
+              this.$element.removeClass('clockface-open');  
+              this.$element.off('keydown.clockface');
+              $(window).off('resize.clockface');
+            }
+
+            //trigger hidden event
+            this.$element.triggerHandler('hidden.clockface', this.getTime(true));            
+        },
+
+        /*
+        toggles show/hide
+        */
+        toggle: function(value) {
+          if(this.$clockface.is(':visible')) {
+            this.hide();
+          } else {
+            this.show(value);
+          }
+        },
+
+         /*
+        Set time of clockface. Am/pm will be set automatically.
+        Value can be Date object or string
+        */
+        setTime: function(value) {
+          var res, hour, minute, ampm = 'am';
+
+          //no new value 
+          if(value === undefined) {
+            //if ampm null, it;s first showw, need to render hours ('am' by default)
+            if(this.ampm === null) {
+              this.setAmPm('am');
+            }
+            return;
+          }
+
+          //take value from Date object
+          if(value instanceof Date) {
+            hour = value.getHours();
+            minute = value.getMinutes();
+          }
+
+          //parse value from string
+          if(typeof value === 'string' && value.length) { 
+            res = this.parseTime(value);
+
+            //'24' always '0'
+            if(res.hour === 24) {
+              res.hour = 0;
+            }
+
+            hour = res.hour;             
+            minute = res.minute;             
+            ampm = res.ampm;             
+          }
+
+          //try to set ampm automatically
+          if(hour > 11 && hour < 24) {
+            ampm = 'pm';
+            //for 12h format substract 12 from value 
+            if(!this.is24 && hour > 12) {
+              hour -= 12;
+            }
+          } else if(hour >= 0 && hour < 11) {
+                //always set am for 24h and for '0' in 12h 
+                if(this.is24 || hour === 0) {
+                   ampm = 'am';
+               } 
+               //otherwise ampm should be defined in value itself and retrieved when parsing
+          }      
+
+          this.setAmPm(ampm);
+          this.setHour(hour);
+          this.setMinute(minute);
+        },   
+
+        /*
+        Set ampm and re-fill hours
+        */
+        setAmPm: function(value) {
+          if(value === this.ampm) {
+             return;
+          } else {
+             this.ampm = value === 'am' ? 'am' : 'pm';
+          }
+
+          //set link's text
+          this.$ampm.text(this.ampmtext[this.ampm]);
+
+          //re-fill and highlight hour
+          this.fill('hour');
+          this.highlight('hour');
+        },   
+        /*
+        Sets hour value and highlight if possible
+        */
+        setHour: function(value) {
+          value = parseInt(value, 10);
+          value = isNaN(value) ? null : value;
+          if(value < 0 || value > 23) {
+            value = null;
+          }
+
+          if(value === this.hour) {
+            return;
+          } else {
+            this.hour = value;
+          }
+
+          this.highlight('hour');
+        },
+
+        /*
+        Sets minute value and highlight
+        */
+        setMinute: function(value) {
+          value = parseInt(value, 10);
+          value = isNaN(value) ? null : value;
+          if(value < 0 || value > 59) {
+            value = null;
+          }
+
+          if(value === this.minute) {
+            return;
+          } else {
+            this.minute = value;
+          }
+
+          this.highlight('minute');
+        },        
+
+        /*
+        Highlights hour/minute
+        */
+        highlight: function(what) {
+          var index,
+              values = this.getValues(what),
+              value = what === 'minute' ? this.minute : this.hour,
+              $cells = what === 'minute' ? this.$outer : this.$inner;
+
+          $cells.removeClass('active');
+
+          //find index of value and highlight if possible
+          index = $.inArray(value, values);
+          if(index >= 0) {
+            $cells.eq(index).addClass('active');
+          }
+        },
+
+        /*
+        Fill values around
+        */ 
+        fill: function(what) {
+          var values = this.getValues(what),
+              $cells = what === 'minute' ? this.$outer : this.$inner,
+              leadZero = what === 'minute';           
+
+          $cells.each(function(i){
+            var v = values[i];
+            if(leadZero && v < 10) {
+              v = '0' + v;
+            }
+            $(this).text(v);
+          });
+        },          
+
+        /*
+        returns values of hours or minutes, depend on ampm and 24/12 format (0-11, 12-23, 00-55, etc)
+        param what: 'hour'/'minute'
+        */
+        getValues: function(what) {
+          var values = [11, 0, 1, 10, 2, 9, 3, 8, 4, 7, 6, 5],
+              result = values.slice();
+
+          //minutes
+          if(what === 'minute') {
+              $.each(values, function(i, v) { result[i] = v*5; });
+          } else {
+            //hours
+            if(!this.is24) {
+              result[1] = 12; //need this to show '12' instead of '00' for 12h am/pm
+            }
+            if(this.is24 && this.ampm === 'pm') {
+              $.each(values, function(i, v) { result[i] = v+12; });
+            }
+          }
+          return result;
+        },
+
+        /*
+        Click cell handler.
+        Stores hour/minute and highlights.
+        On second click deselect value
+        */
+        click: function(e) {
+          var $target = $(e.target),
+              value = $target.hasClass('active') ? null : $target.text();
+          if($target.hasClass('inner')) {
+            this.setHour(value);
+          } else {
+            this.setMinute(value);
+          }
+
+          //update value in input
+          if(!this.isInline) {
+            this.$element.val(this.getTime());
+          }          
+
+          //trigger pick event
+          this.$element.triggerHandler('pick.clockface', this.getTime(true));  
+        },
+
+        /*
+        Click handler on ampm link
+        */
+        clickAmPm: function(e) {
+          e.preventDefault();
+          //toggle am/pm
+          this.setAmPm(this.ampm === 'am' ? 'pm' : 'am');
+
+          //update value in input
+          if(!this.isInline && !this.is24) {
+            this.$element.val(this.getTime());
+          }    
+
+          //trigger pick event
+          this.$element.triggerHandler('pick.clockface', this.getTime(true));                  
+        },
+        
+
+        /*
+        Place widget below input
+        */
+        place: function(){
+          var zIndex = parseInt(this.$element.parents().filter(function() {
+                   return $(this).css('z-index') != 'auto';
+             }).first().css('z-index'), 10)+10,
+             offset = this.$element.offset();
+          this.$clockface.css({
+            top: offset.top + this.$element.outerHeight(),
+            left: offset.left,
+            zIndex: zIndex
+          });
+        },  
+
+        /*
+        keydown handler (for not inline mode)
+        */
+        keydown: function(e) {
+          //tab, escape, enter --> hide
+          if(/^(9|27|13)$/.test(e.which)) {
+            this.hide();
+            return;
+          } 
+
+          clearTimeout(this.timer);
+          this.timer = setTimeout($.proxy(function(){
+            this.setTime(this.$element.val());
+          }, this), 500);
+        },  
+
+        /*
+        Parse format from options and set this.is24
+        */
+        parseFormat: function() {
+          var format = this.options.format,
+              hFormat = 'HH',
+              mFormat = 'mm';
+
+          //hour format    
+          $.each(['HH', 'hh', 'H', 'h'], function(i, f){
+            if(format.indexOf(f) !== -1) {
+              hFormat = f;
+              return false;
+            }
+          });
+
+          //minute format
+          $.each(['mm', 'm'], function(i, f){
+            if(format.indexOf(f) !== -1) {
+              mFormat = f;
+              return false;
+            }
+          });          
+
+          //is 24 hour format
+          this.is24 = hFormat.indexOf('H') !== -1; 
+
+          this.hFormat = hFormat;
+          this.mFormat = mFormat;
+        },
+
+       
+
+        /*
+        Parse value passed as string or Date object
+        */
+        parseTime: function(value) {
+          var hour = null, 
+              minute = null, 
+              ampm = 'am', 
+              parts = [], digits;
+
+            value = $.trim(value);
+
+            //try parse time from string assuming separator exist
+            if(this.regexpSep) {
+                parts = value.match(this.regexpSep);
+            }
+
+            if(parts && parts.length) {
+              hour = parts[1] ? parseInt(parts[1], 10) : null;
+              minute = parts[2] ? parseInt(parts[2], 10): null;
+              ampm = (!parts[3] || parts[3].toLowerCase() === 'a') ? 'am' : 'pm';
+            } else {
+              //if parse with separator failed, search for 1,4-digit block and process it
+              //use reversed string to start from end (usefull with full dates)
+              //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
+              value = value.split('').reverse().join('').replace(/\s/g, '');
+              parts = value.match(this.regexpNoSep);
+              if(parts && parts.length) {
+                ampm = (!parts[1] || parts[1].toLowerCase() === 'a') ? 'am' : 'pm';
+                //reverse back
+                digits = parts[2].split('').reverse().join('');
+                //use smart analyzing to detect hours and minutes
+                switch(digits.length) {
+                  case 1:
+                    hour = parseInt(digits, 10); //e.g. '6'
+                  break;
+                  case 2:
+                    hour = parseInt(digits, 10); //e.g. '16'
+                    //if((this.is24 && hour > 24) || (!this.is24 && hour > 12)) { //e.g. 26
+                    if(hour > 24) { //e.g. 26
+                      hour = parseInt(digits[0], 10);
+                      minute = parseInt(digits[1], 10);
+                    }
+                  break;
+                  case 3:
+                    hour = parseInt(digits[0], 10);  //e.g. 105
+                    minute = parseInt(digits[1]+digits[2], 10); 
+                    if(minute > 59) { 
+                      hour = parseInt(digits[0]+digits[1], 10); //e.g. 195
+                      minute = parseInt(digits[2], 10); 
+                      if(hour > 24) {
+                        hour = null;
+                        minute = null;
+                      }
+                    }
+                  break;
+                  case 4:
+                    hour = parseInt(digits[0]+digits[1], 10); //e.g. 2006
+                    minute = parseInt(digits[2]+digits[3], 10);
+                    if(hour > 24) {
+                      hour = null;
+                    }
+                    if(minute > 59) {
+                      minute = null;
+                    }
+                }
+              }
+            }
+
+          return {hour: hour, minute: minute, ampm: ampm};
+        },
+
+        prepareRegexp: function() {
+            //take separator from format
+            var sep = this.options.format.match(/h\s*([^hm]?)\s*m/i); //HH-mm, HH:mm
+            if(sep && sep.length) {
+              sep = sep[1];
+            } 
+
+            //sep can be null for HH, and '' for HHmm 
+            this.separator = sep;
+    
+            //parse from string
+            //use reversed string and regexp to parse 2-digit minutes first
+            //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
+            //this.regexp = new RegExp('(a|p)?\\s*((\\d\\d?)' + sep + ')?(\\d\\d?)', 'i');
+
+            //regexp, used with separator
+            this.regexpSep = (this.separator && this.separator.length) ? new RegExp('(\\d\\d?)\\s*\\' + this.separator + '\\s*(\\d?\\d?)\\s*(a|p)?', 'i') : null;
+
+            //second regexp applied if previous has no result or separator is empty (to reversed string)
+            this.regexpNoSep = new RegExp('(a|p)?\\s*(\\d{1,4})', 'i');
+        },
+
+        /*
+        Returns time as string in specified format
+        */
+        getTime: function(asObject) {
+          if(asObject === true) {
+            return {
+              hour: this.hour,
+              minute: this.minute,
+              ampm: this.ampm
+            };
+          }
+
+          var hour = this.hour !== null ? this.hour + '' : '',
+              minute = this.minute !== null ? this.minute + '' : '',
+              result = this.options.format;
+
+          if(!hour.length && !minute.length) {
+            return '';
+          }   
+
+          if(this.hFormat.length > 1 && hour.length === 1) {
+            hour = '0' + hour;
+          }   
+
+          if(this.mFormat.length > 1 && minute.length === 1) {
+            minute = '0' + minute;
+          }
+
+          //delete separator if no minutes
+          if(!minute.length && this.separator) {
+            result = result.replace(this.separator, '');
+          }
+
+          result = result.replace(this.hFormat, hour).replace(this.mFormat, minute);
+          if(!this.is24) {
+            if(result.indexOf('A') !== -1) {
+               result = result.replace('A', this.ampm.toUpperCase());
+            } else {
+               result = result.replace('a', this.ampm);
+            }
+          }
+
+          return result;
+        },
+
+        /*
+        Removes widget and detach events
+        */
+        destroy: function() {
+          this.hide();
+          this.$clockface.remove();
+          if(!this.isInline && this.options.trigger === 'focus') {
+            this.$element.off('focus.clockface');
+          }          
+        }
+    };
+
+    $.fn.clockface = function ( option ) {
+        var d, args = Array.apply(null, arguments);
+        args.shift();
+
+        //getTime returns string (not jQuery onject)
+        if(option === 'getTime' && this.length && (d = this.eq(0).data('clockface'))) {
+          return d.getTime.apply(d, args);
+        }
+
+        return this.each(function () {
+            var $this = $(this),
+            data = $this.data('clockface'),
+            options = typeof option == 'object' && option;
+            if (!data) {
+                $this.data('clockface', (data = new Clockface(this, options)));
+            }
+            if (typeof option == 'string' && typeof data[option] == 'function') {
+                data[option].apply(data, args);
+            }
+        });
+    };  
+    
+    $.fn.clockface.defaults = {
+        //see http://momentjs.com/docs/#/displaying/format/
+        format: 'H:mm',
+        trigger: 'focus' //focus|manual
+    };
+   
+
+ $.fn.clockface.template = ''+
+      '<div class="clockface">' +
+          '<div class="l1">' +
+              '<div class="cell"></div>' +
+              '<div class="cell"></div>' +
+              '<div class="cell"></div>' +
+          '</div>' +
+          '<div class="l2">' +
+                '<div class="cell left"></div>' +
+                '<div class="cell right"></div>' +
+          '</div>'+
+          '<div class="l3">' +
+                '<div class="cell left"></div>' +
+                '<div class="cell right"></div>' +
+                '<div class="center"><a href="#" class="ampm"></a></div>' +
+          '</div>'+
+          '<div class="l4">' +
+                '<div class="cell left"></div>' +
+                '<div class="cell right"></div>' +
+          '</div>'+
+          '<div class="l5">' +
+                '<div class="cell"></div>' +
+                '<div class="cell"></div>' +
+                '<div class="cell"></div>' +
+          '</div>'+
+      '</div>';  
+
+}(__webpack_provided_window_dot_jQuery));
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
+
+/***/ }),
+
+/***/ 1478:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
+ * ClockPicker v0.0.7 (http://weareoutman.github.io/clockpicker/)
+ * Copyright 2014 Wang Shenwei.
+ * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)
+ */
+!function(){function t(t){return document.createElementNS(p,t)}function i(t){return(10>t?"0":"")+t}function e(t){var i=++m+"";return t?t+i:i}function s(s,r){function p(t,i){var e=u.offset(),s=/^touch/.test(t.type),o=e.left+b,n=e.top+b,p=(s?t.originalEvent.touches[0]:t).pageX-o,h=(s?t.originalEvent.touches[0]:t).pageY-n,k=Math.sqrt(p*p+h*h),v=!1;if(!i||!(g-y>k||k>g+y)){t.preventDefault();var m=setTimeout(function(){c.addClass("clockpicker-moving")},200);l&&u.append(x.canvas),x.setHand(p,h,!i,!0),a.off(d).on(d,function(t){t.preventDefault();var i=/^touch/.test(t.type),e=(i?t.originalEvent.touches[0]:t).pageX-o,s=(i?t.originalEvent.touches[0]:t).pageY-n;(v||e!==p||s!==h)&&(v=!0,x.setHand(e,s,!1,!0))}),a.off(f).on(f,function(t){a.off(f),t.preventDefault();var e=/^touch/.test(t.type),s=(e?t.originalEvent.changedTouches[0]:t).pageX-o,l=(e?t.originalEvent.changedTouches[0]:t).pageY-n;(i||v)&&s===p&&l===h&&x.setHand(s,l),"hours"===x.currentView?x.toggleView("minutes",A/2):r.autoclose&&(x.minutesView.addClass("clockpicker-dial-out"),setTimeout(function(){x.done()},A/2)),u.prepend(j),clearTimeout(m),c.removeClass("clockpicker-moving"),a.off(d)})}}var h=n(V),u=h.find(".clockpicker-plate"),v=h.find(".clockpicker-hours"),m=h.find(".clockpicker-minutes"),T=h.find(".clockpicker-am-pm-block"),C="INPUT"===s.prop("tagName"),H=C?s:s.find("input"),P=s.find(".input-group-addon"),x=this;if(this.id=e("cp"),this.element=s,this.options=r,this.isAppended=!1,this.isShown=!1,this.currentView="hours",this.isInput=C,this.input=H,this.addon=P,this.popover=h,this.plate=u,this.hoursView=v,this.minutesView=m,this.amPmBlock=T,this.spanHours=h.find(".clockpicker-span-hours"),this.spanMinutes=h.find(".clockpicker-span-minutes"),this.spanAmPm=h.find(".clockpicker-span-am-pm"),this.amOrPm="PM",r.twelvehour){{var S=['<div class="clockpicker-am-pm-block">','<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-am-button">',"AM</button>",'<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-pm-button">',"PM</button>","</div>"].join("");n(S)}n('<button type="button" class="btn btn-sm btn-default clockpicker-button am-button">AM</button>').on("click",function(){x.amOrPm="AM",n(".clockpicker-span-am-pm").empty().append("AM")}).appendTo(this.amPmBlock),n('<button type="button" class="btn btn-sm btn-default clockpicker-button pm-button">PM</button>').on("click",function(){x.amOrPm="PM",n(".clockpicker-span-am-pm").empty().append("PM")}).appendTo(this.amPmBlock)}r.autoclose||n('<button type="button" class="btn btn-sm btn-default btn-block clockpicker-button">'+r.donetext+"</button>").click(n.proxy(this.done,this)).appendTo(h),"top"!==r.placement&&"bottom"!==r.placement||"top"!==r.align&&"bottom"!==r.align||(r.align="left"),"left"!==r.placement&&"right"!==r.placement||"left"!==r.align&&"right"!==r.align||(r.align="top"),h.addClass(r.placement),h.addClass("clockpicker-align-"+r.align),this.spanHours.click(n.proxy(this.toggleView,this,"hours")),this.spanMinutes.click(n.proxy(this.toggleView,this,"minutes")),H.on("focus.clockpicker click.clockpicker",n.proxy(this.show,this)),P.on("click.clockpicker",n.proxy(this.toggle,this));var E,D,I,B,z=n('<div class="clockpicker-tick"></div>');if(r.twelvehour)for(E=1;13>E;E+=1)D=z.clone(),I=E/6*Math.PI,B=g,D.css("font-size","120%"),D.css({left:b+Math.sin(I)*B-y,top:b-Math.cos(I)*B-y}),D.html(0===E?"00":E),v.append(D),D.on(k,p);else for(E=0;24>E;E+=1){D=z.clone(),I=E/6*Math.PI;var O=E>0&&13>E;B=O?w:g,D.css({left:b+Math.sin(I)*B-y,top:b-Math.cos(I)*B-y}),O&&D.css("font-size","120%"),D.html(0===E?"00":E),v.append(D),D.on(k,p)}for(E=0;60>E;E+=5)D=z.clone(),I=E/30*Math.PI,D.css({left:b+Math.sin(I)*g-y,top:b-Math.cos(I)*g-y}),D.css("font-size","120%"),D.html(i(E)),m.append(D),D.on(k,p);if(u.on(k,function(t){0===n(t.target).closest(".clockpicker-tick").length&&p(t,!0)}),l){var j=h.find(".clockpicker-canvas"),L=t("svg");L.setAttribute("class","clockpicker-svg"),L.setAttribute("width",M),L.setAttribute("height",M);var U=t("g");U.setAttribute("transform","translate("+b+","+b+")");var W=t("circle");W.setAttribute("class","clockpicker-canvas-bearing"),W.setAttribute("cx",0),W.setAttribute("cy",0),W.setAttribute("r",2);var N=t("line");N.setAttribute("x1",0),N.setAttribute("y1",0);var X=t("circle");X.setAttribute("class","clockpicker-canvas-bg"),X.setAttribute("r",y);var Y=t("circle");Y.setAttribute("class","clockpicker-canvas-fg"),Y.setAttribute("r",3.5),U.appendChild(N),U.appendChild(X),U.appendChild(Y),U.appendChild(W),L.appendChild(U),j.append(L),this.hand=N,this.bg=X,this.fg=Y,this.bearing=W,this.g=U,this.canvas=j}o(this.options.init)}function o(t){t&&"function"==typeof t&&t()}var c,n=__webpack_provided_window_dot_jQuery,r=n(window),a=n(document),p="http://www.w3.org/2000/svg",l="SVGAngle"in window&&function(){var t,i=document.createElement("div");return i.innerHTML="<svg/>",t=(i.firstChild&&i.firstChild.namespaceURI)==p,i.innerHTML="",t}(),h=function(){var t=document.createElement("div").style;return"transition"in t||"WebkitTransition"in t||"MozTransition"in t||"msTransition"in t||"OTransition"in t}(),u="ontouchstart"in window,k="mousedown"+(u?" touchstart":""),d="mousemove.clockpicker"+(u?" touchmove.clockpicker":""),f="mouseup.clockpicker"+(u?" touchend.clockpicker":""),v=navigator.vibrate?"vibrate":navigator.webkitVibrate?"webkitVibrate":null,m=0,b=100,g=80,w=54,y=13,M=2*b,A=h?350:1,V=['<div class="popover clockpicker-popover">','<div class="arrow"></div>','<div class="popover-title">','<span class="clockpicker-span-hours text-primary"></span>'," : ",'<span class="clockpicker-span-minutes"></span>','<span class="clockpicker-span-am-pm"></span>',"</div>",'<div class="popover-content">','<div class="clockpicker-plate">','<div class="clockpicker-canvas"></div>','<div class="clockpicker-dial clockpicker-hours"></div>','<div class="clockpicker-dial clockpicker-minutes clockpicker-dial-out"></div>',"</div>",'<span class="clockpicker-am-pm-block">',"</span>","</div>","</div>"].join("");s.DEFAULTS={"default":"",fromnow:0,placement:"bottom",align:"left",donetext:"完成",autoclose:!1,twelvehour:!1,vibrate:!0},s.prototype.toggle=function(){this[this.isShown?"hide":"show"]()},s.prototype.locate=function(){var t=this.element,i=this.popover,e=t.offset(),s=t.outerWidth(),o=t.outerHeight(),c=this.options.placement,n=this.options.align,r={};switch(i.show(),c){case"bottom":r.top=e.top+o;break;case"right":r.left=e.left+s;break;case"top":r.top=e.top-i.outerHeight();break;case"left":r.left=e.left-i.outerWidth()}switch(n){case"left":r.left=e.left;break;case"right":r.left=e.left+s-i.outerWidth();break;case"top":r.top=e.top;break;case"bottom":r.top=e.top+o-i.outerHeight()}i.css(r)},s.prototype.show=function(){if(!this.isShown){o(this.options.beforeShow);var t=this;this.isAppended||(c=n(document.body).append(this.popover),r.on("resize.clockpicker"+this.id,function(){t.isShown&&t.locate()}),this.isAppended=!0);var e=((this.input.prop("value")||this.options["default"]||"")+"").split(":");if("now"===e[0]){var s=new Date(+new Date+this.options.fromnow);e=[s.getHours(),s.getMinutes()]}this.hours=+e[0]||0,this.minutes=+e[1]||0,this.spanHours.html(i(this.hours)),this.spanMinutes.html(i(this.minutes)),this.toggleView("hours"),this.locate(),this.isShown=!0,a.on("click.clockpicker."+this.id+" focusin.clockpicker."+this.id,function(i){var e=n(i.target);0===e.closest(t.popover).length&&0===e.closest(t.addon).length&&0===e.closest(t.input).length&&t.hide()}),a.on("keyup.clockpicker."+this.id,function(i){27===i.keyCode&&t.hide()}),o(this.options.afterShow)}},s.prototype.hide=function(){o(this.options.beforeHide),this.isShown=!1,a.off("click.clockpicker."+this.id+" focusin.clockpicker."+this.id),a.off("keyup.clockpicker."+this.id),this.popover.hide(),o(this.options.afterHide)},s.prototype.toggleView=function(t,i){var e=!1;"minutes"===t&&"visible"===n(this.hoursView).css("visibility")&&(o(this.options.beforeHourSelect),e=!0);var s="hours"===t,c=s?this.hoursView:this.minutesView,r=s?this.minutesView:this.hoursView;this.currentView=t,this.spanHours.toggleClass("text-primary",s),this.spanMinutes.toggleClass("text-primary",!s),r.addClass("clockpicker-dial-out"),c.css("visibility","visible").removeClass("clockpicker-dial-out"),this.resetClock(i),clearTimeout(this.toggleViewTimer),this.toggleViewTimer=setTimeout(function(){r.css("visibility","hidden")},A),e&&o(this.options.afterHourSelect)},s.prototype.resetClock=function(t){var i=this.currentView,e=this[i],s="hours"===i,o=Math.PI/(s?6:30),c=e*o,n=s&&e>0&&13>e?w:g,r=Math.sin(c)*n,a=-Math.cos(c)*n,p=this;l&&t?(p.canvas.addClass("clockpicker-canvas-out"),setTimeout(function(){p.canvas.removeClass("clockpicker-canvas-out"),p.setHand(r,a)},t)):this.setHand(r,a)},s.prototype.setHand=function(t,e,s,o){var c,r=Math.atan2(t,-e),a="hours"===this.currentView,p=Math.PI/(a||s?6:30),h=Math.sqrt(t*t+e*e),u=this.options,k=a&&(g+w)/2>h,d=k?w:g;if(u.twelvehour&&(d=g),0>r&&(r=2*Math.PI+r),c=Math.round(r/p),r=c*p,u.twelvehour?a?0===c&&(c=12):(s&&(c*=5),60===c&&(c=0)):a?(12===c&&(c=0),c=k?0===c?12:c:0===c?0:c+12):(s&&(c*=5),60===c&&(c=0)),this[this.currentView]!==c&&v&&this.options.vibrate&&(this.vibrateTimer||(navigator[v](10),this.vibrateTimer=setTimeout(n.proxy(function(){this.vibrateTimer=null},this),100))),this[this.currentView]=c,this[a?"spanHours":"spanMinutes"].html(i(c)),!l)return void this[a?"hoursView":"minutesView"].find(".clockpicker-tick").each(function(){var t=n(this);t.toggleClass("active",c===+t.html())});o||!a&&c%5?(this.g.insertBefore(this.hand,this.bearing),this.g.insertBefore(this.bg,this.fg),this.bg.setAttribute("class","clockpicker-canvas-bg clockpicker-canvas-bg-trans")):(this.g.insertBefore(this.hand,this.bg),this.g.insertBefore(this.fg,this.bg),this.bg.setAttribute("class","clockpicker-canvas-bg"));var f=Math.sin(r)*d,m=-Math.cos(r)*d;this.hand.setAttribute("x2",f),this.hand.setAttribute("y2",m),this.bg.setAttribute("cx",f),this.bg.setAttribute("cy",m),this.fg.setAttribute("cx",f),this.fg.setAttribute("cy",m)},s.prototype.done=function(){o(this.options.beforeDone),this.hide();var t=this.input.prop("value"),e=i(this.hours)+":"+i(this.minutes);this.options.twelvehour&&(e+=this.amOrPm),this.input.prop("value",e),e!==t&&(this.input.triggerHandler("change"),this.isInput||this.element.trigger("change")),this.options.autoclose&&this.input.trigger("blur"),o(this.options.afterDone)},s.prototype.remove=function(){this.element.removeData("clockpicker"),this.input.off("focus.clockpicker click.clockpicker"),this.addon.off("click.clockpicker"),this.isShown&&this.hide(),this.isAppended&&(r.off("resize.clockpicker"+this.id),this.popover.remove())},n.fn.clockpicker=function(t){var i=Array.prototype.slice.call(arguments,1);return this.each(function(){var e=n(this),o=e.data("clockpicker");if(o)"function"==typeof o[t]&&o[t].apply(o,i);else{var c=n.extend({},s.DEFAULTS,e.data(),"object"==typeof t&&t);e.data("clockpicker",new s(e,c))}})}}();
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
+
+/***/ }),
+
+/***/ 1479:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -414,977 +1066,181 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row pickers" }, [
       _c(
         "div",
-        { staticClass: "col-md-12" },
+        { staticClass: "col-lg-6" },
         [
           _c(
             "card",
-            {
-              attrs: { title: "<i class='ti-bell'></i> Toastr Notifications" }
-            },
+            { attrs: { title: "<i class='ti-pin'></i> Bootstrap TouchSpin" } },
             [
-              _c("div", { staticClass: "portlet-body" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("h4", [
-                      _c("i", {
-                        staticClass: "fa fa-fw ti-info-alt text-info message"
-                      }),
-                      _vm._v(
-                        " When changing\n                                toastr position clear all toasts to see the effect"
-                      )
-                    ])
-                  ]),
+              _c("div", { staticClass: "box-body" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo1" } }, [_vm._v("Postfix")]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-md-3" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label",
-                          attrs: { for: "title" }
-                        },
-                        [_c("b", [_vm._v("Title")])]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.title,
-                            expression: "title"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          id: "title",
-                          type: "text",
-                          placeholder: "Enter a title ..."
-                        },
-                        domProps: { value: _vm.title },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.title = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label",
-                          attrs: { for: "message" }
-                        },
-                        [_c("b", [_vm._v("Message")])]
-                      ),
-                      _vm._v(" "),
-                      _c("textarea", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.msg,
-                            expression: "msg"
-                          }
-                        ],
-                        staticClass: "form-control resize_vertical",
-                        attrs: {
-                          id: "message",
-                          rows: "3",
-                          placeholder: "Enter a message ..."
-                        },
-                        domProps: { value: _vm.msg },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.msg = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("form", [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group",
-                          attrs: { id: "positionGroup" }
-                        },
-                        [
-                          _c(
-                            "label",
-                            {
-                              staticClass: "position-type",
-                              attrs: { for: "position-change" }
-                            },
-                            [_c("b", [_vm._v("Toaster Position")])]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "select",
-                            {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.positionClass,
-                                  expression: "positionClass"
-                                }
-                              ],
-                              staticClass: "form-control",
-                              attrs: {
-                                name: "toast-position",
-                                id: "position-change"
-                              },
-                              on: {
-                                change: function($event) {
-                                  var $$selectedVal = Array.prototype.filter
-                                    .call($event.target.options, function(o) {
-                                      return o.selected
-                                    })
-                                    .map(function(o) {
-                                      var val =
-                                        "_value" in o ? o._value : o.value
-                                      return val
-                                    })
-                                  _vm.positionClass = $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                }
-                              }
-                            },
-                            [
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-top-left" } },
-                                [_vm._v("Top Left")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-top-right" } },
-                                [_vm._v("Top Right")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-top-center" } },
-                                [_vm._v("Top Center")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-top-full-width" } },
-                                [_vm._v("Top Full Width")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-bottom-left" } },
-                                [_vm._v("Bottom Left")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-bottom-right" } },
-                                [_vm._v("Bottom Right")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-bottom-center" } },
-                                [_vm._v("Bottom Center")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "toast-bottom-full-width" } },
-                                [_vm._v("Bottom Full Width")]
-                              )
-                            ]
-                          )
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-3 " }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "form-group",
-                        attrs: { id: "toastTypeGroup" }
-                      },
-                      [
-                        _c("label", { staticClass: "toast-type" }, [
-                          _vm._v("Toast Type")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", [
-                          _c("label", { staticClass: "text-success" }, [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.type,
-                                  expression: "type"
-                                }
-                              ],
-                              staticClass: "custom-radio",
-                              attrs: {
-                                type: "radio",
-                                name: "toasts",
-                                value: "success"
-                              },
-                              domProps: {
-                                checked: _vm._q(_vm.type, "success")
-                              },
-                              on: {
-                                change: function($event) {
-                                  _vm.type = "success"
-                                }
-                              }
-                            }),
-                            _vm._v(
-                              " Success\n                                    "
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", [
-                          _c("label", { staticClass: "text-info" }, [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.type,
-                                  expression: "type"
-                                }
-                              ],
-                              staticClass: "custom-radio",
-                              attrs: {
-                                type: "radio",
-                                name: "toasts",
-                                value: "info"
-                              },
-                              domProps: { checked: _vm._q(_vm.type, "info") },
-                              on: {
-                                change: function($event) {
-                                  _vm.type = "info"
-                                }
-                              }
-                            }),
-                            _vm._v(
-                              " Info\n                                    "
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", [
-                          _c("label", { staticClass: "text-warning" }, [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.type,
-                                  expression: "type"
-                                }
-                              ],
-                              staticClass: "custom-radio",
-                              attrs: {
-                                type: "radio",
-                                name: "toasts",
-                                value: "warning"
-                              },
-                              domProps: {
-                                checked: _vm._q(_vm.type, "warning")
-                              },
-                              on: {
-                                change: function($event) {
-                                  _vm.type = "warning"
-                                }
-                              }
-                            }),
-                            _vm._v(
-                              " Warning\n                                    "
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", [
-                          _c("label", { staticClass: "text-danger" }, [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.type,
-                                  expression: "type"
-                                }
-                              ],
-                              staticClass: "custom-radio",
-                              attrs: {
-                                type: "radio",
-                                name: "toasts",
-                                value: "error"
-                              },
-                              domProps: { checked: _vm._q(_vm.type, "error") },
-                              on: {
-                                change: function($event) {
-                                  _vm.type = "error"
-                                }
-                              }
-                            }),
-                            _vm._v(
-                              " Error\n                                    "
-                            )
-                          ])
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("div", [
-                        _c("label", { attrs: { for: "closeButton" } }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.closeButton,
-                                expression: "closeButton"
-                              }
-                            ],
-                            staticClass: "input-small custom-checkbox",
-                            attrs: { id: "closeButton", type: "checkbox" },
-                            domProps: {
-                              checked: Array.isArray(_vm.closeButton)
-                                ? _vm._i(_vm.closeButton, null) > -1
-                                : _vm.closeButton
-                            },
-                            on: {
-                              change: function($event) {
-                                var $$a = _vm.closeButton,
-                                  $$el = $event.target,
-                                  $$c = $$el.checked ? true : false
-                                if (Array.isArray($$a)) {
-                                  var $$v = null,
-                                    $$i = _vm._i($$a, $$v)
-                                  if ($$el.checked) {
-                                    $$i < 0 &&
-                                      (_vm.closeButton = $$a.concat([$$v]))
-                                  } else {
-                                    $$i > -1 &&
-                                      (_vm.closeButton = $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1)))
-                                  }
-                                } else {
-                                  _vm.closeButton = $$c
-                                }
-                              }
-                            }
-                          }),
-                          _vm._v(
-                            " Close Button\n                                    "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("label", { attrs: { for: "progressBar" } }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.progressBar,
-                                expression: "progressBar"
-                              }
-                            ],
-                            staticClass: "input-small custom-checkbox",
-                            attrs: { id: "progressBar", type: "checkbox" },
-                            domProps: {
-                              checked: Array.isArray(_vm.progressBar)
-                                ? _vm._i(_vm.progressBar, null) > -1
-                                : _vm.progressBar
-                            },
-                            on: {
-                              change: function($event) {
-                                var $$a = _vm.progressBar,
-                                  $$el = $event.target,
-                                  $$c = $$el.checked ? true : false
-                                if (Array.isArray($$a)) {
-                                  var $$v = null,
-                                    $$i = _vm._i($$a, $$v)
-                                  if ($$el.checked) {
-                                    $$i < 0 &&
-                                      (_vm.progressBar = $$a.concat([$$v]))
-                                  } else {
-                                    $$i > -1 &&
-                                      (_vm.progressBar = $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1)))
-                                  }
-                                } else {
-                                  _vm.progressBar = $$c
-                                }
-                              }
-                            }
-                          }),
-                          _vm._v(
-                            " Progress Bar\n                                    "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("label", { attrs: { for: "preventDuplicates" } }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.preventDuplicates,
-                                expression: "preventDuplicates"
-                              }
-                            ],
-                            staticClass: "input-small custom-checkbox",
-                            attrs: {
-                              id: "preventDuplicates",
-                              type: "checkbox"
-                            },
-                            domProps: {
-                              checked: Array.isArray(_vm.preventDuplicates)
-                                ? _vm._i(_vm.preventDuplicates, null) > -1
-                                : _vm.preventDuplicates
-                            },
-                            on: {
-                              change: function($event) {
-                                var $$a = _vm.preventDuplicates,
-                                  $$el = $event.target,
-                                  $$c = $$el.checked ? true : false
-                                if (Array.isArray($$a)) {
-                                  var $$v = null,
-                                    $$i = _vm._i($$a, $$v)
-                                  if ($$el.checked) {
-                                    $$i < 0 &&
-                                      (_vm.preventDuplicates = $$a.concat([
-                                        $$v
-                                      ]))
-                                  } else {
-                                    $$i > -1 &&
-                                      (_vm.preventDuplicates = $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1)))
-                                  }
-                                } else {
-                                  _vm.preventDuplicates = $$c
-                                }
-                              }
-                            }
-                          }),
-                          _vm._v(
-                            " Prevent Duplicates\n                                    "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("label", { attrs: { for: "newestOnTop" } }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.newestOnTop,
-                                expression: "newestOnTop"
-                              }
-                            ],
-                            staticClass: "input-small custom-checkbox",
-                            attrs: { id: "newestOnTop", type: "checkbox" },
-                            domProps: {
-                              checked: Array.isArray(_vm.newestOnTop)
-                                ? _vm._i(_vm.newestOnTop, null) > -1
-                                : _vm.newestOnTop
-                            },
-                            on: {
-                              change: function($event) {
-                                var $$a = _vm.newestOnTop,
-                                  $$el = $event.target,
-                                  $$c = $$el.checked ? true : false
-                                if (Array.isArray($$a)) {
-                                  var $$v = null,
-                                    $$i = _vm._i($$a, $$v)
-                                  if ($$el.checked) {
-                                    $$i < 0 &&
-                                      (_vm.newestOnTop = $$a.concat([$$v]))
-                                  } else {
-                                    $$i > -1 &&
-                                      (_vm.newestOnTop = $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1)))
-                                  }
-                                } else {
-                                  _vm.newestOnTop = $$c
-                                }
-                              }
-                            }
-                          }),
-                          _vm._v(
-                            " Newest on top\n                                    "
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-3" }, [
-                    _c("div", { staticClass: "controls" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "showEasing" }
-                          },
-                          [_vm._v("Show Easing")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.showEasing,
-                                expression: "showEasing"
-                              }
-                            ],
-                            staticClass: "form-control input-small",
-                            attrs: { id: "showEasing" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.showEasing = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "swing" } }, [
-                              _vm._v("swing")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "linear" } }, [
-                              _vm._v("linear")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "hideEasing" }
-                          },
-                          [_vm._v("Hide Easing")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.hideEasing,
-                                expression: "hideEasing"
-                              }
-                            ],
-                            staticClass: "form-control input-small",
-                            attrs: { id: "hideEasing" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.hideEasing = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "swing" } }, [
-                              _vm._v("swing")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "linear" } }, [
-                              _vm._v("linear")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "showMethod" }
-                          },
-                          [_vm._v("Show Method")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.showMethod,
-                                expression: "showMethod"
-                              }
-                            ],
-                            staticClass: "form-control input-small",
-                            attrs: { id: "showMethod" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.showMethod = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "show" } }, [
-                              _vm._v("show")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "fadeIn" } }, [
-                              _vm._v("fadeIn")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "slideDown" } }, [
-                              _vm._v("slideDown")
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "hideMethod" }
-                          },
-                          [_vm._v("Hide Method")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.hideMethod,
-                                expression: "hideMethod"
-                              }
-                            ],
-                            staticClass: "form-control input-small",
-                            attrs: { id: "hideMethod" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.hideMethod = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "hide" } }, [
-                              _vm._v("hide")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "fadeOut" } }, [
-                              _vm._v("fadeOut")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "slideUp" } }, [
-                              _vm._v("slideUp")
-                            ])
-                          ]
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-3" }, [
-                    _c("div", { staticClass: "controls" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "showDuration" }
-                          },
-                          [_vm._v("Show Duration")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.showDuration,
-                              expression: "showDuration"
-                            }
-                          ],
-                          staticClass: "form-control input-small",
-                          attrs: {
-                            id: "showDuration",
-                            type: "text",
-                            placeholder: "ms"
-                          },
-                          domProps: { value: _vm.showDuration },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.showDuration = $event.target.value
-                            }
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "hideDuration" }
-                          },
-                          [_vm._v("Hide Duration")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.hideDuration,
-                              expression: "hideDuration"
-                            }
-                          ],
-                          staticClass: "form-control input-small",
-                          attrs: {
-                            id: "hideDuration",
-                            type: "text",
-                            placeholder: "ms"
-                          },
-                          domProps: { value: _vm.hideDuration },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.hideDuration = $event.target.value
-                            }
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "timeOut" }
-                          },
-                          [_vm._v("Time out")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.timeOut,
-                              expression: "timeOut"
-                            }
-                          ],
-                          staticClass: "form-control input-small",
-                          attrs: {
-                            id: "timeOut",
-                            type: "text",
-                            placeholder: "ms"
-                          },
-                          domProps: { value: _vm.timeOut },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.timeOut = $event.target.value
-                            }
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "extendedTimeOut" }
-                          },
-                          [_vm._v("Extended time out")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.extendedTimeOut,
-                              expression: "extendedTimeOut"
-                            }
-                          ],
-                          staticClass: "form-control input-small",
-                          attrs: {
-                            id: "extendedTimeOut",
-                            type: "text",
-                            placeholder: "ms"
-                          },
-                          domProps: { value: _vm.extendedTimeOut },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.extendedTimeOut = $event.target.value
-                            }
-                          }
-                        })
-                      ])
-                    ])
-                  ])
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      id: "demo1",
+                      type: "text",
+                      value: "55",
+                      name: "demo1"
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-12 col-sm-4" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success btn-raised toastrshow",
-                        attrs: { type: "button", id: "showtoast" },
-                        on: { click: _vm.show_toast }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Show Toast\n                            "
-                        )
-                      ]
-                    )
-                  ]),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo2" } }, [_vm._v("Prefix")]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-12 col-sm-4" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-danger btn-raised toastrshow",
-                        attrs: { type: "button", id: "cleartoasts" },
-                        on: { click: _vm.clearall }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Clear Toasts\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12 col-sm-4" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-warning btn-raised toastrshow",
-                        attrs: { type: "button", id: "clearlasttoast" },
-                        on: { click: _vm.clearlast }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Clear Last Toast\n                            "
-                        )
-                      ]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("div", { staticClass: "row margin-top-10" }, [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("pre", {
-                      attrs: { id: "toastrOptions" },
-                      model: {
-                        value: _vm.toastrOptions,
-                        callback: function($$v) {
-                          _vm.toastrOptions = $$v
-                        },
-                        expression: "toastrOptions"
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        id: "demo2",
+                        type: "text",
+                        value: "0",
+                        name: "demo2"
                       }
                     })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo_vertical" } }, [
+                    _vm._v(
+                      "\n                            Vertical button alignment\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      attrs: {
+                        id: "demo_vertical",
+                        type: "text",
+                        value: "",
+                        name: "demo_vertical"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo_vertical2" } }, [
+                    _vm._v(
+                      "\n                            Vertical buttons with custom icons\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      attrs: {
+                        id: "demo_vertical2",
+                        type: "text",
+                        value: "",
+                        name: "demo_vertical2"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo3" } }, [
+                    _vm._v(
+                      "\n                            Init with empty value\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      attrs: {
+                        id: "demo3",
+                        type: "text",
+                        value: "",
+                        name: "demo3"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo3_21" } }, [
+                    _vm._v(
+                      "\n                            Value attribute is not set (applying settings.initval)\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      attrs: {
+                        id: "demo3_21",
+                        type: "text",
+                        value: "",
+                        name: "demo3_21"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo4" } }, [
+                    _vm._v(
+                      "\n                            Button postfix (small)\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      staticClass: "input-sm",
+                      attrs: {
+                        id: "demo4",
+                        type: "text",
+                        value: "",
+                        name: "demo4"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo4_2" } }, [
+                    _vm._v(
+                      "\n                            Button postfix (large)\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      staticClass: "form-control input-lg",
+                      attrs: {
+                        id: "demo4_2",
+                        type: "text",
+                        value: "",
+                        name: "demo4_2"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "demo5" } }, [
+                    _vm._v(
+                      "\n                            Button group\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          id: "demo5",
+                          type: "text",
+                          name: "demo5",
+                          value: "50"
+                        }
+                      })
+                    ])
                   ])
                 ])
               ])
@@ -1392,8 +1248,115 @@ var render = function() {
           )
         ],
         1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-lg-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class=ti-alarm-clock'></i> Clock Face Picker"
+              }
+            },
+            [
+              _c("div", { staticClass: "form-group" }, [
+                _c(
+                  "label",
+                  { staticClass: "control-label", attrs: { for: "t1" } },
+                  [
+                    _vm._v(
+                      "\n                        Default clock\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "form-control input-small",
+                  attrs: {
+                    id: "t1",
+                    value: "2:30 PM",
+                    "data-format": "hh:mm A",
+                    type: "text"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c(
+                  "label",
+                  { staticClass: "control-label", attrs: { for: "t2" } },
+                  [_vm._v("Button")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group" }, [
+                  _c("input", {
+                    staticClass: "form-control input-small",
+                    attrs: {
+                      type: "text",
+                      id: "t2",
+                      value: "14:30",
+                      readonly: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn input-group-append",
+                      attrs: { type: "button", id: "toggle-btn" }
+                    },
+                    [_c("i", { staticClass: "fa fa-fw fa-clock-o" })]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c(
+                  "label",
+                  { staticClass: "control-label", attrs: { for: "input-a" } },
+                  [
+                    _vm._v(
+                      "\n                        Clock picker\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group form-inline" }, [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      id: "input-a",
+                      value: "",
+                      "data-default": "20:48"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn input-group-append bg-primary",
+                      attrs: { type: "button", id: "button-a" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Pick your time\n                        "
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
+        ],
+        1
       )
-    ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "background-overlay" })
   ])
 }
 var staticRenderFns = []
@@ -1402,27 +1365,28 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-18f35a50", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-2c317c59", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 459:
+/***/ 465:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1462)
-  __webpack_require__(1464)
-  __webpack_require__(1466)
+  __webpack_require__(1468)
+  __webpack_require__(1470)
+  __webpack_require__(1472)
+  __webpack_require__(1474)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1468)
+var __vue_script__ = __webpack_require__(1476)
 /* template */
-var __vue_template__ = __webpack_require__(1469)
+var __vue_template__ = __webpack_require__(1479)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1439,7 +1403,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/toastr_notifications.vue"
+Component.options.__file = "resources/components/pages/pickers.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1448,9 +1412,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-18f35a50", Component.options)
+    hotAPI.createRecord("data-v-2c317c59", Component.options)
   } else {
-    hotAPI.reload("data-v-18f35a50", Component.options)
+    hotAPI.reload("data-v-2c317c59", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1462,7 +1426,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 503:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11834,19 +11798,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 505:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(506)
+  __webpack_require__(523)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(508)
+var __vue_script__ = __webpack_require__(525)
 /* template */
-var __vue_template__ = __webpack_require__(509)
+var __vue_template__ = __webpack_require__(526)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11886,13 +11850,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 506:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(507);
+var content = __webpack_require__(524);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11913,10 +11877,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 507:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
@@ -11928,7 +11892,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 508:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11973,7 +11937,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 509:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12035,23 +11999,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 539:
+/***/ 697:
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(503)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(540));
-//# sourceMappingURL=toastr.js.map
-
-
-/***/ }),
-
-/***/ 540:
-/***/ (function(module, exports) {
-
-module.exports = function() {
-	throw new Error("define cannot be used indirect");
-};
-
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*
+ *  Bootstrap TouchSpin - v3.1.1
+ *  A mobile and touch friendly input spinner component for Bootstrap 3.
+ *  http://www.virtuosoft.eu/code/bootstrap-touchspin/
+ *
+ *  Made by István Ujj-Mészáros
+ *  Under Apache License v2.0 License
+ */
+!function(a){"use strict";function b(a,b){return a+".touchspin_"+b}function c(c,d){return a.map(c,function(a){return b(a,d)})}var d=0;a.fn.TouchSpin=function(b){if("destroy"===b)return void this.each(function(){var b=a(this),d=b.data();a(document).off(c(["mouseup","touchend","touchcancel","mousemove","touchmove","scroll","scrollstart"],d.spinnerid).join(" "))});var e={min:0,max:100,initval:"",replacementval:"",step:1,decimals:0,stepinterval:100,forcestepdivisibility:"round",stepintervaldelay:500,verticalbuttons:!1,verticalupclass:"glyphicon glyphicon-chevron-up",verticaldownclass:"glyphicon glyphicon-chevron-down",prefix:"",postfix:"",prefix_extraclass:"",postfix_extraclass:"",booster:!0,boostat:10,maxboostedstep:!1,mousewheel:!0,buttondown_class:"btn btn-default",buttonup_class:"btn btn-default",buttondown_txt:"-",buttonup_txt:"+"},f={min:"min",max:"max",initval:"init-val",replacementval:"replacement-val",step:"step",decimals:"decimals",stepinterval:"step-interval",verticalbuttons:"vertical-buttons",verticalupclass:"vertical-up-class",verticaldownclass:"vertical-down-class",forcestepdivisibility:"force-step-divisibility",stepintervaldelay:"step-interval-delay",prefix:"prefix",postfix:"postfix",prefix_extraclass:"prefix-extra-class",postfix_extraclass:"postfix-extra-class",booster:"booster",boostat:"boostat",maxboostedstep:"max-boosted-step",mousewheel:"mouse-wheel",buttondown_class:"button-down-class",buttonup_class:"button-up-class",buttondown_txt:"button-down-txt",buttonup_txt:"button-up-txt"};return this.each(function(){function g(){if(!J.data("alreadyinitialized")){if(J.data("alreadyinitialized",!0),d+=1,J.data("spinnerid",d),!J.is("input"))return void console.log("Must be an input.");j(),h(),u(),m(),p(),q(),r(),s(),D.input.css("display","block")}}function h(){""!==B.initval&&""===J.val()&&J.val(B.initval)}function i(a){l(a),u();var b=D.input.val();""!==b&&(b=Number(D.input.val()),D.input.val(b.toFixed(B.decimals)))}function j(){B=a.extend({},e,K,k(),b)}function k(){var b={};return a.each(f,function(a,c){var d="bts-"+c;J.is("[data-"+d+"]")&&(b[a]=J.data(d))}),b}function l(b){B=a.extend({},B,b)}function m(){var a=J.val(),b=J.parent();""!==a&&(a=Number(a).toFixed(B.decimals)),J.data("initvalue",a).val(a),J.addClass("form-control"),b.hasClass("input-group")?n(b):o()}function n(b){b.addClass("bootstrap-touchspin");var c,d,e=J.prev(),f=J.next(),g='<span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+"</span>",h='<span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+"</span>";e.hasClass("input-group-btn")?(c='<button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button>",e.append(c)):(c='<span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button></span>",a(c).insertBefore(J)),f.hasClass("input-group-btn")?(d='<button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button>",f.prepend(d)):(d='<span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span>",a(d).insertAfter(J)),a(g).insertBefore(J),a(h).insertAfter(J),C=b}function o(){var b;b=B.verticalbuttons?'<div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn-vertical"><button class="'+B.buttondown_class+' bootstrap-touchspin-up" type="button"><i class="'+B.verticalupclass+'"></i></button><button class="'+B.buttonup_class+' bootstrap-touchspin-down" type="button"><i class="'+B.verticaldownclass+'"></i></button></span></div>':'<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+'</button></span><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span></div>",C=a(b).insertBefore(J),a(".bootstrap-touchspin-prefix",C).after(J),J.hasClass("input-sm")?C.addClass("input-group-sm"):J.hasClass("input-lg")&&C.addClass("input-group-lg")}function p(){D={down:a(".bootstrap-touchspin-down",C),up:a(".bootstrap-touchspin-up",C),input:a("input",C),prefix:a(".bootstrap-touchspin-prefix",C).addClass(B.prefix_extraclass),postfix:a(".bootstrap-touchspin-postfix",C).addClass(B.postfix_extraclass)}}function q(){""===B.prefix&&D.prefix.hide(),""===B.postfix&&D.postfix.hide()}function r(){J.on("keydown",function(a){var b=a.keyCode||a.which;38===b?("up"!==M&&(w(),z()),a.preventDefault()):40===b&&("down"!==M&&(x(),y()),a.preventDefault())}),J.on("keyup",function(a){var b=a.keyCode||a.which;38===b?A():40===b&&A()}),J.on("blur",function(){u()}),D.down.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("down"!==M&&(x(),y()),a.preventDefault())}),D.down.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.up.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("up"!==M&&(w(),z()),a.preventDefault())}),D.up.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.down.on("mousedown.touchspin",function(a){D.down.off("touchstart.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.down.on("touchstart.touchspin",function(a){D.down.off("mousedown.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.up.on("mousedown.touchspin",function(a){D.up.off("touchstart.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("touchstart.touchspin",function(a){D.up.off("mousedown.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),D.up.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),a(document).on(c(["mouseup","touchend","touchcancel"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),a(document).on(c(["mousemove","touchmove","scroll","scrollstart"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),J.on("mousewheel DOMMouseScroll",function(a){if(B.mousewheel&&J.is(":focus")){var b=a.originalEvent.wheelDelta||-a.originalEvent.deltaY||-a.originalEvent.detail;a.stopPropagation(),a.preventDefault(),0>b?x():w()}})}function s(){J.on("touchspin.uponce",function(){A(),w()}),J.on("touchspin.downonce",function(){A(),x()}),J.on("touchspin.startupspin",function(){z()}),J.on("touchspin.startdownspin",function(){y()}),J.on("touchspin.stopspin",function(){A()}),J.on("touchspin.updatesettings",function(a,b){i(b)})}function t(a){switch(B.forcestepdivisibility){case"round":return(Math.round(a/B.step)*B.step).toFixed(B.decimals);case"floor":return(Math.floor(a/B.step)*B.step).toFixed(B.decimals);case"ceil":return(Math.ceil(a/B.step)*B.step).toFixed(B.decimals);default:return a}}function u(){var a,b,c;return a=J.val(),""===a?void(""!==B.replacementval&&(J.val(B.replacementval),J.trigger("change"))):void(B.decimals>0&&"."===a||(b=parseFloat(a),isNaN(b)&&(b=""!==B.replacementval?B.replacementval:0),c=b,b.toString()!==a&&(c=b),b<B.min&&(c=B.min),b>B.max&&(c=B.max),c=t(c),Number(a).toString()!==c.toString()&&(J.val(c),J.trigger("change"))))}function v(){if(B.booster){var a=Math.pow(2,Math.floor(L/B.boostat))*B.step;return B.maxboostedstep&&a>B.maxboostedstep&&(a=B.maxboostedstep,E=Math.round(E/a)*a),Math.max(B.step,a)}return B.step}function w(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E+=b,E>B.max&&(E=B.max,J.trigger("touchspin.on.max"),A()),D.input.val(Number(E).toFixed(B.decimals)),a!==E&&J.trigger("change")}function x(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E-=b,E<B.min&&(E=B.min,J.trigger("touchspin.on.min"),A()),D.input.val(E.toFixed(B.decimals)),a!==E&&J.trigger("change")}function y(){A(),L=0,M="down",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startdownspin"),H=setTimeout(function(){F=setInterval(function(){L++,x()},B.stepinterval)},B.stepintervaldelay)}function z(){A(),L=0,M="up",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startupspin"),I=setTimeout(function(){G=setInterval(function(){L++,w()},B.stepinterval)},B.stepintervaldelay)}function A(){switch(clearTimeout(H),clearTimeout(I),clearInterval(F),clearInterval(G),M){case"up":J.trigger("touchspin.on.stopupspin"),J.trigger("touchspin.on.stopspin");break;case"down":J.trigger("touchspin.on.stopdownspin"),J.trigger("touchspin.on.stopspin")}L=0,M=!1}var B,C,D,E,F,G,H,I,J=a(this),K=J.data(),L=0,M=!1;g()})}}(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
 
 /***/ })
 

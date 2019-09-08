@@ -36,7 +36,6 @@
 <style src="./css/custom_css/metisMenu.css"></style>
 <style lang="scss" src="./sass/dark/custom.scss"></style>
 <style >
-
    .menu-item .name ,.submenu.collapse-item .submenu-header-title,.ti-angle-right,.content-profile,.submenu.collapse-item.active  .submenu-content{
        display: none;
    }

@@ -1,12 +1,12 @@
 webpackJsonp([130],{
 
-/***/ 1385:
+/***/ 1405:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1386);
+var content = __webpack_require__(1406);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,10 +27,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 1386:
+/***/ 1406:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
@@ -42,13 +42,13 @@ exports.push([module.i, "/**\n * wenk - Lightweight tooltip for the greater good
 
 /***/ }),
 
-/***/ 1387:
+/***/ 1407:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1388);
+var content = __webpack_require__(1408);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,10 +69,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 1388:
+/***/ 1408:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
@@ -84,12 +84,12 @@ exports.push([module.i, "\n.faq-cat-content {\n    margin-top : 25px;\n}\n.faq-c
 
 /***/ }),
 
-/***/ 1389:
+/***/ 1409:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(517);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
 //
 //
@@ -397,7 +397,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1390:
+/***/ 1410:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -873,7 +873,7 @@ var render = function() {
                         _c("template", { slot: "title" }, [
                           _c("img", {
                             attrs: {
-                              src: __webpack_require__(1391),
+                              src: __webpack_require__(1411),
                               alt: "Google",
                               width: "20",
                               height: "20"
@@ -1408,27 +1408,27 @@ if (false) {
 
 /***/ }),
 
-/***/ 1391:
+/***/ 1411:
 /***/ (function(module, exports) {
 
 module.exports = "/images/football.jpg?7a3f7a7b1ed0c1c4471260384c3e46e0";
 
 /***/ }),
 
-/***/ 447:
+/***/ 459:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1385)
-  __webpack_require__(1387)
+  __webpack_require__(1405)
+  __webpack_require__(1407)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1389)
+var __vue_script__ = __webpack_require__(1409)
 /* template */
-var __vue_template__ = __webpack_require__(1390)
+var __vue_template__ = __webpack_require__(1410)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1468,19 +1468,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 504:
+/***/ 517:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(505)
+  __webpack_require__(518)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(507)
+var __vue_script__ = __webpack_require__(520)
 /* template */
-var __vue_template__ = __webpack_require__(508)
+var __vue_template__ = __webpack_require__(521)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1520,13 +1520,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 505:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(506);
+var content = __webpack_require__(519);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1547,10 +1547,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 506:
+/***/ 519:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
@@ -1562,7 +1562,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 507:
+/***/ 520:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1607,7 +1607,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 508:
+/***/ 521:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

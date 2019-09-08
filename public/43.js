@@ -1,22 +1,22 @@
 webpackJsonp([43],{
 
-/***/ 1456:
+/***/ 1749:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1457);
+var content = __webpack_require__(1750);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("4962c08f", content, false, {});
+var update = __webpack_require__(26)("aecf985e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweetalert2.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweetalert2.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,72 +27,118 @@ if(false) {
 
 /***/ }),
 
-/***/ 1457:
+/***/ 1750:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\nbody.swal2-in {\n  overflow-y: hidden;\n}\n.swal2-container {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  padding: 10px;\n  background-color: transparent;\n  z-index: 1060;\n}\n.swal2-container:not(.in) {\n    pointer-events: none;\n}\n.swal2-container.fade {\n    -webkit-transition: background-color .1s;\n    transition: background-color .1s;\n}\n.swal2-container.in {\n    background-color: rgba(0, 0, 0, 0.4);\n}\n.swal2-modal {\n  background-color: #fff;\n  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-radius: 5px;\n  box-sizing: border-box;\n  text-align: center;\n  margin: auto;\n  overflow-x: hidden;\n  overflow-y: auto;\n  display: none;\n}\n.swal2-modal:focus {\n    outline: none;\n}\n.swal2-modal.loading {\n    overflow-y: hidden;\n}\n.swal2-modal h2 {\n    color: #595959;\n    font-size: 30px;\n    text-align: center;\n    font-weight: 600;\n    text-transform: none;\n    position: relative;\n    margin: 0;\n    padding: 0;\n    line-height: 60px;\n    display: block;\n}\n.swal2-modal .swal2-spacer {\n    height: 10px;\n    color: transparent;\n    border: 0;\n}\n.swal2-modal .styled {\n    border: 0;\n    border-radius: 3px;\n    box-shadow: none;\n    color: #fff;\n    cursor: pointer;\n    font-size: 17px;\n    font-weight: 500;\n    margin: 0 5px;\n    padding: 10px 32px;\n}\n.swal2-modal .styled:not(.loading)[disabled] {\n      opacity: .4;\n      cursor: no-drop;\n}\n.swal2-modal .styled.loading {\n      box-sizing: border-box;\n      border: 4px solid transparent;\n      border-color: transparent;\n      width: 40px;\n      height: 40px;\n      padding: 0;\n      margin: -2px 30px;\n      vertical-align: top;\n      background-color: transparent !important;\n      color: transparent;\n      cursor: default;\n      border-radius: 100%;\n      -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;\n              animation: rotate-loading 1.5s linear 0s infinite normal;\n}\n.swal2-modal :not(.styled).loading::after {\n    display: inline-block;\n    content: '';\n    margin-left: 5px;\n    vertical-align: -1px;\n    height: 6px;\n    width: 6px;\n    border: 3px solid #999999;\n    border-right-color: transparent;\n    border-radius: 50%;\n    -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;\n            animation: rotate-loading 1.5s linear 0s infinite normal;\n}\n.swal2-modal .swal2-image {\n    margin: 20px auto;\n    max-width: 100%;\n}\n.swal2-modal .swal2-close {\n    font-size: 36px;\n    line-height: 36px;\n    font-family: serif;\n    position: absolute;\n    top: 5px;\n    right: 13px;\n    cursor: pointer;\n    color: #cccccc;\n    -webkit-transition: color .1s ease;\n    transition: color .1s ease;\n}\n.swal2-modal .swal2-close:hover {\n      color: #d55;\n}\n.swal2-modal > .swal2-input,\n  .swal2-modal > .swal2-file,\n  .swal2-modal > .swal2-textarea,\n  .swal2-modal > .swal2-select,\n  .swal2-modal > .swal2-radio,\n  .swal2-modal > .swal2-checkbox {\n    display: none;\n}\n.swal2-modal .swal2-content {\n    font-size: 18px;\n    text-align: center;\n    font-weight: 300;\n    position: relative;\n    float: none;\n    margin: 0;\n    padding: 0;\n    line-height: normal;\n    color: #545454;\n}\n.swal2-modal .swal2-input,\n  .swal2-modal .swal2-file,\n  .swal2-modal .swal2-textarea,\n  .swal2-modal .swal2-select,\n  .swal2-modal .swal2-radio,\n  .swal2-modal .swal2-checkbox {\n    margin: 20px auto;\n}\n.swal2-modal .swal2-input,\n  .swal2-modal .swal2-file,\n  .swal2-modal .swal2-textarea {\n    width: 100%;\n    box-sizing: border-box;\n    border-radius: 3px;\n    border: 1px solid #d9d9d9;\n    font-size: 18px;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);\n    -webkit-transition: border-color box-shadow .3s;\n    transition: border-color box-shadow .3s;\n}\n.swal2-modal .swal2-input.error,\n    .swal2-modal .swal2-file.error,\n    .swal2-modal .swal2-textarea.error {\n      border-color: #f06e57;\n}\n.swal2-modal .swal2-input:focus,\n    .swal2-modal .swal2-file:focus,\n    .swal2-modal .swal2-textarea:focus {\n      outline: none;\n      box-shadow: 0 0 3px #c4e6f5;\n      border: 1px solid #b4dbed;\n}\n.swal2-modal .swal2-input:focus::-webkit-input-placeholder,\n      .swal2-modal .swal2-file:focus::-webkit-input-placeholder,\n      .swal2-modal .swal2-textarea:focus::-webkit-input-placeholder {\n        -webkit-transition: opacity .3s .03s ease;\n        transition: opacity .3s .03s ease;\n        opacity: .8;\n}\n.swal2-modal .swal2-input:focus::-moz-placeholder,\n      .swal2-modal .swal2-file:focus::-moz-placeholder,\n      .swal2-modal .swal2-textarea:focus::-moz-placeholder {\n        -webkit-transition: opacity .3s .03s ease;\n        transition: opacity .3s .03s ease;\n        opacity: .8;\n}\n.swal2-modal .swal2-input:focus:-ms-input-placeholder,\n      .swal2-modal .swal2-file:focus:-ms-input-placeholder,\n      .swal2-modal .swal2-textarea:focus:-ms-input-placeholder {\n        -webkit-transition: opacity .3s .03s ease;\n        transition: opacity .3s .03s ease;\n        opacity: .8;\n}\n.swal2-modal .swal2-input:focus::placeholder,\n      .swal2-modal .swal2-file:focus::placeholder,\n      .swal2-modal .swal2-textarea:focus::placeholder {\n        -webkit-transition: opacity .3s .03s ease;\n        transition: opacity .3s .03s ease;\n        opacity: .8;\n}\n.swal2-modal .swal2-input::-webkit-input-placeholder,\n    .swal2-modal .swal2-file::-webkit-input-placeholder,\n    .swal2-modal .swal2-textarea::-webkit-input-placeholder {\n      color: #e6e6e6;\n}\n.swal2-modal .swal2-input::-moz-placeholder,\n    .swal2-modal .swal2-file::-moz-placeholder,\n    .swal2-modal .swal2-textarea::-moz-placeholder {\n      color: #e6e6e6;\n}\n.swal2-modal .swal2-input:-ms-input-placeholder,\n    .swal2-modal .swal2-file:-ms-input-placeholder,\n    .swal2-modal .swal2-textarea:-ms-input-placeholder {\n      color: #e6e6e6;\n}\n.swal2-modal .swal2-input::placeholder,\n    .swal2-modal .swal2-file::placeholder,\n    .swal2-modal .swal2-textarea::placeholder {\n      color: #e6e6e6;\n}\n.swal2-modal .swal2-range input {\n    float: left;\n    width: 80%;\n}\n.swal2-modal .swal2-range output {\n    float: right;\n    width: 20%;\n    font-size: 20px;\n    font-weight: 600;\n    text-align: center;\n}\n.swal2-modal .swal2-range input,\n  .swal2-modal .swal2-range output {\n    height: 43px;\n    line-height: 43px;\n    vertical-align: middle;\n    margin: 20px auto;\n    padding: 0;\n}\n.swal2-modal .swal2-input {\n    height: 43px;\n    padding: 0 12px;\n}\n.swal2-modal .swal2-input[type='number'] {\n      max-width: 150px;\n}\n.swal2-modal .swal2-file {\n    font-size: 20px;\n}\n.swal2-modal .swal2-textarea {\n    height: 108px;\n    padding: 12px;\n}\n.swal2-modal .swal2-select {\n    color: #545454;\n    font-size: inherit;\n    padding: 5px 10px;\n    min-width: 40%;\n    max-width: 100%;\n}\n.swal2-modal .swal2-radio {\n    border: 0;\n}\n.swal2-modal .swal2-radio label:not(:first-child) {\n      margin-left: 20px;\n}\n.swal2-modal .swal2-radio input,\n    .swal2-modal .swal2-radio span {\n      vertical-align: middle;\n}\n.swal2-modal .swal2-radio input {\n      margin: 0 3px 0 0;\n}\n.swal2-modal .swal2-checkbox {\n    color: #545454;\n}\n.swal2-modal .swal2-checkbox input,\n    .swal2-modal .swal2-checkbox span {\n      vertical-align: middle;\n}\n.swal2-modal .swal2-validationerror {\n    background-color: #f0f0f0;\n    margin: 0 -20px;\n    overflow: hidden;\n    padding: 10px;\n    color: gray;\n    font-size: 16px;\n    font-weight: 300;\n    display: none;\n}\n.swal2-modal .swal2-validationerror::before {\n      content: '!';\n      display: inline-block;\n      width: 24px;\n      height: 24px;\n      border-radius: 50%;\n      background-color: #ea7d7d;\n      color: #fff;\n      line-height: 24px;\n      text-align: center;\n      margin-right: 10px;\n}\n@supports (-ms-accelerator: true) {\n.swal2-range input {\n    width: 100% !important;\n}\n.swal2-range output {\n    display: none;\n}\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n.swal2-range input {\n    width: 100% !important;\n}\n.swal2-range output {\n    display: none;\n}\n}\n.swal2-icon {\n  width: 80px;\n  height: 80px;\n  border: 4px solid transparent;\n  border-radius: 50%;\n  margin: 20px auto 30px;\n  padding: 0;\n  position: relative;\n  box-sizing: content-box;\n  cursor: default;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.swal2-icon.swal2-error {\n    border-color: #f27474;\n}\n.swal2-icon.swal2-error .x-mark {\n      position: relative;\n      display: block;\n}\n.swal2-icon.swal2-error .line {\n      position: absolute;\n      height: 5px;\n      width: 47px;\n      background-color: #f27474;\n      display: block;\n      top: 37px;\n      border-radius: 2px;\n}\n.swal2-icon.swal2-error .line.left {\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n        left: 17px;\n}\n.swal2-icon.swal2-error .line.right {\n        -webkit-transform: rotate(-45deg);\n                transform: rotate(-45deg);\n        right: 16px;\n}\n.swal2-icon.swal2-warning {\n    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    color: #f8bb86;\n    border-color: #facea8;\n    font-size: 60px;\n    line-height: 80px;\n    text-align: center;\n}\n.swal2-icon.swal2-info {\n    font-family: 'Open Sans', sans-serif;\n    color: #3fc3ee;\n    border-color: #9de0f6;\n    font-size: 60px;\n    line-height: 80px;\n    text-align: center;\n}\n.swal2-icon.swal2-question {\n    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    color: #87adbd;\n    border-color: #c9dae1;\n    font-size: 60px;\n    line-height: 80px;\n    text-align: center;\n}\n.swal2-icon.swal2-success {\n    border-color: #a5dc86;\n}\n.swal2-icon.swal2-success::before, .swal2-icon.swal2-success::after {\n      content: '';\n      border-radius: 50%;\n      position: absolute;\n      width: 60px;\n      height: 120px;\n      background: #fff;\n      -webkit-transform: rotate(45deg);\n              transform: rotate(45deg);\n}\n.swal2-icon.swal2-success::before {\n      border-radius: 120px 0 0 120px;\n      top: -7px;\n      left: -33px;\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg);\n      -webkit-transform-origin: 60px 60px;\n              transform-origin: 60px 60px;\n}\n.swal2-icon.swal2-success::after {\n      border-radius: 0 120px 120px 0;\n      top: -11px;\n      left: 30px;\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg);\n      -webkit-transform-origin: 0 60px;\n              transform-origin: 0 60px;\n}\n.swal2-icon.swal2-success .placeholder {\n      width: 80px;\n      height: 80px;\n      border: 4px solid rgba(165, 220, 134, 0.2);\n      border-radius: 50%;\n      box-sizing: content-box;\n      position: absolute;\n      left: -4px;\n      top: -4px;\n      z-index: 2;\n}\n.swal2-icon.swal2-success .fix {\n      width: 7px;\n      height: 90px;\n      background-color: #fff;\n      position: absolute;\n      left: 28px;\n      top: 8px;\n      z-index: 1;\n      -webkit-transform: rotate(-45deg);\n              transform: rotate(-45deg);\n}\n.swal2-icon.swal2-success .line {\n      height: 5px;\n      background-color: #a5dc86;\n      display: block;\n      border-radius: 2px;\n      position: absolute;\n      z-index: 2;\n}\n.swal2-icon.swal2-success .line.tip {\n        width: 25px;\n        left: 14px;\n        top: 46px;\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n}\n.swal2-icon.swal2-success .line.long {\n        width: 47px;\n        right: 8px;\n        top: 38px;\n        -webkit-transform: rotate(-45deg);\n                transform: rotate(-45deg);\n}\n.swal2-progresssteps {\n  font-weight: 600;\n  margin: 0 0 20px;\n  padding: 0;\n}\n.swal2-progresssteps li {\n    display: inline-block;\n    position: relative;\n}\n.swal2-progresssteps .swal2-progresscircle {\n    background: #3085d6;\n    border-radius: 2em;\n    color: #fff;\n    height: 2em;\n    line-height: 2em;\n    text-align: center;\n    width: 2em;\n    z-index: 20;\n}\n.swal2-progresssteps .swal2-progresscircle:first-child {\n      margin-left: 0;\n}\n.swal2-progresssteps .swal2-progresscircle:last-child {\n      margin-right: 0;\n}\n.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep {\n      background: #3085d6;\n}\n.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progresscircle {\n        background: #add8e6;\n}\n.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progressline {\n        background: #add8e6;\n}\n.swal2-progresssteps .swal2-progressline {\n    background: #3085d6;\n    height: .4em;\n    margin: 0 -1px;\n    z-index: 10;\n}\n[class^='swal2'] {\n  -webkit-tap-highlight-color: transparent;\n}\n@-webkit-keyframes showSweetAlert {\n0% {\n    -webkit-transform: scale(0.7);\n            transform: scale(0.7);\n}\n45% {\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n}\n80% {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95);\n}\n100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n}\n@keyframes showSweetAlert {\n0% {\n    -webkit-transform: scale(0.7);\n            transform: scale(0.7);\n}\n45% {\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n}\n80% {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95);\n}\n100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n}\n}\n@-webkit-keyframes hideSweetAlert {\n0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n}\n100% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    opacity: 0;\n}\n}\n@keyframes hideSweetAlert {\n0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n}\n100% {\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    opacity: 0;\n}\n}\n.show-swal2 {\n  -webkit-animation: showSweetAlert 0.3s;\n          animation: showSweetAlert 0.3s;\n}\n.show-swal2.no-animation {\n    -webkit-animation: none;\n            animation: none;\n}\n.hide-swal2 {\n  -webkit-animation: hideSweetAlert 0.15s forwards;\n          animation: hideSweetAlert 0.15s forwards;\n}\n.hide-swal2.no-animation {\n    -webkit-animation: none;\n            animation: none;\n}\n@-webkit-keyframes animate-success-tip {\n0% {\n    width: 0;\n    left: 1px;\n    top: 19px;\n}\n54% {\n    width: 0;\n    left: 1px;\n    top: 19px;\n}\n70% {\n    width: 50px;\n    left: -8px;\n    top: 37px;\n}\n84% {\n    width: 17px;\n    left: 21px;\n    top: 48px;\n}\n100% {\n    width: 25px;\n    left: 14px;\n    top: 45px;\n}\n}\n@keyframes animate-success-tip {\n0% {\n    width: 0;\n    left: 1px;\n    top: 19px;\n}\n54% {\n    width: 0;\n    left: 1px;\n    top: 19px;\n}\n70% {\n    width: 50px;\n    left: -8px;\n    top: 37px;\n}\n84% {\n    width: 17px;\n    left: 21px;\n    top: 48px;\n}\n100% {\n    width: 25px;\n    left: 14px;\n    top: 45px;\n}\n}\n@-webkit-keyframes animate-success-long {\n0% {\n    width: 0;\n    right: 46px;\n    top: 54px;\n}\n65% {\n    width: 0;\n    right: 46px;\n    top: 54px;\n}\n84% {\n    width: 55px;\n    right: 0;\n    top: 35px;\n}\n100% {\n    width: 47px;\n    right: 8px;\n    top: 38px;\n}\n}\n@keyframes animate-success-long {\n0% {\n    width: 0;\n    right: 46px;\n    top: 54px;\n}\n65% {\n    width: 0;\n    right: 46px;\n    top: 54px;\n}\n84% {\n    width: 55px;\n    right: 0;\n    top: 35px;\n}\n100% {\n    width: 47px;\n    right: 8px;\n    top: 38px;\n}\n}\n@-webkit-keyframes rotatePlaceholder {\n0% {\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg);\n}\n5% {\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg);\n}\n12% {\n    -webkit-transform: rotate(-405deg);\n            transform: rotate(-405deg);\n}\n100% {\n    -webkit-transform: rotate(-405deg);\n            transform: rotate(-405deg);\n}\n}\n@keyframes rotatePlaceholder {\n0% {\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg);\n}\n5% {\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg);\n}\n12% {\n    -webkit-transform: rotate(-405deg);\n            transform: rotate(-405deg);\n}\n100% {\n    -webkit-transform: rotate(-405deg);\n            transform: rotate(-405deg);\n}\n}\n.animate-success-tip {\n  -webkit-animation: animate-success-tip 0.75s;\n          animation: animate-success-tip 0.75s;\n}\n.animate-success-long {\n  -webkit-animation: animate-success-long 0.75s;\n          animation: animate-success-long 0.75s;\n}\n.swal2-success.animate::after {\n  -webkit-animation: rotatePlaceholder 4.25s ease-in;\n          animation: rotatePlaceholder 4.25s ease-in;\n}\n@-webkit-keyframes animate-error-icon {\n0% {\n    -webkit-transform: rotateX(100deg);\n            transform: rotateX(100deg);\n    opacity: 0;\n}\n100% {\n    -webkit-transform: rotateX(0deg);\n            transform: rotateX(0deg);\n    opacity: 1;\n}\n}\n@keyframes animate-error-icon {\n0% {\n    -webkit-transform: rotateX(100deg);\n            transform: rotateX(100deg);\n    opacity: 0;\n}\n100% {\n    -webkit-transform: rotateX(0deg);\n            transform: rotateX(0deg);\n    opacity: 1;\n}\n}\n.animate-error-icon {\n  -webkit-animation: animate-error-icon 0.5s;\n          animation: animate-error-icon 0.5s;\n}\n@-webkit-keyframes animate-x-mark {\n0% {\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    margin-top: 26px;\n    opacity: 0;\n}\n50% {\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    margin-top: 26px;\n    opacity: 0;\n}\n80% {\n    -webkit-transform: scale(1.15);\n            transform: scale(1.15);\n    margin-top: -6px;\n}\n100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    margin-top: 0;\n    opacity: 1;\n}\n}\n@keyframes animate-x-mark {\n0% {\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    margin-top: 26px;\n    opacity: 0;\n}\n50% {\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    margin-top: 26px;\n    opacity: 0;\n}\n80% {\n    -webkit-transform: scale(1.15);\n            transform: scale(1.15);\n    margin-top: -6px;\n}\n100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    margin-top: 0;\n    opacity: 1;\n}\n}\n.animate-x-mark {\n  -webkit-animation: animate-x-mark 0.5s;\n          animation: animate-x-mark 0.5s;\n}\n@-webkit-keyframes pulse-warning {\n0% {\n    border-color: #f8d486;\n}\n100% {\n    border-color: #f8bb86;\n}\n}\n@keyframes pulse-warning {\n0% {\n    border-color: #f8d486;\n}\n100% {\n    border-color: #f8bb86;\n}\n}\n.pulse-warning {\n  -webkit-animation: pulse-warning 0.75s infinite alternate;\n          animation: pulse-warning 0.75s infinite alternate;\n}\n@-webkit-keyframes rotate-loading {\n0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\n100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n@keyframes rotate-loading {\n0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\n100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n", ""]);
+exports.push([module.i, "\n.demo {\n    height : 300px;\n    width  : 100%;\n}\n.demo > div:nth-child(2) {\n    position : relative;\n    width    : 350px;\n    margin   : auto\n}\n.demo .demo_hours {\n    position : absolute;\n    left     : 10px;\n    top      : 10px;\n}\n.demo .demo_minutes {\n    position : absolute;\n    left     : 50px;\n    top      : 50px;\n}\n.demo .demo_seconds {\n    position : absolute;\n    left     : 90px;\n    top      : 90px;\n}\n.m-b-10 {\n    margin-bottom : 10px;\n}\n.jqstooltip{\n    z-index: 99 !important;\n}\n.exact-size div,.colors div{\n    display: inline-block;\n}\n.custom_small{\n    margin-top: -20px;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1458:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1459);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("0ac92dbe", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweet_alert2.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweet_alert2.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1459:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.m-a-10 {\n    margin : 40px;\n}\n.swal2-modal h2 {\n    font-weight : 500;\n    line-height : 50px;\n}\n.swal2-container.in {\n    z-index : 10009;\n}\n.swal2-modal .swal2-content {\n    font-size : 13px;\n}\n.swal2-cancel {\n    background-color : #ff6666 !important;\n    font-size        : 14px !important;\n    margin-bottom    : 5px !important;\n}\n.swal2-modal {\n    background-color : #fff;\n    font-family      : \"Open Sans\", \"sans-serif\";\n    border-radius    : 0;\n}\n#swal2-checkbox {\n    margin : 0 5px 0;\n}\n/* Sweep To Right */\n.hvr-sweep-to-right {\n    display                     : inline-block;\n    vertical-align              : middle;\n    -webkit-transform           : translateZ(0);\n    transform                   : translateZ(0);\n    box-shadow                  : 0 0 1px rgba(0, 0, 0, 0);\n    -webkit-backface-visibility : hidden;\n    backface-visibility         : hidden;\n    -moz-osx-font-smoothing     : grayscale;\n    position                    : relative;\n    -webkit-transition-property : color;\n    transition-property         : color;\n    -webkit-transition-duration : 0.3s;\n    transition-duration         : 0.3s;\n    width                       : 100%;\n}\n.hvr-sweep-to-right:before {\n    content                            : \"\";\n    position                           : absolute;\n    z-index                            : -1;\n    top                                : 0;\n    left                               : 0;\n    right                              : 0;\n    bottom                             : 0;\n    background                         : #6699cc;\n    -webkit-transform                  : scaleX(0);\n    transform                          : scaleX(0);\n    -webkit-transform-origin           : 0 50%;\n    transform-origin                   : 0 50%;\n    -webkit-transition-property        : transform;\n    transition-property                : transform;\n    -webkit-transition-duration        : 0.3s;\n    transition-duration                : 0.3s;\n    -webkit-transition-timing-function : ease-out;\n    transition-timing-function         : ease-out;\n}\n.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {\n    color  : #ffffff;\n    cursor : pointer;\n}\n.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {\n    -webkit-transform : scaleX(1);\n    transform         : scaleX(1);\n}\n.swal2-confirm {\n    font-size     : 14px !important;\n    margin-bottom : 5px !important;\n}\n.btn-success {\n    border-left-color  : #66cc99 !important;\n    border-right-color : #66cc99 !important;\n    background-color   : #66cc99 !important;\n}\n.btn-primary {\n    border-left-color  : #6699cc !important;\n    border-right-color : #6699cc !important;\n    background-color   : #6699cc !important;\n}\n.btn-warning {\n    border-left-color  : #f0ad4e !important;\n    border-right-color : #f0ad4e !important;\n    background-color   : #f0ad4e !important;\n}\n.btn-info {\n    border-left-color  : #66ccff !important;\n    border-right-color : #66ccff !important;\n    background-color   : #66ccff !important;\n}\n.btn-danger {\n    border-left-color  : #ff6666 !important;\n    border-right-color : #ff6666 !important;\n    background-color   : #ff6666 !important;\n}\n.swal2-container.fade{\n    opacity: 1 !important;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1460:
+/***/ 1751:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(505);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__ = __webpack_require__(650);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__ = __webpack_require__(602);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__ = __webpack_require__(576);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -202,163 +248,156 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
+__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "sweet_alert",
+    name: "circle_sliders",
     components: {
+
+        circleslider: __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"].VueCircleSlider,
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    methods: {
-        basicalert: function basicalert(e) {
-            e.preventDefault();
-            swal({
-                title: "Are you sure?",
-                text: "You will not be able to recover this imaginary file!",
-                confirmButtonColor: "#ff6666"
+    data: function data() {
+        return {
+            sliderValue: 20,
+            val2: 0,
+            val3: 0,
+            val4: 0,
+            val5: 0,
+            val6: 0,
+            val7: 0
+        };
+    },
+
+    mounted: function mounted() {
+        "use strict";
+
+        $(document).ready(function () {
+            // spark line charts js start
+            $(".linechart").sparkline([5, 1, 7, 8, 2, 6, 4, 7, 4, 2, 4], {
+                type: 'line',
+                height: "50px",
+                width: "80px;",
+                lineColor: '#428bca',
+                fillColor: 'rgba(66,139,202,0.5)'
             });
-        },
-        success_alert: function success_alert(e) {
-            e.preventDefault();
-            swal({
-                title: "Success",
-                text: "You have successfully clicked",
-                type: "success",
-                confirmButtonColor: "#66cc99"
+            $(".barchart").sparkline([5, 6, 7, 2, 0, -4, -2, 4], {
+                type: 'bar',
+                height: "50px",
+                barWidth: "8px;",
+                barSpace: "3px",
+                barColor: "#428bca",
+                negBarColor: '#fb8678'
             });
-        },
-        ok_message: function ok_message(e) {
-            swal({
-                title: 'Are you sure?',
-                text: "You will not be able to recover this imaginary file!",
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#66cc99',
-                cancelButtonColor: '#ff6666',
-                confirmButtonText: 'Yes, delete it!',
-                cancelButtonText: 'No, cancel!',
-                confirmButtonClass: 'btn btn-success',
-                cancelButtonClass: 'btn btn-danger'
-            }).then(function () {
-                swal('Deleted!', 'Your file has been deleted.', 'success');
-            }, function (dismiss) {
-                // dismiss can be 'cancel', 'overlay',
-                // 'close', and 'timer'
-                if (dismiss === 'cancel') {
-                    swal('Cancelled', 'Your imaginary file is safe :)', 'error');
-                }
+            $(".stackedbarchart").sparkline([[5, 4], [4, 7], [7, 3], [3, 5], [6, 3], [2, 5]], {
+                type: 'bar',
+                zeroColor: '#dcdcdc',
+                nullColor: '#dcdcdc ',
+                height: "50px",
+                barWidth: "8px;",
+                barSpace: "3px",
+                stackedBarColor: ['#fb8678', '#428bca']
             });
-        },
-        custom_icon: function custom_icon(e) {
-            e.preventDefault();
-            swal({
-                title: "Sweet!",
-                text: "Here's a custom image.",
-                imageUrl: __webpack_require__(216),
-                imageWidth: 100,
-                imageHeight: 100,
-                animation: false
+            $(".tristatechart").sparkline([1, 1, 0, 1, -1, -1, 1, -1, 0, 0, 1, 1], {
+                type: 'tristate',
+                height: "50px",
+                barWidth: "8px;",
+                barSpace: "3px",
+                posBarColor: '#22d69d',
+                negBarColor: '#fb8678',
+                zeroBarColor: '#dcdcdc'
             });
-        },
-        custom_html: function custom_html(e) {
-            e.preventDefault();
-            swal({
-                title: "HTML Title!",
-                text: 'A custom <span style="color:#F8BB86">html<span> message.',
-                html: true
+            $(".bulletchart").sparkline([10, 12, 12, 9, 7], {
+                type: 'bullet',
+                height: "30px",
+                width: "80px",
+                targetColor: '#fb8678',
+                performanceColor: '#4fc1e9',
+                rangeColors: ['#ffb65f', '#fb8678', '#428bca']
             });
-        },
-        auto_close: function auto_close(e) {
-            e.preventDefault();
-            swal({
-                title: "Auto close alert!",
-                text: "I will close in 3 seconds.",
-                timer: 3000,
-                showConfirmButton: false
+            $(".piechart").sparkline([3, 4, 1, 6, 3, 5], {
+                type: 'pie',
+                width: '50px',
+                height: '50px',
+                sliceColors: ['#428bca', '#22d69d', '#4fc1e9', '#fb8678', '#ffb65f']
             });
-        },
-        prom_alert: function prom_alert(e) {
-            swal({
-                title: 'Input something',
-                input: 'text',
-                showCancelButton: true,
-                inputPlaceholder: 'write something!',
-                inputValidator: function inputValidator(value) {
-                    return new Promise(function (resolve, reject) {
-                        if (value) {
-                            resolve();
-                        } else {
-                            reject('You need to write something!');
-                        }
-                    });
-                }
-            }).then(function (result) {
-                swal({
-                    type: 'success',
-                    html: 'You entered text is: ' + result
-                });
+            $(".discretechart").sparkline([4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 2, 3, 5, 1, 6], {
+                type: 'discrete',
+                height: "50px",
+                Width: "80px",
+                lineColor: '#428bca'
             });
-        },
-        ip_alert: function ip_alert(e) {
-            swal.queue([{
-                title: 'Your IP Address',
-                confirmButtonText: 'Show my IP',
-                text: 'Your public IP will be received ' + 'via  request',
-                showLoaderOnConfirm: true,
-                preConfirm: function preConfirm() {
-                    return new Promise(function (resolve) {
-                        $.get('https://api.ipify.org?format=json').done(function (data) {
-                            swal.insertQueueStep(data.ip);
-                            resolve();
-                        });
-                    });
-                }
-            }]).then(function () {
-                swal('Good job!', 'Successfully checked your Ip', 'success');
+            $(".boxchart").sparkline([4, 27, 34, 52, 54, 59, 61, 68, 78, 82, 85, 87, 91, 93, 100], {
+                type: 'box',
+                width: '80px',
+                height: '50px',
+                boxFillColor: '#4fc1e9',
+                whiskerColor: '#ffb65f',
+                medianColor: '#fb8678',
+                targetColor: '#22d69d'
             });
-        },
-        info_alert: function info_alert(e) {
-            swal({
-                title: "Are you sure?",
-                text: "You will not be able to recover this imaginary file!",
-                type: "info",
-                confirmButtonClass: 'btn btn-info',
-                confirmButtonText: 'Info!'
+            $('#compositeline').sparkline('html', {
+                fillColor: false,
+                changeRangeMin: 0,
+                chartRangeMax: 10,
+                width: '100px',
+                height: '50px',
+                lineColor: '#428bca'
+            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
+                composite: true,
+                fillColor: false,
+                changeRangeMin: 0,
+                chartRangeMax: 10,
+                width: '100px',
+                height: '50px',
+                lineColor: '#fb8678'
             });
-        },
-        success_alert_two: function success_alert_two(e) {
-            swal({
-                title: "Are you sure?",
-                text: "You will not be able to recover this imaginary file!",
-                type: "success",
-                confirmButtonClass: 'btn btn-success',
-                confirmButtonText: 'Success!'
+            $('#compositebar').sparkline('html', {
+                type: 'bar',
+                barWidth: "10px;",
+                barSpace: "5px",
+                height: '50px',
+                barColor: "#428bca"
+            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
+                composite: true,
+                fillColor: false,
+                barWidth: "10px;",
+                barSpace: "5px",
+                height: '50px',
+                lineColor: '#ffb65f'
             });
-        },
-        warning_alert: function warning_alert(e) {
-            swal({
-                title: "Are you sure?",
-                text: "You will not be able to recover this imaginary file!",
-                type: "warning",
-                confirmButtonClass: 'btn btn-warning',
-                confirmButtonText: 'Warning!'
+            $('#normalline').sparkline('html', {
+                fillColor: false,
+                normalRangeMin: -1,
+                normalRangeMax: 8,
+                width: '120px',
+                height: '50px',
+                lineColor: '#428bca'
             });
-        },
-        danger_alert: function danger_alert(e) {
-            swal({
-                title: "Are you sure?",
-                text: "You will not be able to recover this imaginary file!",
-                type: "error",
-                confirmButtonClass: 'btn btn-danger',
-                confirmButtonText: 'Danger!'
+            $('#normalExample').sparkline('html', {
+                fillColor: false,
+                normalRangeMin: 80,
+                normalRangeMax: 95,
+                normalRangeColor: '#dcdcdc'
             });
-        }
+            $('#discrete2').sparkline('html', {
+                type: 'discrete',
+                thresholdColor: '#fb8678',
+                thresholdValue: 4,
+                height: "50px",
+                Width: "80px",
+                lineColor: '#428bca'
+            });
+        });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(503)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(520)))
 
 /***/ }),
 
-/***/ 1461:
+/***/ 1752:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -369,288 +408,491 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-md-12" },
+        { staticClass: "col-12" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-pie-chart'></i> Circle Slider" } },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c(
+                  "div",
+                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
+                  [
+                    _c("label", [_vm._v("Default")]),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.sliderValue,
+                        callback: function($$v) {
+                          _vm.sliderValue = $$v
+                        },
+                        expression: "sliderValue"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.sliderValue))])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
+                  [
+                    _c("label", [_vm._v(" Custom Dimenssion")]),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        min: 0,
+                        max: 10000,
+                        "step-size": 100,
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.val2,
+                        callback: function($$v) {
+                          _vm.val2 = $$v
+                        },
+                        expression: "val2"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.val2))])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
+                  [
+                    _c("label", { staticClass: "d-flex" }, [
+                      _vm._v("Custom side")
+                    ]),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      staticClass: "d-inline-block",
+                      attrs: {
+                        side: 100,
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.val3,
+                        callback: function($$v) {
+                          _vm.val3 = $$v
+                        },
+                        expression: "val3"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "d-inline-block " },
+                      [
+                        _c("circle-slider", {
+                          staticClass: "custom_small",
+                          attrs: {
+                            side: 50,
+                            "progress-color": "#66cc99",
+                            "knob-color": "#66cc99"
+                          },
+                          model: {
+                            value: _vm.val3,
+                            callback: function($$v) {
+                              _vm.val3 = $$v
+                            },
+                            expression: "val3"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("br")
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.val3))])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center exact-size"
+                  },
+                  [
+                    _c("label", [_vm._v("Exact sizes")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-width": 8,
+                        "progress-width": 12,
+                        "knob-radius": 10,
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.val4,
+                        callback: function($$v) {
+                          _vm.val4 = $$v
+                        },
+                        expression: "val4"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-width": 10,
+                        "progress-width": 5,
+                        "knob-radius": 10,
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.val4,
+                        callback: function($$v) {
+                          _vm.val4 = $$v
+                        },
+                        expression: "val4"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-width": 12,
+                        "progress-width": 3,
+                        "knob-radius": 4,
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.val4,
+                        callback: function($$v) {
+                          _vm.val4 = $$v
+                        },
+                        expression: "val4"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.val4))])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center colors"
+                  },
+                  [
+                    _vm._v(
+                      "\n                        Colors\n                        "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-color": "#edeff0",
+                        "progress-color": "#eee",
+                        "knob-color": "#6699cc"
+                      },
+                      model: {
+                        value: _vm.val6,
+                        callback: function($$v) {
+                          _vm.val6 = $$v
+                        },
+                        expression: "val6"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-color": "#ff6666",
+                        "progress-color": "#6699cc",
+                        "knob-color": "#66ccff"
+                      },
+                      model: {
+                        value: _vm.val6,
+                        callback: function($$v) {
+                          _vm.val6 = $$v
+                        },
+                        expression: "val6"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-color": "#cecece",
+                        "progress-color": "#66cc99",
+                        "knob-color": "#f0ad4e"
+                      },
+                      model: {
+                        value: _vm.val6,
+                        callback: function($$v) {
+                          _vm.val6 = $$v
+                        },
+                        expression: "val6"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.val6))])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
+                  [
+                    _c("label", [_vm._v("Relative sizes")]),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "circle-width-rel": 30,
+                        "progress-width-rel": 15,
+                        "knob-radius-rel": 8,
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      model: {
+                        value: _vm.val5,
+                        callback: function($$v) {
+                          _vm.val5 = $$v
+                        },
+                        expression: "val5"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", [_vm._v(_vm._s(_vm.val5))])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
+                  [
+                    _c("label", [_vm._v("Two-way binding")]),
+                    _vm._v(" "),
+                    _c("circle-slider", {
+                      attrs: {
+                        "progress-color": "#66cc99",
+                        "knob-color": "#66cc99"
+                      },
+                      on: {
+                        touchmove: function($event) {
+                          return _vm.$refs.input.blur()
+                        }
+                      },
+                      model: {
+                        value: _vm.val7,
+                        callback: function($$v) {
+                          _vm.val7 = $$v
+                        },
+                        expression: "val7"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model.number",
+                          value: _vm.val7,
+                          expression: "val7",
+                          modifiers: { number: true }
+                        }
+                      ],
+                      ref: "input",
+                      staticClass: "form-control",
+                      attrs: { type: "number" },
+                      domProps: { value: _vm.val7 },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.val7 = _vm._n($event.target.value)
+                        },
+                        blur: function($event) {
+                          return _vm.$forceUpdate()
+                        }
+                      }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-12" },
         [
           _c(
             "card",
             {
-              attrs: {
-                title:
-                  " <i class='ti-bell' aria-hidden='true'></i> Sweet Alerts"
-              }
+              attrs: { title: "<i class='ti-bar-chart-alt'></i> Tiny Charts" }
             },
             [
-              _c("div", { staticClass: "row m-a-10" }, [
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body success_alert text-center",
-                          on: { click: _vm.success_alert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Success Alert "),
-                            _c("i", { staticClass: "fa fa-check-circle-o" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+              _c("div", { staticClass: "row sparkline_charts" }, [
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny line chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "chart linechart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body ok_message text-center",
-                          on: { click: _vm.ok_message }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Ok Message "),
-                            _c("i", { staticClass: "fa fa-thumbs-o-up" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny bar chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "chart barchart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body basicalert text-center ",
-                          on: { click: _vm.basicalert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Alert "),
-                            _c("i", { staticClass: "fa fa-bell-o" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny stacked bar chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-t-10 chart stackedbarchart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body ip_alert text-center",
-                          on: { click: _vm.ip_alert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Ip Alert "),
-                            _c("i", { staticClass: "fa fa-info-circle" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row m-a-10" }, [
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body custom_icon text-center",
-                          on: { click: _vm.custom_icon }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Custom Image "),
-                            _c("i", { staticClass: "fa fa-picture-o" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny tristate chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-t-10 chart tristatechart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body custom_html text-center",
-                          on: { click: _vm.custom_html }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Custom Html "),
-                            _c("i", { staticClass: "fa fa-code" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny bullet chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-t-10 chart bulletchart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body auto_close text-center",
-                          on: { click: _vm.auto_close }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Alert Auto Close "),
-                            _c("i", { staticClass: "fa fa-magic" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny pie chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-t-10 chart piechart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body prom_alert text-center",
-                          on: { click: _vm.prom_alert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Prompt Alert "),
-                            _c("i", { staticClass: "fa fa-tree" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row m-a-10" }, [
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body text-center",
-                          attrs: { id: "info-alert" },
-                          on: { click: _vm.info_alert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Info Alert "),
-                            _c("i", { staticClass: "fa fa-info" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny discrete chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-t-10 chart discretechart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body text-center",
-                          attrs: { id: "success-alert" },
-                          on: { click: _vm.success_alert_two }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Successfully "),
-                            _c("i", { staticClass: "fa fa-check" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny boxplot chart")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-t-10 chart boxchart" }, [
+                      _vm._v("Loading...")
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body text-center",
-                          attrs: { id: "warning-alert" },
-                          on: { click: _vm.warning_alert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Warning Alert "),
-                            _c("i", { staticClass: "fa fa-exclamation" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny composite line chart")]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "m-t-10", attrs: { id: "compositeline" } },
+                      [
+                        _vm._v(
+                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
+                        )
+                      ]
+                    )
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "card  card-default hvr-sweep-to-right" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "card-body text-center",
-                          attrs: { id: "danger-alert" },
-                          on: { click: _vm.danger_alert }
-                        },
-                        [
-                          _c("h5", [
-                            _vm._v(" Danger Alert "),
-                            _c("i", { staticClass: "fa fa-times" })
-                          ])
-                        ]
-                      )
-                    ]
-                  )
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny composite bar chart")]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "m-t-10", attrs: { id: "compositebar" } },
+                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny line chart with normal range")]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "m-t-10", attrs: { id: "normalline" } },
+                      [
+                        _vm._v(
+                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
+                        )
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
+                  _c("div", { staticClass: "pt-3 pb-3" }, [
+                    _c("div", [_vm._v("Tiny discrete chart with treshold")]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "m-t-10", attrs: { id: "discrete2" } },
+                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                    )
+                  ])
                 ])
               ])
             ]
@@ -667,33 +909,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-66b6d801", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-3e06e382", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 216:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 458:
+/***/ 483:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1456)
-  __webpack_require__(1458)
+  __webpack_require__(1749)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1460)
+var __vue_script__ = __webpack_require__(1751)
 /* template */
-var __vue_template__ = __webpack_require__(1461)
+var __vue_template__ = __webpack_require__(1752)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -710,7 +944,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/sweet_alert.vue"
+Component.options.__file = "resources/components/pages/circle_sliders.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -719,9 +953,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-66b6d801", Component.options)
+    hotAPI.createRecord("data-v-3e06e382", Component.options)
   } else {
-    hotAPI.reload("data-v-66b6d801", Component.options)
+    hotAPI.reload("data-v-3e06e382", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -733,7 +967,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 503:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11105,19 +11339,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 505:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(506)
+  __webpack_require__(523)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(508)
+var __vue_script__ = __webpack_require__(525)
 /* template */
-var __vue_template__ = __webpack_require__(509)
+var __vue_template__ = __webpack_require__(526)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11157,13 +11391,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 506:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(507);
+var content = __webpack_require__(524);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11184,10 +11418,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 507:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
@@ -11199,7 +11433,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 508:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11244,7 +11478,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 509:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11306,1567 +11540,3167 @@ if (false) {
 
 /***/ }),
 
-/***/ 650:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
-/*!
- * sweetalert2 v5.0.7
- * Released under the MIT License.
+/* WEBPACK VAR INJECTION */(function(global) {module.exports=function(modules){function __webpack_require__(moduleId){if(installedModules[moduleId])return installedModules[moduleId].exports;var module=installedModules[moduleId]={i:moduleId,l:!1,exports:{}};return modules[moduleId].call(module.exports,module,module.exports,__webpack_require__),module.l=!0,module.exports}var installedModules={};return __webpack_require__.m=modules,__webpack_require__.c=installedModules,__webpack_require__.i=function(value){return value},__webpack_require__.d=function(exports,name,getter){__webpack_require__.o(exports,name)||Object.defineProperty(exports,name,{configurable:!1,enumerable:!0,get:getter})},__webpack_require__.n=function(module){var getter=module&&module.__esModule?function(){return module.default}:function(){return module};return __webpack_require__.d(getter,"a",getter),getter},__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=1)}([function(module,exports,__webpack_require__){var Component=__webpack_require__(5)(__webpack_require__(4),__webpack_require__(6),null,null);module.exports=Component.exports},function(module,__webpack_exports__,__webpack_require__){"use strict";function install(Vue){Vue.component("circle-slider",__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a)}Object.defineProperty(__webpack_exports__,"__esModule",{value:!0}),__webpack_exports__.install=install;var __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__=__webpack_require__(0),__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default=__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__);__webpack_require__.d(__webpack_exports__,"CircleSlider",function(){return __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a});var plugin={version:"1.0.2",install:install};__webpack_exports__.default=plugin;var GlobalVue=null;"undefined"!=typeof window?GlobalVue=window.Vue:"undefined"!=typeof global&&(GlobalVue=global.Vue),GlobalVue&&GlobalVue.use(plugin)},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),CircleSliderState=function(){function CircleSliderState(steps,offset,initialValue){_classCallCheck(this,CircleSliderState),this.steps=steps,this.offset=offset,this.currentStepIndex=0;for(var stepIndex in this.steps)if(this.steps[stepIndex]===initialValue){this.currentStepIndex=stepIndex;break}this.firstStep=this.steps[0],this.length=this.steps.length-1,this.lastStep=this.steps[this.length]}return _createClass(CircleSliderState,[{key:"updateCurrentStepFromValue",value:function(value){for(var i=0;i<this.length;i++)if(value<=this.steps[i])return void(this.currentStepIndex=i);this.currentStepIndex=this.length}},{key:"updateCurrentStepFromAngle",value:function(angle){var stepIndex=Math.round((angle-this.offset)/this.angleUnit);this.currentStepIndex=Math.min(Math.max(stepIndex,0),this.length)}},{key:"angleUnit",get:function(){return(2*Math.PI-this.offset)/this.length}},{key:"angleValue",get:function(){return Math.min(this.offset+this.angleUnit*this.currentStepIndex,2*Math.PI-Number.EPSILON)-1e-5}},{key:"currentStep",get:function(){return this.steps[this.currentStepIndex]}}]),CircleSliderState}();__webpack_exports__.a=CircleSliderState},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),TouchPosition=function(){function TouchPosition(containerElement,sliderRadius,sliderTolerance){_classCallCheck(this,TouchPosition),this.containerElement=containerElement,this.sliderRadius=sliderRadius,this.sliderTolerance=sliderTolerance,this.setNewPosition({x:0,y:0})}return _createClass(TouchPosition,[{key:"setNewPosition",value:function(e){var dimensions=this.containerElement.getBoundingClientRect(),side=dimensions.width;this.center=side/2,this.relativeX=e.clientX-dimensions.left,this.relativeY=e.clientY-dimensions.top}},{key:"sliderAngle",get:function(){return(Math.atan2(this.relativeY-this.center,this.relativeX-this.center)+3*Math.PI/2)%(2*Math.PI)}},{key:"isTouchWithinSliderRange",get:function(){var touchOffset=Math.sqrt(Math.pow(Math.abs(this.relativeX-this.center),2)+Math.pow(Math.abs(this.relativeY-this.center),2));return Math.abs(touchOffset-this.sliderRadius)<=this.sliderTolerance}}]),TouchPosition}();__webpack_exports__.a=TouchPosition},function(module,__webpack_exports__,__webpack_require__){"use strict";Object.defineProperty(__webpack_exports__,"__esModule",{value:!0});var __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__=__webpack_require__(3),__WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__=__webpack_require__(2);__webpack_exports__.default={name:"CircleSlider",created:function(){var _this=this;this.stepsCount=1+(this.max-this.min)/this.stepSize,this.steps=Array.from({length:this.stepsCount},function(_,i){return _this.min+i*_this.stepSize}),this.circleSliderState=new __WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__.a(this.steps,this.startAngleOffset,this.value),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep;var maxCurveWidth=Math.max(this.cpMainCircleStrokeWidth,this.cpPathStrokeWidth);this.radius=this.side/2-Math.max(maxCurveWidth,2*this.cpKnobRadius)/2,this.updateFromPropValue(this.value)},mounted:function(){this.touchPosition=new __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__.a(this.$refs._svg,this.radius,this.radius/2)},props:{startAngleOffset:{type:Number,required:!1,default:function(){return 0}},value:{type:Number,required:!1,default:0},side:{type:Number,required:!1,default:100},stepSize:{type:Number,required:!1,default:1},min:{type:Number,required:!1,default:0},max:{type:Number,required:!1,default:100},circleColor:{type:String,required:!1,default:"#334860"},progressColor:{type:String,required:!1,default:"#00be7e"},knobColor:{type:String,required:!1,default:"#00be7e"},knobRadius:{type:Number,required:!1,default:null},knobRadiusRel:{type:Number,required:!1,default:7},circleWidth:{type:Number,required:!1,default:null},circleWidthRel:{type:Number,required:!1,default:20},progressWidth:{type:Number,required:!1,default:null},progressWidthRel:{type:Number,required:!1,default:10}},data:function(){return{steps:null,stepsCount:null,radius:0,angle:0,currentStepValue:0,mousePressed:!1,circleSliderState:null,mousemoveTicks:0}},computed:{cpCenter:function(){return this.side/2},cpAngle:function(){return this.angle+Math.PI/2},cpMainCircleStrokeWidth:function(){return this.circleWidth||this.side/2/this.circleWidthRel},cpPathDirection:function(){return this.cpAngle<1.5*Math.PI?0:1},cpPathX:function(){return this.cpCenter+this.radius*Math.cos(this.cpAngle)},cpPathY:function(){return this.cpCenter+this.radius*Math.sin(this.cpAngle)},cpPathStrokeWidth:function(){return this.progressWidth||this.side/2/this.progressWidthRel},cpKnobRadius:function(){return this.knobRadius||this.side/2/this.knobRadiusRel},cpPathD:function(){var parts=[];return parts.push("M"+this.cpCenter),parts.push(this.cpCenter+this.radius),parts.push("A"),parts.push(this.radius),parts.push(this.radius),parts.push(0),parts.push(this.cpPathDirection),parts.push(1),parts.push(this.cpPathX),parts.push(this.cpPathY),parts.join(" ")}},methods:{fitToStep:function(val){return Math.round(val/this.stepSize)*this.stepSize},handleClick:function(e){if(this.touchPosition.setNewPosition(e),this.touchPosition.isTouchWithinSliderRange){var newAngle=this.touchPosition.sliderAngle;this.animateSlider(this.angle,newAngle)}},handleMouseDown:function(e){e.preventDefault(),this.mousePressed=!0,window.addEventListener("mousemove",this.handleWindowMouseMove),window.addEventListener("mouseup",this.handleMouseUp)},handleMouseUp:function(e){e.preventDefault(),this.mousePressed=!1,window.removeEventListener("mousemove",this.handleWindowMouseMove),window.removeEventListener("mouseup",this.handleMouseUp),this.mousemoveTicks=0},handleWindowMouseMove:function(e){if(e.preventDefault(),this.mousemoveTicks<5)return void this.mousemoveTicks++;this.touchPosition.setNewPosition(e),this.updateSlider()},handleTouchMove:function(e){if(this.$emit("touchmove"),e.targetTouches.length>1||e.changedTouches.length>1||e.touches.length>1)return!0;var lastTouch=e.targetTouches.item(e.targetTouches.length-1);this.touchPosition.setNewPosition(lastTouch),this.touchPosition.isTouchWithinSliderRange&&(e.preventDefault(),this.updateSlider())},updateAngle:function(angle){this.circleSliderState.updateCurrentStepFromAngle(angle),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep,this.$emit("input",this.currentStepValue)},updateFromPropValue:function(value){var stepValue=this.fitToStep(value);this.circleSliderState.updateCurrentStepFromValue(stepValue),this.angle=this.circleSliderState.angleValue,this.currentStepValue=stepValue,this.$emit("input",this.currentStepValue)},updateSlider:function(){var angle=this.touchPosition.sliderAngle;Math.abs(angle-this.angle)<Math.PI&&this.updateAngle(angle)},animateSlider:function(startAngle,endAngle){var _this2=this,direction=startAngle<endAngle?1:-1,curveAngleMovementUnit=direction*this.circleSliderState.angleUnit*2,animate=function(){if(Math.abs(endAngle-startAngle)<Math.abs(2*curveAngleMovementUnit))_this2.updateAngle(endAngle);else{var newAngle=startAngle+curveAngleMovementUnit;_this2.updateAngle(newAngle),_this2.animateSlider(newAngle,endAngle)}};window.requestAnimationFrame(animate)}},watch:{value:function(val){this.updateFromPropValue(val)}}}},function(module,exports){module.exports=function(rawScriptExports,compiledTemplate,scopeId,cssModules){var esModule,scriptExports=rawScriptExports=rawScriptExports||{},type=typeof rawScriptExports.default;"object"!==type&&"function"!==type||(esModule=rawScriptExports,scriptExports=rawScriptExports.default);var options="function"==typeof scriptExports?scriptExports.options:scriptExports;if(compiledTemplate&&(options.render=compiledTemplate.render,options.staticRenderFns=compiledTemplate.staticRenderFns),scopeId&&(options._scopeId=scopeId),cssModules){var computed=options.computed||(options.computed={});Object.keys(cssModules).forEach(function(key){var module=cssModules[key];computed[key]=function(){return module}})}return{esModule:esModule,exports:scriptExports,options:options}}},function(module,exports){module.exports={render:function(){var _vm=this,_h=_vm.$createElement,_c=_vm._self._c||_h;return _c("div",[_c("svg",{ref:"_svg",attrs:{width:_vm.side+"px",height:_vm.side+"px",viewBox:"0 0 "+_vm.side+" "+_vm.side},on:{touchmove:_vm.handleTouchMove,click:_vm.handleClick,mousedown:_vm.handleMouseDown,mouseup:_vm.handleMouseUp}},[_c("g",[_c("circle",{attrs:{stroke:_vm.circleColor,fill:"none","stroke-width":_vm.cpMainCircleStrokeWidth,cx:_vm.cpCenter,cy:_vm.cpCenter,r:_vm.radius}}),_vm._v(" "),_c("path",{attrs:{stroke:_vm.progressColor,fill:"none","stroke-width":_vm.cpPathStrokeWidth,d:_vm.cpPathD}}),_vm._v(" "),_c("circle",{attrs:{fill:_vm.knobColor,r:_vm.cpKnobRadius,cx:_vm.cpPathX,cy:_vm.cpPathY}})])])])},staticRenderFns:[]}}]);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+
+/***/ }),
+
+/***/ 576:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__ = __webpack_require__(562);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__ = __webpack_require__(577);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__);
+
+/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default.a);
+
+
+
+
+/***/ }),
+
+/***/ 577:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(578);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(43)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../css-loader/index.js!./vue-circle-slider.css", function() {
+			var newContent = require("!!../../css-loader/index.js!./vue-circle-slider.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 578:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 602:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/**
+ *
+ * jquery.sparkline.js
+ *
+ * v2.1.2
+ * (c) Splunk, Inc
+ * Contact: Gareth Watts (gareth@splunk.com)
+ * http://omnipotent.net/jquery.sparkline/
+ *
+ * Generates inline sparkline charts from data supplied either to the method
+ * or inline in HTML
+ *
+ * Compatible with Internet Explorer 6.0+ and modern browsers equipped with the canvas tag
+ * (Firefox 2.0+, Safari, Opera, etc)
+ *
+ * License: New BSD License
+ *
+ * Copyright (c) 2012, Splunk Inc.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ *     * Redistributions of source code must retain the above copyright notice,
+ *       this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright notice,
+ *       this list of conditions and the following disclaimer in the documentation
+ *       and/or other materials provided with the distribution.
+ *     * Neither the name of Splunk Inc nor the names of its contributors may
+ *       be used to endorse or promote products derived from this software without
+ *       specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ *
+ * Usage:
+ *  $(selector).sparkline(values, options)
+ *
+ * If values is undefined or set to 'html' then the data values are read from the specified tag:
+ *   <p>Sparkline: <span class="sparkline">1,4,6,6,8,5,3,5</span></p>
+ *   $('.sparkline').sparkline();
+ * There must be no spaces in the enclosed data set
+ *
+ * Otherwise values must be an array of numbers or null values
+ *    <p>Sparkline: <span id="sparkline1">This text replaced if the browser is compatible</span></p>
+ *    $('#sparkline1').sparkline([1,4,6,6,8,5,3,5])
+ *    $('#sparkline2').sparkline([1,4,6,null,null,5,3,5])
+ *
+ * Values can also be specified in an HTML comment, or as a values attribute:
+ *    <p>Sparkline: <span class="sparkline"><!--1,4,6,6,8,5,3,5 --></span></p>
+ *    <p>Sparkline: <span class="sparkline" values="1,4,6,6,8,5,3,5"></span></p>
+ *    $('.sparkline').sparkline();
+ *
+ * For line charts, x values can also be specified:
+ *   <p>Sparkline: <span class="sparkline">1:1,2.7:4,3.4:6,5:6,6:8,8.7:5,9:3,10:5</span></p>
+ *    $('#sparkline1').sparkline([ [1,1], [2.7,4], [3.4,6], [5,6], [6,8], [8.7,5], [9,3], [10,5] ])
+ *
+ * By default, options should be passed in as teh second argument to the sparkline function:
+ *   $('.sparkline').sparkline([1,2,3,4], {type: 'bar'})
+ *
+ * Options can also be set by passing them on the tag itself.  This feature is disabled by default though
+ * as there's a slight performance overhead:
+ *   $('.sparkline').sparkline([1,2,3,4], {enableTagOptions: true})
+ *   <p>Sparkline: <span class="sparkline" sparkType="bar" sparkBarColor="red">loading</span></p>
+ * Prefix all options supplied as tag attribute with "spark" (configurable by setting tagOptionPrefix)
+ *
+ * Supported options:
+ *   lineColor - Color of the line used for the chart
+ *   fillColor - Color used to fill in the chart - Set to '' or false for a transparent chart
+ *   width - Width of the chart - Defaults to 3 times the number of values in pixels
+ *   height - Height of the chart - Defaults to the height of the containing element
+ *   chartRangeMin - Specify the minimum value to use for the Y range of the chart - Defaults to the minimum value supplied
+ *   chartRangeMax - Specify the maximum value to use for the Y range of the chart - Defaults to the maximum value supplied
+ *   chartRangeClip - Clip out of range values to the max/min specified by chartRangeMin and chartRangeMax
+ *   chartRangeMinX - Specify the minimum value to use for the X range of the chart - Defaults to the minimum value supplied
+ *   chartRangeMaxX - Specify the maximum value to use for the X range of the chart - Defaults to the maximum value supplied
+ *   composite - If true then don't erase any existing chart attached to the tag, but draw
+ *           another chart over the top - Note that width and height are ignored if an
+ *           existing chart is detected.
+ *   tagValuesAttribute - Name of tag attribute to check for data values - Defaults to 'values'
+ *   enableTagOptions - Whether to check tags for sparkline options
+ *   tagOptionPrefix - Prefix used for options supplied as tag attributes - Defaults to 'spark'
+ *   disableHiddenCheck - If set to true, then the plugin will assume that charts will never be drawn into a
+ *           hidden dom element, avoding a browser reflow
+ *   disableInteraction - If set to true then all mouseover/click interaction behaviour will be disabled,
+ *       making the plugin perform much like it did in 1.x
+ *   disableTooltips - If set to true then tooltips will be disabled - Defaults to false (tooltips enabled)
+ *   disableHighlight - If set to true then highlighting of selected chart elements on mouseover will be disabled
+ *       defaults to false (highlights enabled)
+ *   highlightLighten - Factor to lighten/darken highlighted chart values by - Defaults to 1.4 for a 40% increase
+ *   tooltipContainer - Specify which DOM element the tooltip should be rendered into - defaults to document.body
+ *   tooltipClassname - Optional CSS classname to apply to tooltips - If not specified then a default style will be applied
+ *   tooltipOffsetX - How many pixels away from the mouse pointer to render the tooltip on the X axis
+ *   tooltipOffsetY - How many pixels away from the mouse pointer to render the tooltip on the r axis
+ *   tooltipFormatter  - Optional callback that allows you to override the HTML displayed in the tooltip
+ *       callback is given arguments of (sparkline, options, fields)
+ *   tooltipChartTitle - If specified then the tooltip uses the string specified by this setting as a title
+ *   tooltipFormat - A format string or SPFormat object  (or an array thereof for multiple entries)
+ *       to control the format of the tooltip
+ *   tooltipPrefix - A string to prepend to each field displayed in a tooltip
+ *   tooltipSuffix - A string to append to each field displayed in a tooltip
+ *   tooltipSkipNull - If true then null values will not have a tooltip displayed (defaults to true)
+ *   tooltipValueLookups - An object or range map to map field values to tooltip strings
+ *       (eg. to map -1 to "Lost", 0 to "Draw", and 1 to "Win")
+ *   numberFormatter - Optional callback for formatting numbers in tooltips
+ *   numberDigitGroupSep - Character to use for group separator in numbers "1,234" - Defaults to ","
+ *   numberDecimalMark - Character to use for the decimal point when formatting numbers - Defaults to "."
+ *   numberDigitGroupCount - Number of digits between group separator - Defaults to 3
+ *
+ * There are 7 types of sparkline, selected by supplying a "type" option of 'line' (default),
+ * 'bar', 'tristate', 'bullet', 'discrete', 'pie' or 'box'
+ *    line - Line chart.  Options:
+ *       spotColor - Set to '' to not end each line in a circular spot
+ *       minSpotColor - If set, color of spot at minimum value
+ *       maxSpotColor - If set, color of spot at maximum value
+ *       spotRadius - Radius in pixels
+ *       lineWidth - Width of line in pixels
+ *       normalRangeMin
+ *       normalRangeMax - If set draws a filled horizontal bar between these two values marking the "normal"
+ *                      or expected range of values
+ *       normalRangeColor - Color to use for the above bar
+ *       drawNormalOnTop - Draw the normal range above the chart fill color if true
+ *       defaultPixelsPerValue - Defaults to 3 pixels of width for each value in the chart
+ *       highlightSpotColor - The color to use for drawing a highlight spot on mouseover - Set to null to disable
+ *       highlightLineColor - The color to use for drawing a highlight line on mouseover - Set to null to disable
+ *       valueSpots - Specify which points to draw spots on, and in which color.  Accepts a range map
+ *
+ *   bar - Bar chart.  Options:
+ *       barColor - Color of bars for postive values
+ *       negBarColor - Color of bars for negative values
+ *       zeroColor - Color of bars with zero values
+ *       nullColor - Color of bars with null values - Defaults to omitting the bar entirely
+ *       barWidth - Width of bars in pixels
+ *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
+ *                  can be an Array of values to control the color of individual bars or a range map
+ *                  to specify colors for individual ranges of values
+ *       barSpacing - Gap between bars in pixels
+ *       zeroAxis - Centers the y-axis around zero if true
+ *
+ *   tristate - Charts values of win (>0), lose (<0) or draw (=0)
+ *       posBarColor - Color of win values
+ *       negBarColor - Color of lose values
+ *       zeroBarColor - Color of draw values
+ *       barWidth - Width of bars in pixels
+ *       barSpacing - Gap between bars in pixels
+ *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
+ *                  can be an Array of values to control the color of individual bars or a range map
+ *                  to specify colors for individual ranges of values
+ *
+ *   discrete - Options:
+ *       lineHeight - Height of each line in pixels - Defaults to 30% of the graph height
+ *       thesholdValue - Values less than this value will be drawn using thresholdColor instead of lineColor
+ *       thresholdColor
+ *
+ *   bullet - Values for bullet graphs msut be in the order: target, performance, range1, range2, range3, ...
+ *       options:
+ *       targetColor - The color of the vertical target marker
+ *       targetWidth - The width of the target marker in pixels
+ *       performanceColor - The color of the performance measure horizontal bar
+ *       rangeColors - Colors to use for each qualitative range background color
+ *
+ *   pie - Pie chart. Options:
+ *       sliceColors - An array of colors to use for pie slices
+ *       offset - Angle in degrees to offset the first slice - Try -90 or +90
+ *       borderWidth - Width of border to draw around the pie chart, in pixels - Defaults to 0 (no border)
+ *       borderColor - Color to use for the pie chart border - Defaults to #000
+ *
+ *   box - Box plot. Options:
+ *       raw - Set to true to supply pre-computed plot points as values
+ *             values should be: low_outlier, low_whisker, q1, median, q3, high_whisker, high_outlier
+ *             When set to false you can supply any number of values and the box plot will
+ *             be computed for you.  Default is false.
+ *       showOutliers - Set to true (default) to display outliers as circles
+ *       outlierIQR - Interquartile range used to determine outliers.  Default 1.5
+ *       boxLineColor - Outline color of the box
+ *       boxFillColor - Fill color for the box
+ *       whiskerColor - Line color used for whiskers
+ *       outlierLineColor - Outline color of outlier circles
+ *       outlierFillColor - Fill color of the outlier circles
+ *       spotRadius - Radius of outlier circles
+ *       medianColor - Line color of the median line
+ *       target - Draw a target cross hair at the supplied value (default undefined)
+ *
+ *
+ *
+ *   Examples:
+ *   $('#sparkline1').sparkline(myvalues, { lineColor: '#f00', fillColor: false });
+ *   $('.barsparks').sparkline('html', { type:'bar', height:'40px', barWidth:5 });
+ *   $('#tristate').sparkline([1,1,-1,1,0,0,-1], { type:'tristate' }):
+ *   $('#discrete').sparkline([1,3,4,5,5,3,4,5], { type:'discrete' });
+ *   $('#bullet').sparkline([10,12,12,9,7], { type:'bullet' });
+ *   $('#pie').sparkline([1,1,2], { type:'pie' });
  */
-(function (global, factory) {
-   true ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.Sweetalert2 = factory());
-}(this, function () { 'use strict';
 
-  var swalPrefix = 'swal2-';
+/*jslint regexp: true, browser: true, jquery: true, white: true, nomen: false, plusplus: false, maxerr: 500, indent: 4 */
 
-  var prefix = function(items) {
-    var result = {};
-    for (var i in items) {
-      result[items[i]] = swalPrefix + items[i];
-    }
-    return result;
-  };
+(function (document, Math, undefined) {
+	// performance/minified-size optimization
+	(function (factory) {
+		if (true) {
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(520)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else if (jQuery && !jQuery.fn.sparkline) {
+			factory(jQuery);
+		}
+	})(function ($) {
+		'use strict';
 
-  var swalClasses = prefix([
-    'container',
-    'in',
-    'modal',
-    'overlay',
-    'close',
-    'content',
-    'spacer',
-    'confirm',
-    'cancel',
-    'icon',
-    'image',
-    'input',
-    'file',
-    'range',
-    'select',
-    'radio',
-    'checkbox',
-    'textarea',
-    'validationerror',
-    'progresssteps',
-    'activeprogressstep',
-    'progresscircle',
-    'progressline'
-  ]);
+		var UNSET_OPTION = {},
+		    getDefaults,
+		    createClass,
+		    SPFormat,
+		    clipval,
+		    quartile,
+		    normalizeValue,
+		    normalizeValues,
+		    remove,
+		    isNumber,
+		    all,
+		    sum,
+		    addCSS,
+		    ensureArray,
+		    formatNumber,
+		    RangeMap,
+		    MouseHandler,
+		    Tooltip,
+		    barHighlightMixin,
+		    line,
+		    bar,
+		    tristate,
+		    discrete,
+		    bullet,
+		    pie,
+		    box,
+		    defaultStyles,
+		    initStyles,
+		    VShape,
+		    VCanvas_base,
+		    VCanvas_canvas,
+		    VCanvas_vml,
+		    pending,
+		    shapeCount = 0;
 
-  var iconTypes = prefix([
-    'success',
-    'warning',
-    'info',
-    'question',
-    'error'
-  ]);
-
-  var defaultParams = {
-    title: '',
-    text: '',
-    html: '',
-    type: null,
-    customClass: '',
-    animation: true,
-    allowOutsideClick: true,
-    allowEscapeKey: true,
-    showConfirmButton: true,
-    showCancelButton: false,
-    preConfirm: null,
-    confirmButtonText: 'OK',
-    confirmButtonColor: '#3085d6',
-    confirmButtonClass: null,
-    cancelButtonText: 'Cancel',
-    cancelButtonColor: '#aaa',
-    cancelButtonClass: null,
-    buttonsStyling: true,
-    reverseButtons: false,
-    focusCancel: false,
-    showCloseButton: false,
-    showLoaderOnConfirm: false,
-    imageUrl: null,
-    imageWidth: null,
-    imageHeight: null,
-    imageClass: null,
-    timer: null,
-    width: 500,
-    padding: 20,
-    background: '#fff',
-    input: null,
-    inputPlaceholder: '',
-    inputValue: '',
-    inputOptions: {},
-    inputAutoTrim: true,
-    inputClass: null,
-    inputAttributes: {},
-    inputValidator: null,
-    progressSteps: [],
-    currentProgressStep: null,
-    progressStepsDistance: '40px',
-    onOpen: null,
-    onClose: null
-  };
-
-  var sweetHTML = '<div class="' + swalClasses.modal + '" style="display: none" tabIndex="-1">' +
-      '<ul class="' + swalClasses.progresssteps + '"></ul>' +
-      '<div class="' + swalClasses.icon + ' ' + iconTypes.error + '">' +
-        '<span class="x-mark"><span class="line left"></span><span class="line right"></span></span>' +
-      '</div>' +
-      '<div class="' + swalClasses.icon + ' ' + iconTypes.question + '">?</div>' +
-      '<div class="' + swalClasses.icon + ' ' + iconTypes.warning + '">!</div>' +
-      '<div class="' + swalClasses.icon + ' ' + iconTypes.info + '">i</div>' +
-      '<div class="' + swalClasses.icon + ' ' + iconTypes.success + '">' +
-        '<span class="line tip"></span> <span class="line long"></span>' +
-        '<div class="placeholder"></div> <div class="fix"></div>' +
-      '</div>' +
-      '<img class="' + swalClasses.image + '">' +
-      '<h2></h2>' +
-      '<div class="' + swalClasses.content + '"></div>' +
-      '<input class="' + swalClasses.input + '">' +
-      '<input type="file" class="' + swalClasses.file + '">' +
-      '<div class="' + swalClasses.range + '">' +
-        '<output></output>' +
-        '<input type="range">' +
-      '</div>' +
-      '<select class="' + swalClasses.select + '"></select>' +
-      '<div class="' + swalClasses.radio + '"></div>' +
-      '<label for="' + swalClasses.checkbox + '" class="' + swalClasses.checkbox + '">' +
-        '<input type="checkbox">' +
-      '</label>' +
-      '<textarea class="' + swalClasses.textarea + '"></textarea>' +
-      '<div class="' + swalClasses.validationerror + '"></div>' +
-      '<hr class="' + swalClasses.spacer + '">' +
-      '<button type="button" class="' + swalClasses.confirm + '">OK</button>' +
-      '<button type="button" class="' + swalClasses.cancel + '">Cancel</button>' +
-      '<span class="' + swalClasses.close + '">&times;</span>' +
-    '</div>';
-
-  var sweetContainer;
-
-  var existingSweetContainers = document.getElementsByClassName(swalClasses.container);
-
-  if (existingSweetContainers.length) {
-    sweetContainer = existingSweetContainers[0];
-  } else {
-    sweetContainer = document.createElement('div');
-    sweetContainer.className = swalClasses.container;
-    sweetContainer.innerHTML = sweetHTML;
-  }
-
-  var extend = function(a, b) {
-    for (var key in b) {
-      if (b.hasOwnProperty(key)) {
-        a[key] = b[key];
-      }
-    }
-
-    return a;
-  };
-
-
-  /*
-   * Set hover, active and focus-states for buttons (source: http://www.sitepoint.com/javascript-generate-lighter-darker-color)
+		/**
+   * Default configuration settings
    */
-  var colorLuminance = function(hex, lum) {
-    // Validate hex string
-    hex = String(hex).replace(/[^0-9a-f]/gi, '');
-    if (hex.length < 6) {
-      hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
-    }
-    lum = lum || 0;
+		getDefaults = function getDefaults() {
+			return {
+				// Settings common to most/all chart types
+				common: {
+					type: 'line',
+					lineColor: '#00f',
+					fillColor: '#cdf',
+					defaultPixelsPerValue: 3,
+					width: 'auto',
+					height: 'auto',
+					composite: false,
+					tagValuesAttribute: 'values',
+					tagOptionsPrefix: 'spark',
+					enableTagOptions: false,
+					enableHighlight: true,
+					highlightLighten: 1.1,
+					tooltipSkipNull: true,
+					tooltipPrefix: '',
+					tooltipSuffix: '',
+					disableHiddenCheck: false,
+					numberFormatter: false,
+					numberDigitGroupCount: 3,
+					numberDigitGroupSep: ',',
+					numberDecimalMark: '.',
+					disableTooltips: false,
+					disableInteraction: false
+				},
+				// Defaults for line charts
+				line: {
+					spotColor: '#f80',
+					highlightSpotColor: '#5f5',
+					highlightLineColor: '#f22',
+					spotRadius: 1.5,
+					minSpotColor: '#f80',
+					maxSpotColor: '#f80',
+					lineWidth: 1,
+					normalRangeMin: undefined,
+					normalRangeMax: undefined,
+					normalRangeColor: '#ccc',
+					drawNormalOnTop: false,
+					chartRangeMin: undefined,
+					chartRangeMax: undefined,
+					chartRangeMinX: undefined,
+					chartRangeMaxX: undefined,
+					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{y}}{{suffix}}')
+				},
+				// Defaults for bar charts
+				bar: {
+					barColor: '#3366cc',
+					negBarColor: '#f44',
+					stackedBarColor: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
+					zeroColor: undefined,
+					nullColor: undefined,
+					zeroAxis: true,
+					barWidth: 4,
+					barSpacing: 1,
+					chartRangeMax: undefined,
+					chartRangeMin: undefined,
+					chartRangeClip: false,
+					colorMap: undefined,
+					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{value}}{{suffix}}')
+				},
+				// Defaults for tristate charts
+				tristate: {
+					barWidth: 4,
+					barSpacing: 1,
+					posBarColor: '#6f6',
+					negBarColor: '#f44',
+					zeroBarColor: '#999',
+					colorMap: {},
+					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value:map}}'),
+					tooltipValueLookups: { map: { '-1': 'Loss', '0': 'Draw', '1': 'Win' } }
+				},
+				// Defaults for discrete charts
+				discrete: {
+					lineHeight: 'auto',
+					thresholdColor: undefined,
+					thresholdValue: 0,
+					chartRangeMax: undefined,
+					chartRangeMin: undefined,
+					chartRangeClip: false,
+					tooltipFormat: new SPFormat('{{prefix}}{{value}}{{suffix}}')
+				},
+				// Defaults for bullet charts
+				bullet: {
+					targetColor: '#f33',
+					targetWidth: 3, // width of the target bar in pixels
+					performanceColor: '#33f',
+					rangeColors: ['#d3dafe', '#a8b6ff', '#7f94ff'],
+					base: undefined, // set this to a number to change the base start number
+					tooltipFormat: new SPFormat('{{fieldkey:fields}} - {{value}}'),
+					tooltipValueLookups: { fields: { r: 'Range', p: 'Performance', t: 'Target' } }
+				},
+				// Defaults for pie charts
+				pie: {
+					offset: 0,
+					sliceColors: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
+					borderWidth: 0,
+					borderColor: '#000',
+					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value}} ({{percent.1}}%)')
+				},
+				// Defaults for box plots
+				box: {
+					raw: false,
+					boxLineColor: '#000',
+					boxFillColor: '#cdf',
+					whiskerColor: '#000',
+					outlierLineColor: '#333',
+					outlierFillColor: '#fff',
+					medianColor: '#f00',
+					showOutliers: true,
+					outlierIQR: 1.5,
+					spotRadius: 1.5,
+					target: undefined,
+					targetColor: '#4a2',
+					chartRangeMax: undefined,
+					chartRangeMin: undefined,
+					tooltipFormat: new SPFormat('{{field:fields}}: {{value}}'),
+					tooltipFormatFieldlistKey: 'field',
+					tooltipValueLookups: { fields: { lq: 'Lower Quartile', med: 'Median',
+							uq: 'Upper Quartile', lo: 'Left Outlier', ro: 'Right Outlier',
+							lw: 'Left Whisker', rw: 'Right Whisker' } }
+				}
+			};
+		};
 
-    // Convert to decimal and change luminosity
-    var rgb = '#';
-    for (var i = 0; i < 3; i++) {
-      var c = parseInt(hex.substr(i * 2, 2), 16);
-      c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
-      rgb += ('00' + c).substr(c.length);
-    }
+		// You can have tooltips use a css class other than jqstooltip by specifying tooltipClassname
+		// tooltip modified by westilian:jaman
+		defaultStyles = '.jqstooltip { ' + 'position: absolute;' + 'left: 30px;' + 'top: 0px;' + 'display: block;' + 'visibility: hidden;' + 'background: rgb(0, 0, 0) transparent;' + 'background-color: rgba(0,0,0,0.6);' + 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);' + '-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";' + 'color: white;' + 'font: 10px arial, san serif;' + 'text-align: left;' + 'white-space: nowrap;' + 'border: 0px solid white;' + 'border-radius: 3px;' + '-webkit-border-radius: 3px;' + 'z-index: 10000;' + '}' + '.jqsfield { ' + 'color: white;' + 'padding: 5px 5px 5px 5px;' + 'font: 10px arial, san serif;' + 'text-align: left;' + '}';
 
-    return rgb;
-  };
-
-  // Remember state in cases where opening and handling a modal will fiddle with it.
-  var states = {
-    previousWindowKeyDown: null,
-    previousActiveElement: null,
-    previousBodyPadding: null
-  };
-
-  /*
-   * Manipulate DOM
+		/**
+   * Utilities
    */
-  var elementByClass = function(className) {
-    return sweetContainer.querySelector('.' + className);
-  };
 
-  var getModal = function() {
-    return elementByClass(swalClasses.modal);
-  };
+		createClass = function createClass() /* [baseclass, [mixin, ...]], definition */{
+			var Class, args;
+			Class = function Class() {
+				this.init.apply(this, arguments);
+			};
+			if (arguments.length > 1) {
+				if (arguments[0]) {
+					Class.prototype = $.extend(new arguments[0](), arguments[arguments.length - 1]);
+					Class._super = arguments[0].prototype;
+				} else {
+					Class.prototype = arguments[arguments.length - 1];
+				}
+				if (arguments.length > 2) {
+					args = Array.prototype.slice.call(arguments, 1, -1);
+					args.unshift(Class.prototype);
+					$.extend.apply($, args);
+				}
+			} else {
+				Class.prototype = arguments[0];
+			}
+			Class.prototype.cls = Class;
+			return Class;
+		};
 
-  var getIcons = function() {
-    var modal = getModal();
-    return modal.querySelectorAll('.' + swalClasses.icon);
-  };
+		/**
+   * Wraps a format string for tooltips
+   * {{x}}
+   * {{x.2}
+     * {{x:months}}
+     */
+		$.SPFormatClass = SPFormat = createClass({
+			fre: /\{\{([\w.]+?)(:(.+?))?\}\}/g,
+			precre: /(\w+)\.(\d+)/,
 
-  var getSpacer = function() {
-    return elementByClass(swalClasses.spacer);
-  };
+			init: function init(format, fclass) {
+				this.format = format;
+				this.fclass = fclass;
+			},
 
-  var getProgressSteps = function() {
-    return elementByClass(swalClasses.progresssteps);
-  };
+			render: function render(fieldset, lookups, options) {
+				var self = this,
+				    fields = fieldset,
+				    match,
+				    token,
+				    lookupkey,
+				    fieldvalue,
+				    prec;
+				return this.format.replace(this.fre, function () {
+					var lookup;
+					token = arguments[1];
+					lookupkey = arguments[3];
+					match = self.precre.exec(token);
+					if (match) {
+						prec = match[2];
+						token = match[1];
+					} else {
+						prec = false;
+					}
+					fieldvalue = fields[token];
+					if (fieldvalue === undefined) {
+						return '';
+					}
+					if (lookupkey && lookups && lookups[lookupkey]) {
+						lookup = lookups[lookupkey];
+						if (lookup.get) {
+							// RangeMap
+							return lookups[lookupkey].get(fieldvalue) || fieldvalue;
+						} else {
+							return lookups[lookupkey][fieldvalue] || fieldvalue;
+						}
+					}
+					if (isNumber(fieldvalue)) {
+						if (options.get('numberFormatter')) {
+							fieldvalue = options.get('numberFormatter')(fieldvalue);
+						} else {
+							fieldvalue = formatNumber(fieldvalue, prec, options.get('numberDigitGroupCount'), options.get('numberDigitGroupSep'), options.get('numberDecimalMark'));
+						}
+					}
+					return fieldvalue;
+				});
+			}
+		});
 
-  var getConfirmButton = function() {
-    return elementByClass(swalClasses.confirm);
-  };
+		// convience method to avoid needing the new operator
+		$.spformat = function (format, fclass) {
+			return new SPFormat(format, fclass);
+		};
 
-  var getCancelButton = function() {
-    return elementByClass(swalClasses.cancel);
-  };
+		clipval = function clipval(val, min, max) {
+			if (val < min) {
+				return min;
+			}
+			if (val > max) {
+				return max;
+			}
+			return val;
+		};
 
-  var getCloseButton = function() {
-    return elementByClass(swalClasses.close);
-  };
+		quartile = function quartile(values, q) {
+			var vl;
+			if (q === 2) {
+				vl = Math.floor(values.length / 2);
+				return values.length % 2 ? values[vl] : (values[vl - 1] + values[vl]) / 2;
+			} else {
+				if (values.length % 2) {
+					// odd
+					vl = (values.length * q + q) / 4;
+					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
+				} else {
+					//even
+					vl = (values.length * q + 2) / 4;
+					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
+				}
+			}
+		};
 
-  var getFocusableElements = function(focusCancel) {
-    var buttons = [getConfirmButton(), getCancelButton()];
-    if (focusCancel) {
-      buttons.reverse();
-    }
-    return buttons.concat(Array.prototype.slice.call(
-      getModal().querySelectorAll('button:not([class^=' + swalPrefix + ']), input:not([type=hidden]), textarea, select')
-    ));
-  };
+		normalizeValue = function normalizeValue(val) {
+			var nf;
+			switch (val) {
+				case 'undefined':
+					val = undefined;
+					break;
+				case 'null':
+					val = null;
+					break;
+				case 'true':
+					val = true;
+					break;
+				case 'false':
+					val = false;
+					break;
+				default:
+					nf = parseFloat(val);
+					if (val == nf) {
+						val = nf;
+					}
+			}
+			return val;
+		};
 
-  var hasClass = function(elem, className) {
-    return elem.classList.contains(className);
-  };
+		normalizeValues = function normalizeValues(vals) {
+			var i,
+			    result = [];
+			for (i = vals.length; i--;) {
+				result[i] = normalizeValue(vals[i]);
+			}
+			return result;
+		};
 
-  var focusInput = function(input) {
-    input.focus();
+		remove = function remove(vals, filter) {
+			var i,
+			    vl,
+			    result = [];
+			for (i = 0, vl = vals.length; i < vl; i++) {
+				if (vals[i] !== filter) {
+					result.push(vals[i]);
+				}
+			}
+			return result;
+		};
 
-    // place cursor at end of text in text input
-    if (input.type !== 'file') {
-      // http://stackoverflow.com/a/2345915/1331425
-      var val = input.value;
-      input.value = '';
-      input.value = val;
-    }
-  };
+		isNumber = function isNumber(num) {
+			return !isNaN(parseFloat(num)) && isFinite(num);
+		};
 
-  var addClass = function(elem, className) {
-    if (!elem || !className) {
-      return;
-    }
-    var classes = className.split(/\s+/);
-    classes.forEach(function(className) {
-      elem.classList.add(className);
-    });
-  };
+		formatNumber = function formatNumber(num, prec, groupsize, groupsep, decsep) {
+			var p, i;
+			num = (prec === false ? parseFloat(num).toString() : num.toFixed(prec)).split('');
+			p = (p = $.inArray('.', num)) < 0 ? num.length : p;
+			if (p < num.length) {
+				num[p] = decsep;
+			}
+			for (i = p - groupsize; i > 0; i -= groupsize) {
+				num.splice(i, 0, groupsep);
+			}
+			return num.join('');
+		};
 
-  var removeClass = function(elem, className) {
-    if (!elem || !className) {
-      return;
-    }
-    var classes = className.split(/\s+/);
-    classes.forEach(function(className) {
-      elem.classList.remove(className);
-    });
-  };
+		// determine if all values of an array match a value
+		// returns true if the array is empty
+		all = function all(val, arr, ignoreNull) {
+			var i;
+			for (i = arr.length; i--;) {
+				if (ignoreNull && arr[i] === null) continue;
+				if (arr[i] !== val) {
+					return false;
+				}
+			}
+			return true;
+		};
 
-  var getChildByClass = function(elem, className) {
-    for (var i = 0; i < elem.childNodes.length; i++) {
-      if (hasClass(elem.childNodes[i], className)) {
-        return elem.childNodes[i];
-      }
-    }
-  };
+		// sums the numeric values in an array, ignoring other values
+		sum = function sum(vals) {
+			var total = 0,
+			    i;
+			for (i = vals.length; i--;) {
+				total += typeof vals[i] === 'number' ? vals[i] : 0;
+			}
+			return total;
+		};
 
-  var show = function(elem, display) {
-    if (!display) {
-      display = 'block';
-    }
-    elem.style.opacity = '';
-    elem.style.display = display;
-  };
+		ensureArray = function ensureArray(val) {
+			return $.isArray(val) ? val : [val];
+		};
 
-  var hide = function(elem) {
-    elem.style.opacity = '';
-    elem.style.display = 'none';
-  };
+		// http://paulirish.com/2008/bookmarklet-inject-new-css-rules/
+		addCSS = function addCSS(css) {
+			var tag;
+			//if ('\v' == 'v') /* ie only */ {
+			if (document.createStyleSheet) {
+				document.createStyleSheet().cssText = css;
+			} else {
+				tag = document.createElement('style');
+				tag.type = 'text/css';
+				document.getElementsByTagName('head')[0].appendChild(tag);
+				tag[typeof document.body.style.WebkitAppearance == 'string' ? /* webkit only */'innerText' : 'innerHTML'] = css;
+			}
+		};
 
-  var empty = function(elem) {
-    while (elem.firstChild) {
-      elem.removeChild(elem.firstChild);
-    }
-  };
+		// Provide a cross-browser interface to a few simple drawing primitives
+		$.fn.simpledraw = function (width, height, useExisting, interact) {
+			var target, mhandler;
+			if (useExisting && (target = this.data('_jqs_vcanvas'))) {
+				return target;
+			}
 
-  // borrowed from jqeury $(elem).is(':visible') implementation
-  var isVisible = function(elem) {
-    return elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length;
-  };
+			if ($.fn.sparkline.canvas === false) {
+				// We've already determined that neither Canvas nor VML are available
+				return false;
+			} else if ($.fn.sparkline.canvas === undefined) {
+				// No function defined yet -- need to see if we support Canvas or VML
+				var el = document.createElement('canvas');
+				if (!!(el.getContext && el.getContext('2d'))) {
+					// Canvas is available
+					$.fn.sparkline.canvas = function (width, height, target, interact) {
+						return new VCanvas_canvas(width, height, target, interact);
+					};
+				} else if (document.namespaces && !document.namespaces.v) {
+					// VML is available
+					document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', '#default#VML');
+					$.fn.sparkline.canvas = function (width, height, target, interact) {
+						return new VCanvas_vml(width, height, target);
+					};
+				} else {
+					// Neither Canvas nor VML are available
+					$.fn.sparkline.canvas = false;
+					return false;
+				}
+			}
 
-  var removeStyleProperty = function(elem, property) {
-    if (elem.style.removeProperty) {
-      elem.style.removeProperty(property);
-    } else {
-      elem.style.removeAttribute(property);
-    }
-  };
+			if (width === undefined) {
+				width = $(this).innerWidth();
+			}
+			if (height === undefined) {
+				height = $(this).innerHeight();
+			}
 
-  var fireClick = function(node) {
-    // Taken from http://www.nonobtrusive.com/2011/11/29/programatically-fire-crossbrowser-click-event-with-javascript/
-    // Then fixed for today's Chrome browser.
-    if (typeof MouseEvent === 'function') {
-      // Up-to-date approach
-      var mevt = new MouseEvent('click', {
-        view: window,
-        bubbles: false,
-        cancelable: true
-      });
-      node.dispatchEvent(mevt);
-    } else if (document.createEvent) {
-      // Fallback
-      var evt = document.createEvent('MouseEvents');
-      evt.initEvent('click', false, false);
-      node.dispatchEvent(evt);
-    } else if (document.createEventObject) {
-      node.fireEvent('onclick');
-    } else if (typeof node.onclick === 'function') {
-      node.onclick();
-    }
-  };
+			target = $.fn.sparkline.canvas(width, height, this, interact);
 
-  var stopEventPropagation = function(e) {
-    // In particular, make sure the space bar doesn't scroll the main window.
-    if (typeof e.stopPropagation === 'function') {
-      e.stopPropagation();
-      e.preventDefault();
-    } else if (window.event && window.event.hasOwnProperty('cancelBubble')) {
-      window.event.cancelBubble = true;
-    }
-  };
+			mhandler = $(this).data('_jqs_mhandler');
+			if (mhandler) {
+				mhandler.registerCanvas(target);
+			}
+			return target;
+		};
 
-  var animationEndEvent = (function() {
-    var testEl = document.createElement('div'),
-      transEndEventNames = {
-        'WebkitAnimation': 'webkitAnimationEnd',
-        'OAnimation': 'oAnimationEnd oanimationend',
-        'msAnimation': 'MSAnimationEnd',
-        'animation': 'animationend'
-      };
-    for (var i in transEndEventNames) {
-      if (transEndEventNames.hasOwnProperty(i) &&
-        testEl.style[i] !== undefined) {
-        return transEndEventNames[i];
-      }
-    }
+		$.fn.cleardraw = function () {
+			var target = this.data('_jqs_vcanvas');
+			if (target) {
+				target.reset();
+			}
+		};
 
-    return false;
-  })();
+		$.RangeMapClass = RangeMap = createClass({
+			init: function init(map) {
+				var key,
+				    range,
+				    rangelist = [];
+				for (key in map) {
+					if (map.hasOwnProperty(key) && typeof key === 'string' && key.indexOf(':') > -1) {
+						range = key.split(':');
+						range[0] = range[0].length === 0 ? -Infinity : parseFloat(range[0]);
+						range[1] = range[1].length === 0 ? Infinity : parseFloat(range[1]);
+						range[2] = map[key];
+						rangelist.push(range);
+					}
+				}
+				this.map = map;
+				this.rangelist = rangelist || false;
+			},
 
+			get: function get(value) {
+				var rangelist = this.rangelist,
+				    i,
+				    range,
+				    result;
+				if ((result = this.map[value]) !== undefined) {
+					return result;
+				}
+				if (rangelist) {
+					for (i = rangelist.length; i--;) {
+						range = rangelist[i];
+						if (range[0] <= value && range[1] >= value) {
+							return range[2];
+						}
+					}
+				}
+				return undefined;
+			}
+		});
 
-  // Reset the page to its previous state
-  var resetPrevState = function() {
-    var modal = getModal();
-    window.onkeydown = states.previousWindowKeyDown;
-    if (states.previousActiveElement && states.previousActiveElement.focus) {
-      states.previousActiveElement.focus();
-    }
-    clearTimeout(modal.timeout);
-  };
+		// Convenience function
+		$.range_map = function (map) {
+			return new RangeMap(map);
+		};
 
-  // Measure width of scrollbar
-  // https://github.com/twbs/bootstrap/blob/master/js/modal.js#L279-L286
-  var measureScrollbar = function() {
-    var scrollDiv = document.createElement('div');
-    scrollDiv.style.width = '50px';
-    scrollDiv.style.height = '50px';
-    scrollDiv.style.overflow = 'scroll';
-    document.body.appendChild(scrollDiv);
-    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-    document.body.removeChild(scrollDiv);
-    return scrollbarWidth;
-  };
+		MouseHandler = createClass({
+			init: function init(el, options) {
+				var $el = $(el);
+				this.$el = $el;
+				this.options = options;
+				this.currentPageX = 0;
+				this.currentPageY = 0;
+				this.el = el;
+				this.splist = [];
+				this.tooltip = null;
+				this.over = false;
+				this.displayTooltips = !options.get('disableTooltips');
+				this.highlightEnabled = !options.get('disableHighlight');
+			},
 
-  // JavaScript Debounce Function
-  // https://davidwalsh.name/javascript-debounce-function
-  var debounce = function(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
+			registerSparkline: function registerSparkline(sp) {
+				this.splist.push(sp);
+				if (this.over) {
+					this.updateDisplay();
+				}
+			},
 
-  var modalParams = extend({}, defaultParams);
-  var queue = [];
-  var swal2Observer;
+			registerCanvas: function registerCanvas(canvas) {
+				var $canvas = $(canvas.canvas);
+				this.canvas = canvas;
+				this.$canvas = $canvas;
+				$canvas.mouseenter($.proxy(this.mouseenter, this));
+				$canvas.mouseleave($.proxy(this.mouseleave, this));
+				$canvas.click($.proxy(this.mouseclick, this));
+			},
 
-  /*
-   * Set type, text and actions on modal
+			reset: function reset(removeTooltip) {
+				this.splist = [];
+				if (this.tooltip && removeTooltip) {
+					this.tooltip.remove();
+					this.tooltip = undefined;
+				}
+			},
+
+			mouseclick: function mouseclick(e) {
+				var clickEvent = $.Event('sparklineClick');
+				clickEvent.originalEvent = e;
+				clickEvent.sparklines = this.splist;
+				this.$el.trigger(clickEvent);
+			},
+
+			mouseenter: function mouseenter(e) {
+				$(document.body).unbind('mousemove.jqs');
+				$(document.body).bind('mousemove.jqs', $.proxy(this.mousemove, this));
+				this.over = true;
+				this.currentPageX = e.pageX;
+				this.currentPageY = e.pageY;
+				this.currentEl = e.target;
+				if (!this.tooltip && this.displayTooltips) {
+					this.tooltip = new Tooltip(this.options);
+					this.tooltip.updatePosition(e.pageX, e.pageY);
+				}
+				this.updateDisplay();
+			},
+
+			mouseleave: function mouseleave() {
+				$(document.body).unbind('mousemove.jqs');
+				var splist = this.splist,
+				    spcount = splist.length,
+				    needsRefresh = false,
+				    sp,
+				    i;
+				this.over = false;
+				this.currentEl = null;
+
+				if (this.tooltip) {
+					this.tooltip.remove();
+					this.tooltip = null;
+				}
+
+				for (i = 0; i < spcount; i++) {
+					sp = splist[i];
+					if (sp.clearRegionHighlight()) {
+						needsRefresh = true;
+					}
+				}
+
+				if (needsRefresh) {
+					this.canvas.render();
+				}
+			},
+
+			mousemove: function mousemove(e) {
+				this.currentPageX = e.pageX;
+				this.currentPageY = e.pageY;
+				this.currentEl = e.target;
+				if (this.tooltip) {
+					this.tooltip.updatePosition(e.pageX, e.pageY);
+				}
+				this.updateDisplay();
+			},
+
+			updateDisplay: function updateDisplay() {
+				var splist = this.splist,
+				    spcount = splist.length,
+				    needsRefresh = false,
+				    offset = this.$canvas.offset(),
+				    localX = this.currentPageX - offset.left,
+				    localY = this.currentPageY - offset.top,
+				    tooltiphtml,
+				    sp,
+				    i,
+				    result,
+				    changeEvent;
+				if (!this.over) {
+					return;
+				}
+				for (i = 0; i < spcount; i++) {
+					sp = splist[i];
+					result = sp.setRegionHighlight(this.currentEl, localX, localY);
+					if (result) {
+						needsRefresh = true;
+					}
+				}
+				if (needsRefresh) {
+					changeEvent = $.Event('sparklineRegionChange');
+					changeEvent.sparklines = this.splist;
+					this.$el.trigger(changeEvent);
+					if (this.tooltip) {
+						tooltiphtml = '';
+						for (i = 0; i < spcount; i++) {
+							sp = splist[i];
+							tooltiphtml += sp.getCurrentRegionTooltip();
+						}
+						this.tooltip.setContent(tooltiphtml);
+					}
+					if (!this.disableHighlight) {
+						this.canvas.render();
+					}
+				}
+				if (result === null) {
+					this.mouseleave();
+				}
+			}
+		});
+
+		Tooltip = createClass({
+			sizeStyle: 'position: static !important;' + 'display: block !important;' + 'visibility: hidden !important;' + 'float: left !important;',
+
+			init: function init(options) {
+				var tooltipClassname = options.get('tooltipClassname', 'jqstooltip'),
+				    sizetipStyle = this.sizeStyle,
+				    offset;
+				this.container = options.get('tooltipContainer') || document.body;
+				this.tooltipOffsetX = options.get('tooltipOffsetX', 10);
+				this.tooltipOffsetY = options.get('tooltipOffsetY', 12);
+				// remove any previous lingering tooltip
+				$('#jqssizetip').remove();
+				$('#jqstooltip').remove();
+				this.sizetip = $('<div/>', {
+					id: 'jqssizetip',
+					style: sizetipStyle,
+					'class': tooltipClassname
+				});
+				this.tooltip = $('<div/>', {
+					id: 'jqstooltip',
+					'class': tooltipClassname
+				}).appendTo(this.container);
+				// account for the container's location
+				offset = this.tooltip.offset();
+				this.offsetLeft = offset.left;
+				this.offsetTop = offset.top;
+				this.hidden = true;
+				$(window).unbind('resize.jqs scroll.jqs');
+				$(window).bind('resize.jqs scroll.jqs', $.proxy(this.updateWindowDims, this));
+				this.updateWindowDims();
+			},
+
+			updateWindowDims: function updateWindowDims() {
+				this.scrollTop = $(window).scrollTop();
+				this.scrollLeft = $(window).scrollLeft();
+				this.scrollRight = this.scrollLeft + $(window).width();
+				this.updatePosition();
+			},
+
+			getSize: function getSize(content) {
+				this.sizetip.html(content).appendTo(this.container);
+				this.width = this.sizetip.width() + 1;
+				this.height = this.sizetip.height();
+				this.sizetip.remove();
+			},
+
+			setContent: function setContent(content) {
+				if (!content) {
+					this.tooltip.css('visibility', 'hidden');
+					this.hidden = true;
+					return;
+				}
+				this.getSize(content);
+				this.tooltip.html(content).css({
+					'width': this.width,
+					'height': this.height,
+					'visibility': 'visible'
+				});
+				if (this.hidden) {
+					this.hidden = false;
+					this.updatePosition();
+				}
+			},
+
+			updatePosition: function updatePosition(x, y) {
+				if (x === undefined) {
+					if (this.mousex === undefined) {
+						return;
+					}
+					x = this.mousex - this.offsetLeft;
+					y = this.mousey - this.offsetTop;
+				} else {
+					this.mousex = x = x - this.offsetLeft;
+					this.mousey = y = y - this.offsetTop;
+				}
+				if (!this.height || !this.width || this.hidden) {
+					return;
+				}
+
+				y -= this.height + this.tooltipOffsetY;
+				x += this.tooltipOffsetX;
+
+				if (y < this.scrollTop) {
+					y = this.scrollTop;
+				}
+				if (x < this.scrollLeft) {
+					x = this.scrollLeft;
+				} else if (x + this.width > this.scrollRight) {
+					x = this.scrollRight - this.width;
+				}
+
+				this.tooltip.css({
+					'left': x,
+					'top': y
+				});
+			},
+
+			remove: function remove() {
+				this.tooltip.remove();
+				this.sizetip.remove();
+				this.sizetip = this.tooltip = undefined;
+				$(window).unbind('resize.jqs scroll.jqs');
+			}
+		});
+
+		initStyles = function initStyles() {
+			addCSS(defaultStyles);
+		};
+
+		$(initStyles);
+
+		pending = [];
+		$.fn.sparkline = function (userValues, userOptions) {
+			return this.each(function () {
+				var options = new $.fn.sparkline.options(this, userOptions),
+				    $this = $(this),
+				    render,
+				    i;
+				render = function render() {
+					var values, width, height, tmp, mhandler, sp, vals;
+					if (userValues === 'html' || userValues === undefined) {
+						vals = this.getAttribute(options.get('tagValuesAttribute'));
+						if (vals === undefined || vals === null) {
+							vals = $this.html();
+						}
+						values = vals.replace(/(^\s*<!--)|(-->\s*$)|\s+/g, '').split(',');
+					} else {
+						values = userValues;
+					}
+
+					width = options.get('width') === 'auto' ? values.length * options.get('defaultPixelsPerValue') : options.get('width');
+					if (options.get('height') === 'auto') {
+						if (!options.get('composite') || !$.data(this, '_jqs_vcanvas')) {
+							// must be a better way to get the line height
+							tmp = document.createElement('span');
+							tmp.innerHTML = 'a';
+							$this.html(tmp);
+							height = $(tmp).innerHeight() || $(tmp).height();
+							$(tmp).remove();
+							tmp = null;
+						}
+					} else {
+						height = options.get('height');
+					}
+
+					if (!options.get('disableInteraction')) {
+						mhandler = $.data(this, '_jqs_mhandler');
+						if (!mhandler) {
+							mhandler = new MouseHandler(this, options);
+							$.data(this, '_jqs_mhandler', mhandler);
+						} else if (!options.get('composite')) {
+							mhandler.reset();
+						}
+					} else {
+						mhandler = false;
+					}
+
+					if (options.get('composite') && !$.data(this, '_jqs_vcanvas')) {
+						if (!$.data(this, '_jqs_errnotify')) {
+							alert('Attempted to attach a composite sparkline to an element with no existing sparkline');
+							$.data(this, '_jqs_errnotify', true);
+						}
+						return;
+					}
+
+					sp = new $.fn.sparkline[options.get('type')](this, values, options, width, height);
+
+					sp.render();
+
+					if (mhandler) {
+						mhandler.registerSparkline(sp);
+					}
+				};
+				if ($(this).html() && !options.get('disableHiddenCheck') && $(this).is(':hidden') || !$(this).parents('body').length) {
+					if (!options.get('composite') && $.data(this, '_jqs_pending')) {
+						// remove any existing references to the element
+						for (i = pending.length; i; i--) {
+							if (pending[i - 1][0] == this) {
+								pending.splice(i - 1, 1);
+							}
+						}
+					}
+					pending.push([this, render]);
+					$.data(this, '_jqs_pending', true);
+				} else {
+					render.call(this);
+				}
+			});
+		};
+
+		$.fn.sparkline.defaults = getDefaults();
+
+		$.sparkline_display_visible = function () {
+			var el, i, pl;
+			var done = [];
+			for (i = 0, pl = pending.length; i < pl; i++) {
+				el = pending[i][0];
+				if ($(el).is(':visible') && !$(el).parents().is(':hidden')) {
+					pending[i][1].call(el);
+					$.data(pending[i][0], '_jqs_pending', false);
+					done.push(i);
+				} else if (!$(el).closest('html').length && !$.data(el, '_jqs_pending')) {
+					// element has been inserted and removed from the DOM
+					// If it was not yet inserted into the dom then the .data request
+					// will return true.
+					// removing from the dom causes the data to be removed.
+					$.data(pending[i][0], '_jqs_pending', false);
+					done.push(i);
+				}
+			}
+			for (i = done.length; i; i--) {
+				pending.splice(done[i - 1], 1);
+			}
+		};
+
+		/**
+   * User option handler
    */
-  var setParameters = function(params) {
-    var modal = getModal();
+		$.fn.sparkline.options = createClass({
+			init: function init(tag, userOptions) {
+				var extendedOptions, defaults, base, tagOptionType;
+				this.userOptions = userOptions = userOptions || {};
+				this.tag = tag;
+				this.tagValCache = {};
+				defaults = $.fn.sparkline.defaults;
+				base = defaults.common;
+				this.tagOptionsPrefix = userOptions.enableTagOptions && (userOptions.tagOptionsPrefix || base.tagOptionsPrefix);
 
-    for (var param in params) {
-      if (!defaultParams.hasOwnProperty(param) && param !== 'extraParams') {
-        console.warn('SweetAlert2: Unknown parameter "' + param + '"');
-      }
-    }
+				tagOptionType = this.getTagSetting('type');
+				if (tagOptionType === UNSET_OPTION) {
+					extendedOptions = defaults[userOptions.type || base.type];
+				} else {
+					extendedOptions = defaults[tagOptionType];
+				}
+				this.mergedOptions = $.extend({}, base, extendedOptions, userOptions);
+			},
 
-    // set modal width and margin-left
-    modal.style.width = (typeof params.width === 'number') ? params.width + 'px' : params.width;
+			getTagSetting: function getTagSetting(key) {
+				var prefix = this.tagOptionsPrefix,
+				    val,
+				    i,
+				    pairs,
+				    keyval;
+				if (prefix === false || prefix === undefined) {
+					return UNSET_OPTION;
+				}
+				if (this.tagValCache.hasOwnProperty(key)) {
+					val = this.tagValCache.key;
+				} else {
+					val = this.tag.getAttribute(prefix + key);
+					if (val === undefined || val === null) {
+						val = UNSET_OPTION;
+					} else if (val.substr(0, 1) === '[') {
+						val = val.substr(1, val.length - 2).split(',');
+						for (i = val.length; i--;) {
+							val[i] = normalizeValue(val[i].replace(/(^\s*)|(\s*$)/g, ''));
+						}
+					} else if (val.substr(0, 1) === '{') {
+						pairs = val.substr(1, val.length - 2).split(',');
+						val = {};
+						for (i = pairs.length; i--;) {
+							keyval = pairs[i].split(':', 2);
+							val[keyval[0].replace(/(^\s*)|(\s*$)/g, '')] = normalizeValue(keyval[1].replace(/(^\s*)|(\s*$)/g, ''));
+						}
+					} else {
+						val = normalizeValue(val);
+					}
+					this.tagValCache.key = val;
+				}
+				return val;
+			},
 
-    modal.style.padding = params.padding + 'px';
-    modal.style.background = params.background;
+			get: function get(key, defaultval) {
+				var tagOption = this.getTagSetting(key),
+				    result;
+				if (tagOption !== UNSET_OPTION) {
+					return tagOption;
+				}
+				return (result = this.mergedOptions[key]) === undefined ? defaultval : result;
+			}
+		});
 
-    var $title = modal.querySelector('h2');
-    var $content = modal.querySelector('.' + swalClasses.content);
-    var $confirmBtn = getConfirmButton();
-    var $cancelBtn = getCancelButton();
-    var $closeButton = modal.querySelector('.' + swalClasses.close);
+		$.fn.sparkline._base = createClass({
+			disabled: false,
 
-    // Title
-    $title.innerHTML = params.title.split('\n').join('<br>');
+			init: function init(el, values, options, width, height) {
+				this.el = el;
+				this.$el = $(el);
+				this.values = values;
+				this.options = options;
+				this.width = width;
+				this.height = height;
+				this.currentRegion = undefined;
+			},
 
-    // Content
-    var i;
-    if (params.text || params.html) {
-      if (typeof params.html === 'object') {
-        $content.innerHTML = '';
-        if (0 in params.html) {
-          for (i = 0; i in params.html; i++) {
-            $content.appendChild(params.html[i].cloneNode(true));
-          }
-        } else {
-          $content.appendChild(params.html.cloneNode(true));
-        }
-      } else {
-        $content.innerHTML = params.html || (params.text.split('\n').join('<br>'));
-      }
-      show($content);
-    } else {
-      hide($content);
-    }
+			/**
+    * Setup the canvas
+    */
+			initTarget: function initTarget() {
+				var interactive = !this.options.get('disableInteraction');
+				if (!(this.target = this.$el.simpledraw(this.width, this.height, this.options.get('composite'), interactive))) {
+					this.disabled = true;
+				} else {
+					this.canvasWidth = this.target.pixelWidth;
+					this.canvasHeight = this.target.pixelHeight;
+				}
+			},
 
-    // Close button
-    if (params.showCloseButton) {
-      show($closeButton);
-    } else {
-      hide($closeButton);
-    }
+			/**
+    * Actually render the chart to the canvas
+    */
+			render: function render() {
+				if (this.disabled) {
+					this.el.innerHTML = '';
+					return false;
+				}
+				return true;
+			},
 
-    // Custom Class
-    modal.className = swalClasses.modal;
-    if (params.customClass) {
-      addClass(modal, params.customClass);
-    }
+			/**
+    * Return a region id for a given x/y co-ordinate
+    */
+			getRegion: function getRegion(x, y) {},
 
-    // Progress steps
-    var progressStepsContainer = getProgressSteps();
-    var currentProgressStep = parseInt(params.currentProgressStep === null? swal.getQueueStep() : params.currentProgressStep, 10);
-    if (params.progressSteps.length) {
-      show(progressStepsContainer);
-      empty(progressStepsContainer);
-      if (currentProgressStep >= params.progressSteps.length) {
-        console.warn(
-          'SweetAlert2: Invalid currentProgressStep parameter, it should be less than progressSteps.length ' +
-          '(currentProgressStep like JS arrays starts from 0)'
-        );
-      }
-      params.progressSteps.forEach(function(step, index) {
-        var circle = document.createElement('li');
-        addClass(circle, swalClasses.progresscircle);
-        circle.innerHTML = step;
-        if (index === currentProgressStep) {
-          addClass(circle, swalClasses.activeprogressstep);
-        }
-        progressStepsContainer.appendChild(circle);
-        if (index !== params.progressSteps.length - 1) {
-          var line = document.createElement('li');
-          addClass(line, swalClasses.progressline);
-          line.style.width = params.progressStepsDistance;
-          progressStepsContainer.appendChild(line);
-        }
-      });
-    } else {
-      hide(progressStepsContainer);
-    }
+			/**
+    * Highlight an item based on the moused-over x,y co-ordinate
+    */
+			setRegionHighlight: function setRegionHighlight(el, x, y) {
+				var currentRegion = this.currentRegion,
+				    highlightEnabled = !this.options.get('disableHighlight'),
+				    newRegion;
+				if (x > this.canvasWidth || y > this.canvasHeight || x < 0 || y < 0) {
+					return null;
+				}
+				newRegion = this.getRegion(el, x, y);
+				if (currentRegion !== newRegion) {
+					if (currentRegion !== undefined && highlightEnabled) {
+						this.removeHighlight();
+					}
+					this.currentRegion = newRegion;
+					if (newRegion !== undefined && highlightEnabled) {
+						this.renderHighlight();
+					}
+					return true;
+				}
+				return false;
+			},
 
-    // Icon
-    var icons = getIcons();
-    for (i = 0; i < icons.length; i++) {
-      hide(icons[i]);
-    }
-    if (params.type) {
-      var validType = false;
-      for (var iconType in iconTypes) {
-        if (params.type === iconType) {
-          validType = true;
-          break;
-        }
-      }
-      if (!validType) {
-        console.error('SweetAlert2: Unknown alert type: ' + params.type);
-        return false;
-      }
-      var $icon = modal.querySelector('.' + swalClasses.icon + '.' + iconTypes[params.type]);
-      show($icon);
+			/**
+    * Reset any currently highlighted item
+    */
+			clearRegionHighlight: function clearRegionHighlight() {
+				if (this.currentRegion !== undefined) {
+					this.removeHighlight();
+					this.currentRegion = undefined;
+					return true;
+				}
+				return false;
+			},
 
-      // Animate icon
-      switch (params.type) {
-        case 'success':
-          addClass($icon, 'animate');
-          addClass($icon.querySelector('.tip'), 'animate-success-tip');
-          addClass($icon.querySelector('.long'), 'animate-success-long');
-          break;
-        case 'error':
-          addClass($icon, 'animate-error-icon');
-          addClass($icon.querySelector('.x-mark'), 'animate-x-mark');
-          break;
-        case 'warning':
-          addClass($icon, 'pulse-warning');
-          break;
-        default:
-          break;
-      }
+			renderHighlight: function renderHighlight() {
+				this.changeHighlight(true);
+			},
 
-    }
+			removeHighlight: function removeHighlight() {
+				this.changeHighlight(false);
+			},
 
-    // Custom image
-    var $customImage = modal.querySelector('.' + swalClasses.image);
-    if (params.imageUrl) {
-      $customImage.setAttribute('src', params.imageUrl);
-      show($customImage);
+			changeHighlight: function changeHighlight(highlight) {},
 
-      if (params.imageWidth) {
-        $customImage.setAttribute('width', params.imageWidth);
-      } else {
-        $customImage.removeAttribute('width');
-      }
+			/**
+    * Fetch the HTML to display as a tooltip
+    */
+			getCurrentRegionTooltip: function getCurrentRegionTooltip() {
+				var options = this.options,
+				    header = '',
+				    entries = [],
+				    fields,
+				    formats,
+				    formatlen,
+				    fclass,
+				    text,
+				    i,
+				    showFields,
+				    showFieldsKey,
+				    newFields,
+				    fv,
+				    formatter,
+				    format,
+				    fieldlen,
+				    j;
+				if (this.currentRegion === undefined) {
+					return '';
+				}
+				fields = this.getCurrentRegionFields();
+				formatter = options.get('tooltipFormatter');
+				if (formatter) {
+					return formatter(this, options, fields);
+				}
+				if (options.get('tooltipChartTitle')) {
+					header += '<div class="jqs jqstitle">' + options.get('tooltipChartTitle') + '</div>\n';
+				}
+				formats = this.options.get('tooltipFormat');
+				if (!formats) {
+					return '';
+				}
+				if (!$.isArray(formats)) {
+					formats = [formats];
+				}
+				if (!$.isArray(fields)) {
+					fields = [fields];
+				}
+				showFields = this.options.get('tooltipFormatFieldlist');
+				showFieldsKey = this.options.get('tooltipFormatFieldlistKey');
+				if (showFields && showFieldsKey) {
+					// user-selected ordering of fields
+					newFields = [];
+					for (i = fields.length; i--;) {
+						fv = fields[i][showFieldsKey];
+						if ((j = $.inArray(fv, showFields)) != -1) {
+							newFields[j] = fields[i];
+						}
+					}
+					fields = newFields;
+				}
+				formatlen = formats.length;
+				fieldlen = fields.length;
+				for (i = 0; i < formatlen; i++) {
+					format = formats[i];
+					if (typeof format === 'string') {
+						format = new SPFormat(format);
+					}
+					fclass = format.fclass || 'jqsfield';
+					for (j = 0; j < fieldlen; j++) {
+						if (!fields[j].isNull || !options.get('tooltipSkipNull')) {
+							$.extend(fields[j], {
+								prefix: options.get('tooltipPrefix'),
+								suffix: options.get('tooltipSuffix')
+							});
+							text = format.render(fields[j], options.get('tooltipValueLookups'), options);
+							entries.push('<div class="' + fclass + '">' + text + '</div>');
+						}
+					}
+				}
+				if (entries.length) {
+					return header + entries.join('\n');
+				}
+				return '';
+			},
 
-      if (params.imageHeight) {
-        $customImage.setAttribute('height', params.imageHeight);
-      } else {
-        $customImage.removeAttribute('height');
-      }
+			getCurrentRegionFields: function getCurrentRegionFields() {},
 
-      $customImage.className = swalClasses.image;
-      if (params.imageClass) {
-        addClass($customImage, params.imageClass);
-      }
-    } else {
-      hide($customImage);
-    }
+			calcHighlightColor: function calcHighlightColor(color, options) {
+				var highlightColor = options.get('highlightColor'),
+				    lighten = options.get('highlightLighten'),
+				    parse,
+				    mult,
+				    rgbnew,
+				    i;
+				if (highlightColor) {
+					return highlightColor;
+				}
+				if (lighten) {
+					// extract RGB values
+					parse = /^#([0-9a-f])([0-9a-f])([0-9a-f])$/i.exec(color) || /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(color);
+					if (parse) {
+						rgbnew = [];
+						mult = color.length === 4 ? 16 : 1;
+						for (i = 0; i < 3; i++) {
+							rgbnew[i] = clipval(Math.round(parseInt(parse[i + 1], 16) * mult * lighten), 0, 255);
+						}
+						return 'rgb(' + rgbnew.join(',') + ')';
+					}
+				}
+				return color;
+			}
 
-    // Cancel button
-    if (params.showCancelButton) {
-      $cancelBtn.style.display = 'inline-block';
-    } else {
-      hide($cancelBtn);
-    }
+		});
 
-    // Confirm button
-    if (params.showConfirmButton) {
-      removeStyleProperty($confirmBtn, 'display');
-    } else {
-      hide($confirmBtn);
-    }
+		barHighlightMixin = {
+			changeHighlight: function changeHighlight(highlight) {
+				var currentRegion = this.currentRegion,
+				    target = this.target,
+				    shapeids = this.regionShapes[currentRegion],
+				    newShapes;
+				// will be null if the region value was null
+				if (shapeids) {
+					newShapes = this.renderRegion(currentRegion, highlight);
+					if ($.isArray(newShapes) || $.isArray(shapeids)) {
+						target.replaceWithShapes(shapeids, newShapes);
+						this.regionShapes[currentRegion] = $.map(newShapes, function (newShape) {
+							return newShape.id;
+						});
+					} else {
+						target.replaceWithShape(shapeids, newShapes);
+						this.regionShapes[currentRegion] = newShapes.id;
+					}
+				}
+			},
 
-    // Buttons spacer
-    var spacer = getSpacer();
-    if (!params.showConfirmButton && !params.showCancelButton) {
-      hide(spacer);
-    } else {
-      show(spacer);
-    }
+			render: function render() {
+				var values = this.values,
+				    target = this.target,
+				    regionShapes = this.regionShapes,
+				    shapes,
+				    ids,
+				    i,
+				    j;
 
-    // Edit text on cancel and confirm buttons
-    $confirmBtn.innerHTML = params.confirmButtonText;
-    $cancelBtn.innerHTML = params.cancelButtonText;
+				if (!this.cls._super.render.call(this)) {
+					return;
+				}
+				for (i = values.length; i--;) {
+					shapes = this.renderRegion(i);
+					if (shapes) {
+						if ($.isArray(shapes)) {
+							ids = [];
+							for (j = shapes.length; j--;) {
+								shapes[j].append();
+								ids.push(shapes[j].id);
+							}
+							regionShapes[i] = ids;
+						} else {
+							shapes.append();
+							regionShapes[i] = shapes.id; // store just the shapeid
+						}
+					} else {
+						// null value
+						regionShapes[i] = null;
+					}
+				}
+				target.render();
+			}
+		};
 
-    // Set buttons to selected background colors
-    if (params.buttonsStyling) {
-      $confirmBtn.style.backgroundColor = params.confirmButtonColor;
-      $cancelBtn.style.backgroundColor = params.cancelButtonColor;
-    }
-
-    // Add buttons custom classes
-    $confirmBtn.className = swalClasses.confirm;
-    addClass($confirmBtn, params.confirmButtonClass);
-    $cancelBtn.className = swalClasses.cancel;
-    addClass($cancelBtn, params.cancelButtonClass);
-
-    // Buttons styling
-    if (params.buttonsStyling) {
-      addClass($confirmBtn, 'styled');
-      addClass($cancelBtn, 'styled');
-    } else {
-      removeClass($confirmBtn, 'styled');
-      removeClass($cancelBtn, 'styled');
-
-      $confirmBtn.style.backgroundColor = $confirmBtn.style.borderLeftColor = $confirmBtn.style.borderRightColor = '';
-      $cancelBtn.style.backgroundColor = $cancelBtn.style.borderLeftColor = $cancelBtn.style.borderRightColor = '';
-    }
-
-    // CSS animation
-    if (params.animation === true) {
-      removeClass(modal, 'no-animation');
-    } else {
-      addClass(modal, 'no-animation');
-    }
-  };
-
-  /*
-   * Animations
+		/**
+   * Line charts
    */
-  var openModal = function(animation, onComplete) {
-    var modal = getModal();
-    if (animation) {
-      addClass(modal, 'show-swal2');
-      addClass(sweetContainer, 'fade');
-      removeClass(modal, 'hide-swal2');
-    } else {
-      removeClass(modal, 'fade');
-    }
-    show(modal);
-
-    // scrolling is 'hidden' until animation is done, after that 'auto'
-    sweetContainer.style.overflowY = 'hidden';
-    if (animationEndEvent && !hasClass(modal, 'no-animation')) {
-      modal.addEventListener(animationEndEvent, function swalCloseEventFinished() {
-        modal.removeEventListener(animationEndEvent, swalCloseEventFinished);
-        sweetContainer.style.overflowY = 'auto';
-      });
-    } else {
-      sweetContainer.style.overflowY = 'auto';
-    }
-
-    addClass(sweetContainer, 'in');
-    addClass(document.body, swalClasses.in);
-    fixScrollbar();
-    states.previousActiveElement = document.activeElement;
-    if (onComplete !== null && typeof onComplete === 'function') {
-      onComplete.call(this, modal);
-    }
-  };
-
-  function fixScrollbar() {
-    // for queues, do not do this more than once
-    if (states.previousBodyPadding !== null) {
-      return;
-    }
-    // if the body has overflow
-    if (document.body.scrollHeight > window.innerHeight) {
-      // add padding so the content doesn't shift after removal of scrollbar
-      states.previousBodyPadding = document.body.style.paddingRight;
-      document.body.style.paddingRight = measureScrollbar() + 'px';
-    }
-  }
-
-  function undoScrollbar() {
-    if (states.previousBodyPadding !== null) {
-      document.body.style.paddingRight = states.previousBodyPadding;
-      states.previousBodyPadding = null;
-    }
-  }
-
-  function modalDependant() {
-    if (arguments[0] === undefined) {
-      console.error('SweetAlert2 expects at least 1 attribute!');
-      return false;
-    }
-
-    var params = extend({}, modalParams);
-
-    switch (typeof arguments[0]) {
-
-      case 'string':
-        params.title = arguments[0];
-        params.text  = arguments[1] || '';
-        params.type  = arguments[2] || '';
-
-        break;
-
-      case 'object':
-        extend(params, arguments[0]);
-        params.extraParams = arguments[0].extraParams;
-
-        if (params.input === 'email' && params.inputValidator === null) {
-          params.inputValidator = function(email) {
-            return new Promise(function(resolve, reject) {
-              var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-              if (emailRegex.test(email)) {
-                resolve();
-              } else {
-                reject('Invalid email address');
-              }
-            });
-          };
-        }
-
-        break;
-
-      default:
-        console.error('SweetAlert2: Unexpected type of argument! Expected "string" or "object", got ' + typeof arguments[0]);
-        return false;
-    }
-
-    setParameters(params);
-
-    // Modal interactions
-    var modal = getModal();
-
-    return new Promise(function(resolve, reject) {
-      // Close on timer
-      if (params.timer) {
-        modal.timeout = setTimeout(function() {
-          sweetAlert.closeModal(params.onClose);
-          reject('timer');
-        }, params.timer);
-      }
-
-      // Get input element by specified type or, if type isn't specified, by params.input
-      var getInput = function(inputType) {
-        inputType = inputType || params.input;
-        switch (inputType) {
-          case 'select':
-          case 'textarea':
-          case 'file':
-            return getChildByClass(modal, swalClasses[inputType]);
-          case 'checkbox':
-            return modal.querySelector('.' + swalClasses.checkbox + ' input');
-          case 'radio':
-            return modal.querySelector('.' + swalClasses.radio + ' input:checked') ||
-              modal.querySelector('.' + swalClasses.radio + ' input:first-child');
-          case 'range':
-            return modal.querySelector('.' + swalClasses.range + ' input');
-          default:
-            return getChildByClass(modal, swalClasses.input);
-        }
-      };
-
-      // Get the value of the modal input
-      var getInputValue = function() {
-        var input = getInput();
-        if (!input) {
-          return null;
-        }
-        switch (params.input) {
-          case 'checkbox':
-            return input.checked ? 1 : 0;
-          case 'radio':
-            return input.checked ? input.value : null;
-          case 'file':
-            return input.files.length ? input.files[0] : null;
-          default:
-            return params.inputAutoTrim? input.value.trim() : input.value;
-        }
-      };
-
-      // input autofocus
-      if (params.input) {
-        setTimeout(function() {
-          var input = getInput();
-          if (input) {
-            focusInput(input);
-          }
-        }, 0);
-      }
-
-      var confirm = function(value) {
-        if (params.showLoaderOnConfirm) {
-          sweetAlert.showLoading();
-        }
-
-        if (params.preConfirm) {
-          params.preConfirm(value, params.extraParams).then(
-            function(preConfirmValue) {
-              sweetAlert.closeModal(params.onClose);
-              resolve(preConfirmValue || value);
-            },
-            function(error) {
-              sweetAlert.hideLoading();
-              if (error) {
-                sweetAlert.showValidationError(error);
-              }
-            }
-          );
-        } else {
-          sweetAlert.closeModal(params.onClose);
-          resolve(value);
-        }
-      };
-
-      // Mouse interactions
-      var onButtonEvent = function(event) {
-        var e = event || window.event;
-        var target = e.target || e.srcElement;
-        var confirmBtn = getConfirmButton();
-        var cancelBtn = getCancelButton();
-        var targetedConfirm = confirmBtn === target || confirmBtn.contains(target);
-        var targetedCancel = cancelBtn === target || cancelBtn.contains(target);
-
-        switch (e.type) {
-          case 'mouseover':
-          case 'mouseup':
-            if (params.buttonsStyling) {
-              if (targetedConfirm) {
-                confirmBtn.style.backgroundColor = colorLuminance(params.confirmButtonColor, -0.1);
-              } else if (targetedCancel) {
-                cancelBtn.style.backgroundColor = colorLuminance(params.cancelButtonColor, -0.1);
-              }
-            }
-            break;
-          case 'mouseout':
-            if (params.buttonsStyling) {
-              if (targetedConfirm) {
-                confirmBtn.style.backgroundColor = params.confirmButtonColor;
-              } else if (targetedCancel) {
-                cancelBtn.style.backgroundColor = params.cancelButtonColor;
-              }
-            }
-            break;
-          case 'mousedown':
-            if (params.buttonsStyling) {
-              if (targetedConfirm) {
-                confirmBtn.style.backgroundColor = colorLuminance(params.confirmButtonColor, -0.2);
-              } else if (targetedCancel) {
-                cancelBtn.style.backgroundColor = colorLuminance(params.cancelButtonColor, -0.2);
-              }
-            }
-            break;
-          case 'click':
-            // Clicked 'confirm'
-            if (targetedConfirm && sweetAlert.isVisible()) {
-              if (params.input) {
-                var inputValue = getInputValue();
-
-                if (params.inputValidator) {
-                  sweetAlert.disableInput();
-                  params.inputValidator(inputValue, params.extraParams).then(
-                    function() {
-                      sweetAlert.enableInput();
-                      confirm(inputValue);
-                    },
-                    function(error) {
-                      sweetAlert.enableInput();
-                      if (error) {
-                        sweetAlert.showValidationError(error);
-                      }
-                    }
-                  );
-                } else {
-                  confirm(inputValue);
-                }
-
-              } else {
-                confirm(true);
-              }
-
-            // Clicked 'cancel'
-            } else if (targetedCancel && sweetAlert.isVisible()) {
-              sweetAlert.closeModal(params.onClose);
-              reject('cancel');
-            }
-
-            break;
-          default:
-        }
-      };
-
-      var $buttons = modal.querySelectorAll('button');
-      var i;
-      for (i = 0; i < $buttons.length; i++) {
-        $buttons[i].onclick     = onButtonEvent;
-        $buttons[i].onmouseover = onButtonEvent;
-        $buttons[i].onmouseout  = onButtonEvent;
-        $buttons[i].onmousedown = onButtonEvent;
-      }
-
-      // Closing modal by close button
-      getCloseButton().onclick = function() {
-        sweetAlert.closeModal(params.onClose);
-        reject('close');
-      };
-
-      // Closing modal by overlay click
-      sweetContainer.onclick = function(e) {
-        if (e.target !== sweetContainer) {
-          return;
-        }
-        if (params.allowOutsideClick) {
-          sweetAlert.closeModal(params.onClose);
-          reject('overlay');
-        }
-      };
-
-      var $confirmButton = getConfirmButton();
-      var $cancelButton = getCancelButton();
-
-      // Reverse buttons if neede d
-      if (params.reverseButtons) {
-        $confirmButton.parentNode.insertBefore($cancelButton, $confirmButton);
-      } else {
-        $confirmButton.parentNode.insertBefore($confirmButton, $cancelButton);
-      }
-
-      // Focus handling
-      function setFocus(index, increment) {
-        var focusableElements = getFocusableElements(params.focusCancel);
-        // search for visible elements and select the next possible match
-        for (var i = 0; i < focusableElements.length; i++) {
-          index = index + increment;
-
-          // rollover to first item
-          if (index === focusableElements.length) {
-            index = 0;
-
-          // go to last item
-          } else if (index === -1) {
-            index = focusableElements.length - 1;
-          }
-
-          // determine if element is visible
-          var el = focusableElements[index];
-          if (isVisible(el)) {
-            return el.focus();
-          }
-        }
-      }
-
-      function handleKeyDown(event) {
-        var e = event || window.event;
-        var keyCode = e.keyCode || e.which;
-
-        if ([9, 13, 32, 27].indexOf(keyCode) === -1) {
-          // Don't do work on keys we don't care about.
-          return;
-        }
-
-        var $targetElement = e.target || e.srcElement;
-
-        var focusableElements = getFocusableElements(params.focusCancel);
-        var btnIndex = -1; // Find the button - note, this is a nodelist, not an array.
-        for (var i = 0; i < focusableElements.length; i++) {
-          if ($targetElement === focusableElements[i]) {
-            btnIndex = i;
-            break;
-          }
-        }
-
-        // TAB
-        if (keyCode === 9) {
-          if (!e.shiftKey) {
-            // Cycle to the next button
-            setFocus(btnIndex, 1);
-          } else {
-            // Cycle to the prev button
-            setFocus(btnIndex, -1);
-          }
-
-          stopEventPropagation(e);
-
-        } else {
-          if (keyCode === 13 || keyCode === 32) {
-            if (btnIndex === -1) {
-              // ENTER/SPACE clicked outside of a button.
-              if (params.focusCancel) {
-                fireClick($cancelButton, e);
-              } else {
-                fireClick($confirmButton, e);
-              }
-            }
-          } else if (keyCode === 27 && params.allowEscapeKey === true) {
-            sweetAlert.closeModal(params.onClose);
-            reject('esc');
-          }
-        }
-      }
-
-      states.previousWindowKeyDown = window.onkeydown;
-      window.onkeydown = handleKeyDown;
-
-      // Loading state
-      if (params.buttonsStyling) {
-        $confirmButton.style.borderLeftColor = params.confirmButtonColor;
-        $confirmButton.style.borderRightColor = params.confirmButtonColor;
-      }
-
-      /**
-       * Show spinner instead of Confirm button and disable Cancel button
-       */
-      sweetAlert.showLoading = sweetAlert.enableLoading = function() {
-        show(getSpacer());
-        show($confirmButton, 'inline-block');
-        addClass($confirmButton, 'loading');
-        addClass(modal, 'loading');
-        $confirmButton.disabled = true;
-        $cancelButton.disabled = true;
-      };
-
-      /**
-       * Show spinner instead of Confirm button and disable Cancel button
-       */
-      sweetAlert.hideLoading = sweetAlert.disableLoading = function() {
-        if (!params.showConfirmButton) {
-          hide($confirmButton);
-          if (!params.showCancelButton) {
-            hide(getSpacer());
-          }
-        }
-        removeClass($confirmButton, 'loading');
-        removeClass(modal, 'loading');
-        $confirmButton.disabled = false;
-        $cancelButton.disabled = false;
-      };
-
-      sweetAlert.enableButtons = function() {
-        $confirmButton.disabled = false;
-        $cancelButton.disabled = false;
-      };
-
-      sweetAlert.disableButtons = function() {
-        $confirmButton.disabled = true;
-        $cancelButton.disabled = true;
-      };
-
-      sweetAlert.enableConfirmButton = function() {
-        $confirmButton.disabled = false;
-      };
-
-      sweetAlert.disableConfirmButton = function() {
-        $confirmButton.disabled = true;
-      };
-
-      sweetAlert.enableInput = function() {
-        var input = getInput();
-        if (!input) {
-          return false;
-        }
-        if (input.type === 'radio') {
-          var radiosContainer = input.parentNode.parentNode;
-          var radios = radiosContainer.querySelectorAll('input');
-          for (var i = 0; i < radios.length; i++) {
-            radios[i].disabled = false;
-          }
-        } else {
-          input.disabled = false;
-        }
-      };
-
-      sweetAlert.disableInput = function() {
-        var input = getInput();
-        if (!input) {
-          return false;
-        }
-        if (input && input.type === 'radio') {
-          var radiosContainer = input.parentNode.parentNode;
-          var radios = radiosContainer.querySelectorAll('input');
-          for (var i = 0; i < radios.length; i++) {
-            radios[i].disabled = true;
-          }
-        } else {
-          input.disabled = true;
-        }
-      };
-
-      // Set modal min-height to disable scrolling inside the modal
-      sweetAlert.recalculateHeight = function() {
-        var modal = getModal() || sweetAlert.init();
-        var prevState = modal.style.display;
-        modal.style.minHeight = '';
-        show(modal);
-        modal.style.minHeight = (modal.scrollHeight + 1) + 'px';
-        modal.style.display = prevState;
-      };
-
-      // Show block with validation error
-      sweetAlert.showValidationError = function(error) {
-        var $validationError = modal.querySelector('.' + swalClasses.validationerror);
-        $validationError.innerHTML = error;
-        show($validationError);
-
-        var input = getInput();
-        focusInput(input);
-        addClass(input, 'error');
-      };
-
-      // Hide block with validation error
-      sweetAlert.resetValidationError = function() {
-        var $validationError = modal.querySelector('.' + swalClasses.validationerror);
-        hide($validationError);
-
-        var input = getInput();
-        if (input) {
-          removeClass(input, 'error');
-        }
-      };
-
-      sweetAlert.getProgressSteps = function() {
-        return params.progressSteps;
-      };
-
-      sweetAlert.setProgressSteps = function(progressSteps) {
-        params.progressSteps = progressSteps;
-        setParameters(params);
-      };
-
-      sweetAlert.showProgressSteps = function() {
-        show(getProgressSteps());
-      };
-
-      sweetAlert.hideProgressSteps = function() {
-        hide(getProgressSteps());
-      };
-
-      sweetAlert.enableButtons();
-      sweetAlert.hideLoading();
-      sweetAlert.resetValidationError();
-
-      // inputs
-      var inputTypes = ['input', 'file', 'range', 'select', 'radio', 'checkbox', 'textarea'];
-      var input;
-      for (i = 0; i < inputTypes.length; i++) {
-        var inputClass = swalClasses[inputTypes[i]];
-        var inputContainer = getChildByClass(modal, inputClass);
-        input = getInput(inputTypes[i]);
-
-        // set attributes
-        if (input) {
-          for (var j in input.attributes) {
-            if (input.attributes.hasOwnProperty(j)) {
-              var attrName = input.attributes[j].name;
-              if (attrName !== 'type' && attrName !== 'value') {
-                input.removeAttribute(attrName);
-              }
-            }
-          }
-          for (var attr in params.inputAttributes) {
-            input.setAttribute(attr, params.inputAttributes[attr]);
-          }
-        }
-
-        // set class
-        inputContainer.className = inputClass;
-        if (params.inputClass) {
-          addClass(inputContainer, params.inputClass);
-        }
-
-        hide(inputContainer);
-      }
-
-      var populateInputOptions;
-      switch (params.input) {
-        case 'text':
-        case 'email':
-        case 'password':
-        case 'number':
-        case 'tel':
-          input = getChildByClass(modal, swalClasses.input);
-          input.value = params.inputValue;
-          input.placeholder = params.inputPlaceholder;
-          input.type = params.input;
-          show(input);
-          break;
-        case 'file':
-          input = getChildByClass(modal, swalClasses.file);
-          input.placeholder = params.inputPlaceholder;
-          input.type = params.input;
-          show(input);
-          break;
-        case 'range':
-          var range = getChildByClass(modal, swalClasses.range);
-          var rangeInput = range.querySelector('input');
-          var rangeOutput = range.querySelector('output');
-          rangeInput.value = params.inputValue;
-          rangeInput.type = params.input;
-          rangeOutput.value = params.inputValue;
-          show(range);
-          break;
-        case 'select':
-          var select = getChildByClass(modal, swalClasses.select);
-          select.innerHTML = '';
-          if (params.inputPlaceholder) {
-            var placeholder = document.createElement('option');
-            placeholder.innerHTML = params.inputPlaceholder;
-            placeholder.value = '';
-            placeholder.disabled = true;
-            placeholder.selected = true;
-            select.appendChild(placeholder);
-          }
-          populateInputOptions = function(inputOptions) {
-            for (var optionValue in inputOptions) {
-              var option = document.createElement('option');
-              option.value = optionValue;
-              option.innerHTML = inputOptions[optionValue];
-              if (params.inputValue === optionValue) {
-                option.selected = true;
-              }
-              select.appendChild(option);
-            }
-            show(select);
-            select.focus();
-          };
-          break;
-        case 'radio':
-          var radio = getChildByClass(modal, swalClasses.radio);
-          radio.innerHTML = '';
-          populateInputOptions = function(inputOptions) {
-            for (var radioValue in inputOptions) {
-              var id = 1;
-              var radioInput = document.createElement('input');
-              var radioLabel = document.createElement('label');
-              var radioLabelSpan = document.createElement('span');
-              radioInput.type = 'radio';
-              radioInput.name = swalClasses.radio;
-              radioInput.value = radioValue;
-              radioInput.id = swalClasses.radio + '-' + (id++);
-              if (params.inputValue === radioValue) {
-                radioInput.checked = true;
-              }
-              radioLabelSpan.innerHTML = inputOptions[radioValue];
-              radioLabel.appendChild(radioInput);
-              radioLabel.appendChild(radioLabelSpan);
-              radioLabel.for = radioInput.id;
-              radio.appendChild(radioLabel);
-            }
-            show(radio);
-            var radios = radio.querySelectorAll('input');
-            if (radios.length) {
-              radios[0].focus();
-            }
-          };
-          break;
-        case 'checkbox':
-          var checkbox = getChildByClass(modal, swalClasses.checkbox);
-          var checkboxInput = getInput('checkbox');
-          checkboxInput.type = 'checkbox';
-          checkboxInput.value = 1;
-          checkboxInput.id = swalClasses.checkbox;
-          checkboxInput.checked = Boolean(params.inputValue);
-          var label = checkbox.getElementsByTagName('span');
-          if (label.length) {
-            checkbox.removeChild(label[0]);
-          }
-          label = document.createElement('span');
-          label.innerHTML = params.inputPlaceholder;
-          checkbox.appendChild(label);
-          show(checkbox);
-          break;
-        case 'textarea':
-          var textarea = getChildByClass(modal, swalClasses.textarea);
-          textarea.value = params.inputValue;
-          textarea.placeholder = params.inputPlaceholder;
-          show(textarea);
-          break;
-        case null:
-          break;
-        default:
-          console.error('SweetAlert2: Unexpected type of input! Expected "text" or "email" or "password", "select", "checkbox", "textarea" or "file", got "' + params.input + '"');
-          break;
-      }
-
-      if (params.input === 'select' || params.input === 'radio') {
-        if (params.inputOptions instanceof Promise) {
-          sweetAlert.showLoading();
-          params.inputOptions.then(function(inputOptions) {
-            sweetAlert.hideLoading();
-            populateInputOptions(inputOptions);
-          });
-        } else if (typeof params.inputOptions === 'object') {
-          populateInputOptions(params.inputOptions);
-        } else {
-          console.error('SweetAlert2: Unexpected type of inputOptions! Expected object or Promise, got ' + typeof params.inputOptions);
-        }
-      }
-
-      openModal(params.animation, params.onOpen);
-
-      // Focus the first element (input or button)
-      setFocus(-1, 1);
-
-      // fix scroll
-      sweetContainer.scrollTop = 0;
-
-      // Observe changes inside the modal and adjust height
-      if (typeof MutationObserver !== 'undefined' && !swal2Observer) {
-        var mutationsHandler = debounce(function() {
-          sweetAlert.recalculateHeight();
-        }, 50);
-        swal2Observer = new MutationObserver(mutationsHandler);
-        swal2Observer.observe(modal, {childList: true, characterData: true, subtree: true});
-      }
-    });
-  }
-
-  // SweetAlert function
-  function sweetAlert() {
-    // Copy arguments to the local args variable
-    var args = arguments;
-    var modal = getModal();
-
-    if (modal === null) {
-      sweetAlert.init();
-      modal = getModal();
-    }
-
-    if (sweetAlert.isVisible()) {
-      sweetAlert.close();
-    }
-
-    return modalDependant.apply(this, args);
-  }
-
-  /*
-   * Global function to determine if swal2 modal is visible
+		$.fn.sparkline.line = line = createClass($.fn.sparkline._base, {
+			type: 'line',
+
+			init: function init(el, values, options, width, height) {
+				line._super.init.call(this, el, values, options, width, height);
+				this.vertices = [];
+				this.regionMap = [];
+				this.xvalues = [];
+				this.yvalues = [];
+				this.yminmax = [];
+				this.hightlightSpotId = null;
+				this.lastShapeId = null;
+				this.initTarget();
+			},
+
+			getRegion: function getRegion(el, x, y) {
+				var i,
+				    regionMap = this.regionMap; // maps regions to value positions
+				for (i = regionMap.length; i--;) {
+					if (regionMap[i] !== null && x >= regionMap[i][0] && x <= regionMap[i][1]) {
+						return regionMap[i][2];
+					}
+				}
+				return undefined;
+			},
+
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var currentRegion = this.currentRegion;
+				return {
+					isNull: this.yvalues[currentRegion] === null,
+					x: this.xvalues[currentRegion],
+					y: this.yvalues[currentRegion],
+					color: this.options.get('lineColor'),
+					fillColor: this.options.get('fillColor'),
+					offset: currentRegion
+				};
+			},
+
+			renderHighlight: function renderHighlight() {
+				var currentRegion = this.currentRegion,
+				    target = this.target,
+				    vertex = this.vertices[currentRegion],
+				    options = this.options,
+				    spotRadius = options.get('spotRadius'),
+				    highlightSpotColor = options.get('highlightSpotColor'),
+				    highlightLineColor = options.get('highlightLineColor'),
+				    highlightSpot,
+				    highlightLine;
+
+				if (!vertex) {
+					return;
+				}
+				if (spotRadius && highlightSpotColor) {
+					highlightSpot = target.drawCircle(vertex[0], vertex[1], spotRadius, undefined, highlightSpotColor);
+					this.highlightSpotId = highlightSpot.id;
+					target.insertAfterShape(this.lastShapeId, highlightSpot);
+				}
+				if (highlightLineColor) {
+					highlightLine = target.drawLine(vertex[0], this.canvasTop, vertex[0], this.canvasTop + this.canvasHeight, highlightLineColor);
+					this.highlightLineId = highlightLine.id;
+					target.insertAfterShape(this.lastShapeId, highlightLine);
+				}
+			},
+
+			removeHighlight: function removeHighlight() {
+				var target = this.target;
+				if (this.highlightSpotId) {
+					target.removeShapeId(this.highlightSpotId);
+					this.highlightSpotId = null;
+				}
+				if (this.highlightLineId) {
+					target.removeShapeId(this.highlightLineId);
+					this.highlightLineId = null;
+				}
+			},
+
+			scanValues: function scanValues() {
+				var values = this.values,
+				    valcount = values.length,
+				    xvalues = this.xvalues,
+				    yvalues = this.yvalues,
+				    yminmax = this.yminmax,
+				    i,
+				    val,
+				    isStr,
+				    isArray,
+				    sp;
+				for (i = 0; i < valcount; i++) {
+					val = values[i];
+					isStr = typeof values[i] === 'string';
+					isArray = _typeof(values[i]) === 'object' && values[i] instanceof Array;
+					sp = isStr && values[i].split(':');
+					if (isStr && sp.length === 2) {
+						// x:y
+						xvalues.push(Number(sp[0]));
+						yvalues.push(Number(sp[1]));
+						yminmax.push(Number(sp[1]));
+					} else if (isArray) {
+						xvalues.push(val[0]);
+						yvalues.push(val[1]);
+						yminmax.push(val[1]);
+					} else {
+						xvalues.push(i);
+						if (values[i] === null || values[i] === 'null') {
+							yvalues.push(null);
+						} else {
+							yvalues.push(Number(val));
+							yminmax.push(Number(val));
+						}
+					}
+				}
+				if (this.options.get('xvalues')) {
+					xvalues = this.options.get('xvalues');
+				}
+
+				this.maxy = this.maxyorg = Math.max.apply(Math, yminmax);
+				this.miny = this.minyorg = Math.min.apply(Math, yminmax);
+
+				this.maxx = Math.max.apply(Math, xvalues);
+				this.minx = Math.min.apply(Math, xvalues);
+
+				this.xvalues = xvalues;
+				this.yvalues = yvalues;
+				this.yminmax = yminmax;
+			},
+
+			processRangeOptions: function processRangeOptions() {
+				var options = this.options,
+				    normalRangeMin = options.get('normalRangeMin'),
+				    normalRangeMax = options.get('normalRangeMax');
+
+				if (normalRangeMin !== undefined) {
+					if (normalRangeMin < this.miny) {
+						this.miny = normalRangeMin;
+					}
+					if (normalRangeMax > this.maxy) {
+						this.maxy = normalRangeMax;
+					}
+				}
+				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.miny)) {
+					this.miny = options.get('chartRangeMin');
+				}
+				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.maxy)) {
+					this.maxy = options.get('chartRangeMax');
+				}
+				if (options.get('chartRangeMinX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMinX') < this.minx)) {
+					this.minx = options.get('chartRangeMinX');
+				}
+				if (options.get('chartRangeMaxX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMaxX') > this.maxx)) {
+					this.maxx = options.get('chartRangeMaxX');
+				}
+			},
+
+			drawNormalRange: function drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey) {
+				var normalRangeMin = this.options.get('normalRangeMin'),
+				    normalRangeMax = this.options.get('normalRangeMax'),
+				    ytop = canvasTop + Math.round(canvasHeight - canvasHeight * ((normalRangeMax - this.miny) / rangey)),
+				    height = Math.round(canvasHeight * (normalRangeMax - normalRangeMin) / rangey);
+				this.target.drawRect(canvasLeft, ytop, canvasWidth, height, undefined, this.options.get('normalRangeColor')).append();
+			},
+
+			render: function render() {
+				var options = this.options,
+				    target = this.target,
+				    canvasWidth = this.canvasWidth,
+				    canvasHeight = this.canvasHeight,
+				    vertices = this.vertices,
+				    spotRadius = options.get('spotRadius'),
+				    regionMap = this.regionMap,
+				    rangex,
+				    rangey,
+				    yvallast,
+				    canvasTop,
+				    canvasLeft,
+				    vertex,
+				    path,
+				    paths,
+				    x,
+				    y,
+				    xnext,
+				    xpos,
+				    xposnext,
+				    last,
+				    next,
+				    yvalcount,
+				    lineShapes,
+				    fillShapes,
+				    plen,
+				    valueSpots,
+				    hlSpotsEnabled,
+				    color,
+				    xvalues,
+				    yvalues,
+				    i;
+
+				if (!line._super.render.call(this)) {
+					return;
+				}
+
+				this.scanValues();
+				this.processRangeOptions();
+
+				xvalues = this.xvalues;
+				yvalues = this.yvalues;
+
+				if (!this.yminmax.length || this.yvalues.length < 2) {
+					// empty or all null valuess
+					return;
+				}
+
+				canvasTop = canvasLeft = 0;
+
+				rangex = this.maxx - this.minx === 0 ? 1 : this.maxx - this.minx;
+				rangey = this.maxy - this.miny === 0 ? 1 : this.maxy - this.miny;
+				yvallast = this.yvalues.length - 1;
+
+				if (spotRadius && (canvasWidth < spotRadius * 4 || canvasHeight < spotRadius * 4)) {
+					spotRadius = 0;
+				}
+				if (spotRadius) {
+					// adjust the canvas size as required so that spots will fit
+					hlSpotsEnabled = options.get('highlightSpotColor') && !options.get('disableInteraction');
+					if (hlSpotsEnabled || options.get('minSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.miny) {
+						canvasHeight -= Math.ceil(spotRadius);
+					}
+					if (hlSpotsEnabled || options.get('maxSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.maxy) {
+						canvasHeight -= Math.ceil(spotRadius);
+						canvasTop += Math.ceil(spotRadius);
+					}
+					if (hlSpotsEnabled || (options.get('minSpotColor') || options.get('maxSpotColor')) && (yvalues[0] === this.miny || yvalues[0] === this.maxy)) {
+						canvasLeft += Math.ceil(spotRadius);
+						canvasWidth -= Math.ceil(spotRadius);
+					}
+					if (hlSpotsEnabled || options.get('spotColor') || options.get('minSpotColor') || options.get('maxSpotColor') && (yvalues[yvallast] === this.miny || yvalues[yvallast] === this.maxy)) {
+						canvasWidth -= Math.ceil(spotRadius);
+					}
+				}
+
+				canvasHeight--;
+
+				if (options.get('normalRangeMin') !== undefined && !options.get('drawNormalOnTop')) {
+					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
+				}
+
+				path = [];
+				paths = [path];
+				last = next = null;
+				yvalcount = yvalues.length;
+				for (i = 0; i < yvalcount; i++) {
+					x = xvalues[i];
+					xnext = xvalues[i + 1];
+					y = yvalues[i];
+					xpos = canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex));
+					xposnext = i < yvalcount - 1 ? canvasLeft + Math.round((xnext - this.minx) * (canvasWidth / rangex)) : canvasWidth;
+					next = xpos + (xposnext - xpos) / 2;
+					regionMap[i] = [last || 0, next, i];
+					last = next;
+					if (y === null) {
+						if (i) {
+							if (yvalues[i - 1] !== null) {
+								path = [];
+								paths.push(path);
+							}
+							vertices.push(null);
+						}
+					} else {
+						if (y < this.miny) {
+							y = this.miny;
+						}
+						if (y > this.maxy) {
+							y = this.maxy;
+						}
+						if (!path.length) {
+							// previous value was null
+							path.push([xpos, canvasTop + canvasHeight]);
+						}
+						vertex = [xpos, canvasTop + Math.round(canvasHeight - canvasHeight * ((y - this.miny) / rangey))];
+						path.push(vertex);
+						vertices.push(vertex);
+					}
+				}
+
+				lineShapes = [];
+				fillShapes = [];
+				plen = paths.length;
+				for (i = 0; i < plen; i++) {
+					path = paths[i];
+					if (path.length) {
+						if (options.get('fillColor')) {
+							path.push([path[path.length - 1][0], canvasTop + canvasHeight]);
+							fillShapes.push(path.slice(0));
+							path.pop();
+						}
+						// if there's only a single point in this path, then we want to display it
+						// as a vertical line which means we keep path[0]  as is
+						if (path.length > 2) {
+							// else we want the first value
+							path[0] = [path[0][0], path[1][1]];
+						}
+						lineShapes.push(path);
+					}
+				}
+
+				// draw the fill first, then optionally the normal range, then the line on top of that
+				plen = fillShapes.length;
+				for (i = 0; i < plen; i++) {
+					target.drawShape(fillShapes[i], options.get('fillColor'), options.get('fillColor')).append();
+				}
+
+				if (options.get('normalRangeMin') !== undefined && options.get('drawNormalOnTop')) {
+					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
+				}
+
+				plen = lineShapes.length;
+				for (i = 0; i < plen; i++) {
+					target.drawShape(lineShapes[i], options.get('lineColor'), undefined, options.get('lineWidth')).append();
+				}
+
+				if (spotRadius && options.get('valueSpots')) {
+					valueSpots = options.get('valueSpots');
+					if (valueSpots.get === undefined) {
+						valueSpots = new RangeMap(valueSpots);
+					}
+					for (i = 0; i < yvalcount; i++) {
+						color = valueSpots.get(yvalues[i]);
+						if (color) {
+							target.drawCircle(canvasLeft + Math.round((xvalues[i] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[i] - this.miny) / rangey)), spotRadius, undefined, color).append();
+						}
+					}
+				}
+				if (spotRadius && options.get('spotColor') && yvalues[yvallast] !== null) {
+					target.drawCircle(canvasLeft + Math.round((xvalues[xvalues.length - 1] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[yvallast] - this.miny) / rangey)), spotRadius, undefined, options.get('spotColor')).append();
+				}
+				if (this.maxy !== this.minyorg) {
+					if (spotRadius && options.get('minSpotColor')) {
+						x = xvalues[$.inArray(this.minyorg, yvalues)];
+						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.minyorg - this.miny) / rangey)), spotRadius, undefined, options.get('minSpotColor')).append();
+					}
+					if (spotRadius && options.get('maxSpotColor')) {
+						x = xvalues[$.inArray(this.maxyorg, yvalues)];
+						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.maxyorg - this.miny) / rangey)), spotRadius, undefined, options.get('maxSpotColor')).append();
+					}
+				}
+
+				this.lastShapeId = target.getLastShapeId();
+				this.canvasTop = canvasTop;
+				target.render();
+			}
+		});
+
+		/**
+   * Bar charts
    */
-  sweetAlert.isVisible = function() {
-    var modal = getModal();
-    return isVisible(modal);
-  };
+		$.fn.sparkline.bar = bar = createClass($.fn.sparkline._base, barHighlightMixin, {
+			type: 'bar',
 
-  /*
-   * Global function for chaining sweetAlert modals
+			init: function init(el, values, options, width, height) {
+				var barWidth = parseInt(options.get('barWidth'), 10),
+				    barSpacing = parseInt(options.get('barSpacing'), 10),
+				    chartRangeMin = options.get('chartRangeMin'),
+				    chartRangeMax = options.get('chartRangeMax'),
+				    chartRangeClip = options.get('chartRangeClip'),
+				    stackMin = Infinity,
+				    stackMax = -Infinity,
+				    isStackString,
+				    groupMin,
+				    groupMax,
+				    stackRanges,
+				    numValues,
+				    i,
+				    vlen,
+				    range,
+				    zeroAxis,
+				    xaxisOffset,
+				    min,
+				    max,
+				    clipMin,
+				    clipMax,
+				    stacked,
+				    vlist,
+				    j,
+				    slen,
+				    svals,
+				    val,
+				    yoffset,
+				    yMaxCalc,
+				    canvasHeightEf;
+				bar._super.init.call(this, el, values, options, width, height);
+
+				// scan values to determine whether to stack bars
+				for (i = 0, vlen = values.length; i < vlen; i++) {
+					val = values[i];
+					isStackString = typeof val === 'string' && val.indexOf(':') > -1;
+					if (isStackString || $.isArray(val)) {
+						stacked = true;
+						if (isStackString) {
+							val = values[i] = normalizeValues(val.split(':'));
+						}
+						val = remove(val, null); // min/max will treat null as zero
+						groupMin = Math.min.apply(Math, val);
+						groupMax = Math.max.apply(Math, val);
+						if (groupMin < stackMin) {
+							stackMin = groupMin;
+						}
+						if (groupMax > stackMax) {
+							stackMax = groupMax;
+						}
+					}
+				}
+
+				this.stacked = stacked;
+				this.regionShapes = {};
+				this.barWidth = barWidth;
+				this.barSpacing = barSpacing;
+				this.totalBarWidth = barWidth + barSpacing;
+				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
+
+				this.initTarget();
+
+				if (chartRangeClip) {
+					clipMin = chartRangeMin === undefined ? -Infinity : chartRangeMin;
+					clipMax = chartRangeMax === undefined ? Infinity : chartRangeMax;
+				}
+
+				numValues = [];
+				stackRanges = stacked ? [] : numValues;
+				var stackTotals = [];
+				var stackRangesNeg = [];
+				for (i = 0, vlen = values.length; i < vlen; i++) {
+					if (stacked) {
+						vlist = values[i];
+						values[i] = svals = [];
+						stackTotals[i] = 0;
+						stackRanges[i] = stackRangesNeg[i] = 0;
+						for (j = 0, slen = vlist.length; j < slen; j++) {
+							val = svals[j] = chartRangeClip ? clipval(vlist[j], clipMin, clipMax) : vlist[j];
+							if (val !== null) {
+								if (val > 0) {
+									stackTotals[i] += val;
+								}
+								if (stackMin < 0 && stackMax > 0) {
+									if (val < 0) {
+										stackRangesNeg[i] += Math.abs(val);
+									} else {
+										stackRanges[i] += val;
+									}
+								} else {
+									stackRanges[i] += Math.abs(val - (val < 0 ? stackMax : stackMin));
+								}
+								numValues.push(val);
+							}
+						}
+					} else {
+						val = chartRangeClip ? clipval(values[i], clipMin, clipMax) : values[i];
+						val = values[i] = normalizeValue(val);
+						if (val !== null) {
+							numValues.push(val);
+						}
+					}
+				}
+				this.max = max = Math.max.apply(Math, numValues);
+				this.min = min = Math.min.apply(Math, numValues);
+				this.stackMax = stackMax = stacked ? Math.max.apply(Math, stackTotals) : max;
+				this.stackMin = stackMin = stacked ? Math.min.apply(Math, numValues) : min;
+
+				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < min)) {
+					min = options.get('chartRangeMin');
+				}
+				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > max)) {
+					max = options.get('chartRangeMax');
+				}
+
+				this.zeroAxis = zeroAxis = options.get('zeroAxis', true);
+				if (min <= 0 && max >= 0 && zeroAxis) {
+					xaxisOffset = 0;
+				} else if (zeroAxis == false) {
+					xaxisOffset = min;
+				} else if (min > 0) {
+					xaxisOffset = min;
+				} else {
+					xaxisOffset = max;
+				}
+				this.xaxisOffset = xaxisOffset;
+
+				range = stacked ? Math.max.apply(Math, stackRanges) + Math.max.apply(Math, stackRangesNeg) : max - min;
+
+				// as we plot zero/min values a single pixel line, we add a pixel to all other
+				// values - Reduce the effective canvas size to suit
+				this.canvasHeightEf = zeroAxis && min < 0 ? this.canvasHeight - 2 : this.canvasHeight - 1;
+
+				if (min < xaxisOffset) {
+					yMaxCalc = stacked && max >= 0 ? stackMax : max;
+					yoffset = (yMaxCalc - xaxisOffset) / range * this.canvasHeight;
+					if (yoffset !== Math.ceil(yoffset)) {
+						this.canvasHeightEf -= 2;
+						yoffset = Math.ceil(yoffset);
+					}
+				} else {
+					yoffset = this.canvasHeight;
+				}
+				this.yoffset = yoffset;
+
+				if ($.isArray(options.get('colorMap'))) {
+					this.colorMapByIndex = options.get('colorMap');
+					this.colorMapByValue = null;
+				} else {
+					this.colorMapByIndex = null;
+					this.colorMapByValue = options.get('colorMap');
+					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
+						this.colorMapByValue = new RangeMap(this.colorMapByValue);
+					}
+				}
+
+				this.range = range;
+			},
+
+			getRegion: function getRegion(el, x, y) {
+				var result = Math.floor(x / this.totalBarWidth);
+				return result < 0 || result >= this.values.length ? undefined : result;
+			},
+
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var currentRegion = this.currentRegion,
+				    values = ensureArray(this.values[currentRegion]),
+				    result = [],
+				    value,
+				    i;
+				for (i = values.length; i--;) {
+					value = values[i];
+					result.push({
+						isNull: value === null,
+						value: value,
+						color: this.calcColor(i, value, currentRegion),
+						offset: currentRegion
+					});
+				}
+				return result;
+			},
+
+			calcColor: function calcColor(stacknum, value, valuenum) {
+				var colorMapByIndex = this.colorMapByIndex,
+				    colorMapByValue = this.colorMapByValue,
+				    options = this.options,
+				    color,
+				    newColor;
+				if (this.stacked) {
+					color = options.get('stackedBarColor');
+				} else {
+					color = value < 0 ? options.get('negBarColor') : options.get('barColor');
+				}
+				if (value === 0 && options.get('zeroColor') !== undefined) {
+					color = options.get('zeroColor');
+				}
+				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
+					color = newColor;
+				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
+					color = colorMapByIndex[valuenum];
+				}
+				return $.isArray(color) ? color[stacknum % color.length] : color;
+			},
+
+			/**
+    * Render bar(s) for a region
+    */
+			renderRegion: function renderRegion(valuenum, highlight) {
+				var vals = this.values[valuenum],
+				    options = this.options,
+				    xaxisOffset = this.xaxisOffset,
+				    result = [],
+				    range = this.range,
+				    stacked = this.stacked,
+				    target = this.target,
+				    x = valuenum * this.totalBarWidth,
+				    canvasHeightEf = this.canvasHeightEf,
+				    yoffset = this.yoffset,
+				    y,
+				    height,
+				    color,
+				    isNull,
+				    yoffsetNeg,
+				    i,
+				    valcount,
+				    val,
+				    minPlotted,
+				    allMin;
+
+				vals = $.isArray(vals) ? vals : [vals];
+				valcount = vals.length;
+				val = vals[0];
+				isNull = all(null, vals);
+				allMin = all(xaxisOffset, vals, true);
+
+				if (isNull) {
+					if (options.get('nullColor')) {
+						color = highlight ? options.get('nullColor') : this.calcHighlightColor(options.get('nullColor'), options);
+						y = yoffset > 0 ? yoffset - 1 : yoffset;
+						return target.drawRect(x, y, this.barWidth - 1, 0, color, color);
+					} else {
+						return undefined;
+					}
+				}
+				yoffsetNeg = yoffset;
+				for (i = 0; i < valcount; i++) {
+					val = vals[i];
+
+					if (stacked && val === xaxisOffset) {
+						if (!allMin || minPlotted) {
+							continue;
+						}
+						minPlotted = true;
+					}
+
+					if (range > 0) {
+						height = Math.floor(canvasHeightEf * (Math.abs(val - xaxisOffset) / range)) + 1;
+					} else {
+						height = 1;
+					}
+					if (val < xaxisOffset || val === xaxisOffset && yoffset === 0) {
+						y = yoffsetNeg;
+						yoffsetNeg += height;
+					} else {
+						y = yoffset - height;
+						yoffset -= height;
+					}
+					color = this.calcColor(i, val, valuenum);
+					if (highlight) {
+						color = this.calcHighlightColor(color, options);
+					}
+					result.push(target.drawRect(x, y, this.barWidth - 1, height - 1, color, color));
+				}
+				if (result.length === 1) {
+					return result[0];
+				}
+				return result;
+			}
+		});
+
+		/**
+   * Tristate charts
    */
-  sweetAlert.queue = function(steps) {
-    queue = steps;
-    var modal = getModal() || sweetAlert.init();
-    var resetQueue = function() {
-      queue = [];
-      modal.removeAttribute('data-queue-step');
-    };
-    return new Promise(function(resolve, reject) {
-      (function step(i, callback) {
-        if (i < queue.length) {
-          modal.setAttribute('data-queue-step', i);
+		$.fn.sparkline.tristate = tristate = createClass($.fn.sparkline._base, barHighlightMixin, {
+			type: 'tristate',
 
-          sweetAlert(queue[i]).then(function() {
-            step(i+1, callback);
-          }, function(dismiss) {
-            resetQueue();
-            reject(dismiss);
-          });
-        } else {
-          resetQueue();
-          resolve();
-        }
-      })(0);
-    });
-  };
+			init: function init(el, values, options, width, height) {
+				var barWidth = parseInt(options.get('barWidth'), 10),
+				    barSpacing = parseInt(options.get('barSpacing'), 10);
+				tristate._super.init.call(this, el, values, options, width, height);
 
-  /*
-   * Global function for getting the index of current modal in queue
+				this.regionShapes = {};
+				this.barWidth = barWidth;
+				this.barSpacing = barSpacing;
+				this.totalBarWidth = barWidth + barSpacing;
+				this.values = $.map(values, Number);
+				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
+
+				if ($.isArray(options.get('colorMap'))) {
+					this.colorMapByIndex = options.get('colorMap');
+					this.colorMapByValue = null;
+				} else {
+					this.colorMapByIndex = null;
+					this.colorMapByValue = options.get('colorMap');
+					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
+						this.colorMapByValue = new RangeMap(this.colorMapByValue);
+					}
+				}
+				this.initTarget();
+			},
+
+			getRegion: function getRegion(el, x, y) {
+				return Math.floor(x / this.totalBarWidth);
+			},
+
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var currentRegion = this.currentRegion;
+				return {
+					isNull: this.values[currentRegion] === undefined,
+					value: this.values[currentRegion],
+					color: this.calcColor(this.values[currentRegion], currentRegion),
+					offset: currentRegion
+				};
+			},
+
+			calcColor: function calcColor(value, valuenum) {
+				var values = this.values,
+				    options = this.options,
+				    colorMapByIndex = this.colorMapByIndex,
+				    colorMapByValue = this.colorMapByValue,
+				    color,
+				    newColor;
+
+				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
+					color = newColor;
+				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
+					color = colorMapByIndex[valuenum];
+				} else if (values[valuenum] < 0) {
+					color = options.get('negBarColor');
+				} else if (values[valuenum] > 0) {
+					color = options.get('posBarColor');
+				} else {
+					color = options.get('zeroBarColor');
+				}
+				return color;
+			},
+
+			renderRegion: function renderRegion(valuenum, highlight) {
+				var values = this.values,
+				    options = this.options,
+				    target = this.target,
+				    canvasHeight,
+				    height,
+				    halfHeight,
+				    x,
+				    y,
+				    color;
+
+				canvasHeight = target.pixelHeight;
+				halfHeight = Math.round(canvasHeight / 2);
+
+				x = valuenum * this.totalBarWidth;
+				if (values[valuenum] < 0) {
+					y = halfHeight;
+					height = halfHeight - 1;
+				} else if (values[valuenum] > 0) {
+					y = 0;
+					height = halfHeight - 1;
+				} else {
+					y = halfHeight - 1;
+					height = 2;
+				}
+				color = this.calcColor(values[valuenum], valuenum);
+				if (color === null) {
+					return;
+				}
+				if (highlight) {
+					color = this.calcHighlightColor(color, options);
+				}
+				return target.drawRect(x, y, this.barWidth - 1, height - 1, color, color);
+			}
+		});
+
+		/**
+   * Discrete charts
    */
-  sweetAlert.getQueueStep = function() {
-    return getModal().getAttribute('data-queue-step');
-  };
+		$.fn.sparkline.discrete = discrete = createClass($.fn.sparkline._base, barHighlightMixin, {
+			type: 'discrete',
 
-  /*
-   * Global function for inserting a modal to the queue
+			init: function init(el, values, options, width, height) {
+				discrete._super.init.call(this, el, values, options, width, height);
+
+				this.regionShapes = {};
+				this.values = values = $.map(values, Number);
+				this.min = Math.min.apply(Math, values);
+				this.max = Math.max.apply(Math, values);
+				this.range = this.max - this.min;
+				this.width = width = options.get('width') === 'auto' ? values.length * 2 : this.width;
+				this.interval = Math.floor(width / values.length);
+				this.itemWidth = width / values.length;
+				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.min)) {
+					this.min = options.get('chartRangeMin');
+				}
+				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.max)) {
+					this.max = options.get('chartRangeMax');
+				}
+				this.initTarget();
+				if (this.target) {
+					this.lineHeight = options.get('lineHeight') === 'auto' ? Math.round(this.canvasHeight * 0.3) : options.get('lineHeight');
+				}
+			},
+
+			getRegion: function getRegion(el, x, y) {
+				return Math.floor(x / this.itemWidth);
+			},
+
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var currentRegion = this.currentRegion;
+				return {
+					isNull: this.values[currentRegion] === undefined,
+					value: this.values[currentRegion],
+					offset: currentRegion
+				};
+			},
+
+			renderRegion: function renderRegion(valuenum, highlight) {
+				var values = this.values,
+				    options = this.options,
+				    min = this.min,
+				    max = this.max,
+				    range = this.range,
+				    interval = this.interval,
+				    target = this.target,
+				    canvasHeight = this.canvasHeight,
+				    lineHeight = this.lineHeight,
+				    pheight = canvasHeight - lineHeight,
+				    ytop,
+				    val,
+				    color,
+				    x;
+
+				val = clipval(values[valuenum], min, max);
+				x = valuenum * interval;
+				ytop = Math.round(pheight - pheight * ((val - min) / range));
+				color = options.get('thresholdColor') && val < options.get('thresholdValue') ? options.get('thresholdColor') : options.get('lineColor');
+				if (highlight) {
+					color = this.calcHighlightColor(color, options);
+				}
+				return target.drawLine(x, ytop, x, ytop + lineHeight, color);
+			}
+		});
+
+		/**
+   * Bullet charts
    */
-  sweetAlert.insertQueueStep = function(step, index) {
-    if (index && index < queue.length) {
-      return queue.splice(index, 0, step);
-    }
-    return queue.push(step);
-  };
+		$.fn.sparkline.bullet = bullet = createClass($.fn.sparkline._base, {
+			type: 'bullet',
 
-  /*
-   * Global function for deleting a modal from the queue
+			init: function init(el, values, options, width, height) {
+				var min, max, vals;
+				bullet._super.init.call(this, el, values, options, width, height);
+
+				// values: target, performance, range1, range2, range3
+				this.values = values = normalizeValues(values);
+				// target or performance could be null
+				vals = values.slice();
+				vals[0] = vals[0] === null ? vals[2] : vals[0];
+				vals[1] = values[1] === null ? vals[2] : vals[1];
+				min = Math.min.apply(Math, values);
+				max = Math.max.apply(Math, values);
+				if (options.get('base') === undefined) {
+					min = min < 0 ? min : 0;
+				} else {
+					min = options.get('base');
+				}
+				this.min = min;
+				this.max = max;
+				this.range = max - min;
+				this.shapes = {};
+				this.valueShapes = {};
+				this.regiondata = {};
+				this.width = width = options.get('width') === 'auto' ? '4.0em' : width;
+				this.target = this.$el.simpledraw(width, height, options.get('composite'));
+				if (!values.length) {
+					this.disabled = true;
+				}
+				this.initTarget();
+			},
+
+			getRegion: function getRegion(el, x, y) {
+				var shapeid = this.target.getShapeAt(el, x, y);
+				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
+			},
+
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var currentRegion = this.currentRegion;
+				return {
+					fieldkey: currentRegion.substr(0, 1),
+					value: this.values[currentRegion.substr(1)],
+					region: currentRegion
+				};
+			},
+
+			changeHighlight: function changeHighlight(highlight) {
+				var currentRegion = this.currentRegion,
+				    shapeid = this.valueShapes[currentRegion],
+				    shape;
+				delete this.shapes[shapeid];
+				switch (currentRegion.substr(0, 1)) {
+					case 'r':
+						shape = this.renderRange(currentRegion.substr(1), highlight);
+						break;
+					case 'p':
+						shape = this.renderPerformance(highlight);
+						break;
+					case 't':
+						shape = this.renderTarget(highlight);
+						break;
+				}
+				this.valueShapes[currentRegion] = shape.id;
+				this.shapes[shape.id] = currentRegion;
+				this.target.replaceWithShape(shapeid, shape);
+			},
+
+			renderRange: function renderRange(rn, highlight) {
+				var rangeval = this.values[rn],
+				    rangewidth = Math.round(this.canvasWidth * ((rangeval - this.min) / this.range)),
+				    color = this.options.get('rangeColors')[rn - 2];
+				if (highlight) {
+					color = this.calcHighlightColor(color, this.options);
+				}
+				return this.target.drawRect(0, 0, rangewidth - 1, this.canvasHeight - 1, color, color);
+			},
+
+			renderPerformance: function renderPerformance(highlight) {
+				var perfval = this.values[1],
+				    perfwidth = Math.round(this.canvasWidth * ((perfval - this.min) / this.range)),
+				    color = this.options.get('performanceColor');
+				if (highlight) {
+					color = this.calcHighlightColor(color, this.options);
+				}
+				return this.target.drawRect(0, Math.round(this.canvasHeight * 0.3), perfwidth - 1, Math.round(this.canvasHeight * 0.4) - 1, color, color);
+			},
+
+			renderTarget: function renderTarget(highlight) {
+				var targetval = this.values[0],
+				    x = Math.round(this.canvasWidth * ((targetval - this.min) / this.range) - this.options.get('targetWidth') / 2),
+				    targettop = Math.round(this.canvasHeight * 0.10),
+				    targetheight = this.canvasHeight - targettop * 2,
+				    color = this.options.get('targetColor');
+				if (highlight) {
+					color = this.calcHighlightColor(color, this.options);
+				}
+				return this.target.drawRect(x, targettop, this.options.get('targetWidth') - 1, targetheight - 1, color, color);
+			},
+
+			render: function render() {
+				var vlen = this.values.length,
+				    target = this.target,
+				    i,
+				    shape;
+				if (!bullet._super.render.call(this)) {
+					return;
+				}
+				for (i = 2; i < vlen; i++) {
+					shape = this.renderRange(i).append();
+					this.shapes[shape.id] = 'r' + i;
+					this.valueShapes['r' + i] = shape.id;
+				}
+				if (this.values[1] !== null) {
+					shape = this.renderPerformance().append();
+					this.shapes[shape.id] = 'p1';
+					this.valueShapes.p1 = shape.id;
+				}
+				if (this.values[0] !== null) {
+					shape = this.renderTarget().append();
+					this.shapes[shape.id] = 't0';
+					this.valueShapes.t0 = shape.id;
+				}
+				target.render();
+			}
+		});
+
+		/**
+   * Pie charts
    */
-  sweetAlert.deleteQueueStep = function(index) {
-    if (typeof queue[index] !== 'undefined') {
-      queue.splice(index, 1);
-    }
-  };
+		$.fn.sparkline.pie = pie = createClass($.fn.sparkline._base, {
+			type: 'pie',
 
-  /*
-   * Global function to close sweetAlert
+			init: function init(el, values, options, width, height) {
+				var total = 0,
+				    i;
+
+				pie._super.init.call(this, el, values, options, width, height);
+
+				this.shapes = {}; // map shape ids to value offsets
+				this.valueShapes = {}; // maps value offsets to shape ids
+				this.values = values = $.map(values, Number);
+
+				if (options.get('width') === 'auto') {
+					this.width = this.height;
+				}
+
+				if (values.length > 0) {
+					for (i = values.length; i--;) {
+						total += values[i];
+					}
+				}
+				this.total = total;
+				this.initTarget();
+				this.radius = Math.floor(Math.min(this.canvasWidth, this.canvasHeight) / 2);
+			},
+
+			getRegion: function getRegion(el, x, y) {
+				var shapeid = this.target.getShapeAt(el, x, y);
+				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
+			},
+
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var currentRegion = this.currentRegion;
+				return {
+					isNull: this.values[currentRegion] === undefined,
+					value: this.values[currentRegion],
+					percent: this.values[currentRegion] / this.total * 100,
+					color: this.options.get('sliceColors')[currentRegion % this.options.get('sliceColors').length],
+					offset: currentRegion
+				};
+			},
+
+			changeHighlight: function changeHighlight(highlight) {
+				var currentRegion = this.currentRegion,
+				    newslice = this.renderSlice(currentRegion, highlight),
+				    shapeid = this.valueShapes[currentRegion];
+				delete this.shapes[shapeid];
+				this.target.replaceWithShape(shapeid, newslice);
+				this.valueShapes[currentRegion] = newslice.id;
+				this.shapes[newslice.id] = currentRegion;
+			},
+
+			renderSlice: function renderSlice(valuenum, highlight) {
+				var target = this.target,
+				    options = this.options,
+				    radius = this.radius,
+				    borderWidth = options.get('borderWidth'),
+				    offset = options.get('offset'),
+				    circle = 2 * Math.PI,
+				    values = this.values,
+				    total = this.total,
+				    next = offset ? 2 * Math.PI * (offset / 360) : 0,
+				    start,
+				    end,
+				    i,
+				    vlen,
+				    color;
+
+				vlen = values.length;
+				for (i = 0; i < vlen; i++) {
+					start = next;
+					end = next;
+					if (total > 0) {
+						// avoid divide by zero
+						end = next + circle * (values[i] / total);
+					}
+					if (valuenum === i) {
+						color = options.get('sliceColors')[i % options.get('sliceColors').length];
+						if (highlight) {
+							color = this.calcHighlightColor(color, options);
+						}
+
+						return target.drawPieSlice(radius, radius, radius - borderWidth, start, end, undefined, color);
+					}
+					next = end;
+				}
+			},
+
+			render: function render() {
+				var target = this.target,
+				    values = this.values,
+				    options = this.options,
+				    radius = this.radius,
+				    borderWidth = options.get('borderWidth'),
+				    shape,
+				    i;
+
+				if (!pie._super.render.call(this)) {
+					return;
+				}
+				if (borderWidth) {
+					target.drawCircle(radius, radius, Math.floor(radius - borderWidth / 2), options.get('borderColor'), undefined, borderWidth).append();
+				}
+				for (i = values.length; i--;) {
+					if (values[i]) {
+						// don't render zero values
+						shape = this.renderSlice(i).append();
+						this.valueShapes[i] = shape.id; // store just the shapeid
+						this.shapes[shape.id] = i;
+					}
+				}
+				target.render();
+			}
+		});
+
+		/**
+   * Box plots
    */
-  sweetAlert.close = sweetAlert.closeModal = function(onComplete) {
-    var modal = getModal();
-    removeClass(modal, 'show-swal2');
-    addClass(modal, 'hide-swal2');
+		$.fn.sparkline.box = box = createClass($.fn.sparkline._base, {
+			type: 'box',
 
-    // Reset icon animations
-    var $successIcon = modal.querySelector('.' + swalClasses.icon + '.' + iconTypes.success);
-    removeClass($successIcon, 'animate');
-    removeClass($successIcon.querySelector('.tip'), 'animate-success-tip');
-    removeClass($successIcon.querySelector('.long'), 'animate-success-long');
+			init: function init(el, values, options, width, height) {
+				box._super.init.call(this, el, values, options, width, height);
+				this.values = $.map(values, Number);
+				this.width = options.get('width') === 'auto' ? '4.0em' : width;
+				this.initTarget();
+				if (!this.values.length) {
+					this.disabled = 1;
+				}
+			},
 
-    var $errorIcon = modal.querySelector('.' + swalClasses.icon + '.' + iconTypes.error);
-    removeClass($errorIcon, 'animate-error-icon');
-    removeClass($errorIcon.querySelector('.x-mark'), 'animate-x-mark');
+			/**
+    * Simulate a single region
+    */
+			getRegion: function getRegion() {
+				return 1;
+			},
 
-    var $warningIcon = modal.querySelector('.' + swalClasses.icon + '.' + iconTypes.warning);
-    removeClass($warningIcon, 'pulse-warning');
+			getCurrentRegionFields: function getCurrentRegionFields() {
+				var result = [{ field: 'lq', value: this.quartiles[0] }, { field: 'med', value: this.quartiles[1] }, { field: 'uq', value: this.quartiles[2] }];
+				if (this.loutlier !== undefined) {
+					result.push({ field: 'lo', value: this.loutlier });
+				}
+				if (this.routlier !== undefined) {
+					result.push({ field: 'ro', value: this.routlier });
+				}
+				if (this.lwhisker !== undefined) {
+					result.push({ field: 'lw', value: this.lwhisker });
+				}
+				if (this.rwhisker !== undefined) {
+					result.push({ field: 'rw', value: this.rwhisker });
+				}
+				return result;
+			},
 
-    resetPrevState();
+			render: function render() {
+				var target = this.target,
+				    values = this.values,
+				    vlen = values.length,
+				    options = this.options,
+				    canvasWidth = this.canvasWidth,
+				    canvasHeight = this.canvasHeight,
+				    minValue = options.get('chartRangeMin') === undefined ? Math.min.apply(Math, values) : options.get('chartRangeMin'),
+				    maxValue = options.get('chartRangeMax') === undefined ? Math.max.apply(Math, values) : options.get('chartRangeMax'),
+				    canvasLeft = 0,
+				    lwhisker,
+				    loutlier,
+				    iqr,
+				    q1,
+				    q2,
+				    q3,
+				    rwhisker,
+				    routlier,
+				    i,
+				    size,
+				    unitSize;
 
-    // If animation is supported, animate
-    if (animationEndEvent && !hasClass(modal, 'no-animation')) {
-      modal.addEventListener(animationEndEvent, function swalCloseEventFinished() {
-        modal.removeEventListener(animationEndEvent, swalCloseEventFinished);
-        if (hasClass(modal, 'hide-swal2')) {
-          hide(modal);
-          removeClass(sweetContainer, 'in');
-          removeClass(document.body, swalClasses.in);
-          undoScrollbar();
-        }
-      });
-    } else {
-      // Otherwise, hide immediately
-      hide(modal);
-      removeClass(sweetContainer, 'in');
-      removeClass(document.body, swalClasses.in);
-      undoScrollbar();
-    }
-    if (onComplete !== null && typeof onComplete === 'function') {
-      onComplete.call(this, modal);
-    }
-  };
+				if (!box._super.render.call(this)) {
+					return;
+				}
 
-  /*
-   * Global function to click 'Confirm' button
-   */
-  sweetAlert.clickConfirm = function() {
-    getConfirmButton().click();
-  };
+				if (options.get('raw')) {
+					if (options.get('showOutliers') && values.length > 5) {
+						loutlier = values[0];
+						lwhisker = values[1];
+						q1 = values[2];
+						q2 = values[3];
+						q3 = values[4];
+						rwhisker = values[5];
+						routlier = values[6];
+					} else {
+						lwhisker = values[0];
+						q1 = values[1];
+						q2 = values[2];
+						q3 = values[3];
+						rwhisker = values[4];
+					}
+				} else {
+					values.sort(function (a, b) {
+						return a - b;
+					});
+					q1 = quartile(values, 1);
+					q2 = quartile(values, 2);
+					q3 = quartile(values, 3);
+					iqr = q3 - q1;
+					if (options.get('showOutliers')) {
+						lwhisker = rwhisker = undefined;
+						for (i = 0; i < vlen; i++) {
+							if (lwhisker === undefined && values[i] > q1 - iqr * options.get('outlierIQR')) {
+								lwhisker = values[i];
+							}
+							if (values[i] < q3 + iqr * options.get('outlierIQR')) {
+								rwhisker = values[i];
+							}
+						}
+						loutlier = values[0];
+						routlier = values[vlen - 1];
+					} else {
+						lwhisker = values[0];
+						rwhisker = values[vlen - 1];
+					}
+				}
+				this.quartiles = [q1, q2, q3];
+				this.lwhisker = lwhisker;
+				this.rwhisker = rwhisker;
+				this.loutlier = loutlier;
+				this.routlier = routlier;
 
-  /*
-   * Global function to click 'Cancel' button
-   */
-  sweetAlert.clickCancel = function() {
-    getCancelButton().click();
-  };
+				unitSize = canvasWidth / (maxValue - minValue + 1);
+				if (options.get('showOutliers')) {
+					canvasLeft = Math.ceil(options.get('spotRadius'));
+					canvasWidth -= 2 * Math.ceil(options.get('spotRadius'));
+					unitSize = canvasWidth / (maxValue - minValue + 1);
+					if (loutlier < lwhisker) {
+						target.drawCircle((loutlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
+					}
+					if (routlier > rwhisker) {
+						target.drawCircle((routlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
+					}
+				}
 
-  /*
-   * Add modal + overlay to DOM
-   */
-  sweetAlert.init = function() {
-    if (typeof document === 'undefined') {
-      console.error('SweetAlert2 requires document to initialize');
-      return;
-    } else if (document.getElementsByClassName(swalClasses.container).length) {
-      return;
-    }
+				// box
+				target.drawRect(Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q3 - q1) * unitSize), Math.round(canvasHeight * 0.8), options.get('boxLineColor'), options.get('boxFillColor')).append();
+				// left whisker
+				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
+				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
+				// right whisker
+				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q3 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
+				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
+				// median line
+				target.drawLine(Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.9), options.get('medianColor')).append();
+				if (options.get('target')) {
+					size = Math.ceil(options.get('spotRadius'));
+					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 - size), Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 + size), options.get('targetColor')).append();
+					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft - size), Math.round(canvasHeight / 2), Math.round((options.get('target') - minValue) * unitSize + canvasLeft + size), Math.round(canvasHeight / 2), options.get('targetColor')).append();
+				}
+				target.render();
+			}
+		});
 
-    document.body.appendChild(sweetContainer);
+		// Setup a very simple "virtual canvas" to make drawing the few shapes we need easier
+		// This is accessible as $(foo).simpledraw()
 
-    var modal = getModal();
-    var input = getChildByClass(modal, swalClasses.input);
-    var file = getChildByClass(modal, swalClasses.file);
-    var range = modal.querySelector('.' + swalClasses.range + ' input');
-    var select = getChildByClass(modal, swalClasses.select);
-    var checkbox = modal.querySelector('.' + swalClasses.checkbox + ' input');
-    var textarea = getChildByClass(modal, swalClasses.textarea);
+		VShape = createClass({
+			init: function init(target, id, type, args) {
+				this.target = target;
+				this.id = id;
+				this.type = type;
+				this.args = args;
+			},
+			append: function append() {
+				this.target.appendShape(this);
+				return this;
+			}
+		});
 
-    input.oninput = function() {
-      sweetAlert.resetValidationError();
-    };
+		VCanvas_base = createClass({
+			_pxregex: /(\d+)(px)?\s*$/i,
 
-    input.onkeyup = function(event) {
-      event.stopPropagation();
-      if (event.keyCode === 13) {
-        sweetAlert.clickConfirm();
-      }
-    };
+			init: function init(width, height, target) {
+				if (!width) {
+					return;
+				}
+				this.width = width;
+				this.height = height;
+				this.target = target;
+				this.lastShapeId = null;
+				if (target[0]) {
+					target = target[0];
+				}
+				$.data(target, '_jqs_vcanvas', this);
+			},
 
-    file.onchange = function() {
-      sweetAlert.resetValidationError();
-    };
+			drawLine: function drawLine(x1, y1, x2, y2, lineColor, lineWidth) {
+				return this.drawShape([[x1, y1], [x2, y2]], lineColor, lineWidth);
+			},
 
-    range.oninput = function() {
-      sweetAlert.resetValidationError();
-      range.previousSibling.value = range.value;
-    };
+			drawShape: function drawShape(path, lineColor, fillColor, lineWidth) {
+				return this._genShape('Shape', [path, lineColor, fillColor, lineWidth]);
+			},
 
-    range.onchange = function() {
-      sweetAlert.resetValidationError();
-      range.previousSibling.value = range.value;
-    };
+			drawCircle: function drawCircle(x, y, radius, lineColor, fillColor, lineWidth) {
+				return this._genShape('Circle', [x, y, radius, lineColor, fillColor, lineWidth]);
+			},
 
-    select.onchange = function() {
-      sweetAlert.resetValidationError();
-    };
+			drawPieSlice: function drawPieSlice(x, y, radius, startAngle, endAngle, lineColor, fillColor) {
+				return this._genShape('PieSlice', [x, y, radius, startAngle, endAngle, lineColor, fillColor]);
+			},
 
-    checkbox.onchange = function() {
-      sweetAlert.resetValidationError();
-    };
+			drawRect: function drawRect(x, y, width, height, lineColor, fillColor) {
+				return this._genShape('Rect', [x, y, width, height, lineColor, fillColor]);
+			},
 
-    textarea.oninput = function() {
-      sweetAlert.resetValidationError();
-    };
+			getElement: function getElement() {
+				return this.canvas;
+			},
 
-    return modal;
-  };
+			/**
+    * Return the most recently inserted shape id
+    */
+			getLastShapeId: function getLastShapeId() {
+				return this.lastShapeId;
+			},
 
-  /**
-   * Set default params for each popup
-   * @param {Object} userParams
-   */
-  sweetAlert.setDefaults = function(userParams) {
-    if (!userParams) {
-      throw new Error('userParams is required');
-    }
-    if (typeof userParams !== 'object') {
-      throw new Error('userParams has to be a object');
-    }
+			/**
+    * Clear and reset the canvas
+    */
+			reset: function reset() {
+				alert('reset not implemented');
+			},
 
-    extend(modalParams, userParams);
-  };
+			_insert: function _insert(el, target) {
+				$(target).html(el);
+			},
 
-  /**
-   * Reset default params for each popup
-   */
-  sweetAlert.resetDefaults = function() {
-    modalParams = extend({}, defaultParams);
-  };
+			/**
+    * Calculate the pixel dimensions of the canvas
+    */
+			_calculatePixelDims: function _calculatePixelDims(width, height, canvas) {
+				// XXX This should probably be a configurable option
+				var match;
+				match = this._pxregex.exec(height);
+				if (match) {
+					this.pixelHeight = match[1];
+				} else {
+					this.pixelHeight = $(canvas).height();
+				}
+				match = this._pxregex.exec(width);
+				if (match) {
+					this.pixelWidth = match[1];
+				} else {
+					this.pixelWidth = $(canvas).width();
+				}
+			},
 
-  sweetAlert.version = '5.0.7';
+			/**
+    * Generate a shape object and id for later rendering
+    */
+			_genShape: function _genShape(shapetype, shapeargs) {
+				var id = shapeCount++;
+				shapeargs.unshift(id);
+				return new VShape(this, id, shapetype, shapeargs);
+			},
 
-  window.sweetAlert = window.swal = sweetAlert;
+			/**
+    * Add a shape to the end of the render queue
+    */
+			appendShape: function appendShape(shape) {
+				alert('appendShape not implemented');
+			},
 
-  /*
-  * If library is injected after page has loaded
-  */
-  (function() {
-    if (document.readyState === 'complete' || document.readyState === 'interactive' && document.body) {
-      sweetAlert.init();
-    } else {
-      document.addEventListener('DOMContentLoaded', function onDomContentLoaded() {
-        document.removeEventListener('DOMContentLoaded', onDomContentLoaded, false);
-        sweetAlert.init();
-      }, false);
-    }
-  })();
+			/**
+    * Replace one shape with another
+    */
+			replaceWithShape: function replaceWithShape(shapeid, shape) {
+				alert('replaceWithShape not implemented');
+			},
 
-  if (typeof Promise === 'function') {
-    Promise.prototype.done = Promise.prototype.done || function() {
-      return this.catch(function() {
-        // Catch promise rejections silently.
-        // https://github.com/limonte/sweetalert2/issues/177
-      });
-    };
-  } else {
-    console.warn('SweetAlert2: Please inlude Promise polyfill BEFORE including sweetalert2.js if IE10+ support needed.');
-  }
+			/**
+    * Insert one shape after another in the render queue
+    */
+			insertAfterShape: function insertAfterShape(shapeid, shape) {
+				alert('insertAfterShape not implemented');
+			},
 
-  return sweetAlert;
+			/**
+    * Remove a shape from the queue
+    */
+			removeShapeId: function removeShapeId(shapeid) {
+				alert('removeShapeId not implemented');
+			},
 
-}));
+			/**
+    * Find a shape at the specified x/y co-ordinates
+    */
+			getShapeAt: function getShapeAt(el, x, y) {
+				alert('getShapeAt not implemented');
+			},
+
+			/**
+    * Render all queued shapes onto the canvas
+    */
+			render: function render() {
+				alert('render not implemented');
+			}
+		});
+
+		VCanvas_canvas = createClass(VCanvas_base, {
+			init: function init(width, height, target, interact) {
+				VCanvas_canvas._super.init.call(this, width, height, target);
+				this.canvas = document.createElement('canvas');
+				if (target[0]) {
+					target = target[0];
+				}
+				$.data(target, '_jqs_vcanvas', this);
+				$(this.canvas).css({ display: 'inline-block', width: width, height: height, verticalAlign: 'top' });
+				this._insert(this.canvas, target);
+				this._calculatePixelDims(width, height, this.canvas);
+				this.canvas.width = this.pixelWidth;
+				this.canvas.height = this.pixelHeight;
+				this.interact = interact;
+				this.shapes = {};
+				this.shapeseq = [];
+				this.currentTargetShapeId = undefined;
+				$(this.canvas).css({ width: this.pixelWidth, height: this.pixelHeight });
+			},
+
+			_getContext: function _getContext(lineColor, fillColor, lineWidth) {
+				var context = this.canvas.getContext('2d');
+				if (lineColor !== undefined) {
+					context.strokeStyle = lineColor;
+				}
+				context.lineWidth = lineWidth === undefined ? 1 : lineWidth;
+				if (fillColor !== undefined) {
+					context.fillStyle = fillColor;
+				}
+				return context;
+			},
+
+			reset: function reset() {
+				var context = this._getContext();
+				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
+				this.shapes = {};
+				this.shapeseq = [];
+				this.currentTargetShapeId = undefined;
+			},
+
+			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
+				var context = this._getContext(lineColor, fillColor, lineWidth),
+				    i,
+				    plen;
+				context.beginPath();
+				context.moveTo(path[0][0] + 0.5, path[0][1] + 0.5);
+				for (i = 1, plen = path.length; i < plen; i++) {
+					context.lineTo(path[i][0] + 0.5, path[i][1] + 0.5); // the 0.5 offset gives us crisp pixel-width lines
+				}
+				if (lineColor !== undefined) {
+					context.stroke();
+				}
+				if (fillColor !== undefined) {
+					context.fill();
+				}
+				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
+					this.currentTargetShapeId = shapeid;
+				}
+			},
+
+			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
+				var context = this._getContext(lineColor, fillColor, lineWidth);
+				context.beginPath();
+				context.arc(x, y, radius, 0, 2 * Math.PI, false);
+				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
+					this.currentTargetShapeId = shapeid;
+				}
+				if (lineColor !== undefined) {
+					context.stroke();
+				}
+				if (fillColor !== undefined) {
+					context.fill();
+				}
+			},
+
+			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
+				var context = this._getContext(lineColor, fillColor);
+				context.beginPath();
+				context.moveTo(x, y);
+				context.arc(x, y, radius, startAngle, endAngle, false);
+				context.lineTo(x, y);
+				context.closePath();
+				if (lineColor !== undefined) {
+					context.stroke();
+				}
+				if (fillColor) {
+					context.fill();
+				}
+				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
+					this.currentTargetShapeId = shapeid;
+				}
+			},
+
+			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
+				return this._drawShape(shapeid, [[x, y], [x + width, y], [x + width, y + height], [x, y + height], [x, y]], lineColor, fillColor);
+			},
+
+			appendShape: function appendShape(shape) {
+				this.shapes[shape.id] = shape;
+				this.shapeseq.push(shape.id);
+				this.lastShapeId = shape.id;
+				return shape.id;
+			},
+
+			replaceWithShape: function replaceWithShape(shapeid, shape) {
+				var shapeseq = this.shapeseq,
+				    i;
+				this.shapes[shape.id] = shape;
+				for (i = shapeseq.length; i--;) {
+					if (shapeseq[i] == shapeid) {
+						shapeseq[i] = shape.id;
+					}
+				}
+				delete this.shapes[shapeid];
+			},
+
+			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
+				var shapeseq = this.shapeseq,
+				    shapemap = {},
+				    sid,
+				    i,
+				    first;
+
+				for (i = shapeids.length; i--;) {
+					shapemap[shapeids[i]] = true;
+				}
+				for (i = shapeseq.length; i--;) {
+					sid = shapeseq[i];
+					if (shapemap[sid]) {
+						shapeseq.splice(i, 1);
+						delete this.shapes[sid];
+						first = i;
+					}
+				}
+				for (i = shapes.length; i--;) {
+					shapeseq.splice(first, 0, shapes[i].id);
+					this.shapes[shapes[i].id] = shapes[i];
+				}
+			},
+
+			insertAfterShape: function insertAfterShape(shapeid, shape) {
+				var shapeseq = this.shapeseq,
+				    i;
+				for (i = shapeseq.length; i--;) {
+					if (shapeseq[i] === shapeid) {
+						shapeseq.splice(i + 1, 0, shape.id);
+						this.shapes[shape.id] = shape;
+						return;
+					}
+				}
+			},
+
+			removeShapeId: function removeShapeId(shapeid) {
+				var shapeseq = this.shapeseq,
+				    i;
+				for (i = shapeseq.length; i--;) {
+					if (shapeseq[i] === shapeid) {
+						shapeseq.splice(i, 1);
+						break;
+					}
+				}
+				delete this.shapes[shapeid];
+			},
+
+			getShapeAt: function getShapeAt(el, x, y) {
+				this.targetX = x;
+				this.targetY = y;
+				this.render();
+				return this.currentTargetShapeId;
+			},
+
+			render: function render() {
+				var shapeseq = this.shapeseq,
+				    shapes = this.shapes,
+				    shapeCount = shapeseq.length,
+				    context = this._getContext(),
+				    shapeid,
+				    shape,
+				    i;
+				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
+				for (i = 0; i < shapeCount; i++) {
+					shapeid = shapeseq[i];
+					shape = shapes[shapeid];
+					this['_draw' + shape.type].apply(this, shape.args);
+				}
+				if (!this.interact) {
+					// not interactive so no need to keep the shapes array
+					this.shapes = {};
+					this.shapeseq = [];
+				}
+			}
+
+		});
+
+		VCanvas_vml = createClass(VCanvas_base, {
+			init: function init(width, height, target) {
+				var groupel;
+				VCanvas_vml._super.init.call(this, width, height, target);
+				if (target[0]) {
+					target = target[0];
+				}
+				$.data(target, '_jqs_vcanvas', this);
+				this.canvas = document.createElement('span');
+				$(this.canvas).css({ display: 'inline-block', position: 'relative', overflow: 'hidden', width: width, height: height, margin: '0px', padding: '0px', verticalAlign: 'top' });
+				this._insert(this.canvas, target);
+				this._calculatePixelDims(width, height, this.canvas);
+				this.canvas.width = this.pixelWidth;
+				this.canvas.height = this.pixelHeight;
+				groupel = '<v:group coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '"' + ' style="position:absolute;top:0;left:0;width:' + this.pixelWidth + 'px;height=' + this.pixelHeight + 'px;"></v:group>';
+				this.canvas.insertAdjacentHTML('beforeEnd', groupel);
+				this.group = $(this.canvas).children()[0];
+				this.rendered = false;
+				this.prerender = '';
+			},
+
+			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
+				var vpath = [],
+				    initial,
+				    stroke,
+				    fill,
+				    closed,
+				    vel,
+				    plen,
+				    i;
+				for (i = 0, plen = path.length; i < plen; i++) {
+					vpath[i] = '' + path[i][0] + ',' + path[i][1];
+				}
+				initial = vpath.splice(0, 1);
+				lineWidth = lineWidth === undefined ? 1 : lineWidth;
+				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
+				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
+				closed = vpath[0] === vpath[vpath.length - 1] ? 'x ' : '';
+				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + initial + ' l ' + vpath.join(', ') + ' ' + closed + 'e">' + ' </v:shape>';
+				return vel;
+			},
+
+			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
+				var stroke, fill, vel;
+				x -= radius;
+				y -= radius;
+				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
+				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
+				vel = '<v:oval ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;top:' + y + 'px; left:' + x + 'px; width:' + radius * 2 + 'px; height:' + radius * 2 + 'px"></v:oval>';
+				return vel;
+			},
+
+			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
+				var vpath, startx, starty, endx, endy, stroke, fill, vel;
+				if (startAngle === endAngle) {
+					return ''; // VML seems to have problem when start angle equals end angle.
+				}
+				if (endAngle - startAngle === 2 * Math.PI) {
+					startAngle = 0.0; // VML seems to have a problem when drawing a full circle that doesn't start 0
+					endAngle = 2 * Math.PI;
+				}
+
+				startx = x + Math.round(Math.cos(startAngle) * radius);
+				starty = y + Math.round(Math.sin(startAngle) * radius);
+				endx = x + Math.round(Math.cos(endAngle) * radius);
+				endy = y + Math.round(Math.sin(endAngle) * radius);
+
+				if (startx === endx && starty === endy) {
+					if (endAngle - startAngle < Math.PI) {
+						// Prevent very small slices from being mistaken as a whole pie
+						return '';
+					}
+					// essentially going to be the entire circle, so ignore startAngle
+					startx = endx = x + radius;
+					starty = endy = y;
+				}
+
+				if (startx === endx && starty === endy && endAngle - startAngle < Math.PI) {
+					return '';
+				}
+
+				vpath = [x - radius, y - radius, x + radius, y + radius, startx, starty, endx, endy];
+				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="1px" strokeColor="' + lineColor + '" ';
+				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
+				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + x + ',' + y + ' wa ' + vpath.join(', ') + ' x e">' + ' </v:shape>';
+				return vel;
+			},
+
+			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
+				return this._drawShape(shapeid, [[x, y], [x, y + height], [x + width, y + height], [x + width, y], [x, y]], lineColor, fillColor);
+			},
+
+			reset: function reset() {
+				this.group.innerHTML = '';
+			},
+
+			appendShape: function appendShape(shape) {
+				var vel = this['_draw' + shape.type].apply(this, shape.args);
+				if (this.rendered) {
+					this.group.insertAdjacentHTML('beforeEnd', vel);
+				} else {
+					this.prerender += vel;
+				}
+				this.lastShapeId = shape.id;
+				return shape.id;
+			},
+
+			replaceWithShape: function replaceWithShape(shapeid, shape) {
+				var existing = $('#jqsshape' + shapeid),
+				    vel = this['_draw' + shape.type].apply(this, shape.args);
+				existing[0].outerHTML = vel;
+			},
+
+			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
+				// replace the first shapeid with all the new shapes then toast the remaining old shapes
+				var existing = $('#jqsshape' + shapeids[0]),
+				    replace = '',
+				    slen = shapes.length,
+				    i;
+				for (i = 0; i < slen; i++) {
+					replace += this['_draw' + shapes[i].type].apply(this, shapes[i].args);
+				}
+				existing[0].outerHTML = replace;
+				for (i = 1; i < shapeids.length; i++) {
+					$('#jqsshape' + shapeids[i]).remove();
+				}
+			},
+
+			insertAfterShape: function insertAfterShape(shapeid, shape) {
+				var existing = $('#jqsshape' + shapeid),
+				    vel = this['_draw' + shape.type].apply(this, shape.args);
+				existing[0].insertAdjacentHTML('afterEnd', vel);
+			},
+
+			removeShapeId: function removeShapeId(shapeid) {
+				var existing = $('#jqsshape' + shapeid);
+				this.group.removeChild(existing[0]);
+			},
+
+			getShapeAt: function getShapeAt(el, x, y) {
+				var shapeid = el.id.substr(8);
+				return shapeid;
+			},
+
+			render: function render() {
+				if (!this.rendered) {
+					// batch the intial render into a single repaint
+					this.group.innerHTML = this.prerender;
+					this.rendered = true;
+				}
+			}
+		});
+	});
+})(document, Math);
 
 /***/ })
 

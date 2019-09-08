@@ -1,22 +1,22 @@
 webpackJsonp([118],{
 
-/***/ 1215:
+/***/ 1412:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1216);
+var content = __webpack_require__(1413);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("d0a8bfd8", content, false, {});
+var update = __webpack_require__(26)("5a8415ff", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contacts.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contacts.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1a31a8a6\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1a31a8a6\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,39 +27,39 @@ if(false) {
 
 /***/ }),
 
-/***/ 1216:
+/***/ 1413:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+var escape = __webpack_require__(28);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
-exports.i(__webpack_require__(643), "");
-exports.i(__webpack_require__(644), "");
+
 
 // module
-exports.push([module.i, "\n/*The Wrapper*/\n\n\n\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'simple-line-icons';\n  src: url(" + escape(__webpack_require__(541)) + ");\n  src: url(" + escape(__webpack_require__(541)) + "#iefix) format('embedded-opentype'), url(" + escape(__webpack_require__(583)) + ") format('woff2'), url(" + escape(__webpack_require__(584)) + ") format('truetype'), url(" + escape(__webpack_require__(585)) + ") format('woff'), url(" + escape(__webpack_require__(586)) + "#simple-line-icons) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n/*\n Use the following CSS code if you want to have a class per icon.\n Instead of a list of all class selectors, you can use the generic [class*=\"icon-\"] selector, but it's slower:\n*/\n.icon-user,\n.icon-people,\n.icon-user-female,\n.icon-user-follow,\n.icon-user-following,\n.icon-user-unfollow,\n.icon-login,\n.icon-logout,\n.icon-emotsmile,\n.icon-phone,\n.icon-call-end,\n.icon-call-in,\n.icon-call-out,\n.icon-map,\n.icon-location-pin,\n.icon-direction,\n.icon-directions,\n.icon-compass,\n.icon-layers,\n.icon-menu,\n.icon-list,\n.icon-options-vertical,\n.icon-options,\n.icon-arrow-down,\n.icon-arrow-left,\n.icon-arrow-right,\n.icon-arrow-up,\n.icon-arrow-up-circle,\n.icon-arrow-left-circle,\n.icon-arrow-right-circle,\n.icon-arrow-down-circle,\n.icon-check,\n.icon-clock,\n.icon-plus,\n.icon-minus,\n.icon-close,\n.icon-event,\n.icon-exclamation,\n.icon-organization,\n.icon-trophy,\n.icon-screen-smartphone,\n.icon-screen-desktop,\n.icon-plane,\n.icon-notebook,\n.icon-mustache,\n.icon-mouse,\n.icon-magnet,\n.icon-energy,\n.icon-disc,\n.icon-cursor,\n.icon-cursor-move,\n.icon-crop,\n.icon-chemistry,\n.icon-speedometer,\n.icon-shield,\n.icon-screen-tablet,\n.icon-magic-wand,\n.icon-hourglass,\n.icon-graduation,\n.icon-ghost,\n.icon-game-controller,\n.icon-fire,\n.icon-eyeglass,\n.icon-envelope-open,\n.icon-envelope-letter,\n.icon-bell,\n.icon-badge,\n.icon-anchor,\n.icon-wallet,\n.icon-vector,\n.icon-speech,\n.icon-puzzle,\n.icon-printer,\n.icon-present,\n.icon-playlist,\n.icon-pin,\n.icon-picture,\n.icon-handbag,\n.icon-globe-alt,\n.icon-globe,\n.icon-folder-alt,\n.icon-folder,\n.icon-film,\n.icon-feed,\n.icon-drop,\n.icon-drawer,\n.icon-docs,\n.icon-doc,\n.icon-diamond,\n.icon-cup,\n.icon-calculator,\n.icon-bubbles,\n.icon-briefcase,\n.icon-book-open,\n.icon-basket-loaded,\n.icon-basket,\n.icon-bag,\n.icon-action-undo,\n.icon-action-redo,\n.icon-wrench,\n.icon-umbrella,\n.icon-trash,\n.icon-tag,\n.icon-support,\n.icon-frame,\n.icon-size-fullscreen,\n.icon-size-actual,\n.icon-shuffle,\n.icon-share-alt,\n.icon-share,\n.icon-rocket,\n.icon-question,\n.icon-pie-chart,\n.icon-pencil,\n.icon-note,\n.icon-loop,\n.icon-home,\n.icon-grid,\n.icon-graph,\n.icon-microphone,\n.icon-music-tone-alt,\n.icon-music-tone,\n.icon-earphones-alt,\n.icon-earphones,\n.icon-equalizer,\n.icon-like,\n.icon-dislike,\n.icon-control-start,\n.icon-control-rewind,\n.icon-control-play,\n.icon-control-pause,\n.icon-control-forward,\n.icon-control-end,\n.icon-volume-1,\n.icon-volume-2,\n.icon-volume-off,\n.icon-calendar,\n.icon-bulb,\n.icon-chart,\n.icon-ban,\n.icon-bubble,\n.icon-camrecorder,\n.icon-camera,\n.icon-cloud-download,\n.icon-cloud-upload,\n.icon-envelope,\n.icon-eye,\n.icon-flag,\n.icon-heart,\n.icon-info,\n.icon-key,\n.icon-link,\n.icon-lock,\n.icon-lock-open,\n.icon-magnifier,\n.icon-magnifier-add,\n.icon-magnifier-remove,\n.icon-paper-clip,\n.icon-paper-plane,\n.icon-power,\n.icon-refresh,\n.icon-reload,\n.icon-settings,\n.icon-star,\n.icon-symbol-female,\n.icon-symbol-male,\n.icon-target,\n.icon-credit-card,\n.icon-paypal,\n.icon-social-tumblr,\n.icon-social-twitter,\n.icon-social-facebook,\n.icon-social-instagram,\n.icon-social-linkedin,\n.icon-social-pinterest,\n.icon-social-github,\n.icon-social-google,\n.icon-social-reddit,\n.icon-social-skype,\n.icon-social-dribbble,\n.icon-social-behance,\n.icon-social-foursqare,\n.icon-social-soundcloud,\n.icon-social-spotify,\n.icon-social-stumbleupon,\n.icon-social-youtube,\n.icon-social-dropbox,\n.icon-social-vkontakte,\n.icon-social-steam {\n  font-family: 'simple-line-icons';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-user:before {\n  content: \"\\E005\";\n}\n.icon-people:before {\n  content: \"\\E001\";\n}\n.icon-user-female:before {\n  content: \"\\E000\";\n}\n.icon-user-follow:before {\n  content: \"\\E002\";\n}\n.icon-user-following:before {\n  content: \"\\E003\";\n}\n.icon-user-unfollow:before {\n  content: \"\\E004\";\n}\n.icon-login:before {\n  content: \"\\E066\";\n}\n.icon-logout:before {\n  content: \"\\E065\";\n}\n.icon-emotsmile:before {\n  content: \"\\E021\";\n}\n.icon-phone:before {\n  content: \"\\E600\";\n}\n.icon-call-end:before {\n  content: \"\\E048\";\n}\n.icon-call-in:before {\n  content: \"\\E047\";\n}\n.icon-call-out:before {\n  content: \"\\E046\";\n}\n.icon-map:before {\n  content: \"\\E033\";\n}\n.icon-location-pin:before {\n  content: \"\\E096\";\n}\n.icon-direction:before {\n  content: \"\\E042\";\n}\n.icon-directions:before {\n  content: \"\\E041\";\n}\n.icon-compass:before {\n  content: \"\\E045\";\n}\n.icon-layers:before {\n  content: \"\\E034\";\n}\n.icon-menu:before {\n  content: \"\\E601\";\n}\n.icon-list:before {\n  content: \"\\E067\";\n}\n.icon-options-vertical:before {\n  content: \"\\E602\";\n}\n.icon-options:before {\n  content: \"\\E603\";\n}\n.icon-arrow-down:before {\n  content: \"\\E604\";\n}\n.icon-arrow-left:before {\n  content: \"\\E605\";\n}\n.icon-arrow-right:before {\n  content: \"\\E606\";\n}\n.icon-arrow-up:before {\n  content: \"\\E607\";\n}\n.icon-arrow-up-circle:before {\n  content: \"\\E078\";\n}\n.icon-arrow-left-circle:before {\n  content: \"\\E07A\";\n}\n.icon-arrow-right-circle:before {\n  content: \"\\E079\";\n}\n.icon-arrow-down-circle:before {\n  content: \"\\E07B\";\n}\n.icon-check:before {\n  content: \"\\E080\";\n}\n.icon-clock:before {\n  content: \"\\E081\";\n}\n.icon-plus:before {\n  content: \"\\E095\";\n}\n.icon-minus:before {\n  content: \"\\E615\";\n}\n.icon-close:before {\n  content: \"\\E082\";\n}\n.icon-event:before {\n  content: \"\\E619\";\n}\n.icon-exclamation:before {\n  content: \"\\E617\";\n}\n.icon-organization:before {\n  content: \"\\E616\";\n}\n.icon-trophy:before {\n  content: \"\\E006\";\n}\n.icon-screen-smartphone:before {\n  content: \"\\E010\";\n}\n.icon-screen-desktop:before {\n  content: \"\\E011\";\n}\n.icon-plane:before {\n  content: \"\\E012\";\n}\n.icon-notebook:before {\n  content: \"\\E013\";\n}\n.icon-mustache:before {\n  content: \"\\E014\";\n}\n.icon-mouse:before {\n  content: \"\\E015\";\n}\n.icon-magnet:before {\n  content: \"\\E016\";\n}\n.icon-energy:before {\n  content: \"\\E020\";\n}\n.icon-disc:before {\n  content: \"\\E022\";\n}\n.icon-cursor:before {\n  content: \"\\E06E\";\n}\n.icon-cursor-move:before {\n  content: \"\\E023\";\n}\n.icon-crop:before {\n  content: \"\\E024\";\n}\n.icon-chemistry:before {\n  content: \"\\E026\";\n}\n.icon-speedometer:before {\n  content: \"\\E007\";\n}\n.icon-shield:before {\n  content: \"\\E00E\";\n}\n.icon-screen-tablet:before {\n  content: \"\\E00F\";\n}\n.icon-magic-wand:before {\n  content: \"\\E017\";\n}\n.icon-hourglass:before {\n  content: \"\\E018\";\n}\n.icon-graduation:before {\n  content: \"\\E019\";\n}\n.icon-ghost:before {\n  content: \"\\E01A\";\n}\n.icon-game-controller:before {\n  content: \"\\E01B\";\n}\n.icon-fire:before {\n  content: \"\\E01C\";\n}\n.icon-eyeglass:before {\n  content: \"\\E01D\";\n}\n.icon-envelope-open:before {\n  content: \"\\E01E\";\n}\n.icon-envelope-letter:before {\n  content: \"\\E01F\";\n}\n.icon-bell:before {\n  content: \"\\E027\";\n}\n.icon-badge:before {\n  content: \"\\E028\";\n}\n.icon-anchor:before {\n  content: \"\\E029\";\n}\n.icon-wallet:before {\n  content: \"\\E02A\";\n}\n.icon-vector:before {\n  content: \"\\E02B\";\n}\n.icon-speech:before {\n  content: \"\\E02C\";\n}\n.icon-puzzle:before {\n  content: \"\\E02D\";\n}\n.icon-printer:before {\n  content: \"\\E02E\";\n}\n.icon-present:before {\n  content: \"\\E02F\";\n}\n.icon-playlist:before {\n  content: \"\\E030\";\n}\n.icon-pin:before {\n  content: \"\\E031\";\n}\n.icon-picture:before {\n  content: \"\\E032\";\n}\n.icon-handbag:before {\n  content: \"\\E035\";\n}\n.icon-globe-alt:before {\n  content: \"\\E036\";\n}\n.icon-globe:before {\n  content: \"\\E037\";\n}\n.icon-folder-alt:before {\n  content: \"\\E039\";\n}\n.icon-folder:before {\n  content: \"\\E089\";\n}\n.icon-film:before {\n  content: \"\\E03A\";\n}\n.icon-feed:before {\n  content: \"\\E03B\";\n}\n.icon-drop:before {\n  content: \"\\E03E\";\n}\n.icon-drawer:before {\n  content: \"\\E03F\";\n}\n.icon-docs:before {\n  content: \"\\E040\";\n}\n.icon-doc:before {\n  content: \"\\E085\";\n}\n.icon-diamond:before {\n  content: \"\\E043\";\n}\n.icon-cup:before {\n  content: \"\\E044\";\n}\n.icon-calculator:before {\n  content: \"\\E049\";\n}\n.icon-bubbles:before {\n  content: \"\\E04A\";\n}\n.icon-briefcase:before {\n  content: \"\\E04B\";\n}\n.icon-book-open:before {\n  content: \"\\E04C\";\n}\n.icon-basket-loaded:before {\n  content: \"\\E04D\";\n}\n.icon-basket:before {\n  content: \"\\E04E\";\n}\n.icon-bag:before {\n  content: \"\\E04F\";\n}\n.icon-action-undo:before {\n  content: \"\\E050\";\n}\n.icon-action-redo:before {\n  content: \"\\E051\";\n}\n.icon-wrench:before {\n  content: \"\\E052\";\n}\n.icon-umbrella:before {\n  content: \"\\E053\";\n}\n.icon-trash:before {\n  content: \"\\E054\";\n}\n.icon-tag:before {\n  content: \"\\E055\";\n}\n.icon-support:before {\n  content: \"\\E056\";\n}\n.icon-frame:before {\n  content: \"\\E038\";\n}\n.icon-size-fullscreen:before {\n  content: \"\\E057\";\n}\n.icon-size-actual:before {\n  content: \"\\E058\";\n}\n.icon-shuffle:before {\n  content: \"\\E059\";\n}\n.icon-share-alt:before {\n  content: \"\\E05A\";\n}\n.icon-share:before {\n  content: \"\\E05B\";\n}\n.icon-rocket:before {\n  content: \"\\E05C\";\n}\n.icon-question:before {\n  content: \"\\E05D\";\n}\n.icon-pie-chart:before {\n  content: \"\\E05E\";\n}\n.icon-pencil:before {\n  content: \"\\E05F\";\n}\n.icon-note:before {\n  content: \"\\E060\";\n}\n.icon-loop:before {\n  content: \"\\E064\";\n}\n.icon-home:before {\n  content: \"\\E069\";\n}\n.icon-grid:before {\n  content: \"\\E06A\";\n}\n.icon-graph:before {\n  content: \"\\E06B\";\n}\n.icon-microphone:before {\n  content: \"\\E063\";\n}\n.icon-music-tone-alt:before {\n  content: \"\\E061\";\n}\n.icon-music-tone:before {\n  content: \"\\E062\";\n}\n.icon-earphones-alt:before {\n  content: \"\\E03C\";\n}\n.icon-earphones:before {\n  content: \"\\E03D\";\n}\n.icon-equalizer:before {\n  content: \"\\E06C\";\n}\n.icon-like:before {\n  content: \"\\E068\";\n}\n.icon-dislike:before {\n  content: \"\\E06D\";\n}\n.icon-control-start:before {\n  content: \"\\E06F\";\n}\n.icon-control-rewind:before {\n  content: \"\\E070\";\n}\n.icon-control-play:before {\n  content: \"\\E071\";\n}\n.icon-control-pause:before {\n  content: \"\\E072\";\n}\n.icon-control-forward:before {\n  content: \"\\E073\";\n}\n.icon-control-end:before {\n  content: \"\\E074\";\n}\n.icon-volume-1:before {\n  content: \"\\E09F\";\n}\n.icon-volume-2:before {\n  content: \"\\E0A0\";\n}\n.icon-volume-off:before {\n  content: \"\\E0A1\";\n}\n.icon-calendar:before {\n  content: \"\\E075\";\n}\n.icon-bulb:before {\n  content: \"\\E076\";\n}\n.icon-chart:before {\n  content: \"\\E077\";\n}\n.icon-ban:before {\n  content: \"\\E07C\";\n}\n.icon-bubble:before {\n  content: \"\\E07D\";\n}\n.icon-camrecorder:before {\n  content: \"\\E07E\";\n}\n.icon-camera:before {\n  content: \"\\E07F\";\n}\n.icon-cloud-download:before {\n  content: \"\\E083\";\n}\n.icon-cloud-upload:before {\n  content: \"\\E084\";\n}\n.icon-envelope:before {\n  content: \"\\E086\";\n}\n.icon-eye:before {\n  content: \"\\E087\";\n}\n.icon-flag:before {\n  content: \"\\E088\";\n}\n.icon-heart:before {\n  content: \"\\E08A\";\n}\n.icon-info:before {\n  content: \"\\E08B\";\n}\n.icon-key:before {\n  content: \"\\E08C\";\n}\n.icon-link:before {\n  content: \"\\E08D\";\n}\n.icon-lock:before {\n  content: \"\\E08E\";\n}\n.icon-lock-open:before {\n  content: \"\\E08F\";\n}\n.icon-magnifier:before {\n  content: \"\\E090\";\n}\n.icon-magnifier-add:before {\n  content: \"\\E091\";\n}\n.icon-magnifier-remove:before {\n  content: \"\\E092\";\n}\n.icon-paper-clip:before {\n  content: \"\\E093\";\n}\n.icon-paper-plane:before {\n  content: \"\\E094\";\n}\n.icon-power:before {\n  content: \"\\E097\";\n}\n.icon-refresh:before {\n  content: \"\\E098\";\n}\n.icon-reload:before {\n  content: \"\\E099\";\n}\n.icon-settings:before {\n  content: \"\\E09A\";\n}\n.icon-star:before {\n  content: \"\\E09B\";\n}\n.icon-symbol-female:before {\n  content: \"\\E09C\";\n}\n.icon-symbol-male:before {\n  content: \"\\E09D\";\n}\n.icon-target:before {\n  content: \"\\E09E\";\n}\n.icon-credit-card:before {\n  content: \"\\E025\";\n}\n.icon-paypal:before {\n  content: \"\\E608\";\n}\n.icon-social-tumblr:before {\n  content: \"\\E00A\";\n}\n.icon-social-twitter:before {\n  content: \"\\E009\";\n}\n.icon-social-facebook:before {\n  content: \"\\E00B\";\n}\n.icon-social-instagram:before {\n  content: \"\\E609\";\n}\n.icon-social-linkedin:before {\n  content: \"\\E60A\";\n}\n.icon-social-pinterest:before {\n  content: \"\\E60B\";\n}\n.icon-social-github:before {\n  content: \"\\E60C\";\n}\n.icon-social-google:before {\n  content: \"\\E60D\";\n}\n.icon-social-reddit:before {\n  content: \"\\E60E\";\n}\n.icon-social-skype:before {\n  content: \"\\E60F\";\n}\n.icon-social-dribbble:before {\n  content: \"\\E00D\";\n}\n.icon-social-behance:before {\n  content: \"\\E610\";\n}\n.icon-social-foursqare:before {\n  content: \"\\E611\";\n}\n.icon-social-soundcloud:before {\n  content: \"\\E612\";\n}\n.icon-social-spotify:before {\n  content: \"\\E613\";\n}\n.icon-social-stumbleupon:before {\n  content: \"\\E614\";\n}\n.icon-social-youtube:before {\n  content: \"\\E008\";\n}\n.icon-social-dropbox:before {\n  content: \"\\E00C\";\n}\n.icon-social-vkontakte:before {\n  content: \"\\E618\";\n}\n.icon-social-steam:before {\n  content: \"\\E620\";\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1217:
+/***/ 1414:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1218);
+var content = __webpack_require__(1415);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("31df7528", content, false, {});
+var update = __webpack_require__(26)("17df9bd1", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./contacts.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./contacts.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1a31a8a6\",\"scoped\":false,\"hasInlineConfig\":true}!./fonts.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1a31a8a6\",\"scoped\":false,\"hasInlineConfig\":true}!./fonts.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -70,72 +70,75 @@ if(false) {
 
 /***/ }),
 
-/***/ 1218:
+/***/ 1415:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.search[data-v-7542ea4f]{\n    border: 1px solid #bdb3b3;\n}\n.contact-profile[data-v-7542ea4f]{\n    width:50px;\n    height: 50px;\n}\n.box-shadow[data-v-7542ea4f]{\n    box-shadow: 0px 0px 1px 1px #cfcfcf;\n}\n.contact-pic[data-v-7542ea4f]{\n    width: 50px;\n    height: 50px;\n}\n.table td[data-v-7542ea4f]{\n    padding: 16px;\n    vertical-align: middle;\n}\n.contacts-box .custom-control-inline[data-v-7542ea4f]{\n    margin-right: 0;\n}\n.custom-control-label[data-v-7542ea4f]::before{\n    width: 100px;\n    height: 100px;\n}\n.contact-page[data-v-7542ea4f]{\n    font-size: 14px;\n}\n.options a[data-v-7542ea4f]:hover,.options2 a[data-v-7542ea4f]:hover{\n    background-color: #eee;\n}\n.bg-title[data-v-7542ea4f]{\n    background-color: #f5f5f5;\n}\n.options .active[data-v-7542ea4f]{\n    background-color: #eee;\n    color: #66cc99 !important;\n    font-weight: 600;\n}\n.custom-control-inline[data-v-7542ea4f]{\n    margin-right: 0;\n}\n.total-contacts[data-v-7542ea4f]{\n    border-bottom: 1px solid #eee;\n}\n", ""]);
+exports.push([module.i, "\n.icon_set > .row > div {\n    font-size : 18px;\n    padding   : 20px 15px;\n}\n.icon_group {\n    position         : relative;\n    background-color : #ffffff;\n}\n.icon_set,\n.icon_cover {\n    height : 330px;\n    width  : 100%;\n}\n.right-side.strech .icon_set ul li {\n    padding : 20px 35px;\n}\n.icon_cover a {\n    position  : relative;\n    top       : 50%;\n    transform : translateY(-50%);\n}\n.iconset_name {\n    padding-left : 15px;\n}\n.icon_set {\n    color : #6699cc;\n}\n.icon_set:hover + .icon_cover,\n.icon_cover:hover {\n    transform  : scale(1);\n    transition : all 0.5s;\n}\n.icon_cover {\n    position         : absolute;\n    top              : 0;\n    left             : 0;\n    background-color : rgba(79, 193, 233, 0.2);\n    transition       : all 0.5s;\n    transform        : scale(0);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1219:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1220);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("7faf015c", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./contacts.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./contacts.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1220:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.my-scrollbar{\n    width: 100%;\n    /*min-width: 300px;*/\n    /*max-height: 450px;*/\n}\n.scroll-me{\n    background:#fff;\n    min-width: 992px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1221:
+/***/ 1416:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(645);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -255,824 +258,547 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
-
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default.a);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'blank',
-    data: function data() {
-        return {
-            modalShow: false,
-            newname: '',
-            newemail: '',
-            newnumber: '',
-            newlocation: '',
-            newrole: '',
-            contacts: [{
-                name: 'Jon',
-                img: __webpack_require__(216),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Doe',
-                img: __webpack_require__(514),
-                email: 'doe@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Addison',
-                img: __webpack_require__(515),
-                email: 'addison@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Jon',
-                img: __webpack_require__(517),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Doe',
-                img: __webpack_require__(216),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Jon',
-                img: __webpack_require__(513),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }],
-            editname: '',
-            editemail: '',
-            editnumber: '',
-            editlocation: '',
-            editrole: '',
-            contactid: '',
-            search: '',
-            userImage: ''
-        };
-    },
-
+    name: "font_icons", // Name is optional, When name isn’t specified use the filename as the component name.
     components: {
-        VueScrollbar: __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default.a
+        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     mounted: function mounted() {},
-    methods: {
-        addContact: function addContact() {
-            this.contacts.push({
-                name: this.newname,
-                email: this.newemail,
-                contact_num: this.newnumber,
-                location: this.newlocation,
-                role: this.newrole,
-                img: this.userImage
-            }), this.newname = '', this.newemail = '', this.newnumber = '', this.newlocation = '', this.newrole = '', this.modalShow = false;
-        },
-        deletecontact: function deletecontact(index) {
-            //                this.$refs.deletemodal.show()
-            this.contacts.splice(index, 1);
-        },
-        editcontact: function editcontact(index) {
-            this.editname = this.contacts[index].name;
-            this.editemail = this.contacts[index].email;
-            this.editnumber = this.contacts[index].contact_num;
-            this.editlocation = this.contacts[index].location;
-            this.editrole = this.contacts[index].role;
-            this.contactid = index;
-            this.$refs.editcontact.show();
-        },
-        updateContact: function updateContact(contactid) {
-            this.contacts[contactid].name = this.editname;
-            this.contacts[contactid].email = this.editemail;
-            this.contacts[contactid].contact_num = this.editnumber;
-            this.contacts[contactid].location = this.editlocation;
-            this.contacts[contactid].role = this.editrole;
-            this.$refs.editcontact.hide();
-            //                console.log(this.tasks[index].tasktitle);
-            this.modalTask = false;
-        },
-        cancel: function cancel() {
-            this.modalTask = false;
-        },
-        onFileChange: function onFileChange(e) {
-            var files = e.target.files || e.dataTransfer.files;
-            if (!files.length) {
-                return;
-            }
-            this.createImage(files[0]);
-        },
-        createImage: function createImage(file) {
-            var reader = new FileReader();
-            var vm = this;
-
-            reader.onload = function (e) {
-                vm.userImage = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    },
-    computed: {
-        allContacts: function allContacts() {
-            var self = this;
-            return this.contacts.filter(function (newcontact) {
-                return newcontact.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0;
-            });
-            //return this.customers;
-        }
-    }
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1222:
+/***/ 1417:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "contact-page" }, [
-        _c("div", { staticClass: "container-fluid bg-white" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("div", { staticClass: "p-5 box-shadow mt-3" }, [
-                _c("h4", [
-                  _vm._m(0),
+  return _c("div", [
+    _c("h4", [_vm._v("You can use different sets of icon fonts:")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6 col-sm-6" },
+        [
+          _c("card", { attrs: { title: "Themify Icons" } }, [
+            _c("div", { staticClass: "icon_group" }, [
+              _c("div", { staticClass: "icon_set text-center" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-wand icons" })
+                  ]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "float-right" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.search,
-                          expression: "search"
-                        }
-                      ],
-                      staticClass: "search form-control pl-2 pr-2",
-                      attrs: { type: "search", placeholder: "Search here" },
-                      domProps: { value: _vm.search },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.search = $event.target.value
-                        }
-                      }
-                    })
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-save icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-direction icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-link icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-unlink icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-target icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-spray icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-signal icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-shopping-cart-full icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-settings icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-back-left icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-facebook icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-map-alt icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-bar-chart-alt icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-vector icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-control-record icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-ink-pen icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-help-alt icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-face-sad icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-new-window icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-rss-alt icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-control-stop icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-control-shuffle icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-paragraph icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-paragraph icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-underline icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-quote-right icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-layout-column2 icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-instagram icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "ti-twitter icons" })
                   ])
                 ])
-              ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "icon_cover text-center" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { to: "/themify_icons" }
+                    },
+                    [_vm._v("View All\n                        ")]
+                  )
+                ],
+                1
+              )
             ])
           ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container-fluid bg-white mt-4" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 col-lg-3" },
-                  [
-                    _c("div", { staticClass: "box-shadow mt-4" }, [
-                      _c(
-                        "div",
-                        { staticClass: "border-bottom border-secondary p-3" },
-                        [
-                          _c("img", {
-                            staticClass:
-                              "contact-profile d-inline-block rounded-circle",
-                            attrs: {
-                              src: __webpack_require__(216),
-                              alt: "user profile"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "d-inline-block" }, [
-                            _vm._v("  Jon Doe")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _vm._m(2)
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6 col-sm-6" },
+        [
+          _c("card", { attrs: { title: "Font Awesome Icons" } }, [
+            _c("div", { staticClass: "icon_group" }, [
+              _c(
+                "div",
+                { staticClass: "icon_set fontawesome_icons text-center" },
+                [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-bolt" })
                     ]),
                     _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary mt-3",
-                        on: {
-                          click: function($event) {
-                            _vm.modalShow = !_vm.modalShow
-                          }
-                        }
-                      },
-                      [_vm._v("Add New Contact")]
-                    ),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-bullhorn" })
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          "hide-footer": true,
-                          title: "Add your contact here"
-                        },
-                        model: {
-                          value: _vm.modalShow,
-                          callback: function($$v) {
-                            _vm.modalShow = $$v
-                          },
-                          expression: "modalShow"
-                        }
-                      },
-                      [
-                        _c("b-container", { attrs: { fluid: "" } }, [
-                          _c(
-                            "form",
-                            [
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newname,
-                                    expression: "newname"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "text",
-                                  placeholder: "Enter name"
-                                },
-                                domProps: { value: _vm.newname },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newname = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                staticClass: "btn btn-primary mt-3",
-                                attrs: { type: "file" },
-                                on: { change: _vm.onFileChange }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newnumber,
-                                    expression: "newnumber"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "number",
-                                  placeholder: "Enter phone number"
-                                },
-                                domProps: { value: _vm.newnumber },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newnumber = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newemail,
-                                    expression: "newemail"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "email",
-                                  placeholder: "Enter email"
-                                },
-                                domProps: { value: _vm.newemail },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newemail = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newrole,
-                                    expression: "newrole"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "text",
-                                  placeholder: "Enter role"
-                                },
-                                domProps: { value: _vm.newrole },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newrole = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newlocation,
-                                    expression: "newlocation"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3 mb-3",
-                                attrs: {
-                                  type: "text",
-                                  placeholder: "Location"
-                                },
-                                domProps: { value: _vm.newlocation },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newlocation = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "b-btn",
-                                {
-                                  staticClass: "float-right",
-                                  attrs: { variant: "primary" },
-                                  on: { click: _vm.addContact }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                            Submit\n                                        "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ])
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-12 col-sm-8 col-lg-9" }, [
-                  _c("div", { staticClass: "box-shadow mt-4" }, [
-                    _c(
-                      "div",
-                      { staticClass: "contacts-box mb-3" },
-                      [
-                        _vm._m(3),
-                        _vm._v(" "),
-                        _c(
-                          "vue-scrollbar",
-                          {
-                            ref: "Scrollbar",
-                            attrs: { classes: "my-scrollbar" }
-                          },
-                          [
-                            _c("div", { staticClass: "scroll-me" }, [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "table-responsive mb-3 tablescroll"
-                                },
-                                [
-                                  _c(
-                                    "table",
-                                    { staticClass: "table" },
-                                    _vm._l(_vm.allContacts, function(
-                                      contact,
-                                      index
-                                    ) {
-                                      return _c("tr", [
-                                        _c("td", [_c("b-form-checkbox")], 1),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.name))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _c("img", {
-                                            staticClass:
-                                              "contact-pic rounded-circle",
-                                            attrs: {
-                                              src: contact.img,
-                                              alt: "profile"
-                                            }
-                                          })
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.email))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.contact_num))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.role))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.location))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _c("span", {
-                                            staticClass: "fa fa-edit",
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.editcontact(index)
-                                              }
-                                            }
-                                          })
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _c("span", {
-                                            staticClass: "fa fa-trash-o",
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.deletecontact(index)
-                                              }
-                                            }
-                                          })
-                                        ])
-                                      ])
-                                    }),
-                                    0
-                                  )
-                                ]
-                              )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
-                    )
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-clock-o" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-cloud-upload" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-cog" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-compass" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-edit" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-female" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-frown-o" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-legal" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-mail-reply-all" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-mail-forward" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-phone-square" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-plus-circle" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-rss-square" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-signal" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-smile-o" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-spinner" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-thumbs-o-up" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-ticket" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", {
+                        staticClass: "fa fa-fw ti-close removecard clickable"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-toggle-down" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-trash-o" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-users" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-copy" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-list-ul" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-list-alt" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-arrow-circle-down" })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", {
+                        staticClass: "fa fa-fw fa-caret-square-o-down"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-2" }, [
+                      _c("i", { staticClass: "fa fa-fw fa-chevron-right" })
+                    ])
                   ])
-                ])
-              ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "icon_cover text-center" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { to: "/fontawesome_icons" }
+                    },
+                    [_vm._v("View All\n                        ")]
+                  )
+                ],
+                1
+              )
             ])
           ])
-        ])
-      ]),
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
-        "b-modal",
-        {
-          ref: "editcontact",
-          attrs: { "hide-footer": "", title: "Using Component Methods" }
-        },
+        "div",
+        { staticClass: "col-md-6 col-sm-6 m-t-10" },
         [
-          _c("div", { staticClass: "d-block" }, [
-            _c("form", [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editname,
-                    expression: "editname"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "text", placeholder: "Enter name" },
-                domProps: { value: _vm.editname },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editname = $event.target.value
-                  }
-                }
-              }),
+          _c("card", { attrs: { title: "Simple Line Icons" } }, [
+            _c("div", { staticClass: "icon_group" }, [
+              _c("div", { staticClass: "icon_set text-center" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-compass icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-directions icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-earphones-alt icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-equalizer icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-dislike icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-mustache icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-cursor-move icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-folder icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-ghost icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-present icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-grid icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-linkedin icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-symbol-female icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-behance icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-settings icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-paper-plane icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-lock icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-camrecorder icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-magnifier-remove icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-calendar icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-control-play icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-twitter icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-facebook icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-dropbox icons" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-vkontakte icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-social-google icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-cloud-upload icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-control-rewind icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-size-fullscreen icons" })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-2" }, [
+                    _c("i", { staticClass: "icon-diamond icons" })
+                  ])
+                ])
+              ]),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editemail,
-                    expression: "editemail"
-                  }
+              _c(
+                "div",
+                { staticClass: "icon_cover text-center" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { to: "/simple_line_icons" }
+                    },
+                    [_vm._v("View All\n                        ")]
+                  )
                 ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "email", placeholder: "Enter email" },
-                domProps: { value: _vm.editemail },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editemail = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editnumber,
-                    expression: "editnumber"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "number", placeholder: "Enter number" },
-                domProps: { value: _vm.editnumber },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editnumber = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editrole,
-                    expression: "editrole"
-                  }
-                ],
-                staticClass: "form-control mt-3 mb-3",
-                attrs: { type: "text", placeholder: "role" },
-                domProps: { value: _vm.editrole },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editrole = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editlocation,
-                    expression: "editlocation"
-                  }
-                ],
-                staticClass: "form-control mt-3 mb-3",
-                attrs: { type: "text", placeholder: "role" },
-                domProps: { value: _vm.editlocation },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editlocation = $event.target.value
-                  }
-                }
-              })
+                1
+              )
             ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-white",
-              attrs: { variant: "success", block: "" },
-              on: {
-                click: function($event) {
-                  return _vm.updateContact(_vm.contactid)
-                }
-              }
-            },
-            [_vm._v("Update")]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-white",
-              attrs: { variant: "danger", block: "" },
-              on: { click: _vm.cancel }
-            },
-            [_vm._v("Cancel")]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "b-modal",
-        {
-          ref: "deletecontact",
-          attrs: { "hide-footer": "", title: "Using Component Methods" }
-        },
-        [
-          _c("div", { staticClass: "d-block text-center" }, [
-            _c("h3", [_vm._v("Are you sure you want to delete modal")])
-          ]),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-danger",
-              attrs: { variant: "outline-danger", block: "" }
-            },
-            [_vm._v("Yes")]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-primary",
-              attrs: { variant: "outline-primary", block: "" }
-            },
-            [_vm._v("No")]
-          )
+          ])
         ],
         1
       )
-    ],
-    1
-  )
+    ])
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [
-      _c("i", { staticClass: "fa fa-address-book-o" }),
-      _vm._v(" Contacts\n                        ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "options border-bottom border-secondary" },
-      [
-        _c(
-          "a",
-          {
-            staticClass: "p-3 d-block text-dark active",
-            attrs: { href: "#/contacts" }
-          },
-          [_vm._v("All Contacts")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "p-3 d-block text-dark",
-            attrs: { href: "#/contacts" }
-          },
-          [_vm._v("Frequently contacted ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "p-3 d-block text-dark",
-            attrs: { href: "#/contacts" }
-          },
-          [_vm._v("Starred Contacts")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "options2" }, [
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Groups")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Friends")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Clients")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Recent Workers")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("New Group")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "total-contacts p-5 " }, [
-      _c("span", [_vm._v("All Contacts(25)")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7542ea4f", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1a31a8a6", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 428:
+/***/ 460:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1215)
-  __webpack_require__(1217)
-  __webpack_require__(1219)
+  __webpack_require__(1412)
+  __webpack_require__(1414)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1221)
+var __vue_script__ = __webpack_require__(1416)
 /* template */
-var __vue_template__ = __webpack_require__(1222)
+var __vue_template__ = __webpack_require__(1417)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-7542ea4f"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -1083,7 +809,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/contacts.vue"
+Component.options.__file = "resources/components/pages/font_icons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1092,9 +818,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7542ea4f", Component.options)
+    hotAPI.createRecord("data-v-1a31a8a6", Component.options)
   } else {
-    hotAPI.reload("data-v-7542ea4f", Component.options)
+    hotAPI.reload("data-v-1a31a8a6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1106,1209 +832,239 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 513:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 514:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 515:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
 /***/ 517:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(518)
+}
+var normalizeComponent = __webpack_require__(42)
+/* script */
+var __vue_script__ = __webpack_require__(520)
+/* template */
+var __vue_template__ = __webpack_require__(521)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/card/card.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-15e33d3a", Component.options)
+  } else {
+    hotAPI.reload("data-v-15e33d3a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 
-/***/ 643:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(519);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("d6b775a8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 519:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\nbody {\n  background: #f9f9f9;\n  height: 1000px;\n}\n\np {\n  margin-top: 0;\n}\n\n.my-scrollbar {\n  width: 35%;\n  min-width: 300px;\n  max-height: 450px;\n}\n\n.scroll-me {\n  background: #EEE;\n  min-width: 750px;\n}\n\n.kolom {\n  background: #2196F3;\n  width: 150px;\n  height: 150px;\n  float: left;\n  display: inline-block;\n  margin: 15px;\n}\n\n.clearfix {\n  clear: both;\n}\n", ""]);
+exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 644:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 520:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
-// imports
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'card',
+    data: function data() {
+        return {
+            show: true,
+            isActive: false
+        };
+    },
 
-// module
-exports.push([module.i, ".vue-scrollbar-transition, .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  transition: all 0.5s ease;\n  -moz-transition: all 0.5s ease;\n  -webkit-transition: all 0.5s ease;\n  -o-transition: all 0.5s ease;\n}\n.vue-scrollbar-transition--scrollbar {\n  transition: opacity 0.5s linear;\n  -moz-transition: opacity 0.5s linear;\n  -webkit-transition: opacity 0.5s linear;\n  -o-transition: opacity 0.5s linear;\n}\n\n.vue-scrollbar__wrapper {\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  background: white;\n}\n.vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-horizontal {\n  opacity: 1;\n}\n.vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  opacity: 0.5;\n  position: absolute;\n  background: transparent;\n}\n.vue-scrollbar__scrollbar-vertical:hover, .vue-scrollbar__scrollbar-horizontal:hover {\n  background: rgba(0, 0, 0, 0.3);\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar, .vue-scrollbar__scrollbar-horizontal .scrollbar {\n  position: relative;\n  background: rgba(0, 0, 0, 0.5);\n  cursor: default;\n}\n.vue-scrollbar__scrollbar-vertical {\n  width: 10px;\n  height: 100%;\n  top: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar {\n  width: 10px;\n}\n.vue-scrollbar__scrollbar-horizontal {\n  height: 10px;\n  width: 100%;\n  bottom: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-horizontal .scrollbar {\n  height: 10px;\n}\n", ""]);
-
-// exports
-
+    methods: {
+        hide: function hide() {
+            this.isActive = true;
+        }
+    },
+    mounted: function mounted() {},
+    props: {
+        title: {
+            required: false
+        }
+    },
+    destroy: function destroy() {}
+});
 
 /***/ }),
 
-/***/ 645:
+/***/ 521:
 /***/ (function(module, exports, __webpack_require__) {
 
-/*!
- * Copyright (c) 2016 Naufal Rabbani (http://github.com/BosNaufal),
- * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
- * ,
- * ,Vue 2 Scrollbar @ Version 0.0.2,
- * 
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["Vue2Scrollbar"] = factory();
-	else
-		root["Vue2Scrollbar"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "../dist/";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", {
+        staticClass: "card-title",
+        domProps: { innerHTML: _vm._s(_vm.title) }
+      }),
+      _vm._v(" "),
+      _c("span", { staticClass: "float-right" }, [
+        _c("i", {
+          staticClass: "fa fa-fw ti-angle-up",
+          class: { rotate: _vm.show },
+          on: {
+            click: function($event) {
+              _vm.show = !_vm.show
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "fa fa-fw ti-close removecard",
+          on: { click: _vm.hide }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.show,
+            expression: "show"
+          }
+        ],
+        staticClass: "card-body"
+      },
+      [_vm._t("default")],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 541:
 /***/ (function(module, exports) {
 
-/* globals __VUE_SSR_CONTEXT__ */
-
-// this module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle
-
-module.exports = function normalizeComponent (
-  rawScriptExports,
-  compiledTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier /* server only */
-) {
-  var esModule
-  var scriptExports = rawScriptExports = rawScriptExports || {}
-
-  // ES6 modules interop
-  var type = typeof rawScriptExports.default
-  if (type === 'object' || type === 'function') {
-    esModule = rawScriptExports
-    scriptExports = rawScriptExports.default
-  }
-
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // render functions
-  if (compiledTemplate) {
-    options.render = compiledTemplate.render
-    options.staticRenderFns = compiledTemplate.staticRenderFns
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = injectStyles
-  }
-
-  if (hook) {
-    var functional = options.functional
-    var existing = functional
-      ? options.render
-      : options.beforeCreate
-    if (!functional) {
-      // inject component registration as beforeCreate hook
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    } else {
-      // register for functioal component in vue file
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return existing(h, context)
-      }
-    }
-  }
-
-  return {
-    esModule: esModule,
-    exports: scriptExports,
-    options: options
-  }
-}
-
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.eot?f33df365d6d0255b586f2920355e94d7";
 
 /***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__ = __webpack_require__(9);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
+/***/ 583:
+/***/ (function(module, exports) {
 
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/vue-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vue-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7ec59f76", Component.options)
-  } else {
-    hotAPI.reload("data-v-7ec59f76", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff2?0cb0b9c589c0624c9c78dd3d83e946f6";
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+/***/ 584:
+/***/ (function(module, exports) {
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    draggingFromParent: Boolean,
-    scrolling: Number,
-    wrapper: Object,
-    area: Object,
-    onChangePosition: Function,
-    onDragging: Function,
-    onStopDrag: Function
-  },
-
-  data: function data() {
-    return {
-      width: 0,
-      dragging: false,
-      start: 0
-    };
-  },
-
-
-  watch: {
-    'wrapper.width': function wrapperWidth(val, old) {
-      this.calculateSize(this);
-    },
-    'area.width': function areaWidth(val, old) {
-      this.calculateSize(this);
-    }
-  },
-
-  methods: {
-    startDrag: function startDrag(e) {
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      e = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Prepare To Drag
-      this.dragging = true;
-      this.start = e.clientX;
-    },
-    onDrag: function onDrag(e) {
-
-      if (this.dragging) {
-
-        // Make The Parent being in the Dragging State
-        this.onDragging();
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        e = e.changedTouches ? e.changedTouches[0] : e;
-
-        var xMovement = e.clientX - this.start;
-        var xMovementPercentage = xMovement / this.wrapper.width * 100;
-
-        // Update the last e.clientX
-        this.start = e.clientX;
-
-        // The next Horizontal Value will be
-        var next = this.scrolling + xMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'horizontal');
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      if (this.dragging) {
-        // Parent Should Change the Dragging State
-        this.onStopDrag();
-        this.dragging = false;
-      }
-    },
-    jump: function jump(e) {
-
-      var isContainer = e.target === this.$refs.container;
-
-      if (isContainer) {
-
-        // Get the Element Position
-        var position = this.$refs.scrollbar.getBoundingClientRect();
-
-        // Calculate the horizontal Movement
-        var xMovement = e.clientX - position.left;
-        var centerize = this.width / 2;
-        var xMovementPercentage = xMovement / this.wrapper.width * 100 - centerize;
-
-        // Update the last e.clientX
-        this.start = e.clientX;
-
-        // The next Horizontal Value will be
-        var next = this.scrolling + xMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'horizontal');
-      }
-    },
-    calculateSize: function calculateSize(source) {
-      // Scrollbar Width
-      this.width = source.wrapper.width / source.area.width * 100;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize(this);
-
-    // Put the Listener
-    document.addEventListener("mousemove", this.onDrag);
-    document.addEventListener("touchmove", this.onDrag);
-    document.addEventListener("mouseup", this.stopDrag);
-    document.addEventListener("touchend", this.stopDrag);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove the Listener
-    document.removeEventListener("mousemove", this.onDrag);
-    document.removeEventListener("touchmove", this.onDrag);
-    document.removeEventListener("mouseup", this.stopDrag);
-    document.removeEventListener("touchend", this.stopDrag);
-  }
-};
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.ttf?d2285965fe34b05465047401b8595dd0";
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+/***/ 585:
+/***/ (function(module, exports) {
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    draggingFromParent: Boolean,
-    scrolling: Number,
-    wrapper: Object,
-    area: Object,
-    onChangePosition: Function,
-    onDragging: Function,
-    onStopDrag: Function
-  },
-
-  data: function data() {
-    return {
-      height: 0,
-      dragging: false,
-      start: 0
-    };
-  },
-
-
-  watch: {
-    'wrapper.height': function wrapperHeight(val, old) {
-      this.calculateSize(this);
-    },
-    'area.height': function areaHeight(val, old) {
-      this.calculateSize(this);
-    }
-  },
-
-  methods: {
-    startDrag: function startDrag(e) {
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      e = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Prepare to drag
-      this.dragging = true, this.start = e.clientY;
-    },
-    onDrag: function onDrag(e) {
-
-      if (this.dragging) {
-
-        // Make The Parent being in the Dragging State
-        this.onDragging();
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        e = e.changedTouches ? e.changedTouches[0] : e;
-
-        var yMovement = e.clientY - this.start;
-        var yMovementPercentage = yMovement / this.wrapper.height * 100;
-
-        // Update the last e.clientY
-        this.start = e.clientY;
-
-        // The next Vertical Value will be
-        var next = this.scrolling + yMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'vertical');
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      if (this.dragging) {
-        // Parent Should Change the Dragging State
-        this.onStopDrag();
-        this.dragging = false;
-      }
-    },
-    jump: function jump(e) {
-
-      var isContainer = e.target === this.$refs.container;
-
-      if (isContainer) {
-
-        // Get the Element Position
-        var position = this.$refs.scrollbar.getBoundingClientRect();
-
-        // Calculate the vertical Movement
-        var yMovement = e.clientY - position.top;
-        var centerize = this.height / 2;
-        var yMovementPercentage = yMovement / this.wrapper.height * 100 - centerize;
-
-        // Update the last e.clientY
-        this.start = e.clientY;
-
-        // The next Vertical Value will be
-        var next = this.scrolling + yMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'vertical');
-      }
-    },
-    calculateSize: function calculateSize(source) {
-      // Scrollbar Height
-      this.height = source.wrapper.height / source.area.height * 100;
-    },
-    getSize: function getSize() {
-      // The Elements
-      var $scrollArea = this.$refs.container.parentElement;
-      var $scrollWrapper = $scrollArea.parentElement;
-
-      // Get new Elements Size
-      var elementSize = {
-        // Scroll Area Height and Width
-        scrollAreaHeight: $scrollArea.children[0].clientHeight,
-        scrollAreaWidth: $scrollArea.children[0].clientWidth,
-
-        // Scroll Wrapper Height and Width
-        scrollWrapperHeight: $scrollWrapper.clientHeight,
-        scrollWrapperWidth: $scrollWrapper.clientWidth
-      };
-      return elementSize;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize(this);
-
-    // Put the Listener
-    document.addEventListener("mousemove", this.onDrag);
-    document.addEventListener("touchmove", this.onDrag);
-    document.addEventListener("mouseup", this.stopDrag);
-    document.addEventListener("touchend", this.stopDrag);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove the Listener
-    document.removeEventListener("mousemove", this.onDrag);
-    document.removeEventListener("touchmove", this.onDrag);
-    document.removeEventListener("mouseup", this.stopDrag);
-    document.removeEventListener("touchend", this.stopDrag);
-  }
-};
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff?78f07e2c2a535c26ef21d95e41bd7175";
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+/***/ 586:
+/***/ (function(module, exports) {
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _verticalScrollbar = __webpack_require__(7);
-
-var _verticalScrollbar2 = _interopRequireDefault(_verticalScrollbar);
-
-var _horizontalScrollbar = __webpack_require__(6);
-
-var _horizontalScrollbar2 = _interopRequireDefault(_horizontalScrollbar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    classes: String,
-    styles: Object,
-    speed: {
-      type: Number,
-      default: 53
-    },
-    onMaxScroll: Function
-  },
-
-  components: {
-    VerticalScrollbar: _verticalScrollbar2.default,
-    HorizontalScrollbar: _horizontalScrollbar2.default
-  },
-
-  data: function data() {
-    return {
-      ready: false,
-      top: 0,
-      left: 0,
-      scrollAreaHeight: null,
-      scrollAreaWidth: null,
-      scrollWrapperHeight: null,
-      scrollWrapperWidth: null,
-      vMovement: 0,
-      hMovement: 0,
-      dragging: false,
-      start: { y: 0, x: 0 },
-      allowBodyScroll: false
-    };
-  },
-
-
-  methods: {
-    scroll: function scroll(e) {
-      var _this = this;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Set the wheel step
-        var num = _this.speed;
-
-        // DOM events
-        var shifted = e.shiftKey;
-        var scrollY = e.deltaY > 0 ? num : -num;
-        var scrollX = e.deltaX > 0 ? num : -num;
-
-        // Fix Mozilla Shifted Wheel~
-        if (shifted && e.deltaX == 0) scrollX = e.deltaY > 0 ? num : -num;
-
-        // Next Value
-        var nextY = _this.top + scrollY;
-        var nextX = _this.left + scrollX;
-
-        // Is it Scrollable?
-        var canScrollY = _this.scrollAreaHeight > _this.scrollWrapperHeight;
-        var canScrollX = _this.scrollAreaWidth > _this.scrollWrapperWidth;
-
-        // Vertical Scrolling
-        if (canScrollY && !shifted) _this.normalizeVertical(nextY);
-
-        // Horizontal Scrolling
-        if (shifted && canScrollX) _this.normalizeHorizontal(nextX);
-      });
-
-      // prevent Default only if scrolled content is not at the top/bottom
-      if (!this.allowBodyScroll) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    },
-
-
-    // DRAG EVENT JUST FOR TOUCH DEVICE~
-    startDrag: function startDrag(e) {
-      var _this2 = this;
-
-      this.touchEvent = e;
-
-      var evt = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Prepare to drag
-        _this2.dragging = true, _this2.start = { y: evt.pageY, x: evt.pageX };
-      });
-    },
-    onDrag: function onDrag(e) {
-      if (this.dragging) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        // Prevent Click Event When it dragging
-        if (this.touchEvent) {
-          this.touchEvent.preventDefault();
-          this.touchEvent.stopPropagation();
-        }
-
-        var evt = e.changedTouches ? e.changedTouches[0] : e;
-
-        // Invers the Movement
-        var yMovement = this.start.y - evt.clientY;
-        var xMovement = this.start.x - evt.clientX;
-
-        // Update the last e.client
-        this.start = { y: evt.clientY, x: evt.clientX
-
-          // The next Vertical Value will be
-        };var nextY = this.top + yMovement;
-        var nextX = this.left + xMovement;
-
-        this.normalizeVertical(nextY);
-        this.normalizeHorizontal(nextX);
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      this.dragging = false;
-      this.touchEvent = false;
-    },
-    scrollToY: function scrollToY(y) {
-      this.normalizeVertical(y);
-    },
-    scrollToX: function scrollToX(x) {
-      this.normalizeHorizontal(x);
-    },
-    normalizeVertical: function normalizeVertical(next) {
-      var elementSize = this.getSize();
-
-      // Vertical Scrolling
-      var lowerEnd = elementSize.scrollAreaHeight - elementSize.scrollWrapperHeight;
-
-      // Max Scroll Down
-      var maxBottom = next > lowerEnd;
-      if (maxBottom) next = lowerEnd;
-
-      // Max Scroll Up
-      var maxTop = next < 0;
-      if (maxTop) next = 0;
-
-      // Update the Vertical Value if it's needed
-      var shouldScroll = this.top !== next;
-      this.allowBodyScroll = !shouldScroll;
-      if (shouldScroll) {
-        this.top = next, this.vMovement = next / elementSize.scrollAreaHeight * 100;
-
-        if (this.onMaxScroll && (maxTop || maxBottom)) {
-          this.onMaxScroll({ top: maxTop, bottom: maxBottom, right: false, left: false });
-        }
-      }
-    },
-    normalizeHorizontal: function normalizeHorizontal(next) {
-      var elementSize = this.getSize();
-
-      // Horizontal Scrolling
-      var rightEnd = elementSize.scrollAreaWidth - this.scrollWrapperWidth;
-
-      // Max Scroll Right
-      var maxRight = next > rightEnd;
-      if (maxRight) next = rightEnd;
-
-      // Max Scroll Left
-      var maxLeft = next < 0;
-      if (next < 0) next = 0;
-
-      // Update the Horizontal Value
-      var shouldScroll = this.left !== next;
-      this.allowBodyScroll = !shouldScroll;
-      if (shouldScroll) {
-        this.left = next, this.hMovement = next / elementSize.scrollAreaWidth * 100;
-
-        if (this.onMaxScroll && (maxRight || maxLeft)) {
-          this.onMaxScroll({ right: maxRight, left: maxLeft, top: false, bottom: false });
-        }
-      }
-    },
-    handleChangePosition: function handleChangePosition(movement, orientation) {
-      var _this3 = this;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Convert Percentage to Pixel
-        var next = movement / 100;
-        if (orientation == 'vertical') _this3.normalizeVertical(next * _this3.scrollAreaHeight);
-        if (orientation == 'horizontal') _this3.normalizeHorizontal(next * _this3.scrollAreaWidth);
-      });
-    },
-    handleScrollbarDragging: function handleScrollbarDragging() {
-      this.dragging = true;
-    },
-    handleScrollbarStopDrag: function handleScrollbarStopDrag() {
-      this.dragging = false;
-    },
-    getSize: function getSize() {
-      // The Elements
-      var $scrollArea = this.$refs.scrollArea;
-      var $scrollWrapper = this.$refs.scrollWrapper;
-
-      // Get new Elements Size
-      var elementSize = {
-        // Scroll Area Height and Width
-        scrollAreaHeight: $scrollArea.children[0].clientHeight,
-        scrollAreaWidth: $scrollArea.children[0].clientWidth,
-
-        // Scroll Wrapper Height and Width
-        scrollWrapperHeight: $scrollWrapper.clientHeight,
-        scrollWrapperWidth: $scrollWrapper.clientWidth
-      };
-      return elementSize;
-    },
-    calculateSize: function calculateSize(cb) {
-      if (typeof cb !== 'function') cb = null;
-
-      var elementSize = this.getSize();
-
-      if (elementSize.scrollWrapperHeight !== this.scrollWrapperHeight || elementSize.scrollWrapperWidth !== this.scrollWrapperWidth || elementSize.scrollAreaHeight !== this.scrollAreaHeight || elementSize.scrollAreaWidth !== this.scrollAreaWidth) {
-
-        // Scroll Area Height and Width
-        this.scrollAreaHeight = elementSize.scrollAreaHeight, this.scrollAreaWidth = elementSize.scrollAreaWidth,
-
-        // Scroll Wrapper Height and Width
-        this.scrollWrapperHeight = elementSize.scrollWrapperHeight, this.scrollWrapperWidth = elementSize.scrollWrapperWidth,
-
-        // Make sure The wrapper is Ready, then render the scrollbar
-        this.ready = true;
-
-        return cb ? cb() : false;
-      } else return cb ? cb() : false;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize();
-
-    // Attach The Event for Responsive View~
-    window.addEventListener('resize', this.calculateSize);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove Event
-    window.removeEventListener('resize', this.calculateSize);
-  }
-};
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _vueScrollbar = __webpack_require__(1);
-
-var _vueScrollbar2 = _interopRequireDefault(_vueScrollbar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = _vueScrollbar2.default;
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__ = __webpack_require__(8);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/horizontal-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] horizontal-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03d7e587", Component.options)
-  } else {
-    hotAPI.reload("data-v-03d7e587", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__ = __webpack_require__(10);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/vertical-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vertical-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-9fd7644e", Component.options)
-  } else {
-    hotAPI.reload("data-v-9fd7644e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.width < 100) ? _c('div', {
-    ref: "container",
-    staticClass: "vue-scrollbar__scrollbar-horizontal",
-    on: {
-      "click": _vm.jump
-    }
-  }, [_c('div', {
-    ref: "scrollbar",
-    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
-    style: ({
-      width: this.width + '%',
-      left: this.scrolling + '%'
-    }),
-    on: {
-      "touchstart": _vm.startDrag,
-      "mousedown": _vm.startDrag
-    }
-  })]) : _vm._e()])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-03d7e587", esExports)
-  }
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    ref: "scrollWrapper",
-    class: 'vue-scrollbar__wrapper' + (this.classes ? ' ' + this.classes : ''),
-    style: (this.styles),
-    on: {
-      "click": _vm.calculateSize
-    }
-  }, [_c('div', {
-    ref: "scrollArea",
-    class: 'vue-scrollbar__area' + (this.dragging ? ' ' : ' vue-scrollbar-transition'),
-    style: ({
-      marginTop: this.top * -1 + 'px',
-      marginLeft: this.left * -1 + 'px'
-    }),
-    on: {
-      "wheel": _vm.scroll,
-      "touchstart": _vm.startDrag,
-      "touchmove": _vm.onDrag,
-      "touchend": _vm.stopDrag
-    }
-  }, [_vm._t("default"), _vm._v(" "), (_vm.ready) ? _c('vertical-scrollbar', {
-    attrs: {
-      "area": {
-        height: _vm.scrollAreaHeight
-      },
-      "wrapper": {
-        height: _vm.scrollWrapperHeight
-      },
-      "scrolling": _vm.vMovement,
-      "dragging-from-parent": _vm.dragging,
-      "on-change-position": _vm.handleChangePosition,
-      "on-dragging": _vm.handleScrollbarDragging,
-      "on-stop-drag": _vm.handleScrollbarStopDrag
-    }
-  }) : _vm._e(), _vm._v(" "), (_vm.ready) ? _c('horizontal-scrollbar', {
-    attrs: {
-      "area": {
-        width: _vm.scrollAreaWidth
-      },
-      "wrapper": {
-        width: _vm.scrollWrapperWidth
-      },
-      "scrolling": _vm.hMovement,
-      "dragging-from-parent": _vm.dragging,
-      "on-change-position": _vm.handleChangePosition,
-      "on-dragging": _vm.handleScrollbarDragging,
-      "on-stop-drag": _vm.handleScrollbarStopDrag
-    }
-  }) : _vm._e()], 2)])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7ec59f76", esExports)
-  }
-}
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.height < 100) ? _c('div', {
-    ref: "container",
-    staticClass: "vue-scrollbar__scrollbar-vertical",
-    on: {
-      "click": _vm.jump
-    }
-  }, [_c('div', {
-    ref: "scrollbar",
-    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
-    style: ({
-      height: _vm.height + '%',
-      top: _vm.scrolling + '%'
-    }),
-    on: {
-      "touchstart": _vm.startDrag,
-      "mousedown": _vm.startDrag
-    }
-  })]) : _vm._e()])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-9fd7644e", esExports)
-  }
-}
-
-/***/ })
-/******/ ]);
-});
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.svg?2fe2efe63441d830b1acd106c1fe8734";
 
 /***/ })
 

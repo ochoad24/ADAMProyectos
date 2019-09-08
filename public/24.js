@@ -1,22 +1,22 @@
 webpackJsonp([24],{
 
-/***/ 1424:
+/***/ 1455:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1425);
+var content = __webpack_require__(1456);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6a9e6c33", content, false, {});
+var update = __webpack_require__(26)("271fe70c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./clockface.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./clockface.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,38 +27,39 @@ if(false) {
 
 /***/ }),
 
-/***/ 1425:
+/***/ 1456:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+var escape = __webpack_require__(28);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.clearfix {\r\n  *zoom: 1;\n}\n.clearfix:before,\r\n.clearfix:after {\r\n  display: table;\r\n  content: \"\";\r\n  line-height: 0;\n}\n.clearfix:after {\r\n  clear: both;\n}\n.hide-text {\r\n  font: 0/0 a;\r\n  color: transparent;\r\n  text-shadow: none;\r\n  background-color: transparent;\r\n  border: 0;\n}\n.input-block-level {\r\n  display: block;\r\n  width: 100%;\r\n  min-height: 30px;\r\n  -webkit-box-sizing: border-box;\r\n  -moz-box-sizing: border-box;\r\n  box-sizing: border-box;\n}\n.clockface {\r\n  width: 160px;\r\n  padding: 3px;\r\n  text-align: center;\r\n  /*\r\n    .l3 .center span {\r\n    \tvertical-align: middle;\r\n\t\tdisplay: inline-block;\r\n\t\t.ie7-inline-block();  \r\n\t\tpadding: 0 2px;  \t\r\n    }\r\n    */\r\n\r\n  /*\r\n    input {\r\n    \twidth: 20px;\r\n    \tmargin: 0;\r\n    \tvertical-align: top; \r\n     }\t\r\n\r\n    a {\r\n    \ttext-decoration: none;\r\n    \tpadding: 0 3px;\r\n    \tvertical-align: top;\r\n    \tfont-size: 0.85em;\r\n    \t.border-radius(3px);\r\n\r\n    \t&.am {margin-right: 8px;}\t\r\n    \t\r\n    \t&.active,\r\n    \t&.active:hover {\r\n    \t\t.buttonBackground(@btnSuccessBackground, spin(@btnSuccessBackground, 20));\r\n    \t}\r\n    }\r\n    */\n}\n.clockface > div {\r\n  clear: both;\r\n  overflow: auto;\n}\n.clockface .outer,\r\n.clockface .inner {\r\n  width: 22px;\r\n  height: 22px;\r\n  line-height: 22px;\r\n  cursor: default;\r\n  -webkit-border-radius: 4px;\r\n  -moz-border-radius: 4px;\r\n  border-radius: 4px;\n}\n.clockface .outer.active,\r\n.clockface .inner.active,\r\n.clockface .outer.active:hover,\r\n.clockface .inner.active:hover {\r\n  color: #fff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\n}\n.clockface .outer:hover,\r\n.clockface .inner:hover {\r\n  background-color: #dcdcdc;\n}\n.clockface .outer {\r\n  color: gray;\r\n  font-size: 0.8em;\n}\n.clockface .outer.active,\r\n.clockface .outer.active:hover {\r\n  color: #ffffff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\r\n  background-color: #5bb75b;\r\n  background-image: -moz-linear-gradient(top, #62c462, #51a351);\r\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));\r\n  background-image: -webkit-linear-gradient(top, #62c462, #51a351);\r\n  background-image: -o-linear-gradient(top, #62c462, #51a351);\r\n  background-image: linear-gradient(to bottom, #62c462, #51a351);\r\n  background-repeat: repeat-x;\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);\r\n  border-color: #51a351 #51a351 #387038;\r\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n  *background-color: #51a351;\r\n  /* Darken IE7 buttons by default so they stand out more given they won't have borders */\r\n\r\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.clockface .outer.active:hover,\r\n.clockface .outer.active:hover:hover,\r\n.clockface .outer.active:active,\r\n.clockface .outer.active:hover:active,\r\n.clockface .outer.active.active,\r\n.clockface .outer.active:hover.active,\r\n.clockface .outer.active.disabled,\r\n.clockface .outer.active:hover.disabled,\r\n.clockface .outer.active[disabled],\r\n.clockface .outer.active:hover[disabled] {\r\n  color: #ffffff;\r\n  background-color: #51a351;\r\n  *background-color: #499249;\n}\n.clockface .outer.active:active,\r\n.clockface .outer.active:hover:active,\r\n.clockface .outer.active.active,\r\n.clockface .outer.active:hover.active {\r\n  background-color: #408140 \\9;\n}\n.clockface .inner.active,\r\n.clockface .inner.active:hover {\r\n  color: #ffffff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\r\n  background-color: #006dcc;\r\n  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));\r\n  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: -o-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: linear-gradient(to bottom, #0088cc, #0044cc);\r\n  background-repeat: repeat-x;\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);\r\n  border-color: #0044cc #0044cc #002a80;\r\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n  *background-color: #0044cc;\r\n  /* Darken IE7 buttons by default so they stand out more given they won't have borders */\r\n\r\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.clockface .inner.active:hover,\r\n.clockface .inner.active:hover:hover,\r\n.clockface .inner.active:active,\r\n.clockface .inner.active:hover:active,\r\n.clockface .inner.active.active,\r\n.clockface .inner.active:hover.active,\r\n.clockface .inner.active.disabled,\r\n.clockface .inner.active:hover.disabled,\r\n.clockface .inner.active[disabled],\r\n.clockface .inner.active:hover[disabled] {\r\n  color: #ffffff;\r\n  background-color: #0044cc;\r\n  *background-color: #003bb3;\n}\n.clockface .inner.active:active,\r\n.clockface .inner.active:hover:active,\r\n.clockface .inner.active.active,\r\n.clockface .inner.active:hover.active {\r\n  background-color: #003399 \\9;\n}\n.clockface .l1 .cell,\r\n.clockface .l5 .cell {\r\n  width: 22px;\r\n  display: inline-block;\r\n  *display: inline;\r\n  /* IE7 inline-block hack */\r\n\r\n  *zoom: 1;\n}\n.clockface .l1 .outer {\r\n  margin-bottom: 3px;\n}\n.clockface .l5 .outer {\r\n  margin-top: 3px;\n}\n.clockface .l2 .outer,\r\n.clockface .l3 .outer,\r\n.clockface .l4 .outer,\r\n.clockface .l2 .inner,\r\n.clockface .l3 .inner,\r\n.clockface .l4 .inner {\r\n  display: inline-block;\r\n  *display: inline;\r\n  /* IE7 inline-block hack */\r\n\r\n  *zoom: 1;\r\n  vertical-align: middle;\n}\n.clockface .l2 .left,\r\n.clockface .l3 .left,\r\n.clockface .l4 .left {\r\n  float: left;\n}\n.clockface .l2 .left .outer,\r\n.clockface .l3 .left .outer,\r\n.clockface .l4 .left .outer {\r\n  margin-right: 3px;\n}\n.clockface .l2 .right,\r\n.clockface .l3 .right,\r\n.clockface .l4 .right {\r\n  float: right;\n}\n.clockface .l2 .right .outer,\r\n.clockface .l3 .right .outer,\r\n.clockface .l4 .right .outer {\r\n  margin-left: 3px;\n}\n.clockface .ampm {\r\n  font-size: 0.8em;\r\n  text-decoration: none;\r\n  border-bottom: dashed 1px;\n}\n.clockface .ampm:focus {\r\n  outline: 0;\r\n  outline: thin dotted \\9;\r\n  /* IE6-9 */\n}\r\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'simple-line-icons';\n  src: url(" + escape(__webpack_require__(572)) + ");\n  src: url(" + escape(__webpack_require__(572)) + "#iefix) format('embedded-opentype'), url(" + escape(__webpack_require__(613)) + ") format('woff2'), url(" + escape(__webpack_require__(614)) + ") format('truetype'), url(" + escape(__webpack_require__(615)) + ") format('woff'), url(" + escape(__webpack_require__(616)) + "#simple-line-icons) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n/*\n Use the following CSS code if you want to have a class per icon.\n Instead of a list of all class selectors, you can use the generic [class*=\"icon-\"] selector, but it's slower:\n*/\n.icon-user,\n.icon-people,\n.icon-user-female,\n.icon-user-follow,\n.icon-user-following,\n.icon-user-unfollow,\n.icon-login,\n.icon-logout,\n.icon-emotsmile,\n.icon-phone,\n.icon-call-end,\n.icon-call-in,\n.icon-call-out,\n.icon-map,\n.icon-location-pin,\n.icon-direction,\n.icon-directions,\n.icon-compass,\n.icon-layers,\n.icon-menu,\n.icon-list,\n.icon-options-vertical,\n.icon-options,\n.icon-arrow-down,\n.icon-arrow-left,\n.icon-arrow-right,\n.icon-arrow-up,\n.icon-arrow-up-circle,\n.icon-arrow-left-circle,\n.icon-arrow-right-circle,\n.icon-arrow-down-circle,\n.icon-check,\n.icon-clock,\n.icon-plus,\n.icon-minus,\n.icon-close,\n.icon-event,\n.icon-exclamation,\n.icon-organization,\n.icon-trophy,\n.icon-screen-smartphone,\n.icon-screen-desktop,\n.icon-plane,\n.icon-notebook,\n.icon-mustache,\n.icon-mouse,\n.icon-magnet,\n.icon-energy,\n.icon-disc,\n.icon-cursor,\n.icon-cursor-move,\n.icon-crop,\n.icon-chemistry,\n.icon-speedometer,\n.icon-shield,\n.icon-screen-tablet,\n.icon-magic-wand,\n.icon-hourglass,\n.icon-graduation,\n.icon-ghost,\n.icon-game-controller,\n.icon-fire,\n.icon-eyeglass,\n.icon-envelope-open,\n.icon-envelope-letter,\n.icon-bell,\n.icon-badge,\n.icon-anchor,\n.icon-wallet,\n.icon-vector,\n.icon-speech,\n.icon-puzzle,\n.icon-printer,\n.icon-present,\n.icon-playlist,\n.icon-pin,\n.icon-picture,\n.icon-handbag,\n.icon-globe-alt,\n.icon-globe,\n.icon-folder-alt,\n.icon-folder,\n.icon-film,\n.icon-feed,\n.icon-drop,\n.icon-drawer,\n.icon-docs,\n.icon-doc,\n.icon-diamond,\n.icon-cup,\n.icon-calculator,\n.icon-bubbles,\n.icon-briefcase,\n.icon-book-open,\n.icon-basket-loaded,\n.icon-basket,\n.icon-bag,\n.icon-action-undo,\n.icon-action-redo,\n.icon-wrench,\n.icon-umbrella,\n.icon-trash,\n.icon-tag,\n.icon-support,\n.icon-frame,\n.icon-size-fullscreen,\n.icon-size-actual,\n.icon-shuffle,\n.icon-share-alt,\n.icon-share,\n.icon-rocket,\n.icon-question,\n.icon-pie-chart,\n.icon-pencil,\n.icon-note,\n.icon-loop,\n.icon-home,\n.icon-grid,\n.icon-graph,\n.icon-microphone,\n.icon-music-tone-alt,\n.icon-music-tone,\n.icon-earphones-alt,\n.icon-earphones,\n.icon-equalizer,\n.icon-like,\n.icon-dislike,\n.icon-control-start,\n.icon-control-rewind,\n.icon-control-play,\n.icon-control-pause,\n.icon-control-forward,\n.icon-control-end,\n.icon-volume-1,\n.icon-volume-2,\n.icon-volume-off,\n.icon-calendar,\n.icon-bulb,\n.icon-chart,\n.icon-ban,\n.icon-bubble,\n.icon-camrecorder,\n.icon-camera,\n.icon-cloud-download,\n.icon-cloud-upload,\n.icon-envelope,\n.icon-eye,\n.icon-flag,\n.icon-heart,\n.icon-info,\n.icon-key,\n.icon-link,\n.icon-lock,\n.icon-lock-open,\n.icon-magnifier,\n.icon-magnifier-add,\n.icon-magnifier-remove,\n.icon-paper-clip,\n.icon-paper-plane,\n.icon-power,\n.icon-refresh,\n.icon-reload,\n.icon-settings,\n.icon-star,\n.icon-symbol-female,\n.icon-symbol-male,\n.icon-target,\n.icon-credit-card,\n.icon-paypal,\n.icon-social-tumblr,\n.icon-social-twitter,\n.icon-social-facebook,\n.icon-social-instagram,\n.icon-social-linkedin,\n.icon-social-pinterest,\n.icon-social-github,\n.icon-social-google,\n.icon-social-reddit,\n.icon-social-skype,\n.icon-social-dribbble,\n.icon-social-behance,\n.icon-social-foursqare,\n.icon-social-soundcloud,\n.icon-social-spotify,\n.icon-social-stumbleupon,\n.icon-social-youtube,\n.icon-social-dropbox,\n.icon-social-vkontakte,\n.icon-social-steam {\n  font-family: 'simple-line-icons';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-user:before {\n  content: \"\\E005\";\n}\n.icon-people:before {\n  content: \"\\E001\";\n}\n.icon-user-female:before {\n  content: \"\\E000\";\n}\n.icon-user-follow:before {\n  content: \"\\E002\";\n}\n.icon-user-following:before {\n  content: \"\\E003\";\n}\n.icon-user-unfollow:before {\n  content: \"\\E004\";\n}\n.icon-login:before {\n  content: \"\\E066\";\n}\n.icon-logout:before {\n  content: \"\\E065\";\n}\n.icon-emotsmile:before {\n  content: \"\\E021\";\n}\n.icon-phone:before {\n  content: \"\\E600\";\n}\n.icon-call-end:before {\n  content: \"\\E048\";\n}\n.icon-call-in:before {\n  content: \"\\E047\";\n}\n.icon-call-out:before {\n  content: \"\\E046\";\n}\n.icon-map:before {\n  content: \"\\E033\";\n}\n.icon-location-pin:before {\n  content: \"\\E096\";\n}\n.icon-direction:before {\n  content: \"\\E042\";\n}\n.icon-directions:before {\n  content: \"\\E041\";\n}\n.icon-compass:before {\n  content: \"\\E045\";\n}\n.icon-layers:before {\n  content: \"\\E034\";\n}\n.icon-menu:before {\n  content: \"\\E601\";\n}\n.icon-list:before {\n  content: \"\\E067\";\n}\n.icon-options-vertical:before {\n  content: \"\\E602\";\n}\n.icon-options:before {\n  content: \"\\E603\";\n}\n.icon-arrow-down:before {\n  content: \"\\E604\";\n}\n.icon-arrow-left:before {\n  content: \"\\E605\";\n}\n.icon-arrow-right:before {\n  content: \"\\E606\";\n}\n.icon-arrow-up:before {\n  content: \"\\E607\";\n}\n.icon-arrow-up-circle:before {\n  content: \"\\E078\";\n}\n.icon-arrow-left-circle:before {\n  content: \"\\E07A\";\n}\n.icon-arrow-right-circle:before {\n  content: \"\\E079\";\n}\n.icon-arrow-down-circle:before {\n  content: \"\\E07B\";\n}\n.icon-check:before {\n  content: \"\\E080\";\n}\n.icon-clock:before {\n  content: \"\\E081\";\n}\n.icon-plus:before {\n  content: \"\\E095\";\n}\n.icon-minus:before {\n  content: \"\\E615\";\n}\n.icon-close:before {\n  content: \"\\E082\";\n}\n.icon-event:before {\n  content: \"\\E619\";\n}\n.icon-exclamation:before {\n  content: \"\\E617\";\n}\n.icon-organization:before {\n  content: \"\\E616\";\n}\n.icon-trophy:before {\n  content: \"\\E006\";\n}\n.icon-screen-smartphone:before {\n  content: \"\\E010\";\n}\n.icon-screen-desktop:before {\n  content: \"\\E011\";\n}\n.icon-plane:before {\n  content: \"\\E012\";\n}\n.icon-notebook:before {\n  content: \"\\E013\";\n}\n.icon-mustache:before {\n  content: \"\\E014\";\n}\n.icon-mouse:before {\n  content: \"\\E015\";\n}\n.icon-magnet:before {\n  content: \"\\E016\";\n}\n.icon-energy:before {\n  content: \"\\E020\";\n}\n.icon-disc:before {\n  content: \"\\E022\";\n}\n.icon-cursor:before {\n  content: \"\\E06E\";\n}\n.icon-cursor-move:before {\n  content: \"\\E023\";\n}\n.icon-crop:before {\n  content: \"\\E024\";\n}\n.icon-chemistry:before {\n  content: \"\\E026\";\n}\n.icon-speedometer:before {\n  content: \"\\E007\";\n}\n.icon-shield:before {\n  content: \"\\E00E\";\n}\n.icon-screen-tablet:before {\n  content: \"\\E00F\";\n}\n.icon-magic-wand:before {\n  content: \"\\E017\";\n}\n.icon-hourglass:before {\n  content: \"\\E018\";\n}\n.icon-graduation:before {\n  content: \"\\E019\";\n}\n.icon-ghost:before {\n  content: \"\\E01A\";\n}\n.icon-game-controller:before {\n  content: \"\\E01B\";\n}\n.icon-fire:before {\n  content: \"\\E01C\";\n}\n.icon-eyeglass:before {\n  content: \"\\E01D\";\n}\n.icon-envelope-open:before {\n  content: \"\\E01E\";\n}\n.icon-envelope-letter:before {\n  content: \"\\E01F\";\n}\n.icon-bell:before {\n  content: \"\\E027\";\n}\n.icon-badge:before {\n  content: \"\\E028\";\n}\n.icon-anchor:before {\n  content: \"\\E029\";\n}\n.icon-wallet:before {\n  content: \"\\E02A\";\n}\n.icon-vector:before {\n  content: \"\\E02B\";\n}\n.icon-speech:before {\n  content: \"\\E02C\";\n}\n.icon-puzzle:before {\n  content: \"\\E02D\";\n}\n.icon-printer:before {\n  content: \"\\E02E\";\n}\n.icon-present:before {\n  content: \"\\E02F\";\n}\n.icon-playlist:before {\n  content: \"\\E030\";\n}\n.icon-pin:before {\n  content: \"\\E031\";\n}\n.icon-picture:before {\n  content: \"\\E032\";\n}\n.icon-handbag:before {\n  content: \"\\E035\";\n}\n.icon-globe-alt:before {\n  content: \"\\E036\";\n}\n.icon-globe:before {\n  content: \"\\E037\";\n}\n.icon-folder-alt:before {\n  content: \"\\E039\";\n}\n.icon-folder:before {\n  content: \"\\E089\";\n}\n.icon-film:before {\n  content: \"\\E03A\";\n}\n.icon-feed:before {\n  content: \"\\E03B\";\n}\n.icon-drop:before {\n  content: \"\\E03E\";\n}\n.icon-drawer:before {\n  content: \"\\E03F\";\n}\n.icon-docs:before {\n  content: \"\\E040\";\n}\n.icon-doc:before {\n  content: \"\\E085\";\n}\n.icon-diamond:before {\n  content: \"\\E043\";\n}\n.icon-cup:before {\n  content: \"\\E044\";\n}\n.icon-calculator:before {\n  content: \"\\E049\";\n}\n.icon-bubbles:before {\n  content: \"\\E04A\";\n}\n.icon-briefcase:before {\n  content: \"\\E04B\";\n}\n.icon-book-open:before {\n  content: \"\\E04C\";\n}\n.icon-basket-loaded:before {\n  content: \"\\E04D\";\n}\n.icon-basket:before {\n  content: \"\\E04E\";\n}\n.icon-bag:before {\n  content: \"\\E04F\";\n}\n.icon-action-undo:before {\n  content: \"\\E050\";\n}\n.icon-action-redo:before {\n  content: \"\\E051\";\n}\n.icon-wrench:before {\n  content: \"\\E052\";\n}\n.icon-umbrella:before {\n  content: \"\\E053\";\n}\n.icon-trash:before {\n  content: \"\\E054\";\n}\n.icon-tag:before {\n  content: \"\\E055\";\n}\n.icon-support:before {\n  content: \"\\E056\";\n}\n.icon-frame:before {\n  content: \"\\E038\";\n}\n.icon-size-fullscreen:before {\n  content: \"\\E057\";\n}\n.icon-size-actual:before {\n  content: \"\\E058\";\n}\n.icon-shuffle:before {\n  content: \"\\E059\";\n}\n.icon-share-alt:before {\n  content: \"\\E05A\";\n}\n.icon-share:before {\n  content: \"\\E05B\";\n}\n.icon-rocket:before {\n  content: \"\\E05C\";\n}\n.icon-question:before {\n  content: \"\\E05D\";\n}\n.icon-pie-chart:before {\n  content: \"\\E05E\";\n}\n.icon-pencil:before {\n  content: \"\\E05F\";\n}\n.icon-note:before {\n  content: \"\\E060\";\n}\n.icon-loop:before {\n  content: \"\\E064\";\n}\n.icon-home:before {\n  content: \"\\E069\";\n}\n.icon-grid:before {\n  content: \"\\E06A\";\n}\n.icon-graph:before {\n  content: \"\\E06B\";\n}\n.icon-microphone:before {\n  content: \"\\E063\";\n}\n.icon-music-tone-alt:before {\n  content: \"\\E061\";\n}\n.icon-music-tone:before {\n  content: \"\\E062\";\n}\n.icon-earphones-alt:before {\n  content: \"\\E03C\";\n}\n.icon-earphones:before {\n  content: \"\\E03D\";\n}\n.icon-equalizer:before {\n  content: \"\\E06C\";\n}\n.icon-like:before {\n  content: \"\\E068\";\n}\n.icon-dislike:before {\n  content: \"\\E06D\";\n}\n.icon-control-start:before {\n  content: \"\\E06F\";\n}\n.icon-control-rewind:before {\n  content: \"\\E070\";\n}\n.icon-control-play:before {\n  content: \"\\E071\";\n}\n.icon-control-pause:before {\n  content: \"\\E072\";\n}\n.icon-control-forward:before {\n  content: \"\\E073\";\n}\n.icon-control-end:before {\n  content: \"\\E074\";\n}\n.icon-volume-1:before {\n  content: \"\\E09F\";\n}\n.icon-volume-2:before {\n  content: \"\\E0A0\";\n}\n.icon-volume-off:before {\n  content: \"\\E0A1\";\n}\n.icon-calendar:before {\n  content: \"\\E075\";\n}\n.icon-bulb:before {\n  content: \"\\E076\";\n}\n.icon-chart:before {\n  content: \"\\E077\";\n}\n.icon-ban:before {\n  content: \"\\E07C\";\n}\n.icon-bubble:before {\n  content: \"\\E07D\";\n}\n.icon-camrecorder:before {\n  content: \"\\E07E\";\n}\n.icon-camera:before {\n  content: \"\\E07F\";\n}\n.icon-cloud-download:before {\n  content: \"\\E083\";\n}\n.icon-cloud-upload:before {\n  content: \"\\E084\";\n}\n.icon-envelope:before {\n  content: \"\\E086\";\n}\n.icon-eye:before {\n  content: \"\\E087\";\n}\n.icon-flag:before {\n  content: \"\\E088\";\n}\n.icon-heart:before {\n  content: \"\\E08A\";\n}\n.icon-info:before {\n  content: \"\\E08B\";\n}\n.icon-key:before {\n  content: \"\\E08C\";\n}\n.icon-link:before {\n  content: \"\\E08D\";\n}\n.icon-lock:before {\n  content: \"\\E08E\";\n}\n.icon-lock-open:before {\n  content: \"\\E08F\";\n}\n.icon-magnifier:before {\n  content: \"\\E090\";\n}\n.icon-magnifier-add:before {\n  content: \"\\E091\";\n}\n.icon-magnifier-remove:before {\n  content: \"\\E092\";\n}\n.icon-paper-clip:before {\n  content: \"\\E093\";\n}\n.icon-paper-plane:before {\n  content: \"\\E094\";\n}\n.icon-power:before {\n  content: \"\\E097\";\n}\n.icon-refresh:before {\n  content: \"\\E098\";\n}\n.icon-reload:before {\n  content: \"\\E099\";\n}\n.icon-settings:before {\n  content: \"\\E09A\";\n}\n.icon-star:before {\n  content: \"\\E09B\";\n}\n.icon-symbol-female:before {\n  content: \"\\E09C\";\n}\n.icon-symbol-male:before {\n  content: \"\\E09D\";\n}\n.icon-target:before {\n  content: \"\\E09E\";\n}\n.icon-credit-card:before {\n  content: \"\\E025\";\n}\n.icon-paypal:before {\n  content: \"\\E608\";\n}\n.icon-social-tumblr:before {\n  content: \"\\E00A\";\n}\n.icon-social-twitter:before {\n  content: \"\\E009\";\n}\n.icon-social-facebook:before {\n  content: \"\\E00B\";\n}\n.icon-social-instagram:before {\n  content: \"\\E609\";\n}\n.icon-social-linkedin:before {\n  content: \"\\E60A\";\n}\n.icon-social-pinterest:before {\n  content: \"\\E60B\";\n}\n.icon-social-github:before {\n  content: \"\\E60C\";\n}\n.icon-social-google:before {\n  content: \"\\E60D\";\n}\n.icon-social-reddit:before {\n  content: \"\\E60E\";\n}\n.icon-social-skype:before {\n  content: \"\\E60F\";\n}\n.icon-social-dribbble:before {\n  content: \"\\E00D\";\n}\n.icon-social-behance:before {\n  content: \"\\E610\";\n}\n.icon-social-foursqare:before {\n  content: \"\\E611\";\n}\n.icon-social-soundcloud:before {\n  content: \"\\E612\";\n}\n.icon-social-spotify:before {\n  content: \"\\E613\";\n}\n.icon-social-stumbleupon:before {\n  content: \"\\E614\";\n}\n.icon-social-youtube:before {\n  content: \"\\E008\";\n}\n.icon-social-dropbox:before {\n  content: \"\\E00C\";\n}\n.icon-social-vkontakte:before {\n  content: \"\\E618\";\n}\n.icon-social-steam:before {\n  content: \"\\E620\";\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1426:
+/***/ 1457:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1427);
+var content = __webpack_require__(1458);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("5722bc59", content, false, {});
+var update = __webpack_require__(26)("37e98bd8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-clockpicker.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-clockpicker.min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,38 +70,38 @@ if(false) {
 
 /***/ }),
 
-/***/ 1427:
+/***/ 1458:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*!\n * ClockPicker v0.0.7 for Bootstrap (http://weareoutman.github.io/clockpicker/)\n * Copyright 2014 Wang Shenwei.\n * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)\n */\n.clockpicker .input-group-addon{cursor:pointer\n}\n.clockpicker-moving{cursor:move\n}\n.clockpicker-align-left.popover>.arrow{left:25px\n}\n.clockpicker-align-top.popover>.arrow{top:17px\n}\n.clockpicker-align-right.popover>.arrow{left:auto;right:25px\n}\n.clockpicker-align-bottom.popover>.arrow{top:auto;bottom:6px\n}\n.clockpicker-popover .popover-title{background-color:#fff;color:#999;font-size:24px;font-weight:700;line-height:30px;text-align:center\n}\n.clockpicker-popover .popover-title span{cursor:pointer\n}\n.clockpicker-popover .popover-content{background-color:#f8f8f8;padding:12px\n}\n.popover-content:last-child{border-bottom-left-radius:5px;border-bottom-right-radius:5px\n}\n.clockpicker-plate{background-color:#fff;border:1px solid #ccc;border-radius:50%;width:200px;height:200px;overflow:visible;position:relative;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none\n}\n.clockpicker-canvas,.clockpicker-dial{width:200px;height:200px;position:absolute;left:-1px;top:-1px\n}\n.clockpicker-minutes{visibility:hidden\n}\n.clockpicker-tick{border-radius:50%;color:#666;line-height:26px;text-align:center;width:26px;height:26px;position:absolute;cursor:pointer\n}\n.clockpicker-tick.active,.clockpicker-tick:hover{background-color:#c0e5f7;background-color:rgba(0,149,221,.25)\n}\n.clockpicker-button{background-image:none;background-color:#fff;border-width:1px 0 0;border-top-left-radius:0;border-top-right-radius:0;margin:0;padding:10px 0\n}\n.clockpicker-button:hover{background-image:none;background-color:#ebebeb\n}\n.clockpicker-button:focus{outline:0!important\n}\n.clockpicker-dial{-webkit-transition:-webkit-transform 350ms,opacity 350ms;-moz-transition:-moz-transform 350ms,opacity 350ms;-ms-transition:-ms-transform 350ms,opacity 350ms;-o-transition:-o-transform 350ms,opacity 350ms;transition:transform 350ms,opacity 350ms\n}\n.clockpicker-dial-out{opacity:0\n}\n.clockpicker-hours.clockpicker-dial-out{-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2);-ms-transform:scale(1.2,1.2);-o-transform:scale(1.2,1.2);transform:scale(1.2,1.2)\n}\n.clockpicker-minutes.clockpicker-dial-out{-webkit-transform:scale(.8,.8);-moz-transform:scale(.8,.8);-ms-transform:scale(.8,.8);-o-transform:scale(.8,.8);transform:scale(.8,.8)\n}\n.clockpicker-canvas{-webkit-transition:opacity 175ms;-moz-transition:opacity 175ms;-ms-transition:opacity 175ms;-o-transition:opacity 175ms;transition:opacity 175ms\n}\n.clockpicker-canvas-out{opacity:.25\n}\n.clockpicker-canvas-bearing,.clockpicker-canvas-fg{stroke:none;fill:#0095dd\n}\n.clockpicker-canvas-bg{stroke:none;fill:#c0e5f7\n}\n.clockpicker-canvas-bg-trans{fill:rgba(0,149,221,.25)\n}\n.clockpicker-canvas line{stroke:#0095dd;stroke-width:1;stroke-linecap:round\n}\n.clockpicker-button.am-button{margin:1px;padding:5px;border:1px solid rgba(0,0,0,.2);border-radius:4px\n}\n.clockpicker-button.pm-button{margin:1px 1px 1px 136px;padding:5px;border:1px solid rgba(0,0,0,.2);border-radius:4px\n}", ""]);
+exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1428:
+/***/ 1459:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1429);
+var content = __webpack_require__(1460);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("1f4be9ea", content, false, {});
+var update = __webpack_require__(26)("0aa5e646", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -111,76 +112,30 @@ if(false) {
 
 /***/ }),
 
-/***/ 1429:
+/***/ 1460:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*\n *  Bootstrap TouchSpin - v3.1.1\n *  A mobile and touch friendly input spinner component for Bootstrap 3.\n *  http://www.virtuosoft.eu/code/bootstrap-touchspin/\n *\n *  Made by István Ujj-Mészáros\n *  Under Apache License v2.0 License\n */\n.bootstrap-touchspin .input-group-btn-vertical{position:relative;white-space:nowrap;width:1%;vertical-align:middle;display:table-cell\n}\n.bootstrap-touchspin .input-group-btn-vertical>.btn{display:block;float:none;width:100%;max-width:100%;padding:8px 10px;margin-left:-1px;position:relative\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up{border-radius:0;border-top-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{margin-top:-2px;border-radius:0;border-bottom-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical i{position:absolute;top:3px;left:5px;font-size:9px;font-weight:400\n}", ""]);
+exports.push([module.i, "\n.input-group {\n    width: 100%;\n    margin-bottom: 10px;\n}\n.input-group-addon.icon-sizeshow {\n    border: none;\n    background-color: transparent;\n}\n.input-group input[type=\"range\"] {\n    border: none;\n    box-shadow: none;\n}\n#icon-search {\n    border-radius: 17px !important;\n}\nform {\n    text-align: center;\n    padding: 10px;\n}\ninput[type=\"range\"] {\n    cursor: pointer;\n}\n.preview .name {\n    display: block;\n}\n.preview {\n    padding: 30px 10px;\n    font-size: 12px;\n    height: 120px;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview:hover {\n    background-color: #DCDCDC;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview span[class|=ti] {\n    display: block;\n}\n.preview i,\n.preview span[class|=ti] {\n    color: #428BCA;\n    font-size: 24px;\n}\n.preview:hover i,\n.preview:hover span[class|=ti] {\n    font-size: 30px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1430:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1431);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("7d84c737", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./pickers.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./pickers.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1431:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(25)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#example28 + .btn-group > .multiselect {\n    min-width : 65px;\n}\n.bootstrap-touchspin-up, .bootstrap-touchspin-down {\n    border-radius : 0 !important;\n}\n.clockface > div {\n    overflow : hidden;\n}\n@media only screen and (min-width : 769px ) and (max-width : 1440px ) {\n#example28-values {\n        margin-top : 10px;\n}\n}\n@media (max-width : 320px ) {\n.bootstrap-datetimepicker-widget.dropdown-menu {\n        width : 100%;\n        left  : 30px !important;\n}\n}\n.btn-default,#toggle-btn{\n    color:#333;\n}\n.bootstrap-touchspin .input-group-btn-vertical{\n    width:5%;\n}\n@media(max-width: 768px){\n.bootstrap-touchspin .input-group-btn-vertical i{\n        left:7px;\n}\n.bootstrap-touchspin .input-group-btn-vertical{\n        width: 4%;\n}\n}\n@media(min-width: 320px) and (max-width: 425px){\n.bootstrap-touchspin .input-group-btn-vertical{\n        width: 8% !important;\n}\n}\n@media(max-width: 320px){\n.bootstrap-touchspin .input-group-btn-vertical i{\n        left:5px;\n}\n}\n.clockpicker-popover,.clockface{\n    z-index: 99;\n}\n.content .btn:hover{\n    color:#333;\n    background-color: #c3c3c3;\n}\n#button-a:hover{\n    background-color: #6699cc;\n    color:#fff;\n}\n.bootstrap-touchspin-prefix,.bootstrap-touchspin-postfix{\n    background-color: #ddd ;\n}\n\n\n/*touch spin bootstrap 3 version overrides*/\n.pickers .input-group-lg .bootstrap-touchspin-down,.pickers .input-group-lg .bootstrap-touchspin-up{\n    padding: 0.85rem 0.75rem;\n}\n.pickers .input-group-lg .btn, .pickers .input-group-sm .btn{\n    border-radius:0 ;\n}\n.pickers .bootstrap-touchspin-down,.pickers .bootstrap-touchspin-up{\n    padding: 0.39rem 0.75rem;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1432:
+/***/ 1461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(505);
+/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__ = __webpack_require__(1433);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__ = __webpack_require__(1434);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(655);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
 //
 //
 //
@@ -318,14 +273,1324 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-var moment = __webpack_require__(0);
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "pickers",
+    name: "blank",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
@@ -333,1031 +1598,4030 @@ var moment = __webpack_require__(0);
         "use strict";
 
         $(document).ready(function () {
-
-            $('#t1').clockface();
-            $('#t3').clockface({
-                format: 'H:mm'
-            }).clockface('show', '14:30');
-
-            $('#t2').clockface({
-                format: 'HH:mm',
-                trigger: 'manual'
+            $('#icon-search').on("input", function () {
+                $(".name").each(function () {
+                    var regex = new RegExp($("#icon-search").val().trim().toLowerCase());
+                    var x = $(this).text();
+                    var res = x.match(regex, "i");
+                    if (res == null) {
+                        $(this).closest(".icon-preview-box").hide();
+                    } else {
+                        $(this).closest(".icon-preview-box").show();
+                    }
+                });
+            });
+            jQuery.fn.outerHTML = function () {
+                return jQuery('<div />').append(this.eq(0).clone()).html();
+            };
+            var icon_size = $("#icon-size");
+            icon_size.on("input", function () {
+                var x = parseInt(icon_size.val()) + parseInt(6);
+                $(".fontnormal").html(".preview i{font-size:" + icon_size.val() + "px;}.preview:hover i{font-size:" + x + "px;}");
+                $(".icon-sizeshow").text(icon_size.val() + "px");
+            });
+            $("head").append("<style class='fontnormal'></style>");
+            $(".preview").on("click", function () {
+                var x = $(this).find("i").outerHTML();
+                copyTextToClipboard(x);
             });
 
-            $('#toggle-btn').on('click', function (e) {
-                e.stopPropagation();
-                $('#t2').clockface('toggle');
-            });
-
-            var input = $('#input-a');
-            input.clockpicker({
-                autoclose: true
-            });
-
-            // Manual operations
-            $('#button-a').click(function (e) {
-                // Have to stop propagation here
-                e.stopPropagation();
-                input.clockpicker('show').clockpicker('toggleView', 'minutes');
-            });
-
-            //datetimepicker
-            $("input[name='demo1']").TouchSpin({
-                min: 0,
-                max: 100,
-                step: 0.1,
-                decimals: 2,
-                boostat: 5,
-                maxboostedstep: 10,
-                postfix: '%'
-            });
-
-            $("input[name='demo2']").TouchSpin({
-                min: -1000000000,
-                max: 1000000000,
-                stepinterval: 50,
-                maxboostedstep: 10000000,
-                prefix: '$'
-            });
-
-            $("input[name='demo_vertical']").TouchSpin({
-                verticalbuttons: true,
-                verticalupclass: 'ti-angle-up',
-                verticaldownclass: 'ti-angle-down'
-            });
-
-            $("input[name='demo_vertical2']").TouchSpin({
-                verticalbuttons: true,
-                verticalupclass: 'ti-plus',
-                verticaldownclass: 'ti-minus'
-            });
-
-            $("input[name='demo3']").TouchSpin();
-
-            $("input[name='demo3_21']").TouchSpin({
-                initval: 40
-            });
-
-            $("input[name='demo3_22']").TouchSpin({
-                initval: 40
-            });
-
-            $("input[name='demo4']").TouchSpin({
-                postfix: "a button",
-                postfix_extraclass: "btn btn-default"
-            });
-
-            $("input[name='demo4_2']").TouchSpin({
-                postfix: "a button",
-                postfix_extraclass: "btn btn-default"
-            });
-
-            $("input[name='demo5']").TouchSpin({
-                prefix: "pre",
-                postfix: "post"
-            });
-
-            $("input[name='demo6']").TouchSpin({
-                buttondown_class: "btn btn-link",
-                buttonup_class: "btn btn-link"
-            });
+            function copyTextToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea).select();
+                var successful = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.success('Element Copied to Clipboard. Now you can use it anywhere.');
+            }
         });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(503)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(520), __webpack_require__(520)))
 
 /***/ }),
 
-/***/ 1433:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
-* Clockface - v1.0.1
-* Clockface timepicker for Twitter Bootstrap
-*
-* Confusion with noon and midnight: 
-* http://en.wikipedia.org/wiki/12-hour_clock
-* Here considered '00:00 am' as midnight and '12:00 pm' as noon.
-*
-* Author: Vitaliy Potapov
-* Project page: http://github.com/vitalets/clockface
-* Copyright (c) 2012 Vitaliy Potapov. Released under MIT License.
-**/
-(function ($) {
-
-    var Clockface = function (element, options) {
-        this.$element = $(element);
-        this.options = $.extend({}, $.fn.clockface.defaults, options, this.$element.data());
-        this.init();  
-     };
-
-    Clockface.prototype = {
-        constructor: Clockface, 
-        init: function () {
-          //apply template
-          this.$clockface = $($.fn.clockface.template);
-          this.$clockface.find('.l1 .cell, .left.cell').html('<div class="outer"></div><div class="inner"></div>'); 
-          this.$clockface.find('.l5 .cell, .right.cell').html('<div class="inner"></div><div class="outer"></div>'); 
-          this.$clockface.hide();
-
-          this.$outer = this.$clockface.find('.outer');
-          this.$inner = this.$clockface.find('.inner');
-          this.$ampm = this.$clockface.find('.ampm');
-
-          //internal vars
-          this.ampm = null;
-          this.hour = null;
-          this.minute = null;
-          
-          //click am/pm 
-          this.$ampm.click($.proxy(this.clickAmPm, this));
-
-          //click cell
-          this.$clockface.on('click', '.cell', $.proxy(this.click, this));
-
-          this.parseFormat();
-          this.prepareRegexp();
-
-          //set ampm text
-          this.ampmtext = this.is24 ? {am: '12-23', pm: '0-11'} : {am: 'AM', pm: 'PM'};
-
-          this.isInline = this.$element.is('div');
-          if(this.isInline) {
-            this.$clockface.addClass('clockface-inline').appendTo(this.$element);
-          } else {
-            this.$clockface.addClass('dropdown-menu').appendTo('body');
-            if(this.options.trigger === 'focus') {
-              this.$element.on('focus.clockface', $.proxy(function(e) { this.show(); }, this));
-            }
-
-            // Click outside hide it. Register single handler for all clockface widgets
-            $(document).off('click.clockface').on('click.clockface', $.proxy(function (e) {
-                var $target = $(e.target);
-                //click inside some clockface --> do nothing
-                if ($target.closest('.clockface').length) {
-                  return;
-                }
-                //iterate all open clockface and close all except current
-                $('.clockface-open').each(function(){
-                  if(this === e.target) {
-                    return;
-                  }
-                  $(this).clockface('hide');
-                });
-            }, this));
-          }
-
-          //fill minutes once
-          this.fill('minute');
-        },
-
-        /*
-        Displays widget with specified value
-        */
-        show: function(value) {
-            if(this.$clockface.is(':visible')) {
-              return;
-            }
-            if(!this.isInline) {
-                if(value === undefined) {
-                  value = this.$element.val();
-                }
-                this.$element.addClass('clockface-open');
-                this.$element.on('keydown.clockface', $.proxy(this.keydown, this));
-                this.place();
-                $(window).on('resize.clockface', $.proxy(this.place, this));
-            }
-            this.$clockface.show();
-            this.setTime(value);
-
-            //trigger shown event
-            this.$element.triggerHandler('shown.clockface', this.getTime(true));
-        },
-        /*
-        hides widget
-        */
-        hide: function() {
-            this.$clockface.hide();
-            if(!this.isInline) {
-              this.$element.removeClass('clockface-open');  
-              this.$element.off('keydown.clockface');
-              $(window).off('resize.clockface');
-            }
-
-            //trigger hidden event
-            this.$element.triggerHandler('hidden.clockface', this.getTime(true));            
-        },
-
-        /*
-        toggles show/hide
-        */
-        toggle: function(value) {
-          if(this.$clockface.is(':visible')) {
-            this.hide();
-          } else {
-            this.show(value);
-          }
-        },
-
-         /*
-        Set time of clockface. Am/pm will be set automatically.
-        Value can be Date object or string
-        */
-        setTime: function(value) {
-          var res, hour, minute, ampm = 'am';
-
-          //no new value 
-          if(value === undefined) {
-            //if ampm null, it;s first showw, need to render hours ('am' by default)
-            if(this.ampm === null) {
-              this.setAmPm('am');
-            }
-            return;
-          }
-
-          //take value from Date object
-          if(value instanceof Date) {
-            hour = value.getHours();
-            minute = value.getMinutes();
-          }
-
-          //parse value from string
-          if(typeof value === 'string' && value.length) { 
-            res = this.parseTime(value);
-
-            //'24' always '0'
-            if(res.hour === 24) {
-              res.hour = 0;
-            }
-
-            hour = res.hour;             
-            minute = res.minute;             
-            ampm = res.ampm;             
-          }
-
-          //try to set ampm automatically
-          if(hour > 11 && hour < 24) {
-            ampm = 'pm';
-            //for 12h format substract 12 from value 
-            if(!this.is24 && hour > 12) {
-              hour -= 12;
-            }
-          } else if(hour >= 0 && hour < 11) {
-                //always set am for 24h and for '0' in 12h 
-                if(this.is24 || hour === 0) {
-                   ampm = 'am';
-               } 
-               //otherwise ampm should be defined in value itself and retrieved when parsing
-          }      
-
-          this.setAmPm(ampm);
-          this.setHour(hour);
-          this.setMinute(minute);
-        },   
-
-        /*
-        Set ampm and re-fill hours
-        */
-        setAmPm: function(value) {
-          if(value === this.ampm) {
-             return;
-          } else {
-             this.ampm = value === 'am' ? 'am' : 'pm';
-          }
-
-          //set link's text
-          this.$ampm.text(this.ampmtext[this.ampm]);
-
-          //re-fill and highlight hour
-          this.fill('hour');
-          this.highlight('hour');
-        },   
-        /*
-        Sets hour value and highlight if possible
-        */
-        setHour: function(value) {
-          value = parseInt(value, 10);
-          value = isNaN(value) ? null : value;
-          if(value < 0 || value > 23) {
-            value = null;
-          }
-
-          if(value === this.hour) {
-            return;
-          } else {
-            this.hour = value;
-          }
-
-          this.highlight('hour');
-        },
-
-        /*
-        Sets minute value and highlight
-        */
-        setMinute: function(value) {
-          value = parseInt(value, 10);
-          value = isNaN(value) ? null : value;
-          if(value < 0 || value > 59) {
-            value = null;
-          }
-
-          if(value === this.minute) {
-            return;
-          } else {
-            this.minute = value;
-          }
-
-          this.highlight('minute');
-        },        
-
-        /*
-        Highlights hour/minute
-        */
-        highlight: function(what) {
-          var index,
-              values = this.getValues(what),
-              value = what === 'minute' ? this.minute : this.hour,
-              $cells = what === 'minute' ? this.$outer : this.$inner;
-
-          $cells.removeClass('active');
-
-          //find index of value and highlight if possible
-          index = $.inArray(value, values);
-          if(index >= 0) {
-            $cells.eq(index).addClass('active');
-          }
-        },
-
-        /*
-        Fill values around
-        */ 
-        fill: function(what) {
-          var values = this.getValues(what),
-              $cells = what === 'minute' ? this.$outer : this.$inner,
-              leadZero = what === 'minute';           
-
-          $cells.each(function(i){
-            var v = values[i];
-            if(leadZero && v < 10) {
-              v = '0' + v;
-            }
-            $(this).text(v);
-          });
-        },          
-
-        /*
-        returns values of hours or minutes, depend on ampm and 24/12 format (0-11, 12-23, 00-55, etc)
-        param what: 'hour'/'minute'
-        */
-        getValues: function(what) {
-          var values = [11, 0, 1, 10, 2, 9, 3, 8, 4, 7, 6, 5],
-              result = values.slice();
-
-          //minutes
-          if(what === 'minute') {
-              $.each(values, function(i, v) { result[i] = v*5; });
-          } else {
-            //hours
-            if(!this.is24) {
-              result[1] = 12; //need this to show '12' instead of '00' for 12h am/pm
-            }
-            if(this.is24 && this.ampm === 'pm') {
-              $.each(values, function(i, v) { result[i] = v+12; });
-            }
-          }
-          return result;
-        },
-
-        /*
-        Click cell handler.
-        Stores hour/minute and highlights.
-        On second click deselect value
-        */
-        click: function(e) {
-          var $target = $(e.target),
-              value = $target.hasClass('active') ? null : $target.text();
-          if($target.hasClass('inner')) {
-            this.setHour(value);
-          } else {
-            this.setMinute(value);
-          }
-
-          //update value in input
-          if(!this.isInline) {
-            this.$element.val(this.getTime());
-          }          
-
-          //trigger pick event
-          this.$element.triggerHandler('pick.clockface', this.getTime(true));  
-        },
-
-        /*
-        Click handler on ampm link
-        */
-        clickAmPm: function(e) {
-          e.preventDefault();
-          //toggle am/pm
-          this.setAmPm(this.ampm === 'am' ? 'pm' : 'am');
-
-          //update value in input
-          if(!this.isInline && !this.is24) {
-            this.$element.val(this.getTime());
-          }    
-
-          //trigger pick event
-          this.$element.triggerHandler('pick.clockface', this.getTime(true));                  
-        },
-        
-
-        /*
-        Place widget below input
-        */
-        place: function(){
-          var zIndex = parseInt(this.$element.parents().filter(function() {
-                   return $(this).css('z-index') != 'auto';
-             }).first().css('z-index'), 10)+10,
-             offset = this.$element.offset();
-          this.$clockface.css({
-            top: offset.top + this.$element.outerHeight(),
-            left: offset.left,
-            zIndex: zIndex
-          });
-        },  
-
-        /*
-        keydown handler (for not inline mode)
-        */
-        keydown: function(e) {
-          //tab, escape, enter --> hide
-          if(/^(9|27|13)$/.test(e.which)) {
-            this.hide();
-            return;
-          } 
-
-          clearTimeout(this.timer);
-          this.timer = setTimeout($.proxy(function(){
-            this.setTime(this.$element.val());
-          }, this), 500);
-        },  
-
-        /*
-        Parse format from options and set this.is24
-        */
-        parseFormat: function() {
-          var format = this.options.format,
-              hFormat = 'HH',
-              mFormat = 'mm';
-
-          //hour format    
-          $.each(['HH', 'hh', 'H', 'h'], function(i, f){
-            if(format.indexOf(f) !== -1) {
-              hFormat = f;
-              return false;
-            }
-          });
-
-          //minute format
-          $.each(['mm', 'm'], function(i, f){
-            if(format.indexOf(f) !== -1) {
-              mFormat = f;
-              return false;
-            }
-          });          
-
-          //is 24 hour format
-          this.is24 = hFormat.indexOf('H') !== -1; 
-
-          this.hFormat = hFormat;
-          this.mFormat = mFormat;
-        },
-
-       
-
-        /*
-        Parse value passed as string or Date object
-        */
-        parseTime: function(value) {
-          var hour = null, 
-              minute = null, 
-              ampm = 'am', 
-              parts = [], digits;
-
-            value = $.trim(value);
-
-            //try parse time from string assuming separator exist
-            if(this.regexpSep) {
-                parts = value.match(this.regexpSep);
-            }
-
-            if(parts && parts.length) {
-              hour = parts[1] ? parseInt(parts[1], 10) : null;
-              minute = parts[2] ? parseInt(parts[2], 10): null;
-              ampm = (!parts[3] || parts[3].toLowerCase() === 'a') ? 'am' : 'pm';
-            } else {
-              //if parse with separator failed, search for 1,4-digit block and process it
-              //use reversed string to start from end (usefull with full dates)
-              //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
-              value = value.split('').reverse().join('').replace(/\s/g, '');
-              parts = value.match(this.regexpNoSep);
-              if(parts && parts.length) {
-                ampm = (!parts[1] || parts[1].toLowerCase() === 'a') ? 'am' : 'pm';
-                //reverse back
-                digits = parts[2].split('').reverse().join('');
-                //use smart analyzing to detect hours and minutes
-                switch(digits.length) {
-                  case 1:
-                    hour = parseInt(digits, 10); //e.g. '6'
-                  break;
-                  case 2:
-                    hour = parseInt(digits, 10); //e.g. '16'
-                    //if((this.is24 && hour > 24) || (!this.is24 && hour > 12)) { //e.g. 26
-                    if(hour > 24) { //e.g. 26
-                      hour = parseInt(digits[0], 10);
-                      minute = parseInt(digits[1], 10);
-                    }
-                  break;
-                  case 3:
-                    hour = parseInt(digits[0], 10);  //e.g. 105
-                    minute = parseInt(digits[1]+digits[2], 10); 
-                    if(minute > 59) { 
-                      hour = parseInt(digits[0]+digits[1], 10); //e.g. 195
-                      minute = parseInt(digits[2], 10); 
-                      if(hour > 24) {
-                        hour = null;
-                        minute = null;
-                      }
-                    }
-                  break;
-                  case 4:
-                    hour = parseInt(digits[0]+digits[1], 10); //e.g. 2006
-                    minute = parseInt(digits[2]+digits[3], 10);
-                    if(hour > 24) {
-                      hour = null;
-                    }
-                    if(minute > 59) {
-                      minute = null;
-                    }
-                }
-              }
-            }
-
-          return {hour: hour, minute: minute, ampm: ampm};
-        },
-
-        prepareRegexp: function() {
-            //take separator from format
-            var sep = this.options.format.match(/h\s*([^hm]?)\s*m/i); //HH-mm, HH:mm
-            if(sep && sep.length) {
-              sep = sep[1];
-            } 
-
-            //sep can be null for HH, and '' for HHmm 
-            this.separator = sep;
-    
-            //parse from string
-            //use reversed string and regexp to parse 2-digit minutes first
-            //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
-            //this.regexp = new RegExp('(a|p)?\\s*((\\d\\d?)' + sep + ')?(\\d\\d?)', 'i');
-
-            //regexp, used with separator
-            this.regexpSep = (this.separator && this.separator.length) ? new RegExp('(\\d\\d?)\\s*\\' + this.separator + '\\s*(\\d?\\d?)\\s*(a|p)?', 'i') : null;
-
-            //second regexp applied if previous has no result or separator is empty (to reversed string)
-            this.regexpNoSep = new RegExp('(a|p)?\\s*(\\d{1,4})', 'i');
-        },
-
-        /*
-        Returns time as string in specified format
-        */
-        getTime: function(asObject) {
-          if(asObject === true) {
-            return {
-              hour: this.hour,
-              minute: this.minute,
-              ampm: this.ampm
-            };
-          }
-
-          var hour = this.hour !== null ? this.hour + '' : '',
-              minute = this.minute !== null ? this.minute + '' : '',
-              result = this.options.format;
-
-          if(!hour.length && !minute.length) {
-            return '';
-          }   
-
-          if(this.hFormat.length > 1 && hour.length === 1) {
-            hour = '0' + hour;
-          }   
-
-          if(this.mFormat.length > 1 && minute.length === 1) {
-            minute = '0' + minute;
-          }
-
-          //delete separator if no minutes
-          if(!minute.length && this.separator) {
-            result = result.replace(this.separator, '');
-          }
-
-          result = result.replace(this.hFormat, hour).replace(this.mFormat, minute);
-          if(!this.is24) {
-            if(result.indexOf('A') !== -1) {
-               result = result.replace('A', this.ampm.toUpperCase());
-            } else {
-               result = result.replace('a', this.ampm);
-            }
-          }
-
-          return result;
-        },
-
-        /*
-        Removes widget and detach events
-        */
-        destroy: function() {
-          this.hide();
-          this.$clockface.remove();
-          if(!this.isInline && this.options.trigger === 'focus') {
-            this.$element.off('focus.clockface');
-          }          
-        }
-    };
-
-    $.fn.clockface = function ( option ) {
-        var d, args = Array.apply(null, arguments);
-        args.shift();
-
-        //getTime returns string (not jQuery onject)
-        if(option === 'getTime' && this.length && (d = this.eq(0).data('clockface'))) {
-          return d.getTime.apply(d, args);
-        }
-
-        return this.each(function () {
-            var $this = $(this),
-            data = $this.data('clockface'),
-            options = typeof option == 'object' && option;
-            if (!data) {
-                $this.data('clockface', (data = new Clockface(this, options)));
-            }
-            if (typeof option == 'string' && typeof data[option] == 'function') {
-                data[option].apply(data, args);
-            }
-        });
-    };  
-    
-    $.fn.clockface.defaults = {
-        //see http://momentjs.com/docs/#/displaying/format/
-        format: 'H:mm',
-        trigger: 'focus' //focus|manual
-    };
-   
-
- $.fn.clockface.template = ''+
-      '<div class="clockface">' +
-          '<div class="l1">' +
-              '<div class="cell"></div>' +
-              '<div class="cell"></div>' +
-              '<div class="cell"></div>' +
-          '</div>' +
-          '<div class="l2">' +
-                '<div class="cell left"></div>' +
-                '<div class="cell right"></div>' +
-          '</div>'+
-          '<div class="l3">' +
-                '<div class="cell left"></div>' +
-                '<div class="cell right"></div>' +
-                '<div class="center"><a href="#" class="ampm"></a></div>' +
-          '</div>'+
-          '<div class="l4">' +
-                '<div class="cell left"></div>' +
-                '<div class="cell right"></div>' +
-          '</div>'+
-          '<div class="l5">' +
-                '<div class="cell"></div>' +
-                '<div class="cell"></div>' +
-                '<div class="cell"></div>' +
-          '</div>'+
-      '</div>';  
-
-}(__webpack_provided_window_dot_jQuery));
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(503)))
-
-/***/ }),
-
-/***/ 1434:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
- * ClockPicker v0.0.7 (http://weareoutman.github.io/clockpicker/)
- * Copyright 2014 Wang Shenwei.
- * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)
- */
-!function(){function t(t){return document.createElementNS(p,t)}function i(t){return(10>t?"0":"")+t}function e(t){var i=++m+"";return t?t+i:i}function s(s,r){function p(t,i){var e=u.offset(),s=/^touch/.test(t.type),o=e.left+b,n=e.top+b,p=(s?t.originalEvent.touches[0]:t).pageX-o,h=(s?t.originalEvent.touches[0]:t).pageY-n,k=Math.sqrt(p*p+h*h),v=!1;if(!i||!(g-y>k||k>g+y)){t.preventDefault();var m=setTimeout(function(){c.addClass("clockpicker-moving")},200);l&&u.append(x.canvas),x.setHand(p,h,!i,!0),a.off(d).on(d,function(t){t.preventDefault();var i=/^touch/.test(t.type),e=(i?t.originalEvent.touches[0]:t).pageX-o,s=(i?t.originalEvent.touches[0]:t).pageY-n;(v||e!==p||s!==h)&&(v=!0,x.setHand(e,s,!1,!0))}),a.off(f).on(f,function(t){a.off(f),t.preventDefault();var e=/^touch/.test(t.type),s=(e?t.originalEvent.changedTouches[0]:t).pageX-o,l=(e?t.originalEvent.changedTouches[0]:t).pageY-n;(i||v)&&s===p&&l===h&&x.setHand(s,l),"hours"===x.currentView?x.toggleView("minutes",A/2):r.autoclose&&(x.minutesView.addClass("clockpicker-dial-out"),setTimeout(function(){x.done()},A/2)),u.prepend(j),clearTimeout(m),c.removeClass("clockpicker-moving"),a.off(d)})}}var h=n(V),u=h.find(".clockpicker-plate"),v=h.find(".clockpicker-hours"),m=h.find(".clockpicker-minutes"),T=h.find(".clockpicker-am-pm-block"),C="INPUT"===s.prop("tagName"),H=C?s:s.find("input"),P=s.find(".input-group-addon"),x=this;if(this.id=e("cp"),this.element=s,this.options=r,this.isAppended=!1,this.isShown=!1,this.currentView="hours",this.isInput=C,this.input=H,this.addon=P,this.popover=h,this.plate=u,this.hoursView=v,this.minutesView=m,this.amPmBlock=T,this.spanHours=h.find(".clockpicker-span-hours"),this.spanMinutes=h.find(".clockpicker-span-minutes"),this.spanAmPm=h.find(".clockpicker-span-am-pm"),this.amOrPm="PM",r.twelvehour){{var S=['<div class="clockpicker-am-pm-block">','<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-am-button">',"AM</button>",'<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-pm-button">',"PM</button>","</div>"].join("");n(S)}n('<button type="button" class="btn btn-sm btn-default clockpicker-button am-button">AM</button>').on("click",function(){x.amOrPm="AM",n(".clockpicker-span-am-pm").empty().append("AM")}).appendTo(this.amPmBlock),n('<button type="button" class="btn btn-sm btn-default clockpicker-button pm-button">PM</button>').on("click",function(){x.amOrPm="PM",n(".clockpicker-span-am-pm").empty().append("PM")}).appendTo(this.amPmBlock)}r.autoclose||n('<button type="button" class="btn btn-sm btn-default btn-block clockpicker-button">'+r.donetext+"</button>").click(n.proxy(this.done,this)).appendTo(h),"top"!==r.placement&&"bottom"!==r.placement||"top"!==r.align&&"bottom"!==r.align||(r.align="left"),"left"!==r.placement&&"right"!==r.placement||"left"!==r.align&&"right"!==r.align||(r.align="top"),h.addClass(r.placement),h.addClass("clockpicker-align-"+r.align),this.spanHours.click(n.proxy(this.toggleView,this,"hours")),this.spanMinutes.click(n.proxy(this.toggleView,this,"minutes")),H.on("focus.clockpicker click.clockpicker",n.proxy(this.show,this)),P.on("click.clockpicker",n.proxy(this.toggle,this));var E,D,I,B,z=n('<div class="clockpicker-tick"></div>');if(r.twelvehour)for(E=1;13>E;E+=1)D=z.clone(),I=E/6*Math.PI,B=g,D.css("font-size","120%"),D.css({left:b+Math.sin(I)*B-y,top:b-Math.cos(I)*B-y}),D.html(0===E?"00":E),v.append(D),D.on(k,p);else for(E=0;24>E;E+=1){D=z.clone(),I=E/6*Math.PI;var O=E>0&&13>E;B=O?w:g,D.css({left:b+Math.sin(I)*B-y,top:b-Math.cos(I)*B-y}),O&&D.css("font-size","120%"),D.html(0===E?"00":E),v.append(D),D.on(k,p)}for(E=0;60>E;E+=5)D=z.clone(),I=E/30*Math.PI,D.css({left:b+Math.sin(I)*g-y,top:b-Math.cos(I)*g-y}),D.css("font-size","120%"),D.html(i(E)),m.append(D),D.on(k,p);if(u.on(k,function(t){0===n(t.target).closest(".clockpicker-tick").length&&p(t,!0)}),l){var j=h.find(".clockpicker-canvas"),L=t("svg");L.setAttribute("class","clockpicker-svg"),L.setAttribute("width",M),L.setAttribute("height",M);var U=t("g");U.setAttribute("transform","translate("+b+","+b+")");var W=t("circle");W.setAttribute("class","clockpicker-canvas-bearing"),W.setAttribute("cx",0),W.setAttribute("cy",0),W.setAttribute("r",2);var N=t("line");N.setAttribute("x1",0),N.setAttribute("y1",0);var X=t("circle");X.setAttribute("class","clockpicker-canvas-bg"),X.setAttribute("r",y);var Y=t("circle");Y.setAttribute("class","clockpicker-canvas-fg"),Y.setAttribute("r",3.5),U.appendChild(N),U.appendChild(X),U.appendChild(Y),U.appendChild(W),L.appendChild(U),j.append(L),this.hand=N,this.bg=X,this.fg=Y,this.bearing=W,this.g=U,this.canvas=j}o(this.options.init)}function o(t){t&&"function"==typeof t&&t()}var c,n=__webpack_provided_window_dot_jQuery,r=n(window),a=n(document),p="http://www.w3.org/2000/svg",l="SVGAngle"in window&&function(){var t,i=document.createElement("div");return i.innerHTML="<svg/>",t=(i.firstChild&&i.firstChild.namespaceURI)==p,i.innerHTML="",t}(),h=function(){var t=document.createElement("div").style;return"transition"in t||"WebkitTransition"in t||"MozTransition"in t||"msTransition"in t||"OTransition"in t}(),u="ontouchstart"in window,k="mousedown"+(u?" touchstart":""),d="mousemove.clockpicker"+(u?" touchmove.clockpicker":""),f="mouseup.clockpicker"+(u?" touchend.clockpicker":""),v=navigator.vibrate?"vibrate":navigator.webkitVibrate?"webkitVibrate":null,m=0,b=100,g=80,w=54,y=13,M=2*b,A=h?350:1,V=['<div class="popover clockpicker-popover">','<div class="arrow"></div>','<div class="popover-title">','<span class="clockpicker-span-hours text-primary"></span>'," : ",'<span class="clockpicker-span-minutes"></span>','<span class="clockpicker-span-am-pm"></span>',"</div>",'<div class="popover-content">','<div class="clockpicker-plate">','<div class="clockpicker-canvas"></div>','<div class="clockpicker-dial clockpicker-hours"></div>','<div class="clockpicker-dial clockpicker-minutes clockpicker-dial-out"></div>',"</div>",'<span class="clockpicker-am-pm-block">',"</span>","</div>","</div>"].join("");s.DEFAULTS={"default":"",fromnow:0,placement:"bottom",align:"left",donetext:"完成",autoclose:!1,twelvehour:!1,vibrate:!0},s.prototype.toggle=function(){this[this.isShown?"hide":"show"]()},s.prototype.locate=function(){var t=this.element,i=this.popover,e=t.offset(),s=t.outerWidth(),o=t.outerHeight(),c=this.options.placement,n=this.options.align,r={};switch(i.show(),c){case"bottom":r.top=e.top+o;break;case"right":r.left=e.left+s;break;case"top":r.top=e.top-i.outerHeight();break;case"left":r.left=e.left-i.outerWidth()}switch(n){case"left":r.left=e.left;break;case"right":r.left=e.left+s-i.outerWidth();break;case"top":r.top=e.top;break;case"bottom":r.top=e.top+o-i.outerHeight()}i.css(r)},s.prototype.show=function(){if(!this.isShown){o(this.options.beforeShow);var t=this;this.isAppended||(c=n(document.body).append(this.popover),r.on("resize.clockpicker"+this.id,function(){t.isShown&&t.locate()}),this.isAppended=!0);var e=((this.input.prop("value")||this.options["default"]||"")+"").split(":");if("now"===e[0]){var s=new Date(+new Date+this.options.fromnow);e=[s.getHours(),s.getMinutes()]}this.hours=+e[0]||0,this.minutes=+e[1]||0,this.spanHours.html(i(this.hours)),this.spanMinutes.html(i(this.minutes)),this.toggleView("hours"),this.locate(),this.isShown=!0,a.on("click.clockpicker."+this.id+" focusin.clockpicker."+this.id,function(i){var e=n(i.target);0===e.closest(t.popover).length&&0===e.closest(t.addon).length&&0===e.closest(t.input).length&&t.hide()}),a.on("keyup.clockpicker."+this.id,function(i){27===i.keyCode&&t.hide()}),o(this.options.afterShow)}},s.prototype.hide=function(){o(this.options.beforeHide),this.isShown=!1,a.off("click.clockpicker."+this.id+" focusin.clockpicker."+this.id),a.off("keyup.clockpicker."+this.id),this.popover.hide(),o(this.options.afterHide)},s.prototype.toggleView=function(t,i){var e=!1;"minutes"===t&&"visible"===n(this.hoursView).css("visibility")&&(o(this.options.beforeHourSelect),e=!0);var s="hours"===t,c=s?this.hoursView:this.minutesView,r=s?this.minutesView:this.hoursView;this.currentView=t,this.spanHours.toggleClass("text-primary",s),this.spanMinutes.toggleClass("text-primary",!s),r.addClass("clockpicker-dial-out"),c.css("visibility","visible").removeClass("clockpicker-dial-out"),this.resetClock(i),clearTimeout(this.toggleViewTimer),this.toggleViewTimer=setTimeout(function(){r.css("visibility","hidden")},A),e&&o(this.options.afterHourSelect)},s.prototype.resetClock=function(t){var i=this.currentView,e=this[i],s="hours"===i,o=Math.PI/(s?6:30),c=e*o,n=s&&e>0&&13>e?w:g,r=Math.sin(c)*n,a=-Math.cos(c)*n,p=this;l&&t?(p.canvas.addClass("clockpicker-canvas-out"),setTimeout(function(){p.canvas.removeClass("clockpicker-canvas-out"),p.setHand(r,a)},t)):this.setHand(r,a)},s.prototype.setHand=function(t,e,s,o){var c,r=Math.atan2(t,-e),a="hours"===this.currentView,p=Math.PI/(a||s?6:30),h=Math.sqrt(t*t+e*e),u=this.options,k=a&&(g+w)/2>h,d=k?w:g;if(u.twelvehour&&(d=g),0>r&&(r=2*Math.PI+r),c=Math.round(r/p),r=c*p,u.twelvehour?a?0===c&&(c=12):(s&&(c*=5),60===c&&(c=0)):a?(12===c&&(c=0),c=k?0===c?12:c:0===c?0:c+12):(s&&(c*=5),60===c&&(c=0)),this[this.currentView]!==c&&v&&this.options.vibrate&&(this.vibrateTimer||(navigator[v](10),this.vibrateTimer=setTimeout(n.proxy(function(){this.vibrateTimer=null},this),100))),this[this.currentView]=c,this[a?"spanHours":"spanMinutes"].html(i(c)),!l)return void this[a?"hoursView":"minutesView"].find(".clockpicker-tick").each(function(){var t=n(this);t.toggleClass("active",c===+t.html())});o||!a&&c%5?(this.g.insertBefore(this.hand,this.bearing),this.g.insertBefore(this.bg,this.fg),this.bg.setAttribute("class","clockpicker-canvas-bg clockpicker-canvas-bg-trans")):(this.g.insertBefore(this.hand,this.bg),this.g.insertBefore(this.fg,this.bg),this.bg.setAttribute("class","clockpicker-canvas-bg"));var f=Math.sin(r)*d,m=-Math.cos(r)*d;this.hand.setAttribute("x2",f),this.hand.setAttribute("y2",m),this.bg.setAttribute("cx",f),this.bg.setAttribute("cy",m),this.fg.setAttribute("cx",f),this.fg.setAttribute("cy",m)},s.prototype.done=function(){o(this.options.beforeDone),this.hide();var t=this.input.prop("value"),e=i(this.hours)+":"+i(this.minutes);this.options.twelvehour&&(e+=this.amOrPm),this.input.prop("value",e),e!==t&&(this.input.triggerHandler("change"),this.isInput||this.element.trigger("change")),this.options.autoclose&&this.input.trigger("blur"),o(this.options.afterDone)},s.prototype.remove=function(){this.element.removeData("clockpicker"),this.input.off("focus.clockpicker click.clockpicker"),this.addon.off("click.clockpicker"),this.isShown&&this.hide(),this.isAppended&&(r.off("resize.clockpicker"+this.id),this.popover.remove())},n.fn.clockpicker=function(t){var i=Array.prototype.slice.call(arguments,1);return this.each(function(){var e=n(this),o=e.data("clockpicker");if(o)"function"==typeof o[t]&&o[t].apply(o,i);else{var c=n.extend({},s.DEFAULTS,e.data(),"object"==typeof t&&t);e.data("clockpicker",new s(e,c))}})}}();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(503)))
-
-/***/ }),
-
-/***/ 1435:
+/***/ 1462:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row pickers" }, [
+  return _c(
+    "section",
+    { staticClass: "content" },
+    [
       _c(
-        "div",
-        { staticClass: "col-lg-6" },
+        "card",
+        {
+          attrs: { title: "<i class='fa fa-fw fa-font'></i> Simple Line Icons" }
+        },
         [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-pin'></i> Bootstrap TouchSpin" } },
-            [
-              _c("div", { staticClass: "box-body" }, [
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo1" } }, [_vm._v("Postfix")]),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6 col-md-offset-3 m-auto" }, [
+              _c("form", { attrs: { role: "form" } }, [
+                _c("div", { staticClass: "input-group" }, [
+                  _c(
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-search" } },
+                    [_vm._v("Search")]
+                  ),
                   _vm._v(" "),
                   _c("input", {
                     staticClass: "form-control",
                     attrs: {
-                      id: "demo1",
                       type: "text",
-                      value: "55",
-                      name: "demo1"
+                      name: "icon-search",
+                      id: "icon-search",
+                      placeholder: "Search Icon"
                     }
                   })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo2" } }, [_vm._v("Prefix")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        id: "demo2",
-                        type: "text",
-                        value: "0",
-                        name: "demo2"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo_vertical" } }, [
-                    _vm._v(
-                      "\n                            Vertical button alignment\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo_vertical",
-                        type: "text",
-                        value: "",
-                        name: "demo_vertical"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo_vertical2" } }, [
-                    _vm._v(
-                      "\n                            Vertical buttons with custom icons\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo_vertical2",
-                        type: "text",
-                        value: "",
-                        name: "demo_vertical2"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo3" } }, [
-                    _vm._v(
-                      "\n                            Init with empty value\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo3",
-                        type: "text",
-                        value: "",
-                        name: "demo3"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo3_21" } }, [
-                    _vm._v(
-                      "\n                            Value attribute is not set (applying settings.initval)\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo3_21",
-                        type: "text",
-                        value: "",
-                        name: "demo3_21"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo4" } }, [
-                    _vm._v(
-                      "\n                            Button postfix (small)\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      staticClass: "input-sm",
-                      attrs: {
-                        id: "demo4",
-                        type: "text",
-                        value: "",
-                        name: "demo4"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo4_2" } }, [
-                    _vm._v(
-                      "\n                            Button postfix (large)\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      staticClass: "form-control input-lg",
-                      attrs: {
-                        id: "demo4_2",
-                        type: "text",
-                        value: "",
-                        name: "demo4_2"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo5" } }, [
-                    _vm._v(
-                      "\n                            Button group\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "input-group" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          id: "demo5",
-                          type: "text",
-                          name: "demo5",
-                          value: "50"
-                        }
-                      })
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class=ti-alarm-clock'></i> Clock Face Picker"
-              }
-            },
-            [
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticClass: "control-label", attrs: { for: "t1" } },
-                  [
-                    _vm._v(
-                      "\n                        Default clock\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control input-small",
-                  attrs: {
-                    id: "t1",
-                    value: "2:30 PM",
-                    "data-format": "hh:mm A",
-                    type: "text"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticClass: "control-label", attrs: { for: "t2" } },
-                  [_vm._v("Button")]
-                ),
-                _vm._v(" "),
                 _c("div", { staticClass: "input-group" }, [
-                  _c("input", {
-                    staticClass: "form-control input-small",
-                    attrs: {
-                      type: "text",
-                      id: "t2",
-                      value: "14:30",
-                      readonly: ""
-                    }
-                  }),
-                  _vm._v(" "),
                   _c(
-                    "button",
-                    {
-                      staticClass: "btn input-group-append",
-                      attrs: { type: "button", id: "toggle-btn" }
-                    },
-                    [_c("i", { staticClass: "fa fa-fw fa-clock-o" })]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticClass: "control-label", attrs: { for: "input-a" } },
-                  [
-                    _vm._v(
-                      "\n                        Clock picker\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group form-inline" }, [
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-size" } },
+                    [_vm._v("Size")]
+                  ),
+                  _vm._v(" "),
                   _c("input", {
                     staticClass: "form-control",
                     attrs: {
-                      type: "text",
-                      id: "input-a",
-                      value: "",
-                      "data-default": "20:48"
+                      type: "range",
+                      name: "icon-size",
+                      id: "icon-size",
+                      min: "24",
+                      max: "40",
+                      value: "24"
                     }
                   }),
                   _vm._v(" "),
                   _c(
-                    "button",
+                    "span",
+                    { staticClass: "input-group-addon icon-sizeshow" },
+                    [_vm._v("24px")]
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("h4", { staticClass: "text-center" }, [
+            _vm._v("Click on any icon to copy its code to clipboard.")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "text-center" }, [
+                _c("h3", { staticClass: "text-left" }, [
+                  _vm._v(
+                    "\n                        Simple Line Icons\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
                     {
-                      staticClass: "btn input-group-append bg-primary",
-                      attrs: { type: "button", id: "button-a" }
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
                     },
                     [
-                      _vm._v(
-                        "\n                            Pick your time\n                        "
-                      )
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("user")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-people icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("people")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-female icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-female")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-follow icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-follow")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-following icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-following")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-unfollow icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-unfollow")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-login icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("login")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-logout icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("logout")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-emotsmile icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("emotsmile")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-phone icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("phone")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-end icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("call-end")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-in icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("call-in")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-out icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("call-out")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-map icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("map")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-location-pin icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("location-pin")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-direction icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("direction")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-directions icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("directions")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-compass icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("compass")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-layers icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("layers")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-menu icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("menu")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-list icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("list")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-options-vertical icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("options-vertical")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-options icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("options")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-down icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-down")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-left icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-left")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-right icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-right")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-up icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-up")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-up-circle icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-up-circle")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-left-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-left-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-right-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-right-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-down-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-down-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-check icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("check")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-clock icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("clock")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-plus icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("plus")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-minus icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("minus")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-close icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("close")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-event icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("event")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-exclamation icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("exclamation")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-organization icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("organization")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-trophy icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("trophy")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-screen-smartphone icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-smartphone")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-screen-desktop icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-desktop")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-plane icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("plane")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-notebook icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("notebook")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-mustache icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("mustache")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-mouse icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("mouse")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnet icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("magnet")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-energy icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("energy")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-disc icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("disc")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cursor icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("cursor")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cursor-move icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cursor-move")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-crop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("crop")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-chemistry icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("chemistry")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-speedometer icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("speedometer")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-shield icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("shield")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-screen-tablet icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-tablet")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magic-wand icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magic-wand")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-hourglass icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("hourglass")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-graduation icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("graduation")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-ghost icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("ghost")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-game-controller icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("game-controller")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-fire icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("fire")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-eyeglass icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("eyeglass")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope-open")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope-letter icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope-letter")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bell icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bell")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-badge icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("badge")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-anchor icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("anchor")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-wallet icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("wallet")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-vector icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("vector")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-speech icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("speech")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-puzzle icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("puzzle")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-printer icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("printer")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-present icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("present")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-playlist icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("playlist")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pin icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("pin")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-picture icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("picture")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-handbag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("handbag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-globe-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("globe-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-globe icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("globe")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-folder-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("folder-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-folder icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("folder")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-film icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("film")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-feed icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("feed")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-drop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("drop")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-drawer icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("drawer")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-docs icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("docs")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-doc icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("doc")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-diamond icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("diamond")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cup icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("cup")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-calculator icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("calculator")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bubbles icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bubbles")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-briefcase icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("briefcase")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-book-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("book-open")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-basket-loaded icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("basket-loaded")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-basket icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("basket")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-action-undo icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("action-undo")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-action-redo icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("action-redo")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-wrench icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("wrench")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-umbrella icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("umbrella")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-trash icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("trash")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-tag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("tag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-support icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("support")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-frame icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("frame")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-size-fullscreen icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("size-fullscreen")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-size-actual icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("size-actual")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-shuffle icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("shuffle")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-share-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("share-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-share icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("share")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-rocket icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("rocket")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-question icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("question")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pie-chart icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("pie-chart")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pencil icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("pencil")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-note icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("note")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-loop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("loop")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-home icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("home")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-grid icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("grid")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-graph icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("graph")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-microphone icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("microphone")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-music-tone-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("music-tone-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-music-tone icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("music-tone")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-earphones-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("earphones-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-earphones icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("earphones")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-equalizer icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("equalizer")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-like icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("like")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-dislike icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("dislike")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-start icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-start")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-rewind icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-rewind")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-play icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-play")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-pause icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-pause")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-forward icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-forward")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-end icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-end")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-1 icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-1")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-2 icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-2")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-off icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-off")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-calendar icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("calendar")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bulb icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bulb")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-chart icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("chart")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-ban icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("ban")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bubble icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bubble")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-camrecorder icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("camrecorder")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-camera icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("camera")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cloud-download icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cloud-download")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cloud-upload icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cloud-upload")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-eye icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("eye")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-flag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("flag")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-heart icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("heart")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-info icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("info")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-key icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("key")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-link icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("link")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-lock icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("lock")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-lock-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("lock-open")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier-add icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier-add")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier-remove icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier-remove")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paper-clip icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("paper-clip")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paper-plane icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("paper-plane")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-power icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("power")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-refresh icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("refresh")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-reload icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("reload")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-settings icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("settings")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-star icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("star")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-symbol-female icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("symbol-female")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-symbol-male icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("symbol-male")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-target icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("target")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-credit-card icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("credit-card")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paypal icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("paypal")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-tumblr icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-tumblr")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-twitter icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-twitter")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-facebook icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-facebook")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-instagram icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-instagram")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-linkedin icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-linkedin")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-pinterest icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-pinterest")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-github icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-github")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-google icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-google")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-reddit icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-reddit")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-skype icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-skype")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-dribbble icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-dribbble")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-behance icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-behance")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-foursqare icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-foursqare")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-social-soundcloud icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-soundcloud")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-spotify icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-spotify")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-social-stumbleupon icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-stumbleupon")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-youtube icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-youtube")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-dropbox icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-dropbox")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-vkontakte icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-vkontakte")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-steam icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-steam")
+                        ])
+                      ])
                     ]
                   )
                 ])
               ])
-            ]
-          )
-        ],
-        1
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "right" } }, [
+            _c("div", { attrs: { id: "right-slim" } }, [
+              _c("div", { staticClass: "rightsidebar-right" }, [
+                _c("div", { staticClass: "rightsidebar-right-content" }, [
+                  _c("div", { staticClass: "panel-tabs" }, [
+                    _c(
+                      "ul",
+                      {
+                        staticClass: "nav nav-tabs nav-float",
+                        attrs: { role: "tablist" }
+                      },
+                      [
+                        _c("li", { staticClass: "nav-item text-center" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link active ",
+                              attrs: {
+                                href: "#r_tab1",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-comments" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "text-center nav-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "#r_tab2",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-bell" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "text-center nav-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "#r_tab3",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-settings" })]
+                          )
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "tab-content" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tab-pane active",
+                        attrs: { id: "r_tab1" }
+                      },
+                      [
+                        _c("div", { attrs: { id: "slim_t1" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", {
+                                staticClass: "menu-icon  fa fa-fw ti-user"
+                              }),
+                              _vm._v(
+                                "\n                                        Contacts\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            { staticClass: "list-unstyled margin-none" },
+                            [
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Annette\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Jordan\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Stewart\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-warning"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Alfred\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-danger"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Eileen\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-muted"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Robert\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-muted"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Cassandra\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-export" }),
+                              _vm._v(
+                                "\n                                        Recent Updates\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("div", [
+                            _c("ul", { staticClass: "list-unstyled" }, [
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-comments-smiley fa-fw text-primary"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Comment\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-twitter-alt fa-fw text-success"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    3 New Followers\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass: "fa ti-email fa-fw text-info"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Message Sent\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-write fa-fw text-warning"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Task\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-export fa-fw text-danger"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Server Rebooted\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-info-alt fa-fw text-primary"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Server Not Responding\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-shopping-cart fa-fw text-success"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Order Placed\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass: "fa ti-money fa-fw text-info"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Payment Received\n                                                "
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane fade", attrs: { id: "r_tab2" } },
+                      [
+                        _c("div", { attrs: { id: "slim_t2" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-bell" }),
+                              _vm._v(
+                                "\n                                        Notifications\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled m-t-15 notifications"
+                            },
+                            [
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("John Doe")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    5 members joined today\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("Just now")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Tony")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    likes a photo of you\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("5 min")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("John")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    Dont forgot to call...\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("11 min")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Jenny Kerry")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    Done with it...\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("1 Hour")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Ernest Kerry")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    2 members joined today\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("3 Days")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "text-right noti-footer" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _vm._v("View All Notifications "),
+                                    _c("i", { staticClass: "ti-arrow-right" })
+                                  ])
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-check-box" }),
+                              _vm._v(
+                                "\n                                        Tasks\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-unstyled m-t-15" }, [
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Button Design")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("40%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-success progress-bar-striped",
+                                        staticStyle: { width: "40%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "40",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("40% Complete (success)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Theme Creation")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("20%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-info progress-bar-striped",
+                                        staticStyle: { width: "20%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "20",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("20% Complete")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("XYZ Task To Do")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("60%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-warning progress-bar-striped",
+                                        staticStyle: { width: "60%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "60",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("60% Complete (warning)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Transitions Creation")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("80%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-danger progress-bar-striped",
+                                        staticStyle: { width: "80%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "80",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("80% Complete (danger)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "text-right" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("View All Tasks "),
+                                _c("i", { staticClass: "ti-arrow-right" })
+                              ])
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane fade", attrs: { id: "r_tab3" } },
+                      [
+                        _c("div", { attrs: { id: "slim_t3" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase gen-sett-m-t text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-settings" }),
+                              _vm._v(
+                                "\n                                        General\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled settings-list m-t-10"
+                            },
+                            [
+                              _c("li", [
+                                _c("label", { attrs: { for: "status" } }, [
+                                  _vm._v("Available")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "status",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "email-auth" } }, [
+                                  _vm._v("Login with Email")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "email-auth",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "update" } }, [
+                                  _vm._v("Auto Update")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "update",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-volume" }),
+                              _vm._v(
+                                "\n                                        Sound & Notification\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled settings-list m-t-10"
+                            },
+                            [
+                              _c("li", [
+                                _c("label", { attrs: { for: "chat-sound" } }, [
+                                  _vm._v("Chat Sound")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "chat-sound",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "noti-sound" } }, [
+                                  _vm._v("Notification Sound")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "noti-sound",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "remain" } }, [
+                                  _vm._v("Remainder ")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "remain",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "vol" } }, [
+                                  _vm._v("Volume")
+                                ]),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: {
+                                    type: "range",
+                                    id: "vol",
+                                    min: "0",
+                                    max: "100",
+                                    value: "15"
+                                  }
+                                })
+                              ])
+                            ]
+                          )
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]
       )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "background-overlay" })
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1365,28 +5629,27 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2c317c59", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-63fc1bf0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 453:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1424)
-  __webpack_require__(1426)
-  __webpack_require__(1428)
-  __webpack_require__(1430)
+  __webpack_require__(1455)
+  __webpack_require__(1457)
+  __webpack_require__(1459)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1432)
+var __vue_script__ = __webpack_require__(1461)
 /* template */
-var __vue_template__ = __webpack_require__(1435)
+var __vue_template__ = __webpack_require__(1462)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1403,7 +5666,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/pickers.vue"
+Component.options.__file = "resources/components/pages/simple_line_icons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1412,9 +5675,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2c317c59", Component.options)
+    hotAPI.createRecord("data-v-63fc1bf0", Component.options)
   } else {
-    hotAPI.reload("data-v-2c317c59", Component.options)
+    hotAPI.reload("data-v-63fc1bf0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1426,7 +5689,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 503:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11798,19 +16061,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 505:
+/***/ 522:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(506)
+  __webpack_require__(523)
 }
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(508)
+var __vue_script__ = __webpack_require__(525)
 /* template */
-var __vue_template__ = __webpack_require__(509)
+var __vue_template__ = __webpack_require__(526)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11850,13 +16113,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 506:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(507);
+var content = __webpack_require__(524);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11877,10 +16140,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 507:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
@@ -11892,7 +16155,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 508:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11937,7 +16200,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 509:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11999,19 +16262,58 @@ if (false) {
 
 /***/ }),
 
-/***/ 655:
+/***/ 572:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.eot?f33df365d6d0255b586f2920355e94d7";
+
+/***/ }),
+
+/***/ 580:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*
- *  Bootstrap TouchSpin - v3.1.1
- *  A mobile and touch friendly input spinner component for Bootstrap 3.
- *  http://www.virtuosoft.eu/code/bootstrap-touchspin/
- *
- *  Made by István Ujj-Mészáros
- *  Under Apache License v2.0 License
- */
-!function(a){"use strict";function b(a,b){return a+".touchspin_"+b}function c(c,d){return a.map(c,function(a){return b(a,d)})}var d=0;a.fn.TouchSpin=function(b){if("destroy"===b)return void this.each(function(){var b=a(this),d=b.data();a(document).off(c(["mouseup","touchend","touchcancel","mousemove","touchmove","scroll","scrollstart"],d.spinnerid).join(" "))});var e={min:0,max:100,initval:"",replacementval:"",step:1,decimals:0,stepinterval:100,forcestepdivisibility:"round",stepintervaldelay:500,verticalbuttons:!1,verticalupclass:"glyphicon glyphicon-chevron-up",verticaldownclass:"glyphicon glyphicon-chevron-down",prefix:"",postfix:"",prefix_extraclass:"",postfix_extraclass:"",booster:!0,boostat:10,maxboostedstep:!1,mousewheel:!0,buttondown_class:"btn btn-default",buttonup_class:"btn btn-default",buttondown_txt:"-",buttonup_txt:"+"},f={min:"min",max:"max",initval:"init-val",replacementval:"replacement-val",step:"step",decimals:"decimals",stepinterval:"step-interval",verticalbuttons:"vertical-buttons",verticalupclass:"vertical-up-class",verticaldownclass:"vertical-down-class",forcestepdivisibility:"force-step-divisibility",stepintervaldelay:"step-interval-delay",prefix:"prefix",postfix:"postfix",prefix_extraclass:"prefix-extra-class",postfix_extraclass:"postfix-extra-class",booster:"booster",boostat:"boostat",maxboostedstep:"max-boosted-step",mousewheel:"mouse-wheel",buttondown_class:"button-down-class",buttonup_class:"button-up-class",buttondown_txt:"button-down-txt",buttonup_txt:"button-up-txt"};return this.each(function(){function g(){if(!J.data("alreadyinitialized")){if(J.data("alreadyinitialized",!0),d+=1,J.data("spinnerid",d),!J.is("input"))return void console.log("Must be an input.");j(),h(),u(),m(),p(),q(),r(),s(),D.input.css("display","block")}}function h(){""!==B.initval&&""===J.val()&&J.val(B.initval)}function i(a){l(a),u();var b=D.input.val();""!==b&&(b=Number(D.input.val()),D.input.val(b.toFixed(B.decimals)))}function j(){B=a.extend({},e,K,k(),b)}function k(){var b={};return a.each(f,function(a,c){var d="bts-"+c;J.is("[data-"+d+"]")&&(b[a]=J.data(d))}),b}function l(b){B=a.extend({},B,b)}function m(){var a=J.val(),b=J.parent();""!==a&&(a=Number(a).toFixed(B.decimals)),J.data("initvalue",a).val(a),J.addClass("form-control"),b.hasClass("input-group")?n(b):o()}function n(b){b.addClass("bootstrap-touchspin");var c,d,e=J.prev(),f=J.next(),g='<span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+"</span>",h='<span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+"</span>";e.hasClass("input-group-btn")?(c='<button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button>",e.append(c)):(c='<span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button></span>",a(c).insertBefore(J)),f.hasClass("input-group-btn")?(d='<button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button>",f.prepend(d)):(d='<span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span>",a(d).insertAfter(J)),a(g).insertBefore(J),a(h).insertAfter(J),C=b}function o(){var b;b=B.verticalbuttons?'<div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn-vertical"><button class="'+B.buttondown_class+' bootstrap-touchspin-up" type="button"><i class="'+B.verticalupclass+'"></i></button><button class="'+B.buttonup_class+' bootstrap-touchspin-down" type="button"><i class="'+B.verticaldownclass+'"></i></button></span></div>':'<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+'</button></span><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span></div>",C=a(b).insertBefore(J),a(".bootstrap-touchspin-prefix",C).after(J),J.hasClass("input-sm")?C.addClass("input-group-sm"):J.hasClass("input-lg")&&C.addClass("input-group-lg")}function p(){D={down:a(".bootstrap-touchspin-down",C),up:a(".bootstrap-touchspin-up",C),input:a("input",C),prefix:a(".bootstrap-touchspin-prefix",C).addClass(B.prefix_extraclass),postfix:a(".bootstrap-touchspin-postfix",C).addClass(B.postfix_extraclass)}}function q(){""===B.prefix&&D.prefix.hide(),""===B.postfix&&D.postfix.hide()}function r(){J.on("keydown",function(a){var b=a.keyCode||a.which;38===b?("up"!==M&&(w(),z()),a.preventDefault()):40===b&&("down"!==M&&(x(),y()),a.preventDefault())}),J.on("keyup",function(a){var b=a.keyCode||a.which;38===b?A():40===b&&A()}),J.on("blur",function(){u()}),D.down.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("down"!==M&&(x(),y()),a.preventDefault())}),D.down.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.up.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("up"!==M&&(w(),z()),a.preventDefault())}),D.up.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.down.on("mousedown.touchspin",function(a){D.down.off("touchstart.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.down.on("touchstart.touchspin",function(a){D.down.off("mousedown.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.up.on("mousedown.touchspin",function(a){D.up.off("touchstart.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("touchstart.touchspin",function(a){D.up.off("mousedown.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),D.up.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),a(document).on(c(["mouseup","touchend","touchcancel"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),a(document).on(c(["mousemove","touchmove","scroll","scrollstart"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),J.on("mousewheel DOMMouseScroll",function(a){if(B.mousewheel&&J.is(":focus")){var b=a.originalEvent.wheelDelta||-a.originalEvent.deltaY||-a.originalEvent.detail;a.stopPropagation(),a.preventDefault(),0>b?x():w()}})}function s(){J.on("touchspin.uponce",function(){A(),w()}),J.on("touchspin.downonce",function(){A(),x()}),J.on("touchspin.startupspin",function(){z()}),J.on("touchspin.startdownspin",function(){y()}),J.on("touchspin.stopspin",function(){A()}),J.on("touchspin.updatesettings",function(a,b){i(b)})}function t(a){switch(B.forcestepdivisibility){case"round":return(Math.round(a/B.step)*B.step).toFixed(B.decimals);case"floor":return(Math.floor(a/B.step)*B.step).toFixed(B.decimals);case"ceil":return(Math.ceil(a/B.step)*B.step).toFixed(B.decimals);default:return a}}function u(){var a,b,c;return a=J.val(),""===a?void(""!==B.replacementval&&(J.val(B.replacementval),J.trigger("change"))):void(B.decimals>0&&"."===a||(b=parseFloat(a),isNaN(b)&&(b=""!==B.replacementval?B.replacementval:0),c=b,b.toString()!==a&&(c=b),b<B.min&&(c=B.min),b>B.max&&(c=B.max),c=t(c),Number(a).toString()!==c.toString()&&(J.val(c),J.trigger("change"))))}function v(){if(B.booster){var a=Math.pow(2,Math.floor(L/B.boostat))*B.step;return B.maxboostedstep&&a>B.maxboostedstep&&(a=B.maxboostedstep,E=Math.round(E/a)*a),Math.max(B.step,a)}return B.step}function w(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E+=b,E>B.max&&(E=B.max,J.trigger("touchspin.on.max"),A()),D.input.val(Number(E).toFixed(B.decimals)),a!==E&&J.trigger("change")}function x(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E-=b,E<B.min&&(E=B.min,J.trigger("touchspin.on.min"),A()),D.input.val(E.toFixed(B.decimals)),a!==E&&J.trigger("change")}function y(){A(),L=0,M="down",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startdownspin"),H=setTimeout(function(){F=setInterval(function(){L++,x()},B.stepinterval)},B.stepintervaldelay)}function z(){A(),L=0,M="up",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startupspin"),I=setTimeout(function(){G=setInterval(function(){L++,w()},B.stepinterval)},B.stepintervaldelay)}function A(){switch(clearTimeout(H),clearTimeout(I),clearInterval(F),clearInterval(G),M){case"up":J.trigger("touchspin.on.stopupspin"),J.trigger("touchspin.on.stopspin");break;case"down":J.trigger("touchspin.on.stopdownspin"),J.trigger("touchspin.on.stopspin")}L=0,M=!1}var B,C,D,E,F,G,H,I,J=a(this),K=J.data(),L=0,M=!1;g()})}}(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(503)))
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(520)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(581));
+//# sourceMappingURL=toastr.js.map
+
+
+/***/ }),
+
+/***/ 581:
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
+
+/***/ }),
+
+/***/ 613:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff2?0cb0b9c589c0624c9c78dd3d83e946f6";
+
+/***/ }),
+
+/***/ 614:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.ttf?d2285965fe34b05465047401b8595dd0";
+
+/***/ }),
+
+/***/ 615:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff?78f07e2c2a535c26ef21d95e41bd7175";
+
+/***/ }),
+
+/***/ 616:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.svg?2fe2efe63441d830b1acd106c1fe8734";
 
 /***/ })
 

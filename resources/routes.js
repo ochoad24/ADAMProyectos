@@ -1190,18 +1190,104 @@ const routes = [{
             }
         },
         {
-            path:'/test',
-            component:resolve=>require(['./components/pages/test.vue'],resolve),
-            mete:{
-                title:'Test',
-                breadcrumb:[{
-                    html:'<i class="ti-home"></i> Dashboard',
-                    href:'#/',
-                },{
-                    html:'Layouts',
-                    href:'#',
-                },{
-                    html:'#/mini_sidebar'
+            path: 'Roles',
+            component: resolve => require(['./components/pages/src/rol.vue'], resolve),
+            meta: {
+                title: 'Roles',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Usuarios',
+                    href: '#',
+                }, {
+                    html: 'Roles',
+                    href: '#/Roles'
+                }]
+            }
+        },
+        {
+            path: 'Permisos',
+            component: resolve => require(['./components/pages/src/permiso.vue'], resolve),
+            meta: {
+                title: 'Permisos',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Usuarios',
+                    href: '#',
+                }, {
+                    html: 'Permisos',
+                    href: '#/Permisos'
+                }]
+            }
+        },
+        {
+            path: 'Usuarios',
+            component: resolve => require(['./components/pages/src/usuario.vue'], resolve),
+            meta: {
+                title: 'Usuarios',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Usuarios',
+                    href: '#',
+                }, {
+                    html: 'Usuarios',
+                    href: '#/Usuarios'
+                }]
+            }
+        },
+        {
+            path: 'Organizaciones',
+            component: resolve => require(['./components/pages/src/organizacion.vue'], resolve),
+            meta: {
+                title: 'Organizaciones',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Proyectos',
+                    href: '#',
+                }, {
+                    html: 'Organizaciones',
+                    href: '#/Organizaciones'
+                }]
+            }
+        },
+        {
+            path: 'Proyectos',
+            component: resolve => require(['./components/pages/src/proyecto.vue'], resolve),
+            meta: {
+                title: 'Organizaciones',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Proyectos',
+                    href: '#',
+                }, {
+                    html: 'Proyectos',
+                    href: '#/Proyectos'
+                }]
+            }
+        },
+        {
+            path: 'Actividades',
+            component: resolve => require(['./components/pages/src/actividad.vue'], resolve),
+            meta: {
+                title: 'Actividades',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Actividades',
+                    href: '#/Actividades'
                 }]
             }
         }]

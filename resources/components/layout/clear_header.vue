@@ -15,7 +15,9 @@
                     </a>
                 </div>
             </div>
-
+            <div class="navbar-nav mr-auto" style="width: 60%;">
+                <multiselect v-model="proyecto" :options="proyectos" placeholder="Seleccione un Proyecto" label="nombre" track-by="nombre"></multiselect>
+            </div>
             <ul class="navbar-nav mr-auto">
                 <b-dd class="user-dropdown">
                     <template slot="button-content">
@@ -65,8 +67,20 @@
     </header>
 </template>
 <script>
+    import multiselect from 'vue-multiselect';
+    import axios from 'axios';
     export default {
         name: "clear_header",
+        components: {
+        multiselect
+        },
+        data: () => ({
+            proyectos: [],
+            proyecto:{
+                id:0,
+                nombre:''
+            }
+        }),
         methods: {
             //Enable sidebar toggle
             toggle_left() {
@@ -74,8 +88,39 @@
             },
             toggle_right() {
                 this.$store.commit('rightside_bar', "toggle");
+            },
+            cargarProyecto() {
+                let me=this;
+                fetch('/proyecto/select')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(myJson) {
+                    me.proyectos=myJson;
+                    // console.log(me.proyectos);
+                });
+            },
+        },
+        mounted() {
+            this.cargarProyecto();
+            this.$root.$emit("SeleccionProyecto", 0);
+        },
+        watch: {
+            proyecto(val) {
+                if(val)
+                {
+                    this.$root.$emit("SeleccionProyecto", val.id);
+                    console.log(val);
+                }else{
+                    this.$root.$emit("SeleccionProyecto", 0);
+                    swal.fire({
+                        type: 'warning',
+                        title: 'Advertencia',
+                        text: 'Por favor seleccione un proyecto',
+                    })
+                }
             }
-
-        }
+        },
     }
 </script>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
