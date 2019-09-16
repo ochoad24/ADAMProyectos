@@ -297,6 +297,7 @@
             },
             getOrg() {
                 let me = this;
+                console.log(this.proyectos);
                 axios.get('/org')
                     .then(function (response) {
                         me.organizaciones = response.data;

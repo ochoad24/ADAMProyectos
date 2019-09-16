@@ -343,6 +343,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         getOrg: function getOrg() {
             var me = this;
+            console.log(this.proyectos);
             __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/org').then(function (response) {
                 me.organizaciones = response.data;
             }).catch(function (error) {

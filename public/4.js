@@ -101,7 +101,7 @@ function getDate(hours) {
   return new Date(timeStamp + hours * 60 * 60 * 1000).getTime();
 }
 var tasks = [{
-  id: 1,
+  id: 0,
   label: "Make some noise",
   user: '<a href="https://www.google.com/search?q=John+Doe" target="_blank" style="color:#0077c0;">John Doe</a>',
   start: getDate(-24 * 5),
@@ -109,157 +109,6 @@ var tasks = [{
   percent: 85,
   type: "project"
   //collapsed: true,
-}, {
-  id: 2,
-  label: "With great power comes great responsibility",
-  user: '<a href="https://www.google.com/search?q=Peter+Parker" target="_blank" style="color:#0077c0;">Peter Parker</a>',
-  parentId: 1,
-  start: getDate(-24 * 4),
-  duration: 4 * 24 * 60 * 60 * 1000,
-  percent: 50,
-  type: "milestone",
-  collapsed: true,
-  style: {
-    base: {
-      fill: "#1EBC61",
-      stroke: "#0EAC51"
-    }
-  }
-}, {
-  id: 3,
-  label: "Courage is being scared to death, but saddling up anyway.",
-  user: '<a href="https://www.google.com/search?q=John+Wayne" target="_blank" style="color:#0077c0;">John Wayne</a>',
-  parentId: 2,
-  start: getDate(-24 * 3),
-  duration: 2 * 24 * 60 * 60 * 1000,
-  percent: 100,
-  type: "task"
-}, {
-  id: 4,
-  label: "Put that toy AWAY!",
-  user: '<a href="https://www.google.com/search?q=Clark+Kent" target="_blank" style="color:#0077c0;">Clark Kent</a>',
-  start: getDate(-24 * 2),
-  duration: 2 * 24 * 60 * 60 * 1000,
-  percent: 50,
-  type: "task",
-  dependentOn: [3]
-}, {
-  id: 5,
-  label: "One billion, gajillion, fafillion... shabadylu...mil...shabady......uh, Yen.",
-  user: '<a href="https://www.google.com/search?q=Austin+Powers" target="_blank" style="color:#0077c0;">Austin Powers</a>',
-  parentId: 4,
-  start: getDate(0),
-  duration: 2 * 24 * 60 * 60 * 1000,
-  percent: 10,
-  type: "milestone",
-  style: {
-    base: {
-      fill: "#0287D0",
-      stroke: "#0077C0"
-    }
-  }
-}, {
-  id: 6,
-  label: "Butch Mario and the Luigi Kid",
-  user: '<a href="https://www.google.com/search?q=Mario+Bros" target="_blank" style="color:#0077c0;">Mario Bros</a>',
-  parentId: 5,
-  start: getDate(24),
-  duration: 1 * 24 * 60 * 60 * 1000,
-  percent: 50,
-  type: "task",
-  collapsed: true,
-  style: {
-    base: {
-      fill: "#8E44AD",
-      stroke: "#7E349D"
-    }
-  }
-}, {
-  id: 7,
-  label: "Devon, the old man wanted me, it was his dying request",
-  user: '<a href="https://www.google.com/search?q=Knight+Rider" target="_blank" style="color:#0077c0;">Knight Rider</a>',
-  parentId: 2,
-  dependentOn: [6],
-  start: getDate(24 * 2),
-  duration: 4 * 60 * 60 * 1000,
-  percent: 20,
-  type: "task",
-  collapsed: true
-}, {
-  id: 8,
-  label: "Hey, Baby! Anybody ever tell you I have beautiful eyes?",
-  user: '<a href="https://www.google.com/search?q=Johhny+Bravo" target="_blank" style="color:#0077c0;">Johhny Bravo</a>',
-  parentId: 7,
-  dependentOn: [7],
-  start: getDate(24 * 3),
-  duration: 1 * 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task"
-}, {
-  id: 9,
-  label: "This better be important, woman. You are interrupting my very delicate calculations.",
-  user: '<a href="https://www.google.com/search?q=Dexter\'s+Laboratory" target="_blank" style="color:#0077c0;">Dexter\'s Laboratory</a>',
-  parentId: 8,
-  dependentOn: [8, 7],
-  start: getDate(24 * 4),
-  duration: 4 * 60 * 60 * 1000,
-  percent: 20,
-  type: "task",
-  style: {
-    base: {
-      fill: "#8E44AD",
-      stroke: "#7E349D"
-    }
-  }
-}, {
-  id: 10,
-  label: "current task",
-  user: '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>',
-  start: getDate(24 * 5),
-  duration: 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task"
-}, {
-  id: 11,
-  label: "test task",
-  user: '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>',
-  start: getDate(24 * 6),
-  duration: 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task"
-}, {
-  id: 12,
-  label: "test task",
-  user: '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>',
-  start: getDate(24 * 7),
-  duration: 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task",
-  parentId: 11
-}, {
-  id: 13,
-  label: "test task",
-  user: '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>',
-  start: getDate(24 * 8),
-  duration: 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task"
-}, {
-  id: 14,
-  label: "test task",
-  user: '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>',
-  start: getDate(24 * 9),
-  duration: 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task"
-}, {
-  id: 15,
-  label: "test task",
-  user: '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>',
-  start: getDate(24 * 16),
-  duration: 24 * 60 * 60 * 1000,
-  percent: 0,
-  type: "task"
 }];
 var options = {
   taskMapping: {
@@ -297,6 +146,11 @@ var options = {
       value: "id",
       width: 40
     }, {
+      id: 1,
+      label: "ID",
+      value: "id",
+      width: 40
+    }, {
       id: 2,
       label: "Description",
       value: "label",
@@ -321,7 +175,7 @@ var options = {
       id: 3,
       label: "Start",
       value: function value(task) {
-        return __WEBPACK_IMPORTED_MODULE_4_dayjs___default()(task.start).format("YYYY-MM-DD");
+        return __WEBPACK_IMPORTED_MODULE_4_dayjs___default()(task.start).format("DD-MM-YYYY");
       },
       width: 78
     }, {
@@ -347,13 +201,31 @@ var options = {
     }]
   },
   locale: {
-    name: "en",
-    Now: "Now",
+    'name': "es",
+    'Now': "Ahora",
     "X-Scale": "Zoom-X",
     "Y-Scale": "Zoom-Y",
-    "Task list width": "Task list",
-    "Before/After": "Expand",
-    "Display task list": "Task list"
+    "Task list width": "Lista",
+    "Before/After": "Expandir",
+    "Display task list": "Lista",
+    "weekdays": 'Domingo_Lunes_Martes_Miércoles_Jueves_Viernes_Sábado'.split('_'),
+    'months': 'Enero_Febrero_Marzo_Abril_Mayo_Junio_Julio_Agosto_Septiembre_Octubre_Noviembre_Diciembre'.split('_'),
+    'monthsShort': 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dec'.split('_'),
+    'relativeTime': {
+      'future': 'en %s',
+      'past': 'hay %s',
+      's': 'algunos segundos',
+      'm': 'un minuto',
+      'mm': '%d minutos',
+      'h': 'una hora',
+      'hh': '%d horas',
+      'd': 'un día',
+      'dd': '%d días',
+      'M': 'un mes',
+      'MM': '%d meses',
+      'y': 'un año',
+      'yy': '%d años'
+    }
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -367,11 +239,41 @@ var options = {
       tasks: tasks,
       options: options,
       dynamicStyle: {},
-      lastId: 16
+      lastId: 16,
+      proyectos: []
     };
   },
 
+  created: function created() {
+    this.initialize();
+  },
+
+
   methods: {
+    initialize: function initialize() {
+      var me = this;
+      __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/proyecto').then(function (response) {
+        me.proyectos = response.data;
+        me.cargarDatos(me.proyectos);
+      }).catch(function (error) {
+        console.log(error.response);
+      });
+    },
+    cargarDatos: function cargarDatos(proyectos1) {
+      var array = proyectos1;
+      var me = this;
+      array.forEach(function (item) {
+        var task = new Object();
+        task.id = item.IdProyecto;
+        task.label = item.Titulo;
+        task.user = '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>';
+        task.start = Date.parse(item.FechaInicio);
+        task.end = Date.parse(item.FechaFin);
+        task.percent = 80;
+        task.type = "project";
+        me.tasks.push(task);
+      });
+    },
     addTask: function addTask() {
       this.tasks.push({
         id: this.lastId++,
@@ -391,6 +293,9 @@ var options = {
     },
     styleUpdate: function styleUpdate(style) {
       this.dynamicStyle = style;
+    },
+    click: function click() {
+      console.log('click');
     }
   }
 });
@@ -8878,16 +8783,16 @@ var defaultStyle = {
 };
 var defaultOptions = {
   title: {
-    label: "gantt-elastic",
+    label: "ADAM",
     html: false
   },
   locale: {
-    Now: "Now",
-    "X-Scale": "Zoom-X",
-    "Y-Scale": "Zoom-Y",
-    "Task list width": "Task list",
-    "Before/After": "Expand",
-    "Display task list": "Show task list"
+    Now: "Ahora",
+    "X-Scale": "Zoom-Fechas",
+    "Y-Scale": "Aumentar Tamaño",
+    "Task list width": "Lista de tareas",
+    "Before/After": "Expandir",
+    "Display task list": "Mostrar descripción"
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -9654,9 +9559,9 @@ var render = function() {
                     {
                       attrs: { options: _vm.options, tasks: _vm.tasks },
                       on: {
-                        "tasks-changed": _vm.tasksUpdate,
                         "options-changed": _vm.optionsUpdate,
-                        "dynamic-style-changed": _vm.styleUpdate
+                        "dynamic-style-changed": _vm.styleUpdate,
+                        "chart-project-click": _vm.click
                       }
                     },
                     [
