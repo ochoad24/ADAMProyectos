@@ -1,22 +1,22 @@
 webpackJsonp([146],{
 
-/***/ 2142:
+/***/ 1491:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2143);
+var content = __webpack_require__(1492);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("c62ee9b6", content, false, {});
+var update = __webpack_require__(26)("1884208a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d0fce8f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./blank.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d0fce8f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./blank.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2143:
+/***/ 1492:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,73 +35,64 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.search[data-v-d0fce8f0]{\n    border: 1px solid #bdb3b3;\n}\n.contact-profile[data-v-d0fce8f0]{\n    width:50px;\n    height: 50px;\n}\n.box-shadow[data-v-d0fce8f0]{\n    box-shadow: 0px 0px 1px 1px #cfcfcf;\n}\n.contact-pic[data-v-d0fce8f0]{\n    width: 50px;\n    height: 50px;\n}\n.table td[data-v-d0fce8f0]{\n    padding: 16px;\n    vertical-align: middle;\n}\n.contacts-box .custom-control-inline[data-v-d0fce8f0]{\n    margin-right: 0;\n}\n.custom-control-label[data-v-d0fce8f0]::before{\n    width: 100px;\n    height: 100px;\n}\n.contact-page[data-v-d0fce8f0]{\n    font-size: 14px;\n}\n.options a[data-v-d0fce8f0]:hover,.options2 a[data-v-d0fce8f0]:hover{\n    background-color: #eee;\n}\n.bg-title[data-v-d0fce8f0]{\n    background-color: #f5f5f5;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.nsg-editor{padding:10px;cursor:text\n}\n.nsg-tag{display:inline-block;border:1px solid #666;padding:3px;margin:4px\n}\n.nsg-invalid{border-color:#c00\n}\n.nsg-tag-remove:after{margin-left:4px;padding:0 4px;content:'x';background-color:#ccc;cursor:pointer\n}\n.nsg-input{display:inline-block;padding:3px 3px 3px 8px;margin:5px 0\n}\n.nsg-input[placeholder]{min-width:100%\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2144:
+/***/ 1493:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1494);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("3e33f374", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia_custom.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia_custom.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1494:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.nsg-tag {\n    border-color     : #6699cc;\n    background-color : #6699cc;\n    border-radius    : 4px;\n    padding          : 3px 7px;\n}\n.input {\n    background-color : #eeeeee;\n    color            : #FFF;\n    padding          : 10px;\n}\ninput {\n    outline          : none;\n    background-color : #eeeeee;\n    color            : #6699cc;\n    border           : 0;\n    padding          : 3px;\n    margin           : 5px 0;\n}\n.nsg-tag-remove:after {\n    background-color : #6699cc;\n}\nlabel.tag1 {\n    margin-top    : 15px;\n    margin-bottom : 15px;\n}\n.m-t-b-15 {\n    margin-top    : 15px;\n    margin-bottom : 15px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1495:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vddl__ = __webpack_require__(2145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vddl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vddl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue__ = __webpack_require__(2146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js__ = __webpack_require__(1496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js__);
 //
 //
 //
@@ -152,638 +143,204 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vddl___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'blank',
-    data: function data() {
-        return {
-            selectedItem: null,
-            disable: false,
-            itemMock: { type: "new element", id: 1 },
-            containerMock: {
-                "type": "container",
-                "id": 4,
-                "columns": []
-            },
-            dropzones: {
-                "A": [{
-                    "type": "container",
-                    "id": 1,
-                    "columns": [{
-                        "type": "item",
-                        "id": "1"
-                    }, {
-                        "type": "item",
-                        "id": "2"
-                    }, {
-                        "type": "item",
-                        "id": "3"
-                    }]
-                }, {
-                    "type": "item",
-                    "id": "4"
-                }, {
-                    "type": "item",
-                    "id": "5"
-                }, {
-                    "type": "item",
-                    "id": "6"
-                }],
-                "B": [{
-                    "type": "item",
-                    "id": 7
-                }, {
-                    "type": "item",
-                    "id": "8"
-                }, {
-                    "type": "container",
-                    "id": "2",
-                    "columns": [{
-                        "type": "item",
-                        "id": "9"
-                    }, {
-                        "type": "item",
-                        "id": "10"
-                    }, {
-                        "type": "container",
-                        "id": "3",
-                        "columns": [{
-                            "type": "item",
-                            "id": "13"
-                        }, {
-                            "type": "item",
-                            "id": "14"
-                        }]
-                    }, {
-                        "type": "item",
-                        "id": "15"
-                    }]
-                }]
-            }
-        };
-    },
-
+    name: "tags_input",
     components: {
-        list: __WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue___default.a
+        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    mounted: function mounted() {},
-    methods: {
-        copied: function copied(item) {
-            item.id++;
-        },
-        inserted: function inserted(data) {
-            console.log(data);
-        },
-        toggleDisable: function toggleDisable() {
-            this.disable = !this.disable;
-        },
-        handleSelected: function handleSelected(item) {
-            this.selectedItem = item;
-        },
-        handleDrop: function handleDrop(data) {
-            console.log(':v-list: drop');
-            console.log(data);
-            var index = data.index,
-                list = data.list,
-                item = data.item;
-            // change the id
+    mounted: function mounted() {
+        'use strict';
 
-            item.id = new Date().getTime();
-            list.splice(index, 0, item);
-        },
-        handleMoved: function handleMoved(item) {
-            console.log(':v-draggable: moved');
-            console.log(item);
-            var index = item.index,
-                list = item.list;
+        void function () {
 
-            list.splice(index, 1);
-        }
-    }
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(ty);
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(custom, {
+                delimiter: ','
+            });
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(del, {
+                deletion: true
+            });
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(def);
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(lng);
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(dup, {
+                validate: function validate() {
+                    return true;
+                }
+            });
+
+            function events(el, type, fn) {
+                if (el.addEventListener) {
+                    el.addEventListener(type, fn);
+                } else if (el.attachEvent) {
+                    el.attachEvent('on' + type, wrap(fn));
+                } else {
+                    el['on' + type] = wrap(fn);
+                }
+
+                function wrap(originalEvent) {
+                    var e = originalEvent || global.event;
+                    e.target = e.target || e.srcElement;
+                    e.preventDefault = e.preventDefault || function preventDefault() {
+                        e.returnValue = false;
+                    };
+                    e.stopPropagation = e.stopPropagation || function stopPropagation() {
+                        e.cancelBubble = true;
+                    };
+                    fn.call(el, e);
+                }
+            }
+        }();
+    },
+    destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(18)))
 
 /***/ }),
 
-/***/ 2145:
+/***/ 1496:
 /***/ (function(module, exports, __webpack_require__) {
 
-/*!
- * Vddl.js v0.7.1
- * (c) 2017 Hejx
- * Released under the MIT License.
- * https://github.com/hejianxian/vddl#readme
- */
-
-(function (global, factory) {
-   true ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.DragAndDropList = factory());
-}(this, (function () {
-
-var Draggable = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-draggable",on:{"dragstart":function($event){$event.stopPropagation();_vm.handleDragstart($event);},"dragend":function($event){$event.stopPropagation();_vm.handleDragend($event);},"click":function($event){$event.stopPropagation();_vm.handleClick($event);},"selectstart":_vm.handleSelected}},[_vm._t("default")],2)},staticRenderFns: [],
-  name: 'vddl-draggable',
-  // css: vddl-dragging, vddl-dragging-source
-  props: {
-    draggable: [ Object, Array ],
-    wrapper: Array,
-    index: Number,
-
-    effectAllowed: String,
-    type: String,
-
-    // diable
-    disableIf: Boolean,
-
-    // callback fn
-    dragstart: Function,
-    selected: Function,
-    dragend: Function,
-    moved: Function,
-    copied: Function,
-    canceled: Function,
-  },
-  data: function data() {
-    return {};
-  },
-  computed: {},
-  methods: {
-    handleDragstart: function handleDragstart(event) {
-      var this$1 = this;
-
-      var draggable = JSON.stringify(this.draggable);
-      // Check whether the element is draggable, since dragstart might be triggered on a child.
-      if (draggable == 'false' || this.disableIf) { return true; }
-
-      // Serialize the data associated with this element. IE only supports the Text drag type
-      event.dataTransfer.setData("Text", draggable);
-
-      // Only allow actions specified in effect-allowed attribute
-      event.dataTransfer.effectAllowed = this.effectAllowed || "move";
-
-      // Add CSS classes. IE9 not support 'classList'
-      this.$el.className = this.$el.className.trim() + " vddl-dragging";
-      setTimeout(function () {
-        this$1.$el.className = this$1.$el.className.trim() + " vddl-dragging-source";
-      }, 0);
-
-      // Workarounds for stupid browsers, see description below
-      this.vddlDropEffectWorkaround.dropEffect = "none";
-      this.vddlDragTypeWorkaround.isDragging = true;
-
-      // Save type of item in global state. Usually, this would go into the dataTransfer
-      // typename, but we have to use "Text" there to support IE
-      this.vddlDragTypeWorkaround.dragType = this.type || undefined;
-
-      // Try setting a proper drag image if triggered on a vddl-handle (won't work in IE).
-      if (event._dndHandle && event.dataTransfer.setDragImage) {
-        event.dataTransfer.setDragImage(this.$el, event._dndHandleLeft, event._dndHandleTop);
-      }
-
-      // Invoke callback
-      if (typeof(this.dragstart) === 'function') {
-        this.dragstart.call(this, event.target);
-      }
-    },
-
-    handleDragend: function handleDragend(event) {
-      var this$1 = this;
-
-      var dropEffect = this.vddlDropEffectWorkaround.dropEffect;
-      switch (dropEffect) {
-        case "move":
-          if (typeof(this.moved) === 'function') {
-            this.$nextTick(function () {
-              this$1.moved({
-                index: this$1.index,
-                list: this$1.wrapper,
-                event: event.target,
-                draggable: this$1.draggable,
-              });
-            });
-          } else {
-            this.$nextTick(function () {
-              this$1.wrapper.splice(this$1.index, 1);
-            });
-          }
-          break;
-        case "copy":
-          if (typeof(this.copied) === 'function') {
-            this.copied(this.draggable, event.target);
-          }
-          break;
-        case "none":
-          if (typeof(this.canceled) === 'function') {
-            this.canceled(event.target);
-          }
-          break;
-      }
-      if (typeof(this.dragend) === 'function') {
-        this.dragend(dropEffect, event.target);
-      }
-
-      // Clean up
-      this.$el.className = this.$el.className.replace("vddl-dragging", "").trim();
-      setTimeout(function () {
-        if (this$1.$el) { this$1.$el.className = this$1.$el.className.replace("vddl-dragging-source", "").trim(); }
-      }, 0);
-      this.vddlDragTypeWorkaround.isDragging = false;
-    },
-
-    handleClick: function handleClick(event) {
-      if (!this.selected) { return; }
-
-      if (typeof(this.selected) === 'function') {
-        this.selected(this.wrapper[this.index], event.target);
-      }
-    },
-
-    /**
-     * Workaround to make element draggable in IE9
-     * http://stackoverflow.com/questions/5500615/internet-explorer-9-drag-and-drop-dnd
-     */
-    handleSelected: function handleSelected() {
-      if (this.dragDrop) { this.dragDrop(); }
-      return false;
-    },
-
-    // init
-    init: function init() {
-      var status = true;
-      if (this.disableIf) { status = false; }
-      this.$el.setAttribute('draggable', status);
-    },
-  },
-  watch: {
-    disableIf: function disableIf(val) {
-      this.$el.setAttribute('draggable', !val);
-    },
-  },
-  // For Vue 1.0
-  ready: function ready() {
-    this.init();
-  },
-  mounted: function mounted() {
-    this.init();
-  },
-};
-
-var List = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-list",on:{"dragenter":function($event){$event.preventDefault();_vm.handleDragenter($event);},"dragover":function($event){$event.stopPropagation();$event.preventDefault();_vm.handleDragover($event);},"drop":function($event){$event.stopPropagation();$event.preventDefault();_vm.handleDrop($event);},"dragleave":_vm.handleDragleave}},[_vm._t("default")],2)},staticRenderFns: [],
-  name: 'vddl-list',
-  // css: placeholder, dragover
-  props: {
-    list: Array,
-
-    allowedTypes: Array,
-    disableIf: Boolean,
-    horizontal: Boolean,
-    externalSources: Boolean,
-
-    dragover: Function,
-    inserted: Function,
-    drop: Function,
-  },
-  data: function data() {
-    return {};
-  },
-  computed: {},
-  methods: {
-    handleDragenter: function handleDragenter(event) {
-      if (!this.isDropAllowed(event)) { return true; }
-    },
-
-    handleDragover: function handleDragover(event) {
-      var this$1 = this;
-
-      if (!this.isDropAllowed(event)) { return true; }
-
-      if (this.placeholderNode.parentNode != this.listNode) {
-        this.listNode.appendChild(this.placeholderNode);
-      }
-
-      if (event.target !== this.listNode) {
-        // Try to find the node direct directly below the list node.
-        var listItemNode = event.target;
-        while (listItemNode.parentNode !== this.listNode && listItemNode.parentNode) {
-          listItemNode = listItemNode.parentNode;
-        }
-        if (listItemNode.parentNode === this.listNode && listItemNode !== this.placeholderNode) {
-          // If the mouse pointer is in the upper half of the child element,
-          // we place it before the child element, otherwise below it.
-          if (this.isMouseInFirstHalf(event, listItemNode)) {
-            this.listNode.insertBefore(this.placeholderNode, listItemNode);
-          } else {
-            this.listNode.insertBefore(this.placeholderNode, listItemNode.nextSibling);
-          }
-        }
-      } else {
-        // This branch is reached when we are dragging directly over the list element.
-        // Usually we wouldn't need to do anything here, but the IE does not fire it's
-        // events for the child element, only for the list directly. Therefore, we repeat
-        // the positioning algorithm for IE here.
-        if (this.isMouseInFirstHalf(event, this.placeholderNode, true)) {
-          // Check if we should move the placeholder element one spot towards the top.
-          // Note that display none elements will have offsetTop and offsetHeight set to
-          // zero, therefore we need a special check for them.
-          while (this.placeholderNode.previousElementSibling
-                && (this.isMouseInFirstHalf(event, this.placeholderNode.previousElementSibling, true)
-                || this.placeholderNode.previousElementSibling.offsetHeight === 0)) {
-            this$1.listNode.insertBefore(this$1.placeholderNode, this$1.placeholderNode.previousElementSibling);
-          }
-        } else {
-          // Check if we should move the placeholder element one spot towards the bottom
-          while (this.placeholderNode.nextElementSibling &&
-                !this.isMouseInFirstHalf(event, this.placeholderNode.nextElementSibling, true)) {
-            this$1.listNode.insertBefore(this$1.placeholderNode,
-                this$1.placeholderNode.nextElementSibling.nextElementSibling);
-          }
-        }
-      }
-
-      // At this point we invoke the callback, which still can disallow the drop.
-      // We can't do this earlier because we want to pass the index of the placeholder.
-      if (this.dragover && !this.invokeCallback('dragover', event, this.getPlaceholderIndex())) {
-        return this.stopDragover(event);
-      }
-
-      if (this.$el.className.indexOf("vddl-dragover") < 0) { this.$el.className = this.$el.className.trim() + " vddl-dragover"; }
-      return false;
-    },
-    handleDrop: function handleDrop(event) {
-      if (!this.isDropAllowed(event)) { return true; }
-
-      // The default behavior in Firefox is to interpret the dropped element as URL and
-      // forward to it. We want to prevent that even if our drop is aborted.
-
-      // Unserialize the data that was serialized in dragstart. According to the HTML5 specs,
-      // the "Text" drag type will be converted to text/plain, but IE does not do that.
-      var data = event.dataTransfer.getData("Text") || event.dataTransfer.getData("text/plain");
-      var transferredObject;
-      try {
-        transferredObject = JSON.parse(data);
-      } catch(e) {
-        return this.stopDragover();
-      }
-
-      // Invoke the callback, which can transform the transferredObject and even abort the drop.
-      var index = this.getPlaceholderIndex();
-      if (this.drop) {
-        transferredObject = this.invokeCallback('drop', event, index, transferredObject);
-        if (!transferredObject) {
-          return this.stopDragover();
-        }
-      }
-
-      // Insert the object into the array, unless drop took care of that (returned true).
-      if (transferredObject !== true) {
-        this.list.splice(index, 0, transferredObject);
-      }
-      this.invokeCallback('inserted', event, index, transferredObject);
-
-      // In Chrome on Windows the dropEffect will always be none...
-      // We have to determine the actual effect manually from the allowed effects
-      if (event.dataTransfer.dropEffect === "none") {
-        if (event.dataTransfer.effectAllowed === "copy" ||
-            event.dataTransfer.effectAllowed === "move") {
-          this.vddlDropEffectWorkaround.dropEffect = event.dataTransfer.effectAllowed;
-        } else {
-          this.vddlDropEffectWorkaround.dropEffect = event.ctrlKey ? "copy" : "move";
-        }
-      } else {
-        this.vddlDropEffectWorkaround.dropEffect = event.dataTransfer.dropEffect;
-      }
-
-      // Clean up
-      this.stopDragover();
-      return false;
-    },
-    handleDragleave: function handleDragleave(event) {
-      var this$1 = this;
-
-      this.$el.className = this.$el.className.replace("vddl-dragover", "").trim();
-      setTimeout(function () {
-        if (this$1.$el.className.indexOf("vddl-dragover") < 0) {
-          this$1.placeholderNode.parentNode && this$1.placeholderNode.parentNode.removeChild(this$1.placeholderNode);
-        }
-      }, 100);
-    },
-
-    // Checks whether the mouse pointer is in the first half of the given target element.
-    isMouseInFirstHalf: function isMouseInFirstHalf(event, targetNode, relativeToParent) {
-      var mousePointer = this.horizontal ? (event.offsetX || event.layerX)
-                                    : (event.offsetY || event.layerY);
-      var targetSize = this.horizontal ? targetNode.offsetWidth : targetNode.offsetHeight;
-      var targetPosition = this.horizontal ? targetNode.offsetLeft : targetNode.offsetTop;
-      targetPosition = relativeToParent ? targetPosition : 0;
-      return mousePointer < targetPosition + targetSize / 2;
-    },
-
-    /**
-     * Tries to find a child element that has the 'vddl-placeholder' class set. If none was found, a
-     * new div element is created.
-     */
-    getPlaceholderElement: function getPlaceholderElement() {
-      var placeholder,
-          oldPlaceholder = this.$el.parentNode.querySelectorAll('.vddl-placeholder');
-      if (oldPlaceholder.length > 0) {
-        placeholder = oldPlaceholder[0];
-        return placeholder;
-      }
-      var newPlaceholder = document.createElement('div');
-      newPlaceholder.setAttribute('class', 'vddl-placeholder');
-      return newPlaceholder;
-    },
-
-    getPlaceholderIndex: function getPlaceholderIndex() {
-      return Array.prototype.indexOf.call(this.listNode.children, this.placeholderNode);
-    },
-
-    /**
-     * Checks various conditions that must be fulfilled for a drop to be allowed
-     */
-    isDropAllowed: function isDropAllowed(event) {
-      // Disallow drop from external source unless it's allowed explicitly.
-      if (!this.vddlDragTypeWorkaround.isDragging && !this.externalSources) { return false; }
-
-      // Check mimetype. Usually we would use a custom drag type instead of Text, but IE doesn't
-      // support that.
-      if (!this.hasTextMimetype(event.dataTransfer.types)) { return false; }
-
-      // Now check the allowed-types against the type of the incoming element. For drops from
-      // external sources we don't know the type, so it will need to be checked via drop.
-      if (this.allowedTypes && this.vddlDragTypeWorkaround.isDragging) {
-        var allowed = this.allowedTypes;
-        if (Array.isArray(allowed) && allowed.indexOf(this.vddlDragTypeWorkaround.dragType) === -1) {
-          return false;
-        }
-      }
-
-      // Check whether droping is disabled completely
-      if (this.disableIf) { return false; }
-
-      return true;
-    },
-
-    /**
-     * Small helper function that cleans up if we aborted a drop.
-     */
-    stopDragover: function stopDragover() {
-      this.placeholderNode.parentNode && this.placeholderNode.parentNode.removeChild(this.placeholderNode);
-      this.$el.className = this.$el.className.replace("vddl-dragover", "").trim();
-      return true;
-    },
-
-    /**
-     * Invokes a callback with some interesting parameters and returns the callbacks return value.
-     */
-    invokeCallback: function invokeCallback(expression, event, index, item) {
-      var fn = this[expression];
-      if (fn) {
-        fn({
-          event: event,
-          index: index,
-          item: item || undefined,
-          list: this.list,
-          external: !this.vddlDragTypeWorkaround.isDragging,
-          type: this.vddlDragTypeWorkaround.isDragging ? this.vddlDragTypeWorkaround.dragType : undefined
-        });
-      }
-      return fn ? true : false;
-    },
-
-    /**
-     * Check if the dataTransfer object contains a drag type that we can handle. In old versions
-     * of IE the types collection will not even be there, so we just assume a drop is possible.
-     */
-    hasTextMimetype: function hasTextMimetype(types) {
-      if (!types) { return true; }
-        for (var i = 0; i < types.length; i += 1) {
-          if (types[i] === "Text" || types[i] === "text/plain") { return true; }
-        }
-
-      return false;
-    },
-    init: function init() {
-      this.placeholderNode = this.getPlaceholderElement();
-      this.listNode = this.$el;
-      this.placeholderNode.parentNode && this.placeholderNode.parentNode.removeChild(this.placeholderNode);
-    },
-  },
-  ready: function ready() {
-    this.init();
-  },
-  mounted: function mounted() {
-    this.init();
-  },
-};
-
-var Handle = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-handle",on:{"dragstart":_vm.handle,"dragend":_vm.handle}},[_vm._t("default")],2)},staticRenderFns: [],
-  name: 'vddl-handle',
-  props: {
-    handleLeft: Number,
-    handleTop: Number,
-  },
-  data: function data() {
-    return {};
-  },
-  computed: {},
-  methods: {
-    handle: function handle(event) {
-      event._dndHandle = true;
-      event._dndHandleLeft = this.handleLeft || 0;
-      event._dndHandleTop = this.handleTop || 0;
-    },
-    init: function init() {
-      this.$el.setAttribute('draggable', true);
-    },
-  },
-  ready: function ready() {
-    this.init();
-  },
-  mounted: function mounted() {
-    this.init();
-  },
-};
-
-var Nodrag = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-nodrag",on:{"dragstart":_vm.handleDragstart,"dragend":_vm.handleDragend}},[_vm._t("default")],2)},staticRenderFns: [],
-  name: 'vddl-nodrag',
-  props: {},
-  data: function data() {
-    return {};
-  },
-  computed: {},
-  methods: {
-    handleDragstart: function handleDragstart(event) {
-      if (!event._dndHandle) {
-        // If a child element already reacted to dragstart and set a dataTransfer object, we will
-        // allow that. For example, this is the case for user selections inside of input elements.
-        if (!(event.dataTransfer.types && event.dataTransfer.types.length)) {
-          event.preventDefault();
-        }
-        event.stopPropagation();
-      }
-    },
-    handleDragend: function handleDragend(event) {
-      if (!event._dndHandle) {
-        event.stopPropagation();
-      }
-    },
-    init: function init() {
-      this.$el.setAttribute('draggable', true);
-    },
-  },
-  ready: function ready() {
-    this.init();
-  },
-  mounted: function mounted() {
-    this.init();
-  },
-};
-
-var Placeholder = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-placeholder"},[_vm._t("default")],2)},staticRenderFns: [],
-  name: 'vddl-placeholder',
-};
-
-var install = function (Vue) {
-  /* eslint no-param-reassign: 0 */
-  Vue.prototype.vddlDropEffectWorkaround = {};
-  Vue.prototype.vddlDragTypeWorkaround = {};
-
-  Vue.component(Draggable.name, Draggable);
-  Vue.component(List.name, List);
-  Vue.component(Handle.name, Handle);
-  Vue.component(Nodrag.name, Nodrag);
-  Vue.component(Placeholder.name, Placeholder);
-};
-
-/* eslint no-undef:0 */
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
-}
-
-var install$1 = { install: install };
-
-return install$1;
-
-})));
-
+/* WEBPACK VAR INJECTION */(function(global, setImmediate) {var require;var require;!function(e){if(true)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var t;t="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,t.insignia=e()}}(function(){return function e(t,n,r){function i(o,u){if(!n[o]){if(!t[o]){var l="function"==typeof require&&require;if(!u&&l)return require(o,!0);if(a)return a(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var c=n[o]={exports:{}};t[o][0].call(c.exports,function(e){var n=t[o][1][e];return i(n?n:e)},c,c.exports,e,t,n,r)}return n[o].exports}for(var a="function"==typeof require&&require,o=0;o<r.length;o++)i(r[o]);return i}({1:[function(e,t){"use strict";var n=e("crossvent"),r=e("./dom"),i=e("./text"),a=["fontFamily","fontSize","fontWeight","fontStyle","letterSpacing","textTransform","wordSpacing","textIndent","webkitBoxSizing","mozBoxSizing","boxSizing","padding","border"],o=20;t.exports=function(e){function t(){var e,t,n=c();for(t=0;t<a.length;t++)e=n[a[t]],void 0!==e&&null!==e&&(s.style[a[t]]=e);s.disabled="disabled",s.style.whiteSpace="pre",s.style.position="absolute",s.style.top=s.style.left="-9999em"}function u(){var t=e.value;if(t!==s.value){i(s,t);var n=s.offsetWidth+o;e.style.width=n+"px"}}function l(t){var r=t?"remove":"add";n[r](e,"keydown",u),n[r](e,"keyup",u),n[r](e,"input",u),n[r](e,"paste",u),n[r](e,"change",u)}function f(){l(!0),s.parentElement.removeChild(s),e.style.width=""}function c(){return window.getComputedStyle?window.getComputedStyle(e):e.currentStyle}var s=r("span");return document.body.appendChild(s),t(),l(),{remap:t,refresh:u,destroy:f}}},{"./dom":2,"./text":12,crossvent:7}],2:[function(e,t){"use strict";t.exports=function(e,t){var n=document.createElement(e);return t&&(n.className=t),n}},{}],3:[function(e,t){"use strict";function n(e){return e&&e.__esModule?e:{"default":e}}function r(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}function i(e){function t(e){for(var t=arguments.length<=1||void 0===arguments[1]?"data":arguments[1],n="data"===t?function(n){return gt(n[t])===gt(e)}:function(n){return n[t]===e},r=0;r<it.length;r++)if(n(it[r]))return it[r];return null}function n(e){for(var t=arguments.length<=1||void 0===arguments[1]?"data":arguments[1],n="data"===t?function(n){return gt(n[t])===gt(e)}:function(n){return n[t]===e},r=0;r<it.length;r++)if(n(it[r]))return r;return null}function i(e){var t=ft(e),n={data:e,valid:t};if(at.preventInvalid&&!t)return xt;var r=v(n);return r?(n.el=r,it.push(n),xt.emit("add",e,r),u(),xt):xt}function a(e){return e?(m(e.el),it.splice(it.indexOf(e),1),xt.emit("remove",e.data),u(),xt):xt}function u(){it.slice().forEach(function(e,t){it.splice(t,1);var n=ft(e.data,t);n?(e.el.classList.add("nsg-valid"),e.el.classList.remove("nsg-invalid")):(e.el.classList.add("nsg-invalid"),e.el.classList.remove("nsg-valid"),xt.emit("invalid",e.data,e.el)),e.valid=n,it.splice(t,0,e)})}function f(e){return a(t(e))}function s(e){return a(t(e,"el"))}function v(e){return A(ht,e)}function m(e){e.parentElement&&e.parentElement.removeChild(e)}function A(e,t){var n=t.data,r="string"==typeof n&&0===n.trim().length;if(r)return null;var i=d["default"]("span","nsg-tag");return ct(i,t),at.deletion&&i.appendChild(d["default"]("span","nsg-tag-remove")),e.appendChild(i),i}function D(e){return e}function L(){return it.filter(function(e){return e.valid}).map(function(e){return e.data})}function z(){return it.map(function(e){return e.data})}function _(){var t=bt.querySelector(".nsg-tag");t||St?t&&St&&(e.removeAttribute("placeholder"),St=!1):(e.setAttribute("placeholder",Ct),St=!0)}function j(t){var n=t?"remove":"add",r=t?"off":"on";l["default"][n](e,"keydown",X),l["default"][n](e,"keypress",$),l["default"][n](e,"paste",G),l["default"][n](bt,"click",U),st&&(l["default"][n](document.documentElement,"blur",M,!0),l["default"][n](document.documentElement,"mousedown",P)),Ct&&(xt[r]("add",_),xt[r]("remove",_),l["default"][n](e,"keydown",_),l["default"][n](e,"keypress",_),l["default"][n](e,"paste",_),l["default"][n](bt,"click",_),_())}function q(){return j(!0),e.value="",e.className=e.className.replace(O,""),bt.className=bt.className.replace(I,""),ht.parentElement&&ht.parentElement.removeChild(ht),yt.parentElement&&yt.parentElement.removeChild(yt),wt.destroy(),xt.destroyed=!0,xt.destroy=xt.addItem=xt.removeItem=function(){return xt},xt.tags=xt.value=function(){return null},xt}function R(){return(new Date).valueOf()}function M(){Et>R()||F(!0)}function P(e){for(var t=e.target;t;)t===bt&&(Et=R()+100),t=t.parentElement}function U(t){var n=t.target;if(N.test(n.className))return s(n.parentElement),void e.focus();for(var r=n,i=k.test(r.className);i===!1&&r.parentElement;)r=r.parentElement,i=k.test(r.className);i&&lt?Z(r,B):n!==e&&(V(),e.focus())}function V(){Z(yt.lastChild,B),J([ot],!0)}function F(e){return(e?H:J)([ot],e),e&&tt(yt,W),xt}function W(e,t){ht.appendChild(t)}function X(t){var n=o["default"](e),r=t.which||t.keyCode||t.charCode,i=0===n.start&&0===n.end&&ht.lastChild,a=n.start===e.value.length&&n.end===e.value.length&&yt.firstChild;if(lt)if(r===w)ht.firstChild?Z(ht.firstChild,{}):o["default"](e,{start:0,end:0});else if(r===E)yt.lastChild?Z(yt.lastChild,B):o["default"](e,B);else if(r===b&&i)s(ht.lastChild);else if(r===C&&a)Z(yt.firstChild,{});else{if(r!==x||!i)return;Z(ht.lastChild,B)}else if(r===b&&i)s(ht.lastChild);else if(r===C&&a)ht.appendChild(yt.firstChild);else if(r===x&&i)yt.insertBefore(ht.lastChild,yt.firstChild);else if(-1===S.indexOf(r))return;return t.preventDefault(),!1}function $(e){var t=e.which||e.keyCode||e.charCode;return String.fromCharCode(t)===ot?(F(),e.preventDefault(),!1):void 0}function G(){setTimeout(function(){return J()},0)}function H(e,t){K(e,t)}function J(t,n){K(t,n,o["default"](e))}function K(t,n,r){function a(){r&&(r.start-=c,r.end-=c,o["default"](e,r))}var u=n||!r?1/0:r.start,l=e.value.slice(0,u).concat(t||[]).split(ot);if(!(l.length<1)&&lt){var f=l.pop()+e.value.slice(u),c=l.join(ot).length;l.forEach(function(e){return i(dt(e))}),e.value=f,a(),wt.refresh()}}function Q(e,t){p["default"](e,mt(t.data))}function Y(e){return p["default"](e)}function Z(t,n){if(t){J([ot],!0);var r=t.parentElement;if(r===ht)for(;r.lastChild!==t;)yt.insertBefore(r.lastChild,yt.firstChild);else for(;r.firstChild!==t;)ht.appendChild(r.firstChild);var i=n.remove?"":Y(t);s(t),e.value=i,e.focus(),o["default"](e,n),wt.refresh()}}function et(){var t=e.parentElement.children;return[].concat(r(t)).some(function(t){return t!==e&&t.nodeType===y})}function tt(e,t){[].concat(r(e.children)).forEach(function(e,n){return t(Y(e),e,n)})}function nt(e,t){var r=n(e);return r===t||null===r}var rt=arguments.length<=1||void 0===arguments[1]?{}:arguments[1],it=[],at=rt,ot=at.delimiter||T;if(1!==ot.length)throw new Error("insignia expected a single-character delimiter string");var ut=et(e);if(ut||!h.test(e.tagName))throw new Error("insignia expected an input element without any siblings");var lt=at.free!==!1,ft=at.validate||nt,ct=at.render||Q,st=at.convertOnBlur!==!1,dt=D,vt=at.getText,pt=at.getValue,mt="string"==typeof vt?function(e){return e[vt]}:"function"==typeof vt?vt:function(e){return e.toString()},gt="string"==typeof pt?function(e){return e[pt]}:"function"==typeof pt?pt:function(e){return e},ht=d["default"]("span","nsg-tags nsg-tags-before"),yt=d["default"]("span","nsg-tags nsg-tags-after"),bt=e.parentElement,Et=R();e.className+=" nsg-input",bt.className+=" nsg-editor",bt.insertBefore(ht,e),bt.insertBefore(yt,e.nextSibling);var wt=g["default"](e),xt=c["default"]({addItem:i,findItem:function(e){return t(e)},findItemIndex:function(e){return n(e)},findItemByElement:function(e){return t(e,"el")},removeItem:f,removeItemByElement:s,value:L,allValues:z,refresh:F,destroy:q}),Ct=e.getAttribute("placeholder"),St=!0;return j(),(document.activeElement===e?J:H)([ot],!0),xt}var a=e("sell"),o=n(a),u=e("crossvent"),l=n(u),f=e("contra/emitter"),c=n(f),s=e("./dom"),d=n(s),v=e("./text"),p=n(v),m=e("./autosize"),g=n(m),h=/^input$/i,y=1,b=8,E=35,w=36,x=37,C=39,S=[E,w],k=/\bnsg-tag\b/,N=/\bnsg-tag-remove\b/,I=/\bnsg-editor\b/g,O=/\bnsg-input\b/g,B={start:"end",end:"end"},T=" ";t.exports=i},{"./autosize":1,"./dom":2,"./text":12,"contra/emitter":6,crossvent:7,sell:10}],4:[function(e,t){t.exports=function(e,t){return Array.prototype.slice.call(e,t)}},{}],5:[function(e,t){"use strict";var n=e("ticky");t.exports=function(e,t,r){e&&n(function(){e.apply(r||null,t||[])})}},{ticky:11}],6:[function(e,t){"use strict";var n=e("atoa"),r=e("./debounce");t.exports=function(e,t){var i=t||{},a={};return void 0===e&&(e={}),e.on=function(t,n){return a[t]?a[t].push(n):a[t]=[n],e},e.once=function(t,n){return n._once=!0,e.on(t,n),e},e.off=function(t,n){var r=arguments.length;if(1===r)delete a[t];else if(0===r)a={};else{var i=a[t];if(!i)return e;i.splice(i.indexOf(n),1)}return e},e.emit=function(){var t=n(arguments);return e.emitterSnapshot(t.shift()).apply(this,t)},e.emitterSnapshot=function(t){var o=(a[t]||[]).slice(0);return function(){var a=n(arguments),u=this||e;if("error"===t&&i["throws"]!==!1&&!o.length)throw 1===a.length?a[0]:a;return o.forEach(function(n){i.async?r(n,a,u):n.apply(u,a),n._once&&e.off(t,n)}),e}},e}},{"./debounce":5,atoa:4}],7:[function(e,t){(function(n){"use strict";function r(e,t,n,r){return e.addEventListener(t,n,r)}function i(e,t,n){return e.attachEvent("on"+t,f(e,t,n))}function a(e,t,n,r){return e.removeEventListener(t,n,r)}function o(e,t,n){var r=c(e,t,n);return r?e.detachEvent("on"+t,r):void 0}function u(e,t,n){function r(){var e;return p.createEvent?(e=p.createEvent("Event"),e.initEvent(t,!0,!0)):p.createEventObject&&(e=p.createEventObject()),e}function i(){return new d(t,{detail:n})}var a=-1===v.indexOf(t)?i():r();e.dispatchEvent?e.dispatchEvent(a):e.fireEvent("on"+t,a)}function l(e,t,r){return function(t){var i=t||n.event;i.target=i.target||i.srcElement,i.preventDefault=i.preventDefault||function(){i.returnValue=!1},i.stopPropagation=i.stopPropagation||function(){i.cancelBubble=!0},i.which=i.which||i.keyCode,r.call(e,i)}}function f(e,t,n){var r=c(e,t,n)||l(e,t,n);return h.push({wrapper:r,element:e,type:t,fn:n}),r}function c(e,t,n){var r=s(e,t,n);if(r){var i=h[r].wrapper;return h.splice(r,1),i}}function s(e,t,n){var r,i;for(r=0;r<h.length;r++)if(i=h[r],i.element===e&&i.type===t&&i.fn===n)return r}var d=e("custom-event"),v=e("./eventmap"),p=n.document,m=r,g=a,h=[];n.addEventListener||(m=i,g=o),t.exports={add:m,remove:g,fabricate:u}}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{"./eventmap":8,"custom-event":9}],8:[function(e,t){(function(e){"use strict";var n=[],r="",i=/^on/;for(r in e)i.test(r)&&n.push(r.slice(2));t.exports=n}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}],9:[function(e,t){(function(e){function n(){try{var e=new r("cat",{detail:{foo:"bar"}});return"cat"===e.type&&"bar"===e.detail.foo}catch(t){}return!1}var r=e.CustomEvent;t.exports=n()?r:"function"==typeof document.createEvent?function(e,t){var n=document.createEvent("CustomEvent");return t?n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail):n.initCustomEvent(e,!1,!1,void 0),n}:function(e,t){var n=document.createEventObject();return n.type=e,t?(n.bubbles=Boolean(t.bubbles),n.cancelable=Boolean(t.cancelable),n.detail=t.detail):(n.bubbles=!1,n.cancelable=!1,n.detail=void 0),n}}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}],10:[function(e,t){"use strict";function n(e){return{start:e.selectionStart,end:e.selectionEnd}}function r(e){function t(t,r){return n!==e&&(n?n.focus():e.blur()),{start:t,end:r}}var n=document.activeElement;n!==e&&e.focus();var r=document.selection.createRange(),o=r.getBookmark(),u=e.value,l=i(u),f=r.parentElement();if(null===f||!a(f))return t(0,0);r.text=l+r.text+l;var c=e.value;return e.value=u,r.moveToBookmark(o),r.select(),t(c.indexOf(l),c.lastIndexOf(l)-l.length)}function i(e){var t;do t="@@marker."+Math.random()*new Date;while(-1!==e.indexOf(t));return t}function a(e){return"INPUT"===e.tagName&&"text"===e.type||"TEXTAREA"===e.tagName}function o(e,t){e.selectionStart=l(e,t.start),e.selectionEnd=l(e,t.end)}function u(e,t){var n=e.createTextRange();"end"===t.start&&"end"===t.end?(n.collapse(!1),n.select()):(n.collapse(!0),n.moveEnd("character",l(e,t.end)),n.moveStart("character",l(e,t.start)),n.select())}function l(e,t){return"end"===t?e.value.length:t||0}function f(e,t){return 2===arguments.length&&s(e,t),c(e)}var c=n,s=o;document.selection&&document.selection.createRange&&(c=r,s=u),t.exports=f},{}],11:[function(e,t){var n,r="function"==typeof setImmediate;n=r?function(e){setImmediate(e)}:function(e){setTimeout(e,0)},t.exports=n},{}],12:[function(e,t){"use strict";function n(e,t){return 2===arguments.length&&(e.innerText=e.textContent=t),"string"==typeof e.innerText?e.innerText:e.textContent}t.exports=n},{}]},{},[3])(3)});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18), __webpack_require__(217).setImmediate))
 
 /***/ }),
 
-/***/ 2146:
+/***/ 1497:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("card", { attrs: { title: "<i class='ti-tag'></i> Markup" } }, [
+            _c("div", { staticClass: "example example_markup" }, [
+              _c("div", { staticClass: "parent" }, [
+                _c("label", { staticClass: "m-t-b-15", attrs: { for: "ty" } }, [
+                  _vm._v("Enter a space-separated list of tags:")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "input" }, [
+                  _c("input", { attrs: { id: "ty", value: "hi" } })
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "m-t-b-15", attrs: { for: "custom" } },
+                [
+                  _vm._v(
+                    "Enter a list of tags using a custom\n                        delimiter: "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _c("input", { attrs: { id: "custom", value: "hello" } })
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "m-t-b-15", attrs: { for: "del" } }, [
+                _vm._v(
+                  "If you want, you can allow humans to remove tags by\n                        clicking on the\n                        crosses."
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _c("input", { attrs: { id: "del", value: "welcome" } })
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "m-t-b-15", attrs: { for: "def" } }, [
+                _vm._v("Default values are naturally welcome.")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _c("input", {
+                  attrs: { id: "def", value: "tagging as a service" }
+                })
+              ])
+            ])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-tag'></i> Categorizing tags" } },
+            [
+              _c("div", { staticClass: "example example_tagclass" }, [
+                _c(
+                  "label",
+                  { staticClass: "m-t-b-15", attrs: { for: "dup" } },
+                  [_vm._v("Duplicates are okay sometimes: ")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "input" }, [
+                  _c("input", {
+                    attrs: { id: "dup", value: "hello hello hello" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  { staticClass: "m-t-b-15", attrs: { for: "lng" } },
+                  [_vm._v("Really long lists behave reasonably well, too.")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "input" }, [
+                  _c("input", {
+                    attrs: {
+                      id: "lng",
+                      value:
+                        "Really long lists behave reasonably well, too. Especially if you take into account this is JavaScript!"
+                    }
+                  })
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-55fb48a0", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 468:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2147)
+  __webpack_require__(1491)
+  __webpack_require__(1493)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2149)
+var __vue_script__ = __webpack_require__(1495)
 /* template */
-var __vue_template__ = __webpack_require__(2150)
+var __vue_template__ = __webpack_require__(1497)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -800,7 +357,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/plugins/nestable/nested-list.vue"
+Component.options.__file = "resources/components/pages/tags_input.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -809,9 +366,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-f1cb2f92", Component.options)
+    hotAPI.createRecord("data-v-55fb48a0", Component.options)
   } else {
-    hotAPI.reload("data-v-f1cb2f92", Component.options)
+    hotAPI.reload("data-v-55fb48a0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -823,23 +380,75 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 2147:
+/***/ 526:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(527)
+}
+var normalizeComponent = __webpack_require__(42)
+/* script */
+var __vue_script__ = __webpack_require__(529)
+/* template */
+var __vue_template__ = __webpack_require__(530)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/card/card.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-15e33d3a", Component.options)
+  } else {
+    hotAPI.reload("data-v-15e33d3a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2148);
+var content = __webpack_require__(528);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("56099096", content, false, {});
+var update = __webpack_require__(26)("d6b775a8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f1cb2f92\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./nested-list.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f1cb2f92\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./nested-list.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -850,7 +459,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2148:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -858,14 +467,14 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2149:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -884,109 +493,81 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'list',
-  props: ['item', 'list', 'index', 'selected', 'selectedItem', 'disable'],
-  methods: {
-    selectedEvent: function selectedEvent(item) {
-      if (typeof this.selected === 'function') {
-        this.selected(item);
-      }
-    }
-  }
+    name: 'card',
+    data: function data() {
+        return {
+            show: true,
+            isActive: false
+        };
+    },
+
+    methods: {
+        hide: function hide() {
+            this.isActive = true;
+        }
+    },
+    mounted: function mounted() {},
+    props: {
+        title: {
+            required: false
+        }
+    },
+    destroy: function destroy() {}
 });
 
 /***/ }),
 
-/***/ 2150:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "vddl-draggable",
-    {
-      staticClass: "panel__body--item",
-      class: { selected: _vm.selectedItem === _vm.item },
-      attrs: {
-        draggable: _vm.item,
-        index: _vm.index,
-        "disable-if": _vm.disable,
-        selected: _vm.selectedEvent,
-        wrapper: _vm.list
-      }
-    },
-    [
-      _vm.item.type === "container"
-        ? _c(
-            "div",
-            { staticClass: "card padding" },
-            [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", [_vm._v("Container " + _vm._s(_vm.item.id))])
-              ]),
-              _vm._v(" "),
-              _c(
-                "vddl-list",
-                {
-                  staticClass: "card-body",
-                  attrs: {
-                    list: _vm.item.columns,
-                    "disable-if": _vm.disable,
-                    "external-sources": true
-                  }
-                },
-                _vm._l(_vm.item.columns, function(col, number) {
-                  return _c("list", {
-                    key: col.id,
-                    staticClass: "p-1 border border-f5 mt-2",
-                    attrs: {
-                      item: col,
-                      list: _vm.item.columns,
-                      index: number,
-                      selected: _vm.selectedEvent,
-                      "selected-item": _vm.selectedItem,
-                      disable: _vm.disable
-                    }
-                  })
-                }),
-                1
-              )
-            ],
-            1
-          )
-        : _c("p", [
-            _vm._v(
-              "\n    " +
-                _vm._s(_vm.item.type) +
-                " " +
-                _vm._s(_vm.item.id) +
-                "\n  "
-            )
-          ])
-    ]
-  )
+  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", {
+        staticClass: "card-title",
+        domProps: { innerHTML: _vm._s(_vm.title) }
+      }),
+      _vm._v(" "),
+      _c("span", { staticClass: "float-right" }, [
+        _c("i", {
+          staticClass: "fa fa-fw ti-angle-up",
+          class: { rotate: _vm.show },
+          on: {
+            click: function($event) {
+              _vm.show = !_vm.show
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "fa fa-fw ti-close removecard",
+          on: { click: _vm.hide }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.show,
+            expression: "show"
+          }
+        ],
+        staticClass: "card-body"
+      },
+      [_vm._t("default")],
+      2
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -994,287 +575,9 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-f1cb2f92", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
-
-/***/ }),
-
-/***/ 2151:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "demo-content nested" }, [
-      _c("div", { staticClass: "v-row" }, [
-        _c(
-          "div",
-          { staticClass: "row" },
-          [
-            _vm._l(_vm.dropzones, function(list, zone) {
-              return _c("div", { staticClass: "col-4" }, [
-                _c("div", { staticClass: "card" }, [
-                  _c("div", { staticClass: "card-header" }, [
-                    _c("h3", [_vm._v("Dropzone " + _vm._s(zone))])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "card-body" },
-                    [
-                      _c(
-                        "vddl-list",
-                        {
-                          staticClass: "panel__body--list ",
-                          attrs: {
-                            list: list,
-                            inserted: _vm.inserted,
-                            "effect-allowed": "move",
-                            "disable-if": _vm.disable,
-                            drop: _vm.handleDrop,
-                            "external-sources": true
-                          }
-                        },
-                        _vm._l(list, function(item, index) {
-                          return _c("list", {
-                            key: item.id,
-                            staticClass: "p-1 border border-f5 mt-2",
-                            attrs: {
-                              item: item,
-                              list: list,
-                              index: index,
-                              moved: _vm.handleMoved,
-                              selected: _vm.handleSelected,
-                              "selected-item": _vm.selectedItem,
-                              disable: _vm.disable
-                            }
-                          })
-                        }),
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ])
-              ])
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-4" }, [
-              _c("div", { staticClass: "new-elements " }, [
-                _c("div", { staticClass: "card panel--info" }, [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "card-body" },
-                    [
-                      _c(
-                        "vddl-draggable",
-                        {
-                          staticClass: "button btn btn-success btn-block",
-                          attrs: {
-                            draggable: _vm.itemMock,
-                            copied: _vm.copied,
-                            "effect-allowed": "copy"
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Add Item\n                                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c(
-                        "vddl-draggable",
-                        {
-                          staticClass: "button btn btn-primary btn-block mt-2",
-                          attrs: {
-                            draggable: _vm.containerMock,
-                            copied: _vm.copied,
-                            "effect-allowed": "copy"
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Add Container\n                                "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "new-elements disable-element " }, [
-                _c("div", { staticClass: "card panel--info" }, [
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "button btn btn-danger",
-                        on: { click: _vm.toggleDisable }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                    Disable: " +
-                            _vm._s(_vm.disable) +
-                            "\n                                "
-                        )
-                      ]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _vm.selectedItem
-                ? _c("div", { staticClass: "selected-item" }, [
-                    _c("div", { staticClass: "card panel--info" }, [
-                      _vm._m(2),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "card-body" }, [
-                        _vm._v(
-                          "\n                                " +
-                            _vm._s(_vm.selectedItem.type) +
-                            " " +
-                            _vm._s(_vm.selectedItem.id) +
-                            "\n                            "
-                        )
-                      ])
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c("div", { staticClass: "ashcan" }, [
-                _c(
-                  "div",
-                  { staticClass: "card panel--info" },
-                  [
-                    _vm._m(3),
-                    _vm._v(" "),
-                    _c(
-                      "vddl-list",
-                      { staticClass: "card-body", attrs: { list: [] } },
-                      [
-                        _c("span", {
-                          staticClass: "fa fa-trash fa-3x ashcan-logo"
-                        })
-                      ]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ])
-          ],
-          2
-        )
-      ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h3", [_vm._v("New Elements")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h3", [_vm._v("Toggle Disable")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h3", [_vm._v("Selected")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h3", [_vm._v("Ashcan")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-d0fce8f0", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 498:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(2142)
-}
-var normalizeComponent = __webpack_require__(42)
-/* script */
-var __vue_script__ = __webpack_require__(2144)
-/* template */
-var __vue_template__ = __webpack_require__(2151)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-d0fce8f0"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/components/pages/blank.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d0fce8f0", Component.options)
-  } else {
-    hotAPI.reload("data-v-d0fce8f0", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
 
 /***/ })
 

@@ -94,4 +94,7 @@ class ActividadController extends Controller
             return ['error' => $th->getMessage()];
         }
     }
+    public function select($id){
+        return Actividad::select('id','actividad as nombre')->where('idProyecto',$id)->get();
+    }
 }

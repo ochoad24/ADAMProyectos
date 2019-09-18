@@ -224,7 +224,7 @@
                         text: 'Por favor seleccione un proyecto',
                     })
                 }
-                console.log(data);
+                // console.log(data);
             });
         },
         methods: {

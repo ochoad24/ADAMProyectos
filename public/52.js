@@ -1,22 +1,22 @@
 webpackJsonp([52],{
 
-/***/ 1403:
+/***/ 1254:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1404);
+var content = __webpack_require__(1255);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("fc4199fc", content, false, {});
+var update = __webpack_require__(26)("4951d9e7", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css", function() {
-     var newContent = require("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-25ee2c36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./product_gallery.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-25ee2c36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./product_gallery.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1404:
+/***/ 1255:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,62 +35,18 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n.abc-checkbox {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-checkbox label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-checkbox label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -1.25rem;\n  border: 1px solid #ced4da;\n  border-radius: 3px;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;\n}\n.abc-checkbox label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  left: 0;\n  top: 2px;\n  margin-left: -1.25rem;\n  padding-left: 3px;\n  padding-top: 1px;\n  font-size: 11px;\n  color: #495057;\n}\n.abc-checkbox input[type=\"checkbox\"],\n.abc-checkbox input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-checkbox input[type=\"checkbox\"]:focus + label::before,\n.abc-checkbox input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-checkbox input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox input[type=\"radio\"]:checked + label::after {\n  font-family: \"FontAwesome\";\n  content: \"\\F00C\";\n}\n.abc-checkbox input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox input[type=\"radio\"]:indeterminate + label::after {\n  display: block;\n  content: \"\";\n  width: 10px;\n  height: 3px;\n  background-color: #555555;\n  border-radius: 2px;\n  margin-left: -16.5px;\n  margin-top: 7px;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label,\n.abc-checkbox input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::before,\n.abc-checkbox input[type=\"radio\"]:disabled + label::before {\n  background-color: #e9ecef;\n  cursor: not-allowed;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::after,\n.abc-checkbox input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-checkbox.abc-checkbox-circle label::before {\n  border-radius: 50%;\n}\n.abc-checkbox.checkbox-inline {\n  margin-top: 0;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-radio {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-radio label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-radio label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -20px;\n  border: 1px solid #ced4da;\n  border-radius: 50%;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out;\n}\n.abc-radio label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  content: \" \";\n  width: 11px;\n  height: 11px;\n  left: 3px;\n  top: 5px;\n  margin-left: -20px;\n  border-radius: 50%;\n  background-color: #495057;\n  transform: scale(0, 0);\n  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);\n}\n.abc-radio input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-radio input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-radio input[type=\"radio\"]:checked + label::after {\n  transform: scale(1, 1);\n}\n.abc-radio input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::before {\n  cursor: not-allowed;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-radio.radio-inline {\n  margin-top: 0;\n}\n.abc-radio-primary input[type=\"radio\"] + label::after {\n  background-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::before {\n  border-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::after {\n  background-color: #007bff;\n}\n.abc-radio-danger input[type=\"radio\"] + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::before {\n  border-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-info input[type=\"radio\"] + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::before {\n  border-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-warning input[type=\"radio\"] + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::before {\n  border-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-success input[type=\"radio\"] + label::after {\n  background-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::before {\n  border-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::after {\n  background-color: #28a745;\n}\nlabel .was-validated .form-check-input:invalid .abc-checkbox:before, label\n.was-validated .form-check-input:invalid .abc-radio:before, label .form-check-input.is-invalid .abc-checkbox:before, label\n.form-check-input.is-invalid .abc-radio:before {\n  border-color: #dc3545;\n}\n", ""]);
+exports.push([module.i, "\n.view-icons{\n    font-size: medium;\n}\n.product_box{\n    width:23.7%\n}\n.sale-tag{\n    margin-top: 10px;\n    position: absolute;\n}\n.product_description{\n    display: none;\n}\n.sale-tag:after{\n    content: ' ';\n    position: absolute;\n    width: 0;\n    height: 0;\n    left: 30px;\n    right: auto;\n    top: 0px;\n    bottom: auto;\n    border: 10px solid;\n    border-color: #ff6666  transparent transparent transparent;\n}\n.sale-tag:before{\n    content: ' ';\n    position: absolute;\n    width: 0;\n    height: 0;\n    left: 30px;\n    right: auto;\n    top: -1px;\n    bottom: auto;\n    border: 10px solid;\n    border-color:  transparent transparent  #ff6666 transparent;\n}\n.fullwidth{\n    width: 100%;\n}\n.fullwidth .product_description{\n    display: block;\n}\n@media(min-width: 768px) and (max-width:1024px){\n.product_box{\n        width:31.5%;\n}\n.fullwidth {\n        width:100%;\n}\n}\n@media(min-width:320px) and (max-width:425px) {\n.product_box{\n        width: 96%;\n}\n.fullwidth .card-body{\n        padding: 2.5rem;\n}\n}\n@media(min-width: 426px) and (max-width:767px){\n.product_box{\n        width:46.5%;\n}\n}\n.boxed .product_box{\n    width:23.5%\n}\n@media(min-width:768px) and (min-width:768px){\n.boxed .product_box{\n        width:30%\n}\n}\n@media(max-width:425px){\n.boxed .product_box{\n        width:100%\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1405:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1406);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("3e4bee86", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./vscroll.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./vscroll.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1406:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.radio[data-v-11f2ea77],\n.checkbox[data-v-11f2ea77] {\n    display: block;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1407:
+/***/ 1256:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue__ = __webpack_require__(632);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue__);
 //
 //
 //
@@ -146,257 +102,271 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "vscroll_demo",
-    components: {
-        vScroll: __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue___default.a
-    },
+    name: 'product_gallery',
     data: function data() {
         return {
-            bar_color: "#428bca",
-            height: "300px",
-            bar_width: "10px",
-            visible: false
+            search: '',
+            isActive: '',
+            list: [{
+                src: __webpack_require__(572),
+                price: "$800",
+                mrp: "$1000",
+                name: "US-Polo T-shirt",
+                sale: "20%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(640),
+                price: "$450.45",
+                mrp: "$585",
+                name: "US-Polo Red Shirt",
+                sale: "23%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(684),
+                price: "$280",
+                mrp: "$350",
+                name: "Gift box",
+                sale: "20%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(685),
+                price: "$1000",
+                mrp: "1500",
+                name: "Apple Macbook pro",
+                sale: "33%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(688),
+                price: "$1000",
+                mrp: "1500",
+                name: "Vintage classic camera",
+                sale: "33%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(611),
+                price: "$280",
+                mrp: "$350",
+                name: "Gray T-Shirt",
+                sale: "20%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(689),
+                price: "$450.45",
+                mrp: "$585",
+                name: "Stereo headset",
+                sale: "23%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }, {
+                src: __webpack_require__(687),
+                price: "$800",
+                mrp: "$1000",
+                name: "Mobile phone",
+                sale: "20%",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
+            }]
         };
+    },
+
+    methods: {
+        listType: function listType() {
+            this.isActive = 1;
+        },
+        gridType: function gridType() {
+            this.isActive = 0;
+        }
+    },
+    computed: {
+        filteredproduct: function filteredproduct() {
+            var self = this;
+            return this.list.filter(function (cust) {
+                return cust.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0;
+            });
+        }
     }
 });
 
 /***/ }),
 
-/***/ 1408:
+/***/ 1257:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", [_vm._v("Bar Color (Any valid css color)")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.bar_color,
-                  expression: "bar_color"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "color", placeholder: "Any valid css color" },
-              domProps: { value: _vm.bar_color },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6" }, [
+        _c("div", { staticClass: "view-icons" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-8 col-sm-7 col-xl-7 ml-auto" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.search,
+                    expression: "search"
                   }
-                  _vm.bar_color = $event.target.value
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", [_vm._v("Height")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.height,
-                  expression: "height"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Height of container" },
-              domProps: { value: _vm.height },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.height = $event.target.value
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", [_vm._v("Bar Width")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.bar_width,
-                  expression: "bar_width"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "width of bar" },
-              domProps: { value: _vm.bar_width },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.bar_width = $event.target.value
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("label", { attrs: { for: "visible" } }, [
-            _vm._v("Always Visible")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "checkbox checkbox-success" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.visible,
-                  expression: "visible"
-                }
-              ],
-              staticClass: "checkbox",
-              attrs: { type: "checkbox", id: "visible" },
-              domProps: {
-                checked: Array.isArray(_vm.visible)
-                  ? _vm._i(_vm.visible, null) > -1
-                  : _vm.visible
-              },
-              on: {
-                change: function($event) {
-                  var $$a = _vm.visible,
-                    $$el = $event.target,
-                    $$c = $$el.checked ? true : false
-                  if (Array.isArray($$a)) {
-                    var $$v = null,
-                      $$i = _vm._i($$a, $$v)
-                    if ($$el.checked) {
-                      $$i < 0 && (_vm.visible = $$a.concat([$$v]))
-                    } else {
-                      $$i > -1 &&
-                        (_vm.visible = $$a
-                          .slice(0, $$i)
-                          .concat($$a.slice($$i + 1)))
+                ],
+                staticClass: "form-control ml-2",
+                attrs: { type: "text", placeholder: "Search here" },
+                domProps: { value: _vm.search },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
                     }
-                  } else {
-                    _vm.visible = $$c
+                    _vm.search = $event.target.value
                   }
                 }
-              }
-            }),
+              })
+            ]),
             _vm._v(" "),
-            _c("label", { attrs: { for: "visible" } })
+            _c("div", { staticClass: "col-4 col-sm-3 col-xl-2" }, [
+              _c("i", {
+                staticClass: "ti-layout-grid3-alt m-2",
+                on: { click: _vm.gridType }
+              }),
+              _vm._v(" "),
+              _c("i", {
+                staticClass: "ti-layout-list-thumb m-2",
+                on: { click: _vm.listType }
+              })
+            ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "v-scroll",
-        {
-          attrs: {
-            height: _vm.height,
-            color: _vm.bar_color,
-            "max-height": "100%",
-            "min-height": "120px",
-            "bar-width": _vm.bar_width,
-            alwaysvisible: _vm.visible
-          }
-        },
-        [
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ])
-        ]
-      )
-    ],
-    1
-  )
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "products mt-3" },
+      _vm._l(_vm.filteredproduct, function(element, index) {
+        return _c(
+          "div",
+          {
+            key: index,
+            staticClass: "product_box d-inline-block m-2 card",
+            class: { fullwidth: _vm.isActive == 1 }
+          },
+          [
+            _c("div", { class: { row: _vm.isActive == 1 } }, [
+              _c(
+                "div",
+                {
+                  staticClass: "product_image",
+                  class: { "col-sm-3": _vm.isActive == 1 }
+                },
+                [
+                  _c(
+                    "span",
+                    { staticClass: "bg-danger text-white pl-2 pr-2 sale-tag" },
+                    [_vm._v(_vm._s(element.sale))]
+                  ),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: element.src, alt: "product image" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-body",
+                  class: { "col-sm-9": _vm.isActive == 1 }
+                },
+                [
+                  _c("div", { class: { row: _vm.isActive == 1 } }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "product_description",
+                        class: { "col-sm-9": _vm.isActive == 1 }
+                      },
+                      [
+                        _c("h3", { staticClass: "mb-0" }, [
+                          _vm._v(_vm._s(element.name))
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [_vm._v(_vm._s(element.description))])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "product_details",
+                        class: { "col-sm-3": _vm.isActive == 1 }
+                      },
+                      [
+                        _c("h4", { staticClass: "mt-2" }, [
+                          _vm._v(_vm._s(element.price))
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "text-secondary mb-0" }, [
+                          _vm._v("M.R.P: "),
+                          _c("del", [_vm._v(" " + _vm._s(element.mrp))])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          {
+                            staticClass: "mb-0",
+                            class: { "d-none": _vm.isActive == 1 }
+                          },
+                          [_vm._v(_vm._s(element.name))]
+                        ),
+                        _vm._v(" "),
+                        _vm._m(1, true),
+                        _vm._v(" "),
+                        _c("button", { staticClass: "btn btn-primary" }, [
+                          _vm._v(
+                            "\n                        Add to cart\n                    "
+                          )
+                        ])
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ])
+          ]
+        )
+      }),
+      0
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12" }, [
-      _c("p", [_vm._v("Available props")]),
+    return _c("div", { staticClass: "col-sm-6" }, [
+      _c("div", [_c("h4", [_vm._v("All products")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("span", { staticClass: "fa fa-star star_icon text-warning" }),
       _vm._v(" "),
-      _c("pre", [
-        _vm._v(
-          '"Height","min-height","max-height","color","bar-width","alwaysvisible"'
-        )
-      ])
+      _c("span", { staticClass: "fa fa-star star_icon text-warning" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "fa fa-star star_icon text-warning" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "fa fa-star star_icon text-warning" }),
+      _vm._v(" "),
+      _c("span", { staticClass: "fa fa-star-half-o star_icon text-warning" })
     ])
   }
 ]
@@ -405,78 +375,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-11f2ea77", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-25ee2c36", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 455:
+/***/ 438:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1403)
-  __webpack_require__(1405)
+  __webpack_require__(1254)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1407)
+var __vue_script__ = __webpack_require__(1256)
 /* template */
-var __vue_template__ = __webpack_require__(1408)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-11f2ea77"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/components/pages/vscroll.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-11f2ea77", Component.options)
-  } else {
-    hotAPI.reload("data-v-11f2ea77", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 632:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(665)
-}
-var normalizeComponent = __webpack_require__(42)
-/* script */
-var __vue_script__ = __webpack_require__(667)
-/* template */
-var __vue_template__ = __webpack_require__(668)
+var __vue_template__ = __webpack_require__(1257)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -493,7 +410,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/plugins/scroll/vScroll.vue"
+Component.options.__file = "resources/components/pages/product_gallery.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -502,9 +419,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6ba02bfe", Component.options)
+    hotAPI.createRecord("data-v-25ee2c36", Component.options)
   } else {
-    hotAPI.reload("data-v-6ba02bfe", Component.options)
+    hotAPI.reload("data-v-25ee2c36", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -516,181 +433,59 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 665:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 572:
+/***/ (function(module, exports) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(666);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("58ec1348", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ba02bfe\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./vScroll.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ba02bfe\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./vScroll.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
+module.exports = "/images/product.png?921f475804236cccb1e348d8ea00ae2a";
 
 /***/ }),
 
-/***/ 666:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 611:
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.ss-wrapper {\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    position: relative;\n    z-index: 1;\n    float: left;\n}\n.ss-content {\n    height: 100%;\n    width: 100%;\n    padding: 0 32px 0 0;\n    position: relative;\n    right: -18px;\n    overflow: auto;\n    box-sizing: border-box;\n}\n.ss-scroll {\n    position: relative;\n    background: rgba(0, 0, 0, 0.1);\n    width: 9px;\n    border-radius: 4px;\n    top: 0;\n    z-index: 2;\n    cursor: pointer;\n    opacity: 0;\n    transition: opacity 0.25s linear;\n}\n.ss-hidden {\n    display: none;\n}\n.ss-container:hover .ss-scroll,\n.ss-scroll.ss-grabbed,\n.ss-scroll.visible {\n    opacity: 1;\n}\n.ss-grabbed {\n    -o-user-select: none;\n    -ms-user-select: none;\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    user-select: none;\n}\n", ""]);
-
-// exports
-
+module.exports = "/images/product7.png?f5f7429df68ef8bee2043875c2bb4586";
 
 /***/ }),
 
-/***/ 667:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 640:
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        height: null,
-        minHeight: null,
-        maxHeight: null,
-        color: null,
-        barWidth: null,
-        alwaysvisible: Boolean
-    },
-    mounted: function mounted() {
-        this.dragDealer();
-        this.moveBar();
-    },
-    data: function data() {
-        return {
-            scrollRatio: 0,
-            grabbed: false
-        };
-    },
-
-    methods: {
-        // Mouse drag handler
-        dragDealer: function dragDealer() {
-            var _this = this;
-
-            var t = this;
-            var lastPageY;
-            this.$refs.bar.addEventListener('mousedown', function (e) {
-                lastPageY = e.pageY;
-                _this.grabbed = true;
-                document.body.classList.add('ss-grabbed');
-                document.addEventListener('mousemove', drag);
-                document.addEventListener('mouseup', stop);
-                return false;
-
-                function drag(e) {
-                    var delta = e.pageY - lastPageY;
-                    lastPageY = e.pageY;
-                    t.$refs.content.scrollTop += delta / t.scrollRatio;
-                }
-
-                function stop() {
-                    t.grabbed = false;
-                    document.body.classList.remove('ss-grabbed');
-                    document.removeEventListener('mousemove', drag);
-                    document.removeEventListener('mouseup', stop);
-                }
-            });
-        },
-        moveBar: function moveBar() {
-            var content = this.$refs.content;
-            var bar = this.$refs.bar;
-            var totalHeight = content.scrollHeight,
-                ownHeight = content.clientHeight;
-            this.scrollRatio = ownHeight / totalHeight;
-            // Hide scrollbar if no scrolling is possible
-            if (this.scrollRatio >= 1) {
-                bar.classList.add('ss-hidden');
-            } else {
-                bar.classList.remove('ss-hidden');
-                bar.style.cssText = 'height:' + this.scrollRatio * 100 + '%; top:' + content.scrollTop / totalHeight * 100 + '%;right:-' + (this.$refs.vscroll.clientWidth - bar.clientWidth) + 'px;background-color:' + this.color + ';width:' + this.barWidth;
-            }
-        }
-    }
-});
+module.exports = "/images/product2.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 668:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 684:
+/***/ (function(module, exports) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      ref: "vscroll",
-      staticClass: "ss-container",
-      style: {
-        height: _vm.height,
-        "min-height": _vm.minHeight,
-        "max-height": _vm.maxHeight
-      }
-    },
-    [
-      _c("div", { staticClass: "ss-wrapper" }, [
-        _c(
-          "div",
-          {
-            ref: "content",
-            staticClass: "ss-content",
-            on: { scroll: _vm.moveBar, mouseenter: _vm.moveBar }
-          },
-          [_vm._t("default")],
-          2
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", {
-        ref: "bar",
-        staticClass: "ss-scroll",
-        class: { "ss-grabbed": _vm.grabbed, visible: _vm.alwaysvisible }
-      })
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6ba02bfe", module.exports)
-  }
-}
+module.exports = "/images/product3.png?8d301375df448ee3e714523880e4068a";
+
+/***/ }),
+
+/***/ 685:
+/***/ (function(module, exports) {
+
+module.exports = "/images/product4.png?8d301375df448ee3e714523880e4068a";
+
+/***/ }),
+
+/***/ 687:
+/***/ (function(module, exports) {
+
+module.exports = "/images/product6.png?006ad5deb285a23818d1c8fff0c28bf3";
+
+/***/ }),
+
+/***/ 688:
+/***/ (function(module, exports) {
+
+module.exports = "/images/product5.png?e3c6ea40ba93e4b21feb50271e63d60b";
+
+/***/ }),
+
+/***/ 689:
+/***/ (function(module, exports) {
+
+module.exports = "/images/product8.png?2b7f1e8d1e4168dcd54c27e15a633aac";
 
 /***/ })
 

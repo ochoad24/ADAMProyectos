@@ -32,6 +32,7 @@ Route::group(['middleware'=>['guest']],function(){
     Route::put('/Permiso/editar','PermisoController@edit');
     Route::delete('/Permiso/{permiso}/delete', 'PermisoController@drop');
 
+    //Rutas para los proyectos 
     Route::get('/proyecto', 'ProyectoController@index');
     Route::post('/proyecto/registrar', 'ProyectoController@store');
     Route::put('/proyecto/actualizar', 'ProyectoController@update');
@@ -41,6 +42,7 @@ Route::group(['middleware'=>['guest']],function(){
     Route::put('/proyecto/deactivate', 'ProyectoController@deactivate');
     Route::get('/proyecto/orgs', 'ProyectoController@orgs');
 
+    // Rutas para las Organizaciones
     Route::get('/org', 'OrganizacionController@index');
     Route::get('/org/dept', 'OrganizacionController@depart');
     Route::post('/org/registrar', 'OrganizacionController@store');
@@ -53,7 +55,7 @@ Route::group(['middleware'=>['guest']],function(){
     Route::delete('/User/{usuario}/delete', 'UserController@drop');
     Route::put('/User/activar', 'UserController@activate');
     Route::put('/User/desactivar', 'UserController@desactivate');
-
+    Route::get('/User/select','UserController@select');
     // Rutas para los Usuarios
     // Rutas para las actividades
     Route::get('/Actividad', 'ActividadController@index');
@@ -62,5 +64,23 @@ Route::group(['middleware'=>['guest']],function(){
     Route::put('/actividad/activate', 'ActividadController@activate');
     Route::put('/actividad/deactivate', 'ActividadController@deactivate');
     Route::put('/actividad/delete', 'ActividadController@destroy');
+    // Ruta para la seleccion de actividades
+    Route::get('/Actividad/{id}', 'ActividadController@select');
 
+    // Rutas para los tipos de actividades
+    Route::get('/TipoActividad', 'TipoActividadController@index');
+    Route::post('/TipoActividad/nuevo','TipoActividadController@store');
+    Route::put('/TipoActividad/editar','TipoActividadController@edit');
+    Route::delete('/TipoActividad/{tipoactividad}/delete', 'TipoActividadController@drop');
+    
+    // Rutas para estadisticas
+    Route::get('/Estadistica', 'NombreEstadisticaController@index');
+    Route::post('/Estadistica/nuevo', 'NombreEstadisticaController@store');
+    Route::put('/Estadistica/editar', 'NombreEstadisticaController@edit');
+    Route::delete('/Estadistica/{estadistica}/delete', 'NombreEstadisticaController@drop');
+    Route::get('/Estadistica/select/{id}', 'EstadisticaController@select');
+    // Rutas para las tareas
+    Route::get('/Tarea/{actividad}', 'TareaController@index');
+    Route::post('/Tarea/nuevo', 'TareaController@store');
+    Route::post('/Tarea/subir', 'TareaController@report');
 });

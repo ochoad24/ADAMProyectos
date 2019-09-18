@@ -34,8 +34,19 @@
                         <vmenu-item link="/Actividades" icon="fa fa-fw fa-code-fork">
                         Actividades
                         </vmenu-item>
-                        <vmenu-item link="/Proyectos" icon="fa fa-fw fa-tasks">
+                        <vmenu-item link="/Tarea" icon="fa fa-fw fa-tasks">
                         Tareas
+                        </vmenu-item>
+                        <vmenu-item link="/Subir" icon="fa fa-fw fa-location-arrow">
+                        Subir Reporte
+                        </vmenu-item>
+                    </vsub-menu>
+                    <vsub-menu title="Ajustes" icon="fa fa-fw fa-gear" class="menufold-bottom">
+                        <vmenu-item link="/TipoActividad" icon="fa fa-fw fa-list">
+                        Tipo Actividades
+                        </vmenu-item>
+                        <vmenu-item link="/Estadistica" icon="fa fa-fw fa-paste">
+                        Estadisticas
                         </vmenu-item>
                     </vsub-menu>
                 </vmenu>

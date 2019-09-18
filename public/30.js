@@ -1,22 +1,22 @@
 webpackJsonp([30],{
 
-/***/ 1723:
+/***/ 1417:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1724);
+var content = __webpack_require__(1418);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6ae3be5d", content, false, {});
+var update = __webpack_require__(26)("45664c5d", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6998e6c6\",\"scoped\":false,\"hasInlineConfig\":true}!./flot_charts.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6998e6c6\",\"scoped\":false,\"hasInlineConfig\":true}!./flot_charts.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./hover-min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./hover-min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1724:
+/***/ 1418:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,36 +35,724 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.flotChart {\n    width    : 100%;\n    height   : 320px;\n    position : relative;\n}\n.flotChart1 {\n    width    : 100%;\n    height   : 300px;\n    position : relative;\n}\n#basicFlotLegend .legendLabel,\n#basicFlotLegend-barchart .legendLabel,\n#basicFlotLegend-stac .legendLabel {\n    padding-left  : 4px;\n    padding-right : 6px;\n}\n#basicFlotLegend1 .legendLabel {\n    padding-left  : 4px;\n    padding-right : 6px;\n}\n#area-chart .legendLabel,\n#chart-spline .legendLabel {\n    padding-left  : 4px;\n    padding-right : 3px;\n}\n#area-chart .legendColorBox,\n#chart-spline .legendColorBox {\n    padding-top : 3px;\n}\n#tooltip {\n    clear            : both;\n    z-index          : 100;\n    background-color : #736e6e;\n    padding          : 5px;\n    color            : #fff;\n}\n#tooltip .label {\n    clear         : both;\n    display       : block;\n    margin-bottom : 2px;\n}\n.card.body-bg .card-body{\n    background : #66ccff;\n}\n.flotChart2 {\n    width  : 100%;\n    height : 365px;\n}\n.flotChart3 {\n    width  : 100%;\n    height : 250px;\n}\n@media (max-width : 425px) {\n#bar-chart-stacked .flot-x-axis {\n        font-size : 9px;\n}\n}\n.flotTip{\n    display: none !important;\n}\n", ""]);
+exports.push([module.i, "/*!\r\n * Hover.css (http://ianlunn.github.io/Hover/)\r\n * Version: 2.3.2\r\n * Author: Ian Lunn @IanLunn\r\n * Author URL: http://ianlunn.co.uk/\r\n * Github: https://github.com/IanLunn/Hover\r\n\r\n * Hover.css Copyright Ian Lunn 2017. Generated with Sass.\r\n */\n.hvr-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-grow:active,.hvr-grow:focus,.hvr-grow:hover{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n.hvr-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-shrink:active,.hvr-shrink:focus,.hvr-shrink:hover{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n@-webkit-keyframes hvr-pulse{\n25%{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n75%{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n@keyframes hvr-pulse{\n25%{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n75%{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n.hvr-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse:active,.hvr-pulse:focus,.hvr-pulse:hover{-webkit-animation-name:hvr-pulse;animation-name:hvr-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-pulse-grow{\nto{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n}\n@keyframes hvr-pulse-grow{\nto{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n}\n.hvr-pulse-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse-grow:active,.hvr-pulse-grow:focus,.hvr-pulse-grow:hover{-webkit-animation-name:hvr-pulse-grow;animation-name:hvr-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-pulse-shrink{\nto{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n@keyframes hvr-pulse-shrink{\nto{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n.hvr-pulse-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse-shrink:active,.hvr-pulse-shrink:focus,.hvr-pulse-shrink:hover{-webkit-animation-name:hvr-pulse-shrink;animation-name:hvr-pulse-shrink;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-push{\n50%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n100%{-webkit-transform:scale(1);transform:scale(1)\n}\n}\n@keyframes hvr-push{\n50%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n100%{-webkit-transform:scale(1);transform:scale(1)\n}\n}\n.hvr-push{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-push:active,.hvr-push:focus,.hvr-push:hover{-webkit-animation-name:hvr-push;animation-name:hvr-push;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-pop{\n50%{-webkit-transform:scale(1.2);transform:scale(1.2)\n}\n}\n@keyframes hvr-pop{\n50%{-webkit-transform:scale(1.2);transform:scale(1.2)\n}\n}\n.hvr-pop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pop:active,.hvr-pop:focus,.hvr-pop:hover{-webkit-animation-name:hvr-pop;animation-name:hvr-pop;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-bounce-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-in:active,.hvr-bounce-in:focus,.hvr-bounce-in:hover{-webkit-transform:scale(1.2);transform:scale(1.2);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-bounce-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-out:active,.hvr-bounce-out:focus,.hvr-bounce-out:hover{-webkit-transform:scale(0.8);transform:scale(0.8);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-rotate:active,.hvr-rotate:focus,.hvr-rotate:hover{-webkit-transform:rotate(4deg);transform:rotate(4deg)\n}\n.hvr-grow-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-grow-rotate:active,.hvr-grow-rotate:focus,.hvr-grow-rotate:hover{-webkit-transform:scale(1.1) rotate(4deg);transform:scale(1.1) rotate(4deg)\n}\n.hvr-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-float:active,.hvr-float:focus,.hvr-float:hover{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n.hvr-sink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sink:active,.hvr-sink:focus,.hvr-sink:hover{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n@-webkit-keyframes hvr-bob{\n0%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n50%{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@keyframes hvr-bob{\n0%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n50%{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@-webkit-keyframes hvr-bob-float{\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@keyframes hvr-bob-float{\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n.hvr-bob{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-bob:active,.hvr-bob:focus,.hvr-bob:hover{-webkit-animation-name:hvr-bob-float,hvr-bob;animation-name:hvr-bob-float,hvr-bob;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-hang{\n0%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n50%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@keyframes hvr-hang{\n0%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n50%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@-webkit-keyframes hvr-hang-sink{\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@keyframes hvr-hang-sink{\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n.hvr-hang{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-hang:active,.hvr-hang:focus,.hvr-hang:hover{-webkit-animation-name:hvr-hang-sink,hvr-hang;animation-name:hvr-hang-sink,hvr-hang;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n.hvr-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-skew:active,.hvr-skew:focus,.hvr-skew:hover{-webkit-transform:skew(-10deg);transform:skew(-10deg)\n}\n.hvr-skew-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-skew-forward:active,.hvr-skew-forward:focus,.hvr-skew-forward:hover{-webkit-transform:skew(-10deg);transform:skew(-10deg)\n}\n.hvr-skew-backward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-skew-backward:active,.hvr-skew-backward:focus,.hvr-skew-backward:hover{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n@-webkit-keyframes hvr-wobble-vertical{\n16.65%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n33.3%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n@keyframes hvr-wobble-vertical{\n16.65%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n33.3%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n.hvr-wobble-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-vertical:active,.hvr-wobble-vertical:focus,.hvr-wobble-vertical:hover{-webkit-animation-name:hvr-wobble-vertical;animation-name:hvr-wobble-vertical;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-horizontal{\n16.65%{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n33.3%{-webkit-transform:translateX(-6px);transform:translateX(-6px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n@keyframes hvr-wobble-horizontal{\n16.65%{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n33.3%{-webkit-transform:translateX(-6px);transform:translateX(-6px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n.hvr-wobble-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-horizontal:active,.hvr-wobble-horizontal:focus,.hvr-wobble-horizontal:hover{-webkit-animation-name:hvr-wobble-horizontal;animation-name:hvr-wobble-horizontal;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-to-bottom-right{\n16.65%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)\n}\n33.3%{-webkit-transform:translate(-6px,-6px);transform:translate(-6px,-6px)\n}\n49.95%{-webkit-transform:translate(4px,4px);transform:translate(4px,4px)\n}\n66.6%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)\n}\n83.25%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n@keyframes hvr-wobble-to-bottom-right{\n16.65%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)\n}\n33.3%{-webkit-transform:translate(-6px,-6px);transform:translate(-6px,-6px)\n}\n49.95%{-webkit-transform:translate(4px,4px);transform:translate(4px,4px)\n}\n66.6%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)\n}\n83.25%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n.hvr-wobble-to-bottom-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-to-bottom-right:active,.hvr-wobble-to-bottom-right:focus,.hvr-wobble-to-bottom-right:hover{-webkit-animation-name:hvr-wobble-to-bottom-right;animation-name:hvr-wobble-to-bottom-right;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-to-top-right{\n16.65%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)\n}\n33.3%{-webkit-transform:translate(-6px,6px);transform:translate(-6px,6px)\n}\n49.95%{-webkit-transform:translate(4px,-4px);transform:translate(4px,-4px)\n}\n66.6%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)\n}\n83.25%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n@keyframes hvr-wobble-to-top-right{\n16.65%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)\n}\n33.3%{-webkit-transform:translate(-6px,6px);transform:translate(-6px,6px)\n}\n49.95%{-webkit-transform:translate(4px,-4px);transform:translate(4px,-4px)\n}\n66.6%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)\n}\n83.25%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n.hvr-wobble-to-top-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-to-top-right:active,.hvr-wobble-to-top-right:focus,.hvr-wobble-to-top-right:hover{-webkit-animation-name:hvr-wobble-to-top-right;animation-name:hvr-wobble-to-top-right;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-top{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-top{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-wobble-top:active,.hvr-wobble-top:focus,.hvr-wobble-top:hover{-webkit-animation-name:hvr-wobble-top;animation-name:hvr-wobble-top;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-bottom{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-bottom{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transform-origin:100% 0;transform-origin:100% 0\n}\n.hvr-wobble-bottom:active,.hvr-wobble-bottom:focus,.hvr-wobble-bottom:hover{-webkit-animation-name:hvr-wobble-bottom;animation-name:hvr-wobble-bottom;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-skew{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-skew{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-skew:active,.hvr-wobble-skew:focus,.hvr-wobble-skew:hover{-webkit-animation-name:hvr-wobble-skew;animation-name:hvr-wobble-skew;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n@keyframes hvr-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n.hvr-buzz{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-buzz:active,.hvr-buzz:focus,.hvr-buzz:hover{-webkit-animation-name:hvr-buzz;animation-name:hvr-buzz;-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n@keyframes hvr-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n.hvr-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-buzz-out:active,.hvr-buzz-out:focus,.hvr-buzz-out:hover{-webkit-animation-name:hvr-buzz-out;animation-name:hvr-buzz-out;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-forward:active,.hvr-forward:focus,.hvr-forward:hover{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n.hvr-backward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-backward:active,.hvr-backward:focus,.hvr-backward:hover{-webkit-transform:translateX(-8px);transform:translateX(-8px)\n}\n.hvr-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);overflow:hidden;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:color,background-color;transition-property:color,background-color\n}\n.hvr-fade:active,.hvr-fade:focus,.hvr-fade:hover{background-color:#2098D1;color:#fff\n}\n@-webkit-keyframes hvr-back-pulse{\n50%{background-color:rgba(32,152,209,.75)\n}\n}\n@keyframes hvr-back-pulse{\n50%{background-color:rgba(32,152,209,.75)\n}\n}\n.hvr-back-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);overflow:hidden;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:color,background-color;transition-property:color,background-color\n}\n.hvr-back-pulse:active,.hvr-back-pulse:focus,.hvr-back-pulse:hover{-webkit-animation-name:hvr-back-pulse;animation-name:hvr-back-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-delay:.5s;animation-delay:.5s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;background-color:#2098D1;background-color:#2098d1;color:#fff\n}\n.hvr-sweep-to-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-right:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-right:active,.hvr-sweep-to-right:focus,.hvr-sweep-to-right:hover{color:#fff\n}\n.hvr-sweep-to-right:active:before,.hvr-sweep-to-right:focus:before,.hvr-sweep-to-right:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-sweep-to-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-left:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-left:active,.hvr-sweep-to-left:focus,.hvr-sweep-to-left:hover{color:#fff\n}\n.hvr-sweep-to-left:active:before,.hvr-sweep-to-left:focus:before,.hvr-sweep-to-left:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-sweep-to-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-bottom:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-bottom:active,.hvr-sweep-to-bottom:focus,.hvr-sweep-to-bottom:hover{color:#fff\n}\n.hvr-sweep-to-bottom:active:before,.hvr-sweep-to-bottom:focus:before,.hvr-sweep-to-bottom:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-sweep-to-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-top:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-top:active,.hvr-sweep-to-top:focus,.hvr-sweep-to-top:hover{color:#fff\n}\n.hvr-sweep-to-top:active:before,.hvr-sweep-to-top:focus:before,.hvr-sweep-to-top:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-bounce-to-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-right:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-right:active,.hvr-bounce-to-right:focus,.hvr-bounce-to-right:hover{color:#fff\n}\n.hvr-bounce-to-right:active:before,.hvr-bounce-to-right:focus:before,.hvr-bounce-to-right:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-left:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-left:active,.hvr-bounce-to-left:focus,.hvr-bounce-to-left:hover{color:#fff\n}\n.hvr-bounce-to-left:active:before,.hvr-bounce-to-left:focus:before,.hvr-bounce-to-left:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-bottom:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-bottom:active,.hvr-bounce-to-bottom:focus,.hvr-bounce-to-bottom:hover{color:#fff\n}\n.hvr-bounce-to-bottom:active:before,.hvr-bounce-to-bottom:focus:before,.hvr-bounce-to-bottom:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-top:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-top:active,.hvr-bounce-to-top:focus,.hvr-bounce-to-top:hover{color:#fff\n}\n.hvr-bounce-to-top:active:before,.hvr-bounce-to-top:focus:before,.hvr-bounce-to-top:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-radial-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-radial-out:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;border-radius:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-radial-out:active,.hvr-radial-out:focus,.hvr-radial-out:hover{color:#fff\n}\n.hvr-radial-out:active:before,.hvr-radial-out:focus:before,.hvr-radial-out:hover:before{-webkit-transform:scale(2);transform:scale(2)\n}\n.hvr-radial-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-radial-in:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#e1e1e1;border-radius:100%;-webkit-transform:scale(2);transform:scale(2);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-radial-in:active,.hvr-radial-in:focus,.hvr-radial-in:hover{color:#fff\n}\n.hvr-radial-in:active:before,.hvr-radial-in:focus:before,.hvr-radial-in:hover:before{-webkit-transform:scale(0);transform:scale(0)\n}\n.hvr-rectangle-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-rectangle-in:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#e1e1e1;-webkit-transform:scale(1);transform:scale(1);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-rectangle-in:active,.hvr-rectangle-in:focus,.hvr-rectangle-in:hover{color:#fff\n}\n.hvr-rectangle-in:active:before,.hvr-rectangle-in:focus:before,.hvr-rectangle-in:hover:before{-webkit-transform:scale(0);transform:scale(0)\n}\n.hvr-rectangle-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-rectangle-out:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scale(0);transform:scale(0);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-rectangle-out:active,.hvr-rectangle-out:focus,.hvr-rectangle-out:hover{color:#fff\n}\n.hvr-rectangle-out:active:before,.hvr-rectangle-out:focus:before,.hvr-rectangle-out:hover:before{-webkit-transform:scale(1);transform:scale(1)\n}\n.hvr-shutter-in-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-in-horizontal:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#e1e1e1;-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-in-horizontal:active,.hvr-shutter-in-horizontal:focus,.hvr-shutter-in-horizontal:hover{color:#fff\n}\n.hvr-shutter-in-horizontal:active:before,.hvr-shutter-in-horizontal:focus:before,.hvr-shutter-in-horizontal:hover:before{-webkit-transform:scaleX(0);transform:scaleX(0)\n}\n.hvr-shutter-out-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-out-horizontal:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:#fff\n}\n.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-shutter-in-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-in-vertical:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#e1e1e1;-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-in-vertical:active,.hvr-shutter-in-vertical:focus,.hvr-shutter-in-vertical:hover{color:#fff\n}\n.hvr-shutter-in-vertical:active:before,.hvr-shutter-in-vertical:focus:before,.hvr-shutter-in-vertical:hover:before{-webkit-transform:scaleY(0);transform:scaleY(0)\n}\n.hvr-shutter-out-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-out-vertical:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-out-vertical:active,.hvr-shutter-out-vertical:focus,.hvr-shutter-out-vertical:hover{color:#fff\n}\n.hvr-shutter-out-vertical:active:before,.hvr-shutter-out-vertical:focus:before,.hvr-shutter-out-vertical:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-border-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow;box-shadow:inset 0 0 0 4px #e1e1e1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-border-fade:active,.hvr-border-fade:focus,.hvr-border-fade:hover{box-shadow:inset 0 0 0 4px #2098D1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-hollow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:background;transition-property:background;box-shadow:inset 0 0 0 4px #e1e1e1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-hollow:active,.hvr-hollow:focus,.hvr-hollow:hover{background:0 0\n}\n.hvr-trim{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-trim:before{content:'';position:absolute;border:#fff solid 4px;top:4px;left:4px;right:4px;bottom:4px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:opacity;transition-property:opacity\n}\n.hvr-trim:active:before,.hvr-trim:focus:before,.hvr-trim:hover:before{opacity:1\n}\n@-webkit-keyframes hvr-ripple-out{\n100%{top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0\n}\n}\n@keyframes hvr-ripple-out{\n100%{top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0\n}\n}\n.hvr-ripple-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-ripple-out:before{content:'';position:absolute;border:#e1e1e1 solid 6px;top:0;right:0;bottom:0;left:0;-webkit-animation-duration:1s;animation-duration:1s\n}\n.hvr-ripple-out:active:before,.hvr-ripple-out:focus:before,.hvr-ripple-out:hover:before{-webkit-animation-name:hvr-ripple-out;animation-name:hvr-ripple-out\n}\n@-webkit-keyframes hvr-ripple-in{\n100%{top:0;right:0;bottom:0;left:0;opacity:1\n}\n}\n@keyframes hvr-ripple-in{\n100%{top:0;right:0;bottom:0;left:0;opacity:1\n}\n}\n.hvr-ripple-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-ripple-in:before{content:'';position:absolute;border:#e1e1e1 solid 4px;top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0;-webkit-animation-duration:1s;animation-duration:1s\n}\n.hvr-ripple-in:active:before,.hvr-ripple-in:focus:before,.hvr-ripple-in:hover:before{-webkit-animation-name:hvr-ripple-in;animation-name:hvr-ripple-in\n}\n.hvr-outline-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-outline-out:before{content:'';position:absolute;border:#e1e1e1 solid 4px;top:0;right:0;bottom:0;left:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:top,right,bottom,left;transition-property:top,right,bottom,left\n}\n.hvr-outline-out:active:before,.hvr-outline-out:focus:before,.hvr-outline-out:hover:before{top:-8px;right:-8px;bottom:-8px;left:-8px\n}\n.hvr-outline-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-outline-in:before{pointer-events:none;content:'';position:absolute;border:#e1e1e1 solid 4px;top:-16px;right:-16px;bottom:-16px;left:-16px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:top,right,bottom,left;transition-property:top,right,bottom,left\n}\n.hvr-outline-in:active:before,.hvr-outline-in:focus:before,.hvr-outline-in:hover:before{top:-8px;right:-8px;bottom:-8px;left:-8px;opacity:1\n}\n.hvr-round-corners{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:border-radius;transition-property:border-radius\n}\n.hvr-round-corners:active,.hvr-round-corners:focus,.hvr-round-corners:hover{border-radius:1em\n}\n.hvr-underline-from-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-left:before{content:\"\";position:absolute;z-index:-1;left:0;right:100%;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:right;transition-property:right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-left:active:before,.hvr-underline-from-left:focus:before,.hvr-underline-from-left:hover:before{right:0\n}\n.hvr-underline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-center:before{content:\"\";position:absolute;z-index:-1;left:51%;right:51%;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-center:active:before,.hvr-underline-from-center:focus:before,.hvr-underline-from-center:hover:before{left:0;right:0\n}\n.hvr-underline-from-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-right:before{content:\"\";position:absolute;z-index:-1;left:100%;right:0;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:left;transition-property:left;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-right:active:before,.hvr-underline-from-right:focus:before,.hvr-underline-from-right:hover:before{left:0\n}\n.hvr-overline-from-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-left:before{content:\"\";position:absolute;z-index:-1;left:0;right:100%;top:0;background:#2098D1;height:4px;-webkit-transition-property:right;transition-property:right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-left:active:before,.hvr-overline-from-left:focus:before,.hvr-overline-from-left:hover:before{right:0\n}\n.hvr-overline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-center:before{content:\"\";position:absolute;z-index:-1;left:51%;right:51%;top:0;background:#2098D1;height:4px;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-center:active:before,.hvr-overline-from-center:focus:before,.hvr-overline-from-center:hover:before{left:0;right:0\n}\n.hvr-overline-from-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-right:before{content:\"\";position:absolute;z-index:-1;left:100%;right:0;top:0;background:#2098D1;height:4px;-webkit-transition-property:left;transition-property:left;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-right:active:before,.hvr-overline-from-right:focus:before,.hvr-overline-from-right:hover:before{left:0\n}\n.hvr-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;top:0;bottom:0;border-color:#2098D1;border-style:solid;border-width:0;-webkit-transition-property:border-width;transition-property:border-width;-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-reveal:active:before,.hvr-reveal:focus:before,.hvr-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0);border-width:4px\n}\n.hvr-underline-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;bottom:0;background:#2098D1;height:4px;-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-reveal:active:before,.hvr-underline-reveal:focus:before,.hvr-underline-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0)\n}\n.hvr-overline-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;top:0;background:#2098D1;height:4px;-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-reveal:active:before,.hvr-overline-reveal:focus:before,.hvr-overline-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0)\n}\n.hvr-glow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-glow:active,.hvr-glow:focus,.hvr-glow:hover{box-shadow:0 0 8px rgba(0,0,0,.6)\n}\n.hvr-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-shadow:active,.hvr-shadow:focus,.hvr-shadow:hover{box-shadow:0 10px 10px -10px rgba(0,0,0,.5)\n}\n.hvr-grow-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow,transform;transition-property:box-shadow,transform\n}\n.hvr-grow-shadow:active,.hvr-grow-shadow:focus,.hvr-grow-shadow:hover{box-shadow:0 10px 10px -10px rgba(0,0,0,.5);-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n.hvr-box-shadow-outset{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-box-shadow-outset:active,.hvr-box-shadow-outset:focus,.hvr-box-shadow-outset:hover{box-shadow:2px 2px 2px rgba(0,0,0,.6)\n}\n.hvr-box-shadow-inset{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow;box-shadow:inset 0 0 0 rgba(0,0,0,.6),0 0 1px rgba(0,0,0,0)\n}\n.hvr-box-shadow-inset:active,.hvr-box-shadow-inset:focus,.hvr-box-shadow-inset:hover{box-shadow:inset 2px 2px 2px rgba(0,0,0,.6),0 0 1px rgba(0,0,0,0)\n}\n.hvr-float-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-float-shadow:before{pointer-events:none;position:absolute;z-index:-1;content:'';top:100%;left:5%;height:10px;width:90%;opacity:0;background:-webkit-radial-gradient(center,ellipse,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform,opacity;transition-property:transform,opacity\n}\n.hvr-float-shadow:active,.hvr-float-shadow:focus,.hvr-float-shadow:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n.hvr-float-shadow:active:before,.hvr-float-shadow:focus:before,.hvr-float-shadow:hover:before{opacity:1;-webkit-transform:translateY(5px);transform:translateY(5px)\n}\n.hvr-shadow-radial{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-shadow-radial:after,.hvr-shadow-radial:before{pointer-events:none;position:absolute;content:'';left:0;width:100%;box-sizing:border-box;height:5px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:opacity;transition-property:opacity\n}\n.hvr-shadow-radial:before{bottom:100%;background:-webkit-radial-gradient(50% 150%,ellipse,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at 50% 150%,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%)\n}\n.hvr-shadow-radial:after{top:100%;background:-webkit-radial-gradient(50% -50%,ellipse,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at 50% -50%,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%)\n}\n.hvr-shadow-radial:active:after,.hvr-shadow-radial:active:before,.hvr-shadow-radial:focus:after,.hvr-shadow-radial:focus:before,.hvr-shadow-radial:hover:after,.hvr-shadow-radial:hover:before{opacity:1\n}\n.hvr-bubble-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-top:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;left:calc(50% - 10px);top:0;border-width:0 10px 10px;border-color:transparent transparent #e1e1e1\n}\n.hvr-bubble-top:active:before,.hvr-bubble-top:focus:before,.hvr-bubble-top:hover:before{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-right:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;top:calc(50% - 10px);right:0;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #e1e1e1\n}\n.hvr-bubble-right:active:before,.hvr-bubble-right:focus:before,.hvr-bubble-right:hover:before{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-bottom:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;left:calc(50% - 10px);bottom:0;border-width:10px 10px 0;border-color:#e1e1e1 transparent transparent\n}\n.hvr-bubble-bottom:active:before,.hvr-bubble-bottom:focus:before,.hvr-bubble-bottom:hover:before{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-left:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;top:calc(50% - 10px);left:0;border-width:10px 10px 10px 0;border-color:transparent #e1e1e1 transparent transparent\n}\n.hvr-bubble-left:active:before,.hvr-bubble-left:focus:before,.hvr-bubble-left:hover:before{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-bubble-float-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-top:before{position:absolute;z-index:-1;content:'';left:calc(50% - 10px);top:0;border-style:solid;border-width:0 10px 10px;border-color:transparent transparent #e1e1e1;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-top:active,.hvr-bubble-float-top:focus,.hvr-bubble-float-top:hover{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-float-top:active:before,.hvr-bubble-float-top:focus:before,.hvr-bubble-float-top:hover:before{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-float-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-right:before{position:absolute;z-index:-1;top:calc(50% - 10px);right:0;content:'';border-style:solid;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #e1e1e1;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-right:active,.hvr-bubble-float-right:focus,.hvr-bubble-float-right:hover{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-bubble-float-right:active:before,.hvr-bubble-float-right:focus:before,.hvr-bubble-float-right:hover:before{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-float-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-bottom:before{position:absolute;z-index:-1;content:'';left:calc(50% - 10px);bottom:0;border-style:solid;border-width:10px 10px 0;border-color:#e1e1e1 transparent transparent;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-bottom:active,.hvr-bubble-float-bottom:focus,.hvr-bubble-float-bottom:hover{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-float-bottom:active:before,.hvr-bubble-float-bottom:focus:before,.hvr-bubble-float-bottom:hover:before{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-float-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-left:before{position:absolute;z-index:-1;content:'';top:calc(50% - 10px);left:0;border-style:solid;border-width:10px 10px 10px 0;border-color:transparent #e1e1e1 transparent transparent;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-left:active,.hvr-bubble-float-left:focus,.hvr-bubble-float-left:hover{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-float-left:active:before,.hvr-bubble-float-left:focus:before,.hvr-bubble-float-left:hover:before{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-icon-back{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.1s;transition-duration:.1s\n}\n.hvr-icon-back .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-back:active .hvr-icon,.hvr-icon-back:focus .hvr-icon,.hvr-icon-back:hover .hvr-icon{-webkit-transform:translateX(-4px);transform:translateX(-4px)\n}\n.hvr-icon-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.1s;transition-duration:.1s\n}\n.hvr-icon-forward .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-forward:active .hvr-icon,.hvr-icon-forward:focus .hvr-icon,.hvr-icon-forward:hover .hvr-icon{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n@-webkit-keyframes hvr-icon-down{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-down{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n.hvr-icon-down{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-down .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-down:active .hvr-icon,.hvr-icon-down:focus .hvr-icon,.hvr-icon-down:hover .hvr-icon{-webkit-animation-name:hvr-icon-down;animation-name:hvr-icon-down;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n@-webkit-keyframes hvr-icon-up{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-up{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n.hvr-icon-up{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-up .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-up:active .hvr-icon,.hvr-icon-up:focus .hvr-icon,.hvr-icon-up:hover .hvr-icon{-webkit-animation-name:hvr-icon-up;animation-name:hvr-icon-up;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n.hvr-icon-spin{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-spin .hvr-icon{-webkit-transition-duration:1s;transition-duration:1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out\n}\n.hvr-icon-spin:active .hvr-icon,.hvr-icon-spin:focus .hvr-icon,.hvr-icon-spin:hover .hvr-icon{-webkit-transform:rotate(360deg);transform:rotate(360deg)\n}\n@-webkit-keyframes hvr-icon-drop{\n0%{opacity:0\n}\n50%{opacity:0;-webkit-transform:translateY(-100%);transform:translateY(-100%)\n}\n100%,51%{opacity:1\n}\n}\n@keyframes hvr-icon-drop{\n0%{opacity:0\n}\n50%{opacity:0;-webkit-transform:translateY(-100%);transform:translateY(-100%)\n}\n100%,51%{opacity:1\n}\n}\n.hvr-icon-drop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-drop .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-drop:active .hvr-icon,.hvr-icon-drop:focus .hvr-icon,.hvr-icon-drop:hover .hvr-icon{opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-animation-name:hvr-icon-drop;animation-name:hvr-icon-drop;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-delay:.3s;animation-delay:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:cubic-bezier(0.52,1.64,.37,.66);animation-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-icon-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-fade .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:color;transition-property:color\n}\n.hvr-icon-fade:active .hvr-icon,.hvr-icon-fade:focus .hvr-icon,.hvr-icon-fade:hover .hvr-icon{color:#0F9E5E\n}\n@-webkit-keyframes hvr-icon-float-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)\n}\n}\n@keyframes hvr-icon-float-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)\n}\n}\n.hvr-icon-float-away{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-float-away .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards\n}\n.hvr-icon-float-away:active .hvr-icon,.hvr-icon-float-away:focus .hvr-icon,.hvr-icon-float-away:hover .hvr-icon{-webkit-animation-name:hvr-icon-float-away;animation-name:hvr-icon-float-away;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n@-webkit-keyframes hvr-icon-sink-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)\n}\n}\n@keyframes hvr-icon-sink-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)\n}\n}\n.hvr-icon-sink-away{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-sink-away .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards\n}\n.hvr-icon-sink-away:active .hvr-icon,.hvr-icon-sink-away:focus .hvr-icon,.hvr-icon-sink-away:hover .hvr-icon{-webkit-animation-name:hvr-icon-sink-away;animation-name:hvr-icon-sink-away;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n.hvr-icon-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-grow .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-grow:active .hvr-icon,.hvr-icon-grow:focus .hvr-icon,.hvr-icon-grow:hover .hvr-icon{-webkit-transform:scale(1.3) translateZ(0);transform:scale(1.3) translateZ(0)\n}\n.hvr-icon-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-shrink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-shrink:active .hvr-icon,.hvr-icon-shrink:focus .hvr-icon,.hvr-icon-shrink:hover .hvr-icon{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n@-webkit-keyframes hvr-icon-pulse{\n25%{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n75%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n@keyframes hvr-icon-pulse{\n25%{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n75%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n.hvr-icon-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse:active .hvr-icon,.hvr-icon-pulse:focus .hvr-icon,.hvr-icon-pulse:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse;animation-name:hvr-icon-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-icon-pulse-grow{\nto{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n}\n@keyframes hvr-icon-pulse-grow{\nto{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n}\n.hvr-icon-pulse-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse-grow .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse-grow:active .hvr-icon,.hvr-icon-pulse-grow:focus .hvr-icon,.hvr-icon-pulse-grow:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse-grow;animation-name:hvr-icon-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-icon-pulse-shrink{\nto{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n@keyframes hvr-icon-pulse-shrink{\nto{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n.hvr-icon-pulse-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse-shrink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse-shrink:active .hvr-icon,.hvr-icon-pulse-shrink:focus .hvr-icon,.hvr-icon-pulse-shrink:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse-shrink;animation-name:hvr-icon-pulse-shrink;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-icon-push{\n50%{-webkit-transform:scale(0.5);transform:scale(0.5)\n}\n}\n@keyframes hvr-icon-push{\n50%{-webkit-transform:scale(0.5);transform:scale(0.5)\n}\n}\n.hvr-icon-push{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-push .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-push:active .hvr-icon,.hvr-icon-push:focus .hvr-icon,.hvr-icon-push:hover .hvr-icon{-webkit-animation-name:hvr-icon-push;animation-name:hvr-icon-push;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-pop{\n50%{-webkit-transform:scale(1.5);transform:scale(1.5)\n}\n}\n@keyframes hvr-icon-pop{\n50%{-webkit-transform:scale(1.5);transform:scale(1.5)\n}\n}\n.hvr-icon-pop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-pop .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pop:active .hvr-icon,.hvr-icon-pop:focus .hvr-icon,.hvr-icon-pop:hover .hvr-icon{-webkit-animation-name:hvr-icon-pop;animation-name:hvr-icon-pop;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-icon-bounce{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-bounce .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-bounce:active .hvr-icon,.hvr-icon-bounce:focus .hvr-icon,.hvr-icon-bounce:hover .hvr-icon{-webkit-transform:scale(1.5);transform:scale(1.5);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-icon-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-rotate .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-rotate:active .hvr-icon,.hvr-icon-rotate:focus .hvr-icon,.hvr-icon-rotate:hover .hvr-icon{-webkit-transform:rotate(20deg);transform:rotate(20deg)\n}\n.hvr-icon-grow-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-grow-rotate .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-grow-rotate:active .hvr-icon,.hvr-icon-grow-rotate:focus .hvr-icon,.hvr-icon-grow-rotate:hover .hvr-icon{-webkit-transform:scale(1.5) rotate(12deg);transform:scale(1.5) rotate(12deg)\n}\n.hvr-icon-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-float .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-float:active .hvr-icon,.hvr-icon-float:focus .hvr-icon,.hvr-icon-float:hover .hvr-icon{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n.hvr-icon-sink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-sink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-sink:active .hvr-icon,.hvr-icon-sink:focus .hvr-icon,.hvr-icon-sink:hover .hvr-icon{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n@-webkit-keyframes hvr-icon-bob{\n0%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n50%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-bob{\n0%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n50%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@-webkit-keyframes hvr-icon-bob-float{\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-bob-float{\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n.hvr-icon-bob{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-bob .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-bob:active .hvr-icon,.hvr-icon-bob:focus .hvr-icon,.hvr-icon-bob:hover .hvr-icon{-webkit-animation-name:hvr-icon-bob-float,hvr-icon-bob;animation-name:hvr-icon-bob-float,hvr-icon-bob;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-icon-hang{\n0%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n50%{-webkit-transform:translateY(2px);transform:translateY(2px)\n}\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-hang{\n0%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n50%{-webkit-transform:translateY(2px);transform:translateY(2px)\n}\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@-webkit-keyframes hvr-icon-hang-sink{\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-hang-sink{\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n.hvr-icon-hang{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-hang .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-hang:active .hvr-icon,.hvr-icon-hang:focus .hvr-icon,.hvr-icon-hang:hover .hvr-icon{-webkit-animation-name:hvr-icon-hang-sink,hvr-icon-hang;animation-name:hvr-icon-hang-sink,hvr-icon-hang;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-icon-wobble-horizontal{\n16.65%{-webkit-transform:translateX(6px);transform:translateX(6px)\n}\n33.3%{-webkit-transform:translateX(-5px);transform:translateX(-5px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n@keyframes hvr-icon-wobble-horizontal{\n16.65%{-webkit-transform:translateX(6px);transform:translateX(6px)\n}\n33.3%{-webkit-transform:translateX(-5px);transform:translateX(-5px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n.hvr-icon-wobble-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-wobble-horizontal .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-wobble-horizontal:active .hvr-icon,.hvr-icon-wobble-horizontal:focus .hvr-icon,.hvr-icon-wobble-horizontal:hover .hvr-icon{-webkit-animation-name:hvr-icon-wobble-horizontal;animation-name:hvr-icon-wobble-horizontal;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-wobble-vertical{\n16.65%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n33.3%{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n@keyframes hvr-icon-wobble-vertical{\n16.65%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n33.3%{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n.hvr-icon-wobble-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-wobble-vertical .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-wobble-vertical:active .hvr-icon,.hvr-icon-wobble-vertical:focus .hvr-icon,.hvr-icon-wobble-vertical:hover .hvr-icon{-webkit-animation-name:hvr-icon-wobble-vertical;animation-name:hvr-icon-wobble-vertical;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n@keyframes hvr-icon-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n.hvr-icon-buzz{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-buzz .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-buzz:active .hvr-icon,.hvr-icon-buzz:focus .hvr-icon,.hvr-icon-buzz:hover .hvr-icon{-webkit-animation-name:hvr-icon-buzz;animation-name:hvr-icon-buzz;-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-icon-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n@keyframes hvr-icon-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n.hvr-icon-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-buzz-out .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-buzz-out:active .hvr-icon,.hvr-icon-buzz-out:focus .hvr-icon,.hvr-icon-buzz-out:hover .hvr-icon{-webkit-animation-name:hvr-icon-buzz-out;animation-name:hvr-icon-buzz-out;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-curl-top-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-top-left:before{pointer-events:none;position:absolute;content:'';height:0;width:0;top:0;left:0;background:#fff;background:linear-gradient(135deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#000000');z-index:1000;box-shadow:1px 1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-top-left:active:before,.hvr-curl-top-left:focus:before,.hvr-curl-top-left:hover:before{width:25px;height:25px\n}\n.hvr-curl-top-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-top-right:before{pointer-events:none;position:absolute;content:'';height:0;width:0;top:0;right:0;background:#fff;background:linear-gradient(225deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:-1px 1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-top-right:active:before,.hvr-curl-top-right:focus:before,.hvr-curl-top-right:hover:before{width:25px;height:25px\n}\n.hvr-curl-bottom-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-bottom-right:before{pointer-events:none;position:absolute;content:'';height:0;width:0;bottom:0;right:0;background:#fff;background:linear-gradient(315deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:-1px -1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-bottom-right:active:before,.hvr-curl-bottom-right:focus:before,.hvr-curl-bottom-right:hover:before{width:25px;height:25px\n}\n.hvr-curl-bottom-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-bottom-left:before{pointer-events:none;position:absolute;content:'';height:0;width:0;bottom:0;left:0;background:#fff;background:linear-gradient(45deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:1px -1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-bottom-left:active:before,.hvr-curl-bottom-left:focus:before,.hvr-curl-bottom-left:hover:before{width:25px;height:25px\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1725:
+/***/ 1419:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1420);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("c9ed49ca", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./buttons.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./buttons.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1420:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n* $ubtn prefix (reserved)\n*\n* This prefix stands for Unicorn Button - ubtn\n* We provide a prefix to the Sass Variables to\n* prevent namespace collisions that could occur if\n* you import buttons as part of your Sass build process.\n* We kindly ask you not to use the prefix $ubtn in your project\n* in order to avoid possilbe name conflicts. Thanks!\n*/\n/*\n* Button Namespace (ex .button or .btn)\n*\n*/\n/*\n* Button Defaults\n*\n* Some default settings that are used throughout the button library.\n* Changes to these settings will be picked up by all of the other modules.\n* The colors used here are the default colors for the base button (gray).\n* The font size and height are used to set the base size for the buttons.\n* The size values will be used to calculate the larger and smaller button sizes.\n*/\n/*\n* Button Colors\n*\n* $ubtn-colors is used to generate the different button colors.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, background, color)\n* The class is generated using the name: (ex .button-primary)\n*/\n/*\n* Button Shapes\n*\n* $ubtn-shapes is used to generate the different button shapes.\n* Edit or add shapes to the list below and recompile.\n* Each block contains the (name, border-radius).\n* The class is generated using the name: (ex .button-square).\n*/\n/*\n* Button Sizes\n*\n* $ubtn-sizes is used to generate the different button sizes.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, size multiplier).\n* The class is generated using the name: (ex .button-giant).\n*/\n/*! @license\n*\n* Buttons\n* Copyright 2012-2014 Alex Wolfe and Rob Levin\n*\n* Licensed under the Apache License, Version 2.0 (the \"License\");\n* you may not use this file except in compliance with the License.\n* You may obtain a copy of the License at\n*\n*        http://www.apache.org/licenses/LICENSE-2.0\n*\n* Unless required by applicable law or agreed to in writing, software\n* distributed under the License is distributed on an \"AS IS\" BASIS,\n* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n* See the License for the specific language governing permissions and\n* limitations under the License.\n*/\n/*\n* Compass (optional)\n*\n* We recommend the use of autoprefixer instead of Compass\n* when using buttons. However, buttons does support Compass.\n* simply change $ubtn-use-compass to true and uncomment the\n* @import 'compass' code below to use Compass.\n*/\n/*\n* Required Files\n*\n* These files include the variables and options\n* and base css styles that are required to generate buttons.\n*/\n/*\n* $ubtn prefix (reserved)\n*\n* This prefix stands for Unicorn Button - ubtn\n* We provide a prefix to the Sass Variables to\n* prevent namespace collisions that could occur if\n* you import buttons as part of your Sass build process.\n* We kindly ask you not to use the prefix $ubtn in your project\n* in order to avoid possilbe name conflicts. Thanks!\n*/\n/*\n* Button Namespace (ex .button or .btn)\n*\n*/\n/*\n* Button Defaults\n*\n* Some default settings that are used throughout the button library.\n* Changes to these settings will be picked up by all of the other modules.\n* The colors used here are the default colors for the base button (gray).\n* The font size and height are used to set the base size for the buttons.\n* The size values will be used to calculate the larger and smaller button sizes.\n*/\n/*\n* Button Colors\n*\n* $ubtn-colors is used to generate the different button colors.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, background, color)\n* The class is generated using the name: (ex .button-primary)\n*/\n/*\n* Button Shapes\n*\n* $ubtn-shapes is used to generate the different button shapes.\n* Edit or add shapes to the list below and recompile.\n* Each block contains the (name, border-radius).\n* The class is generated using the name: (ex .button-square).\n*/\n/*\n* Button Sizes\n*\n* $ubtn-sizes is used to generate the different button sizes.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, size multiplier).\n* The class is generated using the name: (ex .button-giant).\n*/\n/*\n* Color Mixin\n*\n* Iterates through the list of colors and creates\n*\n*/\n/*\n* No Animation\n*\n* Sets animation property to none\n*/\n/*\n* Clearfix\n*\n* Clears floats inside the container\n*/\n/*\n* Base Button Style\n*\n* The default values for the .button class\n*/\n.button {\n  color: #666;\n  background-color: #DCDCDC;\n  border-color: #DCDCDC;\n  font-weight: regular;\n  font-size: 16px;\n  font-family: \"Open Sans\", sans-serif, verdana;\n  text-decoration: none;\n  text-align: center;\n  line-height: 40px;\n  height: 40px;\n  padding: 0 40px;\n  margin: 0;\n  display: inline-block;\n  appearance: none;\n  cursor: pointer;\n  border: none;\n  box-sizing: border-box;\n  transition-property: all;\n  transition-duration: .3s;\n  /*\n  * Disabled State\n  *\n  * The disabled state uses the class .disabled, is-disabled,\n  * and the form attribute disabled=\"disabled\".\n  * The use of !important is only added because this is a state\n  * that must be applied to all buttons when in a disabled state.\n  */\n}\n.button:visited {\n    color: #666;\n}\n.button:hover, .button:focus {\n    background-color: #e4e4e4;\n    text-decoration: none;\n    outline: none;\n}\n.button:active, .button.active, .button.is-active {\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);\n    text-decoration: none;\n    background-color: gainsboro;\n    border-color: #bdbdbd;\n    color: #c3c3c3;\n    transition-duration: 0s;\n    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);\n}\n.button.disabled, .button.is-disabled, .button:disabled {\n    top: 0 !important;\n    background: #EEE !important;\n    border: 1px solid #DDD !important;\n    text-shadow: 0 1px 1px white !important;\n    color: #CCC !important;\n    cursor: default !important;\n    appearance: none !important;\n    box-shadow: none !important;\n    opacity: .8 !important;\n}\n\n/*\n* Base Button Tyography\n*\n*/\n.button-uppercase {\n  text-transform: uppercase;\n}\n.button-lowercase {\n  text-transform: lowercase;\n}\n.button-capitalize {\n  text-transform: capitalize;\n}\n.button-small-caps {\n  font-variant: small-caps;\n}\n.button-icon-txt-large {\n  font-size: 36px !important;\n}\n\n/*\n* Base padding\n*\n*/\n.button-width-small {\n  padding: 0 10px !important;\n}\n\n/*\n* Base Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-primary,\n.button-primary-flat {\n  background-color: #4080bf;\n  border-color: #4080bf;\n  color: #FFF;\n}\n.button-primary:visited,\n  .button-primary-flat:visited {\n    color: #FFF;\n}\n.button-primary:hover, .button-primary:focus,\n  .button-primary-flat:hover,\n  .button-primary-flat:focus {\n    background-color: #6699cc;\n    border-color: #6699cc;\n    color: #FFF;\n}\n.button-primary:active, .button-primary.active, .button-primary.is-active,\n  .button-primary-flat:active,\n  .button-primary-flat.active,\n  .button-primary-flat.is-active {\n    background-color: #4d80b2;\n    border-color: #4d80b2;\n    color: #336699;\n}\n.button-plain,\n.button-plain-flat {\n  background-color: #FFF;\n  border-color: #FFF;\n  color: #1B9AF7;\n}\n.button-plain:visited,\n  .button-plain-flat:visited {\n    color: #1B9AF7;\n}\n.button-plain:hover, .button-plain:focus,\n  .button-plain-flat:hover,\n  .button-plain-flat:focus {\n    background-color: white;\n    border-color: white;\n    color: #1B9AF7;\n}\n.button-plain:active, .button-plain.active, .button-plain.is-active,\n  .button-plain-flat:active,\n  .button-plain-flat.active,\n  .button-plain-flat.is-active {\n    background-color: white;\n    border-color: white;\n    color: #e6e6e6;\n}\n.button-inverse,\n.button-inverse-flat {\n  background-color: #222;\n  border-color: #222;\n  color: #EEE;\n}\n.button-inverse:visited,\n  .button-inverse-flat:visited {\n    color: #EEE;\n}\n.button-inverse:hover, .button-inverse:focus,\n  .button-inverse-flat:hover,\n  .button-inverse-flat:focus {\n    background-color: #3c3c3c;\n    border-color: #3c3c3c;\n    color: #EEE;\n}\n.button-inverse:active, .button-inverse.active, .button-inverse.is-active,\n  .button-inverse-flat:active,\n  .button-inverse-flat.active,\n  .button-inverse-flat.is-active {\n    background-color: #222222;\n    border-color: #222222;\n    color: #090909;\n}\n.button-action,\n.button-action-flat {\n  background-color: #4FC1E9;\n  border-color: #4FC1E9;\n  color: #FFF;\n}\n.button-action:visited,\n  .button-action-flat:visited {\n    color: #FFF;\n}\n.button-action:hover, .button-action:focus,\n  .button-action-flat:hover,\n  .button-action-flat:focus {\n    background-color: #7cd1ef;\n    border-color: #7cd1ef;\n    color: #FFF;\n}\n.button-action:active, .button-action.active, .button-action.is-active,\n  .button-action-flat:active,\n  .button-action-flat.active,\n  .button-action-flat.is-active {\n    background-color: #59bcdf;\n    border-color: #59bcdf;\n    color: #22b1e3;\n}\n.button-highlight,\n.button-highlight-flat {\n  background-color: #FFB65F;\n  border-color: #FFB65F;\n  color: #FFF;\n}\n.button-highlight:visited,\n  .button-highlight-flat:visited {\n    color: #FFF;\n}\n.button-highlight:hover, .button-highlight:focus,\n  .button-highlight-flat:hover,\n  .button-highlight-flat:focus {\n    background-color: #ffcd92;\n    border-color: #ffcd92;\n    color: #FFF;\n}\n.button-highlight:active, .button-highlight.active, .button-highlight.is-active,\n  .button-highlight-flat:active,\n  .button-highlight-flat.active,\n  .button-highlight-flat.is-active {\n    background-color: #f7b567;\n    border-color: #f7b567;\n    color: #ff9f2c;\n}\n.button-caution,\n.button-caution-flat {\n  background-color: #FB8678;\n  border-color: #FB8678;\n  color: #FFF;\n}\n.button-caution:visited,\n  .button-caution-flat:visited {\n    color: #FFF;\n}\n.button-caution:hover, .button-caution:focus,\n  .button-caution-flat:hover,\n  .button-caution-flat:focus {\n    background-color: #fcb2aa;\n    border-color: #fcb2aa;\n    color: #FFF;\n}\n.button-caution:active, .button-caution.active, .button-caution.is-active,\n  .button-caution-flat:active,\n  .button-caution-flat.active,\n  .button-caution-flat.is-active {\n    background-color: #f48b7f;\n    border-color: #f48b7f;\n    color: #fa5a46;\n}\n.button-royal,\n.button-royal-flat {\n  background-color: #22D69D;\n  border-color: #22D69D;\n  color: #FFF;\n}\n.button-royal:visited,\n  .button-royal-flat:visited {\n    color: #FFF;\n}\n.button-royal:hover, .button-royal:focus,\n  .button-royal-flat:hover,\n  .button-royal-flat:focus {\n    background-color: #49e2b2;\n    border-color: #49e2b2;\n    color: #FFF;\n}\n.button-royal:active, .button-royal.active, .button-royal.is-active,\n  .button-royal-flat:active,\n  .button-royal-flat.active,\n  .button-royal-flat.is-active {\n    background-color: #2eca98;\n    border-color: #2eca98;\n    color: #1baa7d;\n}\n\n/*\n* Base Layout Styles\n*\n* Very Miminal Layout Styles\n*/\n.button-block,\n.button-stacked {\n  display: block;\n  width: 100%;\n}\n\n/*\n* Button Types (optional)\n*\n* All of the files below represent the various button\n* types (including shapes & sizes). None of these files\n* are required. Simple remove the uneeded type below and\n* the button type will be excluded from the final build\n*/\n/*\n* Button Shapes\n*\n* This file creates the various button shapes\n* (ex. Circle, Rounded, Pill)\n*/\n.button-square {\n  border-radius: 0;\n}\n.button-box {\n  border-radius: 10px;\n}\n.button-rounded {\n  border-radius: 4px;\n}\n.button-pill {\n  border-radius: 200px;\n}\n.button-circle {\n  border-radius: 100%;\n}\n\n/*\n* Size Adjustment for equal height & widht buttons\n*\n* Remove padding and set a fixed width.\n*/\n.button-circle,\n.button-box,\n.button-square {\n  padding: 0 !important;\n  width: 40px;\n}\n.button-circle.button-giant,\n  .button-box.button-giant,\n  .button-square.button-giant {\n    width: 70px;\n}\n.button-circle.button-jumbo,\n  .button-box.button-jumbo,\n  .button-square.button-jumbo {\n    width: 60px;\n}\n.button-circle.button-large,\n  .button-box.button-large,\n  .button-square.button-large {\n    width: 50px;\n}\n.button-circle.button-normal,\n  .button-box.button-normal,\n  .button-square.button-normal {\n    width: 40px;\n}\n.button-circle.button-small,\n  .button-box.button-small,\n  .button-square.button-small {\n    width: 30px;\n}\n.button-circle.button-tiny,\n  .button-box.button-tiny,\n  .button-square.button-tiny {\n    width: 24px;\n}\n\n/*\n* Border Buttons\n*\n* These buttons have no fill they only have a\n* border to define their hit target.\n*/\n.button-border, .button-border-thin, .button-border-thick {\n  background: none;\n  border-width: 2px;\n  border-style: solid;\n  line-height: 36px;\n}\n.button-border:hover, .button-border-thin:hover, .button-border-thick:hover {\n    background-color: rgba(246, 246, 246, 0.9);\n}\n.button-border:active, .button-border-thin:active, .button-border-thick:active, .button-border.active, .active.button-border-thin, .active.button-border-thick, .button-border.is-active, .is-active.button-border-thin, .is-active.button-border-thick {\n    box-shadow: none;\n    text-shadow: none;\n    transition-property: all;\n    transition-duration: .3s;\n}\n\n/*\n* Border Optional Sizes\n*\n* A slight variation in border thickness\n*/\n.button-border-thin {\n  border-width: 1px;\n}\n.button-border-thick {\n  border-width: 3px;\n}\n\n/*\n* Border Button Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-border, .button-border-thin, .button-border-thick,\n.button-border-thin,\n.button-border-thick {\n  /*\n  * Border Button Size Adjustment\n  *\n  * The line-height must be adjusted to compinsate for\n  * the width of the border.\n  */\n}\n.button-border.button-primary, .button-primary.button-border-thin, .button-primary.button-border-thick,\n  .button-border-thin.button-primary,\n  .button-border-thick.button-primary {\n    color: #4080bf;\n}\n.button-border.button-primary:hover, .button-primary.button-border-thin:hover, .button-primary.button-border-thick:hover, .button-border.button-primary:focus, .button-primary.button-border-thin:focus, .button-primary.button-border-thick:focus,\n    .button-border-thin.button-primary:hover,\n    .button-border-thin.button-primary:focus,\n    .button-border-thick.button-primary:hover,\n    .button-border-thick.button-primary:focus {\n      background-color: rgba(102, 153, 204, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-primary:active, .button-primary.button-border-thin:active, .button-primary.button-border-thick:active, .button-border.button-primary.active, .button-primary.active.button-border-thin, .button-primary.active.button-border-thick, .button-border.button-primary.is-active, .button-primary.is-active.button-border-thin, .button-primary.is-active.button-border-thick,\n    .button-border-thin.button-primary:active,\n    .button-border-thin.button-primary.active,\n    .button-border-thin.button-primary.is-active,\n    .button-border-thick.button-primary:active,\n    .button-border-thick.button-primary.active,\n    .button-border-thick.button-primary.is-active {\n      background-color: rgba(77, 128, 178, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-plain, .button-plain.button-border-thin, .button-plain.button-border-thick,\n  .button-border-thin.button-plain,\n  .button-border-thick.button-plain {\n    color: #FFF;\n}\n.button-border.button-plain:hover, .button-plain.button-border-thin:hover, .button-plain.button-border-thick:hover, .button-border.button-plain:focus, .button-plain.button-border-thin:focus, .button-plain.button-border-thick:focus,\n    .button-border-thin.button-plain:hover,\n    .button-border-thin.button-plain:focus,\n    .button-border-thick.button-plain:hover,\n    .button-border-thick.button-plain:focus {\n      background-color: rgba(255, 255, 255, 0.9);\n      color: rgba(27, 154, 247, 0.9);\n}\n.button-border.button-plain:active, .button-plain.button-border-thin:active, .button-plain.button-border-thick:active, .button-border.button-plain.active, .button-plain.active.button-border-thin, .button-plain.active.button-border-thick, .button-border.button-plain.is-active, .button-plain.is-active.button-border-thin, .button-plain.is-active.button-border-thick,\n    .button-border-thin.button-plain:active,\n    .button-border-thin.button-plain.active,\n    .button-border-thin.button-plain.is-active,\n    .button-border-thick.button-plain:active,\n    .button-border-thick.button-plain.active,\n    .button-border-thick.button-plain.is-active {\n      background-color: rgba(255, 255, 255, 0.7);\n      color: rgba(27, 154, 247, 0.5);\n      opacity: .3;\n}\n.button-border.button-inverse, .button-inverse.button-border-thin, .button-inverse.button-border-thick,\n  .button-border-thin.button-inverse,\n  .button-border-thick.button-inverse {\n    color: #222;\n}\n.button-border.button-inverse:hover, .button-inverse.button-border-thin:hover, .button-inverse.button-border-thick:hover, .button-border.button-inverse:focus, .button-inverse.button-border-thin:focus, .button-inverse.button-border-thick:focus,\n    .button-border-thin.button-inverse:hover,\n    .button-border-thin.button-inverse:focus,\n    .button-border-thick.button-inverse:hover,\n    .button-border-thick.button-inverse:focus {\n      background-color: rgba(60, 60, 60, 0.9);\n      color: rgba(238, 238, 238, 0.9);\n}\n.button-border.button-inverse:active, .button-inverse.button-border-thin:active, .button-inverse.button-border-thick:active, .button-border.button-inverse.active, .button-inverse.active.button-border-thin, .button-inverse.active.button-border-thick, .button-border.button-inverse.is-active, .button-inverse.is-active.button-border-thin, .button-inverse.is-active.button-border-thick,\n    .button-border-thin.button-inverse:active,\n    .button-border-thin.button-inverse.active,\n    .button-border-thin.button-inverse.is-active,\n    .button-border-thick.button-inverse:active,\n    .button-border-thick.button-inverse.active,\n    .button-border-thick.button-inverse.is-active {\n      background-color: rgba(34, 34, 34, 0.7);\n      color: rgba(238, 238, 238, 0.5);\n      opacity: .3;\n}\n.button-border.button-action, .button-action.button-border-thin, .button-action.button-border-thick,\n  .button-border-thin.button-action,\n  .button-border-thick.button-action {\n    color: #4FC1E9;\n}\n.button-border.button-action:hover, .button-action.button-border-thin:hover, .button-action.button-border-thick:hover, .button-border.button-action:focus, .button-action.button-border-thin:focus, .button-action.button-border-thick:focus,\n    .button-border-thin.button-action:hover,\n    .button-border-thin.button-action:focus,\n    .button-border-thick.button-action:hover,\n    .button-border-thick.button-action:focus {\n      background-color: rgba(124, 209, 239, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-action:active, .button-action.button-border-thin:active, .button-action.button-border-thick:active, .button-border.button-action.active, .button-action.active.button-border-thin, .button-action.active.button-border-thick, .button-border.button-action.is-active, .button-action.is-active.button-border-thin, .button-action.is-active.button-border-thick,\n    .button-border-thin.button-action:active,\n    .button-border-thin.button-action.active,\n    .button-border-thin.button-action.is-active,\n    .button-border-thick.button-action:active,\n    .button-border-thick.button-action.active,\n    .button-border-thick.button-action.is-active {\n      background-color: rgba(89, 188, 223, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-highlight, .button-highlight.button-border-thin, .button-highlight.button-border-thick,\n  .button-border-thin.button-highlight,\n  .button-border-thick.button-highlight {\n    color: #FFB65F;\n}\n.button-border.button-highlight:hover, .button-highlight.button-border-thin:hover, .button-highlight.button-border-thick:hover, .button-border.button-highlight:focus, .button-highlight.button-border-thin:focus, .button-highlight.button-border-thick:focus,\n    .button-border-thin.button-highlight:hover,\n    .button-border-thin.button-highlight:focus,\n    .button-border-thick.button-highlight:hover,\n    .button-border-thick.button-highlight:focus {\n      background-color: rgba(255, 205, 146, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-highlight:active, .button-highlight.button-border-thin:active, .button-highlight.button-border-thick:active, .button-border.button-highlight.active, .button-highlight.active.button-border-thin, .button-highlight.active.button-border-thick, .button-border.button-highlight.is-active, .button-highlight.is-active.button-border-thin, .button-highlight.is-active.button-border-thick,\n    .button-border-thin.button-highlight:active,\n    .button-border-thin.button-highlight.active,\n    .button-border-thin.button-highlight.is-active,\n    .button-border-thick.button-highlight:active,\n    .button-border-thick.button-highlight.active,\n    .button-border-thick.button-highlight.is-active {\n      background-color: rgba(247, 181, 103, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-caution, .button-caution.button-border-thin, .button-caution.button-border-thick,\n  .button-border-thin.button-caution,\n  .button-border-thick.button-caution {\n    color: #FB8678;\n}\n.button-border.button-caution:hover, .button-caution.button-border-thin:hover, .button-caution.button-border-thick:hover, .button-border.button-caution:focus, .button-caution.button-border-thin:focus, .button-caution.button-border-thick:focus,\n    .button-border-thin.button-caution:hover,\n    .button-border-thin.button-caution:focus,\n    .button-border-thick.button-caution:hover,\n    .button-border-thick.button-caution:focus {\n      background-color: rgba(252, 178, 170, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-caution:active, .button-caution.button-border-thin:active, .button-caution.button-border-thick:active, .button-border.button-caution.active, .button-caution.active.button-border-thin, .button-caution.active.button-border-thick, .button-border.button-caution.is-active, .button-caution.is-active.button-border-thin, .button-caution.is-active.button-border-thick,\n    .button-border-thin.button-caution:active,\n    .button-border-thin.button-caution.active,\n    .button-border-thin.button-caution.is-active,\n    .button-border-thick.button-caution:active,\n    .button-border-thick.button-caution.active,\n    .button-border-thick.button-caution.is-active {\n      background-color: rgba(244, 139, 127, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-royal, .button-royal.button-border-thin, .button-royal.button-border-thick,\n  .button-border-thin.button-royal,\n  .button-border-thick.button-royal {\n    color: #22D69D;\n}\n.button-border.button-royal:hover, .button-royal.button-border-thin:hover, .button-royal.button-border-thick:hover, .button-border.button-royal:focus, .button-royal.button-border-thin:focus, .button-royal.button-border-thick:focus,\n    .button-border-thin.button-royal:hover,\n    .button-border-thin.button-royal:focus,\n    .button-border-thick.button-royal:hover,\n    .button-border-thick.button-royal:focus {\n      background-color: rgba(73, 226, 178, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-royal:active, .button-royal.button-border-thin:active, .button-royal.button-border-thick:active, .button-border.button-royal.active, .button-royal.active.button-border-thin, .button-royal.active.button-border-thick, .button-border.button-royal.is-active, .button-royal.is-active.button-border-thin, .button-royal.is-active.button-border-thick,\n    .button-border-thin.button-royal:active,\n    .button-border-thin.button-royal.active,\n    .button-border-thin.button-royal.is-active,\n    .button-border-thick.button-royal:active,\n    .button-border-thick.button-royal.active,\n    .button-border-thick.button-royal.is-active {\n      background-color: rgba(46, 202, 152, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-giant, .button-giant.button-border-thin, .button-giant.button-border-thick,\n  .button-border-thin.button-giant,\n  .button-border-thick.button-giant {\n    line-height: 66px;\n}\n.button-border.button-jumbo, .button-jumbo.button-border-thin, .button-jumbo.button-border-thick,\n  .button-border-thin.button-jumbo,\n  .button-border-thick.button-jumbo {\n    line-height: 56px;\n}\n.button-border.button-large, .button-large.button-border-thin, .button-large.button-border-thick,\n  .button-border-thin.button-large,\n  .button-border-thick.button-large {\n    line-height: 46px;\n}\n.button-border.button-normal, .button-normal.button-border-thin, .button-normal.button-border-thick,\n  .button-border-thin.button-normal,\n  .button-border-thick.button-normal {\n    line-height: 36px;\n}\n.button-border.button-small, .button-small.button-border-thin, .button-small.button-border-thick,\n  .button-border-thin.button-small,\n  .button-border-thick.button-small {\n    line-height: 26px;\n}\n.button-border.button-tiny, .button-tiny.button-border-thin, .button-tiny.button-border-thick,\n  .button-border-thin.button-tiny,\n  .button-border-thick.button-tiny {\n    line-height: 20px;\n}\n\n/*\n* Border Buttons\n*\n* These buttons have no fill they only have a\n* border to define their hit target.\n*/\n.button-borderless {\n  background: none;\n  border: none;\n  padding: 0 8px !important;\n  color: #DCDCDC;\n  font-size: 20.8px;\n  font-weight: 200;\n  /*\n  * Borderless Button Colors\n  *\n  * Create colors for buttons\n  * (.button-primary, .button-secondary, etc.)\n  */\n  /*\n  * Borderles Size Adjustment\n  *\n  * The font-size must be large to compinsate for\n  * the lack of a hit target.\n  */\n}\n.button-borderless:hover, .button-borderless:focus {\n    background: none;\n}\n.button-borderless:active, .button-borderless.active, .button-borderless.is-active {\n    box-shadow: none;\n    text-shadow: none;\n    transition-property: all;\n    transition-duration: .3s;\n    opacity: .3;\n}\n.button-borderless.button-primary {\n    color: #4080bf;\n}\n.button-borderless.button-plain {\n    color: #FFF;\n}\n.button-borderless.button-inverse {\n    color: #222;\n}\n.button-borderless.button-action {\n    color: #4FC1E9;\n}\n.button-borderless.button-highlight {\n    color: #FFB65F;\n}\n.button-borderless.button-caution {\n    color: #FB8678;\n}\n.button-borderless.button-royal {\n    color: #22D69D;\n}\n.button-borderless.button-giant {\n    font-size: 36.4px;\n    height: 52.4px;\n    line-height: 52.4px;\n}\n.button-borderless.button-jumbo {\n    font-size: 31.2px;\n    height: 47.2px;\n    line-height: 47.2px;\n}\n.button-borderless.button-large {\n    font-size: 26px;\n    height: 42px;\n    line-height: 42px;\n}\n.button-borderless.button-normal {\n    font-size: 20.8px;\n    height: 36.8px;\n    line-height: 36.8px;\n}\n.button-borderless.button-small {\n    font-size: 15.6px;\n    height: 31.6px;\n    line-height: 31.6px;\n}\n.button-borderless.button-tiny {\n    font-size: 12.48px;\n    height: 28.48px;\n    line-height: 28.48px;\n}\n\n/*\n* Raised Buttons\n*\n* A classic looking button that offers\n* great depth and affordance.\n*/\n.button-raised {\n  border-color: #cfcfcf;\n  border-style: solid;\n  border-width: 1px;\n  line-height: 38px;\n  background: linear-gradient(#e4e4e4, #cfcfcf);\n  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);\n}\n.button-raised:hover, .button-raised:focus {\n    background: linear-gradient(to bottom, #f0f0f0, #cacaca);\n}\n.button-raised:active, .button-raised.active, .button-raised.is-active {\n    background: gainsboro;\n    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;\n}\n\n/*\n* Raised Button Colors\n*\n* Create colors for raised buttons\n*/\n.button-raised.button-primary {\n  border-color: #3a73ac;\n  background: linear-gradient(#538dc5, #3a73ac);\n}\n.button-raised.button-primary:hover, .button-raised.button-primary:focus {\n    background: linear-gradient(to bottom, #5f94c9, #376ea4);\n}\n.button-raised.button-primary:active, .button-raised.button-primary.active, .button-raised.button-primary.is-active {\n    border-color: #336699;\n    background: #4d80b2;\n}\n.button-raised.button-plain {\n  border-color: #f2f2f2;\n  background: linear-gradient(white, #f2f2f2);\n}\n.button-raised.button-plain:hover, .button-raised.button-plain:focus {\n    background: linear-gradient(to bottom, white, #ededed);\n}\n.button-raised.button-plain:active, .button-raised.button-plain.active, .button-raised.button-plain.is-active {\n    border-color: #e6e6e6;\n    background: white;\n}\n.button-raised.button-inverse {\n  border-color: #151515;\n  background: linear-gradient(#2f2f2f, #151515);\n}\n.button-raised.button-inverse:hover, .button-raised.button-inverse:focus {\n    background: linear-gradient(to bottom, #363636, #101010);\n}\n.button-raised.button-inverse:active, .button-raised.button-inverse.active, .button-raised.button-inverse.is-active {\n    border-color: #090909;\n    background: #222222;\n}\n.button-raised.button-action {\n  border-color: #38b9e6;\n  background: linear-gradient(#66c9ec, #38b9e6);\n}\n.button-raised.button-action:hover, .button-raised.button-action:focus {\n    background: linear-gradient(to bottom, #73ceee, #2fb6e5);\n}\n.button-raised.button-action:active, .button-raised.button-action.active, .button-raised.button-action.is-active {\n    border-color: #22b1e3;\n    background: #59bcdf;\n}\n.button-raised.button-highlight {\n  border-color: #ffaa46;\n  background: linear-gradient(#ffc279, #ffaa46);\n}\n.button-raised.button-highlight:hover, .button-raised.button-highlight:focus {\n    background: linear-gradient(to bottom, #ffc988, #ffa63b);\n}\n.button-raised.button-highlight:active, .button-raised.button-highlight.active, .button-raised.button-highlight.is-active {\n    border-color: #ff9f2c;\n    background: #f7b567;\n}\n.button-raised.button-caution {\n  border-color: #fa705f;\n  background: linear-gradient(#fc9c91, #fa705f);\n}\n.button-raised.button-caution:hover, .button-raised.button-caution:focus {\n    background: linear-gradient(to bottom, #fcaaa0, #fa6755);\n}\n.button-raised.button-caution:active, .button-raised.button-caution.active, .button-raised.button-caution.is-active {\n    border-color: #fa5a46;\n    background: #f48b7f;\n}\n.button-raised.button-royal {\n  border-color: #1fc08d;\n  background: linear-gradient(#33dfa8, #1fc08d);\n}\n.button-raised.button-royal:hover, .button-raised.button-royal:focus {\n    background: linear-gradient(to bottom, #40e1ae, #1db786);\n}\n.button-raised.button-royal:active, .button-raised.button-royal.active, .button-raised.button-royal.is-active {\n    border-color: #1baa7d;\n    background: #2eca98;\n}\n\n/*\n* 3D Buttons\n*\n* These buttons have a heavy three dimensional\n* style that mimics the visual appearance of a\n* real life button.\n*/\n.button-3d {\n  position: relative;\n  top: 0;\n  box-shadow: 0 7px 0 darkgray, 0 8px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d:hover, .button-3d:focus {\n    box-shadow: 0 7px 0 darkgray, 0 8px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d:active, .button-3d.active, .button-3d.is-active {\n    top: 5px;\n    transition-property: all;\n    transition-duration: .15s;\n    box-shadow: 0 2px 0 darkgray, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* 3D Button Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-3d.button-primary {\n  box-shadow: 0 7px 0 #336699, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-primary:hover, .button-3d.button-primary:focus {\n    box-shadow: 0 7px 0 #316191, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-primary:active, .button-3d.button-primary.active, .button-3d.button-primary.is-active {\n    box-shadow: 0 2px 0 #264d73, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-plain {\n  box-shadow: 0 7px 0 #e6e6e6, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-plain:hover, .button-3d.button-plain:focus {\n    box-shadow: 0 7px 0 #e0e0e0, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-plain:active, .button-3d.button-plain.active, .button-3d.button-plain.is-active {\n    box-shadow: 0 2px 0 #cccccc, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-inverse {\n  box-shadow: 0 7px 0 #090909, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-inverse:hover, .button-3d.button-inverse:focus {\n    box-shadow: 0 7px 0 #030303, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-inverse:active, .button-3d.button-inverse.active, .button-3d.button-inverse.is-active {\n    box-shadow: 0 2px 0 black, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-action {\n  box-shadow: 0 7px 0 #22b1e3, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-action:hover, .button-3d.button-action:focus {\n    box-shadow: 0 7px 0 #1cacdf, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-action:active, .button-3d.button-action.active, .button-3d.button-action.is-active {\n    box-shadow: 0 2px 0 #1790bb, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-highlight {\n  box-shadow: 0 7px 0 #ff9f2c, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-highlight:hover, .button-3d.button-highlight:focus {\n    box-shadow: 0 7px 0 #ff9a22, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-highlight:active, .button-3d.button-highlight.active, .button-3d.button-highlight.is-active {\n    box-shadow: 0 2px 0 #f88700, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-caution {\n  box-shadow: 0 7px 0 #fa5a46, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-caution:hover, .button-3d.button-caution:focus {\n    box-shadow: 0 7px 0 #f9513d, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-caution:active, .button-3d.button-caution.active, .button-3d.button-caution.is-active {\n    box-shadow: 0 2px 0 #f82d15, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-royal {\n  box-shadow: 0 7px 0 #1baa7d, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-royal:hover, .button-3d.button-royal:focus {\n    box-shadow: 0 7px 0 #1aa176, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-royal:active, .button-3d.button-royal.active, .button-3d.button-royal.is-active {\n    box-shadow: 0 2px 0 #147e5c, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* Glowing Buttons\n*\n* A pulse like glow that appears\n* rythmically around the edges of\n* a button.\n*/\n/*\n* Glow animation mixin for Compass users\n*\n*/\n/*\n* Glowing Keyframes\n*\n*/\n@keyframes glowing {\nfrom {\n    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(44, 154, 219, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);\n}\n}\n\n/*\n* Glowing Keyframes for various colors\n*\n*/\n@keyframes glowing-primary {\nfrom {\n    box-shadow: 0 0 0 rgba(64, 128, 191, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(64, 128, 191, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(64, 128, 191, 0.3);\n}\n}\n@keyframes glowing-plain {\nfrom {\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);\n}\n}\n@keyframes glowing-inverse {\nfrom {\n    box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(34, 34, 34, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);\n}\n}\n@keyframes glowing-action {\nfrom {\n    box-shadow: 0 0 0 rgba(79, 193, 233, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(79, 193, 233, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(79, 193, 233, 0.3);\n}\n}\n@keyframes glowing-highlight {\nfrom {\n    box-shadow: 0 0 0 rgba(255, 182, 95, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(255, 182, 95, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(255, 182, 95, 0.3);\n}\n}\n@keyframes glowing-caution {\nfrom {\n    box-shadow: 0 0 0 rgba(251, 134, 120, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(251, 134, 120, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(251, 134, 120, 0.3);\n}\n}\n@keyframes glowing-royal {\nfrom {\n    box-shadow: 0 0 0 rgba(34, 214, 157, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(34, 214, 157, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(34, 214, 157, 0.3);\n}\n}\n\n/*\n* Glowing Buttons Base Styes\n*\n* A pulse like glow that appears\n* rythmically around the edges of\n* a button.\n*/\n.button-glow {\n  animation-duration: 3s;\n  animation-iteration-count: infinite;\n  animation-name: glowing;\n}\n.button-glow:active, .button-glow.active, .button-glow.is-active {\n    animation-name: none;\n}\n\n/*\n* Glowing Button Colors\n*\n* Create colors for glowing buttons\n*/\n.button-glow.button-primary {\n  animation-name: glowing-primary;\n}\n.button-glow.button-plain {\n  animation-name: glowing-plain;\n}\n.button-glow.button-inverse {\n  animation-name: glowing-inverse;\n}\n.button-glow.button-action {\n  animation-name: glowing-action;\n}\n.button-glow.button-highlight {\n  animation-name: glowing-highlight;\n}\n.button-glow.button-caution {\n  animation-name: glowing-caution;\n}\n.button-glow.button-royal {\n  animation-name: glowing-royal;\n}\n\n/*\n* Dropdown menu buttons\n*\n* A dropdown menu appears\n* when a button is pressed\n*/\n/*\n* Dropdown Container\n*\n*/\n.button-dropdown {\n  position: relative;\n  overflow: visible;\n  display: inline-block;\n}\n\n/*\n* Dropdown List Style\n*\n*/\n.button-dropdown-list {\n  display: none;\n  position: absolute;\n  padding: 0;\n  margin: 0;\n  top: 0;\n  left: 0;\n  z-index: 1000;\n  min-width: 100%;\n  list-style-type: none;\n  background: rgba(246, 246, 246, 0.95);\n  border-style: solid;\n  border-width: 1px;\n  border-color: #c3c3c3;\n  font-family: \"Open Sans\", sans-serif, verdana;\n  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);\n  border-radius: 3px;\n  box-sizing: border-box;\n  /*\n  * Dropdown Below\n  *\n  */\n  /*\n  * Dropdown Above\n  *\n  */\n}\n.button-dropdown-list.is-below {\n    top: 100%;\n    border-top: none;\n    border-radius: 0 0 3px 3px;\n}\n.button-dropdown-list.is-above {\n    bottom: 100%;\n    top: auto;\n    border-bottom: none;\n    border-radius: 3px 3px 0 0;\n    box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* Dropdown Buttons\n*\n*/\n.button-dropdown-list > li {\n  padding: 0;\n  margin: 0;\n  display: block;\n}\n.button-dropdown-list > li > a {\n    display: block;\n    line-height: 40px;\n    font-size: 12.8px;\n    padding: 5px 10px;\n    float: none;\n    color: #666;\n    text-decoration: none;\n}\n.button-dropdown-list > li > a:hover {\n      color: #5e5e5e;\n      background: #e4e4e4;\n      text-decoration: none;\n}\n.button-dropdown-divider {\n  border-top: 1px solid #d4d4d4;\n}\n\n/*\n* Dropdown Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-dropdown.button-dropdown-primary .button-dropdown-list {\n  background: rgba(64, 128, 191, 0.95);\n  border-color: #336699;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list .button-dropdown-divider {\n    border-color: #376ea4;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #3a73ac;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list {\n  background: rgba(255, 255, 255, 0.95);\n  border-color: #e6e6e6;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list .button-dropdown-divider {\n    border-color: #ededed;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list > li > a {\n    color: #1B9AF7;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list > li > a:hover {\n      color: #088ef0;\n      background: #f2f2f2;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list {\n  background: rgba(34, 34, 34, 0.95);\n  border-color: #090909;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list .button-dropdown-divider {\n    border-color: #101010;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list > li > a {\n    color: #EEE;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list > li > a:hover {\n      color: #e1e1e1;\n      background: #151515;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list {\n  background: rgba(79, 193, 233, 0.95);\n  border-color: #22b1e3;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list .button-dropdown-divider {\n    border-color: #2fb6e5;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #38b9e6;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list {\n  background: rgba(255, 182, 95, 0.95);\n  border-color: #ff9f2c;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list .button-dropdown-divider {\n    border-color: #ffa63b;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #ffaa46;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list {\n  background: rgba(251, 134, 120, 0.95);\n  border-color: #fa5a46;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list .button-dropdown-divider {\n    border-color: #fa6755;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #fa705f;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list {\n  background: rgba(34, 214, 157, 0.95);\n  border-color: #1baa7d;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list .button-dropdown-divider {\n    border-color: #1db786;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #1fc08d;\n}\n\n/*\n* Buton Groups\n*\n* A group of related buttons\n* displayed edge to edge\n*/\n.button-group {\n  position: relative;\n  display: inline-block;\n}\n.button-group:after {\n    content: \" \";\n    display: block;\n    clear: both;\n}\n.button-group .button,\n  .button-group .button-dropdown {\n    float: left;\n}\n.button-group .button:not(:first-child):not(:last-child),\n    .button-group .button-dropdown:not(:first-child):not(:last-child) {\n      border-radius: 0;\n      border-right: none;\n}\n.button-group .button:first-child,\n    .button-group .button-dropdown:first-child {\n      border-top-right-radius: 0;\n      border-bottom-right-radius: 0;\n      border-right: none;\n}\n.button-group .button:last-child,\n    .button-group .button-dropdown:last-child {\n      border-top-left-radius: 0;\n      border-bottom-left-radius: 0;\n}\n\n/*\n* Button Wrapper\n*\n* A wrap around effect to highlight\n* the shape of the button and offer\n* a subtle visual effect.\n*/\n.button-wrap {\n  border: 1px solid #e3e3e3;\n  display: inline-block;\n  padding: 9px;\n  background: linear-gradient(#f2f2f2, #FFF);\n  border-radius: 200px;\n  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);\n}\n\n/*\n* Long Shadow Buttons\n*\n* A visual effect adding a flat shadow to the text of a button\n*/\n/*\n* Long Shadow Function\n*\n* Loops $length times building a long shadow. Defaults downward right\n*/\n/*\n* LONG SHADOW MIXIN\n*\n*/\n/*\n* Shadow Right\n*\n*/\n.button-longshadow,\n.button-longshadow-right {\n  overflow: hidden;\n}\n.button-longshadow.button-primary,\n  .button-longshadow-right.button-primary {\n    text-shadow: 0px 0px #336699, 1px 1px #336699, 2px 2px #336699, 3px 3px #336699, 4px 4px #336699, 5px 5px #336699, 6px 6px #336699, 7px 7px #336699, 8px 8px #336699, 9px 9px #336699, 10px 10px #336699, 11px 11px #336699, 12px 12px #336699, 13px 13px #336699, 14px 14px #336699, 15px 15px #336699, 16px 16px #336699, 17px 17px #336699, 18px 18px #336699, 19px 19px #336699, 20px 20px #336699, 21px 21px #336699, 22px 22px #336699, 23px 23px #336699, 24px 24px #336699, 25px 25px #336699, 26px 26px #336699, 27px 27px #336699, 28px 28px #336699, 29px 29px #336699, 30px 30px #336699, 31px 31px #336699, 32px 32px #336699, 33px 33px #336699, 34px 34px #336699, 35px 35px #336699, 36px 36px #336699, 37px 37px #336699, 38px 38px #336699, 39px 39px #336699, 40px 40px #336699, 41px 41px #336699, 42px 42px #336699, 43px 43px #336699, 44px 44px #336699, 45px 45px #336699, 46px 46px #336699, 47px 47px #336699, 48px 48px #336699, 49px 49px #336699, 50px 50px #336699, 51px 51px #336699, 52px 52px #336699, 53px 53px #336699, 54px 54px #336699, 55px 55px #336699, 56px 56px #336699, 57px 57px #336699, 58px 58px #336699, 59px 59px #336699, 60px 60px #336699, 61px 61px #336699, 62px 62px #336699, 63px 63px #336699, 64px 64px #336699, 65px 65px #336699, 66px 66px #336699, 67px 67px #336699, 68px 68px #336699, 69px 69px #336699, 70px 70px #336699, 71px 71px #336699, 72px 72px #336699, 73px 73px #336699, 74px 74px #336699, 75px 75px #336699, 76px 76px #336699, 77px 77px #336699, 78px 78px #336699, 79px 79px #336699, 80px 80px #336699, 81px 81px #336699, 82px 82px #336699, 83px 83px #336699, 84px 84px #336699, 85px 85px #336699;\n}\n.button-longshadow.button-primary:active, .button-longshadow.button-primary.active, .button-longshadow.button-primary.is-active,\n    .button-longshadow-right.button-primary:active,\n    .button-longshadow-right.button-primary.active,\n    .button-longshadow-right.button-primary.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-plain,\n  .button-longshadow-right.button-plain {\n    text-shadow: 0px 0px #e6e6e6, 1px 1px #e6e6e6, 2px 2px #e6e6e6, 3px 3px #e6e6e6, 4px 4px #e6e6e6, 5px 5px #e6e6e6, 6px 6px #e6e6e6, 7px 7px #e6e6e6, 8px 8px #e6e6e6, 9px 9px #e6e6e6, 10px 10px #e6e6e6, 11px 11px #e6e6e6, 12px 12px #e6e6e6, 13px 13px #e6e6e6, 14px 14px #e6e6e6, 15px 15px #e6e6e6, 16px 16px #e6e6e6, 17px 17px #e6e6e6, 18px 18px #e6e6e6, 19px 19px #e6e6e6, 20px 20px #e6e6e6, 21px 21px #e6e6e6, 22px 22px #e6e6e6, 23px 23px #e6e6e6, 24px 24px #e6e6e6, 25px 25px #e6e6e6, 26px 26px #e6e6e6, 27px 27px #e6e6e6, 28px 28px #e6e6e6, 29px 29px #e6e6e6, 30px 30px #e6e6e6, 31px 31px #e6e6e6, 32px 32px #e6e6e6, 33px 33px #e6e6e6, 34px 34px #e6e6e6, 35px 35px #e6e6e6, 36px 36px #e6e6e6, 37px 37px #e6e6e6, 38px 38px #e6e6e6, 39px 39px #e6e6e6, 40px 40px #e6e6e6, 41px 41px #e6e6e6, 42px 42px #e6e6e6, 43px 43px #e6e6e6, 44px 44px #e6e6e6, 45px 45px #e6e6e6, 46px 46px #e6e6e6, 47px 47px #e6e6e6, 48px 48px #e6e6e6, 49px 49px #e6e6e6, 50px 50px #e6e6e6, 51px 51px #e6e6e6, 52px 52px #e6e6e6, 53px 53px #e6e6e6, 54px 54px #e6e6e6, 55px 55px #e6e6e6, 56px 56px #e6e6e6, 57px 57px #e6e6e6, 58px 58px #e6e6e6, 59px 59px #e6e6e6, 60px 60px #e6e6e6, 61px 61px #e6e6e6, 62px 62px #e6e6e6, 63px 63px #e6e6e6, 64px 64px #e6e6e6, 65px 65px #e6e6e6, 66px 66px #e6e6e6, 67px 67px #e6e6e6, 68px 68px #e6e6e6, 69px 69px #e6e6e6, 70px 70px #e6e6e6, 71px 71px #e6e6e6, 72px 72px #e6e6e6, 73px 73px #e6e6e6, 74px 74px #e6e6e6, 75px 75px #e6e6e6, 76px 76px #e6e6e6, 77px 77px #e6e6e6, 78px 78px #e6e6e6, 79px 79px #e6e6e6, 80px 80px #e6e6e6, 81px 81px #e6e6e6, 82px 82px #e6e6e6, 83px 83px #e6e6e6, 84px 84px #e6e6e6, 85px 85px #e6e6e6;\n}\n.button-longshadow.button-plain:active, .button-longshadow.button-plain.active, .button-longshadow.button-plain.is-active,\n    .button-longshadow-right.button-plain:active,\n    .button-longshadow-right.button-plain.active,\n    .button-longshadow-right.button-plain.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-inverse,\n  .button-longshadow-right.button-inverse {\n    text-shadow: 0px 0px #090909, 1px 1px #090909, 2px 2px #090909, 3px 3px #090909, 4px 4px #090909, 5px 5px #090909, 6px 6px #090909, 7px 7px #090909, 8px 8px #090909, 9px 9px #090909, 10px 10px #090909, 11px 11px #090909, 12px 12px #090909, 13px 13px #090909, 14px 14px #090909, 15px 15px #090909, 16px 16px #090909, 17px 17px #090909, 18px 18px #090909, 19px 19px #090909, 20px 20px #090909, 21px 21px #090909, 22px 22px #090909, 23px 23px #090909, 24px 24px #090909, 25px 25px #090909, 26px 26px #090909, 27px 27px #090909, 28px 28px #090909, 29px 29px #090909, 30px 30px #090909, 31px 31px #090909, 32px 32px #090909, 33px 33px #090909, 34px 34px #090909, 35px 35px #090909, 36px 36px #090909, 37px 37px #090909, 38px 38px #090909, 39px 39px #090909, 40px 40px #090909, 41px 41px #090909, 42px 42px #090909, 43px 43px #090909, 44px 44px #090909, 45px 45px #090909, 46px 46px #090909, 47px 47px #090909, 48px 48px #090909, 49px 49px #090909, 50px 50px #090909, 51px 51px #090909, 52px 52px #090909, 53px 53px #090909, 54px 54px #090909, 55px 55px #090909, 56px 56px #090909, 57px 57px #090909, 58px 58px #090909, 59px 59px #090909, 60px 60px #090909, 61px 61px #090909, 62px 62px #090909, 63px 63px #090909, 64px 64px #090909, 65px 65px #090909, 66px 66px #090909, 67px 67px #090909, 68px 68px #090909, 69px 69px #090909, 70px 70px #090909, 71px 71px #090909, 72px 72px #090909, 73px 73px #090909, 74px 74px #090909, 75px 75px #090909, 76px 76px #090909, 77px 77px #090909, 78px 78px #090909, 79px 79px #090909, 80px 80px #090909, 81px 81px #090909, 82px 82px #090909, 83px 83px #090909, 84px 84px #090909, 85px 85px #090909;\n}\n.button-longshadow.button-inverse:active, .button-longshadow.button-inverse.active, .button-longshadow.button-inverse.is-active,\n    .button-longshadow-right.button-inverse:active,\n    .button-longshadow-right.button-inverse.active,\n    .button-longshadow-right.button-inverse.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-action,\n  .button-longshadow-right.button-action {\n    text-shadow: 0px 0px #22b1e3, 1px 1px #22b1e3, 2px 2px #22b1e3, 3px 3px #22b1e3, 4px 4px #22b1e3, 5px 5px #22b1e3, 6px 6px #22b1e3, 7px 7px #22b1e3, 8px 8px #22b1e3, 9px 9px #22b1e3, 10px 10px #22b1e3, 11px 11px #22b1e3, 12px 12px #22b1e3, 13px 13px #22b1e3, 14px 14px #22b1e3, 15px 15px #22b1e3, 16px 16px #22b1e3, 17px 17px #22b1e3, 18px 18px #22b1e3, 19px 19px #22b1e3, 20px 20px #22b1e3, 21px 21px #22b1e3, 22px 22px #22b1e3, 23px 23px #22b1e3, 24px 24px #22b1e3, 25px 25px #22b1e3, 26px 26px #22b1e3, 27px 27px #22b1e3, 28px 28px #22b1e3, 29px 29px #22b1e3, 30px 30px #22b1e3, 31px 31px #22b1e3, 32px 32px #22b1e3, 33px 33px #22b1e3, 34px 34px #22b1e3, 35px 35px #22b1e3, 36px 36px #22b1e3, 37px 37px #22b1e3, 38px 38px #22b1e3, 39px 39px #22b1e3, 40px 40px #22b1e3, 41px 41px #22b1e3, 42px 42px #22b1e3, 43px 43px #22b1e3, 44px 44px #22b1e3, 45px 45px #22b1e3, 46px 46px #22b1e3, 47px 47px #22b1e3, 48px 48px #22b1e3, 49px 49px #22b1e3, 50px 50px #22b1e3, 51px 51px #22b1e3, 52px 52px #22b1e3, 53px 53px #22b1e3, 54px 54px #22b1e3, 55px 55px #22b1e3, 56px 56px #22b1e3, 57px 57px #22b1e3, 58px 58px #22b1e3, 59px 59px #22b1e3, 60px 60px #22b1e3, 61px 61px #22b1e3, 62px 62px #22b1e3, 63px 63px #22b1e3, 64px 64px #22b1e3, 65px 65px #22b1e3, 66px 66px #22b1e3, 67px 67px #22b1e3, 68px 68px #22b1e3, 69px 69px #22b1e3, 70px 70px #22b1e3, 71px 71px #22b1e3, 72px 72px #22b1e3, 73px 73px #22b1e3, 74px 74px #22b1e3, 75px 75px #22b1e3, 76px 76px #22b1e3, 77px 77px #22b1e3, 78px 78px #22b1e3, 79px 79px #22b1e3, 80px 80px #22b1e3, 81px 81px #22b1e3, 82px 82px #22b1e3, 83px 83px #22b1e3, 84px 84px #22b1e3, 85px 85px #22b1e3;\n}\n.button-longshadow.button-action:active, .button-longshadow.button-action.active, .button-longshadow.button-action.is-active,\n    .button-longshadow-right.button-action:active,\n    .button-longshadow-right.button-action.active,\n    .button-longshadow-right.button-action.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-highlight,\n  .button-longshadow-right.button-highlight {\n    text-shadow: 0px 0px #ff9f2c, 1px 1px #ff9f2c, 2px 2px #ff9f2c, 3px 3px #ff9f2c, 4px 4px #ff9f2c, 5px 5px #ff9f2c, 6px 6px #ff9f2c, 7px 7px #ff9f2c, 8px 8px #ff9f2c, 9px 9px #ff9f2c, 10px 10px #ff9f2c, 11px 11px #ff9f2c, 12px 12px #ff9f2c, 13px 13px #ff9f2c, 14px 14px #ff9f2c, 15px 15px #ff9f2c, 16px 16px #ff9f2c, 17px 17px #ff9f2c, 18px 18px #ff9f2c, 19px 19px #ff9f2c, 20px 20px #ff9f2c, 21px 21px #ff9f2c, 22px 22px #ff9f2c, 23px 23px #ff9f2c, 24px 24px #ff9f2c, 25px 25px #ff9f2c, 26px 26px #ff9f2c, 27px 27px #ff9f2c, 28px 28px #ff9f2c, 29px 29px #ff9f2c, 30px 30px #ff9f2c, 31px 31px #ff9f2c, 32px 32px #ff9f2c, 33px 33px #ff9f2c, 34px 34px #ff9f2c, 35px 35px #ff9f2c, 36px 36px #ff9f2c, 37px 37px #ff9f2c, 38px 38px #ff9f2c, 39px 39px #ff9f2c, 40px 40px #ff9f2c, 41px 41px #ff9f2c, 42px 42px #ff9f2c, 43px 43px #ff9f2c, 44px 44px #ff9f2c, 45px 45px #ff9f2c, 46px 46px #ff9f2c, 47px 47px #ff9f2c, 48px 48px #ff9f2c, 49px 49px #ff9f2c, 50px 50px #ff9f2c, 51px 51px #ff9f2c, 52px 52px #ff9f2c, 53px 53px #ff9f2c, 54px 54px #ff9f2c, 55px 55px #ff9f2c, 56px 56px #ff9f2c, 57px 57px #ff9f2c, 58px 58px #ff9f2c, 59px 59px #ff9f2c, 60px 60px #ff9f2c, 61px 61px #ff9f2c, 62px 62px #ff9f2c, 63px 63px #ff9f2c, 64px 64px #ff9f2c, 65px 65px #ff9f2c, 66px 66px #ff9f2c, 67px 67px #ff9f2c, 68px 68px #ff9f2c, 69px 69px #ff9f2c, 70px 70px #ff9f2c, 71px 71px #ff9f2c, 72px 72px #ff9f2c, 73px 73px #ff9f2c, 74px 74px #ff9f2c, 75px 75px #ff9f2c, 76px 76px #ff9f2c, 77px 77px #ff9f2c, 78px 78px #ff9f2c, 79px 79px #ff9f2c, 80px 80px #ff9f2c, 81px 81px #ff9f2c, 82px 82px #ff9f2c, 83px 83px #ff9f2c, 84px 84px #ff9f2c, 85px 85px #ff9f2c;\n}\n.button-longshadow.button-highlight:active, .button-longshadow.button-highlight.active, .button-longshadow.button-highlight.is-active,\n    .button-longshadow-right.button-highlight:active,\n    .button-longshadow-right.button-highlight.active,\n    .button-longshadow-right.button-highlight.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-caution,\n  .button-longshadow-right.button-caution {\n    text-shadow: 0px 0px #fa5a46, 1px 1px #fa5a46, 2px 2px #fa5a46, 3px 3px #fa5a46, 4px 4px #fa5a46, 5px 5px #fa5a46, 6px 6px #fa5a46, 7px 7px #fa5a46, 8px 8px #fa5a46, 9px 9px #fa5a46, 10px 10px #fa5a46, 11px 11px #fa5a46, 12px 12px #fa5a46, 13px 13px #fa5a46, 14px 14px #fa5a46, 15px 15px #fa5a46, 16px 16px #fa5a46, 17px 17px #fa5a46, 18px 18px #fa5a46, 19px 19px #fa5a46, 20px 20px #fa5a46, 21px 21px #fa5a46, 22px 22px #fa5a46, 23px 23px #fa5a46, 24px 24px #fa5a46, 25px 25px #fa5a46, 26px 26px #fa5a46, 27px 27px #fa5a46, 28px 28px #fa5a46, 29px 29px #fa5a46, 30px 30px #fa5a46, 31px 31px #fa5a46, 32px 32px #fa5a46, 33px 33px #fa5a46, 34px 34px #fa5a46, 35px 35px #fa5a46, 36px 36px #fa5a46, 37px 37px #fa5a46, 38px 38px #fa5a46, 39px 39px #fa5a46, 40px 40px #fa5a46, 41px 41px #fa5a46, 42px 42px #fa5a46, 43px 43px #fa5a46, 44px 44px #fa5a46, 45px 45px #fa5a46, 46px 46px #fa5a46, 47px 47px #fa5a46, 48px 48px #fa5a46, 49px 49px #fa5a46, 50px 50px #fa5a46, 51px 51px #fa5a46, 52px 52px #fa5a46, 53px 53px #fa5a46, 54px 54px #fa5a46, 55px 55px #fa5a46, 56px 56px #fa5a46, 57px 57px #fa5a46, 58px 58px #fa5a46, 59px 59px #fa5a46, 60px 60px #fa5a46, 61px 61px #fa5a46, 62px 62px #fa5a46, 63px 63px #fa5a46, 64px 64px #fa5a46, 65px 65px #fa5a46, 66px 66px #fa5a46, 67px 67px #fa5a46, 68px 68px #fa5a46, 69px 69px #fa5a46, 70px 70px #fa5a46, 71px 71px #fa5a46, 72px 72px #fa5a46, 73px 73px #fa5a46, 74px 74px #fa5a46, 75px 75px #fa5a46, 76px 76px #fa5a46, 77px 77px #fa5a46, 78px 78px #fa5a46, 79px 79px #fa5a46, 80px 80px #fa5a46, 81px 81px #fa5a46, 82px 82px #fa5a46, 83px 83px #fa5a46, 84px 84px #fa5a46, 85px 85px #fa5a46;\n}\n.button-longshadow.button-caution:active, .button-longshadow.button-caution.active, .button-longshadow.button-caution.is-active,\n    .button-longshadow-right.button-caution:active,\n    .button-longshadow-right.button-caution.active,\n    .button-longshadow-right.button-caution.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-royal,\n  .button-longshadow-right.button-royal {\n    text-shadow: 0px 0px #1baa7d, 1px 1px #1baa7d, 2px 2px #1baa7d, 3px 3px #1baa7d, 4px 4px #1baa7d, 5px 5px #1baa7d, 6px 6px #1baa7d, 7px 7px #1baa7d, 8px 8px #1baa7d, 9px 9px #1baa7d, 10px 10px #1baa7d, 11px 11px #1baa7d, 12px 12px #1baa7d, 13px 13px #1baa7d, 14px 14px #1baa7d, 15px 15px #1baa7d, 16px 16px #1baa7d, 17px 17px #1baa7d, 18px 18px #1baa7d, 19px 19px #1baa7d, 20px 20px #1baa7d, 21px 21px #1baa7d, 22px 22px #1baa7d, 23px 23px #1baa7d, 24px 24px #1baa7d, 25px 25px #1baa7d, 26px 26px #1baa7d, 27px 27px #1baa7d, 28px 28px #1baa7d, 29px 29px #1baa7d, 30px 30px #1baa7d, 31px 31px #1baa7d, 32px 32px #1baa7d, 33px 33px #1baa7d, 34px 34px #1baa7d, 35px 35px #1baa7d, 36px 36px #1baa7d, 37px 37px #1baa7d, 38px 38px #1baa7d, 39px 39px #1baa7d, 40px 40px #1baa7d, 41px 41px #1baa7d, 42px 42px #1baa7d, 43px 43px #1baa7d, 44px 44px #1baa7d, 45px 45px #1baa7d, 46px 46px #1baa7d, 47px 47px #1baa7d, 48px 48px #1baa7d, 49px 49px #1baa7d, 50px 50px #1baa7d, 51px 51px #1baa7d, 52px 52px #1baa7d, 53px 53px #1baa7d, 54px 54px #1baa7d, 55px 55px #1baa7d, 56px 56px #1baa7d, 57px 57px #1baa7d, 58px 58px #1baa7d, 59px 59px #1baa7d, 60px 60px #1baa7d, 61px 61px #1baa7d, 62px 62px #1baa7d, 63px 63px #1baa7d, 64px 64px #1baa7d, 65px 65px #1baa7d, 66px 66px #1baa7d, 67px 67px #1baa7d, 68px 68px #1baa7d, 69px 69px #1baa7d, 70px 70px #1baa7d, 71px 71px #1baa7d, 72px 72px #1baa7d, 73px 73px #1baa7d, 74px 74px #1baa7d, 75px 75px #1baa7d, 76px 76px #1baa7d, 77px 77px #1baa7d, 78px 78px #1baa7d, 79px 79px #1baa7d, 80px 80px #1baa7d, 81px 81px #1baa7d, 82px 82px #1baa7d, 83px 83px #1baa7d, 84px 84px #1baa7d, 85px 85px #1baa7d;\n}\n.button-longshadow.button-royal:active, .button-longshadow.button-royal.active, .button-longshadow.button-royal.is-active,\n    .button-longshadow-right.button-royal:active,\n    .button-longshadow-right.button-royal.active,\n    .button-longshadow-right.button-royal.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n\n/*\n* Shadow Left\n*\n*/\n.button-longshadow-left {\n  overflow: hidden;\n}\n.button-longshadow-left.button-primary {\n    text-shadow: 0px 0px #336699, -1px 1px #336699, -2px 2px #336699, -3px 3px #336699, -4px 4px #336699, -5px 5px #336699, -6px 6px #336699, -7px 7px #336699, -8px 8px #336699, -9px 9px #336699, -10px 10px #336699, -11px 11px #336699, -12px 12px #336699, -13px 13px #336699, -14px 14px #336699, -15px 15px #336699, -16px 16px #336699, -17px 17px #336699, -18px 18px #336699, -19px 19px #336699, -20px 20px #336699, -21px 21px #336699, -22px 22px #336699, -23px 23px #336699, -24px 24px #336699, -25px 25px #336699, -26px 26px #336699, -27px 27px #336699, -28px 28px #336699, -29px 29px #336699, -30px 30px #336699, -31px 31px #336699, -32px 32px #336699, -33px 33px #336699, -34px 34px #336699, -35px 35px #336699, -36px 36px #336699, -37px 37px #336699, -38px 38px #336699, -39px 39px #336699, -40px 40px #336699, -41px 41px #336699, -42px 42px #336699, -43px 43px #336699, -44px 44px #336699, -45px 45px #336699, -46px 46px #336699, -47px 47px #336699, -48px 48px #336699, -49px 49px #336699, -50px 50px #336699, -51px 51px #336699, -52px 52px #336699, -53px 53px #336699, -54px 54px #336699, -55px 55px #336699, -56px 56px #336699, -57px 57px #336699, -58px 58px #336699, -59px 59px #336699, -60px 60px #336699, -61px 61px #336699, -62px 62px #336699, -63px 63px #336699, -64px 64px #336699, -65px 65px #336699, -66px 66px #336699, -67px 67px #336699, -68px 68px #336699, -69px 69px #336699, -70px 70px #336699, -71px 71px #336699, -72px 72px #336699, -73px 73px #336699, -74px 74px #336699, -75px 75px #336699, -76px 76px #336699, -77px 77px #336699, -78px 78px #336699, -79px 79px #336699, -80px 80px #336699, -81px 81px #336699, -82px 82px #336699, -83px 83px #336699, -84px 84px #336699, -85px 85px #336699;\n}\n.button-longshadow-left.button-primary:active, .button-longshadow-left.button-primary.active, .button-longshadow-left.button-primary.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-plain {\n    text-shadow: 0px 0px #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6, -36px 36px #e6e6e6, -37px 37px #e6e6e6, -38px 38px #e6e6e6, -39px 39px #e6e6e6, -40px 40px #e6e6e6, -41px 41px #e6e6e6, -42px 42px #e6e6e6, -43px 43px #e6e6e6, -44px 44px #e6e6e6, -45px 45px #e6e6e6, -46px 46px #e6e6e6, -47px 47px #e6e6e6, -48px 48px #e6e6e6, -49px 49px #e6e6e6, -50px 50px #e6e6e6, -51px 51px #e6e6e6, -52px 52px #e6e6e6, -53px 53px #e6e6e6, -54px 54px #e6e6e6, -55px 55px #e6e6e6, -56px 56px #e6e6e6, -57px 57px #e6e6e6, -58px 58px #e6e6e6, -59px 59px #e6e6e6, -60px 60px #e6e6e6, -61px 61px #e6e6e6, -62px 62px #e6e6e6, -63px 63px #e6e6e6, -64px 64px #e6e6e6, -65px 65px #e6e6e6, -66px 66px #e6e6e6, -67px 67px #e6e6e6, -68px 68px #e6e6e6, -69px 69px #e6e6e6, -70px 70px #e6e6e6, -71px 71px #e6e6e6, -72px 72px #e6e6e6, -73px 73px #e6e6e6, -74px 74px #e6e6e6, -75px 75px #e6e6e6, -76px 76px #e6e6e6, -77px 77px #e6e6e6, -78px 78px #e6e6e6, -79px 79px #e6e6e6, -80px 80px #e6e6e6, -81px 81px #e6e6e6, -82px 82px #e6e6e6, -83px 83px #e6e6e6, -84px 84px #e6e6e6, -85px 85px #e6e6e6;\n}\n.button-longshadow-left.button-plain:active, .button-longshadow-left.button-plain.active, .button-longshadow-left.button-plain.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-inverse {\n    text-shadow: 0px 0px #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909, -36px 36px #090909, -37px 37px #090909, -38px 38px #090909, -39px 39px #090909, -40px 40px #090909, -41px 41px #090909, -42px 42px #090909, -43px 43px #090909, -44px 44px #090909, -45px 45px #090909, -46px 46px #090909, -47px 47px #090909, -48px 48px #090909, -49px 49px #090909, -50px 50px #090909, -51px 51px #090909, -52px 52px #090909, -53px 53px #090909, -54px 54px #090909, -55px 55px #090909, -56px 56px #090909, -57px 57px #090909, -58px 58px #090909, -59px 59px #090909, -60px 60px #090909, -61px 61px #090909, -62px 62px #090909, -63px 63px #090909, -64px 64px #090909, -65px 65px #090909, -66px 66px #090909, -67px 67px #090909, -68px 68px #090909, -69px 69px #090909, -70px 70px #090909, -71px 71px #090909, -72px 72px #090909, -73px 73px #090909, -74px 74px #090909, -75px 75px #090909, -76px 76px #090909, -77px 77px #090909, -78px 78px #090909, -79px 79px #090909, -80px 80px #090909, -81px 81px #090909, -82px 82px #090909, -83px 83px #090909, -84px 84px #090909, -85px 85px #090909;\n}\n.button-longshadow-left.button-inverse:active, .button-longshadow-left.button-inverse.active, .button-longshadow-left.button-inverse.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-action {\n    text-shadow: 0px 0px #22b1e3, -1px 1px #22b1e3, -2px 2px #22b1e3, -3px 3px #22b1e3, -4px 4px #22b1e3, -5px 5px #22b1e3, -6px 6px #22b1e3, -7px 7px #22b1e3, -8px 8px #22b1e3, -9px 9px #22b1e3, -10px 10px #22b1e3, -11px 11px #22b1e3, -12px 12px #22b1e3, -13px 13px #22b1e3, -14px 14px #22b1e3, -15px 15px #22b1e3, -16px 16px #22b1e3, -17px 17px #22b1e3, -18px 18px #22b1e3, -19px 19px #22b1e3, -20px 20px #22b1e3, -21px 21px #22b1e3, -22px 22px #22b1e3, -23px 23px #22b1e3, -24px 24px #22b1e3, -25px 25px #22b1e3, -26px 26px #22b1e3, -27px 27px #22b1e3, -28px 28px #22b1e3, -29px 29px #22b1e3, -30px 30px #22b1e3, -31px 31px #22b1e3, -32px 32px #22b1e3, -33px 33px #22b1e3, -34px 34px #22b1e3, -35px 35px #22b1e3, -36px 36px #22b1e3, -37px 37px #22b1e3, -38px 38px #22b1e3, -39px 39px #22b1e3, -40px 40px #22b1e3, -41px 41px #22b1e3, -42px 42px #22b1e3, -43px 43px #22b1e3, -44px 44px #22b1e3, -45px 45px #22b1e3, -46px 46px #22b1e3, -47px 47px #22b1e3, -48px 48px #22b1e3, -49px 49px #22b1e3, -50px 50px #22b1e3, -51px 51px #22b1e3, -52px 52px #22b1e3, -53px 53px #22b1e3, -54px 54px #22b1e3, -55px 55px #22b1e3, -56px 56px #22b1e3, -57px 57px #22b1e3, -58px 58px #22b1e3, -59px 59px #22b1e3, -60px 60px #22b1e3, -61px 61px #22b1e3, -62px 62px #22b1e3, -63px 63px #22b1e3, -64px 64px #22b1e3, -65px 65px #22b1e3, -66px 66px #22b1e3, -67px 67px #22b1e3, -68px 68px #22b1e3, -69px 69px #22b1e3, -70px 70px #22b1e3, -71px 71px #22b1e3, -72px 72px #22b1e3, -73px 73px #22b1e3, -74px 74px #22b1e3, -75px 75px #22b1e3, -76px 76px #22b1e3, -77px 77px #22b1e3, -78px 78px #22b1e3, -79px 79px #22b1e3, -80px 80px #22b1e3, -81px 81px #22b1e3, -82px 82px #22b1e3, -83px 83px #22b1e3, -84px 84px #22b1e3, -85px 85px #22b1e3;\n}\n.button-longshadow-left.button-action:active, .button-longshadow-left.button-action.active, .button-longshadow-left.button-action.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-highlight {\n    text-shadow: 0px 0px #ff9f2c, -1px 1px #ff9f2c, -2px 2px #ff9f2c, -3px 3px #ff9f2c, -4px 4px #ff9f2c, -5px 5px #ff9f2c, -6px 6px #ff9f2c, -7px 7px #ff9f2c, -8px 8px #ff9f2c, -9px 9px #ff9f2c, -10px 10px #ff9f2c, -11px 11px #ff9f2c, -12px 12px #ff9f2c, -13px 13px #ff9f2c, -14px 14px #ff9f2c, -15px 15px #ff9f2c, -16px 16px #ff9f2c, -17px 17px #ff9f2c, -18px 18px #ff9f2c, -19px 19px #ff9f2c, -20px 20px #ff9f2c, -21px 21px #ff9f2c, -22px 22px #ff9f2c, -23px 23px #ff9f2c, -24px 24px #ff9f2c, -25px 25px #ff9f2c, -26px 26px #ff9f2c, -27px 27px #ff9f2c, -28px 28px #ff9f2c, -29px 29px #ff9f2c, -30px 30px #ff9f2c, -31px 31px #ff9f2c, -32px 32px #ff9f2c, -33px 33px #ff9f2c, -34px 34px #ff9f2c, -35px 35px #ff9f2c, -36px 36px #ff9f2c, -37px 37px #ff9f2c, -38px 38px #ff9f2c, -39px 39px #ff9f2c, -40px 40px #ff9f2c, -41px 41px #ff9f2c, -42px 42px #ff9f2c, -43px 43px #ff9f2c, -44px 44px #ff9f2c, -45px 45px #ff9f2c, -46px 46px #ff9f2c, -47px 47px #ff9f2c, -48px 48px #ff9f2c, -49px 49px #ff9f2c, -50px 50px #ff9f2c, -51px 51px #ff9f2c, -52px 52px #ff9f2c, -53px 53px #ff9f2c, -54px 54px #ff9f2c, -55px 55px #ff9f2c, -56px 56px #ff9f2c, -57px 57px #ff9f2c, -58px 58px #ff9f2c, -59px 59px #ff9f2c, -60px 60px #ff9f2c, -61px 61px #ff9f2c, -62px 62px #ff9f2c, -63px 63px #ff9f2c, -64px 64px #ff9f2c, -65px 65px #ff9f2c, -66px 66px #ff9f2c, -67px 67px #ff9f2c, -68px 68px #ff9f2c, -69px 69px #ff9f2c, -70px 70px #ff9f2c, -71px 71px #ff9f2c, -72px 72px #ff9f2c, -73px 73px #ff9f2c, -74px 74px #ff9f2c, -75px 75px #ff9f2c, -76px 76px #ff9f2c, -77px 77px #ff9f2c, -78px 78px #ff9f2c, -79px 79px #ff9f2c, -80px 80px #ff9f2c, -81px 81px #ff9f2c, -82px 82px #ff9f2c, -83px 83px #ff9f2c, -84px 84px #ff9f2c, -85px 85px #ff9f2c;\n}\n.button-longshadow-left.button-highlight:active, .button-longshadow-left.button-highlight.active, .button-longshadow-left.button-highlight.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-caution {\n    text-shadow: 0px 0px #fa5a46, -1px 1px #fa5a46, -2px 2px #fa5a46, -3px 3px #fa5a46, -4px 4px #fa5a46, -5px 5px #fa5a46, -6px 6px #fa5a46, -7px 7px #fa5a46, -8px 8px #fa5a46, -9px 9px #fa5a46, -10px 10px #fa5a46, -11px 11px #fa5a46, -12px 12px #fa5a46, -13px 13px #fa5a46, -14px 14px #fa5a46, -15px 15px #fa5a46, -16px 16px #fa5a46, -17px 17px #fa5a46, -18px 18px #fa5a46, -19px 19px #fa5a46, -20px 20px #fa5a46, -21px 21px #fa5a46, -22px 22px #fa5a46, -23px 23px #fa5a46, -24px 24px #fa5a46, -25px 25px #fa5a46, -26px 26px #fa5a46, -27px 27px #fa5a46, -28px 28px #fa5a46, -29px 29px #fa5a46, -30px 30px #fa5a46, -31px 31px #fa5a46, -32px 32px #fa5a46, -33px 33px #fa5a46, -34px 34px #fa5a46, -35px 35px #fa5a46, -36px 36px #fa5a46, -37px 37px #fa5a46, -38px 38px #fa5a46, -39px 39px #fa5a46, -40px 40px #fa5a46, -41px 41px #fa5a46, -42px 42px #fa5a46, -43px 43px #fa5a46, -44px 44px #fa5a46, -45px 45px #fa5a46, -46px 46px #fa5a46, -47px 47px #fa5a46, -48px 48px #fa5a46, -49px 49px #fa5a46, -50px 50px #fa5a46, -51px 51px #fa5a46, -52px 52px #fa5a46, -53px 53px #fa5a46, -54px 54px #fa5a46, -55px 55px #fa5a46, -56px 56px #fa5a46, -57px 57px #fa5a46, -58px 58px #fa5a46, -59px 59px #fa5a46, -60px 60px #fa5a46, -61px 61px #fa5a46, -62px 62px #fa5a46, -63px 63px #fa5a46, -64px 64px #fa5a46, -65px 65px #fa5a46, -66px 66px #fa5a46, -67px 67px #fa5a46, -68px 68px #fa5a46, -69px 69px #fa5a46, -70px 70px #fa5a46, -71px 71px #fa5a46, -72px 72px #fa5a46, -73px 73px #fa5a46, -74px 74px #fa5a46, -75px 75px #fa5a46, -76px 76px #fa5a46, -77px 77px #fa5a46, -78px 78px #fa5a46, -79px 79px #fa5a46, -80px 80px #fa5a46, -81px 81px #fa5a46, -82px 82px #fa5a46, -83px 83px #fa5a46, -84px 84px #fa5a46, -85px 85px #fa5a46;\n}\n.button-longshadow-left.button-caution:active, .button-longshadow-left.button-caution.active, .button-longshadow-left.button-caution.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-royal {\n    text-shadow: 0px 0px #1baa7d, -1px 1px #1baa7d, -2px 2px #1baa7d, -3px 3px #1baa7d, -4px 4px #1baa7d, -5px 5px #1baa7d, -6px 6px #1baa7d, -7px 7px #1baa7d, -8px 8px #1baa7d, -9px 9px #1baa7d, -10px 10px #1baa7d, -11px 11px #1baa7d, -12px 12px #1baa7d, -13px 13px #1baa7d, -14px 14px #1baa7d, -15px 15px #1baa7d, -16px 16px #1baa7d, -17px 17px #1baa7d, -18px 18px #1baa7d, -19px 19px #1baa7d, -20px 20px #1baa7d, -21px 21px #1baa7d, -22px 22px #1baa7d, -23px 23px #1baa7d, -24px 24px #1baa7d, -25px 25px #1baa7d, -26px 26px #1baa7d, -27px 27px #1baa7d, -28px 28px #1baa7d, -29px 29px #1baa7d, -30px 30px #1baa7d, -31px 31px #1baa7d, -32px 32px #1baa7d, -33px 33px #1baa7d, -34px 34px #1baa7d, -35px 35px #1baa7d, -36px 36px #1baa7d, -37px 37px #1baa7d, -38px 38px #1baa7d, -39px 39px #1baa7d, -40px 40px #1baa7d, -41px 41px #1baa7d, -42px 42px #1baa7d, -43px 43px #1baa7d, -44px 44px #1baa7d, -45px 45px #1baa7d, -46px 46px #1baa7d, -47px 47px #1baa7d, -48px 48px #1baa7d, -49px 49px #1baa7d, -50px 50px #1baa7d, -51px 51px #1baa7d, -52px 52px #1baa7d, -53px 53px #1baa7d, -54px 54px #1baa7d, -55px 55px #1baa7d, -56px 56px #1baa7d, -57px 57px #1baa7d, -58px 58px #1baa7d, -59px 59px #1baa7d, -60px 60px #1baa7d, -61px 61px #1baa7d, -62px 62px #1baa7d, -63px 63px #1baa7d, -64px 64px #1baa7d, -65px 65px #1baa7d, -66px 66px #1baa7d, -67px 67px #1baa7d, -68px 68px #1baa7d, -69px 69px #1baa7d, -70px 70px #1baa7d, -71px 71px #1baa7d, -72px 72px #1baa7d, -73px 73px #1baa7d, -74px 74px #1baa7d, -75px 75px #1baa7d, -76px 76px #1baa7d, -77px 77px #1baa7d, -78px 78px #1baa7d, -79px 79px #1baa7d, -80px 80px #1baa7d, -81px 81px #1baa7d, -82px 82px #1baa7d, -83px 83px #1baa7d, -84px 84px #1baa7d, -85px 85px #1baa7d;\n}\n.button-longshadow-left.button-royal:active, .button-longshadow-left.button-royal.active, .button-longshadow-left.button-royal.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n\n/*\n* Button Sizes\n*\n* This file creates the various button sizes\n* (ex. .button-large, .button-small, etc.)\n*/\n.button-giant {\n  font-size: 28px;\n  height: 70px;\n  line-height: 70px;\n  padding: 0 70px;\n}\n.button-jumbo {\n  font-size: 24px;\n  height: 60px;\n  line-height: 60px;\n  padding: 0 60px;\n}\n.button-large {\n  font-size: 20px;\n  height: 50px;\n  line-height: 50px;\n  padding: 0 50px;\n}\n.button-normal {\n  font-size: 16px;\n  height: 40px;\n  line-height: 40px;\n  padding: 0 40px;\n}\n.button-small {\n  font-size: 12px;\n  height: 30px;\n  line-height: 30px;\n  padding: 0 30px;\n}\n.button-tiny {\n  font-size: 9.6px;\n  height: 24px;\n  line-height: 24px;\n  padding: 0 24px;\n}\na:hover,\na:focus {\n  color: #000;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1421:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1422);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("b94321a8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./ladda-themeless.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./ladda-themeless.min.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1422:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * Ladda\r\n * http://lab.hakim.se/ladda\r\n * MIT licensed\r\n *\r\n * Copyright (C) 2014 Hakim El Hattab, http://hakim.se\r\n */\n.ladda-button{position:relative\n}\n.ladda-button .ladda-spinner{position:absolute;z-index:2;display:inline-block;width:32px;height:32px;top:50%;margin-top:0;opacity:0;pointer-events:none\n}\n.ladda-button .ladda-label{position:relative;z-index:3\n}\n.ladda-button .ladda-progress{position:absolute;width:0;height:100%;left:0;top:0;background:rgba(0,0,0,0.2);visibility:hidden;opacity:0;-webkit-transition:0.1s linear all !important;-moz-transition:0.1s linear all !important;-ms-transition:0.1s linear all !important;-o-transition:0.1s linear all !important;transition:0.1s linear all !important\n}\n.ladda-button[data-loading] .ladda-progress{opacity:1;visibility:visible\n}\n.ladda-button,.ladda-button .ladda-spinner,.ladda-button .ladda-label{-webkit-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-moz-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-ms-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-o-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important\n}\n.ladda-button[data-style=zoom-in],.ladda-button[data-style=zoom-in] .ladda-spinner,.ladda-button[data-style=zoom-in] .ladda-label,.ladda-button[data-style=zoom-out],.ladda-button[data-style=zoom-out] .ladda-spinner,.ladda-button[data-style=zoom-out] .ladda-label{-webkit-transition:0.3s ease all !important;-moz-transition:0.3s ease all !important;-ms-transition:0.3s ease all !important;-o-transition:0.3s ease all !important;transition:0.3s ease all !important\n}\n.ladda-button[data-style=expand-right] .ladda-spinner{right:-6px\n}\n.ladda-button[data-style=expand-right][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-right][data-size=\"xs\"] .ladda-spinner{right:-12px\n}\n.ladda-button[data-style=expand-right][data-loading]{padding-right:56px\n}\n.ladda-button[data-style=expand-right][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-right][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-right][data-loading][data-size=\"xs\"]{padding-right:40px\n}\n.ladda-button[data-style=expand-left] .ladda-spinner{left:26px\n}\n.ladda-button[data-style=expand-left][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-left][data-size=\"xs\"] .ladda-spinner{left:4px\n}\n.ladda-button[data-style=expand-left][data-loading]{padding-left:56px\n}\n.ladda-button[data-style=expand-left][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-left][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-left][data-loading][data-size=\"xs\"]{padding-left:40px\n}\n.ladda-button[data-style=expand-up]{overflow:hidden\n}\n.ladda-button[data-style=expand-up] .ladda-spinner{top:-32px;left:50%;margin-left:0\n}\n.ladda-button[data-style=expand-up][data-loading]{padding-top:54px\n}\n.ladda-button[data-style=expand-up][data-loading] .ladda-spinner{opacity:1;top:26px;margin-top:0\n}\n.ladda-button[data-style=expand-up][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-up][data-loading][data-size=\"xs\"]{padding-top:32px\n}\n.ladda-button[data-style=expand-up][data-loading][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-up][data-loading][data-size=\"xs\"] .ladda-spinner{top:4px\n}\n.ladda-button[data-style=expand-down]{overflow:hidden\n}\n.ladda-button[data-style=expand-down] .ladda-spinner{top:62px;left:50%;margin-left:0\n}\n.ladda-button[data-style=expand-down][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-down][data-size=\"xs\"] .ladda-spinner{top:40px\n}\n.ladda-button[data-style=expand-down][data-loading]{padding-bottom:54px\n}\n.ladda-button[data-style=expand-down][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-down][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-down][data-loading][data-size=\"xs\"]{padding-bottom:32px\n}\n.ladda-button[data-style=slide-left]{overflow:hidden\n}\n.ladda-button[data-style=slide-left] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-left] .ladda-spinner{left:100%;margin-left:0\n}\n.ladda-button[data-style=slide-left][data-loading] .ladda-label{opacity:0;left:-100%\n}\n.ladda-button[data-style=slide-left][data-loading] .ladda-spinner{opacity:1;left:50%\n}\n.ladda-button[data-style=slide-right]{overflow:hidden\n}\n.ladda-button[data-style=slide-right] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-right] .ladda-spinner{right:100%;margin-left:0;left:16px\n}\n.ladda-button[data-style=slide-right][data-loading] .ladda-label{opacity:0;left:100%\n}\n.ladda-button[data-style=slide-right][data-loading] .ladda-spinner{opacity:1;left:50%\n}\n.ladda-button[data-style=slide-up]{overflow:hidden\n}\n.ladda-button[data-style=slide-up] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-up] .ladda-spinner{left:50%;margin-left:0;margin-top:1em\n}\n.ladda-button[data-style=slide-up][data-loading] .ladda-label{opacity:0;top:-1em\n}\n.ladda-button[data-style=slide-up][data-loading] .ladda-spinner{opacity:1;margin-top:0\n}\n.ladda-button[data-style=slide-down]{overflow:hidden\n}\n.ladda-button[data-style=slide-down] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-down] .ladda-spinner{left:50%;margin-left:0;margin-top:-2em\n}\n.ladda-button[data-style=slide-down][data-loading] .ladda-label{opacity:0;top:1em\n}\n.ladda-button[data-style=slide-down][data-loading] .ladda-spinner{opacity:1;margin-top:0\n}\n.ladda-button[data-style=zoom-out]{overflow:hidden\n}\n.ladda-button[data-style=zoom-out] .ladda-spinner{left:50%;margin-left:32px;-webkit-transform:scale(2.5);-moz-transform:scale(2.5);-ms-transform:scale(2.5);-o-transform:scale(2.5);transform:scale(2.5)\n}\n.ladda-button[data-style=zoom-out] .ladda-label{position:relative;display:inline-block\n}\n.ladda-button[data-style=zoom-out][data-loading] .ladda-label{opacity:0;-webkit-transform:scale(0.5);-moz-transform:scale(0.5);-ms-transform:scale(0.5);-o-transform:scale(0.5);transform:scale(0.5)\n}\n.ladda-button[data-style=zoom-out][data-loading] .ladda-spinner{opacity:1;margin-left:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none\n}\n.ladda-button[data-style=zoom-in]{overflow:hidden\n}\n.ladda-button[data-style=zoom-in] .ladda-spinner{left:50%;margin-left:-16px;-webkit-transform:scale(0.2);-moz-transform:scale(0.2);-ms-transform:scale(0.2);-o-transform:scale(0.2);transform:scale(0.2)\n}\n.ladda-button[data-style=zoom-in] .ladda-label{position:relative;display:inline-block\n}\n.ladda-button[data-style=zoom-in][data-loading] .ladda-label{opacity:0;-webkit-transform:scale(2.2);-moz-transform:scale(2.2);-ms-transform:scale(2.2);-o-transform:scale(2.2);transform:scale(2.2)\n}\n.ladda-button[data-style=zoom-in][data-loading] .ladda-spinner{opacity:1;margin-left:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none\n}\n.ladda-button[data-style=contract]{overflow:hidden;width:100px\n}\n.ladda-button[data-style=contract] .ladda-spinner{left:50%;margin-left:0\n}\n.ladda-button[data-style=contract][data-loading]{border-radius:50%;width:52px\n}\n.ladda-button[data-style=contract][data-loading] .ladda-label{opacity:0\n}\n.ladda-button[data-style=contract][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=contract-overlay]{overflow:hidden;width:100px;box-shadow:0px 0px 0px 2000px transparent\n}\n.ladda-button[data-style=contract-overlay] .ladda-spinner{left:50%;margin-left:0\n}\n.ladda-button[data-style=contract-overlay][data-loading]{border-radius:50%;width:52px;box-shadow:0px 0px 0px 2000px rgba(0,0,0,0.8)\n}\n.ladda-button[data-style=contract-overlay][data-loading] .ladda-label{opacity:0\n}\n.ladda-button[data-style=contract-overlay][data-loading] .ladda-spinner{opacity:1\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1423:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1424);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("3de2f043", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./advbuttons.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./advbuttons.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1424:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* flatbuttons */\nli {\n    list-style : none;\n}\n.flatbuttons {\n    padding-left : 4%;\n}\n.flatbuttons ul {\n    padding : 20px;\n}\n.flatbuttons ul li {\n    width      : 145px;\n    float      : left;\n    padding    : 5px;\n    list-style : none;\n}\n.flatbuttons div {\n    clear          : both;\n    padding-top    : 15px;\n    padding-bottom : 0;\n}\n.btn-rounded .button {\n    padding : 0 18px;\n}\n.flatbuttons .icon-btn {\n    padding : 0 29px;\n}\n/* flatbuttons for small width. */\n.flatbuttons_small ul li {\n    width   : 138px;\n    float   : left;\n    padding : 10px 20px 20px 0;\n}\n/*quick icons*/\n.panel-body .btn:not(.btn-block) {\n    margin-bottom : 10px;\n}\n/*Group buttons panel*/\n.ui-group-buttons .or {\n    position  : relative;\n    float     : left;\n    width     : .3em;\n    height    : 1.3em;\n    z-index   : 3;\n    font-size : 12px\n}\n.ui-group-buttons .or:before {\n    position           : absolute;\n    top                : 50%;\n    left               : 50%;\n    content            : 'or';\n    background-color   : #5a5a5a;\n    margin-top         : -.1em;\n    margin-left        : -.9em;\n    width              : 1.8em;\n    height             : 1.8em;\n    line-height        : 1.55;\n    color              : #fff;\n    font-style         : normal;\n    font-weight        : 400;\n    text-align         : center;\n    border-radius      : 500px;\n    -webkit-box-shadow : 0 0 0 1px rgba(0, 0, 0, 0.1);\n    box-shadow         : 0 0 0 1px rgba(0, 0, 0, 0.1);\n    -webkit-box-sizing : border-box;\n    -moz-box-sizing    : border-box;\n    box-sizing         : border-box\n}\n.ui-group-buttons .or:after {\n    position         : absolute;\n    top              : 0;\n    left             : 0;\n    content          : ' ';\n    width            : .3em;\n    height           : 2.84em;\n    background-color : rgba(0, 0, 0, 0);\n    border-top       : .6em solid #5a5a5a;\n    border-bottom    : .6em solid #5a5a5a\n}\n.ui-group-buttons .or.or-lg {\n    height    : 1.3em;\n    font-size : 16px\n}\n.ui-group-buttons .or.or-lg:after {\n    height : 2.85em\n}\n.ui-group-buttons .or.or-sm {\n    height : 1em\n}\n.ui-group-buttons .or.or-sm:after {\n    height : 2.5em\n}\n.ui-group-buttons .or.or-xs {\n    height : .25em\n}\n.ui-group-buttons .or.or-xs:after {\n    height  : 1.84em;\n    z-index : -1000\n}\n.ui-group-buttons {\n    display        : inline-block;\n    vertical-align : middle\n}\n.ui-group-buttons:after {\n    content    : \".\";\n    display    : block;\n    height     : 0;\n    clear      : both;\n    visibility : hidden\n}\n.ui-group-buttons .btn {\n    float         : left;\n    border-radius : 0\n}\n.ui-group-buttons .btn:first-child {\n    margin-left               : 0;\n    border-top-left-radius    : .25em;\n    border-bottom-left-radius : .25em;\n    padding-right             : 15px\n}\n.ui-group-buttons .btn:last-child {\n    border-top-right-radius    : .25em;\n    border-bottom-right-radius : .25em;\n    padding-left               : 15px\n}\n/*Group buttons panel ens here*/\n\n/*Buttons With Labels*/\n.btn-label {\n    position   : relative;\n    left       : -12px;\n    display    : inline-block;\n    padding    : 6px 15px;\n    background : rgba(0, 0, 0, 0.15);\n    /*border-radius: 3px 0 0 3px;*/\n}\n.btn-label.label-right {\n    left : 13px;\n}\n.btn-labeled {\n    padding-top    : 0;\n    padding-bottom : 0;\n}\n.btn_3d {\n    box-shadow : 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2) !important;\n}\n.button-circle {\n    width  : 115px;\n    height : 115px;\n}\n/*outline buttons*/\n.flatbuttons button {\n    margin-top : 20px;\n}\n.btn-up:before {\n    left                : 11%;\n    top                 : 373px;\n    margin-left         : -8px;\n    border-bottom-color : #6699cc;\n}\n.btn-direction:before {\n    position    : absolute;\n    line-height : 0;\n    content     : '';\n    border      : 8px solid transparent;\n}\n.btn-primary.btn-up:before {\n    border-bottom-color : #6699cc;\n}\n.btn-warning.btn-right:focus:before,\n.btn-warning.btn-right:hover:before {\n    border-left-color : #f0ad4e;\n}\n.btn-warning.btn-right:before {\n    border-left-color : #f0ad4e;\n}\n.btn-right:before {\n    top               : 56%;\n    left              : 33%;\n    margin-top        : -8px;\n    border-left-color : #e4eaec;\n}\n.btn-success.btn-bottom:before {\n    border-top-color : #66cc99;\n}\n.btn-bottom:before {\n    bottom           : 39.1%;\n    left             : 47%;\n    margin-left      : -8px;\n    border-top-color : #66cc99;\n}\n.btn-danger.btn-left:before {\n    border-right-color : #ff6666;\n}\n.btn-left:before {\n    top                : 56%;\n    left               : 58.8%;\n    margin-top         : -8px;\n    border-right-color : #ff6666;\n}\n/*animate button*/\n.btn-animate-side:hover span > .icon {\n    opacity : 1;\n}\n.btn-animate-side span > .icon {\n    position           : absolute;\n    top                : 91%;\n    left               : 90px;\n    display            : block;\n    opacity            : 0;\n    -webkit-transition : opacity .2s ease-out 0s;\n    -o-transition      : opacity .2s ease-out 0s;\n    transition         : opacity .2s ease-out 0s;\n    -webkit-transform  : translate(-20px, -50%);\n    -ms-transform      : translate(-20px, -50%);\n    -o-transform       : translate(-20px, -50%);\n    transform          : translate(-20px, -50%);\n}\n.btn-animate-vertical:hover span > .icon {\n    opacity : 1;\n}\n.btn-animate-vertical span > .icon {\n    position          : absolute;\n    top               : inherit;\n    left              : 33%;\n    display           : block;\n    font-size         : 24px;\n    -webkit-transform : translate(-50%, -100%);\n    -ms-transform     : translate(-50%, -100%);\n    -o-transform      : translate(-50%, -100%);\n    transform         : translate(-50%, -100%);\n}\n.btn .icon {\n    width       : 1em;\n    margin      : -1px 3px 0;\n    line-height : inherit;\n    text-align  : center;\n}\n.btn-animate span {\n    display : block;\n    width   : 100%;\n    height  : 100%;\n}\n.btn-animate-side span:hover {\n    -webkit-transition : -webkit-transform .2s ease-out 0s;\n    -o-transition      : -o-transform .2s ease-out 0s;\n    transition         : transform .2s ease-out 0s;\n}\n.btn-animate-side:hover {\n    padding : 8px 28px;\n}\n/* vertical animation code*/\n.btn-animate-vertical span {\n    -webkit-transition : all .2s ease-out 0s;\n    -o-transition      : all .2s ease-out 0s;\n    transition         : all .2s ease-out 0s;\n}\n.btn-animate-vertical:focus,\n.btn-animate-vertical:active,\n.btn-animate-vertical:hover {\n    outline : none;\n}\n.btn-animate-vertical span > .icon {\n    opacity           : 0;\n    position          : absolute;\n    top               : -2px;\n    left              : 50%;\n    display           : block;\n    font-size         : 24px;\n    -webkit-transform : translate(-50%, -100%);\n    -ms-transform     : translate(-50%, -100%);\n    -o-transform      : translate(-50%, -100%);\n    transform         : translate(-50%, -100%);\n}\n.btn-animate-vertical:hover span {\n    -webkit-transform : translate(0, 150%);\n    -ms-transform     : translate(0, 150%);\n    -o-transform      : translate(0, 150%);\n    transform         : translate(0, 150%)\n}\n.btn-animate-vertical.btn-xs span > .icon {\n    top       : -5px;\n    font-size : 18px\n}\n.btn-animate-vertical.btn-sm span > .icon {\n    top       : -3px;\n    font-size : 21px\n}\n.btn-animate-vertical.btn-lg span > .icon {\n    font-size : 37px\n}\n/*side animation code*/\n.btn-animate-side {\n    padding : 8px 28px\n}\n.btn-animate-side span {\n    -webkit-transition : -webkit-transform .2s ease-out 0s;\n    -o-transition      : -o-transform .2s ease-out 0s;\n    transition         : transform .2s ease-out 0s\n}\n.btn-animate-side span > .icon {\n    position           : absolute;\n    top                : 50%;\n    left               : 0;\n    display            : block;\n    opacity            : 0;\n    -webkit-transition : opacity .2s ease-out 0s;\n    -o-transition      : opacity .2s ease-out 0s;\n    transition         : opacity .2s ease-out 0s;\n    -webkit-transform  : translate(-20px, -50%);\n    -ms-transform      : translate(-20px, -50%);\n    -o-transform       : translate(-20px, -50%);\n    transform          : translate(-20px, -50%)\n}\n.btn-animate-side:hover span {\n    -webkit-transform : translate(10px, 0);\n    -ms-transform     : translate(10px, 0);\n    -o-transform      : translate(10px, 0);\n    transform         : translate(10px, 0)\n}\n.btn-animate-side:hover span > .icon {\n    opacity : 1\n}\n.btn-animate-side.btn-xs {\n    padding : 3px 14px\n}\n.btn-animate-side.btn-xs span > .icon {\n    left : 5px\n}\n.btn-animate-side.btn-xs:hover span {\n    -webkit-transform : translate(8px, 0);\n    -ms-transform     : translate(8px, 0);\n    -o-transform      : translate(8px, 0);\n    transform         : translate(8px, 0)\n}\n.btn-animate-side.btn-sm {\n    padding : 6px 22px\n}\n.btn-animate-side.btn-sm span > .icon {\n    left : 3px\n}\n.btn-animate-side.btn-sm:hover span {\n    -webkit-transform : translate(8px, 0);\n    -ms-transform     : translate(8px, 0);\n    -o-transform      : translate(8px, 0);\n    transform         : translate(8px, 0)\n}\n.btn-animate-side.btn-lg {\n    padding : 10px 33px\n}\n.btn-animate-side.btn-lg span > .icon {\n    left : -6px\n}\n.btn-animate-side.btn-lg:hover span {\n    -webkit-transform : translate(14px, 0);\n    -ms-transform     : translate(14px, 0);\n    -o-transform      : translate(14px, 0);\n    transform         : translate(14px, 0)\n}\n.btn-floating {\n    width              : 56px;\n    height             : 56px;\n    padding            : 0;\n    margin             : 0;\n    font-size          : 24px;\n    text-align         : center;\n    border-radius      : 100%;\n    -webkit-box-shadow : 0 6px 10px rgba(0, 0, 0, .15);\n    box-shadow         : 0 6px 10px rgba(0, 0, 0, .15);\n}\n.btn-floating.btn-sm {\n    width     : 40px;\n    height    : 40px;\n    padding   : 0;\n    font-size : 15px;\n}\n/*contract overlay button size*/\n.ladda-button[data-style=contract-overlay] {\n    width : 140px;\n}\n.pad_left {\n    padding-left : 40px;\n}\n.flatbuttons div {\n    padding-top : 10px;\n}\n.m-r-50 {\n    margin-right : 50px;\n}\n.btn-group.drop_btn {\n    padding-top : 0;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1425:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1426);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("c0d6d792", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=4!./buttons.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=4!./buttons.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1426:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.ladda-spinner div {\n    top: 5px !important;\n    left: 5px !important;\n}\n.quick_shortcuts .btn-responsive,.quick_shortcuts .btn-block {\n    margin-top: 0.5rem;\n}\n.ui-group-buttons .btn-default{\n    background-color: #ccc;\n}\n.example-buttons .btn{\n    padding: 0.6rem 1.25rem;\n    font-size: 1.1rem;\n}\n.hvr-buzz{\n    padding-right: 40px;\n    padding-left: 40px;\n    color: #666;\n}\n.ui-group-buttons .or-lg:before{\n        width:1.5em;\n        height:1.5em;\n        top: 7px;\n        left:85%;\n}\n.ui-group-buttons .or-lg:after{\n        height:2.75rem !important;\n}\n.or-sm:after{\n        border-bottom: 2rem solid #5a5a5a !important;\n}\n.pad_left .ladda-button{\n        margin-bottom: 10px;\n}\n.flatbuttons  .hvr-buzz:hover{\n        color: #333;\n}\n.button:active,.btn:active,.btn-success:focus,.ui-group-buttons .btn-default,.ui-group-buttons a{\n        color:#fff !important;\n}\n.button-default:active,.hvr-buzz:active,.btn-default.text-dark:active{\n        color: #333 !important;\n}\n.btn-animate-vertical{\n        padding: 8px 12px;\n}\n.ui-group-buttons .or:after{\n        height:2.75em;\n}\n.ui-group-buttons .or.or-sm{\n        height: 1.4em;\n}\n@media(max-width: 1024px){\n.boxed .pad_left{\n            padding-left: 0;\n}\n.boxed .pad_left .text-left .col-md-2,.boxed .pad_left .text-left .col-sm-4{\n            padding-left: 13px;\n            padding-right: 13px;\n            margin-right: 10px;\n}\n.labled_buttons .col-md-6{\n            margin-right: 10px;\n}\n}\n.btn-labeled{\n        margin-bottom: 10px;\n}\n.flatbuttons ul{\n        padding-top: 0;\n}\n.flatbuttons button{\n        margin-top: 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1427:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__ = __webpack_require__(661);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__ = __webpack_require__(662);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__ = __webpack_require__(1726);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__ = __webpack_require__(663);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__ = __webpack_require__(664);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__ = __webpack_require__(1727);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__ = __webpack_require__(1728);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__ = __webpack_require__(1729);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js__ = __webpack_require__(1428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -149,2635 +837,568 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-
-
-
-
-
+var Ladda = __webpack_require__(1429);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "flot_charts",
+    name: "buttons",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     mounted: function mounted() {
         "use strict";
+        //INITIALIZE PAGE
+        // Bind normal buttons
 
-        $(document).ready(function () {
-            /* line chart */
+        Ladda.bind('.button_normal', {
+            timeout: 3000
+        });
 
-            function showTooltipStats(x, y, contents) {
-                $('<div id="tooltip" class="tooltipflot">' + contents + '</div>').css({
-                    position: 'absolute',
-                    display: 'none',
-                    top: y + 5,
-                    left: x + 5
-                }).appendTo("body").fadeIn(200);
+        // Bind progress buttons and simulate loading progress
+        Ladda.bind('.button_progress', {
+            callback: function callback(instance) {
+                var progress = 0;
+                var interval = setInterval(function () {
+                    progress = Math.min(progress + Math.random() * 0.1, 1);
+                    instance.setProgress(progress);
+
+                    if (progress === 1) {
+                        instance.stop();
+                        clearInterval(interval);
+                    }
+                }, 200);
             }
-
-            var sales = [[0, 5], [1, 30], [2, 10], [3, 15], [4, 30], [5, 5], [6, 12], [7, 10], [8, 55], [9, 13], [10, 25], [11, 10], [12, 12], [13, 6], [14, 40], [15, 5], [16, 5]];
-            var profit = [[0, 3], [1, 20], [2, 5], [3, 2], [4, 20], [5, 3], [6, 2], [7, 0], [8, 3], [9, 1], [10, 0], [11, 1], [12, 0], [13, 2], [14, 1], [15, 20], [16, 5]];
-
-            var plot_id = $("#basicflot");
-            var plot = $.plot(plot_id, [{
-                data: sales,
-                label: "Sales",
-                color: "#6699cc"
-            }, {
-                data: profit,
-                label: "Profit",
-                color: "#ff6666",
-                opacity: "1"
-            }], {
-                series: {
-                    lines: {
-                        show: false
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2
-                },
-                legend: {
-                    container: '#basicFlotLegend1',
-                    noColumns: 0
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true,
-                    borderColor: '#ddd',
-                    borderWidth: 0,
-                    labelMargin: 5,
-                    backgroundColor: '#fff'
-                },
-                colors: ["#6699cc", "#ff6666"],
-                xaxis: {},
-                yaxis: {
-                    ticks: 4
-                }
-            });
-
-            var previousPoint1 = null;
-            plot_id.bind("plothover", function (event, pos, item) {
-                $("#x").text(pos.x.toFixed(2));
-                $("#y").text(pos.y.toFixed(2));
-
-                if (item) {
-                    if (previousPoint1 != item.dataIndex) {
-                        previousPoint1 = item.dataIndex;
-
-                        $("#tooltip").remove();
-                        var x = item.datapoint[0].toFixed(2),
-                            y = item.datapoint[1].toFixed(2);
-
-                        showTooltipStats(item.pageX, item.pageY, item.series.label + " on " + parseInt(x) + " = " + parseInt(y));
-                    }
-                } else {
-                    $("#tooltip").remove();
-                    previousPoint1 = null;
-                }
-            }).bind("plotclick", function (event, pos, item) {
-                if (item) {
-                    plot.highlight(item.series, item.datapoint);
-                }
-            });
-
-            //line chart start
-            $(function () {
-
-                var d1, d2, data, Options;
-
-                d1 = [[1262304000000, 100], [1264982400000, 560], [1267401600000, 1605], [1270080000000, 1129], [1272672000000, 2163], [1275350400000, 1905], [1277942400000, 2002], [1280620800000, 2917], [1283299200000, 2700], [1285891200000, 2700], [1288569600000, 2100], [1291161600000, 2700]];
-
-                d2 = [[1262304000000, 434], [1264982400000, 232], [1267401600000, 875], [1270080000000, 553], [1272672000000, 975], [1275350400000, 1379], [1277942400000, 789], [1280620800000, 1026], [1283299200000, 1240], [1285891200000, 1892], [1288569600000, 1147], [1291161600000, 2256]];
-
-                data = [{
-                    label: "Total visitors",
-                    data: d1,
-                    color: "#66cc99"
-                }, {
-                    label: "Total Sales",
-                    data: d2,
-                    color: "#f0ad4e"
-                }];
-
-                Options = {
-                    xaxis: {
-                        min: new Date(2009, 12, 1).getTime(),
-                        max: new Date(2010, 11, 2).getTime(),
-                        mode: "time",
-                        tickSize: [1, "month"],
-                        monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-                        tickLength: 0
-                    },
-                    yaxis: {},
-                    series: {
-                        lines: {
-                            show: true,
-                            fill: false,
-                            lineWidth: 2
-                        },
-                        points: {
-                            show: true,
-                            radius: 4.5,
-                            fill: true,
-                            fillColor: "#ffffff",
-                            lineWidth: 2
-                        }
-                    },
-                    grid: {
-                        hoverable: true,
-                        clickable: false,
-                        borderWidth: 0
-                    },
-                    legend: {
-                        container: '#basicFlotLegend',
-                        show: true
-                    },
-
-                    tooltip: true,
-                    tooltipOpts: {
-                        content: '%s: %y'
-                    }
-
-                };
-
-                var holder = $('#line-chart');
-
-                if (holder.length) {
-                    $.plot(holder, data, Options);
-                }
-            });
-            //line chart end
-
-            //start bar chart
-            var d1 = [["1", 100], ["2", 80], ["3", 66], ["4", 48], ["5", 68], ["6", 48], ["7", 66], ["8", 80], ["9", 64], ["10", 48], ["11", 64], ["12", 100]];
-            $.plot("#bar-chart", [{
-                data: d1,
-                label: "Project",
-                color: "#dcdcdc"
-            }], {
-                series: {
-                    bars: {
-                        align: "center",
-                        lineWidth: 0,
-                        show: !0,
-                        barWidth: .6,
-                        fill: .9
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                legend: {
-                    container: '#basicFlotLegend-barchart',
-                    show: true
-                },
-                tooltip: true,
-                tooltipOpts: {
-                    content: '%s: %y'
-                },
-
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end bar chart
-
-            //start bar stack
-            var d11 = [["Jan", 130], ["Feb", 63], ["Mar", 104], ["Apr", 54], ["May", 92], ["Jun", 150], ["Jul", 50], ["Aug", 80], ["Sep", 120], ["Oct", 91], ["Nov", 79], ["Dec", 112]];
-            var d12 = [["Jan", 58], ["Feb", 30], ["Mar", 46], ["Apr", 35], ["May", 55], ["Jun", 46], ["Jul", 20], ["Aug", 50], ["Sep", 50], ["Oct", 40], ["Nov", 35], ["Dec", 57]];
-            $.plot("#bar-chart-stacked", [{
-                data: d11,
-                label: "New Visitor",
-                color: "#6699cc"
-            }, {
-                data: d12,
-                label: "Returning Visitor",
-                color: "#66cc99"
-            }], {
-                series: {
-                    stack: !0,
-                    bars: {
-                        align: "center",
-                        lineWidth: 0,
-                        show: !0,
-                        barWidth: .6,
-                        fill: .9
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                legend: {
-                    container: '#basicFlotLegend-stac',
-                    show: true
-                },
-                tooltip: !0,
-                tooltipOpts: {
-                    content: "%x : %y",
-                    defaultTheme: false
-                },
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end bar chart stack
-            //donut
-            var datax = [{
-                label: "Google+",
-                data: 180,
-                color: '#ff6666'
-            }, {
-                label: "Profile",
-                data: 150,
-                color: '#f0ad4e'
-            }, {
-                label: "Facebook ",
-                data: 130,
-                color: '#6699cc'
-            }, {
-                label: "Twitter ",
-                data: 190,
-                color: '#66ccff'
-            }, {
-                label: "Linkedin",
-                data: 120,
-                color: '#6699cc'
-            }];
-
-            $.plot($("#donut"), datax, {
-                series: {
-                    pie: {
-                        innerRadius: 0.5,
-                        show: true
-                    }
-                },
-                legend: {
-                    show: false
-                },
-                grid: {
-                    hoverable: true
-                },
-                tooltip: true,
-                tooltipOpts: {
-                    content: "%p.0%, %s"
-                }
-
-            });
-            /*END OF DONUT CHART */
-
-            /* PIE CHART  START*/
-
-            $(function () {
-                var data = [],
-                    series = Math.floor(Math.random() * 6) + 3;
-
-                for (var i = 0; i < series; i++) {
-                    data[i] = {
-                        label: "Series" + (i + 1),
-                        data: Math.floor(Math.random() * 100) + 1
-                    };
-                }
-                $.plot("#placeholdertranslabel", data, {
-                    series: {
-                        pie: {
-                            show: true,
-                            radius: 1,
-                            label: {
-                                show: true,
-                                radius: 1,
-                                formatter: labelFormatter,
-                                background: {
-                                    opacity: 0.8
-                                }
-                            }
-                        }
-                    },
-                    legend: {
-                        show: false
-                    },
-                    colors: ['#6699cc', '#f0ad4e', '#66ccff', '#dcdcdc']
-                });
-
-                $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
-            });
-
-            function labelFormatter(label, series) {
-                return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
-            }
-
-            //end of transparent label pie charts
-
-
-            $(function () {
-                var data = [],
-                    series = Math.floor(Math.random() * 6) + 3;
-
-                for (var i = 0; i < series; i++) {
-                    data[i] = {
-                        label: "Series" + (i + 1),
-                        data: Math.floor(Math.random() * 100) + 1
-                    };
-                }
-                $.plot('#placeholdertiltedpie', data, {
-                    series: {
-                        pie: {
-                            show: true,
-                            radius: 1,
-                            tilt: 0.5,
-                            label: {
-                                show: true,
-                                radius: 1,
-                                formatter: labelFormatter,
-                                background: {
-                                    opacity: 0.8
-                                }
-                            },
-                            combine: {
-                                color: "#999",
-                                threshold: 0.1
-                            }
-                        }
-                    },
-                    legend: {
-                        show: false
-                    },
-                    colors: ['#DCDCDC', '#f0ad4e', '#6699cc', '#66ccff']
-                });
-
-                $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
-            });
-
-            /* server load  */
-
-            var data = [],
-                totalPoints = 300;
-
-            function getRandomData() {
-                if (data.length > 0) data = data.slice(1);
-
-                // do a random walk
-                while (data.length < totalPoints) {
-                    var prev = data.length > 0 ? data[data.length - 1] : 50;
-                    var y = prev + Math.random() * 10 - 5;
-                    if (y < 0) y = 0;
-                    if (y > 100) y = 100;
-                    data.push(y);
-                }
-
-                // zip the generated y values with the x values
-                var res = [];
-                for (var i = 0; i < data.length; ++i) {
-                    res.push([i, data[i]]);
-                }return res;
-            }
-
-            // setup control widget
-            var updateInterval = 50;
-
-            // setup plot
-            var options = {
-                colors: ["#66ccff"],
-                series: {
-                    shadowSize: 0,
-                    lines: {
-                        show: true,
-                        fill: true,
-                        fillColor: {
-                            colors: [{
-                                opacity: 0.5
-                            }, {
-                                opacity: 0.5
-                            }]
-                        }
-                    }
-                },
-                yaxis: {
-                    min: 0,
-                    max: 120
-                },
-                xaxis: {
-                    show: false
-                },
-                grid: {
-                    backgroundColor: '#fff',
-                    borderWidth: 1,
-                    borderColor: '#fff'
-                }
-            };
-
-            var plot4 = $.plot($("#realtime"), [getRandomData()], options);
-
-            function update() {
-                plot4.setData([getRandomData()]);
-                // since the axes don't change, we don't need to call plot.setupGrid()
-                plot4.draw();
-                setTimeout(update, updateInterval);
-            }
-
-            update();
-            //start area chart
-
-            var da1 = [["Jan", 50], ["Feb", 80], ["Mar", 60], ["Apr", 90], ["May", 60], ["Jun", 80], ["Jul", 80]];
-            var da2 = [["Jan", 20], ["Feb", 40], ["Mar", 30], ["Apr", 40], ["May", 30], ["Jun", 30], ["Jul", 50]];
-            $.plot("#area-chart", [{
-                data: da1,
-                label: "Product 1",
-                color: "#66ccff"
-            }, {
-                data: da2,
-                label: "product 2",
-                color: "#f0ad4e"
-            }], {
-                series: {
-                    lines: {
-                        show: !0,
-                        fill: .8
-                    },
-                    points: {
-                        show: !0,
-                        radius: 4
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                tooltip: !0,
-                tooltipOpts: {
-                    content: "%x : %y",
-                    defaultTheme: false
-                },
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end  area chart
-            //start spline area chart
-            var ds1 = [["Jan", 50], ["Feb", 80], ["Mar", 60], ["Apr", 90], ["May", 60], ["Jun", 80], ["Jul", 70]];
-            var ds2 = [["Jan", 20], ["Feb", 40], ["Mar", 30], ["Apr", 40], ["May", 30], ["Jun", 30], ["Jul", 50]];
-            $.plot("#chart-spline", [{
-                data: ds1,
-                label: "Product 1",
-                color: "#DCDCDC"
-            }, {
-                data: ds2,
-                label: "Product 2",
-                color: "#66ccff"
-            }], {
-                series: {
-                    lines: {
-                        show: !1
-                    },
-                    splines: {
-                        show: !0,
-                        tension: .4,
-                        lineWidth: 2,
-                        fill: .8
-                    },
-                    points: {
-                        show: !0,
-                        radius: 4
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                tooltip: !0,
-                tooltipOpts: {
-                    content: "%x : %y",
-                    defaultTheme: false
-                },
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end spline area chart
         });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(520)))
 
 /***/ }),
 
-/***/ 1726:
+/***/ 1428:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for plotting textual data or categories.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-Consider a dataset like [["February", 34], ["March", 20], ...]. This plugin
-allows you to plot such a dataset directly.
-
-To enable it, you must specify mode: "categories" on the axis with the textual
-labels, e.g.
-
-	$.plot("#placeholder", data, { xaxis: { mode: "categories" } });
-
-By default, the labels are ordered as they are met in the data series. If you
-need a different ordering, you can specify "categories" on the axis options
-and list the categories there:
-
-	xaxis: {
-		mode: "categories",
-		categories: ["February", "March", "April"]
-	}
-
-If you need to customize the distances between the categories, you can specify
-"categories" as an object mapping labels to values
-
-	xaxis: {
-		mode: "categories",
-		categories: { "February": 1, "March": 3, "April": 4 }
-	}
-
-If you don't specify all categories, the remaining categories will be numbered
-from the max value plus 1 (with a spacing of 1 between each).
-
-Internally, the plugin works by transforming the input data through an auto-
-generated mapping where the first category becomes 0, the second 1, etc.
-Hence, a point like ["February", 34] becomes [0, 34] internally in Flot (this
-is visible in hover and click events that return numbers rather than the
-category labels). The plugin also overrides the tick generator to spit out the
-categories as ticks instead of the values.
-
-If you need to map a value back to its label, the mapping is always accessible
-as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
-
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*! @license
+*  Project: Buttons
+*  Description: A highly customizable CSS button library built with Sass and Compass
+*  Author: Alex Wolfe and Rob Levin
+*  License: Apache License v2.0
 */
 
-(function ($) {
-    var options = {
-        xaxis: {
-            categories: null
-        },
-        yaxis: {
-            categories: null
-        }
-    };
-    
-    function processRawData(plot, series, data, datapoints) {
-        // if categories are enabled, we need to disable
-        // auto-transformation to numbers so the strings are intact
-        // for later processing
 
-        var xCategories = series.xaxis.options.mode == "categories",
-            yCategories = series.yaxis.options.mode == "categories";
-        
-        if (!(xCategories || yCategories))
-            return;
+// the semi-colon before function invocation is a safety net against concatenated
+// scripts and/or other plugins which may not be closed properly.
+;(function ( $, window, document, undefined ) {
+  'use strict';
 
-        var format = datapoints.format;
+  // undefined is used here as the undefined global variable in ECMAScript 3 is
+  // mutable (ie. it can be changed by someone else). undefined isn't really being
+  // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
+  // can no longer be modified.
 
-        if (!format) {
-            // FIXME: auto-detection should really not be defined here
-            var s = series;
-            format = [];
-            format.push({ x: true, number: true, required: true });
-            format.push({ y: true, number: true, required: true });
+  // window and document are passed through as local variable rather than global
+  // as this (slightly) quickens the resolution process and can be more efficiently
+  // minified (especially when both are regularly referenced in your plugin).
 
-            if (s.bars.show || (s.lines.show && s.lines.fill)) {
-                var autoscale = !!((s.bars.show && s.bars.zero) || (s.lines.show && s.lines.zero));
-                format.push({ y: true, number: true, required: false, defaultValue: 0, autoscale: autoscale });
-                if (s.bars.horizontal) {
-                    delete format[format.length - 1].y;
-                    format[format.length - 1].x = true;
-                }
-            }
-            
-            datapoints.format = format;
-        }
+  // Create the defaults once
+  var pluginName = "menuButton";
+  var menuClass = ".button-dropdown";
+  var defaults = {
+    propertyName: "value"
+  };
 
-        for (var m = 0; m < format.length; ++m) {
-            if (format[m].x && xCategories)
-                format[m].number = false;
-            
-            if (format[m].y && yCategories)
-                format[m].number = false;
-        }
+  // The actual plugin constructor
+  function Plugin( element, options ) {
+
+    //SET OPTIONS
+    this.options = $.extend( {}, defaults, options );
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    //REGISTER ELEMENT
+    this.$element = $(element);
+
+    //INITIALIZE
+    this.init();
+  }
+
+  Plugin.prototype = {
+    constructor: Plugin,
+
+    init: function() {
+      // WE DON'T STOP PROPGATION SO CLICKS WILL AUTOMATICALLY
+      // TOGGLE AND REMOVE THE DROPDOWN
+      this.toggle();
+    },
+
+    toggle: function(el, options) {
+      if(this.$element.data('dropdown') === 'show') {
+        this.hideMenu();
+      }
+      else {
+        this.showMenu();
+      }
+    },
+
+    showMenu: function() {
+      this.$element.data('dropdown', 'show');
+      this.$element.find('ul').show();
+      this.$element.find('.button:first').addClass('is-active');
+    },
+
+    hideMenu: function() {
+      this.$element.data('dropdown', 'hide');
+      this.$element.find('ul').hide();
+      this.$element.find('.button:first').removeClass('is-active');
     }
+  };
 
-    function getNextIndex(categories) {
-        var index = -1;
-        
-        for (var v in categories)
-            if (categories[v] > index)
-                index = categories[v];
+  // A really lightweight plugin wrapper around the constructor,
+  // preventing against multiple instantiations
+  $.fn[pluginName] = function ( options ) {
+    return this.each(function () {
 
-        return index + 1;
-    }
-
-    function categoriesTickGenerator(axis) {
-        var res = [];
-        for (var label in axis.categories) {
-            var v = axis.categories[label];
-            if (v >= axis.min && v <= axis.max)
-                res.push([v, label]);
-        }
-
-        res.sort(function (a, b) { return a[0] - b[0]; });
-
-        return res;
-    }
-    
-    function setupCategoriesForAxis(series, axis, datapoints) {
-        if (series[axis].options.mode != "categories")
-            return;
-        
-        if (!series[axis].categories) {
-            // parse options
-            var c = {}, o = series[axis].options.categories || {};
-            if ($.isArray(o)) {
-                for (var i = 0; i < o.length; ++i)
-                    c[o[i]] = i;
-            }
-            else {
-                for (var v in o)
-                    c[v] = o[v];
-            }
-            
-            series[axis].categories = c;
-        }
-
-        // fix ticks
-        if (!series[axis].options.ticks)
-            series[axis].options.ticks = categoriesTickGenerator;
-
-        transformPointsOnAxis(datapoints, axis, series[axis].categories);
-    }
-    
-    function transformPointsOnAxis(datapoints, axis, categories) {
-        // go through the points, transforming them
-        var points = datapoints.points,
-            ps = datapoints.pointsize,
-            format = datapoints.format,
-            formatColumn = axis.charAt(0),
-            index = getNextIndex(categories);
-
-        for (var i = 0; i < points.length; i += ps) {
-            if (points[i] == null)
-                continue;
-            
-            for (var m = 0; m < ps; ++m) {
-                var val = points[i + m];
-
-                if (val == null || !format[m][formatColumn])
-                    continue;
-
-                if (!(val in categories)) {
-                    categories[val] = index;
-                    ++index;
-                }
-                
-                points[i + m] = categories[val];
-            }
-        }
-    }
-
-    function processDatapoints(plot, series, datapoints) {
-        setupCategoriesForAxis(series, "xaxis", datapoints);
-        setupCategoriesForAxis(series, "yaxis", datapoints);
-    }
-
-    function init(plot) {
-        plot.hooks.processRawData.push(processRawData);
-        plot.hooks.processDatapoints.push(processDatapoints);
-    }
-    
-    $.plot.plugins.push({
-        init: init,
-        options: options,
-        name: 'categories',
-        version: '1.0'
+      // TOGGLE BUTTON IF IT EXISTS
+      if ($.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName).toggle();
+      }
+      // OTHERWISE CREATE A NEW INSTANCE
+      else {
+        $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+      }
     });
-})(jQuery);
+  };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
+  //CLOSE OPEN DROPDOWN MENUS IF CLICKED SOMEWHERE ELSE
+  $(document).on('click', function(e) {
+    $.each($('[data-buttons=dropdown]'), function(i, value) {
+      if ($(e.target.offsetParent)[0] != $(this)[0]) {
+        if ($.data(this, "plugin_" + pluginName)) {
+          $.data(this, "plugin_" + pluginName).hideMenu();
+          $(this).find('ul').hide();
+        }
+      }
+    });
+  });
+
+  //DELEGATE CLICK EVENT FOR DROPDOWN MENUS
+  $(document).on('click', '[data-buttons=dropdown]', function(e) {
+    var $dropdown = $(e.currentTarget);
+    $dropdown.menuButton();
+  });
+
+  //IGNORE CLICK EVENTS FROM DISPLAY BUTTON IN DROPDOWN
+  $(document).on('click', '[data-buttons=dropdown] > a', function(e) {
+    e.preventDefault();
+  });
+
+})( jQuery, window, document);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
 
 /***/ }),
 
-/***/ 1727:
+/***/ 1429:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*
- * jquery.flot.tooltip
- * 
- * description: easy-to-use tooltips for Flot charts
- * version: 0.9.0
- * authors: Krzysztof Urbas @krzysu [myviews.pl],Evan Steinkerchner @Roundaround
- * website: https://github.com/krzysu/flot.tooltip
- * 
- * build on 2016-07-26
- * released under MIT License, 2012
-*/ 
-(function ($) {
-    // plugin options, default values
-    var defaultOptions = {
-        tooltip: {
-            show: false,
-            cssClass: "flotTip",
-            content: "%s | X: %x | Y: %y",
-            // allowed templates are:
-            // %s -> series label,
-            // %c -> series color,
-            // %lx -> x axis label (requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels),
-            // %ly -> y axis label (requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels),
-            // %x -> X value,
-            // %y -> Y value,
-            // %x.2 -> precision of X value,
-            // %p -> percent
-            // %n -> value (not percent) of pie chart
-            xDateFormat: null,
-            yDateFormat: null,
-            monthNames: null,
-            dayNames: null,
-            shifts: {
-                x: 10,
-                y: 20
-            },
-            defaultTheme: true,
-            snap: true,
-            lines: false,
-            clickTips: false,
+/*!
+ * Ladda 1.0.6 (2018-02-04, 13:19)
+ * http://lab.hakim.se/ladda
+ * MIT licensed
+ *
+ * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
+ */
 
-            // callbacks
-            onHover: function (flotItem, $tooltipEl) {},
+!function(t,e){"use strict"; true?module.exports=e(__webpack_require__(1430)):"function"==typeof define&&define.amd?define(["spin"],e):t.Ladda=e(t.Spinner)}(this,function(t){"use strict";var e=[];function a(a){if(void 0!==a){if(/ladda-button/i.test(a.className)||(a.className+=" ladda-button"),a.hasAttribute("data-style")||a.setAttribute("data-style","expand-right"),!a.querySelector(".ladda-label")){var u=document.createElement("span");u.className="ladda-label",n=a,i=u,(r=document.createRange()).selectNodeContents(n),r.surroundContents(i),n.appendChild(i)}var n,i,r,d,o,s=a.querySelector(".ladda-spinner");s||((s=document.createElement("span")).className="ladda-spinner"),a.appendChild(s);var F={start:function(){return d||(d=function(e){var a,u,n=e.offsetHeight;0===n&&(n=parseFloat(window.getComputedStyle(e).height));n>32&&(n*=.8);e.hasAttribute("data-spinner-size")&&(n=parseInt(e.getAttribute("data-spinner-size"),10));e.hasAttribute("data-spinner-color")&&(a=e.getAttribute("data-spinner-color"));e.hasAttribute("data-spinner-lines")&&(u=parseInt(e.getAttribute("data-spinner-lines"),10));var i=.2*n;return new t({color:a||"#fff",lines:u||12,radius:i,length:.6*i,width:i<7?2:3,zIndex:"auto",top:"auto",left:"auto",className:""})}(a)),a.disabled=!0,a.setAttribute("data-loading",""),clearTimeout(o),d.spin(s),this.setProgress(0),this},startAfter:function(t){return clearTimeout(o),o=setTimeout(function(){F.start()},t),this},stop:function(){return F.isLoading()&&(a.disabled=!1,a.removeAttribute("data-loading")),clearTimeout(o),d&&(o=setTimeout(function(){d.stop()},1e3)),this},toggle:function(){return this.isLoading()?this.stop():this.start()},setProgress:function(t){t=Math.max(Math.min(t,1),0);var e=a.querySelector(".ladda-progress");0===t&&e&&e.parentNode?e.parentNode.removeChild(e):(e||((e=document.createElement("div")).className="ladda-progress",a.appendChild(e)),e.style.width=(t||0)*a.offsetWidth+"px")},enable:function(){return this.stop()},disable:function(){return this.stop(),a.disabled=!0,this},isLoading:function(){return a.hasAttribute("data-loading")},remove:function(){clearTimeout(o),a.disabled=!1,a.removeAttribute("data-loading"),d&&(d.stop(),d=null),e.splice(e.indexOf(F),1)}};return e.push(F),F}console.warn("Ladda button target must be defined.")}function u(t,e){if("function"==typeof t.addEventListener){var u=a(t),n=-1;t.addEventListener("click",function(){var a,i,r=!0,d=function(t,e){for(;t.parentNode&&t.tagName!==e;)t=t.parentNode;return e===t.tagName?t:void 0}(t,"FORM");if(void 0!==d&&!d.hasAttribute("novalidate"))if("function"==typeof d.checkValidity)r=d.checkValidity();else for(var o=(a=d,i=[],["input","textarea","select"].forEach(function(t){for(var e=a.getElementsByTagName(t),u=0;u<e.length;u++)e[u].hasAttribute("required")&&i.push(e[u])}),i),s=0;s<o.length;s++){var F=o[s],l=F.getAttribute("type");if(""===F.value.replace(/^\s+|\s+$/g,"")&&(r=!1),"checkbox"!==l&&"radio"!==l||F.checked||(r=!1),"email"===l&&(r=/^[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\.[a-z0-9-]+)*$/i.test(F.value)),"url"===l&&(r=/^([a-z]([a-z]|\d|\+|-|\.)*):(\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?((\[(|(v[\da-f]{1,}\.(([a-z]|\d|-|\.|_|~)|[!\$&'\(\)\*\+,;=]|:)+))\])|((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=])*)(:\d*)?)(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*|(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)){0})(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(F.value)),!r)break}r&&(u.startAfter(1),"number"==typeof e.timeout&&(clearTimeout(n),n=setTimeout(u.stop,e.timeout)),"function"==typeof e.callback&&e.callback.apply(null,[u]))},!1)}}return{bind:function(t,e){var a;if("string"==typeof t)a=document.querySelectorAll(t);else{if("object"!=typeof t)throw new Error("target must be string or object");a=[t]}e=e||{};for(var n=0;n<a.length;n++)u(a[n],e)},create:a,stopAll:function(){for(var t=0,a=e.length;t<a;t++)e[t].stop()}}});
 
-            $compat: false
-        }
-    };
+/***/ }),
 
-    // dummy default options object for legacy code (<0.8.5) - is deleted later
-    defaultOptions.tooltipOpts = defaultOptions.tooltip;
+/***/ 1430:
+/***/ (function(module, exports, __webpack_require__) {
 
-    // object
-    var FlotTooltip = function (plot) {
-        // variables
-        this.tipPosition = {x: 0, y: 0};
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * Copyright (c) 2011-2014 Felix Gnass
+ * Licensed under the MIT license
+ * http://spin.js.org/
+ *
+ * Example:
+    var opts = {
+      lines: 12             // The number of lines to draw
+    , length: 7             // The length of each line
+    , width: 5              // The line thickness
+    , radius: 10            // The radius of the inner circle
+    , scale: 1.0            // Scales overall size of the spinner
+    , corners: 1            // Roundness (0..1)
+    , color: '#000'         // #rgb or #rrggbb
+    , opacity: 1/4          // Opacity of the lines
+    , rotate: 0             // Rotation offset
+    , direction: 1          // 1: clockwise, -1: counterclockwise
+    , speed: 1              // Rounds per second
+    , trail: 100            // Afterglow percentage
+    , fps: 20               // Frames per second when using setTimeout()
+    , zIndex: 2e9           // Use a high z-index by default
+    , className: 'spinner'  // CSS class to assign to the element
+    , top: '50%'            // center vertically
+    , left: '50%'           // center horizontally
+    , shadow: false         // Whether to render a shadow
+    , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
+    , position: 'absolute'  // Element positioning
+    }
+    var target = document.getElementById('foo')
+    var spinner = new Spinner(opts).spin(target)
+ */
+;(function (root, factory) {
 
-        this.init(plot);
-    };
+  /* CommonJS */
+  if (typeof module == 'object' && module.exports) module.exports = factory()
 
-    // main plugin function
-    FlotTooltip.prototype.init = function (plot) {
-        var that = this;
+  /* AMD module */
+  else if (true) !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
 
-        // detect other flot plugins
-        var plotPluginsLength = $.plot.plugins.length;
-        this.plotPlugins = [];
+  /* Browser global */
+  else root.Spinner = factory()
+}(this, function () {
+  "use strict"
 
-        if (plotPluginsLength) {
-            for (var p = 0; p < plotPluginsLength; p++) {
-                this.plotPlugins.push($.plot.plugins[p].name);
-            }
-        }
+  var prefixes = ['webkit', 'Moz', 'ms', 'O'] /* Vendor prefixes */
+    , animations = {} /* Animation rules keyed by their name */
+    , useCssAnimations /* Whether to use CSS animations or setTimeout */
+    , sheet /* A stylesheet to hold the @keyframe or VML rules. */
 
-        plot.hooks.bindEvents.push(function (plot, eventHolder) {
+  /**
+   * Utility function to create elements. If no tag name is given,
+   * a DIV is created. Optionally properties can be passed.
+   */
+  function createEl (tag, prop) {
+    var el = document.createElement(tag || 'div')
+      , n
 
-            // get plot options
-            that.plotOptions = plot.getOptions();
+    for (n in prop) el[n] = prop[n]
+    return el
+  }
 
-            // for legacy (<0.8.5) implementations
-            if (typeof(that.plotOptions.tooltip) === 'boolean') {
-                that.plotOptions.tooltipOpts.show = that.plotOptions.tooltip;
-                that.plotOptions.tooltip = that.plotOptions.tooltipOpts;
-                delete that.plotOptions.tooltipOpts;
-            }
+  /**
+   * Appends children and returns the parent.
+   */
+  function ins (parent /* child1, child2, ...*/) {
+    for (var i = 1, n = arguments.length; i < n; i++) {
+      parent.appendChild(arguments[i])
+    }
 
-            // if not enabled return
-            if (that.plotOptions.tooltip.show === false || typeof that.plotOptions.tooltip.show === 'undefined') return;
+    return parent
+  }
 
-            // shortcut to access tooltip options
-            that.tooltipOptions = that.plotOptions.tooltip;
+  /**
+   * Creates an opacity keyframe animation rule and returns its name.
+   * Since most mobile Webkits have timing issues with animation-delay,
+   * we create separate rules for each line/segment.
+   */
+  function addAnimation (alpha, trail, i, lines) {
+    var name = ['opacity', trail, ~~(alpha * 100), i, lines].join('-')
+      , start = 0.01 + i/lines * 100
+      , z = Math.max(1 - (1-alpha) / trail * (100-start), alpha)
+      , prefix = useCssAnimations.substring(0, useCssAnimations.indexOf('Animation')).toLowerCase()
+      , pre = prefix && '-' + prefix + '-' || ''
 
-            if (that.tooltipOptions.$compat) {
-                that.wfunc = 'width';
-                that.hfunc = 'height';
-            } else {
-                that.wfunc = 'innerWidth';
-                that.hfunc = 'innerHeight';
-            }
+    if (!animations[name]) {
+      sheet.insertRule(
+        '@' + pre + 'keyframes ' + name + '{' +
+        '0%{opacity:' + z + '}' +
+        start + '%{opacity:' + alpha + '}' +
+        (start+0.01) + '%{opacity:1}' +
+        (start+trail) % 100 + '%{opacity:' + alpha + '}' +
+        '100%{opacity:' + z + '}' +
+        '}', sheet.cssRules.length)
 
-            // create tooltip DOM element
-            var $tip = that.getDomElement();
+      animations[name] = 1
+    }
 
-            // bind event
-            $( plot.getPlaceholder() ).bind("plothover", plothover);
-            if (that.tooltipOptions.clickTips) {
-                $( plot.getPlaceholder() ).bind("plotclick", plotclick);
-            }
-            that.clickmode = false;
+    return name
+  }
 
-            $(eventHolder).bind('mousemove', mouseMove);
-        });
+  /**
+   * Tries various vendor prefixes and returns the first supported property.
+   */
+  function vendor (el, prop) {
+    var s = el.style
+      , pp
+      , i
 
-        plot.hooks.shutdown.push(function (plot, eventHolder){
-            $(plot.getPlaceholder()).unbind("plothover", plothover);
-            $(plot.getPlaceholder()).unbind("plotclick", plotclick);
-            plot.removeTooltip();
-            $(eventHolder).unbind("mousemove", mouseMove);
-        });
+    prop = prop.charAt(0).toUpperCase() + prop.slice(1)
+    if (s[prop] !== undefined) return prop
+    for (i = 0; i < prefixes.length; i++) {
+      pp = prefixes[i]+prop
+      if (s[pp] !== undefined) return pp
+    }
+  }
 
-        function mouseMove(e){
-            var pos = {};
-            pos.x = e.pageX;
-            pos.y = e.pageY;
-            plot.setTooltipPosition(pos);
-        }
+  /**
+   * Sets multiple style properties at once.
+   */
+  function css (el, prop) {
+    for (var n in prop) {
+      el.style[vendor(el, n) || n] = prop[n]
+    }
 
-        /**
-         *  open the tooltip (if not already open) and freeze it on the current position till the next click
-         */
-        function plotclick(event, pos, item) {
-            if (! that.clickmode) {
-                // it is the click activating the clicktip
-                plothover(event, pos, item);
-                if (that.getDomElement().is(":visible")) {
-                    $(plot.getPlaceholder()).unbind("plothover", plothover);
-                    that.clickmode = true;
-                }
-            } else {
-                // it is the click deactivating the clicktip
-                $( plot.getPlaceholder() ).bind("plothover", plothover);
-                plot.hideTooltip();
-                that.clickmode = false;
-            }
-        }
+    return el
+  }
 
-        function plothover(event, pos, item) {
-            // Simple distance formula.
-            var lineDistance = function (p1x, p1y, p2x, p2y) {
-                return Math.sqrt((p2x - p1x) * (p2x - p1x) + (p2y - p1y) * (p2y - p1y));
-            };
+  /**
+   * Fills in default values.
+   */
+  function merge (obj) {
+    for (var i = 1; i < arguments.length; i++) {
+      var def = arguments[i]
+      for (var n in def) {
+        if (obj[n] === undefined) obj[n] = def[n]
+      }
+    }
+    return obj
+  }
 
-            // Here is some voodoo magic for determining the distance to a line form a given point {x, y}.
-            var dotLineLength = function (x, y, x0, y0, x1, y1, o) {
-                if (o && !(o =
-                    function (x, y, x0, y0, x1, y1) {
-                        if (typeof x0 !== 'undefined') return { x: x0, y: y };
-                        else if (typeof y0 !== 'undefined') return { x: x, y: y0 };
+  /**
+   * Returns the line color from the given string or array.
+   */
+  function getColor (color, idx) {
+    return typeof color == 'string' ? color : color[idx % color.length]
+  }
 
-                        var left,
-                            tg = -1 / ((y1 - y0) / (x1 - x0));
+  // Built-in defaults
 
-                        return {
-                            x: left = (x1 * (x * tg - y + y0) + x0 * (x * -tg + y - y1)) / (tg * (x1 - x0) + y0 - y1),
-                            y: tg * left - tg * x + y
-                        };
-                    } (x, y, x0, y0, x1, y1),
-                    o.x >= Math.min(x0, x1) && o.x <= Math.max(x0, x1) && o.y >= Math.min(y0, y1) && o.y <= Math.max(y0, y1))
-                ) {
-                    var l1 = lineDistance(x, y, x0, y0), l2 = lineDistance(x, y, x1, y1);
-                    return l1 > l2 ? l2 : l1;
-                } else {
-                    var a = y0 - y1, b = x1 - x0, c = x0 * y1 - y0 * x1;
-                    return Math.abs(a * x + b * y + c) / Math.sqrt(a * a + b * b);
-                }
-            };
+  var defaults = {
+    lines: 12             // The number of lines to draw
+  , length: 7             // The length of each line
+  , width: 5              // The line thickness
+  , radius: 10            // The radius of the inner circle
+  , scale: 1.0            // Scales overall size of the spinner
+  , corners: 1            // Roundness (0..1)
+  , color: '#000'         // #rgb or #rrggbb
+  , opacity: 1/4          // Opacity of the lines
+  , rotate: 0             // Rotation offset
+  , direction: 1          // 1: clockwise, -1: counterclockwise
+  , speed: 1              // Rounds per second
+  , trail: 100            // Afterglow percentage
+  , fps: 20               // Frames per second when using setTimeout()
+  , zIndex: 2e9           // Use a high z-index by default
+  , className: 'spinner'  // CSS class to assign to the element
+  , top: '50%'            // center vertically
+  , left: '50%'           // center horizontally
+  , shadow: false         // Whether to render a shadow
+  , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
+  , position: 'absolute'  // Element positioning
+  }
 
-            if (item) {
-                plot.showTooltip(item, that.tooltipOptions.snap ? item : pos);
-            } else if (that.plotOptions.series.lines.show && that.tooltipOptions.lines === true) {
-                var maxDistance = that.plotOptions.grid.mouseActiveRadius;
+  /** The constructor */
+  function Spinner (o) {
+    this.opts = merge(o || {}, Spinner.defaults, defaults)
+  }
 
-                var closestTrace = {
-                    distance: maxDistance + 1
-                };
+  // Global defaults that override the built-ins:
+  Spinner.defaults = {}
 
-                var ttPos = pos;
+  merge(Spinner.prototype, {
+    /**
+     * Adds the spinner to the given target element. If this instance is already
+     * spinning, it is automatically removed from its previous target b calling
+     * stop() internally.
+     */
+    spin: function (target) {
+      this.stop()
 
-                $.each(plot.getData(), function (i, series) {
-                    var xBeforeIndex = 0,
-                        xAfterIndex = -1;
+      var self = this
+        , o = self.opts
+        , el = self.el = createEl(null, {className: o.className})
 
-                    // Our search here assumes our data is sorted via the x-axis.
-                    // TODO: Improve efficiency somehow - search smaller sets of data.
-                    for (var j = 1; j < series.data.length; j++) {
-                        if (series.data[j - 1][0] <= pos.x && series.data[j][0] >= pos.x) {
-                            xBeforeIndex = j - 1;
-                            xAfterIndex = j;
-                        }
-                    }
+      css(el, {
+        position: o.position
+      , width: 0
+      , zIndex: o.zIndex
+      , left: o.left
+      , top: o.top
+      })
 
-                    if (xAfterIndex === -1) {
-                        plot.hideTooltip();
-                        return;
-                    }
+      if (target) {
+        target.insertBefore(el, target.firstChild || null)
+      }
 
-                    var pointPrev = { x: series.data[xBeforeIndex][0], y: series.data[xBeforeIndex][1] },
-                        pointNext = { x: series.data[xAfterIndex][0], y: series.data[xAfterIndex][1] };
+      el.setAttribute('role', 'progressbar')
+      self.lines(el, self.opts)
 
-                    var distToLine = dotLineLength(series.xaxis.p2c(pos.x), series.yaxis.p2c(pos.y), series.xaxis.p2c(pointPrev.x),
-                        series.yaxis.p2c(pointPrev.y), series.xaxis.p2c(pointNext.x), series.yaxis.p2c(pointNext.y), false);
+      if (!useCssAnimations) {
+        // No CSS animation support, use setTimeout() instead
+        var i = 0
+          , start = (o.lines - 1) * (1 - o.direction) / 2
+          , alpha
+          , fps = o.fps
+          , f = fps / o.speed
+          , ostep = (1 - o.opacity) / (f * o.trail / 100)
+          , astep = f / o.lines
 
-                    if (distToLine < closestTrace.distance) {
+        ;(function anim () {
+          i++
+          for (var j = 0; j < o.lines; j++) {
+            alpha = Math.max(1 - (i + (o.lines - j) * astep) % f * ostep, o.opacity)
 
-                        var closestIndex = lineDistance(pointPrev.x, pointPrev.y, pos.x, pos.y) <
-                            lineDistance(pos.x, pos.y, pointNext.x, pointNext.y) ? xBeforeIndex : xAfterIndex;
-
-                        var pointSize = series.datapoints.pointsize;
-
-                        // Calculate the point on the line vertically closest to our cursor.
-                        var pointOnLine = [
-                            pos.x,
-                            pointPrev.y + ((pointNext.y - pointPrev.y) * ((pos.x - pointPrev.x) / (pointNext.x - pointPrev.x)))
-                        ];
-
-                        var item = {
-                            datapoint: pointOnLine,
-                            dataIndex: closestIndex,
-                            series: series,
-                            seriesIndex: i
-                        };
-
-                        closestTrace = {
-                            distance: distToLine,
-                            item: item
-                        };
-
-                        if (that.tooltipOptions.snap) {
-                            ttPos = {
-                                pageX: series.xaxis.p2c(pointOnLine[0]),
-                                pageY: series.yaxis.p2c(pointOnLine[1])
-                            };
-                        }
-                    }
-                });
-
-                if (closestTrace.distance < maxDistance + 1)
-                    plot.showTooltip(closestTrace.item, ttPos);
-                else
-                    plot.hideTooltip();
-            } else {
-                plot.hideTooltip();
-            }
-        }
-
-        // Quick little function for setting the tooltip position.
-        plot.setTooltipPosition = function (pos) {
-            var $tip = that.getDomElement();
-
-            var totalTipWidth = $tip.outerWidth() + that.tooltipOptions.shifts.x;
-            var totalTipHeight = $tip.outerHeight() + that.tooltipOptions.shifts.y;
-            if ((pos.x - $(window).scrollLeft()) > ($(window)[that.wfunc]() - totalTipWidth)) {
-                pos.x -= totalTipWidth;
-                pos.x = Math.max(pos.x, 0);
-            }
-            if ((pos.y - $(window).scrollTop()) > ($(window)[that.hfunc]() - totalTipHeight)) {
-                pos.y -= totalTipHeight;
-            }
-
-	    /*
-	       The section applies the new positioning ONLY if pos.x and pos.y
-	       are numbers. If they are undefined or not a number, use the last
-	       known numerical position. This hack fixes a bug that kept pie
-	       charts from keeping their tooltip positioning.
-	     */
-
-            if (isNaN(pos.x)) {
-		that.tipPosition.x = that.tipPosition.xPrev;
-	    }
-	    else {
-		that.tipPosition.x = pos.x;
-		that.tipPosition.xPrev = pos.x;
-	    }
-	    if (isNaN(pos.y)) {
-		that.tipPosition.y = that.tipPosition.yPrev;
-	    }
-	    else {
-		that.tipPosition.y = pos.y;
-		that.tipPosition.yPrev = pos.y;
-	    }
-
-        };
-
-        // Quick little function for showing the tooltip.
-        plot.showTooltip = function (target, position, targetPosition) {
-            var $tip = that.getDomElement();
-
-            // convert tooltip content template to real tipText
-            var tipText = that.stringFormat(that.tooltipOptions.content, target);
-            if (tipText === '')
-                return;
-
-            $tip.html(tipText);
-            plot.setTooltipPosition({ x: that.tipPosition.x, y: that.tipPosition.y });
-            $tip.css({
-                left: that.tipPosition.x + that.tooltipOptions.shifts.x,
-                top: that.tipPosition.y + that.tooltipOptions.shifts.y
-            }).show();
-
-            // run callback
-            if (typeof that.tooltipOptions.onHover === 'function') {
-                that.tooltipOptions.onHover(target, $tip);
-            }
-        };
-
-        // Quick little function for hiding the tooltip.
-        plot.hideTooltip = function () {
-            that.getDomElement().hide().html('');
-        };
-
-        plot.removeTooltip = function() {
-            that.getDomElement().remove();
-        };
-    };
+            self.opacity(el, j * o.direction + start, alpha, o)
+          }
+          self.timeout = self.el && setTimeout(anim, ~~(1000 / fps))
+        })()
+      }
+      return self
+    }
 
     /**
-     * get or create tooltip DOM element
-     * @return jQuery object
+     * Stops and removes the Spinner.
      */
-    FlotTooltip.prototype.getDomElement = function () {
-        var $tip = $('<div>');
-        if (this.tooltipOptions && this.tooltipOptions.cssClass) {
-            $tip = $('.' + this.tooltipOptions.cssClass);
-
-            if( $tip.length === 0 ){
-                $tip = $('<div />').addClass(this.tooltipOptions.cssClass);
-                $tip.appendTo('body').hide().css({position: 'absolute'});
-
-                if(this.tooltipOptions.defaultTheme) {
-                    $tip.css({
-                        'background': '#fff',
-                        'z-index': '1040',
-                        'padding': '0.4em 0.6em',
-                        'border-radius': '0.5em',
-                        'font-size': '0.8em',
-                        'border': '1px solid #111',
-                        'display': 'none',
-                        'white-space': 'nowrap'
-                    });
-                }
-            }
-        }
-
-        return $tip;
-    };
+  , stop: function () {
+      var el = this.el
+      if (el) {
+        clearTimeout(this.timeout)
+        if (el.parentNode) el.parentNode.removeChild(el)
+        this.el = undefined
+      }
+      return this
+    }
 
     /**
-     * core function, create tooltip content
-     * @param  {string} content - template with tooltip content
-     * @param  {object} item - Flot item
-     * @return {string} real tooltip content for current item
+     * Internal method that draws the individual lines. Will be overwritten
+     * in VML fallback mode below.
      */
-    FlotTooltip.prototype.stringFormat = function (content, item) {
-        var percentPattern = /%p\.{0,1}(\d{0,})/;
-        var seriesPattern = /%s/;
-        var colorPattern = /%c/;
-        var xLabelPattern = /%lx/; // requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels, will be ignored if plugin isn't loaded
-        var yLabelPattern = /%ly/; // requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels, will be ignored if plugin isn't loaded
-        var xPattern = /%x\.{0,1}(\d{0,})/;
-        var yPattern = /%y\.{0,1}(\d{0,})/;
-        var xPatternWithoutPrecision = "%x";
-        var yPatternWithoutPrecision = "%y";
-        var customTextPattern = "%ct";
-	var nPiePattern = "%n";
+  , lines: function (el, o) {
+      var i = 0
+        , start = (o.lines - 1) * (1 - o.direction) / 2
+        , seg
 
-        var x, y, customText, p, n;
+      function fill (color, shadow) {
+        return css(createEl(), {
+          position: 'absolute'
+        , width: o.scale * (o.length + o.width) + 'px'
+        , height: o.scale * o.width + 'px'
+        , background: color
+        , boxShadow: shadow
+        , transformOrigin: 'left'
+        , transform: 'rotate(' + ~~(360/o.lines*i + o.rotate) + 'deg) translate(' + o.scale*o.radius + 'px' + ',0)'
+        , borderRadius: (o.corners * o.scale * o.width >> 1) + 'px'
+        })
+      }
 
-        // for threshold plugin we need to read data from different place
-        if (typeof item.series.threshold !== "undefined") {
-            x = item.datapoint[0];
-            y = item.datapoint[1];
-            customText = item.datapoint[2];
-	}
+      for (; i < o.lines; i++) {
+        seg = css(createEl(), {
+          position: 'absolute'
+        , top: 1 + ~(o.scale * o.width / 2) + 'px'
+        , transform: o.hwaccel ? 'translate3d(0,0,0)' : ''
+        , opacity: o.opacity
+        , animation: useCssAnimations && addAnimation(o.opacity, o.trail, start + i * o.direction, o.lines) + ' ' + 1 / o.speed + 's linear infinite'
+        })
 
-	// for CurvedLines plugin we need to read data from different place
-	    else if (typeof item.series.curvedLines !== "undefined") {
-		x = item.datapoint[0];
-		y = item.datapoint[1];
-	    }
+        if (o.shadow) ins(seg, css(fill('#000', '0 0 4px #000'), {top: '2px'}))
+        ins(el, ins(seg, fill(getColor(o.color, i), '0 0 1px rgba(0,0,0,.1)')))
+      }
+      return el
+    }
 
-        else if (typeof item.series.lines !== "undefined" && item.series.lines.steps) {
-            x = item.series.datapoints.points[item.dataIndex * 2];
-            y = item.series.datapoints.points[item.dataIndex * 2 + 1];
-            // TODO: where to find custom text in this variant?
-            customText = "";
-        } else {
-            x = item.series.data[item.dataIndex][0];
-            y = item.series.data[item.dataIndex][1];
-            customText = item.series.data[item.dataIndex][2];
-        }
+    /**
+     * Internal method that adjusts the opacity of a single line.
+     * Will be overwritten in VML fallback mode below.
+     */
+  , opacity: function (el, i, val) {
+      if (i < el.childNodes.length) el.childNodes[i].style.opacity = val
+    }
 
-        // I think this is only in case of threshold plugin
-        if (item.series.label === null && item.series.originSeries) {
-            item.series.label = item.series.originSeries.label;
-        }
+  })
 
-        // if it is a function callback get the content string
-        if (typeof(content) === 'function') {
-            content = content(item.series.label, x, y, item);
-        }
 
-        // the case where the passed content is equal to false
-        if (typeof(content) === 'boolean' && !content) {
-            return '';
-        }
+  function initVML () {
 
-        /* replacement of %ct and other multi-character templates must
-           precede the replacement of single-character templates
-           to avoid conflict between '%c' and '%ct'  and similar substrings
-        */
-        if (customText) {
-            content = content.replace(customTextPattern, customText);
-        }
+    /* Utility function to create a VML tag */
+    function vml (tag, attr) {
+      return createEl('<' + tag + ' xmlns="urn:schemas-microsoft.com:vml" class="spin-vml">', attr)
+    }
 
-        // percent match for pie charts and stacked percent
-        if (typeof (item.series.percent) !== 'undefined') {
-            p = item.series.percent;
-        } else if (typeof (item.series.percents) !== 'undefined') {
-            p = item.series.percents[item.dataIndex];
-        }
-        if (typeof p === 'number') {
-            content = this.adjustValPrecision(percentPattern, content, p);
-        }
+    // No CSS transforms but VML support, add a CSS rule for VML elements:
+    sheet.addRule('.spin-vml', 'behavior:url(#default#VML)')
 
-        // replace %n with number of items represented by slice in pie charts
-        if (item.series.hasOwnProperty('pie')) {
-            if (typeof item.series.data[0][1] !== 'undefined') {
-                n = item.series.data[0][1];
-            }
-        }
-        if (typeof n === 'number') {
-            content = content.replace(nPiePattern, n);
-        }
+    Spinner.prototype.lines = function (el, o) {
+      var r = o.scale * (o.length + o.width)
+        , s = o.scale * 2 * r
 
-        // series match
-        if (typeof(item.series.label) !== 'undefined') {
-            content = content.replace(seriesPattern, item.series.label);
-        } else {
-            //remove %s if label is undefined
-            content = content.replace(seriesPattern, "");
-        }
+      function grp () {
+        return css(
+          vml('group', {
+            coordsize: s + ' ' + s
+          , coordorigin: -r + ' ' + -r
+          })
+        , { width: s, height: s }
+        )
+      }
 
-        // color match
-        if (typeof(item.series.color) !== 'undefined') {
-            content = content.replace(colorPattern, item.series.color);
-        } else {
-            //remove %s if color is undefined
-            content = content.replace(colorPattern, "");
-        }
+      var margin = -(o.width + o.length) * o.scale * 2 + 'px'
+        , g = css(grp(), {position: 'absolute', top: margin, left: margin})
+        , i
 
-        // x axis label match
-        if (this.hasAxisLabel('xaxis', item)) {
-            content = content.replace(xLabelPattern, item.series.xaxis.options.axisLabel);
-        } else {
-            //remove %lx if axis label is undefined or axislabels plugin not present
-            content = content.replace(xLabelPattern, "");
-        }
-
-        // y axis label match
-        if (this.hasAxisLabel('yaxis', item)) {
-            content = content.replace(yLabelPattern, item.series.yaxis.options.axisLabel);
-        } else {
-            //remove %ly if axis label is undefined or axislabels plugin not present
-            content = content.replace(yLabelPattern, "");
-        }
-
-        // time mode axes with custom dateFormat
-        if (this.isTimeMode('xaxis', item) && this.isXDateFormat(item)) {
-            content = content.replace(xPattern, this.timestampToDate(x, this.tooltipOptions.xDateFormat, item.series.xaxis.options));
-        }
-        if (this.isTimeMode('yaxis', item) && this.isYDateFormat(item)) {
-            content = content.replace(yPattern, this.timestampToDate(y, this.tooltipOptions.yDateFormat, item.series.yaxis.options));
-        }
-
-        // set precision if defined
-        if (typeof x === 'number') {
-            content = this.adjustValPrecision(xPattern, content, x);
-        }
-        if (typeof y === 'number') {
-            content = this.adjustValPrecision(yPattern, content, y);
-        }
-
-        // change x from number to given label, if given
-        if (typeof item.series.xaxis.ticks !== 'undefined') {
-
-            var ticks;
-            if (this.hasRotatedXAxisTicks(item)) {
-                // xaxis.ticks will be an empty array if tickRotor is being used, but the values are available in rotatedTicks
-                ticks = 'rotatedTicks';
-            } else {
-                ticks = 'ticks';
-            }
-
-            // see https://github.com/krzysu/flot.tooltip/issues/65
-            var tickIndex = item.dataIndex + item.seriesIndex;
-
-            for (var xIndex in item.series.xaxis[ticks]) {
-                if (item.series.xaxis[ticks].hasOwnProperty(tickIndex) && !this.isTimeMode('xaxis', item)) {
-                    var valueX = (this.isCategoriesMode('xaxis', item)) ? item.series.xaxis[ticks][tickIndex].label : item.series.xaxis[ticks][tickIndex].v;
-                    if (valueX === x) {
-                        content = content.replace(xPattern, item.series.xaxis[ticks][tickIndex].label.replace(/\$/g, '$$$$'));
-                    }
+      function seg (i, dx, filter) {
+        ins(
+          g
+        , ins(
+            css(grp(), {rotation: 360 / o.lines * i + 'deg', left: ~~dx})
+          , ins(
+              css(
+                vml('roundrect', {arcsize: o.corners})
+              , { width: r
+                , height: o.scale * o.width
+                , left: o.scale * o.radius
+                , top: -o.scale * o.width >> 1
+                , filter: filter
                 }
-            }
+              )
+            , vml('fill', {color: getColor(o.color, i), opacity: o.opacity})
+            , vml('stroke', {opacity: 0}) // transparent stroke to fix color bleeding upon opacity change
+            )
+          )
+        )
+      }
+
+      if (o.shadow)
+        for (i = 1; i <= o.lines; i++) {
+          seg(i, -2, 'progid:DXImageTransform.Microsoft.Blur(pixelradius=2,makeshadow=1,shadowopacity=.3)')
         }
 
-        // change y from number to given label, if given
-        if (typeof item.series.yaxis.ticks !== 'undefined') {
-            for (var yIndex in item.series.yaxis.ticks) {
-                if (item.series.yaxis.ticks.hasOwnProperty(yIndex)) {
-                    var valueY = (this.isCategoriesMode('yaxis', item)) ? item.series.yaxis.ticks[yIndex].label : item.series.yaxis.ticks[yIndex].v;
-                    if (valueY === y) {
-                        content = content.replace(yPattern, item.series.yaxis.ticks[yIndex].label.replace(/\$/g, '$$$$'));
-                    }
-                }
-            }
-        }
+      for (i = 1; i <= o.lines; i++) seg(i)
+      return ins(el, g)
+    }
 
-        // if no value customization, use tickFormatter by default
-        if (typeof item.series.xaxis.tickFormatter !== 'undefined') {
-            //escape dollar
-            content = content.replace(xPatternWithoutPrecision, item.series.xaxis.tickFormatter(x, item.series.xaxis).replace(/\$/g, '$$'));
-        }
-        if (typeof item.series.yaxis.tickFormatter !== 'undefined') {
-            //escape dollar
-            content = content.replace(yPatternWithoutPrecision, item.series.yaxis.tickFormatter(y, item.series.yaxis).replace(/\$/g, '$$'));
-        }
+    Spinner.prototype.opacity = function (el, i, val, o) {
+      var c = el.firstChild
+      o = o.shadow && o.lines || 0
+      if (c && i + o < c.childNodes.length) {
+        c = c.childNodes[i + o]; c = c && c.firstChild; c = c && c.firstChild
+        if (c) c.opacity = val
+      }
+    }
+  }
 
-        return content;
-    };
+  if (typeof document !== 'undefined') {
+    sheet = (function () {
+      var el = createEl('style', {type : 'text/css'})
+      ins(document.getElementsByTagName('head')[0], el)
+      return el.sheet || el.styleSheet
+    }())
 
-    // helpers just for readability
-    FlotTooltip.prototype.isTimeMode = function (axisName, item) {
-        return (typeof item.series[axisName].options.mode !== 'undefined' && item.series[axisName].options.mode === 'time');
-    };
+    var probe = css(createEl('group'), {behavior: 'url(#default#VML)'})
 
-    FlotTooltip.prototype.isXDateFormat = function (item) {
-        return (typeof this.tooltipOptions.xDateFormat !== 'undefined' && this.tooltipOptions.xDateFormat !== null);
-    };
+    if (!vendor(probe, 'transform') && probe.adj) initVML()
+    else useCssAnimations = vendor(probe, 'animation')
+  }
 
-    FlotTooltip.prototype.isYDateFormat = function (item) {
-        return (typeof this.tooltipOptions.yDateFormat !== 'undefined' && this.tooltipOptions.yDateFormat !== null);
-    };
+  return Spinner
 
-    FlotTooltip.prototype.isCategoriesMode = function (axisName, item) {
-        return (typeof item.series[axisName].options.mode !== 'undefined' && item.series[axisName].options.mode === 'categories');
-    };
+}));
 
-    //
-    FlotTooltip.prototype.timestampToDate = function (tmst, dateFormat, options) {
-        var theDate = $.plot.dateGenerator(tmst, options);
-        return $.plot.formatDate(theDate, dateFormat, this.tooltipOptions.monthNames, this.tooltipOptions.dayNames);
-    };
-
-    //
-    FlotTooltip.prototype.adjustValPrecision = function (pattern, content, value) {
-
-        var precision;
-        var matchResult = content.match(pattern);
-        if( matchResult !== null ) {
-            if(RegExp.$1 !== '') {
-                precision = RegExp.$1;
-                value = value.toFixed(precision);
-
-                // only replace content if precision exists, in other case use thickformater
-                content = content.replace(pattern, value);
-            }
-        }
-        return content;
-    };
-
-    // other plugins detection below
-
-    // check if flot-axislabels plugin (https://github.com/markrcote/flot-axislabels) is used and that an axis label is given
-    FlotTooltip.prototype.hasAxisLabel = function (axisName, item) {
-        return ($.inArray('axisLabels', this.plotPlugins) !== -1 && typeof item.series[axisName].options.axisLabel !== 'undefined' && item.series[axisName].options.axisLabel.length > 0);
-    };
-
-    // check whether flot-tickRotor, a plugin which allows rotation of X-axis ticks, is being used
-    FlotTooltip.prototype.hasRotatedXAxisTicks = function (item) {
-        return ($.inArray('tickRotor',this.plotPlugins) !== -1 && typeof item.series.xaxis.rotatedTicks !== 'undefined');
-    };
-
-    //
-    var init = function (plot) {
-      new FlotTooltip(plot);
-    };
-
-    // define Flot plugin
-    $.plot.plugins.push({
-        init: init,
-        options: defaultOptions,
-        name: 'tooltip',
-        version: '0.8.5'
-    });
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
 
 /***/ }),
 
-/***/ 1728:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Pretty handling of time axes.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-Set axis.mode to "time" to enable. See the section "Time series data" in
-API.txt for details.
-
-*/
-
-(function($) {
-
-	var options = {
-		xaxis: {
-			timezone: null,		// "browser" for local to the client or timezone for timezone-js
-			timeformat: null,	// format string to use
-			twelveHourClock: false,	// 12 or 24 time in time mode
-			monthNames: null	// list of names of months
-		}
-	};
-
-	// round to nearby lower multiple of base
-
-	function floorInBase(n, base) {
-		return base * Math.floor(n / base);
-	}
-
-	// Returns a string with the date d formatted according to fmt.
-	// A subset of the Open Group's strftime format is supported.
-
-	function formatDate(d, fmt, monthNames, dayNames) {
-
-		if (typeof d.strftime == "function") {
-			return d.strftime(fmt);
-		}
-
-		var leftPad = function(n, pad) {
-			n = "" + n;
-			pad = "" + (pad == null ? "0" : pad);
-			return n.length == 1 ? pad + n : n;
-		};
-
-		var r = [];
-		var escape = false;
-		var hours = d.getHours();
-		var isAM = hours < 12;
-
-		if (monthNames == null) {
-			monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-		}
-
-		if (dayNames == null) {
-			dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-		}
-
-		var hours12;
-
-		if (hours > 12) {
-			hours12 = hours - 12;
-		} else if (hours == 0) {
-			hours12 = 12;
-		} else {
-			hours12 = hours;
-		}
-
-		for (var i = 0; i < fmt.length; ++i) {
-
-			var c = fmt.charAt(i);
-
-			if (escape) {
-				switch (c) {
-					case 'a': c = "" + dayNames[d.getDay()]; break;
-					case 'b': c = "" + monthNames[d.getMonth()]; break;
-					case 'd': c = leftPad(d.getDate()); break;
-					case 'e': c = leftPad(d.getDate(), " "); break;
-					case 'h':	// For back-compat with 0.7; remove in 1.0
-					case 'H': c = leftPad(hours); break;
-					case 'I': c = leftPad(hours12); break;
-					case 'l': c = leftPad(hours12, " "); break;
-					case 'm': c = leftPad(d.getMonth() + 1); break;
-					case 'M': c = leftPad(d.getMinutes()); break;
-					// quarters not in Open Group's strftime specification
-					case 'q':
-						c = "" + (Math.floor(d.getMonth() / 3) + 1); break;
-					case 'S': c = leftPad(d.getSeconds()); break;
-					case 'y': c = leftPad(d.getFullYear() % 100); break;
-					case 'Y': c = "" + d.getFullYear(); break;
-					case 'p': c = (isAM) ? ("" + "am") : ("" + "pm"); break;
-					case 'P': c = (isAM) ? ("" + "AM") : ("" + "PM"); break;
-					case 'w': c = "" + d.getDay(); break;
-				}
-				r.push(c);
-				escape = false;
-			} else {
-				if (c == "%") {
-					escape = true;
-				} else {
-					r.push(c);
-				}
-			}
-		}
-
-		return r.join("");
-	}
-
-	// To have a consistent view of time-based data independent of which time
-	// zone the client happens to be in we need a date-like object independent
-	// of time zones.  This is done through a wrapper that only calls the UTC
-	// versions of the accessor methods.
-
-	function makeUtcWrapper(d) {
-
-		function addProxyMethod(sourceObj, sourceMethod, targetObj, targetMethod) {
-			sourceObj[sourceMethod] = function() {
-				return targetObj[targetMethod].apply(targetObj, arguments);
-			};
-		};
-
-		var utc = {
-			date: d
-		};
-
-		// support strftime, if found
-
-		if (d.strftime != undefined) {
-			addProxyMethod(utc, "strftime", d, "strftime");
-		}
-
-		addProxyMethod(utc, "getTime", d, "getTime");
-		addProxyMethod(utc, "setTime", d, "setTime");
-
-		var props = ["Date", "Day", "FullYear", "Hours", "Milliseconds", "Minutes", "Month", "Seconds"];
-
-		for (var p = 0; p < props.length; p++) {
-			addProxyMethod(utc, "get" + props[p], d, "getUTC" + props[p]);
-			addProxyMethod(utc, "set" + props[p], d, "setUTC" + props[p]);
-		}
-
-		return utc;
-	};
-
-	// select time zone strategy.  This returns a date-like object tied to the
-	// desired timezone
-
-	function dateGenerator(ts, opts) {
-		if (opts.timezone == "browser") {
-			return new Date(ts);
-		} else if (!opts.timezone || opts.timezone == "utc") {
-			return makeUtcWrapper(new Date(ts));
-		} else if (typeof timezoneJS != "undefined" && typeof timezoneJS.Date != "undefined") {
-			var d = new timezoneJS.Date();
-			// timezone-js is fickle, so be sure to set the time zone before
-			// setting the time.
-			d.setTimezone(opts.timezone);
-			d.setTime(ts);
-			return d;
-		} else {
-			return makeUtcWrapper(new Date(ts));
-		}
-	}
-	
-	// map of app. size of time units in milliseconds
-
-	var timeUnitSize = {
-		"second": 1000,
-		"minute": 60 * 1000,
-		"hour": 60 * 60 * 1000,
-		"day": 24 * 60 * 60 * 1000,
-		"month": 30 * 24 * 60 * 60 * 1000,
-		"quarter": 3 * 30 * 24 * 60 * 60 * 1000,
-		"year": 365.2425 * 24 * 60 * 60 * 1000
-	};
-
-	// the allowed tick sizes, after 1 year we use
-	// an integer algorithm
-
-	var baseSpec = [
-		[1, "second"], [2, "second"], [5, "second"], [10, "second"],
-		[30, "second"], 
-		[1, "minute"], [2, "minute"], [5, "minute"], [10, "minute"],
-		[30, "minute"], 
-		[1, "hour"], [2, "hour"], [4, "hour"],
-		[8, "hour"], [12, "hour"],
-		[1, "day"], [2, "day"], [3, "day"],
-		[0.25, "month"], [0.5, "month"], [1, "month"],
-		[2, "month"]
-	];
-
-	// we don't know which variant(s) we'll need yet, but generating both is
-	// cheap
-
-	var specMonths = baseSpec.concat([[3, "month"], [6, "month"],
-		[1, "year"]]);
-	var specQuarters = baseSpec.concat([[1, "quarter"], [2, "quarter"],
-		[1, "year"]]);
-
-	function init(plot) {
-		plot.hooks.processOptions.push(function (plot, options) {
-			$.each(plot.getAxes(), function(axisName, axis) {
-
-				var opts = axis.options;
-
-				if (opts.mode == "time") {
-					axis.tickGenerator = function(axis) {
-
-						var ticks = [];
-						var d = dateGenerator(axis.min, opts);
-						var minSize = 0;
-
-						// make quarter use a possibility if quarters are
-						// mentioned in either of these options
-
-						var spec = (opts.tickSize && opts.tickSize[1] ===
-							"quarter") ||
-							(opts.minTickSize && opts.minTickSize[1] ===
-							"quarter") ? specQuarters : specMonths;
-
-						if (opts.minTickSize != null) {
-							if (typeof opts.tickSize == "number") {
-								minSize = opts.tickSize;
-							} else {
-								minSize = opts.minTickSize[0] * timeUnitSize[opts.minTickSize[1]];
-							}
-						}
-
-						for (var i = 0; i < spec.length - 1; ++i) {
-							if (axis.delta < (spec[i][0] * timeUnitSize[spec[i][1]]
-											  + spec[i + 1][0] * timeUnitSize[spec[i + 1][1]]) / 2
-								&& spec[i][0] * timeUnitSize[spec[i][1]] >= minSize) {
-								break;
-							}
-						}
-
-						var size = spec[i][0];
-						var unit = spec[i][1];
-
-						// special-case the possibility of several years
-
-						if (unit == "year") {
-
-							// if given a minTickSize in years, just use it,
-							// ensuring that it's an integer
-
-							if (opts.minTickSize != null && opts.minTickSize[1] == "year") {
-								size = Math.floor(opts.minTickSize[0]);
-							} else {
-
-								var magn = Math.pow(10, Math.floor(Math.log(axis.delta / timeUnitSize.year) / Math.LN10));
-								var norm = (axis.delta / timeUnitSize.year) / magn;
-
-								if (norm < 1.5) {
-									size = 1;
-								} else if (norm < 3) {
-									size = 2;
-								} else if (norm < 7.5) {
-									size = 5;
-								} else {
-									size = 10;
-								}
-
-								size *= magn;
-							}
-
-							// minimum size for years is 1
-
-							if (size < 1) {
-								size = 1;
-							}
-						}
-
-						axis.tickSize = opts.tickSize || [size, unit];
-						var tickSize = axis.tickSize[0];
-						unit = axis.tickSize[1];
-
-						var step = tickSize * timeUnitSize[unit];
-
-						if (unit == "second") {
-							d.setSeconds(floorInBase(d.getSeconds(), tickSize));
-						} else if (unit == "minute") {
-							d.setMinutes(floorInBase(d.getMinutes(), tickSize));
-						} else if (unit == "hour") {
-							d.setHours(floorInBase(d.getHours(), tickSize));
-						} else if (unit == "month") {
-							d.setMonth(floorInBase(d.getMonth(), tickSize));
-						} else if (unit == "quarter") {
-							d.setMonth(3 * floorInBase(d.getMonth() / 3,
-								tickSize));
-						} else if (unit == "year") {
-							d.setFullYear(floorInBase(d.getFullYear(), tickSize));
-						}
-
-						// reset smaller components
-
-						d.setMilliseconds(0);
-
-						if (step >= timeUnitSize.minute) {
-							d.setSeconds(0);
-						}
-						if (step >= timeUnitSize.hour) {
-							d.setMinutes(0);
-						}
-						if (step >= timeUnitSize.day) {
-							d.setHours(0);
-						}
-						if (step >= timeUnitSize.day * 4) {
-							d.setDate(1);
-						}
-						if (step >= timeUnitSize.month * 2) {
-							d.setMonth(floorInBase(d.getMonth(), 3));
-						}
-						if (step >= timeUnitSize.quarter * 2) {
-							d.setMonth(floorInBase(d.getMonth(), 6));
-						}
-						if (step >= timeUnitSize.year) {
-							d.setMonth(0);
-						}
-
-						var carry = 0;
-						var v = Number.NaN;
-						var prev;
-
-						do {
-
-							prev = v;
-							v = d.getTime();
-							ticks.push(v);
-
-							if (unit == "month" || unit == "quarter") {
-								if (tickSize < 1) {
-
-									// a bit complicated - we'll divide the
-									// month/quarter up but we need to take
-									// care of fractions so we don't end up in
-									// the middle of a day
-
-									d.setDate(1);
-									var start = d.getTime();
-									d.setMonth(d.getMonth() +
-										(unit == "quarter" ? 3 : 1));
-									var end = d.getTime();
-									d.setTime(v + carry * timeUnitSize.hour + (end - start) * tickSize);
-									carry = d.getHours();
-									d.setHours(0);
-								} else {
-									d.setMonth(d.getMonth() +
-										tickSize * (unit == "quarter" ? 3 : 1));
-								}
-							} else if (unit == "year") {
-								d.setFullYear(d.getFullYear() + tickSize);
-							} else {
-								d.setTime(v + step);
-							}
-						} while (v < axis.max && v != prev);
-
-						return ticks;
-					};
-
-					axis.tickFormatter = function (v, axis) {
-
-						var d = dateGenerator(v, axis.options);
-
-						// first check global format
-
-						if (opts.timeformat != null) {
-							return formatDate(d, opts.timeformat, opts.monthNames, opts.dayNames);
-						}
-
-						// possibly use quarters if quarters are mentioned in
-						// any of these places
-
-						var useQuarters = (axis.options.tickSize &&
-								axis.options.tickSize[1] == "quarter") ||
-							(axis.options.minTickSize &&
-								axis.options.minTickSize[1] == "quarter");
-
-						var t = axis.tickSize[0] * timeUnitSize[axis.tickSize[1]];
-						var span = axis.max - axis.min;
-						var suffix = (opts.twelveHourClock) ? " %p" : "";
-						var hourCode = (opts.twelveHourClock) ? "%I" : "%H";
-						var fmt;
-
-						if (t < timeUnitSize.minute) {
-							fmt = hourCode + ":%M:%S" + suffix;
-						} else if (t < timeUnitSize.day) {
-							if (span < 2 * timeUnitSize.day) {
-								fmt = hourCode + ":%M" + suffix;
-							} else {
-								fmt = "%b %d " + hourCode + ":%M" + suffix;
-							}
-						} else if (t < timeUnitSize.month) {
-							fmt = "%b %d";
-						} else if ((useQuarters && t < timeUnitSize.quarter) ||
-							(!useQuarters && t < timeUnitSize.year)) {
-							if (span < timeUnitSize.year) {
-								fmt = "%b";
-							} else {
-								fmt = "%b %Y";
-							}
-						} else if (useQuarters && t < timeUnitSize.year) {
-							if (span < timeUnitSize.year) {
-								fmt = "Q%q";
-							} else {
-								fmt = "Q%q %Y";
-							}
-						} else {
-							fmt = "%Y";
-						}
-
-						var rt = formatDate(d, fmt, opts.monthNames, opts.dayNames);
-
-						return rt;
-					};
-				}
-			});
-		});
-	}
-
-	$.plot.plugins.push({
-		init: init,
-		options: options,
-		name: 'time',
-		version: '1.0'
-	});
-
-	// Time-axis support used to be in Flot core, which exposed the
-	// formatDate function on the plot object.  Various plugins depend
-	// on the function, so we need to re-expose it here.
-
-	$.plot.formatDate = formatDate;
-	$.plot.dateGenerator = dateGenerator;
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
-
-/***/ }),
-
-/***/ 1729:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for rendering pie charts.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-The plugin assumes that each series has a single data value, and that each
-value is a positive integer or zero.  Negative numbers don't make sense for a
-pie chart, and have unpredictable results.  The values do NOT need to be
-passed in as percentages; the plugin will calculate the total and per-slice
-percentages internally.
-
-* Created by Brian Medendorp
-
-* Updated with contributions from btburnett3, Anthony Aragues and Xavi Ivars
-
-The plugin supports these options:
-
-	series: {
-		pie: {
-			show: true/false
-			radius: 0-1 for percentage of fullsize, or a specified pixel length, or 'auto'
-			innerRadius: 0-1 for percentage of fullsize or a specified pixel length, for creating a donut effect
-			startAngle: 0-2 factor of PI used for starting angle (in radians) i.e 3/2 starts at the top, 0 and 2 have the same result
-			tilt: 0-1 for percentage to tilt the pie, where 1 is no tilt, and 0 is completely flat (nothing will show)
-			offset: {
-				top: integer value to move the pie up or down
-				left: integer value to move the pie left or right, or 'auto'
-			},
-			stroke: {
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#FFF')
-				width: integer pixel width of the stroke
-			},
-			label: {
-				show: true/false, or 'auto'
-				formatter:  a user-defined function that modifies the text/style of the label text
-				radius: 0-1 for percentage of fullsize, or a specified pixel length
-				background: {
-					color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#000')
-					opacity: 0-1
-				},
-				threshold: 0-1 for the percentage value at which to hide labels (if they're too small)
-			},
-			combine: {
-				threshold: 0-1 for the percentage value at which to combine slices (if they're too small)
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#CCC'), if null, the plugin will automatically use the color of the first slice to be combined
-				label: any text value of what the combined slice should be labeled
-			}
-			highlight: {
-				opacity: 0-1
-			}
-		}
-	}
-
-More detail and specific examples can be found in the included HTML file.
-
-*/
-
-(function($) {
-
-	// Maximum redraw attempts when fitting labels within the plot
-
-	var REDRAW_ATTEMPTS = 10;
-
-	// Factor by which to shrink the pie when fitting labels within the plot
-
-	var REDRAW_SHRINK = 0.95;
-
-	function init(plot) {
-
-		var canvas = null,
-			target = null,
-			options = null,
-			maxRadius = null,
-			centerLeft = null,
-			centerTop = null,
-			processed = false,
-			ctx = null;
-
-		// interactive variables
-
-		var highlights = [];
-
-		// add hook to determine if pie plugin in enabled, and then perform necessary operations
-
-		plot.hooks.processOptions.push(function(plot, options) {
-			if (options.series.pie.show) {
-
-				options.grid.show = false;
-
-				// set labels.show
-
-				if (options.series.pie.label.show == "auto") {
-					if (options.legend.show) {
-						options.series.pie.label.show = false;
-					} else {
-						options.series.pie.label.show = true;
-					}
-				}
-
-				// set radius
-
-				if (options.series.pie.radius == "auto") {
-					if (options.series.pie.label.show) {
-						options.series.pie.radius = 3/4;
-					} else {
-						options.series.pie.radius = 1;
-					}
-				}
-
-				// ensure sane tilt
-
-				if (options.series.pie.tilt > 1) {
-					options.series.pie.tilt = 1;
-				} else if (options.series.pie.tilt < 0) {
-					options.series.pie.tilt = 0;
-				}
-			}
-		});
-
-		plot.hooks.bindEvents.push(function(plot, eventHolder) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				if (options.grid.hoverable) {
-					eventHolder.unbind("mousemove").mousemove(onMouseMove);
-				}
-				if (options.grid.clickable) {
-					eventHolder.unbind("click").click(onClick);
-				}
-			}
-		});
-
-		plot.hooks.processDatapoints.push(function(plot, series, data, datapoints) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				processDatapoints(plot, series, data, datapoints);
-			}
-		});
-
-		plot.hooks.drawOverlay.push(function(plot, octx) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				drawOverlay(plot, octx);
-			}
-		});
-
-		plot.hooks.draw.push(function(plot, newCtx) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				draw(plot, newCtx);
-			}
-		});
-
-		function processDatapoints(plot, series, datapoints) {
-			if (!processed)	{
-				processed = true;
-				canvas = plot.getCanvas();
-				target = $(canvas).parent();
-				options = plot.getOptions();
-				plot.setData(combine(plot.getData()));
-			}
-		}
-
-		function combine(data) {
-
-			var total = 0,
-				combined = 0,
-				numCombined = 0,
-				color = options.series.pie.combine.color,
-				newdata = [];
-
-			// Fix up the raw data from Flot, ensuring the data is numeric
-
-			for (var i = 0; i < data.length; ++i) {
-
-				var value = data[i].data;
-
-				// If the data is an array, we'll assume that it's a standard
-				// Flot x-y pair, and are concerned only with the second value.
-
-				// Note how we use the original array, rather than creating a
-				// new one; this is more efficient and preserves any extra data
-				// that the user may have stored in higher indexes.
-
-				if ($.isArray(value) && value.length == 1) {
-    				value = value[0];
-				}
-
-				if ($.isArray(value)) {
-					// Equivalent to $.isNumeric() but compatible with jQuery < 1.7
-					if (!isNaN(parseFloat(value[1])) && isFinite(value[1])) {
-						value[1] = +value[1];
-					} else {
-						value[1] = 0;
-					}
-				} else if (!isNaN(parseFloat(value)) && isFinite(value)) {
-					value = [1, +value];
-				} else {
-					value = [1, 0];
-				}
-
-				data[i].data = [value];
-			}
-
-			// Sum up all the slices, so we can calculate percentages for each
-
-			for (var i = 0; i < data.length; ++i) {
-				total += data[i].data[0][1];
-			}
-
-			// Count the number of slices with percentages below the combine
-			// threshold; if it turns out to be just one, we won't combine.
-
-			for (var i = 0; i < data.length; ++i) {
-				var value = data[i].data[0][1];
-				if (value / total <= options.series.pie.combine.threshold) {
-					combined += value;
-					numCombined++;
-					if (!color) {
-						color = data[i].color;
-					}
-				}
-			}
-
-			for (var i = 0; i < data.length; ++i) {
-				var value = data[i].data[0][1];
-				if (numCombined < 2 || value / total > options.series.pie.combine.threshold) {
-					newdata.push(
-						$.extend(data[i], {     /* extend to allow keeping all other original data values
-						                           and using them e.g. in labelFormatter. */
-							data: [[1, value]],
-							color: data[i].color,
-							label: data[i].label,
-							angle: value * Math.PI * 2 / total,
-							percent: value / (total / 100)
-						})
-					);
-				}
-			}
-
-			if (numCombined > 1) {
-				newdata.push({
-					data: [[1, combined]],
-					color: color,
-					label: options.series.pie.combine.label,
-					angle: combined * Math.PI * 2 / total,
-					percent: combined / (total / 100)
-				});
-			}
-
-			return newdata;
-		}
-
-		function draw(plot, newCtx) {
-
-			if (!target) {
-				return; // if no series were passed
-			}
-
-			var canvasWidth = plot.getPlaceholder().width(),
-				canvasHeight = plot.getPlaceholder().height(),
-				legendWidth = target.children().filter(".legend").children().width() || 0;
-
-			ctx = newCtx;
-
-			// WARNING: HACK! REWRITE THIS CODE AS SOON AS POSSIBLE!
-
-			// When combining smaller slices into an 'other' slice, we need to
-			// add a new series.  Since Flot gives plugins no way to modify the
-			// list of series, the pie plugin uses a hack where the first call
-			// to processDatapoints results in a call to setData with the new
-			// list of series, then subsequent processDatapoints do nothing.
-
-			// The plugin-global 'processed' flag is used to control this hack;
-			// it starts out false, and is set to true after the first call to
-			// processDatapoints.
-
-			// Unfortunately this turns future setData calls into no-ops; they
-			// call processDatapoints, the flag is true, and nothing happens.
-
-			// To fix this we'll set the flag back to false here in draw, when
-			// all series have been processed, so the next sequence of calls to
-			// processDatapoints once again starts out with a slice-combine.
-			// This is really a hack; in 0.9 we need to give plugins a proper
-			// way to modify series before any processing begins.
-
-			processed = false;
-
-			// calculate maximum radius and center point
-
-			maxRadius =  Math.min(canvasWidth, canvasHeight / options.series.pie.tilt) / 2;
-			centerTop = canvasHeight / 2 + options.series.pie.offset.top;
-			centerLeft = canvasWidth / 2;
-
-			if (options.series.pie.offset.left == "auto") {
-				if (options.legend.position.match("w")) {
-					centerLeft += legendWidth / 2;
-				} else {
-					centerLeft -= legendWidth / 2;
-				}
-				if (centerLeft < maxRadius) {
-					centerLeft = maxRadius;
-				} else if (centerLeft > canvasWidth - maxRadius) {
-					centerLeft = canvasWidth - maxRadius;
-				}
-			} else {
-				centerLeft += options.series.pie.offset.left;
-			}
-
-			var slices = plot.getData(),
-				attempts = 0;
-
-			// Keep shrinking the pie's radius until drawPie returns true,
-			// indicating that all the labels fit, or we try too many times.
-
-			do {
-				if (attempts > 0) {
-					maxRadius *= REDRAW_SHRINK;
-				}
-				attempts += 1;
-				clear();
-				if (options.series.pie.tilt <= 0.8) {
-					drawShadow();
-				}
-			} while (!drawPie() && attempts < REDRAW_ATTEMPTS)
-
-			if (attempts >= REDRAW_ATTEMPTS) {
-				clear();
-				target.prepend("<div class='error'>Could not draw pie with labels contained inside canvas</div>");
-			}
-
-			if (plot.setSeries && plot.insertLegend) {
-				plot.setSeries(slices);
-				plot.insertLegend();
-			}
-
-			// we're actually done at this point, just defining internal functions at this point
-
-			function clear() {
-				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-				target.children().filter(".pieLabel, .pieLabelBackground").remove();
-			}
-
-			function drawShadow() {
-
-				var shadowLeft = options.series.pie.shadow.left;
-				var shadowTop = options.series.pie.shadow.top;
-				var edge = 10;
-				var alpha = options.series.pie.shadow.alpha;
-				var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
-
-				if (radius >= canvasWidth / 2 - shadowLeft || radius * options.series.pie.tilt >= canvasHeight / 2 - shadowTop || radius <= edge) {
-					return;	// shadow would be outside canvas, so don't draw it
-				}
-
-				ctx.save();
-				ctx.translate(shadowLeft,shadowTop);
-				ctx.globalAlpha = alpha;
-				ctx.fillStyle = "#000";
-
-				// center and rotate to starting position
-
-				ctx.translate(centerLeft,centerTop);
-				ctx.scale(1, options.series.pie.tilt);
-
-				//radius -= edge;
-
-				for (var i = 1; i <= edge; i++) {
-					ctx.beginPath();
-					ctx.arc(0, 0, radius, 0, Math.PI * 2, false);
-					ctx.fill();
-					radius -= i;
-				}
-
-				ctx.restore();
-			}
-
-			function drawPie() {
-
-				var startAngle = Math.PI * options.series.pie.startAngle;
-				var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
-
-				// center and rotate to starting position
-
-				ctx.save();
-				ctx.translate(centerLeft,centerTop);
-				ctx.scale(1, options.series.pie.tilt);
-				//ctx.rotate(startAngle); // start at top; -- This doesn't work properly in Opera
-
-				// draw slices
-
-				ctx.save();
-				var currentAngle = startAngle;
-				for (var i = 0; i < slices.length; ++i) {
-					slices[i].startAngle = currentAngle;
-					drawSlice(slices[i].angle, slices[i].color, true);
-				}
-				ctx.restore();
-
-				// draw slice outlines
-
-				if (options.series.pie.stroke.width > 0) {
-					ctx.save();
-					ctx.lineWidth = options.series.pie.stroke.width;
-					currentAngle = startAngle;
-					for (var i = 0; i < slices.length; ++i) {
-						drawSlice(slices[i].angle, options.series.pie.stroke.color, false);
-					}
-					ctx.restore();
-				}
-
-				// draw donut hole
-
-				drawDonutHole(ctx);
-
-				ctx.restore();
-
-				// Draw the labels, returning true if they fit within the plot
-
-				if (options.series.pie.label.show) {
-					return drawLabels();
-				} else return true;
-
-				function drawSlice(angle, color, fill) {
-
-					if (angle <= 0 || isNaN(angle)) {
-						return;
-					}
-
-					if (fill) {
-						ctx.fillStyle = color;
-					} else {
-						ctx.strokeStyle = color;
-						ctx.lineJoin = "round";
-					}
-
-					ctx.beginPath();
-					if (Math.abs(angle - Math.PI * 2) > 0.000000001) {
-						ctx.moveTo(0, 0); // Center of the pie
-					}
-
-					//ctx.arc(0, 0, radius, 0, angle, false); // This doesn't work properly in Opera
-					ctx.arc(0, 0, radius,currentAngle, currentAngle + angle / 2, false);
-					ctx.arc(0, 0, radius,currentAngle + angle / 2, currentAngle + angle, false);
-					ctx.closePath();
-					//ctx.rotate(angle); // This doesn't work properly in Opera
-					currentAngle += angle;
-
-					if (fill) {
-						ctx.fill();
-					} else {
-						ctx.stroke();
-					}
-				}
-
-				function drawLabels() {
-
-					var currentAngle = startAngle;
-					var radius = options.series.pie.label.radius > 1 ? options.series.pie.label.radius : maxRadius * options.series.pie.label.radius;
-
-					for (var i = 0; i < slices.length; ++i) {
-						if (slices[i].percent >= options.series.pie.label.threshold * 100) {
-							if (!drawLabel(slices[i], currentAngle, i)) {
-								return false;
-							}
-						}
-						currentAngle += slices[i].angle;
-					}
-
-					return true;
-
-					function drawLabel(slice, startAngle, index) {
-
-						if (slice.data[0][1] == 0) {
-							return true;
-						}
-
-						// format label text
-
-						var lf = options.legend.labelFormatter, text, plf = options.series.pie.label.formatter;
-
-						if (lf) {
-							text = lf(slice.label, slice);
-						} else {
-							text = slice.label;
-						}
-
-						if (plf) {
-							text = plf(text, slice);
-						}
-
-						var halfAngle = ((startAngle + slice.angle) + startAngle) / 2;
-						var x = centerLeft + Math.round(Math.cos(halfAngle) * radius);
-						var y = centerTop + Math.round(Math.sin(halfAngle) * radius) * options.series.pie.tilt;
-
-						var html = "<span class='pieLabel' id='pieLabel" + index + "' style='position:absolute;top:" + y + "px;left:" + x + "px;'>" + text + "</span>";
-						target.append(html);
-
-						var label = target.children("#pieLabel" + index);
-						var labelTop = (y - label.height() / 2);
-						var labelLeft = (x - label.width() / 2);
-
-						label.css("top", labelTop);
-						label.css("left", labelLeft);
-
-						// check to make sure that the label is not outside the canvas
-
-						if (0 - labelTop > 0 || 0 - labelLeft > 0 || canvasHeight - (labelTop + label.height()) < 0 || canvasWidth - (labelLeft + label.width()) < 0) {
-							return false;
-						}
-
-						if (options.series.pie.label.background.opacity != 0) {
-
-							// put in the transparent background separately to avoid blended labels and label boxes
-
-							var c = options.series.pie.label.background.color;
-
-							if (c == null) {
-								c = slice.color;
-							}
-
-							var pos = "top:" + labelTop + "px;left:" + labelLeft + "px;";
-							$("<div class='pieLabelBackground' style='position:absolute;width:" + label.width() + "px;height:" + label.height() + "px;" + pos + "background-color:" + c + ";'></div>")
-								.css("opacity", options.series.pie.label.background.opacity)
-								.insertBefore(label);
-						}
-
-						return true;
-					} // end individual label function
-				} // end drawLabels function
-			} // end drawPie function
-		} // end draw function
-
-		// Placed here because it needs to be accessed from multiple locations
-
-		function drawDonutHole(layer) {
-			if (options.series.pie.innerRadius > 0) {
-
-				// subtract the center
-
-				layer.save();
-				var innerRadius = options.series.pie.innerRadius > 1 ? options.series.pie.innerRadius : maxRadius * options.series.pie.innerRadius;
-				layer.globalCompositeOperation = "destination-out"; // this does not work with excanvas, but it will fall back to using the stroke color
-				layer.beginPath();
-				layer.fillStyle = options.series.pie.stroke.color;
-				layer.arc(0, 0, innerRadius, 0, Math.PI * 2, false);
-				layer.fill();
-				layer.closePath();
-				layer.restore();
-
-				// add inner stroke
-
-				layer.save();
-				layer.beginPath();
-				layer.strokeStyle = options.series.pie.stroke.color;
-				layer.arc(0, 0, innerRadius, 0, Math.PI * 2, false);
-				layer.stroke();
-				layer.closePath();
-				layer.restore();
-
-				// TODO: add extra shadow inside hole (with a mask) if the pie is tilted.
-			}
-		}
-
-		//-- Additional Interactive related functions --
-
-		function isPointInPoly(poly, pt) {
-			for(var c = false, i = -1, l = poly.length, j = l - 1; ++i < l; j = i)
-				((poly[i][1] <= pt[1] && pt[1] < poly[j][1]) || (poly[j][1] <= pt[1] && pt[1]< poly[i][1]))
-				&& (pt[0] < (poly[j][0] - poly[i][0]) * (pt[1] - poly[i][1]) / (poly[j][1] - poly[i][1]) + poly[i][0])
-				&& (c = !c);
-			return c;
-		}
-
-		function findNearbySlice(mouseX, mouseY) {
-
-			var slices = plot.getData(),
-				options = plot.getOptions(),
-				radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius,
-				x, y;
-
-			for (var i = 0; i < slices.length; ++i) {
-
-				var s = slices[i];
-
-				if (s.pie.show) {
-
-					ctx.save();
-					ctx.beginPath();
-					ctx.moveTo(0, 0); // Center of the pie
-					//ctx.scale(1, options.series.pie.tilt);	// this actually seems to break everything when here.
-					ctx.arc(0, 0, radius, s.startAngle, s.startAngle + s.angle / 2, false);
-					ctx.arc(0, 0, radius, s.startAngle + s.angle / 2, s.startAngle + s.angle, false);
-					ctx.closePath();
-					x = mouseX - centerLeft;
-					y = mouseY - centerTop;
-
-					if (ctx.isPointInPath) {
-						if (ctx.isPointInPath(mouseX - centerLeft, mouseY - centerTop)) {
-							ctx.restore();
-							return {
-								datapoint: [s.percent, s.data],
-								dataIndex: 0,
-								series: s,
-								seriesIndex: i
-							};
-						}
-					} else {
-
-						// excanvas for IE doesn;t support isPointInPath, this is a workaround.
-
-						var p1X = radius * Math.cos(s.startAngle),
-							p1Y = radius * Math.sin(s.startAngle),
-							p2X = radius * Math.cos(s.startAngle + s.angle / 4),
-							p2Y = radius * Math.sin(s.startAngle + s.angle / 4),
-							p3X = radius * Math.cos(s.startAngle + s.angle / 2),
-							p3Y = radius * Math.sin(s.startAngle + s.angle / 2),
-							p4X = radius * Math.cos(s.startAngle + s.angle / 1.5),
-							p4Y = radius * Math.sin(s.startAngle + s.angle / 1.5),
-							p5X = radius * Math.cos(s.startAngle + s.angle),
-							p5Y = radius * Math.sin(s.startAngle + s.angle),
-							arrPoly = [[0, 0], [p1X, p1Y], [p2X, p2Y], [p3X, p3Y], [p4X, p4Y], [p5X, p5Y]],
-							arrPoint = [x, y];
-
-						// TODO: perhaps do some mathmatical trickery here with the Y-coordinate to compensate for pie tilt?
-
-						if (isPointInPoly(arrPoly, arrPoint)) {
-							ctx.restore();
-							return {
-								datapoint: [s.percent, s.data],
-								dataIndex: 0,
-								series: s,
-								seriesIndex: i
-							};
-						}
-					}
-
-					ctx.restore();
-				}
-			}
-
-			return null;
-		}
-
-		function onMouseMove(e) {
-			triggerClickHoverEvent("plothover", e);
-		}
-
-		function onClick(e) {
-			triggerClickHoverEvent("plotclick", e);
-		}
-
-		// trigger click or hover event (they send the same parameters so we share their code)
-
-		function triggerClickHoverEvent(eventname, e) {
-
-			var offset = plot.offset();
-			var canvasX = parseInt(e.pageX - offset.left);
-			var canvasY =  parseInt(e.pageY - offset.top);
-			var item = findNearbySlice(canvasX, canvasY);
-
-			if (options.grid.autoHighlight) {
-
-				// clear auto-highlights
-
-				for (var i = 0; i < highlights.length; ++i) {
-					var h = highlights[i];
-					if (h.auto == eventname && !(item && h.series == item.series)) {
-						unhighlight(h.series);
-					}
-				}
-			}
-
-			// highlight the slice
-
-			if (item) {
-				highlight(item.series, eventname);
-			}
-
-			// trigger any hover bind events
-
-			var pos = { pageX: e.pageX, pageY: e.pageY };
-			target.trigger(eventname, [pos, item]);
-		}
-
-		function highlight(s, auto) {
-			//if (typeof s == "number") {
-			//	s = series[s];
-			//}
-
-			var i = indexOfHighlight(s);
-
-			if (i == -1) {
-				highlights.push({ series: s, auto: auto });
-				plot.triggerRedrawOverlay();
-			} else if (!auto) {
-				highlights[i].auto = false;
-			}
-		}
-
-		function unhighlight(s) {
-			if (s == null) {
-				highlights = [];
-				plot.triggerRedrawOverlay();
-			}
-
-			//if (typeof s == "number") {
-			//	s = series[s];
-			//}
-
-			var i = indexOfHighlight(s);
-
-			if (i != -1) {
-				highlights.splice(i, 1);
-				plot.triggerRedrawOverlay();
-			}
-		}
-
-		function indexOfHighlight(s) {
-			for (var i = 0; i < highlights.length; ++i) {
-				var h = highlights[i];
-				if (h.series == s)
-					return i;
-			}
-			return -1;
-		}
-
-		function drawOverlay(plot, octx) {
-
-			var options = plot.getOptions();
-
-			var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
-
-			octx.save();
-			octx.translate(centerLeft, centerTop);
-			octx.scale(1, options.series.pie.tilt);
-
-			for (var i = 0; i < highlights.length; ++i) {
-				drawHighlight(highlights[i].series);
-			}
-
-			drawDonutHole(octx);
-
-			octx.restore();
-
-			function drawHighlight(series) {
-
-				if (series.angle <= 0 || isNaN(series.angle)) {
-					return;
-				}
-
-				//octx.fillStyle = parseColor(options.series.pie.highlight.color).scale(null, null, null, options.series.pie.highlight.opacity).toString();
-				octx.fillStyle = "rgba(255, 255, 255, " + options.series.pie.highlight.opacity + ")"; // this is temporary until we have access to parseColor
-				octx.beginPath();
-				if (Math.abs(series.angle - Math.PI * 2) > 0.000000001) {
-					octx.moveTo(0, 0); // Center of the pie
-				}
-				octx.arc(0, 0, radius, series.startAngle, series.startAngle + series.angle / 2, false);
-				octx.arc(0, 0, radius, series.startAngle + series.angle / 2, series.startAngle + series.angle, false);
-				octx.closePath();
-				octx.fill();
-			}
-		}
-	} // end init (plugin body)
-
-	// define pie specific options and their default values
-
-	var options = {
-		series: {
-			pie: {
-				show: false,
-				radius: "auto",	// actual radius of the visible pie (based on full calculated radius if <=1, or hard pixel value)
-				innerRadius: 0, /* for donut */
-				startAngle: 3/2,
-				tilt: 1,
-				shadow: {
-					left: 5,	// shadow left offset
-					top: 15,	// shadow top offset
-					alpha: 0.02	// shadow alpha
-				},
-				offset: {
-					top: 0,
-					left: "auto"
-				},
-				stroke: {
-					color: "#fff",
-					width: 1
-				},
-				label: {
-					show: "auto",
-					formatter: function(label, slice) {
-						return "<div style='font-size:x-small;text-align:center;padding:2px;color:" + slice.color + ";'>" + label + "<br/>" + Math.round(slice.percent) + "%</div>";
-					},	// formatter function
-					radius: 1,	// radius at which to place the labels (based on full calculated radius if <=1, or hard pixel value)
-					background: {
-						color: null,
-						opacity: 0
-					},
-					threshold: 0	// percentage at which to hide the label (i.e. the slice is too narrow)
-				},
-				combine: {
-					threshold: -1,	// percentage at which to combine little slices into one larger slice
-					color: null,	// color to give the new slice (auto-generated if null)
-					label: "Other"	// label to give the new slice
-				},
-				highlight: {
-					//color: "#fff",		// will add this functionality once parseColor is available
-					opacity: 0.5
-				}
-			}
-		}
-	};
-
-	$.plot.plugins.push({
-		init: init,
-		options: options,
-		name: "pie",
-		version: "1.1"
-	});
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
-
-/***/ }),
-
-/***/ 1730:
+/***/ 1431:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2788,145 +1409,336 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-md-6" },
+        { staticClass: "col-md-12" },
         [
           _c(
             "card",
             {
               attrs: {
-                title: "<i class='ti-bar-chart-alt'></i> Spline Line Chart"
+                title:
+                  "<i class='fa fa-fw ti-settings'></i> 2D Transforms Flat Buttons"
               }
             },
             [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend1" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart",
-                attrs: { id: "basicflot" }
-              })
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-bar-chart-alt'></i> Line Chart" } },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart1",
-                attrs: { id: "line-chart" }
-              })
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            {
-              staticClass: "body-bg",
-              attrs: { title: "<i class='ti-bar-chart'></i> Bar Charts" }
-            },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend-barchart" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart1",
-                attrs: { id: "bar-chart" }
-              })
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='ti-bar-chart'></i> Stacked Bar Charts"
-              }
-            },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend-stac" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart1",
-                attrs: { id: "bar-chart-stacked" }
-              })
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-4" },
-        [
-          _c(
-            "card",
-            { attrs: { title: " <i class='ti-pie-chart'></i> Donut" } },
-            [_c("div", { staticClass: "flotChart2", attrs: { id: "donut" } })]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-lg-8" },
-        [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-pie-chart'></i> Pie Charts" } },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c("div", {
-                    staticClass: "flotChart1",
-                    attrs: { id: "placeholdertranslabel" }
-                  })
+              _c("div", { staticClass: "flatbuttons" }, [
+                _c("div", { staticClass: "text-left" }, [
+                  _c("h5", [_vm._v("Radiused Buttons")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-default btn-lg hvr-buzz butn",
+                          attrs: { type: "button" }
+                        },
+                        [_vm._v("Buzz")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-primary-flat hvr-hang"
+                        },
+                        [_vm._v("Hang\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-action-flat hvr-sink"
+                        },
+                        [_vm._v("Sink\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-highlight-flat hvr-pop"
+                        },
+                        [_vm._v("Pop\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-caution-flat hvr-float"
+                        },
+                        [_vm._v("Float\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-royal-flat hvr-rotate"
+                        },
+                        [_vm._v("Rotate\n                                ")]
+                      )
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c("div", {
-                    staticClass: "flotChart1",
-                    attrs: { id: "placeholdertiltedpie" }
-                  })
+                _c("div", { staticClass: "text-left btn-rounded" }, [
+                  _c("h5", [_vm._v("Rounded Buttons")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-default button-pill button-flat hvr-grow"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Grow Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-primary-flat hvr-shrink"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    ShrinkButton\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-action-flat hvr-pulse"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Pulse Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-highlight-flat hvr-pulse-grow"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Pulse-grow\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-caution-flat hvr-pulse-shrink"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Pulse-shrink\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-royal-flat hvr-push"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Push Button\n                                "
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "text-left" }, [
+                  _c("h5", [_vm._v("Rectangle Box")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-default button-flat hvr-wobble-skew"
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-primary-flat hvr-wobble-bottom"
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-action-flat hvr-wobble-to-top-right"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-highlight-flat hvr-wobble-vertical"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-caution-flat hvr-wobble-horizontal"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-royal-flat hvr-skew-backward"
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "text-left" }, [
+                  _c("h5", [_vm._v("Cirlce Buttons")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-default button-circle button-flat hvr-wobble-top"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-primary-flat hvr-skew"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-action-flat hvr-wobble-to-top-right"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-highlight-flat hvr-pulse-grow"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-caution-flat hvr-grow"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-royal-flat hvr-buzz-out"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ])
+                  ])
                 ])
               ])
             ]
@@ -2939,18 +1751,259 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-lg-12" },
+        { staticClass: "col-md-6" },
         [
           _c(
             "card",
             {
-              attrs: { title: '<i class="ti-bar-chart"></i> Real Time Charts' }
+              attrs: {
+                title:
+                  "<i class='ti-bell'></i> Shadow and Glow Transitions Buttons"
+              }
             },
             [
-              _c("div", {
-                staticClass: "flotChart3",
-                attrs: { id: "realtime" }
-              })
+              _c("div", { staticClass: "flatbuttons_small" }, [
+                _c("ul", [
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-default button-glow button-rounded button-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-primary-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-action-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-highlight-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-caution-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-royal-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-rocket'></i> Quick Shortcuts" } },
+            [
+              _c("div", { staticClass: "quick_shortcuts" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-6 col-md-6" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-list-alt" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Apps\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-warning  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-bookmark" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Bookmarks\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-signal" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Reports\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-comment" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Comments\n                                ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-6 col-md-6" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-user" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Users\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-file" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Notes\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-picture-o" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Photos\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-tag" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Tags\n                                ")
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-12 col-md-12 mt-2" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success btn-lg btn-block",
+                      attrs: { role: "button" }
+                    },
+                    [
+                      _c("span", { staticClass: "fa fa-globe" }),
+                      _vm._v(" Website\n                            ")
+                    ]
+                  )
+                ])
+              ])
             ]
           )
         ],
@@ -2961,16 +2014,774 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-lg-6" },
+        { staticClass: "col-md-12" },
         [
           _c(
             "card",
-            { attrs: { title: "<i class='ti-bar-chart'></i> Area Chart" } },
+            { attrs: { title: "<i class='ti-rocket'></i> 3-D Buttons" } },
             [
-              _c("div", {
-                staticClass: "flotChart3",
-                attrs: { id: "area-chart" }
-              })
+              _c("div", { staticClass: "flatbuttons" }, [
+                _c("ul", [
+                  _c("li", [
+                    _c(
+                      "button",
+                      { staticClass: "button button-default button-3d" },
+                      [_vm._v("Button")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-primary button-rounded btn_3d"
+                      },
+                      [_vm._v("Button\n                            ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-action button-pill btn_3d"
+                      },
+                      [_vm._v("Button\n                            ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-highlight button-circle btn_3d"
+                      },
+                      [_vm._v("Button\n                            ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-caution icon-btn btn_3d"
+                      },
+                      [
+                        _c("i", { staticClass: "fa ti-instagram" }),
+                        _vm._v(" Button\n                            ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      { staticClass: "button button-3d button-royal btn_3d" },
+                      [_vm._v("Button")]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class='ti-arrow-circle-up'></i> Spinner Buttons"
+              }
+            },
+            [
+              _c("div", { staticClass: "pad_left" }, [
+                _c("div", { staticClass: "text-left" }, [
+                  _c("div", { staticClass: "row " }, [
+                    _c("div", { staticClass: "col-lg-12" }, [
+                      _c("h5", [_vm._v("Buttons")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "expand-left" }
+                        },
+                        [
+                          _vm._v(
+                            "Expand-left\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "expand-right" }
+                        },
+                        [
+                          _vm._v(
+                            "Expand-right\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "expand-up" }
+                        },
+                        [_vm._v("Expand-up\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "slide-down" }
+                        },
+                        [_vm._v("Slide-down\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "contract" }
+                        },
+                        [_vm._v("Contract")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "zoom-in" }
+                        },
+                        [_vm._v("Zoom-in\n                                ")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row " }, [
+                    _c("div", { staticClass: "col-lg-12" }, [
+                      _c("h5", [_vm._v("Icon Buttons")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "slide-left" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa ti-arrow-circle-left",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(
+                            " Slide-left\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "slide-right" }
+                        },
+                        [
+                          _vm._v("Slide-right "),
+                          _c("i", {
+                            staticClass: "fa ti-arrow-circle-right",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "slide-up" }
+                        },
+                        [
+                          _vm._v("Slide-up "),
+                          _c("i", {
+                            staticClass: "fa ti-arrow-circle-up",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "contract" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa ti-filter",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(
+                            "\n                                    Contract\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "zoom-out" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa ti-zoom-out",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" Zoom-out\n                                ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12 col-sm-6" }, [
+                      _c("div", { staticClass: "row text-left" }, [
+                        _c("div", { staticClass: "col-lg-12" }, [
+                          _c("h5", [_vm._v("Button Sizes")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-4" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-warning btn-lg button_normal text-white",
+                              attrs: { "data-style": "expand-right" }
+                            },
+                            [
+                              _vm._v(
+                                "Large\n                                        "
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-4" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-warning  button_normal text-white",
+                              attrs: { "data-style": "expand-right" }
+                            },
+                            [
+                              _vm._v(
+                                "Small\n                                        "
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-12 col-sm-6" }, [
+                      _c("div", { staticClass: "row text-left" }, [
+                        _c("div", { staticClass: "col-lg-12" }, [
+                          _c("h5", [_vm._v("Progress Button Spinners")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-5" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-success button_progress text-white",
+                              attrs: { "data-style": "expand-right" }
+                            },
+                            [
+                              _vm._v(
+                                "Expand-right\n                                        "
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-5" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-success button_progress text-white",
+                              attrs: { "data-style": "contract" }
+                            },
+                            [
+                              _vm._v(
+                                "contract\n                                        "
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            {
+              attrs: { title: "<i class='fa fa-fw ti-settings'></i> Buttons" }
+            },
+            [
+              _c("div", { staticClass: "flatbuttons" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("h5", { staticClass: "example-title" }, [
+                      _vm._v("Icon Button & Dropdown")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "example example-buttons" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-default m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-location-pin",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-primary m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-layout-grid3",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-success m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-bell",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-info m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-calendar",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-icon btn-warning btn-round m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-time",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-icon btn-danger btn-round m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-flag-alt-2",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "btn-group drop_btn",
+                          attrs: { role: "group" }
+                        },
+                        [
+                          _c(
+                            "b-dropdown",
+                            {
+                              staticClass: "pt-0",
+                              attrs: {
+                                right: "",
+                                split: "",
+                                variant: "primary"
+                              }
+                            },
+                            [
+                              _c("template", { slot: "button-content" }, [
+                                _c("i", { staticClass: "ti-calendar more" })
+                              ]),
+                              _vm._v(" "),
+                              _c("b-dropdown-item", [_vm._v("Dropdown")]),
+                              _vm._v(" "),
+                              _c("b-dropdown-item", [_vm._v("Dropdown")])
+                            ],
+                            2
+                          )
+                        ],
+                        1
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 " }, [
+                    _c("div", { staticClass: "example-wrap" }, [
+                      _c("h5", { staticClass: "example-title" }, [
+                        _vm._v("Button Animation")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "btn-group display_media",
+                          attrs: { role: "group" }
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-sm-6" }, [
+                              _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "btn btn-animate btn-animate-side btn-success m-r-50",
+                                  attrs: { type: "button" }
+                                },
+                                [
+                                  _c("span", [
+                                    _c("i", {
+                                      staticClass: "icon fa fa-fw ti-import",
+                                      attrs: { "aria-hidden": "true" }
+                                    }),
+                                    _vm._v("Side Animation")
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-6" }, [
+                              _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "btn btn-animate btn-animate-vertical btn-lg btn-success m-r-50",
+                                  attrs: { type: "button" }
+                                },
+                                [
+                                  _c("span", [
+                                    _c("i", {
+                                      staticClass: "icon fa fa-fw ti-import",
+                                      attrs: { "aria-hidden": "true" }
+                                    }),
+                                    _vm._v(
+                                      "Vertical\n                                                                  Animation"
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class='ti-layout-column3'></i> Group buttons"
+              }
+            },
+            [
+              _c("div", [
+                _c("div", { staticClass: "col-md-12 text-center" }, [
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-thumbs-up" })]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-thumbs-down" })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-floppy-o" })]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-trash" })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-check" }),
+                        _vm._v(" Sign Up\n                            ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-default",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-remove" }),
+                        _vm._v(" Reset\n                            ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-lg",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Large")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or or-lg" }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success btn-lg",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Large")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Default")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Success")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary ",
+                        attrs: { type: "button" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Small\n                            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or or-sm" }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success ",
+                        attrs: { type: "button" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Small\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br")
+                ])
+              ])
             ]
           )
         ],
@@ -2979,18 +2790,224 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "col-lg-6" },
+        { staticClass: "col-md-6" },
         [
           _c(
             "card",
             {
-              attrs: { title: "<i class='ti-bar-chart'></i> Spline Area Chart" }
+              staticClass: "labled-buttons",
+              attrs: { title: "<i class='ti-save'></i> Buttons With Labels" }
             },
             [
-              _c("div", {
-                staticClass: "flotChart3",
-                attrs: { id: "chart-spline" }
-              })
+              _c(
+                "div",
+                { staticClass: "col-lg-12 col-md-12 col-12 col-sm-12" },
+                [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-success",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-check" })
+                          ]),
+                          _vm._v(" Success\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-danger",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-remove" })
+                          ]),
+                          _vm._v(" Cancel\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-warning",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-bookmark" })
+                          ]),
+                          _vm._v(" Bookmark\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-primary",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-camera" })
+                          ]),
+                          _vm._v(" Camera\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-default text-dark",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-chevron-left" })
+                          ]),
+                          _vm._v(" Left\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-default text-dark",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _vm._v("\n                                Right "),
+                          _c("span", { staticClass: "btn-label label-right" }, [
+                            _c("i", { staticClass: "fa fa-chevron-right" })
+                          ])
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-success",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-fw ti-thumb-up" })
+                          ]),
+                          _vm._v(" Up\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-warning",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-fw ti-thumb-down" })
+                          ]),
+                          _vm._v(" Down\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-info",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-refresh" })
+                          ]),
+                          _vm._v(" Refresh\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-primary",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-trash" })
+                          ]),
+                          _vm._v(" Trash\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-warning btn-labeled text-white",
+                          attrs: { role: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label butn_clr" }, [
+                            _c("i", { staticClass: "fa fa-info-circle" })
+                          ]),
+                          _vm._v(" Info Web\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success btn-labeled text-white",
+                          attrs: { role: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-globe" })
+                          ]),
+                          _vm._v(" Web\n                            ")
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
             ]
           )
         ],
@@ -3005,25 +3022,29 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6998e6c6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-04c1e435", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 479:
+/***/ 457:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1723)
+  __webpack_require__(1417)
+  __webpack_require__(1419)
+  __webpack_require__(1421)
+  __webpack_require__(1423)
+  __webpack_require__(1425)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1725)
+var __vue_script__ = __webpack_require__(1427)
 /* template */
-var __vue_template__ = __webpack_require__(1730)
+var __vue_template__ = __webpack_require__(1431)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -3040,7 +3061,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/flot_charts.vue"
+Component.options.__file = "resources/components/pages/buttons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -3049,9 +3070,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6998e6c6", Component.options)
+    hotAPI.createRecord("data-v-04c1e435", Component.options)
   } else {
-    hotAPI.reload("data-v-6998e6c6", Component.options)
+    hotAPI.reload("data-v-04c1e435", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -3063,7 +3084,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 520:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -13435,19 +13456,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 522:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(523)
+  __webpack_require__(528)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(525)
+var __vue_script__ = __webpack_require__(530)
 /* template */
-var __vue_template__ = __webpack_require__(526)
+var __vue_template__ = __webpack_require__(531)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -13487,13 +13508,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 523:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(524);
+var content = __webpack_require__(529);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -13514,7 +13535,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 524:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -13529,7 +13550,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 525:
+/***/ 530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13574,7 +13595,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 526:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -13633,3568 +13654,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
-
-/***/ }),
-
-/***/ 661:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Javascript plotting library for jQuery, version 0.8.3.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-*/
-
-// first an inline dependency, jquery.colorhelpers.js, we inline it here
-// for convenience
-
-/* Plugin for jQuery for working with colors.
- *
- * Version 1.1.
- *
- * Inspiration from jQuery color animation plugin by John Resig.
- *
- * Released under the MIT license by Ole Laursen, October 2009.
- *
- * Examples:
- *
- *   $.color.parse("#fff").scale('rgb', 0.25).add('a', -0.5).toString()
- *   var c = $.color.extract($("#mydiv"), 'background-color');
- *   console.log(c.r, c.g, c.b, c.a);
- *   $.color.make(100, 50, 25, 0.4).toString() // returns "rgba(100,50,25,0.4)"
- *
- * Note that .scale() and .add() return the same modified object
- * instead of making a new one.
- *
- * V. 1.1: Fix error handling so e.g. parsing an empty string does
- * produce a color rather than just crashing.
- */
-(function($){$.color={};$.color.make=function(r,g,b,a){var o={};o.r=r||0;o.g=g||0;o.b=b||0;o.a=a!=null?a:1;o.add=function(c,d){for(var i=0;i<c.length;++i)o[c.charAt(i)]+=d;return o.normalize()};o.scale=function(c,f){for(var i=0;i<c.length;++i)o[c.charAt(i)]*=f;return o.normalize()};o.toString=function(){if(o.a>=1){return"rgb("+[o.r,o.g,o.b].join(",")+")"}else{return"rgba("+[o.r,o.g,o.b,o.a].join(",")+")"}};o.normalize=function(){function clamp(min,value,max){return value<min?min:value>max?max:value}o.r=clamp(0,parseInt(o.r),255);o.g=clamp(0,parseInt(o.g),255);o.b=clamp(0,parseInt(o.b),255);o.a=clamp(0,o.a,1);return o};o.clone=function(){return $.color.make(o.r,o.b,o.g,o.a)};return o.normalize()};$.color.extract=function(elem,css){var c;do{c=elem.css(css).toLowerCase();if(c!=""&&c!="transparent")break;elem=elem.parent()}while(elem.length&&!$.nodeName(elem.get(0),"body"));if(c=="rgba(0, 0, 0, 0)")c="transparent";return $.color.parse(c)};$.color.parse=function(str){var res,m=$.color.make;if(res=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(str))return m(parseInt(res[1],10),parseInt(res[2],10),parseInt(res[3],10));if(res=/rgba\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]+(?:\.[0-9]+)?)\s*\)/.exec(str))return m(parseInt(res[1],10),parseInt(res[2],10),parseInt(res[3],10),parseFloat(res[4]));if(res=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(str))return m(parseFloat(res[1])*2.55,parseFloat(res[2])*2.55,parseFloat(res[3])*2.55);if(res=/rgba\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\s*\)/.exec(str))return m(parseFloat(res[1])*2.55,parseFloat(res[2])*2.55,parseFloat(res[3])*2.55,parseFloat(res[4]));if(res=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(str))return m(parseInt(res[1],16),parseInt(res[2],16),parseInt(res[3],16));if(res=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(str))return m(parseInt(res[1]+res[1],16),parseInt(res[2]+res[2],16),parseInt(res[3]+res[3],16));var name=$.trim(str).toLowerCase();if(name=="transparent")return m(255,255,255,0);else{res=lookupColors[name]||[0,0,0];return m(res[0],res[1],res[2])}};var lookupColors={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0]}})(jQuery);
-
-// the actual Flot code
-(function($) {
-
-	// Cache the prototype hasOwnProperty for faster access
-
-	var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-    // A shim to provide 'detach' to jQuery versions prior to 1.4.  Using a DOM
-    // operation produces the same effect as detach, i.e. removing the element
-    // without touching its jQuery data.
-
-    // Do not merge this into Flot 0.9, since it requires jQuery 1.4.4+.
-
-    if (!$.fn.detach) {
-        $.fn.detach = function() {
-            return this.each(function() {
-                if (this.parentNode) {
-                    this.parentNode.removeChild( this );
-                }
-            });
-        };
-    }
-
-	///////////////////////////////////////////////////////////////////////////
-	// The Canvas object is a wrapper around an HTML5 <canvas> tag.
-	//
-	// @constructor
-	// @param {string} cls List of classes to apply to the canvas.
-	// @param {element} container Element onto which to append the canvas.
-	//
-	// Requiring a container is a little iffy, but unfortunately canvas
-	// operations don't work unless the canvas is attached to the DOM.
-
-	function Canvas(cls, container) {
-
-		var element = container.children("." + cls)[0];
-
-		if (element == null) {
-
-			element = document.createElement("canvas");
-			element.className = cls;
-
-			$(element).css({ direction: "ltr", position: "absolute", left: 0, top: 0 })
-				.appendTo(container);
-
-			// If HTML5 Canvas isn't available, fall back to [Ex|Flash]canvas
-
-			if (!element.getContext) {
-				if (window.G_vmlCanvasManager) {
-					element = window.G_vmlCanvasManager.initElement(element);
-				} else {
-					throw new Error("Canvas is not available. If you're using IE with a fall-back such as Excanvas, then there's either a mistake in your conditional include, or the page has no DOCTYPE and is rendering in Quirks Mode.");
-				}
-			}
-		}
-
-		this.element = element;
-
-		var context = this.context = element.getContext("2d");
-
-		// Determine the screen's ratio of physical to device-independent
-		// pixels.  This is the ratio between the canvas width that the browser
-		// advertises and the number of pixels actually present in that space.
-
-		// The iPhone 4, for example, has a device-independent width of 320px,
-		// but its screen is actually 640px wide.  It therefore has a pixel
-		// ratio of 2, while most normal devices have a ratio of 1.
-
-		var devicePixelRatio = window.devicePixelRatio || 1,
-			backingStoreRatio =
-				context.webkitBackingStorePixelRatio ||
-				context.mozBackingStorePixelRatio ||
-				context.msBackingStorePixelRatio ||
-				context.oBackingStorePixelRatio ||
-				context.backingStorePixelRatio || 1;
-
-		this.pixelRatio = devicePixelRatio / backingStoreRatio;
-
-		// Size the canvas to match the internal dimensions of its container
-
-		this.resize(container.width(), container.height());
-
-		// Collection of HTML div layers for text overlaid onto the canvas
-
-		this.textContainer = null;
-		this.text = {};
-
-		// Cache of text fragments and metrics, so we can avoid expensively
-		// re-calculating them when the plot is re-rendered in a loop.
-
-		this._textCache = {};
-	}
-
-	// Resizes the canvas to the given dimensions.
-	//
-	// @param {number} width New width of the canvas, in pixels.
-	// @param {number} width New height of the canvas, in pixels.
-
-	Canvas.prototype.resize = function(width, height) {
-
-		if (width <= 0 || height <= 0) {
-			throw new Error("Invalid dimensions for plot, width = " + width + ", height = " + height);
-		}
-
-		var element = this.element,
-			context = this.context,
-			pixelRatio = this.pixelRatio;
-
-		// Resize the canvas, increasing its density based on the display's
-		// pixel ratio; basically giving it more pixels without increasing the
-		// size of its element, to take advantage of the fact that retina
-		// displays have that many more pixels in the same advertised space.
-
-		// Resizing should reset the state (excanvas seems to be buggy though)
-
-		if (this.width != width) {
-			element.width = width * pixelRatio;
-			element.style.width = width + "px";
-			this.width = width;
-		}
-
-		if (this.height != height) {
-			element.height = height * pixelRatio;
-			element.style.height = height + "px";
-			this.height = height;
-		}
-
-		// Save the context, so we can reset in case we get replotted.  The
-		// restore ensure that we're really back at the initial state, and
-		// should be safe even if we haven't saved the initial state yet.
-
-		context.restore();
-		context.save();
-
-		// Scale the coordinate space to match the display density; so even though we
-		// may have twice as many pixels, we still want lines and other drawing to
-		// appear at the same size; the extra pixels will just make them crisper.
-
-		context.scale(pixelRatio, pixelRatio);
-	};
-
-	// Clears the entire canvas area, not including any overlaid HTML text
-
-	Canvas.prototype.clear = function() {
-		this.context.clearRect(0, 0, this.width, this.height);
-	};
-
-	// Finishes rendering the canvas, including managing the text overlay.
-
-	Canvas.prototype.render = function() {
-
-		var cache = this._textCache;
-
-		// For each text layer, add elements marked as active that haven't
-		// already been rendered, and remove those that are no longer active.
-
-		for (var layerKey in cache) {
-			if (hasOwnProperty.call(cache, layerKey)) {
-
-				var layer = this.getTextLayer(layerKey),
-					layerCache = cache[layerKey];
-
-				layer.hide();
-
-				for (var styleKey in layerCache) {
-					if (hasOwnProperty.call(layerCache, styleKey)) {
-						var styleCache = layerCache[styleKey];
-						for (var key in styleCache) {
-							if (hasOwnProperty.call(styleCache, key)) {
-
-								var positions = styleCache[key].positions;
-
-								for (var i = 0, position; position = positions[i]; i++) {
-									if (position.active) {
-										if (!position.rendered) {
-											layer.append(position.element);
-											position.rendered = true;
-										}
-									} else {
-										positions.splice(i--, 1);
-										if (position.rendered) {
-											position.element.detach();
-										}
-									}
-								}
-
-								if (positions.length == 0) {
-									delete styleCache[key];
-								}
-							}
-						}
-					}
-				}
-
-				layer.show();
-			}
-		}
-	};
-
-	// Creates (if necessary) and returns the text overlay container.
-	//
-	// @param {string} classes String of space-separated CSS classes used to
-	//     uniquely identify the text layer.
-	// @return {object} The jQuery-wrapped text-layer div.
-
-	Canvas.prototype.getTextLayer = function(classes) {
-
-		var layer = this.text[classes];
-
-		// Create the text layer if it doesn't exist
-
-		if (layer == null) {
-
-			// Create the text layer container, if it doesn't exist
-
-			if (this.textContainer == null) {
-				this.textContainer = $("<div class='flot-text'></div>")
-					.css({
-						position: "absolute",
-						top: 0,
-						left: 0,
-						bottom: 0,
-						right: 0,
-						'font-size': "smaller",
-						color: "#545454"
-					})
-					.insertAfter(this.element);
-			}
-
-			layer = this.text[classes] = $("<div></div>")
-				.addClass(classes)
-				.css({
-					position: "absolute",
-					top: 0,
-					left: 0,
-					bottom: 0,
-					right: 0
-				})
-				.appendTo(this.textContainer);
-		}
-
-		return layer;
-	};
-
-	// Creates (if necessary) and returns a text info object.
-	//
-	// The object looks like this:
-	//
-	// {
-	//     width: Width of the text's wrapper div.
-	//     height: Height of the text's wrapper div.
-	//     element: The jQuery-wrapped HTML div containing the text.
-	//     positions: Array of positions at which this text is drawn.
-	// }
-	//
-	// The positions array contains objects that look like this:
-	//
-	// {
-	//     active: Flag indicating whether the text should be visible.
-	//     rendered: Flag indicating whether the text is currently visible.
-	//     element: The jQuery-wrapped HTML div containing the text.
-	//     x: X coordinate at which to draw the text.
-	//     y: Y coordinate at which to draw the text.
-	// }
-	//
-	// Each position after the first receives a clone of the original element.
-	//
-	// The idea is that that the width, height, and general 'identity' of the
-	// text is constant no matter where it is placed; the placements are a
-	// secondary property.
-	//
-	// Canvas maintains a cache of recently-used text info objects; getTextInfo
-	// either returns the cached element or creates a new entry.
-	//
-	// @param {string} layer A string of space-separated CSS classes uniquely
-	//     identifying the layer containing this text.
-	// @param {string} text Text string to retrieve info for.
-	// @param {(string|object)=} font Either a string of space-separated CSS
-	//     classes or a font-spec object, defining the text's font and style.
-	// @param {number=} angle Angle at which to rotate the text, in degrees.
-	//     Angle is currently unused, it will be implemented in the future.
-	// @param {number=} width Maximum width of the text before it wraps.
-	// @return {object} a text info object.
-
-	Canvas.prototype.getTextInfo = function(layer, text, font, angle, width) {
-
-		var textStyle, layerCache, styleCache, info;
-
-		// Cast the value to a string, in case we were given a number or such
-
-		text = "" + text;
-
-		// If the font is a font-spec object, generate a CSS font definition
-
-		if (typeof font === "object") {
-			textStyle = font.style + " " + font.variant + " " + font.weight + " " + font.size + "px/" + font.lineHeight + "px " + font.family;
-		} else {
-			textStyle = font;
-		}
-
-		// Retrieve (or create) the cache for the text's layer and styles
-
-		layerCache = this._textCache[layer];
-
-		if (layerCache == null) {
-			layerCache = this._textCache[layer] = {};
-		}
-
-		styleCache = layerCache[textStyle];
-
-		if (styleCache == null) {
-			styleCache = layerCache[textStyle] = {};
-		}
-
-		info = styleCache[text];
-
-		// If we can't find a matching element in our cache, create a new one
-
-		if (info == null) {
-
-			var element = $("<div></div>").html(text)
-				.css({
-					position: "absolute",
-					'max-width': width,
-					top: -9999
-				})
-				.appendTo(this.getTextLayer(layer));
-
-			if (typeof font === "object") {
-				element.css({
-					font: textStyle,
-					color: font.color
-				});
-			} else if (typeof font === "string") {
-				element.addClass(font);
-			}
-
-			info = styleCache[text] = {
-				width: element.outerWidth(true),
-				height: element.outerHeight(true),
-				element: element,
-				positions: []
-			};
-
-			element.detach();
-		}
-
-		return info;
-	};
-
-	// Adds a text string to the canvas text overlay.
-	//
-	// The text isn't drawn immediately; it is marked as rendering, which will
-	// result in its addition to the canvas on the next render pass.
-	//
-	// @param {string} layer A string of space-separated CSS classes uniquely
-	//     identifying the layer containing this text.
-	// @param {number} x X coordinate at which to draw the text.
-	// @param {number} y Y coordinate at which to draw the text.
-	// @param {string} text Text string to draw.
-	// @param {(string|object)=} font Either a string of space-separated CSS
-	//     classes or a font-spec object, defining the text's font and style.
-	// @param {number=} angle Angle at which to rotate the text, in degrees.
-	//     Angle is currently unused, it will be implemented in the future.
-	// @param {number=} width Maximum width of the text before it wraps.
-	// @param {string=} halign Horizontal alignment of the text; either "left",
-	//     "center" or "right".
-	// @param {string=} valign Vertical alignment of the text; either "top",
-	//     "middle" or "bottom".
-
-	Canvas.prototype.addText = function(layer, x, y, text, font, angle, width, halign, valign) {
-
-		var info = this.getTextInfo(layer, text, font, angle, width),
-			positions = info.positions;
-
-		// Tweak the div's position to match the text's alignment
-
-		if (halign == "center") {
-			x -= info.width / 2;
-		} else if (halign == "right") {
-			x -= info.width;
-		}
-
-		if (valign == "middle") {
-			y -= info.height / 2;
-		} else if (valign == "bottom") {
-			y -= info.height;
-		}
-
-		// Determine whether this text already exists at this position.
-		// If so, mark it for inclusion in the next render pass.
-
-		for (var i = 0, position; position = positions[i]; i++) {
-			if (position.x == x && position.y == y) {
-				position.active = true;
-				return;
-			}
-		}
-
-		// If the text doesn't exist at this position, create a new entry
-
-		// For the very first position we'll re-use the original element,
-		// while for subsequent ones we'll clone it.
-
-		position = {
-			active: true,
-			rendered: false,
-			element: positions.length ? info.element.clone() : info.element,
-			x: x,
-			y: y
-		};
-
-		positions.push(position);
-
-		// Move the element to its final position within the container
-
-		position.element.css({
-			top: Math.round(y),
-			left: Math.round(x),
-			'text-align': halign	// In case the text wraps
-		});
-	};
-
-	// Removes one or more text strings from the canvas text overlay.
-	//
-	// If no parameters are given, all text within the layer is removed.
-	//
-	// Note that the text is not immediately removed; it is simply marked as
-	// inactive, which will result in its removal on the next render pass.
-	// This avoids the performance penalty for 'clear and redraw' behavior,
-	// where we potentially get rid of all text on a layer, but will likely
-	// add back most or all of it later, as when redrawing axes, for example.
-	//
-	// @param {string} layer A string of space-separated CSS classes uniquely
-	//     identifying the layer containing this text.
-	// @param {number=} x X coordinate of the text.
-	// @param {number=} y Y coordinate of the text.
-	// @param {string=} text Text string to remove.
-	// @param {(string|object)=} font Either a string of space-separated CSS
-	//     classes or a font-spec object, defining the text's font and style.
-	// @param {number=} angle Angle at which the text is rotated, in degrees.
-	//     Angle is currently unused, it will be implemented in the future.
-
-	Canvas.prototype.removeText = function(layer, x, y, text, font, angle) {
-		if (text == null) {
-			var layerCache = this._textCache[layer];
-			if (layerCache != null) {
-				for (var styleKey in layerCache) {
-					if (hasOwnProperty.call(layerCache, styleKey)) {
-						var styleCache = layerCache[styleKey];
-						for (var key in styleCache) {
-							if (hasOwnProperty.call(styleCache, key)) {
-								var positions = styleCache[key].positions;
-								for (var i = 0, position; position = positions[i]; i++) {
-									position.active = false;
-								}
-							}
-						}
-					}
-				}
-			}
-		} else {
-			var positions = this.getTextInfo(layer, text, font, angle).positions;
-			for (var i = 0, position; position = positions[i]; i++) {
-				if (position.x == x && position.y == y) {
-					position.active = false;
-				}
-			}
-		}
-	};
-
-	///////////////////////////////////////////////////////////////////////////
-	// The top-level container for the entire plot.
-
-    function Plot(placeholder, data_, options_, plugins) {
-        // data is on the form:
-        //   [ series1, series2 ... ]
-        // where series is either just the data as [ [x1, y1], [x2, y2], ... ]
-        // or { data: [ [x1, y1], [x2, y2], ... ], label: "some label", ... }
-
-        var series = [],
-            options = {
-                // the color theme used for graphs
-                colors: ["#edc240", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"],
-                legend: {
-                    show: true,
-                    noColumns: 1, // number of colums in legend table
-                    labelFormatter: null, // fn: string -> string
-                    labelBoxBorderColor: "#ccc", // border color for the little label boxes
-                    container: null, // container (as jQuery object) to put legend in, null means default on top of graph
-                    position: "ne", // position of default legend container within plot
-                    margin: 5, // distance from grid edge to default legend container within plot
-                    backgroundColor: null, // null means auto-detect
-                    backgroundOpacity: 0.85, // set to 0 to avoid background
-                    sorted: null    // default to no legend sorting
-                },
-                xaxis: {
-                    show: null, // null = auto-detect, true = always, false = never
-                    position: "bottom", // or "top"
-                    mode: null, // null or "time"
-                    font: null, // null (derived from CSS in placeholder) or object like { size: 11, lineHeight: 13, style: "italic", weight: "bold", family: "sans-serif", variant: "small-caps" }
-                    color: null, // base color, labels, ticks
-                    tickColor: null, // possibly different color of ticks, e.g. "rgba(0,0,0,0.15)"
-                    transform: null, // null or f: number -> number to transform axis
-                    inverseTransform: null, // if transform is set, this should be the inverse function
-                    min: null, // min. value to show, null means set automatically
-                    max: null, // max. value to show, null means set automatically
-                    autoscaleMargin: null, // margin in % to add if auto-setting min/max
-                    ticks: null, // either [1, 3] or [[1, "a"], 3] or (fn: axis info -> ticks) or app. number of ticks for auto-ticks
-                    tickFormatter: null, // fn: number -> string
-                    labelWidth: null, // size of tick labels in pixels
-                    labelHeight: null,
-                    reserveSpace: null, // whether to reserve space even if axis isn't shown
-                    tickLength: null, // size in pixels of ticks, or "full" for whole line
-                    alignTicksWithAxis: null, // axis number or null for no sync
-                    tickDecimals: null, // no. of decimals, null means auto
-                    tickSize: null, // number or [number, "unit"]
-                    minTickSize: null // number or [number, "unit"]
-                },
-                yaxis: {
-                    autoscaleMargin: 0.02,
-                    position: "left" // or "right"
-                },
-                xaxes: [],
-                yaxes: [],
-                series: {
-                    points: {
-                        show: false,
-                        radius: 3,
-                        lineWidth: 2, // in pixels
-                        fill: true,
-                        fillColor: "#ffffff",
-                        symbol: "circle" // or callback
-                    },
-                    lines: {
-                        // we don't put in show: false so we can see
-                        // whether lines were actively disabled
-                        lineWidth: 2, // in pixels
-                        fill: false,
-                        fillColor: null,
-                        steps: false
-                        // Omit 'zero', so we can later default its value to
-                        // match that of the 'fill' option.
-                    },
-                    bars: {
-                        show: false,
-                        lineWidth: 2, // in pixels
-                        barWidth: 1, // in units of the x axis
-                        fill: true,
-                        fillColor: null,
-                        align: "left", // "left", "right", or "center"
-                        horizontal: false,
-                        zero: true
-                    },
-                    shadowSize: 3,
-                    highlightColor: null
-                },
-                grid: {
-                    show: true,
-                    aboveData: false,
-                    color: "#545454", // primary color used for outline and labels
-                    backgroundColor: null, // null for transparent, else color
-                    borderColor: null, // set if different from the grid color
-                    tickColor: null, // color for the ticks, e.g. "rgba(0,0,0,0.15)"
-                    margin: 0, // distance from the canvas edge to the grid
-                    labelMargin: 5, // in pixels
-                    axisMargin: 8, // in pixels
-                    borderWidth: 2, // in pixels
-                    minBorderMargin: null, // in pixels, null means taken from points radius
-                    markings: null, // array of ranges or fn: axes -> array of ranges
-                    markingsColor: "#f4f4f4",
-                    markingsLineWidth: 2,
-                    // interactive stuff
-                    clickable: false,
-                    hoverable: false,
-                    autoHighlight: true, // highlight in case mouse is near
-                    mouseActiveRadius: 10 // how far the mouse can be away to activate an item
-                },
-                interaction: {
-                    redrawOverlayInterval: 1000/60 // time between updates, -1 means in same flow
-                },
-                hooks: {}
-            },
-        surface = null,     // the canvas for the plot itself
-        overlay = null,     // canvas for interactive stuff on top of plot
-        eventHolder = null, // jQuery object that events should be bound to
-        ctx = null, octx = null,
-        xaxes = [], yaxes = [],
-        plotOffset = { left: 0, right: 0, top: 0, bottom: 0},
-        plotWidth = 0, plotHeight = 0,
-        hooks = {
-            processOptions: [],
-            processRawData: [],
-            processDatapoints: [],
-            processOffset: [],
-            drawBackground: [],
-            drawSeries: [],
-            draw: [],
-            bindEvents: [],
-            drawOverlay: [],
-            shutdown: []
-        },
-        plot = this;
-
-        // public functions
-        plot.setData = setData;
-        plot.setupGrid = setupGrid;
-        plot.draw = draw;
-        plot.getPlaceholder = function() { return placeholder; };
-        plot.getCanvas = function() { return surface.element; };
-        plot.getPlotOffset = function() { return plotOffset; };
-        plot.width = function () { return plotWidth; };
-        plot.height = function () { return plotHeight; };
-        plot.offset = function () {
-            var o = eventHolder.offset();
-            o.left += plotOffset.left;
-            o.top += plotOffset.top;
-            return o;
-        };
-        plot.getData = function () { return series; };
-        plot.getAxes = function () {
-            var res = {}, i;
-            $.each(xaxes.concat(yaxes), function (_, axis) {
-                if (axis)
-                    res[axis.direction + (axis.n != 1 ? axis.n : "") + "axis"] = axis;
-            });
-            return res;
-        };
-        plot.getXAxes = function () { return xaxes; };
-        plot.getYAxes = function () { return yaxes; };
-        plot.c2p = canvasToAxisCoords;
-        plot.p2c = axisToCanvasCoords;
-        plot.getOptions = function () { return options; };
-        plot.highlight = highlight;
-        plot.unhighlight = unhighlight;
-        plot.triggerRedrawOverlay = triggerRedrawOverlay;
-        plot.pointOffset = function(point) {
-            return {
-                left: parseInt(xaxes[axisNumber(point, "x") - 1].p2c(+point.x) + plotOffset.left, 10),
-                top: parseInt(yaxes[axisNumber(point, "y") - 1].p2c(+point.y) + plotOffset.top, 10)
-            };
-        };
-        plot.shutdown = shutdown;
-        plot.destroy = function () {
-            shutdown();
-            placeholder.removeData("plot").empty();
-
-            series = [];
-            options = null;
-            surface = null;
-            overlay = null;
-            eventHolder = null;
-            ctx = null;
-            octx = null;
-            xaxes = [];
-            yaxes = [];
-            hooks = null;
-            highlights = [];
-            plot = null;
-        };
-        plot.resize = function () {
-        	var width = placeholder.width(),
-        		height = placeholder.height();
-            surface.resize(width, height);
-            overlay.resize(width, height);
-        };
-
-        // public attributes
-        plot.hooks = hooks;
-
-        // initialize
-        initPlugins(plot);
-        parseOptions(options_);
-        setupCanvases();
-        setData(data_);
-        setupGrid();
-        draw();
-        bindEvents();
-
-
-        function executeHooks(hook, args) {
-            args = [plot].concat(args);
-            for (var i = 0; i < hook.length; ++i)
-                hook[i].apply(this, args);
-        }
-
-        function initPlugins() {
-
-            // References to key classes, allowing plugins to modify them
-
-            var classes = {
-                Canvas: Canvas
-            };
-
-            for (var i = 0; i < plugins.length; ++i) {
-                var p = plugins[i];
-                p.init(plot, classes);
-                if (p.options)
-                    $.extend(true, options, p.options);
-            }
-        }
-
-        function parseOptions(opts) {
-
-            $.extend(true, options, opts);
-
-            // $.extend merges arrays, rather than replacing them.  When less
-            // colors are provided than the size of the default palette, we
-            // end up with those colors plus the remaining defaults, which is
-            // not expected behavior; avoid it by replacing them here.
-
-            if (opts && opts.colors) {
-            	options.colors = opts.colors;
-            }
-
-            if (options.xaxis.color == null)
-                options.xaxis.color = $.color.parse(options.grid.color).scale('a', 0.22).toString();
-            if (options.yaxis.color == null)
-                options.yaxis.color = $.color.parse(options.grid.color).scale('a', 0.22).toString();
-
-            if (options.xaxis.tickColor == null) // grid.tickColor for back-compatibility
-                options.xaxis.tickColor = options.grid.tickColor || options.xaxis.color;
-            if (options.yaxis.tickColor == null) // grid.tickColor for back-compatibility
-                options.yaxis.tickColor = options.grid.tickColor || options.yaxis.color;
-
-            if (options.grid.borderColor == null)
-                options.grid.borderColor = options.grid.color;
-            if (options.grid.tickColor == null)
-                options.grid.tickColor = $.color.parse(options.grid.color).scale('a', 0.22).toString();
-
-            // Fill in defaults for axis options, including any unspecified
-            // font-spec fields, if a font-spec was provided.
-
-            // If no x/y axis options were provided, create one of each anyway,
-            // since the rest of the code assumes that they exist.
-
-            var i, axisOptions, axisCount,
-                fontSize = placeholder.css("font-size"),
-                fontSizeDefault = fontSize ? +fontSize.replace("px", "") : 13,
-                fontDefaults = {
-                    style: placeholder.css("font-style"),
-                    size: Math.round(0.8 * fontSizeDefault),
-                    variant: placeholder.css("font-variant"),
-                    weight: placeholder.css("font-weight"),
-                    family: placeholder.css("font-family")
-                };
-
-            axisCount = options.xaxes.length || 1;
-            for (i = 0; i < axisCount; ++i) {
-
-                axisOptions = options.xaxes[i];
-                if (axisOptions && !axisOptions.tickColor) {
-                    axisOptions.tickColor = axisOptions.color;
-                }
-
-                axisOptions = $.extend(true, {}, options.xaxis, axisOptions);
-                options.xaxes[i] = axisOptions;
-
-                if (axisOptions.font) {
-                    axisOptions.font = $.extend({}, fontDefaults, axisOptions.font);
-                    if (!axisOptions.font.color) {
-                        axisOptions.font.color = axisOptions.color;
-                    }
-                    if (!axisOptions.font.lineHeight) {
-                        axisOptions.font.lineHeight = Math.round(axisOptions.font.size * 1.15);
-                    }
-                }
-            }
-
-            axisCount = options.yaxes.length || 1;
-            for (i = 0; i < axisCount; ++i) {
-
-                axisOptions = options.yaxes[i];
-                if (axisOptions && !axisOptions.tickColor) {
-                    axisOptions.tickColor = axisOptions.color;
-                }
-
-                axisOptions = $.extend(true, {}, options.yaxis, axisOptions);
-                options.yaxes[i] = axisOptions;
-
-                if (axisOptions.font) {
-                    axisOptions.font = $.extend({}, fontDefaults, axisOptions.font);
-                    if (!axisOptions.font.color) {
-                        axisOptions.font.color = axisOptions.color;
-                    }
-                    if (!axisOptions.font.lineHeight) {
-                        axisOptions.font.lineHeight = Math.round(axisOptions.font.size * 1.15);
-                    }
-                }
-            }
-
-            // backwards compatibility, to be removed in future
-            if (options.xaxis.noTicks && options.xaxis.ticks == null)
-                options.xaxis.ticks = options.xaxis.noTicks;
-            if (options.yaxis.noTicks && options.yaxis.ticks == null)
-                options.yaxis.ticks = options.yaxis.noTicks;
-            if (options.x2axis) {
-                options.xaxes[1] = $.extend(true, {}, options.xaxis, options.x2axis);
-                options.xaxes[1].position = "top";
-                // Override the inherit to allow the axis to auto-scale
-                if (options.x2axis.min == null) {
-                    options.xaxes[1].min = null;
-                }
-                if (options.x2axis.max == null) {
-                    options.xaxes[1].max = null;
-                }
-            }
-            if (options.y2axis) {
-                options.yaxes[1] = $.extend(true, {}, options.yaxis, options.y2axis);
-                options.yaxes[1].position = "right";
-                // Override the inherit to allow the axis to auto-scale
-                if (options.y2axis.min == null) {
-                    options.yaxes[1].min = null;
-                }
-                if (options.y2axis.max == null) {
-                    options.yaxes[1].max = null;
-                }
-            }
-            if (options.grid.coloredAreas)
-                options.grid.markings = options.grid.coloredAreas;
-            if (options.grid.coloredAreasColor)
-                options.grid.markingsColor = options.grid.coloredAreasColor;
-            if (options.lines)
-                $.extend(true, options.series.lines, options.lines);
-            if (options.points)
-                $.extend(true, options.series.points, options.points);
-            if (options.bars)
-                $.extend(true, options.series.bars, options.bars);
-            if (options.shadowSize != null)
-                options.series.shadowSize = options.shadowSize;
-            if (options.highlightColor != null)
-                options.series.highlightColor = options.highlightColor;
-
-            // save options on axes for future reference
-            for (i = 0; i < options.xaxes.length; ++i)
-                getOrCreateAxis(xaxes, i + 1).options = options.xaxes[i];
-            for (i = 0; i < options.yaxes.length; ++i)
-                getOrCreateAxis(yaxes, i + 1).options = options.yaxes[i];
-
-            // add hooks from options
-            for (var n in hooks)
-                if (options.hooks[n] && options.hooks[n].length)
-                    hooks[n] = hooks[n].concat(options.hooks[n]);
-
-            executeHooks(hooks.processOptions, [options]);
-        }
-
-        function setData(d) {
-            series = parseData(d);
-            fillInSeriesOptions();
-            processData();
-        }
-
-        function parseData(d) {
-            var res = [];
-            for (var i = 0; i < d.length; ++i) {
-                var s = $.extend(true, {}, options.series);
-
-                if (d[i].data != null) {
-                    s.data = d[i].data; // move the data instead of deep-copy
-                    delete d[i].data;
-
-                    $.extend(true, s, d[i]);
-
-                    d[i].data = s.data;
-                }
-                else
-                    s.data = d[i];
-                res.push(s);
-            }
-
-            return res;
-        }
-
-        function axisNumber(obj, coord) {
-            var a = obj[coord + "axis"];
-            if (typeof a == "object") // if we got a real axis, extract number
-                a = a.n;
-            if (typeof a != "number")
-                a = 1; // default to first axis
-            return a;
-        }
-
-        function allAxes() {
-            // return flat array without annoying null entries
-            return $.grep(xaxes.concat(yaxes), function (a) { return a; });
-        }
-
-        function canvasToAxisCoords(pos) {
-            // return an object with x/y corresponding to all used axes
-            var res = {}, i, axis;
-            for (i = 0; i < xaxes.length; ++i) {
-                axis = xaxes[i];
-                if (axis && axis.used)
-                    res["x" + axis.n] = axis.c2p(pos.left);
-            }
-
-            for (i = 0; i < yaxes.length; ++i) {
-                axis = yaxes[i];
-                if (axis && axis.used)
-                    res["y" + axis.n] = axis.c2p(pos.top);
-            }
-
-            if (res.x1 !== undefined)
-                res.x = res.x1;
-            if (res.y1 !== undefined)
-                res.y = res.y1;
-
-            return res;
-        }
-
-        function axisToCanvasCoords(pos) {
-            // get canvas coords from the first pair of x/y found in pos
-            var res = {}, i, axis, key;
-
-            for (i = 0; i < xaxes.length; ++i) {
-                axis = xaxes[i];
-                if (axis && axis.used) {
-                    key = "x" + axis.n;
-                    if (pos[key] == null && axis.n == 1)
-                        key = "x";
-
-                    if (pos[key] != null) {
-                        res.left = axis.p2c(pos[key]);
-                        break;
-                    }
-                }
-            }
-
-            for (i = 0; i < yaxes.length; ++i) {
-                axis = yaxes[i];
-                if (axis && axis.used) {
-                    key = "y" + axis.n;
-                    if (pos[key] == null && axis.n == 1)
-                        key = "y";
-
-                    if (pos[key] != null) {
-                        res.top = axis.p2c(pos[key]);
-                        break;
-                    }
-                }
-            }
-
-            return res;
-        }
-
-        function getOrCreateAxis(axes, number) {
-            if (!axes[number - 1])
-                axes[number - 1] = {
-                    n: number, // save the number for future reference
-                    direction: axes == xaxes ? "x" : "y",
-                    options: $.extend(true, {}, axes == xaxes ? options.xaxis : options.yaxis)
-                };
-
-            return axes[number - 1];
-        }
-
-        function fillInSeriesOptions() {
-
-            var neededColors = series.length, maxIndex = -1, i;
-
-            // Subtract the number of series that already have fixed colors or
-            // color indexes from the number that we still need to generate.
-
-            for (i = 0; i < series.length; ++i) {
-                var sc = series[i].color;
-                if (sc != null) {
-                    neededColors--;
-                    if (typeof sc == "number" && sc > maxIndex) {
-                        maxIndex = sc;
-                    }
-                }
-            }
-
-            // If any of the series have fixed color indexes, then we need to
-            // generate at least as many colors as the highest index.
-
-            if (neededColors <= maxIndex) {
-                neededColors = maxIndex + 1;
-            }
-
-            // Generate all the colors, using first the option colors and then
-            // variations on those colors once they're exhausted.
-
-            var c, colors = [], colorPool = options.colors,
-                colorPoolSize = colorPool.length, variation = 0;
-
-            for (i = 0; i < neededColors; i++) {
-
-                c = $.color.parse(colorPool[i % colorPoolSize] || "#666");
-
-                // Each time we exhaust the colors in the pool we adjust
-                // a scaling factor used to produce more variations on
-                // those colors. The factor alternates negative/positive
-                // to produce lighter/darker colors.
-
-                // Reset the variation after every few cycles, or else
-                // it will end up producing only white or black colors.
-
-                if (i % colorPoolSize == 0 && i) {
-                    if (variation >= 0) {
-                        if (variation < 0.5) {
-                            variation = -variation - 0.2;
-                        } else variation = 0;
-                    } else variation = -variation;
-                }
-
-                colors[i] = c.scale('rgb', 1 + variation);
-            }
-
-            // Finalize the series options, filling in their colors
-
-            var colori = 0, s;
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-
-                // assign colors
-                if (s.color == null) {
-                    s.color = colors[colori].toString();
-                    ++colori;
-                }
-                else if (typeof s.color == "number")
-                    s.color = colors[s.color].toString();
-
-                // turn on lines automatically in case nothing is set
-                if (s.lines.show == null) {
-                    var v, show = true;
-                    for (v in s)
-                        if (s[v] && s[v].show) {
-                            show = false;
-                            break;
-                        }
-                    if (show)
-                        s.lines.show = true;
-                }
-
-                // If nothing was provided for lines.zero, default it to match
-                // lines.fill, since areas by default should extend to zero.
-
-                if (s.lines.zero == null) {
-                    s.lines.zero = !!s.lines.fill;
-                }
-
-                // setup axes
-                s.xaxis = getOrCreateAxis(xaxes, axisNumber(s, "x"));
-                s.yaxis = getOrCreateAxis(yaxes, axisNumber(s, "y"));
-            }
-        }
-
-        function processData() {
-            var topSentry = Number.POSITIVE_INFINITY,
-                bottomSentry = Number.NEGATIVE_INFINITY,
-                fakeInfinity = Number.MAX_VALUE,
-                i, j, k, m, length,
-                s, points, ps, x, y, axis, val, f, p,
-                data, format;
-
-            function updateAxis(axis, min, max) {
-                if (min < axis.datamin && min != -fakeInfinity)
-                    axis.datamin = min;
-                if (max > axis.datamax && max != fakeInfinity)
-                    axis.datamax = max;
-            }
-
-            $.each(allAxes(), function (_, axis) {
-                // init axis
-                axis.datamin = topSentry;
-                axis.datamax = bottomSentry;
-                axis.used = false;
-            });
-
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-                s.datapoints = { points: [] };
-
-                executeHooks(hooks.processRawData, [ s, s.data, s.datapoints ]);
-            }
-
-            // first pass: clean and copy data
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-
-                data = s.data;
-                format = s.datapoints.format;
-
-                if (!format) {
-                    format = [];
-                    // find out how to copy
-                    format.push({ x: true, number: true, required: true });
-                    format.push({ y: true, number: true, required: true });
-
-                    if (s.bars.show || (s.lines.show && s.lines.fill)) {
-                        var autoscale = !!((s.bars.show && s.bars.zero) || (s.lines.show && s.lines.zero));
-                        format.push({ y: true, number: true, required: false, defaultValue: 0, autoscale: autoscale });
-                        if (s.bars.horizontal) {
-                            delete format[format.length - 1].y;
-                            format[format.length - 1].x = true;
-                        }
-                    }
-
-                    s.datapoints.format = format;
-                }
-
-                if (s.datapoints.pointsize != null)
-                    continue; // already filled in
-
-                s.datapoints.pointsize = format.length;
-
-                ps = s.datapoints.pointsize;
-                points = s.datapoints.points;
-
-                var insertSteps = s.lines.show && s.lines.steps;
-                s.xaxis.used = s.yaxis.used = true;
-
-                for (j = k = 0; j < data.length; ++j, k += ps) {
-                    p = data[j];
-
-                    var nullify = p == null;
-                    if (!nullify) {
-                        for (m = 0; m < ps; ++m) {
-                            val = p[m];
-                            f = format[m];
-
-                            if (f) {
-                                if (f.number && val != null) {
-                                    val = +val; // convert to number
-                                    if (isNaN(val))
-                                        val = null;
-                                    else if (val == Infinity)
-                                        val = fakeInfinity;
-                                    else if (val == -Infinity)
-                                        val = -fakeInfinity;
-                                }
-
-                                if (val == null) {
-                                    if (f.required)
-                                        nullify = true;
-
-                                    if (f.defaultValue != null)
-                                        val = f.defaultValue;
-                                }
-                            }
-
-                            points[k + m] = val;
-                        }
-                    }
-
-                    if (nullify) {
-                        for (m = 0; m < ps; ++m) {
-                            val = points[k + m];
-                            if (val != null) {
-                                f = format[m];
-                                // extract min/max info
-                                if (f.autoscale !== false) {
-                                    if (f.x) {
-                                        updateAxis(s.xaxis, val, val);
-                                    }
-                                    if (f.y) {
-                                        updateAxis(s.yaxis, val, val);
-                                    }
-                                }
-                            }
-                            points[k + m] = null;
-                        }
-                    }
-                    else {
-                        // a little bit of line specific stuff that
-                        // perhaps shouldn't be here, but lacking
-                        // better means...
-                        if (insertSteps && k > 0
-                            && points[k - ps] != null
-                            && points[k - ps] != points[k]
-                            && points[k - ps + 1] != points[k + 1]) {
-                            // copy the point to make room for a middle point
-                            for (m = 0; m < ps; ++m)
-                                points[k + ps + m] = points[k + m];
-
-                            // middle point has same y
-                            points[k + 1] = points[k - ps + 1];
-
-                            // we've added a point, better reflect that
-                            k += ps;
-                        }
-                    }
-                }
-            }
-
-            // give the hooks a chance to run
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-
-                executeHooks(hooks.processDatapoints, [ s, s.datapoints]);
-            }
-
-            // second pass: find datamax/datamin for auto-scaling
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-                points = s.datapoints.points;
-                ps = s.datapoints.pointsize;
-                format = s.datapoints.format;
-
-                var xmin = topSentry, ymin = topSentry,
-                    xmax = bottomSentry, ymax = bottomSentry;
-
-                for (j = 0; j < points.length; j += ps) {
-                    if (points[j] == null)
-                        continue;
-
-                    for (m = 0; m < ps; ++m) {
-                        val = points[j + m];
-                        f = format[m];
-                        if (!f || f.autoscale === false || val == fakeInfinity || val == -fakeInfinity)
-                            continue;
-
-                        if (f.x) {
-                            if (val < xmin)
-                                xmin = val;
-                            if (val > xmax)
-                                xmax = val;
-                        }
-                        if (f.y) {
-                            if (val < ymin)
-                                ymin = val;
-                            if (val > ymax)
-                                ymax = val;
-                        }
-                    }
-                }
-
-                if (s.bars.show) {
-                    // make sure we got room for the bar on the dancing floor
-                    var delta;
-
-                    switch (s.bars.align) {
-                        case "left":
-                            delta = 0;
-                            break;
-                        case "right":
-                            delta = -s.bars.barWidth;
-                            break;
-                        default:
-                            delta = -s.bars.barWidth / 2;
-                    }
-
-                    if (s.bars.horizontal) {
-                        ymin += delta;
-                        ymax += delta + s.bars.barWidth;
-                    }
-                    else {
-                        xmin += delta;
-                        xmax += delta + s.bars.barWidth;
-                    }
-                }
-
-                updateAxis(s.xaxis, xmin, xmax);
-                updateAxis(s.yaxis, ymin, ymax);
-            }
-
-            $.each(allAxes(), function (_, axis) {
-                if (axis.datamin == topSentry)
-                    axis.datamin = null;
-                if (axis.datamax == bottomSentry)
-                    axis.datamax = null;
-            });
-        }
-
-        function setupCanvases() {
-
-            // Make sure the placeholder is clear of everything except canvases
-            // from a previous plot in this container that we'll try to re-use.
-
-            placeholder.css("padding", 0) // padding messes up the positioning
-                .children().filter(function(){
-                    return !$(this).hasClass("flot-overlay") && !$(this).hasClass('flot-base');
-                }).remove();
-
-            if (placeholder.css("position") == 'static')
-                placeholder.css("position", "relative"); // for positioning labels and overlay
-
-            surface = new Canvas("flot-base", placeholder);
-            overlay = new Canvas("flot-overlay", placeholder); // overlay canvas for interactive features
-
-            ctx = surface.context;
-            octx = overlay.context;
-
-            // define which element we're listening for events on
-            eventHolder = $(overlay.element).unbind();
-
-            // If we're re-using a plot object, shut down the old one
-
-            var existing = placeholder.data("plot");
-
-            if (existing) {
-                existing.shutdown();
-                overlay.clear();
-            }
-
-            // save in case we get replotted
-            placeholder.data("plot", plot);
-        }
-
-        function bindEvents() {
-            // bind events
-            if (options.grid.hoverable) {
-                eventHolder.mousemove(onMouseMove);
-
-                // Use bind, rather than .mouseleave, because we officially
-                // still support jQuery 1.2.6, which doesn't define a shortcut
-                // for mouseenter or mouseleave.  This was a bug/oversight that
-                // was fixed somewhere around 1.3.x.  We can return to using
-                // .mouseleave when we drop support for 1.2.6.
-
-                eventHolder.bind("mouseleave", onMouseLeave);
-            }
-
-            if (options.grid.clickable)
-                eventHolder.click(onClick);
-
-            executeHooks(hooks.bindEvents, [eventHolder]);
-        }
-
-        function shutdown() {
-            if (redrawTimeout)
-                clearTimeout(redrawTimeout);
-
-            eventHolder.unbind("mousemove", onMouseMove);
-            eventHolder.unbind("mouseleave", onMouseLeave);
-            eventHolder.unbind("click", onClick);
-
-            executeHooks(hooks.shutdown, [eventHolder]);
-        }
-
-        function setTransformationHelpers(axis) {
-            // set helper functions on the axis, assumes plot area
-            // has been computed already
-
-            function identity(x) { return x; }
-
-            var s, m, t = axis.options.transform || identity,
-                it = axis.options.inverseTransform;
-
-            // precompute how much the axis is scaling a point
-            // in canvas space
-            if (axis.direction == "x") {
-                s = axis.scale = plotWidth / Math.abs(t(axis.max) - t(axis.min));
-                m = Math.min(t(axis.max), t(axis.min));
-            }
-            else {
-                s = axis.scale = plotHeight / Math.abs(t(axis.max) - t(axis.min));
-                s = -s;
-                m = Math.max(t(axis.max), t(axis.min));
-            }
-
-            // data point to canvas coordinate
-            if (t == identity) // slight optimization
-                axis.p2c = function (p) { return (p - m) * s; };
-            else
-                axis.p2c = function (p) { return (t(p) - m) * s; };
-            // canvas coordinate to data point
-            if (!it)
-                axis.c2p = function (c) { return m + c / s; };
-            else
-                axis.c2p = function (c) { return it(m + c / s); };
-        }
-
-        function measureTickLabels(axis) {
-
-            var opts = axis.options,
-                ticks = axis.ticks || [],
-                labelWidth = opts.labelWidth || 0,
-                labelHeight = opts.labelHeight || 0,
-                maxWidth = labelWidth || (axis.direction == "x" ? Math.floor(surface.width / (ticks.length || 1)) : null),
-                legacyStyles = axis.direction + "Axis " + axis.direction + axis.n + "Axis",
-                layer = "flot-" + axis.direction + "-axis flot-" + axis.direction + axis.n + "-axis " + legacyStyles,
-                font = opts.font || "flot-tick-label tickLabel";
-
-            for (var i = 0; i < ticks.length; ++i) {
-
-                var t = ticks[i];
-
-                if (!t.label)
-                    continue;
-
-                var info = surface.getTextInfo(layer, t.label, font, null, maxWidth);
-
-                labelWidth = Math.max(labelWidth, info.width);
-                labelHeight = Math.max(labelHeight, info.height);
-            }
-
-            axis.labelWidth = opts.labelWidth || labelWidth;
-            axis.labelHeight = opts.labelHeight || labelHeight;
-        }
-
-        function allocateAxisBoxFirstPhase(axis) {
-            // find the bounding box of the axis by looking at label
-            // widths/heights and ticks, make room by diminishing the
-            // plotOffset; this first phase only looks at one
-            // dimension per axis, the other dimension depends on the
-            // other axes so will have to wait
-
-            var lw = axis.labelWidth,
-                lh = axis.labelHeight,
-                pos = axis.options.position,
-                isXAxis = axis.direction === "x",
-                tickLength = axis.options.tickLength,
-                axisMargin = options.grid.axisMargin,
-                padding = options.grid.labelMargin,
-                innermost = true,
-                outermost = true,
-                first = true,
-                found = false;
-
-            // Determine the axis's position in its direction and on its side
-
-            $.each(isXAxis ? xaxes : yaxes, function(i, a) {
-                if (a && (a.show || a.reserveSpace)) {
-                    if (a === axis) {
-                        found = true;
-                    } else if (a.options.position === pos) {
-                        if (found) {
-                            outermost = false;
-                        } else {
-                            innermost = false;
-                        }
-                    }
-                    if (!found) {
-                        first = false;
-                    }
-                }
-            });
-
-            // The outermost axis on each side has no margin
-
-            if (outermost) {
-                axisMargin = 0;
-            }
-
-            // The ticks for the first axis in each direction stretch across
-
-            if (tickLength == null) {
-                tickLength = first ? "full" : 5;
-            }
-
-            if (!isNaN(+tickLength))
-                padding += +tickLength;
-
-            if (isXAxis) {
-                lh += padding;
-
-                if (pos == "bottom") {
-                    plotOffset.bottom += lh + axisMargin;
-                    axis.box = { top: surface.height - plotOffset.bottom, height: lh };
-                }
-                else {
-                    axis.box = { top: plotOffset.top + axisMargin, height: lh };
-                    plotOffset.top += lh + axisMargin;
-                }
-            }
-            else {
-                lw += padding;
-
-                if (pos == "left") {
-                    axis.box = { left: plotOffset.left + axisMargin, width: lw };
-                    plotOffset.left += lw + axisMargin;
-                }
-                else {
-                    plotOffset.right += lw + axisMargin;
-                    axis.box = { left: surface.width - plotOffset.right, width: lw };
-                }
-            }
-
-             // save for future reference
-            axis.position = pos;
-            axis.tickLength = tickLength;
-            axis.box.padding = padding;
-            axis.innermost = innermost;
-        }
-
-        function allocateAxisBoxSecondPhase(axis) {
-            // now that all axis boxes have been placed in one
-            // dimension, we can set the remaining dimension coordinates
-            if (axis.direction == "x") {
-                axis.box.left = plotOffset.left - axis.labelWidth / 2;
-                axis.box.width = surface.width - plotOffset.left - plotOffset.right + axis.labelWidth;
-            }
-            else {
-                axis.box.top = plotOffset.top - axis.labelHeight / 2;
-                axis.box.height = surface.height - plotOffset.bottom - plotOffset.top + axis.labelHeight;
-            }
-        }
-
-        function adjustLayoutForThingsStickingOut() {
-            // possibly adjust plot offset to ensure everything stays
-            // inside the canvas and isn't clipped off
-
-            var minMargin = options.grid.minBorderMargin,
-                axis, i;
-
-            // check stuff from the plot (FIXME: this should just read
-            // a value from the series, otherwise it's impossible to
-            // customize)
-            if (minMargin == null) {
-                minMargin = 0;
-                for (i = 0; i < series.length; ++i)
-                    minMargin = Math.max(minMargin, 2 * (series[i].points.radius + series[i].points.lineWidth/2));
-            }
-
-            var margins = {
-                left: minMargin,
-                right: minMargin,
-                top: minMargin,
-                bottom: minMargin
-            };
-
-            // check axis labels, note we don't check the actual
-            // labels but instead use the overall width/height to not
-            // jump as much around with replots
-            $.each(allAxes(), function (_, axis) {
-                if (axis.reserveSpace && axis.ticks && axis.ticks.length) {
-                    if (axis.direction === "x") {
-                        margins.left = Math.max(margins.left, axis.labelWidth / 2);
-                        margins.right = Math.max(margins.right, axis.labelWidth / 2);
-                    } else {
-                        margins.bottom = Math.max(margins.bottom, axis.labelHeight / 2);
-                        margins.top = Math.max(margins.top, axis.labelHeight / 2);
-                    }
-                }
-            });
-
-            plotOffset.left = Math.ceil(Math.max(margins.left, plotOffset.left));
-            plotOffset.right = Math.ceil(Math.max(margins.right, plotOffset.right));
-            plotOffset.top = Math.ceil(Math.max(margins.top, plotOffset.top));
-            plotOffset.bottom = Math.ceil(Math.max(margins.bottom, plotOffset.bottom));
-        }
-
-        function setupGrid() {
-            var i, axes = allAxes(), showGrid = options.grid.show;
-
-            // Initialize the plot's offset from the edge of the canvas
-
-            for (var a in plotOffset) {
-                var margin = options.grid.margin || 0;
-                plotOffset[a] = typeof margin == "number" ? margin : margin[a] || 0;
-            }
-
-            executeHooks(hooks.processOffset, [plotOffset]);
-
-            // If the grid is visible, add its border width to the offset
-
-            for (var a in plotOffset) {
-                if(typeof(options.grid.borderWidth) == "object") {
-                    plotOffset[a] += showGrid ? options.grid.borderWidth[a] : 0;
-                }
-                else {
-                    plotOffset[a] += showGrid ? options.grid.borderWidth : 0;
-                }
-            }
-
-            $.each(axes, function (_, axis) {
-                var axisOpts = axis.options;
-                axis.show = axisOpts.show == null ? axis.used : axisOpts.show;
-                axis.reserveSpace = axisOpts.reserveSpace == null ? axis.show : axisOpts.reserveSpace;
-                setRange(axis);
-            });
-
-            if (showGrid) {
-
-                var allocatedAxes = $.grep(axes, function (axis) {
-                    return axis.show || axis.reserveSpace;
-                });
-
-                $.each(allocatedAxes, function (_, axis) {
-                    // make the ticks
-                    setupTickGeneration(axis);
-                    setTicks(axis);
-                    snapRangeToTicks(axis, axis.ticks);
-                    // find labelWidth/Height for axis
-                    measureTickLabels(axis);
-                });
-
-                // with all dimensions calculated, we can compute the
-                // axis bounding boxes, start from the outside
-                // (reverse order)
-                for (i = allocatedAxes.length - 1; i >= 0; --i)
-                    allocateAxisBoxFirstPhase(allocatedAxes[i]);
-
-                // make sure we've got enough space for things that
-                // might stick out
-                adjustLayoutForThingsStickingOut();
-
-                $.each(allocatedAxes, function (_, axis) {
-                    allocateAxisBoxSecondPhase(axis);
-                });
-            }
-
-            plotWidth = surface.width - plotOffset.left - plotOffset.right;
-            plotHeight = surface.height - plotOffset.bottom - plotOffset.top;
-
-            // now we got the proper plot dimensions, we can compute the scaling
-            $.each(axes, function (_, axis) {
-                setTransformationHelpers(axis);
-            });
-
-            if (showGrid) {
-                drawAxisLabels();
-            }
-
-            insertLegend();
-        }
-
-        function setRange(axis) {
-            var opts = axis.options,
-                min = +(opts.min != null ? opts.min : axis.datamin),
-                max = +(opts.max != null ? opts.max : axis.datamax),
-                delta = max - min;
-
-            if (delta == 0.0) {
-                // degenerate case
-                var widen = max == 0 ? 1 : 0.01;
-
-                if (opts.min == null)
-                    min -= widen;
-                // always widen max if we couldn't widen min to ensure we
-                // don't fall into min == max which doesn't work
-                if (opts.max == null || opts.min != null)
-                    max += widen;
-            }
-            else {
-                // consider autoscaling
-                var margin = opts.autoscaleMargin;
-                if (margin != null) {
-                    if (opts.min == null) {
-                        min -= delta * margin;
-                        // make sure we don't go below zero if all values
-                        // are positive
-                        if (min < 0 && axis.datamin != null && axis.datamin >= 0)
-                            min = 0;
-                    }
-                    if (opts.max == null) {
-                        max += delta * margin;
-                        if (max > 0 && axis.datamax != null && axis.datamax <= 0)
-                            max = 0;
-                    }
-                }
-            }
-            axis.min = min;
-            axis.max = max;
-        }
-
-        function setupTickGeneration(axis) {
-            var opts = axis.options;
-
-            // estimate number of ticks
-            var noTicks;
-            if (typeof opts.ticks == "number" && opts.ticks > 0)
-                noTicks = opts.ticks;
-            else
-                // heuristic based on the model a*sqrt(x) fitted to
-                // some data points that seemed reasonable
-                noTicks = 0.3 * Math.sqrt(axis.direction == "x" ? surface.width : surface.height);
-
-            var delta = (axis.max - axis.min) / noTicks,
-                dec = -Math.floor(Math.log(delta) / Math.LN10),
-                maxDec = opts.tickDecimals;
-
-            if (maxDec != null && dec > maxDec) {
-                dec = maxDec;
-            }
-
-            var magn = Math.pow(10, -dec),
-                norm = delta / magn, // norm is between 1.0 and 10.0
-                size;
-
-            if (norm < 1.5) {
-                size = 1;
-            } else if (norm < 3) {
-                size = 2;
-                // special case for 2.5, requires an extra decimal
-                if (norm > 2.25 && (maxDec == null || dec + 1 <= maxDec)) {
-                    size = 2.5;
-                    ++dec;
-                }
-            } else if (norm < 7.5) {
-                size = 5;
-            } else {
-                size = 10;
-            }
-
-            size *= magn;
-
-            if (opts.minTickSize != null && size < opts.minTickSize) {
-                size = opts.minTickSize;
-            }
-
-            axis.delta = delta;
-            axis.tickDecimals = Math.max(0, maxDec != null ? maxDec : dec);
-            axis.tickSize = opts.tickSize || size;
-
-            // Time mode was moved to a plug-in in 0.8, and since so many people use it
-            // we'll add an especially friendly reminder to make sure they included it.
-
-            if (opts.mode == "time" && !axis.tickGenerator) {
-                throw new Error("Time mode requires the flot.time plugin.");
-            }
-
-            // Flot supports base-10 axes; any other mode else is handled by a plug-in,
-            // like flot.time.js.
-
-            if (!axis.tickGenerator) {
-
-                axis.tickGenerator = function (axis) {
-
-                    var ticks = [],
-                        start = floorInBase(axis.min, axis.tickSize),
-                        i = 0,
-                        v = Number.NaN,
-                        prev;
-
-                    do {
-                        prev = v;
-                        v = start + i * axis.tickSize;
-                        ticks.push(v);
-                        ++i;
-                    } while (v < axis.max && v != prev);
-                    return ticks;
-                };
-
-				axis.tickFormatter = function (value, axis) {
-
-					var factor = axis.tickDecimals ? Math.pow(10, axis.tickDecimals) : 1;
-					var formatted = "" + Math.round(value * factor) / factor;
-
-					// If tickDecimals was specified, ensure that we have exactly that
-					// much precision; otherwise default to the value's own precision.
-
-					if (axis.tickDecimals != null) {
-						var decimal = formatted.indexOf(".");
-						var precision = decimal == -1 ? 0 : formatted.length - decimal - 1;
-						if (precision < axis.tickDecimals) {
-							return (precision ? formatted : formatted + ".") + ("" + factor).substr(1, axis.tickDecimals - precision);
-						}
-					}
-
-                    return formatted;
-                };
-            }
-
-            if ($.isFunction(opts.tickFormatter))
-                axis.tickFormatter = function (v, axis) { return "" + opts.tickFormatter(v, axis); };
-
-            if (opts.alignTicksWithAxis != null) {
-                var otherAxis = (axis.direction == "x" ? xaxes : yaxes)[opts.alignTicksWithAxis - 1];
-                if (otherAxis && otherAxis.used && otherAxis != axis) {
-                    // consider snapping min/max to outermost nice ticks
-                    var niceTicks = axis.tickGenerator(axis);
-                    if (niceTicks.length > 0) {
-                        if (opts.min == null)
-                            axis.min = Math.min(axis.min, niceTicks[0]);
-                        if (opts.max == null && niceTicks.length > 1)
-                            axis.max = Math.max(axis.max, niceTicks[niceTicks.length - 1]);
-                    }
-
-                    axis.tickGenerator = function (axis) {
-                        // copy ticks, scaled to this axis
-                        var ticks = [], v, i;
-                        for (i = 0; i < otherAxis.ticks.length; ++i) {
-                            v = (otherAxis.ticks[i].v - otherAxis.min) / (otherAxis.max - otherAxis.min);
-                            v = axis.min + v * (axis.max - axis.min);
-                            ticks.push(v);
-                        }
-                        return ticks;
-                    };
-
-                    // we might need an extra decimal since forced
-                    // ticks don't necessarily fit naturally
-                    if (!axis.mode && opts.tickDecimals == null) {
-                        var extraDec = Math.max(0, -Math.floor(Math.log(axis.delta) / Math.LN10) + 1),
-                            ts = axis.tickGenerator(axis);
-
-                        // only proceed if the tick interval rounded
-                        // with an extra decimal doesn't give us a
-                        // zero at end
-                        if (!(ts.length > 1 && /\..*0$/.test((ts[1] - ts[0]).toFixed(extraDec))))
-                            axis.tickDecimals = extraDec;
-                    }
-                }
-            }
-        }
-
-        function setTicks(axis) {
-            var oticks = axis.options.ticks, ticks = [];
-            if (oticks == null || (typeof oticks == "number" && oticks > 0))
-                ticks = axis.tickGenerator(axis);
-            else if (oticks) {
-                if ($.isFunction(oticks))
-                    // generate the ticks
-                    ticks = oticks(axis);
-                else
-                    ticks = oticks;
-            }
-
-            // clean up/labelify the supplied ticks, copy them over
-            var i, v;
-            axis.ticks = [];
-            for (i = 0; i < ticks.length; ++i) {
-                var label = null;
-                var t = ticks[i];
-                if (typeof t == "object") {
-                    v = +t[0];
-                    if (t.length > 1)
-                        label = t[1];
-                }
-                else
-                    v = +t;
-                if (label == null)
-                    label = axis.tickFormatter(v, axis);
-                if (!isNaN(v))
-                    axis.ticks.push({ v: v, label: label });
-            }
-        }
-
-        function snapRangeToTicks(axis, ticks) {
-            if (axis.options.autoscaleMargin && ticks.length > 0) {
-                // snap to ticks
-                if (axis.options.min == null)
-                    axis.min = Math.min(axis.min, ticks[0].v);
-                if (axis.options.max == null && ticks.length > 1)
-                    axis.max = Math.max(axis.max, ticks[ticks.length - 1].v);
-            }
-        }
-
-        function draw() {
-
-            surface.clear();
-
-            executeHooks(hooks.drawBackground, [ctx]);
-
-            var grid = options.grid;
-
-            // draw background, if any
-            if (grid.show && grid.backgroundColor)
-                drawBackground();
-
-            if (grid.show && !grid.aboveData) {
-                drawGrid();
-            }
-
-            for (var i = 0; i < series.length; ++i) {
-                executeHooks(hooks.drawSeries, [ctx, series[i]]);
-                drawSeries(series[i]);
-            }
-
-            executeHooks(hooks.draw, [ctx]);
-
-            if (grid.show && grid.aboveData) {
-                drawGrid();
-            }
-
-            surface.render();
-
-            // A draw implies that either the axes or data have changed, so we
-            // should probably update the overlay highlights as well.
-
-            triggerRedrawOverlay();
-        }
-
-        function extractRange(ranges, coord) {
-            var axis, from, to, key, axes = allAxes();
-
-            for (var i = 0; i < axes.length; ++i) {
-                axis = axes[i];
-                if (axis.direction == coord) {
-                    key = coord + axis.n + "axis";
-                    if (!ranges[key] && axis.n == 1)
-                        key = coord + "axis"; // support x1axis as xaxis
-                    if (ranges[key]) {
-                        from = ranges[key].from;
-                        to = ranges[key].to;
-                        break;
-                    }
-                }
-            }
-
-            // backwards-compat stuff - to be removed in future
-            if (!ranges[key]) {
-                axis = coord == "x" ? xaxes[0] : yaxes[0];
-                from = ranges[coord + "1"];
-                to = ranges[coord + "2"];
-            }
-
-            // auto-reverse as an added bonus
-            if (from != null && to != null && from > to) {
-                var tmp = from;
-                from = to;
-                to = tmp;
-            }
-
-            return { from: from, to: to, axis: axis };
-        }
-
-        function drawBackground() {
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            ctx.fillStyle = getColorOrGradient(options.grid.backgroundColor, plotHeight, 0, "rgba(255, 255, 255, 0)");
-            ctx.fillRect(0, 0, plotWidth, plotHeight);
-            ctx.restore();
-        }
-
-        function drawGrid() {
-            var i, axes, bw, bc;
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            // draw markings
-            var markings = options.grid.markings;
-            if (markings) {
-                if ($.isFunction(markings)) {
-                    axes = plot.getAxes();
-                    // xmin etc. is backwards compatibility, to be
-                    // removed in the future
-                    axes.xmin = axes.xaxis.min;
-                    axes.xmax = axes.xaxis.max;
-                    axes.ymin = axes.yaxis.min;
-                    axes.ymax = axes.yaxis.max;
-
-                    markings = markings(axes);
-                }
-
-                for (i = 0; i < markings.length; ++i) {
-                    var m = markings[i],
-                        xrange = extractRange(m, "x"),
-                        yrange = extractRange(m, "y");
-
-                    // fill in missing
-                    if (xrange.from == null)
-                        xrange.from = xrange.axis.min;
-                    if (xrange.to == null)
-                        xrange.to = xrange.axis.max;
-                    if (yrange.from == null)
-                        yrange.from = yrange.axis.min;
-                    if (yrange.to == null)
-                        yrange.to = yrange.axis.max;
-
-                    // clip
-                    if (xrange.to < xrange.axis.min || xrange.from > xrange.axis.max ||
-                        yrange.to < yrange.axis.min || yrange.from > yrange.axis.max)
-                        continue;
-
-                    xrange.from = Math.max(xrange.from, xrange.axis.min);
-                    xrange.to = Math.min(xrange.to, xrange.axis.max);
-                    yrange.from = Math.max(yrange.from, yrange.axis.min);
-                    yrange.to = Math.min(yrange.to, yrange.axis.max);
-
-                    var xequal = xrange.from === xrange.to,
-                        yequal = yrange.from === yrange.to;
-
-                    if (xequal && yequal) {
-                        continue;
-                    }
-
-                    // then draw
-                    xrange.from = Math.floor(xrange.axis.p2c(xrange.from));
-                    xrange.to = Math.floor(xrange.axis.p2c(xrange.to));
-                    yrange.from = Math.floor(yrange.axis.p2c(yrange.from));
-                    yrange.to = Math.floor(yrange.axis.p2c(yrange.to));
-
-                    if (xequal || yequal) {
-                        var lineWidth = m.lineWidth || options.grid.markingsLineWidth,
-                            subPixel = lineWidth % 2 ? 0.5 : 0;
-                        ctx.beginPath();
-                        ctx.strokeStyle = m.color || options.grid.markingsColor;
-                        ctx.lineWidth = lineWidth;
-                        if (xequal) {
-                            ctx.moveTo(xrange.to + subPixel, yrange.from);
-                            ctx.lineTo(xrange.to + subPixel, yrange.to);
-                        } else {
-                            ctx.moveTo(xrange.from, yrange.to + subPixel);
-                            ctx.lineTo(xrange.to, yrange.to + subPixel);                            
-                        }
-                        ctx.stroke();
-                    } else {
-                        ctx.fillStyle = m.color || options.grid.markingsColor;
-                        ctx.fillRect(xrange.from, yrange.to,
-                                     xrange.to - xrange.from,
-                                     yrange.from - yrange.to);
-                    }
-                }
-            }
-
-            // draw the ticks
-            axes = allAxes();
-            bw = options.grid.borderWidth;
-
-            for (var j = 0; j < axes.length; ++j) {
-                var axis = axes[j], box = axis.box,
-                    t = axis.tickLength, x, y, xoff, yoff;
-                if (!axis.show || axis.ticks.length == 0)
-                    continue;
-
-                ctx.lineWidth = 1;
-
-                // find the edges
-                if (axis.direction == "x") {
-                    x = 0;
-                    if (t == "full")
-                        y = (axis.position == "top" ? 0 : plotHeight);
-                    else
-                        y = box.top - plotOffset.top + (axis.position == "top" ? box.height : 0);
-                }
-                else {
-                    y = 0;
-                    if (t == "full")
-                        x = (axis.position == "left" ? 0 : plotWidth);
-                    else
-                        x = box.left - plotOffset.left + (axis.position == "left" ? box.width : 0);
-                }
-
-                // draw tick bar
-                if (!axis.innermost) {
-                    ctx.strokeStyle = axis.options.color;
-                    ctx.beginPath();
-                    xoff = yoff = 0;
-                    if (axis.direction == "x")
-                        xoff = plotWidth + 1;
-                    else
-                        yoff = plotHeight + 1;
-
-                    if (ctx.lineWidth == 1) {
-                        if (axis.direction == "x") {
-                            y = Math.floor(y) + 0.5;
-                        } else {
-                            x = Math.floor(x) + 0.5;
-                        }
-                    }
-
-                    ctx.moveTo(x, y);
-                    ctx.lineTo(x + xoff, y + yoff);
-                    ctx.stroke();
-                }
-
-                // draw ticks
-
-                ctx.strokeStyle = axis.options.tickColor;
-
-                ctx.beginPath();
-                for (i = 0; i < axis.ticks.length; ++i) {
-                    var v = axis.ticks[i].v;
-
-                    xoff = yoff = 0;
-
-                    if (isNaN(v) || v < axis.min || v > axis.max
-                        // skip those lying on the axes if we got a border
-                        || (t == "full"
-                            && ((typeof bw == "object" && bw[axis.position] > 0) || bw > 0)
-                            && (v == axis.min || v == axis.max)))
-                        continue;
-
-                    if (axis.direction == "x") {
-                        x = axis.p2c(v);
-                        yoff = t == "full" ? -plotHeight : t;
-
-                        if (axis.position == "top")
-                            yoff = -yoff;
-                    }
-                    else {
-                        y = axis.p2c(v);
-                        xoff = t == "full" ? -plotWidth : t;
-
-                        if (axis.position == "left")
-                            xoff = -xoff;
-                    }
-
-                    if (ctx.lineWidth == 1) {
-                        if (axis.direction == "x")
-                            x = Math.floor(x) + 0.5;
-                        else
-                            y = Math.floor(y) + 0.5;
-                    }
-
-                    ctx.moveTo(x, y);
-                    ctx.lineTo(x + xoff, y + yoff);
-                }
-
-                ctx.stroke();
-            }
-
-
-            // draw border
-            if (bw) {
-                // If either borderWidth or borderColor is an object, then draw the border
-                // line by line instead of as one rectangle
-                bc = options.grid.borderColor;
-                if(typeof bw == "object" || typeof bc == "object") {
-                    if (typeof bw !== "object") {
-                        bw = {top: bw, right: bw, bottom: bw, left: bw};
-                    }
-                    if (typeof bc !== "object") {
-                        bc = {top: bc, right: bc, bottom: bc, left: bc};
-                    }
-
-                    if (bw.top > 0) {
-                        ctx.strokeStyle = bc.top;
-                        ctx.lineWidth = bw.top;
-                        ctx.beginPath();
-                        ctx.moveTo(0 - bw.left, 0 - bw.top/2);
-                        ctx.lineTo(plotWidth, 0 - bw.top/2);
-                        ctx.stroke();
-                    }
-
-                    if (bw.right > 0) {
-                        ctx.strokeStyle = bc.right;
-                        ctx.lineWidth = bw.right;
-                        ctx.beginPath();
-                        ctx.moveTo(plotWidth + bw.right / 2, 0 - bw.top);
-                        ctx.lineTo(plotWidth + bw.right / 2, plotHeight);
-                        ctx.stroke();
-                    }
-
-                    if (bw.bottom > 0) {
-                        ctx.strokeStyle = bc.bottom;
-                        ctx.lineWidth = bw.bottom;
-                        ctx.beginPath();
-                        ctx.moveTo(plotWidth + bw.right, plotHeight + bw.bottom / 2);
-                        ctx.lineTo(0, plotHeight + bw.bottom / 2);
-                        ctx.stroke();
-                    }
-
-                    if (bw.left > 0) {
-                        ctx.strokeStyle = bc.left;
-                        ctx.lineWidth = bw.left;
-                        ctx.beginPath();
-                        ctx.moveTo(0 - bw.left/2, plotHeight + bw.bottom);
-                        ctx.lineTo(0- bw.left/2, 0);
-                        ctx.stroke();
-                    }
-                }
-                else {
-                    ctx.lineWidth = bw;
-                    ctx.strokeStyle = options.grid.borderColor;
-                    ctx.strokeRect(-bw/2, -bw/2, plotWidth + bw, plotHeight + bw);
-                }
-            }
-
-            ctx.restore();
-        }
-
-        function drawAxisLabels() {
-
-            $.each(allAxes(), function (_, axis) {
-                var box = axis.box,
-                    legacyStyles = axis.direction + "Axis " + axis.direction + axis.n + "Axis",
-                    layer = "flot-" + axis.direction + "-axis flot-" + axis.direction + axis.n + "-axis " + legacyStyles,
-                    font = axis.options.font || "flot-tick-label tickLabel",
-                    tick, x, y, halign, valign;
-
-                // Remove text before checking for axis.show and ticks.length;
-                // otherwise plugins, like flot-tickrotor, that draw their own
-                // tick labels will end up with both theirs and the defaults.
-
-                surface.removeText(layer);
-
-                if (!axis.show || axis.ticks.length == 0)
-                    return;
-
-                for (var i = 0; i < axis.ticks.length; ++i) {
-
-                    tick = axis.ticks[i];
-                    if (!tick.label || tick.v < axis.min || tick.v > axis.max)
-                        continue;
-
-                    if (axis.direction == "x") {
-                        halign = "center";
-                        x = plotOffset.left + axis.p2c(tick.v);
-                        if (axis.position == "bottom") {
-                            y = box.top + box.padding;
-                        } else {
-                            y = box.top + box.height - box.padding;
-                            valign = "bottom";
-                        }
-                    } else {
-                        valign = "middle";
-                        y = plotOffset.top + axis.p2c(tick.v);
-                        if (axis.position == "left") {
-                            x = box.left + box.width - box.padding;
-                            halign = "right";
-                        } else {
-                            x = box.left + box.padding;
-                        }
-                    }
-
-                    surface.addText(layer, x, y, tick.label, font, null, null, halign, valign);
-                }
-            });
-        }
-
-        function drawSeries(series) {
-            if (series.lines.show)
-                drawSeriesLines(series);
-            if (series.bars.show)
-                drawSeriesBars(series);
-            if (series.points.show)
-                drawSeriesPoints(series);
-        }
-
-        function drawSeriesLines(series) {
-            function plotLine(datapoints, xoffset, yoffset, axisx, axisy) {
-                var points = datapoints.points,
-                    ps = datapoints.pointsize,
-                    prevx = null, prevy = null;
-
-                ctx.beginPath();
-                for (var i = ps; i < points.length; i += ps) {
-                    var x1 = points[i - ps], y1 = points[i - ps + 1],
-                        x2 = points[i], y2 = points[i + 1];
-
-                    if (x1 == null || x2 == null)
-                        continue;
-
-                    // clip with ymin
-                    if (y1 <= y2 && y1 < axisy.min) {
-                        if (y2 < axisy.min)
-                            continue;   // line segment is outside
-                        // compute new intersection point
-                        x1 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.min;
-                    }
-                    else if (y2 <= y1 && y2 < axisy.min) {
-                        if (y1 < axisy.min)
-                            continue;
-                        x2 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.min;
-                    }
-
-                    // clip with ymax
-                    if (y1 >= y2 && y1 > axisy.max) {
-                        if (y2 > axisy.max)
-                            continue;
-                        x1 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.max;
-                    }
-                    else if (y2 >= y1 && y2 > axisy.max) {
-                        if (y1 > axisy.max)
-                            continue;
-                        x2 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.max;
-                    }
-
-                    // clip with xmin
-                    if (x1 <= x2 && x1 < axisx.min) {
-                        if (x2 < axisx.min)
-                            continue;
-                        y1 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.min;
-                    }
-                    else if (x2 <= x1 && x2 < axisx.min) {
-                        if (x1 < axisx.min)
-                            continue;
-                        y2 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.min;
-                    }
-
-                    // clip with xmax
-                    if (x1 >= x2 && x1 > axisx.max) {
-                        if (x2 > axisx.max)
-                            continue;
-                        y1 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.max;
-                    }
-                    else if (x2 >= x1 && x2 > axisx.max) {
-                        if (x1 > axisx.max)
-                            continue;
-                        y2 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.max;
-                    }
-
-                    if (x1 != prevx || y1 != prevy)
-                        ctx.moveTo(axisx.p2c(x1) + xoffset, axisy.p2c(y1) + yoffset);
-
-                    prevx = x2;
-                    prevy = y2;
-                    ctx.lineTo(axisx.p2c(x2) + xoffset, axisy.p2c(y2) + yoffset);
-                }
-                ctx.stroke();
-            }
-
-            function plotLineArea(datapoints, axisx, axisy) {
-                var points = datapoints.points,
-                    ps = datapoints.pointsize,
-                    bottom = Math.min(Math.max(0, axisy.min), axisy.max),
-                    i = 0, top, areaOpen = false,
-                    ypos = 1, segmentStart = 0, segmentEnd = 0;
-
-                // we process each segment in two turns, first forward
-                // direction to sketch out top, then once we hit the
-                // end we go backwards to sketch the bottom
-                while (true) {
-                    if (ps > 0 && i > points.length + ps)
-                        break;
-
-                    i += ps; // ps is negative if going backwards
-
-                    var x1 = points[i - ps],
-                        y1 = points[i - ps + ypos],
-                        x2 = points[i], y2 = points[i + ypos];
-
-                    if (areaOpen) {
-                        if (ps > 0 && x1 != null && x2 == null) {
-                            // at turning point
-                            segmentEnd = i;
-                            ps = -ps;
-                            ypos = 2;
-                            continue;
-                        }
-
-                        if (ps < 0 && i == segmentStart + ps) {
-                            // done with the reverse sweep
-                            ctx.fill();
-                            areaOpen = false;
-                            ps = -ps;
-                            ypos = 1;
-                            i = segmentStart = segmentEnd + ps;
-                            continue;
-                        }
-                    }
-
-                    if (x1 == null || x2 == null)
-                        continue;
-
-                    // clip x values
-
-                    // clip with xmin
-                    if (x1 <= x2 && x1 < axisx.min) {
-                        if (x2 < axisx.min)
-                            continue;
-                        y1 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.min;
-                    }
-                    else if (x2 <= x1 && x2 < axisx.min) {
-                        if (x1 < axisx.min)
-                            continue;
-                        y2 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.min;
-                    }
-
-                    // clip with xmax
-                    if (x1 >= x2 && x1 > axisx.max) {
-                        if (x2 > axisx.max)
-                            continue;
-                        y1 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.max;
-                    }
-                    else if (x2 >= x1 && x2 > axisx.max) {
-                        if (x1 > axisx.max)
-                            continue;
-                        y2 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.max;
-                    }
-
-                    if (!areaOpen) {
-                        // open area
-                        ctx.beginPath();
-                        ctx.moveTo(axisx.p2c(x1), axisy.p2c(bottom));
-                        areaOpen = true;
-                    }
-
-                    // now first check the case where both is outside
-                    if (y1 >= axisy.max && y2 >= axisy.max) {
-                        ctx.lineTo(axisx.p2c(x1), axisy.p2c(axisy.max));
-                        ctx.lineTo(axisx.p2c(x2), axisy.p2c(axisy.max));
-                        continue;
-                    }
-                    else if (y1 <= axisy.min && y2 <= axisy.min) {
-                        ctx.lineTo(axisx.p2c(x1), axisy.p2c(axisy.min));
-                        ctx.lineTo(axisx.p2c(x2), axisy.p2c(axisy.min));
-                        continue;
-                    }
-
-                    // else it's a bit more complicated, there might
-                    // be a flat maxed out rectangle first, then a
-                    // triangular cutout or reverse; to find these
-                    // keep track of the current x values
-                    var x1old = x1, x2old = x2;
-
-                    // clip the y values, without shortcutting, we
-                    // go through all cases in turn
-
-                    // clip with ymin
-                    if (y1 <= y2 && y1 < axisy.min && y2 >= axisy.min) {
-                        x1 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.min;
-                    }
-                    else if (y2 <= y1 && y2 < axisy.min && y1 >= axisy.min) {
-                        x2 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.min;
-                    }
-
-                    // clip with ymax
-                    if (y1 >= y2 && y1 > axisy.max && y2 <= axisy.max) {
-                        x1 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.max;
-                    }
-                    else if (y2 >= y1 && y2 > axisy.max && y1 <= axisy.max) {
-                        x2 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.max;
-                    }
-
-                    // if the x value was changed we got a rectangle
-                    // to fill
-                    if (x1 != x1old) {
-                        ctx.lineTo(axisx.p2c(x1old), axisy.p2c(y1));
-                        // it goes to (x1, y1), but we fill that below
-                    }
-
-                    // fill triangular section, this sometimes result
-                    // in redundant points if (x1, y1) hasn't changed
-                    // from previous line to, but we just ignore that
-                    ctx.lineTo(axisx.p2c(x1), axisy.p2c(y1));
-                    ctx.lineTo(axisx.p2c(x2), axisy.p2c(y2));
-
-                    // fill the other rectangle if it's there
-                    if (x2 != x2old) {
-                        ctx.lineTo(axisx.p2c(x2), axisy.p2c(y2));
-                        ctx.lineTo(axisx.p2c(x2old), axisy.p2c(y2));
-                    }
-                }
-            }
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-            ctx.lineJoin = "round";
-
-            var lw = series.lines.lineWidth,
-                sw = series.shadowSize;
-            // FIXME: consider another form of shadow when filling is turned on
-            if (lw > 0 && sw > 0) {
-                // draw shadow as a thick and thin line with transparency
-                ctx.lineWidth = sw;
-                ctx.strokeStyle = "rgba(0,0,0,0.1)";
-                // position shadow at angle from the mid of line
-                var angle = Math.PI/18;
-                plotLine(series.datapoints, Math.sin(angle) * (lw/2 + sw/2), Math.cos(angle) * (lw/2 + sw/2), series.xaxis, series.yaxis);
-                ctx.lineWidth = sw/2;
-                plotLine(series.datapoints, Math.sin(angle) * (lw/2 + sw/4), Math.cos(angle) * (lw/2 + sw/4), series.xaxis, series.yaxis);
-            }
-
-            ctx.lineWidth = lw;
-            ctx.strokeStyle = series.color;
-            var fillStyle = getFillStyle(series.lines, series.color, 0, plotHeight);
-            if (fillStyle) {
-                ctx.fillStyle = fillStyle;
-                plotLineArea(series.datapoints, series.xaxis, series.yaxis);
-            }
-
-            if (lw > 0)
-                plotLine(series.datapoints, 0, 0, series.xaxis, series.yaxis);
-            ctx.restore();
-        }
-
-        function drawSeriesPoints(series) {
-            function plotPoints(datapoints, radius, fillStyle, offset, shadow, axisx, axisy, symbol) {
-                var points = datapoints.points, ps = datapoints.pointsize;
-
-                for (var i = 0; i < points.length; i += ps) {
-                    var x = points[i], y = points[i + 1];
-                    if (x == null || x < axisx.min || x > axisx.max || y < axisy.min || y > axisy.max)
-                        continue;
-
-                    ctx.beginPath();
-                    x = axisx.p2c(x);
-                    y = axisy.p2c(y) + offset;
-                    if (symbol == "circle")
-                        ctx.arc(x, y, radius, 0, shadow ? Math.PI : Math.PI * 2, false);
-                    else
-                        symbol(ctx, x, y, radius, shadow);
-                    ctx.closePath();
-
-                    if (fillStyle) {
-                        ctx.fillStyle = fillStyle;
-                        ctx.fill();
-                    }
-                    ctx.stroke();
-                }
-            }
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            var lw = series.points.lineWidth,
-                sw = series.shadowSize,
-                radius = series.points.radius,
-                symbol = series.points.symbol;
-
-            // If the user sets the line width to 0, we change it to a very 
-            // small value. A line width of 0 seems to force the default of 1.
-            // Doing the conditional here allows the shadow setting to still be 
-            // optional even with a lineWidth of 0.
-
-            if( lw == 0 )
-                lw = 0.0001;
-
-            if (lw > 0 && sw > 0) {
-                // draw shadow in two steps
-                var w = sw / 2;
-                ctx.lineWidth = w;
-                ctx.strokeStyle = "rgba(0,0,0,0.1)";
-                plotPoints(series.datapoints, radius, null, w + w/2, true,
-                           series.xaxis, series.yaxis, symbol);
-
-                ctx.strokeStyle = "rgba(0,0,0,0.2)";
-                plotPoints(series.datapoints, radius, null, w/2, true,
-                           series.xaxis, series.yaxis, symbol);
-            }
-
-            ctx.lineWidth = lw;
-            ctx.strokeStyle = series.color;
-            plotPoints(series.datapoints, radius,
-                       getFillStyle(series.points, series.color), 0, false,
-                       series.xaxis, series.yaxis, symbol);
-            ctx.restore();
-        }
-
-        function drawBar(x, y, b, barLeft, barRight, fillStyleCallback, axisx, axisy, c, horizontal, lineWidth) {
-            var left, right, bottom, top,
-                drawLeft, drawRight, drawTop, drawBottom,
-                tmp;
-
-            // in horizontal mode, we start the bar from the left
-            // instead of from the bottom so it appears to be
-            // horizontal rather than vertical
-            if (horizontal) {
-                drawBottom = drawRight = drawTop = true;
-                drawLeft = false;
-                left = b;
-                right = x;
-                top = y + barLeft;
-                bottom = y + barRight;
-
-                // account for negative bars
-                if (right < left) {
-                    tmp = right;
-                    right = left;
-                    left = tmp;
-                    drawLeft = true;
-                    drawRight = false;
-                }
-            }
-            else {
-                drawLeft = drawRight = drawTop = true;
-                drawBottom = false;
-                left = x + barLeft;
-                right = x + barRight;
-                bottom = b;
-                top = y;
-
-                // account for negative bars
-                if (top < bottom) {
-                    tmp = top;
-                    top = bottom;
-                    bottom = tmp;
-                    drawBottom = true;
-                    drawTop = false;
-                }
-            }
-
-            // clip
-            if (right < axisx.min || left > axisx.max ||
-                top < axisy.min || bottom > axisy.max)
-                return;
-
-            if (left < axisx.min) {
-                left = axisx.min;
-                drawLeft = false;
-            }
-
-            if (right > axisx.max) {
-                right = axisx.max;
-                drawRight = false;
-            }
-
-            if (bottom < axisy.min) {
-                bottom = axisy.min;
-                drawBottom = false;
-            }
-
-            if (top > axisy.max) {
-                top = axisy.max;
-                drawTop = false;
-            }
-
-            left = axisx.p2c(left);
-            bottom = axisy.p2c(bottom);
-            right = axisx.p2c(right);
-            top = axisy.p2c(top);
-
-            // fill the bar
-            if (fillStyleCallback) {
-                c.fillStyle = fillStyleCallback(bottom, top);
-                c.fillRect(left, top, right - left, bottom - top)
-            }
-
-            // draw outline
-            if (lineWidth > 0 && (drawLeft || drawRight || drawTop || drawBottom)) {
-                c.beginPath();
-
-                // FIXME: inline moveTo is buggy with excanvas
-                c.moveTo(left, bottom);
-                if (drawLeft)
-                    c.lineTo(left, top);
-                else
-                    c.moveTo(left, top);
-                if (drawTop)
-                    c.lineTo(right, top);
-                else
-                    c.moveTo(right, top);
-                if (drawRight)
-                    c.lineTo(right, bottom);
-                else
-                    c.moveTo(right, bottom);
-                if (drawBottom)
-                    c.lineTo(left, bottom);
-                else
-                    c.moveTo(left, bottom);
-                c.stroke();
-            }
-        }
-
-        function drawSeriesBars(series) {
-            function plotBars(datapoints, barLeft, barRight, fillStyleCallback, axisx, axisy) {
-                var points = datapoints.points, ps = datapoints.pointsize;
-
-                for (var i = 0; i < points.length; i += ps) {
-                    if (points[i] == null)
-                        continue;
-                    drawBar(points[i], points[i + 1], points[i + 2], barLeft, barRight, fillStyleCallback, axisx, axisy, ctx, series.bars.horizontal, series.bars.lineWidth);
-                }
-            }
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            // FIXME: figure out a way to add shadows (for instance along the right edge)
-            ctx.lineWidth = series.bars.lineWidth;
-            ctx.strokeStyle = series.color;
-
-            var barLeft;
-
-            switch (series.bars.align) {
-                case "left":
-                    barLeft = 0;
-                    break;
-                case "right":
-                    barLeft = -series.bars.barWidth;
-                    break;
-                default:
-                    barLeft = -series.bars.barWidth / 2;
-            }
-
-            var fillStyleCallback = series.bars.fill ? function (bottom, top) { return getFillStyle(series.bars, series.color, bottom, top); } : null;
-            plotBars(series.datapoints, barLeft, barLeft + series.bars.barWidth, fillStyleCallback, series.xaxis, series.yaxis);
-            ctx.restore();
-        }
-
-        function getFillStyle(filloptions, seriesColor, bottom, top) {
-            var fill = filloptions.fill;
-            if (!fill)
-                return null;
-
-            if (filloptions.fillColor)
-                return getColorOrGradient(filloptions.fillColor, bottom, top, seriesColor);
-
-            var c = $.color.parse(seriesColor);
-            c.a = typeof fill == "number" ? fill : 0.4;
-            c.normalize();
-            return c.toString();
-        }
-
-        function insertLegend() {
-
-            if (options.legend.container != null) {
-                $(options.legend.container).html("");
-            } else {
-                placeholder.find(".legend").remove();
-            }
-
-            if (!options.legend.show) {
-                return;
-            }
-
-            var fragments = [], entries = [], rowStarted = false,
-                lf = options.legend.labelFormatter, s, label;
-
-            // Build a list of legend entries, with each having a label and a color
-
-            for (var i = 0; i < series.length; ++i) {
-                s = series[i];
-                if (s.label) {
-                    label = lf ? lf(s.label, s) : s.label;
-                    if (label) {
-                        entries.push({
-                            label: label,
-                            color: s.color
-                        });
-                    }
-                }
-            }
-
-            // Sort the legend using either the default or a custom comparator
-
-            if (options.legend.sorted) {
-                if ($.isFunction(options.legend.sorted)) {
-                    entries.sort(options.legend.sorted);
-                } else if (options.legend.sorted == "reverse") {
-                	entries.reverse();
-                } else {
-                    var ascending = options.legend.sorted != "descending";
-                    entries.sort(function(a, b) {
-                        return a.label == b.label ? 0 : (
-                            (a.label < b.label) != ascending ? 1 : -1   // Logical XOR
-                        );
-                    });
-                }
-            }
-
-            // Generate markup for the list of entries, in their final order
-
-            for (var i = 0; i < entries.length; ++i) {
-
-                var entry = entries[i];
-
-                if (i % options.legend.noColumns == 0) {
-                    if (rowStarted)
-                        fragments.push('</tr>');
-                    fragments.push('<tr>');
-                    rowStarted = true;
-                }
-
-                fragments.push(
-                    '<td class="legendColorBox"><div style="border:1px solid ' + options.legend.labelBoxBorderColor + ';padding:1px"><div style="width:4px;height:0;border:5px solid ' + entry.color + ';overflow:hidden"></div></div></td>' +
-                    '<td class="legendLabel">' + entry.label + '</td>'
-                );
-            }
-
-            if (rowStarted)
-                fragments.push('</tr>');
-
-            if (fragments.length == 0)
-                return;
-
-            var table = '<table style="font-size:smaller;color:' + options.grid.color + '">' + fragments.join("") + '</table>';
-            if (options.legend.container != null)
-                $(options.legend.container).html(table);
-            else {
-                var pos = "",
-                    p = options.legend.position,
-                    m = options.legend.margin;
-                if (m[0] == null)
-                    m = [m, m];
-                if (p.charAt(0) == "n")
-                    pos += 'top:' + (m[1] + plotOffset.top) + 'px;';
-                else if (p.charAt(0) == "s")
-                    pos += 'bottom:' + (m[1] + plotOffset.bottom) + 'px;';
-                if (p.charAt(1) == "e")
-                    pos += 'right:' + (m[0] + plotOffset.right) + 'px;';
-                else if (p.charAt(1) == "w")
-                    pos += 'left:' + (m[0] + plotOffset.left) + 'px;';
-                var legend = $('<div class="legend">' + table.replace('style="', 'style="position:absolute;' + pos +';') + '</div>').appendTo(placeholder);
-                if (options.legend.backgroundOpacity != 0.0) {
-                    // put in the transparent background
-                    // separately to avoid blended labels and
-                    // label boxes
-                    var c = options.legend.backgroundColor;
-                    if (c == null) {
-                        c = options.grid.backgroundColor;
-                        if (c && typeof c == "string")
-                            c = $.color.parse(c);
-                        else
-                            c = $.color.extract(legend, 'background-color');
-                        c.a = 1;
-                        c = c.toString();
-                    }
-                    var div = legend.children();
-                    $('<div style="position:absolute;width:' + div.width() + 'px;height:' + div.height() + 'px;' + pos +'background-color:' + c + ';"> </div>').prependTo(legend).css('opacity', options.legend.backgroundOpacity);
-                }
-            }
-        }
-
-
-        // interactive features
-
-        var highlights = [],
-            redrawTimeout = null;
-
-        // returns the data item the mouse is over, or null if none is found
-        function findNearbyItem(mouseX, mouseY, seriesFilter) {
-            var maxDistance = options.grid.mouseActiveRadius,
-                smallestDistance = maxDistance * maxDistance + 1,
-                item = null, foundPoint = false, i, j, ps;
-
-            for (i = series.length - 1; i >= 0; --i) {
-                if (!seriesFilter(series[i]))
-                    continue;
-
-                var s = series[i],
-                    axisx = s.xaxis,
-                    axisy = s.yaxis,
-                    points = s.datapoints.points,
-                    mx = axisx.c2p(mouseX), // precompute some stuff to make the loop faster
-                    my = axisy.c2p(mouseY),
-                    maxx = maxDistance / axisx.scale,
-                    maxy = maxDistance / axisy.scale;
-
-                ps = s.datapoints.pointsize;
-                // with inverse transforms, we can't use the maxx/maxy
-                // optimization, sadly
-                if (axisx.options.inverseTransform)
-                    maxx = Number.MAX_VALUE;
-                if (axisy.options.inverseTransform)
-                    maxy = Number.MAX_VALUE;
-
-                if (s.lines.show || s.points.show) {
-                    for (j = 0; j < points.length; j += ps) {
-                        var x = points[j], y = points[j + 1];
-                        if (x == null)
-                            continue;
-
-                        // For points and lines, the cursor must be within a
-                        // certain distance to the data point
-                        if (x - mx > maxx || x - mx < -maxx ||
-                            y - my > maxy || y - my < -maxy)
-                            continue;
-
-                        // We have to calculate distances in pixels, not in
-                        // data units, because the scales of the axes may be different
-                        var dx = Math.abs(axisx.p2c(x) - mouseX),
-                            dy = Math.abs(axisy.p2c(y) - mouseY),
-                            dist = dx * dx + dy * dy; // we save the sqrt
-
-                        // use <= to ensure last point takes precedence
-                        // (last generally means on top of)
-                        if (dist < smallestDistance) {
-                            smallestDistance = dist;
-                            item = [i, j / ps];
-                        }
-                    }
-                }
-
-                if (s.bars.show && !item) { // no other point can be nearby
-
-                    var barLeft, barRight;
-
-                    switch (s.bars.align) {
-                        case "left":
-                            barLeft = 0;
-                            break;
-                        case "right":
-                            barLeft = -s.bars.barWidth;
-                            break;
-                        default:
-                            barLeft = -s.bars.barWidth / 2;
-                    }
-
-                    barRight = barLeft + s.bars.barWidth;
-
-                    for (j = 0; j < points.length; j += ps) {
-                        var x = points[j], y = points[j + 1], b = points[j + 2];
-                        if (x == null)
-                            continue;
-
-                        // for a bar graph, the cursor must be inside the bar
-                        if (series[i].bars.horizontal ?
-                            (mx <= Math.max(b, x) && mx >= Math.min(b, x) &&
-                             my >= y + barLeft && my <= y + barRight) :
-                            (mx >= x + barLeft && mx <= x + barRight &&
-                             my >= Math.min(b, y) && my <= Math.max(b, y)))
-                                item = [i, j / ps];
-                    }
-                }
-            }
-
-            if (item) {
-                i = item[0];
-                j = item[1];
-                ps = series[i].datapoints.pointsize;
-
-                return { datapoint: series[i].datapoints.points.slice(j * ps, (j + 1) * ps),
-                         dataIndex: j,
-                         series: series[i],
-                         seriesIndex: i };
-            }
-
-            return null;
-        }
-
-        function onMouseMove(e) {
-            if (options.grid.hoverable)
-                triggerClickHoverEvent("plothover", e,
-                                       function (s) { return s["hoverable"] != false; });
-        }
-
-        function onMouseLeave(e) {
-            if (options.grid.hoverable)
-                triggerClickHoverEvent("plothover", e,
-                                       function (s) { return false; });
-        }
-
-        function onClick(e) {
-            triggerClickHoverEvent("plotclick", e,
-                                   function (s) { return s["clickable"] != false; });
-        }
-
-        // trigger click or hover event (they send the same parameters
-        // so we share their code)
-        function triggerClickHoverEvent(eventname, event, seriesFilter) {
-            var offset = eventHolder.offset(),
-                canvasX = event.pageX - offset.left - plotOffset.left,
-                canvasY = event.pageY - offset.top - plotOffset.top,
-            pos = canvasToAxisCoords({ left: canvasX, top: canvasY });
-
-            pos.pageX = event.pageX;
-            pos.pageY = event.pageY;
-
-            var item = findNearbyItem(canvasX, canvasY, seriesFilter);
-
-            if (item) {
-                // fill in mouse pos for any listeners out there
-                item.pageX = parseInt(item.series.xaxis.p2c(item.datapoint[0]) + offset.left + plotOffset.left, 10);
-                item.pageY = parseInt(item.series.yaxis.p2c(item.datapoint[1]) + offset.top + plotOffset.top, 10);
-            }
-
-            if (options.grid.autoHighlight) {
-                // clear auto-highlights
-                for (var i = 0; i < highlights.length; ++i) {
-                    var h = highlights[i];
-                    if (h.auto == eventname &&
-                        !(item && h.series == item.series &&
-                          h.point[0] == item.datapoint[0] &&
-                          h.point[1] == item.datapoint[1]))
-                        unhighlight(h.series, h.point);
-                }
-
-                if (item)
-                    highlight(item.series, item.datapoint, eventname);
-            }
-
-            placeholder.trigger(eventname, [ pos, item ]);
-        }
-
-        function triggerRedrawOverlay() {
-            var t = options.interaction.redrawOverlayInterval;
-            if (t == -1) {      // skip event queue
-                drawOverlay();
-                return;
-            }
-
-            if (!redrawTimeout)
-                redrawTimeout = setTimeout(drawOverlay, t);
-        }
-
-        function drawOverlay() {
-            redrawTimeout = null;
-
-            // draw highlights
-            octx.save();
-            overlay.clear();
-            octx.translate(plotOffset.left, plotOffset.top);
-
-            var i, hi;
-            for (i = 0; i < highlights.length; ++i) {
-                hi = highlights[i];
-
-                if (hi.series.bars.show)
-                    drawBarHighlight(hi.series, hi.point);
-                else
-                    drawPointHighlight(hi.series, hi.point);
-            }
-            octx.restore();
-
-            executeHooks(hooks.drawOverlay, [octx]);
-        }
-
-        function highlight(s, point, auto) {
-            if (typeof s == "number")
-                s = series[s];
-
-            if (typeof point == "number") {
-                var ps = s.datapoints.pointsize;
-                point = s.datapoints.points.slice(ps * point, ps * (point + 1));
-            }
-
-            var i = indexOfHighlight(s, point);
-            if (i == -1) {
-                highlights.push({ series: s, point: point, auto: auto });
-
-                triggerRedrawOverlay();
-            }
-            else if (!auto)
-                highlights[i].auto = false;
-        }
-
-        function unhighlight(s, point) {
-            if (s == null && point == null) {
-                highlights = [];
-                triggerRedrawOverlay();
-                return;
-            }
-
-            if (typeof s == "number")
-                s = series[s];
-
-            if (typeof point == "number") {
-                var ps = s.datapoints.pointsize;
-                point = s.datapoints.points.slice(ps * point, ps * (point + 1));
-            }
-
-            var i = indexOfHighlight(s, point);
-            if (i != -1) {
-                highlights.splice(i, 1);
-
-                triggerRedrawOverlay();
-            }
-        }
-
-        function indexOfHighlight(s, p) {
-            for (var i = 0; i < highlights.length; ++i) {
-                var h = highlights[i];
-                if (h.series == s && h.point[0] == p[0]
-                    && h.point[1] == p[1])
-                    return i;
-            }
-            return -1;
-        }
-
-        function drawPointHighlight(series, point) {
-            var x = point[0], y = point[1],
-                axisx = series.xaxis, axisy = series.yaxis,
-                highlightColor = (typeof series.highlightColor === "string") ? series.highlightColor : $.color.parse(series.color).scale('a', 0.5).toString();
-
-            if (x < axisx.min || x > axisx.max || y < axisy.min || y > axisy.max)
-                return;
-
-            var pointRadius = series.points.radius + series.points.lineWidth / 2;
-            octx.lineWidth = pointRadius;
-            octx.strokeStyle = highlightColor;
-            var radius = 1.5 * pointRadius;
-            x = axisx.p2c(x);
-            y = axisy.p2c(y);
-
-            octx.beginPath();
-            if (series.points.symbol == "circle")
-                octx.arc(x, y, radius, 0, 2 * Math.PI, false);
-            else
-                series.points.symbol(octx, x, y, radius, false);
-            octx.closePath();
-            octx.stroke();
-        }
-
-        function drawBarHighlight(series, point) {
-            var highlightColor = (typeof series.highlightColor === "string") ? series.highlightColor : $.color.parse(series.color).scale('a', 0.5).toString(),
-                fillStyle = highlightColor,
-                barLeft;
-
-            switch (series.bars.align) {
-                case "left":
-                    barLeft = 0;
-                    break;
-                case "right":
-                    barLeft = -series.bars.barWidth;
-                    break;
-                default:
-                    barLeft = -series.bars.barWidth / 2;
-            }
-
-            octx.lineWidth = series.bars.lineWidth;
-            octx.strokeStyle = highlightColor;
-
-            drawBar(point[0], point[1], point[2] || 0, barLeft, barLeft + series.bars.barWidth,
-                    function () { return fillStyle; }, series.xaxis, series.yaxis, octx, series.bars.horizontal, series.bars.lineWidth);
-        }
-
-        function getColorOrGradient(spec, bottom, top, defaultColor) {
-            if (typeof spec == "string")
-                return spec;
-            else {
-                // assume this is a gradient spec; IE currently only
-                // supports a simple vertical gradient properly, so that's
-                // what we support too
-                var gradient = ctx.createLinearGradient(0, top, 0, bottom);
-
-                for (var i = 0, l = spec.colors.length; i < l; ++i) {
-                    var c = spec.colors[i];
-                    if (typeof c != "string") {
-                        var co = $.color.parse(defaultColor);
-                        if (c.brightness != null)
-                            co = co.scale('rgb', c.brightness);
-                        if (c.opacity != null)
-                            co.a *= c.opacity;
-                        c = co.toString();
-                    }
-                    gradient.addColorStop(i / (l - 1), c);
-                }
-
-                return gradient;
-            }
-        }
-    }
-
-    // Add the plot function to the top level of the jQuery object
-
-    $.plot = function(placeholder, data, options) {
-        //var t0 = new Date();
-        var plot = new Plot($(placeholder), data, options, $.plot.plugins);
-        //(window.console ? console.log : alert)("time used (msecs): " + ((new Date()).getTime() - t0.getTime()));
-        return plot;
-    };
-
-    $.plot.version = "0.8.3";
-
-    $.plot.plugins = [];
-
-    // Also add the plot function as a chainable property
-
-    $.fn.plot = function(data, options) {
-        return this.each(function() {
-            $.plot(this, data, options);
-        });
-    };
-
-    // round to nearby lower multiple of base
-    function floorInBase(n, base) {
-        return base * Math.floor(n / base);
-    }
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
-
-/***/ }),
-
-/***/ 662:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for automatically redrawing plots as the placeholder resizes.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-It works by listening for changes on the placeholder div (through the jQuery
-resize event plugin) - if the size changes, it will redraw the plot.
-
-There are no options. If you need to disable the plugin for some plots, you
-can just fix the size of their placeholders.
-
-*/
-
-/* Inline dependency:
- * jQuery resize event - v1.1 - 3/14/2010
- * http://benalman.com/projects/jquery-resize-plugin/
- *
- * Copyright (c) 2010 "Cowboy" Ben Alman
- * Dual licensed under the MIT and GPL licenses.
- * http://benalman.com/about/license/
- */
-(function ($, e, t) {
-    "$:nomunge";
-
-    e = window;
-    var i = [],
-        n = $.resize = $.extend($.resize, {}),
-        a,
-        r = false,
-        s = "setTimeout",
-        u = "resize",
-        m = u + "-special-event",
-        o = "pendingDelay",
-        l = "activeDelay",
-        f = "throttleWindow";
-    n[o] = 200;
-    n[l] = 20;
-    n[f] = true;
-    $.event.special[u] = {
-        setup: function setup() {
-            if (!n[f] && this[s]) {
-                return false;
-            }
-            var e = $(this);
-            i.push(this);
-            e.data(m, { w: e.width(), h: e.height() });
-            if (i.length === 1) {
-                a = t;
-                h();
-            }
-        },
-        teardown: function teardown() {
-            if (!n[f] && this[s]) {
-                return false;
-            }
-            var e = $(this);
-            for (var t = i.length - 1; t >= 0; t--) {
-                if (i[t] == this) {
-                    i.splice(t, 1);
-                    break;
-                }
-            }
-            e.removeData(m);
-            if (!i.length) {
-                if (r) {
-                    cancelAnimationFrame(a);
-                } else {
-                    clearTimeout(a);
-                }
-                a = null;
-            }
-        },
-        add: function add(e) {
-            if (!n[f] && this[s]) {
-                return false;
-            }
-            var i;
-
-            function a(e, n, a) {
-                var r = $(this),
-                    s = r.data(m) || {};
-                s.w = n !== t ? n : r.width();
-                s.h = a !== t ? a : r.height();
-                i.apply(this, arguments);
-            }
-            if ($.isFunction(e)) {
-                i = e;
-                return a;
-            } else {
-                i = e.handler;
-                e.handler = a;
-            }
-        }
-    };
-
-    function h(t) {
-        if (r === true) {
-            r = t || 1;
-        }
-        for (var s = i.length - 1; s >= 0; s--) {
-            var l = $(i[s]);
-            if (l[0] == e || l.is(":visible")) {
-                var f = l.width(),
-                    c = l.height(),
-                    d = l.data(m);
-                if (d && (f !== d.w || c !== d.h)) {
-                    l.trigger(u, [d.w = f, d.h = c]);
-                    r = t || true;
-                }
-            } else {
-                d = l.data(m);
-                d.w = 0;
-                d.h = 0;
-            }
-        }
-        if (a !== null) {
-            if (r && (t == null || t - r < 1e3)) {
-                a = e.requestAnimationFrame(h);
-            } else {
-                a = setTimeout(h, n[o]);
-                r = false;
-            }
-        }
-    }
-    if (!e.requestAnimationFrame) {
-        e.requestAnimationFrame = function () {
-            return e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (t, i) {
-                return e.setTimeout(function () {
-                    t(new Date().getTime());
-                }, n[l]);
-            };
-        }();
-    }
-    if (!e.cancelAnimationFrame) {
-        e.cancelAnimationFrame = function () {
-            return e.webkitCancelRequestAnimationFrame || e.mozCancelRequestAnimationFrame || e.oCancelRequestAnimationFrame || e.msCancelRequestAnimationFrame || clearTimeout;
-        }();
-    }
-})(jQuery, this);
-
-(function ($) {
-    var options = {}; // no options
-
-    function init(plot) {
-        function onResize() {
-            var placeholder = plot.getPlaceholder();
-
-            // somebody might have hidden us and we can't plot
-            // when we don't have the dimensions
-            if (placeholder.width() == 0 || placeholder.height() == 0) return;
-
-            plot.resize();
-            plot.setupGrid();
-            plot.draw();
-        }
-
-        function bindEvents(plot, eventHolder) {
-            plot.getPlaceholder().resize(onResize);
-        }
-
-        function shutdown(plot, eventHolder) {
-            plot.getPlaceholder().unbind("resize", onResize);
-        }
-
-        plot.hooks.bindEvents.push(bindEvents);
-        plot.hooks.shutdown.push(shutdown);
-    }
-
-    $.plot.plugins.push({
-        init: init,
-        options: options,
-        name: 'resize',
-        version: '1.0'
-    });
-})(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
-
-/***/ }),
-
-/***/ 663:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for stacking data sets rather than overlyaing them.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-The plugin assumes the data is sorted on x (or y if stacking horizontally).
-For line charts, it is assumed that if a line has an undefined gap (from a
-null point), then the line above it should have the same gap - insert zeros
-instead of "null" if you want another behaviour. This also holds for the start
-and end of the chart. Note that stacking a mix of positive and negative values
-in most instances doesn't make sense (so it looks weird).
-
-Two or more series are stacked when their "stack" attribute is set to the same
-key (which can be any number or string or just "true"). To specify the default
-stack, you can set the stack option like this:
-
-	series: {
-		stack: null/false, true, or a key (number/string)
-	}
-
-You can also specify it for a single series, like this:
-
-	$.plot( $("#placeholder"), [{
-		data: [ ... ],
-		stack: true
-	}])
-
-The stacking order is determined by the order of the data series in the array
-(later series end up on top of the previous).
-
-Internally, the plugin modifies the datapoints in each series, adding an
-offset to the y value. For line series, extra data points are inserted through
-interpolation. If there's a second y value, it's also adjusted (e.g for bar
-charts or filled areas).
-
-*/
-
-(function ($) {
-    var options = {
-        series: { stack: null } // or number/string
-    };
-    
-    function init(plot) {
-        function findMatchingSeries(s, allseries) {
-            var res = null;
-            for (var i = 0; i < allseries.length; ++i) {
-                if (s == allseries[i])
-                    break;
-                
-                if (allseries[i].stack == s.stack)
-                    res = allseries[i];
-            }
-            
-            return res;
-        }
-        
-        function stackData(plot, s, datapoints) {
-            if (s.stack == null || s.stack === false)
-                return;
-
-            var other = findMatchingSeries(s, plot.getData());
-            if (!other)
-                return;
-
-            var ps = datapoints.pointsize,
-                points = datapoints.points,
-                otherps = other.datapoints.pointsize,
-                otherpoints = other.datapoints.points,
-                newpoints = [],
-                px, py, intery, qx, qy, bottom,
-                withlines = s.lines.show,
-                horizontal = s.bars.horizontal,
-                withbottom = ps > 2 && (horizontal ? datapoints.format[2].x : datapoints.format[2].y),
-                withsteps = withlines && s.lines.steps,
-                fromgap = true,
-                keyOffset = horizontal ? 1 : 0,
-                accumulateOffset = horizontal ? 0 : 1,
-                i = 0, j = 0, l, m;
-
-            while (true) {
-                if (i >= points.length)
-                    break;
-
-                l = newpoints.length;
-
-                if (points[i] == null) {
-                    // copy gaps
-                    for (m = 0; m < ps; ++m)
-                        newpoints.push(points[i + m]);
-                    i += ps;
-                }
-                else if (j >= otherpoints.length) {
-                    // for lines, we can't use the rest of the points
-                    if (!withlines) {
-                        for (m = 0; m < ps; ++m)
-                            newpoints.push(points[i + m]);
-                    }
-                    i += ps;
-                }
-                else if (otherpoints[j] == null) {
-                    // oops, got a gap
-                    for (m = 0; m < ps; ++m)
-                        newpoints.push(null);
-                    fromgap = true;
-                    j += otherps;
-                }
-                else {
-                    // cases where we actually got two points
-                    px = points[i + keyOffset];
-                    py = points[i + accumulateOffset];
-                    qx = otherpoints[j + keyOffset];
-                    qy = otherpoints[j + accumulateOffset];
-                    bottom = 0;
-
-                    if (px == qx) {
-                        for (m = 0; m < ps; ++m)
-                            newpoints.push(points[i + m]);
-
-                        newpoints[l + accumulateOffset] += qy;
-                        bottom = qy;
-                        
-                        i += ps;
-                        j += otherps;
-                    }
-                    else if (px > qx) {
-                        // we got past point below, might need to
-                        // insert interpolated extra point
-                        if (withlines && i > 0 && points[i - ps] != null) {
-                            intery = py + (points[i - ps + accumulateOffset] - py) * (qx - px) / (points[i - ps + keyOffset] - px);
-                            newpoints.push(qx);
-                            newpoints.push(intery + qy);
-                            for (m = 2; m < ps; ++m)
-                                newpoints.push(points[i + m]);
-                            bottom = qy; 
-                        }
-
-                        j += otherps;
-                    }
-                    else { // px < qx
-                        if (fromgap && withlines) {
-                            // if we come from a gap, we just skip this point
-                            i += ps;
-                            continue;
-                        }
-                            
-                        for (m = 0; m < ps; ++m)
-                            newpoints.push(points[i + m]);
-                        
-                        // we might be able to interpolate a point below,
-                        // this can give us a better y
-                        if (withlines && j > 0 && otherpoints[j - otherps] != null)
-                            bottom = qy + (otherpoints[j - otherps + accumulateOffset] - qy) * (px - qx) / (otherpoints[j - otherps + keyOffset] - qx);
-
-                        newpoints[l + accumulateOffset] += bottom;
-                        
-                        i += ps;
-                    }
-
-                    fromgap = false;
-                    
-                    if (l != newpoints.length && withbottom)
-                        newpoints[l + 2] += bottom;
-                }
-
-                // maintain the line steps invariant
-                if (withsteps && l != newpoints.length && l > 0
-                    && newpoints[l] != null
-                    && newpoints[l] != newpoints[l - ps]
-                    && newpoints[l + 1] != newpoints[l - ps + 1]) {
-                    for (m = 0; m < ps; ++m)
-                        newpoints[l + ps + m] = newpoints[l + m];
-                    newpoints[l + 1] = newpoints[l - ps + 1];
-                }
-            }
-
-            datapoints.points = newpoints;
-        }
-        
-        plot.hooks.processDatapoints.push(stackData);
-    }
-    
-    $.plot.plugins.push({
-        init: init,
-        options: options,
-        name: 'stack',
-        version: '1.2'
-    });
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
-
-/***/ }),
-
-/***/ 664:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {!function(a){"use strict";function b(a,b,c,d,e,f,g){var j,k,l,m,n,o,p,q,h=Math.pow,i=Math.sqrt;return j=i(h(c-a,2)+h(d-b,2)),k=i(h(e-c,2)+h(f-d,2)),l=g*j/(j+k),m=g-l,n=c+l*(a-e),o=d+l*(b-f),p=c-m*(a-e),q=d-m*(b-f),[n,o,p,q]}function d(b,c,d,e,f){var g=a.color.parse(f);g.a="number"==typeof e?e:.3,g.normalize(),g=g.toString(),c.beginPath(),c.moveTo(b[0][0],b[0][1]);for(var h=b.length,i=0;h>i;i++)c[b[i][3]].apply(c,b[i][2]);c.stroke(),c.lineWidth=0,c.lineTo(b[h-1][0],d),c.lineTo(b[0][0],d),c.closePath(),e!==!1&&(c.fillStyle=g,c.fill())}function e(a,b,d,e){(void 0===b||"bezier"!==b&&"quadratic"!==b)&&(b="quadratic"),b+="CurveTo",0==c.length?c.push([d[0],d[1],e.concat(d.slice(2)),b]):"quadraticCurveTo"==b&&2==d.length?(e=e.slice(0,2).concat(d),c.push([d[0],d[1],e,b])):c.push([d[2],d[3],e.concat(d.slice(2)),b])}function f(f,g,h){if(h.splines.show===!0){var k,l,m,i=[],j=h.splines.tension||.5,n=h.datapoints.points,o=h.datapoints.pointsize,p=f.getPlotOffset(),q=n.length,r=[];if(c=[],4>q/o)return a.extend(h.lines,h.splines),void 0;for(k=0;q>k;k+=o)l=n[k],m=n[k+1],null==l||l<h.xaxis.min||l>h.xaxis.max||m<h.yaxis.min||m>h.yaxis.max||r.push(h.xaxis.p2c(l)+p.left,h.yaxis.p2c(m)+p.top);for(q=r.length,k=0;q-2>k;k+=2)i=i.concat(b.apply(this,r.slice(k,k+6).concat([j])));for(g.save(),g.strokeStyle=h.color,g.lineWidth=h.splines.lineWidth,e(g,"quadratic",r.slice(0,4),i.slice(0,2)),k=2;q-3>k;k+=2)e(g,"bezier",r.slice(k,k+4),i.slice(2*k-2,2*k+2));e(g,"quadratic",r.slice(q-2,q),[i[2*q-10],i[2*q-9],r[q-4],r[q-3]]),d(c,g,f.height()+10,h.splines.fill,h.color),g.restore()}}var c=[];a.plot.plugins.push({init:function(a){a.hooks.drawSeries.push(f)},options:{series:{splines:{show:!1,lineWidth:2,tension:.5,fill:!1}}},name:"spline",version:"0.8.2"})}(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(520)))
 
 /***/ })
 

@@ -1290,7 +1290,76 @@ const routes = [{
                     href: '#/Actividades'
                 }]
             }
-        }]
+        },
+        {
+            path: 'TipoActividad',
+            component: resolve => require(['./components/pages/src/tipoactividad.vue'], resolve),
+            meta: {
+                title: 'Tipo de Actividades',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Tipo Actividades',
+                    href: '#/TipoActividad'
+                }]
+            }
+        },
+        {
+            path: 'Estadistica',
+            component: resolve => require(['./components/pages/src/estadistica.vue'], resolve),
+            meta: {
+                title: 'Estadisticas',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Estadisticas',
+                    href: '#/Estadistica'
+                }]
+            }
+        },
+        {
+            path: 'Tarea',
+            component: resolve => require(['./components/pages/src/tarea.vue'], resolve),
+            meta: {
+                title: 'Tareas',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Tareas',
+                    href: '#/Tarea'
+                }]
+            }
+        },
+        {
+            path: 'Subir',
+            component: resolve => require(['./components/pages/src/subir.vue'], resolve),
+            meta: {
+                title: 'Subir',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Tarea',
+                    href: '#/Subir'
+                }]
+            }
+        }
+    ]
 }, {
     path: '/500',
     component: resolve => require(['./components/pages/500.vue'], resolve),

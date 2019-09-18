@@ -1,12 +1,12 @@
 webpackJsonp([10],{
 
-/***/ 1526:
+/***/ 1530:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1527);
+var content = __webpack_require__(1531);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1527:
+/***/ 1531:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,14 +42,14 @@ exports.push([module.i, "\n.listjs table td, table th {\n    padding:5px;\n}\n.l
 
 /***/ }),
 
-/***/ 1528:
+/***/ 1532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_list_js__ = __webpack_require__(762);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_list_js__ = __webpack_require__(766);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_list_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_list_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__card_card_vue__);
 //
 //
@@ -383,11 +383,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         //            pagination ends here
     }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(520)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(525)))
 
 /***/ }),
 
-/***/ 1529:
+/***/ 1533:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -519,7 +519,7 @@ module.exports = naturalCompare;
 
 /***/ }),
 
-/***/ 1530:
+/***/ 1534:
 /***/ (function(module, exports) {
 
 /**
@@ -552,7 +552,7 @@ module.exports = function(el, attr) {
 
 /***/ }),
 
-/***/ 1531:
+/***/ 1535:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -575,12 +575,12 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1532:
+/***/ 1536:
 /***/ (function(module, exports, __webpack_require__) {
 
-var classes = __webpack_require__(700),
-  events = __webpack_require__(699),
-  List = __webpack_require__(762);
+var classes = __webpack_require__(704),
+  events = __webpack_require__(703),
+  List = __webpack_require__(766);
 
 module.exports = function(list) {
 
@@ -675,12 +675,12 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1533:
+/***/ 1537:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function(list) {
 
-  var Item = __webpack_require__(768)(list);
+  var Item = __webpack_require__(772)(list);
 
   var getChildren = function(parent) {
     var nodes = parent.childNodes,
@@ -729,7 +729,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1534:
+/***/ 1538:
 /***/ (function(module, exports) {
 
 var Templater = function(list) {
@@ -910,7 +910,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1535:
+/***/ 1539:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1037,7 +1037,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1536:
+/***/ 1540:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1073,7 +1073,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1537:
+/***/ 1541:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1186,16 +1186,16 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1538:
+/***/ 1542:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var classes = __webpack_require__(700),
-  events = __webpack_require__(699),
-  extend = __webpack_require__(764),
-  toString = __webpack_require__(767),
-  getByClass = __webpack_require__(763),
-  fuzzy = __webpack_require__(1539);
+var classes = __webpack_require__(704),
+  events = __webpack_require__(703),
+  extend = __webpack_require__(768),
+  toString = __webpack_require__(771),
+  getByClass = __webpack_require__(767),
+  fuzzy = __webpack_require__(1543);
 
 module.exports = function(list, options) {
   options = options || {};
@@ -1260,7 +1260,7 @@ module.exports = function(list, options) {
 
 /***/ }),
 
-/***/ 1539:
+/***/ 1543:
 /***/ (function(module, exports) {
 
 module.exports = function(text, pattern, options) {
@@ -1390,7 +1390,7 @@ module.exports = function(text, pattern, options) {
 
 /***/ }),
 
-/***/ 1540:
+/***/ 1544:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1833,7 +1833,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(534),
+                              src: __webpack_require__(563),
                               alt: "user"
                             }
                           })
@@ -1869,7 +1869,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(532),
+                              src: __webpack_require__(561),
                               alt: "user"
                             }
                           })
@@ -1905,7 +1905,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(533),
+                              src: __webpack_require__(562),
                               alt: "user"
                             }
                           })
@@ -1941,7 +1941,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "image rounded-circle",
                             attrs: {
-                              src: __webpack_require__(543),
+                              src: __webpack_require__(565),
                               alt: "user"
                             }
                           })
@@ -2093,13 +2093,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1526)
+  __webpack_require__(1530)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1528)
+var __vue_script__ = __webpack_require__(1532)
 /* template */
-var __vue_template__ = __webpack_require__(1540)
+var __vue_template__ = __webpack_require__(1544)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2139,7 +2139,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 520:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12511,19 +12511,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 522:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(523)
+  __webpack_require__(528)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(525)
+var __vue_script__ = __webpack_require__(530)
 /* template */
-var __vue_template__ = __webpack_require__(526)
+var __vue_template__ = __webpack_require__(531)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12563,13 +12563,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 523:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(524);
+var content = __webpack_require__(529);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -12590,7 +12590,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 524:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -12605,7 +12605,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 525:
+/***/ 530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12650,7 +12650,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 526:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12712,41 +12712,41 @@ if (false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 561:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 533:
+/***/ 562:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 534:
+/***/ 563:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 543:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 699:
+/***/ 703:
 /***/ (function(module, exports, __webpack_require__) {
 
 var bind = window.addEventListener ? 'addEventListener' : 'attachEvent',
     unbind = window.removeEventListener ? 'removeEventListener' : 'detachEvent',
     prefix = bind !== 'addEventListener' ? 'on' : '',
-    toArray = __webpack_require__(766);
+    toArray = __webpack_require__(770);
 
 /**
  * Bind `el` event `type` to `fn`.
@@ -12785,14 +12785,14 @@ exports.unbind = function(el, type, fn, capture){
 
 /***/ }),
 
-/***/ 700:
+/***/ 704:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Module dependencies.
  */
 
-var index = __webpack_require__(765);
+var index = __webpack_require__(769);
 
 /**
  * Whitespace regexp.
@@ -12956,26 +12956,26 @@ ClassList.prototype.contains = function(name){
 
 /***/ }),
 
-/***/ 762:
+/***/ 766:
 /***/ (function(module, exports, __webpack_require__) {
 
-var naturalSort = __webpack_require__(1529),
-  getByClass = __webpack_require__(763),
-  extend = __webpack_require__(764),
-  indexOf = __webpack_require__(765),
-  events = __webpack_require__(699),
-  toString = __webpack_require__(767),
-  classes = __webpack_require__(700),
-  getAttribute = __webpack_require__(1530),
-  toArray = __webpack_require__(766);
+var naturalSort = __webpack_require__(1533),
+  getByClass = __webpack_require__(767),
+  extend = __webpack_require__(768),
+  indexOf = __webpack_require__(769),
+  events = __webpack_require__(703),
+  toString = __webpack_require__(771),
+  classes = __webpack_require__(704),
+  getAttribute = __webpack_require__(1534),
+  toArray = __webpack_require__(770);
 
 module.exports = function(id, options, values) {
 
   var self = this,
     init,
-    Item = __webpack_require__(768)(self),
-    addAsync = __webpack_require__(1531)(self),
-    initPagination = __webpack_require__(1532)(self);
+    Item = __webpack_require__(772)(self),
+    addAsync = __webpack_require__(1535)(self),
+    initPagination = __webpack_require__(1536)(self);
 
   init = {
     start: function() {
@@ -13010,12 +13010,12 @@ module.exports = function(id, options, values) {
       if (!self.listContainer) { return; }
       self.list       = getByClass(self.listContainer, self.listClass, true);
 
-      self.parse        = __webpack_require__(1533)(self);
-      self.templater    = __webpack_require__(1534)(self);
-      self.search       = __webpack_require__(1535)(self);
-      self.filter       = __webpack_require__(1536)(self);
-      self.sort         = __webpack_require__(1537)(self);
-      self.fuzzySearch  = __webpack_require__(1538)(self, options.fuzzySearch);
+      self.parse        = __webpack_require__(1537)(self);
+      self.templater    = __webpack_require__(1538)(self);
+      self.search       = __webpack_require__(1539)(self);
+      self.filter       = __webpack_require__(1540)(self);
+      self.sort         = __webpack_require__(1541)(self);
+      self.fuzzySearch  = __webpack_require__(1542)(self, options.fuzzySearch);
 
       this.handlers();
       this.items();
@@ -13225,7 +13225,7 @@ module.exports = function(id, options, values) {
 
 /***/ }),
 
-/***/ 763:
+/***/ 767:
 /***/ (function(module, exports) {
 
 /**
@@ -13295,7 +13295,7 @@ module.exports = (function() {
 
 /***/ }),
 
-/***/ 764:
+/***/ 768:
 /***/ (function(module, exports) {
 
 /*
@@ -13320,7 +13320,7 @@ module.exports = function extend (object) {
 
 /***/ }),
 
-/***/ 765:
+/***/ 769:
 /***/ (function(module, exports) {
 
 var indexOf = [].indexOf;
@@ -13336,7 +13336,7 @@ module.exports = function(arr, obj){
 
 /***/ }),
 
-/***/ 766:
+/***/ 770:
 /***/ (function(module, exports) {
 
 /**
@@ -13376,7 +13376,7 @@ function isArray(arr) {
 
 /***/ }),
 
-/***/ 767:
+/***/ 771:
 /***/ (function(module, exports) {
 
 module.exports = function(s) {
@@ -13389,7 +13389,7 @@ module.exports = function(s) {
 
 /***/ }),
 
-/***/ 768:
+/***/ 772:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {

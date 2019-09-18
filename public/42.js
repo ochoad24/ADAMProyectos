@@ -1,22 +1,22 @@
 webpackJsonp([42],{
 
-/***/ 1749:
+/***/ 1272:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1750);
+var content = __webpack_require__(1273);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("aecf985e", content, false, {});
+var update = __webpack_require__(26)("366d5d5c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./fileinput.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./fileinput.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,57 @@ if(false) {
 
 /***/ }),
 
-/***/ 1750:
+/***/ 1273:
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(28);
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * bootstrap-fileinput v4.5.1\r\n * http://plugins.krajee.com/file-input\r\n *\r\n * Krajee default styling for bootstrap-fileinput.\r\n *\r\n * Author: Kartik Visweswaran\r\n * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com\r\n *\r\n * Licensed under the BSD 3-Clause\r\n * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md\r\n */\n.btn-file input[type=file],.file-caption-icon,.file-no-browse,.file-preview .fileinput-remove,.file-zoom-dialog .btn-navigate,.file-zoom-dialog .floating-buttons,.krajee-default .file-thumb-progress{position:absolute\n}\n.file-loading input[type=file],input[type=file].file-loading{width:0;height:0\n}\n.file-no-browse{left:50%;bottom:20%;width:1px;height:1px;font-size:0;opacity:0;border:none;background:0 0;outline:0;box-shadow:none\n}\n.file-caption-icon,.file-input-ajax-new .fileinput-remove-button,.file-input-ajax-new .fileinput-upload-button,.file-input-ajax-new .no-browse .input-group-btn,.file-input-new .close,.file-input-new .file-preview,.file-input-new .fileinput-remove-button,.file-input-new .fileinput-upload-button,.file-input-new .glyphicon-file,.file-input-new .no-browse .input-group-btn,.file-zoom-dialog .modal-header:after,.file-zoom-dialog .modal-header:before,.hide-content .kv-file-content,.kv-hidden{display:none\n}\n.btn-file,.file-caption,.file-input,.file-loading:before,.file-preview,.file-zoom-dialog .modal-dialog,.krajee-default .file-thumbnail-footer,.krajee-default.file-preview-frame{position:relative\n}\n.file-error-message pre,.file-error-message ul,.krajee-default .file-actions,.krajee-default .file-other-error{text-align:left\n}\n.file-error-message pre,.file-error-message ul{margin:0\n}\n.krajee-default .file-drag-handle,.krajee-default .file-upload-indicator{float:left;margin:5px 0 -5px;width:16px;height:16px\n}\n.krajee-default .file-thumb-progress .progress,.krajee-default .file-thumb-progress .progress-bar{height:11px;font-family:Verdana,Helvetica,sans-serif;font-size:9px\n}\n.krajee-default .file-caption-info,.krajee-default .file-size-info{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:160px;height:15px;margin:auto\n}\n.file-zoom-content>.file-object.type-flash,.file-zoom-content>.file-object.type-image,.file-zoom-content>.file-object.type-video{max-width:100%;max-height:100%;width:auto\n}\n.file-zoom-content>.file-object.type-flash,.file-zoom-content>.file-object.type-video{height:100%\n}\n.file-zoom-content>.file-object.type-default,.file-zoom-content>.file-object.type-html,.file-zoom-content>.file-object.type-pdf,.file-zoom-content>.file-object.type-text{width:100%\n}\n.file-loading:before{content:\" Loading...\";display:inline-block;padding-left:20px;line-height:16px;font-size:13px;font-variant:small-caps;color:#999;background:url(" + escape(__webpack_require__(693)) + ") top left no-repeat\n}\n.file-object{margin:0 0 -5px;padding:0\n}\n.btn-file{overflow:hidden\n}\n.btn-file input[type=file]{top:0;left:0;min-width:100%;min-height:100%;text-align:right;opacity:0;background:none;cursor:inherit;display:block\n}\n.btn-file ::-ms-browse{font-size:10000px;width:100%;height:100%\n}\n.file-caption .file-caption-name{width:100%;margin:0;padding:0;box-shadow:none;border:none;background:0 0;outline:0\n}\n.file-caption.icon-visible .file-caption-icon{display:inline-block\n}\n.file-caption.icon-visible .file-caption-name{padding-left:15px\n}\n.file-caption-icon{left:8px\n}\n.file-error-message{color:#a94442;background-color:#f2dede;margin:5px;border:1px solid #ebccd1;border-radius:4px;padding:15px\n}\n.file-error-message pre{margin:5px 0\n}\n.file-caption-disabled{background-color:#eee;cursor:not-allowed;opacity:1\n}\n.file-preview{border-radius:5px;border:1px solid #ddd;padding:8px;width:100%;margin-bottom:5px\n}\n.file-preview .btn-xs{padding:1px 5px;font-size:12px;line-height:1.5;border-radius:3px\n}\n.file-preview .fileinput-remove{top:1px;right:1px;line-height:10px\n}\n.file-preview .clickable{cursor:pointer\n}\n.file-preview-image{font:40px Impact,Charcoal,sans-serif;color:green\n}\n.krajee-default.file-preview-frame{margin:8px;border:1px solid rgba(0,0,0,.2);box-shadow:0 0 10px 0 rgba(0,0,0,.2);padding:6px;float:left;text-align:center\n}\n.krajee-default.file-preview-frame .kv-file-content{width:213px;height:160px\n}\n.krajee-default.file-preview-frame .kv-file-content.kv-pdf-rendered{width:400px\n}\n.krajee-default.file-preview-frame .file-thumbnail-footer{height:70px\n}\n.krajee-default.file-preview-frame:not(.file-preview-error):hover{border:1px solid rgba(0,0,0,.3);box-shadow:0 0 10px 0 rgba(0,0,0,.4)\n}\n.krajee-default .file-preview-text{display:block;color:#428bca;border:1px solid #ddd;font-family:Menlo,Monaco,Consolas,\"Courier New\",monospace;outline:0;padding:8px;resize:none\n}\n.krajee-default .file-preview-html{border:1px solid #ddd;padding:8px;overflow:auto\n}\n.krajee-default .file-other-icon{font-size:6em\n}\n.krajee-default .file-footer-buttons{float:right\n}\n.krajee-default .file-footer-caption{display:block;text-align:center;padding-top:4px;font-size:11px;color:#777;margin-bottom:15px\n}\n.krajee-default .file-preview-error{opacity:.65;box-shadow:none\n}\n.krajee-default .file-thumb-progress{height:11px;top:37px;left:0;right:0\n}\n.krajee-default.kvsortable-ghost{background:#e1edf7;border:2px solid #a1abff\n}\n.krajee-default .file-preview-other:hover{opacity:.8\n}\n.krajee-default .file-preview-frame:not(.file-preview-error) .file-footer-caption:hover{color:#000\n}\n.kv-upload-progress .progress{height:20px;margin:10px 0;overflow:hidden\n}\n.kv-upload-progress .progress-bar{height:20px;font-family:Verdana,Helvetica,sans-serif\n}\n.file-zoom-dialog .file-other-icon{font-size:22em;font-size:50vmin\n}\n.file-zoom-dialog .modal-dialog{width:auto\n}\n.file-zoom-dialog .modal-header{display:flex;align-items:center;justify-content:space-between\n}\n.file-zoom-dialog .btn-navigate{padding:0;margin:0;background:0 0;text-decoration:none;outline:0;opacity:.7;top:45%;font-size:4em;color:#1c94c4\n}\n.file-zoom-dialog .btn-navigate:not([disabled]):hover{outline:0;box-shadow:none;opacity:.6\n}\n.file-zoom-dialog .floating-buttons{top:5px;right:10px\n}\n.file-zoom-dialog .btn-navigate[disabled]{opacity:.3\n}\n.file-zoom-dialog .btn-prev{left:1px\n}\n.file-zoom-dialog .btn-next{right:1px\n}\n.file-zoom-dialog .kv-zoom-title{font-weight:300;color:#999;max-width:50%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis\n}\n.file-input-ajax-new .no-browse .form-control,.file-input-new .no-browse .form-control{border-top-right-radius:4px;border-bottom-right-radius:4px\n}\n.file-caption-main{width:100%\n}\n.file-thumb-loading{background:url(" + escape(__webpack_require__(693)) + ") center center no-repeat content-box!important\n}\n.file-drop-zone{border:1px dashed #aaa;border-radius:4px;height:100%;text-align:center;vertical-align:middle;margin:12px 15px 12px 12px;padding:5px\n}\n.file-drop-zone.clickable:hover{border:2px dashed #999\n}\n.file-drop-zone.clickable:focus{border:2px solid #5acde2\n}\n.file-drop-zone .file-preview-thumbnails{cursor:default\n}\n.file-drop-zone-title{color:#aaa;font-size:1.6em;padding:85px 10px;cursor:default\n}\n.file-highlighted{border:2px dashed #999!important;background-color:#eee\n}\n.file-uploading{background:url(" + escape(__webpack_require__(1274)) + ") center bottom 10px no-repeat;opacity:.65\n}\n.file-zoom-fullscreen .modal-dialog{min-width:100%;margin:0\n}\n.file-zoom-fullscreen .modal-content{border-radius:0;box-shadow:none;min-height:100vh\n}\n.file-zoom-fullscreen .modal-body{overflow-y:auto\n}\n.floating-buttons{z-index:3000\n}\n.floating-buttons .btn-kv{margin-left:3px;z-index:3000\n}\n.file-zoom-content{height:480px;text-align:center\n}\n.file-zoom-content .file-preview-image,.file-zoom-content .file-preview-video{max-height:100%\n}\n.file-zoom-content>.file-object.type-image{height:auto;min-height:inherit\n}\n.file-zoom-content>.file-object.type-audio{width:auto;height:30px\n}\n@media (min-width:576px){\n.file-zoom-dialog .modal-dialog{max-width:500px\n}\n}\n@media (min-width:992px){\n.file-zoom-dialog .modal-lg{max-width:800px\n}\n}\n@media (max-width:767px){\n.file-preview-thumbnails{display:flex;justify-content:center;align-items:center;flex-direction:column\n}\n.file-zoom-dialog .modal-header{flex-direction:column\n}\n}\n@media (max-width:350px){\n.krajee-default.file-preview-frame .kv-file-content{width:160px\n}\n}\n@media (max-width:420px){\n.krajee-default.file-preview-frame .kv-file-content.kv-pdf-rendered{width:100%\n}\n}\n.file-loading[dir=rtl]:before{background:url(" + escape(__webpack_require__(693)) + ") top right no-repeat;padding-left:0;padding-right:20px\n}\n.file-sortable .file-drag-handle{cursor:move;opacity:1\n}\n.file-sortable .file-drag-handle:hover{opacity:.7\n}\n.clickable .file-drop-zone-title{cursor:pointer\n}\n.kv-zoom-actions .btn-kv{margin-left:3px\n}\n.file-preview-initial.sortable-chosen{background-color:#d9edf7\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1274:
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/bootstrap-fileinput/loading-sm.gif?e5ad074b7969cc386b387f08dba4fcec";
+
+/***/ }),
+
+/***/ 1275:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1276);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("fcbba6e8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./formelements.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./formelements.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1276:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,25 +85,468 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.demo {\n    height : 300px;\n    width  : 100%;\n}\n.demo > div:nth-child(2) {\n    position : relative;\n    width    : 350px;\n    margin   : auto\n}\n.demo .demo_hours {\n    position : absolute;\n    left     : 10px;\n    top      : 10px;\n}\n.demo .demo_minutes {\n    position : absolute;\n    left     : 50px;\n    top      : 50px;\n}\n.demo .demo_seconds {\n    position : absolute;\n    left     : 90px;\n    top      : 90px;\n}\n.m-b-10 {\n    margin-bottom : 10px;\n}\n.jqstooltip{\n    z-index: 99 !important;\n}\n.exact-size div,.colors div{\n    display: inline-block;\n}\n.custom_small{\n    margin-top: -20px;\n}", ""]);
+exports.push([module.i, "\n.select2-container .select2-selection--single {\n    height: 34px;\n}\n.select2-container--default .select2-selection--multiple,\n.select2-container--default .select2-selection--single {\n    border-radius: 0;\n}\n.daterangepicker.opensleft:after {\n    display: none;\n}\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    margin-left: 0;\n}\n.btn-file{\n    border-bottom-right-radius: 0 !important;\n    border-top-right-radius: 0 !important;\n}\n.file-input .input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    margin-left: -1px;\n}\n.file-error-message {\n    color: #FE5B5B;\n}\n.noresize {\n    resize: none;\n}\n.radio-inline + .radio-inline,\n.checkbox-inline + .checkbox-inline {\n    margin-left: 0;\n}\nimg.flag {\n    height: 16px;\n    width: 28px;\n    padding-right: 10px;\n}\n.file-preview-image {\n    max-width: 100% !important;\n}\n.m-b-10 {\n    margin-bottom: 10px !important;\n}\n.m-t-ng-8 {\n    margin-top: -8px;\n}\n#kvFileinputModal.file-zoom-fullscreen {\n    z-index: 10009;\n}\n.input-group-sm > .input-group-addon {\n    padding: 3px 10px;\n}\n.input-group-lg > .input-group-addon {\n    padding: 9px 16px;\n}\n.has-success .form-control{\n    border:1px solid #66cc99 !important;\n}\n.has-warning .form-control {\n    border-color: #f0ad4e;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-error .form-control {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.input-sm{\n    height: 30px;\n    padding: 5px 10px;\n    font-size: 12px;\n    line-height: 1.5;\n    border-radius: 3px;\n}\n.input-md{\n    height: 34px;\n    padding: 5px 10px;\n    font-size: 12px;\n    line-height: 1.5;\n    border-radius: 3px;\n}\n.input-lg{\n    height: 46px;\n    padding: 10px 16px;\n    font-size: 18px;\n    line-height: 1.33333;\n    border-radius: 6px;\n}\n.kv-upload-progress>.progress,.fileinput-cancel-button{\n    display: none;\n}\n.custom-checkbox,.custom-radio{\n    margin: 0;\n}\n.inline_radio .custom-radio,.inline_check .custom-checkbox{\n    padding-right: 50px;\n}\n.form-control:disabled{\n    cursor:not-allowed;\n}\n.content .card{\n    margin-top: 10px;\n}\n@media(min-width: 320px) and (max-width: 425px){\n.input-group,.file-input-new,.btn-modify{\n        margin-bottom: 10px;\n}\n.input-group-btn .hidden-xs{\n        display: none;\n}\n}\n@media (max-width:768px){\n.input-group{\n        margin-bottom: 10px;\n}\n}\n.inlineRadio .custom-radio{\n    margin-right: 10px !important;\n}\n.dropdown-menu.show{\n    margin-right: 20px;\n}\n#input-text-has-success:focus{\n    box-shadow: 0px 0px 5px 0.1px #66cc99;\n}\n#input-text-has-warning:focus{\n    box-shadow: 0px 0px 5px 0.1px #f0ad4e;\n}\n#input-text-has-error:focus{\n    box-shadow: 0px 0px 5px 0.1px #ff6666;\n}\n.kv-file-zoom,.file-upload-indicator{\n    display: none;\n}\n.file-caption-main .btn-default{\n    color: #333;\n}\n.btn:active{\n    color: #fff !important;\n}\n.input_height .btn-group.show .dropdown-toggle{\n    color: #fff;\n}\n#input-20{\n    margin-bottom: 10px;\n}\n.input-group-btn .dropdown-menu{\n    z-index: 99;\n}\n\n\n\n/*bootstrap3 ovverrides*/\n.file-input-section .input-group-append .btn-file,.file-input-section .file-input .btn-file{\n    border-top-right-radius: 0.25rem !important;\n    border-bottom-right-radius: 0.25rem !important;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1751:
+/***/ 1277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(522);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(527);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__ = __webpack_require__(602);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__ = __webpack_require__(576);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js__ = __webpack_require__(1278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js__ = __webpack_require__(1279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -249,155 +742,142 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "circle_sliders",
     components: {
-
-        circleslider: __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"].VueCircleSlider,
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
         return {
-            sliderValue: 20,
-            val2: 0,
-            val3: 0,
-            val4: 0,
-            val5: 0,
-            val6: 0,
-            val7: 0
+            selected: 'first',
+            options: [{ text: 'First radio', value: 'first' }, { text: 'Second radio', value: 'second' }, { text: 'Third radio', value: 'third' }],
+            radios: [{ text: 'First radio', value: 'first' }, { text: 'Second radio', value: 'second' }, { text: 'Third radio', value: 'third' }],
+            stacked_check: ['Checkbox 1', 'Checkbox 2', 'Checkbox 3'],
+            check: ['Checkbox 1', 'Checkbox 2', 'Checkbox 3']
         };
     },
 
+    name: "form-elements",
     mounted: function mounted() {
         "use strict";
 
-        $(document).ready(function () {
-            // spark line charts js start
-            $(".linechart").sparkline([5, 1, 7, 8, 2, 6, 4, 7, 4, 2, 4], {
-                type: 'line',
-                height: "50px",
-                width: "80px;",
-                lineColor: '#428bca',
-                fillColor: 'rgba(66,139,202,0.5)'
-            });
-            $(".barchart").sparkline([5, 6, 7, 2, 0, -4, -2, 4], {
-                type: 'bar',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                barColor: "#428bca",
-                negBarColor: '#fb8678'
-            });
-            $(".stackedbarchart").sparkline([[5, 4], [4, 7], [7, 3], [3, 5], [6, 3], [2, 5]], {
-                type: 'bar',
-                zeroColor: '#dcdcdc',
-                nullColor: '#dcdcdc ',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                stackedBarColor: ['#fb8678', '#428bca']
-            });
-            $(".tristatechart").sparkline([1, 1, 0, 1, -1, -1, 1, -1, 0, 0, 1, 1], {
-                type: 'tristate',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                posBarColor: '#22d69d',
-                negBarColor: '#fb8678',
-                zeroBarColor: '#dcdcdc'
-            });
-            $(".bulletchart").sparkline([10, 12, 12, 9, 7], {
-                type: 'bullet',
-                height: "30px",
-                width: "80px",
-                targetColor: '#fb8678',
-                performanceColor: '#4fc1e9',
-                rangeColors: ['#ffb65f', '#fb8678', '#428bca']
-            });
-            $(".piechart").sparkline([3, 4, 1, 6, 3, 5], {
-                type: 'pie',
-                width: '50px',
-                height: '50px',
-                sliceColors: ['#428bca', '#22d69d', '#4fc1e9', '#fb8678', '#ffb65f']
-            });
-            $(".discretechart").sparkline([4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 2, 3, 5, 1, 6], {
-                type: 'discrete',
-                height: "50px",
-                Width: "80px",
-                lineColor: '#428bca'
-            });
-            $(".boxchart").sparkline([4, 27, 34, 52, 54, 59, 61, 68, 78, 82, 85, 87, 91, 93, 100], {
-                type: 'box',
-                width: '80px',
-                height: '50px',
-                boxFillColor: '#4fc1e9',
-                whiskerColor: '#ffb65f',
-                medianColor: '#fb8678',
-                targetColor: '#22d69d'
-            });
-            $('#compositeline').sparkline('html', {
-                fillColor: false,
-                changeRangeMin: 0,
-                chartRangeMax: 10,
-                width: '100px',
-                height: '50px',
-                lineColor: '#428bca'
-            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
-                composite: true,
-                fillColor: false,
-                changeRangeMin: 0,
-                chartRangeMax: 10,
-                width: '100px',
-                height: '50px',
-                lineColor: '#fb8678'
-            });
-            $('#compositebar').sparkline('html', {
-                type: 'bar',
-                barWidth: "10px;",
-                barSpace: "5px",
-                height: '50px',
-                barColor: "#428bca"
-            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
-                composite: true,
-                fillColor: false,
-                barWidth: "10px;",
-                barSpace: "5px",
-                height: '50px',
-                lineColor: '#ffb65f'
-            });
-            $('#normalline').sparkline('html', {
-                fillColor: false,
-                normalRangeMin: -1,
-                normalRangeMax: 8,
-                width: '120px',
-                height: '50px',
-                lineColor: '#428bca'
-            });
-            $('#normalExample').sparkline('html', {
-                fillColor: false,
-                normalRangeMin: 80,
-                normalRangeMax: 95,
-                normalRangeColor: '#dcdcdc'
-            });
-            $('#discrete2').sparkline('html', {
-                type: 'discrete',
-                thresholdColor: '#fb8678',
-                thresholdValue: 4,
-                height: "50px",
-                Width: "80px",
-                lineColor: '#428bca'
-            });
+        $("#input-43").fileinput({
+            browseClass: "btn btn-info",
+            showPreview: false,
+            allowedFileExtensions: ["zip", "rar", "gz", "tgz"],
+            elErrorContainer: "#errorBlock43",
+            theme: "fa"
+            // you can configure `msgErrorClass` and `msgInvalidFileExtension` as well
         });
-    },
-    destroyed: function destroyed() {}
+        $("#input-42").fileinput({
+            browseClass: "btn btn-warning",
+            maxFilesNum: 10,
+            allowedFileExtensions: ["jpg", "gif", "png", "txt"],
+            theme: "fa"
+        });
+        $("#input-41").fileinput({
+            browseClass: "btn btn-danger",
+            maxFileCount: 10,
+            allowedFileTypes: ["image", "video"],
+            theme: "fa"
+        });
+        $("#input-40,#input-22").fileinput({
+            theme: "fa"
+        });
+        $(".btn-modify").on("click", function () {
+
+            var $btn = $(this);
+            if ($btn.text() == "Modify") {
+                $("#input-40").fileinput("disable");
+                $btn.html("Revert");
+                alert("Hurray! I have disabled the input and hidden the upload button.");
+            } else {
+                $("#input-40").fileinput("enable");
+                $btn.html("Modify");
+                alert("Hurray! I have reverted back the input to enabled with the upload button.");
+            }
+        });
+        $("#input-23").fileinput({
+            browseClass: "btn btn-secondary",
+            showUpload: false,
+            mainTemplate: "{preview}\n" + "<div class='input-group {class}'>\n" + "   <div class='input-group-btn'>\n" + "       {browse}\n" + "       {upload}\n" + "       {remove}\n" + "   </div>\n" + "   {caption}\n" + "</div>",
+            theme: "fa"
+        });
+        $("#input-21").fileinput({
+            previewFileType: "image",
+            browseClass: "btn btn-success",
+            browseLabel: " Pick Image",
+
+            removeClass: "btn btn-danger",
+            removeLabel: "Delete",
+
+            uploadClass: "btn btn-info",
+            uploadLabel: " Upload",
+
+            theme: "fa"
+        });
+        $("#input-20").fileinput({
+            browseClass: "btn btn-info btn-block",
+            showCaption: false,
+            showRemove: false,
+            showUpload: false,
+            theme: "fa"
+        });
+        $("#input-4").fileinput({
+            browseClass: "btn btn-success",
+            showCaption: false
+        });
+        $("#input-5").fileinput({
+            browseClass: "btn btn-warning",
+            showUpload: false,
+            maxFileCount: 10,
+            mainClass: "input-group-lg"
+        });
+    }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(520)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(525)))
 
 /***/ }),
 
-/***/ 1752:
+/***/ 1278:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * bootstrap-fileinput v4.5.1
+ * http://plugins.krajee.com/file-input
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md
+ */
+!function(e){"use strict"; true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(525)], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof module&&module.exports?module.exports=e(require("jquery")):e(window.jQuery)}(function(e){"use strict";var t,i;e.fn.fileinputLocales={},e.fn.fileinputThemes={},String.prototype.setTokens=function(e){var t,i,a=this.toString();for(t in e)e.hasOwnProperty(t)&&(i=new RegExp("{"+t+"}","g"),a=a.replace(i,e[t]));return a},t={FRAMES:".kv-preview-thumb",SORT_CSS:"file-sortable",OBJECT_PARAMS:'<param name="controller" value="true" />\n<param name="allowFullScreen" value="true" />\n<param name="allowScriptAccess" value="always" />\n<param name="autoPlay" value="false" />\n<param name="autoStart" value="false" />\n<param name="quality" value="high" />\n',DEFAULT_PREVIEW:'<div class="file-preview-other">\n<span class="{previewFileIconClass}">{previewFileIcon}</span>\n</div>',MODAL_ID:"kvFileinputModal",MODAL_EVENTS:["show","shown","hide","hidden","loaded"],objUrl:window.URL||window.webkitURL,compare:function(e,t,i){return void 0!==e&&(i?e===t:e.match(t))},isIE:function(e){if("Microsoft Internet Explorer"!==navigator.appName)return!1;if(10===e)return new RegExp("msie\\s"+e,"i").test(navigator.userAgent);var t,i=document.createElement("div");return i.innerHTML="\x3c!--[if IE "+e+"]> <i></i> <![endif]--\x3e",t=i.getElementsByTagName("i").length,document.body.appendChild(i),i.parentNode.removeChild(i),t},canAssignFilesToInput:function(){var e=document.createElement("input");try{return e.type="file",e.files=null,!0}catch(e){return!1}},getDragDropFolders:function(e){var t,i,a=e.length,r=0;if(a>0&&e[0].webkitGetAsEntry())for(t=0;t<a;t++)(i=e[t].webkitGetAsEntry())&&i.isDirectory&&r++;return r},initModal:function(t){var i=e("body");i.length&&t.appendTo(i)},isEmpty:function(t,i){return null==t||0===t.length||i&&""===e.trim(t)},isArray:function(e){return Array.isArray(e)||"[object Array]"===Object.prototype.toString.call(e)},ifSet:function(e,t,i){return i=i||"",t&&"object"==typeof t&&e in t?t[e]:i},cleanArray:function(e){return e instanceof Array||(e=[]),e.filter(function(e){return null!=e})},spliceArray:function(t,i,a){var r,n,s=0,o=[];if(!(t instanceof Array))return[];for(n=e.extend(!0,[],t),a&&n.reverse(),r=0;r<n.length;r++)r!==i&&(o[s]=n[r],s++);return a&&o.reverse(),o},getNum:function(e,t){return t=t||0,"number"==typeof e?e:("string"==typeof e&&(e=parseFloat(e)),isNaN(e)?t:e)},hasFileAPISupport:function(){return!(!window.File||!window.FileReader)},hasDragDropSupport:function(){var e=document.createElement("div");return!t.isIE(9)&&(void 0!==e.draggable||void 0!==e.ondragstart&&void 0!==e.ondrop)},hasFileUploadSupport:function(){return t.hasFileAPISupport()&&window.FormData},hasBlobSupport:function(){try{return!!window.Blob&&Boolean(new Blob)}catch(e){return!1}},hasArrayBufferViewSupport:function(){try{return 100===new Blob([new Uint8Array(100)]).size}catch(e){return!1}},dataURI2Blob:function(e){var i,a,r,n,s,o,l=window.BlobBuilder||window.WebKitBlobBuilder||window.MozBlobBuilder||window.MSBlobBuilder,d=t.hasBlobSupport();if(!((d||l)&&window.atob&&window.ArrayBuffer&&window.Uint8Array))return null;for(i=e.split(",")[0].indexOf("base64")>=0?atob(e.split(",")[1]):decodeURIComponent(e.split(",")[1]),a=new ArrayBuffer(i.length),r=new Uint8Array(a),n=0;n<i.length;n+=1)r[n]=i.charCodeAt(n);return s=e.split(",")[0].split(":")[1].split(";")[0],d?new Blob([t.hasArrayBufferViewSupport()?r:a],{type:s}):((o=new l).append(a),o.getBlob(s))},arrayBuffer2String:function(e){if(window.TextDecoder)return new TextDecoder("utf-8").decode(e);var t,i,a,r,n=Array.prototype.slice.apply(new Uint8Array(e)),s="",o=0;for(t=n.length;o<t;)switch((i=n[o++])>>4){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:s+=String.fromCharCode(i);break;case 12:case 13:a=n[o++],s+=String.fromCharCode((31&i)<<6|63&a);break;case 14:a=n[o++],r=n[o++],s+=String.fromCharCode((15&i)<<12|(63&a)<<6|(63&r)<<0)}return s},isHtml:function(e){var t=document.createElement("div");t.innerHTML=e;for(var i=t.childNodes,a=i.length;a--;)if(1===i[a].nodeType)return!0;return!1},isSvg:function(e){return e.match(/^\s*<\?xml/i)&&(e.match(/<!DOCTYPE svg/i)||e.match(/<svg/i))},getMimeType:function(e,t,i){switch(e){case"ffd8ffe0":case"ffd8ffe1":case"ffd8ffe2":return"image/jpeg";case"89504E47":return"image/png";case"47494638":return"image/gif";case"49492a00":return"image/tiff";case"52494646":return"image/webp";case"66747970":return"video/3gp";case"4f676753":return"video/ogg";case"1a45dfa3":return"video/mkv";case"000001ba":case"000001b3":return"video/mpeg";case"3026b275":return"video/wmv";case"25504446":return"application/pdf";case"25215053":return"application/ps";case"504b0304":case"504b0506":case"504b0508":return"application/zip";case"377abcaf":return"application/7z";case"75737461":return"application/tar";case"7801730d":return"application/dmg";default:switch(e.substring(0,6)){case"435753":return"application/x-shockwave-flash";case"494433":return"audio/mp3";case"425a68":return"application/bzip";default:switch(e.substring(0,4)){case"424d":return"image/bmp";case"fffb":return"audio/mp3";case"4d5a":return"application/exe";case"1f9d":case"1fa0":return"application/zip";case"1f8b":return"application/gzip";default:return t&&!t.match(/[^\u0000-\u007f]/)?"application/text-plain":i}}}},addCss:function(e,t){e.removeClass(t).addClass(t)},getElement:function(i,a,r){return t.isEmpty(i)||t.isEmpty(i[a])?r:e(i[a])},uniqId:function(){return Math.round((new Date).getTime())+"_"+Math.round(100*Math.random())},htmlEncode:function(e,t){return void 0===e?t||null:e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;")},replaceTags:function(t,i){var a=t;return i?(e.each(i,function(e,t){"function"==typeof t&&(t=t()),a=a.split(e).join(t)}),a):a},cleanMemory:function(e){var i=e.is("img")?e.attr("src"):e.find("source").attr("src");t.objUrl.revokeObjectURL(i)},findFileName:function(e){var t=e.lastIndexOf("/");return-1===t&&(t=e.lastIndexOf("\\")),e.split(e.substring(t,t+1)).pop()},checkFullScreen:function(){return document.fullscreenElement||document.mozFullScreenElement||document.webkitFullscreenElement||document.msFullscreenElement},toggleFullScreen:function(e){var i=document,a=i.documentElement;a&&e&&!t.checkFullScreen()?a.requestFullscreen?a.requestFullscreen():a.msRequestFullscreen?a.msRequestFullscreen():a.mozRequestFullScreen?a.mozRequestFullScreen():a.webkitRequestFullscreen&&a.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT):i.exitFullscreen?i.exitFullscreen():i.msExitFullscreen?i.msExitFullscreen():i.mozCancelFullScreen?i.mozCancelFullScreen():i.webkitExitFullscreen&&i.webkitExitFullscreen()},moveArray:function(t,i,a,r){var n=e.extend(!0,[],t);if(r&&n.reverse(),a>=n.length)for(var s=a-n.length;1+s--;)n.push(void 0);return n.splice(a,0,n.splice(i,1)[0]),r&&n.reverse(),n},cleanZoomCache:function(e){var t=e.closest(".kv-zoom-cache-theme");t.length||(t=e.closest(".kv-zoom-cache")),t.remove()},closeButton:function(e){return'<button type="button" class="'+(e=e?"close "+e:"close")+'" aria-label="Close">\n  <span aria-hidden="true">&times;</span>\n</button>'},getRotation:function(e){switch(e){case 2:return"rotateY(180deg)";case 3:return"rotate(180deg)";case 4:return"rotate(180deg) rotateY(180deg)";case 5:return"rotate(270deg) rotateY(180deg)";case 6:return"rotate(90deg)";case 7:return"rotate(90deg) rotateY(180deg)";case 8:return"rotate(270deg)";default:return""}},setTransform:function(e,t){e&&(e.style.transform=t,e.style.webkitTransform=t,e.style["-moz-transform"]=t,e.style["-ms-transform"]=t,e.style["-o-transform"]=t)},setImageOrientation:function(e,i,a){if(e&&e.length){var r="load.fileinputimageorient";e.off(r).on(r,function(){var r=e.get(0),n=i&&i.length?i.get(0):null,s=r.offsetHeight,o=r.offsetWidth,l=t.getRotation(a);if(e.data("orientation",a),n&&i.data("orientation",a),a<5)return t.setTransform(r,l),void t.setTransform(n,l);var d=Math.atan(o/s),c=Math.sqrt(Math.pow(s,2)+Math.pow(o,2)),h=c?s/Math.cos(Math.PI/2+d)/c:1,p=" scale("+Math.abs(h)+")";t.setTransform(r,l+p),t.setTransform(n,l+p)})}}},(i=function(i,a){this.$element=e(i),this.$parent=this.$element.parent(),this._validate()&&(this.isPreviewable=t.hasFileAPISupport(),this.isIE9=t.isIE(9),this.isIE10=t.isIE(10),(this.isPreviewable||this.isIE9)&&(this._init(a),this._listen()),this.$element.removeClass("file-loading"))}).prototype={constructor:i,_cleanup:function(){this.reader=null,this.formdata={},this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.uploadAsyncCount=0,this.loadedImages=[],this.totalImagesCount=0,this.ajaxRequests=[],this.clearStack(),this.fileBatchCompleted=!0,this.isPreviewable||(this.showPreview=!1),this.isError=!1,this.ajaxAborted=!1,this.cancelling=!1},_init:function(i,a){var r,n,s,o,l=this,d=l.$element;l.options=i,e.each(i,function(e,i){switch(e){case"minFileCount":case"maxFileCount":case"minFileSize":case"maxFileSize":case"maxFilePreviewSize":case"resizeImageQuality":case"resizeIfSizeMoreThan":case"progressUploadThreshold":case"initialPreviewCount":case"zoomModalHeight":case"minImageHeight":case"maxImageHeight":case"minImageWidth":case"maxImageWidth":l[e]=t.getNum(i);break;default:l[e]=i}}),l.rtl&&(o=l.previewZoomButtonIcons.prev,l.previewZoomButtonIcons.prev=l.previewZoomButtonIcons.next,l.previewZoomButtonIcons.next=o),a||l._cleanup(),l.$form=d.closest("form"),l._initTemplateDefaults(),l.uploadFileAttr=t.isEmpty(d.attr("name"))?"file_data":d.attr("name"),s=l._getLayoutTemplate("progress"),l.progressTemplate=s.replace("{class}",l.progressClass),l.progressCompleteTemplate=s.replace("{class}",l.progressCompleteClass),l.progressErrorTemplate=s.replace("{class}",l.progressErrorClass),l.isDisabled=d.attr("disabled")||d.attr("readonly"),l.isDisabled&&d.attr("disabled",!0),l.isClickable=l.browseOnZoneClick&&l.showPreview&&(l.dropZoneEnabled||!t.isEmpty(l.defaultPreviewContent)),l.isAjaxUpload=t.hasFileUploadSupport()&&!t.isEmpty(l.uploadUrl),l.dropZoneEnabled=t.hasDragDropSupport()&&l.dropZoneEnabled,l.isAjaxUpload||(l.dropZoneEnabled=l.dropZoneEnabled&&t.canAssignFilesToInput()),l.slug="function"==typeof i.slugCallback?i.slugCallback:l._slugDefault,l.mainTemplate=l.showCaption?l._getLayoutTemplate("main1"):l._getLayoutTemplate("main2"),l.captionTemplate=l._getLayoutTemplate("caption"),l.previewGenericTemplate=l._getPreviewTemplate("generic"),!l.imageCanvas&&l.resizeImage&&(l.maxImageWidth||l.maxImageHeight)&&(l.imageCanvas=document.createElement("canvas"),l.imageCanvasContext=l.imageCanvas.getContext("2d")),t.isEmpty(d.attr("id"))&&d.attr("id",t.uniqId()),l.namespace=".fileinput_"+d.attr("id").replace(/-/g,"_"),void 0===l.$container?l.$container=l._createContainer():l._refreshContainer(),n=l.$container,l.$dropZone=n.find(".file-drop-zone"),l.$progress=n.find(".kv-upload-progress"),l.$btnUpload=n.find(".fileinput-upload"),l.$captionContainer=t.getElement(i,"elCaptionContainer",n.find(".file-caption")),l.$caption=t.getElement(i,"elCaptionText",n.find(".file-caption-name")),t.isEmpty(l.msgPlaceholder)||(r=d.attr("multiple")?l.filePlural:l.fileSingle,l.$caption.attr("placeholder",l.msgPlaceholder.replace("{files}",r))),l.$captionIcon=l.$captionContainer.find(".file-caption-icon"),l.$previewContainer=t.getElement(i,"elPreviewContainer",n.find(".file-preview")),l.$preview=t.getElement(i,"elPreviewImage",n.find(".file-preview-thumbnails")),l.$previewStatus=t.getElement(i,"elPreviewStatus",n.find(".file-preview-status")),l.$errorContainer=t.getElement(i,"elErrorContainer",l.$previewContainer.find(".kv-fileinput-error")),l._validateDisabled(),t.isEmpty(l.msgErrorClass)||t.addCss(l.$errorContainer,l.msgErrorClass),a?l._errorsExist()||l.$errorContainer.hide():(l.$errorContainer.hide(),l.previewInitId="preview-"+t.uniqId(),l._initPreviewCache(),l._initPreview(!0),l._initPreviewActions(),l.$parent.hasClass("file-loading")&&(l.$container.insertBefore(l.$parent),l.$parent.remove())),l._setFileDropZoneTitle(),d.attr("disabled")&&l.disable(),l._initZoom(),l.hideThumbnailContent&&t.addCss(l.$preview,"hide-content")},_initTemplateDefaults:function(){var i,a,r,n,s,o,l,d,c,h=this;i=t.closeButton("fileinput-remove"),a='<div id="'+t.MODAL_ID+'" class="file-zoom-dialog modal fade" tabindex="-1" aria-labelledby="'+t.MODAL_ID+'Label"></div>',r='<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}"',n='<video class="kv-preview-data file-preview-video" controls {style}>\n<source src="{data}" type="{type}">\n'+t.DEFAULT_PREVIEW+"\n</video>\n",s='\x3c!--suppress ALL --\x3e<audio class="kv-preview-data file-preview-audio" controls {style}>\n<source src="{data}" type="{type}">\n'+t.DEFAULT_PREVIEW+"\n</audio>\n",l='<embed class="kv-preview-data file-preview-pdf" src="{data}" type="application/pdf" {style}>\n',o='<object class="kv-preview-data file-preview-object file-object {typeCss}" data="{data}" type="{type}" {style}>\n<param name="movie" value="{caption}" />\n'+t.OBJECT_PARAMS+" "+t.DEFAULT_PREVIEW+"\n</object>\n",d='<div class="kv-preview-data file-preview-other-frame" {style}>\n'+t.DEFAULT_PREVIEW+"\n</div>\n",c={width:"100%",height:"100%","min-height":"480px"},h._isPdfRendered()&&(l=h.pdfRendererTemplate.replace("{renderer}",h.pdfRendererUrl)),h.defaults={layoutTemplates:{main1:'{preview}\n<div class="kv-upload-progress kv-hidden"></div><div class="clearfix"></div>\n<div class="input-group {class}">\n  {caption}\n<div class="input-group-btn input-group-append">\n      {remove}\n      {cancel}\n      {upload}\n      {browse}\n    </div>\n</div>',main2:'{preview}\n<div class="kv-upload-progress kv-hidden"></div>\n<div class="clearfix"></div>\n{remove}\n{cancel}\n{upload}\n{browse}\n',preview:'<div class="file-preview {class}">\n    {close}    <div class="{dropClass}">\n    <div class="file-preview-thumbnails">\n    </div>\n    <div class="clearfix"></div>    <div class="file-preview-status text-center text-success"></div>\n    <div class="kv-fileinput-error"></div>\n    </div>\n</div>',close:i,fileIcon:'<i class="glyphicon glyphicon-file"></i>',caption:'<div class="file-caption form-control {class}" tabindex="500">\n  <span class="file-caption-icon"></span>\n  <input class="file-caption-name" onkeydown="return false;" onpaste="return false;">\n</div>',modalMain:a,modal:'<div class="modal-dialog modal-lg{rtl}" role="document">\n  <div class="modal-content">\n    <div class="modal-header">\n      <h5 class="modal-title">{heading}</h5>\n      <span class="kv-zoom-title"></span>\n      <div class="kv-zoom-actions">{toggleheader}{fullscreen}{borderless}{close}</div>\n    </div>\n    <div class="modal-body">\n      <div class="floating-buttons"></div>\n      <div class="kv-zoom-body file-zoom-content {zoomFrameClass}"></div>\n{prev} {next}\n    </div>\n  </div>\n</div>\n',progress:'<div class="progress">\n    <div class="{class}" role="progressbar" aria-valuenow="{percent}" aria-valuemin="0" aria-valuemax="100" style="width:{percent}%;">\n        {status}\n     </div>\n</div>',size:" <samp>({sizeText})</samp>",footer:'<div class="file-thumbnail-footer">\n    <div class="file-footer-caption" title="{caption}">\n        <div class="file-caption-info">{caption}</div>\n        <div class="file-size-info">{size}</div>\n    </div>\n    {progress}\n{indicator}\n{actions}\n</div>',indicator:'<div class="file-upload-indicator" title="{indicatorTitle}">{indicator}</div>',actions:'<div class="file-actions">\n    <div class="file-footer-buttons">\n        {download} {upload} {delete} {zoom} {other}    </div>\n</div>\n{drag}\n<div class="clearfix"></div>',actionDelete:'<button type="button" class="kv-file-remove {removeClass}" title="{removeTitle}" {dataUrl}{dataKey}>{removeIcon}</button>\n',actionUpload:'<button type="button" class="kv-file-upload {uploadClass}" title="{uploadTitle}">{uploadIcon}</button>',actionDownload:'<a class="kv-file-download {downloadClass}" title="{downloadTitle}" href="{downloadUrl}" download="{caption}" target="_blank">{downloadIcon}</a>',actionZoom:'<button type="button" class="kv-file-zoom {zoomClass}" title="{zoomTitle}">{zoomIcon}</button>',actionDrag:'<span class="file-drag-handle {dragClass}" title="{dragTitle}">{dragIcon}</span>',btnDefault:'<button type="{type}" tabindex="500" title="{title}" class="{css}" {status}>{icon} {label}</button>',btnLink:'<a href="{href}" tabindex="500" title="{title}" class="{css}" {status}>{icon} {label}</a>',btnBrowse:'<div tabindex="500" class="{css}" {status}>{icon} {label}</div>',zoomCache:'<div class="kv-zoom-cache" style="display:none">{zoomContent}</div>'},previewMarkupTags:{tagBefore1:'<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}"><div class="kv-file-content">\n',tagBefore2:'<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}" title="{caption}"><div class="kv-file-content">\n',tagAfter:"</div>{footer}\n</div>\n"},previewContentTemplates:{generic:"{content}\n",html:'<div class="kv-preview-data file-preview-html" title="{caption}" {style}>{data}</div>\n',image:'<img src="{data}" class="file-preview-image kv-preview-data" title="{caption}" alt="{caption}" {style}>\n',text:'<textarea class="kv-preview-data file-preview-text" title="{caption}" readonly {style}>{data}</textarea>\n',office:'<iframe class="kv-preview-data file-preview-office" src="https://view.officeapps.live.com/op/embed.aspx?src={data}" {style}></iframe>',gdocs:'<iframe class="kv-preview-data file-preview-gdocs" src="https://docs.google.com/gview?url={data}&embedded=true" {style}></iframe>',video:n,audio:s,flash:'<embed class="kv-preview-data file-preview-flash" src="{data}" type="application/x-shockwave-flash" {style}>\n',object:o,pdf:l,other:d},allowedPreviewTypes:["image","html","text","video","audio","flash","pdf","object"],previewTemplates:{},previewSettings:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:{width:"213px",height:"160px"},text:{width:"213px",height:"160px"},office:{width:"213px",height:"160px"},gdocs:{width:"213px",height:"160px"},video:{width:"213px",height:"160px"},audio:{width:"100%",height:"30px"},flash:{width:"213px",height:"160px"},object:{width:"213px",height:"160px"},pdf:{width:"100%",height:"160px"},other:{width:"213px",height:"160px"}},previewSettingsSmall:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:{width:"100%",height:"160px"},text:{width:"100%",height:"160px"},office:{width:"100%",height:"160px"},gdocs:{width:"100%",height:"160px"},video:{width:"100%",height:"auto"},audio:{width:"100%",height:"30px"},flash:{width:"100%",height:"auto"},object:{width:"100%",height:"auto"},pdf:{width:"100%",height:"160px"},other:{width:"100%",height:"160px"}},previewZoomSettings:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:c,text:c,office:{width:"100%",height:"100%","max-width":"100%","min-height":"480px"},gdocs:{width:"100%",height:"100%","max-width":"100%","min-height":"480px"},video:{width:"auto",height:"100%","max-width":"100%"},audio:{width:"100%",height:"30px"},flash:{width:"auto",height:"480px"},object:{width:"auto",height:"100%","max-width":"100%","min-height":"480px"},pdf:c,other:{width:"auto",height:"100%","min-height":"480px"}},fileTypeSettings:{image:function(e,i){return t.compare(e,"image.*")&&!t.compare(e,/(tiff?|wmf)$/i)||t.compare(i,/\.(gif|png|jpe?g)$/i)},html:function(e,i){return t.compare(e,"text/html")||t.compare(i,/\.(htm|html)$/i)},office:function(e,i){return t.compare(e,/(word|excel|powerpoint|office)$/i)||t.compare(i,/\.(docx?|xlsx?|pptx?|pps|potx?)$/i)},gdocs:function(e,i){return t.compare(e,/(word|excel|powerpoint|office|iwork-pages|tiff?)$/i)||t.compare(i,/\.(docx?|xlsx?|pptx?|pps|potx?|rtf|ods|odt|pages|ai|dxf|ttf|tiff?|wmf|e?ps)$/i)},text:function(e,i){return t.compare(e,"text.*")||t.compare(i,/\.(xml|javascript)$/i)||t.compare(i,/\.(txt|md|csv|nfo|ini|json|php|js|css)$/i)},video:function(e,i){return t.compare(e,"video.*")&&(t.compare(e,/(ogg|mp4|mp?g|mov|webm|3gp)$/i)||t.compare(i,/\.(og?|mp4|webm|mp?g|mov|3gp)$/i))},audio:function(e,i){return t.compare(e,"audio.*")&&(t.compare(i,/(ogg|mp3|mp?g|wav)$/i)||t.compare(i,/\.(og?|mp3|mp?g|wav)$/i))},flash:function(e,i){return t.compare(e,"application/x-shockwave-flash",!0)||t.compare(i,/\.(swf)$/i)},pdf:function(e,i){return t.compare(e,"application/pdf",!0)||t.compare(i,/\.(pdf)$/i)},object:function(){return!0},other:function(){return!0}},fileActionSettings:{showRemove:!0,showUpload:!0,showDownload:!0,showZoom:!0,showDrag:!0,removeIcon:'<i class="glyphicon glyphicon-trash"></i>',removeClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",removeErrorClass:"btn btn-sm btn-kv btn-danger",removeTitle:"Remove file",uploadIcon:'<i class="glyphicon glyphicon-upload"></i>',uploadClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",uploadTitle:"Upload file",uploadRetryIcon:'<i class="glyphicon glyphicon-repeat"></i>',uploadRetryTitle:"Retry upload",downloadIcon:'<i class="glyphicon glyphicon-download"></i>',downloadClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",downloadTitle:"Download file",zoomIcon:'<i class="glyphicon glyphicon-zoom-in"></i>',zoomClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",zoomTitle:"View Details",dragIcon:'<i class="glyphicon glyphicon-move"></i>',dragClass:"text-info",dragTitle:"Move / Rearrange",dragSettings:{},indicatorNew:'<i class="glyphicon glyphicon-plus-sign text-warning"></i>',indicatorSuccess:'<i class="glyphicon glyphicon-ok-sign text-success"></i>',indicatorError:'<i class="glyphicon glyphicon-exclamation-sign text-danger"></i>',indicatorLoading:'<i class="glyphicon glyphicon-hourglass text-muted"></i>',indicatorNewTitle:"Not uploaded yet",indicatorSuccessTitle:"Uploaded",indicatorErrorTitle:"Upload Error",indicatorLoadingTitle:"Uploading ..."}},e.each(h.defaults,function(t,i){"allowedPreviewTypes"!==t?h[t]=e.extend(!0,{},i,h[t]):void 0===h.allowedPreviewTypes&&(h.allowedPreviewTypes=i)}),h._initPreviewTemplates()},_initPreviewTemplates:function(){var i,a=this,r=a.previewMarkupTags,n=r.tagAfter;e.each(a.previewContentTemplates,function(e,s){t.isEmpty(a.previewTemplates[e])&&(i=r.tagBefore2,"generic"!==e&&"image"!==e&&"html"!==e&&"text"!==e||(i=r.tagBefore1),a._isPdfRendered()&&"pdf"===e&&(i=i.replace("kv-file-content","kv-file-content kv-pdf-rendered")),a.previewTemplates[e]=i+s+n)})},_initPreviewCache:function(){var i=this;i.previewCache={data:{},init:function(){var e=i.initialPreview;e.length>0&&!t.isArray(e)&&(e=e.split(i.initialPreviewDelimiter)),i.previewCache.data={content:e,config:i.initialPreviewConfig,tags:i.initialPreviewThumbTags}},count:function(){return i.previewCache.data&&i.previewCache.data.content?i.previewCache.data.content.length:0},get:function(a,r){var n,s,o,l,d,c,h,p="init_"+a,u=i.previewCache.data,f=u.config[a],m=u.content[a],g=i.previewInitId+"-"+p,v=t.ifSet("previewAsData",f,i.initialPreviewAsData),w=function(e,a,r,n,s,o,l,d,c){return d=" file-preview-initial "+t.SORT_CSS+(d?" "+d:""),i._generatePreviewTemplate(e,a,r,n,s,!1,null,d,o,l,c)};return m?(r=void 0===r||r,o=t.ifSet("type",f,i.initialPreviewFileType||"generic"),d=t.ifSet("filename",f,t.ifSet("caption",f)),c=t.ifSet("filetype",f,o),l=i.previewCache.footer(a,r,f&&f.size||null),h=t.ifSet("frameClass",f),n=v?w(o,m,d,c,g,l,p,h):w("generic",m,d,c,g,l,p,h,o).setTokens({content:u.content[a]}),u.tags.length&&u.tags[a]&&(n=t.replaceTags(n,u.tags[a])),t.isEmpty(f)||t.isEmpty(f.frameAttr)||((s=e(document.createElement("div")).html(n)).find(".file-preview-initial").attr(f.frameAttr),n=s.html(),s.remove()),n):""},add:function(e,a,r,n){var s,o=i.previewCache.data;return t.isArray(e)||(e=e.split(i.initialPreviewDelimiter)),n?(s=o.content.push(e)-1,o.config[s]=a,o.tags[s]=r):(s=e.length-1,o.content=e,o.config=a,o.tags=r),i.previewCache.data=o,s},set:function(e,a,r,n){var s,o=i.previewCache.data;if(e&&e.length&&(t.isArray(e)||(e=e.split(i.initialPreviewDelimiter)),e.filter(function(e){return null!==e}).length)){if(void 0===o.content&&(o.content=[]),void 0===o.config&&(o.config=[]),void 0===o.tags&&(o.tags=[]),n){for(s=0;s<e.length;s++)e[s]&&o.content.push(e[s]);for(s=0;s<a.length;s++)a[s]&&o.config.push(a[s]);for(s=0;s<r.length;s++)r[s]&&o.tags.push(r[s])}else o.content=e,o.config=a,o.tags=r;i.previewCache.data=o}},unset:function(e){var a=i.previewCache.count(),r=i.reversePreviewOrder;if(a){if(1===a)return i.previewCache.data.content=[],i.previewCache.data.config=[],i.previewCache.data.tags=[],i.initialPreview=[],i.initialPreviewConfig=[],void(i.initialPreviewThumbTags=[]);i.previewCache.data.content=t.spliceArray(i.previewCache.data.content,e,r),i.previewCache.data.config=t.spliceArray(i.previewCache.data.config,e,r),i.previewCache.data.tags=t.spliceArray(i.previewCache.data.tags,e,r)}},out:function(){var e,t,a="",r=i.previewCache.count();if(0===r)return{content:"",caption:""};for(e=0;e<r;e++)t=i.previewCache.get(e),a=i.reversePreviewOrder?t+a:a+t;return{content:a,caption:i._getMsgSelected(r)}},footer:function(e,a,r){var n=i.previewCache.data||{};if(t.isEmpty(n.content))return"";(t.isEmpty(n.config)||t.isEmpty(n.config[e]))&&(n.config[e]={}),a=void 0===a||a;var s,o=n.config[e],l=t.ifSet("caption",o),d=t.ifSet("width",o,"auto"),c=t.ifSet("url",o,!1),h=t.ifSet("key",o,null),p=i.fileActionSettings,u=i.initialPreviewShowDelete||!1,f=o.downloadUrl||i.initialPreviewDownloadUrl||"",m=o.filename||o.caption||"",g=!!f,v=t.ifSet("showRemove",o,t.ifSet("showRemove",p,u)),w=t.ifSet("showDownload",o,t.ifSet("showDownload",p,g)),_=t.ifSet("showZoom",o,t.ifSet("showZoom",p,!0)),b=t.ifSet("showDrag",o,t.ifSet("showDrag",p,!0)),C=!1===c&&a;return w=w&&!1!==o.downloadUrl&&!!f,s=i._renderFileActions(!1,w,v,_,b,C,c,h,!0,f,m),i._getLayoutTemplate("footer").setTokens({progress:i._renderThumbProgress(),actions:s,caption:l,size:i._getSize(r),width:d,indicator:""})}},i.previewCache.init()},_isPdfRendered:function(){var e=this.usePdfRenderer;return("function"==typeof e?e():!!e)&&this.pdfRendererUrl},_handler:function(e,t,i){var a=this.namespace,r=t.split(" ").join(a+" ")+a;e&&e.length&&e.off(r).on(r,i)},_log:function(e){var t=this.$element.attr("id");t&&(e='"'+t+'": '+e),e="bootstrap-fileinput: "+e,void 0!==window.console.log?window.console.log(e):window.alert(e)},_validate:function(){var e="file"===this.$element.attr("type");return e||this._log('The input "type" must be set to "file" for initializing the "bootstrap-fileinput" plugin.'),e},_errorsExist:function(){var t;return!!this.$errorContainer.find("li").length||((t=e(document.createElement("div")).html(this.$errorContainer.html())).find(".kv-error-close").remove(),t.find("ul").remove(),!!e.trim(t.text()).length)},_errorHandler:function(e,t){var i=this,a=e.target.error,r=function(e){i._showError(e.replace("{name}",t))};a.code===a.NOT_FOUND_ERR?r(i.msgFileNotFound):a.code===a.SECURITY_ERR?r(i.msgFileSecured):a.code===a.NOT_READABLE_ERR?r(i.msgFileNotReadable):a.code===a.ABORT_ERR?r(i.msgFilePreviewAborted):r(i.msgFilePreviewError)},_addError:function(e){var t=this,i=t.$errorContainer;e&&i.length&&(i.html(t.errorCloseButton+e),t._handler(i.find(".kv-error-close"),"click",function(){setTimeout(function(){t.showPreview&&!t.getFrames().length&&t.clear(),i.fadeOut("slow")},10)}))},_setValidationError:function(e){e=(e?e+" ":"")+"has-error",this.$container.removeClass(e).addClass("has-error"),t.addCss(this.$captionContainer,"is-invalid")},_resetErrors:function(e){var t=this.$errorContainer;this.isError=!1,this.$container.removeClass("has-error"),this.$captionContainer.removeClass("is-invalid"),t.html(""),e?t.fadeOut("slow"):t.hide()},_showFolderError:function(e){var t,i=this.$errorContainer;e&&(this.isAjaxUpload||this._clearFileInput(),t=this.msgFoldersNotAllowed.replace("{n}",e),this._addError(t),this._setValidationError(),i.fadeIn(800),this._raise("filefoldererror",[e,t]))},_showUploadError:function(e,t,i){var a=this.$errorContainer,r=i||"fileuploaderror",n=t&&t.id?'<li data-file-id="'+t.id+'">'+e+"</li>":"<li>"+e+"</li>";return 0===a.find("ul").length?this._addError("<ul>"+n+"</ul>"):a.find("ul").append(n),a.fadeIn(800),this._raise(r,[t,e]),this._setValidationError("file-input-new"),!0},_showError:function(e,t,i){var a=this.$errorContainer,r=i||"fileerror";return(t=t||{}).reader=this.reader,this._addError(e),a.fadeIn(800),this._raise(r,[t,e]),this.isAjaxUpload||this._clearFileInput(),this._setValidationError("file-input-new"),this.$btnUpload.attr("disabled",!0),!0},_noFilesError:function(e){var t=this.minFileCount>1?this.filePlural:this.fileSingle,i=this.msgFilesTooLess.replace("{n}",this.minFileCount).replace("{files}",t),a=this.$errorContainer;this._addError(i),this.isError=!0,this._updateFileDetails(0),a.fadeIn(800),this._raise("fileerror",[e,i]),this._clearFileInput(),this._setValidationError()},_parseError:function(t,i,a,r){var n,s=e.trim(a+""),o=void 0!==i.responseJSON&&void 0!==i.responseJSON.error?i.responseJSON.error:i.responseText;return this.cancelling&&this.msgUploadAborted&&(s=this.msgUploadAborted),this.showAjaxErrorDetails&&o&&(n=(o=e.trim(o.replace(/\n\s*\n/g,"\n"))).length?"<pre>"+o+"</pre>":"",s+=s?n:o),s||(s=this.msgAjaxError.replace("{operation}",t)),this.cancelling=!1,r?"<b>"+r+": </b>"+s:s},_parseFileType:function(e,i){var a,r,n,s=this.allowedPreviewTypes||[];if("application/text-plain"===e)return"text";for(n=0;n<s.length;n++)if(r=s[n],a=(0,this.fileTypeSettings[r])(e,i)?r:"",!t.isEmpty(a))return a;return"other"},_getPreviewIcon:function(t){var i,a=this,r=null;return t&&t.indexOf(".")>-1&&(i=t.split(".").pop(),a.previewFileIconSettings&&(r=a.previewFileIconSettings[i]||a.previewFileIconSettings[i.toLowerCase()]||null),a.previewFileExtSettings&&e.each(a.previewFileExtSettings,function(e,t){a.previewFileIconSettings[e]&&t(i)&&(r=a.previewFileIconSettings[e])})),r},_parseFilePreviewIcon:function(e,t){var i=this._getPreviewIcon(t)||this.previewFileIcon,a=e;return a.indexOf("{previewFileIcon}")>-1&&(a=a.setTokens({previewFileIconClass:this.previewFileIconClass,previewFileIcon:i})),a},_raise:function(t,i){var a=e.Event(t);if(void 0!==i?this.$element.trigger(a,i):this.$element.trigger(a),a.isDefaultPrevented()||!1===a.result)return!1;switch(t){case"filebatchuploadcomplete":case"filebatchuploadsuccess":case"fileuploaded":case"fileclear":case"filecleared":case"filereset":case"fileerror":case"filefoldererror":case"fileuploaderror":case"filebatchuploaderror":case"filedeleteerror":case"filecustomerror":case"filesuccessremove":break;default:this.ajaxAborted||(this.ajaxAborted=a.result)}return!0},_listenFullScreen:function(e){var t,i,a=this.$modal;a&&a.length&&(t=a&&a.find(".btn-fullscreen"),i=a&&a.find(".btn-borderless"),t.length&&i.length&&(t.removeClass("active").attr("aria-pressed","false"),i.removeClass("active").attr("aria-pressed","false"),e?t.addClass("active").attr("aria-pressed","true"):i.addClass("active").attr("aria-pressed","true"),a.hasClass("file-zoom-fullscreen")?this._maximizeZoomDialog():e?this._maximizeZoomDialog():i.removeClass("active").attr("aria-pressed","false")))},_listen:function(){var i=this,a=i.$element,r=i.$form,n=i.$container;i._handler(a,"click",function(e){a.hasClass("file-no-browse")&&(a.data("zoneClicked")?a.data("zoneClicked",!1):e.preventDefault())}),i._handler(a,"change",e.proxy(i._change,i)),i.showBrowse&&i._handler(i.$btnFile,"click",e.proxy(i._browse,i)),i._handler(n.find(".fileinput-remove:not([disabled])"),"click",e.proxy(i.clear,i)),i._handler(n.find(".fileinput-cancel"),"click",e.proxy(i.cancel,i)),i._initDragDrop(),i._handler(r,"reset",e.proxy(i.clear,i)),i.isAjaxUpload||i._handler(r,"submit",e.proxy(i._submitForm,i)),i._handler(i.$container.find(".fileinput-upload"),"click",e.proxy(i._uploadClick,i)),i._handler(e(window),"resize",function(){i._listenFullScreen(screen.width===window.innerWidth&&screen.height===window.innerHeight)}),i._handler(e(document),"webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange",function(){i._listenFullScreen(t.checkFullScreen())}),i._autoFitContent(),i._initClickable(),i._refreshPreview()},_autoFitContent:function(){var t,i=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,a=this,r=i<400?a.previewSettingsSmall||a.defaults.previewSettingsSmall:a.previewSettings||a.defaults.previewSettings;e.each(r,function(e,i){t=".file-preview-frame .file-preview-"+e,a.$preview.find(t+".kv-preview-data,"+t+" .kv-preview-data").css(i)})},_scanDroppedItems:function(e,t,i){i=i||"";var a,r,n,s=this,o=function(e){s._log("Error scanning dropped files!"),s._log(e)};e.isFile?e.file(function(e){t.push(e)},o):e.isDirectory&&(r=e.createReader(),(n=function(){r.readEntries(function(r){if(r&&r.length>0){for(a=0;a<r.length;a++)s._scanDroppedItems(r[a],t,i+e.name+"/");n()}return null},o)})())},_initDragDrop:function(){var t=this.$dropZone;this.dropZoneEnabled&&this.showPreview&&(this._handler(t,"dragenter dragover",e.proxy(this._zoneDragEnter,this)),this._handler(t,"dragleave",e.proxy(this._zoneDragLeave,this)),this._handler(t,"drop",e.proxy(this._zoneDrop,this)),this._handler(e(document),"dragenter dragover drop",this._zoneDragDropInit))},_zoneDragDropInit:function(e){e.stopPropagation(),e.preventDefault()},_zoneDragEnter:function(i){var a=e.inArray("Files",i.originalEvent.dataTransfer.types)>-1;if(this._zoneDragDropInit(i),this.isDisabled||!a)return i.originalEvent.dataTransfer.effectAllowed="none",void(i.originalEvent.dataTransfer.dropEffect="none");t.addCss(this.$dropZone,"file-highlighted")},_zoneDragLeave:function(e){this._zoneDragDropInit(e),this.isDisabled||this.$dropZone.removeClass("file-highlighted")},_zoneDrop:function(e){var i,a=this,r=a.$element,n=e.originalEvent.dataTransfer,s=n.files,o=n.items,l=t.getDragDropFolders(o),d=function(){a.isAjaxUpload?a._change(e,s):(a.changeTriggered=!0,r.get(0).files=s,setTimeout(function(){a.changeTriggered=!1,r.trigger("change"+a.namespace)},10)),a.$dropZone.removeClass("file-highlighted")};if(e.preventDefault(),!a.isDisabled&&!t.isEmpty(s))if(l>0){if(!a.isAjaxUpload)return void a._showFolderError(l);for(s=[],i=0;i<o.length;i++){var c=o[i].webkitGetAsEntry();c&&a._scanDroppedItems(c,s)}setTimeout(function(){d()},500)}else d()},_uploadClick:function(e){var i,a=this.$container.find(".fileinput-upload"),r=!a.hasClass("disabled")&&t.isEmpty(a.attr("disabled"));e&&e.isDefaultPrevented()||(this.isAjaxUpload?(e.preventDefault(),r&&this.upload()):r&&"submit"!==a.attr("type")&&((i=a.closest("form")).length&&i.trigger("submit"),e.preventDefault()))},_submitForm:function(){return this._isFileSelectionValid()&&!this._abort({})},_clearPreview:function(){var i=this.$preview;(this.showUploadedThumbs?this.getFrames(":not(.file-preview-success)"):this.getFrames()).each(function(){var a=e(this);a.remove(),t.cleanZoomCache(i.find("#zoom-"+a.attr("id")))}),this.getFrames().length&&this.showPreview||this._resetUpload(),this._validateDefaultPreview()},_initSortable:function(){var i,a=this,r=a.$preview,n="."+t.SORT_CSS,s=a.reversePreviewOrder;window.KvSortable&&0!==r.find(n).length&&(i={handle:".drag-handle-init",dataIdAttr:"data-preview-id",scroll:!1,draggable:n,onSort:function(i){var r=i.oldIndex,n=i.newIndex,o=0;a.initialPreview=t.moveArray(a.initialPreview,r,n,s),a.initialPreviewConfig=t.moveArray(a.initialPreviewConfig,r,n,s),a.previewCache.init(),a.getFrames(".file-preview-initial").each(function(){e(this).attr("data-fileindex","init_"+o),o++}),a._raise("filesorted",{previewId:e(i.item).attr("id"),oldIndex:r,newIndex:n,stack:a.initialPreviewConfig})}},r.data("kvsortable")&&r.kvsortable("destroy"),e.extend(!0,i,a.fileActionSettings.dragSettings),r.kvsortable(i))},_setPreviewContent:function(e){this.$preview.html(e),this._autoFitContent()},_initPreview:function(e){var i,a=this.initialCaption||"";if(!this.previewCache.count())return this._clearPreview(),void(e?this._setCaption(a):this._initCaption());i=this.previewCache.out(),a=e&&this.initialCaption?this.initialCaption:i.caption,this._setPreviewContent(i.content),this._setInitThumbAttr(),this._setCaption(a),this._initSortable(),t.isEmpty(i.content)||this.$container.removeClass("file-input-new")},_getZoomButton:function(e){var t=this.previewZoomButtonIcons[e],i=this.previewZoomButtonClasses[e],a=' title="'+(this.previewZoomButtonTitles[e]||"")+'" '+("close"===e?' data-dismiss="modal" aria-hidden="true"':"");return"fullscreen"!==e&&"borderless"!==e&&"toggleheader"!==e||(a+=' data-toggle="button" aria-pressed="false" autocomplete="off"'),'<button type="button" class="'+i+" btn-"+e+'"'+a+">"+t+"</button>"},_getModalContent:function(){return this._getLayoutTemplate("modal").setTokens({rtl:this.rtl?" kv-rtl":"",zoomFrameClass:this.frameClass,heading:this.msgZoomModalHeading,prev:this._getZoomButton("prev"),next:this._getZoomButton("next"),toggleheader:this._getZoomButton("toggleheader"),fullscreen:this._getZoomButton("fullscreen"),borderless:this._getZoomButton("borderless"),close:this._getZoomButton("close")})},_listenModalEvent:function(e){var i=this,a=i.$modal;a.on(e+".bs.modal",function(r){var n=a.find(".btn-fullscreen"),s=a.find(".btn-borderless");i._raise("filezoom"+e,function(e){return{sourceEvent:e,previewId:a.data("previewId"),modal:a}}(r)),"shown"===e&&(s.removeClass("active").attr("aria-pressed","false"),n.removeClass("active").attr("aria-pressed","false"),a.hasClass("file-zoom-fullscreen")&&(i._maximizeZoomDialog(),t.checkFullScreen()?n.addClass("active").attr("aria-pressed","true"):s.addClass("active").attr("aria-pressed","true")))})},_initZoom:function(){var i,a=this,r=a._getLayoutTemplate("modalMain"),n="#"+t.MODAL_ID;a.showPreview&&(a.$modal=e(n),a.$modal&&a.$modal.length||(i=e(document.createElement("div")).html(r).insertAfter(a.$container),a.$modal=e(n).insertBefore(i),i.remove()),t.initModal(a.$modal),a.$modal.html(a._getModalContent()),e.each(t.MODAL_EVENTS,function(e,t){a._listenModalEvent(t)}))},_initZoomButtons:function(){var t,i,a=this.$modal.data("previewId")||"",r=this.getFrames().toArray(),n=r.length,s=this.$modal.find(".btn-prev"),o=this.$modal.find(".btn-next");if(r.length<2)return s.hide(),void o.hide();s.show(),o.show(),n&&(t=e(r[0]),i=e(r[n-1]),s.removeAttr("disabled"),o.removeAttr("disabled"),t.length&&t.attr("id")===a&&s.attr("disabled",!0),i.length&&i.attr("id")===a&&o.attr("disabled",!0))},_maximizeZoomDialog:function(){var t=this.$modal,i=t.find(".modal-header:visible"),a=t.find(".modal-footer:visible"),r=t.find(".modal-body"),n=e(window).height();t.addClass("file-zoom-fullscreen"),i&&i.length&&(n-=i.outerHeight(!0)),a&&a.length&&(n-=a.outerHeight(!0)),r&&r.length&&(n-=r.outerHeight(!0)-r.height()),t.find(".kv-zoom-body").height(n)},_resizeZoomDialog:function(e){var i=this.$modal,a=i.find(".btn-fullscreen"),r=i.find(".btn-borderless");if(i.hasClass("file-zoom-fullscreen"))t.toggleFullScreen(!1),e?a.hasClass("active")||(i.removeClass("file-zoom-fullscreen"),this._resizeZoomDialog(!0),r.hasClass("active")&&r.removeClass("active").attr("aria-pressed","false")):a.hasClass("active")?a.removeClass("active").attr("aria-pressed","false"):(i.removeClass("file-zoom-fullscreen"),this.$modal.find(".kv-zoom-body").css("height",this.zoomModalHeight));else{if(!e)return void this._maximizeZoomDialog();t.toggleFullScreen(!0)}i.focus()},_setZoomContent:function(i,a){var r,n,s,o,l,d,c,h,p=this,u=i.attr("id"),f=p.$modal,m=f.find(".btn-prev"),g=f.find(".btn-next"),v=f.find(".btn-fullscreen"),w=f.find(".btn-borderless"),_=f.find(".btn-toggleheader"),b=p.$preview.find("#zoom-"+u);n=b.attr("data-template")||"generic",s=(r=b.find(".kv-file-content")).length?r.html():"",o=(i.data("caption")||"")+" "+(i.data("size")||""),f.find(".kv-zoom-title").attr("title",e("<div/>").html(o).text()).html(o),l=f.find(".kv-zoom-body"),f.removeClass("kv-single-content"),a?(h=l.addClass("file-thumb-loading").clone().insertAfter(l),l.html(s).hide(),h.fadeOut("fast",function(){l.fadeIn("fast",function(){l.removeClass("file-thumb-loading")}),h.remove()})):l.html(s),(c=p.previewZoomSettings[n])&&(d=l.find(".kv-preview-data"),t.addCss(d,"file-zoom-detail"),e.each(c,function(e,t){d.css(e,t),(d.attr("width")&&"width"===e||d.attr("height")&&"height"===e)&&d.removeAttr(e)})),f.data("previewId",u),p._handler(m,"click",function(){p._zoomSlideShow("prev",u)}),p._handler(g,"click",function(){p._zoomSlideShow("next",u)}),p._handler(v,"click",function(){p._resizeZoomDialog(!0)}),p._handler(w,"click",function(){p._resizeZoomDialog(!1)}),p._handler(_,"click",function(){var e,t=f.find(".modal-header"),i=f.find(".modal-body .floating-buttons"),a=t.find(".kv-zoom-actions"),r=function(e){var i=p.$modal.find(".kv-zoom-body"),a=p.zoomModalHeight;f.hasClass("file-zoom-fullscreen")&&(a=i.outerHeight(!0),e||(a-=t.outerHeight(!0))),i.css("height",e?a+e:a)};t.is(":visible")?(e=t.outerHeight(!0),t.slideUp("slow",function(){a.find(".btn").appendTo(i),r(e)})):(i.find(".btn").appendTo(a),t.slideDown("slow",function(){r()})),f.focus()}),p._handler(f,"keydown",function(e){var t=e.which||e.keyCode;37!==t||m.attr("disabled")||p._zoomSlideShow("prev",u),39!==t||g.attr("disabled")||p._zoomSlideShow("next",u)})},_zoomPreview:function(e){var i,a=this.$modal;if(!e.length)throw"Cannot zoom to detailed preview!";t.initModal(a),a.html(this._getModalContent()),i=e.closest(t.FRAMES),this._setZoomContent(i),a.modal("show"),this._initZoomButtons()},_zoomSlideShow:function(t,i){var a,r,n,s=this.$modal.find(".kv-zoom-actions .btn-"+t),o=this.getFrames().toArray(),l=o.length;if(!s.attr("disabled")){for(r=0;r<l;r++)if(e(o[r]).attr("id")===i){n="prev"===t?r-1:r+1;break}n<0||n>=l||!o[n]||((a=e(o[n])).length&&this._setZoomContent(a,!0),this._initZoomButtons(),this._raise("filezoom"+t,{previewId:i,modal:this.$modal}))}},_initZoomButton:function(){var t=this;t.$preview.find(".kv-file-zoom").each(function(){var i=e(this);t._handler(i,"click",function(){t._zoomPreview(i)})})},_inputFileCount:function(){return this.$element.get(0).files.length},_refreshPreview:function(){var e;this._inputFileCount()&&this.showPreview&&this.isPreviewable&&(this.isAjaxUpload?(e=this.getFileStack(),this.filestack=[],e.length?this._clearFileInput():e=this.$element.get(0).files):e=this.$element.get(0).files,e&&e.length&&(this.readFiles(e),this._setFileDropZoneTitle()))},_clearObjects:function(t){t.find("video audio").each(function(){this.pause(),e(this).remove()}),t.find("img object div").each(function(){e(this).remove()})},_clearFileInput:function(){var t,i,a,r=this.$element;this._inputFileCount()&&(t=r.closest("form"),i=e(document.createElement("form")),a=e(document.createElement("div")),r.before(a),t.length?t.after(i):a.after(i),i.append(r).trigger("reset"),a.before(r).remove(),i.remove())},_resetUpload:function(){this.uploadCache={content:[],config:[],tags:[],append:!0},this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.uploadAsyncCount=0,this.loadedImages=[],this.totalImagesCount=0,this.$btnUpload.removeAttr("disabled"),this._setProgress(0),this.$progress.hide(),this._resetErrors(!1),this.ajaxAborted=!1,this.ajaxRequests=[],this._resetCanvas(),this.cacheInitialPreview={},this.overwriteInitial&&(this.initialPreview=[],this.initialPreviewConfig=[],this.initialPreviewThumbTags=[],this.previewCache.data={content:[],config:[],tags:[]})},_resetCanvas:function(){this.canvas&&this.imageCanvasContext&&this.imageCanvasContext.clearRect(0,0,this.canvas.width,this.canvas.height)},_hasInitialPreview:function(){return!this.overwriteInitial&&this.previewCache.count()},_resetPreview:function(){var e,t;this.previewCache.count()?(e=this.previewCache.out(),this._setPreviewContent(e.content),this._setInitThumbAttr(),t=this.initialCaption?this.initialCaption:e.caption,this._setCaption(t)):(this._clearPreview(),this._initCaption()),this.showPreview&&(this._initZoom(),this._initSortable())},_clearDefaultPreview:function(){this.$preview.find(".file-default-preview").remove()},_validateDefaultPreview:function(){this.showPreview&&!t.isEmpty(this.defaultPreviewContent)&&(this._setPreviewContent('<div class="file-default-preview">'+this.defaultPreviewContent+"</div>"),this.$container.removeClass("file-input-new"),this._initClickable())},_resetPreviewThumbs:function(e){var t;if(e)return this._clearPreview(),void this.clearStack();this._hasInitialPreview()?(t=this.previewCache.out(),this._setPreviewContent(t.content),this._setInitThumbAttr(),this._setCaption(t.caption),this._initPreviewActions()):this._clearPreview()},_getLayoutTemplate:function(e){var i=this.layoutTemplates[e];return t.isEmpty(this.customLayoutTags)?i:t.replaceTags(i,this.customLayoutTags)},_getPreviewTemplate:function(e){var i=this.previewTemplates[e];return t.isEmpty(this.customPreviewTags)?i:t.replaceTags(i,this.customPreviewTags)},_getOutData:function(e,t,i){return e=e||{},t=t||{},i=i||this.filestack.slice(0)||{},{form:this.formdata,files:i,filenames:this.filenames,filescount:this.getFilesCount(),extra:this._getExtraData(),response:t,reader:this.reader,jqXHR:e}},_getMsgSelected:function(e){var t=1===e?this.fileSingle:this.filePlural;return e>0?this.msgSelected.replace("{n}",e).replace("{files}",t):this.msgNoFilesSelected},_getFrame:function(t){var i=e("#"+t);return i.length?i:(this._log('Invalid thumb frame with id: "'+t+'".'),null)},_getThumbs:function(e){return e=e||"",this.getFrames(":not(.file-preview-initial)"+e)},_getExtraData:function(e,t){var i=this.uploadExtraData;return"function"==typeof this.uploadExtraData&&(i=this.uploadExtraData(e,t)),i},_initXhr:function(e,t,i){var a=this;return e.upload&&e.upload.addEventListener("progress",function(e){var r=0,n=e.total,s=e.loaded||e.position;e.lengthComputable&&(r=Math.floor(s/n*100)),t?a._setAsyncUploadStatus(t,r,i):a._setProgress(r)},!1),e},_initAjaxSettings:function(){this._ajaxSettings=e.extend(!0,{},this.ajaxSettings),this._ajaxDeleteSettings=e.extend(!0,{},this.ajaxDeleteSettings)},_mergeAjaxCallback:function(e,t,i){var a,r=this._ajaxSettings,n=this.mergeAjaxCallbacks;"delete"===i&&(r=this._ajaxDeleteSettings,n=this.mergeAjaxDeleteCallbacks),a=r[e],r[e]=n&&"function"==typeof a?"before"===n?function(){a.apply(this,arguments),t.apply(this,arguments)}:function(){t.apply(this,arguments),a.apply(this,arguments)}:t},_ajaxSubmit:function(t,i,a,r,n,s){var o,l=this;l._raise("filepreajax",[n,s])&&(l._uploadExtra(n,s),l._initAjaxSettings(),l._mergeAjaxCallback("beforeSend",t),l._mergeAjaxCallback("success",i),l._mergeAjaxCallback("complete",a),l._mergeAjaxCallback("error",r),o=e.extend(!0,{},{xhr:function(){var t=e.ajaxSettings.xhr();return l._initXhr(t,n,l.getFileStack().length)},url:s&&l.uploadUrlThumb?l.uploadUrlThumb:l.uploadUrl,type:"POST",dataType:"json",data:l.formdata,cache:!1,processData:!1,contentType:!1},l._ajaxSettings),l.ajaxRequests.push(e.ajax(o)))},_mergeArray:function(e,i){var a=t.cleanArray(this[e]),r=t.cleanArray(i);this[e]=a.concat(r)},_initUploadSuccess:function(i,a,r){var n,s,o,l,d,c,h,p,u,f=this;f.showPreview&&"object"==typeof i&&!e.isEmptyObject(i)&&void 0!==i.initialPreview&&i.initialPreview.length>0&&(f.hasInitData=!0,c=i.initialPreview||[],h=i.initialPreviewConfig||[],p=i.initialPreviewThumbTags||[],n=void 0===i.append||i.append,c.length>0&&!t.isArray(c)&&(c=c.split(f.initialPreviewDelimiter)),f._mergeArray("initialPreview",c),f._mergeArray("initialPreviewConfig",h),f._mergeArray("initialPreviewThumbTags",p),void 0!==a?r?(u=a.attr("data-fileindex"),f.uploadCache.content[u]=c[0],f.uploadCache.config[u]=h[0]||[],f.uploadCache.tags[u]=p[0]||[],f.uploadCache.append=n):(o=f.previewCache.add(c,h[0],p[0],n),s=f.previewCache.get(o,!1),(d=(l=e(document.createElement("div")).html(s).hide().insertAfter(a)).find(".kv-zoom-cache"))&&d.length&&d.insertAfter(a),a.fadeOut("slow",function(){var e=l.find(".file-preview-frame");e&&e.length&&e.insertBefore(a).fadeIn("slow").css("display:inline-block"),f._initPreviewActions(),f._clearFileInput(),t.cleanZoomCache(f.$preview.find("#zoom-"+a.attr("id"))),a.remove(),l.remove(),f._initSortable()})):(f.previewCache.set(c,h,p,n),f._initPreview(),f._initPreviewActions()))},_initSuccessThumbs:function(){var i=this;i.showPreview&&i._getThumbs(t.FRAMES+".file-preview-success").each(function(){var a=e(this),r=i.$preview,n=a.find(".kv-file-remove");n.removeAttr("disabled"),i._handler(n,"click",function(){var e=a.attr("id"),n=i._raise("filesuccessremove",[e,a.attr("data-fileindex")]);t.cleanMemory(a),!1!==n&&a.fadeOut("slow",function(){t.cleanZoomCache(r.find("#zoom-"+e)),a.remove(),i.getFrames().length||i.reset()})})})},_checkAsyncComplete:function(){var t,i;for(i=0;i<this.filestack.length;i++)if(this.filestack[i]&&(t=this.previewInitId+"-"+i,-1===e.inArray(t,this.uploadLog)))return!1;return this.uploadAsyncCount===this.uploadLog.length},_uploadExtra:function(t,i){var a=this,r=a._getExtraData(t,i);0!==r.length&&e.each(r,function(e,t){a.formdata.append(e,t)})},_uploadSingle:function(i,a){var r,n,s,o,l,d,c,h,p,u,f,m=this,g=m.getFileStack().length,v=new FormData,w=m.previewInitId+"-"+i,_=m.filestack.length>0||!e.isEmptyObject(m.uploadExtraData),b=e("#"+w).find(".file-thumb-progress"),C={id:w,index:i};m.formdata=v,m.showPreview&&(n=e("#"+w+":not(.file-preview-initial)"),o=n.find(".kv-file-upload"),l=n.find(".kv-file-remove"),b.show()),0===g||!_||o&&o.hasClass("disabled")||m._abort(C)||(f=function(e,t){d||m.updateStack(e,void 0),m.uploadLog.push(t),m._checkAsyncComplete()&&(m.fileBatchCompleted=!0)},s=function(){var e,i,a,r=m.uploadCache,n=0,s=m.cacheInitialPreview;m.fileBatchCompleted&&(s&&s.content&&(n=s.content.length),setTimeout(function(){var o=0===m.getFileStack(!0).length;if(m.showPreview){if(m.previewCache.set(r.content,r.config,r.tags,r.append),n){for(i=0;i<r.content.length;i++)a=i+n,s.content[a]=r.content[i],s.config.length&&(s.config[a]=r.config[i]),s.tags.length&&(s.tags[a]=r.tags[i]);m.initialPreview=t.cleanArray(s.content),m.initialPreviewConfig=t.cleanArray(s.config),m.initialPreviewThumbTags=t.cleanArray(s.tags)}else m.initialPreview=r.content,m.initialPreviewConfig=r.config,m.initialPreviewThumbTags=r.tags;m.cacheInitialPreview={},m.hasInitData&&(m._initPreview(),m._initPreviewActions())}m.unlock(o),o&&m._clearFileInput(),e=m.$preview.find(".file-preview-initial"),m.uploadAsync&&e.length&&(t.addCss(e,t.SORT_CSS),m._initSortable()),m._raise("filebatchuploadcomplete",[m.filestack,m._getExtraData()]),m.uploadCount=0,m.uploadStatus={},m.uploadLog=[],m._setProgress(101),m.ajaxAborted=!1},100))},c=function(s){r=m._getOutData(s),m.fileBatchCompleted=!1,a||(m.ajaxAborted=!1),m.showPreview&&(n.hasClass("file-preview-success")||(m._setThumbStatus(n,"Loading"),t.addCss(n,"file-uploading")),o.attr("disabled",!0),l.attr("disabled",!0)),a||m.lock(),m._raise("filepreupload",[r,w,i]),e.extend(!0,C,r),m._abort(C)&&(s.abort(),a||(m._setThumbStatus(n,"New"),n.removeClass("file-uploading"),o.removeAttr("disabled"),l.removeAttr("disabled"),m.unlock()),m._setProgressCancelled())},h=function(s,l,c){var h=m.showPreview&&n.attr("id")?n.attr("id"):w;r=m._getOutData(c,s),e.extend(!0,C,r),setTimeout(function(){t.isEmpty(s)||t.isEmpty(s.error)?(m.showPreview&&(m._setThumbStatus(n,"Success"),o.hide(),m._initUploadSuccess(s,n,a),m._setProgress(101,b)),m._raise("fileuploaded",[r,h,i]),a?f(i,h):m.updateStack(i,void 0)):(d=!0,m._showUploadError(s.error,C),m._setPreviewError(n,i,m.filestack[i],m.retryErrorUploads),m.retryErrorUploads||o.hide(),a&&f(i,h),m._setProgress(101,e("#"+h).find(".file-thumb-progress"),m.msgUploadError))},100)},p=function(){setTimeout(function(){m.showPreview&&(o.removeAttr("disabled"),l.removeAttr("disabled"),n.removeClass("file-uploading")),a?s():(m.unlock(!1),m._clearFileInput()),m._initSuccessThumbs()},100)},u=function(t,r,s){var l=m.ajaxOperations.uploadThumb,c=m._parseError(l,t,s,a&&m.filestack[i].name?m.filestack[i].name:null);d=!0,setTimeout(function(){a&&f(i,w),m.uploadStatus[w]=100,m._setPreviewError(n,i,m.filestack[i],m.retryErrorUploads),m.retryErrorUploads||o.hide(),e.extend(!0,C,m._getOutData(t)),m._setProgress(101,b,m.msgAjaxProgressError.replace("{operation}",l)),m._setProgress(101,e("#"+w).find(".file-thumb-progress"),m.msgUploadError),m._showUploadError(c,C)},100)},v.append(m.uploadFileAttr,m.filestack[i],m.filenames[i]),v.append("file_id",i),m._ajaxSubmit(c,h,p,u,w,i))},_uploadBatch:function(){var i,a,r,n,s,o=this,l=o.filestack,d=l.length,c=o.filestack.length>0||!e.isEmptyObject(o.uploadExtraData);o.formdata=new FormData,0!==d&&c&&!o._abort({})&&(s=function(){e.each(l,function(e){o.updateStack(e,void 0)}),o._clearFileInput()},i=function(i){o.lock();var a=o._getOutData(i);o.ajaxAborted=!1,o.showPreview&&o._getThumbs().each(function(){var i=e(this),a=i.find(".kv-file-upload"),r=i.find(".kv-file-remove");i.hasClass("file-preview-success")||(o._setThumbStatus(i,"Loading"),t.addCss(i,"file-uploading")),a.attr("disabled",!0),r.attr("disabled",!0)}),o._raise("filebatchpreupload",[a]),o._abort(a)&&(i.abort(),o._getThumbs().each(function(){var t=e(this),i=t.find(".kv-file-upload"),a=t.find(".kv-file-remove");t.hasClass("file-preview-loading")&&(o._setThumbStatus(t,"New"),t.removeClass("file-uploading")),i.removeAttr("disabled"),a.removeAttr("disabled")}),o._setProgressCancelled())},a=function(i,a,r){var n=o._getOutData(r,i),l=0,d=o._getThumbs(":not(.file-preview-success)"),c=t.isEmpty(i)||t.isEmpty(i.errorkeys)?[]:i.errorkeys;t.isEmpty(i)||t.isEmpty(i.error)?(o._raise("filebatchuploadsuccess",[n]),s(),o.showPreview?(d.each(function(){var t=e(this);o._setThumbStatus(t,"Success"),t.removeClass("file-uploading"),t.find(".kv-file-upload").hide().removeAttr("disabled")}),o._initUploadSuccess(i)):o.reset(),o._setProgress(101)):(o.showPreview&&(d.each(function(){var t=e(this),i=t.attr("data-fileindex");t.removeClass("file-uploading"),t.find(".kv-file-upload").removeAttr("disabled"),t.find(".kv-file-remove").removeAttr("disabled"),0===c.length||-1!==e.inArray(l,c)?(o._setPreviewError(t,i,o.filestack[i],o.retryErrorUploads),o.retryErrorUploads||(t.find(".kv-file-upload").hide(),o.updateStack(i,void 0))):(t.find(".kv-file-upload").hide(),o._setThumbStatus(t,"Success"),o.updateStack(i,void 0)),t.hasClass("file-preview-error")&&!o.retryErrorUploads||l++}),o._initUploadSuccess(i)),o._showUploadError(i.error,n,"filebatchuploaderror"),o._setProgress(101,o.$progress,o.msgUploadError))},n=function(){o.unlock(),o._initSuccessThumbs(),o._clearFileInput(),o._raise("filebatchuploadcomplete",[o.filestack,o._getExtraData()])},r=function(t,i,a){var r=o._getOutData(t),n=o.ajaxOperations.uploadBatch,s=o._parseError(n,t,a);o._showUploadError(s,r,"filebatchuploaderror"),o.uploadFileCount=d-1,o.showPreview&&(o._getThumbs().each(function(){var t=e(this),i=t.attr("data-fileindex");t.removeClass("file-uploading"),void 0!==o.filestack[i]&&o._setPreviewError(t)}),o._getThumbs().removeClass("file-uploading"),o._getThumbs(" .kv-file-upload").removeAttr("disabled"),o._getThumbs(" .kv-file-delete").removeAttr("disabled"),o._setProgress(101,o.$progress,o.msgAjaxProgressError.replace("{operation}",n)))},e.each(l,function(e,i){t.isEmpty(l[e])||o.formdata.append(o.uploadFileAttr,i,o.filenames[e])}),o._ajaxSubmit(i,a,n,r))},_uploadExtraOnly:function(){var e,i,a,r,n=this,s={};n.formdata=new FormData,n._abort(s)||(e=function(e){n.lock();var t=n._getOutData(e);n._raise("filebatchpreupload",[t]),n._setProgress(50),s.data=t,s.xhr=e,n._abort(s)&&(e.abort(),n._setProgressCancelled())},i=function(e,i,a){var r=n._getOutData(a,e);t.isEmpty(e)||t.isEmpty(e.error)?(n._raise("filebatchuploadsuccess",[r]),n._clearFileInput(),n._initUploadSuccess(e),n._setProgress(101)):n._showUploadError(e.error,r,"filebatchuploaderror")},a=function(){n.unlock(),n._clearFileInput(),n._raise("filebatchuploadcomplete",[n.filestack,n._getExtraData()])},r=function(e,t,i){var a=n._getOutData(e),r=n.ajaxOperations.uploadExtra,o=n._parseError(r,e,i);s.data=a,n._showUploadError(o,a,"filebatchuploaderror"),n._setProgress(101,n.$progress,n.msgAjaxProgressError.replace("{operation}",r))},n._ajaxSubmit(e,i,a,r))},_deleteFileIndex:function(i){var a=i.attr("data-fileindex"),r=this.reversePreviewOrder;"init_"===a.substring(0,5)&&(a=parseInt(a.replace("init_","")),this.initialPreview=t.spliceArray(this.initialPreview,a,r),this.initialPreviewConfig=t.spliceArray(this.initialPreviewConfig,a,r),this.initialPreviewThumbTags=t.spliceArray(this.initialPreviewThumbTags,a,r),this.getFrames().each(function(){var t=e(this),i=t.attr("data-fileindex");"init_"===i.substring(0,5)&&(i=parseInt(i.replace("init_","")))>a&&(i--,t.attr("data-fileindex","init_"+i))}),this.uploadAsync&&(this.cacheInitialPreview=this.getPreview()))},_initFileActions:function(){var i=this,a=i.$preview;i.showPreview&&(i._initZoomButton(),i.getFrames(" .kv-file-remove").each(function(){var r,n,s,o=e(this),l=o.closest(t.FRAMES),d=l.attr("id"),c=l.attr("data-fileindex");i._handler(o,"click",function(){if(!1===i._raise("filepreremove",[d,c])||!i._validateMinCount())return!1;r=l.hasClass("file-preview-error"),t.cleanMemory(l),l.fadeOut("slow",function(){t.cleanZoomCache(a.find("#zoom-"+d)),i.updateStack(c,void 0),i._clearObjects(l),l.remove(),d&&r&&i.$errorContainer.find('li[data-file-id="'+d+'"]').fadeOut("fast",function(){e(this).remove(),i._errorsExist()||i._resetErrors()}),i._clearFileInput();var o=i.getFileStack(!0),h=i.previewCache.count(),p=o.length,u=i.showPreview&&i.getFrames().length;0!==p||0!==h||u?(s=(n=h+p)>1?i._getMsgSelected(n):o[0]?i._getFileNames()[0]:"",i._setCaption(s)):i.reset(),i._raise("fileremoved",[d,c])})})}),i.getFrames(" .kv-file-upload").each(function(){var a=e(this);i._handler(a,"click",function(){var e=a.closest(t.FRAMES),r=e.attr("data-fileindex");i.$progress.hide(),e.hasClass("file-preview-error")&&!i.retryErrorUploads||i._uploadSingle(r,!1)})}))},_initPreviewActions:function(){var i=this,a=i.$preview,r=i.deleteExtraData||{},n=t.FRAMES+" .kv-file-remove",s=i.fileActionSettings,o=s.removeClass,l=s.removeErrorClass,d=function(){var e=i.isAjaxUpload?i.previewCache.count():i._inputFileCount();a.find(t.FRAMES).length||e||(i._setCaption(""),i.reset(),i.initialCaption="")};i._initZoomButton(),a.find(n).each(function(){var n,s,c,h=e(this),p=h.data("url")||i.deleteUrl,u=h.data("key");if(!t.isEmpty(p)&&void 0!==u){var f,m,g,v,w=h.closest(t.FRAMES),_=i.previewCache.data,b=w.attr("data-fileindex");b=parseInt(b.replace("init_","")),g=t.isEmpty(_.config)&&t.isEmpty(_.config[b])?null:_.config[b],"function"==typeof(v=t.isEmpty(g)||t.isEmpty(g.extra)?r:g.extra)&&(v=v()),m={id:h.attr("id"),key:u,extra:v},n=function(e){i.ajaxAborted=!1,i._raise("filepredelete",[u,e,v]),i._abort()?e.abort():(h.removeClass(l),t.addCss(w,"file-uploading"),t.addCss(h,"disabled "+o))},s=function(e,r,n){var s,c;if(!t.isEmpty(e)&&!t.isEmpty(e.error))return m.jqXHR=n,m.response=e,i._showError(e.error,m,"filedeleteerror"),w.removeClass("file-uploading"),h.removeClass("disabled "+o).addClass(l),void d();w.removeClass("file-uploading").addClass("file-deleted"),w.fadeOut("slow",function(){b=parseInt(w.attr("data-fileindex").replace("init_","")),i.previewCache.unset(b),i._deleteFileIndex(w),s=i.previewCache.count(),c=s>0?i._getMsgSelected(s):"",i._setCaption(c),i._raise("filedeleted",[u,n,v]),t.cleanZoomCache(a.find("#zoom-"+w.attr("id"))),i._clearObjects(w),w.remove(),d()})},c=function(e,t,a){var r=i.ajaxOperations.deleteThumb,n=i._parseError(r,e,a);m.jqXHR=e,m.response={},i._showError(n,m,"filedeleteerror"),w.removeClass("file-uploading"),h.removeClass("disabled "+o).addClass(l),d()},i._initAjaxSettings(),i._mergeAjaxCallback("beforeSend",n,"delete"),i._mergeAjaxCallback("success",s,"delete"),i._mergeAjaxCallback("error",c,"delete"),f=e.extend(!0,{},{url:p,type:"POST",dataType:"json",data:e.extend(!0,{},{key:u},v)},i._ajaxDeleteSettings),i._handler(h,"click",function(){if(!i._validateMinCount())return!1;i.ajaxAborted=!1,i._raise("filebeforedelete",[u,v]),i.ajaxAborted instanceof Promise?i.ajaxAborted.then(function(t){t||e.ajax(f)}):i.ajaxAborted||e.ajax(f)})}})},_hideFileIcon:function(){this.overwriteInitial&&this.$captionContainer.removeClass("icon-visible")},_showFileIcon:function(){t.addCss(this.$captionContainer,"icon-visible")},_getSize:function(t){var i,a,r,n=parseFloat(t),s=this.fileSizeGetter;return e.isNumeric(t)&&e.isNumeric(n)?("function"==typeof s?r=s(n):0===n?r="0.00 B":(i=Math.floor(Math.log(n)/Math.log(1024)),a=["B","KB","MB","GB","TB","PB","EB","ZB","YB"],r=1*(n/Math.pow(1024,i)).toFixed(2)+" "+a[i]),this._getLayoutTemplate("size").replace("{sizeText}",r)):""},_generatePreviewTemplate:function(i,a,r,n,s,o,l,d,c,h,p){var u,f=this,m=f.slug(r),g="",v="",w=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)<400?f.previewSettingsSmall[i]||f.defaults.previewSettingsSmall[i]:f.previewSettings[i]||f.defaults.previewSettings[i],_=c||f._renderFileFooter(m,l,"auto",o),b=f._getPreviewIcon(r),C="type-default",y=b&&f.preferIconicPreview,x=b&&f.preferIconicZoomPreview;return w&&e.each(w,function(e,t){v+=e+":"+t+";"}),u=function(a,o,l,c){var u=l?"zoom-"+s:s,g=f._getPreviewTemplate(a),w=(d||"")+" "+c;return f.frameClass&&(w=f.frameClass+" "+w),l&&(w=w.replace(" "+t.SORT_CSS,"")),g=f._parseFilePreviewIcon(g,r),"text"===a&&(o=t.htmlEncode(o)),"object"!==i||n||e.each(f.defaults.fileTypeSettings,function(e,t){"object"!==e&&"other"!==e&&t(r,n)&&(C="type-"+e)}),g.setTokens({previewId:u,caption:m,frameClass:w,type:n,fileindex:h,typeCss:C,footer:_,data:o,template:p||i,style:v?'style="'+v+'"':""})},h=h||s.slice(s.lastIndexOf("-")+1),f.fileActionSettings.showZoom&&(g=u(x?"other":i,a,!0,"kv-zoom-thumb")),g="\n"+f._getLayoutTemplate("zoomCache").replace("{zoomContent}",g),u(y?"other":i,a,!1,"kv-preview-thumb")+g},_addToPreview:function(e,t){return this.reversePreviewOrder?e.prepend(t):e.append(t)},_previewDefault:function(i,a,r){var n=this.$preview;if(this.showPreview){var s,o=i?i.name:"",l=i?i.type:"",d=i.size||0,c=this.slug(o),h=!0===r&&!this.isAjaxUpload,p=t.objUrl.createObjectURL(i);this._clearDefaultPreview(),s=this._generatePreviewTemplate("other",p,o,l,a,h,d),this._addToPreview(n,s),this._setThumbAttr(a,c,d),!0===r&&this.isAjaxUpload&&this._setThumbStatus(e("#"+a),"Error")}},_previewFile:function(e,t,i,a,r,n){if(this.showPreview){var s,o=t?t.name:"",l=n.type,d=n.name,c=this._parseFileType(l,o),h=this.allowedPreviewTypes,p=this.allowedPreviewMimeTypes,u=this.$preview,f=t.size||0,m=h&&h.indexOf(c)>=0,g=p&&-1!==p.indexOf(l),v="text"===c||"html"===c||"image"===c?i.target.result:r;if("html"===c&&this.purifyHtml&&window.DOMPurify&&(v=window.DOMPurify.sanitize(v)),m||g){s=this._generatePreviewTemplate(c,v,o,l,a,!1,f),this._clearDefaultPreview(),this._addToPreview(u,s);var w=u.find("#"+a+" img");this._validateImageOrientation(w,t,a,d,l,f,v)}else this._previewDefault(t,a);this._setThumbAttr(a,d,f),this._initSortable()}},_setThumbAttr:function(t,i,a){var r=e("#"+t);r.length&&(a=a&&a>0?this._getSize(a):"",r.data({caption:i,size:a}))},_setInitThumbAttr:function(){var e,i,a,r,n=this.previewCache.data,s=this.previewCache.count();if(0!==s)for(var o=0;o<s;o++)e=n.config[o],r=this.previewInitId+"-init_"+o,i=t.ifSet("caption",e,t.ifSet("filename",e)),a=t.ifSet("size",e),this._setThumbAttr(r,i,a)},_slugDefault:function(e){return t.isEmpty(e)?"":String(e).replace(/[\[\]\/\{}:;#%=\(\)\*\+\?\\\^\$\|<>&"']/g,"_")},_updateFileDetails:function(e){var i=this.$element,a=this.getFileStack(),r=t.isIE(9)&&t.findFileName(i.val())||i[0].files[0]&&i[0].files[0].name||a.length&&a[0].name||"",n=this.slug(r),s=this.isAjaxUpload?a.length:e,o=this.previewCache.count()+s,l=1===s?n:this._getMsgSelected(o);this.isError?(this.$previewContainer.removeClass("file-thumb-loading"),this.$previewStatus.html(""),this.$captionContainer.removeClass("icon-visible")):this._showFileIcon(),this._setCaption(l,this.isError),this.$container.removeClass("file-input-new file-input-ajax-new"),1===arguments.length&&this._raise("fileselect",[e,n]),this.previewCache.count()&&this._initPreviewActions()},_setThumbStatus:function(e,t){if(this.showPreview){var i="indicator"+t,a=i+"Title",r="file-preview-"+t.toLowerCase(),n=e.find(".file-upload-indicator"),s=this.fileActionSettings;e.removeClass("file-preview-success file-preview-error file-preview-loading"),"Success"===t&&e.find(".file-drag-handle").remove(),n.html(s[i]),n.attr("title",s[a]),e.addClass(r),"Error"!==t||this.retryErrorUploads||e.find(".kv-file-upload").attr("disabled",!0)}},_setProgressCancelled:function(){this._setProgress(101,this.$progress,this.msgCancelled)},_setProgress:function(e,i,a){var r,n=Math.min(e,100),s=this.progressUploadThreshold,o=e<=100?this.progressTemplate:this.progressCompleteTemplate,l=n<100?this.progressTemplate:a?this.progressErrorTemplate:o;i=i||this.$progress,t.isEmpty(l)||(r=s&&n>s&&e<=100?l.setTokens({percent:s,status:this.msgUploadThreshold}):l.setTokens({percent:n,status:e>100?this.msgUploadEnd:n+"%"}),i.html(r),a&&i.find('[role="progressbar"]').html(a))},_setFileDropZoneTitle:function(){var e,i=this.$container.find(".file-drop-zone"),a=this.dropZoneTitle;this.isClickable&&(e=t.isEmpty(this.$element.attr("multiple"))?this.fileSingle:this.filePlural,a+=this.dropZoneClickTitle.replace("{files}",e)),i.find("."+this.dropZoneTitleClass).remove(),!this.showPreview||0===i.length||this.getFileStack().length>0||!this.dropZoneEnabled||!this.isAjaxUpload&&this.$element.files||(0===i.find(t.FRAMES).length&&t.isEmpty(this.defaultPreviewContent)&&i.prepend('<div class="'+this.dropZoneTitleClass+'">'+a+"</div>"),this.$container.removeClass("file-input-new"),t.addCss(this.$container,"file-input-ajax-new"))},_setAsyncUploadStatus:function(t,i,a){var r=0;this._setProgress(i,e("#"+t).find(".file-thumb-progress")),this.uploadStatus[t]=i,e.each(this.uploadStatus,function(e,t){r+=t}),this._setProgress(Math.floor(r/a))},_validateMinCount:function(){var e=this.isAjaxUpload?this.getFileStack().length:this._inputFileCount();return!(this.validateInitialCount&&this.minFileCount>0&&this._getFileCount(e-1)<this.minFileCount)||(this._noFilesError({}),!1)},_getFileCount:function(e){return this.validateInitialCount&&!this.overwriteInitial&&(e+=this.previewCache.count()),e},_getFileId:function(e){var t,i=this.generateFileId;return"function"==typeof i?i(e,event):e&&(t=String(e.webkitRelativePath||e.fileName||e.name||null))?e.size+"-"+t.replace(/[^0-9a-zA-Z_-]/gim,""):null},_getFileName:function(e){return e&&e.name?this.slug(e.name):void 0},_getFileIds:function(e){return this.fileids.filter(function(t){return e?void 0!==t:null!=t})},_getFileNames:function(e){return this.filenames.filter(function(t){return e?void 0!==t:null!=t})},_setPreviewError:function(e,t,i,a){void 0!==t&&this.updateStack(t,i),this.showPreview&&(!this.removeFromPreviewOnError||a?(this._setThumbStatus(e,"Error"),this._refreshUploadButton(e,a)):e.remove())},_refreshUploadButton:function(e,t){var i=e.find(".kv-file-upload"),a=this.fileActionSettings,r=a.uploadIcon,n=a.uploadTitle;i.length&&(t&&(r=a.uploadRetryIcon,n=a.uploadRetryTitle),i.attr("title",n).html(r))},_checkDimensions:function(e,i,a,r,n,s,o){var l,d,c,h=this[("Small"===i?"min":"max")+"Image"+s];!t.isEmpty(h)&&a.length&&(c=a[0],d="Width"===s?c.naturalWidth||c.width:c.naturalHeight||c.height,("Small"===i?d>=h:d<=h)||(l=this["msgImage"+s+i].setTokens({name:n,size:h}),this._showUploadError(l,o),this._setPreviewError(r,e,null)))},_getExifObj:function(e){var t=null;try{t=window.piexif?window.piexif.load(e):null}catch(e){t=null}return t||this._log("Error loading the piexif.js library."),t},_validateImageOrientation:function(e,i,a,r,n,s,o){var l,d;(d=(l=e.length&&this.autoOrientImage?this._getExifObj(o):null)?l["0th"][piexif.ImageIFD.Orientation]:null)?(t.setImageOrientation(e,this.$preview.find("#zoom-"+a+" img"),d),this._raise("fileimageoriented",{$img:e,file:i}),this._validateImage(a,r,n,s,o,l)):this._validateImage(a,r,n,s,o,l)},_validateImage:function(t,i,a,r,n,s){var o,l,d,c=this,h=c.$preview,p=h.find("#"+t),u=p.attr("data-fileindex"),f=p.find("img");i=i||"Untitled",f.one("load",function(){l=p.width(),d=h.width(),l>d&&f.css("width","100%"),o={ind:u,id:t},c._checkDimensions(u,"Small",f,p,i,"Width",o),c._checkDimensions(u,"Small",f,p,i,"Height",o),c.resizeImage||(c._checkDimensions(u,"Large",f,p,i,"Width",o),c._checkDimensions(u,"Large",f,p,i,"Height",o)),c._raise("fileimageloaded",[t]),c.loadedImages.push({ind:u,img:f,thumb:p,pid:t,typ:a,siz:r,validated:!1,imgData:n,exifObj:s}),p.data("exif",s),c._validateAllImages()}).one("error",function(){c._raise("fileimageloaderror",[t])}).each(function(){this.complete?e(this).trigger("load"):this.error&&e(this).trigger("error")})},_validateAllImages:function(){var e,t,i,a={val:0},r=this.loadedImages.length,n=this.resizeIfSizeMoreThan;if(r===this.totalImagesCount&&(this._raise("fileimagesloaded"),this.resizeImage))for(e=0;e<this.loadedImages.length;e++)(t=this.loadedImages[e]).validated||((i=t.siz)&&i>1e3*n&&this._getResizedImage(t,a,r),this.loadedImages[e].validated=!0)},_getResizedImage:function(i,a,r){var n,s,o,l,d,c,h=this,p=e(i.img)[0],u=p.naturalWidth,f=p.naturalHeight,m=1,g=h.maxImageWidth||u,v=h.maxImageHeight||f,w=!(!u||!f),_=h.imageCanvas,b=h.imageCanvasContext,C=i.typ,y=i.pid,x=i.ind,T=i.thumb,E=i.exifObj;if(d=function(e,t,i){h.isAjaxUpload?h._showUploadError(e,t,i):h._showError(e,t,i),h._setPreviewError(T,x)},h.filestack[x]&&w&&!(u<=g&&f<=v)||(w&&h.filestack[x]&&h._raise("fileimageresized",[y,x]),a.val++,a.val===r&&h._raise("fileimagesresized"),w)){C=C||h.resizeDefaultImageType,s=u>g,o=f>v,m="width"===h.resizePreference?s?g/u:o?v/f:1:o?v/f:s?g/u:1,h._resetCanvas(),u*=m,f*=m,_.width=u,_.height=f;try{b.drawImage(p,0,0,u,f),l=_.toDataURL(C,h.resizeQuality),E&&(c=window.piexif.dump(E),l=window.piexif.insert(c,l)),n=t.dataURI2Blob(l),h.filestack[x]=n,h._raise("fileimageresized",[y,x]),a.val++,a.val===r&&h._raise("fileimagesresized",[void 0,void 0]),n instanceof Blob||d(h.msgImageResizeError,{id:y,index:x},"fileimageresizeerror")}catch(e){a.val++,a.val===r&&h._raise("fileimagesresized",[void 0,void 0]),d(h.msgImageResizeException.replace("{errors}",e.message),{id:y,index:x},"fileimageresizeexception")}}else d(h.msgImageResizeError,{id:y,index:x},"fileimageresizeerror")},_initBrowse:function(e){var i=this.$element;this.showBrowse?this.$btnFile=e.find(".btn-file").append(i):(i.appendTo(e).attr("tabindex",-1),t.addCss(i,"file-no-browse"))},_initClickable:function(){var i,a,r=this;r.isClickable&&(i=r.$dropZone,r.isAjaxUpload||(a=r.$preview.find(".file-default-preview")).length&&(i=a),t.addCss(i,"clickable"),i.attr("tabindex",-1),r._handler(i,"click",function(t){var a=e(t.target);e(r.elErrorContainer+":visible").length||a.parents(".file-preview-thumbnails").length&&!a.parents(".file-default-preview").length||(r.$element.data("zoneClicked",!0).trigger("click"),i.blur())}))},_initCaption:function(){var e=this.initialCaption||"";return this.overwriteInitial||t.isEmpty(e)?(this.$caption.val(""),!1):(this._setCaption(e),!0)},_setCaption:function(i,a){var r,n,s,o,l,d=this.getFileStack();if(this.$caption.length){if(this.$captionContainer.removeClass("icon-visible"),a)r=e("<div>"+this.msgValidationError+"</div>").text(),l=(o=d.length)?1===o&&d[0]?this._getFileNames()[0]:this._getMsgSelected(o):this._getMsgSelected(this.msgNo),n=t.isEmpty(i)?l:i,s='<span class="'+this.msgValidationErrorClass+'">'+this.msgValidationErrorIcon+"</span>";else{if(t.isEmpty(i))return;n=r=e("<div>"+i+"</div>").text(),s=this._getLayoutTemplate("fileIcon")}this.$captionContainer.addClass("icon-visible"),this.$caption.attr("title",r).val(n),this.$captionIcon.html(s)}},_createContainer:function(){var t={class:"file-input file-input-new"+(this.rtl?" kv-rtl":"")},i=e(document.createElement("div")).attr(t).html(this._renderMain());return i.insertBefore(this.$element),this._initBrowse(i),this.theme&&i.addClass("theme-"+this.theme),i},_refreshContainer:function(){var e=this.$container;this.$element.insertAfter(e),e.html(this._renderMain()),this._initBrowse(e),this._validateDisabled()},_validateDisabled:function(){this.$caption.attr({readonly:this.isDisabled})},_renderMain:function(){var e=this.dropZoneEnabled?" file-drop-zone":"file-drop-disabled",t=this.showClose?this._getLayoutTemplate("close"):"",i=this.showPreview?this._getLayoutTemplate("preview").setTokens({class:this.previewClass,dropClass:e}):"",a=this.isDisabled?this.captionClass+" file-caption-disabled":this.captionClass,r=this.captionTemplate.setTokens({class:a+" kv-fileinput-caption"});return this.mainTemplate.setTokens({class:this.mainClass+(!this.showBrowse&&this.showCaption?" no-browse":""),preview:i,close:t,caption:r,upload:this._renderButton("upload"),remove:this._renderButton("remove"),cancel:this._renderButton("cancel"),browse:this._renderButton("browse")})},_renderButton:function(e){var i=this._getLayoutTemplate("btnDefault"),a=this[e+"Class"],r=this[e+"Title"],n=this[e+"Icon"],s=this[e+"Label"],o=this.isDisabled?" disabled":"",l="button";switch(e){case"remove":if(!this.showRemove)return"";break;case"cancel":if(!this.showCancel)return"";a+=" kv-hidden";break;case"upload":if(!this.showUpload)return"";this.isAjaxUpload&&!this.isDisabled?i=this._getLayoutTemplate("btnLink").replace("{href}",this.uploadUrl):l="submit";break;case"browse":if(!this.showBrowse)return"";i=this._getLayoutTemplate("btnBrowse");break;default:return""}return a+="browse"===e?" btn-file":" fileinput-"+e+" fileinput-"+e+"-button",t.isEmpty(s)||(s=' <span class="'+this.buttonLabelClass+'">'+s+"</span>"),i.setTokens({type:l,css:a,title:r,status:o,icon:n,label:s})},_renderThumbProgress:function(){return'<div class="file-thumb-progress kv-hidden">'+this.progressTemplate.setTokens({percent:"0",status:this.msgUploadBegin})+"</div>"},_renderFileFooter:function(e,i,a,r){var n,s=this.fileActionSettings,o=s.showRemove,l=s.showDrag,d=s.showUpload,c=s.showZoom,h=this._getLayoutTemplate("footer"),p=this._getLayoutTemplate("indicator"),u=r?s.indicatorError:s.indicatorNew,f=r?s.indicatorErrorTitle:s.indicatorNewTitle,m=p.setTokens({indicator:u,indicatorTitle:f});return i=this._getSize(i),n=this.isAjaxUpload?h.setTokens({actions:this._renderFileActions(d,!1,o,c,l,!1,!1,!1),caption:e,size:i,width:a,progress:this._renderThumbProgress(),indicator:m}):h.setTokens({actions:this._renderFileActions(!1,!1,!1,c,l,!1,!1,!1),caption:e,size:i,width:a,progress:"",indicator:m}),n=t.replaceTags(n,this.previewThumbTags)},_renderFileActions:function(e,t,i,a,r,n,s,o,l,d,c){if(!(e||t||i||a||r))return"";var h,p=!1===s?"":' data-url="'+s+'"',u=!1===o?"":' data-key="'+o+'"',f="",m="",g="",v="",w="",_=this._getLayoutTemplate("actions"),b=this.fileActionSettings,C=this.otherActionButtons.setTokens({dataKey:u,key:o}),y=n?b.removeClass+" disabled":b.removeClass;return i&&(f=this._getLayoutTemplate("actionDelete").setTokens({removeClass:y,removeIcon:b.removeIcon,removeTitle:b.removeTitle,dataUrl:p,dataKey:u,key:o})),e&&(m=this._getLayoutTemplate("actionUpload").setTokens({uploadClass:b.uploadClass,uploadIcon:b.uploadIcon,uploadTitle:b.uploadTitle})),t&&(g=(g=this._getLayoutTemplate("actionDownload").setTokens({downloadClass:b.downloadClass,downloadIcon:b.downloadIcon,downloadTitle:b.downloadTitle,downloadUrl:d||this.initialPreviewDownloadUrl})).setTokens({filename:c,key:o})),a&&(v=this._getLayoutTemplate("actionZoom").setTokens({zoomClass:b.zoomClass,zoomIcon:b.zoomIcon,zoomTitle:b.zoomTitle})),r&&l&&(h="drag-handle-init "+b.dragClass,w=this._getLayoutTemplate("actionDrag").setTokens({dragClass:h,dragTitle:b.dragTitle,dragIcon:b.dragIcon})),_.setTokens({delete:f,upload:m,download:g,zoom:v,drag:w,other:C})},_browse:function(e){e&&e.isDefaultPrevented()||!this._raise("filebrowse")||(this.isError&&!this.isAjaxUpload&&this.clear(),this.$captionContainer.focus())},_filterDuplicate:function(e,t,i){var a=this._getFileId(e);a&&i&&i.indexOf(a)>-1||(i||(i=[]),t.push(e),i.push(a))},_change:function(i){var a=this;if(!a.changeTriggered){var r,n,s,o,l,d,c,h,p,u,f,m=a.$element,g=arguments.length>1,v=a.isAjaxUpload,w=[],_=g?arguments[1]:m.get(0).files,b=!v&&t.isEmpty(m.attr("multiple"))?1:a.maxFileCount,C=a.filestack.length,y=t.isEmpty(m.attr("multiple"))&&C>0,x=a._getFileIds();if(a.reader=null,a._resetUpload(),a._hideFileIcon(),a.dropZoneEnabled&&a.$container.find(".file-drop-zone ."+a.dropZoneTitleClass).remove(),v?e.each(_,function(e,t){a._filterDuplicate(t,w,x)}):(_=i.target&&void 0===i.target.files?i.target.value?[{name:i.target.value.replace(/^.+\\/,"")}]:[]:i.target.files||{},w=_),t.isEmpty(w)||0===w.length)return v||a.clear(),void a._raise("fileselectnone");if(a._resetErrors(),n=w.length,r=a._getFileCount(v?a.getFileStack().length+n:n),b>0&&r>b){if(!a.autoReplace||n>b)return s=a.autoReplace&&n>b?n:r,o=b,f=a.msgFilesTooMany.replace("{m}",o).replace("{n}",s),a.isError=(l=f,d=null,c=null,h=null,p=e.extend(!0,{},a._getOutData({},{},_),{id:c,index:h}),u={id:c,index:h,file:d,files:_},v?a._showUploadError(l,p):a._showError(l,u)),a.$captionContainer.removeClass("icon-visible"),a._setCaption("",!0),void a.$container.removeClass("file-input-new file-input-ajax-new");r>b&&a._resetPreviewThumbs(v)}else!v||y?(a._resetPreviewThumbs(!1),y&&a.clearStack()):!v||0!==C||a.previewCache.count()&&!a.overwriteInitial||a._resetPreviewThumbs(!0);a.isPreviewable?a.readFiles(w):a._updateFileDetails(1)}},_abort:function(t){var i;return this.ajaxAborted&&"object"==typeof this.ajaxAborted&&void 0!==this.ajaxAborted.message?((i=e.extend(!0,{},this._getOutData(),t)).abortData=this.ajaxAborted.data||{},i.abortMessage=this.ajaxAborted.message,this._setProgress(101,this.$progress,this.msgCancelled),this._showUploadError(this.ajaxAborted.message,i,"filecustomerror"),this.cancel(),!0):!!this.ajaxAborted},_resetFileStack:function(){var i=this,a=0,r=[],n=[],s=[];i._getThumbs().each(function(){var o=e(this),l=o.attr("data-fileindex"),d=i.filestack[l],c=o.attr("id");"-1"!==l&&-1!==l&&(void 0!==d?(r[a]=d,n[a]=i._getFileName(d),s[a]=i._getFileId(d),o.attr({id:i.previewInitId+"-"+a,"data-fileindex":a}),a++):o.attr({id:"uploaded-"+t.uniqId(),"data-fileindex":"-1"}),i.$preview.find("#zoom-"+c).attr({id:"zoom-"+o.attr("id"),"data-fileindex":o.attr("data-fileindex")}))}),i.filestack=r,i.filenames=n,i.fileids=s},_isFileSelectionValid:function(e){return e=e||0,this.required&&!this.getFilesCount()?(this.$errorContainer.html(""),this._showUploadError(this.msgFileRequired),!1):!(this.minFileCount>0&&this._getFileCount(e)<this.minFileCount)||(this._noFilesError({}),!1)},clearStack:function(){return this.filestack=[],this.filenames=[],this.fileids=[],this.$element},updateStack:function(e,t){return this.filestack[e]=t,this.filenames[e]=this._getFileName(t),this.fileids[e]=t&&this._getFileId(t)||null,this.$element},addToStack:function(e){return this.filestack.push(e),this.filenames.push(this._getFileName(e)),this.fileids.push(this._getFileId(e)),this.$element},getFileStack:function(e){return this.filestack.filter(function(t){return e?void 0!==t:null!=t})},getFilesCount:function(){var e=this.isAjaxUpload?this.getFileStack().length:this._inputFileCount();return this._getFileCount(e)},readFiles:function(i){this.reader=new FileReader;var a,r=this,n=r.$element,s=r.$preview,o=r.reader,l=r.$previewContainer,d=r.$previewStatus,c=r.msgLoading,h=r.msgProgress,p=r.previewInitId,u=i.length,f=r.fileTypeSettings,m=r.filestack.length,g=r.allowedFileTypes,v=g?g.length:0,w=r.allowedFileExtensions,_=t.isEmpty(w)?"":w.join(", "),b=r.maxFilePreviewSize&&parseFloat(r.maxFilePreviewSize),C=s.length&&(!b||isNaN(b)),y=function(t,n,s,o){var l,d=e.extend(!0,{},r._getOutData({},{},i),{id:s,index:o}),c={id:s,index:o,file:n,files:i};r._previewDefault(n,s,!0),r.isAjaxUpload?(r.addToStack(void 0),setTimeout(function(){a(o+1)},100)):u=0,r._initFileActions(),(l=e("#"+s)).find(".kv-file-upload").hide(),r.removeFromPreviewOnError&&l.remove(),r.isError=r.isAjaxUpload?r._showUploadError(t,d):r._showError(t,c),r._updateFileDetails(u)};r.loadedImages=[],r.totalImagesCount=0,e.each(i,function(e,t){var i=r.fileTypeSettings.image;i&&i(t.type)&&r.totalImagesCount++}),(a=function(x){if(t.isEmpty(n.attr("multiple"))&&(u=1),x>=u)return r.isAjaxUpload&&r.filestack.length>0?r._raise("filebatchselected",[r.getFileStack()]):r._raise("filebatchselected",[i]),l.removeClass("file-thumb-loading"),void d.html("");var T,E,S,k,F,P,I,A,D,z,$,j,U=p+"-"+(m+x),B=i[x],R=f.text,O=f.image,L=f.html,M=B&&B.name?r.slug(B.name):"",Z=(B&&B.size||0)/1e3,N="",H=B?t.objUrl.createObjectURL(B):null,W=0,q="",V=0,K=function(){var e=h.setTokens({index:x+1,files:u,percent:50,name:M});setTimeout(function(){d.html(e),r._updateFileDetails(u),a(x+1)},100),r._raise("fileloaded",[B,U,x,o])};if(B){if(v>0)for(E=0;E<v;E++)P=g[E],I=r.msgFileTypes[P]||P,q+=0===E?I:", "+I;if(!1!==M){if(0===M.length)return S=r.msgInvalidFileName.replace("{name}",t.htmlEncode(B.name,"[unknown]")),void y(S,B,U,x);if(t.isEmpty(w)||(N=new RegExp("\\.("+w.join("|")+")$","i")),T=Z.toFixed(2),r.maxFileSize>0&&Z>r.maxFileSize)return S=r.msgSizeTooLarge.setTokens({name:M,size:T,maxSize:r.maxFileSize}),void y(S,B,U,x);if(null!==r.minFileSize&&Z<=t.getNum(r.minFileSize))return S=r.msgSizeTooSmall.setTokens({name:M,size:T,minSize:r.minFileSize}),void y(S,B,U,x);if(!t.isEmpty(g)&&t.isArray(g)){for(E=0;E<g.length;E+=1)k=g[E],W+=(A=f[k])&&"function"==typeof A&&A(B.type,B.name)?1:0;if(0===W)return S=r.msgInvalidFileType.setTokens({name:M,types:q}),void y(S,B,U,x)}if(0===W&&!t.isEmpty(w)&&t.isArray(w)&&!t.isEmpty(N)&&(F=t.compare(M,N),0===(W+=t.isEmpty(F)?0:F.length)))return S=r.msgInvalidFileExtension.setTokens({name:M,extensions:_}),void y(S,B,U,x);if(!r.showPreview)return r.isAjaxUpload&&r.addToStack(B),setTimeout(function(){a(x+1),r._updateFileDetails(u)},100),void r._raise("fileloaded",[B,U,x,o]);if(!C&&Z>b)return r.addToStack(B),l.addClass("file-thumb-loading"),r._previewDefault(B,U),r._initFileActions(),r._updateFileDetails(u),void a(x+1);s.length&&void 0!==FileReader?(D=R(B.type,M),z=L(B.type,M),$=O(B.type,M),d.html(c.replace("{index}",x+1).replace("{files}",u)),l.addClass("file-thumb-loading"),o.onerror=function(e){r._errorHandler(e,M)},o.onload=function(i){var a,n,s,l,d,c,h,p,u=[];if(n={name:M,type:B.type},e.each(f,function(e,t){"object"!==e&&"other"!==e&&t(B.type,M)&&V++}),0===V){for(s=new Uint8Array(i.target.result),E=0;E<s.length;E++)l=s[E].toString(16),u.push(l);if(a=u.join("").toLowerCase().substring(0,8),c=t.getMimeType(a,"",""),t.isEmpty(c)&&(d=t.arrayBuffer2String(o.result),c=t.isSvg(d)?"image/svg+xml":t.getMimeType(a,d,B.type)),n={name:M,type:c},D=R(c,""),z=L(c,""),$=O(c,""),(j=D||z)||$)return h=j,(p=new FileReader).onerror=function(e){r._errorHandler(e,M)},p.onload=function(e){r._previewFile(x,B,e,U,H,n),r._initFileActions(),K()},void(h?p.readAsText(B,r.textEncoding):p.readAsDataURL(B))}r._previewFile(x,B,i,U,H,n),r._initFileActions(),K()},o.onprogress=function(e){if(e.lengthComputable){var t=e.loaded/e.total*100,i=Math.ceil(t);S=h.setTokens({index:x+1,files:u,percent:i,name:M}),setTimeout(function(){d.html(S)},100)}},D||z?o.readAsText(B,r.textEncoding):$?o.readAsDataURL(B):o.readAsArrayBuffer(B)):(r._previewDefault(B,U),setTimeout(function(){a(x+1),r._updateFileDetails(u)},100),r._raise("fileloaded",[B,U,x,o])),r.addToStack(B)}else a(x+1)}})(0),r._updateFileDetails(u,!1)},lock:function(){return this._resetErrors(),this.disable(),this.showRemove&&this.$container.find(".fileinput-remove").hide(),this.showCancel&&this.$container.find(".fileinput-cancel").show(),this._raise("filelock",[this.filestack,this._getExtraData()]),this.$element},unlock:function(e){return void 0===e&&(e=!0),this.enable(),this.showCancel&&this.$container.find(".fileinput-cancel").hide(),this.showRemove&&this.$container.find(".fileinput-remove").show(),e&&this._resetFileStack(),this._raise("fileunlock",[this.filestack,this._getExtraData()]),this.$element},cancel:function(){var t,i=this,a=i.ajaxRequests,r=a.length;if(r>0)for(t=0;t<r;t+=1)i.cancelling=!0,a[t].abort();return i._setProgressCancelled(),i._getThumbs().each(function(){var t=e(this),a=t.attr("data-fileindex");t.removeClass("file-uploading"),void 0!==i.filestack[a]&&(t.find(".kv-file-upload").removeClass("disabled").removeAttr("disabled"),t.find(".kv-file-remove").removeClass("disabled").removeAttr("disabled")),i.unlock()}),i.$element},clear:function(){var i,a=this;if(a._raise("fileclear"))return a.$btnUpload.removeAttr("disabled"),a._getThumbs().find("video,audio,img").each(function(){t.cleanMemory(e(this))}),a._clearFileInput(),a._resetUpload(),a.clearStack(),a._resetErrors(!0),a._hasInitialPreview()?(a._showFileIcon(),a._resetPreview(),a._initPreviewActions(),a.$container.removeClass("file-input-new")):(a._getThumbs().each(function(){a._clearObjects(e(this))}),a.isAjaxUpload&&(a.previewCache.data={}),a.$preview.html(""),i=!a.overwriteInitial&&a.initialCaption.length>0?a.initialCaption:"",a.$caption.attr("title","").val(i),t.addCss(a.$container,"file-input-new"),a._validateDefaultPreview()),0===a.$container.find(t.FRAMES).length&&(a._initCaption()||a.$captionContainer.removeClass("icon-visible")),a._hideFileIcon(),a._raise("filecleared"),a.$captionContainer.focus(),a._setFileDropZoneTitle(),a.$element},reset:function(){if(this._raise("filereset"))return this._resetPreview(),this.$container.find(".fileinput-filename").text(""),t.addCss(this.$container,"file-input-new"),(this.getFrames().length||this.dropZoneEnabled)&&this.$container.removeClass("file-input-new"),this.clearStack(),this.formdata={},this._setFileDropZoneTitle(),this.$element},disable:function(){return this.isDisabled=!0,this._raise("filedisabled"),this.$element.attr("disabled","disabled"),this.$container.find(".kv-fileinput-caption").addClass("file-caption-disabled"),this.$container.find(".fileinput-remove, .fileinput-upload, .file-preview-frame button").attr("disabled",!0),t.addCss(this.$container.find(".btn-file"),"disabled"),this._initDragDrop(),this.$element},enable:function(){return this.isDisabled=!1,this._raise("fileenabled"),this.$element.removeAttr("disabled"),this.$container.find(".kv-fileinput-caption").removeClass("file-caption-disabled"),this.$container.find(".fileinput-remove, .fileinput-upload, .file-preview-frame button").removeAttr("disabled"),this.$container.find(".btn-file").removeClass("disabled"),this._initDragDrop(),this.$element},upload:function(){var i,a,r,n=this.getFileStack().length,s=!e.isEmptyObject(this._getExtraData());if(this.isAjaxUpload&&!this.isDisabled&&this._isFileSelectionValid(n))if(this._resetUpload(),0!==n||s)if(this.$progress.show(),this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.lock(),this._setProgress(2),0===n&&s)this._uploadExtraOnly();else{if(r=this.filestack.length,this.hasInitData=!1,!this.uploadAsync)return this._uploadBatch(),this.$element;for(a=this._getOutData(),this._raise("filebatchpreupload",[a]),this.fileBatchCompleted=!1,this.uploadCache={content:[],config:[],tags:[],append:!0},this.uploadAsyncCount=this.getFileStack().length,i=0;i<r;i++)this.uploadCache.content[i]=null,this.uploadCache.config[i]=null,this.uploadCache.tags[i]=null;for(this.$preview.find(".file-preview-initial").removeClass(t.SORT_CSS),this._initSortable(),this.cacheInitialPreview=this.getPreview(),i=0;i<r;i++)this.filestack[i]&&this._uploadSingle(i,!0)}else this._showUploadError(this.msgUploadEmpty)},destroy:function(){var t=this.$form,i=this.$container,a=this.$element,r=this.namespace;return e(document).off(r),e(window).off(r),t&&t.length&&t.off(r),this.isAjaxUpload&&this._clearFileInput(),this._cleanup(),this._initPreviewCache(),a.insertBefore(i).off(r).removeData(),i.off().remove(),a},refresh:function(i){var a=this.$element;return i="object"!=typeof i||t.isEmpty(i)?this.options:e.extend(!0,{},this.options,i),this._init(i,!0),this._listen(),a},zoom:function(e){var i=this._getFrame(e),a=this.$modal;i&&(t.initModal(a),a.html(this._getModalContent()),this._setZoomContent(i),a.modal("show"),this._initZoomButtons())},getExif:function(e){var t=this._getFrame(e);return t&&t.data("exif")||null},getFrames:function(i){var a;return i=i||"",a=this.$preview.find(t.FRAMES+i),this.reversePreviewOrder&&(a=e(a.get().reverse())),a},getPreview:function(){return{content:this.initialPreview,config:this.initialPreviewConfig,tags:this.initialPreviewThumbTags}}},e.fn.fileinput=function(a){if(t.hasFileAPISupport()||t.isIE(9)){var r=Array.apply(null,arguments),n=[];switch(r.shift(),this.each(function(){var s,o=e(this),l=o.data("fileinput"),d="object"==typeof a&&a,c=d.theme||o.data("theme"),h={},p={},u=d.language||o.data("language")||e.fn.fileinput.defaults.language||"en";l||(c&&(p=e.fn.fileinputThemes[c]||{}),"en"===u||t.isEmpty(e.fn.fileinputLocales[u])||(h=e.fn.fileinputLocales[u]||{}),s=e.extend(!0,{},e.fn.fileinput.defaults,p,e.fn.fileinputLocales.en,h,d,o.data()),l=new i(this,s),o.data("fileinput",l)),"string"==typeof a&&n.push(l[a].apply(l,r))}),n.length){case 0:return this;case 1:return n[0];default:return n}}},e.fn.fileinput.defaults={language:"en",showCaption:!0,showBrowse:!0,showPreview:!0,showRemove:!0,showUpload:!0,showCancel:!0,showClose:!0,showUploadedThumbs:!0,browseOnZoneClick:!1,autoReplace:!1,autoOrientImage:!1,required:!1,rtl:!1,hideThumbnailContent:!1,generateFileId:null,previewClass:"",captionClass:"",frameClass:"krajee-default",mainClass:"file-caption-main",mainTemplate:null,purifyHtml:!0,fileSizeGetter:null,initialCaption:"",initialPreview:[],initialPreviewDelimiter:"*$$*",initialPreviewAsData:!1,initialPreviewFileType:"image",initialPreviewConfig:[],initialPreviewThumbTags:[],previewThumbTags:{},initialPreviewShowDelete:!0,initialPreviewDownloadUrl:"",removeFromPreviewOnError:!1,deleteUrl:"",deleteExtraData:{},overwriteInitial:!0,previewZoomButtonIcons:{prev:'<i class="glyphicon glyphicon-triangle-left"></i>',next:'<i class="glyphicon glyphicon-triangle-right"></i>',toggleheader:'<i class="glyphicon glyphicon-resize-vertical"></i>',fullscreen:'<i class="glyphicon glyphicon-fullscreen"></i>',borderless:'<i class="glyphicon glyphicon-resize-full"></i>',close:'<i class="glyphicon glyphicon-remove"></i>'},previewZoomButtonClasses:{prev:"btn btn-navigate",next:"btn btn-navigate",toggleheader:"btn btn-sm btn-kv btn-default btn-outline-secondary",fullscreen:"btn btn-sm btn-kv btn-default btn-outline-secondary",borderless:"btn btn-sm btn-kv btn-default btn-outline-secondary",close:"btn btn-sm btn-kv btn-default btn-outline-secondary"},previewTemplates:{},previewContentTemplates:{},preferIconicPreview:!1,preferIconicZoomPreview:!1,allowedPreviewTypes:void 0,allowedPreviewMimeTypes:null,allowedFileTypes:null,allowedFileExtensions:null,defaultPreviewContent:null,customLayoutTags:{},customPreviewTags:{},previewFileIcon:'<i class="glyphicon glyphicon-file"></i>',previewFileIconClass:"file-other-icon",previewFileIconSettings:{},previewFileExtSettings:{},buttonLabelClass:"hidden-xs",browseIcon:'<i class="glyphicon glyphicon-folder-open"></i>&nbsp;',browseClass:"btn btn-primary",removeIcon:'<i class="glyphicon glyphicon-trash"></i>',removeClass:"btn btn-default btn-secondary",cancelIcon:'<i class="glyphicon glyphicon-ban-circle"></i>',cancelClass:"btn btn-default btn-secondary",uploadIcon:'<i class="glyphicon glyphicon-upload"></i>',uploadClass:"btn btn-default btn-secondary",uploadUrl:null,uploadUrlThumb:null,uploadAsync:!0,uploadExtraData:{},zoomModalHeight:480,minImageWidth:null,minImageHeight:null,maxImageWidth:null,maxImageHeight:null,resizeImage:!1,resizePreference:"width",resizeQuality:.92,resizeDefaultImageType:"image/jpeg",resizeIfSizeMoreThan:0,minFileSize:0,maxFileSize:0,maxFilePreviewSize:25600,minFileCount:0,maxFileCount:0,validateInitialCount:!1,msgValidationErrorClass:"text-danger",msgValidationErrorIcon:'<i class="glyphicon glyphicon-exclamation-sign"></i> ',msgErrorClass:"file-error-message",progressThumbClass:"progress-bar bg-success progress-bar-success progress-bar-striped active",progressClass:"progress-bar bg-success progress-bar-success progress-bar-striped active",progressCompleteClass:"progress-bar bg-success progress-bar-success",progressErrorClass:"progress-bar bg-danger progress-bar-danger",progressUploadThreshold:99,previewFileType:"image",elCaptionContainer:null,elCaptionText:null,elPreviewContainer:null,elPreviewImage:null,elPreviewStatus:null,elErrorContainer:null,errorCloseButton:t.closeButton("kv-error-close"),slugCallback:null,dropZoneEnabled:!0,dropZoneTitleClass:"file-drop-zone-title",fileActionSettings:{},otherActionButtons:"",textEncoding:"UTF-8",ajaxSettings:{},ajaxDeleteSettings:{},showAjaxErrorDetails:!0,mergeAjaxCallbacks:!1,mergeAjaxDeleteCallbacks:!1,retryErrorUploads:!0,reversePreviewOrder:!1},e.fn.fileinputLocales.en={fileSingle:"file",filePlural:"files",browseLabel:"Browse &hellip;",removeLabel:"Remove",removeTitle:"Clear selected files",cancelLabel:"Cancel",cancelTitle:"Abort ongoing upload",uploadLabel:"Upload",uploadTitle:"Upload selected files",msgNo:"No",msgNoFilesSelected:"No files selected",msgCancelled:"Cancelled",msgPlaceholder:"Select {files}...",msgZoomModalHeading:"Detailed Preview",msgFileRequired:"You must select a file to upload.",msgSizeTooSmall:'File "{name}" (<b>{size} KB</b>) is too small and must be larger than <b>{minSize} KB</b>.',msgSizeTooLarge:'File "{name}" (<b>{size} KB</b>) exceeds maximum allowed upload size of <b>{maxSize} KB</b>.',msgFilesTooLess:"You must select at least <b>{n}</b> {files} to upload.",msgFilesTooMany:"Number of files selected for upload <b>({n})</b> exceeds maximum allowed limit of <b>{m}</b>.",msgFileNotFound:'File "{name}" not found!',msgFileSecured:'Security restrictions prevent reading the file "{name}".',msgFileNotReadable:'File "{name}" is not readable.',msgFilePreviewAborted:'File preview aborted for "{name}".',msgFilePreviewError:'An error occurred while reading the file "{name}".',msgInvalidFileName:'Invalid or unsupported characters in file name "{name}".',msgInvalidFileType:'Invalid type for file "{name}". Only "{types}" files are supported.',msgInvalidFileExtension:'Invalid extension for file "{name}". Only "{extensions}" files are supported.',msgFileTypes:{image:"image",html:"HTML",text:"text",video:"video",audio:"audio",flash:"flash",pdf:"PDF",object:"object"},msgUploadAborted:"The file upload was aborted",msgUploadThreshold:"Processing...",msgUploadBegin:"Initializing...",msgUploadEnd:"Done",msgUploadEmpty:"No valid data available for upload.",msgUploadError:"Error",msgValidationError:"Validation Error",msgLoading:"Loading file {index} of {files} &hellip;",msgProgress:"Loading file {index} of {files} - {name} - {percent}% completed.",msgSelected:"{n} {files} selected",msgFoldersNotAllowed:"Drag & drop files only! {n} folder(s) dropped were skipped.",msgImageWidthSmall:'Width of image file "{name}" must be at least {size} px.',msgImageHeightSmall:'Height of image file "{name}" must be at least {size} px.',msgImageWidthLarge:'Width of image file "{name}" cannot exceed {size} px.',msgImageHeightLarge:'Height of image file "{name}" cannot exceed {size} px.',msgImageResizeError:"Could not get the image dimensions to resize.",msgImageResizeException:"Error while resizing the image.<pre>{errors}</pre>",msgAjaxError:"Something went wrong with the {operation} operation. Please try again later!",msgAjaxProgressError:"{operation} failed",ajaxOperations:{deleteThumb:"file delete",uploadThumb:"file upload",uploadBatch:"batch file upload",uploadExtra:"form data upload"},dropZoneTitle:"Drag & drop files here &hellip;",dropZoneClickTitle:"<br>(or click to select {files})",previewZoomButtonTitles:{prev:"View previous file",next:"View next file",toggleheader:"Toggle header",fullscreen:"Toggle full screen",borderless:"Toggle borderless mode",close:"Close detailed preview"},usePdfRenderer:function(){return!!navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/i)},pdfRendererUrl:"",pdfRendererTemplate:'<iframe class="kv-preview-data file-preview-pdf" src="{renderer}?file={data}" {style}></iframe>'},e.fn.fileinput.Constructor=i,e(document).ready(function(){var t=e("input.file[type=file]");t.length&&t.fileinput()})});
+
+/***/ }),
+
+/***/ 1279:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
+ * bootstrap-fileinput v4.5.1
+ * http://plugins.krajee.com/file-input
+ *
+ * Font Awesome icon theme configuration for bootstrap-fileinput. Requires font awesome assets to be loaded.
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md
+ */!function(a){"use strict";a.fn.fileinputThemes.fa={fileActionSettings:{removeIcon:'<i class="fa fa-trash"></i>',uploadIcon:'<i class="fa fa-upload"></i>',uploadRetryIcon:'<i class="fa fa-repeat"></i>',downloadIcon:'<i class="fa fa-download"></i>',zoomIcon:'<i class="fa fa-search-plus"></i>',dragIcon:'<i class="fa fa-arrows"></i>',indicatorNew:'<i class="fa fa-plus-circle text-warning"></i>',indicatorSuccess:'<i class="fa fa-check-circle text-success"></i>',indicatorError:'<i class="fa fa-exclamation-circle text-danger"></i>',indicatorLoading:'<i class="fa fa-hourglass text-muted"></i>'},layoutTemplates:{fileIcon:'<i class="fa fa-file kv-caption-icon"></i> '},previewZoomButtonIcons:{prev:'<i class="fa fa-caret-left fa-lg"></i>',next:'<i class="fa fa-caret-right fa-lg"></i>',toggleheader:'<i class="fa fa-fw fa-arrows-v"></i>',fullscreen:'<i class="fa fa-fw fa-arrows-alt"></i>',borderless:'<i class="fa fa-fw fa-external-link"></i>',close:'<i class="fa fa-fw fa-remove"></i>'},previewFileIcon:'<i class="fa fa-file"></i>',browseIcon:'<i class="fa fa-folder-open"></i>',removeIcon:'<i class="fa fa-trash"></i>',cancelIcon:'<i class="fa fa-ban"></i>',uploadIcon:'<i class="fa fa-upload"></i>',msgValidationErrorIcon:'<i class="fa fa-exclamation-circle"></i> '}}(__webpack_provided_window_dot_jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
+
+/***/ }),
+
+/***/ 1280:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -408,338 +888,774 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12" },
+        { staticClass: "col-md-12" },
         [
           _c(
             "card",
-            { attrs: { title: "<i class='ti-pie-chart'></i> Circle Slider" } },
+            {
+              attrs: {
+                title: "<i class='fa fa-fw ti-move'></i> General Elements"
+              }
+            },
             [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Default")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.sliderValue,
-                        callback: function($$v) {
-                          _vm.sliderValue = $$v
+              _c(
+                "form",
+                { staticClass: "form-horizontal", attrs: { role: "form" } },
+                [
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "input-text" }
                         },
-                        expression: "sliderValue"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.sliderValue))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v(" Custom Dimenssion")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        min: 0,
-                        max: 10000,
-                        "step-size": 100,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val2,
-                        callback: function($$v) {
-                          _vm.val2 = $$v
-                        },
-                        expression: "val2"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val2))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", { staticClass: "d-flex" }, [
-                      _vm._v("Custom side")
+                        [_vm._v("Input text")]
+                      )
                     ]),
                     _vm._v(" "),
-                    _c("circle-slider", {
-                      staticClass: "d-inline-block",
-                      attrs: {
-                        side: 100,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val3,
-                        callback: function($$v) {
-                          _vm.val3 = $$v
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "input-text",
+                          placeholder: "Input text"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "inputPassword" }
                         },
-                        expression: "val3"
-                      }
-                    }),
+                        [_vm._v("Password")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "password",
+                          id: "inputPassword",
+                          placeholder: "Password"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            " control-label float-md-right txt_media1",
+                          attrs: { for: "input-text-disabled" }
+                        },
+                        [_vm._v("Disabled")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "input-text-disabled",
+                          placeholder: "Input text",
+                          disabled: ""
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "color" }
+                        },
+                        [_vm._v("Color")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9 form_control" }, [
+                      _c("input", {
+                        staticClass: "form-control form_control",
+                        attrs: { type: "color", id: "color" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "url" }
+                        },
+                        [_vm._v("Url")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "url",
+                          id: "url",
+                          placeholder: "URL",
+                          value: "http://getbootstrap.com"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "range" }
+                        },
+                        [_vm._v("Range")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control ",
+                        attrs: { type: "range", id: "range", value: "50" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right m-t-ng-8 txt_media1"
+                        },
+                        [_vm._v("Radio Buttons")]
+                      )
+                    ]),
                     _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "d-inline-block " },
+                      { staticClass: "col-md-9" },
                       [
-                        _c("circle-slider", {
-                          staticClass: "custom_small",
-                          attrs: {
-                            side: 50,
-                            "progress-color": "#66cc99",
-                            "knob-color": "#66cc99"
-                          },
-                          model: {
-                            value: _vm.val3,
-                            callback: function($$v) {
-                              _vm.val3 = $$v
-                            },
-                            expression: "val3"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("br")
+                        _c("b-form-radio-group", {
+                          staticClass: "inline_radio",
+                          attrs: { options: _vm.options, stacked: "" }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right m-t-ng-8 txt_media1"
+                        },
+                        [_vm._v("Checkbox")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-checkbox-group", {
+                          attrs: { stacked: "", options: _vm.stacked_check }
+                        })
                       ],
                       1
                     ),
                     _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val3))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center exact-size"
-                  },
-                  [
-                    _c("label", [_vm._v("Exact sizes")]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 8,
-                        "progress-width": 12,
-                        "knob-radius": 10,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 10,
-                        "progress-width": 5,
-                        "knob-radius": 10,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 12,
-                        "progress-width": 3,
-                        "knob-radius": 4,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val4))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center colors"
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Colors\n                        "
-                    ),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#edeff0",
-                        "progress-color": "#eee",
-                        "knob-color": "#6699cc"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#ff6666",
-                        "progress-color": "#6699cc",
-                        "knob-color": "#66ccff"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#cecece",
-                        "progress-color": "#66cc99",
-                        "knob-color": "#f0ad4e"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val6))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Relative sizes")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width-rel": 30,
-                        "progress-width-rel": 15,
-                        "knob-radius-rel": 8,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val5,
-                        callback: function($$v) {
-                          _vm.val5 = $$v
-                        },
-                        expression: "val5"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val5))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Two-way binding")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      on: {
-                        touchmove: function($event) {
-                          return _vm.$refs.input.blur()
-                        }
-                      },
-                      model: {
-                        value: _vm.val7,
-                        callback: function($$v) {
-                          _vm.val7 = $$v
-                        },
-                        expression: "val7"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
+                    _c("div")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
                         {
-                          name: "model",
-                          rawName: "v-model.number",
-                          value: _vm.val7,
-                          expression: "val7",
-                          modifiers: { number: true }
-                        }
-                      ],
-                      ref: "input",
-                      staticClass: "form-control",
-                      attrs: { type: "number" },
-                      domProps: { value: _vm.val7 },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.val7 = _vm._n($event.target.value)
+                          staticClass: "control-label float-md-right txt_media1"
                         },
-                        blur: function($event) {
-                          return _vm.$forceUpdate()
-                        }
-                      }
-                    })
-                  ],
-                  1
-                )
-              ])
+                        [
+                          _vm._v(
+                            "\n                                Inline Radio\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-radio-group", {
+                          staticClass: "inlineRadio",
+                          attrs: { options: _vm.radios }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Inline Checkbox\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-checkbox-group", {
+                          staticClass: "inline_check",
+                          attrs: { options: _vm.check }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group has-success" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "form-control-label float-md-right text-success txt_media1",
+                          attrs: { for: "input-text-has-success" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Success\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control brdr_success",
+                        attrs: { type: "text", id: "input-text-has-success" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group has-warning" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right text-warning txt_media1",
+                          attrs: { for: "input-text-has-warning" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Warning\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control brdr_warn",
+                        attrs: { type: "text", id: "input-text-has-warning" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group has-error" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label text-danger float-md-right txt_media1",
+                          attrs: { for: "input-text-has-error" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Error\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control brdr_danger",
+                        attrs: { type: "text", id: "input-text-has-error" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [_vm._v("Input Size")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control input-sm ipt_size",
+                        attrs: { type: "text", placeholder: "input-sm" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control ipt_size1 input-md",
+                        attrs: { type: "text", placeholder: "input-md" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control input-lg ipt_size2",
+                        attrs: { type: "text", placeholder: "input-lg" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Group\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "span",
+                            {
+                              staticClass: "input-group-text bg-white",
+                              attrs: { id: "basic-addon1" }
+                            },
+                            [_vm._v("@")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            placeholder: "Username",
+                            "aria-label": "Username",
+                            "aria-describedby": "basic-addon1"
+                          }
+                        })
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text", placeholder: "Currency" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group-append" }, [
+                          _c(
+                            "span",
+                            { staticClass: "input-group-text bg-white" },
+                            [_vm._v(".00")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: " control-label float-md-right txt_media"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "span",
+                            { staticClass: "input-group-text bg-white" },
+                            [_vm._v("$")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text", placeholder: "Currency" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group-append" }, [
+                          _c(
+                            "span",
+                            { staticClass: "input-group-text bg-white" },
+                            [_vm._v(".00")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-6 m-b-10" }, [
+                          _c("div", { staticClass: "input-group" }, [
+                            _c("div", { staticClass: "input-group-prepend" }, [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-text bg-white" },
+                                [_c("b-form-checkbox")],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-6 m-b-10" }, [
+                          _c("div", { staticClass: "input-group" }, [
+                            _c("div", { staticClass: "input-group-prepend" }, [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-text bg-white" },
+                                [
+                                  _c("b-form-radio", {
+                                    attrs: { checked: "false" }
+                                  })
+                                ],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" }
+                            })
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-prepend" },
+                                [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass: "btn btn-warning",
+                                      attrs: { type: "button" }
+                                    },
+                                    [_vm._v("Go!")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              }),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "input-group-append" }, [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass: "btn btn-warning",
+                                    attrs: { type: "button" }
+                                  },
+                                  [_vm._v("Go!")]
+                                )
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: " control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-prepend" },
+                                [
+                                  _c(
+                                    "b-dropdown",
+                                    {
+                                      attrs: { text: "Action", variant: "info" }
+                                    },
+                                    [
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("another action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("something else here")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-divider"),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _c("a", { attrs: { href: "#" } }, [
+                                          _vm._v("seperated link here")
+                                        ])
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "input-group-append" },
+                                [
+                                  _c(
+                                    "b-dropdown",
+                                    {
+                                      attrs: { text: "Action", variant: "info" }
+                                    },
+                                    [
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("another action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("something else here")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-divider"),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _c("a", { attrs: { href: "#" } }, [
+                                          _vm._v("seperated link here")
+                                        ])
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Text Area\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("textarea", {
+                        staticClass: "form-control resize_vertical",
+                        attrs: { rows: "4", placeholder: "Basic" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right txt_media"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("textarea", {
+                        staticClass: "form-control resize_vertical",
+                        attrs: { rows: "4", disabled: "" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("textarea", {
+                        staticClass: "form-control noresize",
+                        attrs: { rows: "4", placeholder: "No resize" }
+                      })
+                    ])
+                  ])
+                ]
+              )
             ]
           )
         ],
@@ -750,147 +1666,642 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12" },
+        { staticClass: "col-md-6" },
         [
           _c(
             "card",
             {
-              attrs: { title: "<i class='ti-bar-chart-alt'></i> Tiny Charts" }
+              attrs: {
+                title:
+                  "<i class='fa fa-fw ti-pencil'></i> Grid sizing of Form Elements"
+              }
             },
             [
-              _c("div", { staticClass: "row sparkline_charts" }, [
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny line chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chart linechart" }, [
-                      _vm._v("Loading...")
-                    ])
+              _c("form", [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-3" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-4" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-5" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny bar chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chart barchart" }, [
-                      _vm._v("Loading...")
-                    ])
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-3" }, [
+                    _c("textarea", {
+                      staticClass: "form-control resize_vertical"
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-4" }, [
+                    _c("textarea", {
+                      staticClass: "form-control resize_vertical"
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-5" }, [
+                    _c("textarea", {
+                      staticClass: "form-control resize_vertical"
+                    })
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny stacked bar chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart stackedbarchart" }, [
-                      _vm._v("Loading...")
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-3" }, [
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("Select")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-4" }, [
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("Select")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-5" }, [
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("Select")])
                     ])
                   ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title:
+                  "<i class='fa fa-fw ti-pencil'></i> Height Sizing of Input Groups"
+              }
+            },
+            [
+              _c("form", [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-lg" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-fw ti-user",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-lg" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [_c("b-form-checkbox")],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-lg" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("b-form-radio", {
+                                attrs: { checked: "false" }
+                              })
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny tristate chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart tristatechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group mb-2" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-fw ti-user",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group mb-2" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [_c("b-form-checkbox")],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group mb-2" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("b-form-radio", {
+                                attrs: { checked: "false" }
+                              })
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny bullet chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart bulletchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-sm" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-fw ti-user",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-sm" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [_c("b-form-checkbox")],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-sm" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("b-form-radio", {
+                                attrs: { checked: "false" }
+                              })
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row file-input-section" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title:
+                  "<i class='fa fa-fw ti-download'></i> Advanced File Input"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-20" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-20", type: "file" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny pie chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart piechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "alert alert-info small m-t-10 alert_pad mt-2 mt-sm-0"
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Display the widget as a single block button\n                        "
+                      )
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-21" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-21", type: "file", accept: "image/*" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny discrete chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart discretechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny boxplot chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart boxchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny composite line chart")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "compositeline" } },
-                      [
-                        _vm._v(
-                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
-                        )
-                      ]
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Show only image files for selection & preview. Control button labels, styles,\n                            and icons for the Pick Image, upload, and delete buttons.\n                        "
                     )
                   ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-22" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: {
+                      id: "input-22",
+                      type: "file",
+                      accept: "text/plain",
+                      "data-preview-file-type": "text",
+                      "data-preview-class": "bg-warning"
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny composite bar chart")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "compositebar" } },
-                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Preview section control. Change preview background and display only text files\n                            content within the preview window.\n                        "
                     )
                   ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8 " }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-23" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: {
+                      id: "input-23",
+                      type: "file",
+                      "data-show-preview": "false"
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny line chart with normal range")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "normalline" } },
-                      [
-                        _vm._v(
-                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
-                        )
-                      ]
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Advanced customization using templates. For example, Hide file preview\n                            thumbnails.\n                        "
                     )
                   ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-40" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-40", type: "file" }
+                  }),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-warning btn-modify",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Modify")]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny discrete chart with treshold")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "discrete2" } },
-                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Using plugin methods to alter input at runtime. For example, click the Modify\n                            button to disable the plugin and change plugin options.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-41" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-41", type: "file" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Allow only image and video file types to be uploaded. You can configure the\n                            condition for validating the file types using\n                            "
+                    ),
+                    _c("code", [_vm._v("fileTypeSettings")]),
+                    _vm._v(" .\n                        ")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-42" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-42", type: "file" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Allow only specific( jpg, gif, png, txt ) file extensions.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-43" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-43", type: "file" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "help-block",
+                    attrs: { idfirst: "errorBlock43" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Disable preview and customize your own error container and messages.\n                        "
                     )
                   ])
                 ])
@@ -909,25 +2320,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3e06e382", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-6360cc14", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 483:
+/***/ 441:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1749)
+  __webpack_require__(1272)
+  __webpack_require__(1275)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1751)
+var __vue_script__ = __webpack_require__(1277)
 /* template */
-var __vue_template__ = __webpack_require__(1752)
+var __vue_template__ = __webpack_require__(1280)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -944,7 +2356,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/circle_sliders.vue"
+Component.options.__file = "resources/components/pages/form-elements.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -953,9 +2365,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3e06e382", Component.options)
+    hotAPI.createRecord("data-v-6360cc14", Component.options)
   } else {
-    hotAPI.reload("data-v-3e06e382", Component.options)
+    hotAPI.reload("data-v-6360cc14", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -967,7 +2379,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 520:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11339,19 +12751,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 522:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(523)
+  __webpack_require__(528)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(525)
+var __vue_script__ = __webpack_require__(530)
 /* template */
-var __vue_template__ = __webpack_require__(526)
+var __vue_template__ = __webpack_require__(531)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11391,13 +12803,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 523:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(524);
+var content = __webpack_require__(529);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11418,7 +12830,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 524:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11433,7 +12845,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 525:
+/***/ 530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11478,7 +12890,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 526:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11540,3167 +12952,10 @@ if (false) {
 
 /***/ }),
 
-/***/ 562:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 693:
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports=function(modules){function __webpack_require__(moduleId){if(installedModules[moduleId])return installedModules[moduleId].exports;var module=installedModules[moduleId]={i:moduleId,l:!1,exports:{}};return modules[moduleId].call(module.exports,module,module.exports,__webpack_require__),module.l=!0,module.exports}var installedModules={};return __webpack_require__.m=modules,__webpack_require__.c=installedModules,__webpack_require__.i=function(value){return value},__webpack_require__.d=function(exports,name,getter){__webpack_require__.o(exports,name)||Object.defineProperty(exports,name,{configurable:!1,enumerable:!0,get:getter})},__webpack_require__.n=function(module){var getter=module&&module.__esModule?function(){return module.default}:function(){return module};return __webpack_require__.d(getter,"a",getter),getter},__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=1)}([function(module,exports,__webpack_require__){var Component=__webpack_require__(5)(__webpack_require__(4),__webpack_require__(6),null,null);module.exports=Component.exports},function(module,__webpack_exports__,__webpack_require__){"use strict";function install(Vue){Vue.component("circle-slider",__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a)}Object.defineProperty(__webpack_exports__,"__esModule",{value:!0}),__webpack_exports__.install=install;var __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__=__webpack_require__(0),__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default=__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__);__webpack_require__.d(__webpack_exports__,"CircleSlider",function(){return __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a});var plugin={version:"1.0.2",install:install};__webpack_exports__.default=plugin;var GlobalVue=null;"undefined"!=typeof window?GlobalVue=window.Vue:"undefined"!=typeof global&&(GlobalVue=global.Vue),GlobalVue&&GlobalVue.use(plugin)},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),CircleSliderState=function(){function CircleSliderState(steps,offset,initialValue){_classCallCheck(this,CircleSliderState),this.steps=steps,this.offset=offset,this.currentStepIndex=0;for(var stepIndex in this.steps)if(this.steps[stepIndex]===initialValue){this.currentStepIndex=stepIndex;break}this.firstStep=this.steps[0],this.length=this.steps.length-1,this.lastStep=this.steps[this.length]}return _createClass(CircleSliderState,[{key:"updateCurrentStepFromValue",value:function(value){for(var i=0;i<this.length;i++)if(value<=this.steps[i])return void(this.currentStepIndex=i);this.currentStepIndex=this.length}},{key:"updateCurrentStepFromAngle",value:function(angle){var stepIndex=Math.round((angle-this.offset)/this.angleUnit);this.currentStepIndex=Math.min(Math.max(stepIndex,0),this.length)}},{key:"angleUnit",get:function(){return(2*Math.PI-this.offset)/this.length}},{key:"angleValue",get:function(){return Math.min(this.offset+this.angleUnit*this.currentStepIndex,2*Math.PI-Number.EPSILON)-1e-5}},{key:"currentStep",get:function(){return this.steps[this.currentStepIndex]}}]),CircleSliderState}();__webpack_exports__.a=CircleSliderState},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),TouchPosition=function(){function TouchPosition(containerElement,sliderRadius,sliderTolerance){_classCallCheck(this,TouchPosition),this.containerElement=containerElement,this.sliderRadius=sliderRadius,this.sliderTolerance=sliderTolerance,this.setNewPosition({x:0,y:0})}return _createClass(TouchPosition,[{key:"setNewPosition",value:function(e){var dimensions=this.containerElement.getBoundingClientRect(),side=dimensions.width;this.center=side/2,this.relativeX=e.clientX-dimensions.left,this.relativeY=e.clientY-dimensions.top}},{key:"sliderAngle",get:function(){return(Math.atan2(this.relativeY-this.center,this.relativeX-this.center)+3*Math.PI/2)%(2*Math.PI)}},{key:"isTouchWithinSliderRange",get:function(){var touchOffset=Math.sqrt(Math.pow(Math.abs(this.relativeX-this.center),2)+Math.pow(Math.abs(this.relativeY-this.center),2));return Math.abs(touchOffset-this.sliderRadius)<=this.sliderTolerance}}]),TouchPosition}();__webpack_exports__.a=TouchPosition},function(module,__webpack_exports__,__webpack_require__){"use strict";Object.defineProperty(__webpack_exports__,"__esModule",{value:!0});var __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__=__webpack_require__(3),__WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__=__webpack_require__(2);__webpack_exports__.default={name:"CircleSlider",created:function(){var _this=this;this.stepsCount=1+(this.max-this.min)/this.stepSize,this.steps=Array.from({length:this.stepsCount},function(_,i){return _this.min+i*_this.stepSize}),this.circleSliderState=new __WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__.a(this.steps,this.startAngleOffset,this.value),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep;var maxCurveWidth=Math.max(this.cpMainCircleStrokeWidth,this.cpPathStrokeWidth);this.radius=this.side/2-Math.max(maxCurveWidth,2*this.cpKnobRadius)/2,this.updateFromPropValue(this.value)},mounted:function(){this.touchPosition=new __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__.a(this.$refs._svg,this.radius,this.radius/2)},props:{startAngleOffset:{type:Number,required:!1,default:function(){return 0}},value:{type:Number,required:!1,default:0},side:{type:Number,required:!1,default:100},stepSize:{type:Number,required:!1,default:1},min:{type:Number,required:!1,default:0},max:{type:Number,required:!1,default:100},circleColor:{type:String,required:!1,default:"#334860"},progressColor:{type:String,required:!1,default:"#00be7e"},knobColor:{type:String,required:!1,default:"#00be7e"},knobRadius:{type:Number,required:!1,default:null},knobRadiusRel:{type:Number,required:!1,default:7},circleWidth:{type:Number,required:!1,default:null},circleWidthRel:{type:Number,required:!1,default:20},progressWidth:{type:Number,required:!1,default:null},progressWidthRel:{type:Number,required:!1,default:10}},data:function(){return{steps:null,stepsCount:null,radius:0,angle:0,currentStepValue:0,mousePressed:!1,circleSliderState:null,mousemoveTicks:0}},computed:{cpCenter:function(){return this.side/2},cpAngle:function(){return this.angle+Math.PI/2},cpMainCircleStrokeWidth:function(){return this.circleWidth||this.side/2/this.circleWidthRel},cpPathDirection:function(){return this.cpAngle<1.5*Math.PI?0:1},cpPathX:function(){return this.cpCenter+this.radius*Math.cos(this.cpAngle)},cpPathY:function(){return this.cpCenter+this.radius*Math.sin(this.cpAngle)},cpPathStrokeWidth:function(){return this.progressWidth||this.side/2/this.progressWidthRel},cpKnobRadius:function(){return this.knobRadius||this.side/2/this.knobRadiusRel},cpPathD:function(){var parts=[];return parts.push("M"+this.cpCenter),parts.push(this.cpCenter+this.radius),parts.push("A"),parts.push(this.radius),parts.push(this.radius),parts.push(0),parts.push(this.cpPathDirection),parts.push(1),parts.push(this.cpPathX),parts.push(this.cpPathY),parts.join(" ")}},methods:{fitToStep:function(val){return Math.round(val/this.stepSize)*this.stepSize},handleClick:function(e){if(this.touchPosition.setNewPosition(e),this.touchPosition.isTouchWithinSliderRange){var newAngle=this.touchPosition.sliderAngle;this.animateSlider(this.angle,newAngle)}},handleMouseDown:function(e){e.preventDefault(),this.mousePressed=!0,window.addEventListener("mousemove",this.handleWindowMouseMove),window.addEventListener("mouseup",this.handleMouseUp)},handleMouseUp:function(e){e.preventDefault(),this.mousePressed=!1,window.removeEventListener("mousemove",this.handleWindowMouseMove),window.removeEventListener("mouseup",this.handleMouseUp),this.mousemoveTicks=0},handleWindowMouseMove:function(e){if(e.preventDefault(),this.mousemoveTicks<5)return void this.mousemoveTicks++;this.touchPosition.setNewPosition(e),this.updateSlider()},handleTouchMove:function(e){if(this.$emit("touchmove"),e.targetTouches.length>1||e.changedTouches.length>1||e.touches.length>1)return!0;var lastTouch=e.targetTouches.item(e.targetTouches.length-1);this.touchPosition.setNewPosition(lastTouch),this.touchPosition.isTouchWithinSliderRange&&(e.preventDefault(),this.updateSlider())},updateAngle:function(angle){this.circleSliderState.updateCurrentStepFromAngle(angle),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep,this.$emit("input",this.currentStepValue)},updateFromPropValue:function(value){var stepValue=this.fitToStep(value);this.circleSliderState.updateCurrentStepFromValue(stepValue),this.angle=this.circleSliderState.angleValue,this.currentStepValue=stepValue,this.$emit("input",this.currentStepValue)},updateSlider:function(){var angle=this.touchPosition.sliderAngle;Math.abs(angle-this.angle)<Math.PI&&this.updateAngle(angle)},animateSlider:function(startAngle,endAngle){var _this2=this,direction=startAngle<endAngle?1:-1,curveAngleMovementUnit=direction*this.circleSliderState.angleUnit*2,animate=function(){if(Math.abs(endAngle-startAngle)<Math.abs(2*curveAngleMovementUnit))_this2.updateAngle(endAngle);else{var newAngle=startAngle+curveAngleMovementUnit;_this2.updateAngle(newAngle),_this2.animateSlider(newAngle,endAngle)}};window.requestAnimationFrame(animate)}},watch:{value:function(val){this.updateFromPropValue(val)}}}},function(module,exports){module.exports=function(rawScriptExports,compiledTemplate,scopeId,cssModules){var esModule,scriptExports=rawScriptExports=rawScriptExports||{},type=typeof rawScriptExports.default;"object"!==type&&"function"!==type||(esModule=rawScriptExports,scriptExports=rawScriptExports.default);var options="function"==typeof scriptExports?scriptExports.options:scriptExports;if(compiledTemplate&&(options.render=compiledTemplate.render,options.staticRenderFns=compiledTemplate.staticRenderFns),scopeId&&(options._scopeId=scopeId),cssModules){var computed=options.computed||(options.computed={});Object.keys(cssModules).forEach(function(key){var module=cssModules[key];computed[key]=function(){return module}})}return{esModule:esModule,exports:scriptExports,options:options}}},function(module,exports){module.exports={render:function(){var _vm=this,_h=_vm.$createElement,_c=_vm._self._c||_h;return _c("div",[_c("svg",{ref:"_svg",attrs:{width:_vm.side+"px",height:_vm.side+"px",viewBox:"0 0 "+_vm.side+" "+_vm.side},on:{touchmove:_vm.handleTouchMove,click:_vm.handleClick,mousedown:_vm.handleMouseDown,mouseup:_vm.handleMouseUp}},[_c("g",[_c("circle",{attrs:{stroke:_vm.circleColor,fill:"none","stroke-width":_vm.cpMainCircleStrokeWidth,cx:_vm.cpCenter,cy:_vm.cpCenter,r:_vm.radius}}),_vm._v(" "),_c("path",{attrs:{stroke:_vm.progressColor,fill:"none","stroke-width":_vm.cpPathStrokeWidth,d:_vm.cpPathD}}),_vm._v(" "),_c("circle",{attrs:{fill:_vm.knobColor,r:_vm.cpKnobRadius,cx:_vm.cpPathX,cy:_vm.cpPathY}})])])])},staticRenderFns:[]}}]);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
-
-/***/ }),
-
-/***/ 576:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__ = __webpack_require__(562);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__ = __webpack_require__(577);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__);
-
-/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default.a);
-
-
-
-
-/***/ }),
-
-/***/ 577:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(578);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(43)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./vue-circle-slider.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./vue-circle-slider.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 578:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 602:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- *
- * jquery.sparkline.js
- *
- * v2.1.2
- * (c) Splunk, Inc
- * Contact: Gareth Watts (gareth@splunk.com)
- * http://omnipotent.net/jquery.sparkline/
- *
- * Generates inline sparkline charts from data supplied either to the method
- * or inline in HTML
- *
- * Compatible with Internet Explorer 6.0+ and modern browsers equipped with the canvas tag
- * (Firefox 2.0+, Safari, Opera, etc)
- *
- * License: New BSD License
- *
- * Copyright (c) 2012, Splunk Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- *     * Redistributions of source code must retain the above copyright notice,
- *       this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright notice,
- *       this list of conditions and the following disclaimer in the documentation
- *       and/or other materials provided with the distribution.
- *     * Neither the name of Splunk Inc nor the names of its contributors may
- *       be used to endorse or promote products derived from this software without
- *       specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
- * SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
- * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Usage:
- *  $(selector).sparkline(values, options)
- *
- * If values is undefined or set to 'html' then the data values are read from the specified tag:
- *   <p>Sparkline: <span class="sparkline">1,4,6,6,8,5,3,5</span></p>
- *   $('.sparkline').sparkline();
- * There must be no spaces in the enclosed data set
- *
- * Otherwise values must be an array of numbers or null values
- *    <p>Sparkline: <span id="sparkline1">This text replaced if the browser is compatible</span></p>
- *    $('#sparkline1').sparkline([1,4,6,6,8,5,3,5])
- *    $('#sparkline2').sparkline([1,4,6,null,null,5,3,5])
- *
- * Values can also be specified in an HTML comment, or as a values attribute:
- *    <p>Sparkline: <span class="sparkline"><!--1,4,6,6,8,5,3,5 --></span></p>
- *    <p>Sparkline: <span class="sparkline" values="1,4,6,6,8,5,3,5"></span></p>
- *    $('.sparkline').sparkline();
- *
- * For line charts, x values can also be specified:
- *   <p>Sparkline: <span class="sparkline">1:1,2.7:4,3.4:6,5:6,6:8,8.7:5,9:3,10:5</span></p>
- *    $('#sparkline1').sparkline([ [1,1], [2.7,4], [3.4,6], [5,6], [6,8], [8.7,5], [9,3], [10,5] ])
- *
- * By default, options should be passed in as teh second argument to the sparkline function:
- *   $('.sparkline').sparkline([1,2,3,4], {type: 'bar'})
- *
- * Options can also be set by passing them on the tag itself.  This feature is disabled by default though
- * as there's a slight performance overhead:
- *   $('.sparkline').sparkline([1,2,3,4], {enableTagOptions: true})
- *   <p>Sparkline: <span class="sparkline" sparkType="bar" sparkBarColor="red">loading</span></p>
- * Prefix all options supplied as tag attribute with "spark" (configurable by setting tagOptionPrefix)
- *
- * Supported options:
- *   lineColor - Color of the line used for the chart
- *   fillColor - Color used to fill in the chart - Set to '' or false for a transparent chart
- *   width - Width of the chart - Defaults to 3 times the number of values in pixels
- *   height - Height of the chart - Defaults to the height of the containing element
- *   chartRangeMin - Specify the minimum value to use for the Y range of the chart - Defaults to the minimum value supplied
- *   chartRangeMax - Specify the maximum value to use for the Y range of the chart - Defaults to the maximum value supplied
- *   chartRangeClip - Clip out of range values to the max/min specified by chartRangeMin and chartRangeMax
- *   chartRangeMinX - Specify the minimum value to use for the X range of the chart - Defaults to the minimum value supplied
- *   chartRangeMaxX - Specify the maximum value to use for the X range of the chart - Defaults to the maximum value supplied
- *   composite - If true then don't erase any existing chart attached to the tag, but draw
- *           another chart over the top - Note that width and height are ignored if an
- *           existing chart is detected.
- *   tagValuesAttribute - Name of tag attribute to check for data values - Defaults to 'values'
- *   enableTagOptions - Whether to check tags for sparkline options
- *   tagOptionPrefix - Prefix used for options supplied as tag attributes - Defaults to 'spark'
- *   disableHiddenCheck - If set to true, then the plugin will assume that charts will never be drawn into a
- *           hidden dom element, avoding a browser reflow
- *   disableInteraction - If set to true then all mouseover/click interaction behaviour will be disabled,
- *       making the plugin perform much like it did in 1.x
- *   disableTooltips - If set to true then tooltips will be disabled - Defaults to false (tooltips enabled)
- *   disableHighlight - If set to true then highlighting of selected chart elements on mouseover will be disabled
- *       defaults to false (highlights enabled)
- *   highlightLighten - Factor to lighten/darken highlighted chart values by - Defaults to 1.4 for a 40% increase
- *   tooltipContainer - Specify which DOM element the tooltip should be rendered into - defaults to document.body
- *   tooltipClassname - Optional CSS classname to apply to tooltips - If not specified then a default style will be applied
- *   tooltipOffsetX - How many pixels away from the mouse pointer to render the tooltip on the X axis
- *   tooltipOffsetY - How many pixels away from the mouse pointer to render the tooltip on the r axis
- *   tooltipFormatter  - Optional callback that allows you to override the HTML displayed in the tooltip
- *       callback is given arguments of (sparkline, options, fields)
- *   tooltipChartTitle - If specified then the tooltip uses the string specified by this setting as a title
- *   tooltipFormat - A format string or SPFormat object  (or an array thereof for multiple entries)
- *       to control the format of the tooltip
- *   tooltipPrefix - A string to prepend to each field displayed in a tooltip
- *   tooltipSuffix - A string to append to each field displayed in a tooltip
- *   tooltipSkipNull - If true then null values will not have a tooltip displayed (defaults to true)
- *   tooltipValueLookups - An object or range map to map field values to tooltip strings
- *       (eg. to map -1 to "Lost", 0 to "Draw", and 1 to "Win")
- *   numberFormatter - Optional callback for formatting numbers in tooltips
- *   numberDigitGroupSep - Character to use for group separator in numbers "1,234" - Defaults to ","
- *   numberDecimalMark - Character to use for the decimal point when formatting numbers - Defaults to "."
- *   numberDigitGroupCount - Number of digits between group separator - Defaults to 3
- *
- * There are 7 types of sparkline, selected by supplying a "type" option of 'line' (default),
- * 'bar', 'tristate', 'bullet', 'discrete', 'pie' or 'box'
- *    line - Line chart.  Options:
- *       spotColor - Set to '' to not end each line in a circular spot
- *       minSpotColor - If set, color of spot at minimum value
- *       maxSpotColor - If set, color of spot at maximum value
- *       spotRadius - Radius in pixels
- *       lineWidth - Width of line in pixels
- *       normalRangeMin
- *       normalRangeMax - If set draws a filled horizontal bar between these two values marking the "normal"
- *                      or expected range of values
- *       normalRangeColor - Color to use for the above bar
- *       drawNormalOnTop - Draw the normal range above the chart fill color if true
- *       defaultPixelsPerValue - Defaults to 3 pixels of width for each value in the chart
- *       highlightSpotColor - The color to use for drawing a highlight spot on mouseover - Set to null to disable
- *       highlightLineColor - The color to use for drawing a highlight line on mouseover - Set to null to disable
- *       valueSpots - Specify which points to draw spots on, and in which color.  Accepts a range map
- *
- *   bar - Bar chart.  Options:
- *       barColor - Color of bars for postive values
- *       negBarColor - Color of bars for negative values
- *       zeroColor - Color of bars with zero values
- *       nullColor - Color of bars with null values - Defaults to omitting the bar entirely
- *       barWidth - Width of bars in pixels
- *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
- *                  can be an Array of values to control the color of individual bars or a range map
- *                  to specify colors for individual ranges of values
- *       barSpacing - Gap between bars in pixels
- *       zeroAxis - Centers the y-axis around zero if true
- *
- *   tristate - Charts values of win (>0), lose (<0) or draw (=0)
- *       posBarColor - Color of win values
- *       negBarColor - Color of lose values
- *       zeroBarColor - Color of draw values
- *       barWidth - Width of bars in pixels
- *       barSpacing - Gap between bars in pixels
- *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
- *                  can be an Array of values to control the color of individual bars or a range map
- *                  to specify colors for individual ranges of values
- *
- *   discrete - Options:
- *       lineHeight - Height of each line in pixels - Defaults to 30% of the graph height
- *       thesholdValue - Values less than this value will be drawn using thresholdColor instead of lineColor
- *       thresholdColor
- *
- *   bullet - Values for bullet graphs msut be in the order: target, performance, range1, range2, range3, ...
- *       options:
- *       targetColor - The color of the vertical target marker
- *       targetWidth - The width of the target marker in pixels
- *       performanceColor - The color of the performance measure horizontal bar
- *       rangeColors - Colors to use for each qualitative range background color
- *
- *   pie - Pie chart. Options:
- *       sliceColors - An array of colors to use for pie slices
- *       offset - Angle in degrees to offset the first slice - Try -90 or +90
- *       borderWidth - Width of border to draw around the pie chart, in pixels - Defaults to 0 (no border)
- *       borderColor - Color to use for the pie chart border - Defaults to #000
- *
- *   box - Box plot. Options:
- *       raw - Set to true to supply pre-computed plot points as values
- *             values should be: low_outlier, low_whisker, q1, median, q3, high_whisker, high_outlier
- *             When set to false you can supply any number of values and the box plot will
- *             be computed for you.  Default is false.
- *       showOutliers - Set to true (default) to display outliers as circles
- *       outlierIQR - Interquartile range used to determine outliers.  Default 1.5
- *       boxLineColor - Outline color of the box
- *       boxFillColor - Fill color for the box
- *       whiskerColor - Line color used for whiskers
- *       outlierLineColor - Outline color of outlier circles
- *       outlierFillColor - Fill color of the outlier circles
- *       spotRadius - Radius of outlier circles
- *       medianColor - Line color of the median line
- *       target - Draw a target cross hair at the supplied value (default undefined)
- *
- *
- *
- *   Examples:
- *   $('#sparkline1').sparkline(myvalues, { lineColor: '#f00', fillColor: false });
- *   $('.barsparks').sparkline('html', { type:'bar', height:'40px', barWidth:5 });
- *   $('#tristate').sparkline([1,1,-1,1,0,0,-1], { type:'tristate' }):
- *   $('#discrete').sparkline([1,3,4,5,5,3,4,5], { type:'discrete' });
- *   $('#bullet').sparkline([10,12,12,9,7], { type:'bullet' });
- *   $('#pie').sparkline([1,1,2], { type:'pie' });
- */
-
-/*jslint regexp: true, browser: true, jquery: true, white: true, nomen: false, plusplus: false, maxerr: 500, indent: 4 */
-
-(function (document, Math, undefined) {
-	// performance/minified-size optimization
-	(function (factory) {
-		if (true) {
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(520)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else if (jQuery && !jQuery.fn.sparkline) {
-			factory(jQuery);
-		}
-	})(function ($) {
-		'use strict';
-
-		var UNSET_OPTION = {},
-		    getDefaults,
-		    createClass,
-		    SPFormat,
-		    clipval,
-		    quartile,
-		    normalizeValue,
-		    normalizeValues,
-		    remove,
-		    isNumber,
-		    all,
-		    sum,
-		    addCSS,
-		    ensureArray,
-		    formatNumber,
-		    RangeMap,
-		    MouseHandler,
-		    Tooltip,
-		    barHighlightMixin,
-		    line,
-		    bar,
-		    tristate,
-		    discrete,
-		    bullet,
-		    pie,
-		    box,
-		    defaultStyles,
-		    initStyles,
-		    VShape,
-		    VCanvas_base,
-		    VCanvas_canvas,
-		    VCanvas_vml,
-		    pending,
-		    shapeCount = 0;
-
-		/**
-   * Default configuration settings
-   */
-		getDefaults = function getDefaults() {
-			return {
-				// Settings common to most/all chart types
-				common: {
-					type: 'line',
-					lineColor: '#00f',
-					fillColor: '#cdf',
-					defaultPixelsPerValue: 3,
-					width: 'auto',
-					height: 'auto',
-					composite: false,
-					tagValuesAttribute: 'values',
-					tagOptionsPrefix: 'spark',
-					enableTagOptions: false,
-					enableHighlight: true,
-					highlightLighten: 1.1,
-					tooltipSkipNull: true,
-					tooltipPrefix: '',
-					tooltipSuffix: '',
-					disableHiddenCheck: false,
-					numberFormatter: false,
-					numberDigitGroupCount: 3,
-					numberDigitGroupSep: ',',
-					numberDecimalMark: '.',
-					disableTooltips: false,
-					disableInteraction: false
-				},
-				// Defaults for line charts
-				line: {
-					spotColor: '#f80',
-					highlightSpotColor: '#5f5',
-					highlightLineColor: '#f22',
-					spotRadius: 1.5,
-					minSpotColor: '#f80',
-					maxSpotColor: '#f80',
-					lineWidth: 1,
-					normalRangeMin: undefined,
-					normalRangeMax: undefined,
-					normalRangeColor: '#ccc',
-					drawNormalOnTop: false,
-					chartRangeMin: undefined,
-					chartRangeMax: undefined,
-					chartRangeMinX: undefined,
-					chartRangeMaxX: undefined,
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{y}}{{suffix}}')
-				},
-				// Defaults for bar charts
-				bar: {
-					barColor: '#3366cc',
-					negBarColor: '#f44',
-					stackedBarColor: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
-					zeroColor: undefined,
-					nullColor: undefined,
-					zeroAxis: true,
-					barWidth: 4,
-					barSpacing: 1,
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					chartRangeClip: false,
-					colorMap: undefined,
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{value}}{{suffix}}')
-				},
-				// Defaults for tristate charts
-				tristate: {
-					barWidth: 4,
-					barSpacing: 1,
-					posBarColor: '#6f6',
-					negBarColor: '#f44',
-					zeroBarColor: '#999',
-					colorMap: {},
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value:map}}'),
-					tooltipValueLookups: { map: { '-1': 'Loss', '0': 'Draw', '1': 'Win' } }
-				},
-				// Defaults for discrete charts
-				discrete: {
-					lineHeight: 'auto',
-					thresholdColor: undefined,
-					thresholdValue: 0,
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					chartRangeClip: false,
-					tooltipFormat: new SPFormat('{{prefix}}{{value}}{{suffix}}')
-				},
-				// Defaults for bullet charts
-				bullet: {
-					targetColor: '#f33',
-					targetWidth: 3, // width of the target bar in pixels
-					performanceColor: '#33f',
-					rangeColors: ['#d3dafe', '#a8b6ff', '#7f94ff'],
-					base: undefined, // set this to a number to change the base start number
-					tooltipFormat: new SPFormat('{{fieldkey:fields}} - {{value}}'),
-					tooltipValueLookups: { fields: { r: 'Range', p: 'Performance', t: 'Target' } }
-				},
-				// Defaults for pie charts
-				pie: {
-					offset: 0,
-					sliceColors: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
-					borderWidth: 0,
-					borderColor: '#000',
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value}} ({{percent.1}}%)')
-				},
-				// Defaults for box plots
-				box: {
-					raw: false,
-					boxLineColor: '#000',
-					boxFillColor: '#cdf',
-					whiskerColor: '#000',
-					outlierLineColor: '#333',
-					outlierFillColor: '#fff',
-					medianColor: '#f00',
-					showOutliers: true,
-					outlierIQR: 1.5,
-					spotRadius: 1.5,
-					target: undefined,
-					targetColor: '#4a2',
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					tooltipFormat: new SPFormat('{{field:fields}}: {{value}}'),
-					tooltipFormatFieldlistKey: 'field',
-					tooltipValueLookups: { fields: { lq: 'Lower Quartile', med: 'Median',
-							uq: 'Upper Quartile', lo: 'Left Outlier', ro: 'Right Outlier',
-							lw: 'Left Whisker', rw: 'Right Whisker' } }
-				}
-			};
-		};
-
-		// You can have tooltips use a css class other than jqstooltip by specifying tooltipClassname
-		// tooltip modified by westilian:jaman
-		defaultStyles = '.jqstooltip { ' + 'position: absolute;' + 'left: 30px;' + 'top: 0px;' + 'display: block;' + 'visibility: hidden;' + 'background: rgb(0, 0, 0) transparent;' + 'background-color: rgba(0,0,0,0.6);' + 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);' + '-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";' + 'color: white;' + 'font: 10px arial, san serif;' + 'text-align: left;' + 'white-space: nowrap;' + 'border: 0px solid white;' + 'border-radius: 3px;' + '-webkit-border-radius: 3px;' + 'z-index: 10000;' + '}' + '.jqsfield { ' + 'color: white;' + 'padding: 5px 5px 5px 5px;' + 'font: 10px arial, san serif;' + 'text-align: left;' + '}';
-
-		/**
-   * Utilities
-   */
-
-		createClass = function createClass() /* [baseclass, [mixin, ...]], definition */{
-			var Class, args;
-			Class = function Class() {
-				this.init.apply(this, arguments);
-			};
-			if (arguments.length > 1) {
-				if (arguments[0]) {
-					Class.prototype = $.extend(new arguments[0](), arguments[arguments.length - 1]);
-					Class._super = arguments[0].prototype;
-				} else {
-					Class.prototype = arguments[arguments.length - 1];
-				}
-				if (arguments.length > 2) {
-					args = Array.prototype.slice.call(arguments, 1, -1);
-					args.unshift(Class.prototype);
-					$.extend.apply($, args);
-				}
-			} else {
-				Class.prototype = arguments[0];
-			}
-			Class.prototype.cls = Class;
-			return Class;
-		};
-
-		/**
-   * Wraps a format string for tooltips
-   * {{x}}
-   * {{x.2}
-     * {{x:months}}
-     */
-		$.SPFormatClass = SPFormat = createClass({
-			fre: /\{\{([\w.]+?)(:(.+?))?\}\}/g,
-			precre: /(\w+)\.(\d+)/,
-
-			init: function init(format, fclass) {
-				this.format = format;
-				this.fclass = fclass;
-			},
-
-			render: function render(fieldset, lookups, options) {
-				var self = this,
-				    fields = fieldset,
-				    match,
-				    token,
-				    lookupkey,
-				    fieldvalue,
-				    prec;
-				return this.format.replace(this.fre, function () {
-					var lookup;
-					token = arguments[1];
-					lookupkey = arguments[3];
-					match = self.precre.exec(token);
-					if (match) {
-						prec = match[2];
-						token = match[1];
-					} else {
-						prec = false;
-					}
-					fieldvalue = fields[token];
-					if (fieldvalue === undefined) {
-						return '';
-					}
-					if (lookupkey && lookups && lookups[lookupkey]) {
-						lookup = lookups[lookupkey];
-						if (lookup.get) {
-							// RangeMap
-							return lookups[lookupkey].get(fieldvalue) || fieldvalue;
-						} else {
-							return lookups[lookupkey][fieldvalue] || fieldvalue;
-						}
-					}
-					if (isNumber(fieldvalue)) {
-						if (options.get('numberFormatter')) {
-							fieldvalue = options.get('numberFormatter')(fieldvalue);
-						} else {
-							fieldvalue = formatNumber(fieldvalue, prec, options.get('numberDigitGroupCount'), options.get('numberDigitGroupSep'), options.get('numberDecimalMark'));
-						}
-					}
-					return fieldvalue;
-				});
-			}
-		});
-
-		// convience method to avoid needing the new operator
-		$.spformat = function (format, fclass) {
-			return new SPFormat(format, fclass);
-		};
-
-		clipval = function clipval(val, min, max) {
-			if (val < min) {
-				return min;
-			}
-			if (val > max) {
-				return max;
-			}
-			return val;
-		};
-
-		quartile = function quartile(values, q) {
-			var vl;
-			if (q === 2) {
-				vl = Math.floor(values.length / 2);
-				return values.length % 2 ? values[vl] : (values[vl - 1] + values[vl]) / 2;
-			} else {
-				if (values.length % 2) {
-					// odd
-					vl = (values.length * q + q) / 4;
-					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
-				} else {
-					//even
-					vl = (values.length * q + 2) / 4;
-					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
-				}
-			}
-		};
-
-		normalizeValue = function normalizeValue(val) {
-			var nf;
-			switch (val) {
-				case 'undefined':
-					val = undefined;
-					break;
-				case 'null':
-					val = null;
-					break;
-				case 'true':
-					val = true;
-					break;
-				case 'false':
-					val = false;
-					break;
-				default:
-					nf = parseFloat(val);
-					if (val == nf) {
-						val = nf;
-					}
-			}
-			return val;
-		};
-
-		normalizeValues = function normalizeValues(vals) {
-			var i,
-			    result = [];
-			for (i = vals.length; i--;) {
-				result[i] = normalizeValue(vals[i]);
-			}
-			return result;
-		};
-
-		remove = function remove(vals, filter) {
-			var i,
-			    vl,
-			    result = [];
-			for (i = 0, vl = vals.length; i < vl; i++) {
-				if (vals[i] !== filter) {
-					result.push(vals[i]);
-				}
-			}
-			return result;
-		};
-
-		isNumber = function isNumber(num) {
-			return !isNaN(parseFloat(num)) && isFinite(num);
-		};
-
-		formatNumber = function formatNumber(num, prec, groupsize, groupsep, decsep) {
-			var p, i;
-			num = (prec === false ? parseFloat(num).toString() : num.toFixed(prec)).split('');
-			p = (p = $.inArray('.', num)) < 0 ? num.length : p;
-			if (p < num.length) {
-				num[p] = decsep;
-			}
-			for (i = p - groupsize; i > 0; i -= groupsize) {
-				num.splice(i, 0, groupsep);
-			}
-			return num.join('');
-		};
-
-		// determine if all values of an array match a value
-		// returns true if the array is empty
-		all = function all(val, arr, ignoreNull) {
-			var i;
-			for (i = arr.length; i--;) {
-				if (ignoreNull && arr[i] === null) continue;
-				if (arr[i] !== val) {
-					return false;
-				}
-			}
-			return true;
-		};
-
-		// sums the numeric values in an array, ignoring other values
-		sum = function sum(vals) {
-			var total = 0,
-			    i;
-			for (i = vals.length; i--;) {
-				total += typeof vals[i] === 'number' ? vals[i] : 0;
-			}
-			return total;
-		};
-
-		ensureArray = function ensureArray(val) {
-			return $.isArray(val) ? val : [val];
-		};
-
-		// http://paulirish.com/2008/bookmarklet-inject-new-css-rules/
-		addCSS = function addCSS(css) {
-			var tag;
-			//if ('\v' == 'v') /* ie only */ {
-			if (document.createStyleSheet) {
-				document.createStyleSheet().cssText = css;
-			} else {
-				tag = document.createElement('style');
-				tag.type = 'text/css';
-				document.getElementsByTagName('head')[0].appendChild(tag);
-				tag[typeof document.body.style.WebkitAppearance == 'string' ? /* webkit only */'innerText' : 'innerHTML'] = css;
-			}
-		};
-
-		// Provide a cross-browser interface to a few simple drawing primitives
-		$.fn.simpledraw = function (width, height, useExisting, interact) {
-			var target, mhandler;
-			if (useExisting && (target = this.data('_jqs_vcanvas'))) {
-				return target;
-			}
-
-			if ($.fn.sparkline.canvas === false) {
-				// We've already determined that neither Canvas nor VML are available
-				return false;
-			} else if ($.fn.sparkline.canvas === undefined) {
-				// No function defined yet -- need to see if we support Canvas or VML
-				var el = document.createElement('canvas');
-				if (!!(el.getContext && el.getContext('2d'))) {
-					// Canvas is available
-					$.fn.sparkline.canvas = function (width, height, target, interact) {
-						return new VCanvas_canvas(width, height, target, interact);
-					};
-				} else if (document.namespaces && !document.namespaces.v) {
-					// VML is available
-					document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', '#default#VML');
-					$.fn.sparkline.canvas = function (width, height, target, interact) {
-						return new VCanvas_vml(width, height, target);
-					};
-				} else {
-					// Neither Canvas nor VML are available
-					$.fn.sparkline.canvas = false;
-					return false;
-				}
-			}
-
-			if (width === undefined) {
-				width = $(this).innerWidth();
-			}
-			if (height === undefined) {
-				height = $(this).innerHeight();
-			}
-
-			target = $.fn.sparkline.canvas(width, height, this, interact);
-
-			mhandler = $(this).data('_jqs_mhandler');
-			if (mhandler) {
-				mhandler.registerCanvas(target);
-			}
-			return target;
-		};
-
-		$.fn.cleardraw = function () {
-			var target = this.data('_jqs_vcanvas');
-			if (target) {
-				target.reset();
-			}
-		};
-
-		$.RangeMapClass = RangeMap = createClass({
-			init: function init(map) {
-				var key,
-				    range,
-				    rangelist = [];
-				for (key in map) {
-					if (map.hasOwnProperty(key) && typeof key === 'string' && key.indexOf(':') > -1) {
-						range = key.split(':');
-						range[0] = range[0].length === 0 ? -Infinity : parseFloat(range[0]);
-						range[1] = range[1].length === 0 ? Infinity : parseFloat(range[1]);
-						range[2] = map[key];
-						rangelist.push(range);
-					}
-				}
-				this.map = map;
-				this.rangelist = rangelist || false;
-			},
-
-			get: function get(value) {
-				var rangelist = this.rangelist,
-				    i,
-				    range,
-				    result;
-				if ((result = this.map[value]) !== undefined) {
-					return result;
-				}
-				if (rangelist) {
-					for (i = rangelist.length; i--;) {
-						range = rangelist[i];
-						if (range[0] <= value && range[1] >= value) {
-							return range[2];
-						}
-					}
-				}
-				return undefined;
-			}
-		});
-
-		// Convenience function
-		$.range_map = function (map) {
-			return new RangeMap(map);
-		};
-
-		MouseHandler = createClass({
-			init: function init(el, options) {
-				var $el = $(el);
-				this.$el = $el;
-				this.options = options;
-				this.currentPageX = 0;
-				this.currentPageY = 0;
-				this.el = el;
-				this.splist = [];
-				this.tooltip = null;
-				this.over = false;
-				this.displayTooltips = !options.get('disableTooltips');
-				this.highlightEnabled = !options.get('disableHighlight');
-			},
-
-			registerSparkline: function registerSparkline(sp) {
-				this.splist.push(sp);
-				if (this.over) {
-					this.updateDisplay();
-				}
-			},
-
-			registerCanvas: function registerCanvas(canvas) {
-				var $canvas = $(canvas.canvas);
-				this.canvas = canvas;
-				this.$canvas = $canvas;
-				$canvas.mouseenter($.proxy(this.mouseenter, this));
-				$canvas.mouseleave($.proxy(this.mouseleave, this));
-				$canvas.click($.proxy(this.mouseclick, this));
-			},
-
-			reset: function reset(removeTooltip) {
-				this.splist = [];
-				if (this.tooltip && removeTooltip) {
-					this.tooltip.remove();
-					this.tooltip = undefined;
-				}
-			},
-
-			mouseclick: function mouseclick(e) {
-				var clickEvent = $.Event('sparklineClick');
-				clickEvent.originalEvent = e;
-				clickEvent.sparklines = this.splist;
-				this.$el.trigger(clickEvent);
-			},
-
-			mouseenter: function mouseenter(e) {
-				$(document.body).unbind('mousemove.jqs');
-				$(document.body).bind('mousemove.jqs', $.proxy(this.mousemove, this));
-				this.over = true;
-				this.currentPageX = e.pageX;
-				this.currentPageY = e.pageY;
-				this.currentEl = e.target;
-				if (!this.tooltip && this.displayTooltips) {
-					this.tooltip = new Tooltip(this.options);
-					this.tooltip.updatePosition(e.pageX, e.pageY);
-				}
-				this.updateDisplay();
-			},
-
-			mouseleave: function mouseleave() {
-				$(document.body).unbind('mousemove.jqs');
-				var splist = this.splist,
-				    spcount = splist.length,
-				    needsRefresh = false,
-				    sp,
-				    i;
-				this.over = false;
-				this.currentEl = null;
-
-				if (this.tooltip) {
-					this.tooltip.remove();
-					this.tooltip = null;
-				}
-
-				for (i = 0; i < spcount; i++) {
-					sp = splist[i];
-					if (sp.clearRegionHighlight()) {
-						needsRefresh = true;
-					}
-				}
-
-				if (needsRefresh) {
-					this.canvas.render();
-				}
-			},
-
-			mousemove: function mousemove(e) {
-				this.currentPageX = e.pageX;
-				this.currentPageY = e.pageY;
-				this.currentEl = e.target;
-				if (this.tooltip) {
-					this.tooltip.updatePosition(e.pageX, e.pageY);
-				}
-				this.updateDisplay();
-			},
-
-			updateDisplay: function updateDisplay() {
-				var splist = this.splist,
-				    spcount = splist.length,
-				    needsRefresh = false,
-				    offset = this.$canvas.offset(),
-				    localX = this.currentPageX - offset.left,
-				    localY = this.currentPageY - offset.top,
-				    tooltiphtml,
-				    sp,
-				    i,
-				    result,
-				    changeEvent;
-				if (!this.over) {
-					return;
-				}
-				for (i = 0; i < spcount; i++) {
-					sp = splist[i];
-					result = sp.setRegionHighlight(this.currentEl, localX, localY);
-					if (result) {
-						needsRefresh = true;
-					}
-				}
-				if (needsRefresh) {
-					changeEvent = $.Event('sparklineRegionChange');
-					changeEvent.sparklines = this.splist;
-					this.$el.trigger(changeEvent);
-					if (this.tooltip) {
-						tooltiphtml = '';
-						for (i = 0; i < spcount; i++) {
-							sp = splist[i];
-							tooltiphtml += sp.getCurrentRegionTooltip();
-						}
-						this.tooltip.setContent(tooltiphtml);
-					}
-					if (!this.disableHighlight) {
-						this.canvas.render();
-					}
-				}
-				if (result === null) {
-					this.mouseleave();
-				}
-			}
-		});
-
-		Tooltip = createClass({
-			sizeStyle: 'position: static !important;' + 'display: block !important;' + 'visibility: hidden !important;' + 'float: left !important;',
-
-			init: function init(options) {
-				var tooltipClassname = options.get('tooltipClassname', 'jqstooltip'),
-				    sizetipStyle = this.sizeStyle,
-				    offset;
-				this.container = options.get('tooltipContainer') || document.body;
-				this.tooltipOffsetX = options.get('tooltipOffsetX', 10);
-				this.tooltipOffsetY = options.get('tooltipOffsetY', 12);
-				// remove any previous lingering tooltip
-				$('#jqssizetip').remove();
-				$('#jqstooltip').remove();
-				this.sizetip = $('<div/>', {
-					id: 'jqssizetip',
-					style: sizetipStyle,
-					'class': tooltipClassname
-				});
-				this.tooltip = $('<div/>', {
-					id: 'jqstooltip',
-					'class': tooltipClassname
-				}).appendTo(this.container);
-				// account for the container's location
-				offset = this.tooltip.offset();
-				this.offsetLeft = offset.left;
-				this.offsetTop = offset.top;
-				this.hidden = true;
-				$(window).unbind('resize.jqs scroll.jqs');
-				$(window).bind('resize.jqs scroll.jqs', $.proxy(this.updateWindowDims, this));
-				this.updateWindowDims();
-			},
-
-			updateWindowDims: function updateWindowDims() {
-				this.scrollTop = $(window).scrollTop();
-				this.scrollLeft = $(window).scrollLeft();
-				this.scrollRight = this.scrollLeft + $(window).width();
-				this.updatePosition();
-			},
-
-			getSize: function getSize(content) {
-				this.sizetip.html(content).appendTo(this.container);
-				this.width = this.sizetip.width() + 1;
-				this.height = this.sizetip.height();
-				this.sizetip.remove();
-			},
-
-			setContent: function setContent(content) {
-				if (!content) {
-					this.tooltip.css('visibility', 'hidden');
-					this.hidden = true;
-					return;
-				}
-				this.getSize(content);
-				this.tooltip.html(content).css({
-					'width': this.width,
-					'height': this.height,
-					'visibility': 'visible'
-				});
-				if (this.hidden) {
-					this.hidden = false;
-					this.updatePosition();
-				}
-			},
-
-			updatePosition: function updatePosition(x, y) {
-				if (x === undefined) {
-					if (this.mousex === undefined) {
-						return;
-					}
-					x = this.mousex - this.offsetLeft;
-					y = this.mousey - this.offsetTop;
-				} else {
-					this.mousex = x = x - this.offsetLeft;
-					this.mousey = y = y - this.offsetTop;
-				}
-				if (!this.height || !this.width || this.hidden) {
-					return;
-				}
-
-				y -= this.height + this.tooltipOffsetY;
-				x += this.tooltipOffsetX;
-
-				if (y < this.scrollTop) {
-					y = this.scrollTop;
-				}
-				if (x < this.scrollLeft) {
-					x = this.scrollLeft;
-				} else if (x + this.width > this.scrollRight) {
-					x = this.scrollRight - this.width;
-				}
-
-				this.tooltip.css({
-					'left': x,
-					'top': y
-				});
-			},
-
-			remove: function remove() {
-				this.tooltip.remove();
-				this.sizetip.remove();
-				this.sizetip = this.tooltip = undefined;
-				$(window).unbind('resize.jqs scroll.jqs');
-			}
-		});
-
-		initStyles = function initStyles() {
-			addCSS(defaultStyles);
-		};
-
-		$(initStyles);
-
-		pending = [];
-		$.fn.sparkline = function (userValues, userOptions) {
-			return this.each(function () {
-				var options = new $.fn.sparkline.options(this, userOptions),
-				    $this = $(this),
-				    render,
-				    i;
-				render = function render() {
-					var values, width, height, tmp, mhandler, sp, vals;
-					if (userValues === 'html' || userValues === undefined) {
-						vals = this.getAttribute(options.get('tagValuesAttribute'));
-						if (vals === undefined || vals === null) {
-							vals = $this.html();
-						}
-						values = vals.replace(/(^\s*<!--)|(-->\s*$)|\s+/g, '').split(',');
-					} else {
-						values = userValues;
-					}
-
-					width = options.get('width') === 'auto' ? values.length * options.get('defaultPixelsPerValue') : options.get('width');
-					if (options.get('height') === 'auto') {
-						if (!options.get('composite') || !$.data(this, '_jqs_vcanvas')) {
-							// must be a better way to get the line height
-							tmp = document.createElement('span');
-							tmp.innerHTML = 'a';
-							$this.html(tmp);
-							height = $(tmp).innerHeight() || $(tmp).height();
-							$(tmp).remove();
-							tmp = null;
-						}
-					} else {
-						height = options.get('height');
-					}
-
-					if (!options.get('disableInteraction')) {
-						mhandler = $.data(this, '_jqs_mhandler');
-						if (!mhandler) {
-							mhandler = new MouseHandler(this, options);
-							$.data(this, '_jqs_mhandler', mhandler);
-						} else if (!options.get('composite')) {
-							mhandler.reset();
-						}
-					} else {
-						mhandler = false;
-					}
-
-					if (options.get('composite') && !$.data(this, '_jqs_vcanvas')) {
-						if (!$.data(this, '_jqs_errnotify')) {
-							alert('Attempted to attach a composite sparkline to an element with no existing sparkline');
-							$.data(this, '_jqs_errnotify', true);
-						}
-						return;
-					}
-
-					sp = new $.fn.sparkline[options.get('type')](this, values, options, width, height);
-
-					sp.render();
-
-					if (mhandler) {
-						mhandler.registerSparkline(sp);
-					}
-				};
-				if ($(this).html() && !options.get('disableHiddenCheck') && $(this).is(':hidden') || !$(this).parents('body').length) {
-					if (!options.get('composite') && $.data(this, '_jqs_pending')) {
-						// remove any existing references to the element
-						for (i = pending.length; i; i--) {
-							if (pending[i - 1][0] == this) {
-								pending.splice(i - 1, 1);
-							}
-						}
-					}
-					pending.push([this, render]);
-					$.data(this, '_jqs_pending', true);
-				} else {
-					render.call(this);
-				}
-			});
-		};
-
-		$.fn.sparkline.defaults = getDefaults();
-
-		$.sparkline_display_visible = function () {
-			var el, i, pl;
-			var done = [];
-			for (i = 0, pl = pending.length; i < pl; i++) {
-				el = pending[i][0];
-				if ($(el).is(':visible') && !$(el).parents().is(':hidden')) {
-					pending[i][1].call(el);
-					$.data(pending[i][0], '_jqs_pending', false);
-					done.push(i);
-				} else if (!$(el).closest('html').length && !$.data(el, '_jqs_pending')) {
-					// element has been inserted and removed from the DOM
-					// If it was not yet inserted into the dom then the .data request
-					// will return true.
-					// removing from the dom causes the data to be removed.
-					$.data(pending[i][0], '_jqs_pending', false);
-					done.push(i);
-				}
-			}
-			for (i = done.length; i; i--) {
-				pending.splice(done[i - 1], 1);
-			}
-		};
-
-		/**
-   * User option handler
-   */
-		$.fn.sparkline.options = createClass({
-			init: function init(tag, userOptions) {
-				var extendedOptions, defaults, base, tagOptionType;
-				this.userOptions = userOptions = userOptions || {};
-				this.tag = tag;
-				this.tagValCache = {};
-				defaults = $.fn.sparkline.defaults;
-				base = defaults.common;
-				this.tagOptionsPrefix = userOptions.enableTagOptions && (userOptions.tagOptionsPrefix || base.tagOptionsPrefix);
-
-				tagOptionType = this.getTagSetting('type');
-				if (tagOptionType === UNSET_OPTION) {
-					extendedOptions = defaults[userOptions.type || base.type];
-				} else {
-					extendedOptions = defaults[tagOptionType];
-				}
-				this.mergedOptions = $.extend({}, base, extendedOptions, userOptions);
-			},
-
-			getTagSetting: function getTagSetting(key) {
-				var prefix = this.tagOptionsPrefix,
-				    val,
-				    i,
-				    pairs,
-				    keyval;
-				if (prefix === false || prefix === undefined) {
-					return UNSET_OPTION;
-				}
-				if (this.tagValCache.hasOwnProperty(key)) {
-					val = this.tagValCache.key;
-				} else {
-					val = this.tag.getAttribute(prefix + key);
-					if (val === undefined || val === null) {
-						val = UNSET_OPTION;
-					} else if (val.substr(0, 1) === '[') {
-						val = val.substr(1, val.length - 2).split(',');
-						for (i = val.length; i--;) {
-							val[i] = normalizeValue(val[i].replace(/(^\s*)|(\s*$)/g, ''));
-						}
-					} else if (val.substr(0, 1) === '{') {
-						pairs = val.substr(1, val.length - 2).split(',');
-						val = {};
-						for (i = pairs.length; i--;) {
-							keyval = pairs[i].split(':', 2);
-							val[keyval[0].replace(/(^\s*)|(\s*$)/g, '')] = normalizeValue(keyval[1].replace(/(^\s*)|(\s*$)/g, ''));
-						}
-					} else {
-						val = normalizeValue(val);
-					}
-					this.tagValCache.key = val;
-				}
-				return val;
-			},
-
-			get: function get(key, defaultval) {
-				var tagOption = this.getTagSetting(key),
-				    result;
-				if (tagOption !== UNSET_OPTION) {
-					return tagOption;
-				}
-				return (result = this.mergedOptions[key]) === undefined ? defaultval : result;
-			}
-		});
-
-		$.fn.sparkline._base = createClass({
-			disabled: false,
-
-			init: function init(el, values, options, width, height) {
-				this.el = el;
-				this.$el = $(el);
-				this.values = values;
-				this.options = options;
-				this.width = width;
-				this.height = height;
-				this.currentRegion = undefined;
-			},
-
-			/**
-    * Setup the canvas
-    */
-			initTarget: function initTarget() {
-				var interactive = !this.options.get('disableInteraction');
-				if (!(this.target = this.$el.simpledraw(this.width, this.height, this.options.get('composite'), interactive))) {
-					this.disabled = true;
-				} else {
-					this.canvasWidth = this.target.pixelWidth;
-					this.canvasHeight = this.target.pixelHeight;
-				}
-			},
-
-			/**
-    * Actually render the chart to the canvas
-    */
-			render: function render() {
-				if (this.disabled) {
-					this.el.innerHTML = '';
-					return false;
-				}
-				return true;
-			},
-
-			/**
-    * Return a region id for a given x/y co-ordinate
-    */
-			getRegion: function getRegion(x, y) {},
-
-			/**
-    * Highlight an item based on the moused-over x,y co-ordinate
-    */
-			setRegionHighlight: function setRegionHighlight(el, x, y) {
-				var currentRegion = this.currentRegion,
-				    highlightEnabled = !this.options.get('disableHighlight'),
-				    newRegion;
-				if (x > this.canvasWidth || y > this.canvasHeight || x < 0 || y < 0) {
-					return null;
-				}
-				newRegion = this.getRegion(el, x, y);
-				if (currentRegion !== newRegion) {
-					if (currentRegion !== undefined && highlightEnabled) {
-						this.removeHighlight();
-					}
-					this.currentRegion = newRegion;
-					if (newRegion !== undefined && highlightEnabled) {
-						this.renderHighlight();
-					}
-					return true;
-				}
-				return false;
-			},
-
-			/**
-    * Reset any currently highlighted item
-    */
-			clearRegionHighlight: function clearRegionHighlight() {
-				if (this.currentRegion !== undefined) {
-					this.removeHighlight();
-					this.currentRegion = undefined;
-					return true;
-				}
-				return false;
-			},
-
-			renderHighlight: function renderHighlight() {
-				this.changeHighlight(true);
-			},
-
-			removeHighlight: function removeHighlight() {
-				this.changeHighlight(false);
-			},
-
-			changeHighlight: function changeHighlight(highlight) {},
-
-			/**
-    * Fetch the HTML to display as a tooltip
-    */
-			getCurrentRegionTooltip: function getCurrentRegionTooltip() {
-				var options = this.options,
-				    header = '',
-				    entries = [],
-				    fields,
-				    formats,
-				    formatlen,
-				    fclass,
-				    text,
-				    i,
-				    showFields,
-				    showFieldsKey,
-				    newFields,
-				    fv,
-				    formatter,
-				    format,
-				    fieldlen,
-				    j;
-				if (this.currentRegion === undefined) {
-					return '';
-				}
-				fields = this.getCurrentRegionFields();
-				formatter = options.get('tooltipFormatter');
-				if (formatter) {
-					return formatter(this, options, fields);
-				}
-				if (options.get('tooltipChartTitle')) {
-					header += '<div class="jqs jqstitle">' + options.get('tooltipChartTitle') + '</div>\n';
-				}
-				formats = this.options.get('tooltipFormat');
-				if (!formats) {
-					return '';
-				}
-				if (!$.isArray(formats)) {
-					formats = [formats];
-				}
-				if (!$.isArray(fields)) {
-					fields = [fields];
-				}
-				showFields = this.options.get('tooltipFormatFieldlist');
-				showFieldsKey = this.options.get('tooltipFormatFieldlistKey');
-				if (showFields && showFieldsKey) {
-					// user-selected ordering of fields
-					newFields = [];
-					for (i = fields.length; i--;) {
-						fv = fields[i][showFieldsKey];
-						if ((j = $.inArray(fv, showFields)) != -1) {
-							newFields[j] = fields[i];
-						}
-					}
-					fields = newFields;
-				}
-				formatlen = formats.length;
-				fieldlen = fields.length;
-				for (i = 0; i < formatlen; i++) {
-					format = formats[i];
-					if (typeof format === 'string') {
-						format = new SPFormat(format);
-					}
-					fclass = format.fclass || 'jqsfield';
-					for (j = 0; j < fieldlen; j++) {
-						if (!fields[j].isNull || !options.get('tooltipSkipNull')) {
-							$.extend(fields[j], {
-								prefix: options.get('tooltipPrefix'),
-								suffix: options.get('tooltipSuffix')
-							});
-							text = format.render(fields[j], options.get('tooltipValueLookups'), options);
-							entries.push('<div class="' + fclass + '">' + text + '</div>');
-						}
-					}
-				}
-				if (entries.length) {
-					return header + entries.join('\n');
-				}
-				return '';
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {},
-
-			calcHighlightColor: function calcHighlightColor(color, options) {
-				var highlightColor = options.get('highlightColor'),
-				    lighten = options.get('highlightLighten'),
-				    parse,
-				    mult,
-				    rgbnew,
-				    i;
-				if (highlightColor) {
-					return highlightColor;
-				}
-				if (lighten) {
-					// extract RGB values
-					parse = /^#([0-9a-f])([0-9a-f])([0-9a-f])$/i.exec(color) || /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(color);
-					if (parse) {
-						rgbnew = [];
-						mult = color.length === 4 ? 16 : 1;
-						for (i = 0; i < 3; i++) {
-							rgbnew[i] = clipval(Math.round(parseInt(parse[i + 1], 16) * mult * lighten), 0, 255);
-						}
-						return 'rgb(' + rgbnew.join(',') + ')';
-					}
-				}
-				return color;
-			}
-
-		});
-
-		barHighlightMixin = {
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    target = this.target,
-				    shapeids = this.regionShapes[currentRegion],
-				    newShapes;
-				// will be null if the region value was null
-				if (shapeids) {
-					newShapes = this.renderRegion(currentRegion, highlight);
-					if ($.isArray(newShapes) || $.isArray(shapeids)) {
-						target.replaceWithShapes(shapeids, newShapes);
-						this.regionShapes[currentRegion] = $.map(newShapes, function (newShape) {
-							return newShape.id;
-						});
-					} else {
-						target.replaceWithShape(shapeids, newShapes);
-						this.regionShapes[currentRegion] = newShapes.id;
-					}
-				}
-			},
-
-			render: function render() {
-				var values = this.values,
-				    target = this.target,
-				    regionShapes = this.regionShapes,
-				    shapes,
-				    ids,
-				    i,
-				    j;
-
-				if (!this.cls._super.render.call(this)) {
-					return;
-				}
-				for (i = values.length; i--;) {
-					shapes = this.renderRegion(i);
-					if (shapes) {
-						if ($.isArray(shapes)) {
-							ids = [];
-							for (j = shapes.length; j--;) {
-								shapes[j].append();
-								ids.push(shapes[j].id);
-							}
-							regionShapes[i] = ids;
-						} else {
-							shapes.append();
-							regionShapes[i] = shapes.id; // store just the shapeid
-						}
-					} else {
-						// null value
-						regionShapes[i] = null;
-					}
-				}
-				target.render();
-			}
-		};
-
-		/**
-   * Line charts
-   */
-		$.fn.sparkline.line = line = createClass($.fn.sparkline._base, {
-			type: 'line',
-
-			init: function init(el, values, options, width, height) {
-				line._super.init.call(this, el, values, options, width, height);
-				this.vertices = [];
-				this.regionMap = [];
-				this.xvalues = [];
-				this.yvalues = [];
-				this.yminmax = [];
-				this.hightlightSpotId = null;
-				this.lastShapeId = null;
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var i,
-				    regionMap = this.regionMap; // maps regions to value positions
-				for (i = regionMap.length; i--;) {
-					if (regionMap[i] !== null && x >= regionMap[i][0] && x <= regionMap[i][1]) {
-						return regionMap[i][2];
-					}
-				}
-				return undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.yvalues[currentRegion] === null,
-					x: this.xvalues[currentRegion],
-					y: this.yvalues[currentRegion],
-					color: this.options.get('lineColor'),
-					fillColor: this.options.get('fillColor'),
-					offset: currentRegion
-				};
-			},
-
-			renderHighlight: function renderHighlight() {
-				var currentRegion = this.currentRegion,
-				    target = this.target,
-				    vertex = this.vertices[currentRegion],
-				    options = this.options,
-				    spotRadius = options.get('spotRadius'),
-				    highlightSpotColor = options.get('highlightSpotColor'),
-				    highlightLineColor = options.get('highlightLineColor'),
-				    highlightSpot,
-				    highlightLine;
-
-				if (!vertex) {
-					return;
-				}
-				if (spotRadius && highlightSpotColor) {
-					highlightSpot = target.drawCircle(vertex[0], vertex[1], spotRadius, undefined, highlightSpotColor);
-					this.highlightSpotId = highlightSpot.id;
-					target.insertAfterShape(this.lastShapeId, highlightSpot);
-				}
-				if (highlightLineColor) {
-					highlightLine = target.drawLine(vertex[0], this.canvasTop, vertex[0], this.canvasTop + this.canvasHeight, highlightLineColor);
-					this.highlightLineId = highlightLine.id;
-					target.insertAfterShape(this.lastShapeId, highlightLine);
-				}
-			},
-
-			removeHighlight: function removeHighlight() {
-				var target = this.target;
-				if (this.highlightSpotId) {
-					target.removeShapeId(this.highlightSpotId);
-					this.highlightSpotId = null;
-				}
-				if (this.highlightLineId) {
-					target.removeShapeId(this.highlightLineId);
-					this.highlightLineId = null;
-				}
-			},
-
-			scanValues: function scanValues() {
-				var values = this.values,
-				    valcount = values.length,
-				    xvalues = this.xvalues,
-				    yvalues = this.yvalues,
-				    yminmax = this.yminmax,
-				    i,
-				    val,
-				    isStr,
-				    isArray,
-				    sp;
-				for (i = 0; i < valcount; i++) {
-					val = values[i];
-					isStr = typeof values[i] === 'string';
-					isArray = _typeof(values[i]) === 'object' && values[i] instanceof Array;
-					sp = isStr && values[i].split(':');
-					if (isStr && sp.length === 2) {
-						// x:y
-						xvalues.push(Number(sp[0]));
-						yvalues.push(Number(sp[1]));
-						yminmax.push(Number(sp[1]));
-					} else if (isArray) {
-						xvalues.push(val[0]);
-						yvalues.push(val[1]);
-						yminmax.push(val[1]);
-					} else {
-						xvalues.push(i);
-						if (values[i] === null || values[i] === 'null') {
-							yvalues.push(null);
-						} else {
-							yvalues.push(Number(val));
-							yminmax.push(Number(val));
-						}
-					}
-				}
-				if (this.options.get('xvalues')) {
-					xvalues = this.options.get('xvalues');
-				}
-
-				this.maxy = this.maxyorg = Math.max.apply(Math, yminmax);
-				this.miny = this.minyorg = Math.min.apply(Math, yminmax);
-
-				this.maxx = Math.max.apply(Math, xvalues);
-				this.minx = Math.min.apply(Math, xvalues);
-
-				this.xvalues = xvalues;
-				this.yvalues = yvalues;
-				this.yminmax = yminmax;
-			},
-
-			processRangeOptions: function processRangeOptions() {
-				var options = this.options,
-				    normalRangeMin = options.get('normalRangeMin'),
-				    normalRangeMax = options.get('normalRangeMax');
-
-				if (normalRangeMin !== undefined) {
-					if (normalRangeMin < this.miny) {
-						this.miny = normalRangeMin;
-					}
-					if (normalRangeMax > this.maxy) {
-						this.maxy = normalRangeMax;
-					}
-				}
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.miny)) {
-					this.miny = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.maxy)) {
-					this.maxy = options.get('chartRangeMax');
-				}
-				if (options.get('chartRangeMinX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMinX') < this.minx)) {
-					this.minx = options.get('chartRangeMinX');
-				}
-				if (options.get('chartRangeMaxX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMaxX') > this.maxx)) {
-					this.maxx = options.get('chartRangeMaxX');
-				}
-			},
-
-			drawNormalRange: function drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey) {
-				var normalRangeMin = this.options.get('normalRangeMin'),
-				    normalRangeMax = this.options.get('normalRangeMax'),
-				    ytop = canvasTop + Math.round(canvasHeight - canvasHeight * ((normalRangeMax - this.miny) / rangey)),
-				    height = Math.round(canvasHeight * (normalRangeMax - normalRangeMin) / rangey);
-				this.target.drawRect(canvasLeft, ytop, canvasWidth, height, undefined, this.options.get('normalRangeColor')).append();
-			},
-
-			render: function render() {
-				var options = this.options,
-				    target = this.target,
-				    canvasWidth = this.canvasWidth,
-				    canvasHeight = this.canvasHeight,
-				    vertices = this.vertices,
-				    spotRadius = options.get('spotRadius'),
-				    regionMap = this.regionMap,
-				    rangex,
-				    rangey,
-				    yvallast,
-				    canvasTop,
-				    canvasLeft,
-				    vertex,
-				    path,
-				    paths,
-				    x,
-				    y,
-				    xnext,
-				    xpos,
-				    xposnext,
-				    last,
-				    next,
-				    yvalcount,
-				    lineShapes,
-				    fillShapes,
-				    plen,
-				    valueSpots,
-				    hlSpotsEnabled,
-				    color,
-				    xvalues,
-				    yvalues,
-				    i;
-
-				if (!line._super.render.call(this)) {
-					return;
-				}
-
-				this.scanValues();
-				this.processRangeOptions();
-
-				xvalues = this.xvalues;
-				yvalues = this.yvalues;
-
-				if (!this.yminmax.length || this.yvalues.length < 2) {
-					// empty or all null valuess
-					return;
-				}
-
-				canvasTop = canvasLeft = 0;
-
-				rangex = this.maxx - this.minx === 0 ? 1 : this.maxx - this.minx;
-				rangey = this.maxy - this.miny === 0 ? 1 : this.maxy - this.miny;
-				yvallast = this.yvalues.length - 1;
-
-				if (spotRadius && (canvasWidth < spotRadius * 4 || canvasHeight < spotRadius * 4)) {
-					spotRadius = 0;
-				}
-				if (spotRadius) {
-					// adjust the canvas size as required so that spots will fit
-					hlSpotsEnabled = options.get('highlightSpotColor') && !options.get('disableInteraction');
-					if (hlSpotsEnabled || options.get('minSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.miny) {
-						canvasHeight -= Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || options.get('maxSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.maxy) {
-						canvasHeight -= Math.ceil(spotRadius);
-						canvasTop += Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || (options.get('minSpotColor') || options.get('maxSpotColor')) && (yvalues[0] === this.miny || yvalues[0] === this.maxy)) {
-						canvasLeft += Math.ceil(spotRadius);
-						canvasWidth -= Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || options.get('spotColor') || options.get('minSpotColor') || options.get('maxSpotColor') && (yvalues[yvallast] === this.miny || yvalues[yvallast] === this.maxy)) {
-						canvasWidth -= Math.ceil(spotRadius);
-					}
-				}
-
-				canvasHeight--;
-
-				if (options.get('normalRangeMin') !== undefined && !options.get('drawNormalOnTop')) {
-					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
-				}
-
-				path = [];
-				paths = [path];
-				last = next = null;
-				yvalcount = yvalues.length;
-				for (i = 0; i < yvalcount; i++) {
-					x = xvalues[i];
-					xnext = xvalues[i + 1];
-					y = yvalues[i];
-					xpos = canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex));
-					xposnext = i < yvalcount - 1 ? canvasLeft + Math.round((xnext - this.minx) * (canvasWidth / rangex)) : canvasWidth;
-					next = xpos + (xposnext - xpos) / 2;
-					regionMap[i] = [last || 0, next, i];
-					last = next;
-					if (y === null) {
-						if (i) {
-							if (yvalues[i - 1] !== null) {
-								path = [];
-								paths.push(path);
-							}
-							vertices.push(null);
-						}
-					} else {
-						if (y < this.miny) {
-							y = this.miny;
-						}
-						if (y > this.maxy) {
-							y = this.maxy;
-						}
-						if (!path.length) {
-							// previous value was null
-							path.push([xpos, canvasTop + canvasHeight]);
-						}
-						vertex = [xpos, canvasTop + Math.round(canvasHeight - canvasHeight * ((y - this.miny) / rangey))];
-						path.push(vertex);
-						vertices.push(vertex);
-					}
-				}
-
-				lineShapes = [];
-				fillShapes = [];
-				plen = paths.length;
-				for (i = 0; i < plen; i++) {
-					path = paths[i];
-					if (path.length) {
-						if (options.get('fillColor')) {
-							path.push([path[path.length - 1][0], canvasTop + canvasHeight]);
-							fillShapes.push(path.slice(0));
-							path.pop();
-						}
-						// if there's only a single point in this path, then we want to display it
-						// as a vertical line which means we keep path[0]  as is
-						if (path.length > 2) {
-							// else we want the first value
-							path[0] = [path[0][0], path[1][1]];
-						}
-						lineShapes.push(path);
-					}
-				}
-
-				// draw the fill first, then optionally the normal range, then the line on top of that
-				plen = fillShapes.length;
-				for (i = 0; i < plen; i++) {
-					target.drawShape(fillShapes[i], options.get('fillColor'), options.get('fillColor')).append();
-				}
-
-				if (options.get('normalRangeMin') !== undefined && options.get('drawNormalOnTop')) {
-					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
-				}
-
-				plen = lineShapes.length;
-				for (i = 0; i < plen; i++) {
-					target.drawShape(lineShapes[i], options.get('lineColor'), undefined, options.get('lineWidth')).append();
-				}
-
-				if (spotRadius && options.get('valueSpots')) {
-					valueSpots = options.get('valueSpots');
-					if (valueSpots.get === undefined) {
-						valueSpots = new RangeMap(valueSpots);
-					}
-					for (i = 0; i < yvalcount; i++) {
-						color = valueSpots.get(yvalues[i]);
-						if (color) {
-							target.drawCircle(canvasLeft + Math.round((xvalues[i] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[i] - this.miny) / rangey)), spotRadius, undefined, color).append();
-						}
-					}
-				}
-				if (spotRadius && options.get('spotColor') && yvalues[yvallast] !== null) {
-					target.drawCircle(canvasLeft + Math.round((xvalues[xvalues.length - 1] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[yvallast] - this.miny) / rangey)), spotRadius, undefined, options.get('spotColor')).append();
-				}
-				if (this.maxy !== this.minyorg) {
-					if (spotRadius && options.get('minSpotColor')) {
-						x = xvalues[$.inArray(this.minyorg, yvalues)];
-						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.minyorg - this.miny) / rangey)), spotRadius, undefined, options.get('minSpotColor')).append();
-					}
-					if (spotRadius && options.get('maxSpotColor')) {
-						x = xvalues[$.inArray(this.maxyorg, yvalues)];
-						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.maxyorg - this.miny) / rangey)), spotRadius, undefined, options.get('maxSpotColor')).append();
-					}
-				}
-
-				this.lastShapeId = target.getLastShapeId();
-				this.canvasTop = canvasTop;
-				target.render();
-			}
-		});
-
-		/**
-   * Bar charts
-   */
-		$.fn.sparkline.bar = bar = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'bar',
-
-			init: function init(el, values, options, width, height) {
-				var barWidth = parseInt(options.get('barWidth'), 10),
-				    barSpacing = parseInt(options.get('barSpacing'), 10),
-				    chartRangeMin = options.get('chartRangeMin'),
-				    chartRangeMax = options.get('chartRangeMax'),
-				    chartRangeClip = options.get('chartRangeClip'),
-				    stackMin = Infinity,
-				    stackMax = -Infinity,
-				    isStackString,
-				    groupMin,
-				    groupMax,
-				    stackRanges,
-				    numValues,
-				    i,
-				    vlen,
-				    range,
-				    zeroAxis,
-				    xaxisOffset,
-				    min,
-				    max,
-				    clipMin,
-				    clipMax,
-				    stacked,
-				    vlist,
-				    j,
-				    slen,
-				    svals,
-				    val,
-				    yoffset,
-				    yMaxCalc,
-				    canvasHeightEf;
-				bar._super.init.call(this, el, values, options, width, height);
-
-				// scan values to determine whether to stack bars
-				for (i = 0, vlen = values.length; i < vlen; i++) {
-					val = values[i];
-					isStackString = typeof val === 'string' && val.indexOf(':') > -1;
-					if (isStackString || $.isArray(val)) {
-						stacked = true;
-						if (isStackString) {
-							val = values[i] = normalizeValues(val.split(':'));
-						}
-						val = remove(val, null); // min/max will treat null as zero
-						groupMin = Math.min.apply(Math, val);
-						groupMax = Math.max.apply(Math, val);
-						if (groupMin < stackMin) {
-							stackMin = groupMin;
-						}
-						if (groupMax > stackMax) {
-							stackMax = groupMax;
-						}
-					}
-				}
-
-				this.stacked = stacked;
-				this.regionShapes = {};
-				this.barWidth = barWidth;
-				this.barSpacing = barSpacing;
-				this.totalBarWidth = barWidth + barSpacing;
-				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
-
-				this.initTarget();
-
-				if (chartRangeClip) {
-					clipMin = chartRangeMin === undefined ? -Infinity : chartRangeMin;
-					clipMax = chartRangeMax === undefined ? Infinity : chartRangeMax;
-				}
-
-				numValues = [];
-				stackRanges = stacked ? [] : numValues;
-				var stackTotals = [];
-				var stackRangesNeg = [];
-				for (i = 0, vlen = values.length; i < vlen; i++) {
-					if (stacked) {
-						vlist = values[i];
-						values[i] = svals = [];
-						stackTotals[i] = 0;
-						stackRanges[i] = stackRangesNeg[i] = 0;
-						for (j = 0, slen = vlist.length; j < slen; j++) {
-							val = svals[j] = chartRangeClip ? clipval(vlist[j], clipMin, clipMax) : vlist[j];
-							if (val !== null) {
-								if (val > 0) {
-									stackTotals[i] += val;
-								}
-								if (stackMin < 0 && stackMax > 0) {
-									if (val < 0) {
-										stackRangesNeg[i] += Math.abs(val);
-									} else {
-										stackRanges[i] += val;
-									}
-								} else {
-									stackRanges[i] += Math.abs(val - (val < 0 ? stackMax : stackMin));
-								}
-								numValues.push(val);
-							}
-						}
-					} else {
-						val = chartRangeClip ? clipval(values[i], clipMin, clipMax) : values[i];
-						val = values[i] = normalizeValue(val);
-						if (val !== null) {
-							numValues.push(val);
-						}
-					}
-				}
-				this.max = max = Math.max.apply(Math, numValues);
-				this.min = min = Math.min.apply(Math, numValues);
-				this.stackMax = stackMax = stacked ? Math.max.apply(Math, stackTotals) : max;
-				this.stackMin = stackMin = stacked ? Math.min.apply(Math, numValues) : min;
-
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < min)) {
-					min = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > max)) {
-					max = options.get('chartRangeMax');
-				}
-
-				this.zeroAxis = zeroAxis = options.get('zeroAxis', true);
-				if (min <= 0 && max >= 0 && zeroAxis) {
-					xaxisOffset = 0;
-				} else if (zeroAxis == false) {
-					xaxisOffset = min;
-				} else if (min > 0) {
-					xaxisOffset = min;
-				} else {
-					xaxisOffset = max;
-				}
-				this.xaxisOffset = xaxisOffset;
-
-				range = stacked ? Math.max.apply(Math, stackRanges) + Math.max.apply(Math, stackRangesNeg) : max - min;
-
-				// as we plot zero/min values a single pixel line, we add a pixel to all other
-				// values - Reduce the effective canvas size to suit
-				this.canvasHeightEf = zeroAxis && min < 0 ? this.canvasHeight - 2 : this.canvasHeight - 1;
-
-				if (min < xaxisOffset) {
-					yMaxCalc = stacked && max >= 0 ? stackMax : max;
-					yoffset = (yMaxCalc - xaxisOffset) / range * this.canvasHeight;
-					if (yoffset !== Math.ceil(yoffset)) {
-						this.canvasHeightEf -= 2;
-						yoffset = Math.ceil(yoffset);
-					}
-				} else {
-					yoffset = this.canvasHeight;
-				}
-				this.yoffset = yoffset;
-
-				if ($.isArray(options.get('colorMap'))) {
-					this.colorMapByIndex = options.get('colorMap');
-					this.colorMapByValue = null;
-				} else {
-					this.colorMapByIndex = null;
-					this.colorMapByValue = options.get('colorMap');
-					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
-						this.colorMapByValue = new RangeMap(this.colorMapByValue);
-					}
-				}
-
-				this.range = range;
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var result = Math.floor(x / this.totalBarWidth);
-				return result < 0 || result >= this.values.length ? undefined : result;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion,
-				    values = ensureArray(this.values[currentRegion]),
-				    result = [],
-				    value,
-				    i;
-				for (i = values.length; i--;) {
-					value = values[i];
-					result.push({
-						isNull: value === null,
-						value: value,
-						color: this.calcColor(i, value, currentRegion),
-						offset: currentRegion
-					});
-				}
-				return result;
-			},
-
-			calcColor: function calcColor(stacknum, value, valuenum) {
-				var colorMapByIndex = this.colorMapByIndex,
-				    colorMapByValue = this.colorMapByValue,
-				    options = this.options,
-				    color,
-				    newColor;
-				if (this.stacked) {
-					color = options.get('stackedBarColor');
-				} else {
-					color = value < 0 ? options.get('negBarColor') : options.get('barColor');
-				}
-				if (value === 0 && options.get('zeroColor') !== undefined) {
-					color = options.get('zeroColor');
-				}
-				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
-					color = newColor;
-				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
-					color = colorMapByIndex[valuenum];
-				}
-				return $.isArray(color) ? color[stacknum % color.length] : color;
-			},
-
-			/**
-    * Render bar(s) for a region
-    */
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var vals = this.values[valuenum],
-				    options = this.options,
-				    xaxisOffset = this.xaxisOffset,
-				    result = [],
-				    range = this.range,
-				    stacked = this.stacked,
-				    target = this.target,
-				    x = valuenum * this.totalBarWidth,
-				    canvasHeightEf = this.canvasHeightEf,
-				    yoffset = this.yoffset,
-				    y,
-				    height,
-				    color,
-				    isNull,
-				    yoffsetNeg,
-				    i,
-				    valcount,
-				    val,
-				    minPlotted,
-				    allMin;
-
-				vals = $.isArray(vals) ? vals : [vals];
-				valcount = vals.length;
-				val = vals[0];
-				isNull = all(null, vals);
-				allMin = all(xaxisOffset, vals, true);
-
-				if (isNull) {
-					if (options.get('nullColor')) {
-						color = highlight ? options.get('nullColor') : this.calcHighlightColor(options.get('nullColor'), options);
-						y = yoffset > 0 ? yoffset - 1 : yoffset;
-						return target.drawRect(x, y, this.barWidth - 1, 0, color, color);
-					} else {
-						return undefined;
-					}
-				}
-				yoffsetNeg = yoffset;
-				for (i = 0; i < valcount; i++) {
-					val = vals[i];
-
-					if (stacked && val === xaxisOffset) {
-						if (!allMin || minPlotted) {
-							continue;
-						}
-						minPlotted = true;
-					}
-
-					if (range > 0) {
-						height = Math.floor(canvasHeightEf * (Math.abs(val - xaxisOffset) / range)) + 1;
-					} else {
-						height = 1;
-					}
-					if (val < xaxisOffset || val === xaxisOffset && yoffset === 0) {
-						y = yoffsetNeg;
-						yoffsetNeg += height;
-					} else {
-						y = yoffset - height;
-						yoffset -= height;
-					}
-					color = this.calcColor(i, val, valuenum);
-					if (highlight) {
-						color = this.calcHighlightColor(color, options);
-					}
-					result.push(target.drawRect(x, y, this.barWidth - 1, height - 1, color, color));
-				}
-				if (result.length === 1) {
-					return result[0];
-				}
-				return result;
-			}
-		});
-
-		/**
-   * Tristate charts
-   */
-		$.fn.sparkline.tristate = tristate = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'tristate',
-
-			init: function init(el, values, options, width, height) {
-				var barWidth = parseInt(options.get('barWidth'), 10),
-				    barSpacing = parseInt(options.get('barSpacing'), 10);
-				tristate._super.init.call(this, el, values, options, width, height);
-
-				this.regionShapes = {};
-				this.barWidth = barWidth;
-				this.barSpacing = barSpacing;
-				this.totalBarWidth = barWidth + barSpacing;
-				this.values = $.map(values, Number);
-				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
-
-				if ($.isArray(options.get('colorMap'))) {
-					this.colorMapByIndex = options.get('colorMap');
-					this.colorMapByValue = null;
-				} else {
-					this.colorMapByIndex = null;
-					this.colorMapByValue = options.get('colorMap');
-					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
-						this.colorMapByValue = new RangeMap(this.colorMapByValue);
-					}
-				}
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				return Math.floor(x / this.totalBarWidth);
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					color: this.calcColor(this.values[currentRegion], currentRegion),
-					offset: currentRegion
-				};
-			},
-
-			calcColor: function calcColor(value, valuenum) {
-				var values = this.values,
-				    options = this.options,
-				    colorMapByIndex = this.colorMapByIndex,
-				    colorMapByValue = this.colorMapByValue,
-				    color,
-				    newColor;
-
-				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
-					color = newColor;
-				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
-					color = colorMapByIndex[valuenum];
-				} else if (values[valuenum] < 0) {
-					color = options.get('negBarColor');
-				} else if (values[valuenum] > 0) {
-					color = options.get('posBarColor');
-				} else {
-					color = options.get('zeroBarColor');
-				}
-				return color;
-			},
-
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var values = this.values,
-				    options = this.options,
-				    target = this.target,
-				    canvasHeight,
-				    height,
-				    halfHeight,
-				    x,
-				    y,
-				    color;
-
-				canvasHeight = target.pixelHeight;
-				halfHeight = Math.round(canvasHeight / 2);
-
-				x = valuenum * this.totalBarWidth;
-				if (values[valuenum] < 0) {
-					y = halfHeight;
-					height = halfHeight - 1;
-				} else if (values[valuenum] > 0) {
-					y = 0;
-					height = halfHeight - 1;
-				} else {
-					y = halfHeight - 1;
-					height = 2;
-				}
-				color = this.calcColor(values[valuenum], valuenum);
-				if (color === null) {
-					return;
-				}
-				if (highlight) {
-					color = this.calcHighlightColor(color, options);
-				}
-				return target.drawRect(x, y, this.barWidth - 1, height - 1, color, color);
-			}
-		});
-
-		/**
-   * Discrete charts
-   */
-		$.fn.sparkline.discrete = discrete = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'discrete',
-
-			init: function init(el, values, options, width, height) {
-				discrete._super.init.call(this, el, values, options, width, height);
-
-				this.regionShapes = {};
-				this.values = values = $.map(values, Number);
-				this.min = Math.min.apply(Math, values);
-				this.max = Math.max.apply(Math, values);
-				this.range = this.max - this.min;
-				this.width = width = options.get('width') === 'auto' ? values.length * 2 : this.width;
-				this.interval = Math.floor(width / values.length);
-				this.itemWidth = width / values.length;
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.min)) {
-					this.min = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.max)) {
-					this.max = options.get('chartRangeMax');
-				}
-				this.initTarget();
-				if (this.target) {
-					this.lineHeight = options.get('lineHeight') === 'auto' ? Math.round(this.canvasHeight * 0.3) : options.get('lineHeight');
-				}
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				return Math.floor(x / this.itemWidth);
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					offset: currentRegion
-				};
-			},
-
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var values = this.values,
-				    options = this.options,
-				    min = this.min,
-				    max = this.max,
-				    range = this.range,
-				    interval = this.interval,
-				    target = this.target,
-				    canvasHeight = this.canvasHeight,
-				    lineHeight = this.lineHeight,
-				    pheight = canvasHeight - lineHeight,
-				    ytop,
-				    val,
-				    color,
-				    x;
-
-				val = clipval(values[valuenum], min, max);
-				x = valuenum * interval;
-				ytop = Math.round(pheight - pheight * ((val - min) / range));
-				color = options.get('thresholdColor') && val < options.get('thresholdValue') ? options.get('thresholdColor') : options.get('lineColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, options);
-				}
-				return target.drawLine(x, ytop, x, ytop + lineHeight, color);
-			}
-		});
-
-		/**
-   * Bullet charts
-   */
-		$.fn.sparkline.bullet = bullet = createClass($.fn.sparkline._base, {
-			type: 'bullet',
-
-			init: function init(el, values, options, width, height) {
-				var min, max, vals;
-				bullet._super.init.call(this, el, values, options, width, height);
-
-				// values: target, performance, range1, range2, range3
-				this.values = values = normalizeValues(values);
-				// target or performance could be null
-				vals = values.slice();
-				vals[0] = vals[0] === null ? vals[2] : vals[0];
-				vals[1] = values[1] === null ? vals[2] : vals[1];
-				min = Math.min.apply(Math, values);
-				max = Math.max.apply(Math, values);
-				if (options.get('base') === undefined) {
-					min = min < 0 ? min : 0;
-				} else {
-					min = options.get('base');
-				}
-				this.min = min;
-				this.max = max;
-				this.range = max - min;
-				this.shapes = {};
-				this.valueShapes = {};
-				this.regiondata = {};
-				this.width = width = options.get('width') === 'auto' ? '4.0em' : width;
-				this.target = this.$el.simpledraw(width, height, options.get('composite'));
-				if (!values.length) {
-					this.disabled = true;
-				}
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var shapeid = this.target.getShapeAt(el, x, y);
-				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					fieldkey: currentRegion.substr(0, 1),
-					value: this.values[currentRegion.substr(1)],
-					region: currentRegion
-				};
-			},
-
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    shapeid = this.valueShapes[currentRegion],
-				    shape;
-				delete this.shapes[shapeid];
-				switch (currentRegion.substr(0, 1)) {
-					case 'r':
-						shape = this.renderRange(currentRegion.substr(1), highlight);
-						break;
-					case 'p':
-						shape = this.renderPerformance(highlight);
-						break;
-					case 't':
-						shape = this.renderTarget(highlight);
-						break;
-				}
-				this.valueShapes[currentRegion] = shape.id;
-				this.shapes[shape.id] = currentRegion;
-				this.target.replaceWithShape(shapeid, shape);
-			},
-
-			renderRange: function renderRange(rn, highlight) {
-				var rangeval = this.values[rn],
-				    rangewidth = Math.round(this.canvasWidth * ((rangeval - this.min) / this.range)),
-				    color = this.options.get('rangeColors')[rn - 2];
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(0, 0, rangewidth - 1, this.canvasHeight - 1, color, color);
-			},
-
-			renderPerformance: function renderPerformance(highlight) {
-				var perfval = this.values[1],
-				    perfwidth = Math.round(this.canvasWidth * ((perfval - this.min) / this.range)),
-				    color = this.options.get('performanceColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(0, Math.round(this.canvasHeight * 0.3), perfwidth - 1, Math.round(this.canvasHeight * 0.4) - 1, color, color);
-			},
-
-			renderTarget: function renderTarget(highlight) {
-				var targetval = this.values[0],
-				    x = Math.round(this.canvasWidth * ((targetval - this.min) / this.range) - this.options.get('targetWidth') / 2),
-				    targettop = Math.round(this.canvasHeight * 0.10),
-				    targetheight = this.canvasHeight - targettop * 2,
-				    color = this.options.get('targetColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(x, targettop, this.options.get('targetWidth') - 1, targetheight - 1, color, color);
-			},
-
-			render: function render() {
-				var vlen = this.values.length,
-				    target = this.target,
-				    i,
-				    shape;
-				if (!bullet._super.render.call(this)) {
-					return;
-				}
-				for (i = 2; i < vlen; i++) {
-					shape = this.renderRange(i).append();
-					this.shapes[shape.id] = 'r' + i;
-					this.valueShapes['r' + i] = shape.id;
-				}
-				if (this.values[1] !== null) {
-					shape = this.renderPerformance().append();
-					this.shapes[shape.id] = 'p1';
-					this.valueShapes.p1 = shape.id;
-				}
-				if (this.values[0] !== null) {
-					shape = this.renderTarget().append();
-					this.shapes[shape.id] = 't0';
-					this.valueShapes.t0 = shape.id;
-				}
-				target.render();
-			}
-		});
-
-		/**
-   * Pie charts
-   */
-		$.fn.sparkline.pie = pie = createClass($.fn.sparkline._base, {
-			type: 'pie',
-
-			init: function init(el, values, options, width, height) {
-				var total = 0,
-				    i;
-
-				pie._super.init.call(this, el, values, options, width, height);
-
-				this.shapes = {}; // map shape ids to value offsets
-				this.valueShapes = {}; // maps value offsets to shape ids
-				this.values = values = $.map(values, Number);
-
-				if (options.get('width') === 'auto') {
-					this.width = this.height;
-				}
-
-				if (values.length > 0) {
-					for (i = values.length; i--;) {
-						total += values[i];
-					}
-				}
-				this.total = total;
-				this.initTarget();
-				this.radius = Math.floor(Math.min(this.canvasWidth, this.canvasHeight) / 2);
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var shapeid = this.target.getShapeAt(el, x, y);
-				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					percent: this.values[currentRegion] / this.total * 100,
-					color: this.options.get('sliceColors')[currentRegion % this.options.get('sliceColors').length],
-					offset: currentRegion
-				};
-			},
-
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    newslice = this.renderSlice(currentRegion, highlight),
-				    shapeid = this.valueShapes[currentRegion];
-				delete this.shapes[shapeid];
-				this.target.replaceWithShape(shapeid, newslice);
-				this.valueShapes[currentRegion] = newslice.id;
-				this.shapes[newslice.id] = currentRegion;
-			},
-
-			renderSlice: function renderSlice(valuenum, highlight) {
-				var target = this.target,
-				    options = this.options,
-				    radius = this.radius,
-				    borderWidth = options.get('borderWidth'),
-				    offset = options.get('offset'),
-				    circle = 2 * Math.PI,
-				    values = this.values,
-				    total = this.total,
-				    next = offset ? 2 * Math.PI * (offset / 360) : 0,
-				    start,
-				    end,
-				    i,
-				    vlen,
-				    color;
-
-				vlen = values.length;
-				for (i = 0; i < vlen; i++) {
-					start = next;
-					end = next;
-					if (total > 0) {
-						// avoid divide by zero
-						end = next + circle * (values[i] / total);
-					}
-					if (valuenum === i) {
-						color = options.get('sliceColors')[i % options.get('sliceColors').length];
-						if (highlight) {
-							color = this.calcHighlightColor(color, options);
-						}
-
-						return target.drawPieSlice(radius, radius, radius - borderWidth, start, end, undefined, color);
-					}
-					next = end;
-				}
-			},
-
-			render: function render() {
-				var target = this.target,
-				    values = this.values,
-				    options = this.options,
-				    radius = this.radius,
-				    borderWidth = options.get('borderWidth'),
-				    shape,
-				    i;
-
-				if (!pie._super.render.call(this)) {
-					return;
-				}
-				if (borderWidth) {
-					target.drawCircle(radius, radius, Math.floor(radius - borderWidth / 2), options.get('borderColor'), undefined, borderWidth).append();
-				}
-				for (i = values.length; i--;) {
-					if (values[i]) {
-						// don't render zero values
-						shape = this.renderSlice(i).append();
-						this.valueShapes[i] = shape.id; // store just the shapeid
-						this.shapes[shape.id] = i;
-					}
-				}
-				target.render();
-			}
-		});
-
-		/**
-   * Box plots
-   */
-		$.fn.sparkline.box = box = createClass($.fn.sparkline._base, {
-			type: 'box',
-
-			init: function init(el, values, options, width, height) {
-				box._super.init.call(this, el, values, options, width, height);
-				this.values = $.map(values, Number);
-				this.width = options.get('width') === 'auto' ? '4.0em' : width;
-				this.initTarget();
-				if (!this.values.length) {
-					this.disabled = 1;
-				}
-			},
-
-			/**
-    * Simulate a single region
-    */
-			getRegion: function getRegion() {
-				return 1;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var result = [{ field: 'lq', value: this.quartiles[0] }, { field: 'med', value: this.quartiles[1] }, { field: 'uq', value: this.quartiles[2] }];
-				if (this.loutlier !== undefined) {
-					result.push({ field: 'lo', value: this.loutlier });
-				}
-				if (this.routlier !== undefined) {
-					result.push({ field: 'ro', value: this.routlier });
-				}
-				if (this.lwhisker !== undefined) {
-					result.push({ field: 'lw', value: this.lwhisker });
-				}
-				if (this.rwhisker !== undefined) {
-					result.push({ field: 'rw', value: this.rwhisker });
-				}
-				return result;
-			},
-
-			render: function render() {
-				var target = this.target,
-				    values = this.values,
-				    vlen = values.length,
-				    options = this.options,
-				    canvasWidth = this.canvasWidth,
-				    canvasHeight = this.canvasHeight,
-				    minValue = options.get('chartRangeMin') === undefined ? Math.min.apply(Math, values) : options.get('chartRangeMin'),
-				    maxValue = options.get('chartRangeMax') === undefined ? Math.max.apply(Math, values) : options.get('chartRangeMax'),
-				    canvasLeft = 0,
-				    lwhisker,
-				    loutlier,
-				    iqr,
-				    q1,
-				    q2,
-				    q3,
-				    rwhisker,
-				    routlier,
-				    i,
-				    size,
-				    unitSize;
-
-				if (!box._super.render.call(this)) {
-					return;
-				}
-
-				if (options.get('raw')) {
-					if (options.get('showOutliers') && values.length > 5) {
-						loutlier = values[0];
-						lwhisker = values[1];
-						q1 = values[2];
-						q2 = values[3];
-						q3 = values[4];
-						rwhisker = values[5];
-						routlier = values[6];
-					} else {
-						lwhisker = values[0];
-						q1 = values[1];
-						q2 = values[2];
-						q3 = values[3];
-						rwhisker = values[4];
-					}
-				} else {
-					values.sort(function (a, b) {
-						return a - b;
-					});
-					q1 = quartile(values, 1);
-					q2 = quartile(values, 2);
-					q3 = quartile(values, 3);
-					iqr = q3 - q1;
-					if (options.get('showOutliers')) {
-						lwhisker = rwhisker = undefined;
-						for (i = 0; i < vlen; i++) {
-							if (lwhisker === undefined && values[i] > q1 - iqr * options.get('outlierIQR')) {
-								lwhisker = values[i];
-							}
-							if (values[i] < q3 + iqr * options.get('outlierIQR')) {
-								rwhisker = values[i];
-							}
-						}
-						loutlier = values[0];
-						routlier = values[vlen - 1];
-					} else {
-						lwhisker = values[0];
-						rwhisker = values[vlen - 1];
-					}
-				}
-				this.quartiles = [q1, q2, q3];
-				this.lwhisker = lwhisker;
-				this.rwhisker = rwhisker;
-				this.loutlier = loutlier;
-				this.routlier = routlier;
-
-				unitSize = canvasWidth / (maxValue - minValue + 1);
-				if (options.get('showOutliers')) {
-					canvasLeft = Math.ceil(options.get('spotRadius'));
-					canvasWidth -= 2 * Math.ceil(options.get('spotRadius'));
-					unitSize = canvasWidth / (maxValue - minValue + 1);
-					if (loutlier < lwhisker) {
-						target.drawCircle((loutlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
-					}
-					if (routlier > rwhisker) {
-						target.drawCircle((routlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
-					}
-				}
-
-				// box
-				target.drawRect(Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q3 - q1) * unitSize), Math.round(canvasHeight * 0.8), options.get('boxLineColor'), options.get('boxFillColor')).append();
-				// left whisker
-				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
-				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
-				// right whisker
-				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q3 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
-				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
-				// median line
-				target.drawLine(Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.9), options.get('medianColor')).append();
-				if (options.get('target')) {
-					size = Math.ceil(options.get('spotRadius'));
-					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 - size), Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 + size), options.get('targetColor')).append();
-					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft - size), Math.round(canvasHeight / 2), Math.round((options.get('target') - minValue) * unitSize + canvasLeft + size), Math.round(canvasHeight / 2), options.get('targetColor')).append();
-				}
-				target.render();
-			}
-		});
-
-		// Setup a very simple "virtual canvas" to make drawing the few shapes we need easier
-		// This is accessible as $(foo).simpledraw()
-
-		VShape = createClass({
-			init: function init(target, id, type, args) {
-				this.target = target;
-				this.id = id;
-				this.type = type;
-				this.args = args;
-			},
-			append: function append() {
-				this.target.appendShape(this);
-				return this;
-			}
-		});
-
-		VCanvas_base = createClass({
-			_pxregex: /(\d+)(px)?\s*$/i,
-
-			init: function init(width, height, target) {
-				if (!width) {
-					return;
-				}
-				this.width = width;
-				this.height = height;
-				this.target = target;
-				this.lastShapeId = null;
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-			},
-
-			drawLine: function drawLine(x1, y1, x2, y2, lineColor, lineWidth) {
-				return this.drawShape([[x1, y1], [x2, y2]], lineColor, lineWidth);
-			},
-
-			drawShape: function drawShape(path, lineColor, fillColor, lineWidth) {
-				return this._genShape('Shape', [path, lineColor, fillColor, lineWidth]);
-			},
-
-			drawCircle: function drawCircle(x, y, radius, lineColor, fillColor, lineWidth) {
-				return this._genShape('Circle', [x, y, radius, lineColor, fillColor, lineWidth]);
-			},
-
-			drawPieSlice: function drawPieSlice(x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				return this._genShape('PieSlice', [x, y, radius, startAngle, endAngle, lineColor, fillColor]);
-			},
-
-			drawRect: function drawRect(x, y, width, height, lineColor, fillColor) {
-				return this._genShape('Rect', [x, y, width, height, lineColor, fillColor]);
-			},
-
-			getElement: function getElement() {
-				return this.canvas;
-			},
-
-			/**
-    * Return the most recently inserted shape id
-    */
-			getLastShapeId: function getLastShapeId() {
-				return this.lastShapeId;
-			},
-
-			/**
-    * Clear and reset the canvas
-    */
-			reset: function reset() {
-				alert('reset not implemented');
-			},
-
-			_insert: function _insert(el, target) {
-				$(target).html(el);
-			},
-
-			/**
-    * Calculate the pixel dimensions of the canvas
-    */
-			_calculatePixelDims: function _calculatePixelDims(width, height, canvas) {
-				// XXX This should probably be a configurable option
-				var match;
-				match = this._pxregex.exec(height);
-				if (match) {
-					this.pixelHeight = match[1];
-				} else {
-					this.pixelHeight = $(canvas).height();
-				}
-				match = this._pxregex.exec(width);
-				if (match) {
-					this.pixelWidth = match[1];
-				} else {
-					this.pixelWidth = $(canvas).width();
-				}
-			},
-
-			/**
-    * Generate a shape object and id for later rendering
-    */
-			_genShape: function _genShape(shapetype, shapeargs) {
-				var id = shapeCount++;
-				shapeargs.unshift(id);
-				return new VShape(this, id, shapetype, shapeargs);
-			},
-
-			/**
-    * Add a shape to the end of the render queue
-    */
-			appendShape: function appendShape(shape) {
-				alert('appendShape not implemented');
-			},
-
-			/**
-    * Replace one shape with another
-    */
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				alert('replaceWithShape not implemented');
-			},
-
-			/**
-    * Insert one shape after another in the render queue
-    */
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				alert('insertAfterShape not implemented');
-			},
-
-			/**
-    * Remove a shape from the queue
-    */
-			removeShapeId: function removeShapeId(shapeid) {
-				alert('removeShapeId not implemented');
-			},
-
-			/**
-    * Find a shape at the specified x/y co-ordinates
-    */
-			getShapeAt: function getShapeAt(el, x, y) {
-				alert('getShapeAt not implemented');
-			},
-
-			/**
-    * Render all queued shapes onto the canvas
-    */
-			render: function render() {
-				alert('render not implemented');
-			}
-		});
-
-		VCanvas_canvas = createClass(VCanvas_base, {
-			init: function init(width, height, target, interact) {
-				VCanvas_canvas._super.init.call(this, width, height, target);
-				this.canvas = document.createElement('canvas');
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-				$(this.canvas).css({ display: 'inline-block', width: width, height: height, verticalAlign: 'top' });
-				this._insert(this.canvas, target);
-				this._calculatePixelDims(width, height, this.canvas);
-				this.canvas.width = this.pixelWidth;
-				this.canvas.height = this.pixelHeight;
-				this.interact = interact;
-				this.shapes = {};
-				this.shapeseq = [];
-				this.currentTargetShapeId = undefined;
-				$(this.canvas).css({ width: this.pixelWidth, height: this.pixelHeight });
-			},
-
-			_getContext: function _getContext(lineColor, fillColor, lineWidth) {
-				var context = this.canvas.getContext('2d');
-				if (lineColor !== undefined) {
-					context.strokeStyle = lineColor;
-				}
-				context.lineWidth = lineWidth === undefined ? 1 : lineWidth;
-				if (fillColor !== undefined) {
-					context.fillStyle = fillColor;
-				}
-				return context;
-			},
-
-			reset: function reset() {
-				var context = this._getContext();
-				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
-				this.shapes = {};
-				this.shapeseq = [];
-				this.currentTargetShapeId = undefined;
-			},
-
-			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
-				var context = this._getContext(lineColor, fillColor, lineWidth),
-				    i,
-				    plen;
-				context.beginPath();
-				context.moveTo(path[0][0] + 0.5, path[0][1] + 0.5);
-				for (i = 1, plen = path.length; i < plen; i++) {
-					context.lineTo(path[i][0] + 0.5, path[i][1] + 0.5); // the 0.5 offset gives us crisp pixel-width lines
-				}
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor !== undefined) {
-					context.fill();
-				}
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-			},
-
-			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
-				var context = this._getContext(lineColor, fillColor, lineWidth);
-				context.beginPath();
-				context.arc(x, y, radius, 0, 2 * Math.PI, false);
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor !== undefined) {
-					context.fill();
-				}
-			},
-
-			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				var context = this._getContext(lineColor, fillColor);
-				context.beginPath();
-				context.moveTo(x, y);
-				context.arc(x, y, radius, startAngle, endAngle, false);
-				context.lineTo(x, y);
-				context.closePath();
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor) {
-					context.fill();
-				}
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-			},
-
-			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
-				return this._drawShape(shapeid, [[x, y], [x + width, y], [x + width, y + height], [x, y + height], [x, y]], lineColor, fillColor);
-			},
-
-			appendShape: function appendShape(shape) {
-				this.shapes[shape.id] = shape;
-				this.shapeseq.push(shape.id);
-				this.lastShapeId = shape.id;
-				return shape.id;
-			},
-
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				var shapeseq = this.shapeseq,
-				    i;
-				this.shapes[shape.id] = shape;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] == shapeid) {
-						shapeseq[i] = shape.id;
-					}
-				}
-				delete this.shapes[shapeid];
-			},
-
-			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
-				var shapeseq = this.shapeseq,
-				    shapemap = {},
-				    sid,
-				    i,
-				    first;
-
-				for (i = shapeids.length; i--;) {
-					shapemap[shapeids[i]] = true;
-				}
-				for (i = shapeseq.length; i--;) {
-					sid = shapeseq[i];
-					if (shapemap[sid]) {
-						shapeseq.splice(i, 1);
-						delete this.shapes[sid];
-						first = i;
-					}
-				}
-				for (i = shapes.length; i--;) {
-					shapeseq.splice(first, 0, shapes[i].id);
-					this.shapes[shapes[i].id] = shapes[i];
-				}
-			},
-
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				var shapeseq = this.shapeseq,
-				    i;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] === shapeid) {
-						shapeseq.splice(i + 1, 0, shape.id);
-						this.shapes[shape.id] = shape;
-						return;
-					}
-				}
-			},
-
-			removeShapeId: function removeShapeId(shapeid) {
-				var shapeseq = this.shapeseq,
-				    i;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] === shapeid) {
-						shapeseq.splice(i, 1);
-						break;
-					}
-				}
-				delete this.shapes[shapeid];
-			},
-
-			getShapeAt: function getShapeAt(el, x, y) {
-				this.targetX = x;
-				this.targetY = y;
-				this.render();
-				return this.currentTargetShapeId;
-			},
-
-			render: function render() {
-				var shapeseq = this.shapeseq,
-				    shapes = this.shapes,
-				    shapeCount = shapeseq.length,
-				    context = this._getContext(),
-				    shapeid,
-				    shape,
-				    i;
-				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
-				for (i = 0; i < shapeCount; i++) {
-					shapeid = shapeseq[i];
-					shape = shapes[shapeid];
-					this['_draw' + shape.type].apply(this, shape.args);
-				}
-				if (!this.interact) {
-					// not interactive so no need to keep the shapes array
-					this.shapes = {};
-					this.shapeseq = [];
-				}
-			}
-
-		});
-
-		VCanvas_vml = createClass(VCanvas_base, {
-			init: function init(width, height, target) {
-				var groupel;
-				VCanvas_vml._super.init.call(this, width, height, target);
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-				this.canvas = document.createElement('span');
-				$(this.canvas).css({ display: 'inline-block', position: 'relative', overflow: 'hidden', width: width, height: height, margin: '0px', padding: '0px', verticalAlign: 'top' });
-				this._insert(this.canvas, target);
-				this._calculatePixelDims(width, height, this.canvas);
-				this.canvas.width = this.pixelWidth;
-				this.canvas.height = this.pixelHeight;
-				groupel = '<v:group coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '"' + ' style="position:absolute;top:0;left:0;width:' + this.pixelWidth + 'px;height=' + this.pixelHeight + 'px;"></v:group>';
-				this.canvas.insertAdjacentHTML('beforeEnd', groupel);
-				this.group = $(this.canvas).children()[0];
-				this.rendered = false;
-				this.prerender = '';
-			},
-
-			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
-				var vpath = [],
-				    initial,
-				    stroke,
-				    fill,
-				    closed,
-				    vel,
-				    plen,
-				    i;
-				for (i = 0, plen = path.length; i < plen; i++) {
-					vpath[i] = '' + path[i][0] + ',' + path[i][1];
-				}
-				initial = vpath.splice(0, 1);
-				lineWidth = lineWidth === undefined ? 1 : lineWidth;
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				closed = vpath[0] === vpath[vpath.length - 1] ? 'x ' : '';
-				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + initial + ' l ' + vpath.join(', ') + ' ' + closed + 'e">' + ' </v:shape>';
-				return vel;
-			},
-
-			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
-				var stroke, fill, vel;
-				x -= radius;
-				y -= radius;
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				vel = '<v:oval ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;top:' + y + 'px; left:' + x + 'px; width:' + radius * 2 + 'px; height:' + radius * 2 + 'px"></v:oval>';
-				return vel;
-			},
-
-			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				var vpath, startx, starty, endx, endy, stroke, fill, vel;
-				if (startAngle === endAngle) {
-					return ''; // VML seems to have problem when start angle equals end angle.
-				}
-				if (endAngle - startAngle === 2 * Math.PI) {
-					startAngle = 0.0; // VML seems to have a problem when drawing a full circle that doesn't start 0
-					endAngle = 2 * Math.PI;
-				}
-
-				startx = x + Math.round(Math.cos(startAngle) * radius);
-				starty = y + Math.round(Math.sin(startAngle) * radius);
-				endx = x + Math.round(Math.cos(endAngle) * radius);
-				endy = y + Math.round(Math.sin(endAngle) * radius);
-
-				if (startx === endx && starty === endy) {
-					if (endAngle - startAngle < Math.PI) {
-						// Prevent very small slices from being mistaken as a whole pie
-						return '';
-					}
-					// essentially going to be the entire circle, so ignore startAngle
-					startx = endx = x + radius;
-					starty = endy = y;
-				}
-
-				if (startx === endx && starty === endy && endAngle - startAngle < Math.PI) {
-					return '';
-				}
-
-				vpath = [x - radius, y - radius, x + radius, y + radius, startx, starty, endx, endy];
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="1px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + x + ',' + y + ' wa ' + vpath.join(', ') + ' x e">' + ' </v:shape>';
-				return vel;
-			},
-
-			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
-				return this._drawShape(shapeid, [[x, y], [x, y + height], [x + width, y + height], [x + width, y], [x, y]], lineColor, fillColor);
-			},
-
-			reset: function reset() {
-				this.group.innerHTML = '';
-			},
-
-			appendShape: function appendShape(shape) {
-				var vel = this['_draw' + shape.type].apply(this, shape.args);
-				if (this.rendered) {
-					this.group.insertAdjacentHTML('beforeEnd', vel);
-				} else {
-					this.prerender += vel;
-				}
-				this.lastShapeId = shape.id;
-				return shape.id;
-			},
-
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				var existing = $('#jqsshape' + shapeid),
-				    vel = this['_draw' + shape.type].apply(this, shape.args);
-				existing[0].outerHTML = vel;
-			},
-
-			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
-				// replace the first shapeid with all the new shapes then toast the remaining old shapes
-				var existing = $('#jqsshape' + shapeids[0]),
-				    replace = '',
-				    slen = shapes.length,
-				    i;
-				for (i = 0; i < slen; i++) {
-					replace += this['_draw' + shapes[i].type].apply(this, shapes[i].args);
-				}
-				existing[0].outerHTML = replace;
-				for (i = 1; i < shapeids.length; i++) {
-					$('#jqsshape' + shapeids[i]).remove();
-				}
-			},
-
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				var existing = $('#jqsshape' + shapeid),
-				    vel = this['_draw' + shape.type].apply(this, shape.args);
-				existing[0].insertAdjacentHTML('afterEnd', vel);
-			},
-
-			removeShapeId: function removeShapeId(shapeid) {
-				var existing = $('#jqsshape' + shapeid);
-				this.group.removeChild(existing[0]);
-			},
-
-			getShapeAt: function getShapeAt(el, x, y) {
-				var shapeid = el.id.substr(8);
-				return shapeid;
-			},
-
-			render: function render() {
-				if (!this.rendered) {
-					// batch the intial render into a single repaint
-					this.group.innerHTML = this.prerender;
-					this.rendered = true;
-				}
-			}
-		});
-	});
-})(document, Math);
+module.exports = "/images/vendor/bootstrap-fileinput/loading.gif?13630905267b809161e71d0f8a0c017b";
 
 /***/ })
 

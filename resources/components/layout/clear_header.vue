@@ -15,9 +15,9 @@
                     </a>
                 </div>
             </div>
-            <div class="navbar-nav mr-auto" style="width: 60%;">
+            <v-flex xs8 sm8 md8>
                 <multiselect v-model="proyecto" :options="proyectos" placeholder="Seleccione un Proyecto" label="nombre" track-by="nombre"></multiselect>
-            </div>
+            </v-flex>
             <ul class="navbar-nav mr-auto">
                 <b-dd class="user-dropdown">
                     <template slot="button-content">
@@ -110,7 +110,7 @@
                 if(val)
                 {
                     this.$root.$emit("SeleccionProyecto", val.id);
-                    console.log(val);
+                    // console.log(val);
                 }else{
                     this.$root.$emit("SeleccionProyecto", 0);
                     swal.fire({

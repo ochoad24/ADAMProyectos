@@ -1,22 +1,22 @@
 webpackJsonp([85],{
 
-/***/ 2182:
+/***/ 1518:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2183);
+var content = __webpack_require__(1519);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("4d9512fe", content, false, {});
+var update = __webpack_require__(26)("eac81e36", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bb7d75b2\",\"scoped\":false,\"hasInlineConfig\":true}!./portlet.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bb7d75b2\",\"scoped\":false,\"hasInlineConfig\":true}!./portlet.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2183:
+/***/ 1519:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,141 +35,64 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*pricing table 1*/\n.span-btn, .span-btn:hover {\n    color: #666;\n    background-color: #DCDCDC;\n    border-color: #DCDCDC;\n}\n.span-btn.active, .span-btn.active:hover {\n    color: #fff;\n    background-color: #376ea4;\n    border-color: #2d5986;\n}\n/*table styles*/\n.modal-1 {\n    border         : 1px solid #B6D1CC;\n    border-radius  : 3px;\n    margin-top     : 20px;\n    margin-bottom  : 10px;\n    padding-bottom : 25px;\n}\n.modal-1 .pack-heading {\n    background-color : #E1EFEF;\n    padding          : 2px 0;\n    height           : 145px;\n}\n.pack-heading p {\n    color  : #555;\n    margin : 13px 0;\n}\n.modal-1 .pack-title {\n    font-size : 22px;\n    color     : #677777;\n}\n.modal-1 .pack-price {\n    font-size : 36px;\n    position  : relative;\n}\n.modal-1 .pack-price span {\n    font-size : 18px;\n    color     : #777;\n}\n.modal-1 .pack-price .dollar {\n    font-size : 22px;\n    color     : #777;\n    top       : -20px;\n    display   : inline;\n}\n.modal-1 .section-head {\n    font-size   : 15px;\n    font-weight : bold;\n    color       : #60B6A3;\n    margin      : 40px 0 15px;\n}\n.modal-1 .pack-details li {\n    line-height : 38px;\n    color       : #555;\n    font-size   : 14px;\n}\n.modal-1 .pack-details li.text-dummy {\n    color : #999;\n}\n.modal-1 .btn-getit {\n    -webkit-border-radius : 3px;\n    -moz-border-radius    : 3px;\n    border-radius         : 3px;\n    padding               : 5px 17px;\n    margin-top            : 30px;\n}\n.modal-1 .trending-tag {\n    height   : 79px;\n    overflow : hidden;\n    position : absolute;\n    left     : 15px;\n    top      : 20px;\n    width    : 80px;\n}\n.tag-design {\n    font              : bold 12px Noto Sans;\n    background-color  : #3AAE97;\n    padding-top       : 22px;\n    position          : relative;\n    text-align        : center;\n    top               : -12px;\n    left              : -40px;\n    -webkit-transform : rotate(-45deg);\n    -moz-transform    : rotate(-45deg);\n    -ms-transform     : rotate(-45deg);\n    -o-transform      : rotate(-45deg);\n    transform         : rotate(-45deg);\n    width             : 116px;\n    height            : 61px;\n}\n.pro-option {\n    font-size   : 24px;\n    line-height : 24px;\n    margin      : 25px 0;\n}\n.contact-info {\n    font-size     : 14px;\n    margin-bottom : 20px;\n}\n.btn-contact {\n    color         : #4080bf;\n    border        : 1px solid #4080bf;\n    padding       : 6px 25px;\n    border-radius : 20px;\n}\n.btn-contact:hover {\n    background-color : #4080bf;\n    color            : #fff;\n}\n@media screen and (max-width : 767px) {\n.modal-1 .trending-tag {\n        top :20px;\n}\n}\n@media(max-width: 320px){\n.modal-1 .trending-tag{\n        top:20px;\n}\n}\n", ""]);
+exports.push([module.i, "/***Portlet custom css***/\n.portlet {\n    clear: both;\n    margin-top: 0;\n    margin-bottom: 25px;\n    padding: 0;\n}\n.ui-sortable-handle:not(.notsort),\n.portlet.box:not(.notsort) {\n    cursor: move;\n}\n.portlet > .portlet-body {\n    background-color: #fff;\n    padding: 10px;\n    border: 1px solid #ccc;\n    border-top: none;\n}\n.portlet > .portlet-title {\n    padding: 10px 10px 4px 10px;\n    color: #fff;\n    font-size: 16px;\n}\n.portlet-placeholder {\n    border: 1px dotted #ccc;\n    background-color: #dcdcdc;\n    margin: 0 1em 1em 0;\n    height: 130px;\n}\n.sortable {\n    min-height: 50px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2184:
+/***/ 1520:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1521);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("54e1b5b2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bb7d75b2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./draggable_portlets.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bb7d75b2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./draggable_portlets.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1521:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\nbody{font-family:Helvetica,sans-serif\n}\n.playground {\n    display: flex;\n    margin-top: 4rem;\n}\n.color-item {\n    background: #f5f5f5;\n    padding: .5rem;\n    color: #5f5f5f;\n    transition: transform .3s;\n}\n.color-item.dragging {\n    background-color: #fff;\n}\n.color-show {\n    display: flex;\n    flex-wrap: wrap;\n    width: 100%;\n}\n.color-box {\n    width: 31%;\n    /*background: #efefef;*/\n    text-align: center;\n    color: #fff;\n    transition: transform .3s;\n}\n@media (min-width: 320px) and (max-width: 425px) {\n.color-show .color-box{\n        width: 100% !important;\n}\n}\n.color-box.dragging {\n    transform: scale(1.1);\n}\n.in-out-translate-fade-enter-active, .in-out-translate-fade-leave-active {\n    transition: all .5s;\n}\n.in-out-translate-fade-enter, .in-out-translate-fade-leave-active {\n    opacity: 0;\n}\n.in-out-translate-fade-enter {\n    transform: translate3d(100%, 0, 0);\n}\n.in-out-translate-fade-leave-active {\n    transform: translate3d(-100%, 0, 0);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_awe_dnd__ = __webpack_require__(1523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_awe_dnd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_awe_dnd__);
 //
 //
 //
@@ -185,27 +108,382 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_awe_dnd___default.a);
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            isActive: 1,
-            selected: "monthly"
+            colors: [{
+                text: "#6699cc",
+                color_name: "Primary"
+            }, {
+                text: "#868e96",
+                color_name: "Secondary"
+            }, {
+                text: "#66cc99",
+                color_name: "Success"
+            }, {
+                text: "#66ccff",
+                color_name: "Info"
+            }, {
+                text: "#f0ad4e",
+                color_name: "Warning"
+            }, {
+                text: "#ff6666",
+                color_name: "Danger"
+            }, {
+                text: "#343a40",
+                color_name: "Dark"
+            }]
         };
     },
 
-    methods: {
-        number: function number() {
-            this.isActive = 1;
-        },
-        numbers: function numbers() {
-            this.isActive = 0;
-        }
-    }
+    methods: {},
+    mounted: function mounted() {},
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 2185:
+/***/ 1523:
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Awe-dnd v0.3.0
+ * (c) 2017 Awe <hilongjw@gmail.com>
+ * Released under the MIT License.
+ */
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.VueDragging = factory());
+}(this, (function () { 'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var DragData = function () {
+    function DragData() {
+        _classCallCheck(this, DragData);
+
+        this.data = {};
+    }
+
+    _createClass(DragData, [{
+        key: 'new',
+        value: function _new(key) {
+            if (!this.data[key]) {
+                this.data[key] = {
+                    className: '',
+                    List: [],
+                    KEY_MAP: {}
+                };
+            }
+            return this.data[key];
+        }
+    }, {
+        key: 'get',
+        value: function get(key) {
+            return this.data[key];
+        }
+    }]);
+
+    return DragData;
+}();
+
+var $dragging = {
+    listeners: {},
+    $on: function $on(event, func) {
+        var events = this.listeners[event];
+        if (!events) {
+            this.listeners[event] = [];
+        }
+        this.listeners[event].push(func);
+    },
+    $once: function $once(event, func) {
+        var vm = this;
+        function on() {
+            vm.$off(event, on);
+
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                args[_key] = arguments[_key];
+            }
+
+            func.apply(vm, args);
+        }
+        this.$on(event, on);
+    },
+    $off: function $off(event, func) {
+        var events = this.listeners[event];
+        if (!func || !events) {
+            this.listeners[event] = [];
+            return;
+        }
+        this.listeners[event] = this.listeners[event].filter(function (i) {
+            return i !== func;
+        });
+    },
+    $emit: function $emit(event, context) {
+        var events = this.listeners[event];
+        if (events && events.length > 0) {
+            events.forEach(function (func) {
+                func(context);
+            });
+        }
+    }
+};
+var _ = {
+    on: function on(el, type, fn) {
+        el.addEventListener(type, fn);
+    },
+    off: function off(el, type, fn) {
+        el.removeEventListener(type, fn);
+    },
+    addClass: function addClass(el, cls) {
+        if (arguments.length < 2) {
+            el.classList.add(cls);
+        } else {
+            for (var i = 1, len = arguments.length; i < len; i++) {
+                el.classList.add(arguments[i]);
+            }
+        }
+    },
+    removeClass: function removeClass(el, cls) {
+        if (arguments.length < 2) {
+            el.classList.remove(cls);
+        } else {
+            for (var i = 1, len = arguments.length; i < len; i++) {
+                el.classList.remove(arguments[i]);
+            }
+        }
+    }
+};
+
+var vueDragging = function (Vue, options) {
+    var isPreVue = Vue.version.split('.')[0] === '1';
+    var dragData = new DragData();
+    var isSwap = false;
+    var Current = null;
+
+    function handleDragStart(e) {
+        var el = getBlockEl(e.target);
+        var key = el.getAttribute('drag_group');
+        var drag_key = el.getAttribute('drag_key');
+        var DDD = dragData.new(key);
+        var item = DDD.KEY_MAP[drag_key];
+        var index = DDD.List.indexOf(item);
+        _.addClass(el, 'dragging');
+
+        if (e.dataTransfer) {
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text', JSON.stringify(item));
+        }
+
+        Current = {
+            index: index,
+            item: item,
+            el: el,
+            group: key
+        };
+    }
+
+    function handleDragOver(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        return false;
+    }
+
+    function handleDragEnter(e) {
+        var el = void 0;
+        if (e.type === 'touchmove') {
+            e.stopPropagation();
+            e.preventDefault();
+            el = getOverElementFromTouch(e);
+            el = getBlockEl(el);
+        } else {
+            el = getBlockEl(e.target);
+        }
+
+        if (!el || !Current) return;
+
+        var key = el.getAttribute('drag_group');
+        if (key !== Current.group || !Current.el || !Current.item || el === Current.el) return;
+        var drag_key = el.getAttribute('drag_key');
+        var DDD = dragData.new(key);
+        var item = DDD.KEY_MAP[drag_key];
+
+        if (item === Current.item) return;
+
+        var indexTo = DDD.List.indexOf(item);
+        var indexFrom = DDD.List.indexOf(Current.item);
+
+        swapArrayElements(DDD.List, indexFrom, indexTo);
+        Current.index = indexTo;
+        isSwap = true;
+        $dragging.$emit('dragged', {
+            draged: Current.item,
+            to: item,
+            value: DDD.value,
+            group: key
+        });
+    }
+
+    function handleDragLeave(e) {
+        _.removeClass(getBlockEl(e.target), 'drag-over', 'drag-enter');
+    }
+
+    function handleDrag(e) {}
+
+    function handleDragEnd(e) {
+        var el = getBlockEl(e.target);
+        _.removeClass(el, 'dragging', 'drag-over', 'drag-enter');
+        Current = null;
+        // if (isSwap) {
+        isSwap = false;
+        var group = el.getAttribute('drag_group');
+        $dragging.$emit('dragend', { group: group });
+        // }
+    }
+
+    function handleDrop(e) {
+        e.preventDefault();
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        }
+        return false;
+    }
+
+    function getBlockEl(el) {
+        if (!el) return;
+        while (el.parentNode) {
+            if (el.getAttribute && el.getAttribute('drag_block')) {
+                return el;
+                break;
+            } else {
+                el = el.parentNode;
+            }
+        }
+    }
+
+    function swapArrayElements(items, indexFrom, indexTo) {
+        var item = items[indexTo];
+        if (isPreVue) {
+            items.$set(indexTo, items[indexFrom]);
+            items.$set(indexFrom, item);
+        } else {
+            Vue.set(items, indexTo, items[indexFrom]);
+            Vue.set(items, indexFrom, item);
+        }
+        return items;
+    }
+
+    function getOverElementFromTouch(e) {
+        var touch = e.touches[0];
+        var el = document.elementFromPoint(touch.clientX, touch.clientY);
+        return el;
+    }
+
+    function addDragItem(el, binding, vnode) {
+        var item = binding.value.item;
+        var list = binding.value.list;
+        var DDD = dragData.new(binding.value.group);
+
+        var drag_key = isPreVue ? binding.value.key : vnode.key;
+        DDD.value = binding.value;
+        DDD.className = binding.value.className;
+        DDD.KEY_MAP[drag_key] = item;
+        if (list && DDD.List !== list) {
+            DDD.List = list;
+        }
+        el.setAttribute('draggable', 'true');
+        el.setAttribute('drag_group', binding.value.group);
+        el.setAttribute('drag_block', binding.value.group);
+        el.setAttribute('drag_key', drag_key);
+
+        _.on(el, 'dragstart', handleDragStart);
+        _.on(el, 'dragenter', handleDragEnter);
+        _.on(el, 'dragover', handleDragOver);
+        _.on(el, 'drag', handleDrag);
+        _.on(el, 'dragleave', handleDragLeave);
+        _.on(el, 'dragend', handleDragEnd);
+        _.on(el, 'drop', handleDrop);
+
+        _.on(el, 'touchstart', handleDragStart);
+        _.on(el, 'touchmove', handleDragEnter);
+        _.on(el, 'touchend', handleDragEnd);
+    }
+
+    function removeDragItem(el, binding, vnode) {
+        var DDD = dragData.new(binding.value.group);
+        var drag_key = isPreVue ? binding.value.key : vnode.key;
+        DDD.KEY_MAP[drag_key] = undefined;
+        _.off(el, 'dragstart', handleDragStart);
+        _.off(el, 'dragenter', handleDragEnter);
+        _.off(el, 'dragover', handleDragOver);
+        _.off(el, 'drag', handleDrag);
+        _.off(el, 'dragleave', handleDragLeave);
+        _.off(el, 'dragend', handleDragEnd);
+        _.off(el, 'drop', handleDrop);
+
+        _.off(el, 'touchstart', handleDragStart);
+        _.off(el, 'touchmove', handleDragEnter);
+        _.off(el, 'touchend', handleDragEnd);
+    }
+
+    Vue.prototype.$dragging = $dragging;
+    if (!isPreVue) {
+        Vue.directive('dragging', {
+            bind: addDragItem,
+            update: function update(el, binding, vnode) {
+                var DDD = dragData.new(binding.value.group);
+                var item = binding.value.item;
+                var list = binding.value.list;
+
+                var drag_key = vnode.key;
+                var old_item = DDD.KEY_MAP[drag_key];
+                if (item && old_item !== item) {
+                    DDD.KEY_MAP[drag_key] = item;
+                }
+                if (list && DDD.List !== list) {
+                    DDD.List = list;
+                }
+            },
+
+            unbind: removeDragItem
+        });
+    } else {
+        Vue.directive('dragging', {
+            update: function update(newValue, oldValue) {
+                addDragItem(this.el, {
+                    modifiers: this.modifiers,
+                    arg: this.arg,
+                    value: newValue,
+                    oldValue: oldValue
+                });
+            },
+            unbind: function unbind(newValue, oldValue) {
+                removeDragItem(this.el, {
+                    modifiers: this.modifiers,
+                    arg: this.arg,
+                    value: newValue ? newValue : { group: this.el.getAttribute('drag_group') },
+                    oldValue: oldValue
+                });
+            }
+        });
+    }
+};
+
+return vueDragging;
+
+})));
+
+
+/***/ }),
+
+/***/ 1524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -213,508 +491,77 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row text-center" }, [
-      _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-        _c(
+    _c(
+      "div",
+      { staticClass: "color-show" },
+      _vm._l(_vm.colors, function(color) {
+        return _c(
           "div",
-          { staticClass: "btn-group", attrs: { "data-toggle": "buttons" } },
+          {
+            directives: [
+              {
+                name: "dragging",
+                rawName: "v-dragging",
+                value: { list: _vm.colors, item: color, group: "color" },
+                expression: "{ list: colors, item: color, group: 'color' }"
+              }
+            ],
+            key: color.text,
+            staticClass: "color-box card m-2"
+          },
           [
             _c(
-              "label",
+              "div",
               {
-                staticClass: "btn btn-default span-btn monthly ",
-                class: { active: _vm.isActive == 1 },
-                on: { click: _vm.number }
+                staticClass: "card-header ",
+                style: { "background-color": color.text }
               },
               [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
-                  ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option2",
-                    autocomplete: "off",
-                    value: "monthly",
-                    checked: ""
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "monthly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "monthly"
-                    }
-                  }
-                }),
-                _vm._v(" Monthly Tariff\n                ")
+                _c("h3", { staticClass: "card-title text-light" }, [
+                  _c("i", { staticClass: "ti-menu" }),
+                  _vm._v(" " + _vm._s(color.color_name))
+                ])
               ]
             ),
             _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn yearly",
-                class: { active: _vm.isActive == 0 },
-                on: { click: _vm.numbers }
-              },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
-                  ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option3",
-                    autocomplete: "off",
-                    value: "yearly"
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "yearly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "yearly"
-                    }
-                  }
-                }),
-                _vm._v("  Yearly Tariff\n                ")
-              ]
-            )
+            _c("div", { staticClass: "card-body text-dark" }, [
+              _vm._v(
+                "\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam cum cupiditate eius exercitationem harum hic laudantium molestiae nihil, officia, possimus praesentium quisquam quo recusandae rem unde voluptate voluptatem.\n            "
+              )
+            ])
           ]
         )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("49"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("540"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$45/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(2),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(3),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(5),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("99"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1104"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$92/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(8),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6  col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(9),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("159"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1788"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$149/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(10),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(11),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(13),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("399"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack " }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("4620"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$385/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(14),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(15),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(16),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(17)
-    ])
+      }),
+      0
+    )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Basic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("300")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Branded Reports")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5 Keywords Reports")])]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("2")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "trending-tag" }, [
-      _c("div", { staticClass: "tag-design bg-primary text-white" }, [
-        _vm._v("Best\n                        "),
-        _c("br"),
-        _vm._v(" Package")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Econamic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("750")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("500,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("5,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Premium")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,700")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,125,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("12,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("50")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Enterprise")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("100")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("7,500")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("30,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("90")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-      _c("p", { staticClass: "pro-option" }, [
-        _vm._v("Want to be a PRO User?")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "contact-info" }, [
-        _vm._v("We have larger and the best plans designed for you.")
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-contact",
-          attrs: { href: "javascript:void(0)" }
-        },
-        [_vm._v("Contact Us")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6d17cc0c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-bb7d75b2", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 500:
+/***/ 472:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2182)
+  __webpack_require__(1518)
+  __webpack_require__(1520)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2184)
+var __vue_script__ = __webpack_require__(1522)
 /* template */
-var __vue_template__ = __webpack_require__(2185)
+var __vue_template__ = __webpack_require__(1524)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -731,7 +578,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/pricing.vue"
+Component.options.__file = "resources/components/pages/draggable_portlets.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -740,9 +587,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d17cc0c", Component.options)
+    hotAPI.createRecord("data-v-bb7d75b2", Component.options)
   } else {
-    hotAPI.reload("data-v-6d17cc0c", Component.options)
+    hotAPI.reload("data-v-bb7d75b2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

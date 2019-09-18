@@ -16,7 +16,6 @@ class CreateTipoActividadTable extends Migration
         Schema::create('tipo_actividad', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre', 100);
-            $table->tinyInteger('estado')->nullable();
         });
     }
 
