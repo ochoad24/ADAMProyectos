@@ -1,4 +1,3 @@
-<template>
 <div>
     <clear_header></clear_header>
     <div class="wrapper">
@@ -11,6 +10,7 @@
 </div>
 </template>
 <script>
+import 'vuetify/dist/vuetify.min.css';
 import clear_header from "./components/layout/clear_header";
 import left_side from "./components/layout/left-side/default/left-side";
 import right_side from "./components/layout/right-side";

@@ -1291,7 +1291,91 @@ const routes = [{
                 }]
             }
         },
-        
+        {
+            path: 'TipoActividad',
+            component: resolve => require(['./components/pages/src/tipoactividad.vue'], resolve),
+            meta: {
+                title: 'Tipo de Actividades',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Tipo Actividades',
+                    href: '#/TipoActividad'
+                }]
+            }
+        },
+        {
+            path: 'Estadistica',
+            component: resolve => require(['./components/pages/src/estadistica.vue'], resolve),
+            meta: {
+                title: 'Estadisticas',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Estadisticas',
+                    href: '#/Estadistica'
+                }]
+            }
+        },
+        {
+            path: 'Tarea',
+            component: resolve => require(['./components/pages/src/tarea.vue'], resolve),
+            meta: {
+                title: 'Tareas',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Tareas',
+                    href: '#/Tarea'
+                }]
+            }
+        },
+        {
+            path: 'Subir',
+            component: resolve => require(['./components/pages/src/subir.vue'], resolve),
+            meta: {
+                title: 'Subir',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Actividades',
+                    href: '#',
+                }, {
+                    html: 'Tarea',
+                    href: '#/Subir'
+                }]
+            }
+        },
+        {
+            path: '/Gantt',
+            component: resolve => require(['./components/pages/src/Gantt.vue'], resolve),
+            meta: {
+                title: 'Gantt',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Gantt',
+                    href: '#',
+                }, {
+                    html: 'Gantt',
+                    href: '#/Gantt'
+                }]
+            }
+        }
     ]
 }, {
     path: '/500',
@@ -1343,23 +1427,6 @@ const routes = [{
         breadcrumb: ``
     }
 },
-{
-    path: '/Gantt',
-    component: resolve => require(['./components/pages/src/Gantt.vue'], resolve),
-    meta: {
-        title: 'Gantt',
-        breadcrumb: [{
-            html: '<i class="ti-home"></i> Dashboard',
-            href: '#/',
-        }, {
-            html: 'Gantt',
-            href: '#',
-        }, {
-            html: 'Gantt',
-            href: '#/Gantt'
-        }]
-    }
-}
 ]
 
 export default routes

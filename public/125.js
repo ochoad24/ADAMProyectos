@@ -1,22 +1,22 @@
 webpackJsonp([125],{
 
-/***/ 1424:
+/***/ 1466:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1425);
+var content = __webpack_require__(1467);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6a5646ee", content, false, {});
+var update = __webpack_require__(26)("9c84219c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7f76b73d\",\"scoped\":false,\"hasInlineConfig\":true}!./timeline.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7f76b73d\",\"scoped\":false,\"hasInlineConfig\":true}!./timeline.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1425:
+/***/ 1467:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,1741 +35,24 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
+exports.push([module.i, "\n.timeline {\n    list-style : none;\n    padding    : 20px 0 20px;\n    position   : relative;\n}\n.timeline:before {\n    top              : 0;\n    bottom           : 0;\n    position         : absolute;\n    content          : \" \";\n    width            : 3px;\n    background-color : #EEEEEE;\n    left             : 50.2%;\n    margin-left      : -1.5px;\n}\n.timeline > li {\n    position : relative;\n}\n.timeline > li:before,\n.timeline > li:after {\n    content : \" \";\n    display : table;\n}\n.timeline > li:after {\n    clear : both;\n}\n.timeline > li:before,\n.timeline > li:after {\n    content : \" \";\n    display : table;\n}\n.timeline > li:after {\n    clear : both;\n}\n.timeline > li > .timeline-panel {\n    width              : 44%;\n    float              : left;\n    border             : 1px solid #D4D4D4;\n    border-radius      : 2px;\n    padding            : 20px;\n    position           : relative;\n    -webkit-box-shadow : 0 1px 6px rgba(0, 0, 0, 0.175);\n    box-shadow         : 0 1px 6px rgba(0, 0, 0, 0.175);\n}\n.timeline > li > .timeline-panel:before {\n    position      : absolute;\n    top           : 26px;\n    right         : -15px;\n    display       : inline-block;\n    border-top    : 15px solid transparent;\n    border-left   : 15px solid #CCC;\n    border-right  : 0 solid #CCC;\n    border-bottom : 15px solid transparent;\n    content       : \" \";\n}\n.timeline > li > .timeline-panel:after {\n    position      : absolute;\n    top           : 27px;\n    right         : -14px;\n    display       : inline-block;\n    border-top    : 14px solid transparent;\n    border-left   : 14px solid #FFF;\n    border-right  : 0 solid #FFF;\n    border-bottom : 14px solid transparent;\n    content       : \" \";\n}\n.timeline > li > .timeline-badge {\n    color         : #FFF;\n    width         : 40px;\n    height        : 40px;\n    line-height   : 42px;\n    font-size     : 1.4em;\n    text-align    : center;\n    position      : absolute;\n    top           : 21px;\n    left          : 50.8%;\n    margin-left   : -25px;\n    z-index       : 100;\n    border-radius : 50%;\n}\n.timeline > li.timeline-inverted > .timeline-panel {\n    float : right;\n}\n.timeline > li.timeline-inverted > .timeline-panel:before {\n    border-left-width  : 0;\n    border-right-width : 15px;\n    left               : -15px;\n    right              : auto;\n}\n.timeline > li.timeline-inverted > .timeline-panel:after {\n    border-left-width  : 0;\n    border-right-width : 14px;\n    left               : -14px;\n    right              : auto;\n}\n.timeline-badge.primary {\n    background-color : #6699CC !important;\n}\n.timeline-badge.success {\n    background-color : #66CC99 !important;\n}\n.timeline-badge.warning {\n    background-color : #F0AD4E !important;\n}\n.timeline-badge.danger {\n    background-color : #FF6666 !important;\n}\n.timeline-badge.info {\n    background-color : #66CCFF !important;\n}\n.timeline-badge.default {\n    background-color : #DCDCDC !important;\n}\n.timeline-title {\n    margin-top : 0;\n    color      : inherit;\n}\n.timeline-body > p,\n.timeline-body > ul {\n    margin-bottom : 0;\n}\n.timeline-body > p + p {\n    margin-top : 5px;\n}\n.timeline_panel {\n    padding-bottom : 26px;\n}\n.text-default-gray {\n    color : #777;\n}\n\n/*recent activity*/\n.schedule-cont {\n    padding-left : 0;\n}\n.schedule-cont .item {\n    border-left   : 1px solid #ccc;\n    margin-bottom : -13px;\n    min-height    : 70px;\n    padding-top   : 10px;\n}\n.schedule-cont .success {\n    border-left : 1px solid #66CC99;\n}\n.schedule-cont .danger {\n    border-left : 1px solid #FF6666;\n}\n.schedule-cont .item .text-muted {\n    color: #888;\n    font-size: 11px;\n}\n.schedule-cont .item p {\n    color : #555;\n}\n.schedule-cont .item:before {\n    content          : \" \";\n    display          : table;\n    background-color : #fff;\n    border           : 1px solid #58748B;\n    border-radius    : 10px;\n    height           : 9px;\n    left             : 0;\n    margin-left      : -5px;\n    width            : 9px;\n    clear            : both;\n    bottom           : auto;\n    top              : 4px;\n}\n.schedule-cont .success:before {\n    border-color : #66CC99;\n}\n.schedule-cont .danger:before {\n    border-color : #FF6666;\n}\n.schedule-cont .item .data {\n    padding-left : 20px;\n    margin-top   : -10px;\n}\n/*recent activity ends*/\n\n/*timeline update*/\n.timeline-update {\n    list-style : none;\n    padding    : 20px 10px;\n    position   : relative;\n}\n.timeline-update:before {\n    top              : 0;\n    bottom           : 0;\n    position         : absolute;\n    content          : \" \";\n    width            : 3px;\n    background-color : #eeeeee;\n    right            : 17px;\n    margin-left      : -1.5px;\n}\n.timeline-update > li {\n    margin-bottom : 20px;\n    position      : relative;\n}\n.timeline-update > li:before,\n.timeline-update > li:after {\n    content : \" \";\n    display : table;\n}\n.timeline-update > li:after {\n    clear : both;\n}\n.timeline-update > li:before,\n.timeline-update > li:after {\n    content : \" \";\n    display : table;\n}\n.timeline-update > li:after {\n    clear : both;\n}\n.timeline-update > li > .timeline-panel {\n    width                   : 83%;\n    float                   : left;\n    background-color        : #fff;\n    border                  : 1px solid #d4d4d4;\n    border-radius           : 6px;\n    border-top-right-radius : 0;\n    padding                 : 10px 15px;\n    position                : relative;\n    -webkit-box-shadow      : 0 1px 6px rgba(0, 0, 0, 0.175);\n    box-shadow              : 0 1px 6px rgba(0, 0, 0, 0.175);\n}\n.timeline-update > li > .timeline-panel:before {\n    position      : absolute;\n    top           : -1px;\n    right         : -15px;\n    display       : inline-block;\n    border-top    : 2px solid #ccc;\n    border-left   : 15px solid #ccc;\n    border-right  : 0 solid #ccc;\n    border-bottom : 20px solid transparent;\n    content       : \" \";\n}\n.timeline-update > li > .timeline-panel:after {\n    position      : absolute;\n    top           : 0;\n    right         : -14px;\n    display       : inline-block;\n    border-left   : 14px solid #fff;\n    border-right  : 0 solid #fff;\n    border-bottom : 18px solid transparent;\n    content       : \" \";\n}\n.timeline-update > li > .timeline-badge {\n    color                      : #fff;\n    width                      : 36px;\n    top                        : -15px;\n    height                     : 36px;\n    line-height                : 50px;\n    font-size                  : 1.2em;\n    text-align                 : center;\n    position                   : absolute;\n    right                      : -9px;\n    margin-left                : -25px;\n    z-index                    : 100;\n}\n.timeline-update > li.timeline-inverted > .timeline-panel {\n    float : right;\n}\n.timeline-update > li.timeline-inverted > .timeline-panel:before {\n    border-left-width  : 0;\n    border-right-width : 15px;\n    left               : -15px;\n    right              : auto;\n}\n.timeline-update > li.timeline-inverted > .timeline-panel:after {\n    border-left-width  : 0;\n    border-right-width : 14px;\n    left               : -14px;\n    right              : auto;\n}\n.timeline-update .timeline-title {\n    margin : 0;\n    color  : inherit;\n}\n.timeline-update .timeline-body > p,\n.timeline-update .timeline-body > ul {\n    margin-bottom : 0;\n}\n.timeline-update .timeline-body > p + p {\n    margin-top : 5px;\n}\n.timeline-update .timeline_panel {\n    padding-bottom : 26px;\n}\n.text-default-gray {\n    color : #777;\n}\n.timeline-update .timeline-heading p {\n    margin : 0;\n}\n.timeline-body .dropdown{\n    z-index: 99;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1426:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1427);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("4a04624a", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./fontawesome_icons.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./fontawesome_icons.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1427:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.fa-icon {\n    text-align: center;\n    padding: 20px 0;\n    margin: 10px 0;\n    height: 89px;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.fa-icon:hover {\n    background-color: #dcdcdc;\n    padding: 15px 0;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.fa-icon:hover i {\n    font-size: 30px;\n}\n.fa-icon:hover .text-muted {\n    color: #888;\n}\n.fa-icon i {\n    font-size: 24px;\n    color: #428bca;\n    margin-bottom: 10px;\n}\ninput[type=\"range\"] {\n    cursor: pointer;\n}\n.input-group {\n    width: 100%;\n    margin-bottom: 10px;\n}\n.input-group-addon.icon-sizeshow {\n    border: none;\n    background-color: transparent;\n}\n.input-group input[type=\"range\"] {\n    border: none;\n    box-shadow: none;\n}\n#icon-search {\n    border-radius: 17px !important;\n}\nform {\n    text-align: center;\n    padding: 10px;\n}\n.iconoption_toggle {\n    border-radius: 5px 0 0 5px;\n    border: 1px solid rgba(0, 0, 0, 0.298039);\n    border-right: none;\n    position: fixed;\n    top: 188px;\n    right: 0;\n    background-color: rgba(238, 238, 238, 0.4);\n    padding: 7px;\n    z-index: 999998;\n    cursor: pointer;\n}\n.iconoption_toggle i {\n    color: rgb(119, 119, 119);\n    font-size: 20px;\n}\n.right_175 {\n    right: 175px;\n}\n.iconoptions {\n    position: fixed;\n    padding: 6px;\n    height: 240px;\n    width: 175px;\n    background-color: #fff;\n    z-index: 9999999;\n    top: 100px;\n    right: -175px;\n    border: 2px solid #428bca;\n}\n.right_0 {\n    right: 0;\n}\n.iconoptions > button {\n    border: none;\n    border-radius: 4px;\n    margin-top: 10px;\n    display: block;\n}\n.iconoptions .active,\n.iconoptions .active:focus,\n.iconoptions .active:hover {\n    background-color: #ffb65f !important;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1428:
+/***/ 1468:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(jQuery, $) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(517);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(550);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__);
 //
 //
 //
@@ -2058,4451 +341,677 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+__webpack_require__(1469);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "fontawesome_icons",
+    name: "timeline",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     mounted: function mounted() {
         "use strict";
 
-        jQuery.fn.outerHTML = function () {
-            return jQuery('<div />').append(this.eq(0).clone()).html();
-        };
         $(document).ready(function () {
+            new WOW().init();
+            //auto timeline update panel
 
-            $(".fa-icon").each(function () {
-                $(this).find("i").after("<br />");
-            });
-            $(".iconoptions button").on("click", function () {
-                if (!$(this).hasClass("active")) {
-                    __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.info('Changes Made, Hover on any icon to see effect');
-                }
-                $(".iconoptions").find(".active").removeClass("active");
-                $(this).addClass("active");
-            });
-            $(".fa-icon").hover(function () {
-                if ($(".iconoptions").find('.active').attr("data-faclass") != undefined) {
-                    $(this).find("i").toggleClass($(".iconoptions .active").attr("data-faclass"));
-                }
-            }).on("click", function () {
-                var x = $(this).find("i").outerHTML();
-                copyTextToClipboard(x);
-            });
-            $('#icon-search').on("input", function () {
-                $(".fa-icon").each(function () {
-                    var regex = new RegExp($("#icon-search").val().trim().toLowerCase());
-                    var x = $(this).clone().children().remove().end().text();
-                    var res = x.match(regex, "i");
-                    if (res == null) {
-                        $(this).hide();
-                    } else {
-                        $(this).show();
-                    }
+            if ($('.timeline-update').length > 0) {
+                $('.timeline-update').newsTicker({
+                    row_height: 120,
+                    max_rows: 3,
+                    speed: 2000,
+                    direction: 'up',
+                    duration: 3500,
+                    autostart: 1,
+                    pauseOnHover: 1
                 });
-            });
-            var icon_size = $("#icon-size");
-            icon_size.on("input", function () {
-                var x = parseInt(icon_size.val()) + parseInt(6);
-                $(".fontnormal").html(".fa-icon i{font-size:" + icon_size.val() + "px;}.fa-icon:hover i{font-size:" + x + "px;}");
-                $(".icon-sizeshow").text(icon_size.val() + "px");
-            });
-            $("head").append("<style class='fontnormal'></style>");
-        });
+            }
 
-        function copyTextToClipboard(text) {
-            var textArea = document.createElement("textarea");
-            textArea.value = text;
-            document.body.appendChild(textArea).select();
-            var successful = document.execCommand('copy');
-            document.body.removeChild(textArea);
-            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.success('Element Copied to Clipboard. Now you can use it anywhere.');
-        }
-        $(".iconoption_toggle").on("click", function () {
-            $(this).toggleClass("right_175");
-            $(this).find("i").toggleClass("fa-flip-horizontal");
-            $(".iconoptions").toggleClass("right_0");
+            //auto timeline update panel ends
         });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(515), __webpack_require__(515)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(523)))
 
 /***/ }),
 
-/***/ 1429:
+/***/ 1469:
+/***/ (function(module, exports) {
+
+/*** IMPORTS FROM imports-loader ***/
+(function() {
+
+/*! WOW - v1.1.2 - 2016-04-08
+* Copyright (c) 2016 Matthieu Aussaguel;*/(function(){var a,b,c,d,e,f=function(a,b){return function(){return a.apply(b,arguments)}},g=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};b=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in b)d=b[c],null==a[c]&&(a[c]=d);return a},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a.prototype.createEvent=function(a,b,c,d){var e;return null==b&&(b=!1),null==c&&(c=!1),null==d&&(d=null),null!=document.createEvent?(e=document.createEvent("CustomEvent"),e.initCustomEvent(a,b,c,d)):null!=document.createEventObject?(e=document.createEventObject(),e.eventType=a):e.eventName=a,e},a.prototype.emitEvent=function(a,b){return null!=a.dispatchEvent?a.dispatchEvent(b):b in(null!=a)?a[b]():"on"+b in(null!=a)?a["on"+b]():void 0},a.prototype.addEvent=function(a,b,c){return null!=a.addEventListener?a.addEventListener(b,c,!1):null!=a.attachEvent?a.attachEvent("on"+b,c):a[b]=c},a.prototype.removeEvent=function(a,b,c){return null!=a.removeEventListener?a.removeEventListener(b,c,!1):null!=a.detachEvent?a.detachEvent("on"+b,c):delete a[b]},a.prototype.innerHeight=function(){return"innerHeight"in window?window.innerHeight:document.documentElement.clientHeight},a}(),c=this.WeakMap||this.MozWeakMap||(c=function(){function a(){this.keys=[],this.values=[]}return a.prototype.get=function(a){var b,c,d,e,f;for(f=this.keys,b=d=0,e=f.length;e>d;b=++d)if(c=f[b],c===a)return this.values[b]},a.prototype.set=function(a,b){var c,d,e,f,g;for(g=this.keys,c=e=0,f=g.length;f>e;c=++e)if(d=g[c],d===a)return void(this.values[c]=b);return this.keys.push(a),this.values.push(b)},a}()),a=this.MutationObserver||this.WebkitMutationObserver||this.MozMutationObserver||(a=function(){function a(){"undefined"!=typeof console&&null!==console&&console.warn("MutationObserver is not supported by your browser."),"undefined"!=typeof console&&null!==console&&console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.")}return a.notSupported=!0,a.prototype.observe=function(){},a}()),d=this.getComputedStyle||function(a,b){return this.getPropertyValue=function(b){var c;return"float"===b&&(b="styleFloat"),e.test(b)&&b.replace(e,function(a,b){return b.toUpperCase()}),(null!=(c=a.currentStyle)?c[b]:void 0)||null},this},e=/(\-([a-z]){1})/g,this.WOW=function(){function e(a){null==a&&(a={}),this.scrollCallback=f(this.scrollCallback,this),this.scrollHandler=f(this.scrollHandler,this),this.resetAnimation=f(this.resetAnimation,this),this.start=f(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults),null!=a.scrollContainer&&(this.config.scrollContainer=document.querySelector(a.scrollContainer)),this.animationNameCache=new c,this.wowEvent=this.util().createEvent(this.config.boxClass)}return e.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:null,scrollContainer:null},e.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():this.util().addEvent(document,"DOMContentLoaded",this.start),this.finished=[]},e.prototype.start=function(){var b,c,d,e;if(this.stopped=!1,this.boxes=function(){var a,c,d,e;for(d=this.element.querySelectorAll("."+this.config.boxClass),e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.all=function(){var a,c,d,e;for(d=this.boxes,e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.boxes.length)if(this.disabled())this.resetStyle();else for(e=this.boxes,c=0,d=e.length;d>c;c++)b=e[c],this.applyStyle(b,!0);return this.disabled()||(this.util().addEvent(this.config.scrollContainer||window,"scroll",this.scrollHandler),this.util().addEvent(window,"resize",this.scrollHandler),this.interval=setInterval(this.scrollCallback,50)),this.config.live?new a(function(a){return function(b){var c,d,e,f,g;for(g=[],c=0,d=b.length;d>c;c++)f=b[c],g.push(function(){var a,b,c,d;for(c=f.addedNodes||[],d=[],a=0,b=c.length;b>a;a++)e=c[a],d.push(this.doSync(e));return d}.call(a));return g}}(this)).observe(document.body,{childList:!0,subtree:!0}):void 0},e.prototype.stop=function(){return this.stopped=!0,this.util().removeEvent(this.config.scrollContainer||window,"scroll",this.scrollHandler),this.util().removeEvent(window,"resize",this.scrollHandler),null!=this.interval?clearInterval(this.interval):void 0},e.prototype.sync=function(b){return a.notSupported?this.doSync(this.element):void 0},e.prototype.doSync=function(a){var b,c,d,e,f;if(null==a&&(a=this.element),1===a.nodeType){for(a=a.parentNode||a,e=a.querySelectorAll("."+this.config.boxClass),f=[],c=0,d=e.length;d>c;c++)b=e[c],g.call(this.all,b)<0?(this.boxes.push(b),this.all.push(b),this.stopped||this.disabled()?this.resetStyle():this.applyStyle(b,!0),f.push(this.scrolled=!0)):f.push(void 0);return f}},e.prototype.show=function(a){return this.applyStyle(a),a.className=a.className+" "+this.config.animateClass,null!=this.config.callback&&this.config.callback(a),this.util().emitEvent(a,this.wowEvent),this.util().addEvent(a,"animationend",this.resetAnimation),this.util().addEvent(a,"oanimationend",this.resetAnimation),this.util().addEvent(a,"webkitAnimationEnd",this.resetAnimation),this.util().addEvent(a,"MSAnimationEnd",this.resetAnimation),a},e.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),this.animate(function(f){return function(){return f.customStyle(a,b,d,c,e)}}(this))},e.prototype.animate=function(){return"requestAnimationFrame"in window?function(a){return window.requestAnimationFrame(a)}:function(a){return a()}}(),e.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.style.visibility="visible");return e},e.prototype.resetAnimation=function(a){var b;return a.type.toLowerCase().indexOf("animationend")>=0?(b=a.target||a.srcElement,b.className=b.className.replace(this.config.animateClass,"").trim()):void 0},e.prototype.customStyle=function(a,b,c,d,e){return b&&this.cacheAnimationName(a),a.style.visibility=b?"hidden":"visible",c&&this.vendorSet(a.style,{animationDuration:c}),d&&this.vendorSet(a.style,{animationDelay:d}),e&&this.vendorSet(a.style,{animationIterationCount:e}),this.vendorSet(a.style,{animationName:b?"none":this.cachedAnimationName(a)}),a},e.prototype.vendors=["moz","webkit"],e.prototype.vendorSet=function(a,b){var c,d,e,f;d=[];for(c in b)e=b[c],a[""+c]=e,d.push(function(){var b,d,g,h;for(g=this.vendors,h=[],b=0,d=g.length;d>b;b++)f=g[b],h.push(a[""+f+c.charAt(0).toUpperCase()+c.substr(1)]=e);return h}.call(this));return d},e.prototype.vendorCSS=function(a,b){var c,e,f,g,h,i;for(h=d(a),g=h.getPropertyCSSValue(b),f=this.vendors,c=0,e=f.length;e>c;c++)i=f[c],g=g||h.getPropertyCSSValue("-"+i+"-"+b);return g},e.prototype.animationName=function(a){var b;try{b=this.vendorCSS(a,"animation-name").cssText}catch(c){b=d(a).getPropertyValue("animation-name")}return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=this.config.scrollContainer&&this.config.scrollContainer.scrollTop||window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);
+}.call(window));
+
+/***/ }),
+
+/***/ 1470:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    { staticClass: "content" },
-    [
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
       _c(
-        "card",
-        { attrs: { title: "<i class='fa fa-fw ti-ink-pen'></i> Font Icons" } },
+        "div",
+        { staticClass: "col-md-8 timeline_card" },
         [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("section", { attrs: { id: "web-application" } }, [
-                _c("div", { staticClass: "iconoption_toggle" }, [
-                  _c("i", {
-                    staticClass: "fa fa-fw fa-fighter-jet fa-flip-horizontal"
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "iconoptions text-center" }, [
-                  _c(
-                    "button",
-                    { staticClass: "active btn btn-info btn-block" },
-                    [_vm._v("No Options")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-block",
-                      attrs: { "data-faclass": "fa-spin" }
-                    },
-                    [_vm._v("Spin")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-block",
-                      attrs: { "data-faclass": "fa-flip-horizontal" }
-                    },
-                    [
-                      _vm._v(
-                        "Flip\n                            Horizontally\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-block",
-                      attrs: { "data-faclass": "fa-flip-vertical" }
-                    },
-                    [
-                      _vm._v(
-                        "Flip\n                            Vertically\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("h4", [_vm._v("Rotate")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "btn-group" }, [
+          _c(
+            "card",
+            { attrs: { title: "<i class='fa fa-fw ti-time'></i> Timeline" } },
+            [
+              _c("div", [
+                _c("ul", { staticClass: "timeline" }, [
+                  _c("li", [
                     _c(
-                      "button",
+                      "div",
                       {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "" }
+                        staticClass:
+                          "timeline-badge primary wow bounceInDown center"
                       },
-                      [_vm._v("0")]
+                      [_c("i", { staticClass: "fa fa-fw ti-server" })]
                     ),
                     _vm._v(" "),
                     _c(
-                      "button",
+                      "div",
                       {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "fa-rotate-90" }
+                        staticClass: "timeline-panel wow bounceInDown",
+                        staticStyle: { display: "inline-block" }
                       },
-                      [_vm._v("90")]
+                      [
+                        _c("div", { staticClass: "timeline-heading" }, [
+                          _c("h4", { staticClass: "timeline-title" }, [
+                            _vm._v("We are a MNC now")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _c("small", { staticClass: "text-primary" }, [
+                              _vm._v("11 hours ago via Twitter")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-body" }, [
+                          _c("p", [
+                            _vm._v(
+                              "\n                                        Lorem Ipsum is simply dummy, vidis lio, quem amistosis quis leo..\n                                    "
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "timeline-inverted" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "timeline-badge danger wow lightSpeedIn center"
+                      },
+                      [_c("i", { staticClass: "fa fa-fw ti-check-box" })]
                     ),
                     _vm._v(" "),
                     _c(
-                      "button",
+                      "div",
+                      { staticClass: "timeline-panel wow slideInRight" },
+                      [
+                        _c("div", { staticClass: "timeline-heading" }, [
+                          _c("h4", { staticClass: "timeline-title" }, [
+                            _vm._v("We won best website award")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _c("small", { staticClass: "text-danger" }, [
+                              _vm._v("May 08, 2016")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-body" }, [
+                          _c("p", [
+                            _vm._v(
+                              "Lorem Ipsum is simply dummy, vidis litro abertis."
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "div",
                       {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "fa-rotate-180" }
+                        staticClass:
+                          "timeline-badge info wow lightSpeedIn center"
                       },
-                      [_vm._v("180")]
+                      [_c("i", { staticClass: "fa fa-fw ti-credit-card" })]
                     ),
                     _vm._v(" "),
                     _c(
-                      "button",
+                      "div",
+                      { staticClass: "timeline-panel wow slideInLeft" },
+                      [
+                        _c("div", { staticClass: "timeline-heading" }, [
+                          _c("h4", { staticClass: "timeline-title" }, [
+                            _vm._v("Hired our first employee")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _c("small", { staticClass: "text-info" }, [
+                              _vm._v("June 10, 2005")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-body" }, [
+                          _c("p", [
+                            _vm._v(
+                              "\n                                        Lorem Ipsum is simply dummy, vidis litro abertis. Pra uium u num\n                                        gostis.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "timeline-inverted" }, [
+                    _c(
+                      "div",
                       {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "fa-rotate-270" }
+                        staticClass:
+                          "timeline-badge warning wow lightSpeedIn center"
                       },
-                      [_vm._v("270")]
+                      [_c("i", { staticClass: "fa fa-fw ti-map" })]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "timeline-panel wow lightSpeedIn" },
+                      [
+                        _c("div", { staticClass: "timeline-heading" }, [
+                          _c("h4", { staticClass: "timeline-title" }, [
+                            _vm._v("Rented an office space")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _c("small", { staticClass: "text-warning" }, [
+                              _vm._v("Jan 05, 2002")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-body" }, [
+                          _c("p", [
+                            _vm._v(
+                              "\n                                        Lorem Ipsum is simply dummy, vidis litro abertis. Cais bolis eu num\n                                        gostis.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "timeline-badge default wow bounceInUp center"
+                      },
+                      [_c("i", { staticClass: "fa fa-fw ti-thumb-up" })]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "timeline-panel wow bounceInUp" },
+                      [
+                        _c("div", { staticClass: "timeline-heading" }, [
+                          _c("h4", { staticClass: "timeline-title" }, [
+                            _vm._v("Planning to open an office")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _c("small", { staticClass: "text-default-gray" }, [
+                              _vm._v("jan 02, 2017")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "timeline-body" },
+                          [
+                            _c("p", [
+                              _vm._v(
+                                "\n                                        Lorem Ipsum is simply dummy, vidis litro abertis. depois divoltis.\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("hr"),
+                            _vm._v(" "),
+                            _c(
+                              "b-dd",
+                              {
+                                staticClass: "btn",
+                                attrs: { variant: "primary" }
+                              },
+                              [
+                                _c("template", { slot: "button-content" }, [
+                                  _c("i", { staticClass: "ti-settings" })
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item",
+                                  { staticClass: "content-header" },
+                                  [
+                                    _vm._v(
+                                      "\n                                            Action\n                                        "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item",
+                                  { staticClass: "content-header" },
+                                  [
+                                    _vm._v(
+                                      "\n                                            Another Action\n                                        "
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c("b-dropdown-divider"),
+                                _vm._v(" "),
+                                _c(
+                                  "b-dropdown-item",
+                                  { staticClass: "content-header" },
+                                  [
+                                    _vm._v(
+                                      "\n                                            Separated link\n                                        "
+                                    )
+                                  ]
+                                )
+                              ],
+                              2
+                            )
+                          ],
+                          1
+                        )
+                      ]
                     )
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-md-6 col-md-offset-3 m-auto" },
-                    [
-                      _c("form", { attrs: { role: "form" } }, [
-                        _c("div", { staticClass: "input-group" }, [
-                          _c(
-                            "label",
-                            {
-                              staticClass: "sr-only",
-                              attrs: { for: "icon-search" }
-                            },
-                            [_vm._v("Search")]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-4" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-sm-6 col-md-12" },
+            [
+              _c(
+                "card",
+                {
+                  attrs: {
+                    title:
+                      "<i class='fa fa-fw ti-comment-alt'></i> Recent Activities"
+                  }
+                },
+                [
+                  _c("ul", { staticClass: "schedule-cont" }, [
+                    _c("li", { staticClass: "item success" }, [
+                      _c("div", { staticClass: "data" }, [
+                        _c("div", { staticClass: "time text-muted" }, [
+                          _vm._v(" Just now")
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _c("span", { staticClass: "text-info" }, [
+                            _vm._v("Jade")
+                          ]),
+                          _vm._v(
+                            " Project team has successfully\n                                        completed their\n                                        first phase."
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "item danger" }, [
+                      _c("div", { staticClass: "data" }, [
+                        _c("div", { staticClass: "time text-muted" }, [
+                          _vm._v(" 7min ago")
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v("Tinder Project's "),
+                          _c("span", { staticClass: "text-info" }, [
+                            _vm._v("Second")
+                          ]),
+                          _vm._v(
+                            " review has\n                                        completed."
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "item" }, [
+                      _c("div", { staticClass: "data" }, [
+                        _c("div", { staticClass: "time text-muted" }, [
+                          _vm._v("5hours ago")
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "Richard McClintock, updated his project over view report."
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "item success" }, [
+                      _c("div", { staticClass: "data" }, [
+                        _c("div", { staticClass: "time text-muted" }, [
+                          _vm._v(" Yesterday")
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v("Variations Project "),
+                          _c("span", { staticClass: "text-info" }, [
+                            _vm._v("Evaluation")
+                          ]),
+                          _vm._v(
+                            " is going\n                                        on to highlight\n                                        the project success ."
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-sm-6 col-md-12" },
+            [
+              _c(
+                "card",
+                {
+                  attrs: {
+                    title: " <i class='fa fa-fw ti-reload'></i> Auto Update"
+                  }
+                },
+                [
+                  _c("div", [
+                    _c("ul", { staticClass: "timeline-update" }, [
+                      _c("li", [
+                        _c("div", { staticClass: "timeline-badge center" }, [
+                          _c("img", {
+                            staticClass: "rounded-circle float-right",
                             attrs: {
-                              type: "text",
-                              name: "icon-search",
-                              id: "icon-search",
-                              placeholder: "Search Icon"
+                              src: __webpack_require__(562),
+                              height: "36",
+                              width: "36",
+                              alt: "avatar-image"
                             }
                           })
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "input-group" }, [
-                          _c(
-                            "label",
-                            {
-                              staticClass: "sr-only",
-                              attrs: { for: "icon-size" }
-                            },
-                            [_vm._v("Size")]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
+                        _c(
+                          "div",
+                          {
+                            staticClass: "timeline-panel",
+                            staticStyle: { display: "inline-block" }
+                          },
+                          [
+                            _c("div", { staticClass: "timeline-heading" }, [
+                              _c("h4", { staticClass: "timeline-title" }, [
+                                _vm._v("Jade Project's Status ")
+                              ]),
+                              _vm._v(" "),
+                              _c("p", [
+                                _c(
+                                  "small",
+                                  { staticClass: "text-default-gray" },
+                                  [_vm._v("11 hours ago")]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "timeline-body" }, [
+                              _c("p", [
+                                _vm._v(
+                                  "\n                                                Jade Project team has completed their first phase.\n                                            "
+                                )
+                              ])
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("div", { staticClass: "timeline-badge center" }, [
+                          _c("img", {
+                            staticClass: "rounded-circle float-right",
                             attrs: {
-                              type: "range",
-                              name: "icon-size",
-                              id: "icon-size",
-                              min: "24",
-                              max: "40",
-                              value: "24"
+                              src: __webpack_require__(540),
+                              height: "36",
+                              width: "36",
+                              alt: "avatar-image"
                             }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "span",
-                            { staticClass: "input-group-addon icon-sizeshow" },
-                            [_vm._v("24px")]
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "text-center" }, [
-                  _vm._v("Click on any icon to copy its code to clipboard.")
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header" }, [
-                  _vm._v(
-                    "\n                        Web Application Icons\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-adjust" }),
-                    _vm._v(" fa-adjust\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-anchor" }),
-                    _vm._v(" fa-anchor\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-archive" }),
-                    _vm._v(" fa-archive\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-arrows" }),
-                    _vm._v(" fa-arrows\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-arrows-h" }),
-                    _vm._v(" fa-arrows-h\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-arrows-v" }),
-                    _vm._v(" fa-arrows-v\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-asterisk" }),
-                    _vm._v(" fa-asterisk\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ban" }),
-                    _vm._v(" fa-ban\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bar-chart-o" }),
-                    _vm._v(" fa-bar-chart-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-barcode" }),
-                    _vm._v(" fa-barcode\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bars" }),
-                    _vm._v(" fa-bars\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-beer" }),
-                    _vm._v(" fa-beer\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bell" }),
-                    _vm._v(" fa-bell\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bell-o" }),
-                    _vm._v(" fa-bell-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bolt" }),
-                    _vm._v(" fa-bolt\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-book" }),
-                    _vm._v(" fa-book\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bookmark" }),
-                    _vm._v(" fa-bookmark\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bookmark-o" }),
-                    _vm._v(" fa-bookmark-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-briefcase" }),
-                    _vm._v(" fa-briefcase\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bug" }),
-                    _vm._v(" fa-bug\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-building-o" }),
-                    _vm._v(" fa-building-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bullhorn" }),
-                    _vm._v(" fa-bullhorn\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bullseye" }),
-                    _vm._v(" fa-bullseye\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-calendar" }),
-                    _vm._v(" fa-calendar\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-calendar-o" }),
-                    _vm._v(" fa-calendar-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-camera" }),
-                    _vm._v(" fa-camera\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-camera-retro" }),
-                    _vm._v(" fa-camera-retro\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-caret-square-o-down" }),
-                    _vm._v(" fa-caret-square-o-down\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-caret-square-o-left" }),
-                    _vm._v(" fa-caret-square-o-left\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", {
-                      staticClass: "fa fa-fw fa-caret-square-o-right"
-                    }),
-                    _vm._v(" fa-caret-square-o-right\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-caret-square-o-up" }),
-                    _vm._v(" fa-caret-square-o-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-certificate" }),
-                    _vm._v(" fa-certificate\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check" }),
-                    _vm._v(" fa-check\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-circle" }),
-                    _vm._v(" fa-check-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-circle-o" }),
-                    _vm._v(" fa-check-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square" }),
-                    _vm._v(" fa-check-square\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square-o" }),
-                    _vm._v(" fa-check-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle" }),
-                    _vm._v(" fa-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle-o" }),
-                    _vm._v(" fa-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-clock-o" }),
-                    _vm._v(" fa-clock-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cloud" }),
-                    _vm._v(" fa-cloud\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cloud-download" }),
-                    _vm._v(" fa-cloud-download\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cloud-upload" }),
-                    _vm._v(" fa-cloud-upload\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-code" }),
-                    _vm._v(" fa-code\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-code-fork" }),
-                    _vm._v(" fa-code-fork\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-coffee" }),
-                    _vm._v(" fa-coffee\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cog" }),
-                    _vm._v(" fa-cog\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cogs" }),
-                    _vm._v(" fa-cogs\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comment" }),
-                    _vm._v(" fa-comment\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comment-o" }),
-                    _vm._v(" fa-comment-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comments" }),
-                    _vm._v(" fa-comments\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comments-o" }),
-                    _vm._v(" fa-comments-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-compass" }),
-                    _vm._v(" fa-compass\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-credit-card" }),
-                    _vm._v(" fa-credit-card\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-crop" }),
-                    _vm._v(" fa-crop\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-move" }),
-                    _vm._v(" fa-crosshairs\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cutlery" }),
-                    _vm._v(" fa-cutlery\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-dashboard" }),
-                    _vm._v(" fa-dashboard\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-desktop" }),
-                    _vm._v(" fa-desktop\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-                    _vm._v(" fa-dot-circle-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-download" }),
-                    _vm._v(" fa-download\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-edit" }),
-                    _vm._v(" fa-edit\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ellipsis-h" }),
-                    _vm._v(" fa-ellipsis-h\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ellipsis-v" }),
-                    _vm._v(" fa-ellipsis-v\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-envelope" }),
-                    _vm._v(" fa-envelope\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-envelope-o" }),
-                    _vm._v(" fa-envelope-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-eraser" }),
-                    _vm._v(" fa-eraser\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-hand-o-left" }),
-                    _vm._v(" fa-exchange\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-exclamation" }),
-                    _vm._v(" fa-exclamation\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-exclamation-circle" }),
-                    _vm._v(" fa-exclamation-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", {
-                      staticClass: "fa fa-fw fa-exclamation-triangle"
-                    }),
-                    _vm._v(" fa-exclamation-triangle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-external-link" }),
-                    _vm._v(" fa-external-link\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", {
-                      staticClass: "fa fa-fw fa-external-link-square"
-                    }),
-                    _vm._v(" fa-external-link-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-eye" }),
-                    _vm._v(" fa-eye\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-eye-slash" }),
-                    _vm._v(" fa-eye-slash\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-female" }),
-                    _vm._v(" fa-female\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-fighter-jet" }),
-                    _vm._v(" fa-fighter-jet\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-film" }),
-                    _vm._v(" fa-film\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-filter" }),
-                    _vm._v(" fa-filter\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-cup" }),
-                    _vm._v(" fa-fire\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-fire-extinguisher" }),
-                    _vm._v(" fa-fire-extinguisher\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flag" }),
-                    _vm._v(" fa-flag\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flag-checkered" }),
-                    _vm._v(" fa-flag-checkered\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flag-o" }),
-                    _vm._v(" fa-flag-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flash" }),
-                    _vm._v(" fa-flash\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flask" }),
-                    _vm._v(" fa-flask\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder" }),
-                    _vm._v(" fa-folder\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder-o" }),
-                    _vm._v(" fa-folder-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder-open" }),
-                    _vm._v(" fa-folder-open\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder-open-o" }),
-                    _vm._v(" fa-folder-open-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-frown-o" }),
-                    _vm._v(" fa-frown-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gamepad" }),
-                    _vm._v(" fa-gamepad\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gavel" }),
-                    _vm._v(" fa-gavel\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-settings" }),
-                    _vm._v(" fa-gear\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gears" }),
-                    _vm._v(" fa-gears\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gift" }),
-                    _vm._v(" fa-gift\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-glass" }),
-                    _vm._v(" fa-glass\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-globe" }),
-                    _vm._v(" fa-globe\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-group" }),
-                    _vm._v(" fa-group\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-hdd-o" }),
-                    _vm._v(" fa-hdd-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-headphones" }),
-                    _vm._v(" fa-headphones\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-heart" }),
-                    _vm._v(" fa-heart\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-heart-o" }),
-                    _vm._v(" fa-heart-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-home" }),
-                    _vm._v(" fa-home\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-inbox" }),
-                    _vm._v(" fa-inbox\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-info" }),
-                    _vm._v(" fa-info\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-info-circle" }),
-                    _vm._v(" fa-info-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-key" }),
-                    _vm._v(" fa-key\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-keyboard-o" }),
-                    _vm._v(" fa-keyboard-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-laptop" }),
-                    _vm._v(" fa-laptop\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-leaf" }),
-                    _vm._v(" fa-leaf\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-legal" }),
-                    _vm._v(" fa-legal\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-lemon-o" }),
-                    _vm._v(" fa-lemon-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-level-down" }),
-                    _vm._v(" fa-level-down\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-level-up" }),
-                    _vm._v(" fa-level-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-lightbulb-o" }),
-                    _vm._v(" fa-lightbulb-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-location-arrow" }),
-                    _vm._v(" fa-location-arrow\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-lock" }),
-                    _vm._v(" fa-lock\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-magic" }),
-                    _vm._v(" fa-magic\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-magnet" }),
-                    _vm._v(" fa-magnet\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mail-forward" }),
-                    _vm._v(" fa-mail-forward\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mail-reply" }),
-                    _vm._v(" fa-mail-reply\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mail-reply-all" }),
-                    _vm._v(" fa-mail-reply-all\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-male" }),
-                    _vm._v(" fa-male\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-map-marker" }),
-                    _vm._v(" fa-map-marker\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-meh-o" }),
-                    _vm._v(" fa-meh-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-microphone" }),
-                    _vm._v(" fa-microphone\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-microphone-slash" }),
-                    _vm._v(" fa-microphone-slash\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus" }),
-                    _vm._v(" fa-minus\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-circle" }),
-                    _vm._v(" fa-minus-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square" }),
-                    _vm._v(" fa-minus-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square-o" }),
-                    _vm._v(" fa-minus-square-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mobile" }),
-                    _vm._v(" fa-mobile\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mobile-phone" }),
-                    _vm._v(" fa-mobile-phone\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-money" }),
-                    _vm._v(" fa-money\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-moon-o" }),
-                    _vm._v(" fa-moon-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-music" }),
-                    _vm._v(" fa-music\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-pencil" }),
-                    _vm._v(" fa-pencil\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-pencil-square" }),
-                    _vm._v(" fa-pencil-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-pencil-square-o" }),
-                    _vm._v(" fa-pencil-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-phone" }),
-                    _vm._v(" fa-phone\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-phone-square" }),
-                    _vm._v(" fa-phone-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-picture-o" }),
-                    _vm._v(" fa-picture-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plane" }),
-                    _vm._v(" fa-plane\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus" }),
-                    _vm._v(" fa-plus\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-circle" }),
-                    _vm._v(" fa-plus-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square" }),
-                    _vm._v(" fa-plus-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square-o" }),
-                    _vm._v(" fa-plus-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-power-off" }),
-                    _vm._v(" fa-power-off\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-print" }),
-                    _vm._v(" fa-print\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-puzzle-piece" }),
-                    _vm._v(" fa-puzzle-piece\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-qrcode" }),
-                    _vm._v(" fa-qrcode\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-question" }),
-                    _vm._v(" fa-question\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-question-circle" }),
-                    _vm._v(" fa-question-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-quote-left" }),
-                    _vm._v(" fa-quote-left\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-quote-right" }),
-                    _vm._v(" fa-quote-right\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-random" }),
-                    _vm._v(" fa-random\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-refresh" }),
-                    _vm._v(" fa-refresh\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-reply" }),
-                    _vm._v(" fa-reply\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-reply-all" }),
-                    _vm._v(" fa-reply-all\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-retweet" }),
-                    _vm._v(" fa-retweet\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-road" }),
-                    _vm._v(" fa-road\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-rocket" }),
-                    _vm._v(" fa-rocket\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-rss" }),
-                    _vm._v(" fa-rss\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-rss-square" }),
-                    _vm._v(" fa-rss-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-search" }),
-                    _vm._v(" fa-search\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-search-minus" }),
-                    _vm._v(" fa-search-minus\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-search-plus" }),
-                    _vm._v(" fa-search-plus\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-share" }),
-                    _vm._v(" fa-share\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-share-square" }),
-                    _vm._v(" fa-share-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-share-square-o" }),
-                    _vm._v(" fa-share-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-shield" }),
-                    _vm._v(" fa-shield\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-shopping-cart" }),
-                    _vm._v(" fa-shopping-cart\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sign-in" }),
-                    _vm._v(" fa-sign-in\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-shift-right" }),
-                    _vm._v(" fa-sign-out\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-signal" }),
-                    _vm._v(" fa-signal\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sitemap" }),
-                    _vm._v(" fa-sitemap\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-smile-o" }),
-                    _vm._v(" fa-smile-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort" }),
-                    _vm._v(" fa-sort\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-alpha-asc" }),
-                    _vm._v(" fa-sort-alpha-asc\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-alpha-desc" }),
-                    _vm._v(" fa-sort-alpha-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-amount-asc" }),
-                    _vm._v(" fa-sort-amount-asc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-amount-desc" }),
-                    _vm._v(" fa-sort-amount-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-asc" }),
-                    _vm._v(" fa-sort-asc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-desc" }),
-                    _vm._v(" fa-sort-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-down" }),
-                    _vm._v(" fa-sort-down\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-numeric-asc" }),
-                    _vm._v(" fa-sort-numeric-asc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-numeric-desc" }),
-                    _vm._v(" fa-sort-numeric-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-up" }),
-                    _vm._v(" fa-sort-up\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-spinner" }),
-                    _vm._v(" fa-spinner\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square" }),
-                    _vm._v(" fa-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square-o" }),
-                    _vm._v(" fa-square-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star" }),
-                    _vm._v(" fa-star\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half" }),
-                    _vm._v(" fa-star-half\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half-empty" }),
-                    _vm._v(" fa-star-half-empty\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half-full" }),
-                    _vm._v(" fa-star-half-full\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half-o" }),
-                    _vm._v(" fa-star-half-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-o" }),
-                    _vm._v(" fa-star-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-subscript" }),
-                    _vm._v(" fa-subscript\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-suitcase" }),
-                    _vm._v(" fa-suitcase\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sun-o" }),
-                    _vm._v(" fa-sun-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-superscript" }),
-                    _vm._v(" fa-superscript\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tablet" }),
-                    _vm._v(" fa-tablet\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tachometer" }),
-                    _vm._v(" fa-tachometer\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tag" }),
-                    _vm._v(" fa-tag\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tags" }),
-                    _vm._v(" fa-tags\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tasks" }),
-                    _vm._v(" fa-tasks\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-terminal" }),
-                    _vm._v(" fa-terminal\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumb-tack" }),
-                    _vm._v(" fa-thumb-tack\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-down" }),
-                    _vm._v(" fa-thumbs-down\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-o-down" }),
-                    _vm._v(" fa-thumbs-o-down\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-o-up" }),
-                    _vm._v(" fa-thumbs-o-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-up" }),
-                    _vm._v(" fa-thumbs-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ticket" }),
-                    _vm._v(" fa-ticket\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-times" }),
-                    _vm._v(" fa-times\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-times-circle" }),
-                    _vm._v(" fa-times-circle\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-times-circle-o" }),
-                    _vm._v(" fa-times-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tint" }),
-                    _vm._v(" fa-tint\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-down" }),
-                    _vm._v(" fa-toggle-down\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-left" }),
-                    _vm._v(" fa-toggle-left\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-right" }),
-                    _vm._v(" fa-toggle-right\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-up" }),
-                    _vm._v(" fa-toggle-up\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-trash-o" }),
-                    _vm._v(" fa-trash-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-trophy" }),
-                    _vm._v(" fa-trophy\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-truck" }),
-                    _vm._v(" fa-truck\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-umbrella" }),
-                    _vm._v(" fa-umbrella\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-unlock" }),
-                    _vm._v(" fa-unlock\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-unlock-alt" }),
-                    _vm._v(" fa-unlock-alt\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-unsorted" }),
-                    _vm._v(" fa-unsorted\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-upload" }),
-                    _vm._v(" fa-upload\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-user" }),
-                    _vm._v(" fa-user\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-users" }),
-                    _vm._v(" fa-users\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-video-camera" }),
-                    _vm._v(" fa-video-camera\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-volume-down" }),
-                    _vm._v(" fa-volume-down\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-volume-off" }),
-                    _vm._v(" fa-volume-off\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-volume-up" }),
-                    _vm._v(" fa-volume-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-warning" }),
-                    _vm._v(" fa-warning\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-wheelchair" }),
-                    _vm._v(" fa-wheelchair\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-wrench" }),
-                    _vm._v(" fa-wrench\n                        ")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("section", { attrs: { id: "form-control" } }, [
-                _c("h4", { staticClass: "page-header" }, [
-                  _vm._v(
-                    "\n                        Form Control Icons\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square" }),
-                    _vm._v(" fa-check-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square-o" }),
-                    _vm._v(" fa-check-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle" }),
-                    _vm._v(" fa-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle-o" }),
-                    _vm._v(" fa-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-                    _vm._v(" fa-dot-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square" }),
-                    _vm._v(" fa-minus-square\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square-o" }),
-                    _vm._v(" fa-minus-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square" }),
-                    _vm._v(" fa-plus-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square-o" }),
-                    _vm._v(" fa-plus-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square" }),
-                    _vm._v(" fa-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square-o" }),
-                    _vm._v(" fa-square-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("section", { attrs: { id: "currency" } }, [
-                  _c("h4", { staticClass: "page-header" }, [
-                    _vm._v(
-                      "\n                            Currency Icons\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-bitcoin" }),
-                      _vm._v(" fa-bitcoin\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-btc" }),
-                      _vm._v(" fa-btc\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-cny" }),
-                      _vm._v(" fa-cny\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-dollar" }),
-                      _vm._v(" fa-dollar\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-eur" }),
-                      _vm._v(" fa-eur\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-euro" }),
-                      _vm._v(" fa-euro\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-gbp" }),
-                      _vm._v(" fa-gbp\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-inr" }),
-                      _vm._v(" fa-inr\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-jpy" }),
-                      _vm._v(" fa-jpy\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-krw" }),
-                      _vm._v(" fa-krw\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-money" }),
-                      _vm._v(" fa-money\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rmb" }),
-                      _vm._v(" fa-rmb\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rouble" }),
-                      _vm._v(" fa-rouble\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rub" }),
-                      _vm._v(" fa-rub\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-ruble" }),
-                      _vm._v(" fa-ruble\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rupee" }),
-                      _vm._v(" fa-rupee\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-try" }),
-                      _vm._v(" fa-try\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-turkish-lira" }),
-                      _vm._v(
-                        " fa-turkish-lira\n                                "
-                      ),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-usd" }),
-                      _vm._v(" fa-usd\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-won" }),
-                      _vm._v(" fa-won\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-yen" }),
-                      _vm._v(" fa-yen\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("section", { attrs: { id: "text-editor" } }, [
-                  _c("h4", { staticClass: "page-header" }, [
-                    _vm._v(
-                      "\n                            Text Editor Icons\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-center" }),
-                      _vm._v(" fa-align-center\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-justify" }),
-                      _vm._v(" fa-align-justify\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-left" }),
-                      _vm._v(" fa-align-left\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-right" }),
-                      _vm._v(" fa-align-right\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-bold" }),
-                      _vm._v(" fa-bold\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-chain" }),
-                      _vm._v(" fa-chain\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-chain-broken" }),
-                      _vm._v(" fa-chain-broken\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-clipboard" }),
-                      _vm._v(" fa-clipboard\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-columns" }),
-                      _vm._v(" fa-columns\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-copy" }),
-                      _vm._v(" fa-copy\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-cut" }),
-                      _vm._v(" fa-cut\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-dedent" }),
-                      _vm._v(" fa-dedent\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-eraser" }),
-                      _vm._v(" fa-eraser\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-file" }),
-                      _vm._v(" fa-file\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-file-o" }),
-                      _vm._v(" fa-file-o\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-file-text" }),
-                      _vm._v(" fa-file-text\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw ti-pencil" }),
-                      _vm._v(" fa-file-text-o\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-files-o" }),
-                      _vm._v(" fa-files-o\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-floppy-o" }),
-                      _vm._v(" fa-floppy-o\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-font" }),
-                      _vm._v(" fa-font\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-indent" }),
-                      _vm._v(" fa-indent\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-italic" }),
-                      _vm._v(" fa-italic\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-link" }),
-                      _vm._v(" fa-link\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list" }),
-                      _vm._v(" fa-list\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list-alt" }),
-                      _vm._v(" fa-list-alt\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list-ol" }),
-                      _vm._v(" fa-list-ol\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list-ul" }),
-                      _vm._v(" fa-list-ul\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-outdent" }),
-                      _vm._v(" fa-outdent\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-paperclip" }),
-                      _vm._v(" fa-paperclip\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-paste" }),
-                      _vm._v(" fa-paste\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-repeat" }),
-                      _vm._v(" fa-repeat\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rotate-left" }),
-                      _vm._v(
-                        " fa-rotate-left\n                                "
-                      ),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rotate-right" }),
-                      _vm._v(
-                        " fa-rotate-right\n                                "
-                      ),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-save" }),
-                      _vm._v(" fa-save\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-scissors" }),
-                      _vm._v(" fa-scissors\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-strikethrough" }),
-                      _vm._v(" fa-strikethrough\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-table" }),
-                      _vm._v(" fa-table\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-text-height" }),
-                      _vm._v(" fa-text-height\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-text-width" }),
-                      _vm._v(" fa-text-width\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-th" }),
-                      _vm._v(" fa-th\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-th-large" }),
-                      _vm._v(" fa-th-large\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-th-list" }),
-                      _vm._v(" fa-th-list\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-underline" }),
-                      _vm._v(" fa-underline\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-undo" }),
-                      _vm._v(" fa-undo\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-unlink" }),
-                      _vm._v(" fa-unlink\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("section", { attrs: { id: "directional" } }, [
-                    _c("h4", { staticClass: "page-header" }, [
-                      _vm._v(
-                        "\n                                Directional Icons\n                            "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-angle-double-down"
-                        }),
-                        _vm._v(
-                          " fa-angle-double-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-angle-double-left"
-                        }),
-                        _vm._v(
-                          " fa-angle-double-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-angle-double-right"
-                        }),
-                        _vm._v(
-                          " fa-angle-double-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-double-up" }),
-                        _vm._v(
-                          " fa-angle-double-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-down" }),
-                        _vm._v(
-                          " fa-angle-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-left" }),
-                        _vm._v(
-                          " fa-angle-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
-                        _vm._v(
-                          " fa-angle-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-up" }),
-                        _vm._v(" fa-angle-up\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-down"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-left"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-down"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-left"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-right"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-up"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-right"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-circle-up" }),
-                        _vm._v(
-                          " fa-arrow-circle-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-down" }),
-                        _vm._v(
-                          " fa-arrow-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-left" }),
-                        _vm._v(
-                          " fa-arrow-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-right" }),
-                        _vm._v(
-                          " fa-arrow-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-up" }),
-                        _vm._v(" fa-arrow-up\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows" }),
-                        _vm._v(" fa-arrows\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows-alt" }),
-                        _vm._v(
-                          " fa-arrows-alt\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows-h" }),
-                        _vm._v(" fa-arrows-h\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows-v" }),
-                        _vm._v(" fa-arrows-v\n                                ")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-down" }),
-                        _vm._v(
-                          " fa-caret-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-left" }),
-                        _vm._v(
-                          " fa-caret-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-right" }),
-                        _vm._v(
-                          " fa-caret-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-down"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-left"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-right"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-right\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-up"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-up" }),
-                        _vm._v(" fa-caret-up\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-down"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-left"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-right"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-up"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-up\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-chevron-down" }),
-                        _vm._v(
-                          " fa-chevron-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-chevron-left" }),
-                        _vm._v(
-                          " fa-chevron-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-chevron-right" }),
-                        _vm._v(
-                          " fa-chevron-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw ti-angle-up clickable"
-                        }),
-                        _vm._v(
-                          " fa-chevron-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-down" }),
-                        _vm._v(
-                          " fa-hand-o-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-left" }),
-                        _vm._v(
-                          " fa-hand-o-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-right" }),
-                        _vm._v(
-                          " fa-hand-o-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-up" }),
-                        _vm._v(
-                          " fa-hand-o-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-long-arrow-down" }),
-                        _vm._v(
-                          " fa-long-arrow-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-long-arrow-left" }),
-                        _vm._v(
-                          " fa-long-arrow-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-long-arrow-right"
-                        }),
-                        _vm._v(
-                          " fa-long-arrow-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-long-arrow-up" }),
-                        _vm._v(
-                          " fa-long-arrow-up\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-down" }),
-                        _vm._v(
-                          " fa-toggle-down\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-left" }),
-                        _vm._v(
-                          " fa-toggle-left\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-right" }),
-                        _vm._v(
-                          " fa-toggle-right\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-up" }),
-                        _vm._v(
-                          " fa-toggle-up\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("section", { attrs: { id: "video-player" } }, [
-                      _c("h4", { staticClass: "page-header" }, [
-                        _vm._v(
-                          "\n                                    Video Player Icons\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-arrows-alt" }),
-                            _vm._v(
-                              " fa-arrows-alt\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-backward" }),
-                            _vm._v(
-                              " fa-backward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-compress" }),
-                            _vm._v(
-                              " fa-compress\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-eject" }),
-                            _vm._v(
-                              " fa-eject\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-expand" }),
-                            _vm._v(
-                              " fa-expand\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-fast-backward"
-                            }),
-                            _vm._v(
-                              " fa-fast-backward\n                                    "
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-fast-forward"
-                            }),
-                            _vm._v(
-                              " fa-fast-forward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-forward" }),
-                            _vm._v(
-                              " fa-forward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-pause" }),
-                            _vm._v(
-                              " fa-pause\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-play" }),
-                            _vm._v(
-                              " fa-play\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-play-circle" }),
-                            _vm._v(
-                              " fa-play-circle\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-play-circle-o"
-                            }),
-                            _vm._v(
-                              " fa-play-circle-o\n                                    "
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-step-backward"
-                            }),
-                            _vm._v(
-                              " fa-step-backward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-step-forward"
-                            }),
-                            _vm._v(
-                              " fa-step-forward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-stop" }),
-                            _vm._v(
-                              " fa-stop\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-youtube-play"
-                            }),
-                            _vm._v(
-                              " fa-youtube-play\n                                    "
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("section", { attrs: { id: "brand" } }, [
-                        _c("h4", { staticClass: "page-header" }, [
-                          _vm._v(
-                            "\n                                        Brand Icons\n                                    "
-                          )
+                          })
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-adn" }),
-                              _vm._v(
-                                " fa-adn\n                                        "
+                        _c("div", { staticClass: "timeline-panel" }, [
+                          _c("div", { staticClass: "timeline-heading" }, [
+                            _c("h4", { staticClass: "timeline-title" }, [
+                              _vm._v("Tinder Project")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _c(
+                                "small",
+                                { staticClass: "text-default-gray" },
+                                [_vm._v("Sept 10, 2016")]
                               )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-android" }),
-                              _vm._v(
-                                " fa-android\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-apple" }),
-                              _vm._v(
-                                " fa-apple\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-bitbucket" }),
-                              _vm._v(
-                                " fa-bitbucket\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-bitbucket-square"
-                              }),
-                              _vm._v(
-                                " fa-bitbucket-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-bitcoin" }),
-                              _vm._v(
-                                " fa-bitcoin\n                                            "
-                              ),
-                              _c("span", { staticClass: "text-muted" }, [
-                                _vm._v("(alias)")
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-btc" }),
-                              _vm._v(
-                                " fa-btc\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-css3" }),
-                              _vm._v(
-                                " fa-css3\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-dribbble" }),
-                              _vm._v(
-                                " fa-dribbble\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-dropbox" }),
-                              _vm._v(
-                                " fa-dropbox\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-facebook" }),
-                              _vm._v(
-                                " fa-facebook\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-facebook-square"
-                              }),
-                              _vm._v(
-                                " fa-facebook-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-flickr" }),
-                              _vm._v(
-                                " fa-flickr\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-foursquare"
-                              }),
-                              _vm._v(
-                                " fa-foursquare\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-github" }),
-                              _vm._v(
-                                " fa-github\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-github-alt"
-                              }),
-                              _vm._v(
-                                " fa-github-alt\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-github-square"
-                              }),
-                              _vm._v(
-                                " fa-github-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-gittip" }),
-                              _vm._v(
-                                " fa-gittip\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-google-plus"
-                              }),
-                              _vm._v(
-                                " fa-google-plus\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-google-plus-square"
-                              }),
-                              _vm._v(
-                                " fa-google-plus-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-html5" }),
-                              _vm._v(
-                                " fa-html5\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-instagram" }),
-                              _vm._v(
-                                " fa-instagram\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-linkedin" }),
-                              _vm._v(
-                                " fa-linkedin\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-linkedin-square"
-                              }),
-                              _vm._v(
-                                " fa-linkedin-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-linux" }),
-                              _vm._v(
-                                " fa-linux\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-maxcdn" }),
-                              _vm._v(
-                                " fa-maxcdn\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-pagelines" }),
-                              _vm._v(
-                                " fa-pagelines\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-pinterest" }),
-                              _vm._v(
-                                " fa-pinterest\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-pinterest-square"
-                              }),
-                              _vm._v(
-                                " fa-pinterest-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-renren" }),
-                              _vm._v(
-                                " fa-renren\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-skype" }),
-                              _vm._v(
-                                " fa-skype\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-stack-exchange"
-                              }),
-                              _vm._v(
-                                " fa-stack-exchange\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-stack-overflow"
-                              }),
-                              _vm._v(
-                                " fa-stack-overflow\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-trello" }),
-                              _vm._v(
-                                " fa-trello\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-tumblr" }),
-                              _vm._v(
-                                " fa-tumblr\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-tumblr-square"
-                              }),
-                              _vm._v(
-                                " fa-tumblr-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-twitter" }),
-                              _vm._v(
-                                " fa-twitter\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-twitter-square"
-                              }),
-                              _vm._v(
-                                " fa-twitter-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-vimeo-square"
-                              }),
-                              _vm._v(
-                                " fa-vimeo-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-vk" }),
-                              _vm._v(
-                                " fa-vk\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-weibo" }),
-                              _vm._v(
-                                " fa-weibo\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-windows" }),
-                              _vm._v(
-                                " fa-windows\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-xing" }),
-                              _vm._v(
-                                " fa-xing\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-xing-square"
-                              }),
-                              _vm._v(
-                                " fa-xing-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-youtube" }),
-                              _vm._v(
-                                " fa-youtube\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-youtube-play"
-                              }),
-                              _vm._v(
-                                " fa-youtube-play\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-youtube-square"
-                              }),
-                              _vm._v(
-                                " fa-youtube-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("section", { attrs: { id: "medical" } }, [
-                          _c("h4", { staticClass: "page-header" }, [
-                            _vm._v(
-                              "\n                                            Medical Icons\n                                        "
-                            )
+                            ])
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", { staticClass: "col-12 col-md-12" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-ambulance"
-                                    }),
-                                    _vm._v(
-                                      " fa-ambulance\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-h-square"
-                                    }),
-                                    _vm._v(
-                                      " fa-h-square\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-hospital-o"
-                                    }),
-                                    _vm._v(
-                                      " fa-hospital-o\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-medkit"
-                                    }),
-                                    _vm._v(
-                                      " fa-medkit\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-plus-square"
-                                    }),
-                                    _vm._v(
-                                      " fa-plus-square\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-stethoscope"
-                                    }),
-                                    _vm._v(
-                                      " fa-stethoscope\n                                                    "
-                                    )
-                                  ]
-                                )
+                          _c("div", { staticClass: "timeline-body" }, [
+                            _c("p", [
+                              _vm._v(
+                                "\n                                                Tinder Project's Final review has completed.\n                                            "
+                              )
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("div", { staticClass: "timeline-badge center" }, [
+                          _c("img", {
+                            staticClass: "rounded-circle float-right",
+                            attrs: {
+                              src: __webpack_require__(560),
+                              height: "36",
+                              width: "36",
+                              alt: "avatar-image"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-panel" }, [
+                          _c("div", { staticClass: "timeline-heading" }, [
+                            _c("h4", { staticClass: "timeline-title" }, [
+                              _vm._v("A new branch in Virginia.")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _c(
+                                "small",
+                                { staticClass: "text-default-gray" },
+                                [_vm._v("Jan 02, 2017")]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "timeline-body" }, [
+                            _c("p", [
+                              _vm._v(
+                                "\n                                                Planning to have a branch in virginia in the coming year.\n                                            "
+                              )
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("div", { staticClass: "timeline-badge center" }, [
+                          _c("img", {
+                            staticClass: "rounded-circle float-right",
+                            attrs: {
+                              src: __webpack_require__(561),
+                              height: "36",
+                              width: "36",
+                              alt: "avatar-image"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "timeline-panel",
+                            staticStyle: { display: "inline-block" }
+                          },
+                          [
+                            _c("div", { staticClass: "timeline-heading" }, [
+                              _c("h4", { staticClass: "timeline-title" }, [
+                                _vm._v("Daily Status ")
                               ]),
                               _vm._v(" "),
-                              _c("div", { staticClass: "row" }, [
+                              _c("p", [
                                 _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-user-md"
-                                    }),
-                                    _vm._v(
-                                      " fa-user-md\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-wheelchair"
-                                    }),
-                                    _vm._v(
-                                      " fa-wheelchair\n                                                    "
-                                    )
-                                  ]
+                                  "small",
+                                  { staticClass: "text-default-gray" },
+                                  [_vm._v("2days ago")]
                                 )
                               ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "timeline-body" }, [
+                              _c("p", [
+                                _vm._v(
+                                  "\n                                                Manager schedules to keep a daily project status track.\n                                            "
+                                )
+                              ])
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("div", { staticClass: "timeline-badge center" }, [
+                          _c("img", {
+                            staticClass: "rounded-circle float-right",
+                            attrs: {
+                              src: __webpack_require__(564),
+                              height: "36",
+                              width: "36",
+                              alt: "avatar-image"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-panel" }, [
+                          _c("div", { staticClass: "timeline-heading" }, [
+                            _c("h4", { staticClass: "timeline-title" }, [
+                              _vm._v("Performance report")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _c(
+                                "small",
+                                { staticClass: "text-default-gray" },
+                                [_vm._v("Aug 10, 2016")]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "timeline-body" }, [
+                            _c("p", [
+                              _vm._v(
+                                "\n                                                Richard, updated his Team over view Performance report.\n                                            "
+                              )
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("div", { staticClass: "timeline-badge center" }, [
+                          _c("img", {
+                            staticClass: "rounded-circle float-right",
+                            attrs: {
+                              src: __webpack_require__(560),
+                              height: "36",
+                              width: "36",
+                              alt: "avatar-image"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "timeline-panel" }, [
+                          _c("div", { staticClass: "timeline-heading" }, [
+                            _c("h4", { staticClass: "timeline-title" }, [
+                              _vm._v("Project Evaluation")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _c(
+                                "small",
+                                { staticClass: "text-default-gray" },
+                                [_vm._v("Oct 05, 2016")]
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "timeline-body" }, [
+                            _c("p", [
+                              _vm._v(
+                                "\n                                                Variations Project Evaluation is going on to highlight\n                                                project.\n                                            "
+                              )
                             ])
                           ])
                         ])
                       ])
                     ])
                   ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "right" } }, [
-              _c("div", { attrs: { id: "right-slim" } }, [
-                _c("div", { staticClass: "rightsidebar-right" }, [
-                  _c("div", { staticClass: "rightsidebar-right-content" }, [
-                    _c("div", { staticClass: "panel-tabs" }, [
-                      _c(
-                        "ul",
-                        {
-                          staticClass: "nav nav-tabs nav-float",
-                          attrs: { role: "tablist" }
-                        },
-                        [
-                          _c("li", { staticClass: "nav-item text-center" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link active ",
-                                attrs: {
-                                  href: "#r_tab1",
-                                  role: "tab",
-                                  "data-toggle": "tab"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-fw ti-comments" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "text-center nav-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link",
-                                attrs: {
-                                  href: "#r_tab2",
-                                  role: "tab",
-                                  "data-toggle": "tab"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-fw ti-bell" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "text-center nav-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link",
-                                attrs: {
-                                  href: "#r_tab3",
-                                  role: "tab",
-                                  "data-toggle": "tab"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-fw ti-settings" })]
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tab-content" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "tab-pane active",
-                          attrs: { id: "r_tab1" }
-                        },
-                        [
-                          _c("div", { attrs: { id: "slim_t1" } }, [
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "menu-icon  fa fa-fw ti-user"
-                                }),
-                                _vm._v(
-                                  "\n                                            Contacts\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              { staticClass: "list-unstyled margin-none" },
-                              [
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-primary"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Annette\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-primary"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Jordan\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-primary"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Stewart\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-warning"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Alfred\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-danger"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Eileen\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-muted"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Robert\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-muted"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Cassandra\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", { staticClass: "fa fa-fw ti-export" }),
-                                _vm._v(
-                                  "\n                                            Recent Updates\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", [
-                              _c("ul", { staticClass: "list-unstyled" }, [
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-comments-smiley fa-fw text-primary"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        New Comment\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-twitter-alt fa-fw text-success"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        3 New Followers\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-email fa-fw text-info"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Message Sent\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-write fa-fw text-warning"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        New Task\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-export fa-fw text-danger"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Server Rebooted\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-info-alt fa-fw text-primary"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Server Not Responding\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-shopping-cart fa-fw text-success"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        New Order Placed\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-money fa-fw text-info"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Payment Received\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ])
-                            ])
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "tab-pane fade",
-                          attrs: { id: "r_tab2" }
-                        },
-                        [
-                          _c("div", { attrs: { id: "slim_t2" } }, [
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", { staticClass: "fa fa-fw ti-bell" }),
-                                _vm._v(
-                                  "\n                                            Notifications\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "list-unstyled m-t-15 notifications"
-                              },
-                              [
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "message icon-not striped-col",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("John Doe")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        5 members joined today\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("Just now")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "message icon-not",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("Tony")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        likes a photo of you\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("5 min")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "message icon-not striped-col",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("John")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        Dont forgot to call...\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("11 min")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "message icon-not",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("Jenny Kerry")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        Done with it...\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("1 Hour")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "message icon-not striped-col",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [
-                                            _vm._v("Ernest Kerry")
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        2 members joined today\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("3 Days")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "text-right noti-footer" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("View All Notifications "),
-                                      _c("i", { staticClass: "ti-arrow-right" })
-                                    ])
-                                  ]
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "fa fa-fw ti-check-box"
-                                }),
-                                _vm._v(
-                                  "\n                                            Tasks\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("ul", { staticClass: "list-unstyled m-t-15" }, [
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [_vm._v("Button Design")]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("40%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "progress progress-xs  active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-success progress-bar-striped",
-                                          staticStyle: { width: "40%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "40",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("40% Complete (success)")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [_vm._v("Theme Creation")]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("20%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "progress progress-xs  active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-info progress-bar-striped",
-                                          staticStyle: { width: "20%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "20",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("20% Complete")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [_vm._v("XYZ Task To Do")]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("60%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "progress progress-xs  active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-warning progress-bar-striped",
-                                          staticStyle: { width: "60%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "60",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("60% Complete (warning)")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [
-                                      _vm._v("Transitions Creation")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("80%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "progress progress-xs active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-danger progress-bar-striped",
-                                          staticStyle: { width: "80%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "80",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("80% Complete (danger)")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", { staticClass: "text-right" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("View All Tasks "),
-                                  _c("i", { staticClass: "ti-arrow-right" })
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "tab-pane fade",
-                          attrs: { id: "r_tab3" }
-                        },
-                        [
-                          _c("div", { attrs: { id: "slim_t3" } }, [
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase gen-sett-m-t text-xs"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "fa fa-fw ti-settings"
-                                }),
-                                _vm._v(
-                                  "\n                                            General\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "list-unstyled settings-list m-t-10"
-                              },
-                              [
-                                _c("li", [
-                                  _c("label", { attrs: { for: "status" } }, [
-                                    _vm._v("Available")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "status",
-                                        name: "my-checkbox",
-                                        checked: ""
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "email-auth" } },
-                                    [_vm._v("Login with Email")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "email-auth",
-                                        name: "my-checkbox"
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("label", { attrs: { for: "update" } }, [
-                                    _vm._v("Auto Update")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "update",
-                                        name: "my-checkbox"
-                                      }
-                                    })
-                                  ])
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", { staticClass: "fa fa-fw ti-volume" }),
-                                _vm._v(
-                                  "\n                                            Sound & Notification\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "list-unstyled settings-list m-t-10"
-                              },
-                              [
-                                _c("li", [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "chat-sound" } },
-                                    [_vm._v("Chat Sound")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "chat-sound",
-                                        name: "my-checkbox",
-                                        checked: ""
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "noti-sound" } },
-                                    [_vm._v("Notification Sound")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "noti-sound",
-                                        name: "my-checkbox"
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("label", { attrs: { for: "remain" } }, [
-                                    _vm._v("Remainder ")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "remain",
-                                        name: "my-checkbox",
-                                        checked: ""
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("label", { attrs: { for: "vol" } }, [
-                                    _vm._v("Volume")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    attrs: {
-                                      type: "range",
-                                      id: "vol",
-                                      min: "0",
-                                      max: "100",
-                                      value: "15"
-                                    }
-                                  })
-                                ])
-                              ]
-                            )
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "background-overlay" })
-        ]
-      )
-    ],
-    1
-  )
+                ]
+              )
+            ],
+            1
+          )
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -6510,26 +1019,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4a7f2703", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7f76b73d", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 462:
+/***/ 464:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1424)
-  __webpack_require__(1426)
+  __webpack_require__(1466)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1428)
+var __vue_script__ = __webpack_require__(1468)
 /* template */
-var __vue_template__ = __webpack_require__(1429)
+var __vue_template__ = __webpack_require__(1470)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -6546,7 +1054,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/fontawesome_icons.vue"
+Component.options.__file = "resources/components/pages/timeline.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -6555,9 +1063,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4a7f2703", Component.options)
+    hotAPI.createRecord("data-v-7f76b73d", Component.options)
   } else {
-    hotAPI.reload("data-v-4a7f2703", Component.options)
+    hotAPI.reload("data-v-7f76b73d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -6569,7 +1077,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 515:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -16941,19 +11449,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 517:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(518)
+  __webpack_require__(527)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(520)
+var __vue_script__ = __webpack_require__(529)
 /* template */
-var __vue_template__ = __webpack_require__(521)
+var __vue_template__ = __webpack_require__(530)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -16993,13 +11501,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 518:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(519);
+var content = __webpack_require__(528);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -17020,7 +11528,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 519:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -17035,7 +11543,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 520:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17080,7 +11588,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 521:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -17142,23 +11650,328 @@ if (false) {
 
 /***/ }),
 
-/***/ 550:
+/***/ 540:
+/***/ (function(module, exports) {
+
+module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
+
+/***/ }),
+
+/***/ 560:
+/***/ (function(module, exports) {
+
+module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
+
+/***/ }),
+
+/***/ 561:
+/***/ (function(module, exports) {
+
+module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
+
+/***/ }),
+
+/***/ 562:
+/***/ (function(module, exports) {
+
+module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
+
+/***/ }),
+
+/***/ 564:
+/***/ (function(module, exports) {
+
+module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
+
+/***/ }),
+
+/***/ 585:
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(515)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(551));
-//# sourceMappingURL=toastr.js.map
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(586);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(43)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../css-loader/index.js!./animate.min.css", function() {
+			var newContent = require("!!../css-loader/index.js!./animate.min.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 586:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@charset \"UTF-8\";\n\n/*!\n * animate.css -http://daneden.me/animate\n * Version - 3.7.0\n * Licensed under the MIT license - http://opensource.org/licenses/MIT\n *\n * Copyright (c) 2018 Daniel Eden\n */\n\n@-webkit-keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);animation-timing-function:cubic-bezier(.215,.61,.355,1);transform:translateZ(0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);animation-timing-function:cubic-bezier(.755,.05,.855,.06);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);animation-timing-function:cubic-bezier(.755,.05,.855,.06);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}@keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);animation-timing-function:cubic-bezier(.215,.61,.355,1);transform:translateZ(0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);animation-timing-function:cubic-bezier(.755,.05,.855,.06);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);animation-timing-function:cubic-bezier(.755,.05,.855,.06);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}.bounce{-webkit-animation-name:bounce;-webkit-transform-origin:center bottom;animation-name:bounce;transform-origin:center bottom}@-webkit-keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}.flash{-webkit-animation-name:flash;animation-name:flash}@-webkit-keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes rubberBand{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes rubberBand{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand}@-webkit-keyframes shake{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}@keyframes shake{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}.shake{-webkit-animation-name:shake;animation-name:shake}@-webkit-keyframes headShake{0%{-webkit-transform:translateX(0);transform:translateX(0)}6.5%{-webkit-transform:translateX(-6px) rotateY(-9deg);transform:translateX(-6px) rotateY(-9deg)}18.5%{-webkit-transform:translateX(5px) rotateY(7deg);transform:translateX(5px) rotateY(7deg)}31.5%{-webkit-transform:translateX(-3px) rotateY(-5deg);transform:translateX(-3px) rotateY(-5deg)}43.5%{-webkit-transform:translateX(2px) rotateY(3deg);transform:translateX(2px) rotateY(3deg)}50%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes headShake{0%{-webkit-transform:translateX(0);transform:translateX(0)}6.5%{-webkit-transform:translateX(-6px) rotateY(-9deg);transform:translateX(-6px) rotateY(-9deg)}18.5%{-webkit-transform:translateX(5px) rotateY(7deg);transform:translateX(5px) rotateY(7deg)}31.5%{-webkit-transform:translateX(-3px) rotateY(-5deg);transform:translateX(-3px) rotateY(-5deg)}43.5%{-webkit-transform:translateX(2px) rotateY(3deg);transform:translateX(2px) rotateY(3deg)}50%{-webkit-transform:translateX(0);transform:translateX(0)}}.headShake{-webkit-animation-name:headShake;-webkit-animation-timing-function:ease-in-out;animation-name:headShake;animation-timing-function:ease-in-out}@-webkit-keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}.swing{-webkit-animation-name:swing;-webkit-transform-origin:top center;animation-name:swing;transform-origin:top center}@-webkit-keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.tada{-webkit-animation-name:tada;animation-name:tada}@-webkit-keyframes wobble{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}15%{-webkit-transform:translate3d(-25%,0,0) rotate(-5deg);transform:translate3d(-25%,0,0) rotate(-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate(3deg);transform:translate3d(20%,0,0) rotate(3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate(-3deg);transform:translate3d(-15%,0,0) rotate(-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate(2deg);transform:translate3d(10%,0,0) rotate(2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate(-1deg);transform:translate3d(-5%,0,0) rotate(-1deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes wobble{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}15%{-webkit-transform:translate3d(-25%,0,0) rotate(-5deg);transform:translate3d(-25%,0,0) rotate(-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate(3deg);transform:translate3d(20%,0,0) rotate(3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate(-3deg);transform:translate3d(-15%,0,0) rotate(-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate(2deg);transform:translate3d(10%,0,0) rotate(2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate(-1deg);transform:translate3d(-5%,0,0) rotate(-1deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.wobble{-webkit-animation-name:wobble;animation-name:wobble}@-webkit-keyframes jello{0%,11.1%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(.390625deg) skewY(.390625deg);transform:skewX(.390625deg) skewY(.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}@keyframes jello{0%,11.1%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(.390625deg) skewY(.390625deg);transform:skewX(.390625deg) skewY(.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}.jello{-webkit-animation-name:jello;-webkit-transform-origin:center;animation-name:jello;transform-origin:center}@-webkit-keyframes heartBeat{0%{-webkit-transform:scale(1);transform:scale(1)}14%{-webkit-transform:scale(1.3);transform:scale(1.3)}28%{-webkit-transform:scale(1);transform:scale(1)}42%{-webkit-transform:scale(1.3);transform:scale(1.3)}70%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes heartBeat{0%{-webkit-transform:scale(1);transform:scale(1)}14%{-webkit-transform:scale(1.3);transform:scale(1.3)}28%{-webkit-transform:scale(1);transform:scale(1)}42%{-webkit-transform:scale(1.3);transform:scale(1.3)}70%{-webkit-transform:scale(1);transform:scale(1)}}.heartBeat{-webkit-animation-duration:1.3s;-webkit-animation-name:heartBeat;-webkit-animation-timing-function:ease-in-out;animation-duration:1.3s;animation-name:heartBeat;animation-timing-function:ease-in-out}@-webkit-keyframes bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{-webkit-transform:scale3d(1.03,1.03,1.03);opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{-webkit-transform:scaleX(1);opacity:1;transform:scaleX(1)}}@keyframes bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{-webkit-transform:scale3d(1.03,1.03,1.03);opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{-webkit-transform:scaleX(1);opacity:1;transform:scaleX(1)}}.bounceIn{-webkit-animation-duration:.75s;-webkit-animation-name:bounceIn;animation-duration:.75s;animation-name:bounceIn}@-webkit-keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(0,-3000px,0);opacity:0;transform:translate3d(0,-3000px,0)}60%{-webkit-transform:translate3d(0,25px,0);opacity:1;transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(0,-3000px,0);opacity:0;transform:translate3d(0,-3000px,0)}60%{-webkit-transform:translate3d(0,25px,0);opacity:1;transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(-3000px,0,0);opacity:0;transform:translate3d(-3000px,0,0)}60%{-webkit-transform:translate3d(25px,0,0);opacity:1;transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(-3000px,0,0);opacity:0;transform:translate3d(-3000px,0,0)}60%{-webkit-transform:translate3d(25px,0,0);opacity:1;transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(3000px,0,0);opacity:0;transform:translate3d(3000px,0,0)}60%{-webkit-transform:translate3d(-25px,0,0);opacity:1;transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(3000px,0,0);opacity:0;transform:translate3d(3000px,0,0)}60%{-webkit-transform:translate3d(-25px,0,0);opacity:1;transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceInUp{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(0,3000px,0);opacity:0;transform:translate3d(0,3000px,0)}60%{-webkit-transform:translate3d(0,-20px,0);opacity:1;transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInUp{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{-webkit-transform:translate3d(0,3000px,0);opacity:0;transform:translate3d(0,3000px,0)}60%{-webkit-transform:translate3d(0,-20px,0);opacity:1;transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@-webkit-keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{-webkit-transform:scale3d(1.1,1.1,1.1);opacity:1;transform:scale3d(1.1,1.1,1.1)}to{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}}@keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{-webkit-transform:scale3d(1.1,1.1,1.1);opacity:1;transform:scale3d(1.1,1.1,1.1)}to{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}}.bounceOut{-webkit-animation-duration:.75s;-webkit-animation-name:bounceOut;animation-duration:.75s;animation-name:bounceOut}@-webkit-keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{-webkit-transform:translate3d(0,-20px,0);opacity:1;transform:translate3d(0,-20px,0)}to{-webkit-transform:translate3d(0,2000px,0);opacity:0;transform:translate3d(0,2000px,0)}}@keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{-webkit-transform:translate3d(0,-20px,0);opacity:1;transform:translate3d(0,-20px,0)}to{-webkit-transform:translate3d(0,2000px,0);opacity:0;transform:translate3d(0,2000px,0)}}.bounceOutDown{-webkit-animation-name:bounceOutDown;animation-name:bounceOutDown}@-webkit-keyframes bounceOutLeft{20%{-webkit-transform:translate3d(20px,0,0);opacity:1;transform:translate3d(20px,0,0)}to{-webkit-transform:translate3d(-2000px,0,0);opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes bounceOutLeft{20%{-webkit-transform:translate3d(20px,0,0);opacity:1;transform:translate3d(20px,0,0)}to{-webkit-transform:translate3d(-2000px,0,0);opacity:0;transform:translate3d(-2000px,0,0)}}.bounceOutLeft{-webkit-animation-name:bounceOutLeft;animation-name:bounceOutLeft}@-webkit-keyframes bounceOutRight{20%{-webkit-transform:translate3d(-20px,0,0);opacity:1;transform:translate3d(-20px,0,0)}to{-webkit-transform:translate3d(2000px,0,0);opacity:0;transform:translate3d(2000px,0,0)}}@keyframes bounceOutRight{20%{-webkit-transform:translate3d(-20px,0,0);opacity:1;transform:translate3d(-20px,0,0)}to{-webkit-transform:translate3d(2000px,0,0);opacity:0;transform:translate3d(2000px,0,0)}}.bounceOutRight{-webkit-animation-name:bounceOutRight;animation-name:bounceOutRight}@-webkit-keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{-webkit-transform:translate3d(0,20px,0);opacity:1;transform:translate3d(0,20px,0)}to{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{-webkit-transform:translate3d(0,20px,0);opacity:1;transform:translate3d(0,20px,0)}to{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}}.bounceOutUp{-webkit-animation-name:bounceOutUp;animation-name:bounceOutUp}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeInDown{0%{-webkit-transform:translate3d(0,-100%,0);opacity:0;transform:translate3d(0,-100%,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInDown{0%{-webkit-transform:translate3d(0,-100%,0);opacity:0;transform:translate3d(0,-100%,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInDownBig{0%{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInDownBig{0%{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInDownBig{-webkit-animation-name:fadeInDownBig;animation-name:fadeInDownBig}@-webkit-keyframes fadeInLeft{0%{-webkit-transform:translate3d(-100%,0,0);opacity:0;transform:translate3d(-100%,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInLeft{0%{-webkit-transform:translate3d(-100%,0,0);opacity:0;transform:translate3d(-100%,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeftBig{0%{-webkit-transform:translate3d(-2000px,0,0);opacity:0;transform:translate3d(-2000px,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInLeftBig{0%{-webkit-transform:translate3d(-2000px,0,0);opacity:0;transform:translate3d(-2000px,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInLeftBig{-webkit-animation-name:fadeInLeftBig;animation-name:fadeInLeftBig}@-webkit-keyframes fadeInRight{0%{-webkit-transform:translate3d(100%,0,0);opacity:0;transform:translate3d(100%,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInRight{0%{-webkit-transform:translate3d(100%,0,0);opacity:0;transform:translate3d(100%,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRightBig{0%{-webkit-transform:translate3d(2000px,0,0);opacity:0;transform:translate3d(2000px,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInRightBig{0%{-webkit-transform:translate3d(2000px,0,0);opacity:0;transform:translate3d(2000px,0,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}@-webkit-keyframes fadeInUp{0%{-webkit-transform:translate3d(0,100%,0);opacity:0;transform:translate3d(0,100%,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInUp{0%{-webkit-transform:translate3d(0,100%,0);opacity:0;transform:translate3d(0,100%,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUpBig{0%{-webkit-transform:translate3d(0,2000px,0);opacity:0;transform:translate3d(0,2000px,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes fadeInUpBig{0%{-webkit-transform:translate3d(0,2000px,0);opacity:0;transform:translate3d(0,2000px,0)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.fadeInUpBig{-webkit-animation-name:fadeInUpBig;animation-name:fadeInUpBig}@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOutDown{0%{opacity:1}to{-webkit-transform:translate3d(0,100%,0);opacity:0;transform:translate3d(0,100%,0)}}@keyframes fadeOutDown{0%{opacity:1}to{-webkit-transform:translate3d(0,100%,0);opacity:0;transform:translate3d(0,100%,0)}}.fadeOutDown{-webkit-animation-name:fadeOutDown;animation-name:fadeOutDown}@-webkit-keyframes fadeOutDownBig{0%{opacity:1}to{-webkit-transform:translate3d(0,2000px,0);opacity:0;transform:translate3d(0,2000px,0)}}@keyframes fadeOutDownBig{0%{opacity:1}to{-webkit-transform:translate3d(0,2000px,0);opacity:0;transform:translate3d(0,2000px,0)}}.fadeOutDownBig{-webkit-animation-name:fadeOutDownBig;animation-name:fadeOutDownBig}@-webkit-keyframes fadeOutLeft{0%{opacity:1}to{-webkit-transform:translate3d(-100%,0,0);opacity:0;transform:translate3d(-100%,0,0)}}@keyframes fadeOutLeft{0%{opacity:1}to{-webkit-transform:translate3d(-100%,0,0);opacity:0;transform:translate3d(-100%,0,0)}}.fadeOutLeft{-webkit-animation-name:fadeOutLeft;animation-name:fadeOutLeft}@-webkit-keyframes fadeOutLeftBig{0%{opacity:1}to{-webkit-transform:translate3d(-2000px,0,0);opacity:0;transform:translate3d(-2000px,0,0)}}@keyframes fadeOutLeftBig{0%{opacity:1}to{-webkit-transform:translate3d(-2000px,0,0);opacity:0;transform:translate3d(-2000px,0,0)}}.fadeOutLeftBig{-webkit-animation-name:fadeOutLeftBig;animation-name:fadeOutLeftBig}@-webkit-keyframes fadeOutRight{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0);opacity:0;transform:translate3d(100%,0,0)}}@keyframes fadeOutRight{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0);opacity:0;transform:translate3d(100%,0,0)}}.fadeOutRight{-webkit-animation-name:fadeOutRight;animation-name:fadeOutRight}@-webkit-keyframes fadeOutRightBig{0%{opacity:1}to{-webkit-transform:translate3d(2000px,0,0);opacity:0;transform:translate3d(2000px,0,0)}}@keyframes fadeOutRightBig{0%{opacity:1}to{-webkit-transform:translate3d(2000px,0,0);opacity:0;transform:translate3d(2000px,0,0)}}.fadeOutRightBig{-webkit-animation-name:fadeOutRightBig;animation-name:fadeOutRightBig}@-webkit-keyframes fadeOutUp{0%{opacity:1}to{-webkit-transform:translate3d(0,-100%,0);opacity:0;transform:translate3d(0,-100%,0)}}@keyframes fadeOutUp{0%{opacity:1}to{-webkit-transform:translate3d(0,-100%,0);opacity:0;transform:translate3d(0,-100%,0)}}.fadeOutUp{-webkit-animation-name:fadeOutUp;animation-name:fadeOutUp}@-webkit-keyframes fadeOutUpBig{0%{opacity:1}to{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes fadeOutUpBig{0%{opacity:1}to{-webkit-transform:translate3d(0,-2000px,0);opacity:0;transform:translate3d(0,-2000px,0)}}.fadeOutUpBig{-webkit-animation-name:fadeOutUpBig;animation-name:fadeOutUpBig}@-webkit-keyframes flip{0%{-webkit-animation-timing-function:ease-out;-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn);animation-timing-function:ease-out;transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn)}40%{-webkit-animation-timing-function:ease-out;-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg);animation-timing-function:ease-out;transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg)}50%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg);animation-timing-function:ease-in;transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg)}80%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg);animation-timing-function:ease-in;transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg)}to{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg);animation-timing-function:ease-in;transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg)}}@keyframes flip{0%{-webkit-animation-timing-function:ease-out;-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn);animation-timing-function:ease-out;transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn)}40%{-webkit-animation-timing-function:ease-out;-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg);animation-timing-function:ease-out;transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg)}50%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg);animation-timing-function:ease-in;transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg)}80%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg);animation-timing-function:ease-in;transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg)}to{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg);animation-timing-function:ease-in;transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg)}}.animated.flip{-webkit-animation-name:flip;-webkit-backface-visibility:visible;animation-name:flip;backface-visibility:visible}@-webkit-keyframes flipInX{0%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateX(90deg)}40%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in;transform:perspective(400px) rotateX(-20deg)}60%{-webkit-transform:perspective(400px) rotateX(10deg);opacity:1;transform:perspective(400px) rotateX(10deg)}80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInX{0%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateX(90deg)}40%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in;transform:perspective(400px) rotateX(-20deg)}60%{-webkit-transform:perspective(400px) rotateX(10deg);opacity:1;transform:perspective(400px) rotateX(10deg)}80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInX{-webkit-animation-name:flipInX;-webkit-backface-visibility:visible!important;animation-name:flipInX;backface-visibility:visible!important}@-webkit-keyframes flipInY{0%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateY(90deg);animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateY(90deg)}40%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateY(-20deg);animation-timing-function:ease-in;transform:perspective(400px) rotateY(-20deg)}60%{-webkit-transform:perspective(400px) rotateY(10deg);opacity:1;transform:perspective(400px) rotateY(10deg)}80%{-webkit-transform:perspective(400px) rotateY(-5deg);transform:perspective(400px) rotateY(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInY{0%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateY(90deg);animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateY(90deg)}40%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateY(-20deg);animation-timing-function:ease-in;transform:perspective(400px) rotateY(-20deg)}60%{-webkit-transform:perspective(400px) rotateY(10deg);opacity:1;transform:perspective(400px) rotateY(10deg)}80%{-webkit-transform:perspective(400px) rotateY(-5deg);transform:perspective(400px) rotateY(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInY{-webkit-animation-name:flipInY;-webkit-backface-visibility:visible!important;animation-name:flipInY;backface-visibility:visible!important}@-webkit-keyframes flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateX(-20deg);opacity:1;transform:perspective(400px) rotateX(-20deg)}to{-webkit-transform:perspective(400px) rotateX(90deg);opacity:0;transform:perspective(400px) rotateX(90deg)}}@keyframes flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateX(-20deg);opacity:1;transform:perspective(400px) rotateX(-20deg)}to{-webkit-transform:perspective(400px) rotateX(90deg);opacity:0;transform:perspective(400px) rotateX(90deg)}}.flipOutX{-webkit-animation-duration:.75s;-webkit-animation-name:flipOutX;-webkit-backface-visibility:visible!important;animation-duration:.75s;animation-name:flipOutX;backface-visibility:visible!important}@-webkit-keyframes flipOutY{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateY(-15deg);opacity:1;transform:perspective(400px) rotateY(-15deg)}to{-webkit-transform:perspective(400px) rotateY(90deg);opacity:0;transform:perspective(400px) rotateY(90deg)}}@keyframes flipOutY{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateY(-15deg);opacity:1;transform:perspective(400px) rotateY(-15deg)}to{-webkit-transform:perspective(400px) rotateY(90deg);opacity:0;transform:perspective(400px) rotateY(90deg)}}.flipOutY{-webkit-animation-duration:.75s;-webkit-animation-name:flipOutY;-webkit-backface-visibility:visible!important;animation-duration:.75s;animation-name:flipOutY;backface-visibility:visible!important}@-webkit-keyframes lightSpeedIn{0%{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);opacity:0;transform:translate3d(100%,0,0) skewX(-30deg)}60%{-webkit-transform:skewX(20deg);opacity:1;transform:skewX(20deg)}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes lightSpeedIn{0%{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);opacity:0;transform:translate3d(100%,0,0) skewX(-30deg)}60%{-webkit-transform:skewX(20deg);opacity:1;transform:skewX(20deg)}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.lightSpeedIn{-webkit-animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-name:lightSpeedIn;animation-timing-function:ease-out}@-webkit-keyframes lightSpeedOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) skewX(30deg);opacity:0;transform:translate3d(100%,0,0) skewX(30deg)}}@keyframes lightSpeedOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) skewX(30deg);opacity:0;transform:translate3d(100%,0,0) skewX(30deg)}}.lightSpeedOut{-webkit-animation-name:lightSpeedOut;-webkit-animation-timing-function:ease-in;animation-name:lightSpeedOut;animation-timing-function:ease-in}@-webkit-keyframes rotateIn{0%{-webkit-transform:rotate(-200deg);-webkit-transform-origin:center;opacity:0;transform:rotate(-200deg);transform-origin:center}to{-webkit-transform:translateZ(0);-webkit-transform-origin:center;opacity:1;transform:translateZ(0);transform-origin:center}}@keyframes rotateIn{0%{-webkit-transform:rotate(-200deg);-webkit-transform-origin:center;opacity:0;transform:rotate(-200deg);transform-origin:center}to{-webkit-transform:translateZ(0);-webkit-transform-origin:center;opacity:1;transform:translateZ(0);transform-origin:center}}.rotateIn{-webkit-animation-name:rotateIn;animation-name:rotateIn}@-webkit-keyframes rotateInDownLeft{0%{-webkit-transform:rotate(-45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(-45deg);transform-origin:left bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:left bottom;opacity:1;transform:translateZ(0);transform-origin:left bottom}}@keyframes rotateInDownLeft{0%{-webkit-transform:rotate(-45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(-45deg);transform-origin:left bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:left bottom;opacity:1;transform:translateZ(0);transform-origin:left bottom}}.rotateInDownLeft{-webkit-animation-name:rotateInDownLeft;animation-name:rotateInDownLeft}@-webkit-keyframes rotateInDownRight{0%{-webkit-transform:rotate(45deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(45deg);transform-origin:right bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:right bottom;opacity:1;transform:translateZ(0);transform-origin:right bottom}}@keyframes rotateInDownRight{0%{-webkit-transform:rotate(45deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(45deg);transform-origin:right bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:right bottom;opacity:1;transform:translateZ(0);transform-origin:right bottom}}.rotateInDownRight{-webkit-animation-name:rotateInDownRight;animation-name:rotateInDownRight}@-webkit-keyframes rotateInUpLeft{0%{-webkit-transform:rotate(45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(45deg);transform-origin:left bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:left bottom;opacity:1;transform:translateZ(0);transform-origin:left bottom}}@keyframes rotateInUpLeft{0%{-webkit-transform:rotate(45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(45deg);transform-origin:left bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:left bottom;opacity:1;transform:translateZ(0);transform-origin:left bottom}}.rotateInUpLeft{-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}@-webkit-keyframes rotateInUpRight{0%{-webkit-transform:rotate(-90deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(-90deg);transform-origin:right bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:right bottom;opacity:1;transform:translateZ(0);transform-origin:right bottom}}@keyframes rotateInUpRight{0%{-webkit-transform:rotate(-90deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(-90deg);transform-origin:right bottom}to{-webkit-transform:translateZ(0);-webkit-transform-origin:right bottom;opacity:1;transform:translateZ(0);transform-origin:right bottom}}.rotateInUpRight{-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}@-webkit-keyframes rotateOut{0%{-webkit-transform-origin:center;opacity:1;transform-origin:center}to{-webkit-transform:rotate(200deg);-webkit-transform-origin:center;opacity:0;transform:rotate(200deg);transform-origin:center}}@keyframes rotateOut{0%{-webkit-transform-origin:center;opacity:1;transform-origin:center}to{-webkit-transform:rotate(200deg);-webkit-transform-origin:center;opacity:0;transform:rotate(200deg);transform-origin:center}}.rotateOut{-webkit-animation-name:rotateOut;animation-name:rotateOut}@-webkit-keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;opacity:1;transform-origin:left bottom}to{-webkit-transform:rotate(45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(45deg);transform-origin:left bottom}}@keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;opacity:1;transform-origin:left bottom}to{-webkit-transform:rotate(45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(45deg);transform-origin:left bottom}}.rotateOutDownLeft{-webkit-animation-name:rotateOutDownLeft;animation-name:rotateOutDownLeft}@-webkit-keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;opacity:1;transform-origin:right bottom}to{-webkit-transform:rotate(-45deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(-45deg);transform-origin:right bottom}}@keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;opacity:1;transform-origin:right bottom}to{-webkit-transform:rotate(-45deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(-45deg);transform-origin:right bottom}}.rotateOutDownRight{-webkit-animation-name:rotateOutDownRight;animation-name:rotateOutDownRight}@-webkit-keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;opacity:1;transform-origin:left bottom}to{-webkit-transform:rotate(-45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(-45deg);transform-origin:left bottom}}@keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;opacity:1;transform-origin:left bottom}to{-webkit-transform:rotate(-45deg);-webkit-transform-origin:left bottom;opacity:0;transform:rotate(-45deg);transform-origin:left bottom}}.rotateOutUpLeft{-webkit-animation-name:rotateOutUpLeft;animation-name:rotateOutUpLeft}@-webkit-keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;opacity:1;transform-origin:right bottom}to{-webkit-transform:rotate(90deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(90deg);transform-origin:right bottom}}@keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;opacity:1;transform-origin:right bottom}to{-webkit-transform:rotate(90deg);-webkit-transform-origin:right bottom;opacity:0;transform:rotate(90deg);transform-origin:right bottom}}.rotateOutUpRight{-webkit-animation-name:rotateOutUpRight;animation-name:rotateOutUpRight}@-webkit-keyframes hinge{0%{-webkit-animation-timing-function:ease-in-out;-webkit-transform-origin:top left;animation-timing-function:ease-in-out;transform-origin:top left}20%,60%{-webkit-animation-timing-function:ease-in-out;-webkit-transform:rotate(80deg);-webkit-transform-origin:top left;animation-timing-function:ease-in-out;transform:rotate(80deg);transform-origin:top left}40%,80%{-webkit-animation-timing-function:ease-in-out;-webkit-transform:rotate(60deg);-webkit-transform-origin:top left;animation-timing-function:ease-in-out;opacity:1;transform:rotate(60deg);transform-origin:top left}to{-webkit-transform:translate3d(0,700px,0);opacity:0;transform:translate3d(0,700px,0)}}@keyframes hinge{0%{-webkit-animation-timing-function:ease-in-out;-webkit-transform-origin:top left;animation-timing-function:ease-in-out;transform-origin:top left}20%,60%{-webkit-animation-timing-function:ease-in-out;-webkit-transform:rotate(80deg);-webkit-transform-origin:top left;animation-timing-function:ease-in-out;transform:rotate(80deg);transform-origin:top left}40%,80%{-webkit-animation-timing-function:ease-in-out;-webkit-transform:rotate(60deg);-webkit-transform-origin:top left;animation-timing-function:ease-in-out;opacity:1;transform:rotate(60deg);transform-origin:top left}to{-webkit-transform:translate3d(0,700px,0);opacity:0;transform:translate3d(0,700px,0)}}.hinge{-webkit-animation-duration:2s;-webkit-animation-name:hinge;animation-duration:2s;animation-name:hinge}@-webkit-keyframes jackInTheBox{0%{-webkit-transform:scale(.1) rotate(30deg);-webkit-transform-origin:center bottom;opacity:0;transform:scale(.1) rotate(30deg);transform-origin:center bottom}50%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}70%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}to{-webkit-transform:scale(1);opacity:1;transform:scale(1)}}@keyframes jackInTheBox{0%{-webkit-transform:scale(.1) rotate(30deg);-webkit-transform-origin:center bottom;opacity:0;transform:scale(.1) rotate(30deg);transform-origin:center bottom}50%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}70%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}to{-webkit-transform:scale(1);opacity:1;transform:scale(1)}}.jackInTheBox{-webkit-animation-name:jackInTheBox;animation-name:jackInTheBox}@-webkit-keyframes rollIn{0%{-webkit-transform:translate3d(-100%,0,0) rotate(-120deg);opacity:0;transform:translate3d(-100%,0,0) rotate(-120deg)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}@keyframes rollIn{0%{-webkit-transform:translate3d(-100%,0,0) rotate(-120deg);opacity:0;transform:translate3d(-100%,0,0) rotate(-120deg)}to{-webkit-transform:translateZ(0);opacity:1;transform:translateZ(0)}}.rollIn{-webkit-animation-name:rollIn;animation-name:rollIn}@-webkit-keyframes rollOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) rotate(120deg);opacity:0;transform:translate3d(100%,0,0) rotate(120deg)}}@keyframes rollOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) rotate(120deg);opacity:0;transform:translate3d(100%,0,0) rotate(120deg)}}.rollOut{-webkit-animation-name:rollOut;animation-name:rollOut}@-webkit-keyframes zoomIn{0%{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes zoomIn{0%{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}@-webkit-keyframes zoomInDown{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0)}}@keyframes zoomInDown{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0)}}.zoomInDown{-webkit-animation-name:zoomInDown;animation-name:zoomInDown}@-webkit-keyframes zoomInLeft{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(10px,0,0)}}@keyframes zoomInLeft{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(10px,0,0)}}.zoomInLeft{-webkit-animation-name:zoomInLeft;animation-name:zoomInLeft}@-webkit-keyframes zoomInRight{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(1000px,0,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(-10px,0,0)}}@keyframes zoomInRight{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(1000px,0,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(-10px,0,0)}}.zoomInRight{-webkit-animation-name:zoomInRight;animation-name:zoomInRight}@-webkit-keyframes zoomInUp{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,1000px,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0)}}@keyframes zoomInUp{0%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,1000px,0)}60%{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0)}}.zoomInUp{-webkit-animation-name:zoomInUp;animation-name:zoomInUp}@-webkit-keyframes zoomOut{0%{opacity:1}50%{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}to{opacity:0}}@keyframes zoomOut{0%{opacity:1}50%{-webkit-transform:scale3d(.3,.3,.3);opacity:0;transform:scale3d(.3,.3,.3)}to{opacity:0}}.zoomOut{-webkit-animation-name:zoomOut;animation-name:zoomOut}@-webkit-keyframes zoomOutDown{40%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0)}to{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform-origin:center bottom}}@keyframes zoomOutDown{40%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0)}to{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform-origin:center bottom}}.zoomOutDown{-webkit-animation-name:zoomOutDown;animation-name:zoomOutDown}@-webkit-keyframes zoomOutLeft{40%{-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);opacity:1;transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{-webkit-transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;opacity:0;transform:scale(.1) translate3d(-2000px,0,0);transform-origin:left center}}@keyframes zoomOutLeft{40%{-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);opacity:1;transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{-webkit-transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;opacity:0;transform:scale(.1) translate3d(-2000px,0,0);transform-origin:left center}}.zoomOutLeft{-webkit-animation-name:zoomOutLeft;animation-name:zoomOutLeft}@-webkit-keyframes zoomOutRight{40%{-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);opacity:1;transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{-webkit-transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;opacity:0;transform:scale(.1) translate3d(2000px,0,0);transform-origin:right center}}@keyframes zoomOutRight{40%{-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);opacity:1;transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{-webkit-transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;opacity:0;transform:scale(.1) translate3d(2000px,0,0);transform-origin:right center}}.zoomOutRight{-webkit-animation-name:zoomOutRight;animation-name:zoomOutRight}@-webkit-keyframes zoomOutUp{40%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0)}to{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform-origin:center bottom}}@keyframes zoomOutUp{40%{-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(.55,.055,.675,.19);opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0)}to{-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;animation-timing-function:cubic-bezier(.175,.885,.32,1);opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform-origin:center bottom}}.zoomOutUp{-webkit-animation-name:zoomOutUp;animation-name:zoomOutUp}@-webkit-keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}@-webkit-keyframes slideOutDown{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:hidden}}@keyframes slideOutDown{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:hidden}}.slideOutDown{-webkit-animation-name:slideOutDown;animation-name:slideOutDown}@-webkit-keyframes slideOutLeft{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:hidden}}@keyframes slideOutLeft{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:hidden}}.slideOutLeft{-webkit-animation-name:slideOutLeft;animation-name:slideOutLeft}@-webkit-keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:hidden}}@keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:hidden}}.slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}@-webkit-keyframes slideOutUp{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:hidden}}@keyframes slideOutUp{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:hidden}}.slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}.animated{-webkit-animation-duration:1s;-webkit-animation-fill-mode:both;animation-duration:1s;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.animated.delay-1s{-webkit-animation-delay:1s;animation-delay:1s}.animated.delay-2s{-webkit-animation-delay:2s;animation-delay:2s}.animated.delay-3s{-webkit-animation-delay:3s;animation-delay:3s}.animated.delay-4s{-webkit-animation-delay:4s;animation-delay:4s}.animated.delay-5s{-webkit-animation-delay:5s;animation-delay:5s}.animated.fast{-webkit-animation-duration:.8s;animation-duration:.8s}.animated.faster{-webkit-animation-duration:.5s;animation-duration:.5s}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.animated.slower{-webkit-animation-duration:3s;animation-duration:3s}@media (prefers-reduced-motion){.animated{-webkit-animation:unset!important;-webkit-transition:none!important;animation:unset!important;transition:none!important}}", ""]);
+
+// exports
 
 
 /***/ }),
 
-/***/ 551:
-/***/ (function(module, exports) {
+/***/ 678:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = function() {
-	throw new Error("define cannot be used indirect");
-};
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*
+                      _____              _____              _____             _______         
+                     /\    \            /\    \            /\    \           /::\    \        
+                    /::\    \          /::\    \          /::\    \         /::::\    \       
+                   /::::\    \         \:::\    \        /::::\    \       /::::::\    \      
+                  /::::::\    \         \:::\    \      /::::::\    \     /::::::::\    \     
+                 /:::/\:::\    \         \:::\    \    /:::/\:::\    \   /:::/~~\:::\    \    
+                /:::/__\:::\    \         \:::\    \  /:::/__\:::\    \ /:::/    \:::\    \   
+               /::::\   \:::\    \        /::::\    \ \:::\   \:::\    \:::/    / \:::\    \  
+              /::::::\   \:::\    \__    /::::::\    \_\:::\   \:::\    \:/____/   \:::\____\ 
+             /:::/\:::\   \:::\____\ \  /:::/\:::\    \ \:::\   \:::\    \    |     |:::|    |
+            /:::/  \:::\   \:::|    | \/:::/  \:::\____\ \:::\   \:::\____\___|     |:::|____|
+            \::/   |::::\  /:::|____| /:::/    \::/    /  \:::\   \::/    /   _\___/:::/    / 
+             \/____|:::::\/:::/    /\/:::/    / \/____/\   \:::\   \/____/:\ |::| /:::/    /  
+                   |:::::::::/    /:::::/    /      \:::\   \:::\    \  \:::\|::|/:::/    /   
+                   |::|\::::/    /\::::/____/        \:::\   \:::\____\  \::::::::::/    /    
+                   |::| \::/____/  \:::\    \         \:::\  /:::/    /   \::::::::/    /     
+                   |::|  ~|         \:::\    \         \:::\/:::/    /     \::::::/    /      
+                   |::|   |          \:::\    \         \::::::/    /       \::::/____/       
+                   \::|   |           \:::\____\         \::::/    /         |::|    |        
+                    \:|   |            \::/    /          \::/    /          |::|____|        
+                     \|___|             \/____/            \/____/            ~~              
+                                                                                                                
+     ____.________                                  _____       .___                                     .___ 
+    |    |\_____  \  __ __   ___________ ___.__.   /  _  \    __| _/__  _______    ____   ____  ____   __| _/ 
+    |    | /  / \  \|  |  \_/ __ \_  __ <   |  |  /  /_\  \  / __ |\  \/ /\__  \  /    \_/ ___\/ __ \ / __ |  
+/\__|    |/   \_/.  \  |  /\  ___/|  | \/\___  | /    |    \/ /_/ | \   /  / __ \|   |  \  \__\  ___// /_/ |  
+\________|\_____\ \_/____/  \___  >__|   / ____| \____|__  /\____ |  \_/  (____  /___|  /\___  >___  >____ |  
+                 \__>           \/       \/              \/      \/            \/     \/     \/    \/     \/  
+                   _______                        ___________.__        __                                    
+                   \      \   ______  _  ________ \__    ___/|__| ____ |  | __ ___________                    
+          ______   /   |   \_/ __ \ \/ \/ /  ___/   |    |   |  |/ ___\|  |/ // __ \_  __ \   ______          
+         /_____/  /    |    \  ___/\     /\___ \    |    |   |  \  \___|    <\  ___/|  | \/  /_____/          
+                  \____|__  /\___  >\/\_//____  >   |____|   |__|\___  >__|_ \\___  >__|                      
+                          \/     \/           \/                     \/     \/    \/                          
+*/
 
+;
+(function($, window, document, undefined) {
+        'use strict';
+        var pluginName = 'newsTicker',
+                defaults = {
+                        row_height: 20,
+                        max_rows: 3,
+                        speed: 400,
+                        duration: 2500,
+                        direction: 'up',
+                        autostart: 1,
+                        pauseOnHover: 1,
+                        nextButton: null,
+                        prevButton: null,
+                        startButton: null,
+                        stopButton: null,
+                        hasMoved: function() {},
+                        movingUp: function() {},
+                        movingDown: function() {},
+                        start: function() {},
+                        stop: function() {},
+                        pause: function() {},
+                        unpause: function() {}
+                };
+
+        function Plugin(element, options) {
+                this.element = element;
+                this.$el = $(element);
+                this.options = $.extend({}, defaults, options);
+                this._defaults = defaults;
+                this._name = pluginName;
+                this.moveInterval;
+                this.state = 0;
+                this.paused = 0;
+                this.moving = 0;
+                if (this.$el.is('ul')) {
+                        this.init();
+                }
+        }
+
+        Plugin.prototype = {
+                init: function() {
+                        this.$el.height(this.options.row_height * this.options.max_rows)
+                                .css({overflow : 'hidden'});
+
+                        this.checkSpeed();
+
+                        if(this.options.nextButton && typeof(this.options.nextButton[0]) !== 'undefined')
+                                this.options.nextButton.click(function(e) {
+                                        this.moveNext();
+                                        this.resetInterval();
+                                }.bind(this));
+                        if(this.options.prevButton && typeof(this.options.prevButton[0]) !== 'undefined')
+                                this.options.prevButton.click(function(e) {
+                                        this.movePrev();
+                                        this.resetInterval();
+                                }.bind(this));
+                        if(this.options.stopButton && typeof(this.options.stopButton[0]) !== 'undefined')
+                                this.options.stopButton.click(function(e) {
+                                        this.stop()
+                                }.bind(this));
+                        if(this.options.startButton && typeof(this.options.startButton[0]) !== 'undefined')
+                                this.options.startButton.click(function(e) {
+                                        this.start()
+                                }.bind(this));
+                        
+                        if(this.options.pauseOnHover) {
+                                this.$el.hover(function() {
+                                        if (this.state)
+                                                this.pause();
+                                }.bind(this), function() {
+                                        if (this.state)
+                                                this.unpause();
+                                }.bind(this));
+                        }
+
+                        if(this.options.autostart)
+                                this.start();
+                },
+
+                start: function() {
+                        if (!this.state) {
+                                this.state = 1;
+                                this.resetInterval();
+                                this.options.start();
+                        }
+                },
+
+                stop: function() {
+                        if (this.state) {
+                                clearInterval(this.moveInterval);
+                                this.state = 0;
+                                this.options.stop();
+                        }
+                },
+
+                resetInterval: function() {
+                        if (this.state) {
+                                clearInterval(this.moveInterval);
+                                this.moveInterval = setInterval(function() {this.move()}.bind(this), this.options.duration);
+                        }
+                },
+
+                move: function() {
+                         if (!this.paused) this.moveNext();
+                },
+
+                moveNext: function() {
+                        if (this.options.direction === 'down')
+                                this.moveDown();
+                        else if (this.options.direction === 'up')
+                                this.moveUp();
+                },
+
+                movePrev: function() {
+                        if (this.options.direction === 'down')
+                                this.moveUp();
+                        else if (this.options.direction === 'up')
+                                this.moveDown();
+                },
+
+                pause: function() {
+                        if (!this.paused) this.paused = 1;
+                        this.options.pause();
+                },
+
+                unpause: function() {
+                        if (this.paused) this.paused = 0;
+                        this.options.unpause();
+                },
+
+                moveDown: function() {
+                        if (!this.moving) {
+                                this.moving = 1;
+                                this.options.movingDown();
+                                this.$el.children('li:last').detach().prependTo(this.$el).css('marginTop', '-' + this.options.row_height + 'px')
+                                        .animate({marginTop: '0px'}, this.options.speed, function(){
+                                                this.moving = 0;
+                                                this.options.hasMoved();
+                                        }.bind(this));
+                        }
+                },
+
+                moveUp: function() {
+                        if (!this.moving) {
+                                this.moving = 1;
+                                this.options.movingUp();
+                                var element = this.$el.children('li:first');
+                                element.animate({marginTop: '-' + this.options.row_height + 'px'}, this.options.speed,
+                                        function(){
+                                                element.detach().css('marginTop', '0').appendTo(this.$el);
+                                                this.moving = 0;
+                                                this.options.hasMoved();
+                                        }.bind(this));
+                        }
+                },
+
+                updateOption: function(option, value) {
+                        if (typeof(this.options[option]) !== 'undefined'){
+                                this.options[option] = value;
+                                if (option == 'duration' || option == 'speed'){
+                                    this.checkSpeed();
+                                    this.resetInterval();
+                                }
+                        }
+                },
+
+                getState: function() {
+                        if (paused) return 2 // 2 = paused
+                        else return this.state;// 0 = stopped, 1 = started
+                },
+
+                checkSpeed: function() {
+                        if (this.options.duration < (this.options.speed + 25))
+                                this.options.speed = this.options.duration - 25;
+                },
+
+                destroy: function() {
+                        this._destroy(); // or this.delete; depends on jQuery version
+                }
+        };
+
+        $.fn[pluginName] = function(option) {
+                var args = arguments;
+                
+                return this.each(function() {
+                        var $this = $(this),
+                                data = $.data(this, 'plugin_' + pluginName),
+                                options = typeof option === 'object' && option;
+                        if (!data) {
+                                $this.data('plugin_' + pluginName, (data = new Plugin(this, options)));
+                        }
+                        // if first argument is a string, call silimarly named function
+                        if (typeof option === 'string') {
+                                data[option].apply(data, Array.prototype.slice.call(args, 1));
+                        }
+                });
+        };
+})(jQuery, window, document);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(523)))
 
 /***/ })
 

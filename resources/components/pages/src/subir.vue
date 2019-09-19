@@ -1,0 +1,430 @@
+<template>
+    <div class="row user-list">
+        <div class="col-lg-12">
+            <b-card header="Tareas Pendientes" header-tag="h4" class="bg-primary-card">
+                <v-flex xs12 sm12 md12>
+                    <multiselect v-model="actividad" :options="actividades" placeholder="Seleccione una Actividad"
+                        label="nombre" track-by="nombre">
+                    </multiselect>
+                </v-flex>
+                <div class="table-responsive">
+                    <v-toolbar flat color="white">
+                        <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
+                        </v-text-field>
+                        <v-spacer></v-spacer>
+                        <!-- Aqui Empieza el modal -->
+                        <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+                            <v-toolbar dark color="green darken-1">
+                                <v-btn icon dark @click="dialog = false">
+                                    <v-icon col="white">clear</v-icon>
+                                </v-btn>
+                                <v-toolbar-title>{{ formTitle }}</v-toolbar-title>
+                            </v-toolbar>
+                            <v-card>
+                                <v-card-text>
+                                    <v-container grid-list-sm fluid>
+                                        <v-flex xs12>
+                                            <v-textarea v-model="descripcion" label="Descripción de la tarea">
+                                            </v-textarea>
+                                        </v-flex>
+                                        <v-flex xs12
+                                            class="text-xs-center text-sm-center text-md-center text-lg-center">
+                                            <v-text-field label="Seleccione Imagen" @click='pickFile'
+                                                v-model='imageName' prepend-icon='photo' clearable></v-text-field>
+                                            <input type="file" style="display: none" ref="image" accept="image/*"
+                                                @change="onFilePicked">
+                                        </v-flex>
+                                        <v-layout row wrap>
+                                            <v-flex v-for="n in fotos" :key="n.id" xs2 d-flex>
+                                                <v-card flat tile class="d-flex">
+                                                    <v-hover>
+                                                        <v-img :src="n.url" :lazy-src="n.url" aspect-ratio="1"
+                                                            class="grey lighten-2" slot-scope="{ hover }">
+                                                            <template v-slot:placeholder>
+                                                                <v-layout fill-height align-center justify-center ma-0>
+                                                                    <v-progress-circular indeterminate
+                                                                        color="grey lighten-5">
+                                                                    </v-progress-circular>
+                                                                </v-layout>
+                                                            </template>
+                                                            <v-expand-transition>
+                                                                <v-layout fill-height align-center justify-center ma-0
+                                                                    v-if="hover">
+                                                                    <v-btn fab dark small color="red darken-1"
+                                                                        @click="deleteFoto(n)">
+                                                                        <v-icon dark>close</v-icon>
+                                                                    </v-btn>
+                                                                </v-layout>
+                                                            </v-expand-transition>
+                                                        </v-img>
+                                                    </v-hover>
+                                                </v-card>
+                                            </v-flex>
+                                        </v-layout>
+                                        <v-flex xs12 v-for="n in estadisticas" :key="n.id">
+                                            <v-text-field v-model="estadisticas[getIndex(estadisticas, n.id)].value"
+                                                v-bind:label="n.nombre" type="number">
+                                            </v-text-field>
+                                        </v-flex>
+                                        <v-flex xs12>
+                                            <v-text-field v-model="cantidad" label="Total de participantes"
+                                                type="number">
+                                            </v-text-field>
+                                        </v-flex>
+                                    </v-container>
+                                </v-card-text>
+
+                                <template v-if="error">
+                                    <v-divider></v-divider>
+                                    <div class="text-xs-center">
+                                        <strong class="red--text text--lighten-1" v-for="e in errorMsj" :key="e"
+                                            v-text="e"></strong>
+                                        <br>
+                                    </div>
+                                    <v-divider></v-divider>
+                                </template>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="blue darken-1" flat @click="save">Guardar</v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                        <!-- Termina el modal -->
+                    </v-toolbar>
+                    <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
+                        <template v-slot:items="props">
+                            <td class="text-xs-right">{{ props.item.nombre }}</td>
+                            <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
+                            <td class="text-xs-right">{{ props.item.fechaFinal }}</td>
+                            <td class="text-xs-right">{{ props.item.fechaRealizacion }}</td>
+                            <td class="text-xs-left">
+                                <template>
+                                    <div class="text-xs-left">
+                                        <v-chip color="amber accent-4" text-color="white" v-if="props.item.estado==0">En
+                                            Proceso</v-chip>
+                                        <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
+                                            Completado</v-chip>
+                                        <v-chip color="red" text-color="white" v-else>Atrasado</v-chip>
+                                    </div>
+                                </template>
+                            </td>
+
+                            <td class="justify-center">
+                                <v-icon large class="mr-2" @click="editItem(props.item)">
+                                    cloud_upload
+                                </v-icon>
+                            </td>
+                        </template>
+                        <template v-slot:no-data>
+                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                        </template>
+                        <template v-slot:no-results>
+                            <v-alert :value="true" color="error" icon="warning">
+                                No hay resultados de "{{ search }}".
+                            </v-alert>
+                        </template>
+                    </v-data-table>
+                </div>
+            </b-card>
+        </div>
+    </div>
+</template>
+<script>
+    import Vue from 'vue';
+    import axios from 'axios';
+    import Multiselect from 'vue-multiselect';
+    import uni from 'uniqid';
+    export default {
+        name: "Subir",
+        components: {
+            Multiselect
+        },
+        data: () => ({
+            cantidad: 0,
+            id: 0,
+            imageName: '',
+            imageUrl: '',
+            imageFile: '',
+            active: false,
+            fotos: [],
+            files: [],
+            tipo: {
+                id: 0,
+                nombre: ''
+            },
+            descripcion: '',
+            participantes: 0,
+
+            estadisticas: [],
+            estadistica: [],
+            number: 0,
+            users: [],
+            tipos: [],
+            fechaI: new Date().toISOString().substr(0, 10),
+            fechaF: new Date().toISOString().substr(0, 10),
+            menu: false,
+            menu2: false,
+            proyecto: 0,
+            actividad: {
+                id: 0,
+                nombre: ''
+            },
+            actividades: [],
+            empleado: [],
+            empleados: [],
+            search: '',
+            dialog: false,
+            error: 0,
+            errorMsj: [],
+            headers: [
+                { text: 'Nombre', value: 'nombre' },
+                { text: 'Fecha Inicio', value: 'fechaInicio' },
+                { text: 'Fecha Final', value: 'fechaFinal' },
+                { text: 'Fecha Realizacion', value: 'fechaRealizacion' },
+                { text: 'Estado', value: 'estado' },
+            ],
+            tareas: [],
+
+            editedIndex: -1,
+            editedItem: {
+                id: 0,
+                tipo: '',
+                fechaInicio: '',
+                fechaFinal: '',
+                fechaRealizacion: '',
+                estado: 0,
+            },
+            defaultItem: {
+                id: 0,
+                nombre: '',
+                fechaInicio: '',
+                fechaFinal: '',
+                fechaRealizacion: '',
+                estado: 0,
+            }
+        }),
+
+        computed: {
+            formTitle() {
+                return this.editedIndex === -1 ? 'Nueva Tarea' : 'Editar Tarea'
+            }
+        },
+
+        watch: {
+            dialog(val) {
+                val || this.close()
+            },
+            actividad(val) {
+                if (val) {
+                    this.initialize();
+                } else {
+                    this.actividad.id = 0;
+                    swal.fire({
+                        type: 'warning',
+                        title: 'Advertencia',
+                        text: 'Por favor seleccione una actividad',
+                    })
+                }
+            }
+        },
+
+        created() {
+            this.initialize()
+        },
+        mounted() {
+            let me = this;
+            this.$root.$on('SeleccionProyecto', data => {
+                if (data) {
+                    me.proyecto = data;
+                    me.initialize();
+                } else {
+                    me.proyecto = 0;
+                    me.initialize();
+                    swal.fire({
+                        type: 'warning',
+                        title: 'Advertencia',
+                        text: 'Por favor seleccione un proyecto',
+                    })
+                }
+                // console.log(data);
+            });
+        },
+        methods: {
+            getIndex(list, id) {
+                return list.findIndex((e) => e.id == id)
+            },
+            deleteFoto(item) {
+                var index = this.fotos.indexOf(item);
+                if (index > -1) {
+                    this.fotos.splice(index, 1);
+                    this.files.splice(index, 1);
+                }
+            },
+            pickFile() {
+                this.$refs.image.click()
+            },
+            test() {
+                this.active = !this.active;
+            },
+            onFilePicked(e) {
+                const files = e.target.files
+                if (files[0] !== undefined) {
+                    this.imageName = files[0].name
+                    if (this.imageName.lastIndexOf('.') <= 0) {
+                        return
+                    }
+                    const fr = new FileReader()
+                    fr.readAsDataURL(files[0])
+                    fr.addEventListener('load', () => {
+                        this.imageUrl = fr.result
+                        this.imageFile = files[0] // this is an image file that can be sent to server...
+
+                        var id = uni.time();
+
+                        var foto = new Object();
+                        foto.id = id;
+                        foto.url = this.imageUrl;
+                        var fil = new Object();
+                        fil.id = id;
+                        fil.file = this.imageFile;
+
+                        this.fotos.push(foto);
+                        this.files.push(fil);
+
+                        this.imageName = ''
+                        this.imageFile = ''
+                        this.imageUrl = ''
+                    })
+                } else {
+                    this.imageName = ''
+                    this.imageFile = ''
+                    this.imageUrl = ''
+                }
+            },
+            superior(id) {
+                let me = this;
+                this.users = [];
+                this.empleado.forEach(element => {
+                    if (id == element.id) {
+                        element.estado = 1;
+                    } else {
+                        element.estado = 0;
+                    }
+                    me.users.push(element);
+                });
+                this.empleado = this.users;
+            },
+            validate() {
+                this.error = 0;
+                this.errorMsj = [];
+                if (!this.editedItem.nombre)
+                    this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+                if (this.errorMsj.length)
+                    this.error = 1;
+                return this.error;
+            },
+            initialize() {
+                var url = '/Tarea/' + this.actividad.id;
+                axios.get(url)
+                    .then(response => {
+                        this.tareas = response.data;
+                    })
+                    .catch(errors => {
+                        console.log(errors);
+                    });
+                this.getActividaes();
+                this.getTipos();
+                this.getEstadistica();
+                this.getUsuario();
+            },
+            getActividaes() {
+                var url = '/Actividad/' + this.proyecto;
+                axios.get(url)
+                    .then(response => {
+                        this.actividades = response.data;
+                    })
+                    .catch(errors => {
+                        console.log(errors);
+                    });
+            },
+            getEstadistica(id) {
+                var url = '/Estadistica/select/' + id;
+                axios.get(url)
+                    .then(response => {
+                        this.estadisticas = response.data;
+                    })
+                    .catch(errors => {
+                        console.log(errors);
+                    });
+            },
+            getTipos() {
+                axios.get('/TipoActividad')
+                    .then(response => {
+                        this.tipos = response.data;
+                    })
+                    .catch(errors => {
+                        console.log(errors);
+                    });
+            },
+            getUsuario() {
+                axios.get('/User/select')
+                    .then(response => {
+                        this.empleados = response.data;
+                    })
+                    .catch(errors => {
+                        console.log(errors);
+                    });
+            },
+            editItem(item) {
+                this.id = item.id;
+                this.getEstadistica(item.id);
+                this.dialog = true
+            },
+            close() {
+                this.error = 0;
+                this.dialog = false;
+                this.fotos = [];
+            },
+
+            save() {
+                let me = this;
+                var archivos=[];
+                this.files.forEach(element => {
+                    archivos.push(element.file);
+                });
+                
+                var form = new  FormData();
+                 form.append('id', this.id);
+                 form.append('descripcion', this.descripcion);
+                 form.append('participantes', this.cantidad);
+                 for (var i = 0; i < this.files.length; i++) {
+                    form.append('fotos[]', this.files[i].file);
+                 }
+                 form.append('estadisticas',JSON.stringify(this.estadisticas));
+                const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
+                 axios.post('/Tarea/subir',form,ajuste).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true
+                    });
+                    me.initialize();
+                    me.close();
+                });
+            }
+        }
+    }
+</script>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

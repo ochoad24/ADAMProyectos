@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\User;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -64,5 +65,8 @@ class UserController extends Controller
             $response['error'] = $e->getMessage();
             return response()->json($response, 500);
         }
+    }
+    public function select(Request $request){
+        return User::select('id',DB::raw("CONCAT(nombre,' ',apellido) as nombre"))->where('idRol','2')->get();
     }
 }

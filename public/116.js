@@ -1,22 +1,22 @@
 webpackJsonp([116],{
 
-/***/ 1941:
+/***/ 1963:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1942);
+var content = __webpack_require__(1964);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("7abff5cb", content, false, {});
+var update = __webpack_require__(26)("4bfe5a5f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./cssgram.min.css", function() {
-     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./cssgram.min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5fecd88c\",\"scoped\":false,\"hasInlineConfig\":true}!./imagehover.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5fecd88c\",\"scoped\":false,\"hasInlineConfig\":true}!./imagehover.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1942:
+/***/ 1964:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,30 +35,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.aden{-webkit-filter:hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2);filter:hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2)\n}\n.aden:after{background:-webkit-linear-gradient(left,rgba(66,10,14,.2),transparent);background:linear-gradient(to right,rgba(66,10,14,.2),transparent);mix-blend-mode:darken\n}\n.inkwell{-webkit-filter:sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);filter:sepia(.3) contrast(1.1) brightness(1.1) grayscale(1)\n}\n.perpetua:after{background:-webkit-linear-gradient(top,#005b9a,#e6c13d);background:linear-gradient(to bottom,#005b9a,#e6c13d);mix-blend-mode:soft-light;opacity:.5\n}\n.reyes{-webkit-filter:sepia(.22) brightness(1.1) contrast(.85) saturate(.75);filter:sepia(.22) brightness(1.1) contrast(.85) saturate(.75)\n}\n.reyes:after{background:#efcdad;mix-blend-mode:soft-light;opacity:.5\n}\n.gingham{-webkit-filter:brightness(1.05) hue-rotate(-10deg);filter:brightness(1.05) hue-rotate(-10deg)\n}\n.gingham:after{background:-webkit-linear-gradient(left,rgba(66,10,14,.2),transparent);background:linear-gradient(to right,rgba(66,10,14,.2),transparent);mix-blend-mode:darken\n}\n.toaster{-webkit-filter:contrast(1.5) brightness(.9);filter:contrast(1.5) brightness(.9)\n}\n.toaster:after{background:-webkit-radial-gradient(circle,#804e0f,#3b003b);background:radial-gradient(circle,#804e0f,#3b003b);mix-blend-mode:screen\n}\n.walden{-webkit-filter:brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6);filter:brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6)\n}\n.walden:after{background:#04c;mix-blend-mode:screen;opacity:.3\n}\n.hudson{-webkit-filter:brightness(1.2) contrast(.9) saturate(1.1);filter:brightness(1.2) contrast(.9) saturate(1.1)\n}\n.hudson:after{background:-webkit-radial-gradient(circle,#a6b1ff 50%,#342134);background:radial-gradient(circle,#a6b1ff 50%,#342134);mix-blend-mode:multiply;opacity:.5\n}\n.earlybird{-webkit-filter:contrast(.9) sepia(.2);filter:contrast(.9) sepia(.2)\n}\n.earlybird:after{background:-webkit-radial-gradient(circle,#d0ba8e 20%,#360309 85%,#1d0210 100%);background:radial-gradient(circle,#d0ba8e 20%,#360309 85%,#1d0210 100%);mix-blend-mode:overlay\n}\n.mayfair{-webkit-filter:contrast(1.1) saturate(1.1);filter:contrast(1.1) saturate(1.1)\n}\n.mayfair:after{background:-webkit-radial-gradient(40% 40%,circle,rgba(255,255,255,.8),rgba(255,200,200,.6),#111 60%);background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.8),rgba(255,200,200,.6),#111 60%);mix-blend-mode:overlay;opacity:.4\n}\n.lofi{-webkit-filter:saturate(1.1) contrast(1.5);filter:saturate(1.1) contrast(1.5)\n}\n.lofi:after{background:-webkit-radial-gradient(circle,transparent 70%,#222 150%);background:radial-gradient(circle,transparent 70%,#222 150%);mix-blend-mode:multiply\n}\n._1977{-webkit-filter:contrast(1.1) brightness(1.1) saturate(1.3);filter:contrast(1.1) brightness(1.1) saturate(1.3)\n}\n._1977:after{background:rgba(243,106,188,.3);mix-blend-mode:screen\n}\n.brooklyn{-webkit-filter:contrast(.9) brightness(1.1);filter:contrast(.9) brightness(1.1)\n}\n.brooklyn:after{background:-webkit-radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);background:radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);mix-blend-mode:overlay\n}\n.xpro2{-webkit-filter:sepia(.3);filter:sepia(.3)\n}\n.xpro2:after{background:-webkit-radial-gradient(circle,#E6E7E0 40%,rgba(43,42,161,.6) 110%);background:radial-gradient(circle,#E6E7E0 40%,rgba(43,42,161,.6) 110%);mix-blend-mode:color-burn\n}\n._1977:after,._1977:before,.aden:after,.aden:before,.brooklyn:after,.brooklyn:before,.earlybird:after,.earlybird:before,.gingham:after,.gingham:before,.hudson:after,.hudson:before,.inkwell:after,.inkwell:before,.lofi:after,.lofi:before,.mayfair:after,.mayfair:before,.nashville:after,.nashville:before,.perpetua:after,.perpetua:before,.reyes:after,.reyes:before,.toaster:after,.toaster:before,.walden:after,.walden:before,.xpro2:after,.xpro2:before{content:'';display:block;height:100%;width:100%;top:0;left:0;position:absolute;pointer-events:none\n}\n._1977,.aden,.brooklyn,.earlybird,.gingham,.hudson,.inkwell,.lofi,.mayfair,.nashville,.perpetua,.reyes,.toaster,.walden,.xpro2{position:relative\n}\n._1977 img,.aden img,.brooklyn img,.earlybird img,.gingham img,.hudson img,.inkwell img,.lofi img,.mayfair img,.nashville img,.perpetua img,.reyes img,.toaster img,.walden img,.xpro2 img{width:100%;z-index:1\n}\n._1977:before,.aden:before,.brooklyn:before,.earlybird:before,.gingham:before,.hudson:before,.inkwell:before,.lofi:before,.mayfair:before,.nashville:before,.perpetua:before,.reyes:before,.toaster:before,.walden:before,.xpro2:before{z-index:2\n}\n._1977:after,.aden:after,.brooklyn:after,.earlybird:after,.gingham:after,.hudson:after,.inkwell:after,.lofi:after,.mayfair:after,.nashville:after,.perpetua:after,.reyes:after,.toaster:after,.walden:after,.xpro2:after{z-index:3\n}\n.nashville{-webkit-filter:sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2);filter:sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2)\n}\n.nashville::after{background:rgba(0,70,150,.4);mix-blend-mode:lighten\n}\n.nashville::before{background:rgba(247,176,153,.56);mix-blend-mode:darken\n}", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\r\n/*!\r\n * ImageHover.css - http://www.imagehover.io\r\n * Version 1.0\r\n * Author: Ciarán Walsh\r\n\r\n * Made available under a MIT License:\r\n * http://www.opensource.org/licenses/mit-license.php\r\n\r\n */\n[class^='imghvr-'], [class*=' imghvr-'] {\r\n    position: relative;\r\n    display: inline-block;\r\n    margin: 0;\r\n    max-width: 100%;\r\n    background-color: #2266a5;\r\n    color: #fff;\r\n    overflow: hidden;\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    -webkit-transform: translateZ(0);\r\n    -moz-transform: translateZ(0);\r\n    -ms-transform: translateZ(0);\r\n    -o-transform: translateZ(0);\r\n    transform: translateZ(0);\n}\n[class^='imghvr-'] > img, [class*=' imghvr-'] > img {\r\n    vertical-align: top;\r\n    max-width: 100%;\n}\n[class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {\r\n    background-color: #135796;\r\n    padding: 30px;\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    color: #ffffff;\n}\n[class^='imghvr-'] figcaption h1, [class^='imghvr-'] figcaption h2, [class^='imghvr-'] figcaption h3, [class^='imghvr-'] figcaption h4, [class^='imghvr-'] figcaption h5, [class^='imghvr-'] figcaption h6, [class*=' imghvr-'] figcaption h1, [class*=' imghvr-'] figcaption h2, [class*=' imghvr-'] figcaption h3, [class*=' imghvr-'] figcaption h4, [class*=' imghvr-'] figcaption h5, [class*=' imghvr-'] figcaption h6 {\r\n    color: #ffffff;\n}\n[class^='imghvr-'] a, [class*=' imghvr-'] a {\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 1;\n}\n[class^='imghvr-'], [class*=' imghvr-'], [class^='imghvr-']:before,\r\n[class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after,\r\n[class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before,\r\n[class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {\r\n    box-sizing: border-box;\r\n    -webkit-transition: all 0.35s ease;\r\n    -moz-transition: all 0.35s ease;\r\n    transition: all 0.35s ease;\n}\r\n\r\n/* imghvr-fade-*\r\n   ----------------------------- */\n[class^='imghvr-fade'] figcaption, [class*=' imghvr-fade'] figcaption {\r\n    opacity: 0;\n}\n[class^='imghvr-fade']:hover > img, [class*=' imghvr-fade']:hover > img {\r\n    opacity: 0;\n}\n[class^='imghvr-fade']:hover figcaption, [class*=' imghvr-fade']:hover figcaption {\r\n    opacity: 1;\n}\n[class^='imghvr-fade']:hover > img, [class^='imghvr-fade']:hover figcaption, [class*=' imghvr-fade']:hover > img, [class*=' imghvr-fade']:hover figcaption {\r\n    -webkit-transform: translate(0, 0);\r\n    -moz-transform: translate(0, 0);\r\n    -ms-transform: translate(0, 0);\r\n    -o-transform: translate(0, 0);\r\n    transform: translate(0, 0);\n}\r\n\r\n/* imghvr-fade\r\n   ----------------------------- */\r\n/* imghvr-fade-in-up\r\n   ----------------------------- */\n.imghvr-fade-in-up figcaption {\r\n    -webkit-transform: translate(0, 15%);\r\n    -moz-transform: translate(0, 15%);\r\n    -ms-transform: translate(0, 15%);\r\n    -o-transform: translate(0, 15%);\r\n    transform: translate(0, 15%);\n}\r\n\r\n/* imghvr-fade-in-down\r\n   ----------------------------- */\n.imghvr-fade-in-down figcaption {\r\n    -webkit-transform: translate(0, -15%);\r\n    -moz-transform: translate(0, -15%);\r\n    -ms-transform: translate(0, -15%);\r\n    -o-transform: translate(0, -15%);\r\n    transform: translate(0, -15%);\n}\r\n\r\n/* imghvr-fade-in-left\r\n   ----------------------------- */\n.imghvr-fade-in-left figcaption {\r\n    -webkit-transform: translate(-15%, 0);\r\n    -moz-transform: translate(-15%, 0);\r\n    -ms-transform: translate(-15%, 0);\r\n    -o-transform: translate(-15%, 0);\r\n    transform: translate(-15%, 0);\n}\r\n\r\n/* imghvr-fade-in-right\r\n   ----------------------------- */\n.imghvr-fade-in-right figcaption {\r\n    -webkit-transform: translate(15%, 0);\r\n    -moz-transform: translate(15%, 0);\r\n    -ms-transform: translate(15%, 0);\r\n    -o-transform: translate(15%, 0);\r\n    transform: translate(15%, 0);\n}\r\n\r\n/* imghvr-push-*\r\n   ----------------------------- */\n[class^='imghvr-push-']:hover figcaption, [class*=' imghvr-push-']:hover figcaption {\r\n    -webkit-transform: translate(0, 0);\r\n    -moz-transform: translate(0, 0);\r\n    -ms-transform: translate(0, 0);\r\n    -o-transform: translate(0, 0);\r\n    transform: translate(0, 0);\n}\r\n\r\n/* imghvr-push-up\r\n   ----------------------------- */\n.imghvr-push-up figcaption {\r\n    -webkit-transform: translateY(100%);\r\n    -moz-transform: translateY(100%);\r\n    -ms-transform: translateY(100%);\r\n    -o-transform: translateY(100%);\r\n    transform: translateY(100%);\n}\n.imghvr-push-up:hover > img {\r\n    -webkit-transform: translateY(-100%);\r\n    -moz-transform: translateY(-100%);\r\n    -ms-transform: translateY(-100%);\r\n    -o-transform: translateY(-100%);\r\n    transform: translateY(-100%);\n}\r\n\r\n/* imghvr-push-down\r\n   ----------------------------- */\n.imghvr-push-down figcaption {\r\n    -webkit-transform: translateY(-100%);\r\n    -moz-transform: translateY(-100%);\r\n    -ms-transform: translateY(-100%);\r\n    -o-transform: translateY(-100%);\r\n    transform: translateY(-100%);\n}\n.imghvr-push-down:hover > img {\r\n    -webkit-transform: translateY(100%);\r\n    -moz-transform: translateY(100%);\r\n    -ms-transform: translateY(100%);\r\n    -o-transform: translateY(100%);\r\n    transform: translateY(100%);\n}\r\n\r\n/* imghvr-push-left\r\n   ----------------------------- */\n.imghvr-push-left figcaption {\r\n    -webkit-transform: translateX(100%);\r\n    -moz-transform: translateX(100%);\r\n    -ms-transform: translateX(100%);\r\n    -o-transform: translateX(100%);\r\n    transform: translateX(100%);\n}\n.imghvr-push-left:hover > img {\r\n    -webkit-transform: translateX(-100%);\r\n    -moz-transform: translateX(-100%);\r\n    -ms-transform: translateX(-100%);\r\n    -o-transform: translateX(-100%);\r\n    transform: translateX(-100%);\n}\r\n\r\n/* imghvr-push--right\r\n   ----------------------------- */\n.imghvr-push-right figcaption {\r\n    -webkit-transform: translateX(-100%);\r\n    -moz-transform: translateX(-100%);\r\n    -ms-transform: translateX(-100%);\r\n    -o-transform: translateX(-100%);\r\n    transform: translateX(-100%);\n}\n.imghvr-push-right:hover > img {\r\n    -webkit-transform: translateX(100%);\r\n    -moz-transform: translateX(100%);\r\n    -ms-transform: translateX(100%);\r\n    -o-transform: translateX(100%);\r\n    transform: translateX(100%);\n}\r\n\r\n/* imghvr-slide-*\r\n   ----------------------------- */\n[class^='imghvr-slide-']:hover figcaption, [class*=' imghvr-slide-']:hover figcaption {\r\n    -webkit-transform: translate(0, 0);\r\n    -moz-transform: translate(0, 0);\r\n    -ms-transform: translate(0, 0);\r\n    -o-transform: translate(0, 0);\r\n    transform: translate(0, 0);\n}\r\n\r\n/* imghvr-slide-up\r\n   ----------------------------- */\n.imghvr-slide-up figcaption {\r\n    -webkit-transform: translateY(100%);\r\n    -moz-transform: translateY(100%);\r\n    -ms-transform: translateY(100%);\r\n    -o-transform: translateY(100%);\r\n    transform: translateY(100%);\n}\r\n\r\n/* imghvr-slide-down\r\n   ----------------------------- */\n.imghvr-slide-down figcaption {\r\n    -webkit-transform: translateY(-100%);\r\n    -moz-transform: translateY(-100%);\r\n    -ms-transform: translateY(-100%);\r\n    -o-transform: translateY(-100%);\r\n    transform: translateY(-100%);\n}\r\n\r\n/* imghvr-slide-left\r\n   ----------------------------- */\n.imghvr-slide-left figcaption {\r\n    -webkit-transform: translateX(100%);\r\n    -moz-transform: translateX(100%);\r\n    -ms-transform: translateX(100%);\r\n    -o-transform: translateX(100%);\r\n    transform: translateX(100%);\n}\r\n\r\n/* imghvr-slide-right\r\n   ----------------------------- */\n.imghvr-slide-right figcaption {\r\n    -webkit-transform: translateX(-100%);\r\n    -moz-transform: translateX(-100%);\r\n    -ms-transform: translateX(-100%);\r\n    -o-transform: translateX(-100%);\r\n    transform: translateX(-100%);\n}\r\n\r\n/* imghvr-slide-top-left\r\n   ----------------------------- */\n.imghvr-slide-top-left figcaption {\r\n    -webkit-transform: translate(-100%, -100%);\r\n    -moz-transform: translate(-100%, -100%);\r\n    -ms-transform: translate(-100%, -100%);\r\n    -o-transform: translate(-100%, -100%);\r\n    transform: translate(-100%, -100%);\n}\r\n\r\n/* imghvr-slide-top-right\r\n   ----------------------------- */\n.imghvr-slide-top-right figcaption {\r\n    -webkit-transform: translate(100%, -100%);\r\n    -moz-transform: translate(100%, -100%);\r\n    -ms-transform: translate(100%, -100%);\r\n    -o-transform: translate(100%, -100%);\r\n    transform: translate(100%, -100%);\n}\r\n\r\n/* imghvr-slide-bottom-left\r\n   ----------------------------- */\n.imghvr-slide-bottom-left figcaption {\r\n    -webkit-transform: translate(-100%, 100%);\r\n    -moz-transform: translate(-100%, 100%);\r\n    -ms-transform: translate(-100%, 100%);\r\n    -o-transform: translate(-100%, 100%);\r\n    transform: translate(-100%, 100%);\n}\r\n\r\n/* imghvr-slide-bottom-right\r\n   ----------------------------- */\n.imghvr-slide-bottom-right figcaption {\r\n    -webkit-transform: translate(100%, 100%);\r\n    -moz-transform: translate(100%, 100%);\r\n    -ms-transform: translate(100%, 100%);\r\n    -o-transform: translate(100%, 100%);\r\n    transform: translate(100%, 100%);\n}\r\n\r\n/* imghvr-reveal-*\r\n   ----------------------------- */\n[class^='imghvr-reveal-']:before, [class*=' imghvr-reveal-']:before {\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    content: '';\r\n    background-color: #135796;\n}\n[class^='imghvr-reveal-'] figcaption, [class*=' imghvr-reveal-'] figcaption {\r\n    opacity: 0;\n}\n[class^='imghvr-reveal-']:hover:before, [class*=' imghvr-reveal-']:hover:before {\r\n    -webkit-transform: translate(0, 0);\r\n    -moz-transform: translate(0, 0);\r\n    -ms-transform: translate(0, 0);\r\n    -o-transform: translate(0, 0);\r\n    transform: translate(0, 0);\n}\n[class^='imghvr-reveal-']:hover figcaption, [class*=' imghvr-reveal-']:hover figcaption {\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.21s;\r\n    -moz-transition-delay: 0.21s;\r\n    transition-delay: 0.21s;\n}\r\n\r\n/* imghvr-reveal-up\r\n   ----------------------------- */\n.imghvr-reveal-up:before {\r\n    -webkit-transform: translateY(100%);\r\n    -moz-transform: translateY(100%);\r\n    -ms-transform: translateY(100%);\r\n    -o-transform: translateY(100%);\r\n    transform: translateY(100%);\n}\r\n\r\n/* imghvr-reveal-down\r\n   ----------------------------- */\n.imghvr-reveal-down:before {\r\n    -webkit-transform: translateY(-100%);\r\n    -moz-transform: translateY(-100%);\r\n    -ms-transform: translateY(-100%);\r\n    -o-transform: translateY(-100%);\r\n    transform: translateY(-100%);\n}\r\n\r\n/* imghvr-reveal-left\r\n   ----------------------------- */\n.imghvr-reveal-left:before {\r\n    -webkit-transform: translateX(100%);\r\n    -moz-transform: translateX(100%);\r\n    -ms-transform: translateX(100%);\r\n    -o-transform: translateX(100%);\r\n    transform: translateX(100%);\n}\r\n\r\n/* imghvr-reveal-right\r\n   ----------------------------- */\n.imghvr-reveal-right:before {\r\n    -webkit-transform: translateX(-100%);\r\n    -moz-transform: translateX(-100%);\r\n    -ms-transform: translateX(-100%);\r\n    -o-transform: translateX(-100%);\r\n    transform: translateX(-100%);\n}\r\n\r\n/* imghvr-reveal-top-left\r\n   ----------------------------- */\n.imghvr-reveal-top-left:before {\r\n    -webkit-transform: translate(-100%, -100%);\r\n    -moz-transform: translate(-100%, -100%);\r\n    -ms-transform: translate(-100%, -100%);\r\n    -o-transform: translate(-100%, -100%);\r\n    transform: translate(-100%, -100%);\n}\r\n\r\n/* imghvr-reveal-top-right\r\n   ----------------------------- */\n.imghvr-reveal-top-right:before {\r\n    -webkit-transform: translate(100%, -100%);\r\n    -moz-transform: translate(100%, -100%);\r\n    -ms-transform: translate(100%, -100%);\r\n    -o-transform: translate(100%, -100%);\r\n    transform: translate(100%, -100%);\n}\r\n\r\n/* imghvr-reveal-bottom-left\r\n   ----------------------------- */\n.imghvr-reveal-bottom-left:before {\r\n    -webkit-transform: translate(-100%, 100%);\r\n    -moz-transform: translate(-100%, 100%);\r\n    -ms-transform: translate(-100%, 100%);\r\n    -o-transform: translate(-100%, 100%);\r\n    transform: translate(-100%, 100%);\n}\r\n\r\n/* imghvr-reveal-bottom-right\r\n   ----------------------------- */\n.imghvr-reveal-bottom-right:before {\r\n    -webkit-transform: translate(100%, 100%);\r\n    -moz-transform: translate(100%, 100%);\r\n    -ms-transform: translate(100%, 100%);\r\n    -o-transform: translate(100%, 100%);\r\n    transform: translate(100%, 100%);\n}\r\n\r\n/* imghvr-hinge-*\r\n   ----------------------------- */\n[class^='imghvr-hinge-'], [class*=' imghvr-hinge-'] {\r\n    -webkit-perspective: 50em;\r\n    -moz-perspective: 50em;\r\n    perspective: 50em;\n}\n[class^='imghvr-hinge-'] figcaption, [class*=' imghvr-hinge-'] figcaption {\r\n    opacity: 0;\r\n    z-index: 1;\n}\n[class^='imghvr-hinge-']:hover img, [class*=' imghvr-hinge-']:hover img {\r\n    opacity: 0;\n}\n[class^='imghvr-hinge-']:hover figcaption, [class*=' imghvr-hinge-']:hover figcaption {\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.21s;\r\n    -moz-transition-delay: 0.21s;\r\n    transition-delay: 0.21s;\n}\r\n\r\n/* imghvr-hinge-up\r\n   ----------------------------- */\n.imghvr-hinge-up img {\r\n    -webkit-transform-origin: 50% 0%;\r\n    -moz-transform-origin: 50% 0%;\r\n    -ms-transform-origin: 50% 0%;\r\n    -o-transform-origin: 50% 0%;\r\n    transform-origin: 50% 0%;\n}\n.imghvr-hinge-up figcaption {\r\n    -webkit-transform: rotateX(90deg);\r\n    -moz-transform: rotateX(90deg);\r\n    -ms-transform: rotateX(90deg);\r\n    -o-transform: rotateX(90deg);\r\n    transform: rotateX(90deg);\r\n    -webkit-transform-origin: 50% 100%;\r\n    -moz-transform-origin: 50% 100%;\r\n    -ms-transform-origin: 50% 100%;\r\n    -o-transform-origin: 50% 100%;\r\n    transform-origin: 50% 100%;\n}\n.imghvr-hinge-up:hover > img {\r\n    -webkit-transform: rotateX(-90deg);\r\n    -moz-transform: rotateX(-90deg);\r\n    -ms-transform: rotateX(-90deg);\r\n    -o-transform: rotateX(-90deg);\r\n    transform: rotateX(-90deg);\n}\n.imghvr-hinge-up:hover figcaption {\r\n    -webkit-transform: rotateX(0);\r\n    -moz-transform: rotateX(0);\r\n    -ms-transform: rotateX(0);\r\n    -o-transform: rotateX(0);\r\n    transform: rotateX(0);\n}\r\n\r\n/* imghvr-hinge-down\r\n   ----------------------------- */\n.imghvr-hinge-down img {\r\n    -webkit-transform-origin: 50% 100%;\r\n    -moz-transform-origin: 50% 100%;\r\n    -ms-transform-origin: 50% 100%;\r\n    -o-transform-origin: 50% 100%;\r\n    transform-origin: 50% 100%;\n}\n.imghvr-hinge-down figcaption {\r\n    -webkit-transform: rotateX(-90deg);\r\n    -moz-transform: rotateX(-90deg);\r\n    -ms-transform: rotateX(-90deg);\r\n    -o-transform: rotateX(-90deg);\r\n    transform: rotateX(-90deg);\r\n    -webkit-transform-origin: 50% -50%;\r\n    -moz-transform-origin: 50% -50%;\r\n    -ms-transform-origin: 50% -50%;\r\n    -o-transform-origin: 50% -50%;\r\n    transform-origin: 50% -50%;\n}\n.imghvr-hinge-down:hover > img {\r\n    -webkit-transform: rotateX(90deg);\r\n    -moz-transform: rotateX(90deg);\r\n    -ms-transform: rotateX(90deg);\r\n    -o-transform: rotateX(90deg);\r\n    transform: rotateX(90deg);\r\n    opacity: 0;\n}\n.imghvr-hinge-down:hover figcaption {\r\n    -webkit-transform: rotateX(0);\r\n    -moz-transform: rotateX(0);\r\n    -ms-transform: rotateX(0);\r\n    -o-transform: rotateX(0);\r\n    transform: rotateX(0);\n}\r\n\r\n/* imghvr-hinge-left\r\n   ----------------------------- */\n.imghvr-hinge-left img {\r\n    -webkit-transform-origin: 0% 50%;\r\n    -moz-transform-origin: 0% 50%;\r\n    -ms-transform-origin: 0% 50%;\r\n    -o-transform-origin: 0% 50%;\r\n    transform-origin: 0% 50%;\n}\n.imghvr-hinge-left figcaption {\r\n    -webkit-transform: rotateY(-90deg);\r\n    -moz-transform: rotateY(-90deg);\r\n    -ms-transform: rotateY(-90deg);\r\n    -o-transform: rotateY(-90deg);\r\n    transform: rotateY(-90deg);\r\n    -webkit-transform-origin: 100% 50%;\r\n    -moz-transform-origin: 100% 50%;\r\n    -ms-transform-origin: 100% 50%;\r\n    -o-transform-origin: 100% 50%;\r\n    transform-origin: 100% 50%;\n}\n.imghvr-hinge-left:hover > img {\r\n    -webkit-transform: rotateY(90deg);\r\n    -moz-transform: rotateY(90deg);\r\n    -ms-transform: rotateY(90deg);\r\n    -o-transform: rotateY(90deg);\r\n    transform: rotateY(90deg);\n}\n.imghvr-hinge-left:hover figcaption {\r\n    -webkit-transform: rotateY(0);\r\n    -moz-transform: rotateY(0);\r\n    -ms-transform: rotateY(0);\r\n    -o-transform: rotateY(0);\r\n    transform: rotateY(0);\n}\r\n\r\n/* imghvr-hinge-right\r\n   ----------------------------- */\n.imghvr-hinge-right img {\r\n    -webkit-transform-origin: 100% 50%;\r\n    -moz-transform-origin: 100% 50%;\r\n    -ms-transform-origin: 100% 50%;\r\n    -o-transform-origin: 100% 50%;\r\n    transform-origin: 100% 50%;\n}\n.imghvr-hinge-right figcaption {\r\n    -webkit-transform: rotateY(90deg);\r\n    -moz-transform: rotateY(90deg);\r\n    -ms-transform: rotateY(90deg);\r\n    -o-transform: rotateY(90deg);\r\n    transform: rotateY(90deg);\r\n    -webkit-transform-origin: 0 50%;\r\n    -moz-transform-origin: 0 50%;\r\n    -ms-transform-origin: 0 50%;\r\n    -o-transform-origin: 0 50%;\r\n    transform-origin: 0 50%;\n}\n.imghvr-hinge-right:hover > img {\r\n    -webkit-transform: rotateY(-90deg);\r\n    -moz-transform: rotateY(-90deg);\r\n    -ms-transform: rotateY(-90deg);\r\n    -o-transform: rotateY(-90deg);\r\n    transform: rotateY(-90deg);\n}\n.imghvr-hinge-right:hover figcaption {\r\n    -webkit-transform: rotateY(0);\r\n    -moz-transform: rotateY(0);\r\n    -ms-transform: rotateY(0);\r\n    -o-transform: rotateY(0);\r\n    transform: rotateY(0);\n}\r\n\r\n/* imghvr-flip-*\r\n   ----------------------------- */\n[class^='imghvr-flip-'], [class*=' imghvr-flip-'] {\r\n    -webkit-perspective: 50em;\r\n    -moz-perspective: 50em;\r\n    perspective: 50em;\n}\n[class^='imghvr-flip-'] img, [class*=' imghvr-flip-'] img {\r\n    backface-visibility: hidden;\n}\n[class^='imghvr-flip-'] figcaption, [class*=' imghvr-flip-'] figcaption {\r\n    opacity: 0;\n}\n[class^='imghvr-flip-']:hover > img, [class*=' imghvr-flip-']:hover > img {\r\n    opacity: 0;\n}\n[class^='imghvr-flip-']:hover figcaption, [class*=' imghvr-flip-']:hover figcaption {\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.14s;\r\n    -moz-transition-delay: 0.14s;\r\n    transition-delay: 0.14s;\n}\r\n\r\n/* imghvr-flip-horiz\r\n   ----------------------------- */\n.imghvr-flip-horiz figcaption {\r\n    -webkit-transform: rotateX(90deg);\r\n    -moz-transform: rotateX(90deg);\r\n    -ms-transform: rotateX(90deg);\r\n    -o-transform: rotateX(90deg);\r\n    transform: rotateX(90deg);\r\n    -webkit-transform-origin: 0% 50%;\r\n    -moz-transform-origin: 0% 50%;\r\n    -ms-transform-origin: 0% 50%;\r\n    -o-transform-origin: 0% 50%;\r\n    transform-origin: 0% 50%;\n}\n.imghvr-flip-horiz:hover img {\r\n    -webkit-transform: rotateX(-180deg);\r\n    -moz-transform: rotateX(-180deg);\r\n    -ms-transform: rotateX(-180deg);\r\n    -o-transform: rotateX(-180deg);\r\n    transform: rotateX(-180deg);\n}\n.imghvr-flip-horiz:hover figcaption {\r\n    -webkit-transform: rotateX(0deg);\r\n    -moz-transform: rotateX(0deg);\r\n    -ms-transform: rotateX(0deg);\r\n    -o-transform: rotateX(0deg);\r\n    transform: rotateX(0deg);\n}\r\n\r\n/* imghvr-flip-vert\r\n   ----------------------------- */\n.imghvr-flip-vert figcaption {\r\n    -webkit-transform: rotateY(90deg);\r\n    -moz-transform: rotateY(90deg);\r\n    -ms-transform: rotateY(90deg);\r\n    -o-transform: rotateY(90deg);\r\n    transform: rotateY(90deg);\r\n    -webkit-transform-origin: 50% 0%;\r\n    -moz-transform-origin: 50% 0%;\r\n    -ms-transform-origin: 50% 0%;\r\n    -o-transform-origin: 50% 0%;\r\n    transform-origin: 50% 0%;\n}\n.imghvr-flip-vert:hover > img {\r\n    -webkit-transform: rotateY(-180deg);\r\n    -moz-transform: rotateY(-180deg);\r\n    -ms-transform: rotateY(-180deg);\r\n    -o-transform: rotateY(-180deg);\r\n    transform: rotateY(-180deg);\n}\n.imghvr-flip-vert:hover figcaption {\r\n    -webkit-transform: rotateY(0deg);\r\n    -moz-transform: rotateY(0deg);\r\n    -ms-transform: rotateY(0deg);\r\n    -o-transform: rotateY(0deg);\r\n    transform: rotateY(0deg);\n}\r\n\r\n/* imghvr-flip-diag-1\r\n   ----------------------------- */\n.imghvr-flip-diag-1 figcaption {\r\n    -webkit-transform: rotate3d(1, -1, 0, 100deg);\r\n    -moz-transform: rotate3d(1, -1, 0, 100deg);\r\n    -ms-transform: rotate3d(1, -1, 0, 100deg);\r\n    -o-transform: rotate3d(1, -1, 0, 100deg);\r\n    transform: rotate3d(1, -1, 0, 100deg);\n}\n.imghvr-flip-diag-1:hover > img {\r\n    -webkit-transform: rotate3d(-1, 1, 0, 100deg);\r\n    -moz-transform: rotate3d(-1, 1, 0, 100deg);\r\n    -ms-transform: rotate3d(-1, 1, 0, 100deg);\r\n    -o-transform: rotate3d(-1, 1, 0, 100deg);\r\n    transform: rotate3d(-1, 1, 0, 100deg);\n}\n.imghvr-flip-diag-1:hover figcaption {\r\n    -webkit-transform: rotate3d(0, 0, 0, 0deg);\r\n    -moz-transform: rotate3d(0, 0, 0, 0deg);\r\n    -ms-transform: rotate3d(0, 0, 0, 0deg);\r\n    -o-transform: rotate3d(0, 0, 0, 0deg);\r\n    transform: rotate3d(0, 0, 0, 0deg);\n}\r\n\r\n/* imghvr-flip-diag-2\r\n   ----------------------------- */\n.imghvr-flip-diag-2 figcaption {\r\n    -webkit-transform: rotate3d(1, 1, 0, 100deg);\r\n    -moz-transform: rotate3d(1, 1, 0, 100deg);\r\n    -ms-transform: rotate3d(1, 1, 0, 100deg);\r\n    -o-transform: rotate3d(1, 1, 0, 100deg);\r\n    transform: rotate3d(1, 1, 0, 100deg);\n}\n.imghvr-flip-diag-2:hover > img {\r\n    -webkit-transform: rotate3d(-1, -1, 0, 100deg);\r\n    -moz-transform: rotate3d(-1, -1, 0, 100deg);\r\n    -ms-transform: rotate3d(-1, -1, 0, 100deg);\r\n    -o-transform: rotate3d(-1, -1, 0, 100deg);\r\n    transform: rotate3d(-1, -1, 0, 100deg);\n}\n.imghvr-flip-diag-2:hover figcaption {\r\n    -webkit-transform: rotate3d(0, 0, 0, 0deg);\r\n    -moz-transform: rotate3d(0, 0, 0, 0deg);\r\n    -ms-transform: rotate3d(0, 0, 0, 0deg);\r\n    -o-transform: rotate3d(0, 0, 0, 0deg);\r\n    transform: rotate3d(0, 0, 0, 0deg);\n}\r\n\r\n/* imghvr-shutter-out-*\r\n   ----------------------------- */\n[class^='imghvr-shutter-out-']:before, [class*=' imghvr-shutter-out-']:before {\r\n    background: #135796;\r\n    position: absolute;\r\n    content: '';\r\n    -webkit-transition-delay: 0.105s;\r\n    -moz-transition-delay: 0.105s;\r\n    transition-delay: 0.105s;\n}\n[class^='imghvr-shutter-out-'] figcaption, [class*=' imghvr-shutter-out-'] figcaption {\r\n    opacity: 0;\r\n    -webkit-transition-delay: 0s;\r\n    -moz-transition-delay: 0s;\r\n    transition-delay: 0s;\n}\n[class^='imghvr-shutter-out-']:hover:before, [class*=' imghvr-shutter-out-']:hover:before {\r\n    -webkit-transition-delay: 0s;\r\n    -moz-transition-delay: 0s;\r\n    transition-delay: 0s;\n}\n[class^='imghvr-shutter-out-']:hover figcaption, [class*=' imghvr-shutter-out-']:hover figcaption {\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.105s;\r\n    -moz-transition-delay: 0.105s;\r\n    transition-delay: 0.105s;\n}\r\n\r\n/* imghvr-shutter-out-horiz\r\n   ----------------------------- */\n.imghvr-shutter-out-horiz:before {\r\n    left: 50%;\r\n    right: 50%;\r\n    top: 0;\r\n    bottom: 0;\n}\n.imghvr-shutter-out-horiz:hover:before {\r\n    left: 0;\r\n    right: 0;\n}\r\n\r\n/* imghvr-shutter-out-vert\r\n   ----------------------------- */\n.imghvr-shutter-out-vert:before {\r\n    top: 50%;\r\n    bottom: 50%;\r\n    left: 0;\r\n    right: 0;\n}\n.imghvr-shutter-out-vert:hover:before {\r\n    top: 0;\r\n    bottom: 0;\n}\r\n\r\n/* imghvr-shutter-out-diag-1\r\n   ----------------------------- */\n.imghvr-shutter-out-diag-1:before {\r\n    top: 50%;\r\n    bottom: 50%;\r\n    left: -35%;\r\n    right: -35%;\r\n    -webkit-transform: rotate(45deg);\r\n    -moz-transform: rotate(45deg);\r\n    -ms-transform: rotate(45deg);\r\n    -o-transform: rotate(45deg);\r\n    transform: rotate(45deg);\n}\n.imghvr-shutter-out-diag-1:hover:before {\r\n    top: -35%;\r\n    bottom: -35%;\n}\r\n\r\n/* imghvr-shutter-out-diag-2\r\n   ----------------------------- */\n.imghvr-shutter-out-diag-2:before {\r\n    top: 50%;\r\n    bottom: 50%;\r\n    left: -35%;\r\n    right: -35%;\r\n    -webkit-transform: rotate(-45deg);\r\n    -moz-transform: rotate(-45deg);\r\n    -ms-transform: rotate(-45deg);\r\n    -o-transform: rotate(-45deg);\r\n    transform: rotate(-45deg);\n}\n.imghvr-shutter-out-diag-2:hover:before {\r\n    top: -35%;\r\n    bottom: -35%;\n}\r\n\r\n/* imghvr-shutter-in-*\r\n   ----------------------------- */\n[class^='imghvr-shutter-in-']:after, [class^='imghvr-shutter-in-']:before, [class*=' imghvr-shutter-in-']:after, [class*=' imghvr-shutter-in-']:before {\r\n    background: #135796;\r\n    position: absolute;\r\n    content: '';\n}\n[class^='imghvr-shutter-in-']:after, [class*=' imghvr-shutter-in-']:after {\r\n    top: 0;\r\n    left: 0;\n}\n[class^='imghvr-shutter-in-']:before, [class*=' imghvr-shutter-in-']:before {\r\n    right: 0;\r\n    bottom: 0;\n}\n[class^='imghvr-shutter-in-'] figcaption, [class*=' imghvr-shutter-in-'] figcaption {\r\n    opacity: 0;\r\n    z-index: 1;\n}\n[class^='imghvr-shutter-in-']:hover figcaption, [class*=' imghvr-shutter-in-']:hover figcaption {\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.21s;\r\n    -moz-transition-delay: 0.21s;\r\n    transition-delay: 0.21s;\n}\r\n\r\n/* imghvr-shutter-in-horiz\r\n   ----------------------------- */\n.imghvr-shutter-in-horiz:after, .imghvr-shutter-in-horiz:before {\r\n    width: 0;\r\n    height: 100%;\n}\n.imghvr-shutter-in-horiz:hover:after, .imghvr-shutter-in-horiz:hover:before {\r\n    width: 50%;\n}\r\n\r\n/* imghvr-shutter-in-vert\r\n   ----------------------------- */\n.imghvr-shutter-in-vert:after, .imghvr-shutter-in-vert:before {\r\n    height: 0;\r\n    width: 100%;\n}\n.imghvr-shutter-in-vert:hover:after, .imghvr-shutter-in-vert:hover:before {\r\n    height: 50%;\n}\r\n\r\n/* imghvr-shutter-in-out-horiz\r\n   ----------------------------- */\n.imghvr-shutter-in-out-horiz:after, .imghvr-shutter-in-out-horiz:before {\r\n    width: 0;\r\n    height: 100%;\r\n    opacity: 0.75;\n}\n.imghvr-shutter-in-out-horiz:hover:after, .imghvr-shutter-in-out-horiz:hover:before {\r\n    width: 100%;\n}\r\n\r\n/* imghvr-shutter-in-out-vert\r\n   ----------------------------- */\n.imghvr-shutter-in-out-vert:after, .imghvr-shutter-in-out-vert:before {\r\n    height: 0;\r\n    width: 100%;\r\n    opacity: 0.75;\n}\n.imghvr-shutter-in-out-vert:hover:after, .imghvr-shutter-in-out-vert:hover:before {\r\n    height: 100%;\n}\r\n\r\n/* imghvr-shutter-in-out-diag-1\r\n   ----------------------------- */\n.imghvr-shutter-in-out-diag-1:after, .imghvr-shutter-in-out-diag-1:before {\r\n    width: 200%;\r\n    height: 200%;\r\n    -webkit-transition: all 0.6s ease;\r\n    -moz-transition: all 0.6s ease;\r\n    transition: all 0.6s ease;\r\n    opacity: 0.75;\n}\n.imghvr-shutter-in-out-diag-1:after {\r\n    -webkit-transform: skew(-45deg) translateX(-150%);\r\n    -moz-transform: skew(-45deg) translateX(-150%);\r\n    -ms-transform: skew(-45deg) translateX(-150%);\r\n    -o-transform: skew(-45deg) translateX(-150%);\r\n    transform: skew(-45deg) translateX(-150%);\n}\n.imghvr-shutter-in-out-diag-1:before {\r\n    -webkit-transform: skew(-45deg) translateX(150%);\r\n    -moz-transform: skew(-45deg) translateX(150%);\r\n    -ms-transform: skew(-45deg) translateX(150%);\r\n    -o-transform: skew(-45deg) translateX(150%);\r\n    transform: skew(-45deg) translateX(150%);\n}\n.imghvr-shutter-in-out-diag-1:hover:after {\r\n    -webkit-transform: skew(-45deg) translateX(-50%);\r\n    -moz-transform: skew(-45deg) translateX(-50%);\r\n    -ms-transform: skew(-45deg) translateX(-50%);\r\n    -o-transform: skew(-45deg) translateX(-50%);\r\n    transform: skew(-45deg) translateX(-50%);\n}\n.imghvr-shutter-in-out-diag-1:hover:before {\r\n    -webkit-transform: skew(-45deg) translateX(50%);\r\n    -moz-transform: skew(-45deg) translateX(50%);\r\n    -ms-transform: skew(-45deg) translateX(50%);\r\n    -o-transform: skew(-45deg) translateX(50%);\r\n    transform: skew(-45deg) translateX(50%);\n}\r\n\r\n/* imghvr-shutter-in-out-diag-2\r\n   ----------------------------- */\n.imghvr-shutter-in-out-diag-2:after, .imghvr-shutter-in-out-diag-2:before {\r\n    width: 200%;\r\n    height: 200%;\r\n    -webkit-transition: all 0.6s ease;\r\n    -moz-transition: all 0.6s ease;\r\n    transition: all 0.6s ease;\r\n    opacity: 0.75;\n}\n.imghvr-shutter-in-out-diag-2:after {\r\n    -webkit-transform: skew(45deg) translateX(-100%);\r\n    -moz-transform: skew(45deg) translateX(-100%);\r\n    -ms-transform: skew(45deg) translateX(-100%);\r\n    -o-transform: skew(45deg) translateX(-100%);\r\n    transform: skew(45deg) translateX(-100%);\n}\n.imghvr-shutter-in-out-diag-2:before {\r\n    -webkit-transform: skew(45deg) translateX(100%);\r\n    -moz-transform: skew(45deg) translateX(100%);\r\n    -ms-transform: skew(45deg) translateX(100%);\r\n    -o-transform: skew(45deg) translateX(100%);\r\n    transform: skew(45deg) translateX(100%);\n}\n.imghvr-shutter-in-out-diag-2:hover:after {\r\n    -webkit-transform: skew(45deg) translateX(0%);\r\n    -moz-transform: skew(45deg) translateX(0%);\r\n    -ms-transform: skew(45deg) translateX(0%);\r\n    -o-transform: skew(45deg) translateX(0%);\r\n    transform: skew(45deg) translateX(0%);\n}\n.imghvr-shutter-in-out-diag-2:hover:before {\r\n    -webkit-transform: skew(45deg) translateX(0%);\r\n    -moz-transform: skew(45deg) translateX(0%);\r\n    -ms-transform: skew(45deg) translateX(0%);\r\n    -o-transform: skew(45deg) translateX(0%);\r\n    transform: skew(45deg) translateX(0%);\n}\r\n\r\n/* imghvr-fold*\r\n   ----------------------------- */\n[class^='imghvr-fold'], [class*=' imghvr-fold'] {\r\n    -webkit-perspective: 50em;\r\n    -moz-perspective: 50em;\r\n    perspective: 50em;\n}\n[class^='imghvr-fold'] img, [class*=' imghvr-fold'] img {\r\n    -webkit-transform-origin: 50% 0%;\r\n    -moz-transform-origin: 50% 0%;\r\n    -ms-transform-origin: 50% 0%;\r\n    -o-transform-origin: 50% 0%;\r\n    transform-origin: 50% 0%;\n}\n[class^='imghvr-fold'] figcaption, [class*=' imghvr-fold'] figcaption {\r\n    z-index: 1;\r\n    opacity: 0;\n}\n[class^='imghvr-fold']:hover > img, [class*=' imghvr-fold']:hover > img {\r\n    opacity: 0;\r\n    -webkit-transition-delay: 0;\r\n    -moz-transition-delay: 0;\r\n    transition-delay: 0;\n}\n[class^='imghvr-fold']:hover figcaption, [class*=' imghvr-fold']:hover figcaption {\r\n    -webkit-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);\r\n    -moz-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);\r\n    -ms-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);\r\n    -o-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);\r\n    transform: rotateX(0) translate3d(0, 0%, 0) scale(1);\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.21s;\r\n    -moz-transition-delay: 0.21s;\r\n    transition-delay: 0.21s;\n}\r\n\r\n/* imghvr-fold-up\r\n   ----------------------------- */\n.imghvr-fold-up > img {\r\n    -webkit-transform-origin: 50% 0%;\r\n    -moz-transform-origin: 50% 0%;\r\n    -ms-transform-origin: 50% 0%;\r\n    -o-transform-origin: 50% 0%;\r\n    transform-origin: 50% 0%;\n}\n.imghvr-fold-up figcaption {\r\n    -webkit-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);\r\n    -moz-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);\r\n    -ms-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);\r\n    -o-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);\r\n    transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);\r\n    -webkit-transform-origin: 50% 100%;\r\n    -moz-transform-origin: 50% 100%;\r\n    -ms-transform-origin: 50% 100%;\r\n    -o-transform-origin: 50% 100%;\r\n    transform-origin: 50% 100%;\n}\n.imghvr-fold-up:hover > img {\r\n    -webkit-transform: rotateX(90deg) scale(0.6) translateY(50%);\r\n    -moz-transform: rotateX(90deg) scale(0.6) translateY(50%);\r\n    -ms-transform: rotateX(90deg) scale(0.6) translateY(50%);\r\n    -o-transform: rotateX(90deg) scale(0.6) translateY(50%);\r\n    transform: rotateX(90deg) scale(0.6) translateY(50%);\n}\r\n\r\n/* imghvr-fold-down\r\n   ----------------------------- */\n.imghvr-fold-down > img {\r\n    -webkit-transform-origin: 50% 100%;\r\n    -moz-transform-origin: 50% 100%;\r\n    -ms-transform-origin: 50% 100%;\r\n    -o-transform-origin: 50% 100%;\r\n    transform-origin: 50% 100%;\n}\n.imghvr-fold-down figcaption {\r\n    -webkit-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);\r\n    -moz-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);\r\n    -ms-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);\r\n    -o-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);\r\n    transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);\r\n    -webkit-transform-origin: 50% 0%;\r\n    -moz-transform-origin: 50% 0%;\r\n    -ms-transform-origin: 50% 0%;\r\n    -o-transform-origin: 50% 0%;\r\n    transform-origin: 50% 0%;\n}\n.imghvr-fold-down:hover > img {\r\n    -webkit-transform: rotateX(-90deg) scale(0.6) translateY(-50%);\r\n    -moz-transform: rotateX(-90deg) scale(0.6) translateY(-50%);\r\n    -ms-transform: rotateX(-90deg) scale(0.6) translateY(-50%);\r\n    -o-transform: rotateX(-90deg) scale(0.6) translateY(-50%);\r\n    transform: rotateX(-90deg) scale(0.6) translateY(-50%);\n}\r\n\r\n/* imghvr-fold-left\r\n   ----------------------------- */\n.imghvr-fold-left > img {\r\n    -webkit-transform-origin: 0% 50%;\r\n    -moz-transform-origin: 0% 50%;\r\n    -ms-transform-origin: 0% 50%;\r\n    -o-transform-origin: 0% 50%;\r\n    transform-origin: 0% 50%;\n}\n.imghvr-fold-left figcaption {\r\n    -webkit-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);\r\n    -moz-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);\r\n    -ms-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);\r\n    -o-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);\r\n    transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);\r\n    -webkit-transform-origin: 100% 50%;\r\n    -moz-transform-origin: 100% 50%;\r\n    -ms-transform-origin: 100% 50%;\r\n    -o-transform-origin: 100% 50%;\r\n    transform-origin: 100% 50%;\n}\n.imghvr-fold-left:hover > img {\r\n    -webkit-transform: rotateY(-90deg) scale(0.6) translateX(50%);\r\n    -moz-transform: rotateY(-90deg) scale(0.6) translateX(50%);\r\n    -ms-transform: rotateY(-90deg) scale(0.6) translateX(50%);\r\n    -o-transform: rotateY(-90deg) scale(0.6) translateX(50%);\r\n    transform: rotateY(-90deg) scale(0.6) translateX(50%);\n}\r\n\r\n/* imghvr-fold-right\r\n   ----------------------------- */\n.imghvr-fold-right > img {\r\n    -webkit-transform-origin: 100% 50%;\r\n    -moz-transform-origin: 100% 50%;\r\n    -ms-transform-origin: 100% 50%;\r\n    -o-transform-origin: 100% 50%;\r\n    transform-origin: 100% 50%;\n}\n.imghvr-fold-right figcaption {\r\n    -webkit-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);\r\n    -moz-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);\r\n    -ms-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);\r\n    -o-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);\r\n    transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);\r\n    -webkit-transform-origin: 0 50%;\r\n    -moz-transform-origin: 0 50%;\r\n    -ms-transform-origin: 0 50%;\r\n    -o-transform-origin: 0 50%;\r\n    transform-origin: 0 50%;\n}\n.imghvr-fold-right:hover > img {\r\n    -webkit-transform: rotateY(90deg) scale(0.6) translateX(-50%);\r\n    -moz-transform: rotateY(90deg) scale(0.6) translateX(-50%);\r\n    -ms-transform: rotateY(90deg) scale(0.6) translateX(-50%);\r\n    -o-transform: rotateY(90deg) scale(0.6) translateX(-50%);\r\n    transform: rotateY(90deg) scale(0.6) translateX(-50%);\n}\r\n\r\n/* imghvr-zoom-in\r\n   ----------------------------- */\n.imghvr-zoom-in figcaption {\r\n    opacity: 0;\r\n    -webkit-transform: scale(0.5);\r\n    -moz-transform: scale(0.5);\r\n    -ms-transform: scale(0.5);\r\n    -o-transform: scale(0.5);\r\n    transform: scale(0.5);\n}\n.imghvr-zoom-in:hover figcaption {\r\n    -webkit-transform: scale(1);\r\n    -moz-transform: scale(1);\r\n    -ms-transform: scale(1);\r\n    -o-transform: scale(1);\r\n    transform: scale(1);\r\n    opacity: 1;\n}\r\n\r\n/* imghvr-zoom-out*\r\n   ----------------------------- */\n[class^='imghvr-zoom-out'] figcaption, [class*=' imghvr-zoom-out'] figcaption {\r\n    -webkit-transform: scale(0.5);\r\n    -moz-transform: scale(0.5);\r\n    -ms-transform: scale(0.5);\r\n    -o-transform: scale(0.5);\r\n    transform: scale(0.5);\r\n    -webkit-transform-origin: 50% 50%;\r\n    -moz-transform-origin: 50% 50%;\r\n    -ms-transform-origin: 50% 50%;\r\n    -o-transform-origin: 50% 50%;\r\n    transform-origin: 50% 50%;\r\n    opacity: 0;\n}\n[class^='imghvr-zoom-out']:hover figcaption, [class^='imghvr-zoom-out'].hover figcaption, [class*=' imghvr-zoom-out']:hover figcaption, [class*=' imghvr-zoom-out'].hover figcaption {\r\n    -webkit-transform: scale(1);\r\n    -moz-transform: scale(1);\r\n    -ms-transform: scale(1);\r\n    -o-transform: scale(1);\r\n    transform: scale(1);\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.35s;\r\n    -moz-transition-delay: 0.35s;\r\n    transition-delay: 0.35s;\n}\r\n\r\n/* imghvr-zoom-out\r\n   ----------------------------- */\n.imghvr-zoom-out:hover > img {\r\n    -webkit-transform: scale(0.5);\r\n    -moz-transform: scale(0.5);\r\n    -ms-transform: scale(0.5);\r\n    -o-transform: scale(0.5);\r\n    transform: scale(0.5);\r\n    opacity: 0;\n}\r\n\r\n/* imghvr-zoom-out-up\r\n   ----------------------------- */\n.imghvr-zoom-out-up:hover > img, .imghvr-zoom-out-up.hover > img {\r\n    -webkit-animation: imghvr-zoom-out-up 0.4025s linear;\r\n    -moz-animation: imghvr-zoom-out-up 0.4025s linear;\r\n    animation: imghvr-zoom-out-up 0.4025s linear;\r\n    -webkit-animation-iteration-count: 1;\r\n    -moz-animation-iteration-count: 1;\r\n    animation-iteration-count: 1;\r\n    -webkit-animation-fill-mode: forwards;\r\n    -moz-animation-fill-mode: forwards;\r\n    animation-fill-mode: forwards;\n}\n@-webkit-keyframes imghvr-zoom-out-up {\n50% {\r\n        -webkit-transform: scale(0.8) translateY(0%);\r\n        -moz-transform: scale(0.8) translateY(0%);\r\n        -ms-transform: scale(0.8) translateY(0%);\r\n        -o-transform: scale(0.8) translateY(0%);\r\n        transform: scale(0.8) translateY(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateY(-150%);\r\n        -moz-transform: scale(0.8) translateY(-150%);\r\n        -ms-transform: scale(0.8) translateY(-150%);\r\n        -o-transform: scale(0.8) translateY(-150%);\r\n        transform: scale(0.8) translateY(-150%);\r\n        opacity: 0.5;\n}\n}\n@keyframes imghvr-zoom-out-up {\n50% {\r\n        -webkit-transform: scale(0.8) translateY(0%);\r\n        -moz-transform: scale(0.8) translateY(0%);\r\n        -ms-transform: scale(0.8) translateY(0%);\r\n        -o-transform: scale(0.8) translateY(0%);\r\n        transform: scale(0.8) translateY(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateY(-150%);\r\n        -moz-transform: scale(0.8) translateY(-150%);\r\n        -ms-transform: scale(0.8) translateY(-150%);\r\n        -o-transform: scale(0.8) translateY(-150%);\r\n        transform: scale(0.8) translateY(-150%);\r\n        opacity: 0.5;\n}\n}\r\n\r\n/* imghvr-zoom-out-down\r\n   ----------------------------- */\n.imghvr-zoom-out-down:hover > img, .imghvr-zoom-out-down.hover > img {\r\n    -webkit-animation: imghvr-zoom-out-down 0.4025s linear;\r\n    -moz-animation: imghvr-zoom-out-down 0.4025s linear;\r\n    animation: imghvr-zoom-out-down 0.4025s linear;\r\n    -webkit-animation-iteration-count: 1;\r\n    -moz-animation-iteration-count: 1;\r\n    animation-iteration-count: 1;\r\n    -webkit-animation-fill-mode: forwards;\r\n    -moz-animation-fill-mode: forwards;\r\n    animation-fill-mode: forwards;\n}\n@-webkit-keyframes imghvr-zoom-out-down {\n50% {\r\n        -webkit-transform: scale(0.8) translateY(0%);\r\n        -moz-transform: scale(0.8) translateY(0%);\r\n        -ms-transform: scale(0.8) translateY(0%);\r\n        -o-transform: scale(0.8) translateY(0%);\r\n        transform: scale(0.8) translateY(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateY(150%);\r\n        -moz-transform: scale(0.8) translateY(150%);\r\n        -ms-transform: scale(0.8) translateY(150%);\r\n        -o-transform: scale(0.8) translateY(150%);\r\n        transform: scale(0.8) translateY(150%);\r\n        opacity: 0.5;\n}\n}\n@keyframes imghvr-zoom-out-down {\n50% {\r\n        -webkit-transform: scale(0.8) translateY(0%);\r\n        -moz-transform: scale(0.8) translateY(0%);\r\n        -ms-transform: scale(0.8) translateY(0%);\r\n        -o-transform: scale(0.8) translateY(0%);\r\n        transform: scale(0.8) translateY(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateY(150%);\r\n        -moz-transform: scale(0.8) translateY(150%);\r\n        -ms-transform: scale(0.8) translateY(150%);\r\n        -o-transform: scale(0.8) translateY(150%);\r\n        transform: scale(0.8) translateY(150%);\r\n        opacity: 0.5;\n}\n}\r\n\r\n/* imghvr-zoom-out-left\r\n   ----------------------------- */\n.imghvr-zoom-out-left:hover > img, .imghvr-zoom-out-left.hover > img {\r\n    -webkit-animation: imghvr-zoom-out-left 0.4025s linear;\r\n    -moz-animation: imghvr-zoom-out-left 0.4025s linear;\r\n    animation: imghvr-zoom-out-left 0.4025s linear;\r\n    -webkit-animation-iteration-count: 1;\r\n    -moz-animation-iteration-count: 1;\r\n    animation-iteration-count: 1;\r\n    -webkit-animation-fill-mode: forwards;\r\n    -moz-animation-fill-mode: forwards;\r\n    animation-fill-mode: forwards;\n}\n@-webkit-keyframes imghvr-zoom-out-left {\n50% {\r\n        -webkit-transform: scale(0.8) translateX(0%);\r\n        -moz-transform: scale(0.8) translateX(0%);\r\n        -ms-transform: scale(0.8) translateX(0%);\r\n        -o-transform: scale(0.8) translateX(0%);\r\n        transform: scale(0.8) translateX(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateX(-150%);\r\n        -moz-transform: scale(0.8) translateX(-150%);\r\n        -ms-transform: scale(0.8) translateX(-150%);\r\n        -o-transform: scale(0.8) translateX(-150%);\r\n        transform: scale(0.8) translateX(-150%);\r\n        opacity: 0.5;\n}\n}\n@keyframes imghvr-zoom-out-left {\n50% {\r\n        -webkit-transform: scale(0.8) translateX(0%);\r\n        -moz-transform: scale(0.8) translateX(0%);\r\n        -ms-transform: scale(0.8) translateX(0%);\r\n        -o-transform: scale(0.8) translateX(0%);\r\n        transform: scale(0.8) translateX(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateX(-150%);\r\n        -moz-transform: scale(0.8) translateX(-150%);\r\n        -ms-transform: scale(0.8) translateX(-150%);\r\n        -o-transform: scale(0.8) translateX(-150%);\r\n        transform: scale(0.8) translateX(-150%);\r\n        opacity: 0.5;\n}\n}\r\n\r\n/* imghvr-zoom-out-right\r\n   ----------------------------- */\n.imghvr-zoom-out-right:hover > img, .imghvr-zoom-out-right.hover > img {\r\n    -webkit-animation: imghvr-zoom-out-right 0.4025s linear;\r\n    -moz-animation: imghvr-zoom-out-right 0.4025s linear;\r\n    animation: imghvr-zoom-out-right 0.4025s linear;\r\n    -webkit-animation-iteration-count: 1;\r\n    -moz-animation-iteration-count: 1;\r\n    animation-iteration-count: 1;\r\n    -webkit-animation-fill-mode: forwards;\r\n    -moz-animation-fill-mode: forwards;\r\n    animation-fill-mode: forwards;\n}\n@-webkit-keyframes imghvr-zoom-out-right {\n50% {\r\n        -webkit-transform: scale(0.8) translateX(0%);\r\n        -moz-transform: scale(0.8) translateX(0%);\r\n        -ms-transform: scale(0.8) translateX(0%);\r\n        -o-transform: scale(0.8) translateX(0%);\r\n        transform: scale(0.8) translateX(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateX(150%);\r\n        -moz-transform: scale(0.8) translateX(150%);\r\n        -ms-transform: scale(0.8) translateX(150%);\r\n        -o-transform: scale(0.8) translateX(150%);\r\n        transform: scale(0.8) translateX(150%);\r\n        opacity: 0.5;\n}\n}\n@keyframes imghvr-zoom-out-right {\n50% {\r\n        -webkit-transform: scale(0.8) translateX(0%);\r\n        -moz-transform: scale(0.8) translateX(0%);\r\n        -ms-transform: scale(0.8) translateX(0%);\r\n        -o-transform: scale(0.8) translateX(0%);\r\n        transform: scale(0.8) translateX(0%);\r\n        opacity: 0.5;\n}\n100% {\r\n        -webkit-transform: scale(0.8) translateX(150%);\r\n        -moz-transform: scale(0.8) translateX(150%);\r\n        -ms-transform: scale(0.8) translateX(150%);\r\n        -o-transform: scale(0.8) translateX(150%);\r\n        transform: scale(0.8) translateX(150%);\r\n        opacity: 0.5;\n}\n}\r\n\r\n/* imghvr-zoom-out-flip-horiz\r\n   ----------------------------- */\n.imghvr-zoom-out-flip-horiz {\r\n    -webkit-perspective: 50em;\r\n    -moz-perspective: 50em;\r\n    perspective: 50em;\n}\n.imghvr-zoom-out-flip-horiz figcaption {\r\n    opacity: 0;\r\n    -webkit-transform: rotateX(90deg) translateY(-100%) scale(0.5);\r\n    -moz-transform: rotateX(90deg) translateY(-100%) scale(0.5);\r\n    -ms-transform: rotateX(90deg) translateY(-100%) scale(0.5);\r\n    -o-transform: rotateX(90deg) translateY(-100%) scale(0.5);\r\n    transform: rotateX(90deg) translateY(-100%) scale(0.5);\n}\n.imghvr-zoom-out-flip-horiz:hover > img, .imghvr-zoom-out-flip-horiz.hover > img {\r\n    -webkit-transform: rotateX(-100deg) translateY(50%) scale(0.5);\r\n    -moz-transform: rotateX(-100deg) translateY(50%) scale(0.5);\r\n    -ms-transform: rotateX(-100deg) translateY(50%) scale(0.5);\r\n    -o-transform: rotateX(-100deg) translateY(50%) scale(0.5);\r\n    transform: rotateX(-100deg) translateY(50%) scale(0.5);\r\n    opacity: 0;\r\n    -webkit-transition-delay: 0;\r\n    -moz-transition-delay: 0;\r\n    transition-delay: 0;\n}\n.imghvr-zoom-out-flip-horiz:hover figcaption, .imghvr-zoom-out-flip-horiz.hover figcaption {\r\n    -webkit-transform: rotateX(0) translateY(0%) scale(1);\r\n    -moz-transform: rotateX(0) translateY(0%) scale(1);\r\n    -ms-transform: rotateX(0) translateY(0%) scale(1);\r\n    -o-transform: rotateX(0) translateY(0%) scale(1);\r\n    transform: rotateX(0) translateY(0%) scale(1);\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.35s;\r\n    -moz-transition-delay: 0.35s;\r\n    transition-delay: 0.35s;\n}\r\n\r\n/* imghvr-zoom-out-flip-vert\r\n   ----------------------------- */\n.imghvr-zoom-out-flip-vert {\r\n    -webkit-perspective: 50em;\r\n    -moz-perspective: 50em;\r\n    perspective: 50em;\n}\n.imghvr-zoom-out-flip-vert figcaption {\r\n    opacity: 0;\r\n    -webkit-transform: rotateY(90deg) translate(50%, 0) scale(0.5);\r\n    -moz-transform: rotateY(90deg) translate(50%, 0) scale(0.5);\r\n    -ms-transform: rotateY(90deg) translate(50%, 0) scale(0.5);\r\n    -o-transform: rotateY(90deg) translate(50%, 0) scale(0.5);\r\n    transform: rotateY(90deg) translate(50%, 0) scale(0.5);\n}\n.imghvr-zoom-out-flip-vert:hover > img, .imghvr-zoom-out-flip-vert.hover > img {\r\n    -webkit-transform: rotateY(-100deg) translateX(50%) scale(0.5);\r\n    -moz-transform: rotateY(-100deg) translateX(50%) scale(0.5);\r\n    -ms-transform: rotateY(-100deg) translateX(50%) scale(0.5);\r\n    -o-transform: rotateY(-100deg) translateX(50%) scale(0.5);\r\n    transform: rotateY(-100deg) translateX(50%) scale(0.5);\r\n    opacity: 0;\r\n    -webkit-transition-delay: 0;\r\n    -moz-transition-delay: 0;\r\n    transition-delay: 0;\n}\n.imghvr-zoom-out-flip-vert:hover figcaption, .imghvr-zoom-out-flip-vert.hover figcaption {\r\n    -webkit-transform: rotateY(0) translate(0, 0) scale(1);\r\n    -moz-transform: rotateY(0) translate(0, 0) scale(1);\r\n    -ms-transform: rotateY(0) translate(0, 0) scale(1);\r\n    -o-transform: rotateY(0) translate(0, 0) scale(1);\r\n    transform: rotateY(0) translate(0, 0) scale(1);\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.35s;\r\n    -moz-transition-delay: 0.35s;\r\n    transition-delay: 0.35s;\n}\r\n\r\n/* imghvr-blur\r\n   ----------------------------- */\n.imghvr-blur figcaption {\r\n    opacity: 0;\n}\n.imghvr-blur:hover > img {\r\n    -webkit-filter: blur(30px);\r\n    filter: blur(30px);\r\n    -webkit-transform: scale(1.2);\r\n    -moz-transform: scale(1.2);\r\n    -ms-transform: scale(1.2);\r\n    -o-transform: scale(1.2);\r\n    transform: scale(1.2);\r\n    opacity: 0;\n}\n.imghvr-blur:hover figcaption {\r\n    opacity: 1;\r\n    -webkit-transition-delay: 0.21s;\r\n    -moz-transition-delay: 0.21s;\r\n    transition-delay: 0.21s;\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1943:
+/***/ 1965:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1944);
+var content = __webpack_require__(1966);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6dce43f0", content, false, {});
+var update = __webpack_require__(26)("39a98fa5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./dropify.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./dropify.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5fecd88c\",\"scoped\":false,\"hasInlineConfig\":true}!./img_hover.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5fecd88c\",\"scoped\":false,\"hasInlineConfig\":true}!./img_hover.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1944:
+/***/ 1966:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,61 +77,19 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\n    font-family : \"Open Sans\", sans-serif;\n}\n.dropify-wrapper.has-error {\n    border-color : #ff6666;\n}\n.dropify-errors-container.visible {\n    background-color : #ff6666;\n}\n.dropify-wrapper .dropify-message p.dropify-error {\n    color : #ff6666;\n}\n.p-30 {\n    padding : 30px;\n}\n.p-30 h5{\n    margin-top: 0.5rem;\n}", ""]);
+exports.push([module.i, "\n[class^='imghvr-'],\n[class*=' imghvr-'] {\n    background-color : #66cc99;\n    height           : 200px;\n}\n[class*=' imghvr-'] figcaption,\n[class^=imghvr-] figcaption {\n    background-color : #6699cc;\n    height           : 200px;\n}\n[class*=' imghvr-'] img,\n[class^=imghvr-] img {\n    height : 200px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1945:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1946);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("07cae908", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./image_filters.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./image_filters.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1946:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.pagination figure {\n    max-width : 100px;\n}\n.pagination > li {\n    display : inline-block;\n    margin  : 6px;\n}\n@media screen and (max-width : 342px) {\n.pagination {\n        margin-left : 2%;\n        display: -webkit-box;\n}\n}\n.pagination > li:hover, .active_filter {\n    cursor              : pointer;\n    -webkit-transform   : scale(1.1);\n    -moz-transform      : scale(1.1);\n    -o-transform        : scale(1.1);\n    -ms-transform       : scale(1.1);\n    transform           : scale(1.1);\n    transition-duration : 0.3s;\n}\n.active_filter {\n    cursor              : pointer;\n    -webkit-transform   : scale(1.15);\n    -moz-transform      : scale(1.15);\n    -o-transform        : scale(1.15);\n    -ms-transform       : scale(1.15);\n    transform           : scale(1.15);\n    transition-duration : 0.3s;\n    box-shadow          : 0 0 10px #555;\n    -moz-box-shadow     : 0 0 10px #555;\n    -webkit-box-shadow  : 0 0 10px #555;\n    -o-box-shadow       : 0 0 10px #555;\n}\n.dropify-render img {\n    width : 100%;\n}\n.font-ccc {\n    color : #ccc;\n}\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\n    font-family : \"Open Sans\", sans-serif;\n}\n.dropify-wrapper.has-error {\n    border-color : #ff6666;\n}\n.dropify-errors-container.visible {\n    background-color : #ff6666;\n}\n.dropify-wrapper .dropify-message p.dropify-error {\n    color : #ff6666;\n}\n.pagination{\n    display: -webkit-inline-box;\n}\n.pagination figure{\n    margin-bottom: 0;\n}\n.lark,.toaster{\n    color:#ccc;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1947:
+/***/ 1967:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
 //
 //
@@ -204,37 +162,106 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "image_filter",
+    name: "image_hover",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            isActive: 0,
-            filters: ['brannan', 'aden', 'brooklyn', 'clarendon', 'earlybird', 'gingham', 'hudson'],
-            secondfilters: ['inkwell', 'lark', 'lofi', 'mayfair', 'moon', 'nashville', 'perpetua'],
-            thirdfilters: ['rise', 'slumber', 'toaster', 'valencia', 'walden', 'willow', 'xpro2']
-        };
-    },
-
-    mounted: function mounted() {
-        "use strict";
-    },
-    methods: {
-        activation: function activation() {
-            this.isActive = 1;
-            //            console.log(this.filter);
-        }
-    },
+    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1948:
+/***/ 1968:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -249,248 +276,376 @@ var render = function() {
         [
           _c(
             "card",
-            {
-              attrs: {
-                title: "<i class='ti-image'></i> Image Filters (Aden - Hudson)"
-              }
-            },
+            { attrs: { title: "<i class='ti-image'></i> Image Hover" } },
             [
               _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-12" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "col-lg-6 col-md-8 mx-auto col-xs-12 text-center"
-                    },
-                    [
-                      _c(
-                        "figure",
-                        {
-                          class: _vm.filters[_vm.isActive],
-                          attrs: { id: "imgfigure1" }
-                        },
-                        [
-                          _c("img", {
-                            staticClass: "temp_path1 img-fluid",
-                            attrs: {
-                              src: __webpack_require__(622),
-                              alt: "hudson image"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12 text-center" }, [
-                    _c(
-                      "ul",
-                      { staticClass: "pagination mx-auto" },
-                      _vm._l(_vm.filters, function(filter, index) {
-                        return _c(
-                          "li",
-                          {
-                            class: { active_filter: _vm.isActive == index },
-                            on: {
-                              click: function($event) {
-                                _vm.isActive = index
-                              }
-                            }
-                          },
-                          [
-                            _c(
-                              "figure",
-                              { staticClass: "text-center", class: filter },
-                              [
-                                _c("img", {
-                                  staticClass: "temp_path1 img-fluid",
-                                  attrs: {
-                                    src: __webpack_require__(622),
-                                    height: "75",
-                                    alt: "hudson image"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("span", [_vm._v(_vm._s(filter))])
-                              ]
-                            )
-                          ]
-                        )
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-fade" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(725),
+                          width: "295",
+                          height: "185"
+                        }
                       }),
-                      0
-                    )
-                  ])
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  " <i class='ti-image'></i> Image Filters (Inkwell - Perpetua)"
-              }
-            },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-12" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-lg-6  col-md-8 mx-auto text-center" },
-                    [
-                      _c(
-                        "figure",
-                        {
-                          class: _vm.secondfilters[_vm.isActive],
-                          attrs: { id: "imgfigure2" }
-                        },
-                        [
-                          _c("img", {
-                            staticClass: "temp_path2 img-fluid",
-                            attrs: {
-                              src: __webpack_require__(621),
-                              alt: "inkwell image"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "ul",
-                        { staticClass: "pagination" },
-                        _vm._l(_vm.secondfilters, function(
-                          secondfilter,
-                          index
-                        ) {
-                          return _c(
-                            "li",
-                            {
-                              class: { active_filter: _vm.isActive == index },
-                              on: {
-                                click: function($event) {
-                                  _vm.isActive = index
-                                }
-                              }
-                            },
-                            [
-                              _c(
-                                "figure",
-                                {
-                                  staticClass: "text-center",
-                                  class: secondfilter
-                                },
-                                [
-                                  _c("img", {
-                                    staticClass: "temp_path2 img-fluid",
-                                    attrs: {
-                                      src: __webpack_require__(621),
-                                      alt: "inkwell image"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", [_vm._v(_vm._s(secondfilter))])
-                                ]
-                              )
-                            ]
-                          )
-                        }),
-                        0
-                      )
-                    ]
-                  )
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='ti-image'></i> Image Filters (Rise - Xpro2)"
-              }
-            },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-12 col-xs-12" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-lg-6  col-md-8 mx-auto text-center" },
-                    [
-                      _c(
-                        "figure",
-                        {
-                          class: _vm.thirdfilters[_vm.isActive],
-                          attrs: { id: "imgfigure3" }
-                        },
-                        [
-                          _c("img", {
-                            staticClass: "temp_path3 img-fluid",
-                            attrs: {
-                              src: __webpack_require__(619),
-                              alt: "rise image"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-md-12 col-xs-12 text-center" },
-                    [
-                      _c(
-                        "ul",
-                        { staticClass: "pagination" },
-                        _vm._l(_vm.thirdfilters, function(thirdfilter, index) {
-                          return _c(
-                            "li",
-                            {
-                              class: { active_filter: _vm.isActive == index },
-                              on: {
-                                click: function($event) {
-                                  _vm.isActive = index
-                                }
-                              }
-                            },
-                            [
-                              _c(
-                                "figure",
-                                {
-                                  staticClass: "text-center",
-                                  class: thirdfilter
-                                },
-                                [
-                                  _c("img", {
-                                    staticClass: "temp_path3 img-fluid",
-                                    attrs: {
-                                      src: __webpack_require__(619),
-                                      height: "75",
-                                      alt: "rise image"
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("span", [_vm._v(_vm._s(thirdfilter))])
-                                ]
-                              )
-                            ]
-                          )
-                        }),
-                        0
-                      )
-                    ]
-                  )
-                ])
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Fade\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-push-up" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(590),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Push-up\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-push-down" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(726),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Push-down\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-slide-right" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(652),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Slide-right\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-slide-left" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(598),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Slide-left\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-reveal-up" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(655),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Reveal-up\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-reveal-left" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(599),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Reveal-left\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-reveal-down" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(626),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Reaveal-down\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-hinge-up" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(727),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Hinge-up\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-hinge-right" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(591),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Hinge-right\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-flip-horiz" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(627),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Flip-horizontal\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-flip-vert" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(728),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Flip-vertical\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-flip-diag-1" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(592),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Flip-diagonal\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-shutter-out-vert" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(652),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Shutter-out-vertical\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-fold-right" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(655),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Fold-right\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-lg-3 col-sm-6 col-12 text-center" },
+                  [
+                    _c("figure", { staticClass: "imghvr-zoom-out-down" }, [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src: __webpack_require__(598),
+                          width: "295",
+                          height: "185"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("figcaption", [
+                        _vm._v(
+                          "\n                                Zoom out down\n                            "
+                        )
+                      ])
+                    ])
+                  ]
+                )
               ])
             ]
           )
@@ -506,27 +661,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-33a0fe58", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5fecd88c", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 489:
+/***/ 488:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1941)
-  __webpack_require__(1943)
-  __webpack_require__(1945)
+  __webpack_require__(1963)
+  __webpack_require__(1965)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1947)
+var __vue_script__ = __webpack_require__(1967)
 /* template */
-var __vue_template__ = __webpack_require__(1948)
+var __vue_template__ = __webpack_require__(1968)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -543,7 +697,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/image_filter.vue"
+Component.options.__file = "resources/components/pages/image_hover.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -552,9 +706,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-33a0fe58", Component.options)
+    hotAPI.createRecord("data-v-5fecd88c", Component.options)
   } else {
-    hotAPI.reload("data-v-33a0fe58", Component.options)
+    hotAPI.reload("data-v-5fecd88c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -566,19 +720,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 517:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(518)
+  __webpack_require__(527)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(520)
+var __vue_script__ = __webpack_require__(529)
 /* template */
-var __vue_template__ = __webpack_require__(521)
+var __vue_template__ = __webpack_require__(530)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -618,13 +772,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 518:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(519);
+var content = __webpack_require__(528);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -645,7 +799,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 519:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -660,7 +814,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 520:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -705,7 +859,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 521:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -767,24 +921,94 @@ if (false) {
 
 /***/ }),
 
-/***/ 619:
+/***/ 590:
 /***/ (function(module, exports) {
 
-module.exports = "/images/5.jpg?5ad19bfbbd192c4ca5acea1f6d146bd2";
+module.exports = "/images/8.jpg?ea2b6d40598c6861a574cdef28bee95e";
 
 /***/ }),
 
-/***/ 621:
+/***/ 591:
 /***/ (function(module, exports) {
 
-module.exports = "/images/15.jpg?a176a96269cb19d1b1605704e10c2526";
+module.exports = "/images/29.jpg?dba7e72ffb341c2682464560c98b1788";
 
 /***/ }),
 
-/***/ 622:
+/***/ 592:
 /***/ (function(module, exports) {
 
-module.exports = "/images/16.jpg?d78ebf13dc5e6fac474dc1074782e557";
+module.exports = "/images/30.jpg?2002855a1fb468b267975e83697f0eeb";
+
+/***/ }),
+
+/***/ 598:
+/***/ (function(module, exports) {
+
+module.exports = "/images/17.jpg?6d3cc3fd9122d4f52d698096733ec37b";
+
+/***/ }),
+
+/***/ 599:
+/***/ (function(module, exports) {
+
+module.exports = "/images/20.jpg?07b859bc73b54be32996cc610504505a";
+
+/***/ }),
+
+/***/ 626:
+/***/ (function(module, exports) {
+
+module.exports = "/images/24.jpg?9ab5a6f8d08b10ff992c033457ecde05";
+
+/***/ }),
+
+/***/ 627:
+/***/ (function(module, exports) {
+
+module.exports = "/images/32.jpg?1a676da167dfc017310a39f20f320476";
+
+/***/ }),
+
+/***/ 652:
+/***/ (function(module, exports) {
+
+module.exports = "/images/14.jpg?cce4f8209982954c63a2dd299d1024da";
+
+/***/ }),
+
+/***/ 655:
+/***/ (function(module, exports) {
+
+module.exports = "/images/19.jpg?7ab7fd40b414501e98d85ee5bbb607dd";
+
+/***/ }),
+
+/***/ 725:
+/***/ (function(module, exports) {
+
+module.exports = "/images/7.jpg?cfa7e806ed911865ffcfaf121c318617";
+
+/***/ }),
+
+/***/ 726:
+/***/ (function(module, exports) {
+
+module.exports = "/images/11.jpg?c18e3cce9d29762663b7244b39003334";
+
+/***/ }),
+
+/***/ 727:
+/***/ (function(module, exports) {
+
+module.exports = "/images/28.jpg?8eb46f5017f2549bc46564826f7aa008";
+
+/***/ }),
+
+/***/ 728:
+/***/ (function(module, exports) {
+
+module.exports = "/images/33.jpg?d10aa242caba201d241185f8a2c74133";
 
 /***/ })
 

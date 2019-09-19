@@ -1,22 +1,22 @@
 webpackJsonp([55],{
 
-/***/ 1744:
+/***/ 1497:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1745);
+var content = __webpack_require__(1498);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("21b941be", content, false, {});
+var update = __webpack_require__(26)("1884208a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1745:
+/***/ 1498:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,24 +35,82 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.trendvue svg path{\nstroke-width:2px;\n}\n.card svg{\n    height: 40vh;\n}\n", ""]);
+exports.push([module.i, "\n.nsg-editor{padding:10px;cursor:text\n}\n.nsg-tag{display:inline-block;border:1px solid #666;padding:3px;margin:4px\n}\n.nsg-invalid{border-color:#c00\n}\n.nsg-tag-remove:after{margin-left:4px;padding:0 4px;content:'x';background-color:#ccc;cursor:pointer\n}\n.nsg-input{display:inline-block;padding:3px 3px 3px 8px;margin:5px 0\n}\n.nsg-input[placeholder]{min-width:100%\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1746:
+/***/ 1499:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1500);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("3e33f374", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia_custom.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fb48a0\",\"scoped\":false,\"hasInlineConfig\":true}!./insignia_custom.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1500:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.nsg-tag {\n    border-color     : #6699cc;\n    background-color : #6699cc;\n    border-radius    : 4px;\n    padding          : 3px 7px;\n}\n.input {\n    background-color : #eeeeee;\n    color            : #FFF;\n    padding          : 10px;\n}\ninput {\n    outline          : none;\n    background-color : #eeeeee;\n    color            : #6699cc;\n    border           : 0;\n    padding          : 3px;\n    margin           : 5px 0;\n}\n.nsg-tag-remove:after {\n    background-color : #6699cc;\n}\nlabel.tag1 {\n    margin-top    : 15px;\n    margin-bottom : 15px;\n}\n.m-t-b-15 {\n    margin-top    : 15px;\n    margin-bottom : 15px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1501:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(524);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetrend__ = __webpack_require__(1747);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuebars__ = __webpack_require__(1748);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js__ = __webpack_require__(1502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -86,615 +144,175 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuetrend__["a" /* default */]);
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vuebars__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "blank",
+    name: "tags_input",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {};
-    },
+    mounted: function mounted() {
+        'use strict';
 
-    methods: {}
+        void function () {
+
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(ty);
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(custom, {
+                delimiter: ','
+            });
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(del, {
+                deletion: true
+            });
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(def);
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(lng);
+            __WEBPACK_IMPORTED_MODULE_1_insignia_dist_insignia_min_js___default()(dup, {
+                validate: function validate() {
+                    return true;
+                }
+            });
+
+            function events(el, type, fn) {
+                if (el.addEventListener) {
+                    el.addEventListener(type, fn);
+                } else if (el.attachEvent) {
+                    el.attachEvent('on' + type, wrap(fn));
+                } else {
+                    el['on' + type] = wrap(fn);
+                }
+
+                function wrap(originalEvent) {
+                    var e = originalEvent || global.event;
+                    e.target = e.target || e.srcElement;
+                    e.preventDefault = e.preventDefault || function preventDefault() {
+                        e.returnValue = false;
+                    };
+                    e.stopPropagation = e.stopPropagation || function stopPropagation() {
+                        e.cancelBubble = true;
+                    };
+                    fn.call(el, e);
+                }
+            }
+        }();
+    },
+    destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(18)))
 
 /***/ }),
 
-/***/ 1747:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 1502:
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-function int (value) {
-  return parseInt(value, 10)
-}
-
-/**
- * https://en.wikipedia.org/wiki/Collinearity
- * x=(x1+x2)/2
- * y=(y1+y2)/2
- */
-function checkCollinear (p0, p1, p2) {
-  return (
-    int(p0.x + p2.x) === int(2 * p1.x) && int(p0.y + p2.y) === int(2 * p1.y)
-  )
-}
-
-function getDistance (p1, p2) {
-  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2))
-}
-
-function moveTo (to, from, radius) {
-  var vector = { x: to.x - from.x, y: to.y - from.y };
-  var length = Math.sqrt(vector.x * vector.x + vector.y * vector.y);
-  var unitVector = { x: vector.x / length, y: vector.y / length };
-
-  return {
-    x: from.x + unitVector.x * radius,
-    y: from.y + unitVector.y * radius
-  }
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (arr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  arr = arr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001
-    }
-  })
-}
-
-/**
- * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
- */
-function genPath (points, radius) {
-  var start = points.shift();
-
-  return (
-    "M" + (start.x) + " " + (start.y) +
-    points
-      .map(function (point, index) {
-        var next = points[index + 1];
-        var prev = points[index - 1] || start;
-        var isCollinear = next && checkCollinear(next, point, prev);
-
-        if (!next || isCollinear) {
-          return ("L" + (point.x) + " " + (point.y))
-        }
-
-        var threshold = Math.min(
-          getDistance(prev, point),
-          getDistance(next, point)
-        );
-        var isTooCloseForRadius = threshold / 2 < radius;
-        var radiusForPoint = isTooCloseForRadius ? threshold / 2 : radius;
-
-        var before = moveTo(prev, point, radiusForPoint);
-        var after = moveTo(next, point, radiusForPoint);
-
-        return ("L" + (before.x) + " " + (before.y) + "S" + (point.x) + " " + (point.y) + " " + (after.x) + " " + (after.y))
-      })
-      .join('')
-  )
-}
-
-var Path = {
-  props: ['smooth', 'data', 'boundary', 'radius', 'id', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var smooth = ref.smooth;
-    var boundary = ref.boundary;
-    var radius = ref.radius;
-    var id = ref.id;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min });
-    var d = genPath(points, smooth ? radius : 0);
-
-    return h('path', {
-      attrs: { d: d, fill: 'none', stroke: ("url(#" + id + ")") }
-    })
-  }
-};
-
-var Gradient = {
-  props: ['gradient', 'id'],
-
-  render: function render (h) {
-    var ref = this;
-    var gradient = ref.gradient;
-    var id = ref.id;
-    var len = gradient.length - 1 || 1;
-    var stops = gradient
-      .slice()
-      .reverse()
-      .map(function (color, index) { return h('stop', {
-          attrs: {
-            offset: index / len,
-            'stop-color': color
-          }
-        }); }
-      );
-
-    return h('defs', [
-      h(
-        'linearGradient',
-        {
-          attrs: {
-            id: id,
-            x1: 0,
-            y1: 0,
-            x2: 0,
-            y2: 1
-          }
-        },
-        stops
-      )
-    ])
-  }
-};
-
-var Trend$1 = {
-  name: 'Trend',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    autoDrawDuration: {
-      type: Number,
-      default: 2000
-    },
-    autoDrawEasing: {
-      type: String,
-      default: 'ease'
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    },
-    radius: {
-      type: Number,
-      default: 10
-    },
-    smooth: Boolean
-  },
-
-  watch: {
-    data: {
-      immediate: true,
-      handler: function handler (val) {
-        var this$1 = this;
-
-        this.$nextTick(function () {
-          if (this$1.$isServer || !this$1.$refs.path || !this$1.autoDraw) {
-            return
-          }
-
-          var path = this$1.$refs.path.$el;
-          var length = path.getTotalLength();
-
-          path.style.transition = 'none';
-          path.style.strokeDasharray = length + ' ' + length;
-          path.style.strokeDashoffset = Math.abs(
-            length - (this$1.lastLength || 0)
-          );
-          path.getBoundingClientRect();
-          path.style.transition = "stroke-dashoffset " + (this$1.autoDrawDuration) + "ms " + (this$1.autoDrawEasing);
-          path.style.strokeDashoffset = 0;
-          this$1.lastLength = length;
-        });
-      }
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-trend-' + this._uid;
-    return h(
-      'svg',
-      {
-        attrs: {
-          width: width || '100%',
-          height: height || '25%',
-          viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-        }
-      },
-      [
-        h(Gradient, { props: props }),
-        h(Path, {
-          props: props,
-          ref: 'path'
-        })
-      ]
-    )
-  }
-};
-
-Trend$1.install = function (Vue) {
-  Vue.component(Trend$1.name, Trend$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Trend$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Trend$1);
-
+/* WEBPACK VAR INJECTION */(function(global, setImmediate) {var require;var require;!function(e){if(true)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var t;t="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,t.insignia=e()}}(function(){return function e(t,n,r){function i(o,u){if(!n[o]){if(!t[o]){var l="function"==typeof require&&require;if(!u&&l)return require(o,!0);if(a)return a(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var c=n[o]={exports:{}};t[o][0].call(c.exports,function(e){var n=t[o][1][e];return i(n?n:e)},c,c.exports,e,t,n,r)}return n[o].exports}for(var a="function"==typeof require&&require,o=0;o<r.length;o++)i(r[o]);return i}({1:[function(e,t){"use strict";var n=e("crossvent"),r=e("./dom"),i=e("./text"),a=["fontFamily","fontSize","fontWeight","fontStyle","letterSpacing","textTransform","wordSpacing","textIndent","webkitBoxSizing","mozBoxSizing","boxSizing","padding","border"],o=20;t.exports=function(e){function t(){var e,t,n=c();for(t=0;t<a.length;t++)e=n[a[t]],void 0!==e&&null!==e&&(s.style[a[t]]=e);s.disabled="disabled",s.style.whiteSpace="pre",s.style.position="absolute",s.style.top=s.style.left="-9999em"}function u(){var t=e.value;if(t!==s.value){i(s,t);var n=s.offsetWidth+o;e.style.width=n+"px"}}function l(t){var r=t?"remove":"add";n[r](e,"keydown",u),n[r](e,"keyup",u),n[r](e,"input",u),n[r](e,"paste",u),n[r](e,"change",u)}function f(){l(!0),s.parentElement.removeChild(s),e.style.width=""}function c(){return window.getComputedStyle?window.getComputedStyle(e):e.currentStyle}var s=r("span");return document.body.appendChild(s),t(),l(),{remap:t,refresh:u,destroy:f}}},{"./dom":2,"./text":12,crossvent:7}],2:[function(e,t){"use strict";t.exports=function(e,t){var n=document.createElement(e);return t&&(n.className=t),n}},{}],3:[function(e,t){"use strict";function n(e){return e&&e.__esModule?e:{"default":e}}function r(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}function i(e){function t(e){for(var t=arguments.length<=1||void 0===arguments[1]?"data":arguments[1],n="data"===t?function(n){return gt(n[t])===gt(e)}:function(n){return n[t]===e},r=0;r<it.length;r++)if(n(it[r]))return it[r];return null}function n(e){for(var t=arguments.length<=1||void 0===arguments[1]?"data":arguments[1],n="data"===t?function(n){return gt(n[t])===gt(e)}:function(n){return n[t]===e},r=0;r<it.length;r++)if(n(it[r]))return r;return null}function i(e){var t=ft(e),n={data:e,valid:t};if(at.preventInvalid&&!t)return xt;var r=v(n);return r?(n.el=r,it.push(n),xt.emit("add",e,r),u(),xt):xt}function a(e){return e?(m(e.el),it.splice(it.indexOf(e),1),xt.emit("remove",e.data),u(),xt):xt}function u(){it.slice().forEach(function(e,t){it.splice(t,1);var n=ft(e.data,t);n?(e.el.classList.add("nsg-valid"),e.el.classList.remove("nsg-invalid")):(e.el.classList.add("nsg-invalid"),e.el.classList.remove("nsg-valid"),xt.emit("invalid",e.data,e.el)),e.valid=n,it.splice(t,0,e)})}function f(e){return a(t(e))}function s(e){return a(t(e,"el"))}function v(e){return A(ht,e)}function m(e){e.parentElement&&e.parentElement.removeChild(e)}function A(e,t){var n=t.data,r="string"==typeof n&&0===n.trim().length;if(r)return null;var i=d["default"]("span","nsg-tag");return ct(i,t),at.deletion&&i.appendChild(d["default"]("span","nsg-tag-remove")),e.appendChild(i),i}function D(e){return e}function L(){return it.filter(function(e){return e.valid}).map(function(e){return e.data})}function z(){return it.map(function(e){return e.data})}function _(){var t=bt.querySelector(".nsg-tag");t||St?t&&St&&(e.removeAttribute("placeholder"),St=!1):(e.setAttribute("placeholder",Ct),St=!0)}function j(t){var n=t?"remove":"add",r=t?"off":"on";l["default"][n](e,"keydown",X),l["default"][n](e,"keypress",$),l["default"][n](e,"paste",G),l["default"][n](bt,"click",U),st&&(l["default"][n](document.documentElement,"blur",M,!0),l["default"][n](document.documentElement,"mousedown",P)),Ct&&(xt[r]("add",_),xt[r]("remove",_),l["default"][n](e,"keydown",_),l["default"][n](e,"keypress",_),l["default"][n](e,"paste",_),l["default"][n](bt,"click",_),_())}function q(){return j(!0),e.value="",e.className=e.className.replace(O,""),bt.className=bt.className.replace(I,""),ht.parentElement&&ht.parentElement.removeChild(ht),yt.parentElement&&yt.parentElement.removeChild(yt),wt.destroy(),xt.destroyed=!0,xt.destroy=xt.addItem=xt.removeItem=function(){return xt},xt.tags=xt.value=function(){return null},xt}function R(){return(new Date).valueOf()}function M(){Et>R()||F(!0)}function P(e){for(var t=e.target;t;)t===bt&&(Et=R()+100),t=t.parentElement}function U(t){var n=t.target;if(N.test(n.className))return s(n.parentElement),void e.focus();for(var r=n,i=k.test(r.className);i===!1&&r.parentElement;)r=r.parentElement,i=k.test(r.className);i&&lt?Z(r,B):n!==e&&(V(),e.focus())}function V(){Z(yt.lastChild,B),J([ot],!0)}function F(e){return(e?H:J)([ot],e),e&&tt(yt,W),xt}function W(e,t){ht.appendChild(t)}function X(t){var n=o["default"](e),r=t.which||t.keyCode||t.charCode,i=0===n.start&&0===n.end&&ht.lastChild,a=n.start===e.value.length&&n.end===e.value.length&&yt.firstChild;if(lt)if(r===w)ht.firstChild?Z(ht.firstChild,{}):o["default"](e,{start:0,end:0});else if(r===E)yt.lastChild?Z(yt.lastChild,B):o["default"](e,B);else if(r===b&&i)s(ht.lastChild);else if(r===C&&a)Z(yt.firstChild,{});else{if(r!==x||!i)return;Z(ht.lastChild,B)}else if(r===b&&i)s(ht.lastChild);else if(r===C&&a)ht.appendChild(yt.firstChild);else if(r===x&&i)yt.insertBefore(ht.lastChild,yt.firstChild);else if(-1===S.indexOf(r))return;return t.preventDefault(),!1}function $(e){var t=e.which||e.keyCode||e.charCode;return String.fromCharCode(t)===ot?(F(),e.preventDefault(),!1):void 0}function G(){setTimeout(function(){return J()},0)}function H(e,t){K(e,t)}function J(t,n){K(t,n,o["default"](e))}function K(t,n,r){function a(){r&&(r.start-=c,r.end-=c,o["default"](e,r))}var u=n||!r?1/0:r.start,l=e.value.slice(0,u).concat(t||[]).split(ot);if(!(l.length<1)&&lt){var f=l.pop()+e.value.slice(u),c=l.join(ot).length;l.forEach(function(e){return i(dt(e))}),e.value=f,a(),wt.refresh()}}function Q(e,t){p["default"](e,mt(t.data))}function Y(e){return p["default"](e)}function Z(t,n){if(t){J([ot],!0);var r=t.parentElement;if(r===ht)for(;r.lastChild!==t;)yt.insertBefore(r.lastChild,yt.firstChild);else for(;r.firstChild!==t;)ht.appendChild(r.firstChild);var i=n.remove?"":Y(t);s(t),e.value=i,e.focus(),o["default"](e,n),wt.refresh()}}function et(){var t=e.parentElement.children;return[].concat(r(t)).some(function(t){return t!==e&&t.nodeType===y})}function tt(e,t){[].concat(r(e.children)).forEach(function(e,n){return t(Y(e),e,n)})}function nt(e,t){var r=n(e);return r===t||null===r}var rt=arguments.length<=1||void 0===arguments[1]?{}:arguments[1],it=[],at=rt,ot=at.delimiter||T;if(1!==ot.length)throw new Error("insignia expected a single-character delimiter string");var ut=et(e);if(ut||!h.test(e.tagName))throw new Error("insignia expected an input element without any siblings");var lt=at.free!==!1,ft=at.validate||nt,ct=at.render||Q,st=at.convertOnBlur!==!1,dt=D,vt=at.getText,pt=at.getValue,mt="string"==typeof vt?function(e){return e[vt]}:"function"==typeof vt?vt:function(e){return e.toString()},gt="string"==typeof pt?function(e){return e[pt]}:"function"==typeof pt?pt:function(e){return e},ht=d["default"]("span","nsg-tags nsg-tags-before"),yt=d["default"]("span","nsg-tags nsg-tags-after"),bt=e.parentElement,Et=R();e.className+=" nsg-input",bt.className+=" nsg-editor",bt.insertBefore(ht,e),bt.insertBefore(yt,e.nextSibling);var wt=g["default"](e),xt=c["default"]({addItem:i,findItem:function(e){return t(e)},findItemIndex:function(e){return n(e)},findItemByElement:function(e){return t(e,"el")},removeItem:f,removeItemByElement:s,value:L,allValues:z,refresh:F,destroy:q}),Ct=e.getAttribute("placeholder"),St=!0;return j(),(document.activeElement===e?J:H)([ot],!0),xt}var a=e("sell"),o=n(a),u=e("crossvent"),l=n(u),f=e("contra/emitter"),c=n(f),s=e("./dom"),d=n(s),v=e("./text"),p=n(v),m=e("./autosize"),g=n(m),h=/^input$/i,y=1,b=8,E=35,w=36,x=37,C=39,S=[E,w],k=/\bnsg-tag\b/,N=/\bnsg-tag-remove\b/,I=/\bnsg-editor\b/g,O=/\bnsg-input\b/g,B={start:"end",end:"end"},T=" ";t.exports=i},{"./autosize":1,"./dom":2,"./text":12,"contra/emitter":6,crossvent:7,sell:10}],4:[function(e,t){t.exports=function(e,t){return Array.prototype.slice.call(e,t)}},{}],5:[function(e,t){"use strict";var n=e("ticky");t.exports=function(e,t,r){e&&n(function(){e.apply(r||null,t||[])})}},{ticky:11}],6:[function(e,t){"use strict";var n=e("atoa"),r=e("./debounce");t.exports=function(e,t){var i=t||{},a={};return void 0===e&&(e={}),e.on=function(t,n){return a[t]?a[t].push(n):a[t]=[n],e},e.once=function(t,n){return n._once=!0,e.on(t,n),e},e.off=function(t,n){var r=arguments.length;if(1===r)delete a[t];else if(0===r)a={};else{var i=a[t];if(!i)return e;i.splice(i.indexOf(n),1)}return e},e.emit=function(){var t=n(arguments);return e.emitterSnapshot(t.shift()).apply(this,t)},e.emitterSnapshot=function(t){var o=(a[t]||[]).slice(0);return function(){var a=n(arguments),u=this||e;if("error"===t&&i["throws"]!==!1&&!o.length)throw 1===a.length?a[0]:a;return o.forEach(function(n){i.async?r(n,a,u):n.apply(u,a),n._once&&e.off(t,n)}),e}},e}},{"./debounce":5,atoa:4}],7:[function(e,t){(function(n){"use strict";function r(e,t,n,r){return e.addEventListener(t,n,r)}function i(e,t,n){return e.attachEvent("on"+t,f(e,t,n))}function a(e,t,n,r){return e.removeEventListener(t,n,r)}function o(e,t,n){var r=c(e,t,n);return r?e.detachEvent("on"+t,r):void 0}function u(e,t,n){function r(){var e;return p.createEvent?(e=p.createEvent("Event"),e.initEvent(t,!0,!0)):p.createEventObject&&(e=p.createEventObject()),e}function i(){return new d(t,{detail:n})}var a=-1===v.indexOf(t)?i():r();e.dispatchEvent?e.dispatchEvent(a):e.fireEvent("on"+t,a)}function l(e,t,r){return function(t){var i=t||n.event;i.target=i.target||i.srcElement,i.preventDefault=i.preventDefault||function(){i.returnValue=!1},i.stopPropagation=i.stopPropagation||function(){i.cancelBubble=!0},i.which=i.which||i.keyCode,r.call(e,i)}}function f(e,t,n){var r=c(e,t,n)||l(e,t,n);return h.push({wrapper:r,element:e,type:t,fn:n}),r}function c(e,t,n){var r=s(e,t,n);if(r){var i=h[r].wrapper;return h.splice(r,1),i}}function s(e,t,n){var r,i;for(r=0;r<h.length;r++)if(i=h[r],i.element===e&&i.type===t&&i.fn===n)return r}var d=e("custom-event"),v=e("./eventmap"),p=n.document,m=r,g=a,h=[];n.addEventListener||(m=i,g=o),t.exports={add:m,remove:g,fabricate:u}}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{"./eventmap":8,"custom-event":9}],8:[function(e,t){(function(e){"use strict";var n=[],r="",i=/^on/;for(r in e)i.test(r)&&n.push(r.slice(2));t.exports=n}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}],9:[function(e,t){(function(e){function n(){try{var e=new r("cat",{detail:{foo:"bar"}});return"cat"===e.type&&"bar"===e.detail.foo}catch(t){}return!1}var r=e.CustomEvent;t.exports=n()?r:"function"==typeof document.createEvent?function(e,t){var n=document.createEvent("CustomEvent");return t?n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail):n.initCustomEvent(e,!1,!1,void 0),n}:function(e,t){var n=document.createEventObject();return n.type=e,t?(n.bubbles=Boolean(t.bubbles),n.cancelable=Boolean(t.cancelable),n.detail=t.detail):(n.bubbles=!1,n.cancelable=!1,n.detail=void 0),n}}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{}],10:[function(e,t){"use strict";function n(e){return{start:e.selectionStart,end:e.selectionEnd}}function r(e){function t(t,r){return n!==e&&(n?n.focus():e.blur()),{start:t,end:r}}var n=document.activeElement;n!==e&&e.focus();var r=document.selection.createRange(),o=r.getBookmark(),u=e.value,l=i(u),f=r.parentElement();if(null===f||!a(f))return t(0,0);r.text=l+r.text+l;var c=e.value;return e.value=u,r.moveToBookmark(o),r.select(),t(c.indexOf(l),c.lastIndexOf(l)-l.length)}function i(e){var t;do t="@@marker."+Math.random()*new Date;while(-1!==e.indexOf(t));return t}function a(e){return"INPUT"===e.tagName&&"text"===e.type||"TEXTAREA"===e.tagName}function o(e,t){e.selectionStart=l(e,t.start),e.selectionEnd=l(e,t.end)}function u(e,t){var n=e.createTextRange();"end"===t.start&&"end"===t.end?(n.collapse(!1),n.select()):(n.collapse(!0),n.moveEnd("character",l(e,t.end)),n.moveStart("character",l(e,t.start)),n.select())}function l(e,t){return"end"===t?e.value.length:t||0}function f(e,t){return 2===arguments.length&&s(e,t),c(e)}var c=n,s=o;document.selection&&document.selection.createRange&&(c=r,s=u),t.exports=f},{}],11:[function(e,t){var n,r="function"==typeof setImmediate;n=r?function(e){setImmediate(e)}:function(e){setTimeout(e,0)},t.exports=n},{}],12:[function(e,t){"use strict";function n(e,t){return 2===arguments.length&&(e.innerText=e.textContent=t),"string"==typeof e.innerText?e.innerText:e.textContent}t.exports=n},{}]},{},[3])(3)});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18), __webpack_require__(217).setImmediate))
 
 /***/ }),
 
-/***/ 1748:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function transitionColor(from, to, count) {
-  count = count + 1;
-  var int = parseInt(from, 16); // 100
-  var intTo = parseInt(to, 16); // 50
-  var list = []; // 5
-  var diff = int - intTo; // 50
-  var isNegative = diff < 0; // false
-  var one = diff / count; // 10
- 
-  list.push(from);
-  for (var i = 1; i <= count; i++) {
-    list.push(Math.floor(int - (one * i)).toString(16));
-  }
- 
-  return list
-}
- 
-function transition(from, to, count) {
-  count = count || 3;
-  var r = from.slice(0, 2), g = from.slice(2, 4), b = from.slice(4, 6);
-  var rt = to.slice(0, 2), gt = to.slice(2, 4), bt = to.slice(4, 6);
-  var allR = transitionColor(r, rt, count);
-  var allG = transitionColor(g, gt, count);
-  var allB = transitionColor(b, bt, count);
-  var list = [];
- 
-  allR.forEach(function(_, i) {
-    list.push('' + allR[i] + allG[i] + allB[i]);
-  });
- 
-  return list
-}
- 
-function generateGradientStepsCss(from, to, count) {
-  from = from.replace('#', '');
-  to = to.replace('#', '');
-  var values = transition(from, to, count);
-  var total = 100 / (count + 1);
-  var obj = [];
-  for (var i = 0; i <= count + 1; i++) {
-    obj.push({percentage: Math.floor(total * i), value: values[i]});
-  }
-  return obj.map(function(value) {
-    return '#' + value.value
-  })
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (inArr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  var arr = inArr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    var title = typeof inArr[index] === 'number' ? inArr[index] : inArr[index].title;
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001,
-      v: title
-    }
-  })
-}
-
-function genBars (_this, arr, h) {
-  var ref = _this.boundary;
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var totalWidth = (maxX) / (arr.length-1);
-  if (!_this.barWidth) {
-    _this.barWidth = totalWidth - (_this.padding || 5);
-  }
-  if (!_this.rounding) {
-    _this.rounding = 2;
-  }
-
-  var gradients = 0;
-  if (_this.gradient && _this.gradient.length > 1) {
-    gradients = generateGradientStepsCss(_this.gradient[0], _this.gradient[1], (arr.length-1));
-  }
-  var offsetX = (totalWidth - _this.barWidth) / 2;
-
-  return arr.map(function (item, index) {
-    return h('rect', {
-      attrs: {
-        id: ("bar-id-" + index),
-        fill: (gradients ? gradients[index] : (_this.gradient[0] ? _this.gradient[0] : '#000')),
-        x: item.x - offsetX,
-        y: 0,
-        width: _this.barWidth,
-        height: (maxY - item.y),
-        rx: _this.rounding,
-        ry: _this.rounding
-      }
-    }, [
-      h('animate', {
-        attrs: {
-          attributeName: 'height',
-          from: 0,
-          to: (maxY - item.y),
-          dur: ((_this.growDuration) + "s"),
-          fill: 'freeze'
-        }
-      }),
-      h('title', {}, [item.v])
-    ])
-  })
-}
-
-var Path = {
-  props: ['data', 'boundary', 'barWidth', 'id', 'gradient', 'growDuration', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var boundary = ref.boundary;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min } );
-    var bars = genBars(this, points, h);
-
-    return h('g', {
-      attrs: {
-        transform: ("scale(1,-1) translate(0,-" + (this.boundary.maxY) + ")")
-      }
-    }, bars)
-  }
-};
-
-var Bars$1 = {
-  name: 'Bars',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    barWidth: {
-      type: Number,
-      default: 8
-    },
-    growDuration: {
-      type: Number,
-      default: 0.5
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-bars-' + this._uid;
-
-    return h('svg', {
-      attrs: {
-        width: width || '100%',
-        height: height || '25%',
-        viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-      }
-    }, [
-      h(Path, {
-        props: props,
-        ref: 'path'
-      })
-    ])
-  }
-};
-
-Bars$1.install = function (Vue) {
-  Vue.component(Bars$1.name, Bars$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Bars$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Bars$1);
-
-
-/***/ }),
-
-/***/ 1749:
+/***/ 1503:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Trend chart" } },
-          [
-            _c("trend", {
-              attrs: {
-                data: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-                gradient: ["#6fa8dc", "#42b983", "#f27a09", "#ff5454"],
-                smooth: ""
-              }
-            })
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Vue-bar chart" } },
-          [
-            _c("bars", {
-              attrs: {
-                data: [
-                  1,
-                  2,
-                  5,
-                  9,
-                  5,
-                  10,
-                  3,
-                  5,
-                  8,
-                  12,
-                  1,
-                  8,
-                  2,
-                  9,
-                  10,
-                  2,
-                  9,
-                  4,
-                  5,
-                  6,
-                  7,
-                  3,
-                  2,
-                  3,
-                  5
-                ],
-                gradient: ["#ffbe88", "#ff93df"],
-                barWidth: 5,
-                growDuration: 1
-              }
-            })
-          ],
-          1
-        )
-      ],
-      1
-    )
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("card", { attrs: { title: "<i class='ti-tag'></i> Markup" } }, [
+            _c("div", { staticClass: "example example_markup" }, [
+              _c("div", { staticClass: "parent" }, [
+                _c("label", { staticClass: "m-t-b-15", attrs: { for: "ty" } }, [
+                  _vm._v("Enter a space-separated list of tags:")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "input" }, [
+                  _c("input", { attrs: { id: "ty", value: "hi" } })
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "m-t-b-15", attrs: { for: "custom" } },
+                [
+                  _vm._v(
+                    "Enter a list of tags using a custom\n                        delimiter: "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _c("input", { attrs: { id: "custom", value: "hello" } })
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "m-t-b-15", attrs: { for: "del" } }, [
+                _vm._v(
+                  "If you want, you can allow humans to remove tags by\n                        clicking on the\n                        crosses."
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _c("input", { attrs: { id: "del", value: "welcome" } })
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "m-t-b-15", attrs: { for: "def" } }, [
+                _vm._v("Default values are naturally welcome.")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _c("input", {
+                  attrs: { id: "def", value: "tagging as a service" }
+                })
+              ])
+            ])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-tag'></i> Categorizing tags" } },
+            [
+              _c("div", { staticClass: "example example_tagclass" }, [
+                _c(
+                  "label",
+                  { staticClass: "m-t-b-15", attrs: { for: "dup" } },
+                  [_vm._v("Duplicates are okay sometimes: ")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "input" }, [
+                  _c("input", {
+                    attrs: { id: "dup", value: "hello hello hello" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  { staticClass: "m-t-b-15", attrs: { for: "lng" } },
+                  [_vm._v("Really long lists behave reasonably well, too.")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "input" }, [
+                  _c("input", {
+                    attrs: {
+                      id: "lng",
+                      value:
+                        "Really long lists behave reasonably well, too. Especially if you take into account this is JavaScript!"
+                    }
+                  })
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -703,25 +321,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-751e8c25", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-55fb48a0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 481:
+/***/ 468:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1744)
+  __webpack_require__(1497)
+  __webpack_require__(1499)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1746)
+var __vue_script__ = __webpack_require__(1501)
 /* template */
-var __vue_template__ = __webpack_require__(1749)
+var __vue_template__ = __webpack_require__(1503)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -738,7 +357,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/trend_bar.vue"
+Component.options.__file = "resources/components/pages/tags_input.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -747,9 +366,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-751e8c25", Component.options)
+    hotAPI.createRecord("data-v-55fb48a0", Component.options)
   } else {
-    hotAPI.reload("data-v-751e8c25", Component.options)
+    hotAPI.reload("data-v-55fb48a0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -761,19 +380,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 524:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(525)
+  __webpack_require__(529)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(527)
+var __vue_script__ = __webpack_require__(531)
 /* template */
-var __vue_template__ = __webpack_require__(528)
+var __vue_template__ = __webpack_require__(532)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -813,13 +432,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(526);
+var content = __webpack_require__(530);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -840,7 +459,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 526:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -855,7 +474,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 527:
+/***/ 531:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -900,7 +519,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 528:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

@@ -1,22 +1,22 @@
 webpackJsonp([133],{
 
-/***/ 1713:
+/***/ 1969:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1714);
+var content = __webpack_require__(1970);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("21b941be", content, false, {});
+var update = __webpack_require__(26)("7abff5cb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue");
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./cssgram.min.css", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./cssgram.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1714:
+/***/ 1970:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,24 +35,145 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.trendvue svg path{\nstroke-width:2px;\n}\n.card svg{\n    height: 40vh;\n}\n", ""]);
+exports.push([module.i, "\n.aden{-webkit-filter:hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2);filter:hue-rotate(-20deg) contrast(.9) saturate(.85) brightness(1.2)\n}\n.aden:after{background:-webkit-linear-gradient(left,rgba(66,10,14,.2),transparent);background:linear-gradient(to right,rgba(66,10,14,.2),transparent);mix-blend-mode:darken\n}\n.inkwell{-webkit-filter:sepia(.3) contrast(1.1) brightness(1.1) grayscale(1);filter:sepia(.3) contrast(1.1) brightness(1.1) grayscale(1)\n}\n.perpetua:after{background:-webkit-linear-gradient(top,#005b9a,#e6c13d);background:linear-gradient(to bottom,#005b9a,#e6c13d);mix-blend-mode:soft-light;opacity:.5\n}\n.reyes{-webkit-filter:sepia(.22) brightness(1.1) contrast(.85) saturate(.75);filter:sepia(.22) brightness(1.1) contrast(.85) saturate(.75)\n}\n.reyes:after{background:#efcdad;mix-blend-mode:soft-light;opacity:.5\n}\n.gingham{-webkit-filter:brightness(1.05) hue-rotate(-10deg);filter:brightness(1.05) hue-rotate(-10deg)\n}\n.gingham:after{background:-webkit-linear-gradient(left,rgba(66,10,14,.2),transparent);background:linear-gradient(to right,rgba(66,10,14,.2),transparent);mix-blend-mode:darken\n}\n.toaster{-webkit-filter:contrast(1.5) brightness(.9);filter:contrast(1.5) brightness(.9)\n}\n.toaster:after{background:-webkit-radial-gradient(circle,#804e0f,#3b003b);background:radial-gradient(circle,#804e0f,#3b003b);mix-blend-mode:screen\n}\n.walden{-webkit-filter:brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6);filter:brightness(1.1) hue-rotate(-10deg) sepia(.3) saturate(1.6)\n}\n.walden:after{background:#04c;mix-blend-mode:screen;opacity:.3\n}\n.hudson{-webkit-filter:brightness(1.2) contrast(.9) saturate(1.1);filter:brightness(1.2) contrast(.9) saturate(1.1)\n}\n.hudson:after{background:-webkit-radial-gradient(circle,#a6b1ff 50%,#342134);background:radial-gradient(circle,#a6b1ff 50%,#342134);mix-blend-mode:multiply;opacity:.5\n}\n.earlybird{-webkit-filter:contrast(.9) sepia(.2);filter:contrast(.9) sepia(.2)\n}\n.earlybird:after{background:-webkit-radial-gradient(circle,#d0ba8e 20%,#360309 85%,#1d0210 100%);background:radial-gradient(circle,#d0ba8e 20%,#360309 85%,#1d0210 100%);mix-blend-mode:overlay\n}\n.mayfair{-webkit-filter:contrast(1.1) saturate(1.1);filter:contrast(1.1) saturate(1.1)\n}\n.mayfair:after{background:-webkit-radial-gradient(40% 40%,circle,rgba(255,255,255,.8),rgba(255,200,200,.6),#111 60%);background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.8),rgba(255,200,200,.6),#111 60%);mix-blend-mode:overlay;opacity:.4\n}\n.lofi{-webkit-filter:saturate(1.1) contrast(1.5);filter:saturate(1.1) contrast(1.5)\n}\n.lofi:after{background:-webkit-radial-gradient(circle,transparent 70%,#222 150%);background:radial-gradient(circle,transparent 70%,#222 150%);mix-blend-mode:multiply\n}\n._1977{-webkit-filter:contrast(1.1) brightness(1.1) saturate(1.3);filter:contrast(1.1) brightness(1.1) saturate(1.3)\n}\n._1977:after{background:rgba(243,106,188,.3);mix-blend-mode:screen\n}\n.brooklyn{-webkit-filter:contrast(.9) brightness(1.1);filter:contrast(.9) brightness(1.1)\n}\n.brooklyn:after{background:-webkit-radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);background:radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);mix-blend-mode:overlay\n}\n.xpro2{-webkit-filter:sepia(.3);filter:sepia(.3)\n}\n.xpro2:after{background:-webkit-radial-gradient(circle,#E6E7E0 40%,rgba(43,42,161,.6) 110%);background:radial-gradient(circle,#E6E7E0 40%,rgba(43,42,161,.6) 110%);mix-blend-mode:color-burn\n}\n._1977:after,._1977:before,.aden:after,.aden:before,.brooklyn:after,.brooklyn:before,.earlybird:after,.earlybird:before,.gingham:after,.gingham:before,.hudson:after,.hudson:before,.inkwell:after,.inkwell:before,.lofi:after,.lofi:before,.mayfair:after,.mayfair:before,.nashville:after,.nashville:before,.perpetua:after,.perpetua:before,.reyes:after,.reyes:before,.toaster:after,.toaster:before,.walden:after,.walden:before,.xpro2:after,.xpro2:before{content:'';display:block;height:100%;width:100%;top:0;left:0;position:absolute;pointer-events:none\n}\n._1977,.aden,.brooklyn,.earlybird,.gingham,.hudson,.inkwell,.lofi,.mayfair,.nashville,.perpetua,.reyes,.toaster,.walden,.xpro2{position:relative\n}\n._1977 img,.aden img,.brooklyn img,.earlybird img,.gingham img,.hudson img,.inkwell img,.lofi img,.mayfair img,.nashville img,.perpetua img,.reyes img,.toaster img,.walden img,.xpro2 img{width:100%;z-index:1\n}\n._1977:before,.aden:before,.brooklyn:before,.earlybird:before,.gingham:before,.hudson:before,.inkwell:before,.lofi:before,.mayfair:before,.nashville:before,.perpetua:before,.reyes:before,.toaster:before,.walden:before,.xpro2:before{z-index:2\n}\n._1977:after,.aden:after,.brooklyn:after,.earlybird:after,.gingham:after,.hudson:after,.inkwell:after,.lofi:after,.mayfair:after,.nashville:after,.perpetua:after,.reyes:after,.toaster:after,.walden:after,.xpro2:after{z-index:3\n}\n.nashville{-webkit-filter:sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2);filter:sepia(.2) contrast(1.2) brightness(1.05) saturate(1.2)\n}\n.nashville::after{background:rgba(0,70,150,.4);mix-blend-mode:lighten\n}\n.nashville::before{background:rgba(247,176,153,.56);mix-blend-mode:darken\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1715:
+/***/ 1971:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1972);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("6dce43f0", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./dropify.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./dropify.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1972:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\n    font-family : \"Open Sans\", sans-serif;\n}\n.dropify-wrapper.has-error {\n    border-color : #ff6666;\n}\n.dropify-errors-container.visible {\n    background-color : #ff6666;\n}\n.dropify-wrapper .dropify-message p.dropify-error {\n    color : #ff6666;\n}\n.p-30 {\n    padding : 30px;\n}\n.p-30 h5{\n    margin-top: 0.5rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1973:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1974);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("07cae908", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./image_filters.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-33a0fe58\",\"scoped\":false,\"hasInlineConfig\":true}!./image_filters.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1974:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.pagination figure {\n    max-width : 100px;\n}\n.pagination > li {\n    display : inline-block;\n    margin  : 6px;\n}\n@media screen and (max-width : 342px) {\n.pagination {\n        margin-left : 2%;\n        display: -webkit-box;\n}\n}\n.pagination > li:hover, .active_filter {\n    cursor              : pointer;\n    -webkit-transform   : scale(1.1);\n    -moz-transform      : scale(1.1);\n    -o-transform        : scale(1.1);\n    -ms-transform       : scale(1.1);\n    transform           : scale(1.1);\n    transition-duration : 0.3s;\n}\n.active_filter {\n    cursor              : pointer;\n    -webkit-transform   : scale(1.15);\n    -moz-transform      : scale(1.15);\n    -o-transform        : scale(1.15);\n    -ms-transform       : scale(1.15);\n    transform           : scale(1.15);\n    transition-duration : 0.3s;\n    box-shadow          : 0 0 10px #555;\n    -moz-box-shadow     : 0 0 10px #555;\n    -webkit-box-shadow  : 0 0 10px #555;\n    -o-box-shadow       : 0 0 10px #555;\n}\n.dropify-render img {\n    width : 100%;\n}\n.font-ccc {\n    color : #ccc;\n}\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\n    font-family : \"Open Sans\", sans-serif;\n}\n.dropify-wrapper.has-error {\n    border-color : #ff6666;\n}\n.dropify-errors-container.visible {\n    background-color : #ff6666;\n}\n.dropify-wrapper .dropify-message p.dropify-error {\n    color : #ff6666;\n}\n.pagination{\n    display: -webkit-inline-box;\n}\n.pagination figure{\n    margin-bottom: 0;\n}\n.lark,.toaster{\n    color:#ccc;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1975:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetrend__ = __webpack_require__(1716);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuebars__ = __webpack_require__(1717);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -85,616 +206,298 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuetrend__["a" /* default */]);
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vuebars__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "blank",
+    name: "image_filter",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
-        return {};
+        return {
+            isActive: 0,
+            filters: ['brannan', 'aden', 'brooklyn', 'clarendon', 'earlybird', 'gingham', 'hudson'],
+            secondfilters: ['inkwell', 'lark', 'lofi', 'mayfair', 'moon', 'nashville', 'perpetua'],
+            thirdfilters: ['rise', 'slumber', 'toaster', 'valencia', 'walden', 'willow', 'xpro2']
+        };
     },
 
-    methods: {}
+    mounted: function mounted() {
+        "use strict";
+    },
+    methods: {
+        activation: function activation() {
+            this.isActive = 1;
+            //            console.log(this.filter);
+        }
+    },
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1716:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function int (value) {
-  return parseInt(value, 10)
-}
-
-/**
- * https://en.wikipedia.org/wiki/Collinearity
- * x=(x1+x2)/2
- * y=(y1+y2)/2
- */
-function checkCollinear (p0, p1, p2) {
-  return (
-    int(p0.x + p2.x) === int(2 * p1.x) && int(p0.y + p2.y) === int(2 * p1.y)
-  )
-}
-
-function getDistance (p1, p2) {
-  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2))
-}
-
-function moveTo (to, from, radius) {
-  var vector = { x: to.x - from.x, y: to.y - from.y };
-  var length = Math.sqrt(vector.x * vector.x + vector.y * vector.y);
-  var unitVector = { x: vector.x / length, y: vector.y / length };
-
-  return {
-    x: from.x + unitVector.x * radius,
-    y: from.y + unitVector.y * radius
-  }
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (arr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  arr = arr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001
-    }
-  })
-}
-
-/**
- * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
- */
-function genPath (points, radius) {
-  var start = points.shift();
-
-  return (
-    "M" + (start.x) + " " + (start.y) +
-    points
-      .map(function (point, index) {
-        var next = points[index + 1];
-        var prev = points[index - 1] || start;
-        var isCollinear = next && checkCollinear(next, point, prev);
-
-        if (!next || isCollinear) {
-          return ("L" + (point.x) + " " + (point.y))
-        }
-
-        var threshold = Math.min(
-          getDistance(prev, point),
-          getDistance(next, point)
-        );
-        var isTooCloseForRadius = threshold / 2 < radius;
-        var radiusForPoint = isTooCloseForRadius ? threshold / 2 : radius;
-
-        var before = moveTo(prev, point, radiusForPoint);
-        var after = moveTo(next, point, radiusForPoint);
-
-        return ("L" + (before.x) + " " + (before.y) + "S" + (point.x) + " " + (point.y) + " " + (after.x) + " " + (after.y))
-      })
-      .join('')
-  )
-}
-
-var Path = {
-  props: ['smooth', 'data', 'boundary', 'radius', 'id', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var smooth = ref.smooth;
-    var boundary = ref.boundary;
-    var radius = ref.radius;
-    var id = ref.id;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min });
-    var d = genPath(points, smooth ? radius : 0);
-
-    return h('path', {
-      attrs: { d: d, fill: 'none', stroke: ("url(#" + id + ")") }
-    })
-  }
-};
-
-var Gradient = {
-  props: ['gradient', 'id'],
-
-  render: function render (h) {
-    var ref = this;
-    var gradient = ref.gradient;
-    var id = ref.id;
-    var len = gradient.length - 1 || 1;
-    var stops = gradient
-      .slice()
-      .reverse()
-      .map(function (color, index) { return h('stop', {
-          attrs: {
-            offset: index / len,
-            'stop-color': color
-          }
-        }); }
-      );
-
-    return h('defs', [
-      h(
-        'linearGradient',
-        {
-          attrs: {
-            id: id,
-            x1: 0,
-            y1: 0,
-            x2: 0,
-            y2: 1
-          }
-        },
-        stops
-      )
-    ])
-  }
-};
-
-var Trend$1 = {
-  name: 'Trend',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    autoDrawDuration: {
-      type: Number,
-      default: 2000
-    },
-    autoDrawEasing: {
-      type: String,
-      default: 'ease'
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    },
-    radius: {
-      type: Number,
-      default: 10
-    },
-    smooth: Boolean
-  },
-
-  watch: {
-    data: {
-      immediate: true,
-      handler: function handler (val) {
-        var this$1 = this;
-
-        this.$nextTick(function () {
-          if (this$1.$isServer || !this$1.$refs.path || !this$1.autoDraw) {
-            return
-          }
-
-          var path = this$1.$refs.path.$el;
-          var length = path.getTotalLength();
-
-          path.style.transition = 'none';
-          path.style.strokeDasharray = length + ' ' + length;
-          path.style.strokeDashoffset = Math.abs(
-            length - (this$1.lastLength || 0)
-          );
-          path.getBoundingClientRect();
-          path.style.transition = "stroke-dashoffset " + (this$1.autoDrawDuration) + "ms " + (this$1.autoDrawEasing);
-          path.style.strokeDashoffset = 0;
-          this$1.lastLength = length;
-        });
-      }
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-trend-' + this._uid;
-    return h(
-      'svg',
-      {
-        attrs: {
-          width: width || '100%',
-          height: height || '25%',
-          viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-        }
-      },
-      [
-        h(Gradient, { props: props }),
-        h(Path, {
-          props: props,
-          ref: 'path'
-        })
-      ]
-    )
-  }
-};
-
-Trend$1.install = function (Vue) {
-  Vue.component(Trend$1.name, Trend$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Trend$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Trend$1);
-
-
-/***/ }),
-
-/***/ 1717:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function transitionColor(from, to, count) {
-  count = count + 1;
-  var int = parseInt(from, 16); // 100
-  var intTo = parseInt(to, 16); // 50
-  var list = []; // 5
-  var diff = int - intTo; // 50
-  var isNegative = diff < 0; // false
-  var one = diff / count; // 10
- 
-  list.push(from);
-  for (var i = 1; i <= count; i++) {
-    list.push(Math.floor(int - (one * i)).toString(16));
-  }
- 
-  return list
-}
- 
-function transition(from, to, count) {
-  count = count || 3;
-  var r = from.slice(0, 2), g = from.slice(2, 4), b = from.slice(4, 6);
-  var rt = to.slice(0, 2), gt = to.slice(2, 4), bt = to.slice(4, 6);
-  var allR = transitionColor(r, rt, count);
-  var allG = transitionColor(g, gt, count);
-  var allB = transitionColor(b, bt, count);
-  var list = [];
- 
-  allR.forEach(function(_, i) {
-    list.push('' + allR[i] + allG[i] + allB[i]);
-  });
- 
-  return list
-}
- 
-function generateGradientStepsCss(from, to, count) {
-  from = from.replace('#', '');
-  to = to.replace('#', '');
-  var values = transition(from, to, count);
-  var total = 100 / (count + 1);
-  var obj = [];
-  for (var i = 0; i <= count + 1; i++) {
-    obj.push({percentage: Math.floor(total * i), value: values[i]});
-  }
-  return obj.map(function(value) {
-    return '#' + value.value
-  })
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (inArr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  var arr = inArr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    var title = typeof inArr[index] === 'number' ? inArr[index] : inArr[index].title;
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001,
-      v: title
-    }
-  })
-}
-
-function genBars (_this, arr, h) {
-  var ref = _this.boundary;
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var totalWidth = (maxX) / (arr.length-1);
-  if (!_this.barWidth) {
-    _this.barWidth = totalWidth - (_this.padding || 5);
-  }
-  if (!_this.rounding) {
-    _this.rounding = 2;
-  }
-
-  var gradients = 0;
-  if (_this.gradient && _this.gradient.length > 1) {
-    gradients = generateGradientStepsCss(_this.gradient[0], _this.gradient[1], (arr.length-1));
-  }
-  var offsetX = (totalWidth - _this.barWidth) / 2;
-
-  return arr.map(function (item, index) {
-    return h('rect', {
-      attrs: {
-        id: ("bar-id-" + index),
-        fill: (gradients ? gradients[index] : (_this.gradient[0] ? _this.gradient[0] : '#000')),
-        x: item.x - offsetX,
-        y: 0,
-        width: _this.barWidth,
-        height: (maxY - item.y),
-        rx: _this.rounding,
-        ry: _this.rounding
-      }
-    }, [
-      h('animate', {
-        attrs: {
-          attributeName: 'height',
-          from: 0,
-          to: (maxY - item.y),
-          dur: ((_this.growDuration) + "s"),
-          fill: 'freeze'
-        }
-      }),
-      h('title', {}, [item.v])
-    ])
-  })
-}
-
-var Path = {
-  props: ['data', 'boundary', 'barWidth', 'id', 'gradient', 'growDuration', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var boundary = ref.boundary;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min } );
-    var bars = genBars(this, points, h);
-
-    return h('g', {
-      attrs: {
-        transform: ("scale(1,-1) translate(0,-" + (this.boundary.maxY) + ")")
-      }
-    }, bars)
-  }
-};
-
-var Bars$1 = {
-  name: 'Bars',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    barWidth: {
-      type: Number,
-      default: 8
-    },
-    growDuration: {
-      type: Number,
-      default: 0.5
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-bars-' + this._uid;
-
-    return h('svg', {
-      attrs: {
-        width: width || '100%',
-        height: height || '25%',
-        viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-      }
-    }, [
-      h(Path, {
-        props: props,
-        ref: 'path'
-      })
-    ])
-  }
-};
-
-Bars$1.install = function (Vue) {
-  Vue.component(Bars$1.name, Bars$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Bars$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Bars$1);
-
-
-/***/ }),
-
-/***/ 1718:
+/***/ 1976:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Trend chart" } },
-          [
-            _c("trend", {
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-lg-12" },
+        [
+          _c(
+            "card",
+            {
               attrs: {
-                data: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-                gradient: ["#6fa8dc", "#42b983", "#f27a09", "#ff5454"],
-                smooth: ""
+                title: "<i class='ti-image'></i> Image Filters (Aden - Hudson)"
               }
-            })
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Vue-bar chart" } },
-          [
-            _c("bars", {
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-12" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "col-lg-6 col-md-8 mx-auto col-xs-12 text-center"
+                    },
+                    [
+                      _c(
+                        "figure",
+                        {
+                          class: _vm.filters[_vm.isActive],
+                          attrs: { id: "imgfigure1" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "temp_path1 img-fluid",
+                            attrs: {
+                              src: __webpack_require__(654),
+                              alt: "hudson image"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-12 text-center" }, [
+                    _c(
+                      "ul",
+                      { staticClass: "pagination mx-auto" },
+                      _vm._l(_vm.filters, function(filter, index) {
+                        return _c(
+                          "li",
+                          {
+                            class: { active_filter: _vm.isActive == index },
+                            on: {
+                              click: function($event) {
+                                _vm.isActive = index
+                              }
+                            }
+                          },
+                          [
+                            _c(
+                              "figure",
+                              { staticClass: "text-center", class: filter },
+                              [
+                                _c("img", {
+                                  staticClass: "temp_path1 img-fluid",
+                                  attrs: {
+                                    src: __webpack_require__(654),
+                                    height: "75",
+                                    alt: "hudson image"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c("span", [_vm._v(_vm._s(filter))])
+                              ]
+                            )
+                          ]
+                        )
+                      }),
+                      0
+                    )
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            {
               attrs: {
-                data: [
-                  1,
-                  2,
-                  5,
-                  9,
-                  5,
-                  10,
-                  3,
-                  5,
-                  8,
-                  12,
-                  1,
-                  8,
-                  2,
-                  9,
-                  10,
-                  2,
-                  9,
-                  4,
-                  5,
-                  6,
-                  7,
-                  3,
-                  2,
-                  3,
-                  5
-                ],
-                gradient: ["#ffbe88", "#ff93df"],
-                barWidth: 5,
-                growDuration: 1
+                title:
+                  " <i class='ti-image'></i> Image Filters (Inkwell - Perpetua)"
               }
-            })
-          ],
-          1
-        )
-      ],
-      1
-    )
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-12" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-lg-6  col-md-8 mx-auto text-center" },
+                    [
+                      _c(
+                        "figure",
+                        {
+                          class: _vm.secondfilters[_vm.isActive],
+                          attrs: { id: "imgfigure2" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "temp_path2 img-fluid",
+                            attrs: {
+                              src: __webpack_require__(653),
+                              alt: "inkwell image"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "ul",
+                        { staticClass: "pagination" },
+                        _vm._l(_vm.secondfilters, function(
+                          secondfilter,
+                          index
+                        ) {
+                          return _c(
+                            "li",
+                            {
+                              class: { active_filter: _vm.isActive == index },
+                              on: {
+                                click: function($event) {
+                                  _vm.isActive = index
+                                }
+                              }
+                            },
+                            [
+                              _c(
+                                "figure",
+                                {
+                                  staticClass: "text-center",
+                                  class: secondfilter
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "temp_path2 img-fluid",
+                                    attrs: {
+                                      src: __webpack_require__(653),
+                                      alt: "inkwell image"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", [_vm._v(_vm._s(secondfilter))])
+                                ]
+                              )
+                            ]
+                          )
+                        }),
+                        0
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class='ti-image'></i> Image Filters (Rise - Xpro2)"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-12 col-xs-12" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-lg-6  col-md-8 mx-auto text-center" },
+                    [
+                      _c(
+                        "figure",
+                        {
+                          class: _vm.thirdfilters[_vm.isActive],
+                          attrs: { id: "imgfigure3" }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "temp_path3 img-fluid",
+                            attrs: {
+                              src: __webpack_require__(651),
+                              alt: "rise image"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-md-12 col-xs-12 text-center" },
+                    [
+                      _c(
+                        "ul",
+                        { staticClass: "pagination" },
+                        _vm._l(_vm.thirdfilters, function(thirdfilter, index) {
+                          return _c(
+                            "li",
+                            {
+                              class: { active_filter: _vm.isActive == index },
+                              on: {
+                                click: function($event) {
+                                  _vm.isActive = index
+                                }
+                              }
+                            },
+                            [
+                              _c(
+                                "figure",
+                                {
+                                  staticClass: "text-center",
+                                  class: thirdfilter
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass: "temp_path3 img-fluid",
+                                    attrs: {
+                                      src: __webpack_require__(651),
+                                      height: "75",
+                                      alt: "rise image"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("span", [_vm._v(_vm._s(thirdfilter))])
+                                ]
+                              )
+                            ]
+                          )
+                        }),
+                        0
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -703,25 +506,27 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-751e8c25", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-33a0fe58", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 481:
+/***/ 489:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1713)
+  __webpack_require__(1969)
+  __webpack_require__(1971)
+  __webpack_require__(1973)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1715)
+var __vue_script__ = __webpack_require__(1975)
 /* template */
-var __vue_template__ = __webpack_require__(1718)
+var __vue_template__ = __webpack_require__(1976)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -738,7 +543,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/trend_bar.vue"
+Component.options.__file = "resources/components/pages/image_filter.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -747,9 +552,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-751e8c25", Component.options)
+    hotAPI.createRecord("data-v-33a0fe58", Component.options)
   } else {
-    hotAPI.reload("data-v-751e8c25", Component.options)
+    hotAPI.reload("data-v-33a0fe58", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -761,19 +566,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 517:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(518)
+  __webpack_require__(527)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(520)
+var __vue_script__ = __webpack_require__(529)
 /* template */
-var __vue_template__ = __webpack_require__(521)
+var __vue_template__ = __webpack_require__(530)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -813,13 +618,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 518:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(519);
+var content = __webpack_require__(528);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -840,7 +645,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 519:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -855,7 +660,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 520:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -900,7 +705,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 521:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -959,6 +764,27 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
+
+/***/ }),
+
+/***/ 651:
+/***/ (function(module, exports) {
+
+module.exports = "/images/5.jpg?5ad19bfbbd192c4ca5acea1f6d146bd2";
+
+/***/ }),
+
+/***/ 653:
+/***/ (function(module, exports) {
+
+module.exports = "/images/15.jpg?a176a96269cb19d1b1605704e10c2526";
+
+/***/ }),
+
+/***/ 654:
+/***/ (function(module, exports) {
+
+module.exports = "/images/16.jpg?d78ebf13dc5e6fac474dc1074782e557";
 
 /***/ })
 

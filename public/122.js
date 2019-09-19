@@ -1,22 +1,22 @@
 webpackJsonp([122],{
 
-/***/ 1724:
+/***/ 1416:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1725);
+var content = __webpack_require__(1417);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("aecf985e", content, false, {});
+var update = __webpack_require__(26)("45664c5d", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./hover-min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./hover-min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1725:
+/***/ 1417:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,25 +35,614 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.demo {\n    height : 300px;\n    width  : 100%;\n}\n.demo > div:nth-child(2) {\n    position : relative;\n    width    : 350px;\n    margin   : auto\n}\n.demo .demo_hours {\n    position : absolute;\n    left     : 10px;\n    top      : 10px;\n}\n.demo .demo_minutes {\n    position : absolute;\n    left     : 50px;\n    top      : 50px;\n}\n.demo .demo_seconds {\n    position : absolute;\n    left     : 90px;\n    top      : 90px;\n}\n.m-b-10 {\n    margin-bottom : 10px;\n}\n.jqstooltip{\n    z-index: 99 !important;\n}\n.exact-size div,.colors div{\n    display: inline-block;\n}\n.custom_small{\n    margin-top: -20px;\n}", ""]);
+exports.push([module.i, "/*!\r\n * Hover.css (http://ianlunn.github.io/Hover/)\r\n * Version: 2.3.2\r\n * Author: Ian Lunn @IanLunn\r\n * Author URL: http://ianlunn.co.uk/\r\n * Github: https://github.com/IanLunn/Hover\r\n\r\n * Hover.css Copyright Ian Lunn 2017. Generated with Sass.\r\n */\n.hvr-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-grow:active,.hvr-grow:focus,.hvr-grow:hover{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n.hvr-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-shrink:active,.hvr-shrink:focus,.hvr-shrink:hover{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n@-webkit-keyframes hvr-pulse{\n25%{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n75%{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n@keyframes hvr-pulse{\n25%{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n75%{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n.hvr-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse:active,.hvr-pulse:focus,.hvr-pulse:hover{-webkit-animation-name:hvr-pulse;animation-name:hvr-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-pulse-grow{\nto{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n}\n@keyframes hvr-pulse-grow{\nto{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n}\n.hvr-pulse-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse-grow:active,.hvr-pulse-grow:focus,.hvr-pulse-grow:hover{-webkit-animation-name:hvr-pulse-grow;animation-name:hvr-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-pulse-shrink{\nto{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n@keyframes hvr-pulse-shrink{\nto{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n.hvr-pulse-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse-shrink:active,.hvr-pulse-shrink:focus,.hvr-pulse-shrink:hover{-webkit-animation-name:hvr-pulse-shrink;animation-name:hvr-pulse-shrink;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-push{\n50%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n100%{-webkit-transform:scale(1);transform:scale(1)\n}\n}\n@keyframes hvr-push{\n50%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n100%{-webkit-transform:scale(1);transform:scale(1)\n}\n}\n.hvr-push{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-push:active,.hvr-push:focus,.hvr-push:hover{-webkit-animation-name:hvr-push;animation-name:hvr-push;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-pop{\n50%{-webkit-transform:scale(1.2);transform:scale(1.2)\n}\n}\n@keyframes hvr-pop{\n50%{-webkit-transform:scale(1.2);transform:scale(1.2)\n}\n}\n.hvr-pop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pop:active,.hvr-pop:focus,.hvr-pop:hover{-webkit-animation-name:hvr-pop;animation-name:hvr-pop;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-bounce-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-in:active,.hvr-bounce-in:focus,.hvr-bounce-in:hover{-webkit-transform:scale(1.2);transform:scale(1.2);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-bounce-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-out:active,.hvr-bounce-out:focus,.hvr-bounce-out:hover{-webkit-transform:scale(0.8);transform:scale(0.8);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-rotate:active,.hvr-rotate:focus,.hvr-rotate:hover{-webkit-transform:rotate(4deg);transform:rotate(4deg)\n}\n.hvr-grow-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-grow-rotate:active,.hvr-grow-rotate:focus,.hvr-grow-rotate:hover{-webkit-transform:scale(1.1) rotate(4deg);transform:scale(1.1) rotate(4deg)\n}\n.hvr-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-float:active,.hvr-float:focus,.hvr-float:hover{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n.hvr-sink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sink:active,.hvr-sink:focus,.hvr-sink:hover{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n@-webkit-keyframes hvr-bob{\n0%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n50%{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@keyframes hvr-bob{\n0%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n50%{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@-webkit-keyframes hvr-bob-float{\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@keyframes hvr-bob-float{\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n.hvr-bob{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-bob:active,.hvr-bob:focus,.hvr-bob:hover{-webkit-animation-name:hvr-bob-float,hvr-bob;animation-name:hvr-bob-float,hvr-bob;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-hang{\n0%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n50%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@keyframes hvr-hang{\n0%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n50%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@-webkit-keyframes hvr-hang-sink{\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@keyframes hvr-hang-sink{\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n.hvr-hang{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-hang:active,.hvr-hang:focus,.hvr-hang:hover{-webkit-animation-name:hvr-hang-sink,hvr-hang;animation-name:hvr-hang-sink,hvr-hang;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n.hvr-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-skew:active,.hvr-skew:focus,.hvr-skew:hover{-webkit-transform:skew(-10deg);transform:skew(-10deg)\n}\n.hvr-skew-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-skew-forward:active,.hvr-skew-forward:focus,.hvr-skew-forward:hover{-webkit-transform:skew(-10deg);transform:skew(-10deg)\n}\n.hvr-skew-backward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-skew-backward:active,.hvr-skew-backward:focus,.hvr-skew-backward:hover{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n@-webkit-keyframes hvr-wobble-vertical{\n16.65%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n33.3%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n@keyframes hvr-wobble-vertical{\n16.65%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n33.3%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n.hvr-wobble-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-vertical:active,.hvr-wobble-vertical:focus,.hvr-wobble-vertical:hover{-webkit-animation-name:hvr-wobble-vertical;animation-name:hvr-wobble-vertical;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-horizontal{\n16.65%{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n33.3%{-webkit-transform:translateX(-6px);transform:translateX(-6px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n@keyframes hvr-wobble-horizontal{\n16.65%{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n33.3%{-webkit-transform:translateX(-6px);transform:translateX(-6px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n.hvr-wobble-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-horizontal:active,.hvr-wobble-horizontal:focus,.hvr-wobble-horizontal:hover{-webkit-animation-name:hvr-wobble-horizontal;animation-name:hvr-wobble-horizontal;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-to-bottom-right{\n16.65%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)\n}\n33.3%{-webkit-transform:translate(-6px,-6px);transform:translate(-6px,-6px)\n}\n49.95%{-webkit-transform:translate(4px,4px);transform:translate(4px,4px)\n}\n66.6%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)\n}\n83.25%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n@keyframes hvr-wobble-to-bottom-right{\n16.65%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)\n}\n33.3%{-webkit-transform:translate(-6px,-6px);transform:translate(-6px,-6px)\n}\n49.95%{-webkit-transform:translate(4px,4px);transform:translate(4px,4px)\n}\n66.6%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)\n}\n83.25%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n.hvr-wobble-to-bottom-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-to-bottom-right:active,.hvr-wobble-to-bottom-right:focus,.hvr-wobble-to-bottom-right:hover{-webkit-animation-name:hvr-wobble-to-bottom-right;animation-name:hvr-wobble-to-bottom-right;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-to-top-right{\n16.65%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)\n}\n33.3%{-webkit-transform:translate(-6px,6px);transform:translate(-6px,6px)\n}\n49.95%{-webkit-transform:translate(4px,-4px);transform:translate(4px,-4px)\n}\n66.6%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)\n}\n83.25%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n@keyframes hvr-wobble-to-top-right{\n16.65%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)\n}\n33.3%{-webkit-transform:translate(-6px,6px);transform:translate(-6px,6px)\n}\n49.95%{-webkit-transform:translate(4px,-4px);transform:translate(4px,-4px)\n}\n66.6%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)\n}\n83.25%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n.hvr-wobble-to-top-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-to-top-right:active,.hvr-wobble-to-top-right:focus,.hvr-wobble-to-top-right:hover{-webkit-animation-name:hvr-wobble-to-top-right;animation-name:hvr-wobble-to-top-right;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-top{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-top{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-wobble-top:active,.hvr-wobble-top:focus,.hvr-wobble-top:hover{-webkit-animation-name:hvr-wobble-top;animation-name:hvr-wobble-top;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-bottom{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-bottom{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transform-origin:100% 0;transform-origin:100% 0\n}\n.hvr-wobble-bottom:active,.hvr-wobble-bottom:focus,.hvr-wobble-bottom:hover{-webkit-animation-name:hvr-wobble-bottom;animation-name:hvr-wobble-bottom;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-skew{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-skew{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-skew:active,.hvr-wobble-skew:focus,.hvr-wobble-skew:hover{-webkit-animation-name:hvr-wobble-skew;animation-name:hvr-wobble-skew;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n@keyframes hvr-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n.hvr-buzz{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-buzz:active,.hvr-buzz:focus,.hvr-buzz:hover{-webkit-animation-name:hvr-buzz;animation-name:hvr-buzz;-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n@keyframes hvr-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n.hvr-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-buzz-out:active,.hvr-buzz-out:focus,.hvr-buzz-out:hover{-webkit-animation-name:hvr-buzz-out;animation-name:hvr-buzz-out;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-forward:active,.hvr-forward:focus,.hvr-forward:hover{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n.hvr-backward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-backward:active,.hvr-backward:focus,.hvr-backward:hover{-webkit-transform:translateX(-8px);transform:translateX(-8px)\n}\n.hvr-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);overflow:hidden;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:color,background-color;transition-property:color,background-color\n}\n.hvr-fade:active,.hvr-fade:focus,.hvr-fade:hover{background-color:#2098D1;color:#fff\n}\n@-webkit-keyframes hvr-back-pulse{\n50%{background-color:rgba(32,152,209,.75)\n}\n}\n@keyframes hvr-back-pulse{\n50%{background-color:rgba(32,152,209,.75)\n}\n}\n.hvr-back-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);overflow:hidden;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:color,background-color;transition-property:color,background-color\n}\n.hvr-back-pulse:active,.hvr-back-pulse:focus,.hvr-back-pulse:hover{-webkit-animation-name:hvr-back-pulse;animation-name:hvr-back-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-delay:.5s;animation-delay:.5s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;background-color:#2098D1;background-color:#2098d1;color:#fff\n}\n.hvr-sweep-to-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-right:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-right:active,.hvr-sweep-to-right:focus,.hvr-sweep-to-right:hover{color:#fff\n}\n.hvr-sweep-to-right:active:before,.hvr-sweep-to-right:focus:before,.hvr-sweep-to-right:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-sweep-to-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-left:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-left:active,.hvr-sweep-to-left:focus,.hvr-sweep-to-left:hover{color:#fff\n}\n.hvr-sweep-to-left:active:before,.hvr-sweep-to-left:focus:before,.hvr-sweep-to-left:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-sweep-to-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-bottom:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-bottom:active,.hvr-sweep-to-bottom:focus,.hvr-sweep-to-bottom:hover{color:#fff\n}\n.hvr-sweep-to-bottom:active:before,.hvr-sweep-to-bottom:focus:before,.hvr-sweep-to-bottom:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-sweep-to-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-top:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-top:active,.hvr-sweep-to-top:focus,.hvr-sweep-to-top:hover{color:#fff\n}\n.hvr-sweep-to-top:active:before,.hvr-sweep-to-top:focus:before,.hvr-sweep-to-top:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-bounce-to-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-right:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-right:active,.hvr-bounce-to-right:focus,.hvr-bounce-to-right:hover{color:#fff\n}\n.hvr-bounce-to-right:active:before,.hvr-bounce-to-right:focus:before,.hvr-bounce-to-right:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-left:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-left:active,.hvr-bounce-to-left:focus,.hvr-bounce-to-left:hover{color:#fff\n}\n.hvr-bounce-to-left:active:before,.hvr-bounce-to-left:focus:before,.hvr-bounce-to-left:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-bottom:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-bottom:active,.hvr-bounce-to-bottom:focus,.hvr-bounce-to-bottom:hover{color:#fff\n}\n.hvr-bounce-to-bottom:active:before,.hvr-bounce-to-bottom:focus:before,.hvr-bounce-to-bottom:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-top:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-top:active,.hvr-bounce-to-top:focus,.hvr-bounce-to-top:hover{color:#fff\n}\n.hvr-bounce-to-top:active:before,.hvr-bounce-to-top:focus:before,.hvr-bounce-to-top:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-radial-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-radial-out:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;border-radius:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-radial-out:active,.hvr-radial-out:focus,.hvr-radial-out:hover{color:#fff\n}\n.hvr-radial-out:active:before,.hvr-radial-out:focus:before,.hvr-radial-out:hover:before{-webkit-transform:scale(2);transform:scale(2)\n}\n.hvr-radial-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-radial-in:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#e1e1e1;border-radius:100%;-webkit-transform:scale(2);transform:scale(2);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-radial-in:active,.hvr-radial-in:focus,.hvr-radial-in:hover{color:#fff\n}\n.hvr-radial-in:active:before,.hvr-radial-in:focus:before,.hvr-radial-in:hover:before{-webkit-transform:scale(0);transform:scale(0)\n}\n.hvr-rectangle-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-rectangle-in:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#e1e1e1;-webkit-transform:scale(1);transform:scale(1);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-rectangle-in:active,.hvr-rectangle-in:focus,.hvr-rectangle-in:hover{color:#fff\n}\n.hvr-rectangle-in:active:before,.hvr-rectangle-in:focus:before,.hvr-rectangle-in:hover:before{-webkit-transform:scale(0);transform:scale(0)\n}\n.hvr-rectangle-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-rectangle-out:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scale(0);transform:scale(0);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-rectangle-out:active,.hvr-rectangle-out:focus,.hvr-rectangle-out:hover{color:#fff\n}\n.hvr-rectangle-out:active:before,.hvr-rectangle-out:focus:before,.hvr-rectangle-out:hover:before{-webkit-transform:scale(1);transform:scale(1)\n}\n.hvr-shutter-in-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-in-horizontal:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#e1e1e1;-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-in-horizontal:active,.hvr-shutter-in-horizontal:focus,.hvr-shutter-in-horizontal:hover{color:#fff\n}\n.hvr-shutter-in-horizontal:active:before,.hvr-shutter-in-horizontal:focus:before,.hvr-shutter-in-horizontal:hover:before{-webkit-transform:scaleX(0);transform:scaleX(0)\n}\n.hvr-shutter-out-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-out-horizontal:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:#fff\n}\n.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-shutter-in-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-in-vertical:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#e1e1e1;-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-in-vertical:active,.hvr-shutter-in-vertical:focus,.hvr-shutter-in-vertical:hover{color:#fff\n}\n.hvr-shutter-in-vertical:active:before,.hvr-shutter-in-vertical:focus:before,.hvr-shutter-in-vertical:hover:before{-webkit-transform:scaleY(0);transform:scaleY(0)\n}\n.hvr-shutter-out-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-out-vertical:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-out-vertical:active,.hvr-shutter-out-vertical:focus,.hvr-shutter-out-vertical:hover{color:#fff\n}\n.hvr-shutter-out-vertical:active:before,.hvr-shutter-out-vertical:focus:before,.hvr-shutter-out-vertical:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-border-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow;box-shadow:inset 0 0 0 4px #e1e1e1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-border-fade:active,.hvr-border-fade:focus,.hvr-border-fade:hover{box-shadow:inset 0 0 0 4px #2098D1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-hollow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:background;transition-property:background;box-shadow:inset 0 0 0 4px #e1e1e1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-hollow:active,.hvr-hollow:focus,.hvr-hollow:hover{background:0 0\n}\n.hvr-trim{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-trim:before{content:'';position:absolute;border:#fff solid 4px;top:4px;left:4px;right:4px;bottom:4px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:opacity;transition-property:opacity\n}\n.hvr-trim:active:before,.hvr-trim:focus:before,.hvr-trim:hover:before{opacity:1\n}\n@-webkit-keyframes hvr-ripple-out{\n100%{top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0\n}\n}\n@keyframes hvr-ripple-out{\n100%{top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0\n}\n}\n.hvr-ripple-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-ripple-out:before{content:'';position:absolute;border:#e1e1e1 solid 6px;top:0;right:0;bottom:0;left:0;-webkit-animation-duration:1s;animation-duration:1s\n}\n.hvr-ripple-out:active:before,.hvr-ripple-out:focus:before,.hvr-ripple-out:hover:before{-webkit-animation-name:hvr-ripple-out;animation-name:hvr-ripple-out\n}\n@-webkit-keyframes hvr-ripple-in{\n100%{top:0;right:0;bottom:0;left:0;opacity:1\n}\n}\n@keyframes hvr-ripple-in{\n100%{top:0;right:0;bottom:0;left:0;opacity:1\n}\n}\n.hvr-ripple-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-ripple-in:before{content:'';position:absolute;border:#e1e1e1 solid 4px;top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0;-webkit-animation-duration:1s;animation-duration:1s\n}\n.hvr-ripple-in:active:before,.hvr-ripple-in:focus:before,.hvr-ripple-in:hover:before{-webkit-animation-name:hvr-ripple-in;animation-name:hvr-ripple-in\n}\n.hvr-outline-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-outline-out:before{content:'';position:absolute;border:#e1e1e1 solid 4px;top:0;right:0;bottom:0;left:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:top,right,bottom,left;transition-property:top,right,bottom,left\n}\n.hvr-outline-out:active:before,.hvr-outline-out:focus:before,.hvr-outline-out:hover:before{top:-8px;right:-8px;bottom:-8px;left:-8px\n}\n.hvr-outline-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-outline-in:before{pointer-events:none;content:'';position:absolute;border:#e1e1e1 solid 4px;top:-16px;right:-16px;bottom:-16px;left:-16px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:top,right,bottom,left;transition-property:top,right,bottom,left\n}\n.hvr-outline-in:active:before,.hvr-outline-in:focus:before,.hvr-outline-in:hover:before{top:-8px;right:-8px;bottom:-8px;left:-8px;opacity:1\n}\n.hvr-round-corners{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:border-radius;transition-property:border-radius\n}\n.hvr-round-corners:active,.hvr-round-corners:focus,.hvr-round-corners:hover{border-radius:1em\n}\n.hvr-underline-from-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-left:before{content:\"\";position:absolute;z-index:-1;left:0;right:100%;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:right;transition-property:right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-left:active:before,.hvr-underline-from-left:focus:before,.hvr-underline-from-left:hover:before{right:0\n}\n.hvr-underline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-center:before{content:\"\";position:absolute;z-index:-1;left:51%;right:51%;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-center:active:before,.hvr-underline-from-center:focus:before,.hvr-underline-from-center:hover:before{left:0;right:0\n}\n.hvr-underline-from-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-right:before{content:\"\";position:absolute;z-index:-1;left:100%;right:0;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:left;transition-property:left;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-right:active:before,.hvr-underline-from-right:focus:before,.hvr-underline-from-right:hover:before{left:0\n}\n.hvr-overline-from-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-left:before{content:\"\";position:absolute;z-index:-1;left:0;right:100%;top:0;background:#2098D1;height:4px;-webkit-transition-property:right;transition-property:right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-left:active:before,.hvr-overline-from-left:focus:before,.hvr-overline-from-left:hover:before{right:0\n}\n.hvr-overline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-center:before{content:\"\";position:absolute;z-index:-1;left:51%;right:51%;top:0;background:#2098D1;height:4px;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-center:active:before,.hvr-overline-from-center:focus:before,.hvr-overline-from-center:hover:before{left:0;right:0\n}\n.hvr-overline-from-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-right:before{content:\"\";position:absolute;z-index:-1;left:100%;right:0;top:0;background:#2098D1;height:4px;-webkit-transition-property:left;transition-property:left;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-right:active:before,.hvr-overline-from-right:focus:before,.hvr-overline-from-right:hover:before{left:0\n}\n.hvr-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;top:0;bottom:0;border-color:#2098D1;border-style:solid;border-width:0;-webkit-transition-property:border-width;transition-property:border-width;-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-reveal:active:before,.hvr-reveal:focus:before,.hvr-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0);border-width:4px\n}\n.hvr-underline-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;bottom:0;background:#2098D1;height:4px;-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-reveal:active:before,.hvr-underline-reveal:focus:before,.hvr-underline-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0)\n}\n.hvr-overline-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;top:0;background:#2098D1;height:4px;-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-reveal:active:before,.hvr-overline-reveal:focus:before,.hvr-overline-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0)\n}\n.hvr-glow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-glow:active,.hvr-glow:focus,.hvr-glow:hover{box-shadow:0 0 8px rgba(0,0,0,.6)\n}\n.hvr-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-shadow:active,.hvr-shadow:focus,.hvr-shadow:hover{box-shadow:0 10px 10px -10px rgba(0,0,0,.5)\n}\n.hvr-grow-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow,transform;transition-property:box-shadow,transform\n}\n.hvr-grow-shadow:active,.hvr-grow-shadow:focus,.hvr-grow-shadow:hover{box-shadow:0 10px 10px -10px rgba(0,0,0,.5);-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n.hvr-box-shadow-outset{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-box-shadow-outset:active,.hvr-box-shadow-outset:focus,.hvr-box-shadow-outset:hover{box-shadow:2px 2px 2px rgba(0,0,0,.6)\n}\n.hvr-box-shadow-inset{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow;box-shadow:inset 0 0 0 rgba(0,0,0,.6),0 0 1px rgba(0,0,0,0)\n}\n.hvr-box-shadow-inset:active,.hvr-box-shadow-inset:focus,.hvr-box-shadow-inset:hover{box-shadow:inset 2px 2px 2px rgba(0,0,0,.6),0 0 1px rgba(0,0,0,0)\n}\n.hvr-float-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-float-shadow:before{pointer-events:none;position:absolute;z-index:-1;content:'';top:100%;left:5%;height:10px;width:90%;opacity:0;background:-webkit-radial-gradient(center,ellipse,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform,opacity;transition-property:transform,opacity\n}\n.hvr-float-shadow:active,.hvr-float-shadow:focus,.hvr-float-shadow:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n.hvr-float-shadow:active:before,.hvr-float-shadow:focus:before,.hvr-float-shadow:hover:before{opacity:1;-webkit-transform:translateY(5px);transform:translateY(5px)\n}\n.hvr-shadow-radial{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-shadow-radial:after,.hvr-shadow-radial:before{pointer-events:none;position:absolute;content:'';left:0;width:100%;box-sizing:border-box;height:5px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:opacity;transition-property:opacity\n}\n.hvr-shadow-radial:before{bottom:100%;background:-webkit-radial-gradient(50% 150%,ellipse,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at 50% 150%,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%)\n}\n.hvr-shadow-radial:after{top:100%;background:-webkit-radial-gradient(50% -50%,ellipse,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at 50% -50%,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%)\n}\n.hvr-shadow-radial:active:after,.hvr-shadow-radial:active:before,.hvr-shadow-radial:focus:after,.hvr-shadow-radial:focus:before,.hvr-shadow-radial:hover:after,.hvr-shadow-radial:hover:before{opacity:1\n}\n.hvr-bubble-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-top:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;left:calc(50% - 10px);top:0;border-width:0 10px 10px;border-color:transparent transparent #e1e1e1\n}\n.hvr-bubble-top:active:before,.hvr-bubble-top:focus:before,.hvr-bubble-top:hover:before{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-right:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;top:calc(50% - 10px);right:0;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #e1e1e1\n}\n.hvr-bubble-right:active:before,.hvr-bubble-right:focus:before,.hvr-bubble-right:hover:before{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-bottom:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;left:calc(50% - 10px);bottom:0;border-width:10px 10px 0;border-color:#e1e1e1 transparent transparent\n}\n.hvr-bubble-bottom:active:before,.hvr-bubble-bottom:focus:before,.hvr-bubble-bottom:hover:before{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-left:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;top:calc(50% - 10px);left:0;border-width:10px 10px 10px 0;border-color:transparent #e1e1e1 transparent transparent\n}\n.hvr-bubble-left:active:before,.hvr-bubble-left:focus:before,.hvr-bubble-left:hover:before{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-bubble-float-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-top:before{position:absolute;z-index:-1;content:'';left:calc(50% - 10px);top:0;border-style:solid;border-width:0 10px 10px;border-color:transparent transparent #e1e1e1;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-top:active,.hvr-bubble-float-top:focus,.hvr-bubble-float-top:hover{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-float-top:active:before,.hvr-bubble-float-top:focus:before,.hvr-bubble-float-top:hover:before{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-float-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-right:before{position:absolute;z-index:-1;top:calc(50% - 10px);right:0;content:'';border-style:solid;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #e1e1e1;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-right:active,.hvr-bubble-float-right:focus,.hvr-bubble-float-right:hover{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-bubble-float-right:active:before,.hvr-bubble-float-right:focus:before,.hvr-bubble-float-right:hover:before{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-float-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-bottom:before{position:absolute;z-index:-1;content:'';left:calc(50% - 10px);bottom:0;border-style:solid;border-width:10px 10px 0;border-color:#e1e1e1 transparent transparent;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-bottom:active,.hvr-bubble-float-bottom:focus,.hvr-bubble-float-bottom:hover{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-float-bottom:active:before,.hvr-bubble-float-bottom:focus:before,.hvr-bubble-float-bottom:hover:before{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-float-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-left:before{position:absolute;z-index:-1;content:'';top:calc(50% - 10px);left:0;border-style:solid;border-width:10px 10px 10px 0;border-color:transparent #e1e1e1 transparent transparent;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-left:active,.hvr-bubble-float-left:focus,.hvr-bubble-float-left:hover{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-float-left:active:before,.hvr-bubble-float-left:focus:before,.hvr-bubble-float-left:hover:before{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-icon-back{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.1s;transition-duration:.1s\n}\n.hvr-icon-back .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-back:active .hvr-icon,.hvr-icon-back:focus .hvr-icon,.hvr-icon-back:hover .hvr-icon{-webkit-transform:translateX(-4px);transform:translateX(-4px)\n}\n.hvr-icon-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.1s;transition-duration:.1s\n}\n.hvr-icon-forward .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-forward:active .hvr-icon,.hvr-icon-forward:focus .hvr-icon,.hvr-icon-forward:hover .hvr-icon{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n@-webkit-keyframes hvr-icon-down{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-down{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n.hvr-icon-down{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-down .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-down:active .hvr-icon,.hvr-icon-down:focus .hvr-icon,.hvr-icon-down:hover .hvr-icon{-webkit-animation-name:hvr-icon-down;animation-name:hvr-icon-down;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n@-webkit-keyframes hvr-icon-up{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-up{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n.hvr-icon-up{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-up .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-up:active .hvr-icon,.hvr-icon-up:focus .hvr-icon,.hvr-icon-up:hover .hvr-icon{-webkit-animation-name:hvr-icon-up;animation-name:hvr-icon-up;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n.hvr-icon-spin{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-spin .hvr-icon{-webkit-transition-duration:1s;transition-duration:1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out\n}\n.hvr-icon-spin:active .hvr-icon,.hvr-icon-spin:focus .hvr-icon,.hvr-icon-spin:hover .hvr-icon{-webkit-transform:rotate(360deg);transform:rotate(360deg)\n}\n@-webkit-keyframes hvr-icon-drop{\n0%{opacity:0\n}\n50%{opacity:0;-webkit-transform:translateY(-100%);transform:translateY(-100%)\n}\n100%,51%{opacity:1\n}\n}\n@keyframes hvr-icon-drop{\n0%{opacity:0\n}\n50%{opacity:0;-webkit-transform:translateY(-100%);transform:translateY(-100%)\n}\n100%,51%{opacity:1\n}\n}\n.hvr-icon-drop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-drop .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-drop:active .hvr-icon,.hvr-icon-drop:focus .hvr-icon,.hvr-icon-drop:hover .hvr-icon{opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-animation-name:hvr-icon-drop;animation-name:hvr-icon-drop;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-delay:.3s;animation-delay:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:cubic-bezier(0.52,1.64,.37,.66);animation-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-icon-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-fade .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:color;transition-property:color\n}\n.hvr-icon-fade:active .hvr-icon,.hvr-icon-fade:focus .hvr-icon,.hvr-icon-fade:hover .hvr-icon{color:#0F9E5E\n}\n@-webkit-keyframes hvr-icon-float-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)\n}\n}\n@keyframes hvr-icon-float-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)\n}\n}\n.hvr-icon-float-away{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-float-away .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards\n}\n.hvr-icon-float-away:active .hvr-icon,.hvr-icon-float-away:focus .hvr-icon,.hvr-icon-float-away:hover .hvr-icon{-webkit-animation-name:hvr-icon-float-away;animation-name:hvr-icon-float-away;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n@-webkit-keyframes hvr-icon-sink-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)\n}\n}\n@keyframes hvr-icon-sink-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)\n}\n}\n.hvr-icon-sink-away{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-sink-away .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards\n}\n.hvr-icon-sink-away:active .hvr-icon,.hvr-icon-sink-away:focus .hvr-icon,.hvr-icon-sink-away:hover .hvr-icon{-webkit-animation-name:hvr-icon-sink-away;animation-name:hvr-icon-sink-away;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n.hvr-icon-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-grow .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-grow:active .hvr-icon,.hvr-icon-grow:focus .hvr-icon,.hvr-icon-grow:hover .hvr-icon{-webkit-transform:scale(1.3) translateZ(0);transform:scale(1.3) translateZ(0)\n}\n.hvr-icon-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-shrink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-shrink:active .hvr-icon,.hvr-icon-shrink:focus .hvr-icon,.hvr-icon-shrink:hover .hvr-icon{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n@-webkit-keyframes hvr-icon-pulse{\n25%{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n75%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n@keyframes hvr-icon-pulse{\n25%{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n75%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n.hvr-icon-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse:active .hvr-icon,.hvr-icon-pulse:focus .hvr-icon,.hvr-icon-pulse:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse;animation-name:hvr-icon-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-icon-pulse-grow{\nto{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n}\n@keyframes hvr-icon-pulse-grow{\nto{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n}\n.hvr-icon-pulse-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse-grow .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse-grow:active .hvr-icon,.hvr-icon-pulse-grow:focus .hvr-icon,.hvr-icon-pulse-grow:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse-grow;animation-name:hvr-icon-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-icon-pulse-shrink{\nto{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n@keyframes hvr-icon-pulse-shrink{\nto{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n.hvr-icon-pulse-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse-shrink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse-shrink:active .hvr-icon,.hvr-icon-pulse-shrink:focus .hvr-icon,.hvr-icon-pulse-shrink:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse-shrink;animation-name:hvr-icon-pulse-shrink;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-icon-push{\n50%{-webkit-transform:scale(0.5);transform:scale(0.5)\n}\n}\n@keyframes hvr-icon-push{\n50%{-webkit-transform:scale(0.5);transform:scale(0.5)\n}\n}\n.hvr-icon-push{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-push .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-push:active .hvr-icon,.hvr-icon-push:focus .hvr-icon,.hvr-icon-push:hover .hvr-icon{-webkit-animation-name:hvr-icon-push;animation-name:hvr-icon-push;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-pop{\n50%{-webkit-transform:scale(1.5);transform:scale(1.5)\n}\n}\n@keyframes hvr-icon-pop{\n50%{-webkit-transform:scale(1.5);transform:scale(1.5)\n}\n}\n.hvr-icon-pop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-pop .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pop:active .hvr-icon,.hvr-icon-pop:focus .hvr-icon,.hvr-icon-pop:hover .hvr-icon{-webkit-animation-name:hvr-icon-pop;animation-name:hvr-icon-pop;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-icon-bounce{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-bounce .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-bounce:active .hvr-icon,.hvr-icon-bounce:focus .hvr-icon,.hvr-icon-bounce:hover .hvr-icon{-webkit-transform:scale(1.5);transform:scale(1.5);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-icon-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-rotate .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-rotate:active .hvr-icon,.hvr-icon-rotate:focus .hvr-icon,.hvr-icon-rotate:hover .hvr-icon{-webkit-transform:rotate(20deg);transform:rotate(20deg)\n}\n.hvr-icon-grow-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-grow-rotate .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-grow-rotate:active .hvr-icon,.hvr-icon-grow-rotate:focus .hvr-icon,.hvr-icon-grow-rotate:hover .hvr-icon{-webkit-transform:scale(1.5) rotate(12deg);transform:scale(1.5) rotate(12deg)\n}\n.hvr-icon-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-float .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-float:active .hvr-icon,.hvr-icon-float:focus .hvr-icon,.hvr-icon-float:hover .hvr-icon{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n.hvr-icon-sink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-sink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-sink:active .hvr-icon,.hvr-icon-sink:focus .hvr-icon,.hvr-icon-sink:hover .hvr-icon{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n@-webkit-keyframes hvr-icon-bob{\n0%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n50%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-bob{\n0%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n50%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@-webkit-keyframes hvr-icon-bob-float{\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-bob-float{\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n.hvr-icon-bob{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-bob .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-bob:active .hvr-icon,.hvr-icon-bob:focus .hvr-icon,.hvr-icon-bob:hover .hvr-icon{-webkit-animation-name:hvr-icon-bob-float,hvr-icon-bob;animation-name:hvr-icon-bob-float,hvr-icon-bob;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-icon-hang{\n0%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n50%{-webkit-transform:translateY(2px);transform:translateY(2px)\n}\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-hang{\n0%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n50%{-webkit-transform:translateY(2px);transform:translateY(2px)\n}\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@-webkit-keyframes hvr-icon-hang-sink{\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-hang-sink{\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n.hvr-icon-hang{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-hang .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-hang:active .hvr-icon,.hvr-icon-hang:focus .hvr-icon,.hvr-icon-hang:hover .hvr-icon{-webkit-animation-name:hvr-icon-hang-sink,hvr-icon-hang;animation-name:hvr-icon-hang-sink,hvr-icon-hang;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-icon-wobble-horizontal{\n16.65%{-webkit-transform:translateX(6px);transform:translateX(6px)\n}\n33.3%{-webkit-transform:translateX(-5px);transform:translateX(-5px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n@keyframes hvr-icon-wobble-horizontal{\n16.65%{-webkit-transform:translateX(6px);transform:translateX(6px)\n}\n33.3%{-webkit-transform:translateX(-5px);transform:translateX(-5px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n.hvr-icon-wobble-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-wobble-horizontal .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-wobble-horizontal:active .hvr-icon,.hvr-icon-wobble-horizontal:focus .hvr-icon,.hvr-icon-wobble-horizontal:hover .hvr-icon{-webkit-animation-name:hvr-icon-wobble-horizontal;animation-name:hvr-icon-wobble-horizontal;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-wobble-vertical{\n16.65%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n33.3%{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n@keyframes hvr-icon-wobble-vertical{\n16.65%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n33.3%{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n.hvr-icon-wobble-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-wobble-vertical .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-wobble-vertical:active .hvr-icon,.hvr-icon-wobble-vertical:focus .hvr-icon,.hvr-icon-wobble-vertical:hover .hvr-icon{-webkit-animation-name:hvr-icon-wobble-vertical;animation-name:hvr-icon-wobble-vertical;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n@keyframes hvr-icon-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n.hvr-icon-buzz{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-buzz .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-buzz:active .hvr-icon,.hvr-icon-buzz:focus .hvr-icon,.hvr-icon-buzz:hover .hvr-icon{-webkit-animation-name:hvr-icon-buzz;animation-name:hvr-icon-buzz;-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-icon-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n@keyframes hvr-icon-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n.hvr-icon-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-buzz-out .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-buzz-out:active .hvr-icon,.hvr-icon-buzz-out:focus .hvr-icon,.hvr-icon-buzz-out:hover .hvr-icon{-webkit-animation-name:hvr-icon-buzz-out;animation-name:hvr-icon-buzz-out;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-curl-top-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-top-left:before{pointer-events:none;position:absolute;content:'';height:0;width:0;top:0;left:0;background:#fff;background:linear-gradient(135deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#000000');z-index:1000;box-shadow:1px 1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-top-left:active:before,.hvr-curl-top-left:focus:before,.hvr-curl-top-left:hover:before{width:25px;height:25px\n}\n.hvr-curl-top-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-top-right:before{pointer-events:none;position:absolute;content:'';height:0;width:0;top:0;right:0;background:#fff;background:linear-gradient(225deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:-1px 1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-top-right:active:before,.hvr-curl-top-right:focus:before,.hvr-curl-top-right:hover:before{width:25px;height:25px\n}\n.hvr-curl-bottom-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-bottom-right:before{pointer-events:none;position:absolute;content:'';height:0;width:0;bottom:0;right:0;background:#fff;background:linear-gradient(315deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:-1px -1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-bottom-right:active:before,.hvr-curl-bottom-right:focus:before,.hvr-curl-bottom-right:hover:before{width:25px;height:25px\n}\n.hvr-curl-bottom-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-bottom-left:before{pointer-events:none;position:absolute;content:'';height:0;width:0;bottom:0;left:0;background:#fff;background:linear-gradient(45deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:1px -1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-bottom-left:active:before,.hvr-curl-bottom-left:focus:before,.hvr-curl-bottom-left:hover:before{width:25px;height:25px\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1726:
+/***/ 1418:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1419);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("c9ed49ca", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./buttons.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./buttons.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1419:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n* $ubtn prefix (reserved)\n*\n* This prefix stands for Unicorn Button - ubtn\n* We provide a prefix to the Sass Variables to\n* prevent namespace collisions that could occur if\n* you import buttons as part of your Sass build process.\n* We kindly ask you not to use the prefix $ubtn in your project\n* in order to avoid possilbe name conflicts. Thanks!\n*/\n/*\n* Button Namespace (ex .button or .btn)\n*\n*/\n/*\n* Button Defaults\n*\n* Some default settings that are used throughout the button library.\n* Changes to these settings will be picked up by all of the other modules.\n* The colors used here are the default colors for the base button (gray).\n* The font size and height are used to set the base size for the buttons.\n* The size values will be used to calculate the larger and smaller button sizes.\n*/\n/*\n* Button Colors\n*\n* $ubtn-colors is used to generate the different button colors.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, background, color)\n* The class is generated using the name: (ex .button-primary)\n*/\n/*\n* Button Shapes\n*\n* $ubtn-shapes is used to generate the different button shapes.\n* Edit or add shapes to the list below and recompile.\n* Each block contains the (name, border-radius).\n* The class is generated using the name: (ex .button-square).\n*/\n/*\n* Button Sizes\n*\n* $ubtn-sizes is used to generate the different button sizes.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, size multiplier).\n* The class is generated using the name: (ex .button-giant).\n*/\n/*! @license\n*\n* Buttons\n* Copyright 2012-2014 Alex Wolfe and Rob Levin\n*\n* Licensed under the Apache License, Version 2.0 (the \"License\");\n* you may not use this file except in compliance with the License.\n* You may obtain a copy of the License at\n*\n*        http://www.apache.org/licenses/LICENSE-2.0\n*\n* Unless required by applicable law or agreed to in writing, software\n* distributed under the License is distributed on an \"AS IS\" BASIS,\n* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n* See the License for the specific language governing permissions and\n* limitations under the License.\n*/\n/*\n* Compass (optional)\n*\n* We recommend the use of autoprefixer instead of Compass\n* when using buttons. However, buttons does support Compass.\n* simply change $ubtn-use-compass to true and uncomment the\n* @import 'compass' code below to use Compass.\n*/\n/*\n* Required Files\n*\n* These files include the variables and options\n* and base css styles that are required to generate buttons.\n*/\n/*\n* $ubtn prefix (reserved)\n*\n* This prefix stands for Unicorn Button - ubtn\n* We provide a prefix to the Sass Variables to\n* prevent namespace collisions that could occur if\n* you import buttons as part of your Sass build process.\n* We kindly ask you not to use the prefix $ubtn in your project\n* in order to avoid possilbe name conflicts. Thanks!\n*/\n/*\n* Button Namespace (ex .button or .btn)\n*\n*/\n/*\n* Button Defaults\n*\n* Some default settings that are used throughout the button library.\n* Changes to these settings will be picked up by all of the other modules.\n* The colors used here are the default colors for the base button (gray).\n* The font size and height are used to set the base size for the buttons.\n* The size values will be used to calculate the larger and smaller button sizes.\n*/\n/*\n* Button Colors\n*\n* $ubtn-colors is used to generate the different button colors.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, background, color)\n* The class is generated using the name: (ex .button-primary)\n*/\n/*\n* Button Shapes\n*\n* $ubtn-shapes is used to generate the different button shapes.\n* Edit or add shapes to the list below and recompile.\n* Each block contains the (name, border-radius).\n* The class is generated using the name: (ex .button-square).\n*/\n/*\n* Button Sizes\n*\n* $ubtn-sizes is used to generate the different button sizes.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, size multiplier).\n* The class is generated using the name: (ex .button-giant).\n*/\n/*\n* Color Mixin\n*\n* Iterates through the list of colors and creates\n*\n*/\n/*\n* No Animation\n*\n* Sets animation property to none\n*/\n/*\n* Clearfix\n*\n* Clears floats inside the container\n*/\n/*\n* Base Button Style\n*\n* The default values for the .button class\n*/\n.button {\n  color: #666;\n  background-color: #DCDCDC;\n  border-color: #DCDCDC;\n  font-weight: regular;\n  font-size: 16px;\n  font-family: \"Open Sans\", sans-serif, verdana;\n  text-decoration: none;\n  text-align: center;\n  line-height: 40px;\n  height: 40px;\n  padding: 0 40px;\n  margin: 0;\n  display: inline-block;\n  appearance: none;\n  cursor: pointer;\n  border: none;\n  box-sizing: border-box;\n  transition-property: all;\n  transition-duration: .3s;\n  /*\n  * Disabled State\n  *\n  * The disabled state uses the class .disabled, is-disabled,\n  * and the form attribute disabled=\"disabled\".\n  * The use of !important is only added because this is a state\n  * that must be applied to all buttons when in a disabled state.\n  */\n}\n.button:visited {\n    color: #666;\n}\n.button:hover, .button:focus {\n    background-color: #e4e4e4;\n    text-decoration: none;\n    outline: none;\n}\n.button:active, .button.active, .button.is-active {\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);\n    text-decoration: none;\n    background-color: gainsboro;\n    border-color: #bdbdbd;\n    color: #c3c3c3;\n    transition-duration: 0s;\n    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);\n}\n.button.disabled, .button.is-disabled, .button:disabled {\n    top: 0 !important;\n    background: #EEE !important;\n    border: 1px solid #DDD !important;\n    text-shadow: 0 1px 1px white !important;\n    color: #CCC !important;\n    cursor: default !important;\n    appearance: none !important;\n    box-shadow: none !important;\n    opacity: .8 !important;\n}\n\n/*\n* Base Button Tyography\n*\n*/\n.button-uppercase {\n  text-transform: uppercase;\n}\n.button-lowercase {\n  text-transform: lowercase;\n}\n.button-capitalize {\n  text-transform: capitalize;\n}\n.button-small-caps {\n  font-variant: small-caps;\n}\n.button-icon-txt-large {\n  font-size: 36px !important;\n}\n\n/*\n* Base padding\n*\n*/\n.button-width-small {\n  padding: 0 10px !important;\n}\n\n/*\n* Base Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-primary,\n.button-primary-flat {\n  background-color: #4080bf;\n  border-color: #4080bf;\n  color: #FFF;\n}\n.button-primary:visited,\n  .button-primary-flat:visited {\n    color: #FFF;\n}\n.button-primary:hover, .button-primary:focus,\n  .button-primary-flat:hover,\n  .button-primary-flat:focus {\n    background-color: #6699cc;\n    border-color: #6699cc;\n    color: #FFF;\n}\n.button-primary:active, .button-primary.active, .button-primary.is-active,\n  .button-primary-flat:active,\n  .button-primary-flat.active,\n  .button-primary-flat.is-active {\n    background-color: #4d80b2;\n    border-color: #4d80b2;\n    color: #336699;\n}\n.button-plain,\n.button-plain-flat {\n  background-color: #FFF;\n  border-color: #FFF;\n  color: #1B9AF7;\n}\n.button-plain:visited,\n  .button-plain-flat:visited {\n    color: #1B9AF7;\n}\n.button-plain:hover, .button-plain:focus,\n  .button-plain-flat:hover,\n  .button-plain-flat:focus {\n    background-color: white;\n    border-color: white;\n    color: #1B9AF7;\n}\n.button-plain:active, .button-plain.active, .button-plain.is-active,\n  .button-plain-flat:active,\n  .button-plain-flat.active,\n  .button-plain-flat.is-active {\n    background-color: white;\n    border-color: white;\n    color: #e6e6e6;\n}\n.button-inverse,\n.button-inverse-flat {\n  background-color: #222;\n  border-color: #222;\n  color: #EEE;\n}\n.button-inverse:visited,\n  .button-inverse-flat:visited {\n    color: #EEE;\n}\n.button-inverse:hover, .button-inverse:focus,\n  .button-inverse-flat:hover,\n  .button-inverse-flat:focus {\n    background-color: #3c3c3c;\n    border-color: #3c3c3c;\n    color: #EEE;\n}\n.button-inverse:active, .button-inverse.active, .button-inverse.is-active,\n  .button-inverse-flat:active,\n  .button-inverse-flat.active,\n  .button-inverse-flat.is-active {\n    background-color: #222222;\n    border-color: #222222;\n    color: #090909;\n}\n.button-action,\n.button-action-flat {\n  background-color: #4FC1E9;\n  border-color: #4FC1E9;\n  color: #FFF;\n}\n.button-action:visited,\n  .button-action-flat:visited {\n    color: #FFF;\n}\n.button-action:hover, .button-action:focus,\n  .button-action-flat:hover,\n  .button-action-flat:focus {\n    background-color: #7cd1ef;\n    border-color: #7cd1ef;\n    color: #FFF;\n}\n.button-action:active, .button-action.active, .button-action.is-active,\n  .button-action-flat:active,\n  .button-action-flat.active,\n  .button-action-flat.is-active {\n    background-color: #59bcdf;\n    border-color: #59bcdf;\n    color: #22b1e3;\n}\n.button-highlight,\n.button-highlight-flat {\n  background-color: #FFB65F;\n  border-color: #FFB65F;\n  color: #FFF;\n}\n.button-highlight:visited,\n  .button-highlight-flat:visited {\n    color: #FFF;\n}\n.button-highlight:hover, .button-highlight:focus,\n  .button-highlight-flat:hover,\n  .button-highlight-flat:focus {\n    background-color: #ffcd92;\n    border-color: #ffcd92;\n    color: #FFF;\n}\n.button-highlight:active, .button-highlight.active, .button-highlight.is-active,\n  .button-highlight-flat:active,\n  .button-highlight-flat.active,\n  .button-highlight-flat.is-active {\n    background-color: #f7b567;\n    border-color: #f7b567;\n    color: #ff9f2c;\n}\n.button-caution,\n.button-caution-flat {\n  background-color: #FB8678;\n  border-color: #FB8678;\n  color: #FFF;\n}\n.button-caution:visited,\n  .button-caution-flat:visited {\n    color: #FFF;\n}\n.button-caution:hover, .button-caution:focus,\n  .button-caution-flat:hover,\n  .button-caution-flat:focus {\n    background-color: #fcb2aa;\n    border-color: #fcb2aa;\n    color: #FFF;\n}\n.button-caution:active, .button-caution.active, .button-caution.is-active,\n  .button-caution-flat:active,\n  .button-caution-flat.active,\n  .button-caution-flat.is-active {\n    background-color: #f48b7f;\n    border-color: #f48b7f;\n    color: #fa5a46;\n}\n.button-royal,\n.button-royal-flat {\n  background-color: #22D69D;\n  border-color: #22D69D;\n  color: #FFF;\n}\n.button-royal:visited,\n  .button-royal-flat:visited {\n    color: #FFF;\n}\n.button-royal:hover, .button-royal:focus,\n  .button-royal-flat:hover,\n  .button-royal-flat:focus {\n    background-color: #49e2b2;\n    border-color: #49e2b2;\n    color: #FFF;\n}\n.button-royal:active, .button-royal.active, .button-royal.is-active,\n  .button-royal-flat:active,\n  .button-royal-flat.active,\n  .button-royal-flat.is-active {\n    background-color: #2eca98;\n    border-color: #2eca98;\n    color: #1baa7d;\n}\n\n/*\n* Base Layout Styles\n*\n* Very Miminal Layout Styles\n*/\n.button-block,\n.button-stacked {\n  display: block;\n  width: 100%;\n}\n\n/*\n* Button Types (optional)\n*\n* All of the files below represent the various button\n* types (including shapes & sizes). None of these files\n* are required. Simple remove the uneeded type below and\n* the button type will be excluded from the final build\n*/\n/*\n* Button Shapes\n*\n* This file creates the various button shapes\n* (ex. Circle, Rounded, Pill)\n*/\n.button-square {\n  border-radius: 0;\n}\n.button-box {\n  border-radius: 10px;\n}\n.button-rounded {\n  border-radius: 4px;\n}\n.button-pill {\n  border-radius: 200px;\n}\n.button-circle {\n  border-radius: 100%;\n}\n\n/*\n* Size Adjustment for equal height & widht buttons\n*\n* Remove padding and set a fixed width.\n*/\n.button-circle,\n.button-box,\n.button-square {\n  padding: 0 !important;\n  width: 40px;\n}\n.button-circle.button-giant,\n  .button-box.button-giant,\n  .button-square.button-giant {\n    width: 70px;\n}\n.button-circle.button-jumbo,\n  .button-box.button-jumbo,\n  .button-square.button-jumbo {\n    width: 60px;\n}\n.button-circle.button-large,\n  .button-box.button-large,\n  .button-square.button-large {\n    width: 50px;\n}\n.button-circle.button-normal,\n  .button-box.button-normal,\n  .button-square.button-normal {\n    width: 40px;\n}\n.button-circle.button-small,\n  .button-box.button-small,\n  .button-square.button-small {\n    width: 30px;\n}\n.button-circle.button-tiny,\n  .button-box.button-tiny,\n  .button-square.button-tiny {\n    width: 24px;\n}\n\n/*\n* Border Buttons\n*\n* These buttons have no fill they only have a\n* border to define their hit target.\n*/\n.button-border, .button-border-thin, .button-border-thick {\n  background: none;\n  border-width: 2px;\n  border-style: solid;\n  line-height: 36px;\n}\n.button-border:hover, .button-border-thin:hover, .button-border-thick:hover {\n    background-color: rgba(246, 246, 246, 0.9);\n}\n.button-border:active, .button-border-thin:active, .button-border-thick:active, .button-border.active, .active.button-border-thin, .active.button-border-thick, .button-border.is-active, .is-active.button-border-thin, .is-active.button-border-thick {\n    box-shadow: none;\n    text-shadow: none;\n    transition-property: all;\n    transition-duration: .3s;\n}\n\n/*\n* Border Optional Sizes\n*\n* A slight variation in border thickness\n*/\n.button-border-thin {\n  border-width: 1px;\n}\n.button-border-thick {\n  border-width: 3px;\n}\n\n/*\n* Border Button Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-border, .button-border-thin, .button-border-thick,\n.button-border-thin,\n.button-border-thick {\n  /*\n  * Border Button Size Adjustment\n  *\n  * The line-height must be adjusted to compinsate for\n  * the width of the border.\n  */\n}\n.button-border.button-primary, .button-primary.button-border-thin, .button-primary.button-border-thick,\n  .button-border-thin.button-primary,\n  .button-border-thick.button-primary {\n    color: #4080bf;\n}\n.button-border.button-primary:hover, .button-primary.button-border-thin:hover, .button-primary.button-border-thick:hover, .button-border.button-primary:focus, .button-primary.button-border-thin:focus, .button-primary.button-border-thick:focus,\n    .button-border-thin.button-primary:hover,\n    .button-border-thin.button-primary:focus,\n    .button-border-thick.button-primary:hover,\n    .button-border-thick.button-primary:focus {\n      background-color: rgba(102, 153, 204, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-primary:active, .button-primary.button-border-thin:active, .button-primary.button-border-thick:active, .button-border.button-primary.active, .button-primary.active.button-border-thin, .button-primary.active.button-border-thick, .button-border.button-primary.is-active, .button-primary.is-active.button-border-thin, .button-primary.is-active.button-border-thick,\n    .button-border-thin.button-primary:active,\n    .button-border-thin.button-primary.active,\n    .button-border-thin.button-primary.is-active,\n    .button-border-thick.button-primary:active,\n    .button-border-thick.button-primary.active,\n    .button-border-thick.button-primary.is-active {\n      background-color: rgba(77, 128, 178, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-plain, .button-plain.button-border-thin, .button-plain.button-border-thick,\n  .button-border-thin.button-plain,\n  .button-border-thick.button-plain {\n    color: #FFF;\n}\n.button-border.button-plain:hover, .button-plain.button-border-thin:hover, .button-plain.button-border-thick:hover, .button-border.button-plain:focus, .button-plain.button-border-thin:focus, .button-plain.button-border-thick:focus,\n    .button-border-thin.button-plain:hover,\n    .button-border-thin.button-plain:focus,\n    .button-border-thick.button-plain:hover,\n    .button-border-thick.button-plain:focus {\n      background-color: rgba(255, 255, 255, 0.9);\n      color: rgba(27, 154, 247, 0.9);\n}\n.button-border.button-plain:active, .button-plain.button-border-thin:active, .button-plain.button-border-thick:active, .button-border.button-plain.active, .button-plain.active.button-border-thin, .button-plain.active.button-border-thick, .button-border.button-plain.is-active, .button-plain.is-active.button-border-thin, .button-plain.is-active.button-border-thick,\n    .button-border-thin.button-plain:active,\n    .button-border-thin.button-plain.active,\n    .button-border-thin.button-plain.is-active,\n    .button-border-thick.button-plain:active,\n    .button-border-thick.button-plain.active,\n    .button-border-thick.button-plain.is-active {\n      background-color: rgba(255, 255, 255, 0.7);\n      color: rgba(27, 154, 247, 0.5);\n      opacity: .3;\n}\n.button-border.button-inverse, .button-inverse.button-border-thin, .button-inverse.button-border-thick,\n  .button-border-thin.button-inverse,\n  .button-border-thick.button-inverse {\n    color: #222;\n}\n.button-border.button-inverse:hover, .button-inverse.button-border-thin:hover, .button-inverse.button-border-thick:hover, .button-border.button-inverse:focus, .button-inverse.button-border-thin:focus, .button-inverse.button-border-thick:focus,\n    .button-border-thin.button-inverse:hover,\n    .button-border-thin.button-inverse:focus,\n    .button-border-thick.button-inverse:hover,\n    .button-border-thick.button-inverse:focus {\n      background-color: rgba(60, 60, 60, 0.9);\n      color: rgba(238, 238, 238, 0.9);\n}\n.button-border.button-inverse:active, .button-inverse.button-border-thin:active, .button-inverse.button-border-thick:active, .button-border.button-inverse.active, .button-inverse.active.button-border-thin, .button-inverse.active.button-border-thick, .button-border.button-inverse.is-active, .button-inverse.is-active.button-border-thin, .button-inverse.is-active.button-border-thick,\n    .button-border-thin.button-inverse:active,\n    .button-border-thin.button-inverse.active,\n    .button-border-thin.button-inverse.is-active,\n    .button-border-thick.button-inverse:active,\n    .button-border-thick.button-inverse.active,\n    .button-border-thick.button-inverse.is-active {\n      background-color: rgba(34, 34, 34, 0.7);\n      color: rgba(238, 238, 238, 0.5);\n      opacity: .3;\n}\n.button-border.button-action, .button-action.button-border-thin, .button-action.button-border-thick,\n  .button-border-thin.button-action,\n  .button-border-thick.button-action {\n    color: #4FC1E9;\n}\n.button-border.button-action:hover, .button-action.button-border-thin:hover, .button-action.button-border-thick:hover, .button-border.button-action:focus, .button-action.button-border-thin:focus, .button-action.button-border-thick:focus,\n    .button-border-thin.button-action:hover,\n    .button-border-thin.button-action:focus,\n    .button-border-thick.button-action:hover,\n    .button-border-thick.button-action:focus {\n      background-color: rgba(124, 209, 239, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-action:active, .button-action.button-border-thin:active, .button-action.button-border-thick:active, .button-border.button-action.active, .button-action.active.button-border-thin, .button-action.active.button-border-thick, .button-border.button-action.is-active, .button-action.is-active.button-border-thin, .button-action.is-active.button-border-thick,\n    .button-border-thin.button-action:active,\n    .button-border-thin.button-action.active,\n    .button-border-thin.button-action.is-active,\n    .button-border-thick.button-action:active,\n    .button-border-thick.button-action.active,\n    .button-border-thick.button-action.is-active {\n      background-color: rgba(89, 188, 223, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-highlight, .button-highlight.button-border-thin, .button-highlight.button-border-thick,\n  .button-border-thin.button-highlight,\n  .button-border-thick.button-highlight {\n    color: #FFB65F;\n}\n.button-border.button-highlight:hover, .button-highlight.button-border-thin:hover, .button-highlight.button-border-thick:hover, .button-border.button-highlight:focus, .button-highlight.button-border-thin:focus, .button-highlight.button-border-thick:focus,\n    .button-border-thin.button-highlight:hover,\n    .button-border-thin.button-highlight:focus,\n    .button-border-thick.button-highlight:hover,\n    .button-border-thick.button-highlight:focus {\n      background-color: rgba(255, 205, 146, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-highlight:active, .button-highlight.button-border-thin:active, .button-highlight.button-border-thick:active, .button-border.button-highlight.active, .button-highlight.active.button-border-thin, .button-highlight.active.button-border-thick, .button-border.button-highlight.is-active, .button-highlight.is-active.button-border-thin, .button-highlight.is-active.button-border-thick,\n    .button-border-thin.button-highlight:active,\n    .button-border-thin.button-highlight.active,\n    .button-border-thin.button-highlight.is-active,\n    .button-border-thick.button-highlight:active,\n    .button-border-thick.button-highlight.active,\n    .button-border-thick.button-highlight.is-active {\n      background-color: rgba(247, 181, 103, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-caution, .button-caution.button-border-thin, .button-caution.button-border-thick,\n  .button-border-thin.button-caution,\n  .button-border-thick.button-caution {\n    color: #FB8678;\n}\n.button-border.button-caution:hover, .button-caution.button-border-thin:hover, .button-caution.button-border-thick:hover, .button-border.button-caution:focus, .button-caution.button-border-thin:focus, .button-caution.button-border-thick:focus,\n    .button-border-thin.button-caution:hover,\n    .button-border-thin.button-caution:focus,\n    .button-border-thick.button-caution:hover,\n    .button-border-thick.button-caution:focus {\n      background-color: rgba(252, 178, 170, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-caution:active, .button-caution.button-border-thin:active, .button-caution.button-border-thick:active, .button-border.button-caution.active, .button-caution.active.button-border-thin, .button-caution.active.button-border-thick, .button-border.button-caution.is-active, .button-caution.is-active.button-border-thin, .button-caution.is-active.button-border-thick,\n    .button-border-thin.button-caution:active,\n    .button-border-thin.button-caution.active,\n    .button-border-thin.button-caution.is-active,\n    .button-border-thick.button-caution:active,\n    .button-border-thick.button-caution.active,\n    .button-border-thick.button-caution.is-active {\n      background-color: rgba(244, 139, 127, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-royal, .button-royal.button-border-thin, .button-royal.button-border-thick,\n  .button-border-thin.button-royal,\n  .button-border-thick.button-royal {\n    color: #22D69D;\n}\n.button-border.button-royal:hover, .button-royal.button-border-thin:hover, .button-royal.button-border-thick:hover, .button-border.button-royal:focus, .button-royal.button-border-thin:focus, .button-royal.button-border-thick:focus,\n    .button-border-thin.button-royal:hover,\n    .button-border-thin.button-royal:focus,\n    .button-border-thick.button-royal:hover,\n    .button-border-thick.button-royal:focus {\n      background-color: rgba(73, 226, 178, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-royal:active, .button-royal.button-border-thin:active, .button-royal.button-border-thick:active, .button-border.button-royal.active, .button-royal.active.button-border-thin, .button-royal.active.button-border-thick, .button-border.button-royal.is-active, .button-royal.is-active.button-border-thin, .button-royal.is-active.button-border-thick,\n    .button-border-thin.button-royal:active,\n    .button-border-thin.button-royal.active,\n    .button-border-thin.button-royal.is-active,\n    .button-border-thick.button-royal:active,\n    .button-border-thick.button-royal.active,\n    .button-border-thick.button-royal.is-active {\n      background-color: rgba(46, 202, 152, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-giant, .button-giant.button-border-thin, .button-giant.button-border-thick,\n  .button-border-thin.button-giant,\n  .button-border-thick.button-giant {\n    line-height: 66px;\n}\n.button-border.button-jumbo, .button-jumbo.button-border-thin, .button-jumbo.button-border-thick,\n  .button-border-thin.button-jumbo,\n  .button-border-thick.button-jumbo {\n    line-height: 56px;\n}\n.button-border.button-large, .button-large.button-border-thin, .button-large.button-border-thick,\n  .button-border-thin.button-large,\n  .button-border-thick.button-large {\n    line-height: 46px;\n}\n.button-border.button-normal, .button-normal.button-border-thin, .button-normal.button-border-thick,\n  .button-border-thin.button-normal,\n  .button-border-thick.button-normal {\n    line-height: 36px;\n}\n.button-border.button-small, .button-small.button-border-thin, .button-small.button-border-thick,\n  .button-border-thin.button-small,\n  .button-border-thick.button-small {\n    line-height: 26px;\n}\n.button-border.button-tiny, .button-tiny.button-border-thin, .button-tiny.button-border-thick,\n  .button-border-thin.button-tiny,\n  .button-border-thick.button-tiny {\n    line-height: 20px;\n}\n\n/*\n* Border Buttons\n*\n* These buttons have no fill they only have a\n* border to define their hit target.\n*/\n.button-borderless {\n  background: none;\n  border: none;\n  padding: 0 8px !important;\n  color: #DCDCDC;\n  font-size: 20.8px;\n  font-weight: 200;\n  /*\n  * Borderless Button Colors\n  *\n  * Create colors for buttons\n  * (.button-primary, .button-secondary, etc.)\n  */\n  /*\n  * Borderles Size Adjustment\n  *\n  * The font-size must be large to compinsate for\n  * the lack of a hit target.\n  */\n}\n.button-borderless:hover, .button-borderless:focus {\n    background: none;\n}\n.button-borderless:active, .button-borderless.active, .button-borderless.is-active {\n    box-shadow: none;\n    text-shadow: none;\n    transition-property: all;\n    transition-duration: .3s;\n    opacity: .3;\n}\n.button-borderless.button-primary {\n    color: #4080bf;\n}\n.button-borderless.button-plain {\n    color: #FFF;\n}\n.button-borderless.button-inverse {\n    color: #222;\n}\n.button-borderless.button-action {\n    color: #4FC1E9;\n}\n.button-borderless.button-highlight {\n    color: #FFB65F;\n}\n.button-borderless.button-caution {\n    color: #FB8678;\n}\n.button-borderless.button-royal {\n    color: #22D69D;\n}\n.button-borderless.button-giant {\n    font-size: 36.4px;\n    height: 52.4px;\n    line-height: 52.4px;\n}\n.button-borderless.button-jumbo {\n    font-size: 31.2px;\n    height: 47.2px;\n    line-height: 47.2px;\n}\n.button-borderless.button-large {\n    font-size: 26px;\n    height: 42px;\n    line-height: 42px;\n}\n.button-borderless.button-normal {\n    font-size: 20.8px;\n    height: 36.8px;\n    line-height: 36.8px;\n}\n.button-borderless.button-small {\n    font-size: 15.6px;\n    height: 31.6px;\n    line-height: 31.6px;\n}\n.button-borderless.button-tiny {\n    font-size: 12.48px;\n    height: 28.48px;\n    line-height: 28.48px;\n}\n\n/*\n* Raised Buttons\n*\n* A classic looking button that offers\n* great depth and affordance.\n*/\n.button-raised {\n  border-color: #cfcfcf;\n  border-style: solid;\n  border-width: 1px;\n  line-height: 38px;\n  background: linear-gradient(#e4e4e4, #cfcfcf);\n  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);\n}\n.button-raised:hover, .button-raised:focus {\n    background: linear-gradient(to bottom, #f0f0f0, #cacaca);\n}\n.button-raised:active, .button-raised.active, .button-raised.is-active {\n    background: gainsboro;\n    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;\n}\n\n/*\n* Raised Button Colors\n*\n* Create colors for raised buttons\n*/\n.button-raised.button-primary {\n  border-color: #3a73ac;\n  background: linear-gradient(#538dc5, #3a73ac);\n}\n.button-raised.button-primary:hover, .button-raised.button-primary:focus {\n    background: linear-gradient(to bottom, #5f94c9, #376ea4);\n}\n.button-raised.button-primary:active, .button-raised.button-primary.active, .button-raised.button-primary.is-active {\n    border-color: #336699;\n    background: #4d80b2;\n}\n.button-raised.button-plain {\n  border-color: #f2f2f2;\n  background: linear-gradient(white, #f2f2f2);\n}\n.button-raised.button-plain:hover, .button-raised.button-plain:focus {\n    background: linear-gradient(to bottom, white, #ededed);\n}\n.button-raised.button-plain:active, .button-raised.button-plain.active, .button-raised.button-plain.is-active {\n    border-color: #e6e6e6;\n    background: white;\n}\n.button-raised.button-inverse {\n  border-color: #151515;\n  background: linear-gradient(#2f2f2f, #151515);\n}\n.button-raised.button-inverse:hover, .button-raised.button-inverse:focus {\n    background: linear-gradient(to bottom, #363636, #101010);\n}\n.button-raised.button-inverse:active, .button-raised.button-inverse.active, .button-raised.button-inverse.is-active {\n    border-color: #090909;\n    background: #222222;\n}\n.button-raised.button-action {\n  border-color: #38b9e6;\n  background: linear-gradient(#66c9ec, #38b9e6);\n}\n.button-raised.button-action:hover, .button-raised.button-action:focus {\n    background: linear-gradient(to bottom, #73ceee, #2fb6e5);\n}\n.button-raised.button-action:active, .button-raised.button-action.active, .button-raised.button-action.is-active {\n    border-color: #22b1e3;\n    background: #59bcdf;\n}\n.button-raised.button-highlight {\n  border-color: #ffaa46;\n  background: linear-gradient(#ffc279, #ffaa46);\n}\n.button-raised.button-highlight:hover, .button-raised.button-highlight:focus {\n    background: linear-gradient(to bottom, #ffc988, #ffa63b);\n}\n.button-raised.button-highlight:active, .button-raised.button-highlight.active, .button-raised.button-highlight.is-active {\n    border-color: #ff9f2c;\n    background: #f7b567;\n}\n.button-raised.button-caution {\n  border-color: #fa705f;\n  background: linear-gradient(#fc9c91, #fa705f);\n}\n.button-raised.button-caution:hover, .button-raised.button-caution:focus {\n    background: linear-gradient(to bottom, #fcaaa0, #fa6755);\n}\n.button-raised.button-caution:active, .button-raised.button-caution.active, .button-raised.button-caution.is-active {\n    border-color: #fa5a46;\n    background: #f48b7f;\n}\n.button-raised.button-royal {\n  border-color: #1fc08d;\n  background: linear-gradient(#33dfa8, #1fc08d);\n}\n.button-raised.button-royal:hover, .button-raised.button-royal:focus {\n    background: linear-gradient(to bottom, #40e1ae, #1db786);\n}\n.button-raised.button-royal:active, .button-raised.button-royal.active, .button-raised.button-royal.is-active {\n    border-color: #1baa7d;\n    background: #2eca98;\n}\n\n/*\n* 3D Buttons\n*\n* These buttons have a heavy three dimensional\n* style that mimics the visual appearance of a\n* real life button.\n*/\n.button-3d {\n  position: relative;\n  top: 0;\n  box-shadow: 0 7px 0 darkgray, 0 8px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d:hover, .button-3d:focus {\n    box-shadow: 0 7px 0 darkgray, 0 8px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d:active, .button-3d.active, .button-3d.is-active {\n    top: 5px;\n    transition-property: all;\n    transition-duration: .15s;\n    box-shadow: 0 2px 0 darkgray, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* 3D Button Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-3d.button-primary {\n  box-shadow: 0 7px 0 #336699, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-primary:hover, .button-3d.button-primary:focus {\n    box-shadow: 0 7px 0 #316191, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-primary:active, .button-3d.button-primary.active, .button-3d.button-primary.is-active {\n    box-shadow: 0 2px 0 #264d73, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-plain {\n  box-shadow: 0 7px 0 #e6e6e6, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-plain:hover, .button-3d.button-plain:focus {\n    box-shadow: 0 7px 0 #e0e0e0, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-plain:active, .button-3d.button-plain.active, .button-3d.button-plain.is-active {\n    box-shadow: 0 2px 0 #cccccc, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-inverse {\n  box-shadow: 0 7px 0 #090909, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-inverse:hover, .button-3d.button-inverse:focus {\n    box-shadow: 0 7px 0 #030303, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-inverse:active, .button-3d.button-inverse.active, .button-3d.button-inverse.is-active {\n    box-shadow: 0 2px 0 black, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-action {\n  box-shadow: 0 7px 0 #22b1e3, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-action:hover, .button-3d.button-action:focus {\n    box-shadow: 0 7px 0 #1cacdf, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-action:active, .button-3d.button-action.active, .button-3d.button-action.is-active {\n    box-shadow: 0 2px 0 #1790bb, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-highlight {\n  box-shadow: 0 7px 0 #ff9f2c, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-highlight:hover, .button-3d.button-highlight:focus {\n    box-shadow: 0 7px 0 #ff9a22, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-highlight:active, .button-3d.button-highlight.active, .button-3d.button-highlight.is-active {\n    box-shadow: 0 2px 0 #f88700, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-caution {\n  box-shadow: 0 7px 0 #fa5a46, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-caution:hover, .button-3d.button-caution:focus {\n    box-shadow: 0 7px 0 #f9513d, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-caution:active, .button-3d.button-caution.active, .button-3d.button-caution.is-active {\n    box-shadow: 0 2px 0 #f82d15, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-royal {\n  box-shadow: 0 7px 0 #1baa7d, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-royal:hover, .button-3d.button-royal:focus {\n    box-shadow: 0 7px 0 #1aa176, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-royal:active, .button-3d.button-royal.active, .button-3d.button-royal.is-active {\n    box-shadow: 0 2px 0 #147e5c, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* Glowing Buttons\n*\n* A pulse like glow that appears\n* rythmically around the edges of\n* a button.\n*/\n/*\n* Glow animation mixin for Compass users\n*\n*/\n/*\n* Glowing Keyframes\n*\n*/\n@keyframes glowing {\nfrom {\n    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(44, 154, 219, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);\n}\n}\n\n/*\n* Glowing Keyframes for various colors\n*\n*/\n@keyframes glowing-primary {\nfrom {\n    box-shadow: 0 0 0 rgba(64, 128, 191, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(64, 128, 191, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(64, 128, 191, 0.3);\n}\n}\n@keyframes glowing-plain {\nfrom {\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);\n}\n}\n@keyframes glowing-inverse {\nfrom {\n    box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(34, 34, 34, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);\n}\n}\n@keyframes glowing-action {\nfrom {\n    box-shadow: 0 0 0 rgba(79, 193, 233, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(79, 193, 233, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(79, 193, 233, 0.3);\n}\n}\n@keyframes glowing-highlight {\nfrom {\n    box-shadow: 0 0 0 rgba(255, 182, 95, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(255, 182, 95, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(255, 182, 95, 0.3);\n}\n}\n@keyframes glowing-caution {\nfrom {\n    box-shadow: 0 0 0 rgba(251, 134, 120, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(251, 134, 120, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(251, 134, 120, 0.3);\n}\n}\n@keyframes glowing-royal {\nfrom {\n    box-shadow: 0 0 0 rgba(34, 214, 157, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(34, 214, 157, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(34, 214, 157, 0.3);\n}\n}\n\n/*\n* Glowing Buttons Base Styes\n*\n* A pulse like glow that appears\n* rythmically around the edges of\n* a button.\n*/\n.button-glow {\n  animation-duration: 3s;\n  animation-iteration-count: infinite;\n  animation-name: glowing;\n}\n.button-glow:active, .button-glow.active, .button-glow.is-active {\n    animation-name: none;\n}\n\n/*\n* Glowing Button Colors\n*\n* Create colors for glowing buttons\n*/\n.button-glow.button-primary {\n  animation-name: glowing-primary;\n}\n.button-glow.button-plain {\n  animation-name: glowing-plain;\n}\n.button-glow.button-inverse {\n  animation-name: glowing-inverse;\n}\n.button-glow.button-action {\n  animation-name: glowing-action;\n}\n.button-glow.button-highlight {\n  animation-name: glowing-highlight;\n}\n.button-glow.button-caution {\n  animation-name: glowing-caution;\n}\n.button-glow.button-royal {\n  animation-name: glowing-royal;\n}\n\n/*\n* Dropdown menu buttons\n*\n* A dropdown menu appears\n* when a button is pressed\n*/\n/*\n* Dropdown Container\n*\n*/\n.button-dropdown {\n  position: relative;\n  overflow: visible;\n  display: inline-block;\n}\n\n/*\n* Dropdown List Style\n*\n*/\n.button-dropdown-list {\n  display: none;\n  position: absolute;\n  padding: 0;\n  margin: 0;\n  top: 0;\n  left: 0;\n  z-index: 1000;\n  min-width: 100%;\n  list-style-type: none;\n  background: rgba(246, 246, 246, 0.95);\n  border-style: solid;\n  border-width: 1px;\n  border-color: #c3c3c3;\n  font-family: \"Open Sans\", sans-serif, verdana;\n  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);\n  border-radius: 3px;\n  box-sizing: border-box;\n  /*\n  * Dropdown Below\n  *\n  */\n  /*\n  * Dropdown Above\n  *\n  */\n}\n.button-dropdown-list.is-below {\n    top: 100%;\n    border-top: none;\n    border-radius: 0 0 3px 3px;\n}\n.button-dropdown-list.is-above {\n    bottom: 100%;\n    top: auto;\n    border-bottom: none;\n    border-radius: 3px 3px 0 0;\n    box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* Dropdown Buttons\n*\n*/\n.button-dropdown-list > li {\n  padding: 0;\n  margin: 0;\n  display: block;\n}\n.button-dropdown-list > li > a {\n    display: block;\n    line-height: 40px;\n    font-size: 12.8px;\n    padding: 5px 10px;\n    float: none;\n    color: #666;\n    text-decoration: none;\n}\n.button-dropdown-list > li > a:hover {\n      color: #5e5e5e;\n      background: #e4e4e4;\n      text-decoration: none;\n}\n.button-dropdown-divider {\n  border-top: 1px solid #d4d4d4;\n}\n\n/*\n* Dropdown Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-dropdown.button-dropdown-primary .button-dropdown-list {\n  background: rgba(64, 128, 191, 0.95);\n  border-color: #336699;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list .button-dropdown-divider {\n    border-color: #376ea4;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #3a73ac;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list {\n  background: rgba(255, 255, 255, 0.95);\n  border-color: #e6e6e6;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list .button-dropdown-divider {\n    border-color: #ededed;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list > li > a {\n    color: #1B9AF7;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list > li > a:hover {\n      color: #088ef0;\n      background: #f2f2f2;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list {\n  background: rgba(34, 34, 34, 0.95);\n  border-color: #090909;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list .button-dropdown-divider {\n    border-color: #101010;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list > li > a {\n    color: #EEE;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list > li > a:hover {\n      color: #e1e1e1;\n      background: #151515;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list {\n  background: rgba(79, 193, 233, 0.95);\n  border-color: #22b1e3;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list .button-dropdown-divider {\n    border-color: #2fb6e5;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #38b9e6;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list {\n  background: rgba(255, 182, 95, 0.95);\n  border-color: #ff9f2c;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list .button-dropdown-divider {\n    border-color: #ffa63b;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #ffaa46;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list {\n  background: rgba(251, 134, 120, 0.95);\n  border-color: #fa5a46;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list .button-dropdown-divider {\n    border-color: #fa6755;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #fa705f;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list {\n  background: rgba(34, 214, 157, 0.95);\n  border-color: #1baa7d;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list .button-dropdown-divider {\n    border-color: #1db786;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #1fc08d;\n}\n\n/*\n* Buton Groups\n*\n* A group of related buttons\n* displayed edge to edge\n*/\n.button-group {\n  position: relative;\n  display: inline-block;\n}\n.button-group:after {\n    content: \" \";\n    display: block;\n    clear: both;\n}\n.button-group .button,\n  .button-group .button-dropdown {\n    float: left;\n}\n.button-group .button:not(:first-child):not(:last-child),\n    .button-group .button-dropdown:not(:first-child):not(:last-child) {\n      border-radius: 0;\n      border-right: none;\n}\n.button-group .button:first-child,\n    .button-group .button-dropdown:first-child {\n      border-top-right-radius: 0;\n      border-bottom-right-radius: 0;\n      border-right: none;\n}\n.button-group .button:last-child,\n    .button-group .button-dropdown:last-child {\n      border-top-left-radius: 0;\n      border-bottom-left-radius: 0;\n}\n\n/*\n* Button Wrapper\n*\n* A wrap around effect to highlight\n* the shape of the button and offer\n* a subtle visual effect.\n*/\n.button-wrap {\n  border: 1px solid #e3e3e3;\n  display: inline-block;\n  padding: 9px;\n  background: linear-gradient(#f2f2f2, #FFF);\n  border-radius: 200px;\n  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);\n}\n\n/*\n* Long Shadow Buttons\n*\n* A visual effect adding a flat shadow to the text of a button\n*/\n/*\n* Long Shadow Function\n*\n* Loops $length times building a long shadow. Defaults downward right\n*/\n/*\n* LONG SHADOW MIXIN\n*\n*/\n/*\n* Shadow Right\n*\n*/\n.button-longshadow,\n.button-longshadow-right {\n  overflow: hidden;\n}\n.button-longshadow.button-primary,\n  .button-longshadow-right.button-primary {\n    text-shadow: 0px 0px #336699, 1px 1px #336699, 2px 2px #336699, 3px 3px #336699, 4px 4px #336699, 5px 5px #336699, 6px 6px #336699, 7px 7px #336699, 8px 8px #336699, 9px 9px #336699, 10px 10px #336699, 11px 11px #336699, 12px 12px #336699, 13px 13px #336699, 14px 14px #336699, 15px 15px #336699, 16px 16px #336699, 17px 17px #336699, 18px 18px #336699, 19px 19px #336699, 20px 20px #336699, 21px 21px #336699, 22px 22px #336699, 23px 23px #336699, 24px 24px #336699, 25px 25px #336699, 26px 26px #336699, 27px 27px #336699, 28px 28px #336699, 29px 29px #336699, 30px 30px #336699, 31px 31px #336699, 32px 32px #336699, 33px 33px #336699, 34px 34px #336699, 35px 35px #336699, 36px 36px #336699, 37px 37px #336699, 38px 38px #336699, 39px 39px #336699, 40px 40px #336699, 41px 41px #336699, 42px 42px #336699, 43px 43px #336699, 44px 44px #336699, 45px 45px #336699, 46px 46px #336699, 47px 47px #336699, 48px 48px #336699, 49px 49px #336699, 50px 50px #336699, 51px 51px #336699, 52px 52px #336699, 53px 53px #336699, 54px 54px #336699, 55px 55px #336699, 56px 56px #336699, 57px 57px #336699, 58px 58px #336699, 59px 59px #336699, 60px 60px #336699, 61px 61px #336699, 62px 62px #336699, 63px 63px #336699, 64px 64px #336699, 65px 65px #336699, 66px 66px #336699, 67px 67px #336699, 68px 68px #336699, 69px 69px #336699, 70px 70px #336699, 71px 71px #336699, 72px 72px #336699, 73px 73px #336699, 74px 74px #336699, 75px 75px #336699, 76px 76px #336699, 77px 77px #336699, 78px 78px #336699, 79px 79px #336699, 80px 80px #336699, 81px 81px #336699, 82px 82px #336699, 83px 83px #336699, 84px 84px #336699, 85px 85px #336699;\n}\n.button-longshadow.button-primary:active, .button-longshadow.button-primary.active, .button-longshadow.button-primary.is-active,\n    .button-longshadow-right.button-primary:active,\n    .button-longshadow-right.button-primary.active,\n    .button-longshadow-right.button-primary.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-plain,\n  .button-longshadow-right.button-plain {\n    text-shadow: 0px 0px #e6e6e6, 1px 1px #e6e6e6, 2px 2px #e6e6e6, 3px 3px #e6e6e6, 4px 4px #e6e6e6, 5px 5px #e6e6e6, 6px 6px #e6e6e6, 7px 7px #e6e6e6, 8px 8px #e6e6e6, 9px 9px #e6e6e6, 10px 10px #e6e6e6, 11px 11px #e6e6e6, 12px 12px #e6e6e6, 13px 13px #e6e6e6, 14px 14px #e6e6e6, 15px 15px #e6e6e6, 16px 16px #e6e6e6, 17px 17px #e6e6e6, 18px 18px #e6e6e6, 19px 19px #e6e6e6, 20px 20px #e6e6e6, 21px 21px #e6e6e6, 22px 22px #e6e6e6, 23px 23px #e6e6e6, 24px 24px #e6e6e6, 25px 25px #e6e6e6, 26px 26px #e6e6e6, 27px 27px #e6e6e6, 28px 28px #e6e6e6, 29px 29px #e6e6e6, 30px 30px #e6e6e6, 31px 31px #e6e6e6, 32px 32px #e6e6e6, 33px 33px #e6e6e6, 34px 34px #e6e6e6, 35px 35px #e6e6e6, 36px 36px #e6e6e6, 37px 37px #e6e6e6, 38px 38px #e6e6e6, 39px 39px #e6e6e6, 40px 40px #e6e6e6, 41px 41px #e6e6e6, 42px 42px #e6e6e6, 43px 43px #e6e6e6, 44px 44px #e6e6e6, 45px 45px #e6e6e6, 46px 46px #e6e6e6, 47px 47px #e6e6e6, 48px 48px #e6e6e6, 49px 49px #e6e6e6, 50px 50px #e6e6e6, 51px 51px #e6e6e6, 52px 52px #e6e6e6, 53px 53px #e6e6e6, 54px 54px #e6e6e6, 55px 55px #e6e6e6, 56px 56px #e6e6e6, 57px 57px #e6e6e6, 58px 58px #e6e6e6, 59px 59px #e6e6e6, 60px 60px #e6e6e6, 61px 61px #e6e6e6, 62px 62px #e6e6e6, 63px 63px #e6e6e6, 64px 64px #e6e6e6, 65px 65px #e6e6e6, 66px 66px #e6e6e6, 67px 67px #e6e6e6, 68px 68px #e6e6e6, 69px 69px #e6e6e6, 70px 70px #e6e6e6, 71px 71px #e6e6e6, 72px 72px #e6e6e6, 73px 73px #e6e6e6, 74px 74px #e6e6e6, 75px 75px #e6e6e6, 76px 76px #e6e6e6, 77px 77px #e6e6e6, 78px 78px #e6e6e6, 79px 79px #e6e6e6, 80px 80px #e6e6e6, 81px 81px #e6e6e6, 82px 82px #e6e6e6, 83px 83px #e6e6e6, 84px 84px #e6e6e6, 85px 85px #e6e6e6;\n}\n.button-longshadow.button-plain:active, .button-longshadow.button-plain.active, .button-longshadow.button-plain.is-active,\n    .button-longshadow-right.button-plain:active,\n    .button-longshadow-right.button-plain.active,\n    .button-longshadow-right.button-plain.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-inverse,\n  .button-longshadow-right.button-inverse {\n    text-shadow: 0px 0px #090909, 1px 1px #090909, 2px 2px #090909, 3px 3px #090909, 4px 4px #090909, 5px 5px #090909, 6px 6px #090909, 7px 7px #090909, 8px 8px #090909, 9px 9px #090909, 10px 10px #090909, 11px 11px #090909, 12px 12px #090909, 13px 13px #090909, 14px 14px #090909, 15px 15px #090909, 16px 16px #090909, 17px 17px #090909, 18px 18px #090909, 19px 19px #090909, 20px 20px #090909, 21px 21px #090909, 22px 22px #090909, 23px 23px #090909, 24px 24px #090909, 25px 25px #090909, 26px 26px #090909, 27px 27px #090909, 28px 28px #090909, 29px 29px #090909, 30px 30px #090909, 31px 31px #090909, 32px 32px #090909, 33px 33px #090909, 34px 34px #090909, 35px 35px #090909, 36px 36px #090909, 37px 37px #090909, 38px 38px #090909, 39px 39px #090909, 40px 40px #090909, 41px 41px #090909, 42px 42px #090909, 43px 43px #090909, 44px 44px #090909, 45px 45px #090909, 46px 46px #090909, 47px 47px #090909, 48px 48px #090909, 49px 49px #090909, 50px 50px #090909, 51px 51px #090909, 52px 52px #090909, 53px 53px #090909, 54px 54px #090909, 55px 55px #090909, 56px 56px #090909, 57px 57px #090909, 58px 58px #090909, 59px 59px #090909, 60px 60px #090909, 61px 61px #090909, 62px 62px #090909, 63px 63px #090909, 64px 64px #090909, 65px 65px #090909, 66px 66px #090909, 67px 67px #090909, 68px 68px #090909, 69px 69px #090909, 70px 70px #090909, 71px 71px #090909, 72px 72px #090909, 73px 73px #090909, 74px 74px #090909, 75px 75px #090909, 76px 76px #090909, 77px 77px #090909, 78px 78px #090909, 79px 79px #090909, 80px 80px #090909, 81px 81px #090909, 82px 82px #090909, 83px 83px #090909, 84px 84px #090909, 85px 85px #090909;\n}\n.button-longshadow.button-inverse:active, .button-longshadow.button-inverse.active, .button-longshadow.button-inverse.is-active,\n    .button-longshadow-right.button-inverse:active,\n    .button-longshadow-right.button-inverse.active,\n    .button-longshadow-right.button-inverse.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-action,\n  .button-longshadow-right.button-action {\n    text-shadow: 0px 0px #22b1e3, 1px 1px #22b1e3, 2px 2px #22b1e3, 3px 3px #22b1e3, 4px 4px #22b1e3, 5px 5px #22b1e3, 6px 6px #22b1e3, 7px 7px #22b1e3, 8px 8px #22b1e3, 9px 9px #22b1e3, 10px 10px #22b1e3, 11px 11px #22b1e3, 12px 12px #22b1e3, 13px 13px #22b1e3, 14px 14px #22b1e3, 15px 15px #22b1e3, 16px 16px #22b1e3, 17px 17px #22b1e3, 18px 18px #22b1e3, 19px 19px #22b1e3, 20px 20px #22b1e3, 21px 21px #22b1e3, 22px 22px #22b1e3, 23px 23px #22b1e3, 24px 24px #22b1e3, 25px 25px #22b1e3, 26px 26px #22b1e3, 27px 27px #22b1e3, 28px 28px #22b1e3, 29px 29px #22b1e3, 30px 30px #22b1e3, 31px 31px #22b1e3, 32px 32px #22b1e3, 33px 33px #22b1e3, 34px 34px #22b1e3, 35px 35px #22b1e3, 36px 36px #22b1e3, 37px 37px #22b1e3, 38px 38px #22b1e3, 39px 39px #22b1e3, 40px 40px #22b1e3, 41px 41px #22b1e3, 42px 42px #22b1e3, 43px 43px #22b1e3, 44px 44px #22b1e3, 45px 45px #22b1e3, 46px 46px #22b1e3, 47px 47px #22b1e3, 48px 48px #22b1e3, 49px 49px #22b1e3, 50px 50px #22b1e3, 51px 51px #22b1e3, 52px 52px #22b1e3, 53px 53px #22b1e3, 54px 54px #22b1e3, 55px 55px #22b1e3, 56px 56px #22b1e3, 57px 57px #22b1e3, 58px 58px #22b1e3, 59px 59px #22b1e3, 60px 60px #22b1e3, 61px 61px #22b1e3, 62px 62px #22b1e3, 63px 63px #22b1e3, 64px 64px #22b1e3, 65px 65px #22b1e3, 66px 66px #22b1e3, 67px 67px #22b1e3, 68px 68px #22b1e3, 69px 69px #22b1e3, 70px 70px #22b1e3, 71px 71px #22b1e3, 72px 72px #22b1e3, 73px 73px #22b1e3, 74px 74px #22b1e3, 75px 75px #22b1e3, 76px 76px #22b1e3, 77px 77px #22b1e3, 78px 78px #22b1e3, 79px 79px #22b1e3, 80px 80px #22b1e3, 81px 81px #22b1e3, 82px 82px #22b1e3, 83px 83px #22b1e3, 84px 84px #22b1e3, 85px 85px #22b1e3;\n}\n.button-longshadow.button-action:active, .button-longshadow.button-action.active, .button-longshadow.button-action.is-active,\n    .button-longshadow-right.button-action:active,\n    .button-longshadow-right.button-action.active,\n    .button-longshadow-right.button-action.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-highlight,\n  .button-longshadow-right.button-highlight {\n    text-shadow: 0px 0px #ff9f2c, 1px 1px #ff9f2c, 2px 2px #ff9f2c, 3px 3px #ff9f2c, 4px 4px #ff9f2c, 5px 5px #ff9f2c, 6px 6px #ff9f2c, 7px 7px #ff9f2c, 8px 8px #ff9f2c, 9px 9px #ff9f2c, 10px 10px #ff9f2c, 11px 11px #ff9f2c, 12px 12px #ff9f2c, 13px 13px #ff9f2c, 14px 14px #ff9f2c, 15px 15px #ff9f2c, 16px 16px #ff9f2c, 17px 17px #ff9f2c, 18px 18px #ff9f2c, 19px 19px #ff9f2c, 20px 20px #ff9f2c, 21px 21px #ff9f2c, 22px 22px #ff9f2c, 23px 23px #ff9f2c, 24px 24px #ff9f2c, 25px 25px #ff9f2c, 26px 26px #ff9f2c, 27px 27px #ff9f2c, 28px 28px #ff9f2c, 29px 29px #ff9f2c, 30px 30px #ff9f2c, 31px 31px #ff9f2c, 32px 32px #ff9f2c, 33px 33px #ff9f2c, 34px 34px #ff9f2c, 35px 35px #ff9f2c, 36px 36px #ff9f2c, 37px 37px #ff9f2c, 38px 38px #ff9f2c, 39px 39px #ff9f2c, 40px 40px #ff9f2c, 41px 41px #ff9f2c, 42px 42px #ff9f2c, 43px 43px #ff9f2c, 44px 44px #ff9f2c, 45px 45px #ff9f2c, 46px 46px #ff9f2c, 47px 47px #ff9f2c, 48px 48px #ff9f2c, 49px 49px #ff9f2c, 50px 50px #ff9f2c, 51px 51px #ff9f2c, 52px 52px #ff9f2c, 53px 53px #ff9f2c, 54px 54px #ff9f2c, 55px 55px #ff9f2c, 56px 56px #ff9f2c, 57px 57px #ff9f2c, 58px 58px #ff9f2c, 59px 59px #ff9f2c, 60px 60px #ff9f2c, 61px 61px #ff9f2c, 62px 62px #ff9f2c, 63px 63px #ff9f2c, 64px 64px #ff9f2c, 65px 65px #ff9f2c, 66px 66px #ff9f2c, 67px 67px #ff9f2c, 68px 68px #ff9f2c, 69px 69px #ff9f2c, 70px 70px #ff9f2c, 71px 71px #ff9f2c, 72px 72px #ff9f2c, 73px 73px #ff9f2c, 74px 74px #ff9f2c, 75px 75px #ff9f2c, 76px 76px #ff9f2c, 77px 77px #ff9f2c, 78px 78px #ff9f2c, 79px 79px #ff9f2c, 80px 80px #ff9f2c, 81px 81px #ff9f2c, 82px 82px #ff9f2c, 83px 83px #ff9f2c, 84px 84px #ff9f2c, 85px 85px #ff9f2c;\n}\n.button-longshadow.button-highlight:active, .button-longshadow.button-highlight.active, .button-longshadow.button-highlight.is-active,\n    .button-longshadow-right.button-highlight:active,\n    .button-longshadow-right.button-highlight.active,\n    .button-longshadow-right.button-highlight.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-caution,\n  .button-longshadow-right.button-caution {\n    text-shadow: 0px 0px #fa5a46, 1px 1px #fa5a46, 2px 2px #fa5a46, 3px 3px #fa5a46, 4px 4px #fa5a46, 5px 5px #fa5a46, 6px 6px #fa5a46, 7px 7px #fa5a46, 8px 8px #fa5a46, 9px 9px #fa5a46, 10px 10px #fa5a46, 11px 11px #fa5a46, 12px 12px #fa5a46, 13px 13px #fa5a46, 14px 14px #fa5a46, 15px 15px #fa5a46, 16px 16px #fa5a46, 17px 17px #fa5a46, 18px 18px #fa5a46, 19px 19px #fa5a46, 20px 20px #fa5a46, 21px 21px #fa5a46, 22px 22px #fa5a46, 23px 23px #fa5a46, 24px 24px #fa5a46, 25px 25px #fa5a46, 26px 26px #fa5a46, 27px 27px #fa5a46, 28px 28px #fa5a46, 29px 29px #fa5a46, 30px 30px #fa5a46, 31px 31px #fa5a46, 32px 32px #fa5a46, 33px 33px #fa5a46, 34px 34px #fa5a46, 35px 35px #fa5a46, 36px 36px #fa5a46, 37px 37px #fa5a46, 38px 38px #fa5a46, 39px 39px #fa5a46, 40px 40px #fa5a46, 41px 41px #fa5a46, 42px 42px #fa5a46, 43px 43px #fa5a46, 44px 44px #fa5a46, 45px 45px #fa5a46, 46px 46px #fa5a46, 47px 47px #fa5a46, 48px 48px #fa5a46, 49px 49px #fa5a46, 50px 50px #fa5a46, 51px 51px #fa5a46, 52px 52px #fa5a46, 53px 53px #fa5a46, 54px 54px #fa5a46, 55px 55px #fa5a46, 56px 56px #fa5a46, 57px 57px #fa5a46, 58px 58px #fa5a46, 59px 59px #fa5a46, 60px 60px #fa5a46, 61px 61px #fa5a46, 62px 62px #fa5a46, 63px 63px #fa5a46, 64px 64px #fa5a46, 65px 65px #fa5a46, 66px 66px #fa5a46, 67px 67px #fa5a46, 68px 68px #fa5a46, 69px 69px #fa5a46, 70px 70px #fa5a46, 71px 71px #fa5a46, 72px 72px #fa5a46, 73px 73px #fa5a46, 74px 74px #fa5a46, 75px 75px #fa5a46, 76px 76px #fa5a46, 77px 77px #fa5a46, 78px 78px #fa5a46, 79px 79px #fa5a46, 80px 80px #fa5a46, 81px 81px #fa5a46, 82px 82px #fa5a46, 83px 83px #fa5a46, 84px 84px #fa5a46, 85px 85px #fa5a46;\n}\n.button-longshadow.button-caution:active, .button-longshadow.button-caution.active, .button-longshadow.button-caution.is-active,\n    .button-longshadow-right.button-caution:active,\n    .button-longshadow-right.button-caution.active,\n    .button-longshadow-right.button-caution.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-royal,\n  .button-longshadow-right.button-royal {\n    text-shadow: 0px 0px #1baa7d, 1px 1px #1baa7d, 2px 2px #1baa7d, 3px 3px #1baa7d, 4px 4px #1baa7d, 5px 5px #1baa7d, 6px 6px #1baa7d, 7px 7px #1baa7d, 8px 8px #1baa7d, 9px 9px #1baa7d, 10px 10px #1baa7d, 11px 11px #1baa7d, 12px 12px #1baa7d, 13px 13px #1baa7d, 14px 14px #1baa7d, 15px 15px #1baa7d, 16px 16px #1baa7d, 17px 17px #1baa7d, 18px 18px #1baa7d, 19px 19px #1baa7d, 20px 20px #1baa7d, 21px 21px #1baa7d, 22px 22px #1baa7d, 23px 23px #1baa7d, 24px 24px #1baa7d, 25px 25px #1baa7d, 26px 26px #1baa7d, 27px 27px #1baa7d, 28px 28px #1baa7d, 29px 29px #1baa7d, 30px 30px #1baa7d, 31px 31px #1baa7d, 32px 32px #1baa7d, 33px 33px #1baa7d, 34px 34px #1baa7d, 35px 35px #1baa7d, 36px 36px #1baa7d, 37px 37px #1baa7d, 38px 38px #1baa7d, 39px 39px #1baa7d, 40px 40px #1baa7d, 41px 41px #1baa7d, 42px 42px #1baa7d, 43px 43px #1baa7d, 44px 44px #1baa7d, 45px 45px #1baa7d, 46px 46px #1baa7d, 47px 47px #1baa7d, 48px 48px #1baa7d, 49px 49px #1baa7d, 50px 50px #1baa7d, 51px 51px #1baa7d, 52px 52px #1baa7d, 53px 53px #1baa7d, 54px 54px #1baa7d, 55px 55px #1baa7d, 56px 56px #1baa7d, 57px 57px #1baa7d, 58px 58px #1baa7d, 59px 59px #1baa7d, 60px 60px #1baa7d, 61px 61px #1baa7d, 62px 62px #1baa7d, 63px 63px #1baa7d, 64px 64px #1baa7d, 65px 65px #1baa7d, 66px 66px #1baa7d, 67px 67px #1baa7d, 68px 68px #1baa7d, 69px 69px #1baa7d, 70px 70px #1baa7d, 71px 71px #1baa7d, 72px 72px #1baa7d, 73px 73px #1baa7d, 74px 74px #1baa7d, 75px 75px #1baa7d, 76px 76px #1baa7d, 77px 77px #1baa7d, 78px 78px #1baa7d, 79px 79px #1baa7d, 80px 80px #1baa7d, 81px 81px #1baa7d, 82px 82px #1baa7d, 83px 83px #1baa7d, 84px 84px #1baa7d, 85px 85px #1baa7d;\n}\n.button-longshadow.button-royal:active, .button-longshadow.button-royal.active, .button-longshadow.button-royal.is-active,\n    .button-longshadow-right.button-royal:active,\n    .button-longshadow-right.button-royal.active,\n    .button-longshadow-right.button-royal.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n\n/*\n* Shadow Left\n*\n*/\n.button-longshadow-left {\n  overflow: hidden;\n}\n.button-longshadow-left.button-primary {\n    text-shadow: 0px 0px #336699, -1px 1px #336699, -2px 2px #336699, -3px 3px #336699, -4px 4px #336699, -5px 5px #336699, -6px 6px #336699, -7px 7px #336699, -8px 8px #336699, -9px 9px #336699, -10px 10px #336699, -11px 11px #336699, -12px 12px #336699, -13px 13px #336699, -14px 14px #336699, -15px 15px #336699, -16px 16px #336699, -17px 17px #336699, -18px 18px #336699, -19px 19px #336699, -20px 20px #336699, -21px 21px #336699, -22px 22px #336699, -23px 23px #336699, -24px 24px #336699, -25px 25px #336699, -26px 26px #336699, -27px 27px #336699, -28px 28px #336699, -29px 29px #336699, -30px 30px #336699, -31px 31px #336699, -32px 32px #336699, -33px 33px #336699, -34px 34px #336699, -35px 35px #336699, -36px 36px #336699, -37px 37px #336699, -38px 38px #336699, -39px 39px #336699, -40px 40px #336699, -41px 41px #336699, -42px 42px #336699, -43px 43px #336699, -44px 44px #336699, -45px 45px #336699, -46px 46px #336699, -47px 47px #336699, -48px 48px #336699, -49px 49px #336699, -50px 50px #336699, -51px 51px #336699, -52px 52px #336699, -53px 53px #336699, -54px 54px #336699, -55px 55px #336699, -56px 56px #336699, -57px 57px #336699, -58px 58px #336699, -59px 59px #336699, -60px 60px #336699, -61px 61px #336699, -62px 62px #336699, -63px 63px #336699, -64px 64px #336699, -65px 65px #336699, -66px 66px #336699, -67px 67px #336699, -68px 68px #336699, -69px 69px #336699, -70px 70px #336699, -71px 71px #336699, -72px 72px #336699, -73px 73px #336699, -74px 74px #336699, -75px 75px #336699, -76px 76px #336699, -77px 77px #336699, -78px 78px #336699, -79px 79px #336699, -80px 80px #336699, -81px 81px #336699, -82px 82px #336699, -83px 83px #336699, -84px 84px #336699, -85px 85px #336699;\n}\n.button-longshadow-left.button-primary:active, .button-longshadow-left.button-primary.active, .button-longshadow-left.button-primary.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-plain {\n    text-shadow: 0px 0px #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6, -36px 36px #e6e6e6, -37px 37px #e6e6e6, -38px 38px #e6e6e6, -39px 39px #e6e6e6, -40px 40px #e6e6e6, -41px 41px #e6e6e6, -42px 42px #e6e6e6, -43px 43px #e6e6e6, -44px 44px #e6e6e6, -45px 45px #e6e6e6, -46px 46px #e6e6e6, -47px 47px #e6e6e6, -48px 48px #e6e6e6, -49px 49px #e6e6e6, -50px 50px #e6e6e6, -51px 51px #e6e6e6, -52px 52px #e6e6e6, -53px 53px #e6e6e6, -54px 54px #e6e6e6, -55px 55px #e6e6e6, -56px 56px #e6e6e6, -57px 57px #e6e6e6, -58px 58px #e6e6e6, -59px 59px #e6e6e6, -60px 60px #e6e6e6, -61px 61px #e6e6e6, -62px 62px #e6e6e6, -63px 63px #e6e6e6, -64px 64px #e6e6e6, -65px 65px #e6e6e6, -66px 66px #e6e6e6, -67px 67px #e6e6e6, -68px 68px #e6e6e6, -69px 69px #e6e6e6, -70px 70px #e6e6e6, -71px 71px #e6e6e6, -72px 72px #e6e6e6, -73px 73px #e6e6e6, -74px 74px #e6e6e6, -75px 75px #e6e6e6, -76px 76px #e6e6e6, -77px 77px #e6e6e6, -78px 78px #e6e6e6, -79px 79px #e6e6e6, -80px 80px #e6e6e6, -81px 81px #e6e6e6, -82px 82px #e6e6e6, -83px 83px #e6e6e6, -84px 84px #e6e6e6, -85px 85px #e6e6e6;\n}\n.button-longshadow-left.button-plain:active, .button-longshadow-left.button-plain.active, .button-longshadow-left.button-plain.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-inverse {\n    text-shadow: 0px 0px #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909, -36px 36px #090909, -37px 37px #090909, -38px 38px #090909, -39px 39px #090909, -40px 40px #090909, -41px 41px #090909, -42px 42px #090909, -43px 43px #090909, -44px 44px #090909, -45px 45px #090909, -46px 46px #090909, -47px 47px #090909, -48px 48px #090909, -49px 49px #090909, -50px 50px #090909, -51px 51px #090909, -52px 52px #090909, -53px 53px #090909, -54px 54px #090909, -55px 55px #090909, -56px 56px #090909, -57px 57px #090909, -58px 58px #090909, -59px 59px #090909, -60px 60px #090909, -61px 61px #090909, -62px 62px #090909, -63px 63px #090909, -64px 64px #090909, -65px 65px #090909, -66px 66px #090909, -67px 67px #090909, -68px 68px #090909, -69px 69px #090909, -70px 70px #090909, -71px 71px #090909, -72px 72px #090909, -73px 73px #090909, -74px 74px #090909, -75px 75px #090909, -76px 76px #090909, -77px 77px #090909, -78px 78px #090909, -79px 79px #090909, -80px 80px #090909, -81px 81px #090909, -82px 82px #090909, -83px 83px #090909, -84px 84px #090909, -85px 85px #090909;\n}\n.button-longshadow-left.button-inverse:active, .button-longshadow-left.button-inverse.active, .button-longshadow-left.button-inverse.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-action {\n    text-shadow: 0px 0px #22b1e3, -1px 1px #22b1e3, -2px 2px #22b1e3, -3px 3px #22b1e3, -4px 4px #22b1e3, -5px 5px #22b1e3, -6px 6px #22b1e3, -7px 7px #22b1e3, -8px 8px #22b1e3, -9px 9px #22b1e3, -10px 10px #22b1e3, -11px 11px #22b1e3, -12px 12px #22b1e3, -13px 13px #22b1e3, -14px 14px #22b1e3, -15px 15px #22b1e3, -16px 16px #22b1e3, -17px 17px #22b1e3, -18px 18px #22b1e3, -19px 19px #22b1e3, -20px 20px #22b1e3, -21px 21px #22b1e3, -22px 22px #22b1e3, -23px 23px #22b1e3, -24px 24px #22b1e3, -25px 25px #22b1e3, -26px 26px #22b1e3, -27px 27px #22b1e3, -28px 28px #22b1e3, -29px 29px #22b1e3, -30px 30px #22b1e3, -31px 31px #22b1e3, -32px 32px #22b1e3, -33px 33px #22b1e3, -34px 34px #22b1e3, -35px 35px #22b1e3, -36px 36px #22b1e3, -37px 37px #22b1e3, -38px 38px #22b1e3, -39px 39px #22b1e3, -40px 40px #22b1e3, -41px 41px #22b1e3, -42px 42px #22b1e3, -43px 43px #22b1e3, -44px 44px #22b1e3, -45px 45px #22b1e3, -46px 46px #22b1e3, -47px 47px #22b1e3, -48px 48px #22b1e3, -49px 49px #22b1e3, -50px 50px #22b1e3, -51px 51px #22b1e3, -52px 52px #22b1e3, -53px 53px #22b1e3, -54px 54px #22b1e3, -55px 55px #22b1e3, -56px 56px #22b1e3, -57px 57px #22b1e3, -58px 58px #22b1e3, -59px 59px #22b1e3, -60px 60px #22b1e3, -61px 61px #22b1e3, -62px 62px #22b1e3, -63px 63px #22b1e3, -64px 64px #22b1e3, -65px 65px #22b1e3, -66px 66px #22b1e3, -67px 67px #22b1e3, -68px 68px #22b1e3, -69px 69px #22b1e3, -70px 70px #22b1e3, -71px 71px #22b1e3, -72px 72px #22b1e3, -73px 73px #22b1e3, -74px 74px #22b1e3, -75px 75px #22b1e3, -76px 76px #22b1e3, -77px 77px #22b1e3, -78px 78px #22b1e3, -79px 79px #22b1e3, -80px 80px #22b1e3, -81px 81px #22b1e3, -82px 82px #22b1e3, -83px 83px #22b1e3, -84px 84px #22b1e3, -85px 85px #22b1e3;\n}\n.button-longshadow-left.button-action:active, .button-longshadow-left.button-action.active, .button-longshadow-left.button-action.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-highlight {\n    text-shadow: 0px 0px #ff9f2c, -1px 1px #ff9f2c, -2px 2px #ff9f2c, -3px 3px #ff9f2c, -4px 4px #ff9f2c, -5px 5px #ff9f2c, -6px 6px #ff9f2c, -7px 7px #ff9f2c, -8px 8px #ff9f2c, -9px 9px #ff9f2c, -10px 10px #ff9f2c, -11px 11px #ff9f2c, -12px 12px #ff9f2c, -13px 13px #ff9f2c, -14px 14px #ff9f2c, -15px 15px #ff9f2c, -16px 16px #ff9f2c, -17px 17px #ff9f2c, -18px 18px #ff9f2c, -19px 19px #ff9f2c, -20px 20px #ff9f2c, -21px 21px #ff9f2c, -22px 22px #ff9f2c, -23px 23px #ff9f2c, -24px 24px #ff9f2c, -25px 25px #ff9f2c, -26px 26px #ff9f2c, -27px 27px #ff9f2c, -28px 28px #ff9f2c, -29px 29px #ff9f2c, -30px 30px #ff9f2c, -31px 31px #ff9f2c, -32px 32px #ff9f2c, -33px 33px #ff9f2c, -34px 34px #ff9f2c, -35px 35px #ff9f2c, -36px 36px #ff9f2c, -37px 37px #ff9f2c, -38px 38px #ff9f2c, -39px 39px #ff9f2c, -40px 40px #ff9f2c, -41px 41px #ff9f2c, -42px 42px #ff9f2c, -43px 43px #ff9f2c, -44px 44px #ff9f2c, -45px 45px #ff9f2c, -46px 46px #ff9f2c, -47px 47px #ff9f2c, -48px 48px #ff9f2c, -49px 49px #ff9f2c, -50px 50px #ff9f2c, -51px 51px #ff9f2c, -52px 52px #ff9f2c, -53px 53px #ff9f2c, -54px 54px #ff9f2c, -55px 55px #ff9f2c, -56px 56px #ff9f2c, -57px 57px #ff9f2c, -58px 58px #ff9f2c, -59px 59px #ff9f2c, -60px 60px #ff9f2c, -61px 61px #ff9f2c, -62px 62px #ff9f2c, -63px 63px #ff9f2c, -64px 64px #ff9f2c, -65px 65px #ff9f2c, -66px 66px #ff9f2c, -67px 67px #ff9f2c, -68px 68px #ff9f2c, -69px 69px #ff9f2c, -70px 70px #ff9f2c, -71px 71px #ff9f2c, -72px 72px #ff9f2c, -73px 73px #ff9f2c, -74px 74px #ff9f2c, -75px 75px #ff9f2c, -76px 76px #ff9f2c, -77px 77px #ff9f2c, -78px 78px #ff9f2c, -79px 79px #ff9f2c, -80px 80px #ff9f2c, -81px 81px #ff9f2c, -82px 82px #ff9f2c, -83px 83px #ff9f2c, -84px 84px #ff9f2c, -85px 85px #ff9f2c;\n}\n.button-longshadow-left.button-highlight:active, .button-longshadow-left.button-highlight.active, .button-longshadow-left.button-highlight.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-caution {\n    text-shadow: 0px 0px #fa5a46, -1px 1px #fa5a46, -2px 2px #fa5a46, -3px 3px #fa5a46, -4px 4px #fa5a46, -5px 5px #fa5a46, -6px 6px #fa5a46, -7px 7px #fa5a46, -8px 8px #fa5a46, -9px 9px #fa5a46, -10px 10px #fa5a46, -11px 11px #fa5a46, -12px 12px #fa5a46, -13px 13px #fa5a46, -14px 14px #fa5a46, -15px 15px #fa5a46, -16px 16px #fa5a46, -17px 17px #fa5a46, -18px 18px #fa5a46, -19px 19px #fa5a46, -20px 20px #fa5a46, -21px 21px #fa5a46, -22px 22px #fa5a46, -23px 23px #fa5a46, -24px 24px #fa5a46, -25px 25px #fa5a46, -26px 26px #fa5a46, -27px 27px #fa5a46, -28px 28px #fa5a46, -29px 29px #fa5a46, -30px 30px #fa5a46, -31px 31px #fa5a46, -32px 32px #fa5a46, -33px 33px #fa5a46, -34px 34px #fa5a46, -35px 35px #fa5a46, -36px 36px #fa5a46, -37px 37px #fa5a46, -38px 38px #fa5a46, -39px 39px #fa5a46, -40px 40px #fa5a46, -41px 41px #fa5a46, -42px 42px #fa5a46, -43px 43px #fa5a46, -44px 44px #fa5a46, -45px 45px #fa5a46, -46px 46px #fa5a46, -47px 47px #fa5a46, -48px 48px #fa5a46, -49px 49px #fa5a46, -50px 50px #fa5a46, -51px 51px #fa5a46, -52px 52px #fa5a46, -53px 53px #fa5a46, -54px 54px #fa5a46, -55px 55px #fa5a46, -56px 56px #fa5a46, -57px 57px #fa5a46, -58px 58px #fa5a46, -59px 59px #fa5a46, -60px 60px #fa5a46, -61px 61px #fa5a46, -62px 62px #fa5a46, -63px 63px #fa5a46, -64px 64px #fa5a46, -65px 65px #fa5a46, -66px 66px #fa5a46, -67px 67px #fa5a46, -68px 68px #fa5a46, -69px 69px #fa5a46, -70px 70px #fa5a46, -71px 71px #fa5a46, -72px 72px #fa5a46, -73px 73px #fa5a46, -74px 74px #fa5a46, -75px 75px #fa5a46, -76px 76px #fa5a46, -77px 77px #fa5a46, -78px 78px #fa5a46, -79px 79px #fa5a46, -80px 80px #fa5a46, -81px 81px #fa5a46, -82px 82px #fa5a46, -83px 83px #fa5a46, -84px 84px #fa5a46, -85px 85px #fa5a46;\n}\n.button-longshadow-left.button-caution:active, .button-longshadow-left.button-caution.active, .button-longshadow-left.button-caution.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-royal {\n    text-shadow: 0px 0px #1baa7d, -1px 1px #1baa7d, -2px 2px #1baa7d, -3px 3px #1baa7d, -4px 4px #1baa7d, -5px 5px #1baa7d, -6px 6px #1baa7d, -7px 7px #1baa7d, -8px 8px #1baa7d, -9px 9px #1baa7d, -10px 10px #1baa7d, -11px 11px #1baa7d, -12px 12px #1baa7d, -13px 13px #1baa7d, -14px 14px #1baa7d, -15px 15px #1baa7d, -16px 16px #1baa7d, -17px 17px #1baa7d, -18px 18px #1baa7d, -19px 19px #1baa7d, -20px 20px #1baa7d, -21px 21px #1baa7d, -22px 22px #1baa7d, -23px 23px #1baa7d, -24px 24px #1baa7d, -25px 25px #1baa7d, -26px 26px #1baa7d, -27px 27px #1baa7d, -28px 28px #1baa7d, -29px 29px #1baa7d, -30px 30px #1baa7d, -31px 31px #1baa7d, -32px 32px #1baa7d, -33px 33px #1baa7d, -34px 34px #1baa7d, -35px 35px #1baa7d, -36px 36px #1baa7d, -37px 37px #1baa7d, -38px 38px #1baa7d, -39px 39px #1baa7d, -40px 40px #1baa7d, -41px 41px #1baa7d, -42px 42px #1baa7d, -43px 43px #1baa7d, -44px 44px #1baa7d, -45px 45px #1baa7d, -46px 46px #1baa7d, -47px 47px #1baa7d, -48px 48px #1baa7d, -49px 49px #1baa7d, -50px 50px #1baa7d, -51px 51px #1baa7d, -52px 52px #1baa7d, -53px 53px #1baa7d, -54px 54px #1baa7d, -55px 55px #1baa7d, -56px 56px #1baa7d, -57px 57px #1baa7d, -58px 58px #1baa7d, -59px 59px #1baa7d, -60px 60px #1baa7d, -61px 61px #1baa7d, -62px 62px #1baa7d, -63px 63px #1baa7d, -64px 64px #1baa7d, -65px 65px #1baa7d, -66px 66px #1baa7d, -67px 67px #1baa7d, -68px 68px #1baa7d, -69px 69px #1baa7d, -70px 70px #1baa7d, -71px 71px #1baa7d, -72px 72px #1baa7d, -73px 73px #1baa7d, -74px 74px #1baa7d, -75px 75px #1baa7d, -76px 76px #1baa7d, -77px 77px #1baa7d, -78px 78px #1baa7d, -79px 79px #1baa7d, -80px 80px #1baa7d, -81px 81px #1baa7d, -82px 82px #1baa7d, -83px 83px #1baa7d, -84px 84px #1baa7d, -85px 85px #1baa7d;\n}\n.button-longshadow-left.button-royal:active, .button-longshadow-left.button-royal.active, .button-longshadow-left.button-royal.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n\n/*\n* Button Sizes\n*\n* This file creates the various button sizes\n* (ex. .button-large, .button-small, etc.)\n*/\n.button-giant {\n  font-size: 28px;\n  height: 70px;\n  line-height: 70px;\n  padding: 0 70px;\n}\n.button-jumbo {\n  font-size: 24px;\n  height: 60px;\n  line-height: 60px;\n  padding: 0 60px;\n}\n.button-large {\n  font-size: 20px;\n  height: 50px;\n  line-height: 50px;\n  padding: 0 50px;\n}\n.button-normal {\n  font-size: 16px;\n  height: 40px;\n  line-height: 40px;\n  padding: 0 40px;\n}\n.button-small {\n  font-size: 12px;\n  height: 30px;\n  line-height: 30px;\n  padding: 0 30px;\n}\n.button-tiny {\n  font-size: 9.6px;\n  height: 24px;\n  line-height: 24px;\n  padding: 0 24px;\n}\na:hover,\na:focus {\n  color: #000;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1420:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1421);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("b94321a8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./ladda-themeless.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./ladda-themeless.min.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1421:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * Ladda\r\n * http://lab.hakim.se/ladda\r\n * MIT licensed\r\n *\r\n * Copyright (C) 2014 Hakim El Hattab, http://hakim.se\r\n */\n.ladda-button{position:relative\n}\n.ladda-button .ladda-spinner{position:absolute;z-index:2;display:inline-block;width:32px;height:32px;top:50%;margin-top:0;opacity:0;pointer-events:none\n}\n.ladda-button .ladda-label{position:relative;z-index:3\n}\n.ladda-button .ladda-progress{position:absolute;width:0;height:100%;left:0;top:0;background:rgba(0,0,0,0.2);visibility:hidden;opacity:0;-webkit-transition:0.1s linear all !important;-moz-transition:0.1s linear all !important;-ms-transition:0.1s linear all !important;-o-transition:0.1s linear all !important;transition:0.1s linear all !important\n}\n.ladda-button[data-loading] .ladda-progress{opacity:1;visibility:visible\n}\n.ladda-button,.ladda-button .ladda-spinner,.ladda-button .ladda-label{-webkit-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-moz-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-ms-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-o-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important\n}\n.ladda-button[data-style=zoom-in],.ladda-button[data-style=zoom-in] .ladda-spinner,.ladda-button[data-style=zoom-in] .ladda-label,.ladda-button[data-style=zoom-out],.ladda-button[data-style=zoom-out] .ladda-spinner,.ladda-button[data-style=zoom-out] .ladda-label{-webkit-transition:0.3s ease all !important;-moz-transition:0.3s ease all !important;-ms-transition:0.3s ease all !important;-o-transition:0.3s ease all !important;transition:0.3s ease all !important\n}\n.ladda-button[data-style=expand-right] .ladda-spinner{right:-6px\n}\n.ladda-button[data-style=expand-right][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-right][data-size=\"xs\"] .ladda-spinner{right:-12px\n}\n.ladda-button[data-style=expand-right][data-loading]{padding-right:56px\n}\n.ladda-button[data-style=expand-right][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-right][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-right][data-loading][data-size=\"xs\"]{padding-right:40px\n}\n.ladda-button[data-style=expand-left] .ladda-spinner{left:26px\n}\n.ladda-button[data-style=expand-left][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-left][data-size=\"xs\"] .ladda-spinner{left:4px\n}\n.ladda-button[data-style=expand-left][data-loading]{padding-left:56px\n}\n.ladda-button[data-style=expand-left][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-left][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-left][data-loading][data-size=\"xs\"]{padding-left:40px\n}\n.ladda-button[data-style=expand-up]{overflow:hidden\n}\n.ladda-button[data-style=expand-up] .ladda-spinner{top:-32px;left:50%;margin-left:0\n}\n.ladda-button[data-style=expand-up][data-loading]{padding-top:54px\n}\n.ladda-button[data-style=expand-up][data-loading] .ladda-spinner{opacity:1;top:26px;margin-top:0\n}\n.ladda-button[data-style=expand-up][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-up][data-loading][data-size=\"xs\"]{padding-top:32px\n}\n.ladda-button[data-style=expand-up][data-loading][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-up][data-loading][data-size=\"xs\"] .ladda-spinner{top:4px\n}\n.ladda-button[data-style=expand-down]{overflow:hidden\n}\n.ladda-button[data-style=expand-down] .ladda-spinner{top:62px;left:50%;margin-left:0\n}\n.ladda-button[data-style=expand-down][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-down][data-size=\"xs\"] .ladda-spinner{top:40px\n}\n.ladda-button[data-style=expand-down][data-loading]{padding-bottom:54px\n}\n.ladda-button[data-style=expand-down][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-down][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-down][data-loading][data-size=\"xs\"]{padding-bottom:32px\n}\n.ladda-button[data-style=slide-left]{overflow:hidden\n}\n.ladda-button[data-style=slide-left] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-left] .ladda-spinner{left:100%;margin-left:0\n}\n.ladda-button[data-style=slide-left][data-loading] .ladda-label{opacity:0;left:-100%\n}\n.ladda-button[data-style=slide-left][data-loading] .ladda-spinner{opacity:1;left:50%\n}\n.ladda-button[data-style=slide-right]{overflow:hidden\n}\n.ladda-button[data-style=slide-right] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-right] .ladda-spinner{right:100%;margin-left:0;left:16px\n}\n.ladda-button[data-style=slide-right][data-loading] .ladda-label{opacity:0;left:100%\n}\n.ladda-button[data-style=slide-right][data-loading] .ladda-spinner{opacity:1;left:50%\n}\n.ladda-button[data-style=slide-up]{overflow:hidden\n}\n.ladda-button[data-style=slide-up] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-up] .ladda-spinner{left:50%;margin-left:0;margin-top:1em\n}\n.ladda-button[data-style=slide-up][data-loading] .ladda-label{opacity:0;top:-1em\n}\n.ladda-button[data-style=slide-up][data-loading] .ladda-spinner{opacity:1;margin-top:0\n}\n.ladda-button[data-style=slide-down]{overflow:hidden\n}\n.ladda-button[data-style=slide-down] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-down] .ladda-spinner{left:50%;margin-left:0;margin-top:-2em\n}\n.ladda-button[data-style=slide-down][data-loading] .ladda-label{opacity:0;top:1em\n}\n.ladda-button[data-style=slide-down][data-loading] .ladda-spinner{opacity:1;margin-top:0\n}\n.ladda-button[data-style=zoom-out]{overflow:hidden\n}\n.ladda-button[data-style=zoom-out] .ladda-spinner{left:50%;margin-left:32px;-webkit-transform:scale(2.5);-moz-transform:scale(2.5);-ms-transform:scale(2.5);-o-transform:scale(2.5);transform:scale(2.5)\n}\n.ladda-button[data-style=zoom-out] .ladda-label{position:relative;display:inline-block\n}\n.ladda-button[data-style=zoom-out][data-loading] .ladda-label{opacity:0;-webkit-transform:scale(0.5);-moz-transform:scale(0.5);-ms-transform:scale(0.5);-o-transform:scale(0.5);transform:scale(0.5)\n}\n.ladda-button[data-style=zoom-out][data-loading] .ladda-spinner{opacity:1;margin-left:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none\n}\n.ladda-button[data-style=zoom-in]{overflow:hidden\n}\n.ladda-button[data-style=zoom-in] .ladda-spinner{left:50%;margin-left:-16px;-webkit-transform:scale(0.2);-moz-transform:scale(0.2);-ms-transform:scale(0.2);-o-transform:scale(0.2);transform:scale(0.2)\n}\n.ladda-button[data-style=zoom-in] .ladda-label{position:relative;display:inline-block\n}\n.ladda-button[data-style=zoom-in][data-loading] .ladda-label{opacity:0;-webkit-transform:scale(2.2);-moz-transform:scale(2.2);-ms-transform:scale(2.2);-o-transform:scale(2.2);transform:scale(2.2)\n}\n.ladda-button[data-style=zoom-in][data-loading] .ladda-spinner{opacity:1;margin-left:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none\n}\n.ladda-button[data-style=contract]{overflow:hidden;width:100px\n}\n.ladda-button[data-style=contract] .ladda-spinner{left:50%;margin-left:0\n}\n.ladda-button[data-style=contract][data-loading]{border-radius:50%;width:52px\n}\n.ladda-button[data-style=contract][data-loading] .ladda-label{opacity:0\n}\n.ladda-button[data-style=contract][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=contract-overlay]{overflow:hidden;width:100px;box-shadow:0px 0px 0px 2000px transparent\n}\n.ladda-button[data-style=contract-overlay] .ladda-spinner{left:50%;margin-left:0\n}\n.ladda-button[data-style=contract-overlay][data-loading]{border-radius:50%;width:52px;box-shadow:0px 0px 0px 2000px rgba(0,0,0,0.8)\n}\n.ladda-button[data-style=contract-overlay][data-loading] .ladda-label{opacity:0\n}\n.ladda-button[data-style=contract-overlay][data-loading] .ladda-spinner{opacity:1\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1422:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1423);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("3de2f043", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./advbuttons.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./advbuttons.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1423:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* flatbuttons */\nli {\n    list-style : none;\n}\n.flatbuttons {\n    padding-left : 4%;\n}\n.flatbuttons ul {\n    padding : 20px;\n}\n.flatbuttons ul li {\n    width      : 145px;\n    float      : left;\n    padding    : 5px;\n    list-style : none;\n}\n.flatbuttons div {\n    clear          : both;\n    padding-top    : 15px;\n    padding-bottom : 0;\n}\n.btn-rounded .button {\n    padding : 0 18px;\n}\n.flatbuttons .icon-btn {\n    padding : 0 29px;\n}\n/* flatbuttons for small width. */\n.flatbuttons_small ul li {\n    width   : 138px;\n    float   : left;\n    padding : 10px 20px 20px 0;\n}\n/*quick icons*/\n.panel-body .btn:not(.btn-block) {\n    margin-bottom : 10px;\n}\n/*Group buttons panel*/\n.ui-group-buttons .or {\n    position  : relative;\n    float     : left;\n    width     : .3em;\n    height    : 1.3em;\n    z-index   : 3;\n    font-size : 12px\n}\n.ui-group-buttons .or:before {\n    position           : absolute;\n    top                : 50%;\n    left               : 50%;\n    content            : 'or';\n    background-color   : #5a5a5a;\n    margin-top         : -.1em;\n    margin-left        : -.9em;\n    width              : 1.8em;\n    height             : 1.8em;\n    line-height        : 1.55;\n    color              : #fff;\n    font-style         : normal;\n    font-weight        : 400;\n    text-align         : center;\n    border-radius      : 500px;\n    -webkit-box-shadow : 0 0 0 1px rgba(0, 0, 0, 0.1);\n    box-shadow         : 0 0 0 1px rgba(0, 0, 0, 0.1);\n    -webkit-box-sizing : border-box;\n    -moz-box-sizing    : border-box;\n    box-sizing         : border-box\n}\n.ui-group-buttons .or:after {\n    position         : absolute;\n    top              : 0;\n    left             : 0;\n    content          : ' ';\n    width            : .3em;\n    height           : 2.84em;\n    background-color : rgba(0, 0, 0, 0);\n    border-top       : .6em solid #5a5a5a;\n    border-bottom    : .6em solid #5a5a5a\n}\n.ui-group-buttons .or.or-lg {\n    height    : 1.3em;\n    font-size : 16px\n}\n.ui-group-buttons .or.or-lg:after {\n    height : 2.85em\n}\n.ui-group-buttons .or.or-sm {\n    height : 1em\n}\n.ui-group-buttons .or.or-sm:after {\n    height : 2.5em\n}\n.ui-group-buttons .or.or-xs {\n    height : .25em\n}\n.ui-group-buttons .or.or-xs:after {\n    height  : 1.84em;\n    z-index : -1000\n}\n.ui-group-buttons {\n    display        : inline-block;\n    vertical-align : middle\n}\n.ui-group-buttons:after {\n    content    : \".\";\n    display    : block;\n    height     : 0;\n    clear      : both;\n    visibility : hidden\n}\n.ui-group-buttons .btn {\n    float         : left;\n    border-radius : 0\n}\n.ui-group-buttons .btn:first-child {\n    margin-left               : 0;\n    border-top-left-radius    : .25em;\n    border-bottom-left-radius : .25em;\n    padding-right             : 15px\n}\n.ui-group-buttons .btn:last-child {\n    border-top-right-radius    : .25em;\n    border-bottom-right-radius : .25em;\n    padding-left               : 15px\n}\n/*Group buttons panel ens here*/\n\n/*Buttons With Labels*/\n.btn-label {\n    position   : relative;\n    left       : -12px;\n    display    : inline-block;\n    padding    : 6px 15px;\n    background : rgba(0, 0, 0, 0.15);\n    /*border-radius: 3px 0 0 3px;*/\n}\n.btn-label.label-right {\n    left : 13px;\n}\n.btn-labeled {\n    padding-top    : 0;\n    padding-bottom : 0;\n}\n.btn_3d {\n    box-shadow : 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2) !important;\n}\n.button-circle {\n    width  : 115px;\n    height : 115px;\n}\n/*outline buttons*/\n.flatbuttons button {\n    margin-top : 20px;\n}\n.btn-up:before {\n    left                : 11%;\n    top                 : 373px;\n    margin-left         : -8px;\n    border-bottom-color : #6699cc;\n}\n.btn-direction:before {\n    position    : absolute;\n    line-height : 0;\n    content     : '';\n    border      : 8px solid transparent;\n}\n.btn-primary.btn-up:before {\n    border-bottom-color : #6699cc;\n}\n.btn-warning.btn-right:focus:before,\n.btn-warning.btn-right:hover:before {\n    border-left-color : #f0ad4e;\n}\n.btn-warning.btn-right:before {\n    border-left-color : #f0ad4e;\n}\n.btn-right:before {\n    top               : 56%;\n    left              : 33%;\n    margin-top        : -8px;\n    border-left-color : #e4eaec;\n}\n.btn-success.btn-bottom:before {\n    border-top-color : #66cc99;\n}\n.btn-bottom:before {\n    bottom           : 39.1%;\n    left             : 47%;\n    margin-left      : -8px;\n    border-top-color : #66cc99;\n}\n.btn-danger.btn-left:before {\n    border-right-color : #ff6666;\n}\n.btn-left:before {\n    top                : 56%;\n    left               : 58.8%;\n    margin-top         : -8px;\n    border-right-color : #ff6666;\n}\n/*animate button*/\n.btn-animate-side:hover span > .icon {\n    opacity : 1;\n}\n.btn-animate-side span > .icon {\n    position           : absolute;\n    top                : 91%;\n    left               : 90px;\n    display            : block;\n    opacity            : 0;\n    -webkit-transition : opacity .2s ease-out 0s;\n    -o-transition      : opacity .2s ease-out 0s;\n    transition         : opacity .2s ease-out 0s;\n    -webkit-transform  : translate(-20px, -50%);\n    -ms-transform      : translate(-20px, -50%);\n    -o-transform       : translate(-20px, -50%);\n    transform          : translate(-20px, -50%);\n}\n.btn-animate-vertical:hover span > .icon {\n    opacity : 1;\n}\n.btn-animate-vertical span > .icon {\n    position          : absolute;\n    top               : inherit;\n    left              : 33%;\n    display           : block;\n    font-size         : 24px;\n    -webkit-transform : translate(-50%, -100%);\n    -ms-transform     : translate(-50%, -100%);\n    -o-transform      : translate(-50%, -100%);\n    transform         : translate(-50%, -100%);\n}\n.btn .icon {\n    width       : 1em;\n    margin      : -1px 3px 0;\n    line-height : inherit;\n    text-align  : center;\n}\n.btn-animate span {\n    display : block;\n    width   : 100%;\n    height  : 100%;\n}\n.btn-animate-side span:hover {\n    -webkit-transition : -webkit-transform .2s ease-out 0s;\n    -o-transition      : -o-transform .2s ease-out 0s;\n    transition         : transform .2s ease-out 0s;\n}\n.btn-animate-side:hover {\n    padding : 8px 28px;\n}\n/* vertical animation code*/\n.btn-animate-vertical span {\n    -webkit-transition : all .2s ease-out 0s;\n    -o-transition      : all .2s ease-out 0s;\n    transition         : all .2s ease-out 0s;\n}\n.btn-animate-vertical:focus,\n.btn-animate-vertical:active,\n.btn-animate-vertical:hover {\n    outline : none;\n}\n.btn-animate-vertical span > .icon {\n    opacity           : 0;\n    position          : absolute;\n    top               : -2px;\n    left              : 50%;\n    display           : block;\n    font-size         : 24px;\n    -webkit-transform : translate(-50%, -100%);\n    -ms-transform     : translate(-50%, -100%);\n    -o-transform      : translate(-50%, -100%);\n    transform         : translate(-50%, -100%);\n}\n.btn-animate-vertical:hover span {\n    -webkit-transform : translate(0, 150%);\n    -ms-transform     : translate(0, 150%);\n    -o-transform      : translate(0, 150%);\n    transform         : translate(0, 150%)\n}\n.btn-animate-vertical.btn-xs span > .icon {\n    top       : -5px;\n    font-size : 18px\n}\n.btn-animate-vertical.btn-sm span > .icon {\n    top       : -3px;\n    font-size : 21px\n}\n.btn-animate-vertical.btn-lg span > .icon {\n    font-size : 37px\n}\n/*side animation code*/\n.btn-animate-side {\n    padding : 8px 28px\n}\n.btn-animate-side span {\n    -webkit-transition : -webkit-transform .2s ease-out 0s;\n    -o-transition      : -o-transform .2s ease-out 0s;\n    transition         : transform .2s ease-out 0s\n}\n.btn-animate-side span > .icon {\n    position           : absolute;\n    top                : 50%;\n    left               : 0;\n    display            : block;\n    opacity            : 0;\n    -webkit-transition : opacity .2s ease-out 0s;\n    -o-transition      : opacity .2s ease-out 0s;\n    transition         : opacity .2s ease-out 0s;\n    -webkit-transform  : translate(-20px, -50%);\n    -ms-transform      : translate(-20px, -50%);\n    -o-transform       : translate(-20px, -50%);\n    transform          : translate(-20px, -50%)\n}\n.btn-animate-side:hover span {\n    -webkit-transform : translate(10px, 0);\n    -ms-transform     : translate(10px, 0);\n    -o-transform      : translate(10px, 0);\n    transform         : translate(10px, 0)\n}\n.btn-animate-side:hover span > .icon {\n    opacity : 1\n}\n.btn-animate-side.btn-xs {\n    padding : 3px 14px\n}\n.btn-animate-side.btn-xs span > .icon {\n    left : 5px\n}\n.btn-animate-side.btn-xs:hover span {\n    -webkit-transform : translate(8px, 0);\n    -ms-transform     : translate(8px, 0);\n    -o-transform      : translate(8px, 0);\n    transform         : translate(8px, 0)\n}\n.btn-animate-side.btn-sm {\n    padding : 6px 22px\n}\n.btn-animate-side.btn-sm span > .icon {\n    left : 3px\n}\n.btn-animate-side.btn-sm:hover span {\n    -webkit-transform : translate(8px, 0);\n    -ms-transform     : translate(8px, 0);\n    -o-transform      : translate(8px, 0);\n    transform         : translate(8px, 0)\n}\n.btn-animate-side.btn-lg {\n    padding : 10px 33px\n}\n.btn-animate-side.btn-lg span > .icon {\n    left : -6px\n}\n.btn-animate-side.btn-lg:hover span {\n    -webkit-transform : translate(14px, 0);\n    -ms-transform     : translate(14px, 0);\n    -o-transform      : translate(14px, 0);\n    transform         : translate(14px, 0)\n}\n.btn-floating {\n    width              : 56px;\n    height             : 56px;\n    padding            : 0;\n    margin             : 0;\n    font-size          : 24px;\n    text-align         : center;\n    border-radius      : 100%;\n    -webkit-box-shadow : 0 6px 10px rgba(0, 0, 0, .15);\n    box-shadow         : 0 6px 10px rgba(0, 0, 0, .15);\n}\n.btn-floating.btn-sm {\n    width     : 40px;\n    height    : 40px;\n    padding   : 0;\n    font-size : 15px;\n}\n/*contract overlay button size*/\n.ladda-button[data-style=contract-overlay] {\n    width : 140px;\n}\n.pad_left {\n    padding-left : 40px;\n}\n.flatbuttons div {\n    padding-top : 10px;\n}\n.m-r-50 {\n    margin-right : 50px;\n}\n.btn-group.drop_btn {\n    padding-top : 0;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1424:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1425);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("c0d6d792", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=4!./buttons.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=4!./buttons.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1425:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.ladda-spinner div {\n    top: 5px !important;\n    left: 5px !important;\n}\n.quick_shortcuts .btn-responsive,.quick_shortcuts .btn-block {\n    margin-top: 0.5rem;\n}\n.ui-group-buttons .btn-default{\n    background-color: #ccc;\n}\n.example-buttons .btn{\n    padding: 0.6rem 1.25rem;\n    font-size: 1.1rem;\n}\n.hvr-buzz{\n    padding-right: 40px;\n    padding-left: 40px;\n    color: #666;\n}\n.ui-group-buttons .or-lg:before{\n        width:1.5em;\n        height:1.5em;\n        top: 7px;\n        left:85%;\n}\n.ui-group-buttons .or-lg:after{\n        height:2.75rem !important;\n}\n.or-sm:after{\n        border-bottom: 2rem solid #5a5a5a !important;\n}\n.pad_left .ladda-button{\n        margin-bottom: 10px;\n}\n.flatbuttons  .hvr-buzz:hover{\n        color: #333;\n}\n.button:active,.btn:active,.btn-success:focus,.ui-group-buttons .btn-default,.ui-group-buttons a{\n        color:#fff !important;\n}\n.button-default:active,.hvr-buzz:active,.btn-default.text-dark:active{\n        color: #333 !important;\n}\n.btn-animate-vertical{\n        padding: 8px 12px;\n}\n.ui-group-buttons .or:after{\n        height:2.75em;\n}\n.ui-group-buttons .or.or-sm{\n        height: 1.4em;\n}\n@media(max-width: 1024px){\n.boxed .pad_left{\n            padding-left: 0;\n}\n.boxed .pad_left .text-left .col-md-2,.boxed .pad_left .text-left .col-sm-4{\n            padding-left: 13px;\n            padding-right: 13px;\n            margin-right: 10px;\n}\n.labled_buttons .col-md-6{\n            margin-right: 10px;\n}\n}\n.btn-labeled{\n        margin-bottom: 10px;\n}\n.flatbuttons ul{\n        padding-top: 0;\n}\n.flatbuttons button{\n        margin-top: 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1426:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(526);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__ = __webpack_require__(572);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js__ = __webpack_require__(1427);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -248,156 +837,568 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"]);
+var Ladda = __webpack_require__(1428);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "circle_sliders",
+    name: "buttons",
     components: {
-
-        circleslider: __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"].VueCircleSlider,
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            sliderValue: 20,
-            val2: 0,
-            val3: 0,
-            val4: 0,
-            val5: 0,
-            val6: 0,
-            val7: 0
-        };
-    },
-
     mounted: function mounted() {
         "use strict";
+        //INITIALIZE PAGE
+        // Bind normal buttons
 
-        $(document).ready(function () {
-            // spark line charts js start
-            $(".linechart").sparkline([5, 1, 7, 8, 2, 6, 4, 7, 4, 2, 4], {
-                type: 'line',
-                height: "50px",
-                width: "80px;",
-                lineColor: '#428bca',
-                fillColor: 'rgba(66,139,202,0.5)'
-            });
-            $(".barchart").sparkline([5, 6, 7, 2, 0, -4, -2, 4], {
-                type: 'bar',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                barColor: "#428bca",
-                negBarColor: '#fb8678'
-            });
-            $(".stackedbarchart").sparkline([[5, 4], [4, 7], [7, 3], [3, 5], [6, 3], [2, 5]], {
-                type: 'bar',
-                zeroColor: '#dcdcdc',
-                nullColor: '#dcdcdc ',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                stackedBarColor: ['#fb8678', '#428bca']
-            });
-            $(".tristatechart").sparkline([1, 1, 0, 1, -1, -1, 1, -1, 0, 0, 1, 1], {
-                type: 'tristate',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                posBarColor: '#22d69d',
-                negBarColor: '#fb8678',
-                zeroBarColor: '#dcdcdc'
-            });
-            $(".bulletchart").sparkline([10, 12, 12, 9, 7], {
-                type: 'bullet',
-                height: "30px",
-                width: "80px",
-                targetColor: '#fb8678',
-                performanceColor: '#4fc1e9',
-                rangeColors: ['#ffb65f', '#fb8678', '#428bca']
-            });
-            $(".piechart").sparkline([3, 4, 1, 6, 3, 5], {
-                type: 'pie',
-                width: '50px',
-                height: '50px',
-                sliceColors: ['#428bca', '#22d69d', '#4fc1e9', '#fb8678', '#ffb65f']
-            });
-            $(".discretechart").sparkline([4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 2, 3, 5, 1, 6], {
-                type: 'discrete',
-                height: "50px",
-                Width: "80px",
-                lineColor: '#428bca'
-            });
-            $(".boxchart").sparkline([4, 27, 34, 52, 54, 59, 61, 68, 78, 82, 85, 87, 91, 93, 100], {
-                type: 'box',
-                width: '80px',
-                height: '50px',
-                boxFillColor: '#4fc1e9',
-                whiskerColor: '#ffb65f',
-                medianColor: '#fb8678',
-                targetColor: '#22d69d'
-            });
-            $('#compositeline').sparkline('html', {
-                fillColor: false,
-                changeRangeMin: 0,
-                chartRangeMax: 10,
-                width: '100px',
-                height: '50px',
-                lineColor: '#428bca'
-            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
-                composite: true,
-                fillColor: false,
-                changeRangeMin: 0,
-                chartRangeMax: 10,
-                width: '100px',
-                height: '50px',
-                lineColor: '#fb8678'
-            });
-            $('#compositebar').sparkline('html', {
-                type: 'bar',
-                barWidth: "10px;",
-                barSpace: "5px",
-                height: '50px',
-                barColor: "#428bca"
-            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
-                composite: true,
-                fillColor: false,
-                barWidth: "10px;",
-                barSpace: "5px",
-                height: '50px',
-                lineColor: '#ffb65f'
-            });
-            $('#normalline').sparkline('html', {
-                fillColor: false,
-                normalRangeMin: -1,
-                normalRangeMax: 8,
-                width: '120px',
-                height: '50px',
-                lineColor: '#428bca'
-            });
-            $('#normalExample').sparkline('html', {
-                fillColor: false,
-                normalRangeMin: 80,
-                normalRangeMax: 95,
-                normalRangeColor: '#dcdcdc'
-            });
-            $('#discrete2').sparkline('html', {
-                type: 'discrete',
-                thresholdColor: '#fb8678',
-                thresholdValue: 4,
-                height: "50px",
-                Width: "80px",
-                lineColor: '#428bca'
-            });
+        Ladda.bind('.button_normal', {
+            timeout: 3000
+        });
+
+        // Bind progress buttons and simulate loading progress
+        Ladda.bind('.button_progress', {
+            callback: function callback(instance) {
+                var progress = 0;
+                var interval = setInterval(function () {
+                    progress = Math.min(progress + Math.random() * 0.1, 1);
+                    instance.setProgress(progress);
+
+                    if (progress === 1) {
+                        instance.stop();
+                        clearInterval(interval);
+                    }
+                }, 200);
+            }
         });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(515)))
 
 /***/ }),
 
-/***/ 1727:
+/***/ 1427:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*! @license
+*  Project: Buttons
+*  Description: A highly customizable CSS button library built with Sass and Compass
+*  Author: Alex Wolfe and Rob Levin
+*  License: Apache License v2.0
+*/
+
+
+// the semi-colon before function invocation is a safety net against concatenated
+// scripts and/or other plugins which may not be closed properly.
+;(function ( $, window, document, undefined ) {
+  'use strict';
+
+  // undefined is used here as the undefined global variable in ECMAScript 3 is
+  // mutable (ie. it can be changed by someone else). undefined isn't really being
+  // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
+  // can no longer be modified.
+
+  // window and document are passed through as local variable rather than global
+  // as this (slightly) quickens the resolution process and can be more efficiently
+  // minified (especially when both are regularly referenced in your plugin).
+
+  // Create the defaults once
+  var pluginName = "menuButton";
+  var menuClass = ".button-dropdown";
+  var defaults = {
+    propertyName: "value"
+  };
+
+  // The actual plugin constructor
+  function Plugin( element, options ) {
+
+    //SET OPTIONS
+    this.options = $.extend( {}, defaults, options );
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    //REGISTER ELEMENT
+    this.$element = $(element);
+
+    //INITIALIZE
+    this.init();
+  }
+
+  Plugin.prototype = {
+    constructor: Plugin,
+
+    init: function() {
+      // WE DON'T STOP PROPGATION SO CLICKS WILL AUTOMATICALLY
+      // TOGGLE AND REMOVE THE DROPDOWN
+      this.toggle();
+    },
+
+    toggle: function(el, options) {
+      if(this.$element.data('dropdown') === 'show') {
+        this.hideMenu();
+      }
+      else {
+        this.showMenu();
+      }
+    },
+
+    showMenu: function() {
+      this.$element.data('dropdown', 'show');
+      this.$element.find('ul').show();
+      this.$element.find('.button:first').addClass('is-active');
+    },
+
+    hideMenu: function() {
+      this.$element.data('dropdown', 'hide');
+      this.$element.find('ul').hide();
+      this.$element.find('.button:first').removeClass('is-active');
+    }
+  };
+
+  // A really lightweight plugin wrapper around the constructor,
+  // preventing against multiple instantiations
+  $.fn[pluginName] = function ( options ) {
+    return this.each(function () {
+
+      // TOGGLE BUTTON IF IT EXISTS
+      if ($.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName).toggle();
+      }
+      // OTHERWISE CREATE A NEW INSTANCE
+      else {
+        $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+      }
+    });
+  };
+
+  //CLOSE OPEN DROPDOWN MENUS IF CLICKED SOMEWHERE ELSE
+  $(document).on('click', function(e) {
+    $.each($('[data-buttons=dropdown]'), function(i, value) {
+      if ($(e.target.offsetParent)[0] != $(this)[0]) {
+        if ($.data(this, "plugin_" + pluginName)) {
+          $.data(this, "plugin_" + pluginName).hideMenu();
+          $(this).find('ul').hide();
+        }
+      }
+    });
+  });
+
+  //DELEGATE CLICK EVENT FOR DROPDOWN MENUS
+  $(document).on('click', '[data-buttons=dropdown]', function(e) {
+    var $dropdown = $(e.currentTarget);
+    $dropdown.menuButton();
+  });
+
+  //IGNORE CLICK EVENTS FROM DISPLAY BUTTON IN DROPDOWN
+  $(document).on('click', '[data-buttons=dropdown] > a', function(e) {
+    e.preventDefault();
+  });
+
+})( jQuery, window, document);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(523)))
+
+/***/ }),
+
+/***/ 1428:
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Ladda 1.0.6 (2018-02-04, 13:19)
+ * http://lab.hakim.se/ladda
+ * MIT licensed
+ *
+ * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
+ */
+
+!function(t,e){"use strict"; true?module.exports=e(__webpack_require__(1429)):"function"==typeof define&&define.amd?define(["spin"],e):t.Ladda=e(t.Spinner)}(this,function(t){"use strict";var e=[];function a(a){if(void 0!==a){if(/ladda-button/i.test(a.className)||(a.className+=" ladda-button"),a.hasAttribute("data-style")||a.setAttribute("data-style","expand-right"),!a.querySelector(".ladda-label")){var u=document.createElement("span");u.className="ladda-label",n=a,i=u,(r=document.createRange()).selectNodeContents(n),r.surroundContents(i),n.appendChild(i)}var n,i,r,d,o,s=a.querySelector(".ladda-spinner");s||((s=document.createElement("span")).className="ladda-spinner"),a.appendChild(s);var F={start:function(){return d||(d=function(e){var a,u,n=e.offsetHeight;0===n&&(n=parseFloat(window.getComputedStyle(e).height));n>32&&(n*=.8);e.hasAttribute("data-spinner-size")&&(n=parseInt(e.getAttribute("data-spinner-size"),10));e.hasAttribute("data-spinner-color")&&(a=e.getAttribute("data-spinner-color"));e.hasAttribute("data-spinner-lines")&&(u=parseInt(e.getAttribute("data-spinner-lines"),10));var i=.2*n;return new t({color:a||"#fff",lines:u||12,radius:i,length:.6*i,width:i<7?2:3,zIndex:"auto",top:"auto",left:"auto",className:""})}(a)),a.disabled=!0,a.setAttribute("data-loading",""),clearTimeout(o),d.spin(s),this.setProgress(0),this},startAfter:function(t){return clearTimeout(o),o=setTimeout(function(){F.start()},t),this},stop:function(){return F.isLoading()&&(a.disabled=!1,a.removeAttribute("data-loading")),clearTimeout(o),d&&(o=setTimeout(function(){d.stop()},1e3)),this},toggle:function(){return this.isLoading()?this.stop():this.start()},setProgress:function(t){t=Math.max(Math.min(t,1),0);var e=a.querySelector(".ladda-progress");0===t&&e&&e.parentNode?e.parentNode.removeChild(e):(e||((e=document.createElement("div")).className="ladda-progress",a.appendChild(e)),e.style.width=(t||0)*a.offsetWidth+"px")},enable:function(){return this.stop()},disable:function(){return this.stop(),a.disabled=!0,this},isLoading:function(){return a.hasAttribute("data-loading")},remove:function(){clearTimeout(o),a.disabled=!1,a.removeAttribute("data-loading"),d&&(d.stop(),d=null),e.splice(e.indexOf(F),1)}};return e.push(F),F}console.warn("Ladda button target must be defined.")}function u(t,e){if("function"==typeof t.addEventListener){var u=a(t),n=-1;t.addEventListener("click",function(){var a,i,r=!0,d=function(t,e){for(;t.parentNode&&t.tagName!==e;)t=t.parentNode;return e===t.tagName?t:void 0}(t,"FORM");if(void 0!==d&&!d.hasAttribute("novalidate"))if("function"==typeof d.checkValidity)r=d.checkValidity();else for(var o=(a=d,i=[],["input","textarea","select"].forEach(function(t){for(var e=a.getElementsByTagName(t),u=0;u<e.length;u++)e[u].hasAttribute("required")&&i.push(e[u])}),i),s=0;s<o.length;s++){var F=o[s],l=F.getAttribute("type");if(""===F.value.replace(/^\s+|\s+$/g,"")&&(r=!1),"checkbox"!==l&&"radio"!==l||F.checked||(r=!1),"email"===l&&(r=/^[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\.[a-z0-9-]+)*$/i.test(F.value)),"url"===l&&(r=/^([a-z]([a-z]|\d|\+|-|\.)*):(\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?((\[(|(v[\da-f]{1,}\.(([a-z]|\d|-|\.|_|~)|[!\$&'\(\)\*\+,;=]|:)+))\])|((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=])*)(:\d*)?)(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*|(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)){0})(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(F.value)),!r)break}r&&(u.startAfter(1),"number"==typeof e.timeout&&(clearTimeout(n),n=setTimeout(u.stop,e.timeout)),"function"==typeof e.callback&&e.callback.apply(null,[u]))},!1)}}return{bind:function(t,e){var a;if("string"==typeof t)a=document.querySelectorAll(t);else{if("object"!=typeof t)throw new Error("target must be string or object");a=[t]}e=e||{};for(var n=0;n<a.length;n++)u(a[n],e)},create:a,stopAll:function(){for(var t=0,a=e.length;t<a;t++)e[t].stop()}}});
+
+/***/ }),
+
+/***/ 1429:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * Copyright (c) 2011-2014 Felix Gnass
+ * Licensed under the MIT license
+ * http://spin.js.org/
+ *
+ * Example:
+    var opts = {
+      lines: 12             // The number of lines to draw
+    , length: 7             // The length of each line
+    , width: 5              // The line thickness
+    , radius: 10            // The radius of the inner circle
+    , scale: 1.0            // Scales overall size of the spinner
+    , corners: 1            // Roundness (0..1)
+    , color: '#000'         // #rgb or #rrggbb
+    , opacity: 1/4          // Opacity of the lines
+    , rotate: 0             // Rotation offset
+    , direction: 1          // 1: clockwise, -1: counterclockwise
+    , speed: 1              // Rounds per second
+    , trail: 100            // Afterglow percentage
+    , fps: 20               // Frames per second when using setTimeout()
+    , zIndex: 2e9           // Use a high z-index by default
+    , className: 'spinner'  // CSS class to assign to the element
+    , top: '50%'            // center vertically
+    , left: '50%'           // center horizontally
+    , shadow: false         // Whether to render a shadow
+    , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
+    , position: 'absolute'  // Element positioning
+    }
+    var target = document.getElementById('foo')
+    var spinner = new Spinner(opts).spin(target)
+ */
+;(function (root, factory) {
+
+  /* CommonJS */
+  if (typeof module == 'object' && module.exports) module.exports = factory()
+
+  /* AMD module */
+  else if (true) !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+
+  /* Browser global */
+  else root.Spinner = factory()
+}(this, function () {
+  "use strict"
+
+  var prefixes = ['webkit', 'Moz', 'ms', 'O'] /* Vendor prefixes */
+    , animations = {} /* Animation rules keyed by their name */
+    , useCssAnimations /* Whether to use CSS animations or setTimeout */
+    , sheet /* A stylesheet to hold the @keyframe or VML rules. */
+
+  /**
+   * Utility function to create elements. If no tag name is given,
+   * a DIV is created. Optionally properties can be passed.
+   */
+  function createEl (tag, prop) {
+    var el = document.createElement(tag || 'div')
+      , n
+
+    for (n in prop) el[n] = prop[n]
+    return el
+  }
+
+  /**
+   * Appends children and returns the parent.
+   */
+  function ins (parent /* child1, child2, ...*/) {
+    for (var i = 1, n = arguments.length; i < n; i++) {
+      parent.appendChild(arguments[i])
+    }
+
+    return parent
+  }
+
+  /**
+   * Creates an opacity keyframe animation rule and returns its name.
+   * Since most mobile Webkits have timing issues with animation-delay,
+   * we create separate rules for each line/segment.
+   */
+  function addAnimation (alpha, trail, i, lines) {
+    var name = ['opacity', trail, ~~(alpha * 100), i, lines].join('-')
+      , start = 0.01 + i/lines * 100
+      , z = Math.max(1 - (1-alpha) / trail * (100-start), alpha)
+      , prefix = useCssAnimations.substring(0, useCssAnimations.indexOf('Animation')).toLowerCase()
+      , pre = prefix && '-' + prefix + '-' || ''
+
+    if (!animations[name]) {
+      sheet.insertRule(
+        '@' + pre + 'keyframes ' + name + '{' +
+        '0%{opacity:' + z + '}' +
+        start + '%{opacity:' + alpha + '}' +
+        (start+0.01) + '%{opacity:1}' +
+        (start+trail) % 100 + '%{opacity:' + alpha + '}' +
+        '100%{opacity:' + z + '}' +
+        '}', sheet.cssRules.length)
+
+      animations[name] = 1
+    }
+
+    return name
+  }
+
+  /**
+   * Tries various vendor prefixes and returns the first supported property.
+   */
+  function vendor (el, prop) {
+    var s = el.style
+      , pp
+      , i
+
+    prop = prop.charAt(0).toUpperCase() + prop.slice(1)
+    if (s[prop] !== undefined) return prop
+    for (i = 0; i < prefixes.length; i++) {
+      pp = prefixes[i]+prop
+      if (s[pp] !== undefined) return pp
+    }
+  }
+
+  /**
+   * Sets multiple style properties at once.
+   */
+  function css (el, prop) {
+    for (var n in prop) {
+      el.style[vendor(el, n) || n] = prop[n]
+    }
+
+    return el
+  }
+
+  /**
+   * Fills in default values.
+   */
+  function merge (obj) {
+    for (var i = 1; i < arguments.length; i++) {
+      var def = arguments[i]
+      for (var n in def) {
+        if (obj[n] === undefined) obj[n] = def[n]
+      }
+    }
+    return obj
+  }
+
+  /**
+   * Returns the line color from the given string or array.
+   */
+  function getColor (color, idx) {
+    return typeof color == 'string' ? color : color[idx % color.length]
+  }
+
+  // Built-in defaults
+
+  var defaults = {
+    lines: 12             // The number of lines to draw
+  , length: 7             // The length of each line
+  , width: 5              // The line thickness
+  , radius: 10            // The radius of the inner circle
+  , scale: 1.0            // Scales overall size of the spinner
+  , corners: 1            // Roundness (0..1)
+  , color: '#000'         // #rgb or #rrggbb
+  , opacity: 1/4          // Opacity of the lines
+  , rotate: 0             // Rotation offset
+  , direction: 1          // 1: clockwise, -1: counterclockwise
+  , speed: 1              // Rounds per second
+  , trail: 100            // Afterglow percentage
+  , fps: 20               // Frames per second when using setTimeout()
+  , zIndex: 2e9           // Use a high z-index by default
+  , className: 'spinner'  // CSS class to assign to the element
+  , top: '50%'            // center vertically
+  , left: '50%'           // center horizontally
+  , shadow: false         // Whether to render a shadow
+  , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
+  , position: 'absolute'  // Element positioning
+  }
+
+  /** The constructor */
+  function Spinner (o) {
+    this.opts = merge(o || {}, Spinner.defaults, defaults)
+  }
+
+  // Global defaults that override the built-ins:
+  Spinner.defaults = {}
+
+  merge(Spinner.prototype, {
+    /**
+     * Adds the spinner to the given target element. If this instance is already
+     * spinning, it is automatically removed from its previous target b calling
+     * stop() internally.
+     */
+    spin: function (target) {
+      this.stop()
+
+      var self = this
+        , o = self.opts
+        , el = self.el = createEl(null, {className: o.className})
+
+      css(el, {
+        position: o.position
+      , width: 0
+      , zIndex: o.zIndex
+      , left: o.left
+      , top: o.top
+      })
+
+      if (target) {
+        target.insertBefore(el, target.firstChild || null)
+      }
+
+      el.setAttribute('role', 'progressbar')
+      self.lines(el, self.opts)
+
+      if (!useCssAnimations) {
+        // No CSS animation support, use setTimeout() instead
+        var i = 0
+          , start = (o.lines - 1) * (1 - o.direction) / 2
+          , alpha
+          , fps = o.fps
+          , f = fps / o.speed
+          , ostep = (1 - o.opacity) / (f * o.trail / 100)
+          , astep = f / o.lines
+
+        ;(function anim () {
+          i++
+          for (var j = 0; j < o.lines; j++) {
+            alpha = Math.max(1 - (i + (o.lines - j) * astep) % f * ostep, o.opacity)
+
+            self.opacity(el, j * o.direction + start, alpha, o)
+          }
+          self.timeout = self.el && setTimeout(anim, ~~(1000 / fps))
+        })()
+      }
+      return self
+    }
+
+    /**
+     * Stops and removes the Spinner.
+     */
+  , stop: function () {
+      var el = this.el
+      if (el) {
+        clearTimeout(this.timeout)
+        if (el.parentNode) el.parentNode.removeChild(el)
+        this.el = undefined
+      }
+      return this
+    }
+
+    /**
+     * Internal method that draws the individual lines. Will be overwritten
+     * in VML fallback mode below.
+     */
+  , lines: function (el, o) {
+      var i = 0
+        , start = (o.lines - 1) * (1 - o.direction) / 2
+        , seg
+
+      function fill (color, shadow) {
+        return css(createEl(), {
+          position: 'absolute'
+        , width: o.scale * (o.length + o.width) + 'px'
+        , height: o.scale * o.width + 'px'
+        , background: color
+        , boxShadow: shadow
+        , transformOrigin: 'left'
+        , transform: 'rotate(' + ~~(360/o.lines*i + o.rotate) + 'deg) translate(' + o.scale*o.radius + 'px' + ',0)'
+        , borderRadius: (o.corners * o.scale * o.width >> 1) + 'px'
+        })
+      }
+
+      for (; i < o.lines; i++) {
+        seg = css(createEl(), {
+          position: 'absolute'
+        , top: 1 + ~(o.scale * o.width / 2) + 'px'
+        , transform: o.hwaccel ? 'translate3d(0,0,0)' : ''
+        , opacity: o.opacity
+        , animation: useCssAnimations && addAnimation(o.opacity, o.trail, start + i * o.direction, o.lines) + ' ' + 1 / o.speed + 's linear infinite'
+        })
+
+        if (o.shadow) ins(seg, css(fill('#000', '0 0 4px #000'), {top: '2px'}))
+        ins(el, ins(seg, fill(getColor(o.color, i), '0 0 1px rgba(0,0,0,.1)')))
+      }
+      return el
+    }
+
+    /**
+     * Internal method that adjusts the opacity of a single line.
+     * Will be overwritten in VML fallback mode below.
+     */
+  , opacity: function (el, i, val) {
+      if (i < el.childNodes.length) el.childNodes[i].style.opacity = val
+    }
+
+  })
+
+
+  function initVML () {
+
+    /* Utility function to create a VML tag */
+    function vml (tag, attr) {
+      return createEl('<' + tag + ' xmlns="urn:schemas-microsoft.com:vml" class="spin-vml">', attr)
+    }
+
+    // No CSS transforms but VML support, add a CSS rule for VML elements:
+    sheet.addRule('.spin-vml', 'behavior:url(#default#VML)')
+
+    Spinner.prototype.lines = function (el, o) {
+      var r = o.scale * (o.length + o.width)
+        , s = o.scale * 2 * r
+
+      function grp () {
+        return css(
+          vml('group', {
+            coordsize: s + ' ' + s
+          , coordorigin: -r + ' ' + -r
+          })
+        , { width: s, height: s }
+        )
+      }
+
+      var margin = -(o.width + o.length) * o.scale * 2 + 'px'
+        , g = css(grp(), {position: 'absolute', top: margin, left: margin})
+        , i
+
+      function seg (i, dx, filter) {
+        ins(
+          g
+        , ins(
+            css(grp(), {rotation: 360 / o.lines * i + 'deg', left: ~~dx})
+          , ins(
+              css(
+                vml('roundrect', {arcsize: o.corners})
+              , { width: r
+                , height: o.scale * o.width
+                , left: o.scale * o.radius
+                , top: -o.scale * o.width >> 1
+                , filter: filter
+                }
+              )
+            , vml('fill', {color: getColor(o.color, i), opacity: o.opacity})
+            , vml('stroke', {opacity: 0}) // transparent stroke to fix color bleeding upon opacity change
+            )
+          )
+        )
+      }
+
+      if (o.shadow)
+        for (i = 1; i <= o.lines; i++) {
+          seg(i, -2, 'progid:DXImageTransform.Microsoft.Blur(pixelradius=2,makeshadow=1,shadowopacity=.3)')
+        }
+
+      for (i = 1; i <= o.lines; i++) seg(i)
+      return ins(el, g)
+    }
+
+    Spinner.prototype.opacity = function (el, i, val, o) {
+      var c = el.firstChild
+      o = o.shadow && o.lines || 0
+      if (c && i + o < c.childNodes.length) {
+        c = c.childNodes[i + o]; c = c && c.firstChild; c = c && c.firstChild
+        if (c) c.opacity = val
+      }
+    }
+  }
+
+  if (typeof document !== 'undefined') {
+    sheet = (function () {
+      var el = createEl('style', {type : 'text/css'})
+      ins(document.getElementsByTagName('head')[0], el)
+      return el.sheet || el.styleSheet
+    }())
+
+    var probe = css(createEl('group'), {behavior: 'url(#default#VML)'})
+
+    if (!vendor(probe, 'transform') && probe.adj) initVML()
+    else useCssAnimations = vendor(probe, 'animation')
+  }
+
+  return Spinner
+
+}));
+
+
+/***/ }),
+
+/***/ 1430:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -408,337 +1409,337 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12" },
+        { staticClass: "col-md-12" },
         [
           _c(
             "card",
-            { attrs: { title: "<i class='ti-pie-chart'></i> Circle Slider" } },
+            {
+              attrs: {
+                title:
+                  "<i class='fa fa-fw ti-settings'></i> 2D Transforms Flat Buttons"
+              }
+            },
             [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Default")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.sliderValue,
-                        callback: function($$v) {
-                          _vm.sliderValue = $$v
+              _c("div", { staticClass: "flatbuttons" }, [
+                _c("div", { staticClass: "text-left" }, [
+                  _c("h5", [_vm._v("Radiused Buttons")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-default btn-lg hvr-buzz butn",
+                          attrs: { type: "button" }
                         },
-                        expression: "sliderValue"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.sliderValue))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v(" Custom Dimenssion")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        min: 0,
-                        max: 10000,
-                        "step-size": 100,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val2,
-                        callback: function($$v) {
-                          _vm.val2 = $$v
-                        },
-                        expression: "val2"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val2))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", { staticClass: "d-flex" }, [
-                      _vm._v("Custom side")
+                        [_vm._v("Buzz")]
+                      )
                     ]),
                     _vm._v(" "),
-                    _c("circle-slider", {
-                      staticClass: "d-inline-block",
-                      attrs: {
-                        side: 100,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val3,
-                        callback: function($$v) {
-                          _vm.val3 = $$v
-                        },
-                        expression: "val3"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "d-inline-block " },
-                      [
-                        _c("circle-slider", {
-                          staticClass: "custom_small",
-                          attrs: {
-                            side: 50,
-                            "progress-color": "#66cc99",
-                            "knob-color": "#66cc99"
-                          },
-                          model: {
-                            value: _vm.val3,
-                            callback: function($$v) {
-                              _vm.val3 = $$v
-                            },
-                            expression: "val3"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("br")
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val3))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center exact-size"
-                  },
-                  [
-                    _c("label", [_vm._v("Exact sizes")]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 8,
-                        "progress-width": 12,
-                        "knob-radius": 10,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 10,
-                        "progress-width": 5,
-                        "knob-radius": 10,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 12,
-                        "progress-width": 3,
-                        "knob-radius": 4,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val4))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center colors"
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Colors\n                        "
-                    ),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#edeff0",
-                        "progress-color": "#eee",
-                        "knob-color": "#6699cc"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#ff6666",
-                        "progress-color": "#6699cc",
-                        "knob-color": "#66ccff"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#cecece",
-                        "progress-color": "#66cc99",
-                        "knob-color": "#f0ad4e"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val6))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Relative sizes")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width-rel": 30,
-                        "progress-width-rel": 15,
-                        "knob-radius-rel": 8,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val5,
-                        callback: function($$v) {
-                          _vm.val5 = $$v
-                        },
-                        expression: "val5"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val5))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Two-way binding")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      on: {
-                        touchmove: function($event) {
-                          return _vm.$refs.input.blur()
-                        }
-                      },
-                      model: {
-                        value: _vm.val7,
-                        callback: function($$v) {
-                          _vm.val7 = $$v
-                        },
-                        expression: "val7"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
+                    _c("li", [
+                      _c(
+                        "button",
                         {
-                          name: "model",
-                          rawName: "v-model.number",
-                          value: _vm.val7,
-                          expression: "val7",
-                          modifiers: { number: true }
-                        }
-                      ],
-                      ref: "input",
-                      staticClass: "form-control",
-                      attrs: { type: "number" },
-                      domProps: { value: _vm.val7 },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.val7 = _vm._n($event.target.value)
+                          staticClass:
+                            "button button-rounded button-primary-flat hvr-hang"
                         },
-                        blur: function($event) {
-                          return _vm.$forceUpdate()
-                        }
-                      }
-                    })
-                  ],
-                  1
-                )
+                        [_vm._v("Hang\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-action-flat hvr-sink"
+                        },
+                        [_vm._v("Sink\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-highlight-flat hvr-pop"
+                        },
+                        [_vm._v("Pop\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-caution-flat hvr-float"
+                        },
+                        [_vm._v("Float\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-rounded button-royal-flat hvr-rotate"
+                        },
+                        [_vm._v("Rotate\n                                ")]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "text-left btn-rounded" }, [
+                  _c("h5", [_vm._v("Rounded Buttons")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-default button-pill button-flat hvr-grow"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Grow Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-primary-flat hvr-shrink"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    ShrinkButton\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-action-flat hvr-pulse"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Pulse Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-highlight-flat hvr-pulse-grow"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Pulse-grow\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-caution-flat hvr-pulse-shrink"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Pulse-shrink\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-pill button-royal-flat hvr-push"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Push Button\n                                "
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "text-left" }, [
+                  _c("h5", [_vm._v("Rectangle Box")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-default button-flat hvr-wobble-skew"
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-primary-flat hvr-wobble-bottom"
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-action-flat hvr-wobble-to-top-right"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-highlight-flat hvr-wobble-vertical"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-caution-flat hvr-wobble-horizontal"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-royal-flat hvr-skew-backward"
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "text-left" }, [
+                  _c("h5", [_vm._v("Cirlce Buttons")]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "mb-5" }, [
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-default button-circle button-flat hvr-wobble-top"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-primary-flat hvr-skew"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-action-flat hvr-wobble-to-top-right"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-highlight-flat hvr-pulse-grow"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Button\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-caution-flat hvr-grow"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "button button-circle button-royal-flat hvr-buzz-out"
+                        },
+                        [_vm._v("Button\n                                ")]
+                      )
+                    ])
+                  ])
+                ])
               ])
             ]
           )
@@ -750,151 +1751,1263 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12" },
+        { staticClass: "col-md-6" },
         [
           _c(
             "card",
             {
-              attrs: { title: "<i class='ti-bar-chart-alt'></i> Tiny Charts" }
+              attrs: {
+                title:
+                  "<i class='ti-bell'></i> Shadow and Glow Transitions Buttons"
+              }
             },
             [
-              _c("div", { staticClass: "row sparkline_charts" }, [
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny line chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chart linechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny bar chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chart barchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny stacked bar chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart stackedbarchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny tristate chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart tristatechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny bullet chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart bulletchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny pie chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart piechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny discrete chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart discretechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny boxplot chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart boxchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny composite line chart")]),
-                    _vm._v(" "),
+              _c("div", { staticClass: "flatbuttons_small" }, [
+                _c("ul", [
+                  _c("li", [
                     _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "compositeline" } },
+                      "button",
+                      {
+                        staticClass:
+                          "button button-default button-glow button-rounded button-flat hvr-float-shadow"
+                      },
                       [
                         _vm._v(
-                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
+                          "\n                                Button\n                            "
                         )
                       ]
                     )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny composite bar chart")]),
-                    _vm._v(" "),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
                     _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "compositebar" } },
-                      [_vm._v("4,6,7,7,4,3,2,1,4")]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny line chart with normal range")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "normalline" } },
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-primary-flat hvr-float-shadow"
+                      },
                       [
                         _vm._v(
-                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
+                          "\n                                Button\n                            "
                         )
                       ]
                     )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny discrete chart with treshold")]),
-                    _vm._v(" "),
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
                     _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "discrete2" } },
-                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-action-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-highlight-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-caution-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-glow button-rounded button-royal-flat hvr-float-shadow"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Button\n                            "
+                        )
+                      ]
                     )
                   ])
                 ])
               ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-rocket'></i> Quick Shortcuts" } },
+            [
+              _c("div", { staticClass: "quick_shortcuts" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-6 col-md-6" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-list-alt" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Apps\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-warning  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-bookmark" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Bookmarks\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-signal" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Reports\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-comment" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Comments\n                                ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-6 col-md-6" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-user" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Users\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-file" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Notes\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-picture-o" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Photos\n                                ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary  btn-responsive",
+                        attrs: { role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-tag" }),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" Tags\n                                ")
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-12 col-md-12 mt-2" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success btn-lg btn-block",
+                      attrs: { role: "button" }
+                    },
+                    [
+                      _c("span", { staticClass: "fa fa-globe" }),
+                      _vm._v(" Website\n                            ")
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-rocket'></i> 3-D Buttons" } },
+            [
+              _c("div", { staticClass: "flatbuttons" }, [
+                _c("ul", [
+                  _c("li", [
+                    _c(
+                      "button",
+                      { staticClass: "button button-default button-3d" },
+                      [_vm._v("Button")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-primary button-rounded btn_3d"
+                      },
+                      [_vm._v("Button\n                            ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-action button-pill btn_3d"
+                      },
+                      [_vm._v("Button\n                            ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-highlight button-circle btn_3d"
+                      },
+                      [_vm._v("Button\n                            ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "button button-3d button-caution icon-btn btn_3d"
+                      },
+                      [
+                        _c("i", { staticClass: "fa ti-instagram" }),
+                        _vm._v(" Button\n                            ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "button",
+                      { staticClass: "button button-3d button-royal btn_3d" },
+                      [_vm._v("Button")]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class='ti-arrow-circle-up'></i> Spinner Buttons"
+              }
+            },
+            [
+              _c("div", { staticClass: "pad_left" }, [
+                _c("div", { staticClass: "text-left" }, [
+                  _c("div", { staticClass: "row " }, [
+                    _c("div", { staticClass: "col-lg-12" }, [
+                      _c("h5", [_vm._v("Buttons")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "expand-left" }
+                        },
+                        [
+                          _vm._v(
+                            "Expand-left\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "expand-right" }
+                        },
+                        [
+                          _vm._v(
+                            "Expand-right\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "expand-up" }
+                        },
+                        [_vm._v("Expand-up\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "slide-down" }
+                        },
+                        [_vm._v("Slide-down\n                                ")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "contract" }
+                        },
+                        [_vm._v("Contract")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-primary button_normal",
+                          attrs: { "data-style": "zoom-in" }
+                        },
+                        [_vm._v("Zoom-in\n                                ")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row " }, [
+                    _c("div", { staticClass: "col-lg-12" }, [
+                      _c("h5", [_vm._v("Icon Buttons")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "slide-left" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa ti-arrow-circle-left",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(
+                            " Slide-left\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "slide-right" }
+                        },
+                        [
+                          _vm._v("Slide-right "),
+                          _c("i", {
+                            staticClass: "fa ti-arrow-circle-right",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "slide-up" }
+                        },
+                        [
+                          _vm._v("Slide-up "),
+                          _c("i", {
+                            staticClass: "fa ti-arrow-circle-up",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "contract" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa ti-filter",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(
+                            "\n                                    Contract\n                                "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "ladda-button btn btn-info button_normal text-white",
+                          attrs: { "data-style": "zoom-out" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa ti-zoom-out",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" Zoom-out\n                                ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12 col-sm-6" }, [
+                      _c("div", { staticClass: "row text-left" }, [
+                        _c("div", { staticClass: "col-lg-12" }, [
+                          _c("h5", [_vm._v("Button Sizes")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-4" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-warning btn-lg button_normal text-white",
+                              attrs: { "data-style": "expand-right" }
+                            },
+                            [
+                              _vm._v(
+                                "Large\n                                        "
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-4" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-warning  button_normal text-white",
+                              attrs: { "data-style": "expand-right" }
+                            },
+                            [
+                              _vm._v(
+                                "Small\n                                        "
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-12 col-sm-6" }, [
+                      _c("div", { staticClass: "row text-left" }, [
+                        _c("div", { staticClass: "col-lg-12" }, [
+                          _c("h5", [_vm._v("Progress Button Spinners")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-5" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-success button_progress text-white",
+                              attrs: { "data-style": "expand-right" }
+                            },
+                            [
+                              _vm._v(
+                                "Expand-right\n                                        "
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-5" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "ladda-button btn btn-success button_progress text-white",
+                              attrs: { "data-style": "contract" }
+                            },
+                            [
+                              _vm._v(
+                                "contract\n                                        "
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            {
+              attrs: { title: "<i class='fa fa-fw ti-settings'></i> Buttons" }
+            },
+            [
+              _c("div", { staticClass: "flatbuttons" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("h5", { staticClass: "example-title" }, [
+                      _vm._v("Icon Button & Dropdown")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "example example-buttons" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-default m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-location-pin",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-primary m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-layout-grid3",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-success m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-bell",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-icon btn-info m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-calendar",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-icon btn-warning btn-round m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-time",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-icon btn-danger btn-round m-r-50 mb-2",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "icon fa fa-fw ti-flag-alt-2",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "btn-group drop_btn",
+                          attrs: { role: "group" }
+                        },
+                        [
+                          _c(
+                            "b-dropdown",
+                            {
+                              staticClass: "pt-0",
+                              attrs: {
+                                right: "",
+                                split: "",
+                                variant: "primary"
+                              }
+                            },
+                            [
+                              _c("template", { slot: "button-content" }, [
+                                _c("i", { staticClass: "ti-calendar more" })
+                              ]),
+                              _vm._v(" "),
+                              _c("b-dropdown-item", [_vm._v("Dropdown")]),
+                              _vm._v(" "),
+                              _c("b-dropdown-item", [_vm._v("Dropdown")])
+                            ],
+                            2
+                          )
+                        ],
+                        1
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 " }, [
+                    _c("div", { staticClass: "example-wrap" }, [
+                      _c("h5", { staticClass: "example-title" }, [
+                        _vm._v("Button Animation")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "btn-group display_media",
+                          attrs: { role: "group" }
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-sm-6" }, [
+                              _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "btn btn-animate btn-animate-side btn-success m-r-50",
+                                  attrs: { type: "button" }
+                                },
+                                [
+                                  _c("span", [
+                                    _c("i", {
+                                      staticClass: "icon fa fa-fw ti-import",
+                                      attrs: { "aria-hidden": "true" }
+                                    }),
+                                    _vm._v("Side Animation")
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-6" }, [
+                              _c(
+                                "button",
+                                {
+                                  staticClass:
+                                    "btn btn-animate btn-animate-vertical btn-lg btn-success m-r-50",
+                                  attrs: { type: "button" }
+                                },
+                                [
+                                  _c("span", [
+                                    _c("i", {
+                                      staticClass: "icon fa fa-fw ti-import",
+                                      attrs: { "aria-hidden": "true" }
+                                    }),
+                                    _vm._v(
+                                      "Vertical\n                                                                  Animation"
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title: "<i class='ti-layout-column3'></i> Group buttons"
+              }
+            },
+            [
+              _c("div", [
+                _c("div", { staticClass: "col-md-12 text-center" }, [
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-thumbs-up" })]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-thumbs-down" })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-floppy-o" })]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [_c("span", { staticClass: "fa fa-trash" })]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-check" }),
+                        _vm._v(" Sign Up\n                            ")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-default",
+                        attrs: { href: "#/buttons", role: "button" }
+                      },
+                      [
+                        _c("span", { staticClass: "fa fa-remove" }),
+                        _vm._v(" Reset\n                            ")
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary btn-lg",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Large")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or or-lg" }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success btn-lg",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Large")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Default")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or" }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Success")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ui-group-buttons" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary ",
+                        attrs: { type: "button" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Small\n                            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "or or-sm" }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success ",
+                        attrs: { type: "button" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Small\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br")
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              staticClass: "labled-buttons",
+              attrs: { title: "<i class='ti-save'></i> Buttons With Labels" }
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "col-lg-12 col-md-12 col-12 col-sm-12" },
+                [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-success",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-check" })
+                          ]),
+                          _vm._v(" Success\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-danger",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-remove" })
+                          ]),
+                          _vm._v(" Cancel\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-warning",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-bookmark" })
+                          ]),
+                          _vm._v(" Bookmark\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-primary",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-camera" })
+                          ]),
+                          _vm._v(" Camera\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-default text-dark",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-chevron-left" })
+                          ]),
+                          _vm._v(" Left\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-default text-dark",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _vm._v("\n                                Right "),
+                          _c("span", { staticClass: "btn-label label-right" }, [
+                            _c("i", { staticClass: "fa fa-chevron-right" })
+                          ])
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-success",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-fw ti-thumb-up" })
+                          ]),
+                          _vm._v(" Up\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-warning",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-fw ti-thumb-down" })
+                          ]),
+                          _vm._v(" Down\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-info",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-refresh" })
+                          ]),
+                          _vm._v(" Refresh\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-labeled btn-primary",
+                          attrs: { type: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-trash" })
+                          ]),
+                          _vm._v(" Trash\n                            ")
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-warning btn-labeled text-white",
+                          attrs: { role: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label butn_clr" }, [
+                            _c("i", { staticClass: "fa fa-info-circle" })
+                          ]),
+                          _vm._v(" Info Web\n                            ")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success btn-labeled text-white",
+                          attrs: { role: "button" }
+                        },
+                        [
+                          _c("span", { staticClass: "btn-label" }, [
+                            _c("i", { staticClass: "fa fa-globe" })
+                          ]),
+                          _vm._v(" Web\n                            ")
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
             ]
           )
         ],
@@ -909,25 +3022,29 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3e06e382", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-04c1e435", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 483:
+/***/ 457:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1724)
+  __webpack_require__(1416)
+  __webpack_require__(1418)
+  __webpack_require__(1420)
+  __webpack_require__(1422)
+  __webpack_require__(1424)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1726)
+var __vue_script__ = __webpack_require__(1426)
 /* template */
-var __vue_template__ = __webpack_require__(1727)
+var __vue_template__ = __webpack_require__(1430)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -944,7 +3061,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/circle_sliders.vue"
+Component.options.__file = "resources/components/pages/buttons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -953,9 +3070,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3e06e382", Component.options)
+    hotAPI.createRecord("data-v-04c1e435", Component.options)
   } else {
-    hotAPI.reload("data-v-3e06e382", Component.options)
+    hotAPI.reload("data-v-04c1e435", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -967,7 +3084,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 515:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11339,19 +13456,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 517:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(518)
+  __webpack_require__(527)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(520)
+var __vue_script__ = __webpack_require__(529)
 /* template */
-var __vue_template__ = __webpack_require__(521)
+var __vue_template__ = __webpack_require__(530)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11391,13 +13508,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 518:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(519);
+var content = __webpack_require__(528);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11418,7 +13535,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 519:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11433,7 +13550,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 520:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11478,7 +13595,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 521:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11537,3170 +13654,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
-
-/***/ }),
-
-/***/ 531:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {module.exports=function(modules){function __webpack_require__(moduleId){if(installedModules[moduleId])return installedModules[moduleId].exports;var module=installedModules[moduleId]={i:moduleId,l:!1,exports:{}};return modules[moduleId].call(module.exports,module,module.exports,__webpack_require__),module.l=!0,module.exports}var installedModules={};return __webpack_require__.m=modules,__webpack_require__.c=installedModules,__webpack_require__.i=function(value){return value},__webpack_require__.d=function(exports,name,getter){__webpack_require__.o(exports,name)||Object.defineProperty(exports,name,{configurable:!1,enumerable:!0,get:getter})},__webpack_require__.n=function(module){var getter=module&&module.__esModule?function(){return module.default}:function(){return module};return __webpack_require__.d(getter,"a",getter),getter},__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=1)}([function(module,exports,__webpack_require__){var Component=__webpack_require__(5)(__webpack_require__(4),__webpack_require__(6),null,null);module.exports=Component.exports},function(module,__webpack_exports__,__webpack_require__){"use strict";function install(Vue){Vue.component("circle-slider",__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a)}Object.defineProperty(__webpack_exports__,"__esModule",{value:!0}),__webpack_exports__.install=install;var __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__=__webpack_require__(0),__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default=__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__);__webpack_require__.d(__webpack_exports__,"CircleSlider",function(){return __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a});var plugin={version:"1.0.2",install:install};__webpack_exports__.default=plugin;var GlobalVue=null;"undefined"!=typeof window?GlobalVue=window.Vue:"undefined"!=typeof global&&(GlobalVue=global.Vue),GlobalVue&&GlobalVue.use(plugin)},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),CircleSliderState=function(){function CircleSliderState(steps,offset,initialValue){_classCallCheck(this,CircleSliderState),this.steps=steps,this.offset=offset,this.currentStepIndex=0;for(var stepIndex in this.steps)if(this.steps[stepIndex]===initialValue){this.currentStepIndex=stepIndex;break}this.firstStep=this.steps[0],this.length=this.steps.length-1,this.lastStep=this.steps[this.length]}return _createClass(CircleSliderState,[{key:"updateCurrentStepFromValue",value:function(value){for(var i=0;i<this.length;i++)if(value<=this.steps[i])return void(this.currentStepIndex=i);this.currentStepIndex=this.length}},{key:"updateCurrentStepFromAngle",value:function(angle){var stepIndex=Math.round((angle-this.offset)/this.angleUnit);this.currentStepIndex=Math.min(Math.max(stepIndex,0),this.length)}},{key:"angleUnit",get:function(){return(2*Math.PI-this.offset)/this.length}},{key:"angleValue",get:function(){return Math.min(this.offset+this.angleUnit*this.currentStepIndex,2*Math.PI-Number.EPSILON)-1e-5}},{key:"currentStep",get:function(){return this.steps[this.currentStepIndex]}}]),CircleSliderState}();__webpack_exports__.a=CircleSliderState},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),TouchPosition=function(){function TouchPosition(containerElement,sliderRadius,sliderTolerance){_classCallCheck(this,TouchPosition),this.containerElement=containerElement,this.sliderRadius=sliderRadius,this.sliderTolerance=sliderTolerance,this.setNewPosition({x:0,y:0})}return _createClass(TouchPosition,[{key:"setNewPosition",value:function(e){var dimensions=this.containerElement.getBoundingClientRect(),side=dimensions.width;this.center=side/2,this.relativeX=e.clientX-dimensions.left,this.relativeY=e.clientY-dimensions.top}},{key:"sliderAngle",get:function(){return(Math.atan2(this.relativeY-this.center,this.relativeX-this.center)+3*Math.PI/2)%(2*Math.PI)}},{key:"isTouchWithinSliderRange",get:function(){var touchOffset=Math.sqrt(Math.pow(Math.abs(this.relativeX-this.center),2)+Math.pow(Math.abs(this.relativeY-this.center),2));return Math.abs(touchOffset-this.sliderRadius)<=this.sliderTolerance}}]),TouchPosition}();__webpack_exports__.a=TouchPosition},function(module,__webpack_exports__,__webpack_require__){"use strict";Object.defineProperty(__webpack_exports__,"__esModule",{value:!0});var __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__=__webpack_require__(3),__WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__=__webpack_require__(2);__webpack_exports__.default={name:"CircleSlider",created:function(){var _this=this;this.stepsCount=1+(this.max-this.min)/this.stepSize,this.steps=Array.from({length:this.stepsCount},function(_,i){return _this.min+i*_this.stepSize}),this.circleSliderState=new __WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__.a(this.steps,this.startAngleOffset,this.value),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep;var maxCurveWidth=Math.max(this.cpMainCircleStrokeWidth,this.cpPathStrokeWidth);this.radius=this.side/2-Math.max(maxCurveWidth,2*this.cpKnobRadius)/2,this.updateFromPropValue(this.value)},mounted:function(){this.touchPosition=new __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__.a(this.$refs._svg,this.radius,this.radius/2)},props:{startAngleOffset:{type:Number,required:!1,default:function(){return 0}},value:{type:Number,required:!1,default:0},side:{type:Number,required:!1,default:100},stepSize:{type:Number,required:!1,default:1},min:{type:Number,required:!1,default:0},max:{type:Number,required:!1,default:100},circleColor:{type:String,required:!1,default:"#334860"},progressColor:{type:String,required:!1,default:"#00be7e"},knobColor:{type:String,required:!1,default:"#00be7e"},knobRadius:{type:Number,required:!1,default:null},knobRadiusRel:{type:Number,required:!1,default:7},circleWidth:{type:Number,required:!1,default:null},circleWidthRel:{type:Number,required:!1,default:20},progressWidth:{type:Number,required:!1,default:null},progressWidthRel:{type:Number,required:!1,default:10}},data:function(){return{steps:null,stepsCount:null,radius:0,angle:0,currentStepValue:0,mousePressed:!1,circleSliderState:null,mousemoveTicks:0}},computed:{cpCenter:function(){return this.side/2},cpAngle:function(){return this.angle+Math.PI/2},cpMainCircleStrokeWidth:function(){return this.circleWidth||this.side/2/this.circleWidthRel},cpPathDirection:function(){return this.cpAngle<1.5*Math.PI?0:1},cpPathX:function(){return this.cpCenter+this.radius*Math.cos(this.cpAngle)},cpPathY:function(){return this.cpCenter+this.radius*Math.sin(this.cpAngle)},cpPathStrokeWidth:function(){return this.progressWidth||this.side/2/this.progressWidthRel},cpKnobRadius:function(){return this.knobRadius||this.side/2/this.knobRadiusRel},cpPathD:function(){var parts=[];return parts.push("M"+this.cpCenter),parts.push(this.cpCenter+this.radius),parts.push("A"),parts.push(this.radius),parts.push(this.radius),parts.push(0),parts.push(this.cpPathDirection),parts.push(1),parts.push(this.cpPathX),parts.push(this.cpPathY),parts.join(" ")}},methods:{fitToStep:function(val){return Math.round(val/this.stepSize)*this.stepSize},handleClick:function(e){if(this.touchPosition.setNewPosition(e),this.touchPosition.isTouchWithinSliderRange){var newAngle=this.touchPosition.sliderAngle;this.animateSlider(this.angle,newAngle)}},handleMouseDown:function(e){e.preventDefault(),this.mousePressed=!0,window.addEventListener("mousemove",this.handleWindowMouseMove),window.addEventListener("mouseup",this.handleMouseUp)},handleMouseUp:function(e){e.preventDefault(),this.mousePressed=!1,window.removeEventListener("mousemove",this.handleWindowMouseMove),window.removeEventListener("mouseup",this.handleMouseUp),this.mousemoveTicks=0},handleWindowMouseMove:function(e){if(e.preventDefault(),this.mousemoveTicks<5)return void this.mousemoveTicks++;this.touchPosition.setNewPosition(e),this.updateSlider()},handleTouchMove:function(e){if(this.$emit("touchmove"),e.targetTouches.length>1||e.changedTouches.length>1||e.touches.length>1)return!0;var lastTouch=e.targetTouches.item(e.targetTouches.length-1);this.touchPosition.setNewPosition(lastTouch),this.touchPosition.isTouchWithinSliderRange&&(e.preventDefault(),this.updateSlider())},updateAngle:function(angle){this.circleSliderState.updateCurrentStepFromAngle(angle),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep,this.$emit("input",this.currentStepValue)},updateFromPropValue:function(value){var stepValue=this.fitToStep(value);this.circleSliderState.updateCurrentStepFromValue(stepValue),this.angle=this.circleSliderState.angleValue,this.currentStepValue=stepValue,this.$emit("input",this.currentStepValue)},updateSlider:function(){var angle=this.touchPosition.sliderAngle;Math.abs(angle-this.angle)<Math.PI&&this.updateAngle(angle)},animateSlider:function(startAngle,endAngle){var _this2=this,direction=startAngle<endAngle?1:-1,curveAngleMovementUnit=direction*this.circleSliderState.angleUnit*2,animate=function(){if(Math.abs(endAngle-startAngle)<Math.abs(2*curveAngleMovementUnit))_this2.updateAngle(endAngle);else{var newAngle=startAngle+curveAngleMovementUnit;_this2.updateAngle(newAngle),_this2.animateSlider(newAngle,endAngle)}};window.requestAnimationFrame(animate)}},watch:{value:function(val){this.updateFromPropValue(val)}}}},function(module,exports){module.exports=function(rawScriptExports,compiledTemplate,scopeId,cssModules){var esModule,scriptExports=rawScriptExports=rawScriptExports||{},type=typeof rawScriptExports.default;"object"!==type&&"function"!==type||(esModule=rawScriptExports,scriptExports=rawScriptExports.default);var options="function"==typeof scriptExports?scriptExports.options:scriptExports;if(compiledTemplate&&(options.render=compiledTemplate.render,options.staticRenderFns=compiledTemplate.staticRenderFns),scopeId&&(options._scopeId=scopeId),cssModules){var computed=options.computed||(options.computed={});Object.keys(cssModules).forEach(function(key){var module=cssModules[key];computed[key]=function(){return module}})}return{esModule:esModule,exports:scriptExports,options:options}}},function(module,exports){module.exports={render:function(){var _vm=this,_h=_vm.$createElement,_c=_vm._self._c||_h;return _c("div",[_c("svg",{ref:"_svg",attrs:{width:_vm.side+"px",height:_vm.side+"px",viewBox:"0 0 "+_vm.side+" "+_vm.side},on:{touchmove:_vm.handleTouchMove,click:_vm.handleClick,mousedown:_vm.handleMouseDown,mouseup:_vm.handleMouseUp}},[_c("g",[_c("circle",{attrs:{stroke:_vm.circleColor,fill:"none","stroke-width":_vm.cpMainCircleStrokeWidth,cx:_vm.cpCenter,cy:_vm.cpCenter,r:_vm.radius}}),_vm._v(" "),_c("path",{attrs:{stroke:_vm.progressColor,fill:"none","stroke-width":_vm.cpPathStrokeWidth,d:_vm.cpPathD}}),_vm._v(" "),_c("circle",{attrs:{fill:_vm.knobColor,r:_vm.cpKnobRadius,cx:_vm.cpPathX,cy:_vm.cpPathY}})])])])},staticRenderFns:[]}}]);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
-
-/***/ }),
-
-/***/ 545:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__ = __webpack_require__(531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__ = __webpack_require__(546);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__);
-
-/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default.a);
-
-
-
-
-/***/ }),
-
-/***/ 546:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(547);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(43)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./vue-circle-slider.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./vue-circle-slider.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 547:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 572:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- *
- * jquery.sparkline.js
- *
- * v2.1.2
- * (c) Splunk, Inc
- * Contact: Gareth Watts (gareth@splunk.com)
- * http://omnipotent.net/jquery.sparkline/
- *
- * Generates inline sparkline charts from data supplied either to the method
- * or inline in HTML
- *
- * Compatible with Internet Explorer 6.0+ and modern browsers equipped with the canvas tag
- * (Firefox 2.0+, Safari, Opera, etc)
- *
- * License: New BSD License
- *
- * Copyright (c) 2012, Splunk Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- *     * Redistributions of source code must retain the above copyright notice,
- *       this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright notice,
- *       this list of conditions and the following disclaimer in the documentation
- *       and/or other materials provided with the distribution.
- *     * Neither the name of Splunk Inc nor the names of its contributors may
- *       be used to endorse or promote products derived from this software without
- *       specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
- * SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
- * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Usage:
- *  $(selector).sparkline(values, options)
- *
- * If values is undefined or set to 'html' then the data values are read from the specified tag:
- *   <p>Sparkline: <span class="sparkline">1,4,6,6,8,5,3,5</span></p>
- *   $('.sparkline').sparkline();
- * There must be no spaces in the enclosed data set
- *
- * Otherwise values must be an array of numbers or null values
- *    <p>Sparkline: <span id="sparkline1">This text replaced if the browser is compatible</span></p>
- *    $('#sparkline1').sparkline([1,4,6,6,8,5,3,5])
- *    $('#sparkline2').sparkline([1,4,6,null,null,5,3,5])
- *
- * Values can also be specified in an HTML comment, or as a values attribute:
- *    <p>Sparkline: <span class="sparkline"><!--1,4,6,6,8,5,3,5 --></span></p>
- *    <p>Sparkline: <span class="sparkline" values="1,4,6,6,8,5,3,5"></span></p>
- *    $('.sparkline').sparkline();
- *
- * For line charts, x values can also be specified:
- *   <p>Sparkline: <span class="sparkline">1:1,2.7:4,3.4:6,5:6,6:8,8.7:5,9:3,10:5</span></p>
- *    $('#sparkline1').sparkline([ [1,1], [2.7,4], [3.4,6], [5,6], [6,8], [8.7,5], [9,3], [10,5] ])
- *
- * By default, options should be passed in as teh second argument to the sparkline function:
- *   $('.sparkline').sparkline([1,2,3,4], {type: 'bar'})
- *
- * Options can also be set by passing them on the tag itself.  This feature is disabled by default though
- * as there's a slight performance overhead:
- *   $('.sparkline').sparkline([1,2,3,4], {enableTagOptions: true})
- *   <p>Sparkline: <span class="sparkline" sparkType="bar" sparkBarColor="red">loading</span></p>
- * Prefix all options supplied as tag attribute with "spark" (configurable by setting tagOptionPrefix)
- *
- * Supported options:
- *   lineColor - Color of the line used for the chart
- *   fillColor - Color used to fill in the chart - Set to '' or false for a transparent chart
- *   width - Width of the chart - Defaults to 3 times the number of values in pixels
- *   height - Height of the chart - Defaults to the height of the containing element
- *   chartRangeMin - Specify the minimum value to use for the Y range of the chart - Defaults to the minimum value supplied
- *   chartRangeMax - Specify the maximum value to use for the Y range of the chart - Defaults to the maximum value supplied
- *   chartRangeClip - Clip out of range values to the max/min specified by chartRangeMin and chartRangeMax
- *   chartRangeMinX - Specify the minimum value to use for the X range of the chart - Defaults to the minimum value supplied
- *   chartRangeMaxX - Specify the maximum value to use for the X range of the chart - Defaults to the maximum value supplied
- *   composite - If true then don't erase any existing chart attached to the tag, but draw
- *           another chart over the top - Note that width and height are ignored if an
- *           existing chart is detected.
- *   tagValuesAttribute - Name of tag attribute to check for data values - Defaults to 'values'
- *   enableTagOptions - Whether to check tags for sparkline options
- *   tagOptionPrefix - Prefix used for options supplied as tag attributes - Defaults to 'spark'
- *   disableHiddenCheck - If set to true, then the plugin will assume that charts will never be drawn into a
- *           hidden dom element, avoding a browser reflow
- *   disableInteraction - If set to true then all mouseover/click interaction behaviour will be disabled,
- *       making the plugin perform much like it did in 1.x
- *   disableTooltips - If set to true then tooltips will be disabled - Defaults to false (tooltips enabled)
- *   disableHighlight - If set to true then highlighting of selected chart elements on mouseover will be disabled
- *       defaults to false (highlights enabled)
- *   highlightLighten - Factor to lighten/darken highlighted chart values by - Defaults to 1.4 for a 40% increase
- *   tooltipContainer - Specify which DOM element the tooltip should be rendered into - defaults to document.body
- *   tooltipClassname - Optional CSS classname to apply to tooltips - If not specified then a default style will be applied
- *   tooltipOffsetX - How many pixels away from the mouse pointer to render the tooltip on the X axis
- *   tooltipOffsetY - How many pixels away from the mouse pointer to render the tooltip on the r axis
- *   tooltipFormatter  - Optional callback that allows you to override the HTML displayed in the tooltip
- *       callback is given arguments of (sparkline, options, fields)
- *   tooltipChartTitle - If specified then the tooltip uses the string specified by this setting as a title
- *   tooltipFormat - A format string or SPFormat object  (or an array thereof for multiple entries)
- *       to control the format of the tooltip
- *   tooltipPrefix - A string to prepend to each field displayed in a tooltip
- *   tooltipSuffix - A string to append to each field displayed in a tooltip
- *   tooltipSkipNull - If true then null values will not have a tooltip displayed (defaults to true)
- *   tooltipValueLookups - An object or range map to map field values to tooltip strings
- *       (eg. to map -1 to "Lost", 0 to "Draw", and 1 to "Win")
- *   numberFormatter - Optional callback for formatting numbers in tooltips
- *   numberDigitGroupSep - Character to use for group separator in numbers "1,234" - Defaults to ","
- *   numberDecimalMark - Character to use for the decimal point when formatting numbers - Defaults to "."
- *   numberDigitGroupCount - Number of digits between group separator - Defaults to 3
- *
- * There are 7 types of sparkline, selected by supplying a "type" option of 'line' (default),
- * 'bar', 'tristate', 'bullet', 'discrete', 'pie' or 'box'
- *    line - Line chart.  Options:
- *       spotColor - Set to '' to not end each line in a circular spot
- *       minSpotColor - If set, color of spot at minimum value
- *       maxSpotColor - If set, color of spot at maximum value
- *       spotRadius - Radius in pixels
- *       lineWidth - Width of line in pixels
- *       normalRangeMin
- *       normalRangeMax - If set draws a filled horizontal bar between these two values marking the "normal"
- *                      or expected range of values
- *       normalRangeColor - Color to use for the above bar
- *       drawNormalOnTop - Draw the normal range above the chart fill color if true
- *       defaultPixelsPerValue - Defaults to 3 pixels of width for each value in the chart
- *       highlightSpotColor - The color to use for drawing a highlight spot on mouseover - Set to null to disable
- *       highlightLineColor - The color to use for drawing a highlight line on mouseover - Set to null to disable
- *       valueSpots - Specify which points to draw spots on, and in which color.  Accepts a range map
- *
- *   bar - Bar chart.  Options:
- *       barColor - Color of bars for postive values
- *       negBarColor - Color of bars for negative values
- *       zeroColor - Color of bars with zero values
- *       nullColor - Color of bars with null values - Defaults to omitting the bar entirely
- *       barWidth - Width of bars in pixels
- *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
- *                  can be an Array of values to control the color of individual bars or a range map
- *                  to specify colors for individual ranges of values
- *       barSpacing - Gap between bars in pixels
- *       zeroAxis - Centers the y-axis around zero if true
- *
- *   tristate - Charts values of win (>0), lose (<0) or draw (=0)
- *       posBarColor - Color of win values
- *       negBarColor - Color of lose values
- *       zeroBarColor - Color of draw values
- *       barWidth - Width of bars in pixels
- *       barSpacing - Gap between bars in pixels
- *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
- *                  can be an Array of values to control the color of individual bars or a range map
- *                  to specify colors for individual ranges of values
- *
- *   discrete - Options:
- *       lineHeight - Height of each line in pixels - Defaults to 30% of the graph height
- *       thesholdValue - Values less than this value will be drawn using thresholdColor instead of lineColor
- *       thresholdColor
- *
- *   bullet - Values for bullet graphs msut be in the order: target, performance, range1, range2, range3, ...
- *       options:
- *       targetColor - The color of the vertical target marker
- *       targetWidth - The width of the target marker in pixels
- *       performanceColor - The color of the performance measure horizontal bar
- *       rangeColors - Colors to use for each qualitative range background color
- *
- *   pie - Pie chart. Options:
- *       sliceColors - An array of colors to use for pie slices
- *       offset - Angle in degrees to offset the first slice - Try -90 or +90
- *       borderWidth - Width of border to draw around the pie chart, in pixels - Defaults to 0 (no border)
- *       borderColor - Color to use for the pie chart border - Defaults to #000
- *
- *   box - Box plot. Options:
- *       raw - Set to true to supply pre-computed plot points as values
- *             values should be: low_outlier, low_whisker, q1, median, q3, high_whisker, high_outlier
- *             When set to false you can supply any number of values and the box plot will
- *             be computed for you.  Default is false.
- *       showOutliers - Set to true (default) to display outliers as circles
- *       outlierIQR - Interquartile range used to determine outliers.  Default 1.5
- *       boxLineColor - Outline color of the box
- *       boxFillColor - Fill color for the box
- *       whiskerColor - Line color used for whiskers
- *       outlierLineColor - Outline color of outlier circles
- *       outlierFillColor - Fill color of the outlier circles
- *       spotRadius - Radius of outlier circles
- *       medianColor - Line color of the median line
- *       target - Draw a target cross hair at the supplied value (default undefined)
- *
- *
- *
- *   Examples:
- *   $('#sparkline1').sparkline(myvalues, { lineColor: '#f00', fillColor: false });
- *   $('.barsparks').sparkline('html', { type:'bar', height:'40px', barWidth:5 });
- *   $('#tristate').sparkline([1,1,-1,1,0,0,-1], { type:'tristate' }):
- *   $('#discrete').sparkline([1,3,4,5,5,3,4,5], { type:'discrete' });
- *   $('#bullet').sparkline([10,12,12,9,7], { type:'bullet' });
- *   $('#pie').sparkline([1,1,2], { type:'pie' });
- */
-
-/*jslint regexp: true, browser: true, jquery: true, white: true, nomen: false, plusplus: false, maxerr: 500, indent: 4 */
-
-(function (document, Math, undefined) {
-	// performance/minified-size optimization
-	(function (factory) {
-		if (true) {
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(515)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else if (jQuery && !jQuery.fn.sparkline) {
-			factory(jQuery);
-		}
-	})(function ($) {
-		'use strict';
-
-		var UNSET_OPTION = {},
-		    getDefaults,
-		    createClass,
-		    SPFormat,
-		    clipval,
-		    quartile,
-		    normalizeValue,
-		    normalizeValues,
-		    remove,
-		    isNumber,
-		    all,
-		    sum,
-		    addCSS,
-		    ensureArray,
-		    formatNumber,
-		    RangeMap,
-		    MouseHandler,
-		    Tooltip,
-		    barHighlightMixin,
-		    line,
-		    bar,
-		    tristate,
-		    discrete,
-		    bullet,
-		    pie,
-		    box,
-		    defaultStyles,
-		    initStyles,
-		    VShape,
-		    VCanvas_base,
-		    VCanvas_canvas,
-		    VCanvas_vml,
-		    pending,
-		    shapeCount = 0;
-
-		/**
-   * Default configuration settings
-   */
-		getDefaults = function getDefaults() {
-			return {
-				// Settings common to most/all chart types
-				common: {
-					type: 'line',
-					lineColor: '#00f',
-					fillColor: '#cdf',
-					defaultPixelsPerValue: 3,
-					width: 'auto',
-					height: 'auto',
-					composite: false,
-					tagValuesAttribute: 'values',
-					tagOptionsPrefix: 'spark',
-					enableTagOptions: false,
-					enableHighlight: true,
-					highlightLighten: 1.1,
-					tooltipSkipNull: true,
-					tooltipPrefix: '',
-					tooltipSuffix: '',
-					disableHiddenCheck: false,
-					numberFormatter: false,
-					numberDigitGroupCount: 3,
-					numberDigitGroupSep: ',',
-					numberDecimalMark: '.',
-					disableTooltips: false,
-					disableInteraction: false
-				},
-				// Defaults for line charts
-				line: {
-					spotColor: '#f80',
-					highlightSpotColor: '#5f5',
-					highlightLineColor: '#f22',
-					spotRadius: 1.5,
-					minSpotColor: '#f80',
-					maxSpotColor: '#f80',
-					lineWidth: 1,
-					normalRangeMin: undefined,
-					normalRangeMax: undefined,
-					normalRangeColor: '#ccc',
-					drawNormalOnTop: false,
-					chartRangeMin: undefined,
-					chartRangeMax: undefined,
-					chartRangeMinX: undefined,
-					chartRangeMaxX: undefined,
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{y}}{{suffix}}')
-				},
-				// Defaults for bar charts
-				bar: {
-					barColor: '#3366cc',
-					negBarColor: '#f44',
-					stackedBarColor: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
-					zeroColor: undefined,
-					nullColor: undefined,
-					zeroAxis: true,
-					barWidth: 4,
-					barSpacing: 1,
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					chartRangeClip: false,
-					colorMap: undefined,
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{value}}{{suffix}}')
-				},
-				// Defaults for tristate charts
-				tristate: {
-					barWidth: 4,
-					barSpacing: 1,
-					posBarColor: '#6f6',
-					negBarColor: '#f44',
-					zeroBarColor: '#999',
-					colorMap: {},
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value:map}}'),
-					tooltipValueLookups: { map: { '-1': 'Loss', '0': 'Draw', '1': 'Win' } }
-				},
-				// Defaults for discrete charts
-				discrete: {
-					lineHeight: 'auto',
-					thresholdColor: undefined,
-					thresholdValue: 0,
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					chartRangeClip: false,
-					tooltipFormat: new SPFormat('{{prefix}}{{value}}{{suffix}}')
-				},
-				// Defaults for bullet charts
-				bullet: {
-					targetColor: '#f33',
-					targetWidth: 3, // width of the target bar in pixels
-					performanceColor: '#33f',
-					rangeColors: ['#d3dafe', '#a8b6ff', '#7f94ff'],
-					base: undefined, // set this to a number to change the base start number
-					tooltipFormat: new SPFormat('{{fieldkey:fields}} - {{value}}'),
-					tooltipValueLookups: { fields: { r: 'Range', p: 'Performance', t: 'Target' } }
-				},
-				// Defaults for pie charts
-				pie: {
-					offset: 0,
-					sliceColors: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
-					borderWidth: 0,
-					borderColor: '#000',
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value}} ({{percent.1}}%)')
-				},
-				// Defaults for box plots
-				box: {
-					raw: false,
-					boxLineColor: '#000',
-					boxFillColor: '#cdf',
-					whiskerColor: '#000',
-					outlierLineColor: '#333',
-					outlierFillColor: '#fff',
-					medianColor: '#f00',
-					showOutliers: true,
-					outlierIQR: 1.5,
-					spotRadius: 1.5,
-					target: undefined,
-					targetColor: '#4a2',
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					tooltipFormat: new SPFormat('{{field:fields}}: {{value}}'),
-					tooltipFormatFieldlistKey: 'field',
-					tooltipValueLookups: { fields: { lq: 'Lower Quartile', med: 'Median',
-							uq: 'Upper Quartile', lo: 'Left Outlier', ro: 'Right Outlier',
-							lw: 'Left Whisker', rw: 'Right Whisker' } }
-				}
-			};
-		};
-
-		// You can have tooltips use a css class other than jqstooltip by specifying tooltipClassname
-		// tooltip modified by westilian:jaman
-		defaultStyles = '.jqstooltip { ' + 'position: absolute;' + 'left: 30px;' + 'top: 0px;' + 'display: block;' + 'visibility: hidden;' + 'background: rgb(0, 0, 0) transparent;' + 'background-color: rgba(0,0,0,0.6);' + 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);' + '-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";' + 'color: white;' + 'font: 10px arial, san serif;' + 'text-align: left;' + 'white-space: nowrap;' + 'border: 0px solid white;' + 'border-radius: 3px;' + '-webkit-border-radius: 3px;' + 'z-index: 10000;' + '}' + '.jqsfield { ' + 'color: white;' + 'padding: 5px 5px 5px 5px;' + 'font: 10px arial, san serif;' + 'text-align: left;' + '}';
-
-		/**
-   * Utilities
-   */
-
-		createClass = function createClass() /* [baseclass, [mixin, ...]], definition */{
-			var Class, args;
-			Class = function Class() {
-				this.init.apply(this, arguments);
-			};
-			if (arguments.length > 1) {
-				if (arguments[0]) {
-					Class.prototype = $.extend(new arguments[0](), arguments[arguments.length - 1]);
-					Class._super = arguments[0].prototype;
-				} else {
-					Class.prototype = arguments[arguments.length - 1];
-				}
-				if (arguments.length > 2) {
-					args = Array.prototype.slice.call(arguments, 1, -1);
-					args.unshift(Class.prototype);
-					$.extend.apply($, args);
-				}
-			} else {
-				Class.prototype = arguments[0];
-			}
-			Class.prototype.cls = Class;
-			return Class;
-		};
-
-		/**
-   * Wraps a format string for tooltips
-   * {{x}}
-   * {{x.2}
-     * {{x:months}}
-     */
-		$.SPFormatClass = SPFormat = createClass({
-			fre: /\{\{([\w.]+?)(:(.+?))?\}\}/g,
-			precre: /(\w+)\.(\d+)/,
-
-			init: function init(format, fclass) {
-				this.format = format;
-				this.fclass = fclass;
-			},
-
-			render: function render(fieldset, lookups, options) {
-				var self = this,
-				    fields = fieldset,
-				    match,
-				    token,
-				    lookupkey,
-				    fieldvalue,
-				    prec;
-				return this.format.replace(this.fre, function () {
-					var lookup;
-					token = arguments[1];
-					lookupkey = arguments[3];
-					match = self.precre.exec(token);
-					if (match) {
-						prec = match[2];
-						token = match[1];
-					} else {
-						prec = false;
-					}
-					fieldvalue = fields[token];
-					if (fieldvalue === undefined) {
-						return '';
-					}
-					if (lookupkey && lookups && lookups[lookupkey]) {
-						lookup = lookups[lookupkey];
-						if (lookup.get) {
-							// RangeMap
-							return lookups[lookupkey].get(fieldvalue) || fieldvalue;
-						} else {
-							return lookups[lookupkey][fieldvalue] || fieldvalue;
-						}
-					}
-					if (isNumber(fieldvalue)) {
-						if (options.get('numberFormatter')) {
-							fieldvalue = options.get('numberFormatter')(fieldvalue);
-						} else {
-							fieldvalue = formatNumber(fieldvalue, prec, options.get('numberDigitGroupCount'), options.get('numberDigitGroupSep'), options.get('numberDecimalMark'));
-						}
-					}
-					return fieldvalue;
-				});
-			}
-		});
-
-		// convience method to avoid needing the new operator
-		$.spformat = function (format, fclass) {
-			return new SPFormat(format, fclass);
-		};
-
-		clipval = function clipval(val, min, max) {
-			if (val < min) {
-				return min;
-			}
-			if (val > max) {
-				return max;
-			}
-			return val;
-		};
-
-		quartile = function quartile(values, q) {
-			var vl;
-			if (q === 2) {
-				vl = Math.floor(values.length / 2);
-				return values.length % 2 ? values[vl] : (values[vl - 1] + values[vl]) / 2;
-			} else {
-				if (values.length % 2) {
-					// odd
-					vl = (values.length * q + q) / 4;
-					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
-				} else {
-					//even
-					vl = (values.length * q + 2) / 4;
-					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
-				}
-			}
-		};
-
-		normalizeValue = function normalizeValue(val) {
-			var nf;
-			switch (val) {
-				case 'undefined':
-					val = undefined;
-					break;
-				case 'null':
-					val = null;
-					break;
-				case 'true':
-					val = true;
-					break;
-				case 'false':
-					val = false;
-					break;
-				default:
-					nf = parseFloat(val);
-					if (val == nf) {
-						val = nf;
-					}
-			}
-			return val;
-		};
-
-		normalizeValues = function normalizeValues(vals) {
-			var i,
-			    result = [];
-			for (i = vals.length; i--;) {
-				result[i] = normalizeValue(vals[i]);
-			}
-			return result;
-		};
-
-		remove = function remove(vals, filter) {
-			var i,
-			    vl,
-			    result = [];
-			for (i = 0, vl = vals.length; i < vl; i++) {
-				if (vals[i] !== filter) {
-					result.push(vals[i]);
-				}
-			}
-			return result;
-		};
-
-		isNumber = function isNumber(num) {
-			return !isNaN(parseFloat(num)) && isFinite(num);
-		};
-
-		formatNumber = function formatNumber(num, prec, groupsize, groupsep, decsep) {
-			var p, i;
-			num = (prec === false ? parseFloat(num).toString() : num.toFixed(prec)).split('');
-			p = (p = $.inArray('.', num)) < 0 ? num.length : p;
-			if (p < num.length) {
-				num[p] = decsep;
-			}
-			for (i = p - groupsize; i > 0; i -= groupsize) {
-				num.splice(i, 0, groupsep);
-			}
-			return num.join('');
-		};
-
-		// determine if all values of an array match a value
-		// returns true if the array is empty
-		all = function all(val, arr, ignoreNull) {
-			var i;
-			for (i = arr.length; i--;) {
-				if (ignoreNull && arr[i] === null) continue;
-				if (arr[i] !== val) {
-					return false;
-				}
-			}
-			return true;
-		};
-
-		// sums the numeric values in an array, ignoring other values
-		sum = function sum(vals) {
-			var total = 0,
-			    i;
-			for (i = vals.length; i--;) {
-				total += typeof vals[i] === 'number' ? vals[i] : 0;
-			}
-			return total;
-		};
-
-		ensureArray = function ensureArray(val) {
-			return $.isArray(val) ? val : [val];
-		};
-
-		// http://paulirish.com/2008/bookmarklet-inject-new-css-rules/
-		addCSS = function addCSS(css) {
-			var tag;
-			//if ('\v' == 'v') /* ie only */ {
-			if (document.createStyleSheet) {
-				document.createStyleSheet().cssText = css;
-			} else {
-				tag = document.createElement('style');
-				tag.type = 'text/css';
-				document.getElementsByTagName('head')[0].appendChild(tag);
-				tag[typeof document.body.style.WebkitAppearance == 'string' ? /* webkit only */'innerText' : 'innerHTML'] = css;
-			}
-		};
-
-		// Provide a cross-browser interface to a few simple drawing primitives
-		$.fn.simpledraw = function (width, height, useExisting, interact) {
-			var target, mhandler;
-			if (useExisting && (target = this.data('_jqs_vcanvas'))) {
-				return target;
-			}
-
-			if ($.fn.sparkline.canvas === false) {
-				// We've already determined that neither Canvas nor VML are available
-				return false;
-			} else if ($.fn.sparkline.canvas === undefined) {
-				// No function defined yet -- need to see if we support Canvas or VML
-				var el = document.createElement('canvas');
-				if (!!(el.getContext && el.getContext('2d'))) {
-					// Canvas is available
-					$.fn.sparkline.canvas = function (width, height, target, interact) {
-						return new VCanvas_canvas(width, height, target, interact);
-					};
-				} else if (document.namespaces && !document.namespaces.v) {
-					// VML is available
-					document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', '#default#VML');
-					$.fn.sparkline.canvas = function (width, height, target, interact) {
-						return new VCanvas_vml(width, height, target);
-					};
-				} else {
-					// Neither Canvas nor VML are available
-					$.fn.sparkline.canvas = false;
-					return false;
-				}
-			}
-
-			if (width === undefined) {
-				width = $(this).innerWidth();
-			}
-			if (height === undefined) {
-				height = $(this).innerHeight();
-			}
-
-			target = $.fn.sparkline.canvas(width, height, this, interact);
-
-			mhandler = $(this).data('_jqs_mhandler');
-			if (mhandler) {
-				mhandler.registerCanvas(target);
-			}
-			return target;
-		};
-
-		$.fn.cleardraw = function () {
-			var target = this.data('_jqs_vcanvas');
-			if (target) {
-				target.reset();
-			}
-		};
-
-		$.RangeMapClass = RangeMap = createClass({
-			init: function init(map) {
-				var key,
-				    range,
-				    rangelist = [];
-				for (key in map) {
-					if (map.hasOwnProperty(key) && typeof key === 'string' && key.indexOf(':') > -1) {
-						range = key.split(':');
-						range[0] = range[0].length === 0 ? -Infinity : parseFloat(range[0]);
-						range[1] = range[1].length === 0 ? Infinity : parseFloat(range[1]);
-						range[2] = map[key];
-						rangelist.push(range);
-					}
-				}
-				this.map = map;
-				this.rangelist = rangelist || false;
-			},
-
-			get: function get(value) {
-				var rangelist = this.rangelist,
-				    i,
-				    range,
-				    result;
-				if ((result = this.map[value]) !== undefined) {
-					return result;
-				}
-				if (rangelist) {
-					for (i = rangelist.length; i--;) {
-						range = rangelist[i];
-						if (range[0] <= value && range[1] >= value) {
-							return range[2];
-						}
-					}
-				}
-				return undefined;
-			}
-		});
-
-		// Convenience function
-		$.range_map = function (map) {
-			return new RangeMap(map);
-		};
-
-		MouseHandler = createClass({
-			init: function init(el, options) {
-				var $el = $(el);
-				this.$el = $el;
-				this.options = options;
-				this.currentPageX = 0;
-				this.currentPageY = 0;
-				this.el = el;
-				this.splist = [];
-				this.tooltip = null;
-				this.over = false;
-				this.displayTooltips = !options.get('disableTooltips');
-				this.highlightEnabled = !options.get('disableHighlight');
-			},
-
-			registerSparkline: function registerSparkline(sp) {
-				this.splist.push(sp);
-				if (this.over) {
-					this.updateDisplay();
-				}
-			},
-
-			registerCanvas: function registerCanvas(canvas) {
-				var $canvas = $(canvas.canvas);
-				this.canvas = canvas;
-				this.$canvas = $canvas;
-				$canvas.mouseenter($.proxy(this.mouseenter, this));
-				$canvas.mouseleave($.proxy(this.mouseleave, this));
-				$canvas.click($.proxy(this.mouseclick, this));
-			},
-
-			reset: function reset(removeTooltip) {
-				this.splist = [];
-				if (this.tooltip && removeTooltip) {
-					this.tooltip.remove();
-					this.tooltip = undefined;
-				}
-			},
-
-			mouseclick: function mouseclick(e) {
-				var clickEvent = $.Event('sparklineClick');
-				clickEvent.originalEvent = e;
-				clickEvent.sparklines = this.splist;
-				this.$el.trigger(clickEvent);
-			},
-
-			mouseenter: function mouseenter(e) {
-				$(document.body).unbind('mousemove.jqs');
-				$(document.body).bind('mousemove.jqs', $.proxy(this.mousemove, this));
-				this.over = true;
-				this.currentPageX = e.pageX;
-				this.currentPageY = e.pageY;
-				this.currentEl = e.target;
-				if (!this.tooltip && this.displayTooltips) {
-					this.tooltip = new Tooltip(this.options);
-					this.tooltip.updatePosition(e.pageX, e.pageY);
-				}
-				this.updateDisplay();
-			},
-
-			mouseleave: function mouseleave() {
-				$(document.body).unbind('mousemove.jqs');
-				var splist = this.splist,
-				    spcount = splist.length,
-				    needsRefresh = false,
-				    sp,
-				    i;
-				this.over = false;
-				this.currentEl = null;
-
-				if (this.tooltip) {
-					this.tooltip.remove();
-					this.tooltip = null;
-				}
-
-				for (i = 0; i < spcount; i++) {
-					sp = splist[i];
-					if (sp.clearRegionHighlight()) {
-						needsRefresh = true;
-					}
-				}
-
-				if (needsRefresh) {
-					this.canvas.render();
-				}
-			},
-
-			mousemove: function mousemove(e) {
-				this.currentPageX = e.pageX;
-				this.currentPageY = e.pageY;
-				this.currentEl = e.target;
-				if (this.tooltip) {
-					this.tooltip.updatePosition(e.pageX, e.pageY);
-				}
-				this.updateDisplay();
-			},
-
-			updateDisplay: function updateDisplay() {
-				var splist = this.splist,
-				    spcount = splist.length,
-				    needsRefresh = false,
-				    offset = this.$canvas.offset(),
-				    localX = this.currentPageX - offset.left,
-				    localY = this.currentPageY - offset.top,
-				    tooltiphtml,
-				    sp,
-				    i,
-				    result,
-				    changeEvent;
-				if (!this.over) {
-					return;
-				}
-				for (i = 0; i < spcount; i++) {
-					sp = splist[i];
-					result = sp.setRegionHighlight(this.currentEl, localX, localY);
-					if (result) {
-						needsRefresh = true;
-					}
-				}
-				if (needsRefresh) {
-					changeEvent = $.Event('sparklineRegionChange');
-					changeEvent.sparklines = this.splist;
-					this.$el.trigger(changeEvent);
-					if (this.tooltip) {
-						tooltiphtml = '';
-						for (i = 0; i < spcount; i++) {
-							sp = splist[i];
-							tooltiphtml += sp.getCurrentRegionTooltip();
-						}
-						this.tooltip.setContent(tooltiphtml);
-					}
-					if (!this.disableHighlight) {
-						this.canvas.render();
-					}
-				}
-				if (result === null) {
-					this.mouseleave();
-				}
-			}
-		});
-
-		Tooltip = createClass({
-			sizeStyle: 'position: static !important;' + 'display: block !important;' + 'visibility: hidden !important;' + 'float: left !important;',
-
-			init: function init(options) {
-				var tooltipClassname = options.get('tooltipClassname', 'jqstooltip'),
-				    sizetipStyle = this.sizeStyle,
-				    offset;
-				this.container = options.get('tooltipContainer') || document.body;
-				this.tooltipOffsetX = options.get('tooltipOffsetX', 10);
-				this.tooltipOffsetY = options.get('tooltipOffsetY', 12);
-				// remove any previous lingering tooltip
-				$('#jqssizetip').remove();
-				$('#jqstooltip').remove();
-				this.sizetip = $('<div/>', {
-					id: 'jqssizetip',
-					style: sizetipStyle,
-					'class': tooltipClassname
-				});
-				this.tooltip = $('<div/>', {
-					id: 'jqstooltip',
-					'class': tooltipClassname
-				}).appendTo(this.container);
-				// account for the container's location
-				offset = this.tooltip.offset();
-				this.offsetLeft = offset.left;
-				this.offsetTop = offset.top;
-				this.hidden = true;
-				$(window).unbind('resize.jqs scroll.jqs');
-				$(window).bind('resize.jqs scroll.jqs', $.proxy(this.updateWindowDims, this));
-				this.updateWindowDims();
-			},
-
-			updateWindowDims: function updateWindowDims() {
-				this.scrollTop = $(window).scrollTop();
-				this.scrollLeft = $(window).scrollLeft();
-				this.scrollRight = this.scrollLeft + $(window).width();
-				this.updatePosition();
-			},
-
-			getSize: function getSize(content) {
-				this.sizetip.html(content).appendTo(this.container);
-				this.width = this.sizetip.width() + 1;
-				this.height = this.sizetip.height();
-				this.sizetip.remove();
-			},
-
-			setContent: function setContent(content) {
-				if (!content) {
-					this.tooltip.css('visibility', 'hidden');
-					this.hidden = true;
-					return;
-				}
-				this.getSize(content);
-				this.tooltip.html(content).css({
-					'width': this.width,
-					'height': this.height,
-					'visibility': 'visible'
-				});
-				if (this.hidden) {
-					this.hidden = false;
-					this.updatePosition();
-				}
-			},
-
-			updatePosition: function updatePosition(x, y) {
-				if (x === undefined) {
-					if (this.mousex === undefined) {
-						return;
-					}
-					x = this.mousex - this.offsetLeft;
-					y = this.mousey - this.offsetTop;
-				} else {
-					this.mousex = x = x - this.offsetLeft;
-					this.mousey = y = y - this.offsetTop;
-				}
-				if (!this.height || !this.width || this.hidden) {
-					return;
-				}
-
-				y -= this.height + this.tooltipOffsetY;
-				x += this.tooltipOffsetX;
-
-				if (y < this.scrollTop) {
-					y = this.scrollTop;
-				}
-				if (x < this.scrollLeft) {
-					x = this.scrollLeft;
-				} else if (x + this.width > this.scrollRight) {
-					x = this.scrollRight - this.width;
-				}
-
-				this.tooltip.css({
-					'left': x,
-					'top': y
-				});
-			},
-
-			remove: function remove() {
-				this.tooltip.remove();
-				this.sizetip.remove();
-				this.sizetip = this.tooltip = undefined;
-				$(window).unbind('resize.jqs scroll.jqs');
-			}
-		});
-
-		initStyles = function initStyles() {
-			addCSS(defaultStyles);
-		};
-
-		$(initStyles);
-
-		pending = [];
-		$.fn.sparkline = function (userValues, userOptions) {
-			return this.each(function () {
-				var options = new $.fn.sparkline.options(this, userOptions),
-				    $this = $(this),
-				    render,
-				    i;
-				render = function render() {
-					var values, width, height, tmp, mhandler, sp, vals;
-					if (userValues === 'html' || userValues === undefined) {
-						vals = this.getAttribute(options.get('tagValuesAttribute'));
-						if (vals === undefined || vals === null) {
-							vals = $this.html();
-						}
-						values = vals.replace(/(^\s*<!--)|(-->\s*$)|\s+/g, '').split(',');
-					} else {
-						values = userValues;
-					}
-
-					width = options.get('width') === 'auto' ? values.length * options.get('defaultPixelsPerValue') : options.get('width');
-					if (options.get('height') === 'auto') {
-						if (!options.get('composite') || !$.data(this, '_jqs_vcanvas')) {
-							// must be a better way to get the line height
-							tmp = document.createElement('span');
-							tmp.innerHTML = 'a';
-							$this.html(tmp);
-							height = $(tmp).innerHeight() || $(tmp).height();
-							$(tmp).remove();
-							tmp = null;
-						}
-					} else {
-						height = options.get('height');
-					}
-
-					if (!options.get('disableInteraction')) {
-						mhandler = $.data(this, '_jqs_mhandler');
-						if (!mhandler) {
-							mhandler = new MouseHandler(this, options);
-							$.data(this, '_jqs_mhandler', mhandler);
-						} else if (!options.get('composite')) {
-							mhandler.reset();
-						}
-					} else {
-						mhandler = false;
-					}
-
-					if (options.get('composite') && !$.data(this, '_jqs_vcanvas')) {
-						if (!$.data(this, '_jqs_errnotify')) {
-							alert('Attempted to attach a composite sparkline to an element with no existing sparkline');
-							$.data(this, '_jqs_errnotify', true);
-						}
-						return;
-					}
-
-					sp = new $.fn.sparkline[options.get('type')](this, values, options, width, height);
-
-					sp.render();
-
-					if (mhandler) {
-						mhandler.registerSparkline(sp);
-					}
-				};
-				if ($(this).html() && !options.get('disableHiddenCheck') && $(this).is(':hidden') || !$(this).parents('body').length) {
-					if (!options.get('composite') && $.data(this, '_jqs_pending')) {
-						// remove any existing references to the element
-						for (i = pending.length; i; i--) {
-							if (pending[i - 1][0] == this) {
-								pending.splice(i - 1, 1);
-							}
-						}
-					}
-					pending.push([this, render]);
-					$.data(this, '_jqs_pending', true);
-				} else {
-					render.call(this);
-				}
-			});
-		};
-
-		$.fn.sparkline.defaults = getDefaults();
-
-		$.sparkline_display_visible = function () {
-			var el, i, pl;
-			var done = [];
-			for (i = 0, pl = pending.length; i < pl; i++) {
-				el = pending[i][0];
-				if ($(el).is(':visible') && !$(el).parents().is(':hidden')) {
-					pending[i][1].call(el);
-					$.data(pending[i][0], '_jqs_pending', false);
-					done.push(i);
-				} else if (!$(el).closest('html').length && !$.data(el, '_jqs_pending')) {
-					// element has been inserted and removed from the DOM
-					// If it was not yet inserted into the dom then the .data request
-					// will return true.
-					// removing from the dom causes the data to be removed.
-					$.data(pending[i][0], '_jqs_pending', false);
-					done.push(i);
-				}
-			}
-			for (i = done.length; i; i--) {
-				pending.splice(done[i - 1], 1);
-			}
-		};
-
-		/**
-   * User option handler
-   */
-		$.fn.sparkline.options = createClass({
-			init: function init(tag, userOptions) {
-				var extendedOptions, defaults, base, tagOptionType;
-				this.userOptions = userOptions = userOptions || {};
-				this.tag = tag;
-				this.tagValCache = {};
-				defaults = $.fn.sparkline.defaults;
-				base = defaults.common;
-				this.tagOptionsPrefix = userOptions.enableTagOptions && (userOptions.tagOptionsPrefix || base.tagOptionsPrefix);
-
-				tagOptionType = this.getTagSetting('type');
-				if (tagOptionType === UNSET_OPTION) {
-					extendedOptions = defaults[userOptions.type || base.type];
-				} else {
-					extendedOptions = defaults[tagOptionType];
-				}
-				this.mergedOptions = $.extend({}, base, extendedOptions, userOptions);
-			},
-
-			getTagSetting: function getTagSetting(key) {
-				var prefix = this.tagOptionsPrefix,
-				    val,
-				    i,
-				    pairs,
-				    keyval;
-				if (prefix === false || prefix === undefined) {
-					return UNSET_OPTION;
-				}
-				if (this.tagValCache.hasOwnProperty(key)) {
-					val = this.tagValCache.key;
-				} else {
-					val = this.tag.getAttribute(prefix + key);
-					if (val === undefined || val === null) {
-						val = UNSET_OPTION;
-					} else if (val.substr(0, 1) === '[') {
-						val = val.substr(1, val.length - 2).split(',');
-						for (i = val.length; i--;) {
-							val[i] = normalizeValue(val[i].replace(/(^\s*)|(\s*$)/g, ''));
-						}
-					} else if (val.substr(0, 1) === '{') {
-						pairs = val.substr(1, val.length - 2).split(',');
-						val = {};
-						for (i = pairs.length; i--;) {
-							keyval = pairs[i].split(':', 2);
-							val[keyval[0].replace(/(^\s*)|(\s*$)/g, '')] = normalizeValue(keyval[1].replace(/(^\s*)|(\s*$)/g, ''));
-						}
-					} else {
-						val = normalizeValue(val);
-					}
-					this.tagValCache.key = val;
-				}
-				return val;
-			},
-
-			get: function get(key, defaultval) {
-				var tagOption = this.getTagSetting(key),
-				    result;
-				if (tagOption !== UNSET_OPTION) {
-					return tagOption;
-				}
-				return (result = this.mergedOptions[key]) === undefined ? defaultval : result;
-			}
-		});
-
-		$.fn.sparkline._base = createClass({
-			disabled: false,
-
-			init: function init(el, values, options, width, height) {
-				this.el = el;
-				this.$el = $(el);
-				this.values = values;
-				this.options = options;
-				this.width = width;
-				this.height = height;
-				this.currentRegion = undefined;
-			},
-
-			/**
-    * Setup the canvas
-    */
-			initTarget: function initTarget() {
-				var interactive = !this.options.get('disableInteraction');
-				if (!(this.target = this.$el.simpledraw(this.width, this.height, this.options.get('composite'), interactive))) {
-					this.disabled = true;
-				} else {
-					this.canvasWidth = this.target.pixelWidth;
-					this.canvasHeight = this.target.pixelHeight;
-				}
-			},
-
-			/**
-    * Actually render the chart to the canvas
-    */
-			render: function render() {
-				if (this.disabled) {
-					this.el.innerHTML = '';
-					return false;
-				}
-				return true;
-			},
-
-			/**
-    * Return a region id for a given x/y co-ordinate
-    */
-			getRegion: function getRegion(x, y) {},
-
-			/**
-    * Highlight an item based on the moused-over x,y co-ordinate
-    */
-			setRegionHighlight: function setRegionHighlight(el, x, y) {
-				var currentRegion = this.currentRegion,
-				    highlightEnabled = !this.options.get('disableHighlight'),
-				    newRegion;
-				if (x > this.canvasWidth || y > this.canvasHeight || x < 0 || y < 0) {
-					return null;
-				}
-				newRegion = this.getRegion(el, x, y);
-				if (currentRegion !== newRegion) {
-					if (currentRegion !== undefined && highlightEnabled) {
-						this.removeHighlight();
-					}
-					this.currentRegion = newRegion;
-					if (newRegion !== undefined && highlightEnabled) {
-						this.renderHighlight();
-					}
-					return true;
-				}
-				return false;
-			},
-
-			/**
-    * Reset any currently highlighted item
-    */
-			clearRegionHighlight: function clearRegionHighlight() {
-				if (this.currentRegion !== undefined) {
-					this.removeHighlight();
-					this.currentRegion = undefined;
-					return true;
-				}
-				return false;
-			},
-
-			renderHighlight: function renderHighlight() {
-				this.changeHighlight(true);
-			},
-
-			removeHighlight: function removeHighlight() {
-				this.changeHighlight(false);
-			},
-
-			changeHighlight: function changeHighlight(highlight) {},
-
-			/**
-    * Fetch the HTML to display as a tooltip
-    */
-			getCurrentRegionTooltip: function getCurrentRegionTooltip() {
-				var options = this.options,
-				    header = '',
-				    entries = [],
-				    fields,
-				    formats,
-				    formatlen,
-				    fclass,
-				    text,
-				    i,
-				    showFields,
-				    showFieldsKey,
-				    newFields,
-				    fv,
-				    formatter,
-				    format,
-				    fieldlen,
-				    j;
-				if (this.currentRegion === undefined) {
-					return '';
-				}
-				fields = this.getCurrentRegionFields();
-				formatter = options.get('tooltipFormatter');
-				if (formatter) {
-					return formatter(this, options, fields);
-				}
-				if (options.get('tooltipChartTitle')) {
-					header += '<div class="jqs jqstitle">' + options.get('tooltipChartTitle') + '</div>\n';
-				}
-				formats = this.options.get('tooltipFormat');
-				if (!formats) {
-					return '';
-				}
-				if (!$.isArray(formats)) {
-					formats = [formats];
-				}
-				if (!$.isArray(fields)) {
-					fields = [fields];
-				}
-				showFields = this.options.get('tooltipFormatFieldlist');
-				showFieldsKey = this.options.get('tooltipFormatFieldlistKey');
-				if (showFields && showFieldsKey) {
-					// user-selected ordering of fields
-					newFields = [];
-					for (i = fields.length; i--;) {
-						fv = fields[i][showFieldsKey];
-						if ((j = $.inArray(fv, showFields)) != -1) {
-							newFields[j] = fields[i];
-						}
-					}
-					fields = newFields;
-				}
-				formatlen = formats.length;
-				fieldlen = fields.length;
-				for (i = 0; i < formatlen; i++) {
-					format = formats[i];
-					if (typeof format === 'string') {
-						format = new SPFormat(format);
-					}
-					fclass = format.fclass || 'jqsfield';
-					for (j = 0; j < fieldlen; j++) {
-						if (!fields[j].isNull || !options.get('tooltipSkipNull')) {
-							$.extend(fields[j], {
-								prefix: options.get('tooltipPrefix'),
-								suffix: options.get('tooltipSuffix')
-							});
-							text = format.render(fields[j], options.get('tooltipValueLookups'), options);
-							entries.push('<div class="' + fclass + '">' + text + '</div>');
-						}
-					}
-				}
-				if (entries.length) {
-					return header + entries.join('\n');
-				}
-				return '';
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {},
-
-			calcHighlightColor: function calcHighlightColor(color, options) {
-				var highlightColor = options.get('highlightColor'),
-				    lighten = options.get('highlightLighten'),
-				    parse,
-				    mult,
-				    rgbnew,
-				    i;
-				if (highlightColor) {
-					return highlightColor;
-				}
-				if (lighten) {
-					// extract RGB values
-					parse = /^#([0-9a-f])([0-9a-f])([0-9a-f])$/i.exec(color) || /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(color);
-					if (parse) {
-						rgbnew = [];
-						mult = color.length === 4 ? 16 : 1;
-						for (i = 0; i < 3; i++) {
-							rgbnew[i] = clipval(Math.round(parseInt(parse[i + 1], 16) * mult * lighten), 0, 255);
-						}
-						return 'rgb(' + rgbnew.join(',') + ')';
-					}
-				}
-				return color;
-			}
-
-		});
-
-		barHighlightMixin = {
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    target = this.target,
-				    shapeids = this.regionShapes[currentRegion],
-				    newShapes;
-				// will be null if the region value was null
-				if (shapeids) {
-					newShapes = this.renderRegion(currentRegion, highlight);
-					if ($.isArray(newShapes) || $.isArray(shapeids)) {
-						target.replaceWithShapes(shapeids, newShapes);
-						this.regionShapes[currentRegion] = $.map(newShapes, function (newShape) {
-							return newShape.id;
-						});
-					} else {
-						target.replaceWithShape(shapeids, newShapes);
-						this.regionShapes[currentRegion] = newShapes.id;
-					}
-				}
-			},
-
-			render: function render() {
-				var values = this.values,
-				    target = this.target,
-				    regionShapes = this.regionShapes,
-				    shapes,
-				    ids,
-				    i,
-				    j;
-
-				if (!this.cls._super.render.call(this)) {
-					return;
-				}
-				for (i = values.length; i--;) {
-					shapes = this.renderRegion(i);
-					if (shapes) {
-						if ($.isArray(shapes)) {
-							ids = [];
-							for (j = shapes.length; j--;) {
-								shapes[j].append();
-								ids.push(shapes[j].id);
-							}
-							regionShapes[i] = ids;
-						} else {
-							shapes.append();
-							regionShapes[i] = shapes.id; // store just the shapeid
-						}
-					} else {
-						// null value
-						regionShapes[i] = null;
-					}
-				}
-				target.render();
-			}
-		};
-
-		/**
-   * Line charts
-   */
-		$.fn.sparkline.line = line = createClass($.fn.sparkline._base, {
-			type: 'line',
-
-			init: function init(el, values, options, width, height) {
-				line._super.init.call(this, el, values, options, width, height);
-				this.vertices = [];
-				this.regionMap = [];
-				this.xvalues = [];
-				this.yvalues = [];
-				this.yminmax = [];
-				this.hightlightSpotId = null;
-				this.lastShapeId = null;
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var i,
-				    regionMap = this.regionMap; // maps regions to value positions
-				for (i = regionMap.length; i--;) {
-					if (regionMap[i] !== null && x >= regionMap[i][0] && x <= regionMap[i][1]) {
-						return regionMap[i][2];
-					}
-				}
-				return undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.yvalues[currentRegion] === null,
-					x: this.xvalues[currentRegion],
-					y: this.yvalues[currentRegion],
-					color: this.options.get('lineColor'),
-					fillColor: this.options.get('fillColor'),
-					offset: currentRegion
-				};
-			},
-
-			renderHighlight: function renderHighlight() {
-				var currentRegion = this.currentRegion,
-				    target = this.target,
-				    vertex = this.vertices[currentRegion],
-				    options = this.options,
-				    spotRadius = options.get('spotRadius'),
-				    highlightSpotColor = options.get('highlightSpotColor'),
-				    highlightLineColor = options.get('highlightLineColor'),
-				    highlightSpot,
-				    highlightLine;
-
-				if (!vertex) {
-					return;
-				}
-				if (spotRadius && highlightSpotColor) {
-					highlightSpot = target.drawCircle(vertex[0], vertex[1], spotRadius, undefined, highlightSpotColor);
-					this.highlightSpotId = highlightSpot.id;
-					target.insertAfterShape(this.lastShapeId, highlightSpot);
-				}
-				if (highlightLineColor) {
-					highlightLine = target.drawLine(vertex[0], this.canvasTop, vertex[0], this.canvasTop + this.canvasHeight, highlightLineColor);
-					this.highlightLineId = highlightLine.id;
-					target.insertAfterShape(this.lastShapeId, highlightLine);
-				}
-			},
-
-			removeHighlight: function removeHighlight() {
-				var target = this.target;
-				if (this.highlightSpotId) {
-					target.removeShapeId(this.highlightSpotId);
-					this.highlightSpotId = null;
-				}
-				if (this.highlightLineId) {
-					target.removeShapeId(this.highlightLineId);
-					this.highlightLineId = null;
-				}
-			},
-
-			scanValues: function scanValues() {
-				var values = this.values,
-				    valcount = values.length,
-				    xvalues = this.xvalues,
-				    yvalues = this.yvalues,
-				    yminmax = this.yminmax,
-				    i,
-				    val,
-				    isStr,
-				    isArray,
-				    sp;
-				for (i = 0; i < valcount; i++) {
-					val = values[i];
-					isStr = typeof values[i] === 'string';
-					isArray = _typeof(values[i]) === 'object' && values[i] instanceof Array;
-					sp = isStr && values[i].split(':');
-					if (isStr && sp.length === 2) {
-						// x:y
-						xvalues.push(Number(sp[0]));
-						yvalues.push(Number(sp[1]));
-						yminmax.push(Number(sp[1]));
-					} else if (isArray) {
-						xvalues.push(val[0]);
-						yvalues.push(val[1]);
-						yminmax.push(val[1]);
-					} else {
-						xvalues.push(i);
-						if (values[i] === null || values[i] === 'null') {
-							yvalues.push(null);
-						} else {
-							yvalues.push(Number(val));
-							yminmax.push(Number(val));
-						}
-					}
-				}
-				if (this.options.get('xvalues')) {
-					xvalues = this.options.get('xvalues');
-				}
-
-				this.maxy = this.maxyorg = Math.max.apply(Math, yminmax);
-				this.miny = this.minyorg = Math.min.apply(Math, yminmax);
-
-				this.maxx = Math.max.apply(Math, xvalues);
-				this.minx = Math.min.apply(Math, xvalues);
-
-				this.xvalues = xvalues;
-				this.yvalues = yvalues;
-				this.yminmax = yminmax;
-			},
-
-			processRangeOptions: function processRangeOptions() {
-				var options = this.options,
-				    normalRangeMin = options.get('normalRangeMin'),
-				    normalRangeMax = options.get('normalRangeMax');
-
-				if (normalRangeMin !== undefined) {
-					if (normalRangeMin < this.miny) {
-						this.miny = normalRangeMin;
-					}
-					if (normalRangeMax > this.maxy) {
-						this.maxy = normalRangeMax;
-					}
-				}
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.miny)) {
-					this.miny = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.maxy)) {
-					this.maxy = options.get('chartRangeMax');
-				}
-				if (options.get('chartRangeMinX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMinX') < this.minx)) {
-					this.minx = options.get('chartRangeMinX');
-				}
-				if (options.get('chartRangeMaxX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMaxX') > this.maxx)) {
-					this.maxx = options.get('chartRangeMaxX');
-				}
-			},
-
-			drawNormalRange: function drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey) {
-				var normalRangeMin = this.options.get('normalRangeMin'),
-				    normalRangeMax = this.options.get('normalRangeMax'),
-				    ytop = canvasTop + Math.round(canvasHeight - canvasHeight * ((normalRangeMax - this.miny) / rangey)),
-				    height = Math.round(canvasHeight * (normalRangeMax - normalRangeMin) / rangey);
-				this.target.drawRect(canvasLeft, ytop, canvasWidth, height, undefined, this.options.get('normalRangeColor')).append();
-			},
-
-			render: function render() {
-				var options = this.options,
-				    target = this.target,
-				    canvasWidth = this.canvasWidth,
-				    canvasHeight = this.canvasHeight,
-				    vertices = this.vertices,
-				    spotRadius = options.get('spotRadius'),
-				    regionMap = this.regionMap,
-				    rangex,
-				    rangey,
-				    yvallast,
-				    canvasTop,
-				    canvasLeft,
-				    vertex,
-				    path,
-				    paths,
-				    x,
-				    y,
-				    xnext,
-				    xpos,
-				    xposnext,
-				    last,
-				    next,
-				    yvalcount,
-				    lineShapes,
-				    fillShapes,
-				    plen,
-				    valueSpots,
-				    hlSpotsEnabled,
-				    color,
-				    xvalues,
-				    yvalues,
-				    i;
-
-				if (!line._super.render.call(this)) {
-					return;
-				}
-
-				this.scanValues();
-				this.processRangeOptions();
-
-				xvalues = this.xvalues;
-				yvalues = this.yvalues;
-
-				if (!this.yminmax.length || this.yvalues.length < 2) {
-					// empty or all null valuess
-					return;
-				}
-
-				canvasTop = canvasLeft = 0;
-
-				rangex = this.maxx - this.minx === 0 ? 1 : this.maxx - this.minx;
-				rangey = this.maxy - this.miny === 0 ? 1 : this.maxy - this.miny;
-				yvallast = this.yvalues.length - 1;
-
-				if (spotRadius && (canvasWidth < spotRadius * 4 || canvasHeight < spotRadius * 4)) {
-					spotRadius = 0;
-				}
-				if (spotRadius) {
-					// adjust the canvas size as required so that spots will fit
-					hlSpotsEnabled = options.get('highlightSpotColor') && !options.get('disableInteraction');
-					if (hlSpotsEnabled || options.get('minSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.miny) {
-						canvasHeight -= Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || options.get('maxSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.maxy) {
-						canvasHeight -= Math.ceil(spotRadius);
-						canvasTop += Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || (options.get('minSpotColor') || options.get('maxSpotColor')) && (yvalues[0] === this.miny || yvalues[0] === this.maxy)) {
-						canvasLeft += Math.ceil(spotRadius);
-						canvasWidth -= Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || options.get('spotColor') || options.get('minSpotColor') || options.get('maxSpotColor') && (yvalues[yvallast] === this.miny || yvalues[yvallast] === this.maxy)) {
-						canvasWidth -= Math.ceil(spotRadius);
-					}
-				}
-
-				canvasHeight--;
-
-				if (options.get('normalRangeMin') !== undefined && !options.get('drawNormalOnTop')) {
-					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
-				}
-
-				path = [];
-				paths = [path];
-				last = next = null;
-				yvalcount = yvalues.length;
-				for (i = 0; i < yvalcount; i++) {
-					x = xvalues[i];
-					xnext = xvalues[i + 1];
-					y = yvalues[i];
-					xpos = canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex));
-					xposnext = i < yvalcount - 1 ? canvasLeft + Math.round((xnext - this.minx) * (canvasWidth / rangex)) : canvasWidth;
-					next = xpos + (xposnext - xpos) / 2;
-					regionMap[i] = [last || 0, next, i];
-					last = next;
-					if (y === null) {
-						if (i) {
-							if (yvalues[i - 1] !== null) {
-								path = [];
-								paths.push(path);
-							}
-							vertices.push(null);
-						}
-					} else {
-						if (y < this.miny) {
-							y = this.miny;
-						}
-						if (y > this.maxy) {
-							y = this.maxy;
-						}
-						if (!path.length) {
-							// previous value was null
-							path.push([xpos, canvasTop + canvasHeight]);
-						}
-						vertex = [xpos, canvasTop + Math.round(canvasHeight - canvasHeight * ((y - this.miny) / rangey))];
-						path.push(vertex);
-						vertices.push(vertex);
-					}
-				}
-
-				lineShapes = [];
-				fillShapes = [];
-				plen = paths.length;
-				for (i = 0; i < plen; i++) {
-					path = paths[i];
-					if (path.length) {
-						if (options.get('fillColor')) {
-							path.push([path[path.length - 1][0], canvasTop + canvasHeight]);
-							fillShapes.push(path.slice(0));
-							path.pop();
-						}
-						// if there's only a single point in this path, then we want to display it
-						// as a vertical line which means we keep path[0]  as is
-						if (path.length > 2) {
-							// else we want the first value
-							path[0] = [path[0][0], path[1][1]];
-						}
-						lineShapes.push(path);
-					}
-				}
-
-				// draw the fill first, then optionally the normal range, then the line on top of that
-				plen = fillShapes.length;
-				for (i = 0; i < plen; i++) {
-					target.drawShape(fillShapes[i], options.get('fillColor'), options.get('fillColor')).append();
-				}
-
-				if (options.get('normalRangeMin') !== undefined && options.get('drawNormalOnTop')) {
-					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
-				}
-
-				plen = lineShapes.length;
-				for (i = 0; i < plen; i++) {
-					target.drawShape(lineShapes[i], options.get('lineColor'), undefined, options.get('lineWidth')).append();
-				}
-
-				if (spotRadius && options.get('valueSpots')) {
-					valueSpots = options.get('valueSpots');
-					if (valueSpots.get === undefined) {
-						valueSpots = new RangeMap(valueSpots);
-					}
-					for (i = 0; i < yvalcount; i++) {
-						color = valueSpots.get(yvalues[i]);
-						if (color) {
-							target.drawCircle(canvasLeft + Math.round((xvalues[i] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[i] - this.miny) / rangey)), spotRadius, undefined, color).append();
-						}
-					}
-				}
-				if (spotRadius && options.get('spotColor') && yvalues[yvallast] !== null) {
-					target.drawCircle(canvasLeft + Math.round((xvalues[xvalues.length - 1] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[yvallast] - this.miny) / rangey)), spotRadius, undefined, options.get('spotColor')).append();
-				}
-				if (this.maxy !== this.minyorg) {
-					if (spotRadius && options.get('minSpotColor')) {
-						x = xvalues[$.inArray(this.minyorg, yvalues)];
-						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.minyorg - this.miny) / rangey)), spotRadius, undefined, options.get('minSpotColor')).append();
-					}
-					if (spotRadius && options.get('maxSpotColor')) {
-						x = xvalues[$.inArray(this.maxyorg, yvalues)];
-						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.maxyorg - this.miny) / rangey)), spotRadius, undefined, options.get('maxSpotColor')).append();
-					}
-				}
-
-				this.lastShapeId = target.getLastShapeId();
-				this.canvasTop = canvasTop;
-				target.render();
-			}
-		});
-
-		/**
-   * Bar charts
-   */
-		$.fn.sparkline.bar = bar = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'bar',
-
-			init: function init(el, values, options, width, height) {
-				var barWidth = parseInt(options.get('barWidth'), 10),
-				    barSpacing = parseInt(options.get('barSpacing'), 10),
-				    chartRangeMin = options.get('chartRangeMin'),
-				    chartRangeMax = options.get('chartRangeMax'),
-				    chartRangeClip = options.get('chartRangeClip'),
-				    stackMin = Infinity,
-				    stackMax = -Infinity,
-				    isStackString,
-				    groupMin,
-				    groupMax,
-				    stackRanges,
-				    numValues,
-				    i,
-				    vlen,
-				    range,
-				    zeroAxis,
-				    xaxisOffset,
-				    min,
-				    max,
-				    clipMin,
-				    clipMax,
-				    stacked,
-				    vlist,
-				    j,
-				    slen,
-				    svals,
-				    val,
-				    yoffset,
-				    yMaxCalc,
-				    canvasHeightEf;
-				bar._super.init.call(this, el, values, options, width, height);
-
-				// scan values to determine whether to stack bars
-				for (i = 0, vlen = values.length; i < vlen; i++) {
-					val = values[i];
-					isStackString = typeof val === 'string' && val.indexOf(':') > -1;
-					if (isStackString || $.isArray(val)) {
-						stacked = true;
-						if (isStackString) {
-							val = values[i] = normalizeValues(val.split(':'));
-						}
-						val = remove(val, null); // min/max will treat null as zero
-						groupMin = Math.min.apply(Math, val);
-						groupMax = Math.max.apply(Math, val);
-						if (groupMin < stackMin) {
-							stackMin = groupMin;
-						}
-						if (groupMax > stackMax) {
-							stackMax = groupMax;
-						}
-					}
-				}
-
-				this.stacked = stacked;
-				this.regionShapes = {};
-				this.barWidth = barWidth;
-				this.barSpacing = barSpacing;
-				this.totalBarWidth = barWidth + barSpacing;
-				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
-
-				this.initTarget();
-
-				if (chartRangeClip) {
-					clipMin = chartRangeMin === undefined ? -Infinity : chartRangeMin;
-					clipMax = chartRangeMax === undefined ? Infinity : chartRangeMax;
-				}
-
-				numValues = [];
-				stackRanges = stacked ? [] : numValues;
-				var stackTotals = [];
-				var stackRangesNeg = [];
-				for (i = 0, vlen = values.length; i < vlen; i++) {
-					if (stacked) {
-						vlist = values[i];
-						values[i] = svals = [];
-						stackTotals[i] = 0;
-						stackRanges[i] = stackRangesNeg[i] = 0;
-						for (j = 0, slen = vlist.length; j < slen; j++) {
-							val = svals[j] = chartRangeClip ? clipval(vlist[j], clipMin, clipMax) : vlist[j];
-							if (val !== null) {
-								if (val > 0) {
-									stackTotals[i] += val;
-								}
-								if (stackMin < 0 && stackMax > 0) {
-									if (val < 0) {
-										stackRangesNeg[i] += Math.abs(val);
-									} else {
-										stackRanges[i] += val;
-									}
-								} else {
-									stackRanges[i] += Math.abs(val - (val < 0 ? stackMax : stackMin));
-								}
-								numValues.push(val);
-							}
-						}
-					} else {
-						val = chartRangeClip ? clipval(values[i], clipMin, clipMax) : values[i];
-						val = values[i] = normalizeValue(val);
-						if (val !== null) {
-							numValues.push(val);
-						}
-					}
-				}
-				this.max = max = Math.max.apply(Math, numValues);
-				this.min = min = Math.min.apply(Math, numValues);
-				this.stackMax = stackMax = stacked ? Math.max.apply(Math, stackTotals) : max;
-				this.stackMin = stackMin = stacked ? Math.min.apply(Math, numValues) : min;
-
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < min)) {
-					min = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > max)) {
-					max = options.get('chartRangeMax');
-				}
-
-				this.zeroAxis = zeroAxis = options.get('zeroAxis', true);
-				if (min <= 0 && max >= 0 && zeroAxis) {
-					xaxisOffset = 0;
-				} else if (zeroAxis == false) {
-					xaxisOffset = min;
-				} else if (min > 0) {
-					xaxisOffset = min;
-				} else {
-					xaxisOffset = max;
-				}
-				this.xaxisOffset = xaxisOffset;
-
-				range = stacked ? Math.max.apply(Math, stackRanges) + Math.max.apply(Math, stackRangesNeg) : max - min;
-
-				// as we plot zero/min values a single pixel line, we add a pixel to all other
-				// values - Reduce the effective canvas size to suit
-				this.canvasHeightEf = zeroAxis && min < 0 ? this.canvasHeight - 2 : this.canvasHeight - 1;
-
-				if (min < xaxisOffset) {
-					yMaxCalc = stacked && max >= 0 ? stackMax : max;
-					yoffset = (yMaxCalc - xaxisOffset) / range * this.canvasHeight;
-					if (yoffset !== Math.ceil(yoffset)) {
-						this.canvasHeightEf -= 2;
-						yoffset = Math.ceil(yoffset);
-					}
-				} else {
-					yoffset = this.canvasHeight;
-				}
-				this.yoffset = yoffset;
-
-				if ($.isArray(options.get('colorMap'))) {
-					this.colorMapByIndex = options.get('colorMap');
-					this.colorMapByValue = null;
-				} else {
-					this.colorMapByIndex = null;
-					this.colorMapByValue = options.get('colorMap');
-					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
-						this.colorMapByValue = new RangeMap(this.colorMapByValue);
-					}
-				}
-
-				this.range = range;
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var result = Math.floor(x / this.totalBarWidth);
-				return result < 0 || result >= this.values.length ? undefined : result;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion,
-				    values = ensureArray(this.values[currentRegion]),
-				    result = [],
-				    value,
-				    i;
-				for (i = values.length; i--;) {
-					value = values[i];
-					result.push({
-						isNull: value === null,
-						value: value,
-						color: this.calcColor(i, value, currentRegion),
-						offset: currentRegion
-					});
-				}
-				return result;
-			},
-
-			calcColor: function calcColor(stacknum, value, valuenum) {
-				var colorMapByIndex = this.colorMapByIndex,
-				    colorMapByValue = this.colorMapByValue,
-				    options = this.options,
-				    color,
-				    newColor;
-				if (this.stacked) {
-					color = options.get('stackedBarColor');
-				} else {
-					color = value < 0 ? options.get('negBarColor') : options.get('barColor');
-				}
-				if (value === 0 && options.get('zeroColor') !== undefined) {
-					color = options.get('zeroColor');
-				}
-				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
-					color = newColor;
-				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
-					color = colorMapByIndex[valuenum];
-				}
-				return $.isArray(color) ? color[stacknum % color.length] : color;
-			},
-
-			/**
-    * Render bar(s) for a region
-    */
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var vals = this.values[valuenum],
-				    options = this.options,
-				    xaxisOffset = this.xaxisOffset,
-				    result = [],
-				    range = this.range,
-				    stacked = this.stacked,
-				    target = this.target,
-				    x = valuenum * this.totalBarWidth,
-				    canvasHeightEf = this.canvasHeightEf,
-				    yoffset = this.yoffset,
-				    y,
-				    height,
-				    color,
-				    isNull,
-				    yoffsetNeg,
-				    i,
-				    valcount,
-				    val,
-				    minPlotted,
-				    allMin;
-
-				vals = $.isArray(vals) ? vals : [vals];
-				valcount = vals.length;
-				val = vals[0];
-				isNull = all(null, vals);
-				allMin = all(xaxisOffset, vals, true);
-
-				if (isNull) {
-					if (options.get('nullColor')) {
-						color = highlight ? options.get('nullColor') : this.calcHighlightColor(options.get('nullColor'), options);
-						y = yoffset > 0 ? yoffset - 1 : yoffset;
-						return target.drawRect(x, y, this.barWidth - 1, 0, color, color);
-					} else {
-						return undefined;
-					}
-				}
-				yoffsetNeg = yoffset;
-				for (i = 0; i < valcount; i++) {
-					val = vals[i];
-
-					if (stacked && val === xaxisOffset) {
-						if (!allMin || minPlotted) {
-							continue;
-						}
-						minPlotted = true;
-					}
-
-					if (range > 0) {
-						height = Math.floor(canvasHeightEf * (Math.abs(val - xaxisOffset) / range)) + 1;
-					} else {
-						height = 1;
-					}
-					if (val < xaxisOffset || val === xaxisOffset && yoffset === 0) {
-						y = yoffsetNeg;
-						yoffsetNeg += height;
-					} else {
-						y = yoffset - height;
-						yoffset -= height;
-					}
-					color = this.calcColor(i, val, valuenum);
-					if (highlight) {
-						color = this.calcHighlightColor(color, options);
-					}
-					result.push(target.drawRect(x, y, this.barWidth - 1, height - 1, color, color));
-				}
-				if (result.length === 1) {
-					return result[0];
-				}
-				return result;
-			}
-		});
-
-		/**
-   * Tristate charts
-   */
-		$.fn.sparkline.tristate = tristate = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'tristate',
-
-			init: function init(el, values, options, width, height) {
-				var barWidth = parseInt(options.get('barWidth'), 10),
-				    barSpacing = parseInt(options.get('barSpacing'), 10);
-				tristate._super.init.call(this, el, values, options, width, height);
-
-				this.regionShapes = {};
-				this.barWidth = barWidth;
-				this.barSpacing = barSpacing;
-				this.totalBarWidth = barWidth + barSpacing;
-				this.values = $.map(values, Number);
-				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
-
-				if ($.isArray(options.get('colorMap'))) {
-					this.colorMapByIndex = options.get('colorMap');
-					this.colorMapByValue = null;
-				} else {
-					this.colorMapByIndex = null;
-					this.colorMapByValue = options.get('colorMap');
-					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
-						this.colorMapByValue = new RangeMap(this.colorMapByValue);
-					}
-				}
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				return Math.floor(x / this.totalBarWidth);
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					color: this.calcColor(this.values[currentRegion], currentRegion),
-					offset: currentRegion
-				};
-			},
-
-			calcColor: function calcColor(value, valuenum) {
-				var values = this.values,
-				    options = this.options,
-				    colorMapByIndex = this.colorMapByIndex,
-				    colorMapByValue = this.colorMapByValue,
-				    color,
-				    newColor;
-
-				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
-					color = newColor;
-				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
-					color = colorMapByIndex[valuenum];
-				} else if (values[valuenum] < 0) {
-					color = options.get('negBarColor');
-				} else if (values[valuenum] > 0) {
-					color = options.get('posBarColor');
-				} else {
-					color = options.get('zeroBarColor');
-				}
-				return color;
-			},
-
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var values = this.values,
-				    options = this.options,
-				    target = this.target,
-				    canvasHeight,
-				    height,
-				    halfHeight,
-				    x,
-				    y,
-				    color;
-
-				canvasHeight = target.pixelHeight;
-				halfHeight = Math.round(canvasHeight / 2);
-
-				x = valuenum * this.totalBarWidth;
-				if (values[valuenum] < 0) {
-					y = halfHeight;
-					height = halfHeight - 1;
-				} else if (values[valuenum] > 0) {
-					y = 0;
-					height = halfHeight - 1;
-				} else {
-					y = halfHeight - 1;
-					height = 2;
-				}
-				color = this.calcColor(values[valuenum], valuenum);
-				if (color === null) {
-					return;
-				}
-				if (highlight) {
-					color = this.calcHighlightColor(color, options);
-				}
-				return target.drawRect(x, y, this.barWidth - 1, height - 1, color, color);
-			}
-		});
-
-		/**
-   * Discrete charts
-   */
-		$.fn.sparkline.discrete = discrete = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'discrete',
-
-			init: function init(el, values, options, width, height) {
-				discrete._super.init.call(this, el, values, options, width, height);
-
-				this.regionShapes = {};
-				this.values = values = $.map(values, Number);
-				this.min = Math.min.apply(Math, values);
-				this.max = Math.max.apply(Math, values);
-				this.range = this.max - this.min;
-				this.width = width = options.get('width') === 'auto' ? values.length * 2 : this.width;
-				this.interval = Math.floor(width / values.length);
-				this.itemWidth = width / values.length;
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.min)) {
-					this.min = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.max)) {
-					this.max = options.get('chartRangeMax');
-				}
-				this.initTarget();
-				if (this.target) {
-					this.lineHeight = options.get('lineHeight') === 'auto' ? Math.round(this.canvasHeight * 0.3) : options.get('lineHeight');
-				}
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				return Math.floor(x / this.itemWidth);
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					offset: currentRegion
-				};
-			},
-
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var values = this.values,
-				    options = this.options,
-				    min = this.min,
-				    max = this.max,
-				    range = this.range,
-				    interval = this.interval,
-				    target = this.target,
-				    canvasHeight = this.canvasHeight,
-				    lineHeight = this.lineHeight,
-				    pheight = canvasHeight - lineHeight,
-				    ytop,
-				    val,
-				    color,
-				    x;
-
-				val = clipval(values[valuenum], min, max);
-				x = valuenum * interval;
-				ytop = Math.round(pheight - pheight * ((val - min) / range));
-				color = options.get('thresholdColor') && val < options.get('thresholdValue') ? options.get('thresholdColor') : options.get('lineColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, options);
-				}
-				return target.drawLine(x, ytop, x, ytop + lineHeight, color);
-			}
-		});
-
-		/**
-   * Bullet charts
-   */
-		$.fn.sparkline.bullet = bullet = createClass($.fn.sparkline._base, {
-			type: 'bullet',
-
-			init: function init(el, values, options, width, height) {
-				var min, max, vals;
-				bullet._super.init.call(this, el, values, options, width, height);
-
-				// values: target, performance, range1, range2, range3
-				this.values = values = normalizeValues(values);
-				// target or performance could be null
-				vals = values.slice();
-				vals[0] = vals[0] === null ? vals[2] : vals[0];
-				vals[1] = values[1] === null ? vals[2] : vals[1];
-				min = Math.min.apply(Math, values);
-				max = Math.max.apply(Math, values);
-				if (options.get('base') === undefined) {
-					min = min < 0 ? min : 0;
-				} else {
-					min = options.get('base');
-				}
-				this.min = min;
-				this.max = max;
-				this.range = max - min;
-				this.shapes = {};
-				this.valueShapes = {};
-				this.regiondata = {};
-				this.width = width = options.get('width') === 'auto' ? '4.0em' : width;
-				this.target = this.$el.simpledraw(width, height, options.get('composite'));
-				if (!values.length) {
-					this.disabled = true;
-				}
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var shapeid = this.target.getShapeAt(el, x, y);
-				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					fieldkey: currentRegion.substr(0, 1),
-					value: this.values[currentRegion.substr(1)],
-					region: currentRegion
-				};
-			},
-
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    shapeid = this.valueShapes[currentRegion],
-				    shape;
-				delete this.shapes[shapeid];
-				switch (currentRegion.substr(0, 1)) {
-					case 'r':
-						shape = this.renderRange(currentRegion.substr(1), highlight);
-						break;
-					case 'p':
-						shape = this.renderPerformance(highlight);
-						break;
-					case 't':
-						shape = this.renderTarget(highlight);
-						break;
-				}
-				this.valueShapes[currentRegion] = shape.id;
-				this.shapes[shape.id] = currentRegion;
-				this.target.replaceWithShape(shapeid, shape);
-			},
-
-			renderRange: function renderRange(rn, highlight) {
-				var rangeval = this.values[rn],
-				    rangewidth = Math.round(this.canvasWidth * ((rangeval - this.min) / this.range)),
-				    color = this.options.get('rangeColors')[rn - 2];
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(0, 0, rangewidth - 1, this.canvasHeight - 1, color, color);
-			},
-
-			renderPerformance: function renderPerformance(highlight) {
-				var perfval = this.values[1],
-				    perfwidth = Math.round(this.canvasWidth * ((perfval - this.min) / this.range)),
-				    color = this.options.get('performanceColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(0, Math.round(this.canvasHeight * 0.3), perfwidth - 1, Math.round(this.canvasHeight * 0.4) - 1, color, color);
-			},
-
-			renderTarget: function renderTarget(highlight) {
-				var targetval = this.values[0],
-				    x = Math.round(this.canvasWidth * ((targetval - this.min) / this.range) - this.options.get('targetWidth') / 2),
-				    targettop = Math.round(this.canvasHeight * 0.10),
-				    targetheight = this.canvasHeight - targettop * 2,
-				    color = this.options.get('targetColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(x, targettop, this.options.get('targetWidth') - 1, targetheight - 1, color, color);
-			},
-
-			render: function render() {
-				var vlen = this.values.length,
-				    target = this.target,
-				    i,
-				    shape;
-				if (!bullet._super.render.call(this)) {
-					return;
-				}
-				for (i = 2; i < vlen; i++) {
-					shape = this.renderRange(i).append();
-					this.shapes[shape.id] = 'r' + i;
-					this.valueShapes['r' + i] = shape.id;
-				}
-				if (this.values[1] !== null) {
-					shape = this.renderPerformance().append();
-					this.shapes[shape.id] = 'p1';
-					this.valueShapes.p1 = shape.id;
-				}
-				if (this.values[0] !== null) {
-					shape = this.renderTarget().append();
-					this.shapes[shape.id] = 't0';
-					this.valueShapes.t0 = shape.id;
-				}
-				target.render();
-			}
-		});
-
-		/**
-   * Pie charts
-   */
-		$.fn.sparkline.pie = pie = createClass($.fn.sparkline._base, {
-			type: 'pie',
-
-			init: function init(el, values, options, width, height) {
-				var total = 0,
-				    i;
-
-				pie._super.init.call(this, el, values, options, width, height);
-
-				this.shapes = {}; // map shape ids to value offsets
-				this.valueShapes = {}; // maps value offsets to shape ids
-				this.values = values = $.map(values, Number);
-
-				if (options.get('width') === 'auto') {
-					this.width = this.height;
-				}
-
-				if (values.length > 0) {
-					for (i = values.length; i--;) {
-						total += values[i];
-					}
-				}
-				this.total = total;
-				this.initTarget();
-				this.radius = Math.floor(Math.min(this.canvasWidth, this.canvasHeight) / 2);
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var shapeid = this.target.getShapeAt(el, x, y);
-				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					percent: this.values[currentRegion] / this.total * 100,
-					color: this.options.get('sliceColors')[currentRegion % this.options.get('sliceColors').length],
-					offset: currentRegion
-				};
-			},
-
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    newslice = this.renderSlice(currentRegion, highlight),
-				    shapeid = this.valueShapes[currentRegion];
-				delete this.shapes[shapeid];
-				this.target.replaceWithShape(shapeid, newslice);
-				this.valueShapes[currentRegion] = newslice.id;
-				this.shapes[newslice.id] = currentRegion;
-			},
-
-			renderSlice: function renderSlice(valuenum, highlight) {
-				var target = this.target,
-				    options = this.options,
-				    radius = this.radius,
-				    borderWidth = options.get('borderWidth'),
-				    offset = options.get('offset'),
-				    circle = 2 * Math.PI,
-				    values = this.values,
-				    total = this.total,
-				    next = offset ? 2 * Math.PI * (offset / 360) : 0,
-				    start,
-				    end,
-				    i,
-				    vlen,
-				    color;
-
-				vlen = values.length;
-				for (i = 0; i < vlen; i++) {
-					start = next;
-					end = next;
-					if (total > 0) {
-						// avoid divide by zero
-						end = next + circle * (values[i] / total);
-					}
-					if (valuenum === i) {
-						color = options.get('sliceColors')[i % options.get('sliceColors').length];
-						if (highlight) {
-							color = this.calcHighlightColor(color, options);
-						}
-
-						return target.drawPieSlice(radius, radius, radius - borderWidth, start, end, undefined, color);
-					}
-					next = end;
-				}
-			},
-
-			render: function render() {
-				var target = this.target,
-				    values = this.values,
-				    options = this.options,
-				    radius = this.radius,
-				    borderWidth = options.get('borderWidth'),
-				    shape,
-				    i;
-
-				if (!pie._super.render.call(this)) {
-					return;
-				}
-				if (borderWidth) {
-					target.drawCircle(radius, radius, Math.floor(radius - borderWidth / 2), options.get('borderColor'), undefined, borderWidth).append();
-				}
-				for (i = values.length; i--;) {
-					if (values[i]) {
-						// don't render zero values
-						shape = this.renderSlice(i).append();
-						this.valueShapes[i] = shape.id; // store just the shapeid
-						this.shapes[shape.id] = i;
-					}
-				}
-				target.render();
-			}
-		});
-
-		/**
-   * Box plots
-   */
-		$.fn.sparkline.box = box = createClass($.fn.sparkline._base, {
-			type: 'box',
-
-			init: function init(el, values, options, width, height) {
-				box._super.init.call(this, el, values, options, width, height);
-				this.values = $.map(values, Number);
-				this.width = options.get('width') === 'auto' ? '4.0em' : width;
-				this.initTarget();
-				if (!this.values.length) {
-					this.disabled = 1;
-				}
-			},
-
-			/**
-    * Simulate a single region
-    */
-			getRegion: function getRegion() {
-				return 1;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var result = [{ field: 'lq', value: this.quartiles[0] }, { field: 'med', value: this.quartiles[1] }, { field: 'uq', value: this.quartiles[2] }];
-				if (this.loutlier !== undefined) {
-					result.push({ field: 'lo', value: this.loutlier });
-				}
-				if (this.routlier !== undefined) {
-					result.push({ field: 'ro', value: this.routlier });
-				}
-				if (this.lwhisker !== undefined) {
-					result.push({ field: 'lw', value: this.lwhisker });
-				}
-				if (this.rwhisker !== undefined) {
-					result.push({ field: 'rw', value: this.rwhisker });
-				}
-				return result;
-			},
-
-			render: function render() {
-				var target = this.target,
-				    values = this.values,
-				    vlen = values.length,
-				    options = this.options,
-				    canvasWidth = this.canvasWidth,
-				    canvasHeight = this.canvasHeight,
-				    minValue = options.get('chartRangeMin') === undefined ? Math.min.apply(Math, values) : options.get('chartRangeMin'),
-				    maxValue = options.get('chartRangeMax') === undefined ? Math.max.apply(Math, values) : options.get('chartRangeMax'),
-				    canvasLeft = 0,
-				    lwhisker,
-				    loutlier,
-				    iqr,
-				    q1,
-				    q2,
-				    q3,
-				    rwhisker,
-				    routlier,
-				    i,
-				    size,
-				    unitSize;
-
-				if (!box._super.render.call(this)) {
-					return;
-				}
-
-				if (options.get('raw')) {
-					if (options.get('showOutliers') && values.length > 5) {
-						loutlier = values[0];
-						lwhisker = values[1];
-						q1 = values[2];
-						q2 = values[3];
-						q3 = values[4];
-						rwhisker = values[5];
-						routlier = values[6];
-					} else {
-						lwhisker = values[0];
-						q1 = values[1];
-						q2 = values[2];
-						q3 = values[3];
-						rwhisker = values[4];
-					}
-				} else {
-					values.sort(function (a, b) {
-						return a - b;
-					});
-					q1 = quartile(values, 1);
-					q2 = quartile(values, 2);
-					q3 = quartile(values, 3);
-					iqr = q3 - q1;
-					if (options.get('showOutliers')) {
-						lwhisker = rwhisker = undefined;
-						for (i = 0; i < vlen; i++) {
-							if (lwhisker === undefined && values[i] > q1 - iqr * options.get('outlierIQR')) {
-								lwhisker = values[i];
-							}
-							if (values[i] < q3 + iqr * options.get('outlierIQR')) {
-								rwhisker = values[i];
-							}
-						}
-						loutlier = values[0];
-						routlier = values[vlen - 1];
-					} else {
-						lwhisker = values[0];
-						rwhisker = values[vlen - 1];
-					}
-				}
-				this.quartiles = [q1, q2, q3];
-				this.lwhisker = lwhisker;
-				this.rwhisker = rwhisker;
-				this.loutlier = loutlier;
-				this.routlier = routlier;
-
-				unitSize = canvasWidth / (maxValue - minValue + 1);
-				if (options.get('showOutliers')) {
-					canvasLeft = Math.ceil(options.get('spotRadius'));
-					canvasWidth -= 2 * Math.ceil(options.get('spotRadius'));
-					unitSize = canvasWidth / (maxValue - minValue + 1);
-					if (loutlier < lwhisker) {
-						target.drawCircle((loutlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
-					}
-					if (routlier > rwhisker) {
-						target.drawCircle((routlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
-					}
-				}
-
-				// box
-				target.drawRect(Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q3 - q1) * unitSize), Math.round(canvasHeight * 0.8), options.get('boxLineColor'), options.get('boxFillColor')).append();
-				// left whisker
-				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
-				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
-				// right whisker
-				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q3 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
-				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
-				// median line
-				target.drawLine(Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.9), options.get('medianColor')).append();
-				if (options.get('target')) {
-					size = Math.ceil(options.get('spotRadius'));
-					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 - size), Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 + size), options.get('targetColor')).append();
-					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft - size), Math.round(canvasHeight / 2), Math.round((options.get('target') - minValue) * unitSize + canvasLeft + size), Math.round(canvasHeight / 2), options.get('targetColor')).append();
-				}
-				target.render();
-			}
-		});
-
-		// Setup a very simple "virtual canvas" to make drawing the few shapes we need easier
-		// This is accessible as $(foo).simpledraw()
-
-		VShape = createClass({
-			init: function init(target, id, type, args) {
-				this.target = target;
-				this.id = id;
-				this.type = type;
-				this.args = args;
-			},
-			append: function append() {
-				this.target.appendShape(this);
-				return this;
-			}
-		});
-
-		VCanvas_base = createClass({
-			_pxregex: /(\d+)(px)?\s*$/i,
-
-			init: function init(width, height, target) {
-				if (!width) {
-					return;
-				}
-				this.width = width;
-				this.height = height;
-				this.target = target;
-				this.lastShapeId = null;
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-			},
-
-			drawLine: function drawLine(x1, y1, x2, y2, lineColor, lineWidth) {
-				return this.drawShape([[x1, y1], [x2, y2]], lineColor, lineWidth);
-			},
-
-			drawShape: function drawShape(path, lineColor, fillColor, lineWidth) {
-				return this._genShape('Shape', [path, lineColor, fillColor, lineWidth]);
-			},
-
-			drawCircle: function drawCircle(x, y, radius, lineColor, fillColor, lineWidth) {
-				return this._genShape('Circle', [x, y, radius, lineColor, fillColor, lineWidth]);
-			},
-
-			drawPieSlice: function drawPieSlice(x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				return this._genShape('PieSlice', [x, y, radius, startAngle, endAngle, lineColor, fillColor]);
-			},
-
-			drawRect: function drawRect(x, y, width, height, lineColor, fillColor) {
-				return this._genShape('Rect', [x, y, width, height, lineColor, fillColor]);
-			},
-
-			getElement: function getElement() {
-				return this.canvas;
-			},
-
-			/**
-    * Return the most recently inserted shape id
-    */
-			getLastShapeId: function getLastShapeId() {
-				return this.lastShapeId;
-			},
-
-			/**
-    * Clear and reset the canvas
-    */
-			reset: function reset() {
-				alert('reset not implemented');
-			},
-
-			_insert: function _insert(el, target) {
-				$(target).html(el);
-			},
-
-			/**
-    * Calculate the pixel dimensions of the canvas
-    */
-			_calculatePixelDims: function _calculatePixelDims(width, height, canvas) {
-				// XXX This should probably be a configurable option
-				var match;
-				match = this._pxregex.exec(height);
-				if (match) {
-					this.pixelHeight = match[1];
-				} else {
-					this.pixelHeight = $(canvas).height();
-				}
-				match = this._pxregex.exec(width);
-				if (match) {
-					this.pixelWidth = match[1];
-				} else {
-					this.pixelWidth = $(canvas).width();
-				}
-			},
-
-			/**
-    * Generate a shape object and id for later rendering
-    */
-			_genShape: function _genShape(shapetype, shapeargs) {
-				var id = shapeCount++;
-				shapeargs.unshift(id);
-				return new VShape(this, id, shapetype, shapeargs);
-			},
-
-			/**
-    * Add a shape to the end of the render queue
-    */
-			appendShape: function appendShape(shape) {
-				alert('appendShape not implemented');
-			},
-
-			/**
-    * Replace one shape with another
-    */
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				alert('replaceWithShape not implemented');
-			},
-
-			/**
-    * Insert one shape after another in the render queue
-    */
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				alert('insertAfterShape not implemented');
-			},
-
-			/**
-    * Remove a shape from the queue
-    */
-			removeShapeId: function removeShapeId(shapeid) {
-				alert('removeShapeId not implemented');
-			},
-
-			/**
-    * Find a shape at the specified x/y co-ordinates
-    */
-			getShapeAt: function getShapeAt(el, x, y) {
-				alert('getShapeAt not implemented');
-			},
-
-			/**
-    * Render all queued shapes onto the canvas
-    */
-			render: function render() {
-				alert('render not implemented');
-			}
-		});
-
-		VCanvas_canvas = createClass(VCanvas_base, {
-			init: function init(width, height, target, interact) {
-				VCanvas_canvas._super.init.call(this, width, height, target);
-				this.canvas = document.createElement('canvas');
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-				$(this.canvas).css({ display: 'inline-block', width: width, height: height, verticalAlign: 'top' });
-				this._insert(this.canvas, target);
-				this._calculatePixelDims(width, height, this.canvas);
-				this.canvas.width = this.pixelWidth;
-				this.canvas.height = this.pixelHeight;
-				this.interact = interact;
-				this.shapes = {};
-				this.shapeseq = [];
-				this.currentTargetShapeId = undefined;
-				$(this.canvas).css({ width: this.pixelWidth, height: this.pixelHeight });
-			},
-
-			_getContext: function _getContext(lineColor, fillColor, lineWidth) {
-				var context = this.canvas.getContext('2d');
-				if (lineColor !== undefined) {
-					context.strokeStyle = lineColor;
-				}
-				context.lineWidth = lineWidth === undefined ? 1 : lineWidth;
-				if (fillColor !== undefined) {
-					context.fillStyle = fillColor;
-				}
-				return context;
-			},
-
-			reset: function reset() {
-				var context = this._getContext();
-				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
-				this.shapes = {};
-				this.shapeseq = [];
-				this.currentTargetShapeId = undefined;
-			},
-
-			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
-				var context = this._getContext(lineColor, fillColor, lineWidth),
-				    i,
-				    plen;
-				context.beginPath();
-				context.moveTo(path[0][0] + 0.5, path[0][1] + 0.5);
-				for (i = 1, plen = path.length; i < plen; i++) {
-					context.lineTo(path[i][0] + 0.5, path[i][1] + 0.5); // the 0.5 offset gives us crisp pixel-width lines
-				}
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor !== undefined) {
-					context.fill();
-				}
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-			},
-
-			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
-				var context = this._getContext(lineColor, fillColor, lineWidth);
-				context.beginPath();
-				context.arc(x, y, radius, 0, 2 * Math.PI, false);
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor !== undefined) {
-					context.fill();
-				}
-			},
-
-			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				var context = this._getContext(lineColor, fillColor);
-				context.beginPath();
-				context.moveTo(x, y);
-				context.arc(x, y, radius, startAngle, endAngle, false);
-				context.lineTo(x, y);
-				context.closePath();
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor) {
-					context.fill();
-				}
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-			},
-
-			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
-				return this._drawShape(shapeid, [[x, y], [x + width, y], [x + width, y + height], [x, y + height], [x, y]], lineColor, fillColor);
-			},
-
-			appendShape: function appendShape(shape) {
-				this.shapes[shape.id] = shape;
-				this.shapeseq.push(shape.id);
-				this.lastShapeId = shape.id;
-				return shape.id;
-			},
-
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				var shapeseq = this.shapeseq,
-				    i;
-				this.shapes[shape.id] = shape;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] == shapeid) {
-						shapeseq[i] = shape.id;
-					}
-				}
-				delete this.shapes[shapeid];
-			},
-
-			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
-				var shapeseq = this.shapeseq,
-				    shapemap = {},
-				    sid,
-				    i,
-				    first;
-
-				for (i = shapeids.length; i--;) {
-					shapemap[shapeids[i]] = true;
-				}
-				for (i = shapeseq.length; i--;) {
-					sid = shapeseq[i];
-					if (shapemap[sid]) {
-						shapeseq.splice(i, 1);
-						delete this.shapes[sid];
-						first = i;
-					}
-				}
-				for (i = shapes.length; i--;) {
-					shapeseq.splice(first, 0, shapes[i].id);
-					this.shapes[shapes[i].id] = shapes[i];
-				}
-			},
-
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				var shapeseq = this.shapeseq,
-				    i;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] === shapeid) {
-						shapeseq.splice(i + 1, 0, shape.id);
-						this.shapes[shape.id] = shape;
-						return;
-					}
-				}
-			},
-
-			removeShapeId: function removeShapeId(shapeid) {
-				var shapeseq = this.shapeseq,
-				    i;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] === shapeid) {
-						shapeseq.splice(i, 1);
-						break;
-					}
-				}
-				delete this.shapes[shapeid];
-			},
-
-			getShapeAt: function getShapeAt(el, x, y) {
-				this.targetX = x;
-				this.targetY = y;
-				this.render();
-				return this.currentTargetShapeId;
-			},
-
-			render: function render() {
-				var shapeseq = this.shapeseq,
-				    shapes = this.shapes,
-				    shapeCount = shapeseq.length,
-				    context = this._getContext(),
-				    shapeid,
-				    shape,
-				    i;
-				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
-				for (i = 0; i < shapeCount; i++) {
-					shapeid = shapeseq[i];
-					shape = shapes[shapeid];
-					this['_draw' + shape.type].apply(this, shape.args);
-				}
-				if (!this.interact) {
-					// not interactive so no need to keep the shapes array
-					this.shapes = {};
-					this.shapeseq = [];
-				}
-			}
-
-		});
-
-		VCanvas_vml = createClass(VCanvas_base, {
-			init: function init(width, height, target) {
-				var groupel;
-				VCanvas_vml._super.init.call(this, width, height, target);
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-				this.canvas = document.createElement('span');
-				$(this.canvas).css({ display: 'inline-block', position: 'relative', overflow: 'hidden', width: width, height: height, margin: '0px', padding: '0px', verticalAlign: 'top' });
-				this._insert(this.canvas, target);
-				this._calculatePixelDims(width, height, this.canvas);
-				this.canvas.width = this.pixelWidth;
-				this.canvas.height = this.pixelHeight;
-				groupel = '<v:group coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '"' + ' style="position:absolute;top:0;left:0;width:' + this.pixelWidth + 'px;height=' + this.pixelHeight + 'px;"></v:group>';
-				this.canvas.insertAdjacentHTML('beforeEnd', groupel);
-				this.group = $(this.canvas).children()[0];
-				this.rendered = false;
-				this.prerender = '';
-			},
-
-			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
-				var vpath = [],
-				    initial,
-				    stroke,
-				    fill,
-				    closed,
-				    vel,
-				    plen,
-				    i;
-				for (i = 0, plen = path.length; i < plen; i++) {
-					vpath[i] = '' + path[i][0] + ',' + path[i][1];
-				}
-				initial = vpath.splice(0, 1);
-				lineWidth = lineWidth === undefined ? 1 : lineWidth;
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				closed = vpath[0] === vpath[vpath.length - 1] ? 'x ' : '';
-				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + initial + ' l ' + vpath.join(', ') + ' ' + closed + 'e">' + ' </v:shape>';
-				return vel;
-			},
-
-			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
-				var stroke, fill, vel;
-				x -= radius;
-				y -= radius;
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				vel = '<v:oval ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;top:' + y + 'px; left:' + x + 'px; width:' + radius * 2 + 'px; height:' + radius * 2 + 'px"></v:oval>';
-				return vel;
-			},
-
-			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				var vpath, startx, starty, endx, endy, stroke, fill, vel;
-				if (startAngle === endAngle) {
-					return ''; // VML seems to have problem when start angle equals end angle.
-				}
-				if (endAngle - startAngle === 2 * Math.PI) {
-					startAngle = 0.0; // VML seems to have a problem when drawing a full circle that doesn't start 0
-					endAngle = 2 * Math.PI;
-				}
-
-				startx = x + Math.round(Math.cos(startAngle) * radius);
-				starty = y + Math.round(Math.sin(startAngle) * radius);
-				endx = x + Math.round(Math.cos(endAngle) * radius);
-				endy = y + Math.round(Math.sin(endAngle) * radius);
-
-				if (startx === endx && starty === endy) {
-					if (endAngle - startAngle < Math.PI) {
-						// Prevent very small slices from being mistaken as a whole pie
-						return '';
-					}
-					// essentially going to be the entire circle, so ignore startAngle
-					startx = endx = x + radius;
-					starty = endy = y;
-				}
-
-				if (startx === endx && starty === endy && endAngle - startAngle < Math.PI) {
-					return '';
-				}
-
-				vpath = [x - radius, y - radius, x + radius, y + radius, startx, starty, endx, endy];
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="1px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + x + ',' + y + ' wa ' + vpath.join(', ') + ' x e">' + ' </v:shape>';
-				return vel;
-			},
-
-			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
-				return this._drawShape(shapeid, [[x, y], [x, y + height], [x + width, y + height], [x + width, y], [x, y]], lineColor, fillColor);
-			},
-
-			reset: function reset() {
-				this.group.innerHTML = '';
-			},
-
-			appendShape: function appendShape(shape) {
-				var vel = this['_draw' + shape.type].apply(this, shape.args);
-				if (this.rendered) {
-					this.group.insertAdjacentHTML('beforeEnd', vel);
-				} else {
-					this.prerender += vel;
-				}
-				this.lastShapeId = shape.id;
-				return shape.id;
-			},
-
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				var existing = $('#jqsshape' + shapeid),
-				    vel = this['_draw' + shape.type].apply(this, shape.args);
-				existing[0].outerHTML = vel;
-			},
-
-			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
-				// replace the first shapeid with all the new shapes then toast the remaining old shapes
-				var existing = $('#jqsshape' + shapeids[0]),
-				    replace = '',
-				    slen = shapes.length,
-				    i;
-				for (i = 0; i < slen; i++) {
-					replace += this['_draw' + shapes[i].type].apply(this, shapes[i].args);
-				}
-				existing[0].outerHTML = replace;
-				for (i = 1; i < shapeids.length; i++) {
-					$('#jqsshape' + shapeids[i]).remove();
-				}
-			},
-
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				var existing = $('#jqsshape' + shapeid),
-				    vel = this['_draw' + shape.type].apply(this, shape.args);
-				existing[0].insertAdjacentHTML('afterEnd', vel);
-			},
-
-			removeShapeId: function removeShapeId(shapeid) {
-				var existing = $('#jqsshape' + shapeid);
-				this.group.removeChild(existing[0]);
-			},
-
-			getShapeAt: function getShapeAt(el, x, y) {
-				var shapeid = el.id.substr(8);
-				return shapeid;
-			},
-
-			render: function render() {
-				if (!this.rendered) {
-					// batch the intial render into a single repaint
-					this.group.innerHTML = this.prerender;
-					this.rendered = true;
-				}
-			}
-		});
-	});
-})(document, Math);
 
 /***/ })
 

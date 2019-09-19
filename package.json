@@ -94,6 +94,7 @@
         "sweetalert2": "^8.17.1",
         "themify-icons": "https://github.com/lykmapipo/themify-icons.git",
         "toastr": "^2.1.4",
+        "uniqid": "^5.0.3",
         "v-chartist": "^0.1.5",
         "vddl": "^0.7.1",
         "vee-validate": "^2.0.0-rc.27",

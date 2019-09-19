@@ -1,186 +1,14 @@
 webpackJsonp([112],{
 
-/***/ 1235:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1236);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("d0a8bfd8", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contacts.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contacts.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1236:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-exports.i(__webpack_require__(657), "");
-exports.i(__webpack_require__(658), "");
-
-// module
-exports.push([module.i, "\n/*The Wrapper*/\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1237:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1238);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("31df7528", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./contacts.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./contacts.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1238:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.search[data-v-7542ea4f]{\n    border: 1px solid #bdb3b3;\n}\n.contact-profile[data-v-7542ea4f]{\n    width:50px;\n    height: 50px;\n}\n.box-shadow[data-v-7542ea4f]{\n    box-shadow: 0px 0px 1px 1px #cfcfcf;\n}\n.contact-pic[data-v-7542ea4f]{\n    width: 50px;\n    height: 50px;\n}\n.table td[data-v-7542ea4f]{\n    padding: 16px;\n    vertical-align: middle;\n}\n.contacts-box .custom-control-inline[data-v-7542ea4f]{\n    margin-right: 0;\n}\n.custom-control-label[data-v-7542ea4f]::before{\n    width: 100px;\n    height: 100px;\n}\n.contact-page[data-v-7542ea4f]{\n    font-size: 14px;\n}\n.options a[data-v-7542ea4f]:hover,.options2 a[data-v-7542ea4f]:hover{\n    background-color: #eee;\n}\n.bg-title[data-v-7542ea4f]{\n    background-color: #f5f5f5;\n}\n.options .active[data-v-7542ea4f]{\n    background-color: #eee;\n    color: #66cc99 !important;\n    font-weight: 600;\n}\n.custom-control-inline[data-v-7542ea4f]{\n    margin-right: 0;\n}\n.total-contacts[data-v-7542ea4f]{\n    border-bottom: 1px solid #eee;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1239:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1240);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("7faf015c", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./contacts.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7542ea4f\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./contacts.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1240:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.my-scrollbar{\n    width: 100%;\n    /*min-width: 300px;*/\n    /*max-height: 450px;*/\n}\n.scroll-me{\n    background:#fff;\n    min-width: 992px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1241:
+/***/ 2219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(659);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
 //
@@ -257,403 +85,369 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default.a);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'blank',
+    name: "Rol",
     data: function data() {
         return {
-            modalShow: false,
-            newname: '',
-            newemail: '',
-            newnumber: '',
-            newlocation: '',
-            newrole: '',
-            contacts: [{
-                name: 'Jon',
-                img: __webpack_require__(527),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Doe',
-                img: __webpack_require__(525),
-                email: 'doe@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Addison',
-                img: __webpack_require__(526),
-                email: 'addison@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Jon',
-                img: __webpack_require__(529),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Doe',
-                img: __webpack_require__(527),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }, {
-                name: 'Jon',
-                img: __webpack_require__(524),
-                email: 'jon@gmail.com',
-                contact_num: '0123456789',
-                role: 'Web developer',
-                location: 'Hyderabad'
-            }],
-            editname: '',
-            editemail: '',
-            editnumber: '',
-            editlocation: '',
-            editrole: '',
-            contactid: '',
             search: '',
-            userImage: ''
+            dialog: false,
+            error: 0,
+            errorMsj: [],
+            headers: [{
+                text: 'Id',
+                align: 'left',
+                value: 'id'
+            }, { text: 'Nombre', value: 'nombre' }],
+            roles: [],
+            editedIndex: -1,
+            editedItem: {
+                id: 0,
+                nombre: ''
+            },
+            defaultItem: {
+                id: 0,
+                nombre: ''
+            }
         };
     },
 
-    components: {
-        VueScrollbar: __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default.a
-    },
-    mounted: function mounted() {},
-    methods: {
-        addContact: function addContact() {
-            this.contacts.push({
-                name: this.newname,
-                email: this.newemail,
-                contact_num: this.newnumber,
-                location: this.newlocation,
-                role: this.newrole,
-                img: this.userImage
-            }), this.newname = '', this.newemail = '', this.newnumber = '', this.newlocation = '', this.newrole = '', this.modalShow = false;
-        },
-        deletecontact: function deletecontact(index) {
-            //                this.$refs.deletemodal.show()
-            this.contacts.splice(index, 1);
-        },
-        editcontact: function editcontact(index) {
-            this.editname = this.contacts[index].name;
-            this.editemail = this.contacts[index].email;
-            this.editnumber = this.contacts[index].contact_num;
-            this.editlocation = this.contacts[index].location;
-            this.editrole = this.contacts[index].role;
-            this.contactid = index;
-            this.$refs.editcontact.show();
-        },
-        updateContact: function updateContact(contactid) {
-            this.contacts[contactid].name = this.editname;
-            this.contacts[contactid].email = this.editemail;
-            this.contacts[contactid].contact_num = this.editnumber;
-            this.contacts[contactid].location = this.editlocation;
-            this.contacts[contactid].role = this.editrole;
-            this.$refs.editcontact.hide();
-            //                console.log(this.tasks[index].tasktitle);
-            this.modalTask = false;
-        },
-        cancel: function cancel() {
-            this.modalTask = false;
-        },
-        onFileChange: function onFileChange(e) {
-            var files = e.target.files || e.dataTransfer.files;
-            if (!files.length) {
-                return;
-            }
-            this.createImage(files[0]);
-        },
-        createImage: function createImage(file) {
-            var reader = new FileReader();
-            var vm = this;
-
-            reader.onload = function (e) {
-                vm.userImage = e.target.result;
-            };
-            reader.readAsDataURL(file);
+    computed: {
+        formTitle: function formTitle() {
+            return this.editedIndex === -1 ? 'Nuevo Rol' : 'Editar Rol';
         }
     },
-    computed: {
-        allContacts: function allContacts() {
-            var self = this;
-            return this.contacts.filter(function (newcontact) {
-                return newcontact.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0;
+
+    watch: {
+        dialog: function dialog(val) {
+            val || this.close();
+        }
+    },
+
+    created: function created() {
+        this.initialize();
+    },
+
+
+    methods: {
+        validate: function validate() {
+            this.error = 0;
+            this.errorMsj = [];
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre del rol no puede estar vacio');
+            if (this.errorMsj.length) this.error = 1;
+            return this.error;
+        },
+        initialize: function initialize() {
+            var _this = this;
+
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/Rol').then(function (response) {
+                _this.roles = response.data;
+            }).catch(function (errors) {
+                console.log(errors);
             });
-            //return this.customers;
+        },
+        editItem: function editItem(item) {
+            this.editedIndex = this.roles.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+            this.dialog = true;
+        },
+        deleteItem: function deleteItem(item) {
+            var me = this;
+            swal.fire({
+                title: 'Quieres eliminar este Rol?',
+                text: "No podras revertir la eliminacion!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, Eliminalo!',
+                cancelButtonText: "Cancelar"
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Rol/' + item.id + '/delete').then(function (response) {
+                        me.initialize();
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: response.data,
+                            showConfirmButton: false,
+                            timer: 1500 });
+                    }).catch(function (error) {
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'error',
+                            title: error.response.data.error,
+                            showConfirmButton: true });
+                    });
+                }
+            });
+        },
+        close: function close() {
+            var _this2 = this;
+
+            this.error = 0;
+            this.dialog = false;
+            setTimeout(function () {
+                _this2.editedItem = Object.assign({}, _this2.defaultItem);
+                _this2.editedIndex = -1;
+            }, 300);
+        },
+        save: function save() {
+            var me = this;
+            if (this.validate()) {
+                return;
+            }
+            if (this.editedIndex > -1) {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'put',
+                    url: '/Rol/editar',
+                    data: {
+                        id: this.editedItem.id,
+                        nombre: this.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            } else {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'post',
+                    url: '/Rol/nuevo',
+                    data: {
+                        nombre: me.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            }
         }
     }
 });
 
 /***/ }),
 
-/***/ 1242:
+/***/ 2220:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "contact-page" }, [
-        _c("div", { staticClass: "container-fluid bg-white" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("div", { staticClass: "p-5 box-shadow mt-3" }, [
-                _c("h4", [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "float-right" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.search,
-                          expression: "search"
-                        }
-                      ],
-                      staticClass: "search form-control pl-2 pr-2",
-                      attrs: { type: "search", placeholder: "Search here" },
-                      domProps: { value: _vm.search },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.search = $event.target.value
-                        }
-                      }
-                    })
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container-fluid bg-white mt-4" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("div", { staticClass: "row" }, [
+  return _c("div", { staticClass: "row user-list" }, [
+    _c(
+      "div",
+      { staticClass: "col-lg-12" },
+      [
+        _c(
+          "b-card",
+          {
+            staticClass: "bg-primary-card",
+            attrs: { header: "Roles", "header-tag": "h4" }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "table-responsive" },
+              [
                 _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 col-lg-3" },
+                  "v-toolbar",
+                  { attrs: { flat: "", color: "white" } },
                   [
-                    _c("div", { staticClass: "box-shadow mt-4" }, [
-                      _c(
-                        "div",
-                        { staticClass: "border-bottom border-secondary p-3" },
-                        [
-                          _c("img", {
-                            staticClass:
-                              "contact-profile d-inline-block rounded-circle",
-                            attrs: {
-                              src: __webpack_require__(527),
-                              alt: "user profile"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "d-inline-block" }, [
-                            _vm._v("  Jon Doe")
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _vm._m(2)
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary mt-3",
-                        on: {
-                          click: function($event) {
-                            _vm.modalShow = !_vm.modalShow
-                          }
-                        }
+                    _c("v-text-field", {
+                      attrs: {
+                        "append-icon": "search",
+                        label: "Buscar",
+                        "single-line": "",
+                        "hide-details": ""
                       },
-                      [_vm._v("Add New Contact")]
-                    ),
+                      model: {
+                        value: _vm.search,
+                        callback: function($$v) {
+                          _vm.search = $$v
+                        },
+                        expression: "search"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("v-spacer"),
                     _vm._v(" "),
                     _c(
-                      "b-modal",
+                      "v-dialog",
                       {
-                        attrs: {
-                          "hide-footer": true,
-                          title: "Add your contact here"
-                        },
+                        attrs: { "max-width": "600px" },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "activator",
+                            fn: function(ref) {
+                              var on = ref.on
+                              return [
+                                _c(
+                                  "v-btn",
+                                  _vm._g(
+                                    {
+                                      staticClass: "mb-2",
+                                      attrs: {
+                                        color: "green darken-1",
+                                        dark: ""
+                                      }
+                                    },
+                                    on
+                                  ),
+                                  [_vm._v("Nuevo Rol")]
+                                )
+                              ]
+                            }
+                          }
+                        ]),
                         model: {
-                          value: _vm.modalShow,
+                          value: _vm.dialog,
                           callback: function($$v) {
-                            _vm.modalShow = $$v
+                            _vm.dialog = $$v
                           },
-                          expression: "modalShow"
+                          expression: "dialog"
                         }
                       },
                       [
-                        _c("b-container", { attrs: { fluid: "" } }, [
-                          _c(
-                            "form",
-                            [
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newname,
-                                    expression: "newname"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "text",
-                                  placeholder: "Enter name"
-                                },
-                                domProps: { value: _vm.newname },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newname = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                staticClass: "btn btn-primary mt-3",
-                                attrs: { type: "file" },
-                                on: { change: _vm.onFileChange }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newnumber,
-                                    expression: "newnumber"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "number",
-                                  placeholder: "Enter phone number"
-                                },
-                                domProps: { value: _vm.newnumber },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newnumber = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newemail,
-                                    expression: "newemail"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "email",
-                                  placeholder: "Enter email"
-                                },
-                                domProps: { value: _vm.newemail },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newemail = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newrole,
-                                    expression: "newrole"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3",
-                                attrs: {
-                                  type: "text",
-                                  placeholder: "Enter role"
-                                },
-                                domProps: { value: _vm.newrole },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newrole = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newlocation,
-                                    expression: "newlocation"
-                                  }
-                                ],
-                                staticClass: "form-control mt-3 mb-3",
-                                attrs: {
-                                  type: "text",
-                                  placeholder: "Location"
-                                },
-                                domProps: { value: _vm.newlocation },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newlocation = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "b-btn",
-                                {
-                                  staticClass: "float-right",
-                                  attrs: { variant: "primary" },
-                                  on: { click: _vm.addContact }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                            Submit\n                                        "
-                                  )
+                        _vm._v(" "),
+                        _c(
+                          "v-card",
+                          [
+                            _c("v-card-title", [
+                              _c("span", { staticClass: "headline" }, [
+                                _vm._v(_vm._s(_vm.formTitle))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-text",
+                              [
+                                _c(
+                                  "v-container",
+                                  { attrs: { "grid-list-md": "" } },
+                                  [
+                                    _c(
+                                      "v-layout",
+                                      { attrs: { wrap: "" } },
+                                      [
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md12: ""
+                                            }
+                                          },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: { label: "Nombre Rol" },
+                                              model: {
+                                                value: _vm.editedItem.nombre,
+                                                callback: function($$v) {
+                                                  _vm.$set(
+                                                    _vm.editedItem,
+                                                    "nombre",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "editedItem.nombre"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _vm.error
+                              ? [
+                                  _c("v-divider"),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "text-xs-center" },
+                                    [
+                                      _vm._l(_vm.errorMsj, function(e) {
+                                        return _c("strong", {
+                                          key: e,
+                                          staticClass:
+                                            "red--text text--lighten-1",
+                                          domProps: { textContent: _vm._s(e) }
+                                        })
+                                      }),
+                                      _vm._v(" "),
+                                      _c("br")
+                                    ],
+                                    2
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-divider")
                                 ]
-                              )
-                            ],
-                            1
-                          )
-                        ])
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-actions",
+                              [
+                                _c("v-spacer"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "blue darken-1", flat: "" },
+                                    on: { click: _vm.close }
+                                  },
+                                  [_vm._v("Cancelar")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "blue darken-1", flat: "" },
+                                    on: { click: _vm.save }
+                                  },
+                                  [_vm._v("Guardar")]
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          2
+                        )
                       ],
                       1
                     )
@@ -661,418 +455,150 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-12 col-sm-8 col-lg-9" }, [
-                  _c("div", { staticClass: "box-shadow mt-4" }, [
-                    _c(
-                      "div",
-                      { staticClass: "contacts-box mb-3" },
-                      [
-                        _vm._m(3),
-                        _vm._v(" "),
-                        _c(
-                          "vue-scrollbar",
-                          {
-                            ref: "Scrollbar",
-                            attrs: { classes: "my-scrollbar" }
-                          },
-                          [
-                            _c("div", { staticClass: "scroll-me" }, [
+                _c("v-data-table", {
+                  staticClass: "elevation-1",
+                  attrs: {
+                    headers: _vm.headers,
+                    items: _vm.roles,
+                    search: _vm.search
+                  },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "items",
+                      fn: function(props) {
+                        return [
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.id))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.nombre))
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "td",
+                            { staticClass: "justify-center layout px-0" },
+                            [
                               _c(
-                                "div",
+                                "v-icon",
                                 {
-                                  staticClass:
-                                    "table-responsive mb-3 tablescroll"
+                                  staticClass: "mr-2",
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.editItem(props.item)
+                                    }
+                                  }
                                 },
                                 [
-                                  _c(
-                                    "table",
-                                    { staticClass: "table" },
-                                    _vm._l(_vm.allContacts, function(
-                                      contact,
-                                      index
-                                    ) {
-                                      return _c("tr", [
-                                        _c("td", [_c("b-form-checkbox")], 1),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.name))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _c("img", {
-                                            staticClass:
-                                              "contact-pic rounded-circle",
-                                            attrs: {
-                                              src: contact.img,
-                                              alt: "profile"
-                                            }
-                                          })
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.email))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.contact_num))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.role))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(_vm._s(contact.location))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _c("span", {
-                                            staticClass: "fa fa-edit",
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.editcontact(index)
-                                              }
-                                            }
-                                          })
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _c("span", {
-                                            staticClass: "fa fa-trash-o",
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.deletecontact(index)
-                                              }
-                                            }
-                                          })
-                                        ])
-                                      ])
-                                    }),
-                                    0
+                                  _vm._v(
+                                    "\n                                edit\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-icon",
+                                {
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.deleteItem(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                delete\n                            "
                                   )
                                 ]
                               )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
-                    )
+                            ],
+                            1
+                          )
+                        ]
+                      }
+                    },
+                    {
+                      key: "no-data",
+                      fn: function() {
+                        return [
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: { color: "primary" },
+                              on: { click: _vm.initialize }
+                            },
+                            [_vm._v("Recargar")]
+                          )
+                        ]
+                      },
+                      proxy: true
+                    },
+                    {
+                      key: "no-results",
+                      fn: function() {
+                        return [
+                          _c(
+                            "v-alert",
+                            {
+                              attrs: {
+                                value: true,
+                                color: "error",
+                                icon: "warning"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                '\n                            No hay resultados de "' +
+                                  _vm._s(_vm.search) +
+                                  '".\n                        '
+                              )
+                            ]
+                          )
+                        ]
+                      },
+                      proxy: true
+                    }
                   ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "b-modal",
-        {
-          ref: "editcontact",
-          attrs: { "hide-footer": "", title: "Using Component Methods" }
-        },
-        [
-          _c("div", { staticClass: "d-block" }, [
-            _c("form", [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editname,
-                    expression: "editname"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "text", placeholder: "Enter name" },
-                domProps: { value: _vm.editname },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editname = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editemail,
-                    expression: "editemail"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "email", placeholder: "Enter email" },
-                domProps: { value: _vm.editemail },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editemail = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editnumber,
-                    expression: "editnumber"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "number", placeholder: "Enter number" },
-                domProps: { value: _vm.editnumber },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editnumber = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editrole,
-                    expression: "editrole"
-                  }
-                ],
-                staticClass: "form-control mt-3 mb-3",
-                attrs: { type: "text", placeholder: "role" },
-                domProps: { value: _vm.editrole },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editrole = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editlocation,
-                    expression: "editlocation"
-                  }
-                ],
-                staticClass: "form-control mt-3 mb-3",
-                attrs: { type: "text", placeholder: "role" },
-                domProps: { value: _vm.editlocation },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editlocation = $event.target.value
-                  }
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-white",
-              attrs: { variant: "success", block: "" },
-              on: {
-                click: function($event) {
-                  return _vm.updateContact(_vm.contactid)
-                }
-              }
-            },
-            [_vm._v("Update")]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-white",
-              attrs: { variant: "danger", block: "" },
-              on: { click: _vm.cancel }
-            },
-            [_vm._v("Cancel")]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "b-modal",
-        {
-          ref: "deletecontact",
-          attrs: { "hide-footer": "", title: "Using Component Methods" }
-        },
-        [
-          _c("div", { staticClass: "d-block text-center" }, [
-            _c("h3", [_vm._v("Are you sure you want to delete modal")])
-          ]),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-danger",
-              attrs: { variant: "outline-danger", block: "" }
-            },
-            [_vm._v("Yes")]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-primary",
-              attrs: { variant: "outline-primary", block: "" }
-            },
-            [_vm._v("No")]
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [
-      _c("i", { staticClass: "fa fa-address-book-o" }),
-      _vm._v(" Contacts\n                        ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "options border-bottom border-secondary" },
-      [
-        _c(
-          "a",
-          {
-            staticClass: "p-3 d-block text-dark active",
-            attrs: { href: "#/contacts" }
-          },
-          [_vm._v("All Contacts")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "p-3 d-block text-dark",
-            attrs: { href: "#/contacts" }
-          },
-          [_vm._v("Frequently contacted ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "p-3 d-block text-dark",
-            attrs: { href: "#/contacts" }
-          },
-          [_vm._v("Starred Contacts")]
+                })
+              ],
+              1
+            )
+          ]
         )
-      ]
+      ],
+      1
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "options2" }, [
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Groups")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Friends")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Clients")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("Recent Workers")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "p-3 d-block text-dark", attrs: { href: "#/contacts" } },
-        [_vm._v("New Group")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "total-contacts p-5 " }, [
-      _c("span", [_vm._v("All Contacts(25)")])
-    ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7542ea4f", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5a444350", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 440:
+/***/ 507:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(1235)
-  __webpack_require__(1237)
-  __webpack_require__(1239)
-}
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1241)
+var __vue_script__ = __webpack_require__(2219)
 /* template */
-var __vue_template__ = __webpack_require__(1242)
+var __vue_template__ = __webpack_require__(2220)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
-var __vue_scopeId__ = "data-v-7542ea4f"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -1083,7 +609,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/contacts.vue"
+Component.options.__file = "resources/components/pages/src/rol.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1092,9 +618,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7542ea4f", Component.options)
+    hotAPI.createRecord("data-v-5a444350", Component.options)
   } else {
-    hotAPI.reload("data-v-7542ea4f", Component.options)
+    hotAPI.reload("data-v-5a444350", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1107,1215 +633,1598 @@ module.exports = Component.exports
 /***/ }),
 
 /***/ 524:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 525:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 526:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 527:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 529:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 657:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
-// imports
+"use strict";
 
 
-// module
-exports.push([module.i, "\nbody {\n  background: #f9f9f9;\n  height: 1000px;\n}\n\np {\n  margin-top: 0;\n}\n\n.my-scrollbar {\n  width: 35%;\n  min-width: 300px;\n  max-height: 450px;\n}\n\n.scroll-me {\n  background: #EEE;\n  min-width: 750px;\n}\n\n.kolom {\n  background: #2196F3;\n  width: 150px;\n  height: 150px;\n  float: left;\n  display: inline-block;\n  margin: 15px;\n}\n\n.clearfix {\n  clear: both;\n}\n", ""]);
+var bind = __webpack_require__(534);
+var isBuffer = __webpack_require__(539);
 
-// exports
+/*global toString:true*/
+
+// utils is a library of generic helper functions non-specific to axios
+
+var toString = Object.prototype.toString;
+
+/**
+ * Determine if a value is an Array
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Array, otherwise false
+ */
+function isArray(val) {
+  return toString.call(val) === '[object Array]';
+}
+
+/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */
+function isArrayBuffer(val) {
+  return toString.call(val) === '[object ArrayBuffer]';
+}
+
+/**
+ * Determine if a value is a FormData
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */
+function isFormData(val) {
+  return (typeof FormData !== 'undefined') && (val instanceof FormData);
+}
+
+/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */
+function isArrayBufferView(val) {
+  var result;
+  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
+    result = ArrayBuffer.isView(val);
+  } else {
+    result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
+  }
+  return result;
+}
+
+/**
+ * Determine if a value is a String
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a String, otherwise false
+ */
+function isString(val) {
+  return typeof val === 'string';
+}
+
+/**
+ * Determine if a value is a Number
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Number, otherwise false
+ */
+function isNumber(val) {
+  return typeof val === 'number';
+}
+
+/**
+ * Determine if a value is undefined
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */
+function isUndefined(val) {
+  return typeof val === 'undefined';
+}
+
+/**
+ * Determine if a value is an Object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Object, otherwise false
+ */
+function isObject(val) {
+  return val !== null && typeof val === 'object';
+}
+
+/**
+ * Determine if a value is a Date
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Date, otherwise false
+ */
+function isDate(val) {
+  return toString.call(val) === '[object Date]';
+}
+
+/**
+ * Determine if a value is a File
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a File, otherwise false
+ */
+function isFile(val) {
+  return toString.call(val) === '[object File]';
+}
+
+/**
+ * Determine if a value is a Blob
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */
+function isBlob(val) {
+  return toString.call(val) === '[object Blob]';
+}
+
+/**
+ * Determine if a value is a Function
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Function, otherwise false
+ */
+function isFunction(val) {
+  return toString.call(val) === '[object Function]';
+}
+
+/**
+ * Determine if a value is a Stream
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Stream, otherwise false
+ */
+function isStream(val) {
+  return isObject(val) && isFunction(val.pipe);
+}
+
+/**
+ * Determine if a value is a URLSearchParams object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+ */
+function isURLSearchParams(val) {
+  return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
+}
+
+/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ * @returns {String} The String freed of excess whitespace
+ */
+function trim(str) {
+  return str.replace(/^\s*/, '').replace(/\s*$/, '');
+}
+
+/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -> undefined
+ *  typeof document -> undefined
+ *
+ * react-native:
+ *  navigator.product -> 'ReactNative'
+ */
+function isStandardBrowserEnv() {
+  if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
+    return false;
+  }
+  return (
+    typeof window !== 'undefined' &&
+    typeof document !== 'undefined'
+  );
+}
+
+/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ */
+function forEach(obj, fn) {
+  // Don't bother if no value provided
+  if (obj === null || typeof obj === 'undefined') {
+    return;
+  }
+
+  // Force an array if not already something iterable
+  if (typeof obj !== 'object') {
+    /*eslint no-param-reassign:0*/
+    obj = [obj];
+  }
+
+  if (isArray(obj)) {
+    // Iterate over array values
+    for (var i = 0, l = obj.length; i < l; i++) {
+      fn.call(null, obj[i], i, obj);
+    }
+  } else {
+    // Iterate over object keys
+    for (var key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        fn.call(null, obj[key], key, obj);
+      }
+    }
+  }
+}
+
+/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * var result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ * @returns {Object} Result of all merge properties
+ */
+function merge(/* obj1, obj2, obj3, ... */) {
+  var result = {};
+  function assignValue(val, key) {
+    if (typeof result[key] === 'object' && typeof val === 'object') {
+      result[key] = merge(result[key], val);
+    } else {
+      result[key] = val;
+    }
+  }
+
+  for (var i = 0, l = arguments.length; i < l; i++) {
+    forEach(arguments[i], assignValue);
+  }
+  return result;
+}
+
+/**
+ * Extends object a by mutably adding to it the properties of object b.
+ *
+ * @param {Object} a The object to be extended
+ * @param {Object} b The object to copy properties from
+ * @param {Object} thisArg The object to bind function to
+ * @return {Object} The resulting value of object a
+ */
+function extend(a, b, thisArg) {
+  forEach(b, function assignValue(val, key) {
+    if (thisArg && typeof val === 'function') {
+      a[key] = bind(val, thisArg);
+    } else {
+      a[key] = val;
+    }
+  });
+  return a;
+}
+
+module.exports = {
+  isArray: isArray,
+  isArrayBuffer: isArrayBuffer,
+  isBuffer: isBuffer,
+  isFormData: isFormData,
+  isArrayBufferView: isArrayBufferView,
+  isString: isString,
+  isNumber: isNumber,
+  isObject: isObject,
+  isUndefined: isUndefined,
+  isDate: isDate,
+  isFile: isFile,
+  isBlob: isBlob,
+  isFunction: isFunction,
+  isStream: isStream,
+  isURLSearchParams: isURLSearchParams,
+  isStandardBrowserEnv: isStandardBrowserEnv,
+  forEach: forEach,
+  merge: merge,
+  extend: extend,
+  trim: trim
+};
 
 
 /***/ }),
 
-/***/ 658:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
-// imports
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+var utils = __webpack_require__(524);
+var normalizeHeaderName = __webpack_require__(545);
+
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = __webpack_require__(535);
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(535);
+  }
+  return adapter;
+}
+
+var defaults = {
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Content-Type');
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data)) {
+      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+      return JSON.stringify(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    /*eslint no-param-reassign:0*/
+    if (typeof data === 'string') {
+      try {
+        data = JSON.parse(data);
+      } catch (e) { /* Ignore */ }
+    }
+    return data;
+  }],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  }
+};
+
+defaults.headers = {
+  common: {
+    'Accept': 'application/json, text/plain, */*'
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(44)))
+
+/***/ }),
+
+/***/ 534:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
-// module
-exports.push([module.i, ".vue-scrollbar-transition, .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  transition: all 0.5s ease;\n  -moz-transition: all 0.5s ease;\n  -webkit-transition: all 0.5s ease;\n  -o-transition: all 0.5s ease;\n}\n.vue-scrollbar-transition--scrollbar {\n  transition: opacity 0.5s linear;\n  -moz-transition: opacity 0.5s linear;\n  -webkit-transition: opacity 0.5s linear;\n  -o-transition: opacity 0.5s linear;\n}\n\n.vue-scrollbar__wrapper {\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  background: white;\n}\n.vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-horizontal {\n  opacity: 1;\n}\n.vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  opacity: 0.5;\n  position: absolute;\n  background: transparent;\n}\n.vue-scrollbar__scrollbar-vertical:hover, .vue-scrollbar__scrollbar-horizontal:hover {\n  background: rgba(0, 0, 0, 0.3);\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar, .vue-scrollbar__scrollbar-horizontal .scrollbar {\n  position: relative;\n  background: rgba(0, 0, 0, 0.5);\n  cursor: default;\n}\n.vue-scrollbar__scrollbar-vertical {\n  width: 10px;\n  height: 100%;\n  top: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar {\n  width: 10px;\n}\n.vue-scrollbar__scrollbar-horizontal {\n  height: 10px;\n  width: 100%;\n  bottom: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-horizontal .scrollbar {\n  height: 10px;\n}\n", ""]);
-
-// exports
+module.exports = function bind(fn, thisArg) {
+  return function wrap() {
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.apply(thisArg, args);
+  };
+};
 
 
 /***/ }),
 
-/***/ 659:
+/***/ 535:
 /***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+var settle = __webpack_require__(546);
+var buildURL = __webpack_require__(548);
+var parseHeaders = __webpack_require__(549);
+var isURLSameOrigin = __webpack_require__(550);
+var createError = __webpack_require__(536);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(551);
+
+module.exports = function xhrAdapter(config) {
+  return new Promise(function dispatchXhrRequest(resolve, reject) {
+    var requestData = config.data;
+    var requestHeaders = config.headers;
+
+    if (utils.isFormData(requestData)) {
+      delete requestHeaders['Content-Type']; // Let the browser set it
+    }
+
+    var request = new XMLHttpRequest();
+    var loadEvent = 'onreadystatechange';
+    var xDomain = false;
+
+    // For IE 8/9 CORS support
+    // Only supports POST and GET calls and doesn't returns the response headers.
+    // DON'T do this for testing b/c XMLHttpRequest is mocked, not XDomainRequest.
+    if ("development" !== 'test' &&
+        typeof window !== 'undefined' &&
+        window.XDomainRequest && !('withCredentials' in request) &&
+        !isURLSameOrigin(config.url)) {
+      request = new window.XDomainRequest();
+      loadEvent = 'onload';
+      xDomain = true;
+      request.onprogress = function handleProgress() {};
+      request.ontimeout = function handleTimeout() {};
+    }
+
+    // HTTP basic authentication
+    if (config.auth) {
+      var username = config.auth.username || '';
+      var password = config.auth.password || '';
+      requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+    }
+
+    request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);
+
+    // Set the request timeout in MS
+    request.timeout = config.timeout;
+
+    // Listen for ready state
+    request[loadEvent] = function handleLoad() {
+      if (!request || (request.readyState !== 4 && !xDomain)) {
+        return;
+      }
+
+      // The request errored out and we didn't get a response, this will be
+      // handled by onerror instead
+      // With one exception: request that using file: protocol, most browsers
+      // will return status as 0 even though it's a successful request
+      if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
+        return;
+      }
+
+      // Prepare the response
+      var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+      var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
+      var response = {
+        data: responseData,
+        // IE sends 1223 instead of 204 (https://github.com/axios/axios/issues/201)
+        status: request.status === 1223 ? 204 : request.status,
+        statusText: request.status === 1223 ? 'No Content' : request.statusText,
+        headers: responseHeaders,
+        config: config,
+        request: request
+      };
+
+      settle(resolve, reject, response);
+
+      // Clean up request
+      request = null;
+    };
+
+    // Handle low level network errors
+    request.onerror = function handleError() {
+      // Real errors are hidden from us by the browser
+      // onerror should only fire if it's a network error
+      reject(createError('Network Error', config, null, request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Handle timeout
+    request.ontimeout = function handleTimeout() {
+      reject(createError('timeout of ' + config.timeout + 'ms exceeded', config, 'ECONNABORTED',
+        request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Add xsrf header
+    // This is only done if running in a standard browser environment.
+    // Specifically not if we're in a web worker, or react-native.
+    if (utils.isStandardBrowserEnv()) {
+      var cookies = __webpack_require__(552);
+
+      // Add xsrf header
+      var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
+          cookies.read(config.xsrfCookieName) :
+          undefined;
+
+      if (xsrfValue) {
+        requestHeaders[config.xsrfHeaderName] = xsrfValue;
+      }
+    }
+
+    // Add headers to the request
+    if ('setRequestHeader' in request) {
+      utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+        if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
+          // Remove Content-Type if data is undefined
+          delete requestHeaders[key];
+        } else {
+          // Otherwise add header to the request
+          request.setRequestHeader(key, val);
+        }
+      });
+    }
+
+    // Add withCredentials to request if needed
+    if (config.withCredentials) {
+      request.withCredentials = true;
+    }
+
+    // Add responseType to request if needed
+    if (config.responseType) {
+      try {
+        request.responseType = config.responseType;
+      } catch (e) {
+        // Expected DOMException thrown by browsers not compatible XMLHttpRequest Level 2.
+        // But, this can be suppressed for 'json' type as it can be parsed by default 'transformResponse' function.
+        if (config.responseType !== 'json') {
+          throw e;
+        }
+      }
+    }
+
+    // Handle progress if needed
+    if (typeof config.onDownloadProgress === 'function') {
+      request.addEventListener('progress', config.onDownloadProgress);
+    }
+
+    // Not all browsers support upload events
+    if (typeof config.onUploadProgress === 'function' && request.upload) {
+      request.upload.addEventListener('progress', config.onUploadProgress);
+    }
+
+    if (config.cancelToken) {
+      // Handle cancellation
+      config.cancelToken.promise.then(function onCanceled(cancel) {
+        if (!request) {
+          return;
+        }
+
+        request.abort();
+        reject(cancel);
+        // Clean up request
+        request = null;
+      });
+    }
+
+    if (requestData === undefined) {
+      requestData = null;
+    }
+
+    // Send the request
+    request.send(requestData);
+  });
+};
+
+
+/***/ }),
+
+/***/ 536:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var enhanceError = __webpack_require__(547);
+
+/**
+ * Create an Error with the specified message, config, error code, request and response.
+ *
+ * @param {string} message The error message.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The created error.
+ */
+module.exports = function createError(message, config, code, request, response) {
+  var error = new Error(message);
+  return enhanceError(error, config, code, request, response);
+};
+
+
+/***/ }),
+
+/***/ 537:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function isCancel(value) {
+  return !!(value && value.__CANCEL__);
+};
+
+
+/***/ }),
+
+/***/ 538:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * A `Cancel` is an object that is thrown when an operation is canceled.
+ *
+ * @class
+ * @param {string=} message The message.
+ */
+function Cancel(message) {
+  this.message = message;
+}
+
+Cancel.prototype.toString = function toString() {
+  return 'Cancel' + (this.message ? ': ' + this.message : '');
+};
+
+Cancel.prototype.__CANCEL__ = true;
+
+module.exports = Cancel;
+
+
+/***/ }),
+
+/***/ 539:
+/***/ (function(module, exports) {
 
 /*!
- * Copyright (c) 2016 Naufal Rabbani (http://github.com/BosNaufal),
- * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
- * ,
- * ,Vue 2 Scrollbar @ Version 0.0.2,
- * 
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
  */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["Vue2Scrollbar"] = factory();
-	else
-		root["Vue2Scrollbar"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "../dist/";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
 
-/* globals __VUE_SSR_CONTEXT__ */
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
 
-// this module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
 
-module.exports = function normalizeComponent (
-  rawScriptExports,
-  compiledTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier /* server only */
-) {
-  var esModule
-  var scriptExports = rawScriptExports = rawScriptExports || {}
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
 
-  // ES6 modules interop
-  var type = typeof rawScriptExports.default
-  if (type === 'object' || type === 'function') {
-    esModule = rawScriptExports
-    scriptExports = rawScriptExports.default
+
+/***/ }),
+
+/***/ 542:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(543);
+
+/***/ }),
+
+/***/ 543:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+var bind = __webpack_require__(534);
+var Axios = __webpack_require__(544);
+var defaults = __webpack_require__(532);
+
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ * @return {Axios} A new instance of Axios
+ */
+function createInstance(defaultConfig) {
+  var context = new Axios(defaultConfig);
+  var instance = bind(Axios.prototype.request, context);
+
+  // Copy axios.prototype to instance
+  utils.extend(instance, Axios.prototype, context);
+
+  // Copy context to instance
+  utils.extend(instance, context);
+
+  return instance;
+}
+
+// Create the default instance to be exported
+var axios = createInstance(defaults);
+
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+
+// Factory for creating new instances
+axios.create = function create(instanceConfig) {
+  return createInstance(utils.merge(defaults, instanceConfig));
+};
+
+// Expose Cancel & CancelToken
+axios.Cancel = __webpack_require__(538);
+axios.CancelToken = __webpack_require__(558);
+axios.isCancel = __webpack_require__(537);
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+axios.spread = __webpack_require__(559);
+
+module.exports = axios;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = axios;
+
+
+/***/ }),
+
+/***/ 544:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaults = __webpack_require__(532);
+var utils = __webpack_require__(524);
+var InterceptorManager = __webpack_require__(553);
+var dispatchRequest = __webpack_require__(554);
+
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ */
+function Axios(instanceConfig) {
+  this.defaults = instanceConfig;
+  this.interceptors = {
+    request: new InterceptorManager(),
+    response: new InterceptorManager()
+  };
+}
+
+/**
+ * Dispatch a request
+ *
+ * @param {Object} config The config specific for this request (merged with this.defaults)
+ */
+Axios.prototype.request = function request(config) {
+  /*eslint no-param-reassign:0*/
+  // Allow for axios('example/url'[, config]) a la fetch API
+  if (typeof config === 'string') {
+    config = utils.merge({
+      url: arguments[0]
+    }, arguments[1]);
   }
 
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
+  config = utils.merge(defaults, {method: 'get'}, this.defaults, config);
+  config.method = config.method.toLowerCase();
 
-  // render functions
-  if (compiledTemplate) {
-    options.render = compiledTemplate.render
-    options.staticRenderFns = compiledTemplate.staticRenderFns
+  // Hook up interceptors middleware
+  var chain = [dispatchRequest, undefined];
+  var promise = Promise.resolve(config);
+
+  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+    chain.unshift(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+    chain.push(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  while (chain.length) {
+    promise = promise.then(chain.shift(), chain.shift());
   }
 
-  // scopedId
-  if (scopeId) {
-    options._scopeId = scopeId
+  return promise;
+};
+
+// Provide aliases for supported request methods
+utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url
+    }));
+  };
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, data, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+});
+
+module.exports = Axios;
+
+
+/***/ }),
+
+/***/ 545:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+  utils.forEach(headers, function processHeader(value, name) {
+    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+      headers[normalizedName] = value;
+      delete headers[name];
+    }
+  });
+};
+
+
+/***/ }),
+
+/***/ 546:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var createError = __webpack_require__(536);
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */
+module.exports = function settle(resolve, reject, response) {
+  var validateStatus = response.config.validateStatus;
+  // Note: status is not exposed by XDomainRequest
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(createError(
+      'Request failed with status code ' + response.status,
+      response.config,
+      null,
+      response.request,
+      response
+    ));
+  }
+};
+
+
+/***/ }),
+
+/***/ 547:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */
+module.exports = function enhanceError(error, config, code, request, response) {
+  error.config = config;
+  if (code) {
+    error.code = code;
+  }
+  error.request = request;
+  error.response = response;
+  return error;
+};
+
+
+/***/ }),
+
+/***/ 548:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+function encode(val) {
+  return encodeURIComponent(val).
+    replace(/%40/gi, '@').
+    replace(/%3A/gi, ':').
+    replace(/%24/g, '$').
+    replace(/%2C/gi, ',').
+    replace(/%20/g, '+').
+    replace(/%5B/gi, '[').
+    replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
   }
 
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else if (utils.isURLSearchParams(params)) {
+    serializedParams = params.toString();
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
       }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      } else {
+        val = [val];
       }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+
+/***/ }),
+
+/***/ 549:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+// Headers whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+var ignoreDuplicateOf = [
+  'age', 'authorization', 'content-length', 'content-type', 'etag',
+  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
+  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
+  'referer', 'retry-after', 'user-agent'
+];
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) { return parsed; }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
+        return;
+      }
+      if (key === 'set-cookie') {
+        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
+      } else {
+        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
       }
     }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = injectStyles
+  });
+
+  return parsed;
+};
+
+
+/***/ }),
+
+/***/ 550:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs have full support of the APIs needed to test
+  // whether the request URL is of the same origin as current location.
+  (function standardBrowserEnv() {
+    var msie = /(msie|trident)/i.test(navigator.userAgent);
+    var urlParsingNode = document.createElement('a');
+    var originURL;
+
+    /**
+    * Parse a URL to discover it's components
+    *
+    * @param {String} url The URL to be parsed
+    * @returns {Object}
+    */
+    function resolveURL(url) {
+      var href = url;
+
+      if (msie) {
+        // IE needs attribute set twice to normalize properties
+        urlParsingNode.setAttribute('href', href);
+        href = urlParsingNode.href;
+      }
+
+      urlParsingNode.setAttribute('href', href);
+
+      // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+      return {
+        href: urlParsingNode.href,
+        protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+        host: urlParsingNode.host,
+        search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+        hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+        hostname: urlParsingNode.hostname,
+        port: urlParsingNode.port,
+        pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+                  urlParsingNode.pathname :
+                  '/' + urlParsingNode.pathname
+      };
+    }
+
+    originURL = resolveURL(window.location.href);
+
+    /**
+    * Determine if a URL shares the same origin as the current location
+    *
+    * @param {String} requestURL The URL to test
+    * @returns {boolean} True if URL shares the same origin, otherwise false
+    */
+    return function isURLSameOrigin(requestURL) {
+      var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+      return (parsed.protocol === originURL.protocol &&
+            parsed.host === originURL.host);
+    };
+  })() :
+
+  // Non standard browser envs (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return function isURLSameOrigin() {
+      return true;
+    };
+  })()
+);
+
+
+/***/ }),
+
+/***/ 551:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+function E() {
+  this.message = 'String contains an invalid character';
+}
+E.prototype = new Error;
+E.prototype.code = 5;
+E.prototype.name = 'InvalidCharacterError';
+
+function btoa(input) {
+  var str = String(input);
+  var output = '';
+  for (
+    // initialize result and counter
+    var block, charCode, idx = 0, map = chars;
+    // if the next str index does not exist:
+    //   change the mapping table to "="
+    //   check if d has no fractional digits
+    str.charAt(idx | 0) || (map = '=', idx % 1);
+    // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+    output += map.charAt(63 & block >> 8 - idx % 1 * 8)
+  ) {
+    charCode = str.charCodeAt(idx += 3 / 4);
+    if (charCode > 0xFF) {
+      throw new E();
+    }
+    block = block << 8 | charCode;
+  }
+  return output;
+}
+
+module.exports = btoa;
+
+
+/***/ }),
+
+/***/ 552:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs support document.cookie
+  (function standardBrowserEnv() {
+    return {
+      write: function write(name, value, expires, path, domain, secure) {
+        var cookie = [];
+        cookie.push(name + '=' + encodeURIComponent(value));
+
+        if (utils.isNumber(expires)) {
+          cookie.push('expires=' + new Date(expires).toGMTString());
+        }
+
+        if (utils.isString(path)) {
+          cookie.push('path=' + path);
+        }
+
+        if (utils.isString(domain)) {
+          cookie.push('domain=' + domain);
+        }
+
+        if (secure === true) {
+          cookie.push('secure');
+        }
+
+        document.cookie = cookie.join('; ');
+      },
+
+      read: function read(name) {
+        var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+        return (match ? decodeURIComponent(match[3]) : null);
+      },
+
+      remove: function remove(name) {
+        this.write(name, '', Date.now() - 86400000);
+      }
+    };
+  })() :
+
+  // Non standard browser env (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return {
+      write: function write() {},
+      read: function read() { return null; },
+      remove: function remove() {}
+    };
+  })()
+);
+
+
+/***/ }),
+
+/***/ 553:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+function InterceptorManager() {
+  this.handlers = [];
+}
+
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */
+InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+  this.handlers.push({
+    fulfilled: fulfilled,
+    rejected: rejected
+  });
+  return this.handlers.length - 1;
+};
+
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */
+InterceptorManager.prototype.eject = function eject(id) {
+  if (this.handlers[id]) {
+    this.handlers[id] = null;
+  }
+};
+
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */
+InterceptorManager.prototype.forEach = function forEach(fn) {
+  utils.forEach(this.handlers, function forEachHandler(h) {
+    if (h !== null) {
+      fn(h);
+    }
+  });
+};
+
+module.exports = InterceptorManager;
+
+
+/***/ }),
+
+/***/ 554:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+var transformData = __webpack_require__(555);
+var isCancel = __webpack_require__(537);
+var defaults = __webpack_require__(532);
+var isAbsoluteURL = __webpack_require__(556);
+var combineURLs = __webpack_require__(557);
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+function throwIfCancellationRequested(config) {
+  if (config.cancelToken) {
+    config.cancelToken.throwIfRequested();
+  }
+}
+
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */
+module.exports = function dispatchRequest(config) {
+  throwIfCancellationRequested(config);
+
+  // Support baseURL config
+  if (config.baseURL && !isAbsoluteURL(config.url)) {
+    config.url = combineURLs(config.baseURL, config.url);
   }
 
-  if (hook) {
-    var functional = options.functional
-    var existing = functional
-      ? options.render
-      : options.beforeCreate
-    if (!functional) {
-      // inject component registration as beforeCreate hook
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    } else {
-      // register for functioal component in vue file
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return existing(h, context)
+  // Ensure headers exist
+  config.headers = config.headers || {};
+
+  // Transform request data
+  config.data = transformData(
+    config.data,
+    config.headers,
+    config.transformRequest
+  );
+
+  // Flatten headers
+  config.headers = utils.merge(
+    config.headers.common || {},
+    config.headers[config.method] || {},
+    config.headers || {}
+  );
+
+  utils.forEach(
+    ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
+    function cleanHeaderConfig(method) {
+      delete config.headers[method];
+    }
+  );
+
+  var adapter = config.adapter || defaults.adapter;
+
+  return adapter(config).then(function onAdapterResolution(response) {
+    throwIfCancellationRequested(config);
+
+    // Transform response data
+    response.data = transformData(
+      response.data,
+      response.headers,
+      config.transformResponse
+    );
+
+    return response;
+  }, function onAdapterRejection(reason) {
+    if (!isCancel(reason)) {
+      throwIfCancellationRequested(config);
+
+      // Transform response data
+      if (reason && reason.response) {
+        reason.response.data = transformData(
+          reason.response.data,
+          reason.response.headers,
+          config.transformResponse
+        );
       }
     }
+
+    return Promise.reject(reason);
+  });
+};
+
+
+/***/ }),
+
+/***/ 555:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(524);
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */
+module.exports = function transformData(data, headers, fns) {
+  /*eslint no-param-reassign:0*/
+  utils.forEach(fns, function transform(fn) {
+    data = fn(data, headers);
+  });
+
+  return data;
+};
+
+
+/***/ }),
+
+/***/ 556:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+module.exports = function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+};
+
+
+/***/ }),
+
+/***/ 557:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */
+module.exports = function combineURLs(baseURL, relativeURL) {
+  return relativeURL
+    ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
+    : baseURL;
+};
+
+
+/***/ }),
+
+/***/ 558:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var Cancel = __webpack_require__(538);
+
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @class
+ * @param {Function} executor The executor function.
+ */
+function CancelToken(executor) {
+  if (typeof executor !== 'function') {
+    throw new TypeError('executor must be a function.');
   }
 
+  var resolvePromise;
+  this.promise = new Promise(function promiseExecutor(resolve) {
+    resolvePromise = resolve;
+  });
+
+  var token = this;
+  executor(function cancel(message) {
+    if (token.reason) {
+      // Cancellation has already been requested
+      return;
+    }
+
+    token.reason = new Cancel(message);
+    resolvePromise(token.reason);
+  });
+}
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+  if (this.reason) {
+    throw this.reason;
+  }
+};
+
+/**
+ * Returns an object that contains a new `CancelToken` and a function that, when called,
+ * cancels the `CancelToken`.
+ */
+CancelToken.source = function source() {
+  var cancel;
+  var token = new CancelToken(function executor(c) {
+    cancel = c;
+  });
   return {
-    esModule: esModule,
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__ = __webpack_require__(9);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/vue-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vue-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7ec59f76", Component.options)
-  } else {
-    hotAPI.reload("data-v-7ec59f76", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    draggingFromParent: Boolean,
-    scrolling: Number,
-    wrapper: Object,
-    area: Object,
-    onChangePosition: Function,
-    onDragging: Function,
-    onStopDrag: Function
-  },
-
-  data: function data() {
-    return {
-      width: 0,
-      dragging: false,
-      start: 0
-    };
-  },
-
-
-  watch: {
-    'wrapper.width': function wrapperWidth(val, old) {
-      this.calculateSize(this);
-    },
-    'area.width': function areaWidth(val, old) {
-      this.calculateSize(this);
-    }
-  },
-
-  methods: {
-    startDrag: function startDrag(e) {
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      e = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Prepare To Drag
-      this.dragging = true;
-      this.start = e.clientX;
-    },
-    onDrag: function onDrag(e) {
-
-      if (this.dragging) {
-
-        // Make The Parent being in the Dragging State
-        this.onDragging();
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        e = e.changedTouches ? e.changedTouches[0] : e;
-
-        var xMovement = e.clientX - this.start;
-        var xMovementPercentage = xMovement / this.wrapper.width * 100;
-
-        // Update the last e.clientX
-        this.start = e.clientX;
-
-        // The next Horizontal Value will be
-        var next = this.scrolling + xMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'horizontal');
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      if (this.dragging) {
-        // Parent Should Change the Dragging State
-        this.onStopDrag();
-        this.dragging = false;
-      }
-    },
-    jump: function jump(e) {
-
-      var isContainer = e.target === this.$refs.container;
-
-      if (isContainer) {
-
-        // Get the Element Position
-        var position = this.$refs.scrollbar.getBoundingClientRect();
-
-        // Calculate the horizontal Movement
-        var xMovement = e.clientX - position.left;
-        var centerize = this.width / 2;
-        var xMovementPercentage = xMovement / this.wrapper.width * 100 - centerize;
-
-        // Update the last e.clientX
-        this.start = e.clientX;
-
-        // The next Horizontal Value will be
-        var next = this.scrolling + xMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'horizontal');
-      }
-    },
-    calculateSize: function calculateSize(source) {
-      // Scrollbar Width
-      this.width = source.wrapper.width / source.area.width * 100;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize(this);
-
-    // Put the Listener
-    document.addEventListener("mousemove", this.onDrag);
-    document.addEventListener("touchmove", this.onDrag);
-    document.addEventListener("mouseup", this.stopDrag);
-    document.addEventListener("touchend", this.stopDrag);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove the Listener
-    document.removeEventListener("mousemove", this.onDrag);
-    document.removeEventListener("touchmove", this.onDrag);
-    document.removeEventListener("mouseup", this.stopDrag);
-    document.removeEventListener("touchend", this.stopDrag);
-  }
+    token: token,
+    cancel: cancel
+  };
 };
 
+module.exports = CancelToken;
+
+
 /***/ }),
-/* 3 */
+
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    draggingFromParent: Boolean,
-    scrolling: Number,
-    wrapper: Object,
-    area: Object,
-    onChangePosition: Function,
-    onDragging: Function,
-    onStopDrag: Function
-  },
-
-  data: function data() {
-    return {
-      height: 0,
-      dragging: false,
-      start: 0
-    };
-  },
-
-
-  watch: {
-    'wrapper.height': function wrapperHeight(val, old) {
-      this.calculateSize(this);
-    },
-    'area.height': function areaHeight(val, old) {
-      this.calculateSize(this);
-    }
-  },
-
-  methods: {
-    startDrag: function startDrag(e) {
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      e = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Prepare to drag
-      this.dragging = true, this.start = e.clientY;
-    },
-    onDrag: function onDrag(e) {
-
-      if (this.dragging) {
-
-        // Make The Parent being in the Dragging State
-        this.onDragging();
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        e = e.changedTouches ? e.changedTouches[0] : e;
-
-        var yMovement = e.clientY - this.start;
-        var yMovementPercentage = yMovement / this.wrapper.height * 100;
-
-        // Update the last e.clientY
-        this.start = e.clientY;
-
-        // The next Vertical Value will be
-        var next = this.scrolling + yMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'vertical');
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      if (this.dragging) {
-        // Parent Should Change the Dragging State
-        this.onStopDrag();
-        this.dragging = false;
-      }
-    },
-    jump: function jump(e) {
-
-      var isContainer = e.target === this.$refs.container;
-
-      if (isContainer) {
-
-        // Get the Element Position
-        var position = this.$refs.scrollbar.getBoundingClientRect();
-
-        // Calculate the vertical Movement
-        var yMovement = e.clientY - position.top;
-        var centerize = this.height / 2;
-        var yMovementPercentage = yMovement / this.wrapper.height * 100 - centerize;
-
-        // Update the last e.clientY
-        this.start = e.clientY;
-
-        // The next Vertical Value will be
-        var next = this.scrolling + yMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'vertical');
-      }
-    },
-    calculateSize: function calculateSize(source) {
-      // Scrollbar Height
-      this.height = source.wrapper.height / source.area.height * 100;
-    },
-    getSize: function getSize() {
-      // The Elements
-      var $scrollArea = this.$refs.container.parentElement;
-      var $scrollWrapper = $scrollArea.parentElement;
-
-      // Get new Elements Size
-      var elementSize = {
-        // Scroll Area Height and Width
-        scrollAreaHeight: $scrollArea.children[0].clientHeight,
-        scrollAreaWidth: $scrollArea.children[0].clientWidth,
-
-        // Scroll Wrapper Height and Width
-        scrollWrapperHeight: $scrollWrapper.clientHeight,
-        scrollWrapperWidth: $scrollWrapper.clientWidth
-      };
-      return elementSize;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize(this);
-
-    // Put the Listener
-    document.addEventListener("mousemove", this.onDrag);
-    document.addEventListener("touchmove", this.onDrag);
-    document.addEventListener("mouseup", this.stopDrag);
-    document.addEventListener("touchend", this.stopDrag);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove the Listener
-    document.removeEventListener("mousemove", this.onDrag);
-    document.removeEventListener("touchmove", this.onDrag);
-    document.removeEventListener("mouseup", this.stopDrag);
-    document.removeEventListener("touchend", this.stopDrag);
-  }
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */
+module.exports = function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
 };
 
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _verticalScrollbar = __webpack_require__(7);
-
-var _verticalScrollbar2 = _interopRequireDefault(_verticalScrollbar);
-
-var _horizontalScrollbar = __webpack_require__(6);
-
-var _horizontalScrollbar2 = _interopRequireDefault(_horizontalScrollbar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    classes: String,
-    styles: Object,
-    speed: {
-      type: Number,
-      default: 53
-    },
-    onMaxScroll: Function
-  },
-
-  components: {
-    VerticalScrollbar: _verticalScrollbar2.default,
-    HorizontalScrollbar: _horizontalScrollbar2.default
-  },
-
-  data: function data() {
-    return {
-      ready: false,
-      top: 0,
-      left: 0,
-      scrollAreaHeight: null,
-      scrollAreaWidth: null,
-      scrollWrapperHeight: null,
-      scrollWrapperWidth: null,
-      vMovement: 0,
-      hMovement: 0,
-      dragging: false,
-      start: { y: 0, x: 0 },
-      allowBodyScroll: false
-    };
-  },
-
-
-  methods: {
-    scroll: function scroll(e) {
-      var _this = this;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Set the wheel step
-        var num = _this.speed;
-
-        // DOM events
-        var shifted = e.shiftKey;
-        var scrollY = e.deltaY > 0 ? num : -num;
-        var scrollX = e.deltaX > 0 ? num : -num;
-
-        // Fix Mozilla Shifted Wheel~
-        if (shifted && e.deltaX == 0) scrollX = e.deltaY > 0 ? num : -num;
-
-        // Next Value
-        var nextY = _this.top + scrollY;
-        var nextX = _this.left + scrollX;
-
-        // Is it Scrollable?
-        var canScrollY = _this.scrollAreaHeight > _this.scrollWrapperHeight;
-        var canScrollX = _this.scrollAreaWidth > _this.scrollWrapperWidth;
-
-        // Vertical Scrolling
-        if (canScrollY && !shifted) _this.normalizeVertical(nextY);
-
-        // Horizontal Scrolling
-        if (shifted && canScrollX) _this.normalizeHorizontal(nextX);
-      });
-
-      // prevent Default only if scrolled content is not at the top/bottom
-      if (!this.allowBodyScroll) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    },
-
-
-    // DRAG EVENT JUST FOR TOUCH DEVICE~
-    startDrag: function startDrag(e) {
-      var _this2 = this;
-
-      this.touchEvent = e;
-
-      var evt = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Prepare to drag
-        _this2.dragging = true, _this2.start = { y: evt.pageY, x: evt.pageX };
-      });
-    },
-    onDrag: function onDrag(e) {
-      if (this.dragging) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        // Prevent Click Event When it dragging
-        if (this.touchEvent) {
-          this.touchEvent.preventDefault();
-          this.touchEvent.stopPropagation();
-        }
-
-        var evt = e.changedTouches ? e.changedTouches[0] : e;
-
-        // Invers the Movement
-        var yMovement = this.start.y - evt.clientY;
-        var xMovement = this.start.x - evt.clientX;
-
-        // Update the last e.client
-        this.start = { y: evt.clientY, x: evt.clientX
-
-          // The next Vertical Value will be
-        };var nextY = this.top + yMovement;
-        var nextX = this.left + xMovement;
-
-        this.normalizeVertical(nextY);
-        this.normalizeHorizontal(nextX);
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      this.dragging = false;
-      this.touchEvent = false;
-    },
-    scrollToY: function scrollToY(y) {
-      this.normalizeVertical(y);
-    },
-    scrollToX: function scrollToX(x) {
-      this.normalizeHorizontal(x);
-    },
-    normalizeVertical: function normalizeVertical(next) {
-      var elementSize = this.getSize();
-
-      // Vertical Scrolling
-      var lowerEnd = elementSize.scrollAreaHeight - elementSize.scrollWrapperHeight;
-
-      // Max Scroll Down
-      var maxBottom = next > lowerEnd;
-      if (maxBottom) next = lowerEnd;
-
-      // Max Scroll Up
-      var maxTop = next < 0;
-      if (maxTop) next = 0;
-
-      // Update the Vertical Value if it's needed
-      var shouldScroll = this.top !== next;
-      this.allowBodyScroll = !shouldScroll;
-      if (shouldScroll) {
-        this.top = next, this.vMovement = next / elementSize.scrollAreaHeight * 100;
-
-        if (this.onMaxScroll && (maxTop || maxBottom)) {
-          this.onMaxScroll({ top: maxTop, bottom: maxBottom, right: false, left: false });
-        }
-      }
-    },
-    normalizeHorizontal: function normalizeHorizontal(next) {
-      var elementSize = this.getSize();
-
-      // Horizontal Scrolling
-      var rightEnd = elementSize.scrollAreaWidth - this.scrollWrapperWidth;
-
-      // Max Scroll Right
-      var maxRight = next > rightEnd;
-      if (maxRight) next = rightEnd;
-
-      // Max Scroll Left
-      var maxLeft = next < 0;
-      if (next < 0) next = 0;
-
-      // Update the Horizontal Value
-      var shouldScroll = this.left !== next;
-      this.allowBodyScroll = !shouldScroll;
-      if (shouldScroll) {
-        this.left = next, this.hMovement = next / elementSize.scrollAreaWidth * 100;
-
-        if (this.onMaxScroll && (maxRight || maxLeft)) {
-          this.onMaxScroll({ right: maxRight, left: maxLeft, top: false, bottom: false });
-        }
-      }
-    },
-    handleChangePosition: function handleChangePosition(movement, orientation) {
-      var _this3 = this;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Convert Percentage to Pixel
-        var next = movement / 100;
-        if (orientation == 'vertical') _this3.normalizeVertical(next * _this3.scrollAreaHeight);
-        if (orientation == 'horizontal') _this3.normalizeHorizontal(next * _this3.scrollAreaWidth);
-      });
-    },
-    handleScrollbarDragging: function handleScrollbarDragging() {
-      this.dragging = true;
-    },
-    handleScrollbarStopDrag: function handleScrollbarStopDrag() {
-      this.dragging = false;
-    },
-    getSize: function getSize() {
-      // The Elements
-      var $scrollArea = this.$refs.scrollArea;
-      var $scrollWrapper = this.$refs.scrollWrapper;
-
-      // Get new Elements Size
-      var elementSize = {
-        // Scroll Area Height and Width
-        scrollAreaHeight: $scrollArea.children[0].clientHeight,
-        scrollAreaWidth: $scrollArea.children[0].clientWidth,
-
-        // Scroll Wrapper Height and Width
-        scrollWrapperHeight: $scrollWrapper.clientHeight,
-        scrollWrapperWidth: $scrollWrapper.clientWidth
-      };
-      return elementSize;
-    },
-    calculateSize: function calculateSize(cb) {
-      if (typeof cb !== 'function') cb = null;
-
-      var elementSize = this.getSize();
-
-      if (elementSize.scrollWrapperHeight !== this.scrollWrapperHeight || elementSize.scrollWrapperWidth !== this.scrollWrapperWidth || elementSize.scrollAreaHeight !== this.scrollAreaHeight || elementSize.scrollAreaWidth !== this.scrollAreaWidth) {
-
-        // Scroll Area Height and Width
-        this.scrollAreaHeight = elementSize.scrollAreaHeight, this.scrollAreaWidth = elementSize.scrollAreaWidth,
-
-        // Scroll Wrapper Height and Width
-        this.scrollWrapperHeight = elementSize.scrollWrapperHeight, this.scrollWrapperWidth = elementSize.scrollWrapperWidth,
-
-        // Make sure The wrapper is Ready, then render the scrollbar
-        this.ready = true;
-
-        return cb ? cb() : false;
-      } else return cb ? cb() : false;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize();
-
-    // Attach The Event for Responsive View~
-    window.addEventListener('resize', this.calculateSize);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove Event
-    window.removeEventListener('resize', this.calculateSize);
-  }
-};
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _vueScrollbar = __webpack_require__(1);
-
-var _vueScrollbar2 = _interopRequireDefault(_vueScrollbar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = _vueScrollbar2.default;
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__ = __webpack_require__(8);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/horizontal-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] horizontal-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03d7e587", Component.options)
-  } else {
-    hotAPI.reload("data-v-03d7e587", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__ = __webpack_require__(10);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/vertical-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vertical-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-9fd7644e", Component.options)
-  } else {
-    hotAPI.reload("data-v-9fd7644e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.width < 100) ? _c('div', {
-    ref: "container",
-    staticClass: "vue-scrollbar__scrollbar-horizontal",
-    on: {
-      "click": _vm.jump
-    }
-  }, [_c('div', {
-    ref: "scrollbar",
-    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
-    style: ({
-      width: this.width + '%',
-      left: this.scrolling + '%'
-    }),
-    on: {
-      "touchstart": _vm.startDrag,
-      "mousedown": _vm.startDrag
-    }
-  })]) : _vm._e()])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-03d7e587", esExports)
-  }
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    ref: "scrollWrapper",
-    class: 'vue-scrollbar__wrapper' + (this.classes ? ' ' + this.classes : ''),
-    style: (this.styles),
-    on: {
-      "click": _vm.calculateSize
-    }
-  }, [_c('div', {
-    ref: "scrollArea",
-    class: 'vue-scrollbar__area' + (this.dragging ? ' ' : ' vue-scrollbar-transition'),
-    style: ({
-      marginTop: this.top * -1 + 'px',
-      marginLeft: this.left * -1 + 'px'
-    }),
-    on: {
-      "wheel": _vm.scroll,
-      "touchstart": _vm.startDrag,
-      "touchmove": _vm.onDrag,
-      "touchend": _vm.stopDrag
-    }
-  }, [_vm._t("default"), _vm._v(" "), (_vm.ready) ? _c('vertical-scrollbar', {
-    attrs: {
-      "area": {
-        height: _vm.scrollAreaHeight
-      },
-      "wrapper": {
-        height: _vm.scrollWrapperHeight
-      },
-      "scrolling": _vm.vMovement,
-      "dragging-from-parent": _vm.dragging,
-      "on-change-position": _vm.handleChangePosition,
-      "on-dragging": _vm.handleScrollbarDragging,
-      "on-stop-drag": _vm.handleScrollbarStopDrag
-    }
-  }) : _vm._e(), _vm._v(" "), (_vm.ready) ? _c('horizontal-scrollbar', {
-    attrs: {
-      "area": {
-        width: _vm.scrollAreaWidth
-      },
-      "wrapper": {
-        width: _vm.scrollWrapperWidth
-      },
-      "scrolling": _vm.hMovement,
-      "dragging-from-parent": _vm.dragging,
-      "on-change-position": _vm.handleChangePosition,
-      "on-dragging": _vm.handleScrollbarDragging,
-      "on-stop-drag": _vm.handleScrollbarStopDrag
-    }
-  }) : _vm._e()], 2)])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7ec59f76", esExports)
-  }
-}
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.height < 100) ? _c('div', {
-    ref: "container",
-    staticClass: "vue-scrollbar__scrollbar-vertical",
-    on: {
-      "click": _vm.jump
-    }
-  }, [_c('div', {
-    ref: "scrollbar",
-    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
-    style: ({
-      height: _vm.height + '%',
-      top: _vm.scrolling + '%'
-    }),
-    on: {
-      "touchstart": _vm.startDrag,
-      "mousedown": _vm.startDrag
-    }
-  })]) : _vm._e()])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-9fd7644e", esExports)
-  }
-}
-
-/***/ })
-/******/ ]);
-});
 
 /***/ })
 

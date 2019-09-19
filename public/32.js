@@ -1,22 +1,22 @@
 webpackJsonp([32],{
 
-/***/ 1729:
+/***/ 1204:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1730);
+var content = __webpack_require__(1205);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6ae3be5d", content, false, {});
+var update = __webpack_require__(26)("00cc5980", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6998e6c6\",\"scoped\":false,\"hasInlineConfig\":true}!./flot_charts.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6998e6c6\",\"scoped\":false,\"hasInlineConfig\":true}!./flot_charts.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index3.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index3.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1730:
+/***/ 1205:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,36 +35,65 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.flotChart {\n    width    : 100%;\n    height   : 320px;\n    position : relative;\n}\n.flotChart1 {\n    width    : 100%;\n    height   : 300px;\n    position : relative;\n}\n#basicFlotLegend .legendLabel,\n#basicFlotLegend-barchart .legendLabel,\n#basicFlotLegend-stac .legendLabel {\n    padding-left  : 4px;\n    padding-right : 6px;\n}\n#basicFlotLegend1 .legendLabel {\n    padding-left  : 4px;\n    padding-right : 6px;\n}\n#area-chart .legendLabel,\n#chart-spline .legendLabel {\n    padding-left  : 4px;\n    padding-right : 3px;\n}\n#area-chart .legendColorBox,\n#chart-spline .legendColorBox {\n    padding-top : 3px;\n}\n#tooltip {\n    clear            : both;\n    z-index          : 100;\n    background-color : #736e6e;\n    padding          : 5px;\n    color            : #fff;\n}\n#tooltip .label {\n    clear         : both;\n    display       : block;\n    margin-bottom : 2px;\n}\n.card.body-bg .card-body{\n    background : #66ccff;\n}\n.flotChart2 {\n    width  : 100%;\n    height : 365px;\n}\n.flotChart3 {\n    width  : 100%;\n    height : 250px;\n}\n@media (max-width : 425px) {\n#bar-chart-stacked .flot-x-axis {\n        font-size : 9px;\n}\n}\n.flotTip{\n    display: none !important;\n}\n", ""]);
+exports.push([module.i, "\n.right {\n    float: right;\n    position: absolute;\n    top: 4rem;\n    right: 5rem;\n}\n.left {\n    float: left;\n    position: absolute;\n    top: 4rem;\n    left: 5rem;\n}\n.user-country img{\n    height: 44px;\n    width: 60px !important;\n}\n.user-country td{\n    vertical-align: middle;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1731:
+/***/ 1206:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1207);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("10d7ebf4", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./index3.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./index3.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1207:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.card .card-body[data-v-bdc9e4c6] {\n    padding: 0;\n}\n.card-alignment .card-title[data-v-bdc9e4c6] {\n    padding: 2rem 0 6rem;\n}\n.card-body img[data-v-bdc9e4c6] {\n    width: 100px;\n}\n.list-group-item .section[data-v-bdc9e4c6] {\n    border-right: 1px solid rgba(0, 0, 0, 0.125);\n}\n.slick-slide img[data-v-bdc9e4c6] {\n    display: unset;\n}\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(524);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__ = __webpack_require__(664);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__ = __webpack_require__(665);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__ = __webpack_require__(1732);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__ = __webpack_require__(666);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__ = __webpack_require__(667);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__ = __webpack_require__(1733);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__ = __webpack_require__(1734);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__ = __webpack_require__(1735);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_slick__ = __webpack_require__(1209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__ = __webpack_require__(1210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__);
 //
 //
 //
@@ -146,10 +175,190 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -157,2627 +366,3330 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "flot_charts",
+
+    name: 'index3',
     components: {
-        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
+        Slick: __WEBPACK_IMPORTED_MODULE_1_vue_slick__["a" /* default */]
     },
-    mounted: function mounted() {
-        "use strict";
+    data: function data() {
+        return {
+            slickOptions: {
+                slidesToShow: 1,
+                arrows: true,
+                nextArrow: '<span class="right"><i class="fa fa-chevron-right nextArrowBtn"></i></span>',
+                prevArrow: '<span class="left"><i class="fa fa-chevron-left preArrowBtn"></i></span>'
+            }
+        };
+    },
 
-        $(document).ready(function () {
-            /* line chart */
+    // All slick methods can be used too, example here
+    methods: {
+        next: function next() {
+            this.$refs.slick.next();
+        },
+        prev: function prev() {
+            this.$refs.slick.prev();
+        },
+        reInit: function reInit() {
+            var _this = this;
 
-            function showTooltipStats(x, y, contents) {
-                $('<div id="tooltip" class="tooltipflot">' + contents + '</div>').css({
-                    position: 'absolute',
-                    display: 'none',
-                    top: y + 5,
-                    left: x + 5
-                }).appendTo("body").fadeIn(200);
+            // Helpful if you have to deal with v-for to update dynamic lists
+            this.$nextTick(function () {
+                _this.$refs.slick.reSlick();
+            });
+        }
+    }
+});
+
+/***/ }),
+
+/***/ 1209:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+//
+
+// Check if the request came from the browser and is not server rendered
+if (typeof window !== 'undefined') {
+  Promise.resolve().then(function () { return slick$1; });
+}
+
+var script = {
+  props: {
+    options: {
+      type: Object,
+      default: function() {
+        return {};
+      },
+    },
+  },
+
+  mounted: function() {
+    this.create();
+  },
+
+  destroyed: function() {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('unslick');
+  },
+
+  methods: {
+    create: function() {
+      var $slick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el);
+
+      $slick.on('afterChange', this.onAfterChange);
+      $slick.on('beforeChange', this.onBeforeChange);
+      $slick.on('breakpoint', this.onBreakpoint);
+      $slick.on('destroy', this.onDestroy);
+      $slick.on('edge', this.onEdge);
+      $slick.on('init', this.onInit);
+      $slick.on('reInit', this.onReInit);
+      $slick.on('setPosition', this.onSetPosition);
+      $slick.on('swipe', this.onSwipe);
+      $slick.on('lazyLoaded', this.onLazyLoaded);
+      $slick.on('lazyLoadError', this.onLazyLoadError);
+
+      $slick.slick(this.options);
+    },
+
+    destroy: function() {
+      var $slick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el);
+
+      $slick.off('afterChange', this.onAfterChange);
+      $slick.off('beforeChange', this.onBeforeChange);
+      $slick.off('breakpoint', this.onBreakpoint);
+      $slick.off('destroy', this.onDestroy);
+      $slick.off('edge', this.onEdge);
+      $slick.off('init', this.onInit);
+      $slick.off('reInit', this.onReInit);
+      $slick.off('setPosition', this.onSetPosition);
+      $slick.off('swipe', this.onSwipe);
+      $slick.off('lazyLoaded', this.onLazyLoaded);
+      $slick.off('lazyLoadError', this.onLazyLoadError);
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('unslick');
+    },
+
+    reSlick: function() {
+      this.destroy();
+      this.create();
+    },
+
+    next: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickNext');
+    },
+
+    prev: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPrev');
+    },
+
+    pause: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPause');
+    },
+
+    play: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPlay');
+    },
+
+    goTo: function(index, dontAnimate) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickGoTo', index, dontAnimate);
+    },
+
+    currentSlide: function() {
+      return __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickCurrentSlide');
+    },
+
+    add: function(element, index, addBefore) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickAdd', element, index, addBefore);
+    },
+
+    remove: function(index, removeBefore) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickRemove', index, removeBefore);
+    },
+
+    filter: function(filterData) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickFilter', filterData);
+    },
+
+    unfilter: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickUnfilter');
+    },
+
+    getOption: function(option) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickGetOption', option);
+    },
+
+    setOption: function(option, value, refresh) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickSetOption', option, value, refresh);
+    },
+
+    setPosition: function() {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('setPosition');
+    },
+
+    // Events
+    onAfterChange: function(event, slick, currentSlide) {
+      this.$emit('afterChange', event, slick, currentSlide);
+    },
+
+    onBeforeChange: function(event, slick, currentSlide, nextSlide) {
+      this.$emit('beforeChange', event, slick, currentSlide, nextSlide);
+    },
+
+    onBreakpoint: function(event, slick, breakpoint) {
+      this.$emit('breakpoint', event, slick, breakpoint);
+    },
+
+    onDestroy: function(event, slick) {
+      this.$emit('destroy', event, slick);
+    },
+
+    onEdge: function(event, slick, direction) {
+      this.$emit('edge', event, slick, direction);
+    },
+
+    onInit: function(event, slick) {
+      this.$emit('init', event, slick);
+    },
+
+    onReInit: function(event, slick) {
+      this.$emit('reInit', event, slick);
+    },
+
+    onSetPosition: function(event, slick) {
+      this.$emit('setPosition', event, slick);
+    },
+
+    onSwipe: function(event, slick, direction) {
+      this.$emit('swipe', event, slick, direction);
+    },
+
+    onLazyLoaded: function(event, slick, image, imageSource) {
+      this.$emit('lazyLoaded', event, slick, image, imageSource);
+    },
+
+    onLazyLoadError: function(event, slick, image, imageSource) {
+      this.$emit('lazyLoadError', event, slick, image, imageSource);
+    },
+  },
+
+};
+
+/* script */
+            var __vue_script__ = script;
+            
+/* template */
+var __vue_render__ = function() {
+  var _vm = this;
+  var _h = _vm.$createElement;
+  var _c = _vm._self._c || _h;
+  return _c("div", [_vm._t("default")], 2)
+};
+var __vue_staticRenderFns__ = [];
+__vue_render__._withStripped = true;
+
+  /* style */
+  var __vue_inject_styles__ = undefined;
+  /* scoped */
+  var __vue_scope_id__ = undefined;
+  /* module identifier */
+  var __vue_module_identifier__ = undefined;
+  /* functional template */
+  var __vue_is_functional_template__ = false;
+  /* component normalizer */
+  function __vue_normalize__(
+    template, style, script$$1,
+    scope, functional, moduleIdentifier,
+    createInjector, createInjectorSSR
+  ) {
+    var component = (typeof script$$1 === 'function' ? script$$1.options : script$$1) || {};
+
+    // For security concerns, we use only base name in production mode.
+    component.__file = "/Users/staskjs/Projects/vue-slick/src/slickCarousel.vue";
+
+    if (!component.render) {
+      component.render = template.render;
+      component.staticRenderFns = template.staticRenderFns;
+      component._compiled = true;
+
+      if (functional) { component.functional = true; }
+    }
+
+    component._scopeId = scope;
+
+    return component
+  }
+  /* style inject */
+  
+  /* style inject SSR */
+  
+
+  
+  var slickCarousel = __vue_normalize__(
+    { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
+    __vue_inject_styles__,
+    __vue_script__,
+    __vue_scope_id__,
+    __vue_is_functional_template__,
+    __vue_module_identifier__,
+    undefined,
+    undefined
+  );
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var slick = createCommonjsModule(function (module, exports) {
+(function(factory) {
+    {
+        module.exports = factory(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a);
+    }
+
+}(function($$$1) {
+    var Slick = window.Slick || {};
+
+    Slick = (function() {
+
+        var instanceUid = 0;
+
+        function Slick(element, settings) {
+
+            var _ = this, dataSettings;
+
+            _.defaults = {
+                accessibility: true,
+                adaptiveHeight: false,
+                appendArrows: $$$1(element),
+                appendDots: $$$1(element),
+                arrows: true,
+                asNavFor: null,
+                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                autoplay: false,
+                autoplaySpeed: 3000,
+                centerMode: false,
+                centerPadding: '50px',
+                cssEase: 'ease',
+                customPaging: function(slider, i) {
+                    return $$$1('<button type="button" />').text(i + 1);
+                },
+                dots: false,
+                dotsClass: 'slick-dots',
+                draggable: true,
+                easing: 'linear',
+                edgeFriction: 0.35,
+                fade: false,
+                focusOnSelect: false,
+                focusOnChange: false,
+                infinite: true,
+                initialSlide: 0,
+                lazyLoad: 'ondemand',
+                mobileFirst: false,
+                pauseOnHover: true,
+                pauseOnFocus: true,
+                pauseOnDotsHover: false,
+                respondTo: 'window',
+                responsive: null,
+                rows: 1,
+                rtl: false,
+                slide: '',
+                slidesPerRow: 1,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500,
+                swipe: true,
+                swipeToSlide: false,
+                touchMove: true,
+                touchThreshold: 5,
+                useCSS: true,
+                useTransform: true,
+                variableWidth: false,
+                vertical: false,
+                verticalSwiping: false,
+                waitForAnimate: true,
+                zIndex: 1000
+            };
+
+            _.initials = {
+                animating: false,
+                dragging: false,
+                autoPlayTimer: null,
+                currentDirection: 0,
+                currentLeft: null,
+                currentSlide: 0,
+                direction: 1,
+                $dots: null,
+                listWidth: null,
+                listHeight: null,
+                loadIndex: 0,
+                $nextArrow: null,
+                $prevArrow: null,
+                scrolling: false,
+                slideCount: null,
+                slideWidth: null,
+                $slideTrack: null,
+                $slides: null,
+                sliding: false,
+                slideOffset: 0,
+                swipeLeft: null,
+                swiping: false,
+                $list: null,
+                touchObject: {},
+                transformsEnabled: false,
+                unslicked: false
+            };
+
+            $$$1.extend(_, _.initials);
+
+            _.activeBreakpoint = null;
+            _.animType = null;
+            _.animProp = null;
+            _.breakpoints = [];
+            _.breakpointSettings = [];
+            _.cssTransitions = false;
+            _.focussed = false;
+            _.interrupted = false;
+            _.hidden = 'hidden';
+            _.paused = true;
+            _.positionProp = null;
+            _.respondTo = null;
+            _.rowCount = 1;
+            _.shouldClick = true;
+            _.$slider = $$$1(element);
+            _.$slidesCache = null;
+            _.transformType = null;
+            _.transitionType = null;
+            _.visibilityChange = 'visibilitychange';
+            _.windowWidth = 0;
+            _.windowTimer = null;
+
+            dataSettings = $$$1(element).data('slick') || {};
+
+            _.options = $$$1.extend({}, _.defaults, settings, dataSettings);
+
+            _.currentSlide = _.options.initialSlide;
+
+            _.originalSettings = _.options;
+
+            if (typeof document.mozHidden !== 'undefined') {
+                _.hidden = 'mozHidden';
+                _.visibilityChange = 'mozvisibilitychange';
+            } else if (typeof document.webkitHidden !== 'undefined') {
+                _.hidden = 'webkitHidden';
+                _.visibilityChange = 'webkitvisibilitychange';
             }
 
-            var sales = [[0, 5], [1, 30], [2, 10], [3, 15], [4, 30], [5, 5], [6, 12], [7, 10], [8, 55], [9, 13], [10, 25], [11, 10], [12, 12], [13, 6], [14, 40], [15, 5], [16, 5]];
-            var profit = [[0, 3], [1, 20], [2, 5], [3, 2], [4, 20], [5, 3], [6, 2], [7, 0], [8, 3], [9, 1], [10, 0], [11, 1], [12, 0], [13, 2], [14, 1], [15, 20], [16, 5]];
+            _.autoPlay = $$$1.proxy(_.autoPlay, _);
+            _.autoPlayClear = $$$1.proxy(_.autoPlayClear, _);
+            _.autoPlayIterator = $$$1.proxy(_.autoPlayIterator, _);
+            _.changeSlide = $$$1.proxy(_.changeSlide, _);
+            _.clickHandler = $$$1.proxy(_.clickHandler, _);
+            _.selectHandler = $$$1.proxy(_.selectHandler, _);
+            _.setPosition = $$$1.proxy(_.setPosition, _);
+            _.swipeHandler = $$$1.proxy(_.swipeHandler, _);
+            _.dragHandler = $$$1.proxy(_.dragHandler, _);
+            _.keyHandler = $$$1.proxy(_.keyHandler, _);
 
-            var plot_id = $("#basicflot");
-            var plot = $.plot(plot_id, [{
-                data: sales,
-                label: "Sales",
-                color: "#6699cc"
-            }, {
-                data: profit,
-                label: "Profit",
-                color: "#ff6666",
-                opacity: "1"
-            }], {
-                series: {
-                    lines: {
-                        show: false
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2
-                },
-                legend: {
-                    container: '#basicFlotLegend1',
-                    noColumns: 0
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true,
-                    borderColor: '#ddd',
-                    borderWidth: 0,
-                    labelMargin: 5,
-                    backgroundColor: '#fff'
-                },
-                colors: ["#6699cc", "#ff6666"],
-                xaxis: {},
-                yaxis: {
-                    ticks: 4
+            _.instanceUid = instanceUid++;
+
+            // A simple way to check for HTML strings
+            // Strict HTML recognition (must start with <)
+            // Extracted from jQuery v1.11 source
+            _.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/;
+
+
+            _.registerBreakpoints();
+            _.init(true);
+
+        }
+
+        return Slick;
+
+    }());
+
+    Slick.prototype.activateADA = function() {
+        var _ = this;
+
+        _.$slideTrack.find('.slick-active').attr({
+            'aria-hidden': 'false'
+        }).find('a, input, button, select').attr({
+            'tabindex': '0'
+        });
+
+    };
+
+    Slick.prototype.addSlide = Slick.prototype.slickAdd = function(markup, index, addBefore) {
+
+        var _ = this;
+
+        if (typeof(index) === 'boolean') {
+            addBefore = index;
+            index = null;
+        } else if (index < 0 || (index >= _.slideCount)) {
+            return false;
+        }
+
+        _.unload();
+
+        if (typeof(index) === 'number') {
+            if (index === 0 && _.$slides.length === 0) {
+                $$$1(markup).appendTo(_.$slideTrack);
+            } else if (addBefore) {
+                $$$1(markup).insertBefore(_.$slides.eq(index));
+            } else {
+                $$$1(markup).insertAfter(_.$slides.eq(index));
+            }
+        } else {
+            if (addBefore === true) {
+                $$$1(markup).prependTo(_.$slideTrack);
+            } else {
+                $$$1(markup).appendTo(_.$slideTrack);
+            }
+        }
+
+        _.$slides = _.$slideTrack.children(this.options.slide);
+
+        _.$slideTrack.children(this.options.slide).detach();
+
+        _.$slideTrack.append(_.$slides);
+
+        _.$slides.each(function(index, element) {
+            $$$1(element).attr('data-slick-index', index);
+        });
+
+        _.$slidesCache = _.$slides;
+
+        _.reinit();
+
+    };
+
+    Slick.prototype.animateHeight = function() {
+        var _ = this;
+        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
+            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
+            _.$list.animate({
+                height: targetHeight
+            }, _.options.speed);
+        }
+    };
+
+    Slick.prototype.animateSlide = function(targetLeft, callback) {
+
+        var animProps = {},
+            _ = this;
+
+        _.animateHeight();
+
+        if (_.options.rtl === true && _.options.vertical === false) {
+            targetLeft = -targetLeft;
+        }
+        if (_.transformsEnabled === false) {
+            if (_.options.vertical === false) {
+                _.$slideTrack.animate({
+                    left: targetLeft
+                }, _.options.speed, _.options.easing, callback);
+            } else {
+                _.$slideTrack.animate({
+                    top: targetLeft
+                }, _.options.speed, _.options.easing, callback);
+            }
+
+        } else {
+
+            if (_.cssTransitions === false) {
+                if (_.options.rtl === true) {
+                    _.currentLeft = -(_.currentLeft);
                 }
-            });
-
-            var previousPoint1 = null;
-            plot_id.bind("plothover", function (event, pos, item) {
-                $("#x").text(pos.x.toFixed(2));
-                $("#y").text(pos.y.toFixed(2));
-
-                if (item) {
-                    if (previousPoint1 != item.dataIndex) {
-                        previousPoint1 = item.dataIndex;
-
-                        $("#tooltip").remove();
-                        var x = item.datapoint[0].toFixed(2),
-                            y = item.datapoint[1].toFixed(2);
-
-                        showTooltipStats(item.pageX, item.pageY, item.series.label + " on " + parseInt(x) + " = " + parseInt(y));
-                    }
-                } else {
-                    $("#tooltip").remove();
-                    previousPoint1 = null;
-                }
-            }).bind("plotclick", function (event, pos, item) {
-                if (item) {
-                    plot.highlight(item.series, item.datapoint);
-                }
-            });
-
-            //line chart start
-            $(function () {
-
-                var d1, d2, data, Options;
-
-                d1 = [[1262304000000, 100], [1264982400000, 560], [1267401600000, 1605], [1270080000000, 1129], [1272672000000, 2163], [1275350400000, 1905], [1277942400000, 2002], [1280620800000, 2917], [1283299200000, 2700], [1285891200000, 2700], [1288569600000, 2100], [1291161600000, 2700]];
-
-                d2 = [[1262304000000, 434], [1264982400000, 232], [1267401600000, 875], [1270080000000, 553], [1272672000000, 975], [1275350400000, 1379], [1277942400000, 789], [1280620800000, 1026], [1283299200000, 1240], [1285891200000, 1892], [1288569600000, 1147], [1291161600000, 2256]];
-
-                data = [{
-                    label: "Total visitors",
-                    data: d1,
-                    color: "#66cc99"
+                $$$1({
+                    animStart: _.currentLeft
+                }).animate({
+                    animStart: targetLeft
                 }, {
-                    label: "Total Sales",
-                    data: d2,
-                    color: "#f0ad4e"
-                }];
-
-                Options = {
-                    xaxis: {
-                        min: new Date(2009, 12, 1).getTime(),
-                        max: new Date(2010, 11, 2).getTime(),
-                        mode: "time",
-                        tickSize: [1, "month"],
-                        monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-                        tickLength: 0
-                    },
-                    yaxis: {},
-                    series: {
-                        lines: {
-                            show: true,
-                            fill: false,
-                            lineWidth: 2
-                        },
-                        points: {
-                            show: true,
-                            radius: 4.5,
-                            fill: true,
-                            fillColor: "#ffffff",
-                            lineWidth: 2
+                    duration: _.options.speed,
+                    easing: _.options.easing,
+                    step: function(now) {
+                        now = Math.ceil(now);
+                        if (_.options.vertical === false) {
+                            animProps[_.animType] = 'translate(' +
+                                now + 'px, 0px)';
+                            _.$slideTrack.css(animProps);
+                        } else {
+                            animProps[_.animType] = 'translate(0px,' +
+                                now + 'px)';
+                            _.$slideTrack.css(animProps);
                         }
                     },
-                    grid: {
-                        hoverable: true,
-                        clickable: false,
-                        borderWidth: 0
-                    },
-                    legend: {
-                        container: '#basicFlotLegend',
-                        show: true
-                    },
-
-                    tooltip: true,
-                    tooltipOpts: {
-                        content: '%s: %y'
+                    complete: function() {
+                        if (callback) {
+                            callback.call();
+                        }
                     }
+                });
+
+            } else {
+
+                _.applyTransition();
+                targetLeft = Math.ceil(targetLeft);
+
+                if (_.options.vertical === false) {
+                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px)';
+                } else {
+                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px)';
+                }
+                _.$slideTrack.css(animProps);
+
+                if (callback) {
+                    setTimeout(function() {
+
+                        _.disableTransition();
+
+                        callback.call();
+                    }, _.options.speed);
+                }
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.getNavTarget = function() {
+
+        var _ = this,
+            asNavFor = _.options.asNavFor;
+
+        if ( asNavFor && asNavFor !== null ) {
+            asNavFor = $$$1(asNavFor).not(_.$slider);
+        }
+
+        return asNavFor;
+
+    };
+
+    Slick.prototype.asNavFor = function(index) {
+
+        var _ = this,
+            asNavFor = _.getNavTarget();
+
+        if ( asNavFor !== null && typeof asNavFor === 'object' ) {
+            asNavFor.each(function() {
+                var target = $$$1(this).slick('getSlick');
+                if(!target.unslicked) {
+                    target.slideHandler(index, true);
+                }
+            });
+        }
+
+    };
+
+    Slick.prototype.applyTransition = function(slide) {
+
+        var _ = this,
+            transition = {};
+
+        if (_.options.fade === false) {
+            transition[_.transitionType] = _.transformType + ' ' + _.options.speed + 'ms ' + _.options.cssEase;
+        } else {
+            transition[_.transitionType] = 'opacity ' + _.options.speed + 'ms ' + _.options.cssEase;
+        }
+
+        if (_.options.fade === false) {
+            _.$slideTrack.css(transition);
+        } else {
+            _.$slides.eq(slide).css(transition);
+        }
+
+    };
+
+    Slick.prototype.autoPlay = function() {
+
+        var _ = this;
+
+        _.autoPlayClear();
+
+        if ( _.slideCount > _.options.slidesToShow ) {
+            _.autoPlayTimer = setInterval( _.autoPlayIterator, _.options.autoplaySpeed );
+        }
+
+    };
+
+    Slick.prototype.autoPlayClear = function() {
+
+        var _ = this;
+
+        if (_.autoPlayTimer) {
+            clearInterval(_.autoPlayTimer);
+        }
+
+    };
+
+    Slick.prototype.autoPlayIterator = function() {
+
+        var _ = this,
+            slideTo = _.currentSlide + _.options.slidesToScroll;
+
+        if ( !_.paused && !_.interrupted && !_.focussed ) {
+
+            if ( _.options.infinite === false ) {
+
+                if ( _.direction === 1 && ( _.currentSlide + 1 ) === ( _.slideCount - 1 )) {
+                    _.direction = 0;
+                }
+
+                else if ( _.direction === 0 ) {
+
+                    slideTo = _.currentSlide - _.options.slidesToScroll;
+
+                    if ( _.currentSlide - 1 === 0 ) {
+                        _.direction = 1;
+                    }
+
+                }
+
+            }
+
+            _.slideHandler( slideTo );
+
+        }
+
+    };
+
+    Slick.prototype.buildArrows = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true ) {
+
+            _.$prevArrow = $$$1(_.options.prevArrow).addClass('slick-arrow');
+            _.$nextArrow = $$$1(_.options.nextArrow).addClass('slick-arrow');
+
+            if( _.slideCount > _.options.slidesToShow ) {
+
+                _.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+                _.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+
+                if (_.htmlExpr.test(_.options.prevArrow)) {
+                    _.$prevArrow.prependTo(_.options.appendArrows);
+                }
+
+                if (_.htmlExpr.test(_.options.nextArrow)) {
+                    _.$nextArrow.appendTo(_.options.appendArrows);
+                }
+
+                if (_.options.infinite !== true) {
+                    _.$prevArrow
+                        .addClass('slick-disabled')
+                        .attr('aria-disabled', 'true');
+                }
+
+            } else {
+
+                _.$prevArrow.add( _.$nextArrow )
+
+                    .addClass('slick-hidden')
+                    .attr({
+                        'aria-disabled': 'true',
+                        'tabindex': '-1'
+                    });
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.buildDots = function() {
+
+        var _ = this,
+            i, dot;
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$slider.addClass('slick-dotted');
+
+            dot = $$$1('<ul />').addClass(_.options.dotsClass);
+
+            for (i = 0; i <= _.getDotCount(); i += 1) {
+                dot.append($$$1('<li />').append(_.options.customPaging.call(this, _, i)));
+            }
+
+            _.$dots = dot.appendTo(_.options.appendDots);
+
+            _.$dots.find('li').first().addClass('slick-active');
+
+        }
+
+    };
+
+    Slick.prototype.buildOut = function() {
+
+        var _ = this;
+
+        _.$slides =
+            _.$slider
+                .children( _.options.slide + ':not(.slick-cloned)')
+                .addClass('slick-slide');
+
+        _.slideCount = _.$slides.length;
+
+        _.$slides.each(function(index, element) {
+            $$$1(element)
+                .attr('data-slick-index', index)
+                .data('originalStyling', $$$1(element).attr('style') || '');
+        });
+
+        _.$slider.addClass('slick-slider');
+
+        _.$slideTrack = (_.slideCount === 0) ?
+            $$$1('<div class="slick-track"/>').appendTo(_.$slider) :
+            _.$slides.wrapAll('<div class="slick-track"/>').parent();
+
+        _.$list = _.$slideTrack.wrap(
+            '<div class="slick-list"/>').parent();
+        _.$slideTrack.css('opacity', 0);
+
+        if (_.options.centerMode === true || _.options.swipeToSlide === true) {
+            _.options.slidesToScroll = 1;
+        }
+
+        $$$1('img[data-lazy]', _.$slider).not('[src]').addClass('slick-loading');
+
+        _.setupInfinite();
+
+        _.buildArrows();
+
+        _.buildDots();
+
+        _.updateDots();
+
+
+        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
+
+        if (_.options.draggable === true) {
+            _.$list.addClass('draggable');
+        }
+
+    };
+
+    Slick.prototype.buildRows = function() {
+
+        var _ = this, a, b, c, newSlides, numOfSlides, originalSlides,slidesPerSection;
+
+        newSlides = document.createDocumentFragment();
+        originalSlides = _.$slider.children();
+
+        if(_.options.rows > 0) {
+
+            slidesPerSection = _.options.slidesPerRow * _.options.rows;
+            numOfSlides = Math.ceil(
+                originalSlides.length / slidesPerSection
+            );
+
+            for(a = 0; a < numOfSlides; a++){
+                var slide = document.createElement('div');
+                for(b = 0; b < _.options.rows; b++) {
+                    var row = document.createElement('div');
+                    for(c = 0; c < _.options.slidesPerRow; c++) {
+                        var target = (a * slidesPerSection + ((b * _.options.slidesPerRow) + c));
+                        if (originalSlides.get(target)) {
+                            row.appendChild(originalSlides.get(target));
+                        }
+                    }
+                    slide.appendChild(row);
+                }
+                newSlides.appendChild(slide);
+            }
+
+            _.$slider.empty().append(newSlides);
+            _.$slider.children().children().children()
+                .css({
+                    'width':(100 / _.options.slidesPerRow) + '%',
+                    'display': 'inline-block'
+                });
+
+        }
+
+    };
+
+    Slick.prototype.checkResponsive = function(initial, forceUpdate) {
+
+        var _ = this,
+            breakpoint, targetBreakpoint, respondToWidth, triggerBreakpoint = false;
+        var sliderWidth = _.$slider.width();
+        var windowWidth = window.innerWidth || $$$1(window).width();
+
+        if (_.respondTo === 'window') {
+            respondToWidth = windowWidth;
+        } else if (_.respondTo === 'slider') {
+            respondToWidth = sliderWidth;
+        } else if (_.respondTo === 'min') {
+            respondToWidth = Math.min(windowWidth, sliderWidth);
+        }
+
+        if ( _.options.responsive &&
+            _.options.responsive.length &&
+            _.options.responsive !== null) {
+
+            targetBreakpoint = null;
+
+            for (breakpoint in _.breakpoints) {
+                if (_.breakpoints.hasOwnProperty(breakpoint)) {
+                    if (_.originalSettings.mobileFirst === false) {
+                        if (respondToWidth < _.breakpoints[breakpoint]) {
+                            targetBreakpoint = _.breakpoints[breakpoint];
+                        }
+                    } else {
+                        if (respondToWidth > _.breakpoints[breakpoint]) {
+                            targetBreakpoint = _.breakpoints[breakpoint];
+                        }
+                    }
+                }
+            }
+
+            if (targetBreakpoint !== null) {
+                if (_.activeBreakpoint !== null) {
+                    if (targetBreakpoint !== _.activeBreakpoint || forceUpdate) {
+                        _.activeBreakpoint =
+                            targetBreakpoint;
+                        if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
+                            _.unslick(targetBreakpoint);
+                        } else {
+                            _.options = $$$1.extend({}, _.originalSettings,
+                                _.breakpointSettings[
+                                    targetBreakpoint]);
+                            if (initial === true) {
+                                _.currentSlide = _.options.initialSlide;
+                            }
+                            _.refresh(initial);
+                        }
+                        triggerBreakpoint = targetBreakpoint;
+                    }
+                } else {
+                    _.activeBreakpoint = targetBreakpoint;
+                    if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
+                        _.unslick(targetBreakpoint);
+                    } else {
+                        _.options = $$$1.extend({}, _.originalSettings,
+                            _.breakpointSettings[
+                                targetBreakpoint]);
+                        if (initial === true) {
+                            _.currentSlide = _.options.initialSlide;
+                        }
+                        _.refresh(initial);
+                    }
+                    triggerBreakpoint = targetBreakpoint;
+                }
+            } else {
+                if (_.activeBreakpoint !== null) {
+                    _.activeBreakpoint = null;
+                    _.options = _.originalSettings;
+                    if (initial === true) {
+                        _.currentSlide = _.options.initialSlide;
+                    }
+                    _.refresh(initial);
+                    triggerBreakpoint = targetBreakpoint;
+                }
+            }
+
+            // only trigger breakpoints during an actual break. not on initialize.
+            if( !initial && triggerBreakpoint !== false ) {
+                _.$slider.trigger('breakpoint', [_, triggerBreakpoint]);
+            }
+        }
+
+    };
+
+    Slick.prototype.changeSlide = function(event, dontAnimate) {
+
+        var _ = this,
+            $target = $$$1(event.currentTarget),
+            indexOffset, slideOffset, unevenOffset;
+
+        // If target is a link, prevent default action.
+        if($target.is('a')) {
+            event.preventDefault();
+        }
+
+        // If target is not the <li> element (ie: a child), find the <li>.
+        if(!$target.is('li')) {
+            $target = $target.closest('li');
+        }
+
+        unevenOffset = (_.slideCount % _.options.slidesToScroll !== 0);
+        indexOffset = unevenOffset ? 0 : (_.slideCount - _.currentSlide) % _.options.slidesToScroll;
+
+        switch (event.data.message) {
+
+            case 'previous':
+                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : _.options.slidesToShow - indexOffset;
+                if (_.slideCount > _.options.slidesToShow) {
+                    _.slideHandler(_.currentSlide - slideOffset, false, dontAnimate);
+                }
+                break;
+
+            case 'next':
+                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : indexOffset;
+                if (_.slideCount > _.options.slidesToShow) {
+                    _.slideHandler(_.currentSlide + slideOffset, false, dontAnimate);
+                }
+                break;
+
+            case 'index':
+                var index = event.data.index === 0 ? 0 :
+                    event.data.index || $target.index() * _.options.slidesToScroll;
+
+                _.slideHandler(_.checkNavigable(index), false, dontAnimate);
+                $target.children().trigger('focus');
+                break;
+
+            default:
+                return;
+        }
+
+    };
+
+    Slick.prototype.checkNavigable = function(index) {
+
+        var _ = this,
+            navigables, prevNavigable;
+
+        navigables = _.getNavigableIndexes();
+        prevNavigable = 0;
+        if (index > navigables[navigables.length - 1]) {
+            index = navigables[navigables.length - 1];
+        } else {
+            for (var n in navigables) {
+                if (index < navigables[n]) {
+                    index = prevNavigable;
+                    break;
+                }
+                prevNavigable = navigables[n];
+            }
+        }
+
+        return index;
+    };
+
+    Slick.prototype.cleanUpEvents = function() {
+
+        var _ = this;
+
+        if (_.options.dots && _.$dots !== null) {
+
+            $$$1('li', _.$dots)
+                .off('click.slick', _.changeSlide)
+                .off('mouseenter.slick', $$$1.proxy(_.interrupt, _, true))
+                .off('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+            if (_.options.accessibility === true) {
+                _.$dots.off('keydown.slick', _.keyHandler);
+            }
+        }
+
+        _.$slider.off('focus.slick blur.slick');
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+            _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide);
+            _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide);
+
+            if (_.options.accessibility === true) {
+                _.$prevArrow && _.$prevArrow.off('keydown.slick', _.keyHandler);
+                _.$nextArrow && _.$nextArrow.off('keydown.slick', _.keyHandler);
+            }
+        }
+
+        _.$list.off('touchstart.slick mousedown.slick', _.swipeHandler);
+        _.$list.off('touchmove.slick mousemove.slick', _.swipeHandler);
+        _.$list.off('touchend.slick mouseup.slick', _.swipeHandler);
+        _.$list.off('touchcancel.slick mouseleave.slick', _.swipeHandler);
+
+        _.$list.off('click.slick', _.clickHandler);
+
+        $$$1(document).off(_.visibilityChange, _.visibility);
+
+        _.cleanUpSlideEvents();
+
+        if (_.options.accessibility === true) {
+            _.$list.off('keydown.slick', _.keyHandler);
+        }
+
+        if (_.options.focusOnSelect === true) {
+            $$$1(_.$slideTrack).children().off('click.slick', _.selectHandler);
+        }
+
+        $$$1(window).off('orientationchange.slick.slick-' + _.instanceUid, _.orientationChange);
+
+        $$$1(window).off('resize.slick.slick-' + _.instanceUid, _.resize);
+
+        $$$1('[draggable!=true]', _.$slideTrack).off('dragstart', _.preventDefault);
+
+        $$$1(window).off('load.slick.slick-' + _.instanceUid, _.setPosition);
+
+    };
+
+    Slick.prototype.cleanUpSlideEvents = function() {
+
+        var _ = this;
+
+        _.$list.off('mouseenter.slick', $$$1.proxy(_.interrupt, _, true));
+        _.$list.off('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+    };
+
+    Slick.prototype.cleanUpRows = function() {
+
+        var _ = this, originalSlides;
+
+        if(_.options.rows > 0) {
+            originalSlides = _.$slides.children().children();
+            originalSlides.removeAttr('style');
+            _.$slider.empty().append(originalSlides);
+        }
+
+    };
+
+    Slick.prototype.clickHandler = function(event) {
+
+        var _ = this;
+
+        if (_.shouldClick === false) {
+            event.stopImmediatePropagation();
+            event.stopPropagation();
+            event.preventDefault();
+        }
+
+    };
+
+    Slick.prototype.destroy = function(refresh) {
+
+        var _ = this;
+
+        _.autoPlayClear();
+
+        _.touchObject = {};
+
+        _.cleanUpEvents();
+
+        $$$1('.slick-cloned', _.$slider).detach();
+
+        if (_.$dots) {
+            _.$dots.remove();
+        }
+
+        if ( _.$prevArrow && _.$prevArrow.length ) {
+
+            _.$prevArrow
+                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeAttr('aria-hidden aria-disabled tabindex')
+                .css('display','');
+
+            if ( _.htmlExpr.test( _.options.prevArrow )) {
+                _.$prevArrow.remove();
+            }
+        }
+
+        if ( _.$nextArrow && _.$nextArrow.length ) {
+
+            _.$nextArrow
+                .removeClass('slick-disabled slick-arrow slick-hidden')
+                .removeAttr('aria-hidden aria-disabled tabindex')
+                .css('display','');
+
+            if ( _.htmlExpr.test( _.options.nextArrow )) {
+                _.$nextArrow.remove();
+            }
+        }
+
+
+        if (_.$slides) {
+
+            _.$slides
+                .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
+                .removeAttr('aria-hidden')
+                .removeAttr('data-slick-index')
+                .each(function(){
+                    $$$1(this).attr('style', $$$1(this).data('originalStyling'));
+                });
+
+            _.$slideTrack.children(this.options.slide).detach();
+
+            _.$slideTrack.detach();
+
+            _.$list.detach();
+
+            _.$slider.append(_.$slides);
+        }
+
+        _.cleanUpRows();
+
+        _.$slider.removeClass('slick-slider');
+        _.$slider.removeClass('slick-initialized');
+        _.$slider.removeClass('slick-dotted');
+
+        _.unslicked = true;
+
+        if(!refresh) {
+            _.$slider.trigger('destroy', [_]);
+        }
+
+    };
+
+    Slick.prototype.disableTransition = function(slide) {
+
+        var _ = this,
+            transition = {};
+
+        transition[_.transitionType] = '';
+
+        if (_.options.fade === false) {
+            _.$slideTrack.css(transition);
+        } else {
+            _.$slides.eq(slide).css(transition);
+        }
+
+    };
+
+    Slick.prototype.fadeSlide = function(slideIndex, callback) {
+
+        var _ = this;
+
+        if (_.cssTransitions === false) {
+
+            _.$slides.eq(slideIndex).css({
+                zIndex: _.options.zIndex
+            });
+
+            _.$slides.eq(slideIndex).animate({
+                opacity: 1
+            }, _.options.speed, _.options.easing, callback);
+
+        } else {
+
+            _.applyTransition(slideIndex);
+
+            _.$slides.eq(slideIndex).css({
+                opacity: 1,
+                zIndex: _.options.zIndex
+            });
+
+            if (callback) {
+                setTimeout(function() {
+
+                    _.disableTransition(slideIndex);
+
+                    callback.call();
+                }, _.options.speed);
+            }
+
+        }
+
+    };
+
+    Slick.prototype.fadeSlideOut = function(slideIndex) {
+
+        var _ = this;
+
+        if (_.cssTransitions === false) {
+
+            _.$slides.eq(slideIndex).animate({
+                opacity: 0,
+                zIndex: _.options.zIndex - 2
+            }, _.options.speed, _.options.easing);
+
+        } else {
+
+            _.applyTransition(slideIndex);
+
+            _.$slides.eq(slideIndex).css({
+                opacity: 0,
+                zIndex: _.options.zIndex - 2
+            });
+
+        }
+
+    };
+
+    Slick.prototype.filterSlides = Slick.prototype.slickFilter = function(filter) {
+
+        var _ = this;
+
+        if (filter !== null) {
+
+            _.$slidesCache = _.$slides;
+
+            _.unload();
+
+            _.$slideTrack.children(this.options.slide).detach();
+
+            _.$slidesCache.filter(filter).appendTo(_.$slideTrack);
+
+            _.reinit();
+
+        }
+
+    };
+
+    Slick.prototype.focusHandler = function() {
+
+        var _ = this;
+
+        _.$slider
+            .off('focus.slick blur.slick')
+            .on('focus.slick blur.slick', '*', function(event) {
+
+            event.stopImmediatePropagation();
+            var $sf = $$$1(this);
+
+            setTimeout(function() {
+
+                if( _.options.pauseOnFocus ) {
+                    _.focussed = $sf.is(':focus');
+                    _.autoPlay();
+                }
+
+            }, 0);
+
+        });
+    };
+
+    Slick.prototype.getCurrent = Slick.prototype.slickCurrentSlide = function() {
+
+        var _ = this;
+        return _.currentSlide;
+
+    };
+
+    Slick.prototype.getDotCount = function() {
+
+        var _ = this;
+
+        var breakPoint = 0;
+        var counter = 0;
+        var pagerQty = 0;
+
+        if (_.options.infinite === true) {
+            if (_.slideCount <= _.options.slidesToShow) {
+                 ++pagerQty;
+            } else {
+                while (breakPoint < _.slideCount) {
+                    ++pagerQty;
+                    breakPoint = counter + _.options.slidesToScroll;
+                    counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+                }
+            }
+        } else if (_.options.centerMode === true) {
+            pagerQty = _.slideCount;
+        } else if(!_.options.asNavFor) {
+            pagerQty = 1 + Math.ceil((_.slideCount - _.options.slidesToShow) / _.options.slidesToScroll);
+        }else {
+            while (breakPoint < _.slideCount) {
+                ++pagerQty;
+                breakPoint = counter + _.options.slidesToScroll;
+                counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+            }
+        }
+
+        return pagerQty - 1;
+
+    };
+
+    Slick.prototype.getLeft = function(slideIndex) {
+
+        var _ = this,
+            targetLeft,
+            verticalHeight,
+            verticalOffset = 0,
+            targetSlide,
+            coef;
+
+        _.slideOffset = 0;
+        verticalHeight = _.$slides.first().outerHeight(true);
+
+        if (_.options.infinite === true) {
+            if (_.slideCount > _.options.slidesToShow) {
+                _.slideOffset = (_.slideWidth * _.options.slidesToShow) * -1;
+                coef = -1;
+
+                if (_.options.vertical === true && _.options.centerMode === true) {
+                    if (_.options.slidesToShow === 2) {
+                        coef = -1.5;
+                    } else if (_.options.slidesToShow === 1) {
+                        coef = -2;
+                    }
+                }
+                verticalOffset = (verticalHeight * _.options.slidesToShow) * coef;
+            }
+            if (_.slideCount % _.options.slidesToScroll !== 0) {
+                if (slideIndex + _.options.slidesToScroll > _.slideCount && _.slideCount > _.options.slidesToShow) {
+                    if (slideIndex > _.slideCount) {
+                        _.slideOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * _.slideWidth) * -1;
+                        verticalOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * verticalHeight) * -1;
+                    } else {
+                        _.slideOffset = ((_.slideCount % _.options.slidesToScroll) * _.slideWidth) * -1;
+                        verticalOffset = ((_.slideCount % _.options.slidesToScroll) * verticalHeight) * -1;
+                    }
+                }
+            }
+        } else {
+            if (slideIndex + _.options.slidesToShow > _.slideCount) {
+                _.slideOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * _.slideWidth;
+                verticalOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * verticalHeight;
+            }
+        }
+
+        if (_.slideCount <= _.options.slidesToShow) {
+            _.slideOffset = 0;
+            verticalOffset = 0;
+        }
+
+        if (_.options.centerMode === true && _.slideCount <= _.options.slidesToShow) {
+            _.slideOffset = ((_.slideWidth * Math.floor(_.options.slidesToShow)) / 2) - ((_.slideWidth * _.slideCount) / 2);
+        } else if (_.options.centerMode === true && _.options.infinite === true) {
+            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2) - _.slideWidth;
+        } else if (_.options.centerMode === true) {
+            _.slideOffset = 0;
+            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2);
+        }
+
+        if (_.options.vertical === false) {
+            targetLeft = ((slideIndex * _.slideWidth) * -1) + _.slideOffset;
+        } else {
+            targetLeft = ((slideIndex * verticalHeight) * -1) + verticalOffset;
+        }
+
+        if (_.options.variableWidth === true) {
+
+            if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
+            } else {
+                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow);
+            }
+
+            if (_.options.rtl === true) {
+                if (targetSlide[0]) {
+                    targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
+                } else {
+                    targetLeft =  0;
+                }
+            } else {
+                targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
+            }
+
+            if (_.options.centerMode === true) {
+                if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
+                } else {
+                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow + 1);
+                }
+
+                if (_.options.rtl === true) {
+                    if (targetSlide[0]) {
+                        targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
+                    } else {
+                        targetLeft =  0;
+                    }
+                } else {
+                    targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
+                }
+
+                targetLeft += (_.$list.width() - targetSlide.outerWidth()) / 2;
+            }
+        }
+
+        return targetLeft;
+
+    };
+
+    Slick.prototype.getOption = Slick.prototype.slickGetOption = function(option) {
+
+        var _ = this;
+
+        return _.options[option];
+
+    };
+
+    Slick.prototype.getNavigableIndexes = function() {
+
+        var _ = this,
+            breakPoint = 0,
+            counter = 0,
+            indexes = [],
+            max;
+
+        if (_.options.infinite === false) {
+            max = _.slideCount;
+        } else {
+            breakPoint = _.options.slidesToScroll * -1;
+            counter = _.options.slidesToScroll * -1;
+            max = _.slideCount * 2;
+        }
+
+        while (breakPoint < max) {
+            indexes.push(breakPoint);
+            breakPoint = counter + _.options.slidesToScroll;
+            counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+        }
+
+        return indexes;
+
+    };
+
+    Slick.prototype.getSlick = function() {
+
+        return this;
+
+    };
+
+    Slick.prototype.getSlideCount = function() {
+
+        var _ = this,
+            slidesTraversed, swipedSlide, centerOffset;
+
+        centerOffset = _.options.centerMode === true ? _.slideWidth * Math.floor(_.options.slidesToShow / 2) : 0;
+
+        if (_.options.swipeToSlide === true) {
+            _.$slideTrack.find('.slick-slide').each(function(index, slide) {
+                if (slide.offsetLeft - centerOffset + ($$$1(slide).outerWidth() / 2) > (_.swipeLeft * -1)) {
+                    swipedSlide = slide;
+                    return false;
+                }
+            });
+
+            slidesTraversed = Math.abs($$$1(swipedSlide).attr('data-slick-index') - _.currentSlide) || 1;
+
+            return slidesTraversed;
+
+        } else {
+            return _.options.slidesToScroll;
+        }
+
+    };
+
+    Slick.prototype.goTo = Slick.prototype.slickGoTo = function(slide, dontAnimate) {
+
+        var _ = this;
+
+        _.changeSlide({
+            data: {
+                message: 'index',
+                index: parseInt(slide)
+            }
+        }, dontAnimate);
+
+    };
+
+    Slick.prototype.init = function(creation) {
+
+        var _ = this;
+
+        if (!$$$1(_.$slider).hasClass('slick-initialized')) {
+
+            $$$1(_.$slider).addClass('slick-initialized');
+
+            _.buildRows();
+            _.buildOut();
+            _.setProps();
+            _.startLoad();
+            _.loadSlider();
+            _.initializeEvents();
+            _.updateArrows();
+            _.updateDots();
+            _.checkResponsive(true);
+            _.focusHandler();
+
+        }
+
+        if (creation) {
+            _.$slider.trigger('init', [_]);
+        }
+
+        if (_.options.accessibility === true) {
+            _.initADA();
+        }
+
+        if ( _.options.autoplay ) {
+
+            _.paused = false;
+            _.autoPlay();
+
+        }
+
+    };
+
+    Slick.prototype.initADA = function() {
+        var _ = this,
+                numDotGroups = Math.ceil(_.slideCount / _.options.slidesToShow),
+                tabControlIndexes = _.getNavigableIndexes().filter(function(val) {
+                    return (val >= 0) && (val < _.slideCount);
+                });
+
+        _.$slides.add(_.$slideTrack.find('.slick-cloned')).attr({
+            'aria-hidden': 'true',
+            'tabindex': '-1'
+        }).find('a, input, button, select').attr({
+            'tabindex': '-1'
+        });
+
+        if (_.$dots !== null) {
+            _.$slides.not(_.$slideTrack.find('.slick-cloned')).each(function(i) {
+                var slideControlIndex = tabControlIndexes.indexOf(i);
+
+                $$$1(this).attr({
+                    'role': 'tabpanel',
+                    'id': 'slick-slide' + _.instanceUid + i,
+                    'tabindex': -1
+                });
+
+                if (slideControlIndex !== -1) {
+                   var ariaButtonControl = 'slick-slide-control' + _.instanceUid + slideControlIndex;
+                   if ($$$1('#' + ariaButtonControl).length) {
+                     $$$1(this).attr({
+                         'aria-describedby': ariaButtonControl
+                     });
+                   }
+                }
+            });
+
+            _.$dots.attr('role', 'tablist').find('li').each(function(i) {
+                var mappedSlideIndex = tabControlIndexes[i];
+
+                $$$1(this).attr({
+                    'role': 'presentation'
+                });
+
+                $$$1(this).find('button').first().attr({
+                    'role': 'tab',
+                    'id': 'slick-slide-control' + _.instanceUid + i,
+                    'aria-controls': 'slick-slide' + _.instanceUid + mappedSlideIndex,
+                    'aria-label': (i + 1) + ' of ' + numDotGroups,
+                    'aria-selected': null,
+                    'tabindex': '-1'
+                });
+
+            }).eq(_.currentSlide).find('button').attr({
+                'aria-selected': 'true',
+                'tabindex': '0'
+            }).end();
+        }
+
+        for (var i=_.currentSlide, max=i+_.options.slidesToShow; i < max; i++) {
+          if (_.options.focusOnChange) {
+            _.$slides.eq(i).attr({'tabindex': '0'});
+          } else {
+            _.$slides.eq(i).removeAttr('tabindex');
+          }
+        }
+
+        _.activateADA();
+
+    };
+
+    Slick.prototype.initArrowEvents = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+            _.$prevArrow
+               .off('click.slick')
+               .on('click.slick', {
+                    message: 'previous'
+               }, _.changeSlide);
+            _.$nextArrow
+               .off('click.slick')
+               .on('click.slick', {
+                    message: 'next'
+               }, _.changeSlide);
+
+            if (_.options.accessibility === true) {
+                _.$prevArrow.on('keydown.slick', _.keyHandler);
+                _.$nextArrow.on('keydown.slick', _.keyHandler);
+            }
+        }
+
+    };
+
+    Slick.prototype.initDotEvents = function() {
+
+        var _ = this;
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+            $$$1('li', _.$dots).on('click.slick', {
+                message: 'index'
+            }, _.changeSlide);
+
+            if (_.options.accessibility === true) {
+                _.$dots.on('keydown.slick', _.keyHandler);
+            }
+        }
+
+        if (_.options.dots === true && _.options.pauseOnDotsHover === true && _.slideCount > _.options.slidesToShow) {
+
+            $$$1('li', _.$dots)
+                .on('mouseenter.slick', $$$1.proxy(_.interrupt, _, true))
+                .on('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+        }
+
+    };
+
+    Slick.prototype.initSlideEvents = function() {
+
+        var _ = this;
+
+        if ( _.options.pauseOnHover ) {
+
+            _.$list.on('mouseenter.slick', $$$1.proxy(_.interrupt, _, true));
+            _.$list.on('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
+
+        }
+
+    };
+
+    Slick.prototype.initializeEvents = function() {
+
+        var _ = this;
+
+        _.initArrowEvents();
+
+        _.initDotEvents();
+        _.initSlideEvents();
+
+        _.$list.on('touchstart.slick mousedown.slick', {
+            action: 'start'
+        }, _.swipeHandler);
+        _.$list.on('touchmove.slick mousemove.slick', {
+            action: 'move'
+        }, _.swipeHandler);
+        _.$list.on('touchend.slick mouseup.slick', {
+            action: 'end'
+        }, _.swipeHandler);
+        _.$list.on('touchcancel.slick mouseleave.slick', {
+            action: 'end'
+        }, _.swipeHandler);
+
+        _.$list.on('click.slick', _.clickHandler);
+
+        $$$1(document).on(_.visibilityChange, $$$1.proxy(_.visibility, _));
+
+        if (_.options.accessibility === true) {
+            _.$list.on('keydown.slick', _.keyHandler);
+        }
+
+        if (_.options.focusOnSelect === true) {
+            $$$1(_.$slideTrack).children().on('click.slick', _.selectHandler);
+        }
+
+        $$$1(window).on('orientationchange.slick.slick-' + _.instanceUid, $$$1.proxy(_.orientationChange, _));
+
+        $$$1(window).on('resize.slick.slick-' + _.instanceUid, $$$1.proxy(_.resize, _));
+
+        $$$1('[draggable!=true]', _.$slideTrack).on('dragstart', _.preventDefault);
+
+        $$$1(window).on('load.slick.slick-' + _.instanceUid, _.setPosition);
+        $$$1(_.setPosition);
+
+    };
+
+    Slick.prototype.initUI = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$prevArrow.show();
+            _.$nextArrow.show();
+
+        }
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$dots.show();
+
+        }
+
+    };
+
+    Slick.prototype.keyHandler = function(event) {
+
+        var _ = this;
+         //Dont slide if the cursor is inside the form fields and arrow keys are pressed
+        if(!event.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
+            if (event.keyCode === 37 && _.options.accessibility === true) {
+                _.changeSlide({
+                    data: {
+                        message: _.options.rtl === true ? 'next' :  'previous'
+                    }
+                });
+            } else if (event.keyCode === 39 && _.options.accessibility === true) {
+                _.changeSlide({
+                    data: {
+                        message: _.options.rtl === true ? 'previous' : 'next'
+                    }
+                });
+            }
+        }
+
+    };
+
+    Slick.prototype.lazyLoad = function() {
+
+        var _ = this,
+            loadRange, cloneRange, rangeStart, rangeEnd;
+
+        function loadImages(imagesScope) {
+
+            $$$1('img[data-lazy]', imagesScope).each(function() {
+
+                var image = $$$1(this),
+                    imageSource = $$$1(this).attr('data-lazy'),
+                    imageSrcSet = $$$1(this).attr('data-srcset'),
+                    imageSizes  = $$$1(this).attr('data-sizes') || _.$slider.attr('data-sizes'),
+                    imageToLoad = document.createElement('img');
+
+                imageToLoad.onload = function() {
+
+                    image
+                        .animate({ opacity: 0 }, 100, function() {
+
+                            if (imageSrcSet) {
+                                image
+                                    .attr('srcset', imageSrcSet );
+
+                                if (imageSizes) {
+                                    image
+                                        .attr('sizes', imageSizes );
+                                }
+                            }
+
+                            image
+                                .attr('src', imageSource)
+                                .animate({ opacity: 1 }, 200, function() {
+                                    image
+                                        .removeAttr('data-lazy data-srcset data-sizes')
+                                        .removeClass('slick-loading');
+                                });
+                            _.$slider.trigger('lazyLoaded', [_, image, imageSource]);
+                        });
 
                 };
 
-                var holder = $('#line-chart');
+                imageToLoad.onerror = function() {
 
-                if (holder.length) {
-                    $.plot(holder, data, Options);
-                }
-            });
-            //line chart end
+                    image
+                        .removeAttr( 'data-lazy' )
+                        .removeClass( 'slick-loading' )
+                        .addClass( 'slick-lazyload-error' );
 
-            //start bar chart
-            var d1 = [["1", 100], ["2", 80], ["3", 66], ["4", 48], ["5", 68], ["6", 48], ["7", 66], ["8", 80], ["9", 64], ["10", 48], ["11", 64], ["12", 100]];
-            $.plot("#bar-chart", [{
-                data: d1,
-                label: "Project",
-                color: "#dcdcdc"
-            }], {
-                series: {
-                    bars: {
-                        align: "center",
-                        lineWidth: 0,
-                        show: !0,
-                        barWidth: .6,
-                        fill: .9
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                legend: {
-                    container: '#basicFlotLegend-barchart',
-                    show: true
-                },
-                tooltip: true,
-                tooltipOpts: {
-                    content: '%s: %y'
-                },
+                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
 
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end bar chart
+                };
 
-            //start bar stack
-            var d11 = [["Jan", 130], ["Feb", 63], ["Mar", 104], ["Apr", 54], ["May", 92], ["Jun", 150], ["Jul", 50], ["Aug", 80], ["Sep", 120], ["Oct", 91], ["Nov", 79], ["Dec", 112]];
-            var d12 = [["Jan", 58], ["Feb", 30], ["Mar", 46], ["Apr", 35], ["May", 55], ["Jun", 46], ["Jul", 20], ["Aug", 50], ["Sep", 50], ["Oct", 40], ["Nov", 35], ["Dec", 57]];
-            $.plot("#bar-chart-stacked", [{
-                data: d11,
-                label: "New Visitor",
-                color: "#6699cc"
-            }, {
-                data: d12,
-                label: "Returning Visitor",
-                color: "#66cc99"
-            }], {
-                series: {
-                    stack: !0,
-                    bars: {
-                        align: "center",
-                        lineWidth: 0,
-                        show: !0,
-                        barWidth: .6,
-                        fill: .9
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                legend: {
-                    container: '#basicFlotLegend-stac',
-                    show: true
-                },
-                tooltip: !0,
-                tooltipOpts: {
-                    content: "%x : %y",
-                    defaultTheme: false
-                },
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end bar chart stack
-            //donut
-            var datax = [{
-                label: "Google+",
-                data: 180,
-                color: '#ff6666'
-            }, {
-                label: "Profile",
-                data: 150,
-                color: '#f0ad4e'
-            }, {
-                label: "Facebook ",
-                data: 130,
-                color: '#6699cc'
-            }, {
-                label: "Twitter ",
-                data: 190,
-                color: '#66ccff'
-            }, {
-                label: "Linkedin",
-                data: 120,
-                color: '#6699cc'
-            }];
-
-            $.plot($("#donut"), datax, {
-                series: {
-                    pie: {
-                        innerRadius: 0.5,
-                        show: true
-                    }
-                },
-                legend: {
-                    show: false
-                },
-                grid: {
-                    hoverable: true
-                },
-                tooltip: true,
-                tooltipOpts: {
-                    content: "%p.0%, %s"
-                }
+                imageToLoad.src = imageSource;
 
             });
-            /*END OF DONUT CHART */
 
-            /* PIE CHART  START*/
+        }
 
-            $(function () {
-                var data = [],
-                    series = Math.floor(Math.random() * 6) + 3;
+        if (_.options.centerMode === true) {
+            if (_.options.infinite === true) {
+                rangeStart = _.currentSlide + (_.options.slidesToShow / 2 + 1);
+                rangeEnd = rangeStart + _.options.slidesToShow + 2;
+            } else {
+                rangeStart = Math.max(0, _.currentSlide - (_.options.slidesToShow / 2 + 1));
+                rangeEnd = 2 + (_.options.slidesToShow / 2 + 1) + _.currentSlide;
+            }
+        } else {
+            rangeStart = _.options.infinite ? _.options.slidesToShow + _.currentSlide : _.currentSlide;
+            rangeEnd = Math.ceil(rangeStart + _.options.slidesToShow);
+            if (_.options.fade === true) {
+                if (rangeStart > 0) { rangeStart--; }
+                if (rangeEnd <= _.slideCount) { rangeEnd++; }
+            }
+        }
 
-                for (var i = 0; i < series; i++) {
-                    data[i] = {
-                        label: "Series" + (i + 1),
-                        data: Math.floor(Math.random() * 100) + 1
-                    };
-                }
-                $.plot("#placeholdertranslabel", data, {
-                    series: {
-                        pie: {
-                            show: true,
-                            radius: 1,
-                            label: {
-                                show: true,
-                                radius: 1,
-                                formatter: labelFormatter,
-                                background: {
-                                    opacity: 0.8
-                                }
-                            }
-                        }
-                    },
-                    legend: {
-                        show: false
-                    },
-                    colors: ['#6699cc', '#f0ad4e', '#66ccff', '#dcdcdc']
-                });
+        loadRange = _.$slider.find('.slick-slide').slice(rangeStart, rangeEnd);
 
-                $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
-            });
+        if (_.options.lazyLoad === 'anticipated') {
+            var prevSlide = rangeStart - 1,
+                nextSlide = rangeEnd,
+                $slides = _.$slider.find('.slick-slide');
 
-            function labelFormatter(label, series) {
-                return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+            for (var i = 0; i < _.options.slidesToScroll; i++) {
+                if (prevSlide < 0) { prevSlide = _.slideCount - 1; }
+                loadRange = loadRange.add($slides.eq(prevSlide));
+                loadRange = loadRange.add($slides.eq(nextSlide));
+                prevSlide--;
+                nextSlide++;
+            }
+        }
+
+        loadImages(loadRange);
+
+        if (_.slideCount <= _.options.slidesToShow) {
+            cloneRange = _.$slider.find('.slick-slide');
+            loadImages(cloneRange);
+        } else
+        if (_.currentSlide >= _.slideCount - _.options.slidesToShow) {
+            cloneRange = _.$slider.find('.slick-cloned').slice(0, _.options.slidesToShow);
+            loadImages(cloneRange);
+        } else if (_.currentSlide === 0) {
+            cloneRange = _.$slider.find('.slick-cloned').slice(_.options.slidesToShow * -1);
+            loadImages(cloneRange);
+        }
+
+    };
+
+    Slick.prototype.loadSlider = function() {
+
+        var _ = this;
+
+        _.setPosition();
+
+        _.$slideTrack.css({
+            opacity: 1
+        });
+
+        _.$slider.removeClass('slick-loading');
+
+        _.initUI();
+
+        if (_.options.lazyLoad === 'progressive') {
+            _.progressiveLazyLoad();
+        }
+
+    };
+
+    Slick.prototype.next = Slick.prototype.slickNext = function() {
+
+        var _ = this;
+
+        _.changeSlide({
+            data: {
+                message: 'next'
+            }
+        });
+
+    };
+
+    Slick.prototype.orientationChange = function() {
+
+        var _ = this;
+
+        _.checkResponsive();
+        _.setPosition();
+
+    };
+
+    Slick.prototype.pause = Slick.prototype.slickPause = function() {
+
+        var _ = this;
+
+        _.autoPlayClear();
+        _.paused = true;
+
+    };
+
+    Slick.prototype.play = Slick.prototype.slickPlay = function() {
+
+        var _ = this;
+
+        _.autoPlay();
+        _.options.autoplay = true;
+        _.paused = false;
+        _.focussed = false;
+        _.interrupted = false;
+
+    };
+
+    Slick.prototype.postSlide = function(index) {
+
+        var _ = this;
+
+        if( !_.unslicked ) {
+
+            _.$slider.trigger('afterChange', [_, index]);
+
+            _.animating = false;
+
+            if (_.slideCount > _.options.slidesToShow) {
+                _.setPosition();
             }
 
-            //end of transparent label pie charts
+            _.swipeLeft = null;
 
-
-            $(function () {
-                var data = [],
-                    series = Math.floor(Math.random() * 6) + 3;
-
-                for (var i = 0; i < series; i++) {
-                    data[i] = {
-                        label: "Series" + (i + 1),
-                        data: Math.floor(Math.random() * 100) + 1
-                    };
-                }
-                $.plot('#placeholdertiltedpie', data, {
-                    series: {
-                        pie: {
-                            show: true,
-                            radius: 1,
-                            tilt: 0.5,
-                            label: {
-                                show: true,
-                                radius: 1,
-                                formatter: labelFormatter,
-                                background: {
-                                    opacity: 0.8
-                                }
-                            },
-                            combine: {
-                                color: "#999",
-                                threshold: 0.1
-                            }
-                        }
-                    },
-                    legend: {
-                        show: false
-                    },
-                    colors: ['#DCDCDC', '#f0ad4e', '#6699cc', '#66ccff']
-                });
-
-                $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
-            });
-
-            /* server load  */
-
-            var data = [],
-                totalPoints = 300;
-
-            function getRandomData() {
-                if (data.length > 0) data = data.slice(1);
-
-                // do a random walk
-                while (data.length < totalPoints) {
-                    var prev = data.length > 0 ? data[data.length - 1] : 50;
-                    var y = prev + Math.random() * 10 - 5;
-                    if (y < 0) y = 0;
-                    if (y > 100) y = 100;
-                    data.push(y);
-                }
-
-                // zip the generated y values with the x values
-                var res = [];
-                for (var i = 0; i < data.length; ++i) {
-                    res.push([i, data[i]]);
-                }return res;
+            if ( _.options.autoplay ) {
+                _.autoPlay();
             }
 
-            // setup control widget
-            var updateInterval = 50;
+            if (_.options.accessibility === true) {
+                _.initADA();
 
-            // setup plot
-            var options = {
-                colors: ["#66ccff"],
-                series: {
-                    shadowSize: 0,
-                    lines: {
-                        show: true,
-                        fill: true,
-                        fillColor: {
-                            colors: [{
-                                opacity: 0.5
-                            }, {
-                                opacity: 0.5
-                            }]
-                        }
-                    }
-                },
-                yaxis: {
-                    min: 0,
-                    max: 120
-                },
-                xaxis: {
-                    show: false
-                },
-                grid: {
-                    backgroundColor: '#fff',
-                    borderWidth: 1,
-                    borderColor: '#fff'
+                if (_.options.focusOnChange) {
+                    var $currentSlide = $$$1(_.$slides.get(_.currentSlide));
+                    $currentSlide.attr('tabindex', 0).focus();
                 }
+            }
+
+        }
+
+    };
+
+    Slick.prototype.prev = Slick.prototype.slickPrev = function() {
+
+        var _ = this;
+
+        _.changeSlide({
+            data: {
+                message: 'previous'
+            }
+        });
+
+    };
+
+    Slick.prototype.preventDefault = function(event) {
+
+        event.preventDefault();
+
+    };
+
+    Slick.prototype.progressiveLazyLoad = function( tryCount ) {
+
+        tryCount = tryCount || 1;
+
+        var _ = this,
+            $imgsToLoad = $$$1( 'img[data-lazy]', _.$slider ),
+            image,
+            imageSource,
+            imageSrcSet,
+            imageSizes,
+            imageToLoad;
+
+        if ( $imgsToLoad.length ) {
+
+            image = $imgsToLoad.first();
+            imageSource = image.attr('data-lazy');
+            imageSrcSet = image.attr('data-srcset');
+            imageSizes  = image.attr('data-sizes') || _.$slider.attr('data-sizes');
+            imageToLoad = document.createElement('img');
+
+            imageToLoad.onload = function() {
+
+                if (imageSrcSet) {
+                    image
+                        .attr('srcset', imageSrcSet );
+
+                    if (imageSizes) {
+                        image
+                            .attr('sizes', imageSizes );
+                    }
+                }
+
+                image
+                    .attr( 'src', imageSource )
+                    .removeAttr('data-lazy data-srcset data-sizes')
+                    .removeClass('slick-loading');
+
+                if ( _.options.adaptiveHeight === true ) {
+                    _.setPosition();
+                }
+
+                _.$slider.trigger('lazyLoaded', [ _, image, imageSource ]);
+                _.progressiveLazyLoad();
+
             };
 
-            var plot4 = $.plot($("#realtime"), [getRandomData()], options);
+            imageToLoad.onerror = function() {
 
-            function update() {
-                plot4.setData([getRandomData()]);
-                // since the axes don't change, we don't need to call plot.setupGrid()
-                plot4.draw();
-                setTimeout(update, updateInterval);
-            }
+                if ( tryCount < 3 ) {
 
-            update();
-            //start area chart
+                    /**
+                     * try to load the image 3 times,
+                     * leave a slight delay so we don't get
+                     * servers blocking the request.
+                     */
+                    setTimeout( function() {
+                        _.progressiveLazyLoad( tryCount + 1 );
+                    }, 500 );
 
-            var da1 = [["Jan", 50], ["Feb", 80], ["Mar", 60], ["Apr", 90], ["May", 60], ["Jun", 80], ["Jul", 80]];
-            var da2 = [["Jan", 20], ["Feb", 40], ["Mar", 30], ["Apr", 40], ["May", 30], ["Jun", 30], ["Jul", 50]];
-            $.plot("#area-chart", [{
-                data: da1,
-                label: "Product 1",
-                color: "#66ccff"
-            }, {
-                data: da2,
-                label: "product 2",
-                color: "#f0ad4e"
-            }], {
-                series: {
-                    lines: {
-                        show: !0,
-                        fill: .8
-                    },
-                    points: {
-                        show: !0,
-                        radius: 4
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                tooltip: !0,
-                tooltipOpts: {
-                    content: "%x : %y",
-                    defaultTheme: false
-                },
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end  area chart
-            //start spline area chart
-            var ds1 = [["Jan", 50], ["Feb", 80], ["Mar", 60], ["Apr", 90], ["May", 60], ["Jun", 80], ["Jul", 70]];
-            var ds2 = [["Jan", 20], ["Feb", 40], ["Mar", 30], ["Apr", 40], ["May", 30], ["Jun", 30], ["Jul", 50]];
-            $.plot("#chart-spline", [{
-                data: ds1,
-                label: "Product 1",
-                color: "#DCDCDC"
-            }, {
-                data: ds2,
-                label: "Product 2",
-                color: "#66ccff"
-            }], {
-                series: {
-                    lines: {
-                        show: !1
-                    },
-                    splines: {
-                        show: !0,
-                        tension: .4,
-                        lineWidth: 2,
-                        fill: .8
-                    },
-                    points: {
-                        show: !0,
-                        radius: 4
-                    }
-                },
-                grid: {
-                    borderColor: "#ddd",
-                    borderWidth: 1,
-                    hoverable: !0
-                },
-                tooltip: !0,
-                tooltipOpts: {
-                    content: "%x : %y",
-                    defaultTheme: false
-                },
-                xaxis: {
-                    tickColor: "#ddd",
-                    mode: "categories"
-                },
-                yaxis: {
-                    tickColor: "#ddd"
-                },
-                shadowSize: 0
-            });
-            //end spline area chart
-        });
-    },
-    destroyed: function destroyed() {}
-});
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(521)))
+                } else {
 
-/***/ }),
+                    image
+                        .removeAttr( 'data-lazy' )
+                        .removeClass( 'slick-loading' )
+                        .addClass( 'slick-lazyload-error' );
 
-/***/ 1732:
-/***/ (function(module, exports, __webpack_require__) {
+                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for plotting textual data or categories.
+                    _.progressiveLazyLoad();
 
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-Consider a dataset like [["February", 34], ["March", 20], ...]. This plugin
-allows you to plot such a dataset directly.
-
-To enable it, you must specify mode: "categories" on the axis with the textual
-labels, e.g.
-
-	$.plot("#placeholder", data, { xaxis: { mode: "categories" } });
-
-By default, the labels are ordered as they are met in the data series. If you
-need a different ordering, you can specify "categories" on the axis options
-and list the categories there:
-
-	xaxis: {
-		mode: "categories",
-		categories: ["February", "March", "April"]
-	}
-
-If you need to customize the distances between the categories, you can specify
-"categories" as an object mapping labels to values
-
-	xaxis: {
-		mode: "categories",
-		categories: { "February": 1, "March": 3, "April": 4 }
-	}
-
-If you don't specify all categories, the remaining categories will be numbered
-from the max value plus 1 (with a spacing of 1 between each).
-
-Internally, the plugin works by transforming the input data through an auto-
-generated mapping where the first category becomes 0, the second 1, etc.
-Hence, a point like ["February", 34] becomes [0, 34] internally in Flot (this
-is visible in hover and click events that return numbers rather than the
-category labels). The plugin also overrides the tick generator to spit out the
-categories as ticks instead of the values.
-
-If you need to map a value back to its label, the mapping is always accessible
-as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
-
-*/
-
-(function ($) {
-    var options = {
-        xaxis: {
-            categories: null
-        },
-        yaxis: {
-            categories: null
-        }
-    };
-    
-    function processRawData(plot, series, data, datapoints) {
-        // if categories are enabled, we need to disable
-        // auto-transformation to numbers so the strings are intact
-        // for later processing
-
-        var xCategories = series.xaxis.options.mode == "categories",
-            yCategories = series.yaxis.options.mode == "categories";
-        
-        if (!(xCategories || yCategories))
-            return;
-
-        var format = datapoints.format;
-
-        if (!format) {
-            // FIXME: auto-detection should really not be defined here
-            var s = series;
-            format = [];
-            format.push({ x: true, number: true, required: true });
-            format.push({ y: true, number: true, required: true });
-
-            if (s.bars.show || (s.lines.show && s.lines.fill)) {
-                var autoscale = !!((s.bars.show && s.bars.zero) || (s.lines.show && s.lines.zero));
-                format.push({ y: true, number: true, required: false, defaultValue: 0, autoscale: autoscale });
-                if (s.bars.horizontal) {
-                    delete format[format.length - 1].y;
-                    format[format.length - 1].x = true;
                 }
-            }
-            
-            datapoints.format = format;
+
+            };
+
+            imageToLoad.src = imageSource;
+
+        } else {
+
+            _.$slider.trigger('allImagesLoaded', [ _ ]);
+
         }
 
-        for (var m = 0; m < format.length; ++m) {
-            if (format[m].x && xCategories)
-                format[m].number = false;
-            
-            if (format[m].y && yCategories)
-                format[m].number = false;
-        }
-    }
+    };
 
-    function getNextIndex(categories) {
-        var index = -1;
-        
-        for (var v in categories)
-            if (categories[v] > index)
-                index = categories[v];
+    Slick.prototype.refresh = function( initializing ) {
 
-        return index + 1;
-    }
+        var _ = this, currentSlide, lastVisibleIndex;
 
-    function categoriesTickGenerator(axis) {
-        var res = [];
-        for (var label in axis.categories) {
-            var v = axis.categories[label];
-            if (v >= axis.min && v <= axis.max)
-                res.push([v, label]);
+        lastVisibleIndex = _.slideCount - _.options.slidesToShow;
+
+        // in non-infinite sliders, we don't want to go past the
+        // last visible index.
+        if( !_.options.infinite && ( _.currentSlide > lastVisibleIndex )) {
+            _.currentSlide = lastVisibleIndex;
         }
 
-        res.sort(function (a, b) { return a[0] - b[0]; });
+        // if less slides than to show, go to start.
+        if ( _.slideCount <= _.options.slidesToShow ) {
+            _.currentSlide = 0;
 
-        return res;
-    }
-    
-    function setupCategoriesForAxis(series, axis, datapoints) {
-        if (series[axis].options.mode != "categories")
-            return;
-        
-        if (!series[axis].categories) {
-            // parse options
-            var c = {}, o = series[axis].options.categories || {};
-            if ($.isArray(o)) {
-                for (var i = 0; i < o.length; ++i)
-                    c[o[i]] = i;
-            }
-            else {
-                for (var v in o)
-                    c[v] = o[v];
-            }
-            
-            series[axis].categories = c;
         }
 
-        // fix ticks
-        if (!series[axis].options.ticks)
-            series[axis].options.ticks = categoriesTickGenerator;
+        currentSlide = _.currentSlide;
 
-        transformPointsOnAxis(datapoints, axis, series[axis].categories);
-    }
-    
-    function transformPointsOnAxis(datapoints, axis, categories) {
-        // go through the points, transforming them
-        var points = datapoints.points,
-            ps = datapoints.pointsize,
-            format = datapoints.format,
-            formatColumn = axis.charAt(0),
-            index = getNextIndex(categories);
+        _.destroy(true);
 
-        for (var i = 0; i < points.length; i += ps) {
-            if (points[i] == null)
-                continue;
-            
-            for (var m = 0; m < ps; ++m) {
-                var val = points[i + m];
+        $$$1.extend(_, _.initials, { currentSlide: currentSlide });
 
-                if (val == null || !format[m][formatColumn])
-                    continue;
+        _.init();
 
-                if (!(val in categories)) {
-                    categories[val] = index;
-                    ++index;
+        if( !initializing ) {
+
+            _.changeSlide({
+                data: {
+                    message: 'index',
+                    index: currentSlide
                 }
-                
-                points[i + m] = categories[val];
-            }
+            }, false);
+
         }
-    }
 
-    function processDatapoints(plot, series, datapoints) {
-        setupCategoriesForAxis(series, "xaxis", datapoints);
-        setupCategoriesForAxis(series, "yaxis", datapoints);
-    }
+    };
 
-    function init(plot) {
-        plot.hooks.processRawData.push(processRawData);
-        plot.hooks.processDatapoints.push(processDatapoints);
-    }
-    
-    $.plot.plugins.push({
-        init: init,
-        options: options,
-        name: 'categories',
-        version: '1.0'
-    });
-})(jQuery);
+    Slick.prototype.registerBreakpoints = function() {
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
+        var _ = this, breakpoint, currentBreakpoint, l,
+            responsiveSettings = _.options.responsive || null;
 
-/***/ }),
+        if ( $$$1.type(responsiveSettings) === 'array' && responsiveSettings.length ) {
 
-/***/ 1733:
-/***/ (function(module, exports, __webpack_require__) {
+            _.respondTo = _.options.respondTo || 'window';
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*
- * jquery.flot.tooltip
- * 
- * description: easy-to-use tooltips for Flot charts
- * version: 0.9.0
- * authors: Krzysztof Urbas @krzysu [myviews.pl],Evan Steinkerchner @Roundaround
- * website: https://github.com/krzysu/flot.tooltip
- * 
- * build on 2016-07-26
- * released under MIT License, 2012
-*/ 
-(function ($) {
-    // plugin options, default values
-    var defaultOptions = {
-        tooltip: {
-            show: false,
-            cssClass: "flotTip",
-            content: "%s | X: %x | Y: %y",
-            // allowed templates are:
-            // %s -> series label,
-            // %c -> series color,
-            // %lx -> x axis label (requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels),
-            // %ly -> y axis label (requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels),
-            // %x -> X value,
-            // %y -> Y value,
-            // %x.2 -> precision of X value,
-            // %p -> percent
-            // %n -> value (not percent) of pie chart
-            xDateFormat: null,
-            yDateFormat: null,
-            monthNames: null,
-            dayNames: null,
-            shifts: {
-                x: 10,
-                y: 20
-            },
-            defaultTheme: true,
-            snap: true,
-            lines: false,
-            clickTips: false,
+            for ( breakpoint in responsiveSettings ) {
 
-            // callbacks
-            onHover: function (flotItem, $tooltipEl) {},
+                l = _.breakpoints.length-1;
 
-            $compat: false
+                if (responsiveSettings.hasOwnProperty(breakpoint)) {
+                    currentBreakpoint = responsiveSettings[breakpoint].breakpoint;
+
+                    // loop through the breakpoints and cut out any existing
+                    // ones with the same breakpoint number, we don't want dupes.
+                    while( l >= 0 ) {
+                        if( _.breakpoints[l] && _.breakpoints[l] === currentBreakpoint ) {
+                            _.breakpoints.splice(l,1);
+                        }
+                        l--;
+                    }
+
+                    _.breakpoints.push(currentBreakpoint);
+                    _.breakpointSettings[currentBreakpoint] = responsiveSettings[breakpoint].settings;
+
+                }
+
+            }
+
+            _.breakpoints.sort(function(a, b) {
+                return ( _.options.mobileFirst ) ? a-b : b-a;
+            });
+
+        }
+
+    };
+
+    Slick.prototype.reinit = function() {
+
+        var _ = this;
+
+        _.$slides =
+            _.$slideTrack
+                .children(_.options.slide)
+                .addClass('slick-slide');
+
+        _.slideCount = _.$slides.length;
+
+        if (_.currentSlide >= _.slideCount && _.currentSlide !== 0) {
+            _.currentSlide = _.currentSlide - _.options.slidesToScroll;
+        }
+
+        if (_.slideCount <= _.options.slidesToShow) {
+            _.currentSlide = 0;
+        }
+
+        _.registerBreakpoints();
+
+        _.setProps();
+        _.setupInfinite();
+        _.buildArrows();
+        _.updateArrows();
+        _.initArrowEvents();
+        _.buildDots();
+        _.updateDots();
+        _.initDotEvents();
+        _.cleanUpSlideEvents();
+        _.initSlideEvents();
+
+        _.checkResponsive(false, true);
+
+        if (_.options.focusOnSelect === true) {
+            $$$1(_.$slideTrack).children().on('click.slick', _.selectHandler);
+        }
+
+        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
+
+        _.setPosition();
+        _.focusHandler();
+
+        _.paused = !_.options.autoplay;
+        _.autoPlay();
+
+        _.$slider.trigger('reInit', [_]);
+
+    };
+
+    Slick.prototype.resize = function() {
+
+        var _ = this;
+
+        if ($$$1(window).width() !== _.windowWidth) {
+            clearTimeout(_.windowDelay);
+            _.windowDelay = window.setTimeout(function() {
+                _.windowWidth = $$$1(window).width();
+                _.checkResponsive();
+                if( !_.unslicked ) { _.setPosition(); }
+            }, 50);
         }
     };
 
-    // dummy default options object for legacy code (<0.8.5) - is deleted later
-    defaultOptions.tooltipOpts = defaultOptions.tooltip;
+    Slick.prototype.removeSlide = Slick.prototype.slickRemove = function(index, removeBefore, removeAll) {
 
-    // object
-    var FlotTooltip = function (plot) {
-        // variables
-        this.tipPosition = {x: 0, y: 0};
+        var _ = this;
 
-        this.init(plot);
-    };
-
-    // main plugin function
-    FlotTooltip.prototype.init = function (plot) {
-        var that = this;
-
-        // detect other flot plugins
-        var plotPluginsLength = $.plot.plugins.length;
-        this.plotPlugins = [];
-
-        if (plotPluginsLength) {
-            for (var p = 0; p < plotPluginsLength; p++) {
-                this.plotPlugins.push($.plot.plugins[p].name);
-            }
+        if (typeof(index) === 'boolean') {
+            removeBefore = index;
+            index = removeBefore === true ? 0 : _.slideCount - 1;
+        } else {
+            index = removeBefore === true ? --index : index;
         }
 
-        plot.hooks.bindEvents.push(function (plot, eventHolder) {
+        if (_.slideCount < 1 || index < 0 || index > _.slideCount - 1) {
+            return false;
+        }
 
-            // get plot options
-            that.plotOptions = plot.getOptions();
+        _.unload();
 
-            // for legacy (<0.8.5) implementations
-            if (typeof(that.plotOptions.tooltip) === 'boolean') {
-                that.plotOptions.tooltipOpts.show = that.plotOptions.tooltip;
-                that.plotOptions.tooltip = that.plotOptions.tooltipOpts;
-                delete that.plotOptions.tooltipOpts;
-            }
+        if (removeAll === true) {
+            _.$slideTrack.children().remove();
+        } else {
+            _.$slideTrack.children(this.options.slide).eq(index).remove();
+        }
 
-            // if not enabled return
-            if (that.plotOptions.tooltip.show === false || typeof that.plotOptions.tooltip.show === 'undefined') return;
+        _.$slides = _.$slideTrack.children(this.options.slide);
 
-            // shortcut to access tooltip options
-            that.tooltipOptions = that.plotOptions.tooltip;
+        _.$slideTrack.children(this.options.slide).detach();
 
-            if (that.tooltipOptions.$compat) {
-                that.wfunc = 'width';
-                that.hfunc = 'height';
+        _.$slideTrack.append(_.$slides);
+
+        _.$slidesCache = _.$slides;
+
+        _.reinit();
+
+    };
+
+    Slick.prototype.setCSS = function(position) {
+
+        var _ = this,
+            positionProps = {},
+            x, y;
+
+        if (_.options.rtl === true) {
+            position = -position;
+        }
+        x = _.positionProp == 'left' ? Math.ceil(position) + 'px' : '0px';
+        y = _.positionProp == 'top' ? Math.ceil(position) + 'px' : '0px';
+
+        positionProps[_.positionProp] = position;
+
+        if (_.transformsEnabled === false) {
+            _.$slideTrack.css(positionProps);
+        } else {
+            positionProps = {};
+            if (_.cssTransitions === false) {
+                positionProps[_.animType] = 'translate(' + x + ', ' + y + ')';
+                _.$slideTrack.css(positionProps);
             } else {
-                that.wfunc = 'innerWidth';
-                that.hfunc = 'innerHeight';
+                positionProps[_.animType] = 'translate3d(' + x + ', ' + y + ', 0px)';
+                _.$slideTrack.css(positionProps);
             }
-
-            // create tooltip DOM element
-            var $tip = that.getDomElement();
-
-            // bind event
-            $( plot.getPlaceholder() ).bind("plothover", plothover);
-            if (that.tooltipOptions.clickTips) {
-                $( plot.getPlaceholder() ).bind("plotclick", plotclick);
-            }
-            that.clickmode = false;
-
-            $(eventHolder).bind('mousemove', mouseMove);
-        });
-
-        plot.hooks.shutdown.push(function (plot, eventHolder){
-            $(plot.getPlaceholder()).unbind("plothover", plothover);
-            $(plot.getPlaceholder()).unbind("plotclick", plotclick);
-            plot.removeTooltip();
-            $(eventHolder).unbind("mousemove", mouseMove);
-        });
-
-        function mouseMove(e){
-            var pos = {};
-            pos.x = e.pageX;
-            pos.y = e.pageY;
-            plot.setTooltipPosition(pos);
         }
+
+    };
+
+    Slick.prototype.setDimensions = function() {
+
+        var _ = this;
+
+        if (_.options.vertical === false) {
+            if (_.options.centerMode === true) {
+                _.$list.css({
+                    padding: ('0px ' + _.options.centerPadding)
+                });
+            }
+        } else {
+            _.$list.height(_.$slides.first().outerHeight(true) * _.options.slidesToShow);
+            if (_.options.centerMode === true) {
+                _.$list.css({
+                    padding: (_.options.centerPadding + ' 0px')
+                });
+            }
+        }
+
+        _.listWidth = _.$list.width();
+        _.listHeight = _.$list.height();
+
+
+        if (_.options.vertical === false && _.options.variableWidth === false) {
+            _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);
+            _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
+
+        } else if (_.options.variableWidth === true) {
+            _.$slideTrack.width(5000 * _.slideCount);
+        } else {
+            _.slideWidth = Math.ceil(_.listWidth);
+            _.$slideTrack.height(Math.ceil((_.$slides.first().outerHeight(true) * _.$slideTrack.children('.slick-slide').length)));
+        }
+
+        var offset = _.$slides.first().outerWidth(true) - _.$slides.first().width();
+        if (_.options.variableWidth === false) { _.$slideTrack.children('.slick-slide').width(_.slideWidth - offset); }
+
+    };
+
+    Slick.prototype.setFade = function() {
+
+        var _ = this,
+            targetLeft;
+
+        _.$slides.each(function(index, element) {
+            targetLeft = (_.slideWidth * index) * -1;
+            if (_.options.rtl === true) {
+                $$$1(element).css({
+                    position: 'relative',
+                    right: targetLeft,
+                    top: 0,
+                    zIndex: _.options.zIndex - 2,
+                    opacity: 0
+                });
+            } else {
+                $$$1(element).css({
+                    position: 'relative',
+                    left: targetLeft,
+                    top: 0,
+                    zIndex: _.options.zIndex - 2,
+                    opacity: 0
+                });
+            }
+        });
+
+        _.$slides.eq(_.currentSlide).css({
+            zIndex: _.options.zIndex - 1,
+            opacity: 1
+        });
+
+    };
+
+    Slick.prototype.setHeight = function() {
+
+        var _ = this;
+
+        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
+            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
+            _.$list.css('height', targetHeight);
+        }
+
+    };
+
+    Slick.prototype.setOption =
+    Slick.prototype.slickSetOption = function() {
 
         /**
-         *  open the tooltip (if not already open) and freeze it on the current position till the next click
+         * accepts arguments in format of:
+         *
+         *  - for changing a single option's value:
+         *     .slick("setOption", option, value, refresh )
+         *
+         *  - for changing a set of responsive options:
+         *     .slick("setOption", 'responsive', [{}, ...], refresh )
+         *
+         *  - for updating multiple values at once (not responsive)
+         *     .slick("setOption", { 'option': value, ... }, refresh )
          */
-        function plotclick(event, pos, item) {
-            if (! that.clickmode) {
-                // it is the click activating the clicktip
-                plothover(event, pos, item);
-                if (that.getDomElement().is(":visible")) {
-                    $(plot.getPlaceholder()).unbind("plothover", plothover);
-                    that.clickmode = true;
+
+        var _ = this, l, item, option, value, refresh = false, type;
+
+        if( $$$1.type( arguments[0] ) === 'object' ) {
+
+            option =  arguments[0];
+            refresh = arguments[1];
+            type = 'multiple';
+
+        } else if ( $$$1.type( arguments[0] ) === 'string' ) {
+
+            option =  arguments[0];
+            value = arguments[1];
+            refresh = arguments[2];
+
+            if ( arguments[0] === 'responsive' && $$$1.type( arguments[1] ) === 'array' ) {
+
+                type = 'responsive';
+
+            } else if ( typeof arguments[1] !== 'undefined' ) {
+
+                type = 'single';
+
+            }
+
+        }
+
+        if ( type === 'single' ) {
+
+            _.options[option] = value;
+
+
+        } else if ( type === 'multiple' ) {
+
+            $$$1.each( option , function( opt, val ) {
+
+                _.options[opt] = val;
+
+            });
+
+
+        } else if ( type === 'responsive' ) {
+
+            for ( item in value ) {
+
+                if( $$$1.type( _.options.responsive ) !== 'array' ) {
+
+                    _.options.responsive = [ value[item] ];
+
+                } else {
+
+                    l = _.options.responsive.length-1;
+
+                    // loop through the responsive object and splice out duplicates.
+                    while( l >= 0 ) {
+
+                        if( _.options.responsive[l].breakpoint === value[item].breakpoint ) {
+
+                            _.options.responsive.splice(l,1);
+
+                        }
+
+                        l--;
+
+                    }
+
+                    _.options.responsive.push( value[item] );
+
                 }
-            } else {
-                // it is the click deactivating the clicktip
-                $( plot.getPlaceholder() ).bind("plothover", plothover);
-                plot.hideTooltip();
-                that.clickmode = false;
+
+            }
+
+        }
+
+        if ( refresh ) {
+
+            _.unload();
+            _.reinit();
+
+        }
+
+    };
+
+    Slick.prototype.setPosition = function() {
+
+        var _ = this;
+
+        _.setDimensions();
+
+        _.setHeight();
+
+        if (_.options.fade === false) {
+            _.setCSS(_.getLeft(_.currentSlide));
+        } else {
+            _.setFade();
+        }
+
+        _.$slider.trigger('setPosition', [_]);
+
+    };
+
+    Slick.prototype.setProps = function() {
+
+        var _ = this,
+            bodyStyle = document.body.style;
+
+        _.positionProp = _.options.vertical === true ? 'top' : 'left';
+
+        if (_.positionProp === 'top') {
+            _.$slider.addClass('slick-vertical');
+        } else {
+            _.$slider.removeClass('slick-vertical');
+        }
+
+        if (bodyStyle.WebkitTransition !== undefined ||
+            bodyStyle.MozTransition !== undefined ||
+            bodyStyle.msTransition !== undefined) {
+            if (_.options.useCSS === true) {
+                _.cssTransitions = true;
             }
         }
 
-        function plothover(event, pos, item) {
-            // Simple distance formula.
-            var lineDistance = function (p1x, p1y, p2x, p2y) {
-                return Math.sqrt((p2x - p1x) * (p2x - p1x) + (p2y - p1y) * (p2y - p1y));
-            };
-
-            // Here is some voodoo magic for determining the distance to a line form a given point {x, y}.
-            var dotLineLength = function (x, y, x0, y0, x1, y1, o) {
-                if (o && !(o =
-                    function (x, y, x0, y0, x1, y1) {
-                        if (typeof x0 !== 'undefined') return { x: x0, y: y };
-                        else if (typeof y0 !== 'undefined') return { x: x, y: y0 };
-
-                        var left,
-                            tg = -1 / ((y1 - y0) / (x1 - x0));
-
-                        return {
-                            x: left = (x1 * (x * tg - y + y0) + x0 * (x * -tg + y - y1)) / (tg * (x1 - x0) + y0 - y1),
-                            y: tg * left - tg * x + y
-                        };
-                    } (x, y, x0, y0, x1, y1),
-                    o.x >= Math.min(x0, x1) && o.x <= Math.max(x0, x1) && o.y >= Math.min(y0, y1) && o.y <= Math.max(y0, y1))
-                ) {
-                    var l1 = lineDistance(x, y, x0, y0), l2 = lineDistance(x, y, x1, y1);
-                    return l1 > l2 ? l2 : l1;
-                } else {
-                    var a = y0 - y1, b = x1 - x0, c = x0 * y1 - y0 * x1;
-                    return Math.abs(a * x + b * y + c) / Math.sqrt(a * a + b * b);
+        if ( _.options.fade ) {
+            if ( typeof _.options.zIndex === 'number' ) {
+                if( _.options.zIndex < 3 ) {
+                    _.options.zIndex = 3;
                 }
-            };
+            } else {
+                _.options.zIndex = _.defaults.zIndex;
+            }
+        }
 
-            if (item) {
-                plot.showTooltip(item, that.tooltipOptions.snap ? item : pos);
-            } else if (that.plotOptions.series.lines.show && that.tooltipOptions.lines === true) {
-                var maxDistance = that.plotOptions.grid.mouseActiveRadius;
+        if (bodyStyle.OTransform !== undefined) {
+            _.animType = 'OTransform';
+            _.transformType = '-o-transform';
+            _.transitionType = 'OTransition';
+            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.MozTransform !== undefined) {
+            _.animType = 'MozTransform';
+            _.transformType = '-moz-transform';
+            _.transitionType = 'MozTransition';
+            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.MozPerspective === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.webkitTransform !== undefined) {
+            _.animType = 'webkitTransform';
+            _.transformType = '-webkit-transform';
+            _.transitionType = 'webkitTransition';
+            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.msTransform !== undefined) {
+            _.animType = 'msTransform';
+            _.transformType = '-ms-transform';
+            _.transitionType = 'msTransition';
+            if (bodyStyle.msTransform === undefined) { _.animType = false; }
+        }
+        if (bodyStyle.transform !== undefined && _.animType !== false) {
+            _.animType = 'transform';
+            _.transformType = 'transform';
+            _.transitionType = 'transition';
+        }
+        _.transformsEnabled = _.options.useTransform && (_.animType !== null && _.animType !== false);
+    };
 
-                var closestTrace = {
-                    distance: maxDistance + 1
-                };
 
-                var ttPos = pos;
+    Slick.prototype.setSlideClasses = function(index) {
 
-                $.each(plot.getData(), function (i, series) {
-                    var xBeforeIndex = 0,
-                        xAfterIndex = -1;
+        var _ = this,
+            centerOffset, allSlides, indexOffset, remainder;
 
-                    // Our search here assumes our data is sorted via the x-axis.
-                    // TODO: Improve efficiency somehow - search smaller sets of data.
-                    for (var j = 1; j < series.data.length; j++) {
-                        if (series.data[j - 1][0] <= pos.x && series.data[j][0] >= pos.x) {
-                            xBeforeIndex = j - 1;
-                            xAfterIndex = j;
-                        }
-                    }
+        allSlides = _.$slider
+            .find('.slick-slide')
+            .removeClass('slick-active slick-center slick-current')
+            .attr('aria-hidden', 'true');
 
-                    if (xAfterIndex === -1) {
-                        plot.hideTooltip();
-                        return;
-                    }
+        _.$slides
+            .eq(index)
+            .addClass('slick-current');
 
-                    var pointPrev = { x: series.data[xBeforeIndex][0], y: series.data[xBeforeIndex][1] },
-                        pointNext = { x: series.data[xAfterIndex][0], y: series.data[xAfterIndex][1] };
+        if (_.options.centerMode === true) {
 
-                    var distToLine = dotLineLength(series.xaxis.p2c(pos.x), series.yaxis.p2c(pos.y), series.xaxis.p2c(pointPrev.x),
-                        series.yaxis.p2c(pointPrev.y), series.xaxis.p2c(pointNext.x), series.yaxis.p2c(pointNext.y), false);
+            var evenCoef = _.options.slidesToShow % 2 === 0 ? 1 : 0;
 
-                    if (distToLine < closestTrace.distance) {
+            centerOffset = Math.floor(_.options.slidesToShow / 2);
 
-                        var closestIndex = lineDistance(pointPrev.x, pointPrev.y, pos.x, pos.y) <
-                            lineDistance(pos.x, pos.y, pointNext.x, pointNext.y) ? xBeforeIndex : xAfterIndex;
+            if (_.options.infinite === true) {
 
-                        var pointSize = series.datapoints.pointsize;
+                if (index >= centerOffset && index <= (_.slideCount - 1) - centerOffset) {
+                    _.$slides
+                        .slice(index - centerOffset + evenCoef, index + centerOffset + 1)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
 
-                        // Calculate the point on the line vertically closest to our cursor.
-                        var pointOnLine = [
-                            pos.x,
-                            pointPrev.y + ((pointNext.y - pointPrev.y) * ((pos.x - pointPrev.x) / (pointNext.x - pointPrev.x)))
-                        ];
+                } else {
 
-                        var item = {
-                            datapoint: pointOnLine,
-                            dataIndex: closestIndex,
-                            series: series,
-                            seriesIndex: i
-                        };
+                    indexOffset = _.options.slidesToShow + index;
+                    allSlides
+                        .slice(indexOffset - centerOffset + 1 + evenCoef, indexOffset + centerOffset + 2)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
 
-                        closestTrace = {
-                            distance: distToLine,
-                            item: item
-                        };
+                }
 
-                        if (that.tooltipOptions.snap) {
-                            ttPos = {
-                                pageX: series.xaxis.p2c(pointOnLine[0]),
-                                pageY: series.yaxis.p2c(pointOnLine[1])
-                            };
-                        }
-                    }
+                if (index === 0) {
+
+                    allSlides
+                        .eq(allSlides.length - 1 - _.options.slidesToShow)
+                        .addClass('slick-center');
+
+                } else if (index === _.slideCount - 1) {
+
+                    allSlides
+                        .eq(_.options.slidesToShow)
+                        .addClass('slick-center');
+
+                }
+
+            }
+
+            _.$slides
+                .eq(index)
+                .addClass('slick-center');
+
+        } else {
+
+            if (index >= 0 && index <= (_.slideCount - _.options.slidesToShow)) {
+
+                _.$slides
+                    .slice(index, index + _.options.slidesToShow)
+                    .addClass('slick-active')
+                    .attr('aria-hidden', 'false');
+
+            } else if (allSlides.length <= _.options.slidesToShow) {
+
+                allSlides
+                    .addClass('slick-active')
+                    .attr('aria-hidden', 'false');
+
+            } else {
+
+                remainder = _.slideCount % _.options.slidesToShow;
+                indexOffset = _.options.infinite === true ? _.options.slidesToShow + index : index;
+
+                if (_.options.slidesToShow == _.options.slidesToScroll && (_.slideCount - index) < _.options.slidesToShow) {
+
+                    allSlides
+                        .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
+
+                } else {
+
+                    allSlides
+                        .slice(indexOffset, indexOffset + _.options.slidesToShow)
+                        .addClass('slick-active')
+                        .attr('aria-hidden', 'false');
+
+                }
+
+            }
+
+        }
+
+        if (_.options.lazyLoad === 'ondemand' || _.options.lazyLoad === 'anticipated') {
+            _.lazyLoad();
+        }
+    };
+
+    Slick.prototype.setupInfinite = function() {
+
+        var _ = this,
+            i, slideIndex, infiniteCount;
+
+        if (_.options.fade === true) {
+            _.options.centerMode = false;
+        }
+
+        if (_.options.infinite === true && _.options.fade === false) {
+
+            slideIndex = null;
+
+            if (_.slideCount > _.options.slidesToShow) {
+
+                if (_.options.centerMode === true) {
+                    infiniteCount = _.options.slidesToShow + 1;
+                } else {
+                    infiniteCount = _.options.slidesToShow;
+                }
+
+                for (i = _.slideCount; i > (_.slideCount -
+                        infiniteCount); i -= 1) {
+                    slideIndex = i - 1;
+                    $$$1(_.$slides[slideIndex]).clone(true).attr('id', '')
+                        .attr('data-slick-index', slideIndex - _.slideCount)
+                        .prependTo(_.$slideTrack).addClass('slick-cloned');
+                }
+                for (i = 0; i < infiniteCount  + _.slideCount; i += 1) {
+                    slideIndex = i;
+                    $$$1(_.$slides[slideIndex]).clone(true).attr('id', '')
+                        .attr('data-slick-index', slideIndex + _.slideCount)
+                        .appendTo(_.$slideTrack).addClass('slick-cloned');
+                }
+                _.$slideTrack.find('.slick-cloned').find('[id]').each(function() {
+                    $$$1(this).attr('id', '');
                 });
 
-                if (closestTrace.distance < maxDistance + 1)
-                    plot.showTooltip(closestTrace.item, ttPos);
-                else
-                    plot.hideTooltip();
-            } else {
-                plot.hideTooltip();
             }
+
         }
 
-        // Quick little function for setting the tooltip position.
-        plot.setTooltipPosition = function (pos) {
-            var $tip = that.getDomElement();
-
-            var totalTipWidth = $tip.outerWidth() + that.tooltipOptions.shifts.x;
-            var totalTipHeight = $tip.outerHeight() + that.tooltipOptions.shifts.y;
-            if ((pos.x - $(window).scrollLeft()) > ($(window)[that.wfunc]() - totalTipWidth)) {
-                pos.x -= totalTipWidth;
-                pos.x = Math.max(pos.x, 0);
-            }
-            if ((pos.y - $(window).scrollTop()) > ($(window)[that.hfunc]() - totalTipHeight)) {
-                pos.y -= totalTipHeight;
-            }
-
-	    /*
-	       The section applies the new positioning ONLY if pos.x and pos.y
-	       are numbers. If they are undefined or not a number, use the last
-	       known numerical position. This hack fixes a bug that kept pie
-	       charts from keeping their tooltip positioning.
-	     */
-
-            if (isNaN(pos.x)) {
-		that.tipPosition.x = that.tipPosition.xPrev;
-	    }
-	    else {
-		that.tipPosition.x = pos.x;
-		that.tipPosition.xPrev = pos.x;
-	    }
-	    if (isNaN(pos.y)) {
-		that.tipPosition.y = that.tipPosition.yPrev;
-	    }
-	    else {
-		that.tipPosition.y = pos.y;
-		that.tipPosition.yPrev = pos.y;
-	    }
-
-        };
-
-        // Quick little function for showing the tooltip.
-        plot.showTooltip = function (target, position, targetPosition) {
-            var $tip = that.getDomElement();
-
-            // convert tooltip content template to real tipText
-            var tipText = that.stringFormat(that.tooltipOptions.content, target);
-            if (tipText === '')
-                return;
-
-            $tip.html(tipText);
-            plot.setTooltipPosition({ x: that.tipPosition.x, y: that.tipPosition.y });
-            $tip.css({
-                left: that.tipPosition.x + that.tooltipOptions.shifts.x,
-                top: that.tipPosition.y + that.tooltipOptions.shifts.y
-            }).show();
-
-            // run callback
-            if (typeof that.tooltipOptions.onHover === 'function') {
-                that.tooltipOptions.onHover(target, $tip);
-            }
-        };
-
-        // Quick little function for hiding the tooltip.
-        plot.hideTooltip = function () {
-            that.getDomElement().hide().html('');
-        };
-
-        plot.removeTooltip = function() {
-            that.getDomElement().remove();
-        };
     };
 
-    /**
-     * get or create tooltip DOM element
-     * @return jQuery object
-     */
-    FlotTooltip.prototype.getDomElement = function () {
-        var $tip = $('<div>');
-        if (this.tooltipOptions && this.tooltipOptions.cssClass) {
-            $tip = $('.' + this.tooltipOptions.cssClass);
+    Slick.prototype.interrupt = function( toggle ) {
 
-            if( $tip.length === 0 ){
-                $tip = $('<div />').addClass(this.tooltipOptions.cssClass);
-                $tip.appendTo('body').hide().css({position: 'absolute'});
+        var _ = this;
 
-                if(this.tooltipOptions.defaultTheme) {
-                    $tip.css({
-                        'background': '#fff',
-                        'z-index': '1040',
-                        'padding': '0.4em 0.6em',
-                        'border-radius': '0.5em',
-                        'font-size': '0.8em',
-                        'border': '1px solid #111',
-                        'display': 'none',
-                        'white-space': 'nowrap'
+        if( !toggle ) {
+            _.autoPlay();
+        }
+        _.interrupted = toggle;
+
+    };
+
+    Slick.prototype.selectHandler = function(event) {
+
+        var _ = this;
+
+        var targetElement =
+            $$$1(event.target).is('.slick-slide') ?
+                $$$1(event.target) :
+                $$$1(event.target).parents('.slick-slide');
+
+        var index = parseInt(targetElement.attr('data-slick-index'));
+
+        if (!index) { index = 0; }
+
+        if (_.slideCount <= _.options.slidesToShow) {
+
+            _.slideHandler(index, false, true);
+            return;
+
+        }
+
+        _.slideHandler(index);
+
+    };
+
+    Slick.prototype.slideHandler = function(index, sync, dontAnimate) {
+
+        var targetSlide, animSlide, oldSlide, slideLeft, targetLeft = null,
+            _ = this, navTarget;
+
+        sync = sync || false;
+
+        if (_.animating === true && _.options.waitForAnimate === true) {
+            return;
+        }
+
+        if (_.options.fade === true && _.currentSlide === index) {
+            return;
+        }
+
+        if (sync === false) {
+            _.asNavFor(index);
+        }
+
+        targetSlide = index;
+        targetLeft = _.getLeft(targetSlide);
+        slideLeft = _.getLeft(_.currentSlide);
+
+        _.currentLeft = _.swipeLeft === null ? slideLeft : _.swipeLeft;
+
+        if (_.options.infinite === false && _.options.centerMode === false && (index < 0 || index > _.getDotCount() * _.options.slidesToScroll)) {
+            if (_.options.fade === false) {
+                targetSlide = _.currentSlide;
+                if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
+                    _.animateSlide(slideLeft, function() {
+                        _.postSlide(targetSlide);
                     });
+                } else {
+                    _.postSlide(targetSlide);
                 }
             }
-        }
-
-        return $tip;
-    };
-
-    /**
-     * core function, create tooltip content
-     * @param  {string} content - template with tooltip content
-     * @param  {object} item - Flot item
-     * @return {string} real tooltip content for current item
-     */
-    FlotTooltip.prototype.stringFormat = function (content, item) {
-        var percentPattern = /%p\.{0,1}(\d{0,})/;
-        var seriesPattern = /%s/;
-        var colorPattern = /%c/;
-        var xLabelPattern = /%lx/; // requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels, will be ignored if plugin isn't loaded
-        var yLabelPattern = /%ly/; // requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels, will be ignored if plugin isn't loaded
-        var xPattern = /%x\.{0,1}(\d{0,})/;
-        var yPattern = /%y\.{0,1}(\d{0,})/;
-        var xPatternWithoutPrecision = "%x";
-        var yPatternWithoutPrecision = "%y";
-        var customTextPattern = "%ct";
-	var nPiePattern = "%n";
-
-        var x, y, customText, p, n;
-
-        // for threshold plugin we need to read data from different place
-        if (typeof item.series.threshold !== "undefined") {
-            x = item.datapoint[0];
-            y = item.datapoint[1];
-            customText = item.datapoint[2];
-	}
-
-	// for CurvedLines plugin we need to read data from different place
-	    else if (typeof item.series.curvedLines !== "undefined") {
-		x = item.datapoint[0];
-		y = item.datapoint[1];
-	    }
-
-        else if (typeof item.series.lines !== "undefined" && item.series.lines.steps) {
-            x = item.series.datapoints.points[item.dataIndex * 2];
-            y = item.series.datapoints.points[item.dataIndex * 2 + 1];
-            // TODO: where to find custom text in this variant?
-            customText = "";
-        } else {
-            x = item.series.data[item.dataIndex][0];
-            y = item.series.data[item.dataIndex][1];
-            customText = item.series.data[item.dataIndex][2];
-        }
-
-        // I think this is only in case of threshold plugin
-        if (item.series.label === null && item.series.originSeries) {
-            item.series.label = item.series.originSeries.label;
-        }
-
-        // if it is a function callback get the content string
-        if (typeof(content) === 'function') {
-            content = content(item.series.label, x, y, item);
-        }
-
-        // the case where the passed content is equal to false
-        if (typeof(content) === 'boolean' && !content) {
-            return '';
-        }
-
-        /* replacement of %ct and other multi-character templates must
-           precede the replacement of single-character templates
-           to avoid conflict between '%c' and '%ct'  and similar substrings
-        */
-        if (customText) {
-            content = content.replace(customTextPattern, customText);
-        }
-
-        // percent match for pie charts and stacked percent
-        if (typeof (item.series.percent) !== 'undefined') {
-            p = item.series.percent;
-        } else if (typeof (item.series.percents) !== 'undefined') {
-            p = item.series.percents[item.dataIndex];
-        }
-        if (typeof p === 'number') {
-            content = this.adjustValPrecision(percentPattern, content, p);
-        }
-
-        // replace %n with number of items represented by slice in pie charts
-        if (item.series.hasOwnProperty('pie')) {
-            if (typeof item.series.data[0][1] !== 'undefined') {
-                n = item.series.data[0][1];
+            return;
+        } else if (_.options.infinite === false && _.options.centerMode === true && (index < 0 || index > (_.slideCount - _.options.slidesToScroll))) {
+            if (_.options.fade === false) {
+                targetSlide = _.currentSlide;
+                if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
+                    _.animateSlide(slideLeft, function() {
+                        _.postSlide(targetSlide);
+                    });
+                } else {
+                    _.postSlide(targetSlide);
+                }
             }
-        }
-        if (typeof n === 'number') {
-            content = content.replace(nPiePattern, n);
+            return;
         }
 
-        // series match
-        if (typeof(item.series.label) !== 'undefined') {
-            content = content.replace(seriesPattern, item.series.label);
-        } else {
-            //remove %s if label is undefined
-            content = content.replace(seriesPattern, "");
+        if ( _.options.autoplay ) {
+            clearInterval(_.autoPlayTimer);
         }
 
-        // color match
-        if (typeof(item.series.color) !== 'undefined') {
-            content = content.replace(colorPattern, item.series.color);
-        } else {
-            //remove %s if color is undefined
-            content = content.replace(colorPattern, "");
-        }
-
-        // x axis label match
-        if (this.hasAxisLabel('xaxis', item)) {
-            content = content.replace(xLabelPattern, item.series.xaxis.options.axisLabel);
-        } else {
-            //remove %lx if axis label is undefined or axislabels plugin not present
-            content = content.replace(xLabelPattern, "");
-        }
-
-        // y axis label match
-        if (this.hasAxisLabel('yaxis', item)) {
-            content = content.replace(yLabelPattern, item.series.yaxis.options.axisLabel);
-        } else {
-            //remove %ly if axis label is undefined or axislabels plugin not present
-            content = content.replace(yLabelPattern, "");
-        }
-
-        // time mode axes with custom dateFormat
-        if (this.isTimeMode('xaxis', item) && this.isXDateFormat(item)) {
-            content = content.replace(xPattern, this.timestampToDate(x, this.tooltipOptions.xDateFormat, item.series.xaxis.options));
-        }
-        if (this.isTimeMode('yaxis', item) && this.isYDateFormat(item)) {
-            content = content.replace(yPattern, this.timestampToDate(y, this.tooltipOptions.yDateFormat, item.series.yaxis.options));
-        }
-
-        // set precision if defined
-        if (typeof x === 'number') {
-            content = this.adjustValPrecision(xPattern, content, x);
-        }
-        if (typeof y === 'number') {
-            content = this.adjustValPrecision(yPattern, content, y);
-        }
-
-        // change x from number to given label, if given
-        if (typeof item.series.xaxis.ticks !== 'undefined') {
-
-            var ticks;
-            if (this.hasRotatedXAxisTicks(item)) {
-                // xaxis.ticks will be an empty array if tickRotor is being used, but the values are available in rotatedTicks
-                ticks = 'rotatedTicks';
+        if (targetSlide < 0) {
+            if (_.slideCount % _.options.slidesToScroll !== 0) {
+                animSlide = _.slideCount - (_.slideCount % _.options.slidesToScroll);
             } else {
-                ticks = 'ticks';
+                animSlide = _.slideCount + targetSlide;
+            }
+        } else if (targetSlide >= _.slideCount) {
+            if (_.slideCount % _.options.slidesToScroll !== 0) {
+                animSlide = 0;
+            } else {
+                animSlide = targetSlide - _.slideCount;
+            }
+        } else {
+            animSlide = targetSlide;
+        }
+
+        _.animating = true;
+
+        _.$slider.trigger('beforeChange', [_, _.currentSlide, animSlide]);
+
+        oldSlide = _.currentSlide;
+        _.currentSlide = animSlide;
+
+        _.setSlideClasses(_.currentSlide);
+
+        if ( _.options.asNavFor ) {
+
+            navTarget = _.getNavTarget();
+            navTarget = navTarget.slick('getSlick');
+
+            if ( navTarget.slideCount <= navTarget.options.slidesToShow ) {
+                navTarget.setSlideClasses(_.currentSlide);
             }
 
-            // see https://github.com/krzysu/flot.tooltip/issues/65
-            var tickIndex = item.dataIndex + item.seriesIndex;
+        }
 
-            for (var xIndex in item.series.xaxis[ticks]) {
-                if (item.series.xaxis[ticks].hasOwnProperty(tickIndex) && !this.isTimeMode('xaxis', item)) {
-                    var valueX = (this.isCategoriesMode('xaxis', item)) ? item.series.xaxis[ticks][tickIndex].label : item.series.xaxis[ticks][tickIndex].v;
-                    if (valueX === x) {
-                        content = content.replace(xPattern, item.series.xaxis[ticks][tickIndex].label.replace(/\$/g, '$$$$'));
-                    }
-                }
+        _.updateDots();
+        _.updateArrows();
+
+        if (_.options.fade === true) {
+            if (dontAnimate !== true) {
+
+                _.fadeSlideOut(oldSlide);
+
+                _.fadeSlide(animSlide, function() {
+                    _.postSlide(animSlide);
+                });
+
+            } else {
+                _.postSlide(animSlide);
+            }
+            _.animateHeight();
+            return;
+        }
+
+        if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
+            _.animateSlide(targetLeft, function() {
+                _.postSlide(animSlide);
+            });
+        } else {
+            _.postSlide(animSlide);
+        }
+
+    };
+
+    Slick.prototype.startLoad = function() {
+
+        var _ = this;
+
+        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$prevArrow.hide();
+            _.$nextArrow.hide();
+
+        }
+
+        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+
+            _.$dots.hide();
+
+        }
+
+        _.$slider.addClass('slick-loading');
+
+    };
+
+    Slick.prototype.swipeDirection = function() {
+
+        var xDist, yDist, r, swipeAngle, _ = this;
+
+        xDist = _.touchObject.startX - _.touchObject.curX;
+        yDist = _.touchObject.startY - _.touchObject.curY;
+        r = Math.atan2(yDist, xDist);
+
+        swipeAngle = Math.round(r * 180 / Math.PI);
+        if (swipeAngle < 0) {
+            swipeAngle = 360 - Math.abs(swipeAngle);
+        }
+
+        if ((swipeAngle <= 45) && (swipeAngle >= 0)) {
+            return (_.options.rtl === false ? 'left' : 'right');
+        }
+        if ((swipeAngle <= 360) && (swipeAngle >= 315)) {
+            return (_.options.rtl === false ? 'left' : 'right');
+        }
+        if ((swipeAngle >= 135) && (swipeAngle <= 225)) {
+            return (_.options.rtl === false ? 'right' : 'left');
+        }
+        if (_.options.verticalSwiping === true) {
+            if ((swipeAngle >= 35) && (swipeAngle <= 135)) {
+                return 'down';
+            } else {
+                return 'up';
             }
         }
 
-        // change y from number to given label, if given
-        if (typeof item.series.yaxis.ticks !== 'undefined') {
-            for (var yIndex in item.series.yaxis.ticks) {
-                if (item.series.yaxis.ticks.hasOwnProperty(yIndex)) {
-                    var valueY = (this.isCategoriesMode('yaxis', item)) ? item.series.yaxis.ticks[yIndex].label : item.series.yaxis.ticks[yIndex].v;
-                    if (valueY === y) {
-                        content = content.replace(yPattern, item.series.yaxis.ticks[yIndex].label.replace(/\$/g, '$$$$'));
-                    }
-                }
+        return 'vertical';
+
+    };
+
+    Slick.prototype.swipeEnd = function(event) {
+
+        var _ = this,
+            slideCount,
+            direction;
+
+        _.dragging = false;
+        _.swiping = false;
+
+        if (_.scrolling) {
+            _.scrolling = false;
+            return false;
+        }
+
+        _.interrupted = false;
+        _.shouldClick = ( _.touchObject.swipeLength > 10 ) ? false : true;
+
+        if ( _.touchObject.curX === undefined ) {
+            return false;
+        }
+
+        if ( _.touchObject.edgeHit === true ) {
+            _.$slider.trigger('edge', [_, _.swipeDirection() ]);
+        }
+
+        if ( _.touchObject.swipeLength >= _.touchObject.minSwipe ) {
+
+            direction = _.swipeDirection();
+
+            switch ( direction ) {
+
+                case 'left':
+                case 'down':
+
+                    slideCount =
+                        _.options.swipeToSlide ?
+                            _.checkNavigable( _.currentSlide + _.getSlideCount() ) :
+                            _.currentSlide + _.getSlideCount();
+
+                    _.currentDirection = 0;
+
+                    break;
+
+                case 'right':
+                case 'up':
+
+                    slideCount =
+                        _.options.swipeToSlide ?
+                            _.checkNavigable( _.currentSlide - _.getSlideCount() ) :
+                            _.currentSlide - _.getSlideCount();
+
+                    _.currentDirection = 1;
+
+                    break;
+
+                default:
+
+
+            }
+
+            if( direction != 'vertical' ) {
+
+                _.slideHandler( slideCount );
+                _.touchObject = {};
+                _.$slider.trigger('swipe', [_, direction ]);
+
+            }
+
+        } else {
+
+            if ( _.touchObject.startX !== _.touchObject.curX ) {
+
+                _.slideHandler( _.currentSlide );
+                _.touchObject = {};
+
+            }
+
+        }
+
+    };
+
+    Slick.prototype.swipeHandler = function(event) {
+
+        var _ = this;
+
+        if ((_.options.swipe === false) || ('ontouchend' in document && _.options.swipe === false)) {
+            return;
+        } else if (_.options.draggable === false && event.type.indexOf('mouse') !== -1) {
+            return;
+        }
+
+        _.touchObject.fingerCount = event.originalEvent && event.originalEvent.touches !== undefined ?
+            event.originalEvent.touches.length : 1;
+
+        _.touchObject.minSwipe = _.listWidth / _.options
+            .touchThreshold;
+
+        if (_.options.verticalSwiping === true) {
+            _.touchObject.minSwipe = _.listHeight / _.options
+                .touchThreshold;
+        }
+
+        switch (event.data.action) {
+
+            case 'start':
+                _.swipeStart(event);
+                break;
+
+            case 'move':
+                _.swipeMove(event);
+                break;
+
+            case 'end':
+                _.swipeEnd(event);
+                break;
+
+        }
+
+    };
+
+    Slick.prototype.swipeMove = function(event) {
+
+        var _ = this,
+            curLeft, swipeDirection, swipeLength, positionOffset, touches, verticalSwipeLength;
+
+        touches = event.originalEvent !== undefined ? event.originalEvent.touches : null;
+
+        if (!_.dragging || _.scrolling || touches && touches.length !== 1) {
+            return false;
+        }
+
+        curLeft = _.getLeft(_.currentSlide);
+
+        _.touchObject.curX = touches !== undefined ? touches[0].pageX : event.clientX;
+        _.touchObject.curY = touches !== undefined ? touches[0].pageY : event.clientY;
+
+        _.touchObject.swipeLength = Math.round(Math.sqrt(
+            Math.pow(_.touchObject.curX - _.touchObject.startX, 2)));
+
+        verticalSwipeLength = Math.round(Math.sqrt(
+            Math.pow(_.touchObject.curY - _.touchObject.startY, 2)));
+
+        if (!_.options.verticalSwiping && !_.swiping && verticalSwipeLength > 4) {
+            _.scrolling = true;
+            return false;
+        }
+
+        if (_.options.verticalSwiping === true) {
+            _.touchObject.swipeLength = verticalSwipeLength;
+        }
+
+        swipeDirection = _.swipeDirection();
+
+        if (event.originalEvent !== undefined && _.touchObject.swipeLength > 4) {
+            _.swiping = true;
+            event.preventDefault();
+        }
+
+        positionOffset = (_.options.rtl === false ? 1 : -1) * (_.touchObject.curX > _.touchObject.startX ? 1 : -1);
+        if (_.options.verticalSwiping === true) {
+            positionOffset = _.touchObject.curY > _.touchObject.startY ? 1 : -1;
+        }
+
+
+        swipeLength = _.touchObject.swipeLength;
+
+        _.touchObject.edgeHit = false;
+
+        if (_.options.infinite === false) {
+            if ((_.currentSlide === 0 && swipeDirection === 'right') || (_.currentSlide >= _.getDotCount() && swipeDirection === 'left')) {
+                swipeLength = _.touchObject.swipeLength * _.options.edgeFriction;
+                _.touchObject.edgeHit = true;
             }
         }
 
-        // if no value customization, use tickFormatter by default
-        if (typeof item.series.xaxis.tickFormatter !== 'undefined') {
-            //escape dollar
-            content = content.replace(xPatternWithoutPrecision, item.series.xaxis.tickFormatter(x, item.series.xaxis).replace(/\$/g, '$$'));
+        if (_.options.vertical === false) {
+            _.swipeLeft = curLeft + swipeLength * positionOffset;
+        } else {
+            _.swipeLeft = curLeft + (swipeLength * (_.$list.height() / _.listWidth)) * positionOffset;
         }
-        if (typeof item.series.yaxis.tickFormatter !== 'undefined') {
-            //escape dollar
-            content = content.replace(yPatternWithoutPrecision, item.series.yaxis.tickFormatter(y, item.series.yaxis).replace(/\$/g, '$$'));
+        if (_.options.verticalSwiping === true) {
+            _.swipeLeft = curLeft + swipeLength * positionOffset;
         }
 
-        return content;
+        if (_.options.fade === true || _.options.touchMove === false) {
+            return false;
+        }
+
+        if (_.animating === true) {
+            _.swipeLeft = null;
+            return false;
+        }
+
+        _.setCSS(_.swipeLeft);
+
     };
 
-    // helpers just for readability
-    FlotTooltip.prototype.isTimeMode = function (axisName, item) {
-        return (typeof item.series[axisName].options.mode !== 'undefined' && item.series[axisName].options.mode === 'time');
+    Slick.prototype.swipeStart = function(event) {
+
+        var _ = this,
+            touches;
+
+        _.interrupted = true;
+
+        if (_.touchObject.fingerCount !== 1 || _.slideCount <= _.options.slidesToShow) {
+            _.touchObject = {};
+            return false;
+        }
+
+        if (event.originalEvent !== undefined && event.originalEvent.touches !== undefined) {
+            touches = event.originalEvent.touches[0];
+        }
+
+        _.touchObject.startX = _.touchObject.curX = touches !== undefined ? touches.pageX : event.clientX;
+        _.touchObject.startY = _.touchObject.curY = touches !== undefined ? touches.pageY : event.clientY;
+
+        _.dragging = true;
+
     };
 
-    FlotTooltip.prototype.isXDateFormat = function (item) {
-        return (typeof this.tooltipOptions.xDateFormat !== 'undefined' && this.tooltipOptions.xDateFormat !== null);
+    Slick.prototype.unfilterSlides = Slick.prototype.slickUnfilter = function() {
+
+        var _ = this;
+
+        if (_.$slidesCache !== null) {
+
+            _.unload();
+
+            _.$slideTrack.children(this.options.slide).detach();
+
+            _.$slidesCache.appendTo(_.$slideTrack);
+
+            _.reinit();
+
+        }
+
     };
 
-    FlotTooltip.prototype.isYDateFormat = function (item) {
-        return (typeof this.tooltipOptions.yDateFormat !== 'undefined' && this.tooltipOptions.yDateFormat !== null);
+    Slick.prototype.unload = function() {
+
+        var _ = this;
+
+        $$$1('.slick-cloned', _.$slider).remove();
+
+        if (_.$dots) {
+            _.$dots.remove();
+        }
+
+        if (_.$prevArrow && _.htmlExpr.test(_.options.prevArrow)) {
+            _.$prevArrow.remove();
+        }
+
+        if (_.$nextArrow && _.htmlExpr.test(_.options.nextArrow)) {
+            _.$nextArrow.remove();
+        }
+
+        _.$slides
+            .removeClass('slick-slide slick-active slick-visible slick-current')
+            .attr('aria-hidden', 'true')
+            .css('width', '');
+
     };
 
-    FlotTooltip.prototype.isCategoriesMode = function (axisName, item) {
-        return (typeof item.series[axisName].options.mode !== 'undefined' && item.series[axisName].options.mode === 'categories');
+    Slick.prototype.unslick = function(fromBreakpoint) {
+
+        var _ = this;
+        _.$slider.trigger('unslick', [_, fromBreakpoint]);
+        _.destroy();
+
     };
 
-    //
-    FlotTooltip.prototype.timestampToDate = function (tmst, dateFormat, options) {
-        var theDate = $.plot.dateGenerator(tmst, options);
-        return $.plot.formatDate(theDate, dateFormat, this.tooltipOptions.monthNames, this.tooltipOptions.dayNames);
-    };
+    Slick.prototype.updateArrows = function() {
 
-    //
-    FlotTooltip.prototype.adjustValPrecision = function (pattern, content, value) {
+        var _ = this,
+            centerOffset;
 
-        var precision;
-        var matchResult = content.match(pattern);
-        if( matchResult !== null ) {
-            if(RegExp.$1 !== '') {
-                precision = RegExp.$1;
-                value = value.toFixed(precision);
+        centerOffset = Math.floor(_.options.slidesToShow / 2);
 
-                // only replace content if precision exists, in other case use thickformater
-                content = content.replace(pattern, value);
+        if ( _.options.arrows === true &&
+            _.slideCount > _.options.slidesToShow &&
+            !_.options.infinite ) {
+
+            _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+            _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            if (_.currentSlide === 0) {
+
+                _.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+                _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            } else if (_.currentSlide >= _.slideCount - _.options.slidesToShow && _.options.centerMode === false) {
+
+                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
+            } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
+
+                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+
             }
+
         }
-        return content;
+
     };
 
-    // other plugins detection below
+    Slick.prototype.updateDots = function() {
 
-    // check if flot-axislabels plugin (https://github.com/markrcote/flot-axislabels) is used and that an axis label is given
-    FlotTooltip.prototype.hasAxisLabel = function (axisName, item) {
-        return ($.inArray('axisLabels', this.plotPlugins) !== -1 && typeof item.series[axisName].options.axisLabel !== 'undefined' && item.series[axisName].options.axisLabel.length > 0);
+        var _ = this;
+
+        if (_.$dots !== null) {
+
+            _.$dots
+                .find('li')
+                    .removeClass('slick-active')
+                    .end();
+
+            _.$dots
+                .find('li')
+                .eq(Math.floor(_.currentSlide / _.options.slidesToScroll))
+                .addClass('slick-active');
+
+        }
+
     };
 
-    // check whether flot-tickRotor, a plugin which allows rotation of X-axis ticks, is being used
-    FlotTooltip.prototype.hasRotatedXAxisTicks = function (item) {
-        return ($.inArray('tickRotor',this.plotPlugins) !== -1 && typeof item.series.xaxis.rotatedTicks !== 'undefined');
+    Slick.prototype.visibility = function() {
+
+        var _ = this;
+
+        if ( _.options.autoplay ) {
+
+            if ( document[_.hidden] ) {
+
+                _.interrupted = true;
+
+            } else {
+
+                _.interrupted = false;
+
+            }
+
+        }
+
     };
 
-    //
-    var init = function (plot) {
-      new FlotTooltip(plot);
+    $$$1.fn.slick = function() {
+        var _ = this,
+            opt = arguments[0],
+            args = Array.prototype.slice.call(arguments, 1),
+            l = _.length,
+            i,
+            ret;
+        for (i = 0; i < l; i++) {
+            if (typeof opt == 'object' || typeof opt == 'undefined')
+                { _[i].slick = new Slick(_[i], opt); }
+            else
+                { ret = _[i].slick[opt].apply(_[i].slick, args); }
+            if (typeof ret != 'undefined') { return ret; }
+        }
+        return _;
     };
 
-    // define Flot plugin
-    $.plot.plugins.push({
-        init: init,
-        options: defaultOptions,
-        name: 'tooltip',
-        version: '0.8.5'
-    });
+}));
+});
 
-})(jQuery);
+var slick$1 = /*#__PURE__*/Object.freeze({
+  default: slick,
+  __moduleExports: slick
+});
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
+/* harmony default export */ __webpack_exports__["a"] = (slickCarousel);
+
 
 /***/ }),
 
-/***/ 1734:
+/***/ 1210:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Pretty handling of time axes.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-Set axis.mode to "time" to enable. See the section "Time series data" in
-API.txt for details.
-
-*/
-
-(function($) {
-
-	var options = {
-		xaxis: {
-			timezone: null,		// "browser" for local to the client or timezone for timezone-js
-			timeformat: null,	// format string to use
-			twelveHourClock: false,	// 12 or 24 time in time mode
-			monthNames: null	// list of names of months
-		}
-	};
-
-	// round to nearby lower multiple of base
-
-	function floorInBase(n, base) {
-		return base * Math.floor(n / base);
-	}
-
-	// Returns a string with the date d formatted according to fmt.
-	// A subset of the Open Group's strftime format is supported.
-
-	function formatDate(d, fmt, monthNames, dayNames) {
-
-		if (typeof d.strftime == "function") {
-			return d.strftime(fmt);
-		}
-
-		var leftPad = function(n, pad) {
-			n = "" + n;
-			pad = "" + (pad == null ? "0" : pad);
-			return n.length == 1 ? pad + n : n;
-		};
-
-		var r = [];
-		var escape = false;
-		var hours = d.getHours();
-		var isAM = hours < 12;
-
-		if (monthNames == null) {
-			monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-		}
-
-		if (dayNames == null) {
-			dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-		}
-
-		var hours12;
-
-		if (hours > 12) {
-			hours12 = hours - 12;
-		} else if (hours == 0) {
-			hours12 = 12;
-		} else {
-			hours12 = hours;
-		}
-
-		for (var i = 0; i < fmt.length; ++i) {
-
-			var c = fmt.charAt(i);
-
-			if (escape) {
-				switch (c) {
-					case 'a': c = "" + dayNames[d.getDay()]; break;
-					case 'b': c = "" + monthNames[d.getMonth()]; break;
-					case 'd': c = leftPad(d.getDate()); break;
-					case 'e': c = leftPad(d.getDate(), " "); break;
-					case 'h':	// For back-compat with 0.7; remove in 1.0
-					case 'H': c = leftPad(hours); break;
-					case 'I': c = leftPad(hours12); break;
-					case 'l': c = leftPad(hours12, " "); break;
-					case 'm': c = leftPad(d.getMonth() + 1); break;
-					case 'M': c = leftPad(d.getMinutes()); break;
-					// quarters not in Open Group's strftime specification
-					case 'q':
-						c = "" + (Math.floor(d.getMonth() / 3) + 1); break;
-					case 'S': c = leftPad(d.getSeconds()); break;
-					case 'y': c = leftPad(d.getFullYear() % 100); break;
-					case 'Y': c = "" + d.getFullYear(); break;
-					case 'p': c = (isAM) ? ("" + "am") : ("" + "pm"); break;
-					case 'P': c = (isAM) ? ("" + "AM") : ("" + "PM"); break;
-					case 'w': c = "" + d.getDay(); break;
-				}
-				r.push(c);
-				escape = false;
-			} else {
-				if (c == "%") {
-					escape = true;
-				} else {
-					r.push(c);
-				}
-			}
-		}
-
-		return r.join("");
-	}
-
-	// To have a consistent view of time-based data independent of which time
-	// zone the client happens to be in we need a date-like object independent
-	// of time zones.  This is done through a wrapper that only calls the UTC
-	// versions of the accessor methods.
-
-	function makeUtcWrapper(d) {
-
-		function addProxyMethod(sourceObj, sourceMethod, targetObj, targetMethod) {
-			sourceObj[sourceMethod] = function() {
-				return targetObj[targetMethod].apply(targetObj, arguments);
-			};
-		};
-
-		var utc = {
-			date: d
-		};
-
-		// support strftime, if found
-
-		if (d.strftime != undefined) {
-			addProxyMethod(utc, "strftime", d, "strftime");
-		}
-
-		addProxyMethod(utc, "getTime", d, "getTime");
-		addProxyMethod(utc, "setTime", d, "setTime");
-
-		var props = ["Date", "Day", "FullYear", "Hours", "Milliseconds", "Minutes", "Month", "Seconds"];
-
-		for (var p = 0; p < props.length; p++) {
-			addProxyMethod(utc, "get" + props[p], d, "getUTC" + props[p]);
-			addProxyMethod(utc, "set" + props[p], d, "setUTC" + props[p]);
-		}
-
-		return utc;
-	};
-
-	// select time zone strategy.  This returns a date-like object tied to the
-	// desired timezone
-
-	function dateGenerator(ts, opts) {
-		if (opts.timezone == "browser") {
-			return new Date(ts);
-		} else if (!opts.timezone || opts.timezone == "utc") {
-			return makeUtcWrapper(new Date(ts));
-		} else if (typeof timezoneJS != "undefined" && typeof timezoneJS.Date != "undefined") {
-			var d = new timezoneJS.Date();
-			// timezone-js is fickle, so be sure to set the time zone before
-			// setting the time.
-			d.setTimezone(opts.timezone);
-			d.setTime(ts);
-			return d;
-		} else {
-			return makeUtcWrapper(new Date(ts));
-		}
-	}
-	
-	// map of app. size of time units in milliseconds
-
-	var timeUnitSize = {
-		"second": 1000,
-		"minute": 60 * 1000,
-		"hour": 60 * 60 * 1000,
-		"day": 24 * 60 * 60 * 1000,
-		"month": 30 * 24 * 60 * 60 * 1000,
-		"quarter": 3 * 30 * 24 * 60 * 60 * 1000,
-		"year": 365.2425 * 24 * 60 * 60 * 1000
-	};
-
-	// the allowed tick sizes, after 1 year we use
-	// an integer algorithm
-
-	var baseSpec = [
-		[1, "second"], [2, "second"], [5, "second"], [10, "second"],
-		[30, "second"], 
-		[1, "minute"], [2, "minute"], [5, "minute"], [10, "minute"],
-		[30, "minute"], 
-		[1, "hour"], [2, "hour"], [4, "hour"],
-		[8, "hour"], [12, "hour"],
-		[1, "day"], [2, "day"], [3, "day"],
-		[0.25, "month"], [0.5, "month"], [1, "month"],
-		[2, "month"]
-	];
-
-	// we don't know which variant(s) we'll need yet, but generating both is
-	// cheap
-
-	var specMonths = baseSpec.concat([[3, "month"], [6, "month"],
-		[1, "year"]]);
-	var specQuarters = baseSpec.concat([[1, "quarter"], [2, "quarter"],
-		[1, "year"]]);
-
-	function init(plot) {
-		plot.hooks.processOptions.push(function (plot, options) {
-			$.each(plot.getAxes(), function(axisName, axis) {
-
-				var opts = axis.options;
-
-				if (opts.mode == "time") {
-					axis.tickGenerator = function(axis) {
-
-						var ticks = [];
-						var d = dateGenerator(axis.min, opts);
-						var minSize = 0;
-
-						// make quarter use a possibility if quarters are
-						// mentioned in either of these options
-
-						var spec = (opts.tickSize && opts.tickSize[1] ===
-							"quarter") ||
-							(opts.minTickSize && opts.minTickSize[1] ===
-							"quarter") ? specQuarters : specMonths;
-
-						if (opts.minTickSize != null) {
-							if (typeof opts.tickSize == "number") {
-								minSize = opts.tickSize;
-							} else {
-								minSize = opts.minTickSize[0] * timeUnitSize[opts.minTickSize[1]];
-							}
-						}
-
-						for (var i = 0; i < spec.length - 1; ++i) {
-							if (axis.delta < (spec[i][0] * timeUnitSize[spec[i][1]]
-											  + spec[i + 1][0] * timeUnitSize[spec[i + 1][1]]) / 2
-								&& spec[i][0] * timeUnitSize[spec[i][1]] >= minSize) {
-								break;
-							}
-						}
-
-						var size = spec[i][0];
-						var unit = spec[i][1];
-
-						// special-case the possibility of several years
-
-						if (unit == "year") {
-
-							// if given a minTickSize in years, just use it,
-							// ensuring that it's an integer
-
-							if (opts.minTickSize != null && opts.minTickSize[1] == "year") {
-								size = Math.floor(opts.minTickSize[0]);
-							} else {
-
-								var magn = Math.pow(10, Math.floor(Math.log(axis.delta / timeUnitSize.year) / Math.LN10));
-								var norm = (axis.delta / timeUnitSize.year) / magn;
-
-								if (norm < 1.5) {
-									size = 1;
-								} else if (norm < 3) {
-									size = 2;
-								} else if (norm < 7.5) {
-									size = 5;
-								} else {
-									size = 10;
-								}
-
-								size *= magn;
-							}
-
-							// minimum size for years is 1
-
-							if (size < 1) {
-								size = 1;
-							}
-						}
-
-						axis.tickSize = opts.tickSize || [size, unit];
-						var tickSize = axis.tickSize[0];
-						unit = axis.tickSize[1];
-
-						var step = tickSize * timeUnitSize[unit];
-
-						if (unit == "second") {
-							d.setSeconds(floorInBase(d.getSeconds(), tickSize));
-						} else if (unit == "minute") {
-							d.setMinutes(floorInBase(d.getMinutes(), tickSize));
-						} else if (unit == "hour") {
-							d.setHours(floorInBase(d.getHours(), tickSize));
-						} else if (unit == "month") {
-							d.setMonth(floorInBase(d.getMonth(), tickSize));
-						} else if (unit == "quarter") {
-							d.setMonth(3 * floorInBase(d.getMonth() / 3,
-								tickSize));
-						} else if (unit == "year") {
-							d.setFullYear(floorInBase(d.getFullYear(), tickSize));
-						}
-
-						// reset smaller components
-
-						d.setMilliseconds(0);
-
-						if (step >= timeUnitSize.minute) {
-							d.setSeconds(0);
-						}
-						if (step >= timeUnitSize.hour) {
-							d.setMinutes(0);
-						}
-						if (step >= timeUnitSize.day) {
-							d.setHours(0);
-						}
-						if (step >= timeUnitSize.day * 4) {
-							d.setDate(1);
-						}
-						if (step >= timeUnitSize.month * 2) {
-							d.setMonth(floorInBase(d.getMonth(), 3));
-						}
-						if (step >= timeUnitSize.quarter * 2) {
-							d.setMonth(floorInBase(d.getMonth(), 6));
-						}
-						if (step >= timeUnitSize.year) {
-							d.setMonth(0);
-						}
-
-						var carry = 0;
-						var v = Number.NaN;
-						var prev;
-
-						do {
-
-							prev = v;
-							v = d.getTime();
-							ticks.push(v);
-
-							if (unit == "month" || unit == "quarter") {
-								if (tickSize < 1) {
-
-									// a bit complicated - we'll divide the
-									// month/quarter up but we need to take
-									// care of fractions so we don't end up in
-									// the middle of a day
-
-									d.setDate(1);
-									var start = d.getTime();
-									d.setMonth(d.getMonth() +
-										(unit == "quarter" ? 3 : 1));
-									var end = d.getTime();
-									d.setTime(v + carry * timeUnitSize.hour + (end - start) * tickSize);
-									carry = d.getHours();
-									d.setHours(0);
-								} else {
-									d.setMonth(d.getMonth() +
-										tickSize * (unit == "quarter" ? 3 : 1));
-								}
-							} else if (unit == "year") {
-								d.setFullYear(d.getFullYear() + tickSize);
-							} else {
-								d.setTime(v + step);
-							}
-						} while (v < axis.max && v != prev);
-
-						return ticks;
-					};
-
-					axis.tickFormatter = function (v, axis) {
-
-						var d = dateGenerator(v, axis.options);
-
-						// first check global format
-
-						if (opts.timeformat != null) {
-							return formatDate(d, opts.timeformat, opts.monthNames, opts.dayNames);
-						}
-
-						// possibly use quarters if quarters are mentioned in
-						// any of these places
-
-						var useQuarters = (axis.options.tickSize &&
-								axis.options.tickSize[1] == "quarter") ||
-							(axis.options.minTickSize &&
-								axis.options.minTickSize[1] == "quarter");
-
-						var t = axis.tickSize[0] * timeUnitSize[axis.tickSize[1]];
-						var span = axis.max - axis.min;
-						var suffix = (opts.twelveHourClock) ? " %p" : "";
-						var hourCode = (opts.twelveHourClock) ? "%I" : "%H";
-						var fmt;
-
-						if (t < timeUnitSize.minute) {
-							fmt = hourCode + ":%M:%S" + suffix;
-						} else if (t < timeUnitSize.day) {
-							if (span < 2 * timeUnitSize.day) {
-								fmt = hourCode + ":%M" + suffix;
-							} else {
-								fmt = "%b %d " + hourCode + ":%M" + suffix;
-							}
-						} else if (t < timeUnitSize.month) {
-							fmt = "%b %d";
-						} else if ((useQuarters && t < timeUnitSize.quarter) ||
-							(!useQuarters && t < timeUnitSize.year)) {
-							if (span < timeUnitSize.year) {
-								fmt = "%b";
-							} else {
-								fmt = "%b %Y";
-							}
-						} else if (useQuarters && t < timeUnitSize.year) {
-							if (span < timeUnitSize.year) {
-								fmt = "Q%q";
-							} else {
-								fmt = "Q%q %Y";
-							}
-						} else {
-							fmt = "%Y";
-						}
-
-						var rt = formatDate(d, fmt, opts.monthNames, opts.dayNames);
-
-						return rt;
-					};
-				}
-			});
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1211);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(43)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../css-loader/index.js!./slick.css", function() {
+			var newContent = require("!!../../css-loader/index.js!./slick.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
 		});
 	}
-
-	$.plot.plugins.push({
-		init: init,
-		options: options,
-		name: 'time',
-		version: '1.0'
-	});
-
-	// Time-axis support used to be in Flot core, which exposed the
-	// formatDate function on the plot object.  Various plugins depend
-	// on the function, so we need to re-expose it here.
-
-	$.plot.formatDate = formatDate;
-	$.plot.dateGenerator = dateGenerator;
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
-/***/ 1735:
+/***/ 1211:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for rendering pie charts.
+exports = module.exports = __webpack_require__(17)(false);
+// imports
 
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
 
-The plugin assumes that each series has a single data value, and that each
-value is a positive integer or zero.  Negative numbers don't make sense for a
-pie chart, and have unpredictable results.  The values do NOT need to be
-passed in as percentages; the plugin will calculate the total and per-slice
-percentages internally.
+// module
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    -ms-touch-action: pan-y;\n        touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n       -moz-transform: translate3d(0, 0, 0);\n        -ms-transform: translate3d(0, 0, 0);\n         -o-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
-* Created by Brian Medendorp
+// exports
 
-* Updated with contributions from btburnett3, Anthony Aragues and Xavi Ivars
-
-The plugin supports these options:
-
-	series: {
-		pie: {
-			show: true/false
-			radius: 0-1 for percentage of fullsize, or a specified pixel length, or 'auto'
-			innerRadius: 0-1 for percentage of fullsize or a specified pixel length, for creating a donut effect
-			startAngle: 0-2 factor of PI used for starting angle (in radians) i.e 3/2 starts at the top, 0 and 2 have the same result
-			tilt: 0-1 for percentage to tilt the pie, where 1 is no tilt, and 0 is completely flat (nothing will show)
-			offset: {
-				top: integer value to move the pie up or down
-				left: integer value to move the pie left or right, or 'auto'
-			},
-			stroke: {
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#FFF')
-				width: integer pixel width of the stroke
-			},
-			label: {
-				show: true/false, or 'auto'
-				formatter:  a user-defined function that modifies the text/style of the label text
-				radius: 0-1 for percentage of fullsize, or a specified pixel length
-				background: {
-					color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#000')
-					opacity: 0-1
-				},
-				threshold: 0-1 for the percentage value at which to hide labels (if they're too small)
-			},
-			combine: {
-				threshold: 0-1 for the percentage value at which to combine slices (if they're too small)
-				color: any hexidecimal color value (other formats may or may not work, so best to stick with something like '#CCC'), if null, the plugin will automatically use the color of the first slice to be combined
-				label: any text value of what the combined slice should be labeled
-			}
-			highlight: {
-				opacity: 0-1
-			}
-		}
-	}
-
-More detail and specific examples can be found in the included HTML file.
-
-*/
-
-(function($) {
-
-	// Maximum redraw attempts when fitting labels within the plot
-
-	var REDRAW_ATTEMPTS = 10;
-
-	// Factor by which to shrink the pie when fitting labels within the plot
-
-	var REDRAW_SHRINK = 0.95;
-
-	function init(plot) {
-
-		var canvas = null,
-			target = null,
-			options = null,
-			maxRadius = null,
-			centerLeft = null,
-			centerTop = null,
-			processed = false,
-			ctx = null;
-
-		// interactive variables
-
-		var highlights = [];
-
-		// add hook to determine if pie plugin in enabled, and then perform necessary operations
-
-		plot.hooks.processOptions.push(function(plot, options) {
-			if (options.series.pie.show) {
-
-				options.grid.show = false;
-
-				// set labels.show
-
-				if (options.series.pie.label.show == "auto") {
-					if (options.legend.show) {
-						options.series.pie.label.show = false;
-					} else {
-						options.series.pie.label.show = true;
-					}
-				}
-
-				// set radius
-
-				if (options.series.pie.radius == "auto") {
-					if (options.series.pie.label.show) {
-						options.series.pie.radius = 3/4;
-					} else {
-						options.series.pie.radius = 1;
-					}
-				}
-
-				// ensure sane tilt
-
-				if (options.series.pie.tilt > 1) {
-					options.series.pie.tilt = 1;
-				} else if (options.series.pie.tilt < 0) {
-					options.series.pie.tilt = 0;
-				}
-			}
-		});
-
-		plot.hooks.bindEvents.push(function(plot, eventHolder) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				if (options.grid.hoverable) {
-					eventHolder.unbind("mousemove").mousemove(onMouseMove);
-				}
-				if (options.grid.clickable) {
-					eventHolder.unbind("click").click(onClick);
-				}
-			}
-		});
-
-		plot.hooks.processDatapoints.push(function(plot, series, data, datapoints) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				processDatapoints(plot, series, data, datapoints);
-			}
-		});
-
-		plot.hooks.drawOverlay.push(function(plot, octx) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				drawOverlay(plot, octx);
-			}
-		});
-
-		plot.hooks.draw.push(function(plot, newCtx) {
-			var options = plot.getOptions();
-			if (options.series.pie.show) {
-				draw(plot, newCtx);
-			}
-		});
-
-		function processDatapoints(plot, series, datapoints) {
-			if (!processed)	{
-				processed = true;
-				canvas = plot.getCanvas();
-				target = $(canvas).parent();
-				options = plot.getOptions();
-				plot.setData(combine(plot.getData()));
-			}
-		}
-
-		function combine(data) {
-
-			var total = 0,
-				combined = 0,
-				numCombined = 0,
-				color = options.series.pie.combine.color,
-				newdata = [];
-
-			// Fix up the raw data from Flot, ensuring the data is numeric
-
-			for (var i = 0; i < data.length; ++i) {
-
-				var value = data[i].data;
-
-				// If the data is an array, we'll assume that it's a standard
-				// Flot x-y pair, and are concerned only with the second value.
-
-				// Note how we use the original array, rather than creating a
-				// new one; this is more efficient and preserves any extra data
-				// that the user may have stored in higher indexes.
-
-				if ($.isArray(value) && value.length == 1) {
-    				value = value[0];
-				}
-
-				if ($.isArray(value)) {
-					// Equivalent to $.isNumeric() but compatible with jQuery < 1.7
-					if (!isNaN(parseFloat(value[1])) && isFinite(value[1])) {
-						value[1] = +value[1];
-					} else {
-						value[1] = 0;
-					}
-				} else if (!isNaN(parseFloat(value)) && isFinite(value)) {
-					value = [1, +value];
-				} else {
-					value = [1, 0];
-				}
-
-				data[i].data = [value];
-			}
-
-			// Sum up all the slices, so we can calculate percentages for each
-
-			for (var i = 0; i < data.length; ++i) {
-				total += data[i].data[0][1];
-			}
-
-			// Count the number of slices with percentages below the combine
-			// threshold; if it turns out to be just one, we won't combine.
-
-			for (var i = 0; i < data.length; ++i) {
-				var value = data[i].data[0][1];
-				if (value / total <= options.series.pie.combine.threshold) {
-					combined += value;
-					numCombined++;
-					if (!color) {
-						color = data[i].color;
-					}
-				}
-			}
-
-			for (var i = 0; i < data.length; ++i) {
-				var value = data[i].data[0][1];
-				if (numCombined < 2 || value / total > options.series.pie.combine.threshold) {
-					newdata.push(
-						$.extend(data[i], {     /* extend to allow keeping all other original data values
-						                           and using them e.g. in labelFormatter. */
-							data: [[1, value]],
-							color: data[i].color,
-							label: data[i].label,
-							angle: value * Math.PI * 2 / total,
-							percent: value / (total / 100)
-						})
-					);
-				}
-			}
-
-			if (numCombined > 1) {
-				newdata.push({
-					data: [[1, combined]],
-					color: color,
-					label: options.series.pie.combine.label,
-					angle: combined * Math.PI * 2 / total,
-					percent: combined / (total / 100)
-				});
-			}
-
-			return newdata;
-		}
-
-		function draw(plot, newCtx) {
-
-			if (!target) {
-				return; // if no series were passed
-			}
-
-			var canvasWidth = plot.getPlaceholder().width(),
-				canvasHeight = plot.getPlaceholder().height(),
-				legendWidth = target.children().filter(".legend").children().width() || 0;
-
-			ctx = newCtx;
-
-			// WARNING: HACK! REWRITE THIS CODE AS SOON AS POSSIBLE!
-
-			// When combining smaller slices into an 'other' slice, we need to
-			// add a new series.  Since Flot gives plugins no way to modify the
-			// list of series, the pie plugin uses a hack where the first call
-			// to processDatapoints results in a call to setData with the new
-			// list of series, then subsequent processDatapoints do nothing.
-
-			// The plugin-global 'processed' flag is used to control this hack;
-			// it starts out false, and is set to true after the first call to
-			// processDatapoints.
-
-			// Unfortunately this turns future setData calls into no-ops; they
-			// call processDatapoints, the flag is true, and nothing happens.
-
-			// To fix this we'll set the flag back to false here in draw, when
-			// all series have been processed, so the next sequence of calls to
-			// processDatapoints once again starts out with a slice-combine.
-			// This is really a hack; in 0.9 we need to give plugins a proper
-			// way to modify series before any processing begins.
-
-			processed = false;
-
-			// calculate maximum radius and center point
-
-			maxRadius =  Math.min(canvasWidth, canvasHeight / options.series.pie.tilt) / 2;
-			centerTop = canvasHeight / 2 + options.series.pie.offset.top;
-			centerLeft = canvasWidth / 2;
-
-			if (options.series.pie.offset.left == "auto") {
-				if (options.legend.position.match("w")) {
-					centerLeft += legendWidth / 2;
-				} else {
-					centerLeft -= legendWidth / 2;
-				}
-				if (centerLeft < maxRadius) {
-					centerLeft = maxRadius;
-				} else if (centerLeft > canvasWidth - maxRadius) {
-					centerLeft = canvasWidth - maxRadius;
-				}
-			} else {
-				centerLeft += options.series.pie.offset.left;
-			}
-
-			var slices = plot.getData(),
-				attempts = 0;
-
-			// Keep shrinking the pie's radius until drawPie returns true,
-			// indicating that all the labels fit, or we try too many times.
-
-			do {
-				if (attempts > 0) {
-					maxRadius *= REDRAW_SHRINK;
-				}
-				attempts += 1;
-				clear();
-				if (options.series.pie.tilt <= 0.8) {
-					drawShadow();
-				}
-			} while (!drawPie() && attempts < REDRAW_ATTEMPTS)
-
-			if (attempts >= REDRAW_ATTEMPTS) {
-				clear();
-				target.prepend("<div class='error'>Could not draw pie with labels contained inside canvas</div>");
-			}
-
-			if (plot.setSeries && plot.insertLegend) {
-				plot.setSeries(slices);
-				plot.insertLegend();
-			}
-
-			// we're actually done at this point, just defining internal functions at this point
-
-			function clear() {
-				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-				target.children().filter(".pieLabel, .pieLabelBackground").remove();
-			}
-
-			function drawShadow() {
-
-				var shadowLeft = options.series.pie.shadow.left;
-				var shadowTop = options.series.pie.shadow.top;
-				var edge = 10;
-				var alpha = options.series.pie.shadow.alpha;
-				var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
-
-				if (radius >= canvasWidth / 2 - shadowLeft || radius * options.series.pie.tilt >= canvasHeight / 2 - shadowTop || radius <= edge) {
-					return;	// shadow would be outside canvas, so don't draw it
-				}
-
-				ctx.save();
-				ctx.translate(shadowLeft,shadowTop);
-				ctx.globalAlpha = alpha;
-				ctx.fillStyle = "#000";
-
-				// center and rotate to starting position
-
-				ctx.translate(centerLeft,centerTop);
-				ctx.scale(1, options.series.pie.tilt);
-
-				//radius -= edge;
-
-				for (var i = 1; i <= edge; i++) {
-					ctx.beginPath();
-					ctx.arc(0, 0, radius, 0, Math.PI * 2, false);
-					ctx.fill();
-					radius -= i;
-				}
-
-				ctx.restore();
-			}
-
-			function drawPie() {
-
-				var startAngle = Math.PI * options.series.pie.startAngle;
-				var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
-
-				// center and rotate to starting position
-
-				ctx.save();
-				ctx.translate(centerLeft,centerTop);
-				ctx.scale(1, options.series.pie.tilt);
-				//ctx.rotate(startAngle); // start at top; -- This doesn't work properly in Opera
-
-				// draw slices
-
-				ctx.save();
-				var currentAngle = startAngle;
-				for (var i = 0; i < slices.length; ++i) {
-					slices[i].startAngle = currentAngle;
-					drawSlice(slices[i].angle, slices[i].color, true);
-				}
-				ctx.restore();
-
-				// draw slice outlines
-
-				if (options.series.pie.stroke.width > 0) {
-					ctx.save();
-					ctx.lineWidth = options.series.pie.stroke.width;
-					currentAngle = startAngle;
-					for (var i = 0; i < slices.length; ++i) {
-						drawSlice(slices[i].angle, options.series.pie.stroke.color, false);
-					}
-					ctx.restore();
-				}
-
-				// draw donut hole
-
-				drawDonutHole(ctx);
-
-				ctx.restore();
-
-				// Draw the labels, returning true if they fit within the plot
-
-				if (options.series.pie.label.show) {
-					return drawLabels();
-				} else return true;
-
-				function drawSlice(angle, color, fill) {
-
-					if (angle <= 0 || isNaN(angle)) {
-						return;
-					}
-
-					if (fill) {
-						ctx.fillStyle = color;
-					} else {
-						ctx.strokeStyle = color;
-						ctx.lineJoin = "round";
-					}
-
-					ctx.beginPath();
-					if (Math.abs(angle - Math.PI * 2) > 0.000000001) {
-						ctx.moveTo(0, 0); // Center of the pie
-					}
-
-					//ctx.arc(0, 0, radius, 0, angle, false); // This doesn't work properly in Opera
-					ctx.arc(0, 0, radius,currentAngle, currentAngle + angle / 2, false);
-					ctx.arc(0, 0, radius,currentAngle + angle / 2, currentAngle + angle, false);
-					ctx.closePath();
-					//ctx.rotate(angle); // This doesn't work properly in Opera
-					currentAngle += angle;
-
-					if (fill) {
-						ctx.fill();
-					} else {
-						ctx.stroke();
-					}
-				}
-
-				function drawLabels() {
-
-					var currentAngle = startAngle;
-					var radius = options.series.pie.label.radius > 1 ? options.series.pie.label.radius : maxRadius * options.series.pie.label.radius;
-
-					for (var i = 0; i < slices.length; ++i) {
-						if (slices[i].percent >= options.series.pie.label.threshold * 100) {
-							if (!drawLabel(slices[i], currentAngle, i)) {
-								return false;
-							}
-						}
-						currentAngle += slices[i].angle;
-					}
-
-					return true;
-
-					function drawLabel(slice, startAngle, index) {
-
-						if (slice.data[0][1] == 0) {
-							return true;
-						}
-
-						// format label text
-
-						var lf = options.legend.labelFormatter, text, plf = options.series.pie.label.formatter;
-
-						if (lf) {
-							text = lf(slice.label, slice);
-						} else {
-							text = slice.label;
-						}
-
-						if (plf) {
-							text = plf(text, slice);
-						}
-
-						var halfAngle = ((startAngle + slice.angle) + startAngle) / 2;
-						var x = centerLeft + Math.round(Math.cos(halfAngle) * radius);
-						var y = centerTop + Math.round(Math.sin(halfAngle) * radius) * options.series.pie.tilt;
-
-						var html = "<span class='pieLabel' id='pieLabel" + index + "' style='position:absolute;top:" + y + "px;left:" + x + "px;'>" + text + "</span>";
-						target.append(html);
-
-						var label = target.children("#pieLabel" + index);
-						var labelTop = (y - label.height() / 2);
-						var labelLeft = (x - label.width() / 2);
-
-						label.css("top", labelTop);
-						label.css("left", labelLeft);
-
-						// check to make sure that the label is not outside the canvas
-
-						if (0 - labelTop > 0 || 0 - labelLeft > 0 || canvasHeight - (labelTop + label.height()) < 0 || canvasWidth - (labelLeft + label.width()) < 0) {
-							return false;
-						}
-
-						if (options.series.pie.label.background.opacity != 0) {
-
-							// put in the transparent background separately to avoid blended labels and label boxes
-
-							var c = options.series.pie.label.background.color;
-
-							if (c == null) {
-								c = slice.color;
-							}
-
-							var pos = "top:" + labelTop + "px;left:" + labelLeft + "px;";
-							$("<div class='pieLabelBackground' style='position:absolute;width:" + label.width() + "px;height:" + label.height() + "px;" + pos + "background-color:" + c + ";'></div>")
-								.css("opacity", options.series.pie.label.background.opacity)
-								.insertBefore(label);
-						}
-
-						return true;
-					} // end individual label function
-				} // end drawLabels function
-			} // end drawPie function
-		} // end draw function
-
-		// Placed here because it needs to be accessed from multiple locations
-
-		function drawDonutHole(layer) {
-			if (options.series.pie.innerRadius > 0) {
-
-				// subtract the center
-
-				layer.save();
-				var innerRadius = options.series.pie.innerRadius > 1 ? options.series.pie.innerRadius : maxRadius * options.series.pie.innerRadius;
-				layer.globalCompositeOperation = "destination-out"; // this does not work with excanvas, but it will fall back to using the stroke color
-				layer.beginPath();
-				layer.fillStyle = options.series.pie.stroke.color;
-				layer.arc(0, 0, innerRadius, 0, Math.PI * 2, false);
-				layer.fill();
-				layer.closePath();
-				layer.restore();
-
-				// add inner stroke
-
-				layer.save();
-				layer.beginPath();
-				layer.strokeStyle = options.series.pie.stroke.color;
-				layer.arc(0, 0, innerRadius, 0, Math.PI * 2, false);
-				layer.stroke();
-				layer.closePath();
-				layer.restore();
-
-				// TODO: add extra shadow inside hole (with a mask) if the pie is tilted.
-			}
-		}
-
-		//-- Additional Interactive related functions --
-
-		function isPointInPoly(poly, pt) {
-			for(var c = false, i = -1, l = poly.length, j = l - 1; ++i < l; j = i)
-				((poly[i][1] <= pt[1] && pt[1] < poly[j][1]) || (poly[j][1] <= pt[1] && pt[1]< poly[i][1]))
-				&& (pt[0] < (poly[j][0] - poly[i][0]) * (pt[1] - poly[i][1]) / (poly[j][1] - poly[i][1]) + poly[i][0])
-				&& (c = !c);
-			return c;
-		}
-
-		function findNearbySlice(mouseX, mouseY) {
-
-			var slices = plot.getData(),
-				options = plot.getOptions(),
-				radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius,
-				x, y;
-
-			for (var i = 0; i < slices.length; ++i) {
-
-				var s = slices[i];
-
-				if (s.pie.show) {
-
-					ctx.save();
-					ctx.beginPath();
-					ctx.moveTo(0, 0); // Center of the pie
-					//ctx.scale(1, options.series.pie.tilt);	// this actually seems to break everything when here.
-					ctx.arc(0, 0, radius, s.startAngle, s.startAngle + s.angle / 2, false);
-					ctx.arc(0, 0, radius, s.startAngle + s.angle / 2, s.startAngle + s.angle, false);
-					ctx.closePath();
-					x = mouseX - centerLeft;
-					y = mouseY - centerTop;
-
-					if (ctx.isPointInPath) {
-						if (ctx.isPointInPath(mouseX - centerLeft, mouseY - centerTop)) {
-							ctx.restore();
-							return {
-								datapoint: [s.percent, s.data],
-								dataIndex: 0,
-								series: s,
-								seriesIndex: i
-							};
-						}
-					} else {
-
-						// excanvas for IE doesn;t support isPointInPath, this is a workaround.
-
-						var p1X = radius * Math.cos(s.startAngle),
-							p1Y = radius * Math.sin(s.startAngle),
-							p2X = radius * Math.cos(s.startAngle + s.angle / 4),
-							p2Y = radius * Math.sin(s.startAngle + s.angle / 4),
-							p3X = radius * Math.cos(s.startAngle + s.angle / 2),
-							p3Y = radius * Math.sin(s.startAngle + s.angle / 2),
-							p4X = radius * Math.cos(s.startAngle + s.angle / 1.5),
-							p4Y = radius * Math.sin(s.startAngle + s.angle / 1.5),
-							p5X = radius * Math.cos(s.startAngle + s.angle),
-							p5Y = radius * Math.sin(s.startAngle + s.angle),
-							arrPoly = [[0, 0], [p1X, p1Y], [p2X, p2Y], [p3X, p3Y], [p4X, p4Y], [p5X, p5Y]],
-							arrPoint = [x, y];
-
-						// TODO: perhaps do some mathmatical trickery here with the Y-coordinate to compensate for pie tilt?
-
-						if (isPointInPoly(arrPoly, arrPoint)) {
-							ctx.restore();
-							return {
-								datapoint: [s.percent, s.data],
-								dataIndex: 0,
-								series: s,
-								seriesIndex: i
-							};
-						}
-					}
-
-					ctx.restore();
-				}
-			}
-
-			return null;
-		}
-
-		function onMouseMove(e) {
-			triggerClickHoverEvent("plothover", e);
-		}
-
-		function onClick(e) {
-			triggerClickHoverEvent("plotclick", e);
-		}
-
-		// trigger click or hover event (they send the same parameters so we share their code)
-
-		function triggerClickHoverEvent(eventname, e) {
-
-			var offset = plot.offset();
-			var canvasX = parseInt(e.pageX - offset.left);
-			var canvasY =  parseInt(e.pageY - offset.top);
-			var item = findNearbySlice(canvasX, canvasY);
-
-			if (options.grid.autoHighlight) {
-
-				// clear auto-highlights
-
-				for (var i = 0; i < highlights.length; ++i) {
-					var h = highlights[i];
-					if (h.auto == eventname && !(item && h.series == item.series)) {
-						unhighlight(h.series);
-					}
-				}
-			}
-
-			// highlight the slice
-
-			if (item) {
-				highlight(item.series, eventname);
-			}
-
-			// trigger any hover bind events
-
-			var pos = { pageX: e.pageX, pageY: e.pageY };
-			target.trigger(eventname, [pos, item]);
-		}
-
-		function highlight(s, auto) {
-			//if (typeof s == "number") {
-			//	s = series[s];
-			//}
-
-			var i = indexOfHighlight(s);
-
-			if (i == -1) {
-				highlights.push({ series: s, auto: auto });
-				plot.triggerRedrawOverlay();
-			} else if (!auto) {
-				highlights[i].auto = false;
-			}
-		}
-
-		function unhighlight(s) {
-			if (s == null) {
-				highlights = [];
-				plot.triggerRedrawOverlay();
-			}
-
-			//if (typeof s == "number") {
-			//	s = series[s];
-			//}
-
-			var i = indexOfHighlight(s);
-
-			if (i != -1) {
-				highlights.splice(i, 1);
-				plot.triggerRedrawOverlay();
-			}
-		}
-
-		function indexOfHighlight(s) {
-			for (var i = 0; i < highlights.length; ++i) {
-				var h = highlights[i];
-				if (h.series == s)
-					return i;
-			}
-			return -1;
-		}
-
-		function drawOverlay(plot, octx) {
-
-			var options = plot.getOptions();
-
-			var radius = options.series.pie.radius > 1 ? options.series.pie.radius : maxRadius * options.series.pie.radius;
-
-			octx.save();
-			octx.translate(centerLeft, centerTop);
-			octx.scale(1, options.series.pie.tilt);
-
-			for (var i = 0; i < highlights.length; ++i) {
-				drawHighlight(highlights[i].series);
-			}
-
-			drawDonutHole(octx);
-
-			octx.restore();
-
-			function drawHighlight(series) {
-
-				if (series.angle <= 0 || isNaN(series.angle)) {
-					return;
-				}
-
-				//octx.fillStyle = parseColor(options.series.pie.highlight.color).scale(null, null, null, options.series.pie.highlight.opacity).toString();
-				octx.fillStyle = "rgba(255, 255, 255, " + options.series.pie.highlight.opacity + ")"; // this is temporary until we have access to parseColor
-				octx.beginPath();
-				if (Math.abs(series.angle - Math.PI * 2) > 0.000000001) {
-					octx.moveTo(0, 0); // Center of the pie
-				}
-				octx.arc(0, 0, radius, series.startAngle, series.startAngle + series.angle / 2, false);
-				octx.arc(0, 0, radius, series.startAngle + series.angle / 2, series.startAngle + series.angle, false);
-				octx.closePath();
-				octx.fill();
-			}
-		}
-	} // end init (plugin body)
-
-	// define pie specific options and their default values
-
-	var options = {
-		series: {
-			pie: {
-				show: false,
-				radius: "auto",	// actual radius of the visible pie (based on full calculated radius if <=1, or hard pixel value)
-				innerRadius: 0, /* for donut */
-				startAngle: 3/2,
-				tilt: 1,
-				shadow: {
-					left: 5,	// shadow left offset
-					top: 15,	// shadow top offset
-					alpha: 0.02	// shadow alpha
-				},
-				offset: {
-					top: 0,
-					left: "auto"
-				},
-				stroke: {
-					color: "#fff",
-					width: 1
-				},
-				label: {
-					show: "auto",
-					formatter: function(label, slice) {
-						return "<div style='font-size:x-small;text-align:center;padding:2px;color:" + slice.color + ";'>" + label + "<br/>" + Math.round(slice.percent) + "%</div>";
-					},	// formatter function
-					radius: 1,	// radius at which to place the labels (based on full calculated radius if <=1, or hard pixel value)
-					background: {
-						color: null,
-						opacity: 0
-					},
-					threshold: 0	// percentage at which to hide the label (i.e. the slice is too narrow)
-				},
-				combine: {
-					threshold: -1,	// percentage at which to combine little slices into one larger slice
-					color: null,	// color to give the new slice (auto-generated if null)
-					label: "Other"	// label to give the new slice
-				},
-				highlight: {
-					//color: "#fff",		// will add this functionality once parseColor is available
-					opacity: 0.5
-				}
-			}
-		}
-	};
-
-	$.plot.plugins.push({
-		init: init,
-		options: options,
-		name: "pie",
-		version: "1.1"
-	});
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
 
 /***/ }),
 
-/***/ 1736:
+/***/ 1212:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2786,213 +3698,712 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='ti-bar-chart-alt'></i> Spline Line Chart"
-              }
-            },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend1" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart",
-                attrs: { id: "basicflot" }
-              })
-            ]
-          )
-        ],
-        1
-      ),
+      _c("div", { staticClass: "col-md-6 card-alignment" }, [
+        _c(
+          "div",
+          [
+            _c(
+              "b-card",
+              { staticClass: "p-0" },
+              [
+                _c(
+                  "div",
+                  { staticClass: "card-title bg-primary text-center mb-0 p-0" },
+                  [
+                    _c("h4", { staticClass: "py-4 text-white" }, [
+                      _vm._v("Top\n                        Authors")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "slick",
+                  {
+                    ref: "slick",
+                    staticClass: "slider",
+                    attrs: { options: _vm.slickOptions }
+                  },
+                  [
+                    _c(
+                      "a",
+                      { attrs: { href: "#" } },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center" },
+                          [
+                            _c("b-img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src: __webpack_require__(564),
+                                rounded: "circle",
+                                alt: "Circle image"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("b-card-text", [
+                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
+                            _vm._v("Natasha Knight")
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-group" }, [
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
+                              _vm._v("+123456789")
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
+                              _vm._v(
+                                "contact@contact.com\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
+                              _vm._v(
+                                "US,Washington\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-twitter bg-info text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-instagram bg-warning text-white p-1"
+                              })
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item p-0" }, [
+                              _c("div", { staticClass: "row" }, [
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("71")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Articles")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("1400")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Followers")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("450")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Likes")])
+                                  ])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { attrs: { href: "#" } },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center" },
+                          [
+                            _c("b-img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src: __webpack_require__(561),
+                                rounded: "circle",
+                                alt: "Circle image"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("b-card-text", [
+                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
+                            _vm._v("John Mark")
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-group" }, [
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
+                              _vm._v("+123456789")
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
+                              _vm._v(
+                                "contact@contact.com\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
+                              _vm._v(
+                                "US,Washington\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-twitter bg-info text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-instagram bg-warning text-white p-1"
+                              })
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item p-0" }, [
+                              _c("div", { staticClass: "row" }, [
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("71")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Articles")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("1400")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Followers")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("450")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Likes")])
+                                  ])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { attrs: { href: "#" } },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center" },
+                          [
+                            _c("b-img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src: __webpack_require__(641),
+                                rounded: "circle",
+                                alt: "Circle image"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("b-card-text", [
+                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
+                            _vm._v("Shubham Raj")
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-group " }, [
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
+                              _vm._v("+123456789")
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
+                              _vm._v(
+                                "contact@contact.com\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
+                              _vm._v(
+                                "US,Washington\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-twitter bg-info text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-instagram bg-warning text-white p-1"
+                              })
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item p-0" }, [
+                              _c("div", { staticClass: "row" }, [
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("71")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Articles")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("1400")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Followers")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("450")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Likes")])
+                                  ])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      { attrs: { href: "#" } },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center" },
+                          [
+                            _c("b-img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src: __webpack_require__(563),
+                                rounded: "circle",
+                                alt: "Circle image"
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c("b-card-text", [
+                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
+                            _vm._v("Sophia Snyder")
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-group " }, [
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
+                              _vm._v("+123456789")
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
+                              _vm._v(
+                                "contact@contact.com\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
+                              _vm._v(
+                                "US,Washington\n                                    "
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-twitter bg-info text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
+                              }),
+                              _vm._v(" "),
+                              _c("i", {
+                                staticClass:
+                                  "fa fa-instagram bg-warning text-white p-1"
+                              })
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item p-0" }, [
+                              _c("div", { staticClass: "row" }, [
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("71")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Articles")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4 section" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("1400")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Followers")])
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-4" }, [
+                                  _c("div", { staticClass: " text-center" }, [
+                                    _c("h5", { staticClass: "mt-2" }, [
+                                      _vm._v("450")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", [_vm._v("Likes")])
+                                  ])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]),
       _vm._v(" "),
       _c(
         "div",
         { staticClass: "col-md-6" },
         [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-bar-chart-alt'></i> Line Chart" } },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart1",
-                attrs: { id: "line-chart" }
-              })
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            {
-              staticClass: "body-bg",
-              attrs: { title: "<i class='ti-bar-chart'></i> Bar Charts" }
-            },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend-barchart" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart1",
-                attrs: { id: "bar-chart" }
-              })
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='ti-bar-chart'></i> Stacked Bar Charts"
-              }
-            },
-            [
-              _c("div", {
-                staticClass: "flotLegend",
-                attrs: { id: "basicFlotLegend-stac" }
-              }),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "flotChart1",
-                attrs: { id: "bar-chart-stacked" }
-              })
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-4" },
-        [
-          _c(
-            "card",
-            { attrs: { title: " <i class='ti-pie-chart'></i> Donut" } },
-            [_c("div", { staticClass: "flotChart2", attrs: { id: "donut" } })]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-lg-8" },
-        [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-pie-chart'></i> Pie Charts" } },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c("div", {
-                    staticClass: "flotChart1",
-                    attrs: { id: "placeholdertranslabel" }
-                  })
+          _c("b-card", { staticClass: "p-0" }, [
+            _c(
+              "div",
+              { staticClass: "card-title bg-success  mb-0 p-0" },
+              [
+                _c(
+                  "b-row",
+                  { staticClass: " mx-2 py-3 text-white" },
+                  [
+                    _c("b-col", [
+                      _c("h5", { staticClass: "text-white font-weight-bold" }, [
+                        _vm._v("Active Users")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("Updated 10 min ago ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("b-col", { staticClass: "text-right" }, [
+                      _c("p", { staticClass: "font-weight-bold mr-3" }, [
+                        _vm._v("50")
+                      ])
+                    ])
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("table", { staticClass: "table user-country text-center" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c(
+                    "th",
+                    { attrs: { scope: "row" } },
+                    [
+                      _c("b-img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: __webpack_require__(1213),
+                          alt: "Circle image"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
+                      _vm._v("United States")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("150")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "mr-3 text-success" }, [
+                      _c("i", {
+                        staticClass: "fa fa-arrow-up",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v("20%")
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c("div", {
-                    staticClass: "flotChart1",
-                    attrs: { id: "placeholdertiltedpie" }
-                  })
+                _c("tr", [
+                  _c(
+                    "th",
+                    { attrs: { scope: "row" } },
+                    [
+                      _c("b-img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: __webpack_require__(1214),
+                          alt: "Circle image"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
+                      _vm._v("Hungary")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("150")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "mr-3 text-danger" }, [
+                      _c("i", {
+                        staticClass: "fa fa-arrow-down",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v("20%")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c(
+                    "th",
+                    { attrs: { scope: "row" } },
+                    [
+                      _c("b-img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: __webpack_require__(1215),
+                          alt: "Circle image"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
+                      _vm._v("France")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("150")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "mr-3 text-success" }, [
+                      _c("i", {
+                        staticClass: "fa fa-arrow-up",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v("20%")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c(
+                    "th",
+                    { attrs: { scope: "row" } },
+                    [
+                      _c("b-img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: __webpack_require__(1216),
+                          alt: "Circle image"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
+                      _vm._v("Japan")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("150")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "mr-3 text-success" }, [
+                      _c("i", {
+                        staticClass: "fa fa-arrow-up",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v("20%")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c(
+                    "th",
+                    { attrs: { scope: "row" } },
+                    [
+                      _c("b-img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: __webpack_require__(1217),
+                          alt: "Circle image"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
+                      _vm._v("China")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("150")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "mr-3 text-danger" }, [
+                      _c("i", {
+                        staticClass: "fa fa-arrow-down",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v("20%")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c(
+                    "th",
+                    { attrs: { scope: "row" } },
+                    [
+                      _c("b-img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: __webpack_require__(1218),
+                          alt: "Circle image"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
+                      _vm._v("Russia")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("150")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "mr-3 text-danger" }, [
+                      _c("i", {
+                        staticClass: "fa fa-arrow-down",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v("20%")
+                  ])
                 ])
               ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-12" },
-        [
-          _c(
-            "card",
-            {
-              attrs: { title: '<i class="ti-bar-chart"></i> Real Time Charts' }
-            },
-            [
-              _c("div", {
-                staticClass: "flotChart3",
-                attrs: { id: "realtime" }
-              })
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-bar-chart'></i> Area Chart" } },
-            [
-              _c("div", {
-                staticClass: "flotChart3",
-                attrs: { id: "area-chart" }
-              })
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-lg-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: { title: "<i class='ti-bar-chart'></i> Spline Area Chart" }
-            },
-            [
-              _c("div", {
-                staticClass: "flotChart3",
-                attrs: { id: "chart-spline" }
-              })
-            ]
-          )
+            ])
+          ])
         ],
         1
       )
@@ -3005,31 +4416,74 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6998e6c6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-bdc9e4c6", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 479:
+/***/ 1213:
+/***/ (function(module, exports) {
+
+module.exports = "/images/icons8-usa.png?2f571ec2fabfb42d3048347cb5d915e5";
+
+/***/ }),
+
+/***/ 1214:
+/***/ (function(module, exports) {
+
+module.exports = "/images/icons8-hungary.png?7b2413c61df5d2cfb38bb64bf4e523cc";
+
+/***/ }),
+
+/***/ 1215:
+/***/ (function(module, exports) {
+
+module.exports = "/images/icons8-france.png?fc7bfee4e22aaa96ade94d82743c361c";
+
+/***/ }),
+
+/***/ 1216:
+/***/ (function(module, exports) {
+
+module.exports = "/images/icons8-japan.png?be49868672d850f0d9a49057d010ec4d";
+
+/***/ }),
+
+/***/ 1217:
+/***/ (function(module, exports) {
+
+module.exports = "/images/icons8-china.png?a2e59bbc566b9949aeb1a2dce00be98d";
+
+/***/ }),
+
+/***/ 1218:
+/***/ (function(module, exports) {
+
+module.exports = "/images/ru.png?4ebdfc3eb99405fb83fb5bd80edc8280";
+
+/***/ }),
+
+/***/ 435:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1729)
+  __webpack_require__(1204)
+  __webpack_require__(1206)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1731)
+var __vue_script__ = __webpack_require__(1208)
 /* template */
-var __vue_template__ = __webpack_require__(1736)
+var __vue_template__ = __webpack_require__(1212)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-bdc9e4c6"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -3040,7 +4494,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/flot_charts.vue"
+Component.options.__file = "resources/components/pages/index3.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -3049,9 +4503,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6998e6c6", Component.options)
+    hotAPI.createRecord("data-v-bdc9e4c6", Component.options)
   } else {
-    hotAPI.reload("data-v-6998e6c6", Component.options)
+    hotAPI.reload("data-v-bdc9e4c6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -3063,7 +4517,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 521:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -13435,3766 +14889,31 @@ return jQuery;
 
 /***/ }),
 
-/***/ 524:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 561:
+/***/ (function(module, exports) {
 
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(525)
-}
-var normalizeComponent = __webpack_require__(42)
-/* script */
-var __vue_script__ = __webpack_require__(527)
-/* template */
-var __vue_template__ = __webpack_require__(528)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/components/pages/card/card.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-15e33d3a", Component.options)
-  } else {
-    hotAPI.reload("data-v-15e33d3a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
+module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 525:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 563:
+/***/ (function(module, exports) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(526);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("d6b775a8", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
+module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 526:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 564:
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
-
-// exports
-
+module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 527:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 641:
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'card',
-    data: function data() {
-        return {
-            show: true,
-            isActive: false
-        };
-    },
-
-    methods: {
-        hide: function hide() {
-            this.isActive = true;
-        }
-    },
-    mounted: function mounted() {},
-    props: {
-        title: {
-            required: false
-        }
-    },
-    destroy: function destroy() {}
-});
-
-/***/ }),
-
-/***/ 528:
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h3", {
-        staticClass: "card-title",
-        domProps: { innerHTML: _vm._s(_vm.title) }
-      }),
-      _vm._v(" "),
-      _c("span", { staticClass: "float-right" }, [
-        _c("i", {
-          staticClass: "fa fa-fw ti-angle-up",
-          class: { rotate: _vm.show },
-          on: {
-            click: function($event) {
-              _vm.show = !_vm.show
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("i", {
-          staticClass: "fa fa-fw ti-close removecard",
-          on: { click: _vm.hide }
-        })
-      ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        directives: [
-          {
-            name: "show",
-            rawName: "v-show",
-            value: _vm.show,
-            expression: "show"
-          }
-        ],
-        staticClass: "card-body"
-      },
-      [_vm._t("default")],
-      2
-    )
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 664:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Javascript plotting library for jQuery, version 0.8.3.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-*/
-
-// first an inline dependency, jquery.colorhelpers.js, we inline it here
-// for convenience
-
-/* Plugin for jQuery for working with colors.
- *
- * Version 1.1.
- *
- * Inspiration from jQuery color animation plugin by John Resig.
- *
- * Released under the MIT license by Ole Laursen, October 2009.
- *
- * Examples:
- *
- *   $.color.parse("#fff").scale('rgb', 0.25).add('a', -0.5).toString()
- *   var c = $.color.extract($("#mydiv"), 'background-color');
- *   console.log(c.r, c.g, c.b, c.a);
- *   $.color.make(100, 50, 25, 0.4).toString() // returns "rgba(100,50,25,0.4)"
- *
- * Note that .scale() and .add() return the same modified object
- * instead of making a new one.
- *
- * V. 1.1: Fix error handling so e.g. parsing an empty string does
- * produce a color rather than just crashing.
- */
-(function($){$.color={};$.color.make=function(r,g,b,a){var o={};o.r=r||0;o.g=g||0;o.b=b||0;o.a=a!=null?a:1;o.add=function(c,d){for(var i=0;i<c.length;++i)o[c.charAt(i)]+=d;return o.normalize()};o.scale=function(c,f){for(var i=0;i<c.length;++i)o[c.charAt(i)]*=f;return o.normalize()};o.toString=function(){if(o.a>=1){return"rgb("+[o.r,o.g,o.b].join(",")+")"}else{return"rgba("+[o.r,o.g,o.b,o.a].join(",")+")"}};o.normalize=function(){function clamp(min,value,max){return value<min?min:value>max?max:value}o.r=clamp(0,parseInt(o.r),255);o.g=clamp(0,parseInt(o.g),255);o.b=clamp(0,parseInt(o.b),255);o.a=clamp(0,o.a,1);return o};o.clone=function(){return $.color.make(o.r,o.b,o.g,o.a)};return o.normalize()};$.color.extract=function(elem,css){var c;do{c=elem.css(css).toLowerCase();if(c!=""&&c!="transparent")break;elem=elem.parent()}while(elem.length&&!$.nodeName(elem.get(0),"body"));if(c=="rgba(0, 0, 0, 0)")c="transparent";return $.color.parse(c)};$.color.parse=function(str){var res,m=$.color.make;if(res=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(str))return m(parseInt(res[1],10),parseInt(res[2],10),parseInt(res[3],10));if(res=/rgba\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]+(?:\.[0-9]+)?)\s*\)/.exec(str))return m(parseInt(res[1],10),parseInt(res[2],10),parseInt(res[3],10),parseFloat(res[4]));if(res=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(str))return m(parseFloat(res[1])*2.55,parseFloat(res[2])*2.55,parseFloat(res[3])*2.55);if(res=/rgba\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\s*\)/.exec(str))return m(parseFloat(res[1])*2.55,parseFloat(res[2])*2.55,parseFloat(res[3])*2.55,parseFloat(res[4]));if(res=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(str))return m(parseInt(res[1],16),parseInt(res[2],16),parseInt(res[3],16));if(res=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(str))return m(parseInt(res[1]+res[1],16),parseInt(res[2]+res[2],16),parseInt(res[3]+res[3],16));var name=$.trim(str).toLowerCase();if(name=="transparent")return m(255,255,255,0);else{res=lookupColors[name]||[0,0,0];return m(res[0],res[1],res[2])}};var lookupColors={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0]}})(jQuery);
-
-// the actual Flot code
-(function($) {
-
-	// Cache the prototype hasOwnProperty for faster access
-
-	var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-    // A shim to provide 'detach' to jQuery versions prior to 1.4.  Using a DOM
-    // operation produces the same effect as detach, i.e. removing the element
-    // without touching its jQuery data.
-
-    // Do not merge this into Flot 0.9, since it requires jQuery 1.4.4+.
-
-    if (!$.fn.detach) {
-        $.fn.detach = function() {
-            return this.each(function() {
-                if (this.parentNode) {
-                    this.parentNode.removeChild( this );
-                }
-            });
-        };
-    }
-
-	///////////////////////////////////////////////////////////////////////////
-	// The Canvas object is a wrapper around an HTML5 <canvas> tag.
-	//
-	// @constructor
-	// @param {string} cls List of classes to apply to the canvas.
-	// @param {element} container Element onto which to append the canvas.
-	//
-	// Requiring a container is a little iffy, but unfortunately canvas
-	// operations don't work unless the canvas is attached to the DOM.
-
-	function Canvas(cls, container) {
-
-		var element = container.children("." + cls)[0];
-
-		if (element == null) {
-
-			element = document.createElement("canvas");
-			element.className = cls;
-
-			$(element).css({ direction: "ltr", position: "absolute", left: 0, top: 0 })
-				.appendTo(container);
-
-			// If HTML5 Canvas isn't available, fall back to [Ex|Flash]canvas
-
-			if (!element.getContext) {
-				if (window.G_vmlCanvasManager) {
-					element = window.G_vmlCanvasManager.initElement(element);
-				} else {
-					throw new Error("Canvas is not available. If you're using IE with a fall-back such as Excanvas, then there's either a mistake in your conditional include, or the page has no DOCTYPE and is rendering in Quirks Mode.");
-				}
-			}
-		}
-
-		this.element = element;
-
-		var context = this.context = element.getContext("2d");
-
-		// Determine the screen's ratio of physical to device-independent
-		// pixels.  This is the ratio between the canvas width that the browser
-		// advertises and the number of pixels actually present in that space.
-
-		// The iPhone 4, for example, has a device-independent width of 320px,
-		// but its screen is actually 640px wide.  It therefore has a pixel
-		// ratio of 2, while most normal devices have a ratio of 1.
-
-		var devicePixelRatio = window.devicePixelRatio || 1,
-			backingStoreRatio =
-				context.webkitBackingStorePixelRatio ||
-				context.mozBackingStorePixelRatio ||
-				context.msBackingStorePixelRatio ||
-				context.oBackingStorePixelRatio ||
-				context.backingStorePixelRatio || 1;
-
-		this.pixelRatio = devicePixelRatio / backingStoreRatio;
-
-		// Size the canvas to match the internal dimensions of its container
-
-		this.resize(container.width(), container.height());
-
-		// Collection of HTML div layers for text overlaid onto the canvas
-
-		this.textContainer = null;
-		this.text = {};
-
-		// Cache of text fragments and metrics, so we can avoid expensively
-		// re-calculating them when the plot is re-rendered in a loop.
-
-		this._textCache = {};
-	}
-
-	// Resizes the canvas to the given dimensions.
-	//
-	// @param {number} width New width of the canvas, in pixels.
-	// @param {number} width New height of the canvas, in pixels.
-
-	Canvas.prototype.resize = function(width, height) {
-
-		if (width <= 0 || height <= 0) {
-			throw new Error("Invalid dimensions for plot, width = " + width + ", height = " + height);
-		}
-
-		var element = this.element,
-			context = this.context,
-			pixelRatio = this.pixelRatio;
-
-		// Resize the canvas, increasing its density based on the display's
-		// pixel ratio; basically giving it more pixels without increasing the
-		// size of its element, to take advantage of the fact that retina
-		// displays have that many more pixels in the same advertised space.
-
-		// Resizing should reset the state (excanvas seems to be buggy though)
-
-		if (this.width != width) {
-			element.width = width * pixelRatio;
-			element.style.width = width + "px";
-			this.width = width;
-		}
-
-		if (this.height != height) {
-			element.height = height * pixelRatio;
-			element.style.height = height + "px";
-			this.height = height;
-		}
-
-		// Save the context, so we can reset in case we get replotted.  The
-		// restore ensure that we're really back at the initial state, and
-		// should be safe even if we haven't saved the initial state yet.
-
-		context.restore();
-		context.save();
-
-		// Scale the coordinate space to match the display density; so even though we
-		// may have twice as many pixels, we still want lines and other drawing to
-		// appear at the same size; the extra pixels will just make them crisper.
-
-		context.scale(pixelRatio, pixelRatio);
-	};
-
-	// Clears the entire canvas area, not including any overlaid HTML text
-
-	Canvas.prototype.clear = function() {
-		this.context.clearRect(0, 0, this.width, this.height);
-	};
-
-	// Finishes rendering the canvas, including managing the text overlay.
-
-	Canvas.prototype.render = function() {
-
-		var cache = this._textCache;
-
-		// For each text layer, add elements marked as active that haven't
-		// already been rendered, and remove those that are no longer active.
-
-		for (var layerKey in cache) {
-			if (hasOwnProperty.call(cache, layerKey)) {
-
-				var layer = this.getTextLayer(layerKey),
-					layerCache = cache[layerKey];
-
-				layer.hide();
-
-				for (var styleKey in layerCache) {
-					if (hasOwnProperty.call(layerCache, styleKey)) {
-						var styleCache = layerCache[styleKey];
-						for (var key in styleCache) {
-							if (hasOwnProperty.call(styleCache, key)) {
-
-								var positions = styleCache[key].positions;
-
-								for (var i = 0, position; position = positions[i]; i++) {
-									if (position.active) {
-										if (!position.rendered) {
-											layer.append(position.element);
-											position.rendered = true;
-										}
-									} else {
-										positions.splice(i--, 1);
-										if (position.rendered) {
-											position.element.detach();
-										}
-									}
-								}
-
-								if (positions.length == 0) {
-									delete styleCache[key];
-								}
-							}
-						}
-					}
-				}
-
-				layer.show();
-			}
-		}
-	};
-
-	// Creates (if necessary) and returns the text overlay container.
-	//
-	// @param {string} classes String of space-separated CSS classes used to
-	//     uniquely identify the text layer.
-	// @return {object} The jQuery-wrapped text-layer div.
-
-	Canvas.prototype.getTextLayer = function(classes) {
-
-		var layer = this.text[classes];
-
-		// Create the text layer if it doesn't exist
-
-		if (layer == null) {
-
-			// Create the text layer container, if it doesn't exist
-
-			if (this.textContainer == null) {
-				this.textContainer = $("<div class='flot-text'></div>")
-					.css({
-						position: "absolute",
-						top: 0,
-						left: 0,
-						bottom: 0,
-						right: 0,
-						'font-size': "smaller",
-						color: "#545454"
-					})
-					.insertAfter(this.element);
-			}
-
-			layer = this.text[classes] = $("<div></div>")
-				.addClass(classes)
-				.css({
-					position: "absolute",
-					top: 0,
-					left: 0,
-					bottom: 0,
-					right: 0
-				})
-				.appendTo(this.textContainer);
-		}
-
-		return layer;
-	};
-
-	// Creates (if necessary) and returns a text info object.
-	//
-	// The object looks like this:
-	//
-	// {
-	//     width: Width of the text's wrapper div.
-	//     height: Height of the text's wrapper div.
-	//     element: The jQuery-wrapped HTML div containing the text.
-	//     positions: Array of positions at which this text is drawn.
-	// }
-	//
-	// The positions array contains objects that look like this:
-	//
-	// {
-	//     active: Flag indicating whether the text should be visible.
-	//     rendered: Flag indicating whether the text is currently visible.
-	//     element: The jQuery-wrapped HTML div containing the text.
-	//     x: X coordinate at which to draw the text.
-	//     y: Y coordinate at which to draw the text.
-	// }
-	//
-	// Each position after the first receives a clone of the original element.
-	//
-	// The idea is that that the width, height, and general 'identity' of the
-	// text is constant no matter where it is placed; the placements are a
-	// secondary property.
-	//
-	// Canvas maintains a cache of recently-used text info objects; getTextInfo
-	// either returns the cached element or creates a new entry.
-	//
-	// @param {string} layer A string of space-separated CSS classes uniquely
-	//     identifying the layer containing this text.
-	// @param {string} text Text string to retrieve info for.
-	// @param {(string|object)=} font Either a string of space-separated CSS
-	//     classes or a font-spec object, defining the text's font and style.
-	// @param {number=} angle Angle at which to rotate the text, in degrees.
-	//     Angle is currently unused, it will be implemented in the future.
-	// @param {number=} width Maximum width of the text before it wraps.
-	// @return {object} a text info object.
-
-	Canvas.prototype.getTextInfo = function(layer, text, font, angle, width) {
-
-		var textStyle, layerCache, styleCache, info;
-
-		// Cast the value to a string, in case we were given a number or such
-
-		text = "" + text;
-
-		// If the font is a font-spec object, generate a CSS font definition
-
-		if (typeof font === "object") {
-			textStyle = font.style + " " + font.variant + " " + font.weight + " " + font.size + "px/" + font.lineHeight + "px " + font.family;
-		} else {
-			textStyle = font;
-		}
-
-		// Retrieve (or create) the cache for the text's layer and styles
-
-		layerCache = this._textCache[layer];
-
-		if (layerCache == null) {
-			layerCache = this._textCache[layer] = {};
-		}
-
-		styleCache = layerCache[textStyle];
-
-		if (styleCache == null) {
-			styleCache = layerCache[textStyle] = {};
-		}
-
-		info = styleCache[text];
-
-		// If we can't find a matching element in our cache, create a new one
-
-		if (info == null) {
-
-			var element = $("<div></div>").html(text)
-				.css({
-					position: "absolute",
-					'max-width': width,
-					top: -9999
-				})
-				.appendTo(this.getTextLayer(layer));
-
-			if (typeof font === "object") {
-				element.css({
-					font: textStyle,
-					color: font.color
-				});
-			} else if (typeof font === "string") {
-				element.addClass(font);
-			}
-
-			info = styleCache[text] = {
-				width: element.outerWidth(true),
-				height: element.outerHeight(true),
-				element: element,
-				positions: []
-			};
-
-			element.detach();
-		}
-
-		return info;
-	};
-
-	// Adds a text string to the canvas text overlay.
-	//
-	// The text isn't drawn immediately; it is marked as rendering, which will
-	// result in its addition to the canvas on the next render pass.
-	//
-	// @param {string} layer A string of space-separated CSS classes uniquely
-	//     identifying the layer containing this text.
-	// @param {number} x X coordinate at which to draw the text.
-	// @param {number} y Y coordinate at which to draw the text.
-	// @param {string} text Text string to draw.
-	// @param {(string|object)=} font Either a string of space-separated CSS
-	//     classes or a font-spec object, defining the text's font and style.
-	// @param {number=} angle Angle at which to rotate the text, in degrees.
-	//     Angle is currently unused, it will be implemented in the future.
-	// @param {number=} width Maximum width of the text before it wraps.
-	// @param {string=} halign Horizontal alignment of the text; either "left",
-	//     "center" or "right".
-	// @param {string=} valign Vertical alignment of the text; either "top",
-	//     "middle" or "bottom".
-
-	Canvas.prototype.addText = function(layer, x, y, text, font, angle, width, halign, valign) {
-
-		var info = this.getTextInfo(layer, text, font, angle, width),
-			positions = info.positions;
-
-		// Tweak the div's position to match the text's alignment
-
-		if (halign == "center") {
-			x -= info.width / 2;
-		} else if (halign == "right") {
-			x -= info.width;
-		}
-
-		if (valign == "middle") {
-			y -= info.height / 2;
-		} else if (valign == "bottom") {
-			y -= info.height;
-		}
-
-		// Determine whether this text already exists at this position.
-		// If so, mark it for inclusion in the next render pass.
-
-		for (var i = 0, position; position = positions[i]; i++) {
-			if (position.x == x && position.y == y) {
-				position.active = true;
-				return;
-			}
-		}
-
-		// If the text doesn't exist at this position, create a new entry
-
-		// For the very first position we'll re-use the original element,
-		// while for subsequent ones we'll clone it.
-
-		position = {
-			active: true,
-			rendered: false,
-			element: positions.length ? info.element.clone() : info.element,
-			x: x,
-			y: y
-		};
-
-		positions.push(position);
-
-		// Move the element to its final position within the container
-
-		position.element.css({
-			top: Math.round(y),
-			left: Math.round(x),
-			'text-align': halign	// In case the text wraps
-		});
-	};
-
-	// Removes one or more text strings from the canvas text overlay.
-	//
-	// If no parameters are given, all text within the layer is removed.
-	//
-	// Note that the text is not immediately removed; it is simply marked as
-	// inactive, which will result in its removal on the next render pass.
-	// This avoids the performance penalty for 'clear and redraw' behavior,
-	// where we potentially get rid of all text on a layer, but will likely
-	// add back most or all of it later, as when redrawing axes, for example.
-	//
-	// @param {string} layer A string of space-separated CSS classes uniquely
-	//     identifying the layer containing this text.
-	// @param {number=} x X coordinate of the text.
-	// @param {number=} y Y coordinate of the text.
-	// @param {string=} text Text string to remove.
-	// @param {(string|object)=} font Either a string of space-separated CSS
-	//     classes or a font-spec object, defining the text's font and style.
-	// @param {number=} angle Angle at which the text is rotated, in degrees.
-	//     Angle is currently unused, it will be implemented in the future.
-
-	Canvas.prototype.removeText = function(layer, x, y, text, font, angle) {
-		if (text == null) {
-			var layerCache = this._textCache[layer];
-			if (layerCache != null) {
-				for (var styleKey in layerCache) {
-					if (hasOwnProperty.call(layerCache, styleKey)) {
-						var styleCache = layerCache[styleKey];
-						for (var key in styleCache) {
-							if (hasOwnProperty.call(styleCache, key)) {
-								var positions = styleCache[key].positions;
-								for (var i = 0, position; position = positions[i]; i++) {
-									position.active = false;
-								}
-							}
-						}
-					}
-				}
-			}
-		} else {
-			var positions = this.getTextInfo(layer, text, font, angle).positions;
-			for (var i = 0, position; position = positions[i]; i++) {
-				if (position.x == x && position.y == y) {
-					position.active = false;
-				}
-			}
-		}
-	};
-
-	///////////////////////////////////////////////////////////////////////////
-	// The top-level container for the entire plot.
-
-    function Plot(placeholder, data_, options_, plugins) {
-        // data is on the form:
-        //   [ series1, series2 ... ]
-        // where series is either just the data as [ [x1, y1], [x2, y2], ... ]
-        // or { data: [ [x1, y1], [x2, y2], ... ], label: "some label", ... }
-
-        var series = [],
-            options = {
-                // the color theme used for graphs
-                colors: ["#edc240", "#afd8f8", "#cb4b4b", "#4da74d", "#9440ed"],
-                legend: {
-                    show: true,
-                    noColumns: 1, // number of colums in legend table
-                    labelFormatter: null, // fn: string -> string
-                    labelBoxBorderColor: "#ccc", // border color for the little label boxes
-                    container: null, // container (as jQuery object) to put legend in, null means default on top of graph
-                    position: "ne", // position of default legend container within plot
-                    margin: 5, // distance from grid edge to default legend container within plot
-                    backgroundColor: null, // null means auto-detect
-                    backgroundOpacity: 0.85, // set to 0 to avoid background
-                    sorted: null    // default to no legend sorting
-                },
-                xaxis: {
-                    show: null, // null = auto-detect, true = always, false = never
-                    position: "bottom", // or "top"
-                    mode: null, // null or "time"
-                    font: null, // null (derived from CSS in placeholder) or object like { size: 11, lineHeight: 13, style: "italic", weight: "bold", family: "sans-serif", variant: "small-caps" }
-                    color: null, // base color, labels, ticks
-                    tickColor: null, // possibly different color of ticks, e.g. "rgba(0,0,0,0.15)"
-                    transform: null, // null or f: number -> number to transform axis
-                    inverseTransform: null, // if transform is set, this should be the inverse function
-                    min: null, // min. value to show, null means set automatically
-                    max: null, // max. value to show, null means set automatically
-                    autoscaleMargin: null, // margin in % to add if auto-setting min/max
-                    ticks: null, // either [1, 3] or [[1, "a"], 3] or (fn: axis info -> ticks) or app. number of ticks for auto-ticks
-                    tickFormatter: null, // fn: number -> string
-                    labelWidth: null, // size of tick labels in pixels
-                    labelHeight: null,
-                    reserveSpace: null, // whether to reserve space even if axis isn't shown
-                    tickLength: null, // size in pixels of ticks, or "full" for whole line
-                    alignTicksWithAxis: null, // axis number or null for no sync
-                    tickDecimals: null, // no. of decimals, null means auto
-                    tickSize: null, // number or [number, "unit"]
-                    minTickSize: null // number or [number, "unit"]
-                },
-                yaxis: {
-                    autoscaleMargin: 0.02,
-                    position: "left" // or "right"
-                },
-                xaxes: [],
-                yaxes: [],
-                series: {
-                    points: {
-                        show: false,
-                        radius: 3,
-                        lineWidth: 2, // in pixels
-                        fill: true,
-                        fillColor: "#ffffff",
-                        symbol: "circle" // or callback
-                    },
-                    lines: {
-                        // we don't put in show: false so we can see
-                        // whether lines were actively disabled
-                        lineWidth: 2, // in pixels
-                        fill: false,
-                        fillColor: null,
-                        steps: false
-                        // Omit 'zero', so we can later default its value to
-                        // match that of the 'fill' option.
-                    },
-                    bars: {
-                        show: false,
-                        lineWidth: 2, // in pixels
-                        barWidth: 1, // in units of the x axis
-                        fill: true,
-                        fillColor: null,
-                        align: "left", // "left", "right", or "center"
-                        horizontal: false,
-                        zero: true
-                    },
-                    shadowSize: 3,
-                    highlightColor: null
-                },
-                grid: {
-                    show: true,
-                    aboveData: false,
-                    color: "#545454", // primary color used for outline and labels
-                    backgroundColor: null, // null for transparent, else color
-                    borderColor: null, // set if different from the grid color
-                    tickColor: null, // color for the ticks, e.g. "rgba(0,0,0,0.15)"
-                    margin: 0, // distance from the canvas edge to the grid
-                    labelMargin: 5, // in pixels
-                    axisMargin: 8, // in pixels
-                    borderWidth: 2, // in pixels
-                    minBorderMargin: null, // in pixels, null means taken from points radius
-                    markings: null, // array of ranges or fn: axes -> array of ranges
-                    markingsColor: "#f4f4f4",
-                    markingsLineWidth: 2,
-                    // interactive stuff
-                    clickable: false,
-                    hoverable: false,
-                    autoHighlight: true, // highlight in case mouse is near
-                    mouseActiveRadius: 10 // how far the mouse can be away to activate an item
-                },
-                interaction: {
-                    redrawOverlayInterval: 1000/60 // time between updates, -1 means in same flow
-                },
-                hooks: {}
-            },
-        surface = null,     // the canvas for the plot itself
-        overlay = null,     // canvas for interactive stuff on top of plot
-        eventHolder = null, // jQuery object that events should be bound to
-        ctx = null, octx = null,
-        xaxes = [], yaxes = [],
-        plotOffset = { left: 0, right: 0, top: 0, bottom: 0},
-        plotWidth = 0, plotHeight = 0,
-        hooks = {
-            processOptions: [],
-            processRawData: [],
-            processDatapoints: [],
-            processOffset: [],
-            drawBackground: [],
-            drawSeries: [],
-            draw: [],
-            bindEvents: [],
-            drawOverlay: [],
-            shutdown: []
-        },
-        plot = this;
-
-        // public functions
-        plot.setData = setData;
-        plot.setupGrid = setupGrid;
-        plot.draw = draw;
-        plot.getPlaceholder = function() { return placeholder; };
-        plot.getCanvas = function() { return surface.element; };
-        plot.getPlotOffset = function() { return plotOffset; };
-        plot.width = function () { return plotWidth; };
-        plot.height = function () { return plotHeight; };
-        plot.offset = function () {
-            var o = eventHolder.offset();
-            o.left += plotOffset.left;
-            o.top += plotOffset.top;
-            return o;
-        };
-        plot.getData = function () { return series; };
-        plot.getAxes = function () {
-            var res = {}, i;
-            $.each(xaxes.concat(yaxes), function (_, axis) {
-                if (axis)
-                    res[axis.direction + (axis.n != 1 ? axis.n : "") + "axis"] = axis;
-            });
-            return res;
-        };
-        plot.getXAxes = function () { return xaxes; };
-        plot.getYAxes = function () { return yaxes; };
-        plot.c2p = canvasToAxisCoords;
-        plot.p2c = axisToCanvasCoords;
-        plot.getOptions = function () { return options; };
-        plot.highlight = highlight;
-        plot.unhighlight = unhighlight;
-        plot.triggerRedrawOverlay = triggerRedrawOverlay;
-        plot.pointOffset = function(point) {
-            return {
-                left: parseInt(xaxes[axisNumber(point, "x") - 1].p2c(+point.x) + plotOffset.left, 10),
-                top: parseInt(yaxes[axisNumber(point, "y") - 1].p2c(+point.y) + plotOffset.top, 10)
-            };
-        };
-        plot.shutdown = shutdown;
-        plot.destroy = function () {
-            shutdown();
-            placeholder.removeData("plot").empty();
-
-            series = [];
-            options = null;
-            surface = null;
-            overlay = null;
-            eventHolder = null;
-            ctx = null;
-            octx = null;
-            xaxes = [];
-            yaxes = [];
-            hooks = null;
-            highlights = [];
-            plot = null;
-        };
-        plot.resize = function () {
-        	var width = placeholder.width(),
-        		height = placeholder.height();
-            surface.resize(width, height);
-            overlay.resize(width, height);
-        };
-
-        // public attributes
-        plot.hooks = hooks;
-
-        // initialize
-        initPlugins(plot);
-        parseOptions(options_);
-        setupCanvases();
-        setData(data_);
-        setupGrid();
-        draw();
-        bindEvents();
-
-
-        function executeHooks(hook, args) {
-            args = [plot].concat(args);
-            for (var i = 0; i < hook.length; ++i)
-                hook[i].apply(this, args);
-        }
-
-        function initPlugins() {
-
-            // References to key classes, allowing plugins to modify them
-
-            var classes = {
-                Canvas: Canvas
-            };
-
-            for (var i = 0; i < plugins.length; ++i) {
-                var p = plugins[i];
-                p.init(plot, classes);
-                if (p.options)
-                    $.extend(true, options, p.options);
-            }
-        }
-
-        function parseOptions(opts) {
-
-            $.extend(true, options, opts);
-
-            // $.extend merges arrays, rather than replacing them.  When less
-            // colors are provided than the size of the default palette, we
-            // end up with those colors plus the remaining defaults, which is
-            // not expected behavior; avoid it by replacing them here.
-
-            if (opts && opts.colors) {
-            	options.colors = opts.colors;
-            }
-
-            if (options.xaxis.color == null)
-                options.xaxis.color = $.color.parse(options.grid.color).scale('a', 0.22).toString();
-            if (options.yaxis.color == null)
-                options.yaxis.color = $.color.parse(options.grid.color).scale('a', 0.22).toString();
-
-            if (options.xaxis.tickColor == null) // grid.tickColor for back-compatibility
-                options.xaxis.tickColor = options.grid.tickColor || options.xaxis.color;
-            if (options.yaxis.tickColor == null) // grid.tickColor for back-compatibility
-                options.yaxis.tickColor = options.grid.tickColor || options.yaxis.color;
-
-            if (options.grid.borderColor == null)
-                options.grid.borderColor = options.grid.color;
-            if (options.grid.tickColor == null)
-                options.grid.tickColor = $.color.parse(options.grid.color).scale('a', 0.22).toString();
-
-            // Fill in defaults for axis options, including any unspecified
-            // font-spec fields, if a font-spec was provided.
-
-            // If no x/y axis options were provided, create one of each anyway,
-            // since the rest of the code assumes that they exist.
-
-            var i, axisOptions, axisCount,
-                fontSize = placeholder.css("font-size"),
-                fontSizeDefault = fontSize ? +fontSize.replace("px", "") : 13,
-                fontDefaults = {
-                    style: placeholder.css("font-style"),
-                    size: Math.round(0.8 * fontSizeDefault),
-                    variant: placeholder.css("font-variant"),
-                    weight: placeholder.css("font-weight"),
-                    family: placeholder.css("font-family")
-                };
-
-            axisCount = options.xaxes.length || 1;
-            for (i = 0; i < axisCount; ++i) {
-
-                axisOptions = options.xaxes[i];
-                if (axisOptions && !axisOptions.tickColor) {
-                    axisOptions.tickColor = axisOptions.color;
-                }
-
-                axisOptions = $.extend(true, {}, options.xaxis, axisOptions);
-                options.xaxes[i] = axisOptions;
-
-                if (axisOptions.font) {
-                    axisOptions.font = $.extend({}, fontDefaults, axisOptions.font);
-                    if (!axisOptions.font.color) {
-                        axisOptions.font.color = axisOptions.color;
-                    }
-                    if (!axisOptions.font.lineHeight) {
-                        axisOptions.font.lineHeight = Math.round(axisOptions.font.size * 1.15);
-                    }
-                }
-            }
-
-            axisCount = options.yaxes.length || 1;
-            for (i = 0; i < axisCount; ++i) {
-
-                axisOptions = options.yaxes[i];
-                if (axisOptions && !axisOptions.tickColor) {
-                    axisOptions.tickColor = axisOptions.color;
-                }
-
-                axisOptions = $.extend(true, {}, options.yaxis, axisOptions);
-                options.yaxes[i] = axisOptions;
-
-                if (axisOptions.font) {
-                    axisOptions.font = $.extend({}, fontDefaults, axisOptions.font);
-                    if (!axisOptions.font.color) {
-                        axisOptions.font.color = axisOptions.color;
-                    }
-                    if (!axisOptions.font.lineHeight) {
-                        axisOptions.font.lineHeight = Math.round(axisOptions.font.size * 1.15);
-                    }
-                }
-            }
-
-            // backwards compatibility, to be removed in future
-            if (options.xaxis.noTicks && options.xaxis.ticks == null)
-                options.xaxis.ticks = options.xaxis.noTicks;
-            if (options.yaxis.noTicks && options.yaxis.ticks == null)
-                options.yaxis.ticks = options.yaxis.noTicks;
-            if (options.x2axis) {
-                options.xaxes[1] = $.extend(true, {}, options.xaxis, options.x2axis);
-                options.xaxes[1].position = "top";
-                // Override the inherit to allow the axis to auto-scale
-                if (options.x2axis.min == null) {
-                    options.xaxes[1].min = null;
-                }
-                if (options.x2axis.max == null) {
-                    options.xaxes[1].max = null;
-                }
-            }
-            if (options.y2axis) {
-                options.yaxes[1] = $.extend(true, {}, options.yaxis, options.y2axis);
-                options.yaxes[1].position = "right";
-                // Override the inherit to allow the axis to auto-scale
-                if (options.y2axis.min == null) {
-                    options.yaxes[1].min = null;
-                }
-                if (options.y2axis.max == null) {
-                    options.yaxes[1].max = null;
-                }
-            }
-            if (options.grid.coloredAreas)
-                options.grid.markings = options.grid.coloredAreas;
-            if (options.grid.coloredAreasColor)
-                options.grid.markingsColor = options.grid.coloredAreasColor;
-            if (options.lines)
-                $.extend(true, options.series.lines, options.lines);
-            if (options.points)
-                $.extend(true, options.series.points, options.points);
-            if (options.bars)
-                $.extend(true, options.series.bars, options.bars);
-            if (options.shadowSize != null)
-                options.series.shadowSize = options.shadowSize;
-            if (options.highlightColor != null)
-                options.series.highlightColor = options.highlightColor;
-
-            // save options on axes for future reference
-            for (i = 0; i < options.xaxes.length; ++i)
-                getOrCreateAxis(xaxes, i + 1).options = options.xaxes[i];
-            for (i = 0; i < options.yaxes.length; ++i)
-                getOrCreateAxis(yaxes, i + 1).options = options.yaxes[i];
-
-            // add hooks from options
-            for (var n in hooks)
-                if (options.hooks[n] && options.hooks[n].length)
-                    hooks[n] = hooks[n].concat(options.hooks[n]);
-
-            executeHooks(hooks.processOptions, [options]);
-        }
-
-        function setData(d) {
-            series = parseData(d);
-            fillInSeriesOptions();
-            processData();
-        }
-
-        function parseData(d) {
-            var res = [];
-            for (var i = 0; i < d.length; ++i) {
-                var s = $.extend(true, {}, options.series);
-
-                if (d[i].data != null) {
-                    s.data = d[i].data; // move the data instead of deep-copy
-                    delete d[i].data;
-
-                    $.extend(true, s, d[i]);
-
-                    d[i].data = s.data;
-                }
-                else
-                    s.data = d[i];
-                res.push(s);
-            }
-
-            return res;
-        }
-
-        function axisNumber(obj, coord) {
-            var a = obj[coord + "axis"];
-            if (typeof a == "object") // if we got a real axis, extract number
-                a = a.n;
-            if (typeof a != "number")
-                a = 1; // default to first axis
-            return a;
-        }
-
-        function allAxes() {
-            // return flat array without annoying null entries
-            return $.grep(xaxes.concat(yaxes), function (a) { return a; });
-        }
-
-        function canvasToAxisCoords(pos) {
-            // return an object with x/y corresponding to all used axes
-            var res = {}, i, axis;
-            for (i = 0; i < xaxes.length; ++i) {
-                axis = xaxes[i];
-                if (axis && axis.used)
-                    res["x" + axis.n] = axis.c2p(pos.left);
-            }
-
-            for (i = 0; i < yaxes.length; ++i) {
-                axis = yaxes[i];
-                if (axis && axis.used)
-                    res["y" + axis.n] = axis.c2p(pos.top);
-            }
-
-            if (res.x1 !== undefined)
-                res.x = res.x1;
-            if (res.y1 !== undefined)
-                res.y = res.y1;
-
-            return res;
-        }
-
-        function axisToCanvasCoords(pos) {
-            // get canvas coords from the first pair of x/y found in pos
-            var res = {}, i, axis, key;
-
-            for (i = 0; i < xaxes.length; ++i) {
-                axis = xaxes[i];
-                if (axis && axis.used) {
-                    key = "x" + axis.n;
-                    if (pos[key] == null && axis.n == 1)
-                        key = "x";
-
-                    if (pos[key] != null) {
-                        res.left = axis.p2c(pos[key]);
-                        break;
-                    }
-                }
-            }
-
-            for (i = 0; i < yaxes.length; ++i) {
-                axis = yaxes[i];
-                if (axis && axis.used) {
-                    key = "y" + axis.n;
-                    if (pos[key] == null && axis.n == 1)
-                        key = "y";
-
-                    if (pos[key] != null) {
-                        res.top = axis.p2c(pos[key]);
-                        break;
-                    }
-                }
-            }
-
-            return res;
-        }
-
-        function getOrCreateAxis(axes, number) {
-            if (!axes[number - 1])
-                axes[number - 1] = {
-                    n: number, // save the number for future reference
-                    direction: axes == xaxes ? "x" : "y",
-                    options: $.extend(true, {}, axes == xaxes ? options.xaxis : options.yaxis)
-                };
-
-            return axes[number - 1];
-        }
-
-        function fillInSeriesOptions() {
-
-            var neededColors = series.length, maxIndex = -1, i;
-
-            // Subtract the number of series that already have fixed colors or
-            // color indexes from the number that we still need to generate.
-
-            for (i = 0; i < series.length; ++i) {
-                var sc = series[i].color;
-                if (sc != null) {
-                    neededColors--;
-                    if (typeof sc == "number" && sc > maxIndex) {
-                        maxIndex = sc;
-                    }
-                }
-            }
-
-            // If any of the series have fixed color indexes, then we need to
-            // generate at least as many colors as the highest index.
-
-            if (neededColors <= maxIndex) {
-                neededColors = maxIndex + 1;
-            }
-
-            // Generate all the colors, using first the option colors and then
-            // variations on those colors once they're exhausted.
-
-            var c, colors = [], colorPool = options.colors,
-                colorPoolSize = colorPool.length, variation = 0;
-
-            for (i = 0; i < neededColors; i++) {
-
-                c = $.color.parse(colorPool[i % colorPoolSize] || "#666");
-
-                // Each time we exhaust the colors in the pool we adjust
-                // a scaling factor used to produce more variations on
-                // those colors. The factor alternates negative/positive
-                // to produce lighter/darker colors.
-
-                // Reset the variation after every few cycles, or else
-                // it will end up producing only white or black colors.
-
-                if (i % colorPoolSize == 0 && i) {
-                    if (variation >= 0) {
-                        if (variation < 0.5) {
-                            variation = -variation - 0.2;
-                        } else variation = 0;
-                    } else variation = -variation;
-                }
-
-                colors[i] = c.scale('rgb', 1 + variation);
-            }
-
-            // Finalize the series options, filling in their colors
-
-            var colori = 0, s;
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-
-                // assign colors
-                if (s.color == null) {
-                    s.color = colors[colori].toString();
-                    ++colori;
-                }
-                else if (typeof s.color == "number")
-                    s.color = colors[s.color].toString();
-
-                // turn on lines automatically in case nothing is set
-                if (s.lines.show == null) {
-                    var v, show = true;
-                    for (v in s)
-                        if (s[v] && s[v].show) {
-                            show = false;
-                            break;
-                        }
-                    if (show)
-                        s.lines.show = true;
-                }
-
-                // If nothing was provided for lines.zero, default it to match
-                // lines.fill, since areas by default should extend to zero.
-
-                if (s.lines.zero == null) {
-                    s.lines.zero = !!s.lines.fill;
-                }
-
-                // setup axes
-                s.xaxis = getOrCreateAxis(xaxes, axisNumber(s, "x"));
-                s.yaxis = getOrCreateAxis(yaxes, axisNumber(s, "y"));
-            }
-        }
-
-        function processData() {
-            var topSentry = Number.POSITIVE_INFINITY,
-                bottomSentry = Number.NEGATIVE_INFINITY,
-                fakeInfinity = Number.MAX_VALUE,
-                i, j, k, m, length,
-                s, points, ps, x, y, axis, val, f, p,
-                data, format;
-
-            function updateAxis(axis, min, max) {
-                if (min < axis.datamin && min != -fakeInfinity)
-                    axis.datamin = min;
-                if (max > axis.datamax && max != fakeInfinity)
-                    axis.datamax = max;
-            }
-
-            $.each(allAxes(), function (_, axis) {
-                // init axis
-                axis.datamin = topSentry;
-                axis.datamax = bottomSentry;
-                axis.used = false;
-            });
-
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-                s.datapoints = { points: [] };
-
-                executeHooks(hooks.processRawData, [ s, s.data, s.datapoints ]);
-            }
-
-            // first pass: clean and copy data
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-
-                data = s.data;
-                format = s.datapoints.format;
-
-                if (!format) {
-                    format = [];
-                    // find out how to copy
-                    format.push({ x: true, number: true, required: true });
-                    format.push({ y: true, number: true, required: true });
-
-                    if (s.bars.show || (s.lines.show && s.lines.fill)) {
-                        var autoscale = !!((s.bars.show && s.bars.zero) || (s.lines.show && s.lines.zero));
-                        format.push({ y: true, number: true, required: false, defaultValue: 0, autoscale: autoscale });
-                        if (s.bars.horizontal) {
-                            delete format[format.length - 1].y;
-                            format[format.length - 1].x = true;
-                        }
-                    }
-
-                    s.datapoints.format = format;
-                }
-
-                if (s.datapoints.pointsize != null)
-                    continue; // already filled in
-
-                s.datapoints.pointsize = format.length;
-
-                ps = s.datapoints.pointsize;
-                points = s.datapoints.points;
-
-                var insertSteps = s.lines.show && s.lines.steps;
-                s.xaxis.used = s.yaxis.used = true;
-
-                for (j = k = 0; j < data.length; ++j, k += ps) {
-                    p = data[j];
-
-                    var nullify = p == null;
-                    if (!nullify) {
-                        for (m = 0; m < ps; ++m) {
-                            val = p[m];
-                            f = format[m];
-
-                            if (f) {
-                                if (f.number && val != null) {
-                                    val = +val; // convert to number
-                                    if (isNaN(val))
-                                        val = null;
-                                    else if (val == Infinity)
-                                        val = fakeInfinity;
-                                    else if (val == -Infinity)
-                                        val = -fakeInfinity;
-                                }
-
-                                if (val == null) {
-                                    if (f.required)
-                                        nullify = true;
-
-                                    if (f.defaultValue != null)
-                                        val = f.defaultValue;
-                                }
-                            }
-
-                            points[k + m] = val;
-                        }
-                    }
-
-                    if (nullify) {
-                        for (m = 0; m < ps; ++m) {
-                            val = points[k + m];
-                            if (val != null) {
-                                f = format[m];
-                                // extract min/max info
-                                if (f.autoscale !== false) {
-                                    if (f.x) {
-                                        updateAxis(s.xaxis, val, val);
-                                    }
-                                    if (f.y) {
-                                        updateAxis(s.yaxis, val, val);
-                                    }
-                                }
-                            }
-                            points[k + m] = null;
-                        }
-                    }
-                    else {
-                        // a little bit of line specific stuff that
-                        // perhaps shouldn't be here, but lacking
-                        // better means...
-                        if (insertSteps && k > 0
-                            && points[k - ps] != null
-                            && points[k - ps] != points[k]
-                            && points[k - ps + 1] != points[k + 1]) {
-                            // copy the point to make room for a middle point
-                            for (m = 0; m < ps; ++m)
-                                points[k + ps + m] = points[k + m];
-
-                            // middle point has same y
-                            points[k + 1] = points[k - ps + 1];
-
-                            // we've added a point, better reflect that
-                            k += ps;
-                        }
-                    }
-                }
-            }
-
-            // give the hooks a chance to run
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-
-                executeHooks(hooks.processDatapoints, [ s, s.datapoints]);
-            }
-
-            // second pass: find datamax/datamin for auto-scaling
-            for (i = 0; i < series.length; ++i) {
-                s = series[i];
-                points = s.datapoints.points;
-                ps = s.datapoints.pointsize;
-                format = s.datapoints.format;
-
-                var xmin = topSentry, ymin = topSentry,
-                    xmax = bottomSentry, ymax = bottomSentry;
-
-                for (j = 0; j < points.length; j += ps) {
-                    if (points[j] == null)
-                        continue;
-
-                    for (m = 0; m < ps; ++m) {
-                        val = points[j + m];
-                        f = format[m];
-                        if (!f || f.autoscale === false || val == fakeInfinity || val == -fakeInfinity)
-                            continue;
-
-                        if (f.x) {
-                            if (val < xmin)
-                                xmin = val;
-                            if (val > xmax)
-                                xmax = val;
-                        }
-                        if (f.y) {
-                            if (val < ymin)
-                                ymin = val;
-                            if (val > ymax)
-                                ymax = val;
-                        }
-                    }
-                }
-
-                if (s.bars.show) {
-                    // make sure we got room for the bar on the dancing floor
-                    var delta;
-
-                    switch (s.bars.align) {
-                        case "left":
-                            delta = 0;
-                            break;
-                        case "right":
-                            delta = -s.bars.barWidth;
-                            break;
-                        default:
-                            delta = -s.bars.barWidth / 2;
-                    }
-
-                    if (s.bars.horizontal) {
-                        ymin += delta;
-                        ymax += delta + s.bars.barWidth;
-                    }
-                    else {
-                        xmin += delta;
-                        xmax += delta + s.bars.barWidth;
-                    }
-                }
-
-                updateAxis(s.xaxis, xmin, xmax);
-                updateAxis(s.yaxis, ymin, ymax);
-            }
-
-            $.each(allAxes(), function (_, axis) {
-                if (axis.datamin == topSentry)
-                    axis.datamin = null;
-                if (axis.datamax == bottomSentry)
-                    axis.datamax = null;
-            });
-        }
-
-        function setupCanvases() {
-
-            // Make sure the placeholder is clear of everything except canvases
-            // from a previous plot in this container that we'll try to re-use.
-
-            placeholder.css("padding", 0) // padding messes up the positioning
-                .children().filter(function(){
-                    return !$(this).hasClass("flot-overlay") && !$(this).hasClass('flot-base');
-                }).remove();
-
-            if (placeholder.css("position") == 'static')
-                placeholder.css("position", "relative"); // for positioning labels and overlay
-
-            surface = new Canvas("flot-base", placeholder);
-            overlay = new Canvas("flot-overlay", placeholder); // overlay canvas for interactive features
-
-            ctx = surface.context;
-            octx = overlay.context;
-
-            // define which element we're listening for events on
-            eventHolder = $(overlay.element).unbind();
-
-            // If we're re-using a plot object, shut down the old one
-
-            var existing = placeholder.data("plot");
-
-            if (existing) {
-                existing.shutdown();
-                overlay.clear();
-            }
-
-            // save in case we get replotted
-            placeholder.data("plot", plot);
-        }
-
-        function bindEvents() {
-            // bind events
-            if (options.grid.hoverable) {
-                eventHolder.mousemove(onMouseMove);
-
-                // Use bind, rather than .mouseleave, because we officially
-                // still support jQuery 1.2.6, which doesn't define a shortcut
-                // for mouseenter or mouseleave.  This was a bug/oversight that
-                // was fixed somewhere around 1.3.x.  We can return to using
-                // .mouseleave when we drop support for 1.2.6.
-
-                eventHolder.bind("mouseleave", onMouseLeave);
-            }
-
-            if (options.grid.clickable)
-                eventHolder.click(onClick);
-
-            executeHooks(hooks.bindEvents, [eventHolder]);
-        }
-
-        function shutdown() {
-            if (redrawTimeout)
-                clearTimeout(redrawTimeout);
-
-            eventHolder.unbind("mousemove", onMouseMove);
-            eventHolder.unbind("mouseleave", onMouseLeave);
-            eventHolder.unbind("click", onClick);
-
-            executeHooks(hooks.shutdown, [eventHolder]);
-        }
-
-        function setTransformationHelpers(axis) {
-            // set helper functions on the axis, assumes plot area
-            // has been computed already
-
-            function identity(x) { return x; }
-
-            var s, m, t = axis.options.transform || identity,
-                it = axis.options.inverseTransform;
-
-            // precompute how much the axis is scaling a point
-            // in canvas space
-            if (axis.direction == "x") {
-                s = axis.scale = plotWidth / Math.abs(t(axis.max) - t(axis.min));
-                m = Math.min(t(axis.max), t(axis.min));
-            }
-            else {
-                s = axis.scale = plotHeight / Math.abs(t(axis.max) - t(axis.min));
-                s = -s;
-                m = Math.max(t(axis.max), t(axis.min));
-            }
-
-            // data point to canvas coordinate
-            if (t == identity) // slight optimization
-                axis.p2c = function (p) { return (p - m) * s; };
-            else
-                axis.p2c = function (p) { return (t(p) - m) * s; };
-            // canvas coordinate to data point
-            if (!it)
-                axis.c2p = function (c) { return m + c / s; };
-            else
-                axis.c2p = function (c) { return it(m + c / s); };
-        }
-
-        function measureTickLabels(axis) {
-
-            var opts = axis.options,
-                ticks = axis.ticks || [],
-                labelWidth = opts.labelWidth || 0,
-                labelHeight = opts.labelHeight || 0,
-                maxWidth = labelWidth || (axis.direction == "x" ? Math.floor(surface.width / (ticks.length || 1)) : null),
-                legacyStyles = axis.direction + "Axis " + axis.direction + axis.n + "Axis",
-                layer = "flot-" + axis.direction + "-axis flot-" + axis.direction + axis.n + "-axis " + legacyStyles,
-                font = opts.font || "flot-tick-label tickLabel";
-
-            for (var i = 0; i < ticks.length; ++i) {
-
-                var t = ticks[i];
-
-                if (!t.label)
-                    continue;
-
-                var info = surface.getTextInfo(layer, t.label, font, null, maxWidth);
-
-                labelWidth = Math.max(labelWidth, info.width);
-                labelHeight = Math.max(labelHeight, info.height);
-            }
-
-            axis.labelWidth = opts.labelWidth || labelWidth;
-            axis.labelHeight = opts.labelHeight || labelHeight;
-        }
-
-        function allocateAxisBoxFirstPhase(axis) {
-            // find the bounding box of the axis by looking at label
-            // widths/heights and ticks, make room by diminishing the
-            // plotOffset; this first phase only looks at one
-            // dimension per axis, the other dimension depends on the
-            // other axes so will have to wait
-
-            var lw = axis.labelWidth,
-                lh = axis.labelHeight,
-                pos = axis.options.position,
-                isXAxis = axis.direction === "x",
-                tickLength = axis.options.tickLength,
-                axisMargin = options.grid.axisMargin,
-                padding = options.grid.labelMargin,
-                innermost = true,
-                outermost = true,
-                first = true,
-                found = false;
-
-            // Determine the axis's position in its direction and on its side
-
-            $.each(isXAxis ? xaxes : yaxes, function(i, a) {
-                if (a && (a.show || a.reserveSpace)) {
-                    if (a === axis) {
-                        found = true;
-                    } else if (a.options.position === pos) {
-                        if (found) {
-                            outermost = false;
-                        } else {
-                            innermost = false;
-                        }
-                    }
-                    if (!found) {
-                        first = false;
-                    }
-                }
-            });
-
-            // The outermost axis on each side has no margin
-
-            if (outermost) {
-                axisMargin = 0;
-            }
-
-            // The ticks for the first axis in each direction stretch across
-
-            if (tickLength == null) {
-                tickLength = first ? "full" : 5;
-            }
-
-            if (!isNaN(+tickLength))
-                padding += +tickLength;
-
-            if (isXAxis) {
-                lh += padding;
-
-                if (pos == "bottom") {
-                    plotOffset.bottom += lh + axisMargin;
-                    axis.box = { top: surface.height - plotOffset.bottom, height: lh };
-                }
-                else {
-                    axis.box = { top: plotOffset.top + axisMargin, height: lh };
-                    plotOffset.top += lh + axisMargin;
-                }
-            }
-            else {
-                lw += padding;
-
-                if (pos == "left") {
-                    axis.box = { left: plotOffset.left + axisMargin, width: lw };
-                    plotOffset.left += lw + axisMargin;
-                }
-                else {
-                    plotOffset.right += lw + axisMargin;
-                    axis.box = { left: surface.width - plotOffset.right, width: lw };
-                }
-            }
-
-             // save for future reference
-            axis.position = pos;
-            axis.tickLength = tickLength;
-            axis.box.padding = padding;
-            axis.innermost = innermost;
-        }
-
-        function allocateAxisBoxSecondPhase(axis) {
-            // now that all axis boxes have been placed in one
-            // dimension, we can set the remaining dimension coordinates
-            if (axis.direction == "x") {
-                axis.box.left = plotOffset.left - axis.labelWidth / 2;
-                axis.box.width = surface.width - plotOffset.left - plotOffset.right + axis.labelWidth;
-            }
-            else {
-                axis.box.top = plotOffset.top - axis.labelHeight / 2;
-                axis.box.height = surface.height - plotOffset.bottom - plotOffset.top + axis.labelHeight;
-            }
-        }
-
-        function adjustLayoutForThingsStickingOut() {
-            // possibly adjust plot offset to ensure everything stays
-            // inside the canvas and isn't clipped off
-
-            var minMargin = options.grid.minBorderMargin,
-                axis, i;
-
-            // check stuff from the plot (FIXME: this should just read
-            // a value from the series, otherwise it's impossible to
-            // customize)
-            if (minMargin == null) {
-                minMargin = 0;
-                for (i = 0; i < series.length; ++i)
-                    minMargin = Math.max(minMargin, 2 * (series[i].points.radius + series[i].points.lineWidth/2));
-            }
-
-            var margins = {
-                left: minMargin,
-                right: minMargin,
-                top: minMargin,
-                bottom: minMargin
-            };
-
-            // check axis labels, note we don't check the actual
-            // labels but instead use the overall width/height to not
-            // jump as much around with replots
-            $.each(allAxes(), function (_, axis) {
-                if (axis.reserveSpace && axis.ticks && axis.ticks.length) {
-                    if (axis.direction === "x") {
-                        margins.left = Math.max(margins.left, axis.labelWidth / 2);
-                        margins.right = Math.max(margins.right, axis.labelWidth / 2);
-                    } else {
-                        margins.bottom = Math.max(margins.bottom, axis.labelHeight / 2);
-                        margins.top = Math.max(margins.top, axis.labelHeight / 2);
-                    }
-                }
-            });
-
-            plotOffset.left = Math.ceil(Math.max(margins.left, plotOffset.left));
-            plotOffset.right = Math.ceil(Math.max(margins.right, plotOffset.right));
-            plotOffset.top = Math.ceil(Math.max(margins.top, plotOffset.top));
-            plotOffset.bottom = Math.ceil(Math.max(margins.bottom, plotOffset.bottom));
-        }
-
-        function setupGrid() {
-            var i, axes = allAxes(), showGrid = options.grid.show;
-
-            // Initialize the plot's offset from the edge of the canvas
-
-            for (var a in plotOffset) {
-                var margin = options.grid.margin || 0;
-                plotOffset[a] = typeof margin == "number" ? margin : margin[a] || 0;
-            }
-
-            executeHooks(hooks.processOffset, [plotOffset]);
-
-            // If the grid is visible, add its border width to the offset
-
-            for (var a in plotOffset) {
-                if(typeof(options.grid.borderWidth) == "object") {
-                    plotOffset[a] += showGrid ? options.grid.borderWidth[a] : 0;
-                }
-                else {
-                    plotOffset[a] += showGrid ? options.grid.borderWidth : 0;
-                }
-            }
-
-            $.each(axes, function (_, axis) {
-                var axisOpts = axis.options;
-                axis.show = axisOpts.show == null ? axis.used : axisOpts.show;
-                axis.reserveSpace = axisOpts.reserveSpace == null ? axis.show : axisOpts.reserveSpace;
-                setRange(axis);
-            });
-
-            if (showGrid) {
-
-                var allocatedAxes = $.grep(axes, function (axis) {
-                    return axis.show || axis.reserveSpace;
-                });
-
-                $.each(allocatedAxes, function (_, axis) {
-                    // make the ticks
-                    setupTickGeneration(axis);
-                    setTicks(axis);
-                    snapRangeToTicks(axis, axis.ticks);
-                    // find labelWidth/Height for axis
-                    measureTickLabels(axis);
-                });
-
-                // with all dimensions calculated, we can compute the
-                // axis bounding boxes, start from the outside
-                // (reverse order)
-                for (i = allocatedAxes.length - 1; i >= 0; --i)
-                    allocateAxisBoxFirstPhase(allocatedAxes[i]);
-
-                // make sure we've got enough space for things that
-                // might stick out
-                adjustLayoutForThingsStickingOut();
-
-                $.each(allocatedAxes, function (_, axis) {
-                    allocateAxisBoxSecondPhase(axis);
-                });
-            }
-
-            plotWidth = surface.width - plotOffset.left - plotOffset.right;
-            plotHeight = surface.height - plotOffset.bottom - plotOffset.top;
-
-            // now we got the proper plot dimensions, we can compute the scaling
-            $.each(axes, function (_, axis) {
-                setTransformationHelpers(axis);
-            });
-
-            if (showGrid) {
-                drawAxisLabels();
-            }
-
-            insertLegend();
-        }
-
-        function setRange(axis) {
-            var opts = axis.options,
-                min = +(opts.min != null ? opts.min : axis.datamin),
-                max = +(opts.max != null ? opts.max : axis.datamax),
-                delta = max - min;
-
-            if (delta == 0.0) {
-                // degenerate case
-                var widen = max == 0 ? 1 : 0.01;
-
-                if (opts.min == null)
-                    min -= widen;
-                // always widen max if we couldn't widen min to ensure we
-                // don't fall into min == max which doesn't work
-                if (opts.max == null || opts.min != null)
-                    max += widen;
-            }
-            else {
-                // consider autoscaling
-                var margin = opts.autoscaleMargin;
-                if (margin != null) {
-                    if (opts.min == null) {
-                        min -= delta * margin;
-                        // make sure we don't go below zero if all values
-                        // are positive
-                        if (min < 0 && axis.datamin != null && axis.datamin >= 0)
-                            min = 0;
-                    }
-                    if (opts.max == null) {
-                        max += delta * margin;
-                        if (max > 0 && axis.datamax != null && axis.datamax <= 0)
-                            max = 0;
-                    }
-                }
-            }
-            axis.min = min;
-            axis.max = max;
-        }
-
-        function setupTickGeneration(axis) {
-            var opts = axis.options;
-
-            // estimate number of ticks
-            var noTicks;
-            if (typeof opts.ticks == "number" && opts.ticks > 0)
-                noTicks = opts.ticks;
-            else
-                // heuristic based on the model a*sqrt(x) fitted to
-                // some data points that seemed reasonable
-                noTicks = 0.3 * Math.sqrt(axis.direction == "x" ? surface.width : surface.height);
-
-            var delta = (axis.max - axis.min) / noTicks,
-                dec = -Math.floor(Math.log(delta) / Math.LN10),
-                maxDec = opts.tickDecimals;
-
-            if (maxDec != null && dec > maxDec) {
-                dec = maxDec;
-            }
-
-            var magn = Math.pow(10, -dec),
-                norm = delta / magn, // norm is between 1.0 and 10.0
-                size;
-
-            if (norm < 1.5) {
-                size = 1;
-            } else if (norm < 3) {
-                size = 2;
-                // special case for 2.5, requires an extra decimal
-                if (norm > 2.25 && (maxDec == null || dec + 1 <= maxDec)) {
-                    size = 2.5;
-                    ++dec;
-                }
-            } else if (norm < 7.5) {
-                size = 5;
-            } else {
-                size = 10;
-            }
-
-            size *= magn;
-
-            if (opts.minTickSize != null && size < opts.minTickSize) {
-                size = opts.minTickSize;
-            }
-
-            axis.delta = delta;
-            axis.tickDecimals = Math.max(0, maxDec != null ? maxDec : dec);
-            axis.tickSize = opts.tickSize || size;
-
-            // Time mode was moved to a plug-in in 0.8, and since so many people use it
-            // we'll add an especially friendly reminder to make sure they included it.
-
-            if (opts.mode == "time" && !axis.tickGenerator) {
-                throw new Error("Time mode requires the flot.time plugin.");
-            }
-
-            // Flot supports base-10 axes; any other mode else is handled by a plug-in,
-            // like flot.time.js.
-
-            if (!axis.tickGenerator) {
-
-                axis.tickGenerator = function (axis) {
-
-                    var ticks = [],
-                        start = floorInBase(axis.min, axis.tickSize),
-                        i = 0,
-                        v = Number.NaN,
-                        prev;
-
-                    do {
-                        prev = v;
-                        v = start + i * axis.tickSize;
-                        ticks.push(v);
-                        ++i;
-                    } while (v < axis.max && v != prev);
-                    return ticks;
-                };
-
-				axis.tickFormatter = function (value, axis) {
-
-					var factor = axis.tickDecimals ? Math.pow(10, axis.tickDecimals) : 1;
-					var formatted = "" + Math.round(value * factor) / factor;
-
-					// If tickDecimals was specified, ensure that we have exactly that
-					// much precision; otherwise default to the value's own precision.
-
-					if (axis.tickDecimals != null) {
-						var decimal = formatted.indexOf(".");
-						var precision = decimal == -1 ? 0 : formatted.length - decimal - 1;
-						if (precision < axis.tickDecimals) {
-							return (precision ? formatted : formatted + ".") + ("" + factor).substr(1, axis.tickDecimals - precision);
-						}
-					}
-
-                    return formatted;
-                };
-            }
-
-            if ($.isFunction(opts.tickFormatter))
-                axis.tickFormatter = function (v, axis) { return "" + opts.tickFormatter(v, axis); };
-
-            if (opts.alignTicksWithAxis != null) {
-                var otherAxis = (axis.direction == "x" ? xaxes : yaxes)[opts.alignTicksWithAxis - 1];
-                if (otherAxis && otherAxis.used && otherAxis != axis) {
-                    // consider snapping min/max to outermost nice ticks
-                    var niceTicks = axis.tickGenerator(axis);
-                    if (niceTicks.length > 0) {
-                        if (opts.min == null)
-                            axis.min = Math.min(axis.min, niceTicks[0]);
-                        if (opts.max == null && niceTicks.length > 1)
-                            axis.max = Math.max(axis.max, niceTicks[niceTicks.length - 1]);
-                    }
-
-                    axis.tickGenerator = function (axis) {
-                        // copy ticks, scaled to this axis
-                        var ticks = [], v, i;
-                        for (i = 0; i < otherAxis.ticks.length; ++i) {
-                            v = (otherAxis.ticks[i].v - otherAxis.min) / (otherAxis.max - otherAxis.min);
-                            v = axis.min + v * (axis.max - axis.min);
-                            ticks.push(v);
-                        }
-                        return ticks;
-                    };
-
-                    // we might need an extra decimal since forced
-                    // ticks don't necessarily fit naturally
-                    if (!axis.mode && opts.tickDecimals == null) {
-                        var extraDec = Math.max(0, -Math.floor(Math.log(axis.delta) / Math.LN10) + 1),
-                            ts = axis.tickGenerator(axis);
-
-                        // only proceed if the tick interval rounded
-                        // with an extra decimal doesn't give us a
-                        // zero at end
-                        if (!(ts.length > 1 && /\..*0$/.test((ts[1] - ts[0]).toFixed(extraDec))))
-                            axis.tickDecimals = extraDec;
-                    }
-                }
-            }
-        }
-
-        function setTicks(axis) {
-            var oticks = axis.options.ticks, ticks = [];
-            if (oticks == null || (typeof oticks == "number" && oticks > 0))
-                ticks = axis.tickGenerator(axis);
-            else if (oticks) {
-                if ($.isFunction(oticks))
-                    // generate the ticks
-                    ticks = oticks(axis);
-                else
-                    ticks = oticks;
-            }
-
-            // clean up/labelify the supplied ticks, copy them over
-            var i, v;
-            axis.ticks = [];
-            for (i = 0; i < ticks.length; ++i) {
-                var label = null;
-                var t = ticks[i];
-                if (typeof t == "object") {
-                    v = +t[0];
-                    if (t.length > 1)
-                        label = t[1];
-                }
-                else
-                    v = +t;
-                if (label == null)
-                    label = axis.tickFormatter(v, axis);
-                if (!isNaN(v))
-                    axis.ticks.push({ v: v, label: label });
-            }
-        }
-
-        function snapRangeToTicks(axis, ticks) {
-            if (axis.options.autoscaleMargin && ticks.length > 0) {
-                // snap to ticks
-                if (axis.options.min == null)
-                    axis.min = Math.min(axis.min, ticks[0].v);
-                if (axis.options.max == null && ticks.length > 1)
-                    axis.max = Math.max(axis.max, ticks[ticks.length - 1].v);
-            }
-        }
-
-        function draw() {
-
-            surface.clear();
-
-            executeHooks(hooks.drawBackground, [ctx]);
-
-            var grid = options.grid;
-
-            // draw background, if any
-            if (grid.show && grid.backgroundColor)
-                drawBackground();
-
-            if (grid.show && !grid.aboveData) {
-                drawGrid();
-            }
-
-            for (var i = 0; i < series.length; ++i) {
-                executeHooks(hooks.drawSeries, [ctx, series[i]]);
-                drawSeries(series[i]);
-            }
-
-            executeHooks(hooks.draw, [ctx]);
-
-            if (grid.show && grid.aboveData) {
-                drawGrid();
-            }
-
-            surface.render();
-
-            // A draw implies that either the axes or data have changed, so we
-            // should probably update the overlay highlights as well.
-
-            triggerRedrawOverlay();
-        }
-
-        function extractRange(ranges, coord) {
-            var axis, from, to, key, axes = allAxes();
-
-            for (var i = 0; i < axes.length; ++i) {
-                axis = axes[i];
-                if (axis.direction == coord) {
-                    key = coord + axis.n + "axis";
-                    if (!ranges[key] && axis.n == 1)
-                        key = coord + "axis"; // support x1axis as xaxis
-                    if (ranges[key]) {
-                        from = ranges[key].from;
-                        to = ranges[key].to;
-                        break;
-                    }
-                }
-            }
-
-            // backwards-compat stuff - to be removed in future
-            if (!ranges[key]) {
-                axis = coord == "x" ? xaxes[0] : yaxes[0];
-                from = ranges[coord + "1"];
-                to = ranges[coord + "2"];
-            }
-
-            // auto-reverse as an added bonus
-            if (from != null && to != null && from > to) {
-                var tmp = from;
-                from = to;
-                to = tmp;
-            }
-
-            return { from: from, to: to, axis: axis };
-        }
-
-        function drawBackground() {
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            ctx.fillStyle = getColorOrGradient(options.grid.backgroundColor, plotHeight, 0, "rgba(255, 255, 255, 0)");
-            ctx.fillRect(0, 0, plotWidth, plotHeight);
-            ctx.restore();
-        }
-
-        function drawGrid() {
-            var i, axes, bw, bc;
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            // draw markings
-            var markings = options.grid.markings;
-            if (markings) {
-                if ($.isFunction(markings)) {
-                    axes = plot.getAxes();
-                    // xmin etc. is backwards compatibility, to be
-                    // removed in the future
-                    axes.xmin = axes.xaxis.min;
-                    axes.xmax = axes.xaxis.max;
-                    axes.ymin = axes.yaxis.min;
-                    axes.ymax = axes.yaxis.max;
-
-                    markings = markings(axes);
-                }
-
-                for (i = 0; i < markings.length; ++i) {
-                    var m = markings[i],
-                        xrange = extractRange(m, "x"),
-                        yrange = extractRange(m, "y");
-
-                    // fill in missing
-                    if (xrange.from == null)
-                        xrange.from = xrange.axis.min;
-                    if (xrange.to == null)
-                        xrange.to = xrange.axis.max;
-                    if (yrange.from == null)
-                        yrange.from = yrange.axis.min;
-                    if (yrange.to == null)
-                        yrange.to = yrange.axis.max;
-
-                    // clip
-                    if (xrange.to < xrange.axis.min || xrange.from > xrange.axis.max ||
-                        yrange.to < yrange.axis.min || yrange.from > yrange.axis.max)
-                        continue;
-
-                    xrange.from = Math.max(xrange.from, xrange.axis.min);
-                    xrange.to = Math.min(xrange.to, xrange.axis.max);
-                    yrange.from = Math.max(yrange.from, yrange.axis.min);
-                    yrange.to = Math.min(yrange.to, yrange.axis.max);
-
-                    var xequal = xrange.from === xrange.to,
-                        yequal = yrange.from === yrange.to;
-
-                    if (xequal && yequal) {
-                        continue;
-                    }
-
-                    // then draw
-                    xrange.from = Math.floor(xrange.axis.p2c(xrange.from));
-                    xrange.to = Math.floor(xrange.axis.p2c(xrange.to));
-                    yrange.from = Math.floor(yrange.axis.p2c(yrange.from));
-                    yrange.to = Math.floor(yrange.axis.p2c(yrange.to));
-
-                    if (xequal || yequal) {
-                        var lineWidth = m.lineWidth || options.grid.markingsLineWidth,
-                            subPixel = lineWidth % 2 ? 0.5 : 0;
-                        ctx.beginPath();
-                        ctx.strokeStyle = m.color || options.grid.markingsColor;
-                        ctx.lineWidth = lineWidth;
-                        if (xequal) {
-                            ctx.moveTo(xrange.to + subPixel, yrange.from);
-                            ctx.lineTo(xrange.to + subPixel, yrange.to);
-                        } else {
-                            ctx.moveTo(xrange.from, yrange.to + subPixel);
-                            ctx.lineTo(xrange.to, yrange.to + subPixel);                            
-                        }
-                        ctx.stroke();
-                    } else {
-                        ctx.fillStyle = m.color || options.grid.markingsColor;
-                        ctx.fillRect(xrange.from, yrange.to,
-                                     xrange.to - xrange.from,
-                                     yrange.from - yrange.to);
-                    }
-                }
-            }
-
-            // draw the ticks
-            axes = allAxes();
-            bw = options.grid.borderWidth;
-
-            for (var j = 0; j < axes.length; ++j) {
-                var axis = axes[j], box = axis.box,
-                    t = axis.tickLength, x, y, xoff, yoff;
-                if (!axis.show || axis.ticks.length == 0)
-                    continue;
-
-                ctx.lineWidth = 1;
-
-                // find the edges
-                if (axis.direction == "x") {
-                    x = 0;
-                    if (t == "full")
-                        y = (axis.position == "top" ? 0 : plotHeight);
-                    else
-                        y = box.top - plotOffset.top + (axis.position == "top" ? box.height : 0);
-                }
-                else {
-                    y = 0;
-                    if (t == "full")
-                        x = (axis.position == "left" ? 0 : plotWidth);
-                    else
-                        x = box.left - plotOffset.left + (axis.position == "left" ? box.width : 0);
-                }
-
-                // draw tick bar
-                if (!axis.innermost) {
-                    ctx.strokeStyle = axis.options.color;
-                    ctx.beginPath();
-                    xoff = yoff = 0;
-                    if (axis.direction == "x")
-                        xoff = plotWidth + 1;
-                    else
-                        yoff = plotHeight + 1;
-
-                    if (ctx.lineWidth == 1) {
-                        if (axis.direction == "x") {
-                            y = Math.floor(y) + 0.5;
-                        } else {
-                            x = Math.floor(x) + 0.5;
-                        }
-                    }
-
-                    ctx.moveTo(x, y);
-                    ctx.lineTo(x + xoff, y + yoff);
-                    ctx.stroke();
-                }
-
-                // draw ticks
-
-                ctx.strokeStyle = axis.options.tickColor;
-
-                ctx.beginPath();
-                for (i = 0; i < axis.ticks.length; ++i) {
-                    var v = axis.ticks[i].v;
-
-                    xoff = yoff = 0;
-
-                    if (isNaN(v) || v < axis.min || v > axis.max
-                        // skip those lying on the axes if we got a border
-                        || (t == "full"
-                            && ((typeof bw == "object" && bw[axis.position] > 0) || bw > 0)
-                            && (v == axis.min || v == axis.max)))
-                        continue;
-
-                    if (axis.direction == "x") {
-                        x = axis.p2c(v);
-                        yoff = t == "full" ? -plotHeight : t;
-
-                        if (axis.position == "top")
-                            yoff = -yoff;
-                    }
-                    else {
-                        y = axis.p2c(v);
-                        xoff = t == "full" ? -plotWidth : t;
-
-                        if (axis.position == "left")
-                            xoff = -xoff;
-                    }
-
-                    if (ctx.lineWidth == 1) {
-                        if (axis.direction == "x")
-                            x = Math.floor(x) + 0.5;
-                        else
-                            y = Math.floor(y) + 0.5;
-                    }
-
-                    ctx.moveTo(x, y);
-                    ctx.lineTo(x + xoff, y + yoff);
-                }
-
-                ctx.stroke();
-            }
-
-
-            // draw border
-            if (bw) {
-                // If either borderWidth or borderColor is an object, then draw the border
-                // line by line instead of as one rectangle
-                bc = options.grid.borderColor;
-                if(typeof bw == "object" || typeof bc == "object") {
-                    if (typeof bw !== "object") {
-                        bw = {top: bw, right: bw, bottom: bw, left: bw};
-                    }
-                    if (typeof bc !== "object") {
-                        bc = {top: bc, right: bc, bottom: bc, left: bc};
-                    }
-
-                    if (bw.top > 0) {
-                        ctx.strokeStyle = bc.top;
-                        ctx.lineWidth = bw.top;
-                        ctx.beginPath();
-                        ctx.moveTo(0 - bw.left, 0 - bw.top/2);
-                        ctx.lineTo(plotWidth, 0 - bw.top/2);
-                        ctx.stroke();
-                    }
-
-                    if (bw.right > 0) {
-                        ctx.strokeStyle = bc.right;
-                        ctx.lineWidth = bw.right;
-                        ctx.beginPath();
-                        ctx.moveTo(plotWidth + bw.right / 2, 0 - bw.top);
-                        ctx.lineTo(plotWidth + bw.right / 2, plotHeight);
-                        ctx.stroke();
-                    }
-
-                    if (bw.bottom > 0) {
-                        ctx.strokeStyle = bc.bottom;
-                        ctx.lineWidth = bw.bottom;
-                        ctx.beginPath();
-                        ctx.moveTo(plotWidth + bw.right, plotHeight + bw.bottom / 2);
-                        ctx.lineTo(0, plotHeight + bw.bottom / 2);
-                        ctx.stroke();
-                    }
-
-                    if (bw.left > 0) {
-                        ctx.strokeStyle = bc.left;
-                        ctx.lineWidth = bw.left;
-                        ctx.beginPath();
-                        ctx.moveTo(0 - bw.left/2, plotHeight + bw.bottom);
-                        ctx.lineTo(0- bw.left/2, 0);
-                        ctx.stroke();
-                    }
-                }
-                else {
-                    ctx.lineWidth = bw;
-                    ctx.strokeStyle = options.grid.borderColor;
-                    ctx.strokeRect(-bw/2, -bw/2, plotWidth + bw, plotHeight + bw);
-                }
-            }
-
-            ctx.restore();
-        }
-
-        function drawAxisLabels() {
-
-            $.each(allAxes(), function (_, axis) {
-                var box = axis.box,
-                    legacyStyles = axis.direction + "Axis " + axis.direction + axis.n + "Axis",
-                    layer = "flot-" + axis.direction + "-axis flot-" + axis.direction + axis.n + "-axis " + legacyStyles,
-                    font = axis.options.font || "flot-tick-label tickLabel",
-                    tick, x, y, halign, valign;
-
-                // Remove text before checking for axis.show and ticks.length;
-                // otherwise plugins, like flot-tickrotor, that draw their own
-                // tick labels will end up with both theirs and the defaults.
-
-                surface.removeText(layer);
-
-                if (!axis.show || axis.ticks.length == 0)
-                    return;
-
-                for (var i = 0; i < axis.ticks.length; ++i) {
-
-                    tick = axis.ticks[i];
-                    if (!tick.label || tick.v < axis.min || tick.v > axis.max)
-                        continue;
-
-                    if (axis.direction == "x") {
-                        halign = "center";
-                        x = plotOffset.left + axis.p2c(tick.v);
-                        if (axis.position == "bottom") {
-                            y = box.top + box.padding;
-                        } else {
-                            y = box.top + box.height - box.padding;
-                            valign = "bottom";
-                        }
-                    } else {
-                        valign = "middle";
-                        y = plotOffset.top + axis.p2c(tick.v);
-                        if (axis.position == "left") {
-                            x = box.left + box.width - box.padding;
-                            halign = "right";
-                        } else {
-                            x = box.left + box.padding;
-                        }
-                    }
-
-                    surface.addText(layer, x, y, tick.label, font, null, null, halign, valign);
-                }
-            });
-        }
-
-        function drawSeries(series) {
-            if (series.lines.show)
-                drawSeriesLines(series);
-            if (series.bars.show)
-                drawSeriesBars(series);
-            if (series.points.show)
-                drawSeriesPoints(series);
-        }
-
-        function drawSeriesLines(series) {
-            function plotLine(datapoints, xoffset, yoffset, axisx, axisy) {
-                var points = datapoints.points,
-                    ps = datapoints.pointsize,
-                    prevx = null, prevy = null;
-
-                ctx.beginPath();
-                for (var i = ps; i < points.length; i += ps) {
-                    var x1 = points[i - ps], y1 = points[i - ps + 1],
-                        x2 = points[i], y2 = points[i + 1];
-
-                    if (x1 == null || x2 == null)
-                        continue;
-
-                    // clip with ymin
-                    if (y1 <= y2 && y1 < axisy.min) {
-                        if (y2 < axisy.min)
-                            continue;   // line segment is outside
-                        // compute new intersection point
-                        x1 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.min;
-                    }
-                    else if (y2 <= y1 && y2 < axisy.min) {
-                        if (y1 < axisy.min)
-                            continue;
-                        x2 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.min;
-                    }
-
-                    // clip with ymax
-                    if (y1 >= y2 && y1 > axisy.max) {
-                        if (y2 > axisy.max)
-                            continue;
-                        x1 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.max;
-                    }
-                    else if (y2 >= y1 && y2 > axisy.max) {
-                        if (y1 > axisy.max)
-                            continue;
-                        x2 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.max;
-                    }
-
-                    // clip with xmin
-                    if (x1 <= x2 && x1 < axisx.min) {
-                        if (x2 < axisx.min)
-                            continue;
-                        y1 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.min;
-                    }
-                    else if (x2 <= x1 && x2 < axisx.min) {
-                        if (x1 < axisx.min)
-                            continue;
-                        y2 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.min;
-                    }
-
-                    // clip with xmax
-                    if (x1 >= x2 && x1 > axisx.max) {
-                        if (x2 > axisx.max)
-                            continue;
-                        y1 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.max;
-                    }
-                    else if (x2 >= x1 && x2 > axisx.max) {
-                        if (x1 > axisx.max)
-                            continue;
-                        y2 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.max;
-                    }
-
-                    if (x1 != prevx || y1 != prevy)
-                        ctx.moveTo(axisx.p2c(x1) + xoffset, axisy.p2c(y1) + yoffset);
-
-                    prevx = x2;
-                    prevy = y2;
-                    ctx.lineTo(axisx.p2c(x2) + xoffset, axisy.p2c(y2) + yoffset);
-                }
-                ctx.stroke();
-            }
-
-            function plotLineArea(datapoints, axisx, axisy) {
-                var points = datapoints.points,
-                    ps = datapoints.pointsize,
-                    bottom = Math.min(Math.max(0, axisy.min), axisy.max),
-                    i = 0, top, areaOpen = false,
-                    ypos = 1, segmentStart = 0, segmentEnd = 0;
-
-                // we process each segment in two turns, first forward
-                // direction to sketch out top, then once we hit the
-                // end we go backwards to sketch the bottom
-                while (true) {
-                    if (ps > 0 && i > points.length + ps)
-                        break;
-
-                    i += ps; // ps is negative if going backwards
-
-                    var x1 = points[i - ps],
-                        y1 = points[i - ps + ypos],
-                        x2 = points[i], y2 = points[i + ypos];
-
-                    if (areaOpen) {
-                        if (ps > 0 && x1 != null && x2 == null) {
-                            // at turning point
-                            segmentEnd = i;
-                            ps = -ps;
-                            ypos = 2;
-                            continue;
-                        }
-
-                        if (ps < 0 && i == segmentStart + ps) {
-                            // done with the reverse sweep
-                            ctx.fill();
-                            areaOpen = false;
-                            ps = -ps;
-                            ypos = 1;
-                            i = segmentStart = segmentEnd + ps;
-                            continue;
-                        }
-                    }
-
-                    if (x1 == null || x2 == null)
-                        continue;
-
-                    // clip x values
-
-                    // clip with xmin
-                    if (x1 <= x2 && x1 < axisx.min) {
-                        if (x2 < axisx.min)
-                            continue;
-                        y1 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.min;
-                    }
-                    else if (x2 <= x1 && x2 < axisx.min) {
-                        if (x1 < axisx.min)
-                            continue;
-                        y2 = (axisx.min - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.min;
-                    }
-
-                    // clip with xmax
-                    if (x1 >= x2 && x1 > axisx.max) {
-                        if (x2 > axisx.max)
-                            continue;
-                        y1 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x1 = axisx.max;
-                    }
-                    else if (x2 >= x1 && x2 > axisx.max) {
-                        if (x1 > axisx.max)
-                            continue;
-                        y2 = (axisx.max - x1) / (x2 - x1) * (y2 - y1) + y1;
-                        x2 = axisx.max;
-                    }
-
-                    if (!areaOpen) {
-                        // open area
-                        ctx.beginPath();
-                        ctx.moveTo(axisx.p2c(x1), axisy.p2c(bottom));
-                        areaOpen = true;
-                    }
-
-                    // now first check the case where both is outside
-                    if (y1 >= axisy.max && y2 >= axisy.max) {
-                        ctx.lineTo(axisx.p2c(x1), axisy.p2c(axisy.max));
-                        ctx.lineTo(axisx.p2c(x2), axisy.p2c(axisy.max));
-                        continue;
-                    }
-                    else if (y1 <= axisy.min && y2 <= axisy.min) {
-                        ctx.lineTo(axisx.p2c(x1), axisy.p2c(axisy.min));
-                        ctx.lineTo(axisx.p2c(x2), axisy.p2c(axisy.min));
-                        continue;
-                    }
-
-                    // else it's a bit more complicated, there might
-                    // be a flat maxed out rectangle first, then a
-                    // triangular cutout or reverse; to find these
-                    // keep track of the current x values
-                    var x1old = x1, x2old = x2;
-
-                    // clip the y values, without shortcutting, we
-                    // go through all cases in turn
-
-                    // clip with ymin
-                    if (y1 <= y2 && y1 < axisy.min && y2 >= axisy.min) {
-                        x1 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.min;
-                    }
-                    else if (y2 <= y1 && y2 < axisy.min && y1 >= axisy.min) {
-                        x2 = (axisy.min - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.min;
-                    }
-
-                    // clip with ymax
-                    if (y1 >= y2 && y1 > axisy.max && y2 <= axisy.max) {
-                        x1 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y1 = axisy.max;
-                    }
-                    else if (y2 >= y1 && y2 > axisy.max && y1 <= axisy.max) {
-                        x2 = (axisy.max - y1) / (y2 - y1) * (x2 - x1) + x1;
-                        y2 = axisy.max;
-                    }
-
-                    // if the x value was changed we got a rectangle
-                    // to fill
-                    if (x1 != x1old) {
-                        ctx.lineTo(axisx.p2c(x1old), axisy.p2c(y1));
-                        // it goes to (x1, y1), but we fill that below
-                    }
-
-                    // fill triangular section, this sometimes result
-                    // in redundant points if (x1, y1) hasn't changed
-                    // from previous line to, but we just ignore that
-                    ctx.lineTo(axisx.p2c(x1), axisy.p2c(y1));
-                    ctx.lineTo(axisx.p2c(x2), axisy.p2c(y2));
-
-                    // fill the other rectangle if it's there
-                    if (x2 != x2old) {
-                        ctx.lineTo(axisx.p2c(x2), axisy.p2c(y2));
-                        ctx.lineTo(axisx.p2c(x2old), axisy.p2c(y2));
-                    }
-                }
-            }
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-            ctx.lineJoin = "round";
-
-            var lw = series.lines.lineWidth,
-                sw = series.shadowSize;
-            // FIXME: consider another form of shadow when filling is turned on
-            if (lw > 0 && sw > 0) {
-                // draw shadow as a thick and thin line with transparency
-                ctx.lineWidth = sw;
-                ctx.strokeStyle = "rgba(0,0,0,0.1)";
-                // position shadow at angle from the mid of line
-                var angle = Math.PI/18;
-                plotLine(series.datapoints, Math.sin(angle) * (lw/2 + sw/2), Math.cos(angle) * (lw/2 + sw/2), series.xaxis, series.yaxis);
-                ctx.lineWidth = sw/2;
-                plotLine(series.datapoints, Math.sin(angle) * (lw/2 + sw/4), Math.cos(angle) * (lw/2 + sw/4), series.xaxis, series.yaxis);
-            }
-
-            ctx.lineWidth = lw;
-            ctx.strokeStyle = series.color;
-            var fillStyle = getFillStyle(series.lines, series.color, 0, plotHeight);
-            if (fillStyle) {
-                ctx.fillStyle = fillStyle;
-                plotLineArea(series.datapoints, series.xaxis, series.yaxis);
-            }
-
-            if (lw > 0)
-                plotLine(series.datapoints, 0, 0, series.xaxis, series.yaxis);
-            ctx.restore();
-        }
-
-        function drawSeriesPoints(series) {
-            function plotPoints(datapoints, radius, fillStyle, offset, shadow, axisx, axisy, symbol) {
-                var points = datapoints.points, ps = datapoints.pointsize;
-
-                for (var i = 0; i < points.length; i += ps) {
-                    var x = points[i], y = points[i + 1];
-                    if (x == null || x < axisx.min || x > axisx.max || y < axisy.min || y > axisy.max)
-                        continue;
-
-                    ctx.beginPath();
-                    x = axisx.p2c(x);
-                    y = axisy.p2c(y) + offset;
-                    if (symbol == "circle")
-                        ctx.arc(x, y, radius, 0, shadow ? Math.PI : Math.PI * 2, false);
-                    else
-                        symbol(ctx, x, y, radius, shadow);
-                    ctx.closePath();
-
-                    if (fillStyle) {
-                        ctx.fillStyle = fillStyle;
-                        ctx.fill();
-                    }
-                    ctx.stroke();
-                }
-            }
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            var lw = series.points.lineWidth,
-                sw = series.shadowSize,
-                radius = series.points.radius,
-                symbol = series.points.symbol;
-
-            // If the user sets the line width to 0, we change it to a very 
-            // small value. A line width of 0 seems to force the default of 1.
-            // Doing the conditional here allows the shadow setting to still be 
-            // optional even with a lineWidth of 0.
-
-            if( lw == 0 )
-                lw = 0.0001;
-
-            if (lw > 0 && sw > 0) {
-                // draw shadow in two steps
-                var w = sw / 2;
-                ctx.lineWidth = w;
-                ctx.strokeStyle = "rgba(0,0,0,0.1)";
-                plotPoints(series.datapoints, radius, null, w + w/2, true,
-                           series.xaxis, series.yaxis, symbol);
-
-                ctx.strokeStyle = "rgba(0,0,0,0.2)";
-                plotPoints(series.datapoints, radius, null, w/2, true,
-                           series.xaxis, series.yaxis, symbol);
-            }
-
-            ctx.lineWidth = lw;
-            ctx.strokeStyle = series.color;
-            plotPoints(series.datapoints, radius,
-                       getFillStyle(series.points, series.color), 0, false,
-                       series.xaxis, series.yaxis, symbol);
-            ctx.restore();
-        }
-
-        function drawBar(x, y, b, barLeft, barRight, fillStyleCallback, axisx, axisy, c, horizontal, lineWidth) {
-            var left, right, bottom, top,
-                drawLeft, drawRight, drawTop, drawBottom,
-                tmp;
-
-            // in horizontal mode, we start the bar from the left
-            // instead of from the bottom so it appears to be
-            // horizontal rather than vertical
-            if (horizontal) {
-                drawBottom = drawRight = drawTop = true;
-                drawLeft = false;
-                left = b;
-                right = x;
-                top = y + barLeft;
-                bottom = y + barRight;
-
-                // account for negative bars
-                if (right < left) {
-                    tmp = right;
-                    right = left;
-                    left = tmp;
-                    drawLeft = true;
-                    drawRight = false;
-                }
-            }
-            else {
-                drawLeft = drawRight = drawTop = true;
-                drawBottom = false;
-                left = x + barLeft;
-                right = x + barRight;
-                bottom = b;
-                top = y;
-
-                // account for negative bars
-                if (top < bottom) {
-                    tmp = top;
-                    top = bottom;
-                    bottom = tmp;
-                    drawBottom = true;
-                    drawTop = false;
-                }
-            }
-
-            // clip
-            if (right < axisx.min || left > axisx.max ||
-                top < axisy.min || bottom > axisy.max)
-                return;
-
-            if (left < axisx.min) {
-                left = axisx.min;
-                drawLeft = false;
-            }
-
-            if (right > axisx.max) {
-                right = axisx.max;
-                drawRight = false;
-            }
-
-            if (bottom < axisy.min) {
-                bottom = axisy.min;
-                drawBottom = false;
-            }
-
-            if (top > axisy.max) {
-                top = axisy.max;
-                drawTop = false;
-            }
-
-            left = axisx.p2c(left);
-            bottom = axisy.p2c(bottom);
-            right = axisx.p2c(right);
-            top = axisy.p2c(top);
-
-            // fill the bar
-            if (fillStyleCallback) {
-                c.fillStyle = fillStyleCallback(bottom, top);
-                c.fillRect(left, top, right - left, bottom - top)
-            }
-
-            // draw outline
-            if (lineWidth > 0 && (drawLeft || drawRight || drawTop || drawBottom)) {
-                c.beginPath();
-
-                // FIXME: inline moveTo is buggy with excanvas
-                c.moveTo(left, bottom);
-                if (drawLeft)
-                    c.lineTo(left, top);
-                else
-                    c.moveTo(left, top);
-                if (drawTop)
-                    c.lineTo(right, top);
-                else
-                    c.moveTo(right, top);
-                if (drawRight)
-                    c.lineTo(right, bottom);
-                else
-                    c.moveTo(right, bottom);
-                if (drawBottom)
-                    c.lineTo(left, bottom);
-                else
-                    c.moveTo(left, bottom);
-                c.stroke();
-            }
-        }
-
-        function drawSeriesBars(series) {
-            function plotBars(datapoints, barLeft, barRight, fillStyleCallback, axisx, axisy) {
-                var points = datapoints.points, ps = datapoints.pointsize;
-
-                for (var i = 0; i < points.length; i += ps) {
-                    if (points[i] == null)
-                        continue;
-                    drawBar(points[i], points[i + 1], points[i + 2], barLeft, barRight, fillStyleCallback, axisx, axisy, ctx, series.bars.horizontal, series.bars.lineWidth);
-                }
-            }
-
-            ctx.save();
-            ctx.translate(plotOffset.left, plotOffset.top);
-
-            // FIXME: figure out a way to add shadows (for instance along the right edge)
-            ctx.lineWidth = series.bars.lineWidth;
-            ctx.strokeStyle = series.color;
-
-            var barLeft;
-
-            switch (series.bars.align) {
-                case "left":
-                    barLeft = 0;
-                    break;
-                case "right":
-                    barLeft = -series.bars.barWidth;
-                    break;
-                default:
-                    barLeft = -series.bars.barWidth / 2;
-            }
-
-            var fillStyleCallback = series.bars.fill ? function (bottom, top) { return getFillStyle(series.bars, series.color, bottom, top); } : null;
-            plotBars(series.datapoints, barLeft, barLeft + series.bars.barWidth, fillStyleCallback, series.xaxis, series.yaxis);
-            ctx.restore();
-        }
-
-        function getFillStyle(filloptions, seriesColor, bottom, top) {
-            var fill = filloptions.fill;
-            if (!fill)
-                return null;
-
-            if (filloptions.fillColor)
-                return getColorOrGradient(filloptions.fillColor, bottom, top, seriesColor);
-
-            var c = $.color.parse(seriesColor);
-            c.a = typeof fill == "number" ? fill : 0.4;
-            c.normalize();
-            return c.toString();
-        }
-
-        function insertLegend() {
-
-            if (options.legend.container != null) {
-                $(options.legend.container).html("");
-            } else {
-                placeholder.find(".legend").remove();
-            }
-
-            if (!options.legend.show) {
-                return;
-            }
-
-            var fragments = [], entries = [], rowStarted = false,
-                lf = options.legend.labelFormatter, s, label;
-
-            // Build a list of legend entries, with each having a label and a color
-
-            for (var i = 0; i < series.length; ++i) {
-                s = series[i];
-                if (s.label) {
-                    label = lf ? lf(s.label, s) : s.label;
-                    if (label) {
-                        entries.push({
-                            label: label,
-                            color: s.color
-                        });
-                    }
-                }
-            }
-
-            // Sort the legend using either the default or a custom comparator
-
-            if (options.legend.sorted) {
-                if ($.isFunction(options.legend.sorted)) {
-                    entries.sort(options.legend.sorted);
-                } else if (options.legend.sorted == "reverse") {
-                	entries.reverse();
-                } else {
-                    var ascending = options.legend.sorted != "descending";
-                    entries.sort(function(a, b) {
-                        return a.label == b.label ? 0 : (
-                            (a.label < b.label) != ascending ? 1 : -1   // Logical XOR
-                        );
-                    });
-                }
-            }
-
-            // Generate markup for the list of entries, in their final order
-
-            for (var i = 0; i < entries.length; ++i) {
-
-                var entry = entries[i];
-
-                if (i % options.legend.noColumns == 0) {
-                    if (rowStarted)
-                        fragments.push('</tr>');
-                    fragments.push('<tr>');
-                    rowStarted = true;
-                }
-
-                fragments.push(
-                    '<td class="legendColorBox"><div style="border:1px solid ' + options.legend.labelBoxBorderColor + ';padding:1px"><div style="width:4px;height:0;border:5px solid ' + entry.color + ';overflow:hidden"></div></div></td>' +
-                    '<td class="legendLabel">' + entry.label + '</td>'
-                );
-            }
-
-            if (rowStarted)
-                fragments.push('</tr>');
-
-            if (fragments.length == 0)
-                return;
-
-            var table = '<table style="font-size:smaller;color:' + options.grid.color + '">' + fragments.join("") + '</table>';
-            if (options.legend.container != null)
-                $(options.legend.container).html(table);
-            else {
-                var pos = "",
-                    p = options.legend.position,
-                    m = options.legend.margin;
-                if (m[0] == null)
-                    m = [m, m];
-                if (p.charAt(0) == "n")
-                    pos += 'top:' + (m[1] + plotOffset.top) + 'px;';
-                else if (p.charAt(0) == "s")
-                    pos += 'bottom:' + (m[1] + plotOffset.bottom) + 'px;';
-                if (p.charAt(1) == "e")
-                    pos += 'right:' + (m[0] + plotOffset.right) + 'px;';
-                else if (p.charAt(1) == "w")
-                    pos += 'left:' + (m[0] + plotOffset.left) + 'px;';
-                var legend = $('<div class="legend">' + table.replace('style="', 'style="position:absolute;' + pos +';') + '</div>').appendTo(placeholder);
-                if (options.legend.backgroundOpacity != 0.0) {
-                    // put in the transparent background
-                    // separately to avoid blended labels and
-                    // label boxes
-                    var c = options.legend.backgroundColor;
-                    if (c == null) {
-                        c = options.grid.backgroundColor;
-                        if (c && typeof c == "string")
-                            c = $.color.parse(c);
-                        else
-                            c = $.color.extract(legend, 'background-color');
-                        c.a = 1;
-                        c = c.toString();
-                    }
-                    var div = legend.children();
-                    $('<div style="position:absolute;width:' + div.width() + 'px;height:' + div.height() + 'px;' + pos +'background-color:' + c + ';"> </div>').prependTo(legend).css('opacity', options.legend.backgroundOpacity);
-                }
-            }
-        }
-
-
-        // interactive features
-
-        var highlights = [],
-            redrawTimeout = null;
-
-        // returns the data item the mouse is over, or null if none is found
-        function findNearbyItem(mouseX, mouseY, seriesFilter) {
-            var maxDistance = options.grid.mouseActiveRadius,
-                smallestDistance = maxDistance * maxDistance + 1,
-                item = null, foundPoint = false, i, j, ps;
-
-            for (i = series.length - 1; i >= 0; --i) {
-                if (!seriesFilter(series[i]))
-                    continue;
-
-                var s = series[i],
-                    axisx = s.xaxis,
-                    axisy = s.yaxis,
-                    points = s.datapoints.points,
-                    mx = axisx.c2p(mouseX), // precompute some stuff to make the loop faster
-                    my = axisy.c2p(mouseY),
-                    maxx = maxDistance / axisx.scale,
-                    maxy = maxDistance / axisy.scale;
-
-                ps = s.datapoints.pointsize;
-                // with inverse transforms, we can't use the maxx/maxy
-                // optimization, sadly
-                if (axisx.options.inverseTransform)
-                    maxx = Number.MAX_VALUE;
-                if (axisy.options.inverseTransform)
-                    maxy = Number.MAX_VALUE;
-
-                if (s.lines.show || s.points.show) {
-                    for (j = 0; j < points.length; j += ps) {
-                        var x = points[j], y = points[j + 1];
-                        if (x == null)
-                            continue;
-
-                        // For points and lines, the cursor must be within a
-                        // certain distance to the data point
-                        if (x - mx > maxx || x - mx < -maxx ||
-                            y - my > maxy || y - my < -maxy)
-                            continue;
-
-                        // We have to calculate distances in pixels, not in
-                        // data units, because the scales of the axes may be different
-                        var dx = Math.abs(axisx.p2c(x) - mouseX),
-                            dy = Math.abs(axisy.p2c(y) - mouseY),
-                            dist = dx * dx + dy * dy; // we save the sqrt
-
-                        // use <= to ensure last point takes precedence
-                        // (last generally means on top of)
-                        if (dist < smallestDistance) {
-                            smallestDistance = dist;
-                            item = [i, j / ps];
-                        }
-                    }
-                }
-
-                if (s.bars.show && !item) { // no other point can be nearby
-
-                    var barLeft, barRight;
-
-                    switch (s.bars.align) {
-                        case "left":
-                            barLeft = 0;
-                            break;
-                        case "right":
-                            barLeft = -s.bars.barWidth;
-                            break;
-                        default:
-                            barLeft = -s.bars.barWidth / 2;
-                    }
-
-                    barRight = barLeft + s.bars.barWidth;
-
-                    for (j = 0; j < points.length; j += ps) {
-                        var x = points[j], y = points[j + 1], b = points[j + 2];
-                        if (x == null)
-                            continue;
-
-                        // for a bar graph, the cursor must be inside the bar
-                        if (series[i].bars.horizontal ?
-                            (mx <= Math.max(b, x) && mx >= Math.min(b, x) &&
-                             my >= y + barLeft && my <= y + barRight) :
-                            (mx >= x + barLeft && mx <= x + barRight &&
-                             my >= Math.min(b, y) && my <= Math.max(b, y)))
-                                item = [i, j / ps];
-                    }
-                }
-            }
-
-            if (item) {
-                i = item[0];
-                j = item[1];
-                ps = series[i].datapoints.pointsize;
-
-                return { datapoint: series[i].datapoints.points.slice(j * ps, (j + 1) * ps),
-                         dataIndex: j,
-                         series: series[i],
-                         seriesIndex: i };
-            }
-
-            return null;
-        }
-
-        function onMouseMove(e) {
-            if (options.grid.hoverable)
-                triggerClickHoverEvent("plothover", e,
-                                       function (s) { return s["hoverable"] != false; });
-        }
-
-        function onMouseLeave(e) {
-            if (options.grid.hoverable)
-                triggerClickHoverEvent("plothover", e,
-                                       function (s) { return false; });
-        }
-
-        function onClick(e) {
-            triggerClickHoverEvent("plotclick", e,
-                                   function (s) { return s["clickable"] != false; });
-        }
-
-        // trigger click or hover event (they send the same parameters
-        // so we share their code)
-        function triggerClickHoverEvent(eventname, event, seriesFilter) {
-            var offset = eventHolder.offset(),
-                canvasX = event.pageX - offset.left - plotOffset.left,
-                canvasY = event.pageY - offset.top - plotOffset.top,
-            pos = canvasToAxisCoords({ left: canvasX, top: canvasY });
-
-            pos.pageX = event.pageX;
-            pos.pageY = event.pageY;
-
-            var item = findNearbyItem(canvasX, canvasY, seriesFilter);
-
-            if (item) {
-                // fill in mouse pos for any listeners out there
-                item.pageX = parseInt(item.series.xaxis.p2c(item.datapoint[0]) + offset.left + plotOffset.left, 10);
-                item.pageY = parseInt(item.series.yaxis.p2c(item.datapoint[1]) + offset.top + plotOffset.top, 10);
-            }
-
-            if (options.grid.autoHighlight) {
-                // clear auto-highlights
-                for (var i = 0; i < highlights.length; ++i) {
-                    var h = highlights[i];
-                    if (h.auto == eventname &&
-                        !(item && h.series == item.series &&
-                          h.point[0] == item.datapoint[0] &&
-                          h.point[1] == item.datapoint[1]))
-                        unhighlight(h.series, h.point);
-                }
-
-                if (item)
-                    highlight(item.series, item.datapoint, eventname);
-            }
-
-            placeholder.trigger(eventname, [ pos, item ]);
-        }
-
-        function triggerRedrawOverlay() {
-            var t = options.interaction.redrawOverlayInterval;
-            if (t == -1) {      // skip event queue
-                drawOverlay();
-                return;
-            }
-
-            if (!redrawTimeout)
-                redrawTimeout = setTimeout(drawOverlay, t);
-        }
-
-        function drawOverlay() {
-            redrawTimeout = null;
-
-            // draw highlights
-            octx.save();
-            overlay.clear();
-            octx.translate(plotOffset.left, plotOffset.top);
-
-            var i, hi;
-            for (i = 0; i < highlights.length; ++i) {
-                hi = highlights[i];
-
-                if (hi.series.bars.show)
-                    drawBarHighlight(hi.series, hi.point);
-                else
-                    drawPointHighlight(hi.series, hi.point);
-            }
-            octx.restore();
-
-            executeHooks(hooks.drawOverlay, [octx]);
-        }
-
-        function highlight(s, point, auto) {
-            if (typeof s == "number")
-                s = series[s];
-
-            if (typeof point == "number") {
-                var ps = s.datapoints.pointsize;
-                point = s.datapoints.points.slice(ps * point, ps * (point + 1));
-            }
-
-            var i = indexOfHighlight(s, point);
-            if (i == -1) {
-                highlights.push({ series: s, point: point, auto: auto });
-
-                triggerRedrawOverlay();
-            }
-            else if (!auto)
-                highlights[i].auto = false;
-        }
-
-        function unhighlight(s, point) {
-            if (s == null && point == null) {
-                highlights = [];
-                triggerRedrawOverlay();
-                return;
-            }
-
-            if (typeof s == "number")
-                s = series[s];
-
-            if (typeof point == "number") {
-                var ps = s.datapoints.pointsize;
-                point = s.datapoints.points.slice(ps * point, ps * (point + 1));
-            }
-
-            var i = indexOfHighlight(s, point);
-            if (i != -1) {
-                highlights.splice(i, 1);
-
-                triggerRedrawOverlay();
-            }
-        }
-
-        function indexOfHighlight(s, p) {
-            for (var i = 0; i < highlights.length; ++i) {
-                var h = highlights[i];
-                if (h.series == s && h.point[0] == p[0]
-                    && h.point[1] == p[1])
-                    return i;
-            }
-            return -1;
-        }
-
-        function drawPointHighlight(series, point) {
-            var x = point[0], y = point[1],
-                axisx = series.xaxis, axisy = series.yaxis,
-                highlightColor = (typeof series.highlightColor === "string") ? series.highlightColor : $.color.parse(series.color).scale('a', 0.5).toString();
-
-            if (x < axisx.min || x > axisx.max || y < axisy.min || y > axisy.max)
-                return;
-
-            var pointRadius = series.points.radius + series.points.lineWidth / 2;
-            octx.lineWidth = pointRadius;
-            octx.strokeStyle = highlightColor;
-            var radius = 1.5 * pointRadius;
-            x = axisx.p2c(x);
-            y = axisy.p2c(y);
-
-            octx.beginPath();
-            if (series.points.symbol == "circle")
-                octx.arc(x, y, radius, 0, 2 * Math.PI, false);
-            else
-                series.points.symbol(octx, x, y, radius, false);
-            octx.closePath();
-            octx.stroke();
-        }
-
-        function drawBarHighlight(series, point) {
-            var highlightColor = (typeof series.highlightColor === "string") ? series.highlightColor : $.color.parse(series.color).scale('a', 0.5).toString(),
-                fillStyle = highlightColor,
-                barLeft;
-
-            switch (series.bars.align) {
-                case "left":
-                    barLeft = 0;
-                    break;
-                case "right":
-                    barLeft = -series.bars.barWidth;
-                    break;
-                default:
-                    barLeft = -series.bars.barWidth / 2;
-            }
-
-            octx.lineWidth = series.bars.lineWidth;
-            octx.strokeStyle = highlightColor;
-
-            drawBar(point[0], point[1], point[2] || 0, barLeft, barLeft + series.bars.barWidth,
-                    function () { return fillStyle; }, series.xaxis, series.yaxis, octx, series.bars.horizontal, series.bars.lineWidth);
-        }
-
-        function getColorOrGradient(spec, bottom, top, defaultColor) {
-            if (typeof spec == "string")
-                return spec;
-            else {
-                // assume this is a gradient spec; IE currently only
-                // supports a simple vertical gradient properly, so that's
-                // what we support too
-                var gradient = ctx.createLinearGradient(0, top, 0, bottom);
-
-                for (var i = 0, l = spec.colors.length; i < l; ++i) {
-                    var c = spec.colors[i];
-                    if (typeof c != "string") {
-                        var co = $.color.parse(defaultColor);
-                        if (c.brightness != null)
-                            co = co.scale('rgb', c.brightness);
-                        if (c.opacity != null)
-                            co.a *= c.opacity;
-                        c = co.toString();
-                    }
-                    gradient.addColorStop(i / (l - 1), c);
-                }
-
-                return gradient;
-            }
-        }
-    }
-
-    // Add the plot function to the top level of the jQuery object
-
-    $.plot = function(placeholder, data, options) {
-        //var t0 = new Date();
-        var plot = new Plot($(placeholder), data, options, $.plot.plugins);
-        //(window.console ? console.log : alert)("time used (msecs): " + ((new Date()).getTime() - t0.getTime()));
-        return plot;
-    };
-
-    $.plot.version = "0.8.3";
-
-    $.plot.plugins = [];
-
-    // Also add the plot function as a chainable property
-
-    $.fn.plot = function(data, options) {
-        return this.each(function() {
-            $.plot(this, data, options);
-        });
-    };
-
-    // round to nearby lower multiple of base
-    function floorInBase(n, base) {
-        return base * Math.floor(n / base);
-    }
-
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
-
-/***/ }),
-
-/***/ 665:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for automatically redrawing plots as the placeholder resizes.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-It works by listening for changes on the placeholder div (through the jQuery
-resize event plugin) - if the size changes, it will redraw the plot.
-
-There are no options. If you need to disable the plugin for some plots, you
-can just fix the size of their placeholders.
-
-*/
-
-/* Inline dependency:
- * jQuery resize event - v1.1 - 3/14/2010
- * http://benalman.com/projects/jquery-resize-plugin/
- *
- * Copyright (c) 2010 "Cowboy" Ben Alman
- * Dual licensed under the MIT and GPL licenses.
- * http://benalman.com/about/license/
- */
-(function ($, e, t) {
-    "$:nomunge";
-
-    e = window;
-    var i = [],
-        n = $.resize = $.extend($.resize, {}),
-        a,
-        r = false,
-        s = "setTimeout",
-        u = "resize",
-        m = u + "-special-event",
-        o = "pendingDelay",
-        l = "activeDelay",
-        f = "throttleWindow";
-    n[o] = 200;
-    n[l] = 20;
-    n[f] = true;
-    $.event.special[u] = {
-        setup: function setup() {
-            if (!n[f] && this[s]) {
-                return false;
-            }
-            var e = $(this);
-            i.push(this);
-            e.data(m, { w: e.width(), h: e.height() });
-            if (i.length === 1) {
-                a = t;
-                h();
-            }
-        },
-        teardown: function teardown() {
-            if (!n[f] && this[s]) {
-                return false;
-            }
-            var e = $(this);
-            for (var t = i.length - 1; t >= 0; t--) {
-                if (i[t] == this) {
-                    i.splice(t, 1);
-                    break;
-                }
-            }
-            e.removeData(m);
-            if (!i.length) {
-                if (r) {
-                    cancelAnimationFrame(a);
-                } else {
-                    clearTimeout(a);
-                }
-                a = null;
-            }
-        },
-        add: function add(e) {
-            if (!n[f] && this[s]) {
-                return false;
-            }
-            var i;
-
-            function a(e, n, a) {
-                var r = $(this),
-                    s = r.data(m) || {};
-                s.w = n !== t ? n : r.width();
-                s.h = a !== t ? a : r.height();
-                i.apply(this, arguments);
-            }
-            if ($.isFunction(e)) {
-                i = e;
-                return a;
-            } else {
-                i = e.handler;
-                e.handler = a;
-            }
-        }
-    };
-
-    function h(t) {
-        if (r === true) {
-            r = t || 1;
-        }
-        for (var s = i.length - 1; s >= 0; s--) {
-            var l = $(i[s]);
-            if (l[0] == e || l.is(":visible")) {
-                var f = l.width(),
-                    c = l.height(),
-                    d = l.data(m);
-                if (d && (f !== d.w || c !== d.h)) {
-                    l.trigger(u, [d.w = f, d.h = c]);
-                    r = t || true;
-                }
-            } else {
-                d = l.data(m);
-                d.w = 0;
-                d.h = 0;
-            }
-        }
-        if (a !== null) {
-            if (r && (t == null || t - r < 1e3)) {
-                a = e.requestAnimationFrame(h);
-            } else {
-                a = setTimeout(h, n[o]);
-                r = false;
-            }
-        }
-    }
-    if (!e.requestAnimationFrame) {
-        e.requestAnimationFrame = function () {
-            return e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (t, i) {
-                return e.setTimeout(function () {
-                    t(new Date().getTime());
-                }, n[l]);
-            };
-        }();
-    }
-    if (!e.cancelAnimationFrame) {
-        e.cancelAnimationFrame = function () {
-            return e.webkitCancelRequestAnimationFrame || e.mozCancelRequestAnimationFrame || e.oCancelRequestAnimationFrame || e.msCancelRequestAnimationFrame || clearTimeout;
-        }();
-    }
-})(jQuery, this);
-
-(function ($) {
-    var options = {}; // no options
-
-    function init(plot) {
-        function onResize() {
-            var placeholder = plot.getPlaceholder();
-
-            // somebody might have hidden us and we can't plot
-            // when we don't have the dimensions
-            if (placeholder.width() == 0 || placeholder.height() == 0) return;
-
-            plot.resize();
-            plot.setupGrid();
-            plot.draw();
-        }
-
-        function bindEvents(plot, eventHolder) {
-            plot.getPlaceholder().resize(onResize);
-        }
-
-        function shutdown(plot, eventHolder) {
-            plot.getPlaceholder().unbind("resize", onResize);
-        }
-
-        plot.hooks.bindEvents.push(bindEvents);
-        plot.hooks.shutdown.push(shutdown);
-    }
-
-    $.plot.plugins.push({
-        init: init,
-        options: options,
-        name: 'resize',
-        version: '1.0'
-    });
-})(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
-
-/***/ }),
-
-/***/ 666:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for stacking data sets rather than overlyaing them.
-
-Copyright (c) 2007-2014 IOLA and Ole Laursen.
-Licensed under the MIT license.
-
-The plugin assumes the data is sorted on x (or y if stacking horizontally).
-For line charts, it is assumed that if a line has an undefined gap (from a
-null point), then the line above it should have the same gap - insert zeros
-instead of "null" if you want another behaviour. This also holds for the start
-and end of the chart. Note that stacking a mix of positive and negative values
-in most instances doesn't make sense (so it looks weird).
-
-Two or more series are stacked when their "stack" attribute is set to the same
-key (which can be any number or string or just "true"). To specify the default
-stack, you can set the stack option like this:
-
-	series: {
-		stack: null/false, true, or a key (number/string)
-	}
-
-You can also specify it for a single series, like this:
-
-	$.plot( $("#placeholder"), [{
-		data: [ ... ],
-		stack: true
-	}])
-
-The stacking order is determined by the order of the data series in the array
-(later series end up on top of the previous).
-
-Internally, the plugin modifies the datapoints in each series, adding an
-offset to the y value. For line series, extra data points are inserted through
-interpolation. If there's a second y value, it's also adjusted (e.g for bar
-charts or filled areas).
-
-*/
-
-(function ($) {
-    var options = {
-        series: { stack: null } // or number/string
-    };
-    
-    function init(plot) {
-        function findMatchingSeries(s, allseries) {
-            var res = null;
-            for (var i = 0; i < allseries.length; ++i) {
-                if (s == allseries[i])
-                    break;
-                
-                if (allseries[i].stack == s.stack)
-                    res = allseries[i];
-            }
-            
-            return res;
-        }
-        
-        function stackData(plot, s, datapoints) {
-            if (s.stack == null || s.stack === false)
-                return;
-
-            var other = findMatchingSeries(s, plot.getData());
-            if (!other)
-                return;
-
-            var ps = datapoints.pointsize,
-                points = datapoints.points,
-                otherps = other.datapoints.pointsize,
-                otherpoints = other.datapoints.points,
-                newpoints = [],
-                px, py, intery, qx, qy, bottom,
-                withlines = s.lines.show,
-                horizontal = s.bars.horizontal,
-                withbottom = ps > 2 && (horizontal ? datapoints.format[2].x : datapoints.format[2].y),
-                withsteps = withlines && s.lines.steps,
-                fromgap = true,
-                keyOffset = horizontal ? 1 : 0,
-                accumulateOffset = horizontal ? 0 : 1,
-                i = 0, j = 0, l, m;
-
-            while (true) {
-                if (i >= points.length)
-                    break;
-
-                l = newpoints.length;
-
-                if (points[i] == null) {
-                    // copy gaps
-                    for (m = 0; m < ps; ++m)
-                        newpoints.push(points[i + m]);
-                    i += ps;
-                }
-                else if (j >= otherpoints.length) {
-                    // for lines, we can't use the rest of the points
-                    if (!withlines) {
-                        for (m = 0; m < ps; ++m)
-                            newpoints.push(points[i + m]);
-                    }
-                    i += ps;
-                }
-                else if (otherpoints[j] == null) {
-                    // oops, got a gap
-                    for (m = 0; m < ps; ++m)
-                        newpoints.push(null);
-                    fromgap = true;
-                    j += otherps;
-                }
-                else {
-                    // cases where we actually got two points
-                    px = points[i + keyOffset];
-                    py = points[i + accumulateOffset];
-                    qx = otherpoints[j + keyOffset];
-                    qy = otherpoints[j + accumulateOffset];
-                    bottom = 0;
-
-                    if (px == qx) {
-                        for (m = 0; m < ps; ++m)
-                            newpoints.push(points[i + m]);
-
-                        newpoints[l + accumulateOffset] += qy;
-                        bottom = qy;
-                        
-                        i += ps;
-                        j += otherps;
-                    }
-                    else if (px > qx) {
-                        // we got past point below, might need to
-                        // insert interpolated extra point
-                        if (withlines && i > 0 && points[i - ps] != null) {
-                            intery = py + (points[i - ps + accumulateOffset] - py) * (qx - px) / (points[i - ps + keyOffset] - px);
-                            newpoints.push(qx);
-                            newpoints.push(intery + qy);
-                            for (m = 2; m < ps; ++m)
-                                newpoints.push(points[i + m]);
-                            bottom = qy; 
-                        }
-
-                        j += otherps;
-                    }
-                    else { // px < qx
-                        if (fromgap && withlines) {
-                            // if we come from a gap, we just skip this point
-                            i += ps;
-                            continue;
-                        }
-                            
-                        for (m = 0; m < ps; ++m)
-                            newpoints.push(points[i + m]);
-                        
-                        // we might be able to interpolate a point below,
-                        // this can give us a better y
-                        if (withlines && j > 0 && otherpoints[j - otherps] != null)
-                            bottom = qy + (otherpoints[j - otherps + accumulateOffset] - qy) * (px - qx) / (otherpoints[j - otherps + keyOffset] - qx);
-
-                        newpoints[l + accumulateOffset] += bottom;
-                        
-                        i += ps;
-                    }
-
-                    fromgap = false;
-                    
-                    if (l != newpoints.length && withbottom)
-                        newpoints[l + 2] += bottom;
-                }
-
-                // maintain the line steps invariant
-                if (withsteps && l != newpoints.length && l > 0
-                    && newpoints[l] != null
-                    && newpoints[l] != newpoints[l - ps]
-                    && newpoints[l + 1] != newpoints[l - ps + 1]) {
-                    for (m = 0; m < ps; ++m)
-                        newpoints[l + ps + m] = newpoints[l + m];
-                    newpoints[l + 1] = newpoints[l - ps + 1];
-                }
-            }
-
-            datapoints.points = newpoints;
-        }
-        
-        plot.hooks.processDatapoints.push(stackData);
-    }
-    
-    $.plot.plugins.push({
-        init: init,
-        options: options,
-        name: 'stack',
-        version: '1.2'
-    });
-})(jQuery);
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
-
-/***/ }),
-
-/***/ 667:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {!function(a){"use strict";function b(a,b,c,d,e,f,g){var j,k,l,m,n,o,p,q,h=Math.pow,i=Math.sqrt;return j=i(h(c-a,2)+h(d-b,2)),k=i(h(e-c,2)+h(f-d,2)),l=g*j/(j+k),m=g-l,n=c+l*(a-e),o=d+l*(b-f),p=c-m*(a-e),q=d-m*(b-f),[n,o,p,q]}function d(b,c,d,e,f){var g=a.color.parse(f);g.a="number"==typeof e?e:.3,g.normalize(),g=g.toString(),c.beginPath(),c.moveTo(b[0][0],b[0][1]);for(var h=b.length,i=0;h>i;i++)c[b[i][3]].apply(c,b[i][2]);c.stroke(),c.lineWidth=0,c.lineTo(b[h-1][0],d),c.lineTo(b[0][0],d),c.closePath(),e!==!1&&(c.fillStyle=g,c.fill())}function e(a,b,d,e){(void 0===b||"bezier"!==b&&"quadratic"!==b)&&(b="quadratic"),b+="CurveTo",0==c.length?c.push([d[0],d[1],e.concat(d.slice(2)),b]):"quadraticCurveTo"==b&&2==d.length?(e=e.slice(0,2).concat(d),c.push([d[0],d[1],e,b])):c.push([d[2],d[3],e.concat(d.slice(2)),b])}function f(f,g,h){if(h.splines.show===!0){var k,l,m,i=[],j=h.splines.tension||.5,n=h.datapoints.points,o=h.datapoints.pointsize,p=f.getPlotOffset(),q=n.length,r=[];if(c=[],4>q/o)return a.extend(h.lines,h.splines),void 0;for(k=0;q>k;k+=o)l=n[k],m=n[k+1],null==l||l<h.xaxis.min||l>h.xaxis.max||m<h.yaxis.min||m>h.yaxis.max||r.push(h.xaxis.p2c(l)+p.left,h.yaxis.p2c(m)+p.top);for(q=r.length,k=0;q-2>k;k+=2)i=i.concat(b.apply(this,r.slice(k,k+6).concat([j])));for(g.save(),g.strokeStyle=h.color,g.lineWidth=h.splines.lineWidth,e(g,"quadratic",r.slice(0,4),i.slice(0,2)),k=2;q-3>k;k+=2)e(g,"bezier",r.slice(k,k+4),i.slice(2*k-2,2*k+2));e(g,"quadratic",r.slice(q-2,q),[i[2*q-10],i[2*q-9],r[q-4],r[q-3]]),d(c,g,f.height()+10,h.splines.fill,h.color),g.restore()}}var c=[];a.plot.plugins.push({init:function(a){a.hooks.drawSeries.push(f)},options:{series:{splines:{show:!1,lineWidth:2,tension:.5,fill:!1}}},name:"spline",version:"0.8.2"})}(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(521)))
+module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ })
 
