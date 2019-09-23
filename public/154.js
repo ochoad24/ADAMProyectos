@@ -1,22 +1,22 @@
 webpackJsonp([154],{
 
-/***/ 2138:
+/***/ 1747:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2139);
+var content = __webpack_require__(1748);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("4d3075e4", content, false, {});
+var update = __webpack_require__(26)("21b941be", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5e606071\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./users_list.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5e606071\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./users_list.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2139:
+/***/ 1748:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,22 +35,43 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.user-list .btn:active{\n    color: #fff !important;\n}\n", ""]);
+exports.push([module.i, "\n.trendvue svg path{\nstroke-width:2px;\n}\n.card svg{\n    height: 40vh;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2140:
+/***/ 1749:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins_DataTable_DataTable_vue__ = __webpack_require__(708);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plugins_DataTable_DataTable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__plugins_DataTable_DataTable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetrend__ = __webpack_require__(1750);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuebars__ = __webpack_require__(1751);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -65,214 +86,611 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuetrend__["a" /* default */]);
+
+__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vuebars__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "users_list",
+    name: "blank",
     components: {
-        datatable: __WEBPACK_IMPORTED_MODULE_1__plugins_DataTable_DataTable_vue___default.a
+        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
-        return {
-            tableData: [],
-            columndata: [{
-                label: 'ID',
-                field: 'id',
-                numeric: true,
-                html: false
-            }, {
-                label: 'Name',
-                field: 'name',
-                numeric: false,
-                html: false
-            }, {
-                label: 'Email',
-                field: 'email',
-                numeric: false,
-                html: false
-            }, {
-                label: 'Age',
-                field: 'age',
-                numeric: true,
-                html: false
-            }, {
-                label: 'Status',
-                field: 'status',
-                numeric: false,
-                html: false
-            }, {
-                label: 'Actions',
-                field: 'action',
-                numeric: false,
-                html: true
-            }]
-        };
+        return {};
     },
-    mounted: function mounted() {
-        var _this = this;
 
-        this.tableData = [{
-            "id": 16023,
-            "name": "Kassaundra Shiffman",
-            "email": "LStruble@tempor.com",
-            "age": 22,
-            "status": "Deactivated"
-        }, {
-            "id": 16024,
-            "name": "Helena Zensen",
-            "email": "BTrautman@magna.com",
-            "age": 33,
-            "status": "Deactivated"
-        }, {
-            "id": 16025,
-            "name": "Gautam Nye",
-            "email": "SThomad@turpis.ly",
-            "age": 35,
-            "status": "Deactivated"
-        }, {
-            "id": 16026,
-            "name": "Wichaya Wagner",
-            "email": "NLindsay@odio.org",
-            "age": 55,
-            "status": "Deactivated"
-        }, {
-            "id": 16027,
-            "name": "Dawn Devereaux",
-            "email": "NStair@ipsum.net",
-            "age": 51,
-            "status": "Deactivated"
-        }, {
-            "id": 16028,
-            "name": "Marcus Wray",
-            "email": "SPointelin@amet.com",
-            "age": 23,
-            "status": "Activated"
-        }, {
-            "id": 16029,
-            "name": "Freddy Meng",
-            "email": "SEtheridge@non.ly",
-            "age": 32,
-            "status": "Deactivated"
-        }, {
-            "id": 16030,
-            "name": "Culveretta Gilberto",
-            "email": "SGlynn@tempor.com",
-            "age": 58,
-            "status": "Activated"
-        }, {
-            "id": 16031,
-            "name": "Rogelio Martin",
-            "email": "BVollrath@at.io",
-            "age": 50,
-            "status": "Activated"
-        }, {
-            "id": 16032,
-            "name": "Suwanto Boyes",
-            "email": "THeppelmann@molestie.net",
-            "age": 36,
-            "status": "Activated"
-        }, {
-            "id": 16033,
-            "name": "Felicia Kiab",
-            "email": "JDauk@tincidunt.org",
-            "age": 27,
-            "status": "Deactivated"
-        }, {
-            "id": 16034,
-            "name": "Dwayne Mawyer",
-            "email": "AAlagisan@sed.gov",
-            "age": 26,
-            "status": "Deactivated"
-        }, {
-            "id": 16035,
-            "name": "Braulio Nixon",
-            "email": "SDavid@risus.net",
-            "age": 36,
-            "status": "Deactivated"
-        }, {
-            "id": 16036,
-            "name": "Kantanzia Bottone",
-            "email": "JHesters@porttitor.net",
-            "age": 33,
-            "status": "Activated"
-        }, {
-            "id": 16037,
-            "name": "Geraldine Arnold",
-            "email": "DTabor@amet.gov",
-            "age": 45,
-            "status": "Activated"
-        }, {
-            "id": 16038,
-            "name": "Chun Pfeifer",
-            "email": "BAnglin@molestie.io",
-            "age": 44,
-            "status": "Deactivated"
-        }, {
-            "id": 16039,
-            "name": "Felix Brinkley",
-            "email": "CJalowiecki@ac.ly",
-            "age": 28,
-            "status": "Activated"
-        }, {
-            "id": 16040,
-            "name": "Kay Espinosa",
-            "email": "JStafford@sit.net",
-            "age": 22,
-            "status": "Activated"
-        }, {
-            "id": 16041,
-            "name": "Clayton Hammant",
-            "email": "SParham@rutrum.gov",
-            "age": 60,
-            "status": "Activated"
-        }, {
-            "id": 16042,
-            "name": "Kendra Schuessler",
-            "email": "JGray@porta.ly",
-            "age": 33,
-            "status": "Deactivated"
-        }];
-
-        this.tableData.forEach(function (item, index) {
-            _this.$set(item, "action", "<a class='btn btn-info' href='#/edit_user?" + index + "'>Edit</a>");
-        });
-    }
+    methods: {}
 });
 
 /***/ }),
 
-/***/ 2141:
+/***/ 1750:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+function int (value) {
+  return parseInt(value, 10)
+}
+
+/**
+ * https://en.wikipedia.org/wiki/Collinearity
+ * x=(x1+x2)/2
+ * y=(y1+y2)/2
+ */
+function checkCollinear (p0, p1, p2) {
+  return (
+    int(p0.x + p2.x) === int(2 * p1.x) && int(p0.y + p2.y) === int(2 * p1.y)
+  )
+}
+
+function getDistance (p1, p2) {
+  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2))
+}
+
+function moveTo (to, from, radius) {
+  var vector = { x: to.x - from.x, y: to.y - from.y };
+  var length = Math.sqrt(vector.x * vector.x + vector.y * vector.y);
+  var unitVector = { x: vector.x / length, y: vector.y / length };
+
+  return {
+    x: from.x + unitVector.x * radius,
+    y: from.y + unitVector.y * radius
+  }
+}
+
+/**
+ *  Calculate the coordinate
+ * @param  {number[]|object[]}  arr
+ * @param  {object}             boundary
+ * @return {object[]}
+ */
+function genPoints (arr, ref, ref$1) {
+  var minX = ref.minX;
+  var minY = ref.minY;
+  var maxX = ref.maxX;
+  var maxY = ref.maxY;
+  var max = ref$1.max;
+  var min = ref$1.min;
+
+  arr = arr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
+  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
+  var gridX = (maxX - minX) / (arr.length - 1);
+  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
+
+  return arr.map(function (value, index) {
+    return {
+      x: index * gridX + minX,
+      y:
+        maxY -
+        (value - minValue) * gridY +
+        +(index === arr.length - 1) * 0.00001 -
+        +(index === 0) * 0.00001
+    }
+  })
+}
+
+/**
+ * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
+ */
+function genPath (points, radius) {
+  var start = points.shift();
+
+  return (
+    "M" + (start.x) + " " + (start.y) +
+    points
+      .map(function (point, index) {
+        var next = points[index + 1];
+        var prev = points[index - 1] || start;
+        var isCollinear = next && checkCollinear(next, point, prev);
+
+        if (!next || isCollinear) {
+          return ("L" + (point.x) + " " + (point.y))
+        }
+
+        var threshold = Math.min(
+          getDistance(prev, point),
+          getDistance(next, point)
+        );
+        var isTooCloseForRadius = threshold / 2 < radius;
+        var radiusForPoint = isTooCloseForRadius ? threshold / 2 : radius;
+
+        var before = moveTo(prev, point, radiusForPoint);
+        var after = moveTo(next, point, radiusForPoint);
+
+        return ("L" + (before.x) + " " + (before.y) + "S" + (point.x) + " " + (point.y) + " " + (after.x) + " " + (after.y))
+      })
+      .join('')
+  )
+}
+
+var Path = {
+  props: ['smooth', 'data', 'boundary', 'radius', 'id', 'max', 'min'],
+
+  render: function render (h) {
+    var ref = this;
+    var data = ref.data;
+    var smooth = ref.smooth;
+    var boundary = ref.boundary;
+    var radius = ref.radius;
+    var id = ref.id;
+    var max = ref.max;
+    var min = ref.min;
+    var points = genPoints(data, boundary, { max: max, min: min });
+    var d = genPath(points, smooth ? radius : 0);
+
+    return h('path', {
+      attrs: { d: d, fill: 'none', stroke: ("url(#" + id + ")") }
+    })
+  }
+};
+
+var Gradient = {
+  props: ['gradient', 'id'],
+
+  render: function render (h) {
+    var ref = this;
+    var gradient = ref.gradient;
+    var id = ref.id;
+    var len = gradient.length - 1 || 1;
+    var stops = gradient
+      .slice()
+      .reverse()
+      .map(function (color, index) { return h('stop', {
+          attrs: {
+            offset: index / len,
+            'stop-color': color
+          }
+        }); }
+      );
+
+    return h('defs', [
+      h(
+        'linearGradient',
+        {
+          attrs: {
+            id: id,
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1
+          }
+        },
+        stops
+      )
+    ])
+  }
+};
+
+var Trend$1 = {
+  name: 'Trend',
+
+  props: {
+    data: {
+      type: Array,
+      required: true
+    },
+    autoDraw: Boolean,
+    autoDrawDuration: {
+      type: Number,
+      default: 2000
+    },
+    autoDrawEasing: {
+      type: String,
+      default: 'ease'
+    },
+    gradient: {
+      type: Array,
+      default: function () { return ['#000']; }
+    },
+    max: {
+      type: Number,
+      default: -Infinity
+    },
+    min: {
+      type: Number,
+      default: Infinity
+    },
+    height: Number,
+    width: Number,
+    padding: {
+      type: Number,
+      default: 8
+    },
+    radius: {
+      type: Number,
+      default: 10
+    },
+    smooth: Boolean
+  },
+
+  watch: {
+    data: {
+      immediate: true,
+      handler: function handler (val) {
+        var this$1 = this;
+
+        this.$nextTick(function () {
+          if (this$1.$isServer || !this$1.$refs.path || !this$1.autoDraw) {
+            return
+          }
+
+          var path = this$1.$refs.path.$el;
+          var length = path.getTotalLength();
+
+          path.style.transition = 'none';
+          path.style.strokeDasharray = length + ' ' + length;
+          path.style.strokeDashoffset = Math.abs(
+            length - (this$1.lastLength || 0)
+          );
+          path.getBoundingClientRect();
+          path.style.transition = "stroke-dashoffset " + (this$1.autoDrawDuration) + "ms " + (this$1.autoDrawEasing);
+          path.style.strokeDashoffset = 0;
+          this$1.lastLength = length;
+        });
+      }
+    }
+  },
+
+  render: function render (h) {
+    if (!this.data || this.data.length < 2) { return }
+    var ref = this;
+    var width = ref.width;
+    var height = ref.height;
+    var padding = ref.padding;
+    var viewWidth = width || 300;
+    var viewHeight = height || 75;
+    var boundary = {
+      minX: padding,
+      minY: padding,
+      maxX: viewWidth - padding,
+      maxY: viewHeight - padding
+    };
+    var props = this.$props;
+
+    props.boundary = boundary;
+    props.id = 'vue-trend-' + this._uid;
+    return h(
+      'svg',
+      {
+        attrs: {
+          width: width || '100%',
+          height: height || '25%',
+          viewBox: ("0 0 " + viewWidth + " " + viewHeight)
+        }
+      },
+      [
+        h(Gradient, { props: props }),
+        h(Path, {
+          props: props,
+          ref: 'path'
+        })
+      ]
+    )
+  }
+};
+
+Trend$1.install = function (Vue) {
+  Vue.component(Trend$1.name, Trend$1);
+};
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(Trend$1);
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Trend$1);
+
+
+/***/ }),
+
+/***/ 1751:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+function transitionColor(from, to, count) {
+  count = count + 1;
+  var int = parseInt(from, 16); // 100
+  var intTo = parseInt(to, 16); // 50
+  var list = []; // 5
+  var diff = int - intTo; // 50
+  var isNegative = diff < 0; // false
+  var one = diff / count; // 10
+ 
+  list.push(from);
+  for (var i = 1; i <= count; i++) {
+    list.push(Math.floor(int - (one * i)).toString(16));
+  }
+ 
+  return list
+}
+ 
+function transition(from, to, count) {
+  count = count || 3;
+  var r = from.slice(0, 2), g = from.slice(2, 4), b = from.slice(4, 6);
+  var rt = to.slice(0, 2), gt = to.slice(2, 4), bt = to.slice(4, 6);
+  var allR = transitionColor(r, rt, count);
+  var allG = transitionColor(g, gt, count);
+  var allB = transitionColor(b, bt, count);
+  var list = [];
+ 
+  allR.forEach(function(_, i) {
+    list.push('' + allR[i] + allG[i] + allB[i]);
+  });
+ 
+  return list
+}
+ 
+function generateGradientStepsCss(from, to, count) {
+  from = from.replace('#', '');
+  to = to.replace('#', '');
+  var values = transition(from, to, count);
+  var total = 100 / (count + 1);
+  var obj = [];
+  for (var i = 0; i <= count + 1; i++) {
+    obj.push({percentage: Math.floor(total * i), value: values[i]});
+  }
+  return obj.map(function(value) {
+    return '#' + value.value
+  })
+}
+
+/**
+ *  Calculate the coordinate
+ * @param  {number[]|object[]}  arr
+ * @param  {object}             boundary
+ * @return {object[]}
+ */
+function genPoints (inArr, ref, ref$1) {
+  var minX = ref.minX;
+  var minY = ref.minY;
+  var maxX = ref.maxX;
+  var maxY = ref.maxY;
+  var max = ref$1.max;
+  var min = ref$1.min;
+
+  var arr = inArr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
+  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
+  var gridX = (maxX - minX) / (arr.length - 1);
+  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
+
+  return arr.map(function (value, index) {
+    var title = typeof inArr[index] === 'number' ? inArr[index] : inArr[index].title;
+    return {
+      x: index * gridX + minX,
+      y:
+        maxY -
+        (value - minValue) * gridY +
+        +(index === arr.length - 1) * 0.00001 -
+        +(index === 0) * 0.00001,
+      v: title
+    }
+  })
+}
+
+function genBars (_this, arr, h) {
+  var ref = _this.boundary;
+  var minX = ref.minX;
+  var minY = ref.minY;
+  var maxX = ref.maxX;
+  var maxY = ref.maxY;
+  var totalWidth = (maxX) / (arr.length-1);
+  if (!_this.barWidth) {
+    _this.barWidth = totalWidth - (_this.padding || 5);
+  }
+  if (!_this.rounding) {
+    _this.rounding = 2;
+  }
+
+  var gradients = 0;
+  if (_this.gradient && _this.gradient.length > 1) {
+    gradients = generateGradientStepsCss(_this.gradient[0], _this.gradient[1], (arr.length-1));
+  }
+  var offsetX = (totalWidth - _this.barWidth) / 2;
+
+  return arr.map(function (item, index) {
+    return h('rect', {
+      attrs: {
+        id: ("bar-id-" + index),
+        fill: (gradients ? gradients[index] : (_this.gradient[0] ? _this.gradient[0] : '#000')),
+        x: item.x - offsetX,
+        y: 0,
+        width: _this.barWidth,
+        height: (maxY - item.y),
+        rx: _this.rounding,
+        ry: _this.rounding
+      }
+    }, [
+      h('animate', {
+        attrs: {
+          attributeName: 'height',
+          from: 0,
+          to: (maxY - item.y),
+          dur: ((_this.growDuration) + "s"),
+          fill: 'freeze'
+        }
+      }),
+      h('title', {}, [item.v])
+    ])
+  })
+}
+
+var Path = {
+  props: ['data', 'boundary', 'barWidth', 'id', 'gradient', 'growDuration', 'max', 'min'],
+
+  render: function render (h) {
+    var ref = this;
+    var data = ref.data;
+    var boundary = ref.boundary;
+    var max = ref.max;
+    var min = ref.min;
+    var points = genPoints(data, boundary, { max: max, min: min } );
+    var bars = genBars(this, points, h);
+
+    return h('g', {
+      attrs: {
+        transform: ("scale(1,-1) translate(0,-" + (this.boundary.maxY) + ")")
+      }
+    }, bars)
+  }
+};
+
+var Bars$1 = {
+  name: 'Bars',
+
+  props: {
+    data: {
+      type: Array,
+      required: true
+    },
+    autoDraw: Boolean,
+    barWidth: {
+      type: Number,
+      default: 8
+    },
+    growDuration: {
+      type: Number,
+      default: 0.5
+    },
+    gradient: {
+      type: Array,
+      default: function () { return ['#000']; }
+    },
+    max: {
+      type: Number,
+      default: -Infinity
+    },
+    min: {
+      type: Number,
+      default: Infinity
+    },
+    height: Number,
+    width: Number,
+    padding: {
+      type: Number,
+      default: 8
+    }
+  },
+
+  render: function render (h) {
+    if (!this.data || this.data.length < 2) { return }
+    var ref = this;
+    var width = ref.width;
+    var height = ref.height;
+    var padding = ref.padding;
+    var viewWidth = width || 300;
+    var viewHeight = height || 75;
+    var boundary = {
+      minX: padding,
+      minY: padding,
+      maxX: viewWidth - padding,
+      maxY: viewHeight - padding
+    };
+    var props = this.$props;
+
+    props.boundary = boundary;
+    props.id = 'vue-bars-' + this._uid;
+
+    return h('svg', {
+      attrs: {
+        width: width || '100%',
+        height: height || '25%',
+        viewBox: ("0 0 " + viewWidth + " " + viewHeight)
+      }
+    }, [
+      h(Path, {
+        props: props,
+        ref: 'path'
+      })
+    ])
+  }
+};
+
+Bars$1.install = function (Vue) {
+  Vue.component(Bars$1.name, Bars$1);
+};
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(Bars$1);
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Bars$1);
+
+
+/***/ }),
+
+/***/ 1752:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row user-list" }, [
+  return _c("div", { staticClass: "row" }, [
     _c(
       "div",
-      { staticClass: "col-lg-12" },
+      { staticClass: "col-sm-6" },
       [
         _c(
-          "b-card",
-          {
-            staticClass: "bg-primary-card",
-            attrs: { header: "Registered Users", "header-tag": "h4" }
-          },
+          "card",
+          { attrs: { title: "Trend chart" } },
           [
-            _c(
-              "div",
-              { staticClass: "table-responsive" },
-              [
-                _c("datatable", {
-                  attrs: {
-                    title: "",
-                    rows: _vm.tableData,
-                    columns: _vm.columndata
-                  }
-                })
-              ],
-              1
-            )
-          ]
+            _c("trend", {
+              attrs: {
+                data: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+                gradient: ["#6fa8dc", "#42b983", "#f27a09", "#ff5454"],
+                smooth: ""
+              }
+            })
+          ],
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "col-sm-6" },
+      [
+        _c(
+          "card",
+          { attrs: { title: "Vue-bar chart" } },
+          [
+            _c("bars", {
+              attrs: {
+                data: [
+                  1,
+                  2,
+                  5,
+                  9,
+                  5,
+                  10,
+                  3,
+                  5,
+                  8,
+                  12,
+                  1,
+                  8,
+                  2,
+                  9,
+                  10,
+                  2,
+                  9,
+                  4,
+                  5,
+                  6,
+                  7,
+                  3,
+                  2,
+                  3,
+                  5
+                ],
+                gradient: ["#ffbe88", "#ff93df"],
+                barWidth: 5,
+                growDuration: 1
+              }
+            })
+          ],
+          1
         )
       ],
       1
@@ -285,25 +703,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-5e606071", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-751e8c25", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 493:
+/***/ 481:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2138)
+  __webpack_require__(1747)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2140)
+var __vue_script__ = __webpack_require__(1749)
 /* template */
-var __vue_template__ = __webpack_require__(2141)
+var __vue_template__ = __webpack_require__(1752)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -320,7 +738,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/users_list.vue"
+Component.options.__file = "resources/components/pages/trend_bar.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -329,9 +747,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5e606071", Component.options)
+    hotAPI.createRecord("data-v-751e8c25", Component.options)
   } else {
-    hotAPI.reload("data-v-5e606071", Component.options)
+    hotAPI.reload("data-v-751e8c25", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -343,25 +761,25 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 708:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(709)
+  __webpack_require__(529)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(711)
+var __vue_script__ = __webpack_require__(531)
 /* template */
-var __vue_template__ = __webpack_require__(713)
+var __vue_template__ = __webpack_require__(532)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-71666e6e"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -372,7 +790,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/plugins/DataTable/DataTable.vue"
+Component.options.__file = "resources/components/pages/card/card.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -381,9 +799,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-71666e6e", Component.options)
+    hotAPI.createRecord("data-v-15e33d3a", Component.options)
   } else {
-    hotAPI.reload("data-v-71666e6e", Component.options)
+    hotAPI.reload("data-v-15e33d3a", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -395,23 +813,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 709:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(710);
+var content = __webpack_require__(530);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("616b2df0", content, false, {});
+var update = __webpack_require__(26)("d6b775a8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-71666e6e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DataTable.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-71666e6e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DataTable.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -422,7 +840,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 710:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -430,20 +848,18 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.pagination[data-v-71666e6e] {\n    margin-top: 12px;\n}\n.sortable[data-v-71666e6e] {\n    cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 711:
+/***/ 531:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fuse_js__ = __webpack_require__(712);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fuse_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_fuse_js__);
 //
 //
 //
@@ -458,1518 +874,80 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        title: {
-            default: ""
-        },
-        columns: {
-            required: true
-        },
-        rows: {
-            required: true
-        },
-        perPage: {
-            default: 10
-        },
-        sortable: {
-            default: true
-        },
-        paginate: {
-            default: true
-        },
-        exportable: {
-            default: true
-        },
-        pagelen: {
-            type: Array,
-            default: function _default() {
-                return [5, 10, 20, 50];
-            }
-        }
-    },
-
+    name: 'card',
     data: function data() {
         return {
-            currentPage: 1,
-            currentPerPage: this.perPage,
-            sortColumn: -1,
-            sortType: 'asc',
-            searchInput: ''
+            show: true,
+            isActive: false
         };
-    },
-    mounted: function mounted() {
-        this.sort(0);
     },
 
     methods: {
-        nextPage: function nextPage() {
-            if (this.processedRows.length > this.currentPerPage * this.currentPage && this.currentPerPage != -1) ++this.currentPage;
-        },
-        previousPage: function previousPage() {
-            if (this.currentPage > 1) --this.currentPage;
-        },
-        sort: function sort(index) {
-            if (!this.sortable) {
-                return;
-            }
-            if (this.sortColumn === index) {
-                this.sortType = this.sortType === 'asc' ? 'desc' : 'asc';
-            } else {
-                this.sortType = 'asc';
-                this.sortColumn = index;
-            }
-        },
-        click: function click(row, index) {
-            this.$emit("rowClick", row, index);
-        },
-        exportExcel: function exportExcel() {
-            var mimeType = 'data:application/vnd.ms-excel';
-            var html = this.renderTable().replace(/ /g, '%20');
-
-            var d = new Date();
-
-            var dummy = document.createElement('a');
-            dummy.href = mimeType + ', ' + html;
-            dummy.download = this.title.toLowerCase().replace(/ /g, '-') + '-' + d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + '-' + d.getHours() + '-' + d.getMinutes() + '-' + d.getSeconds() + '.xls';
-            dummy.click();
-        },
-        renderTable: function renderTable() {
-            var table = '<table><thead>';
-
-            table += '<tr>';
-            for (var i = 0; i < this.columns.length; i++) {
-                var column = this.columns[i];
-                table += '<th>';
-                table += column.label;
-                table += '</th>';
-            }
-            table += '</tr>';
-
-            table += '</thead><tbody>';
-
-            for (var i = 0; i < this.rows.length; i++) {
-                var row = this.rows[i];
-                table += '<tr>';
-                for (var j = 0; j < this.columns.length; j++) {
-                    var _column = this.columns[j];
-                    table += '<td>';
-                    table += this.collect(row, _column.field);
-                    table += '</td>';
-                }
-                table += '</tr>';
-            }
-
-            table += '</tbody></table>';
-
-            return table;
-        },
-        dig: function dig(obj, selector) {
-            var result = obj;
-            var splitter = selector.split('.');
-            for (var i = 0; i < splitter.length; i++) {
-                if (typeof result === 'undefined') return undefined;else result = result[splitter[i]];
-            }return result;
-        },
-        collect: function collect(obj, field) {
-            if (typeof field === 'function') return field(obj);else if (typeof field === 'string') return this.dig(obj, field);else return undefined;
+        hide: function hide() {
+            this.isActive = true;
         }
     },
-
-    computed: {
-        processedRows: function processedRows() {
-            var _this = this;
-
-            var computedRows = this.rows;
-
-            if (this.sortable !== false) {
-                computedRows = computedRows.sort(function (x, y) {
-                    if (!_this.columns[_this.sortColumn]) {
-                        return 0;
-                    }
-
-                    var cook = function cook(x) {
-                        x = _this.collect(x, _this.columns[_this.sortColumn].field);
-                        if (typeof x === 'string') {
-                            x = x.toLowerCase();
-                            if (_this.columns[_this.sortColumn].numeric) x = x.indexOf('.') >= 0 ? parseFloat(x) : parseInt(x);
-                        }
-                        return x;
-                    };
-
-                    x = cook(x);
-                    y = cook(y);
-
-                    return (x < y ? -1 : x > y ? 1 : 0) * (_this.sortType === 'desc' ? -1 : 1);
-                });
-            }
-
-            if (this.searchInput) {
-                computedRows = new __WEBPACK_IMPORTED_MODULE_0_fuse_js___default.a(computedRows, {
-                    keys: this.columns.map(function (c) {
-                        return c.field;
-                    })
-                }).search(this.searchInput);
-            }
-            return computedRows;
-        },
-
-        paginated: function paginated() {
-            var paginatedRows = this.processedRows;
-            if (this.paginate && this.currentPerPage != -1) {
-                paginatedRows = paginatedRows.slice((this.currentPage - 1) * this.currentPerPage, this.currentPage * this.currentPerPage);
-            }
-            return paginatedRows;
+    mounted: function mounted() {},
+    props: {
+        title: {
+            required: false
         }
     },
-    watch: {
-        currentPerPage: function currentPerPage() {
-            this.currentPage = 1;
-            this.paginated;
-        },
-        searchInput: function searchInput() {
-            this.currentPage = 1;
-            this.paginated;
-        }
-    }
+    destroy: function destroy() {}
 });
 
 /***/ }),
 
-/***/ 712:
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Fuse.js v3.3.0 - Lightweight fuzzy-search (http://fusejs.io)
- * 
- * Copyright (c) 2012-2017 Kirollos Risk (http://kiro.me)
- * All Rights Reserved. Apache Software License 2.0
- * 
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define("Fuse", [], factory);
-	else if(typeof exports === 'object')
-		exports["Fuse"] = factory();
-	else
-		root["Fuse"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (obj) {
-  return !Array.isArray ? Object.prototype.toString.call(obj) === '[object Array]' : Array.isArray(obj);
-};
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var bitapRegexSearch = __webpack_require__(5);
-var bitapSearch = __webpack_require__(7);
-var patternAlphabet = __webpack_require__(4);
-
-var Bitap = function () {
-  function Bitap(pattern, _ref) {
-    var _ref$location = _ref.location,
-        location = _ref$location === undefined ? 0 : _ref$location,
-        _ref$distance = _ref.distance,
-        distance = _ref$distance === undefined ? 100 : _ref$distance,
-        _ref$threshold = _ref.threshold,
-        threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
-        _ref$maxPatternLength = _ref.maxPatternLength,
-        maxPatternLength = _ref$maxPatternLength === undefined ? 32 : _ref$maxPatternLength,
-        _ref$isCaseSensitive = _ref.isCaseSensitive,
-        isCaseSensitive = _ref$isCaseSensitive === undefined ? false : _ref$isCaseSensitive,
-        _ref$tokenSeparator = _ref.tokenSeparator,
-        tokenSeparator = _ref$tokenSeparator === undefined ? / +/g : _ref$tokenSeparator,
-        _ref$findAllMatches = _ref.findAllMatches,
-        findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
-        _ref$minMatchCharLeng = _ref.minMatchCharLength,
-        minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng;
-
-    _classCallCheck(this, Bitap);
-
-    this.options = {
-      location: location,
-      distance: distance,
-      threshold: threshold,
-      maxPatternLength: maxPatternLength,
-      isCaseSensitive: isCaseSensitive,
-      tokenSeparator: tokenSeparator,
-      findAllMatches: findAllMatches,
-      minMatchCharLength: minMatchCharLength
-    };
-
-    this.pattern = this.options.isCaseSensitive ? pattern : pattern.toLowerCase();
-
-    if (this.pattern.length <= maxPatternLength) {
-      this.patternAlphabet = patternAlphabet(this.pattern);
-    }
-  }
-
-  _createClass(Bitap, [{
-    key: 'search',
-    value: function search(text) {
-      if (!this.options.isCaseSensitive) {
-        text = text.toLowerCase();
-      }
-
-      // Exact match
-      if (this.pattern === text) {
-        return {
-          isMatch: true,
-          score: 0,
-          matchedIndices: [[0, text.length - 1]]
-        };
-      }
-
-      // When pattern length is greater than the machine word length, just do a a regex comparison
-      var _options = this.options,
-          maxPatternLength = _options.maxPatternLength,
-          tokenSeparator = _options.tokenSeparator;
-
-      if (this.pattern.length > maxPatternLength) {
-        return bitapRegexSearch(text, this.pattern, tokenSeparator);
-      }
-
-      // Otherwise, use Bitap algorithm
-      var _options2 = this.options,
-          location = _options2.location,
-          distance = _options2.distance,
-          threshold = _options2.threshold,
-          findAllMatches = _options2.findAllMatches,
-          minMatchCharLength = _options2.minMatchCharLength;
-
-      return bitapSearch(text, this.pattern, this.patternAlphabet, {
-        location: location,
-        distance: distance,
-        threshold: threshold,
-        findAllMatches: findAllMatches,
-        minMatchCharLength: minMatchCharLength
-      });
-    }
-  }]);
-
-  return Bitap;
-}();
-
-// let x = new Bitap("od mn war", {})
-// let result = x.search("Old Man's War")
-// console.log(result)
-
-module.exports = Bitap;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var isArray = __webpack_require__(0);
-
-var deepValue = function deepValue(obj, path, list) {
-  if (!path) {
-    // If there's no path left, we've gotten to the object we care about.
-    list.push(obj);
-  } else {
-    var dotIndex = path.indexOf('.');
-    var firstSegment = path;
-    var remaining = null;
-
-    if (dotIndex !== -1) {
-      firstSegment = path.slice(0, dotIndex);
-      remaining = path.slice(dotIndex + 1);
-    }
-
-    var value = obj[firstSegment];
-
-    if (value !== null && value !== undefined) {
-      if (!remaining && (typeof value === 'string' || typeof value === 'number')) {
-        list.push(value.toString());
-      } else if (isArray(value)) {
-        // Search each item in the array.
-        for (var i = 0, len = value.length; i < len; i += 1) {
-          deepValue(value[i], remaining, list);
-        }
-      } else if (remaining) {
-        // An object. Recurse further.
-        deepValue(value, remaining, list);
-      }
-    }
-  }
-
-  return list;
-};
-
-module.exports = function (obj, path) {
-  return deepValue(obj, path, []);
-};
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function () {
-  var matchmask = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var minMatchCharLength = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-
-  var matchedIndices = [];
-  var start = -1;
-  var end = -1;
-  var i = 0;
-
-  for (var len = matchmask.length; i < len; i += 1) {
-    var match = matchmask[i];
-    if (match && start === -1) {
-      start = i;
-    } else if (!match && start !== -1) {
-      end = i - 1;
-      if (end - start + 1 >= minMatchCharLength) {
-        matchedIndices.push([start, end]);
-      }
-      start = -1;
-    }
-  }
-
-  // (i-1 - start) + 1 => i - start
-  if (matchmask[i - 1] && i - start >= minMatchCharLength) {
-    matchedIndices.push([start, i - 1]);
-  }
-
-  return matchedIndices;
-};
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (pattern) {
-  var mask = {};
-  var len = pattern.length;
-
-  for (var i = 0; i < len; i += 1) {
-    mask[pattern.charAt(i)] = 0;
-  }
-
-  for (var _i = 0; _i < len; _i += 1) {
-    mask[pattern.charAt(_i)] |= 1 << len - _i - 1;
-  }
-
-  return mask;
-};
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var SPECIAL_CHARS_REGEX = /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g;
-
-module.exports = function (text, pattern) {
-  var tokenSeparator = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : / +/g;
-
-  var regex = new RegExp(pattern.replace(SPECIAL_CHARS_REGEX, '\\$&').replace(tokenSeparator, '|'));
-  var matches = text.match(regex);
-  var isMatch = !!matches;
-  var matchedIndices = [];
-
-  if (isMatch) {
-    for (var i = 0, matchesLen = matches.length; i < matchesLen; i += 1) {
-      var match = matches[i];
-      matchedIndices.push([text.indexOf(match), match.length - 1]);
-    }
-  }
-
-  return {
-    // TODO: revisit this score
-    score: isMatch ? 0.5 : 1,
-    isMatch: isMatch,
-    matchedIndices: matchedIndices
-  };
-};
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (pattern, _ref) {
-  var _ref$errors = _ref.errors,
-      errors = _ref$errors === undefined ? 0 : _ref$errors,
-      _ref$currentLocation = _ref.currentLocation,
-      currentLocation = _ref$currentLocation === undefined ? 0 : _ref$currentLocation,
-      _ref$expectedLocation = _ref.expectedLocation,
-      expectedLocation = _ref$expectedLocation === undefined ? 0 : _ref$expectedLocation,
-      _ref$distance = _ref.distance,
-      distance = _ref$distance === undefined ? 100 : _ref$distance;
-
-  var accuracy = errors / pattern.length;
-  var proximity = Math.abs(expectedLocation - currentLocation);
-
-  if (!distance) {
-    // Dodge divide by zero error.
-    return proximity ? 1.0 : accuracy;
-  }
-
-  return accuracy + proximity / distance;
-};
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var bitapScore = __webpack_require__(6);
-var matchedIndices = __webpack_require__(3);
-
-module.exports = function (text, pattern, patternAlphabet, _ref) {
-  var _ref$location = _ref.location,
-      location = _ref$location === undefined ? 0 : _ref$location,
-      _ref$distance = _ref.distance,
-      distance = _ref$distance === undefined ? 100 : _ref$distance,
-      _ref$threshold = _ref.threshold,
-      threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
-      _ref$findAllMatches = _ref.findAllMatches,
-      findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
-      _ref$minMatchCharLeng = _ref.minMatchCharLength,
-      minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng;
-
-  var expectedLocation = location;
-  // Set starting location at beginning text and initialize the alphabet.
-  var textLen = text.length;
-  // Highest score beyond which we give up.
-  var currentThreshold = threshold;
-  // Is there a nearby exact match? (speedup)
-  var bestLocation = text.indexOf(pattern, expectedLocation);
-
-  var patternLen = pattern.length;
-
-  // a mask of the matches
-  var matchMask = [];
-  for (var i = 0; i < textLen; i += 1) {
-    matchMask[i] = 0;
-  }
-
-  if (bestLocation !== -1) {
-    var score = bitapScore(pattern, {
-      errors: 0,
-      currentLocation: bestLocation,
-      expectedLocation: expectedLocation,
-      distance: distance
-    });
-    currentThreshold = Math.min(score, currentThreshold);
-
-    // What about in the other direction? (speed up)
-    bestLocation = text.lastIndexOf(pattern, expectedLocation + patternLen);
-
-    if (bestLocation !== -1) {
-      var _score = bitapScore(pattern, {
-        errors: 0,
-        currentLocation: bestLocation,
-        expectedLocation: expectedLocation,
-        distance: distance
-      });
-      currentThreshold = Math.min(_score, currentThreshold);
-    }
-  }
-
-  // Reset the best location
-  bestLocation = -1;
-
-  var lastBitArr = [];
-  var finalScore = 1;
-  var binMax = patternLen + textLen;
-
-  var mask = 1 << patternLen - 1;
-
-  for (var _i = 0; _i < patternLen; _i += 1) {
-    // Scan for the best match; each iteration allows for one more error.
-    // Run a binary search to determine how far from the match location we can stray
-    // at this error level.
-    var binMin = 0;
-    var binMid = binMax;
-
-    while (binMin < binMid) {
-      var _score3 = bitapScore(pattern, {
-        errors: _i,
-        currentLocation: expectedLocation + binMid,
-        expectedLocation: expectedLocation,
-        distance: distance
-      });
-
-      if (_score3 <= currentThreshold) {
-        binMin = binMid;
-      } else {
-        binMax = binMid;
-      }
-
-      binMid = Math.floor((binMax - binMin) / 2 + binMin);
-    }
-
-    // Use the result from this iteration as the maximum for the next.
-    binMax = binMid;
-
-    var start = Math.max(1, expectedLocation - binMid + 1);
-    var finish = findAllMatches ? textLen : Math.min(expectedLocation + binMid, textLen) + patternLen;
-
-    // Initialize the bit array
-    var bitArr = Array(finish + 2);
-
-    bitArr[finish + 1] = (1 << _i) - 1;
-
-    for (var j = finish; j >= start; j -= 1) {
-      var currentLocation = j - 1;
-      var charMatch = patternAlphabet[text.charAt(currentLocation)];
-
-      if (charMatch) {
-        matchMask[currentLocation] = 1;
-      }
-
-      // First pass: exact match
-      bitArr[j] = (bitArr[j + 1] << 1 | 1) & charMatch;
-
-      // Subsequent passes: fuzzy match
-      if (_i !== 0) {
-        bitArr[j] |= (lastBitArr[j + 1] | lastBitArr[j]) << 1 | 1 | lastBitArr[j + 1];
-      }
-
-      if (bitArr[j] & mask) {
-        finalScore = bitapScore(pattern, {
-          errors: _i,
-          currentLocation: currentLocation,
-          expectedLocation: expectedLocation,
-          distance: distance
-        });
-
-        // This match will almost certainly be better than any existing match.
-        // But check anyway.
-        if (finalScore <= currentThreshold) {
-          // Indeed it is
-          currentThreshold = finalScore;
-          bestLocation = currentLocation;
-
-          // Already passed `loc`, downhill from here on in.
-          if (bestLocation <= expectedLocation) {
-            break;
-          }
-
-          // When passing `bestLocation`, don't exceed our current distance from `expectedLocation`.
-          start = Math.max(1, 2 * expectedLocation - bestLocation);
-        }
-      }
-    }
-
-    // No hope for a (better) match at greater error levels.
-    var _score2 = bitapScore(pattern, {
-      errors: _i + 1,
-      currentLocation: expectedLocation,
-      expectedLocation: expectedLocation,
-      distance: distance
-    });
-
-    // console.log('score', score, finalScore)
-
-    if (_score2 > currentThreshold) {
-      break;
-    }
-
-    lastBitArr = bitArr;
-  }
-
-  // console.log('FINAL SCORE', finalScore)
-
-  // Count exact matches (those with a score of 0) to be "almost" exact
-  return {
-    isMatch: bestLocation >= 0,
-    score: finalScore === 0 ? 0.001 : finalScore,
-    matchedIndices: matchedIndices(matchMask, minMatchCharLength)
-  };
-};
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Bitap = __webpack_require__(1);
-var deepValue = __webpack_require__(2);
-var isArray = __webpack_require__(0);
-
-var Fuse = function () {
-  function Fuse(list, _ref) {
-    var _ref$location = _ref.location,
-        location = _ref$location === undefined ? 0 : _ref$location,
-        _ref$distance = _ref.distance,
-        distance = _ref$distance === undefined ? 100 : _ref$distance,
-        _ref$threshold = _ref.threshold,
-        threshold = _ref$threshold === undefined ? 0.6 : _ref$threshold,
-        _ref$maxPatternLength = _ref.maxPatternLength,
-        maxPatternLength = _ref$maxPatternLength === undefined ? 32 : _ref$maxPatternLength,
-        _ref$caseSensitive = _ref.caseSensitive,
-        caseSensitive = _ref$caseSensitive === undefined ? false : _ref$caseSensitive,
-        _ref$tokenSeparator = _ref.tokenSeparator,
-        tokenSeparator = _ref$tokenSeparator === undefined ? / +/g : _ref$tokenSeparator,
-        _ref$findAllMatches = _ref.findAllMatches,
-        findAllMatches = _ref$findAllMatches === undefined ? false : _ref$findAllMatches,
-        _ref$minMatchCharLeng = _ref.minMatchCharLength,
-        minMatchCharLength = _ref$minMatchCharLeng === undefined ? 1 : _ref$minMatchCharLeng,
-        _ref$id = _ref.id,
-        id = _ref$id === undefined ? null : _ref$id,
-        _ref$keys = _ref.keys,
-        keys = _ref$keys === undefined ? [] : _ref$keys,
-        _ref$shouldSort = _ref.shouldSort,
-        shouldSort = _ref$shouldSort === undefined ? true : _ref$shouldSort,
-        _ref$getFn = _ref.getFn,
-        getFn = _ref$getFn === undefined ? deepValue : _ref$getFn,
-        _ref$sortFn = _ref.sortFn,
-        sortFn = _ref$sortFn === undefined ? function (a, b) {
-      return a.score - b.score;
-    } : _ref$sortFn,
-        _ref$tokenize = _ref.tokenize,
-        tokenize = _ref$tokenize === undefined ? false : _ref$tokenize,
-        _ref$matchAllTokens = _ref.matchAllTokens,
-        matchAllTokens = _ref$matchAllTokens === undefined ? false : _ref$matchAllTokens,
-        _ref$includeMatches = _ref.includeMatches,
-        includeMatches = _ref$includeMatches === undefined ? false : _ref$includeMatches,
-        _ref$includeScore = _ref.includeScore,
-        includeScore = _ref$includeScore === undefined ? false : _ref$includeScore,
-        _ref$verbose = _ref.verbose,
-        verbose = _ref$verbose === undefined ? false : _ref$verbose;
-
-    _classCallCheck(this, Fuse);
-
-    this.options = {
-      location: location,
-      distance: distance,
-      threshold: threshold,
-      maxPatternLength: maxPatternLength,
-      isCaseSensitive: caseSensitive,
-      tokenSeparator: tokenSeparator,
-      findAllMatches: findAllMatches,
-      minMatchCharLength: minMatchCharLength,
-      id: id,
-      keys: keys,
-      includeMatches: includeMatches,
-      includeScore: includeScore,
-      shouldSort: shouldSort,
-      getFn: getFn,
-      sortFn: sortFn,
-      verbose: verbose,
-      tokenize: tokenize,
-      matchAllTokens: matchAllTokens
-    };
-
-    this.setCollection(list);
-  }
-
-  _createClass(Fuse, [{
-    key: 'setCollection',
-    value: function setCollection(list) {
-      this.list = list;
-      return list;
-    }
-  }, {
-    key: 'search',
-    value: function search(pattern) {
-      this._log('---------\nSearch pattern: "' + pattern + '"');
-
-      var _prepareSearchers2 = this._prepareSearchers(pattern),
-          tokenSearchers = _prepareSearchers2.tokenSearchers,
-          fullSearcher = _prepareSearchers2.fullSearcher;
-
-      var _search2 = this._search(tokenSearchers, fullSearcher),
-          weights = _search2.weights,
-          results = _search2.results;
-
-      this._computeScore(weights, results);
-
-      if (this.options.shouldSort) {
-        this._sort(results);
-      }
-
-      return this._format(results);
-    }
-  }, {
-    key: '_prepareSearchers',
-    value: function _prepareSearchers() {
-      var pattern = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-
-      var tokenSearchers = [];
-
-      if (this.options.tokenize) {
-        // Tokenize on the separator
-        var tokens = pattern.split(this.options.tokenSeparator);
-        for (var i = 0, len = tokens.length; i < len; i += 1) {
-          tokenSearchers.push(new Bitap(tokens[i], this.options));
-        }
-      }
-
-      var fullSearcher = new Bitap(pattern, this.options);
-
-      return { tokenSearchers: tokenSearchers, fullSearcher: fullSearcher };
-    }
-  }, {
-    key: '_search',
-    value: function _search() {
-      var tokenSearchers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-      var fullSearcher = arguments[1];
-
-      var list = this.list;
-      var resultMap = {};
-      var results = [];
-
-      // Check the first item in the list, if it's a string, then we assume
-      // that every item in the list is also a string, and thus it's a flattened array.
-      if (typeof list[0] === 'string') {
-        // Iterate over every item
-        for (var i = 0, len = list.length; i < len; i += 1) {
-          this._analyze({
-            key: '',
-            value: list[i],
-            record: i,
-            index: i
-          }, {
-            resultMap: resultMap,
-            results: results,
-            tokenSearchers: tokenSearchers,
-            fullSearcher: fullSearcher
-          });
-        }
-
-        return { weights: null, results: results };
-      }
-
-      // Otherwise, the first item is an Object (hopefully), and thus the searching
-      // is done on the values of the keys of each item.
-      var weights = {};
-      for (var _i = 0, _len = list.length; _i < _len; _i += 1) {
-        var item = list[_i];
-        // Iterate over every key
-        for (var j = 0, keysLen = this.options.keys.length; j < keysLen; j += 1) {
-          var key = this.options.keys[j];
-          if (typeof key !== 'string') {
-            weights[key.name] = {
-              weight: 1 - key.weight || 1
-            };
-            if (key.weight <= 0 || key.weight > 1) {
-              throw new Error('Key weight has to be > 0 and <= 1');
-            }
-            key = key.name;
-          } else {
-            weights[key] = {
-              weight: 1
-            };
-          }
-
-          this._analyze({
-            key: key,
-            value: this.options.getFn(item, key),
-            record: item,
-            index: _i
-          }, {
-            resultMap: resultMap,
-            results: results,
-            tokenSearchers: tokenSearchers,
-            fullSearcher: fullSearcher
-          });
-        }
-      }
-
-      return { weights: weights, results: results };
-    }
-  }, {
-    key: '_analyze',
-    value: function _analyze(_ref2, _ref3) {
-      var key = _ref2.key,
-          _ref2$arrayIndex = _ref2.arrayIndex,
-          arrayIndex = _ref2$arrayIndex === undefined ? -1 : _ref2$arrayIndex,
-          value = _ref2.value,
-          record = _ref2.record,
-          index = _ref2.index;
-      var _ref3$tokenSearchers = _ref3.tokenSearchers,
-          tokenSearchers = _ref3$tokenSearchers === undefined ? [] : _ref3$tokenSearchers,
-          _ref3$fullSearcher = _ref3.fullSearcher,
-          fullSearcher = _ref3$fullSearcher === undefined ? [] : _ref3$fullSearcher,
-          _ref3$resultMap = _ref3.resultMap,
-          resultMap = _ref3$resultMap === undefined ? {} : _ref3$resultMap,
-          _ref3$results = _ref3.results,
-          results = _ref3$results === undefined ? [] : _ref3$results;
-
-      // Check if the texvaluet can be searched
-      if (value === undefined || value === null) {
-        return;
-      }
-
-      var exists = false;
-      var averageScore = -1;
-      var numTextMatches = 0;
-
-      if (typeof value === 'string') {
-        this._log('\nKey: ' + (key === '' ? '-' : key));
-
-        var mainSearchResult = fullSearcher.search(value);
-        this._log('Full text: "' + value + '", score: ' + mainSearchResult.score);
-
-        if (this.options.tokenize) {
-          var words = value.split(this.options.tokenSeparator);
-          var scores = [];
-
-          for (var i = 0; i < tokenSearchers.length; i += 1) {
-            var tokenSearcher = tokenSearchers[i];
-
-            this._log('\nPattern: "' + tokenSearcher.pattern + '"');
-
-            // let tokenScores = []
-            var hasMatchInText = false;
-
-            for (var j = 0; j < words.length; j += 1) {
-              var word = words[j];
-              var tokenSearchResult = tokenSearcher.search(word);
-              var obj = {};
-              if (tokenSearchResult.isMatch) {
-                obj[word] = tokenSearchResult.score;
-                exists = true;
-                hasMatchInText = true;
-                scores.push(tokenSearchResult.score);
-              } else {
-                obj[word] = 1;
-                if (!this.options.matchAllTokens) {
-                  scores.push(1);
-                }
-              }
-              this._log('Token: "' + word + '", score: ' + obj[word]);
-              // tokenScores.push(obj)
-            }
-
-            if (hasMatchInText) {
-              numTextMatches += 1;
-            }
-          }
-
-          averageScore = scores[0];
-          var scoresLen = scores.length;
-          for (var _i2 = 1; _i2 < scoresLen; _i2 += 1) {
-            averageScore += scores[_i2];
-          }
-          averageScore = averageScore / scoresLen;
-
-          this._log('Token score average:', averageScore);
-        }
-
-        var finalScore = mainSearchResult.score;
-        if (averageScore > -1) {
-          finalScore = (finalScore + averageScore) / 2;
-        }
-
-        this._log('Score average:', finalScore);
-
-        var checkTextMatches = this.options.tokenize && this.options.matchAllTokens ? numTextMatches >= tokenSearchers.length : true;
-
-        this._log('\nCheck Matches: ' + checkTextMatches);
-
-        // If a match is found, add the item to <rawResults>, including its score
-        if ((exists || mainSearchResult.isMatch) && checkTextMatches) {
-          // Check if the item already exists in our results
-          var existingResult = resultMap[index];
-          if (existingResult) {
-            // Use the lowest score
-            // existingResult.score, bitapResult.score
-            existingResult.output.push({
-              key: key,
-              arrayIndex: arrayIndex,
-              value: value,
-              score: finalScore,
-              matchedIndices: mainSearchResult.matchedIndices
-            });
-          } else {
-            // Add it to the raw result list
-            resultMap[index] = {
-              item: record,
-              output: [{
-                key: key,
-                arrayIndex: arrayIndex,
-                value: value,
-                score: finalScore,
-                matchedIndices: mainSearchResult.matchedIndices
-              }]
-            };
-
-            results.push(resultMap[index]);
-          }
-        }
-      } else if (isArray(value)) {
-        for (var _i3 = 0, len = value.length; _i3 < len; _i3 += 1) {
-          this._analyze({
-            key: key,
-            arrayIndex: _i3,
-            value: value[_i3],
-            record: record,
-            index: index
-          }, {
-            resultMap: resultMap,
-            results: results,
-            tokenSearchers: tokenSearchers,
-            fullSearcher: fullSearcher
-          });
-        }
-      }
-    }
-  }, {
-    key: '_computeScore',
-    value: function _computeScore(weights, results) {
-      this._log('\n\nComputing score:\n');
-
-      for (var i = 0, len = results.length; i < len; i += 1) {
-        var output = results[i].output;
-        var scoreLen = output.length;
-
-        var currScore = 1;
-        var bestScore = 1;
-
-        for (var j = 0; j < scoreLen; j += 1) {
-          var weight = weights ? weights[output[j].key].weight : 1;
-          var score = weight === 1 ? output[j].score : output[j].score || 0.001;
-          var nScore = score * weight;
-
-          if (weight !== 1) {
-            bestScore = Math.min(bestScore, nScore);
-          } else {
-            output[j].nScore = nScore;
-            currScore *= nScore;
-          }
-        }
-
-        results[i].score = bestScore === 1 ? currScore : bestScore;
-
-        this._log(results[i]);
-      }
-    }
-  }, {
-    key: '_sort',
-    value: function _sort(results) {
-      this._log('\n\nSorting....');
-      results.sort(this.options.sortFn);
-    }
-  }, {
-    key: '_format',
-    value: function _format(results) {
-      var finalOutput = [];
-
-      if (this.options.verbose) {
-        this._log('\n\nOutput:\n\n', JSON.stringify(results));
-      }
-
-      var transformers = [];
-
-      if (this.options.includeMatches) {
-        transformers.push(function (result, data) {
-          var output = result.output;
-          data.matches = [];
-
-          for (var i = 0, len = output.length; i < len; i += 1) {
-            var item = output[i];
-
-            if (item.matchedIndices.length === 0) {
-              continue;
-            }
-
-            var obj = {
-              indices: item.matchedIndices,
-              value: item.value
-            };
-            if (item.key) {
-              obj.key = item.key;
-            }
-            if (item.hasOwnProperty('arrayIndex') && item.arrayIndex > -1) {
-              obj.arrayIndex = item.arrayIndex;
-            }
-            data.matches.push(obj);
-          }
-        });
-      }
-
-      if (this.options.includeScore) {
-        transformers.push(function (result, data) {
-          data.score = result.score;
-        });
-      }
-
-      for (var i = 0, len = results.length; i < len; i += 1) {
-        var result = results[i];
-
-        if (this.options.id) {
-          result.item = this.options.getFn(result.item, this.options.id)[0];
-        }
-
-        if (!transformers.length) {
-          finalOutput.push(result.item);
-          continue;
-        }
-
-        var data = {
-          item: result.item
-        };
-
-        for (var j = 0, _len2 = transformers.length; j < _len2; j += 1) {
-          transformers[j](result, data);
-        }
-
-        finalOutput.push(data);
-      }
-
-      return finalOutput;
-    }
-  }, {
-    key: '_log',
-    value: function _log() {
-      if (this.options.verbose) {
-        var _console;
-
-        (_console = console).log.apply(_console, arguments);
-      }
-    }
-  }]);
-
-  return Fuse;
-}();
-
-module.exports = Fuse;
-
-/***/ })
-/******/ ]);
-});
-//# sourceMappingURL=fuse.js.map
-
-/***/ }),
-
-/***/ 713:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card p-3" }, [
-    _c("div", { staticClass: "table-header" }, [
-      _c("h4", { staticClass: "table-title text-center mt-3" }, [
-        _vm._v(_vm._s(_vm.title))
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "text-left" }, [
-      _c("div", { attrs: { id: "search-input-container" } }, [
-        _c("label", [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.searchInput,
-                expression: "searchInput"
-              }
-            ],
-            staticClass: "form-control mb-2",
-            attrs: {
-              type: "search",
-              id: "search-input",
-              placeholder: "Search data"
-            },
-            domProps: { value: _vm.searchInput },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.searchInput = $event.target.value
-              }
+  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", {
+        staticClass: "card-title",
+        domProps: { innerHTML: _vm._s(_vm.title) }
+      }),
+      _vm._v(" "),
+      _c("span", { staticClass: "float-right" }, [
+        _c("i", {
+          staticClass: "fa fa-fw ti-angle-up",
+          class: { rotate: _vm.show },
+          on: {
+            click: function($event) {
+              _vm.show = !_vm.show
             }
-          })
-        ]),
+          }
+        }),
         _vm._v(" "),
-        _c("div", { staticClass: "actions float-right pr-4 mb-3" }, [
-          this.exportable
-            ? _c(
-                "a",
-                {
-                  staticClass: "btn btn-info",
-                  attrs: {
-                    href: "javascript:undefined",
-                    title: "export excel"
-                  },
-                  on: { click: _vm.exportExcel }
-                },
-                [_c("i", { staticClass: "fa fa-download" })]
-              )
-            : _vm._e()
-        ])
+        _c("i", {
+          staticClass: "fa fa-fw ti-close removecard",
+          on: { click: _vm.hide }
+        })
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "table-responsive" }, [
-      _c("table", { ref: "table", staticClass: "table" }, [
-        _c("thead", [
-          _c(
-            "tr",
-            [
-              _vm._l(_vm.columns, function(column, index) {
-                return _c(
-                  "th",
-                  {
-                    class:
-                      (_vm.sortable ? "sortable" : "") +
-                      (_vm.sortColumn === index
-                        ? _vm.sortType === "desc"
-                          ? " sorting-desc"
-                          : " sorting-asc"
-                        : ""),
-                    style: { width: column.width ? column.width : "auto" },
-                    on: {
-                      click: function($event) {
-                        return _vm.sort(index)
-                      }
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        " + _vm._s(column.label) + " "
-                    ),
-                    _c("i", {
-                      staticClass: "fa float-right",
-                      class:
-                        _vm.sortColumn === index
-                          ? _vm.sortType === "desc"
-                            ? " fa fa-angle-down"
-                            : " fa fa-angle-up"
-                          : ""
-                    })
-                  ]
-                )
-              }),
-              _vm._v(" "),
-              _vm._t("thead-tr")
-            ],
-            2
-          )
-        ]),
-        _vm._v(" "),
-        _c(
-          "tbody",
-          _vm._l(_vm.paginated, function(row, index) {
-            return _c(
-              "tr",
-              {
-                on: {
-                  click: function($event) {
-                    return _vm.click(row, index)
-                  }
-                }
-              },
-              [
-                _vm._l(_vm.columns, function(column) {
-                  return [
-                    !column.html
-                      ? _c("td", { class: column.numeric ? "numeric" : "" }, [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(_vm.collect(row, column.field)) +
-                              "\n                        "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    column.html
-                      ? _c("td", {
-                          class: column.numeric ? "numeric" : "",
-                          domProps: {
-                            innerHTML: _vm._s(_vm.collect(row, column.field))
-                          }
-                        })
-                      : _vm._e()
-                  ]
-                }),
-                _vm._v(" "),
-                _vm._t("tbody-tr", null, { row: row })
-              ],
-              2
-            )
-          }),
-          0
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _vm.paginate
-      ? _c("div", { staticClass: "table-footer" }, [
-          _c("div", { staticClass: "datatable-length float-left pl-3" }, [
-            _c("span", [_vm._v("Rows per page:")]),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.currentPerPage,
-                    expression: "currentPerPage"
-                  }
-                ],
-                staticClass: "custom-select",
-                on: {
-                  change: function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.currentPerPage = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  }
-                }
-              },
-              [
-                _vm._l(_vm.pagelen, function(len) {
-                  return _c("option", { domProps: { value: len } }, [
-                    _vm._v(_vm._s(len))
-                  ])
-                }),
-                _vm._v(" "),
-                _c("option", { attrs: { value: "-1" } }, [_vm._v("All")])
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "datatable-info  pb-2 mt-3" }, [
-              _c("span", [_vm._v("Showing ")]),
-              _vm._v(
-                " " +
-                  _vm._s(
-                    (_vm.currentPage - 1) * _vm.currentPerPage
-                      ? (_vm.currentPage - 1) * _vm.currentPerPage
-                      : 1
-                  ) +
-                  " -" +
-                  _vm._s(
-                    _vm.currentPerPage == -1
-                      ? _vm.processedRows.length
-                      : Math.min(
-                          _vm.processedRows.length,
-                          _vm.currentPerPage * _vm.currentPage
-                        )
-                  ) +
-                  " of " +
-                  _vm._s(_vm.processedRows.length) +
-                  " "
-              ),
-              _c("span", [_vm._v("records")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "float-right" }, [
-            _c("ul", { staticClass: "pagination" }, [
-              _c("li", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn link",
-                    attrs: { href: "javascript:undefined", tabindex: "0" },
-                    on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.previousPage($event)
-                      }
-                    }
-                  },
-                  [_c("i", { staticClass: "fa fa-angle-left" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn link",
-                    attrs: { href: "javascript:undefined", tabindex: "0" },
-                    on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.nextPage($event)
-                      }
-                    }
-                  },
-                  [_c("i", { staticClass: "fa fa-angle-right" })]
-                )
-              ])
-            ])
-          ])
-        ])
-      : _vm._e()
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.show,
+            expression: "show"
+          }
+        ],
+        staticClass: "card-body"
+      },
+      [_vm._t("default")],
+      2
+    )
   ])
 }
 var staticRenderFns = []
@@ -1978,7 +956,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-71666e6e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
 

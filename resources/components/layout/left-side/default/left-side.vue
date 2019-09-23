@@ -37,6 +37,9 @@
                         <vmenu-item link="/Gantt" icon="fa fa-fw fa-tasks">
                             Gantt
                         </vmenu-item>
+                        <vmenu-item link="/GanttProyecto" icon="fa fa-fw fa-tasks">
+                            Progreso de proyectos
+                        </vmenu-item>
                         <vmenu-item link="/Tarea" icon="fa fa-fw fa-tasks">
                             Tareas
                         </vmenu-item>

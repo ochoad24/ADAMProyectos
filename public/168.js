@@ -1,22 +1,22 @@
 webpackJsonp([168],{
 
-/***/ 1310:
+/***/ 1263:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1311);
+var content = __webpack_require__(1264);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("1d8a2690", content, false, {});
+var update = __webpack_require__(26)("5f846a79", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-81902008\",\"scoped\":false,\"hasInlineConfig\":true}!./form_layouts.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-81902008\",\"scoped\":false,\"hasInlineConfig\":true}!./form_layouts.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tasks.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tasks.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,50 @@ if(false) {
 
 /***/ }),
 
-/***/ 1311:
+/***/ 1264:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+exports.i(__webpack_require__(693), "");
+exports.i(__webpack_require__(694), "");
+
+// module
+exports.push([module.i, "\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1265:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1266);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("60babd58", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./tasks.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./tasks.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1266:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,20 +78,22 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.input-group-sm > .input-group-addon {\n    padding : 3px 10px;\n}\n.input-group-lg > .input-group-addon {\n    padding : 9px 16px;\n}\n.has-success .input-group-addon,\n.has-error .input-group-addon {\n    color : #fff;\n}\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    z-index : 0 !important;\n}\n.form-bordered .form-group > div {\n    padding     : 15px;\n    border-left : 1px solid #efefef;\n}\n.form-bordered .form-group {\n    margin        : 0;\n    border-bottom : 1px solid #efefef;\n}\n.form-bordered .control-label {\n    padding-top   : 17px;\n    margin-bottom : 0;\n    text-align    : right;\n}\n.form_layout form{\n    text-align: left;\n}\n.form-bordered-row .form-group {\n    margin        : 0;\n    border-bottom : 1px solid #efefef;\n}\n.form-bordered-row .control-label {\n    padding-top   : 17px;\n    margin-bottom : 0;\n    text-align    : right;\n}\n.form-bordered-row .form-group > div {\n    padding : 15px;\n}\n.right_aligned button {\n    margin-left : 7px;\n}\n.has-success .input-group-addon,\n.has-error .input-group-addon {\n    color : #555;\n}\n.fisrt_dropdwn{\n    /*z-index: 9999 !important;*/\n}\n.proc {\n    position : relative;\n    top      : -25px;\n    left     : 95%;\n}\n@media only screen and (max-width : 768px) {\n.form-bordered .form-group > div {\n        border : none;\n}\n}\n@media only screen and (max-width : 425px) {\n.proc {\n        position : relative;\n        top      : -25px;\n        left     : 91%;\n}\n}\n#tab3 .form-horizontal .radio, #tab3 .form-horizontal .checkbox,\n#tab3 .form-horizontal .radio-inline,#tab3 .form-horizontal .checkbox-inline {\n    padding-top: 0;\n    margin-bottom: 4px;\n}\n.m-l-10 {\n    margin-left :10px;\n}\n.panel-heading.tab-list {\n    padding: 2px 0 0 10px;\n}\n.tab-list .nav-tabs {\n    border-bottom: 0;\n}\n@media (min-width: 768px){\n.form-inline .form-group {\n        margin-bottom: 13px;\n}\n}\n.nav-link.active{\n    border-top: 3px solid #6699CC !important;\n}\n.remember .custom-control-description{\n    margin-left:20px;\n}\n.input-group-addon .custom-checkbox,.input-group-addon .custom-radio {\n    margin: 0;\n}\n@media(min-width: 320px) and (max-width:425px) {\n.form-horizontal select {\n        margin-bottom: 10px;\n}\n.form-bordered .control-label{\n        text-align: left;\n}\n.d-inline .input-group{\n        margin-bottom: 10px;\n}\n.tab-pane select{\n        margin-bottom: 10px;\n}\n}\n.striped-col{\n    background-color: #f9f9f9;\n}\n#inputError1:focus,#inputError2:focus{\n    box-shadow: 0px 0px 3px 0.1px #ff6666;\n}\n.form-control.is-valid{\n    border-color:#66cc99 !important;\n}\n.input-group-btn .b-dropdown .dropdown-toggle:active,.input-group-btn .btn-group.show .dropdown-toggle{\n    color: #fff !important;\n}\n.form-body{\n    clear:both;\n}\n.border-left-none{\n    border-left:none !important;\n}\n.custom-control.custom-radio,.custom-control.custom-checkbox{\n        padding-left: 1.1rem;\n}\n#example-file-input1,#example-file-multiple-input1,#example-file-input2,#example-file-multiple-input2,#example-file-input3,#example-file-multiple-input3{\n    width: 100%;\n}\n.fisrt_dropdwn .btn-info:not(:disabled):not(.disabled):active, .fisrt_dropdwn .btn-warning:not(:disabled):not(.disabled):active{\n    color: #fff;\n}", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* to do list */\n.todoside-menu a:hover{\n    background-color: #f5f5f5;\n}\n.todoside-menu a{\n    font-size: 15px;\n    color: #333;\n}\n.faExclamationCircle::before{\n    content: \"imp\";\n    font-size: 14px;\n    top:-8px;\n    position: relative;\n}\n.tasksearch,.tasks-list{\n    box-shadow:0px 0px 1px 1px #cfcfcf;\n}\n.todo .box-shadow{\n    box-shadow: 0px 0px 1px 1px #cfcfcf;\n}\n.tasks-table-list{\n    max-height: 80vh;\n    margin-bottom: 10px;\n}\n.todoside-menu .side-content .active{\n    color: #66cc99;\n    font-weight: 600;\n}\n.table td .custom-control.custom-checkbox{\n    margin-top: 3px;\n}\n.custom-control-inline{\n    margin-right: 0;\n}\n.task-type{\n    border-bottom: 1px solid #eee;\n}\n.textDanger{\n    /*color: #ff6666;*/\n    font-weight: 600;\n}\n.textDanger::before{\n    content: '.';\n    font-size: 42px;\n    line-height: 5px;\n    font-weight: 900;\n    top: -3px;\n    left: -5px;\n    position: relative;\n    color: #ff6666;\n}\n.tasks-my-scrollbar{\n    width: 100%;\n    max-height:450px;\n}\n.tasks-scroll-me{\n    background:#fff;\n    min-width: 992px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1312:
+/***/ 1267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(526);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__);
 //
 //
 //
@@ -148,11708 +193,782 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: {
-        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
-    },
+    name: 'blank',
     data: function data() {
         return {
-            example_radio: [{ text: 'HTML', value: 'HTML' }, { text: 'CSS', value: 'CSS' }, { text: 'JavaScript', value: 'JS' }],
-            example_radio_seperated: [{ text: 'HTML', value: 'HTML' }, { text: 'CSS', value: 'CSS' }, { text: 'JavaScript', value: 'JS' }],
-            example_radio_bordered: [{ text: 'HTML', value: 'HTML' }, { text: 'CSS', value: 'CSS' }, { text: 'JavaScript', value: 'JS' }],
-            example_check: [{ text: 'HTML', value: 'HTML' }, { text: 'CSS', value: 'CSS' }, { text: 'JavaScript', value: 'JS' }],
-            example_check_seperated: [{ text: 'HTML', value: 'HTML' }, { text: 'CSS', value: 'CSS' }, { text: 'JavaScript', value: 'JS' }],
-            example_check_bordered: [{ text: 'HTML', value: 'HTML' }, { text: 'CSS', value: 'CSS' }, { text: 'JavaScript', value: 'JS' }]
+            modalTask: false,
+            newtaskname: '',
+            newtaskdesc: '',
+            newtaskdeadline: '',
+            newimportant: '',
+            newstatus: '',
+            tasks: [{
+                tasktitle: 'Task-1',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: true,
+                status: 'pending'
+            }, {
+                tasktitle: 'Task-2',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: true,
+                status: 'pending'
+            }, {
+                tasktitle: 'Task-3',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: false,
+                status: 'completed'
+            }, {
+                tasktitle: 'Task-4',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: 'true',
+                status: 'completed'
+            }, {
+                tasktitle: 'Task-5',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: 'true',
+                status: 'completed'
+            }, {
+                tasktitle: 'Task-6',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: 'true',
+                status: 'pending'
+            }, {
+                tasktitle: 'Task-7',
+                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
+                taskdeadline: '14/04/2018',
+                important: 'true',
+                status: 'pending'
+            }],
+            edittitle: '',
+            editdescription: '',
+            editdeadline: '',
+            important: '',
+            editnewstatus: '',
+            taskid: '',
+            search: '',
+            options: {
+                height: '1000px'
+            }
         };
     },
 
+    components: {
+        VueScrollbar: __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default.a
+    },
+    mounted: function mounted() {},
+    methods: {
+        addTask: function addTask() {
+            this.tasks.push({
+                tasktitle: this.newtaskname,
+                taskdescription: this.newtaskdesc,
+                taskdeadline: this.newtaskdeadline,
+                important: this.newimportant,
+                status: 'pending'
+            }), this.newtaskname = '', this.newtaskdesc = '', this.newtaskdeadline = '', this.newimportant = false, this.newstatus = '', this.modalTask = false;
+        },
 
-    name: "form_layouts",
-    destroyed: function destroyed() {}
+        updateModal: function updateModal(taskid) {
+            this.tasks[taskid].tasktitle = this.edittitle;
+            this.tasks[taskid].taskdescription = this.editdescription;
+            this.tasks[taskid].taskdeadline = this.editdeadline;
+            this.tasks[taskid].status = this.newstatus;
+            //                console.log(this.editnewstatus);
+            this.$refs.editmodal.hide();
+            //                console.log(this.tasks[index].tasktitle);
+            this.modalTask = false;
+        },
+        editModal: function editModal(index) {
+            this.edittitle = this.tasks[index].tasktitle;
+            this.editdescription = this.tasks[index].taskdescription;
+            this.editdeadline = this.tasks[index].taskdeadline;
+            this.editnewstatus = this.tasks[index].status;
+            this.taskid = index;
+            this.$refs.editmodal.show();
+        },
+        deleteModal: function deleteModal(index) {
+            this.tasks.splice(index, 1);
+        }
+    },
+    computed: {
+        allTasks: function allTasks() {
+            var self = this;
+            return this.tasks.filter(function (newtask) {
+                return newtask.tasktitle.toLowerCase().indexOf(self.search.toLowerCase()) >= 0;
+            });
+            //return this.customers;
+        }
+    }
 });
 
 /***/ }),
 
-/***/ 1313:
+/***/ 1268:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row form_layout" }, [
-      _c(
-        "div",
-        { staticClass: "col-lg-12" },
-        [
-          _c(
-            "b-card",
-            { attrs: { "no-body": "" } },
-            [
-              _c(
-                "b-tabs",
-                { ref: "tabs", attrs: { card: "" } },
-                [
-                  _c("b-tab", { attrs: { title: "Form Action", active: "" } }, [
-                    _c("div", { staticClass: "row" }, [
+  return _c(
+    "div",
+    [
+      _c("div", { staticClass: "todo mt-3" }, [
+        _c("div", { staticClass: "todoside-menu" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12 col-md-5 col-lg-3" }, [
+              _c("div", { staticClass: "side-content " }, [
+                _c(
+                  "div",
+                  { staticClass: "box-shadow" },
+                  [
+                    _c("h1", { staticClass: "p-3 mb-0" }, [_vm._v("Todo's")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "p-3" }, [
                       _c(
-                        "div",
-                        { staticClass: "col-lg-6" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Form Actions On Top"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-horizontal",
-                                  attrs: { action: "#" }
-                                },
-                                [
-                                  _c("div", [
-                                    _c("div", { staticClass: "row" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-offset-3 col-sm-9 ml-auto"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn  mb-3 btn-primary",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Submit\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn  mb-3 btn-danger",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Cancel\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-secondary  mb-3 bttn_reset butn buttn",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                        Reset\n                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-body" }, [
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group m-t-10 row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputUsername1" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Username\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white",
-                                                        attrs: {
-                                                          id: "basic-addon1"
-                                                        }
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-user"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Username",
-                                                    id: "inputUsername1"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputEmail" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Email\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa ti-email"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder:
-                                                      "Email Address",
-                                                    id: "inputEmail"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputpass" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Password\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-key"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Password",
-                                                    id: "inputpass"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputnumber1" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Phone Number\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-mobile"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Phone Number",
-                                                    id: "inputnumber1"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputAddress" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Address\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-pencil"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Address",
-                                                    id: "inputAddress"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputContent1" }
-                                              },
-                                              [_vm._v("Message")]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c("textarea", {
-                                              staticClass:
-                                                "form-control resize_vertical",
-                                              attrs: {
-                                                id: "inputContent1",
-                                                rows: "3",
-                                                name: "inputContent1"
-                                              }
-                                            })
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-6" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Form Actions On Bottom"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-horizontal",
-                                  attrs: { action: "#" }
-                                },
-                                [
-                                  _c("div", { staticClass: "form-body" }, [
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputUsername2" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Username\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-user"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Username",
-                                                    id: "inputUsername2"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputEmail2" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Email\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa ti-email"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder:
-                                                      "Email Address",
-                                                    id: "inputEmail2"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "keypassword" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Password\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-key"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "password",
-                                                    placeholder: "Password",
-                                                    id: "keypassword"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputnumber2" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Phone Number\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-mobile"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Phone Number",
-                                                    id: "inputnumber2"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputAddress2" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Address\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c(
-                                              "div",
-                                              { staticClass: "input-group " },
-                                              [
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-prepend"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "span",
-                                                      {
-                                                        staticClass:
-                                                          "input-group-text bg-white"
-                                                      },
-                                                      [
-                                                        _c("i", {
-                                                          staticClass:
-                                                            "fa fa-fw ti-pencil"
-                                                        })
-                                                      ]
-                                                    )
-                                                  ]
-                                                ),
-                                                _vm._v(" "),
-                                                _c("input", {
-                                                  staticClass: "form-control",
-                                                  attrs: {
-                                                    type: "text",
-                                                    placeholder: "Address",
-                                                    id: "inputAddress2"
-                                                  }
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 col-lg-4 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputContent2" }
-                                              },
-                                              [_vm._v("Message")]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 col-lg-8" },
-                                          [
-                                            _c("textarea", {
-                                              staticClass:
-                                                "form-control resize_vertical",
-                                              attrs: {
-                                                id: "inputContent2",
-                                                rows: "3"
-                                              }
-                                            })
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-actions" }, [
-                                    _c("div", { staticClass: "row" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-offset-3  col-sm-9 ml-auto"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-primary  mb-3",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Submit\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-danger  mb-3",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Cancel\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-secondary bttn_reset butn buttn  mb-3",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                        Reset\n                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-12" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Form Actions On Top & Bottom"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-horizontal",
-                                  attrs: { action: "#" }
-                                },
-                                [
-                                  _c("div", [
-                                    _c("div", { staticClass: "row" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "col-sm-12 text-center"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-primary  mb-3",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Submit\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-danger  mb-3",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Cancel\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-secondary bttn_reset butn  mb-3",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                        Reset\n                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-body" }, [
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group m-t-10 row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputUsername3" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Username\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-6" }, [
-                                          _c(
-                                            "div",
-                                            { staticClass: "input-group " },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-prepend"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "input-group-text bg-white"
-                                                    },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-fw ti-user"
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "inputUsername3",
-                                                  placeholder: "Username"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputEmail3" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Email\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-6" }, [
-                                          _c(
-                                            "div",
-                                            { staticClass: "input-group " },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-prepend"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "input-group-text bg-white"
-                                                    },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa ti-email"
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "inputEmail3",
-                                                  placeholder: "Email Address"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "fapassword" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Password\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-6" }, [
-                                          _c(
-                                            "div",
-                                            { staticClass: "input-group " },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-prepend"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "input-group-text bg-white"
-                                                    },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-fw ti-key"
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "password",
-                                                  placeholder: "Password",
-                                                  id: "fapassword"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputnumber3" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Phone Number\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-6" }, [
-                                          _c(
-                                            "div",
-                                            { staticClass: "input-group " },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-prepend"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "input-group-text bg-white"
-                                                    },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-fw ti-mobile"
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "inputnumber3",
-                                                  placeholder: "Phone Number"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputAddress3" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Address\n                                                    "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-6" }, [
-                                          _c(
-                                            "div",
-                                            { staticClass: "input-group " },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-prepend"
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "input-group-text bg-white"
-                                                    },
-                                                    [
-                                                      _c("i", {
-                                                        staticClass:
-                                                          "fa fa-fw ti-pencil"
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "inputAddress3",
-                                                  placeholder: "Address"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group row" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputContent3" }
-                                              },
-                                              [_vm._v("Message")]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-6" }, [
-                                          _c("textarea", {
-                                            staticClass:
-                                              "form-control resize_vertical",
-                                            attrs: {
-                                              id: "inputContent3",
-                                              rows: "3"
-                                            }
-                                          })
-                                        ])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-actions" }, [
-                                    _c("div", { staticClass: "row" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "col-sm-12 text-center"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-primary  mb-3",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Submit\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-danger  mb-3",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Cancel\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(
-                                            "\n                                                     \n                                                    "
-                                          ),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-secondary bttn_reset butn  mb-3",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                        Reset\n                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-6" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  " <i class='fa fa-fw ti-pencil'></i> Left Aligned"
-                              }
-                            },
-                            [
-                              _c("form", { attrs: { action: "#" } }, [
-                                _c("div", [
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn btn-primary  mb-3",
-                                      attrs: { type: "button" }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "Submit\n                                            "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(
-                                    "\n                                             \n                                            "
-                                  ),
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn btn-danger  mb-3",
-                                      attrs: { type: "button" }
-                                    },
-                                    [_vm._v("Cancel")]
-                                  ),
-                                  _vm._v(
-                                    "\n                                             \n                                            "
-                                  ),
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass:
-                                        "btn btn-secondary bttn_reset butn  mb-3",
-                                      attrs: { type: "reset" }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                                Reset\n                                            "
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-body" }, [
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group m-t-10" },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "inputUsername4" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Username\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass:
-                                                      "fa fa-fw ti-user"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "inputUsername4",
-                                              placeholder: "Username"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass: "control-label",
-                                        attrs: { for: "inputEmail4" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                    Email\n                                                "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "input-group " }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group-prepend" },
-                                        [
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "input-group-text bg-white"
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass: "fa ti-email"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "inputEmail4",
-                                          placeholder: "Email Address"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass: "control-label",
-                                        attrs: { for: "validpassword" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                    Password\n                                                "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "input-group " }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group-prepend" },
-                                        [
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "input-group-text bg-white"
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass: "fa fa-fw ti-key"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          placeholder: "Password",
-                                          id: "validpassword"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass: "control-label",
-                                        attrs: { for: "inputnumber4" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                    Phone Number\n                                                "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "input-group " }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group-prepend" },
-                                        [
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "input-group-text bg-white"
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass:
-                                                  "fa fa-fw ti-mobile"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "inputnumber4",
-                                          placeholder: "Phone Number"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass: "control-label",
-                                        attrs: { for: "inputAddress4" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                    Address\n                                                "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "input-group " }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group-prepend" },
-                                        [
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "input-group-text bg-white"
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass:
-                                                  "fa fa-fw ti-pencil"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "inputAddress4",
-                                          placeholder: "Address"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group mbn" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass: "control-label",
-                                        attrs: { for: "inputContent4" }
-                                      },
-                                      [_vm._v("Message")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("textarea", {
-                                      staticClass:
-                                        "form-control resize_vertical",
-                                      attrs: { id: "inputContent4", rows: "3" }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-actions" }, [
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn  mb-3 btn-primary",
-                                      attrs: { type: "button" }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "Submit\n                                            "
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(
-                                    "\n                                             \n                                            "
-                                  ),
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn  mb-3 btn-danger",
-                                      attrs: { type: "button" }
-                                    },
-                                    [_vm._v("Cancel")]
-                                  ),
-                                  _vm._v(
-                                    "\n                                             \n                                            "
-                                  ),
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass:
-                                        "btn  mb-3 btn-secondary bttn_reset butn",
-                                      attrs: { type: "reset" }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                                Reset\n                                            "
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-6" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Right Aligned"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "right_aligned",
-                                  attrs: { action: "#" }
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    { staticClass: "float-md-right " },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  mb-3 btn-primary",
-                                          attrs: { type: "button" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Submit\n                                            "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  mb-3 btn-danger",
-                                          attrs: { type: "button" }
-                                        },
-                                        [_vm._v("Cancel")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "btn  mb-3 btn-secondary bttn_reset butn",
-                                          attrs: { type: "reset" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                Reset\n                                            "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-body" }, [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "inputUsername5" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Username\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass:
-                                                      "fa fa-fw ti-user"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "inputUsername5",
-                                              placeholder: "Username"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "inputEmail5" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Email\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass: "fa ti-email"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              placeholder: "Email Address",
-                                              id: "inputEmail5"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "uniquepassword" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Password\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass:
-                                                      "fa fa-fw ti-key"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "password",
-                                              placeholder: "Password",
-                                              id: "uniquepassword"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "inputnumber5" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Phone Number\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass:
-                                                      "fa fa-fw ti-mobile"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "inputnumber5",
-                                              placeholder: "Phone Number"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "inputAddress5" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Address\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass:
-                                                      "fa fa-fw ti-pencil"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              placeholder: "Address",
-                                              id: "inputAddress5"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "form-group mbn" },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "control-label",
-                                            attrs: { for: "inputContent" }
-                                          },
-                                          [_vm._v("Message")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("textarea", {
-                                          staticClass:
-                                            "form-control resize_vertical",
-                                          attrs: {
-                                            id: "inputContent",
-                                            rows: "3"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "form-actions float-md-right "
-                                    },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  mb-3 btn-primary",
-                                          attrs: { type: "button" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Submit\n                                            "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  mb-3 btn-danger",
-                                          attrs: { type: "button" }
-                                        },
-                                        [_vm._v("Cancel")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "btn  mb-3 btn-secondary bttn_reset butn",
-                                          attrs: { type: "reset" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                Reset\n                                            "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("b-tab", { attrs: { title: "2 Columns" } }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-sm-12" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Form 2 Columns Default"
-                              }
-                            },
-                            [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: " col-sm-6" }, [
-                                  _c("form", [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "form-group row has-success"
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label text-success",
-                                                attrs: { for: "inputSuccess1" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "First\n                                                            Name\n                                                        "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-9" }, [
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control form-control-success is-valid",
-                                            attrs: {
-                                              type: "text",
-                                              id: "inputSuccess1",
-                                              placeholder: "Input with success"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "form-text text-success"
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                                        First name is too small\n                                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "form-group has-error row"
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right text-danger txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputError1" }
-                                              },
-                                              [_vm._v("Email")]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-9" }, [
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "email",
-                                              id: "inputError1",
-                                              placeholder: "Input with error"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "form-text text-danger"
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                                        Please enter a valid email address\n                                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-sm-6" }, [
-                                  _c("form", [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "form-group row has-success has-feedback"
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right text-success txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputSuccess2" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                            Second Name\n                                                        "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-9" }, [
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control is-valid ",
-                                            attrs: {
-                                              type: "text",
-                                              id: "inputSuccess2",
-                                              placeholder: "Input with success"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "form-text text-success"
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                                        Second name is too small\n                                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "form-group row has-error has-feedback"
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "col-sm-3 float-md-right text-danger txt_media"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass:
-                                                  "form-control-label",
-                                                attrs: { for: "inputError2" }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                            Confirm Email\n                                                        "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("div", { staticClass: "col-sm-9" }, [
-                                          _c("input", {
-                                            staticClass:
-                                              "form-control brdr_danger",
-                                            attrs: {
-                                              type: "email",
-                                              id: "inputError2",
-                                              placeholder: "Input with error"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "span",
-                                            {
-                                              staticClass:
-                                                "form-text text-danger"
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                                        Email mis-match\n                                                                    "
-                                              )
-                                            ]
-                                          )
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "col-sm-10 ml-auto" },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass: "btn   btn-primary",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                            Login\n                                                        "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-12" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Personal Details Horizontal"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-horizontal",
-                                  attrs: { method: "post" }
-                                },
-                                [
-                                  _c("div", { staticClass: "row" }, [
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "first_Name" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "First\n                                                            Name:\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "first_Name",
-                                                  placeholder: "First Name"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "input_Email" }
-                                                },
-                                                [_vm._v("Email:")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "email",
-                                                  id: "input_Email",
-                                                  placeholder: "Email"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: {
-                                                    for: "input_Password"
-                                                  }
-                                                },
-                                                [_vm._v("Password:")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "password",
-                                                  id: "input_Password",
-                                                  placeholder: "Password"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label m-t-10"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "Date of\n                                                            Birth:"
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-3 m-t-10" },
-                                            [
-                                              _c(
-                                                "select",
-                                                { staticClass: "form-control" },
-                                                [
-                                                  _c("option", [
-                                                    _vm._v("Date")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("1")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("2")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("3")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("4")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("5")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("6")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("7")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("8")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("9")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("10")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("11")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("12")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("13")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("14")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("15")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("16")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("17")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("18")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("19")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("20")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("21")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("22")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("23")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("24")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("25")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("26")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("27")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("28")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("29")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("30")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("31")])
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-3 m-t-10" },
-                                            [
-                                              _c(
-                                                "select",
-                                                { staticClass: "form-control" },
-                                                [
-                                                  _c("option", [
-                                                    _vm._v("Month")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("1")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("2")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("3")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("4")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("5")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("6")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("7")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("8")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("9")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("10")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("11")]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("12")])
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-3 m-t-10" },
-                                            [
-                                              _c(
-                                                "select",
-                                                { staticClass: "form-control" },
-                                                [
-                                                  _c("option", [
-                                                    _vm._v("Year")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1991")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1992")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1993")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1994")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1995")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1996")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1997")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1998")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("1999")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2000")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2001")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2002")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2003")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2004")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2005")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2006")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2007")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2008")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2009")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2000")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2011")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2012")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2013")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2014")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2015")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2016")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [
-                                                    _vm._v("2017")
-                                                  ]),
-                                                  _vm._v(" "),
-                                                  _c("option", [_vm._v("2018")])
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "Zip_Code" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "Zip\n                                                            Code:\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "Zip_Code",
-                                                  placeholder: "Zip Code"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "city" }
-                                                },
-                                                [_vm._v("City:")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "city",
-                                                  placeholder: "City"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "form-group" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-9 ml-auto" },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass: "checkbox-inline"
-                                              },
-                                              [
-                                                _c("b-form-checkbox", [
-                                                  _vm._v(
-                                                    "\n\n                                                                All Flavors\n                                                            "
-                                                  )
-                                                ])
-                                              ],
-                                              1
-                                            )
-                                          ]
-                                        )
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "last_Name" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "Last\n                                                            Name:\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "last_Name",
-                                                  placeholder: "Last Name"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "phone_Number" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "phone:\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "phone_Number",
-                                                  placeholder: "Phone Number"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: {
-                                                    for: "confirm_Password"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "confirm password:\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("input", {
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "text",
-                                                  id: "confirm_Password",
-                                                  placeholder:
-                                                    "Confirm Password"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: {
-                                                    for: "postal_Address"
-                                                  }
-                                                },
-                                                [_vm._v("Address:")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-9" },
-                                            [
-                                              _c("textarea", {
-                                                staticClass:
-                                                  "form-control resize_vertical",
-                                                attrs: {
-                                                  rows: "3",
-                                                  id: "postal_Address",
-                                                  placeholder: "Postal Address"
-                                                }
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-3 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass: "control-label"
-                                                },
-                                                [_vm._v("Gender:")]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-8" },
-                                            [
-                                              _c(
-                                                "b-form-radio",
-                                                {
-                                                  attrs: {
-                                                    name: "gender",
-                                                    checked: "false"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                            Male\n                                                        "
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "b-form-radio",
-                                                {
-                                                  attrs: {
-                                                    name: "gender",
-                                                    checked: "false"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                            Female\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "form-group" }, [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass: "col-sm-9 ml-auto mr-4"
-                                          },
-                                          [
-                                            _c(
-                                              "label",
-                                              {
-                                                staticClass: "checkbox-inline"
-                                              },
-                                              [
-                                                _c("b-form-checkbox", [
-                                                  _vm._v(
-                                                    "\n                                                                I agree to the\n                                                                "
-                                                  ),
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      staticClass: "forgot",
-                                                      attrs: { href: "#" }
-                                                    },
-                                                    [
-                                                      _vm._v(
-                                                        "Terms and\n                                                                    Conditions."
-                                                      )
-                                                    ]
-                                                  )
-                                                ])
-                                              ],
-                                              1
-                                            )
-                                          ]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "form-group form-actions"
-                                        },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-offset-3 col-sm-9 ml-auto"
-                                            },
-                                            [
-                                              _c(
-                                                "button",
-                                                {
-                                                  staticClass:
-                                                    "btn  btn-primary",
-                                                  attrs: { type: "button" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                            Submit\n                                                        "
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(
-                                                "\n                                                          \n                                                        "
-                                              ),
-                                              _c(
-                                                "button",
-                                                {
-                                                  staticClass:
-                                                    "btn btn-effect-ripple  btn-secondary  reset_btn1",
-                                                  attrs: { type: "reset" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                            Reset\n                                                        "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
+                        "button",
+                        {
+                          staticClass: "btn btn-primary btn-block",
+                          on: {
+                            click: function($event) {
+                              _vm.modalTask = !_vm.modalTask
+                            }
+                          }
+                        },
+                        [_vm._v("Add Task")]
                       )
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-12" },
-                        [
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          "hide-footer": true,
+                          title: "Add Your Task Here"
+                        },
+                        model: {
+                          value: _vm.modalTask,
+                          callback: function($$v) {
+                            _vm.modalTask = $$v
+                          },
+                          expression: "modalTask"
+                        }
+                      },
+                      [
+                        _c("b-container", { attrs: { fluid: "" } }, [
                           _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Form 2 Columns Readonly"
-                              }
-                            },
-                            [
-                              _c("form", { attrs: { action: "#" } }, [
-                                _c("div", { staticClass: "form-body" }, [
-                                  _c("h3", [_vm._v("Personal")]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                First Name:\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "form-control-plaintext"
-                                                },
-                                                [_vm._v("Jenny")]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                Last Name:\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "form-control-plaintext"
-                                                },
-                                                [_vm._v("Kerry")]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label",
-                                                  attrs: { for: "inputEmail6" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "Email\n                                                                :\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "form-control-plaintext"
-                                                },
-                                                [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      staticClass: "forgot",
-                                                      attrs: {
-                                                        href:
-                                                          "mailto:whisfat1935@jourrapide.com"
-                                                      }
-                                                    },
-                                                    [
-                                                      _vm._v(
-                                                        "\n                                                                                    Jenny321@example.com\n                                                                                "
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-6 col-sm-6" },
-                                      [
-                                        _c(
-                                          "div",
-                                          { staticClass: "form-group row" },
-                                          [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass:
-                                                  "col-sm-5 col-6 float-md-right txt_media"
-                                              },
-                                              [
-                                                _c(
-                                                  "label",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-label"
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "Gender :\n                                                            "
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "col-sm-7 col-6" },
-                                              [
-                                                _c(
-                                                  "span",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-plaintext"
-                                                  },
-                                                  [_vm._v("Female")]
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-6 col-sm-6" },
-                                      [
-                                        _c(
-                                          "div",
-                                          { staticClass: "form-group row" },
-                                          [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass:
-                                                  "col-sm-5 col-6 float-md-right txt_media"
-                                              },
-                                              [
-                                                _c(
-                                                  "label",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-label"
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "Birthday :\n                                                            "
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "col-sm-7 col-6" },
-                                              [
-                                                _c(
-                                                  "span",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-plaintext"
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "\n                                                                                10.11.1980"
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-6 col-sm-6" },
-                                      [
-                                        _c(
-                                          "div",
-                                          { staticClass: "form-group row" },
-                                          [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass:
-                                                  "col-sm-5 col-6 float-md-right txt_media"
-                                              },
-                                              [
-                                                _c(
-                                                  "label",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-label"
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "Phone :\n                                                            "
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "col-sm-7 col-6" },
-                                              [
-                                                _c(
-                                                  "p",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-plaintext"
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "\n                                                                321-333-5432\n                                                            "
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("h3", [_vm._v("Address")]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "row form-group" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                Address 1:\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "p",
-                                                { staticClass: "form-text" },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                1219 Quiet Subdivision\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "form-group row" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                Address 2:\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "p",
-                                                { staticClass: "form-text" },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                3536 Petunia Way\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-6 col-sm-6" },
-                                      [
-                                        _c(
-                                          "div",
-                                          { staticClass: "form-group row" },
-                                          [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass:
-                                                  "col-sm-5 col-6 float-md-right txt_media"
-                                              },
-                                              [
-                                                _c(
-                                                  "label",
-                                                  {
-                                                    staticClass:
-                                                      "form-control-label"
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "City\n                                                                :"
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "div",
-                                              { staticClass: "col-sm-7 col-6" },
-                                              [
-                                                _c(
-                                                  "p",
-                                                  { staticClass: "form-text" },
-                                                  [_vm._v("Albany")]
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "row form-group" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass:
-                                                    "form-control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "State :\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "p",
-                                                { staticClass: "form-text" },
-                                                [_vm._v("New york")]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "row form-group" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass: "control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                Country :\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "p",
-                                                { staticClass: "form-text" },
-                                                [_vm._v("USA")]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "row form-group" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "col-sm-5 col-6 float-md-right txt_media"
-                                            },
-                                            [
-                                              _c(
-                                                "label",
-                                                {
-                                                  staticClass: "control-label"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                                                Post Code:\n                                                            "
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            { staticClass: "col-sm-7 col-6" },
-                                            [
-                                              _c(
-                                                "p",
-                                                { staticClass: "form-text" },
-                                                [_vm._v("12203")]
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("b-tab", { attrs: { title: "Form Striped" } }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-lg-12" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              staticClass: "striped_full",
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-move'></i> Form Bordered Striped"
-                              }
-                            },
+                            "form",
                             [
                               _c(
-                                "form",
+                                "label",
                                 {
-                                  staticClass: "form-bordered",
-                                  attrs: {
-                                    method: "post",
-                                    enctype: "multipart/form-data"
-                                  }
+                                  staticClass: "mt-2",
+                                  attrs: { for: "tasktitle" }
                                 },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label"
-                                            },
-                                            [_vm._v("Static")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-9" }, [
-                                        _c(
-                                          "p",
-                                          {
-                                            staticClass:
-                                              "form-control-plaintext"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Static text\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-text-input1"
-                                            }
-                                          },
-                                          [_vm._v("Text")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "example-text-input1",
-                                          name: "example-text-input",
-                                          placeholder: "Text"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "form-control-plaintext"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                            This is a help text\n                                                        "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: { for: "example-email1" }
-                                            },
-                                            [_vm._v("Email")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-6" }, [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "email",
-                                            id: "example-email1",
-                                            name: "example-email",
-                                            placeholder: "Email"
-                                          }
-                                        })
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-password1" }
-                                          },
-                                          [_vm._v("Password")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "example-password1",
-                                          name: "example-password",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: {
-                                                for: "example-disabled1"
-                                              }
-                                            },
-                                            [_vm._v("Disabled")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-6" }, [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "text",
-                                            id: "example-disabled1",
-                                            name: "example-disabled",
-                                            placeholder: "Disabled",
-                                            disabled: ""
-                                          }
-                                        })
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-textarea-input2"
-                                            }
-                                          },
-                                          [_vm._v("Textarea")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("textarea", {
-                                        staticClass:
-                                          "form-control resize_vertical",
-                                        attrs: {
-                                          id: "example-textarea-input2",
-                                          name: "example-textarea-input",
-                                          rows: "7",
-                                          placeholder: "Description...."
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: { for: "example-select1" }
-                                            },
-                                            [_vm._v("Select")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-6" }, [
-                                        _c(
-                                          "select",
-                                          {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              id: "example-select1",
-                                              name: "example-select",
-                                              size: "1"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "0" } },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Please select\n                                                    "
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "1" } },
-                                              [_vm._v("Bootstrap")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "2" } },
-                                              [_vm._v("CSS")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "3" } },
-                                              [_vm._v("JavaScript")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "4" } },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ]
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-multiple-select2"
-                                            }
-                                          },
-                                          [_vm._v("Multiple")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "select",
-                                        {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            id: "example-multiple-select2",
-                                            name: "example-multiple-select",
-                                            size: "5",
-                                            multiple: ""
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "1" } },
-                                            [_vm._v("Option #1")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "2" } },
-                                            [_vm._v("Option #2")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "3" } },
-                                            [_vm._v("Option #3")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "4" } },
-                                            [_vm._v("Option #4")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "5" } },
-                                            [_vm._v("Option #5")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "6" } },
-                                            [_vm._v("Option #6")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "7" } },
-                                            [_vm._v("Option #7")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "8" } },
-                                            [_vm._v("Option #8")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "9" } },
-                                            [_vm._v("Option #9")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "10" } },
-                                            [_vm._v("Option #10")]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row  striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label"
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Radio\n                                                    Buttons"
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "col-sm-9" },
-                                        [
-                                          _c("b-form-radio-group", {
-                                            attrs: {
-                                              stacked: "",
-                                              options: _vm.example_radio
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Inline Radio Buttons\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9" },
-                                      [
-                                        _c(
-                                          "b-form-radio",
-                                          {
-                                            attrs: {
-                                              name: "example-inline-radio",
-                                              checked: "false"
-                                            }
-                                          },
-                                          [_vm._v("HTML")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-form-radio",
-                                          {
-                                            attrs: {
-                                              name: "example-inline-radio",
-                                              checked: "false"
-                                            }
-                                          },
-                                          [_vm._v("CSS")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-form-radio",
-                                          {
-                                            attrs: {
-                                              name: "example-inline-radio",
-                                              checked: "false"
-                                            }
-                                          },
-                                          [_vm._v("JavaScript")]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label"
-                                            },
-                                            [_vm._v("Checkboxes")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "col-sm-9" },
-                                        [
-                                          _c("b-form-checkbox-group", {
-                                            attrs: {
-                                              stacked: "",
-                                              options: _vm.example_check
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Inline Checkboxes\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("div", { staticClass: "row" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("HTML")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("CSS")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("JavaScript")
-                                            ])
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: {
-                                                for: "example-file-input1"
-                                              }
-                                            },
-                                            [_vm._v("File")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-9" }, [
-                                        _c("input", {
-                                          attrs: {
-                                            type: "file",
-                                            id: "example-file-input1",
-                                            name: "example-file-input"
-                                          }
-                                        })
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for:
-                                                "example-file-multiple-input1"
-                                            }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Multiple File\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "file",
-                                          id: "example-file-multiple-input1",
-                                          name: "example-file-multiple-input",
-                                          multiple: ""
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row form-actions"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-9 col-sm-offset-3 ml-auto"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple  btn-primary   ",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                    Submit\n                                                "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple  btn-secondary reset_btn2",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                    Reset\n                                                "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              staticClass: "striped_full",
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-move'></i> Form Seperated Row Striped"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-bordered-row",
-                                  attrs: {
-                                    method: "post",
-                                    enctype: "multipart/form-data"
+                                [_vm._v("Task Title")]
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.newtaskname,
+                                    expression: "newtaskname"
                                   }
+                                ],
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "text",
+                                  id: "tasktitle",
+                                  placeholder: "Enter Title"
                                 },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label"
-                                            },
-                                            [_vm._v("Static")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-9" }, [
-                                        _c(
-                                          "p",
-                                          {
-                                            staticClass:
-                                              "form-control-plaintext"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Static text\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-text-input2"
-                                            }
-                                          },
-                                          [_vm._v("Text")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "example-text-input2",
-                                          name: "example-text-input",
-                                          placeholder: "Text"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        { staticClass: "help-block" },
-                                        [
-                                          _vm._v(
-                                            "\n                                                                This is a help text\n                                                            "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: { for: "example-email2" }
-                                            },
-                                            [_vm._v("Email")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-6" }, [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "email",
-                                            id: "example-email2",
-                                            name: "example-email",
-                                            placeholder: "Email"
-                                          }
-                                        })
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-password2" }
-                                          },
-                                          [_vm._v("Password")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "example-password2",
-                                          name: "example-password",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: {
-                                                for: "example-disabled2"
-                                              }
-                                            },
-                                            [_vm._v("Disabled")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-6" }, [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "text",
-                                            id: "example-disabled2",
-                                            name: "example-disabled",
-                                            placeholder: "Disabled",
-                                            disabled: ""
-                                          }
-                                        })
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-textarea-input1"
-                                            }
-                                          },
-                                          [_vm._v("Textarea")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("textarea", {
-                                        staticClass:
-                                          "form-control resize_vertical",
-                                        attrs: {
-                                          id: "example-textarea-input1",
-                                          name: "example-textarea-input",
-                                          rows: "7",
-                                          placeholder: "Description.."
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: { for: "example-select2" }
-                                            },
-                                            [_vm._v("Select")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-6" }, [
-                                        _c(
-                                          "select",
-                                          {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              id: "example-select2",
-                                              name: "example-select",
-                                              size: "1"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "0" } },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Please select\n                                                    "
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "1" } },
-                                              [_vm._v("Bootstrap")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "2" } },
-                                              [_vm._v("CSS")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "3" } },
-                                              [_vm._v("JavaScript")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "4" } },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ]
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-multiple-select1"
-                                            }
-                                          },
-                                          [_vm._v("Multiple")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "select",
-                                        {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            id: "example-multiple-select1",
-                                            name: "example-multiple-select",
-                                            size: "5",
-                                            multiple: ""
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "1" } },
-                                            [_vm._v("Option #1")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "2" } },
-                                            [_vm._v("Option #2")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "3" } },
-                                            [_vm._v("Option #3")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "4" } },
-                                            [_vm._v("Option #4")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "5" } },
-                                            [_vm._v("Option #5")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "6" } },
-                                            [_vm._v("Option #6")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "7" } },
-                                            [_vm._v("Option #7")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "8" } },
-                                            [_vm._v("Option #8")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "9" } },
-                                            [_vm._v("Option #9")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "10" } },
-                                            [_vm._v("Option #10")]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label"
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Radio\n                                                    Buttons"
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "col-sm-9" },
-                                        [
-                                          _c("b-form-radio-group", {
-                                            attrs: {
-                                              stacked: "",
-                                              options:
-                                                _vm.example_radio_seperated
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Inline Radio Buttons\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("div", { staticClass: "row" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "example-inline-radio"
-                                                }
-                                              },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "example-inline-radio"
-                                                }
-                                              },
-                                              [_vm._v("CSS")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "example-inline-radio"
-                                                }
-                                              },
-                                              [_vm._v("JavaScript")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label"
-                                            },
-                                            [_vm._v("Checkboxes")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "col-sm-9" },
-                                        [
-                                          _c("b-form-checkbox-group", {
-                                            attrs: {
-                                              stacked: "",
-                                              options:
-                                                _vm.example_check_seperated
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Inline Checkboxes\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("div", { staticClass: "row" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("HTML")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("CSS")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("JavaScript")
-                                            ])
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row striped-col "
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-3 float-md-right txt_media"
-                                        },
-                                        [
-                                          _c(
-                                            "label",
-                                            {
-                                              staticClass: "form-control-label",
-                                              attrs: {
-                                                for: "example-file-input2"
-                                              }
-                                            },
-                                            [_vm._v("File")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-9" }, [
-                                        _c("input", {
-                                          attrs: {
-                                            type: "file",
-                                            id: "example-file-input2",
-                                            name: "example-file-input"
-                                          }
-                                        })
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for:
-                                                "example-file-multiple-input2"
-                                            }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Multiple File\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "file",
-                                          id: "example-file-multiple-input2",
-                                          name: "example-file-multiple-input",
-                                          multiple: ""
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group form-actions" },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-9 col-sm-offset-3 ml-auto"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple  btn-primary",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                    Submit\n                                                "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple btn-secondary  reset_btn3",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                    Reset\n                                                "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              staticClass: "striped_full border",
-                              attrs: {
-                                title:
-                                  " <i class='fa fa-fw ti-move'></i> Form Bordered"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-bordered",
-                                  attrs: {
-                                    method: "post",
-                                    enctype: "multipart/form-data"
-                                  }
-                                },
-                                [
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3  txt_media border-left-none"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass:
-                                              "form-control-label float-md-right"
-                                          },
-                                          [_vm._v("Static")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c(
-                                        "p",
-                                        {
-                                          staticClass: "form-control-plaintext"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Static text\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: { for: "example-text-input3" }
-                                      },
-                                      [_vm._v("Text")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "example-text-input3",
-                                          name: "example-text-input",
-                                          placeholder: "Text"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        { staticClass: "help-block" },
-                                        [
-                                          _vm._v(
-                                            "\n                                                                This is a help text\n                                                            "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: { for: "example-email3" }
-                                      },
-                                      [_vm._v("Email")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "email",
-                                          id: "example-email3",
-                                          name: "example-email",
-                                          placeholder: "Email"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: { for: "example-password3" }
-                                      },
-                                      [_vm._v("Password")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "example-password3",
-                                          name: "example-password",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: { for: "example-disabled3" }
-                                      },
-                                      [_vm._v("Disabled")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "example-disabled3",
-                                          name: "example-disabled",
-                                          placeholder: "Disabled",
-                                          disabled: ""
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: {
-                                          for: "example-textarea-input3"
-                                        }
-                                      },
-                                      [_vm._v("Textarea")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c("textarea", {
-                                        staticClass:
-                                          "form-control resize_vertical",
-                                        attrs: {
-                                          id: "example-textarea-input3",
-                                          name: "example-textarea-input",
-                                          rows: "7",
-                                          placeholder: "Description.."
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: { for: "example-select3" }
-                                      },
-                                      [_vm._v("Select")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "select",
-                                        {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            id: "example-select3",
-                                            name: "example-select",
-                                            size: "1"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "0" } },
-                                            [
-                                              _vm._v(
-                                                "\n                                                        Please select\n                                                    "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "1" } },
-                                            [_vm._v("Bootstrap")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "2" } },
-                                            [_vm._v("CSS")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "3" } },
-                                            [_vm._v("JavaScript")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "4" } },
-                                            [_vm._v("HTML")]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: {
-                                          for: "example-multiple-select3"
-                                        }
-                                      },
-                                      [_vm._v("Multiple")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-6" }, [
-                                      _c(
-                                        "select",
-                                        {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            id: "example-multiple-select3",
-                                            name: "example-multiple-select",
-                                            size: "5",
-                                            multiple: ""
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "1" } },
-                                            [_vm._v("Option #1")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "2" } },
-                                            [_vm._v("Option #2")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "3" } },
-                                            [_vm._v("Option #3")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "4" } },
-                                            [_vm._v("Option #4")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "5" } },
-                                            [_vm._v("Option #5")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "6" } },
-                                            [_vm._v("Option #6")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "7" } },
-                                            [_vm._v("Option #7")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "8" } },
-                                            [_vm._v("Option #8")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "9" } },
-                                            [_vm._v("Option #9")]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "option",
-                                            { attrs: { value: "10" } },
-                                            [_vm._v("Option #10")]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Radio\n                                                Buttons"
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9" },
-                                      [
-                                        _c("b-form-radio-group", {
-                                          attrs: {
-                                            stacked: "",
-                                            options: _vm.example_radio_bordered
-                                          }
-                                        })
-                                      ],
-                                      1
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Inline Radio Buttons\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("div", { staticClass: "row" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name:
-                                                    "exaple_radio_bordered_inline"
-                                                }
-                                              },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name:
-                                                    "exaple_radio_bordered_inline"
-                                                }
-                                              },
-                                              [_vm._v("CSS")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name:
-                                                    "exaple_radio_bordered_inline"
-                                                }
-                                              },
-                                              [_vm._v("JavaScript")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media"
-                                      },
-                                      [_vm._v("Checkboxes")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9" },
-                                      [
-                                        _c("b-form-checkbox-group", {
-                                          attrs: {
-                                            stacked: "",
-                                            options: _vm.example_check_bordered
-                                          }
-                                        })
-                                      ],
-                                      1
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Inline Checkboxes\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("div", { staticClass: "row" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("HTML")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("CSS")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("JavaScript")
-                                            ])
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: { for: "example-file-input3" }
-                                      },
-                                      [_vm._v("File")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "file",
-                                          id: "example-file-input3",
-                                          name: "example-file-input3"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label txt_media",
-                                        attrs: {
-                                          for: "example-file-multiple-input3"
-                                        }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Multiple File\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "file",
-                                          id: "example-file-multiple-input3",
-                                          name: "example-file-multiple-input3",
-                                          multiple: ""
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group form-actions" },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-9 col-sm-offset-3 ml-auto"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple  btn-primary",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                Submit\n                                            "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple btn-secondary  reset_btn4",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                Reset\n                                            "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("b-tab", { attrs: { title: "More Examples" } }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        { staticClass: "col-sm-6" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-heart'></i> Vertical Form Layout"
-                              }
-                            },
-                            [
-                              _c("form", [
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "inputEmail7" } },
-                                    [_vm._v("Email")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    staticClass: "form-control",
-                                    attrs: {
-                                      type: "email",
-                                      id: "inputEmail7",
-                                      placeholder: "Email"
+                                domProps: { value: _vm.newtaskname },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
                                     }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "inputPassword1" } },
-                                    [_vm._v("Password")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    staticClass: "form-control",
-                                    attrs: {
-                                      type: "password",
-                                      id: "inputPassword1",
-                                      placeholder: "Password"
-                                    }
-                                  })
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "checkbox" }, [
-                                  _c(
-                                    "label",
-                                    [
-                                      _c(
-                                        "b-form-checkbox",
-                                        { staticClass: "remember" },
-                                        [_vm._v("Remember me")]
-                                      )
-                                    ],
-                                    1
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", [
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn btn-primary  m-t-10",
-                                      attrs: { type: "button" }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "Login\n                                            "
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Inline Form Layout"
-                              }
-                            },
-                            [
+                                    _vm.newtaskname = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
                               _c(
-                                "form",
+                                "label",
                                 {
-                                  staticClass: "form-inline",
-                                  attrs: { role: "form" }
+                                  staticClass: "mt-2",
+                                  attrs: { for: "taskdesc" }
+                                },
+                                [_vm._v("Task Description")]
+                              ),
+                              _vm._v(" "),
+                              _c("textarea", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.newtaskdesc,
+                                    expression: "newtaskdesc"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                attrs: {
+                                  name: "description",
+                                  placeholder: "Add description here",
+                                  rows: "5",
+                                  id: "taskdesc"
+                                },
+                                domProps: { value: _vm.newtaskdesc },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.newtaskdesc = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "label",
+                                {
+                                  staticClass: "mt-2",
+                                  attrs: { for: "deadline" }
+                                },
+                                [_vm._v("Deadline")]
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.newtaskdeadline,
+                                    expression: "newtaskdeadline"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                attrs: {
+                                  type: "date",
+                                  placeholder: "Deadline",
+                                  id: "deadline"
+                                },
+                                domProps: { value: _vm.newtaskdeadline },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.newtaskdeadline = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "label",
+                                [
+                                  _c("b-form-checkbox", {
+                                    staticClass: "mt-2",
+                                    model: {
+                                      value: _vm.newimportant,
+                                      callback: function($$v) {
+                                        _vm.newimportant = $$v
+                                      },
+                                      expression: "newimportant"
+                                    }
+                                  }),
+                                  _vm._v(" Click if this a important task")
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-btn",
+                                {
+                                  staticClass: "float-right mt-2",
+                                  attrs: { variant: "primary" },
+                                  on: { click: _vm.addTask }
                                 },
                                 [
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass: "sr-only",
-                                        attrs: { for: "inputEmail8" }
-                                      },
-                                      [_vm._v("Email")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("input", {
-                                      staticClass: "form-control",
-                                      attrs: {
-                                        type: "email",
-                                        id: "inputEmail8",
-                                        placeholder: "Email"
-                                      }
-                                    })
-                                  ]),
                                   _vm._v(
-                                    "\n                                          \n                                        "
-                                  ),
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group ml-1" },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "sr-only",
-                                          attrs: { for: "inputPassword2" }
-                                        },
-                                        [_vm._v("Password")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "inputPassword2",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "label",
-                                    [
-                                      _c(
-                                        "b-form-checkbox",
-                                        { staticClass: "remember ml-2" },
-                                        [_vm._v("Remember me")]
-                                      )
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn btn-primary  mr-1",
-                                      attrs: { type: "button" }
-                                    },
-                                    [_vm._v("Login")]
+                                    "\n                                            Submit\n                                        "
                                   )
                                 ]
                               )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  " <i class='fa fa-fw ti-pencil'></i> Static Form Control"
-                              }
-                            },
-                            [
-                              _c("form", [
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "inputEmail9" }
-                                        },
-                                        [_vm._v("Email")]
-                                      )
-                                    ]
-                                  ),
+                            ],
+                            1
+                          )
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _vm._m(5)
+                  ],
+                  1
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-12 col-md-7 col-lg-9" }, [
+              _c("div", { staticClass: "tasksearch p-3" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.search,
+                      expression: "search"
+                    }
+                  ],
+                  staticClass: "form-control mt-4 mb-4",
+                  attrs: { type: "text", placeholder: "Search" },
+                  domProps: { value: _vm.search },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.search = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "tasks-list mt-5 mb-3" },
+                [
+                  _vm._m(6),
+                  _vm._v(" "),
+                  _c(
+                    "vue-scrollbar",
+                    {
+                      ref: "Scrollbar",
+                      attrs: { classes: "tasks-my-scrollbar" }
+                    },
+                    [
+                      _c("div", { staticClass: "tasks-scroll-me" }, [
+                        _c(
+                          "div",
+                          { staticClass: "tasks-table-list table-responsive" },
+                          [
+                            _c(
+                              "table",
+                              { staticClass: "table" },
+                              _vm._l(_vm.allTasks, function(task, index) {
+                                return _c("tr", [
+                                  _c("td", [_c("b-form-checkbox")], 1),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "col-sm-9" }, [
-                                    _c("p", { staticClass: "form-text" }, [
-                                      _vm._v(
-                                        "\n                                                    harrypotter@mail.com\n                                                "
-                                      )
-                                    ])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "label",
-                                    {
-                                      staticClass:
-                                        "control-label col-sm-3 float-md-right txt_media",
-                                      attrs: { for: "static_inputPassword3" }
-                                    },
-                                    [_vm._v("Password")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "col-sm-9" }, [
-                                    _c("input", {
-                                      staticClass: "form-control",
-                                      attrs: {
-                                        type: "password",
-                                        id: "static_inputPassword3",
-                                        placeholder: "Password"
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-sm-9 ml-auto txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        [
-                                          _c(
-                                            "b-form-checkbox",
-                                            { staticClass: "remember" },
-                                            [_vm._v("Remember me")]
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-sm-9 ml-auto txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  btn-primary",
-                                          attrs: { type: "button" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Login\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Button Dropdowns"
-                              }
-                            },
-                            [
-                              _c("form", { staticClass: "d-inline" }, [
-                                _c("div", { staticClass: "row" }, [
-                                  _c("div", { staticClass: "col-12 m-t-10" }, [
+                                  _c("td", [
                                     _c(
-                                      "div",
-                                      { staticClass: "input-group mb-3" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "input-group-prepend fisrt_dropdwn"
-                                          },
-                                          [
-                                            _c(
-                                              "b-dropdown",
-                                              {
-                                                staticClass: "text-white",
-                                                attrs: {
-                                                  text: "Action",
-                                                  variant: "info"
-                                                }
-                                              },
-                                              [
-                                                _c("b-dropdown-item-button", [
-                                                  _vm._v("action")
-                                                ]),
-                                                _vm._v(" "),
-                                                _c("b-dropdown-item-button", [
-                                                  _vm._v("another action")
-                                                ]),
-                                                _vm._v(" "),
-                                                _c("b-dropdown-item-button", [
-                                                  _vm._v("something else here")
-                                                ]),
-                                                _vm._v(" "),
-                                                _c("b-dropdown-divider"),
-                                                _vm._v(" "),
-                                                _c("b-dropdown-item-button", [
-                                                  _c(
-                                                    "a",
-                                                    { attrs: { href: "#" } },
-                                                    [
-                                                      _vm._v(
-                                                        "seperated link here"
-                                                      )
-                                                    ]
-                                                  )
-                                                ])
-                                              ],
-                                              1
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "text",
-                                            "aria-label":
-                                              "Text input with checkbox"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "col-12 mt-2" }, [
-                                    _c("div", { staticClass: "input-group" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "input-group-prepend fisrt_dropdwn"
-                                        },
-                                        [
-                                          _c(
-                                            "b-dropdown",
-                                            {
-                                              staticClass: "text-white",
-                                              attrs: {
-                                                text: "Action",
-                                                variant: "warning"
-                                              }
-                                            },
-                                            [
-                                              _c("b-dropdown-item-button", [
-                                                _vm._v("action")
-                                              ]),
-                                              _vm._v(" "),
-                                              _c("b-dropdown-item-button", [
-                                                _vm._v("another action")
-                                              ]),
-                                              _vm._v(" "),
-                                              _c("b-dropdown-item-button", [
-                                                _vm._v("something else here")
-                                              ]),
-                                              _vm._v(" "),
-                                              _c("b-dropdown-divider"),
-                                              _vm._v(" "),
-                                              _c("b-dropdown-item-button", [
-                                                _c(
-                                                  "a",
-                                                  { attrs: { href: "#" } },
-                                                  [
-                                                    _vm._v(
-                                                      "seperated link here"
-                                                    )
-                                                  ]
-                                                )
-                                              ])
-                                            ],
-                                            1
-                                          )
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          "aria-label":
-                                            "Text input with checkbox"
+                                      "h5",
+                                      {
+                                        class: {
+                                          textDanger: task.important == true
                                         }
-                                      })
+                                      },
+                                      [_vm._v(_vm._s(task.tasktitle))]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", [
+                                      _vm._v(_vm._s(task.taskdescription))
                                     ]),
                                     _vm._v(" "),
-                                    _c("br")
-                                  ])
-                                ])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Disabled Inputs"
-                              }
-                            },
-                            [
-                              _c("form", [
-                                _c("input", {
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    type: "text",
-                                    placeholder: "Disabled input",
-                                    disabled: ""
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("hr"),
-                              _vm._v(" "),
-                              _c("form", { staticClass: "form-horizontal" }, [
-                                _c("fieldset", [
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "inputEmail10" }
-                                          },
-                                          [_vm._v("Email")]
-                                        )
-                                      ]
+                                    _c("span", { staticClass: "text-danger" }, [
+                                      _vm._v("Deadline:")
+                                    ]),
+                                    _vm._v(
+                                      " " +
+                                        _vm._s(task.taskdeadline) +
+                                        "\n                                                "
                                     ),
-                                    _vm._v(" "),
                                     _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
+                                      "span",
+                                      { staticClass: "float-right mr-5" },
                                       [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "email",
-                                            id: "inputEmail10",
-                                            placeholder: "Email",
-                                            disabled: ""
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "inputPassword4" }
-                                          },
-                                          [_vm._v("Password")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "password",
-                                            id: "inputPassword4",
-                                            placeholder: "Password",
-                                            disabled: ""
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-offset-3 col-sm-9 col-lg-8 ml-auto txt_media"
-                                      },
-                                      [
-                                        _c("div", { staticClass: "checkbox" }, [
-                                          _c(
-                                            "label",
-                                            [
-                                              _c(
-                                                "b-form-checkbox",
-                                                {
-                                                  staticClass: "remember",
-                                                  attrs: { disabled: "" }
-                                                },
-                                                [_vm._v("Remember me")]
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-offset-3 col-sm-9 ml-auto txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "button",
-                                          {
-                                            staticClass: "btn  btn-primary",
-                                            attrs: {
-                                              type: "submit",
-                                              disabled: ""
-                                            }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "Login\n                                                    "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Supported Form Controls in Twitter Bootstrap"
-                              }
-                            },
-                            [
-                              _c("form", { attrs: { action: "#" } }, [
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "more_inputEmail4" }
-                                        },
-                                        [_vm._v("Email")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "email",
-                                          id: "more_inputEmail4",
-                                          placeholder: "Email"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "more_inputPassword5" }
-                                        },
-                                        [_vm._v("Password")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "more_inputPassword5",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "confirmPassword2" }
-                                        },
-                                        [_vm._v("Confirm Password")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "confirmPassword2",
-                                          placeholder: "Confirm Password"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "more_firstName" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    First Name\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "more_firstName",
-                                          placeholder: "First Name"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "more_lastName" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Last\n                                                    Name\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "more_lastName",
-                                          placeholder: "Last Name"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "mobile_phoneNumber" }
-                                        },
-                                        [_vm._v("Phone")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "tel",
-                                          id: "mobile_phoneNumber",
-                                          placeholder: "Phone Number"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "more_mobile" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                    Date of Birth\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-2 col-12 m-t-10"
-                                    },
-                                    [
-                                      _c(
-                                        "select",
-                                        {
-                                          staticClass: "form-control",
-                                          attrs: { id: "more_mobile" }
-                                        },
-                                        [
-                                          _c("option", [_vm._v("Date")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("3")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("4")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("5")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("6")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("7")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("8")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("9")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("10")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("11")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("12")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("13")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("14")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("15")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("16")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("17")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("18")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("19")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("20")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("21")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("22")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("23")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("24")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("25")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("26")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("27")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("28")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("29")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("30")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("31")])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-3 col-12 m-t-10"
-                                    },
-                                    [
-                                      _c(
-                                        "select",
-                                        { staticClass: "form-control" },
-                                        [
-                                          _c("option", [_vm._v("Month")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("3")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("4")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("5")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("6")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("7")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("8")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("9")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("10")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("11")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("12")])
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-3 col-12 m-t-10"
-                                    },
-                                    [
-                                      _c(
-                                        "select",
-                                        { staticClass: "form-control" },
-                                        [
-                                          _c("option", [_vm._v("Year")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1991")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1992")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1993")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1994")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1995")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1996")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1997")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1998")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("1999")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2000")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2001")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2002")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2003")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2004")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2005")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2006")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2007")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2008")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2009")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2000")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2011")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2012")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2013")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2014")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2015")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2016")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2017")]),
-                                          _vm._v(" "),
-                                          _c("option", [_vm._v("2018")])
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label",
-                                          attrs: { for: "more_postalAddress" }
-                                        },
-                                        [_vm._v("Address")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-lg-8 col-12" },
-                                    [
-                                      _c("textarea", {
-                                        staticClass:
-                                          "form-control resize_vertical",
-                                        attrs: {
-                                          rows: "3",
-                                          id: "more_postalAddress",
-                                          placeholder: "Postal Address"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "form-control-label",
-                                          attrs: { for: "ZipCode" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Zip\n                                                    Code\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-lg-8 col-12" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "ZipCode",
-                                          placeholder: "Zip Code"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        { staticClass: "form-control-label" },
-                                        [_vm._v("Gender")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-12 col-lg-8" },
-                                    [
-                                      _c("div", { staticClass: "row" }, [
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "radio_twitter"
-                                                }
-                                              },
-                                              [_vm._v("Male")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "radio_twitter"
-                                                }
-                                              },
-                                              [_vm._v("Female")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-sm-4 col-lg-6" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "radio_twitter"
-                                                }
-                                              },
-                                              [_vm._v("Others")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-lg-offset-4 col-8 ml-auto txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        [
-                                          _c("b-form-checkbox", [
-                                            _vm._v(
-                                              "  Send me\n                                                        latest news and updates."
-                                            )
-                                          ])
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-8 ml-auto txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        [
-                                          _c("b-form-checkbox", [
-                                            _vm._v(
-                                              " I agree\n                                                        to\n                                                        the\n                                                        "
-                                            ),
-                                            _c("a", { attrs: { href: "#" } }, [
-                                              _vm._v(
-                                                "\n                                                            Terms and Conditions\n                                                        "
-                                              )
-                                            ])
-                                          ])
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("br"),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3= col-9 ml-auto txt_media"
-                                    },
-                                    [
-                                      _c("input", {
-                                        staticClass: "btn  btn-primary ",
-                                        attrs: {
-                                          type: "button",
-                                          value: "Submit "
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "btn  btn-secondary mt-1 mt-sm-0",
-                                          attrs: { type: "reset" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Reset\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-sm-6" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-check-box'></i> Horizontal Form Layout"
-                              }
-                            },
-                            [
-                              _c("form", [
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass: "control-label ",
-                                          attrs: {
-                                            for: "horizontal_inputEmail"
-                                          }
-                                        },
-                                        [_vm._v("Email")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "email",
-                                          id: "horizontal_inputEmail",
-                                          placeholder: "Email"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-3 col-lg-4 float-md-right txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass:
-                                            "control-label hidden-xs",
-                                          attrs: {
-                                            for: "horizontal_inputPassword"
-                                          }
-                                        },
-                                        [_vm._v("Password")]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "col-sm-9 col-lg-8" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "password",
-                                          id: "horizontal_inputPassword",
-                                          placeholder: "Password"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-sm-9 col-lg-8  ml-auto txt_media"
-                                    },
-                                    [
-                                      _c("div", { staticClass: "checkbox" }, [
-                                        _c(
-                                          "label",
-                                          [
-                                            _c(
-                                              "b-form-checkbox",
-                                              { staticClass: "remember" },
-                                              [_vm._v("Remember me")]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ])
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-sm-9 ml-auto txt_media"
-                                    },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  btn-primary",
-                                          attrs: { type: "button" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Login\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-move'></i> General Controls"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  attrs: {
-                                    method: "post",
-                                    enctype: "multipart/form-data"
-                                  }
-                                },
-                                [
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [_vm._v("Static")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("p", { staticClass: "form-text" }, [
-                                          _vm._v(
-                                            "\n                                                    Static text\n                                                "
-                                          )
-                                        ])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-text-input" }
-                                          },
-                                          [_vm._v("Text")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "text",
-                                            id: "example-text-input",
-                                            name: "example-text-input",
-                                            placeholder: "Text"
-                                          }
-                                        }),
-                                        _vm._v(" "),
                                         _c(
                                           "span",
-                                          { staticClass: "help-block" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                                        This is a help text\n                                                                    "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-email" }
-                                          },
-                                          [_vm._v("Email")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "email",
-                                            id: "example-email",
-                                            name: "example-email",
-                                            placeholder: "Email"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-password" }
-                                          },
-                                          [_vm._v("Password")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "password",
-                                            id: "example-password",
-                                            name: "example-password",
-                                            placeholder: "Password"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-disabled" }
-                                          },
-                                          [_vm._v("Disabled")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("input", {
-                                          staticClass: "form-control",
-                                          attrs: {
-                                            type: "text",
-                                            id: "example-disabled",
-                                            name: "example-disabled",
-                                            placeholder: "Disabled",
-                                            disabled: ""
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-textarea-input"
-                                            }
-                                          },
-                                          [_vm._v("Textarea")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c("textarea", {
-                                          staticClass:
-                                            "form-control resize_vertical",
-                                          attrs: {
-                                            id: "example-textarea-input",
-                                            name: "example-textarea-input",
-                                            rows: "7",
-                                            placeholder: "Description.."
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-select" }
-                                          },
-                                          [_vm._v("Select")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c(
-                                          "select",
-                                          {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              id: "example-select",
-                                              name: "example-select",
-                                              size: "1"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "0" } },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                        Please select\n                                                    "
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "1" } },
-                                              [_vm._v("Bootstrap")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "2" } },
-                                              [_vm._v("CSS")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "3" } },
-                                              [_vm._v("JavaScript")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "4" } },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-multiple-select"
-                                            }
-                                          },
-                                          [_vm._v("Multiple")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c(
-                                          "select",
-                                          {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              id: "example-multiple-select",
-                                              name: "example-multiple-select",
-                                              size: "5",
-                                              multiple: ""
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "1" } },
-                                              [_vm._v("Option #1")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "2" } },
-                                              [_vm._v("Option #2")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "3" } },
-                                              [_vm._v("Option #3")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "4" } },
-                                              [_vm._v("Option #4")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "5" } },
-                                              [_vm._v("Option #5")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "6" } },
-                                              [_vm._v("Option #6")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "7" } },
-                                              [_vm._v("Option #7")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "8" } },
-                                              [_vm._v("Option #8")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "9" } },
-                                              [_vm._v("Option #9")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "option",
-                                              { attrs: { value: "10" } },
-                                              [_vm._v("Option #10")]
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [_vm._v("Radio Buttons")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c(
-                                          "div",
-                                          { staticClass: "m-l-10 m-t-6" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "radio_ganeral"
-                                                }
-                                              },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ],
-                                          1
+                                          { staticClass: "text-danger" },
+                                          [_vm._v("Status:")]
                                         ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "m-l-10" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "radio_ganeral"
-                                                }
-                                              },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "m-l-10" },
-                                          [
-                                            _c(
-                                              "b-form-radio",
-                                              {
-                                                attrs: {
-                                                  checked: "false",
-                                                  name: "radio_ganeral"
-                                                }
-                                              },
-                                              [_vm._v("HTML")]
-                                            )
-                                          ],
-                                          1
-                                        )
+                                        _vm._v(" " + _vm._s(task.status))
                                       ]
                                     )
                                   ]),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Inline Radio Buttons\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c(
-                                          "b-form-radio",
-                                          {
-                                            staticClass: "mr-0",
-                                            attrs: {
-                                              checked: "false",
-                                              name: "radio_ganeral_inline"
-                                            }
-                                          },
-                                          [_vm._v("HTML")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-form-radio",
-                                          {
-                                            staticClass: "mr-0",
-                                            attrs: {
-                                              checked: "false",
-                                              name: "radio_ganeral_inline"
-                                            }
-                                          },
-                                          [_vm._v("CSS")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-form-radio",
-                                          {
-                                            staticClass: "mr-0",
-                                            attrs: {
-                                              checked: "false",
-                                              name: "radio_ganeral_inline"
-                                            }
-                                          },
-                                          [_vm._v("JavaScript")]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [_vm._v("Checkboxes")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c(
-                                          "div",
-                                          { staticClass: "m-l-10 m-t-6" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("HTML")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "m-l-10" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("HTML")
-                                            ])
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "m-l-10" },
-                                          [
-                                            _c("b-form-checkbox", [
-                                              _vm._v("HTML")
-                                            ])
-                                          ],
-                                          1
-                                        )
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          { staticClass: "form-control-label" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Inline Checkboxes\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "col-sm-9 col-lg-8" },
-                                      [
-                                        _c(
-                                          "b-form-checkbox",
-                                          { staticClass: "mr-0 mr-sm-1" },
-                                          [_vm._v("HTML")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-form-checkbox",
-                                          { staticClass: "mr-0 mr-sm-1" },
-                                          [_vm._v("HTML")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-form-checkbox",
-                                          { staticClass: "mr-0 mr-sm-1" },
-                                          [_vm._v("HTML")]
-                                        )
-                                      ],
-                                      1
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: { for: "example-file-input" }
-                                          },
-                                          [_vm._v("File")]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-9 m-t-10 col-lg-8"
-                                      },
-                                      [
-                                        _c("input", {
-                                          attrs: {
-                                            type: "file",
-                                            id: "example-file-input",
-                                            name: "example-file-input"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 col-lg-4 float-md-right txt_media"
-                                      },
-                                      [
-                                        _c(
-                                          "label",
-                                          {
-                                            staticClass: "form-control-label",
-                                            attrs: {
-                                              for: "example-file-multiple-input"
-                                            }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Multiple File\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass: "col-sm-9 m-t-10 col-lg-8"
-                                      },
-                                      [
-                                        _c("input", {
-                                          attrs: {
-                                            type: "file",
-                                            id: "example-file-multiple-input",
-                                            name: "example-file-multiple-input",
-                                            multiple: ""
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group form-actions" },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "col-sm-9 col-sm-offset-3 ml-auto"
-                                        },
-                                        [
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple  btn-primary",
-                                              attrs: { type: "button" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "Submit\n                                                "
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "button",
-                                            {
-                                              staticClass:
-                                                "btn btn-effect-ripple btn-secondary reset_btn5",
-                                              attrs: { type: "reset" }
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                                                    Reset\n                                                "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "card",
-                            {
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Twitter Bootstrap Form Validation States"
-                              }
-                            },
-                            [
-                              _c("form", [
-                                _c(
-                                  "div",
-                                  { staticClass: "form-group row has-success" },
-                                  [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label text-success",
-                                        attrs: { for: "inputSuccess3" }
-                                      },
-                                      [_vm._v("Username")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        staticClass: "form-control is-valid",
-                                        attrs: {
-                                          type: "text",
-                                          id: "inputSuccess3",
-                                          placeholder: "Input with success"
+                                  _c("td", { staticClass: "align-center" }, [
+                                    _c("span", {
+                                      staticClass: "fa fa-edit",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.editModal(index)
                                         }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "form-text text-success"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                                        Username is available\n                                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "form-group row has-error" },
-                                  [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label text-danger",
-                                        attrs: { for: "inputError3" }
-                                      },
-                                      [_vm._v("Email")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        staticClass:
-                                          "form-control brdr_danger is-invalid",
-                                        attrs: {
-                                          type: "email",
-                                          id: "inputError3",
-                                          placeholder: "Input with error"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", { staticClass: "align-center" }, [
+                                    _c("span", {
+                                      staticClass: "fa fa-trash-o",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.deleteModal(index)
                                         }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "form-text text-danger"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                                        Please enter a valid email address\n                                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group row" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-sm-9 ml-auto"
-                                    },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  btn-primary",
-                                          attrs: { type: "button" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Login\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("form", [
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "form-group row has-success has-feedback"
-                                  },
-                                  [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label text-success",
-                                        attrs: { for: "inputSuccess" }
-                                      },
-                                      [_vm._v("Username")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        staticClass: "form-control is-valid ",
-                                        attrs: {
-                                          type: "text",
-                                          id: "inputSuccess",
-                                          placeholder: "Input with success"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "form-text text-success"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                                        Username is available\n                                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "form-group row has-error has-feedback"
-                                  },
-                                  [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-3 control-label text-danger",
-                                        attrs: { for: "inputError" }
-                                      },
-                                      [_vm._v("Email")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-9" }, [
-                                      _c("input", {
-                                        staticClass:
-                                          "form-control is-invalid brdr_danger",
-                                        attrs: {
-                                          type: "email",
-                                          id: "inputError",
-                                          placeholder: "Input with error"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "form-text text-danger"
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                                        Please enter a valid email address\n                                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "col-sm-offset-3 col-sm-9 ml-auto"
-                                    },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass: "btn  btn-primary",
-                                          attrs: { type: "button" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "Login\n                                                "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ]
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "col-sm-12" },
-                        [
-                          _c(
-                            "card",
-                            {
-                              staticClass: "card_brdr",
-                              attrs: {
-                                title:
-                                  "<i class='fa fa-fw ti-pencil'></i> Bootstrap Form Inputs"
-                              }
-                            },
-                            [
-                              _c(
-                                "form",
-                                {
-                                  staticClass: "form-horizontal",
-                                  attrs: { role: "form" }
-                                },
-                                [
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "valid_email" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Email Address\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass: "fa ti-email"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              placeholder: "Email Address",
-                                              id: "valid_email"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "exampleInputPassword1" }
-                                      },
-                                      [_vm._v("Password")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group " },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass: "fa ti-key"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "password",
-                                              id: "exampleInputPassword1",
-                                              placeholder: "Password"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "form-group row has-success"
-                                    },
-                                    [
-                                      _c(
-                                        "label",
-                                        {
-                                          staticClass:
-                                            "col-sm-2 control-label float-md-right txt_media",
-                                          attrs: { for: "valid_email2" }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                                                Validation Email\n                                            "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("div", { staticClass: "col-sm-8" }, [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "input-group input-icon right"
-                                          },
-                                          [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass:
-                                                  "input-group-prepend"
-                                              },
-                                              [
-                                                _c(
-                                                  "span",
-                                                  {
-                                                    staticClass:
-                                                      "input-group-text bg-white"
-                                                  },
-                                                  [
-                                                    _c("i", {
-                                                      staticClass: "fa ti-email"
-                                                    })
-                                                  ]
-                                                )
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("input", {
-                                              staticClass:
-                                                "input-error form-control",
-                                              attrs: {
-                                                id: "valid_email2",
-                                                type: "text",
-                                                placeholder: "Email Address"
-                                              }
-                                            })
-                                          ]
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right",
-                                        attrs: { for: "validate_confirm" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Validation Password\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "input-group input-icon right"
-                                        },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "span",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("i", {
-                                                    staticClass: "fa ti-key"
-                                                  })
-                                                ]
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "password",
-                                              placeholder: "Password",
-                                              id: "validate_confirm"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "left_check" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Checkbox Left\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("b-form-checkbox", {
-                                                    staticClass: "mr-0"
-                                                  })
-                                                ],
-                                                1
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "left_check"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "right_check" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Checkbox right\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group" },
-                                        [
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "right_check"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-append"
-                                            },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("b-form-checkbox", {
-                                                    staticClass: "mr-0"
-                                                  })
-                                                ],
-                                                1
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "right_on" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Radio on left\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group" },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-prepend"
-                                            },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("b-form-checkbox", {
-                                                    staticClass: "mr-0"
-                                                  })
-                                                ],
-                                                1
-                                              )
-                                            ]
-                                          ),
-                                          _vm._v(" "),
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "right_on"
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "right_off" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Radio on right\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "input-group" },
-                                        [
-                                          _c("input", {
-                                            staticClass: "form-control",
-                                            attrs: {
-                                              type: "text",
-                                              id: "right_off"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass: "input-group-append"
-                                            },
-                                            [
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "input-group-text bg-white"
-                                                },
-                                                [
-                                                  _c("b-form-checkbox", {
-                                                    staticClass: "mr-0"
-                                                  })
-                                                ],
-                                                1
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "process_right" }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Processing right\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "input-icon left spinner"
-                                        },
-                                        [
-                                          _c("input", {
-                                            staticClass:
-                                              "input-error form-control",
-                                            attrs: {
-                                              type: "text",
-                                              placeholder: "",
-                                              id: "process_right"
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c("i", {
-                                            staticClass:
-                                              "fa fa-fw fa-spin fa-spinner proc text-primary"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                                Static Paragraph\n                                            "
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c("p", { staticClass: "form-control" }, [
-                                        _vm._v(
-                                          "\n                                                    email@example.com\n                                                "
-                                        )
-                                      ])
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group row" }, [
-                                    _c(
-                                      "label",
-                                      {
-                                        staticClass:
-                                          "col-sm-2 control-label float-md-right txt_media",
-                                        attrs: { for: "bootstrap_readonly" }
-                                      },
-                                      [_vm._v("Readonly")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "col-sm-8" }, [
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          placeholder: "Readonly",
-                                          readonly: "",
-                                          id: "bootstrap_readonly"
-                                        }
-                                      })
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "row" }, [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "col-sm-8 col-sm-offset-2 ml-auto"
-                                      },
-                                      [
-                                        _c(
-                                          "button",
-                                          {
-                                            staticClass:
-                                              "btn  btn-primary m-t-10",
-                                            attrs: { type: "button" }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Submit\n                                                "
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "button",
-                                          {
-                                            staticClass:
-                                              "btn  btn-danger m-t-10",
-                                            attrs: { type: "button" }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Cancel\n                                                "
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "button",
-                                          {
-                                            staticClass:
-                                              "btn btn-effect-ripple  btn-secondary m-t-10 reset_btn6",
-                                            attrs: { type: "reset" }
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                    Reset\n                                                "
-                                            )
-                                          ]
-                                        )
-                                      ]
-                                    )
+                                      }
+                                    })
                                   ])
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ])
+                                ])
+                              }),
+                              0
+                            )
+                          ]
+                        )
+                      ])
+                    ]
+                  )
                 ],
                 1
               )
-            ],
-            1
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "b-modal",
+        {
+          ref: "editmodal",
+          attrs: { "hide-footer": "", title: "Using Component Methods" }
+        },
+        [
+          _c("div", { staticClass: "d-block" }, [
+            _c("form", [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.edittitle,
+                    expression: "edittitle"
+                  }
+                ],
+                staticClass: "form-control mt-3",
+                attrs: { type: "text", placeholder: "Enter title" },
+                domProps: { value: _vm.edittitle },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.edittitle = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.editdescription,
+                    expression: "editdescription"
+                  }
+                ],
+                staticClass: "form-control mt-3",
+                attrs: { name: "", id: "", cols: "30", rows: "10" },
+                domProps: { value: _vm.editdescription },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.editdescription = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.editdeadline,
+                    expression: "editdeadline"
+                  }
+                ],
+                staticClass: "form-control mt-3",
+                attrs: { type: "email", placeholder: "Enter deadline" },
+                domProps: { value: _vm.editdeadline },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.editdeadline = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.newstatus,
+                      expression: "newstatus"
+                    }
+                  ],
+                  staticClass: "form-control mt-3",
+                  attrs: { id: "dropdown" },
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.newstatus = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { disabled: "", value: "" } }, [
+                    _vm._v("Status")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", [_vm._v("Pending")]),
+                  _vm._v(" "),
+                  _c("option", [_vm._v("Completed")])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-btn",
+            {
+              staticClass: "mt-3 text-white",
+              attrs: { variant: "success", block: "" },
+              on: {
+                click: function($event) {
+                  return _vm.updateModal(_vm.taskid)
+                }
+              }
+            },
+            [_vm._v("Update")]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-btn",
+            {
+              staticClass: "mt-3 text-white",
+              attrs: { variant: "danger", block: "" }
+            },
+            [_vm._v("Cancel")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-modal",
+        {
+          ref: "deletemodal",
+          attrs: { "hide-footer": "", title: "Using Component Methods" }
+        },
+        [
+          _c("div", { staticClass: "d-block text-center" }, [
+            _c("h3", [_vm._v("Are you sure you want to delete modal")])
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-btn",
+            {
+              staticClass: "mt-3 text-danger",
+              attrs: { variant: "outline-danger", block: "" }
+            },
+            [_vm._v("Yes")]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-btn",
+            {
+              staticClass: "mt-3 text-primary",
+              attrs: { variant: "outline-primary", block: "" }
+            },
+            [_vm._v("No")]
           )
         ],
         1
       )
-    ])
-  ])
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass:
+          "alltasks border-bottom border-secondary d-block p-3 active",
+        attrs: { href: "#/task" }
+      },
+      [
+        _c("i", {
+          staticClass: "fa fa-tasks",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v("  All Tasks")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "today d-block p-3", attrs: { href: "#/task" } },
+      [
+        _c("i", {
+          staticClass: "fa fa-list-ol",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v("  Today's Tasks (10)")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "needaction d-block p-3", attrs: { href: "#/task" } },
+      [
+        _c("i", {
+          staticClass: "fa fa-reply",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v("  Action Needed Taks (25)")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "important d-block p-3", attrs: { href: "#/task" } },
+      [
+        _c("i", {
+          staticClass: "fa fa-exclamation-circle",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v("  Important Tasks (13)")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "pending d-block p-3", attrs: { href: "#/task" } },
+      [
+        _c("i", {
+          staticClass: "fa fa-clock-o",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v("  Pending Taks (15)")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "deleted d-block p-3", attrs: { href: "#/task" } },
+      [
+        _c("i", {
+          staticClass: "fa fa-trash-o",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v("  Deleted Tasks")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "task-type p-3" }, [
+      _c("h4", [_vm._v("All Tasks")])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-81902008", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-4126c8c2", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 444:
+/***/ 439:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1310)
+  __webpack_require__(1263)
+  __webpack_require__(1265)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1312)
+var __vue_script__ = __webpack_require__(1267)
 /* template */
-var __vue_template__ = __webpack_require__(1313)
+var __vue_template__ = __webpack_require__(1268)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11866,7 +985,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/form-layouts.vue"
+Component.options.__file = "resources/components/pages/tasks.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -11875,9 +994,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-81902008", Component.options)
+    hotAPI.createRecord("data-v-4126c8c2", Component.options)
   } else {
-    hotAPI.reload("data-v-81902008", Component.options)
+    hotAPI.reload("data-v-4126c8c2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -11889,86 +1008,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 526:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(527)
-}
-var normalizeComponent = __webpack_require__(42)
-/* script */
-var __vue_script__ = __webpack_require__(529)
-/* template */
-var __vue_template__ = __webpack_require__(530)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/components/pages/card/card.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-15e33d3a", Component.options)
-  } else {
-    hotAPI.reload("data-v-15e33d3a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 527:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(528);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("d6b775a8", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 528:
+/***/ 693:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11976,117 +1016,1173 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
+exports.push([module.i, "\nbody {\n  background: #f9f9f9;\n  height: 1000px;\n}\n\np {\n  margin-top: 0;\n}\n\n.my-scrollbar {\n  width: 35%;\n  min-width: 300px;\n  max-height: 450px;\n}\n\n.scroll-me {\n  background: #EEE;\n  min-width: 750px;\n}\n\n.kolom {\n  background: #2196F3;\n  width: 150px;\n  height: 150px;\n  float: left;\n  display: inline-block;\n  margin: 15px;\n}\n\n.clearfix {\n  clear: both;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 529:
+/***/ 694:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".vue-scrollbar-transition, .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  transition: all 0.5s ease;\n  -moz-transition: all 0.5s ease;\n  -webkit-transition: all 0.5s ease;\n  -o-transition: all 0.5s ease;\n}\n.vue-scrollbar-transition--scrollbar {\n  transition: opacity 0.5s linear;\n  -moz-transition: opacity 0.5s linear;\n  -webkit-transition: opacity 0.5s linear;\n  -o-transition: opacity 0.5s linear;\n}\n\n.vue-scrollbar__wrapper {\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  background: white;\n}\n.vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-horizontal {\n  opacity: 1;\n}\n.vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  opacity: 0.5;\n  position: absolute;\n  background: transparent;\n}\n.vue-scrollbar__scrollbar-vertical:hover, .vue-scrollbar__scrollbar-horizontal:hover {\n  background: rgba(0, 0, 0, 0.3);\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar, .vue-scrollbar__scrollbar-horizontal .scrollbar {\n  position: relative;\n  background: rgba(0, 0, 0, 0.5);\n  cursor: default;\n}\n.vue-scrollbar__scrollbar-vertical {\n  width: 10px;\n  height: 100%;\n  top: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar {\n  width: 10px;\n}\n.vue-scrollbar__scrollbar-horizontal {\n  height: 10px;\n  width: 100%;\n  bottom: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-horizontal .scrollbar {\n  height: 10px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 695:
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * Copyright (c) 2016 Naufal Rabbani (http://github.com/BosNaufal),
+ * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
+ * ,
+ * ,Vue 2 Scrollbar @ Version 0.0.2,
+ * 
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["Vue2Scrollbar"] = factory();
+	else
+		root["Vue2Scrollbar"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "../dist/";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
+
+/* globals __VUE_SSR_CONTEXT__ */
+
+// this module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier /* server only */
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = injectStyles
+  }
+
+  if (hook) {
+    var functional = options.functional
+    var existing = functional
+      ? options.render
+      : options.beforeCreate
+    if (!functional) {
+      // inject component registration as beforeCreate hook
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    } else {
+      // register for functioal component in vue file
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return existing(h, context)
+      }
+    }
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__ = __webpack_require__(9);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'card',
-    data: function data() {
-        return {
-            show: true,
-            isActive: false
-        };
-    },
+/* template */
 
-    methods: {
-        hide: function hide() {
-            this.isActive = true;
-        }
-    },
-    mounted: function mounted() {},
-    props: {
-        title: {
-            required: false
-        }
-    },
-    destroy: function destroy() {}
-});
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/components/vue-scrollbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] vue-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7ec59f76", Component.options)
+  } else {
+    hotAPI.reload("data-v-7ec59f76", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
 
 /***/ }),
-
-/***/ 530:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h3", {
-        staticClass: "card-title",
-        domProps: { innerHTML: _vm._s(_vm.title) }
-      }),
-      _vm._v(" "),
-      _c("span", { staticClass: "float-right" }, [
-        _c("i", {
-          staticClass: "fa fa-fw ti-angle-up",
-          class: { rotate: _vm.show },
-          on: {
-            click: function($event) {
-              _vm.show = !_vm.show
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("i", {
-          staticClass: "fa fa-fw ti-close removecard",
-          on: { click: _vm.hide }
-        })
-      ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        directives: [
-          {
-            name: "show",
-            rawName: "v-show",
-            value: _vm.show,
-            expression: "show"
-          }
-        ],
-        staticClass: "card-body"
-      },
-      [_vm._t("default")],
-      2
-    )
-  ])
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+
+  props: {
+    draggingFromParent: Boolean,
+    scrolling: Number,
+    wrapper: Object,
+    area: Object,
+    onChangePosition: Function,
+    onDragging: Function,
+    onStopDrag: Function
+  },
+
+  data: function data() {
+    return {
+      width: 0,
+      dragging: false,
+      start: 0
+    };
+  },
+
+
+  watch: {
+    'wrapper.width': function wrapperWidth(val, old) {
+      this.calculateSize(this);
+    },
+    'area.width': function areaWidth(val, old) {
+      this.calculateSize(this);
+    }
+  },
+
+  methods: {
+    startDrag: function startDrag(e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      e = e.changedTouches ? e.changedTouches[0] : e;
+
+      // Prepare To Drag
+      this.dragging = true;
+      this.start = e.clientX;
+    },
+    onDrag: function onDrag(e) {
+
+      if (this.dragging) {
+
+        // Make The Parent being in the Dragging State
+        this.onDragging();
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        e = e.changedTouches ? e.changedTouches[0] : e;
+
+        var xMovement = e.clientX - this.start;
+        var xMovementPercentage = xMovement / this.wrapper.width * 100;
+
+        // Update the last e.clientX
+        this.start = e.clientX;
+
+        // The next Horizontal Value will be
+        var next = this.scrolling + xMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'horizontal');
+      }
+    },
+    stopDrag: function stopDrag(e) {
+      if (this.dragging) {
+        // Parent Should Change the Dragging State
+        this.onStopDrag();
+        this.dragging = false;
+      }
+    },
+    jump: function jump(e) {
+
+      var isContainer = e.target === this.$refs.container;
+
+      if (isContainer) {
+
+        // Get the Element Position
+        var position = this.$refs.scrollbar.getBoundingClientRect();
+
+        // Calculate the horizontal Movement
+        var xMovement = e.clientX - position.left;
+        var centerize = this.width / 2;
+        var xMovementPercentage = xMovement / this.wrapper.width * 100 - centerize;
+
+        // Update the last e.clientX
+        this.start = e.clientX;
+
+        // The next Horizontal Value will be
+        var next = this.scrolling + xMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'horizontal');
+      }
+    },
+    calculateSize: function calculateSize(source) {
+      // Scrollbar Width
+      this.width = source.wrapper.width / source.area.width * 100;
+    }
+  },
+
+  mounted: function mounted() {
+    this.calculateSize(this);
+
+    // Put the Listener
+    document.addEventListener("mousemove", this.onDrag);
+    document.addEventListener("touchmove", this.onDrag);
+    document.addEventListener("mouseup", this.stopDrag);
+    document.addEventListener("touchend", this.stopDrag);
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Remove the Listener
+    document.removeEventListener("mousemove", this.onDrag);
+    document.removeEventListener("touchmove", this.onDrag);
+    document.removeEventListener("mouseup", this.stopDrag);
+    document.removeEventListener("touchend", this.stopDrag);
+  }
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+
+  props: {
+    draggingFromParent: Boolean,
+    scrolling: Number,
+    wrapper: Object,
+    area: Object,
+    onChangePosition: Function,
+    onDragging: Function,
+    onStopDrag: Function
+  },
+
+  data: function data() {
+    return {
+      height: 0,
+      dragging: false,
+      start: 0
+    };
+  },
+
+
+  watch: {
+    'wrapper.height': function wrapperHeight(val, old) {
+      this.calculateSize(this);
+    },
+    'area.height': function areaHeight(val, old) {
+      this.calculateSize(this);
+    }
+  },
+
+  methods: {
+    startDrag: function startDrag(e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      e = e.changedTouches ? e.changedTouches[0] : e;
+
+      // Prepare to drag
+      this.dragging = true, this.start = e.clientY;
+    },
+    onDrag: function onDrag(e) {
+
+      if (this.dragging) {
+
+        // Make The Parent being in the Dragging State
+        this.onDragging();
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        e = e.changedTouches ? e.changedTouches[0] : e;
+
+        var yMovement = e.clientY - this.start;
+        var yMovementPercentage = yMovement / this.wrapper.height * 100;
+
+        // Update the last e.clientY
+        this.start = e.clientY;
+
+        // The next Vertical Value will be
+        var next = this.scrolling + yMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'vertical');
+      }
+    },
+    stopDrag: function stopDrag(e) {
+      if (this.dragging) {
+        // Parent Should Change the Dragging State
+        this.onStopDrag();
+        this.dragging = false;
+      }
+    },
+    jump: function jump(e) {
+
+      var isContainer = e.target === this.$refs.container;
+
+      if (isContainer) {
+
+        // Get the Element Position
+        var position = this.$refs.scrollbar.getBoundingClientRect();
+
+        // Calculate the vertical Movement
+        var yMovement = e.clientY - position.top;
+        var centerize = this.height / 2;
+        var yMovementPercentage = yMovement / this.wrapper.height * 100 - centerize;
+
+        // Update the last e.clientY
+        this.start = e.clientY;
+
+        // The next Vertical Value will be
+        var next = this.scrolling + yMovementPercentage;
+
+        // Tell the parent to change the position
+        this.onChangePosition(next, 'vertical');
+      }
+    },
+    calculateSize: function calculateSize(source) {
+      // Scrollbar Height
+      this.height = source.wrapper.height / source.area.height * 100;
+    },
+    getSize: function getSize() {
+      // The Elements
+      var $scrollArea = this.$refs.container.parentElement;
+      var $scrollWrapper = $scrollArea.parentElement;
+
+      // Get new Elements Size
+      var elementSize = {
+        // Scroll Area Height and Width
+        scrollAreaHeight: $scrollArea.children[0].clientHeight,
+        scrollAreaWidth: $scrollArea.children[0].clientWidth,
+
+        // Scroll Wrapper Height and Width
+        scrollWrapperHeight: $scrollWrapper.clientHeight,
+        scrollWrapperWidth: $scrollWrapper.clientWidth
+      };
+      return elementSize;
+    }
+  },
+
+  mounted: function mounted() {
+    this.calculateSize(this);
+
+    // Put the Listener
+    document.addEventListener("mousemove", this.onDrag);
+    document.addEventListener("touchmove", this.onDrag);
+    document.addEventListener("mouseup", this.stopDrag);
+    document.addEventListener("touchend", this.stopDrag);
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Remove the Listener
+    document.removeEventListener("mousemove", this.onDrag);
+    document.removeEventListener("touchmove", this.onDrag);
+    document.removeEventListener("mouseup", this.stopDrag);
+    document.removeEventListener("touchend", this.stopDrag);
+  }
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _verticalScrollbar = __webpack_require__(7);
+
+var _verticalScrollbar2 = _interopRequireDefault(_verticalScrollbar);
+
+var _horizontalScrollbar = __webpack_require__(6);
+
+var _horizontalScrollbar2 = _interopRequireDefault(_horizontalScrollbar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+exports.default = {
+
+  props: {
+    classes: String,
+    styles: Object,
+    speed: {
+      type: Number,
+      default: 53
+    },
+    onMaxScroll: Function
+  },
+
+  components: {
+    VerticalScrollbar: _verticalScrollbar2.default,
+    HorizontalScrollbar: _horizontalScrollbar2.default
+  },
+
+  data: function data() {
+    return {
+      ready: false,
+      top: 0,
+      left: 0,
+      scrollAreaHeight: null,
+      scrollAreaWidth: null,
+      scrollWrapperHeight: null,
+      scrollWrapperWidth: null,
+      vMovement: 0,
+      hMovement: 0,
+      dragging: false,
+      start: { y: 0, x: 0 },
+      allowBodyScroll: false
+    };
+  },
+
+
+  methods: {
+    scroll: function scroll(e) {
+      var _this = this;
+
+      // Make sure the content height is not changed
+      this.calculateSize(function () {
+        // Set the wheel step
+        var num = _this.speed;
+
+        // DOM events
+        var shifted = e.shiftKey;
+        var scrollY = e.deltaY > 0 ? num : -num;
+        var scrollX = e.deltaX > 0 ? num : -num;
+
+        // Fix Mozilla Shifted Wheel~
+        if (shifted && e.deltaX == 0) scrollX = e.deltaY > 0 ? num : -num;
+
+        // Next Value
+        var nextY = _this.top + scrollY;
+        var nextX = _this.left + scrollX;
+
+        // Is it Scrollable?
+        var canScrollY = _this.scrollAreaHeight > _this.scrollWrapperHeight;
+        var canScrollX = _this.scrollAreaWidth > _this.scrollWrapperWidth;
+
+        // Vertical Scrolling
+        if (canScrollY && !shifted) _this.normalizeVertical(nextY);
+
+        // Horizontal Scrolling
+        if (shifted && canScrollX) _this.normalizeHorizontal(nextX);
+      });
+
+      // prevent Default only if scrolled content is not at the top/bottom
+      if (!this.allowBodyScroll) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    },
+
+
+    // DRAG EVENT JUST FOR TOUCH DEVICE~
+    startDrag: function startDrag(e) {
+      var _this2 = this;
+
+      this.touchEvent = e;
+
+      var evt = e.changedTouches ? e.changedTouches[0] : e;
+
+      // Make sure the content height is not changed
+      this.calculateSize(function () {
+        // Prepare to drag
+        _this2.dragging = true, _this2.start = { y: evt.pageY, x: evt.pageX };
+      });
+    },
+    onDrag: function onDrag(e) {
+      if (this.dragging) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Prevent Click Event When it dragging
+        if (this.touchEvent) {
+          this.touchEvent.preventDefault();
+          this.touchEvent.stopPropagation();
+        }
+
+        var evt = e.changedTouches ? e.changedTouches[0] : e;
+
+        // Invers the Movement
+        var yMovement = this.start.y - evt.clientY;
+        var xMovement = this.start.x - evt.clientX;
+
+        // Update the last e.client
+        this.start = { y: evt.clientY, x: evt.clientX
+
+          // The next Vertical Value will be
+        };var nextY = this.top + yMovement;
+        var nextX = this.left + xMovement;
+
+        this.normalizeVertical(nextY);
+        this.normalizeHorizontal(nextX);
+      }
+    },
+    stopDrag: function stopDrag(e) {
+      this.dragging = false;
+      this.touchEvent = false;
+    },
+    scrollToY: function scrollToY(y) {
+      this.normalizeVertical(y);
+    },
+    scrollToX: function scrollToX(x) {
+      this.normalizeHorizontal(x);
+    },
+    normalizeVertical: function normalizeVertical(next) {
+      var elementSize = this.getSize();
+
+      // Vertical Scrolling
+      var lowerEnd = elementSize.scrollAreaHeight - elementSize.scrollWrapperHeight;
+
+      // Max Scroll Down
+      var maxBottom = next > lowerEnd;
+      if (maxBottom) next = lowerEnd;
+
+      // Max Scroll Up
+      var maxTop = next < 0;
+      if (maxTop) next = 0;
+
+      // Update the Vertical Value if it's needed
+      var shouldScroll = this.top !== next;
+      this.allowBodyScroll = !shouldScroll;
+      if (shouldScroll) {
+        this.top = next, this.vMovement = next / elementSize.scrollAreaHeight * 100;
+
+        if (this.onMaxScroll && (maxTop || maxBottom)) {
+          this.onMaxScroll({ top: maxTop, bottom: maxBottom, right: false, left: false });
+        }
+      }
+    },
+    normalizeHorizontal: function normalizeHorizontal(next) {
+      var elementSize = this.getSize();
+
+      // Horizontal Scrolling
+      var rightEnd = elementSize.scrollAreaWidth - this.scrollWrapperWidth;
+
+      // Max Scroll Right
+      var maxRight = next > rightEnd;
+      if (maxRight) next = rightEnd;
+
+      // Max Scroll Left
+      var maxLeft = next < 0;
+      if (next < 0) next = 0;
+
+      // Update the Horizontal Value
+      var shouldScroll = this.left !== next;
+      this.allowBodyScroll = !shouldScroll;
+      if (shouldScroll) {
+        this.left = next, this.hMovement = next / elementSize.scrollAreaWidth * 100;
+
+        if (this.onMaxScroll && (maxRight || maxLeft)) {
+          this.onMaxScroll({ right: maxRight, left: maxLeft, top: false, bottom: false });
+        }
+      }
+    },
+    handleChangePosition: function handleChangePosition(movement, orientation) {
+      var _this3 = this;
+
+      // Make sure the content height is not changed
+      this.calculateSize(function () {
+        // Convert Percentage to Pixel
+        var next = movement / 100;
+        if (orientation == 'vertical') _this3.normalizeVertical(next * _this3.scrollAreaHeight);
+        if (orientation == 'horizontal') _this3.normalizeHorizontal(next * _this3.scrollAreaWidth);
+      });
+    },
+    handleScrollbarDragging: function handleScrollbarDragging() {
+      this.dragging = true;
+    },
+    handleScrollbarStopDrag: function handleScrollbarStopDrag() {
+      this.dragging = false;
+    },
+    getSize: function getSize() {
+      // The Elements
+      var $scrollArea = this.$refs.scrollArea;
+      var $scrollWrapper = this.$refs.scrollWrapper;
+
+      // Get new Elements Size
+      var elementSize = {
+        // Scroll Area Height and Width
+        scrollAreaHeight: $scrollArea.children[0].clientHeight,
+        scrollAreaWidth: $scrollArea.children[0].clientWidth,
+
+        // Scroll Wrapper Height and Width
+        scrollWrapperHeight: $scrollWrapper.clientHeight,
+        scrollWrapperWidth: $scrollWrapper.clientWidth
+      };
+      return elementSize;
+    },
+    calculateSize: function calculateSize(cb) {
+      if (typeof cb !== 'function') cb = null;
+
+      var elementSize = this.getSize();
+
+      if (elementSize.scrollWrapperHeight !== this.scrollWrapperHeight || elementSize.scrollWrapperWidth !== this.scrollWrapperWidth || elementSize.scrollAreaHeight !== this.scrollAreaHeight || elementSize.scrollAreaWidth !== this.scrollAreaWidth) {
+
+        // Scroll Area Height and Width
+        this.scrollAreaHeight = elementSize.scrollAreaHeight, this.scrollAreaWidth = elementSize.scrollAreaWidth,
+
+        // Scroll Wrapper Height and Width
+        this.scrollWrapperHeight = elementSize.scrollWrapperHeight, this.scrollWrapperWidth = elementSize.scrollWrapperWidth,
+
+        // Make sure The wrapper is Ready, then render the scrollbar
+        this.ready = true;
+
+        return cb ? cb() : false;
+      } else return cb ? cb() : false;
+    }
+  },
+
+  mounted: function mounted() {
+    this.calculateSize();
+
+    // Attach The Event for Responsive View~
+    window.addEventListener('resize', this.calculateSize);
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Remove Event
+    window.removeEventListener('resize', this.calculateSize);
+  }
+};
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _vueScrollbar = __webpack_require__(1);
+
+var _vueScrollbar2 = _interopRequireDefault(_vueScrollbar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = _vueScrollbar2.default;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__ = __webpack_require__(8);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/components/horizontal-scrollbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] horizontal-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-03d7e587", Component.options)
+  } else {
+    hotAPI.reload("data-v-03d7e587", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__ = __webpack_require__(10);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/components/vertical-scrollbar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] vertical-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-9fd7644e", Component.options)
+  } else {
+    hotAPI.reload("data-v-9fd7644e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.width < 100) ? _c('div', {
+    ref: "container",
+    staticClass: "vue-scrollbar__scrollbar-horizontal",
+    on: {
+      "click": _vm.jump
+    }
+  }, [_c('div', {
+    ref: "scrollbar",
+    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
+    style: ({
+      width: this.width + '%',
+      left: this.scrolling + '%'
+    }),
+    on: {
+      "touchstart": _vm.startDrag,
+      "mousedown": _vm.startDrag
+    }
+  })]) : _vm._e()])
 }
 var staticRenderFns = []
 render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-03d7e587", esExports)
   }
 }
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    ref: "scrollWrapper",
+    class: 'vue-scrollbar__wrapper' + (this.classes ? ' ' + this.classes : ''),
+    style: (this.styles),
+    on: {
+      "click": _vm.calculateSize
+    }
+  }, [_c('div', {
+    ref: "scrollArea",
+    class: 'vue-scrollbar__area' + (this.dragging ? ' ' : ' vue-scrollbar-transition'),
+    style: ({
+      marginTop: this.top * -1 + 'px',
+      marginLeft: this.left * -1 + 'px'
+    }),
+    on: {
+      "wheel": _vm.scroll,
+      "touchstart": _vm.startDrag,
+      "touchmove": _vm.onDrag,
+      "touchend": _vm.stopDrag
+    }
+  }, [_vm._t("default"), _vm._v(" "), (_vm.ready) ? _c('vertical-scrollbar', {
+    attrs: {
+      "area": {
+        height: _vm.scrollAreaHeight
+      },
+      "wrapper": {
+        height: _vm.scrollWrapperHeight
+      },
+      "scrolling": _vm.vMovement,
+      "dragging-from-parent": _vm.dragging,
+      "on-change-position": _vm.handleChangePosition,
+      "on-dragging": _vm.handleScrollbarDragging,
+      "on-stop-drag": _vm.handleScrollbarStopDrag
+    }
+  }) : _vm._e(), _vm._v(" "), (_vm.ready) ? _c('horizontal-scrollbar', {
+    attrs: {
+      "area": {
+        width: _vm.scrollAreaWidth
+      },
+      "wrapper": {
+        width: _vm.scrollWrapperWidth
+      },
+      "scrolling": _vm.hMovement,
+      "dragging-from-parent": _vm.dragging,
+      "on-change-position": _vm.handleChangePosition,
+      "on-dragging": _vm.handleScrollbarDragging,
+      "on-stop-drag": _vm.handleScrollbarStopDrag
+    }
+  }) : _vm._e()], 2)])
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7ec59f76", esExports)
+  }
+}
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.height < 100) ? _c('div', {
+    ref: "container",
+    staticClass: "vue-scrollbar__scrollbar-vertical",
+    on: {
+      "click": _vm.jump
+    }
+  }, [_c('div', {
+    ref: "scrollbar",
+    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
+    style: ({
+      height: _vm.height + '%',
+      top: _vm.scrolling + '%'
+    }),
+    on: {
+      "touchstart": _vm.startDrag,
+      "mousedown": _vm.startDrag
+    }
+  })]) : _vm._e()])
+}
+var staticRenderFns = []
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-9fd7644e", esExports)
+  }
+}
+
+/***/ })
+/******/ ]);
+});
 
 /***/ })
 

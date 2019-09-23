@@ -1375,6 +1375,23 @@ const routes = [{
                     href: '#/Gantt'
                 }]
             }
+        },
+        {
+            path: '/GanttProyecto',
+            component: resolve => require(['./components/pages/src/GanttProyecto.vue'], resolve),
+            meta: {
+                title: 'PROGRESO',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Proyecto',
+                    href: '#',
+                }, {
+                    html: 'Proyecto',
+                    href: '#/GanttProyecto'
+                }]
+            }
         }
     ]
 }, {

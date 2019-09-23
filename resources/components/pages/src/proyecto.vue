@@ -307,9 +307,7 @@
             },
             getOrgProyecto(id) {
                 let me = this;
-                axios.get('/org', {
-                    'id': id
-                })
+                axios.get(`/proyecto/orgs?id=${id}`)
                     .then(function (response) {
                         me.orgs = response.data;
                     })

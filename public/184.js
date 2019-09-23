@@ -1,22 +1,22 @@
-webpackJsonp([179],{
+webpackJsonp([184],{
 
-/***/ 2356:
+/***/ 2221:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2357);
+var content = __webpack_require__(2222);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("e466cbda", content, false, {});
+var update = __webpack_require__(26)("a6b1c016", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!./forgot_password.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!./forgot_password.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cd28ef0\",\"scoped\":false,\"hasInlineConfig\":true}!./mini_sidebar.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cd28ef0\",\"scoped\":false,\"hasInlineConfig\":true}!./mini_sidebar.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2357:
+/***/ 2222:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,20 +35,19 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\nhtml {\n    height : 100%;\n}\nbody {\n    font-family             : 'Open Sans', sans-serif;\n    background              : radial-gradient(ellipse at center, #63B9B4 0%, #008C83 100%);\n    -webkit-background-size : cover;\n    -moz-background-size    : cover;\n    -o-background-size      : cover;\n    background-size         : cover;\n    height                  : 100%;\n    padding-top             : 70px;\n    color : #fff;\n}\n.box {\n    padding          : 19px 15px;\n    margin-bottom    : 70px;\n}\n.box input[type='submit'] {\n    margin : 25px 0 20px 0;\n}\n.form-group {\n    margin-bottom: 25px;\n}\n.submit-btn {\n    background-color: rgba(255,255,255, .2);\n}\n.btn:hover, .btn:focus, .btn.focus {\n    color: #fff;\n}\n@media screen and (min-width : 450px) {\n.box {\n        padding : 36px 35px;\n}\n}\n.animated {\n    -webkit-animation-duration  : 1s;\n    animation-duration          : 1s;\n    -webkit-animation-fill-mode : both;\n    animation-fill-mode         : both;\n}\n@-webkit-keyframes fadeInUp {\n0% {\n        opacity           : 0;\n        -webkit-transform : translateY(20px);\n        transform         : translateY(20px);\n}\n100% {\n        opacity           : 1;\n        -webkit-transform : translateY(0);\n        transform         : translateY(0);\n}\n}\n@keyframes fadeInUp {\n0% {\n        opacity           : 0;\n        -webkit-transform : translateY(20px);\n        -ms-transform     : translateY(20px);\n        transform         : translateY(20px);\n}\n100% {\n        opacity           : 1;\n        -webkit-transform : translateY(0);\n        -ms-transform     : translateY(0);\n        transform         : translateY(0);\n}\n}\n.fadeInUp {\n    -webkit-animation-name : fadeInUp;\n    animation-name         : fadeInUp;\n    transition             : transform ease-in 200ms;\n}\n.checkbox label {\n    padding-left : 0;\n}\n.forgot_Form .email {\n    border-radius: 20px;\n}\n.enter_email, .check_email {\n    margin-top : 18px;\n}\n.help-block {\n    color : #fecfb0;\n}\n.btn-top {\n    margin-top : 20px !important;\n}\na:hover, a:focus {\n    text-decoration : none;\n}\n.has-error .help-block {\n    color : #C45555;\n    float : left;\n}\n.err-text {\n    color : #c15050;\n}\n.btn:focus, .btn:active:focus {\n    outline : 0;\n}\n.has-error .form-control, .has-error .form-control:focus {\n    border-color : #C45555;\n}\n.text-danger {\n    color: #ff6666;\n}\n.reset-link {\n    color: #ddd;\n}\n.reset-link:hover {\n    color: #eee;\n}\n.preloader {\n    position            : fixed;\n    width               : 100%;\n    height              : 100%;\n    top                 : 0;\n    left                : 0;\n    z-index             : 100000;\n    backface-visibility : hidden;\n    background          : #ffffff;\n}\n.loader_img {\n    width               : 50px;\n    height              : 50px;\n    position            : absolute;\n    left                : 50%;\n    top                 : 50%;\n    background-position : center;\n    margin              : -25px 0 0 -25px;\n}\n.box h3{\n    margin-top:20px;\n    margin-bottom:20px;\n}\n.submit-btn{\n    color:#fff;\n}\n.hidden{\n    display:none;\n}", ""]);
+exports.push([module.i, "\nbody.mini #menu .navigation .menu-icon {\n    text-align: center;\n    font-size: 20px;\n}\nbody.mini #menu .navigation > li > a {\n    padding: 14px 24px;\n}\nbody.mini #menu .navigation a {\n    padding: 11px 24px;\n}\nbody.mini #menu .navigation a.index {\n    padding: 17px 24px 17px 40px;\n}\nbody.mini .left-side,\nbody.mini .sidebar,\nbody.mini .menu-dropdown > a,\nbody.mini #menu .navigation {\n    width: 80px;\n}\nbody.mini .right-side {\n    margin-left: 80px;\n}\n@media screen and (max-width: 992px) {\nbody.mini .right-side {\n        margin-left: 0;\n}\nbody.mini .relative .right-side {\n        margin-left: -160px;\n}\n}\n@media screen and (min-width: 992px) {\nbody.mini .right-side.strech {\n        margin-left: 0;\n}\n}\n@media screen and (width: 992px) {\nbody.mini .left-side {\n        top: 0;\n}\n}\n\n\n/* drop list open on hover */\nbody.mini .dropdown {\n    position: relative;\n    display: inline-block;\n}\nbody.mini .menu-dropdown,\nbody.mini #menu .navigation > li:not(.menu-dropdown) > a {\n    position: relative;\n    width: 80px;\n}\nbody.mini #menu .menu-dropdown > ul,\nbody.mini #menu .menu-dropdown-open-ul {\n    position: absolute;\n    width: 250px !important;\n    top: 0;\n    right: -250px;\n    z-index: 2;\n    display: none;\n    overflow-y: auto;\n}\nbody.mini #menu .navigation > li:hover > a {\n    background-color: #eee;\n    color: #33CC99;\n}\nbody.mini #menu .menu-dropdown:hover > ul,\nbody.mini #menu .menu-dropdown:hover > ul.collapse {\n    display: block;\n    height: auto;\n    z-index: 1000;\n    background-color: #fff;\n    box-shadow: 0 0 15px #CCC;\n}\nbody.mini #menu .menu-dropdown:hover > a:after {\n    position: absolute;\n    top: 17px;\n    right: 0;\n    width: 0;\n    height: 0;\n    content: \"\";\n    border-top: 10px solid transparent;\n    border-right: 10px solid #2E576B;\n    border-bottom: 10px solid transparent;\n    border-left: 0;\n}\nbody.mini #menu .navigation {\n    padding: 4px 0 15px;\n    border-bottom: 0;\n}\nbody.mini .nav_profile .profile-left {\n    padding: 7px 13px 7px;\n    border: 0;\n}\nbody.mini #menu>.navigation .menu-dropdown>a {\n    text-align: center;\n}\nbody.mini #menu .menu-dropdown .sidebarbottom {\n    top: auto;\n    bottom: 0;\n}\nbody.mini #menu>.navigation>li>a .mm-text,\nbody.mini #menu>.navigation>li>a .fa.arrow,\nbody.mini .content-profile {\n    display: none;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2358:
+/***/ 2223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(733);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__);
+/* WEBPACK VAR INJECTION */(function($) {//
 //
 //
 //
@@ -81,147 +80,132 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "image_magnifier",
+    name: "mini_sidebar",
     mounted: function mounted() {
         "use strict";
 
         $(document).ready(function () {
-
-            var input_field = $("input[name=email]");
-
-            $('button[type="submit"]').on('click', function (e) {
-                e.preventDefault();
-
-                if (input_field.val() != "") {
-                    $(".enter_email").addClass("hidden");
-                    $(".check_email").removeClass("hidden");
-                    $('#email, .signup-signin').addClass('hidden');
-                    $('.submit-btn').addClass('animated fadeInUp');
-                    $('button[type="submit"]').html("Reset Password").removeClass("btn-primary btn-block").addClass("btn-success").on('click', function () {
-                        window.location.href = '#/reset_password';
-                    });
-                } else {
-                    var error_msg = "<p>Sorry, Enter Your Registered email</p>";
-                    $(".enter_email").addClass("err-text animated fadeInUp").html(error_msg);
-                }
-            });
-
-            $("#email").on('keypress focus', function () {
-                var element = 'Enter your Registered email';
-                $(".enter_email").removeClass("text-danger animated fadeInUp").html(element);
-            });
+            $("body").addClass("mini_sidebar");
+            //leftmenu init
+            if ($(window).width() >= 992) {
+                $(".sidebar-toggle").on("click", function (e) {
+                    e.preventDefault();
+                    if ($("body").hasClass("mini")) {
+                        $("body").removeClass("mini");
+                        $("#menu").find("li").has("ul").children("a").off("click");
+                        $("#menu").find("li").has("ul").children("a").on("click", function (e) {
+                            e.preventDefault();
+                            $(this).parent("li").toggleClass("active").children("ul").collapse("toggle");
+                            $(this).parent("li").siblings().removeClass("active").children("ul.in").collapse("hide");
+                        });
+                    } else {
+                        $("body").addClass("mini");
+                        $(".sub-menu").css("height", "auto");
+                        $('.menu-dropdown>a').off("click").on("click", function (e) {
+                            e.preventDefault();
+                        });
+                        $("#menu").find('ul>.menu-dropdown').hover(function () {
+                            var sideoffset = $(".sidebar").offset();
+                            var submenuoffset = $(this).children("ul").offset();
+                            if (sideoffset.top + $(".sidebar").height() < submenuoffset.top + $(this).children("ul").height()) {
+                                $(this).children("ul").addClass("sidebarbottom");
+                            }
+                        });
+                    }
+                });
+            }
         });
     },
-    destroyed: function destroyed() {}
+    destroyed: function destroyed() {
+        location.reload();
+    }
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(526)))
 
 /***/ }),
 
-/***/ 2359:
+/***/ 2224:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "col-lg-4 col-10 col-sm-6 m-auto  box animated fadeInUp"
-          },
-          [
-            _c("div", { staticClass: "text-center " }, [
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: { src: __webpack_require__(762), alt: "Clear logo" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("h3", { staticClass: "text-center" }, [
-              _vm._v("Forgot Password\n                ")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "text-center enter_email" }, [
-              _vm._v(
-                "\n                    Enter your Registered email\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1)
-          ]
-        )
-      ])
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "text-center check_email hidden" }, [
-      _vm._v(
-        "\n                    Check your email for Reset link\n                    "
-      ),
-      _c("br"),
-      _c("br"),
+    return _c("div", [
+      _c("div", { staticClass: "outer" }, [_c("pre", [_vm._v("code")])]),
       _vm._v(" "),
-      _c("u", [
-        _c(
-          "a",
-          { staticClass: "reset-link", attrs: { href: "javascript:void(0)" } },
-          [_vm._v("Resend the link")]
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "form",
-      {
-        staticClass: "forgot_Form text-center",
-        attrs: { method: "POST", id: "forgot_password" }
-      },
-      [
-        _c("div", { staticClass: "form-group" }, [
-          _c("input", {
-            staticClass: "form-control email pl-3",
-            attrs: {
-              type: "email",
-              name: "email",
-              id: "email",
-              placeholder: "Email"
-            }
-          })
+      _c("div", { staticClass: "col-lg-12" }, [
+        _c("p", { staticClass: "text-justify" }, [
+          _vm._v(
+            "\n                Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at,\n            congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim\n            eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat.\n            Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu\n            ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare.\n        "
+          )
         ]),
         _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn submit-btn",
-            attrs: { type: "submit", value: "Reset Your Password" }
-          },
-          [
-            _vm._v(
-              "\n                        Retrieve Password\n                    "
-            )
-          ]
-        )
-      ]
-    )
+        _c("p", [
+          _vm._v(
+            "\n                Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac,\n            pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod\n            congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-justify" }, [
+          _vm._v(
+            "\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut\n            imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis\n            gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac\n            eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum\n            sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing\n            justo tristique enim pharetra, nec ultricies metus sagittis.Duis varius id massa ut pellentesque.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "     Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper,\n            vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit\n            amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis\n            placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante\n            vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue\n            lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae.\n            Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a\n            purus. Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna.\n            Proin ac sem nisl.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "     Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus\n            sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus\n            viverra. Suspendisse molestie at leo sit amet volutpat. et euismod tellus viverra.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "clearfix" }),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-justify" }, [
+          _vm._v(
+            "\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget,\n            laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla,\n            velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum\n            ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus\n            neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim\n            pharetra, nec ultricies metus sagittis. Duis varius id massa ut pellentesque. Nulla commodo erat eu\n            mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "clearfix" })
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -229,25 +213,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-fdd3442a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7cd28ef0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 522:
+/***/ 506:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2356)
+  __webpack_require__(2221)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2358)
+var __vue_script__ = __webpack_require__(2223)
 /* template */
-var __vue_template__ = __webpack_require__(2359)
+var __vue_template__ = __webpack_require__(2224)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -264,7 +248,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/forgot_password.vue"
+Component.options.__file = "resources/components/pages/mini_sidebar.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -273,9 +257,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fdd3442a", Component.options)
+    hotAPI.createRecord("data-v-7cd28ef0", Component.options)
   } else {
-    hotAPI.reload("data-v-fdd3442a", Component.options)
+    hotAPI.reload("data-v-7cd28ef0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -10656,21 +10640,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-
-/***/ 733:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!function(e){"use strict";var t=function(e,t){this.init("magnify",e,t)};t.prototype={constructor:t,init:function(t,n,r){var i="mousemove",s="mouseleave";this.type=t;this.$element=e(n);this.options=this.getOptions(r);this.nativeWidth=0;this.nativeHeight=0;this.$element.wrap('<div class="magnify" >');this.$element.parent(".magnify").append('<div class="magnify-large" >');this.$element.siblings(".magnify-large").css("background","url('"+this.$element.attr("src")+"') no-repeat");this.$element.parent(".magnify").on(i+"."+this.type,e.proxy(this.check,this));this.$element.parent(".magnify").on(s+"."+this.type,e.proxy(this.check,this))},getOptions:function(t){t=e.extend({},e.fn[this.type].defaults,t,this.$element.data());t.delay&&typeof t.delay=="number"&&(t.delay={show:t.delay,hide:t.delay});return t},check:function(t){var n=e(t.currentTarget),r=n.children("img"),i=n.children(".magnify-large");if(!this.nativeWidth&&!this.nativeHeight){var s=new Image;s.src=r.attr("src");this.nativeWidth=s.width;this.nativeHeight=s.height}else{var o=n.offset(),u=t.pageX-o.left,a=t.pageY-o.top;u<n.width()&&a<n.height()&&u>0&&a>0?i.fadeIn(100):i.fadeOut(100);if(i.is(":visible")){var f=Math.round(u/n.width()*this.nativeWidth-i.width()/2)*-1,l=Math.round(a/n.height()*this.nativeHeight-i.height()/2)*-1,c=f+"px "+l+"px",h=u-i.width()/2,p=a-i.height()/2;i.css({left:h,top:p,backgroundPosition:c})}}}};e.fn.magnify=function(n){return this.each(function(){var r=e(this),i=r.data("magnify"),s=typeof n=="object"&&n;i||r.data("tooltip",i=new t(this,s));typeof n=="string"&&i[n]()})};e.fn.magnify.Constructor=t;e.fn.magnify.defaults={delay:0};e(window).on("load",function(){e('[data-toggle="magnify"]').each(function(){var t=e(this);t.magnify()})})}(__webpack_provided_window_dot_jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(526)))
-
-/***/ }),
-
-/***/ 762:
-/***/ (function(module, exports) {
-
-module.exports = "/images/logo.png?a7b4575e3769bae62092c494870b5d8a";
 
 /***/ })
 

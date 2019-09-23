@@ -1,12 +1,12 @@
-webpackJsonp([92],{
+webpackJsonp([186],{
 
-/***/ 2259:
+/***/ 2191:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2260);
+var content = __webpack_require__(2192);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2260:
+/***/ 2192:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "/*pricing table 1*/\n.span-btn, .span-btn:hover {\n    
 
 /***/ }),
 
-/***/ 2261:
+/***/ 2193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -205,7 +205,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2262:
+/***/ 2194:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -708,13 +708,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2259)
+  __webpack_require__(2191)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2261)
+var __vue_script__ = __webpack_require__(2193)
 /* template */
-var __vue_template__ = __webpack_require__(2262)
+var __vue_template__ = __webpack_require__(2194)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

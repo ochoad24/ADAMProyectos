@@ -1,22 +1,22 @@
 webpackJsonp([48],{
 
-/***/ 1758:
+/***/ 1468:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1759);
+var content = __webpack_require__(1469);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("aecf985e", content, false, {});
+var update = __webpack_require__(26)("24f644bd", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e06e382\",\"scoped\":false,\"hasInlineConfig\":true}!./circle_sliders.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e6af6c5\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./advanced_date_pickers.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e6af6c5\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./advanced_date_pickers.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1759:
+/***/ 1469:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,100 +35,28 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.demo {\n    height : 300px;\n    width  : 100%;\n}\n.demo > div:nth-child(2) {\n    position : relative;\n    width    : 350px;\n    margin   : auto\n}\n.demo .demo_hours {\n    position : absolute;\n    left     : 10px;\n    top      : 10px;\n}\n.demo .demo_minutes {\n    position : absolute;\n    left     : 50px;\n    top      : 50px;\n}\n.demo .demo_seconds {\n    position : absolute;\n    left     : 90px;\n    top      : 90px;\n}\n.m-b-10 {\n    margin-bottom : 10px;\n}\n.jqstooltip{\n    z-index: 99 !important;\n}\n.exact-size div,.colors div{\n    display: inline-block;\n}\n.custom_small{\n    margin-top: -20px;\n}", ""]);
+exports.push([module.i, "\n.vdp-datepicker input {\n    padding: 0;\n}\nhtml{\n    background-color: #fff;\n}\n@media(max-width: 320px){\n#datepickers-container .datepicker.active{\n        left: 60px !important;\n}\n}\n.form-group{\n    margin-bottom: 0.5rem;\n}\n.date_picker input,.clockpicker-with-callbacks .date_picker div{\n    width: 100%;\n    border:none;\n}\n.date_picker input:focus{\n    outline: none;\n}\n.vdp-datepicker__calendar .cell.selected{\n    background-color: #428bca !important;\n    color:#fff;\n}\n.content{\n    min-height: 145vh;\n}\n.popover-container,.input-group .form-control{\n    z-index: inherit !important;\n}\n.picker .popover-origin,.flatpickr-calendar.open{\n    z-index: 99 !important;\n}\n.flatpickr-day.selected{\n    background-color: #428bca !important;\n}\n.flatpickr-input[readonly=\"readonly\"]{\n    background-color: #fff;\n}\n.clockpicker-with-callbacks .date_picker div{\n    width: 100%;\n    left:-18px;\n}\n@media(max-width: 320px){\n.popover-origin.direction-bottom.align-left{\n        left: -47px !important;\n}\n.clockpicker-with-callbacks .date_picker .vdp-datepicker__calendar{\n        width: 270px;\n}\n.flatpickr-calendar.open{\n        right:6px !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1760:
+/***/ 1470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__ = __webpack_require__(607);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_custom_js_sparkline_jquery_flot_spline_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__ = __webpack_require__(581);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__card_card_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker__ = __webpack_require__(587);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component__ = __webpack_require__(704);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css__ = __webpack_require__(706);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css__);
 //
 //
 //
@@ -250,154 +178,53 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_2_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"]);
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "circle_sliders",
-    components: {
-
-        circleslider: __WEBPACK_IMPORTED_MODULE_3_vue_circle_slider__["default"].VueCircleSlider,
-        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
-    },
+    name: "advanced_date_pickers",
     data: function data() {
         return {
-            sliderValue: 20,
-            val2: 0,
-            val3: 0,
-            val4: 0,
-            val5: 0,
-            val6: 0,
-            val7: 0
+            datebasic: new Date(),
+            datetwo: new Date(),
+            multiple: new Date(),
+            datetime: new Date(),
+            date: new Date(),
+            configbasic: {
+                dateFormat: 'd-m-y'
+            },
+            config: {
+                enableTime: true,
+                dateFormat: 'd-m-y h:i'
+            },
+            configtwo: {
+                minDate: "today",
+                maxDate: new Date().fp_incr(14)
+            },
+            configmultiple: {
+                mode: "multiple",
+                dateFormat: "Y-m-d"
+            },
+            range: {
+                mode: "range"
+            },
+            disable: {
+                disable: ["2018-01-30", "2018-01-21", "2018-01-08", new Date(2018, 1, 1)],
+                dateFormat: "Y-m-d"
+            }
         };
     },
 
-    mounted: function mounted() {
-        "use strict";
-
-        $(document).ready(function () {
-            // spark line charts js start
-            $(".linechart").sparkline([5, 1, 7, 8, 2, 6, 4, 7, 4, 2, 4], {
-                type: 'line',
-                height: "50px",
-                width: "80px;",
-                lineColor: '#428bca',
-                fillColor: 'rgba(66,139,202,0.5)'
-            });
-            $(".barchart").sparkline([5, 6, 7, 2, 0, -4, -2, 4], {
-                type: 'bar',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                barColor: "#428bca",
-                negBarColor: '#fb8678'
-            });
-            $(".stackedbarchart").sparkline([[5, 4], [4, 7], [7, 3], [3, 5], [6, 3], [2, 5]], {
-                type: 'bar',
-                zeroColor: '#dcdcdc',
-                nullColor: '#dcdcdc ',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                stackedBarColor: ['#fb8678', '#428bca']
-            });
-            $(".tristatechart").sparkline([1, 1, 0, 1, -1, -1, 1, -1, 0, 0, 1, 1], {
-                type: 'tristate',
-                height: "50px",
-                barWidth: "8px;",
-                barSpace: "3px",
-                posBarColor: '#22d69d',
-                negBarColor: '#fb8678',
-                zeroBarColor: '#dcdcdc'
-            });
-            $(".bulletchart").sparkline([10, 12, 12, 9, 7], {
-                type: 'bullet',
-                height: "30px",
-                width: "80px",
-                targetColor: '#fb8678',
-                performanceColor: '#4fc1e9',
-                rangeColors: ['#ffb65f', '#fb8678', '#428bca']
-            });
-            $(".piechart").sparkline([3, 4, 1, 6, 3, 5], {
-                type: 'pie',
-                width: '50px',
-                height: '50px',
-                sliceColors: ['#428bca', '#22d69d', '#4fc1e9', '#fb8678', '#ffb65f']
-            });
-            $(".discretechart").sparkline([4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 2, 3, 5, 1, 6], {
-                type: 'discrete',
-                height: "50px",
-                Width: "80px",
-                lineColor: '#428bca'
-            });
-            $(".boxchart").sparkline([4, 27, 34, 52, 54, 59, 61, 68, 78, 82, 85, 87, 91, 93, 100], {
-                type: 'box',
-                width: '80px',
-                height: '50px',
-                boxFillColor: '#4fc1e9',
-                whiskerColor: '#ffb65f',
-                medianColor: '#fb8678',
-                targetColor: '#22d69d'
-            });
-            $('#compositeline').sparkline('html', {
-                fillColor: false,
-                changeRangeMin: 0,
-                chartRangeMax: 10,
-                width: '100px',
-                height: '50px',
-                lineColor: '#428bca'
-            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
-                composite: true,
-                fillColor: false,
-                changeRangeMin: 0,
-                chartRangeMax: 10,
-                width: '100px',
-                height: '50px',
-                lineColor: '#fb8678'
-            });
-            $('#compositebar').sparkline('html', {
-                type: 'bar',
-                barWidth: "10px;",
-                barSpace: "5px",
-                height: '50px',
-                barColor: "#428bca"
-            }).sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
-                composite: true,
-                fillColor: false,
-                barWidth: "10px;",
-                barSpace: "5px",
-                height: '50px',
-                lineColor: '#ffb65f'
-            });
-            $('#normalline').sparkline('html', {
-                fillColor: false,
-                normalRangeMin: -1,
-                normalRangeMax: 8,
-                width: '120px',
-                height: '50px',
-                lineColor: '#428bca'
-            });
-            $('#normalExample').sparkline('html', {
-                fillColor: false,
-                normalRangeMin: 80,
-                normalRangeMax: 95,
-                normalRangeColor: '#dcdcdc'
-            });
-            $('#discrete2').sparkline('html', {
-                type: 'discrete',
-                thresholdColor: '#fb8678',
-                thresholdValue: 4,
-                height: "50px",
-                Width: "80px",
-                lineColor: '#428bca'
-            });
-        });
+    components: {
+        card: __WEBPACK_IMPORTED_MODULE_1__card_card_vue___default.a,
+        Datepicker: __WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker___default.a,
+        flatPickr: __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component___default.a
     },
+    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(526)))
 
 /***/ }),
 
-/***/ 1761:
+/***/ 1471:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -408,491 +235,260 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12" },
+        { staticClass: "col-md-6" },
         [
           _c(
             "card",
-            { attrs: { title: "<i class='ti-pie-chart'></i> Circle Slider" } },
+            { attrs: { title: "<i class='ti-calendar'></i>  Date Picker" } },
             [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Default")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.sliderValue,
-                        callback: function($$v) {
-                          _vm.sliderValue = $$v
-                        },
-                        expression: "sliderValue"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.sliderValue))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v(" Custom Dimenssion")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        min: 0,
-                        max: 10000,
-                        "step-size": 100,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val2,
-                        callback: function($$v) {
-                          _vm.val2 = $$v
-                        },
-                        expression: "val2"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val2))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", { staticClass: "d-flex" }, [
-                      _vm._v("Custom side")
-                    ]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      staticClass: "d-inline-block",
-                      attrs: {
-                        side: 100,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val3,
-                        callback: function($$v) {
-                          _vm.val3 = $$v
-                        },
-                        expression: "val3"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "d-inline-block " },
-                      [
-                        _c("circle-slider", {
-                          staticClass: "custom_small",
-                          attrs: {
-                            side: 50,
-                            "progress-color": "#66cc99",
-                            "knob-color": "#66cc99"
-                          },
-                          model: {
-                            value: _vm.val3,
-                            callback: function($$v) {
-                              _vm.val3 = $$v
-                            },
-                            expression: "val3"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("br")
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val3))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center exact-size"
-                  },
-                  [
-                    _c("label", [_vm._v("Exact sizes")]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 8,
-                        "progress-width": 12,
-                        "knob-radius": 10,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 10,
-                        "progress-width": 5,
-                        "knob-radius": 10,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width": 12,
-                        "progress-width": 3,
-                        "knob-radius": 4,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val4,
-                        callback: function($$v) {
-                          _vm.val4 = $$v
-                        },
-                        expression: "val4"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val4))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "col-12 col-sm-6 mt-4 mt-sm-0 text-center colors"
-                  },
-                  [
+              _c("div", { staticClass: "box-body" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
                     _vm._v(
-                      "\n                        Colors\n                        "
-                    ),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#edeff0",
-                        "progress-color": "#eee",
-                        "knob-color": "#6699cc"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#ff6666",
-                        "progress-color": "#6699cc",
-                        "knob-color": "#66ccff"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-color": "#cecece",
-                        "progress-color": "#66cc99",
-                        "knob-color": "#f0ad4e"
-                      },
-                      model: {
-                        value: _vm.val6,
-                        callback: function($$v) {
-                          _vm.val6 = $$v
-                        },
-                        expression: "val6"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val6))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Relative sizes")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "circle-width-rel": 30,
-                        "progress-width-rel": 15,
-                        "knob-radius-rel": 8,
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      model: {
-                        value: _vm.val5,
-                        callback: function($$v) {
-                          _vm.val5 = $$v
-                        },
-                        expression: "val5"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", [_vm._v(_vm._s(_vm.val5))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-12 col-sm-4 mt-4 mt-sm-0 text-center" },
-                  [
-                    _c("label", [_vm._v("Two-way binding")]),
-                    _vm._v(" "),
-                    _c("circle-slider", {
-                      attrs: {
-                        "progress-color": "#66cc99",
-                        "knob-color": "#66cc99"
-                      },
-                      on: {
-                        touchmove: function($event) {
-                          return _vm.$refs.input.blur()
-                        }
-                      },
-                      model: {
-                        value: _vm.val7,
-                        callback: function($$v) {
-                          _vm.val7 = $$v
-                        },
-                        expression: "val7"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model.number",
-                          value: _vm.val7,
-                          expression: "val7",
-                          modifiers: { number: true }
-                        }
-                      ],
-                      ref: "input",
-                      staticClass: "form-control",
-                      attrs: { type: "number" },
-                      domProps: { value: _vm.val7 },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.val7 = _vm._n($event.target.value)
-                        },
-                        blur: function($event) {
-                          return _vm.$forceUpdate()
-                        }
-                      }
-                    })
-                  ],
-                  1
-                )
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-12" },
-        [
-          _c(
-            "card",
-            {
-              attrs: { title: "<i class='ti-bar-chart-alt'></i> Tiny Charts" }
-            },
-            [
-              _c("div", { staticClass: "row sparkline_charts" }, [
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny line chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chart linechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny bar chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "chart barchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny stacked bar chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart stackedbarchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny tristate chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart tristatechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny bullet chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart bulletchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny pie chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart piechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny discrete chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart discretechart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny boxplot chart")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "m-t-10 chart boxchart" }, [
-                      _vm._v("Loading...")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny composite line chart")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "compositeline" } },
-                      [
-                        _vm._v(
-                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
+                      "\n                            Date Picker:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
                         )
-                      ]
-                    )
-                  ])
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        model: {
+                          value: _vm.datebasic,
+                          callback: function($$v) {
+                            _vm.datebasic = $$v
+                          },
+                          expression: "datebasic"
+                        }
+                      })
+                    ],
+                    1
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny composite bar chart")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "compositebar" } },
-                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Multiple Date Picker:\n                        "
                     )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny line chart with normal range")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "normalline" } },
-                      [
-                        _vm._v(
-                          "\n                                8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10\n                            "
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "input-group clockpicker",
+                      attrs: {
+                        "data-placement": "left",
+                        "data-align": "top",
+                        "data-autoclose": "true"
+                      }
+                    },
+                    [
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.configmultiple },
+                        model: {
+                          value: _vm.multiple,
+                          callback: function($$v) {
+                            _vm.multiple = $$v
+                          },
+                          expression: "multiple"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
                         )
-                      ]
-                    )
-                  ])
+                      ])
+                    ],
+                    1
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-4 m-t-25 text-center" }, [
-                  _c("div", { staticClass: "pt-3 pb-3" }, [
-                    _c("div", [_vm._v("Tiny discrete chart with treshold")]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "m-t-10", attrs: { id: "discrete2" } },
-                      [_vm._v("4,6,7,7,4,3,2,1,4")]
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Year and Month selection:\n                        "
                     )
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group clockpicker-with-callbacks" },
+                    [
+                      _c("datepicker", {
+                        staticClass: "form-control date_picker",
+                        attrs: {
+                          minimumView: "month",
+                          maximumView: "year",
+                          initialView: "year",
+                          readonly: false
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Minimum and Maximum Dates:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-time" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.configtwo, readonly: false },
+                        model: {
+                          value: _vm.datetwo,
+                          callback: function($$v) {
+                            _vm.datetwo = $$v
+                          },
+                          expression: "datetwo"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Date and Time Picker:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.config, readonly: false },
+                        model: {
+                          value: _vm.datetime,
+                          callback: function($$v) {
+                            _vm.datetime = $$v
+                          },
+                          expression: "datetime"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Range of Dates:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.range, readonly: false },
+                        model: {
+                          value: _vm.date,
+                          callback: function($$v) {
+                            _vm.date = $$v
+                          },
+                          expression: "date"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Disable Days of Week:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.disable, readonly: false },
+                        model: {
+                          value: _vm.date,
+                          callback: function($$v) {
+                            _vm.date = $$v
+                          },
+                          expression: "date"
+                        }
+                      })
+                    ],
+                    1
+                  )
                 ])
               ])
             ]
@@ -909,25 +505,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3e06e382", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1e6af6c5", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 483:
+/***/ 452:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1758)
+  __webpack_require__(1468)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1760)
+var __vue_script__ = __webpack_require__(1470)
 /* template */
-var __vue_template__ = __webpack_require__(1761)
+var __vue_template__ = __webpack_require__(1471)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -944,7 +540,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/circle_sliders.vue"
+Component.options.__file = "resources/components/pages/advanced_date_pickers.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -953,9 +549,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3e06e382", Component.options)
+    hotAPI.createRecord("data-v-1e6af6c5", Component.options)
   } else {
-    hotAPI.reload("data-v-3e06e382", Component.options)
+    hotAPI.reload("data-v-1e6af6c5", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -967,7 +563,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 526:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11339,19 +10935,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(529)
+  __webpack_require__(530)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(531)
+var __vue_script__ = __webpack_require__(532)
 /* template */
-var __vue_template__ = __webpack_require__(532)
+var __vue_template__ = __webpack_require__(533)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11391,13 +10987,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 529:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(530);
+var content = __webpack_require__(531);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11418,7 +11014,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11433,7 +11029,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11478,7 +11074,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11540,38 +11136,2606 @@ if (false) {
 
 /***/ }),
 
-/***/ 567:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 587:
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports=function(modules){function __webpack_require__(moduleId){if(installedModules[moduleId])return installedModules[moduleId].exports;var module=installedModules[moduleId]={i:moduleId,l:!1,exports:{}};return modules[moduleId].call(module.exports,module,module.exports,__webpack_require__),module.l=!0,module.exports}var installedModules={};return __webpack_require__.m=modules,__webpack_require__.c=installedModules,__webpack_require__.i=function(value){return value},__webpack_require__.d=function(exports,name,getter){__webpack_require__.o(exports,name)||Object.defineProperty(exports,name,{configurable:!1,enumerable:!0,get:getter})},__webpack_require__.n=function(module){var getter=module&&module.__esModule?function(){return module.default}:function(){return module};return __webpack_require__.d(getter,"a",getter),getter},__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=1)}([function(module,exports,__webpack_require__){var Component=__webpack_require__(5)(__webpack_require__(4),__webpack_require__(6),null,null);module.exports=Component.exports},function(module,__webpack_exports__,__webpack_require__){"use strict";function install(Vue){Vue.component("circle-slider",__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a)}Object.defineProperty(__webpack_exports__,"__esModule",{value:!0}),__webpack_exports__.install=install;var __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__=__webpack_require__(0),__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default=__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue__);__webpack_require__.d(__webpack_exports__,"CircleSlider",function(){return __WEBPACK_IMPORTED_MODULE_0__components_CircleSlider_vue___default.a});var plugin={version:"1.0.2",install:install};__webpack_exports__.default=plugin;var GlobalVue=null;"undefined"!=typeof window?GlobalVue=window.Vue:"undefined"!=typeof global&&(GlobalVue=global.Vue),GlobalVue&&GlobalVue.use(plugin)},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),CircleSliderState=function(){function CircleSliderState(steps,offset,initialValue){_classCallCheck(this,CircleSliderState),this.steps=steps,this.offset=offset,this.currentStepIndex=0;for(var stepIndex in this.steps)if(this.steps[stepIndex]===initialValue){this.currentStepIndex=stepIndex;break}this.firstStep=this.steps[0],this.length=this.steps.length-1,this.lastStep=this.steps[this.length]}return _createClass(CircleSliderState,[{key:"updateCurrentStepFromValue",value:function(value){for(var i=0;i<this.length;i++)if(value<=this.steps[i])return void(this.currentStepIndex=i);this.currentStepIndex=this.length}},{key:"updateCurrentStepFromAngle",value:function(angle){var stepIndex=Math.round((angle-this.offset)/this.angleUnit);this.currentStepIndex=Math.min(Math.max(stepIndex,0),this.length)}},{key:"angleUnit",get:function(){return(2*Math.PI-this.offset)/this.length}},{key:"angleValue",get:function(){return Math.min(this.offset+this.angleUnit*this.currentStepIndex,2*Math.PI-Number.EPSILON)-1e-5}},{key:"currentStep",get:function(){return this.steps[this.currentStepIndex]}}]),CircleSliderState}();__webpack_exports__.a=CircleSliderState},function(module,__webpack_exports__,__webpack_require__){"use strict";function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}(),TouchPosition=function(){function TouchPosition(containerElement,sliderRadius,sliderTolerance){_classCallCheck(this,TouchPosition),this.containerElement=containerElement,this.sliderRadius=sliderRadius,this.sliderTolerance=sliderTolerance,this.setNewPosition({x:0,y:0})}return _createClass(TouchPosition,[{key:"setNewPosition",value:function(e){var dimensions=this.containerElement.getBoundingClientRect(),side=dimensions.width;this.center=side/2,this.relativeX=e.clientX-dimensions.left,this.relativeY=e.clientY-dimensions.top}},{key:"sliderAngle",get:function(){return(Math.atan2(this.relativeY-this.center,this.relativeX-this.center)+3*Math.PI/2)%(2*Math.PI)}},{key:"isTouchWithinSliderRange",get:function(){var touchOffset=Math.sqrt(Math.pow(Math.abs(this.relativeX-this.center),2)+Math.pow(Math.abs(this.relativeY-this.center),2));return Math.abs(touchOffset-this.sliderRadius)<=this.sliderTolerance}}]),TouchPosition}();__webpack_exports__.a=TouchPosition},function(module,__webpack_exports__,__webpack_require__){"use strict";Object.defineProperty(__webpack_exports__,"__esModule",{value:!0});var __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__=__webpack_require__(3),__WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__=__webpack_require__(2);__webpack_exports__.default={name:"CircleSlider",created:function(){var _this=this;this.stepsCount=1+(this.max-this.min)/this.stepSize,this.steps=Array.from({length:this.stepsCount},function(_,i){return _this.min+i*_this.stepSize}),this.circleSliderState=new __WEBPACK_IMPORTED_MODULE_1__modules_circle_slider_state_js__.a(this.steps,this.startAngleOffset,this.value),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep;var maxCurveWidth=Math.max(this.cpMainCircleStrokeWidth,this.cpPathStrokeWidth);this.radius=this.side/2-Math.max(maxCurveWidth,2*this.cpKnobRadius)/2,this.updateFromPropValue(this.value)},mounted:function(){this.touchPosition=new __WEBPACK_IMPORTED_MODULE_0__modules_touch_position_js__.a(this.$refs._svg,this.radius,this.radius/2)},props:{startAngleOffset:{type:Number,required:!1,default:function(){return 0}},value:{type:Number,required:!1,default:0},side:{type:Number,required:!1,default:100},stepSize:{type:Number,required:!1,default:1},min:{type:Number,required:!1,default:0},max:{type:Number,required:!1,default:100},circleColor:{type:String,required:!1,default:"#334860"},progressColor:{type:String,required:!1,default:"#00be7e"},knobColor:{type:String,required:!1,default:"#00be7e"},knobRadius:{type:Number,required:!1,default:null},knobRadiusRel:{type:Number,required:!1,default:7},circleWidth:{type:Number,required:!1,default:null},circleWidthRel:{type:Number,required:!1,default:20},progressWidth:{type:Number,required:!1,default:null},progressWidthRel:{type:Number,required:!1,default:10}},data:function(){return{steps:null,stepsCount:null,radius:0,angle:0,currentStepValue:0,mousePressed:!1,circleSliderState:null,mousemoveTicks:0}},computed:{cpCenter:function(){return this.side/2},cpAngle:function(){return this.angle+Math.PI/2},cpMainCircleStrokeWidth:function(){return this.circleWidth||this.side/2/this.circleWidthRel},cpPathDirection:function(){return this.cpAngle<1.5*Math.PI?0:1},cpPathX:function(){return this.cpCenter+this.radius*Math.cos(this.cpAngle)},cpPathY:function(){return this.cpCenter+this.radius*Math.sin(this.cpAngle)},cpPathStrokeWidth:function(){return this.progressWidth||this.side/2/this.progressWidthRel},cpKnobRadius:function(){return this.knobRadius||this.side/2/this.knobRadiusRel},cpPathD:function(){var parts=[];return parts.push("M"+this.cpCenter),parts.push(this.cpCenter+this.radius),parts.push("A"),parts.push(this.radius),parts.push(this.radius),parts.push(0),parts.push(this.cpPathDirection),parts.push(1),parts.push(this.cpPathX),parts.push(this.cpPathY),parts.join(" ")}},methods:{fitToStep:function(val){return Math.round(val/this.stepSize)*this.stepSize},handleClick:function(e){if(this.touchPosition.setNewPosition(e),this.touchPosition.isTouchWithinSliderRange){var newAngle=this.touchPosition.sliderAngle;this.animateSlider(this.angle,newAngle)}},handleMouseDown:function(e){e.preventDefault(),this.mousePressed=!0,window.addEventListener("mousemove",this.handleWindowMouseMove),window.addEventListener("mouseup",this.handleMouseUp)},handleMouseUp:function(e){e.preventDefault(),this.mousePressed=!1,window.removeEventListener("mousemove",this.handleWindowMouseMove),window.removeEventListener("mouseup",this.handleMouseUp),this.mousemoveTicks=0},handleWindowMouseMove:function(e){if(e.preventDefault(),this.mousemoveTicks<5)return void this.mousemoveTicks++;this.touchPosition.setNewPosition(e),this.updateSlider()},handleTouchMove:function(e){if(this.$emit("touchmove"),e.targetTouches.length>1||e.changedTouches.length>1||e.touches.length>1)return!0;var lastTouch=e.targetTouches.item(e.targetTouches.length-1);this.touchPosition.setNewPosition(lastTouch),this.touchPosition.isTouchWithinSliderRange&&(e.preventDefault(),this.updateSlider())},updateAngle:function(angle){this.circleSliderState.updateCurrentStepFromAngle(angle),this.angle=this.circleSliderState.angleValue,this.currentStepValue=this.circleSliderState.currentStep,this.$emit("input",this.currentStepValue)},updateFromPropValue:function(value){var stepValue=this.fitToStep(value);this.circleSliderState.updateCurrentStepFromValue(stepValue),this.angle=this.circleSliderState.angleValue,this.currentStepValue=stepValue,this.$emit("input",this.currentStepValue)},updateSlider:function(){var angle=this.touchPosition.sliderAngle;Math.abs(angle-this.angle)<Math.PI&&this.updateAngle(angle)},animateSlider:function(startAngle,endAngle){var _this2=this,direction=startAngle<endAngle?1:-1,curveAngleMovementUnit=direction*this.circleSliderState.angleUnit*2,animate=function(){if(Math.abs(endAngle-startAngle)<Math.abs(2*curveAngleMovementUnit))_this2.updateAngle(endAngle);else{var newAngle=startAngle+curveAngleMovementUnit;_this2.updateAngle(newAngle),_this2.animateSlider(newAngle,endAngle)}};window.requestAnimationFrame(animate)}},watch:{value:function(val){this.updateFromPropValue(val)}}}},function(module,exports){module.exports=function(rawScriptExports,compiledTemplate,scopeId,cssModules){var esModule,scriptExports=rawScriptExports=rawScriptExports||{},type=typeof rawScriptExports.default;"object"!==type&&"function"!==type||(esModule=rawScriptExports,scriptExports=rawScriptExports.default);var options="function"==typeof scriptExports?scriptExports.options:scriptExports;if(compiledTemplate&&(options.render=compiledTemplate.render,options.staticRenderFns=compiledTemplate.staticRenderFns),scopeId&&(options._scopeId=scopeId),cssModules){var computed=options.computed||(options.computed={});Object.keys(cssModules).forEach(function(key){var module=cssModules[key];computed[key]=function(){return module}})}return{esModule:esModule,exports:scriptExports,options:options}}},function(module,exports){module.exports={render:function(){var _vm=this,_h=_vm.$createElement,_c=_vm._self._c||_h;return _c("div",[_c("svg",{ref:"_svg",attrs:{width:_vm.side+"px",height:_vm.side+"px",viewBox:"0 0 "+_vm.side+" "+_vm.side},on:{touchmove:_vm.handleTouchMove,click:_vm.handleClick,mousedown:_vm.handleMouseDown,mouseup:_vm.handleMouseUp}},[_c("g",[_c("circle",{attrs:{stroke:_vm.circleColor,fill:"none","stroke-width":_vm.cpMainCircleStrokeWidth,cx:_vm.cpCenter,cy:_vm.cpCenter,r:_vm.radius}}),_vm._v(" "),_c("path",{attrs:{stroke:_vm.progressColor,fill:"none","stroke-width":_vm.cpPathStrokeWidth,d:_vm.cpPathD}}),_vm._v(" "),_c("circle",{attrs:{fill:_vm.knobColor,r:_vm.cpKnobRadius,cx:_vm.cpPathX,cy:_vm.cpPathY}})])])])},staticRenderFns:[]}}]);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
+module.exports=function(e){function t(i){if(n[i])return n[i].exports;var r=n[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,t),r.l=!0,r.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,i){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:i})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="/",t(t.s=76)}([function(e,t){var n=e.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(e,t){var n={}.hasOwnProperty;e.exports=function(e,t){return n.call(e,t)}},function(e,t,n){var i=n(53),r=n(14);e.exports=function(e){return i(r(e))}},function(e,t,n){e.exports=!n(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(e,t,n){var i=n(5),r=n(11);e.exports=n(3)?function(e,t,n){return i.f(e,t,r(1,n))}:function(e,t,n){return e[t]=n,e}},function(e,t,n){var i=n(7),r=n(30),a=n(23),o=Object.defineProperty;t.f=n(3)?Object.defineProperty:function(e,t,n){if(i(e),t=a(t,!0),i(n),r)try{return o(e,t,n)}catch(e){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(e[t]=n.value),e}},function(e,t,n){var i=n(21)("wks"),r=n(12),a=n(0).Symbol,o="function"==typeof a;(e.exports=function(e){return i[e]||(i[e]=o&&a[e]||(o?a:r)("Symbol."+e))}).store=i},function(e,t,n){var i=n(9);e.exports=function(e){if(!i(e))throw TypeError(e+" is not an object!");return e}},function(e,t){e.exports=function(e){try{return!!e()}catch(e){return!0}}},function(e,t){e.exports=function(e){return"object"==typeof e?null!==e:"function"==typeof e}},function(e,t,n){var i=n(35),r=n(15);e.exports=Object.keys||function(e){return i(e,r)}},function(e,t){e.exports=function(e,t){return{enumerable:!(1&e),configurable:!(2&e),writable:!(4&e),value:t}}},function(e,t){var n=0,i=Math.random();e.exports=function(e){return"Symbol(".concat(void 0===e?"":e,")_",(++n+i).toString(36))}},function(e,t){var n=e.exports={version:"2.4.0"};"number"==typeof __e&&(__e=n)},function(e,t){e.exports=function(e){if(void 0==e)throw TypeError("Can't call method on  "+e);return e}},function(e,t){e.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(e,t){e.exports={}},function(e,t){e.exports=!0},function(e,t){t.f={}.propertyIsEnumerable},function(e,t,n){var i=n(5).f,r=n(1),a=n(6)("toStringTag");e.exports=function(e,t,n){e&&!r(e=n?e:e.prototype,a)&&i(e,a,{configurable:!0,value:t})}},function(e,t,n){var i=n(21)("keys"),r=n(12);e.exports=function(e){return i[e]||(i[e]=r(e))}},function(e,t,n){var i=n(0),r=i["__core-js_shared__"]||(i["__core-js_shared__"]={});e.exports=function(e){return r[e]||(r[e]={})}},function(e,t){var n=Math.ceil,i=Math.floor;e.exports=function(e){return isNaN(e=+e)?0:(e>0?i:n)(e)}},function(e,t,n){var i=n(9);e.exports=function(e,t){if(!i(e))return e;var n,r;if(t&&"function"==typeof(n=e.toString)&&!i(r=n.call(e)))return r;if("function"==typeof(n=e.valueOf)&&!i(r=n.call(e)))return r;if(!t&&"function"==typeof(n=e.toString)&&!i(r=n.call(e)))return r;throw TypeError("Can't convert object to primitive value")}},function(e,t,n){var i=n(0),r=n(13),a=n(17),o=n(25),s=n(5).f;e.exports=function(e){var t=r.Symbol||(r.Symbol=a?{}:i.Symbol||{});"_"==e.charAt(0)||e in t||s(t,e,{value:o.f(e)})}},function(e,t,n){t.f=n(6)},function(e,t,n){"use strict";t.a={translations:{af:{language:"Afrikaans",months:{original:["Januarie","Februarie","Maart","April","Mei","Junie","Julie","Augustus","September","Oktober","November","Desember"],abbr:["Jan","Feb","Mrt","Apr","Mei","Jun","Jul","Aug","Sep","Okt","Nov","Des"]},days:["So.","Ma.","Di.","Wo.","Do.","Vr.","Sa."]},ar:{language:"Arabic",rtl:!0,months:{original:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوڤمبر","ديسمبر"],abbr:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوڤمبر","ديسمبر"]},days:["أحد","إثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"]},bg:{language:"Bulgarian",months:{original:["Януари","Февруари","Март","Април","Май","Юни","Юли","Август","Септември","Октомври","Ноември","Декември"],abbr:["Ян","Фев","Мар","Апр","Май","Юни","Юли","Авг","Сеп","Окт","Ное","Дек"]},days:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"]},bs:{language:"Bosnian",months:{original:["Januar","Februar","Mart","April","Maj","Juni","Juli","Avgust","Septembar","Oktobar","Novembar","Decembar"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"]},days:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"]},cs:{language:"Czech",months:{original:["leden","únor","březen","duben","květen","červen","červenec","srpen","září","říjen","listopad","prosinec"],abbr:["led","úno","bře","dub","kvě","čer","čec","srp","zář","říj","lis","pro"]},days:["ne","po","út","st","čt","pá","so"]},da:{language:"Danish",months:{original:["Januar","Februar","Marts","April","Maj","Juni","Juli","August","September","Oktober","November","December"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec"]},days:["Sø","Ma","Ti","On","To","Fr","Lø"]},de:{language:"German",months:{original:["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],abbr:["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]},days:["So.","Mo.","Di.","Mi.","Do.","Fr.","Sa."]},ee:{language:"Estonian",months:{original:["Jaanuar","Veebruar","Märts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"],abbr:["Jaan","Veebr","Märts","Apr","Mai","Juuni","Juuli","Aug","Sept","Okt","Nov","Dets"]},days:["P","E","T","K","N","R","L"]},el:{language:"Greek",months:{original:["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάϊος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"],abbr:["Ιαν","Φεβ","Μαρ","Απρ","Μαι","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"]},days:["Κυρ","Δευ","Τρι","Τετ","Πεμ","Παρ","Σατ"]},en:{language:"English",months:{original:["January","February","March","April","May","June","July","August","September","October","November","December"],abbr:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},days:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},es:{language:"Spanish",months:{original:["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],abbr:["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"]},days:["Dom","Lun","Mar","Mié","Jue","Vie","Sab"]},ca:{language:"Catalan",months:{original:["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"],abbr:["Gen","Feb","Mar","Abr","Mai","Jun","Jul","Ago","Set","Oct","Nov","Des"]},days:["Diu","Dil","Dmr","Dmc","Dij","Div","Dis"]},fi:{language:"Finish",months:{original:["tammikuu","helmikuu","maaliskuu","huhtikuu","toukokuu","kesäkuu","heinäkuu","elokuu","syyskuu","lokakuu","marraskuu","joulukuu"],abbr:["tammi","helmi","maalis","huhti","touko","kesä","heinä","elo","syys","loka","marras","joulu"]},days:["su","ma","ti","ke","to","pe","la"]},fr:{language:"French",months:{original:["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],abbr:["Jan","Fév","Mar","Avr","Mai","Juin","Juil","Août","Sep","Oct","Nov","Déc"]},days:["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"]},ge:{language:"Georgia",months:{original:["იანვარი","თებერვალი","მარტი","აპრილი","მაისი","ივნისი","ივლისი","აგვისტო","სექტემბერი","ოქტომბერი","ნოემბერი","დეკემბერი"],abbr:["იან","თებ","მარ","აპრ","მაი","ივნ","ივლ","აგვ","სექ","ოქტ","ნოე","დეკ"]},days:["კვი","ორშ","სამ","ოთხ","ხუთ","პარ","შაბ"]},ja:{language:"Japanese",ymd:!0,months:{original:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],abbr:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]},days:["日","月","火","水","木","金","土"]},he:{language:"Hebrew",rtl:!0,months:{original:["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"],abbr:["ינו","פבר","מרץ","אפר","מאי","יונ","יול","אוג","ספט","אוק","נוב","דצמ"]},days:["א","ב","ג","ד","ה","ו","ש"]},hu:{language:"Hungarian",ymd:!0,months:{original:["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"],abbr:["Jan","Febr","Márc","Ápr","Máj","Jún","Júl","Aug","Szept","Okt","Nov","Dec"]},days:["Vas","Hét","Ke","Sze","Csü","Pén","Szo"]},hr:{language:"Croatian",months:{original:["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpanj","Kolovoz","Rujan","Listopad","Studeni","Prosinac"],abbr:["Sij","Velj","Ožu","Tra","Svi","Lip","Srp","Kol","Ruj","Lis","Stu","Pro"]},days:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"]},id:{language:"Indonesian",months:{original:["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],abbr:["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"]},days:["Min","Sen","Sel","Rab","Kam","Jum","Sab"]},it:{language:"Italian",months:{original:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"],abbr:["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"]},days:["Dom","Lun","Mar","Mer","Gio","Ven","Sab"]},is:{language:"Icelandic",months:{original:["Janúar","Febrúar","Mars","Apríl","Maí","Júní","Júlí","Ágúst","September","Október","Nóvember","Desember"],abbr:["Jan","Feb","Mars","Apr","Maí","Jún","Júl","Ágú","Sep","Okt","Nóv","Des"]},days:["Sun","Mán","Þri","Mið","Fim","Fös","Lau"]},fa:{language:"Persian",months:{original:["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"],abbr:["فرو","ارد","خرد","تیر","مرد","شهر","مهر","آبا","آذر","دی","بهم","اسف"]},days:["یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه","شنبه"]},ko:{language:"Korean",ymd:!0,months:{original:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],abbr:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]},days:["일","월","화","수","목","금","토"]},lb:{language:"Luxembourgish",months:{original:["Januar","Februar","Mäerz","Abrëll","Mäi","Juni","Juli","August","September","Oktober","November","Dezember"],abbr:["Jan","Feb","Mäe","Abr","Mäi","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]},days:["So.","Mé.","Dë.","Më.","Do.","Fr.","Sa."]},lt:{language:"Lithuanian",ymd:!0,months:{original:["Sausis","Vasaris","Kovas","Balandis","Gegužė","Birželis","Liepa","Rugpjūtis","Rugsėjis","Spalis","Lapkritis","Gruodis"],abbr:["Sau","Vas","Kov","Bal","Geg","Bir","Lie","Rugp","Rugs","Spa","Lap","Gru"]},days:["Sek","Pir","Ant","Tre","Ket","Pen","Šeš"]},lv:{language:"Latvian",months:{original:["Janvāris","Februāris","Marts","Aprīlis","Maijs","Jūnijs","Jūlijs","Augusts","Septembris","Oktobris","Novembris","Decembris"],abbr:["Jan","Feb","Mar","Apr","Mai","Jūn","Jūl","Aug","Sep","Okt","Nov","Dec"]},days:["Sv","Pr","Ot","Tr","Ce","Pk","Se"]},mn:{language:"Mongolia",ymd:!0,months:{original:["1 дүгээр сар","2 дугаар сар","3 дугаар сар","4 дүгээр сар","5 дугаар сар","6 дугаар сар","7 дугаар сар","8 дугаар сар","9 дүгээр сар","10 дугаар сар","11 дүгээр сар","12 дугаар сар"],abbr:["1-р сар","2-р сар","3-р сар","4-р сар","5-р сар","6-р сар","7-р сар","8-р сар","9-р сар","10-р сар","11-р сар","12-р сар"]},days:["Ня","Да","Мя","Лх","Пү","Ба","Бя"]},nl:{language:"Dutch",months:{original:["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"],abbr:["jan","feb","maa","apr","mei","jun","jul","aug","sep","okt","nov","dec"]},days:["zo","ma","di","wo","do","vr","za"]},"nb-no":{language:"Norwegian Bokmål",months:{original:["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"],abbr:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"]},days:["Sø","Ma","Ti","On","To","Fr","Lø"]},pl:{language:"Polish",months:{original:["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"],abbr:["Sty","Lut","Mar","Kwi","Maj","Cze","Lip","Sie","Wrz","Paź","Lis","Gru"]},days:["Nd","Pn","Wt","Śr","Czw","Pt","Sob"]},"pt-br":{language:"Brazilian",months:{original:["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],abbr:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]},days:["Dom","Seg","Ter","Qua","Qui","Sex","Sab"]},ro:{language:"Romanian",months:{original:["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"],abbr:["Ian","Feb","Mar","Apr","Mai","Iun","Iul","Aug","Sep","Oct","Noi","Dec"]},days:["D","L","Ma","Mi","J","V","S"]},ru:{language:"Russian",months:{original:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],abbr:["Янв","Февр","Март","Апр","Май","Июнь","Июль","Авг","Сент","Окт","Нояб","Дек"]},days:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"]},sv:{language:"Swedish",months:{original:["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec"]},days:["Sön","Mån","Tis","Ons","Tor","Fre","Lör"]},sk:{language:"Slovakian",months:{original:["január","február","marec","apríl","máj","jún","júl","august","september","október","november","december"],abbr:["jan","feb","mar","apr","máj","jún","júl","aug","sep","okt","nov","dec"]},days:["ne","po","ut","st","št","pi","so"]},"sl-si":{language:"Sloveian",months:{original:["Januar","Februar","Marec","April","Maj","Junij","Julij","Avgust","September","Oktober","November","December"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"]},days:["Ned","Pon","Tor","Sre","Čet","Pet","Sob"]},sr:{language:"Serbian",months:{original:["Januar","Februar","Mart","April","Maj","Jun","Jul","Avgust","Septembar","Oktobar","Novembar","Decembar"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"]},days:["Ned","Pon","Uto","Sre","Čet","Pet","Sub"]},"sr-Cyrl":{language:"Serbian in Cyrillic script",months:{original:["Јануар","Фебруар","Март","Април","Мај","Јун","Јул","Август","Септембар","Октобар","Новембар","Децембар"],abbr:["Јан","Феб","Мар","Апр","Мај","Јун","Јул","Авг","Сеп","Окт","Нов","Дец"]},days:["Нед","Пон","Уто","Сре","Чет","Пет","Суб"]},th:{language:"Thai",months:{original:["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"],abbr:["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."]},days:["อา","จ","อ","พ","พฤ","ศ","ส"]},tr:{language:"Turkish",months:{original:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],abbr:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"]},days:["Paz","Pzt","Sal","Çar","Per","Cum","Cmt"]},uk:{language:"Ukraine",months:{original:["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"],abbr:["Січ","Лют","Бер","Квіт","Трав","Чер","Лип","Серп","Вер","Жовт","Лист","Груд"]},days:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"]},ur:{language:"Urdu",rtl:!0,months:{original:["جنوری","فروری","مارچ","اپریل","مئی","جون","جولائی","اگست","سپتمبر","اکتوبر","نومبر","دسمبر"],abbr:["جنوری","فروری","مارچ","اپریل","مئی","جون","جولائی","اگست","سپتمبر","اکتوبر","نومبر","دسمبر"]},days:["اتوار","پیر","منگل","بدھ","جمعرات","جمعہ","ہفتہ"]},vi:{language:"Vientnamese",months:{original:["Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12"],abbr:["T 01","T 02","T 03","T 04","T 05","T 06","T 07","T 08","T 09","T 10","T 11","T 12"]},days:["CN","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"]},zh:{language:"Chinese",ymd:!0,months:{original:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],abbr:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},days:["日","一","二","三","四","五","六"]}}}},function(e,t){var n={}.toString;e.exports=function(e){return n.call(e).slice(8,-1)}},function(e,t,n){var i=n(9),r=n(0).document,a=i(r)&&i(r.createElement);e.exports=function(e){return a?r.createElement(e):{}}},function(e,t,n){var i=n(0),r=n(13),a=n(50),o=n(4),s=function(e,t,n){var l,u,c,d=e&s.F,h=e&s.G,p=e&s.S,f=e&s.P,g=e&s.B,b=e&s.W,m=h?r:r[t]||(r[t]={}),v=m.prototype,y=h?i:p?i[t]:(i[t]||{}).prototype;h&&(n=t);for(l in n)(u=!d&&y&&void 0!==y[l])&&l in m||(c=u?y[l]:n[l],m[l]=h&&"function"!=typeof y[l]?n[l]:g&&u?a(c,i):b&&y[l]==c?function(e){var t=function(t,n,i){if(this instanceof e){switch(arguments.length){case 0:return new e;case 1:return new e(t);case 2:return new e(t,n)}return new e(t,n,i)}return e.apply(this,arguments)};return t.prototype=e.prototype,t}(c):f&&"function"==typeof c?a(Function.call,c):c,f&&((m.virtual||(m.virtual={}))[l]=c,e&s.R&&v&&!v[l]&&o(v,l,c)))};s.F=1,s.G=2,s.S=4,s.P=8,s.B=16,s.W=32,s.U=64,s.R=128,e.exports=s},function(e,t,n){e.exports=!n(3)&&!n(8)(function(){return 7!=Object.defineProperty(n(28)("div"),"a",{get:function(){return 7}}).a})},function(e,t,n){"use strict";var i=n(17),r=n(29),a=n(36),o=n(4),s=n(1),l=n(16),u=n(55),c=n(19),d=n(62),h=n(6)("iterator"),p=!([].keys&&"next"in[].keys()),f=function(){return this};e.exports=function(e,t,n,g,b,m,v){u(n,t,g);var y,D,M,S=function(e){if(!p&&e in x)return x[e];switch(e){case"keys":case"values":return function(){return new n(this,e)}}return function(){return new n(this,e)}},w=t+" Iterator",_="values"==b,k=!1,x=e.prototype,O=x[h]||x["@@iterator"]||b&&x[b],J=O||S(b),F=b?_?S("entries"):J:void 0,A="Array"==t?x.entries||O:O;if(A&&(M=d(A.call(new e)))!==Object.prototype&&(c(M,w,!0),i||s(M,h)||o(M,h,f)),_&&O&&"values"!==O.name&&(k=!0,J=function(){return O.call(this)}),i&&!v||!p&&!k&&x[h]||o(x,h,J),l[t]=J,l[w]=f,b)if(y={values:_?J:S("values"),keys:m?J:S("keys"),entries:F},v)for(D in y)D in x||a(x,D,y[D]);else r(r.P+r.F*(p||k),t,y);return y}},function(e,t,n){var i=n(7),r=n(59),a=n(15),o=n(20)("IE_PROTO"),s=function(){},l=function(){var e,t=n(28)("iframe"),i=a.length;for(t.style.display="none",n(52).appendChild(t),t.src="javascript:",e=t.contentWindow.document,e.open(),e.write("<script>document.F=Object<\/script>"),e.close(),l=e.F;i--;)delete l.prototype[a[i]];return l()};e.exports=Object.create||function(e,t){var n;return null!==e?(s.prototype=i(e),n=new s,s.prototype=null,n[o]=e):n=l(),void 0===t?n:r(n,t)}},function(e,t,n){var i=n(35),r=n(15).concat("length","prototype");t.f=Object.getOwnPropertyNames||function(e){return i(e,r)}},function(e,t){t.f=Object.getOwnPropertySymbols},function(e,t,n){var i=n(1),r=n(2),a=n(49)(!1),o=n(20)("IE_PROTO");e.exports=function(e,t){var n,s=r(e),l=0,u=[];for(n in s)n!=o&&i(s,n)&&u.push(n);for(;t.length>l;)i(s,n=t[l++])&&(~a(u,n)||u.push(n));return u}},function(e,t,n){e.exports=n(4)},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=n(41),r=n(26);t.default={props:{value:{validator:function(e){return null===e||e instanceof Date||"string"==typeof e||"number"==typeof e}},name:String,refName:String,id:String,format:{type:[String,Function],default:"dd MMM yyyy"},language:{type:String,default:"en"},openDate:{validator:function(e){return null===e||e instanceof Date||"string"==typeof e}},fullMonthName:Boolean,disabled:Object,highlighted:Object,placeholder:String,inline:Boolean,calendarClass:[String,Object],inputClass:[String,Object],wrapperClass:[String,Object],mondayFirst:Boolean,clearButton:Boolean,clearButtonIcon:String,calendarButton:Boolean,calendarButtonIcon:String,calendarButtonIconContent:String,bootstrapStyling:Boolean,initialView:String,disabledPicker:Boolean,required:Boolean,minimumView:{type:String,default:"day"},maximumView:{type:String,default:"year"}},data:function(){return{pageTimestamp:(this.openDate?new Date(this.openDate):new Date).setDate(1),selectedDate:null,showDayView:!1,showMonthView:!1,showYearView:!1,calendarHeight:0}},watch:{value:function(e){this.setValue(e)},openDate:function(){this.setPageDate()},initialView:function(){this.setInitialView()}},computed:{computedInitialView:function(){return this.initialView?this.initialView:this.minimumView},pageDate:function(){return new Date(this.pageTimestamp)},formattedValue:function(){return this.selectedDate?"function"==typeof this.format?this.format(this.selectedDate):i.a.formatDate(new Date(this.selectedDate),this.format,this.translation):null},translation:function(){return r.a.translations[this.language]},currMonthName:function(){var e=this.fullMonthName?this.translation.months.original:this.translation.months.abbr;return i.a.getMonthNameAbbr(this.pageDate.getMonth(),e)},currYear:function(){return this.pageDate.getFullYear()},blankDays:function(){var e=this.pageDate,t=new Date(e.getFullYear(),e.getMonth(),1,e.getHours(),e.getMinutes());return this.mondayFirst?t.getDay()>0?t.getDay()-1:6:t.getDay()},daysOfWeek:function(){if(this.mondayFirst){var e=this.translation.days.slice();return e.push(e.shift()),e}return this.translation.days},days:function(){for(var e=this.pageDate,t=[],n=new Date(e.getFullYear(),e.getMonth(),1,e.getHours(),e.getMinutes()),r=i.a.daysInMonth(n.getFullYear(),n.getMonth()),a=0;a<r;a++)t.push({date:n.getDate(),timestamp:n.getTime(),isSelected:this.isSelectedDate(n),isDisabled:this.isDisabledDate(n),isHighlighted:this.isHighlightedDate(n),isHighlightStart:this.isHighlightStart(n),isHighlightEnd:this.isHighlightEnd(n),isToday:n.toDateString()===(new Date).toDateString(),isWeekend:0===n.getDay()||6===n.getDay(),isSaturday:6===n.getDay(),isSunday:0===n.getDay()}),n.setDate(n.getDate()+1);return t},months:function(){for(var e=this.pageDate,t=[],n=new Date(e.getFullYear(),0,e.getDate(),e.getHours(),e.getMinutes()),r=0;r<12;r++)t.push({month:i.a.getMonthName(r,this.translation.months.original),timestamp:n.getTime(),isSelected:this.isSelectedMonth(n),isDisabled:this.isDisabledMonth(n)}),n.setMonth(n.getMonth()+1);return t},years:function(){for(var e=this.pageDate,t=[],n=new Date(10*Math.floor(e.getFullYear()/10),e.getMonth(),e.getDate(),e.getHours(),e.getMinutes()),i=0;i<10;i++)t.push({year:n.getFullYear(),timestamp:n.getTime(),isSelected:this.isSelectedYear(n),isDisabled:this.isDisabledYear(n)}),n.setFullYear(n.getFullYear()+1);return t},calendarStyle:function(){return{position:this.isInline?"static":void 0}},isOpen:function(){return this.showDayView||this.showMonthView||this.showYearView},isInline:function(){return!!this.inline},isRtl:function(){return!0===this.translation.rtl},isYmd:function(){return!0===this.translation.ymd}},methods:{close:function(e){this.showDayView=this.showMonthView=this.showYearView=!1,this.isInline||(e&&this.$emit("closed"),document.removeEventListener("click",this.clickOutside,!1))},resetDefaultDate:function(){if(null===this.selectedDate)return void this.setPageDate();this.setPageDate(this.selectedDate)},showCalendar:function(){return!this.disabledPicker&&!this.isInline&&(this.isOpen?this.close(!0):(this.setInitialView(),void(this.isInline||this.$emit("opened"))))},setInitialView:function(){var e=this.computedInitialView;if(!this.allowedToShowView(e))throw new Error("initialView '"+this.initialView+"' cannot be rendered based on minimum '"+this.minimumView+"' and maximum '"+this.maximumView+"'");switch(e){case"year":this.showYearCalendar();break;case"month":this.showMonthCalendar();break;default:this.showDayCalendar()}},allowedToShowView:function(e){var t=["day","month","year"],n=t.indexOf(this.minimumView),i=t.indexOf(this.maximumView),r=t.indexOf(e);return r>=n&&r<=i},showDayCalendar:function(){if(!this.allowedToShowView("day"))return!1;this.close(),this.showDayView=!0,this.addOutsideClickListener()},showMonthCalendar:function(){if(!this.allowedToShowView("month"))return!1;this.close(),this.showMonthView=!0,this.addOutsideClickListener()},showYearCalendar:function(){if(!this.allowedToShowView("year"))return!1;this.close(),this.showYearView=!0,this.addOutsideClickListener()},addOutsideClickListener:function(){var e=this;this.isInline||setTimeout(function(){document.addEventListener("click",e.clickOutside,!1)},100)},setDate:function(e){var t=new Date(e);this.selectedDate=new Date(t),this.setPageDate(t),this.$emit("selected",new Date(t)),this.$emit("input",new Date(t))},clearDate:function(){this.selectedDate=null,this.$emit("selected",null),this.$emit("input",null),this.$emit("cleared")},selectDate:function(e){if(e.isDisabled)return this.$emit("selectedDisabled",e),!1;this.setDate(e.timestamp),this.isInline||this.close(!0)},selectMonth:function(e){if(e.isDisabled)return!1;var t=new Date(e.timestamp);this.allowedToShowView("day")?(this.setPageDate(t),this.$emit("changedMonth",e),this.showDayCalendar()):(this.setDate(t),this.isInline||this.close(!0))},selectYear:function(e){if(e.isDisabled)return!1;var t=new Date(e.timestamp);this.allowedToShowView("month")?(this.setPageDate(t),this.$emit("changedYear",e),this.showMonthCalendar()):(this.setDate(t),this.isInline||this.close(!0))},getPageDate:function(){return this.pageDate.getDate()},getPageMonth:function(){return this.pageDate.getMonth()},getPageYear:function(){return this.pageDate.getFullYear()},getPageDecade:function(){var e=10*Math.floor(this.pageDate.getFullYear()/10);return e+" - "+(e+9)},changeMonth:function(e){var t=this.pageDate;t.setMonth(t.getMonth()+e),this.setPageDate(t),this.$emit("changedMonth",t)},previousMonth:function(){this.previousMonthDisabled()||this.changeMonth(-1)},previousMonthDisabled:function(){if(!this.disabled||!this.disabled.to)return!1;var e=this.pageDate;return this.disabled.to.getMonth()>=e.getMonth()&&this.disabled.to.getFullYear()>=e.getFullYear()},nextMonth:function(){this.nextMonthDisabled()||this.changeMonth(1)},nextMonthDisabled:function(){if(!this.disabled||!this.disabled.from)return!1;var e=this.pageDate;return this.disabled.from.getMonth()<=e.getMonth()&&this.disabled.from.getFullYear()<=e.getFullYear()},changeYear:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"changedYear",n=this.pageDate;n.setYear(n.getFullYear()+e),this.setPageDate(n),this.$emit(t,n)},previousYear:function(){this.previousYearDisabled()||this.changeYear(-1)},previousYearDisabled:function(){return!(!this.disabled||!this.disabled.to)&&this.disabled.to.getFullYear()>=this.pageDate.getFullYear()},nextYear:function(){this.nextYearDisabled()||this.changeYear(1)},nextYearDisabled:function(){return!(!this.disabled||!this.disabled.from)&&this.disabled.from.getFullYear()<=this.pageDate.getFullYear()},previousDecade:function(){this.previousDecadeDisabled()||this.changeYear(-10,"changeDecade")},previousDecadeDisabled:function(){return!(!this.disabled||!this.disabled.to)&&10*Math.floor(this.disabled.to.getFullYear()/10)>=10*Math.floor(this.pageDate.getFullYear()/10)},nextDecade:function(){this.nextDecadeDisabled()||this.changeYear(10,"changeDecade")},nextDecadeDisabled:function(){return!(!this.disabled||!this.disabled.from)&&10*Math.ceil(this.disabled.from.getFullYear()/10)<=10*Math.ceil(this.pageDate.getFullYear()/10)},isSelectedDate:function(e){return this.selectedDate&&this.selectedDate.toDateString()===e.toDateString()},isDisabledDate:function(e){var t=!1;return void 0!==this.disabled&&(void 0!==this.disabled.dates&&this.disabled.dates.forEach(function(n){if(e.toDateString()===n.toDateString())return t=!0,!0}),void 0!==this.disabled.to&&this.disabled.to&&e<this.disabled.to&&(t=!0),void 0!==this.disabled.from&&this.disabled.from&&e>this.disabled.from&&(t=!0),void 0!==this.disabled.ranges&&this.disabled.ranges.forEach(function(n){if(void 0!==n.from&&n.from&&void 0!==n.to&&n.to&&e<n.to&&e>n.from)return t=!0,!0}),void 0!==this.disabled.days&&-1!==this.disabled.days.indexOf(e.getDay())&&(t=!0),void 0!==this.disabled.daysOfMonth&&-1!==this.disabled.daysOfMonth.indexOf(e.getDate())&&(t=!0),"function"==typeof this.disabled.customPredictor&&this.disabled.customPredictor(e)&&(t=!0),t)},isHighlightedDate:function(e){if((!this.highlighted||!this.highlighted.includeDisabled)&&this.isDisabledDate(e))return!1;var t=!1;return void 0!==this.highlighted&&(void 0!==this.highlighted.dates&&this.highlighted.dates.forEach(function(n){if(e.toDateString()===n.toDateString())return t=!0,!0}),this.isDefined(this.highlighted.from)&&this.isDefined(this.highlighted.to)&&(t=e>=this.highlighted.from&&e<=this.highlighted.to),void 0!==this.highlighted.days&&-1!==this.highlighted.days.indexOf(e.getDay())&&(t=!0),void 0!==this.highlighted.daysOfMonth&&-1!==this.highlighted.daysOfMonth.indexOf(e.getDate())&&(t=!0),"function"==typeof this.highlighted.customPredictor&&this.highlighted.customPredictor(e)&&(t=!0),t)},isHighlightStart:function(e){return this.isHighlightedDate(e)&&this.highlighted.from instanceof Date&&this.highlighted.from.getFullYear()===e.getFullYear()&&this.highlighted.from.getMonth()===e.getMonth()&&this.highlighted.from.getDate()===e.getDate()},isHighlightEnd:function(e){return this.isHighlightedDate(e)&&this.highlighted.to instanceof Date&&this.highlighted.to.getFullYear()===e.getFullYear()&&this.highlighted.to.getMonth()===e.getMonth()&&this.highlighted.to.getDate()===e.getDate()},isDefined:function(e){return void 0!==e&&e},isSelectedMonth:function(e){return this.selectedDate&&this.selectedDate.getFullYear()===e.getFullYear()&&this.selectedDate.getMonth()===e.getMonth()},isDisabledMonth:function(e){var t=!1;return void 0!==this.disabled&&(void 0!==this.disabled.to&&this.disabled.to&&(e.getMonth()<this.disabled.to.getMonth()&&e.getFullYear()<=this.disabled.to.getFullYear()||e.getFullYear()<this.disabled.to.getFullYear())&&(t=!0),void 0!==this.disabled.from&&this.disabled.from&&(this.disabled.from&&e.getMonth()>this.disabled.from.getMonth()&&e.getFullYear()>=this.disabled.from.getFullYear()||e.getFullYear()>this.disabled.from.getFullYear())&&(t=!0),t)},isSelectedYear:function(e){return this.selectedDate&&this.selectedDate.getFullYear()===e.getFullYear()},isDisabledYear:function(e){var t=!1;return!(void 0===this.disabled||!this.disabled)&&(void 0!==this.disabled.to&&this.disabled.to&&e.getFullYear()<this.disabled.to.getFullYear()&&(t=!0),void 0!==this.disabled.from&&this.disabled.from&&e.getFullYear()>this.disabled.from.getFullYear()&&(t=!0),t)},setValue:function(e){if("string"==typeof e||"number"==typeof e){var t=new Date(e);e=isNaN(t.valueOf())?null:t}if(!e)return this.setPageDate(),void(this.selectedDate=null);this.selectedDate=e,this.setPageDate(e)},setPageDate:function(e){e||(e=this.openDate?new Date(this.openDate):new Date),this.pageTimestamp=new Date(e).setDate(1)},clickOutside:function(e){if(this.$el&&!this.$el.contains(e.target)){if(this.isInline)return this.showDayCalendar();this.resetDefaultDate(),this.close(!0),document.removeEventListener("click",this.clickOutside,!1)}},dayClasses:function(e){return{selected:e.isSelected,disabled:e.isDisabled,highlighted:e.isHighlighted,today:e.isToday,weekend:e.isWeekend,sat:e.isSaturday,sun:e.isSunday,"highlight-start":e.isHighlightStart,"highlight-end":e.isHighlightEnd}},init:function(){this.value&&this.setValue(this.value),this.isInline&&this.setInitialView()}},mounted:function(){this.init()}}},function(e,t){e.exports=function(e,t,n,i,r){var a,o=e=e||{},s=typeof e.default;"object"!==s&&"function"!==s||(a=e,o=e.default);var l="function"==typeof o?o.options:o;t&&(l.render=t.render,l.staticRenderFns=t.staticRenderFns),i&&(l._scopeId=i);var u;if(r?(u=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),n&&n.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(r)},l._ssrRegister=u):n&&(u=n),u){var c=l.functional,d=c?l.render:l.beforeCreate;c?l.render=function(e,t){return u.call(t),d(e,t)}:l.beforeCreate=d?[].concat(d,u):[u]}return{esModule:a,exports:o,options:l}}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"vdp-datepicker",class:[e.wrapperClass,e.isRtl?"rtl":""]},[n("div",{class:{"input-group":e.bootstrapStyling}},[e.calendarButton?n("span",{staticClass:"vdp-datepicker__calendar-button",class:{"input-group-addon":e.bootstrapStyling},style:{"cursor:not-allowed;":e.disabledPicker},on:{click:e.showCalendar}},[n("i",{class:e.calendarButtonIcon},[e._v("\n        "+e._s(e.calendarButtonIconContent)+"\n        "),e.calendarButtonIcon?e._e():n("span",[e._v("…")])])]):e._e(),e._v(" "),n("input",{ref:e.refName,class:[e.inputClass,{"form-control":e.bootstrapStyling}],attrs:{type:e.inline?"hidden":"text",name:e.name,id:e.id,"open-date":e.openDate,placeholder:e.placeholder,"clear-button":e.clearButton,disabled:e.disabledPicker,required:e.required,readonly:""},domProps:{value:e.formattedValue},on:{click:e.showCalendar}}),e._v(" "),e.clearButton&&e.selectedDate?n("span",{staticClass:"vdp-datepicker__clear-button",class:{"input-group-addon":e.bootstrapStyling},on:{click:function(t){e.clearDate()}}},[n("i",{class:e.clearButtonIcon},[e.clearButtonIcon?e._e():n("span",[e._v("×")])])]):e._e()]),e._v(" "),e.allowedToShowView("day")?[n("div",{directives:[{name:"show",rawName:"v-show",value:e.showDayView,expression:"showDayView"}],class:[e.calendarClass,"vdp-datepicker__calendar"],style:e.calendarStyle},[n("header",[n("span",{staticClass:"prev",class:{disabled:e.isRtl?e.nextMonthDisabled(e.pageTimestamp):e.previousMonthDisabled(e.pageTimestamp)},on:{click:function(t){e.isRtl?e.nextMonth():e.previousMonth()}}},[e._v("<")]),e._v(" "),n("span",{class:e.allowedToShowView("month")?"up":"",on:{click:e.showMonthCalendar}},[e._v(e._s(e.isYmd?e.currYear:e.currMonthName)+" "+e._s(e.isYmd?e.currMonthName:e.currYear))]),e._v(" "),n("span",{staticClass:"next",class:{disabled:e.isRtl?e.previousMonthDisabled(e.pageTimestamp):e.nextMonthDisabled(e.pageTimestamp)},on:{click:function(t){e.isRtl?e.previousMonth():e.nextMonth()}}},[e._v(">")])]),e._v(" "),n("div",{class:e.isRtl?"flex-rtl":""},[e._l(e.daysOfWeek,function(t){return n("span",{key:t.timestamp,staticClass:"cell day-header"},[e._v(e._s(t))])}),e._v(" "),e.blankDays>0?e._l(e.blankDays,function(e){return n("span",{key:e.timestamp,staticClass:"cell day blank"})}):e._e(),e._l(e.days,function(t){return n("span",{key:t.timestamp,staticClass:"cell day",class:e.dayClasses(t),attrs:{"track-by":"timestamp"},on:{click:function(n){e.selectDate(t)}}},[e._v(e._s(t.date))])})],2)])]:e._e(),e._v(" "),e.allowedToShowView("month")?[n("div",{directives:[{name:"show",rawName:"v-show",value:e.showMonthView,expression:"showMonthView"}],class:[e.calendarClass,"vdp-datepicker__calendar"],style:e.calendarStyle},[n("header",[n("span",{staticClass:"prev",class:{disabled:e.previousYearDisabled(e.pageTimestamp)},on:{click:e.previousYear}},[e._v("<")]),e._v(" "),n("span",{class:e.allowedToShowView("year")?"up":"",on:{click:e.showYearCalendar}},[e._v(e._s(e.getPageYear()))]),e._v(" "),n("span",{staticClass:"next",class:{disabled:e.nextYearDisabled(e.pageTimestamp)},on:{click:e.nextYear}},[e._v(">")])]),e._v(" "),e._l(e.months,function(t){return n("span",{key:t.timestamp,staticClass:"cell month",class:{selected:t.isSelected,disabled:t.isDisabled},attrs:{"track-by":"timestamp"},on:{click:function(n){n.stopPropagation(),e.selectMonth(t)}}},[e._v(e._s(t.month))])})],2)]:e._e(),e._v(" "),e.allowedToShowView("year")?[n("div",{directives:[{name:"show",rawName:"v-show",value:e.showYearView,expression:"showYearView"}],class:[e.calendarClass,"vdp-datepicker__calendar"],style:e.calendarStyle},[n("header",[n("span",{staticClass:"prev",class:{disabled:e.previousDecadeDisabled(e.pageTimestamp)},on:{click:e.previousDecade}},[e._v("<")]),e._v(" "),n("span",[e._v(e._s(e.getPageDecade()))]),e._v(" "),n("span",{staticClass:"next",class:{disabled:e.nextMonthDisabled(e.pageTimestamp)},on:{click:e.nextDecade}},[e._v(">")])]),e._v(" "),e._l(e.years,function(t){return n("span",{key:t.timestamp,staticClass:"cell year",class:{selected:t.isSelected,disabled:t.isDisabled},attrs:{"track-by":"timestamp"},on:{click:function(n){n.stopPropagation(),e.selectYear(t)}}},[e._v(e._s(t.year))])})],2)]:e._e()],2)},staticRenderFns:[]}},function(e,t,n){var i=n(74);"string"==typeof i&&(i=[[e.i,i,""]]),i.locals&&(e.exports=i.locals);n(77)("7da62ad4",i,!0)},function(e,t,n){"use strict";var i=n(44),r=n.n(i),a=n(26);t.a={isValidDate:function(e){return"[object Date]"===Object.prototype.toString.call(e)&&!isNaN(e.getTime())},getDayNameAbbr:function(e,t){if("object"!==(void 0===e?"undefined":r()(e)))throw TypeError("Invalid Type");return t[e.getDay()]},getMonthName:function(e,t){if(!t)throw Error("missing 2nd parameter Months array");if("object"===(void 0===e?"undefined":r()(e)))return t[e.getMonth()];if("number"==typeof e)return t[e];throw TypeError("Invalid type")},getMonthNameAbbr:function(e,t){if(!t)throw Error("missing 2nd paramter Months array");if("object"===(void 0===e?"undefined":r()(e)))return t[e.getMonth()];if("number"==typeof e)return t[e];throw TypeError("Invalid type")},daysInMonth:function(e,t){return/8|3|5|10/.test(t)?30:1===t?(e%4||!(e%100))&&e%400?28:29:31},getNthSuffix:function(e){switch(e){case 1:case 21:case 31:return"st";case 2:case 22:return"nd";case 3:case 23:return"rd";default:return"th"}},formatDate:function(e,t,n){n=n||a.a.translations.en;var i=e.getFullYear(),r=e.getMonth()+1,o=e.getDate();return t.replace(/dd/,("0"+o).slice(-2)).replace(/d/,o).replace(/yyyy/,i).replace(/yy/,String(i).slice(2)).replace(/MMMM/,this.getMonthName(e.getMonth(),n.months.original)).replace(/MMM/,this.getMonthNameAbbr(e.getMonth(),n.months.abbr)).replace(/MM/,("0"+r).slice(-2)).replace(/M(?!a|ä|e)/,r).replace(/su/,this.getNthSuffix(e.getDate())).replace(/D(?!e|é|i)/,this.getDayNameAbbr(e,n.days))},createDateArray:function(e,t){for(var n=[];e<=t;)n.push(new Date(e)),e=new Date(e).setDate(new Date(e).getDate()+1);return n}}},function(e,t,n){e.exports={default:n(45),__esModule:!0}},function(e,t,n){e.exports={default:n(46),__esModule:!0}},function(e,t,n){"use strict";function i(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var r=n(43),a=i(r),o=n(42),s=i(o),l="function"==typeof s.default&&"symbol"==typeof a.default?function(e){return typeof e}:function(e){return e&&"function"==typeof s.default&&e.constructor===s.default&&e!==s.default.prototype?"symbol":typeof e};t.default="function"==typeof s.default&&"symbol"===l(a.default)?function(e){return void 0===e?"undefined":l(e)}:function(e){return e&&"function"==typeof s.default&&e.constructor===s.default&&e!==s.default.prototype?"symbol":void 0===e?"undefined":l(e)}},function(e,t,n){n(70),n(68),n(71),n(72),e.exports=n(13).Symbol},function(e,t,n){n(69),n(73),e.exports=n(25).f("iterator")},function(e,t){e.exports=function(e){if("function"!=typeof e)throw TypeError(e+" is not a function!");return e}},function(e,t){e.exports=function(){}},function(e,t,n){var i=n(2),r=n(65),a=n(64);e.exports=function(e){return function(t,n,o){var s,l=i(t),u=r(l.length),c=a(o,u);if(e&&n!=n){for(;u>c;)if((s=l[c++])!=s)return!0}else for(;u>c;c++)if((e||c in l)&&l[c]===n)return e||c||0;return!e&&-1}}},function(e,t,n){var i=n(47);e.exports=function(e,t,n){if(i(e),void 0===t)return e;switch(n){case 1:return function(n){return e.call(t,n)};case 2:return function(n,i){return e.call(t,n,i)};case 3:return function(n,i,r){return e.call(t,n,i,r)}}return function(){return e.apply(t,arguments)}}},function(e,t,n){var i=n(10),r=n(34),a=n(18);e.exports=function(e){var t=i(e),n=r.f;if(n)for(var o,s=n(e),l=a.f,u=0;s.length>u;)l.call(e,o=s[u++])&&t.push(o);return t}},function(e,t,n){e.exports=n(0).document&&document.documentElement},function(e,t,n){var i=n(27);e.exports=Object("z").propertyIsEnumerable(0)?Object:function(e){return"String"==i(e)?e.split(""):Object(e)}},function(e,t,n){var i=n(27);e.exports=Array.isArray||function(e){return"Array"==i(e)}},function(e,t,n){"use strict";var i=n(32),r=n(11),a=n(19),o={};n(4)(o,n(6)("iterator"),function(){return this}),e.exports=function(e,t,n){e.prototype=i(o,{next:r(1,n)}),a(e,t+" Iterator")}},function(e,t){e.exports=function(e,t){return{value:t,done:!!e}}},function(e,t,n){var i=n(10),r=n(2);e.exports=function(e,t){for(var n,a=r(e),o=i(a),s=o.length,l=0;s>l;)if(a[n=o[l++]]===t)return n}},function(e,t,n){var i=n(12)("meta"),r=n(9),a=n(1),o=n(5).f,s=0,l=Object.isExtensible||function(){return!0},u=!n(8)(function(){return l(Object.preventExtensions({}))}),c=function(e){o(e,i,{value:{i:"O"+ ++s,w:{}}})},d=function(e,t){if(!r(e))return"symbol"==typeof e?e:("string"==typeof e?"S":"P")+e;if(!a(e,i)){if(!l(e))return"F";if(!t)return"E";c(e)}return e[i].i},h=function(e,t){if(!a(e,i)){if(!l(e))return!0;if(!t)return!1;c(e)}return e[i].w},p=function(e){return u&&f.NEED&&l(e)&&!a(e,i)&&c(e),e},f=e.exports={KEY:i,NEED:!1,fastKey:d,getWeak:h,onFreeze:p}},function(e,t,n){var i=n(5),r=n(7),a=n(10);e.exports=n(3)?Object.defineProperties:function(e,t){r(e);for(var n,o=a(t),s=o.length,l=0;s>l;)i.f(e,n=o[l++],t[n]);return e}},function(e,t,n){var i=n(18),r=n(11),a=n(2),o=n(23),s=n(1),l=n(30),u=Object.getOwnPropertyDescriptor;t.f=n(3)?u:function(e,t){if(e=a(e),t=o(t,!0),l)try{return u(e,t)}catch(e){}if(s(e,t))return r(!i.f.call(e,t),e[t])}},function(e,t,n){var i=n(2),r=n(33).f,a={}.toString,o="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],s=function(e){try{return r(e)}catch(e){return o.slice()}};e.exports.f=function(e){return o&&"[object Window]"==a.call(e)?s(e):r(i(e))}},function(e,t,n){var i=n(1),r=n(66),a=n(20)("IE_PROTO"),o=Object.prototype;e.exports=Object.getPrototypeOf||function(e){return e=r(e),i(e,a)?e[a]:"function"==typeof e.constructor&&e instanceof e.constructor?e.constructor.prototype:e instanceof Object?o:null}},function(e,t,n){var i=n(22),r=n(14);e.exports=function(e){return function(t,n){var a,o,s=String(r(t)),l=i(n),u=s.length;return l<0||l>=u?e?"":void 0:(a=s.charCodeAt(l),a<55296||a>56319||l+1===u||(o=s.charCodeAt(l+1))<56320||o>57343?e?s.charAt(l):a:e?s.slice(l,l+2):o-56320+(a-55296<<10)+65536)}}},function(e,t,n){var i=n(22),r=Math.max,a=Math.min;e.exports=function(e,t){return e=i(e),e<0?r(e+t,0):a(e,t)}},function(e,t,n){var i=n(22),r=Math.min;e.exports=function(e){return e>0?r(i(e),9007199254740991):0}},function(e,t,n){var i=n(14);e.exports=function(e){return Object(i(e))}},function(e,t,n){"use strict";var i=n(48),r=n(56),a=n(16),o=n(2);e.exports=n(31)(Array,"Array",function(e,t){this._t=o(e),this._i=0,this._k=t},function(){var e=this._t,t=this._k,n=this._i++;return!e||n>=e.length?(this._t=void 0,r(1)):"keys"==t?r(0,n):"values"==t?r(0,e[n]):r(0,[n,e[n]])},"values"),a.Arguments=a.Array,i("keys"),i("values"),i("entries")},function(e,t){},function(e,t,n){"use strict";var i=n(63)(!0);n(31)(String,"String",function(e){this._t=String(e),this._i=0},function(){var e,t=this._t,n=this._i;return n>=t.length?{value:void 0,done:!0}:(e=i(t,n),this._i+=e.length,{value:e,done:!1})})},function(e,t,n){"use strict";var i=n(0),r=n(1),a=n(3),o=n(29),s=n(36),l=n(58).KEY,u=n(8),c=n(21),d=n(19),h=n(12),p=n(6),f=n(25),g=n(24),b=n(57),m=n(51),v=n(54),y=n(7),D=n(2),M=n(23),S=n(11),w=n(32),_=n(61),k=n(60),x=n(5),O=n(10),J=k.f,F=x.f,A=_.f,j=i.Symbol,T=i.JSON,N=T&&T.stringify,Y=p("_hidden"),C=p("toPrimitive"),P={}.propertyIsEnumerable,V=c("symbol-registry"),E=c("symbols"),I=c("op-symbols"),L=Object.prototype,z="function"==typeof j,B=i.QObject,R=!B||!B.prototype||!B.prototype.findChild,H=a&&u(function(){return 7!=w(F({},"a",{get:function(){return F(this,"a",{value:7}).a}})).a})?function(e,t,n){var i=J(L,t);i&&delete L[t],F(e,t,n),i&&e!==L&&F(L,t,i)}:F,G=function(e){var t=E[e]=w(j.prototype);return t._k=e,t},$=z&&"symbol"==typeof j.iterator?function(e){return"symbol"==typeof e}:function(e){return e instanceof j},U=function(e,t,n){return e===L&&U(I,t,n),y(e),t=M(t,!0),y(n),r(E,t)?(n.enumerable?(r(e,Y)&&e[Y][t]&&(e[Y][t]=!1),n=w(n,{enumerable:S(0,!1)})):(r(e,Y)||F(e,Y,S(1,{})),e[Y][t]=!0),H(e,t,n)):F(e,t,n)},K=function(e,t){y(e);for(var n,i=m(t=D(t)),r=0,a=i.length;a>r;)U(e,n=i[r++],t[n]);return e},W=function(e,t){return void 0===t?w(e):K(w(e),t)},q=function(e){var t=P.call(this,e=M(e,!0));return!(this===L&&r(E,e)&&!r(I,e))&&(!(t||!r(this,e)||!r(E,e)||r(this,Y)&&this[Y][e])||t)},X=function(e,t){if(e=D(e),t=M(t,!0),e!==L||!r(E,t)||r(I,t)){var n=J(e,t);return!n||!r(E,t)||r(e,Y)&&e[Y][t]||(n.enumerable=!0),n}},Q=function(e){for(var t,n=A(D(e)),i=[],a=0;n.length>a;)r(E,t=n[a++])||t==Y||t==l||i.push(t);return i},Z=function(e){for(var t,n=e===L,i=A(n?I:D(e)),a=[],o=0;i.length>o;)!r(E,t=i[o++])||n&&!r(L,t)||a.push(E[t]);return a};z||(j=function(){if(this instanceof j)throw TypeError("Symbol is not a constructor!");var e=h(arguments.length>0?arguments[0]:void 0),t=function(n){this===L&&t.call(I,n),r(this,Y)&&r(this[Y],e)&&(this[Y][e]=!1),H(this,e,S(1,n))};return a&&R&&H(L,e,{configurable:!0,set:t}),G(e)},s(j.prototype,"toString",function(){return this._k}),k.f=X,x.f=U,n(33).f=_.f=Q,n(18).f=q,n(34).f=Z,a&&!n(17)&&s(L,"propertyIsEnumerable",q,!0),f.f=function(e){return G(p(e))}),o(o.G+o.W+o.F*!z,{Symbol:j});for(var ee="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),te=0;ee.length>te;)p(ee[te++]);for(var ee=O(p.store),te=0;ee.length>te;)g(ee[te++]);o(o.S+o.F*!z,"Symbol",{for:function(e){return r(V,e+="")?V[e]:V[e]=j(e)},keyFor:function(e){if($(e))return b(V,e);throw TypeError(e+" is not a symbol!")},useSetter:function(){R=!0},useSimple:function(){R=!1}}),o(o.S+o.F*!z,"Object",{create:W,defineProperty:U,defineProperties:K,getOwnPropertyDescriptor:X,getOwnPropertyNames:Q,getOwnPropertySymbols:Z}),T&&o(o.S+o.F*(!z||u(function(){var e=j();return"[null]"!=N([e])||"{}"!=N({a:e})||"{}"!=N(Object(e))})),"JSON",{stringify:function(e){if(void 0!==e&&!$(e)){for(var t,n,i=[e],r=1;arguments.length>r;)i.push(arguments[r++]);return t=i[1],"function"==typeof t&&(n=t),!n&&v(t)||(t=function(e,t){if(n&&(t=n.call(this,e,t)),!$(t))return t}),i[1]=t,N.apply(T,i)}}}),j.prototype[C]||n(4)(j.prototype,C,j.prototype.valueOf),d(j,"Symbol"),d(Math,"Math",!0),d(i.JSON,"JSON",!0)},function(e,t,n){n(24)("asyncIterator")},function(e,t,n){n(24)("observable")},function(e,t,n){n(67);for(var i=n(0),r=n(4),a=n(16),o=n(6)("toStringTag"),s=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],l=0;l<5;l++){var u=s[l],c=i[u],d=c&&c.prototype;d&&!d[o]&&r(d,o,u),a[u]=a.Array}},function(e,t,n){t=e.exports=n(75)(!1),t.push([e.i,'.rtl{direction:rtl}.vdp-datepicker{position:relative;text-align:left}.vdp-datepicker *{box-sizing:border-box}.vdp-datepicker__calendar{position:absolute;z-index:100;background:#fff;width:300px;border:1px solid #ccc}.vdp-datepicker__calendar header{display:block;line-height:40px}.vdp-datepicker__calendar header span{display:inline-block;text-align:center;width:71.42857142857143%;float:left}.vdp-datepicker__calendar header .next,.vdp-datepicker__calendar header .prev{width:14.285714285714286%;float:left;text-indent:-10000px;position:relative}.vdp-datepicker__calendar header .next:after,.vdp-datepicker__calendar header .prev:after{content:"";position:absolute;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);border:6px solid transparent}.vdp-datepicker__calendar header .prev:after{border-right:10px solid #000;margin-left:-5px}.vdp-datepicker__calendar header .prev.disabled:after{border-right:10px solid #ddd}.vdp-datepicker__calendar header .next:after{border-left:10px solid #000;margin-left:5px}.vdp-datepicker__calendar header .next.disabled:after{border-left:10px solid #ddd}.vdp-datepicker__calendar header .next:not(.disabled),.vdp-datepicker__calendar header .prev:not(.disabled),.vdp-datepicker__calendar header .up:not(.disabled){cursor:pointer}.vdp-datepicker__calendar header .next:not(.disabled):hover,.vdp-datepicker__calendar header .prev:not(.disabled):hover,.vdp-datepicker__calendar header .up:not(.disabled):hover{background:#eee}.vdp-datepicker__calendar .disabled{color:#ddd;cursor:default}.vdp-datepicker__calendar .flex-rtl{display:-webkit-box;display:-ms-flexbox;display:flex;width:inherit;-ms-flex-wrap:wrap;flex-wrap:wrap}.vdp-datepicker__calendar .cell{display:inline-block;padding:0 5px;width:14.285714285714286%;height:40px;line-height:40px;text-align:center;vertical-align:middle;border:1px solid transparent}.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year{cursor:pointer}.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover{border:1px solid #4bd}.vdp-datepicker__calendar .cell.selected,.vdp-datepicker__calendar .cell.selected.highlighted,.vdp-datepicker__calendar .cell.selected:hover{background:#4bd}.vdp-datepicker__calendar .cell.highlighted{background:#cae5ed}.vdp-datepicker__calendar .cell.highlighted.disabled{color:#a3a3a3}.vdp-datepicker__calendar .cell.grey{color:#888}.vdp-datepicker__calendar .cell.grey:hover{background:inherit}.vdp-datepicker__calendar .cell.day-header{font-size:75%;white-space:no-wrap;cursor:inherit}.vdp-datepicker__calendar .cell.day-header:hover{background:inherit}.vdp-datepicker__calendar .month,.vdp-datepicker__calendar .year{width:33.333%}.vdp-datepicker__calendar-button,.vdp-datepicker__clear-button{cursor:pointer;font-style:normal}.vdp-datepicker__calendar-button.disabled,.vdp-datepicker__clear-button.disabled{color:#999;cursor:default}',""])},function(e,t){function n(e,t){var n=e[1]||"",r=e[3];if(!r)return n;if(t&&"function"==typeof btoa){var a=i(r);return[n].concat(r.sources.map(function(e){return"/*# sourceURL="+r.sourceRoot+e+" */"})).concat([a]).join("\n")}return[n].join("\n")}function i(e){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(e))))+" */"}e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var i=n(t,e);return t[2]?"@media "+t[2]+"{"+i+"}":i}).join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var i={},r=0;r<this.length;r++){var a=this[r][0];"number"==typeof a&&(i[a]=!0)}for(r=0;r<e.length;r++){var o=e[r];"number"==typeof o[0]&&i[o[0]]||(n&&!o[2]?o[2]=n:n&&(o[2]="("+o[2]+") and ("+n+")"),t.push(o))}},t}},function(e,t,n){function i(e){n(40)}var r=n(38)(n(37),n(39),i,null,null);e.exports=r.exports},function(e,t,n){function i(e){for(var t=0;t<e.length;t++){var n=e[t],i=c[n.id];if(i){i.refs++;for(var r=0;r<i.parts.length;r++)i.parts[r](n.parts[r]);for(;r<n.parts.length;r++)i.parts.push(a(n.parts[r]));i.parts.length>n.parts.length&&(i.parts.length=n.parts.length)}else{for(var o=[],r=0;r<n.parts.length;r++)o.push(a(n.parts[r]));c[n.id]={id:n.id,refs:1,parts:o}}}}function r(){var e=document.createElement("style");return e.type="text/css",d.appendChild(e),e}function a(e){var t,n,i=document.querySelector('style[data-vue-ssr-id~="'+e.id+'"]');if(i){if(f)return g;i.parentNode.removeChild(i)}if(b){var a=p++;i=h||(h=r()),t=o.bind(null,i,a,!1),n=o.bind(null,i,a,!0)}else i=r(),t=s.bind(null,i),n=function(){i.parentNode.removeChild(i)};return t(e),function(i){if(i){if(i.css===e.css&&i.media===e.media&&i.sourceMap===e.sourceMap)return;t(e=i)}else n()}}function o(e,t,n,i){var r=n?"":i.css;if(e.styleSheet)e.styleSheet.cssText=m(t,r);else{var a=document.createTextNode(r),o=e.childNodes;o[t]&&e.removeChild(o[t]),o.length?e.insertBefore(a,o[t]):e.appendChild(a)}}function s(e,t){var n=t.css,i=t.media,r=t.sourceMap;if(i&&e.setAttribute("media",i),r&&(n+="\n/*# sourceURL="+r.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(r))))+" */"),e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}var l="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!l)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var u=n(78),c={},d=l&&(document.head||document.getElementsByTagName("head")[0]),h=null,p=0,f=!1,g=function(){},b="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());e.exports=function(e,t,n){f=n;var r=u(e,t);return i(r),function(t){for(var n=[],a=0;a<r.length;a++){var o=r[a],s=c[o.id];s.refs--,n.push(s)}t?(r=u(e,t),i(r)):r=[];for(var a=0;a<n.length;a++){var s=n[a];if(0===s.refs){for(var l=0;l<s.parts.length;l++)s.parts[l]();delete c[s.id]}}}};var m=function(){var e=[];return function(t,n){return e[t]=n,e.filter(Boolean).join("\n")}}()},function(e,t){e.exports=function(e,t){for(var n=[],i={},r=0;r<t.length;r++){var a=t[r],o=a[0],s=a[1],l=a[2],u=a[3],c={id:e+":"+r,css:s,media:l,sourceMap:u};i[o]?i[o].parts.push(c):n.push(i[o]={id:o,parts:[c]})}return n}}]);
 
 /***/ }),
 
-/***/ 581:
+/***/ 704:
+/***/ (function(module, exports, __webpack_require__) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory(__webpack_require__(705));
+	else if(typeof define === 'function' && define.amd)
+		define("VueFlatpickr", ["flatpickr"], factory);
+	else if(typeof exports === 'object')
+		exports["VueFlatpickr"] = factory(require("flatpickr"));
+	else
+		root["VueFlatpickr"] = factory(root["flatpickr"]);
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_2__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__ = __webpack_require__(567);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js__);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__ = __webpack_require__(582);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_circle_slider_css__);
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
-/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__dist_vue_circle_slider_common_js___default.a);
+// EXTERNAL MODULE: external "flatpickr"
+var external__flatpickr_ = __webpack_require__(2);
+var external__flatpickr__default = /*#__PURE__*/__webpack_require__.n(external__flatpickr_);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./src/component.vue
+//
+//
+//
+//
+//
+//
+//
+//
 
 
+// You have to import css yourself
+
+// All available hooks, copied from flatpickr source
+var hooks = ['onChange', 'onClose', 'onDayCreate', 'onDestroy', 'onKeyDown', 'onMonthChange', 'onOpen', 'onParseConfig', 'onReady', 'onValueUpdate', 'onYearChange', 'onPreCalendarPosition'];
+
+var camelToKebab = function camelToKebab(string) {
+  return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+};
+
+var arrayify = function arrayify(obj) {
+  return obj instanceof Array ? obj : [obj];
+};
+
+/* harmony default export */ var component = ({
+  name: 'flat-pickr',
+  props: {
+    value: {
+      default: null,
+      required: true,
+      validator: function validator(value) {
+        return value === null || value instanceof Date || typeof value === 'string' || value instanceof String || value instanceof Array || typeof value === 'number';
+      }
+    },
+    // https://chmln.github.io/flatpickr/options/
+    config: {
+      type: Object,
+      default: function _default() {
+        return {
+          wrap: false,
+          defaultDate: null
+        };
+      }
+    },
+    events: {
+      type: Array,
+      default: function _default() {
+        return hooks;
+      }
+    }
+  },
+  data: function data() {
+    return {
+      /**
+       * The flatpickr instance
+       */
+      fp: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    // Return early if flatPickr is already loaded
+    /* istanbul ignore if */
+    if (this.fp) return;
+
+    // Inject our method into events array
+    this.events.forEach(function (hook) {
+      _this.config[hook] = arrayify(_this.config[hook] || []).concat(function () {
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+
+        _this.$emit.apply(_this, [camelToKebab(hook)].concat(args));
+      });
+    });
+
+    // Set initial date without emitting any event
+    this.config.defaultDate = this.value || this.config.defaultDate;
+
+    // Init flatpickr
+    this.fp = new external__flatpickr__default.a(this.getElem(), this.config);
+  },
+
+  methods: {
+    /**
+     * Get the HTML node where flatpickr to be attached
+     * Bind on parent element if wrap is true
+     */
+    getElem: function getElem() {
+      return this.config.wrap ? this.$el.parentNode : this.$el;
+    },
+
+
+    /**
+     * Watch for value changed by date-picker itself and notify parent component
+     *
+     * @param event
+     */
+    onInput: function onInput(event) {
+      this.$emit('input', event.target.value);
+    }
+  },
+  watch: {
+    /**
+     * Watch for any config changes and redraw date-picker
+     *
+     * @param newConfig Object
+     */
+    config: {
+      deep: true,
+      handler: function handler(newConfig) {
+        // Workaround: Don't pass hooks to configs again otherwise
+        // previously registered hooks will stop working
+        hooks.forEach(function (hook) {
+          delete newConfig[hook];
+        });
+        this.fp.set(newConfig);
+      }
+    },
+    /**
+     * Watch for changes from parent component and update DOM
+     *
+     * @param newValue
+     */
+    value: function value(newValue) {
+      // Prevent updates if v-model value is same as input's current value
+      if (newValue === this.$el.value) return;
+      // Make sure we have a flatpickr instance
+      this.fp &&
+      // Notify flatpickr instance that there is a change in value
+      this.fp.setDate(newValue, true);
+    }
+  },
+  /**
+   * Free up memory
+   */
+  beforeDestroy: function beforeDestroy() {
+    /* istanbul ignore else */
+    if (this.fp) {
+      this.fp.destroy();
+      this.fp = null;
+    }
+  }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-34012ebe","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/component.vue
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{attrs:{"type":"text","data-input":""},on:{"input":_vm.onInput}})}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ var selectortype_template_index_0_src_component = (esExports);
+// CONCATENATED MODULE: ./src/component.vue
+var normalizeComponent = __webpack_require__(1)
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  component,
+  selectortype_template_index_0_src_component,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ var src_component = (Component.exports);
+
+// CONCATENATED MODULE: ./src/index.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Plugin", function() { return src_Plugin; });
+/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "Component", function() { return src_component; });
+
+
+var src_Plugin = function Plugin(Vue, params) {
+  var name = 'flat-pickr';
+  /* istanbul ignore else */
+  if (typeof params === 'string') name = params;
+
+  Vue.component(name, src_component);
+};
+
+src_component.install = src_Plugin;
+
+/* harmony default export */ var src = __webpack_exports__["default"] = (src_component);
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports) {
 
-/***/ 582:
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file.
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier /* server only */
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = injectStyles
+  }
+
+  if (hook) {
+    var functional = options.functional
+    var existing = functional
+      ? options.render
+      : options.beforeCreate
+
+    if (!functional) {
+      // inject component registration as beforeCreate hook
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    } else {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return existing(h, context)
+      }
+    }
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+
+/***/ })
+/******/ ])["default"];
+});
+
+/***/ }),
+
+/***/ 705:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {/* flatpickr v4.5.2, @license MIT */
+(function (global, factory) {
+     true ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    (global.flatpickr = factory());
+}(this, (function () { 'use strict';
+
+    var pad = function pad(number) {
+      return ("0" + number).slice(-2);
+    };
+    var int = function int(bool) {
+      return bool === true ? 1 : 0;
+    };
+    function debounce(func, wait, immediate) {
+      if (immediate === void 0) {
+        immediate = false;
+      }
+
+      var timeout;
+      return function () {
+        var context = this,
+            args = arguments;
+        timeout !== null && clearTimeout(timeout);
+        timeout = window.setTimeout(function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        }, wait);
+        if (immediate && !timeout) func.apply(context, args);
+      };
+    }
+    var arrayify = function arrayify(obj) {
+      return obj instanceof Array ? obj : [obj];
+    };
+
+    var do_nothing = function do_nothing() {
+      return undefined;
+    };
+
+    var monthToStr = function monthToStr(monthNumber, shorthand, locale) {
+      return locale.months[shorthand ? "shorthand" : "longhand"][monthNumber];
+    };
+    var revFormat = {
+      D: do_nothing,
+      F: function F(dateObj, monthName, locale) {
+        dateObj.setMonth(locale.months.longhand.indexOf(monthName));
+      },
+      G: function G(dateObj, hour) {
+        dateObj.setHours(parseFloat(hour));
+      },
+      H: function H(dateObj, hour) {
+        dateObj.setHours(parseFloat(hour));
+      },
+      J: function J(dateObj, day) {
+        dateObj.setDate(parseFloat(day));
+      },
+      K: function K(dateObj, amPM, locale) {
+        dateObj.setHours(dateObj.getHours() % 12 + 12 * int(new RegExp(locale.amPM[1], "i").test(amPM)));
+      },
+      M: function M(dateObj, shortMonth, locale) {
+        dateObj.setMonth(locale.months.shorthand.indexOf(shortMonth));
+      },
+      S: function S(dateObj, seconds) {
+        dateObj.setSeconds(parseFloat(seconds));
+      },
+      U: function U(_, unixSeconds) {
+        return new Date(parseFloat(unixSeconds) * 1000);
+      },
+      W: function W(dateObj, weekNum) {
+        var weekNumber = parseInt(weekNum);
+        return new Date(dateObj.getFullYear(), 0, 2 + (weekNumber - 1) * 7, 0, 0, 0, 0);
+      },
+      Y: function Y(dateObj, year) {
+        dateObj.setFullYear(parseFloat(year));
+      },
+      Z: function Z(_, ISODate) {
+        return new Date(ISODate);
+      },
+      d: function d(dateObj, day) {
+        dateObj.setDate(parseFloat(day));
+      },
+      h: function h(dateObj, hour) {
+        dateObj.setHours(parseFloat(hour));
+      },
+      i: function i(dateObj, minutes) {
+        dateObj.setMinutes(parseFloat(minutes));
+      },
+      j: function j(dateObj, day) {
+        dateObj.setDate(parseFloat(day));
+      },
+      l: do_nothing,
+      m: function m(dateObj, month) {
+        dateObj.setMonth(parseFloat(month) - 1);
+      },
+      n: function n(dateObj, month) {
+        dateObj.setMonth(parseFloat(month) - 1);
+      },
+      s: function s(dateObj, seconds) {
+        dateObj.setSeconds(parseFloat(seconds));
+      },
+      w: do_nothing,
+      y: function y(dateObj, year) {
+        dateObj.setFullYear(2000 + parseFloat(year));
+      }
+    };
+    var tokenRegex = {
+      D: "(\\w+)",
+      F: "(\\w+)",
+      G: "(\\d\\d|\\d)",
+      H: "(\\d\\d|\\d)",
+      J: "(\\d\\d|\\d)\\w+",
+      K: "",
+      M: "(\\w+)",
+      S: "(\\d\\d|\\d)",
+      U: "(.+)",
+      W: "(\\d\\d|\\d)",
+      Y: "(\\d{4})",
+      Z: "(.+)",
+      d: "(\\d\\d|\\d)",
+      h: "(\\d\\d|\\d)",
+      i: "(\\d\\d|\\d)",
+      j: "(\\d\\d|\\d)",
+      l: "(\\w+)",
+      m: "(\\d\\d|\\d)",
+      n: "(\\d\\d|\\d)",
+      s: "(\\d\\d|\\d)",
+      w: "(\\d\\d|\\d)",
+      y: "(\\d{2})"
+    };
+    var formats = {
+      Z: function Z(date) {
+        return date.toISOString();
+      },
+      D: function D(date, locale, options) {
+        return locale.weekdays.shorthand[formats.w(date, locale, options)];
+      },
+      F: function F(date, locale, options) {
+        return monthToStr(formats.n(date, locale, options) - 1, false, locale);
+      },
+      G: function G(date, locale, options) {
+        return pad(formats.h(date, locale, options));
+      },
+      H: function H(date) {
+        return pad(date.getHours());
+      },
+      J: function J(date, locale) {
+        return locale.ordinal !== undefined ? date.getDate() + locale.ordinal(date.getDate()) : date.getDate();
+      },
+      K: function K(date, locale) {
+        return locale.amPM[int(date.getHours() > 11)];
+      },
+      M: function M(date, locale) {
+        return monthToStr(date.getMonth(), true, locale);
+      },
+      S: function S(date) {
+        return pad(date.getSeconds());
+      },
+      U: function U(date) {
+        return date.getTime() / 1000;
+      },
+      W: function W(date, _, options) {
+        return options.getWeek(date);
+      },
+      Y: function Y(date) {
+        return date.getFullYear();
+      },
+      d: function d(date) {
+        return pad(date.getDate());
+      },
+      h: function h(date) {
+        return date.getHours() % 12 ? date.getHours() % 12 : 12;
+      },
+      i: function i(date) {
+        return pad(date.getMinutes());
+      },
+      j: function j(date) {
+        return date.getDate();
+      },
+      l: function l(date, locale) {
+        return locale.weekdays.longhand[date.getDay()];
+      },
+      m: function m(date) {
+        return pad(date.getMonth() + 1);
+      },
+      n: function n(date) {
+        return date.getMonth() + 1;
+      },
+      s: function s(date) {
+        return date.getSeconds();
+      },
+      w: function w(date) {
+        return date.getDay();
+      },
+      y: function y(date) {
+        return String(date.getFullYear()).substring(2);
+      }
+    };
+
+    var english = {
+      weekdays: {
+        shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        longhand: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+      },
+      months: {
+        shorthand: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        longhand: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+      },
+      daysInMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+      firstDayOfWeek: 0,
+      ordinal: function ordinal(nth) {
+        var s = nth % 100;
+        if (s > 3 && s < 21) return "th";
+
+        switch (s % 10) {
+          case 1:
+            return "st";
+
+          case 2:
+            return "nd";
+
+          case 3:
+            return "rd";
+
+          default:
+            return "th";
+        }
+      },
+      rangeSeparator: " to ",
+      weekAbbreviation: "Wk",
+      scrollTitle: "Scroll to increment",
+      toggleTitle: "Click to toggle",
+      amPM: ["AM", "PM"],
+      yearAriaLabel: "Year"
+    };
+
+    var createDateFormatter = function createDateFormatter(_ref) {
+      var _ref$config = _ref.config,
+          config = _ref$config === void 0 ? defaults : _ref$config,
+          _ref$l10n = _ref.l10n,
+          l10n = _ref$l10n === void 0 ? english : _ref$l10n;
+      return function (dateObj, frmt, overrideLocale) {
+        var locale = overrideLocale || l10n;
+
+        if (config.formatDate !== undefined) {
+          return config.formatDate(dateObj, frmt, locale);
+        }
+
+        return frmt.split("").map(function (c, i, arr) {
+          return formats[c] && arr[i - 1] !== "\\" ? formats[c](dateObj, locale, config) : c !== "\\" ? c : "";
+        }).join("");
+      };
+    };
+    var createDateParser = function createDateParser(_ref2) {
+      var _ref2$config = _ref2.config,
+          config = _ref2$config === void 0 ? defaults : _ref2$config,
+          _ref2$l10n = _ref2.l10n,
+          l10n = _ref2$l10n === void 0 ? english : _ref2$l10n;
+      return function (date, givenFormat, timeless, customLocale) {
+        if (date !== 0 && !date) return undefined;
+        var locale = customLocale || l10n;
+        var parsedDate;
+        var date_orig = date;
+        if (date instanceof Date) parsedDate = new Date(date.getTime());else if (typeof date !== "string" && date.toFixed !== undefined) parsedDate = new Date(date);else if (typeof date === "string") {
+          var format = givenFormat || (config || defaults).dateFormat;
+          var datestr = String(date).trim();
+
+          if (datestr === "today") {
+            parsedDate = new Date();
+            timeless = true;
+          } else if (/Z$/.test(datestr) || /GMT$/.test(datestr)) parsedDate = new Date(date);else if (config && config.parseDate) parsedDate = config.parseDate(date, format);else {
+            parsedDate = !config || !config.noCalendar ? new Date(new Date().getFullYear(), 0, 1, 0, 0, 0, 0) : new Date(new Date().setHours(0, 0, 0, 0));
+            var matched,
+                ops = [];
+
+            for (var i = 0, matchIndex = 0, regexStr = ""; i < format.length; i++) {
+              var token = format[i];
+              var isBackSlash = token === "\\";
+              var escaped = format[i - 1] === "\\" || isBackSlash;
+
+              if (tokenRegex[token] && !escaped) {
+                regexStr += tokenRegex[token];
+                var match = new RegExp(regexStr).exec(date);
+
+                if (match && (matched = true)) {
+                  ops[token !== "Y" ? "push" : "unshift"]({
+                    fn: revFormat[token],
+                    val: match[++matchIndex]
+                  });
+                }
+              } else if (!isBackSlash) regexStr += ".";
+
+              ops.forEach(function (_ref3) {
+                var fn = _ref3.fn,
+                    val = _ref3.val;
+                return parsedDate = fn(parsedDate, val, locale) || parsedDate;
+              });
+            }
+
+            parsedDate = matched ? parsedDate : undefined;
+          }
+        }
+
+        if (!(parsedDate instanceof Date && !isNaN(parsedDate.getTime()))) {
+          config.errorHandler(new Error("Invalid date provided: " + date_orig));
+          return undefined;
+        }
+
+        if (timeless === true) parsedDate.setHours(0, 0, 0, 0);
+        return parsedDate;
+      };
+    };
+    function compareDates(date1, date2, timeless) {
+      if (timeless === void 0) {
+        timeless = true;
+      }
+
+      if (timeless !== false) {
+        return new Date(date1.getTime()).setHours(0, 0, 0, 0) - new Date(date2.getTime()).setHours(0, 0, 0, 0);
+      }
+
+      return date1.getTime() - date2.getTime();
+    }
+    var getWeek = function getWeek(givenDate) {
+      var date = new Date(givenDate.getTime());
+      date.setHours(0, 0, 0, 0);
+      date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+      var week1 = new Date(date.getFullYear(), 0, 4);
+      return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+    };
+    var isBetween = function isBetween(ts, ts1, ts2) {
+      return ts > Math.min(ts1, ts2) && ts < Math.max(ts1, ts2);
+    };
+    var duration = {
+      DAY: 86400000
+    };
+
+    var HOOKS = ["onChange", "onClose", "onDayCreate", "onDestroy", "onKeyDown", "onMonthChange", "onOpen", "onParseConfig", "onReady", "onValueUpdate", "onYearChange", "onPreCalendarPosition"];
+    var defaults = {
+      _disable: [],
+      _enable: [],
+      allowInput: false,
+      altFormat: "F j, Y",
+      altInput: false,
+      altInputClass: "form-control input",
+      animate: typeof window === "object" && window.navigator.userAgent.indexOf("MSIE") === -1,
+      ariaDateFormat: "F j, Y",
+      clickOpens: true,
+      closeOnSelect: true,
+      conjunction: ", ",
+      dateFormat: "Y-m-d",
+      defaultHour: 12,
+      defaultMinute: 0,
+      defaultSeconds: 0,
+      disable: [],
+      disableMobile: false,
+      enable: [],
+      enableSeconds: false,
+      enableTime: false,
+      errorHandler: function errorHandler(err) {
+        return typeof console !== "undefined" && console.warn(err);
+      },
+      getWeek: getWeek,
+      hourIncrement: 1,
+      ignoredFocusElements: [],
+      inline: false,
+      locale: "default",
+      minuteIncrement: 5,
+      mode: "single",
+      nextArrow: "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z' /></svg>",
+      noCalendar: false,
+      now: new Date(),
+      onChange: [],
+      onClose: [],
+      onDayCreate: [],
+      onDestroy: [],
+      onKeyDown: [],
+      onMonthChange: [],
+      onOpen: [],
+      onParseConfig: [],
+      onReady: [],
+      onValueUpdate: [],
+      onYearChange: [],
+      onPreCalendarPosition: [],
+      plugins: [],
+      position: "auto",
+      positionElement: undefined,
+      prevArrow: "<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 17 17'><g></g><path d='M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z' /></svg>",
+      shorthandCurrentMonth: false,
+      showMonths: 1,
+      static: false,
+      time_24hr: false,
+      weekNumbers: false,
+      wrap: false
+    };
+
+    function toggleClass(elem, className, bool) {
+      if (bool === true) return elem.classList.add(className);
+      elem.classList.remove(className);
+    }
+    function createElement(tag, className, content) {
+      var e = window.document.createElement(tag);
+      className = className || "";
+      content = content || "";
+      e.className = className;
+      if (content !== undefined) e.textContent = content;
+      return e;
+    }
+    function clearNode(node) {
+      while (node.firstChild) {
+        node.removeChild(node.firstChild);
+      }
+    }
+    function findParent(node, condition) {
+      if (condition(node)) return node;else if (node.parentNode) return findParent(node.parentNode, condition);
+      return undefined;
+    }
+    function createNumberInput(inputClassName, opts) {
+      var wrapper = createElement("div", "numInputWrapper"),
+          numInput = createElement("input", "numInput " + inputClassName),
+          arrowUp = createElement("span", "arrowUp"),
+          arrowDown = createElement("span", "arrowDown");
+      numInput.type = "text";
+      numInput.pattern = "\\d*";
+      if (opts !== undefined) for (var key in opts) {
+        numInput.setAttribute(key, opts[key]);
+      }
+      wrapper.appendChild(numInput);
+      wrapper.appendChild(arrowUp);
+      wrapper.appendChild(arrowDown);
+      return wrapper;
+    }
+
+    if (typeof Object.assign !== "function") {
+      Object.assign = function (target) {
+        if (!target) {
+          throw TypeError("Cannot convert undefined or null to object");
+        }
+
+        for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+          args[_key - 1] = arguments[_key];
+        }
+
+        var _loop = function _loop() {
+          var source = args[_i];
+
+          if (source) {
+            Object.keys(source).forEach(function (key) {
+              return target[key] = source[key];
+            });
+          }
+        };
+
+        for (var _i = 0; _i < args.length; _i++) {
+          _loop();
+        }
+
+        return target;
+      };
+    }
+
+    var DEBOUNCED_CHANGE_MS = 300;
+
+    function FlatpickrInstance(element, instanceConfig) {
+      var self = {
+        config: Object.assign({}, flatpickr.defaultConfig),
+        l10n: english
+      };
+      self.parseDate = createDateParser({
+        config: self.config,
+        l10n: self.l10n
+      });
+      self._handlers = [];
+      self._bind = bind;
+      self._setHoursFromDate = setHoursFromDate;
+      self._positionCalendar = positionCalendar;
+      self.changeMonth = changeMonth;
+      self.changeYear = changeYear;
+      self.clear = clear;
+      self.close = close;
+      self._createElement = createElement;
+      self.destroy = destroy;
+      self.isEnabled = isEnabled;
+      self.jumpToDate = jumpToDate;
+      self.open = open;
+      self.redraw = redraw;
+      self.set = set;
+      self.setDate = setDate;
+      self.toggle = toggle;
+
+      function setupHelperFunctions() {
+        self.utils = {
+          getDaysInMonth: function getDaysInMonth(month, yr) {
+            if (month === void 0) {
+              month = self.currentMonth;
+            }
+
+            if (yr === void 0) {
+              yr = self.currentYear;
+            }
+
+            if (month === 1 && (yr % 4 === 0 && yr % 100 !== 0 || yr % 400 === 0)) return 29;
+            return self.l10n.daysInMonth[month];
+          }
+        };
+      }
+
+      function init() {
+        self.element = self.input = element;
+        self.isOpen = false;
+        parseConfig();
+        setupLocale();
+        setupInputs();
+        setupDates();
+        setupHelperFunctions();
+        if (!self.isMobile) build();
+        bindEvents();
+
+        if (self.selectedDates.length || self.config.noCalendar) {
+          if (self.config.enableTime) {
+            setHoursFromDate(self.config.noCalendar ? self.latestSelectedDateObj || self.config.minDate : undefined);
+          }
+
+          updateValue(false);
+        }
+
+        setCalendarWidth();
+        self.showTimeInput = self.selectedDates.length > 0 || self.config.noCalendar;
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        if (!self.isMobile && isSafari) {
+          positionCalendar();
+        }
+
+        triggerEvent("onReady");
+      }
+
+      function bindToInstance(fn) {
+        return fn.bind(self);
+      }
+
+      function setCalendarWidth() {
+        var config = self.config;
+        if (config.weekNumbers === false && config.showMonths === 1) return;else if (config.noCalendar !== true) {
+          window.requestAnimationFrame(function () {
+            self.calendarContainer.style.visibility = "hidden";
+            self.calendarContainer.style.display = "block";
+
+            if (self.daysContainer !== undefined) {
+              var daysWidth = (self.days.offsetWidth + 1) * config.showMonths;
+              self.daysContainer.style.width = daysWidth + "px";
+              self.calendarContainer.style.width = daysWidth + (self.weekWrapper !== undefined ? self.weekWrapper.offsetWidth : 0) + "px";
+              self.calendarContainer.style.removeProperty("visibility");
+              self.calendarContainer.style.removeProperty("display");
+            }
+          });
+        }
+      }
+
+      function updateTime(e) {
+        if (self.selectedDates.length === 0) return;
+
+        if (e !== undefined && e.type !== "blur") {
+          timeWrapper(e);
+        }
+
+        var prevValue = self._input.value;
+        setHoursFromInputs();
+        updateValue();
+
+        if (self._input.value !== prevValue) {
+          self._debouncedChange();
+        }
+      }
+
+      function ampm2military(hour, amPM) {
+        return hour % 12 + 12 * int(amPM === self.l10n.amPM[1]);
+      }
+
+      function military2ampm(hour) {
+        switch (hour % 24) {
+          case 0:
+          case 12:
+            return 12;
+
+          default:
+            return hour % 12;
+        }
+      }
+
+      function setHoursFromInputs() {
+        if (self.hourElement === undefined || self.minuteElement === undefined) return;
+        var hours = (parseInt(self.hourElement.value.slice(-2), 10) || 0) % 24,
+            minutes = (parseInt(self.minuteElement.value, 10) || 0) % 60,
+            seconds = self.secondElement !== undefined ? (parseInt(self.secondElement.value, 10) || 0) % 60 : 0;
+
+        if (self.amPM !== undefined) {
+          hours = ampm2military(hours, self.amPM.textContent);
+        }
+
+        var limitMinHours = self.config.minTime !== undefined || self.config.minDate && self.minDateHasTime && self.latestSelectedDateObj && compareDates(self.latestSelectedDateObj, self.config.minDate, true) === 0;
+        var limitMaxHours = self.config.maxTime !== undefined || self.config.maxDate && self.maxDateHasTime && self.latestSelectedDateObj && compareDates(self.latestSelectedDateObj, self.config.maxDate, true) === 0;
+
+        if (limitMaxHours) {
+          var maxTime = self.config.maxTime !== undefined ? self.config.maxTime : self.config.maxDate;
+          hours = Math.min(hours, maxTime.getHours());
+          if (hours === maxTime.getHours()) minutes = Math.min(minutes, maxTime.getMinutes());
+          if (minutes === maxTime.getMinutes()) seconds = Math.min(seconds, maxTime.getSeconds());
+        }
+
+        if (limitMinHours) {
+          var minTime = self.config.minTime !== undefined ? self.config.minTime : self.config.minDate;
+          hours = Math.max(hours, minTime.getHours());
+          if (hours === minTime.getHours()) minutes = Math.max(minutes, minTime.getMinutes());
+          if (minutes === minTime.getMinutes()) seconds = Math.max(seconds, minTime.getSeconds());
+        }
+
+        setHours(hours, minutes, seconds);
+      }
+
+      function setHoursFromDate(dateObj) {
+        var date = dateObj || self.latestSelectedDateObj;
+        if (date) setHours(date.getHours(), date.getMinutes(), date.getSeconds());
+      }
+
+      function setDefaultHours() {
+        var hours = self.config.defaultHour;
+        var minutes = self.config.defaultMinute;
+        var seconds = self.config.defaultSeconds;
+
+        if (self.config.minDate !== undefined) {
+          var min_hr = self.config.minDate.getHours();
+          var min_minutes = self.config.minDate.getMinutes();
+          hours = Math.max(hours, min_hr);
+          if (hours === min_hr) minutes = Math.max(min_minutes, minutes);
+          if (hours === min_hr && minutes === min_minutes) seconds = self.config.minDate.getSeconds();
+        }
+
+        if (self.config.maxDate !== undefined) {
+          var max_hr = self.config.maxDate.getHours();
+          var max_minutes = self.config.maxDate.getMinutes();
+          hours = Math.min(hours, max_hr);
+          if (hours === max_hr) minutes = Math.min(max_minutes, minutes);
+          if (hours === max_hr && minutes === max_minutes) seconds = self.config.maxDate.getSeconds();
+        }
+
+        setHours(hours, minutes, seconds);
+      }
+
+      function setHours(hours, minutes, seconds) {
+        if (self.latestSelectedDateObj !== undefined) {
+          self.latestSelectedDateObj.setHours(hours % 24, minutes, seconds || 0, 0);
+        }
+
+        if (!self.hourElement || !self.minuteElement || self.isMobile) return;
+        self.hourElement.value = pad(!self.config.time_24hr ? (12 + hours) % 12 + 12 * int(hours % 12 === 0) : hours);
+        self.minuteElement.value = pad(minutes);
+        if (self.amPM !== undefined) self.amPM.textContent = self.l10n.amPM[int(hours >= 12)];
+        if (self.secondElement !== undefined) self.secondElement.value = pad(seconds);
+      }
+
+      function onYearInput(event) {
+        var year = parseInt(event.target.value) + (event.delta || 0);
+
+        if (year / 1000 > 1 || event.key === "Enter" && !/[^\d]/.test(year.toString())) {
+          changeYear(year);
+        }
+      }
+
+      function bind(element, event, handler, options) {
+        if (event instanceof Array) return event.forEach(function (ev) {
+          return bind(element, ev, handler, options);
+        });
+        if (element instanceof Array) return element.forEach(function (el) {
+          return bind(el, event, handler, options);
+        });
+        element.addEventListener(event, handler, options);
+
+        self._handlers.push({
+          element: element,
+          event: event,
+          handler: handler,
+          options: options
+        });
+      }
+
+      function onClick(handler) {
+        return function (evt) {
+          evt.which === 1 && handler(evt);
+        };
+      }
+
+      function triggerChange() {
+        triggerEvent("onChange");
+      }
+
+      function bindEvents() {
+        if (self.config.wrap) {
+          ["open", "close", "toggle", "clear"].forEach(function (evt) {
+            Array.prototype.forEach.call(self.element.querySelectorAll("[data-" + evt + "]"), function (el) {
+              return bind(el, "click", self[evt]);
+            });
+          });
+        }
+
+        if (self.isMobile) {
+          setupMobile();
+          return;
+        }
+
+        var debouncedResize = debounce(onResize, 50);
+        self._debouncedChange = debounce(triggerChange, DEBOUNCED_CHANGE_MS);
+        if (self.daysContainer && !/iPhone|iPad|iPod/i.test(navigator.userAgent)) bind(self.daysContainer, "mouseover", function (e) {
+          if (self.config.mode === "range") onMouseOver(e.target);
+        });
+        bind(window.document.body, "keydown", onKeyDown);
+        if (!self.config.static) bind(self._input, "keydown", onKeyDown);
+        if (!self.config.inline && !self.config.static) bind(window, "resize", debouncedResize);
+        if (window.ontouchstart !== undefined) bind(window.document, "click", documentClick);else bind(window.document, "mousedown", onClick(documentClick));
+        bind(window.document, "focus", documentClick, {
+          capture: true
+        });
+
+        if (self.config.clickOpens === true) {
+          bind(self._input, "focus", self.open);
+          bind(self._input, "mousedown", onClick(self.open));
+        }
+
+        if (self.daysContainer !== undefined) {
+          bind(self.monthNav, "mousedown", onClick(onMonthNavClick));
+          bind(self.monthNav, ["keyup", "increment"], onYearInput);
+          bind(self.daysContainer, "mousedown", onClick(selectDate));
+        }
+
+        if (self.timeContainer !== undefined && self.minuteElement !== undefined && self.hourElement !== undefined) {
+          var selText = function selText(e) {
+            return e.target.select();
+          };
+
+          bind(self.timeContainer, ["increment"], updateTime);
+          bind(self.timeContainer, "blur", updateTime, {
+            capture: true
+          });
+          bind(self.timeContainer, "mousedown", onClick(timeIncrement));
+          bind([self.hourElement, self.minuteElement], ["focus", "click"], selText);
+          if (self.secondElement !== undefined) bind(self.secondElement, "focus", function () {
+            return self.secondElement && self.secondElement.select();
+          });
+
+          if (self.amPM !== undefined) {
+            bind(self.amPM, "mousedown", onClick(function (e) {
+              updateTime(e);
+              triggerChange();
+            }));
+          }
+        }
+      }
+
+      function jumpToDate(jumpDate) {
+        var jumpTo = jumpDate !== undefined ? self.parseDate(jumpDate) : self.latestSelectedDateObj || (self.config.minDate && self.config.minDate > self.now ? self.config.minDate : self.config.maxDate && self.config.maxDate < self.now ? self.config.maxDate : self.now);
+
+        try {
+          if (jumpTo !== undefined) {
+            self.currentYear = jumpTo.getFullYear();
+            self.currentMonth = jumpTo.getMonth();
+          }
+        } catch (e) {
+          e.message = "Invalid date supplied: " + jumpTo;
+          self.config.errorHandler(e);
+        }
+
+        self.redraw();
+      }
+
+      function timeIncrement(e) {
+        if (~e.target.className.indexOf("arrow")) incrementNumInput(e, e.target.classList.contains("arrowUp") ? 1 : -1);
+      }
+
+      function incrementNumInput(e, delta, inputElem) {
+        var target = e && e.target;
+        var input = inputElem || target && target.parentNode && target.parentNode.firstChild;
+        var event = createEvent("increment");
+        event.delta = delta;
+        input && input.dispatchEvent(event);
+      }
+
+      function build() {
+        var fragment = window.document.createDocumentFragment();
+        self.calendarContainer = createElement("div", "flatpickr-calendar");
+        self.calendarContainer.tabIndex = -1;
+
+        if (!self.config.noCalendar) {
+          fragment.appendChild(buildMonthNav());
+          self.innerContainer = createElement("div", "flatpickr-innerContainer");
+
+          if (self.config.weekNumbers) {
+            var _buildWeeks = buildWeeks(),
+                weekWrapper = _buildWeeks.weekWrapper,
+                weekNumbers = _buildWeeks.weekNumbers;
+
+            self.innerContainer.appendChild(weekWrapper);
+            self.weekNumbers = weekNumbers;
+            self.weekWrapper = weekWrapper;
+          }
+
+          self.rContainer = createElement("div", "flatpickr-rContainer");
+          self.rContainer.appendChild(buildWeekdays());
+
+          if (!self.daysContainer) {
+            self.daysContainer = createElement("div", "flatpickr-days");
+            self.daysContainer.tabIndex = -1;
+          }
+
+          buildDays();
+          self.rContainer.appendChild(self.daysContainer);
+          self.innerContainer.appendChild(self.rContainer);
+          fragment.appendChild(self.innerContainer);
+        }
+
+        if (self.config.enableTime) {
+          fragment.appendChild(buildTime());
+        }
+
+        toggleClass(self.calendarContainer, "rangeMode", self.config.mode === "range");
+        toggleClass(self.calendarContainer, "animate", self.config.animate === true);
+        toggleClass(self.calendarContainer, "multiMonth", self.config.showMonths > 1);
+        self.calendarContainer.appendChild(fragment);
+        var customAppend = self.config.appendTo !== undefined && self.config.appendTo.nodeType !== undefined;
+
+        if (self.config.inline || self.config.static) {
+          self.calendarContainer.classList.add(self.config.inline ? "inline" : "static");
+
+          if (self.config.inline) {
+            if (!customAppend && self.element.parentNode) self.element.parentNode.insertBefore(self.calendarContainer, self._input.nextSibling);else if (self.config.appendTo !== undefined) self.config.appendTo.appendChild(self.calendarContainer);
+          }
+
+          if (self.config.static) {
+            var wrapper = createElement("div", "flatpickr-wrapper");
+            if (self.element.parentNode) self.element.parentNode.insertBefore(wrapper, self.element);
+            wrapper.appendChild(self.element);
+            if (self.altInput) wrapper.appendChild(self.altInput);
+            wrapper.appendChild(self.calendarContainer);
+          }
+        }
+
+        if (!self.config.static && !self.config.inline) (self.config.appendTo !== undefined ? self.config.appendTo : window.document.body).appendChild(self.calendarContainer);
+      }
+
+      function createDay(className, date, dayNumber, i) {
+        var dateIsEnabled = isEnabled(date, true),
+            dayElement = createElement("span", "flatpickr-day " + className, date.getDate().toString());
+        dayElement.dateObj = date;
+        dayElement.$i = i;
+        dayElement.setAttribute("aria-label", self.formatDate(date, self.config.ariaDateFormat));
+
+        if (className.indexOf("hidden") === -1 && compareDates(date, self.now) === 0) {
+          self.todayDateElem = dayElement;
+          dayElement.classList.add("today");
+          dayElement.setAttribute("aria-current", "date");
+        }
+
+        if (dateIsEnabled) {
+          dayElement.tabIndex = -1;
+
+          if (isDateSelected(date)) {
+            dayElement.classList.add("selected");
+            self.selectedDateElem = dayElement;
+
+            if (self.config.mode === "range") {
+              toggleClass(dayElement, "startRange", self.selectedDates[0] && compareDates(date, self.selectedDates[0], true) === 0);
+              toggleClass(dayElement, "endRange", self.selectedDates[1] && compareDates(date, self.selectedDates[1], true) === 0);
+              if (className === "nextMonthDay") dayElement.classList.add("inRange");
+            }
+          }
+        } else {
+          dayElement.classList.add("disabled");
+        }
+
+        if (self.config.mode === "range") {
+          if (isDateInRange(date) && !isDateSelected(date)) dayElement.classList.add("inRange");
+        }
+
+        if (self.weekNumbers && self.config.showMonths === 1 && className !== "prevMonthDay" && dayNumber % 7 === 1) {
+          self.weekNumbers.insertAdjacentHTML("beforeend", "<span class='flatpickr-day'>" + self.config.getWeek(date) + "</span>");
+        }
+
+        triggerEvent("onDayCreate", dayElement);
+        return dayElement;
+      }
+
+      function focusOnDayElem(targetNode) {
+        targetNode.focus();
+        if (self.config.mode === "range") onMouseOver(targetNode);
+      }
+
+      function getFirstAvailableDay(delta) {
+        var startMonth = delta > 0 ? 0 : self.config.showMonths - 1;
+        var endMonth = delta > 0 ? self.config.showMonths : -1;
+
+        for (var m = startMonth; m != endMonth; m += delta) {
+          var month = self.daysContainer.children[m];
+          var startIndex = delta > 0 ? 0 : month.children.length - 1;
+          var endIndex = delta > 0 ? month.children.length : -1;
+
+          for (var i = startIndex; i != endIndex; i += delta) {
+            var c = month.children[i];
+            if (c.className.indexOf("hidden") === -1 && isEnabled(c.dateObj)) return c;
+          }
+        }
+
+        return undefined;
+      }
+
+      function getNextAvailableDay(current, delta) {
+        var givenMonth = current.className.indexOf("Month") === -1 ? current.dateObj.getMonth() : self.currentMonth;
+        var endMonth = delta > 0 ? self.config.showMonths : -1;
+        var loopDelta = delta > 0 ? 1 : -1;
+
+        for (var m = givenMonth - self.currentMonth; m != endMonth; m += loopDelta) {
+          var month = self.daysContainer.children[m];
+          var startIndex = givenMonth - self.currentMonth === m ? current.$i + delta : delta < 0 ? month.children.length - 1 : 0;
+          var numMonthDays = month.children.length;
+
+          for (var i = startIndex; i >= 0 && i < numMonthDays && i != (delta > 0 ? numMonthDays : -1); i += loopDelta) {
+            var c = month.children[i];
+            if (c.className.indexOf("hidden") === -1 && isEnabled(c.dateObj) && Math.abs(current.$i - i) >= Math.abs(delta)) return focusOnDayElem(c);
+          }
+        }
+
+        self.changeMonth(loopDelta);
+        focusOnDay(getFirstAvailableDay(loopDelta), 0);
+        return undefined;
+      }
+
+      function focusOnDay(current, offset) {
+        var dayFocused = isInView(document.activeElement || document.body);
+        var startElem = current !== undefined ? current : dayFocused ? document.activeElement : self.selectedDateElem !== undefined && isInView(self.selectedDateElem) ? self.selectedDateElem : self.todayDateElem !== undefined && isInView(self.todayDateElem) ? self.todayDateElem : getFirstAvailableDay(offset > 0 ? 1 : -1);
+        if (startElem === undefined) return self._input.focus();
+        if (!dayFocused) return focusOnDayElem(startElem);
+        getNextAvailableDay(startElem, offset);
+      }
+
+      function buildMonthDays(year, month) {
+        var firstOfMonth = (new Date(year, month, 1).getDay() - self.l10n.firstDayOfWeek + 7) % 7;
+        var prevMonthDays = self.utils.getDaysInMonth((month - 1 + 12) % 12);
+        var daysInMonth = self.utils.getDaysInMonth(month),
+            days = window.document.createDocumentFragment(),
+            isMultiMonth = self.config.showMonths > 1,
+            prevMonthDayClass = isMultiMonth ? "prevMonthDay hidden" : "prevMonthDay",
+            nextMonthDayClass = isMultiMonth ? "nextMonthDay hidden" : "nextMonthDay";
+        var dayNumber = prevMonthDays + 1 - firstOfMonth,
+            dayIndex = 0;
+
+        for (; dayNumber <= prevMonthDays; dayNumber++, dayIndex++) {
+          days.appendChild(createDay(prevMonthDayClass, new Date(year, month - 1, dayNumber), dayNumber, dayIndex));
+        }
+
+        for (dayNumber = 1; dayNumber <= daysInMonth; dayNumber++, dayIndex++) {
+          days.appendChild(createDay("", new Date(year, month, dayNumber), dayNumber, dayIndex));
+        }
+
+        for (var dayNum = daysInMonth + 1; dayNum <= 42 - firstOfMonth && (self.config.showMonths === 1 || dayIndex % 7 !== 0); dayNum++, dayIndex++) {
+          days.appendChild(createDay(nextMonthDayClass, new Date(year, month + 1, dayNum % daysInMonth), dayNum, dayIndex));
+        }
+
+        var dayContainer = createElement("div", "dayContainer");
+        dayContainer.appendChild(days);
+        return dayContainer;
+      }
+
+      function buildDays() {
+        if (self.daysContainer === undefined) {
+          return;
+        }
+
+        clearNode(self.daysContainer);
+        if (self.weekNumbers) clearNode(self.weekNumbers);
+        var frag = document.createDocumentFragment();
+
+        for (var i = 0; i < self.config.showMonths; i++) {
+          var d = new Date(self.currentYear, self.currentMonth, 1);
+          d.setMonth(self.currentMonth + i);
+          frag.appendChild(buildMonthDays(d.getFullYear(), d.getMonth()));
+        }
+
+        self.daysContainer.appendChild(frag);
+        self.days = self.daysContainer.firstChild;
+
+        if (self.config.mode === "range" && self.selectedDates.length === 1) {
+          onMouseOver();
+        }
+      }
+
+      function buildMonth() {
+        var container = createElement("div", "flatpickr-month");
+        var monthNavFragment = window.document.createDocumentFragment();
+        var monthElement = createElement("span", "cur-month");
+        var yearInput = createNumberInput("cur-year", {
+          tabindex: "-1"
+        });
+        var yearElement = yearInput.getElementsByTagName("input")[0];
+        yearElement.setAttribute("aria-label", self.l10n.yearAriaLabel);
+        if (self.config.minDate) yearElement.setAttribute("data-min", self.config.minDate.getFullYear().toString());
+
+        if (self.config.maxDate) {
+          yearElement.setAttribute("data-max", self.config.maxDate.getFullYear().toString());
+          yearElement.disabled = !!self.config.minDate && self.config.minDate.getFullYear() === self.config.maxDate.getFullYear();
+        }
+
+        var currentMonth = createElement("div", "flatpickr-current-month");
+        currentMonth.appendChild(monthElement);
+        currentMonth.appendChild(yearInput);
+        monthNavFragment.appendChild(currentMonth);
+        container.appendChild(monthNavFragment);
+        return {
+          container: container,
+          yearElement: yearElement,
+          monthElement: monthElement
+        };
+      }
+
+      function buildMonths() {
+        clearNode(self.monthNav);
+        self.monthNav.appendChild(self.prevMonthNav);
+
+        for (var m = self.config.showMonths; m--;) {
+          var month = buildMonth();
+          self.yearElements.push(month.yearElement);
+          self.monthElements.push(month.monthElement);
+          self.monthNav.appendChild(month.container);
+        }
+
+        self.monthNav.appendChild(self.nextMonthNav);
+      }
+
+      function buildMonthNav() {
+        self.monthNav = createElement("div", "flatpickr-months");
+        self.yearElements = [];
+        self.monthElements = [];
+        self.prevMonthNav = createElement("span", "flatpickr-prev-month");
+        self.prevMonthNav.innerHTML = self.config.prevArrow;
+        self.nextMonthNav = createElement("span", "flatpickr-next-month");
+        self.nextMonthNav.innerHTML = self.config.nextArrow;
+        buildMonths();
+        Object.defineProperty(self, "_hidePrevMonthArrow", {
+          get: function get() {
+            return self.__hidePrevMonthArrow;
+          },
+          set: function set(bool) {
+            if (self.__hidePrevMonthArrow !== bool) {
+              toggleClass(self.prevMonthNav, "disabled", bool);
+              self.__hidePrevMonthArrow = bool;
+            }
+          }
+        });
+        Object.defineProperty(self, "_hideNextMonthArrow", {
+          get: function get() {
+            return self.__hideNextMonthArrow;
+          },
+          set: function set(bool) {
+            if (self.__hideNextMonthArrow !== bool) {
+              toggleClass(self.nextMonthNav, "disabled", bool);
+              self.__hideNextMonthArrow = bool;
+            }
+          }
+        });
+        self.currentYearElement = self.yearElements[0];
+        updateNavigationCurrentMonth();
+        return self.monthNav;
+      }
+
+      function buildTime() {
+        self.calendarContainer.classList.add("hasTime");
+        if (self.config.noCalendar) self.calendarContainer.classList.add("noCalendar");
+        self.timeContainer = createElement("div", "flatpickr-time");
+        self.timeContainer.tabIndex = -1;
+        var separator = createElement("span", "flatpickr-time-separator", ":");
+        var hourInput = createNumberInput("flatpickr-hour");
+        self.hourElement = hourInput.getElementsByTagName("input")[0];
+        var minuteInput = createNumberInput("flatpickr-minute");
+        self.minuteElement = minuteInput.getElementsByTagName("input")[0];
+        self.hourElement.tabIndex = self.minuteElement.tabIndex = -1;
+        self.hourElement.value = pad(self.latestSelectedDateObj ? self.latestSelectedDateObj.getHours() : self.config.time_24hr ? self.config.defaultHour : military2ampm(self.config.defaultHour));
+        self.minuteElement.value = pad(self.latestSelectedDateObj ? self.latestSelectedDateObj.getMinutes() : self.config.defaultMinute);
+        self.hourElement.setAttribute("data-step", self.config.hourIncrement.toString());
+        self.minuteElement.setAttribute("data-step", self.config.minuteIncrement.toString());
+        self.hourElement.setAttribute("data-min", self.config.time_24hr ? "0" : "1");
+        self.hourElement.setAttribute("data-max", self.config.time_24hr ? "23" : "12");
+        self.minuteElement.setAttribute("data-min", "0");
+        self.minuteElement.setAttribute("data-max", "59");
+        self.timeContainer.appendChild(hourInput);
+        self.timeContainer.appendChild(separator);
+        self.timeContainer.appendChild(minuteInput);
+        if (self.config.time_24hr) self.timeContainer.classList.add("time24hr");
+
+        if (self.config.enableSeconds) {
+          self.timeContainer.classList.add("hasSeconds");
+          var secondInput = createNumberInput("flatpickr-second");
+          self.secondElement = secondInput.getElementsByTagName("input")[0];
+          self.secondElement.value = pad(self.latestSelectedDateObj ? self.latestSelectedDateObj.getSeconds() : self.config.defaultSeconds);
+          self.secondElement.setAttribute("data-step", self.minuteElement.getAttribute("data-step"));
+          self.secondElement.setAttribute("data-min", self.minuteElement.getAttribute("data-min"));
+          self.secondElement.setAttribute("data-max", self.minuteElement.getAttribute("data-max"));
+          self.timeContainer.appendChild(createElement("span", "flatpickr-time-separator", ":"));
+          self.timeContainer.appendChild(secondInput);
+        }
+
+        if (!self.config.time_24hr) {
+          self.amPM = createElement("span", "flatpickr-am-pm", self.l10n.amPM[int((self.latestSelectedDateObj ? self.hourElement.value : self.config.defaultHour) > 11)]);
+          self.amPM.title = self.l10n.toggleTitle;
+          self.amPM.tabIndex = -1;
+          self.timeContainer.appendChild(self.amPM);
+        }
+
+        return self.timeContainer;
+      }
+
+      function buildWeekdays() {
+        if (!self.weekdayContainer) self.weekdayContainer = createElement("div", "flatpickr-weekdays");else clearNode(self.weekdayContainer);
+
+        for (var i = self.config.showMonths; i--;) {
+          var container = createElement("div", "flatpickr-weekdaycontainer");
+          self.weekdayContainer.appendChild(container);
+        }
+
+        updateWeekdays();
+        return self.weekdayContainer;
+      }
+
+      function updateWeekdays() {
+        var firstDayOfWeek = self.l10n.firstDayOfWeek;
+        var weekdays = self.l10n.weekdays.shorthand.concat();
+
+        if (firstDayOfWeek > 0 && firstDayOfWeek < weekdays.length) {
+          weekdays = weekdays.splice(firstDayOfWeek, weekdays.length).concat(weekdays.splice(0, firstDayOfWeek));
+        }
+
+        for (var i = self.config.showMonths; i--;) {
+          self.weekdayContainer.children[i].innerHTML = "\n      <span class=flatpickr-weekday>\n        " + weekdays.join("</span><span class=flatpickr-weekday>") + "\n      </span>\n      ";
+        }
+      }
+
+      function buildWeeks() {
+        self.calendarContainer.classList.add("hasWeeks");
+        var weekWrapper = createElement("div", "flatpickr-weekwrapper");
+        weekWrapper.appendChild(createElement("span", "flatpickr-weekday", self.l10n.weekAbbreviation));
+        var weekNumbers = createElement("div", "flatpickr-weeks");
+        weekWrapper.appendChild(weekNumbers);
+        return {
+          weekWrapper: weekWrapper,
+          weekNumbers: weekNumbers
+        };
+      }
+
+      function changeMonth(value, is_offset) {
+        if (is_offset === void 0) {
+          is_offset = true;
+        }
+
+        var delta = is_offset ? value : value - self.currentMonth;
+        if (delta < 0 && self._hidePrevMonthArrow === true || delta > 0 && self._hideNextMonthArrow === true) return;
+        self.currentMonth += delta;
+
+        if (self.currentMonth < 0 || self.currentMonth > 11) {
+          self.currentYear += self.currentMonth > 11 ? 1 : -1;
+          self.currentMonth = (self.currentMonth + 12) % 12;
+          triggerEvent("onYearChange");
+        }
+
+        buildDays();
+        triggerEvent("onMonthChange");
+        updateNavigationCurrentMonth();
+      }
+
+      function clear(triggerChangeEvent) {
+        if (triggerChangeEvent === void 0) {
+          triggerChangeEvent = true;
+        }
+
+        self.input.value = "";
+        if (self.altInput !== undefined) self.altInput.value = "";
+        if (self.mobileInput !== undefined) self.mobileInput.value = "";
+        self.selectedDates = [];
+        self.latestSelectedDateObj = undefined;
+        self.showTimeInput = false;
+
+        if (self.config.enableTime === true) {
+          setDefaultHours();
+        }
+
+        self.redraw();
+        if (triggerChangeEvent) triggerEvent("onChange");
+      }
+
+      function close() {
+        self.isOpen = false;
+
+        if (!self.isMobile) {
+          self.calendarContainer.classList.remove("open");
+
+          self._input.classList.remove("active");
+        }
+
+        triggerEvent("onClose");
+      }
+
+      function destroy() {
+        if (self.config !== undefined) triggerEvent("onDestroy");
+
+        for (var i = self._handlers.length; i--;) {
+          var h = self._handlers[i];
+          h.element.removeEventListener(h.event, h.handler, h.options);
+        }
+
+        self._handlers = [];
+
+        if (self.mobileInput) {
+          if (self.mobileInput.parentNode) self.mobileInput.parentNode.removeChild(self.mobileInput);
+          self.mobileInput = undefined;
+        } else if (self.calendarContainer && self.calendarContainer.parentNode) {
+          if (self.config.static && self.calendarContainer.parentNode) {
+            var wrapper = self.calendarContainer.parentNode;
+            wrapper.lastChild && wrapper.removeChild(wrapper.lastChild);
+
+            if (wrapper.parentNode) {
+              while (wrapper.firstChild) {
+                wrapper.parentNode.insertBefore(wrapper.firstChild, wrapper);
+              }
+
+              wrapper.parentNode.removeChild(wrapper);
+            }
+          } else self.calendarContainer.parentNode.removeChild(self.calendarContainer);
+        }
+
+        if (self.altInput) {
+          self.input.type = "text";
+          if (self.altInput.parentNode) self.altInput.parentNode.removeChild(self.altInput);
+          delete self.altInput;
+        }
+
+        if (self.input) {
+          self.input.type = self.input._type;
+          self.input.classList.remove("flatpickr-input");
+          self.input.removeAttribute("readonly");
+          self.input.value = "";
+        }
+
+        ["_showTimeInput", "latestSelectedDateObj", "_hideNextMonthArrow", "_hidePrevMonthArrow", "__hideNextMonthArrow", "__hidePrevMonthArrow", "isMobile", "isOpen", "selectedDateElem", "minDateHasTime", "maxDateHasTime", "days", "daysContainer", "_input", "_positionElement", "innerContainer", "rContainer", "monthNav", "todayDateElem", "calendarContainer", "weekdayContainer", "prevMonthNav", "nextMonthNav", "currentMonthElement", "currentYearElement", "navigationCurrentMonth", "selectedDateElem", "config"].forEach(function (k) {
+          try {
+            delete self[k];
+          } catch (_) {}
+        });
+      }
+
+      function isCalendarElem(elem) {
+        if (self.config.appendTo && self.config.appendTo.contains(elem)) return true;
+        return self.calendarContainer.contains(elem);
+      }
+
+      function documentClick(e) {
+        if (self.isOpen && !self.config.inline) {
+          var isCalendarElement = isCalendarElem(e.target);
+          var isInput = e.target === self.input || e.target === self.altInput || self.element.contains(e.target) || e.path && e.path.indexOf && (~e.path.indexOf(self.input) || ~e.path.indexOf(self.altInput));
+          var lostFocus = e.type === "blur" ? isInput && e.relatedTarget && !isCalendarElem(e.relatedTarget) : !isInput && !isCalendarElement;
+          var isIgnored = !self.config.ignoredFocusElements.some(function (elem) {
+            return elem.contains(e.target);
+          });
+
+          if (lostFocus && isIgnored) {
+            self.close();
+
+            if (self.config.mode === "range" && self.selectedDates.length === 1) {
+              self.clear(false);
+              self.redraw();
+            }
+          }
+        }
+      }
+
+      function changeYear(newYear) {
+        if (!newYear || self.config.minDate && newYear < self.config.minDate.getFullYear() || self.config.maxDate && newYear > self.config.maxDate.getFullYear()) return;
+        var newYearNum = newYear,
+            isNewYear = self.currentYear !== newYearNum;
+        self.currentYear = newYearNum || self.currentYear;
+
+        if (self.config.maxDate && self.currentYear === self.config.maxDate.getFullYear()) {
+          self.currentMonth = Math.min(self.config.maxDate.getMonth(), self.currentMonth);
+        } else if (self.config.minDate && self.currentYear === self.config.minDate.getFullYear()) {
+          self.currentMonth = Math.max(self.config.minDate.getMonth(), self.currentMonth);
+        }
+
+        if (isNewYear) {
+          self.redraw();
+          triggerEvent("onYearChange");
+        }
+      }
+
+      function isEnabled(date, timeless) {
+        if (timeless === void 0) {
+          timeless = true;
+        }
+
+        var dateToCheck = self.parseDate(date, undefined, timeless);
+        if (self.config.minDate && dateToCheck && compareDates(dateToCheck, self.config.minDate, timeless !== undefined ? timeless : !self.minDateHasTime) < 0 || self.config.maxDate && dateToCheck && compareDates(dateToCheck, self.config.maxDate, timeless !== undefined ? timeless : !self.maxDateHasTime) > 0) return false;
+        if (self.config.enable.length === 0 && self.config.disable.length === 0) return true;
+        if (dateToCheck === undefined) return false;
+        var bool = self.config.enable.length > 0,
+            array = bool ? self.config.enable : self.config.disable;
+
+        for (var i = 0, d; i < array.length; i++) {
+          d = array[i];
+          if (typeof d === "function" && d(dateToCheck)) return bool;else if (d instanceof Date && dateToCheck !== undefined && d.getTime() === dateToCheck.getTime()) return bool;else if (typeof d === "string" && dateToCheck !== undefined) {
+            var parsed = self.parseDate(d, undefined, true);
+            return parsed && parsed.getTime() === dateToCheck.getTime() ? bool : !bool;
+          } else if (typeof d === "object" && dateToCheck !== undefined && d.from && d.to && dateToCheck.getTime() >= d.from.getTime() && dateToCheck.getTime() <= d.to.getTime()) return bool;
+        }
+
+        return !bool;
+      }
+
+      function isInView(elem) {
+        if (self.daysContainer !== undefined) return elem.className.indexOf("hidden") === -1 && self.daysContainer.contains(elem);
+        return false;
+      }
+
+      function onKeyDown(e) {
+        var isInput = e.target === self._input;
+        var allowInput = self.config.allowInput;
+        var allowKeydown = self.isOpen && (!allowInput || !isInput);
+        var allowInlineKeydown = self.config.inline && isInput && !allowInput;
+
+        if (e.keyCode === 13 && isInput) {
+          if (allowInput) {
+            self.setDate(self._input.value, true, e.target === self.altInput ? self.config.altFormat : self.config.dateFormat);
+            return e.target.blur();
+          } else self.open();
+        } else if (isCalendarElem(e.target) || allowKeydown || allowInlineKeydown) {
+          var isTimeObj = !!self.timeContainer && self.timeContainer.contains(e.target);
+
+          switch (e.keyCode) {
+            case 13:
+              if (isTimeObj) updateTime();else selectDate(e);
+              break;
+
+            case 27:
+              e.preventDefault();
+              focusAndClose();
+              break;
+
+            case 8:
+            case 46:
+              if (isInput && !self.config.allowInput) {
+                e.preventDefault();
+                self.clear();
+              }
+
+              break;
+
+            case 37:
+            case 39:
+              if (!isTimeObj) {
+                e.preventDefault();
+
+                if (self.daysContainer !== undefined && (allowInput === false || isInView(document.activeElement))) {
+                  var _delta = e.keyCode === 39 ? 1 : -1;
+
+                  if (!e.ctrlKey) focusOnDay(undefined, _delta);else {
+                    changeMonth(_delta);
+                    focusOnDay(getFirstAvailableDay(1), 0);
+                  }
+                }
+              } else if (self.hourElement) self.hourElement.focus();
+
+              break;
+
+            case 38:
+            case 40:
+              e.preventDefault();
+              var delta = e.keyCode === 40 ? 1 : -1;
+
+              if (self.daysContainer && e.target.$i !== undefined) {
+                if (e.ctrlKey) {
+                  changeYear(self.currentYear - delta);
+                  focusOnDay(getFirstAvailableDay(1), 0);
+                } else if (!isTimeObj) focusOnDay(undefined, delta * 7);
+              } else if (self.config.enableTime) {
+                if (!isTimeObj && self.hourElement) self.hourElement.focus();
+                updateTime(e);
+
+                self._debouncedChange();
+              }
+
+              break;
+
+            case 9:
+              if (!isTimeObj) {
+                self.element.focus();
+                break;
+              }
+
+              var elems = [self.hourElement, self.minuteElement, self.secondElement, self.amPM].filter(function (x) {
+                return x;
+              });
+              var i = elems.indexOf(e.target);
+
+              if (i !== -1) {
+                var target = elems[i + (e.shiftKey ? -1 : 1)];
+
+                if (target !== undefined) {
+                  e.preventDefault();
+                  target.focus();
+                } else {
+                  self.element.focus();
+                }
+              }
+
+              break;
+
+            default:
+              break;
+          }
+        }
+
+        if (self.amPM !== undefined && e.target === self.amPM) {
+          switch (e.key) {
+            case self.l10n.amPM[0].charAt(0):
+            case self.l10n.amPM[0].charAt(0).toLowerCase():
+              self.amPM.textContent = self.l10n.amPM[0];
+              setHoursFromInputs();
+              updateValue();
+              break;
+
+            case self.l10n.amPM[1].charAt(0):
+            case self.l10n.amPM[1].charAt(0).toLowerCase():
+              self.amPM.textContent = self.l10n.amPM[1];
+              setHoursFromInputs();
+              updateValue();
+              break;
+          }
+        }
+
+        triggerEvent("onKeyDown", e);
+      }
+
+      function onMouseOver(elem) {
+        if (self.selectedDates.length !== 1 || elem && (!elem.classList.contains("flatpickr-day") || elem.classList.contains("disabled"))) return;
+        var hoverDate = elem ? elem.dateObj.getTime() : self.days.firstElementChild.dateObj.getTime(),
+            initialDate = self.parseDate(self.selectedDates[0], undefined, true).getTime(),
+            rangeStartDate = Math.min(hoverDate, self.selectedDates[0].getTime()),
+            rangeEndDate = Math.max(hoverDate, self.selectedDates[0].getTime()),
+            lastDate = self.daysContainer.lastChild.lastChild.dateObj.getTime();
+        var containsDisabled = false;
+        var minRange = 0,
+            maxRange = 0;
+
+        for (var t = rangeStartDate; t < lastDate; t += duration.DAY) {
+          if (!isEnabled(new Date(t), true)) {
+            containsDisabled = containsDisabled || t > rangeStartDate && t < rangeEndDate;
+            if (t < initialDate && (!minRange || t > minRange)) minRange = t;else if (t > initialDate && (!maxRange || t < maxRange)) maxRange = t;
+          }
+        }
+
+        for (var m = 0; m < self.config.showMonths; m++) {
+          var month = self.daysContainer.children[m];
+          var prevMonth = self.daysContainer.children[m - 1];
+
+          var _loop = function _loop(i, l) {
+            var dayElem = month.children[i],
+                date = dayElem.dateObj;
+            var timestamp = date.getTime();
+            var outOfRange = minRange > 0 && timestamp < minRange || maxRange > 0 && timestamp > maxRange;
+
+            if (outOfRange) {
+              dayElem.classList.add("notAllowed");
+              ["inRange", "startRange", "endRange"].forEach(function (c) {
+                dayElem.classList.remove(c);
+              });
+              return "continue";
+            } else if (containsDisabled && !outOfRange) return "continue";
+
+            ["startRange", "inRange", "endRange", "notAllowed"].forEach(function (c) {
+              dayElem.classList.remove(c);
+            });
+
+            if (elem !== undefined) {
+              elem.classList.add(hoverDate < self.selectedDates[0].getTime() ? "startRange" : "endRange");
+
+              if (month.contains(elem) || !(m > 0 && prevMonth && prevMonth.lastChild.dateObj.getTime() >= timestamp)) {
+                if (initialDate < hoverDate && timestamp === initialDate) dayElem.classList.add("startRange");else if (initialDate > hoverDate && timestamp === initialDate) dayElem.classList.add("endRange");
+                if (timestamp >= minRange && (maxRange === 0 || timestamp <= maxRange) && isBetween(timestamp, initialDate, hoverDate)) dayElem.classList.add("inRange");
+              }
+            }
+          };
+
+          for (var i = 0, l = month.children.length; i < l; i++) {
+            var _ret = _loop(i, l);
+
+            if (_ret === "continue") continue;
+          }
+        }
+      }
+
+      function onResize() {
+        if (self.isOpen && !self.config.static && !self.config.inline) positionCalendar();
+      }
+
+      function open(e, positionElement) {
+        if (positionElement === void 0) {
+          positionElement = self._positionElement;
+        }
+
+        if (self.isMobile === true) {
+          if (e) {
+            e.preventDefault();
+            e.target && e.target.blur();
+          }
+
+          if (self.mobileInput !== undefined) {
+            self.mobileInput.focus();
+            self.mobileInput.click();
+          }
+
+          triggerEvent("onOpen");
+          return;
+        }
+
+        if (self._input.disabled || self.config.inline) return;
+        var wasOpen = self.isOpen;
+        self.isOpen = true;
+
+        if (!wasOpen) {
+          self.calendarContainer.classList.add("open");
+
+          self._input.classList.add("active");
+
+          triggerEvent("onOpen");
+          positionCalendar(positionElement);
+        }
+
+        if (self.config.enableTime === true && self.config.noCalendar === true) {
+          if (self.selectedDates.length === 0) {
+            self.setDate(self.config.minDate !== undefined ? new Date(self.config.minDate.getTime()) : new Date(), false);
+            setDefaultHours();
+            updateValue();
+          }
+
+          if (self.config.allowInput === false && (e === undefined || !self.timeContainer.contains(e.relatedTarget))) {
+            setTimeout(function () {
+              return self.hourElement.select();
+            }, 50);
+          }
+        }
+      }
+
+      function minMaxDateSetter(type) {
+        return function (date) {
+          var dateObj = self.config["_" + type + "Date"] = self.parseDate(date, self.config.dateFormat);
+          var inverseDateObj = self.config["_" + (type === "min" ? "max" : "min") + "Date"];
+
+          if (dateObj !== undefined) {
+            self[type === "min" ? "minDateHasTime" : "maxDateHasTime"] = dateObj.getHours() > 0 || dateObj.getMinutes() > 0 || dateObj.getSeconds() > 0;
+          }
+
+          if (self.selectedDates) {
+            self.selectedDates = self.selectedDates.filter(function (d) {
+              return isEnabled(d);
+            });
+            if (!self.selectedDates.length && type === "min") setHoursFromDate(dateObj);
+            updateValue();
+          }
+
+          if (self.daysContainer) {
+            redraw();
+            if (dateObj !== undefined) self.currentYearElement[type] = dateObj.getFullYear().toString();else self.currentYearElement.removeAttribute(type);
+            self.currentYearElement.disabled = !!inverseDateObj && dateObj !== undefined && inverseDateObj.getFullYear() === dateObj.getFullYear();
+          }
+        };
+      }
+
+      function parseConfig() {
+        var boolOpts = ["wrap", "weekNumbers", "allowInput", "clickOpens", "time_24hr", "enableTime", "noCalendar", "altInput", "shorthandCurrentMonth", "inline", "static", "enableSeconds", "disableMobile"];
+        var userConfig = Object.assign({}, instanceConfig, JSON.parse(JSON.stringify(element.dataset || {})));
+        var formats$$1 = {};
+        self.config.parseDate = userConfig.parseDate;
+        self.config.formatDate = userConfig.formatDate;
+        Object.defineProperty(self.config, "enable", {
+          get: function get() {
+            return self.config._enable;
+          },
+          set: function set(dates) {
+            self.config._enable = parseDateRules(dates);
+          }
+        });
+        Object.defineProperty(self.config, "disable", {
+          get: function get() {
+            return self.config._disable;
+          },
+          set: function set(dates) {
+            self.config._disable = parseDateRules(dates);
+          }
+        });
+        var timeMode = userConfig.mode === "time";
+
+        if (!userConfig.dateFormat && (userConfig.enableTime || timeMode)) {
+          formats$$1.dateFormat = userConfig.noCalendar || timeMode ? "H:i" + (userConfig.enableSeconds ? ":S" : "") : flatpickr.defaultConfig.dateFormat + " H:i" + (userConfig.enableSeconds ? ":S" : "");
+        }
+
+        if (userConfig.altInput && (userConfig.enableTime || timeMode) && !userConfig.altFormat) {
+          formats$$1.altFormat = userConfig.noCalendar || timeMode ? "h:i" + (userConfig.enableSeconds ? ":S K" : " K") : flatpickr.defaultConfig.altFormat + (" h:i" + (userConfig.enableSeconds ? ":S" : "") + " K");
+        }
+
+        Object.defineProperty(self.config, "minDate", {
+          get: function get() {
+            return self.config._minDate;
+          },
+          set: minMaxDateSetter("min")
+        });
+        Object.defineProperty(self.config, "maxDate", {
+          get: function get() {
+            return self.config._maxDate;
+          },
+          set: minMaxDateSetter("max")
+        });
+
+        var minMaxTimeSetter = function minMaxTimeSetter(type) {
+          return function (val) {
+            self.config[type === "min" ? "_minTime" : "_maxTime"] = self.parseDate(val, "H:i");
+          };
+        };
+
+        Object.defineProperty(self.config, "minTime", {
+          get: function get() {
+            return self.config._minTime;
+          },
+          set: minMaxTimeSetter("min")
+        });
+        Object.defineProperty(self.config, "maxTime", {
+          get: function get() {
+            return self.config._maxTime;
+          },
+          set: minMaxTimeSetter("max")
+        });
+
+        if (userConfig.mode === "time") {
+          self.config.noCalendar = true;
+          self.config.enableTime = true;
+        }
+
+        Object.assign(self.config, formats$$1, userConfig);
+
+        for (var i = 0; i < boolOpts.length; i++) {
+          self.config[boolOpts[i]] = self.config[boolOpts[i]] === true || self.config[boolOpts[i]] === "true";
+        }
+
+        HOOKS.filter(function (hook) {
+          return self.config[hook] !== undefined;
+        }).forEach(function (hook) {
+          self.config[hook] = arrayify(self.config[hook] || []).map(bindToInstance);
+        });
+        self.isMobile = !self.config.disableMobile && !self.config.inline && self.config.mode === "single" && !self.config.disable.length && !self.config.enable.length && !self.config.weekNumbers && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        for (var _i = 0; _i < self.config.plugins.length; _i++) {
+          var pluginConf = self.config.plugins[_i](self) || {};
+
+          for (var key in pluginConf) {
+            if (HOOKS.indexOf(key) > -1) {
+              self.config[key] = arrayify(pluginConf[key]).map(bindToInstance).concat(self.config[key]);
+            } else if (typeof userConfig[key] === "undefined") self.config[key] = pluginConf[key];
+          }
+        }
+
+        triggerEvent("onParseConfig");
+      }
+
+      function setupLocale() {
+        if (typeof self.config.locale !== "object" && typeof flatpickr.l10ns[self.config.locale] === "undefined") self.config.errorHandler(new Error("flatpickr: invalid locale " + self.config.locale));
+        self.l10n = Object.assign({}, flatpickr.l10ns.default, typeof self.config.locale === "object" ? self.config.locale : self.config.locale !== "default" ? flatpickr.l10ns[self.config.locale] : undefined);
+        tokenRegex.K = "(" + self.l10n.amPM[0] + "|" + self.l10n.amPM[1] + "|" + self.l10n.amPM[0].toLowerCase() + "|" + self.l10n.amPM[1].toLowerCase() + ")";
+        self.formatDate = createDateFormatter(self);
+        self.parseDate = createDateParser({
+          config: self.config,
+          l10n: self.l10n
+        });
+      }
+
+      function positionCalendar(customPositionElement) {
+        if (self.calendarContainer === undefined) return;
+        triggerEvent("onPreCalendarPosition");
+        var positionElement = customPositionElement || self._positionElement;
+        var calendarHeight = Array.prototype.reduce.call(self.calendarContainer.children, function (acc, child) {
+          return acc + child.offsetHeight;
+        }, 0),
+            calendarWidth = self.calendarContainer.offsetWidth,
+            configPos = self.config.position.split(" "),
+            configPosVertical = configPos[0],
+            configPosHorizontal = configPos.length > 1 ? configPos[1] : null,
+            inputBounds = positionElement.getBoundingClientRect(),
+            distanceFromBottom = window.innerHeight - inputBounds.bottom,
+            showOnTop = configPosVertical === "above" || configPosVertical !== "below" && distanceFromBottom < calendarHeight && inputBounds.top > calendarHeight;
+        var top = window.pageYOffset + inputBounds.top + (!showOnTop ? positionElement.offsetHeight + 2 : -calendarHeight - 2);
+        toggleClass(self.calendarContainer, "arrowTop", !showOnTop);
+        toggleClass(self.calendarContainer, "arrowBottom", showOnTop);
+        if (self.config.inline) return;
+        var left = window.pageXOffset + inputBounds.left - (configPosHorizontal != null && configPosHorizontal === "center" ? (calendarWidth - inputBounds.width) / 2 : 0);
+        var right = window.document.body.offsetWidth - inputBounds.right;
+        var rightMost = left + calendarWidth > window.document.body.offsetWidth;
+        toggleClass(self.calendarContainer, "rightMost", rightMost);
+        if (self.config.static) return;
+        self.calendarContainer.style.top = top + "px";
+
+        if (!rightMost) {
+          self.calendarContainer.style.left = left + "px";
+          self.calendarContainer.style.right = "auto";
+        } else {
+          self.calendarContainer.style.left = "auto";
+          self.calendarContainer.style.right = right + "px";
+        }
+      }
+
+      function redraw() {
+        if (self.config.noCalendar || self.isMobile) return;
+        updateNavigationCurrentMonth();
+        buildDays();
+      }
+
+      function focusAndClose() {
+        self._input.focus();
+
+        if (window.navigator.userAgent.indexOf("MSIE") !== -1 || navigator.msMaxTouchPoints !== undefined) {
+          setTimeout(self.close, 0);
+        } else {
+          self.close();
+        }
+      }
+
+      function selectDate(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var isSelectable = function isSelectable(day) {
+          return day.classList && day.classList.contains("flatpickr-day") && !day.classList.contains("disabled") && !day.classList.contains("notAllowed");
+        };
+
+        var t = findParent(e.target, isSelectable);
+        if (t === undefined) return;
+        var target = t;
+        var selectedDate = self.latestSelectedDateObj = new Date(target.dateObj.getTime());
+        var shouldChangeMonth = (selectedDate.getMonth() < self.currentMonth || selectedDate.getMonth() > self.currentMonth + self.config.showMonths - 1) && self.config.mode !== "range";
+        self.selectedDateElem = target;
+        if (self.config.mode === "single") self.selectedDates = [selectedDate];else if (self.config.mode === "multiple") {
+          var selectedIndex = isDateSelected(selectedDate);
+          if (selectedIndex) self.selectedDates.splice(parseInt(selectedIndex), 1);else self.selectedDates.push(selectedDate);
+        } else if (self.config.mode === "range") {
+          if (self.selectedDates.length === 2) self.clear(false);
+          self.selectedDates.push(selectedDate);
+          if (compareDates(selectedDate, self.selectedDates[0], true) !== 0) self.selectedDates.sort(function (a, b) {
+            return a.getTime() - b.getTime();
+          });
+        }
+        setHoursFromInputs();
+
+        if (shouldChangeMonth) {
+          var isNewYear = self.currentYear !== selectedDate.getFullYear();
+          self.currentYear = selectedDate.getFullYear();
+          self.currentMonth = selectedDate.getMonth();
+          if (isNewYear) triggerEvent("onYearChange");
+          triggerEvent("onMonthChange");
+        }
+
+        updateNavigationCurrentMonth();
+        buildDays();
+        updateValue();
+        if (self.config.enableTime) setTimeout(function () {
+          return self.showTimeInput = true;
+        }, 50);
+        if (!shouldChangeMonth && self.config.mode !== "range" && self.config.showMonths === 1) focusOnDayElem(target);else self.selectedDateElem && self.selectedDateElem.focus();
+        if (self.hourElement !== undefined) setTimeout(function () {
+          return self.hourElement !== undefined && self.hourElement.select();
+        }, 451);
+
+        if (self.config.closeOnSelect) {
+          var single = self.config.mode === "single" && !self.config.enableTime;
+          var range = self.config.mode === "range" && self.selectedDates.length === 2 && !self.config.enableTime;
+
+          if (single || range) {
+            focusAndClose();
+          }
+        }
+
+        triggerChange();
+      }
+
+      var CALLBACKS = {
+        locale: [setupLocale, updateWeekdays],
+        showMonths: [buildMonths, setCalendarWidth, buildWeekdays]
+      };
+
+      function set(option, value) {
+        if (option !== null && typeof option === "object") Object.assign(self.config, option);else {
+          self.config[option] = value;
+          if (CALLBACKS[option] !== undefined) CALLBACKS[option].forEach(function (x) {
+            return x();
+          });else if (HOOKS.indexOf(option) > -1) self.config[option] = arrayify(value);
+        }
+        self.redraw();
+        jumpToDate();
+        updateValue(false);
+      }
+
+      function setSelectedDate(inputDate, format) {
+        var dates = [];
+        if (inputDate instanceof Array) dates = inputDate.map(function (d) {
+          return self.parseDate(d, format);
+        });else if (inputDate instanceof Date || typeof inputDate === "number") dates = [self.parseDate(inputDate, format)];else if (typeof inputDate === "string") {
+          switch (self.config.mode) {
+            case "single":
+            case "time":
+              dates = [self.parseDate(inputDate, format)];
+              break;
+
+            case "multiple":
+              dates = inputDate.split(self.config.conjunction).map(function (date) {
+                return self.parseDate(date, format);
+              });
+              break;
+
+            case "range":
+              dates = inputDate.split(self.l10n.rangeSeparator).map(function (date) {
+                return self.parseDate(date, format);
+              });
+              break;
+
+            default:
+              break;
+          }
+        } else self.config.errorHandler(new Error("Invalid date supplied: " + JSON.stringify(inputDate)));
+        self.selectedDates = dates.filter(function (d) {
+          return d instanceof Date && isEnabled(d, false);
+        });
+        if (self.config.mode === "range") self.selectedDates.sort(function (a, b) {
+          return a.getTime() - b.getTime();
+        });
+      }
+
+      function setDate(date, triggerChange, format) {
+        if (triggerChange === void 0) {
+          triggerChange = false;
+        }
+
+        if (format === void 0) {
+          format = self.config.dateFormat;
+        }
+
+        if (date !== 0 && !date || date instanceof Array && date.length === 0) return self.clear(triggerChange);
+        setSelectedDate(date, format);
+        self.showTimeInput = self.selectedDates.length > 0;
+        self.latestSelectedDateObj = self.selectedDates[0];
+        self.redraw();
+        jumpToDate();
+        setHoursFromDate();
+        updateValue(triggerChange);
+        if (triggerChange) triggerEvent("onChange");
+      }
+
+      function parseDateRules(arr) {
+        return arr.slice().map(function (rule) {
+          if (typeof rule === "string" || typeof rule === "number" || rule instanceof Date) {
+            return self.parseDate(rule, undefined, true);
+          } else if (rule && typeof rule === "object" && rule.from && rule.to) return {
+            from: self.parseDate(rule.from, undefined),
+            to: self.parseDate(rule.to, undefined)
+          };
+
+          return rule;
+        }).filter(function (x) {
+          return x;
+        });
+      }
+
+      function setupDates() {
+        self.selectedDates = [];
+        self.now = self.parseDate(self.config.now) || new Date();
+        var preloadedDate = self.config.defaultDate || ((self.input.nodeName === "INPUT" || self.input.nodeName === "TEXTAREA") && self.input.placeholder && self.input.value === self.input.placeholder ? null : self.input.value);
+        if (preloadedDate) setSelectedDate(preloadedDate, self.config.dateFormat);
+        var initialDate = self.selectedDates.length > 0 ? self.selectedDates[0] : self.config.minDate && self.config.minDate.getTime() > self.now.getTime() ? self.config.minDate : self.config.maxDate && self.config.maxDate.getTime() < self.now.getTime() ? self.config.maxDate : self.now;
+        self.currentYear = initialDate.getFullYear();
+        self.currentMonth = initialDate.getMonth();
+        if (self.selectedDates.length > 0) self.latestSelectedDateObj = self.selectedDates[0];
+        if (self.config.minTime !== undefined) self.config.minTime = self.parseDate(self.config.minTime, "H:i");
+        if (self.config.maxTime !== undefined) self.config.maxTime = self.parseDate(self.config.maxTime, "H:i");
+        self.minDateHasTime = !!self.config.minDate && (self.config.minDate.getHours() > 0 || self.config.minDate.getMinutes() > 0 || self.config.minDate.getSeconds() > 0);
+        self.maxDateHasTime = !!self.config.maxDate && (self.config.maxDate.getHours() > 0 || self.config.maxDate.getMinutes() > 0 || self.config.maxDate.getSeconds() > 0);
+        Object.defineProperty(self, "showTimeInput", {
+          get: function get() {
+            return self._showTimeInput;
+          },
+          set: function set(bool) {
+            self._showTimeInput = bool;
+            if (self.calendarContainer) toggleClass(self.calendarContainer, "showTimeInput", bool);
+            self.isOpen && positionCalendar();
+          }
+        });
+      }
+
+      function setupInputs() {
+        self.input = self.config.wrap ? element.querySelector("[data-input]") : element;
+
+        if (!self.input) {
+          self.config.errorHandler(new Error("Invalid input element specified"));
+          return;
+        }
+
+        self.input._type = self.input.type;
+        self.input.type = "text";
+        self.input.classList.add("flatpickr-input");
+        self._input = self.input;
+
+        if (self.config.altInput) {
+          self.altInput = createElement(self.input.nodeName, self.input.className + " " + self.config.altInputClass);
+          self._input = self.altInput;
+          self.altInput.placeholder = self.input.placeholder;
+          self.altInput.disabled = self.input.disabled;
+          self.altInput.required = self.input.required;
+          self.altInput.tabIndex = self.input.tabIndex;
+          self.altInput.type = "text";
+          self.input.setAttribute("type", "hidden");
+          if (!self.config.static && self.input.parentNode) self.input.parentNode.insertBefore(self.altInput, self.input.nextSibling);
+        }
+
+        if (!self.config.allowInput) self._input.setAttribute("readonly", "readonly");
+        self._positionElement = self.config.positionElement || self._input;
+      }
+
+      function setupMobile() {
+        var inputType = self.config.enableTime ? self.config.noCalendar ? "time" : "datetime-local" : "date";
+        self.mobileInput = createElement("input", self.input.className + " flatpickr-mobile");
+        self.mobileInput.step = self.input.getAttribute("step") || "any";
+        self.mobileInput.tabIndex = 1;
+        self.mobileInput.type = inputType;
+        self.mobileInput.disabled = self.input.disabled;
+        self.mobileInput.required = self.input.required;
+        self.mobileInput.placeholder = self.input.placeholder;
+        self.mobileFormatStr = inputType === "datetime-local" ? "Y-m-d\\TH:i:S" : inputType === "date" ? "Y-m-d" : "H:i:S";
+
+        if (self.selectedDates.length > 0) {
+          self.mobileInput.defaultValue = self.mobileInput.value = self.formatDate(self.selectedDates[0], self.mobileFormatStr);
+        }
+
+        if (self.config.minDate) self.mobileInput.min = self.formatDate(self.config.minDate, "Y-m-d");
+        if (self.config.maxDate) self.mobileInput.max = self.formatDate(self.config.maxDate, "Y-m-d");
+        self.input.type = "hidden";
+        if (self.altInput !== undefined) self.altInput.type = "hidden";
+
+        try {
+          if (self.input.parentNode) self.input.parentNode.insertBefore(self.mobileInput, self.input.nextSibling);
+        } catch (_a) {}
+
+        bind(self.mobileInput, "change", function (e) {
+          self.setDate(e.target.value, false, self.mobileFormatStr);
+          triggerEvent("onChange");
+          triggerEvent("onClose");
+        });
+      }
+
+      function toggle(e) {
+        if (self.isOpen === true) return self.close();
+        self.open(e);
+      }
+
+      function triggerEvent(event, data) {
+        if (self.config === undefined) return;
+        var hooks = self.config[event];
+
+        if (hooks !== undefined && hooks.length > 0) {
+          for (var i = 0; hooks[i] && i < hooks.length; i++) {
+            hooks[i](self.selectedDates, self.input.value, self, data);
+          }
+        }
+
+        if (event === "onChange") {
+          self.input.dispatchEvent(createEvent("change"));
+          self.input.dispatchEvent(createEvent("input"));
+        }
+      }
+
+      function createEvent(name) {
+        var e = document.createEvent("Event");
+        e.initEvent(name, true, true);
+        return e;
+      }
+
+      function isDateSelected(date) {
+        for (var i = 0; i < self.selectedDates.length; i++) {
+          if (compareDates(self.selectedDates[i], date) === 0) return "" + i;
+        }
+
+        return false;
+      }
+
+      function isDateInRange(date) {
+        if (self.config.mode !== "range" || self.selectedDates.length < 2) return false;
+        return compareDates(date, self.selectedDates[0]) >= 0 && compareDates(date, self.selectedDates[1]) <= 0;
+      }
+
+      function updateNavigationCurrentMonth() {
+        if (self.config.noCalendar || self.isMobile || !self.monthNav) return;
+        self.yearElements.forEach(function (yearElement, i) {
+          var d = new Date(self.currentYear, self.currentMonth, 1);
+          d.setMonth(self.currentMonth + i);
+          self.monthElements[i].textContent = monthToStr(d.getMonth(), self.config.shorthandCurrentMonth, self.l10n) + " ";
+          yearElement.value = d.getFullYear().toString();
+        });
+        self._hidePrevMonthArrow = self.config.minDate !== undefined && (self.currentYear === self.config.minDate.getFullYear() ? self.currentMonth <= self.config.minDate.getMonth() : self.currentYear < self.config.minDate.getFullYear());
+        self._hideNextMonthArrow = self.config.maxDate !== undefined && (self.currentYear === self.config.maxDate.getFullYear() ? self.currentMonth + 1 > self.config.maxDate.getMonth() : self.currentYear > self.config.maxDate.getFullYear());
+      }
+
+      function getDateStr(format) {
+        return self.selectedDates.map(function (dObj) {
+          return self.formatDate(dObj, format);
+        }).filter(function (d, i, arr) {
+          return self.config.mode !== "range" || self.config.enableTime || arr.indexOf(d) === i;
+        }).join(self.config.mode !== "range" ? self.config.conjunction : self.l10n.rangeSeparator);
+      }
+
+      function updateValue(triggerChange) {
+        if (triggerChange === void 0) {
+          triggerChange = true;
+        }
+
+        if (self.selectedDates.length === 0) return self.clear(triggerChange);
+
+        if (self.mobileInput !== undefined && self.mobileFormatStr) {
+          self.mobileInput.value = self.latestSelectedDateObj !== undefined ? self.formatDate(self.latestSelectedDateObj, self.mobileFormatStr) : "";
+        }
+
+        self.input.value = getDateStr(self.config.dateFormat);
+
+        if (self.altInput !== undefined) {
+          self.altInput.value = getDateStr(self.config.altFormat);
+        }
+
+        if (triggerChange !== false) triggerEvent("onValueUpdate");
+      }
+
+      function onMonthNavClick(e) {
+        e.preventDefault();
+        var isPrevMonth = self.prevMonthNav.contains(e.target);
+        var isNextMonth = self.nextMonthNav.contains(e.target);
+
+        if (isPrevMonth || isNextMonth) {
+          changeMonth(isPrevMonth ? -1 : 1);
+        } else if (self.yearElements.indexOf(e.target) >= 0) {
+          e.target.select();
+        } else if (e.target.classList.contains("arrowUp")) {
+          self.changeYear(self.currentYear + 1);
+        } else if (e.target.classList.contains("arrowDown")) {
+          self.changeYear(self.currentYear - 1);
+        }
+      }
+
+      function timeWrapper(e) {
+        e.preventDefault();
+        var isKeyDown = e.type === "keydown",
+            input = e.target;
+
+        if (self.amPM !== undefined && e.target === self.amPM) {
+          self.amPM.textContent = self.l10n.amPM[int(self.amPM.textContent === self.l10n.amPM[0])];
+        }
+
+        var min = parseFloat(input.getAttribute("data-min")),
+            max = parseFloat(input.getAttribute("data-max")),
+            step = parseFloat(input.getAttribute("data-step")),
+            curValue = parseInt(input.value, 10),
+            delta = e.delta || (isKeyDown ? e.which === 38 ? 1 : -1 : 0);
+        var newValue = curValue + step * delta;
+
+        if (typeof input.value !== "undefined" && input.value.length === 2) {
+          var isHourElem = input === self.hourElement,
+              isMinuteElem = input === self.minuteElement;
+
+          if (newValue < min) {
+            newValue = max + newValue + int(!isHourElem) + (int(isHourElem) && int(!self.amPM));
+            if (isMinuteElem) incrementNumInput(undefined, -1, self.hourElement);
+          } else if (newValue > max) {
+            newValue = input === self.hourElement ? newValue - max - int(!self.amPM) : min;
+            if (isMinuteElem) incrementNumInput(undefined, 1, self.hourElement);
+          }
+
+          if (self.amPM && isHourElem && (step === 1 ? newValue + curValue === 23 : Math.abs(newValue - curValue) > step)) {
+            self.amPM.textContent = self.l10n.amPM[int(self.amPM.textContent === self.l10n.amPM[0])];
+          }
+
+          input.value = pad(newValue);
+        }
+      }
+
+      init();
+      return self;
+    }
+
+    function _flatpickr(nodeList, config) {
+      var nodes = Array.prototype.slice.call(nodeList);
+      var instances = [];
+
+      for (var i = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+
+        try {
+          if (node.getAttribute("data-fp-omit") !== null) continue;
+
+          if (node._flatpickr !== undefined) {
+            node._flatpickr.destroy();
+
+            node._flatpickr = undefined;
+          }
+
+          node._flatpickr = FlatpickrInstance(node, config || {});
+          instances.push(node._flatpickr);
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      return instances.length === 1 ? instances[0] : instances;
+    }
+
+    if (typeof HTMLElement !== "undefined") {
+      HTMLCollection.prototype.flatpickr = NodeList.prototype.flatpickr = function (config) {
+        return _flatpickr(this, config);
+      };
+
+      HTMLElement.prototype.flatpickr = function (config) {
+        return _flatpickr([this], config);
+      };
+    }
+
+    var flatpickr = function flatpickr(selector, config) {
+      if (selector instanceof NodeList) return _flatpickr(selector, config);else if (typeof selector === "string") return _flatpickr(window.document.querySelectorAll(selector), config);
+      return _flatpickr([selector], config);
+    };
+
+    flatpickr.defaultConfig = defaults;
+    flatpickr.l10ns = {
+      en: Object.assign({}, english),
+      default: Object.assign({}, english)
+    };
+
+    flatpickr.localize = function (l10n) {
+      flatpickr.l10ns.default = Object.assign({}, flatpickr.l10ns.default, l10n);
+    };
+
+    flatpickr.setDefaults = function (config) {
+      flatpickr.defaultConfig = Object.assign({}, flatpickr.defaultConfig, config);
+    };
+
+    flatpickr.parseDate = createDateParser({});
+    flatpickr.formatDate = createDateFormatter({});
+    flatpickr.compareDates = compareDates;
+
+    if (typeof jQuery !== "undefined") {
+      jQuery.fn.flatpickr = function (config) {
+        return _flatpickr(this, config);
+      };
+    }
+
+    Date.prototype.fp_incr = function (days) {
+      return new Date(this.getFullYear(), this.getMonth(), this.getDate() + (typeof days === "string" ? parseInt(days, 10) : days));
+    };
+
+    if (typeof window !== "undefined") {
+      window.flatpickr = flatpickr;
+    }
+
+    return flatpickr;
+
+})));
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(527)))
+
+/***/ }),
+
+/***/ 706:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(583);
+var content = __webpack_require__(707);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -11585,8 +13749,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./vue-circle-slider.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./vue-circle-slider.css");
+		module.hot.accept("!!../../css-loader/index.js!./flatpickr.css", function() {
+			var newContent = require("!!../../css-loader/index.js!./flatpickr.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -11597,7 +13761,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 583:
+/***/ 707:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11605,3102 +13769,10 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, ".flatpickr-calendar {\n  background: transparent;\n  opacity: 0;\n  display: none;\n  text-align: center;\n  visibility: hidden;\n  padding: 0;\n  -webkit-animation: none;\n          animation: none;\n  direction: ltr;\n  border: 0;\n  font-size: 14px;\n  line-height: 24px;\n  border-radius: 5px;\n  position: absolute;\n  width: 307.875px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -ms-touch-action: manipulation;\n      touch-action: manipulation;\n  background: #fff;\n  -webkit-box-shadow: 1px 0 0 #e6e6e6, -1px 0 0 #e6e6e6, 0 1px 0 #e6e6e6, 0 -1px 0 #e6e6e6, 0 3px 13px rgba(0,0,0,0.08);\n          box-shadow: 1px 0 0 #e6e6e6, -1px 0 0 #e6e6e6, 0 1px 0 #e6e6e6, 0 -1px 0 #e6e6e6, 0 3px 13px rgba(0,0,0,0.08);\n}\n.flatpickr-calendar.open,\n.flatpickr-calendar.inline {\n  opacity: 1;\n  max-height: 640px;\n  visibility: visible;\n}\n.flatpickr-calendar.open {\n  display: inline-block;\n  z-index: 99999;\n}\n.flatpickr-calendar.animate.open {\n  -webkit-animation: fpFadeInDown 300ms cubic-bezier(0.23, 1, 0.32, 1);\n          animation: fpFadeInDown 300ms cubic-bezier(0.23, 1, 0.32, 1);\n}\n.flatpickr-calendar.inline {\n  display: block;\n  position: relative;\n  top: 2px;\n}\n.flatpickr-calendar.static {\n  position: absolute;\n  top: calc(100% + 2px);\n}\n.flatpickr-calendar.static.open {\n  z-index: 999;\n  display: block;\n}\n.flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {\n  -webkit-box-shadow: none !important;\n          box-shadow: none !important;\n}\n.flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+2) .flatpickr-day.inRange:nth-child(7n+1) {\n  -webkit-box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;\n          box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;\n}\n.flatpickr-calendar .hasWeeks .dayContainer,\n.flatpickr-calendar .hasTime .dayContainer {\n  border-bottom: 0;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.flatpickr-calendar .hasWeeks .dayContainer {\n  border-left: 0;\n}\n.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {\n  height: 40px;\n  border-top: 1px solid #e6e6e6;\n}\n.flatpickr-calendar.noCalendar.hasTime .flatpickr-time {\n  height: auto;\n}\n.flatpickr-calendar:before,\n.flatpickr-calendar:after {\n  position: absolute;\n  display: block;\n  pointer-events: none;\n  border: solid transparent;\n  content: '';\n  height: 0;\n  width: 0;\n  left: 22px;\n}\n.flatpickr-calendar.rightMost:before,\n.flatpickr-calendar.rightMost:after {\n  left: auto;\n  right: 22px;\n}\n.flatpickr-calendar:before {\n  border-width: 5px;\n  margin: 0 -5px;\n}\n.flatpickr-calendar:after {\n  border-width: 4px;\n  margin: 0 -4px;\n}\n.flatpickr-calendar.arrowTop:before,\n.flatpickr-calendar.arrowTop:after {\n  bottom: 100%;\n}\n.flatpickr-calendar.arrowTop:before {\n  border-bottom-color: #e6e6e6;\n}\n.flatpickr-calendar.arrowTop:after {\n  border-bottom-color: #fff;\n}\n.flatpickr-calendar.arrowBottom:before,\n.flatpickr-calendar.arrowBottom:after {\n  top: 100%;\n}\n.flatpickr-calendar.arrowBottom:before {\n  border-top-color: #e6e6e6;\n}\n.flatpickr-calendar.arrowBottom:after {\n  border-top-color: #fff;\n}\n.flatpickr-calendar:focus {\n  outline: 0;\n}\n.flatpickr-wrapper {\n  position: relative;\n  display: inline-block;\n}\n.flatpickr-months {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n.flatpickr-months .flatpickr-month {\n  background: transparent;\n  color: rgba(0,0,0,0.9);\n  fill: rgba(0,0,0,0.9);\n  height: 28px;\n  line-height: 1;\n  text-align: center;\n  position: relative;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  overflow: hidden;\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.flatpickr-months .flatpickr-prev-month,\n.flatpickr-months .flatpickr-next-month {\n  text-decoration: none;\n  cursor: pointer;\n  position: absolute;\n  top: 0px;\n  line-height: 16px;\n  height: 28px;\n  padding: 10px;\n  z-index: 3;\n  color: rgba(0,0,0,0.9);\n  fill: rgba(0,0,0,0.9);\n}\n.flatpickr-months .flatpickr-prev-month.disabled,\n.flatpickr-months .flatpickr-next-month.disabled {\n  display: none;\n}\n.flatpickr-months .flatpickr-prev-month i,\n.flatpickr-months .flatpickr-next-month i {\n  position: relative;\n}\n.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month,\n.flatpickr-months .flatpickr-next-month.flatpickr-prev-month {\n/*\n      /*rtl:begin:ignore*/\n/*\n      */\n  left: 0;\n/*\n      /*rtl:end:ignore*/\n/*\n      */\n}\n/*\n      /*rtl:begin:ignore*/\n/*\n      /*rtl:end:ignore*/\n.flatpickr-months .flatpickr-prev-month.flatpickr-next-month,\n.flatpickr-months .flatpickr-next-month.flatpickr-next-month {\n/*\n      /*rtl:begin:ignore*/\n/*\n      */\n  right: 0;\n/*\n      /*rtl:end:ignore*/\n/*\n      */\n}\n/*\n      /*rtl:begin:ignore*/\n/*\n      /*rtl:end:ignore*/\n.flatpickr-months .flatpickr-prev-month:hover,\n.flatpickr-months .flatpickr-next-month:hover {\n  color: #959ea9;\n}\n.flatpickr-months .flatpickr-prev-month:hover svg,\n.flatpickr-months .flatpickr-next-month:hover svg {\n  fill: #f64747;\n}\n.flatpickr-months .flatpickr-prev-month svg,\n.flatpickr-months .flatpickr-next-month svg {\n  width: 14px;\n  height: 14px;\n}\n.flatpickr-months .flatpickr-prev-month svg path,\n.flatpickr-months .flatpickr-next-month svg path {\n  -webkit-transition: fill 0.1s;\n  transition: fill 0.1s;\n  fill: inherit;\n}\n.numInputWrapper {\n  position: relative;\n  height: auto;\n}\n.numInputWrapper input,\n.numInputWrapper span {\n  display: inline-block;\n}\n.numInputWrapper input {\n  width: 100%;\n}\n.numInputWrapper input::-ms-clear {\n  display: none;\n}\n.numInputWrapper span {\n  position: absolute;\n  right: 0;\n  width: 14px;\n  padding: 0 4px 0 2px;\n  height: 50%;\n  line-height: 50%;\n  opacity: 0;\n  cursor: pointer;\n  border: 1px solid rgba(57,57,57,0.15);\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.numInputWrapper span:hover {\n  background: rgba(0,0,0,0.1);\n}\n.numInputWrapper span:active {\n  background: rgba(0,0,0,0.2);\n}\n.numInputWrapper span:after {\n  display: block;\n  content: \"\";\n  position: absolute;\n}\n.numInputWrapper span.arrowUp {\n  top: 0;\n  border-bottom: 0;\n}\n.numInputWrapper span.arrowUp:after {\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-bottom: 4px solid rgba(57,57,57,0.6);\n  top: 26%;\n}\n.numInputWrapper span.arrowDown {\n  top: 50%;\n}\n.numInputWrapper span.arrowDown:after {\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 4px solid rgba(57,57,57,0.6);\n  top: 40%;\n}\n.numInputWrapper span svg {\n  width: inherit;\n  height: auto;\n}\n.numInputWrapper span svg path {\n  fill: rgba(0,0,0,0.5);\n}\n.numInputWrapper:hover {\n  background: rgba(0,0,0,0.05);\n}\n.numInputWrapper:hover span {\n  opacity: 1;\n}\n.flatpickr-current-month {\n  font-size: 135%;\n  line-height: inherit;\n  font-weight: 300;\n  color: inherit;\n  position: absolute;\n  width: 75%;\n  left: 12.5%;\n  padding: 6.16px 0 0 0;\n  line-height: 1;\n  height: 28px;\n  display: inline-block;\n  text-align: center;\n  -webkit-transform: translate3d(0px, 0px, 0px);\n          transform: translate3d(0px, 0px, 0px);\n}\n.flatpickr-current-month span.cur-month {\n  font-family: inherit;\n  font-weight: 700;\n  color: inherit;\n  display: inline-block;\n  margin-left: 0.5ch;\n  padding: 0;\n}\n.flatpickr-current-month span.cur-month:hover {\n  background: rgba(0,0,0,0.05);\n}\n.flatpickr-current-month .numInputWrapper {\n  width: 6ch;\n  width: 7ch\\0;\n  display: inline-block;\n}\n.flatpickr-current-month .numInputWrapper span.arrowUp:after {\n  border-bottom-color: rgba(0,0,0,0.9);\n}\n.flatpickr-current-month .numInputWrapper span.arrowDown:after {\n  border-top-color: rgba(0,0,0,0.9);\n}\n.flatpickr-current-month input.cur-year {\n  background: transparent;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  color: inherit;\n  cursor: text;\n  padding: 0 0 0 0.5ch;\n  margin: 0;\n  display: inline-block;\n  font-size: inherit;\n  font-family: inherit;\n  font-weight: 300;\n  line-height: inherit;\n  height: auto;\n  border: 0;\n  border-radius: 0;\n  vertical-align: initial;\n}\n.flatpickr-current-month input.cur-year:focus {\n  outline: 0;\n}\n.flatpickr-current-month input.cur-year[disabled],\n.flatpickr-current-month input.cur-year[disabled]:hover {\n  font-size: 100%;\n  color: rgba(0,0,0,0.5);\n  background: transparent;\n  pointer-events: none;\n}\n.flatpickr-weekdays {\n  background: transparent;\n  text-align: center;\n  overflow: hidden;\n  width: 100%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  height: 28px;\n}\n.flatpickr-weekdays .flatpickr-weekdaycontainer {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\nspan.flatpickr-weekday {\n  cursor: default;\n  font-size: 90%;\n  background: transparent;\n  color: rgba(0,0,0,0.54);\n  line-height: 1;\n  margin: 0;\n  text-align: center;\n  display: block;\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  font-weight: bolder;\n}\n.dayContainer,\n.flatpickr-weeks {\n  padding: 1px 0 0 0;\n}\n.flatpickr-days {\n  position: relative;\n  overflow: hidden;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: start;\n  -webkit-align-items: flex-start;\n      -ms-flex-align: start;\n          align-items: flex-start;\n  width: 307.875px;\n}\n.flatpickr-days:focus {\n  outline: 0;\n}\n.dayContainer {\n  padding: 0;\n  outline: 0;\n  text-align: left;\n  width: 307.875px;\n  min-width: 307.875px;\n  max-width: 307.875px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: inline-block;\n  display: -ms-flexbox;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  -ms-flex-pack: justify;\n  -webkit-justify-content: space-around;\n          justify-content: space-around;\n  -webkit-transform: translate3d(0px, 0px, 0px);\n          transform: translate3d(0px, 0px, 0px);\n  opacity: 1;\n}\n.dayContainer + .dayContainer {\n  -webkit-box-shadow: -1px 0 0 #e6e6e6;\n          box-shadow: -1px 0 0 #e6e6e6;\n}\n.flatpickr-day {\n  background: none;\n  border: 1px solid transparent;\n  border-radius: 150px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  color: #393939;\n  cursor: pointer;\n  font-weight: 400;\n  width: 14.2857143%;\n  -webkit-flex-basis: 14.2857143%;\n      -ms-flex-preferred-size: 14.2857143%;\n          flex-basis: 14.2857143%;\n  max-width: 39px;\n  height: 39px;\n  line-height: 39px;\n  margin: 0;\n  display: inline-block;\n  position: relative;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  text-align: center;\n}\n.flatpickr-day.inRange,\n.flatpickr-day.prevMonthDay.inRange,\n.flatpickr-day.nextMonthDay.inRange,\n.flatpickr-day.today.inRange,\n.flatpickr-day.prevMonthDay.today.inRange,\n.flatpickr-day.nextMonthDay.today.inRange,\n.flatpickr-day:hover,\n.flatpickr-day.prevMonthDay:hover,\n.flatpickr-day.nextMonthDay:hover,\n.flatpickr-day:focus,\n.flatpickr-day.prevMonthDay:focus,\n.flatpickr-day.nextMonthDay:focus {\n  cursor: pointer;\n  outline: 0;\n  background: #e6e6e6;\n  border-color: #e6e6e6;\n}\n.flatpickr-day.today {\n  border-color: #959ea9;\n}\n.flatpickr-day.today:hover,\n.flatpickr-day.today:focus {\n  border-color: #959ea9;\n  background: #959ea9;\n  color: #fff;\n}\n.flatpickr-day.selected,\n.flatpickr-day.startRange,\n.flatpickr-day.endRange,\n.flatpickr-day.selected.inRange,\n.flatpickr-day.startRange.inRange,\n.flatpickr-day.endRange.inRange,\n.flatpickr-day.selected:focus,\n.flatpickr-day.startRange:focus,\n.flatpickr-day.endRange:focus,\n.flatpickr-day.selected:hover,\n.flatpickr-day.startRange:hover,\n.flatpickr-day.endRange:hover,\n.flatpickr-day.selected.prevMonthDay,\n.flatpickr-day.startRange.prevMonthDay,\n.flatpickr-day.endRange.prevMonthDay,\n.flatpickr-day.selected.nextMonthDay,\n.flatpickr-day.startRange.nextMonthDay,\n.flatpickr-day.endRange.nextMonthDay {\n  background: #569ff7;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  color: #fff;\n  border-color: #569ff7;\n}\n.flatpickr-day.selected.startRange,\n.flatpickr-day.startRange.startRange,\n.flatpickr-day.endRange.startRange {\n  border-radius: 50px 0 0 50px;\n}\n.flatpickr-day.selected.endRange,\n.flatpickr-day.startRange.endRange,\n.flatpickr-day.endRange.endRange {\n  border-radius: 0 50px 50px 0;\n}\n.flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)),\n.flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)),\n.flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1)) {\n  -webkit-box-shadow: -10px 0 0 #569ff7;\n          box-shadow: -10px 0 0 #569ff7;\n}\n.flatpickr-day.selected.startRange.endRange,\n.flatpickr-day.startRange.startRange.endRange,\n.flatpickr-day.endRange.startRange.endRange {\n  border-radius: 50px;\n}\n.flatpickr-day.inRange {\n  border-radius: 0;\n  -webkit-box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;\n          box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;\n}\n.flatpickr-day.disabled,\n.flatpickr-day.disabled:hover,\n.flatpickr-day.prevMonthDay,\n.flatpickr-day.nextMonthDay,\n.flatpickr-day.notAllowed,\n.flatpickr-day.notAllowed.prevMonthDay,\n.flatpickr-day.notAllowed.nextMonthDay {\n  color: rgba(57,57,57,0.3);\n  background: transparent;\n  border-color: transparent;\n  cursor: default;\n}\n.flatpickr-day.disabled,\n.flatpickr-day.disabled:hover {\n  cursor: not-allowed;\n  color: rgba(57,57,57,0.1);\n}\n.flatpickr-day.week.selected {\n  border-radius: 0;\n  -webkit-box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;\n          box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;\n}\n.flatpickr-day.hidden {\n  visibility: hidden;\n}\n.rangeMode .flatpickr-day {\n  margin-top: 1px;\n}\n.flatpickr-weekwrapper {\n  display: inline-block;\n  float: left;\n}\n.flatpickr-weekwrapper .flatpickr-weeks {\n  padding: 0 12px;\n  -webkit-box-shadow: 1px 0 0 #e6e6e6;\n          box-shadow: 1px 0 0 #e6e6e6;\n}\n.flatpickr-weekwrapper .flatpickr-weekday {\n  float: none;\n  width: 100%;\n  line-height: 28px;\n}\n.flatpickr-weekwrapper span.flatpickr-day,\n.flatpickr-weekwrapper span.flatpickr-day:hover {\n  display: block;\n  width: 100%;\n  max-width: none;\n  color: rgba(57,57,57,0.3);\n  background: transparent;\n  cursor: default;\n  border: none;\n}\n.flatpickr-innerContainer {\n  display: block;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  overflow: hidden;\n}\n.flatpickr-rContainer {\n  display: inline-block;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.flatpickr-time {\n  text-align: center;\n  outline: 0;\n  display: block;\n  height: 0;\n  line-height: 40px;\n  max-height: 40px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  overflow: hidden;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n.flatpickr-time:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.flatpickr-time .numInputWrapper {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 40%;\n  height: 40px;\n  float: left;\n}\n.flatpickr-time .numInputWrapper span.arrowUp:after {\n  border-bottom-color: #393939;\n}\n.flatpickr-time .numInputWrapper span.arrowDown:after {\n  border-top-color: #393939;\n}\n.flatpickr-time.hasSeconds .numInputWrapper {\n  width: 26%;\n}\n.flatpickr-time.time24hr .numInputWrapper {\n  width: 49%;\n}\n.flatpickr-time input {\n  background: transparent;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  border: 0;\n  border-radius: 0;\n  text-align: center;\n  margin: 0;\n  padding: 0;\n  height: inherit;\n  line-height: inherit;\n  color: #393939;\n  font-size: 14px;\n  position: relative;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.flatpickr-time input.flatpickr-hour {\n  font-weight: bold;\n}\n.flatpickr-time input.flatpickr-minute,\n.flatpickr-time input.flatpickr-second {\n  font-weight: 400;\n}\n.flatpickr-time input:focus {\n  outline: 0;\n  border: 0;\n}\n.flatpickr-time .flatpickr-time-separator,\n.flatpickr-time .flatpickr-am-pm {\n  height: inherit;\n  display: inline-block;\n  float: left;\n  line-height: inherit;\n  color: #393939;\n  font-weight: bold;\n  width: 2%;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  -webkit-align-self: center;\n      -ms-flex-item-align: center;\n          align-self: center;\n}\n.flatpickr-time .flatpickr-am-pm {\n  outline: 0;\n  width: 18%;\n  cursor: pointer;\n  text-align: center;\n  font-weight: 400;\n}\n.flatpickr-time input:hover,\n.flatpickr-time .flatpickr-am-pm:hover,\n.flatpickr-time input:focus,\n.flatpickr-time .flatpickr-am-pm:focus {\n  background: #f3f3f3;\n}\n.flatpickr-input[readonly] {\n  cursor: pointer;\n}\n@-webkit-keyframes fpFadeInDown {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -20px, 0);\n            transform: translate3d(0, -20px, 0);\n  }\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes fpFadeInDown {\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -20px, 0);\n            transform: translate3d(0, -20px, 0);\n  }\n  to {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n", ""]);
 
 // exports
 
-
-/***/ }),
-
-/***/ 607:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/**
- *
- * jquery.sparkline.js
- *
- * v2.1.2
- * (c) Splunk, Inc
- * Contact: Gareth Watts (gareth@splunk.com)
- * http://omnipotent.net/jquery.sparkline/
- *
- * Generates inline sparkline charts from data supplied either to the method
- * or inline in HTML
- *
- * Compatible with Internet Explorer 6.0+ and modern browsers equipped with the canvas tag
- * (Firefox 2.0+, Safari, Opera, etc)
- *
- * License: New BSD License
- *
- * Copyright (c) 2012, Splunk Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- *     * Redistributions of source code must retain the above copyright notice,
- *       this list of conditions and the following disclaimer.
- *     * Redistributions in binary form must reproduce the above copyright notice,
- *       this list of conditions and the following disclaimer in the documentation
- *       and/or other materials provided with the distribution.
- *     * Neither the name of Splunk Inc nor the names of its contributors may
- *       be used to endorse or promote products derived from this software without
- *       specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
- * SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
- * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Usage:
- *  $(selector).sparkline(values, options)
- *
- * If values is undefined or set to 'html' then the data values are read from the specified tag:
- *   <p>Sparkline: <span class="sparkline">1,4,6,6,8,5,3,5</span></p>
- *   $('.sparkline').sparkline();
- * There must be no spaces in the enclosed data set
- *
- * Otherwise values must be an array of numbers or null values
- *    <p>Sparkline: <span id="sparkline1">This text replaced if the browser is compatible</span></p>
- *    $('#sparkline1').sparkline([1,4,6,6,8,5,3,5])
- *    $('#sparkline2').sparkline([1,4,6,null,null,5,3,5])
- *
- * Values can also be specified in an HTML comment, or as a values attribute:
- *    <p>Sparkline: <span class="sparkline"><!--1,4,6,6,8,5,3,5 --></span></p>
- *    <p>Sparkline: <span class="sparkline" values="1,4,6,6,8,5,3,5"></span></p>
- *    $('.sparkline').sparkline();
- *
- * For line charts, x values can also be specified:
- *   <p>Sparkline: <span class="sparkline">1:1,2.7:4,3.4:6,5:6,6:8,8.7:5,9:3,10:5</span></p>
- *    $('#sparkline1').sparkline([ [1,1], [2.7,4], [3.4,6], [5,6], [6,8], [8.7,5], [9,3], [10,5] ])
- *
- * By default, options should be passed in as teh second argument to the sparkline function:
- *   $('.sparkline').sparkline([1,2,3,4], {type: 'bar'})
- *
- * Options can also be set by passing them on the tag itself.  This feature is disabled by default though
- * as there's a slight performance overhead:
- *   $('.sparkline').sparkline([1,2,3,4], {enableTagOptions: true})
- *   <p>Sparkline: <span class="sparkline" sparkType="bar" sparkBarColor="red">loading</span></p>
- * Prefix all options supplied as tag attribute with "spark" (configurable by setting tagOptionPrefix)
- *
- * Supported options:
- *   lineColor - Color of the line used for the chart
- *   fillColor - Color used to fill in the chart - Set to '' or false for a transparent chart
- *   width - Width of the chart - Defaults to 3 times the number of values in pixels
- *   height - Height of the chart - Defaults to the height of the containing element
- *   chartRangeMin - Specify the minimum value to use for the Y range of the chart - Defaults to the minimum value supplied
- *   chartRangeMax - Specify the maximum value to use for the Y range of the chart - Defaults to the maximum value supplied
- *   chartRangeClip - Clip out of range values to the max/min specified by chartRangeMin and chartRangeMax
- *   chartRangeMinX - Specify the minimum value to use for the X range of the chart - Defaults to the minimum value supplied
- *   chartRangeMaxX - Specify the maximum value to use for the X range of the chart - Defaults to the maximum value supplied
- *   composite - If true then don't erase any existing chart attached to the tag, but draw
- *           another chart over the top - Note that width and height are ignored if an
- *           existing chart is detected.
- *   tagValuesAttribute - Name of tag attribute to check for data values - Defaults to 'values'
- *   enableTagOptions - Whether to check tags for sparkline options
- *   tagOptionPrefix - Prefix used for options supplied as tag attributes - Defaults to 'spark'
- *   disableHiddenCheck - If set to true, then the plugin will assume that charts will never be drawn into a
- *           hidden dom element, avoding a browser reflow
- *   disableInteraction - If set to true then all mouseover/click interaction behaviour will be disabled,
- *       making the plugin perform much like it did in 1.x
- *   disableTooltips - If set to true then tooltips will be disabled - Defaults to false (tooltips enabled)
- *   disableHighlight - If set to true then highlighting of selected chart elements on mouseover will be disabled
- *       defaults to false (highlights enabled)
- *   highlightLighten - Factor to lighten/darken highlighted chart values by - Defaults to 1.4 for a 40% increase
- *   tooltipContainer - Specify which DOM element the tooltip should be rendered into - defaults to document.body
- *   tooltipClassname - Optional CSS classname to apply to tooltips - If not specified then a default style will be applied
- *   tooltipOffsetX - How many pixels away from the mouse pointer to render the tooltip on the X axis
- *   tooltipOffsetY - How many pixels away from the mouse pointer to render the tooltip on the r axis
- *   tooltipFormatter  - Optional callback that allows you to override the HTML displayed in the tooltip
- *       callback is given arguments of (sparkline, options, fields)
- *   tooltipChartTitle - If specified then the tooltip uses the string specified by this setting as a title
- *   tooltipFormat - A format string or SPFormat object  (or an array thereof for multiple entries)
- *       to control the format of the tooltip
- *   tooltipPrefix - A string to prepend to each field displayed in a tooltip
- *   tooltipSuffix - A string to append to each field displayed in a tooltip
- *   tooltipSkipNull - If true then null values will not have a tooltip displayed (defaults to true)
- *   tooltipValueLookups - An object or range map to map field values to tooltip strings
- *       (eg. to map -1 to "Lost", 0 to "Draw", and 1 to "Win")
- *   numberFormatter - Optional callback for formatting numbers in tooltips
- *   numberDigitGroupSep - Character to use for group separator in numbers "1,234" - Defaults to ","
- *   numberDecimalMark - Character to use for the decimal point when formatting numbers - Defaults to "."
- *   numberDigitGroupCount - Number of digits between group separator - Defaults to 3
- *
- * There are 7 types of sparkline, selected by supplying a "type" option of 'line' (default),
- * 'bar', 'tristate', 'bullet', 'discrete', 'pie' or 'box'
- *    line - Line chart.  Options:
- *       spotColor - Set to '' to not end each line in a circular spot
- *       minSpotColor - If set, color of spot at minimum value
- *       maxSpotColor - If set, color of spot at maximum value
- *       spotRadius - Radius in pixels
- *       lineWidth - Width of line in pixels
- *       normalRangeMin
- *       normalRangeMax - If set draws a filled horizontal bar between these two values marking the "normal"
- *                      or expected range of values
- *       normalRangeColor - Color to use for the above bar
- *       drawNormalOnTop - Draw the normal range above the chart fill color if true
- *       defaultPixelsPerValue - Defaults to 3 pixels of width for each value in the chart
- *       highlightSpotColor - The color to use for drawing a highlight spot on mouseover - Set to null to disable
- *       highlightLineColor - The color to use for drawing a highlight line on mouseover - Set to null to disable
- *       valueSpots - Specify which points to draw spots on, and in which color.  Accepts a range map
- *
- *   bar - Bar chart.  Options:
- *       barColor - Color of bars for postive values
- *       negBarColor - Color of bars for negative values
- *       zeroColor - Color of bars with zero values
- *       nullColor - Color of bars with null values - Defaults to omitting the bar entirely
- *       barWidth - Width of bars in pixels
- *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
- *                  can be an Array of values to control the color of individual bars or a range map
- *                  to specify colors for individual ranges of values
- *       barSpacing - Gap between bars in pixels
- *       zeroAxis - Centers the y-axis around zero if true
- *
- *   tristate - Charts values of win (>0), lose (<0) or draw (=0)
- *       posBarColor - Color of win values
- *       negBarColor - Color of lose values
- *       zeroBarColor - Color of draw values
- *       barWidth - Width of bars in pixels
- *       barSpacing - Gap between bars in pixels
- *       colorMap - Optional mappnig of values to colors to override the *BarColor values above
- *                  can be an Array of values to control the color of individual bars or a range map
- *                  to specify colors for individual ranges of values
- *
- *   discrete - Options:
- *       lineHeight - Height of each line in pixels - Defaults to 30% of the graph height
- *       thesholdValue - Values less than this value will be drawn using thresholdColor instead of lineColor
- *       thresholdColor
- *
- *   bullet - Values for bullet graphs msut be in the order: target, performance, range1, range2, range3, ...
- *       options:
- *       targetColor - The color of the vertical target marker
- *       targetWidth - The width of the target marker in pixels
- *       performanceColor - The color of the performance measure horizontal bar
- *       rangeColors - Colors to use for each qualitative range background color
- *
- *   pie - Pie chart. Options:
- *       sliceColors - An array of colors to use for pie slices
- *       offset - Angle in degrees to offset the first slice - Try -90 or +90
- *       borderWidth - Width of border to draw around the pie chart, in pixels - Defaults to 0 (no border)
- *       borderColor - Color to use for the pie chart border - Defaults to #000
- *
- *   box - Box plot. Options:
- *       raw - Set to true to supply pre-computed plot points as values
- *             values should be: low_outlier, low_whisker, q1, median, q3, high_whisker, high_outlier
- *             When set to false you can supply any number of values and the box plot will
- *             be computed for you.  Default is false.
- *       showOutliers - Set to true (default) to display outliers as circles
- *       outlierIQR - Interquartile range used to determine outliers.  Default 1.5
- *       boxLineColor - Outline color of the box
- *       boxFillColor - Fill color for the box
- *       whiskerColor - Line color used for whiskers
- *       outlierLineColor - Outline color of outlier circles
- *       outlierFillColor - Fill color of the outlier circles
- *       spotRadius - Radius of outlier circles
- *       medianColor - Line color of the median line
- *       target - Draw a target cross hair at the supplied value (default undefined)
- *
- *
- *
- *   Examples:
- *   $('#sparkline1').sparkline(myvalues, { lineColor: '#f00', fillColor: false });
- *   $('.barsparks').sparkline('html', { type:'bar', height:'40px', barWidth:5 });
- *   $('#tristate').sparkline([1,1,-1,1,0,0,-1], { type:'tristate' }):
- *   $('#discrete').sparkline([1,3,4,5,5,3,4,5], { type:'discrete' });
- *   $('#bullet').sparkline([10,12,12,9,7], { type:'bullet' });
- *   $('#pie').sparkline([1,1,2], { type:'pie' });
- */
-
-/*jslint regexp: true, browser: true, jquery: true, white: true, nomen: false, plusplus: false, maxerr: 500, indent: 4 */
-
-(function (document, Math, undefined) {
-	// performance/minified-size optimization
-	(function (factory) {
-		if (true) {
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(526)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else if (jQuery && !jQuery.fn.sparkline) {
-			factory(jQuery);
-		}
-	})(function ($) {
-		'use strict';
-
-		var UNSET_OPTION = {},
-		    getDefaults,
-		    createClass,
-		    SPFormat,
-		    clipval,
-		    quartile,
-		    normalizeValue,
-		    normalizeValues,
-		    remove,
-		    isNumber,
-		    all,
-		    sum,
-		    addCSS,
-		    ensureArray,
-		    formatNumber,
-		    RangeMap,
-		    MouseHandler,
-		    Tooltip,
-		    barHighlightMixin,
-		    line,
-		    bar,
-		    tristate,
-		    discrete,
-		    bullet,
-		    pie,
-		    box,
-		    defaultStyles,
-		    initStyles,
-		    VShape,
-		    VCanvas_base,
-		    VCanvas_canvas,
-		    VCanvas_vml,
-		    pending,
-		    shapeCount = 0;
-
-		/**
-   * Default configuration settings
-   */
-		getDefaults = function getDefaults() {
-			return {
-				// Settings common to most/all chart types
-				common: {
-					type: 'line',
-					lineColor: '#00f',
-					fillColor: '#cdf',
-					defaultPixelsPerValue: 3,
-					width: 'auto',
-					height: 'auto',
-					composite: false,
-					tagValuesAttribute: 'values',
-					tagOptionsPrefix: 'spark',
-					enableTagOptions: false,
-					enableHighlight: true,
-					highlightLighten: 1.1,
-					tooltipSkipNull: true,
-					tooltipPrefix: '',
-					tooltipSuffix: '',
-					disableHiddenCheck: false,
-					numberFormatter: false,
-					numberDigitGroupCount: 3,
-					numberDigitGroupSep: ',',
-					numberDecimalMark: '.',
-					disableTooltips: false,
-					disableInteraction: false
-				},
-				// Defaults for line charts
-				line: {
-					spotColor: '#f80',
-					highlightSpotColor: '#5f5',
-					highlightLineColor: '#f22',
-					spotRadius: 1.5,
-					minSpotColor: '#f80',
-					maxSpotColor: '#f80',
-					lineWidth: 1,
-					normalRangeMin: undefined,
-					normalRangeMax: undefined,
-					normalRangeColor: '#ccc',
-					drawNormalOnTop: false,
-					chartRangeMin: undefined,
-					chartRangeMax: undefined,
-					chartRangeMinX: undefined,
-					chartRangeMaxX: undefined,
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{y}}{{suffix}}')
-				},
-				// Defaults for bar charts
-				bar: {
-					barColor: '#3366cc',
-					negBarColor: '#f44',
-					stackedBarColor: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
-					zeroColor: undefined,
-					nullColor: undefined,
-					zeroAxis: true,
-					barWidth: 4,
-					barSpacing: 1,
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					chartRangeClip: false,
-					colorMap: undefined,
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{prefix}}{{value}}{{suffix}}')
-				},
-				// Defaults for tristate charts
-				tristate: {
-					barWidth: 4,
-					barSpacing: 1,
-					posBarColor: '#6f6',
-					negBarColor: '#f44',
-					zeroBarColor: '#999',
-					colorMap: {},
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value:map}}'),
-					tooltipValueLookups: { map: { '-1': 'Loss', '0': 'Draw', '1': 'Win' } }
-				},
-				// Defaults for discrete charts
-				discrete: {
-					lineHeight: 'auto',
-					thresholdColor: undefined,
-					thresholdValue: 0,
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					chartRangeClip: false,
-					tooltipFormat: new SPFormat('{{prefix}}{{value}}{{suffix}}')
-				},
-				// Defaults for bullet charts
-				bullet: {
-					targetColor: '#f33',
-					targetWidth: 3, // width of the target bar in pixels
-					performanceColor: '#33f',
-					rangeColors: ['#d3dafe', '#a8b6ff', '#7f94ff'],
-					base: undefined, // set this to a number to change the base start number
-					tooltipFormat: new SPFormat('{{fieldkey:fields}} - {{value}}'),
-					tooltipValueLookups: { fields: { r: 'Range', p: 'Performance', t: 'Target' } }
-				},
-				// Defaults for pie charts
-				pie: {
-					offset: 0,
-					sliceColors: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00', '#dd4477', '#0099c6', '#990099'],
-					borderWidth: 0,
-					borderColor: '#000',
-					tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value}} ({{percent.1}}%)')
-				},
-				// Defaults for box plots
-				box: {
-					raw: false,
-					boxLineColor: '#000',
-					boxFillColor: '#cdf',
-					whiskerColor: '#000',
-					outlierLineColor: '#333',
-					outlierFillColor: '#fff',
-					medianColor: '#f00',
-					showOutliers: true,
-					outlierIQR: 1.5,
-					spotRadius: 1.5,
-					target: undefined,
-					targetColor: '#4a2',
-					chartRangeMax: undefined,
-					chartRangeMin: undefined,
-					tooltipFormat: new SPFormat('{{field:fields}}: {{value}}'),
-					tooltipFormatFieldlistKey: 'field',
-					tooltipValueLookups: { fields: { lq: 'Lower Quartile', med: 'Median',
-							uq: 'Upper Quartile', lo: 'Left Outlier', ro: 'Right Outlier',
-							lw: 'Left Whisker', rw: 'Right Whisker' } }
-				}
-			};
-		};
-
-		// You can have tooltips use a css class other than jqstooltip by specifying tooltipClassname
-		// tooltip modified by westilian:jaman
-		defaultStyles = '.jqstooltip { ' + 'position: absolute;' + 'left: 30px;' + 'top: 0px;' + 'display: block;' + 'visibility: hidden;' + 'background: rgb(0, 0, 0) transparent;' + 'background-color: rgba(0,0,0,0.6);' + 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);' + '-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";' + 'color: white;' + 'font: 10px arial, san serif;' + 'text-align: left;' + 'white-space: nowrap;' + 'border: 0px solid white;' + 'border-radius: 3px;' + '-webkit-border-radius: 3px;' + 'z-index: 10000;' + '}' + '.jqsfield { ' + 'color: white;' + 'padding: 5px 5px 5px 5px;' + 'font: 10px arial, san serif;' + 'text-align: left;' + '}';
-
-		/**
-   * Utilities
-   */
-
-		createClass = function createClass() /* [baseclass, [mixin, ...]], definition */{
-			var Class, args;
-			Class = function Class() {
-				this.init.apply(this, arguments);
-			};
-			if (arguments.length > 1) {
-				if (arguments[0]) {
-					Class.prototype = $.extend(new arguments[0](), arguments[arguments.length - 1]);
-					Class._super = arguments[0].prototype;
-				} else {
-					Class.prototype = arguments[arguments.length - 1];
-				}
-				if (arguments.length > 2) {
-					args = Array.prototype.slice.call(arguments, 1, -1);
-					args.unshift(Class.prototype);
-					$.extend.apply($, args);
-				}
-			} else {
-				Class.prototype = arguments[0];
-			}
-			Class.prototype.cls = Class;
-			return Class;
-		};
-
-		/**
-   * Wraps a format string for tooltips
-   * {{x}}
-   * {{x.2}
-     * {{x:months}}
-     */
-		$.SPFormatClass = SPFormat = createClass({
-			fre: /\{\{([\w.]+?)(:(.+?))?\}\}/g,
-			precre: /(\w+)\.(\d+)/,
-
-			init: function init(format, fclass) {
-				this.format = format;
-				this.fclass = fclass;
-			},
-
-			render: function render(fieldset, lookups, options) {
-				var self = this,
-				    fields = fieldset,
-				    match,
-				    token,
-				    lookupkey,
-				    fieldvalue,
-				    prec;
-				return this.format.replace(this.fre, function () {
-					var lookup;
-					token = arguments[1];
-					lookupkey = arguments[3];
-					match = self.precre.exec(token);
-					if (match) {
-						prec = match[2];
-						token = match[1];
-					} else {
-						prec = false;
-					}
-					fieldvalue = fields[token];
-					if (fieldvalue === undefined) {
-						return '';
-					}
-					if (lookupkey && lookups && lookups[lookupkey]) {
-						lookup = lookups[lookupkey];
-						if (lookup.get) {
-							// RangeMap
-							return lookups[lookupkey].get(fieldvalue) || fieldvalue;
-						} else {
-							return lookups[lookupkey][fieldvalue] || fieldvalue;
-						}
-					}
-					if (isNumber(fieldvalue)) {
-						if (options.get('numberFormatter')) {
-							fieldvalue = options.get('numberFormatter')(fieldvalue);
-						} else {
-							fieldvalue = formatNumber(fieldvalue, prec, options.get('numberDigitGroupCount'), options.get('numberDigitGroupSep'), options.get('numberDecimalMark'));
-						}
-					}
-					return fieldvalue;
-				});
-			}
-		});
-
-		// convience method to avoid needing the new operator
-		$.spformat = function (format, fclass) {
-			return new SPFormat(format, fclass);
-		};
-
-		clipval = function clipval(val, min, max) {
-			if (val < min) {
-				return min;
-			}
-			if (val > max) {
-				return max;
-			}
-			return val;
-		};
-
-		quartile = function quartile(values, q) {
-			var vl;
-			if (q === 2) {
-				vl = Math.floor(values.length / 2);
-				return values.length % 2 ? values[vl] : (values[vl - 1] + values[vl]) / 2;
-			} else {
-				if (values.length % 2) {
-					// odd
-					vl = (values.length * q + q) / 4;
-					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
-				} else {
-					//even
-					vl = (values.length * q + 2) / 4;
-					return vl % 1 ? (values[Math.floor(vl)] + values[Math.floor(vl) - 1]) / 2 : values[vl - 1];
-				}
-			}
-		};
-
-		normalizeValue = function normalizeValue(val) {
-			var nf;
-			switch (val) {
-				case 'undefined':
-					val = undefined;
-					break;
-				case 'null':
-					val = null;
-					break;
-				case 'true':
-					val = true;
-					break;
-				case 'false':
-					val = false;
-					break;
-				default:
-					nf = parseFloat(val);
-					if (val == nf) {
-						val = nf;
-					}
-			}
-			return val;
-		};
-
-		normalizeValues = function normalizeValues(vals) {
-			var i,
-			    result = [];
-			for (i = vals.length; i--;) {
-				result[i] = normalizeValue(vals[i]);
-			}
-			return result;
-		};
-
-		remove = function remove(vals, filter) {
-			var i,
-			    vl,
-			    result = [];
-			for (i = 0, vl = vals.length; i < vl; i++) {
-				if (vals[i] !== filter) {
-					result.push(vals[i]);
-				}
-			}
-			return result;
-		};
-
-		isNumber = function isNumber(num) {
-			return !isNaN(parseFloat(num)) && isFinite(num);
-		};
-
-		formatNumber = function formatNumber(num, prec, groupsize, groupsep, decsep) {
-			var p, i;
-			num = (prec === false ? parseFloat(num).toString() : num.toFixed(prec)).split('');
-			p = (p = $.inArray('.', num)) < 0 ? num.length : p;
-			if (p < num.length) {
-				num[p] = decsep;
-			}
-			for (i = p - groupsize; i > 0; i -= groupsize) {
-				num.splice(i, 0, groupsep);
-			}
-			return num.join('');
-		};
-
-		// determine if all values of an array match a value
-		// returns true if the array is empty
-		all = function all(val, arr, ignoreNull) {
-			var i;
-			for (i = arr.length; i--;) {
-				if (ignoreNull && arr[i] === null) continue;
-				if (arr[i] !== val) {
-					return false;
-				}
-			}
-			return true;
-		};
-
-		// sums the numeric values in an array, ignoring other values
-		sum = function sum(vals) {
-			var total = 0,
-			    i;
-			for (i = vals.length; i--;) {
-				total += typeof vals[i] === 'number' ? vals[i] : 0;
-			}
-			return total;
-		};
-
-		ensureArray = function ensureArray(val) {
-			return $.isArray(val) ? val : [val];
-		};
-
-		// http://paulirish.com/2008/bookmarklet-inject-new-css-rules/
-		addCSS = function addCSS(css) {
-			var tag;
-			//if ('\v' == 'v') /* ie only */ {
-			if (document.createStyleSheet) {
-				document.createStyleSheet().cssText = css;
-			} else {
-				tag = document.createElement('style');
-				tag.type = 'text/css';
-				document.getElementsByTagName('head')[0].appendChild(tag);
-				tag[typeof document.body.style.WebkitAppearance == 'string' ? /* webkit only */'innerText' : 'innerHTML'] = css;
-			}
-		};
-
-		// Provide a cross-browser interface to a few simple drawing primitives
-		$.fn.simpledraw = function (width, height, useExisting, interact) {
-			var target, mhandler;
-			if (useExisting && (target = this.data('_jqs_vcanvas'))) {
-				return target;
-			}
-
-			if ($.fn.sparkline.canvas === false) {
-				// We've already determined that neither Canvas nor VML are available
-				return false;
-			} else if ($.fn.sparkline.canvas === undefined) {
-				// No function defined yet -- need to see if we support Canvas or VML
-				var el = document.createElement('canvas');
-				if (!!(el.getContext && el.getContext('2d'))) {
-					// Canvas is available
-					$.fn.sparkline.canvas = function (width, height, target, interact) {
-						return new VCanvas_canvas(width, height, target, interact);
-					};
-				} else if (document.namespaces && !document.namespaces.v) {
-					// VML is available
-					document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', '#default#VML');
-					$.fn.sparkline.canvas = function (width, height, target, interact) {
-						return new VCanvas_vml(width, height, target);
-					};
-				} else {
-					// Neither Canvas nor VML are available
-					$.fn.sparkline.canvas = false;
-					return false;
-				}
-			}
-
-			if (width === undefined) {
-				width = $(this).innerWidth();
-			}
-			if (height === undefined) {
-				height = $(this).innerHeight();
-			}
-
-			target = $.fn.sparkline.canvas(width, height, this, interact);
-
-			mhandler = $(this).data('_jqs_mhandler');
-			if (mhandler) {
-				mhandler.registerCanvas(target);
-			}
-			return target;
-		};
-
-		$.fn.cleardraw = function () {
-			var target = this.data('_jqs_vcanvas');
-			if (target) {
-				target.reset();
-			}
-		};
-
-		$.RangeMapClass = RangeMap = createClass({
-			init: function init(map) {
-				var key,
-				    range,
-				    rangelist = [];
-				for (key in map) {
-					if (map.hasOwnProperty(key) && typeof key === 'string' && key.indexOf(':') > -1) {
-						range = key.split(':');
-						range[0] = range[0].length === 0 ? -Infinity : parseFloat(range[0]);
-						range[1] = range[1].length === 0 ? Infinity : parseFloat(range[1]);
-						range[2] = map[key];
-						rangelist.push(range);
-					}
-				}
-				this.map = map;
-				this.rangelist = rangelist || false;
-			},
-
-			get: function get(value) {
-				var rangelist = this.rangelist,
-				    i,
-				    range,
-				    result;
-				if ((result = this.map[value]) !== undefined) {
-					return result;
-				}
-				if (rangelist) {
-					for (i = rangelist.length; i--;) {
-						range = rangelist[i];
-						if (range[0] <= value && range[1] >= value) {
-							return range[2];
-						}
-					}
-				}
-				return undefined;
-			}
-		});
-
-		// Convenience function
-		$.range_map = function (map) {
-			return new RangeMap(map);
-		};
-
-		MouseHandler = createClass({
-			init: function init(el, options) {
-				var $el = $(el);
-				this.$el = $el;
-				this.options = options;
-				this.currentPageX = 0;
-				this.currentPageY = 0;
-				this.el = el;
-				this.splist = [];
-				this.tooltip = null;
-				this.over = false;
-				this.displayTooltips = !options.get('disableTooltips');
-				this.highlightEnabled = !options.get('disableHighlight');
-			},
-
-			registerSparkline: function registerSparkline(sp) {
-				this.splist.push(sp);
-				if (this.over) {
-					this.updateDisplay();
-				}
-			},
-
-			registerCanvas: function registerCanvas(canvas) {
-				var $canvas = $(canvas.canvas);
-				this.canvas = canvas;
-				this.$canvas = $canvas;
-				$canvas.mouseenter($.proxy(this.mouseenter, this));
-				$canvas.mouseleave($.proxy(this.mouseleave, this));
-				$canvas.click($.proxy(this.mouseclick, this));
-			},
-
-			reset: function reset(removeTooltip) {
-				this.splist = [];
-				if (this.tooltip && removeTooltip) {
-					this.tooltip.remove();
-					this.tooltip = undefined;
-				}
-			},
-
-			mouseclick: function mouseclick(e) {
-				var clickEvent = $.Event('sparklineClick');
-				clickEvent.originalEvent = e;
-				clickEvent.sparklines = this.splist;
-				this.$el.trigger(clickEvent);
-			},
-
-			mouseenter: function mouseenter(e) {
-				$(document.body).unbind('mousemove.jqs');
-				$(document.body).bind('mousemove.jqs', $.proxy(this.mousemove, this));
-				this.over = true;
-				this.currentPageX = e.pageX;
-				this.currentPageY = e.pageY;
-				this.currentEl = e.target;
-				if (!this.tooltip && this.displayTooltips) {
-					this.tooltip = new Tooltip(this.options);
-					this.tooltip.updatePosition(e.pageX, e.pageY);
-				}
-				this.updateDisplay();
-			},
-
-			mouseleave: function mouseleave() {
-				$(document.body).unbind('mousemove.jqs');
-				var splist = this.splist,
-				    spcount = splist.length,
-				    needsRefresh = false,
-				    sp,
-				    i;
-				this.over = false;
-				this.currentEl = null;
-
-				if (this.tooltip) {
-					this.tooltip.remove();
-					this.tooltip = null;
-				}
-
-				for (i = 0; i < spcount; i++) {
-					sp = splist[i];
-					if (sp.clearRegionHighlight()) {
-						needsRefresh = true;
-					}
-				}
-
-				if (needsRefresh) {
-					this.canvas.render();
-				}
-			},
-
-			mousemove: function mousemove(e) {
-				this.currentPageX = e.pageX;
-				this.currentPageY = e.pageY;
-				this.currentEl = e.target;
-				if (this.tooltip) {
-					this.tooltip.updatePosition(e.pageX, e.pageY);
-				}
-				this.updateDisplay();
-			},
-
-			updateDisplay: function updateDisplay() {
-				var splist = this.splist,
-				    spcount = splist.length,
-				    needsRefresh = false,
-				    offset = this.$canvas.offset(),
-				    localX = this.currentPageX - offset.left,
-				    localY = this.currentPageY - offset.top,
-				    tooltiphtml,
-				    sp,
-				    i,
-				    result,
-				    changeEvent;
-				if (!this.over) {
-					return;
-				}
-				for (i = 0; i < spcount; i++) {
-					sp = splist[i];
-					result = sp.setRegionHighlight(this.currentEl, localX, localY);
-					if (result) {
-						needsRefresh = true;
-					}
-				}
-				if (needsRefresh) {
-					changeEvent = $.Event('sparklineRegionChange');
-					changeEvent.sparklines = this.splist;
-					this.$el.trigger(changeEvent);
-					if (this.tooltip) {
-						tooltiphtml = '';
-						for (i = 0; i < spcount; i++) {
-							sp = splist[i];
-							tooltiphtml += sp.getCurrentRegionTooltip();
-						}
-						this.tooltip.setContent(tooltiphtml);
-					}
-					if (!this.disableHighlight) {
-						this.canvas.render();
-					}
-				}
-				if (result === null) {
-					this.mouseleave();
-				}
-			}
-		});
-
-		Tooltip = createClass({
-			sizeStyle: 'position: static !important;' + 'display: block !important;' + 'visibility: hidden !important;' + 'float: left !important;',
-
-			init: function init(options) {
-				var tooltipClassname = options.get('tooltipClassname', 'jqstooltip'),
-				    sizetipStyle = this.sizeStyle,
-				    offset;
-				this.container = options.get('tooltipContainer') || document.body;
-				this.tooltipOffsetX = options.get('tooltipOffsetX', 10);
-				this.tooltipOffsetY = options.get('tooltipOffsetY', 12);
-				// remove any previous lingering tooltip
-				$('#jqssizetip').remove();
-				$('#jqstooltip').remove();
-				this.sizetip = $('<div/>', {
-					id: 'jqssizetip',
-					style: sizetipStyle,
-					'class': tooltipClassname
-				});
-				this.tooltip = $('<div/>', {
-					id: 'jqstooltip',
-					'class': tooltipClassname
-				}).appendTo(this.container);
-				// account for the container's location
-				offset = this.tooltip.offset();
-				this.offsetLeft = offset.left;
-				this.offsetTop = offset.top;
-				this.hidden = true;
-				$(window).unbind('resize.jqs scroll.jqs');
-				$(window).bind('resize.jqs scroll.jqs', $.proxy(this.updateWindowDims, this));
-				this.updateWindowDims();
-			},
-
-			updateWindowDims: function updateWindowDims() {
-				this.scrollTop = $(window).scrollTop();
-				this.scrollLeft = $(window).scrollLeft();
-				this.scrollRight = this.scrollLeft + $(window).width();
-				this.updatePosition();
-			},
-
-			getSize: function getSize(content) {
-				this.sizetip.html(content).appendTo(this.container);
-				this.width = this.sizetip.width() + 1;
-				this.height = this.sizetip.height();
-				this.sizetip.remove();
-			},
-
-			setContent: function setContent(content) {
-				if (!content) {
-					this.tooltip.css('visibility', 'hidden');
-					this.hidden = true;
-					return;
-				}
-				this.getSize(content);
-				this.tooltip.html(content).css({
-					'width': this.width,
-					'height': this.height,
-					'visibility': 'visible'
-				});
-				if (this.hidden) {
-					this.hidden = false;
-					this.updatePosition();
-				}
-			},
-
-			updatePosition: function updatePosition(x, y) {
-				if (x === undefined) {
-					if (this.mousex === undefined) {
-						return;
-					}
-					x = this.mousex - this.offsetLeft;
-					y = this.mousey - this.offsetTop;
-				} else {
-					this.mousex = x = x - this.offsetLeft;
-					this.mousey = y = y - this.offsetTop;
-				}
-				if (!this.height || !this.width || this.hidden) {
-					return;
-				}
-
-				y -= this.height + this.tooltipOffsetY;
-				x += this.tooltipOffsetX;
-
-				if (y < this.scrollTop) {
-					y = this.scrollTop;
-				}
-				if (x < this.scrollLeft) {
-					x = this.scrollLeft;
-				} else if (x + this.width > this.scrollRight) {
-					x = this.scrollRight - this.width;
-				}
-
-				this.tooltip.css({
-					'left': x,
-					'top': y
-				});
-			},
-
-			remove: function remove() {
-				this.tooltip.remove();
-				this.sizetip.remove();
-				this.sizetip = this.tooltip = undefined;
-				$(window).unbind('resize.jqs scroll.jqs');
-			}
-		});
-
-		initStyles = function initStyles() {
-			addCSS(defaultStyles);
-		};
-
-		$(initStyles);
-
-		pending = [];
-		$.fn.sparkline = function (userValues, userOptions) {
-			return this.each(function () {
-				var options = new $.fn.sparkline.options(this, userOptions),
-				    $this = $(this),
-				    render,
-				    i;
-				render = function render() {
-					var values, width, height, tmp, mhandler, sp, vals;
-					if (userValues === 'html' || userValues === undefined) {
-						vals = this.getAttribute(options.get('tagValuesAttribute'));
-						if (vals === undefined || vals === null) {
-							vals = $this.html();
-						}
-						values = vals.replace(/(^\s*<!--)|(-->\s*$)|\s+/g, '').split(',');
-					} else {
-						values = userValues;
-					}
-
-					width = options.get('width') === 'auto' ? values.length * options.get('defaultPixelsPerValue') : options.get('width');
-					if (options.get('height') === 'auto') {
-						if (!options.get('composite') || !$.data(this, '_jqs_vcanvas')) {
-							// must be a better way to get the line height
-							tmp = document.createElement('span');
-							tmp.innerHTML = 'a';
-							$this.html(tmp);
-							height = $(tmp).innerHeight() || $(tmp).height();
-							$(tmp).remove();
-							tmp = null;
-						}
-					} else {
-						height = options.get('height');
-					}
-
-					if (!options.get('disableInteraction')) {
-						mhandler = $.data(this, '_jqs_mhandler');
-						if (!mhandler) {
-							mhandler = new MouseHandler(this, options);
-							$.data(this, '_jqs_mhandler', mhandler);
-						} else if (!options.get('composite')) {
-							mhandler.reset();
-						}
-					} else {
-						mhandler = false;
-					}
-
-					if (options.get('composite') && !$.data(this, '_jqs_vcanvas')) {
-						if (!$.data(this, '_jqs_errnotify')) {
-							alert('Attempted to attach a composite sparkline to an element with no existing sparkline');
-							$.data(this, '_jqs_errnotify', true);
-						}
-						return;
-					}
-
-					sp = new $.fn.sparkline[options.get('type')](this, values, options, width, height);
-
-					sp.render();
-
-					if (mhandler) {
-						mhandler.registerSparkline(sp);
-					}
-				};
-				if ($(this).html() && !options.get('disableHiddenCheck') && $(this).is(':hidden') || !$(this).parents('body').length) {
-					if (!options.get('composite') && $.data(this, '_jqs_pending')) {
-						// remove any existing references to the element
-						for (i = pending.length; i; i--) {
-							if (pending[i - 1][0] == this) {
-								pending.splice(i - 1, 1);
-							}
-						}
-					}
-					pending.push([this, render]);
-					$.data(this, '_jqs_pending', true);
-				} else {
-					render.call(this);
-				}
-			});
-		};
-
-		$.fn.sparkline.defaults = getDefaults();
-
-		$.sparkline_display_visible = function () {
-			var el, i, pl;
-			var done = [];
-			for (i = 0, pl = pending.length; i < pl; i++) {
-				el = pending[i][0];
-				if ($(el).is(':visible') && !$(el).parents().is(':hidden')) {
-					pending[i][1].call(el);
-					$.data(pending[i][0], '_jqs_pending', false);
-					done.push(i);
-				} else if (!$(el).closest('html').length && !$.data(el, '_jqs_pending')) {
-					// element has been inserted and removed from the DOM
-					// If it was not yet inserted into the dom then the .data request
-					// will return true.
-					// removing from the dom causes the data to be removed.
-					$.data(pending[i][0], '_jqs_pending', false);
-					done.push(i);
-				}
-			}
-			for (i = done.length; i; i--) {
-				pending.splice(done[i - 1], 1);
-			}
-		};
-
-		/**
-   * User option handler
-   */
-		$.fn.sparkline.options = createClass({
-			init: function init(tag, userOptions) {
-				var extendedOptions, defaults, base, tagOptionType;
-				this.userOptions = userOptions = userOptions || {};
-				this.tag = tag;
-				this.tagValCache = {};
-				defaults = $.fn.sparkline.defaults;
-				base = defaults.common;
-				this.tagOptionsPrefix = userOptions.enableTagOptions && (userOptions.tagOptionsPrefix || base.tagOptionsPrefix);
-
-				tagOptionType = this.getTagSetting('type');
-				if (tagOptionType === UNSET_OPTION) {
-					extendedOptions = defaults[userOptions.type || base.type];
-				} else {
-					extendedOptions = defaults[tagOptionType];
-				}
-				this.mergedOptions = $.extend({}, base, extendedOptions, userOptions);
-			},
-
-			getTagSetting: function getTagSetting(key) {
-				var prefix = this.tagOptionsPrefix,
-				    val,
-				    i,
-				    pairs,
-				    keyval;
-				if (prefix === false || prefix === undefined) {
-					return UNSET_OPTION;
-				}
-				if (this.tagValCache.hasOwnProperty(key)) {
-					val = this.tagValCache.key;
-				} else {
-					val = this.tag.getAttribute(prefix + key);
-					if (val === undefined || val === null) {
-						val = UNSET_OPTION;
-					} else if (val.substr(0, 1) === '[') {
-						val = val.substr(1, val.length - 2).split(',');
-						for (i = val.length; i--;) {
-							val[i] = normalizeValue(val[i].replace(/(^\s*)|(\s*$)/g, ''));
-						}
-					} else if (val.substr(0, 1) === '{') {
-						pairs = val.substr(1, val.length - 2).split(',');
-						val = {};
-						for (i = pairs.length; i--;) {
-							keyval = pairs[i].split(':', 2);
-							val[keyval[0].replace(/(^\s*)|(\s*$)/g, '')] = normalizeValue(keyval[1].replace(/(^\s*)|(\s*$)/g, ''));
-						}
-					} else {
-						val = normalizeValue(val);
-					}
-					this.tagValCache.key = val;
-				}
-				return val;
-			},
-
-			get: function get(key, defaultval) {
-				var tagOption = this.getTagSetting(key),
-				    result;
-				if (tagOption !== UNSET_OPTION) {
-					return tagOption;
-				}
-				return (result = this.mergedOptions[key]) === undefined ? defaultval : result;
-			}
-		});
-
-		$.fn.sparkline._base = createClass({
-			disabled: false,
-
-			init: function init(el, values, options, width, height) {
-				this.el = el;
-				this.$el = $(el);
-				this.values = values;
-				this.options = options;
-				this.width = width;
-				this.height = height;
-				this.currentRegion = undefined;
-			},
-
-			/**
-    * Setup the canvas
-    */
-			initTarget: function initTarget() {
-				var interactive = !this.options.get('disableInteraction');
-				if (!(this.target = this.$el.simpledraw(this.width, this.height, this.options.get('composite'), interactive))) {
-					this.disabled = true;
-				} else {
-					this.canvasWidth = this.target.pixelWidth;
-					this.canvasHeight = this.target.pixelHeight;
-				}
-			},
-
-			/**
-    * Actually render the chart to the canvas
-    */
-			render: function render() {
-				if (this.disabled) {
-					this.el.innerHTML = '';
-					return false;
-				}
-				return true;
-			},
-
-			/**
-    * Return a region id for a given x/y co-ordinate
-    */
-			getRegion: function getRegion(x, y) {},
-
-			/**
-    * Highlight an item based on the moused-over x,y co-ordinate
-    */
-			setRegionHighlight: function setRegionHighlight(el, x, y) {
-				var currentRegion = this.currentRegion,
-				    highlightEnabled = !this.options.get('disableHighlight'),
-				    newRegion;
-				if (x > this.canvasWidth || y > this.canvasHeight || x < 0 || y < 0) {
-					return null;
-				}
-				newRegion = this.getRegion(el, x, y);
-				if (currentRegion !== newRegion) {
-					if (currentRegion !== undefined && highlightEnabled) {
-						this.removeHighlight();
-					}
-					this.currentRegion = newRegion;
-					if (newRegion !== undefined && highlightEnabled) {
-						this.renderHighlight();
-					}
-					return true;
-				}
-				return false;
-			},
-
-			/**
-    * Reset any currently highlighted item
-    */
-			clearRegionHighlight: function clearRegionHighlight() {
-				if (this.currentRegion !== undefined) {
-					this.removeHighlight();
-					this.currentRegion = undefined;
-					return true;
-				}
-				return false;
-			},
-
-			renderHighlight: function renderHighlight() {
-				this.changeHighlight(true);
-			},
-
-			removeHighlight: function removeHighlight() {
-				this.changeHighlight(false);
-			},
-
-			changeHighlight: function changeHighlight(highlight) {},
-
-			/**
-    * Fetch the HTML to display as a tooltip
-    */
-			getCurrentRegionTooltip: function getCurrentRegionTooltip() {
-				var options = this.options,
-				    header = '',
-				    entries = [],
-				    fields,
-				    formats,
-				    formatlen,
-				    fclass,
-				    text,
-				    i,
-				    showFields,
-				    showFieldsKey,
-				    newFields,
-				    fv,
-				    formatter,
-				    format,
-				    fieldlen,
-				    j;
-				if (this.currentRegion === undefined) {
-					return '';
-				}
-				fields = this.getCurrentRegionFields();
-				formatter = options.get('tooltipFormatter');
-				if (formatter) {
-					return formatter(this, options, fields);
-				}
-				if (options.get('tooltipChartTitle')) {
-					header += '<div class="jqs jqstitle">' + options.get('tooltipChartTitle') + '</div>\n';
-				}
-				formats = this.options.get('tooltipFormat');
-				if (!formats) {
-					return '';
-				}
-				if (!$.isArray(formats)) {
-					formats = [formats];
-				}
-				if (!$.isArray(fields)) {
-					fields = [fields];
-				}
-				showFields = this.options.get('tooltipFormatFieldlist');
-				showFieldsKey = this.options.get('tooltipFormatFieldlistKey');
-				if (showFields && showFieldsKey) {
-					// user-selected ordering of fields
-					newFields = [];
-					for (i = fields.length; i--;) {
-						fv = fields[i][showFieldsKey];
-						if ((j = $.inArray(fv, showFields)) != -1) {
-							newFields[j] = fields[i];
-						}
-					}
-					fields = newFields;
-				}
-				formatlen = formats.length;
-				fieldlen = fields.length;
-				for (i = 0; i < formatlen; i++) {
-					format = formats[i];
-					if (typeof format === 'string') {
-						format = new SPFormat(format);
-					}
-					fclass = format.fclass || 'jqsfield';
-					for (j = 0; j < fieldlen; j++) {
-						if (!fields[j].isNull || !options.get('tooltipSkipNull')) {
-							$.extend(fields[j], {
-								prefix: options.get('tooltipPrefix'),
-								suffix: options.get('tooltipSuffix')
-							});
-							text = format.render(fields[j], options.get('tooltipValueLookups'), options);
-							entries.push('<div class="' + fclass + '">' + text + '</div>');
-						}
-					}
-				}
-				if (entries.length) {
-					return header + entries.join('\n');
-				}
-				return '';
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {},
-
-			calcHighlightColor: function calcHighlightColor(color, options) {
-				var highlightColor = options.get('highlightColor'),
-				    lighten = options.get('highlightLighten'),
-				    parse,
-				    mult,
-				    rgbnew,
-				    i;
-				if (highlightColor) {
-					return highlightColor;
-				}
-				if (lighten) {
-					// extract RGB values
-					parse = /^#([0-9a-f])([0-9a-f])([0-9a-f])$/i.exec(color) || /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(color);
-					if (parse) {
-						rgbnew = [];
-						mult = color.length === 4 ? 16 : 1;
-						for (i = 0; i < 3; i++) {
-							rgbnew[i] = clipval(Math.round(parseInt(parse[i + 1], 16) * mult * lighten), 0, 255);
-						}
-						return 'rgb(' + rgbnew.join(',') + ')';
-					}
-				}
-				return color;
-			}
-
-		});
-
-		barHighlightMixin = {
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    target = this.target,
-				    shapeids = this.regionShapes[currentRegion],
-				    newShapes;
-				// will be null if the region value was null
-				if (shapeids) {
-					newShapes = this.renderRegion(currentRegion, highlight);
-					if ($.isArray(newShapes) || $.isArray(shapeids)) {
-						target.replaceWithShapes(shapeids, newShapes);
-						this.regionShapes[currentRegion] = $.map(newShapes, function (newShape) {
-							return newShape.id;
-						});
-					} else {
-						target.replaceWithShape(shapeids, newShapes);
-						this.regionShapes[currentRegion] = newShapes.id;
-					}
-				}
-			},
-
-			render: function render() {
-				var values = this.values,
-				    target = this.target,
-				    regionShapes = this.regionShapes,
-				    shapes,
-				    ids,
-				    i,
-				    j;
-
-				if (!this.cls._super.render.call(this)) {
-					return;
-				}
-				for (i = values.length; i--;) {
-					shapes = this.renderRegion(i);
-					if (shapes) {
-						if ($.isArray(shapes)) {
-							ids = [];
-							for (j = shapes.length; j--;) {
-								shapes[j].append();
-								ids.push(shapes[j].id);
-							}
-							regionShapes[i] = ids;
-						} else {
-							shapes.append();
-							regionShapes[i] = shapes.id; // store just the shapeid
-						}
-					} else {
-						// null value
-						regionShapes[i] = null;
-					}
-				}
-				target.render();
-			}
-		};
-
-		/**
-   * Line charts
-   */
-		$.fn.sparkline.line = line = createClass($.fn.sparkline._base, {
-			type: 'line',
-
-			init: function init(el, values, options, width, height) {
-				line._super.init.call(this, el, values, options, width, height);
-				this.vertices = [];
-				this.regionMap = [];
-				this.xvalues = [];
-				this.yvalues = [];
-				this.yminmax = [];
-				this.hightlightSpotId = null;
-				this.lastShapeId = null;
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var i,
-				    regionMap = this.regionMap; // maps regions to value positions
-				for (i = regionMap.length; i--;) {
-					if (regionMap[i] !== null && x >= regionMap[i][0] && x <= regionMap[i][1]) {
-						return regionMap[i][2];
-					}
-				}
-				return undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.yvalues[currentRegion] === null,
-					x: this.xvalues[currentRegion],
-					y: this.yvalues[currentRegion],
-					color: this.options.get('lineColor'),
-					fillColor: this.options.get('fillColor'),
-					offset: currentRegion
-				};
-			},
-
-			renderHighlight: function renderHighlight() {
-				var currentRegion = this.currentRegion,
-				    target = this.target,
-				    vertex = this.vertices[currentRegion],
-				    options = this.options,
-				    spotRadius = options.get('spotRadius'),
-				    highlightSpotColor = options.get('highlightSpotColor'),
-				    highlightLineColor = options.get('highlightLineColor'),
-				    highlightSpot,
-				    highlightLine;
-
-				if (!vertex) {
-					return;
-				}
-				if (spotRadius && highlightSpotColor) {
-					highlightSpot = target.drawCircle(vertex[0], vertex[1], spotRadius, undefined, highlightSpotColor);
-					this.highlightSpotId = highlightSpot.id;
-					target.insertAfterShape(this.lastShapeId, highlightSpot);
-				}
-				if (highlightLineColor) {
-					highlightLine = target.drawLine(vertex[0], this.canvasTop, vertex[0], this.canvasTop + this.canvasHeight, highlightLineColor);
-					this.highlightLineId = highlightLine.id;
-					target.insertAfterShape(this.lastShapeId, highlightLine);
-				}
-			},
-
-			removeHighlight: function removeHighlight() {
-				var target = this.target;
-				if (this.highlightSpotId) {
-					target.removeShapeId(this.highlightSpotId);
-					this.highlightSpotId = null;
-				}
-				if (this.highlightLineId) {
-					target.removeShapeId(this.highlightLineId);
-					this.highlightLineId = null;
-				}
-			},
-
-			scanValues: function scanValues() {
-				var values = this.values,
-				    valcount = values.length,
-				    xvalues = this.xvalues,
-				    yvalues = this.yvalues,
-				    yminmax = this.yminmax,
-				    i,
-				    val,
-				    isStr,
-				    isArray,
-				    sp;
-				for (i = 0; i < valcount; i++) {
-					val = values[i];
-					isStr = typeof values[i] === 'string';
-					isArray = _typeof(values[i]) === 'object' && values[i] instanceof Array;
-					sp = isStr && values[i].split(':');
-					if (isStr && sp.length === 2) {
-						// x:y
-						xvalues.push(Number(sp[0]));
-						yvalues.push(Number(sp[1]));
-						yminmax.push(Number(sp[1]));
-					} else if (isArray) {
-						xvalues.push(val[0]);
-						yvalues.push(val[1]);
-						yminmax.push(val[1]);
-					} else {
-						xvalues.push(i);
-						if (values[i] === null || values[i] === 'null') {
-							yvalues.push(null);
-						} else {
-							yvalues.push(Number(val));
-							yminmax.push(Number(val));
-						}
-					}
-				}
-				if (this.options.get('xvalues')) {
-					xvalues = this.options.get('xvalues');
-				}
-
-				this.maxy = this.maxyorg = Math.max.apply(Math, yminmax);
-				this.miny = this.minyorg = Math.min.apply(Math, yminmax);
-
-				this.maxx = Math.max.apply(Math, xvalues);
-				this.minx = Math.min.apply(Math, xvalues);
-
-				this.xvalues = xvalues;
-				this.yvalues = yvalues;
-				this.yminmax = yminmax;
-			},
-
-			processRangeOptions: function processRangeOptions() {
-				var options = this.options,
-				    normalRangeMin = options.get('normalRangeMin'),
-				    normalRangeMax = options.get('normalRangeMax');
-
-				if (normalRangeMin !== undefined) {
-					if (normalRangeMin < this.miny) {
-						this.miny = normalRangeMin;
-					}
-					if (normalRangeMax > this.maxy) {
-						this.maxy = normalRangeMax;
-					}
-				}
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.miny)) {
-					this.miny = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.maxy)) {
-					this.maxy = options.get('chartRangeMax');
-				}
-				if (options.get('chartRangeMinX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMinX') < this.minx)) {
-					this.minx = options.get('chartRangeMinX');
-				}
-				if (options.get('chartRangeMaxX') !== undefined && (options.get('chartRangeClipX') || options.get('chartRangeMaxX') > this.maxx)) {
-					this.maxx = options.get('chartRangeMaxX');
-				}
-			},
-
-			drawNormalRange: function drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey) {
-				var normalRangeMin = this.options.get('normalRangeMin'),
-				    normalRangeMax = this.options.get('normalRangeMax'),
-				    ytop = canvasTop + Math.round(canvasHeight - canvasHeight * ((normalRangeMax - this.miny) / rangey)),
-				    height = Math.round(canvasHeight * (normalRangeMax - normalRangeMin) / rangey);
-				this.target.drawRect(canvasLeft, ytop, canvasWidth, height, undefined, this.options.get('normalRangeColor')).append();
-			},
-
-			render: function render() {
-				var options = this.options,
-				    target = this.target,
-				    canvasWidth = this.canvasWidth,
-				    canvasHeight = this.canvasHeight,
-				    vertices = this.vertices,
-				    spotRadius = options.get('spotRadius'),
-				    regionMap = this.regionMap,
-				    rangex,
-				    rangey,
-				    yvallast,
-				    canvasTop,
-				    canvasLeft,
-				    vertex,
-				    path,
-				    paths,
-				    x,
-				    y,
-				    xnext,
-				    xpos,
-				    xposnext,
-				    last,
-				    next,
-				    yvalcount,
-				    lineShapes,
-				    fillShapes,
-				    plen,
-				    valueSpots,
-				    hlSpotsEnabled,
-				    color,
-				    xvalues,
-				    yvalues,
-				    i;
-
-				if (!line._super.render.call(this)) {
-					return;
-				}
-
-				this.scanValues();
-				this.processRangeOptions();
-
-				xvalues = this.xvalues;
-				yvalues = this.yvalues;
-
-				if (!this.yminmax.length || this.yvalues.length < 2) {
-					// empty or all null valuess
-					return;
-				}
-
-				canvasTop = canvasLeft = 0;
-
-				rangex = this.maxx - this.minx === 0 ? 1 : this.maxx - this.minx;
-				rangey = this.maxy - this.miny === 0 ? 1 : this.maxy - this.miny;
-				yvallast = this.yvalues.length - 1;
-
-				if (spotRadius && (canvasWidth < spotRadius * 4 || canvasHeight < spotRadius * 4)) {
-					spotRadius = 0;
-				}
-				if (spotRadius) {
-					// adjust the canvas size as required so that spots will fit
-					hlSpotsEnabled = options.get('highlightSpotColor') && !options.get('disableInteraction');
-					if (hlSpotsEnabled || options.get('minSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.miny) {
-						canvasHeight -= Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || options.get('maxSpotColor') || options.get('spotColor') && yvalues[yvallast] === this.maxy) {
-						canvasHeight -= Math.ceil(spotRadius);
-						canvasTop += Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || (options.get('minSpotColor') || options.get('maxSpotColor')) && (yvalues[0] === this.miny || yvalues[0] === this.maxy)) {
-						canvasLeft += Math.ceil(spotRadius);
-						canvasWidth -= Math.ceil(spotRadius);
-					}
-					if (hlSpotsEnabled || options.get('spotColor') || options.get('minSpotColor') || options.get('maxSpotColor') && (yvalues[yvallast] === this.miny || yvalues[yvallast] === this.maxy)) {
-						canvasWidth -= Math.ceil(spotRadius);
-					}
-				}
-
-				canvasHeight--;
-
-				if (options.get('normalRangeMin') !== undefined && !options.get('drawNormalOnTop')) {
-					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
-				}
-
-				path = [];
-				paths = [path];
-				last = next = null;
-				yvalcount = yvalues.length;
-				for (i = 0; i < yvalcount; i++) {
-					x = xvalues[i];
-					xnext = xvalues[i + 1];
-					y = yvalues[i];
-					xpos = canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex));
-					xposnext = i < yvalcount - 1 ? canvasLeft + Math.round((xnext - this.minx) * (canvasWidth / rangex)) : canvasWidth;
-					next = xpos + (xposnext - xpos) / 2;
-					regionMap[i] = [last || 0, next, i];
-					last = next;
-					if (y === null) {
-						if (i) {
-							if (yvalues[i - 1] !== null) {
-								path = [];
-								paths.push(path);
-							}
-							vertices.push(null);
-						}
-					} else {
-						if (y < this.miny) {
-							y = this.miny;
-						}
-						if (y > this.maxy) {
-							y = this.maxy;
-						}
-						if (!path.length) {
-							// previous value was null
-							path.push([xpos, canvasTop + canvasHeight]);
-						}
-						vertex = [xpos, canvasTop + Math.round(canvasHeight - canvasHeight * ((y - this.miny) / rangey))];
-						path.push(vertex);
-						vertices.push(vertex);
-					}
-				}
-
-				lineShapes = [];
-				fillShapes = [];
-				plen = paths.length;
-				for (i = 0; i < plen; i++) {
-					path = paths[i];
-					if (path.length) {
-						if (options.get('fillColor')) {
-							path.push([path[path.length - 1][0], canvasTop + canvasHeight]);
-							fillShapes.push(path.slice(0));
-							path.pop();
-						}
-						// if there's only a single point in this path, then we want to display it
-						// as a vertical line which means we keep path[0]  as is
-						if (path.length > 2) {
-							// else we want the first value
-							path[0] = [path[0][0], path[1][1]];
-						}
-						lineShapes.push(path);
-					}
-				}
-
-				// draw the fill first, then optionally the normal range, then the line on top of that
-				plen = fillShapes.length;
-				for (i = 0; i < plen; i++) {
-					target.drawShape(fillShapes[i], options.get('fillColor'), options.get('fillColor')).append();
-				}
-
-				if (options.get('normalRangeMin') !== undefined && options.get('drawNormalOnTop')) {
-					this.drawNormalRange(canvasLeft, canvasTop, canvasHeight, canvasWidth, rangey);
-				}
-
-				plen = lineShapes.length;
-				for (i = 0; i < plen; i++) {
-					target.drawShape(lineShapes[i], options.get('lineColor'), undefined, options.get('lineWidth')).append();
-				}
-
-				if (spotRadius && options.get('valueSpots')) {
-					valueSpots = options.get('valueSpots');
-					if (valueSpots.get === undefined) {
-						valueSpots = new RangeMap(valueSpots);
-					}
-					for (i = 0; i < yvalcount; i++) {
-						color = valueSpots.get(yvalues[i]);
-						if (color) {
-							target.drawCircle(canvasLeft + Math.round((xvalues[i] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[i] - this.miny) / rangey)), spotRadius, undefined, color).append();
-						}
-					}
-				}
-				if (spotRadius && options.get('spotColor') && yvalues[yvallast] !== null) {
-					target.drawCircle(canvasLeft + Math.round((xvalues[xvalues.length - 1] - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((yvalues[yvallast] - this.miny) / rangey)), spotRadius, undefined, options.get('spotColor')).append();
-				}
-				if (this.maxy !== this.minyorg) {
-					if (spotRadius && options.get('minSpotColor')) {
-						x = xvalues[$.inArray(this.minyorg, yvalues)];
-						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.minyorg - this.miny) / rangey)), spotRadius, undefined, options.get('minSpotColor')).append();
-					}
-					if (spotRadius && options.get('maxSpotColor')) {
-						x = xvalues[$.inArray(this.maxyorg, yvalues)];
-						target.drawCircle(canvasLeft + Math.round((x - this.minx) * (canvasWidth / rangex)), canvasTop + Math.round(canvasHeight - canvasHeight * ((this.maxyorg - this.miny) / rangey)), spotRadius, undefined, options.get('maxSpotColor')).append();
-					}
-				}
-
-				this.lastShapeId = target.getLastShapeId();
-				this.canvasTop = canvasTop;
-				target.render();
-			}
-		});
-
-		/**
-   * Bar charts
-   */
-		$.fn.sparkline.bar = bar = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'bar',
-
-			init: function init(el, values, options, width, height) {
-				var barWidth = parseInt(options.get('barWidth'), 10),
-				    barSpacing = parseInt(options.get('barSpacing'), 10),
-				    chartRangeMin = options.get('chartRangeMin'),
-				    chartRangeMax = options.get('chartRangeMax'),
-				    chartRangeClip = options.get('chartRangeClip'),
-				    stackMin = Infinity,
-				    stackMax = -Infinity,
-				    isStackString,
-				    groupMin,
-				    groupMax,
-				    stackRanges,
-				    numValues,
-				    i,
-				    vlen,
-				    range,
-				    zeroAxis,
-				    xaxisOffset,
-				    min,
-				    max,
-				    clipMin,
-				    clipMax,
-				    stacked,
-				    vlist,
-				    j,
-				    slen,
-				    svals,
-				    val,
-				    yoffset,
-				    yMaxCalc,
-				    canvasHeightEf;
-				bar._super.init.call(this, el, values, options, width, height);
-
-				// scan values to determine whether to stack bars
-				for (i = 0, vlen = values.length; i < vlen; i++) {
-					val = values[i];
-					isStackString = typeof val === 'string' && val.indexOf(':') > -1;
-					if (isStackString || $.isArray(val)) {
-						stacked = true;
-						if (isStackString) {
-							val = values[i] = normalizeValues(val.split(':'));
-						}
-						val = remove(val, null); // min/max will treat null as zero
-						groupMin = Math.min.apply(Math, val);
-						groupMax = Math.max.apply(Math, val);
-						if (groupMin < stackMin) {
-							stackMin = groupMin;
-						}
-						if (groupMax > stackMax) {
-							stackMax = groupMax;
-						}
-					}
-				}
-
-				this.stacked = stacked;
-				this.regionShapes = {};
-				this.barWidth = barWidth;
-				this.barSpacing = barSpacing;
-				this.totalBarWidth = barWidth + barSpacing;
-				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
-
-				this.initTarget();
-
-				if (chartRangeClip) {
-					clipMin = chartRangeMin === undefined ? -Infinity : chartRangeMin;
-					clipMax = chartRangeMax === undefined ? Infinity : chartRangeMax;
-				}
-
-				numValues = [];
-				stackRanges = stacked ? [] : numValues;
-				var stackTotals = [];
-				var stackRangesNeg = [];
-				for (i = 0, vlen = values.length; i < vlen; i++) {
-					if (stacked) {
-						vlist = values[i];
-						values[i] = svals = [];
-						stackTotals[i] = 0;
-						stackRanges[i] = stackRangesNeg[i] = 0;
-						for (j = 0, slen = vlist.length; j < slen; j++) {
-							val = svals[j] = chartRangeClip ? clipval(vlist[j], clipMin, clipMax) : vlist[j];
-							if (val !== null) {
-								if (val > 0) {
-									stackTotals[i] += val;
-								}
-								if (stackMin < 0 && stackMax > 0) {
-									if (val < 0) {
-										stackRangesNeg[i] += Math.abs(val);
-									} else {
-										stackRanges[i] += val;
-									}
-								} else {
-									stackRanges[i] += Math.abs(val - (val < 0 ? stackMax : stackMin));
-								}
-								numValues.push(val);
-							}
-						}
-					} else {
-						val = chartRangeClip ? clipval(values[i], clipMin, clipMax) : values[i];
-						val = values[i] = normalizeValue(val);
-						if (val !== null) {
-							numValues.push(val);
-						}
-					}
-				}
-				this.max = max = Math.max.apply(Math, numValues);
-				this.min = min = Math.min.apply(Math, numValues);
-				this.stackMax = stackMax = stacked ? Math.max.apply(Math, stackTotals) : max;
-				this.stackMin = stackMin = stacked ? Math.min.apply(Math, numValues) : min;
-
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < min)) {
-					min = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > max)) {
-					max = options.get('chartRangeMax');
-				}
-
-				this.zeroAxis = zeroAxis = options.get('zeroAxis', true);
-				if (min <= 0 && max >= 0 && zeroAxis) {
-					xaxisOffset = 0;
-				} else if (zeroAxis == false) {
-					xaxisOffset = min;
-				} else if (min > 0) {
-					xaxisOffset = min;
-				} else {
-					xaxisOffset = max;
-				}
-				this.xaxisOffset = xaxisOffset;
-
-				range = stacked ? Math.max.apply(Math, stackRanges) + Math.max.apply(Math, stackRangesNeg) : max - min;
-
-				// as we plot zero/min values a single pixel line, we add a pixel to all other
-				// values - Reduce the effective canvas size to suit
-				this.canvasHeightEf = zeroAxis && min < 0 ? this.canvasHeight - 2 : this.canvasHeight - 1;
-
-				if (min < xaxisOffset) {
-					yMaxCalc = stacked && max >= 0 ? stackMax : max;
-					yoffset = (yMaxCalc - xaxisOffset) / range * this.canvasHeight;
-					if (yoffset !== Math.ceil(yoffset)) {
-						this.canvasHeightEf -= 2;
-						yoffset = Math.ceil(yoffset);
-					}
-				} else {
-					yoffset = this.canvasHeight;
-				}
-				this.yoffset = yoffset;
-
-				if ($.isArray(options.get('colorMap'))) {
-					this.colorMapByIndex = options.get('colorMap');
-					this.colorMapByValue = null;
-				} else {
-					this.colorMapByIndex = null;
-					this.colorMapByValue = options.get('colorMap');
-					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
-						this.colorMapByValue = new RangeMap(this.colorMapByValue);
-					}
-				}
-
-				this.range = range;
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var result = Math.floor(x / this.totalBarWidth);
-				return result < 0 || result >= this.values.length ? undefined : result;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion,
-				    values = ensureArray(this.values[currentRegion]),
-				    result = [],
-				    value,
-				    i;
-				for (i = values.length; i--;) {
-					value = values[i];
-					result.push({
-						isNull: value === null,
-						value: value,
-						color: this.calcColor(i, value, currentRegion),
-						offset: currentRegion
-					});
-				}
-				return result;
-			},
-
-			calcColor: function calcColor(stacknum, value, valuenum) {
-				var colorMapByIndex = this.colorMapByIndex,
-				    colorMapByValue = this.colorMapByValue,
-				    options = this.options,
-				    color,
-				    newColor;
-				if (this.stacked) {
-					color = options.get('stackedBarColor');
-				} else {
-					color = value < 0 ? options.get('negBarColor') : options.get('barColor');
-				}
-				if (value === 0 && options.get('zeroColor') !== undefined) {
-					color = options.get('zeroColor');
-				}
-				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
-					color = newColor;
-				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
-					color = colorMapByIndex[valuenum];
-				}
-				return $.isArray(color) ? color[stacknum % color.length] : color;
-			},
-
-			/**
-    * Render bar(s) for a region
-    */
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var vals = this.values[valuenum],
-				    options = this.options,
-				    xaxisOffset = this.xaxisOffset,
-				    result = [],
-				    range = this.range,
-				    stacked = this.stacked,
-				    target = this.target,
-				    x = valuenum * this.totalBarWidth,
-				    canvasHeightEf = this.canvasHeightEf,
-				    yoffset = this.yoffset,
-				    y,
-				    height,
-				    color,
-				    isNull,
-				    yoffsetNeg,
-				    i,
-				    valcount,
-				    val,
-				    minPlotted,
-				    allMin;
-
-				vals = $.isArray(vals) ? vals : [vals];
-				valcount = vals.length;
-				val = vals[0];
-				isNull = all(null, vals);
-				allMin = all(xaxisOffset, vals, true);
-
-				if (isNull) {
-					if (options.get('nullColor')) {
-						color = highlight ? options.get('nullColor') : this.calcHighlightColor(options.get('nullColor'), options);
-						y = yoffset > 0 ? yoffset - 1 : yoffset;
-						return target.drawRect(x, y, this.barWidth - 1, 0, color, color);
-					} else {
-						return undefined;
-					}
-				}
-				yoffsetNeg = yoffset;
-				for (i = 0; i < valcount; i++) {
-					val = vals[i];
-
-					if (stacked && val === xaxisOffset) {
-						if (!allMin || minPlotted) {
-							continue;
-						}
-						minPlotted = true;
-					}
-
-					if (range > 0) {
-						height = Math.floor(canvasHeightEf * (Math.abs(val - xaxisOffset) / range)) + 1;
-					} else {
-						height = 1;
-					}
-					if (val < xaxisOffset || val === xaxisOffset && yoffset === 0) {
-						y = yoffsetNeg;
-						yoffsetNeg += height;
-					} else {
-						y = yoffset - height;
-						yoffset -= height;
-					}
-					color = this.calcColor(i, val, valuenum);
-					if (highlight) {
-						color = this.calcHighlightColor(color, options);
-					}
-					result.push(target.drawRect(x, y, this.barWidth - 1, height - 1, color, color));
-				}
-				if (result.length === 1) {
-					return result[0];
-				}
-				return result;
-			}
-		});
-
-		/**
-   * Tristate charts
-   */
-		$.fn.sparkline.tristate = tristate = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'tristate',
-
-			init: function init(el, values, options, width, height) {
-				var barWidth = parseInt(options.get('barWidth'), 10),
-				    barSpacing = parseInt(options.get('barSpacing'), 10);
-				tristate._super.init.call(this, el, values, options, width, height);
-
-				this.regionShapes = {};
-				this.barWidth = barWidth;
-				this.barSpacing = barSpacing;
-				this.totalBarWidth = barWidth + barSpacing;
-				this.values = $.map(values, Number);
-				this.width = width = values.length * barWidth + (values.length - 1) * barSpacing;
-
-				if ($.isArray(options.get('colorMap'))) {
-					this.colorMapByIndex = options.get('colorMap');
-					this.colorMapByValue = null;
-				} else {
-					this.colorMapByIndex = null;
-					this.colorMapByValue = options.get('colorMap');
-					if (this.colorMapByValue && this.colorMapByValue.get === undefined) {
-						this.colorMapByValue = new RangeMap(this.colorMapByValue);
-					}
-				}
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				return Math.floor(x / this.totalBarWidth);
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					color: this.calcColor(this.values[currentRegion], currentRegion),
-					offset: currentRegion
-				};
-			},
-
-			calcColor: function calcColor(value, valuenum) {
-				var values = this.values,
-				    options = this.options,
-				    colorMapByIndex = this.colorMapByIndex,
-				    colorMapByValue = this.colorMapByValue,
-				    color,
-				    newColor;
-
-				if (colorMapByValue && (newColor = colorMapByValue.get(value))) {
-					color = newColor;
-				} else if (colorMapByIndex && colorMapByIndex.length > valuenum) {
-					color = colorMapByIndex[valuenum];
-				} else if (values[valuenum] < 0) {
-					color = options.get('negBarColor');
-				} else if (values[valuenum] > 0) {
-					color = options.get('posBarColor');
-				} else {
-					color = options.get('zeroBarColor');
-				}
-				return color;
-			},
-
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var values = this.values,
-				    options = this.options,
-				    target = this.target,
-				    canvasHeight,
-				    height,
-				    halfHeight,
-				    x,
-				    y,
-				    color;
-
-				canvasHeight = target.pixelHeight;
-				halfHeight = Math.round(canvasHeight / 2);
-
-				x = valuenum * this.totalBarWidth;
-				if (values[valuenum] < 0) {
-					y = halfHeight;
-					height = halfHeight - 1;
-				} else if (values[valuenum] > 0) {
-					y = 0;
-					height = halfHeight - 1;
-				} else {
-					y = halfHeight - 1;
-					height = 2;
-				}
-				color = this.calcColor(values[valuenum], valuenum);
-				if (color === null) {
-					return;
-				}
-				if (highlight) {
-					color = this.calcHighlightColor(color, options);
-				}
-				return target.drawRect(x, y, this.barWidth - 1, height - 1, color, color);
-			}
-		});
-
-		/**
-   * Discrete charts
-   */
-		$.fn.sparkline.discrete = discrete = createClass($.fn.sparkline._base, barHighlightMixin, {
-			type: 'discrete',
-
-			init: function init(el, values, options, width, height) {
-				discrete._super.init.call(this, el, values, options, width, height);
-
-				this.regionShapes = {};
-				this.values = values = $.map(values, Number);
-				this.min = Math.min.apply(Math, values);
-				this.max = Math.max.apply(Math, values);
-				this.range = this.max - this.min;
-				this.width = width = options.get('width') === 'auto' ? values.length * 2 : this.width;
-				this.interval = Math.floor(width / values.length);
-				this.itemWidth = width / values.length;
-				if (options.get('chartRangeMin') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMin') < this.min)) {
-					this.min = options.get('chartRangeMin');
-				}
-				if (options.get('chartRangeMax') !== undefined && (options.get('chartRangeClip') || options.get('chartRangeMax') > this.max)) {
-					this.max = options.get('chartRangeMax');
-				}
-				this.initTarget();
-				if (this.target) {
-					this.lineHeight = options.get('lineHeight') === 'auto' ? Math.round(this.canvasHeight * 0.3) : options.get('lineHeight');
-				}
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				return Math.floor(x / this.itemWidth);
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					offset: currentRegion
-				};
-			},
-
-			renderRegion: function renderRegion(valuenum, highlight) {
-				var values = this.values,
-				    options = this.options,
-				    min = this.min,
-				    max = this.max,
-				    range = this.range,
-				    interval = this.interval,
-				    target = this.target,
-				    canvasHeight = this.canvasHeight,
-				    lineHeight = this.lineHeight,
-				    pheight = canvasHeight - lineHeight,
-				    ytop,
-				    val,
-				    color,
-				    x;
-
-				val = clipval(values[valuenum], min, max);
-				x = valuenum * interval;
-				ytop = Math.round(pheight - pheight * ((val - min) / range));
-				color = options.get('thresholdColor') && val < options.get('thresholdValue') ? options.get('thresholdColor') : options.get('lineColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, options);
-				}
-				return target.drawLine(x, ytop, x, ytop + lineHeight, color);
-			}
-		});
-
-		/**
-   * Bullet charts
-   */
-		$.fn.sparkline.bullet = bullet = createClass($.fn.sparkline._base, {
-			type: 'bullet',
-
-			init: function init(el, values, options, width, height) {
-				var min, max, vals;
-				bullet._super.init.call(this, el, values, options, width, height);
-
-				// values: target, performance, range1, range2, range3
-				this.values = values = normalizeValues(values);
-				// target or performance could be null
-				vals = values.slice();
-				vals[0] = vals[0] === null ? vals[2] : vals[0];
-				vals[1] = values[1] === null ? vals[2] : vals[1];
-				min = Math.min.apply(Math, values);
-				max = Math.max.apply(Math, values);
-				if (options.get('base') === undefined) {
-					min = min < 0 ? min : 0;
-				} else {
-					min = options.get('base');
-				}
-				this.min = min;
-				this.max = max;
-				this.range = max - min;
-				this.shapes = {};
-				this.valueShapes = {};
-				this.regiondata = {};
-				this.width = width = options.get('width') === 'auto' ? '4.0em' : width;
-				this.target = this.$el.simpledraw(width, height, options.get('composite'));
-				if (!values.length) {
-					this.disabled = true;
-				}
-				this.initTarget();
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var shapeid = this.target.getShapeAt(el, x, y);
-				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					fieldkey: currentRegion.substr(0, 1),
-					value: this.values[currentRegion.substr(1)],
-					region: currentRegion
-				};
-			},
-
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    shapeid = this.valueShapes[currentRegion],
-				    shape;
-				delete this.shapes[shapeid];
-				switch (currentRegion.substr(0, 1)) {
-					case 'r':
-						shape = this.renderRange(currentRegion.substr(1), highlight);
-						break;
-					case 'p':
-						shape = this.renderPerformance(highlight);
-						break;
-					case 't':
-						shape = this.renderTarget(highlight);
-						break;
-				}
-				this.valueShapes[currentRegion] = shape.id;
-				this.shapes[shape.id] = currentRegion;
-				this.target.replaceWithShape(shapeid, shape);
-			},
-
-			renderRange: function renderRange(rn, highlight) {
-				var rangeval = this.values[rn],
-				    rangewidth = Math.round(this.canvasWidth * ((rangeval - this.min) / this.range)),
-				    color = this.options.get('rangeColors')[rn - 2];
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(0, 0, rangewidth - 1, this.canvasHeight - 1, color, color);
-			},
-
-			renderPerformance: function renderPerformance(highlight) {
-				var perfval = this.values[1],
-				    perfwidth = Math.round(this.canvasWidth * ((perfval - this.min) / this.range)),
-				    color = this.options.get('performanceColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(0, Math.round(this.canvasHeight * 0.3), perfwidth - 1, Math.round(this.canvasHeight * 0.4) - 1, color, color);
-			},
-
-			renderTarget: function renderTarget(highlight) {
-				var targetval = this.values[0],
-				    x = Math.round(this.canvasWidth * ((targetval - this.min) / this.range) - this.options.get('targetWidth') / 2),
-				    targettop = Math.round(this.canvasHeight * 0.10),
-				    targetheight = this.canvasHeight - targettop * 2,
-				    color = this.options.get('targetColor');
-				if (highlight) {
-					color = this.calcHighlightColor(color, this.options);
-				}
-				return this.target.drawRect(x, targettop, this.options.get('targetWidth') - 1, targetheight - 1, color, color);
-			},
-
-			render: function render() {
-				var vlen = this.values.length,
-				    target = this.target,
-				    i,
-				    shape;
-				if (!bullet._super.render.call(this)) {
-					return;
-				}
-				for (i = 2; i < vlen; i++) {
-					shape = this.renderRange(i).append();
-					this.shapes[shape.id] = 'r' + i;
-					this.valueShapes['r' + i] = shape.id;
-				}
-				if (this.values[1] !== null) {
-					shape = this.renderPerformance().append();
-					this.shapes[shape.id] = 'p1';
-					this.valueShapes.p1 = shape.id;
-				}
-				if (this.values[0] !== null) {
-					shape = this.renderTarget().append();
-					this.shapes[shape.id] = 't0';
-					this.valueShapes.t0 = shape.id;
-				}
-				target.render();
-			}
-		});
-
-		/**
-   * Pie charts
-   */
-		$.fn.sparkline.pie = pie = createClass($.fn.sparkline._base, {
-			type: 'pie',
-
-			init: function init(el, values, options, width, height) {
-				var total = 0,
-				    i;
-
-				pie._super.init.call(this, el, values, options, width, height);
-
-				this.shapes = {}; // map shape ids to value offsets
-				this.valueShapes = {}; // maps value offsets to shape ids
-				this.values = values = $.map(values, Number);
-
-				if (options.get('width') === 'auto') {
-					this.width = this.height;
-				}
-
-				if (values.length > 0) {
-					for (i = values.length; i--;) {
-						total += values[i];
-					}
-				}
-				this.total = total;
-				this.initTarget();
-				this.radius = Math.floor(Math.min(this.canvasWidth, this.canvasHeight) / 2);
-			},
-
-			getRegion: function getRegion(el, x, y) {
-				var shapeid = this.target.getShapeAt(el, x, y);
-				return shapeid !== undefined && this.shapes[shapeid] !== undefined ? this.shapes[shapeid] : undefined;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var currentRegion = this.currentRegion;
-				return {
-					isNull: this.values[currentRegion] === undefined,
-					value: this.values[currentRegion],
-					percent: this.values[currentRegion] / this.total * 100,
-					color: this.options.get('sliceColors')[currentRegion % this.options.get('sliceColors').length],
-					offset: currentRegion
-				};
-			},
-
-			changeHighlight: function changeHighlight(highlight) {
-				var currentRegion = this.currentRegion,
-				    newslice = this.renderSlice(currentRegion, highlight),
-				    shapeid = this.valueShapes[currentRegion];
-				delete this.shapes[shapeid];
-				this.target.replaceWithShape(shapeid, newslice);
-				this.valueShapes[currentRegion] = newslice.id;
-				this.shapes[newslice.id] = currentRegion;
-			},
-
-			renderSlice: function renderSlice(valuenum, highlight) {
-				var target = this.target,
-				    options = this.options,
-				    radius = this.radius,
-				    borderWidth = options.get('borderWidth'),
-				    offset = options.get('offset'),
-				    circle = 2 * Math.PI,
-				    values = this.values,
-				    total = this.total,
-				    next = offset ? 2 * Math.PI * (offset / 360) : 0,
-				    start,
-				    end,
-				    i,
-				    vlen,
-				    color;
-
-				vlen = values.length;
-				for (i = 0; i < vlen; i++) {
-					start = next;
-					end = next;
-					if (total > 0) {
-						// avoid divide by zero
-						end = next + circle * (values[i] / total);
-					}
-					if (valuenum === i) {
-						color = options.get('sliceColors')[i % options.get('sliceColors').length];
-						if (highlight) {
-							color = this.calcHighlightColor(color, options);
-						}
-
-						return target.drawPieSlice(radius, radius, radius - borderWidth, start, end, undefined, color);
-					}
-					next = end;
-				}
-			},
-
-			render: function render() {
-				var target = this.target,
-				    values = this.values,
-				    options = this.options,
-				    radius = this.radius,
-				    borderWidth = options.get('borderWidth'),
-				    shape,
-				    i;
-
-				if (!pie._super.render.call(this)) {
-					return;
-				}
-				if (borderWidth) {
-					target.drawCircle(radius, radius, Math.floor(radius - borderWidth / 2), options.get('borderColor'), undefined, borderWidth).append();
-				}
-				for (i = values.length; i--;) {
-					if (values[i]) {
-						// don't render zero values
-						shape = this.renderSlice(i).append();
-						this.valueShapes[i] = shape.id; // store just the shapeid
-						this.shapes[shape.id] = i;
-					}
-				}
-				target.render();
-			}
-		});
-
-		/**
-   * Box plots
-   */
-		$.fn.sparkline.box = box = createClass($.fn.sparkline._base, {
-			type: 'box',
-
-			init: function init(el, values, options, width, height) {
-				box._super.init.call(this, el, values, options, width, height);
-				this.values = $.map(values, Number);
-				this.width = options.get('width') === 'auto' ? '4.0em' : width;
-				this.initTarget();
-				if (!this.values.length) {
-					this.disabled = 1;
-				}
-			},
-
-			/**
-    * Simulate a single region
-    */
-			getRegion: function getRegion() {
-				return 1;
-			},
-
-			getCurrentRegionFields: function getCurrentRegionFields() {
-				var result = [{ field: 'lq', value: this.quartiles[0] }, { field: 'med', value: this.quartiles[1] }, { field: 'uq', value: this.quartiles[2] }];
-				if (this.loutlier !== undefined) {
-					result.push({ field: 'lo', value: this.loutlier });
-				}
-				if (this.routlier !== undefined) {
-					result.push({ field: 'ro', value: this.routlier });
-				}
-				if (this.lwhisker !== undefined) {
-					result.push({ field: 'lw', value: this.lwhisker });
-				}
-				if (this.rwhisker !== undefined) {
-					result.push({ field: 'rw', value: this.rwhisker });
-				}
-				return result;
-			},
-
-			render: function render() {
-				var target = this.target,
-				    values = this.values,
-				    vlen = values.length,
-				    options = this.options,
-				    canvasWidth = this.canvasWidth,
-				    canvasHeight = this.canvasHeight,
-				    minValue = options.get('chartRangeMin') === undefined ? Math.min.apply(Math, values) : options.get('chartRangeMin'),
-				    maxValue = options.get('chartRangeMax') === undefined ? Math.max.apply(Math, values) : options.get('chartRangeMax'),
-				    canvasLeft = 0,
-				    lwhisker,
-				    loutlier,
-				    iqr,
-				    q1,
-				    q2,
-				    q3,
-				    rwhisker,
-				    routlier,
-				    i,
-				    size,
-				    unitSize;
-
-				if (!box._super.render.call(this)) {
-					return;
-				}
-
-				if (options.get('raw')) {
-					if (options.get('showOutliers') && values.length > 5) {
-						loutlier = values[0];
-						lwhisker = values[1];
-						q1 = values[2];
-						q2 = values[3];
-						q3 = values[4];
-						rwhisker = values[5];
-						routlier = values[6];
-					} else {
-						lwhisker = values[0];
-						q1 = values[1];
-						q2 = values[2];
-						q3 = values[3];
-						rwhisker = values[4];
-					}
-				} else {
-					values.sort(function (a, b) {
-						return a - b;
-					});
-					q1 = quartile(values, 1);
-					q2 = quartile(values, 2);
-					q3 = quartile(values, 3);
-					iqr = q3 - q1;
-					if (options.get('showOutliers')) {
-						lwhisker = rwhisker = undefined;
-						for (i = 0; i < vlen; i++) {
-							if (lwhisker === undefined && values[i] > q1 - iqr * options.get('outlierIQR')) {
-								lwhisker = values[i];
-							}
-							if (values[i] < q3 + iqr * options.get('outlierIQR')) {
-								rwhisker = values[i];
-							}
-						}
-						loutlier = values[0];
-						routlier = values[vlen - 1];
-					} else {
-						lwhisker = values[0];
-						rwhisker = values[vlen - 1];
-					}
-				}
-				this.quartiles = [q1, q2, q3];
-				this.lwhisker = lwhisker;
-				this.rwhisker = rwhisker;
-				this.loutlier = loutlier;
-				this.routlier = routlier;
-
-				unitSize = canvasWidth / (maxValue - minValue + 1);
-				if (options.get('showOutliers')) {
-					canvasLeft = Math.ceil(options.get('spotRadius'));
-					canvasWidth -= 2 * Math.ceil(options.get('spotRadius'));
-					unitSize = canvasWidth / (maxValue - minValue + 1);
-					if (loutlier < lwhisker) {
-						target.drawCircle((loutlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
-					}
-					if (routlier > rwhisker) {
-						target.drawCircle((routlier - minValue) * unitSize + canvasLeft, canvasHeight / 2, options.get('spotRadius'), options.get('outlierLineColor'), options.get('outlierFillColor')).append();
-					}
-				}
-
-				// box
-				target.drawRect(Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q3 - q1) * unitSize), Math.round(canvasHeight * 0.8), options.get('boxLineColor'), options.get('boxFillColor')).append();
-				// left whisker
-				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q1 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
-				target.drawLine(Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((lwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
-				// right whisker
-				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), Math.round((q3 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2), options.get('lineColor')).append();
-				target.drawLine(Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 4), Math.round((rwhisker - minValue) * unitSize + canvasLeft), Math.round(canvasHeight - canvasHeight / 4), options.get('whiskerColor')).append();
-				// median line
-				target.drawLine(Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.1), Math.round((q2 - minValue) * unitSize + canvasLeft), Math.round(canvasHeight * 0.9), options.get('medianColor')).append();
-				if (options.get('target')) {
-					size = Math.ceil(options.get('spotRadius'));
-					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 - size), Math.round((options.get('target') - minValue) * unitSize + canvasLeft), Math.round(canvasHeight / 2 + size), options.get('targetColor')).append();
-					target.drawLine(Math.round((options.get('target') - minValue) * unitSize + canvasLeft - size), Math.round(canvasHeight / 2), Math.round((options.get('target') - minValue) * unitSize + canvasLeft + size), Math.round(canvasHeight / 2), options.get('targetColor')).append();
-				}
-				target.render();
-			}
-		});
-
-		// Setup a very simple "virtual canvas" to make drawing the few shapes we need easier
-		// This is accessible as $(foo).simpledraw()
-
-		VShape = createClass({
-			init: function init(target, id, type, args) {
-				this.target = target;
-				this.id = id;
-				this.type = type;
-				this.args = args;
-			},
-			append: function append() {
-				this.target.appendShape(this);
-				return this;
-			}
-		});
-
-		VCanvas_base = createClass({
-			_pxregex: /(\d+)(px)?\s*$/i,
-
-			init: function init(width, height, target) {
-				if (!width) {
-					return;
-				}
-				this.width = width;
-				this.height = height;
-				this.target = target;
-				this.lastShapeId = null;
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-			},
-
-			drawLine: function drawLine(x1, y1, x2, y2, lineColor, lineWidth) {
-				return this.drawShape([[x1, y1], [x2, y2]], lineColor, lineWidth);
-			},
-
-			drawShape: function drawShape(path, lineColor, fillColor, lineWidth) {
-				return this._genShape('Shape', [path, lineColor, fillColor, lineWidth]);
-			},
-
-			drawCircle: function drawCircle(x, y, radius, lineColor, fillColor, lineWidth) {
-				return this._genShape('Circle', [x, y, radius, lineColor, fillColor, lineWidth]);
-			},
-
-			drawPieSlice: function drawPieSlice(x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				return this._genShape('PieSlice', [x, y, radius, startAngle, endAngle, lineColor, fillColor]);
-			},
-
-			drawRect: function drawRect(x, y, width, height, lineColor, fillColor) {
-				return this._genShape('Rect', [x, y, width, height, lineColor, fillColor]);
-			},
-
-			getElement: function getElement() {
-				return this.canvas;
-			},
-
-			/**
-    * Return the most recently inserted shape id
-    */
-			getLastShapeId: function getLastShapeId() {
-				return this.lastShapeId;
-			},
-
-			/**
-    * Clear and reset the canvas
-    */
-			reset: function reset() {
-				alert('reset not implemented');
-			},
-
-			_insert: function _insert(el, target) {
-				$(target).html(el);
-			},
-
-			/**
-    * Calculate the pixel dimensions of the canvas
-    */
-			_calculatePixelDims: function _calculatePixelDims(width, height, canvas) {
-				// XXX This should probably be a configurable option
-				var match;
-				match = this._pxregex.exec(height);
-				if (match) {
-					this.pixelHeight = match[1];
-				} else {
-					this.pixelHeight = $(canvas).height();
-				}
-				match = this._pxregex.exec(width);
-				if (match) {
-					this.pixelWidth = match[1];
-				} else {
-					this.pixelWidth = $(canvas).width();
-				}
-			},
-
-			/**
-    * Generate a shape object and id for later rendering
-    */
-			_genShape: function _genShape(shapetype, shapeargs) {
-				var id = shapeCount++;
-				shapeargs.unshift(id);
-				return new VShape(this, id, shapetype, shapeargs);
-			},
-
-			/**
-    * Add a shape to the end of the render queue
-    */
-			appendShape: function appendShape(shape) {
-				alert('appendShape not implemented');
-			},
-
-			/**
-    * Replace one shape with another
-    */
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				alert('replaceWithShape not implemented');
-			},
-
-			/**
-    * Insert one shape after another in the render queue
-    */
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				alert('insertAfterShape not implemented');
-			},
-
-			/**
-    * Remove a shape from the queue
-    */
-			removeShapeId: function removeShapeId(shapeid) {
-				alert('removeShapeId not implemented');
-			},
-
-			/**
-    * Find a shape at the specified x/y co-ordinates
-    */
-			getShapeAt: function getShapeAt(el, x, y) {
-				alert('getShapeAt not implemented');
-			},
-
-			/**
-    * Render all queued shapes onto the canvas
-    */
-			render: function render() {
-				alert('render not implemented');
-			}
-		});
-
-		VCanvas_canvas = createClass(VCanvas_base, {
-			init: function init(width, height, target, interact) {
-				VCanvas_canvas._super.init.call(this, width, height, target);
-				this.canvas = document.createElement('canvas');
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-				$(this.canvas).css({ display: 'inline-block', width: width, height: height, verticalAlign: 'top' });
-				this._insert(this.canvas, target);
-				this._calculatePixelDims(width, height, this.canvas);
-				this.canvas.width = this.pixelWidth;
-				this.canvas.height = this.pixelHeight;
-				this.interact = interact;
-				this.shapes = {};
-				this.shapeseq = [];
-				this.currentTargetShapeId = undefined;
-				$(this.canvas).css({ width: this.pixelWidth, height: this.pixelHeight });
-			},
-
-			_getContext: function _getContext(lineColor, fillColor, lineWidth) {
-				var context = this.canvas.getContext('2d');
-				if (lineColor !== undefined) {
-					context.strokeStyle = lineColor;
-				}
-				context.lineWidth = lineWidth === undefined ? 1 : lineWidth;
-				if (fillColor !== undefined) {
-					context.fillStyle = fillColor;
-				}
-				return context;
-			},
-
-			reset: function reset() {
-				var context = this._getContext();
-				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
-				this.shapes = {};
-				this.shapeseq = [];
-				this.currentTargetShapeId = undefined;
-			},
-
-			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
-				var context = this._getContext(lineColor, fillColor, lineWidth),
-				    i,
-				    plen;
-				context.beginPath();
-				context.moveTo(path[0][0] + 0.5, path[0][1] + 0.5);
-				for (i = 1, plen = path.length; i < plen; i++) {
-					context.lineTo(path[i][0] + 0.5, path[i][1] + 0.5); // the 0.5 offset gives us crisp pixel-width lines
-				}
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor !== undefined) {
-					context.fill();
-				}
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-			},
-
-			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
-				var context = this._getContext(lineColor, fillColor, lineWidth);
-				context.beginPath();
-				context.arc(x, y, radius, 0, 2 * Math.PI, false);
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor !== undefined) {
-					context.fill();
-				}
-			},
-
-			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				var context = this._getContext(lineColor, fillColor);
-				context.beginPath();
-				context.moveTo(x, y);
-				context.arc(x, y, radius, startAngle, endAngle, false);
-				context.lineTo(x, y);
-				context.closePath();
-				if (lineColor !== undefined) {
-					context.stroke();
-				}
-				if (fillColor) {
-					context.fill();
-				}
-				if (this.targetX !== undefined && this.targetY !== undefined && context.isPointInPath(this.targetX, this.targetY)) {
-					this.currentTargetShapeId = shapeid;
-				}
-			},
-
-			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
-				return this._drawShape(shapeid, [[x, y], [x + width, y], [x + width, y + height], [x, y + height], [x, y]], lineColor, fillColor);
-			},
-
-			appendShape: function appendShape(shape) {
-				this.shapes[shape.id] = shape;
-				this.shapeseq.push(shape.id);
-				this.lastShapeId = shape.id;
-				return shape.id;
-			},
-
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				var shapeseq = this.shapeseq,
-				    i;
-				this.shapes[shape.id] = shape;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] == shapeid) {
-						shapeseq[i] = shape.id;
-					}
-				}
-				delete this.shapes[shapeid];
-			},
-
-			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
-				var shapeseq = this.shapeseq,
-				    shapemap = {},
-				    sid,
-				    i,
-				    first;
-
-				for (i = shapeids.length; i--;) {
-					shapemap[shapeids[i]] = true;
-				}
-				for (i = shapeseq.length; i--;) {
-					sid = shapeseq[i];
-					if (shapemap[sid]) {
-						shapeseq.splice(i, 1);
-						delete this.shapes[sid];
-						first = i;
-					}
-				}
-				for (i = shapes.length; i--;) {
-					shapeseq.splice(first, 0, shapes[i].id);
-					this.shapes[shapes[i].id] = shapes[i];
-				}
-			},
-
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				var shapeseq = this.shapeseq,
-				    i;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] === shapeid) {
-						shapeseq.splice(i + 1, 0, shape.id);
-						this.shapes[shape.id] = shape;
-						return;
-					}
-				}
-			},
-
-			removeShapeId: function removeShapeId(shapeid) {
-				var shapeseq = this.shapeseq,
-				    i;
-				for (i = shapeseq.length; i--;) {
-					if (shapeseq[i] === shapeid) {
-						shapeseq.splice(i, 1);
-						break;
-					}
-				}
-				delete this.shapes[shapeid];
-			},
-
-			getShapeAt: function getShapeAt(el, x, y) {
-				this.targetX = x;
-				this.targetY = y;
-				this.render();
-				return this.currentTargetShapeId;
-			},
-
-			render: function render() {
-				var shapeseq = this.shapeseq,
-				    shapes = this.shapes,
-				    shapeCount = shapeseq.length,
-				    context = this._getContext(),
-				    shapeid,
-				    shape,
-				    i;
-				context.clearRect(0, 0, this.pixelWidth, this.pixelHeight);
-				for (i = 0; i < shapeCount; i++) {
-					shapeid = shapeseq[i];
-					shape = shapes[shapeid];
-					this['_draw' + shape.type].apply(this, shape.args);
-				}
-				if (!this.interact) {
-					// not interactive so no need to keep the shapes array
-					this.shapes = {};
-					this.shapeseq = [];
-				}
-			}
-
-		});
-
-		VCanvas_vml = createClass(VCanvas_base, {
-			init: function init(width, height, target) {
-				var groupel;
-				VCanvas_vml._super.init.call(this, width, height, target);
-				if (target[0]) {
-					target = target[0];
-				}
-				$.data(target, '_jqs_vcanvas', this);
-				this.canvas = document.createElement('span');
-				$(this.canvas).css({ display: 'inline-block', position: 'relative', overflow: 'hidden', width: width, height: height, margin: '0px', padding: '0px', verticalAlign: 'top' });
-				this._insert(this.canvas, target);
-				this._calculatePixelDims(width, height, this.canvas);
-				this.canvas.width = this.pixelWidth;
-				this.canvas.height = this.pixelHeight;
-				groupel = '<v:group coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '"' + ' style="position:absolute;top:0;left:0;width:' + this.pixelWidth + 'px;height=' + this.pixelHeight + 'px;"></v:group>';
-				this.canvas.insertAdjacentHTML('beforeEnd', groupel);
-				this.group = $(this.canvas).children()[0];
-				this.rendered = false;
-				this.prerender = '';
-			},
-
-			_drawShape: function _drawShape(shapeid, path, lineColor, fillColor, lineWidth) {
-				var vpath = [],
-				    initial,
-				    stroke,
-				    fill,
-				    closed,
-				    vel,
-				    plen,
-				    i;
-				for (i = 0, plen = path.length; i < plen; i++) {
-					vpath[i] = '' + path[i][0] + ',' + path[i][1];
-				}
-				initial = vpath.splice(0, 1);
-				lineWidth = lineWidth === undefined ? 1 : lineWidth;
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				closed = vpath[0] === vpath[vpath.length - 1] ? 'x ' : '';
-				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + initial + ' l ' + vpath.join(', ') + ' ' + closed + 'e">' + ' </v:shape>';
-				return vel;
-			},
-
-			_drawCircle: function _drawCircle(shapeid, x, y, radius, lineColor, fillColor, lineWidth) {
-				var stroke, fill, vel;
-				x -= radius;
-				y -= radius;
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="' + lineWidth + 'px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				vel = '<v:oval ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;top:' + y + 'px; left:' + x + 'px; width:' + radius * 2 + 'px; height:' + radius * 2 + 'px"></v:oval>';
-				return vel;
-			},
-
-			_drawPieSlice: function _drawPieSlice(shapeid, x, y, radius, startAngle, endAngle, lineColor, fillColor) {
-				var vpath, startx, starty, endx, endy, stroke, fill, vel;
-				if (startAngle === endAngle) {
-					return ''; // VML seems to have problem when start angle equals end angle.
-				}
-				if (endAngle - startAngle === 2 * Math.PI) {
-					startAngle = 0.0; // VML seems to have a problem when drawing a full circle that doesn't start 0
-					endAngle = 2 * Math.PI;
-				}
-
-				startx = x + Math.round(Math.cos(startAngle) * radius);
-				starty = y + Math.round(Math.sin(startAngle) * radius);
-				endx = x + Math.round(Math.cos(endAngle) * radius);
-				endy = y + Math.round(Math.sin(endAngle) * radius);
-
-				if (startx === endx && starty === endy) {
-					if (endAngle - startAngle < Math.PI) {
-						// Prevent very small slices from being mistaken as a whole pie
-						return '';
-					}
-					// essentially going to be the entire circle, so ignore startAngle
-					startx = endx = x + radius;
-					starty = endy = y;
-				}
-
-				if (startx === endx && starty === endy && endAngle - startAngle < Math.PI) {
-					return '';
-				}
-
-				vpath = [x - radius, y - radius, x + radius, y + radius, startx, starty, endx, endy];
-				stroke = lineColor === undefined ? ' stroked="false" ' : ' strokeWeight="1px" strokeColor="' + lineColor + '" ';
-				fill = fillColor === undefined ? ' filled="false"' : ' fillColor="' + fillColor + '" filled="true" ';
-				vel = '<v:shape coordorigin="0 0" coordsize="' + this.pixelWidth + ' ' + this.pixelHeight + '" ' + ' id="jqsshape' + shapeid + '" ' + stroke + fill + ' style="position:absolute;left:0px;top:0px;height:' + this.pixelHeight + 'px;width:' + this.pixelWidth + 'px;padding:0px;margin:0px;" ' + ' path="m ' + x + ',' + y + ' wa ' + vpath.join(', ') + ' x e">' + ' </v:shape>';
-				return vel;
-			},
-
-			_drawRect: function _drawRect(shapeid, x, y, width, height, lineColor, fillColor) {
-				return this._drawShape(shapeid, [[x, y], [x, y + height], [x + width, y + height], [x + width, y], [x, y]], lineColor, fillColor);
-			},
-
-			reset: function reset() {
-				this.group.innerHTML = '';
-			},
-
-			appendShape: function appendShape(shape) {
-				var vel = this['_draw' + shape.type].apply(this, shape.args);
-				if (this.rendered) {
-					this.group.insertAdjacentHTML('beforeEnd', vel);
-				} else {
-					this.prerender += vel;
-				}
-				this.lastShapeId = shape.id;
-				return shape.id;
-			},
-
-			replaceWithShape: function replaceWithShape(shapeid, shape) {
-				var existing = $('#jqsshape' + shapeid),
-				    vel = this['_draw' + shape.type].apply(this, shape.args);
-				existing[0].outerHTML = vel;
-			},
-
-			replaceWithShapes: function replaceWithShapes(shapeids, shapes) {
-				// replace the first shapeid with all the new shapes then toast the remaining old shapes
-				var existing = $('#jqsshape' + shapeids[0]),
-				    replace = '',
-				    slen = shapes.length,
-				    i;
-				for (i = 0; i < slen; i++) {
-					replace += this['_draw' + shapes[i].type].apply(this, shapes[i].args);
-				}
-				existing[0].outerHTML = replace;
-				for (i = 1; i < shapeids.length; i++) {
-					$('#jqsshape' + shapeids[i]).remove();
-				}
-			},
-
-			insertAfterShape: function insertAfterShape(shapeid, shape) {
-				var existing = $('#jqsshape' + shapeid),
-				    vel = this['_draw' + shape.type].apply(this, shape.args);
-				existing[0].insertAdjacentHTML('afterEnd', vel);
-			},
-
-			removeShapeId: function removeShapeId(shapeid) {
-				var existing = $('#jqsshape' + shapeid);
-				this.group.removeChild(existing[0]);
-			},
-
-			getShapeAt: function getShapeAt(el, x, y) {
-				var shapeid = el.id.substr(8);
-				return shapeid;
-			},
-
-			render: function render() {
-				if (!this.rendered) {
-					// batch the intial render into a single repaint
-					this.group.innerHTML = this.prerender;
-					this.rendered = true;
-				}
-			}
-		});
-	});
-})(document, Math);
 
 /***/ })
 

@@ -125,4 +125,29 @@ class ProyectoController extends Controller
         $proyectos = Proyecto::select('idProyecto as id','Titulo as nombre')->get();
         return $proyectos;
     }
+
+
+
+    public function selectProject(Request $request) {
+        $proyecto = Proyecto::select('proyectos.IdProyecto', 'proyectos.Titulo', 'proyectos.Descripcion', 'proyectos.FechaInicio', 'proyectos.FechaFin')
+        ->where('proyectos.IdProyecto', '=', $request->id)->get();
+        //join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
+        //->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
+        return $proyecto;
+    }
+
+    public function selectActividad(Request $request) {
+        $actividades = Proyecto::join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
+        ->select('actividades.id', 'actividades.actividad', 'actividades.fechaInicio', 'actividades.fechaFinal', 'actividades.idProyecto')
+        ->where('proyectos.IdProyecto', '=', $request->id)->get();
+        return $actividades;
+    }
+
+    public function selectTareas(Request $request) {
+        $proyecto = Proyecto::join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
+        ->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
+        ->select('tarea.id', 'tarea.descripcion', 'tarea.fechaInicio', 'tarea.fechaFinal', 'tarea.idActividad')
+        ->where('proyectos.IdProyecto', '=', $request->id)->get();
+        return $proyecto;
+    }
 }

@@ -8,7 +8,7 @@
                   :tasks="tasks"
                   @options-changed="optionsUpdate"
                   @dynamic-style-changed="styleUpdate"
-                  @chart-project-click="click"
+                  @chart-project-click="click(task)"
                 >
                 <gantt-header slot="header"></gantt-header>
                 </gantt-elastic>
@@ -50,14 +50,7 @@ function getDate(hours) {
 }
 let tasks = [
     {
-      id: 0,
-      label: "Make some noise",
-      user:
-        '<a href="https://www.google.com/search?q=John+Doe" target="_blank" style="color:#0077c0;">John Doe</a>',
-      start: getDate(-24 * 5),
-      duration: 15 * 24 * 60 * 60 * 1000,
-      percent: 85,
-      type: "project"
+      
       //collapsed: true,
     },
 ];
@@ -93,18 +86,6 @@ let options = {
     },
     columns: [
       {
-        id: 1,
-        label: "ID",
-        value: "id",
-        width: 40
-      },
-      {
-        id: 1,
-        label: "ID",
-        value: "id",
-        width: 40
-      },
-      {
         id: 2,
         label: "Description",
         value: "label",
@@ -126,8 +107,8 @@ let options = {
       },
       {
         id: 3,
-        label: "Start",
-        value: task => dayjs(task.start).format("DD-MM-YYYY"),
+        label: "Inicio",
+        value: task => dayjs(task.start).format('DD-MM-YYYY'),
         width: 78
       },
       {
@@ -140,7 +121,7 @@ let options = {
         id: 5,
         label: "%",
         value: "progress",
-        width: 35,
+        width: 130,
         style: {
           "task-list-header-label": {
             "text-align": "center",
@@ -203,6 +184,7 @@ export default {
   methods: {
     initialize() {
       let me = this;
+      tasks =[ {}, ];
       axios.get('/proyecto')
         .then(function (response) {
             me.proyectos = response.data;
@@ -223,7 +205,7 @@ export default {
         task.user = '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>';
         task.start = Date.parse(item.FechaInicio);
         task.end = Date.parse(item.FechaFin);
-        task.percent = 80;
+        task.percent = 10;
         task.type = "project";
         me.tasks.push(task);
       });
@@ -251,7 +233,8 @@ export default {
     styleUpdate(style) {
       this.dynamicStyle = style;
     },
-    click() {
+    click(task) {
+      console.log(task);
       console.log('click');
     }
   }
