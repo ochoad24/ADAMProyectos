@@ -1,22 +1,22 @@
 webpackJsonp([138],{
 
-/***/ 1277:
+/***/ 1398:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1278);
+var content = __webpack_require__(1399);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("366d5d5c", content, false, {});
+var update = __webpack_require__(26)("c701bec2", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./fileinput.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./fileinput.min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,46 +27,38 @@ if(false) {
 
 /***/ }),
 
-/***/ 1278:
+/***/ 1399:
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(28);
 exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*!\r\n * bootstrap-fileinput v4.5.1\r\n * http://plugins.krajee.com/file-input\r\n *\r\n * Krajee default styling for bootstrap-fileinput.\r\n *\r\n * Author: Kartik Visweswaran\r\n * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com\r\n *\r\n * Licensed under the BSD 3-Clause\r\n * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md\r\n */\n.btn-file input[type=file],.file-caption-icon,.file-no-browse,.file-preview .fileinput-remove,.file-zoom-dialog .btn-navigate,.file-zoom-dialog .floating-buttons,.krajee-default .file-thumb-progress{position:absolute\n}\n.file-loading input[type=file],input[type=file].file-loading{width:0;height:0\n}\n.file-no-browse{left:50%;bottom:20%;width:1px;height:1px;font-size:0;opacity:0;border:none;background:0 0;outline:0;box-shadow:none\n}\n.file-caption-icon,.file-input-ajax-new .fileinput-remove-button,.file-input-ajax-new .fileinput-upload-button,.file-input-ajax-new .no-browse .input-group-btn,.file-input-new .close,.file-input-new .file-preview,.file-input-new .fileinput-remove-button,.file-input-new .fileinput-upload-button,.file-input-new .glyphicon-file,.file-input-new .no-browse .input-group-btn,.file-zoom-dialog .modal-header:after,.file-zoom-dialog .modal-header:before,.hide-content .kv-file-content,.kv-hidden{display:none\n}\n.btn-file,.file-caption,.file-input,.file-loading:before,.file-preview,.file-zoom-dialog .modal-dialog,.krajee-default .file-thumbnail-footer,.krajee-default.file-preview-frame{position:relative\n}\n.file-error-message pre,.file-error-message ul,.krajee-default .file-actions,.krajee-default .file-other-error{text-align:left\n}\n.file-error-message pre,.file-error-message ul{margin:0\n}\n.krajee-default .file-drag-handle,.krajee-default .file-upload-indicator{float:left;margin:5px 0 -5px;width:16px;height:16px\n}\n.krajee-default .file-thumb-progress .progress,.krajee-default .file-thumb-progress .progress-bar{height:11px;font-family:Verdana,Helvetica,sans-serif;font-size:9px\n}\n.krajee-default .file-caption-info,.krajee-default .file-size-info{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:160px;height:15px;margin:auto\n}\n.file-zoom-content>.file-object.type-flash,.file-zoom-content>.file-object.type-image,.file-zoom-content>.file-object.type-video{max-width:100%;max-height:100%;width:auto\n}\n.file-zoom-content>.file-object.type-flash,.file-zoom-content>.file-object.type-video{height:100%\n}\n.file-zoom-content>.file-object.type-default,.file-zoom-content>.file-object.type-html,.file-zoom-content>.file-object.type-pdf,.file-zoom-content>.file-object.type-text{width:100%\n}\n.file-loading:before{content:\" Loading...\";display:inline-block;padding-left:20px;line-height:16px;font-size:13px;font-variant:small-caps;color:#999;background:url(" + escape(__webpack_require__(696)) + ") top left no-repeat\n}\n.file-object{margin:0 0 -5px;padding:0\n}\n.btn-file{overflow:hidden\n}\n.btn-file input[type=file]{top:0;left:0;min-width:100%;min-height:100%;text-align:right;opacity:0;background:none;cursor:inherit;display:block\n}\n.btn-file ::-ms-browse{font-size:10000px;width:100%;height:100%\n}\n.file-caption .file-caption-name{width:100%;margin:0;padding:0;box-shadow:none;border:none;background:0 0;outline:0\n}\n.file-caption.icon-visible .file-caption-icon{display:inline-block\n}\n.file-caption.icon-visible .file-caption-name{padding-left:15px\n}\n.file-caption-icon{left:8px\n}\n.file-error-message{color:#a94442;background-color:#f2dede;margin:5px;border:1px solid #ebccd1;border-radius:4px;padding:15px\n}\n.file-error-message pre{margin:5px 0\n}\n.file-caption-disabled{background-color:#eee;cursor:not-allowed;opacity:1\n}\n.file-preview{border-radius:5px;border:1px solid #ddd;padding:8px;width:100%;margin-bottom:5px\n}\n.file-preview .btn-xs{padding:1px 5px;font-size:12px;line-height:1.5;border-radius:3px\n}\n.file-preview .fileinput-remove{top:1px;right:1px;line-height:10px\n}\n.file-preview .clickable{cursor:pointer\n}\n.file-preview-image{font:40px Impact,Charcoal,sans-serif;color:green\n}\n.krajee-default.file-preview-frame{margin:8px;border:1px solid rgba(0,0,0,.2);box-shadow:0 0 10px 0 rgba(0,0,0,.2);padding:6px;float:left;text-align:center\n}\n.krajee-default.file-preview-frame .kv-file-content{width:213px;height:160px\n}\n.krajee-default.file-preview-frame .kv-file-content.kv-pdf-rendered{width:400px\n}\n.krajee-default.file-preview-frame .file-thumbnail-footer{height:70px\n}\n.krajee-default.file-preview-frame:not(.file-preview-error):hover{border:1px solid rgba(0,0,0,.3);box-shadow:0 0 10px 0 rgba(0,0,0,.4)\n}\n.krajee-default .file-preview-text{display:block;color:#428bca;border:1px solid #ddd;font-family:Menlo,Monaco,Consolas,\"Courier New\",monospace;outline:0;padding:8px;resize:none\n}\n.krajee-default .file-preview-html{border:1px solid #ddd;padding:8px;overflow:auto\n}\n.krajee-default .file-other-icon{font-size:6em\n}\n.krajee-default .file-footer-buttons{float:right\n}\n.krajee-default .file-footer-caption{display:block;text-align:center;padding-top:4px;font-size:11px;color:#777;margin-bottom:15px\n}\n.krajee-default .file-preview-error{opacity:.65;box-shadow:none\n}\n.krajee-default .file-thumb-progress{height:11px;top:37px;left:0;right:0\n}\n.krajee-default.kvsortable-ghost{background:#e1edf7;border:2px solid #a1abff\n}\n.krajee-default .file-preview-other:hover{opacity:.8\n}\n.krajee-default .file-preview-frame:not(.file-preview-error) .file-footer-caption:hover{color:#000\n}\n.kv-upload-progress .progress{height:20px;margin:10px 0;overflow:hidden\n}\n.kv-upload-progress .progress-bar{height:20px;font-family:Verdana,Helvetica,sans-serif\n}\n.file-zoom-dialog .file-other-icon{font-size:22em;font-size:50vmin\n}\n.file-zoom-dialog .modal-dialog{width:auto\n}\n.file-zoom-dialog .modal-header{display:flex;align-items:center;justify-content:space-between\n}\n.file-zoom-dialog .btn-navigate{padding:0;margin:0;background:0 0;text-decoration:none;outline:0;opacity:.7;top:45%;font-size:4em;color:#1c94c4\n}\n.file-zoom-dialog .btn-navigate:not([disabled]):hover{outline:0;box-shadow:none;opacity:.6\n}\n.file-zoom-dialog .floating-buttons{top:5px;right:10px\n}\n.file-zoom-dialog .btn-navigate[disabled]{opacity:.3\n}\n.file-zoom-dialog .btn-prev{left:1px\n}\n.file-zoom-dialog .btn-next{right:1px\n}\n.file-zoom-dialog .kv-zoom-title{font-weight:300;color:#999;max-width:50%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis\n}\n.file-input-ajax-new .no-browse .form-control,.file-input-new .no-browse .form-control{border-top-right-radius:4px;border-bottom-right-radius:4px\n}\n.file-caption-main{width:100%\n}\n.file-thumb-loading{background:url(" + escape(__webpack_require__(696)) + ") center center no-repeat content-box!important\n}\n.file-drop-zone{border:1px dashed #aaa;border-radius:4px;height:100%;text-align:center;vertical-align:middle;margin:12px 15px 12px 12px;padding:5px\n}\n.file-drop-zone.clickable:hover{border:2px dashed #999\n}\n.file-drop-zone.clickable:focus{border:2px solid #5acde2\n}\n.file-drop-zone .file-preview-thumbnails{cursor:default\n}\n.file-drop-zone-title{color:#aaa;font-size:1.6em;padding:85px 10px;cursor:default\n}\n.file-highlighted{border:2px dashed #999!important;background-color:#eee\n}\n.file-uploading{background:url(" + escape(__webpack_require__(1279)) + ") center bottom 10px no-repeat;opacity:.65\n}\n.file-zoom-fullscreen .modal-dialog{min-width:100%;margin:0\n}\n.file-zoom-fullscreen .modal-content{border-radius:0;box-shadow:none;min-height:100vh\n}\n.file-zoom-fullscreen .modal-body{overflow-y:auto\n}\n.floating-buttons{z-index:3000\n}\n.floating-buttons .btn-kv{margin-left:3px;z-index:3000\n}\n.file-zoom-content{height:480px;text-align:center\n}\n.file-zoom-content .file-preview-image,.file-zoom-content .file-preview-video{max-height:100%\n}\n.file-zoom-content>.file-object.type-image{height:auto;min-height:inherit\n}\n.file-zoom-content>.file-object.type-audio{width:auto;height:30px\n}\n@media (min-width:576px){\n.file-zoom-dialog .modal-dialog{max-width:500px\n}\n}\n@media (min-width:992px){\n.file-zoom-dialog .modal-lg{max-width:800px\n}\n}\n@media (max-width:767px){\n.file-preview-thumbnails{display:flex;justify-content:center;align-items:center;flex-direction:column\n}\n.file-zoom-dialog .modal-header{flex-direction:column\n}\n}\n@media (max-width:350px){\n.krajee-default.file-preview-frame .kv-file-content{width:160px\n}\n}\n@media (max-width:420px){\n.krajee-default.file-preview-frame .kv-file-content.kv-pdf-rendered{width:100%\n}\n}\n.file-loading[dir=rtl]:before{background:url(" + escape(__webpack_require__(696)) + ") top right no-repeat;padding-left:0;padding-right:20px\n}\n.file-sortable .file-drag-handle{cursor:move;opacity:1\n}\n.file-sortable .file-drag-handle:hover{opacity:.7\n}\n.clickable .file-drop-zone-title{cursor:pointer\n}\n.kv-zoom-actions .btn-kv{margin-left:3px\n}\n.file-preview-initial.sortable-chosen{background-color:#d9edf7\n}\r\n", ""]);
+exports.push([module.i, "/*\n *  Bootstrap TouchSpin - v3.1.1\n *  A mobile and touch friendly input spinner component for Bootstrap 3.\n *  http://www.virtuosoft.eu/code/bootstrap-touchspin/\n *\n *  Made by István Ujj-Mészáros\n *  Under Apache License v2.0 License\n */\n.bootstrap-touchspin .input-group-btn-vertical{position:relative;white-space:nowrap;width:1%;vertical-align:middle;display:table-cell\n}\n.bootstrap-touchspin .input-group-btn-vertical>.btn{display:block;float:none;width:100%;max-width:100%;padding:8px 10px;margin-left:-1px;position:relative\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up{border-radius:0;border-top-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{margin-top:-2px;border-radius:0;border-bottom-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical i{position:absolute;top:3px;left:5px;font-size:9px;font-weight:400\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1279:
-/***/ (function(module, exports) {
-
-module.exports = "/images/vendor/bootstrap-fileinput/loading-sm.gif?e5ad074b7969cc386b387f08dba4fcec";
-
-/***/ }),
-
-/***/ 1280:
+/***/ 1400:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1281);
+var content = __webpack_require__(1401);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("fcbba6e8", content, false, {});
+var update = __webpack_require__(26)("7ca792c8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./formelements.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./formelements.css");
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-datetimepicker.min.css", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-datetimepicker.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -77,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1281:
+/***/ 1401:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -85,192 +77,66 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.select2-container .select2-selection--single {\n    height: 34px;\n}\n.select2-container--default .select2-selection--multiple,\n.select2-container--default .select2-selection--single {\n    border-radius: 0;\n}\n.daterangepicker.opensleft:after {\n    display: none;\n}\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    margin-left: 0;\n}\n.btn-file{\n    border-bottom-right-radius: 0 !important;\n    border-top-right-radius: 0 !important;\n}\n.file-input .input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    margin-left: -1px;\n}\n.file-error-message {\n    color: #FE5B5B;\n}\n.noresize {\n    resize: none;\n}\n.radio-inline + .radio-inline,\n.checkbox-inline + .checkbox-inline {\n    margin-left: 0;\n}\nimg.flag {\n    height: 16px;\n    width: 28px;\n    padding-right: 10px;\n}\n.file-preview-image {\n    max-width: 100% !important;\n}\n.m-b-10 {\n    margin-bottom: 10px !important;\n}\n.m-t-ng-8 {\n    margin-top: -8px;\n}\n#kvFileinputModal.file-zoom-fullscreen {\n    z-index: 10009;\n}\n.input-group-sm > .input-group-addon {\n    padding: 3px 10px;\n}\n.input-group-lg > .input-group-addon {\n    padding: 9px 16px;\n}\n.has-success .form-control{\n    border:1px solid #66cc99 !important;\n}\n.has-warning .form-control {\n    border-color: #f0ad4e;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-error .form-control {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.input-sm{\n    height: 30px;\n    padding: 5px 10px;\n    font-size: 12px;\n    line-height: 1.5;\n    border-radius: 3px;\n}\n.input-md{\n    height: 34px;\n    padding: 5px 10px;\n    font-size: 12px;\n    line-height: 1.5;\n    border-radius: 3px;\n}\n.input-lg{\n    height: 46px;\n    padding: 10px 16px;\n    font-size: 18px;\n    line-height: 1.33333;\n    border-radius: 6px;\n}\n.kv-upload-progress>.progress,.fileinput-cancel-button{\n    display: none;\n}\n.custom-checkbox,.custom-radio{\n    margin: 0;\n}\n.inline_radio .custom-radio,.inline_check .custom-checkbox{\n    padding-right: 50px;\n}\n.form-control:disabled{\n    cursor:not-allowed;\n}\n.content .card{\n    margin-top: 10px;\n}\n@media(min-width: 320px) and (max-width: 425px){\n.input-group,.file-input-new,.btn-modify{\n        margin-bottom: 10px;\n}\n.input-group-btn .hidden-xs{\n        display: none;\n}\n}\n@media (max-width:768px){\n.input-group{\n        margin-bottom: 10px;\n}\n}\n.inlineRadio .custom-radio{\n    margin-right: 10px !important;\n}\n.dropdown-menu.show{\n    margin-right: 20px;\n}\n#input-text-has-success:focus{\n    box-shadow: 0px 0px 5px 0.1px #66cc99;\n}\n#input-text-has-warning:focus{\n    box-shadow: 0px 0px 5px 0.1px #f0ad4e;\n}\n#input-text-has-error:focus{\n    box-shadow: 0px 0px 5px 0.1px #ff6666;\n}\n.kv-file-zoom,.file-upload-indicator{\n    display: none;\n}\n.file-caption-main .btn-default{\n    color: #333;\n}\n.btn:active{\n    color: #fff !important;\n}\n.input_height .btn-group.show .dropdown-toggle{\n    color: #fff;\n}\n#input-20{\n    margin-bottom: 10px;\n}\n.input-group-btn .dropdown-menu{\n    z-index: 99;\n}\n\n\n\n/*bootstrap3 ovverrides*/\n.file-input-section .input-group-append .btn-file,.file-input-section .file-input .btn-file{\n    border-top-right-radius: 0.25rem !important;\n    border-bottom-right-radius: 0.25rem !important;\n}", ""]);
+exports.push([module.i, "/*!\r\n * Datetimepicker for Bootstrap 3\r\n * version : 4.17.47\r\n * https://github.com/Eonasdan/bootstrap-datetimepicker/\r\n */\n.bootstrap-datetimepicker-widget{list-style:none\n}\n.bootstrap-datetimepicker-widget.dropdown-menu{display:block;margin:2px 0;padding:4px;width:19em\n}\n@media (min-width:768px){\n.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em\n}\n}\n@media (min-width:992px){\n.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em\n}\n}\n@media (min-width:1200px){\n.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em\n}\n}\n.bootstrap-datetimepicker-widget.dropdown-menu:before,.bootstrap-datetimepicker-widget.dropdown-menu:after{content:'';display:inline-block;position:absolute\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);top:-7px;left:7px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid white;top:-6px;left:8px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.top:before{border-left:7px solid transparent;border-right:7px solid transparent;border-top:7px solid #ccc;border-top-color:rgba(0,0,0,0.2);bottom:-7px;left:6px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.top:after{border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid white;bottom:-6px;left:7px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before{left:auto;right:6px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after{left:auto;right:7px\n}\n.bootstrap-datetimepicker-widget .list-unstyled{margin:0\n}\n.bootstrap-datetimepicker-widget a[data-action]{padding:6px 0\n}\n.bootstrap-datetimepicker-widget a[data-action]:active{box-shadow:none\n}\n.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:54px;font-weight:bold;font-size:1.2em;margin:0\n}\n.bootstrap-datetimepicker-widget button[data-action]{padding:6px\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"incrementHours\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Increment Hours\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"incrementMinutes\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Increment Minutes\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"decrementHours\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Decrement Hours\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"decrementMinutes\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Decrement Minutes\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"showHours\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Show Hours\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"showMinutes\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Show Minutes\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"togglePeriod\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Toggle AM/PM\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"clear\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Clear the picker\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"today\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Set the date to today\"\n}\n.bootstrap-datetimepicker-widget .picker-switch{text-align:center\n}\n.bootstrap-datetimepicker-widget .picker-switch::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Toggle Date and Time Screens\"\n}\n.bootstrap-datetimepicker-widget .picker-switch td{padding:0;margin:0;height:auto;width:auto;line-height:inherit\n}\n.bootstrap-datetimepicker-widget .picker-switch td span{line-height:2.5;height:2.5em;width:100%\n}\n.bootstrap-datetimepicker-widget table{width:100%;margin:0\n}\n.bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th{text-align:center;border-radius:4px\n}\n.bootstrap-datetimepicker-widget table th{height:20px;line-height:20px;width:20px\n}\n.bootstrap-datetimepicker-widget table th.picker-switch{width:145px\n}\n.bootstrap-datetimepicker-widget table th.disabled,.bootstrap-datetimepicker-widget table th.disabled:hover{background:none;color:#777;cursor:not-allowed\n}\n.bootstrap-datetimepicker-widget table th.prev::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Previous Month\"\n}\n.bootstrap-datetimepicker-widget table th.next::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Next Month\"\n}\n.bootstrap-datetimepicker-widget table thead tr:first-child th{cursor:pointer\n}\n.bootstrap-datetimepicker-widget table thead tr:first-child th:hover{background:#eee\n}\n.bootstrap-datetimepicker-widget table td{height:54px;line-height:54px;width:54px\n}\n.bootstrap-datetimepicker-widget table td.cw{font-size:.8em;height:20px;line-height:20px;color:#777\n}\n.bootstrap-datetimepicker-widget table td.day{height:20px;line-height:20px;width:20px\n}\n.bootstrap-datetimepicker-widget table td.day:hover,.bootstrap-datetimepicker-widget table td.hour:hover,.bootstrap-datetimepicker-widget table td.minute:hover,.bootstrap-datetimepicker-widget table td.second:hover{background:#eee;cursor:pointer\n}\n.bootstrap-datetimepicker-widget table td.old,.bootstrap-datetimepicker-widget table td.new{color:#777\n}\n.bootstrap-datetimepicker-widget table td.today{position:relative\n}\n.bootstrap-datetimepicker-widget table td.today:before{content:'';display:inline-block;border:solid transparent;border-width:0 0 7px 7px;border-bottom-color:#337ab7;border-top-color:rgba(0,0,0,0.2);position:absolute;bottom:4px;right:4px\n}\n.bootstrap-datetimepicker-widget table td.active,.bootstrap-datetimepicker-widget table td.active:hover{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)\n}\n.bootstrap-datetimepicker-widget table td.active.today:before{border-bottom-color:#fff\n}\n.bootstrap-datetimepicker-widget table td.disabled,.bootstrap-datetimepicker-widget table td.disabled:hover{background:none;color:#777;cursor:not-allowed\n}\n.bootstrap-datetimepicker-widget table td span{display:inline-block;width:54px;height:54px;line-height:54px;margin:2px 1.5px;cursor:pointer;border-radius:4px\n}\n.bootstrap-datetimepicker-widget table td span:hover{background:#eee\n}\n.bootstrap-datetimepicker-widget table td span.active{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)\n}\n.bootstrap-datetimepicker-widget table td span.old{color:#777\n}\n.bootstrap-datetimepicker-widget table td span.disabled,.bootstrap-datetimepicker-widget table td span.disabled:hover{background:none;color:#777;cursor:not-allowed\n}\n.bootstrap-datetimepicker-widget.usetwentyfour td.hour{height:27px;line-height:27px\n}\n.bootstrap-datetimepicker-widget.wider{width:21em\n}\n.bootstrap-datetimepicker-widget .datepicker-decades .decade{line-height:1.8em !important\n}\n.input-group.date .input-group-addon{cursor:pointer\n}\n.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1282:
+/***/ 1402:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1403);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("c1bbbc3c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./realtime_form.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./realtime_form.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1403:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.trip-type, .trip-type-multi {\n    background-color: rgba(0, 0, 0, .35);\n    border-radius: 50%;\n    width: 36px;\n    height: 36px;\n    margin: 21px auto 0;\n    padding: 7px;\n}\n.trip-type .icon, .trip-type-multi .icon {\n    color     : #FFF;\n    font-size : 20px;\n}\n#adult:focus, #adult-multi:focus,\n#child:focus, #child-multi:focus,\n#infant:focus, #infant-multi:focus {\n    border-color : #CCC;\n    outline      : 0;\n    box-shadow   : none;\n}\n.multi-flight-data {\n    padding-top: 10px;\n    padding-bottom: 7px;\n    border-bottom : 1px dashed #EEEEEE;\n}\n#nonsingle-stop .remove-flight {\n    position: absolute;\n    right: 5px;\n    bottom: 27px;\n    background-color: #ff6666;\n    color: #fff;\n    padding: 2px;\n    border-radius: 50px;\n}\n.price-alert {\n    margin-top : 10px;\n}\n.radio-inline, .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {\n    padding-top: 7px;\n    margin-left: 18px;\n}\n@media screen and (max-width : 767px) {\n.trip-type {\n        margin : 41px auto -60px;\n        background: 0;\n}\n.trip-type .icon, .trip-type-multi .icon {\n        color: rgba(0, 0, 0, .35);\n}\n}\n/*cab booking*/\n.ride-time .ride-on {\n    background-color : #C5E043;\n    display          : inline-block;\n    padding          : 5px 10px;\n}\n.ride-time input[type=radio] {\n    display : none\n}\n.ride-time input[type=radio]:checked + .ride-on {\n    background-color : #241009;\n    color            : #C5E043;\n}\n.cab-types .cab-type {\n    background-color : #eee;\n    display          : inline-block;\n    padding: 4% 10%;\n}\n.cab-types input[type=radio] {\n    display : none\n}\n.cab-types input[type=radio]:checked + .cab-type {\n    background-color : #241009;\n    color            : #eee;\n}\n.fund_text{\n    font-size: 16px;\n    font-weight: 700;\n    line-height: 18px;\n    color: #333333;\n}\n/*gmaps*/\n.gmap {\n    width  : 100%;\n    height : 300px;\n    margin : 5px auto;\n}\n.chooseon-map {\n    margin-top: 24px;\n    background-color: #fff;\n    border: 1px solid #ccc;\n}\n@media screen and (min-width : 768px) {\n.m-l-16 {\n        margin-left: -16px;\n}\n}\n@media screen and (max-width : 767px) {\n.m-r-20 {\n        margin-right: 21px;\n}\n}\n.btn-default{\n    color:#333;\n}\n.control-label{\n    width: 100%;\n}\n@media(max-width:768px){\n#multi-air{\n        margin-bottom: 10px;\n}\n}\n.prev .glyphicon-chevron-left:before{\n    content: \"\\E64A\";\n    font-family: \"themify\";\n}\n.next .glyphicon-chevron-right:before{\n    content: \"\\E649\";\n    font-family: \"themify\";\n}\n.dropdown-menu.usetwentyfour{\n    z-index: 99;\n}\n.btn{\n    cursor: pointer;\n}\n@media(min-width: 320px) and (max-width: 425px)\n{\n#nonsingle-stop .remove-flight{\n        bottom: 8px;\n        right:-20px;\n}\n}\n@media(max-width:320px){\n.bootstrap-datetimepicker-widget{\n      left: 10px !important;\n}\n}\n.btn:active{\n    color: #fff !important;\n}\n.bootstrap-datetimepicker-widget{\n    bottom:0;\n}\n.multi-flight-data label.m-l-16{\n    margin-bottom: 0;\n}\n@media(max-width: 1024px){\n.boxed .bootstrap-datetimepicker-widget{\n        left: -100px !important;\n}\n}\n.popover-container{\n    padding: 0;\n    z-index: inherit !important;\n}\n#single-stop .popover-origin{\n    z-index: 99 !important;\n}\n#single-stop .popover-container input{\n    padding: 0.35rem 0.75rem;\n    width:100%;\n    border:none;\n}\n#single-stop .popover-container input:focus{\n    outline: none;\n}\n#single-stop .popover-container input:focus{\n    border: 1px solid #7EC4E7 !important;\n}\n.realtime_forms #multistop_departure:focus,.realtime_forms #multistop_departure2:focus,.realtime_forms #departure_date:focus,.realtime_forms #return_date:focus{\n    border-top-right-radius: 3px;\n    border-bottom-right-radius: 3px;\n}\n\n/*bootstrap 3 overrides*/\n#nonsingle-stop .bootstrap-touchspin-down,#nonsingle-stop .bootstrap-touchspin-up,#single-stop .bootstrap-touchspin-down,#single-stop .bootstrap-touchspin-up{\n    border-radius: 0;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(528);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(529);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js__ = __webpack_require__(1283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js__ = __webpack_require__(1284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_eonasdan_bootstrap_datetimepicker_build_js_bootstrap_datetimepicker_min_js__ = __webpack_require__(1405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_eonasdan_bootstrap_datetimepicker_build_js_bootstrap_datetimepicker_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_eonasdan_bootstrap_datetimepicker_build_js_bootstrap_datetimepicker_min_js__);
 //
 //
 //
@@ -739,145 +605,87 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+var moment = __webpack_require__(0);
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: "blank",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
         return {
-            selected: 'first',
-            options: [{ text: 'First radio', value: 'first' }, { text: 'Second radio', value: 'second' }, { text: 'Third radio', value: 'third' }],
-            radios: [{ text: 'First radio', value: 'first' }, { text: 'Second radio', value: 'second' }, { text: 'Third radio', value: 'third' }],
-            stacked_check: ['Checkbox 1', 'Checkbox 2', 'Checkbox 3'],
-            check: ['Checkbox 1', 'Checkbox 2', 'Checkbox 3']
+            get: '',
+            selected: 'option3',
+            inputs: []
+
         };
     },
 
-    name: "form-elements",
+    methods: {
+        addRow: function addRow() {
+            if (this.inputs.length < 4) {
+                this.inputs.push({
+                    one: '',
+                    two: ''
+                });
+                setTimeout(function () {
+                    $(".departure_date").datetimepicker({
+                        format: 'DD/MM/YYYY'
+                    });
+                });
+            }
+        },
+        deleteRow: function deleteRow(index) {
+            this.inputs.splice(index, 1);
+        }
+    },
     mounted: function mounted() {
         "use strict";
 
-        $("#input-43").fileinput({
-            browseClass: "btn btn-info",
-            showPreview: false,
-            allowedFileExtensions: ["zip", "rar", "gz", "tgz"],
-            elErrorContainer: "#errorBlock43",
-            theme: "fa"
-            // you can configure `msgErrorClass` and `msgInvalidFileExtension` as well
+        $("#departure_date,#return_date,.departure_date,#checkin_date,#checkout_date").datetimepicker({
+            format: 'DD/MM/YYYY'
         });
-        $("#input-42").fileinput({
-            browseClass: "btn btn-warning",
-            maxFilesNum: 10,
-            allowedFileExtensions: ["jpg", "gif", "png", "txt"],
-            theme: "fa"
-        });
-        $("#input-41").fileinput({
-            browseClass: "btn btn-danger",
-            maxFileCount: 10,
-            allowedFileTypes: ["image", "video"],
-            theme: "fa"
-        });
-        $("#input-40,#input-22").fileinput({
-            theme: "fa"
-        });
-        $(".btn-modify").on("click", function () {
 
-            var $btn = $(this);
-            if ($btn.text() == "Modify") {
-                $("#input-40").fileinput("disable");
-                $btn.html("Revert");
-                alert("Hurray! I have disabled the input and hidden the upload button.");
-            } else {
-                $("#input-40").fileinput("enable");
-                $btn.html("Modify");
-                alert("Hurray! I have reverted back the input to enabled with the upload button.");
-            }
+        // touchspin initialisation
+        $("input[name='adult_count']").TouchSpin({
+            initval: 1,
+            min: 1,
+            max: 9,
+            mousewheel: false
         });
-        $("#input-23").fileinput({
-            browseClass: "btn btn-secondary",
-            showUpload: false,
-            mainTemplate: "{preview}\n" + "<div class='input-group {class}'>\n" + "   <div class='input-group-btn'>\n" + "       {browse}\n" + "       {upload}\n" + "       {remove}\n" + "   </div>\n" + "   {caption}\n" + "</div>",
-            theme: "fa"
+        $("input[name='child_count']").TouchSpin({
+            initval: 0,
+            min: 0,
+            max: 9,
+            mousewheel: false
         });
-        $("#input-21").fileinput({
-            previewFileType: "image",
-            browseClass: "btn btn-success",
-            browseLabel: " Pick Image",
-
-            removeClass: "btn btn-danger",
-            removeLabel: "Delete",
-
-            uploadClass: "btn btn-info",
-            uploadLabel: " Upload",
-
-            theme: "fa"
+        $("input[name='infant_count']").TouchSpin({
+            initval: 0,
+            min: 0,
+            max: 4,
+            mousewheel: false
         });
-        $("#input-20").fileinput({
-            browseClass: "btn btn-info btn-block",
-            showCaption: false,
-            showRemove: false,
-            showUpload: false,
-            theme: "fa"
-        });
-        $("#input-4").fileinput({
-            browseClass: "btn btn-success",
-            showCaption: false
-        });
-        $("#input-5").fileinput({
-            browseClass: "btn btn-warning",
-            showUpload: false,
-            maxFileCount: 10,
-            mainClass: "input-group-lg"
-        });
-    }
+    },
+    destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(526)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(527)))
 
 /***/ }),
 
-/***/ 1283:
+/***/ 1405:
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * bootstrap-fileinput v4.5.1
- * http://plugins.krajee.com/file-input
- *
- * Author: Kartik Visweswaran
- * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com
- *
- * Licensed under the BSD 3-Clause
- * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md
- */
-!function(e){"use strict"; true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(526)], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(a){"use strict";if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(527),__webpack_require__(0)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof module&&module.exports?module.exports=e(require("jquery")):e(window.jQuery)}(function(e){"use strict";var t,i;e.fn.fileinputLocales={},e.fn.fileinputThemes={},String.prototype.setTokens=function(e){var t,i,a=this.toString();for(t in e)e.hasOwnProperty(t)&&(i=new RegExp("{"+t+"}","g"),a=a.replace(i,e[t]));return a},t={FRAMES:".kv-preview-thumb",SORT_CSS:"file-sortable",OBJECT_PARAMS:'<param name="controller" value="true" />\n<param name="allowFullScreen" value="true" />\n<param name="allowScriptAccess" value="always" />\n<param name="autoPlay" value="false" />\n<param name="autoStart" value="false" />\n<param name="quality" value="high" />\n',DEFAULT_PREVIEW:'<div class="file-preview-other">\n<span class="{previewFileIconClass}">{previewFileIcon}</span>\n</div>',MODAL_ID:"kvFileinputModal",MODAL_EVENTS:["show","shown","hide","hidden","loaded"],objUrl:window.URL||window.webkitURL,compare:function(e,t,i){return void 0!==e&&(i?e===t:e.match(t))},isIE:function(e){if("Microsoft Internet Explorer"!==navigator.appName)return!1;if(10===e)return new RegExp("msie\\s"+e,"i").test(navigator.userAgent);var t,i=document.createElement("div");return i.innerHTML="\x3c!--[if IE "+e+"]> <i></i> <![endif]--\x3e",t=i.getElementsByTagName("i").length,document.body.appendChild(i),i.parentNode.removeChild(i),t},canAssignFilesToInput:function(){var e=document.createElement("input");try{return e.type="file",e.files=null,!0}catch(e){return!1}},getDragDropFolders:function(e){var t,i,a=e.length,r=0;if(a>0&&e[0].webkitGetAsEntry())for(t=0;t<a;t++)(i=e[t].webkitGetAsEntry())&&i.isDirectory&&r++;return r},initModal:function(t){var i=e("body");i.length&&t.appendTo(i)},isEmpty:function(t,i){return null==t||0===t.length||i&&""===e.trim(t)},isArray:function(e){return Array.isArray(e)||"[object Array]"===Object.prototype.toString.call(e)},ifSet:function(e,t,i){return i=i||"",t&&"object"==typeof t&&e in t?t[e]:i},cleanArray:function(e){return e instanceof Array||(e=[]),e.filter(function(e){return null!=e})},spliceArray:function(t,i,a){var r,n,s=0,o=[];if(!(t instanceof Array))return[];for(n=e.extend(!0,[],t),a&&n.reverse(),r=0;r<n.length;r++)r!==i&&(o[s]=n[r],s++);return a&&o.reverse(),o},getNum:function(e,t){return t=t||0,"number"==typeof e?e:("string"==typeof e&&(e=parseFloat(e)),isNaN(e)?t:e)},hasFileAPISupport:function(){return!(!window.File||!window.FileReader)},hasDragDropSupport:function(){var e=document.createElement("div");return!t.isIE(9)&&(void 0!==e.draggable||void 0!==e.ondragstart&&void 0!==e.ondrop)},hasFileUploadSupport:function(){return t.hasFileAPISupport()&&window.FormData},hasBlobSupport:function(){try{return!!window.Blob&&Boolean(new Blob)}catch(e){return!1}},hasArrayBufferViewSupport:function(){try{return 100===new Blob([new Uint8Array(100)]).size}catch(e){return!1}},dataURI2Blob:function(e){var i,a,r,n,s,o,l=window.BlobBuilder||window.WebKitBlobBuilder||window.MozBlobBuilder||window.MSBlobBuilder,d=t.hasBlobSupport();if(!((d||l)&&window.atob&&window.ArrayBuffer&&window.Uint8Array))return null;for(i=e.split(",")[0].indexOf("base64")>=0?atob(e.split(",")[1]):decodeURIComponent(e.split(",")[1]),a=new ArrayBuffer(i.length),r=new Uint8Array(a),n=0;n<i.length;n+=1)r[n]=i.charCodeAt(n);return s=e.split(",")[0].split(":")[1].split(";")[0],d?new Blob([t.hasArrayBufferViewSupport()?r:a],{type:s}):((o=new l).append(a),o.getBlob(s))},arrayBuffer2String:function(e){if(window.TextDecoder)return new TextDecoder("utf-8").decode(e);var t,i,a,r,n=Array.prototype.slice.apply(new Uint8Array(e)),s="",o=0;for(t=n.length;o<t;)switch((i=n[o++])>>4){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:s+=String.fromCharCode(i);break;case 12:case 13:a=n[o++],s+=String.fromCharCode((31&i)<<6|63&a);break;case 14:a=n[o++],r=n[o++],s+=String.fromCharCode((15&i)<<12|(63&a)<<6|(63&r)<<0)}return s},isHtml:function(e){var t=document.createElement("div");t.innerHTML=e;for(var i=t.childNodes,a=i.length;a--;)if(1===i[a].nodeType)return!0;return!1},isSvg:function(e){return e.match(/^\s*<\?xml/i)&&(e.match(/<!DOCTYPE svg/i)||e.match(/<svg/i))},getMimeType:function(e,t,i){switch(e){case"ffd8ffe0":case"ffd8ffe1":case"ffd8ffe2":return"image/jpeg";case"89504E47":return"image/png";case"47494638":return"image/gif";case"49492a00":return"image/tiff";case"52494646":return"image/webp";case"66747970":return"video/3gp";case"4f676753":return"video/ogg";case"1a45dfa3":return"video/mkv";case"000001ba":case"000001b3":return"video/mpeg";case"3026b275":return"video/wmv";case"25504446":return"application/pdf";case"25215053":return"application/ps";case"504b0304":case"504b0506":case"504b0508":return"application/zip";case"377abcaf":return"application/7z";case"75737461":return"application/tar";case"7801730d":return"application/dmg";default:switch(e.substring(0,6)){case"435753":return"application/x-shockwave-flash";case"494433":return"audio/mp3";case"425a68":return"application/bzip";default:switch(e.substring(0,4)){case"424d":return"image/bmp";case"fffb":return"audio/mp3";case"4d5a":return"application/exe";case"1f9d":case"1fa0":return"application/zip";case"1f8b":return"application/gzip";default:return t&&!t.match(/[^\u0000-\u007f]/)?"application/text-plain":i}}}},addCss:function(e,t){e.removeClass(t).addClass(t)},getElement:function(i,a,r){return t.isEmpty(i)||t.isEmpty(i[a])?r:e(i[a])},uniqId:function(){return Math.round((new Date).getTime())+"_"+Math.round(100*Math.random())},htmlEncode:function(e,t){return void 0===e?t||null:e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;")},replaceTags:function(t,i){var a=t;return i?(e.each(i,function(e,t){"function"==typeof t&&(t=t()),a=a.split(e).join(t)}),a):a},cleanMemory:function(e){var i=e.is("img")?e.attr("src"):e.find("source").attr("src");t.objUrl.revokeObjectURL(i)},findFileName:function(e){var t=e.lastIndexOf("/");return-1===t&&(t=e.lastIndexOf("\\")),e.split(e.substring(t,t+1)).pop()},checkFullScreen:function(){return document.fullscreenElement||document.mozFullScreenElement||document.webkitFullscreenElement||document.msFullscreenElement},toggleFullScreen:function(e){var i=document,a=i.documentElement;a&&e&&!t.checkFullScreen()?a.requestFullscreen?a.requestFullscreen():a.msRequestFullscreen?a.msRequestFullscreen():a.mozRequestFullScreen?a.mozRequestFullScreen():a.webkitRequestFullscreen&&a.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT):i.exitFullscreen?i.exitFullscreen():i.msExitFullscreen?i.msExitFullscreen():i.mozCancelFullScreen?i.mozCancelFullScreen():i.webkitExitFullscreen&&i.webkitExitFullscreen()},moveArray:function(t,i,a,r){var n=e.extend(!0,[],t);if(r&&n.reverse(),a>=n.length)for(var s=a-n.length;1+s--;)n.push(void 0);return n.splice(a,0,n.splice(i,1)[0]),r&&n.reverse(),n},cleanZoomCache:function(e){var t=e.closest(".kv-zoom-cache-theme");t.length||(t=e.closest(".kv-zoom-cache")),t.remove()},closeButton:function(e){return'<button type="button" class="'+(e=e?"close "+e:"close")+'" aria-label="Close">\n  <span aria-hidden="true">&times;</span>\n</button>'},getRotation:function(e){switch(e){case 2:return"rotateY(180deg)";case 3:return"rotate(180deg)";case 4:return"rotate(180deg) rotateY(180deg)";case 5:return"rotate(270deg) rotateY(180deg)";case 6:return"rotate(90deg)";case 7:return"rotate(90deg) rotateY(180deg)";case 8:return"rotate(270deg)";default:return""}},setTransform:function(e,t){e&&(e.style.transform=t,e.style.webkitTransform=t,e.style["-moz-transform"]=t,e.style["-ms-transform"]=t,e.style["-o-transform"]=t)},setImageOrientation:function(e,i,a){if(e&&e.length){var r="load.fileinputimageorient";e.off(r).on(r,function(){var r=e.get(0),n=i&&i.length?i.get(0):null,s=r.offsetHeight,o=r.offsetWidth,l=t.getRotation(a);if(e.data("orientation",a),n&&i.data("orientation",a),a<5)return t.setTransform(r,l),void t.setTransform(n,l);var d=Math.atan(o/s),c=Math.sqrt(Math.pow(s,2)+Math.pow(o,2)),h=c?s/Math.cos(Math.PI/2+d)/c:1,p=" scale("+Math.abs(h)+")";t.setTransform(r,l+p),t.setTransform(n,l+p)})}}},(i=function(i,a){this.$element=e(i),this.$parent=this.$element.parent(),this._validate()&&(this.isPreviewable=t.hasFileAPISupport(),this.isIE9=t.isIE(9),this.isIE10=t.isIE(10),(this.isPreviewable||this.isIE9)&&(this._init(a),this._listen()),this.$element.removeClass("file-loading"))}).prototype={constructor:i,_cleanup:function(){this.reader=null,this.formdata={},this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.uploadAsyncCount=0,this.loadedImages=[],this.totalImagesCount=0,this.ajaxRequests=[],this.clearStack(),this.fileBatchCompleted=!0,this.isPreviewable||(this.showPreview=!1),this.isError=!1,this.ajaxAborted=!1,this.cancelling=!1},_init:function(i,a){var r,n,s,o,l=this,d=l.$element;l.options=i,e.each(i,function(e,i){switch(e){case"minFileCount":case"maxFileCount":case"minFileSize":case"maxFileSize":case"maxFilePreviewSize":case"resizeImageQuality":case"resizeIfSizeMoreThan":case"progressUploadThreshold":case"initialPreviewCount":case"zoomModalHeight":case"minImageHeight":case"maxImageHeight":case"minImageWidth":case"maxImageWidth":l[e]=t.getNum(i);break;default:l[e]=i}}),l.rtl&&(o=l.previewZoomButtonIcons.prev,l.previewZoomButtonIcons.prev=l.previewZoomButtonIcons.next,l.previewZoomButtonIcons.next=o),a||l._cleanup(),l.$form=d.closest("form"),l._initTemplateDefaults(),l.uploadFileAttr=t.isEmpty(d.attr("name"))?"file_data":d.attr("name"),s=l._getLayoutTemplate("progress"),l.progressTemplate=s.replace("{class}",l.progressClass),l.progressCompleteTemplate=s.replace("{class}",l.progressCompleteClass),l.progressErrorTemplate=s.replace("{class}",l.progressErrorClass),l.isDisabled=d.attr("disabled")||d.attr("readonly"),l.isDisabled&&d.attr("disabled",!0),l.isClickable=l.browseOnZoneClick&&l.showPreview&&(l.dropZoneEnabled||!t.isEmpty(l.defaultPreviewContent)),l.isAjaxUpload=t.hasFileUploadSupport()&&!t.isEmpty(l.uploadUrl),l.dropZoneEnabled=t.hasDragDropSupport()&&l.dropZoneEnabled,l.isAjaxUpload||(l.dropZoneEnabled=l.dropZoneEnabled&&t.canAssignFilesToInput()),l.slug="function"==typeof i.slugCallback?i.slugCallback:l._slugDefault,l.mainTemplate=l.showCaption?l._getLayoutTemplate("main1"):l._getLayoutTemplate("main2"),l.captionTemplate=l._getLayoutTemplate("caption"),l.previewGenericTemplate=l._getPreviewTemplate("generic"),!l.imageCanvas&&l.resizeImage&&(l.maxImageWidth||l.maxImageHeight)&&(l.imageCanvas=document.createElement("canvas"),l.imageCanvasContext=l.imageCanvas.getContext("2d")),t.isEmpty(d.attr("id"))&&d.attr("id",t.uniqId()),l.namespace=".fileinput_"+d.attr("id").replace(/-/g,"_"),void 0===l.$container?l.$container=l._createContainer():l._refreshContainer(),n=l.$container,l.$dropZone=n.find(".file-drop-zone"),l.$progress=n.find(".kv-upload-progress"),l.$btnUpload=n.find(".fileinput-upload"),l.$captionContainer=t.getElement(i,"elCaptionContainer",n.find(".file-caption")),l.$caption=t.getElement(i,"elCaptionText",n.find(".file-caption-name")),t.isEmpty(l.msgPlaceholder)||(r=d.attr("multiple")?l.filePlural:l.fileSingle,l.$caption.attr("placeholder",l.msgPlaceholder.replace("{files}",r))),l.$captionIcon=l.$captionContainer.find(".file-caption-icon"),l.$previewContainer=t.getElement(i,"elPreviewContainer",n.find(".file-preview")),l.$preview=t.getElement(i,"elPreviewImage",n.find(".file-preview-thumbnails")),l.$previewStatus=t.getElement(i,"elPreviewStatus",n.find(".file-preview-status")),l.$errorContainer=t.getElement(i,"elErrorContainer",l.$previewContainer.find(".kv-fileinput-error")),l._validateDisabled(),t.isEmpty(l.msgErrorClass)||t.addCss(l.$errorContainer,l.msgErrorClass),a?l._errorsExist()||l.$errorContainer.hide():(l.$errorContainer.hide(),l.previewInitId="preview-"+t.uniqId(),l._initPreviewCache(),l._initPreview(!0),l._initPreviewActions(),l.$parent.hasClass("file-loading")&&(l.$container.insertBefore(l.$parent),l.$parent.remove())),l._setFileDropZoneTitle(),d.attr("disabled")&&l.disable(),l._initZoom(),l.hideThumbnailContent&&t.addCss(l.$preview,"hide-content")},_initTemplateDefaults:function(){var i,a,r,n,s,o,l,d,c,h=this;i=t.closeButton("fileinput-remove"),a='<div id="'+t.MODAL_ID+'" class="file-zoom-dialog modal fade" tabindex="-1" aria-labelledby="'+t.MODAL_ID+'Label"></div>',r='<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}"',n='<video class="kv-preview-data file-preview-video" controls {style}>\n<source src="{data}" type="{type}">\n'+t.DEFAULT_PREVIEW+"\n</video>\n",s='\x3c!--suppress ALL --\x3e<audio class="kv-preview-data file-preview-audio" controls {style}>\n<source src="{data}" type="{type}">\n'+t.DEFAULT_PREVIEW+"\n</audio>\n",l='<embed class="kv-preview-data file-preview-pdf" src="{data}" type="application/pdf" {style}>\n',o='<object class="kv-preview-data file-preview-object file-object {typeCss}" data="{data}" type="{type}" {style}>\n<param name="movie" value="{caption}" />\n'+t.OBJECT_PARAMS+" "+t.DEFAULT_PREVIEW+"\n</object>\n",d='<div class="kv-preview-data file-preview-other-frame" {style}>\n'+t.DEFAULT_PREVIEW+"\n</div>\n",c={width:"100%",height:"100%","min-height":"480px"},h._isPdfRendered()&&(l=h.pdfRendererTemplate.replace("{renderer}",h.pdfRendererUrl)),h.defaults={layoutTemplates:{main1:'{preview}\n<div class="kv-upload-progress kv-hidden"></div><div class="clearfix"></div>\n<div class="input-group {class}">\n  {caption}\n<div class="input-group-btn input-group-append">\n      {remove}\n      {cancel}\n      {upload}\n      {browse}\n    </div>\n</div>',main2:'{preview}\n<div class="kv-upload-progress kv-hidden"></div>\n<div class="clearfix"></div>\n{remove}\n{cancel}\n{upload}\n{browse}\n',preview:'<div class="file-preview {class}">\n    {close}    <div class="{dropClass}">\n    <div class="file-preview-thumbnails">\n    </div>\n    <div class="clearfix"></div>    <div class="file-preview-status text-center text-success"></div>\n    <div class="kv-fileinput-error"></div>\n    </div>\n</div>',close:i,fileIcon:'<i class="glyphicon glyphicon-file"></i>',caption:'<div class="file-caption form-control {class}" tabindex="500">\n  <span class="file-caption-icon"></span>\n  <input class="file-caption-name" onkeydown="return false;" onpaste="return false;">\n</div>',modalMain:a,modal:'<div class="modal-dialog modal-lg{rtl}" role="document">\n  <div class="modal-content">\n    <div class="modal-header">\n      <h5 class="modal-title">{heading}</h5>\n      <span class="kv-zoom-title"></span>\n      <div class="kv-zoom-actions">{toggleheader}{fullscreen}{borderless}{close}</div>\n    </div>\n    <div class="modal-body">\n      <div class="floating-buttons"></div>\n      <div class="kv-zoom-body file-zoom-content {zoomFrameClass}"></div>\n{prev} {next}\n    </div>\n  </div>\n</div>\n',progress:'<div class="progress">\n    <div class="{class}" role="progressbar" aria-valuenow="{percent}" aria-valuemin="0" aria-valuemax="100" style="width:{percent}%;">\n        {status}\n     </div>\n</div>',size:" <samp>({sizeText})</samp>",footer:'<div class="file-thumbnail-footer">\n    <div class="file-footer-caption" title="{caption}">\n        <div class="file-caption-info">{caption}</div>\n        <div class="file-size-info">{size}</div>\n    </div>\n    {progress}\n{indicator}\n{actions}\n</div>',indicator:'<div class="file-upload-indicator" title="{indicatorTitle}">{indicator}</div>',actions:'<div class="file-actions">\n    <div class="file-footer-buttons">\n        {download} {upload} {delete} {zoom} {other}    </div>\n</div>\n{drag}\n<div class="clearfix"></div>',actionDelete:'<button type="button" class="kv-file-remove {removeClass}" title="{removeTitle}" {dataUrl}{dataKey}>{removeIcon}</button>\n',actionUpload:'<button type="button" class="kv-file-upload {uploadClass}" title="{uploadTitle}">{uploadIcon}</button>',actionDownload:'<a class="kv-file-download {downloadClass}" title="{downloadTitle}" href="{downloadUrl}" download="{caption}" target="_blank">{downloadIcon}</a>',actionZoom:'<button type="button" class="kv-file-zoom {zoomClass}" title="{zoomTitle}">{zoomIcon}</button>',actionDrag:'<span class="file-drag-handle {dragClass}" title="{dragTitle}">{dragIcon}</span>',btnDefault:'<button type="{type}" tabindex="500" title="{title}" class="{css}" {status}>{icon} {label}</button>',btnLink:'<a href="{href}" tabindex="500" title="{title}" class="{css}" {status}>{icon} {label}</a>',btnBrowse:'<div tabindex="500" class="{css}" {status}>{icon} {label}</div>',zoomCache:'<div class="kv-zoom-cache" style="display:none">{zoomContent}</div>'},previewMarkupTags:{tagBefore1:'<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}"><div class="kv-file-content">\n',tagBefore2:'<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}" title="{caption}"><div class="kv-file-content">\n',tagAfter:"</div>{footer}\n</div>\n"},previewContentTemplates:{generic:"{content}\n",html:'<div class="kv-preview-data file-preview-html" title="{caption}" {style}>{data}</div>\n',image:'<img src="{data}" class="file-preview-image kv-preview-data" title="{caption}" alt="{caption}" {style}>\n',text:'<textarea class="kv-preview-data file-preview-text" title="{caption}" readonly {style}>{data}</textarea>\n',office:'<iframe class="kv-preview-data file-preview-office" src="https://view.officeapps.live.com/op/embed.aspx?src={data}" {style}></iframe>',gdocs:'<iframe class="kv-preview-data file-preview-gdocs" src="https://docs.google.com/gview?url={data}&embedded=true" {style}></iframe>',video:n,audio:s,flash:'<embed class="kv-preview-data file-preview-flash" src="{data}" type="application/x-shockwave-flash" {style}>\n',object:o,pdf:l,other:d},allowedPreviewTypes:["image","html","text","video","audio","flash","pdf","object"],previewTemplates:{},previewSettings:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:{width:"213px",height:"160px"},text:{width:"213px",height:"160px"},office:{width:"213px",height:"160px"},gdocs:{width:"213px",height:"160px"},video:{width:"213px",height:"160px"},audio:{width:"100%",height:"30px"},flash:{width:"213px",height:"160px"},object:{width:"213px",height:"160px"},pdf:{width:"100%",height:"160px"},other:{width:"213px",height:"160px"}},previewSettingsSmall:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:{width:"100%",height:"160px"},text:{width:"100%",height:"160px"},office:{width:"100%",height:"160px"},gdocs:{width:"100%",height:"160px"},video:{width:"100%",height:"auto"},audio:{width:"100%",height:"30px"},flash:{width:"100%",height:"auto"},object:{width:"100%",height:"auto"},pdf:{width:"100%",height:"160px"},other:{width:"100%",height:"160px"}},previewZoomSettings:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:c,text:c,office:{width:"100%",height:"100%","max-width":"100%","min-height":"480px"},gdocs:{width:"100%",height:"100%","max-width":"100%","min-height":"480px"},video:{width:"auto",height:"100%","max-width":"100%"},audio:{width:"100%",height:"30px"},flash:{width:"auto",height:"480px"},object:{width:"auto",height:"100%","max-width":"100%","min-height":"480px"},pdf:c,other:{width:"auto",height:"100%","min-height":"480px"}},fileTypeSettings:{image:function(e,i){return t.compare(e,"image.*")&&!t.compare(e,/(tiff?|wmf)$/i)||t.compare(i,/\.(gif|png|jpe?g)$/i)},html:function(e,i){return t.compare(e,"text/html")||t.compare(i,/\.(htm|html)$/i)},office:function(e,i){return t.compare(e,/(word|excel|powerpoint|office)$/i)||t.compare(i,/\.(docx?|xlsx?|pptx?|pps|potx?)$/i)},gdocs:function(e,i){return t.compare(e,/(word|excel|powerpoint|office|iwork-pages|tiff?)$/i)||t.compare(i,/\.(docx?|xlsx?|pptx?|pps|potx?|rtf|ods|odt|pages|ai|dxf|ttf|tiff?|wmf|e?ps)$/i)},text:function(e,i){return t.compare(e,"text.*")||t.compare(i,/\.(xml|javascript)$/i)||t.compare(i,/\.(txt|md|csv|nfo|ini|json|php|js|css)$/i)},video:function(e,i){return t.compare(e,"video.*")&&(t.compare(e,/(ogg|mp4|mp?g|mov|webm|3gp)$/i)||t.compare(i,/\.(og?|mp4|webm|mp?g|mov|3gp)$/i))},audio:function(e,i){return t.compare(e,"audio.*")&&(t.compare(i,/(ogg|mp3|mp?g|wav)$/i)||t.compare(i,/\.(og?|mp3|mp?g|wav)$/i))},flash:function(e,i){return t.compare(e,"application/x-shockwave-flash",!0)||t.compare(i,/\.(swf)$/i)},pdf:function(e,i){return t.compare(e,"application/pdf",!0)||t.compare(i,/\.(pdf)$/i)},object:function(){return!0},other:function(){return!0}},fileActionSettings:{showRemove:!0,showUpload:!0,showDownload:!0,showZoom:!0,showDrag:!0,removeIcon:'<i class="glyphicon glyphicon-trash"></i>',removeClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",removeErrorClass:"btn btn-sm btn-kv btn-danger",removeTitle:"Remove file",uploadIcon:'<i class="glyphicon glyphicon-upload"></i>',uploadClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",uploadTitle:"Upload file",uploadRetryIcon:'<i class="glyphicon glyphicon-repeat"></i>',uploadRetryTitle:"Retry upload",downloadIcon:'<i class="glyphicon glyphicon-download"></i>',downloadClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",downloadTitle:"Download file",zoomIcon:'<i class="glyphicon glyphicon-zoom-in"></i>',zoomClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",zoomTitle:"View Details",dragIcon:'<i class="glyphicon glyphicon-move"></i>',dragClass:"text-info",dragTitle:"Move / Rearrange",dragSettings:{},indicatorNew:'<i class="glyphicon glyphicon-plus-sign text-warning"></i>',indicatorSuccess:'<i class="glyphicon glyphicon-ok-sign text-success"></i>',indicatorError:'<i class="glyphicon glyphicon-exclamation-sign text-danger"></i>',indicatorLoading:'<i class="glyphicon glyphicon-hourglass text-muted"></i>',indicatorNewTitle:"Not uploaded yet",indicatorSuccessTitle:"Uploaded",indicatorErrorTitle:"Upload Error",indicatorLoadingTitle:"Uploading ..."}},e.each(h.defaults,function(t,i){"allowedPreviewTypes"!==t?h[t]=e.extend(!0,{},i,h[t]):void 0===h.allowedPreviewTypes&&(h.allowedPreviewTypes=i)}),h._initPreviewTemplates()},_initPreviewTemplates:function(){var i,a=this,r=a.previewMarkupTags,n=r.tagAfter;e.each(a.previewContentTemplates,function(e,s){t.isEmpty(a.previewTemplates[e])&&(i=r.tagBefore2,"generic"!==e&&"image"!==e&&"html"!==e&&"text"!==e||(i=r.tagBefore1),a._isPdfRendered()&&"pdf"===e&&(i=i.replace("kv-file-content","kv-file-content kv-pdf-rendered")),a.previewTemplates[e]=i+s+n)})},_initPreviewCache:function(){var i=this;i.previewCache={data:{},init:function(){var e=i.initialPreview;e.length>0&&!t.isArray(e)&&(e=e.split(i.initialPreviewDelimiter)),i.previewCache.data={content:e,config:i.initialPreviewConfig,tags:i.initialPreviewThumbTags}},count:function(){return i.previewCache.data&&i.previewCache.data.content?i.previewCache.data.content.length:0},get:function(a,r){var n,s,o,l,d,c,h,p="init_"+a,u=i.previewCache.data,f=u.config[a],m=u.content[a],g=i.previewInitId+"-"+p,v=t.ifSet("previewAsData",f,i.initialPreviewAsData),w=function(e,a,r,n,s,o,l,d,c){return d=" file-preview-initial "+t.SORT_CSS+(d?" "+d:""),i._generatePreviewTemplate(e,a,r,n,s,!1,null,d,o,l,c)};return m?(r=void 0===r||r,o=t.ifSet("type",f,i.initialPreviewFileType||"generic"),d=t.ifSet("filename",f,t.ifSet("caption",f)),c=t.ifSet("filetype",f,o),l=i.previewCache.footer(a,r,f&&f.size||null),h=t.ifSet("frameClass",f),n=v?w(o,m,d,c,g,l,p,h):w("generic",m,d,c,g,l,p,h,o).setTokens({content:u.content[a]}),u.tags.length&&u.tags[a]&&(n=t.replaceTags(n,u.tags[a])),t.isEmpty(f)||t.isEmpty(f.frameAttr)||((s=e(document.createElement("div")).html(n)).find(".file-preview-initial").attr(f.frameAttr),n=s.html(),s.remove()),n):""},add:function(e,a,r,n){var s,o=i.previewCache.data;return t.isArray(e)||(e=e.split(i.initialPreviewDelimiter)),n?(s=o.content.push(e)-1,o.config[s]=a,o.tags[s]=r):(s=e.length-1,o.content=e,o.config=a,o.tags=r),i.previewCache.data=o,s},set:function(e,a,r,n){var s,o=i.previewCache.data;if(e&&e.length&&(t.isArray(e)||(e=e.split(i.initialPreviewDelimiter)),e.filter(function(e){return null!==e}).length)){if(void 0===o.content&&(o.content=[]),void 0===o.config&&(o.config=[]),void 0===o.tags&&(o.tags=[]),n){for(s=0;s<e.length;s++)e[s]&&o.content.push(e[s]);for(s=0;s<a.length;s++)a[s]&&o.config.push(a[s]);for(s=0;s<r.length;s++)r[s]&&o.tags.push(r[s])}else o.content=e,o.config=a,o.tags=r;i.previewCache.data=o}},unset:function(e){var a=i.previewCache.count(),r=i.reversePreviewOrder;if(a){if(1===a)return i.previewCache.data.content=[],i.previewCache.data.config=[],i.previewCache.data.tags=[],i.initialPreview=[],i.initialPreviewConfig=[],void(i.initialPreviewThumbTags=[]);i.previewCache.data.content=t.spliceArray(i.previewCache.data.content,e,r),i.previewCache.data.config=t.spliceArray(i.previewCache.data.config,e,r),i.previewCache.data.tags=t.spliceArray(i.previewCache.data.tags,e,r)}},out:function(){var e,t,a="",r=i.previewCache.count();if(0===r)return{content:"",caption:""};for(e=0;e<r;e++)t=i.previewCache.get(e),a=i.reversePreviewOrder?t+a:a+t;return{content:a,caption:i._getMsgSelected(r)}},footer:function(e,a,r){var n=i.previewCache.data||{};if(t.isEmpty(n.content))return"";(t.isEmpty(n.config)||t.isEmpty(n.config[e]))&&(n.config[e]={}),a=void 0===a||a;var s,o=n.config[e],l=t.ifSet("caption",o),d=t.ifSet("width",o,"auto"),c=t.ifSet("url",o,!1),h=t.ifSet("key",o,null),p=i.fileActionSettings,u=i.initialPreviewShowDelete||!1,f=o.downloadUrl||i.initialPreviewDownloadUrl||"",m=o.filename||o.caption||"",g=!!f,v=t.ifSet("showRemove",o,t.ifSet("showRemove",p,u)),w=t.ifSet("showDownload",o,t.ifSet("showDownload",p,g)),_=t.ifSet("showZoom",o,t.ifSet("showZoom",p,!0)),b=t.ifSet("showDrag",o,t.ifSet("showDrag",p,!0)),C=!1===c&&a;return w=w&&!1!==o.downloadUrl&&!!f,s=i._renderFileActions(!1,w,v,_,b,C,c,h,!0,f,m),i._getLayoutTemplate("footer").setTokens({progress:i._renderThumbProgress(),actions:s,caption:l,size:i._getSize(r),width:d,indicator:""})}},i.previewCache.init()},_isPdfRendered:function(){var e=this.usePdfRenderer;return("function"==typeof e?e():!!e)&&this.pdfRendererUrl},_handler:function(e,t,i){var a=this.namespace,r=t.split(" ").join(a+" ")+a;e&&e.length&&e.off(r).on(r,i)},_log:function(e){var t=this.$element.attr("id");t&&(e='"'+t+'": '+e),e="bootstrap-fileinput: "+e,void 0!==window.console.log?window.console.log(e):window.alert(e)},_validate:function(){var e="file"===this.$element.attr("type");return e||this._log('The input "type" must be set to "file" for initializing the "bootstrap-fileinput" plugin.'),e},_errorsExist:function(){var t;return!!this.$errorContainer.find("li").length||((t=e(document.createElement("div")).html(this.$errorContainer.html())).find(".kv-error-close").remove(),t.find("ul").remove(),!!e.trim(t.text()).length)},_errorHandler:function(e,t){var i=this,a=e.target.error,r=function(e){i._showError(e.replace("{name}",t))};a.code===a.NOT_FOUND_ERR?r(i.msgFileNotFound):a.code===a.SECURITY_ERR?r(i.msgFileSecured):a.code===a.NOT_READABLE_ERR?r(i.msgFileNotReadable):a.code===a.ABORT_ERR?r(i.msgFilePreviewAborted):r(i.msgFilePreviewError)},_addError:function(e){var t=this,i=t.$errorContainer;e&&i.length&&(i.html(t.errorCloseButton+e),t._handler(i.find(".kv-error-close"),"click",function(){setTimeout(function(){t.showPreview&&!t.getFrames().length&&t.clear(),i.fadeOut("slow")},10)}))},_setValidationError:function(e){e=(e?e+" ":"")+"has-error",this.$container.removeClass(e).addClass("has-error"),t.addCss(this.$captionContainer,"is-invalid")},_resetErrors:function(e){var t=this.$errorContainer;this.isError=!1,this.$container.removeClass("has-error"),this.$captionContainer.removeClass("is-invalid"),t.html(""),e?t.fadeOut("slow"):t.hide()},_showFolderError:function(e){var t,i=this.$errorContainer;e&&(this.isAjaxUpload||this._clearFileInput(),t=this.msgFoldersNotAllowed.replace("{n}",e),this._addError(t),this._setValidationError(),i.fadeIn(800),this._raise("filefoldererror",[e,t]))},_showUploadError:function(e,t,i){var a=this.$errorContainer,r=i||"fileuploaderror",n=t&&t.id?'<li data-file-id="'+t.id+'">'+e+"</li>":"<li>"+e+"</li>";return 0===a.find("ul").length?this._addError("<ul>"+n+"</ul>"):a.find("ul").append(n),a.fadeIn(800),this._raise(r,[t,e]),this._setValidationError("file-input-new"),!0},_showError:function(e,t,i){var a=this.$errorContainer,r=i||"fileerror";return(t=t||{}).reader=this.reader,this._addError(e),a.fadeIn(800),this._raise(r,[t,e]),this.isAjaxUpload||this._clearFileInput(),this._setValidationError("file-input-new"),this.$btnUpload.attr("disabled",!0),!0},_noFilesError:function(e){var t=this.minFileCount>1?this.filePlural:this.fileSingle,i=this.msgFilesTooLess.replace("{n}",this.minFileCount).replace("{files}",t),a=this.$errorContainer;this._addError(i),this.isError=!0,this._updateFileDetails(0),a.fadeIn(800),this._raise("fileerror",[e,i]),this._clearFileInput(),this._setValidationError()},_parseError:function(t,i,a,r){var n,s=e.trim(a+""),o=void 0!==i.responseJSON&&void 0!==i.responseJSON.error?i.responseJSON.error:i.responseText;return this.cancelling&&this.msgUploadAborted&&(s=this.msgUploadAborted),this.showAjaxErrorDetails&&o&&(n=(o=e.trim(o.replace(/\n\s*\n/g,"\n"))).length?"<pre>"+o+"</pre>":"",s+=s?n:o),s||(s=this.msgAjaxError.replace("{operation}",t)),this.cancelling=!1,r?"<b>"+r+": </b>"+s:s},_parseFileType:function(e,i){var a,r,n,s=this.allowedPreviewTypes||[];if("application/text-plain"===e)return"text";for(n=0;n<s.length;n++)if(r=s[n],a=(0,this.fileTypeSettings[r])(e,i)?r:"",!t.isEmpty(a))return a;return"other"},_getPreviewIcon:function(t){var i,a=this,r=null;return t&&t.indexOf(".")>-1&&(i=t.split(".").pop(),a.previewFileIconSettings&&(r=a.previewFileIconSettings[i]||a.previewFileIconSettings[i.toLowerCase()]||null),a.previewFileExtSettings&&e.each(a.previewFileExtSettings,function(e,t){a.previewFileIconSettings[e]&&t(i)&&(r=a.previewFileIconSettings[e])})),r},_parseFilePreviewIcon:function(e,t){var i=this._getPreviewIcon(t)||this.previewFileIcon,a=e;return a.indexOf("{previewFileIcon}")>-1&&(a=a.setTokens({previewFileIconClass:this.previewFileIconClass,previewFileIcon:i})),a},_raise:function(t,i){var a=e.Event(t);if(void 0!==i?this.$element.trigger(a,i):this.$element.trigger(a),a.isDefaultPrevented()||!1===a.result)return!1;switch(t){case"filebatchuploadcomplete":case"filebatchuploadsuccess":case"fileuploaded":case"fileclear":case"filecleared":case"filereset":case"fileerror":case"filefoldererror":case"fileuploaderror":case"filebatchuploaderror":case"filedeleteerror":case"filecustomerror":case"filesuccessremove":break;default:this.ajaxAborted||(this.ajaxAborted=a.result)}return!0},_listenFullScreen:function(e){var t,i,a=this.$modal;a&&a.length&&(t=a&&a.find(".btn-fullscreen"),i=a&&a.find(".btn-borderless"),t.length&&i.length&&(t.removeClass("active").attr("aria-pressed","false"),i.removeClass("active").attr("aria-pressed","false"),e?t.addClass("active").attr("aria-pressed","true"):i.addClass("active").attr("aria-pressed","true"),a.hasClass("file-zoom-fullscreen")?this._maximizeZoomDialog():e?this._maximizeZoomDialog():i.removeClass("active").attr("aria-pressed","false")))},_listen:function(){var i=this,a=i.$element,r=i.$form,n=i.$container;i._handler(a,"click",function(e){a.hasClass("file-no-browse")&&(a.data("zoneClicked")?a.data("zoneClicked",!1):e.preventDefault())}),i._handler(a,"change",e.proxy(i._change,i)),i.showBrowse&&i._handler(i.$btnFile,"click",e.proxy(i._browse,i)),i._handler(n.find(".fileinput-remove:not([disabled])"),"click",e.proxy(i.clear,i)),i._handler(n.find(".fileinput-cancel"),"click",e.proxy(i.cancel,i)),i._initDragDrop(),i._handler(r,"reset",e.proxy(i.clear,i)),i.isAjaxUpload||i._handler(r,"submit",e.proxy(i._submitForm,i)),i._handler(i.$container.find(".fileinput-upload"),"click",e.proxy(i._uploadClick,i)),i._handler(e(window),"resize",function(){i._listenFullScreen(screen.width===window.innerWidth&&screen.height===window.innerHeight)}),i._handler(e(document),"webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange",function(){i._listenFullScreen(t.checkFullScreen())}),i._autoFitContent(),i._initClickable(),i._refreshPreview()},_autoFitContent:function(){var t,i=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,a=this,r=i<400?a.previewSettingsSmall||a.defaults.previewSettingsSmall:a.previewSettings||a.defaults.previewSettings;e.each(r,function(e,i){t=".file-preview-frame .file-preview-"+e,a.$preview.find(t+".kv-preview-data,"+t+" .kv-preview-data").css(i)})},_scanDroppedItems:function(e,t,i){i=i||"";var a,r,n,s=this,o=function(e){s._log("Error scanning dropped files!"),s._log(e)};e.isFile?e.file(function(e){t.push(e)},o):e.isDirectory&&(r=e.createReader(),(n=function(){r.readEntries(function(r){if(r&&r.length>0){for(a=0;a<r.length;a++)s._scanDroppedItems(r[a],t,i+e.name+"/");n()}return null},o)})())},_initDragDrop:function(){var t=this.$dropZone;this.dropZoneEnabled&&this.showPreview&&(this._handler(t,"dragenter dragover",e.proxy(this._zoneDragEnter,this)),this._handler(t,"dragleave",e.proxy(this._zoneDragLeave,this)),this._handler(t,"drop",e.proxy(this._zoneDrop,this)),this._handler(e(document),"dragenter dragover drop",this._zoneDragDropInit))},_zoneDragDropInit:function(e){e.stopPropagation(),e.preventDefault()},_zoneDragEnter:function(i){var a=e.inArray("Files",i.originalEvent.dataTransfer.types)>-1;if(this._zoneDragDropInit(i),this.isDisabled||!a)return i.originalEvent.dataTransfer.effectAllowed="none",void(i.originalEvent.dataTransfer.dropEffect="none");t.addCss(this.$dropZone,"file-highlighted")},_zoneDragLeave:function(e){this._zoneDragDropInit(e),this.isDisabled||this.$dropZone.removeClass("file-highlighted")},_zoneDrop:function(e){var i,a=this,r=a.$element,n=e.originalEvent.dataTransfer,s=n.files,o=n.items,l=t.getDragDropFolders(o),d=function(){a.isAjaxUpload?a._change(e,s):(a.changeTriggered=!0,r.get(0).files=s,setTimeout(function(){a.changeTriggered=!1,r.trigger("change"+a.namespace)},10)),a.$dropZone.removeClass("file-highlighted")};if(e.preventDefault(),!a.isDisabled&&!t.isEmpty(s))if(l>0){if(!a.isAjaxUpload)return void a._showFolderError(l);for(s=[],i=0;i<o.length;i++){var c=o[i].webkitGetAsEntry();c&&a._scanDroppedItems(c,s)}setTimeout(function(){d()},500)}else d()},_uploadClick:function(e){var i,a=this.$container.find(".fileinput-upload"),r=!a.hasClass("disabled")&&t.isEmpty(a.attr("disabled"));e&&e.isDefaultPrevented()||(this.isAjaxUpload?(e.preventDefault(),r&&this.upload()):r&&"submit"!==a.attr("type")&&((i=a.closest("form")).length&&i.trigger("submit"),e.preventDefault()))},_submitForm:function(){return this._isFileSelectionValid()&&!this._abort({})},_clearPreview:function(){var i=this.$preview;(this.showUploadedThumbs?this.getFrames(":not(.file-preview-success)"):this.getFrames()).each(function(){var a=e(this);a.remove(),t.cleanZoomCache(i.find("#zoom-"+a.attr("id")))}),this.getFrames().length&&this.showPreview||this._resetUpload(),this._validateDefaultPreview()},_initSortable:function(){var i,a=this,r=a.$preview,n="."+t.SORT_CSS,s=a.reversePreviewOrder;window.KvSortable&&0!==r.find(n).length&&(i={handle:".drag-handle-init",dataIdAttr:"data-preview-id",scroll:!1,draggable:n,onSort:function(i){var r=i.oldIndex,n=i.newIndex,o=0;a.initialPreview=t.moveArray(a.initialPreview,r,n,s),a.initialPreviewConfig=t.moveArray(a.initialPreviewConfig,r,n,s),a.previewCache.init(),a.getFrames(".file-preview-initial").each(function(){e(this).attr("data-fileindex","init_"+o),o++}),a._raise("filesorted",{previewId:e(i.item).attr("id"),oldIndex:r,newIndex:n,stack:a.initialPreviewConfig})}},r.data("kvsortable")&&r.kvsortable("destroy"),e.extend(!0,i,a.fileActionSettings.dragSettings),r.kvsortable(i))},_setPreviewContent:function(e){this.$preview.html(e),this._autoFitContent()},_initPreview:function(e){var i,a=this.initialCaption||"";if(!this.previewCache.count())return this._clearPreview(),void(e?this._setCaption(a):this._initCaption());i=this.previewCache.out(),a=e&&this.initialCaption?this.initialCaption:i.caption,this._setPreviewContent(i.content),this._setInitThumbAttr(),this._setCaption(a),this._initSortable(),t.isEmpty(i.content)||this.$container.removeClass("file-input-new")},_getZoomButton:function(e){var t=this.previewZoomButtonIcons[e],i=this.previewZoomButtonClasses[e],a=' title="'+(this.previewZoomButtonTitles[e]||"")+'" '+("close"===e?' data-dismiss="modal" aria-hidden="true"':"");return"fullscreen"!==e&&"borderless"!==e&&"toggleheader"!==e||(a+=' data-toggle="button" aria-pressed="false" autocomplete="off"'),'<button type="button" class="'+i+" btn-"+e+'"'+a+">"+t+"</button>"},_getModalContent:function(){return this._getLayoutTemplate("modal").setTokens({rtl:this.rtl?" kv-rtl":"",zoomFrameClass:this.frameClass,heading:this.msgZoomModalHeading,prev:this._getZoomButton("prev"),next:this._getZoomButton("next"),toggleheader:this._getZoomButton("toggleheader"),fullscreen:this._getZoomButton("fullscreen"),borderless:this._getZoomButton("borderless"),close:this._getZoomButton("close")})},_listenModalEvent:function(e){var i=this,a=i.$modal;a.on(e+".bs.modal",function(r){var n=a.find(".btn-fullscreen"),s=a.find(".btn-borderless");i._raise("filezoom"+e,function(e){return{sourceEvent:e,previewId:a.data("previewId"),modal:a}}(r)),"shown"===e&&(s.removeClass("active").attr("aria-pressed","false"),n.removeClass("active").attr("aria-pressed","false"),a.hasClass("file-zoom-fullscreen")&&(i._maximizeZoomDialog(),t.checkFullScreen()?n.addClass("active").attr("aria-pressed","true"):s.addClass("active").attr("aria-pressed","true")))})},_initZoom:function(){var i,a=this,r=a._getLayoutTemplate("modalMain"),n="#"+t.MODAL_ID;a.showPreview&&(a.$modal=e(n),a.$modal&&a.$modal.length||(i=e(document.createElement("div")).html(r).insertAfter(a.$container),a.$modal=e(n).insertBefore(i),i.remove()),t.initModal(a.$modal),a.$modal.html(a._getModalContent()),e.each(t.MODAL_EVENTS,function(e,t){a._listenModalEvent(t)}))},_initZoomButtons:function(){var t,i,a=this.$modal.data("previewId")||"",r=this.getFrames().toArray(),n=r.length,s=this.$modal.find(".btn-prev"),o=this.$modal.find(".btn-next");if(r.length<2)return s.hide(),void o.hide();s.show(),o.show(),n&&(t=e(r[0]),i=e(r[n-1]),s.removeAttr("disabled"),o.removeAttr("disabled"),t.length&&t.attr("id")===a&&s.attr("disabled",!0),i.length&&i.attr("id")===a&&o.attr("disabled",!0))},_maximizeZoomDialog:function(){var t=this.$modal,i=t.find(".modal-header:visible"),a=t.find(".modal-footer:visible"),r=t.find(".modal-body"),n=e(window).height();t.addClass("file-zoom-fullscreen"),i&&i.length&&(n-=i.outerHeight(!0)),a&&a.length&&(n-=a.outerHeight(!0)),r&&r.length&&(n-=r.outerHeight(!0)-r.height()),t.find(".kv-zoom-body").height(n)},_resizeZoomDialog:function(e){var i=this.$modal,a=i.find(".btn-fullscreen"),r=i.find(".btn-borderless");if(i.hasClass("file-zoom-fullscreen"))t.toggleFullScreen(!1),e?a.hasClass("active")||(i.removeClass("file-zoom-fullscreen"),this._resizeZoomDialog(!0),r.hasClass("active")&&r.removeClass("active").attr("aria-pressed","false")):a.hasClass("active")?a.removeClass("active").attr("aria-pressed","false"):(i.removeClass("file-zoom-fullscreen"),this.$modal.find(".kv-zoom-body").css("height",this.zoomModalHeight));else{if(!e)return void this._maximizeZoomDialog();t.toggleFullScreen(!0)}i.focus()},_setZoomContent:function(i,a){var r,n,s,o,l,d,c,h,p=this,u=i.attr("id"),f=p.$modal,m=f.find(".btn-prev"),g=f.find(".btn-next"),v=f.find(".btn-fullscreen"),w=f.find(".btn-borderless"),_=f.find(".btn-toggleheader"),b=p.$preview.find("#zoom-"+u);n=b.attr("data-template")||"generic",s=(r=b.find(".kv-file-content")).length?r.html():"",o=(i.data("caption")||"")+" "+(i.data("size")||""),f.find(".kv-zoom-title").attr("title",e("<div/>").html(o).text()).html(o),l=f.find(".kv-zoom-body"),f.removeClass("kv-single-content"),a?(h=l.addClass("file-thumb-loading").clone().insertAfter(l),l.html(s).hide(),h.fadeOut("fast",function(){l.fadeIn("fast",function(){l.removeClass("file-thumb-loading")}),h.remove()})):l.html(s),(c=p.previewZoomSettings[n])&&(d=l.find(".kv-preview-data"),t.addCss(d,"file-zoom-detail"),e.each(c,function(e,t){d.css(e,t),(d.attr("width")&&"width"===e||d.attr("height")&&"height"===e)&&d.removeAttr(e)})),f.data("previewId",u),p._handler(m,"click",function(){p._zoomSlideShow("prev",u)}),p._handler(g,"click",function(){p._zoomSlideShow("next",u)}),p._handler(v,"click",function(){p._resizeZoomDialog(!0)}),p._handler(w,"click",function(){p._resizeZoomDialog(!1)}),p._handler(_,"click",function(){var e,t=f.find(".modal-header"),i=f.find(".modal-body .floating-buttons"),a=t.find(".kv-zoom-actions"),r=function(e){var i=p.$modal.find(".kv-zoom-body"),a=p.zoomModalHeight;f.hasClass("file-zoom-fullscreen")&&(a=i.outerHeight(!0),e||(a-=t.outerHeight(!0))),i.css("height",e?a+e:a)};t.is(":visible")?(e=t.outerHeight(!0),t.slideUp("slow",function(){a.find(".btn").appendTo(i),r(e)})):(i.find(".btn").appendTo(a),t.slideDown("slow",function(){r()})),f.focus()}),p._handler(f,"keydown",function(e){var t=e.which||e.keyCode;37!==t||m.attr("disabled")||p._zoomSlideShow("prev",u),39!==t||g.attr("disabled")||p._zoomSlideShow("next",u)})},_zoomPreview:function(e){var i,a=this.$modal;if(!e.length)throw"Cannot zoom to detailed preview!";t.initModal(a),a.html(this._getModalContent()),i=e.closest(t.FRAMES),this._setZoomContent(i),a.modal("show"),this._initZoomButtons()},_zoomSlideShow:function(t,i){var a,r,n,s=this.$modal.find(".kv-zoom-actions .btn-"+t),o=this.getFrames().toArray(),l=o.length;if(!s.attr("disabled")){for(r=0;r<l;r++)if(e(o[r]).attr("id")===i){n="prev"===t?r-1:r+1;break}n<0||n>=l||!o[n]||((a=e(o[n])).length&&this._setZoomContent(a,!0),this._initZoomButtons(),this._raise("filezoom"+t,{previewId:i,modal:this.$modal}))}},_initZoomButton:function(){var t=this;t.$preview.find(".kv-file-zoom").each(function(){var i=e(this);t._handler(i,"click",function(){t._zoomPreview(i)})})},_inputFileCount:function(){return this.$element.get(0).files.length},_refreshPreview:function(){var e;this._inputFileCount()&&this.showPreview&&this.isPreviewable&&(this.isAjaxUpload?(e=this.getFileStack(),this.filestack=[],e.length?this._clearFileInput():e=this.$element.get(0).files):e=this.$element.get(0).files,e&&e.length&&(this.readFiles(e),this._setFileDropZoneTitle()))},_clearObjects:function(t){t.find("video audio").each(function(){this.pause(),e(this).remove()}),t.find("img object div").each(function(){e(this).remove()})},_clearFileInput:function(){var t,i,a,r=this.$element;this._inputFileCount()&&(t=r.closest("form"),i=e(document.createElement("form")),a=e(document.createElement("div")),r.before(a),t.length?t.after(i):a.after(i),i.append(r).trigger("reset"),a.before(r).remove(),i.remove())},_resetUpload:function(){this.uploadCache={content:[],config:[],tags:[],append:!0},this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.uploadAsyncCount=0,this.loadedImages=[],this.totalImagesCount=0,this.$btnUpload.removeAttr("disabled"),this._setProgress(0),this.$progress.hide(),this._resetErrors(!1),this.ajaxAborted=!1,this.ajaxRequests=[],this._resetCanvas(),this.cacheInitialPreview={},this.overwriteInitial&&(this.initialPreview=[],this.initialPreviewConfig=[],this.initialPreviewThumbTags=[],this.previewCache.data={content:[],config:[],tags:[]})},_resetCanvas:function(){this.canvas&&this.imageCanvasContext&&this.imageCanvasContext.clearRect(0,0,this.canvas.width,this.canvas.height)},_hasInitialPreview:function(){return!this.overwriteInitial&&this.previewCache.count()},_resetPreview:function(){var e,t;this.previewCache.count()?(e=this.previewCache.out(),this._setPreviewContent(e.content),this._setInitThumbAttr(),t=this.initialCaption?this.initialCaption:e.caption,this._setCaption(t)):(this._clearPreview(),this._initCaption()),this.showPreview&&(this._initZoom(),this._initSortable())},_clearDefaultPreview:function(){this.$preview.find(".file-default-preview").remove()},_validateDefaultPreview:function(){this.showPreview&&!t.isEmpty(this.defaultPreviewContent)&&(this._setPreviewContent('<div class="file-default-preview">'+this.defaultPreviewContent+"</div>"),this.$container.removeClass("file-input-new"),this._initClickable())},_resetPreviewThumbs:function(e){var t;if(e)return this._clearPreview(),void this.clearStack();this._hasInitialPreview()?(t=this.previewCache.out(),this._setPreviewContent(t.content),this._setInitThumbAttr(),this._setCaption(t.caption),this._initPreviewActions()):this._clearPreview()},_getLayoutTemplate:function(e){var i=this.layoutTemplates[e];return t.isEmpty(this.customLayoutTags)?i:t.replaceTags(i,this.customLayoutTags)},_getPreviewTemplate:function(e){var i=this.previewTemplates[e];return t.isEmpty(this.customPreviewTags)?i:t.replaceTags(i,this.customPreviewTags)},_getOutData:function(e,t,i){return e=e||{},t=t||{},i=i||this.filestack.slice(0)||{},{form:this.formdata,files:i,filenames:this.filenames,filescount:this.getFilesCount(),extra:this._getExtraData(),response:t,reader:this.reader,jqXHR:e}},_getMsgSelected:function(e){var t=1===e?this.fileSingle:this.filePlural;return e>0?this.msgSelected.replace("{n}",e).replace("{files}",t):this.msgNoFilesSelected},_getFrame:function(t){var i=e("#"+t);return i.length?i:(this._log('Invalid thumb frame with id: "'+t+'".'),null)},_getThumbs:function(e){return e=e||"",this.getFrames(":not(.file-preview-initial)"+e)},_getExtraData:function(e,t){var i=this.uploadExtraData;return"function"==typeof this.uploadExtraData&&(i=this.uploadExtraData(e,t)),i},_initXhr:function(e,t,i){var a=this;return e.upload&&e.upload.addEventListener("progress",function(e){var r=0,n=e.total,s=e.loaded||e.position;e.lengthComputable&&(r=Math.floor(s/n*100)),t?a._setAsyncUploadStatus(t,r,i):a._setProgress(r)},!1),e},_initAjaxSettings:function(){this._ajaxSettings=e.extend(!0,{},this.ajaxSettings),this._ajaxDeleteSettings=e.extend(!0,{},this.ajaxDeleteSettings)},_mergeAjaxCallback:function(e,t,i){var a,r=this._ajaxSettings,n=this.mergeAjaxCallbacks;"delete"===i&&(r=this._ajaxDeleteSettings,n=this.mergeAjaxDeleteCallbacks),a=r[e],r[e]=n&&"function"==typeof a?"before"===n?function(){a.apply(this,arguments),t.apply(this,arguments)}:function(){t.apply(this,arguments),a.apply(this,arguments)}:t},_ajaxSubmit:function(t,i,a,r,n,s){var o,l=this;l._raise("filepreajax",[n,s])&&(l._uploadExtra(n,s),l._initAjaxSettings(),l._mergeAjaxCallback("beforeSend",t),l._mergeAjaxCallback("success",i),l._mergeAjaxCallback("complete",a),l._mergeAjaxCallback("error",r),o=e.extend(!0,{},{xhr:function(){var t=e.ajaxSettings.xhr();return l._initXhr(t,n,l.getFileStack().length)},url:s&&l.uploadUrlThumb?l.uploadUrlThumb:l.uploadUrl,type:"POST",dataType:"json",data:l.formdata,cache:!1,processData:!1,contentType:!1},l._ajaxSettings),l.ajaxRequests.push(e.ajax(o)))},_mergeArray:function(e,i){var a=t.cleanArray(this[e]),r=t.cleanArray(i);this[e]=a.concat(r)},_initUploadSuccess:function(i,a,r){var n,s,o,l,d,c,h,p,u,f=this;f.showPreview&&"object"==typeof i&&!e.isEmptyObject(i)&&void 0!==i.initialPreview&&i.initialPreview.length>0&&(f.hasInitData=!0,c=i.initialPreview||[],h=i.initialPreviewConfig||[],p=i.initialPreviewThumbTags||[],n=void 0===i.append||i.append,c.length>0&&!t.isArray(c)&&(c=c.split(f.initialPreviewDelimiter)),f._mergeArray("initialPreview",c),f._mergeArray("initialPreviewConfig",h),f._mergeArray("initialPreviewThumbTags",p),void 0!==a?r?(u=a.attr("data-fileindex"),f.uploadCache.content[u]=c[0],f.uploadCache.config[u]=h[0]||[],f.uploadCache.tags[u]=p[0]||[],f.uploadCache.append=n):(o=f.previewCache.add(c,h[0],p[0],n),s=f.previewCache.get(o,!1),(d=(l=e(document.createElement("div")).html(s).hide().insertAfter(a)).find(".kv-zoom-cache"))&&d.length&&d.insertAfter(a),a.fadeOut("slow",function(){var e=l.find(".file-preview-frame");e&&e.length&&e.insertBefore(a).fadeIn("slow").css("display:inline-block"),f._initPreviewActions(),f._clearFileInput(),t.cleanZoomCache(f.$preview.find("#zoom-"+a.attr("id"))),a.remove(),l.remove(),f._initSortable()})):(f.previewCache.set(c,h,p,n),f._initPreview(),f._initPreviewActions()))},_initSuccessThumbs:function(){var i=this;i.showPreview&&i._getThumbs(t.FRAMES+".file-preview-success").each(function(){var a=e(this),r=i.$preview,n=a.find(".kv-file-remove");n.removeAttr("disabled"),i._handler(n,"click",function(){var e=a.attr("id"),n=i._raise("filesuccessremove",[e,a.attr("data-fileindex")]);t.cleanMemory(a),!1!==n&&a.fadeOut("slow",function(){t.cleanZoomCache(r.find("#zoom-"+e)),a.remove(),i.getFrames().length||i.reset()})})})},_checkAsyncComplete:function(){var t,i;for(i=0;i<this.filestack.length;i++)if(this.filestack[i]&&(t=this.previewInitId+"-"+i,-1===e.inArray(t,this.uploadLog)))return!1;return this.uploadAsyncCount===this.uploadLog.length},_uploadExtra:function(t,i){var a=this,r=a._getExtraData(t,i);0!==r.length&&e.each(r,function(e,t){a.formdata.append(e,t)})},_uploadSingle:function(i,a){var r,n,s,o,l,d,c,h,p,u,f,m=this,g=m.getFileStack().length,v=new FormData,w=m.previewInitId+"-"+i,_=m.filestack.length>0||!e.isEmptyObject(m.uploadExtraData),b=e("#"+w).find(".file-thumb-progress"),C={id:w,index:i};m.formdata=v,m.showPreview&&(n=e("#"+w+":not(.file-preview-initial)"),o=n.find(".kv-file-upload"),l=n.find(".kv-file-remove"),b.show()),0===g||!_||o&&o.hasClass("disabled")||m._abort(C)||(f=function(e,t){d||m.updateStack(e,void 0),m.uploadLog.push(t),m._checkAsyncComplete()&&(m.fileBatchCompleted=!0)},s=function(){var e,i,a,r=m.uploadCache,n=0,s=m.cacheInitialPreview;m.fileBatchCompleted&&(s&&s.content&&(n=s.content.length),setTimeout(function(){var o=0===m.getFileStack(!0).length;if(m.showPreview){if(m.previewCache.set(r.content,r.config,r.tags,r.append),n){for(i=0;i<r.content.length;i++)a=i+n,s.content[a]=r.content[i],s.config.length&&(s.config[a]=r.config[i]),s.tags.length&&(s.tags[a]=r.tags[i]);m.initialPreview=t.cleanArray(s.content),m.initialPreviewConfig=t.cleanArray(s.config),m.initialPreviewThumbTags=t.cleanArray(s.tags)}else m.initialPreview=r.content,m.initialPreviewConfig=r.config,m.initialPreviewThumbTags=r.tags;m.cacheInitialPreview={},m.hasInitData&&(m._initPreview(),m._initPreviewActions())}m.unlock(o),o&&m._clearFileInput(),e=m.$preview.find(".file-preview-initial"),m.uploadAsync&&e.length&&(t.addCss(e,t.SORT_CSS),m._initSortable()),m._raise("filebatchuploadcomplete",[m.filestack,m._getExtraData()]),m.uploadCount=0,m.uploadStatus={},m.uploadLog=[],m._setProgress(101),m.ajaxAborted=!1},100))},c=function(s){r=m._getOutData(s),m.fileBatchCompleted=!1,a||(m.ajaxAborted=!1),m.showPreview&&(n.hasClass("file-preview-success")||(m._setThumbStatus(n,"Loading"),t.addCss(n,"file-uploading")),o.attr("disabled",!0),l.attr("disabled",!0)),a||m.lock(),m._raise("filepreupload",[r,w,i]),e.extend(!0,C,r),m._abort(C)&&(s.abort(),a||(m._setThumbStatus(n,"New"),n.removeClass("file-uploading"),o.removeAttr("disabled"),l.removeAttr("disabled"),m.unlock()),m._setProgressCancelled())},h=function(s,l,c){var h=m.showPreview&&n.attr("id")?n.attr("id"):w;r=m._getOutData(c,s),e.extend(!0,C,r),setTimeout(function(){t.isEmpty(s)||t.isEmpty(s.error)?(m.showPreview&&(m._setThumbStatus(n,"Success"),o.hide(),m._initUploadSuccess(s,n,a),m._setProgress(101,b)),m._raise("fileuploaded",[r,h,i]),a?f(i,h):m.updateStack(i,void 0)):(d=!0,m._showUploadError(s.error,C),m._setPreviewError(n,i,m.filestack[i],m.retryErrorUploads),m.retryErrorUploads||o.hide(),a&&f(i,h),m._setProgress(101,e("#"+h).find(".file-thumb-progress"),m.msgUploadError))},100)},p=function(){setTimeout(function(){m.showPreview&&(o.removeAttr("disabled"),l.removeAttr("disabled"),n.removeClass("file-uploading")),a?s():(m.unlock(!1),m._clearFileInput()),m._initSuccessThumbs()},100)},u=function(t,r,s){var l=m.ajaxOperations.uploadThumb,c=m._parseError(l,t,s,a&&m.filestack[i].name?m.filestack[i].name:null);d=!0,setTimeout(function(){a&&f(i,w),m.uploadStatus[w]=100,m._setPreviewError(n,i,m.filestack[i],m.retryErrorUploads),m.retryErrorUploads||o.hide(),e.extend(!0,C,m._getOutData(t)),m._setProgress(101,b,m.msgAjaxProgressError.replace("{operation}",l)),m._setProgress(101,e("#"+w).find(".file-thumb-progress"),m.msgUploadError),m._showUploadError(c,C)},100)},v.append(m.uploadFileAttr,m.filestack[i],m.filenames[i]),v.append("file_id",i),m._ajaxSubmit(c,h,p,u,w,i))},_uploadBatch:function(){var i,a,r,n,s,o=this,l=o.filestack,d=l.length,c=o.filestack.length>0||!e.isEmptyObject(o.uploadExtraData);o.formdata=new FormData,0!==d&&c&&!o._abort({})&&(s=function(){e.each(l,function(e){o.updateStack(e,void 0)}),o._clearFileInput()},i=function(i){o.lock();var a=o._getOutData(i);o.ajaxAborted=!1,o.showPreview&&o._getThumbs().each(function(){var i=e(this),a=i.find(".kv-file-upload"),r=i.find(".kv-file-remove");i.hasClass("file-preview-success")||(o._setThumbStatus(i,"Loading"),t.addCss(i,"file-uploading")),a.attr("disabled",!0),r.attr("disabled",!0)}),o._raise("filebatchpreupload",[a]),o._abort(a)&&(i.abort(),o._getThumbs().each(function(){var t=e(this),i=t.find(".kv-file-upload"),a=t.find(".kv-file-remove");t.hasClass("file-preview-loading")&&(o._setThumbStatus(t,"New"),t.removeClass("file-uploading")),i.removeAttr("disabled"),a.removeAttr("disabled")}),o._setProgressCancelled())},a=function(i,a,r){var n=o._getOutData(r,i),l=0,d=o._getThumbs(":not(.file-preview-success)"),c=t.isEmpty(i)||t.isEmpty(i.errorkeys)?[]:i.errorkeys;t.isEmpty(i)||t.isEmpty(i.error)?(o._raise("filebatchuploadsuccess",[n]),s(),o.showPreview?(d.each(function(){var t=e(this);o._setThumbStatus(t,"Success"),t.removeClass("file-uploading"),t.find(".kv-file-upload").hide().removeAttr("disabled")}),o._initUploadSuccess(i)):o.reset(),o._setProgress(101)):(o.showPreview&&(d.each(function(){var t=e(this),i=t.attr("data-fileindex");t.removeClass("file-uploading"),t.find(".kv-file-upload").removeAttr("disabled"),t.find(".kv-file-remove").removeAttr("disabled"),0===c.length||-1!==e.inArray(l,c)?(o._setPreviewError(t,i,o.filestack[i],o.retryErrorUploads),o.retryErrorUploads||(t.find(".kv-file-upload").hide(),o.updateStack(i,void 0))):(t.find(".kv-file-upload").hide(),o._setThumbStatus(t,"Success"),o.updateStack(i,void 0)),t.hasClass("file-preview-error")&&!o.retryErrorUploads||l++}),o._initUploadSuccess(i)),o._showUploadError(i.error,n,"filebatchuploaderror"),o._setProgress(101,o.$progress,o.msgUploadError))},n=function(){o.unlock(),o._initSuccessThumbs(),o._clearFileInput(),o._raise("filebatchuploadcomplete",[o.filestack,o._getExtraData()])},r=function(t,i,a){var r=o._getOutData(t),n=o.ajaxOperations.uploadBatch,s=o._parseError(n,t,a);o._showUploadError(s,r,"filebatchuploaderror"),o.uploadFileCount=d-1,o.showPreview&&(o._getThumbs().each(function(){var t=e(this),i=t.attr("data-fileindex");t.removeClass("file-uploading"),void 0!==o.filestack[i]&&o._setPreviewError(t)}),o._getThumbs().removeClass("file-uploading"),o._getThumbs(" .kv-file-upload").removeAttr("disabled"),o._getThumbs(" .kv-file-delete").removeAttr("disabled"),o._setProgress(101,o.$progress,o.msgAjaxProgressError.replace("{operation}",n)))},e.each(l,function(e,i){t.isEmpty(l[e])||o.formdata.append(o.uploadFileAttr,i,o.filenames[e])}),o._ajaxSubmit(i,a,n,r))},_uploadExtraOnly:function(){var e,i,a,r,n=this,s={};n.formdata=new FormData,n._abort(s)||(e=function(e){n.lock();var t=n._getOutData(e);n._raise("filebatchpreupload",[t]),n._setProgress(50),s.data=t,s.xhr=e,n._abort(s)&&(e.abort(),n._setProgressCancelled())},i=function(e,i,a){var r=n._getOutData(a,e);t.isEmpty(e)||t.isEmpty(e.error)?(n._raise("filebatchuploadsuccess",[r]),n._clearFileInput(),n._initUploadSuccess(e),n._setProgress(101)):n._showUploadError(e.error,r,"filebatchuploaderror")},a=function(){n.unlock(),n._clearFileInput(),n._raise("filebatchuploadcomplete",[n.filestack,n._getExtraData()])},r=function(e,t,i){var a=n._getOutData(e),r=n.ajaxOperations.uploadExtra,o=n._parseError(r,e,i);s.data=a,n._showUploadError(o,a,"filebatchuploaderror"),n._setProgress(101,n.$progress,n.msgAjaxProgressError.replace("{operation}",r))},n._ajaxSubmit(e,i,a,r))},_deleteFileIndex:function(i){var a=i.attr("data-fileindex"),r=this.reversePreviewOrder;"init_"===a.substring(0,5)&&(a=parseInt(a.replace("init_","")),this.initialPreview=t.spliceArray(this.initialPreview,a,r),this.initialPreviewConfig=t.spliceArray(this.initialPreviewConfig,a,r),this.initialPreviewThumbTags=t.spliceArray(this.initialPreviewThumbTags,a,r),this.getFrames().each(function(){var t=e(this),i=t.attr("data-fileindex");"init_"===i.substring(0,5)&&(i=parseInt(i.replace("init_","")))>a&&(i--,t.attr("data-fileindex","init_"+i))}),this.uploadAsync&&(this.cacheInitialPreview=this.getPreview()))},_initFileActions:function(){var i=this,a=i.$preview;i.showPreview&&(i._initZoomButton(),i.getFrames(" .kv-file-remove").each(function(){var r,n,s,o=e(this),l=o.closest(t.FRAMES),d=l.attr("id"),c=l.attr("data-fileindex");i._handler(o,"click",function(){if(!1===i._raise("filepreremove",[d,c])||!i._validateMinCount())return!1;r=l.hasClass("file-preview-error"),t.cleanMemory(l),l.fadeOut("slow",function(){t.cleanZoomCache(a.find("#zoom-"+d)),i.updateStack(c,void 0),i._clearObjects(l),l.remove(),d&&r&&i.$errorContainer.find('li[data-file-id="'+d+'"]').fadeOut("fast",function(){e(this).remove(),i._errorsExist()||i._resetErrors()}),i._clearFileInput();var o=i.getFileStack(!0),h=i.previewCache.count(),p=o.length,u=i.showPreview&&i.getFrames().length;0!==p||0!==h||u?(s=(n=h+p)>1?i._getMsgSelected(n):o[0]?i._getFileNames()[0]:"",i._setCaption(s)):i.reset(),i._raise("fileremoved",[d,c])})})}),i.getFrames(" .kv-file-upload").each(function(){var a=e(this);i._handler(a,"click",function(){var e=a.closest(t.FRAMES),r=e.attr("data-fileindex");i.$progress.hide(),e.hasClass("file-preview-error")&&!i.retryErrorUploads||i._uploadSingle(r,!1)})}))},_initPreviewActions:function(){var i=this,a=i.$preview,r=i.deleteExtraData||{},n=t.FRAMES+" .kv-file-remove",s=i.fileActionSettings,o=s.removeClass,l=s.removeErrorClass,d=function(){var e=i.isAjaxUpload?i.previewCache.count():i._inputFileCount();a.find(t.FRAMES).length||e||(i._setCaption(""),i.reset(),i.initialCaption="")};i._initZoomButton(),a.find(n).each(function(){var n,s,c,h=e(this),p=h.data("url")||i.deleteUrl,u=h.data("key");if(!t.isEmpty(p)&&void 0!==u){var f,m,g,v,w=h.closest(t.FRAMES),_=i.previewCache.data,b=w.attr("data-fileindex");b=parseInt(b.replace("init_","")),g=t.isEmpty(_.config)&&t.isEmpty(_.config[b])?null:_.config[b],"function"==typeof(v=t.isEmpty(g)||t.isEmpty(g.extra)?r:g.extra)&&(v=v()),m={id:h.attr("id"),key:u,extra:v},n=function(e){i.ajaxAborted=!1,i._raise("filepredelete",[u,e,v]),i._abort()?e.abort():(h.removeClass(l),t.addCss(w,"file-uploading"),t.addCss(h,"disabled "+o))},s=function(e,r,n){var s,c;if(!t.isEmpty(e)&&!t.isEmpty(e.error))return m.jqXHR=n,m.response=e,i._showError(e.error,m,"filedeleteerror"),w.removeClass("file-uploading"),h.removeClass("disabled "+o).addClass(l),void d();w.removeClass("file-uploading").addClass("file-deleted"),w.fadeOut("slow",function(){b=parseInt(w.attr("data-fileindex").replace("init_","")),i.previewCache.unset(b),i._deleteFileIndex(w),s=i.previewCache.count(),c=s>0?i._getMsgSelected(s):"",i._setCaption(c),i._raise("filedeleted",[u,n,v]),t.cleanZoomCache(a.find("#zoom-"+w.attr("id"))),i._clearObjects(w),w.remove(),d()})},c=function(e,t,a){var r=i.ajaxOperations.deleteThumb,n=i._parseError(r,e,a);m.jqXHR=e,m.response={},i._showError(n,m,"filedeleteerror"),w.removeClass("file-uploading"),h.removeClass("disabled "+o).addClass(l),d()},i._initAjaxSettings(),i._mergeAjaxCallback("beforeSend",n,"delete"),i._mergeAjaxCallback("success",s,"delete"),i._mergeAjaxCallback("error",c,"delete"),f=e.extend(!0,{},{url:p,type:"POST",dataType:"json",data:e.extend(!0,{},{key:u},v)},i._ajaxDeleteSettings),i._handler(h,"click",function(){if(!i._validateMinCount())return!1;i.ajaxAborted=!1,i._raise("filebeforedelete",[u,v]),i.ajaxAborted instanceof Promise?i.ajaxAborted.then(function(t){t||e.ajax(f)}):i.ajaxAborted||e.ajax(f)})}})},_hideFileIcon:function(){this.overwriteInitial&&this.$captionContainer.removeClass("icon-visible")},_showFileIcon:function(){t.addCss(this.$captionContainer,"icon-visible")},_getSize:function(t){var i,a,r,n=parseFloat(t),s=this.fileSizeGetter;return e.isNumeric(t)&&e.isNumeric(n)?("function"==typeof s?r=s(n):0===n?r="0.00 B":(i=Math.floor(Math.log(n)/Math.log(1024)),a=["B","KB","MB","GB","TB","PB","EB","ZB","YB"],r=1*(n/Math.pow(1024,i)).toFixed(2)+" "+a[i]),this._getLayoutTemplate("size").replace("{sizeText}",r)):""},_generatePreviewTemplate:function(i,a,r,n,s,o,l,d,c,h,p){var u,f=this,m=f.slug(r),g="",v="",w=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)<400?f.previewSettingsSmall[i]||f.defaults.previewSettingsSmall[i]:f.previewSettings[i]||f.defaults.previewSettings[i],_=c||f._renderFileFooter(m,l,"auto",o),b=f._getPreviewIcon(r),C="type-default",y=b&&f.preferIconicPreview,x=b&&f.preferIconicZoomPreview;return w&&e.each(w,function(e,t){v+=e+":"+t+";"}),u=function(a,o,l,c){var u=l?"zoom-"+s:s,g=f._getPreviewTemplate(a),w=(d||"")+" "+c;return f.frameClass&&(w=f.frameClass+" "+w),l&&(w=w.replace(" "+t.SORT_CSS,"")),g=f._parseFilePreviewIcon(g,r),"text"===a&&(o=t.htmlEncode(o)),"object"!==i||n||e.each(f.defaults.fileTypeSettings,function(e,t){"object"!==e&&"other"!==e&&t(r,n)&&(C="type-"+e)}),g.setTokens({previewId:u,caption:m,frameClass:w,type:n,fileindex:h,typeCss:C,footer:_,data:o,template:p||i,style:v?'style="'+v+'"':""})},h=h||s.slice(s.lastIndexOf("-")+1),f.fileActionSettings.showZoom&&(g=u(x?"other":i,a,!0,"kv-zoom-thumb")),g="\n"+f._getLayoutTemplate("zoomCache").replace("{zoomContent}",g),u(y?"other":i,a,!1,"kv-preview-thumb")+g},_addToPreview:function(e,t){return this.reversePreviewOrder?e.prepend(t):e.append(t)},_previewDefault:function(i,a,r){var n=this.$preview;if(this.showPreview){var s,o=i?i.name:"",l=i?i.type:"",d=i.size||0,c=this.slug(o),h=!0===r&&!this.isAjaxUpload,p=t.objUrl.createObjectURL(i);this._clearDefaultPreview(),s=this._generatePreviewTemplate("other",p,o,l,a,h,d),this._addToPreview(n,s),this._setThumbAttr(a,c,d),!0===r&&this.isAjaxUpload&&this._setThumbStatus(e("#"+a),"Error")}},_previewFile:function(e,t,i,a,r,n){if(this.showPreview){var s,o=t?t.name:"",l=n.type,d=n.name,c=this._parseFileType(l,o),h=this.allowedPreviewTypes,p=this.allowedPreviewMimeTypes,u=this.$preview,f=t.size||0,m=h&&h.indexOf(c)>=0,g=p&&-1!==p.indexOf(l),v="text"===c||"html"===c||"image"===c?i.target.result:r;if("html"===c&&this.purifyHtml&&window.DOMPurify&&(v=window.DOMPurify.sanitize(v)),m||g){s=this._generatePreviewTemplate(c,v,o,l,a,!1,f),this._clearDefaultPreview(),this._addToPreview(u,s);var w=u.find("#"+a+" img");this._validateImageOrientation(w,t,a,d,l,f,v)}else this._previewDefault(t,a);this._setThumbAttr(a,d,f),this._initSortable()}},_setThumbAttr:function(t,i,a){var r=e("#"+t);r.length&&(a=a&&a>0?this._getSize(a):"",r.data({caption:i,size:a}))},_setInitThumbAttr:function(){var e,i,a,r,n=this.previewCache.data,s=this.previewCache.count();if(0!==s)for(var o=0;o<s;o++)e=n.config[o],r=this.previewInitId+"-init_"+o,i=t.ifSet("caption",e,t.ifSet("filename",e)),a=t.ifSet("size",e),this._setThumbAttr(r,i,a)},_slugDefault:function(e){return t.isEmpty(e)?"":String(e).replace(/[\[\]\/\{}:;#%=\(\)\*\+\?\\\^\$\|<>&"']/g,"_")},_updateFileDetails:function(e){var i=this.$element,a=this.getFileStack(),r=t.isIE(9)&&t.findFileName(i.val())||i[0].files[0]&&i[0].files[0].name||a.length&&a[0].name||"",n=this.slug(r),s=this.isAjaxUpload?a.length:e,o=this.previewCache.count()+s,l=1===s?n:this._getMsgSelected(o);this.isError?(this.$previewContainer.removeClass("file-thumb-loading"),this.$previewStatus.html(""),this.$captionContainer.removeClass("icon-visible")):this._showFileIcon(),this._setCaption(l,this.isError),this.$container.removeClass("file-input-new file-input-ajax-new"),1===arguments.length&&this._raise("fileselect",[e,n]),this.previewCache.count()&&this._initPreviewActions()},_setThumbStatus:function(e,t){if(this.showPreview){var i="indicator"+t,a=i+"Title",r="file-preview-"+t.toLowerCase(),n=e.find(".file-upload-indicator"),s=this.fileActionSettings;e.removeClass("file-preview-success file-preview-error file-preview-loading"),"Success"===t&&e.find(".file-drag-handle").remove(),n.html(s[i]),n.attr("title",s[a]),e.addClass(r),"Error"!==t||this.retryErrorUploads||e.find(".kv-file-upload").attr("disabled",!0)}},_setProgressCancelled:function(){this._setProgress(101,this.$progress,this.msgCancelled)},_setProgress:function(e,i,a){var r,n=Math.min(e,100),s=this.progressUploadThreshold,o=e<=100?this.progressTemplate:this.progressCompleteTemplate,l=n<100?this.progressTemplate:a?this.progressErrorTemplate:o;i=i||this.$progress,t.isEmpty(l)||(r=s&&n>s&&e<=100?l.setTokens({percent:s,status:this.msgUploadThreshold}):l.setTokens({percent:n,status:e>100?this.msgUploadEnd:n+"%"}),i.html(r),a&&i.find('[role="progressbar"]').html(a))},_setFileDropZoneTitle:function(){var e,i=this.$container.find(".file-drop-zone"),a=this.dropZoneTitle;this.isClickable&&(e=t.isEmpty(this.$element.attr("multiple"))?this.fileSingle:this.filePlural,a+=this.dropZoneClickTitle.replace("{files}",e)),i.find("."+this.dropZoneTitleClass).remove(),!this.showPreview||0===i.length||this.getFileStack().length>0||!this.dropZoneEnabled||!this.isAjaxUpload&&this.$element.files||(0===i.find(t.FRAMES).length&&t.isEmpty(this.defaultPreviewContent)&&i.prepend('<div class="'+this.dropZoneTitleClass+'">'+a+"</div>"),this.$container.removeClass("file-input-new"),t.addCss(this.$container,"file-input-ajax-new"))},_setAsyncUploadStatus:function(t,i,a){var r=0;this._setProgress(i,e("#"+t).find(".file-thumb-progress")),this.uploadStatus[t]=i,e.each(this.uploadStatus,function(e,t){r+=t}),this._setProgress(Math.floor(r/a))},_validateMinCount:function(){var e=this.isAjaxUpload?this.getFileStack().length:this._inputFileCount();return!(this.validateInitialCount&&this.minFileCount>0&&this._getFileCount(e-1)<this.minFileCount)||(this._noFilesError({}),!1)},_getFileCount:function(e){return this.validateInitialCount&&!this.overwriteInitial&&(e+=this.previewCache.count()),e},_getFileId:function(e){var t,i=this.generateFileId;return"function"==typeof i?i(e,event):e&&(t=String(e.webkitRelativePath||e.fileName||e.name||null))?e.size+"-"+t.replace(/[^0-9a-zA-Z_-]/gim,""):null},_getFileName:function(e){return e&&e.name?this.slug(e.name):void 0},_getFileIds:function(e){return this.fileids.filter(function(t){return e?void 0!==t:null!=t})},_getFileNames:function(e){return this.filenames.filter(function(t){return e?void 0!==t:null!=t})},_setPreviewError:function(e,t,i,a){void 0!==t&&this.updateStack(t,i),this.showPreview&&(!this.removeFromPreviewOnError||a?(this._setThumbStatus(e,"Error"),this._refreshUploadButton(e,a)):e.remove())},_refreshUploadButton:function(e,t){var i=e.find(".kv-file-upload"),a=this.fileActionSettings,r=a.uploadIcon,n=a.uploadTitle;i.length&&(t&&(r=a.uploadRetryIcon,n=a.uploadRetryTitle),i.attr("title",n).html(r))},_checkDimensions:function(e,i,a,r,n,s,o){var l,d,c,h=this[("Small"===i?"min":"max")+"Image"+s];!t.isEmpty(h)&&a.length&&(c=a[0],d="Width"===s?c.naturalWidth||c.width:c.naturalHeight||c.height,("Small"===i?d>=h:d<=h)||(l=this["msgImage"+s+i].setTokens({name:n,size:h}),this._showUploadError(l,o),this._setPreviewError(r,e,null)))},_getExifObj:function(e){var t=null;try{t=window.piexif?window.piexif.load(e):null}catch(e){t=null}return t||this._log("Error loading the piexif.js library."),t},_validateImageOrientation:function(e,i,a,r,n,s,o){var l,d;(d=(l=e.length&&this.autoOrientImage?this._getExifObj(o):null)?l["0th"][piexif.ImageIFD.Orientation]:null)?(t.setImageOrientation(e,this.$preview.find("#zoom-"+a+" img"),d),this._raise("fileimageoriented",{$img:e,file:i}),this._validateImage(a,r,n,s,o,l)):this._validateImage(a,r,n,s,o,l)},_validateImage:function(t,i,a,r,n,s){var o,l,d,c=this,h=c.$preview,p=h.find("#"+t),u=p.attr("data-fileindex"),f=p.find("img");i=i||"Untitled",f.one("load",function(){l=p.width(),d=h.width(),l>d&&f.css("width","100%"),o={ind:u,id:t},c._checkDimensions(u,"Small",f,p,i,"Width",o),c._checkDimensions(u,"Small",f,p,i,"Height",o),c.resizeImage||(c._checkDimensions(u,"Large",f,p,i,"Width",o),c._checkDimensions(u,"Large",f,p,i,"Height",o)),c._raise("fileimageloaded",[t]),c.loadedImages.push({ind:u,img:f,thumb:p,pid:t,typ:a,siz:r,validated:!1,imgData:n,exifObj:s}),p.data("exif",s),c._validateAllImages()}).one("error",function(){c._raise("fileimageloaderror",[t])}).each(function(){this.complete?e(this).trigger("load"):this.error&&e(this).trigger("error")})},_validateAllImages:function(){var e,t,i,a={val:0},r=this.loadedImages.length,n=this.resizeIfSizeMoreThan;if(r===this.totalImagesCount&&(this._raise("fileimagesloaded"),this.resizeImage))for(e=0;e<this.loadedImages.length;e++)(t=this.loadedImages[e]).validated||((i=t.siz)&&i>1e3*n&&this._getResizedImage(t,a,r),this.loadedImages[e].validated=!0)},_getResizedImage:function(i,a,r){var n,s,o,l,d,c,h=this,p=e(i.img)[0],u=p.naturalWidth,f=p.naturalHeight,m=1,g=h.maxImageWidth||u,v=h.maxImageHeight||f,w=!(!u||!f),_=h.imageCanvas,b=h.imageCanvasContext,C=i.typ,y=i.pid,x=i.ind,T=i.thumb,E=i.exifObj;if(d=function(e,t,i){h.isAjaxUpload?h._showUploadError(e,t,i):h._showError(e,t,i),h._setPreviewError(T,x)},h.filestack[x]&&w&&!(u<=g&&f<=v)||(w&&h.filestack[x]&&h._raise("fileimageresized",[y,x]),a.val++,a.val===r&&h._raise("fileimagesresized"),w)){C=C||h.resizeDefaultImageType,s=u>g,o=f>v,m="width"===h.resizePreference?s?g/u:o?v/f:1:o?v/f:s?g/u:1,h._resetCanvas(),u*=m,f*=m,_.width=u,_.height=f;try{b.drawImage(p,0,0,u,f),l=_.toDataURL(C,h.resizeQuality),E&&(c=window.piexif.dump(E),l=window.piexif.insert(c,l)),n=t.dataURI2Blob(l),h.filestack[x]=n,h._raise("fileimageresized",[y,x]),a.val++,a.val===r&&h._raise("fileimagesresized",[void 0,void 0]),n instanceof Blob||d(h.msgImageResizeError,{id:y,index:x},"fileimageresizeerror")}catch(e){a.val++,a.val===r&&h._raise("fileimagesresized",[void 0,void 0]),d(h.msgImageResizeException.replace("{errors}",e.message),{id:y,index:x},"fileimageresizeexception")}}else d(h.msgImageResizeError,{id:y,index:x},"fileimageresizeerror")},_initBrowse:function(e){var i=this.$element;this.showBrowse?this.$btnFile=e.find(".btn-file").append(i):(i.appendTo(e).attr("tabindex",-1),t.addCss(i,"file-no-browse"))},_initClickable:function(){var i,a,r=this;r.isClickable&&(i=r.$dropZone,r.isAjaxUpload||(a=r.$preview.find(".file-default-preview")).length&&(i=a),t.addCss(i,"clickable"),i.attr("tabindex",-1),r._handler(i,"click",function(t){var a=e(t.target);e(r.elErrorContainer+":visible").length||a.parents(".file-preview-thumbnails").length&&!a.parents(".file-default-preview").length||(r.$element.data("zoneClicked",!0).trigger("click"),i.blur())}))},_initCaption:function(){var e=this.initialCaption||"";return this.overwriteInitial||t.isEmpty(e)?(this.$caption.val(""),!1):(this._setCaption(e),!0)},_setCaption:function(i,a){var r,n,s,o,l,d=this.getFileStack();if(this.$caption.length){if(this.$captionContainer.removeClass("icon-visible"),a)r=e("<div>"+this.msgValidationError+"</div>").text(),l=(o=d.length)?1===o&&d[0]?this._getFileNames()[0]:this._getMsgSelected(o):this._getMsgSelected(this.msgNo),n=t.isEmpty(i)?l:i,s='<span class="'+this.msgValidationErrorClass+'">'+this.msgValidationErrorIcon+"</span>";else{if(t.isEmpty(i))return;n=r=e("<div>"+i+"</div>").text(),s=this._getLayoutTemplate("fileIcon")}this.$captionContainer.addClass("icon-visible"),this.$caption.attr("title",r).val(n),this.$captionIcon.html(s)}},_createContainer:function(){var t={class:"file-input file-input-new"+(this.rtl?" kv-rtl":"")},i=e(document.createElement("div")).attr(t).html(this._renderMain());return i.insertBefore(this.$element),this._initBrowse(i),this.theme&&i.addClass("theme-"+this.theme),i},_refreshContainer:function(){var e=this.$container;this.$element.insertAfter(e),e.html(this._renderMain()),this._initBrowse(e),this._validateDisabled()},_validateDisabled:function(){this.$caption.attr({readonly:this.isDisabled})},_renderMain:function(){var e=this.dropZoneEnabled?" file-drop-zone":"file-drop-disabled",t=this.showClose?this._getLayoutTemplate("close"):"",i=this.showPreview?this._getLayoutTemplate("preview").setTokens({class:this.previewClass,dropClass:e}):"",a=this.isDisabled?this.captionClass+" file-caption-disabled":this.captionClass,r=this.captionTemplate.setTokens({class:a+" kv-fileinput-caption"});return this.mainTemplate.setTokens({class:this.mainClass+(!this.showBrowse&&this.showCaption?" no-browse":""),preview:i,close:t,caption:r,upload:this._renderButton("upload"),remove:this._renderButton("remove"),cancel:this._renderButton("cancel"),browse:this._renderButton("browse")})},_renderButton:function(e){var i=this._getLayoutTemplate("btnDefault"),a=this[e+"Class"],r=this[e+"Title"],n=this[e+"Icon"],s=this[e+"Label"],o=this.isDisabled?" disabled":"",l="button";switch(e){case"remove":if(!this.showRemove)return"";break;case"cancel":if(!this.showCancel)return"";a+=" kv-hidden";break;case"upload":if(!this.showUpload)return"";this.isAjaxUpload&&!this.isDisabled?i=this._getLayoutTemplate("btnLink").replace("{href}",this.uploadUrl):l="submit";break;case"browse":if(!this.showBrowse)return"";i=this._getLayoutTemplate("btnBrowse");break;default:return""}return a+="browse"===e?" btn-file":" fileinput-"+e+" fileinput-"+e+"-button",t.isEmpty(s)||(s=' <span class="'+this.buttonLabelClass+'">'+s+"</span>"),i.setTokens({type:l,css:a,title:r,status:o,icon:n,label:s})},_renderThumbProgress:function(){return'<div class="file-thumb-progress kv-hidden">'+this.progressTemplate.setTokens({percent:"0",status:this.msgUploadBegin})+"</div>"},_renderFileFooter:function(e,i,a,r){var n,s=this.fileActionSettings,o=s.showRemove,l=s.showDrag,d=s.showUpload,c=s.showZoom,h=this._getLayoutTemplate("footer"),p=this._getLayoutTemplate("indicator"),u=r?s.indicatorError:s.indicatorNew,f=r?s.indicatorErrorTitle:s.indicatorNewTitle,m=p.setTokens({indicator:u,indicatorTitle:f});return i=this._getSize(i),n=this.isAjaxUpload?h.setTokens({actions:this._renderFileActions(d,!1,o,c,l,!1,!1,!1),caption:e,size:i,width:a,progress:this._renderThumbProgress(),indicator:m}):h.setTokens({actions:this._renderFileActions(!1,!1,!1,c,l,!1,!1,!1),caption:e,size:i,width:a,progress:"",indicator:m}),n=t.replaceTags(n,this.previewThumbTags)},_renderFileActions:function(e,t,i,a,r,n,s,o,l,d,c){if(!(e||t||i||a||r))return"";var h,p=!1===s?"":' data-url="'+s+'"',u=!1===o?"":' data-key="'+o+'"',f="",m="",g="",v="",w="",_=this._getLayoutTemplate("actions"),b=this.fileActionSettings,C=this.otherActionButtons.setTokens({dataKey:u,key:o}),y=n?b.removeClass+" disabled":b.removeClass;return i&&(f=this._getLayoutTemplate("actionDelete").setTokens({removeClass:y,removeIcon:b.removeIcon,removeTitle:b.removeTitle,dataUrl:p,dataKey:u,key:o})),e&&(m=this._getLayoutTemplate("actionUpload").setTokens({uploadClass:b.uploadClass,uploadIcon:b.uploadIcon,uploadTitle:b.uploadTitle})),t&&(g=(g=this._getLayoutTemplate("actionDownload").setTokens({downloadClass:b.downloadClass,downloadIcon:b.downloadIcon,downloadTitle:b.downloadTitle,downloadUrl:d||this.initialPreviewDownloadUrl})).setTokens({filename:c,key:o})),a&&(v=this._getLayoutTemplate("actionZoom").setTokens({zoomClass:b.zoomClass,zoomIcon:b.zoomIcon,zoomTitle:b.zoomTitle})),r&&l&&(h="drag-handle-init "+b.dragClass,w=this._getLayoutTemplate("actionDrag").setTokens({dragClass:h,dragTitle:b.dragTitle,dragIcon:b.dragIcon})),_.setTokens({delete:f,upload:m,download:g,zoom:v,drag:w,other:C})},_browse:function(e){e&&e.isDefaultPrevented()||!this._raise("filebrowse")||(this.isError&&!this.isAjaxUpload&&this.clear(),this.$captionContainer.focus())},_filterDuplicate:function(e,t,i){var a=this._getFileId(e);a&&i&&i.indexOf(a)>-1||(i||(i=[]),t.push(e),i.push(a))},_change:function(i){var a=this;if(!a.changeTriggered){var r,n,s,o,l,d,c,h,p,u,f,m=a.$element,g=arguments.length>1,v=a.isAjaxUpload,w=[],_=g?arguments[1]:m.get(0).files,b=!v&&t.isEmpty(m.attr("multiple"))?1:a.maxFileCount,C=a.filestack.length,y=t.isEmpty(m.attr("multiple"))&&C>0,x=a._getFileIds();if(a.reader=null,a._resetUpload(),a._hideFileIcon(),a.dropZoneEnabled&&a.$container.find(".file-drop-zone ."+a.dropZoneTitleClass).remove(),v?e.each(_,function(e,t){a._filterDuplicate(t,w,x)}):(_=i.target&&void 0===i.target.files?i.target.value?[{name:i.target.value.replace(/^.+\\/,"")}]:[]:i.target.files||{},w=_),t.isEmpty(w)||0===w.length)return v||a.clear(),void a._raise("fileselectnone");if(a._resetErrors(),n=w.length,r=a._getFileCount(v?a.getFileStack().length+n:n),b>0&&r>b){if(!a.autoReplace||n>b)return s=a.autoReplace&&n>b?n:r,o=b,f=a.msgFilesTooMany.replace("{m}",o).replace("{n}",s),a.isError=(l=f,d=null,c=null,h=null,p=e.extend(!0,{},a._getOutData({},{},_),{id:c,index:h}),u={id:c,index:h,file:d,files:_},v?a._showUploadError(l,p):a._showError(l,u)),a.$captionContainer.removeClass("icon-visible"),a._setCaption("",!0),void a.$container.removeClass("file-input-new file-input-ajax-new");r>b&&a._resetPreviewThumbs(v)}else!v||y?(a._resetPreviewThumbs(!1),y&&a.clearStack()):!v||0!==C||a.previewCache.count()&&!a.overwriteInitial||a._resetPreviewThumbs(!0);a.isPreviewable?a.readFiles(w):a._updateFileDetails(1)}},_abort:function(t){var i;return this.ajaxAborted&&"object"==typeof this.ajaxAborted&&void 0!==this.ajaxAborted.message?((i=e.extend(!0,{},this._getOutData(),t)).abortData=this.ajaxAborted.data||{},i.abortMessage=this.ajaxAborted.message,this._setProgress(101,this.$progress,this.msgCancelled),this._showUploadError(this.ajaxAborted.message,i,"filecustomerror"),this.cancel(),!0):!!this.ajaxAborted},_resetFileStack:function(){var i=this,a=0,r=[],n=[],s=[];i._getThumbs().each(function(){var o=e(this),l=o.attr("data-fileindex"),d=i.filestack[l],c=o.attr("id");"-1"!==l&&-1!==l&&(void 0!==d?(r[a]=d,n[a]=i._getFileName(d),s[a]=i._getFileId(d),o.attr({id:i.previewInitId+"-"+a,"data-fileindex":a}),a++):o.attr({id:"uploaded-"+t.uniqId(),"data-fileindex":"-1"}),i.$preview.find("#zoom-"+c).attr({id:"zoom-"+o.attr("id"),"data-fileindex":o.attr("data-fileindex")}))}),i.filestack=r,i.filenames=n,i.fileids=s},_isFileSelectionValid:function(e){return e=e||0,this.required&&!this.getFilesCount()?(this.$errorContainer.html(""),this._showUploadError(this.msgFileRequired),!1):!(this.minFileCount>0&&this._getFileCount(e)<this.minFileCount)||(this._noFilesError({}),!1)},clearStack:function(){return this.filestack=[],this.filenames=[],this.fileids=[],this.$element},updateStack:function(e,t){return this.filestack[e]=t,this.filenames[e]=this._getFileName(t),this.fileids[e]=t&&this._getFileId(t)||null,this.$element},addToStack:function(e){return this.filestack.push(e),this.filenames.push(this._getFileName(e)),this.fileids.push(this._getFileId(e)),this.$element},getFileStack:function(e){return this.filestack.filter(function(t){return e?void 0!==t:null!=t})},getFilesCount:function(){var e=this.isAjaxUpload?this.getFileStack().length:this._inputFileCount();return this._getFileCount(e)},readFiles:function(i){this.reader=new FileReader;var a,r=this,n=r.$element,s=r.$preview,o=r.reader,l=r.$previewContainer,d=r.$previewStatus,c=r.msgLoading,h=r.msgProgress,p=r.previewInitId,u=i.length,f=r.fileTypeSettings,m=r.filestack.length,g=r.allowedFileTypes,v=g?g.length:0,w=r.allowedFileExtensions,_=t.isEmpty(w)?"":w.join(", "),b=r.maxFilePreviewSize&&parseFloat(r.maxFilePreviewSize),C=s.length&&(!b||isNaN(b)),y=function(t,n,s,o){var l,d=e.extend(!0,{},r._getOutData({},{},i),{id:s,index:o}),c={id:s,index:o,file:n,files:i};r._previewDefault(n,s,!0),r.isAjaxUpload?(r.addToStack(void 0),setTimeout(function(){a(o+1)},100)):u=0,r._initFileActions(),(l=e("#"+s)).find(".kv-file-upload").hide(),r.removeFromPreviewOnError&&l.remove(),r.isError=r.isAjaxUpload?r._showUploadError(t,d):r._showError(t,c),r._updateFileDetails(u)};r.loadedImages=[],r.totalImagesCount=0,e.each(i,function(e,t){var i=r.fileTypeSettings.image;i&&i(t.type)&&r.totalImagesCount++}),(a=function(x){if(t.isEmpty(n.attr("multiple"))&&(u=1),x>=u)return r.isAjaxUpload&&r.filestack.length>0?r._raise("filebatchselected",[r.getFileStack()]):r._raise("filebatchselected",[i]),l.removeClass("file-thumb-loading"),void d.html("");var T,E,S,k,F,P,I,A,D,z,$,j,U=p+"-"+(m+x),B=i[x],R=f.text,O=f.image,L=f.html,M=B&&B.name?r.slug(B.name):"",Z=(B&&B.size||0)/1e3,N="",H=B?t.objUrl.createObjectURL(B):null,W=0,q="",V=0,K=function(){var e=h.setTokens({index:x+1,files:u,percent:50,name:M});setTimeout(function(){d.html(e),r._updateFileDetails(u),a(x+1)},100),r._raise("fileloaded",[B,U,x,o])};if(B){if(v>0)for(E=0;E<v;E++)P=g[E],I=r.msgFileTypes[P]||P,q+=0===E?I:", "+I;if(!1!==M){if(0===M.length)return S=r.msgInvalidFileName.replace("{name}",t.htmlEncode(B.name,"[unknown]")),void y(S,B,U,x);if(t.isEmpty(w)||(N=new RegExp("\\.("+w.join("|")+")$","i")),T=Z.toFixed(2),r.maxFileSize>0&&Z>r.maxFileSize)return S=r.msgSizeTooLarge.setTokens({name:M,size:T,maxSize:r.maxFileSize}),void y(S,B,U,x);if(null!==r.minFileSize&&Z<=t.getNum(r.minFileSize))return S=r.msgSizeTooSmall.setTokens({name:M,size:T,minSize:r.minFileSize}),void y(S,B,U,x);if(!t.isEmpty(g)&&t.isArray(g)){for(E=0;E<g.length;E+=1)k=g[E],W+=(A=f[k])&&"function"==typeof A&&A(B.type,B.name)?1:0;if(0===W)return S=r.msgInvalidFileType.setTokens({name:M,types:q}),void y(S,B,U,x)}if(0===W&&!t.isEmpty(w)&&t.isArray(w)&&!t.isEmpty(N)&&(F=t.compare(M,N),0===(W+=t.isEmpty(F)?0:F.length)))return S=r.msgInvalidFileExtension.setTokens({name:M,extensions:_}),void y(S,B,U,x);if(!r.showPreview)return r.isAjaxUpload&&r.addToStack(B),setTimeout(function(){a(x+1),r._updateFileDetails(u)},100),void r._raise("fileloaded",[B,U,x,o]);if(!C&&Z>b)return r.addToStack(B),l.addClass("file-thumb-loading"),r._previewDefault(B,U),r._initFileActions(),r._updateFileDetails(u),void a(x+1);s.length&&void 0!==FileReader?(D=R(B.type,M),z=L(B.type,M),$=O(B.type,M),d.html(c.replace("{index}",x+1).replace("{files}",u)),l.addClass("file-thumb-loading"),o.onerror=function(e){r._errorHandler(e,M)},o.onload=function(i){var a,n,s,l,d,c,h,p,u=[];if(n={name:M,type:B.type},e.each(f,function(e,t){"object"!==e&&"other"!==e&&t(B.type,M)&&V++}),0===V){for(s=new Uint8Array(i.target.result),E=0;E<s.length;E++)l=s[E].toString(16),u.push(l);if(a=u.join("").toLowerCase().substring(0,8),c=t.getMimeType(a,"",""),t.isEmpty(c)&&(d=t.arrayBuffer2String(o.result),c=t.isSvg(d)?"image/svg+xml":t.getMimeType(a,d,B.type)),n={name:M,type:c},D=R(c,""),z=L(c,""),$=O(c,""),(j=D||z)||$)return h=j,(p=new FileReader).onerror=function(e){r._errorHandler(e,M)},p.onload=function(e){r._previewFile(x,B,e,U,H,n),r._initFileActions(),K()},void(h?p.readAsText(B,r.textEncoding):p.readAsDataURL(B))}r._previewFile(x,B,i,U,H,n),r._initFileActions(),K()},o.onprogress=function(e){if(e.lengthComputable){var t=e.loaded/e.total*100,i=Math.ceil(t);S=h.setTokens({index:x+1,files:u,percent:i,name:M}),setTimeout(function(){d.html(S)},100)}},D||z?o.readAsText(B,r.textEncoding):$?o.readAsDataURL(B):o.readAsArrayBuffer(B)):(r._previewDefault(B,U),setTimeout(function(){a(x+1),r._updateFileDetails(u)},100),r._raise("fileloaded",[B,U,x,o])),r.addToStack(B)}else a(x+1)}})(0),r._updateFileDetails(u,!1)},lock:function(){return this._resetErrors(),this.disable(),this.showRemove&&this.$container.find(".fileinput-remove").hide(),this.showCancel&&this.$container.find(".fileinput-cancel").show(),this._raise("filelock",[this.filestack,this._getExtraData()]),this.$element},unlock:function(e){return void 0===e&&(e=!0),this.enable(),this.showCancel&&this.$container.find(".fileinput-cancel").hide(),this.showRemove&&this.$container.find(".fileinput-remove").show(),e&&this._resetFileStack(),this._raise("fileunlock",[this.filestack,this._getExtraData()]),this.$element},cancel:function(){var t,i=this,a=i.ajaxRequests,r=a.length;if(r>0)for(t=0;t<r;t+=1)i.cancelling=!0,a[t].abort();return i._setProgressCancelled(),i._getThumbs().each(function(){var t=e(this),a=t.attr("data-fileindex");t.removeClass("file-uploading"),void 0!==i.filestack[a]&&(t.find(".kv-file-upload").removeClass("disabled").removeAttr("disabled"),t.find(".kv-file-remove").removeClass("disabled").removeAttr("disabled")),i.unlock()}),i.$element},clear:function(){var i,a=this;if(a._raise("fileclear"))return a.$btnUpload.removeAttr("disabled"),a._getThumbs().find("video,audio,img").each(function(){t.cleanMemory(e(this))}),a._clearFileInput(),a._resetUpload(),a.clearStack(),a._resetErrors(!0),a._hasInitialPreview()?(a._showFileIcon(),a._resetPreview(),a._initPreviewActions(),a.$container.removeClass("file-input-new")):(a._getThumbs().each(function(){a._clearObjects(e(this))}),a.isAjaxUpload&&(a.previewCache.data={}),a.$preview.html(""),i=!a.overwriteInitial&&a.initialCaption.length>0?a.initialCaption:"",a.$caption.attr("title","").val(i),t.addCss(a.$container,"file-input-new"),a._validateDefaultPreview()),0===a.$container.find(t.FRAMES).length&&(a._initCaption()||a.$captionContainer.removeClass("icon-visible")),a._hideFileIcon(),a._raise("filecleared"),a.$captionContainer.focus(),a._setFileDropZoneTitle(),a.$element},reset:function(){if(this._raise("filereset"))return this._resetPreview(),this.$container.find(".fileinput-filename").text(""),t.addCss(this.$container,"file-input-new"),(this.getFrames().length||this.dropZoneEnabled)&&this.$container.removeClass("file-input-new"),this.clearStack(),this.formdata={},this._setFileDropZoneTitle(),this.$element},disable:function(){return this.isDisabled=!0,this._raise("filedisabled"),this.$element.attr("disabled","disabled"),this.$container.find(".kv-fileinput-caption").addClass("file-caption-disabled"),this.$container.find(".fileinput-remove, .fileinput-upload, .file-preview-frame button").attr("disabled",!0),t.addCss(this.$container.find(".btn-file"),"disabled"),this._initDragDrop(),this.$element},enable:function(){return this.isDisabled=!1,this._raise("fileenabled"),this.$element.removeAttr("disabled"),this.$container.find(".kv-fileinput-caption").removeClass("file-caption-disabled"),this.$container.find(".fileinput-remove, .fileinput-upload, .file-preview-frame button").removeAttr("disabled"),this.$container.find(".btn-file").removeClass("disabled"),this._initDragDrop(),this.$element},upload:function(){var i,a,r,n=this.getFileStack().length,s=!e.isEmptyObject(this._getExtraData());if(this.isAjaxUpload&&!this.isDisabled&&this._isFileSelectionValid(n))if(this._resetUpload(),0!==n||s)if(this.$progress.show(),this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.lock(),this._setProgress(2),0===n&&s)this._uploadExtraOnly();else{if(r=this.filestack.length,this.hasInitData=!1,!this.uploadAsync)return this._uploadBatch(),this.$element;for(a=this._getOutData(),this._raise("filebatchpreupload",[a]),this.fileBatchCompleted=!1,this.uploadCache={content:[],config:[],tags:[],append:!0},this.uploadAsyncCount=this.getFileStack().length,i=0;i<r;i++)this.uploadCache.content[i]=null,this.uploadCache.config[i]=null,this.uploadCache.tags[i]=null;for(this.$preview.find(".file-preview-initial").removeClass(t.SORT_CSS),this._initSortable(),this.cacheInitialPreview=this.getPreview(),i=0;i<r;i++)this.filestack[i]&&this._uploadSingle(i,!0)}else this._showUploadError(this.msgUploadEmpty)},destroy:function(){var t=this.$form,i=this.$container,a=this.$element,r=this.namespace;return e(document).off(r),e(window).off(r),t&&t.length&&t.off(r),this.isAjaxUpload&&this._clearFileInput(),this._cleanup(),this._initPreviewCache(),a.insertBefore(i).off(r).removeData(),i.off().remove(),a},refresh:function(i){var a=this.$element;return i="object"!=typeof i||t.isEmpty(i)?this.options:e.extend(!0,{},this.options,i),this._init(i,!0),this._listen(),a},zoom:function(e){var i=this._getFrame(e),a=this.$modal;i&&(t.initModal(a),a.html(this._getModalContent()),this._setZoomContent(i),a.modal("show"),this._initZoomButtons())},getExif:function(e){var t=this._getFrame(e);return t&&t.data("exif")||null},getFrames:function(i){var a;return i=i||"",a=this.$preview.find(t.FRAMES+i),this.reversePreviewOrder&&(a=e(a.get().reverse())),a},getPreview:function(){return{content:this.initialPreview,config:this.initialPreviewConfig,tags:this.initialPreviewThumbTags}}},e.fn.fileinput=function(a){if(t.hasFileAPISupport()||t.isIE(9)){var r=Array.apply(null,arguments),n=[];switch(r.shift(),this.each(function(){var s,o=e(this),l=o.data("fileinput"),d="object"==typeof a&&a,c=d.theme||o.data("theme"),h={},p={},u=d.language||o.data("language")||e.fn.fileinput.defaults.language||"en";l||(c&&(p=e.fn.fileinputThemes[c]||{}),"en"===u||t.isEmpty(e.fn.fileinputLocales[u])||(h=e.fn.fileinputLocales[u]||{}),s=e.extend(!0,{},e.fn.fileinput.defaults,p,e.fn.fileinputLocales.en,h,d,o.data()),l=new i(this,s),o.data("fileinput",l)),"string"==typeof a&&n.push(l[a].apply(l,r))}),n.length){case 0:return this;case 1:return n[0];default:return n}}},e.fn.fileinput.defaults={language:"en",showCaption:!0,showBrowse:!0,showPreview:!0,showRemove:!0,showUpload:!0,showCancel:!0,showClose:!0,showUploadedThumbs:!0,browseOnZoneClick:!1,autoReplace:!1,autoOrientImage:!1,required:!1,rtl:!1,hideThumbnailContent:!1,generateFileId:null,previewClass:"",captionClass:"",frameClass:"krajee-default",mainClass:"file-caption-main",mainTemplate:null,purifyHtml:!0,fileSizeGetter:null,initialCaption:"",initialPreview:[],initialPreviewDelimiter:"*$$*",initialPreviewAsData:!1,initialPreviewFileType:"image",initialPreviewConfig:[],initialPreviewThumbTags:[],previewThumbTags:{},initialPreviewShowDelete:!0,initialPreviewDownloadUrl:"",removeFromPreviewOnError:!1,deleteUrl:"",deleteExtraData:{},overwriteInitial:!0,previewZoomButtonIcons:{prev:'<i class="glyphicon glyphicon-triangle-left"></i>',next:'<i class="glyphicon glyphicon-triangle-right"></i>',toggleheader:'<i class="glyphicon glyphicon-resize-vertical"></i>',fullscreen:'<i class="glyphicon glyphicon-fullscreen"></i>',borderless:'<i class="glyphicon glyphicon-resize-full"></i>',close:'<i class="glyphicon glyphicon-remove"></i>'},previewZoomButtonClasses:{prev:"btn btn-navigate",next:"btn btn-navigate",toggleheader:"btn btn-sm btn-kv btn-default btn-outline-secondary",fullscreen:"btn btn-sm btn-kv btn-default btn-outline-secondary",borderless:"btn btn-sm btn-kv btn-default btn-outline-secondary",close:"btn btn-sm btn-kv btn-default btn-outline-secondary"},previewTemplates:{},previewContentTemplates:{},preferIconicPreview:!1,preferIconicZoomPreview:!1,allowedPreviewTypes:void 0,allowedPreviewMimeTypes:null,allowedFileTypes:null,allowedFileExtensions:null,defaultPreviewContent:null,customLayoutTags:{},customPreviewTags:{},previewFileIcon:'<i class="glyphicon glyphicon-file"></i>',previewFileIconClass:"file-other-icon",previewFileIconSettings:{},previewFileExtSettings:{},buttonLabelClass:"hidden-xs",browseIcon:'<i class="glyphicon glyphicon-folder-open"></i>&nbsp;',browseClass:"btn btn-primary",removeIcon:'<i class="glyphicon glyphicon-trash"></i>',removeClass:"btn btn-default btn-secondary",cancelIcon:'<i class="glyphicon glyphicon-ban-circle"></i>',cancelClass:"btn btn-default btn-secondary",uploadIcon:'<i class="glyphicon glyphicon-upload"></i>',uploadClass:"btn btn-default btn-secondary",uploadUrl:null,uploadUrlThumb:null,uploadAsync:!0,uploadExtraData:{},zoomModalHeight:480,minImageWidth:null,minImageHeight:null,maxImageWidth:null,maxImageHeight:null,resizeImage:!1,resizePreference:"width",resizeQuality:.92,resizeDefaultImageType:"image/jpeg",resizeIfSizeMoreThan:0,minFileSize:0,maxFileSize:0,maxFilePreviewSize:25600,minFileCount:0,maxFileCount:0,validateInitialCount:!1,msgValidationErrorClass:"text-danger",msgValidationErrorIcon:'<i class="glyphicon glyphicon-exclamation-sign"></i> ',msgErrorClass:"file-error-message",progressThumbClass:"progress-bar bg-success progress-bar-success progress-bar-striped active",progressClass:"progress-bar bg-success progress-bar-success progress-bar-striped active",progressCompleteClass:"progress-bar bg-success progress-bar-success",progressErrorClass:"progress-bar bg-danger progress-bar-danger",progressUploadThreshold:99,previewFileType:"image",elCaptionContainer:null,elCaptionText:null,elPreviewContainer:null,elPreviewImage:null,elPreviewStatus:null,elErrorContainer:null,errorCloseButton:t.closeButton("kv-error-close"),slugCallback:null,dropZoneEnabled:!0,dropZoneTitleClass:"file-drop-zone-title",fileActionSettings:{},otherActionButtons:"",textEncoding:"UTF-8",ajaxSettings:{},ajaxDeleteSettings:{},showAjaxErrorDetails:!0,mergeAjaxCallbacks:!1,mergeAjaxDeleteCallbacks:!1,retryErrorUploads:!0,reversePreviewOrder:!1},e.fn.fileinputLocales.en={fileSingle:"file",filePlural:"files",browseLabel:"Browse &hellip;",removeLabel:"Remove",removeTitle:"Clear selected files",cancelLabel:"Cancel",cancelTitle:"Abort ongoing upload",uploadLabel:"Upload",uploadTitle:"Upload selected files",msgNo:"No",msgNoFilesSelected:"No files selected",msgCancelled:"Cancelled",msgPlaceholder:"Select {files}...",msgZoomModalHeading:"Detailed Preview",msgFileRequired:"You must select a file to upload.",msgSizeTooSmall:'File "{name}" (<b>{size} KB</b>) is too small and must be larger than <b>{minSize} KB</b>.',msgSizeTooLarge:'File "{name}" (<b>{size} KB</b>) exceeds maximum allowed upload size of <b>{maxSize} KB</b>.',msgFilesTooLess:"You must select at least <b>{n}</b> {files} to upload.",msgFilesTooMany:"Number of files selected for upload <b>({n})</b> exceeds maximum allowed limit of <b>{m}</b>.",msgFileNotFound:'File "{name}" not found!',msgFileSecured:'Security restrictions prevent reading the file "{name}".',msgFileNotReadable:'File "{name}" is not readable.',msgFilePreviewAborted:'File preview aborted for "{name}".',msgFilePreviewError:'An error occurred while reading the file "{name}".',msgInvalidFileName:'Invalid or unsupported characters in file name "{name}".',msgInvalidFileType:'Invalid type for file "{name}". Only "{types}" files are supported.',msgInvalidFileExtension:'Invalid extension for file "{name}". Only "{extensions}" files are supported.',msgFileTypes:{image:"image",html:"HTML",text:"text",video:"video",audio:"audio",flash:"flash",pdf:"PDF",object:"object"},msgUploadAborted:"The file upload was aborted",msgUploadThreshold:"Processing...",msgUploadBegin:"Initializing...",msgUploadEnd:"Done",msgUploadEmpty:"No valid data available for upload.",msgUploadError:"Error",msgValidationError:"Validation Error",msgLoading:"Loading file {index} of {files} &hellip;",msgProgress:"Loading file {index} of {files} - {name} - {percent}% completed.",msgSelected:"{n} {files} selected",msgFoldersNotAllowed:"Drag & drop files only! {n} folder(s) dropped were skipped.",msgImageWidthSmall:'Width of image file "{name}" must be at least {size} px.',msgImageHeightSmall:'Height of image file "{name}" must be at least {size} px.',msgImageWidthLarge:'Width of image file "{name}" cannot exceed {size} px.',msgImageHeightLarge:'Height of image file "{name}" cannot exceed {size} px.',msgImageResizeError:"Could not get the image dimensions to resize.",msgImageResizeException:"Error while resizing the image.<pre>{errors}</pre>",msgAjaxError:"Something went wrong with the {operation} operation. Please try again later!",msgAjaxProgressError:"{operation} failed",ajaxOperations:{deleteThumb:"file delete",uploadThumb:"file upload",uploadBatch:"batch file upload",uploadExtra:"form data upload"},dropZoneTitle:"Drag & drop files here &hellip;",dropZoneClickTitle:"<br>(or click to select {files})",previewZoomButtonTitles:{prev:"View previous file",next:"View next file",toggleheader:"Toggle header",fullscreen:"Toggle full screen",borderless:"Toggle borderless mode",close:"Close detailed preview"},usePdfRenderer:function(){return!!navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/i)},pdfRendererUrl:"",pdfRendererTemplate:'<iframe class="kv-preview-data file-preview-pdf" src="{renderer}?file={data}" {style}></iframe>'},e.fn.fileinput.Constructor=i,e(document).ready(function(){var t=e("input.file[type=file]");t.length&&t.fileinput()})});
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if("object"==typeof exports)module.exports=a(require("jquery"),require("moment"));else{if("undefined"==typeof jQuery)throw"bootstrap-datetimepicker requires jQuery to be loaded first";if("undefined"==typeof moment)throw"bootstrap-datetimepicker requires Moment.js to be loaded first";a(jQuery,moment)}}(function(a,b){"use strict";if(!b)throw new Error("bootstrap-datetimepicker requires Moment.js to be loaded first");var c=function(c,d){var e,f,g,h,i,j,k,l={},m=!0,n=!1,o=!1,p=0,q=[{clsName:"days",navFnc:"M",navStep:1},{clsName:"months",navFnc:"y",navStep:1},{clsName:"years",navFnc:"y",navStep:10},{clsName:"decades",navFnc:"y",navStep:100}],r=["days","months","years","decades"],s=["top","bottom","auto"],t=["left","right","auto"],u=["default","top","bottom"],v={up:38,38:"up",down:40,40:"down",left:37,37:"left",right:39,39:"right",tab:9,9:"tab",escape:27,27:"escape",enter:13,13:"enter",pageUp:33,33:"pageUp",pageDown:34,34:"pageDown",shift:16,16:"shift",control:17,17:"control",space:32,32:"space",t:84,84:"t",delete:46,46:"delete"},w={},x=function(){return void 0!==b.tz&&void 0!==d.timeZone&&null!==d.timeZone&&""!==d.timeZone},y=function(a){var c;return c=void 0===a||null===a?b():b.isDate(a)||b.isMoment(a)?b(a):x()?b.tz(a,j,d.useStrict,d.timeZone):b(a,j,d.useStrict),x()&&c.tz(d.timeZone),c},z=function(a){if("string"!=typeof a||a.length>1)throw new TypeError("isEnabled expects a single character string parameter");switch(a){case"y":return i.indexOf("Y")!==-1;case"M":return i.indexOf("M")!==-1;case"d":return i.toLowerCase().indexOf("d")!==-1;case"h":case"H":return i.toLowerCase().indexOf("h")!==-1;case"m":return i.indexOf("m")!==-1;case"s":return i.indexOf("s")!==-1;default:return!1}},A=function(){return z("h")||z("m")||z("s")},B=function(){return z("y")||z("M")||z("d")},C=function(){var b=a("<thead>").append(a("<tr>").append(a("<th>").addClass("prev").attr("data-action","previous").append(a("<span>").addClass(d.icons.previous))).append(a("<th>").addClass("picker-switch").attr("data-action","pickerSwitch").attr("colspan",d.calendarWeeks?"6":"5")).append(a("<th>").addClass("next").attr("data-action","next").append(a("<span>").addClass(d.icons.next)))),c=a("<tbody>").append(a("<tr>").append(a("<td>").attr("colspan",d.calendarWeeks?"8":"7")));return[a("<div>").addClass("datepicker-days").append(a("<table>").addClass("table-condensed").append(b).append(a("<tbody>"))),a("<div>").addClass("datepicker-months").append(a("<table>").addClass("table-condensed").append(b.clone()).append(c.clone())),a("<div>").addClass("datepicker-years").append(a("<table>").addClass("table-condensed").append(b.clone()).append(c.clone())),a("<div>").addClass("datepicker-decades").append(a("<table>").addClass("table-condensed").append(b.clone()).append(c.clone()))]},D=function(){var b=a("<tr>"),c=a("<tr>"),e=a("<tr>");return z("h")&&(b.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.incrementHour}).addClass("btn").attr("data-action","incrementHours").append(a("<span>").addClass(d.icons.up)))),c.append(a("<td>").append(a("<span>").addClass("timepicker-hour").attr({"data-time-component":"hours",title:d.tooltips.pickHour}).attr("data-action","showHours"))),e.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.decrementHour}).addClass("btn").attr("data-action","decrementHours").append(a("<span>").addClass(d.icons.down))))),z("m")&&(z("h")&&(b.append(a("<td>").addClass("separator")),c.append(a("<td>").addClass("separator").html(":")),e.append(a("<td>").addClass("separator"))),b.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.incrementMinute}).addClass("btn").attr("data-action","incrementMinutes").append(a("<span>").addClass(d.icons.up)))),c.append(a("<td>").append(a("<span>").addClass("timepicker-minute").attr({"data-time-component":"minutes",title:d.tooltips.pickMinute}).attr("data-action","showMinutes"))),e.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.decrementMinute}).addClass("btn").attr("data-action","decrementMinutes").append(a("<span>").addClass(d.icons.down))))),z("s")&&(z("m")&&(b.append(a("<td>").addClass("separator")),c.append(a("<td>").addClass("separator").html(":")),e.append(a("<td>").addClass("separator"))),b.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.incrementSecond}).addClass("btn").attr("data-action","incrementSeconds").append(a("<span>").addClass(d.icons.up)))),c.append(a("<td>").append(a("<span>").addClass("timepicker-second").attr({"data-time-component":"seconds",title:d.tooltips.pickSecond}).attr("data-action","showSeconds"))),e.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.decrementSecond}).addClass("btn").attr("data-action","decrementSeconds").append(a("<span>").addClass(d.icons.down))))),h||(b.append(a("<td>").addClass("separator")),c.append(a("<td>").append(a("<button>").addClass("btn btn-primary").attr({"data-action":"togglePeriod",tabindex:"-1",title:d.tooltips.togglePeriod}))),e.append(a("<td>").addClass("separator"))),a("<div>").addClass("timepicker-picker").append(a("<table>").addClass("table-condensed").append([b,c,e]))},E=function(){var b=a("<div>").addClass("timepicker-hours").append(a("<table>").addClass("table-condensed")),c=a("<div>").addClass("timepicker-minutes").append(a("<table>").addClass("table-condensed")),d=a("<div>").addClass("timepicker-seconds").append(a("<table>").addClass("table-condensed")),e=[D()];return z("h")&&e.push(b),z("m")&&e.push(c),z("s")&&e.push(d),e},F=function(){var b=[];return d.showTodayButton&&b.push(a("<td>").append(a("<a>").attr({"data-action":"today",title:d.tooltips.today}).append(a("<span>").addClass(d.icons.today)))),!d.sideBySide&&B()&&A()&&b.push(a("<td>").append(a("<a>").attr({"data-action":"togglePicker",title:d.tooltips.selectTime}).append(a("<span>").addClass(d.icons.time)))),d.showClear&&b.push(a("<td>").append(a("<a>").attr({"data-action":"clear",title:d.tooltips.clear}).append(a("<span>").addClass(d.icons.clear)))),d.showClose&&b.push(a("<td>").append(a("<a>").attr({"data-action":"close",title:d.tooltips.close}).append(a("<span>").addClass(d.icons.close)))),a("<table>").addClass("table-condensed").append(a("<tbody>").append(a("<tr>").append(b)))},G=function(){var b=a("<div>").addClass("bootstrap-datetimepicker-widget dropdown-menu"),c=a("<div>").addClass("datepicker").append(C()),e=a("<div>").addClass("timepicker").append(E()),f=a("<ul>").addClass("list-unstyled"),g=a("<li>").addClass("picker-switch"+(d.collapse?" accordion-toggle":"")).append(F());return d.inline&&b.removeClass("dropdown-menu"),h&&b.addClass("usetwentyfour"),z("s")&&!h&&b.addClass("wider"),d.sideBySide&&B()&&A()?(b.addClass("timepicker-sbs"),"top"===d.toolbarPlacement&&b.append(g),b.append(a("<div>").addClass("row").append(c.addClass("col-md-6")).append(e.addClass("col-md-6"))),"bottom"===d.toolbarPlacement&&b.append(g),b):("top"===d.toolbarPlacement&&f.append(g),B()&&f.append(a("<li>").addClass(d.collapse&&A()?"collapse in":"").append(c)),"default"===d.toolbarPlacement&&f.append(g),A()&&f.append(a("<li>").addClass(d.collapse&&B()?"collapse":"").append(e)),"bottom"===d.toolbarPlacement&&f.append(g),b.append(f))},H=function(){var b,e={};return b=c.is("input")||d.inline?c.data():c.find("input").data(),b.dateOptions&&b.dateOptions instanceof Object&&(e=a.extend(!0,e,b.dateOptions)),a.each(d,function(a){var c="date"+a.charAt(0).toUpperCase()+a.slice(1);void 0!==b[c]&&(e[a]=b[c])}),e},I=function(){var b,e=(n||c).position(),f=(n||c).offset(),g=d.widgetPositioning.vertical,h=d.widgetPositioning.horizontal;if(d.widgetParent)b=d.widgetParent.append(o);else if(c.is("input"))b=c.after(o).parent();else{if(d.inline)return void(b=c.append(o));b=c,c.children().first().after(o)}if("auto"===g&&(g=f.top+1.5*o.height()>=a(window).height()+a(window).scrollTop()&&o.height()+c.outerHeight()<f.top?"top":"bottom"),"auto"===h&&(h=b.width()<f.left+o.outerWidth()/2&&f.left+o.outerWidth()>a(window).width()?"right":"left"),"top"===g?o.addClass("top").removeClass("bottom"):o.addClass("bottom").removeClass("top"),"right"===h?o.addClass("pull-right"):o.removeClass("pull-right"),"static"===b.css("position")&&(b=b.parents().filter(function(){return"static"!==a(this).css("position")}).first()),0===b.length)throw new Error("datetimepicker component should be placed within a non-static positioned container");o.css({top:"top"===g?"auto":e.top+c.outerHeight(),bottom:"top"===g?b.outerHeight()-(b===c?0:e.top):"auto",left:"left"===h?b===c?0:e.left:"auto",right:"left"===h?"auto":b.outerWidth()-c.outerWidth()-(b===c?0:e.left)})},J=function(a){"dp.change"===a.type&&(a.date&&a.date.isSame(a.oldDate)||!a.date&&!a.oldDate)||c.trigger(a)},K=function(a){"y"===a&&(a="YYYY"),J({type:"dp.update",change:a,viewDate:f.clone()})},L=function(a){o&&(a&&(k=Math.max(p,Math.min(3,k+a))),o.find(".datepicker > div").hide().filter(".datepicker-"+q[k].clsName).show())},M=function(){var b=a("<tr>"),c=f.clone().startOf("w").startOf("d");for(d.calendarWeeks===!0&&b.append(a("<th>").addClass("cw").text("#"));c.isBefore(f.clone().endOf("w"));)b.append(a("<th>").addClass("dow").text(c.format("dd"))),c.add(1,"d");o.find(".datepicker-days thead").append(b)},N=function(a){return d.disabledDates[a.format("YYYY-MM-DD")]===!0},O=function(a){return d.enabledDates[a.format("YYYY-MM-DD")]===!0},P=function(a){return d.disabledHours[a.format("H")]===!0},Q=function(a){return d.enabledHours[a.format("H")]===!0},R=function(b,c){if(!b.isValid())return!1;if(d.disabledDates&&"d"===c&&N(b))return!1;if(d.enabledDates&&"d"===c&&!O(b))return!1;if(d.minDate&&b.isBefore(d.minDate,c))return!1;if(d.maxDate&&b.isAfter(d.maxDate,c))return!1;if(d.daysOfWeekDisabled&&"d"===c&&d.daysOfWeekDisabled.indexOf(b.day())!==-1)return!1;if(d.disabledHours&&("h"===c||"m"===c||"s"===c)&&P(b))return!1;if(d.enabledHours&&("h"===c||"m"===c||"s"===c)&&!Q(b))return!1;if(d.disabledTimeIntervals&&("h"===c||"m"===c||"s"===c)){var e=!1;if(a.each(d.disabledTimeIntervals,function(){if(b.isBetween(this[0],this[1]))return e=!0,!1}),e)return!1}return!0},S=function(){for(var b=[],c=f.clone().startOf("y").startOf("d");c.isSame(f,"y");)b.push(a("<span>").attr("data-action","selectMonth").addClass("month").text(c.format("MMM"))),c.add(1,"M");o.find(".datepicker-months td").empty().append(b)},T=function(){var b=o.find(".datepicker-months"),c=b.find("th"),g=b.find("tbody").find("span");c.eq(0).find("span").attr("title",d.tooltips.prevYear),c.eq(1).attr("title",d.tooltips.selectYear),c.eq(2).find("span").attr("title",d.tooltips.nextYear),b.find(".disabled").removeClass("disabled"),R(f.clone().subtract(1,"y"),"y")||c.eq(0).addClass("disabled"),c.eq(1).text(f.year()),R(f.clone().add(1,"y"),"y")||c.eq(2).addClass("disabled"),g.removeClass("active"),e.isSame(f,"y")&&!m&&g.eq(e.month()).addClass("active"),g.each(function(b){R(f.clone().month(b),"M")||a(this).addClass("disabled")})},U=function(){var a=o.find(".datepicker-years"),b=a.find("th"),c=f.clone().subtract(5,"y"),g=f.clone().add(6,"y"),h="";for(b.eq(0).find("span").attr("title",d.tooltips.prevDecade),b.eq(1).attr("title",d.tooltips.selectDecade),b.eq(2).find("span").attr("title",d.tooltips.nextDecade),a.find(".disabled").removeClass("disabled"),d.minDate&&d.minDate.isAfter(c,"y")&&b.eq(0).addClass("disabled"),b.eq(1).text(c.year()+"-"+g.year()),d.maxDate&&d.maxDate.isBefore(g,"y")&&b.eq(2).addClass("disabled");!c.isAfter(g,"y");)h+='<span data-action="selectYear" class="year'+(c.isSame(e,"y")&&!m?" active":"")+(R(c,"y")?"":" disabled")+'">'+c.year()+"</span>",c.add(1,"y");a.find("td").html(h)},V=function(){var a,c=o.find(".datepicker-decades"),g=c.find("th"),h=b({y:f.year()-f.year()%100-1}),i=h.clone().add(100,"y"),j=h.clone(),k=!1,l=!1,m="";for(g.eq(0).find("span").attr("title",d.tooltips.prevCentury),g.eq(2).find("span").attr("title",d.tooltips.nextCentury),c.find(".disabled").removeClass("disabled"),(h.isSame(b({y:1900}))||d.minDate&&d.minDate.isAfter(h,"y"))&&g.eq(0).addClass("disabled"),g.eq(1).text(h.year()+"-"+i.year()),(h.isSame(b({y:2e3}))||d.maxDate&&d.maxDate.isBefore(i,"y"))&&g.eq(2).addClass("disabled");!h.isAfter(i,"y");)a=h.year()+12,k=d.minDate&&d.minDate.isAfter(h,"y")&&d.minDate.year()<=a,l=d.maxDate&&d.maxDate.isAfter(h,"y")&&d.maxDate.year()<=a,m+='<span data-action="selectDecade" class="decade'+(e.isAfter(h)&&e.year()<=a?" active":"")+(R(h,"y")||k||l?"":" disabled")+'" data-selection="'+(h.year()+6)+'">'+(h.year()+1)+" - "+(h.year()+12)+"</span>",h.add(12,"y");m+="<span></span><span></span><span></span>",c.find("td").html(m),g.eq(1).text(j.year()+1+"-"+h.year())},W=function(){var b,c,g,h=o.find(".datepicker-days"),i=h.find("th"),j=[],k=[];if(B()){for(i.eq(0).find("span").attr("title",d.tooltips.prevMonth),i.eq(1).attr("title",d.tooltips.selectMonth),i.eq(2).find("span").attr("title",d.tooltips.nextMonth),h.find(".disabled").removeClass("disabled"),i.eq(1).text(f.format(d.dayViewHeaderFormat)),R(f.clone().subtract(1,"M"),"M")||i.eq(0).addClass("disabled"),R(f.clone().add(1,"M"),"M")||i.eq(2).addClass("disabled"),b=f.clone().startOf("M").startOf("w").startOf("d"),g=0;g<42;g++)0===b.weekday()&&(c=a("<tr>"),d.calendarWeeks&&c.append('<td class="cw">'+b.week()+"</td>"),j.push(c)),k=["day"],b.isBefore(f,"M")&&k.push("old"),b.isAfter(f,"M")&&k.push("new"),b.isSame(e,"d")&&!m&&k.push("active"),R(b,"d")||k.push("disabled"),b.isSame(y(),"d")&&k.push("today"),0!==b.day()&&6!==b.day()||k.push("weekend"),J({type:"dp.classify",date:b,classNames:k}),c.append('<td data-action="selectDay" data-day="'+b.format("L")+'" class="'+k.join(" ")+'">'+b.date()+"</td>"),b.add(1,"d");h.find("tbody").empty().append(j),T(),U(),V()}},X=function(){var b=o.find(".timepicker-hours table"),c=f.clone().startOf("d"),d=[],e=a("<tr>");for(f.hour()>11&&!h&&c.hour(12);c.isSame(f,"d")&&(h||f.hour()<12&&c.hour()<12||f.hour()>11);)c.hour()%4===0&&(e=a("<tr>"),d.push(e)),e.append('<td data-action="selectHour" class="hour'+(R(c,"h")?"":" disabled")+'">'+c.format(h?"HH":"hh")+"</td>"),c.add(1,"h");b.empty().append(d)},Y=function(){for(var b=o.find(".timepicker-minutes table"),c=f.clone().startOf("h"),e=[],g=a("<tr>"),h=1===d.stepping?5:d.stepping;f.isSame(c,"h");)c.minute()%(4*h)===0&&(g=a("<tr>"),e.push(g)),g.append('<td data-action="selectMinute" class="minute'+(R(c,"m")?"":" disabled")+'">'+c.format("mm")+"</td>"),c.add(h,"m");b.empty().append(e)},Z=function(){for(var b=o.find(".timepicker-seconds table"),c=f.clone().startOf("m"),d=[],e=a("<tr>");f.isSame(c,"m");)c.second()%20===0&&(e=a("<tr>"),d.push(e)),e.append('<td data-action="selectSecond" class="second'+(R(c,"s")?"":" disabled")+'">'+c.format("ss")+"</td>"),c.add(5,"s");b.empty().append(d)},$=function(){var a,b,c=o.find(".timepicker span[data-time-component]");h||(a=o.find(".timepicker [data-action=togglePeriod]"),b=e.clone().add(e.hours()>=12?-12:12,"h"),a.text(e.format("A")),R(b,"h")?a.removeClass("disabled"):a.addClass("disabled")),c.filter("[data-time-component=hours]").text(e.format(h?"HH":"hh")),c.filter("[data-time-component=minutes]").text(e.format("mm")),c.filter("[data-time-component=seconds]").text(e.format("ss")),X(),Y(),Z()},_=function(){o&&(W(),$())},aa=function(a){var b=m?null:e;if(!a)return m=!0,g.val(""),c.data("date",""),J({type:"dp.change",date:!1,oldDate:b}),void _();if(a=a.clone().locale(d.locale),x()&&a.tz(d.timeZone),1!==d.stepping)for(a.minutes(Math.round(a.minutes()/d.stepping)*d.stepping).seconds(0);d.minDate&&a.isBefore(d.minDate);)a.add(d.stepping,"minutes");R(a)?(e=a,f=e.clone(),g.val(e.format(i)),c.data("date",e.format(i)),m=!1,_(),J({type:"dp.change",date:e.clone(),oldDate:b})):(d.keepInvalid?J({type:"dp.change",date:a,oldDate:b}):g.val(m?"":e.format(i)),J({type:"dp.error",date:a,oldDate:b}))},ba=function(){var b=!1;return o?(o.find(".collapse").each(function(){var c=a(this).data("collapse");return!c||!c.transitioning||(b=!0,!1)}),b?l:(n&&n.hasClass("btn")&&n.toggleClass("active"),o.hide(),a(window).off("resize",I),o.off("click","[data-action]"),o.off("mousedown",!1),o.remove(),o=!1,J({type:"dp.hide",date:e.clone()}),g.blur(),f=e.clone(),l)):l},ca=function(){aa(null)},da=function(a){return void 0===d.parseInputDate?(!b.isMoment(a)||a instanceof Date)&&(a=y(a)):a=d.parseInputDate(a),a},ea={next:function(){var a=q[k].navFnc;f.add(q[k].navStep,a),W(),K(a)},previous:function(){var a=q[k].navFnc;f.subtract(q[k].navStep,a),W(),K(a)},pickerSwitch:function(){L(1)},selectMonth:function(b){var c=a(b.target).closest("tbody").find("span").index(a(b.target));f.month(c),k===p?(aa(e.clone().year(f.year()).month(f.month())),d.inline||ba()):(L(-1),W()),K("M")},selectYear:function(b){var c=parseInt(a(b.target).text(),10)||0;f.year(c),k===p?(aa(e.clone().year(f.year())),d.inline||ba()):(L(-1),W()),K("YYYY")},selectDecade:function(b){var c=parseInt(a(b.target).data("selection"),10)||0;f.year(c),k===p?(aa(e.clone().year(f.year())),d.inline||ba()):(L(-1),W()),K("YYYY")},selectDay:function(b){var c=f.clone();a(b.target).is(".old")&&c.subtract(1,"M"),a(b.target).is(".new")&&c.add(1,"M"),aa(c.date(parseInt(a(b.target).text(),10))),A()||d.keepOpen||d.inline||ba()},incrementHours:function(){var a=e.clone().add(1,"h");R(a,"h")&&aa(a)},incrementMinutes:function(){var a=e.clone().add(d.stepping,"m");R(a,"m")&&aa(a)},incrementSeconds:function(){var a=e.clone().add(1,"s");R(a,"s")&&aa(a)},decrementHours:function(){var a=e.clone().subtract(1,"h");R(a,"h")&&aa(a)},decrementMinutes:function(){var a=e.clone().subtract(d.stepping,"m");R(a,"m")&&aa(a)},decrementSeconds:function(){var a=e.clone().subtract(1,"s");R(a,"s")&&aa(a)},togglePeriod:function(){aa(e.clone().add(e.hours()>=12?-12:12,"h"))},togglePicker:function(b){var c,e=a(b.target),f=e.closest("ul"),g=f.find(".in"),h=f.find(".collapse:not(.in)");if(g&&g.length){if(c=g.data("collapse"),c&&c.transitioning)return;g.collapse?(g.collapse("hide"),h.collapse("show")):(g.removeClass("in"),h.addClass("in")),e.is("span")?e.toggleClass(d.icons.time+" "+d.icons.date):e.find("span").toggleClass(d.icons.time+" "+d.icons.date)}},showPicker:function(){o.find(".timepicker > div:not(.timepicker-picker)").hide(),o.find(".timepicker .timepicker-picker").show()},showHours:function(){o.find(".timepicker .timepicker-picker").hide(),o.find(".timepicker .timepicker-hours").show()},showMinutes:function(){o.find(".timepicker .timepicker-picker").hide(),o.find(".timepicker .timepicker-minutes").show()},showSeconds:function(){o.find(".timepicker .timepicker-picker").hide(),o.find(".timepicker .timepicker-seconds").show()},selectHour:function(b){var c=parseInt(a(b.target).text(),10);h||(e.hours()>=12?12!==c&&(c+=12):12===c&&(c=0)),aa(e.clone().hours(c)),ea.showPicker.call(l)},selectMinute:function(b){aa(e.clone().minutes(parseInt(a(b.target).text(),10))),ea.showPicker.call(l)},selectSecond:function(b){aa(e.clone().seconds(parseInt(a(b.target).text(),10))),ea.showPicker.call(l)},clear:ca,today:function(){var a=y();R(a,"d")&&aa(a)},close:ba},fa=function(b){return!a(b.currentTarget).is(".disabled")&&(ea[a(b.currentTarget).data("action")].apply(l,arguments),!1)},ga=function(){var b,c={year:function(a){return a.month(0).date(1).hours(0).seconds(0).minutes(0)},month:function(a){return a.date(1).hours(0).seconds(0).minutes(0)},day:function(a){return a.hours(0).seconds(0).minutes(0)},hour:function(a){return a.seconds(0).minutes(0)},minute:function(a){return a.seconds(0)}};return g.prop("disabled")||!d.ignoreReadonly&&g.prop("readonly")||o?l:(void 0!==g.val()&&0!==g.val().trim().length?aa(da(g.val().trim())):m&&d.useCurrent&&(d.inline||g.is("input")&&0===g.val().trim().length)&&(b=y(),"string"==typeof d.useCurrent&&(b=c[d.useCurrent](b)),aa(b)),o=G(),M(),S(),o.find(".timepicker-hours").hide(),o.find(".timepicker-minutes").hide(),o.find(".timepicker-seconds").hide(),_(),L(),a(window).on("resize",I),o.on("click","[data-action]",fa),o.on("mousedown",!1),n&&n.hasClass("btn")&&n.toggleClass("active"),I(),o.show(),d.focusOnShow&&!g.is(":focus")&&g.focus(),J({type:"dp.show"}),l)},ha=function(){return o?ba():ga()},ia=function(a){var b,c,e,f,g=null,h=[],i={},j=a.which,k="p";w[j]=k;for(b in w)w.hasOwnProperty(b)&&w[b]===k&&(h.push(b),parseInt(b,10)!==j&&(i[b]=!0));for(b in d.keyBinds)if(d.keyBinds.hasOwnProperty(b)&&"function"==typeof d.keyBinds[b]&&(e=b.split(" "),e.length===h.length&&v[j]===e[e.length-1])){for(f=!0,c=e.length-2;c>=0;c--)if(!(v[e[c]]in i)){f=!1;break}if(f){g=d.keyBinds[b];break}}g&&(g.call(l,o),a.stopPropagation(),a.preventDefault())},ja=function(a){w[a.which]="r",a.stopPropagation(),a.preventDefault()},ka=function(b){var c=a(b.target).val().trim(),d=c?da(c):null;return aa(d),b.stopImmediatePropagation(),!1},la=function(){g.on({change:ka,blur:d.debug?"":ba,keydown:ia,keyup:ja,focus:d.allowInputToggle?ga:""}),c.is("input")?g.on({focus:ga}):n&&(n.on("click",ha),n.on("mousedown",!1))},ma=function(){g.off({change:ka,blur:blur,keydown:ia,keyup:ja,focus:d.allowInputToggle?ba:""}),c.is("input")?g.off({focus:ga}):n&&(n.off("click",ha),n.off("mousedown",!1))},na=function(b){var c={};return a.each(b,function(){var a=da(this);a.isValid()&&(c[a.format("YYYY-MM-DD")]=!0)}),!!Object.keys(c).length&&c},oa=function(b){var c={};return a.each(b,function(){c[this]=!0}),!!Object.keys(c).length&&c},pa=function(){var a=d.format||"L LT";i=a.replace(/(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,function(a){var b=e.localeData().longDateFormat(a)||a;return b.replace(/(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,function(a){return e.localeData().longDateFormat(a)||a})}),j=d.extraFormats?d.extraFormats.slice():[],j.indexOf(a)<0&&j.indexOf(i)<0&&j.push(i),h=i.toLowerCase().indexOf("a")<1&&i.replace(/\[.*?\]/g,"").indexOf("h")<1,z("y")&&(p=2),z("M")&&(p=1),z("d")&&(p=0),k=Math.max(p,k),m||aa(e)};if(l.destroy=function(){ba(),ma(),c.removeData("DateTimePicker"),c.removeData("date")},l.toggle=ha,l.show=ga,l.hide=ba,l.disable=function(){return ba(),n&&n.hasClass("btn")&&n.addClass("disabled"),g.prop("disabled",!0),l},l.enable=function(){return n&&n.hasClass("btn")&&n.removeClass("disabled"),g.prop("disabled",!1),l},l.ignoreReadonly=function(a){if(0===arguments.length)return d.ignoreReadonly;if("boolean"!=typeof a)throw new TypeError("ignoreReadonly () expects a boolean parameter");return d.ignoreReadonly=a,l},l.options=function(b){if(0===arguments.length)return a.extend(!0,{},d);if(!(b instanceof Object))throw new TypeError("options() options parameter should be an object");return a.extend(!0,d,b),a.each(d,function(a,b){if(void 0===l[a])throw new TypeError("option "+a+" is not recognized!");l[a](b)}),l},l.date=function(a){if(0===arguments.length)return m?null:e.clone();if(!(null===a||"string"==typeof a||b.isMoment(a)||a instanceof Date))throw new TypeError("date() parameter must be one of [null, string, moment or Date]");return aa(null===a?null:da(a)),l},l.format=function(a){if(0===arguments.length)return d.format;if("string"!=typeof a&&("boolean"!=typeof a||a!==!1))throw new TypeError("format() expects a string or boolean:false parameter "+a);return d.format=a,i&&pa(),l},l.timeZone=function(a){if(0===arguments.length)return d.timeZone;if("string"!=typeof a)throw new TypeError("newZone() expects a string parameter");return d.timeZone=a,l},l.dayViewHeaderFormat=function(a){if(0===arguments.length)return d.dayViewHeaderFormat;if("string"!=typeof a)throw new TypeError("dayViewHeaderFormat() expects a string parameter");return d.dayViewHeaderFormat=a,l},l.extraFormats=function(a){if(0===arguments.length)return d.extraFormats;if(a!==!1&&!(a instanceof Array))throw new TypeError("extraFormats() expects an array or false parameter");return d.extraFormats=a,j&&pa(),l},l.disabledDates=function(b){if(0===arguments.length)return d.disabledDates?a.extend({},d.disabledDates):d.disabledDates;if(!b)return d.disabledDates=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledDates() expects an array parameter");return d.disabledDates=na(b),d.enabledDates=!1,_(),l},l.enabledDates=function(b){if(0===arguments.length)return d.enabledDates?a.extend({},d.enabledDates):d.enabledDates;if(!b)return d.enabledDates=!1,_(),l;if(!(b instanceof Array))throw new TypeError("enabledDates() expects an array parameter");return d.enabledDates=na(b),d.disabledDates=!1,_(),l},l.daysOfWeekDisabled=function(a){if(0===arguments.length)return d.daysOfWeekDisabled.splice(0);if("boolean"==typeof a&&!a)return d.daysOfWeekDisabled=!1,_(),l;if(!(a instanceof Array))throw new TypeError("daysOfWeekDisabled() expects an array parameter");if(d.daysOfWeekDisabled=a.reduce(function(a,b){return b=parseInt(b,10),b>6||b<0||isNaN(b)?a:(a.indexOf(b)===-1&&a.push(b),a)},[]).sort(),d.useCurrent&&!d.keepInvalid){for(var b=0;!R(e,"d");){if(e.add(1,"d"),31===b)throw"Tried 31 times to find a valid date";b++}aa(e)}return _(),l},l.maxDate=function(a){if(0===arguments.length)return d.maxDate?d.maxDate.clone():d.maxDate;if("boolean"==typeof a&&a===!1)return d.maxDate=!1,_(),l;"string"==typeof a&&("now"!==a&&"moment"!==a||(a=y()));var b=da(a);if(!b.isValid())throw new TypeError("maxDate() Could not parse date parameter: "+a);if(d.minDate&&b.isBefore(d.minDate))throw new TypeError("maxDate() date parameter is before options.minDate: "+b.format(i));return d.maxDate=b,d.useCurrent&&!d.keepInvalid&&e.isAfter(a)&&aa(d.maxDate),f.isAfter(b)&&(f=b.clone().subtract(d.stepping,"m")),_(),l},l.minDate=function(a){if(0===arguments.length)return d.minDate?d.minDate.clone():d.minDate;if("boolean"==typeof a&&a===!1)return d.minDate=!1,_(),l;"string"==typeof a&&("now"!==a&&"moment"!==a||(a=y()));var b=da(a);if(!b.isValid())throw new TypeError("minDate() Could not parse date parameter: "+a);if(d.maxDate&&b.isAfter(d.maxDate))throw new TypeError("minDate() date parameter is after options.maxDate: "+b.format(i));return d.minDate=b,d.useCurrent&&!d.keepInvalid&&e.isBefore(a)&&aa(d.minDate),f.isBefore(b)&&(f=b.clone().add(d.stepping,"m")),_(),l},l.defaultDate=function(a){if(0===arguments.length)return d.defaultDate?d.defaultDate.clone():d.defaultDate;if(!a)return d.defaultDate=!1,l;"string"==typeof a&&(a="now"===a||"moment"===a?y():y(a));var b=da(a);if(!b.isValid())throw new TypeError("defaultDate() Could not parse date parameter: "+a);if(!R(b))throw new TypeError("defaultDate() date passed is invalid according to component setup validations");return d.defaultDate=b,(d.defaultDate&&d.inline||""===g.val().trim())&&aa(d.defaultDate),l},l.locale=function(a){if(0===arguments.length)return d.locale;if(!b.localeData(a))throw new TypeError("locale() locale "+a+" is not loaded from moment locales!");return d.locale=a,e.locale(d.locale),f.locale(d.locale),i&&pa(),o&&(ba(),ga()),l},l.stepping=function(a){return 0===arguments.length?d.stepping:(a=parseInt(a,10),(isNaN(a)||a<1)&&(a=1),d.stepping=a,l)},l.useCurrent=function(a){var b=["year","month","day","hour","minute"];if(0===arguments.length)return d.useCurrent;if("boolean"!=typeof a&&"string"!=typeof a)throw new TypeError("useCurrent() expects a boolean or string parameter");if("string"==typeof a&&b.indexOf(a.toLowerCase())===-1)throw new TypeError("useCurrent() expects a string parameter of "+b.join(", "));return d.useCurrent=a,l},l.collapse=function(a){if(0===arguments.length)return d.collapse;if("boolean"!=typeof a)throw new TypeError("collapse() expects a boolean parameter");return d.collapse===a?l:(d.collapse=a,o&&(ba(),ga()),l)},l.icons=function(b){if(0===arguments.length)return a.extend({},d.icons);if(!(b instanceof Object))throw new TypeError("icons() expects parameter to be an Object");return a.extend(d.icons,b),o&&(ba(),ga()),l},l.tooltips=function(b){if(0===arguments.length)return a.extend({},d.tooltips);if(!(b instanceof Object))throw new TypeError("tooltips() expects parameter to be an Object");return a.extend(d.tooltips,b),o&&(ba(),ga()),l},l.useStrict=function(a){if(0===arguments.length)return d.useStrict;if("boolean"!=typeof a)throw new TypeError("useStrict() expects a boolean parameter");return d.useStrict=a,l},l.sideBySide=function(a){if(0===arguments.length)return d.sideBySide;if("boolean"!=typeof a)throw new TypeError("sideBySide() expects a boolean parameter");return d.sideBySide=a,o&&(ba(),ga()),l},l.viewMode=function(a){if(0===arguments.length)return d.viewMode;if("string"!=typeof a)throw new TypeError("viewMode() expects a string parameter");if(r.indexOf(a)===-1)throw new TypeError("viewMode() parameter must be one of ("+r.join(", ")+") value");return d.viewMode=a,k=Math.max(r.indexOf(a),p),L(),l},l.toolbarPlacement=function(a){if(0===arguments.length)return d.toolbarPlacement;if("string"!=typeof a)throw new TypeError("toolbarPlacement() expects a string parameter");if(u.indexOf(a)===-1)throw new TypeError("toolbarPlacement() parameter must be one of ("+u.join(", ")+") value");return d.toolbarPlacement=a,o&&(ba(),ga()),l},l.widgetPositioning=function(b){if(0===arguments.length)return a.extend({},d.widgetPositioning);if("[object Object]"!=={}.toString.call(b))throw new TypeError("widgetPositioning() expects an object variable");if(b.horizontal){if("string"!=typeof b.horizontal)throw new TypeError("widgetPositioning() horizontal variable must be a string");if(b.horizontal=b.horizontal.toLowerCase(),t.indexOf(b.horizontal)===-1)throw new TypeError("widgetPositioning() expects horizontal parameter to be one of ("+t.join(", ")+")");d.widgetPositioning.horizontal=b.horizontal}if(b.vertical){if("string"!=typeof b.vertical)throw new TypeError("widgetPositioning() vertical variable must be a string");if(b.vertical=b.vertical.toLowerCase(),s.indexOf(b.vertical)===-1)throw new TypeError("widgetPositioning() expects vertical parameter to be one of ("+s.join(", ")+")");d.widgetPositioning.vertical=b.vertical}return _(),l},l.calendarWeeks=function(a){if(0===arguments.length)return d.calendarWeeks;if("boolean"!=typeof a)throw new TypeError("calendarWeeks() expects parameter to be a boolean value");return d.calendarWeeks=a,_(),l},l.showTodayButton=function(a){if(0===arguments.length)return d.showTodayButton;if("boolean"!=typeof a)throw new TypeError("showTodayButton() expects a boolean parameter");return d.showTodayButton=a,o&&(ba(),ga()),l},l.showClear=function(a){if(0===arguments.length)return d.showClear;if("boolean"!=typeof a)throw new TypeError("showClear() expects a boolean parameter");return d.showClear=a,o&&(ba(),ga()),l},l.widgetParent=function(b){if(0===arguments.length)return d.widgetParent;if("string"==typeof b&&(b=a(b)),null!==b&&"string"!=typeof b&&!(b instanceof a))throw new TypeError("widgetParent() expects a string or a jQuery object parameter");return d.widgetParent=b,o&&(ba(),ga()),l},l.keepOpen=function(a){if(0===arguments.length)return d.keepOpen;if("boolean"!=typeof a)throw new TypeError("keepOpen() expects a boolean parameter");return d.keepOpen=a,l},l.focusOnShow=function(a){if(0===arguments.length)return d.focusOnShow;if("boolean"!=typeof a)throw new TypeError("focusOnShow() expects a boolean parameter");return d.focusOnShow=a,l},l.inline=function(a){if(0===arguments.length)return d.inline;if("boolean"!=typeof a)throw new TypeError("inline() expects a boolean parameter");return d.inline=a,l},l.clear=function(){return ca(),l},l.keyBinds=function(a){return 0===arguments.length?d.keyBinds:(d.keyBinds=a,l)},l.getMoment=function(a){return y(a)},l.debug=function(a){if("boolean"!=typeof a)throw new TypeError("debug() expects a boolean parameter");return d.debug=a,l},l.allowInputToggle=function(a){if(0===arguments.length)return d.allowInputToggle;if("boolean"!=typeof a)throw new TypeError("allowInputToggle() expects a boolean parameter");return d.allowInputToggle=a,l},l.showClose=function(a){if(0===arguments.length)return d.showClose;if("boolean"!=typeof a)throw new TypeError("showClose() expects a boolean parameter");return d.showClose=a,l},l.keepInvalid=function(a){if(0===arguments.length)return d.keepInvalid;if("boolean"!=typeof a)throw new TypeError("keepInvalid() expects a boolean parameter");
+return d.keepInvalid=a,l},l.datepickerInput=function(a){if(0===arguments.length)return d.datepickerInput;if("string"!=typeof a)throw new TypeError("datepickerInput() expects a string parameter");return d.datepickerInput=a,l},l.parseInputDate=function(a){if(0===arguments.length)return d.parseInputDate;if("function"!=typeof a)throw new TypeError("parseInputDate() sholud be as function");return d.parseInputDate=a,l},l.disabledTimeIntervals=function(b){if(0===arguments.length)return d.disabledTimeIntervals?a.extend({},d.disabledTimeIntervals):d.disabledTimeIntervals;if(!b)return d.disabledTimeIntervals=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledTimeIntervals() expects an array parameter");return d.disabledTimeIntervals=b,_(),l},l.disabledHours=function(b){if(0===arguments.length)return d.disabledHours?a.extend({},d.disabledHours):d.disabledHours;if(!b)return d.disabledHours=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledHours() expects an array parameter");if(d.disabledHours=oa(b),d.enabledHours=!1,d.useCurrent&&!d.keepInvalid){for(var c=0;!R(e,"h");){if(e.add(1,"h"),24===c)throw"Tried 24 times to find a valid date";c++}aa(e)}return _(),l},l.enabledHours=function(b){if(0===arguments.length)return d.enabledHours?a.extend({},d.enabledHours):d.enabledHours;if(!b)return d.enabledHours=!1,_(),l;if(!(b instanceof Array))throw new TypeError("enabledHours() expects an array parameter");if(d.enabledHours=oa(b),d.disabledHours=!1,d.useCurrent&&!d.keepInvalid){for(var c=0;!R(e,"h");){if(e.add(1,"h"),24===c)throw"Tried 24 times to find a valid date";c++}aa(e)}return _(),l},l.viewDate=function(a){if(0===arguments.length)return f.clone();if(!a)return f=e.clone(),l;if(!("string"==typeof a||b.isMoment(a)||a instanceof Date))throw new TypeError("viewDate() parameter must be one of [string, moment or Date]");return f=da(a),K(),l},c.is("input"))g=c;else if(g=c.find(d.datepickerInput),0===g.length)g=c.find("input");else if(!g.is("input"))throw new Error('CSS class "'+d.datepickerInput+'" cannot be applied to non input element');if(c.hasClass("input-group")&&(n=0===c.find(".datepickerbutton").length?c.find(".input-group-addon"):c.find(".datepickerbutton")),!d.inline&&!g.is("input"))throw new Error("Could not initialize DateTimePicker without an input element");return e=y(),f=e.clone(),a.extend(!0,d,H()),l.options(d),pa(),la(),g.prop("disabled")&&l.disable(),g.is("input")&&0!==g.val().trim().length?aa(da(g.val().trim())):d.defaultDate&&void 0===g.attr("placeholder")&&aa(d.defaultDate),d.inline&&ga(),l};return a.fn.datetimepicker=function(b){b=b||{};var d,e=Array.prototype.slice.call(arguments,1),f=!0,g=["destroy","hide","show","toggle"];if("object"==typeof b)return this.each(function(){var d,e=a(this);e.data("DateTimePicker")||(d=a.extend(!0,{},a.fn.datetimepicker.defaults,b),e.data("DateTimePicker",c(e,d)))});if("string"==typeof b)return this.each(function(){var c=a(this),g=c.data("DateTimePicker");if(!g)throw new Error('bootstrap-datetimepicker("'+b+'") method was called on an element that is not using DateTimePicker');d=g[b].apply(g,e),f=d===g}),f||a.inArray(b,g)>-1?this:d;throw new TypeError("Invalid arguments for DateTimePicker: "+b)},a.fn.datetimepicker.defaults={timeZone:"",format:!1,dayViewHeaderFormat:"MMMM YYYY",extraFormats:!1,stepping:1,minDate:!1,maxDate:!1,useCurrent:!0,collapse:!0,locale:b.locale(),defaultDate:!1,disabledDates:!1,enabledDates:!1,icons:{time:"glyphicon glyphicon-time",date:"glyphicon glyphicon-calendar",up:"glyphicon glyphicon-chevron-up",down:"glyphicon glyphicon-chevron-down",previous:"glyphicon glyphicon-chevron-left",next:"glyphicon glyphicon-chevron-right",today:"glyphicon glyphicon-screenshot",clear:"glyphicon glyphicon-trash",close:"glyphicon glyphicon-remove"},tooltips:{today:"Go to today",clear:"Clear selection",close:"Close the picker",selectMonth:"Select Month",prevMonth:"Previous Month",nextMonth:"Next Month",selectYear:"Select Year",prevYear:"Previous Year",nextYear:"Next Year",selectDecade:"Select Decade",prevDecade:"Previous Decade",nextDecade:"Next Decade",prevCentury:"Previous Century",nextCentury:"Next Century",pickHour:"Pick Hour",incrementHour:"Increment Hour",decrementHour:"Decrement Hour",pickMinute:"Pick Minute",incrementMinute:"Increment Minute",decrementMinute:"Decrement Minute",pickSecond:"Pick Second",incrementSecond:"Increment Second",decrementSecond:"Decrement Second",togglePeriod:"Toggle Period",selectTime:"Select Time"},useStrict:!1,sideBySide:!1,daysOfWeekDisabled:!1,calendarWeeks:!1,viewMode:"days",toolbarPlacement:"default",showTodayButton:!1,showClear:!1,showClose:!1,widgetPositioning:{horizontal:"auto",vertical:"auto"},widgetParent:null,ignoreReadonly:!1,keepOpen:!1,focusOnShow:!0,inline:!1,keepInvalid:!1,datepickerInput:".datepickerinput",keyBinds:{up:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().subtract(7,"d")):this.date(b.clone().add(this.stepping(),"m"))}},down:function(a){if(!a)return void this.show();var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().add(7,"d")):this.date(b.clone().subtract(this.stepping(),"m"))},"control up":function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().subtract(1,"y")):this.date(b.clone().add(1,"h"))}},"control down":function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().add(1,"y")):this.date(b.clone().subtract(1,"h"))}},left:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().subtract(1,"d"))}},right:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().add(1,"d"))}},pageUp:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().subtract(1,"M"))}},pageDown:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().add(1,"M"))}},enter:function(){this.hide()},escape:function(){this.hide()},"control space":function(a){a&&a.find(".timepicker").is(":visible")&&a.find('.btn[data-action="togglePeriod"]').click()},t:function(){this.date(this.getMoment())},delete:function(){this.clear()}},debug:!1,allowInputToggle:!1,disabledTimeIntervals:!1,disabledHours:!1,enabledHours:!1,viewDate:!1},a.fn.datetimepicker});
 
 /***/ }),
 
-/***/ 1284:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
- * bootstrap-fileinput v4.5.1
- * http://plugins.krajee.com/file-input
- *
- * Font Awesome icon theme configuration for bootstrap-fileinput. Requires font awesome assets to be loaded.
- *
- * Author: Kartik Visweswaran
- * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com
- *
- * Licensed under the BSD 3-Clause
- * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md
- */!function(a){"use strict";a.fn.fileinputThemes.fa={fileActionSettings:{removeIcon:'<i class="fa fa-trash"></i>',uploadIcon:'<i class="fa fa-upload"></i>',uploadRetryIcon:'<i class="fa fa-repeat"></i>',downloadIcon:'<i class="fa fa-download"></i>',zoomIcon:'<i class="fa fa-search-plus"></i>',dragIcon:'<i class="fa fa-arrows"></i>',indicatorNew:'<i class="fa fa-plus-circle text-warning"></i>',indicatorSuccess:'<i class="fa fa-check-circle text-success"></i>',indicatorError:'<i class="fa fa-exclamation-circle text-danger"></i>',indicatorLoading:'<i class="fa fa-hourglass text-muted"></i>'},layoutTemplates:{fileIcon:'<i class="fa fa-file kv-caption-icon"></i> '},previewZoomButtonIcons:{prev:'<i class="fa fa-caret-left fa-lg"></i>',next:'<i class="fa fa-caret-right fa-lg"></i>',toggleheader:'<i class="fa fa-fw fa-arrows-v"></i>',fullscreen:'<i class="fa fa-fw fa-arrows-alt"></i>',borderless:'<i class="fa fa-fw fa-external-link"></i>',close:'<i class="fa fa-fw fa-remove"></i>'},previewFileIcon:'<i class="fa fa-file"></i>',browseIcon:'<i class="fa fa-folder-open"></i>',removeIcon:'<i class="fa fa-trash"></i>',cancelIcon:'<i class="fa fa-ban"></i>',uploadIcon:'<i class="fa fa-upload"></i>',msgValidationErrorIcon:'<i class="fa fa-exclamation-circle"></i> '}}(__webpack_provided_window_dot_jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(526)))
-
-/***/ }),
-
-/***/ 1285:
+/***/ 1406:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -885,7 +693,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row mt-3" }, [
       _c(
         "div",
         { staticClass: "col-md-12" },
@@ -893,765 +701,983 @@ var render = function() {
           _c(
             "card",
             {
+              staticClass: "realtime_forms",
               attrs: {
-                title: "<i class='fa fa-fw ti-move'></i> General Elements"
+                title: "<i class='fa fa-fw ti-user'></i> Book Flight Tickets"
               }
             },
             [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12 text-sm-center" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { staticClass: "radio-inline iradio m-l-18" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.selected,
+                            expression: "selected"
+                          }
+                        ],
+                        attrs: {
+                          type: "radio",
+                          id: "one_way",
+                          name: "trip-type",
+                          value: "option1"
+                        },
+                        domProps: { checked: _vm._q(_vm.selected, "option1") },
+                        on: {
+                          change: function($event) {
+                            _vm.selected = "option1"
+                          }
+                        }
+                      }),
+                      _vm._v(" One Way\n                                ")
+                    ]),
+                    _vm._v(" "),
+                    _c("label", { staticClass: "radio-inline iradio m-l-18" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.selected,
+                            expression: "selected"
+                          }
+                        ],
+                        attrs: {
+                          type: "radio",
+                          id: "round_trip",
+                          name: "trip-type",
+                          value: "option2"
+                        },
+                        domProps: { checked: _vm._q(_vm.selected, "option2") },
+                        on: {
+                          change: function($event) {
+                            _vm.selected = "option2"
+                          }
+                        }
+                      }),
+                      _vm._v(" Round trip\n                                ")
+                    ]),
+                    _vm._v(" "),
+                    _c("label", { staticClass: "radio-inline iradio m-l-18" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.selected,
+                            expression: "selected"
+                          }
+                        ],
+                        attrs: {
+                          type: "radio",
+                          id: "multi_stops",
+                          name: "trip-type",
+                          value: "option3"
+                        },
+                        domProps: { checked: _vm._q(_vm.selected, "option3") },
+                        on: {
+                          change: function($event) {
+                            _vm.selected = "option3"
+                          }
+                        }
+                      }),
+                      _vm._v(" Multi Stops\n                                ")
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
               _c(
                 "form",
-                { staticClass: "form-horizontal", attrs: { role: "form" } },
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value:
+                        _vm.selected == "option1" || _vm.selected == "option2"
+                          ? true
+                          : false,
+                      expression:
+                        "(selected=='option1' || selected=='option2')?true:false"
+                    }
+                  ],
+                  attrs: { id: "single-stop" }
+                },
                 [
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right txt_media1",
-                          attrs: { for: "input-text" }
-                        },
-                        [_vm._v("Input text")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          id: "input-text",
-                          placeholder: "Input text"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right txt_media1",
-                          attrs: { for: "inputPassword" }
-                        },
-                        [_vm._v("Password")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "password",
-                          id: "inputPassword",
-                          placeholder: "Password"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            " control-label float-md-right txt_media1",
-                          attrs: { for: "input-text-disabled" }
-                        },
-                        [_vm._v("Disabled")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          id: "input-text-disabled",
-                          placeholder: "Input text",
-                          disabled: ""
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right txt_media1",
-                          attrs: { for: "color" }
-                        },
-                        [_vm._v("Color")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9 form_control" }, [
-                      _c("input", {
-                        staticClass: "form-control form_control",
-                        attrs: { type: "color", id: "color" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right txt_media1",
-                          attrs: { for: "url" }
-                        },
-                        [_vm._v("Url")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "url",
-                          id: "url",
-                          placeholder: "URL",
-                          value: "http://getbootstrap.com"
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right txt_media1",
-                          attrs: { for: "range" }
-                        },
-                        [_vm._v("Range")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control ",
-                        attrs: { type: "range", id: "range", value: "50" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right m-t-ng-8 txt_media1"
-                        },
-                        [_vm._v("Radio Buttons")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-9" },
-                      [
-                        _c("b-form-radio-group", {
-                          staticClass: "inline_radio",
-                          attrs: { options: _vm.options, stacked: "" }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right m-t-ng-8 txt_media1"
-                        },
-                        [_vm._v("Checkbox")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-9" },
-                      [
-                        _c("b-form-checkbox-group", {
-                          attrs: { stacked: "", options: _vm.stacked_check }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("div")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label float-md-right txt_media1"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                Inline Radio\n                            "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-9" },
-                      [
-                        _c("b-form-radio-group", {
-                          staticClass: "inlineRadio",
-                          attrs: { options: _vm.radios }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label float-md-right txt_media1"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                Inline Checkbox\n                            "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-9" },
-                      [
-                        _c("b-form-checkbox-group", {
-                          staticClass: "inline_check",
-                          attrs: { options: _vm.check }
-                        })
-                      ],
-                      1
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group has-success" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "form-control-label float-md-right text-success txt_media1",
-                          attrs: { for: "input-text-has-success" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                                Input Success\n                            "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control brdr_success",
-                        attrs: { type: "text", id: "input-text-has-success" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group has-warning" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label float-md-right text-warning txt_media1",
-                          attrs: { for: "input-text-has-warning" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                                Input Warning\n                            "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control brdr_warn",
-                        attrs: { type: "text", id: "input-text-has-warning" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group has-error" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "control-label text-danger float-md-right txt_media1",
-                          attrs: { for: "input-text-has-error" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                                Input Error\n                            "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control brdr_danger",
-                        attrs: { type: "text", id: "input-text-has-error" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label float-md-right txt_media1"
-                        },
-                        [_vm._v("Input Size")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control input-sm ipt_size",
-                        attrs: { type: "text", placeholder: "input-sm" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right"
+                  _c("div", { staticClass: "row m-t-10" }, [
+                    _c("div", { staticClass: "trip-type d-sm-none" }, [
+                      _c("i", {
+                        staticClass: "fa-rotate-90 fa ti-exchange-vertical icon"
                       })
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control ipt_size1 input-md",
-                        attrs: { type: "text", placeholder: "input-md" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("input", {
-                        staticClass: "form-control input-lg ipt_size2",
-                        attrs: { type: "text", placeholder: "input-lg" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label float-md-right txt_media1"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                Input Group\n                            "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "span",
-                            {
-                              staticClass: "input-group-text bg-white",
-                              attrs: { id: "basic-addon1" }
-                            },
-                            [_vm._v("@")]
-                          )
-                        ]),
+                    _c("div", { staticClass: "col-sm-5 col-xs-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "origin" }
+                          },
+                          [_vm._v("From")]
+                        ),
                         _vm._v(" "),
                         _c("input", {
                           staticClass: "form-control",
                           attrs: {
                             type: "text",
-                            placeholder: "Username",
-                            "aria-label": "Username",
-                            "aria-describedby": "basic-addon1"
+                            id: "origin",
+                            placeholder: "Origin City"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-2" }, [
+                      _c("div", { staticClass: "trip-type" }, [
+                        (_vm.selected == "option2"
+                        ? true
+                        : false)
+                          ? _c("i", {
+                              staticClass:
+                                "fa-rotate-90 fa ti-exchange-vertical icon"
+                            })
+                          : _c("i", { staticClass: "fa ti-arrow-right icon" })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-5 col-xs-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "destination" }
+                          },
+                          [_vm._v("To")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "destination",
+                            placeholder: "Destination City"
                           }
                         })
                       ])
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text", placeholder: "Currency" }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group-append" }, [
-                          _c(
-                            "span",
-                            { staticClass: "input-group-text bg-white" },
-                            [_vm._v(".00")]
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: " control-label float-md-right txt_media"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "span",
-                            { staticClass: "input-group-text bg-white" },
-                            [_vm._v("$")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text", placeholder: "Currency" }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group-append" }, [
-                          _c(
-                            "span",
-                            { staticClass: "input-group-text bg-white" },
-                            [_vm._v(".00")]
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-md-6 m-b-10" }, [
-                          _c("div", { staticClass: "input-group" }, [
-                            _c("div", { staticClass: "input-group-prepend" }, [
-                              _c(
-                                "div",
-                                { staticClass: "input-group-text bg-white" },
-                                [_c("b-form-checkbox")],
-                                1
-                              )
+                  _c("div", { staticClass: "row m-t-10" }, [
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-6" }, [
+                            _c("label", { attrs: { for: "departure_date" } }, [
+                              _vm._v("Departure")
                             ]),
                             _vm._v(" "),
-                            _c("input", {
-                              staticClass: "form-control",
-                              attrs: { type: "text" }
-                            })
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-md-6 m-b-10" }, [
-                          _c("div", { staticClass: "input-group" }, [
-                            _c("div", { staticClass: "input-group-prepend" }, [
-                              _c(
-                                "div",
-                                { staticClass: "input-group-text bg-white" },
-                                [
-                                  _c("b-form-radio", {
-                                    attrs: { checked: "false" }
-                                  })
-                                ],
-                                1
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("input", {
-                              staticClass: "form-control",
-                              attrs: { type: "text" }
-                            })
-                          ])
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group input_height" },
-                            [
+                            _c("div", { staticClass: "input-group" }, [
                               _c(
                                 "div",
                                 { staticClass: "input-group-prepend" },
                                 [
                                   _c(
-                                    "button",
+                                    "span",
                                     {
-                                      staticClass: "btn btn-warning",
-                                      attrs: { type: "button" }
+                                      staticClass: "input-group-text bg-white"
                                     },
-                                    [_vm._v("Go!")]
+                                    [
+                                      _c("i", {
+                                        staticClass: "fa fa-fw ti-calendar"
+                                      })
+                                    ]
                                   )
                                 ]
                               ),
                               _vm._v(" "),
                               _c("input", {
                                 staticClass: "form-control",
-                                attrs: { type: "text" }
+                                attrs: {
+                                  type: "text",
+                                  id: "departure_date",
+                                  placeholder: "Select Date"
+                                }
                               })
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group input_height" },
-                            [
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: { type: "text" }
-                              }),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "input-group-append" }, [
-                                _c(
-                                  "button",
-                                  {
-                                    staticClass: "btn btn-warning",
-                                    attrs: { type: "button" }
-                                  },
-                                  [_vm._v("Go!")]
-                                )
-                              ])
-                            ]
-                          )
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: " control-label float-md-right"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group input_height" },
-                            [
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("br", { staticClass: "d-sm-none" }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-6" }, [
+                            _c("label", { attrs: { for: "return_date" } }, [
+                              _vm._v("Return")
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "input-group" }, [
                               _c(
                                 "div",
                                 { staticClass: "input-group-prepend" },
                                 [
                                   _c(
-                                    "b-dropdown",
+                                    "span",
                                     {
-                                      attrs: { text: "Action", variant: "info" }
+                                      staticClass: "input-group-text bg-white"
                                     },
                                     [
-                                      _c("b-dropdown-item-button", [
-                                        _vm._v("action")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-item-button", [
-                                        _vm._v("another action")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-item-button", [
-                                        _vm._v("something else here")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-divider"),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-item-button", [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("seperated link here")
-                                        ])
-                                      ])
-                                    ],
-                                    1
+                                      _c("i", {
+                                        staticClass: "fa fa-fw ti-calendar"
+                                      })
+                                    ]
                                   )
-                                ],
-                                1
+                                ]
                               ),
                               _vm._v(" "),
                               _c("input", {
                                 staticClass: "form-control",
-                                attrs: { type: "text" }
+                                attrs: {
+                                  id: "return_date",
+                                  placeholder: "Select Date",
+                                  disabled:
+                                    _vm.selected == "option1" ? true : false
+                                }
                               })
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group input_height" },
-                            [
-                              _c("input", {
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-6" }, [
+                            _c("label", { attrs: { for: "class-type" } }, [
+                              _vm._v("Class")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "select",
+                              {
                                 staticClass: "form-control",
-                                attrs: { type: "text" }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "input-group-append" },
-                                [
-                                  _c(
-                                    "b-dropdown",
-                                    {
-                                      attrs: { text: "Action", variant: "info" }
-                                    },
-                                    [
-                                      _c("b-dropdown-item-button", [
-                                        _vm._v("action")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-item-button", [
-                                        _vm._v("another action")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-item-button", [
-                                        _vm._v("something else here")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-divider"),
-                                      _vm._v(" "),
-                                      _c("b-dropdown-item-button", [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v("seperated link here")
-                                        ])
-                                      ])
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ]
-                          )
+                                attrs: { name: "class", id: "class-type" }
+                              },
+                              [
+                                _c("option", { attrs: { value: "" } }, [
+                                  _vm._v("Economy")
+                                ]),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "" } }, [
+                                  _vm._v("Business")
+                                ]),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "" } }, [
+                                  _vm._v("First")
+                                ]),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "" } }, [
+                                  _vm._v("Premium Economy")
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("br", { staticClass: "d-sm-none" }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-6" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "control-label",
+                                attrs: { for: "pref-Air" }
+                              },
+                              [
+                                _vm._v(
+                                  "Preferred Airline\n                                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: {
+                                type: "text",
+                                id: "pref-Air",
+                                placeholder: "Airline name"
+                              }
+                            })
+                          ])
                         ])
                       ])
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "control-label float-md-right txt_media1"
-                        },
-                        [
+                  _c("div", { staticClass: "row m-t-10" }, [
+                    _c(
+                      "div",
+                      { staticClass: "col-sm-8 col-md-10 col-lg-8 mx-auto" },
+                      [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-4" }, [
+                            _c("div", { staticClass: "form-group" }, [
+                              _c("label", { attrs: { for: "adult" } }, [
+                                _vm._v("Adult")
+                              ]),
+                              _vm._v(" "),
+                              _c("input", {
+                                attrs: {
+                                  id: "adult",
+                                  type: "text",
+                                  value: "1",
+                                  readonly: "",
+                                  name: "adult_count"
+                                }
+                              })
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-4" }, [
+                            _c("div", { staticClass: "form-group" }, [
+                              _c("label", { attrs: { for: "child" } }, [
+                                _vm._v("Child")
+                              ]),
+                              _vm._v(" "),
+                              _c("input", {
+                                attrs: {
+                                  id: "child",
+                                  type: "text",
+                                  value: "0",
+                                  readonly: "",
+                                  name: "child_count"
+                                }
+                              })
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-4" }, [
+                            _c("div", { staticClass: "form-group" }, [
+                              _c("label", { attrs: { for: "infant" } }, [
+                                _vm._v("Infant")
+                              ]),
+                              _vm._v(" "),
+                              _c("input", {
+                                attrs: {
+                                  id: "infant",
+                                  type: "text",
+                                  value: "0",
+                                  readonly: "",
+                                  name: "infant_count"
+                                }
+                              })
+                            ])
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row m-t-10" }, [
+                    _c("div", { staticClass: "col-sm-8" }, [
+                      _c("div", { staticClass: "form-group icheck-element" }, [
+                        _c("label", { staticClass: "price-alert" }, [
+                          _c("input", {
+                            attrs: {
+                              type: "checkbox",
+                              name: "c1",
+                              id: "c1",
+                              value: ""
+                            }
+                          }),
                           _vm._v(
-                            "\n                                Text Area\n                            "
+                            " Alert me when price changes\n                                    "
                           )
-                        ]
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-4" }, [
+                      _c(
+                        "button",
+                        { staticClass: "btn btn-warning btn-block" },
+                        [_vm._v("Search Flights")]
                       )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("textarea", {
-                        staticClass: "form-control resize_vertical",
-                        attrs: { rows: "4", placeholder: "Basic" }
-                      })
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right txt_media"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("textarea", {
-                        staticClass: "form-control resize_vertical",
-                        attrs: { rows: "4", disabled: "" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row form-group" }, [
-                    _c("div", { staticClass: "col-md-3" }, [
-                      _c("label", {
-                        staticClass: "control-label float-md-right"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-9" }, [
-                      _c("textarea", {
-                        staticClass: "form-control noresize",
-                        attrs: { rows: "4", placeholder: "No resize" }
-                      })
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value:
+                        _vm.selected == "option1" || _vm.selected == "option2"
+                          ? false
+                          : true,
+                      expression:
+                        "(selected=='option1' || selected=='option2')?false:true"
+                    }
+                  ],
+                  attrs: { id: "nonsingle-stop" }
+                },
+                [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-sm-12" }, [
+                      _c(
+                        "div",
+                        { staticClass: "flight-count" },
+                        [
+                          _c("div", { staticClass: "row multi-flight-data" }, [
+                            _c("div", { staticClass: "trip-type d-sm-none" }, [
+                              _c("i", { staticClass: "fa ti-arrow-right icon" })
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c("label", { staticClass: "control-label" }, [
+                                  _vm._v(
+                                    "From\n                                                    "
+                                  ),
+                                  _c("input", {
+                                    staticClass: "form-control",
+                                    attrs: {
+                                      type: "text",
+                                      placeholder: "Origin City"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-1 hidden-xs" }, [
+                              _c("div", { staticClass: "trip-type-multi" }, [
+                                _c("i", {
+                                  staticClass: "fa ti-arrow-right icon"
+                                })
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c("label", { staticClass: "control-label" }, [
+                                  _vm._v(
+                                    "To\n                                                    "
+                                  ),
+                                  _c("input", {
+                                    staticClass: "form-control",
+                                    attrs: {
+                                      type: "text",
+                                      placeholder: "Destination City"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-sm-3 col-sm-offset-0 col-xs-12"
+                              },
+                              [
+                                _c(
+                                  "label",
+                                  {
+                                    staticClass: "m-l-16",
+                                    attrs: { for: "multistop_departure" }
+                                  },
+                                  [_vm._v("Departure")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "input-group m-l-16" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "input-group-prepend" },
+                                      [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "input-group-text bg-white"
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "fa fa-fw ti-calendar"
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass:
+                                        "form-control departure_date",
+                                      attrs: {
+                                        type: "text",
+                                        id: "multistop_departure",
+                                        placeholder: "Select Date"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row multi-flight-data" }, [
+                            _c("div", { staticClass: "trip-type d-sm-none" }, [
+                              _c("i", { staticClass: "fa ti-arrow-right icon" })
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c("label", { staticClass: "control-label" }, [
+                                  _vm._v(
+                                    "From\n                                                    "
+                                  ),
+                                  _c("input", {
+                                    staticClass: "form-control",
+                                    attrs: {
+                                      type: "text",
+                                      placeholder: "Origin City"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-1 hidden-xs" }, [
+                              _c("div", { staticClass: "trip-type-multi" }, [
+                                _c("i", {
+                                  staticClass: "fa ti-arrow-right icon"
+                                })
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c("label", { staticClass: "control-label" }, [
+                                  _vm._v(
+                                    "To\n                                                    "
+                                  ),
+                                  _c("input", {
+                                    staticClass: "form-control",
+                                    attrs: {
+                                      type: "text",
+                                      placeholder: "Destination City"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-sm-3 col-sm-offset-0 col-xs-12"
+                              },
+                              [
+                                _c(
+                                  "label",
+                                  {
+                                    staticClass: "m-l-16",
+                                    attrs: { for: "multistop_departure2" }
+                                  },
+                                  [_vm._v("Departure")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "input-group m-l-16" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "input-group-prepend" },
+                                      [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "input-group-text bg-white"
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "fa fa-fw ti-calendar"
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass:
+                                        "form-control departure_date",
+                                      attrs: {
+                                        type: "text",
+                                        id: "multistop_departure2",
+                                        placeholder: "Select Date"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _vm._l(_vm.inputs, function(input, index) {
+                            return _c(
+                              "div",
+                              { staticClass: "row multi-flight-data" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "trip-type d-sm-none" },
+                                  [
+                                    _c("i", {
+                                      staticClass: "fa ti-arrow-right icon"
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "col-sm-4 col-xs-6" },
+                                  [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c(
+                                        "label",
+                                        { staticClass: "control-label" },
+                                        [
+                                          _vm._v(
+                                            "From\n                                                "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        staticClass: "form-control",
+                                        attrs: {
+                                          type: "text",
+                                          placeholder: "Origin City"
+                                        }
+                                      })
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "col-sm-1 hidden-xs" },
+                                  [
+                                    _c(
+                                      "div",
+                                      { staticClass: "trip-type-multi" },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa ti-arrow-right icon"
+                                        })
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "col-sm-4 col-xs-6" },
+                                  [
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _c(
+                                        "label",
+                                        { staticClass: "control-label" },
+                                        [
+                                          _vm._v(
+                                            "To\n                                                "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        staticClass: "form-control",
+                                        attrs: {
+                                          type: "text",
+                                          placeholder: "Destination City"
+                                        }
+                                      })
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "col-sm-3 col-sm-offset-0 col-11"
+                                  },
+                                  [
+                                    _c(
+                                      "label",
+                                      { staticClass: "m-l-16 mb-2" },
+                                      [_vm._v("Departure")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      { staticClass: "input-group m-l-16" },
+                                      [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass: "input-group-prepend"
+                                          },
+                                          [
+                                            _c(
+                                              "span",
+                                              {
+                                                staticClass:
+                                                  "input-group-text bg-white"
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fa fa-fw ti-calendar"
+                                                })
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass:
+                                            "form-control departure_date",
+                                          attrs: {
+                                            type: "text",
+                                            placeholder: "Select Date"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRow(index)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass:
+                                            "fa fa-fw ti-minus remove-flight"
+                                        })
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          })
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row m-t-10 mt-3" }, [
+                        _c("div", { staticClass: "col-sm-6" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "btn btn-secondary text-white mr-3",
+                              attrs: { id: "add-flight" },
+                              on: { click: _vm.addRow }
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-plus" }),
+                              _vm._v(
+                                " Add flight\n                                        "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("label", [_vm._v("Add Flight(Upto 6)")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-sm-6" }, [
+                          _c("label", { attrs: { for: "class-type1" } }, [
+                            _vm._v("Class")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "select",
+                            {
+                              staticClass: "form-control",
+                              attrs: { name: "class", id: "class-type1" }
+                            },
+                            [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("Economy")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("Business")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("First")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("Premium Economy")
+                              ])
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row m-t-10" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-sm-8 col-md-10 col-lg-8" },
+                          [
+                            _c("div", { staticClass: "row" }, [
+                              _c("div", { staticClass: "col-sm-4" }, [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c(
+                                    "label",
+                                    { attrs: { for: "adult-multi" } },
+                                    [_vm._v("Adult")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("input", {
+                                    attrs: {
+                                      id: "adult-multi",
+                                      type: "text",
+                                      value: "1",
+                                      readonly: "",
+                                      name: "adult_count"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "col-sm-4" }, [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c(
+                                    "label",
+                                    { attrs: { for: "child-multi" } },
+                                    [_vm._v("Child")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("input", {
+                                    attrs: {
+                                      id: "child-multi",
+                                      type: "text",
+                                      value: "0",
+                                      readonly: "",
+                                      name: "child_count"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "col-sm-4" }, [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c(
+                                    "label",
+                                    { attrs: { for: "infant-multi" } },
+                                    [_vm._v("Infant")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("input", {
+                                    attrs: {
+                                      id: "infant-multi",
+                                      type: "text",
+                                      value: "0",
+                                      readonly: "",
+                                      name: "infant_count"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "col-sm-4 col-md-2 col-lg-4" },
+                          [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "control-label",
+                                attrs: { for: "multi-air" }
+                              },
+                              [
+                                _vm._v(
+                                  "Preferred Airline\n                                        "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: {
+                                type: "text",
+                                id: "multi-air",
+                                placeholder: "Airline name"
+                              }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row m-t-10" }, [
+                        _c("div", { staticClass: "col-sm-8" }, [
+                          _c(
+                            "div",
+                            { staticClass: "form-group icheck-element" },
+                            [
+                              _c("label", { staticClass: "price-alert" }, [
+                                _c("input", {
+                                  attrs: {
+                                    type: "checkbox",
+                                    name: "price-alert",
+                                    value: ""
+                                  }
+                                }),
+                                _vm._v(
+                                  " Alert me when price changes\n                                            "
+                                )
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-sm-4" }, [
+                          _c(
+                            "button",
+                            { staticClass: "btn btn-warning btn-block" },
+                            [_vm._v("Search Flights")]
+                          )
+                        ])
+                      ])
                     ])
                   ])
                 ]
@@ -1666,83 +1692,301 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-md-6" },
+        { staticClass: "col-md-8" },
         [
           _c(
             "card",
             {
               attrs: {
-                title:
-                  "<i class='fa fa-fw ti-pencil'></i> Grid sizing of Form Elements"
+                title: "<i class='fa fa-fw ti-money'></i> Fund Transfer"
               }
             },
             [
-              _c("form", [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-3" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: { type: "text" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-4" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: { type: "text" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-5" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: { type: "text" }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-3" }, [
-                    _c("textarea", {
-                      staticClass: "form-control resize_vertical"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-4" }, [
-                    _c("textarea", {
-                      staticClass: "form-control resize_vertical"
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-5" }, [
-                    _c("textarea", {
-                      staticClass: "form-control resize_vertical"
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-3" }, [
-                    _c("select", { staticClass: "form-control" }, [
-                      _c("option", [_vm._v("Select")])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-4" }, [
-                    _c("select", { staticClass: "form-control" }, [
-                      _c("option", [_vm._v("Select")])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-5" }, [
-                    _c("select", { staticClass: "form-control" }, [
-                      _c("option", [_vm._v("Select")])
-                    ])
-                  ])
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c(
+                    "form",
+                    {
+                      staticClass: "form-horizontal",
+                      attrs: { id: "form-validation" }
+                    },
+                    [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-6 control-label",
+                            attrs: { for: "skill" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Select Account :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c(
+                            "select",
+                            {
+                              staticClass: "form-control",
+                              attrs: { id: "skill", name: "skill" }
+                            },
+                            [
+                              _c(
+                                "option",
+                                {
+                                  attrs: {
+                                    value: "",
+                                    disabled: "",
+                                    selected: ""
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                            Select account\n                                        "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "234" } }, [
+                                _vm._v("0000432187653456")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "345" } }, [
+                                _vm._v("0000891236543567")
+                              ])
+                            ]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "number" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Amount :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "number",
+                              name: "number",
+                              placeholder: "Enter amount",
+                              onkeypress: "return isNumber(event, this)"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "val-username" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Sender name :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "val-username",
+                              name: "firstName",
+                              placeholder: "Account holder name"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "fund_text mt-2 ml-3 mb-2" }, [
+                        _vm._v(
+                          "Information of the account you want to transfer fund"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "holder-name" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Account Holder name :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "holder-name",
+                              name: "holderName",
+                              placeholder: "Account holder name"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "bank-name" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Name of the Bank :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "bank-name",
+                              name: "bankName",
+                              placeholder: "Bank name"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "swift-code" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    SWIFT Code :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "swift-code",
+                              name: "bankName",
+                              placeholder: "SWIFT code"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "acc-number" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Account Number/BAN :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "acc-number",
+                              name: "number",
+                              placeholder: "Account Number",
+                              onkeypress:
+                                "return event.charCode >= 48 && event.charCode <= 57"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "col-sm-5 control-label",
+                            attrs: { for: "purpose" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Purpose (optional) :\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              id: "purpose",
+                              name: "purpose",
+                              placeholder: "optional"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group form-actions" }, [
+                        _c("div", { staticClass: "col-12 col-sm-offset-5" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-effect-ripple btn-primary",
+                              attrs: { type: "submit" }
+                            },
+                            [_vm._v("Transfer")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass:
+                                "btn btn-effect-ripple btn-secondary reset_btn",
+                              attrs: { type: "reset" }
+                            },
+                            [
+                              _vm._v(
+                                "Reset\n                                    "
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]
+                  )
                 ])
               ])
             ]
@@ -1753,556 +1997,185 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "col-md-6" },
+        { staticClass: "col-md-4" },
         [
           _c(
             "card",
             {
               attrs: {
-                title:
-                  "<i class='fa fa-fw ti-pencil'></i> Height Sizing of Input Groups"
+                title: "<i class='fa fa-fw ti-home'></i> Book your Stay"
               }
             },
             [
               _c("form", [
                 _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group input-group-lg" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw ti-user",
-                                attrs: { "aria-hidden": "true" }
-                              })
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group input-group-lg" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [_c("b-form-checkbox")],
-                            1
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group input-group-lg" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [
-                              _c("b-form-radio", {
-                                attrs: { checked: "false" }
-                              })
-                            ],
-                            1
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
-                      ])
-                    ]
-                  )
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label",
+                          attrs: { for: "stay" }
+                        },
+                        [_vm._v("Name")]
+                      ),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "stay",
+                          placeholder: "City, Area or Hotel"
+                        }
+                      })
+                    ])
+                  ])
                 ]),
-                _vm._v(" "),
-                _c("br"),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group mb-2" }, [
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "checkin_date" } }, [
+                        _vm._v("Check-In")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group" }, [
                         _c("div", { staticClass: "input-group-prepend" }, [
                           _c(
-                            "div",
+                            "span",
                             { staticClass: "input-group-text bg-white" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw ti-user",
-                                attrs: { "aria-hidden": "true" }
-                              })
-                            ]
+                            [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
                           )
                         ]),
                         _vm._v(" "),
                         _c("input", {
                           staticClass: "form-control",
-                          attrs: { type: "text" }
+                          attrs: {
+                            type: "text",
+                            id: "checkin_date",
+                            placeholder: "Select Check-in Date"
+                          }
                         })
                       ])
-                    ]
-                  ),
+                    ])
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group mb-2" }, [
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "checkout_date" } }, [
+                        _vm._v("Check-Out")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group" }, [
                         _c("div", { staticClass: "input-group-prepend" }, [
                           _c(
-                            "div",
+                            "span",
                             { staticClass: "input-group-text bg-white" },
-                            [_c("b-form-checkbox")],
-                            1
+                            [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
                           )
                         ]),
                         _vm._v(" "),
                         _c("input", {
                           staticClass: "form-control",
-                          attrs: { type: "text" }
+                          attrs: {
+                            type: "text",
+                            id: "checkout_date",
+                            placeholder: "Select Check-out Date"
+                          }
                         })
                       ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group mb-2" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [
-                              _c("b-form-radio", {
-                                attrs: { checked: "false" }
-                              })
-                            ],
-                            1
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
-                      ])
-                    ]
-                  )
+                    ])
+                  ])
                 ]),
-                _vm._v(" "),
-                _c("br"),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group input-group-sm" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw ti-user",
-                                attrs: { "aria-hidden": "true" }
-                              })
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "adult-number" } }, [
+                        _vm._v("Adult")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "select",
+                        {
                           staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
-                      ])
-                    ]
-                  ),
+                          attrs: { name: "count", id: "adult-number" }
+                        },
+                        [
+                          _c("option", { attrs: { value: "0" } }, [
+                            _vm._v("1")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "1" } }, [
+                            _vm._v("2")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "2" } }, [
+                            _vm._v("3")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "3" } }, [
+                            _vm._v("4")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "4" } }, [_vm._v("5")])
+                        ]
+                      )
+                    ])
+                  ]),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group input-group-sm" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [_c("b-form-checkbox")],
-                            1
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "form-group" }, [
+                      _c("label", { attrs: { for: "child-number" } }, [
+                        _vm._v("Child")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "select",
+                        {
                           staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
-                    [
-                      _c("div", { staticClass: "input-group input-group-sm" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "div",
-                            { staticClass: "input-group-text bg-white" },
-                            [
-                              _c("b-form-radio", {
-                                attrs: { checked: "false" }
-                              })
-                            ],
-                            1
-                          )
-                        ]),
-                        _vm._v(" "),
+                          attrs: { name: "count", id: "child-number" }
+                        },
+                        [
+                          _c("option", { attrs: { value: "0" } }, [
+                            _vm._v("0")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "1" } }, [
+                            _vm._v("1")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "2" } }, [
+                            _vm._v("2")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "3" } }, [_vm._v("3")])
+                        ]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("div", { staticClass: "form-group icheck-element" }, [
+                      _c("label", { staticClass: "guest-rooms" }, [
                         _c("input", {
-                          staticClass: "form-control",
-                          attrs: { type: "text" }
-                        })
+                          attrs: {
+                            type: "checkbox",
+                            name: "price-alert",
+                            value: ""
+                          }
+                        }),
+                        _vm._v(" Guest Rooms\n                                ")
                       ])
-                    ]
-                  )
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row file-input-section" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-12" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='fa fa-fw ti-download'></i> Advanced File Input"
-              }
-            },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-20" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
+                    ])
+                  ]),
                   _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: { id: "input-20", type: "file" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "alert alert-info small m-t-10 alert_pad mt-2 mt-sm-0"
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Display the widget as a single block button\n                        "
-                      )
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-21" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: { id: "input-21", type: "file", accept: "image/*" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Show only image files for selection & preview. Control button labels, styles,\n                            and icons for the Pick Image, upload, and delete buttons.\n                        "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-22" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: {
-                      id: "input-22",
-                      type: "file",
-                      accept: "text/plain",
-                      "data-preview-file-type": "text",
-                      "data-preview-class": "bg-warning"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Preview section control. Change preview background and display only text files\n                            content within the preview window.\n                        "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8 " }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-23" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: {
-                      id: "input-23",
-                      type: "file",
-                      "data-show-preview": "false"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Advanced customization using templates. For example, Hide file preview\n                            thumbnails.\n                        "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-40" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: { id: "input-40", type: "file" }
-                  }),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-warning btn-modify",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Modify")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Using plugin methods to alter input at runtime. For example, click the Modify\n                            button to disable the plugin and change plugin options.\n                        "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-41" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: { id: "input-41", type: "file" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Allow only image and video file types to be uploaded. You can configure the\n                            condition for validating the file types using\n                            "
-                    ),
-                    _c("code", [_vm._v("fileTypeSettings")]),
-                    _vm._v(" .\n                        ")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-42" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: { id: "input-42", type: "file" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Allow only specific( jpg, gif, png, txt ) file extensions.\n                        "
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("hr"),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-8" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label txt_media",
-                      attrs: { for: "input-43" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Select File\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "file-loading",
-                    attrs: { id: "input-43", type: "file" }
-                  }),
-                  _vm._v(" "),
-                  _c("div", {
-                    staticClass: "help-block",
-                    attrs: { idfirst: "errorBlock43" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-sm-4" }, [
-                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
-                    _vm._v(
-                      "\n                            Disable preview and customize your own error container and messages.\n                        "
-                    )
+                  _c("div", { staticClass: "col-sm-12" }, [
+                    _c("button", { staticClass: "btn btn-warning btn-block" }, [
+                      _vm._v("Search Hotels")
+                    ])
                   ])
                 ])
               ])
@@ -2320,26 +2193,27 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6360cc14", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-4cfc4168", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 441:
+/***/ 446:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1277)
-  __webpack_require__(1280)
+  __webpack_require__(1398)
+  __webpack_require__(1400)
+  __webpack_require__(1402)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1282)
+var __vue_script__ = __webpack_require__(1404)
 /* template */
-var __vue_template__ = __webpack_require__(1285)
+var __vue_template__ = __webpack_require__(1406)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2356,7 +2230,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/form-elements.vue"
+Component.options.__file = "resources/components/pages/realtime_form.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -2365,9 +2239,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6360cc14", Component.options)
+    hotAPI.createRecord("data-v-4cfc4168", Component.options)
   } else {
-    hotAPI.reload("data-v-6360cc14", Component.options)
+    hotAPI.reload("data-v-4cfc4168", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -2379,7 +2253,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 526:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12751,19 +12625,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(529)
+  __webpack_require__(530)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(531)
+var __vue_script__ = __webpack_require__(532)
 /* template */
-var __vue_template__ = __webpack_require__(532)
+var __vue_template__ = __webpack_require__(533)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12803,13 +12677,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 529:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(530);
+var content = __webpack_require__(531);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -12830,7 +12704,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -12845,7 +12719,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12890,7 +12764,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12952,10 +12826,19 @@ if (false) {
 
 /***/ }),
 
-/***/ 696:
-/***/ (function(module, exports) {
+/***/ 708:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/images/vendor/bootstrap-fileinput/loading.gif?13630905267b809161e71d0f8a0c017b";
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*
+ *  Bootstrap TouchSpin - v3.1.1
+ *  A mobile and touch friendly input spinner component for Bootstrap 3.
+ *  http://www.virtuosoft.eu/code/bootstrap-touchspin/
+ *
+ *  Made by István Ujj-Mészáros
+ *  Under Apache License v2.0 License
+ */
+!function(a){"use strict";function b(a,b){return a+".touchspin_"+b}function c(c,d){return a.map(c,function(a){return b(a,d)})}var d=0;a.fn.TouchSpin=function(b){if("destroy"===b)return void this.each(function(){var b=a(this),d=b.data();a(document).off(c(["mouseup","touchend","touchcancel","mousemove","touchmove","scroll","scrollstart"],d.spinnerid).join(" "))});var e={min:0,max:100,initval:"",replacementval:"",step:1,decimals:0,stepinterval:100,forcestepdivisibility:"round",stepintervaldelay:500,verticalbuttons:!1,verticalupclass:"glyphicon glyphicon-chevron-up",verticaldownclass:"glyphicon glyphicon-chevron-down",prefix:"",postfix:"",prefix_extraclass:"",postfix_extraclass:"",booster:!0,boostat:10,maxboostedstep:!1,mousewheel:!0,buttondown_class:"btn btn-default",buttonup_class:"btn btn-default",buttondown_txt:"-",buttonup_txt:"+"},f={min:"min",max:"max",initval:"init-val",replacementval:"replacement-val",step:"step",decimals:"decimals",stepinterval:"step-interval",verticalbuttons:"vertical-buttons",verticalupclass:"vertical-up-class",verticaldownclass:"vertical-down-class",forcestepdivisibility:"force-step-divisibility",stepintervaldelay:"step-interval-delay",prefix:"prefix",postfix:"postfix",prefix_extraclass:"prefix-extra-class",postfix_extraclass:"postfix-extra-class",booster:"booster",boostat:"boostat",maxboostedstep:"max-boosted-step",mousewheel:"mouse-wheel",buttondown_class:"button-down-class",buttonup_class:"button-up-class",buttondown_txt:"button-down-txt",buttonup_txt:"button-up-txt"};return this.each(function(){function g(){if(!J.data("alreadyinitialized")){if(J.data("alreadyinitialized",!0),d+=1,J.data("spinnerid",d),!J.is("input"))return void console.log("Must be an input.");j(),h(),u(),m(),p(),q(),r(),s(),D.input.css("display","block")}}function h(){""!==B.initval&&""===J.val()&&J.val(B.initval)}function i(a){l(a),u();var b=D.input.val();""!==b&&(b=Number(D.input.val()),D.input.val(b.toFixed(B.decimals)))}function j(){B=a.extend({},e,K,k(),b)}function k(){var b={};return a.each(f,function(a,c){var d="bts-"+c;J.is("[data-"+d+"]")&&(b[a]=J.data(d))}),b}function l(b){B=a.extend({},B,b)}function m(){var a=J.val(),b=J.parent();""!==a&&(a=Number(a).toFixed(B.decimals)),J.data("initvalue",a).val(a),J.addClass("form-control"),b.hasClass("input-group")?n(b):o()}function n(b){b.addClass("bootstrap-touchspin");var c,d,e=J.prev(),f=J.next(),g='<span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+"</span>",h='<span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+"</span>";e.hasClass("input-group-btn")?(c='<button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button>",e.append(c)):(c='<span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button></span>",a(c).insertBefore(J)),f.hasClass("input-group-btn")?(d='<button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button>",f.prepend(d)):(d='<span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span>",a(d).insertAfter(J)),a(g).insertBefore(J),a(h).insertAfter(J),C=b}function o(){var b;b=B.verticalbuttons?'<div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn-vertical"><button class="'+B.buttondown_class+' bootstrap-touchspin-up" type="button"><i class="'+B.verticalupclass+'"></i></button><button class="'+B.buttonup_class+' bootstrap-touchspin-down" type="button"><i class="'+B.verticaldownclass+'"></i></button></span></div>':'<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+'</button></span><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span></div>",C=a(b).insertBefore(J),a(".bootstrap-touchspin-prefix",C).after(J),J.hasClass("input-sm")?C.addClass("input-group-sm"):J.hasClass("input-lg")&&C.addClass("input-group-lg")}function p(){D={down:a(".bootstrap-touchspin-down",C),up:a(".bootstrap-touchspin-up",C),input:a("input",C),prefix:a(".bootstrap-touchspin-prefix",C).addClass(B.prefix_extraclass),postfix:a(".bootstrap-touchspin-postfix",C).addClass(B.postfix_extraclass)}}function q(){""===B.prefix&&D.prefix.hide(),""===B.postfix&&D.postfix.hide()}function r(){J.on("keydown",function(a){var b=a.keyCode||a.which;38===b?("up"!==M&&(w(),z()),a.preventDefault()):40===b&&("down"!==M&&(x(),y()),a.preventDefault())}),J.on("keyup",function(a){var b=a.keyCode||a.which;38===b?A():40===b&&A()}),J.on("blur",function(){u()}),D.down.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("down"!==M&&(x(),y()),a.preventDefault())}),D.down.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.up.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("up"!==M&&(w(),z()),a.preventDefault())}),D.up.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.down.on("mousedown.touchspin",function(a){D.down.off("touchstart.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.down.on("touchstart.touchspin",function(a){D.down.off("mousedown.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.up.on("mousedown.touchspin",function(a){D.up.off("touchstart.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("touchstart.touchspin",function(a){D.up.off("mousedown.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),D.up.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),a(document).on(c(["mouseup","touchend","touchcancel"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),a(document).on(c(["mousemove","touchmove","scroll","scrollstart"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),J.on("mousewheel DOMMouseScroll",function(a){if(B.mousewheel&&J.is(":focus")){var b=a.originalEvent.wheelDelta||-a.originalEvent.deltaY||-a.originalEvent.detail;a.stopPropagation(),a.preventDefault(),0>b?x():w()}})}function s(){J.on("touchspin.uponce",function(){A(),w()}),J.on("touchspin.downonce",function(){A(),x()}),J.on("touchspin.startupspin",function(){z()}),J.on("touchspin.startdownspin",function(){y()}),J.on("touchspin.stopspin",function(){A()}),J.on("touchspin.updatesettings",function(a,b){i(b)})}function t(a){switch(B.forcestepdivisibility){case"round":return(Math.round(a/B.step)*B.step).toFixed(B.decimals);case"floor":return(Math.floor(a/B.step)*B.step).toFixed(B.decimals);case"ceil":return(Math.ceil(a/B.step)*B.step).toFixed(B.decimals);default:return a}}function u(){var a,b,c;return a=J.val(),""===a?void(""!==B.replacementval&&(J.val(B.replacementval),J.trigger("change"))):void(B.decimals>0&&"."===a||(b=parseFloat(a),isNaN(b)&&(b=""!==B.replacementval?B.replacementval:0),c=b,b.toString()!==a&&(c=b),b<B.min&&(c=B.min),b>B.max&&(c=B.max),c=t(c),Number(a).toString()!==c.toString()&&(J.val(c),J.trigger("change"))))}function v(){if(B.booster){var a=Math.pow(2,Math.floor(L/B.boostat))*B.step;return B.maxboostedstep&&a>B.maxboostedstep&&(a=B.maxboostedstep,E=Math.round(E/a)*a),Math.max(B.step,a)}return B.step}function w(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E+=b,E>B.max&&(E=B.max,J.trigger("touchspin.on.max"),A()),D.input.val(Number(E).toFixed(B.decimals)),a!==E&&J.trigger("change")}function x(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E-=b,E<B.min&&(E=B.min,J.trigger("touchspin.on.min"),A()),D.input.val(E.toFixed(B.decimals)),a!==E&&J.trigger("change")}function y(){A(),L=0,M="down",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startdownspin"),H=setTimeout(function(){F=setInterval(function(){L++,x()},B.stepinterval)},B.stepintervaldelay)}function z(){A(),L=0,M="up",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startupspin"),I=setTimeout(function(){G=setInterval(function(){L++,w()},B.stepinterval)},B.stepintervaldelay)}function A(){switch(clearTimeout(H),clearTimeout(I),clearInterval(F),clearInterval(G),M){case"up":J.trigger("touchspin.on.stopupspin"),J.trigger("touchspin.on.stopspin");break;case"down":J.trigger("touchspin.on.stopdownspin"),J.trigger("touchspin.on.stopspin")}L=0,M=!1}var B,C,D,E,F,G,H,I,J=a(this),K=J.data(),L=0,M=!1;g()})}}(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(527)))
 
 /***/ })
 

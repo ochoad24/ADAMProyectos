@@ -1,22 +1,22 @@
 webpackJsonp([126],{
 
-/***/ 1422:
+/***/ 1532:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1423);
+var content = __webpack_require__(1533);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("45664c5d", content, false, {});
+var update = __webpack_require__(26)("271fe70c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./hover-min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./hover-min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,38 +27,39 @@ if(false) {
 
 /***/ }),
 
-/***/ 1423:
+/***/ 1533:
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(28);
 exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*!\r\n * Hover.css (http://ianlunn.github.io/Hover/)\r\n * Version: 2.3.2\r\n * Author: Ian Lunn @IanLunn\r\n * Author URL: http://ianlunn.co.uk/\r\n * Github: https://github.com/IanLunn/Hover\r\n\r\n * Hover.css Copyright Ian Lunn 2017. Generated with Sass.\r\n */\n.hvr-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-grow:active,.hvr-grow:focus,.hvr-grow:hover{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n.hvr-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-shrink:active,.hvr-shrink:focus,.hvr-shrink:hover{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n@-webkit-keyframes hvr-pulse{\n25%{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n75%{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n@keyframes hvr-pulse{\n25%{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n75%{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n.hvr-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse:active,.hvr-pulse:focus,.hvr-pulse:hover{-webkit-animation-name:hvr-pulse;animation-name:hvr-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-pulse-grow{\nto{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n}\n@keyframes hvr-pulse-grow{\nto{-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n}\n.hvr-pulse-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse-grow:active,.hvr-pulse-grow:focus,.hvr-pulse-grow:hover{-webkit-animation-name:hvr-pulse-grow;animation-name:hvr-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-pulse-shrink{\nto{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n@keyframes hvr-pulse-shrink{\nto{-webkit-transform:scale(0.9);transform:scale(0.9)\n}\n}\n.hvr-pulse-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pulse-shrink:active,.hvr-pulse-shrink:focus,.hvr-pulse-shrink:hover{-webkit-animation-name:hvr-pulse-shrink;animation-name:hvr-pulse-shrink;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-push{\n50%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n100%{-webkit-transform:scale(1);transform:scale(1)\n}\n}\n@keyframes hvr-push{\n50%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n100%{-webkit-transform:scale(1);transform:scale(1)\n}\n}\n.hvr-push{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-push:active,.hvr-push:focus,.hvr-push:hover{-webkit-animation-name:hvr-push;animation-name:hvr-push;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-pop{\n50%{-webkit-transform:scale(1.2);transform:scale(1.2)\n}\n}\n@keyframes hvr-pop{\n50%{-webkit-transform:scale(1.2);transform:scale(1.2)\n}\n}\n.hvr-pop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-pop:active,.hvr-pop:focus,.hvr-pop:hover{-webkit-animation-name:hvr-pop;animation-name:hvr-pop;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-bounce-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-in:active,.hvr-bounce-in:focus,.hvr-bounce-in:hover{-webkit-transform:scale(1.2);transform:scale(1.2);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-bounce-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-out:active,.hvr-bounce-out:focus,.hvr-bounce-out:hover{-webkit-transform:scale(0.8);transform:scale(0.8);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-rotate:active,.hvr-rotate:focus,.hvr-rotate:hover{-webkit-transform:rotate(4deg);transform:rotate(4deg)\n}\n.hvr-grow-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-grow-rotate:active,.hvr-grow-rotate:focus,.hvr-grow-rotate:hover{-webkit-transform:scale(1.1) rotate(4deg);transform:scale(1.1) rotate(4deg)\n}\n.hvr-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-float:active,.hvr-float:focus,.hvr-float:hover{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n.hvr-sink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sink:active,.hvr-sink:focus,.hvr-sink:hover{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n@-webkit-keyframes hvr-bob{\n0%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n50%{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@keyframes hvr-bob{\n0%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n50%{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@-webkit-keyframes hvr-bob-float{\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n@keyframes hvr-bob-float{\n100%{-webkit-transform:translateY(-8px);transform:translateY(-8px)\n}\n}\n.hvr-bob{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-bob:active,.hvr-bob:focus,.hvr-bob:hover{-webkit-animation-name:hvr-bob-float,hvr-bob;animation-name:hvr-bob-float,hvr-bob;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-hang{\n0%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n50%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@keyframes hvr-hang{\n0%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n50%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@-webkit-keyframes hvr-hang-sink{\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n@keyframes hvr-hang-sink{\n100%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n}\n.hvr-hang{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-hang:active,.hvr-hang:focus,.hvr-hang:hover{-webkit-animation-name:hvr-hang-sink,hvr-hang;animation-name:hvr-hang-sink,hvr-hang;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n.hvr-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-skew:active,.hvr-skew:focus,.hvr-skew:hover{-webkit-transform:skew(-10deg);transform:skew(-10deg)\n}\n.hvr-skew-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-skew-forward:active,.hvr-skew-forward:focus,.hvr-skew-forward:hover{-webkit-transform:skew(-10deg);transform:skew(-10deg)\n}\n.hvr-skew-backward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-skew-backward:active,.hvr-skew-backward:focus,.hvr-skew-backward:hover{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n@-webkit-keyframes hvr-wobble-vertical{\n16.65%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n33.3%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n@keyframes hvr-wobble-vertical{\n16.65%{-webkit-transform:translateY(8px);transform:translateY(8px)\n}\n33.3%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n.hvr-wobble-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-vertical:active,.hvr-wobble-vertical:focus,.hvr-wobble-vertical:hover{-webkit-animation-name:hvr-wobble-vertical;animation-name:hvr-wobble-vertical;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-horizontal{\n16.65%{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n33.3%{-webkit-transform:translateX(-6px);transform:translateX(-6px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n@keyframes hvr-wobble-horizontal{\n16.65%{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n33.3%{-webkit-transform:translateX(-6px);transform:translateX(-6px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n.hvr-wobble-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-horizontal:active,.hvr-wobble-horizontal:focus,.hvr-wobble-horizontal:hover{-webkit-animation-name:hvr-wobble-horizontal;animation-name:hvr-wobble-horizontal;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-to-bottom-right{\n16.65%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)\n}\n33.3%{-webkit-transform:translate(-6px,-6px);transform:translate(-6px,-6px)\n}\n49.95%{-webkit-transform:translate(4px,4px);transform:translate(4px,4px)\n}\n66.6%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)\n}\n83.25%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n@keyframes hvr-wobble-to-bottom-right{\n16.65%{-webkit-transform:translate(8px,8px);transform:translate(8px,8px)\n}\n33.3%{-webkit-transform:translate(-6px,-6px);transform:translate(-6px,-6px)\n}\n49.95%{-webkit-transform:translate(4px,4px);transform:translate(4px,4px)\n}\n66.6%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)\n}\n83.25%{-webkit-transform:translate(1px,1px);transform:translate(1px,1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n.hvr-wobble-to-bottom-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-to-bottom-right:active,.hvr-wobble-to-bottom-right:focus,.hvr-wobble-to-bottom-right:hover{-webkit-animation-name:hvr-wobble-to-bottom-right;animation-name:hvr-wobble-to-bottom-right;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-to-top-right{\n16.65%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)\n}\n33.3%{-webkit-transform:translate(-6px,6px);transform:translate(-6px,6px)\n}\n49.95%{-webkit-transform:translate(4px,-4px);transform:translate(4px,-4px)\n}\n66.6%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)\n}\n83.25%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n@keyframes hvr-wobble-to-top-right{\n16.65%{-webkit-transform:translate(8px,-8px);transform:translate(8px,-8px)\n}\n33.3%{-webkit-transform:translate(-6px,6px);transform:translate(-6px,6px)\n}\n49.95%{-webkit-transform:translate(4px,-4px);transform:translate(4px,-4px)\n}\n66.6%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)\n}\n83.25%{-webkit-transform:translate(1px,-1px);transform:translate(1px,-1px)\n}\n100%{-webkit-transform:translate(0,0);transform:translate(0,0)\n}\n}\n.hvr-wobble-to-top-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-to-top-right:active,.hvr-wobble-to-top-right:focus,.hvr-wobble-to-top-right:hover{-webkit-animation-name:hvr-wobble-to-top-right;animation-name:hvr-wobble-to-top-right;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-top{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-top{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transform-origin:0 100%;transform-origin:0 100%\n}\n.hvr-wobble-top:active,.hvr-wobble-top:focus,.hvr-wobble-top:hover{-webkit-animation-name:hvr-wobble-top;animation-name:hvr-wobble-top;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-bottom{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-bottom{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transform-origin:100% 0;transform-origin:100% 0\n}\n.hvr-wobble-bottom:active,.hvr-wobble-bottom:focus,.hvr-wobble-bottom:hover{-webkit-animation-name:hvr-wobble-bottom;animation-name:hvr-wobble-bottom;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-wobble-skew{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n@keyframes hvr-wobble-skew{\n16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)\n}\n33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)\n}\n49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)\n}\n66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)\n}\n83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)\n}\n100%{-webkit-transform:skew(0);transform:skew(0)\n}\n}\n.hvr-wobble-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-wobble-skew:active,.hvr-wobble-skew:focus,.hvr-wobble-skew:hover{-webkit-animation-name:hvr-wobble-skew;animation-name:hvr-wobble-skew;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n@keyframes hvr-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n.hvr-buzz{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-buzz:active,.hvr-buzz:focus,.hvr-buzz:hover{-webkit-animation-name:hvr-buzz;animation-name:hvr-buzz;-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n@keyframes hvr-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n.hvr-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-buzz-out:active,.hvr-buzz-out:focus,.hvr-buzz-out:hover{-webkit-animation-name:hvr-buzz-out;animation-name:hvr-buzz-out;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-forward:active,.hvr-forward:focus,.hvr-forward:hover{-webkit-transform:translateX(8px);transform:translateX(8px)\n}\n.hvr-backward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-backward:active,.hvr-backward:focus,.hvr-backward:hover{-webkit-transform:translateX(-8px);transform:translateX(-8px)\n}\n.hvr-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);overflow:hidden;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:color,background-color;transition-property:color,background-color\n}\n.hvr-fade:active,.hvr-fade:focus,.hvr-fade:hover{background-color:#2098D1;color:#fff\n}\n@-webkit-keyframes hvr-back-pulse{\n50%{background-color:rgba(32,152,209,.75)\n}\n}\n@keyframes hvr-back-pulse{\n50%{background-color:rgba(32,152,209,.75)\n}\n}\n.hvr-back-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);overflow:hidden;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:color,background-color;transition-property:color,background-color\n}\n.hvr-back-pulse:active,.hvr-back-pulse:focus,.hvr-back-pulse:hover{-webkit-animation-name:hvr-back-pulse;animation-name:hvr-back-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-delay:.5s;animation-delay:.5s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;background-color:#2098D1;background-color:#2098d1;color:#fff\n}\n.hvr-sweep-to-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-right:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-right:active,.hvr-sweep-to-right:focus,.hvr-sweep-to-right:hover{color:#fff\n}\n.hvr-sweep-to-right:active:before,.hvr-sweep-to-right:focus:before,.hvr-sweep-to-right:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-sweep-to-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-left:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-left:active,.hvr-sweep-to-left:focus,.hvr-sweep-to-left:hover{color:#fff\n}\n.hvr-sweep-to-left:active:before,.hvr-sweep-to-left:focus:before,.hvr-sweep-to-left:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-sweep-to-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-bottom:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-bottom:active,.hvr-sweep-to-bottom:focus,.hvr-sweep-to-bottom:hover{color:#fff\n}\n.hvr-sweep-to-bottom:active:before,.hvr-sweep-to-bottom:focus:before,.hvr-sweep-to-bottom:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-sweep-to-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-sweep-to-top:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-sweep-to-top:active,.hvr-sweep-to-top:focus,.hvr-sweep-to-top:hover{color:#fff\n}\n.hvr-sweep-to-top:active:before,.hvr-sweep-to-top:focus:before,.hvr-sweep-to-top:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-bounce-to-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-right:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-right:active,.hvr-bounce-to-right:focus,.hvr-bounce-to-right:hover{color:#fff\n}\n.hvr-bounce-to-right:active:before,.hvr-bounce-to-right:focus:before,.hvr-bounce-to-right:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-left:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-left:active,.hvr-bounce-to-left:focus,.hvr-bounce-to-left:hover{color:#fff\n}\n.hvr-bounce-to-left:active:before,.hvr-bounce-to-left:focus:before,.hvr-bounce-to-left:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-bottom:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-bottom:active,.hvr-bounce-to-bottom:focus,.hvr-bounce-to-bottom:hover{color:#fff\n}\n.hvr-bounce-to-bottom:active:before,.hvr-bounce-to-bottom:focus:before,.hvr-bounce-to-bottom:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-bounce-to-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.5s;transition-duration:.5s\n}\n.hvr-bounce-to-top:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-bounce-to-top:active,.hvr-bounce-to-top:focus,.hvr-bounce-to-top:hover{color:#fff\n}\n.hvr-bounce-to-top:active:before,.hvr-bounce-to-top:focus:before,.hvr-bounce-to-top:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-radial-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-radial-out:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;border-radius:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-radial-out:active,.hvr-radial-out:focus,.hvr-radial-out:hover{color:#fff\n}\n.hvr-radial-out:active:before,.hvr-radial-out:focus:before,.hvr-radial-out:hover:before{-webkit-transform:scale(2);transform:scale(2)\n}\n.hvr-radial-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-radial-in:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#e1e1e1;border-radius:100%;-webkit-transform:scale(2);transform:scale(2);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-radial-in:active,.hvr-radial-in:focus,.hvr-radial-in:hover{color:#fff\n}\n.hvr-radial-in:active:before,.hvr-radial-in:focus:before,.hvr-radial-in:hover:before{-webkit-transform:scale(0);transform:scale(0)\n}\n.hvr-rectangle-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-rectangle-in:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#e1e1e1;-webkit-transform:scale(1);transform:scale(1);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-rectangle-in:active,.hvr-rectangle-in:focus,.hvr-rectangle-in:hover{color:#fff\n}\n.hvr-rectangle-in:active:before,.hvr-rectangle-in:focus:before,.hvr-rectangle-in:hover:before{-webkit-transform:scale(0);transform:scale(0)\n}\n.hvr-rectangle-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-rectangle-out:before{content:\"\";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#2098D1;-webkit-transform:scale(0);transform:scale(0);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-rectangle-out:active,.hvr-rectangle-out:focus,.hvr-rectangle-out:hover{color:#fff\n}\n.hvr-rectangle-out:active:before,.hvr-rectangle-out:focus:before,.hvr-rectangle-out:hover:before{-webkit-transform:scale(1);transform:scale(1)\n}\n.hvr-shutter-in-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-in-horizontal:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#e1e1e1;-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-in-horizontal:active,.hvr-shutter-in-horizontal:focus,.hvr-shutter-in-horizontal:hover{color:#fff\n}\n.hvr-shutter-in-horizontal:active:before,.hvr-shutter-in-horizontal:focus:before,.hvr-shutter-in-horizontal:hover:before{-webkit-transform:scaleX(0);transform:scaleX(0)\n}\n.hvr-shutter-out-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-out-horizontal:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#2098D1;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:#fff\n}\n.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1)\n}\n.hvr-shutter-in-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#2098D1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-in-vertical:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#e1e1e1;-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-in-vertical:active,.hvr-shutter-in-vertical:focus,.hvr-shutter-in-vertical:hover{color:#fff\n}\n.hvr-shutter-in-vertical:active:before,.hvr-shutter-in-vertical:focus:before,.hvr-shutter-in-vertical:hover:before{-webkit-transform:scaleY(0);transform:scaleY(0)\n}\n.hvr-shutter-out-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;background:#e1e1e1;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-shutter-out-vertical:before{content:\"\";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#2098D1;-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-shutter-out-vertical:active,.hvr-shutter-out-vertical:focus,.hvr-shutter-out-vertical:hover{color:#fff\n}\n.hvr-shutter-out-vertical:active:before,.hvr-shutter-out-vertical:focus:before,.hvr-shutter-out-vertical:hover:before{-webkit-transform:scaleY(1);transform:scaleY(1)\n}\n.hvr-border-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow;box-shadow:inset 0 0 0 4px #e1e1e1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-border-fade:active,.hvr-border-fade:focus,.hvr-border-fade:hover{box-shadow:inset 0 0 0 4px #2098D1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-hollow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:background;transition-property:background;box-shadow:inset 0 0 0 4px #e1e1e1,0 0 1px rgba(0,0,0,0)\n}\n.hvr-hollow:active,.hvr-hollow:focus,.hvr-hollow:hover{background:0 0\n}\n.hvr-trim{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-trim:before{content:'';position:absolute;border:#fff solid 4px;top:4px;left:4px;right:4px;bottom:4px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:opacity;transition-property:opacity\n}\n.hvr-trim:active:before,.hvr-trim:focus:before,.hvr-trim:hover:before{opacity:1\n}\n@-webkit-keyframes hvr-ripple-out{\n100%{top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0\n}\n}\n@keyframes hvr-ripple-out{\n100%{top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0\n}\n}\n.hvr-ripple-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-ripple-out:before{content:'';position:absolute;border:#e1e1e1 solid 6px;top:0;right:0;bottom:0;left:0;-webkit-animation-duration:1s;animation-duration:1s\n}\n.hvr-ripple-out:active:before,.hvr-ripple-out:focus:before,.hvr-ripple-out:hover:before{-webkit-animation-name:hvr-ripple-out;animation-name:hvr-ripple-out\n}\n@-webkit-keyframes hvr-ripple-in{\n100%{top:0;right:0;bottom:0;left:0;opacity:1\n}\n}\n@keyframes hvr-ripple-in{\n100%{top:0;right:0;bottom:0;left:0;opacity:1\n}\n}\n.hvr-ripple-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-ripple-in:before{content:'';position:absolute;border:#e1e1e1 solid 4px;top:-12px;right:-12px;bottom:-12px;left:-12px;opacity:0;-webkit-animation-duration:1s;animation-duration:1s\n}\n.hvr-ripple-in:active:before,.hvr-ripple-in:focus:before,.hvr-ripple-in:hover:before{-webkit-animation-name:hvr-ripple-in;animation-name:hvr-ripple-in\n}\n.hvr-outline-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-outline-out:before{content:'';position:absolute;border:#e1e1e1 solid 4px;top:0;right:0;bottom:0;left:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:top,right,bottom,left;transition-property:top,right,bottom,left\n}\n.hvr-outline-out:active:before,.hvr-outline-out:focus:before,.hvr-outline-out:hover:before{top:-8px;right:-8px;bottom:-8px;left:-8px\n}\n.hvr-outline-in{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-outline-in:before{pointer-events:none;content:'';position:absolute;border:#e1e1e1 solid 4px;top:-16px;right:-16px;bottom:-16px;left:-16px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:top,right,bottom,left;transition-property:top,right,bottom,left\n}\n.hvr-outline-in:active:before,.hvr-outline-in:focus:before,.hvr-outline-in:hover:before{top:-8px;right:-8px;bottom:-8px;left:-8px;opacity:1\n}\n.hvr-round-corners{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:border-radius;transition-property:border-radius\n}\n.hvr-round-corners:active,.hvr-round-corners:focus,.hvr-round-corners:hover{border-radius:1em\n}\n.hvr-underline-from-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-left:before{content:\"\";position:absolute;z-index:-1;left:0;right:100%;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:right;transition-property:right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-left:active:before,.hvr-underline-from-left:focus:before,.hvr-underline-from-left:hover:before{right:0\n}\n.hvr-underline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-center:before{content:\"\";position:absolute;z-index:-1;left:51%;right:51%;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-center:active:before,.hvr-underline-from-center:focus:before,.hvr-underline-from-center:hover:before{left:0;right:0\n}\n.hvr-underline-from-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-from-right:before{content:\"\";position:absolute;z-index:-1;left:100%;right:0;bottom:0;background:#2098D1;height:4px;-webkit-transition-property:left;transition-property:left;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-from-right:active:before,.hvr-underline-from-right:focus:before,.hvr-underline-from-right:hover:before{left:0\n}\n.hvr-overline-from-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-left:before{content:\"\";position:absolute;z-index:-1;left:0;right:100%;top:0;background:#2098D1;height:4px;-webkit-transition-property:right;transition-property:right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-left:active:before,.hvr-overline-from-left:focus:before,.hvr-overline-from-left:hover:before{right:0\n}\n.hvr-overline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-center:before{content:\"\";position:absolute;z-index:-1;left:51%;right:51%;top:0;background:#2098D1;height:4px;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-center:active:before,.hvr-overline-from-center:focus:before,.hvr-overline-from-center:hover:before{left:0;right:0\n}\n.hvr-overline-from-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-from-right:before{content:\"\";position:absolute;z-index:-1;left:100%;right:0;top:0;background:#2098D1;height:4px;-webkit-transition-property:left;transition-property:left;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-from-right:active:before,.hvr-overline-from-right:focus:before,.hvr-overline-from-right:hover:before{left:0\n}\n.hvr-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;top:0;bottom:0;border-color:#2098D1;border-style:solid;border-width:0;-webkit-transition-property:border-width;transition-property:border-width;-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-reveal:active:before,.hvr-reveal:focus:before,.hvr-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0);border-width:4px\n}\n.hvr-underline-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-underline-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;bottom:0;background:#2098D1;height:4px;-webkit-transform:translateY(4px);transform:translateY(4px);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-underline-reveal:active:before,.hvr-underline-reveal:focus:before,.hvr-underline-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0)\n}\n.hvr-overline-reveal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;overflow:hidden\n}\n.hvr-overline-reveal:before{content:\"\";position:absolute;z-index:-1;left:0;right:0;top:0;background:#2098D1;height:4px;-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-overline-reveal:active:before,.hvr-overline-reveal:focus:before,.hvr-overline-reveal:hover:before{-webkit-transform:translateY(0);transform:translateY(0)\n}\n.hvr-glow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-glow:active,.hvr-glow:focus,.hvr-glow:hover{box-shadow:0 0 8px rgba(0,0,0,.6)\n}\n.hvr-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-shadow:active,.hvr-shadow:focus,.hvr-shadow:hover{box-shadow:0 10px 10px -10px rgba(0,0,0,.5)\n}\n.hvr-grow-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow,transform;transition-property:box-shadow,transform\n}\n.hvr-grow-shadow:active,.hvr-grow-shadow:focus,.hvr-grow-shadow:hover{box-shadow:0 10px 10px -10px rgba(0,0,0,.5);-webkit-transform:scale(1.1);transform:scale(1.1)\n}\n.hvr-box-shadow-outset{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow\n}\n.hvr-box-shadow-outset:active,.hvr-box-shadow-outset:focus,.hvr-box-shadow-outset:hover{box-shadow:2px 2px 2px rgba(0,0,0,.6)\n}\n.hvr-box-shadow-inset{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:box-shadow;transition-property:box-shadow;box-shadow:inset 0 0 0 rgba(0,0,0,.6),0 0 1px rgba(0,0,0,0)\n}\n.hvr-box-shadow-inset:active,.hvr-box-shadow-inset:focus,.hvr-box-shadow-inset:hover{box-shadow:inset 2px 2px 2px rgba(0,0,0,.6),0 0 1px rgba(0,0,0,0)\n}\n.hvr-float-shadow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-float-shadow:before{pointer-events:none;position:absolute;z-index:-1;content:'';top:100%;left:5%;height:10px;width:90%;opacity:0;background:-webkit-radial-gradient(center,ellipse,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform,opacity;transition-property:transform,opacity\n}\n.hvr-float-shadow:active,.hvr-float-shadow:focus,.hvr-float-shadow:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n.hvr-float-shadow:active:before,.hvr-float-shadow:focus:before,.hvr-float-shadow:hover:before{opacity:1;-webkit-transform:translateY(5px);transform:translateY(5px)\n}\n.hvr-shadow-radial{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-shadow-radial:after,.hvr-shadow-radial:before{pointer-events:none;position:absolute;content:'';left:0;width:100%;box-sizing:border-box;height:5px;opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:opacity;transition-property:opacity\n}\n.hvr-shadow-radial:before{bottom:100%;background:-webkit-radial-gradient(50% 150%,ellipse,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at 50% 150%,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%)\n}\n.hvr-shadow-radial:after{top:100%;background:-webkit-radial-gradient(50% -50%,ellipse,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%);background:radial-gradient(ellipse at 50% -50%,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 80%)\n}\n.hvr-shadow-radial:active:after,.hvr-shadow-radial:active:before,.hvr-shadow-radial:focus:after,.hvr-shadow-radial:focus:before,.hvr-shadow-radial:hover:after,.hvr-shadow-radial:hover:before{opacity:1\n}\n.hvr-bubble-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-top:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;left:calc(50% - 10px);top:0;border-width:0 10px 10px;border-color:transparent transparent #e1e1e1\n}\n.hvr-bubble-top:active:before,.hvr-bubble-top:focus:before,.hvr-bubble-top:hover:before{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-right:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;top:calc(50% - 10px);right:0;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #e1e1e1\n}\n.hvr-bubble-right:active:before,.hvr-bubble-right:focus:before,.hvr-bubble-right:hover:before{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-bottom:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;left:calc(50% - 10px);bottom:0;border-width:10px 10px 0;border-color:#e1e1e1 transparent transparent\n}\n.hvr-bubble-bottom:active:before,.hvr-bubble-bottom:focus:before,.hvr-bubble-bottom:hover:before{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-bubble-left:before{pointer-events:none;position:absolute;z-index:-1;content:'';border-style:solid;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;top:calc(50% - 10px);left:0;border-width:10px 10px 10px 0;border-color:transparent #e1e1e1 transparent transparent\n}\n.hvr-bubble-left:active:before,.hvr-bubble-left:focus:before,.hvr-bubble-left:hover:before{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-bubble-float-top{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-top:before{position:absolute;z-index:-1;content:'';left:calc(50% - 10px);top:0;border-style:solid;border-width:0 10px 10px;border-color:transparent transparent #e1e1e1;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-top:active,.hvr-bubble-float-top:focus,.hvr-bubble-float-top:hover{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-float-top:active:before,.hvr-bubble-float-top:focus:before,.hvr-bubble-float-top:hover:before{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-float-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-right:before{position:absolute;z-index:-1;top:calc(50% - 10px);right:0;content:'';border-style:solid;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #e1e1e1;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-right:active,.hvr-bubble-float-right:focus,.hvr-bubble-float-right:hover{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-bubble-float-right:active:before,.hvr-bubble-float-right:focus:before,.hvr-bubble-float-right:hover:before{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-float-bottom{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-bottom:before{position:absolute;z-index:-1;content:'';left:calc(50% - 10px);bottom:0;border-style:solid;border-width:10px 10px 0;border-color:#e1e1e1 transparent transparent;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-bottom:active,.hvr-bubble-float-bottom:focus,.hvr-bubble-float-bottom:hover{-webkit-transform:translateY(-10px);transform:translateY(-10px)\n}\n.hvr-bubble-float-bottom:active:before,.hvr-bubble-float-bottom:focus:before,.hvr-bubble-float-bottom:hover:before{-webkit-transform:translateY(10px);transform:translateY(10px)\n}\n.hvr-bubble-float-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-left:before{position:absolute;z-index:-1;content:'';top:calc(50% - 10px);left:0;border-style:solid;border-width:10px 10px 10px 0;border-color:transparent #e1e1e1 transparent transparent;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform\n}\n.hvr-bubble-float-left:active,.hvr-bubble-float-left:focus,.hvr-bubble-float-left:hover{-webkit-transform:translateX(10px);transform:translateX(10px)\n}\n.hvr-bubble-float-left:active:before,.hvr-bubble-float-left:focus:before,.hvr-bubble-float-left:hover:before{-webkit-transform:translateX(-10px);transform:translateX(-10px)\n}\n.hvr-icon-back{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.1s;transition-duration:.1s\n}\n.hvr-icon-back .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-back:active .hvr-icon,.hvr-icon-back:focus .hvr-icon,.hvr-icon-back:hover .hvr-icon{-webkit-transform:translateX(-4px);transform:translateX(-4px)\n}\n.hvr-icon-forward{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.1s;transition-duration:.1s\n}\n.hvr-icon-forward .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-forward:active .hvr-icon,.hvr-icon-forward:focus .hvr-icon,.hvr-icon-forward:hover .hvr-icon{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n@-webkit-keyframes hvr-icon-down{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-down{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n.hvr-icon-down{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-down .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-down:active .hvr-icon,.hvr-icon-down:focus .hvr-icon,.hvr-icon-down:hover .hvr-icon{-webkit-animation-name:hvr-icon-down;animation-name:hvr-icon-down;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n@-webkit-keyframes hvr-icon-up{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-up{\n0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n25%,75%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n.hvr-icon-up{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-up .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-up:active .hvr-icon,.hvr-icon-up:focus .hvr-icon,.hvr-icon-up:hover .hvr-icon{-webkit-animation-name:hvr-icon-up;animation-name:hvr-icon-up;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n.hvr-icon-spin{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-spin .hvr-icon{-webkit-transition-duration:1s;transition-duration:1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out\n}\n.hvr-icon-spin:active .hvr-icon,.hvr-icon-spin:focus .hvr-icon,.hvr-icon-spin:hover .hvr-icon{-webkit-transform:rotate(360deg);transform:rotate(360deg)\n}\n@-webkit-keyframes hvr-icon-drop{\n0%{opacity:0\n}\n50%{opacity:0;-webkit-transform:translateY(-100%);transform:translateY(-100%)\n}\n100%,51%{opacity:1\n}\n}\n@keyframes hvr-icon-drop{\n0%{opacity:0\n}\n50%{opacity:0;-webkit-transform:translateY(-100%);transform:translateY(-100%)\n}\n100%,51%{opacity:1\n}\n}\n.hvr-icon-drop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-drop .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-drop:active .hvr-icon,.hvr-icon-drop:focus .hvr-icon,.hvr-icon-drop:hover .hvr-icon{opacity:0;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-animation-name:hvr-icon-drop;animation-name:hvr-icon-drop;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-delay:.3s;animation-delay:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-timing-function:cubic-bezier(0.52,1.64,.37,.66);animation-timing-function:cubic-bezier(0.52,1.64,.37,.66)\n}\n.hvr-icon-fade{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-fade .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-property:color;transition-property:color\n}\n.hvr-icon-fade:active .hvr-icon,.hvr-icon-fade:focus .hvr-icon,.hvr-icon-fade:hover .hvr-icon{color:#0F9E5E\n}\n@-webkit-keyframes hvr-icon-float-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)\n}\n}\n@keyframes hvr-icon-float-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(-1em);transform:translateY(-1em)\n}\n}\n.hvr-icon-float-away{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-float-away .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards\n}\n.hvr-icon-float-away:active .hvr-icon,.hvr-icon-float-away:focus .hvr-icon,.hvr-icon-float-away:hover .hvr-icon{-webkit-animation-name:hvr-icon-float-away;animation-name:hvr-icon-float-away;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n@-webkit-keyframes hvr-icon-sink-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)\n}\n}\n@keyframes hvr-icon-sink-away{\n0%{opacity:1\n}\n100%{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)\n}\n}\n.hvr-icon-sink-away{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-sink-away .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards\n}\n.hvr-icon-sink-away:active .hvr-icon,.hvr-icon-sink-away:focus .hvr-icon,.hvr-icon-sink-away:hover .hvr-icon{-webkit-animation-name:hvr-icon-sink-away;animation-name:hvr-icon-sink-away;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out\n}\n.hvr-icon-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-grow .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-grow:active .hvr-icon,.hvr-icon-grow:focus .hvr-icon,.hvr-icon-grow:hover .hvr-icon{-webkit-transform:scale(1.3) translateZ(0);transform:scale(1.3) translateZ(0)\n}\n.hvr-icon-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-shrink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-shrink:active .hvr-icon,.hvr-icon-shrink:focus .hvr-icon,.hvr-icon-shrink:hover .hvr-icon{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n@-webkit-keyframes hvr-icon-pulse{\n25%{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n75%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n@keyframes hvr-icon-pulse{\n25%{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n75%{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n.hvr-icon-pulse{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse:active .hvr-icon,.hvr-icon-pulse:focus .hvr-icon,.hvr-icon-pulse:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse;animation-name:hvr-icon-pulse;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-icon-pulse-grow{\nto{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n}\n@keyframes hvr-icon-pulse-grow{\nto{-webkit-transform:scale(1.3);transform:scale(1.3)\n}\n}\n.hvr-icon-pulse-grow{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse-grow .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse-grow:active .hvr-icon,.hvr-icon-pulse-grow:focus .hvr-icon,.hvr-icon-pulse-grow:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse-grow;animation-name:hvr-icon-pulse-grow;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-icon-pulse-shrink{\nto{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n@keyframes hvr-icon-pulse-shrink{\nto{-webkit-transform:scale(0.8);transform:scale(0.8)\n}\n}\n.hvr-icon-pulse-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0)\n}\n.hvr-icon-pulse-shrink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pulse-shrink:active .hvr-icon,.hvr-icon-pulse-shrink:focus .hvr-icon,.hvr-icon-pulse-shrink:hover .hvr-icon{-webkit-animation-name:hvr-icon-pulse-shrink;animation-name:hvr-icon-pulse-shrink;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:alternate;animation-direction:alternate\n}\n@-webkit-keyframes hvr-icon-push{\n50%{-webkit-transform:scale(0.5);transform:scale(0.5)\n}\n}\n@keyframes hvr-icon-push{\n50%{-webkit-transform:scale(0.5);transform:scale(0.5)\n}\n}\n.hvr-icon-push{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-push .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-push:active .hvr-icon,.hvr-icon-push:focus .hvr-icon,.hvr-icon-push:hover .hvr-icon{-webkit-animation-name:hvr-icon-push;animation-name:hvr-icon-push;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-pop{\n50%{-webkit-transform:scale(1.5);transform:scale(1.5)\n}\n}\n@keyframes hvr-icon-pop{\n50%{-webkit-transform:scale(1.5);transform:scale(1.5)\n}\n}\n.hvr-icon-pop{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-pop .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-pop:active .hvr-icon,.hvr-icon-pop:focus .hvr-icon,.hvr-icon-pop:hover .hvr-icon{-webkit-animation-name:hvr-icon-pop;animation-name:hvr-icon-pop;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-icon-bounce{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-bounce .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-bounce:active .hvr-icon,.hvr-icon-bounce:focus .hvr-icon,.hvr-icon-bounce:hover .hvr-icon{-webkit-transform:scale(1.5);transform:scale(1.5);-webkit-transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36);transition-timing-function:cubic-bezier(0.47,2.02,.31,-.36)\n}\n.hvr-icon-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-rotate .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-rotate:active .hvr-icon,.hvr-icon-rotate:focus .hvr-icon,.hvr-icon-rotate:hover .hvr-icon{-webkit-transform:rotate(20deg);transform:rotate(20deg)\n}\n.hvr-icon-grow-rotate{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-grow-rotate .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-grow-rotate:active .hvr-icon,.hvr-icon-grow-rotate:focus .hvr-icon,.hvr-icon-grow-rotate:hover .hvr-icon{-webkit-transform:scale(1.5) rotate(12deg);transform:scale(1.5) rotate(12deg)\n}\n.hvr-icon-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-float .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-float:active .hvr-icon,.hvr-icon-float:focus .hvr-icon,.hvr-icon-float:hover .hvr-icon{-webkit-transform:translateY(-4px);transform:translateY(-4px)\n}\n.hvr-icon-sink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-sink .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out\n}\n.hvr-icon-sink:active .hvr-icon,.hvr-icon-sink:focus .hvr-icon,.hvr-icon-sink:hover .hvr-icon{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n@-webkit-keyframes hvr-icon-bob{\n0%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n50%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-bob{\n0%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n50%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@-webkit-keyframes hvr-icon-bob-float{\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n@keyframes hvr-icon-bob-float{\n100%{-webkit-transform:translateY(-6px);transform:translateY(-6px)\n}\n}\n.hvr-icon-bob{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-bob .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-bob:active .hvr-icon,.hvr-icon-bob:focus .hvr-icon,.hvr-icon-bob:hover .hvr-icon{-webkit-animation-name:hvr-icon-bob-float,hvr-icon-bob;animation-name:hvr-icon-bob-float,hvr-icon-bob;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-icon-hang{\n0%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n50%{-webkit-transform:translateY(2px);transform:translateY(2px)\n}\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-hang{\n0%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n50%{-webkit-transform:translateY(2px);transform:translateY(2px)\n}\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@-webkit-keyframes hvr-icon-hang-sink{\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n@keyframes hvr-icon-hang-sink{\n100%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n}\n.hvr-icon-hang{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-hang .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-hang:active .hvr-icon,.hvr-icon-hang:focus .hvr-icon,.hvr-icon-hang:hover .hvr-icon{-webkit-animation-name:hvr-icon-hang-sink,hvr-icon-hang;animation-name:hvr-icon-hang-sink,hvr-icon-hang;-webkit-animation-duration:.3s,1.5s;animation-duration:.3s,1.5s;-webkit-animation-delay:0s,.3s;animation-delay:0s,.3s;-webkit-animation-timing-function:ease-out,ease-in-out;animation-timing-function:ease-out,ease-in-out;-webkit-animation-iteration-count:1,infinite;animation-iteration-count:1,infinite;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:normal,alternate;animation-direction:normal,alternate\n}\n@-webkit-keyframes hvr-icon-wobble-horizontal{\n16.65%{-webkit-transform:translateX(6px);transform:translateX(6px)\n}\n33.3%{-webkit-transform:translateX(-5px);transform:translateX(-5px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n@keyframes hvr-icon-wobble-horizontal{\n16.65%{-webkit-transform:translateX(6px);transform:translateX(6px)\n}\n33.3%{-webkit-transform:translateX(-5px);transform:translateX(-5px)\n}\n49.95%{-webkit-transform:translateX(4px);transform:translateX(4px)\n}\n66.6%{-webkit-transform:translateX(-2px);transform:translateX(-2px)\n}\n83.25%{-webkit-transform:translateX(1px);transform:translateX(1px)\n}\n100%{-webkit-transform:translateX(0);transform:translateX(0)\n}\n}\n.hvr-icon-wobble-horizontal{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-wobble-horizontal .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-wobble-horizontal:active .hvr-icon,.hvr-icon-wobble-horizontal:focus .hvr-icon,.hvr-icon-wobble-horizontal:hover .hvr-icon{-webkit-animation-name:hvr-icon-wobble-horizontal;animation-name:hvr-icon-wobble-horizontal;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-wobble-vertical{\n16.65%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n33.3%{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n@keyframes hvr-icon-wobble-vertical{\n16.65%{-webkit-transform:translateY(6px);transform:translateY(6px)\n}\n33.3%{-webkit-transform:translateY(-5px);transform:translateY(-5px)\n}\n49.95%{-webkit-transform:translateY(4px);transform:translateY(4px)\n}\n66.6%{-webkit-transform:translateY(-2px);transform:translateY(-2px)\n}\n83.25%{-webkit-transform:translateY(1px);transform:translateY(1px)\n}\n100%{-webkit-transform:translateY(0);transform:translateY(0)\n}\n}\n.hvr-icon-wobble-vertical{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-wobble-vertical .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-wobble-vertical:active .hvr-icon,.hvr-icon-wobble-vertical:focus .hvr-icon,.hvr-icon-wobble-vertical:hover .hvr-icon{-webkit-animation-name:hvr-icon-wobble-vertical;animation-name:hvr-icon-wobble-vertical;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n@-webkit-keyframes hvr-icon-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n@keyframes hvr-icon-buzz{\n50%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n100%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n}\n.hvr-icon-buzz{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-buzz .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-buzz:active .hvr-icon,.hvr-icon-buzz:focus .hvr-icon,.hvr-icon-buzz:hover .hvr-icon{-webkit-animation-name:hvr-icon-buzz;animation-name:hvr-icon-buzz;-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite\n}\n@-webkit-keyframes hvr-icon-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n@keyframes hvr-icon-buzz-out{\n10%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n20%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n30%{-webkit-transform:translateX(3px) rotate(2deg);transform:translateX(3px) rotate(2deg)\n}\n40%{-webkit-transform:translateX(-3px) rotate(-2deg);transform:translateX(-3px) rotate(-2deg)\n}\n50%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n60%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n70%{-webkit-transform:translateX(2px) rotate(1deg);transform:translateX(2px) rotate(1deg)\n}\n80%{-webkit-transform:translateX(-2px) rotate(-1deg);transform:translateX(-2px) rotate(-1deg)\n}\n90%{-webkit-transform:translateX(1px) rotate(0);transform:translateX(1px) rotate(0)\n}\n100%{-webkit-transform:translateX(-1px) rotate(0);transform:translateX(-1px) rotate(0)\n}\n}\n.hvr-icon-buzz-out{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s\n}\n.hvr-icon-buzz-out .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0)\n}\n.hvr-icon-buzz-out:active .hvr-icon,.hvr-icon-buzz-out:focus .hvr-icon,.hvr-icon-buzz-out:hover .hvr-icon{-webkit-animation-name:hvr-icon-buzz-out;animation-name:hvr-icon-buzz-out;-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:1;animation-iteration-count:1\n}\n.hvr-curl-top-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-top-left:before{pointer-events:none;position:absolute;content:'';height:0;width:0;top:0;left:0;background:#fff;background:linear-gradient(135deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#000000');z-index:1000;box-shadow:1px 1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-top-left:active:before,.hvr-curl-top-left:focus:before,.hvr-curl-top-left:hover:before{width:25px;height:25px\n}\n.hvr-curl-top-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-top-right:before{pointer-events:none;position:absolute;content:'';height:0;width:0;top:0;right:0;background:#fff;background:linear-gradient(225deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:-1px 1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-top-right:active:before,.hvr-curl-top-right:focus:before,.hvr-curl-top-right:hover:before{width:25px;height:25px\n}\n.hvr-curl-bottom-right{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-bottom-right:before{pointer-events:none;position:absolute;content:'';height:0;width:0;bottom:0;right:0;background:#fff;background:linear-gradient(315deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:-1px -1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-bottom-right:active:before,.hvr-curl-bottom-right:focus:before,.hvr-curl-bottom-right:hover:before{width:25px;height:25px\n}\n.hvr-curl-bottom-left{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);position:relative\n}\n.hvr-curl-bottom-left:before{pointer-events:none;position:absolute;content:'';height:0;width:0;bottom:0;left:0;background:#fff;background:linear-gradient(45deg,#fff 45%,#aaa 50%,#ccc 56%,#fff 80%);box-shadow:1px -1px 1px rgba(0,0,0,.4);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:width,height;transition-property:width,height\n}\n.hvr-curl-bottom-left:active:before,.hvr-curl-bottom-left:focus:before,.hvr-curl-bottom-left:hover:before{width:25px;height:25px\n}", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'simple-line-icons';\n  src: url(" + escape(__webpack_require__(580)) + ");\n  src: url(" + escape(__webpack_require__(580)) + "#iefix) format('embedded-opentype'), url(" + escape(__webpack_require__(624)) + ") format('woff2'), url(" + escape(__webpack_require__(625)) + ") format('truetype'), url(" + escape(__webpack_require__(626)) + ") format('woff'), url(" + escape(__webpack_require__(627)) + "#simple-line-icons) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n/*\n Use the following CSS code if you want to have a class per icon.\n Instead of a list of all class selectors, you can use the generic [class*=\"icon-\"] selector, but it's slower:\n*/\n.icon-user,\n.icon-people,\n.icon-user-female,\n.icon-user-follow,\n.icon-user-following,\n.icon-user-unfollow,\n.icon-login,\n.icon-logout,\n.icon-emotsmile,\n.icon-phone,\n.icon-call-end,\n.icon-call-in,\n.icon-call-out,\n.icon-map,\n.icon-location-pin,\n.icon-direction,\n.icon-directions,\n.icon-compass,\n.icon-layers,\n.icon-menu,\n.icon-list,\n.icon-options-vertical,\n.icon-options,\n.icon-arrow-down,\n.icon-arrow-left,\n.icon-arrow-right,\n.icon-arrow-up,\n.icon-arrow-up-circle,\n.icon-arrow-left-circle,\n.icon-arrow-right-circle,\n.icon-arrow-down-circle,\n.icon-check,\n.icon-clock,\n.icon-plus,\n.icon-minus,\n.icon-close,\n.icon-event,\n.icon-exclamation,\n.icon-organization,\n.icon-trophy,\n.icon-screen-smartphone,\n.icon-screen-desktop,\n.icon-plane,\n.icon-notebook,\n.icon-mustache,\n.icon-mouse,\n.icon-magnet,\n.icon-energy,\n.icon-disc,\n.icon-cursor,\n.icon-cursor-move,\n.icon-crop,\n.icon-chemistry,\n.icon-speedometer,\n.icon-shield,\n.icon-screen-tablet,\n.icon-magic-wand,\n.icon-hourglass,\n.icon-graduation,\n.icon-ghost,\n.icon-game-controller,\n.icon-fire,\n.icon-eyeglass,\n.icon-envelope-open,\n.icon-envelope-letter,\n.icon-bell,\n.icon-badge,\n.icon-anchor,\n.icon-wallet,\n.icon-vector,\n.icon-speech,\n.icon-puzzle,\n.icon-printer,\n.icon-present,\n.icon-playlist,\n.icon-pin,\n.icon-picture,\n.icon-handbag,\n.icon-globe-alt,\n.icon-globe,\n.icon-folder-alt,\n.icon-folder,\n.icon-film,\n.icon-feed,\n.icon-drop,\n.icon-drawer,\n.icon-docs,\n.icon-doc,\n.icon-diamond,\n.icon-cup,\n.icon-calculator,\n.icon-bubbles,\n.icon-briefcase,\n.icon-book-open,\n.icon-basket-loaded,\n.icon-basket,\n.icon-bag,\n.icon-action-undo,\n.icon-action-redo,\n.icon-wrench,\n.icon-umbrella,\n.icon-trash,\n.icon-tag,\n.icon-support,\n.icon-frame,\n.icon-size-fullscreen,\n.icon-size-actual,\n.icon-shuffle,\n.icon-share-alt,\n.icon-share,\n.icon-rocket,\n.icon-question,\n.icon-pie-chart,\n.icon-pencil,\n.icon-note,\n.icon-loop,\n.icon-home,\n.icon-grid,\n.icon-graph,\n.icon-microphone,\n.icon-music-tone-alt,\n.icon-music-tone,\n.icon-earphones-alt,\n.icon-earphones,\n.icon-equalizer,\n.icon-like,\n.icon-dislike,\n.icon-control-start,\n.icon-control-rewind,\n.icon-control-play,\n.icon-control-pause,\n.icon-control-forward,\n.icon-control-end,\n.icon-volume-1,\n.icon-volume-2,\n.icon-volume-off,\n.icon-calendar,\n.icon-bulb,\n.icon-chart,\n.icon-ban,\n.icon-bubble,\n.icon-camrecorder,\n.icon-camera,\n.icon-cloud-download,\n.icon-cloud-upload,\n.icon-envelope,\n.icon-eye,\n.icon-flag,\n.icon-heart,\n.icon-info,\n.icon-key,\n.icon-link,\n.icon-lock,\n.icon-lock-open,\n.icon-magnifier,\n.icon-magnifier-add,\n.icon-magnifier-remove,\n.icon-paper-clip,\n.icon-paper-plane,\n.icon-power,\n.icon-refresh,\n.icon-reload,\n.icon-settings,\n.icon-star,\n.icon-symbol-female,\n.icon-symbol-male,\n.icon-target,\n.icon-credit-card,\n.icon-paypal,\n.icon-social-tumblr,\n.icon-social-twitter,\n.icon-social-facebook,\n.icon-social-instagram,\n.icon-social-linkedin,\n.icon-social-pinterest,\n.icon-social-github,\n.icon-social-google,\n.icon-social-reddit,\n.icon-social-skype,\n.icon-social-dribbble,\n.icon-social-behance,\n.icon-social-foursqare,\n.icon-social-soundcloud,\n.icon-social-spotify,\n.icon-social-stumbleupon,\n.icon-social-youtube,\n.icon-social-dropbox,\n.icon-social-vkontakte,\n.icon-social-steam {\n  font-family: 'simple-line-icons';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-user:before {\n  content: \"\\E005\";\n}\n.icon-people:before {\n  content: \"\\E001\";\n}\n.icon-user-female:before {\n  content: \"\\E000\";\n}\n.icon-user-follow:before {\n  content: \"\\E002\";\n}\n.icon-user-following:before {\n  content: \"\\E003\";\n}\n.icon-user-unfollow:before {\n  content: \"\\E004\";\n}\n.icon-login:before {\n  content: \"\\E066\";\n}\n.icon-logout:before {\n  content: \"\\E065\";\n}\n.icon-emotsmile:before {\n  content: \"\\E021\";\n}\n.icon-phone:before {\n  content: \"\\E600\";\n}\n.icon-call-end:before {\n  content: \"\\E048\";\n}\n.icon-call-in:before {\n  content: \"\\E047\";\n}\n.icon-call-out:before {\n  content: \"\\E046\";\n}\n.icon-map:before {\n  content: \"\\E033\";\n}\n.icon-location-pin:before {\n  content: \"\\E096\";\n}\n.icon-direction:before {\n  content: \"\\E042\";\n}\n.icon-directions:before {\n  content: \"\\E041\";\n}\n.icon-compass:before {\n  content: \"\\E045\";\n}\n.icon-layers:before {\n  content: \"\\E034\";\n}\n.icon-menu:before {\n  content: \"\\E601\";\n}\n.icon-list:before {\n  content: \"\\E067\";\n}\n.icon-options-vertical:before {\n  content: \"\\E602\";\n}\n.icon-options:before {\n  content: \"\\E603\";\n}\n.icon-arrow-down:before {\n  content: \"\\E604\";\n}\n.icon-arrow-left:before {\n  content: \"\\E605\";\n}\n.icon-arrow-right:before {\n  content: \"\\E606\";\n}\n.icon-arrow-up:before {\n  content: \"\\E607\";\n}\n.icon-arrow-up-circle:before {\n  content: \"\\E078\";\n}\n.icon-arrow-left-circle:before {\n  content: \"\\E07A\";\n}\n.icon-arrow-right-circle:before {\n  content: \"\\E079\";\n}\n.icon-arrow-down-circle:before {\n  content: \"\\E07B\";\n}\n.icon-check:before {\n  content: \"\\E080\";\n}\n.icon-clock:before {\n  content: \"\\E081\";\n}\n.icon-plus:before {\n  content: \"\\E095\";\n}\n.icon-minus:before {\n  content: \"\\E615\";\n}\n.icon-close:before {\n  content: \"\\E082\";\n}\n.icon-event:before {\n  content: \"\\E619\";\n}\n.icon-exclamation:before {\n  content: \"\\E617\";\n}\n.icon-organization:before {\n  content: \"\\E616\";\n}\n.icon-trophy:before {\n  content: \"\\E006\";\n}\n.icon-screen-smartphone:before {\n  content: \"\\E010\";\n}\n.icon-screen-desktop:before {\n  content: \"\\E011\";\n}\n.icon-plane:before {\n  content: \"\\E012\";\n}\n.icon-notebook:before {\n  content: \"\\E013\";\n}\n.icon-mustache:before {\n  content: \"\\E014\";\n}\n.icon-mouse:before {\n  content: \"\\E015\";\n}\n.icon-magnet:before {\n  content: \"\\E016\";\n}\n.icon-energy:before {\n  content: \"\\E020\";\n}\n.icon-disc:before {\n  content: \"\\E022\";\n}\n.icon-cursor:before {\n  content: \"\\E06E\";\n}\n.icon-cursor-move:before {\n  content: \"\\E023\";\n}\n.icon-crop:before {\n  content: \"\\E024\";\n}\n.icon-chemistry:before {\n  content: \"\\E026\";\n}\n.icon-speedometer:before {\n  content: \"\\E007\";\n}\n.icon-shield:before {\n  content: \"\\E00E\";\n}\n.icon-screen-tablet:before {\n  content: \"\\E00F\";\n}\n.icon-magic-wand:before {\n  content: \"\\E017\";\n}\n.icon-hourglass:before {\n  content: \"\\E018\";\n}\n.icon-graduation:before {\n  content: \"\\E019\";\n}\n.icon-ghost:before {\n  content: \"\\E01A\";\n}\n.icon-game-controller:before {\n  content: \"\\E01B\";\n}\n.icon-fire:before {\n  content: \"\\E01C\";\n}\n.icon-eyeglass:before {\n  content: \"\\E01D\";\n}\n.icon-envelope-open:before {\n  content: \"\\E01E\";\n}\n.icon-envelope-letter:before {\n  content: \"\\E01F\";\n}\n.icon-bell:before {\n  content: \"\\E027\";\n}\n.icon-badge:before {\n  content: \"\\E028\";\n}\n.icon-anchor:before {\n  content: \"\\E029\";\n}\n.icon-wallet:before {\n  content: \"\\E02A\";\n}\n.icon-vector:before {\n  content: \"\\E02B\";\n}\n.icon-speech:before {\n  content: \"\\E02C\";\n}\n.icon-puzzle:before {\n  content: \"\\E02D\";\n}\n.icon-printer:before {\n  content: \"\\E02E\";\n}\n.icon-present:before {\n  content: \"\\E02F\";\n}\n.icon-playlist:before {\n  content: \"\\E030\";\n}\n.icon-pin:before {\n  content: \"\\E031\";\n}\n.icon-picture:before {\n  content: \"\\E032\";\n}\n.icon-handbag:before {\n  content: \"\\E035\";\n}\n.icon-globe-alt:before {\n  content: \"\\E036\";\n}\n.icon-globe:before {\n  content: \"\\E037\";\n}\n.icon-folder-alt:before {\n  content: \"\\E039\";\n}\n.icon-folder:before {\n  content: \"\\E089\";\n}\n.icon-film:before {\n  content: \"\\E03A\";\n}\n.icon-feed:before {\n  content: \"\\E03B\";\n}\n.icon-drop:before {\n  content: \"\\E03E\";\n}\n.icon-drawer:before {\n  content: \"\\E03F\";\n}\n.icon-docs:before {\n  content: \"\\E040\";\n}\n.icon-doc:before {\n  content: \"\\E085\";\n}\n.icon-diamond:before {\n  content: \"\\E043\";\n}\n.icon-cup:before {\n  content: \"\\E044\";\n}\n.icon-calculator:before {\n  content: \"\\E049\";\n}\n.icon-bubbles:before {\n  content: \"\\E04A\";\n}\n.icon-briefcase:before {\n  content: \"\\E04B\";\n}\n.icon-book-open:before {\n  content: \"\\E04C\";\n}\n.icon-basket-loaded:before {\n  content: \"\\E04D\";\n}\n.icon-basket:before {\n  content: \"\\E04E\";\n}\n.icon-bag:before {\n  content: \"\\E04F\";\n}\n.icon-action-undo:before {\n  content: \"\\E050\";\n}\n.icon-action-redo:before {\n  content: \"\\E051\";\n}\n.icon-wrench:before {\n  content: \"\\E052\";\n}\n.icon-umbrella:before {\n  content: \"\\E053\";\n}\n.icon-trash:before {\n  content: \"\\E054\";\n}\n.icon-tag:before {\n  content: \"\\E055\";\n}\n.icon-support:before {\n  content: \"\\E056\";\n}\n.icon-frame:before {\n  content: \"\\E038\";\n}\n.icon-size-fullscreen:before {\n  content: \"\\E057\";\n}\n.icon-size-actual:before {\n  content: \"\\E058\";\n}\n.icon-shuffle:before {\n  content: \"\\E059\";\n}\n.icon-share-alt:before {\n  content: \"\\E05A\";\n}\n.icon-share:before {\n  content: \"\\E05B\";\n}\n.icon-rocket:before {\n  content: \"\\E05C\";\n}\n.icon-question:before {\n  content: \"\\E05D\";\n}\n.icon-pie-chart:before {\n  content: \"\\E05E\";\n}\n.icon-pencil:before {\n  content: \"\\E05F\";\n}\n.icon-note:before {\n  content: \"\\E060\";\n}\n.icon-loop:before {\n  content: \"\\E064\";\n}\n.icon-home:before {\n  content: \"\\E069\";\n}\n.icon-grid:before {\n  content: \"\\E06A\";\n}\n.icon-graph:before {\n  content: \"\\E06B\";\n}\n.icon-microphone:before {\n  content: \"\\E063\";\n}\n.icon-music-tone-alt:before {\n  content: \"\\E061\";\n}\n.icon-music-tone:before {\n  content: \"\\E062\";\n}\n.icon-earphones-alt:before {\n  content: \"\\E03C\";\n}\n.icon-earphones:before {\n  content: \"\\E03D\";\n}\n.icon-equalizer:before {\n  content: \"\\E06C\";\n}\n.icon-like:before {\n  content: \"\\E068\";\n}\n.icon-dislike:before {\n  content: \"\\E06D\";\n}\n.icon-control-start:before {\n  content: \"\\E06F\";\n}\n.icon-control-rewind:before {\n  content: \"\\E070\";\n}\n.icon-control-play:before {\n  content: \"\\E071\";\n}\n.icon-control-pause:before {\n  content: \"\\E072\";\n}\n.icon-control-forward:before {\n  content: \"\\E073\";\n}\n.icon-control-end:before {\n  content: \"\\E074\";\n}\n.icon-volume-1:before {\n  content: \"\\E09F\";\n}\n.icon-volume-2:before {\n  content: \"\\E0A0\";\n}\n.icon-volume-off:before {\n  content: \"\\E0A1\";\n}\n.icon-calendar:before {\n  content: \"\\E075\";\n}\n.icon-bulb:before {\n  content: \"\\E076\";\n}\n.icon-chart:before {\n  content: \"\\E077\";\n}\n.icon-ban:before {\n  content: \"\\E07C\";\n}\n.icon-bubble:before {\n  content: \"\\E07D\";\n}\n.icon-camrecorder:before {\n  content: \"\\E07E\";\n}\n.icon-camera:before {\n  content: \"\\E07F\";\n}\n.icon-cloud-download:before {\n  content: \"\\E083\";\n}\n.icon-cloud-upload:before {\n  content: \"\\E084\";\n}\n.icon-envelope:before {\n  content: \"\\E086\";\n}\n.icon-eye:before {\n  content: \"\\E087\";\n}\n.icon-flag:before {\n  content: \"\\E088\";\n}\n.icon-heart:before {\n  content: \"\\E08A\";\n}\n.icon-info:before {\n  content: \"\\E08B\";\n}\n.icon-key:before {\n  content: \"\\E08C\";\n}\n.icon-link:before {\n  content: \"\\E08D\";\n}\n.icon-lock:before {\n  content: \"\\E08E\";\n}\n.icon-lock-open:before {\n  content: \"\\E08F\";\n}\n.icon-magnifier:before {\n  content: \"\\E090\";\n}\n.icon-magnifier-add:before {\n  content: \"\\E091\";\n}\n.icon-magnifier-remove:before {\n  content: \"\\E092\";\n}\n.icon-paper-clip:before {\n  content: \"\\E093\";\n}\n.icon-paper-plane:before {\n  content: \"\\E094\";\n}\n.icon-power:before {\n  content: \"\\E097\";\n}\n.icon-refresh:before {\n  content: \"\\E098\";\n}\n.icon-reload:before {\n  content: \"\\E099\";\n}\n.icon-settings:before {\n  content: \"\\E09A\";\n}\n.icon-star:before {\n  content: \"\\E09B\";\n}\n.icon-symbol-female:before {\n  content: \"\\E09C\";\n}\n.icon-symbol-male:before {\n  content: \"\\E09D\";\n}\n.icon-target:before {\n  content: \"\\E09E\";\n}\n.icon-credit-card:before {\n  content: \"\\E025\";\n}\n.icon-paypal:before {\n  content: \"\\E608\";\n}\n.icon-social-tumblr:before {\n  content: \"\\E00A\";\n}\n.icon-social-twitter:before {\n  content: \"\\E009\";\n}\n.icon-social-facebook:before {\n  content: \"\\E00B\";\n}\n.icon-social-instagram:before {\n  content: \"\\E609\";\n}\n.icon-social-linkedin:before {\n  content: \"\\E60A\";\n}\n.icon-social-pinterest:before {\n  content: \"\\E60B\";\n}\n.icon-social-github:before {\n  content: \"\\E60C\";\n}\n.icon-social-google:before {\n  content: \"\\E60D\";\n}\n.icon-social-reddit:before {\n  content: \"\\E60E\";\n}\n.icon-social-skype:before {\n  content: \"\\E60F\";\n}\n.icon-social-dribbble:before {\n  content: \"\\E00D\";\n}\n.icon-social-behance:before {\n  content: \"\\E610\";\n}\n.icon-social-foursqare:before {\n  content: \"\\E611\";\n}\n.icon-social-soundcloud:before {\n  content: \"\\E612\";\n}\n.icon-social-spotify:before {\n  content: \"\\E613\";\n}\n.icon-social-stumbleupon:before {\n  content: \"\\E614\";\n}\n.icon-social-youtube:before {\n  content: \"\\E008\";\n}\n.icon-social-dropbox:before {\n  content: \"\\E00C\";\n}\n.icon-social-vkontakte:before {\n  content: \"\\E618\";\n}\n.icon-social-steam:before {\n  content: \"\\E620\";\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1424:
+/***/ 1534:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1425);
+var content = __webpack_require__(1535);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("c9ed49ca", content, false, {});
+var update = __webpack_require__(26)("37e98bd8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./buttons.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js?indentedSyntax!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./buttons.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +70,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1425:
+/***/ 1535:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,30 +78,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*\n* $ubtn prefix (reserved)\n*\n* This prefix stands for Unicorn Button - ubtn\n* We provide a prefix to the Sass Variables to\n* prevent namespace collisions that could occur if\n* you import buttons as part of your Sass build process.\n* We kindly ask you not to use the prefix $ubtn in your project\n* in order to avoid possilbe name conflicts. Thanks!\n*/\n/*\n* Button Namespace (ex .button or .btn)\n*\n*/\n/*\n* Button Defaults\n*\n* Some default settings that are used throughout the button library.\n* Changes to these settings will be picked up by all of the other modules.\n* The colors used here are the default colors for the base button (gray).\n* The font size and height are used to set the base size for the buttons.\n* The size values will be used to calculate the larger and smaller button sizes.\n*/\n/*\n* Button Colors\n*\n* $ubtn-colors is used to generate the different button colors.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, background, color)\n* The class is generated using the name: (ex .button-primary)\n*/\n/*\n* Button Shapes\n*\n* $ubtn-shapes is used to generate the different button shapes.\n* Edit or add shapes to the list below and recompile.\n* Each block contains the (name, border-radius).\n* The class is generated using the name: (ex .button-square).\n*/\n/*\n* Button Sizes\n*\n* $ubtn-sizes is used to generate the different button sizes.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, size multiplier).\n* The class is generated using the name: (ex .button-giant).\n*/\n/*! @license\n*\n* Buttons\n* Copyright 2012-2014 Alex Wolfe and Rob Levin\n*\n* Licensed under the Apache License, Version 2.0 (the \"License\");\n* you may not use this file except in compliance with the License.\n* You may obtain a copy of the License at\n*\n*        http://www.apache.org/licenses/LICENSE-2.0\n*\n* Unless required by applicable law or agreed to in writing, software\n* distributed under the License is distributed on an \"AS IS\" BASIS,\n* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n* See the License for the specific language governing permissions and\n* limitations under the License.\n*/\n/*\n* Compass (optional)\n*\n* We recommend the use of autoprefixer instead of Compass\n* when using buttons. However, buttons does support Compass.\n* simply change $ubtn-use-compass to true and uncomment the\n* @import 'compass' code below to use Compass.\n*/\n/*\n* Required Files\n*\n* These files include the variables and options\n* and base css styles that are required to generate buttons.\n*/\n/*\n* $ubtn prefix (reserved)\n*\n* This prefix stands for Unicorn Button - ubtn\n* We provide a prefix to the Sass Variables to\n* prevent namespace collisions that could occur if\n* you import buttons as part of your Sass build process.\n* We kindly ask you not to use the prefix $ubtn in your project\n* in order to avoid possilbe name conflicts. Thanks!\n*/\n/*\n* Button Namespace (ex .button or .btn)\n*\n*/\n/*\n* Button Defaults\n*\n* Some default settings that are used throughout the button library.\n* Changes to these settings will be picked up by all of the other modules.\n* The colors used here are the default colors for the base button (gray).\n* The font size and height are used to set the base size for the buttons.\n* The size values will be used to calculate the larger and smaller button sizes.\n*/\n/*\n* Button Colors\n*\n* $ubtn-colors is used to generate the different button colors.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, background, color)\n* The class is generated using the name: (ex .button-primary)\n*/\n/*\n* Button Shapes\n*\n* $ubtn-shapes is used to generate the different button shapes.\n* Edit or add shapes to the list below and recompile.\n* Each block contains the (name, border-radius).\n* The class is generated using the name: (ex .button-square).\n*/\n/*\n* Button Sizes\n*\n* $ubtn-sizes is used to generate the different button sizes.\n* Edit or add colors to the list below and recompile.\n* Each block contains the (name, size multiplier).\n* The class is generated using the name: (ex .button-giant).\n*/\n/*\n* Color Mixin\n*\n* Iterates through the list of colors and creates\n*\n*/\n/*\n* No Animation\n*\n* Sets animation property to none\n*/\n/*\n* Clearfix\n*\n* Clears floats inside the container\n*/\n/*\n* Base Button Style\n*\n* The default values for the .button class\n*/\n.button {\n  color: #666;\n  background-color: #DCDCDC;\n  border-color: #DCDCDC;\n  font-weight: regular;\n  font-size: 16px;\n  font-family: \"Open Sans\", sans-serif, verdana;\n  text-decoration: none;\n  text-align: center;\n  line-height: 40px;\n  height: 40px;\n  padding: 0 40px;\n  margin: 0;\n  display: inline-block;\n  appearance: none;\n  cursor: pointer;\n  border: none;\n  box-sizing: border-box;\n  transition-property: all;\n  transition-duration: .3s;\n  /*\n  * Disabled State\n  *\n  * The disabled state uses the class .disabled, is-disabled,\n  * and the form attribute disabled=\"disabled\".\n  * The use of !important is only added because this is a state\n  * that must be applied to all buttons when in a disabled state.\n  */\n}\n.button:visited {\n    color: #666;\n}\n.button:hover, .button:focus {\n    background-color: #e4e4e4;\n    text-decoration: none;\n    outline: none;\n}\n.button:active, .button.active, .button.is-active {\n    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);\n    text-decoration: none;\n    background-color: gainsboro;\n    border-color: #bdbdbd;\n    color: #c3c3c3;\n    transition-duration: 0s;\n    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);\n}\n.button.disabled, .button.is-disabled, .button:disabled {\n    top: 0 !important;\n    background: #EEE !important;\n    border: 1px solid #DDD !important;\n    text-shadow: 0 1px 1px white !important;\n    color: #CCC !important;\n    cursor: default !important;\n    appearance: none !important;\n    box-shadow: none !important;\n    opacity: .8 !important;\n}\n\n/*\n* Base Button Tyography\n*\n*/\n.button-uppercase {\n  text-transform: uppercase;\n}\n.button-lowercase {\n  text-transform: lowercase;\n}\n.button-capitalize {\n  text-transform: capitalize;\n}\n.button-small-caps {\n  font-variant: small-caps;\n}\n.button-icon-txt-large {\n  font-size: 36px !important;\n}\n\n/*\n* Base padding\n*\n*/\n.button-width-small {\n  padding: 0 10px !important;\n}\n\n/*\n* Base Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-primary,\n.button-primary-flat {\n  background-color: #4080bf;\n  border-color: #4080bf;\n  color: #FFF;\n}\n.button-primary:visited,\n  .button-primary-flat:visited {\n    color: #FFF;\n}\n.button-primary:hover, .button-primary:focus,\n  .button-primary-flat:hover,\n  .button-primary-flat:focus {\n    background-color: #6699cc;\n    border-color: #6699cc;\n    color: #FFF;\n}\n.button-primary:active, .button-primary.active, .button-primary.is-active,\n  .button-primary-flat:active,\n  .button-primary-flat.active,\n  .button-primary-flat.is-active {\n    background-color: #4d80b2;\n    border-color: #4d80b2;\n    color: #336699;\n}\n.button-plain,\n.button-plain-flat {\n  background-color: #FFF;\n  border-color: #FFF;\n  color: #1B9AF7;\n}\n.button-plain:visited,\n  .button-plain-flat:visited {\n    color: #1B9AF7;\n}\n.button-plain:hover, .button-plain:focus,\n  .button-plain-flat:hover,\n  .button-plain-flat:focus {\n    background-color: white;\n    border-color: white;\n    color: #1B9AF7;\n}\n.button-plain:active, .button-plain.active, .button-plain.is-active,\n  .button-plain-flat:active,\n  .button-plain-flat.active,\n  .button-plain-flat.is-active {\n    background-color: white;\n    border-color: white;\n    color: #e6e6e6;\n}\n.button-inverse,\n.button-inverse-flat {\n  background-color: #222;\n  border-color: #222;\n  color: #EEE;\n}\n.button-inverse:visited,\n  .button-inverse-flat:visited {\n    color: #EEE;\n}\n.button-inverse:hover, .button-inverse:focus,\n  .button-inverse-flat:hover,\n  .button-inverse-flat:focus {\n    background-color: #3c3c3c;\n    border-color: #3c3c3c;\n    color: #EEE;\n}\n.button-inverse:active, .button-inverse.active, .button-inverse.is-active,\n  .button-inverse-flat:active,\n  .button-inverse-flat.active,\n  .button-inverse-flat.is-active {\n    background-color: #222222;\n    border-color: #222222;\n    color: #090909;\n}\n.button-action,\n.button-action-flat {\n  background-color: #4FC1E9;\n  border-color: #4FC1E9;\n  color: #FFF;\n}\n.button-action:visited,\n  .button-action-flat:visited {\n    color: #FFF;\n}\n.button-action:hover, .button-action:focus,\n  .button-action-flat:hover,\n  .button-action-flat:focus {\n    background-color: #7cd1ef;\n    border-color: #7cd1ef;\n    color: #FFF;\n}\n.button-action:active, .button-action.active, .button-action.is-active,\n  .button-action-flat:active,\n  .button-action-flat.active,\n  .button-action-flat.is-active {\n    background-color: #59bcdf;\n    border-color: #59bcdf;\n    color: #22b1e3;\n}\n.button-highlight,\n.button-highlight-flat {\n  background-color: #FFB65F;\n  border-color: #FFB65F;\n  color: #FFF;\n}\n.button-highlight:visited,\n  .button-highlight-flat:visited {\n    color: #FFF;\n}\n.button-highlight:hover, .button-highlight:focus,\n  .button-highlight-flat:hover,\n  .button-highlight-flat:focus {\n    background-color: #ffcd92;\n    border-color: #ffcd92;\n    color: #FFF;\n}\n.button-highlight:active, .button-highlight.active, .button-highlight.is-active,\n  .button-highlight-flat:active,\n  .button-highlight-flat.active,\n  .button-highlight-flat.is-active {\n    background-color: #f7b567;\n    border-color: #f7b567;\n    color: #ff9f2c;\n}\n.button-caution,\n.button-caution-flat {\n  background-color: #FB8678;\n  border-color: #FB8678;\n  color: #FFF;\n}\n.button-caution:visited,\n  .button-caution-flat:visited {\n    color: #FFF;\n}\n.button-caution:hover, .button-caution:focus,\n  .button-caution-flat:hover,\n  .button-caution-flat:focus {\n    background-color: #fcb2aa;\n    border-color: #fcb2aa;\n    color: #FFF;\n}\n.button-caution:active, .button-caution.active, .button-caution.is-active,\n  .button-caution-flat:active,\n  .button-caution-flat.active,\n  .button-caution-flat.is-active {\n    background-color: #f48b7f;\n    border-color: #f48b7f;\n    color: #fa5a46;\n}\n.button-royal,\n.button-royal-flat {\n  background-color: #22D69D;\n  border-color: #22D69D;\n  color: #FFF;\n}\n.button-royal:visited,\n  .button-royal-flat:visited {\n    color: #FFF;\n}\n.button-royal:hover, .button-royal:focus,\n  .button-royal-flat:hover,\n  .button-royal-flat:focus {\n    background-color: #49e2b2;\n    border-color: #49e2b2;\n    color: #FFF;\n}\n.button-royal:active, .button-royal.active, .button-royal.is-active,\n  .button-royal-flat:active,\n  .button-royal-flat.active,\n  .button-royal-flat.is-active {\n    background-color: #2eca98;\n    border-color: #2eca98;\n    color: #1baa7d;\n}\n\n/*\n* Base Layout Styles\n*\n* Very Miminal Layout Styles\n*/\n.button-block,\n.button-stacked {\n  display: block;\n  width: 100%;\n}\n\n/*\n* Button Types (optional)\n*\n* All of the files below represent the various button\n* types (including shapes & sizes). None of these files\n* are required. Simple remove the uneeded type below and\n* the button type will be excluded from the final build\n*/\n/*\n* Button Shapes\n*\n* This file creates the various button shapes\n* (ex. Circle, Rounded, Pill)\n*/\n.button-square {\n  border-radius: 0;\n}\n.button-box {\n  border-radius: 10px;\n}\n.button-rounded {\n  border-radius: 4px;\n}\n.button-pill {\n  border-radius: 200px;\n}\n.button-circle {\n  border-radius: 100%;\n}\n\n/*\n* Size Adjustment for equal height & widht buttons\n*\n* Remove padding and set a fixed width.\n*/\n.button-circle,\n.button-box,\n.button-square {\n  padding: 0 !important;\n  width: 40px;\n}\n.button-circle.button-giant,\n  .button-box.button-giant,\n  .button-square.button-giant {\n    width: 70px;\n}\n.button-circle.button-jumbo,\n  .button-box.button-jumbo,\n  .button-square.button-jumbo {\n    width: 60px;\n}\n.button-circle.button-large,\n  .button-box.button-large,\n  .button-square.button-large {\n    width: 50px;\n}\n.button-circle.button-normal,\n  .button-box.button-normal,\n  .button-square.button-normal {\n    width: 40px;\n}\n.button-circle.button-small,\n  .button-box.button-small,\n  .button-square.button-small {\n    width: 30px;\n}\n.button-circle.button-tiny,\n  .button-box.button-tiny,\n  .button-square.button-tiny {\n    width: 24px;\n}\n\n/*\n* Border Buttons\n*\n* These buttons have no fill they only have a\n* border to define their hit target.\n*/\n.button-border, .button-border-thin, .button-border-thick {\n  background: none;\n  border-width: 2px;\n  border-style: solid;\n  line-height: 36px;\n}\n.button-border:hover, .button-border-thin:hover, .button-border-thick:hover {\n    background-color: rgba(246, 246, 246, 0.9);\n}\n.button-border:active, .button-border-thin:active, .button-border-thick:active, .button-border.active, .active.button-border-thin, .active.button-border-thick, .button-border.is-active, .is-active.button-border-thin, .is-active.button-border-thick {\n    box-shadow: none;\n    text-shadow: none;\n    transition-property: all;\n    transition-duration: .3s;\n}\n\n/*\n* Border Optional Sizes\n*\n* A slight variation in border thickness\n*/\n.button-border-thin {\n  border-width: 1px;\n}\n.button-border-thick {\n  border-width: 3px;\n}\n\n/*\n* Border Button Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-border, .button-border-thin, .button-border-thick,\n.button-border-thin,\n.button-border-thick {\n  /*\n  * Border Button Size Adjustment\n  *\n  * The line-height must be adjusted to compinsate for\n  * the width of the border.\n  */\n}\n.button-border.button-primary, .button-primary.button-border-thin, .button-primary.button-border-thick,\n  .button-border-thin.button-primary,\n  .button-border-thick.button-primary {\n    color: #4080bf;\n}\n.button-border.button-primary:hover, .button-primary.button-border-thin:hover, .button-primary.button-border-thick:hover, .button-border.button-primary:focus, .button-primary.button-border-thin:focus, .button-primary.button-border-thick:focus,\n    .button-border-thin.button-primary:hover,\n    .button-border-thin.button-primary:focus,\n    .button-border-thick.button-primary:hover,\n    .button-border-thick.button-primary:focus {\n      background-color: rgba(102, 153, 204, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-primary:active, .button-primary.button-border-thin:active, .button-primary.button-border-thick:active, .button-border.button-primary.active, .button-primary.active.button-border-thin, .button-primary.active.button-border-thick, .button-border.button-primary.is-active, .button-primary.is-active.button-border-thin, .button-primary.is-active.button-border-thick,\n    .button-border-thin.button-primary:active,\n    .button-border-thin.button-primary.active,\n    .button-border-thin.button-primary.is-active,\n    .button-border-thick.button-primary:active,\n    .button-border-thick.button-primary.active,\n    .button-border-thick.button-primary.is-active {\n      background-color: rgba(77, 128, 178, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-plain, .button-plain.button-border-thin, .button-plain.button-border-thick,\n  .button-border-thin.button-plain,\n  .button-border-thick.button-plain {\n    color: #FFF;\n}\n.button-border.button-plain:hover, .button-plain.button-border-thin:hover, .button-plain.button-border-thick:hover, .button-border.button-plain:focus, .button-plain.button-border-thin:focus, .button-plain.button-border-thick:focus,\n    .button-border-thin.button-plain:hover,\n    .button-border-thin.button-plain:focus,\n    .button-border-thick.button-plain:hover,\n    .button-border-thick.button-plain:focus {\n      background-color: rgba(255, 255, 255, 0.9);\n      color: rgba(27, 154, 247, 0.9);\n}\n.button-border.button-plain:active, .button-plain.button-border-thin:active, .button-plain.button-border-thick:active, .button-border.button-plain.active, .button-plain.active.button-border-thin, .button-plain.active.button-border-thick, .button-border.button-plain.is-active, .button-plain.is-active.button-border-thin, .button-plain.is-active.button-border-thick,\n    .button-border-thin.button-plain:active,\n    .button-border-thin.button-plain.active,\n    .button-border-thin.button-plain.is-active,\n    .button-border-thick.button-plain:active,\n    .button-border-thick.button-plain.active,\n    .button-border-thick.button-plain.is-active {\n      background-color: rgba(255, 255, 255, 0.7);\n      color: rgba(27, 154, 247, 0.5);\n      opacity: .3;\n}\n.button-border.button-inverse, .button-inverse.button-border-thin, .button-inverse.button-border-thick,\n  .button-border-thin.button-inverse,\n  .button-border-thick.button-inverse {\n    color: #222;\n}\n.button-border.button-inverse:hover, .button-inverse.button-border-thin:hover, .button-inverse.button-border-thick:hover, .button-border.button-inverse:focus, .button-inverse.button-border-thin:focus, .button-inverse.button-border-thick:focus,\n    .button-border-thin.button-inverse:hover,\n    .button-border-thin.button-inverse:focus,\n    .button-border-thick.button-inverse:hover,\n    .button-border-thick.button-inverse:focus {\n      background-color: rgba(60, 60, 60, 0.9);\n      color: rgba(238, 238, 238, 0.9);\n}\n.button-border.button-inverse:active, .button-inverse.button-border-thin:active, .button-inverse.button-border-thick:active, .button-border.button-inverse.active, .button-inverse.active.button-border-thin, .button-inverse.active.button-border-thick, .button-border.button-inverse.is-active, .button-inverse.is-active.button-border-thin, .button-inverse.is-active.button-border-thick,\n    .button-border-thin.button-inverse:active,\n    .button-border-thin.button-inverse.active,\n    .button-border-thin.button-inverse.is-active,\n    .button-border-thick.button-inverse:active,\n    .button-border-thick.button-inverse.active,\n    .button-border-thick.button-inverse.is-active {\n      background-color: rgba(34, 34, 34, 0.7);\n      color: rgba(238, 238, 238, 0.5);\n      opacity: .3;\n}\n.button-border.button-action, .button-action.button-border-thin, .button-action.button-border-thick,\n  .button-border-thin.button-action,\n  .button-border-thick.button-action {\n    color: #4FC1E9;\n}\n.button-border.button-action:hover, .button-action.button-border-thin:hover, .button-action.button-border-thick:hover, .button-border.button-action:focus, .button-action.button-border-thin:focus, .button-action.button-border-thick:focus,\n    .button-border-thin.button-action:hover,\n    .button-border-thin.button-action:focus,\n    .button-border-thick.button-action:hover,\n    .button-border-thick.button-action:focus {\n      background-color: rgba(124, 209, 239, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-action:active, .button-action.button-border-thin:active, .button-action.button-border-thick:active, .button-border.button-action.active, .button-action.active.button-border-thin, .button-action.active.button-border-thick, .button-border.button-action.is-active, .button-action.is-active.button-border-thin, .button-action.is-active.button-border-thick,\n    .button-border-thin.button-action:active,\n    .button-border-thin.button-action.active,\n    .button-border-thin.button-action.is-active,\n    .button-border-thick.button-action:active,\n    .button-border-thick.button-action.active,\n    .button-border-thick.button-action.is-active {\n      background-color: rgba(89, 188, 223, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-highlight, .button-highlight.button-border-thin, .button-highlight.button-border-thick,\n  .button-border-thin.button-highlight,\n  .button-border-thick.button-highlight {\n    color: #FFB65F;\n}\n.button-border.button-highlight:hover, .button-highlight.button-border-thin:hover, .button-highlight.button-border-thick:hover, .button-border.button-highlight:focus, .button-highlight.button-border-thin:focus, .button-highlight.button-border-thick:focus,\n    .button-border-thin.button-highlight:hover,\n    .button-border-thin.button-highlight:focus,\n    .button-border-thick.button-highlight:hover,\n    .button-border-thick.button-highlight:focus {\n      background-color: rgba(255, 205, 146, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-highlight:active, .button-highlight.button-border-thin:active, .button-highlight.button-border-thick:active, .button-border.button-highlight.active, .button-highlight.active.button-border-thin, .button-highlight.active.button-border-thick, .button-border.button-highlight.is-active, .button-highlight.is-active.button-border-thin, .button-highlight.is-active.button-border-thick,\n    .button-border-thin.button-highlight:active,\n    .button-border-thin.button-highlight.active,\n    .button-border-thin.button-highlight.is-active,\n    .button-border-thick.button-highlight:active,\n    .button-border-thick.button-highlight.active,\n    .button-border-thick.button-highlight.is-active {\n      background-color: rgba(247, 181, 103, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-caution, .button-caution.button-border-thin, .button-caution.button-border-thick,\n  .button-border-thin.button-caution,\n  .button-border-thick.button-caution {\n    color: #FB8678;\n}\n.button-border.button-caution:hover, .button-caution.button-border-thin:hover, .button-caution.button-border-thick:hover, .button-border.button-caution:focus, .button-caution.button-border-thin:focus, .button-caution.button-border-thick:focus,\n    .button-border-thin.button-caution:hover,\n    .button-border-thin.button-caution:focus,\n    .button-border-thick.button-caution:hover,\n    .button-border-thick.button-caution:focus {\n      background-color: rgba(252, 178, 170, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-caution:active, .button-caution.button-border-thin:active, .button-caution.button-border-thick:active, .button-border.button-caution.active, .button-caution.active.button-border-thin, .button-caution.active.button-border-thick, .button-border.button-caution.is-active, .button-caution.is-active.button-border-thin, .button-caution.is-active.button-border-thick,\n    .button-border-thin.button-caution:active,\n    .button-border-thin.button-caution.active,\n    .button-border-thin.button-caution.is-active,\n    .button-border-thick.button-caution:active,\n    .button-border-thick.button-caution.active,\n    .button-border-thick.button-caution.is-active {\n      background-color: rgba(244, 139, 127, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-royal, .button-royal.button-border-thin, .button-royal.button-border-thick,\n  .button-border-thin.button-royal,\n  .button-border-thick.button-royal {\n    color: #22D69D;\n}\n.button-border.button-royal:hover, .button-royal.button-border-thin:hover, .button-royal.button-border-thick:hover, .button-border.button-royal:focus, .button-royal.button-border-thin:focus, .button-royal.button-border-thick:focus,\n    .button-border-thin.button-royal:hover,\n    .button-border-thin.button-royal:focus,\n    .button-border-thick.button-royal:hover,\n    .button-border-thick.button-royal:focus {\n      background-color: rgba(73, 226, 178, 0.9);\n      color: rgba(255, 255, 255, 0.9);\n}\n.button-border.button-royal:active, .button-royal.button-border-thin:active, .button-royal.button-border-thick:active, .button-border.button-royal.active, .button-royal.active.button-border-thin, .button-royal.active.button-border-thick, .button-border.button-royal.is-active, .button-royal.is-active.button-border-thin, .button-royal.is-active.button-border-thick,\n    .button-border-thin.button-royal:active,\n    .button-border-thin.button-royal.active,\n    .button-border-thin.button-royal.is-active,\n    .button-border-thick.button-royal:active,\n    .button-border-thick.button-royal.active,\n    .button-border-thick.button-royal.is-active {\n      background-color: rgba(46, 202, 152, 0.7);\n      color: rgba(255, 255, 255, 0.5);\n      opacity: .3;\n}\n.button-border.button-giant, .button-giant.button-border-thin, .button-giant.button-border-thick,\n  .button-border-thin.button-giant,\n  .button-border-thick.button-giant {\n    line-height: 66px;\n}\n.button-border.button-jumbo, .button-jumbo.button-border-thin, .button-jumbo.button-border-thick,\n  .button-border-thin.button-jumbo,\n  .button-border-thick.button-jumbo {\n    line-height: 56px;\n}\n.button-border.button-large, .button-large.button-border-thin, .button-large.button-border-thick,\n  .button-border-thin.button-large,\n  .button-border-thick.button-large {\n    line-height: 46px;\n}\n.button-border.button-normal, .button-normal.button-border-thin, .button-normal.button-border-thick,\n  .button-border-thin.button-normal,\n  .button-border-thick.button-normal {\n    line-height: 36px;\n}\n.button-border.button-small, .button-small.button-border-thin, .button-small.button-border-thick,\n  .button-border-thin.button-small,\n  .button-border-thick.button-small {\n    line-height: 26px;\n}\n.button-border.button-tiny, .button-tiny.button-border-thin, .button-tiny.button-border-thick,\n  .button-border-thin.button-tiny,\n  .button-border-thick.button-tiny {\n    line-height: 20px;\n}\n\n/*\n* Border Buttons\n*\n* These buttons have no fill they only have a\n* border to define their hit target.\n*/\n.button-borderless {\n  background: none;\n  border: none;\n  padding: 0 8px !important;\n  color: #DCDCDC;\n  font-size: 20.8px;\n  font-weight: 200;\n  /*\n  * Borderless Button Colors\n  *\n  * Create colors for buttons\n  * (.button-primary, .button-secondary, etc.)\n  */\n  /*\n  * Borderles Size Adjustment\n  *\n  * The font-size must be large to compinsate for\n  * the lack of a hit target.\n  */\n}\n.button-borderless:hover, .button-borderless:focus {\n    background: none;\n}\n.button-borderless:active, .button-borderless.active, .button-borderless.is-active {\n    box-shadow: none;\n    text-shadow: none;\n    transition-property: all;\n    transition-duration: .3s;\n    opacity: .3;\n}\n.button-borderless.button-primary {\n    color: #4080bf;\n}\n.button-borderless.button-plain {\n    color: #FFF;\n}\n.button-borderless.button-inverse {\n    color: #222;\n}\n.button-borderless.button-action {\n    color: #4FC1E9;\n}\n.button-borderless.button-highlight {\n    color: #FFB65F;\n}\n.button-borderless.button-caution {\n    color: #FB8678;\n}\n.button-borderless.button-royal {\n    color: #22D69D;\n}\n.button-borderless.button-giant {\n    font-size: 36.4px;\n    height: 52.4px;\n    line-height: 52.4px;\n}\n.button-borderless.button-jumbo {\n    font-size: 31.2px;\n    height: 47.2px;\n    line-height: 47.2px;\n}\n.button-borderless.button-large {\n    font-size: 26px;\n    height: 42px;\n    line-height: 42px;\n}\n.button-borderless.button-normal {\n    font-size: 20.8px;\n    height: 36.8px;\n    line-height: 36.8px;\n}\n.button-borderless.button-small {\n    font-size: 15.6px;\n    height: 31.6px;\n    line-height: 31.6px;\n}\n.button-borderless.button-tiny {\n    font-size: 12.48px;\n    height: 28.48px;\n    line-height: 28.48px;\n}\n\n/*\n* Raised Buttons\n*\n* A classic looking button that offers\n* great depth and affordance.\n*/\n.button-raised {\n  border-color: #cfcfcf;\n  border-style: solid;\n  border-width: 1px;\n  line-height: 38px;\n  background: linear-gradient(#e4e4e4, #cfcfcf);\n  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);\n}\n.button-raised:hover, .button-raised:focus {\n    background: linear-gradient(to bottom, #f0f0f0, #cacaca);\n}\n.button-raised:active, .button-raised.active, .button-raised.is-active {\n    background: gainsboro;\n    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;\n}\n\n/*\n* Raised Button Colors\n*\n* Create colors for raised buttons\n*/\n.button-raised.button-primary {\n  border-color: #3a73ac;\n  background: linear-gradient(#538dc5, #3a73ac);\n}\n.button-raised.button-primary:hover, .button-raised.button-primary:focus {\n    background: linear-gradient(to bottom, #5f94c9, #376ea4);\n}\n.button-raised.button-primary:active, .button-raised.button-primary.active, .button-raised.button-primary.is-active {\n    border-color: #336699;\n    background: #4d80b2;\n}\n.button-raised.button-plain {\n  border-color: #f2f2f2;\n  background: linear-gradient(white, #f2f2f2);\n}\n.button-raised.button-plain:hover, .button-raised.button-plain:focus {\n    background: linear-gradient(to bottom, white, #ededed);\n}\n.button-raised.button-plain:active, .button-raised.button-plain.active, .button-raised.button-plain.is-active {\n    border-color: #e6e6e6;\n    background: white;\n}\n.button-raised.button-inverse {\n  border-color: #151515;\n  background: linear-gradient(#2f2f2f, #151515);\n}\n.button-raised.button-inverse:hover, .button-raised.button-inverse:focus {\n    background: linear-gradient(to bottom, #363636, #101010);\n}\n.button-raised.button-inverse:active, .button-raised.button-inverse.active, .button-raised.button-inverse.is-active {\n    border-color: #090909;\n    background: #222222;\n}\n.button-raised.button-action {\n  border-color: #38b9e6;\n  background: linear-gradient(#66c9ec, #38b9e6);\n}\n.button-raised.button-action:hover, .button-raised.button-action:focus {\n    background: linear-gradient(to bottom, #73ceee, #2fb6e5);\n}\n.button-raised.button-action:active, .button-raised.button-action.active, .button-raised.button-action.is-active {\n    border-color: #22b1e3;\n    background: #59bcdf;\n}\n.button-raised.button-highlight {\n  border-color: #ffaa46;\n  background: linear-gradient(#ffc279, #ffaa46);\n}\n.button-raised.button-highlight:hover, .button-raised.button-highlight:focus {\n    background: linear-gradient(to bottom, #ffc988, #ffa63b);\n}\n.button-raised.button-highlight:active, .button-raised.button-highlight.active, .button-raised.button-highlight.is-active {\n    border-color: #ff9f2c;\n    background: #f7b567;\n}\n.button-raised.button-caution {\n  border-color: #fa705f;\n  background: linear-gradient(#fc9c91, #fa705f);\n}\n.button-raised.button-caution:hover, .button-raised.button-caution:focus {\n    background: linear-gradient(to bottom, #fcaaa0, #fa6755);\n}\n.button-raised.button-caution:active, .button-raised.button-caution.active, .button-raised.button-caution.is-active {\n    border-color: #fa5a46;\n    background: #f48b7f;\n}\n.button-raised.button-royal {\n  border-color: #1fc08d;\n  background: linear-gradient(#33dfa8, #1fc08d);\n}\n.button-raised.button-royal:hover, .button-raised.button-royal:focus {\n    background: linear-gradient(to bottom, #40e1ae, #1db786);\n}\n.button-raised.button-royal:active, .button-raised.button-royal.active, .button-raised.button-royal.is-active {\n    border-color: #1baa7d;\n    background: #2eca98;\n}\n\n/*\n* 3D Buttons\n*\n* These buttons have a heavy three dimensional\n* style that mimics the visual appearance of a\n* real life button.\n*/\n.button-3d {\n  position: relative;\n  top: 0;\n  box-shadow: 0 7px 0 darkgray, 0 8px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d:hover, .button-3d:focus {\n    box-shadow: 0 7px 0 darkgray, 0 8px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d:active, .button-3d.active, .button-3d.is-active {\n    top: 5px;\n    transition-property: all;\n    transition-duration: .15s;\n    box-shadow: 0 2px 0 darkgray, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* 3D Button Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-3d.button-primary {\n  box-shadow: 0 7px 0 #336699, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-primary:hover, .button-3d.button-primary:focus {\n    box-shadow: 0 7px 0 #316191, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-primary:active, .button-3d.button-primary.active, .button-3d.button-primary.is-active {\n    box-shadow: 0 2px 0 #264d73, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-plain {\n  box-shadow: 0 7px 0 #e6e6e6, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-plain:hover, .button-3d.button-plain:focus {\n    box-shadow: 0 7px 0 #e0e0e0, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-plain:active, .button-3d.button-plain.active, .button-3d.button-plain.is-active {\n    box-shadow: 0 2px 0 #cccccc, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-inverse {\n  box-shadow: 0 7px 0 #090909, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-inverse:hover, .button-3d.button-inverse:focus {\n    box-shadow: 0 7px 0 #030303, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-inverse:active, .button-3d.button-inverse.active, .button-3d.button-inverse.is-active {\n    box-shadow: 0 2px 0 black, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-action {\n  box-shadow: 0 7px 0 #22b1e3, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-action:hover, .button-3d.button-action:focus {\n    box-shadow: 0 7px 0 #1cacdf, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-action:active, .button-3d.button-action.active, .button-3d.button-action.is-active {\n    box-shadow: 0 2px 0 #1790bb, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-highlight {\n  box-shadow: 0 7px 0 #ff9f2c, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-highlight:hover, .button-3d.button-highlight:focus {\n    box-shadow: 0 7px 0 #ff9a22, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-highlight:active, .button-3d.button-highlight.active, .button-3d.button-highlight.is-active {\n    box-shadow: 0 2px 0 #f88700, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-caution {\n  box-shadow: 0 7px 0 #fa5a46, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-caution:hover, .button-3d.button-caution:focus {\n    box-shadow: 0 7px 0 #f9513d, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-caution:active, .button-3d.button-caution.active, .button-3d.button-caution.is-active {\n    box-shadow: 0 2px 0 #f82d15, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n.button-3d.button-royal {\n  box-shadow: 0 7px 0 #1baa7d, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-royal:hover, .button-3d.button-royal:focus {\n    box-shadow: 0 7px 0 #1aa176, 0 8px 3px rgba(0, 0, 0, 0.3);\n}\n.button-3d.button-royal:active, .button-3d.button-royal.active, .button-3d.button-royal.is-active {\n    box-shadow: 0 2px 0 #147e5c, 0 3px 3px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* Glowing Buttons\n*\n* A pulse like glow that appears\n* rythmically around the edges of\n* a button.\n*/\n/*\n* Glow animation mixin for Compass users\n*\n*/\n/*\n* Glowing Keyframes\n*\n*/\n@keyframes glowing {\nfrom {\n    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(44, 154, 219, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3);\n}\n}\n\n/*\n* Glowing Keyframes for various colors\n*\n*/\n@keyframes glowing-primary {\nfrom {\n    box-shadow: 0 0 0 rgba(64, 128, 191, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(64, 128, 191, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(64, 128, 191, 0.3);\n}\n}\n@keyframes glowing-plain {\nfrom {\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);\n}\n}\n@keyframes glowing-inverse {\nfrom {\n    box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(34, 34, 34, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(34, 34, 34, 0.3);\n}\n}\n@keyframes glowing-action {\nfrom {\n    box-shadow: 0 0 0 rgba(79, 193, 233, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(79, 193, 233, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(79, 193, 233, 0.3);\n}\n}\n@keyframes glowing-highlight {\nfrom {\n    box-shadow: 0 0 0 rgba(255, 182, 95, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(255, 182, 95, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(255, 182, 95, 0.3);\n}\n}\n@keyframes glowing-caution {\nfrom {\n    box-shadow: 0 0 0 rgba(251, 134, 120, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(251, 134, 120, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(251, 134, 120, 0.3);\n}\n}\n@keyframes glowing-royal {\nfrom {\n    box-shadow: 0 0 0 rgba(34, 214, 157, 0.3);\n}\n50% {\n    box-shadow: 0 0 20px rgba(34, 214, 157, 0.8);\n}\nto {\n    box-shadow: 0 0 0 rgba(34, 214, 157, 0.3);\n}\n}\n\n/*\n* Glowing Buttons Base Styes\n*\n* A pulse like glow that appears\n* rythmically around the edges of\n* a button.\n*/\n.button-glow {\n  animation-duration: 3s;\n  animation-iteration-count: infinite;\n  animation-name: glowing;\n}\n.button-glow:active, .button-glow.active, .button-glow.is-active {\n    animation-name: none;\n}\n\n/*\n* Glowing Button Colors\n*\n* Create colors for glowing buttons\n*/\n.button-glow.button-primary {\n  animation-name: glowing-primary;\n}\n.button-glow.button-plain {\n  animation-name: glowing-plain;\n}\n.button-glow.button-inverse {\n  animation-name: glowing-inverse;\n}\n.button-glow.button-action {\n  animation-name: glowing-action;\n}\n.button-glow.button-highlight {\n  animation-name: glowing-highlight;\n}\n.button-glow.button-caution {\n  animation-name: glowing-caution;\n}\n.button-glow.button-royal {\n  animation-name: glowing-royal;\n}\n\n/*\n* Dropdown menu buttons\n*\n* A dropdown menu appears\n* when a button is pressed\n*/\n/*\n* Dropdown Container\n*\n*/\n.button-dropdown {\n  position: relative;\n  overflow: visible;\n  display: inline-block;\n}\n\n/*\n* Dropdown List Style\n*\n*/\n.button-dropdown-list {\n  display: none;\n  position: absolute;\n  padding: 0;\n  margin: 0;\n  top: 0;\n  left: 0;\n  z-index: 1000;\n  min-width: 100%;\n  list-style-type: none;\n  background: rgba(246, 246, 246, 0.95);\n  border-style: solid;\n  border-width: 1px;\n  border-color: #c3c3c3;\n  font-family: \"Open Sans\", sans-serif, verdana;\n  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);\n  border-radius: 3px;\n  box-sizing: border-box;\n  /*\n  * Dropdown Below\n  *\n  */\n  /*\n  * Dropdown Above\n  *\n  */\n}\n.button-dropdown-list.is-below {\n    top: 100%;\n    border-top: none;\n    border-radius: 0 0 3px 3px;\n}\n.button-dropdown-list.is-above {\n    bottom: 100%;\n    top: auto;\n    border-bottom: none;\n    border-radius: 3px 3px 0 0;\n    box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.2);\n}\n\n/*\n* Dropdown Buttons\n*\n*/\n.button-dropdown-list > li {\n  padding: 0;\n  margin: 0;\n  display: block;\n}\n.button-dropdown-list > li > a {\n    display: block;\n    line-height: 40px;\n    font-size: 12.8px;\n    padding: 5px 10px;\n    float: none;\n    color: #666;\n    text-decoration: none;\n}\n.button-dropdown-list > li > a:hover {\n      color: #5e5e5e;\n      background: #e4e4e4;\n      text-decoration: none;\n}\n.button-dropdown-divider {\n  border-top: 1px solid #d4d4d4;\n}\n\n/*\n* Dropdown Colors\n*\n* Create colors for buttons\n* (.button-primary, .button-secondary, etc.)\n*/\n.button-dropdown.button-dropdown-primary .button-dropdown-list {\n  background: rgba(64, 128, 191, 0.95);\n  border-color: #336699;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list .button-dropdown-divider {\n    border-color: #376ea4;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-primary .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #3a73ac;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list {\n  background: rgba(255, 255, 255, 0.95);\n  border-color: #e6e6e6;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list .button-dropdown-divider {\n    border-color: #ededed;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list > li > a {\n    color: #1B9AF7;\n}\n.button-dropdown.button-dropdown-plain .button-dropdown-list > li > a:hover {\n      color: #088ef0;\n      background: #f2f2f2;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list {\n  background: rgba(34, 34, 34, 0.95);\n  border-color: #090909;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list .button-dropdown-divider {\n    border-color: #101010;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list > li > a {\n    color: #EEE;\n}\n.button-dropdown.button-dropdown-inverse .button-dropdown-list > li > a:hover {\n      color: #e1e1e1;\n      background: #151515;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list {\n  background: rgba(79, 193, 233, 0.95);\n  border-color: #22b1e3;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list .button-dropdown-divider {\n    border-color: #2fb6e5;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-action .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #38b9e6;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list {\n  background: rgba(255, 182, 95, 0.95);\n  border-color: #ff9f2c;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list .button-dropdown-divider {\n    border-color: #ffa63b;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-highlight .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #ffaa46;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list {\n  background: rgba(251, 134, 120, 0.95);\n  border-color: #fa5a46;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list .button-dropdown-divider {\n    border-color: #fa6755;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-caution .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #fa705f;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list {\n  background: rgba(34, 214, 157, 0.95);\n  border-color: #1baa7d;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list .button-dropdown-divider {\n    border-color: #1db786;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list > li > a {\n    color: #FFF;\n}\n.button-dropdown.button-dropdown-royal .button-dropdown-list > li > a:hover {\n      color: #f2f2f2;\n      background: #1fc08d;\n}\n\n/*\n* Buton Groups\n*\n* A group of related buttons\n* displayed edge to edge\n*/\n.button-group {\n  position: relative;\n  display: inline-block;\n}\n.button-group:after {\n    content: \" \";\n    display: block;\n    clear: both;\n}\n.button-group .button,\n  .button-group .button-dropdown {\n    float: left;\n}\n.button-group .button:not(:first-child):not(:last-child),\n    .button-group .button-dropdown:not(:first-child):not(:last-child) {\n      border-radius: 0;\n      border-right: none;\n}\n.button-group .button:first-child,\n    .button-group .button-dropdown:first-child {\n      border-top-right-radius: 0;\n      border-bottom-right-radius: 0;\n      border-right: none;\n}\n.button-group .button:last-child,\n    .button-group .button-dropdown:last-child {\n      border-top-left-radius: 0;\n      border-bottom-left-radius: 0;\n}\n\n/*\n* Button Wrapper\n*\n* A wrap around effect to highlight\n* the shape of the button and offer\n* a subtle visual effect.\n*/\n.button-wrap {\n  border: 1px solid #e3e3e3;\n  display: inline-block;\n  padding: 9px;\n  background: linear-gradient(#f2f2f2, #FFF);\n  border-radius: 200px;\n  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);\n}\n\n/*\n* Long Shadow Buttons\n*\n* A visual effect adding a flat shadow to the text of a button\n*/\n/*\n* Long Shadow Function\n*\n* Loops $length times building a long shadow. Defaults downward right\n*/\n/*\n* LONG SHADOW MIXIN\n*\n*/\n/*\n* Shadow Right\n*\n*/\n.button-longshadow,\n.button-longshadow-right {\n  overflow: hidden;\n}\n.button-longshadow.button-primary,\n  .button-longshadow-right.button-primary {\n    text-shadow: 0px 0px #336699, 1px 1px #336699, 2px 2px #336699, 3px 3px #336699, 4px 4px #336699, 5px 5px #336699, 6px 6px #336699, 7px 7px #336699, 8px 8px #336699, 9px 9px #336699, 10px 10px #336699, 11px 11px #336699, 12px 12px #336699, 13px 13px #336699, 14px 14px #336699, 15px 15px #336699, 16px 16px #336699, 17px 17px #336699, 18px 18px #336699, 19px 19px #336699, 20px 20px #336699, 21px 21px #336699, 22px 22px #336699, 23px 23px #336699, 24px 24px #336699, 25px 25px #336699, 26px 26px #336699, 27px 27px #336699, 28px 28px #336699, 29px 29px #336699, 30px 30px #336699, 31px 31px #336699, 32px 32px #336699, 33px 33px #336699, 34px 34px #336699, 35px 35px #336699, 36px 36px #336699, 37px 37px #336699, 38px 38px #336699, 39px 39px #336699, 40px 40px #336699, 41px 41px #336699, 42px 42px #336699, 43px 43px #336699, 44px 44px #336699, 45px 45px #336699, 46px 46px #336699, 47px 47px #336699, 48px 48px #336699, 49px 49px #336699, 50px 50px #336699, 51px 51px #336699, 52px 52px #336699, 53px 53px #336699, 54px 54px #336699, 55px 55px #336699, 56px 56px #336699, 57px 57px #336699, 58px 58px #336699, 59px 59px #336699, 60px 60px #336699, 61px 61px #336699, 62px 62px #336699, 63px 63px #336699, 64px 64px #336699, 65px 65px #336699, 66px 66px #336699, 67px 67px #336699, 68px 68px #336699, 69px 69px #336699, 70px 70px #336699, 71px 71px #336699, 72px 72px #336699, 73px 73px #336699, 74px 74px #336699, 75px 75px #336699, 76px 76px #336699, 77px 77px #336699, 78px 78px #336699, 79px 79px #336699, 80px 80px #336699, 81px 81px #336699, 82px 82px #336699, 83px 83px #336699, 84px 84px #336699, 85px 85px #336699;\n}\n.button-longshadow.button-primary:active, .button-longshadow.button-primary.active, .button-longshadow.button-primary.is-active,\n    .button-longshadow-right.button-primary:active,\n    .button-longshadow-right.button-primary.active,\n    .button-longshadow-right.button-primary.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-plain,\n  .button-longshadow-right.button-plain {\n    text-shadow: 0px 0px #e6e6e6, 1px 1px #e6e6e6, 2px 2px #e6e6e6, 3px 3px #e6e6e6, 4px 4px #e6e6e6, 5px 5px #e6e6e6, 6px 6px #e6e6e6, 7px 7px #e6e6e6, 8px 8px #e6e6e6, 9px 9px #e6e6e6, 10px 10px #e6e6e6, 11px 11px #e6e6e6, 12px 12px #e6e6e6, 13px 13px #e6e6e6, 14px 14px #e6e6e6, 15px 15px #e6e6e6, 16px 16px #e6e6e6, 17px 17px #e6e6e6, 18px 18px #e6e6e6, 19px 19px #e6e6e6, 20px 20px #e6e6e6, 21px 21px #e6e6e6, 22px 22px #e6e6e6, 23px 23px #e6e6e6, 24px 24px #e6e6e6, 25px 25px #e6e6e6, 26px 26px #e6e6e6, 27px 27px #e6e6e6, 28px 28px #e6e6e6, 29px 29px #e6e6e6, 30px 30px #e6e6e6, 31px 31px #e6e6e6, 32px 32px #e6e6e6, 33px 33px #e6e6e6, 34px 34px #e6e6e6, 35px 35px #e6e6e6, 36px 36px #e6e6e6, 37px 37px #e6e6e6, 38px 38px #e6e6e6, 39px 39px #e6e6e6, 40px 40px #e6e6e6, 41px 41px #e6e6e6, 42px 42px #e6e6e6, 43px 43px #e6e6e6, 44px 44px #e6e6e6, 45px 45px #e6e6e6, 46px 46px #e6e6e6, 47px 47px #e6e6e6, 48px 48px #e6e6e6, 49px 49px #e6e6e6, 50px 50px #e6e6e6, 51px 51px #e6e6e6, 52px 52px #e6e6e6, 53px 53px #e6e6e6, 54px 54px #e6e6e6, 55px 55px #e6e6e6, 56px 56px #e6e6e6, 57px 57px #e6e6e6, 58px 58px #e6e6e6, 59px 59px #e6e6e6, 60px 60px #e6e6e6, 61px 61px #e6e6e6, 62px 62px #e6e6e6, 63px 63px #e6e6e6, 64px 64px #e6e6e6, 65px 65px #e6e6e6, 66px 66px #e6e6e6, 67px 67px #e6e6e6, 68px 68px #e6e6e6, 69px 69px #e6e6e6, 70px 70px #e6e6e6, 71px 71px #e6e6e6, 72px 72px #e6e6e6, 73px 73px #e6e6e6, 74px 74px #e6e6e6, 75px 75px #e6e6e6, 76px 76px #e6e6e6, 77px 77px #e6e6e6, 78px 78px #e6e6e6, 79px 79px #e6e6e6, 80px 80px #e6e6e6, 81px 81px #e6e6e6, 82px 82px #e6e6e6, 83px 83px #e6e6e6, 84px 84px #e6e6e6, 85px 85px #e6e6e6;\n}\n.button-longshadow.button-plain:active, .button-longshadow.button-plain.active, .button-longshadow.button-plain.is-active,\n    .button-longshadow-right.button-plain:active,\n    .button-longshadow-right.button-plain.active,\n    .button-longshadow-right.button-plain.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-inverse,\n  .button-longshadow-right.button-inverse {\n    text-shadow: 0px 0px #090909, 1px 1px #090909, 2px 2px #090909, 3px 3px #090909, 4px 4px #090909, 5px 5px #090909, 6px 6px #090909, 7px 7px #090909, 8px 8px #090909, 9px 9px #090909, 10px 10px #090909, 11px 11px #090909, 12px 12px #090909, 13px 13px #090909, 14px 14px #090909, 15px 15px #090909, 16px 16px #090909, 17px 17px #090909, 18px 18px #090909, 19px 19px #090909, 20px 20px #090909, 21px 21px #090909, 22px 22px #090909, 23px 23px #090909, 24px 24px #090909, 25px 25px #090909, 26px 26px #090909, 27px 27px #090909, 28px 28px #090909, 29px 29px #090909, 30px 30px #090909, 31px 31px #090909, 32px 32px #090909, 33px 33px #090909, 34px 34px #090909, 35px 35px #090909, 36px 36px #090909, 37px 37px #090909, 38px 38px #090909, 39px 39px #090909, 40px 40px #090909, 41px 41px #090909, 42px 42px #090909, 43px 43px #090909, 44px 44px #090909, 45px 45px #090909, 46px 46px #090909, 47px 47px #090909, 48px 48px #090909, 49px 49px #090909, 50px 50px #090909, 51px 51px #090909, 52px 52px #090909, 53px 53px #090909, 54px 54px #090909, 55px 55px #090909, 56px 56px #090909, 57px 57px #090909, 58px 58px #090909, 59px 59px #090909, 60px 60px #090909, 61px 61px #090909, 62px 62px #090909, 63px 63px #090909, 64px 64px #090909, 65px 65px #090909, 66px 66px #090909, 67px 67px #090909, 68px 68px #090909, 69px 69px #090909, 70px 70px #090909, 71px 71px #090909, 72px 72px #090909, 73px 73px #090909, 74px 74px #090909, 75px 75px #090909, 76px 76px #090909, 77px 77px #090909, 78px 78px #090909, 79px 79px #090909, 80px 80px #090909, 81px 81px #090909, 82px 82px #090909, 83px 83px #090909, 84px 84px #090909, 85px 85px #090909;\n}\n.button-longshadow.button-inverse:active, .button-longshadow.button-inverse.active, .button-longshadow.button-inverse.is-active,\n    .button-longshadow-right.button-inverse:active,\n    .button-longshadow-right.button-inverse.active,\n    .button-longshadow-right.button-inverse.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-action,\n  .button-longshadow-right.button-action {\n    text-shadow: 0px 0px #22b1e3, 1px 1px #22b1e3, 2px 2px #22b1e3, 3px 3px #22b1e3, 4px 4px #22b1e3, 5px 5px #22b1e3, 6px 6px #22b1e3, 7px 7px #22b1e3, 8px 8px #22b1e3, 9px 9px #22b1e3, 10px 10px #22b1e3, 11px 11px #22b1e3, 12px 12px #22b1e3, 13px 13px #22b1e3, 14px 14px #22b1e3, 15px 15px #22b1e3, 16px 16px #22b1e3, 17px 17px #22b1e3, 18px 18px #22b1e3, 19px 19px #22b1e3, 20px 20px #22b1e3, 21px 21px #22b1e3, 22px 22px #22b1e3, 23px 23px #22b1e3, 24px 24px #22b1e3, 25px 25px #22b1e3, 26px 26px #22b1e3, 27px 27px #22b1e3, 28px 28px #22b1e3, 29px 29px #22b1e3, 30px 30px #22b1e3, 31px 31px #22b1e3, 32px 32px #22b1e3, 33px 33px #22b1e3, 34px 34px #22b1e3, 35px 35px #22b1e3, 36px 36px #22b1e3, 37px 37px #22b1e3, 38px 38px #22b1e3, 39px 39px #22b1e3, 40px 40px #22b1e3, 41px 41px #22b1e3, 42px 42px #22b1e3, 43px 43px #22b1e3, 44px 44px #22b1e3, 45px 45px #22b1e3, 46px 46px #22b1e3, 47px 47px #22b1e3, 48px 48px #22b1e3, 49px 49px #22b1e3, 50px 50px #22b1e3, 51px 51px #22b1e3, 52px 52px #22b1e3, 53px 53px #22b1e3, 54px 54px #22b1e3, 55px 55px #22b1e3, 56px 56px #22b1e3, 57px 57px #22b1e3, 58px 58px #22b1e3, 59px 59px #22b1e3, 60px 60px #22b1e3, 61px 61px #22b1e3, 62px 62px #22b1e3, 63px 63px #22b1e3, 64px 64px #22b1e3, 65px 65px #22b1e3, 66px 66px #22b1e3, 67px 67px #22b1e3, 68px 68px #22b1e3, 69px 69px #22b1e3, 70px 70px #22b1e3, 71px 71px #22b1e3, 72px 72px #22b1e3, 73px 73px #22b1e3, 74px 74px #22b1e3, 75px 75px #22b1e3, 76px 76px #22b1e3, 77px 77px #22b1e3, 78px 78px #22b1e3, 79px 79px #22b1e3, 80px 80px #22b1e3, 81px 81px #22b1e3, 82px 82px #22b1e3, 83px 83px #22b1e3, 84px 84px #22b1e3, 85px 85px #22b1e3;\n}\n.button-longshadow.button-action:active, .button-longshadow.button-action.active, .button-longshadow.button-action.is-active,\n    .button-longshadow-right.button-action:active,\n    .button-longshadow-right.button-action.active,\n    .button-longshadow-right.button-action.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-highlight,\n  .button-longshadow-right.button-highlight {\n    text-shadow: 0px 0px #ff9f2c, 1px 1px #ff9f2c, 2px 2px #ff9f2c, 3px 3px #ff9f2c, 4px 4px #ff9f2c, 5px 5px #ff9f2c, 6px 6px #ff9f2c, 7px 7px #ff9f2c, 8px 8px #ff9f2c, 9px 9px #ff9f2c, 10px 10px #ff9f2c, 11px 11px #ff9f2c, 12px 12px #ff9f2c, 13px 13px #ff9f2c, 14px 14px #ff9f2c, 15px 15px #ff9f2c, 16px 16px #ff9f2c, 17px 17px #ff9f2c, 18px 18px #ff9f2c, 19px 19px #ff9f2c, 20px 20px #ff9f2c, 21px 21px #ff9f2c, 22px 22px #ff9f2c, 23px 23px #ff9f2c, 24px 24px #ff9f2c, 25px 25px #ff9f2c, 26px 26px #ff9f2c, 27px 27px #ff9f2c, 28px 28px #ff9f2c, 29px 29px #ff9f2c, 30px 30px #ff9f2c, 31px 31px #ff9f2c, 32px 32px #ff9f2c, 33px 33px #ff9f2c, 34px 34px #ff9f2c, 35px 35px #ff9f2c, 36px 36px #ff9f2c, 37px 37px #ff9f2c, 38px 38px #ff9f2c, 39px 39px #ff9f2c, 40px 40px #ff9f2c, 41px 41px #ff9f2c, 42px 42px #ff9f2c, 43px 43px #ff9f2c, 44px 44px #ff9f2c, 45px 45px #ff9f2c, 46px 46px #ff9f2c, 47px 47px #ff9f2c, 48px 48px #ff9f2c, 49px 49px #ff9f2c, 50px 50px #ff9f2c, 51px 51px #ff9f2c, 52px 52px #ff9f2c, 53px 53px #ff9f2c, 54px 54px #ff9f2c, 55px 55px #ff9f2c, 56px 56px #ff9f2c, 57px 57px #ff9f2c, 58px 58px #ff9f2c, 59px 59px #ff9f2c, 60px 60px #ff9f2c, 61px 61px #ff9f2c, 62px 62px #ff9f2c, 63px 63px #ff9f2c, 64px 64px #ff9f2c, 65px 65px #ff9f2c, 66px 66px #ff9f2c, 67px 67px #ff9f2c, 68px 68px #ff9f2c, 69px 69px #ff9f2c, 70px 70px #ff9f2c, 71px 71px #ff9f2c, 72px 72px #ff9f2c, 73px 73px #ff9f2c, 74px 74px #ff9f2c, 75px 75px #ff9f2c, 76px 76px #ff9f2c, 77px 77px #ff9f2c, 78px 78px #ff9f2c, 79px 79px #ff9f2c, 80px 80px #ff9f2c, 81px 81px #ff9f2c, 82px 82px #ff9f2c, 83px 83px #ff9f2c, 84px 84px #ff9f2c, 85px 85px #ff9f2c;\n}\n.button-longshadow.button-highlight:active, .button-longshadow.button-highlight.active, .button-longshadow.button-highlight.is-active,\n    .button-longshadow-right.button-highlight:active,\n    .button-longshadow-right.button-highlight.active,\n    .button-longshadow-right.button-highlight.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-caution,\n  .button-longshadow-right.button-caution {\n    text-shadow: 0px 0px #fa5a46, 1px 1px #fa5a46, 2px 2px #fa5a46, 3px 3px #fa5a46, 4px 4px #fa5a46, 5px 5px #fa5a46, 6px 6px #fa5a46, 7px 7px #fa5a46, 8px 8px #fa5a46, 9px 9px #fa5a46, 10px 10px #fa5a46, 11px 11px #fa5a46, 12px 12px #fa5a46, 13px 13px #fa5a46, 14px 14px #fa5a46, 15px 15px #fa5a46, 16px 16px #fa5a46, 17px 17px #fa5a46, 18px 18px #fa5a46, 19px 19px #fa5a46, 20px 20px #fa5a46, 21px 21px #fa5a46, 22px 22px #fa5a46, 23px 23px #fa5a46, 24px 24px #fa5a46, 25px 25px #fa5a46, 26px 26px #fa5a46, 27px 27px #fa5a46, 28px 28px #fa5a46, 29px 29px #fa5a46, 30px 30px #fa5a46, 31px 31px #fa5a46, 32px 32px #fa5a46, 33px 33px #fa5a46, 34px 34px #fa5a46, 35px 35px #fa5a46, 36px 36px #fa5a46, 37px 37px #fa5a46, 38px 38px #fa5a46, 39px 39px #fa5a46, 40px 40px #fa5a46, 41px 41px #fa5a46, 42px 42px #fa5a46, 43px 43px #fa5a46, 44px 44px #fa5a46, 45px 45px #fa5a46, 46px 46px #fa5a46, 47px 47px #fa5a46, 48px 48px #fa5a46, 49px 49px #fa5a46, 50px 50px #fa5a46, 51px 51px #fa5a46, 52px 52px #fa5a46, 53px 53px #fa5a46, 54px 54px #fa5a46, 55px 55px #fa5a46, 56px 56px #fa5a46, 57px 57px #fa5a46, 58px 58px #fa5a46, 59px 59px #fa5a46, 60px 60px #fa5a46, 61px 61px #fa5a46, 62px 62px #fa5a46, 63px 63px #fa5a46, 64px 64px #fa5a46, 65px 65px #fa5a46, 66px 66px #fa5a46, 67px 67px #fa5a46, 68px 68px #fa5a46, 69px 69px #fa5a46, 70px 70px #fa5a46, 71px 71px #fa5a46, 72px 72px #fa5a46, 73px 73px #fa5a46, 74px 74px #fa5a46, 75px 75px #fa5a46, 76px 76px #fa5a46, 77px 77px #fa5a46, 78px 78px #fa5a46, 79px 79px #fa5a46, 80px 80px #fa5a46, 81px 81px #fa5a46, 82px 82px #fa5a46, 83px 83px #fa5a46, 84px 84px #fa5a46, 85px 85px #fa5a46;\n}\n.button-longshadow.button-caution:active, .button-longshadow.button-caution.active, .button-longshadow.button-caution.is-active,\n    .button-longshadow-right.button-caution:active,\n    .button-longshadow-right.button-caution.active,\n    .button-longshadow-right.button-caution.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow.button-royal,\n  .button-longshadow-right.button-royal {\n    text-shadow: 0px 0px #1baa7d, 1px 1px #1baa7d, 2px 2px #1baa7d, 3px 3px #1baa7d, 4px 4px #1baa7d, 5px 5px #1baa7d, 6px 6px #1baa7d, 7px 7px #1baa7d, 8px 8px #1baa7d, 9px 9px #1baa7d, 10px 10px #1baa7d, 11px 11px #1baa7d, 12px 12px #1baa7d, 13px 13px #1baa7d, 14px 14px #1baa7d, 15px 15px #1baa7d, 16px 16px #1baa7d, 17px 17px #1baa7d, 18px 18px #1baa7d, 19px 19px #1baa7d, 20px 20px #1baa7d, 21px 21px #1baa7d, 22px 22px #1baa7d, 23px 23px #1baa7d, 24px 24px #1baa7d, 25px 25px #1baa7d, 26px 26px #1baa7d, 27px 27px #1baa7d, 28px 28px #1baa7d, 29px 29px #1baa7d, 30px 30px #1baa7d, 31px 31px #1baa7d, 32px 32px #1baa7d, 33px 33px #1baa7d, 34px 34px #1baa7d, 35px 35px #1baa7d, 36px 36px #1baa7d, 37px 37px #1baa7d, 38px 38px #1baa7d, 39px 39px #1baa7d, 40px 40px #1baa7d, 41px 41px #1baa7d, 42px 42px #1baa7d, 43px 43px #1baa7d, 44px 44px #1baa7d, 45px 45px #1baa7d, 46px 46px #1baa7d, 47px 47px #1baa7d, 48px 48px #1baa7d, 49px 49px #1baa7d, 50px 50px #1baa7d, 51px 51px #1baa7d, 52px 52px #1baa7d, 53px 53px #1baa7d, 54px 54px #1baa7d, 55px 55px #1baa7d, 56px 56px #1baa7d, 57px 57px #1baa7d, 58px 58px #1baa7d, 59px 59px #1baa7d, 60px 60px #1baa7d, 61px 61px #1baa7d, 62px 62px #1baa7d, 63px 63px #1baa7d, 64px 64px #1baa7d, 65px 65px #1baa7d, 66px 66px #1baa7d, 67px 67px #1baa7d, 68px 68px #1baa7d, 69px 69px #1baa7d, 70px 70px #1baa7d, 71px 71px #1baa7d, 72px 72px #1baa7d, 73px 73px #1baa7d, 74px 74px #1baa7d, 75px 75px #1baa7d, 76px 76px #1baa7d, 77px 77px #1baa7d, 78px 78px #1baa7d, 79px 79px #1baa7d, 80px 80px #1baa7d, 81px 81px #1baa7d, 82px 82px #1baa7d, 83px 83px #1baa7d, 84px 84px #1baa7d, 85px 85px #1baa7d;\n}\n.button-longshadow.button-royal:active, .button-longshadow.button-royal.active, .button-longshadow.button-royal.is-active,\n    .button-longshadow-right.button-royal:active,\n    .button-longshadow-right.button-royal.active,\n    .button-longshadow-right.button-royal.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n\n/*\n* Shadow Left\n*\n*/\n.button-longshadow-left {\n  overflow: hidden;\n}\n.button-longshadow-left.button-primary {\n    text-shadow: 0px 0px #336699, -1px 1px #336699, -2px 2px #336699, -3px 3px #336699, -4px 4px #336699, -5px 5px #336699, -6px 6px #336699, -7px 7px #336699, -8px 8px #336699, -9px 9px #336699, -10px 10px #336699, -11px 11px #336699, -12px 12px #336699, -13px 13px #336699, -14px 14px #336699, -15px 15px #336699, -16px 16px #336699, -17px 17px #336699, -18px 18px #336699, -19px 19px #336699, -20px 20px #336699, -21px 21px #336699, -22px 22px #336699, -23px 23px #336699, -24px 24px #336699, -25px 25px #336699, -26px 26px #336699, -27px 27px #336699, -28px 28px #336699, -29px 29px #336699, -30px 30px #336699, -31px 31px #336699, -32px 32px #336699, -33px 33px #336699, -34px 34px #336699, -35px 35px #336699, -36px 36px #336699, -37px 37px #336699, -38px 38px #336699, -39px 39px #336699, -40px 40px #336699, -41px 41px #336699, -42px 42px #336699, -43px 43px #336699, -44px 44px #336699, -45px 45px #336699, -46px 46px #336699, -47px 47px #336699, -48px 48px #336699, -49px 49px #336699, -50px 50px #336699, -51px 51px #336699, -52px 52px #336699, -53px 53px #336699, -54px 54px #336699, -55px 55px #336699, -56px 56px #336699, -57px 57px #336699, -58px 58px #336699, -59px 59px #336699, -60px 60px #336699, -61px 61px #336699, -62px 62px #336699, -63px 63px #336699, -64px 64px #336699, -65px 65px #336699, -66px 66px #336699, -67px 67px #336699, -68px 68px #336699, -69px 69px #336699, -70px 70px #336699, -71px 71px #336699, -72px 72px #336699, -73px 73px #336699, -74px 74px #336699, -75px 75px #336699, -76px 76px #336699, -77px 77px #336699, -78px 78px #336699, -79px 79px #336699, -80px 80px #336699, -81px 81px #336699, -82px 82px #336699, -83px 83px #336699, -84px 84px #336699, -85px 85px #336699;\n}\n.button-longshadow-left.button-primary:active, .button-longshadow-left.button-primary.active, .button-longshadow-left.button-primary.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-plain {\n    text-shadow: 0px 0px #e6e6e6, -1px 1px #e6e6e6, -2px 2px #e6e6e6, -3px 3px #e6e6e6, -4px 4px #e6e6e6, -5px 5px #e6e6e6, -6px 6px #e6e6e6, -7px 7px #e6e6e6, -8px 8px #e6e6e6, -9px 9px #e6e6e6, -10px 10px #e6e6e6, -11px 11px #e6e6e6, -12px 12px #e6e6e6, -13px 13px #e6e6e6, -14px 14px #e6e6e6, -15px 15px #e6e6e6, -16px 16px #e6e6e6, -17px 17px #e6e6e6, -18px 18px #e6e6e6, -19px 19px #e6e6e6, -20px 20px #e6e6e6, -21px 21px #e6e6e6, -22px 22px #e6e6e6, -23px 23px #e6e6e6, -24px 24px #e6e6e6, -25px 25px #e6e6e6, -26px 26px #e6e6e6, -27px 27px #e6e6e6, -28px 28px #e6e6e6, -29px 29px #e6e6e6, -30px 30px #e6e6e6, -31px 31px #e6e6e6, -32px 32px #e6e6e6, -33px 33px #e6e6e6, -34px 34px #e6e6e6, -35px 35px #e6e6e6, -36px 36px #e6e6e6, -37px 37px #e6e6e6, -38px 38px #e6e6e6, -39px 39px #e6e6e6, -40px 40px #e6e6e6, -41px 41px #e6e6e6, -42px 42px #e6e6e6, -43px 43px #e6e6e6, -44px 44px #e6e6e6, -45px 45px #e6e6e6, -46px 46px #e6e6e6, -47px 47px #e6e6e6, -48px 48px #e6e6e6, -49px 49px #e6e6e6, -50px 50px #e6e6e6, -51px 51px #e6e6e6, -52px 52px #e6e6e6, -53px 53px #e6e6e6, -54px 54px #e6e6e6, -55px 55px #e6e6e6, -56px 56px #e6e6e6, -57px 57px #e6e6e6, -58px 58px #e6e6e6, -59px 59px #e6e6e6, -60px 60px #e6e6e6, -61px 61px #e6e6e6, -62px 62px #e6e6e6, -63px 63px #e6e6e6, -64px 64px #e6e6e6, -65px 65px #e6e6e6, -66px 66px #e6e6e6, -67px 67px #e6e6e6, -68px 68px #e6e6e6, -69px 69px #e6e6e6, -70px 70px #e6e6e6, -71px 71px #e6e6e6, -72px 72px #e6e6e6, -73px 73px #e6e6e6, -74px 74px #e6e6e6, -75px 75px #e6e6e6, -76px 76px #e6e6e6, -77px 77px #e6e6e6, -78px 78px #e6e6e6, -79px 79px #e6e6e6, -80px 80px #e6e6e6, -81px 81px #e6e6e6, -82px 82px #e6e6e6, -83px 83px #e6e6e6, -84px 84px #e6e6e6, -85px 85px #e6e6e6;\n}\n.button-longshadow-left.button-plain:active, .button-longshadow-left.button-plain.active, .button-longshadow-left.button-plain.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-inverse {\n    text-shadow: 0px 0px #090909, -1px 1px #090909, -2px 2px #090909, -3px 3px #090909, -4px 4px #090909, -5px 5px #090909, -6px 6px #090909, -7px 7px #090909, -8px 8px #090909, -9px 9px #090909, -10px 10px #090909, -11px 11px #090909, -12px 12px #090909, -13px 13px #090909, -14px 14px #090909, -15px 15px #090909, -16px 16px #090909, -17px 17px #090909, -18px 18px #090909, -19px 19px #090909, -20px 20px #090909, -21px 21px #090909, -22px 22px #090909, -23px 23px #090909, -24px 24px #090909, -25px 25px #090909, -26px 26px #090909, -27px 27px #090909, -28px 28px #090909, -29px 29px #090909, -30px 30px #090909, -31px 31px #090909, -32px 32px #090909, -33px 33px #090909, -34px 34px #090909, -35px 35px #090909, -36px 36px #090909, -37px 37px #090909, -38px 38px #090909, -39px 39px #090909, -40px 40px #090909, -41px 41px #090909, -42px 42px #090909, -43px 43px #090909, -44px 44px #090909, -45px 45px #090909, -46px 46px #090909, -47px 47px #090909, -48px 48px #090909, -49px 49px #090909, -50px 50px #090909, -51px 51px #090909, -52px 52px #090909, -53px 53px #090909, -54px 54px #090909, -55px 55px #090909, -56px 56px #090909, -57px 57px #090909, -58px 58px #090909, -59px 59px #090909, -60px 60px #090909, -61px 61px #090909, -62px 62px #090909, -63px 63px #090909, -64px 64px #090909, -65px 65px #090909, -66px 66px #090909, -67px 67px #090909, -68px 68px #090909, -69px 69px #090909, -70px 70px #090909, -71px 71px #090909, -72px 72px #090909, -73px 73px #090909, -74px 74px #090909, -75px 75px #090909, -76px 76px #090909, -77px 77px #090909, -78px 78px #090909, -79px 79px #090909, -80px 80px #090909, -81px 81px #090909, -82px 82px #090909, -83px 83px #090909, -84px 84px #090909, -85px 85px #090909;\n}\n.button-longshadow-left.button-inverse:active, .button-longshadow-left.button-inverse.active, .button-longshadow-left.button-inverse.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-action {\n    text-shadow: 0px 0px #22b1e3, -1px 1px #22b1e3, -2px 2px #22b1e3, -3px 3px #22b1e3, -4px 4px #22b1e3, -5px 5px #22b1e3, -6px 6px #22b1e3, -7px 7px #22b1e3, -8px 8px #22b1e3, -9px 9px #22b1e3, -10px 10px #22b1e3, -11px 11px #22b1e3, -12px 12px #22b1e3, -13px 13px #22b1e3, -14px 14px #22b1e3, -15px 15px #22b1e3, -16px 16px #22b1e3, -17px 17px #22b1e3, -18px 18px #22b1e3, -19px 19px #22b1e3, -20px 20px #22b1e3, -21px 21px #22b1e3, -22px 22px #22b1e3, -23px 23px #22b1e3, -24px 24px #22b1e3, -25px 25px #22b1e3, -26px 26px #22b1e3, -27px 27px #22b1e3, -28px 28px #22b1e3, -29px 29px #22b1e3, -30px 30px #22b1e3, -31px 31px #22b1e3, -32px 32px #22b1e3, -33px 33px #22b1e3, -34px 34px #22b1e3, -35px 35px #22b1e3, -36px 36px #22b1e3, -37px 37px #22b1e3, -38px 38px #22b1e3, -39px 39px #22b1e3, -40px 40px #22b1e3, -41px 41px #22b1e3, -42px 42px #22b1e3, -43px 43px #22b1e3, -44px 44px #22b1e3, -45px 45px #22b1e3, -46px 46px #22b1e3, -47px 47px #22b1e3, -48px 48px #22b1e3, -49px 49px #22b1e3, -50px 50px #22b1e3, -51px 51px #22b1e3, -52px 52px #22b1e3, -53px 53px #22b1e3, -54px 54px #22b1e3, -55px 55px #22b1e3, -56px 56px #22b1e3, -57px 57px #22b1e3, -58px 58px #22b1e3, -59px 59px #22b1e3, -60px 60px #22b1e3, -61px 61px #22b1e3, -62px 62px #22b1e3, -63px 63px #22b1e3, -64px 64px #22b1e3, -65px 65px #22b1e3, -66px 66px #22b1e3, -67px 67px #22b1e3, -68px 68px #22b1e3, -69px 69px #22b1e3, -70px 70px #22b1e3, -71px 71px #22b1e3, -72px 72px #22b1e3, -73px 73px #22b1e3, -74px 74px #22b1e3, -75px 75px #22b1e3, -76px 76px #22b1e3, -77px 77px #22b1e3, -78px 78px #22b1e3, -79px 79px #22b1e3, -80px 80px #22b1e3, -81px 81px #22b1e3, -82px 82px #22b1e3, -83px 83px #22b1e3, -84px 84px #22b1e3, -85px 85px #22b1e3;\n}\n.button-longshadow-left.button-action:active, .button-longshadow-left.button-action.active, .button-longshadow-left.button-action.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-highlight {\n    text-shadow: 0px 0px #ff9f2c, -1px 1px #ff9f2c, -2px 2px #ff9f2c, -3px 3px #ff9f2c, -4px 4px #ff9f2c, -5px 5px #ff9f2c, -6px 6px #ff9f2c, -7px 7px #ff9f2c, -8px 8px #ff9f2c, -9px 9px #ff9f2c, -10px 10px #ff9f2c, -11px 11px #ff9f2c, -12px 12px #ff9f2c, -13px 13px #ff9f2c, -14px 14px #ff9f2c, -15px 15px #ff9f2c, -16px 16px #ff9f2c, -17px 17px #ff9f2c, -18px 18px #ff9f2c, -19px 19px #ff9f2c, -20px 20px #ff9f2c, -21px 21px #ff9f2c, -22px 22px #ff9f2c, -23px 23px #ff9f2c, -24px 24px #ff9f2c, -25px 25px #ff9f2c, -26px 26px #ff9f2c, -27px 27px #ff9f2c, -28px 28px #ff9f2c, -29px 29px #ff9f2c, -30px 30px #ff9f2c, -31px 31px #ff9f2c, -32px 32px #ff9f2c, -33px 33px #ff9f2c, -34px 34px #ff9f2c, -35px 35px #ff9f2c, -36px 36px #ff9f2c, -37px 37px #ff9f2c, -38px 38px #ff9f2c, -39px 39px #ff9f2c, -40px 40px #ff9f2c, -41px 41px #ff9f2c, -42px 42px #ff9f2c, -43px 43px #ff9f2c, -44px 44px #ff9f2c, -45px 45px #ff9f2c, -46px 46px #ff9f2c, -47px 47px #ff9f2c, -48px 48px #ff9f2c, -49px 49px #ff9f2c, -50px 50px #ff9f2c, -51px 51px #ff9f2c, -52px 52px #ff9f2c, -53px 53px #ff9f2c, -54px 54px #ff9f2c, -55px 55px #ff9f2c, -56px 56px #ff9f2c, -57px 57px #ff9f2c, -58px 58px #ff9f2c, -59px 59px #ff9f2c, -60px 60px #ff9f2c, -61px 61px #ff9f2c, -62px 62px #ff9f2c, -63px 63px #ff9f2c, -64px 64px #ff9f2c, -65px 65px #ff9f2c, -66px 66px #ff9f2c, -67px 67px #ff9f2c, -68px 68px #ff9f2c, -69px 69px #ff9f2c, -70px 70px #ff9f2c, -71px 71px #ff9f2c, -72px 72px #ff9f2c, -73px 73px #ff9f2c, -74px 74px #ff9f2c, -75px 75px #ff9f2c, -76px 76px #ff9f2c, -77px 77px #ff9f2c, -78px 78px #ff9f2c, -79px 79px #ff9f2c, -80px 80px #ff9f2c, -81px 81px #ff9f2c, -82px 82px #ff9f2c, -83px 83px #ff9f2c, -84px 84px #ff9f2c, -85px 85px #ff9f2c;\n}\n.button-longshadow-left.button-highlight:active, .button-longshadow-left.button-highlight.active, .button-longshadow-left.button-highlight.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-caution {\n    text-shadow: 0px 0px #fa5a46, -1px 1px #fa5a46, -2px 2px #fa5a46, -3px 3px #fa5a46, -4px 4px #fa5a46, -5px 5px #fa5a46, -6px 6px #fa5a46, -7px 7px #fa5a46, -8px 8px #fa5a46, -9px 9px #fa5a46, -10px 10px #fa5a46, -11px 11px #fa5a46, -12px 12px #fa5a46, -13px 13px #fa5a46, -14px 14px #fa5a46, -15px 15px #fa5a46, -16px 16px #fa5a46, -17px 17px #fa5a46, -18px 18px #fa5a46, -19px 19px #fa5a46, -20px 20px #fa5a46, -21px 21px #fa5a46, -22px 22px #fa5a46, -23px 23px #fa5a46, -24px 24px #fa5a46, -25px 25px #fa5a46, -26px 26px #fa5a46, -27px 27px #fa5a46, -28px 28px #fa5a46, -29px 29px #fa5a46, -30px 30px #fa5a46, -31px 31px #fa5a46, -32px 32px #fa5a46, -33px 33px #fa5a46, -34px 34px #fa5a46, -35px 35px #fa5a46, -36px 36px #fa5a46, -37px 37px #fa5a46, -38px 38px #fa5a46, -39px 39px #fa5a46, -40px 40px #fa5a46, -41px 41px #fa5a46, -42px 42px #fa5a46, -43px 43px #fa5a46, -44px 44px #fa5a46, -45px 45px #fa5a46, -46px 46px #fa5a46, -47px 47px #fa5a46, -48px 48px #fa5a46, -49px 49px #fa5a46, -50px 50px #fa5a46, -51px 51px #fa5a46, -52px 52px #fa5a46, -53px 53px #fa5a46, -54px 54px #fa5a46, -55px 55px #fa5a46, -56px 56px #fa5a46, -57px 57px #fa5a46, -58px 58px #fa5a46, -59px 59px #fa5a46, -60px 60px #fa5a46, -61px 61px #fa5a46, -62px 62px #fa5a46, -63px 63px #fa5a46, -64px 64px #fa5a46, -65px 65px #fa5a46, -66px 66px #fa5a46, -67px 67px #fa5a46, -68px 68px #fa5a46, -69px 69px #fa5a46, -70px 70px #fa5a46, -71px 71px #fa5a46, -72px 72px #fa5a46, -73px 73px #fa5a46, -74px 74px #fa5a46, -75px 75px #fa5a46, -76px 76px #fa5a46, -77px 77px #fa5a46, -78px 78px #fa5a46, -79px 79px #fa5a46, -80px 80px #fa5a46, -81px 81px #fa5a46, -82px 82px #fa5a46, -83px 83px #fa5a46, -84px 84px #fa5a46, -85px 85px #fa5a46;\n}\n.button-longshadow-left.button-caution:active, .button-longshadow-left.button-caution.active, .button-longshadow-left.button-caution.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n.button-longshadow-left.button-royal {\n    text-shadow: 0px 0px #1baa7d, -1px 1px #1baa7d, -2px 2px #1baa7d, -3px 3px #1baa7d, -4px 4px #1baa7d, -5px 5px #1baa7d, -6px 6px #1baa7d, -7px 7px #1baa7d, -8px 8px #1baa7d, -9px 9px #1baa7d, -10px 10px #1baa7d, -11px 11px #1baa7d, -12px 12px #1baa7d, -13px 13px #1baa7d, -14px 14px #1baa7d, -15px 15px #1baa7d, -16px 16px #1baa7d, -17px 17px #1baa7d, -18px 18px #1baa7d, -19px 19px #1baa7d, -20px 20px #1baa7d, -21px 21px #1baa7d, -22px 22px #1baa7d, -23px 23px #1baa7d, -24px 24px #1baa7d, -25px 25px #1baa7d, -26px 26px #1baa7d, -27px 27px #1baa7d, -28px 28px #1baa7d, -29px 29px #1baa7d, -30px 30px #1baa7d, -31px 31px #1baa7d, -32px 32px #1baa7d, -33px 33px #1baa7d, -34px 34px #1baa7d, -35px 35px #1baa7d, -36px 36px #1baa7d, -37px 37px #1baa7d, -38px 38px #1baa7d, -39px 39px #1baa7d, -40px 40px #1baa7d, -41px 41px #1baa7d, -42px 42px #1baa7d, -43px 43px #1baa7d, -44px 44px #1baa7d, -45px 45px #1baa7d, -46px 46px #1baa7d, -47px 47px #1baa7d, -48px 48px #1baa7d, -49px 49px #1baa7d, -50px 50px #1baa7d, -51px 51px #1baa7d, -52px 52px #1baa7d, -53px 53px #1baa7d, -54px 54px #1baa7d, -55px 55px #1baa7d, -56px 56px #1baa7d, -57px 57px #1baa7d, -58px 58px #1baa7d, -59px 59px #1baa7d, -60px 60px #1baa7d, -61px 61px #1baa7d, -62px 62px #1baa7d, -63px 63px #1baa7d, -64px 64px #1baa7d, -65px 65px #1baa7d, -66px 66px #1baa7d, -67px 67px #1baa7d, -68px 68px #1baa7d, -69px 69px #1baa7d, -70px 70px #1baa7d, -71px 71px #1baa7d, -72px 72px #1baa7d, -73px 73px #1baa7d, -74px 74px #1baa7d, -75px 75px #1baa7d, -76px 76px #1baa7d, -77px 77px #1baa7d, -78px 78px #1baa7d, -79px 79px #1baa7d, -80px 80px #1baa7d, -81px 81px #1baa7d, -82px 82px #1baa7d, -83px 83px #1baa7d, -84px 84px #1baa7d, -85px 85px #1baa7d;\n}\n.button-longshadow-left.button-royal:active, .button-longshadow-left.button-royal.active, .button-longshadow-left.button-royal.is-active {\n      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);\n}\n\n/*\n* Button Sizes\n*\n* This file creates the various button sizes\n* (ex. .button-large, .button-small, etc.)\n*/\n.button-giant {\n  font-size: 28px;\n  height: 70px;\n  line-height: 70px;\n  padding: 0 70px;\n}\n.button-jumbo {\n  font-size: 24px;\n  height: 60px;\n  line-height: 60px;\n  padding: 0 60px;\n}\n.button-large {\n  font-size: 20px;\n  height: 50px;\n  line-height: 50px;\n  padding: 0 50px;\n}\n.button-normal {\n  font-size: 16px;\n  height: 40px;\n  line-height: 40px;\n  padding: 0 40px;\n}\n.button-small {\n  font-size: 12px;\n  height: 30px;\n  line-height: 30px;\n  padding: 0 30px;\n}\n.button-tiny {\n  font-size: 9.6px;\n  height: 24px;\n  line-height: 24px;\n  padding: 0 24px;\n}\na:hover,\na:focus {\n  color: #000;\n}\n", ""]);
+exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1426:
+/***/ 1536:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1427);
+var content = __webpack_require__(1537);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("b94321a8", content, false, {});
+var update = __webpack_require__(26)("0aa5e646", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./ladda-themeless.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./ladda-themeless.min.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -111,7 +112,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1427:
+/***/ 1537:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -119,106 +120,857 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*!\r\n * Ladda\r\n * http://lab.hakim.se/ladda\r\n * MIT licensed\r\n *\r\n * Copyright (C) 2014 Hakim El Hattab, http://hakim.se\r\n */\n.ladda-button{position:relative\n}\n.ladda-button .ladda-spinner{position:absolute;z-index:2;display:inline-block;width:32px;height:32px;top:50%;margin-top:0;opacity:0;pointer-events:none\n}\n.ladda-button .ladda-label{position:relative;z-index:3\n}\n.ladda-button .ladda-progress{position:absolute;width:0;height:100%;left:0;top:0;background:rgba(0,0,0,0.2);visibility:hidden;opacity:0;-webkit-transition:0.1s linear all !important;-moz-transition:0.1s linear all !important;-ms-transition:0.1s linear all !important;-o-transition:0.1s linear all !important;transition:0.1s linear all !important\n}\n.ladda-button[data-loading] .ladda-progress{opacity:1;visibility:visible\n}\n.ladda-button,.ladda-button .ladda-spinner,.ladda-button .ladda-label{-webkit-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-moz-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-ms-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-o-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important\n}\n.ladda-button[data-style=zoom-in],.ladda-button[data-style=zoom-in] .ladda-spinner,.ladda-button[data-style=zoom-in] .ladda-label,.ladda-button[data-style=zoom-out],.ladda-button[data-style=zoom-out] .ladda-spinner,.ladda-button[data-style=zoom-out] .ladda-label{-webkit-transition:0.3s ease all !important;-moz-transition:0.3s ease all !important;-ms-transition:0.3s ease all !important;-o-transition:0.3s ease all !important;transition:0.3s ease all !important\n}\n.ladda-button[data-style=expand-right] .ladda-spinner{right:-6px\n}\n.ladda-button[data-style=expand-right][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-right][data-size=\"xs\"] .ladda-spinner{right:-12px\n}\n.ladda-button[data-style=expand-right][data-loading]{padding-right:56px\n}\n.ladda-button[data-style=expand-right][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-right][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-right][data-loading][data-size=\"xs\"]{padding-right:40px\n}\n.ladda-button[data-style=expand-left] .ladda-spinner{left:26px\n}\n.ladda-button[data-style=expand-left][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-left][data-size=\"xs\"] .ladda-spinner{left:4px\n}\n.ladda-button[data-style=expand-left][data-loading]{padding-left:56px\n}\n.ladda-button[data-style=expand-left][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-left][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-left][data-loading][data-size=\"xs\"]{padding-left:40px\n}\n.ladda-button[data-style=expand-up]{overflow:hidden\n}\n.ladda-button[data-style=expand-up] .ladda-spinner{top:-32px;left:50%;margin-left:0\n}\n.ladda-button[data-style=expand-up][data-loading]{padding-top:54px\n}\n.ladda-button[data-style=expand-up][data-loading] .ladda-spinner{opacity:1;top:26px;margin-top:0\n}\n.ladda-button[data-style=expand-up][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-up][data-loading][data-size=\"xs\"]{padding-top:32px\n}\n.ladda-button[data-style=expand-up][data-loading][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-up][data-loading][data-size=\"xs\"] .ladda-spinner{top:4px\n}\n.ladda-button[data-style=expand-down]{overflow:hidden\n}\n.ladda-button[data-style=expand-down] .ladda-spinner{top:62px;left:50%;margin-left:0\n}\n.ladda-button[data-style=expand-down][data-size=\"s\"] .ladda-spinner,.ladda-button[data-style=expand-down][data-size=\"xs\"] .ladda-spinner{top:40px\n}\n.ladda-button[data-style=expand-down][data-loading]{padding-bottom:54px\n}\n.ladda-button[data-style=expand-down][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=expand-down][data-loading][data-size=\"s\"],.ladda-button[data-style=expand-down][data-loading][data-size=\"xs\"]{padding-bottom:32px\n}\n.ladda-button[data-style=slide-left]{overflow:hidden\n}\n.ladda-button[data-style=slide-left] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-left] .ladda-spinner{left:100%;margin-left:0\n}\n.ladda-button[data-style=slide-left][data-loading] .ladda-label{opacity:0;left:-100%\n}\n.ladda-button[data-style=slide-left][data-loading] .ladda-spinner{opacity:1;left:50%\n}\n.ladda-button[data-style=slide-right]{overflow:hidden\n}\n.ladda-button[data-style=slide-right] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-right] .ladda-spinner{right:100%;margin-left:0;left:16px\n}\n.ladda-button[data-style=slide-right][data-loading] .ladda-label{opacity:0;left:100%\n}\n.ladda-button[data-style=slide-right][data-loading] .ladda-spinner{opacity:1;left:50%\n}\n.ladda-button[data-style=slide-up]{overflow:hidden\n}\n.ladda-button[data-style=slide-up] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-up] .ladda-spinner{left:50%;margin-left:0;margin-top:1em\n}\n.ladda-button[data-style=slide-up][data-loading] .ladda-label{opacity:0;top:-1em\n}\n.ladda-button[data-style=slide-up][data-loading] .ladda-spinner{opacity:1;margin-top:0\n}\n.ladda-button[data-style=slide-down]{overflow:hidden\n}\n.ladda-button[data-style=slide-down] .ladda-label{position:relative\n}\n.ladda-button[data-style=slide-down] .ladda-spinner{left:50%;margin-left:0;margin-top:-2em\n}\n.ladda-button[data-style=slide-down][data-loading] .ladda-label{opacity:0;top:1em\n}\n.ladda-button[data-style=slide-down][data-loading] .ladda-spinner{opacity:1;margin-top:0\n}\n.ladda-button[data-style=zoom-out]{overflow:hidden\n}\n.ladda-button[data-style=zoom-out] .ladda-spinner{left:50%;margin-left:32px;-webkit-transform:scale(2.5);-moz-transform:scale(2.5);-ms-transform:scale(2.5);-o-transform:scale(2.5);transform:scale(2.5)\n}\n.ladda-button[data-style=zoom-out] .ladda-label{position:relative;display:inline-block\n}\n.ladda-button[data-style=zoom-out][data-loading] .ladda-label{opacity:0;-webkit-transform:scale(0.5);-moz-transform:scale(0.5);-ms-transform:scale(0.5);-o-transform:scale(0.5);transform:scale(0.5)\n}\n.ladda-button[data-style=zoom-out][data-loading] .ladda-spinner{opacity:1;margin-left:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none\n}\n.ladda-button[data-style=zoom-in]{overflow:hidden\n}\n.ladda-button[data-style=zoom-in] .ladda-spinner{left:50%;margin-left:-16px;-webkit-transform:scale(0.2);-moz-transform:scale(0.2);-ms-transform:scale(0.2);-o-transform:scale(0.2);transform:scale(0.2)\n}\n.ladda-button[data-style=zoom-in] .ladda-label{position:relative;display:inline-block\n}\n.ladda-button[data-style=zoom-in][data-loading] .ladda-label{opacity:0;-webkit-transform:scale(2.2);-moz-transform:scale(2.2);-ms-transform:scale(2.2);-o-transform:scale(2.2);transform:scale(2.2)\n}\n.ladda-button[data-style=zoom-in][data-loading] .ladda-spinner{opacity:1;margin-left:0;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none\n}\n.ladda-button[data-style=contract]{overflow:hidden;width:100px\n}\n.ladda-button[data-style=contract] .ladda-spinner{left:50%;margin-left:0\n}\n.ladda-button[data-style=contract][data-loading]{border-radius:50%;width:52px\n}\n.ladda-button[data-style=contract][data-loading] .ladda-label{opacity:0\n}\n.ladda-button[data-style=contract][data-loading] .ladda-spinner{opacity:1\n}\n.ladda-button[data-style=contract-overlay]{overflow:hidden;width:100px;box-shadow:0px 0px 0px 2000px transparent\n}\n.ladda-button[data-style=contract-overlay] .ladda-spinner{left:50%;margin-left:0\n}\n.ladda-button[data-style=contract-overlay][data-loading]{border-radius:50%;width:52px;box-shadow:0px 0px 0px 2000px rgba(0,0,0,0.8)\n}\n.ladda-button[data-style=contract-overlay][data-loading] .ladda-label{opacity:0\n}\n.ladda-button[data-style=contract-overlay][data-loading] .ladda-spinner{opacity:1\n}\r\n", ""]);
+exports.push([module.i, "\n.input-group {\n    width: 100%;\n    margin-bottom: 10px;\n}\n.input-group-addon.icon-sizeshow {\n    border: none;\n    background-color: transparent;\n}\n.input-group input[type=\"range\"] {\n    border: none;\n    box-shadow: none;\n}\n#icon-search {\n    border-radius: 17px !important;\n}\nform {\n    text-align: center;\n    padding: 10px;\n}\ninput[type=\"range\"] {\n    cursor: pointer;\n}\n.preview .name {\n    display: block;\n}\n.preview {\n    padding: 30px 10px;\n    font-size: 12px;\n    height: 120px;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview:hover {\n    background-color: #DCDCDC;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview span[class|=ti] {\n    display: block;\n}\n.preview i,\n.preview span[class|=ti] {\n    color: #428BCA;\n    font-size: 24px;\n}\n.preview:hover i,\n.preview:hover span[class|=ti] {\n    font-size: 30px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1428:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1429);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("3de2f043", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./advbuttons.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!./advbuttons.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1429:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/* flatbuttons */\nli {\n    list-style : none;\n}\n.flatbuttons {\n    padding-left : 4%;\n}\n.flatbuttons ul {\n    padding : 20px;\n}\n.flatbuttons ul li {\n    width      : 145px;\n    float      : left;\n    padding    : 5px;\n    list-style : none;\n}\n.flatbuttons div {\n    clear          : both;\n    padding-top    : 15px;\n    padding-bottom : 0;\n}\n.btn-rounded .button {\n    padding : 0 18px;\n}\n.flatbuttons .icon-btn {\n    padding : 0 29px;\n}\n/* flatbuttons for small width. */\n.flatbuttons_small ul li {\n    width   : 138px;\n    float   : left;\n    padding : 10px 20px 20px 0;\n}\n/*quick icons*/\n.panel-body .btn:not(.btn-block) {\n    margin-bottom : 10px;\n}\n/*Group buttons panel*/\n.ui-group-buttons .or {\n    position  : relative;\n    float     : left;\n    width     : .3em;\n    height    : 1.3em;\n    z-index   : 3;\n    font-size : 12px\n}\n.ui-group-buttons .or:before {\n    position           : absolute;\n    top                : 50%;\n    left               : 50%;\n    content            : 'or';\n    background-color   : #5a5a5a;\n    margin-top         : -.1em;\n    margin-left        : -.9em;\n    width              : 1.8em;\n    height             : 1.8em;\n    line-height        : 1.55;\n    color              : #fff;\n    font-style         : normal;\n    font-weight        : 400;\n    text-align         : center;\n    border-radius      : 500px;\n    -webkit-box-shadow : 0 0 0 1px rgba(0, 0, 0, 0.1);\n    box-shadow         : 0 0 0 1px rgba(0, 0, 0, 0.1);\n    -webkit-box-sizing : border-box;\n    -moz-box-sizing    : border-box;\n    box-sizing         : border-box\n}\n.ui-group-buttons .or:after {\n    position         : absolute;\n    top              : 0;\n    left             : 0;\n    content          : ' ';\n    width            : .3em;\n    height           : 2.84em;\n    background-color : rgba(0, 0, 0, 0);\n    border-top       : .6em solid #5a5a5a;\n    border-bottom    : .6em solid #5a5a5a\n}\n.ui-group-buttons .or.or-lg {\n    height    : 1.3em;\n    font-size : 16px\n}\n.ui-group-buttons .or.or-lg:after {\n    height : 2.85em\n}\n.ui-group-buttons .or.or-sm {\n    height : 1em\n}\n.ui-group-buttons .or.or-sm:after {\n    height : 2.5em\n}\n.ui-group-buttons .or.or-xs {\n    height : .25em\n}\n.ui-group-buttons .or.or-xs:after {\n    height  : 1.84em;\n    z-index : -1000\n}\n.ui-group-buttons {\n    display        : inline-block;\n    vertical-align : middle\n}\n.ui-group-buttons:after {\n    content    : \".\";\n    display    : block;\n    height     : 0;\n    clear      : both;\n    visibility : hidden\n}\n.ui-group-buttons .btn {\n    float         : left;\n    border-radius : 0\n}\n.ui-group-buttons .btn:first-child {\n    margin-left               : 0;\n    border-top-left-radius    : .25em;\n    border-bottom-left-radius : .25em;\n    padding-right             : 15px\n}\n.ui-group-buttons .btn:last-child {\n    border-top-right-radius    : .25em;\n    border-bottom-right-radius : .25em;\n    padding-left               : 15px\n}\n/*Group buttons panel ens here*/\n\n/*Buttons With Labels*/\n.btn-label {\n    position   : relative;\n    left       : -12px;\n    display    : inline-block;\n    padding    : 6px 15px;\n    background : rgba(0, 0, 0, 0.15);\n    /*border-radius: 3px 0 0 3px;*/\n}\n.btn-label.label-right {\n    left : 13px;\n}\n.btn-labeled {\n    padding-top    : 0;\n    padding-bottom : 0;\n}\n.btn_3d {\n    box-shadow : 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2) !important;\n}\n.button-circle {\n    width  : 115px;\n    height : 115px;\n}\n/*outline buttons*/\n.flatbuttons button {\n    margin-top : 20px;\n}\n.btn-up:before {\n    left                : 11%;\n    top                 : 373px;\n    margin-left         : -8px;\n    border-bottom-color : #6699cc;\n}\n.btn-direction:before {\n    position    : absolute;\n    line-height : 0;\n    content     : '';\n    border      : 8px solid transparent;\n}\n.btn-primary.btn-up:before {\n    border-bottom-color : #6699cc;\n}\n.btn-warning.btn-right:focus:before,\n.btn-warning.btn-right:hover:before {\n    border-left-color : #f0ad4e;\n}\n.btn-warning.btn-right:before {\n    border-left-color : #f0ad4e;\n}\n.btn-right:before {\n    top               : 56%;\n    left              : 33%;\n    margin-top        : -8px;\n    border-left-color : #e4eaec;\n}\n.btn-success.btn-bottom:before {\n    border-top-color : #66cc99;\n}\n.btn-bottom:before {\n    bottom           : 39.1%;\n    left             : 47%;\n    margin-left      : -8px;\n    border-top-color : #66cc99;\n}\n.btn-danger.btn-left:before {\n    border-right-color : #ff6666;\n}\n.btn-left:before {\n    top                : 56%;\n    left               : 58.8%;\n    margin-top         : -8px;\n    border-right-color : #ff6666;\n}\n/*animate button*/\n.btn-animate-side:hover span > .icon {\n    opacity : 1;\n}\n.btn-animate-side span > .icon {\n    position           : absolute;\n    top                : 91%;\n    left               : 90px;\n    display            : block;\n    opacity            : 0;\n    -webkit-transition : opacity .2s ease-out 0s;\n    -o-transition      : opacity .2s ease-out 0s;\n    transition         : opacity .2s ease-out 0s;\n    -webkit-transform  : translate(-20px, -50%);\n    -ms-transform      : translate(-20px, -50%);\n    -o-transform       : translate(-20px, -50%);\n    transform          : translate(-20px, -50%);\n}\n.btn-animate-vertical:hover span > .icon {\n    opacity : 1;\n}\n.btn-animate-vertical span > .icon {\n    position          : absolute;\n    top               : inherit;\n    left              : 33%;\n    display           : block;\n    font-size         : 24px;\n    -webkit-transform : translate(-50%, -100%);\n    -ms-transform     : translate(-50%, -100%);\n    -o-transform      : translate(-50%, -100%);\n    transform         : translate(-50%, -100%);\n}\n.btn .icon {\n    width       : 1em;\n    margin      : -1px 3px 0;\n    line-height : inherit;\n    text-align  : center;\n}\n.btn-animate span {\n    display : block;\n    width   : 100%;\n    height  : 100%;\n}\n.btn-animate-side span:hover {\n    -webkit-transition : -webkit-transform .2s ease-out 0s;\n    -o-transition      : -o-transform .2s ease-out 0s;\n    transition         : transform .2s ease-out 0s;\n}\n.btn-animate-side:hover {\n    padding : 8px 28px;\n}\n/* vertical animation code*/\n.btn-animate-vertical span {\n    -webkit-transition : all .2s ease-out 0s;\n    -o-transition      : all .2s ease-out 0s;\n    transition         : all .2s ease-out 0s;\n}\n.btn-animate-vertical:focus,\n.btn-animate-vertical:active,\n.btn-animate-vertical:hover {\n    outline : none;\n}\n.btn-animate-vertical span > .icon {\n    opacity           : 0;\n    position          : absolute;\n    top               : -2px;\n    left              : 50%;\n    display           : block;\n    font-size         : 24px;\n    -webkit-transform : translate(-50%, -100%);\n    -ms-transform     : translate(-50%, -100%);\n    -o-transform      : translate(-50%, -100%);\n    transform         : translate(-50%, -100%);\n}\n.btn-animate-vertical:hover span {\n    -webkit-transform : translate(0, 150%);\n    -ms-transform     : translate(0, 150%);\n    -o-transform      : translate(0, 150%);\n    transform         : translate(0, 150%)\n}\n.btn-animate-vertical.btn-xs span > .icon {\n    top       : -5px;\n    font-size : 18px\n}\n.btn-animate-vertical.btn-sm span > .icon {\n    top       : -3px;\n    font-size : 21px\n}\n.btn-animate-vertical.btn-lg span > .icon {\n    font-size : 37px\n}\n/*side animation code*/\n.btn-animate-side {\n    padding : 8px 28px\n}\n.btn-animate-side span {\n    -webkit-transition : -webkit-transform .2s ease-out 0s;\n    -o-transition      : -o-transform .2s ease-out 0s;\n    transition         : transform .2s ease-out 0s\n}\n.btn-animate-side span > .icon {\n    position           : absolute;\n    top                : 50%;\n    left               : 0;\n    display            : block;\n    opacity            : 0;\n    -webkit-transition : opacity .2s ease-out 0s;\n    -o-transition      : opacity .2s ease-out 0s;\n    transition         : opacity .2s ease-out 0s;\n    -webkit-transform  : translate(-20px, -50%);\n    -ms-transform      : translate(-20px, -50%);\n    -o-transform       : translate(-20px, -50%);\n    transform          : translate(-20px, -50%)\n}\n.btn-animate-side:hover span {\n    -webkit-transform : translate(10px, 0);\n    -ms-transform     : translate(10px, 0);\n    -o-transform      : translate(10px, 0);\n    transform         : translate(10px, 0)\n}\n.btn-animate-side:hover span > .icon {\n    opacity : 1\n}\n.btn-animate-side.btn-xs {\n    padding : 3px 14px\n}\n.btn-animate-side.btn-xs span > .icon {\n    left : 5px\n}\n.btn-animate-side.btn-xs:hover span {\n    -webkit-transform : translate(8px, 0);\n    -ms-transform     : translate(8px, 0);\n    -o-transform      : translate(8px, 0);\n    transform         : translate(8px, 0)\n}\n.btn-animate-side.btn-sm {\n    padding : 6px 22px\n}\n.btn-animate-side.btn-sm span > .icon {\n    left : 3px\n}\n.btn-animate-side.btn-sm:hover span {\n    -webkit-transform : translate(8px, 0);\n    -ms-transform     : translate(8px, 0);\n    -o-transform      : translate(8px, 0);\n    transform         : translate(8px, 0)\n}\n.btn-animate-side.btn-lg {\n    padding : 10px 33px\n}\n.btn-animate-side.btn-lg span > .icon {\n    left : -6px\n}\n.btn-animate-side.btn-lg:hover span {\n    -webkit-transform : translate(14px, 0);\n    -ms-transform     : translate(14px, 0);\n    -o-transform      : translate(14px, 0);\n    transform         : translate(14px, 0)\n}\n.btn-floating {\n    width              : 56px;\n    height             : 56px;\n    padding            : 0;\n    margin             : 0;\n    font-size          : 24px;\n    text-align         : center;\n    border-radius      : 100%;\n    -webkit-box-shadow : 0 6px 10px rgba(0, 0, 0, .15);\n    box-shadow         : 0 6px 10px rgba(0, 0, 0, .15);\n}\n.btn-floating.btn-sm {\n    width     : 40px;\n    height    : 40px;\n    padding   : 0;\n    font-size : 15px;\n}\n/*contract overlay button size*/\n.ladda-button[data-style=contract-overlay] {\n    width : 140px;\n}\n.pad_left {\n    padding-left : 40px;\n}\n.flatbuttons div {\n    padding-top : 10px;\n}\n.m-r-50 {\n    margin-right : 50px;\n}\n.btn-group.drop_btn {\n    padding-top : 0;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1430:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1431);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("c0d6d792", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=4!./buttons.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04c1e435\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=4!./buttons.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1431:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.ladda-spinner div {\n    top: 5px !important;\n    left: 5px !important;\n}\n.quick_shortcuts .btn-responsive,.quick_shortcuts .btn-block {\n    margin-top: 0.5rem;\n}\n.ui-group-buttons .btn-default{\n    background-color: #ccc;\n}\n.example-buttons .btn{\n    padding: 0.6rem 1.25rem;\n    font-size: 1.1rem;\n}\n.hvr-buzz{\n    padding-right: 40px;\n    padding-left: 40px;\n    color: #666;\n}\n.ui-group-buttons .or-lg:before{\n        width:1.5em;\n        height:1.5em;\n        top: 7px;\n        left:85%;\n}\n.ui-group-buttons .or-lg:after{\n        height:2.75rem !important;\n}\n.or-sm:after{\n        border-bottom: 2rem solid #5a5a5a !important;\n}\n.pad_left .ladda-button{\n        margin-bottom: 10px;\n}\n.flatbuttons  .hvr-buzz:hover{\n        color: #333;\n}\n.button:active,.btn:active,.btn-success:focus,.ui-group-buttons .btn-default,.ui-group-buttons a{\n        color:#fff !important;\n}\n.button-default:active,.hvr-buzz:active,.btn-default.text-dark:active{\n        color: #333 !important;\n}\n.btn-animate-vertical{\n        padding: 8px 12px;\n}\n.ui-group-buttons .or:after{\n        height:2.75em;\n}\n.ui-group-buttons .or.or-sm{\n        height: 1.4em;\n}\n@media(max-width: 1024px){\n.boxed .pad_left{\n            padding-left: 0;\n}\n.boxed .pad_left .text-left .col-md-2,.boxed .pad_left .text-left .col-sm-4{\n            padding-left: 13px;\n            padding-right: 13px;\n            margin-right: 10px;\n}\n.labled_buttons .col-md-6{\n            margin-right: 10px;\n}\n}\n.btn-labeled{\n        margin-bottom: 10px;\n}\n.flatbuttons ul{\n        padding-top: 0;\n}\n.flatbuttons button{\n        margin-top: 0;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1432:
+/***/ 1538:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(528);
+/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(529);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js__ = __webpack_require__(1433);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Buttons_js_buttons_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(588);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -837,2184 +1589,4039 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var Ladda = __webpack_require__(1434);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "buttons",
+    name: "blank",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     mounted: function mounted() {
         "use strict";
-        //INITIALIZE PAGE
-        // Bind normal buttons
 
-        Ladda.bind('.button_normal', {
-            timeout: 3000
-        });
-
-        // Bind progress buttons and simulate loading progress
-        Ladda.bind('.button_progress', {
-            callback: function callback(instance) {
-                var progress = 0;
-                var interval = setInterval(function () {
-                    progress = Math.min(progress + Math.random() * 0.1, 1);
-                    instance.setProgress(progress);
-
-                    if (progress === 1) {
-                        instance.stop();
-                        clearInterval(interval);
+        $(document).ready(function () {
+            $('#icon-search').on("input", function () {
+                $(".name").each(function () {
+                    var regex = new RegExp($("#icon-search").val().trim().toLowerCase());
+                    var x = $(this).text();
+                    var res = x.match(regex, "i");
+                    if (res == null) {
+                        $(this).closest(".icon-preview-box").hide();
+                    } else {
+                        $(this).closest(".icon-preview-box").show();
                     }
-                }, 200);
+                });
+            });
+            jQuery.fn.outerHTML = function () {
+                return jQuery('<div />').append(this.eq(0).clone()).html();
+            };
+            var icon_size = $("#icon-size");
+            icon_size.on("input", function () {
+                var x = parseInt(icon_size.val()) + parseInt(6);
+                $(".fontnormal").html(".preview i{font-size:" + icon_size.val() + "px;}.preview:hover i{font-size:" + x + "px;}");
+                $(".icon-sizeshow").text(icon_size.val() + "px");
+            });
+            $("head").append("<style class='fontnormal'></style>");
+            $(".preview").on("click", function () {
+                var x = $(this).find("i").outerHTML();
+                copyTextToClipboard(x);
+            });
+
+            function copyTextToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea).select();
+                var successful = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.success('Element Copied to Clipboard. Now you can use it anywhere.');
             }
         });
     },
     destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(527), __webpack_require__(527)))
 
 /***/ }),
 
-/***/ 1433:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*! @license
-*  Project: Buttons
-*  Description: A highly customizable CSS button library built with Sass and Compass
-*  Author: Alex Wolfe and Rob Levin
-*  License: Apache License v2.0
-*/
-
-
-// the semi-colon before function invocation is a safety net against concatenated
-// scripts and/or other plugins which may not be closed properly.
-;(function ( $, window, document, undefined ) {
-  'use strict';
-
-  // undefined is used here as the undefined global variable in ECMAScript 3 is
-  // mutable (ie. it can be changed by someone else). undefined isn't really being
-  // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
-  // can no longer be modified.
-
-  // window and document are passed through as local variable rather than global
-  // as this (slightly) quickens the resolution process and can be more efficiently
-  // minified (especially when both are regularly referenced in your plugin).
-
-  // Create the defaults once
-  var pluginName = "menuButton";
-  var menuClass = ".button-dropdown";
-  var defaults = {
-    propertyName: "value"
-  };
-
-  // The actual plugin constructor
-  function Plugin( element, options ) {
-
-    //SET OPTIONS
-    this.options = $.extend( {}, defaults, options );
-    this._defaults = defaults;
-    this._name = pluginName;
-
-    //REGISTER ELEMENT
-    this.$element = $(element);
-
-    //INITIALIZE
-    this.init();
-  }
-
-  Plugin.prototype = {
-    constructor: Plugin,
-
-    init: function() {
-      // WE DON'T STOP PROPGATION SO CLICKS WILL AUTOMATICALLY
-      // TOGGLE AND REMOVE THE DROPDOWN
-      this.toggle();
-    },
-
-    toggle: function(el, options) {
-      if(this.$element.data('dropdown') === 'show') {
-        this.hideMenu();
-      }
-      else {
-        this.showMenu();
-      }
-    },
-
-    showMenu: function() {
-      this.$element.data('dropdown', 'show');
-      this.$element.find('ul').show();
-      this.$element.find('.button:first').addClass('is-active');
-    },
-
-    hideMenu: function() {
-      this.$element.data('dropdown', 'hide');
-      this.$element.find('ul').hide();
-      this.$element.find('.button:first').removeClass('is-active');
-    }
-  };
-
-  // A really lightweight plugin wrapper around the constructor,
-  // preventing against multiple instantiations
-  $.fn[pluginName] = function ( options ) {
-    return this.each(function () {
-
-      // TOGGLE BUTTON IF IT EXISTS
-      if ($.data(this, "plugin_" + pluginName)) {
-        $.data(this, "plugin_" + pluginName).toggle();
-      }
-      // OTHERWISE CREATE A NEW INSTANCE
-      else {
-        $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
-      }
-    });
-  };
-
-  //CLOSE OPEN DROPDOWN MENUS IF CLICKED SOMEWHERE ELSE
-  $(document).on('click', function(e) {
-    $.each($('[data-buttons=dropdown]'), function(i, value) {
-      if ($(e.target.offsetParent)[0] != $(this)[0]) {
-        if ($.data(this, "plugin_" + pluginName)) {
-          $.data(this, "plugin_" + pluginName).hideMenu();
-          $(this).find('ul').hide();
-        }
-      }
-    });
-  });
-
-  //DELEGATE CLICK EVENT FOR DROPDOWN MENUS
-  $(document).on('click', '[data-buttons=dropdown]', function(e) {
-    var $dropdown = $(e.currentTarget);
-    $dropdown.menuButton();
-  });
-
-  //IGNORE CLICK EVENTS FROM DISPLAY BUTTON IN DROPDOWN
-  $(document).on('click', '[data-buttons=dropdown] > a', function(e) {
-    e.preventDefault();
-  });
-
-})( jQuery, window, document);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(526)))
-
-/***/ }),
-
-/***/ 1434:
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Ladda 1.0.6 (2018-02-04, 13:19)
- * http://lab.hakim.se/ladda
- * MIT licensed
- *
- * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
- */
-
-!function(t,e){"use strict"; true?module.exports=e(__webpack_require__(1435)):"function"==typeof define&&define.amd?define(["spin"],e):t.Ladda=e(t.Spinner)}(this,function(t){"use strict";var e=[];function a(a){if(void 0!==a){if(/ladda-button/i.test(a.className)||(a.className+=" ladda-button"),a.hasAttribute("data-style")||a.setAttribute("data-style","expand-right"),!a.querySelector(".ladda-label")){var u=document.createElement("span");u.className="ladda-label",n=a,i=u,(r=document.createRange()).selectNodeContents(n),r.surroundContents(i),n.appendChild(i)}var n,i,r,d,o,s=a.querySelector(".ladda-spinner");s||((s=document.createElement("span")).className="ladda-spinner"),a.appendChild(s);var F={start:function(){return d||(d=function(e){var a,u,n=e.offsetHeight;0===n&&(n=parseFloat(window.getComputedStyle(e).height));n>32&&(n*=.8);e.hasAttribute("data-spinner-size")&&(n=parseInt(e.getAttribute("data-spinner-size"),10));e.hasAttribute("data-spinner-color")&&(a=e.getAttribute("data-spinner-color"));e.hasAttribute("data-spinner-lines")&&(u=parseInt(e.getAttribute("data-spinner-lines"),10));var i=.2*n;return new t({color:a||"#fff",lines:u||12,radius:i,length:.6*i,width:i<7?2:3,zIndex:"auto",top:"auto",left:"auto",className:""})}(a)),a.disabled=!0,a.setAttribute("data-loading",""),clearTimeout(o),d.spin(s),this.setProgress(0),this},startAfter:function(t){return clearTimeout(o),o=setTimeout(function(){F.start()},t),this},stop:function(){return F.isLoading()&&(a.disabled=!1,a.removeAttribute("data-loading")),clearTimeout(o),d&&(o=setTimeout(function(){d.stop()},1e3)),this},toggle:function(){return this.isLoading()?this.stop():this.start()},setProgress:function(t){t=Math.max(Math.min(t,1),0);var e=a.querySelector(".ladda-progress");0===t&&e&&e.parentNode?e.parentNode.removeChild(e):(e||((e=document.createElement("div")).className="ladda-progress",a.appendChild(e)),e.style.width=(t||0)*a.offsetWidth+"px")},enable:function(){return this.stop()},disable:function(){return this.stop(),a.disabled=!0,this},isLoading:function(){return a.hasAttribute("data-loading")},remove:function(){clearTimeout(o),a.disabled=!1,a.removeAttribute("data-loading"),d&&(d.stop(),d=null),e.splice(e.indexOf(F),1)}};return e.push(F),F}console.warn("Ladda button target must be defined.")}function u(t,e){if("function"==typeof t.addEventListener){var u=a(t),n=-1;t.addEventListener("click",function(){var a,i,r=!0,d=function(t,e){for(;t.parentNode&&t.tagName!==e;)t=t.parentNode;return e===t.tagName?t:void 0}(t,"FORM");if(void 0!==d&&!d.hasAttribute("novalidate"))if("function"==typeof d.checkValidity)r=d.checkValidity();else for(var o=(a=d,i=[],["input","textarea","select"].forEach(function(t){for(var e=a.getElementsByTagName(t),u=0;u<e.length;u++)e[u].hasAttribute("required")&&i.push(e[u])}),i),s=0;s<o.length;s++){var F=o[s],l=F.getAttribute("type");if(""===F.value.replace(/^\s+|\s+$/g,"")&&(r=!1),"checkbox"!==l&&"radio"!==l||F.checked||(r=!1),"email"===l&&(r=/^[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@[a-z0-9-]+(\.[a-z0-9-]+)*$/i.test(F.value)),"url"===l&&(r=/^([a-z]([a-z]|\d|\+|-|\.)*):(\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?((\[(|(v[\da-f]{1,}\.(([a-z]|\d|-|\.|_|~)|[!\$&'\(\)\*\+,;=]|:)+))\])|((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=])*)(:\d*)?)(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*|(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)){0})(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(F.value)),!r)break}r&&(u.startAfter(1),"number"==typeof e.timeout&&(clearTimeout(n),n=setTimeout(u.stop,e.timeout)),"function"==typeof e.callback&&e.callback.apply(null,[u]))},!1)}}return{bind:function(t,e){var a;if("string"==typeof t)a=document.querySelectorAll(t);else{if("object"!=typeof t)throw new Error("target must be string or object");a=[t]}e=e||{};for(var n=0;n<a.length;n++)u(a[n],e)},create:a,stopAll:function(){for(var t=0,a=e.length;t<a;t++)e[t].stop()}}});
-
-/***/ }),
-
-/***/ 1435:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
- * Copyright (c) 2011-2014 Felix Gnass
- * Licensed under the MIT license
- * http://spin.js.org/
- *
- * Example:
-    var opts = {
-      lines: 12             // The number of lines to draw
-    , length: 7             // The length of each line
-    , width: 5              // The line thickness
-    , radius: 10            // The radius of the inner circle
-    , scale: 1.0            // Scales overall size of the spinner
-    , corners: 1            // Roundness (0..1)
-    , color: '#000'         // #rgb or #rrggbb
-    , opacity: 1/4          // Opacity of the lines
-    , rotate: 0             // Rotation offset
-    , direction: 1          // 1: clockwise, -1: counterclockwise
-    , speed: 1              // Rounds per second
-    , trail: 100            // Afterglow percentage
-    , fps: 20               // Frames per second when using setTimeout()
-    , zIndex: 2e9           // Use a high z-index by default
-    , className: 'spinner'  // CSS class to assign to the element
-    , top: '50%'            // center vertically
-    , left: '50%'           // center horizontally
-    , shadow: false         // Whether to render a shadow
-    , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
-    , position: 'absolute'  // Element positioning
-    }
-    var target = document.getElementById('foo')
-    var spinner = new Spinner(opts).spin(target)
- */
-;(function (root, factory) {
-
-  /* CommonJS */
-  if (typeof module == 'object' && module.exports) module.exports = factory()
-
-  /* AMD module */
-  else if (true) !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
-				__WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
-
-  /* Browser global */
-  else root.Spinner = factory()
-}(this, function () {
-  "use strict"
-
-  var prefixes = ['webkit', 'Moz', 'ms', 'O'] /* Vendor prefixes */
-    , animations = {} /* Animation rules keyed by their name */
-    , useCssAnimations /* Whether to use CSS animations or setTimeout */
-    , sheet /* A stylesheet to hold the @keyframe or VML rules. */
-
-  /**
-   * Utility function to create elements. If no tag name is given,
-   * a DIV is created. Optionally properties can be passed.
-   */
-  function createEl (tag, prop) {
-    var el = document.createElement(tag || 'div')
-      , n
-
-    for (n in prop) el[n] = prop[n]
-    return el
-  }
-
-  /**
-   * Appends children and returns the parent.
-   */
-  function ins (parent /* child1, child2, ...*/) {
-    for (var i = 1, n = arguments.length; i < n; i++) {
-      parent.appendChild(arguments[i])
-    }
-
-    return parent
-  }
-
-  /**
-   * Creates an opacity keyframe animation rule and returns its name.
-   * Since most mobile Webkits have timing issues with animation-delay,
-   * we create separate rules for each line/segment.
-   */
-  function addAnimation (alpha, trail, i, lines) {
-    var name = ['opacity', trail, ~~(alpha * 100), i, lines].join('-')
-      , start = 0.01 + i/lines * 100
-      , z = Math.max(1 - (1-alpha) / trail * (100-start), alpha)
-      , prefix = useCssAnimations.substring(0, useCssAnimations.indexOf('Animation')).toLowerCase()
-      , pre = prefix && '-' + prefix + '-' || ''
-
-    if (!animations[name]) {
-      sheet.insertRule(
-        '@' + pre + 'keyframes ' + name + '{' +
-        '0%{opacity:' + z + '}' +
-        start + '%{opacity:' + alpha + '}' +
-        (start+0.01) + '%{opacity:1}' +
-        (start+trail) % 100 + '%{opacity:' + alpha + '}' +
-        '100%{opacity:' + z + '}' +
-        '}', sheet.cssRules.length)
-
-      animations[name] = 1
-    }
-
-    return name
-  }
-
-  /**
-   * Tries various vendor prefixes and returns the first supported property.
-   */
-  function vendor (el, prop) {
-    var s = el.style
-      , pp
-      , i
-
-    prop = prop.charAt(0).toUpperCase() + prop.slice(1)
-    if (s[prop] !== undefined) return prop
-    for (i = 0; i < prefixes.length; i++) {
-      pp = prefixes[i]+prop
-      if (s[pp] !== undefined) return pp
-    }
-  }
-
-  /**
-   * Sets multiple style properties at once.
-   */
-  function css (el, prop) {
-    for (var n in prop) {
-      el.style[vendor(el, n) || n] = prop[n]
-    }
-
-    return el
-  }
-
-  /**
-   * Fills in default values.
-   */
-  function merge (obj) {
-    for (var i = 1; i < arguments.length; i++) {
-      var def = arguments[i]
-      for (var n in def) {
-        if (obj[n] === undefined) obj[n] = def[n]
-      }
-    }
-    return obj
-  }
-
-  /**
-   * Returns the line color from the given string or array.
-   */
-  function getColor (color, idx) {
-    return typeof color == 'string' ? color : color[idx % color.length]
-  }
-
-  // Built-in defaults
-
-  var defaults = {
-    lines: 12             // The number of lines to draw
-  , length: 7             // The length of each line
-  , width: 5              // The line thickness
-  , radius: 10            // The radius of the inner circle
-  , scale: 1.0            // Scales overall size of the spinner
-  , corners: 1            // Roundness (0..1)
-  , color: '#000'         // #rgb or #rrggbb
-  , opacity: 1/4          // Opacity of the lines
-  , rotate: 0             // Rotation offset
-  , direction: 1          // 1: clockwise, -1: counterclockwise
-  , speed: 1              // Rounds per second
-  , trail: 100            // Afterglow percentage
-  , fps: 20               // Frames per second when using setTimeout()
-  , zIndex: 2e9           // Use a high z-index by default
-  , className: 'spinner'  // CSS class to assign to the element
-  , top: '50%'            // center vertically
-  , left: '50%'           // center horizontally
-  , shadow: false         // Whether to render a shadow
-  , hwaccel: false        // Whether to use hardware acceleration (might be buggy)
-  , position: 'absolute'  // Element positioning
-  }
-
-  /** The constructor */
-  function Spinner (o) {
-    this.opts = merge(o || {}, Spinner.defaults, defaults)
-  }
-
-  // Global defaults that override the built-ins:
-  Spinner.defaults = {}
-
-  merge(Spinner.prototype, {
-    /**
-     * Adds the spinner to the given target element. If this instance is already
-     * spinning, it is automatically removed from its previous target b calling
-     * stop() internally.
-     */
-    spin: function (target) {
-      this.stop()
-
-      var self = this
-        , o = self.opts
-        , el = self.el = createEl(null, {className: o.className})
-
-      css(el, {
-        position: o.position
-      , width: 0
-      , zIndex: o.zIndex
-      , left: o.left
-      , top: o.top
-      })
-
-      if (target) {
-        target.insertBefore(el, target.firstChild || null)
-      }
-
-      el.setAttribute('role', 'progressbar')
-      self.lines(el, self.opts)
-
-      if (!useCssAnimations) {
-        // No CSS animation support, use setTimeout() instead
-        var i = 0
-          , start = (o.lines - 1) * (1 - o.direction) / 2
-          , alpha
-          , fps = o.fps
-          , f = fps / o.speed
-          , ostep = (1 - o.opacity) / (f * o.trail / 100)
-          , astep = f / o.lines
-
-        ;(function anim () {
-          i++
-          for (var j = 0; j < o.lines; j++) {
-            alpha = Math.max(1 - (i + (o.lines - j) * astep) % f * ostep, o.opacity)
-
-            self.opacity(el, j * o.direction + start, alpha, o)
-          }
-          self.timeout = self.el && setTimeout(anim, ~~(1000 / fps))
-        })()
-      }
-      return self
-    }
-
-    /**
-     * Stops and removes the Spinner.
-     */
-  , stop: function () {
-      var el = this.el
-      if (el) {
-        clearTimeout(this.timeout)
-        if (el.parentNode) el.parentNode.removeChild(el)
-        this.el = undefined
-      }
-      return this
-    }
-
-    /**
-     * Internal method that draws the individual lines. Will be overwritten
-     * in VML fallback mode below.
-     */
-  , lines: function (el, o) {
-      var i = 0
-        , start = (o.lines - 1) * (1 - o.direction) / 2
-        , seg
-
-      function fill (color, shadow) {
-        return css(createEl(), {
-          position: 'absolute'
-        , width: o.scale * (o.length + o.width) + 'px'
-        , height: o.scale * o.width + 'px'
-        , background: color
-        , boxShadow: shadow
-        , transformOrigin: 'left'
-        , transform: 'rotate(' + ~~(360/o.lines*i + o.rotate) + 'deg) translate(' + o.scale*o.radius + 'px' + ',0)'
-        , borderRadius: (o.corners * o.scale * o.width >> 1) + 'px'
-        })
-      }
-
-      for (; i < o.lines; i++) {
-        seg = css(createEl(), {
-          position: 'absolute'
-        , top: 1 + ~(o.scale * o.width / 2) + 'px'
-        , transform: o.hwaccel ? 'translate3d(0,0,0)' : ''
-        , opacity: o.opacity
-        , animation: useCssAnimations && addAnimation(o.opacity, o.trail, start + i * o.direction, o.lines) + ' ' + 1 / o.speed + 's linear infinite'
-        })
-
-        if (o.shadow) ins(seg, css(fill('#000', '0 0 4px #000'), {top: '2px'}))
-        ins(el, ins(seg, fill(getColor(o.color, i), '0 0 1px rgba(0,0,0,.1)')))
-      }
-      return el
-    }
-
-    /**
-     * Internal method that adjusts the opacity of a single line.
-     * Will be overwritten in VML fallback mode below.
-     */
-  , opacity: function (el, i, val) {
-      if (i < el.childNodes.length) el.childNodes[i].style.opacity = val
-    }
-
-  })
-
-
-  function initVML () {
-
-    /* Utility function to create a VML tag */
-    function vml (tag, attr) {
-      return createEl('<' + tag + ' xmlns="urn:schemas-microsoft.com:vml" class="spin-vml">', attr)
-    }
-
-    // No CSS transforms but VML support, add a CSS rule for VML elements:
-    sheet.addRule('.spin-vml', 'behavior:url(#default#VML)')
-
-    Spinner.prototype.lines = function (el, o) {
-      var r = o.scale * (o.length + o.width)
-        , s = o.scale * 2 * r
-
-      function grp () {
-        return css(
-          vml('group', {
-            coordsize: s + ' ' + s
-          , coordorigin: -r + ' ' + -r
-          })
-        , { width: s, height: s }
-        )
-      }
-
-      var margin = -(o.width + o.length) * o.scale * 2 + 'px'
-        , g = css(grp(), {position: 'absolute', top: margin, left: margin})
-        , i
-
-      function seg (i, dx, filter) {
-        ins(
-          g
-        , ins(
-            css(grp(), {rotation: 360 / o.lines * i + 'deg', left: ~~dx})
-          , ins(
-              css(
-                vml('roundrect', {arcsize: o.corners})
-              , { width: r
-                , height: o.scale * o.width
-                , left: o.scale * o.radius
-                , top: -o.scale * o.width >> 1
-                , filter: filter
-                }
-              )
-            , vml('fill', {color: getColor(o.color, i), opacity: o.opacity})
-            , vml('stroke', {opacity: 0}) // transparent stroke to fix color bleeding upon opacity change
-            )
-          )
-        )
-      }
-
-      if (o.shadow)
-        for (i = 1; i <= o.lines; i++) {
-          seg(i, -2, 'progid:DXImageTransform.Microsoft.Blur(pixelradius=2,makeshadow=1,shadowopacity=.3)')
-        }
-
-      for (i = 1; i <= o.lines; i++) seg(i)
-      return ins(el, g)
-    }
-
-    Spinner.prototype.opacity = function (el, i, val, o) {
-      var c = el.firstChild
-      o = o.shadow && o.lines || 0
-      if (c && i + o < c.childNodes.length) {
-        c = c.childNodes[i + o]; c = c && c.firstChild; c = c && c.firstChild
-        if (c) c.opacity = val
-      }
-    }
-  }
-
-  if (typeof document !== 'undefined') {
-    sheet = (function () {
-      var el = createEl('style', {type : 'text/css'})
-      ins(document.getElementsByTagName('head')[0], el)
-      return el.sheet || el.styleSheet
-    }())
-
-    var probe = css(createEl('group'), {behavior: 'url(#default#VML)'})
-
-    if (!vendor(probe, 'transform') && probe.adj) initVML()
-    else useCssAnimations = vendor(probe, 'animation')
-  }
-
-  return Spinner
-
-}));
-
-
-/***/ }),
-
-/***/ 1436:
+/***/ 1539:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row" }, [
+  return _c(
+    "section",
+    { staticClass: "content" },
+    [
       _c(
-        "div",
-        { staticClass: "col-md-12" },
+        "card",
+        {
+          attrs: { title: "<i class='fa fa-fw fa-font'></i> Simple Line Icons" }
+        },
         [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='fa fa-fw ti-settings'></i> 2D Transforms Flat Buttons"
-              }
-            },
-            [
-              _c("div", { staticClass: "flatbuttons" }, [
-                _c("div", { staticClass: "text-left" }, [
-                  _c("h5", [_vm._v("Radiused Buttons")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "mb-5" }, [
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-default btn-lg hvr-buzz butn",
-                          attrs: { type: "button" }
-                        },
-                        [_vm._v("Buzz")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-rounded button-primary-flat hvr-hang"
-                        },
-                        [_vm._v("Hang\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-rounded button-action-flat hvr-sink"
-                        },
-                        [_vm._v("Sink\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-rounded button-highlight-flat hvr-pop"
-                        },
-                        [_vm._v("Pop\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-rounded button-caution-flat hvr-float"
-                        },
-                        [_vm._v("Float\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-rounded button-royal-flat hvr-rotate"
-                        },
-                        [_vm._v("Rotate\n                                ")]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "text-left btn-rounded" }, [
-                  _c("h5", [_vm._v("Rounded Buttons")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "mb-5" }, [
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-default button-pill button-flat hvr-grow"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Grow Button\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-pill button-primary-flat hvr-shrink"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    ShrinkButton\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-pill button-action-flat hvr-pulse"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Pulse Button\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-pill button-highlight-flat hvr-pulse-grow"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Pulse-grow\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-pill button-caution-flat hvr-pulse-shrink"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Pulse-shrink\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-pill button-royal-flat hvr-push"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Push Button\n                                "
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "text-left" }, [
-                  _c("h5", [_vm._v("Rectangle Box")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "mb-5" }, [
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-default button-flat hvr-wobble-skew"
-                        },
-                        [_vm._v("Button")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-primary-flat hvr-wobble-bottom"
-                        },
-                        [_vm._v("Button")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-action-flat hvr-wobble-to-top-right"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-highlight-flat hvr-wobble-vertical"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-caution-flat hvr-wobble-horizontal"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-royal-flat hvr-skew-backward"
-                        },
-                        [_vm._v("Button")]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "text-left" }, [
-                  _c("h5", [_vm._v("Cirlce Buttons")]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "mb-5" }, [
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-default button-circle button-flat hvr-wobble-top"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-circle button-primary-flat hvr-skew"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-circle button-action-flat hvr-wobble-to-top-right"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Button\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-circle button-highlight-flat hvr-pulse-grow"
-                        },
-                        [
-                          _vm._v(
-                            "\n                                    Button\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-circle button-caution-flat hvr-grow"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "button button-circle button-royal-flat hvr-buzz-out"
-                        },
-                        [_vm._v("Button\n                                ")]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='ti-bell'></i> Shadow and Glow Transitions Buttons"
-              }
-            },
-            [
-              _c("div", { staticClass: "flatbuttons_small" }, [
-                _c("ul", [
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-default button-glow button-rounded button-flat hvr-float-shadow"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Button\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-glow button-rounded button-primary-flat hvr-float-shadow"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Button\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-glow button-rounded button-action-flat hvr-float-shadow"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Button\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-glow button-rounded button-highlight-flat hvr-float-shadow"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Button\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-glow button-rounded button-caution-flat hvr-float-shadow"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Button\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-glow button-rounded button-royal-flat hvr-float-shadow"
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Button\n                            "
-                        )
-                      ]
-                    )
-                  ])
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-rocket'></i> Quick Shortcuts" } },
-            [
-              _c("div", { staticClass: "quick_shortcuts" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-6 col-md-6" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-danger  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-list-alt" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Apps\n                                ")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-warning  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-bookmark" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Bookmarks\n                                ")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-signal" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Reports\n                                ")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-comment" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Comments\n                                ")
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-6 col-md-6" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-user" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Users\n                                ")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-info  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-file" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Notes\n                                ")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-picture-o" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Photos\n                                ")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary  btn-responsive",
-                        attrs: { role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-tag" }),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(" Tags\n                                ")
-                      ]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-12 col-md-12 mt-2" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6 col-md-offset-3 m-auto" }, [
+              _c("form", { attrs: { role: "form" } }, [
+                _c("div", { staticClass: "input-group" }, [
                   _c(
-                    "button",
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-search" } },
+                    [_vm._v("Search")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "icon-search",
+                      id: "icon-search",
+                      placeholder: "Search Icon"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group" }, [
+                  _c(
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-size" } },
+                    [_vm._v("Size")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "range",
+                      name: "icon-size",
+                      id: "icon-size",
+                      min: "24",
+                      max: "40",
+                      value: "24"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "input-group-addon icon-sizeshow" },
+                    [_vm._v("24px")]
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("h4", { staticClass: "text-center" }, [
+            _vm._v("Click on any icon to copy its code to clipboard.")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "text-center" }, [
+                _c("h3", { staticClass: "text-left" }, [
+                  _vm._v(
+                    "\n                        Simple Line Icons\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
                     {
-                      staticClass: "btn btn-success btn-lg btn-block",
-                      attrs: { role: "button" }
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
                     },
                     [
-                      _c("span", { staticClass: "fa fa-globe" }),
-                      _vm._v(" Website\n                            ")
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("user")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-people icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("people")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-female icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-female")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-follow icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-follow")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-following icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-following")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-unfollow icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-unfollow")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-login icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("login")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-logout icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("logout")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-emotsmile icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("emotsmile")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-phone icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("phone")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-end icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("call-end")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-in icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("call-in")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-out icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("call-out")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-map icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("map")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-location-pin icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("location-pin")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-direction icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("direction")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-directions icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("directions")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-compass icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("compass")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-layers icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("layers")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-menu icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("menu")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-list icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("list")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-options-vertical icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("options-vertical")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-options icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("options")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-down icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-down")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-left icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-left")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-right icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-right")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-up icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-up")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-up-circle icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-up-circle")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-left-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-left-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-right-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-right-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-down-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-down-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-check icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("check")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-clock icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("clock")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-plus icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("plus")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-minus icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("minus")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-close icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("close")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-event icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("event")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-exclamation icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("exclamation")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-organization icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("organization")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-trophy icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("trophy")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-screen-smartphone icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-smartphone")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-screen-desktop icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-desktop")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-plane icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("plane")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-notebook icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("notebook")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-mustache icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("mustache")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-mouse icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("mouse")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnet icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("magnet")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-energy icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("energy")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-disc icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("disc")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cursor icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("cursor")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cursor-move icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cursor-move")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-crop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("crop")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-chemistry icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("chemistry")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-speedometer icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("speedometer")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-shield icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("shield")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-screen-tablet icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-tablet")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magic-wand icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magic-wand")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-hourglass icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("hourglass")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-graduation icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("graduation")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-ghost icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("ghost")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-game-controller icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("game-controller")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-fire icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("fire")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-eyeglass icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("eyeglass")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope-open")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope-letter icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope-letter")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bell icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bell")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-badge icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("badge")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-anchor icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("anchor")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-wallet icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("wallet")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-vector icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("vector")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-speech icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("speech")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-puzzle icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("puzzle")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-printer icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("printer")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-present icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("present")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-playlist icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("playlist")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pin icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("pin")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-picture icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("picture")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-handbag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("handbag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-globe-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("globe-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-globe icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("globe")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-folder-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("folder-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-folder icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("folder")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-film icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("film")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-feed icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("feed")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-drop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("drop")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-drawer icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("drawer")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-docs icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("docs")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-doc icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("doc")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-diamond icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("diamond")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cup icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("cup")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-calculator icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("calculator")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bubbles icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bubbles")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-briefcase icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("briefcase")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-book-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("book-open")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-basket-loaded icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("basket-loaded")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-basket icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("basket")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-action-undo icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("action-undo")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-action-redo icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("action-redo")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-wrench icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("wrench")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-umbrella icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("umbrella")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-trash icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("trash")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-tag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("tag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-support icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("support")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-frame icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("frame")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-size-fullscreen icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("size-fullscreen")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-size-actual icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("size-actual")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-shuffle icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("shuffle")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-share-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("share-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-share icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("share")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-rocket icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("rocket")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-question icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("question")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pie-chart icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("pie-chart")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pencil icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("pencil")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-note icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("note")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-loop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("loop")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-home icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("home")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-grid icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("grid")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-graph icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("graph")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-microphone icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("microphone")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-music-tone-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("music-tone-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-music-tone icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("music-tone")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-earphones-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("earphones-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-earphones icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("earphones")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-equalizer icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("equalizer")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-like icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("like")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-dislike icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("dislike")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-start icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-start")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-rewind icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-rewind")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-play icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-play")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-pause icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-pause")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-forward icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-forward")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-end icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-end")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-1 icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-1")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-2 icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-2")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-off icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-off")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-calendar icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("calendar")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bulb icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bulb")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-chart icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("chart")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-ban icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("ban")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bubble icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bubble")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-camrecorder icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("camrecorder")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-camera icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("camera")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cloud-download icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cloud-download")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cloud-upload icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cloud-upload")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-eye icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("eye")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-flag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("flag")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-heart icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("heart")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-info icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("info")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-key icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("key")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-link icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("link")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-lock icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("lock")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-lock-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("lock-open")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier-add icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier-add")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier-remove icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier-remove")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paper-clip icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("paper-clip")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paper-plane icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("paper-plane")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-power icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("power")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-refresh icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("refresh")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-reload icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("reload")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-settings icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("settings")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-star icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("star")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-symbol-female icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("symbol-female")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-symbol-male icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("symbol-male")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-target icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("target")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-credit-card icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("credit-card")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paypal icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("paypal")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-tumblr icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-tumblr")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-twitter icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-twitter")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-facebook icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-facebook")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-instagram icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-instagram")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-linkedin icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-linkedin")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-pinterest icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-pinterest")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-github icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-github")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-google icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-google")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-reddit icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-reddit")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-skype icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-skype")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-dribbble icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-dribbble")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-behance icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-behance")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-foursqare icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-foursqare")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-social-soundcloud icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-soundcloud")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-spotify icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-spotify")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-social-stumbleupon icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-stumbleupon")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-youtube icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-youtube")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-dropbox icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-dropbox")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-vkontakte icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-vkontakte")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-steam icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-steam")
+                        ])
+                      ])
                     ]
                   )
                 ])
               ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-12" },
-        [
-          _c(
-            "card",
-            { attrs: { title: "<i class='ti-rocket'></i> 3-D Buttons" } },
-            [
-              _c("div", { staticClass: "flatbuttons" }, [
-                _c("ul", [
-                  _c("li", [
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "right" } }, [
+            _c("div", { attrs: { id: "right-slim" } }, [
+              _c("div", { staticClass: "rightsidebar-right" }, [
+                _c("div", { staticClass: "rightsidebar-right-content" }, [
+                  _c("div", { staticClass: "panel-tabs" }, [
                     _c(
-                      "button",
-                      { staticClass: "button button-default button-3d" },
-                      [_vm._v("Button")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
+                      "ul",
                       {
-                        staticClass:
-                          "button button-3d button-primary button-rounded btn_3d"
-                      },
-                      [_vm._v("Button\n                            ")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-3d button-action button-pill btn_3d"
-                      },
-                      [_vm._v("Button\n                            ")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-3d button-highlight button-circle btn_3d"
-                      },
-                      [_vm._v("Button\n                            ")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "button button-3d button-caution icon-btn btn_3d"
+                        staticClass: "nav nav-tabs nav-float",
+                        attrs: { role: "tablist" }
                       },
                       [
-                        _c("i", { staticClass: "fa ti-instagram" }),
-                        _vm._v(" Button\n                            ")
+                        _c("li", { staticClass: "nav-item text-center" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link active ",
+                              attrs: {
+                                href: "#r_tab1",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-comments" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "text-center nav-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "#r_tab2",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-bell" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "text-center nav-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "#r_tab3",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-settings" })]
+                          )
+                        ])
                       ]
                     )
                   ]),
                   _vm._v(" "),
-                  _c("li", [
+                  _c("div", { staticClass: "tab-content" }, [
                     _c(
-                      "button",
-                      { staticClass: "button button-3d button-royal btn_3d" },
-                      [_vm._v("Button")]
-                    )
-                  ])
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-12" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='ti-arrow-circle-up'></i> Spinner Buttons"
-              }
-            },
-            [
-              _c("div", { staticClass: "pad_left" }, [
-                _c("div", { staticClass: "text-left" }, [
-                  _c("div", { staticClass: "row " }, [
-                    _c("div", { staticClass: "col-lg-12" }, [
-                      _c("h5", [_vm._v("Buttons")])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-primary button_normal",
-                          attrs: { "data-style": "expand-left" }
-                        },
-                        [
-                          _vm._v(
-                            "Expand-left\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-primary button_normal",
-                          attrs: { "data-style": "expand-right" }
-                        },
-                        [
-                          _vm._v(
-                            "Expand-right\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-primary button_normal",
-                          attrs: { "data-style": "expand-up" }
-                        },
-                        [_vm._v("Expand-up\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-primary button_normal",
-                          attrs: { "data-style": "slide-down" }
-                        },
-                        [_vm._v("Slide-down\n                                ")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-primary button_normal",
-                          attrs: { "data-style": "contract" }
-                        },
-                        [_vm._v("Contract")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-3 col-xl-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-primary button_normal",
-                          attrs: { "data-style": "zoom-in" }
-                        },
-                        [_vm._v("Zoom-in\n                                ")]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row " }, [
-                    _c("div", { staticClass: "col-lg-12" }, [
-                      _c("h5", [_vm._v("Icon Buttons")])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-info button_normal text-white",
-                          attrs: { "data-style": "slide-left" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "fa ti-arrow-circle-left",
-                            attrs: { "aria-hidden": "true" }
-                          }),
-                          _vm._v(
-                            " Slide-left\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-info button_normal text-white",
-                          attrs: { "data-style": "slide-right" }
-                        },
-                        [
-                          _vm._v("Slide-right "),
-                          _c("i", {
-                            staticClass: "fa ti-arrow-circle-right",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-info button_normal text-white",
-                          attrs: { "data-style": "slide-up" }
-                        },
-                        [
-                          _vm._v("Slide-up "),
-                          _c("i", {
-                            staticClass: "fa ti-arrow-circle-up",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-info button_normal text-white",
-                          attrs: { "data-style": "contract" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "fa ti-filter",
-                            attrs: { "aria-hidden": "true" }
-                          }),
-                          _vm._v(
-                            "\n                                    Contract\n                                "
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "ladda-button btn btn-info button_normal text-white",
-                          attrs: { "data-style": "zoom-out" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "fa ti-zoom-out",
-                            attrs: { "aria-hidden": "true" }
-                          }),
-                          _vm._v(" Zoom-out\n                                ")
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-12 col-sm-6" }, [
-                      _c("div", { staticClass: "row text-left" }, [
-                        _c("div", { staticClass: "col-lg-12" }, [
-                          _c("h5", [_vm._v("Button Sizes")])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-md-4" }, [
+                      "div",
+                      {
+                        staticClass: "tab-pane active",
+                        attrs: { id: "r_tab1" }
+                      },
+                      [
+                        _c("div", { attrs: { id: "slim_t1" } }, [
                           _c(
-                            "button",
+                            "h5",
                             {
                               staticClass:
-                                "ladda-button btn btn-warning btn-lg button_normal text-white",
-                              attrs: { "data-style": "expand-right" }
+                                "rightsidebar-right-heading text-uppercase text-xs"
                             },
                             [
+                              _c("i", {
+                                staticClass: "menu-icon  fa fa-fw ti-user"
+                              }),
                               _vm._v(
-                                "Large\n                                        "
+                                "\n                                        Contacts\n                                    "
                               )
                             ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-md-4" }, [
+                          ),
+                          _vm._v(" "),
                           _c(
-                            "button",
-                            {
-                              staticClass:
-                                "ladda-button btn btn-warning  button_normal text-white",
-                              attrs: { "data-style": "expand-right" }
-                            },
+                            "ul",
+                            { staticClass: "list-unstyled margin-none" },
                             [
-                              _vm._v(
-                                "Small\n                                        "
-                              )
-                            ]
-                          )
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-12 col-sm-6" }, [
-                      _c("div", { staticClass: "row text-left" }, [
-                        _c("div", { staticClass: "col-lg-12" }, [
-                          _c("h5", [_vm._v("Progress Button Spinners")])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-md-5" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "ladda-button btn btn-success button_progress text-white",
-                              attrs: { "data-style": "expand-right" }
-                            },
-                            [
-                              _vm._v(
-                                "Expand-right\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-md-5" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "ladda-button btn btn-success button_progress text-white",
-                              attrs: { "data-style": "contract" }
-                            },
-                            [
-                              _vm._v(
-                                "contract\n                                        "
-                              )
-                            ]
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-12" },
-        [
-          _c(
-            "card",
-            {
-              attrs: { title: "<i class='fa fa-fw ti-settings'></i> Buttons" }
-            },
-            [
-              _c("div", { staticClass: "flatbuttons" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-12" }, [
-                    _c("h5", { staticClass: "example-title" }, [
-                      _vm._v("Icon Button & Dropdown")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "example example-buttons" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-icon btn-default m-r-50 mb-2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "icon fa fa-fw ti-location-pin",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-icon btn-primary m-r-50 mb-2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "icon fa fa-fw ti-layout-grid3",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-icon btn-success m-r-50 mb-2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "icon fa fa-fw ti-bell",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-icon btn-info m-r-50 mb-2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "icon fa fa-fw ti-calendar",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn btn-icon btn-warning btn-round m-r-50 mb-2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "icon fa fa-fw ti-time",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn btn-icon btn-danger btn-round m-r-50 mb-2",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "icon fa fa-fw ti-flag-alt-2",
-                            attrs: { "aria-hidden": "true" }
-                          })
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "btn-group drop_btn",
-                          attrs: { role: "group" }
-                        },
-                        [
-                          _c(
-                            "b-dropdown",
-                            {
-                              staticClass: "pt-0",
-                              attrs: {
-                                right: "",
-                                split: "",
-                                variant: "primary"
-                              }
-                            },
-                            [
-                              _c("template", { slot: "button-content" }, [
-                                _c("i", { staticClass: "ti-calendar more" })
-                              ]),
-                              _vm._v(" "),
-                              _c("b-dropdown-item", [_vm._v("Dropdown")]),
-                              _vm._v(" "),
-                              _c("b-dropdown-item", [_vm._v("Dropdown")])
-                            ],
-                            2
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-12 " }, [
-                    _c("div", { staticClass: "example-wrap" }, [
-                      _c("h5", { staticClass: "example-title" }, [
-                        _vm._v("Button Animation")
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "btn-group display_media",
-                          attrs: { role: "group" }
-                        },
-                        [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", { staticClass: "col-sm-6" }, [
                               _c(
-                                "button",
-                                {
-                                  staticClass:
-                                    "btn btn-animate btn-animate-side btn-success m-r-50",
-                                  attrs: { type: "button" }
-                                },
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
                                 [
-                                  _c("span", [
-                                    _c("i", {
-                                      staticClass: "icon fa fa-fw ti-import",
-                                      attrs: { "aria-hidden": "true" }
-                                    }),
-                                    _vm._v("Side Animation")
-                                  ])
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Annette\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Jordan\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Stewart\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-warning"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Alfred\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-danger"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Eileen\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-muted"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Robert\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-muted"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Cassandra\n                                            "
+                                      )
+                                    ]
+                                  )
                                 ]
                               )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-6" }, [
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-export" }),
+                              _vm._v(
+                                "\n                                        Recent Updates\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("div", [
+                            _c("ul", { staticClass: "list-unstyled" }, [
                               _c(
-                                "button",
-                                {
-                                  staticClass:
-                                    "btn btn-animate btn-animate-vertical btn-lg btn-success m-r-50",
-                                  attrs: { type: "button" }
-                                },
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
                                 [
-                                  _c("span", [
+                                  _c("a", { attrs: { href: "#" } }, [
                                     _c("i", {
-                                      staticClass: "icon fa fa-fw ti-import",
-                                      attrs: { "aria-hidden": "true" }
+                                      staticClass:
+                                        "fa ti-comments-smiley fa-fw text-primary"
                                     }),
                                     _vm._v(
-                                      "Vertical\n                                                                  Animation"
+                                      "\n                                                    New Comment\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-twitter-alt fa-fw text-success"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    3 New Followers\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass: "fa ti-email fa-fw text-info"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Message Sent\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-write fa-fw text-warning"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Task\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-export fa-fw text-danger"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Server Rebooted\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-info-alt fa-fw text-primary"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Server Not Responding\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-shopping-cart fa-fw text-success"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Order Placed\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass: "fa ti-money fa-fw text-info"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Payment Received\n                                                "
                                     )
                                   ])
                                 ]
                               )
                             ])
                           ])
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='ti-layout-column3'></i> Group buttons"
-              }
-            },
-            [
-              _c("div", [
-                _c("div", { staticClass: "col-md-12 text-center" }, [
-                  _c("div", { staticClass: "ui-group-buttons" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: { href: "#/buttons", role: "button" }
-                      },
-                      [_c("span", { staticClass: "fa fa-thumbs-up" })]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "or" }),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-danger",
-                        attrs: { href: "#/buttons", role: "button" }
-                      },
-                      [_c("span", { staticClass: "fa fa-thumbs-down" })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ui-group-buttons" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: { href: "#/buttons", role: "button" }
-                      },
-                      [_c("span", { staticClass: "fa fa-floppy-o" })]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "or" }),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-danger",
-                        attrs: { href: "#/buttons", role: "button" }
-                      },
-                      [_c("span", { staticClass: "fa fa-trash" })]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ui-group-buttons" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: { href: "#/buttons", role: "button" }
-                      },
-                      [
-                        _c("span", { staticClass: "fa fa-check" }),
-                        _vm._v(" Sign Up\n                            ")
+                        ])
                       ]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "or" }),
-                    _vm._v(" "),
                     _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-default",
-                        attrs: { href: "#/buttons", role: "button" }
-                      },
+                      "div",
+                      { staticClass: "tab-pane fade", attrs: { id: "r_tab2" } },
                       [
-                        _c("span", { staticClass: "fa fa-remove" }),
-                        _vm._v(" Reset\n                            ")
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ui-group-buttons" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary btn-lg",
-                        attrs: { type: "button" }
-                      },
-                      [_vm._v("Large")]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "or or-lg" }),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success btn-lg",
-                        attrs: { type: "button" }
-                      },
-                      [_vm._v("Large")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ui-group-buttons" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        attrs: { type: "button" }
-                      },
-                      [_vm._v("Default")]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "or" }),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: { type: "button" }
-                      },
-                      [_vm._v("Success")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "ui-group-buttons" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary ",
-                        attrs: { type: "button" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Small\n                            "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "or or-sm" }),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success ",
-                        attrs: { type: "button" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                Small\n                            "
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("br")
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            {
-              staticClass: "labled-buttons",
-              attrs: { title: "<i class='ti-save'></i> Buttons With Labels" }
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "col-lg-12 col-md-12 col-12 col-sm-12" },
-                [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-success",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-check" })
-                          ]),
-                          _vm._v(" Success\n                            ")
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-danger",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-remove" })
-                          ]),
-                          _vm._v(" Cancel\n                            ")
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-warning",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-bookmark" })
-                          ]),
-                          _vm._v(" Bookmark\n                            ")
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-primary",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-camera" })
-                          ]),
-                          _vm._v(" Camera\n                            ")
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-default text-dark",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-chevron-left" })
-                          ]),
-                          _vm._v(" Left\n                            ")
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-default text-dark",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _vm._v("\n                                Right "),
-                          _c("span", { staticClass: "btn-label label-right" }, [
-                            _c("i", { staticClass: "fa fa-chevron-right" })
+                        _c("div", { attrs: { id: "slim_t2" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-bell" }),
+                              _vm._v(
+                                "\n                                        Notifications\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled m-t-15 notifications"
+                            },
+                            [
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("John Doe")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    5 members joined today\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("Just now")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Tony")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    likes a photo of you\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("5 min")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("John")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    Dont forgot to call...\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("11 min")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Jenny Kerry")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    Done with it...\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("1 Hour")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Ernest Kerry")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    2 members joined today\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("3 Days")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "text-right noti-footer" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _vm._v("View All Notifications "),
+                                    _c("i", { staticClass: "ti-arrow-right" })
+                                  ])
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-check-box" }),
+                              _vm._v(
+                                "\n                                        Tasks\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-unstyled m-t-15" }, [
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Button Design")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("40%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-success progress-bar-striped",
+                                        staticStyle: { width: "40%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "40",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("40% Complete (success)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Theme Creation")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("20%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-info progress-bar-striped",
+                                        staticStyle: { width: "20%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "20",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("20% Complete")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("XYZ Task To Do")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("60%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-warning progress-bar-striped",
+                                        staticStyle: { width: "60%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "60",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("60% Complete (warning)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Transitions Creation")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("80%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-danger progress-bar-striped",
+                                        staticStyle: { width: "80%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "80",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("80% Complete (danger)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "text-right" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("View All Tasks "),
+                                _c("i", { staticClass: "ti-arrow-right" })
+                              ])
+                            ])
                           ])
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-success",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-fw ti-thumb-up" })
-                          ]),
-                          _vm._v(" Up\n                            ")
-                        ]
-                      )
-                    ]),
+                        ])
+                      ]
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-warning",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-fw ti-thumb-down" })
-                          ]),
-                          _vm._v(" Down\n                            ")
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-info",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-refresh" })
-                          ]),
-                          _vm._v(" Refresh\n                            ")
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-labeled btn-primary",
-                          attrs: { type: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-trash" })
-                          ]),
-                          _vm._v(" Trash\n                            ")
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-warning btn-labeled text-white",
-                          attrs: { role: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label butn_clr" }, [
-                            _c("i", { staticClass: "fa fa-info-circle" })
-                          ]),
-                          _vm._v(" Info Web\n                            ")
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-6 col-sm-6" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-success btn-labeled text-white",
-                          attrs: { role: "button" }
-                        },
-                        [
-                          _c("span", { staticClass: "btn-label" }, [
-                            _c("i", { staticClass: "fa fa-globe" })
-                          ]),
-                          _vm._v(" Web\n                            ")
-                        ]
-                      )
-                    ])
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane fade", attrs: { id: "r_tab3" } },
+                      [
+                        _c("div", { attrs: { id: "slim_t3" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase gen-sett-m-t text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-settings" }),
+                              _vm._v(
+                                "\n                                        General\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled settings-list m-t-10"
+                            },
+                            [
+                              _c("li", [
+                                _c("label", { attrs: { for: "status" } }, [
+                                  _vm._v("Available")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "status",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "email-auth" } }, [
+                                  _vm._v("Login with Email")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "email-auth",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "update" } }, [
+                                  _vm._v("Auto Update")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "update",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-volume" }),
+                              _vm._v(
+                                "\n                                        Sound & Notification\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled settings-list m-t-10"
+                            },
+                            [
+                              _c("li", [
+                                _c("label", { attrs: { for: "chat-sound" } }, [
+                                  _vm._v("Chat Sound")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "chat-sound",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "noti-sound" } }, [
+                                  _vm._v("Notification Sound")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "noti-sound",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "remain" } }, [
+                                  _vm._v("Remainder ")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "remain",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "vol" } }, [
+                                  _vm._v("Volume")
+                                ]),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: {
+                                    type: "range",
+                                    id: "vol",
+                                    min: "0",
+                                    max: "100",
+                                    value: "15"
+                                  }
+                                })
+                              ])
+                            ]
+                          )
+                        ])
+                      ]
+                    )
                   ])
-                ]
-              )
-            ]
-          )
-        ],
-        1
+                ])
+              ])
+            ])
+          ])
+        ]
       )
-    ])
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -3022,29 +5629,27 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-04c1e435", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-63fc1bf0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 457:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1422)
-  __webpack_require__(1424)
-  __webpack_require__(1426)
-  __webpack_require__(1428)
-  __webpack_require__(1430)
+  __webpack_require__(1532)
+  __webpack_require__(1534)
+  __webpack_require__(1536)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1432)
+var __vue_script__ = __webpack_require__(1538)
 /* template */
-var __vue_template__ = __webpack_require__(1436)
+var __vue_template__ = __webpack_require__(1539)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -3061,7 +5666,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/buttons.vue"
+Component.options.__file = "resources/components/pages/simple_line_icons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -3070,9 +5675,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-04c1e435", Component.options)
+    hotAPI.createRecord("data-v-63fc1bf0", Component.options)
   } else {
-    hotAPI.reload("data-v-04c1e435", Component.options)
+    hotAPI.reload("data-v-63fc1bf0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -3084,7 +5689,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 526:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -13456,19 +16061,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(529)
+  __webpack_require__(530)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(531)
+var __vue_script__ = __webpack_require__(532)
 /* template */
-var __vue_template__ = __webpack_require__(532)
+var __vue_template__ = __webpack_require__(533)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -13508,13 +16113,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 529:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(530);
+var content = __webpack_require__(531);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -13535,7 +16140,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -13550,7 +16155,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13595,7 +16200,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -13654,6 +16259,61 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
+
+/***/ }),
+
+/***/ 580:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.eot?f33df365d6d0255b586f2920355e94d7";
+
+/***/ }),
+
+/***/ 588:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(527)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(589));
+//# sourceMappingURL=toastr.js.map
+
+
+/***/ }),
+
+/***/ 589:
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
+
+/***/ }),
+
+/***/ 624:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff2?0cb0b9c589c0624c9c78dd3d83e946f6";
+
+/***/ }),
+
+/***/ 625:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.ttf?d2285965fe34b05465047401b8595dd0";
+
+/***/ }),
+
+/***/ 626:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff?78f07e2c2a535c26ef21d95e41bd7175";
+
+/***/ }),
+
+/***/ 627:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.svg?2fe2efe63441d830b1acd106c1fe8734";
 
 /***/ })
 

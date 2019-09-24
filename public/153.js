@@ -1,22 +1,22 @@
 webpackJsonp([153],{
 
-/***/ 1412:
+/***/ 1507:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1413);
+var content = __webpack_require__(1508);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("fc4199fc", content, false, {});
+var update = __webpack_require__(26)("5d376f71", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css", function() {
-     var newContent = require("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./wenk.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./wenk.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1413:
+/***/ 1508:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,30 +35,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n.abc-checkbox {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-checkbox label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-checkbox label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -1.25rem;\n  border: 1px solid #ced4da;\n  border-radius: 3px;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;\n}\n.abc-checkbox label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  left: 0;\n  top: 2px;\n  margin-left: -1.25rem;\n  padding-left: 3px;\n  padding-top: 1px;\n  font-size: 11px;\n  color: #495057;\n}\n.abc-checkbox input[type=\"checkbox\"],\n.abc-checkbox input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-checkbox input[type=\"checkbox\"]:focus + label::before,\n.abc-checkbox input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-checkbox input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox input[type=\"radio\"]:checked + label::after {\n  font-family: \"FontAwesome\";\n  content: \"\\F00C\";\n}\n.abc-checkbox input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox input[type=\"radio\"]:indeterminate + label::after {\n  display: block;\n  content: \"\";\n  width: 10px;\n  height: 3px;\n  background-color: #555555;\n  border-radius: 2px;\n  margin-left: -16.5px;\n  margin-top: 7px;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label,\n.abc-checkbox input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::before,\n.abc-checkbox input[type=\"radio\"]:disabled + label::before {\n  background-color: #e9ecef;\n  cursor: not-allowed;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::after,\n.abc-checkbox input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-checkbox.abc-checkbox-circle label::before {\n  border-radius: 50%;\n}\n.abc-checkbox.checkbox-inline {\n  margin-top: 0;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-radio {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-radio label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-radio label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -20px;\n  border: 1px solid #ced4da;\n  border-radius: 50%;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out;\n}\n.abc-radio label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  content: \" \";\n  width: 11px;\n  height: 11px;\n  left: 3px;\n  top: 5px;\n  margin-left: -20px;\n  border-radius: 50%;\n  background-color: #495057;\n  transform: scale(0, 0);\n  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);\n}\n.abc-radio input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-radio input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-radio input[type=\"radio\"]:checked + label::after {\n  transform: scale(1, 1);\n}\n.abc-radio input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::before {\n  cursor: not-allowed;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-radio.radio-inline {\n  margin-top: 0;\n}\n.abc-radio-primary input[type=\"radio\"] + label::after {\n  background-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::before {\n  border-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::after {\n  background-color: #007bff;\n}\n.abc-radio-danger input[type=\"radio\"] + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::before {\n  border-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-info input[type=\"radio\"] + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::before {\n  border-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-warning input[type=\"radio\"] + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::before {\n  border-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-success input[type=\"radio\"] + label::after {\n  background-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::before {\n  border-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::after {\n  background-color: #28a745;\n}\nlabel .was-validated .form-check-input:invalid .abc-checkbox:before, label\n.was-validated .form-check-input:invalid .abc-radio:before, label .form-check-input.is-invalid .abc-checkbox:before, label\n.form-check-input.is-invalid .abc-radio:before {\n  border-color: #dc3545;\n}\n", ""]);
+exports.push([module.i, "/**\n * wenk - Lightweight tooltip for the greater good\n * @version v1.0.6\n * (c) 2018 Tiaan du Plessis @tiaanduplessis |\n * @link https://tiaanduplessis.github.io/wenk/\n * @license MIT\n */\n[data-wenk]{position:relative\n}\n[data-wenk]:after{position:absolute;font-size:13px;border-radius:.4rem;content:attr(data-wenk);padding:12.8px;padding:.8rem;background-color:hsla(0,0%,7%,.8);-webkit-box-shadow:0 0 14px rgba(0,0,0,.1);box-shadow:0 0 14px rgba(0,0,0,.1);color:#fff;line-height:20px;line-height:1.25rem;text-align:left;z-index:1;pointer-events:none;display:block;visibility:hidden;-webkit-transition:all .3s;transition:all .3s;bottom:100%;left:50%;-webkit-transform:translate(-50%,10px);transform:translate(-50%,10px);white-space:pre;width:auto;opacity:0\n}\n[data-wenk]:hover{overflow:visible\n}\n[data-wenk]:hover:after{display:block;opacity:1;visibility:visible;-webkit-transform:translate(-50%,-10px);transform:translate(-50%,-10px)\n}\n[data-wenk].wenk--bottom:after,[data-wenk][data-wenk-pos=bottom]:after{bottom:auto;top:100%;left:50%;-webkit-transform:translate(-50%,-10px);transform:translate(-50%,-10px)\n}\n[data-wenk].wenk--bottom:hover:after,[data-wenk][data-wenk-pos=bottom]:hover:after{-webkit-transform:translate(-50%,10px);transform:translate(-50%,10px)\n}\n[data-wenk].wenk--left:after,[data-wenk][data-wenk-pos=left]:after{bottom:auto;left:auto;top:50%;right:100%;-webkit-transform:translate(10px,-50%);transform:translate(10px,-50%)\n}\n[data-wenk].wenk--left:hover:after,[data-wenk].wenk--right:after,[data-wenk][data-wenk-pos=left]:hover:after,[data-wenk][data-wenk-pos=right]:after{-webkit-transform:translate(-10px,-50%);transform:translate(-10px,-50%)\n}\n[data-wenk].wenk--right:after,[data-wenk][data-wenk-pos=right]:after{bottom:auto;top:50%;left:100%\n}\n[data-wenk].wenk--right:hover:after,[data-wenk][data-wenk-pos=right]:hover:after{-webkit-transform:translate(10px,-50%);transform:translate(10px,-50%)\n}\n[data-wenk].wenk-length--small:after,[data-wenk][data-wenk-length=small]:after{white-space:normal;width:80px\n}\n[data-wenk].wenk-length--medium:after,[data-wenk][data-wenk-length=medium]:after{white-space:normal;width:150px\n}\n[data-wenk].wenk-length--large:after,[data-wenk][data-wenk-length=large]:after{white-space:normal;width:260px\n}\n[data-wenk].wenk-length--fit:after,[data-wenk][data-wenk-length=fit]:after{white-space:normal;width:100%\n}\n[data-wenk].wenk-align--right:after,[data-wenk][data-wenk-align=right]:after{text-align:right\n}\n[data-wenk].wenk-align--center:after,[data-wenk][data-wenk-align=center]:after{text-align:center\n}\n[data-wenk=\"\"]:after{visibility:hidden!important\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1414:
+/***/ 1509:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1415);
+var content = __webpack_require__(1510);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("3e4bee86", content, false, {});
+var update = __webpack_require__(26)("2e4db064", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./vscroll.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./vscroll.vue");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./tab.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./tab.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1415:
+/***/ 1510:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,20 +77,250 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.radio[data-v-11f2ea77],\n.checkbox[data-v-11f2ea77] {\n    display: block;\n}\n", ""]);
+exports.push([module.i, "\n.faq-cat-content {\n    margin-top : 25px;\n}\n.faq-cat-tabs li a {\n    padding          : 15px 10px 15px 10px;\n    background-color : #ffffff;\n    border           : 1px solid #dddddd;\n    color            : #777777;\n}\n.tab-content.faq-cat-content .panel {\n    box-shadow : 0 1px 1px rgba(0, 0, 0, 0.2);\n}\n.nav-tabs li a:focus,\n.panel-heading a:focus {\n    outline : none;\n}\n.panel-heading a,\n.panel-heading a:hover,\n.panel-heading a:focus {\n    text-decoration : none;\n    color           : #777777;\n}\n.faq-cat-content .panel-heading:hover {\n    background-color : #efefef;\n}\n.active-faq {\n    border-left : 5px solid #888888;\n}\n.panel-faq .panel-heading .panel-title span {\n    font-size   : 13px;\n    font-weight : normal;\n}\n.nav-tabs-custom > .nav-tabs > li.active {\n    border-top-color : #6699cc;\n}\n/* tool bar */\n.btn-toolbar {\n    width   : 40px;\n    height  : 40px;\n    padding : 10px 6px;\n}\n.tool-item {\n    display        : block;\n    text-align     : center;\n    padding-bottom : 10px;\n    padding-right  : 17px;\n    transition     : none;\n}\n.tool-item:hover {\n    color      : #fff;\n    background : 0 !important;\n}\n.toolbar_animate {\n    padding : 25px;\n}\n.btn-toolbar-primary {\n    background-color : #6699cc !important;\n}\n.btn-toolbar-primary:hover {\n    background-color : #6699cc;\n}\n.btn-toolbar-danger {\n    background-color : #ff6666 !important;\n}\n.btn-toolbar-danger:hover {\n    background-color : #ff6666;\n}\n.btn-toolbar-warning {\n    background-color : #f0ad4e !important;\n}\n.btn-toolbar-warning:hover {\n    background-color : #f0ad4e;\n}\n.btn-toolbar-info {\n    background-color : #66ccff !important;\n}\n.btn-toolbar-info:hover {\n    background-color : #66ccff;\n}\n.btn-toolbar-success {\n    background-color : #66cc99 !important;\n}\n.btn-toolbar-success:hover {\n    background-color : #66cc99;\n}\n.toolbar-primary {\n    background : #6699cc;\n}\n.toolbar-primary .tool-item.selected,\n.toolbar-primary .tool-item:hover {\n    background : #6699cc;\n}\n.toolbar-danger {\n    background : #ff6666;\n}\n.toolbar-danger .tool-item.selected,\n.toolbar-danger .tool-item:hover {\n    background : #ff6666;\n}\n.toolbar-warning {\n    background : #f0ad4e;\n}\n.toolbar-danger .tool-item.selected,\n.toolbar-danger .tool-item:hover {\n    background : #f0ad4e;\n}\n.toolbar-info {\n    background : #66ccff;\n}\n.toolbar-info .tool-item.selected,\n.toolbar-info .tool-item:hover {\n    background : #66ccff;\n}\n.toolbar-success {\n    background : #66cc99;\n}\n.toolbar-success .tool-item.selected,\n.toolbar-success .tool-item:hover {\n    background : #66cc99;\n}\n.btn-toolbar-light,\n.toolbar-light {\n    background-color : #dcdcdc;\n}\n.btn-toolbar-light.pressed,\n.btn-toolbar-light:hover {\n    background-color : #e4e4e4;\n}\n.btn-toolbar-dark,\n.toolbar-dark {\n    background-color : #66ccff;\n}\n.btn-toolbar-dark.pressed,\n.btn-toolbar-dark:hover {\n    background-color : #66ccff;\n}\n.btn-toolbar-default i {\n    color : #fff;\n}\n.toolbar-info.tool-top .arrow {\n    border-color : #66ccff transparent transparent;\n}\n.toolbar-light.tool-top .arrow {\n    border-color : #dcdcdc transparent transparent;\n}\n.toolbar-dark.tool-top .arrow {\n    border-color : #66ccff transparent transparent;\n}\n.toolbar-primary.tool-top .arrow {\n    border-color : #6699cc transparent transparent;\n}\n.toolbar-warning.tool-top .arrow {\n    border-color : #f0ad4e transparent transparent;\n}\n.toolbar-success.tool-top .arrow {\n    border-color : #66cc99 transparent transparent;\n}\n.toolbar-success.tool-right .arrow {\n    border-color : transparent #66cc99 transparent transparent;\n}\n.toolbar-danger.tool-bottom .arrow {\n    border-color : transparent transparent #ff6666;\n}\n.toolbar-danger.tool-top .arrow {\n    border-color : #ff6666 transparent transparent;\n}\n.toolbar-warning.tool-left .arrow {\n    border-color : transparent transparent transparent #f0ad4e;\n}\n.toolbar-info.tool-right .arrow {\n    border-color : transparent #66ccff transparent transparent;\n}\n.toolbar-success.tool-bottom .arrow {\n    border-color : transparent transparent #66cc99;\n}\n.toolbar-danger.tool-left .arrow {\n    border-color : transparent transparent transparent #ff6666;\n}\n/*toolbar responsive*/\n@media only screen and (max-width : 768px) {\n.feature-toolbar {\n        margin-top : 10px;\n}\n}\n.wenk-area {\n    border: 1px solid #ccc;\n    padding: 3px 12px;\n    border-radius: 3px;\n    display: inline-block;\n    cursor: default;\n}\n[data-wenk].wenk-length--large:after, [data-wenk][data-wenk-length=large]:after{\n    left:120px;\n}\n@media(min-width:320px) and (max-width:425px){\n[data-wenk].wenk-length--large:after, [data-wenk][data-wenk-length=large]:after{\n        left:50px;\n}\n}\n.popover.show,.tooltip.show   {\n    z-index: 9;\n}\n.btn-warning:not([disabled]):not(.disabled):active{\n    color: #fff;\n}\n@media(max-width:320px){\n.tooltip-examples{\n     margin-right: 1.5rem;\n}\n}\n@media(max-width:425px){\n.tooltip-examples{\n        margin-right: 1rem;\n}\n}\n.disabled{\n    cursor: not-allowed;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1416:
+/***/ 1511:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -149,334 +379,1056 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "vscroll_demo",
     components: {
-        vScroll: __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue___default.a
+        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
         return {
-            bar_color: "#428bca",
-            height: "300px",
-            bar_width: "10px",
-            visible: false
+            text: "\n         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry\n          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor\n          brunch.\n           Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon\n          tempor, sunt aliqua put a bird on it squid single-origin coffee nulla\n          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore\n          wes anderson cred nesciunt sapiente ea proident.\n\n           Ad vegan excepteur butcher\n          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic\n          synth nesciunt you probably haven't heard of them accusamus labore VHS.\n\n        "
         };
-    }
+    },
+
+    name: "tabs_accordions",
+    mounted: function mounted() {
+        "use strict";
+    },
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1417:
+/***/ 1512:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", [_vm._v("Bar Color (Any valid css color)")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.bar_color,
-                  expression: "bar_color"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "color", placeholder: "Any valid css color" },
-              domProps: { value: _vm.bar_color },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.bar_color = $event.target.value
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", [_vm._v("Height")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.height,
-                  expression: "height"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "Height of container" },
-              domProps: { value: _vm.height },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.height = $event.target.value
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("div", { staticClass: "form-group" }, [
-            _c("label", [_vm._v("Bar Width")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.bar_width,
-                  expression: "bar_width"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { type: "text", placeholder: "width of bar" },
-              domProps: { value: _vm.bar_width },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.bar_width = $event.target.value
-                }
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
-          _c("label", { attrs: { for: "visible" } }, [
-            _vm._v("Always Visible")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "checkbox checkbox-success" }, [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.visible,
-                  expression: "visible"
-                }
-              ],
-              staticClass: "checkbox",
-              attrs: { type: "checkbox", id: "visible" },
-              domProps: {
-                checked: Array.isArray(_vm.visible)
-                  ? _vm._i(_vm.visible, null) > -1
-                  : _vm.visible
-              },
-              on: {
-                change: function($event) {
-                  var $$a = _vm.visible,
-                    $$el = $event.target,
-                    $$c = $$el.checked ? true : false
-                  if (Array.isArray($$a)) {
-                    var $$v = null,
-                      $$i = _vm._i($$a, $$v)
-                    if ($$el.checked) {
-                      $$i < 0 && (_vm.visible = $$a.concat([$$v]))
-                    } else {
-                      $$i > -1 &&
-                        (_vm.visible = $$a
-                          .slice(0, $$i)
-                          .concat($$a.slice($$i + 1)))
-                    }
-                  } else {
-                    _vm.visible = $$c
-                  }
-                }
-              }
-            }),
-            _vm._v(" "),
-            _c("label", { attrs: { for: "visible" } })
-          ])
-        ])
-      ]),
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-layout-tab-window'></i> Tabs" } },
+            [
+              _c(
+                "b-tabs",
+                [
+                  _c("b-tab", { attrs: { title: "Home", active: "" } }, [
+                    _c("p", { staticClass: "mt-3" }, [
+                      _vm._v(
+                        "\n                            It is a long established fact that a reader will be distracted by the\n                            readable content of a page when looking at its layout. The point of using\n                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as\n                            opposed to using 'Content here, content here'.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-tab", { attrs: { title: "Profile" } }, [
+                    _c("p", { staticClass: "mt-3" }, [
+                      _vm._v(
+                        "\n                            There are many variations of passages of Lorem Ipsum available, but the\n                            majority have suffered alteration in some form, by injected humour, or\n                            randomised words which don't look even slightly believable.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-tab", { attrs: { title: "Disabled", disabled: "" } }, [
+                    _c("p", { staticClass: "mt-3" }, [
+                      _vm._v(
+                        "If you are going\n                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything\n                            embarrassing hidden in the middle of text. The generated Lorem Ipsum is\n                            therefore always free from repetition, injected humour, or\n                            non-characteristic\n                            words etc.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br")
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
-        "v-scroll",
-        {
-          attrs: {
-            height: _vm.height,
-            color: _vm.bar_color,
-            "max-height": "100%",
-            "min-height": "120px",
-            "bar-width": _vm.bar_width,
-            alwaysvisible: _vm.visible
-          }
-        },
+        "div",
+        { staticClass: "col-md-6" },
         [
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ])
-        ]
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-layout-tab'></i> Pills" } },
+            [
+              _c("div", { staticClass: "bs-example" }, [
+                _c("ul", { staticClass: "nav nav-pills" }, [
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link active",
+                        attrs: { href: "#/tabs_accordions" }
+                      },
+                      [_vm._v("Home")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link",
+                        attrs: { href: "#/tabs_accordions" }
+                      },
+                      [_vm._v("Profile")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link disabled",
+                        attrs: { href: "#/tabs_accordions" }
+                      },
+                      [_vm._v("Disabled")]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "bs-example" }, [
+                _c(
+                  "ul",
+                  {
+                    staticClass: "nav flex-column nav-pills bg-stacked",
+                    staticStyle: { "max-width": "300px" }
+                  },
+                  [
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link active",
+                          attrs: { href: "#/tabs_accordions" }
+                        },
+                        [_vm._v("Home")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#/tabs_accordions" }
+                        },
+                        [_vm._v("Profile")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link disabled",
+                          attrs: { href: "#/tabs_accordions" }
+                        },
+                        [_vm._v("Disabled")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ],
+        1
       )
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12" }, [
-      _c("p", [_vm._v("Available props")]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-comment'></i> Popover" } },
+            [
+              _c(
+                "div",
+                [
+                  _c(
+                    "b-btn",
+                    {
+                      ref: "primary",
+                      attrs: { id: "exright", variant: "warning" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Right\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      attrs: {
+                        target: "exright",
+                        triggers: "click",
+                        placement: "right"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on right\n                    "
+                      )
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-btn",
+                    { ref: "button", attrs: { id: "top", variant: "primary" } },
+                    [
+                      _vm._v(
+                        "\n                        Top\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      ref: "popover",
+                      attrs: {
+                        target: "top",
+                        triggers: "click",
+                        placement: "top"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on top\n                    "
+                      )
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-btn",
+                    {
+                      ref: "success",
+                      attrs: { id: "bottom", variant: "success" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Bottom\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      attrs: {
+                        target: "bottom",
+                        triggers: "click",
+                        placement: "bottom"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on bottom\n                    "
+                      )
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c("b-btn", { attrs: { id: "left", variant: "secondary" } }, [
+                    _vm._v(
+                      "\n                        Left\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      attrs: {
+                        target: "left",
+                        triggers: "click",
+                        placement: "left"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on left\n                    "
+                      )
+                    ],
+                    2
+                  )
+                ],
+                1
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-comments'></i> Tool Tips" } },
+            [
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.right",
+                      modifiers: { hover: true, right: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg text-white",
+                  attrs: { variant: "info", title: "Tooltip in right " }
+                },
+                [_vm._v("Right ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.top",
+                      modifiers: { hover: true, top: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg",
+                  attrs: { variant: "primary", title: "Tooltip in top" }
+                },
+                [_vm._v("Top")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.left",
+                      modifiers: { hover: true, left: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg",
+                  attrs: { variant: "success", title: "Tooltip in left" }
+                },
+                [_vm._v("Left")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.bottom",
+                      modifiers: { hover: true, bottom: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg",
+                  attrs: { variant: "warning", title: "Tooltip in bottom" }
+                },
+                [_vm._v("Bottom")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "bs-example" }, [
+                _c("ul", { staticClass: "tooltip-examples list-inline" }, [
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-2",
+                      attrs: { title: "hi" }
+                    },
+                    [_vm._v("Tooltip")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-3",
+                      attrs: { title: "Hello!!" }
+                    },
+                    [_vm._v("Small tooltip")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-3",
+                      attrs: {
+                        title:
+                          "A much larger tooltip to demonstrate the max width of the Bootstrap tooltip"
+                      }
+                    },
+                    [_vm._v("Large tooltip")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-3",
+                      attrs: { title: "Bye!" }
+                    },
+                    [_vm._v("Last tooltip")]
+                  )
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-comment-alt'></i> Popover" } },
+            [
+              _c("div", [
+                _c(
+                  "div",
+                  { staticClass: "po-markup" },
+                  [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        attrs: { href: "http://www.fifa.com/", id: "popoverr" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                            fifa.com\n                        "
+                        )
+                      ]
+                    ),
+                    _vm._v(
+                      "\n                        ← popover on link so you can get site information.\n                        "
+                    ),
+                    _c(
+                      "b-popover",
+                      {
+                        attrs: {
+                          target: "popoverr",
+                          triggers: "hover",
+                          placement: "right"
+                        }
+                      },
+                      [
+                        _c("template", { slot: "title" }, [
+                          _c("img", {
+                            attrs: {
+                              src: __webpack_require__(1513),
+                              alt: "Google",
+                              width: "20",
+                              height: "20"
+                            }
+                          }),
+                          _vm._v(
+                            " Foot Ball\n                                world cup\n                            "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                                Football refers to a number of sports that involve, to varying degrees,\n                                kicking a ball with the foot to score a goal. The most popular of these\n                                sports worldwide is\n                                "
+                          ),
+                          _c("strong", [_vm._v("association football")]),
+                          _vm._v(
+                            ' , more commonly known as just\n                                "football" or "soccer".\n                            '
+                          )
+                        ])
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-comment'></i> Wenk Tool tip" } },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c("h4", [_vm._v("Wenk positions")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: { "data-wenk": "Top!" }
+                      },
+                      [_vm._v("Wenk to the top!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: { "data-wenk": "Left!", "data-wenk-pos": "left" }
+                      },
+                      [_vm._v("Wenk to the left!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: {
+                          "data-wenk": "Right!",
+                          "data-wenk-pos": "right"
+                        }
+                      },
+                      [_vm._v("Wenk to the right!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: {
+                          "data-wenk": "Bottom!",
+                          "data-wenk-pos": "bottom"
+                        }
+                      },
+                      [_vm._v("Wenk to the bottom!")]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c("h4", [_vm._v("Wenk Size")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--small wenk-area",
+                        attrs: { "data-wenk": "I'm small!" }
+                      },
+                      [_vm._v("Small wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--medium wenk-area",
+                        attrs: { "data-wenk": "I'm medium!" }
+                      },
+                      [_vm._v("Medium wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm large!" }
+                      },
+                      [_vm._v("Large wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--fit wenk-area",
+                        attrs: { "data-wenk": "I fit!" }
+                      },
+                      [_vm._v("I fit just right!")]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c("h4", [_vm._v("Wenk Alignment")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "wenk-align--left wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm left!" }
+                      },
+                      [_vm._v("Left wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "wenk-align--center wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm center!" }
+                      },
+                      [_vm._v("center wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "wenk-align--right wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm right!" }
+                      },
+                      [_vm._v("Right wenk!")]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("pre", [
-        _vm._v(
-          '"Height","min-height","max-height","color","bar-width","alwaysvisible"'
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-layout-menu-v'></i> Accordions" } },
+            [
+              _c(
+                "b-card",
+                { attrs: { "no-body": "" } },
+                [
+                  _c(
+                    "b-tabs",
+                    { ref: "tabs", attrs: { card: "" } },
+                    [
+                      _c("b-tab", { attrs: { title: "Tab 1" } }, [
+                        _c(
+                          "div",
+                          { attrs: { role: "tablist" } },
+                          [
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion1",
+                                            modifiers: { accordion1: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-1")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion1",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                I start opened because "
+                                        ),
+                                        _c("code", [_vm._v("visible")]),
+                                        _vm._v(" is "),
+                                        _c("code", [_vm._v("true")])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion2",
+                                            modifiers: { accordion2: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-2")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion2",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("b-tab", { attrs: { title: "Tab 2" } }, [
+                        _c(
+                          "div",
+                          { attrs: { role: "tablist" } },
+                          [
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion3",
+                                            modifiers: { accordion3: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-1")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion3",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                I start opened because "
+                                        ),
+                                        _c("code", [_vm._v("visible")]),
+                                        _vm._v(" is "),
+                                        _c("code", [_vm._v("true")])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion4",
+                                            modifiers: { accordion4: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-2")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion4",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-11f2ea77", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-496556c0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 455:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 1513:
+/***/ (function(module, exports) {
 
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(1412)
-  __webpack_require__(1414)
-}
-var normalizeComponent = __webpack_require__(42)
-/* script */
-var __vue_script__ = __webpack_require__(1416)
-/* template */
-var __vue_template__ = __webpack_require__(1417)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-11f2ea77"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/components/pages/vscroll.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-11f2ea77", Component.options)
-  } else {
-    hotAPI.reload("data-v-11f2ea77", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
+module.exports = "/images/football.jpg?7a3f7a7b1ed0c1c4471260384c3e46e0";
 
 /***/ }),
 
-/***/ 638:
+/***/ 459:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(672)
+  __webpack_require__(1507)
+  __webpack_require__(1509)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(674)
+var __vue_script__ = __webpack_require__(1511)
 /* template */
-var __vue_template__ = __webpack_require__(675)
+var __vue_template__ = __webpack_require__(1512)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -493,7 +1445,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/plugins/scroll/vScroll.vue"
+Component.options.__file = "resources/components/pages/tabs_accordions.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -502,9 +1454,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6ba02bfe", Component.options)
+    hotAPI.createRecord("data-v-496556c0", Component.options)
   } else {
-    hotAPI.reload("data-v-6ba02bfe", Component.options)
+    hotAPI.reload("data-v-496556c0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -516,23 +1468,75 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 672:
+/***/ 529:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(530)
+}
+var normalizeComponent = __webpack_require__(42)
+/* script */
+var __vue_script__ = __webpack_require__(532)
+/* template */
+var __vue_template__ = __webpack_require__(533)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/card/card.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-15e33d3a", Component.options)
+  } else {
+    hotAPI.reload("data-v-15e33d3a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(673);
+var content = __webpack_require__(531);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("58ec1348", content, false, {});
+var update = __webpack_require__(26)("d6b775a8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ba02bfe\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./vScroll.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ba02bfe\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./vScroll.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -543,7 +1547,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 673:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -551,14 +1555,14 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.ss-wrapper {\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    position: relative;\n    z-index: 1;\n    float: left;\n}\n.ss-content {\n    height: 100%;\n    width: 100%;\n    padding: 0 32px 0 0;\n    position: relative;\n    right: -18px;\n    overflow: auto;\n    box-sizing: border-box;\n}\n.ss-scroll {\n    position: relative;\n    background: rgba(0, 0, 0, 0.1);\n    width: 9px;\n    border-radius: 4px;\n    top: 0;\n    z-index: 2;\n    cursor: pointer;\n    opacity: 0;\n    transition: opacity 0.25s linear;\n}\n.ss-hidden {\n    display: none;\n}\n.ss-container:hover .ss-scroll,\n.ss-scroll.ss-grabbed,\n.ss-scroll.visible {\n    opacity: 1;\n}\n.ss-grabbed {\n    -o-user-select: none;\n    -ms-user-select: none;\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    user-select: none;\n}\n", ""]);
+exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 674:
+/***/ 532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -573,114 +1577,85 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: {
-        height: null,
-        minHeight: null,
-        maxHeight: null,
-        color: null,
-        barWidth: null,
-        alwaysvisible: Boolean
-    },
-    mounted: function mounted() {
-        this.dragDealer();
-        this.moveBar();
-    },
+    name: 'card',
     data: function data() {
         return {
-            scrollRatio: 0,
-            grabbed: false
+            show: true,
+            isActive: false
         };
     },
 
     methods: {
-        // Mouse drag handler
-        dragDealer: function dragDealer() {
-            var _this = this;
-
-            var t = this;
-            var lastPageY;
-            this.$refs.bar.addEventListener('mousedown', function (e) {
-                lastPageY = e.pageY;
-                _this.grabbed = true;
-                document.body.classList.add('ss-grabbed');
-                document.addEventListener('mousemove', drag);
-                document.addEventListener('mouseup', stop);
-                return false;
-
-                function drag(e) {
-                    var delta = e.pageY - lastPageY;
-                    lastPageY = e.pageY;
-                    t.$refs.content.scrollTop += delta / t.scrollRatio;
-                }
-
-                function stop() {
-                    t.grabbed = false;
-                    document.body.classList.remove('ss-grabbed');
-                    document.removeEventListener('mousemove', drag);
-                    document.removeEventListener('mouseup', stop);
-                }
-            });
-        },
-        moveBar: function moveBar() {
-            var content = this.$refs.content;
-            var bar = this.$refs.bar;
-            var totalHeight = content.scrollHeight,
-                ownHeight = content.clientHeight;
-            this.scrollRatio = ownHeight / totalHeight;
-            // Hide scrollbar if no scrolling is possible
-            if (this.scrollRatio >= 1) {
-                bar.classList.add('ss-hidden');
-            } else {
-                bar.classList.remove('ss-hidden');
-                bar.style.cssText = 'height:' + this.scrollRatio * 100 + '%; top:' + content.scrollTop / totalHeight * 100 + '%;right:-' + (this.$refs.vscroll.clientWidth - bar.clientWidth) + 'px;background-color:' + this.color + ';width:' + this.barWidth;
-            }
+        hide: function hide() {
+            this.isActive = true;
         }
-    }
+    },
+    mounted: function mounted() {},
+    props: {
+        title: {
+            required: false
+        }
+    },
+    destroy: function destroy() {}
 });
 
 /***/ }),
 
-/***/ 675:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      ref: "vscroll",
-      staticClass: "ss-container",
-      style: {
-        height: _vm.height,
-        "min-height": _vm.minHeight,
-        "max-height": _vm.maxHeight
-      }
-    },
-    [
-      _c("div", { staticClass: "ss-wrapper" }, [
-        _c(
-          "div",
-          {
-            ref: "content",
-            staticClass: "ss-content",
-            on: { scroll: _vm.moveBar, mouseenter: _vm.moveBar }
-          },
-          [_vm._t("default")],
-          2
-        )
-      ]),
+  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", {
+        staticClass: "card-title",
+        domProps: { innerHTML: _vm._s(_vm.title) }
+      }),
       _vm._v(" "),
-      _c("div", {
-        ref: "bar",
-        staticClass: "ss-scroll",
-        class: { "ss-grabbed": _vm.grabbed, visible: _vm.alwaysvisible }
-      })
-    ]
-  )
+      _c("span", { staticClass: "float-right" }, [
+        _c("i", {
+          staticClass: "fa fa-fw ti-angle-up",
+          class: { rotate: _vm.show },
+          on: {
+            click: function($event) {
+              _vm.show = !_vm.show
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "fa fa-fw ti-close removecard",
+          on: { click: _vm.hide }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.show,
+            expression: "show"
+          }
+        ],
+        staticClass: "card-body"
+      },
+      [_vm._t("default")],
+      2
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -688,7 +1663,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6ba02bfe", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
 

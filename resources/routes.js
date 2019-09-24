@@ -1241,6 +1241,23 @@ const routes = [{
             }
         },
         {
+            path: 'CrearProyecto',
+            component: resolve => require(['./components/pages/src/CrearProyecto.vue'], resolve),
+            meta: {
+                title: 'Crear Nuevo Proyecto',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Proyectos',
+                    href: '#',
+                }, {
+                    html: 'CrearProyecto',
+                    href: '#/CrearProyecto'
+                }]
+            }
+        },
+        {
             path: 'Organizaciones',
             component: resolve => require(['./components/pages/src/organizacion.vue'], resolve),
             meta: {

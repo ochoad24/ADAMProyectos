@@ -1,22 +1,22 @@
 webpackJsonp([74],{
 
-/***/ 1331:
+/***/ 2245:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1332);
+var content = __webpack_require__(2246);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("5f846a79", content, false, {});
+var update = __webpack_require__(26)("c62ee9b6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tasks.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./tasks.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d0fce8f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./blank.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d0fce8f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./blank.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,50 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1332:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-exports.i(__webpack_require__(697), "");
-exports.i(__webpack_require__(698), "");
-
-// module
-exports.push([module.i, "\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1333:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1334);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("60babd58", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./tasks.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4126c8c2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./tasks.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1334:
+/***/ 2246:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -78,24 +35,24 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* to do list */\n.todoside-menu a:hover{\n    background-color: #f5f5f5;\n}\n.todoside-menu a{\n    font-size: 15px;\n    color: #333;\n}\n.faExclamationCircle::before{\n    content: \"imp\";\n    font-size: 14px;\n    top:-8px;\n    position: relative;\n}\n.tasksearch,.tasks-list{\n    box-shadow:0px 0px 1px 1px #cfcfcf;\n}\n.todo .box-shadow{\n    box-shadow: 0px 0px 1px 1px #cfcfcf;\n}\n.tasks-table-list{\n    max-height: 80vh;\n    margin-bottom: 10px;\n}\n.todoside-menu .side-content .active{\n    color: #66cc99;\n    font-weight: 600;\n}\n.table td .custom-control.custom-checkbox{\n    margin-top: 3px;\n}\n.custom-control-inline{\n    margin-right: 0;\n}\n.task-type{\n    border-bottom: 1px solid #eee;\n}\n.textDanger{\n    /*color: #ff6666;*/\n    font-weight: 600;\n}\n.textDanger::before{\n    content: '.';\n    font-size: 42px;\n    line-height: 5px;\n    font-weight: 900;\n    top: -3px;\n    left: -5px;\n    position: relative;\n    color: #ff6666;\n}\n.tasks-my-scrollbar{\n    width: 100%;\n    max-height:450px;\n}\n.tasks-scroll-me{\n    background:#fff;\n    min-width: 992px;\n}\n", ""]);
+exports.push([module.i, "\n.search[data-v-d0fce8f0]{\n    border: 1px solid #bdb3b3;\n}\n.contact-profile[data-v-d0fce8f0]{\n    width:50px;\n    height: 50px;\n}\n.box-shadow[data-v-d0fce8f0]{\n    box-shadow: 0px 0px 1px 1px #cfcfcf;\n}\n.contact-pic[data-v-d0fce8f0]{\n    width: 50px;\n    height: 50px;\n}\n.table td[data-v-d0fce8f0]{\n    padding: 16px;\n    vertical-align: middle;\n}\n.contacts-box .custom-control-inline[data-v-d0fce8f0]{\n    margin-right: 0;\n}\n.custom-control-label[data-v-d0fce8f0]::before{\n    width: 100px;\n    height: 100px;\n}\n.contact-page[data-v-d0fce8f0]{\n    font-size: 14px;\n}\n.options a[data-v-d0fce8f0]:hover,.options2 a[data-v-d0fce8f0]:hover{\n    background-color: #eee;\n}\n.bg-title[data-v-d0fce8f0]{\n    background-color: #f5f5f5;\n}\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1335:
+/***/ 2247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(699);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__);
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vddl__ = __webpack_require__(2248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vddl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vddl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue__ = __webpack_require__(2249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue__);
 //
 //
 //
@@ -196,779 +153,637 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vddl___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'blank',
     data: function data() {
         return {
-            modalTask: false,
-            newtaskname: '',
-            newtaskdesc: '',
-            newtaskdeadline: '',
-            newimportant: '',
-            newstatus: '',
-            tasks: [{
-                tasktitle: 'Task-1',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: true,
-                status: 'pending'
-            }, {
-                tasktitle: 'Task-2',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: true,
-                status: 'pending'
-            }, {
-                tasktitle: 'Task-3',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: false,
-                status: 'completed'
-            }, {
-                tasktitle: 'Task-4',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: 'true',
-                status: 'completed'
-            }, {
-                tasktitle: 'Task-5',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: 'true',
-                status: 'completed'
-            }, {
-                tasktitle: 'Task-6',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: 'true',
-                status: 'pending'
-            }, {
-                tasktitle: 'Task-7',
-                taskdescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, hic quasi! Doloribus esse magni necessitatibus officia recusandae. Aliquam, aspernatur commodi, debitis harum illum odio porro quasi quia repudiandae ullam ut?',
-                taskdeadline: '14/04/2018',
-                important: 'true',
-                status: 'pending'
-            }],
-            edittitle: '',
-            editdescription: '',
-            editdeadline: '',
-            important: '',
-            editnewstatus: '',
-            taskid: '',
-            search: '',
-            options: {
-                height: '1000px'
+            selectedItem: null,
+            disable: false,
+            itemMock: { type: "new element", id: 1 },
+            containerMock: {
+                "type": "container",
+                "id": 4,
+                "columns": []
+            },
+            dropzones: {
+                "A": [{
+                    "type": "container",
+                    "id": 1,
+                    "columns": [{
+                        "type": "item",
+                        "id": "1"
+                    }, {
+                        "type": "item",
+                        "id": "2"
+                    }, {
+                        "type": "item",
+                        "id": "3"
+                    }]
+                }, {
+                    "type": "item",
+                    "id": "4"
+                }, {
+                    "type": "item",
+                    "id": "5"
+                }, {
+                    "type": "item",
+                    "id": "6"
+                }],
+                "B": [{
+                    "type": "item",
+                    "id": 7
+                }, {
+                    "type": "item",
+                    "id": "8"
+                }, {
+                    "type": "container",
+                    "id": "2",
+                    "columns": [{
+                        "type": "item",
+                        "id": "9"
+                    }, {
+                        "type": "item",
+                        "id": "10"
+                    }, {
+                        "type": "container",
+                        "id": "3",
+                        "columns": [{
+                            "type": "item",
+                            "id": "13"
+                        }, {
+                            "type": "item",
+                            "id": "14"
+                        }]
+                    }, {
+                        "type": "item",
+                        "id": "15"
+                    }]
+                }]
             }
         };
     },
 
     components: {
-        VueScrollbar: __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default.a
+        list: __WEBPACK_IMPORTED_MODULE_2__plugins_nestable_nested_list_vue___default.a
     },
     mounted: function mounted() {},
     methods: {
-        addTask: function addTask() {
-            this.tasks.push({
-                tasktitle: this.newtaskname,
-                taskdescription: this.newtaskdesc,
-                taskdeadline: this.newtaskdeadline,
-                important: this.newimportant,
-                status: 'pending'
-            }), this.newtaskname = '', this.newtaskdesc = '', this.newtaskdeadline = '', this.newimportant = false, this.newstatus = '', this.modalTask = false;
+        copied: function copied(item) {
+            item.id++;
         },
+        inserted: function inserted(data) {
+            console.log(data);
+        },
+        toggleDisable: function toggleDisable() {
+            this.disable = !this.disable;
+        },
+        handleSelected: function handleSelected(item) {
+            this.selectedItem = item;
+        },
+        handleDrop: function handleDrop(data) {
+            console.log(':v-list: drop');
+            console.log(data);
+            var index = data.index,
+                list = data.list,
+                item = data.item;
+            // change the id
 
-        updateModal: function updateModal(taskid) {
-            this.tasks[taskid].tasktitle = this.edittitle;
-            this.tasks[taskid].taskdescription = this.editdescription;
-            this.tasks[taskid].taskdeadline = this.editdeadline;
-            this.tasks[taskid].status = this.newstatus;
-            //                console.log(this.editnewstatus);
-            this.$refs.editmodal.hide();
-            //                console.log(this.tasks[index].tasktitle);
-            this.modalTask = false;
+            item.id = new Date().getTime();
+            list.splice(index, 0, item);
         },
-        editModal: function editModal(index) {
-            this.edittitle = this.tasks[index].tasktitle;
-            this.editdescription = this.tasks[index].taskdescription;
-            this.editdeadline = this.tasks[index].taskdeadline;
-            this.editnewstatus = this.tasks[index].status;
-            this.taskid = index;
-            this.$refs.editmodal.show();
-        },
-        deleteModal: function deleteModal(index) {
-            this.tasks.splice(index, 1);
-        }
-    },
-    computed: {
-        allTasks: function allTasks() {
-            var self = this;
-            return this.tasks.filter(function (newtask) {
-                return newtask.tasktitle.toLowerCase().indexOf(self.search.toLowerCase()) >= 0;
-            });
-            //return this.customers;
+        handleMoved: function handleMoved(item) {
+            console.log(':v-draggable: moved');
+            console.log(item);
+            var index = item.index,
+                list = item.list;
+
+            list.splice(index, 1);
         }
     }
 });
 
 /***/ }),
 
-/***/ 1336:
+/***/ 2248:
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "todo mt-3" }, [
-        _c("div", { staticClass: "todoside-menu" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12 col-md-5 col-lg-3" }, [
-              _c("div", { staticClass: "side-content " }, [
-                _c(
-                  "div",
-                  { staticClass: "box-shadow" },
-                  [
-                    _c("h1", { staticClass: "p-3 mb-0" }, [_vm._v("Todo's")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "p-3" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-primary btn-block",
-                          on: {
-                            click: function($event) {
-                              _vm.modalTask = !_vm.modalTask
-                            }
-                          }
-                        },
-                        [_vm._v("Add Task")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          "hide-footer": true,
-                          title: "Add Your Task Here"
-                        },
-                        model: {
-                          value: _vm.modalTask,
-                          callback: function($$v) {
-                            _vm.modalTask = $$v
-                          },
-                          expression: "modalTask"
-                        }
-                      },
-                      [
-                        _c("b-container", { attrs: { fluid: "" } }, [
-                          _c(
-                            "form",
-                            [
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "mt-2",
-                                  attrs: { for: "tasktitle" }
-                                },
-                                [_vm._v("Task Title")]
-                              ),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newtaskname,
-                                    expression: "newtaskname"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                attrs: {
-                                  type: "text",
-                                  id: "tasktitle",
-                                  placeholder: "Enter Title"
-                                },
-                                domProps: { value: _vm.newtaskname },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newtaskname = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "mt-2",
-                                  attrs: { for: "taskdesc" }
-                                },
-                                [_vm._v("Task Description")]
-                              ),
-                              _vm._v(" "),
-                              _c("textarea", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newtaskdesc,
-                                    expression: "newtaskdesc"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                attrs: {
-                                  name: "description",
-                                  placeholder: "Add description here",
-                                  rows: "5",
-                                  id: "taskdesc"
-                                },
-                                domProps: { value: _vm.newtaskdesc },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newtaskdesc = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "mt-2",
-                                  attrs: { for: "deadline" }
-                                },
-                                [_vm._v("Deadline")]
-                              ),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.newtaskdeadline,
-                                    expression: "newtaskdeadline"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                attrs: {
-                                  type: "date",
-                                  placeholder: "Deadline",
-                                  id: "deadline"
-                                },
-                                domProps: { value: _vm.newtaskdeadline },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.newtaskdeadline = $event.target.value
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "label",
-                                [
-                                  _c("b-form-checkbox", {
-                                    staticClass: "mt-2",
-                                    model: {
-                                      value: _vm.newimportant,
-                                      callback: function($$v) {
-                                        _vm.newimportant = $$v
-                                      },
-                                      expression: "newimportant"
-                                    }
-                                  }),
-                                  _vm._v(" Click if this a important task")
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-btn",
-                                {
-                                  staticClass: "float-right mt-2",
-                                  attrs: { variant: "primary" },
-                                  on: { click: _vm.addTask }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                            Submit\n                                        "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _vm._m(0),
-                    _vm._v(" "),
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _vm._m(2),
-                    _vm._v(" "),
-                    _vm._m(3),
-                    _vm._v(" "),
-                    _vm._m(4),
-                    _vm._v(" "),
-                    _vm._m(5)
-                  ],
-                  1
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-7 col-lg-9" }, [
-              _c("div", { staticClass: "tasksearch p-3" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.search,
-                      expression: "search"
-                    }
-                  ],
-                  staticClass: "form-control mt-4 mb-4",
-                  attrs: { type: "text", placeholder: "Search" },
-                  domProps: { value: _vm.search },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.search = $event.target.value
-                    }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "tasks-list mt-5 mb-3" },
-                [
-                  _vm._m(6),
-                  _vm._v(" "),
-                  _c(
-                    "vue-scrollbar",
-                    {
-                      ref: "Scrollbar",
-                      attrs: { classes: "tasks-my-scrollbar" }
-                    },
-                    [
-                      _c("div", { staticClass: "tasks-scroll-me" }, [
-                        _c(
-                          "div",
-                          { staticClass: "tasks-table-list table-responsive" },
-                          [
-                            _c(
-                              "table",
-                              { staticClass: "table" },
-                              _vm._l(_vm.allTasks, function(task, index) {
-                                return _c("tr", [
-                                  _c("td", [_c("b-form-checkbox")], 1),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "h5",
-                                      {
-                                        class: {
-                                          textDanger: task.important == true
-                                        }
-                                      },
-                                      [_vm._v(_vm._s(task.tasktitle))]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("p", [
-                                      _vm._v(_vm._s(task.taskdescription))
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("span", { staticClass: "text-danger" }, [
-                                      _vm._v("Deadline:")
-                                    ]),
-                                    _vm._v(
-                                      " " +
-                                        _vm._s(task.taskdeadline) +
-                                        "\n                                                "
-                                    ),
-                                    _c(
-                                      "span",
-                                      { staticClass: "float-right mr-5" },
-                                      [
-                                        _c(
-                                          "span",
-                                          { staticClass: "text-danger" },
-                                          [_vm._v("Status:")]
-                                        ),
-                                        _vm._v(" " + _vm._s(task.status))
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", { staticClass: "align-center" }, [
-                                    _c("span", {
-                                      staticClass: "fa fa-edit",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.editModal(index)
-                                        }
-                                      }
-                                    })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", { staticClass: "align-center" }, [
-                                    _c("span", {
-                                      staticClass: "fa fa-trash-o",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteModal(index)
-                                        }
-                                      }
-                                    })
-                                  ])
-                                ])
-                              }),
-                              0
-                            )
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ],
-                1
-              )
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "b-modal",
-        {
-          ref: "editmodal",
-          attrs: { "hide-footer": "", title: "Using Component Methods" }
-        },
-        [
-          _c("div", { staticClass: "d-block" }, [
-            _c("form", [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.edittitle,
-                    expression: "edittitle"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "text", placeholder: "Enter title" },
-                domProps: { value: _vm.edittitle },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.edittitle = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("textarea", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editdescription,
-                    expression: "editdescription"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { name: "", id: "", cols: "30", rows: "10" },
-                domProps: { value: _vm.editdescription },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editdescription = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.editdeadline,
-                    expression: "editdeadline"
-                  }
-                ],
-                staticClass: "form-control mt-3",
-                attrs: { type: "email", placeholder: "Enter deadline" },
-                domProps: { value: _vm.editdeadline },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.editdeadline = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.newstatus,
-                      expression: "newstatus"
-                    }
-                  ],
-                  staticClass: "form-control mt-3",
-                  attrs: { id: "dropdown" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.newstatus = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
-                  }
-                },
-                [
-                  _c("option", { attrs: { disabled: "", value: "" } }, [
-                    _vm._v("Status")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("Pending")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("Completed")])
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-white",
-              attrs: { variant: "success", block: "" },
-              on: {
-                click: function($event) {
-                  return _vm.updateModal(_vm.taskid)
-                }
-              }
-            },
-            [_vm._v("Update")]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-white",
-              attrs: { variant: "danger", block: "" }
-            },
-            [_vm._v("Cancel")]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "b-modal",
-        {
-          ref: "deletemodal",
-          attrs: { "hide-footer": "", title: "Using Component Methods" }
-        },
-        [
-          _c("div", { staticClass: "d-block text-center" }, [
-            _c("h3", [_vm._v("Are you sure you want to delete modal")])
-          ]),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-danger",
-              attrs: { variant: "outline-danger", block: "" }
-            },
-            [_vm._v("Yes")]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-btn",
-            {
-              staticClass: "mt-3 text-primary",
-              attrs: { variant: "outline-primary", block: "" }
-            },
-            [_vm._v("No")]
-          )
-        ],
-        1
-      )
-    ],
-    1
-  )
+/*!
+ * Vddl.js v0.7.1
+ * (c) 2017 Hejx
+ * Released under the MIT License.
+ * https://github.com/hejianxian/vddl#readme
+ */
+
+(function (global, factory) {
+   true ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.DragAndDropList = factory());
+}(this, (function () {
+
+var Draggable = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-draggable",on:{"dragstart":function($event){$event.stopPropagation();_vm.handleDragstart($event);},"dragend":function($event){$event.stopPropagation();_vm.handleDragend($event);},"click":function($event){$event.stopPropagation();_vm.handleClick($event);},"selectstart":_vm.handleSelected}},[_vm._t("default")],2)},staticRenderFns: [],
+  name: 'vddl-draggable',
+  // css: vddl-dragging, vddl-dragging-source
+  props: {
+    draggable: [ Object, Array ],
+    wrapper: Array,
+    index: Number,
+
+    effectAllowed: String,
+    type: String,
+
+    // diable
+    disableIf: Boolean,
+
+    // callback fn
+    dragstart: Function,
+    selected: Function,
+    dragend: Function,
+    moved: Function,
+    copied: Function,
+    canceled: Function,
+  },
+  data: function data() {
+    return {};
+  },
+  computed: {},
+  methods: {
+    handleDragstart: function handleDragstart(event) {
+      var this$1 = this;
+
+      var draggable = JSON.stringify(this.draggable);
+      // Check whether the element is draggable, since dragstart might be triggered on a child.
+      if (draggable == 'false' || this.disableIf) { return true; }
+
+      // Serialize the data associated with this element. IE only supports the Text drag type
+      event.dataTransfer.setData("Text", draggable);
+
+      // Only allow actions specified in effect-allowed attribute
+      event.dataTransfer.effectAllowed = this.effectAllowed || "move";
+
+      // Add CSS classes. IE9 not support 'classList'
+      this.$el.className = this.$el.className.trim() + " vddl-dragging";
+      setTimeout(function () {
+        this$1.$el.className = this$1.$el.className.trim() + " vddl-dragging-source";
+      }, 0);
+
+      // Workarounds for stupid browsers, see description below
+      this.vddlDropEffectWorkaround.dropEffect = "none";
+      this.vddlDragTypeWorkaround.isDragging = true;
+
+      // Save type of item in global state. Usually, this would go into the dataTransfer
+      // typename, but we have to use "Text" there to support IE
+      this.vddlDragTypeWorkaround.dragType = this.type || undefined;
+
+      // Try setting a proper drag image if triggered on a vddl-handle (won't work in IE).
+      if (event._dndHandle && event.dataTransfer.setDragImage) {
+        event.dataTransfer.setDragImage(this.$el, event._dndHandleLeft, event._dndHandleTop);
+      }
+
+      // Invoke callback
+      if (typeof(this.dragstart) === 'function') {
+        this.dragstart.call(this, event.target);
+      }
+    },
+
+    handleDragend: function handleDragend(event) {
+      var this$1 = this;
+
+      var dropEffect = this.vddlDropEffectWorkaround.dropEffect;
+      switch (dropEffect) {
+        case "move":
+          if (typeof(this.moved) === 'function') {
+            this.$nextTick(function () {
+              this$1.moved({
+                index: this$1.index,
+                list: this$1.wrapper,
+                event: event.target,
+                draggable: this$1.draggable,
+              });
+            });
+          } else {
+            this.$nextTick(function () {
+              this$1.wrapper.splice(this$1.index, 1);
+            });
+          }
+          break;
+        case "copy":
+          if (typeof(this.copied) === 'function') {
+            this.copied(this.draggable, event.target);
+          }
+          break;
+        case "none":
+          if (typeof(this.canceled) === 'function') {
+            this.canceled(event.target);
+          }
+          break;
+      }
+      if (typeof(this.dragend) === 'function') {
+        this.dragend(dropEffect, event.target);
+      }
+
+      // Clean up
+      this.$el.className = this.$el.className.replace("vddl-dragging", "").trim();
+      setTimeout(function () {
+        if (this$1.$el) { this$1.$el.className = this$1.$el.className.replace("vddl-dragging-source", "").trim(); }
+      }, 0);
+      this.vddlDragTypeWorkaround.isDragging = false;
+    },
+
+    handleClick: function handleClick(event) {
+      if (!this.selected) { return; }
+
+      if (typeof(this.selected) === 'function') {
+        this.selected(this.wrapper[this.index], event.target);
+      }
+    },
+
+    /**
+     * Workaround to make element draggable in IE9
+     * http://stackoverflow.com/questions/5500615/internet-explorer-9-drag-and-drop-dnd
+     */
+    handleSelected: function handleSelected() {
+      if (this.dragDrop) { this.dragDrop(); }
+      return false;
+    },
+
+    // init
+    init: function init() {
+      var status = true;
+      if (this.disableIf) { status = false; }
+      this.$el.setAttribute('draggable', status);
+    },
+  },
+  watch: {
+    disableIf: function disableIf(val) {
+      this.$el.setAttribute('draggable', !val);
+    },
+  },
+  // For Vue 1.0
+  ready: function ready() {
+    this.init();
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+};
+
+var List = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-list",on:{"dragenter":function($event){$event.preventDefault();_vm.handleDragenter($event);},"dragover":function($event){$event.stopPropagation();$event.preventDefault();_vm.handleDragover($event);},"drop":function($event){$event.stopPropagation();$event.preventDefault();_vm.handleDrop($event);},"dragleave":_vm.handleDragleave}},[_vm._t("default")],2)},staticRenderFns: [],
+  name: 'vddl-list',
+  // css: placeholder, dragover
+  props: {
+    list: Array,
+
+    allowedTypes: Array,
+    disableIf: Boolean,
+    horizontal: Boolean,
+    externalSources: Boolean,
+
+    dragover: Function,
+    inserted: Function,
+    drop: Function,
+  },
+  data: function data() {
+    return {};
+  },
+  computed: {},
+  methods: {
+    handleDragenter: function handleDragenter(event) {
+      if (!this.isDropAllowed(event)) { return true; }
+    },
+
+    handleDragover: function handleDragover(event) {
+      var this$1 = this;
+
+      if (!this.isDropAllowed(event)) { return true; }
+
+      if (this.placeholderNode.parentNode != this.listNode) {
+        this.listNode.appendChild(this.placeholderNode);
+      }
+
+      if (event.target !== this.listNode) {
+        // Try to find the node direct directly below the list node.
+        var listItemNode = event.target;
+        while (listItemNode.parentNode !== this.listNode && listItemNode.parentNode) {
+          listItemNode = listItemNode.parentNode;
+        }
+        if (listItemNode.parentNode === this.listNode && listItemNode !== this.placeholderNode) {
+          // If the mouse pointer is in the upper half of the child element,
+          // we place it before the child element, otherwise below it.
+          if (this.isMouseInFirstHalf(event, listItemNode)) {
+            this.listNode.insertBefore(this.placeholderNode, listItemNode);
+          } else {
+            this.listNode.insertBefore(this.placeholderNode, listItemNode.nextSibling);
+          }
+        }
+      } else {
+        // This branch is reached when we are dragging directly over the list element.
+        // Usually we wouldn't need to do anything here, but the IE does not fire it's
+        // events for the child element, only for the list directly. Therefore, we repeat
+        // the positioning algorithm for IE here.
+        if (this.isMouseInFirstHalf(event, this.placeholderNode, true)) {
+          // Check if we should move the placeholder element one spot towards the top.
+          // Note that display none elements will have offsetTop and offsetHeight set to
+          // zero, therefore we need a special check for them.
+          while (this.placeholderNode.previousElementSibling
+                && (this.isMouseInFirstHalf(event, this.placeholderNode.previousElementSibling, true)
+                || this.placeholderNode.previousElementSibling.offsetHeight === 0)) {
+            this$1.listNode.insertBefore(this$1.placeholderNode, this$1.placeholderNode.previousElementSibling);
+          }
+        } else {
+          // Check if we should move the placeholder element one spot towards the bottom
+          while (this.placeholderNode.nextElementSibling &&
+                !this.isMouseInFirstHalf(event, this.placeholderNode.nextElementSibling, true)) {
+            this$1.listNode.insertBefore(this$1.placeholderNode,
+                this$1.placeholderNode.nextElementSibling.nextElementSibling);
+          }
+        }
+      }
+
+      // At this point we invoke the callback, which still can disallow the drop.
+      // We can't do this earlier because we want to pass the index of the placeholder.
+      if (this.dragover && !this.invokeCallback('dragover', event, this.getPlaceholderIndex())) {
+        return this.stopDragover(event);
+      }
+
+      if (this.$el.className.indexOf("vddl-dragover") < 0) { this.$el.className = this.$el.className.trim() + " vddl-dragover"; }
+      return false;
+    },
+    handleDrop: function handleDrop(event) {
+      if (!this.isDropAllowed(event)) { return true; }
+
+      // The default behavior in Firefox is to interpret the dropped element as URL and
+      // forward to it. We want to prevent that even if our drop is aborted.
+
+      // Unserialize the data that was serialized in dragstart. According to the HTML5 specs,
+      // the "Text" drag type will be converted to text/plain, but IE does not do that.
+      var data = event.dataTransfer.getData("Text") || event.dataTransfer.getData("text/plain");
+      var transferredObject;
+      try {
+        transferredObject = JSON.parse(data);
+      } catch(e) {
+        return this.stopDragover();
+      }
+
+      // Invoke the callback, which can transform the transferredObject and even abort the drop.
+      var index = this.getPlaceholderIndex();
+      if (this.drop) {
+        transferredObject = this.invokeCallback('drop', event, index, transferredObject);
+        if (!transferredObject) {
+          return this.stopDragover();
+        }
+      }
+
+      // Insert the object into the array, unless drop took care of that (returned true).
+      if (transferredObject !== true) {
+        this.list.splice(index, 0, transferredObject);
+      }
+      this.invokeCallback('inserted', event, index, transferredObject);
+
+      // In Chrome on Windows the dropEffect will always be none...
+      // We have to determine the actual effect manually from the allowed effects
+      if (event.dataTransfer.dropEffect === "none") {
+        if (event.dataTransfer.effectAllowed === "copy" ||
+            event.dataTransfer.effectAllowed === "move") {
+          this.vddlDropEffectWorkaround.dropEffect = event.dataTransfer.effectAllowed;
+        } else {
+          this.vddlDropEffectWorkaround.dropEffect = event.ctrlKey ? "copy" : "move";
+        }
+      } else {
+        this.vddlDropEffectWorkaround.dropEffect = event.dataTransfer.dropEffect;
+      }
+
+      // Clean up
+      this.stopDragover();
+      return false;
+    },
+    handleDragleave: function handleDragleave(event) {
+      var this$1 = this;
+
+      this.$el.className = this.$el.className.replace("vddl-dragover", "").trim();
+      setTimeout(function () {
+        if (this$1.$el.className.indexOf("vddl-dragover") < 0) {
+          this$1.placeholderNode.parentNode && this$1.placeholderNode.parentNode.removeChild(this$1.placeholderNode);
+        }
+      }, 100);
+    },
+
+    // Checks whether the mouse pointer is in the first half of the given target element.
+    isMouseInFirstHalf: function isMouseInFirstHalf(event, targetNode, relativeToParent) {
+      var mousePointer = this.horizontal ? (event.offsetX || event.layerX)
+                                    : (event.offsetY || event.layerY);
+      var targetSize = this.horizontal ? targetNode.offsetWidth : targetNode.offsetHeight;
+      var targetPosition = this.horizontal ? targetNode.offsetLeft : targetNode.offsetTop;
+      targetPosition = relativeToParent ? targetPosition : 0;
+      return mousePointer < targetPosition + targetSize / 2;
+    },
+
+    /**
+     * Tries to find a child element that has the 'vddl-placeholder' class set. If none was found, a
+     * new div element is created.
+     */
+    getPlaceholderElement: function getPlaceholderElement() {
+      var placeholder,
+          oldPlaceholder = this.$el.parentNode.querySelectorAll('.vddl-placeholder');
+      if (oldPlaceholder.length > 0) {
+        placeholder = oldPlaceholder[0];
+        return placeholder;
+      }
+      var newPlaceholder = document.createElement('div');
+      newPlaceholder.setAttribute('class', 'vddl-placeholder');
+      return newPlaceholder;
+    },
+
+    getPlaceholderIndex: function getPlaceholderIndex() {
+      return Array.prototype.indexOf.call(this.listNode.children, this.placeholderNode);
+    },
+
+    /**
+     * Checks various conditions that must be fulfilled for a drop to be allowed
+     */
+    isDropAllowed: function isDropAllowed(event) {
+      // Disallow drop from external source unless it's allowed explicitly.
+      if (!this.vddlDragTypeWorkaround.isDragging && !this.externalSources) { return false; }
+
+      // Check mimetype. Usually we would use a custom drag type instead of Text, but IE doesn't
+      // support that.
+      if (!this.hasTextMimetype(event.dataTransfer.types)) { return false; }
+
+      // Now check the allowed-types against the type of the incoming element. For drops from
+      // external sources we don't know the type, so it will need to be checked via drop.
+      if (this.allowedTypes && this.vddlDragTypeWorkaround.isDragging) {
+        var allowed = this.allowedTypes;
+        if (Array.isArray(allowed) && allowed.indexOf(this.vddlDragTypeWorkaround.dragType) === -1) {
+          return false;
+        }
+      }
+
+      // Check whether droping is disabled completely
+      if (this.disableIf) { return false; }
+
+      return true;
+    },
+
+    /**
+     * Small helper function that cleans up if we aborted a drop.
+     */
+    stopDragover: function stopDragover() {
+      this.placeholderNode.parentNode && this.placeholderNode.parentNode.removeChild(this.placeholderNode);
+      this.$el.className = this.$el.className.replace("vddl-dragover", "").trim();
+      return true;
+    },
+
+    /**
+     * Invokes a callback with some interesting parameters and returns the callbacks return value.
+     */
+    invokeCallback: function invokeCallback(expression, event, index, item) {
+      var fn = this[expression];
+      if (fn) {
+        fn({
+          event: event,
+          index: index,
+          item: item || undefined,
+          list: this.list,
+          external: !this.vddlDragTypeWorkaround.isDragging,
+          type: this.vddlDragTypeWorkaround.isDragging ? this.vddlDragTypeWorkaround.dragType : undefined
+        });
+      }
+      return fn ? true : false;
+    },
+
+    /**
+     * Check if the dataTransfer object contains a drag type that we can handle. In old versions
+     * of IE the types collection will not even be there, so we just assume a drop is possible.
+     */
+    hasTextMimetype: function hasTextMimetype(types) {
+      if (!types) { return true; }
+        for (var i = 0; i < types.length; i += 1) {
+          if (types[i] === "Text" || types[i] === "text/plain") { return true; }
+        }
+
+      return false;
+    },
+    init: function init() {
+      this.placeholderNode = this.getPlaceholderElement();
+      this.listNode = this.$el;
+      this.placeholderNode.parentNode && this.placeholderNode.parentNode.removeChild(this.placeholderNode);
+    },
+  },
+  ready: function ready() {
+    this.init();
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+};
+
+var Handle = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-handle",on:{"dragstart":_vm.handle,"dragend":_vm.handle}},[_vm._t("default")],2)},staticRenderFns: [],
+  name: 'vddl-handle',
+  props: {
+    handleLeft: Number,
+    handleTop: Number,
+  },
+  data: function data() {
+    return {};
+  },
+  computed: {},
+  methods: {
+    handle: function handle(event) {
+      event._dndHandle = true;
+      event._dndHandleLeft = this.handleLeft || 0;
+      event._dndHandleTop = this.handleTop || 0;
+    },
+    init: function init() {
+      this.$el.setAttribute('draggable', true);
+    },
+  },
+  ready: function ready() {
+    this.init();
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+};
+
+var Nodrag = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-nodrag",on:{"dragstart":_vm.handleDragstart,"dragend":_vm.handleDragend}},[_vm._t("default")],2)},staticRenderFns: [],
+  name: 'vddl-nodrag',
+  props: {},
+  data: function data() {
+    return {};
+  },
+  computed: {},
+  methods: {
+    handleDragstart: function handleDragstart(event) {
+      if (!event._dndHandle) {
+        // If a child element already reacted to dragstart and set a dataTransfer object, we will
+        // allow that. For example, this is the case for user selections inside of input elements.
+        if (!(event.dataTransfer.types && event.dataTransfer.types.length)) {
+          event.preventDefault();
+        }
+        event.stopPropagation();
+      }
+    },
+    handleDragend: function handleDragend(event) {
+      if (!event._dndHandle) {
+        event.stopPropagation();
+      }
+    },
+    init: function init() {
+      this.$el.setAttribute('draggable', true);
+    },
+  },
+  ready: function ready() {
+    this.init();
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+};
+
+var Placeholder = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vddl-placeholder"},[_vm._t("default")],2)},staticRenderFns: [],
+  name: 'vddl-placeholder',
+};
+
+var install = function (Vue) {
+  /* eslint no-param-reassign: 0 */
+  Vue.prototype.vddlDropEffectWorkaround = {};
+  Vue.prototype.vddlDragTypeWorkaround = {};
+
+  Vue.component(Draggable.name, Draggable);
+  Vue.component(List.name, List);
+  Vue.component(Handle.name, Handle);
+  Vue.component(Nodrag.name, Nodrag);
+  Vue.component(Placeholder.name, Placeholder);
+};
+
+/* eslint no-undef:0 */
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass:
-          "alltasks border-bottom border-secondary d-block p-3 active",
-        attrs: { href: "#/task" }
-      },
-      [
-        _c("i", {
-          staticClass: "fa fa-tasks",
-          attrs: { "aria-hidden": "true" }
-        }),
-        _vm._v("  All Tasks")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "today d-block p-3", attrs: { href: "#/task" } },
-      [
-        _c("i", {
-          staticClass: "fa fa-list-ol",
-          attrs: { "aria-hidden": "true" }
-        }),
-        _vm._v("  Today's Tasks (10)")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "needaction d-block p-3", attrs: { href: "#/task" } },
-      [
-        _c("i", {
-          staticClass: "fa fa-reply",
-          attrs: { "aria-hidden": "true" }
-        }),
-        _vm._v("  Action Needed Taks (25)")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "important d-block p-3", attrs: { href: "#/task" } },
-      [
-        _c("i", {
-          staticClass: "fa fa-exclamation-circle",
-          attrs: { "aria-hidden": "true" }
-        }),
-        _vm._v("  Important Tasks (13)")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "pending d-block p-3", attrs: { href: "#/task" } },
-      [
-        _c("i", {
-          staticClass: "fa fa-clock-o",
-          attrs: { "aria-hidden": "true" }
-        }),
-        _vm._v("  Pending Taks (15)")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "deleted d-block p-3", attrs: { href: "#/task" } },
-      [
-        _c("i", {
-          staticClass: "fa fa-trash-o",
-          attrs: { "aria-hidden": "true" }
-        }),
-        _vm._v("  Deleted Tasks")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "task-type p-3" }, [
-      _c("h4", [_vm._v("All Tasks")])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4126c8c2", module.exports)
-  }
-}
+
+var install$1 = { install: install };
+
+return install$1;
+
+})));
+
 
 /***/ }),
 
-/***/ 439:
+/***/ 2249:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1331)
-  __webpack_require__(1333)
+  __webpack_require__(2250)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1335)
+var __vue_script__ = __webpack_require__(2252)
 /* template */
-var __vue_template__ = __webpack_require__(1336)
+var __vue_template__ = __webpack_require__(2253)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -985,7 +800,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/tasks.vue"
+Component.options.__file = "resources/components/plugins/nestable/nested-list.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -994,9 +809,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4126c8c2", Component.options)
+    hotAPI.createRecord("data-v-f1cb2f92", Component.options)
   } else {
-    hotAPI.reload("data-v-4126c8c2", Component.options)
+    hotAPI.reload("data-v-f1cb2f92", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1008,7 +823,34 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 697:
+/***/ 2250:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(2251);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("56099096", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f1cb2f92\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./nested-list.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f1cb2f92\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./nested-list.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 2251:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -1016,244 +858,404 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\nbody {\n  background: #f9f9f9;\n  height: 1000px;\n}\n\np {\n  margin-top: 0;\n}\n\n.my-scrollbar {\n  width: 35%;\n  min-width: 300px;\n  max-height: 450px;\n}\n\n.scroll-me {\n  background: #EEE;\n  min-width: 750px;\n}\n\n.kolom {\n  background: #2196F3;\n  width: 150px;\n  height: 150px;\n  float: left;\n  display: inline-block;\n  margin: 15px;\n}\n\n.clearfix {\n  clear: both;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 698:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".vue-scrollbar-transition, .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  transition: all 0.5s ease;\n  -moz-transition: all 0.5s ease;\n  -webkit-transition: all 0.5s ease;\n  -o-transition: all 0.5s ease;\n}\n.vue-scrollbar-transition--scrollbar {\n  transition: opacity 0.5s linear;\n  -moz-transition: opacity 0.5s linear;\n  -webkit-transition: opacity 0.5s linear;\n  -o-transition: opacity 0.5s linear;\n}\n\n.vue-scrollbar__wrapper {\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  background: white;\n}\n.vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-vertical, .vue-scrollbar__wrapper:hover .vue-scrollbar__scrollbar-horizontal {\n  opacity: 1;\n}\n.vue-scrollbar__scrollbar-vertical, .vue-scrollbar__scrollbar-horizontal {\n  opacity: 0.5;\n  position: absolute;\n  background: transparent;\n}\n.vue-scrollbar__scrollbar-vertical:hover, .vue-scrollbar__scrollbar-horizontal:hover {\n  background: rgba(0, 0, 0, 0.3);\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar, .vue-scrollbar__scrollbar-horizontal .scrollbar {\n  position: relative;\n  background: rgba(0, 0, 0, 0.5);\n  cursor: default;\n}\n.vue-scrollbar__scrollbar-vertical {\n  width: 10px;\n  height: 100%;\n  top: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-vertical .scrollbar {\n  width: 10px;\n}\n.vue-scrollbar__scrollbar-horizontal {\n  height: 10px;\n  width: 100%;\n  bottom: 0;\n  right: 0;\n}\n.vue-scrollbar__scrollbar-horizontal .scrollbar {\n  height: 10px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 699:
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Copyright (c) 2016 Naufal Rabbani (http://github.com/BosNaufal),
- * ,Licensed Under MIT (http://opensource.org/licenses/MIT),
- * ,
- * ,Vue 2 Scrollbar @ Version 0.0.2,
- * 
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["Vue2Scrollbar"] = factory();
-	else
-		root["Vue2Scrollbar"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "../dist/";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
-
-/* globals __VUE_SSR_CONTEXT__ */
-
-// this module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle
-
-module.exports = function normalizeComponent (
-  rawScriptExports,
-  compiledTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier /* server only */
-) {
-  var esModule
-  var scriptExports = rawScriptExports = rawScriptExports || {}
-
-  // ES6 modules interop
-  var type = typeof rawScriptExports.default
-  if (type === 'object' || type === 'function') {
-    esModule = rawScriptExports
-    scriptExports = rawScriptExports.default
-  }
-
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // render functions
-  if (compiledTemplate) {
-    options.render = compiledTemplate.render
-    options.staticRenderFns = compiledTemplate.staticRenderFns
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = injectStyles
-  }
-
-  if (hook) {
-    var functional = options.functional
-    var existing = functional
-      ? options.render
-      : options.beforeCreate
-    if (!functional) {
-      // inject component registration as beforeCreate hook
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    } else {
-      // register for functioal component in vue file
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return existing(h, context)
-      }
-    }
-  }
-
-  return {
-    esModule: esModule,
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-/* 1 */
+/***/ 2252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__ = __webpack_require__(9);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'list',
+  props: ['item', 'list', 'index', 'selected', 'selectedItem', 'disable'],
+  methods: {
+    selectedEvent: function selectedEvent(item) {
+      if (typeof this.selected === 'function') {
+        this.selected(item);
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ 2253:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "vddl-draggable",
+    {
+      staticClass: "panel__body--item",
+      class: { selected: _vm.selectedItem === _vm.item },
+      attrs: {
+        draggable: _vm.item,
+        index: _vm.index,
+        "disable-if": _vm.disable,
+        selected: _vm.selectedEvent,
+        wrapper: _vm.list
+      }
+    },
+    [
+      _vm.item.type === "container"
+        ? _c(
+            "div",
+            { staticClass: "card padding" },
+            [
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", [_vm._v("Container " + _vm._s(_vm.item.id))])
+              ]),
+              _vm._v(" "),
+              _c(
+                "vddl-list",
+                {
+                  staticClass: "card-body",
+                  attrs: {
+                    list: _vm.item.columns,
+                    "disable-if": _vm.disable,
+                    "external-sources": true
+                  }
+                },
+                _vm._l(_vm.item.columns, function(col, number) {
+                  return _c("list", {
+                    key: col.id,
+                    staticClass: "p-1 border border-f5 mt-2",
+                    attrs: {
+                      item: col,
+                      list: _vm.item.columns,
+                      index: number,
+                      selected: _vm.selectedEvent,
+                      "selected-item": _vm.selectedItem,
+                      disable: _vm.disable
+                    }
+                  })
+                }),
+                1
+              )
+            ],
+            1
+          )
+        : _c("p", [
+            _vm._v(
+              "\n    " +
+                _vm._s(_vm.item.type) +
+                " " +
+                _vm._s(_vm.item.id) +
+                "\n  "
+            )
+          ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f1cb2f92", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 2254:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "demo-content nested" }, [
+      _c("div", { staticClass: "v-row" }, [
+        _c(
+          "div",
+          { staticClass: "row" },
+          [
+            _vm._l(_vm.dropzones, function(list, zone) {
+              return _c("div", { staticClass: "col-4" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("div", { staticClass: "card-header" }, [
+                    _c("h3", [_vm._v("Dropzone " + _vm._s(zone))])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "card-body" },
+                    [
+                      _c(
+                        "vddl-list",
+                        {
+                          staticClass: "panel__body--list ",
+                          attrs: {
+                            list: list,
+                            inserted: _vm.inserted,
+                            "effect-allowed": "move",
+                            "disable-if": _vm.disable,
+                            drop: _vm.handleDrop,
+                            "external-sources": true
+                          }
+                        },
+                        _vm._l(list, function(item, index) {
+                          return _c("list", {
+                            key: item.id,
+                            staticClass: "p-1 border border-f5 mt-2",
+                            attrs: {
+                              item: item,
+                              list: list,
+                              index: index,
+                              moved: _vm.handleMoved,
+                              selected: _vm.handleSelected,
+                              "selected-item": _vm.selectedItem,
+                              disable: _vm.disable
+                            }
+                          })
+                        }),
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-4" }, [
+              _c("div", { staticClass: "new-elements " }, [
+                _c("div", { staticClass: "card panel--info" }, [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "card-body" },
+                    [
+                      _c(
+                        "vddl-draggable",
+                        {
+                          staticClass: "button btn btn-success btn-block",
+                          attrs: {
+                            draggable: _vm.itemMock,
+                            copied: _vm.copied,
+                            "effect-allowed": "copy"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Add Item\n                                "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c(
+                        "vddl-draggable",
+                        {
+                          staticClass: "button btn btn-primary btn-block mt-2",
+                          attrs: {
+                            draggable: _vm.containerMock,
+                            copied: _vm.copied,
+                            "effect-allowed": "copy"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                    Add Container\n                                "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "new-elements disable-element " }, [
+                _c("div", { staticClass: "card panel--info" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "button btn btn-danger",
+                        on: { click: _vm.toggleDisable }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                    Disable: " +
+                            _vm._s(_vm.disable) +
+                            "\n                                "
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _vm.selectedItem
+                ? _c("div", { staticClass: "selected-item" }, [
+                    _c("div", { staticClass: "card panel--info" }, [
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body" }, [
+                        _vm._v(
+                          "\n                                " +
+                            _vm._s(_vm.selectedItem.type) +
+                            " " +
+                            _vm._s(_vm.selectedItem.id) +
+                            "\n                            "
+                        )
+                      ])
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _c("div", { staticClass: "ashcan" }, [
+                _c(
+                  "div",
+                  { staticClass: "card panel--info" },
+                  [
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _c(
+                      "vddl-list",
+                      { staticClass: "card-body", attrs: { list: [] } },
+                      [
+                        _c("span", {
+                          staticClass: "fa fa-trash fa-3x ashcan-logo"
+                        })
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ])
+          ],
+          2
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", [_vm._v("New Elements")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", [_vm._v("Toggle Disable")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", [_vm._v("Selected")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", [_vm._v("Ashcan")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-d0fce8f0", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 498:
+/***/ (function(module, exports, __webpack_require__) {
+
 var disposed = false
-var normalizeComponent = __webpack_require__(0)
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(2245)
+}
+var normalizeComponent = __webpack_require__(42)
 /* script */
-
+var __vue_script__ = __webpack_require__(2247)
 /* template */
-
+var __vue_template__ = __webpack_require__(2254)
+/* template functional */
+var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-d0fce8f0"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vue_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7ec59f76_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vue_scrollbar_vue__["a" /* default */],
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src/js/components/vue-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vue-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
+Component.options.__file = "resources/components/pages/blank.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1262,927 +1264,17 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7ec59f76", Component.options)
+    hotAPI.createRecord("data-v-d0fce8f0", Component.options)
   } else {
-    hotAPI.reload("data-v-7ec59f76", Component.options)
+    hotAPI.reload("data-v-d0fce8f0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
   })
 })()}
 
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+module.exports = Component.exports
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    draggingFromParent: Boolean,
-    scrolling: Number,
-    wrapper: Object,
-    area: Object,
-    onChangePosition: Function,
-    onDragging: Function,
-    onStopDrag: Function
-  },
-
-  data: function data() {
-    return {
-      width: 0,
-      dragging: false,
-      start: 0
-    };
-  },
-
-
-  watch: {
-    'wrapper.width': function wrapperWidth(val, old) {
-      this.calculateSize(this);
-    },
-    'area.width': function areaWidth(val, old) {
-      this.calculateSize(this);
-    }
-  },
-
-  methods: {
-    startDrag: function startDrag(e) {
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      e = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Prepare To Drag
-      this.dragging = true;
-      this.start = e.clientX;
-    },
-    onDrag: function onDrag(e) {
-
-      if (this.dragging) {
-
-        // Make The Parent being in the Dragging State
-        this.onDragging();
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        e = e.changedTouches ? e.changedTouches[0] : e;
-
-        var xMovement = e.clientX - this.start;
-        var xMovementPercentage = xMovement / this.wrapper.width * 100;
-
-        // Update the last e.clientX
-        this.start = e.clientX;
-
-        // The next Horizontal Value will be
-        var next = this.scrolling + xMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'horizontal');
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      if (this.dragging) {
-        // Parent Should Change the Dragging State
-        this.onStopDrag();
-        this.dragging = false;
-      }
-    },
-    jump: function jump(e) {
-
-      var isContainer = e.target === this.$refs.container;
-
-      if (isContainer) {
-
-        // Get the Element Position
-        var position = this.$refs.scrollbar.getBoundingClientRect();
-
-        // Calculate the horizontal Movement
-        var xMovement = e.clientX - position.left;
-        var centerize = this.width / 2;
-        var xMovementPercentage = xMovement / this.wrapper.width * 100 - centerize;
-
-        // Update the last e.clientX
-        this.start = e.clientX;
-
-        // The next Horizontal Value will be
-        var next = this.scrolling + xMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'horizontal');
-      }
-    },
-    calculateSize: function calculateSize(source) {
-      // Scrollbar Width
-      this.width = source.wrapper.width / source.area.width * 100;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize(this);
-
-    // Put the Listener
-    document.addEventListener("mousemove", this.onDrag);
-    document.addEventListener("touchmove", this.onDrag);
-    document.addEventListener("mouseup", this.stopDrag);
-    document.addEventListener("touchend", this.stopDrag);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove the Listener
-    document.removeEventListener("mousemove", this.onDrag);
-    document.removeEventListener("touchmove", this.onDrag);
-    document.removeEventListener("mouseup", this.stopDrag);
-    document.removeEventListener("touchend", this.stopDrag);
-  }
-};
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    draggingFromParent: Boolean,
-    scrolling: Number,
-    wrapper: Object,
-    area: Object,
-    onChangePosition: Function,
-    onDragging: Function,
-    onStopDrag: Function
-  },
-
-  data: function data() {
-    return {
-      height: 0,
-      dragging: false,
-      start: 0
-    };
-  },
-
-
-  watch: {
-    'wrapper.height': function wrapperHeight(val, old) {
-      this.calculateSize(this);
-    },
-    'area.height': function areaHeight(val, old) {
-      this.calculateSize(this);
-    }
-  },
-
-  methods: {
-    startDrag: function startDrag(e) {
-
-      e.preventDefault();
-      e.stopPropagation();
-
-      e = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Prepare to drag
-      this.dragging = true, this.start = e.clientY;
-    },
-    onDrag: function onDrag(e) {
-
-      if (this.dragging) {
-
-        // Make The Parent being in the Dragging State
-        this.onDragging();
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        e = e.changedTouches ? e.changedTouches[0] : e;
-
-        var yMovement = e.clientY - this.start;
-        var yMovementPercentage = yMovement / this.wrapper.height * 100;
-
-        // Update the last e.clientY
-        this.start = e.clientY;
-
-        // The next Vertical Value will be
-        var next = this.scrolling + yMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'vertical');
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      if (this.dragging) {
-        // Parent Should Change the Dragging State
-        this.onStopDrag();
-        this.dragging = false;
-      }
-    },
-    jump: function jump(e) {
-
-      var isContainer = e.target === this.$refs.container;
-
-      if (isContainer) {
-
-        // Get the Element Position
-        var position = this.$refs.scrollbar.getBoundingClientRect();
-
-        // Calculate the vertical Movement
-        var yMovement = e.clientY - position.top;
-        var centerize = this.height / 2;
-        var yMovementPercentage = yMovement / this.wrapper.height * 100 - centerize;
-
-        // Update the last e.clientY
-        this.start = e.clientY;
-
-        // The next Vertical Value will be
-        var next = this.scrolling + yMovementPercentage;
-
-        // Tell the parent to change the position
-        this.onChangePosition(next, 'vertical');
-      }
-    },
-    calculateSize: function calculateSize(source) {
-      // Scrollbar Height
-      this.height = source.wrapper.height / source.area.height * 100;
-    },
-    getSize: function getSize() {
-      // The Elements
-      var $scrollArea = this.$refs.container.parentElement;
-      var $scrollWrapper = $scrollArea.parentElement;
-
-      // Get new Elements Size
-      var elementSize = {
-        // Scroll Area Height and Width
-        scrollAreaHeight: $scrollArea.children[0].clientHeight,
-        scrollAreaWidth: $scrollArea.children[0].clientWidth,
-
-        // Scroll Wrapper Height and Width
-        scrollWrapperHeight: $scrollWrapper.clientHeight,
-        scrollWrapperWidth: $scrollWrapper.clientWidth
-      };
-      return elementSize;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize(this);
-
-    // Put the Listener
-    document.addEventListener("mousemove", this.onDrag);
-    document.addEventListener("touchmove", this.onDrag);
-    document.addEventListener("mouseup", this.stopDrag);
-    document.addEventListener("touchend", this.stopDrag);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove the Listener
-    document.removeEventListener("mousemove", this.onDrag);
-    document.removeEventListener("touchmove", this.onDrag);
-    document.removeEventListener("mouseup", this.stopDrag);
-    document.removeEventListener("touchend", this.stopDrag);
-  }
-};
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _verticalScrollbar = __webpack_require__(7);
-
-var _verticalScrollbar2 = _interopRequireDefault(_verticalScrollbar);
-
-var _horizontalScrollbar = __webpack_require__(6);
-
-var _horizontalScrollbar2 = _interopRequireDefault(_horizontalScrollbar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-exports.default = {
-
-  props: {
-    classes: String,
-    styles: Object,
-    speed: {
-      type: Number,
-      default: 53
-    },
-    onMaxScroll: Function
-  },
-
-  components: {
-    VerticalScrollbar: _verticalScrollbar2.default,
-    HorizontalScrollbar: _horizontalScrollbar2.default
-  },
-
-  data: function data() {
-    return {
-      ready: false,
-      top: 0,
-      left: 0,
-      scrollAreaHeight: null,
-      scrollAreaWidth: null,
-      scrollWrapperHeight: null,
-      scrollWrapperWidth: null,
-      vMovement: 0,
-      hMovement: 0,
-      dragging: false,
-      start: { y: 0, x: 0 },
-      allowBodyScroll: false
-    };
-  },
-
-
-  methods: {
-    scroll: function scroll(e) {
-      var _this = this;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Set the wheel step
-        var num = _this.speed;
-
-        // DOM events
-        var shifted = e.shiftKey;
-        var scrollY = e.deltaY > 0 ? num : -num;
-        var scrollX = e.deltaX > 0 ? num : -num;
-
-        // Fix Mozilla Shifted Wheel~
-        if (shifted && e.deltaX == 0) scrollX = e.deltaY > 0 ? num : -num;
-
-        // Next Value
-        var nextY = _this.top + scrollY;
-        var nextX = _this.left + scrollX;
-
-        // Is it Scrollable?
-        var canScrollY = _this.scrollAreaHeight > _this.scrollWrapperHeight;
-        var canScrollX = _this.scrollAreaWidth > _this.scrollWrapperWidth;
-
-        // Vertical Scrolling
-        if (canScrollY && !shifted) _this.normalizeVertical(nextY);
-
-        // Horizontal Scrolling
-        if (shifted && canScrollX) _this.normalizeHorizontal(nextX);
-      });
-
-      // prevent Default only if scrolled content is not at the top/bottom
-      if (!this.allowBodyScroll) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    },
-
-
-    // DRAG EVENT JUST FOR TOUCH DEVICE~
-    startDrag: function startDrag(e) {
-      var _this2 = this;
-
-      this.touchEvent = e;
-
-      var evt = e.changedTouches ? e.changedTouches[0] : e;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Prepare to drag
-        _this2.dragging = true, _this2.start = { y: evt.pageY, x: evt.pageX };
-      });
-    },
-    onDrag: function onDrag(e) {
-      if (this.dragging) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        // Prevent Click Event When it dragging
-        if (this.touchEvent) {
-          this.touchEvent.preventDefault();
-          this.touchEvent.stopPropagation();
-        }
-
-        var evt = e.changedTouches ? e.changedTouches[0] : e;
-
-        // Invers the Movement
-        var yMovement = this.start.y - evt.clientY;
-        var xMovement = this.start.x - evt.clientX;
-
-        // Update the last e.client
-        this.start = { y: evt.clientY, x: evt.clientX
-
-          // The next Vertical Value will be
-        };var nextY = this.top + yMovement;
-        var nextX = this.left + xMovement;
-
-        this.normalizeVertical(nextY);
-        this.normalizeHorizontal(nextX);
-      }
-    },
-    stopDrag: function stopDrag(e) {
-      this.dragging = false;
-      this.touchEvent = false;
-    },
-    scrollToY: function scrollToY(y) {
-      this.normalizeVertical(y);
-    },
-    scrollToX: function scrollToX(x) {
-      this.normalizeHorizontal(x);
-    },
-    normalizeVertical: function normalizeVertical(next) {
-      var elementSize = this.getSize();
-
-      // Vertical Scrolling
-      var lowerEnd = elementSize.scrollAreaHeight - elementSize.scrollWrapperHeight;
-
-      // Max Scroll Down
-      var maxBottom = next > lowerEnd;
-      if (maxBottom) next = lowerEnd;
-
-      // Max Scroll Up
-      var maxTop = next < 0;
-      if (maxTop) next = 0;
-
-      // Update the Vertical Value if it's needed
-      var shouldScroll = this.top !== next;
-      this.allowBodyScroll = !shouldScroll;
-      if (shouldScroll) {
-        this.top = next, this.vMovement = next / elementSize.scrollAreaHeight * 100;
-
-        if (this.onMaxScroll && (maxTop || maxBottom)) {
-          this.onMaxScroll({ top: maxTop, bottom: maxBottom, right: false, left: false });
-        }
-      }
-    },
-    normalizeHorizontal: function normalizeHorizontal(next) {
-      var elementSize = this.getSize();
-
-      // Horizontal Scrolling
-      var rightEnd = elementSize.scrollAreaWidth - this.scrollWrapperWidth;
-
-      // Max Scroll Right
-      var maxRight = next > rightEnd;
-      if (maxRight) next = rightEnd;
-
-      // Max Scroll Left
-      var maxLeft = next < 0;
-      if (next < 0) next = 0;
-
-      // Update the Horizontal Value
-      var shouldScroll = this.left !== next;
-      this.allowBodyScroll = !shouldScroll;
-      if (shouldScroll) {
-        this.left = next, this.hMovement = next / elementSize.scrollAreaWidth * 100;
-
-        if (this.onMaxScroll && (maxRight || maxLeft)) {
-          this.onMaxScroll({ right: maxRight, left: maxLeft, top: false, bottom: false });
-        }
-      }
-    },
-    handleChangePosition: function handleChangePosition(movement, orientation) {
-      var _this3 = this;
-
-      // Make sure the content height is not changed
-      this.calculateSize(function () {
-        // Convert Percentage to Pixel
-        var next = movement / 100;
-        if (orientation == 'vertical') _this3.normalizeVertical(next * _this3.scrollAreaHeight);
-        if (orientation == 'horizontal') _this3.normalizeHorizontal(next * _this3.scrollAreaWidth);
-      });
-    },
-    handleScrollbarDragging: function handleScrollbarDragging() {
-      this.dragging = true;
-    },
-    handleScrollbarStopDrag: function handleScrollbarStopDrag() {
-      this.dragging = false;
-    },
-    getSize: function getSize() {
-      // The Elements
-      var $scrollArea = this.$refs.scrollArea;
-      var $scrollWrapper = this.$refs.scrollWrapper;
-
-      // Get new Elements Size
-      var elementSize = {
-        // Scroll Area Height and Width
-        scrollAreaHeight: $scrollArea.children[0].clientHeight,
-        scrollAreaWidth: $scrollArea.children[0].clientWidth,
-
-        // Scroll Wrapper Height and Width
-        scrollWrapperHeight: $scrollWrapper.clientHeight,
-        scrollWrapperWidth: $scrollWrapper.clientWidth
-      };
-      return elementSize;
-    },
-    calculateSize: function calculateSize(cb) {
-      if (typeof cb !== 'function') cb = null;
-
-      var elementSize = this.getSize();
-
-      if (elementSize.scrollWrapperHeight !== this.scrollWrapperHeight || elementSize.scrollWrapperWidth !== this.scrollWrapperWidth || elementSize.scrollAreaHeight !== this.scrollAreaHeight || elementSize.scrollAreaWidth !== this.scrollAreaWidth) {
-
-        // Scroll Area Height and Width
-        this.scrollAreaHeight = elementSize.scrollAreaHeight, this.scrollAreaWidth = elementSize.scrollAreaWidth,
-
-        // Scroll Wrapper Height and Width
-        this.scrollWrapperHeight = elementSize.scrollWrapperHeight, this.scrollWrapperWidth = elementSize.scrollWrapperWidth,
-
-        // Make sure The wrapper is Ready, then render the scrollbar
-        this.ready = true;
-
-        return cb ? cb() : false;
-      } else return cb ? cb() : false;
-    }
-  },
-
-  mounted: function mounted() {
-    this.calculateSize();
-
-    // Attach The Event for Responsive View~
-    window.addEventListener('resize', this.calculateSize);
-  },
-  beforeDestroy: function beforeDestroy() {
-    // Remove Event
-    window.removeEventListener('resize', this.calculateSize);
-  }
-};
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _vueScrollbar = __webpack_require__(1);
-
-var _vueScrollbar2 = _interopRequireDefault(_vueScrollbar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = _vueScrollbar2.default;
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__ = __webpack_require__(8);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_horizontal_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03d7e587_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_horizontal_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/horizontal-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] horizontal-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03d7e587", Component.options)
-  } else {
-    hotAPI.reload("data-v-03d7e587", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__ = __webpack_require__(10);
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-/* template */
-
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vertical_scrollbar_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9fd7644e_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vertical_scrollbar_vue__["a" /* default */],
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/js/components/vertical-scrollbar.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] vertical-scrollbar.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-9fd7644e", Component.options)
-  } else {
-    hotAPI.reload("data-v-9fd7644e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.width < 100) ? _c('div', {
-    ref: "container",
-    staticClass: "vue-scrollbar__scrollbar-horizontal",
-    on: {
-      "click": _vm.jump
-    }
-  }, [_c('div', {
-    ref: "scrollbar",
-    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
-    style: ({
-      width: this.width + '%',
-      left: this.scrolling + '%'
-    }),
-    on: {
-      "touchstart": _vm.startDrag,
-      "mousedown": _vm.startDrag
-    }
-  })]) : _vm._e()])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-03d7e587", esExports)
-  }
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    ref: "scrollWrapper",
-    class: 'vue-scrollbar__wrapper' + (this.classes ? ' ' + this.classes : ''),
-    style: (this.styles),
-    on: {
-      "click": _vm.calculateSize
-    }
-  }, [_c('div', {
-    ref: "scrollArea",
-    class: 'vue-scrollbar__area' + (this.dragging ? ' ' : ' vue-scrollbar-transition'),
-    style: ({
-      marginTop: this.top * -1 + 'px',
-      marginLeft: this.left * -1 + 'px'
-    }),
-    on: {
-      "wheel": _vm.scroll,
-      "touchstart": _vm.startDrag,
-      "touchmove": _vm.onDrag,
-      "touchend": _vm.stopDrag
-    }
-  }, [_vm._t("default"), _vm._v(" "), (_vm.ready) ? _c('vertical-scrollbar', {
-    attrs: {
-      "area": {
-        height: _vm.scrollAreaHeight
-      },
-      "wrapper": {
-        height: _vm.scrollWrapperHeight
-      },
-      "scrolling": _vm.vMovement,
-      "dragging-from-parent": _vm.dragging,
-      "on-change-position": _vm.handleChangePosition,
-      "on-dragging": _vm.handleScrollbarDragging,
-      "on-stop-drag": _vm.handleScrollbarStopDrag
-    }
-  }) : _vm._e(), _vm._v(" "), (_vm.ready) ? _c('horizontal-scrollbar', {
-    attrs: {
-      "area": {
-        width: _vm.scrollAreaWidth
-      },
-      "wrapper": {
-        width: _vm.scrollWrapperWidth
-      },
-      "scrolling": _vm.hMovement,
-      "dragging-from-parent": _vm.dragging,
-      "on-change-position": _vm.handleChangePosition,
-      "on-dragging": _vm.handleScrollbarDragging,
-      "on-stop-drag": _vm.handleScrollbarStopDrag
-    }
-  }) : _vm._e()], 2)])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7ec59f76", esExports)
-  }
-}
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.height < 100) ? _c('div', {
-    ref: "container",
-    staticClass: "vue-scrollbar__scrollbar-vertical",
-    on: {
-      "click": _vm.jump
-    }
-  }, [_c('div', {
-    ref: "scrollbar",
-    class: 'scrollbar' + (_vm.dragging || _vm.draggingFromParent ? '' : ' vue-scrollbar-transition'),
-    style: ({
-      height: _vm.height + '%',
-      top: _vm.scrolling + '%'
-    }),
-    on: {
-      "touchstart": _vm.startDrag,
-      "mousedown": _vm.startDrag
-    }
-  })]) : _vm._e()])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-9fd7644e", esExports)
-  }
-}
-
-/***/ })
-/******/ ]);
-});
 
 /***/ })
 

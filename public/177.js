@@ -1,22 +1,22 @@
 webpackJsonp([177],{
 
-/***/ 2209:
+/***/ 2271:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2210);
+var content = __webpack_require__(2272);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("9039e5b8", content, false, {});
+var update = __webpack_require__(26)("250b83ba", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ff82624c\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ff82624c\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4117d20c\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4117d20c\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2210:
+/***/ 2272:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,30 +35,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.right-side[data-v-ff82624c] {\n    padding-top :0;\n}\n.movable-header .rightsidebar-without-nav[data-v-ff82624c] {\n    padding-top : 20px !important\n}\n@media screen and (max-width : 560px) {\nbody[data-v-ff82624c] {\n        padding-top : 0 !important;\n}\n    /*fixednav pages*/\n.fixednav_right[data-v-ff82624c] {\n        padding-top : 112px;\n}\n}\n@media screen and (max-width : 992px) {\n.fixed-menu #menu[data-v-ff82624c] {\n        padding-top : 0;\n}\n.movable-header #right[data-v-ff82624c] {\n        padding-top : 0;\n}\n}\n@media screen and (max-width : 560px) {\n.fixed-menu #menu[data-v-ff82624c] {\n        padding-top : 90px;\n}\n.movable-header .rightsidebar-without-nav-small[data-v-ff82624c] {\n        padding-top : 70px !important\n}\n}\n.movable-header #menu[data-v-ff82624c] {\n    padding-top : 0;\n}\n/*==== layout fixed ====*/\n.slimScrollBar[data-v-ff82624c] {\n    width      : 3px !important;\n    opacity    : 0.5 !important;\n    background : rgb(130, 194, 224) !important;\n}\n.menu_align[data-v-ff82624c] {\n    margin-bottom : 50px;\n}\n.full_img[data-v-ff82624c] {\n    width: 100%;\n    height: 150px;\n    border-radius: 5px;\n}\n/*movable header page*/\n.header_movable[data-v-ff82624c] {\n    position : relative !important;\n}\n\n/*====End of layout fixed ====*/\n", ""]);
+exports.push([module.i, "\n.right-side[data-v-4117d20c] {\n    padding-top :0;\n}\n.movable-header .rightsidebar-without-nav[data-v-4117d20c] {\n    padding-top : 20px !important\n}\n@media screen and (max-width : 560px) {\nbody[data-v-4117d20c] {\n        padding-top : 0 !important;\n}\n    /*fixednav pages*/\n.fixednav_right[data-v-4117d20c] {\n        padding-top : 112px;\n}\n}\n@media screen and (max-width : 992px) {\n.fixed-menu #menu[data-v-4117d20c] {\n        padding-top : 0;\n}\n.movable-header #right[data-v-4117d20c] {\n        padding-top : 0;\n}\n}\n@media screen and (max-width : 560px) {\n.fixed-menu #menu[data-v-4117d20c] {\n        padding-top : 90px;\n}\n.movable-header .rightsidebar-without-nav-small[data-v-4117d20c] {\n        padding-top : 70px !important\n}\n}\n.movable-header #menu[data-v-4117d20c] {\n    padding-top : 0;\n}\n/*==== layout fixed ====*/\n.slimScrollBar[data-v-4117d20c] {\n    width      : 3px !important;\n    opacity    : 0.5 !important;\n    background : rgb(130, 194, 224) !important;\n}\n.menu_align[data-v-4117d20c] {\n    margin-bottom : 50px;\n}\n.full_img[data-v-4117d20c] {\n    width: 100%;\n    height: 150px;\n    border-radius: 5px;\n}\n/*movable header page*/\n.header_movable[data-v-4117d20c] {\n    position : relative !important;\n}\n\n/*====End of layout fixed ====*/\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2211:
+/***/ 2273:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2212);
+var content = __webpack_require__(2274);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("4762951e", content, false, {});
+var update = __webpack_require__(26)("2021aa15", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ff82624c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./boxed_movableheader.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ff82624c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./boxed_movableheader.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4117d20c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./movable_header.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4117d20c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./movable_header.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2212:
+/***/ 2274:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,7 +84,7 @@ exports.push([module.i, "\nbody.movable-header {\n  overflow: hidden;\n}\nbody.m
 
 /***/ }),
 
-/***/ 2213:
+/***/ 2275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -135,69 +135,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "boxed_movableheader",
+    name: "movable_header",
     mounted: function mounted() {
-        $("html").addClass("stylehtml");
-        $("body").addClass("boxed movable-header");
+        $("body").addClass("movable-header");
         $("header").addClass("header_movable");
         $(".navbar-fixed-top").removeClass("navbar-fixed-top").addClass("navbar-static-top");
     },
     destroyed: function destroyed() {
-        $("html").removeClass("stylehtml");
-        $("body").removeClass("boxed movable-header");
+        $("body").removeClass("movable-header");
         $("header").removeClass("header_movable");
         $(".navbar-static-top").removeClass("navbar-static-top").addClass("navbar-fixed-top");
-        $("#temp_style").remove();
         location.reload();
     }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(526)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(527)))
 
 /***/ }),
 
-/***/ 2214:
+/***/ 2276:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -210,13 +167,13 @@ var render = function() {
     _c("div", { staticClass: "col-lg-12" }, [
       _c("p", { staticClass: "text-justify" }, [
         _vm._v(
-          "\n                Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit\n            at,\n            congue euismod\n            lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis\n            molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer\n            augue\n            libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper\n            tincidunt. Integer aliquam felis eget neque facilisis ornare.\n        "
+          "\n                    Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu.\n            "
         )
       ]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n                Integer pharetra vitae dolor vel\n            elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla\n            orci\n            sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque\n            facilisis luctus adipiscing.\n        "
+          "\n                    Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque acilisis luctus adipiscing.\n            "
         )
       ]),
       _vm._v(" "),
@@ -224,7 +181,7 @@ var render = function() {
         _c("img", {
           staticClass: "img-responsive full_img",
           attrs: {
-            src: __webpack_require__(565),
+            src: __webpack_require__(566),
             alt: "holder image"
           }
         })
@@ -232,19 +189,19 @@ var render = function() {
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n            Lorem ipsum\n            dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet\n            placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit\n            sem\n            condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec\n            purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus\n            neque,\n            molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim\n            pharetra,\n            nec ultricies metus sagittis.Duis varius id massa ut pellentesque.\n        "
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris.\n            "
         )
       ]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "     Nulla commodo erat eu mi aliquet\n            aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a\n            neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit\n            tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa.\n            Etiam\n            nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum.\n            Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur\n            purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper,\n            lectus elit posuere augue, eget tempus lacus nibh a purus. Ut risus velit, adipiscing eu leo\n            quis,\n            vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl.\n        "
+          "\n                    Sed adipiscing justo tristique enim pharetra, nec ultricies metus sagittis.Duis varius id massa ut pellentesque. Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a purus.\n            "
         )
       ]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "     Mauris risus orci, tristique\n            eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at\n            quam. In\n            hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit\n            amet\n            volutpat. et euismod tellus viverra.\n        "
+          "\n                   Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n            "
         )
       ]),
       _vm._v(" "),
@@ -254,7 +211,7 @@ var render = function() {
         _c("img", {
           staticClass: "img-responsive full_img",
           attrs: {
-            src: __webpack_require__(565),
+            src: __webpack_require__(566),
             alt: "holder image"
           }
         })
@@ -262,7 +219,19 @@ var render = function() {
       _vm._v(" "),
       _c("p", [
         _vm._v(
-          "\n            Lorem ipsum\n            dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet\n            placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit\n            sem\n            condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec\n            purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus\n            neque,\n            molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim\n            pharetra,\n            nec ultricies metus sagittis. Duis varius id massa ut pellentesque. Nulla commodo erat eu mi\n            aliquet\n            aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat.\n        "
+          "\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim pharetra, nec ultricies metus sagittis. Duis varius id massa ut pellentesque.\n            "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "    Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a purus.\n            "
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "    Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n            "
         )
       ]),
       _vm._v(" "),
@@ -282,7 +251,7 @@ var staticRenderFns = [
         _c("pre", [
           _c("code", { staticClass: "language-markup" }, [
             _vm._v(
-              '<body class="boxed">\n                ...\n                </body>'
+              '<body class="boxed">\n    <nav class="navbar navbar-inverse navbar-fixed-top">\n    ...\n    </nav>\n</body>'
             )
           ])
         ])
@@ -295,32 +264,32 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ff82624c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-4117d20c", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 504:
+/***/ 503:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2209)
-  __webpack_require__(2211)
+  __webpack_require__(2271)
+  __webpack_require__(2273)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2213)
+var __vue_script__ = __webpack_require__(2275)
 /* template */
-var __vue_template__ = __webpack_require__(2214)
+var __vue_template__ = __webpack_require__(2276)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-ff82624c"
+var __vue_scopeId__ = "data-v-4117d20c"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -331,7 +300,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/boxed_movableheader.vue"
+Component.options.__file = "resources/components/pages/movable_header.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -340,9 +309,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ff82624c", Component.options)
+    hotAPI.createRecord("data-v-4117d20c", Component.options)
   } else {
-    hotAPI.reload("data-v-ff82624c", Component.options)
+    hotAPI.reload("data-v-4117d20c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -354,7 +323,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 526:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10726,7 +10695,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 565:
+/***/ 566:
 /***/ (function(module, exports) {
 
 module.exports = "/images/brick-wall.png?effad1520fc39d8897385d7004d2dbf4";

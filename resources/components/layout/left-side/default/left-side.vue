@@ -11,6 +11,9 @@
                     <vmenu-item link="/" icon="fa fa-fw fa-desktop">
                         Inicio
                     </vmenu-item>
+                     <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-tasks">
+                        Crear Nuevo Proyecto
+                    </vmenu-item>
                     <vsub-menu title="Usuarios" icon="fa fa-fw fa-user" class="menufold-bottom">
                         <vmenu-item link="/Roles" icon="fa fa-fw fa-users">
                             Roles

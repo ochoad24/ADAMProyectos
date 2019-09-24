@@ -112,7 +112,7 @@
                                     </div>
                                 </template>
                             </td>
-                            <td class="justify-left layout px-0">
+                            <td class="justify-center layout px-0">
                                 <v-icon small class="mr-2" @click="abrirEditar(props.item)">
                                     edit
                                 </v-icon>
