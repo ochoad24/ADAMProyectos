@@ -19,10 +19,10 @@ class ActividadController extends Controller
             $actividad->idProyecto = $request->idProyecto;
             $actividad->fechaInicio = Carbon::parse($request->fechaInicio);
             $actividad->fechaFinal = Carbon::parse($request->fechaFinal);
-            $actividad->tareas = 15;
-            $actividad->tareasCompletadas = 5;
-            $actividad->tareasPendientes = 10;
-            $actividad->Estado = 1;
+            $actividad->tareas = 0;
+            $actividad->tareasCompletadas = 0;
+            $actividad->tareasPendientes = 0;
+            $actividad->estado = 1;
             $actividad->save();
         }catch(\Exception $e){
             $response['error'] = $e->getMessage();
@@ -46,9 +46,9 @@ class ActividadController extends Controller
             $actividad->idProyecto = $request->idProyecto;
             $actividad->fechaInicio = Carbon::parse($request->fechaInicio);
             $actividad->fechaFinal = Carbon::parse($request->fechaFin);
-            $actividad->tareas = 15;
-            $actividad->tareasCompletadas = 5;
-            $actividad->tareasPendientes = 10;
+            $actividad->tareas = 0;
+            $actividad->tareasCompletadas = 0;
+            $actividad->tareasPendientes = 0;
             $actividad->estado = 1;
             $actividad->save();
         }catch(\Throwable $th) {

@@ -1,7 +1,7 @@
 <template>
     <div class="row user-list">
         <div class="col-lg-12">
-            <b-card header="Usuarios" header-tag="h4" class="bg-primary-card">
+            <b-card header="Actividades" header-tag="h4" class="bg-primary-card">
                 <div class="table-responsive">
                     <v-toolbar flat color="white">
                         <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
@@ -264,10 +264,9 @@
                     'actividad': me.actividad,
                     'fechaInicio': me.fechaInicio,
                     'fechaFinal': me.fechaFinal,
-                    'idProyecto': me.proyecto
+                    'idProyecto': me.proyecto.id
                 })
                     .then(function (response) {
-                        // console.log(response.data);
                         if (!response.data) {
                             swal.fire({
                                 type: 'success',
@@ -306,7 +305,7 @@
                     'actividad': me.actividad,
                     'fechaInicio': me.fechaInicio,
                     'fechaFinal': me.fechaFinal,
-                    'idProyecto': me.proyecto,
+                    'idProyecto': me.proyecto.id,
                     'id': me.idActividad
                 })
                     .then(function (response) {
@@ -372,6 +371,7 @@
                                 'Error al activar actividad!',
                                 'error'
                             )
+                            console.log(error);
                         });
                     } else {
                         swalWithBootstrapButtons.fire(

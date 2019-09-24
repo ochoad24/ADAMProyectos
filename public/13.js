@@ -320,6 +320,14 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1801,12 +1809,12 @@ var render = function() {
                                                           },
                                                           [
                                                             _c(
-                                                              "v-icon",
+                                                              "v-btn",
                                                               {
                                                                 staticClass:
-                                                                  "mr-2",
+                                                                  "white--text",
                                                                 attrs: {
-                                                                  small: ""
+                                                                  color: "blue"
                                                                 },
                                                                 on: {
                                                                   click: function(
@@ -1821,9 +1829,24 @@ var render = function() {
                                                               },
                                                               [
                                                                 _vm._v(
-                                                                  "\n                                                            arrow_upward\n                                                        "
+                                                                  "\n                                                            Encargado\n                                                            "
+                                                                ),
+                                                                _c(
+                                                                  "v-icon",
+                                                                  {
+                                                                    attrs: {
+                                                                      right: "",
+                                                                      dark: ""
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _vm._v(
+                                                                      "how_to_reg"
+                                                                    )
+                                                                  ]
                                                                 )
-                                                              ]
+                                                              ],
+                                                              1
                                                             )
                                                           ],
                                                           1

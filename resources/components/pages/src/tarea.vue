@@ -25,7 +25,8 @@
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12>
-                                                <v-textarea v-model="descripcionShow" label="Descripción de la tarea" disabled readonly>
+                                                <v-textarea v-model="descripcionShow" label="Descripción de la tarea"
+                                                    disabled readonly>
                                                 </v-textarea>
                                             </v-flex>
                                             <v-flex xs12>
@@ -45,12 +46,13 @@
                                                         color="light-green accent-3"></v-progress-linear>
                                                     <template v-slot:items="props">
                                                         <td class="text-xs-left">{{ props.item.nombre }}</td>
-                                                        <td class="text-xs-left">{{ props.item.valor }}</td> 
+                                                        <td class="text-xs-left">{{ props.item.valor }}</td>
                                                     </template>
                                                 </v-data-table>
                                             </v-flex>
                                             <v-flex xs12>
-                                                <v-text-field v-model="cantidadShow" label="Total de participantes" type="number" disabled readonly>
+                                                <v-text-field v-model="cantidadShow" label="Total de participantes"
+                                                    type="number" disabled readonly>
                                                 </v-text-field>
                                             </v-flex>
                                             <v-layout row wrap>
@@ -68,8 +70,10 @@
                                                                     </v-layout>
                                                                 </template>
                                                                 <v-expand-transition>
-                                                                    <v-layout fill-height align-center justify-center ma-0 v-if="hover">
-                                                                        <v-btn icon dark color="blue darken-1" v-bind:href="n.url" target="_blank">
+                                                                    <v-layout fill-height align-center justify-center
+                                                                        ma-0 v-if="hover">
+                                                                        <v-btn icon dark color="blue darken-1"
+                                                                            v-bind:href="n.url" target="_blank">
                                                                             <v-icon dark>arrow_downward</v-icon>
                                                                         </v-btn>
                                                                     </v-layout>
@@ -192,9 +196,13 @@
                                                             </template>
                                                         </td>
                                                         <td class="justify-center layout px-0">
-                                                            <v-icon small class="mr-2" @click="superior(props.item.id)">
-                                                                arrow_upward
-                                                            </v-icon>
+                                                            <v-btn color="blue" class="white--text" @click="superior(props.item.id)">
+                                                                Encargado
+                                                                <v-icon right dark>how_to_reg</v-icon>
+                                                            </v-btn>
+                                                            <!-- <v-icon small class="mr-2" >
+                                                                how_to_reg
+                                                            </v-icon> -->
                                                         </td>
                                                     </template>
                                                 </v-data-table>
@@ -344,7 +352,7 @@
             empleadoShow: [],
             estadisticaShow: [],
             fotoShow: [],
-            cantidadShow:0,
+            cantidadShow: 0,
         }),
 
         computed: {
@@ -463,15 +471,15 @@
                 this.dialog = true
             },
             watchTask(id) {
-                var url='/Tarea/ver/'+id;
+                var url = '/Tarea/ver/' + id;
                 axios.get(url)
                     .then(response => {
-                        this.descripcionShow= response.data.tarea[0].descripcion;
-                        this.empleadoShow=response.data.empleado;
-                        this.estadisticaShow=response.data.estadistica;
-                        this.fotoShow=response.data.foto;
-                        this.cantidadShow=response.data.tarea[0].participantes;
-                        this.dialog2=true;
+                        this.descripcionShow = response.data.tarea[0].descripcion;
+                        this.empleadoShow = response.data.empleado;
+                        this.estadisticaShow = response.data.estadistica;
+                        this.fotoShow = response.data.foto;
+                        this.cantidadShow = response.data.tarea[0].participantes;
+                        this.dialog2 = true;
                     })
                     .catch(errors => {
                         console.log(errors);
@@ -522,7 +530,7 @@
             close2() {
                 this.dialog2 = false;
             },
-            
+
             save() {
                 let me = this;
                 // if (this.validate()) {

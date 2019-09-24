@@ -266,9 +266,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 'actividad': me.actividad,
                 'fechaInicio': me.fechaInicio,
                 'fechaFinal': me.fechaFinal,
-                'idProyecto': me.proyecto
+                'idProyecto': me.proyecto.id
             }).then(function (response) {
-                // console.log(response.data);
                 if (!response.data) {
                     swal.fire({
                         type: 'success',
@@ -306,7 +305,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 'actividad': me.actividad,
                 'fechaInicio': me.fechaInicio,
                 'fechaFinal': me.fechaFinal,
-                'idProyecto': me.proyecto,
+                'idProyecto': me.proyecto.id,
                 'id': me.idActividad
             }).then(function (response) {
                 // console.log(response.data);
@@ -362,6 +361,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         swalWithBootstrapButtons.fire('Activado', 'La actividad ha sido activada!', 'success');
                     }).catch(function (error) {
                         swalWithBootstrapButtons.fire('Error', 'Error al activar actividad!', 'error');
+                        console.log(error);
                     });
                 } else {
                     swalWithBootstrapButtons.fire('Cancelado :(');
@@ -506,7 +506,7 @@ var render = function() {
           "b-card",
           {
             staticClass: "bg-primary-card",
-            attrs: { header: "Usuarios", "header-tag": "h4" }
+            attrs: { header: "Actividades", "header-tag": "h4" }
           },
           [
             _c(
