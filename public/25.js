@@ -783,7 +783,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "rounded-circle img-bor",
                       attrs: {
-                        src: __webpack_require__(563),
+                        src: __webpack_require__(545),
                         alt: "img"
                       }
                     })
@@ -1164,7 +1164,7 @@ var render = function() {
                                               attrs: {
                                                 height: "60",
                                                 width: "60",
-                                                src: __webpack_require__(561),
+                                                src: __webpack_require__(543),
                                                 alt: "avatar image"
                                               }
                                             })
@@ -1220,7 +1220,7 @@ var render = function() {
                                               staticClass:
                                                 "media-object img-thumbnail img-fluid",
                                               attrs: {
-                                                src: __webpack_require__(560),
+                                                src: __webpack_require__(542),
                                                 alt: "avatar image",
                                                 height: "60",
                                                 width: "60"
@@ -1344,7 +1344,7 @@ var render = function() {
                                               staticClass:
                                                 "d-flex mr-3 img-thumbnail img-fluid",
                                               attrs: {
-                                                src: __webpack_require__(562),
+                                                src: __webpack_require__(544),
                                                 alt: "avatar image",
                                                 height: "60",
                                                 width: "60"
@@ -1518,7 +1518,7 @@ var render = function() {
                                               staticClass:
                                                 "d-flex mr-3 img-thumbnail img-fluid",
                                               attrs: {
-                                                src: __webpack_require__(562),
+                                                src: __webpack_require__(544),
                                                 alt: "avatar image",
                                                 height: "60",
                                                 width: "60"
@@ -1580,7 +1580,7 @@ var render = function() {
                                               staticClass:
                                                 "d-flex mr-3 img-thumbnail img-fluid",
                                               attrs: {
-                                                src: __webpack_require__(560),
+                                                src: __webpack_require__(542),
                                                 alt: "avatar image",
                                                 height: "60",
                                                 width: "60"
@@ -1650,7 +1650,7 @@ var render = function() {
                                             staticClass:
                                               "d-flex mr-3 img-thumbnail",
                                             attrs: {
-                                              src: __webpack_require__(560),
+                                              src: __webpack_require__(542),
                                               alt: "image",
                                               height: "80",
                                               width: "80"
@@ -1723,7 +1723,7 @@ var render = function() {
                                             staticClass:
                                               "d-flex mr-3 img-thumbnail",
                                             attrs: {
-                                              src: __webpack_require__(561),
+                                              src: __webpack_require__(543),
                                               alt: "image",
                                               height: "80",
                                               width: "80"
@@ -1796,7 +1796,7 @@ var render = function() {
                                             staticClass:
                                               "d-flex mr-3 img-thumbnail",
                                             attrs: {
-                                              src: __webpack_require__(562),
+                                              src: __webpack_require__(544),
                                               alt: "image",
                                               height: "80",
                                               width: "80"
@@ -2508,28 +2508,28 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 560:
+/***/ 542:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 561:
+/***/ 543:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 562:
+/***/ 544:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 563:
+/***/ 545:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";

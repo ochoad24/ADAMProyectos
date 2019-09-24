@@ -252,7 +252,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             swal({
                 title: "Sweet!",
                 text: "Here's a custom image.",
-                imageUrl: __webpack_require__(563),
+                imageUrl: __webpack_require__(545),
                 imageWidth: 100,
                 imageHeight: 100,
                 animation: false
@@ -354,7 +354,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(524)))
 
 /***/ }),
 
@@ -726,7 +726,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11299,7 +11299,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 563:
+/***/ 545:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";

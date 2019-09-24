@@ -270,21 +270,21 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2
             newrole: '',
             contacts: [{
                 name: 'Jon',
-                img: __webpack_require__(563),
+                img: __webpack_require__(545),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Doe',
-                img: __webpack_require__(561),
+                img: __webpack_require__(543),
                 email: 'doe@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Addison',
-                img: __webpack_require__(562),
+                img: __webpack_require__(544),
                 email: 'addison@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
@@ -298,14 +298,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2
                 location: 'Hyderabad'
             }, {
                 name: 'Doe',
-                img: __webpack_require__(563),
+                img: __webpack_require__(545),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Jon',
-                img: __webpack_require__(560),
+                img: __webpack_require__(542),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
@@ -457,7 +457,7 @@ var render = function() {
                             staticClass:
                               "contact-profile d-inline-block rounded-circle",
                             attrs: {
-                              src: __webpack_require__(563),
+                              src: __webpack_require__(545),
                               alt: "user profile"
                             }
                           }),
@@ -1106,28 +1106,28 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 560:
+/***/ 542:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 561:
+/***/ 543:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 562:
+/***/ 544:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 563:
+/***/ 545:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";

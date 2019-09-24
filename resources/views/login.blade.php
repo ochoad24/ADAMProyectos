@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>Datta Able - Signin</title>
+    <title>ADAM - INCOFIN</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -13,27 +13,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
     <meta name="author" content="CodedThemes" />
 
     <!-- Favicon icon -->
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- fontawesome icon -->
-    <link rel="stylesheet" href="/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css">
     <!-- animation css -->
-    <link rel="stylesheet" href="/assets/plugins/animation/css/animate.min.css">
+    <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css">
     <!-- vendor css -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <div class="auth-wrapper">
-        <div class="auth-content auth-tabs">
-            <div class="tab-content text-center" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <h3 class="mb-4">Login</h3>
+    <div class="auth-wrapper aut-bg-img-side cotainer-fiuid align-items-stretch">
+        <div class="row align-items-center w-100 align-items-stretch bg-white">
+            <div class="d-none d-lg-flex col-lg-8 aut-bg-img align-items-center d-flex justify-content-center">
+                <div class="col-md-8">
+               <center> <FONT FACE="verdana" SIZE=30 COLOR="white">ADAM - INCOFIN</FONT>
+              <!-- <img src="assets/images/incofin.jpg"> -->
+                    <h4 class="text-white">Asociación de Desarrollo Agrícola y Microempresarial</h4></center>
+                   
+                </div>
+            </div>
+            <div class="col-lg-4 align-items-stret h-100 align-items-center d-flex justify-content-center">
+                <div class=" auth-content text-center">
+                    <div class="mb-4">
+                    <img src="assets/images/pr.jpg">
+                    </div>
+                    <hr>
+                    <div class="mb-4">
+                        <i class="feather icon-unlock auth-icon"></i>
+                    </div>
+                    <h3 class="mb-4">Ingreso</h3>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="input-group mb-3">
@@ -52,24 +67,24 @@
                             </span>
                             @enderror
                         </div>
-                        <div class="form-group text-left">
-                            <div class="checkbox checkbox-fill d-inline">
-                                <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                                <label for="checkbox-fill-a1" class="cr">Recordar</label>
-                            </div>
+                    <div class="form-group text-left">
+                        <div class="checkbox checkbox-fill d-inline">
+                            <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
+                            <label for="checkbox-fill-a1" class="cr"> Recordar</label>
                         </div>
-                        <button class="btn btn-primary shadow-2 mb-4">Login</button>
-                        <i class="feather icon-unlock auth-icon"></i>
-                    </form>
+                    </div>
+                    <button type="submit" class="btn btn-success">
+                                    {{ __('Ingresar') }}
+                    </button>
+
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Required Js -->
-    <script src="/assets/js/vendor-all.js"></script>
-    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vendor-all.min.js"></script><script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
 
 </body>
-
 </html>

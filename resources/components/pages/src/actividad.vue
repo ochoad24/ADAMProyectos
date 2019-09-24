@@ -112,7 +112,7 @@
                                     </div>
                                 </template>
                             </td>
-                            <td class="justify-left layout px-0">
+                            <td class="justify-center">
                                 <v-icon small class="mr-2" @click="abrirEditar(props.item)">
                                     edit
                                 </v-icon>
@@ -144,6 +144,8 @@
 <script>
     import Multiselect from 'vue-multiselect';
     import axios from 'axios';
+    import {mapGetters} from 'vuex';
+
     export default {
         components: {
             Multiselect
@@ -160,9 +162,9 @@
             search: '',
             headers: [
                 { text: 'Actividad', value: 'actividad', align: 'right' },
-                { text: 'Tareas', value: 'tareas', align: 'right' },
-                { text: 'Tareas Completadas', value: 'tareasCompletadas', align: 'right' },
-                { text: 'Tareas Pendientes', value: 'tareasPendientes', align: 'right' },
+                { text: 'Total', value: 'tareas', align: 'right' },
+                { text: 'Completadas', value: 'tareasCompletadas', align: 'right' },
+                { text: 'Pendientes', value: 'tareasPendientes', align: 'right' },
                 { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' },
                 { text: 'Fecha de Finalización', value: 'fechaFinal', align: 'right' },
                 { text: 'Estado', value: 'estado', align: 'center' }
@@ -170,7 +172,10 @@
             error: 0,
             errorMsj: [],
             actividades: [],
-            proyecto: 0,
+            proyecto: {
+                id:0,
+                nombre:''
+            },
             editedIndex: -1,
             editedItem: {
                 id: 0,
@@ -193,16 +198,23 @@
                 estado: 0
             }
         }),
-
+        
         computed: {
             formTitle() {
                 return this.editedIndex === -1 ? 'Nueva Actividad' : 'Editar Actividad'
-            }
+            },
+            ...mapGetters(["seleccion"])
         },
-
         watch: {
             dialog(val) {
                 val || this.close()
+            },
+            seleccion:{
+                deep:true,
+                handler(val){
+                    this.proyecto=val;
+                    this.initialize();
+                }
             }
         },
 
@@ -210,22 +222,9 @@
             this.initialize()
         },
         mounted() {
-            let me = this;
-            this.$root.$on('SeleccionProyecto', data => {
-                if (data) {
-                    me.proyecto = data;
-                    me.initialize();
-                } else {
-                    me.proyecto = 0;
-                    me.initialize();
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Advertencia',
-                        text: 'Por favor seleccione un proyecto',
-                    })
-                }
-                // console.log(data);
-            });
+            // console.log(this.$store.state.proyecto);
+            this.proyecto=this.$store.state.proyecto;
+            this.initialize();
         },
         methods: {
             validate() {
@@ -246,10 +245,10 @@
                 return this.error;
             },
             initialize() {
-                var url = '/Actividad?proyecto=' + this.proyecto;
+                var url = '/Actividad?proyecto=' + this.proyecto.id;
                 axios.get(url)
                     .then(response => {
-                        console.log(response.data);
+                        // console.log(response.data);
                         this.actividades = response.data;
                     })
                     .catch(errors => {
@@ -268,7 +267,7 @@
                     'idProyecto': me.proyecto
                 })
                     .then(function (response) {
-                        console.log(response.data);
+                        // console.log(response.data);
                         if (!response.data) {
                             swal.fire({
                                 type: 'success',
@@ -311,7 +310,7 @@
                     'id': me.idActividad
                 })
                     .then(function (response) {
-                        console.log(response.data);
+                        // console.log(response.data);
                         if (!response.data) {
                             swal.fire({
                                 type: 'success',
@@ -439,7 +438,7 @@
                         axios.put('/actividad/delete', {
                             'id': id
                         }).then(function (response) {
-                            console.log(response.data);
+                            // console.log(response.data);
                             swal.fire({
                                 type: 'success',
                                 title: 'Actividad eliminada',

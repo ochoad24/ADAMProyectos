@@ -64,6 +64,7 @@ import {
     vsubMenu
 } from './menu';
 import profile from "../left-profile/user_profile.vue"
+
 export default {
     name: "left-side",
     components: {
@@ -71,10 +72,6 @@ export default {
         vsubMenu,
         vmenuItem,
         profile
-    },
-    data() {
-        return {
-        }
-    }
+    },    
 }
 </script>

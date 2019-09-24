@@ -234,7 +234,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(524)))
 
 /***/ }),
 
@@ -726,7 +726,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 })(__webpack_provided_window_dot_jQuery || window.Zepto, window, document);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(524)))
 
 /***/ }),
 
@@ -1235,7 +1235,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

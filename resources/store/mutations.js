@@ -33,6 +33,9 @@ let mutations = {
         } else if (loader == "end") {
             state.preloader = false
         }
+    },
+    changeProject(state,id){
+        state.proyecto=id;
     }
 }
 export default mutations

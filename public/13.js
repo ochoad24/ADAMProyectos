@@ -49,10 +49,13 @@ exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_multiselect__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_multiselect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuex__ = __webpack_require__(219);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -242,6 +245,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -266,7 +345,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
             menu2: false,
-            proyecto: 0,
+            proyecto: {
+                id: 0,
+                nombre: ''
+            },
             actividad: {
                 id: 0,
                 nombre: ''
@@ -276,9 +358,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             empleados: [],
             search: '',
             dialog: false,
+            dialog2: false,
             error: 0,
             errorMsj: [],
-            headers: [{ text: 'Nombre', value: 'nombre' }, { text: 'Fecha Inicio', value: 'fechaInicio' }, { text: 'Fecha Final', value: 'fechaFinal' }, { text: 'Fecha Realizacion', value: 'fechaRealizacion' }, { text: 'Estado', value: 'estado' }],
+            headers: [{ text: 'Nombre', value: 'nombre', align: 'right' }, { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha Final', value: 'fechaFinal', align: 'right' }, { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' }, { text: 'Estado', value: 'estado' }],
+            headers2: [{ text: 'Empleados', value: 'nombre', align: 'left' }],
+            headers3: [{ text: 'Estadistica', value: 'nombre', align: 'left' }, { text: 'Valor', value: 'valor', align: 'left' }],
             headersUsers: [{ text: 'Id', value: 'id' }, { text: 'Nombre', value: 'nombre' }, { text: 'Estado', value: 'estado' }, { text: 'Encargado', value: 'encargado' }],
             tareas: [],
             editedIndex: -1,
@@ -297,30 +382,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 fechaFinal: '',
                 fechaRealizacion: '',
                 estado: 0
-            }
+            },
+            descripcionShow: '',
+            empleadoShow: [],
+            estadisticaShow: [],
+            fotoShow: [],
+            cantidadShow: 0
         };
     },
 
-    computed: {
+    computed: _extends({
         formTitle: function formTitle() {
             return this.editedIndex === -1 ? 'Nueva Tarea' : 'Editar Tarea';
         }
-    },
+    }, Object(__WEBPACK_IMPORTED_MODULE_3_vuex__["b" /* mapGetters */])(["seleccion"])),
 
     watch: {
         dialog: function dialog(val) {
             val || this.close();
         },
+        dialog2: function dialog2(val) {
+            val || this.close2();
+        },
         actividad: function actividad(val) {
-            if (val) {
+            this.initialize();
+        },
+
+        seleccion: {
+            deep: true,
+            handler: function handler(val) {
+                this.proyecto = val;
                 this.initialize();
-            } else {
-                this.actividad.id = 0;
-                swal.fire({
-                    type: 'warning',
-                    title: 'Advertencia',
-                    text: 'Por favor seleccione una actividad'
-                });
+                // console.log(this.proyecto);
             }
         }
     },
@@ -329,22 +422,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         this.initialize();
     },
     mounted: function mounted() {
-        var me = this;
-        this.$root.$on('SeleccionProyecto', function (data) {
-            if (data) {
-                me.proyecto = data;
-                me.initialize();
-            } else {
-                me.proyecto = 0;
-                me.initialize();
-                swal.fire({
-                    type: 'warning',
-                    title: 'Advertencia',
-                    text: 'Por favor seleccione un proyecto'
-                });
-            }
-            // console.log(data);
-        });
+        // console.log(this.proyecto);
+        this.proyecto = this.$store.state.proyecto;
+        this.initialize();
     },
 
     methods: {
@@ -385,7 +465,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         getActividaes: function getActividaes() {
             var _this2 = this;
 
-            var url = '/Actividad/' + this.proyecto;
+            var url = '/Actividad/' + this.proyecto.id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
                 _this2.actividades = response.data;
             }).catch(function (errors) {
@@ -425,6 +505,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.editedItem = Object.assign({}, item);
             this.dialog = true;
         },
+        watchTask: function watchTask(id) {
+            var _this6 = this;
+
+            var url = '/Tarea/ver/' + id;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
+                _this6.descripcionShow = response.data.tarea[0].descripcion;
+                _this6.empleadoShow = response.data.empleado;
+                _this6.estadisticaShow = response.data.estadistica;
+                _this6.fotoShow = response.data.foto;
+                _this6.cantidadShow = response.data.tarea[0].participantes;
+                _this6.dialog2 = true;
+            }).catch(function (errors) {
+                console.log(errors);
+            });
+        },
         deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
@@ -438,7 +533,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 cancelButtonText: "Cancelar"
             }).then(function (result) {
                 if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Estadistica/' + item.id + '/delete').then(function (response) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Tarea/delete/' + item.id).then(function (response) {
                         me.initialize();
                         swal.fire({
                             position: 'top-end',
@@ -459,14 +554,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
         close: function close() {
-            var _this6 = this;
+            var _this7 = this;
 
             this.error = 0;
             this.dialog = false;
             setTimeout(function () {
-                _this6.editedItem = Object.assign({}, _this6.defaultItem);
-                _this6.editedIndex = -1;
+                _this7.editedItem = Object.assign({}, _this7.defaultItem);
+                _this7.editedIndex = -1;
             }, 300);
+        },
+        close2: function close2() {
+            this.dialog2 = false;
         },
         save: function save() {
             var me = this;
@@ -608,6 +706,431 @@ var render = function() {
                     }),
                     _vm._v(" "),
                     _c("v-spacer"),
+                    _vm._v(" "),
+                    _c(
+                      "v-dialog",
+                      {
+                        attrs: {
+                          fullscreen: "",
+                          "hide-overlay": "",
+                          transition: "dialog-bottom-transition"
+                        },
+                        model: {
+                          value: _vm.dialog2,
+                          callback: function($$v) {
+                            _vm.dialog2 = $$v
+                          },
+                          expression: "dialog2"
+                        }
+                      },
+                      [
+                        _c(
+                          "v-toolbar",
+                          { attrs: { dark: "", color: "green darken-1" } },
+                          [
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: { icon: "", dark: "" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.dialog2 = false
+                                  }
+                                }
+                              },
+                              [
+                                _c("v-icon", { attrs: { col: "white" } }, [
+                                  _vm._v("clear")
+                                ])
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("v-toolbar-title", [
+                              _vm._v("Detalles de la tarea")
+                            ])
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-card",
+                          [
+                            _c(
+                              "v-card-text",
+                              [
+                                _c(
+                                  "v-container",
+                                  { attrs: { "grid-list-md": "" } },
+                                  [
+                                    _c(
+                                      "v-layout",
+                                      { attrs: { wrap: "" } },
+                                      [
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c("v-textarea", {
+                                              attrs: {
+                                                label:
+                                                  "Descripción de la tarea",
+                                                disabled: "",
+                                                readonly: ""
+                                              },
+                                              model: {
+                                                value: _vm.descripcionShow,
+                                                callback: function($$v) {
+                                                  _vm.descripcionShow = $$v
+                                                },
+                                                expression: "descripcionShow"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c(
+                                              "v-data-table",
+                                              {
+                                                staticClass: "elevation-1",
+                                                attrs: {
+                                                  headers: _vm.headers2,
+                                                  items: _vm.empleadoShow
+                                                },
+                                                scopedSlots: _vm._u([
+                                                  {
+                                                    key: "items",
+                                                    fn: function(props) {
+                                                      return [
+                                                        _c(
+                                                          "td",
+                                                          {
+                                                            staticClass:
+                                                              "text-xs-left"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                props.item
+                                                                  .nombre
+                                                              )
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    }
+                                                  }
+                                                ])
+                                              },
+                                              [
+                                                _c("v-progress-linear", {
+                                                  attrs: {
+                                                    indeterminate: true,
+                                                    color:
+                                                      "light-green accent-3"
+                                                  }
+                                                })
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c(
+                                              "v-data-table",
+                                              {
+                                                staticClass: "elevation-1",
+                                                attrs: {
+                                                  headers: _vm.headers3,
+                                                  items: _vm.estadisticaShow
+                                                },
+                                                scopedSlots: _vm._u([
+                                                  {
+                                                    key: "items",
+                                                    fn: function(props) {
+                                                      return [
+                                                        _c(
+                                                          "td",
+                                                          {
+                                                            staticClass:
+                                                              "text-xs-left"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                props.item
+                                                                  .nombre
+                                                              )
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "td",
+                                                          {
+                                                            staticClass:
+                                                              "text-xs-left"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                props.item.valor
+                                                              )
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    }
+                                                  }
+                                                ])
+                                              },
+                                              [
+                                                _c("v-progress-linear", {
+                                                  attrs: {
+                                                    indeterminate: true,
+                                                    color:
+                                                      "light-green accent-3"
+                                                  }
+                                                })
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: {
+                                                label: "Total de participantes",
+                                                type: "number",
+                                                disabled: "",
+                                                readonly: ""
+                                              },
+                                              model: {
+                                                value: _vm.cantidadShow,
+                                                callback: function($$v) {
+                                                  _vm.cantidadShow = $$v
+                                                },
+                                                expression: "cantidadShow"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-layout",
+                                          { attrs: { row: "", wrap: "" } },
+                                          _vm._l(_vm.fotoShow, function(n) {
+                                            return _c(
+                                              "v-flex",
+                                              {
+                                                key: n.url,
+                                                attrs: { xs2: "", "d-flex": "" }
+                                              },
+                                              [
+                                                _c(
+                                                  "v-card",
+                                                  {
+                                                    staticClass: "d-flex",
+                                                    attrs: {
+                                                      flat: "",
+                                                      tile: ""
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-hover", {
+                                                      scopedSlots: _vm._u(
+                                                        [
+                                                          {
+                                                            key: "default",
+                                                            fn: function(ref) {
+                                                              var hover =
+                                                                ref.hover
+                                                              return _c(
+                                                                "v-img",
+                                                                {
+                                                                  staticClass:
+                                                                    "grey lighten-2",
+                                                                  attrs: {
+                                                                    src: n.url,
+                                                                    "lazy-src":
+                                                                      n.url,
+                                                                    "aspect-ratio":
+                                                                      "1"
+                                                                  },
+                                                                  scopedSlots: _vm._u(
+                                                                    [
+                                                                      {
+                                                                        key:
+                                                                          "placeholder",
+                                                                        fn: function() {
+                                                                          return [
+                                                                            _c(
+                                                                              "v-layout",
+                                                                              {
+                                                                                attrs: {
+                                                                                  "fill-height":
+                                                                                    "",
+                                                                                  "align-center":
+                                                                                    "",
+                                                                                  "justify-center":
+                                                                                    "",
+                                                                                  "ma-0":
+                                                                                    ""
+                                                                                }
+                                                                              },
+                                                                              [
+                                                                                _c(
+                                                                                  "v-progress-circular",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      indeterminate:
+                                                                                        "",
+                                                                                      color:
+                                                                                        "grey lighten-5"
+                                                                                    }
+                                                                                  }
+                                                                                )
+                                                                              ],
+                                                                              1
+                                                                            )
+                                                                          ]
+                                                                        },
+                                                                        proxy: true
+                                                                      }
+                                                                    ],
+                                                                    null,
+                                                                    true
+                                                                  )
+                                                                },
+                                                                [
+                                                                  _vm._v(" "),
+                                                                  _c(
+                                                                    "v-expand-transition",
+                                                                    [
+                                                                      hover
+                                                                        ? _c(
+                                                                            "v-layout",
+                                                                            {
+                                                                              attrs: {
+                                                                                "fill-height":
+                                                                                  "",
+                                                                                "align-center":
+                                                                                  "",
+                                                                                "justify-center":
+                                                                                  "",
+                                                                                "ma-0":
+                                                                                  ""
+                                                                              }
+                                                                            },
+                                                                            [
+                                                                              _c(
+                                                                                "v-btn",
+                                                                                {
+                                                                                  attrs: {
+                                                                                    icon:
+                                                                                      "",
+                                                                                    dark:
+                                                                                      "",
+                                                                                    color:
+                                                                                      "blue darken-1",
+                                                                                    href:
+                                                                                      n.url,
+                                                                                    target:
+                                                                                      "_blank"
+                                                                                  }
+                                                                                },
+                                                                                [
+                                                                                  _c(
+                                                                                    "v-icon",
+                                                                                    {
+                                                                                      attrs: {
+                                                                                        dark:
+                                                                                          ""
+                                                                                      }
+                                                                                    },
+                                                                                    [
+                                                                                      _vm._v(
+                                                                                        "arrow_downward"
+                                                                                      )
+                                                                                    ]
+                                                                                  )
+                                                                                ],
+                                                                                1
+                                                                              )
+                                                                            ],
+                                                                            1
+                                                                          )
+                                                                        : _vm._e()
+                                                                    ],
+                                                                    1
+                                                                  )
+                                                                ],
+                                                                1
+                                                              )
+                                                            }
+                                                          }
+                                                        ],
+                                                        null,
+                                                        true
+                                                      )
+                                                    })
+                                                  ],
+                                                  1
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          }),
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-actions",
+                              [
+                                _c("v-spacer"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "blue darken-1", flat: "" },
+                                    on: { click: _vm.close2 }
+                                  },
+                                  [_vm._v("Cerrar")]
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
                     _vm._v(" "),
                     _c(
                       "v-dialog",
@@ -1258,7 +1781,7 @@ var render = function() {
                                                                         },
                                                                         [
                                                                           _vm._v(
-                                                                            "No"
+                                                                            "No\n                                                                "
                                                                           )
                                                                         ]
                                                                       )
@@ -1482,30 +2005,31 @@ var render = function() {
                           _vm._v(" "),
                           _c(
                             "td",
-                            { staticClass: "justify-center layout px-0" },
+                            { staticClass: "justify-center" },
                             [
-                              _c(
-                                "v-icon",
-                                {
-                                  staticClass: "mr-2",
-                                  attrs: { small: "" },
-                                  on: {
-                                    click: function($event) {
-                                      return _vm.editItem(props.item)
-                                    }
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                edit\n                            "
+                              props.item.estado == 1
+                                ? _c(
+                                    "v-icon",
+                                    {
+                                      staticClass: "mr-2",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.watchTask(props.item.id)
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                visibility\n                            "
+                                      )
+                                    ]
                                   )
-                                ]
-                              ),
+                                : _vm._e(),
                               _vm._v(" "),
                               _c(
                                 "v-icon",
                                 {
-                                  attrs: { small: "" },
+                                  staticClass: "mr-2",
                                   on: {
                                     click: function($event) {
                                       return _vm.deleteItem(props.item)
@@ -1642,7 +2166,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 524:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1959,8 +2483,8 @@ module.exports = {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(524);
-var normalizeHeaderName = __webpack_require__(545);
+var utils = __webpack_require__(525);
+var normalizeHeaderName = __webpack_require__(549);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -2083,13 +2607,13 @@ module.exports = function bind(fn, thisArg) {
 "use strict";
 
 
-var utils = __webpack_require__(524);
-var settle = __webpack_require__(546);
-var buildURL = __webpack_require__(548);
-var parseHeaders = __webpack_require__(549);
-var isURLSameOrigin = __webpack_require__(550);
+var utils = __webpack_require__(525);
+var settle = __webpack_require__(550);
+var buildURL = __webpack_require__(552);
+var parseHeaders = __webpack_require__(553);
+var isURLSameOrigin = __webpack_require__(554);
 var createError = __webpack_require__(537);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(551);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(555);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -2186,7 +2710,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(552);
+      var cookies = __webpack_require__(556);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -2271,7 +2795,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(547);
+var enhanceError = __webpack_require__(551);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -2366,22 +2890,22 @@ function isSlowBuffer (obj) {
 
 /***/ }),
 
-/***/ 542:
+/***/ 546:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(543);
+module.exports = __webpack_require__(547);
 
 /***/ }),
 
-/***/ 543:
+/***/ 547:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 var bind = __webpack_require__(535);
-var Axios = __webpack_require__(544);
+var Axios = __webpack_require__(548);
 var defaults = __webpack_require__(533);
 
 /**
@@ -2416,14 +2940,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(539);
-axios.CancelToken = __webpack_require__(558);
+axios.CancelToken = __webpack_require__(562);
 axios.isCancel = __webpack_require__(538);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(559);
+axios.spread = __webpack_require__(563);
 
 module.exports = axios;
 
@@ -2433,16 +2957,16 @@ module.exports.default = axios;
 
 /***/ }),
 
-/***/ 544:
+/***/ 548:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(533);
-var utils = __webpack_require__(524);
-var InterceptorManager = __webpack_require__(553);
-var dispatchRequest = __webpack_require__(554);
+var utils = __webpack_require__(525);
+var InterceptorManager = __webpack_require__(557);
+var dispatchRequest = __webpack_require__(558);
 
 /**
  * Create a new instance of Axios
@@ -2520,13 +3044,13 @@ module.exports = Axios;
 
 /***/ }),
 
-/***/ 545:
+/***/ 549:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -2540,7 +3064,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 /***/ }),
 
-/***/ 546:
+/***/ 550:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2574,7 +3098,7 @@ module.exports = function settle(resolve, reject, response) {
 
 /***/ }),
 
-/***/ 547:
+/***/ 551:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2603,13 +3127,13 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 /***/ }),
 
-/***/ 548:
+/***/ 552:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -2677,13 +3201,13 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 /***/ }),
 
-/***/ 549:
+/***/ 553:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -2738,13 +3262,13 @@ module.exports = function parseHeaders(headers) {
 
 /***/ }),
 
-/***/ 550:
+/***/ 554:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -2814,7 +3338,7 @@ module.exports = (
 
 /***/ }),
 
-/***/ 551:
+/***/ 555:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2858,13 +3382,13 @@ module.exports = btoa;
 
 /***/ }),
 
-/***/ 552:
+/***/ 556:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -2919,13 +3443,13 @@ module.exports = (
 
 /***/ }),
 
-/***/ 553:
+/***/ 557:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -2979,18 +3503,18 @@ module.exports = InterceptorManager;
 
 /***/ }),
 
-/***/ 554:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
-var transformData = __webpack_require__(555);
+var utils = __webpack_require__(525);
+var transformData = __webpack_require__(559);
 var isCancel = __webpack_require__(538);
 var defaults = __webpack_require__(533);
-var isAbsoluteURL = __webpack_require__(556);
-var combineURLs = __webpack_require__(557);
+var isAbsoluteURL = __webpack_require__(560);
+var combineURLs = __webpack_require__(561);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -3073,13 +3597,13 @@ module.exports = function dispatchRequest(config) {
 
 /***/ }),
 
-/***/ 555:
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(524);
+var utils = __webpack_require__(525);
 
 /**
  * Transform the data for a request or a response
@@ -3101,7 +3625,7 @@ module.exports = function transformData(data, headers, fns) {
 
 /***/ }),
 
-/***/ 556:
+/***/ 560:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3123,7 +3647,7 @@ module.exports = function isAbsoluteURL(url) {
 
 /***/ }),
 
-/***/ 557:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3145,7 +3669,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 
-/***/ 558:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3210,7 +3734,7 @@ module.exports = CancelToken;
 
 /***/ }),
 
-/***/ 559:
+/***/ 563:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

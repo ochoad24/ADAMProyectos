@@ -2315,7 +2315,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -76973,7 +76973,7 @@ exports.default = UndoRedo;
 /******/ ])["default"];
 });
 //# sourceMappingURL=handsontable.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(217).setImmediate, __webpack_require__(217).clearImmediate, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(217).setImmediate, __webpack_require__(217).clearImmediate, __webpack_require__(524)))
 
 /***/ }),
 

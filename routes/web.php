@@ -10,12 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['middleware'=>['guest']],function(){
+// Route::group(['middleware'=>['guest']],function(){
      Route::get('/login','Auth\LoginController@showLoginForm');
      Route::post('/login','Auth\LoginController@login')->name('login');
- });
+//  });
  
- Route::group(['middleware'=>['auth']],function(){
+//  Route::group(['middleware'=>['auth']],function(){
     Route::get('/', function () {
         return view('welcome');
     });
@@ -83,4 +83,6 @@ Route::group(['middleware'=>['guest']],function(){
     Route::get('/Tarea/{actividad}', 'TareaController@index');
     Route::post('/Tarea/nuevo', 'TareaController@store');
     Route::post('/Tarea/subir', 'TareaController@report');
-});
+    Route::get('Tarea/ver/{id}','TareaController@watch');
+    Route::delete('Tarea/delete/{task}','TareaController@drop');
+// });

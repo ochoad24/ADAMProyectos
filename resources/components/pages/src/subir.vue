@@ -135,6 +135,7 @@
     import axios from 'axios';
     import Multiselect from 'vue-multiselect';
     import uni from 'uniqid';
+    import {mapGetters} from 'vuex';
     export default {
         name: "Subir",
         components: {
@@ -165,7 +166,10 @@
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
             menu2: false,
-            proyecto: 0,
+            proyecto: {
+                id:0,
+                nombre:''
+            },
             actividad: {
                 id: 0,
                 nombre: ''
@@ -208,7 +212,8 @@
         computed: {
             formTitle() {
                 return this.editedIndex === -1 ? 'Nueva Tarea' : 'Editar Tarea'
-            }
+            },
+            ...mapGetters(["seleccion"])
         },
 
         watch: {
@@ -216,15 +221,14 @@
                 val || this.close()
             },
             actividad(val) {
-                if (val) {
+                this.initialize();
+            },
+            seleccion:{
+                deep:true,
+                handler(val){
+                    this.proyecto=val;
                     this.initialize();
-                } else {
-                    this.actividad.id = 0;
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Advertencia',
-                        text: 'Por favor seleccione una actividad',
-                    })
+                    // console.log(this.proyecto);
                 }
             }
         },
@@ -233,22 +237,8 @@
             this.initialize()
         },
         mounted() {
-            let me = this;
-            this.$root.$on('SeleccionProyecto', data => {
-                if (data) {
-                    me.proyecto = data;
-                    me.initialize();
-                } else {
-                    me.proyecto = 0;
-                    me.initialize();
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Advertencia',
-                        text: 'Por favor seleccione un proyecto',
-                    })
-                }
-                // console.log(data);
-            });
+            this.proyecto=this.$store.state.proyecto;
+            this.initialize();
         },
         methods: {
             getIndex(list, id) {
@@ -339,7 +329,7 @@
                 this.getUsuario();
             },
             getActividaes() {
-                var url = '/Actividad/' + this.proyecto;
+                var url = '/Actividad/' + this.proyecto.id;
                 axios.get(url)
                     .then(response => {
                         this.actividades = response.data;

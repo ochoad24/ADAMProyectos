@@ -808,7 +808,7 @@ var render = function() {
               _c("img", {
                 staticClass: "rounded-circle img_alt",
                 attrs: {
-                  src: __webpack_require__(560),
+                  src: __webpack_require__(542),
                   alt: "User Avatar",
                   height: "85",
                   width: "85"
@@ -897,7 +897,7 @@ var render = function() {
             _c("img", {
               staticClass: "thumb-lg rounded-circle img-thumbnail",
               attrs: {
-                src: __webpack_require__(561),
+                src: __webpack_require__(543),
                 alt: "img",
                 height: "95",
                 width: "95"
@@ -949,7 +949,7 @@ var render = function() {
           _c("div", { staticClass: "card-header text-center" }, [
             _c("img", {
               staticClass: "thumb-lg img-thumbnail rounded-circle",
-              attrs: { src: __webpack_require__(562), alt: "" }
+              attrs: { src: __webpack_require__(544), alt: "" }
             }),
             _vm._v(" "),
             _vm._m(11)
@@ -1545,21 +1545,21 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 560:
+/***/ 542:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 561:
+/***/ 543:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 562:
+/***/ 544:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";

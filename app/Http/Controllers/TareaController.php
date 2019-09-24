@@ -12,6 +12,8 @@ use App\Foto;
 use Image;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Storage;
 
 class TareaController extends Controller
 {
@@ -101,5 +103,32 @@ class TareaController extends Controller
         }
         return $key;
     }
-    
+    public function watch($id){
+        $ruta = public_path().'/uploads/';
+        $tarea=Tarea::select('descripcion','participantes')->where('id',$id)->get();
+        $empleado=Encargado::join('users','users.id','=','encargado.idEmpleado')->select(DB::raw("CONCAT(nombre,' ',apellido) as nombre"),'encargado.estado')->where('idTarea',$id)->get();
+        $estadistica=Estadistica::join('nombre_estadistica','nombre_estadistica.id','=','estadistica.idNombreEstadistica')->select('nombre_estadistica.nombre','estadistica.valor')->where('idTarea',$id)->get();
+        $fotos=Foto::select(DB::raw("CONCAT('/uploads/',ruta) as url"))->where('idTarea',$id)->get();
+        return response::json(array('tarea'=>$tarea,'empleado'=>$empleado,'estadistica'=>$estadistica,'foto'=>$fotos));
+    }
+    public function drop($task){
+        $ruta = public_path().'/uploads/';
+        try{
+            DB::beginTransaction();
+            $estadistica=Estadistica::where('idTarea',$task)->delete();
+            $empleado=Encargado::where('idTarea',$task)->delete();
+            $fotos=Foto::where('idTarea',$task)->get();
+            foreach($fotos as $foto){
+                unlink($ruta.$foto->ruta);
+                $foto->delete();
+            }
+            $tarea=Tarea::where('id',$task)->delete();
+            DB::commit();
+            return 'Se ha eliminado la tarea correctamente';
+        }catch(\Exception $e){
+            DB::rollback();
+            $response['error'] = $e->getMessage();
+            return response()->json($response, 500);
+        }
+    }
 }

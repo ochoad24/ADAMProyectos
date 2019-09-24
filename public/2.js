@@ -23415,7 +23415,7 @@ module.exports = function () {
     });
   });
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(524)))
 
 /***/ }),
 
@@ -28483,7 +28483,7 @@ module.exports = function (data) {
 
   throw "vue-tables: No supported ajax library was found. (jQuery, axios or vue-resource). To use a different library you can write your own request function (see the `requestFunction` option)";
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(524)))
 
 /***/ }),
 
@@ -28638,7 +28638,7 @@ module.exports = function (column, value) {
   var text = value ? moment(value.start, 'YYYY-MM-DD').format(this.opts.dateFormat) + " - " + moment(value.end, 'YYYY-MM-DD').format(this.opts.dateFormat) : this.opts.texts.filterBy.replace("{column}", column);
   datepicker.text(text);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(524)))
 
 /***/ }),
 
@@ -30870,7 +30870,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

@@ -374,7 +374,7 @@ __webpack_require__(1470);
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(524)))
 
 /***/ }),
 
@@ -765,7 +765,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(563),
+                              src: __webpack_require__(545),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -810,7 +810,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(560),
+                              src: __webpack_require__(542),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -848,7 +848,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(561),
+                              src: __webpack_require__(543),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -886,7 +886,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(562),
+                              src: __webpack_require__(544),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -969,7 +969,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(561),
+                              src: __webpack_require__(543),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -1077,7 +1077,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11650,28 +11650,28 @@ if (false) {
 
 /***/ }),
 
-/***/ 560:
+/***/ 542:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 561:
+/***/ 543:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 562:
+/***/ 544:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 563:
+/***/ 545:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
@@ -11971,7 +11971,7 @@ exports.push([module.i, "@charset \"UTF-8\";\n\n/*!\n * animate.css -http://dane
                 });
         };
 })(jQuery, window, document);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(525)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(524)))
 
 /***/ })
 

@@ -13,6 +13,81 @@
                         </v-text-field>
                         <v-spacer></v-spacer>
                         <!-- Aqui Empieza el modal -->
+                        <v-dialog v-model="dialog2" fullscreen hide-overlay transition="dialog-bottom-transition">
+                            <v-toolbar dark color="green darken-1">
+                                <v-btn icon dark @click="dialog2 = false">
+                                    <v-icon col="white">clear</v-icon>
+                                </v-btn>
+                                <v-toolbar-title>Detalles de la tarea</v-toolbar-title>
+                            </v-toolbar>
+                            <v-card>
+                                <v-card-text>
+                                    <v-container grid-list-md>
+                                        <v-layout wrap>
+                                            <v-flex xs12>
+                                                <v-textarea v-model="descripcionShow" label="Descripción de la tarea" disabled readonly>
+                                                </v-textarea>
+                                            </v-flex>
+                                            <v-flex xs12>
+                                                <v-data-table :headers="headers2" :items="empleadoShow"
+                                                    class="elevation-1">
+                                                    <v-progress-linear :indeterminate="true"
+                                                        color="light-green accent-3"></v-progress-linear>
+                                                    <template v-slot:items="props">
+                                                        <td class="text-xs-left">{{ props.item.nombre }}</td>
+                                                    </template>
+                                                </v-data-table>
+                                            </v-flex>
+                                            <v-flex xs12>
+                                                <v-data-table :headers="headers3" :items="estadisticaShow"
+                                                    class="elevation-1">
+                                                    <v-progress-linear :indeterminate="true"
+                                                        color="light-green accent-3"></v-progress-linear>
+                                                    <template v-slot:items="props">
+                                                        <td class="text-xs-left">{{ props.item.nombre }}</td>
+                                                        <td class="text-xs-left">{{ props.item.valor }}</td> 
+                                                    </template>
+                                                </v-data-table>
+                                            </v-flex>
+                                            <v-flex xs12>
+                                                <v-text-field v-model="cantidadShow" label="Total de participantes" type="number" disabled readonly>
+                                                </v-text-field>
+                                            </v-flex>
+                                            <v-layout row wrap>
+                                                <v-flex v-for="n in fotoShow" :key="n.url" xs2 d-flex>
+                                                    <v-card flat tile class="d-flex">
+                                                        <v-hover>
+                                                            <v-img :src="n.url" :lazy-src="n.url" aspect-ratio="1"
+                                                                class="grey lighten-2" slot-scope="{ hover }">
+                                                                <template v-slot:placeholder>
+                                                                    <v-layout fill-height align-center justify-center
+                                                                        ma-0>
+                                                                        <v-progress-circular indeterminate
+                                                                            color="grey lighten-5">
+                                                                        </v-progress-circular>
+                                                                    </v-layout>
+                                                                </template>
+                                                                <v-expand-transition>
+                                                                    <v-layout fill-height align-center justify-center ma-0 v-if="hover">
+                                                                        <v-btn icon dark color="blue darken-1" v-bind:href="n.url" target="_blank">
+                                                                            <v-icon dark>arrow_downward</v-icon>
+                                                                        </v-btn>
+                                                                    </v-layout>
+                                                                </v-expand-transition>
+                                                            </v-img>
+                                                        </v-hover>
+                                                    </v-card>
+                                                </v-flex>
+                                            </v-layout>
+                                        </v-layout>
+                                    </v-container>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="blue darken-1" flat @click="close2">Cerrar</v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
                         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
                             <template v-slot:activator="{ on }">
                                 <v-btn color="green darken-1" dark class="mb-2" v-on="on">Nueva Tarea</v-btn>
@@ -110,9 +185,9 @@
                                                                     <v-chip color="green" text-color="white"
                                                                         v-if="props.item.estado==1">
                                                                         Si</v-chip>
-                                                                    <v-chip color="red" text-color="white"
-                                                                        v-else>No</v-chip>
-                                                                    
+                                                                    <v-chip color="red" text-color="white" v-else>No
+                                                                    </v-chip>
+
                                                                 </div>
                                                             </template>
                                                         </td>
@@ -164,11 +239,11 @@
                                 </template>
                             </td>
 
-                            <td class="justify-center layout px-0">
-                                <v-icon small class="mr-2" @click="editItem(props.item)">
-                                    edit
+                            <td class="justify-center">
+                                <v-icon v-if="props.item.estado==1" class="mr-2" @click="watchTask(props.item.id)">
+                                    visibility
                                 </v-icon>
-                                <v-icon small @click="deleteItem(props.item)">
+                                <v-icon class="mr-2" @click="deleteItem(props.item)">
                                     delete
                                 </v-icon>
                             </td>
@@ -191,6 +266,7 @@
     import Vue from 'vue';
     import axios from 'axios';
     import Multiselect from 'vue-multiselect';
+    import { mapGetters } from 'vuex';
     export default {
         name: "Tarea",
         components: {
@@ -210,7 +286,10 @@
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
             menu2: false,
-            proyecto: 0,
+            proyecto: {
+                id: 0,
+                nombre: '',
+            },
             actividad: {
                 id: 0,
                 nombre: ''
@@ -220,14 +299,22 @@
             empleados: [],
             search: '',
             dialog: false,
+            dialog2: false,
             error: 0,
             errorMsj: [],
             headers: [
-                { text: 'Nombre', value: 'nombre' },
-                { text: 'Fecha Inicio', value: 'fechaInicio' },
-                { text: 'Fecha Final', value: 'fechaFinal' },
-                { text: 'Fecha Realizacion', value: 'fechaRealizacion' },
+                { text: 'Nombre', value: 'nombre', align: 'right' },
+                { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' },
+                { text: 'Fecha Final', value: 'fechaFinal', align: 'right' },
+                { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' },
                 { text: 'Estado', value: 'estado' },
+            ],
+            headers2: [
+                { text: 'Empleados', value: 'nombre', align: 'left' }
+            ],
+            headers3: [
+                { text: 'Estadistica', value: 'nombre', align: 'left' },
+                { text: 'Valor', value: 'valor', align: 'left' }
             ],
             headersUsers: [
                 { text: 'Id', value: 'id' },
@@ -252,29 +339,37 @@
                 fechaFinal: '',
                 fechaRealizacion: '',
                 estado: 0,
-            }
+            },
+            descripcionShow: '',
+            empleadoShow: [],
+            estadisticaShow: [],
+            fotoShow: [],
+            cantidadShow:0,
         }),
 
         computed: {
             formTitle() {
                 return this.editedIndex === -1 ? 'Nueva Tarea' : 'Editar Tarea'
-            }
+            },
+            ...mapGetters(["seleccion"])
         },
 
         watch: {
             dialog(val) {
                 val || this.close()
             },
+            dialog2(val) {
+                val || this.close2()
+            },
             actividad(val) {
-                if (val) {
+                this.initialize();
+            },
+            seleccion: {
+                deep: true,
+                handler(val) {
+                    this.proyecto = val;
                     this.initialize();
-                } else {
-                    this.actividad.id = 0;
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Advertencia',
-                        text: 'Por favor seleccione una actividad',
-                    })
+                    // console.log(this.proyecto);
                 }
             }
         },
@@ -283,22 +378,9 @@
             this.initialize()
         },
         mounted() {
-            let me = this;
-            this.$root.$on('SeleccionProyecto', data => {
-                if (data) {
-                    me.proyecto = data;
-                    me.initialize();
-                } else {
-                    me.proyecto = 0;
-                    me.initialize();
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Advertencia',
-                        text: 'Por favor seleccione un proyecto',
-                    })
-                }
-                // console.log(data);
-            });
+            // console.log(this.proyecto);
+            this.proyecto = this.$store.state.proyecto;
+            this.initialize();
         },
         methods: {
             superior(id) {
@@ -312,7 +394,7 @@
                     }
                     me.users.push(element);
                 });
-                this.empleado=this.users;
+                this.empleado = this.users;
             },
             validate() {
                 this.error = 0;
@@ -338,7 +420,7 @@
                 this.getUsuario();
             },
             getActividaes() {
-                var url = '/Actividad/' + this.proyecto;
+                var url = '/Actividad/' + this.proyecto.id;
                 axios.get(url)
                     .then(response => {
                         this.actividades = response.data;
@@ -380,7 +462,21 @@
                 this.editedItem = Object.assign({}, item)
                 this.dialog = true
             },
-
+            watchTask(id) {
+                var url='/Tarea/ver/'+id;
+                axios.get(url)
+                    .then(response => {
+                        this.descripcionShow= response.data.tarea[0].descripcion;
+                        this.empleadoShow=response.data.empleado;
+                        this.estadisticaShow=response.data.estadistica;
+                        this.fotoShow=response.data.foto;
+                        this.cantidadShow=response.data.tarea[0].participantes;
+                        this.dialog2=true;
+                    })
+                    .catch(errors => {
+                        console.log(errors);
+                    });
+            },
             deleteItem(item) {
                 let me = this;
                 swal.fire({
@@ -394,7 +490,7 @@
                     cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.value) {
-                        axios.delete(`/Estadistica/${item.id}/delete`).then(response => {
+                        axios.delete(`/Tarea/delete/${item.id}`).then(response => {
                             me.initialize();
                             swal.fire({
                                 position: 'top-end',
@@ -423,7 +519,10 @@
                     this.editedIndex = -1
                 }, 300)
             },
-
+            close2() {
+                this.dialog2 = false;
+            },
+            
             save() {
                 let me = this;
                 // if (this.validate()) {
@@ -468,7 +567,7 @@
                             idTipoTarea: this.tipo.id,
                             estadisticas: this.estadistica,
                             numero: this.number,
-                            usuarios:this.empleado
+                            usuarios: this.empleado
                         }
                     }).then(function (response) {
                         swal.fire({
