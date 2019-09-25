@@ -1,22 +1,22 @@
 webpackJsonp([31],{
 
-/***/ 1199:
+/***/ 1533:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1200);
+var content = __webpack_require__(1534);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("00cc5980", content, false, {});
+var update = __webpack_require__(26)("271fe70c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index3.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index3.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple-line-icons.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,38 +27,39 @@ if(false) {
 
 /***/ }),
 
-/***/ 1200:
+/***/ 1534:
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(28);
 exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.right {\n    float: right;\n    position: absolute;\n    top: 4rem;\n    right: 5rem;\n}\n.left {\n    float: left;\n    position: absolute;\n    top: 4rem;\n    left: 5rem;\n}\n.user-country img{\n    height: 44px;\n    width: 60px !important;\n}\n.user-country td{\n    vertical-align: middle;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'simple-line-icons';\n  src: url(" + escape(__webpack_require__(581)) + ");\n  src: url(" + escape(__webpack_require__(581)) + "#iefix) format('embedded-opentype'), url(" + escape(__webpack_require__(625)) + ") format('woff2'), url(" + escape(__webpack_require__(626)) + ") format('truetype'), url(" + escape(__webpack_require__(627)) + ") format('woff'), url(" + escape(__webpack_require__(628)) + "#simple-line-icons) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n/*\n Use the following CSS code if you want to have a class per icon.\n Instead of a list of all class selectors, you can use the generic [class*=\"icon-\"] selector, but it's slower:\n*/\n.icon-user,\n.icon-people,\n.icon-user-female,\n.icon-user-follow,\n.icon-user-following,\n.icon-user-unfollow,\n.icon-login,\n.icon-logout,\n.icon-emotsmile,\n.icon-phone,\n.icon-call-end,\n.icon-call-in,\n.icon-call-out,\n.icon-map,\n.icon-location-pin,\n.icon-direction,\n.icon-directions,\n.icon-compass,\n.icon-layers,\n.icon-menu,\n.icon-list,\n.icon-options-vertical,\n.icon-options,\n.icon-arrow-down,\n.icon-arrow-left,\n.icon-arrow-right,\n.icon-arrow-up,\n.icon-arrow-up-circle,\n.icon-arrow-left-circle,\n.icon-arrow-right-circle,\n.icon-arrow-down-circle,\n.icon-check,\n.icon-clock,\n.icon-plus,\n.icon-minus,\n.icon-close,\n.icon-event,\n.icon-exclamation,\n.icon-organization,\n.icon-trophy,\n.icon-screen-smartphone,\n.icon-screen-desktop,\n.icon-plane,\n.icon-notebook,\n.icon-mustache,\n.icon-mouse,\n.icon-magnet,\n.icon-energy,\n.icon-disc,\n.icon-cursor,\n.icon-cursor-move,\n.icon-crop,\n.icon-chemistry,\n.icon-speedometer,\n.icon-shield,\n.icon-screen-tablet,\n.icon-magic-wand,\n.icon-hourglass,\n.icon-graduation,\n.icon-ghost,\n.icon-game-controller,\n.icon-fire,\n.icon-eyeglass,\n.icon-envelope-open,\n.icon-envelope-letter,\n.icon-bell,\n.icon-badge,\n.icon-anchor,\n.icon-wallet,\n.icon-vector,\n.icon-speech,\n.icon-puzzle,\n.icon-printer,\n.icon-present,\n.icon-playlist,\n.icon-pin,\n.icon-picture,\n.icon-handbag,\n.icon-globe-alt,\n.icon-globe,\n.icon-folder-alt,\n.icon-folder,\n.icon-film,\n.icon-feed,\n.icon-drop,\n.icon-drawer,\n.icon-docs,\n.icon-doc,\n.icon-diamond,\n.icon-cup,\n.icon-calculator,\n.icon-bubbles,\n.icon-briefcase,\n.icon-book-open,\n.icon-basket-loaded,\n.icon-basket,\n.icon-bag,\n.icon-action-undo,\n.icon-action-redo,\n.icon-wrench,\n.icon-umbrella,\n.icon-trash,\n.icon-tag,\n.icon-support,\n.icon-frame,\n.icon-size-fullscreen,\n.icon-size-actual,\n.icon-shuffle,\n.icon-share-alt,\n.icon-share,\n.icon-rocket,\n.icon-question,\n.icon-pie-chart,\n.icon-pencil,\n.icon-note,\n.icon-loop,\n.icon-home,\n.icon-grid,\n.icon-graph,\n.icon-microphone,\n.icon-music-tone-alt,\n.icon-music-tone,\n.icon-earphones-alt,\n.icon-earphones,\n.icon-equalizer,\n.icon-like,\n.icon-dislike,\n.icon-control-start,\n.icon-control-rewind,\n.icon-control-play,\n.icon-control-pause,\n.icon-control-forward,\n.icon-control-end,\n.icon-volume-1,\n.icon-volume-2,\n.icon-volume-off,\n.icon-calendar,\n.icon-bulb,\n.icon-chart,\n.icon-ban,\n.icon-bubble,\n.icon-camrecorder,\n.icon-camera,\n.icon-cloud-download,\n.icon-cloud-upload,\n.icon-envelope,\n.icon-eye,\n.icon-flag,\n.icon-heart,\n.icon-info,\n.icon-key,\n.icon-link,\n.icon-lock,\n.icon-lock-open,\n.icon-magnifier,\n.icon-magnifier-add,\n.icon-magnifier-remove,\n.icon-paper-clip,\n.icon-paper-plane,\n.icon-power,\n.icon-refresh,\n.icon-reload,\n.icon-settings,\n.icon-star,\n.icon-symbol-female,\n.icon-symbol-male,\n.icon-target,\n.icon-credit-card,\n.icon-paypal,\n.icon-social-tumblr,\n.icon-social-twitter,\n.icon-social-facebook,\n.icon-social-instagram,\n.icon-social-linkedin,\n.icon-social-pinterest,\n.icon-social-github,\n.icon-social-google,\n.icon-social-reddit,\n.icon-social-skype,\n.icon-social-dribbble,\n.icon-social-behance,\n.icon-social-foursqare,\n.icon-social-soundcloud,\n.icon-social-spotify,\n.icon-social-stumbleupon,\n.icon-social-youtube,\n.icon-social-dropbox,\n.icon-social-vkontakte,\n.icon-social-steam {\n  font-family: 'simple-line-icons';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-user:before {\n  content: \"\\E005\";\n}\n.icon-people:before {\n  content: \"\\E001\";\n}\n.icon-user-female:before {\n  content: \"\\E000\";\n}\n.icon-user-follow:before {\n  content: \"\\E002\";\n}\n.icon-user-following:before {\n  content: \"\\E003\";\n}\n.icon-user-unfollow:before {\n  content: \"\\E004\";\n}\n.icon-login:before {\n  content: \"\\E066\";\n}\n.icon-logout:before {\n  content: \"\\E065\";\n}\n.icon-emotsmile:before {\n  content: \"\\E021\";\n}\n.icon-phone:before {\n  content: \"\\E600\";\n}\n.icon-call-end:before {\n  content: \"\\E048\";\n}\n.icon-call-in:before {\n  content: \"\\E047\";\n}\n.icon-call-out:before {\n  content: \"\\E046\";\n}\n.icon-map:before {\n  content: \"\\E033\";\n}\n.icon-location-pin:before {\n  content: \"\\E096\";\n}\n.icon-direction:before {\n  content: \"\\E042\";\n}\n.icon-directions:before {\n  content: \"\\E041\";\n}\n.icon-compass:before {\n  content: \"\\E045\";\n}\n.icon-layers:before {\n  content: \"\\E034\";\n}\n.icon-menu:before {\n  content: \"\\E601\";\n}\n.icon-list:before {\n  content: \"\\E067\";\n}\n.icon-options-vertical:before {\n  content: \"\\E602\";\n}\n.icon-options:before {\n  content: \"\\E603\";\n}\n.icon-arrow-down:before {\n  content: \"\\E604\";\n}\n.icon-arrow-left:before {\n  content: \"\\E605\";\n}\n.icon-arrow-right:before {\n  content: \"\\E606\";\n}\n.icon-arrow-up:before {\n  content: \"\\E607\";\n}\n.icon-arrow-up-circle:before {\n  content: \"\\E078\";\n}\n.icon-arrow-left-circle:before {\n  content: \"\\E07A\";\n}\n.icon-arrow-right-circle:before {\n  content: \"\\E079\";\n}\n.icon-arrow-down-circle:before {\n  content: \"\\E07B\";\n}\n.icon-check:before {\n  content: \"\\E080\";\n}\n.icon-clock:before {\n  content: \"\\E081\";\n}\n.icon-plus:before {\n  content: \"\\E095\";\n}\n.icon-minus:before {\n  content: \"\\E615\";\n}\n.icon-close:before {\n  content: \"\\E082\";\n}\n.icon-event:before {\n  content: \"\\E619\";\n}\n.icon-exclamation:before {\n  content: \"\\E617\";\n}\n.icon-organization:before {\n  content: \"\\E616\";\n}\n.icon-trophy:before {\n  content: \"\\E006\";\n}\n.icon-screen-smartphone:before {\n  content: \"\\E010\";\n}\n.icon-screen-desktop:before {\n  content: \"\\E011\";\n}\n.icon-plane:before {\n  content: \"\\E012\";\n}\n.icon-notebook:before {\n  content: \"\\E013\";\n}\n.icon-mustache:before {\n  content: \"\\E014\";\n}\n.icon-mouse:before {\n  content: \"\\E015\";\n}\n.icon-magnet:before {\n  content: \"\\E016\";\n}\n.icon-energy:before {\n  content: \"\\E020\";\n}\n.icon-disc:before {\n  content: \"\\E022\";\n}\n.icon-cursor:before {\n  content: \"\\E06E\";\n}\n.icon-cursor-move:before {\n  content: \"\\E023\";\n}\n.icon-crop:before {\n  content: \"\\E024\";\n}\n.icon-chemistry:before {\n  content: \"\\E026\";\n}\n.icon-speedometer:before {\n  content: \"\\E007\";\n}\n.icon-shield:before {\n  content: \"\\E00E\";\n}\n.icon-screen-tablet:before {\n  content: \"\\E00F\";\n}\n.icon-magic-wand:before {\n  content: \"\\E017\";\n}\n.icon-hourglass:before {\n  content: \"\\E018\";\n}\n.icon-graduation:before {\n  content: \"\\E019\";\n}\n.icon-ghost:before {\n  content: \"\\E01A\";\n}\n.icon-game-controller:before {\n  content: \"\\E01B\";\n}\n.icon-fire:before {\n  content: \"\\E01C\";\n}\n.icon-eyeglass:before {\n  content: \"\\E01D\";\n}\n.icon-envelope-open:before {\n  content: \"\\E01E\";\n}\n.icon-envelope-letter:before {\n  content: \"\\E01F\";\n}\n.icon-bell:before {\n  content: \"\\E027\";\n}\n.icon-badge:before {\n  content: \"\\E028\";\n}\n.icon-anchor:before {\n  content: \"\\E029\";\n}\n.icon-wallet:before {\n  content: \"\\E02A\";\n}\n.icon-vector:before {\n  content: \"\\E02B\";\n}\n.icon-speech:before {\n  content: \"\\E02C\";\n}\n.icon-puzzle:before {\n  content: \"\\E02D\";\n}\n.icon-printer:before {\n  content: \"\\E02E\";\n}\n.icon-present:before {\n  content: \"\\E02F\";\n}\n.icon-playlist:before {\n  content: \"\\E030\";\n}\n.icon-pin:before {\n  content: \"\\E031\";\n}\n.icon-picture:before {\n  content: \"\\E032\";\n}\n.icon-handbag:before {\n  content: \"\\E035\";\n}\n.icon-globe-alt:before {\n  content: \"\\E036\";\n}\n.icon-globe:before {\n  content: \"\\E037\";\n}\n.icon-folder-alt:before {\n  content: \"\\E039\";\n}\n.icon-folder:before {\n  content: \"\\E089\";\n}\n.icon-film:before {\n  content: \"\\E03A\";\n}\n.icon-feed:before {\n  content: \"\\E03B\";\n}\n.icon-drop:before {\n  content: \"\\E03E\";\n}\n.icon-drawer:before {\n  content: \"\\E03F\";\n}\n.icon-docs:before {\n  content: \"\\E040\";\n}\n.icon-doc:before {\n  content: \"\\E085\";\n}\n.icon-diamond:before {\n  content: \"\\E043\";\n}\n.icon-cup:before {\n  content: \"\\E044\";\n}\n.icon-calculator:before {\n  content: \"\\E049\";\n}\n.icon-bubbles:before {\n  content: \"\\E04A\";\n}\n.icon-briefcase:before {\n  content: \"\\E04B\";\n}\n.icon-book-open:before {\n  content: \"\\E04C\";\n}\n.icon-basket-loaded:before {\n  content: \"\\E04D\";\n}\n.icon-basket:before {\n  content: \"\\E04E\";\n}\n.icon-bag:before {\n  content: \"\\E04F\";\n}\n.icon-action-undo:before {\n  content: \"\\E050\";\n}\n.icon-action-redo:before {\n  content: \"\\E051\";\n}\n.icon-wrench:before {\n  content: \"\\E052\";\n}\n.icon-umbrella:before {\n  content: \"\\E053\";\n}\n.icon-trash:before {\n  content: \"\\E054\";\n}\n.icon-tag:before {\n  content: \"\\E055\";\n}\n.icon-support:before {\n  content: \"\\E056\";\n}\n.icon-frame:before {\n  content: \"\\E038\";\n}\n.icon-size-fullscreen:before {\n  content: \"\\E057\";\n}\n.icon-size-actual:before {\n  content: \"\\E058\";\n}\n.icon-shuffle:before {\n  content: \"\\E059\";\n}\n.icon-share-alt:before {\n  content: \"\\E05A\";\n}\n.icon-share:before {\n  content: \"\\E05B\";\n}\n.icon-rocket:before {\n  content: \"\\E05C\";\n}\n.icon-question:before {\n  content: \"\\E05D\";\n}\n.icon-pie-chart:before {\n  content: \"\\E05E\";\n}\n.icon-pencil:before {\n  content: \"\\E05F\";\n}\n.icon-note:before {\n  content: \"\\E060\";\n}\n.icon-loop:before {\n  content: \"\\E064\";\n}\n.icon-home:before {\n  content: \"\\E069\";\n}\n.icon-grid:before {\n  content: \"\\E06A\";\n}\n.icon-graph:before {\n  content: \"\\E06B\";\n}\n.icon-microphone:before {\n  content: \"\\E063\";\n}\n.icon-music-tone-alt:before {\n  content: \"\\E061\";\n}\n.icon-music-tone:before {\n  content: \"\\E062\";\n}\n.icon-earphones-alt:before {\n  content: \"\\E03C\";\n}\n.icon-earphones:before {\n  content: \"\\E03D\";\n}\n.icon-equalizer:before {\n  content: \"\\E06C\";\n}\n.icon-like:before {\n  content: \"\\E068\";\n}\n.icon-dislike:before {\n  content: \"\\E06D\";\n}\n.icon-control-start:before {\n  content: \"\\E06F\";\n}\n.icon-control-rewind:before {\n  content: \"\\E070\";\n}\n.icon-control-play:before {\n  content: \"\\E071\";\n}\n.icon-control-pause:before {\n  content: \"\\E072\";\n}\n.icon-control-forward:before {\n  content: \"\\E073\";\n}\n.icon-control-end:before {\n  content: \"\\E074\";\n}\n.icon-volume-1:before {\n  content: \"\\E09F\";\n}\n.icon-volume-2:before {\n  content: \"\\E0A0\";\n}\n.icon-volume-off:before {\n  content: \"\\E0A1\";\n}\n.icon-calendar:before {\n  content: \"\\E075\";\n}\n.icon-bulb:before {\n  content: \"\\E076\";\n}\n.icon-chart:before {\n  content: \"\\E077\";\n}\n.icon-ban:before {\n  content: \"\\E07C\";\n}\n.icon-bubble:before {\n  content: \"\\E07D\";\n}\n.icon-camrecorder:before {\n  content: \"\\E07E\";\n}\n.icon-camera:before {\n  content: \"\\E07F\";\n}\n.icon-cloud-download:before {\n  content: \"\\E083\";\n}\n.icon-cloud-upload:before {\n  content: \"\\E084\";\n}\n.icon-envelope:before {\n  content: \"\\E086\";\n}\n.icon-eye:before {\n  content: \"\\E087\";\n}\n.icon-flag:before {\n  content: \"\\E088\";\n}\n.icon-heart:before {\n  content: \"\\E08A\";\n}\n.icon-info:before {\n  content: \"\\E08B\";\n}\n.icon-key:before {\n  content: \"\\E08C\";\n}\n.icon-link:before {\n  content: \"\\E08D\";\n}\n.icon-lock:before {\n  content: \"\\E08E\";\n}\n.icon-lock-open:before {\n  content: \"\\E08F\";\n}\n.icon-magnifier:before {\n  content: \"\\E090\";\n}\n.icon-magnifier-add:before {\n  content: \"\\E091\";\n}\n.icon-magnifier-remove:before {\n  content: \"\\E092\";\n}\n.icon-paper-clip:before {\n  content: \"\\E093\";\n}\n.icon-paper-plane:before {\n  content: \"\\E094\";\n}\n.icon-power:before {\n  content: \"\\E097\";\n}\n.icon-refresh:before {\n  content: \"\\E098\";\n}\n.icon-reload:before {\n  content: \"\\E099\";\n}\n.icon-settings:before {\n  content: \"\\E09A\";\n}\n.icon-star:before {\n  content: \"\\E09B\";\n}\n.icon-symbol-female:before {\n  content: \"\\E09C\";\n}\n.icon-symbol-male:before {\n  content: \"\\E09D\";\n}\n.icon-target:before {\n  content: \"\\E09E\";\n}\n.icon-credit-card:before {\n  content: \"\\E025\";\n}\n.icon-paypal:before {\n  content: \"\\E608\";\n}\n.icon-social-tumblr:before {\n  content: \"\\E00A\";\n}\n.icon-social-twitter:before {\n  content: \"\\E009\";\n}\n.icon-social-facebook:before {\n  content: \"\\E00B\";\n}\n.icon-social-instagram:before {\n  content: \"\\E609\";\n}\n.icon-social-linkedin:before {\n  content: \"\\E60A\";\n}\n.icon-social-pinterest:before {\n  content: \"\\E60B\";\n}\n.icon-social-github:before {\n  content: \"\\E60C\";\n}\n.icon-social-google:before {\n  content: \"\\E60D\";\n}\n.icon-social-reddit:before {\n  content: \"\\E60E\";\n}\n.icon-social-skype:before {\n  content: \"\\E60F\";\n}\n.icon-social-dribbble:before {\n  content: \"\\E00D\";\n}\n.icon-social-behance:before {\n  content: \"\\E610\";\n}\n.icon-social-foursqare:before {\n  content: \"\\E611\";\n}\n.icon-social-soundcloud:before {\n  content: \"\\E612\";\n}\n.icon-social-spotify:before {\n  content: \"\\E613\";\n}\n.icon-social-stumbleupon:before {\n  content: \"\\E614\";\n}\n.icon-social-youtube:before {\n  content: \"\\E008\";\n}\n.icon-social-dropbox:before {\n  content: \"\\E00C\";\n}\n.icon-social-vkontakte:before {\n  content: \"\\E618\";\n}\n.icon-social-steam:before {\n  content: \"\\E620\";\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1201:
+/***/ 1535:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1202);
+var content = __webpack_require__(1536);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("10d7ebf4", content, false, {});
+var update = __webpack_require__(26)("37e98bd8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./index3.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-bdc9e4c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./index3.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +70,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1202:
+/***/ 1536:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,23 +78,64 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.card .card-body[data-v-bdc9e4c6] {\n    padding: 0;\n}\n.card-alignment .card-title[data-v-bdc9e4c6] {\n    padding: 2rem 0 6rem;\n}\n.card-body img[data-v-bdc9e4c6] {\n    width: 100px;\n}\n.list-group-item .section[data-v-bdc9e4c6] {\n    border-right: 1px solid rgba(0, 0, 0, 0.125);\n}\n.slick-slide img[data-v-bdc9e4c6] {\n    display: unset;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1203:
+/***/ 1537:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1538);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("0aa5e646", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-63fc1bf0\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1538:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.input-group {\n    width: 100%;\n    margin-bottom: 10px;\n}\n.input-group-addon.icon-sizeshow {\n    border: none;\n    background-color: transparent;\n}\n.input-group input[type=\"range\"] {\n    border: none;\n    box-shadow: none;\n}\n#icon-search {\n    border-radius: 17px !important;\n}\nform {\n    text-align: center;\n    padding: 10px;\n}\ninput[type=\"range\"] {\n    cursor: pointer;\n}\n.preview .name {\n    display: block;\n}\n.preview {\n    padding: 30px 10px;\n    font-size: 12px;\n    height: 120px;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview:hover {\n    background-color: #DCDCDC;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview span[class|=ti] {\n    display: block;\n}\n.preview i,\n.preview span[class|=ti] {\n    color: #428BCA;\n    font-size: 24px;\n}\n.preview:hover i,\n.preview:hover span[class|=ti] {\n    font-size: 30px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1539:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_slick__ = __webpack_require__(1204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__ = __webpack_require__(1205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__);
+/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
 //
 //
 //
@@ -359,4056 +401,5227 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-
-    name: 'index3',
+    name: "blank",
     components: {
-        Slick: __WEBPACK_IMPORTED_MODULE_1_vue_slick__["a" /* default */]
+        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            slickOptions: {
-                slidesToShow: 1,
-                arrows: true,
-                nextArrow: '<span class="right"><i class="fa fa-chevron-right nextArrowBtn"></i></span>',
-                prevArrow: '<span class="left"><i class="fa fa-chevron-left preArrowBtn"></i></span>'
-            }
-        };
-    },
+    mounted: function mounted() {
+        "use strict";
 
-    // All slick methods can be used too, example here
-    methods: {
-        next: function next() {
-            this.$refs.slick.next();
-        },
-        prev: function prev() {
-            this.$refs.slick.prev();
-        },
-        reInit: function reInit() {
-            var _this = this;
-
-            // Helpful if you have to deal with v-for to update dynamic lists
-            this.$nextTick(function () {
-                _this.$refs.slick.reSlick();
+        $(document).ready(function () {
+            $('#icon-search').on("input", function () {
+                $(".name").each(function () {
+                    var regex = new RegExp($("#icon-search").val().trim().toLowerCase());
+                    var x = $(this).text();
+                    var res = x.match(regex, "i");
+                    if (res == null) {
+                        $(this).closest(".icon-preview-box").hide();
+                    } else {
+                        $(this).closest(".icon-preview-box").show();
+                    }
+                });
             });
-        }
-    }
+            jQuery.fn.outerHTML = function () {
+                return jQuery('<div />').append(this.eq(0).clone()).html();
+            };
+            var icon_size = $("#icon-size");
+            icon_size.on("input", function () {
+                var x = parseInt(icon_size.val()) + parseInt(6);
+                $(".fontnormal").html(".preview i{font-size:" + icon_size.val() + "px;}.preview:hover i{font-size:" + x + "px;}");
+                $(".icon-sizeshow").text(icon_size.val() + "px");
+            });
+            $("head").append("<style class='fontnormal'></style>");
+            $(".preview").on("click", function () {
+                var x = $(this).find("i").outerHTML();
+                copyTextToClipboard(x);
+            });
+
+            function copyTextToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea).select();
+                var successful = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.success('Element Copied to Clipboard. Now you can use it anywhere.');
+            }
+        });
+    },
+    destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528), __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 1204:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(524);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-
-
-//
-
-// Check if the request came from the browser and is not server rendered
-if (typeof window !== 'undefined') {
-  Promise.resolve().then(function () { return slick$1; });
-}
-
-var script = {
-  props: {
-    options: {
-      type: Object,
-      default: function() {
-        return {};
-      },
-    },
-  },
-
-  mounted: function() {
-    this.create();
-  },
-
-  destroyed: function() {
-    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('unslick');
-  },
-
-  methods: {
-    create: function() {
-      var $slick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el);
-
-      $slick.on('afterChange', this.onAfterChange);
-      $slick.on('beforeChange', this.onBeforeChange);
-      $slick.on('breakpoint', this.onBreakpoint);
-      $slick.on('destroy', this.onDestroy);
-      $slick.on('edge', this.onEdge);
-      $slick.on('init', this.onInit);
-      $slick.on('reInit', this.onReInit);
-      $slick.on('setPosition', this.onSetPosition);
-      $slick.on('swipe', this.onSwipe);
-      $slick.on('lazyLoaded', this.onLazyLoaded);
-      $slick.on('lazyLoadError', this.onLazyLoadError);
-
-      $slick.slick(this.options);
-    },
-
-    destroy: function() {
-      var $slick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el);
-
-      $slick.off('afterChange', this.onAfterChange);
-      $slick.off('beforeChange', this.onBeforeChange);
-      $slick.off('breakpoint', this.onBreakpoint);
-      $slick.off('destroy', this.onDestroy);
-      $slick.off('edge', this.onEdge);
-      $slick.off('init', this.onInit);
-      $slick.off('reInit', this.onReInit);
-      $slick.off('setPosition', this.onSetPosition);
-      $slick.off('swipe', this.onSwipe);
-      $slick.off('lazyLoaded', this.onLazyLoaded);
-      $slick.off('lazyLoadError', this.onLazyLoadError);
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('unslick');
-    },
-
-    reSlick: function() {
-      this.destroy();
-      this.create();
-    },
-
-    next: function() {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickNext');
-    },
-
-    prev: function() {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPrev');
-    },
-
-    pause: function() {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPause');
-    },
-
-    play: function() {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickPlay');
-    },
-
-    goTo: function(index, dontAnimate) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickGoTo', index, dontAnimate);
-    },
-
-    currentSlide: function() {
-      return __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickCurrentSlide');
-    },
-
-    add: function(element, index, addBefore) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickAdd', element, index, addBefore);
-    },
-
-    remove: function(index, removeBefore) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickRemove', index, removeBefore);
-    },
-
-    filter: function(filterData) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickFilter', filterData);
-    },
-
-    unfilter: function() {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickUnfilter');
-    },
-
-    getOption: function(option) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickGetOption', option);
-    },
-
-    setOption: function(option, value, refresh) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('slickSetOption', option, value, refresh);
-    },
-
-    setPosition: function() {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this.$el).slick('setPosition');
-    },
-
-    // Events
-    onAfterChange: function(event, slick, currentSlide) {
-      this.$emit('afterChange', event, slick, currentSlide);
-    },
-
-    onBeforeChange: function(event, slick, currentSlide, nextSlide) {
-      this.$emit('beforeChange', event, slick, currentSlide, nextSlide);
-    },
-
-    onBreakpoint: function(event, slick, breakpoint) {
-      this.$emit('breakpoint', event, slick, breakpoint);
-    },
-
-    onDestroy: function(event, slick) {
-      this.$emit('destroy', event, slick);
-    },
-
-    onEdge: function(event, slick, direction) {
-      this.$emit('edge', event, slick, direction);
-    },
-
-    onInit: function(event, slick) {
-      this.$emit('init', event, slick);
-    },
-
-    onReInit: function(event, slick) {
-      this.$emit('reInit', event, slick);
-    },
-
-    onSetPosition: function(event, slick) {
-      this.$emit('setPosition', event, slick);
-    },
-
-    onSwipe: function(event, slick, direction) {
-      this.$emit('swipe', event, slick, direction);
-    },
-
-    onLazyLoaded: function(event, slick, image, imageSource) {
-      this.$emit('lazyLoaded', event, slick, image, imageSource);
-    },
-
-    onLazyLoadError: function(event, slick, image, imageSource) {
-      this.$emit('lazyLoadError', event, slick, image, imageSource);
-    },
-  },
-
-};
-
-/* script */
-            var __vue_script__ = script;
-            
-/* template */
-var __vue_render__ = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c("div", [_vm._t("default")], 2)
-};
-var __vue_staticRenderFns__ = [];
-__vue_render__._withStripped = true;
-
-  /* style */
-  var __vue_inject_styles__ = undefined;
-  /* scoped */
-  var __vue_scope_id__ = undefined;
-  /* module identifier */
-  var __vue_module_identifier__ = undefined;
-  /* functional template */
-  var __vue_is_functional_template__ = false;
-  /* component normalizer */
-  function __vue_normalize__(
-    template, style, script$$1,
-    scope, functional, moduleIdentifier,
-    createInjector, createInjectorSSR
-  ) {
-    var component = (typeof script$$1 === 'function' ? script$$1.options : script$$1) || {};
-
-    // For security concerns, we use only base name in production mode.
-    component.__file = "/Users/staskjs/Projects/vue-slick/src/slickCarousel.vue";
-
-    if (!component.render) {
-      component.render = template.render;
-      component.staticRenderFns = template.staticRenderFns;
-      component._compiled = true;
-
-      if (functional) { component.functional = true; }
-    }
-
-    component._scopeId = scope;
-
-    return component
-  }
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var slickCarousel = __vue_normalize__(
-    { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
-    __vue_inject_styles__,
-    __vue_script__,
-    __vue_scope_id__,
-    __vue_is_functional_template__,
-    __vue_module_identifier__,
-    undefined,
-    undefined
-  );
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var slick = createCommonjsModule(function (module, exports) {
-(function(factory) {
-    {
-        module.exports = factory(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a);
-    }
-
-}(function($$$1) {
-    var Slick = window.Slick || {};
-
-    Slick = (function() {
-
-        var instanceUid = 0;
-
-        function Slick(element, settings) {
-
-            var _ = this, dataSettings;
-
-            _.defaults = {
-                accessibility: true,
-                adaptiveHeight: false,
-                appendArrows: $$$1(element),
-                appendDots: $$$1(element),
-                arrows: true,
-                asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
-                autoplay: false,
-                autoplaySpeed: 3000,
-                centerMode: false,
-                centerPadding: '50px',
-                cssEase: 'ease',
-                customPaging: function(slider, i) {
-                    return $$$1('<button type="button" />').text(i + 1);
-                },
-                dots: false,
-                dotsClass: 'slick-dots',
-                draggable: true,
-                easing: 'linear',
-                edgeFriction: 0.35,
-                fade: false,
-                focusOnSelect: false,
-                focusOnChange: false,
-                infinite: true,
-                initialSlide: 0,
-                lazyLoad: 'ondemand',
-                mobileFirst: false,
-                pauseOnHover: true,
-                pauseOnFocus: true,
-                pauseOnDotsHover: false,
-                respondTo: 'window',
-                responsive: null,
-                rows: 1,
-                rtl: false,
-                slide: '',
-                slidesPerRow: 1,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                speed: 500,
-                swipe: true,
-                swipeToSlide: false,
-                touchMove: true,
-                touchThreshold: 5,
-                useCSS: true,
-                useTransform: true,
-                variableWidth: false,
-                vertical: false,
-                verticalSwiping: false,
-                waitForAnimate: true,
-                zIndex: 1000
-            };
-
-            _.initials = {
-                animating: false,
-                dragging: false,
-                autoPlayTimer: null,
-                currentDirection: 0,
-                currentLeft: null,
-                currentSlide: 0,
-                direction: 1,
-                $dots: null,
-                listWidth: null,
-                listHeight: null,
-                loadIndex: 0,
-                $nextArrow: null,
-                $prevArrow: null,
-                scrolling: false,
-                slideCount: null,
-                slideWidth: null,
-                $slideTrack: null,
-                $slides: null,
-                sliding: false,
-                slideOffset: 0,
-                swipeLeft: null,
-                swiping: false,
-                $list: null,
-                touchObject: {},
-                transformsEnabled: false,
-                unslicked: false
-            };
-
-            $$$1.extend(_, _.initials);
-
-            _.activeBreakpoint = null;
-            _.animType = null;
-            _.animProp = null;
-            _.breakpoints = [];
-            _.breakpointSettings = [];
-            _.cssTransitions = false;
-            _.focussed = false;
-            _.interrupted = false;
-            _.hidden = 'hidden';
-            _.paused = true;
-            _.positionProp = null;
-            _.respondTo = null;
-            _.rowCount = 1;
-            _.shouldClick = true;
-            _.$slider = $$$1(element);
-            _.$slidesCache = null;
-            _.transformType = null;
-            _.transitionType = null;
-            _.visibilityChange = 'visibilitychange';
-            _.windowWidth = 0;
-            _.windowTimer = null;
-
-            dataSettings = $$$1(element).data('slick') || {};
-
-            _.options = $$$1.extend({}, _.defaults, settings, dataSettings);
-
-            _.currentSlide = _.options.initialSlide;
-
-            _.originalSettings = _.options;
-
-            if (typeof document.mozHidden !== 'undefined') {
-                _.hidden = 'mozHidden';
-                _.visibilityChange = 'mozvisibilitychange';
-            } else if (typeof document.webkitHidden !== 'undefined') {
-                _.hidden = 'webkitHidden';
-                _.visibilityChange = 'webkitvisibilitychange';
-            }
-
-            _.autoPlay = $$$1.proxy(_.autoPlay, _);
-            _.autoPlayClear = $$$1.proxy(_.autoPlayClear, _);
-            _.autoPlayIterator = $$$1.proxy(_.autoPlayIterator, _);
-            _.changeSlide = $$$1.proxy(_.changeSlide, _);
-            _.clickHandler = $$$1.proxy(_.clickHandler, _);
-            _.selectHandler = $$$1.proxy(_.selectHandler, _);
-            _.setPosition = $$$1.proxy(_.setPosition, _);
-            _.swipeHandler = $$$1.proxy(_.swipeHandler, _);
-            _.dragHandler = $$$1.proxy(_.dragHandler, _);
-            _.keyHandler = $$$1.proxy(_.keyHandler, _);
-
-            _.instanceUid = instanceUid++;
-
-            // A simple way to check for HTML strings
-            // Strict HTML recognition (must start with <)
-            // Extracted from jQuery v1.11 source
-            _.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/;
-
-
-            _.registerBreakpoints();
-            _.init(true);
-
-        }
-
-        return Slick;
-
-    }());
-
-    Slick.prototype.activateADA = function() {
-        var _ = this;
-
-        _.$slideTrack.find('.slick-active').attr({
-            'aria-hidden': 'false'
-        }).find('a, input, button, select').attr({
-            'tabindex': '0'
-        });
-
-    };
-
-    Slick.prototype.addSlide = Slick.prototype.slickAdd = function(markup, index, addBefore) {
-
-        var _ = this;
-
-        if (typeof(index) === 'boolean') {
-            addBefore = index;
-            index = null;
-        } else if (index < 0 || (index >= _.slideCount)) {
-            return false;
-        }
-
-        _.unload();
-
-        if (typeof(index) === 'number') {
-            if (index === 0 && _.$slides.length === 0) {
-                $$$1(markup).appendTo(_.$slideTrack);
-            } else if (addBefore) {
-                $$$1(markup).insertBefore(_.$slides.eq(index));
-            } else {
-                $$$1(markup).insertAfter(_.$slides.eq(index));
-            }
-        } else {
-            if (addBefore === true) {
-                $$$1(markup).prependTo(_.$slideTrack);
-            } else {
-                $$$1(markup).appendTo(_.$slideTrack);
-            }
-        }
-
-        _.$slides = _.$slideTrack.children(this.options.slide);
-
-        _.$slideTrack.children(this.options.slide).detach();
-
-        _.$slideTrack.append(_.$slides);
-
-        _.$slides.each(function(index, element) {
-            $$$1(element).attr('data-slick-index', index);
-        });
-
-        _.$slidesCache = _.$slides;
-
-        _.reinit();
-
-    };
-
-    Slick.prototype.animateHeight = function() {
-        var _ = this;
-        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
-            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
-            _.$list.animate({
-                height: targetHeight
-            }, _.options.speed);
-        }
-    };
-
-    Slick.prototype.animateSlide = function(targetLeft, callback) {
-
-        var animProps = {},
-            _ = this;
-
-        _.animateHeight();
-
-        if (_.options.rtl === true && _.options.vertical === false) {
-            targetLeft = -targetLeft;
-        }
-        if (_.transformsEnabled === false) {
-            if (_.options.vertical === false) {
-                _.$slideTrack.animate({
-                    left: targetLeft
-                }, _.options.speed, _.options.easing, callback);
-            } else {
-                _.$slideTrack.animate({
-                    top: targetLeft
-                }, _.options.speed, _.options.easing, callback);
-            }
-
-        } else {
-
-            if (_.cssTransitions === false) {
-                if (_.options.rtl === true) {
-                    _.currentLeft = -(_.currentLeft);
-                }
-                $$$1({
-                    animStart: _.currentLeft
-                }).animate({
-                    animStart: targetLeft
-                }, {
-                    duration: _.options.speed,
-                    easing: _.options.easing,
-                    step: function(now) {
-                        now = Math.ceil(now);
-                        if (_.options.vertical === false) {
-                            animProps[_.animType] = 'translate(' +
-                                now + 'px, 0px)';
-                            _.$slideTrack.css(animProps);
-                        } else {
-                            animProps[_.animType] = 'translate(0px,' +
-                                now + 'px)';
-                            _.$slideTrack.css(animProps);
-                        }
-                    },
-                    complete: function() {
-                        if (callback) {
-                            callback.call();
-                        }
-                    }
-                });
-
-            } else {
-
-                _.applyTransition();
-                targetLeft = Math.ceil(targetLeft);
-
-                if (_.options.vertical === false) {
-                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px)';
-                } else {
-                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px)';
-                }
-                _.$slideTrack.css(animProps);
-
-                if (callback) {
-                    setTimeout(function() {
-
-                        _.disableTransition();
-
-                        callback.call();
-                    }, _.options.speed);
-                }
-
-            }
-
-        }
-
-    };
-
-    Slick.prototype.getNavTarget = function() {
-
-        var _ = this,
-            asNavFor = _.options.asNavFor;
-
-        if ( asNavFor && asNavFor !== null ) {
-            asNavFor = $$$1(asNavFor).not(_.$slider);
-        }
-
-        return asNavFor;
-
-    };
-
-    Slick.prototype.asNavFor = function(index) {
-
-        var _ = this,
-            asNavFor = _.getNavTarget();
-
-        if ( asNavFor !== null && typeof asNavFor === 'object' ) {
-            asNavFor.each(function() {
-                var target = $$$1(this).slick('getSlick');
-                if(!target.unslicked) {
-                    target.slideHandler(index, true);
-                }
-            });
-        }
-
-    };
-
-    Slick.prototype.applyTransition = function(slide) {
-
-        var _ = this,
-            transition = {};
-
-        if (_.options.fade === false) {
-            transition[_.transitionType] = _.transformType + ' ' + _.options.speed + 'ms ' + _.options.cssEase;
-        } else {
-            transition[_.transitionType] = 'opacity ' + _.options.speed + 'ms ' + _.options.cssEase;
-        }
-
-        if (_.options.fade === false) {
-            _.$slideTrack.css(transition);
-        } else {
-            _.$slides.eq(slide).css(transition);
-        }
-
-    };
-
-    Slick.prototype.autoPlay = function() {
-
-        var _ = this;
-
-        _.autoPlayClear();
-
-        if ( _.slideCount > _.options.slidesToShow ) {
-            _.autoPlayTimer = setInterval( _.autoPlayIterator, _.options.autoplaySpeed );
-        }
-
-    };
-
-    Slick.prototype.autoPlayClear = function() {
-
-        var _ = this;
-
-        if (_.autoPlayTimer) {
-            clearInterval(_.autoPlayTimer);
-        }
-
-    };
-
-    Slick.prototype.autoPlayIterator = function() {
-
-        var _ = this,
-            slideTo = _.currentSlide + _.options.slidesToScroll;
-
-        if ( !_.paused && !_.interrupted && !_.focussed ) {
-
-            if ( _.options.infinite === false ) {
-
-                if ( _.direction === 1 && ( _.currentSlide + 1 ) === ( _.slideCount - 1 )) {
-                    _.direction = 0;
-                }
-
-                else if ( _.direction === 0 ) {
-
-                    slideTo = _.currentSlide - _.options.slidesToScroll;
-
-                    if ( _.currentSlide - 1 === 0 ) {
-                        _.direction = 1;
-                    }
-
-                }
-
-            }
-
-            _.slideHandler( slideTo );
-
-        }
-
-    };
-
-    Slick.prototype.buildArrows = function() {
-
-        var _ = this;
-
-        if (_.options.arrows === true ) {
-
-            _.$prevArrow = $$$1(_.options.prevArrow).addClass('slick-arrow');
-            _.$nextArrow = $$$1(_.options.nextArrow).addClass('slick-arrow');
-
-            if( _.slideCount > _.options.slidesToShow ) {
-
-                _.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
-                _.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
-
-                if (_.htmlExpr.test(_.options.prevArrow)) {
-                    _.$prevArrow.prependTo(_.options.appendArrows);
-                }
-
-                if (_.htmlExpr.test(_.options.nextArrow)) {
-                    _.$nextArrow.appendTo(_.options.appendArrows);
-                }
-
-                if (_.options.infinite !== true) {
-                    _.$prevArrow
-                        .addClass('slick-disabled')
-                        .attr('aria-disabled', 'true');
-                }
-
-            } else {
-
-                _.$prevArrow.add( _.$nextArrow )
-
-                    .addClass('slick-hidden')
-                    .attr({
-                        'aria-disabled': 'true',
-                        'tabindex': '-1'
-                    });
-
-            }
-
-        }
-
-    };
-
-    Slick.prototype.buildDots = function() {
-
-        var _ = this,
-            i, dot;
-
-        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
-
-            _.$slider.addClass('slick-dotted');
-
-            dot = $$$1('<ul />').addClass(_.options.dotsClass);
-
-            for (i = 0; i <= _.getDotCount(); i += 1) {
-                dot.append($$$1('<li />').append(_.options.customPaging.call(this, _, i)));
-            }
-
-            _.$dots = dot.appendTo(_.options.appendDots);
-
-            _.$dots.find('li').first().addClass('slick-active');
-
-        }
-
-    };
-
-    Slick.prototype.buildOut = function() {
-
-        var _ = this;
-
-        _.$slides =
-            _.$slider
-                .children( _.options.slide + ':not(.slick-cloned)')
-                .addClass('slick-slide');
-
-        _.slideCount = _.$slides.length;
-
-        _.$slides.each(function(index, element) {
-            $$$1(element)
-                .attr('data-slick-index', index)
-                .data('originalStyling', $$$1(element).attr('style') || '');
-        });
-
-        _.$slider.addClass('slick-slider');
-
-        _.$slideTrack = (_.slideCount === 0) ?
-            $$$1('<div class="slick-track"/>').appendTo(_.$slider) :
-            _.$slides.wrapAll('<div class="slick-track"/>').parent();
-
-        _.$list = _.$slideTrack.wrap(
-            '<div class="slick-list"/>').parent();
-        _.$slideTrack.css('opacity', 0);
-
-        if (_.options.centerMode === true || _.options.swipeToSlide === true) {
-            _.options.slidesToScroll = 1;
-        }
-
-        $$$1('img[data-lazy]', _.$slider).not('[src]').addClass('slick-loading');
-
-        _.setupInfinite();
-
-        _.buildArrows();
-
-        _.buildDots();
-
-        _.updateDots();
-
-
-        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
-
-        if (_.options.draggable === true) {
-            _.$list.addClass('draggable');
-        }
-
-    };
-
-    Slick.prototype.buildRows = function() {
-
-        var _ = this, a, b, c, newSlides, numOfSlides, originalSlides,slidesPerSection;
-
-        newSlides = document.createDocumentFragment();
-        originalSlides = _.$slider.children();
-
-        if(_.options.rows > 0) {
-
-            slidesPerSection = _.options.slidesPerRow * _.options.rows;
-            numOfSlides = Math.ceil(
-                originalSlides.length / slidesPerSection
-            );
-
-            for(a = 0; a < numOfSlides; a++){
-                var slide = document.createElement('div');
-                for(b = 0; b < _.options.rows; b++) {
-                    var row = document.createElement('div');
-                    for(c = 0; c < _.options.slidesPerRow; c++) {
-                        var target = (a * slidesPerSection + ((b * _.options.slidesPerRow) + c));
-                        if (originalSlides.get(target)) {
-                            row.appendChild(originalSlides.get(target));
-                        }
-                    }
-                    slide.appendChild(row);
-                }
-                newSlides.appendChild(slide);
-            }
-
-            _.$slider.empty().append(newSlides);
-            _.$slider.children().children().children()
-                .css({
-                    'width':(100 / _.options.slidesPerRow) + '%',
-                    'display': 'inline-block'
-                });
-
-        }
-
-    };
-
-    Slick.prototype.checkResponsive = function(initial, forceUpdate) {
-
-        var _ = this,
-            breakpoint, targetBreakpoint, respondToWidth, triggerBreakpoint = false;
-        var sliderWidth = _.$slider.width();
-        var windowWidth = window.innerWidth || $$$1(window).width();
-
-        if (_.respondTo === 'window') {
-            respondToWidth = windowWidth;
-        } else if (_.respondTo === 'slider') {
-            respondToWidth = sliderWidth;
-        } else if (_.respondTo === 'min') {
-            respondToWidth = Math.min(windowWidth, sliderWidth);
-        }
-
-        if ( _.options.responsive &&
-            _.options.responsive.length &&
-            _.options.responsive !== null) {
-
-            targetBreakpoint = null;
-
-            for (breakpoint in _.breakpoints) {
-                if (_.breakpoints.hasOwnProperty(breakpoint)) {
-                    if (_.originalSettings.mobileFirst === false) {
-                        if (respondToWidth < _.breakpoints[breakpoint]) {
-                            targetBreakpoint = _.breakpoints[breakpoint];
-                        }
-                    } else {
-                        if (respondToWidth > _.breakpoints[breakpoint]) {
-                            targetBreakpoint = _.breakpoints[breakpoint];
-                        }
-                    }
-                }
-            }
-
-            if (targetBreakpoint !== null) {
-                if (_.activeBreakpoint !== null) {
-                    if (targetBreakpoint !== _.activeBreakpoint || forceUpdate) {
-                        _.activeBreakpoint =
-                            targetBreakpoint;
-                        if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
-                            _.unslick(targetBreakpoint);
-                        } else {
-                            _.options = $$$1.extend({}, _.originalSettings,
-                                _.breakpointSettings[
-                                    targetBreakpoint]);
-                            if (initial === true) {
-                                _.currentSlide = _.options.initialSlide;
-                            }
-                            _.refresh(initial);
-                        }
-                        triggerBreakpoint = targetBreakpoint;
-                    }
-                } else {
-                    _.activeBreakpoint = targetBreakpoint;
-                    if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
-                        _.unslick(targetBreakpoint);
-                    } else {
-                        _.options = $$$1.extend({}, _.originalSettings,
-                            _.breakpointSettings[
-                                targetBreakpoint]);
-                        if (initial === true) {
-                            _.currentSlide = _.options.initialSlide;
-                        }
-                        _.refresh(initial);
-                    }
-                    triggerBreakpoint = targetBreakpoint;
-                }
-            } else {
-                if (_.activeBreakpoint !== null) {
-                    _.activeBreakpoint = null;
-                    _.options = _.originalSettings;
-                    if (initial === true) {
-                        _.currentSlide = _.options.initialSlide;
-                    }
-                    _.refresh(initial);
-                    triggerBreakpoint = targetBreakpoint;
-                }
-            }
-
-            // only trigger breakpoints during an actual break. not on initialize.
-            if( !initial && triggerBreakpoint !== false ) {
-                _.$slider.trigger('breakpoint', [_, triggerBreakpoint]);
-            }
-        }
-
-    };
-
-    Slick.prototype.changeSlide = function(event, dontAnimate) {
-
-        var _ = this,
-            $target = $$$1(event.currentTarget),
-            indexOffset, slideOffset, unevenOffset;
-
-        // If target is a link, prevent default action.
-        if($target.is('a')) {
-            event.preventDefault();
-        }
-
-        // If target is not the <li> element (ie: a child), find the <li>.
-        if(!$target.is('li')) {
-            $target = $target.closest('li');
-        }
-
-        unevenOffset = (_.slideCount % _.options.slidesToScroll !== 0);
-        indexOffset = unevenOffset ? 0 : (_.slideCount - _.currentSlide) % _.options.slidesToScroll;
-
-        switch (event.data.message) {
-
-            case 'previous':
-                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : _.options.slidesToShow - indexOffset;
-                if (_.slideCount > _.options.slidesToShow) {
-                    _.slideHandler(_.currentSlide - slideOffset, false, dontAnimate);
-                }
-                break;
-
-            case 'next':
-                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : indexOffset;
-                if (_.slideCount > _.options.slidesToShow) {
-                    _.slideHandler(_.currentSlide + slideOffset, false, dontAnimate);
-                }
-                break;
-
-            case 'index':
-                var index = event.data.index === 0 ? 0 :
-                    event.data.index || $target.index() * _.options.slidesToScroll;
-
-                _.slideHandler(_.checkNavigable(index), false, dontAnimate);
-                $target.children().trigger('focus');
-                break;
-
-            default:
-                return;
-        }
-
-    };
-
-    Slick.prototype.checkNavigable = function(index) {
-
-        var _ = this,
-            navigables, prevNavigable;
-
-        navigables = _.getNavigableIndexes();
-        prevNavigable = 0;
-        if (index > navigables[navigables.length - 1]) {
-            index = navigables[navigables.length - 1];
-        } else {
-            for (var n in navigables) {
-                if (index < navigables[n]) {
-                    index = prevNavigable;
-                    break;
-                }
-                prevNavigable = navigables[n];
-            }
-        }
-
-        return index;
-    };
-
-    Slick.prototype.cleanUpEvents = function() {
-
-        var _ = this;
-
-        if (_.options.dots && _.$dots !== null) {
-
-            $$$1('li', _.$dots)
-                .off('click.slick', _.changeSlide)
-                .off('mouseenter.slick', $$$1.proxy(_.interrupt, _, true))
-                .off('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
-
-            if (_.options.accessibility === true) {
-                _.$dots.off('keydown.slick', _.keyHandler);
-            }
-        }
-
-        _.$slider.off('focus.slick blur.slick');
-
-        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
-            _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide);
-            _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide);
-
-            if (_.options.accessibility === true) {
-                _.$prevArrow && _.$prevArrow.off('keydown.slick', _.keyHandler);
-                _.$nextArrow && _.$nextArrow.off('keydown.slick', _.keyHandler);
-            }
-        }
-
-        _.$list.off('touchstart.slick mousedown.slick', _.swipeHandler);
-        _.$list.off('touchmove.slick mousemove.slick', _.swipeHandler);
-        _.$list.off('touchend.slick mouseup.slick', _.swipeHandler);
-        _.$list.off('touchcancel.slick mouseleave.slick', _.swipeHandler);
-
-        _.$list.off('click.slick', _.clickHandler);
-
-        $$$1(document).off(_.visibilityChange, _.visibility);
-
-        _.cleanUpSlideEvents();
-
-        if (_.options.accessibility === true) {
-            _.$list.off('keydown.slick', _.keyHandler);
-        }
-
-        if (_.options.focusOnSelect === true) {
-            $$$1(_.$slideTrack).children().off('click.slick', _.selectHandler);
-        }
-
-        $$$1(window).off('orientationchange.slick.slick-' + _.instanceUid, _.orientationChange);
-
-        $$$1(window).off('resize.slick.slick-' + _.instanceUid, _.resize);
-
-        $$$1('[draggable!=true]', _.$slideTrack).off('dragstart', _.preventDefault);
-
-        $$$1(window).off('load.slick.slick-' + _.instanceUid, _.setPosition);
-
-    };
-
-    Slick.prototype.cleanUpSlideEvents = function() {
-
-        var _ = this;
-
-        _.$list.off('mouseenter.slick', $$$1.proxy(_.interrupt, _, true));
-        _.$list.off('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
-
-    };
-
-    Slick.prototype.cleanUpRows = function() {
-
-        var _ = this, originalSlides;
-
-        if(_.options.rows > 0) {
-            originalSlides = _.$slides.children().children();
-            originalSlides.removeAttr('style');
-            _.$slider.empty().append(originalSlides);
-        }
-
-    };
-
-    Slick.prototype.clickHandler = function(event) {
-
-        var _ = this;
-
-        if (_.shouldClick === false) {
-            event.stopImmediatePropagation();
-            event.stopPropagation();
-            event.preventDefault();
-        }
-
-    };
-
-    Slick.prototype.destroy = function(refresh) {
-
-        var _ = this;
-
-        _.autoPlayClear();
-
-        _.touchObject = {};
-
-        _.cleanUpEvents();
-
-        $$$1('.slick-cloned', _.$slider).detach();
-
-        if (_.$dots) {
-            _.$dots.remove();
-        }
-
-        if ( _.$prevArrow && _.$prevArrow.length ) {
-
-            _.$prevArrow
-                .removeClass('slick-disabled slick-arrow slick-hidden')
-                .removeAttr('aria-hidden aria-disabled tabindex')
-                .css('display','');
-
-            if ( _.htmlExpr.test( _.options.prevArrow )) {
-                _.$prevArrow.remove();
-            }
-        }
-
-        if ( _.$nextArrow && _.$nextArrow.length ) {
-
-            _.$nextArrow
-                .removeClass('slick-disabled slick-arrow slick-hidden')
-                .removeAttr('aria-hidden aria-disabled tabindex')
-                .css('display','');
-
-            if ( _.htmlExpr.test( _.options.nextArrow )) {
-                _.$nextArrow.remove();
-            }
-        }
-
-
-        if (_.$slides) {
-
-            _.$slides
-                .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
-                .removeAttr('aria-hidden')
-                .removeAttr('data-slick-index')
-                .each(function(){
-                    $$$1(this).attr('style', $$$1(this).data('originalStyling'));
-                });
-
-            _.$slideTrack.children(this.options.slide).detach();
-
-            _.$slideTrack.detach();
-
-            _.$list.detach();
-
-            _.$slider.append(_.$slides);
-        }
-
-        _.cleanUpRows();
-
-        _.$slider.removeClass('slick-slider');
-        _.$slider.removeClass('slick-initialized');
-        _.$slider.removeClass('slick-dotted');
-
-        _.unslicked = true;
-
-        if(!refresh) {
-            _.$slider.trigger('destroy', [_]);
-        }
-
-    };
-
-    Slick.prototype.disableTransition = function(slide) {
-
-        var _ = this,
-            transition = {};
-
-        transition[_.transitionType] = '';
-
-        if (_.options.fade === false) {
-            _.$slideTrack.css(transition);
-        } else {
-            _.$slides.eq(slide).css(transition);
-        }
-
-    };
-
-    Slick.prototype.fadeSlide = function(slideIndex, callback) {
-
-        var _ = this;
-
-        if (_.cssTransitions === false) {
-
-            _.$slides.eq(slideIndex).css({
-                zIndex: _.options.zIndex
-            });
-
-            _.$slides.eq(slideIndex).animate({
-                opacity: 1
-            }, _.options.speed, _.options.easing, callback);
-
-        } else {
-
-            _.applyTransition(slideIndex);
-
-            _.$slides.eq(slideIndex).css({
-                opacity: 1,
-                zIndex: _.options.zIndex
-            });
-
-            if (callback) {
-                setTimeout(function() {
-
-                    _.disableTransition(slideIndex);
-
-                    callback.call();
-                }, _.options.speed);
-            }
-
-        }
-
-    };
-
-    Slick.prototype.fadeSlideOut = function(slideIndex) {
-
-        var _ = this;
-
-        if (_.cssTransitions === false) {
-
-            _.$slides.eq(slideIndex).animate({
-                opacity: 0,
-                zIndex: _.options.zIndex - 2
-            }, _.options.speed, _.options.easing);
-
-        } else {
-
-            _.applyTransition(slideIndex);
-
-            _.$slides.eq(slideIndex).css({
-                opacity: 0,
-                zIndex: _.options.zIndex - 2
-            });
-
-        }
-
-    };
-
-    Slick.prototype.filterSlides = Slick.prototype.slickFilter = function(filter) {
-
-        var _ = this;
-
-        if (filter !== null) {
-
-            _.$slidesCache = _.$slides;
-
-            _.unload();
-
-            _.$slideTrack.children(this.options.slide).detach();
-
-            _.$slidesCache.filter(filter).appendTo(_.$slideTrack);
-
-            _.reinit();
-
-        }
-
-    };
-
-    Slick.prototype.focusHandler = function() {
-
-        var _ = this;
-
-        _.$slider
-            .off('focus.slick blur.slick')
-            .on('focus.slick blur.slick', '*', function(event) {
-
-            event.stopImmediatePropagation();
-            var $sf = $$$1(this);
-
-            setTimeout(function() {
-
-                if( _.options.pauseOnFocus ) {
-                    _.focussed = $sf.is(':focus');
-                    _.autoPlay();
-                }
-
-            }, 0);
-
-        });
-    };
-
-    Slick.prototype.getCurrent = Slick.prototype.slickCurrentSlide = function() {
-
-        var _ = this;
-        return _.currentSlide;
-
-    };
-
-    Slick.prototype.getDotCount = function() {
-
-        var _ = this;
-
-        var breakPoint = 0;
-        var counter = 0;
-        var pagerQty = 0;
-
-        if (_.options.infinite === true) {
-            if (_.slideCount <= _.options.slidesToShow) {
-                 ++pagerQty;
-            } else {
-                while (breakPoint < _.slideCount) {
-                    ++pagerQty;
-                    breakPoint = counter + _.options.slidesToScroll;
-                    counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
-                }
-            }
-        } else if (_.options.centerMode === true) {
-            pagerQty = _.slideCount;
-        } else if(!_.options.asNavFor) {
-            pagerQty = 1 + Math.ceil((_.slideCount - _.options.slidesToShow) / _.options.slidesToScroll);
-        }else {
-            while (breakPoint < _.slideCount) {
-                ++pagerQty;
-                breakPoint = counter + _.options.slidesToScroll;
-                counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
-            }
-        }
-
-        return pagerQty - 1;
-
-    };
-
-    Slick.prototype.getLeft = function(slideIndex) {
-
-        var _ = this,
-            targetLeft,
-            verticalHeight,
-            verticalOffset = 0,
-            targetSlide,
-            coef;
-
-        _.slideOffset = 0;
-        verticalHeight = _.$slides.first().outerHeight(true);
-
-        if (_.options.infinite === true) {
-            if (_.slideCount > _.options.slidesToShow) {
-                _.slideOffset = (_.slideWidth * _.options.slidesToShow) * -1;
-                coef = -1;
-
-                if (_.options.vertical === true && _.options.centerMode === true) {
-                    if (_.options.slidesToShow === 2) {
-                        coef = -1.5;
-                    } else if (_.options.slidesToShow === 1) {
-                        coef = -2;
-                    }
-                }
-                verticalOffset = (verticalHeight * _.options.slidesToShow) * coef;
-            }
-            if (_.slideCount % _.options.slidesToScroll !== 0) {
-                if (slideIndex + _.options.slidesToScroll > _.slideCount && _.slideCount > _.options.slidesToShow) {
-                    if (slideIndex > _.slideCount) {
-                        _.slideOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * _.slideWidth) * -1;
-                        verticalOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * verticalHeight) * -1;
-                    } else {
-                        _.slideOffset = ((_.slideCount % _.options.slidesToScroll) * _.slideWidth) * -1;
-                        verticalOffset = ((_.slideCount % _.options.slidesToScroll) * verticalHeight) * -1;
-                    }
-                }
-            }
-        } else {
-            if (slideIndex + _.options.slidesToShow > _.slideCount) {
-                _.slideOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * _.slideWidth;
-                verticalOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * verticalHeight;
-            }
-        }
-
-        if (_.slideCount <= _.options.slidesToShow) {
-            _.slideOffset = 0;
-            verticalOffset = 0;
-        }
-
-        if (_.options.centerMode === true && _.slideCount <= _.options.slidesToShow) {
-            _.slideOffset = ((_.slideWidth * Math.floor(_.options.slidesToShow)) / 2) - ((_.slideWidth * _.slideCount) / 2);
-        } else if (_.options.centerMode === true && _.options.infinite === true) {
-            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2) - _.slideWidth;
-        } else if (_.options.centerMode === true) {
-            _.slideOffset = 0;
-            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2);
-        }
-
-        if (_.options.vertical === false) {
-            targetLeft = ((slideIndex * _.slideWidth) * -1) + _.slideOffset;
-        } else {
-            targetLeft = ((slideIndex * verticalHeight) * -1) + verticalOffset;
-        }
-
-        if (_.options.variableWidth === true) {
-
-            if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
-                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
-            } else {
-                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow);
-            }
-
-            if (_.options.rtl === true) {
-                if (targetSlide[0]) {
-                    targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
-                } else {
-                    targetLeft =  0;
-                }
-            } else {
-                targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
-            }
-
-            if (_.options.centerMode === true) {
-                if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
-                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
-                } else {
-                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow + 1);
-                }
-
-                if (_.options.rtl === true) {
-                    if (targetSlide[0]) {
-                        targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
-                    } else {
-                        targetLeft =  0;
-                    }
-                } else {
-                    targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
-                }
-
-                targetLeft += (_.$list.width() - targetSlide.outerWidth()) / 2;
-            }
-        }
-
-        return targetLeft;
-
-    };
-
-    Slick.prototype.getOption = Slick.prototype.slickGetOption = function(option) {
-
-        var _ = this;
-
-        return _.options[option];
-
-    };
-
-    Slick.prototype.getNavigableIndexes = function() {
-
-        var _ = this,
-            breakPoint = 0,
-            counter = 0,
-            indexes = [],
-            max;
-
-        if (_.options.infinite === false) {
-            max = _.slideCount;
-        } else {
-            breakPoint = _.options.slidesToScroll * -1;
-            counter = _.options.slidesToScroll * -1;
-            max = _.slideCount * 2;
-        }
-
-        while (breakPoint < max) {
-            indexes.push(breakPoint);
-            breakPoint = counter + _.options.slidesToScroll;
-            counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
-        }
-
-        return indexes;
-
-    };
-
-    Slick.prototype.getSlick = function() {
-
-        return this;
-
-    };
-
-    Slick.prototype.getSlideCount = function() {
-
-        var _ = this,
-            slidesTraversed, swipedSlide, centerOffset;
-
-        centerOffset = _.options.centerMode === true ? _.slideWidth * Math.floor(_.options.slidesToShow / 2) : 0;
-
-        if (_.options.swipeToSlide === true) {
-            _.$slideTrack.find('.slick-slide').each(function(index, slide) {
-                if (slide.offsetLeft - centerOffset + ($$$1(slide).outerWidth() / 2) > (_.swipeLeft * -1)) {
-                    swipedSlide = slide;
-                    return false;
-                }
-            });
-
-            slidesTraversed = Math.abs($$$1(swipedSlide).attr('data-slick-index') - _.currentSlide) || 1;
-
-            return slidesTraversed;
-
-        } else {
-            return _.options.slidesToScroll;
-        }
-
-    };
-
-    Slick.prototype.goTo = Slick.prototype.slickGoTo = function(slide, dontAnimate) {
-
-        var _ = this;
-
-        _.changeSlide({
-            data: {
-                message: 'index',
-                index: parseInt(slide)
-            }
-        }, dontAnimate);
-
-    };
-
-    Slick.prototype.init = function(creation) {
-
-        var _ = this;
-
-        if (!$$$1(_.$slider).hasClass('slick-initialized')) {
-
-            $$$1(_.$slider).addClass('slick-initialized');
-
-            _.buildRows();
-            _.buildOut();
-            _.setProps();
-            _.startLoad();
-            _.loadSlider();
-            _.initializeEvents();
-            _.updateArrows();
-            _.updateDots();
-            _.checkResponsive(true);
-            _.focusHandler();
-
-        }
-
-        if (creation) {
-            _.$slider.trigger('init', [_]);
-        }
-
-        if (_.options.accessibility === true) {
-            _.initADA();
-        }
-
-        if ( _.options.autoplay ) {
-
-            _.paused = false;
-            _.autoPlay();
-
-        }
-
-    };
-
-    Slick.prototype.initADA = function() {
-        var _ = this,
-                numDotGroups = Math.ceil(_.slideCount / _.options.slidesToShow),
-                tabControlIndexes = _.getNavigableIndexes().filter(function(val) {
-                    return (val >= 0) && (val < _.slideCount);
-                });
-
-        _.$slides.add(_.$slideTrack.find('.slick-cloned')).attr({
-            'aria-hidden': 'true',
-            'tabindex': '-1'
-        }).find('a, input, button, select').attr({
-            'tabindex': '-1'
-        });
-
-        if (_.$dots !== null) {
-            _.$slides.not(_.$slideTrack.find('.slick-cloned')).each(function(i) {
-                var slideControlIndex = tabControlIndexes.indexOf(i);
-
-                $$$1(this).attr({
-                    'role': 'tabpanel',
-                    'id': 'slick-slide' + _.instanceUid + i,
-                    'tabindex': -1
-                });
-
-                if (slideControlIndex !== -1) {
-                   var ariaButtonControl = 'slick-slide-control' + _.instanceUid + slideControlIndex;
-                   if ($$$1('#' + ariaButtonControl).length) {
-                     $$$1(this).attr({
-                         'aria-describedby': ariaButtonControl
-                     });
-                   }
-                }
-            });
-
-            _.$dots.attr('role', 'tablist').find('li').each(function(i) {
-                var mappedSlideIndex = tabControlIndexes[i];
-
-                $$$1(this).attr({
-                    'role': 'presentation'
-                });
-
-                $$$1(this).find('button').first().attr({
-                    'role': 'tab',
-                    'id': 'slick-slide-control' + _.instanceUid + i,
-                    'aria-controls': 'slick-slide' + _.instanceUid + mappedSlideIndex,
-                    'aria-label': (i + 1) + ' of ' + numDotGroups,
-                    'aria-selected': null,
-                    'tabindex': '-1'
-                });
-
-            }).eq(_.currentSlide).find('button').attr({
-                'aria-selected': 'true',
-                'tabindex': '0'
-            }).end();
-        }
-
-        for (var i=_.currentSlide, max=i+_.options.slidesToShow; i < max; i++) {
-          if (_.options.focusOnChange) {
-            _.$slides.eq(i).attr({'tabindex': '0'});
-          } else {
-            _.$slides.eq(i).removeAttr('tabindex');
-          }
-        }
-
-        _.activateADA();
-
-    };
-
-    Slick.prototype.initArrowEvents = function() {
-
-        var _ = this;
-
-        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
-            _.$prevArrow
-               .off('click.slick')
-               .on('click.slick', {
-                    message: 'previous'
-               }, _.changeSlide);
-            _.$nextArrow
-               .off('click.slick')
-               .on('click.slick', {
-                    message: 'next'
-               }, _.changeSlide);
-
-            if (_.options.accessibility === true) {
-                _.$prevArrow.on('keydown.slick', _.keyHandler);
-                _.$nextArrow.on('keydown.slick', _.keyHandler);
-            }
-        }
-
-    };
-
-    Slick.prototype.initDotEvents = function() {
-
-        var _ = this;
-
-        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
-            $$$1('li', _.$dots).on('click.slick', {
-                message: 'index'
-            }, _.changeSlide);
-
-            if (_.options.accessibility === true) {
-                _.$dots.on('keydown.slick', _.keyHandler);
-            }
-        }
-
-        if (_.options.dots === true && _.options.pauseOnDotsHover === true && _.slideCount > _.options.slidesToShow) {
-
-            $$$1('li', _.$dots)
-                .on('mouseenter.slick', $$$1.proxy(_.interrupt, _, true))
-                .on('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
-
-        }
-
-    };
-
-    Slick.prototype.initSlideEvents = function() {
-
-        var _ = this;
-
-        if ( _.options.pauseOnHover ) {
-
-            _.$list.on('mouseenter.slick', $$$1.proxy(_.interrupt, _, true));
-            _.$list.on('mouseleave.slick', $$$1.proxy(_.interrupt, _, false));
-
-        }
-
-    };
-
-    Slick.prototype.initializeEvents = function() {
-
-        var _ = this;
-
-        _.initArrowEvents();
-
-        _.initDotEvents();
-        _.initSlideEvents();
-
-        _.$list.on('touchstart.slick mousedown.slick', {
-            action: 'start'
-        }, _.swipeHandler);
-        _.$list.on('touchmove.slick mousemove.slick', {
-            action: 'move'
-        }, _.swipeHandler);
-        _.$list.on('touchend.slick mouseup.slick', {
-            action: 'end'
-        }, _.swipeHandler);
-        _.$list.on('touchcancel.slick mouseleave.slick', {
-            action: 'end'
-        }, _.swipeHandler);
-
-        _.$list.on('click.slick', _.clickHandler);
-
-        $$$1(document).on(_.visibilityChange, $$$1.proxy(_.visibility, _));
-
-        if (_.options.accessibility === true) {
-            _.$list.on('keydown.slick', _.keyHandler);
-        }
-
-        if (_.options.focusOnSelect === true) {
-            $$$1(_.$slideTrack).children().on('click.slick', _.selectHandler);
-        }
-
-        $$$1(window).on('orientationchange.slick.slick-' + _.instanceUid, $$$1.proxy(_.orientationChange, _));
-
-        $$$1(window).on('resize.slick.slick-' + _.instanceUid, $$$1.proxy(_.resize, _));
-
-        $$$1('[draggable!=true]', _.$slideTrack).on('dragstart', _.preventDefault);
-
-        $$$1(window).on('load.slick.slick-' + _.instanceUid, _.setPosition);
-        $$$1(_.setPosition);
-
-    };
-
-    Slick.prototype.initUI = function() {
-
-        var _ = this;
-
-        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
-
-            _.$prevArrow.show();
-            _.$nextArrow.show();
-
-        }
-
-        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
-
-            _.$dots.show();
-
-        }
-
-    };
-
-    Slick.prototype.keyHandler = function(event) {
-
-        var _ = this;
-         //Dont slide if the cursor is inside the form fields and arrow keys are pressed
-        if(!event.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
-            if (event.keyCode === 37 && _.options.accessibility === true) {
-                _.changeSlide({
-                    data: {
-                        message: _.options.rtl === true ? 'next' :  'previous'
-                    }
-                });
-            } else if (event.keyCode === 39 && _.options.accessibility === true) {
-                _.changeSlide({
-                    data: {
-                        message: _.options.rtl === true ? 'previous' : 'next'
-                    }
-                });
-            }
-        }
-
-    };
-
-    Slick.prototype.lazyLoad = function() {
-
-        var _ = this,
-            loadRange, cloneRange, rangeStart, rangeEnd;
-
-        function loadImages(imagesScope) {
-
-            $$$1('img[data-lazy]', imagesScope).each(function() {
-
-                var image = $$$1(this),
-                    imageSource = $$$1(this).attr('data-lazy'),
-                    imageSrcSet = $$$1(this).attr('data-srcset'),
-                    imageSizes  = $$$1(this).attr('data-sizes') || _.$slider.attr('data-sizes'),
-                    imageToLoad = document.createElement('img');
-
-                imageToLoad.onload = function() {
-
-                    image
-                        .animate({ opacity: 0 }, 100, function() {
-
-                            if (imageSrcSet) {
-                                image
-                                    .attr('srcset', imageSrcSet );
-
-                                if (imageSizes) {
-                                    image
-                                        .attr('sizes', imageSizes );
-                                }
-                            }
-
-                            image
-                                .attr('src', imageSource)
-                                .animate({ opacity: 1 }, 200, function() {
-                                    image
-                                        .removeAttr('data-lazy data-srcset data-sizes')
-                                        .removeClass('slick-loading');
-                                });
-                            _.$slider.trigger('lazyLoaded', [_, image, imageSource]);
-                        });
-
-                };
-
-                imageToLoad.onerror = function() {
-
-                    image
-                        .removeAttr( 'data-lazy' )
-                        .removeClass( 'slick-loading' )
-                        .addClass( 'slick-lazyload-error' );
-
-                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
-
-                };
-
-                imageToLoad.src = imageSource;
-
-            });
-
-        }
-
-        if (_.options.centerMode === true) {
-            if (_.options.infinite === true) {
-                rangeStart = _.currentSlide + (_.options.slidesToShow / 2 + 1);
-                rangeEnd = rangeStart + _.options.slidesToShow + 2;
-            } else {
-                rangeStart = Math.max(0, _.currentSlide - (_.options.slidesToShow / 2 + 1));
-                rangeEnd = 2 + (_.options.slidesToShow / 2 + 1) + _.currentSlide;
-            }
-        } else {
-            rangeStart = _.options.infinite ? _.options.slidesToShow + _.currentSlide : _.currentSlide;
-            rangeEnd = Math.ceil(rangeStart + _.options.slidesToShow);
-            if (_.options.fade === true) {
-                if (rangeStart > 0) { rangeStart--; }
-                if (rangeEnd <= _.slideCount) { rangeEnd++; }
-            }
-        }
-
-        loadRange = _.$slider.find('.slick-slide').slice(rangeStart, rangeEnd);
-
-        if (_.options.lazyLoad === 'anticipated') {
-            var prevSlide = rangeStart - 1,
-                nextSlide = rangeEnd,
-                $slides = _.$slider.find('.slick-slide');
-
-            for (var i = 0; i < _.options.slidesToScroll; i++) {
-                if (prevSlide < 0) { prevSlide = _.slideCount - 1; }
-                loadRange = loadRange.add($slides.eq(prevSlide));
-                loadRange = loadRange.add($slides.eq(nextSlide));
-                prevSlide--;
-                nextSlide++;
-            }
-        }
-
-        loadImages(loadRange);
-
-        if (_.slideCount <= _.options.slidesToShow) {
-            cloneRange = _.$slider.find('.slick-slide');
-            loadImages(cloneRange);
-        } else
-        if (_.currentSlide >= _.slideCount - _.options.slidesToShow) {
-            cloneRange = _.$slider.find('.slick-cloned').slice(0, _.options.slidesToShow);
-            loadImages(cloneRange);
-        } else if (_.currentSlide === 0) {
-            cloneRange = _.$slider.find('.slick-cloned').slice(_.options.slidesToShow * -1);
-            loadImages(cloneRange);
-        }
-
-    };
-
-    Slick.prototype.loadSlider = function() {
-
-        var _ = this;
-
-        _.setPosition();
-
-        _.$slideTrack.css({
-            opacity: 1
-        });
-
-        _.$slider.removeClass('slick-loading');
-
-        _.initUI();
-
-        if (_.options.lazyLoad === 'progressive') {
-            _.progressiveLazyLoad();
-        }
-
-    };
-
-    Slick.prototype.next = Slick.prototype.slickNext = function() {
-
-        var _ = this;
-
-        _.changeSlide({
-            data: {
-                message: 'next'
-            }
-        });
-
-    };
-
-    Slick.prototype.orientationChange = function() {
-
-        var _ = this;
-
-        _.checkResponsive();
-        _.setPosition();
-
-    };
-
-    Slick.prototype.pause = Slick.prototype.slickPause = function() {
-
-        var _ = this;
-
-        _.autoPlayClear();
-        _.paused = true;
-
-    };
-
-    Slick.prototype.play = Slick.prototype.slickPlay = function() {
-
-        var _ = this;
-
-        _.autoPlay();
-        _.options.autoplay = true;
-        _.paused = false;
-        _.focussed = false;
-        _.interrupted = false;
-
-    };
-
-    Slick.prototype.postSlide = function(index) {
-
-        var _ = this;
-
-        if( !_.unslicked ) {
-
-            _.$slider.trigger('afterChange', [_, index]);
-
-            _.animating = false;
-
-            if (_.slideCount > _.options.slidesToShow) {
-                _.setPosition();
-            }
-
-            _.swipeLeft = null;
-
-            if ( _.options.autoplay ) {
-                _.autoPlay();
-            }
-
-            if (_.options.accessibility === true) {
-                _.initADA();
-
-                if (_.options.focusOnChange) {
-                    var $currentSlide = $$$1(_.$slides.get(_.currentSlide));
-                    $currentSlide.attr('tabindex', 0).focus();
-                }
-            }
-
-        }
-
-    };
-
-    Slick.prototype.prev = Slick.prototype.slickPrev = function() {
-
-        var _ = this;
-
-        _.changeSlide({
-            data: {
-                message: 'previous'
-            }
-        });
-
-    };
-
-    Slick.prototype.preventDefault = function(event) {
-
-        event.preventDefault();
-
-    };
-
-    Slick.prototype.progressiveLazyLoad = function( tryCount ) {
-
-        tryCount = tryCount || 1;
-
-        var _ = this,
-            $imgsToLoad = $$$1( 'img[data-lazy]', _.$slider ),
-            image,
-            imageSource,
-            imageSrcSet,
-            imageSizes,
-            imageToLoad;
-
-        if ( $imgsToLoad.length ) {
-
-            image = $imgsToLoad.first();
-            imageSource = image.attr('data-lazy');
-            imageSrcSet = image.attr('data-srcset');
-            imageSizes  = image.attr('data-sizes') || _.$slider.attr('data-sizes');
-            imageToLoad = document.createElement('img');
-
-            imageToLoad.onload = function() {
-
-                if (imageSrcSet) {
-                    image
-                        .attr('srcset', imageSrcSet );
-
-                    if (imageSizes) {
-                        image
-                            .attr('sizes', imageSizes );
-                    }
-                }
-
-                image
-                    .attr( 'src', imageSource )
-                    .removeAttr('data-lazy data-srcset data-sizes')
-                    .removeClass('slick-loading');
-
-                if ( _.options.adaptiveHeight === true ) {
-                    _.setPosition();
-                }
-
-                _.$slider.trigger('lazyLoaded', [ _, image, imageSource ]);
-                _.progressiveLazyLoad();
-
-            };
-
-            imageToLoad.onerror = function() {
-
-                if ( tryCount < 3 ) {
-
-                    /**
-                     * try to load the image 3 times,
-                     * leave a slight delay so we don't get
-                     * servers blocking the request.
-                     */
-                    setTimeout( function() {
-                        _.progressiveLazyLoad( tryCount + 1 );
-                    }, 500 );
-
-                } else {
-
-                    image
-                        .removeAttr( 'data-lazy' )
-                        .removeClass( 'slick-loading' )
-                        .addClass( 'slick-lazyload-error' );
-
-                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
-
-                    _.progressiveLazyLoad();
-
-                }
-
-            };
-
-            imageToLoad.src = imageSource;
-
-        } else {
-
-            _.$slider.trigger('allImagesLoaded', [ _ ]);
-
-        }
-
-    };
-
-    Slick.prototype.refresh = function( initializing ) {
-
-        var _ = this, currentSlide, lastVisibleIndex;
-
-        lastVisibleIndex = _.slideCount - _.options.slidesToShow;
-
-        // in non-infinite sliders, we don't want to go past the
-        // last visible index.
-        if( !_.options.infinite && ( _.currentSlide > lastVisibleIndex )) {
-            _.currentSlide = lastVisibleIndex;
-        }
-
-        // if less slides than to show, go to start.
-        if ( _.slideCount <= _.options.slidesToShow ) {
-            _.currentSlide = 0;
-
-        }
-
-        currentSlide = _.currentSlide;
-
-        _.destroy(true);
-
-        $$$1.extend(_, _.initials, { currentSlide: currentSlide });
-
-        _.init();
-
-        if( !initializing ) {
-
-            _.changeSlide({
-                data: {
-                    message: 'index',
-                    index: currentSlide
-                }
-            }, false);
-
-        }
-
-    };
-
-    Slick.prototype.registerBreakpoints = function() {
-
-        var _ = this, breakpoint, currentBreakpoint, l,
-            responsiveSettings = _.options.responsive || null;
-
-        if ( $$$1.type(responsiveSettings) === 'array' && responsiveSettings.length ) {
-
-            _.respondTo = _.options.respondTo || 'window';
-
-            for ( breakpoint in responsiveSettings ) {
-
-                l = _.breakpoints.length-1;
-
-                if (responsiveSettings.hasOwnProperty(breakpoint)) {
-                    currentBreakpoint = responsiveSettings[breakpoint].breakpoint;
-
-                    // loop through the breakpoints and cut out any existing
-                    // ones with the same breakpoint number, we don't want dupes.
-                    while( l >= 0 ) {
-                        if( _.breakpoints[l] && _.breakpoints[l] === currentBreakpoint ) {
-                            _.breakpoints.splice(l,1);
-                        }
-                        l--;
-                    }
-
-                    _.breakpoints.push(currentBreakpoint);
-                    _.breakpointSettings[currentBreakpoint] = responsiveSettings[breakpoint].settings;
-
-                }
-
-            }
-
-            _.breakpoints.sort(function(a, b) {
-                return ( _.options.mobileFirst ) ? a-b : b-a;
-            });
-
-        }
-
-    };
-
-    Slick.prototype.reinit = function() {
-
-        var _ = this;
-
-        _.$slides =
-            _.$slideTrack
-                .children(_.options.slide)
-                .addClass('slick-slide');
-
-        _.slideCount = _.$slides.length;
-
-        if (_.currentSlide >= _.slideCount && _.currentSlide !== 0) {
-            _.currentSlide = _.currentSlide - _.options.slidesToScroll;
-        }
-
-        if (_.slideCount <= _.options.slidesToShow) {
-            _.currentSlide = 0;
-        }
-
-        _.registerBreakpoints();
-
-        _.setProps();
-        _.setupInfinite();
-        _.buildArrows();
-        _.updateArrows();
-        _.initArrowEvents();
-        _.buildDots();
-        _.updateDots();
-        _.initDotEvents();
-        _.cleanUpSlideEvents();
-        _.initSlideEvents();
-
-        _.checkResponsive(false, true);
-
-        if (_.options.focusOnSelect === true) {
-            $$$1(_.$slideTrack).children().on('click.slick', _.selectHandler);
-        }
-
-        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
-
-        _.setPosition();
-        _.focusHandler();
-
-        _.paused = !_.options.autoplay;
-        _.autoPlay();
-
-        _.$slider.trigger('reInit', [_]);
-
-    };
-
-    Slick.prototype.resize = function() {
-
-        var _ = this;
-
-        if ($$$1(window).width() !== _.windowWidth) {
-            clearTimeout(_.windowDelay);
-            _.windowDelay = window.setTimeout(function() {
-                _.windowWidth = $$$1(window).width();
-                _.checkResponsive();
-                if( !_.unslicked ) { _.setPosition(); }
-            }, 50);
-        }
-    };
-
-    Slick.prototype.removeSlide = Slick.prototype.slickRemove = function(index, removeBefore, removeAll) {
-
-        var _ = this;
-
-        if (typeof(index) === 'boolean') {
-            removeBefore = index;
-            index = removeBefore === true ? 0 : _.slideCount - 1;
-        } else {
-            index = removeBefore === true ? --index : index;
-        }
-
-        if (_.slideCount < 1 || index < 0 || index > _.slideCount - 1) {
-            return false;
-        }
-
-        _.unload();
-
-        if (removeAll === true) {
-            _.$slideTrack.children().remove();
-        } else {
-            _.$slideTrack.children(this.options.slide).eq(index).remove();
-        }
-
-        _.$slides = _.$slideTrack.children(this.options.slide);
-
-        _.$slideTrack.children(this.options.slide).detach();
-
-        _.$slideTrack.append(_.$slides);
-
-        _.$slidesCache = _.$slides;
-
-        _.reinit();
-
-    };
-
-    Slick.prototype.setCSS = function(position) {
-
-        var _ = this,
-            positionProps = {},
-            x, y;
-
-        if (_.options.rtl === true) {
-            position = -position;
-        }
-        x = _.positionProp == 'left' ? Math.ceil(position) + 'px' : '0px';
-        y = _.positionProp == 'top' ? Math.ceil(position) + 'px' : '0px';
-
-        positionProps[_.positionProp] = position;
-
-        if (_.transformsEnabled === false) {
-            _.$slideTrack.css(positionProps);
-        } else {
-            positionProps = {};
-            if (_.cssTransitions === false) {
-                positionProps[_.animType] = 'translate(' + x + ', ' + y + ')';
-                _.$slideTrack.css(positionProps);
-            } else {
-                positionProps[_.animType] = 'translate3d(' + x + ', ' + y + ', 0px)';
-                _.$slideTrack.css(positionProps);
-            }
-        }
-
-    };
-
-    Slick.prototype.setDimensions = function() {
-
-        var _ = this;
-
-        if (_.options.vertical === false) {
-            if (_.options.centerMode === true) {
-                _.$list.css({
-                    padding: ('0px ' + _.options.centerPadding)
-                });
-            }
-        } else {
-            _.$list.height(_.$slides.first().outerHeight(true) * _.options.slidesToShow);
-            if (_.options.centerMode === true) {
-                _.$list.css({
-                    padding: (_.options.centerPadding + ' 0px')
-                });
-            }
-        }
-
-        _.listWidth = _.$list.width();
-        _.listHeight = _.$list.height();
-
-
-        if (_.options.vertical === false && _.options.variableWidth === false) {
-            _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);
-            _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
-
-        } else if (_.options.variableWidth === true) {
-            _.$slideTrack.width(5000 * _.slideCount);
-        } else {
-            _.slideWidth = Math.ceil(_.listWidth);
-            _.$slideTrack.height(Math.ceil((_.$slides.first().outerHeight(true) * _.$slideTrack.children('.slick-slide').length)));
-        }
-
-        var offset = _.$slides.first().outerWidth(true) - _.$slides.first().width();
-        if (_.options.variableWidth === false) { _.$slideTrack.children('.slick-slide').width(_.slideWidth - offset); }
-
-    };
-
-    Slick.prototype.setFade = function() {
-
-        var _ = this,
-            targetLeft;
-
-        _.$slides.each(function(index, element) {
-            targetLeft = (_.slideWidth * index) * -1;
-            if (_.options.rtl === true) {
-                $$$1(element).css({
-                    position: 'relative',
-                    right: targetLeft,
-                    top: 0,
-                    zIndex: _.options.zIndex - 2,
-                    opacity: 0
-                });
-            } else {
-                $$$1(element).css({
-                    position: 'relative',
-                    left: targetLeft,
-                    top: 0,
-                    zIndex: _.options.zIndex - 2,
-                    opacity: 0
-                });
-            }
-        });
-
-        _.$slides.eq(_.currentSlide).css({
-            zIndex: _.options.zIndex - 1,
-            opacity: 1
-        });
-
-    };
-
-    Slick.prototype.setHeight = function() {
-
-        var _ = this;
-
-        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
-            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
-            _.$list.css('height', targetHeight);
-        }
-
-    };
-
-    Slick.prototype.setOption =
-    Slick.prototype.slickSetOption = function() {
-
-        /**
-         * accepts arguments in format of:
-         *
-         *  - for changing a single option's value:
-         *     .slick("setOption", option, value, refresh )
-         *
-         *  - for changing a set of responsive options:
-         *     .slick("setOption", 'responsive', [{}, ...], refresh )
-         *
-         *  - for updating multiple values at once (not responsive)
-         *     .slick("setOption", { 'option': value, ... }, refresh )
-         */
-
-        var _ = this, l, item, option, value, refresh = false, type;
-
-        if( $$$1.type( arguments[0] ) === 'object' ) {
-
-            option =  arguments[0];
-            refresh = arguments[1];
-            type = 'multiple';
-
-        } else if ( $$$1.type( arguments[0] ) === 'string' ) {
-
-            option =  arguments[0];
-            value = arguments[1];
-            refresh = arguments[2];
-
-            if ( arguments[0] === 'responsive' && $$$1.type( arguments[1] ) === 'array' ) {
-
-                type = 'responsive';
-
-            } else if ( typeof arguments[1] !== 'undefined' ) {
-
-                type = 'single';
-
-            }
-
-        }
-
-        if ( type === 'single' ) {
-
-            _.options[option] = value;
-
-
-        } else if ( type === 'multiple' ) {
-
-            $$$1.each( option , function( opt, val ) {
-
-                _.options[opt] = val;
-
-            });
-
-
-        } else if ( type === 'responsive' ) {
-
-            for ( item in value ) {
-
-                if( $$$1.type( _.options.responsive ) !== 'array' ) {
-
-                    _.options.responsive = [ value[item] ];
-
-                } else {
-
-                    l = _.options.responsive.length-1;
-
-                    // loop through the responsive object and splice out duplicates.
-                    while( l >= 0 ) {
-
-                        if( _.options.responsive[l].breakpoint === value[item].breakpoint ) {
-
-                            _.options.responsive.splice(l,1);
-
-                        }
-
-                        l--;
-
-                    }
-
-                    _.options.responsive.push( value[item] );
-
-                }
-
-            }
-
-        }
-
-        if ( refresh ) {
-
-            _.unload();
-            _.reinit();
-
-        }
-
-    };
-
-    Slick.prototype.setPosition = function() {
-
-        var _ = this;
-
-        _.setDimensions();
-
-        _.setHeight();
-
-        if (_.options.fade === false) {
-            _.setCSS(_.getLeft(_.currentSlide));
-        } else {
-            _.setFade();
-        }
-
-        _.$slider.trigger('setPosition', [_]);
-
-    };
-
-    Slick.prototype.setProps = function() {
-
-        var _ = this,
-            bodyStyle = document.body.style;
-
-        _.positionProp = _.options.vertical === true ? 'top' : 'left';
-
-        if (_.positionProp === 'top') {
-            _.$slider.addClass('slick-vertical');
-        } else {
-            _.$slider.removeClass('slick-vertical');
-        }
-
-        if (bodyStyle.WebkitTransition !== undefined ||
-            bodyStyle.MozTransition !== undefined ||
-            bodyStyle.msTransition !== undefined) {
-            if (_.options.useCSS === true) {
-                _.cssTransitions = true;
-            }
-        }
-
-        if ( _.options.fade ) {
-            if ( typeof _.options.zIndex === 'number' ) {
-                if( _.options.zIndex < 3 ) {
-                    _.options.zIndex = 3;
-                }
-            } else {
-                _.options.zIndex = _.defaults.zIndex;
-            }
-        }
-
-        if (bodyStyle.OTransform !== undefined) {
-            _.animType = 'OTransform';
-            _.transformType = '-o-transform';
-            _.transitionType = 'OTransition';
-            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) { _.animType = false; }
-        }
-        if (bodyStyle.MozTransform !== undefined) {
-            _.animType = 'MozTransform';
-            _.transformType = '-moz-transform';
-            _.transitionType = 'MozTransition';
-            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.MozPerspective === undefined) { _.animType = false; }
-        }
-        if (bodyStyle.webkitTransform !== undefined) {
-            _.animType = 'webkitTransform';
-            _.transformType = '-webkit-transform';
-            _.transitionType = 'webkitTransition';
-            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) { _.animType = false; }
-        }
-        if (bodyStyle.msTransform !== undefined) {
-            _.animType = 'msTransform';
-            _.transformType = '-ms-transform';
-            _.transitionType = 'msTransition';
-            if (bodyStyle.msTransform === undefined) { _.animType = false; }
-        }
-        if (bodyStyle.transform !== undefined && _.animType !== false) {
-            _.animType = 'transform';
-            _.transformType = 'transform';
-            _.transitionType = 'transition';
-        }
-        _.transformsEnabled = _.options.useTransform && (_.animType !== null && _.animType !== false);
-    };
-
-
-    Slick.prototype.setSlideClasses = function(index) {
-
-        var _ = this,
-            centerOffset, allSlides, indexOffset, remainder;
-
-        allSlides = _.$slider
-            .find('.slick-slide')
-            .removeClass('slick-active slick-center slick-current')
-            .attr('aria-hidden', 'true');
-
-        _.$slides
-            .eq(index)
-            .addClass('slick-current');
-
-        if (_.options.centerMode === true) {
-
-            var evenCoef = _.options.slidesToShow % 2 === 0 ? 1 : 0;
-
-            centerOffset = Math.floor(_.options.slidesToShow / 2);
-
-            if (_.options.infinite === true) {
-
-                if (index >= centerOffset && index <= (_.slideCount - 1) - centerOffset) {
-                    _.$slides
-                        .slice(index - centerOffset + evenCoef, index + centerOffset + 1)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
-
-                } else {
-
-                    indexOffset = _.options.slidesToShow + index;
-                    allSlides
-                        .slice(indexOffset - centerOffset + 1 + evenCoef, indexOffset + centerOffset + 2)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
-
-                }
-
-                if (index === 0) {
-
-                    allSlides
-                        .eq(allSlides.length - 1 - _.options.slidesToShow)
-                        .addClass('slick-center');
-
-                } else if (index === _.slideCount - 1) {
-
-                    allSlides
-                        .eq(_.options.slidesToShow)
-                        .addClass('slick-center');
-
-                }
-
-            }
-
-            _.$slides
-                .eq(index)
-                .addClass('slick-center');
-
-        } else {
-
-            if (index >= 0 && index <= (_.slideCount - _.options.slidesToShow)) {
-
-                _.$slides
-                    .slice(index, index + _.options.slidesToShow)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false');
-
-            } else if (allSlides.length <= _.options.slidesToShow) {
-
-                allSlides
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false');
-
-            } else {
-
-                remainder = _.slideCount % _.options.slidesToShow;
-                indexOffset = _.options.infinite === true ? _.options.slidesToShow + index : index;
-
-                if (_.options.slidesToShow == _.options.slidesToScroll && (_.slideCount - index) < _.options.slidesToShow) {
-
-                    allSlides
-                        .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
-
-                } else {
-
-                    allSlides
-                        .slice(indexOffset, indexOffset + _.options.slidesToShow)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
-
-                }
-
-            }
-
-        }
-
-        if (_.options.lazyLoad === 'ondemand' || _.options.lazyLoad === 'anticipated') {
-            _.lazyLoad();
-        }
-    };
-
-    Slick.prototype.setupInfinite = function() {
-
-        var _ = this,
-            i, slideIndex, infiniteCount;
-
-        if (_.options.fade === true) {
-            _.options.centerMode = false;
-        }
-
-        if (_.options.infinite === true && _.options.fade === false) {
-
-            slideIndex = null;
-
-            if (_.slideCount > _.options.slidesToShow) {
-
-                if (_.options.centerMode === true) {
-                    infiniteCount = _.options.slidesToShow + 1;
-                } else {
-                    infiniteCount = _.options.slidesToShow;
-                }
-
-                for (i = _.slideCount; i > (_.slideCount -
-                        infiniteCount); i -= 1) {
-                    slideIndex = i - 1;
-                    $$$1(_.$slides[slideIndex]).clone(true).attr('id', '')
-                        .attr('data-slick-index', slideIndex - _.slideCount)
-                        .prependTo(_.$slideTrack).addClass('slick-cloned');
-                }
-                for (i = 0; i < infiniteCount  + _.slideCount; i += 1) {
-                    slideIndex = i;
-                    $$$1(_.$slides[slideIndex]).clone(true).attr('id', '')
-                        .attr('data-slick-index', slideIndex + _.slideCount)
-                        .appendTo(_.$slideTrack).addClass('slick-cloned');
-                }
-                _.$slideTrack.find('.slick-cloned').find('[id]').each(function() {
-                    $$$1(this).attr('id', '');
-                });
-
-            }
-
-        }
-
-    };
-
-    Slick.prototype.interrupt = function( toggle ) {
-
-        var _ = this;
-
-        if( !toggle ) {
-            _.autoPlay();
-        }
-        _.interrupted = toggle;
-
-    };
-
-    Slick.prototype.selectHandler = function(event) {
-
-        var _ = this;
-
-        var targetElement =
-            $$$1(event.target).is('.slick-slide') ?
-                $$$1(event.target) :
-                $$$1(event.target).parents('.slick-slide');
-
-        var index = parseInt(targetElement.attr('data-slick-index'));
-
-        if (!index) { index = 0; }
-
-        if (_.slideCount <= _.options.slidesToShow) {
-
-            _.slideHandler(index, false, true);
-            return;
-
-        }
-
-        _.slideHandler(index);
-
-    };
-
-    Slick.prototype.slideHandler = function(index, sync, dontAnimate) {
-
-        var targetSlide, animSlide, oldSlide, slideLeft, targetLeft = null,
-            _ = this, navTarget;
-
-        sync = sync || false;
-
-        if (_.animating === true && _.options.waitForAnimate === true) {
-            return;
-        }
-
-        if (_.options.fade === true && _.currentSlide === index) {
-            return;
-        }
-
-        if (sync === false) {
-            _.asNavFor(index);
-        }
-
-        targetSlide = index;
-        targetLeft = _.getLeft(targetSlide);
-        slideLeft = _.getLeft(_.currentSlide);
-
-        _.currentLeft = _.swipeLeft === null ? slideLeft : _.swipeLeft;
-
-        if (_.options.infinite === false && _.options.centerMode === false && (index < 0 || index > _.getDotCount() * _.options.slidesToScroll)) {
-            if (_.options.fade === false) {
-                targetSlide = _.currentSlide;
-                if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
-                    _.animateSlide(slideLeft, function() {
-                        _.postSlide(targetSlide);
-                    });
-                } else {
-                    _.postSlide(targetSlide);
-                }
-            }
-            return;
-        } else if (_.options.infinite === false && _.options.centerMode === true && (index < 0 || index > (_.slideCount - _.options.slidesToScroll))) {
-            if (_.options.fade === false) {
-                targetSlide = _.currentSlide;
-                if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
-                    _.animateSlide(slideLeft, function() {
-                        _.postSlide(targetSlide);
-                    });
-                } else {
-                    _.postSlide(targetSlide);
-                }
-            }
-            return;
-        }
-
-        if ( _.options.autoplay ) {
-            clearInterval(_.autoPlayTimer);
-        }
-
-        if (targetSlide < 0) {
-            if (_.slideCount % _.options.slidesToScroll !== 0) {
-                animSlide = _.slideCount - (_.slideCount % _.options.slidesToScroll);
-            } else {
-                animSlide = _.slideCount + targetSlide;
-            }
-        } else if (targetSlide >= _.slideCount) {
-            if (_.slideCount % _.options.slidesToScroll !== 0) {
-                animSlide = 0;
-            } else {
-                animSlide = targetSlide - _.slideCount;
-            }
-        } else {
-            animSlide = targetSlide;
-        }
-
-        _.animating = true;
-
-        _.$slider.trigger('beforeChange', [_, _.currentSlide, animSlide]);
-
-        oldSlide = _.currentSlide;
-        _.currentSlide = animSlide;
-
-        _.setSlideClasses(_.currentSlide);
-
-        if ( _.options.asNavFor ) {
-
-            navTarget = _.getNavTarget();
-            navTarget = navTarget.slick('getSlick');
-
-            if ( navTarget.slideCount <= navTarget.options.slidesToShow ) {
-                navTarget.setSlideClasses(_.currentSlide);
-            }
-
-        }
-
-        _.updateDots();
-        _.updateArrows();
-
-        if (_.options.fade === true) {
-            if (dontAnimate !== true) {
-
-                _.fadeSlideOut(oldSlide);
-
-                _.fadeSlide(animSlide, function() {
-                    _.postSlide(animSlide);
-                });
-
-            } else {
-                _.postSlide(animSlide);
-            }
-            _.animateHeight();
-            return;
-        }
-
-        if (dontAnimate !== true && _.slideCount > _.options.slidesToShow) {
-            _.animateSlide(targetLeft, function() {
-                _.postSlide(animSlide);
-            });
-        } else {
-            _.postSlide(animSlide);
-        }
-
-    };
-
-    Slick.prototype.startLoad = function() {
-
-        var _ = this;
-
-        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
-
-            _.$prevArrow.hide();
-            _.$nextArrow.hide();
-
-        }
-
-        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
-
-            _.$dots.hide();
-
-        }
-
-        _.$slider.addClass('slick-loading');
-
-    };
-
-    Slick.prototype.swipeDirection = function() {
-
-        var xDist, yDist, r, swipeAngle, _ = this;
-
-        xDist = _.touchObject.startX - _.touchObject.curX;
-        yDist = _.touchObject.startY - _.touchObject.curY;
-        r = Math.atan2(yDist, xDist);
-
-        swipeAngle = Math.round(r * 180 / Math.PI);
-        if (swipeAngle < 0) {
-            swipeAngle = 360 - Math.abs(swipeAngle);
-        }
-
-        if ((swipeAngle <= 45) && (swipeAngle >= 0)) {
-            return (_.options.rtl === false ? 'left' : 'right');
-        }
-        if ((swipeAngle <= 360) && (swipeAngle >= 315)) {
-            return (_.options.rtl === false ? 'left' : 'right');
-        }
-        if ((swipeAngle >= 135) && (swipeAngle <= 225)) {
-            return (_.options.rtl === false ? 'right' : 'left');
-        }
-        if (_.options.verticalSwiping === true) {
-            if ((swipeAngle >= 35) && (swipeAngle <= 135)) {
-                return 'down';
-            } else {
-                return 'up';
-            }
-        }
-
-        return 'vertical';
-
-    };
-
-    Slick.prototype.swipeEnd = function(event) {
-
-        var _ = this,
-            slideCount,
-            direction;
-
-        _.dragging = false;
-        _.swiping = false;
-
-        if (_.scrolling) {
-            _.scrolling = false;
-            return false;
-        }
-
-        _.interrupted = false;
-        _.shouldClick = ( _.touchObject.swipeLength > 10 ) ? false : true;
-
-        if ( _.touchObject.curX === undefined ) {
-            return false;
-        }
-
-        if ( _.touchObject.edgeHit === true ) {
-            _.$slider.trigger('edge', [_, _.swipeDirection() ]);
-        }
-
-        if ( _.touchObject.swipeLength >= _.touchObject.minSwipe ) {
-
-            direction = _.swipeDirection();
-
-            switch ( direction ) {
-
-                case 'left':
-                case 'down':
-
-                    slideCount =
-                        _.options.swipeToSlide ?
-                            _.checkNavigable( _.currentSlide + _.getSlideCount() ) :
-                            _.currentSlide + _.getSlideCount();
-
-                    _.currentDirection = 0;
-
-                    break;
-
-                case 'right':
-                case 'up':
-
-                    slideCount =
-                        _.options.swipeToSlide ?
-                            _.checkNavigable( _.currentSlide - _.getSlideCount() ) :
-                            _.currentSlide - _.getSlideCount();
-
-                    _.currentDirection = 1;
-
-                    break;
-
-                default:
-
-
-            }
-
-            if( direction != 'vertical' ) {
-
-                _.slideHandler( slideCount );
-                _.touchObject = {};
-                _.$slider.trigger('swipe', [_, direction ]);
-
-            }
-
-        } else {
-
-            if ( _.touchObject.startX !== _.touchObject.curX ) {
-
-                _.slideHandler( _.currentSlide );
-                _.touchObject = {};
-
-            }
-
-        }
-
-    };
-
-    Slick.prototype.swipeHandler = function(event) {
-
-        var _ = this;
-
-        if ((_.options.swipe === false) || ('ontouchend' in document && _.options.swipe === false)) {
-            return;
-        } else if (_.options.draggable === false && event.type.indexOf('mouse') !== -1) {
-            return;
-        }
-
-        _.touchObject.fingerCount = event.originalEvent && event.originalEvent.touches !== undefined ?
-            event.originalEvent.touches.length : 1;
-
-        _.touchObject.minSwipe = _.listWidth / _.options
-            .touchThreshold;
-
-        if (_.options.verticalSwiping === true) {
-            _.touchObject.minSwipe = _.listHeight / _.options
-                .touchThreshold;
-        }
-
-        switch (event.data.action) {
-
-            case 'start':
-                _.swipeStart(event);
-                break;
-
-            case 'move':
-                _.swipeMove(event);
-                break;
-
-            case 'end':
-                _.swipeEnd(event);
-                break;
-
-        }
-
-    };
-
-    Slick.prototype.swipeMove = function(event) {
-
-        var _ = this,
-            curLeft, swipeDirection, swipeLength, positionOffset, touches, verticalSwipeLength;
-
-        touches = event.originalEvent !== undefined ? event.originalEvent.touches : null;
-
-        if (!_.dragging || _.scrolling || touches && touches.length !== 1) {
-            return false;
-        }
-
-        curLeft = _.getLeft(_.currentSlide);
-
-        _.touchObject.curX = touches !== undefined ? touches[0].pageX : event.clientX;
-        _.touchObject.curY = touches !== undefined ? touches[0].pageY : event.clientY;
-
-        _.touchObject.swipeLength = Math.round(Math.sqrt(
-            Math.pow(_.touchObject.curX - _.touchObject.startX, 2)));
-
-        verticalSwipeLength = Math.round(Math.sqrt(
-            Math.pow(_.touchObject.curY - _.touchObject.startY, 2)));
-
-        if (!_.options.verticalSwiping && !_.swiping && verticalSwipeLength > 4) {
-            _.scrolling = true;
-            return false;
-        }
-
-        if (_.options.verticalSwiping === true) {
-            _.touchObject.swipeLength = verticalSwipeLength;
-        }
-
-        swipeDirection = _.swipeDirection();
-
-        if (event.originalEvent !== undefined && _.touchObject.swipeLength > 4) {
-            _.swiping = true;
-            event.preventDefault();
-        }
-
-        positionOffset = (_.options.rtl === false ? 1 : -1) * (_.touchObject.curX > _.touchObject.startX ? 1 : -1);
-        if (_.options.verticalSwiping === true) {
-            positionOffset = _.touchObject.curY > _.touchObject.startY ? 1 : -1;
-        }
-
-
-        swipeLength = _.touchObject.swipeLength;
-
-        _.touchObject.edgeHit = false;
-
-        if (_.options.infinite === false) {
-            if ((_.currentSlide === 0 && swipeDirection === 'right') || (_.currentSlide >= _.getDotCount() && swipeDirection === 'left')) {
-                swipeLength = _.touchObject.swipeLength * _.options.edgeFriction;
-                _.touchObject.edgeHit = true;
-            }
-        }
-
-        if (_.options.vertical === false) {
-            _.swipeLeft = curLeft + swipeLength * positionOffset;
-        } else {
-            _.swipeLeft = curLeft + (swipeLength * (_.$list.height() / _.listWidth)) * positionOffset;
-        }
-        if (_.options.verticalSwiping === true) {
-            _.swipeLeft = curLeft + swipeLength * positionOffset;
-        }
-
-        if (_.options.fade === true || _.options.touchMove === false) {
-            return false;
-        }
-
-        if (_.animating === true) {
-            _.swipeLeft = null;
-            return false;
-        }
-
-        _.setCSS(_.swipeLeft);
-
-    };
-
-    Slick.prototype.swipeStart = function(event) {
-
-        var _ = this,
-            touches;
-
-        _.interrupted = true;
-
-        if (_.touchObject.fingerCount !== 1 || _.slideCount <= _.options.slidesToShow) {
-            _.touchObject = {};
-            return false;
-        }
-
-        if (event.originalEvent !== undefined && event.originalEvent.touches !== undefined) {
-            touches = event.originalEvent.touches[0];
-        }
-
-        _.touchObject.startX = _.touchObject.curX = touches !== undefined ? touches.pageX : event.clientX;
-        _.touchObject.startY = _.touchObject.curY = touches !== undefined ? touches.pageY : event.clientY;
-
-        _.dragging = true;
-
-    };
-
-    Slick.prototype.unfilterSlides = Slick.prototype.slickUnfilter = function() {
-
-        var _ = this;
-
-        if (_.$slidesCache !== null) {
-
-            _.unload();
-
-            _.$slideTrack.children(this.options.slide).detach();
-
-            _.$slidesCache.appendTo(_.$slideTrack);
-
-            _.reinit();
-
-        }
-
-    };
-
-    Slick.prototype.unload = function() {
-
-        var _ = this;
-
-        $$$1('.slick-cloned', _.$slider).remove();
-
-        if (_.$dots) {
-            _.$dots.remove();
-        }
-
-        if (_.$prevArrow && _.htmlExpr.test(_.options.prevArrow)) {
-            _.$prevArrow.remove();
-        }
-
-        if (_.$nextArrow && _.htmlExpr.test(_.options.nextArrow)) {
-            _.$nextArrow.remove();
-        }
-
-        _.$slides
-            .removeClass('slick-slide slick-active slick-visible slick-current')
-            .attr('aria-hidden', 'true')
-            .css('width', '');
-
-    };
-
-    Slick.prototype.unslick = function(fromBreakpoint) {
-
-        var _ = this;
-        _.$slider.trigger('unslick', [_, fromBreakpoint]);
-        _.destroy();
-
-    };
-
-    Slick.prototype.updateArrows = function() {
-
-        var _ = this,
-            centerOffset;
-
-        centerOffset = Math.floor(_.options.slidesToShow / 2);
-
-        if ( _.options.arrows === true &&
-            _.slideCount > _.options.slidesToShow &&
-            !_.options.infinite ) {
-
-            _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
-            _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
-
-            if (_.currentSlide === 0) {
-
-                _.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
-                _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
-
-            } else if (_.currentSlide >= _.slideCount - _.options.slidesToShow && _.options.centerMode === false) {
-
-                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
-                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
-
-            } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
-
-                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
-                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
-
-            }
-
-        }
-
-    };
-
-    Slick.prototype.updateDots = function() {
-
-        var _ = this;
-
-        if (_.$dots !== null) {
-
-            _.$dots
-                .find('li')
-                    .removeClass('slick-active')
-                    .end();
-
-            _.$dots
-                .find('li')
-                .eq(Math.floor(_.currentSlide / _.options.slidesToScroll))
-                .addClass('slick-active');
-
-        }
-
-    };
-
-    Slick.prototype.visibility = function() {
-
-        var _ = this;
-
-        if ( _.options.autoplay ) {
-
-            if ( document[_.hidden] ) {
-
-                _.interrupted = true;
-
-            } else {
-
-                _.interrupted = false;
-
-            }
-
-        }
-
-    };
-
-    $$$1.fn.slick = function() {
-        var _ = this,
-            opt = arguments[0],
-            args = Array.prototype.slice.call(arguments, 1),
-            l = _.length,
-            i,
-            ret;
-        for (i = 0; i < l; i++) {
-            if (typeof opt == 'object' || typeof opt == 'undefined')
-                { _[i].slick = new Slick(_[i], opt); }
-            else
-                { ret = _[i].slick[opt].apply(_[i].slick, args); }
-            if (typeof ret != 'undefined') { return ret; }
-        }
-        return _;
-    };
-
-}));
-});
-
-var slick$1 = /*#__PURE__*/Object.freeze({
-  default: slick,
-  __moduleExports: slick
-});
-
-/* harmony default export */ __webpack_exports__["a"] = (slickCarousel);
-
-
-/***/ }),
-
-/***/ 1205:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1206);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(43)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./slick.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./slick.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1206:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    -ms-touch-action: pan-y;\n        touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n       -moz-transform: translate3d(0, 0, 0);\n        -ms-transform: translate3d(0, 0, 0);\n         -o-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1207:
+/***/ 1540:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-6 card-alignment" }, [
-        _c(
-          "div",
-          [
-            _c(
-              "b-card",
-              { staticClass: "p-0" },
-              [
-                _c(
-                  "div",
-                  { staticClass: "card-title bg-primary text-center mb-0 p-0" },
-                  [
-                    _c("h4", { staticClass: "py-4 text-white" }, [
-                      _vm._v("Top\n                        Authors")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "slick",
-                  {
-                    ref: "slick",
-                    staticClass: "slider",
-                    attrs: { options: _vm.slickOptions }
-                  },
-                  [
-                    _c(
-                      "a",
-                      { attrs: { href: "#" } },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "text-center" },
-                          [
-                            _c("b-img", {
-                              staticClass: "img-fluid",
-                              attrs: {
-                                src: __webpack_require__(545),
-                                rounded: "circle",
-                                alt: "Circle image"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("b-card-text", [
-                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
-                            _vm._v("Natasha Knight")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "list-group" }, [
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
-                              _vm._v("+123456789")
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
-                              _vm._v(
-                                "contact@contact.com\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
-                              _vm._v(
-                                "US,Washington\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-twitter bg-info text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-instagram bg-warning text-white p-1"
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item p-0" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("71")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Articles")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("1400")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Followers")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("450")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Likes")])
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { attrs: { href: "#" } },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "text-center" },
-                          [
-                            _c("b-img", {
-                              staticClass: "img-fluid",
-                              attrs: {
-                                src: __webpack_require__(542),
-                                rounded: "circle",
-                                alt: "Circle image"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("b-card-text", [
-                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
-                            _vm._v("John Mark")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "list-group" }, [
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
-                              _vm._v("+123456789")
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
-                              _vm._v(
-                                "contact@contact.com\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
-                              _vm._v(
-                                "US,Washington\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-twitter bg-info text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-instagram bg-warning text-white p-1"
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item p-0" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("71")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Articles")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("1400")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Followers")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("450")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Likes")])
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { attrs: { href: "#" } },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "text-center" },
-                          [
-                            _c("b-img", {
-                              staticClass: "img-fluid",
-                              attrs: {
-                                src: __webpack_require__(639),
-                                rounded: "circle",
-                                alt: "Circle image"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("b-card-text", [
-                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
-                            _vm._v("Shubham Raj")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "list-group " }, [
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
-                              _vm._v("+123456789")
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
-                              _vm._v(
-                                "contact@contact.com\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
-                              _vm._v(
-                                "US,Washington\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-twitter bg-info text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-instagram bg-warning text-white p-1"
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item p-0" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("71")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Articles")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("1400")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Followers")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("450")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Likes")])
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      { attrs: { href: "#" } },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "text-center" },
-                          [
-                            _c("b-img", {
-                              staticClass: "img-fluid",
-                              attrs: {
-                                src: __webpack_require__(544),
-                                rounded: "circle",
-                                alt: "Circle image"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("b-card-text", [
-                          _c("h4", { staticClass: "text-center mt-4 mb-5" }, [
-                            _vm._v("Sophia Snyder")
-                          ]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "list-group " }, [
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-phone  mr-3" }),
-                              _vm._v("+123456789")
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-envelope mr-3" }),
-                              _vm._v(
-                                "contact@contact.com\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", { staticClass: "fa fa-map-marker mr-3" }),
-                              _vm._v(
-                                "US,Washington\n                                    "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item" }, [
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-facebook bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-twitter bg-info text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-google-plus bg-primary text-white p-1 mr-2"
-                              }),
-                              _vm._v(" "),
-                              _c("i", {
-                                staticClass:
-                                  "fa fa-instagram bg-warning text-white p-1"
-                              })
-                            ]),
-                            _vm._v(" "),
-                            _c("li", { staticClass: "list-group-item p-0" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("71")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Articles")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4 section" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("1400")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Followers")])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-4" }, [
-                                  _c("div", { staticClass: " text-center" }, [
-                                    _c("h5", { staticClass: "mt-2" }, [
-                                      _vm._v("450")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("p", [_vm._v("Likes")])
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ],
-                      1
-                    )
-                  ]
-                )
-              ],
-              1
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
+  return _c(
+    "section",
+    { staticClass: "content" },
+    [
       _c(
-        "div",
-        { staticClass: "col-md-6" },
+        "card",
+        {
+          attrs: { title: "<i class='fa fa-fw fa-font'></i> Simple Line Icons" }
+        },
         [
-          _c("b-card", { staticClass: "p-0" }, [
-            _c(
-              "div",
-              { staticClass: "card-title bg-success  mb-0 p-0" },
-              [
-                _c(
-                  "b-row",
-                  { staticClass: " mx-2 py-3 text-white" },
-                  [
-                    _c("b-col", [
-                      _c("h5", { staticClass: "text-white font-weight-bold" }, [
-                        _vm._v("Active Users")
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [_vm._v("Updated 10 min ago ")])
-                    ]),
-                    _vm._v(" "),
-                    _c("b-col", { staticClass: "text-right" }, [
-                      _c("p", { staticClass: "font-weight-bold mr-3" }, [
-                        _vm._v("50")
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6 col-md-offset-3 m-auto" }, [
+              _c("form", { attrs: { role: "form" } }, [
+                _c("div", { staticClass: "input-group" }, [
+                  _c(
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-search" } },
+                    [_vm._v("Search")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "icon-search",
+                      id: "icon-search",
+                      placeholder: "Search Icon"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group" }, [
+                  _c(
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-size" } },
+                    [_vm._v("Size")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "range",
+                      name: "icon-size",
+                      id: "icon-size",
+                      min: "24",
+                      max: "40",
+                      value: "24"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "input-group-addon icon-sizeshow" },
+                    [_vm._v("24px")]
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("h4", { staticClass: "text-center" }, [
+            _vm._v("Click on any icon to copy its code to clipboard.")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "text-center" }, [
+                _c("h3", { staticClass: "text-left" }, [
+                  _vm._v(
+                    "\n                        Simple Line Icons\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("user")])
                       ])
-                    ])
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("table", { staticClass: "table user-country text-center" }, [
-              _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "th",
-                    { attrs: { scope: "row" } },
-                    [
-                      _c("b-img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src: __webpack_require__(1208),
-                          alt: "Circle image"
-                        }
-                      })
-                    ],
-                    1
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
-                      _vm._v("United States")
-                    ])
-                  ]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-people icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("people")])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [_vm._v("150")]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-female icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-female")
+                        ])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("span", { staticClass: "mr-3 text-success" }, [
-                      _c("i", {
-                        staticClass: "fa fa-arrow-up",
-                        attrs: { "aria-hidden": "true" }
-                      })
-                    ]),
-                    _vm._v("20%")
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-follow icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-follow")
+                        ])
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("tr", [
+                _c("div", { staticClass: "row" }, [
                   _c(
-                    "th",
-                    { attrs: { scope: "row" } },
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
                     [
-                      _c("b-img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src: __webpack_require__(1209),
-                          alt: "Circle image"
-                        }
-                      })
-                    ],
-                    1
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-following icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-following")
+                        ])
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
-                      _vm._v("Hungary")
-                    ])
-                  ]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-user-unfollow icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("user-unfollow")
+                        ])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [_vm._v("150")]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-login icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("login")])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("span", { staticClass: "mr-3 text-danger" }, [
-                      _c("i", {
-                        staticClass: "fa fa-arrow-down",
-                        attrs: { "aria-hidden": "true" }
-                      })
-                    ]),
-                    _vm._v("20%")
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-logout icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("logout")])
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("tr", [
+                _c("div", { staticClass: "row" }, [
                   _c(
-                    "th",
-                    { attrs: { scope: "row" } },
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
                     [
-                      _c("b-img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src: __webpack_require__(1210),
-                          alt: "Circle image"
-                        }
-                      })
-                    ],
-                    1
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-emotsmile icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("emotsmile")
+                        ])
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
-                      _vm._v("France")
-                    ])
-                  ]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-phone icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("phone")])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [_vm._v("150")]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-end icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("call-end")
+                        ])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("span", { staticClass: "mr-3 text-success" }, [
-                      _c("i", {
-                        staticClass: "fa fa-arrow-up",
-                        attrs: { "aria-hidden": "true" }
-                      })
-                    ]),
-                    _vm._v("20%")
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-in icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("call-in")])
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("tr", [
+                _c("div", { staticClass: "row" }, [
                   _c(
-                    "th",
-                    { attrs: { scope: "row" } },
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
                     [
-                      _c("b-img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src: __webpack_require__(1211),
-                          alt: "Circle image"
-                        }
-                      })
-                    ],
-                    1
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-call-out icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("call-out")
+                        ])
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
-                      _vm._v("Japan")
-                    ])
-                  ]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-map icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("map")])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [_vm._v("150")]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-location-pin icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("location-pin")
+                        ])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("span", { staticClass: "mr-3 text-success" }, [
-                      _c("i", {
-                        staticClass: "fa fa-arrow-up",
-                        attrs: { "aria-hidden": "true" }
-                      })
-                    ]),
-                    _vm._v("20%")
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-direction icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("direction")
+                        ])
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("tr", [
+                _c("div", { staticClass: "row" }, [
                   _c(
-                    "th",
-                    { attrs: { scope: "row" } },
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
                     [
-                      _c("b-img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src: __webpack_require__(1212),
-                          alt: "Circle image"
-                        }
-                      })
-                    ],
-                    1
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-directions icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("directions")
+                        ])
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
-                      _vm._v("China")
-                    ])
-                  ]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-compass icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("compass")])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [_vm._v("150")]),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-layers icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("layers")])
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("span", { staticClass: "mr-3 text-danger" }, [
-                      _c("i", {
-                        staticClass: "fa fa-arrow-down",
-                        attrs: { "aria-hidden": "true" }
-                      })
-                    ]),
-                    _vm._v("20%")
-                  ])
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-menu icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("menu")])
+                      ])
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("tr", [
+                _c("div", { staticClass: "row" }, [
                   _c(
-                    "th",
-                    { attrs: { scope: "row" } },
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
                     [
-                      _c("b-img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src: __webpack_require__(1213),
-                          alt: "Circle image"
-                        }
-                      })
-                    ],
-                    1
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-list icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("list")])
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
-                  _c("td", [
-                    _c("p", { staticClass: "font-weight-bold mb-0" }, [
-                      _vm._v("Russia")
-                    ])
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-options-vertical icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("options-vertical")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-options icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("options")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-down icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-down")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-left icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-left")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-right icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-right")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-up icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-up")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-arrow-up-circle icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-up-circle")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-left-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-left-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-right-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-right-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-arrow-down-circle icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("arrow-down-circle")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-check icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("check")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-clock icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("clock")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-plus icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("plus")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-minus icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("minus")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-close icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("close")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-event icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("event")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-exclamation icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("exclamation")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-organization icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("organization")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-trophy icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("trophy")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-screen-smartphone icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-smartphone")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-screen-desktop icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-desktop")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-plane icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("plane")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-notebook icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("notebook")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-mustache icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("mustache")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-mouse icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("mouse")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnet icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("magnet")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-energy icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("energy")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-disc icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("disc")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cursor icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("cursor")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cursor-move icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cursor-move")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-crop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("crop")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-chemistry icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("chemistry")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-speedometer icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("speedometer")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-shield icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("shield")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-screen-tablet icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("screen-tablet")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magic-wand icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magic-wand")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-hourglass icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("hourglass")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-graduation icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("graduation")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-ghost icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("ghost")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-game-controller icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("game-controller")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-fire icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("fire")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-eyeglass icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("eyeglass")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope-open")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope-letter icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope-letter")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bell icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bell")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-badge icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("badge")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-anchor icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("anchor")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-wallet icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("wallet")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-vector icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("vector")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-speech icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("speech")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-puzzle icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("puzzle")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-printer icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("printer")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-present icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("present")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-playlist icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("playlist")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pin icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("pin")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-picture icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("picture")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-handbag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("handbag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-globe-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("globe-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-globe icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("globe")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-folder-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("folder-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-folder icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("folder")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-film icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("film")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-feed icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("feed")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-drop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("drop")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-drawer icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("drawer")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-docs icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("docs")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-doc icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("doc")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-diamond icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("diamond")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cup icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("cup")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-calculator icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("calculator")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bubbles icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bubbles")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-briefcase icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("briefcase")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-book-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("book-open")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-basket-loaded icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("basket-loaded")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-basket icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("basket")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-action-undo icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("action-undo")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-action-redo icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("action-redo")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-wrench icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("wrench")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-umbrella icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("umbrella")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-trash icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("trash")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-tag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("tag")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-support icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("support")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-frame icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("frame")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-size-fullscreen icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("size-fullscreen")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-size-actual icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("size-actual")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-shuffle icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("shuffle")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-share-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("share-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-share icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("share")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-rocket icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("rocket")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-question icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("question")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pie-chart icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("pie-chart")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-pencil icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("pencil")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-note icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("note")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-loop icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("loop")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-home icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("home")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-grid icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("grid")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-graph icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("graph")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-microphone icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("microphone")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-music-tone-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("music-tone-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-music-tone icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("music-tone")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-earphones-alt icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("earphones-alt")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-earphones icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("earphones")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-equalizer icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("equalizer")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-like icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("like")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-dislike icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("dislike")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-start icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-start")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-rewind icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-rewind")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-play icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-play")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-pause icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-pause")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-forward icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-forward")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-control-end icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("control-end")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-1 icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-1")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-2 icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-2")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-volume-off icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("volume-off")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-calendar icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("calendar")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bulb icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bulb")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-chart icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("chart")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-ban icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("ban")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-bubble icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("bubble")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-camrecorder icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("camrecorder")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-camera icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("camera")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cloud-download icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cloud-download")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-cloud-upload icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("cloud-upload")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-envelope icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("envelope")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-eye icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("eye")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-flag icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("flag")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-heart icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("heart")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-info icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("info")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-key icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("key")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-link icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("link")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-lock icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("lock")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-lock-open icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("lock-open")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier-add icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier-add")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-magnifier-remove icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("magnifier-remove")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paper-clip icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("paper-clip")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paper-plane icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("paper-plane")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-power icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("power")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-refresh icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("refresh")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-reload icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("reload")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-settings icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("settings")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-star icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("star")])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-symbol-female icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("symbol-female")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-symbol-male icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("symbol-male")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-target icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("target")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-credit-card icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("credit-card")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-paypal icons" }),
+                        _c("span", { staticClass: "name" }, [_vm._v("paypal")])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-tumblr icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-tumblr")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-twitter icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-twitter")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-facebook icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-facebook")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-instagram icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-instagram")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-linkedin icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-linkedin")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-pinterest icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-pinterest")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-github icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-github")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-google icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-google")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-reddit icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-reddit")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-skype icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-skype")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-dribbble icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-dribbble")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-behance icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-behance")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-foursqare icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-foursqare")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-social-soundcloud icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-soundcloud")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-spotify icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-spotify")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", {
+                          staticClass: "icon-social-stumbleupon icons"
+                        }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-stumbleupon")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-youtube icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-youtube")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-dropbox icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-dropbox")
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-vkontakte icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-vkontakte")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("i", { staticClass: "icon-social-steam icons" }),
+                        _c("span", { staticClass: "name" }, [
+                          _vm._v("social-steam")
+                        ])
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "right" } }, [
+            _c("div", { attrs: { id: "right-slim" } }, [
+              _c("div", { staticClass: "rightsidebar-right" }, [
+                _c("div", { staticClass: "rightsidebar-right-content" }, [
+                  _c("div", { staticClass: "panel-tabs" }, [
+                    _c(
+                      "ul",
+                      {
+                        staticClass: "nav nav-tabs nav-float",
+                        attrs: { role: "tablist" }
+                      },
+                      [
+                        _c("li", { staticClass: "nav-item text-center" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link active ",
+                              attrs: {
+                                href: "#r_tab1",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-comments" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "text-center nav-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "#r_tab2",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-bell" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "text-center nav-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "#r_tab3",
+                                role: "tab",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-fw ti-settings" })]
+                          )
+                        ])
+                      ]
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("150")]),
-                  _vm._v(" "),
-                  _c("td", [
-                    _c("span", { staticClass: "mr-3 text-danger" }, [
-                      _c("i", {
-                        staticClass: "fa fa-arrow-down",
-                        attrs: { "aria-hidden": "true" }
-                      })
-                    ]),
-                    _vm._v("20%")
+                  _c("div", { staticClass: "tab-content" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tab-pane active",
+                        attrs: { id: "r_tab1" }
+                      },
+                      [
+                        _c("div", { attrs: { id: "slim_t1" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", {
+                                staticClass: "menu-icon  fa fa-fw ti-user"
+                              }),
+                              _vm._v(
+                                "\n                                        Contacts\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            { staticClass: "list-unstyled margin-none" },
+                            [
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Annette\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Jordan\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-primary"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Stewart\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-warning"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Alfred\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-danger"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Eileen\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-muted"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Robert\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-contact-wrapper" },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "rightsidebar-contact",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass:
+                                          "fa fa-circle text-xs text-muted"
+                                      }),
+                                      _vm._v(
+                                        "\n                                                Cassandra\n                                            "
+                                      )
+                                    ]
+                                  )
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-export" }),
+                              _vm._v(
+                                "\n                                        Recent Updates\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("div", [
+                            _c("ul", { staticClass: "list-unstyled" }, [
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-comments-smiley fa-fw text-primary"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Comment\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-twitter-alt fa-fw text-success"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    3 New Followers\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass: "fa ti-email fa-fw text-info"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Message Sent\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-write fa-fw text-warning"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Task\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-export fa-fw text-danger"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Server Rebooted\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-info-alt fa-fw text-primary"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Server Not Responding\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass:
+                                        "fa ti-shopping-cart fa-fw text-success"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    New Order Placed\n                                                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "rightsidebar-notification" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _c("i", {
+                                      staticClass: "fa ti-money fa-fw text-info"
+                                    }),
+                                    _vm._v(
+                                      "\n                                                    Payment Received\n                                                "
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane fade", attrs: { id: "r_tab2" } },
+                      [
+                        _c("div", { attrs: { id: "slim_t2" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-bell" }),
+                              _vm._v(
+                                "\n                                        Notifications\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled m-t-15 notifications"
+                            },
+                            [
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("John Doe")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    5 members joined today\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("Just now")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Tony")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    likes a photo of you\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("5 min")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("John")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    Dont forgot to call...\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("11 min")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Jenny Kerry")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    Done with it...\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("1 Hour")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "message icon-not striped-col",
+                                    attrs: { href: "" }
+                                  },
+                                  [
+                                    _c("div", { staticClass: "message-body" }, [
+                                      _c("strong", [_vm._v("Ernest Kerry")]),
+                                      _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(
+                                        "\n                                                    2 members joined today\n                                                    "
+                                      ),
+                                      _c("br"),
+                                      _vm._v(" "),
+                                      _c(
+                                        "small",
+                                        { staticClass: "noti-date" },
+                                        [_vm._v("3 Days")]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "text-right noti-footer" },
+                                [
+                                  _c("a", { attrs: { href: "#" } }, [
+                                    _vm._v("View All Notifications "),
+                                    _c("i", { staticClass: "ti-arrow-right" })
+                                  ])
+                                ]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-check-box" }),
+                              _vm._v(
+                                "\n                                        Tasks\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "list-unstyled m-t-15" }, [
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Button Design")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("40%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-success progress-bar-striped",
+                                        staticStyle: { width: "40%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "40",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("40% Complete (success)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Theme Creation")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("20%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-info progress-bar-striped",
+                                        staticStyle: { width: "20%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "20",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("20% Complete")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("XYZ Task To Do")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("60%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs  active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-warning progress-bar-striped",
+                                        staticStyle: { width: "60%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "60",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("60% Complete (warning)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("div", [
+                                _c("p", [
+                                  _c("span", [_vm._v("Transitions Creation")]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "small",
+                                    { staticClass: "float-right text-muted" },
+                                    [_vm._v("80%")]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "progress progress-xs active"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "progress-bar bg-danger progress-bar-striped",
+                                        staticStyle: { width: "80%" },
+                                        attrs: {
+                                          role: "progressbar",
+                                          "aria-valuenow": "80",
+                                          "aria-valuemin": "0",
+                                          "aria-valuemax": "100"
+                                        }
+                                      },
+                                      [
+                                        _c("span", { staticClass: "sr-only" }, [
+                                          _vm._v("80% Complete (danger)")
+                                        ])
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "text-right" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("View All Tasks "),
+                                _c("i", { staticClass: "ti-arrow-right" })
+                              ])
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane fade", attrs: { id: "r_tab3" } },
+                      [
+                        _c("div", { attrs: { id: "slim_t3" } }, [
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase gen-sett-m-t text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-settings" }),
+                              _vm._v(
+                                "\n                                        General\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled settings-list m-t-10"
+                            },
+                            [
+                              _c("li", [
+                                _c("label", { attrs: { for: "status" } }, [
+                                  _vm._v("Available")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "status",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "email-auth" } }, [
+                                  _vm._v("Login with Email")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "email-auth",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "update" } }, [
+                                  _vm._v("Auto Update")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "update",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            {
+                              staticClass:
+                                "rightsidebar-right-heading text-uppercase text-xs"
+                            },
+                            [
+                              _c("i", { staticClass: "fa fa-fw ti-volume" }),
+                              _vm._v(
+                                "\n                                        Sound & Notification\n                                    "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "list-unstyled settings-list m-t-10"
+                            },
+                            [
+                              _c("li", [
+                                _c("label", { attrs: { for: "chat-sound" } }, [
+                                  _vm._v("Chat Sound")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "chat-sound",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "noti-sound" } }, [
+                                  _vm._v("Notification Sound")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "noti-sound",
+                                      name: "my-checkbox"
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "remain" } }, [
+                                  _vm._v("Remainder ")
+                                ]),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "float-right" }, [
+                                  _c("input", {
+                                    attrs: {
+                                      type: "checkbox",
+                                      id: "remain",
+                                      name: "my-checkbox",
+                                      checked: ""
+                                    }
+                                  })
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c("label", { attrs: { for: "vol" } }, [
+                                  _vm._v("Volume")
+                                ]),
+                                _vm._v(" "),
+                                _c("input", {
+                                  attrs: {
+                                    type: "range",
+                                    id: "vol",
+                                    min: "0",
+                                    max: "100",
+                                    value: "15"
+                                  }
+                                })
+                              ])
+                            ]
+                          )
+                        ])
+                      ]
+                    )
                   ])
                 ])
               ])
             ])
           ])
-        ],
-        1
+        ]
       )
-    ])
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -4416,74 +5629,33 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-bdc9e4c6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-63fc1bf0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 1208:
-/***/ (function(module, exports) {
-
-module.exports = "/images/icons8-usa.png?2f571ec2fabfb42d3048347cb5d915e5";
-
-/***/ }),
-
-/***/ 1209:
-/***/ (function(module, exports) {
-
-module.exports = "/images/icons8-hungary.png?7b2413c61df5d2cfb38bb64bf4e523cc";
-
-/***/ }),
-
-/***/ 1210:
-/***/ (function(module, exports) {
-
-module.exports = "/images/icons8-france.png?fc7bfee4e22aaa96ade94d82743c361c";
-
-/***/ }),
-
-/***/ 1211:
-/***/ (function(module, exports) {
-
-module.exports = "/images/icons8-japan.png?be49868672d850f0d9a49057d010ec4d";
-
-/***/ }),
-
-/***/ 1212:
-/***/ (function(module, exports) {
-
-module.exports = "/images/icons8-china.png?a2e59bbc566b9949aeb1a2dce00be98d";
-
-/***/ }),
-
-/***/ 1213:
-/***/ (function(module, exports) {
-
-module.exports = "/images/ru.png?4ebdfc3eb99405fb83fb5bd80edc8280";
-
-/***/ }),
-
-/***/ 435:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1199)
-  __webpack_require__(1201)
+  __webpack_require__(1533)
+  __webpack_require__(1535)
+  __webpack_require__(1537)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1203)
+var __vue_script__ = __webpack_require__(1539)
 /* template */
-var __vue_template__ = __webpack_require__(1207)
+var __vue_template__ = __webpack_require__(1540)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-bdc9e4c6"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -4494,7 +5666,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/index3.vue"
+Component.options.__file = "resources/components/pages/simple_line_icons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -4503,9 +5675,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-bdc9e4c6", Component.options)
+    hotAPI.createRecord("data-v-63fc1bf0", Component.options)
   } else {
-    hotAPI.reload("data-v-bdc9e4c6", Component.options)
+    hotAPI.reload("data-v-63fc1bf0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -4517,7 +5689,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 524:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -14889,31 +16061,259 @@ return jQuery;
 
 /***/ }),
 
-/***/ 542:
-/***/ (function(module, exports) {
+/***/ 530:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(531)
+}
+var normalizeComponent = __webpack_require__(42)
+/* script */
+var __vue_script__ = __webpack_require__(533)
+/* template */
+var __vue_template__ = __webpack_require__(534)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/card/card.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-15e33d3a", Component.options)
+  } else {
+    hotAPI.reload("data-v-15e33d3a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 
-/***/ 544:
-/***/ (function(module, exports) {
+/***/ 531:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(532);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("d6b775a8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
-/***/ 545:
-/***/ (function(module, exports) {
+/***/ 532:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
+
+// exports
+
 
 /***/ }),
 
-/***/ 639:
+/***/ 533:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'card',
+    data: function data() {
+        return {
+            show: true,
+            isActive: false
+        };
+    },
+
+    methods: {
+        hide: function hide() {
+            this.isActive = true;
+        }
+    },
+    mounted: function mounted() {},
+    props: {
+        title: {
+            required: false
+        }
+    },
+    destroy: function destroy() {}
+});
+
+/***/ }),
+
+/***/ 534:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", {
+        staticClass: "card-title",
+        domProps: { innerHTML: _vm._s(_vm.title) }
+      }),
+      _vm._v(" "),
+      _c("span", { staticClass: "float-right" }, [
+        _c("i", {
+          staticClass: "fa fa-fw ti-angle-up",
+          class: { rotate: _vm.show },
+          on: {
+            click: function($event) {
+              _vm.show = !_vm.show
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "fa fa-fw ti-close removecard",
+          on: { click: _vm.hide }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.show,
+            expression: "show"
+          }
+        ],
+        staticClass: "card-body"
+      },
+      [_vm._t("default")],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 581:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.eot?f33df365d6d0255b586f2920355e94d7";
+
+/***/ }),
+
+/***/ 589:
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(528)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(590));
+//# sourceMappingURL=toastr.js.map
+
+
+/***/ }),
+
+/***/ 590:
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
+
+/***/ }),
+
+/***/ 625:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff2?0cb0b9c589c0624c9c78dd3d83e946f6";
+
+/***/ }),
+
+/***/ 626:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.ttf?d2285965fe34b05465047401b8595dd0";
+
+/***/ }),
+
+/***/ 627:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.woff?78f07e2c2a535c26ef21d95e41bd7175";
+
+/***/ }),
+
+/***/ 628:
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.svg?2fe2efe63441d830b1acd106c1fe8734";
 
 /***/ })
 

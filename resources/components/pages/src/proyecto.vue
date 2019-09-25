@@ -120,9 +120,11 @@
                                     <v-spacer></v-spacer>
                                     <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
                                     <v-btn color="blue darken-1" v-if="editar===0" flat @click="registrarProyecto">
-                                        Guardar</v-btn>
+                                        Guardar
+                                    </v-btn>
                                     <v-btn color="blue darken-1" v-if="editar===1" flat @click="editarProyecto()">
-                                        Guardar</v-btn>
+                                        Guardar
+                                    </v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog><!-- Fin del dialogo crear proyecto -->
@@ -307,9 +309,7 @@
             },
             getOrgProyecto(id) {
                 let me = this;
-                axios.get('/org', {
-                    'id': id
-                })
+                axios.get(`/proyecto/orgs?id=${id}`)
                     .then(function (response) {
                         me.orgs = response.data;
                     })

@@ -83,8 +83,7 @@ class ActividadController extends Controller
         }
     }
 
-    public function destroy(Request $request)
-    {
+    public function destroy(Request $request) {
         //
         $actividad = Actividad::findOrFail($request->id);
         try {
@@ -94,7 +93,8 @@ class ActividadController extends Controller
             return ['error' => $th->getMessage()];
         }
     }
-    public function select($id){
+    
+    public function select($id) {
         return Actividad::select('id','actividad as nombre')->where('idProyecto',$id)->get();
     }
 }

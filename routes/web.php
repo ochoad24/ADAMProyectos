@@ -41,6 +41,11 @@
     Route::put('/proyecto/activate', 'ProyectoController@activate');
     Route::put('/proyecto/deactivate', 'ProyectoController@deactivate');
     Route::get('/proyecto/orgs', 'ProyectoController@orgs');
+    Route::get('/proyecto/selectproject', 'ProyectoController@selectProject');
+    Route::get('/proyecto/selectactividad', 'ProyectoController@selectActividad');
+    Route::get('/proyecto/selecttareas', 'ProyectoController@selectTareas');
+    Route::post('/proyecto/storeProject', 'ProyectoController@storeProject');
+
 
     // Rutas para las Organizaciones
     Route::get('/org', 'OrganizacionController@index');

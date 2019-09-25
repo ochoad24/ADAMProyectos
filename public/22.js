@@ -1,13 +1,13 @@
 webpackJsonp([22],{
 
-/***/ 2240:
+/***/ 2316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(546);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(545);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
@@ -86,7 +86,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "Estadistica",
+    name: "TipoActividad",
     data: function data() {
         return {
             search: '',
@@ -98,7 +98,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 align: 'left',
                 value: 'id'
             }, { text: 'Nombre', value: 'nombre' }],
-            estadisticas: [],
+            tipos: [],
             editedIndex: -1,
             editedItem: {
                 id: 0,
@@ -113,7 +113,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         formTitle: function formTitle() {
-            return this.editedIndex === -1 ? 'Nueva Estadistica' : 'Editar Estadistica';
+            return this.editedIndex === -1 ? 'Nuevo Tipo de Actividad' : 'Editar Tipo de Actividad';
         }
     },
 
@@ -132,28 +132,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre del tipo de actividad no puede estar vacio');
             if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
         initialize: function initialize() {
             var _this = this;
 
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/Estadistica').then(function (response) {
-                _this.estadisticas = response.data;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/TipoActividad').then(function (response) {
+                _this.tipos = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
         },
         editItem: function editItem(item) {
-            this.editedIndex = this.estadisticas.indexOf(item);
+            this.editedIndex = this.tipos.indexOf(item);
             this.editedItem = Object.assign({}, item);
             this.dialog = true;
         },
         deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
-                title: 'Quieres eliminar esta estadistica?',
+                title: 'Quieres eliminar este tipo de Actividad?',
                 text: "No podras revertir la eliminacion!",
                 type: 'warning',
                 showCancelButton: true,
@@ -163,7 +163,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 cancelButtonText: "Cancelar"
             }).then(function (result) {
                 if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Estadistica/' + item.id + '/delete').then(function (response) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/TipoActividad/' + item.id + '/delete').then(function (response) {
                         me.initialize();
                         swal.fire({
                             position: 'top-end',
@@ -199,7 +199,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (this.editedIndex > -1) {
                 __WEBPACK_IMPORTED_MODULE_1_axios___default()({
                     method: 'put',
-                    url: '/Estadistica/editar',
+                    url: '/TipoActividad/editar',
                     data: {
                         id: this.editedItem.id,
                         nombre: this.editedItem.nombre
@@ -225,7 +225,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             } else {
                 __WEBPACK_IMPORTED_MODULE_1_axios___default()({
                     method: 'post',
-                    url: '/Estadistica/nuevo',
+                    url: '/TipoActividad/nuevo',
                     data: {
                         nombre: me.editedItem.nombre
                     }
@@ -254,7 +254,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2241:
+/***/ 2317:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -321,7 +321,7 @@ var render = function() {
                                     },
                                     on
                                   ),
-                                  [_vm._v("Nueva Estadistica")]
+                                  [_vm._v("Nuevo tipo de actividad")]
                                 )
                               ]
                             }
@@ -370,7 +370,7 @@ var render = function() {
                                             _c("v-text-field", {
                                               attrs: {
                                                 label:
-                                                  "Nombre de la estadistica"
+                                                  "Nombre del tipo de actividad"
                                               },
                                               model: {
                                                 value: _vm.editedItem.nombre,
@@ -462,7 +462,7 @@ var render = function() {
                   staticClass: "elevation-1",
                   attrs: {
                     headers: _vm.headers,
-                    items: _vm.estadisticas,
+                    items: _vm.tipos,
                     search: _vm.search
                   },
                   scopedSlots: _vm._u([
@@ -581,7 +581,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-e6fdb9a2", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-552095d2", module.exports)
   }
 }
 
@@ -593,9 +593,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2240)
+var __vue_script__ = __webpack_require__(2316)
 /* template */
-var __vue_template__ = __webpack_require__(2241)
+var __vue_template__ = __webpack_require__(2317)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -612,7 +612,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/src/estadistica.vue"
+Component.options.__file = "resources/components/pages/src/tipoactividad.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -621,9 +621,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-e6fdb9a2", Component.options)
+    hotAPI.createRecord("data-v-552095d2", Component.options)
   } else {
-    hotAPI.reload("data-v-e6fdb9a2", Component.options)
+    hotAPI.reload("data-v-552095d2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -635,14 +635,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 525:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var bind = __webpack_require__(535);
-var isBuffer = __webpack_require__(540);
+var bind = __webpack_require__(537);
+var isBuffer = __webpack_require__(543);
 
 /*global toString:true*/
 
@@ -946,14 +946,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 533:
+/***/ 536:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(525);
-var normalizeHeaderName = __webpack_require__(549);
+var utils = __webpack_require__(527);
+var normalizeHeaderName = __webpack_require__(548);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -969,10 +969,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(536);
+    adapter = __webpack_require__(538);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(536);
+    adapter = __webpack_require__(538);
   }
   return adapter;
 }
@@ -1051,7 +1051,7 @@ module.exports = defaults;
 
 /***/ }),
 
-/***/ 535:
+/***/ 537:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1070,19 +1070,19 @@ module.exports = function bind(fn, thisArg) {
 
 /***/ }),
 
-/***/ 536:
+/***/ 538:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
-var settle = __webpack_require__(550);
-var buildURL = __webpack_require__(552);
-var parseHeaders = __webpack_require__(553);
-var isURLSameOrigin = __webpack_require__(554);
-var createError = __webpack_require__(537);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(555);
+var utils = __webpack_require__(527);
+var settle = __webpack_require__(549);
+var buildURL = __webpack_require__(551);
+var parseHeaders = __webpack_require__(552);
+var isURLSameOrigin = __webpack_require__(553);
+var createError = __webpack_require__(539);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(554);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -1179,7 +1179,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(556);
+      var cookies = __webpack_require__(555);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -1258,13 +1258,13 @@ module.exports = function xhrAdapter(config) {
 
 /***/ }),
 
-/***/ 537:
+/***/ 539:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(551);
+var enhanceError = __webpack_require__(550);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -1284,7 +1284,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 /***/ }),
 
-/***/ 538:
+/***/ 540:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1297,7 +1297,7 @@ module.exports = function isCancel(value) {
 
 /***/ }),
 
-/***/ 539:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1324,7 +1324,7 @@ module.exports = Cancel;
 
 /***/ }),
 
-/***/ 540:
+/***/ 543:
 /***/ (function(module, exports) {
 
 /*!
@@ -1352,23 +1352,23 @@ function isSlowBuffer (obj) {
 
 /***/ }),
 
-/***/ 546:
+/***/ 545:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(547);
+module.exports = __webpack_require__(546);
 
 /***/ }),
 
-/***/ 547:
+/***/ 546:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
-var bind = __webpack_require__(535);
-var Axios = __webpack_require__(548);
-var defaults = __webpack_require__(533);
+var utils = __webpack_require__(527);
+var bind = __webpack_require__(537);
+var Axios = __webpack_require__(547);
+var defaults = __webpack_require__(536);
 
 /**
  * Create an instance of Axios
@@ -1401,15 +1401,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(539);
-axios.CancelToken = __webpack_require__(562);
-axios.isCancel = __webpack_require__(538);
+axios.Cancel = __webpack_require__(541);
+axios.CancelToken = __webpack_require__(561);
+axios.isCancel = __webpack_require__(540);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(563);
+axios.spread = __webpack_require__(562);
 
 module.exports = axios;
 
@@ -1419,16 +1419,16 @@ module.exports.default = axios;
 
 /***/ }),
 
-/***/ 548:
+/***/ 547:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(533);
-var utils = __webpack_require__(525);
-var InterceptorManager = __webpack_require__(557);
-var dispatchRequest = __webpack_require__(558);
+var defaults = __webpack_require__(536);
+var utils = __webpack_require__(527);
+var InterceptorManager = __webpack_require__(556);
+var dispatchRequest = __webpack_require__(557);
 
 /**
  * Create a new instance of Axios
@@ -1506,13 +1506,13 @@ module.exports = Axios;
 
 /***/ }),
 
-/***/ 549:
+/***/ 548:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -1526,13 +1526,13 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 /***/ }),
 
-/***/ 550:
+/***/ 549:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(537);
+var createError = __webpack_require__(539);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -1560,7 +1560,7 @@ module.exports = function settle(resolve, reject, response) {
 
 /***/ }),
 
-/***/ 551:
+/***/ 550:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1589,13 +1589,13 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 /***/ }),
 
-/***/ 552:
+/***/ 551:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -1663,13 +1663,13 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 /***/ }),
 
-/***/ 553:
+/***/ 552:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -1724,13 +1724,13 @@ module.exports = function parseHeaders(headers) {
 
 /***/ }),
 
-/***/ 554:
+/***/ 553:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -1800,7 +1800,7 @@ module.exports = (
 
 /***/ }),
 
-/***/ 555:
+/***/ 554:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1844,13 +1844,13 @@ module.exports = btoa;
 
 /***/ }),
 
-/***/ 556:
+/***/ 555:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -1905,13 +1905,13 @@ module.exports = (
 
 /***/ }),
 
-/***/ 557:
+/***/ 556:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -1965,18 +1965,18 @@ module.exports = InterceptorManager;
 
 /***/ }),
 
-/***/ 558:
+/***/ 557:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
-var transformData = __webpack_require__(559);
-var isCancel = __webpack_require__(538);
-var defaults = __webpack_require__(533);
-var isAbsoluteURL = __webpack_require__(560);
-var combineURLs = __webpack_require__(561);
+var utils = __webpack_require__(527);
+var transformData = __webpack_require__(558);
+var isCancel = __webpack_require__(540);
+var defaults = __webpack_require__(536);
+var isAbsoluteURL = __webpack_require__(559);
+var combineURLs = __webpack_require__(560);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -2059,13 +2059,13 @@ module.exports = function dispatchRequest(config) {
 
 /***/ }),
 
-/***/ 559:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(525);
+var utils = __webpack_require__(527);
 
 /**
  * Transform the data for a request or a response
@@ -2087,7 +2087,7 @@ module.exports = function transformData(data, headers, fns) {
 
 /***/ }),
 
-/***/ 560:
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2109,7 +2109,7 @@ module.exports = function isAbsoluteURL(url) {
 
 /***/ }),
 
-/***/ 561:
+/***/ 560:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2131,13 +2131,13 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 
-/***/ 562:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(539);
+var Cancel = __webpack_require__(541);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -2196,7 +2196,7 @@ module.exports = CancelToken;
 
 /***/ }),
 
-/***/ 563:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

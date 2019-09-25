@@ -1,22 +1,22 @@
 webpackJsonp([86],{
 
-/***/ 2194:
+/***/ 2365:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2195);
+var content = __webpack_require__(2366);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("77a712c5", content, false, {});
+var update = __webpack_require__(26)("e466cbda", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0f55fcc6\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0f55fcc6\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!./forgot_password.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!./forgot_password.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2195:
+/***/ 2366:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,32 +35,20 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.right-side[data-v-0f55fcc6] {\n    padding-top :0;\n}\n.movable-header .rightsidebar-without-nav[data-v-0f55fcc6] {\n    padding-top : 20px !important\n}\n@media screen and (max-width : 560px) {\nbody[data-v-0f55fcc6] {\n        padding-top : 0 !important;\n}\n    /*fixednav pages*/\n.fixednav_right[data-v-0f55fcc6] {\n        padding-top : 112px;\n}\n}\n@media screen and (max-width : 992px) {\n.fixed-menu #menu[data-v-0f55fcc6] {\n        padding-top : 0;\n}\n.movable-header #right[data-v-0f55fcc6] {\n        padding-top : 0;\n}\n}\n@media screen and (max-width : 560px) {\n.fixed-menu #menu[data-v-0f55fcc6] {\n        padding-top : 90px;\n}\n.movable-header .rightsidebar-without-nav-small[data-v-0f55fcc6] {\n        padding-top : 70px !important\n}\n}\n.movable-header #menu[data-v-0f55fcc6] {\n    padding-top : 0;\n}\n/*==== layout fixed ====*/\n.slimScrollBar[data-v-0f55fcc6] {\n    width      : 3px !important;\n    opacity    : 0.5 !important;\n    background : rgb(130, 194, 224) !important;\n}\n.menu_align[data-v-0f55fcc6] {\n    margin-bottom : 50px;\n}\n.full_img[data-v-0f55fcc6] {\n    width: 100%;\n    height: 150px;\n    border-radius: 5px;\n}\n/*movable header page*/\n.header_movable[data-v-0f55fcc6] {\n    position : relative !important;\n}\n\n/*====End of layout fixed ====*/\n", ""]);
+exports.push([module.i, "\nhtml {\n    height : 100%;\n}\nbody {\n    font-family             : 'Open Sans', sans-serif;\n    background              : radial-gradient(ellipse at center, #63B9B4 0%, #008C83 100%);\n    -webkit-background-size : cover;\n    -moz-background-size    : cover;\n    -o-background-size      : cover;\n    background-size         : cover;\n    height                  : 100%;\n    padding-top             : 70px;\n    color : #fff;\n}\n.box {\n    padding          : 19px 15px;\n    margin-bottom    : 70px;\n}\n.box input[type='submit'] {\n    margin : 25px 0 20px 0;\n}\n.form-group {\n    margin-bottom: 25px;\n}\n.submit-btn {\n    background-color: rgba(255,255,255, .2);\n}\n.btn:hover, .btn:focus, .btn.focus {\n    color: #fff;\n}\n@media screen and (min-width : 450px) {\n.box {\n        padding : 36px 35px;\n}\n}\n.animated {\n    -webkit-animation-duration  : 1s;\n    animation-duration          : 1s;\n    -webkit-animation-fill-mode : both;\n    animation-fill-mode         : both;\n}\n@-webkit-keyframes fadeInUp {\n0% {\n        opacity           : 0;\n        -webkit-transform : translateY(20px);\n        transform         : translateY(20px);\n}\n100% {\n        opacity           : 1;\n        -webkit-transform : translateY(0);\n        transform         : translateY(0);\n}\n}\n@keyframes fadeInUp {\n0% {\n        opacity           : 0;\n        -webkit-transform : translateY(20px);\n        -ms-transform     : translateY(20px);\n        transform         : translateY(20px);\n}\n100% {\n        opacity           : 1;\n        -webkit-transform : translateY(0);\n        -ms-transform     : translateY(0);\n        transform         : translateY(0);\n}\n}\n.fadeInUp {\n    -webkit-animation-name : fadeInUp;\n    animation-name         : fadeInUp;\n    transition             : transform ease-in 200ms;\n}\n.checkbox label {\n    padding-left : 0;\n}\n.forgot_Form .email {\n    border-radius: 20px;\n}\n.enter_email, .check_email {\n    margin-top : 18px;\n}\n.help-block {\n    color : #fecfb0;\n}\n.btn-top {\n    margin-top : 20px !important;\n}\na:hover, a:focus {\n    text-decoration : none;\n}\n.has-error .help-block {\n    color : #C45555;\n    float : left;\n}\n.err-text {\n    color : #c15050;\n}\n.btn:focus, .btn:active:focus {\n    outline : 0;\n}\n.has-error .form-control, .has-error .form-control:focus {\n    border-color : #C45555;\n}\n.text-danger {\n    color: #ff6666;\n}\n.reset-link {\n    color: #ddd;\n}\n.reset-link:hover {\n    color: #eee;\n}\n.preloader {\n    position            : fixed;\n    width               : 100%;\n    height              : 100%;\n    top                 : 0;\n    left                : 0;\n    z-index             : 100000;\n    backface-visibility : hidden;\n    background          : #ffffff;\n}\n.loader_img {\n    width               : 50px;\n    height              : 50px;\n    position            : absolute;\n    left                : 50%;\n    top                 : 50%;\n    background-position : center;\n    margin              : -25px 0 0 -25px;\n}\n.box h3{\n    margin-top:20px;\n    margin-bottom:20px;\n}\n.submit-btn{\n    color:#fff;\n}\n.hidden{\n    display:none;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2196:
+/***/ 2367:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(738);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__);
 //
 //
 //
@@ -94,24 +82,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "fixed_menu",
+    name: "image_magnifier",
     mounted: function mounted() {
-        $("body").addClass("fixed-menu");
-        $(".sidebar").addClass("affix").prepend("<div class='left_slim'></div>");
-        $("#menu").appendTo(".left_slim");
+        "use strict";
+
+        $(document).ready(function () {
+
+            var input_field = $("input[name=email]");
+
+            $('button[type="submit"]').on('click', function (e) {
+                e.preventDefault();
+
+                if (input_field.val() != "") {
+                    $(".enter_email").addClass("hidden");
+                    $(".check_email").removeClass("hidden");
+                    $('#email, .signup-signin').addClass('hidden');
+                    $('.submit-btn').addClass('animated fadeInUp');
+                    $('button[type="submit"]').html("Reset Password").removeClass("btn-primary btn-block").addClass("btn-success").on('click', function () {
+                        window.location.href = '#/reset_password';
+                    });
+                } else {
+                    var error_msg = "<p>Sorry, Enter Your Registered email</p>";
+                    $(".enter_email").addClass("err-text animated fadeInUp").html(error_msg);
+                }
+            });
+
+            $("#email").on('keypress focus', function () {
+                var element = 'Enter your Registered email';
+                $(".enter_email").removeClass("text-danger animated fadeInUp").html(element);
+            });
+        });
     },
-    destroyed: function destroyed() {
-        $("body").removeClass("fixed-menu");
-        $(".sidebar").removeClass("affix");
-        location.reload();
-    }
+    destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(524)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 2197:
+/***/ 2368:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -119,80 +129,38 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-lg-12" }, [
-      _c("p", { staticClass: "text-justify" }, [
-        _vm._v(
-          "\n                    Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu.\n            "
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "col-lg-4 col-10 col-sm-6 m-auto  box animated fadeInUp"
+          },
+          [
+            _c("div", { staticClass: "text-center " }, [
+              _c("img", {
+                staticClass: "img-fluid",
+                attrs: { src: __webpack_require__(830), alt: "Clear logo" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("h3", { staticClass: "text-center" }, [
+              _vm._v("Forgot Password\n                ")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-center enter_email" }, [
+              _vm._v(
+                "\n                    Enter your Registered email\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _vm._m(1)
+          ]
         )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                    Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque acilisis luctus adipiscing.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-justify" }, [
-        _c("img", {
-          staticClass: "img-responsive full_img",
-          attrs: {
-            src: __webpack_require__(564),
-            alt: "holder image"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                    Sed adipiscing justo tristique enim pharetra, nec ultricies metus sagittis.Duis varius id massa ut pellentesque. Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a purus.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                   Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "clearfix" }),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-justify" }, [
-        _c("img", {
-          staticClass: "img-responsive full_img",
-          attrs: {
-            src: __webpack_require__(564),
-            alt: "holder image"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim pharetra, nec ultricies metus sagittis. Duis varius id massa ut pellentesque.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "    Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a purus.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "    Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "clearfix" })
+      ])
     ])
   ])
 }
@@ -201,19 +169,59 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "outer" }, [
-      _c("div", { staticClass: "inner bg-light lter" }, [
-        _c("h2", [_vm._v("Code")]),
-        _vm._v(" "),
-        _c("pre", [
-          _c("code", { staticClass: "language-markup" }, [
-            _vm._v(
-              '<body class="boxed">\n    <nav class="navbar navbar-inverse navbar-fixed-top">\n    ...\n    </nav>\n</body>'
-            )
-          ])
-        ])
+    return _c("p", { staticClass: "text-center check_email hidden" }, [
+      _vm._v(
+        "\n                    Check your email for Reset link\n                    "
+      ),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("u", [
+        _c(
+          "a",
+          { staticClass: "reset-link", attrs: { href: "javascript:void(0)" } },
+          [_vm._v("Resend the link")]
+        )
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "form",
+      {
+        staticClass: "forgot_Form text-center",
+        attrs: { method: "POST", id: "forgot_password" }
+      },
+      [
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            staticClass: "form-control email pl-3",
+            attrs: {
+              type: "email",
+              name: "email",
+              id: "email",
+              placeholder: "Email"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn submit-btn",
+            attrs: { type: "submit", value: "Reset Your Password" }
+          },
+          [
+            _vm._v(
+              "\n                        Retrieve Password\n                    "
+            )
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -221,31 +229,31 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0f55fcc6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-fdd3442a", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 502:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2194)
+  __webpack_require__(2365)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2196)
+var __vue_script__ = __webpack_require__(2367)
 /* template */
-var __vue_template__ = __webpack_require__(2197)
+var __vue_template__ = __webpack_require__(2368)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-0f55fcc6"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -256,7 +264,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/fixed_menu.vue"
+Component.options.__file = "resources/components/pages/forgot_password.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -265,9 +273,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0f55fcc6", Component.options)
+    hotAPI.createRecord("data-v-fdd3442a", Component.options)
   } else {
-    hotAPI.reload("data-v-0f55fcc6", Component.options)
+    hotAPI.reload("data-v-fdd3442a", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -279,7 +287,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 524:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10651,10 +10659,18 @@ return jQuery;
 
 /***/ }),
 
-/***/ 564:
+/***/ 738:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!function(e){"use strict";var t=function(e,t){this.init("magnify",e,t)};t.prototype={constructor:t,init:function(t,n,r){var i="mousemove",s="mouseleave";this.type=t;this.$element=e(n);this.options=this.getOptions(r);this.nativeWidth=0;this.nativeHeight=0;this.$element.wrap('<div class="magnify" >');this.$element.parent(".magnify").append('<div class="magnify-large" >');this.$element.siblings(".magnify-large").css("background","url('"+this.$element.attr("src")+"') no-repeat");this.$element.parent(".magnify").on(i+"."+this.type,e.proxy(this.check,this));this.$element.parent(".magnify").on(s+"."+this.type,e.proxy(this.check,this))},getOptions:function(t){t=e.extend({},e.fn[this.type].defaults,t,this.$element.data());t.delay&&typeof t.delay=="number"&&(t.delay={show:t.delay,hide:t.delay});return t},check:function(t){var n=e(t.currentTarget),r=n.children("img"),i=n.children(".magnify-large");if(!this.nativeWidth&&!this.nativeHeight){var s=new Image;s.src=r.attr("src");this.nativeWidth=s.width;this.nativeHeight=s.height}else{var o=n.offset(),u=t.pageX-o.left,a=t.pageY-o.top;u<n.width()&&a<n.height()&&u>0&&a>0?i.fadeIn(100):i.fadeOut(100);if(i.is(":visible")){var f=Math.round(u/n.width()*this.nativeWidth-i.width()/2)*-1,l=Math.round(a/n.height()*this.nativeHeight-i.height()/2)*-1,c=f+"px "+l+"px",h=u-i.width()/2,p=a-i.height()/2;i.css({left:h,top:p,backgroundPosition:c})}}}};e.fn.magnify=function(n){return this.each(function(){var r=e(this),i=r.data("magnify"),s=typeof n=="object"&&n;i||r.data("tooltip",i=new t(this,s));typeof n=="string"&&i[n]()})};e.fn.magnify.Constructor=t;e.fn.magnify.defaults={delay:0};e(window).on("load",function(){e('[data-toggle="magnify"]').each(function(){var t=e(this);t.magnify()})})}(__webpack_provided_window_dot_jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(528)))
+
+/***/ }),
+
+/***/ 830:
 /***/ (function(module, exports) {
 
-module.exports = "/images/brick-wall.png?effad1520fc39d8897385d7004d2dbf4";
+module.exports = "/images/logo.png?a7b4575e3769bae62092c494870b5d8a";
 
 /***/ })
 

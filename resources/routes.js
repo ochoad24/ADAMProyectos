@@ -1241,6 +1241,23 @@ const routes = [{
             }
         },
         {
+            path: 'CrearProyecto',
+            component: resolve => require(['./components/pages/src/CrearProyecto.vue'], resolve),
+            meta: {
+                title: 'Crear Nuevo Proyecto',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Proyectos',
+                    href: '#',
+                }, {
+                    html: 'CrearProyecto',
+                    href: '#/CrearProyecto'
+                }]
+            }
+        },
+        {
             path: 'Organizaciones',
             component: resolve => require(['./components/pages/src/organizacion.vue'], resolve),
             meta: {
@@ -1358,6 +1375,40 @@ const routes = [{
                     href: '#/Subir'
                 }]
             }
+        },
+        {
+            path: '/Gantt',
+            component: resolve => require(['./components/pages/src/Gantt.vue'], resolve),
+            meta: {
+                title: 'Gantt',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Gantt',
+                    href: '#',
+                }, {
+                    html: 'Gantt',
+                    href: '#/Gantt'
+                }]
+            }
+        },
+        {
+            path: '/GanttProyecto',
+            component: resolve => require(['./components/pages/src/GanttProyecto.vue'], resolve),
+            meta: {
+                title: 'PROGRESO',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Proyecto',
+                    href: '#',
+                }, {
+                    html: 'Proyecto',
+                    href: '#/GanttProyecto'
+                }]
+            }
         }
     ]
 }, {
@@ -1409,7 +1460,7 @@ const routes = [{
         title: '404',
         breadcrumb: ``
     }
-}
+},
 ]
 
 export default routes

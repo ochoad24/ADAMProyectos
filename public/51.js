@@ -1,22 +1,22 @@
 webpackJsonp([51],{
 
-/***/ 1960:
+/***/ 1521:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1961);
+var content = __webpack_require__(1522);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("0d508a60", content, false, {});
+var update = __webpack_require__(26)("3dbfd88a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fbc7073e\",\"scoped\":false,\"hasInlineConfig\":true}!./dropify.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fbc7073e\",\"scoped\":false,\"hasInlineConfig\":true}!./dropify.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-40abb7a2\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-40abb7a2\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1961:
+/***/ 1522:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,24 +35,64 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\n    font-family : \"Open Sans\", sans-serif;\n}\n.dropify-wrapper.has-error {\n    border-color : #ff6666;\n}\n.dropify-errors-container.visible {\n    background-color : #ff6666;\n}\n.dropify-wrapper .dropify-message p.dropify-error {\n    color : #ff6666;\n}\n.p-30 {\n    padding : 30px;\n}\n.p-30 h5{\n    margin-top: 0.5rem;\n}", ""]);
+exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1962:
+/***/ 1523:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1524);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("f8e11d58", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-40abb7a2\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-40abb7a2\",\"scoped\":false,\"hasInlineConfig\":true}!./simple_themify.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1524:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.input-group {\n    width: 100%;\n    margin-bottom: 10px;\n}\n.input-group-addon.icon-sizeshow {\n    border: none;\n    background-color: transparent;\n}\n.input-group input[type=\"range\"] {\n    border: none;\n    box-shadow: none;\n}\n#icon-search {\n    border-radius: 17px !important;\n}\nform {\n    text-align: center;\n    padding: 10px;\n}\ninput[type=\"range\"] {\n    cursor: pointer;\n}\n.preview .name {\n    display: block;\n}\n.preview {\n    padding: 30px 10px;\n    font-size: 12px;\n    height: 120px;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview:hover {\n    background-color: #DCDCDC;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.preview span[class|=ti] {\n    display: block;\n}\n.preview i,\n.preview span[class|=ti] {\n    color: #428BCA;\n    font-size: 24px;\n}\n.preview:hover i,\n.preview:hover span[class|=ti] {\n    font-size: 30px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(527);
+/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_dropzone__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_dropzone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_dropzone__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_dropzone_dist_vue2Dropzone_css__ = __webpack_require__(630);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_dropzone_dist_vue2Dropzone_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue2_dropzone_dist_vue2Dropzone_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
 //
 //
 //
@@ -85,145 +125,8110 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "dropify",
+    name: "themify_icons",
     components: {
-        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a,
-        vueDropzone: __WEBPACK_IMPORTED_MODULE_1_vue2_dropzone___default.a
+        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            dropzoneOptions: {
-                url: 'https://httpbin.org/post',
-                thumbnailWidth: 100,
-                thumbnailHeight: 100,
-                headers: { "My-Awesome-Header": "header value" }
-            },
-            dropzoneMaxSize: {
-                url: 'https://httpbin.org/post',
-                thumbnailWidth: 100,
-                thumbnailHeight: 100,
-                maxFilesize: 0.1,
-                headers: { "My-Awesome-Header": "header value" }
-            },
-            dropzoneMaxFiles: {
-                url: 'https://httpbin.org/post',
-                thumbnailWidth: 100,
-                thumbnailHeight: 100,
-                maxFiles: 2,
-                acceptedFiles: '.png',
-                headers: { "My-Awesome-Header": "header value" }
-            },
-            dropzoneFiletype: {
-                url: 'https://httpbin.org/post',
-                thumbnailWidth: 100,
-                thumbnailHeight: 100,
-                acceptedFiles: '.png',
-                headers: { "My-Awesome-Header": "header value" }
+    methods: {
+        icon_search: function icon_search() {}
+    },
+    mounted: function mounted() {
+        "use strict";
+
+        $(document).ready(function () {
+            $('#icon-search').on("input", function () {
+                $(".icon-name").each(function () {
+                    var regex = new RegExp($("#icon-search").val().trim().toLowerCase());
+                    var x = $(this).text();
+                    var res = x.match(regex, "i");
+                    if (res == null) {
+                        $(this).closest(".icon-preview-box").hide();
+                    } else {
+                        $(this).closest(".icon-preview-box").show();
+                    }
+                });
+            });
+            jQuery.fn.outerHTML = function () {
+                return jQuery('<div />').append(this.eq(0).clone()).html();
+            };
+            var icon_size = $("#icon-size");
+            icon_size.on("input", function () {
+                var x = parseInt(icon_size.val()) + parseInt(6);
+                $(".fontnormal").html(".preview span[class|=ti]{font-size:" + icon_size.val() + "px;}.preview:hover span[class|=ti]{font-size:" + x + "px;}");
+                $(".icon-sizeshow").text(icon_size.val() + "px");
+            });
+            $("head").append("<style class='fontnormal'></style>");
+            $(".preview").on("click", function () {
+                var x = $(this).find("span[class|=ti]").outerHTML();
+                copyTextToClipboard(x);
+            });
+
+            function copyTextToClipboard(text) {
+                var textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea).select();
+                var successful = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.success('Element Copied to Clipboard. Now you can use it anywhere.');
             }
-        };
+        });
     },
-    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528), __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 1963:
+/***/ 1526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row" }, [
+  return _c(
+    "div",
+    [
       _c(
-        "div",
-        { staticClass: "col-md-12" },
+        "card",
+        { attrs: { title: "<i class='fa fa-fw fa-font'></i> Themify Icons" } },
         [
-          _c(
-            "card",
-            { attrs: { title: "<i class='fa fa-fw ti-dropbox'></i> Dropify" } },
-            [
-              _c("div", { staticClass: "p-30" }, [
-                _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6 col-md-offset-3 m-auto" }, [
+              _c("form", { attrs: { role: "form" } }, [
+                _c("div", { staticClass: "input-group" }, [
                   _c(
-                    "div",
-                    { staticClass: "col-md-6" },
-                    [
-                      _c("h5", [_vm._v("Dropify Basic")]),
-                      _vm._v(" "),
-                      _c("vue-dropzone", {
-                        ref: "myVueDropzone",
-                        attrs: { id: "dropzone", options: _vm.dropzoneOptions }
-                      })
-                    ],
-                    1
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-search" } },
+                    [_vm._v("Search")]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "col-md-6" },
-                    [
-                      _c("h5", [_vm._v("AllowedFileExtensions ( PNG)")]),
-                      _vm._v(" "),
-                      _c("vue-dropzone", {
-                        ref: "myVueDropzone",
-                        attrs: {
-                          id: "dropzone4",
-                          options: _vm.dropzoneFiletype
-                        }
-                      })
-                    ],
-                    1
-                  )
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "icon-search",
+                      id: "icon-search",
+                      placeholder: "Search Icon"
+                    },
+                    on: { click: _vm.icon_search }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "input-group" }, [
                   _c(
-                    "div",
-                    { staticClass: "col-md-6" },
-                    [
-                      _c("h5", [_vm._v("Max File Size")]),
-                      _vm._v(" "),
-                      _c("vue-dropzone", {
-                        ref: "myVueDropzone",
-                        attrs: { id: "dropzone2", options: _vm.dropzoneMaxSize }
-                      })
-                    ],
-                    1
+                    "label",
+                    { staticClass: "sr-only", attrs: { for: "icon-size" } },
+                    [_vm._v("Size")]
                   ),
                   _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "range",
+                      name: "icon-size",
+                      id: "icon-size",
+                      min: "24",
+                      max: "40",
+                      value: "24"
+                    }
+                  }),
+                  _vm._v(" "),
                   _c(
-                    "div",
-                    { staticClass: "col-md-6" },
-                    [
-                      _c("h5", [_vm._v("Max Number of Files")]),
-                      _vm._v(" "),
-                      _c("vue-dropzone", {
-                        ref: "myVueDropzone",
-                        attrs: {
-                          id: "dropzone3",
-                          options: _vm.dropzoneMaxFiles
-                        }
-                      })
-                    ],
-                    1
+                    "span",
+                    { staticClass: "input-group-addon icon-sizeshow" },
+                    [_vm._v("24px")]
                   )
                 ])
               ])
-            ]
-          )
-        ],
-        1
+            ])
+          ]),
+          _vm._v(" "),
+          _c("h4", { staticClass: "text-center" }, [
+            _vm._v("Click on any icon to copy its code to clipboard.")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "text-center" }, [
+                _c("h3", { staticClass: "text-left" }, [
+                  _vm._v(
+                    "\n                            Themify Icons\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "icon-section" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12" }, [
+                      _c("h3", [_vm._v("Arrows & Direction Icons ")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-3 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-up")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-right")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-left")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-down")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrows-vertical" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrows-vertical")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrows-horizontal" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrows-horizontal")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-up")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-right")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-left")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-double-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-double-up")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-double-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-double-right")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-double-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-double-left")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-angle-double-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-angle-double-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-move" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-move")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-fullscreen" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-fullscreen")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-top-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-top-right")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-top-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-top-left")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-circle-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-circle-up")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-circle-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-circle-right")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-circle-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-circle-left")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrow-circle-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrow-circle-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-arrows-corner" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-arrows-corner")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-split-v" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-split-v")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-split-v-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-split-v-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-split-h" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-split-h")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-point-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-point-up")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-point-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-point-right")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-point-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-point-left")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-point-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-point-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-back-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-back-right")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-back-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-back-left")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                    },
+                    [
+                      _c("div", { staticClass: "preview" }, [
+                        _c("span", { staticClass: "ti-exchange-vertical" }),
+                        _c("span", { staticClass: "icon-name" }, [
+                          _vm._v(" ti-exchange-vertical")
+                        ])
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "icon-section" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12" }, [
+                      _c("h3", [_vm._v("Web App Icons")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-wand" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-wand")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-save" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-save")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-save-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-save-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-direction" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-direction")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-direction-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-direction-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-user" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-user")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-link" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-link")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-unlink" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-unlink")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-trash" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-trash")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-target" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-target")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-tag" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-tag")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-desktop" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-desktop")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-tablet" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-tablet")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-mobile" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-mobile")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-email" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-email")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-star" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-star")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-spray" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-spray")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-signal" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-signal")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shopping-cart" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shopping-cart")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shopping-cart-full" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shopping-cart-full")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-settings" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-settings")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-search" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-search")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-zoom-in" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-zoom-in")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-zoom-out" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-zoom-out")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-cut" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-cut")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-ruler" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-ruler")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-ruler-alt-2" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-ruler-alt-2")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-ruler-pencil" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-ruler-pencil")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-ruler-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-ruler-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bookmark" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bookmark")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bookmark-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bookmark-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-reload" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-reload")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-plus" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-plus")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-minus" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-minus")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-close" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-close")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pin" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pin")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pencil" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pencil")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pencil-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pencil-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-paint-roller" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-paint-roller")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-paint-bucket" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-paint-bucket")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-na" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-na")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-medall" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-medall")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-medall-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-medall-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-marker" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-marker")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-marker-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-marker-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-lock" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-lock")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-unlock" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-unlock")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-location-arrow" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-location-arrow")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-layout" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-layout")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-layers" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-layers")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-layers-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-layers-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-key" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-key")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-image" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-image")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-heart" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-heart")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-heart-broken" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-heart-broken")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-stop" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-stop")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-open" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-open")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hand-drag" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hand-drag")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-flag" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-flag")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-flag-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-flag-alt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-flag-alt-2" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-flag-alt-2")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-eye" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-eye")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-import" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-import")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-export" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-export")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-cup" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-cup")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-crown" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-crown")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-comments" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-comments")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-comment" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-comment")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-comment-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-comment-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-thought" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-thought")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-clip" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-clip")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-check" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-check")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-check-box" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-check-box")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-camera" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-camera")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-announcement" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-announcement")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-brush" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-brush")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-brush-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-brush-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-palette" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-palette")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-briefcase" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-briefcase")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bolt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bolt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bolt-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bolt-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-blackboard" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-blackboard")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bag" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bag")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-world" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-world")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-wheelchair" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-wheelchair")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-car" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-car")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-truck" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-truck")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-timer" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-timer")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-ticket" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-ticket")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-thumb-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-thumb-up")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-thumb-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-thumb-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-stats-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-stats-up")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-stats-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-stats-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shine" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shine")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shift-right" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shift-right")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shift-left" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shift-left")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shift-right-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shift-right-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shift-left-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shift-left-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shield" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shield")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-notepad" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-notepad")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-server" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-server")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pulse" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pulse")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-printer" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-printer")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-power-off" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-power-off")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-plug" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-plug")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pie-chart" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pie-chart")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-card" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-card")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-package" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-package")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-music" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-music")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-music-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-music-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-mouse" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-mouse")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-mouse-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-mouse-alt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-money" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-money")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-microphone" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-microphone")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-menu" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-menu")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-menu-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-menu-alt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-map" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-map")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-map-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-map-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-location-pin" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-location-pin")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-light-bulb" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-light-bulb")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-info" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-info")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-infinite" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-infinite")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-id-badge" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-id-badge")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-hummer" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-hummer")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-home" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-home")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-help" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-help")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-headphone" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-headphone")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-harddrives" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-harddrives")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-harddrive" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-harddrive")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-gift" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-gift")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-game" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-game")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-filter" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-filter")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-files" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-files")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-file" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-file")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-zip" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-zip")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-folder" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-folder")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-envelope" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-envelope")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-dashboard" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-dashboard")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-cloud" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-cloud")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-cloud-up" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-cloud-up")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-cloud-down" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-cloud-down")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-clipboard" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-clipboard")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-calendar" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-calendar")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-book" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-book")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bell" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bell")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-basketball" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-basketball")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bar-chart" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bar-chart")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-bar-chart-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-bar-chart-alt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-archive" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-archive")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-anchor" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-anchor")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-alert" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-alert")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-alarm-clock" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-alarm-clock")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-agenda" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-agenda")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-write" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-write")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-wallet" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-wallet")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-video-clapper" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-video-clapper")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-video-camera" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-video-camera")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", {
+                            staticClass: "ti-control-skip-forward"
+                          }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-control-skip-forward")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-support" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-support")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-stamp" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-stamp")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-slice" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-slice")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-shortcode" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-shortcode")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-receipt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-receipt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pin2" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pin2")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pin-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pin-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-pencil-alt2" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-pencil-alt2")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-eraser" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-eraser")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-more" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-more")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-more-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-more-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-microphone-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-microphone-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-magnet" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-magnet")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-line-double" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-line-double")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-line-dotted" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-line-dotted")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-line-dashed" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-line-dashed")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-ink-pen" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-ink-pen")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-info-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-info-alt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-help-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-help-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-headphone-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-headphone-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-gallery" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-gallery")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-face-smile" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-face-smile")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-face-sad" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-face-sad")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-credit-card" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-credit-card")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-comments-smiley" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-comments-smiley")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-time" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-time")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-share" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-share")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-share-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-share-alt")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-rocket" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-rocket")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-new-window" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-new-window")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-rss" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-rss")
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                      },
+                      [
+                        _c("div", { staticClass: "preview" }, [
+                          _c("span", { staticClass: "ti-rss-alt" }),
+                          _c("span", { staticClass: "icon-name" }, [
+                            _vm._v(" ti-rss-alt")
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "icon-section" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c("h3", [_vm._v("Control Icons")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-stop" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-stop")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-shuffle" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-shuffle")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-play" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-play")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-pause" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-pause")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-forward" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-forward")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-backward" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-backward")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-volume" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-volume")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", {
+                              staticClass: "ti-control-skip-forward"
+                            }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-skip-forward")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", {
+                              staticClass: "ti-control-skip-backward"
+                            }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-skip-backward")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-record" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-record")
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                        },
+                        [
+                          _c("div", { staticClass: "preview" }, [
+                            _c("span", { staticClass: "ti-control-eject" }),
+                            _c("span", { staticClass: "icon-name" }, [
+                              _vm._v(" ti-control-eject")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "icon-section" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-12" }, [
+                          _c("h3", [_vm._v("Text Editor")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-paragraph" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-paragraph")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-uppercase" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-uppercase")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-underline" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-underline")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-text" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-text")
+                              ])
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-Italic" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-Italic")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-smallcap" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-smallcap")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-list" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-list")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-list-ol" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-list-ol")
+                              ])
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-align-right" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-align-right")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-align-left" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-align-left")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-align-justify" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-align-justify")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-align-center" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-align-center")
+                              ])
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-quote-right" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-quote-right")
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                          },
+                          [
+                            _c("div", { staticClass: "preview" }, [
+                              _c("span", { staticClass: "ti-quote-left" }),
+                              _c("span", { staticClass: "icon-name" }, [
+                                _vm._v(" ti-quote-left")
+                              ])
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "icon-section" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h3", [_vm._v("Layout Icons")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-width-full"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-width-full")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-width-default"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-width-default")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-width-default-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-width-default-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-tab" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-tab")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-tab-window"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-tab-window")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-tab-v" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-tab-v")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-tab-min"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-tab-min")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-slider" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-slider")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-slider-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-slider-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-sidebar-right"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-sidebar-right")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-sidebar-none"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-sidebar-none")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-sidebar-left"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-sidebar-left")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-placeholder"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-placeholder")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-menu" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-menu")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-menu-v" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-menu-v")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-menu-separated"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-menu-separated")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-menu-full"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-menu-full")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-right"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-right")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-right-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-right-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-overlay"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-overlay")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-overlay-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-overlay-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-overlay-alt-2"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-overlay-alt-2")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-left"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-left")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-left-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-left-alt")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-center"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-center")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-media-center-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-media-center-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-list-thumb"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-list-thumb")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-list-thumb-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-list-thumb-alt")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-list-post"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-list-post")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-list-large-image"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-list-large-image")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-line-solid"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-line-solid")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-grid4" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid4")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-grid3" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid3")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-layout-grid2" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid2")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-grid2-thumb"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid2-thumb")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-cta-right"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-cta-right")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-cta-left"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-cta-left")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-cta-center"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-cta-center")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-cta-btn-right"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-cta-btn-right")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-cta-btn-left"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-cta-btn-left")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-column4"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-column4")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-column3"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-column3")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-column2"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-column2")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-accordion-separated"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-accordion-separated")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-accordion-merged"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-accordion-merged")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-accordion-list"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-accordion-list")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-widgetized" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-widgetized")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-widget" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-widget")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-widget-alt" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-widget-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-view-list" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-view-list")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-view-list-alt" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-view-list-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-view-grid" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-view-grid")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-upload" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-upload")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-download" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-download")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", { staticClass: "ti-loop" }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-loop")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-sidebar-2"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-sidebar-2")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-grid4-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid4-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-grid3-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid3-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-grid2-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-grid2-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-column4-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-column4-alt")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-column3-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-column3-alt")
+                                ])
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-layout-column2-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-layout-column2-alt")
+                                ])
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "icon-section" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-md-12" }, [
+                              _c("h3", [_vm._v("Brand Icons")])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-flickr" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-flickr")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-flickr-alt" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-flickr-alt")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-instagram" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-instagram")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-google" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-google")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-github" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-github")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-facebook" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-facebook")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-dropbox" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-dropbox")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-dropbox-alt" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-dropbox-alt")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-dribbble" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-dribbble")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-apple" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-apple")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-android" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-android")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-yahoo" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-yahoo")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-trello" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-trello")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", {
+                                    staticClass: "ti-stack-overflow"
+                                  }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-stack-overflow")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-soundcloud" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-soundcloud")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-sharethis" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-sharethis")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", {
+                                    staticClass: "ti-sharethis-alt"
+                                  }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-sharethis-alt")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-reddit" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-reddit")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-microsoft" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-microsoft")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", {
+                                    staticClass: "ti-microsoft-alt"
+                                  }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-microsoft-alt")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-linux" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-linux")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-jsfiddle" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-jsfiddle")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-joomla" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-joomla")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-html5" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-html5")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-css3" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-css3")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-drupal" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-drupal")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-wordpress" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-wordpress")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-tumblr" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-tumblr")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-tumblr-alt" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-tumblr-alt")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-skype" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-skype")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-youtube" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-youtube")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-vimeo" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-vimeo")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-vimeo-alt" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-vimeo-alt")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-twitter" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-twitter")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-twitter-alt" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-twitter-alt")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-linkedin" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-linkedin")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", { staticClass: "ti-pinterest" }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-pinterest")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", {
+                                    staticClass: "ti-pinterest-alt"
+                                  }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-pinterest-alt")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", {
+                                    staticClass: "ti-themify-logo"
+                                  }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-themify-logo")
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                              },
+                              [
+                                _c("div", { staticClass: "preview" }, [
+                                  _c("span", {
+                                    staticClass: "ti-themify-favicon"
+                                  }),
+                                  _c("span", { staticClass: "icon-name" }, [
+                                    _vm._v(" ti-themify-favicon")
+                                  ])
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "icon-preview-box col-12 col-sm-4 col-md-3 col-lg-3"
+                            },
+                            [
+                              _c("div", { staticClass: "preview" }, [
+                                _c("span", {
+                                  staticClass: "ti-themify-favicon-alt"
+                                }),
+                                _c("span", { staticClass: "icon-name" }, [
+                                  _vm._v(" ti-themify-favicon-alt")
+                                ])
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "background-overlay" })
+            ])
+          ])
+        ]
       )
-    ])
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -231,25 +8236,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-fbc7073e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-40abb7a2", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 487:
+/***/ 461:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1960)
+  __webpack_require__(1521)
+  __webpack_require__(1523)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1962)
+var __vue_script__ = __webpack_require__(1525)
 /* template */
-var __vue_template__ = __webpack_require__(1963)
+var __vue_template__ = __webpack_require__(1526)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -266,7 +8272,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/dropify.vue"
+Component.options.__file = "resources/components/pages/themify_icons.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -275,9 +8281,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fbc7073e", Component.options)
+    hotAPI.createRecord("data-v-40abb7a2", Component.options)
   } else {
-    hotAPI.reload("data-v-fbc7073e", Component.options)
+    hotAPI.reload("data-v-40abb7a2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -289,7 +8295,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 524:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10661,19 +18667,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 527:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(528)
+  __webpack_require__(531)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(530)
+var __vue_script__ = __webpack_require__(533)
 /* template */
-var __vue_template__ = __webpack_require__(531)
+var __vue_template__ = __webpack_require__(534)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -10713,13 +18719,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(529);
+var content = __webpack_require__(532);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -10740,7 +18746,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 529:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -10755,7 +18761,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 530:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10800,7 +18806,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 531:
+/***/ 534:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -10862,59 +18868,22 @@ if (false) {
 
 /***/ }),
 
-/***/ 629:
+/***/ 589:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {!function(e,t){ true?module.exports=t():"function"==typeof define&&define.amd?define(t):e.vue2Dropzone=t()}(this,function(){"use strict";var n={getSignedURL:function(o,s){var a={filePath:o.name,contentType:o.type};return new Promise(function(e,t){var n=new FormData,r=new XMLHttpRequest,i="function"==typeof s.signingURL?s.signingURL(o):s.signingURL;r.open("POST",i),r.onload=function(){200==r.status?e(JSON.parse(r.response)):t(r.statusText)},r.onerror=function(e){console.error("Network Error : Could not send request to AWS (Maybe CORS errors)"),t(e)},!0===s.withCredentials&&(r.withCredentials=!0),Object.entries(s.headers||{}).forEach(function(e){var t=e[0],i=e[1];r.setRequestHeader(t,i)}),a=Object.assign(a,s.params||{}),Object.entries(a).forEach(function(e){var t=e[0],i=e[1];n.append(t,i)}),r.send(n)})},sendFile:function(t,e,i){var n=i?this.setResponseHandler:this.sendS3Handler;return this.getSignedURL(t,e).then(function(e){return n(e,t)}).catch(function(e){return e})},setResponseHandler:function(e,t){t.s3Signature=e.signature,t.s3Url=e.postEndpoint},sendS3Handler:function(e,t){var o=new FormData,i=e.signature;return Object.keys(i).forEach(function(e){o.append(e,i[e])}),o.append("file",t),new Promise(function(i,n){var r=new XMLHttpRequest;r.open("POST",e.postEndpoint),r.onload=function(){if(201==r.status){var e=(new window.DOMParser).parseFromString(r.response,"text/xml").firstChild.children[0].innerHTML;i({success:!0,message:e})}else{var t=(new window.DOMParser).parseFromString(r.response,"text/xml").firstChild.children[0].innerHTML;n({success:!1,message:t+". Request is marked as resolved when returns as status 201"})}},r.onerror=function(e){var t=(new window.DOMParser).parseFromString(r.response,"text/xml").firstChild.children[1].innerHTML;n({success:!1,message:t})},r.send(o)})}};var e,t=(function(e){var t=function(){function n(e,t){for(var i=0;i<t.length;i++){var n=t[i];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,i){return t&&n(e.prototype,t),i&&n(e,i),e}}();function a(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var i=function(){function e(){l(this,e)}return t(e,[{key:"on",value:function(e,t){return this._callbacks=this._callbacks||{},this._callbacks[e]||(this._callbacks[e]=[]),this._callbacks[e].push(t),this}},{key:"emit",value:function(e){this._callbacks=this._callbacks||{};var t=this._callbacks[e];if(t){for(var i=arguments.length,n=Array(1<i?i-1:0),r=1;r<i;r++)n[r-1]=arguments[r];for(var o=0,s=s=t;;){if(o>=s.length)break;s[o++].apply(this,n)}}return this}},{key:"off",value:function(e,t){if(!this._callbacks||0===arguments.length)return this._callbacks={},this;var i=this._callbacks[e];if(!i)return this;if(1===arguments.length)return delete this._callbacks[e],this;for(var n=0;n<i.length;n++){if(i[n]===t){i.splice(n,1);break}}return this}}]),e}(),r=function(e){function b(e,t){l(this,b);var i,n=a(this,(b.__proto__||Object.getPrototypeOf(b)).call(this)),r=void 0;if(n.element=e,n.version=b.version,n.defaultOptions.previewTemplate=n.defaultOptions.previewTemplate.replace(/\n*/g,""),n.clickableElements=[],n.listeners=[],n.files=[],"string"==typeof n.element&&(n.element=document.querySelector(n.element)),!n.element||null==n.element.nodeType)throw new Error("Invalid dropzone element.");if(n.element.dropzone)throw new Error("Dropzone already attached.");b.instances.push(n),n.element.dropzone=n;var o,s=null!=(i=b.optionsForElement(n.element))?i:{};if(n.options=b.extend({},n.defaultOptions,s,null!=t?t:{}),n.options.forceFallback||!b.isBrowserSupported())return o=n.options.fallback.call(n),a(n,o);if(null==n.options.url&&(n.options.url=n.element.getAttribute("action")),!n.options.url)throw new Error("No URL provided.");if(n.options.acceptedFiles&&n.options.acceptedMimeTypes)throw new Error("You can't provide both 'acceptedFiles' and 'acceptedMimeTypes'. 'acceptedMimeTypes' is deprecated.");if(n.options.uploadMultiple&&n.options.chunking)throw new Error("You cannot set both: uploadMultiple and chunking.");return n.options.acceptedMimeTypes&&(n.options.acceptedFiles=n.options.acceptedMimeTypes,delete n.options.acceptedMimeTypes),null!=n.options.renameFilename&&(n.options.renameFile=function(e){return n.options.renameFilename.call(n,e.name,e)}),n.options.method=n.options.method.toUpperCase(),(r=n.getExistingFallback())&&r.parentNode&&r.parentNode.removeChild(r),!1!==n.options.previewsContainer&&(n.options.previewsContainer?n.previewsContainer=b.getElement(n.options.previewsContainer,"previewsContainer"):n.previewsContainer=n.element),n.options.clickable&&(!0===n.options.clickable?n.clickableElements=[n.element]:n.clickableElements=b.getElements(n.options.clickable,"clickable")),n.init(),n}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}(b,i),t(b,null,[{key:"initClass",value:function(){this.prototype.Emitter=i,this.prototype.events=["drop","dragstart","dragend","dragenter","dragover","dragleave","addedfile","addedfiles","removedfile","thumbnail","error","errormultiple","processing","processingmultiple","uploadprogress","totaluploadprogress","sending","sendingmultiple","success","successmultiple","canceled","canceledmultiple","complete","completemultiple","reset","maxfilesexceeded","maxfilesreached","queuecomplete"],this.prototype.defaultOptions={url:null,method:"post",withCredentials:!1,timeout:3e4,parallelUploads:2,uploadMultiple:!1,chunking:!1,forceChunking:!1,chunkSize:2e6,parallelChunkUploads:!1,retryChunks:!1,retryChunksLimit:3,maxFilesize:256,paramName:"file",createImageThumbnails:!0,maxThumbnailFilesize:10,thumbnailWidth:120,thumbnailHeight:120,thumbnailMethod:"crop",resizeWidth:null,resizeHeight:null,resizeMimeType:null,resizeQuality:.8,resizeMethod:"contain",filesizeBase:1e3,maxFiles:null,headers:null,clickable:!0,ignoreHiddenFiles:!0,acceptedFiles:null,acceptedMimeTypes:null,autoProcessQueue:!0,autoQueue:!0,addRemoveLinks:!1,previewsContainer:null,hiddenInputContainer:"body",capture:null,renameFilename:null,renameFile:null,forceFallback:!1,dictDefaultMessage:"Drop files here to upload",dictFallbackMessage:"Your browser does not support drag'n'drop file uploads.",dictFallbackText:"Please use the fallback form below to upload your files like in the olden days.",dictFileTooBig:"File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",dictInvalidFileType:"You can't upload files of this type.",dictResponseError:"Server responded with {{statusCode}} code.",dictCancelUpload:"Cancel upload",dictUploadCanceled:"Upload canceled.",dictCancelUploadConfirmation:"Are you sure you want to cancel this upload?",dictRemoveFile:"Remove file",dictRemoveFileConfirmation:null,dictMaxFilesExceeded:"You can not upload any more files.",dictFileSizeUnits:{tb:"TB",gb:"GB",mb:"MB",kb:"KB",b:"b"},init:function(){},params:function(e,t,i){if(i)return{dzuuid:i.file.upload.uuid,dzchunkindex:i.index,dztotalfilesize:i.file.size,dzchunksize:this.options.chunkSize,dztotalchunkcount:i.file.upload.totalChunkCount,dzchunkbyteoffset:i.index*this.options.chunkSize}},accept:function(e,t){return t()},chunksUploaded:function(e,t){t()},fallback:function(){var e=void 0;this.element.className=this.element.className+" dz-browser-not-supported";for(var t=0,i=i=this.element.getElementsByTagName("div");;){if(t>=i.length)break;var n=i[t++];if(/(^| )dz-message($| )/.test(n.className)){(e=n).className="dz-message";break}}e||(e=b.createElement('<div class="dz-message"><span></span></div>'),this.element.appendChild(e));var r=e.getElementsByTagName("span")[0];return r&&(null!=r.textContent?r.textContent=this.options.dictFallbackMessage:null!=r.innerText&&(r.innerText=this.options.dictFallbackMessage)),this.element.appendChild(this.getFallbackForm())},resize:function(e,t,i,n){var r={srcX:0,srcY:0,srcWidth:e.width,srcHeight:e.height},o=e.width/e.height;null==t&&null==i?(t=r.srcWidth,i=r.srcHeight):null==t?t=i*o:null==i&&(i=t/o);var s=(t=Math.min(t,r.srcWidth))/(i=Math.min(i,r.srcHeight));if(r.srcWidth>t||r.srcHeight>i)if("crop"===n)s<o?(r.srcHeight=e.height,r.srcWidth=r.srcHeight*s):(r.srcWidth=e.width,r.srcHeight=r.srcWidth/s);else{if("contain"!==n)throw new Error("Unknown resizeMethod '"+n+"'");s<o?i=t/o:t=i*o}return r.srcX=(e.width-r.srcWidth)/2,r.srcY=(e.height-r.srcHeight)/2,r.trgWidth=t,r.trgHeight=i,r},transformFile:function(e,t){return(this.options.resizeWidth||this.options.resizeHeight)&&e.type.match(/image.*/)?this.resizeImage(e,this.options.resizeWidth,this.options.resizeHeight,this.options.resizeMethod,t):t(e)},previewTemplate:'<div class="dz-preview dz-file-preview">\n  <div class="dz-image"><img data-dz-thumbnail /></div>\n  <div class="dz-details">\n    <div class="dz-size"><span data-dz-size></span></div>\n    <div class="dz-filename"><span data-dz-name></span></div>\n  </div>\n  <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>\n  <div class="dz-error-message"><span data-dz-errormessage></span></div>\n  <div class="dz-success-mark">\n    <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">\n      <title>Check</title>\n      <defs></defs>\n      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">\n        <path d="M23.5,31.8431458 L17.5852419,25.9283877 C16.0248253,24.3679711 13.4910294,24.366835 11.9289322,25.9289322 C10.3700136,27.4878508 10.3665912,30.0234455 11.9283877,31.5852419 L20.4147581,40.0716123 C20.5133999,40.1702541 20.6159315,40.2626649 20.7218615,40.3488435 C22.2835669,41.8725651 24.794234,41.8626202 26.3461564,40.3106978 L43.3106978,23.3461564 C44.8771021,21.7797521 44.8758057,19.2483887 43.3137085,17.6862915 C41.7547899,16.1273729 39.2176035,16.1255422 37.6538436,17.6893022 L23.5,31.8431458 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" id="Oval-2" stroke-opacity="0.198794158" stroke="#747474" fill-opacity="0.816519475" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>\n      </g>\n    </svg>\n  </div>\n  <div class="dz-error-mark">\n    <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">\n      <title>Error</title>\n      <defs></defs>\n      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">\n        <g id="Check-+-Oval-2" sketch:type="MSLayerGroup" stroke="#747474" stroke-opacity="0.198794158" fill="#FFFFFF" fill-opacity="0.816519475">\n          <path d="M32.6568542,29 L38.3106978,23.3461564 C39.8771021,21.7797521 39.8758057,19.2483887 38.3137085,17.6862915 C36.7547899,16.1273729 34.2176035,16.1255422 32.6538436,17.6893022 L27,23.3431458 L21.3461564,17.6893022 C19.7823965,16.1255422 17.2452101,16.1273729 15.6862915,17.6862915 C14.1241943,19.2483887 14.1228979,21.7797521 15.6893022,23.3461564 L21.3431458,29 L15.6893022,34.6538436 C14.1228979,36.2202479 14.1241943,38.7516113 15.6862915,40.3137085 C17.2452101,41.8726271 19.7823965,41.8744578 21.3461564,40.3106978 L27,34.6568542 L32.6538436,40.3106978 C34.2176035,41.8744578 36.7547899,41.8726271 38.3137085,40.3137085 C39.8758057,38.7516113 39.8771021,36.2202479 38.3106978,34.6538436 L32.6568542,29 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" id="Oval-2" sketch:type="MSShapeGroup"></path>\n        </g>\n      </g>\n    </svg>\n  </div>\n</div>',drop:function(e){return this.element.classList.remove("dz-drag-hover")},dragstart:function(e){},dragend:function(e){return this.element.classList.remove("dz-drag-hover")},dragenter:function(e){return this.element.classList.add("dz-drag-hover")},dragover:function(e){return this.element.classList.add("dz-drag-hover")},dragleave:function(e){return this.element.classList.remove("dz-drag-hover")},paste:function(e){},reset:function(){return this.element.classList.remove("dz-started")},addedfile:function(t){var i=this;if(this.element===this.previewsContainer&&this.element.classList.add("dz-started"),this.previewsContainer){t.previewElement=b.createElement(this.options.previewTemplate.trim()),t.previewTemplate=t.previewElement,this.previewsContainer.appendChild(t.previewElement);for(var e=0,n=n=t.previewElement.querySelectorAll("[data-dz-name]");;){if(e>=n.length)break;var r=n[e++];r.textContent=t.name}for(var o=0,s=s=t.previewElement.querySelectorAll("[data-dz-size]");!(o>=s.length);)(r=s[o++]).innerHTML=this.filesize(t.size);this.options.addRemoveLinks&&(t._removeLink=b.createElement('<a class="dz-remove" href="javascript:undefined;" data-dz-remove>'+this.options.dictRemoveFile+"</a>"),t.previewElement.appendChild(t._removeLink));for(var a=function(e){return e.preventDefault(),e.stopPropagation(),t.status===b.UPLOADING?b.confirm(i.options.dictCancelUploadConfirmation,function(){return i.removeFile(t)}):i.options.dictRemoveFileConfirmation?b.confirm(i.options.dictRemoveFileConfirmation,function(){return i.removeFile(t)}):i.removeFile(t)},l=0,u=u=t.previewElement.querySelectorAll("[data-dz-remove]");;){if(l>=u.length)break;u[l++].addEventListener("click",a)}}},removedfile:function(e){return null!=e.previewElement&&null!=e.previewElement.parentNode&&e.previewElement.parentNode.removeChild(e.previewElement),this._updateMaxFilesReachedClass()},thumbnail:function(e,t){if(e.previewElement){e.previewElement.classList.remove("dz-file-preview");for(var i=0,n=n=e.previewElement.querySelectorAll("[data-dz-thumbnail]");;){if(i>=n.length)break;var r=n[i++];r.alt=e.name,r.src=t}return setTimeout(function(){return e.previewElement.classList.add("dz-image-preview")},1)}},error:function(e,t){if(e.previewElement){e.previewElement.classList.add("dz-error"),"String"!=typeof t&&t.error&&(t=t.error);for(var i=0,n=n=e.previewElement.querySelectorAll("[data-dz-errormessage]");;){if(i>=n.length)break;n[i++].textContent=t}}},errormultiple:function(){},processing:function(e){if(e.previewElement&&(e.previewElement.classList.add("dz-processing"),e._removeLink))return e._removeLink.textContent=this.options.dictCancelUpload},processingmultiple:function(){},uploadprogress:function(e,t,i){if(e.previewElement)for(var n=0,r=r=e.previewElement.querySelectorAll("[data-dz-uploadprogress]");;){if(n>=r.length)break;var o=r[n++];"PROGRESS"===o.nodeName?o.value=t:o.style.width=t+"%"}},totaluploadprogress:function(){},sending:function(){},sendingmultiple:function(){},success:function(e){if(e.previewElement)return e.previewElement.classList.add("dz-success")},successmultiple:function(){},canceled:function(e){return this.emit("error",e,this.options.dictUploadCanceled)},canceledmultiple:function(){},complete:function(e){if(e._removeLink&&(e._removeLink.textContent=this.options.dictRemoveFile),e.previewElement)return e.previewElement.classList.add("dz-complete")},completemultiple:function(){},maxfilesexceeded:function(){},maxfilesreached:function(){},queuecomplete:function(){},addedfiles:function(){}},this.prototype._thumbnailQueue=[],this.prototype._processingThumbnail=!1}},{key:"extend",value:function(e){for(var t=arguments.length,i=Array(1<t?t-1:0),n=1;n<t;n++)i[n-1]=arguments[n];for(var r=0,o=o=i;;){if(r>=o.length)break;var s=o[r++];for(var a in s){var l=s[a];e[a]=l}}return e}}]),t(b,[{key:"getAcceptedFiles",value:function(){return this.files.filter(function(e){return e.accepted}).map(function(e){return e})}},{key:"getRejectedFiles",value:function(){return this.files.filter(function(e){return!e.accepted}).map(function(e){return e})}},{key:"getFilesWithStatus",value:function(t){return this.files.filter(function(e){return e.status===t}).map(function(e){return e})}},{key:"getQueuedFiles",value:function(){return this.getFilesWithStatus(b.QUEUED)}},{key:"getUploadingFiles",value:function(){return this.getFilesWithStatus(b.UPLOADING)}},{key:"getAddedFiles",value:function(){return this.getFilesWithStatus(b.ADDED)}},{key:"getActiveFiles",value:function(){return this.files.filter(function(e){return e.status===b.UPLOADING||e.status===b.QUEUED}).map(function(e){return e})}},{key:"init",value:function(){var o=this;if("form"===this.element.tagName&&this.element.setAttribute("enctype","multipart/form-data"),this.element.classList.contains("dropzone")&&!this.element.querySelector(".dz-message")&&this.element.appendChild(b.createElement('<div class="dz-default dz-message"><span>'+this.options.dictDefaultMessage+"</span></div>")),this.clickableElements.length){!function r(){return o.hiddenFileInput&&o.hiddenFileInput.parentNode.removeChild(o.hiddenFileInput),o.hiddenFileInput=document.createElement("input"),o.hiddenFileInput.setAttribute("type","file"),(null===o.options.maxFiles||1<o.options.maxFiles)&&o.hiddenFileInput.setAttribute("multiple","multiple"),o.hiddenFileInput.className="dz-hidden-input",null!==o.options.acceptedFiles&&o.hiddenFileInput.setAttribute("accept",o.options.acceptedFiles),null!==o.options.capture&&o.hiddenFileInput.setAttribute("capture",o.options.capture),o.hiddenFileInput.style.visibility="hidden",o.hiddenFileInput.style.position="absolute",o.hiddenFileInput.style.top="0",o.hiddenFileInput.style.left="0",o.hiddenFileInput.style.height="0",o.hiddenFileInput.style.width="0",document.querySelector(o.options.hiddenInputContainer).appendChild(o.hiddenFileInput),o.hiddenFileInput.addEventListener("change",function(){var e=o.hiddenFileInput.files;if(e.length)for(var t=0,i=i=e;!(t>=i.length);){var n=i[t++];o.addFile(n)}return o.emit("addedfiles",e),r()})}()}this.URL=null!==window.URL?window.URL:window.webkitURL;for(var e=0,t=t=this.events;;){if(e>=t.length)break;var i=t[e++];this.on(i,this.options[i])}this.on("uploadprogress",function(){return o.updateTotalUploadProgress()}),this.on("removedfile",function(){return o.updateTotalUploadProgress()}),this.on("canceled",function(e){return o.emit("complete",e)}),this.on("complete",function(e){if(0===o.getAddedFiles().length&&0===o.getUploadingFiles().length&&0===o.getQueuedFiles().length)return setTimeout(function(){return o.emit("queuecomplete")},0)});var n=function(e){return e.stopPropagation(),e.preventDefault?e.preventDefault():e.returnValue=!1};return this.listeners=[{element:this.element,events:{dragstart:function(e){return o.emit("dragstart",e)},dragenter:function(e){return n(e),o.emit("dragenter",e)},dragover:function(e){var t=void 0;try{t=e.dataTransfer.effectAllowed}catch(e){}return e.dataTransfer.dropEffect="move"===t||"linkMove"===t?"move":"copy",n(e),o.emit("dragover",e)},dragleave:function(e){return o.emit("dragleave",e)},drop:function(e){return n(e),o.drop(e)},dragend:function(e){return o.emit("dragend",e)}}}],this.clickableElements.forEach(function(t){return o.listeners.push({element:t,events:{click:function(e){return(t!==o.element||e.target===o.element||b.elementInside(e.target,o.element.querySelector(".dz-message")))&&o.hiddenFileInput.click(),!0}}})}),this.enable(),this.options.init.call(this)}},{key:"destroy",value:function(){return this.disable(),this.removeAllFiles(!0),(null!=this.hiddenFileInput?this.hiddenFileInput.parentNode:void 0)&&(this.hiddenFileInput.parentNode.removeChild(this.hiddenFileInput),this.hiddenFileInput=null),delete this.element.dropzone,b.instances.splice(b.instances.indexOf(this),1)}},{key:"updateTotalUploadProgress",value:function(){var e=void 0,t=0,i=0;if(this.getActiveFiles().length){for(var n=0,r=r=this.getActiveFiles();;){if(n>=r.length)break;var o=r[n++];t+=o.upload.bytesSent,i+=o.upload.total}e=100*t/i}else e=100;return this.emit("totaluploadprogress",e,i,t)}},{key:"_getParamName",value:function(e){return"function"==typeof this.options.paramName?this.options.paramName(e):this.options.paramName+(this.options.uploadMultiple?"["+e+"]":"")}},{key:"_renameFile",value:function(e){return"function"!=typeof this.options.renameFile?e.name:this.options.renameFile(e)}},{key:"getFallbackForm",value:function(){var e,t=void 0;if(e=this.getExistingFallback())return e;var i='<div class="dz-fallback">';this.options.dictFallbackText&&(i+="<p>"+this.options.dictFallbackText+"</p>"),i+='<input type="file" name="'+this._getParamName(0)+'" '+(this.options.uploadMultiple?'multiple="multiple"':void 0)+' /><input type="submit" value="Upload!"></div>';var n=b.createElement(i);return"FORM"!==this.element.tagName?(t=b.createElement('<form action="'+this.options.url+'" enctype="multipart/form-data" method="'+this.options.method+'"></form>')).appendChild(n):(this.element.setAttribute("enctype","multipart/form-data"),this.element.setAttribute("method",this.options.method)),null!=t?t:n}},{key:"getExistingFallback",value:function(){for(var e=function(e){for(var t=0,i=i=e;;){if(t>=i.length)break;var n=i[t++];if(/(^| )fallback($| )/.test(n.className))return n}},t=["div","form"],i=0;i<t.length;i++){var n,r=t[i];if(n=e(this.element.getElementsByTagName(r)))return n}}},{key:"setupEventListeners",value:function(){return this.listeners.map(function(n){return function(){var e=[];for(var t in n.events){var i=n.events[t];e.push(n.element.addEventListener(t,i,!1))}return e}()})}},{key:"removeEventListeners",value:function(){return this.listeners.map(function(n){return function(){var e=[];for(var t in n.events){var i=n.events[t];e.push(n.element.removeEventListener(t,i,!1))}return e}()})}},{key:"disable",value:function(){var t=this;return this.clickableElements.forEach(function(e){return e.classList.remove("dz-clickable")}),this.removeEventListeners(),this.disabled=!0,this.files.map(function(e){return t.cancelUpload(e)})}},{key:"enable",value:function(){return delete this.disabled,this.clickableElements.forEach(function(e){return e.classList.add("dz-clickable")}),this.setupEventListeners()}},{key:"filesize",value:function(e){var t=0,i="b";if(0<e){for(var n=["tb","gb","mb","kb","b"],r=0;r<n.length;r++){var o=n[r];if(Math.pow(this.options.filesizeBase,4-r)/10<=e){t=e/Math.pow(this.options.filesizeBase,4-r),i=o;break}}t=Math.round(10*t)/10}return"<strong>"+t+"</strong> "+this.options.dictFileSizeUnits[i]}},{key:"_updateMaxFilesReachedClass",value:function(){return null!=this.options.maxFiles&&this.getAcceptedFiles().length>=this.options.maxFiles?(this.getAcceptedFiles().length===this.options.maxFiles&&this.emit("maxfilesreached",this.files),this.element.classList.add("dz-max-files-reached")):this.element.classList.remove("dz-max-files-reached")}},{key:"drop",value:function(e){if(e.dataTransfer){this.emit("drop",e);for(var t=[],i=0;i<e.dataTransfer.files.length;i++)t[i]=e.dataTransfer.files[i];if(this.emit("addedfiles",t),t.length){var n=e.dataTransfer.items;n&&n.length&&null!=n[0].webkitGetAsEntry?this._addFilesFromItems(n):this.handleFiles(t)}}}},{key:"paste",value:function(e){if(null!=(t=null!=e?e.clipboardData:void 0,i=function(e){return e.items},null!=t?i(t):void 0)){var t,i;this.emit("paste",e);var n=e.clipboardData.items;return n.length?this._addFilesFromItems(n):void 0}}},{key:"handleFiles",value:function(e){for(var t=0,i=i=e;;){if(t>=i.length)break;var n=i[t++];this.addFile(n)}}},{key:"_addFilesFromItems",value:function(o){var s=this;return function(){for(var e=[],t=0,i=i=o;;){if(t>=i.length)break;var n,r=i[t++];null!=r.webkitGetAsEntry&&(n=r.webkitGetAsEntry())?n.isFile?e.push(s.addFile(r.getAsFile())):n.isDirectory?e.push(s._addFilesFromDirectory(n,n.name)):e.push(void 0):null!=r.getAsFile&&(null==r.kind||"file"===r.kind)?e.push(s.addFile(r.getAsFile())):e.push(void 0)}return e}()}},{key:"_addFilesFromDirectory",value:function(e,o){var s=this,t=e.createReader(),i=function(t){return e=console,i="log",n=function(e){return e.log(t)},null!=e&&"function"==typeof e[i]?n(e,i):void 0;var e,i,n};return function r(){return t.readEntries(function(e){if(0<e.length){for(var t=0,i=i=e;!(t>=i.length);){var n=i[t++];n.isFile?n.file(function(e){if(!s.options.ignoreHiddenFiles||"."!==e.name.substring(0,1))return e.fullPath=o+"/"+e.name,s.addFile(e)}):n.isDirectory&&s._addFilesFromDirectory(n,o+"/"+n.name)}r()}return null},i)}()}},{key:"accept",value:function(e,t){return e.size>1024*this.options.maxFilesize*1024?t(this.options.dictFileTooBig.replace("{{filesize}}",Math.round(e.size/1024/10.24)/100).replace("{{maxFilesize}}",this.options.maxFilesize)):b.isValidFile(e,this.options.acceptedFiles)?null!=this.options.maxFiles&&this.getAcceptedFiles().length>=this.options.maxFiles?(t(this.options.dictMaxFilesExceeded.replace("{{maxFiles}}",this.options.maxFiles)),this.emit("maxfilesexceeded",e)):this.options.accept.call(this,e,t):t(this.options.dictInvalidFileType)}},{key:"addFile",value:function(t){var i=this;return t.upload={uuid:b.uuidv4(),progress:0,total:t.size,bytesSent:0,filename:this._renameFile(t),chunked:this.options.chunking&&(this.options.forceChunking||t.size>this.options.chunkSize),totalChunkCount:Math.ceil(t.size/this.options.chunkSize)},this.files.push(t),t.status=b.ADDED,this.emit("addedfile",t),this._enqueueThumbnail(t),this.accept(t,function(e){return e?(t.accepted=!1,i._errorProcessing([t],e)):(t.accepted=!0,i.options.autoQueue&&i.enqueueFile(t)),i._updateMaxFilesReachedClass()})}},{key:"enqueueFiles",value:function(e){for(var t=0,i=i=e;;){if(t>=i.length)break;var n=i[t++];this.enqueueFile(n)}return null}},{key:"enqueueFile",value:function(e){var t=this;if(e.status!==b.ADDED||!0!==e.accepted)throw new Error("This file can't be queued because it has already been processed or was rejected.");if(e.status=b.QUEUED,this.options.autoProcessQueue)return setTimeout(function(){return t.processQueue()},0)}},{key:"_enqueueThumbnail",value:function(e){var t=this;if(this.options.createImageThumbnails&&e.type.match(/image.*/)&&e.size<=1024*this.options.maxThumbnailFilesize*1024)return this._thumbnailQueue.push(e),setTimeout(function(){return t._processThumbnailQueue()},0)}},{key:"_processThumbnailQueue",value:function(){var t=this;if(!this._processingThumbnail&&0!==this._thumbnailQueue.length){this._processingThumbnail=!0;var i=this._thumbnailQueue.shift();return this.createThumbnail(i,this.options.thumbnailWidth,this.options.thumbnailHeight,this.options.thumbnailMethod,!0,function(e){return t.emit("thumbnail",i,e),t._processingThumbnail=!1,t._processThumbnailQueue()})}}},{key:"removeFile",value:function(e){if(e.status===b.UPLOADING&&this.cancelUpload(e),this.files=n(this.files,e),this.emit("removedfile",e),0===this.files.length)return this.emit("reset")}},{key:"removeAllFiles",value:function(e){null==e&&(e=!1);for(var t=0,i=i=this.files.slice();;){if(t>=i.length)break;var n=i[t++];(n.status!==b.UPLOADING||e)&&this.removeFile(n)}return null}},{key:"resizeImage",value:function(r,e,t,i,o){var s=this;return this.createThumbnail(r,e,t,i,!1,function(e,t){if(null==t)return o(r);var i=s.options.resizeMimeType;null==i&&(i=r.type);var n=t.toDataURL(i,s.options.resizeQuality);return"image/jpeg"!==i&&"image/jpg"!==i||(n=u.restore(r.dataURL,n)),o(b.dataURItoBlob(n))})}},{key:"createThumbnail",value:function(e,t,i,n,r,o){var s=this,a=new FileReader;return a.onload=function(){if(e.dataURL=a.result,"image/svg+xml"!==e.type)return s.createThumbnailFromUrl(e,t,i,n,r,o);null!=o&&o(a.result)},a.readAsDataURL(e)}},{key:"createThumbnailFromUrl",value:function(o,s,a,l,t,u,e){var d=this,c=document.createElement("img");return e&&(c.crossOrigin=e),c.onload=function(){var e=function(e){return e(1)};return"undefined"!=typeof EXIF&&null!==EXIF&&t&&(e=function(e){return EXIF.getData(c,function(){return e(EXIF.getTag(this,"Orientation"))})}),e(function(e){o.width=c.width,o.height=c.height;var t=d.options.resize.call(d,o,s,a,l),i=document.createElement("canvas"),n=i.getContext("2d");switch(i.width=t.trgWidth,i.height=t.trgHeight,4<e&&(i.width=t.trgHeight,i.height=t.trgWidth),e){case 2:n.translate(i.width,0),n.scale(-1,1);break;case 3:n.translate(i.width,i.height),n.rotate(Math.PI);break;case 4:n.translate(0,i.height),n.scale(1,-1);break;case 5:n.rotate(.5*Math.PI),n.scale(1,-1);break;case 6:n.rotate(.5*Math.PI),n.translate(0,-i.height);break;case 7:n.rotate(.5*Math.PI),n.translate(i.width,-i.height),n.scale(-1,1);break;case 8:n.rotate(-.5*Math.PI),n.translate(-i.width,0)}p(n,c,null!=t.srcX?t.srcX:0,null!=t.srcY?t.srcY:0,t.srcWidth,t.srcHeight,null!=t.trgX?t.trgX:0,null!=t.trgY?t.trgY:0,t.trgWidth,t.trgHeight);var r=i.toDataURL("image/png");if(null!=u)return u(r,i)})},null!=u&&(c.onerror=u),c.src=o.dataURL}},{key:"processQueue",value:function(){var e=this.options.parallelUploads,t=this.getUploadingFiles().length,i=t;if(!(e<=t)){var n=this.getQueuedFiles();if(0<n.length){if(this.options.uploadMultiple)return this.processFiles(n.slice(0,e-t));for(;i<e;){if(!n.length)return;this.processFile(n.shift()),i++}}}}},{key:"processFile",value:function(e){return this.processFiles([e])}},{key:"processFiles",value:function(e){for(var t=0,i=i=e;;){if(t>=i.length)break;var n=i[t++];n.processing=!0,n.status=b.UPLOADING,this.emit("processing",n)}return this.options.uploadMultiple&&this.emit("processingmultiple",e),this.uploadFiles(e)}},{key:"_getFilesWithXhr",value:function(t){return this.files.filter(function(e){return e.xhr===t}).map(function(e){return e})}},{key:"cancelUpload",value:function(e){if(e.status===b.UPLOADING){for(var t=this._getFilesWithXhr(e.xhr),i=0,n=n=t;;){if(i>=n.length)break;n[i++].status=b.CANCELED}void 0!==e.xhr&&e.xhr.abort();for(var r=0,o=o=t;;){if(r>=o.length)break;var s=o[r++];this.emit("canceled",s)}this.options.uploadMultiple&&this.emit("canceledmultiple",t)}else e.status!==b.ADDED&&e.status!==b.QUEUED||(e.status=b.CANCELED,this.emit("canceled",e),this.options.uploadMultiple&&this.emit("canceledmultiple",[e]));if(this.options.autoProcessQueue)return this.processQueue()}},{key:"resolveOption",value:function(e){if("function"==typeof e){for(var t=arguments.length,i=Array(1<t?t-1:0),n=1;n<t;n++)i[n-1]=arguments[n];return e.apply(this,i)}return e}},{key:"uploadFile",value:function(e){return this.uploadFiles([e])}},{key:"uploadFiles",value:function(a){var l=this;this._transformFiles(a,function(e){if(a[0].upload.chunked){var r=a[0],o=e[0];r.upload.chunks=[];var n=function(){for(var e=0;void 0!==r.upload.chunks[e];)e++;if(!(e>=r.upload.totalChunkCount)){0;var t=e*l.options.chunkSize,i=Math.min(t+l.options.chunkSize,r.size),n={name:l._getParamName(0),data:o.webkitSlice?o.webkitSlice(t,i):o.slice(t,i),filename:r.upload.filename,chunkIndex:e};r.upload.chunks[e]={file:r,index:e,dataBlock:n,status:b.UPLOADING,progress:0,retries:0},l._uploadData(a,[n])}};if(r.upload.finishedChunkUpload=function(e){var t=!0;e.status=b.SUCCESS,e.dataBlock=null;for(var i=0;i<r.upload.totalChunkCount;i++){if(void 0===r.upload.chunks[i])return n();r.upload.chunks[i].status!==b.SUCCESS&&(t=!1)}t&&l.options.chunksUploaded(r,function(){l._finished(a,"",null)})},l.options.parallelChunkUploads)for(var t=0;t<r.upload.totalChunkCount;t++)n();else n()}else{for(var i=[],s=0;s<a.length;s++)i[s]={name:l._getParamName(s),data:e[s],filename:a[s].upload.filename};l._uploadData(a,i)}})}},{key:"_getChunk",value:function(e,t){for(var i=0;i<e.upload.totalChunkCount;i++)if(void 0!==e.upload.chunks[i]&&e.upload.chunks[i].xhr===t)return e.upload.chunks[i]}},{key:"_uploadData",value:function(t,e){for(var i=this,n=new XMLHttpRequest,r=0,o=o=t;;){if(r>=o.length)break;o[r++].xhr=n}t[0].upload.chunked&&(t[0].upload.chunks[e[0].chunkIndex].xhr=n);var s=this.resolveOption(this.options.method,t),a=this.resolveOption(this.options.url,t);n.open(s,a,!0),n.timeout=this.resolveOption(this.options.timeout,t),n.withCredentials=!!this.options.withCredentials,n.onload=function(e){i._finishedUploading(t,n,e)},n.onerror=function(){i._handleUploadError(t,n)},(null!=n.upload?n.upload:n).onprogress=function(e){return i._updateFilesUploadProgress(t,n,e)};var l={Accept:"application/json","Cache-Control":"no-cache","X-Requested-With":"XMLHttpRequest"};for(var u in this.options.headers&&b.extend(l,this.options.headers),l){var d=l[u];d&&n.setRequestHeader(u,d)}var c=new FormData;if(this.options.params){var p=this.options.params;for(var h in"function"==typeof p&&(p=p.call(this,t,n,t[0].upload.chunked?this._getChunk(t[0],n):null)),p){var f=p[h];c.append(h,f)}}for(var m=0,v=v=t;;){if(m>=v.length)break;var g=v[m++];this.emit("sending",g,n,c)}this.options.uploadMultiple&&this.emit("sendingmultiple",t,n,c),this._addFormElementData(c);for(var k=0;k<e.length;k++){var y=e[k];c.append(y.name,y.data,y.filename)}this.submitRequest(n,c,t)}},{key:"_transformFiles",value:function(i,n){for(var e=this,r=[],o=0,t=function(t){e.options.transformFile.call(e,i[t],function(e){r[t]=e,++o===i.length&&n(r)})},s=0;s<i.length;s++)t(s)}},{key:"_addFormElementData",value:function(e){if("FORM"===this.element.tagName)for(var t=0,i=i=this.element.querySelectorAll("input, textarea, select, button");;){if(t>=i.length)break;var n=i[t++],r=n.getAttribute("name"),o=n.getAttribute("type");if(o&&(o=o.toLowerCase()),null!=r)if("SELECT"===n.tagName&&n.hasAttribute("multiple"))for(var s=0,a=a=n.options;;){if(s>=a.length)break;var l=a[s++];l.selected&&e.append(r,l.value)}else(!o||"checkbox"!==o&&"radio"!==o||n.checked)&&e.append(r,n.value)}}},{key:"_updateFilesUploadProgress",value:function(e,t,i){var n=void 0;if(void 0!==i){if(n=100*i.loaded/i.total,e[0].upload.chunked){var r=e[0],o=this._getChunk(r,t);o.progress=n,o.total=i.total,o.bytesSent=i.loaded;r.upload.progress=0,r.upload.total=0;for(var s=r.upload.bytesSent=0;s<r.upload.totalChunkCount;s++)void 0!==r.upload.chunks[s]&&void 0!==r.upload.chunks[s].progress&&(r.upload.progress+=r.upload.chunks[s].progress,r.upload.total+=r.upload.chunks[s].total,r.upload.bytesSent+=r.upload.chunks[s].bytesSent);r.upload.progress=r.upload.progress/r.upload.totalChunkCount}else for(var a=0,l=l=e;;){if(a>=l.length)break;var u=l[a++];u.upload.progress=n,u.upload.total=i.total,u.upload.bytesSent=i.loaded}for(var d=0,c=c=e;;){if(d>=c.length)break;var p=c[d++];this.emit("uploadprogress",p,p.upload.progress,p.upload.bytesSent)}}else{var h=!0;n=100;for(var f=0,m=m=e;;){if(f>=m.length)break;var v=m[f++];100===v.upload.progress&&v.upload.bytesSent===v.upload.total||(h=!1),v.upload.progress=n,v.upload.bytesSent=v.upload.total}if(h)return;for(var g=0,k=k=e;;){if(g>=k.length)break;var y=k[g++];this.emit("uploadprogress",y,n,y.upload.bytesSent)}}}},{key:"_finishedUploading",value:function(e,t,i){var n=void 0;if(e[0].status!==b.CANCELED&&4===t.readyState){if("arraybuffer"!==t.responseType&&"blob"!==t.responseType&&(n=t.responseText,t.getResponseHeader("content-type")&&~t.getResponseHeader("content-type").indexOf("application/json")))try{n=JSON.parse(n)}catch(e){i=e,n="Invalid JSON response from server."}this._updateFilesUploadProgress(e),200<=t.status&&t.status<300?e[0].upload.chunked?e[0].upload.finishedChunkUpload(this._getChunk(e[0],t)):this._finished(e,n,i):this._handleUploadError(e,t,n)}}},{key:"_handleUploadError",value:function(e,t,i){if(e[0].status!==b.CANCELED){if(e[0].upload.chunked&&this.options.retryChunks){var n=this._getChunk(e[0],t);if(n.retries++<this.options.retryChunksLimit)return void this._uploadData(e,[n.dataBlock]);console.warn("Retried this chunk too often. Giving up.")}for(var r=0,o=o=e;;){if(r>=o.length)break;o[r++];this._errorProcessing(e,i||this.options.dictResponseError.replace("{{statusCode}}",t.status),t)}}}},{key:"submitRequest",value:function(e,t,i){e.send(t)}},{key:"_finished",value:function(e,t,i){for(var n=0,r=r=e;;){if(n>=r.length)break;var o=r[n++];o.status=b.SUCCESS,this.emit("success",o,t,i),this.emit("complete",o)}if(this.options.uploadMultiple&&(this.emit("successmultiple",e,t,i),this.emit("completemultiple",e)),this.options.autoProcessQueue)return this.processQueue()}},{key:"_errorProcessing",value:function(e,t,i){for(var n=0,r=r=e;;){if(n>=r.length)break;var o=r[n++];o.status=b.ERROR,this.emit("error",o,t,i),this.emit("complete",o)}if(this.options.uploadMultiple&&(this.emit("errormultiple",e,t,i),this.emit("completemultiple",e)),this.options.autoProcessQueue)return this.processQueue()}}],[{key:"uuidv4",value:function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(e){var t=16*Math.random()|0;return("x"===e?t:3&t|8).toString(16)})}}]),b}();r.initClass(),r.version="5.4.0",r.options={},r.optionsForElement=function(e){return e.getAttribute("id")?r.options[o(e.getAttribute("id"))]:void 0},r.instances=[],r.forElement=function(e){if("string"==typeof e&&(e=document.querySelector(e)),null==(null!=e?e.dropzone:void 0))throw new Error("No Dropzone found for given element. This is probably because you're trying to access it before Dropzone had the time to initialize. Use the `init` option to setup any additional observers on your Dropzone.");return e.dropzone},r.autoDiscover=!0,r.discover=function(){var o=void 0;if(document.querySelectorAll)o=document.querySelectorAll(".dropzone");else{o=[];var e=function(r){return function(){for(var e=[],t=0,i=i=r;;){if(t>=i.length)break;var n=i[t++];/(^| )dropzone($| )/.test(n.className)?e.push(o.push(n)):e.push(void 0)}return e}()};e(document.getElementsByTagName("div")),e(document.getElementsByTagName("form"))}return function(){for(var e=[],t=0,i=i=o;;){if(t>=i.length)break;var n=i[t++];!1!==r.optionsForElement(n)?e.push(new r(n)):e.push(void 0)}return e}()},r.blacklistedBrowsers=[/opera.*(Macintosh|Windows Phone).*version\/12/i],r.isBrowserSupported=function(){var e=!0;if(window.File&&window.FileReader&&window.FileList&&window.Blob&&window.FormData&&document.querySelector)if("classList"in document.createElement("a"))for(var t=0,i=i=r.blacklistedBrowsers;;){if(t>=i.length)break;i[t++].test(navigator.userAgent)&&(e=!1)}else e=!1;else e=!1;return e},r.dataURItoBlob=function(e){for(var t=atob(e.split(",")[1]),i=e.split(",")[0].split(":")[1].split(";")[0],n=new ArrayBuffer(t.length),r=new Uint8Array(n),o=0,s=t.length,a=0<=s;a?o<=s:s<=o;a?o++:o--)r[o]=t.charCodeAt(o);return new Blob([n],{type:i})};var n=function(e,t){return e.filter(function(e){return e!==t}).map(function(e){return e})},o=function(e){return e.replace(/[\-_](\w)/g,function(e){return e.charAt(1).toUpperCase()})};r.createElement=function(e){var t=document.createElement("div");return t.innerHTML=e,t.childNodes[0]},r.elementInside=function(e,t){if(e===t)return!0;for(;e=e.parentNode;)if(e===t)return!0;return!1},r.getElement=function(e,t){var i=void 0;if("string"==typeof e?i=document.querySelector(e):null!=e.nodeType&&(i=e),null==i)throw new Error("Invalid `"+t+"` option provided. Please provide a CSS selector or a plain HTML element.");return i},r.getElements=function(e,t){var i=void 0,n=void 0;if(e instanceof Array){n=[];try{for(var r=0,o=o=e;!(r>=o.length);)i=o[r++],n.push(this.getElement(i,t))}catch(e){n=null}}else if("string"==typeof e){n=[];for(var s=0,a=a=document.querySelectorAll(e);!(s>=a.length);)i=a[s++],n.push(i)}else null!=e.nodeType&&(n=[e]);if(null==n||!n.length)throw new Error("Invalid `"+t+"` option provided. Please provide a CSS selector, a plain HTML element or a list of those.");return n},r.confirm=function(e,t,i){return window.confirm(e)?t():null!=i?i():void 0},r.isValidFile=function(e,t){if(!t)return!0;t=t.split(",");for(var i=e.type,n=i.replace(/\/.*$/,""),r=0,o=o=t;;){if(r>=o.length)break;var s=o[r++];if("."===(s=s.trim()).charAt(0)){if(-1!==e.name.toLowerCase().indexOf(s.toLowerCase(),e.name.length-s.length))return!0}else if(/\/\*$/.test(s)){if(n===s.replace(/\/.*$/,""))return!0}else if(i===s)return!0}return!1},"undefined"!=typeof jQuery&&null!==jQuery&&(jQuery.fn.dropzone=function(e){return this.each(function(){return new r(this,e)})}),null!==e?e.exports=r:window.Dropzone=r,r.ADDED="added",r.QUEUED="queued",r.ACCEPTED=r.QUEUED,r.UPLOADING="uploading",r.PROCESSING=r.UPLOADING,r.CANCELED="canceled",r.ERROR="error",r.SUCCESS="success";var p=function(e,t,i,n,r,o,s,a,l,u){var d=function(e){e.naturalWidth;var t=e.naturalHeight,i=document.createElement("canvas");i.width=1,i.height=t;var n=i.getContext("2d");n.drawImage(e,0,0);for(var r=n.getImageData(1,0,1,t).data,o=0,s=t,a=t;o<a;)0===r[4*(a-1)+3]?s=a:o=a,a=s+o>>1;var l=a/t;return 0===l?1:l}(t);return e.drawImage(t,i,n,r,o,s,a,l,u/d)},u=function(){function e(){l(this,e)}return t(e,null,[{key:"initClass",value:function(){this.KEY_STR="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="}},{key:"encode64",value:function(e){for(var t="",i=void 0,n=void 0,r="",o=void 0,s=void 0,a=void 0,l="",u=0;o=(i=e[u++])>>2,s=(3&i)<<4|(n=e[u++])>>4,a=(15&n)<<2|(r=e[u++])>>6,l=63&r,isNaN(n)?a=l=64:isNaN(r)&&(l=64),t=t+this.KEY_STR.charAt(o)+this.KEY_STR.charAt(s)+this.KEY_STR.charAt(a)+this.KEY_STR.charAt(l),i=n=r="",o=s=a=l="",u<e.length;);return t}},{key:"restore",value:function(e,t){if(!e.match("data:image/jpeg;base64,"))return t;var i=this.decode64(e.replace("data:image/jpeg;base64,","")),n=this.slice2Segments(i),r=this.exifManipulation(t,n);return"data:image/jpeg;base64,"+this.encode64(r)}},{key:"exifManipulation",value:function(e,t){var i=this.getExifArray(t),n=this.insertExif(e,i);return new Uint8Array(n)}},{key:"getExifArray",value:function(e){for(var t=void 0,i=0;i<e.length;){if(255===(t=e[i])[0]&225===t[1])return t;i++}return[]}},{key:"insertExif",value:function(e,t){var i=e.replace("data:image/jpeg;base64,",""),n=this.decode64(i),r=n.indexOf(255,3),o=n.slice(0,r),s=n.slice(r),a=o;return a=(a=a.concat(t)).concat(s)}},{key:"slice2Segments",value:function(e){for(var t=0,i=[];;){if(255===e[t]&218===e[t+1])break;if(255===e[t]&216===e[t+1])t+=2;else{var n=t+(256*e[t+2]+e[t+3])+2,r=e.slice(t,n);i.push(r),t=n}if(t>e.length)break}return i}},{key:"decode64",value:function(e){var t=void 0,i=void 0,n="",r=void 0,o=void 0,s="",a=0,l=[];for(/[^A-Za-z0-9\+\/\=]/g.exec(e)&&console.warn("There were invalid base64 characters in the input text.\nValid base64 characters are A-Z, a-z, 0-9, '+', '/',and '='\nExpect errors in decoding."),e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");t=this.KEY_STR.indexOf(e.charAt(a++))<<2|(r=this.KEY_STR.indexOf(e.charAt(a++)))>>4,i=(15&r)<<4|(o=this.KEY_STR.indexOf(e.charAt(a++)))>>2,n=(3&o)<<6|(s=this.KEY_STR.indexOf(e.charAt(a++))),l.push(t),64!==o&&l.push(i),64!==s&&l.push(n),t=i=n="",r=o=s="",a<e.length;);return l}}]),e}();u.initClass();r._autoDiscoverFunction=function(){if(r.autoDiscover)return r.discover()},function(i,n){var r=!1,e=!0,o=i.document,s=o.documentElement,t=o.addEventListener?"addEventListener":"attachEvent",a=o.addEventListener?"removeEventListener":"detachEvent",l=o.addEventListener?"":"on",u=function e(t){if("readystatechange"!==t.type||"complete"===o.readyState)return("load"===t.type?i:o)[a](l+t.type,e,!1),!r&&(r=!0)?n.call(i,t.type||t):void 0};if("complete"!==o.readyState){if(o.createEventObject&&s.doScroll){try{e=!i.frameElement}catch(e){}e&&function t(){try{s.doScroll("left")}catch(e){return void setTimeout(t,50)}return u("poll")}()}o[t](l+"DOMContentLoaded",u,!1),o[t](l+"readystatechange",u,!1),i[t](l+"load",u,!1)}}(window,r._autoDiscoverFunction)}(e={exports:{}},e.exports),e.exports);return t.autoDiscover=!1,{render:function(){var e=this,t=e.$createElement,i=e._self._c||t;return i("div",{ref:"dropzoneElement",class:{"vue-dropzone dropzone":e.includeStyling},attrs:{id:e.id}},[e.useCustomSlot?i("div",{staticClass:"dz-message"},[e._t("default",[e._v("Drop files here to upload")])],2):e._e()])},staticRenderFns:[],props:{id:{type:String,required:!0,default:"dropzone"},options:{type:Object,required:!0},includeStyling:{type:Boolean,default:!0,required:!1},awss3:{type:Object,required:!1,default:null},destroyDropzone:{type:Boolean,default:!0,required:!1},duplicateCheck:{type:Boolean,default:!1,required:!1},useCustomSlot:{type:Boolean,default:!1,required:!1}},data:function(){return{isS3:!1,isS3OverridesServerPropagation:!1,wasQueueAutoProcess:!0}},computed:{dropzoneSettings:function(){var t={thumbnailWidth:200,thumbnailHeight:200};return Object.keys(this.options).forEach(function(e){t[e]=this.options[e]},this),null!==this.awss3&&(t.autoProcessQueue=!1,this.isS3=!0,this.isS3OverridesServerPropagation=!1===this.awss3.sendFileToServer,void 0!==this.options.autoProcessQueue&&(this.wasQueueAutoProcess=this.options.autoProcessQueue),this.isS3OverridesServerPropagation&&(t.url=function(e){return e[0].s3Url})),t}},methods:{manuallyAddFile:function(e,t){if(e.manuallyAdded=!0,this.dropzone.emit("addedfile",e),this.dropzone.options.createImageThumbnails&&e.type.match(/image.*/)&&e.size<=1024*this.dropzone.options.maxThumbnailFilesize*1024){t&&this.dropzone.emit("thumbnail",e,t);for(var i=e.previewElement.querySelectorAll("[data-dz-thumbnail]"),n=0;n<i.length;n++)i[n].style.width=this.dropzoneSettings.thumbnailWidth+"px",i[n].style.height=this.dropzoneSettings.thumbnailHeight+"px",i[n].style["object-fit"]="contain"}this.dropzone.emit("complete",e),this.dropzone.options.maxFiles&&this.dropzone.options.maxFiles--,this.dropzone.files.push(e),this.$emit("vdropzone-file-added-manually",e)},setOption:function(e,t){this.dropzone.options[e]=t},removeAllFiles:function(e){this.dropzone.removeAllFiles(e)},processQueue:function(){var t=this,e=this.dropzone;this.isS3&&!this.wasQueueAutoProcess?this.getQueuedFiles().forEach(function(e){t.getSignedAndUploadToS3(e)}):this.dropzone.processQueue(),this.dropzone.on("success",function(){e.options.autoProcessQueue=!0}),this.dropzone.on("queuecomplete",function(){e.options.autoProcessQueue=!1})},init:function(){return this.dropzone.init()},destroy:function(){return this.dropzone.destroy()},updateTotalUploadProgress:function(){return this.dropzone.updateTotalUploadProgress()},getFallbackForm:function(){return this.dropzone.getFallbackForm()},getExistingFallback:function(){return this.dropzone.getExistingFallback()},setupEventListeners:function(){return this.dropzone.setupEventListeners()},removeEventListeners:function(){return this.dropzone.removeEventListeners()},disable:function(){return this.dropzone.disable()},enable:function(){return this.dropzone.enable()},filesize:function(e){return this.dropzone.filesize(e)},accept:function(e,t){return this.dropzone.accept(e,t)},addFile:function(e){return this.dropzone.addFile(e)},removeFile:function(e){this.dropzone.removeFile(e)},getAcceptedFiles:function(){return this.dropzone.getAcceptedFiles()},getRejectedFiles:function(){return this.dropzone.getRejectedFiles()},getFilesWithStatus:function(){return this.dropzone.getFilesWithStatus()},getQueuedFiles:function(){return this.dropzone.getQueuedFiles()},getUploadingFiles:function(){return this.dropzone.getUploadingFiles()},getAddedFiles:function(){return this.dropzone.getAddedFiles()},getActiveFiles:function(){return this.dropzone.getActiveFiles()},getSignedAndUploadToS3:function(t){var i=this,e=n.sendFile(t,this.awss3,this.isS3OverridesServerPropagation);this.isS3OverridesServerPropagation?e.then(function(){setTimeout(function(){return i.dropzone.processFile(t)})}):e.then(function(e){e.success?(t.s3ObjectLocation=e.message,setTimeout(function(){return i.dropzone.processFile(t)}),i.$emit("vdropzone-s3-upload-success",e.message)):void 0!==e.message?i.$emit("vdropzone-s3-upload-error",e.message):i.$emit("vdropzone-s3-upload-error","Network Error : Could not send request to AWS. (Maybe CORS error)")}),e.catch(function(e){alert(e)})},setAWSSigningURL:function(e){this.isS3&&(this.awss3.signingURL=e)}},mounted:function(){if(!this.$isServer||!this.hasBeenMounted){this.hasBeenMounted=!0,this.dropzone=new t(this.$refs.dropzoneElement,this.dropzoneSettings);var r=this;this.dropzone.on("thumbnail",function(e,t){r.$emit("vdropzone-thumbnail",e,t)}),this.dropzone.on("addedfile",function(e){var t,i;if(r.duplicateCheck&&this.files.length)for(t=0,i=this.files.length;t<i-1;t++)this.files[t].name===e.name&&this.files[t].size===e.size&&this.files[t].lastModifiedDate.toString()===e.lastModifiedDate.toString()&&(this.removeFile(e),!0,r.$emit("vdropzone-duplicate-file",e));r.$emit("vdropzone-file-added",e),r.isS3&&r.wasQueueAutoProcess&&r.getSignedAndUploadToS3(e)}),this.dropzone.on("addedfiles",function(e){r.$emit("vdropzone-files-added",e)}),this.dropzone.on("removedfile",function(e){r.$emit("vdropzone-removed-file",e),e.manuallyAdded&&r.dropzone.options.maxFiles++}),this.dropzone.on("success",function(e,t){if(r.$emit("vdropzone-success",e,t),r.isS3){if(r.isS3OverridesServerPropagation){var i=(new window.DOMParser).parseFromString(t,"text/xml").firstChild.children[0].innerHTML;r.$emit("vdropzone-s3-upload-success",i)}r.wasQueueAutoProcess&&r.setOption("autoProcessQueue",!1)}}),this.dropzone.on("successmultiple",function(e,t){r.$emit("vdropzone-success-multiple",e,t)}),this.dropzone.on("error",function(e,t,i){r.$emit("vdropzone-error",e,t,i),this.isS3&&r.$emit("vdropzone-s3-upload-error")}),this.dropzone.on("errormultiple",function(e,t,i){r.$emit("vdropzone-error-multiple",e,t,i)}),this.dropzone.on("sending",function(e,t,i){if(r.isS3)if(r.isS3OverridesServerPropagation){var n=e.s3Signature;Object.keys(n).forEach(function(e){i.append(e,n[e])})}else i.append("s3ObjectLocation",e.s3ObjectLocation);r.$emit("vdropzone-sending",e,t,i)}),this.dropzone.on("sendingmultiple",function(e,t,i){r.$emit("vdropzone-sending-multiple",e,t,i)}),this.dropzone.on("complete",function(e){r.$emit("vdropzone-complete",e)}),this.dropzone.on("completemultiple",function(e){r.$emit("vdropzone-complete-multiple",e)}),this.dropzone.on("canceled",function(e){r.$emit("vdropzone-canceled",e)}),this.dropzone.on("canceledmultiple",function(e){r.$emit("vdropzone-canceled-multiple",e)}),this.dropzone.on("maxfilesreached",function(e){r.$emit("vdropzone-max-files-reached",e)}),this.dropzone.on("maxfilesexceeded",function(e){r.$emit("vdropzone-max-files-exceeded",e)}),this.dropzone.on("processing",function(e){r.$emit("vdropzone-processing",e)}),this.dropzone.on("processing",function(e){r.$emit("vdropzone-processing",e)}),this.dropzone.on("processingmultiple",function(e){r.$emit("vdropzone-processing-multiple",e)}),this.dropzone.on("uploadprogress",function(e,t,i){r.$emit("vdropzone-upload-progress",e,t,i)}),this.dropzone.on("totaluploadprogress",function(e,t,i){r.$emit("vdropzone-total-upload-progress",e,t,i)}),this.dropzone.on("reset",function(){r.$emit("vdropzone-reset")}),this.dropzone.on("queuecomplete",function(){r.$emit("vdropzone-queue-complete")}),this.dropzone.on("drop",function(e){r.$emit("vdropzone-drop",e)}),this.dropzone.on("dragstart",function(e){r.$emit("vdropzone-drag-start",e)}),this.dropzone.on("dragend",function(e){r.$emit("vdropzone-drag-end",e)}),this.dropzone.on("dragenter",function(e){r.$emit("vdropzone-drag-enter",e)}),this.dropzone.on("dragover",function(e){r.$emit("vdropzone-drag-over",e)}),this.dropzone.on("dragleave",function(e){r.$emit("vdropzone-drag-leave",e)}),r.$emit("vdropzone-mounted")}},beforeDestroy:function(){this.destroyDropzone&&this.dropzone.destroy()}}});
-//# sourceMappingURL=vue2Dropzone.js.map
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(528)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(590));
+//# sourceMappingURL=toastr.js.map
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(524)))
 
 /***/ }),
 
-/***/ 630:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 590:
+/***/ (function(module, exports) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(631);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(43)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./vue2Dropzone.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./vue2Dropzone.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 631:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/*\n * The MIT License\n * Copyright (c) 2012 Matias Meno <m@tias.me>\n */\n@-webkit-keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@-moz-keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@keyframes passing-through {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30%, 70% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    -webkit-transform: translateY(-40px);\n    -moz-transform: translateY(-40px);\n    -ms-transform: translateY(-40px);\n    -o-transform: translateY(-40px);\n    transform: translateY(-40px); } }\n@-webkit-keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@-moz-keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@keyframes slide-in {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(40px);\n    -moz-transform: translateY(40px);\n    -ms-transform: translateY(40px);\n    -o-transform: translateY(40px);\n    transform: translateY(40px); }\n  30% {\n    opacity: 1;\n    -webkit-transform: translateY(0px);\n    -moz-transform: translateY(0px);\n    -ms-transform: translateY(0px);\n    -o-transform: translateY(0px);\n    transform: translateY(0px); } }\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n@-moz-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n@keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); }\n  10% {\n    -webkit-transform: scale(1.1);\n    -moz-transform: scale(1.1);\n    -ms-transform: scale(1.1);\n    -o-transform: scale(1.1);\n    transform: scale(1.1); }\n  20% {\n    -webkit-transform: scale(1);\n    -moz-transform: scale(1);\n    -ms-transform: scale(1);\n    -o-transform: scale(1);\n    transform: scale(1); } }\n.dropzone, .dropzone * {\n  box-sizing: border-box; }\n\n.dropzone {\n  min-height: 150px;\n  border: 2px solid rgba(0, 0, 0, 0.3);\n  background: white;\n  padding: 20px 20px; }\n  .dropzone.dz-clickable {\n    cursor: pointer; }\n    .dropzone.dz-clickable * {\n      cursor: default; }\n    .dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {\n      cursor: pointer; }\n  .dropzone.dz-started .dz-message {\n    display: none; }\n  .dropzone.dz-drag-hover {\n    border-style: solid; }\n    .dropzone.dz-drag-hover .dz-message {\n      opacity: 0.5; }\n  .dropzone .dz-message {\n    text-align: center;\n    margin: 2em 0; }\n  .dropzone .dz-preview {\n    position: relative;\n    display: inline-block;\n    vertical-align: top;\n    margin: 16px;\n    min-height: 100px; }\n    .dropzone .dz-preview:hover {\n      z-index: 1000; }\n      .dropzone .dz-preview:hover .dz-details {\n        opacity: 1; }\n    .dropzone .dz-preview.dz-file-preview .dz-image {\n      border-radius: 20px;\n      background: #999;\n      background: linear-gradient(to bottom, #eee, #ddd); }\n    .dropzone .dz-preview.dz-file-preview .dz-details {\n      opacity: 1; }\n    .dropzone .dz-preview.dz-image-preview {\n      background: white; }\n      .dropzone .dz-preview.dz-image-preview .dz-details {\n        -webkit-transition: opacity 0.2s linear;\n        -moz-transition: opacity 0.2s linear;\n        -ms-transition: opacity 0.2s linear;\n        -o-transition: opacity 0.2s linear;\n        transition: opacity 0.2s linear; }\n    .dropzone .dz-preview .dz-remove {\n      font-size: 14px;\n      text-align: center;\n      display: block;\n      cursor: pointer;\n      border: none; }\n      .dropzone .dz-preview .dz-remove:hover {\n        text-decoration: underline; }\n    .dropzone .dz-preview:hover .dz-details {\n      opacity: 1; }\n    .dropzone .dz-preview .dz-details {\n      z-index: 20;\n      position: absolute;\n      top: 0;\n      left: 0;\n      opacity: 0;\n      font-size: 13px;\n      min-width: 100%;\n      max-width: 100%;\n      padding: 2em 1em;\n      text-align: center;\n      color: rgba(0, 0, 0, 0.9);\n      line-height: 150%; }\n      .dropzone .dz-preview .dz-details .dz-size {\n        margin-bottom: 1em;\n        font-size: 16px; }\n      .dropzone .dz-preview .dz-details .dz-filename {\n        white-space: nowrap; }\n        .dropzone .dz-preview .dz-details .dz-filename:hover span {\n          border: 1px solid rgba(200, 200, 200, 0.8);\n          background-color: rgba(255, 255, 255, 0.8); }\n        .dropzone .dz-preview .dz-details .dz-filename:not(:hover) {\n          overflow: hidden;\n          text-overflow: ellipsis; }\n          .dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {\n            border: 1px solid transparent; }\n      .dropzone .dz-preview .dz-details .dz-filename span, .dropzone .dz-preview .dz-details .dz-size span {\n        background-color: rgba(255, 255, 255, 0.4);\n        padding: 0 0.4em;\n        border-radius: 3px; }\n    .dropzone .dz-preview:hover .dz-image img {\n      -webkit-transform: scale(1.05, 1.05);\n      -moz-transform: scale(1.05, 1.05);\n      -ms-transform: scale(1.05, 1.05);\n      -o-transform: scale(1.05, 1.05);\n      transform: scale(1.05, 1.05);\n      -webkit-filter: blur(8px);\n      filter: blur(8px); }\n    .dropzone .dz-preview .dz-image {\n      border-radius: 20px;\n      overflow: hidden;\n      width: 120px;\n      height: 120px;\n      position: relative;\n      display: block;\n      z-index: 10; }\n      .dropzone .dz-preview .dz-image img {\n        display: block; }\n    .dropzone .dz-preview.dz-success .dz-success-mark {\n      -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -moz-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -ms-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -o-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);\n      animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1); }\n    .dropzone .dz-preview.dz-error .dz-error-mark {\n      opacity: 1;\n      -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -moz-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -ms-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      -o-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);\n      animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1); }\n    .dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {\n      pointer-events: none;\n      opacity: 0;\n      z-index: 500;\n      position: absolute;\n      display: block;\n      top: 50%;\n      left: 50%;\n      margin-left: -27px;\n      margin-top: -27px; }\n      .dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {\n        display: block;\n        width: 54px;\n        height: 54px; }\n    .dropzone .dz-preview.dz-processing .dz-progress {\n      opacity: 1;\n      -webkit-transition: all 0.2s linear;\n      -moz-transition: all 0.2s linear;\n      -ms-transition: all 0.2s linear;\n      -o-transition: all 0.2s linear;\n      transition: all 0.2s linear; }\n    .dropzone .dz-preview.dz-complete .dz-progress {\n      opacity: 0;\n      -webkit-transition: opacity 0.4s ease-in;\n      -moz-transition: opacity 0.4s ease-in;\n      -ms-transition: opacity 0.4s ease-in;\n      -o-transition: opacity 0.4s ease-in;\n      transition: opacity 0.4s ease-in; }\n    .dropzone .dz-preview:not(.dz-processing) .dz-progress {\n      -webkit-animation: pulse 6s ease infinite;\n      -moz-animation: pulse 6s ease infinite;\n      -ms-animation: pulse 6s ease infinite;\n      -o-animation: pulse 6s ease infinite;\n      animation: pulse 6s ease infinite; }\n    .dropzone .dz-preview .dz-progress {\n      opacity: 1;\n      z-index: 1000;\n      pointer-events: none;\n      position: absolute;\n      height: 16px;\n      left: 50%;\n      top: 50%;\n      margin-top: -8px;\n      width: 80px;\n      margin-left: -40px;\n      background: rgba(255, 255, 255, 0.9);\n      -webkit-transform: scale(1);\n      border-radius: 8px;\n      overflow: hidden; }\n      .dropzone .dz-preview .dz-progress .dz-upload {\n        background: #333;\n        background: linear-gradient(to bottom, #666, #444);\n        position: absolute;\n        top: 0;\n        left: 0;\n        bottom: 0;\n        width: 0;\n        -webkit-transition: width 300ms ease-in-out;\n        -moz-transition: width 300ms ease-in-out;\n        -ms-transition: width 300ms ease-in-out;\n        -o-transition: width 300ms ease-in-out;\n        transition: width 300ms ease-in-out; }\n    .dropzone .dz-preview.dz-error .dz-error-message {\n      display: block; }\n    .dropzone .dz-preview.dz-error:hover .dz-error-message {\n      opacity: 1;\n      pointer-events: auto; }\n    .dropzone .dz-preview .dz-error-message {\n      pointer-events: none;\n      z-index: 1000;\n      position: absolute;\n      display: block;\n      display: none;\n      opacity: 0;\n      -webkit-transition: opacity 0.3s ease;\n      -moz-transition: opacity 0.3s ease;\n      -ms-transition: opacity 0.3s ease;\n      -o-transition: opacity 0.3s ease;\n      transition: opacity 0.3s ease;\n      border-radius: 8px;\n      font-size: 13px;\n      top: 130px;\n      left: -10px;\n      width: 140px;\n      background: #be2626;\n      background: linear-gradient(to bottom, #be2626, #a92222);\n      padding: 0.5em 1.2em;\n      color: white; }\n      .dropzone .dz-preview .dz-error-message:after {\n        content: '';\n        position: absolute;\n        top: -6px;\n        left: 64px;\n        width: 0;\n        height: 0;\n        border-left: 6px solid transparent;\n        border-right: 6px solid transparent;\n        border-bottom: 6px solid #be2626; }\n\n.vue-dropzone {\n  border: 2px solid #E5E5E5;\n  font-family: 'Arial', sans-serif;\n  letter-spacing: 0.2px;\n  color: #777;\n  transition: background-color 0.2s linear;\n}\n.vue-dropzone:hover {\n  background-color: #F6F6F6;\n}\n.vue-dropzone i {\n  color: #CCC;\n}\n.vue-dropzone .dz-preview .dz-image {\n  border-radius: 0;\n  width: 100%;\n  height: 100%;\n}\n.vue-dropzone .dz-preview .dz-image img:not([src]) {\n  width: 200px;\n  height: 200px;\n}\n.vue-dropzone .dz-preview .dz-image:hover img {\n  transform: none;\n  -webkit-filter: none;\n}\n.vue-dropzone .dz-preview .dz-details {\n  bottom: 0;\n  top: 0;\n  color: white;\n  background-color: rgba(33, 150, 243, 0.8);\n  transition: opacity .2s linear;\n  text-align: left;\n}\n.vue-dropzone .dz-preview .dz-details .dz-filename {\n  overflow: hidden;\n}\n.vue-dropzone .dz-preview .dz-details .dz-filename span,\n.vue-dropzone .dz-preview .dz-details .dz-size span {\n  background-color: transparent;\n}\n.vue-dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {\n  border: none;\n}\n.vue-dropzone .dz-preview .dz-details .dz-filename:hover span {\n  background-color: transparent;\n  border: none;\n}\n.vue-dropzone .dz-preview .dz-progress .dz-upload {\n  background: #cccccc;\n}\n.vue-dropzone .dz-preview .dz-remove {\n  position: absolute;\n  z-index: 30;\n  color: white;\n  margin-left: 15px;\n  padding: 10px;\n  top: inherit;\n  bottom: 15px;\n  border: 2px white solid;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-size: 0.8rem;\n  font-weight: 800;\n  letter-spacing: 1.1px;\n  opacity: 0;\n}\n.vue-dropzone .dz-preview:hover .dz-remove {\n  opacity: 1;\n}\n.vue-dropzone .dz-preview .dz-success-mark,\n.vue-dropzone .dz-preview .dz-error-mark {\n  margin-left: auto;\n  margin-top: auto;\n  width: 100%;\n  top: 35%;\n  left: 0;\n}\n.vue-dropzone .dz-preview .dz-success-mark svg,\n.vue-dropzone .dz-preview .dz-error-mark svg {\n  margin-left: auto;\n  margin-right: auto;\n}\n.vue-dropzone .dz-preview .dz-error-message {\n  top: calc(15%);\n  margin-left: auto;\n  margin-right: auto;\n  left: 0;\n  width: 100%;\n}\n.vue-dropzone .dz-preview .dz-error-message:after {\n  bottom: -6px;\n  top: initial;\n  border-top: 6px solid #a92222;\n  border-bottom: none;\n}\n\n", ""]);
-
-// exports
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
 
 
 /***/ })

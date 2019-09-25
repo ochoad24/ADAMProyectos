@@ -1,10 +1,8 @@
 <template>
-
     <v-app id="app">
     <preloader v-show="this.$store.state.preloader"></preloader>
     <router-view></router-view>
     </v-app>
-
 </template>
 <script>
 import preloader from "./components/layout/preloader";

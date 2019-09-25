@@ -11,42 +11,52 @@
                     <vmenu-item link="/" icon="fa fa-fw fa-desktop">
                         Inicio
                     </vmenu-item>
+                    <vmenu-item link="/Gantt" icon="fa fa-fw fa-tasks">
+                        Proyectos
+                    </vmenu-item>
+                     <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-tasks">
+                        Crear Nuevo Proyecto
+                    </vmenu-item>
                     <vsub-menu title="Usuarios" icon="fa fa-fw fa-user" class="menufold-bottom">
                         <vmenu-item link="/Roles" icon="fa fa-fw fa-users">
-                        Roles
+                            Roles
                         </vmenu-item>
                         <vmenu-item link="/Permisos" icon="fa fa-fw fa-list">
-                        Permisos
+                            Permisos
                         </vmenu-item>
                         <vmenu-item link="/Usuarios" icon="fa fa-fw fa-user">
-                        Usuarios
+                            Usuarios
                         </vmenu-item>
                     </vsub-menu>
                     <vsub-menu title="Proyectos" icon="fa fa-fw fa-folder" class="menufold-bottom">
                         <vmenu-item link="/Organizaciones" icon="fa fa-fw fa-globe">
-                        Organizaciones
+                            Organizaciones
                         </vmenu-item>
                         <vmenu-item link="/Proyectos" icon="fa fa-fw fa-folder">
-                        Proyectos
+                            Proyectos
+                        </vmenu-item>
+                        <vmenu-item link="/GanttProyecto" icon="fa fa-fw fa-tasks">
+                            Progreso de proyectos
                         </vmenu-item>
                     </vsub-menu>
                     <vsub-menu title="Actividades" icon="fa fa-fw fa-code-fork" class="menufold-bottom">
                         <vmenu-item link="/Actividades" icon="fa fa-fw fa-code-fork">
-                        Actividades
+                            Actividades
                         </vmenu-item>
+                        
                         <vmenu-item link="/Tarea" icon="fa fa-fw fa-tasks">
-                        Tareas
+                            Tareas
                         </vmenu-item>
                         <vmenu-item link="/Subir" icon="fa fa-fw fa-location-arrow">
-                        Subir Reporte
+                            Subir Reporte
                         </vmenu-item>
                     </vsub-menu>
                     <vsub-menu title="Ajustes" icon="fa fa-fw fa-gear" class="menufold-bottom">
                         <vmenu-item link="/TipoActividad" icon="fa fa-fw fa-list">
-                        Tipo Actividades
+                            Tipo Actividades
                         </vmenu-item>
                         <vmenu-item link="/Estadistica" icon="fa fa-fw fa-paste">
-                        Estadisticas
+                            Estadisticas
                         </vmenu-item>
                     </vsub-menu>
                 </vmenu>

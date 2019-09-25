@@ -1,22 +1,22 @@
 webpackJsonp([58],{
 
-/***/ 1742:
+/***/ 1508:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1743);
+var content = __webpack_require__(1509);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("21b941be", content, false, {});
+var update = __webpack_require__(26)("5d376f71", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./wenk.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./wenk.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1743:
+/***/ 1509:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,24 +35,317 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.trendvue svg path{\nstroke-width:2px;\n}\n.card svg{\n    height: 40vh;\n}\n", ""]);
+exports.push([module.i, "/**\n * wenk - Lightweight tooltip for the greater good\n * @version v1.0.6\n * (c) 2018 Tiaan du Plessis @tiaanduplessis |\n * @link https://tiaanduplessis.github.io/wenk/\n * @license MIT\n */\n[data-wenk]{position:relative\n}\n[data-wenk]:after{position:absolute;font-size:13px;border-radius:.4rem;content:attr(data-wenk);padding:12.8px;padding:.8rem;background-color:hsla(0,0%,7%,.8);-webkit-box-shadow:0 0 14px rgba(0,0,0,.1);box-shadow:0 0 14px rgba(0,0,0,.1);color:#fff;line-height:20px;line-height:1.25rem;text-align:left;z-index:1;pointer-events:none;display:block;visibility:hidden;-webkit-transition:all .3s;transition:all .3s;bottom:100%;left:50%;-webkit-transform:translate(-50%,10px);transform:translate(-50%,10px);white-space:pre;width:auto;opacity:0\n}\n[data-wenk]:hover{overflow:visible\n}\n[data-wenk]:hover:after{display:block;opacity:1;visibility:visible;-webkit-transform:translate(-50%,-10px);transform:translate(-50%,-10px)\n}\n[data-wenk].wenk--bottom:after,[data-wenk][data-wenk-pos=bottom]:after{bottom:auto;top:100%;left:50%;-webkit-transform:translate(-50%,-10px);transform:translate(-50%,-10px)\n}\n[data-wenk].wenk--bottom:hover:after,[data-wenk][data-wenk-pos=bottom]:hover:after{-webkit-transform:translate(-50%,10px);transform:translate(-50%,10px)\n}\n[data-wenk].wenk--left:after,[data-wenk][data-wenk-pos=left]:after{bottom:auto;left:auto;top:50%;right:100%;-webkit-transform:translate(10px,-50%);transform:translate(10px,-50%)\n}\n[data-wenk].wenk--left:hover:after,[data-wenk].wenk--right:after,[data-wenk][data-wenk-pos=left]:hover:after,[data-wenk][data-wenk-pos=right]:after{-webkit-transform:translate(-10px,-50%);transform:translate(-10px,-50%)\n}\n[data-wenk].wenk--right:after,[data-wenk][data-wenk-pos=right]:after{bottom:auto;top:50%;left:100%\n}\n[data-wenk].wenk--right:hover:after,[data-wenk][data-wenk-pos=right]:hover:after{-webkit-transform:translate(10px,-50%);transform:translate(10px,-50%)\n}\n[data-wenk].wenk-length--small:after,[data-wenk][data-wenk-length=small]:after{white-space:normal;width:80px\n}\n[data-wenk].wenk-length--medium:after,[data-wenk][data-wenk-length=medium]:after{white-space:normal;width:150px\n}\n[data-wenk].wenk-length--large:after,[data-wenk][data-wenk-length=large]:after{white-space:normal;width:260px\n}\n[data-wenk].wenk-length--fit:after,[data-wenk][data-wenk-length=fit]:after{white-space:normal;width:100%\n}\n[data-wenk].wenk-align--right:after,[data-wenk][data-wenk-align=right]:after{text-align:right\n}\n[data-wenk].wenk-align--center:after,[data-wenk][data-wenk-align=center]:after{text-align:center\n}\n[data-wenk=\"\"]:after{visibility:hidden!important\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1744:
+/***/ 1510:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1511);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("2e4db064", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./tab.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-496556c0\",\"scoped\":false,\"hasInlineConfig\":true}!./tab.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1511:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.faq-cat-content {\n    margin-top : 25px;\n}\n.faq-cat-tabs li a {\n    padding          : 15px 10px 15px 10px;\n    background-color : #ffffff;\n    border           : 1px solid #dddddd;\n    color            : #777777;\n}\n.tab-content.faq-cat-content .panel {\n    box-shadow : 0 1px 1px rgba(0, 0, 0, 0.2);\n}\n.nav-tabs li a:focus,\n.panel-heading a:focus {\n    outline : none;\n}\n.panel-heading a,\n.panel-heading a:hover,\n.panel-heading a:focus {\n    text-decoration : none;\n    color           : #777777;\n}\n.faq-cat-content .panel-heading:hover {\n    background-color : #efefef;\n}\n.active-faq {\n    border-left : 5px solid #888888;\n}\n.panel-faq .panel-heading .panel-title span {\n    font-size   : 13px;\n    font-weight : normal;\n}\n.nav-tabs-custom > .nav-tabs > li.active {\n    border-top-color : #6699cc;\n}\n/* tool bar */\n.btn-toolbar {\n    width   : 40px;\n    height  : 40px;\n    padding : 10px 6px;\n}\n.tool-item {\n    display        : block;\n    text-align     : center;\n    padding-bottom : 10px;\n    padding-right  : 17px;\n    transition     : none;\n}\n.tool-item:hover {\n    color      : #fff;\n    background : 0 !important;\n}\n.toolbar_animate {\n    padding : 25px;\n}\n.btn-toolbar-primary {\n    background-color : #6699cc !important;\n}\n.btn-toolbar-primary:hover {\n    background-color : #6699cc;\n}\n.btn-toolbar-danger {\n    background-color : #ff6666 !important;\n}\n.btn-toolbar-danger:hover {\n    background-color : #ff6666;\n}\n.btn-toolbar-warning {\n    background-color : #f0ad4e !important;\n}\n.btn-toolbar-warning:hover {\n    background-color : #f0ad4e;\n}\n.btn-toolbar-info {\n    background-color : #66ccff !important;\n}\n.btn-toolbar-info:hover {\n    background-color : #66ccff;\n}\n.btn-toolbar-success {\n    background-color : #66cc99 !important;\n}\n.btn-toolbar-success:hover {\n    background-color : #66cc99;\n}\n.toolbar-primary {\n    background : #6699cc;\n}\n.toolbar-primary .tool-item.selected,\n.toolbar-primary .tool-item:hover {\n    background : #6699cc;\n}\n.toolbar-danger {\n    background : #ff6666;\n}\n.toolbar-danger .tool-item.selected,\n.toolbar-danger .tool-item:hover {\n    background : #ff6666;\n}\n.toolbar-warning {\n    background : #f0ad4e;\n}\n.toolbar-danger .tool-item.selected,\n.toolbar-danger .tool-item:hover {\n    background : #f0ad4e;\n}\n.toolbar-info {\n    background : #66ccff;\n}\n.toolbar-info .tool-item.selected,\n.toolbar-info .tool-item:hover {\n    background : #66ccff;\n}\n.toolbar-success {\n    background : #66cc99;\n}\n.toolbar-success .tool-item.selected,\n.toolbar-success .tool-item:hover {\n    background : #66cc99;\n}\n.btn-toolbar-light,\n.toolbar-light {\n    background-color : #dcdcdc;\n}\n.btn-toolbar-light.pressed,\n.btn-toolbar-light:hover {\n    background-color : #e4e4e4;\n}\n.btn-toolbar-dark,\n.toolbar-dark {\n    background-color : #66ccff;\n}\n.btn-toolbar-dark.pressed,\n.btn-toolbar-dark:hover {\n    background-color : #66ccff;\n}\n.btn-toolbar-default i {\n    color : #fff;\n}\n.toolbar-info.tool-top .arrow {\n    border-color : #66ccff transparent transparent;\n}\n.toolbar-light.tool-top .arrow {\n    border-color : #dcdcdc transparent transparent;\n}\n.toolbar-dark.tool-top .arrow {\n    border-color : #66ccff transparent transparent;\n}\n.toolbar-primary.tool-top .arrow {\n    border-color : #6699cc transparent transparent;\n}\n.toolbar-warning.tool-top .arrow {\n    border-color : #f0ad4e transparent transparent;\n}\n.toolbar-success.tool-top .arrow {\n    border-color : #66cc99 transparent transparent;\n}\n.toolbar-success.tool-right .arrow {\n    border-color : transparent #66cc99 transparent transparent;\n}\n.toolbar-danger.tool-bottom .arrow {\n    border-color : transparent transparent #ff6666;\n}\n.toolbar-danger.tool-top .arrow {\n    border-color : #ff6666 transparent transparent;\n}\n.toolbar-warning.tool-left .arrow {\n    border-color : transparent transparent transparent #f0ad4e;\n}\n.toolbar-info.tool-right .arrow {\n    border-color : transparent #66ccff transparent transparent;\n}\n.toolbar-success.tool-bottom .arrow {\n    border-color : transparent transparent #66cc99;\n}\n.toolbar-danger.tool-left .arrow {\n    border-color : transparent transparent transparent #ff6666;\n}\n/*toolbar responsive*/\n@media only screen and (max-width : 768px) {\n.feature-toolbar {\n        margin-top : 10px;\n}\n}\n.wenk-area {\n    border: 1px solid #ccc;\n    padding: 3px 12px;\n    border-radius: 3px;\n    display: inline-block;\n    cursor: default;\n}\n[data-wenk].wenk-length--large:after, [data-wenk][data-wenk-length=large]:after{\n    left:120px;\n}\n@media(min-width:320px) and (max-width:425px){\n[data-wenk].wenk-length--large:after, [data-wenk][data-wenk-length=large]:after{\n        left:50px;\n}\n}\n.popover.show,.tooltip.show   {\n    z-index: 9;\n}\n.btn-warning:not([disabled]):not(.disabled):active{\n    color: #fff;\n}\n@media(max-width:320px){\n.tooltip-examples{\n     margin-right: 1.5rem;\n}\n}\n@media(max-width:425px){\n.tooltip-examples{\n        margin-right: 1rem;\n}\n}\n.disabled{\n    cursor: not-allowed;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1512:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetrend__ = __webpack_require__(1745);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuebars__ = __webpack_require__(1746);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -85,616 +378,1022 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuetrend__["a" /* default */]);
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vuebars__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "blank",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
-        return {};
+        return {
+            text: "\n         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry\n          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor\n          brunch.\n           Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon\n          tempor, sunt aliqua put a bird on it squid single-origin coffee nulla\n          assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore\n          wes anderson cred nesciunt sapiente ea proident.\n\n           Ad vegan excepteur butcher\n          vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic\n          synth nesciunt you probably haven't heard of them accusamus labore VHS.\n\n        "
+        };
     },
 
-    methods: {}
+    name: "tabs_accordions",
+    mounted: function mounted() {
+        "use strict";
+    },
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1745:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function int (value) {
-  return parseInt(value, 10)
-}
-
-/**
- * https://en.wikipedia.org/wiki/Collinearity
- * x=(x1+x2)/2
- * y=(y1+y2)/2
- */
-function checkCollinear (p0, p1, p2) {
-  return (
-    int(p0.x + p2.x) === int(2 * p1.x) && int(p0.y + p2.y) === int(2 * p1.y)
-  )
-}
-
-function getDistance (p1, p2) {
-  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2))
-}
-
-function moveTo (to, from, radius) {
-  var vector = { x: to.x - from.x, y: to.y - from.y };
-  var length = Math.sqrt(vector.x * vector.x + vector.y * vector.y);
-  var unitVector = { x: vector.x / length, y: vector.y / length };
-
-  return {
-    x: from.x + unitVector.x * radius,
-    y: from.y + unitVector.y * radius
-  }
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (arr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  arr = arr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001
-    }
-  })
-}
-
-/**
- * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
- */
-function genPath (points, radius) {
-  var start = points.shift();
-
-  return (
-    "M" + (start.x) + " " + (start.y) +
-    points
-      .map(function (point, index) {
-        var next = points[index + 1];
-        var prev = points[index - 1] || start;
-        var isCollinear = next && checkCollinear(next, point, prev);
-
-        if (!next || isCollinear) {
-          return ("L" + (point.x) + " " + (point.y))
-        }
-
-        var threshold = Math.min(
-          getDistance(prev, point),
-          getDistance(next, point)
-        );
-        var isTooCloseForRadius = threshold / 2 < radius;
-        var radiusForPoint = isTooCloseForRadius ? threshold / 2 : radius;
-
-        var before = moveTo(prev, point, radiusForPoint);
-        var after = moveTo(next, point, radiusForPoint);
-
-        return ("L" + (before.x) + " " + (before.y) + "S" + (point.x) + " " + (point.y) + " " + (after.x) + " " + (after.y))
-      })
-      .join('')
-  )
-}
-
-var Path = {
-  props: ['smooth', 'data', 'boundary', 'radius', 'id', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var smooth = ref.smooth;
-    var boundary = ref.boundary;
-    var radius = ref.radius;
-    var id = ref.id;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min });
-    var d = genPath(points, smooth ? radius : 0);
-
-    return h('path', {
-      attrs: { d: d, fill: 'none', stroke: ("url(#" + id + ")") }
-    })
-  }
-};
-
-var Gradient = {
-  props: ['gradient', 'id'],
-
-  render: function render (h) {
-    var ref = this;
-    var gradient = ref.gradient;
-    var id = ref.id;
-    var len = gradient.length - 1 || 1;
-    var stops = gradient
-      .slice()
-      .reverse()
-      .map(function (color, index) { return h('stop', {
-          attrs: {
-            offset: index / len,
-            'stop-color': color
-          }
-        }); }
-      );
-
-    return h('defs', [
-      h(
-        'linearGradient',
-        {
-          attrs: {
-            id: id,
-            x1: 0,
-            y1: 0,
-            x2: 0,
-            y2: 1
-          }
-        },
-        stops
-      )
-    ])
-  }
-};
-
-var Trend$1 = {
-  name: 'Trend',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    autoDrawDuration: {
-      type: Number,
-      default: 2000
-    },
-    autoDrawEasing: {
-      type: String,
-      default: 'ease'
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    },
-    radius: {
-      type: Number,
-      default: 10
-    },
-    smooth: Boolean
-  },
-
-  watch: {
-    data: {
-      immediate: true,
-      handler: function handler (val) {
-        var this$1 = this;
-
-        this.$nextTick(function () {
-          if (this$1.$isServer || !this$1.$refs.path || !this$1.autoDraw) {
-            return
-          }
-
-          var path = this$1.$refs.path.$el;
-          var length = path.getTotalLength();
-
-          path.style.transition = 'none';
-          path.style.strokeDasharray = length + ' ' + length;
-          path.style.strokeDashoffset = Math.abs(
-            length - (this$1.lastLength || 0)
-          );
-          path.getBoundingClientRect();
-          path.style.transition = "stroke-dashoffset " + (this$1.autoDrawDuration) + "ms " + (this$1.autoDrawEasing);
-          path.style.strokeDashoffset = 0;
-          this$1.lastLength = length;
-        });
-      }
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-trend-' + this._uid;
-    return h(
-      'svg',
-      {
-        attrs: {
-          width: width || '100%',
-          height: height || '25%',
-          viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-        }
-      },
-      [
-        h(Gradient, { props: props }),
-        h(Path, {
-          props: props,
-          ref: 'path'
-        })
-      ]
-    )
-  }
-};
-
-Trend$1.install = function (Vue) {
-  Vue.component(Trend$1.name, Trend$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Trend$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Trend$1);
-
-
-/***/ }),
-
-/***/ 1746:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function transitionColor(from, to, count) {
-  count = count + 1;
-  var int = parseInt(from, 16); // 100
-  var intTo = parseInt(to, 16); // 50
-  var list = []; // 5
-  var diff = int - intTo; // 50
-  var isNegative = diff < 0; // false
-  var one = diff / count; // 10
- 
-  list.push(from);
-  for (var i = 1; i <= count; i++) {
-    list.push(Math.floor(int - (one * i)).toString(16));
-  }
- 
-  return list
-}
- 
-function transition(from, to, count) {
-  count = count || 3;
-  var r = from.slice(0, 2), g = from.slice(2, 4), b = from.slice(4, 6);
-  var rt = to.slice(0, 2), gt = to.slice(2, 4), bt = to.slice(4, 6);
-  var allR = transitionColor(r, rt, count);
-  var allG = transitionColor(g, gt, count);
-  var allB = transitionColor(b, bt, count);
-  var list = [];
- 
-  allR.forEach(function(_, i) {
-    list.push('' + allR[i] + allG[i] + allB[i]);
-  });
- 
-  return list
-}
- 
-function generateGradientStepsCss(from, to, count) {
-  from = from.replace('#', '');
-  to = to.replace('#', '');
-  var values = transition(from, to, count);
-  var total = 100 / (count + 1);
-  var obj = [];
-  for (var i = 0; i <= count + 1; i++) {
-    obj.push({percentage: Math.floor(total * i), value: values[i]});
-  }
-  return obj.map(function(value) {
-    return '#' + value.value
-  })
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (inArr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  var arr = inArr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    var title = typeof inArr[index] === 'number' ? inArr[index] : inArr[index].title;
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001,
-      v: title
-    }
-  })
-}
-
-function genBars (_this, arr, h) {
-  var ref = _this.boundary;
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var totalWidth = (maxX) / (arr.length-1);
-  if (!_this.barWidth) {
-    _this.barWidth = totalWidth - (_this.padding || 5);
-  }
-  if (!_this.rounding) {
-    _this.rounding = 2;
-  }
-
-  var gradients = 0;
-  if (_this.gradient && _this.gradient.length > 1) {
-    gradients = generateGradientStepsCss(_this.gradient[0], _this.gradient[1], (arr.length-1));
-  }
-  var offsetX = (totalWidth - _this.barWidth) / 2;
-
-  return arr.map(function (item, index) {
-    return h('rect', {
-      attrs: {
-        id: ("bar-id-" + index),
-        fill: (gradients ? gradients[index] : (_this.gradient[0] ? _this.gradient[0] : '#000')),
-        x: item.x - offsetX,
-        y: 0,
-        width: _this.barWidth,
-        height: (maxY - item.y),
-        rx: _this.rounding,
-        ry: _this.rounding
-      }
-    }, [
-      h('animate', {
-        attrs: {
-          attributeName: 'height',
-          from: 0,
-          to: (maxY - item.y),
-          dur: ((_this.growDuration) + "s"),
-          fill: 'freeze'
-        }
-      }),
-      h('title', {}, [item.v])
-    ])
-  })
-}
-
-var Path = {
-  props: ['data', 'boundary', 'barWidth', 'id', 'gradient', 'growDuration', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var boundary = ref.boundary;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min } );
-    var bars = genBars(this, points, h);
-
-    return h('g', {
-      attrs: {
-        transform: ("scale(1,-1) translate(0,-" + (this.boundary.maxY) + ")")
-      }
-    }, bars)
-  }
-};
-
-var Bars$1 = {
-  name: 'Bars',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    barWidth: {
-      type: Number,
-      default: 8
-    },
-    growDuration: {
-      type: Number,
-      default: 0.5
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-bars-' + this._uid;
-
-    return h('svg', {
-      attrs: {
-        width: width || '100%',
-        height: height || '25%',
-        viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-      }
-    }, [
-      h(Path, {
-        props: props,
-        ref: 'path'
-      })
-    ])
-  }
-};
-
-Bars$1.install = function (Vue) {
-  Vue.component(Bars$1.name, Bars$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Bars$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Bars$1);
-
-
-/***/ }),
-
-/***/ 1747:
+/***/ 1513:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Trend chart" } },
-          [
-            _c("trend", {
-              attrs: {
-                data: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-                gradient: ["#6fa8dc", "#42b983", "#f27a09", "#ff5454"],
-                smooth: ""
-              }
-            })
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Vue-bar chart" } },
-          [
-            _c("bars", {
-              attrs: {
-                data: [
-                  1,
-                  2,
-                  5,
-                  9,
-                  5,
-                  10,
-                  3,
-                  5,
-                  8,
-                  12,
-                  1,
-                  8,
-                  2,
-                  9,
-                  10,
-                  2,
-                  9,
-                  4,
-                  5,
-                  6,
-                  7,
-                  3,
-                  2,
-                  3,
-                  5
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-layout-tab-window'></i> Tabs" } },
+            [
+              _c(
+                "b-tabs",
+                [
+                  _c("b-tab", { attrs: { title: "Home", active: "" } }, [
+                    _c("p", { staticClass: "mt-3" }, [
+                      _vm._v(
+                        "\n                            It is a long established fact that a reader will be distracted by the\n                            readable content of a page when looking at its layout. The point of using\n                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as\n                            opposed to using 'Content here, content here'.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-tab", { attrs: { title: "Profile" } }, [
+                    _c("p", { staticClass: "mt-3" }, [
+                      _vm._v(
+                        "\n                            There are many variations of passages of Lorem Ipsum available, but the\n                            majority have suffered alteration in some form, by injected humour, or\n                            randomised words which don't look even slightly believable.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-tab", { attrs: { title: "Disabled", disabled: "" } }, [
+                    _c("p", { staticClass: "mt-3" }, [
+                      _vm._v(
+                        "If you are going\n                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything\n                            embarrassing hidden in the middle of text. The generated Lorem Ipsum is\n                            therefore always free from repetition, injected humour, or\n                            non-characteristic\n                            words etc.\n                        "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br")
+                  ])
                 ],
-                gradient: ["#ffbe88", "#ff93df"],
-                barWidth: 5,
-                growDuration: 1
-              }
-            })
-          ],
-          1
-        )
-      ],
-      1
-    )
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-layout-tab'></i> Pills" } },
+            [
+              _c("div", { staticClass: "bs-example" }, [
+                _c("ul", { staticClass: "nav nav-pills" }, [
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link active",
+                        attrs: { href: "#/tabs_accordions" }
+                      },
+                      [_vm._v("Home")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link",
+                        attrs: { href: "#/tabs_accordions" }
+                      },
+                      [_vm._v("Profile")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link disabled",
+                        attrs: { href: "#/tabs_accordions" }
+                      },
+                      [_vm._v("Disabled")]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "bs-example" }, [
+                _c(
+                  "ul",
+                  {
+                    staticClass: "nav flex-column nav-pills bg-stacked",
+                    staticStyle: { "max-width": "300px" }
+                  },
+                  [
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link active",
+                          attrs: { href: "#/tabs_accordions" }
+                        },
+                        [_vm._v("Home")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#/tabs_accordions" }
+                        },
+                        [_vm._v("Profile")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link disabled",
+                          attrs: { href: "#/tabs_accordions" }
+                        },
+                        [_vm._v("Disabled")]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-comment'></i> Popover" } },
+            [
+              _c(
+                "div",
+                [
+                  _c(
+                    "b-btn",
+                    {
+                      ref: "primary",
+                      attrs: { id: "exright", variant: "warning" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Right\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      attrs: {
+                        target: "exright",
+                        triggers: "click",
+                        placement: "right"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on right\n                    "
+                      )
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-btn",
+                    { ref: "button", attrs: { id: "top", variant: "primary" } },
+                    [
+                      _vm._v(
+                        "\n                        Top\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      ref: "popover",
+                      attrs: {
+                        target: "top",
+                        triggers: "click",
+                        placement: "top"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on top\n                    "
+                      )
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-btn",
+                    {
+                      ref: "success",
+                      attrs: { id: "bottom", variant: "success" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Bottom\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      attrs: {
+                        target: "bottom",
+                        triggers: "click",
+                        placement: "bottom"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on bottom\n                    "
+                      )
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c("b-btn", { attrs: { id: "left", variant: "secondary" } }, [
+                    _vm._v(
+                      "\n                        Left\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "b-popover",
+                    {
+                      attrs: {
+                        target: "left",
+                        triggers: "click",
+                        placement: "left"
+                      }
+                    },
+                    [
+                      _c("template", { slot: "title" }, [
+                        _vm._v("Popover title")
+                      ]),
+                      _vm._v(
+                        "\n                        Popover on left\n                    "
+                      )
+                    ],
+                    2
+                  )
+                ],
+                1
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-comments'></i> Tool Tips" } },
+            [
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.right",
+                      modifiers: { hover: true, right: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg text-white",
+                  attrs: { variant: "info", title: "Tooltip in right " }
+                },
+                [_vm._v("Right ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.top",
+                      modifiers: { hover: true, top: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg",
+                  attrs: { variant: "primary", title: "Tooltip in top" }
+                },
+                [_vm._v("Top")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.left",
+                      modifiers: { hover: true, left: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg",
+                  attrs: { variant: "success", title: "Tooltip in left" }
+                },
+                [_vm._v("Left")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-btn",
+                {
+                  directives: [
+                    {
+                      name: "b-tooltip",
+                      rawName: "v-b-tooltip.hover.bottom",
+                      modifiers: { hover: true, bottom: true }
+                    }
+                  ],
+                  staticClass: "mb-3 btn-lg",
+                  attrs: { variant: "warning", title: "Tooltip in bottom" }
+                },
+                [_vm._v("Bottom")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "bs-example" }, [
+                _c("ul", { staticClass: "tooltip-examples list-inline" }, [
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-2",
+                      attrs: { title: "hi" }
+                    },
+                    [_vm._v("Tooltip")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-3",
+                      attrs: { title: "Hello!!" }
+                    },
+                    [_vm._v("Small tooltip")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-3",
+                      attrs: {
+                        title:
+                          "A much larger tooltip to demonstrate the max width of the Bootstrap tooltip"
+                      }
+                    },
+                    [_vm._v("Large tooltip")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      directives: [
+                        {
+                          name: "b-tooltip",
+                          rawName: "v-b-tooltip.hover.top",
+                          modifiers: { hover: true, top: true }
+                        }
+                      ],
+                      staticClass: " ml-3 mr-3",
+                      attrs: { title: "Bye!" }
+                    },
+                    [_vm._v("Last tooltip")]
+                  )
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            { attrs: { title: " <i class='ti-comment-alt'></i> Popover" } },
+            [
+              _c("div", [
+                _c(
+                  "div",
+                  { staticClass: "po-markup" },
+                  [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        attrs: { href: "http://www.fifa.com/", id: "popoverr" }
+                      },
+                      [
+                        _vm._v(
+                          "\n                            fifa.com\n                        "
+                        )
+                      ]
+                    ),
+                    _vm._v(
+                      "\n                        ← popover on link so you can get site information.\n                        "
+                    ),
+                    _c(
+                      "b-popover",
+                      {
+                        attrs: {
+                          target: "popoverr",
+                          triggers: "hover",
+                          placement: "right"
+                        }
+                      },
+                      [
+                        _c("template", { slot: "title" }, [
+                          _c("img", {
+                            attrs: {
+                              src: __webpack_require__(1514),
+                              alt: "Google",
+                              width: "20",
+                              height: "20"
+                            }
+                          }),
+                          _vm._v(
+                            " Foot Ball\n                                world cup\n                            "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                                Football refers to a number of sports that involve, to varying degrees,\n                                kicking a ball with the foot to score a goal. The most popular of these\n                                sports worldwide is\n                                "
+                          ),
+                          _c("strong", [_vm._v("association football")]),
+                          _vm._v(
+                            ' , more commonly known as just\n                                "football" or "soccer".\n                            '
+                          )
+                        ])
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-comment'></i> Wenk Tool tip" } },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c("h4", [_vm._v("Wenk positions")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: { "data-wenk": "Top!" }
+                      },
+                      [_vm._v("Wenk to the top!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: { "data-wenk": "Left!", "data-wenk-pos": "left" }
+                      },
+                      [_vm._v("Wenk to the left!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: {
+                          "data-wenk": "Right!",
+                          "data-wenk-pos": "right"
+                        }
+                      },
+                      [_vm._v("Wenk to the right!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-area",
+                        attrs: {
+                          "data-wenk": "Bottom!",
+                          "data-wenk-pos": "bottom"
+                        }
+                      },
+                      [_vm._v("Wenk to the bottom!")]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c("h4", [_vm._v("Wenk Size")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--small wenk-area",
+                        attrs: { "data-wenk": "I'm small!" }
+                      },
+                      [_vm._v("Small wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--medium wenk-area",
+                        attrs: { "data-wenk": "I'm medium!" }
+                      },
+                      [_vm._v("Medium wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm large!" }
+                      },
+                      [_vm._v("Large wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-6 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "wenk-length--fit wenk-area",
+                        attrs: { "data-wenk": "I fit!" }
+                      },
+                      [_vm._v("I fit just right!")]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-12" }, [
+                  _c("h4", [_vm._v("Wenk Alignment")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "wenk-align--left wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm left!" }
+                      },
+                      [_vm._v("Left wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "wenk-align--center wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm center!" }
+                      },
+                      [_vm._v("center wenk!")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-center" }, [
+                  _c("p", [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "wenk-align--right wenk-length--large wenk-area",
+                        attrs: { "data-wenk": "I'm right!" }
+                      },
+                      [_vm._v("Right wenk!")]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-layout-menu-v'></i> Accordions" } },
+            [
+              _c(
+                "b-card",
+                { attrs: { "no-body": "" } },
+                [
+                  _c(
+                    "b-tabs",
+                    { ref: "tabs", attrs: { card: "" } },
+                    [
+                      _c("b-tab", { attrs: { title: "Tab 1" } }, [
+                        _c(
+                          "div",
+                          { attrs: { role: "tablist" } },
+                          [
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion1",
+                                            modifiers: { accordion1: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-1")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion1",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                I start opened because "
+                                        ),
+                                        _c("code", [_vm._v("visible")]),
+                                        _vm._v(" is "),
+                                        _c("code", [_vm._v("true")])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion2",
+                                            modifiers: { accordion2: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-2")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion2",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("b-tab", { attrs: { title: "Tab 2" } }, [
+                        _c(
+                          "div",
+                          { attrs: { role: "tablist" } },
+                          [
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion3",
+                                            modifiers: { accordion3: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-1")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion3",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                I start opened because "
+                                        ),
+                                        _c("code", [_vm._v("visible")]),
+                                        _vm._v(" is "),
+                                        _c("code", [_vm._v("true")])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-card",
+                              { staticClass: "mb-1", attrs: { "no-body": "" } },
+                              [
+                                _c(
+                                  "b-card-header",
+                                  {
+                                    staticClass: "p-0",
+                                    attrs: {
+                                      "header-tag": "header",
+                                      role: "tab"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "b-btn",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "b-toggle",
+                                            rawName: "v-b-toggle.accordion4",
+                                            modifiers: { accordion4: true }
+                                          }
+                                        ],
+                                        attrs: {
+                                          block: "",
+                                          href: "#",
+                                          variant: "secondary"
+                                        }
+                                      },
+                                      [_vm._v("Item Tab-2")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-collapse",
+                                  {
+                                    attrs: {
+                                      id: "accordion4",
+                                      accordion: "my-accordion",
+                                      role: "tabpanel"
+                                    }
+                                  },
+                                  [
+                                    _c("b-card-body", [
+                                      _c("p", { staticClass: "card-text" }, [
+                                        _vm._v(
+                                          "\n                                                " +
+                                            _vm._s(_vm.text) +
+                                            "\n                                            "
+                                        )
+                                      ])
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -703,25 +1402,33 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-751e8c25", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-496556c0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 481:
+/***/ 1514:
+/***/ (function(module, exports) {
+
+module.exports = "/images/football.jpg?7a3f7a7b1ed0c1c4471260384c3e46e0";
+
+/***/ }),
+
+/***/ 459:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1742)
+  __webpack_require__(1508)
+  __webpack_require__(1510)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1744)
+var __vue_script__ = __webpack_require__(1512)
 /* template */
-var __vue_template__ = __webpack_require__(1747)
+var __vue_template__ = __webpack_require__(1513)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -738,7 +1445,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/trend_bar.vue"
+Component.options.__file = "resources/components/pages/tabs_accordions.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -747,9 +1454,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-751e8c25", Component.options)
+    hotAPI.createRecord("data-v-496556c0", Component.options)
   } else {
-    hotAPI.reload("data-v-751e8c25", Component.options)
+    hotAPI.reload("data-v-496556c0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -761,19 +1468,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 527:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(528)
+  __webpack_require__(531)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(530)
+var __vue_script__ = __webpack_require__(533)
 /* template */
-var __vue_template__ = __webpack_require__(531)
+var __vue_template__ = __webpack_require__(534)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -813,13 +1520,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(529);
+var content = __webpack_require__(532);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -840,7 +1547,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 529:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -855,7 +1562,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 530:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -900,7 +1607,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 531:
+/***/ 534:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
