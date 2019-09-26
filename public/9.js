@@ -275,6 +275,9 @@ exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(544);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(219);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -367,6 +370,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -389,9 +393,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
         };
     },
+    computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* mapGetters */])(["seleccion"])),
     watch: {
         dialog: function dialog(val) {
             val || this.close();
+            this.cargarProyecto();
         },
         proyecto: function proyecto(val) {
             if (val) {
@@ -405,6 +411,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     title: 'Advertencia',
                     text: 'Por favor seleccione un proyecto'
                 });
+            }
+        },
+
+        seleccion: {
+            deep: true,
+            handler: function handler(val) {
+                this.proyecto = val;
+                this.cargarProyecto();
             }
         }
     },

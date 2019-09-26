@@ -92,6 +92,7 @@
 </template>
 <script>
     import multiselect from 'vue-multiselect';
+    import {mapGetters} from 'vuex';
     export default {
         name: "clear_header",
         components:{
@@ -110,9 +111,13 @@
                 nombre:''
             },
         }),
+        computed:{
+            ...mapGetters(["seleccion"])
+        },
         watch: {
             dialog(val) {
                 val || this.close()
+                this.cargarProyecto();
             },
             proyecto(val) {
                 if(val)
@@ -128,6 +133,13 @@
                         text: 'Por favor seleccione un proyecto',
                     })
                 }        
+            },
+            seleccion:{
+                deep:true,
+                handler(val){
+                    this.proyecto=val;
+                    this.cargarProyecto();
+                }
             }
         },
         methods: {

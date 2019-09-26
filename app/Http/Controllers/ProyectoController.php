@@ -99,6 +99,7 @@ class ProyectoController extends Controller
                 $actividad_proyecto->save();
             }
             DB::commit();
+            return response()->json(['id'=>$proyecto->IdProyecto,'nombre'=>$proyecto->Titulo]);
 
         } catch(\Throwable $th) {
             DB::rollback();

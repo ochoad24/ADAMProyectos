@@ -332,25 +332,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -393,7 +374,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             menu3: false,
             menu4: false,
             headersOrg: [{ text: "Organizacion", value: 'nombre', align: 'right' }, { text: "Departamento", value: 'departamento', align: 'right' }, { text: "Municipio", value: 'municipio', align: 'right' }],
-            headersActividades: [{ text: 'Actividad', value: 'actividad', align: 'right' }, { text: 'Descripción', value: 'descripcion', align: 'right' }, { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha de Finalización', value: 'fechaFinal', align: 'right' }]
+            headersActividades: [{ text: 'Actividad', value: 'actividad', align: 'right' }, { text: 'Descripción', value: 'descripcion', align: 'right' }, { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha de Finalización', value: 'fechaFinal', align: 'right' }],
+            proyecto: {
+                id: 0,
+                nombre: ''
+            }
         };
     },
 
@@ -525,13 +510,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'data': me.acts
             }).then(function (response) {
                 console.log(response.data);
-                if (!response.data) {
+                if (response.data) {
+                    console.log(response.data);
+                    me.proyecto.id = response.data.id;
+                    me.proyecto.nombre = response.data.nombre;
+                    me.$store.commit('changeProject', me.proyecto);
                     swal.fire({
                         type: 'success',
                         title: 'Proyecto registrado!',
                         showConfirmButton: false,
                         timer: 1500
                     });
+                    window.location.href = "/#/Tarea";
                 } else {
                     swal.fire({
                         type: 'error',
@@ -615,13 +605,7 @@ var render = function() {
                 "v-stepper-step",
                 { attrs: { complete: _vm.e1 > 2, step: "2" } },
                 [_vm._v("Crear actividades")]
-              ),
-              _vm._v(" "),
-              _c("v-divider"),
-              _vm._v(" "),
-              _c("v-stepper-step", { attrs: { step: "3" } }, [
-                _vm._v("Crear tareas")
-              ])
+              )
             ],
             1
           ),
@@ -1911,33 +1895,6 @@ var render = function() {
                         "\n                      Guardar\n                  "
                       )
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c("v-btn", { attrs: { flat: "" } }, [_vm._v("Cancel")])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-stepper-content",
-                { attrs: { step: "3" } },
-                [
-                  _c("v-card", {
-                    staticClass: "mb-5",
-                    attrs: { color: "grey lighten-1", height: "200px" }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      attrs: { color: "primary" },
-                      on: {
-                        click: function($event) {
-                          _vm.e1 = 1
-                        }
-                      }
-                    },
-                    [_vm._v("\n              Continue\n              ")]
                   ),
                   _vm._v(" "),
                   _c("v-btn", { attrs: { flat: "" } }, [_vm._v("Cancel")])
