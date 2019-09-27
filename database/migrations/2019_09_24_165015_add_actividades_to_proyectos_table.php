@@ -36,3 +36,4 @@ class AddActividadesToProyectosTable extends Migration
         });
     }
 }
+
