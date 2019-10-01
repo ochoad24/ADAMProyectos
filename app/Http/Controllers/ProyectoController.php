@@ -44,6 +44,10 @@ class ProyectoController extends Controller
             $proyecto = new Proyecto();
             $proyecto->Titulo = $request->Titulo;
             $proyecto->Descripcion = $request->Descripcion;
+            $proyecto->objetivos = $request->objetivos;
+            $proyecto->resultados_objetivo = $request->resultados_objetivo;
+            $proyecto->indicadores = $request->indicadores;
+            $proyecto->resultados_indicadores = $request->resultados_indicadores;
             $proyecto->FechaInicio = Carbon::parse($request->FechaInicio);
             $proyecto->FechaFin = Carbon::parse($request->FechaFin);
             $proyecto->save();
@@ -71,7 +75,14 @@ class ProyectoController extends Controller
             $proyecto = new Proyecto();
             $proyecto->Titulo = $request->Titulo;
             $proyecto->Descripcion = $request->Descripcion;
+            $proyecto->objetivos = $request->objetivos;
+            $proyecto->resultados_objetivo = $request->resultados_objetivo;
+            $proyecto->indicadores = $request->indicadores;
+            $proyecto->resultados_indicadores = $request->resultados_indicadores;
             $proyecto->FechaInicio = Carbon::parse($request->FechaInicio);
+            $proyecto->actividades = 0;
+            $proyecto->actividadesCompletadas = 0;
+            $proyecto->actividadesPendientes = 0;
             $proyecto->FechaFin = Carbon::parse($request->FechaFin);
             $proyecto->save();
 
@@ -88,6 +99,7 @@ class ProyectoController extends Controller
             foreach($actividades as $ep=>$actividad) {
                 $actividad_proyecto = new Actividad();
                 $actividad_proyecto->actividad = $actividad['actividad'];
+                $actividad_proyecto->codigo_actividad = $actividad['codigo'];
                 $actividad_proyecto->descripcion = $actividad['descripcion'];
                 $actividad_proyecto->idProyecto = $proyecto->IdProyecto;
                 $actividad_proyecto->fechaInicio = Carbon::parse($actividad['fechaInicio']);

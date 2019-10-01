@@ -11,6 +11,7 @@ import swal from 'sweetalert2';
 import 'vuetify/dist/vuetify.min.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
+
 Vue.use(window.VueCharts);
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)

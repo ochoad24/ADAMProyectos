@@ -17,6 +17,7 @@ class CreateOrganizacionesTable extends Migration
             $table->bigIncrements('IdOrganizacion');
             $table->string('nombre', 150);
             $table->string('municipio', 150);
+            $table->string('comunidad', 150)->nullable();
             $table->bigInteger('IdDepartamento')->unsigned();
             $table->timestamps();
 

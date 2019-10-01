@@ -37,7 +37,11 @@
                             </v-card-actions>
                         </v-card>
                     </v-dialog>
+                    
                 </div>
+            </div>
+            <div class="nav">
+                <ul class="ul"><h1>{{ this.$store.state.proyecto.nombre }}</h1></ul>
             </div>
             <!-- <h1 v-text="this.$store.state.proyecto"></h1>  -->
             <!-- <v-flex xs4 sm4 md4>
@@ -175,3 +179,11 @@
     }
 </script>
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
+<style>
+    .nav{
+    text-align: center;
+    }
+    .ul{
+    display: inline-block;
+    }
+</style>

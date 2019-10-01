@@ -24,7 +24,7 @@
                                 <v-card-text>
                                     <v-container grid-list-sm fluid>
                                         <v-flex xs12>
-                                            <v-textarea v-model="descripcion" label="Descripción de la tarea">
+                                            <v-textarea v-model="descripcion" label="Agregue observaciones de la actividad (opcional)">
                                             </v-textarea>
                                         </v-flex>
                                         <v-flex xs12
@@ -94,13 +94,13 @@
                     </v-toolbar>
                     <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
                         <template v-slot:items="props">
-                            <td class="text-xs-right">{{ props.item.nombre }}</td>
+                            <td class="text-xs-right">{{ props.item.tarea }}</td>
                             <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
                             <td class="text-xs-right">{{ props.item.fechaFinal }}</td>
                             <td class="text-xs-right">{{ props.item.fechaRealizacion }}</td>
-                            <td class="text-xs-left">
+                            <td class="text-xs-right">
                                 <template>
-                                    <div class="text-xs-left">
+                                    <div class="text-xs-right">
                                         <v-chip color="amber accent-4" text-color="white" v-if="props.item.estado==0">En
                                             Proceso</v-chip>
                                         <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
@@ -182,11 +182,11 @@
             error: 0,
             errorMsj: [],
             headers: [
-                { text: 'Nombre', value: 'nombre' },
-                { text: 'Fecha Inicio', value: 'fechaInicio' },
-                { text: 'Fecha Final', value: 'fechaFinal' },
-                { text: 'Fecha Realizacion', value: 'fechaRealizacion' },
-                { text: 'Estado', value: 'estado' },
+                { text: 'Nombre', value: 'tarea', align: 'right' },
+                { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' },
+                { text: 'Fecha Final', value: 'fechaFinal', align: 'right' },
+                { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' },
+                { text: 'Estado', value: 'estado', align: 'center' },
             ],
             tareas: [],
 
@@ -324,7 +324,6 @@
                         console.log(errors);
                     });
                 this.getActividaes();
-                this.getTipos();
                 this.getEstadistica();
                 this.getUsuario();
             },
@@ -343,15 +342,6 @@
                 axios.get(url)
                     .then(response => {
                         this.estadisticas = response.data;
-                    })
-                    .catch(errors => {
-                        console.log(errors);
-                    });
-            },
-            getTipos() {
-                axios.get('/TipoActividad')
-                    .then(response => {
-                        this.tipos = response.data;
                     })
                     .catch(errors => {
                         console.log(errors);
@@ -394,12 +384,13 @@
                  form.append('estadisticas',JSON.stringify(this.estadisticas));
                 const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
                  axios.post('/Tarea/subir',form,ajuste).then(function (response) {
+                     console.log(response.data);
                     swal.fire({
                         position: 'top-end',
                         type: 'success',
                         title: response.data,
                         showConfirmButton: false,
-                        timer: 1500
+                        timer: 1000000
                     });
                     me.initialize();
                     me.close();

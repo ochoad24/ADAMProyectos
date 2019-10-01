@@ -34,6 +34,10 @@
                                                 <v-text-field v-model="municipio"
                                                     label="Municipio de ubucación de la organización"></v-text-field>
                                             </v-flex>
+                                            <v-flex xs12>
+                                                <v-text-field v-model="comunidad" label="Ingrese comunidad">
+                                                </v-text-field>
+                                            </v-flex>
                                         </v-layout>
                                     </v-container>
                                 </v-card-text>
@@ -64,6 +68,7 @@
                             <td>{{ props.item.nombre }}</td>
                             <td class="text-xs-right">{{ props.item.departamento }}</td>
                             <td class="text-xs-right">{{ props.item.municipio }}</td>
+                            <td class="text-xs-right">{{ props.item.comunidad }}</td>
                             <td class="justify-center layout px-0">
                                 <v-icon small class="mr-2" @click="abrirEditar(props.item)">
                                     edit
@@ -105,10 +110,12 @@
             headers: [
                 { text: 'Nombre', align: 'left', value: 'nombre' },
                 { text: 'Departamento', align: 'right', value: 'departamento' },
-                { text: 'Municipio', align: 'right', value: 'municipio' }
+                { text: 'Municipio', align: 'right', value: 'municipio' },
+                { text: 'Comunidad', align: 'right', value: 'comunidad' }
             ],
             municipio: '',
             nombre: '',
+            comunidad: '',
             organizaciones: [],
             editedIndex: -1
         }),
@@ -179,7 +186,8 @@
                 axios.post('org/registrar', {
                     'nombre': me.nombre,
                     'municipio': me.municipio,
-                    'IdDepartamento': me.select.id
+                    'IdDepartamento': me.select.id,
+                    'comunidad': me.comunidad
                 })
                     .then(function (response) {
                         console.log(response.data);
@@ -212,6 +220,7 @@
                     'id': me.IdOrganizacion,
                     'nombre': me.nombre,
                     'municipio': me.municipio,
+                    'comunidad': me.comunidad,
                     'IdDepartamento': me.select.id
                 })
                     .then(function (response) {
@@ -240,6 +249,7 @@
                 this.IdOrganizacion = item.IdOrganizacion;
                 this.dialog = true;
                 this.nombre = item.nombre;
+                this.comunidad = item.comunidad;
                 this.municipio = item.municipio;
             },
 
@@ -288,6 +298,7 @@
                 this.IdOrganizacion = 0;
                 this.nombre = "";
                 this.municipio = '';
+                this.comunidad = '';
                 this.select = [];
                 this.error = 0;
                 this.errorMsj = [];

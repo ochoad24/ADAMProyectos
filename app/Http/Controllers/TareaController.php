@@ -8,6 +8,8 @@ use App\Tarea;
 use App\Estadistica;
 use App\Encargado;
 use App\Foto;
+use App\Actividad;
+use App\Proyecto;
 
 use Image;
 use Carbon\Carbon;
@@ -18,8 +20,7 @@ use Illuminate\Support\Facades\Storage;
 class TareaController extends Controller
 {
     public function index($actividad){
-        return Tarea::join('tipo_actividad','tipo_actividad.id','=','tarea.idTipoTarea')
-        ->select('tarea.id','tipo_actividad.nombre','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
+        return Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
         ->where('tarea.idActividad',$actividad)->get();
     }
     public function store(Request $request){
@@ -30,8 +31,8 @@ class TareaController extends Controller
                 $tarea->fechaInicio=$request->fechaInicio;
                 $tarea->fechaFinal=$request->fechaFinal;
                 $tarea->estado=0;
+                $tarea->tarea = $request->tarea;
                 $tarea->idActividad=$request->idActividad;
-                $tarea->idTipoTarea=$request->idTipoTarea;
                 $tarea->save();
                 foreach($request->estadisticas as $item){
                     $estadistica=new Estadistica;
@@ -66,6 +67,20 @@ class TareaController extends Controller
             $reporte->fechaRealizacion=Carbon::now();
             $reporte->participantes=$request->participantes;
             $reporte->save();
+
+            $actividad = Actividad::findOrFail($reporte->idActividad);
+            echo($actividad);
+            $actividad->tareasCompletadas = $actividad->tareasCompletadas + 1;
+            $actividad->tareasPendientes = $actividad->tareasPendientes - 1;
+            $actividad->save();
+            echo($actividad);
+
+            $proyecto = Proyecto::findOrFail($actividad->idProyecto);
+            if($actividad->tareasCompletadas == $actividad->tareas) {
+                $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas + 1;
+                $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
+                $proyecto->save();
+            }
             
             $esta=json_decode($request->estadisticas);
             foreach($esta as $value){

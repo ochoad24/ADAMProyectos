@@ -18,6 +18,7 @@ class CreateTareaTable extends Migration
             $table->bigIncrements('id');
             $table->date('fechaInicio');
             $table->date('fechaFinal');
+            $table->string('tarea', 240);
             $table->string('descripcion',500)->nullable();
             $table->tinyInteger('estado');
             $table->Integer('participantes')->nullable();
@@ -26,10 +27,6 @@ class CreateTareaTable extends Migration
 
             $table->bigInteger('idActividad')->unsigned();
             $table->foreign('idActividad')->references('id')->on('actividades'); 
-            
-
-            $table->bigInteger('idTipoTarea')->unsigned();
-            $table->foreign('idTipoTarea')->references('id')->on('tipo_actividad');
             
             $table->timestamps();
         });

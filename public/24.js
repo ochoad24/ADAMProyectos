@@ -1,6 +1,6 @@
 webpackJsonp([24],{
 
-/***/ 2308:
+/***/ 2311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,6 +9,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(545);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -114,9 +119,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             IdOrganizacion: 0,
             IdDepartamento: -1,
             editar: 0,
-            headers: [{ text: 'Nombre', align: 'left', value: 'nombre' }, { text: 'Departamento', align: 'right', value: 'departamento' }, { text: 'Municipio', align: 'right', value: 'municipio' }],
+            headers: [{ text: 'Nombre', align: 'left', value: 'nombre' }, { text: 'Departamento', align: 'right', value: 'departamento' }, { text: 'Municipio', align: 'right', value: 'municipio' }, { text: 'Comunidad', align: 'right', value: 'comunidad' }],
             municipio: '',
             nombre: '',
+            comunidad: '',
             organizaciones: [],
             editedIndex: -1
         };
@@ -178,7 +184,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('org/registrar', {
                 'nombre': me.nombre,
                 'municipio': me.municipio,
-                'IdDepartamento': me.select.id
+                'IdDepartamento': me.select.id,
+                'comunidad': me.comunidad
             }).then(function (response) {
                 console.log(response.data);
                 swal.fire({
@@ -208,6 +215,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'id': me.IdOrganizacion,
                 'nombre': me.nombre,
                 'municipio': me.municipio,
+                'comunidad': me.comunidad,
                 'IdDepartamento': me.select.id
             }).then(function (response) {
                 swal.fire({
@@ -233,6 +241,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.IdOrganizacion = item.IdOrganizacion;
             this.dialog = true;
             this.nombre = item.nombre;
+            this.comunidad = item.comunidad;
             this.municipio = item.municipio;
         },
         deleteItem: function deleteItem(id) {
@@ -279,6 +288,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.IdOrganizacion = 0;
             this.nombre = "";
             this.municipio = '';
+            this.comunidad = '';
             this.select = [];
             this.error = 0;
             this.errorMsj = [];
@@ -288,7 +298,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2309:
+/***/ 2312:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -464,6 +474,26 @@ var render = function() {
                                             })
                                           ],
                                           1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: {
+                                                label: "Ingrese comunidad"
+                                              },
+                                              model: {
+                                                value: _vm.comunidad,
+                                                callback: function($$v) {
+                                                  _vm.comunidad = $$v
+                                                },
+                                                expression: "comunidad"
+                                              }
+                                            })
+                                          ],
+                                          1
                                         )
                                       ],
                                       1
@@ -589,6 +619,10 @@ var render = function() {
                             _vm._v(_vm._s(props.item.municipio))
                           ]),
                           _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.comunidad))
+                          ]),
+                          _vm._v(" "),
                           _c(
                             "td",
                             { staticClass: "justify-center layout px-0" },
@@ -706,9 +740,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2308)
+var __vue_script__ = __webpack_require__(2311)
 /* template */
-var __vue_template__ = __webpack_require__(2309)
+var __vue_template__ = __webpack_require__(2312)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

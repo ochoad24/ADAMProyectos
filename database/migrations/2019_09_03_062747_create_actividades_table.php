@@ -16,6 +16,7 @@ class CreateActividadesTable extends Migration
         Schema::create('actividades', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('actividad',500);
+            $table->string('codigo_actividad', 50);
             $table->integer('tareas')->nullable();
             $table->integer('tareasCompletadas')->nullable();
             $table->integer('tareasPendientes')->nullable();

@@ -17,6 +17,10 @@ class CreateProyectosTable extends Migration
             $table->bigIncrements('IdProyecto');
             $table->string('Titulo', 100);
             $table->string('Descripcion', 1000)->nullable();
+            $table->mediumText('objetivos')->nullable();
+            $table->mediumText('resultados_objetivo')->nullable();
+            $table->mediumText('indicadores')->nullable();
+            $table->mediumText('resultados_indicadores')->nullable();
             $table->date('FechaInicio');
             $table->date('FechaFin');
             $table->tinyInteger('Estado')->default('1');

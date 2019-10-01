@@ -24,6 +24,80 @@
                                         <v-textarea v-model="descripcion" label="Descripción del proyecto">
                                         </v-textarea>
                                     </v-flex>
+                                    <!-- Objetivos y resultados -->
+                                    <v-flex xs6>
+                                            <v-card
+                                            >
+                                                <v-card-title>
+                                                    <v-icon
+                                                        left
+                                                    >
+                                                        dns
+                                                    </v-icon>
+                                                    <span class="title font-weight-light">Objetivos</span>
+                                                </v-card-title>
+
+                                                <v-card-text class="headline font-weight-bold">
+                                                    <ckeditor :editor="editor" v-model="objetivos" :config="editorConfig"></ckeditor>
+                                                </v-card-text>
+
+                                            </v-card>
+                                    </v-flex>
+                                    <v-flex xs6>
+                                            <v-card
+                                            >
+                                                <v-card-title>
+                                                    <v-icon
+                                                        left
+                                                    >
+                                                        list
+                                                    </v-icon>
+                                                    <span class="title font-weight-light">Resultados por objetivo</span>
+                                                </v-card-title>
+
+                                                <v-card-text class="headline font-weight-bold">
+                                                    <ckeditor :editor="editor2" v-model="resultados_objetivo" :config="editorConfig"></ckeditor>
+                                                </v-card-text>
+
+                                            </v-card>
+                                    </v-flex>
+                                    <!-- Indicadores y resultados -->
+                                    <v-flex xs6>
+                                            <v-card
+                                            >
+                                                <v-card-title>
+                                                    <v-icon
+                                                        left
+                                                    >
+                                                        search
+                                                    </v-icon>
+                                                    <span class="title font-weight-light">Indicadores</span>
+                                                </v-card-title>
+
+                                                <v-card-text class="headline font-weight-bold">
+                                                    <ckeditor :editor="editor3" v-model="indicadores" :config="editorConfig"></ckeditor>
+                                                </v-card-text>
+
+                                            </v-card>
+                                    </v-flex>
+                                    <v-flex xs6>
+                                            <v-card
+                                            >
+                                                <v-card-title>
+                                                    <v-icon
+                                                        left
+                                                    >
+                                                        list
+                                                    </v-icon>
+                                                    <span class="title font-weight-light">Resultados por indicador</span>
+                                                </v-card-title>
+
+                                                <v-card-text class="headline font-weight-bold">
+                                                    <ckeditor :editor="editor4" v-model="resultados_indicadores" :config="editorConfig"></ckeditor>
+                                                </v-card-text>
+
+                                            </v-card>
+                                    </v-flex>
                                     <!-- Date picker 1 -->
                                     <v-flex xs12 sm12 md6>
                                         <!-- DateTime Picker de Fecha Inicial -->
@@ -93,6 +167,7 @@
                                                 <td class="text-xs-right">{{ props.item.nombre }}</td>
                                                 <td class="text-xs-right">{{ props.item.departamento }}</td>
                                                 <td class="text-xs-right">{{ props.item.municipio }}</td>
+                                                <td class="text-xs-right">{{ props.item.comunidad }}</td>
                                             </template>
                                         </v-data-table>
                                     </v-flex>
@@ -133,6 +208,10 @@
                                             <v-text-field v-model="municipio"
                                                 label="Municipio de ubucación de la organización"></v-text-field>
                                         </v-flex>
+                                        <v-flex xs12>
+                                            <v-text-field v-model="comunidad" label="Ingrese comunidad">
+                                            </v-text-field>
+                                        </v-flex>
                                     </v-layout>
                                 </v-container>
                             </v-card-text>
@@ -169,12 +248,16 @@
                         <v-card-text>
                             <v-container grid-list-md>
                                 <v-layout wrap>
-                                    <v-flex xs12>
+                                    <v-flex xs3>
+                                        <v-text-field v-model="codigo"
+                                            label="Ingrese código de actividad"></v-text-field>
+                                    </v-flex>
+                                    <v-flex xs9>
                                         <v-text-field v-model="actividad"
                                             label="Ingrese nombre de la actividad"></v-text-field>
                                     </v-flex>
                                      <v-flex xs12>
-                                        <v-textarea v-model="descripcionAct" label="Descripción del proyecto">
+                                        <v-textarea v-model="descripcionAct" label="Observaciones de la actividad   ">
                                         </v-textarea>
                                     </v-flex>
                                     <v-flex xs12 sm12 md6>
@@ -220,6 +303,12 @@
                                 </v-layout>
                             </v-container>
                         </v-card-text>
+                        <v-card-actions>
+                            <v-spacer></v-spacer>
+                            <v-btn color="blue darken-1" @click="agregarActividad()">
+                                Agregar Actividad
+                            </v-btn>
+                        </v-card-actions>
                         <v-flex xs12 sm12 md12 lg12>
                             <v-subheader>Actividades Agregadas</v-subheader>
                         </v-flex>
@@ -231,18 +320,13 @@
                             </div>
                             <v-divider></v-divider>
                         </template>
-                        <v-card-actions>
-                            <v-spacer></v-spacer>
-                            <v-btn color="blue darken-1" @click="agregarActividad()">
-                                Agregar Actividad
-                            </v-btn>
-                        </v-card-actions>
                         <v-flex>
                             <v-data-table :headers="headersActividades" :items="acts" class="elevation-1">
                                 <v-progress-linear :indeterminate="true"
                                     color="light-green accent-3">
                                 </v-progress-linear>
                                 <template v-slot:items="props">
+                                    <td class="text-xs-right">{{ props.item.codigo }}</td>
                                     <td class="text-xs-right">{{ props.item.actividad }}</td>
                                     <td class="text-xs-right">{{ props.item.descripcion }}</td>
                                     <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
@@ -279,19 +363,35 @@
 </template>
 <script>
     import Multiselect from 'vue-multiselect';
+    import CKEditor from '@ckeditor/ckeditor5-vue';
+    import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+    import '@ckeditor/ckeditor5-build-classic/build/translations/es'
     import Vue from 'vue';
     import axios from 'axios';
     export default {
         name: "CrearProyecto",
         components: {
-            Multiselect
+            Multiselect,
+            ckeditor: CKEditor.component
         },
         data: () => ({
+            editor: ClassicEditor,
+            objetivos: '',
+            editorConfig: {
+                language: 'es'
+            },
+            editor2: ClassicEditor,
+            resultados_objetivo: '',
+            editor3: ClassicEditor,
+            indicadores: '',
+            editor4: ClassicEditor,
+            resultados_indicadores: '',
             e1: 0,
             orgs: [],
             acts: [],
             organizaciones: [],
             departamentos: [],
+            comunidad: '',
             select: [],
             error1: 0,
             errorMsj1: [],
@@ -309,6 +409,7 @@
             fechaI: new Date().toISOString().substr(0, 10),
             fechaF: new Date().toISOString().substr(0, 10),
             actividad: '',
+            codigo: '',
             descripcionAct: '',
             fechaInicio: new Date().toISOString().substr(0, 10),
             fechaFinal: new Date().toISOString().substr(0, 10),
@@ -320,11 +421,13 @@
             headersOrg: [
                 { text: "Organizacion", value: 'nombre', align: 'right' },
                 { text: "Departamento", value: 'departamento', align: 'right' },
-                { text: "Municipio", value: 'municipio', align: 'right' }
+                { text: "Municipio", value: 'municipio', align: 'right' },
+                { text: "Comunidad", value: 'comunidad', align: 'right' }
             ],
             headersActividades: [
+                { text: 'Código', value: 'codigo', align: 'right' },
                 { text: 'Actividad', value: 'actividad', align: 'right' },
-                { text: 'Descripción', value: 'descripcion', align: 'right'},
+                { text: 'Observaciones', value: 'descripcion', align: 'right'},
                 { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' },
                 { text: 'Fecha de Finalización', value: 'fechaFinal', align: 'right' }
             ],
@@ -445,7 +548,8 @@
                 axios.post('org/registrar', {
                     'nombre': me.nombre,
                     'municipio': me.municipio,
-                    'IdDepartamento': me.select.id
+                    'IdDepartamento': me.select.id,
+                    'comunidad': me.comunidad
                 })
                 .then(function (response) {
                     swal.fire({
@@ -482,6 +586,10 @@
                 axios.post('proyecto/storeProject', {
                     'Titulo': me.titulo,
                     'Descripcion': me.descripcion,
+                    'objetivos': me.objetivos,
+                    'resultados_objetivo': me.resultados_objetivo,
+                    'indicadores': me.indicadores,
+                    'resultados_indicadores': me.resultados_indicadores,
                     'FechaInicio': me.fechaI,
                     'FechaFin': me.fechaF,
                     'data1': me.orgs,
@@ -526,11 +634,13 @@
                 } else {
                     let act = new Object();
                     act.actividad = me.actividad;
+                    act.codigo = me.codigo;
                     act.descripcion = me.descripcionAct;
                     act.fechaInicio = me.fechaInicio;
                     act.fechaFinal = me.fechaFinal;
                     me.acts.push(act);
                     this.actividad = '';
+                    this.codigo = '';
                     this.descripcionAct = '';
                     this.fechaInicio = new Date().toISOString().substr(0, 10);
                     this.fechaFinal = new Date().toISOString().substr(0, 10);

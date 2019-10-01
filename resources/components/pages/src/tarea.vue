@@ -25,30 +25,47 @@
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12>
-                                                <v-textarea v-model="descripcionShow" label="Descripción de la tarea"
+                                                <v-textarea v-model="descripcionShow" label="Observaciones de la tarea"
                                                     disabled readonly>
                                                 </v-textarea>
                                             </v-flex>
                                             <v-flex xs12>
-                                                <v-data-table :headers="headers2" :items="empleadoShow"
-                                                    class="elevation-1">
-                                                    <v-progress-linear :indeterminate="true"
-                                                        color="light-green accent-3"></v-progress-linear>
-                                                    <template v-slot:items="props">
-                                                        <td class="text-xs-left">{{ props.item.nombre }}</td>
-                                                    </template>
-                                                </v-data-table>
+                                                <v-card
+                                                >
+                                                    <v-card-title>
+                                                        <span class="title font-weight-light">Responsables asignados a esta tarea</span>
+                                                    </v-card-title>
+
+                                                    <v-card-text class="headline font-weight-bold">
+                                                        <v-data-table :headers="headers2" :items="empleadoShow"
+                                                            class="elevation-1" hide-actions>
+                                                            <v-progress-linear :indeterminate="true"
+                                                                color="light-green accent-3"></v-progress-linear>
+                                                            <template v-slot:items="props">
+                                                                <td class="text-xs-left">{{ props.item.nombre }}</td>
+                                                            </template>
+                                                        </v-data-table>
+                                                    </v-card-text>
+                                                </v-card>
                                             </v-flex>
                                             <v-flex xs12>
-                                                <v-data-table :headers="headers3" :items="estadisticaShow"
-                                                    class="elevation-1">
-                                                    <v-progress-linear :indeterminate="true"
-                                                        color="light-green accent-3"></v-progress-linear>
-                                                    <template v-slot:items="props">
-                                                        <td class="text-xs-left">{{ props.item.nombre }}</td>
-                                                        <td class="text-xs-left">{{ props.item.valor }}</td>
-                                                    </template>
-                                                </v-data-table>
+                                                <v-card>
+                                                    <v-card-title>
+                                                        <span class="title font-weight-light">Estadísticas de esta tarea</span>
+                                                    </v-card-title>
+
+                                                    <v-card-text class="headline font-weight-bold">
+                                                        <v-data-table :headers="headers3" :items="estadisticaShow"
+                                                            class="elevation-1" hide-actions>
+                                                            <v-progress-linear :indeterminate="true"
+                                                                color="light-green accent-3"></v-progress-linear>
+                                                            <template v-slot:items="props">
+                                                                <td class="text-xs-left">{{ props.item.nombre }}</td>
+                                                                <td class="text-xs-left">{{ props.item.valor }}</td>
+                                                            </template>
+                                                        </v-data-table>
+                                                    </v-card-text>
+                                                </v-card>
                                             </v-flex>
                                             <v-flex xs12>
                                                 <v-text-field v-model="cantidadShow" label="Total de participantes"
@@ -106,11 +123,9 @@
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
-                                            <v-flex xs12 sm12 md12>
-                                                <multiselect v-model="tipo" :options="tipos"
-                                                    placeholder="Seleccione el tipo de tarea" label="nombre"
-                                                    track-by="nombre">
-                                                </multiselect>
+                                            <v-flex xs12>
+                                                <v-text-field v-model="tarea" label="Nombre de la tarea">
+                                                </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm12 md12>
                                                 <v-slider v-model="number" color="green darken-1"
@@ -173,19 +188,19 @@
                                                 </multiselect>
                                             </v-flex>
                                             <v-flex xs12 sm12 md12 lg12>
-                                                <v-subheader>Empleado Asignados</v-subheader>
+                                                <v-subheader>Responsables Asignados</v-subheader>
                                             </v-flex>
                                             <v-flex>
                                                 <v-data-table :headers="headersUsers" :items="empleado"
-                                                    class="elevation-1">
+                                                    class="elevation-1" hide-actions>
                                                     <v-progress-linear :indeterminate="true"
                                                         color="light-green accent-3"></v-progress-linear>
                                                     <template v-slot:items="props">
                                                         <td class="text-xs-right">{{ props.item.id }}</td>
                                                         <td class="text-xs-right">{{ props.item.nombre }}</td>
-                                                        <td class="text-xs-left">
+                                                        <td class="text-xs-right">
                                                             <template>
-                                                                <div class="text-xs-left">
+                                                                <div class="text-xs-right">
                                                                     <v-chip color="green" text-color="white"
                                                                         v-if="props.item.estado==1">
                                                                         Si</v-chip>
@@ -195,7 +210,7 @@
                                                                 </div>
                                                             </template>
                                                         </td>
-                                                        <td class="justify-center layout px-0">
+                                                        <td class="text-xs-right">
                                                             <v-btn color="blue" class="white--text" @click="superior(props.item.id)">
                                                                 Encargado
                                                                 <v-icon right dark>how_to_reg</v-icon>
@@ -231,13 +246,13 @@
                     </v-toolbar>
                     <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
                         <template v-slot:items="props">
-                            <td class="text-xs-right">{{ props.item.nombre }}</td>
+                            <td class="text-xs-right">{{ props.item.tarea }}</td>
                             <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
                             <td class="text-xs-right">{{ props.item.fechaFinal }}</td>
                             <td class="text-xs-right">{{ props.item.fechaRealizacion }}</td>
-                            <td class="text-xs-left">
+                            <td class="text-xs-center">
                                 <template>
-                                    <div class="text-xs-left">
+                                    <div class="text-xs-center">
                                         <v-chip color="amber accent-4" text-color="white" v-if="props.item.estado==0">En
                                             Proceso</v-chip>
                                         <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
@@ -247,7 +262,7 @@
                                 </template>
                             </td>
 
-                            <td class="justify-center">
+                            <td class="justify-center layout px-0">
                                 <v-icon v-if="props.item.estado==1" class="mr-2" @click="watchTask(props.item.id)">
                                     visibility
                                 </v-icon>
@@ -294,6 +309,7 @@
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
             menu2: false,
+            tarea: '',
             proyecto: {
                 id: 0,
                 nombre: '',
@@ -311,24 +327,24 @@
             error: 0,
             errorMsj: [],
             headers: [
-                { text: 'Nombre', value: 'nombre', align: 'right' },
+                { text: 'Nombre', value: 'tarea', align: 'right' },
                 { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' },
                 { text: 'Fecha Final', value: 'fechaFinal', align: 'right' },
                 { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' },
-                { text: 'Estado', value: 'estado' },
+                { text: 'Estado', value: 'estado', align: 'center' },
             ],
             headers2: [
-                { text: 'Empleados', value: 'nombre', align: 'left' }
+                { text: 'Responsables', value: 'nombre', align: 'left' }
             ],
             headers3: [
                 { text: 'Estadistica', value: 'nombre', align: 'left' },
                 { text: 'Valor', value: 'valor', align: 'left' }
             ],
             headersUsers: [
-                { text: 'Id', value: 'id' },
-                { text: 'Nombre', value: 'nombre' },
-                { text: 'Estado', value: 'estado' },
-                { text: 'Encargado', value: 'encargado' },
+                { text: 'Id', value: 'id', align: 'right' },
+                { text: 'Nombre', value: 'nombre', align: 'right' },
+                { text: 'Estado', value: 'estado', align: 'right' },
+                { text: 'Encargado', value: 'encargado', align: 'right' },
             ],
             tareas: [],
             editedIndex: -1,
@@ -426,6 +442,7 @@
                 this.getTipos();
                 this.getEstadistica();
                 this.getUsuario();
+                this.estadistica=this.estadisticas;  
             },
             getActividaes() {
                 var url = '/Actividad/' + this.proyecto.id;
@@ -572,7 +589,7 @@
                             fechaInicio: this.fechaI,
                             fechaFinal: this.fechaF,
                             idActividad: this.actividad.id,
-                            idTipoTarea: this.tipo.id,
+                            tarea: this.tarea,
                             estadisticas: this.estadistica,
                             numero: this.number,
                             usuarios: this.empleado

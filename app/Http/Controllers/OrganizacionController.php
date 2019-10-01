@@ -14,7 +14,7 @@ class OrganizacionController extends Controller
     {
         //
         $organizaciones = Organizacion::join('departamentos', 'organizaciones.IdDepartamento', '=', 'departamentos.id')
-        ->select('organizaciones.IdOrganizacion', 'organizaciones.nombre', 'organizaciones.municipio', 'departamentos.departamento')->get();
+        ->select('organizaciones.IdOrganizacion', 'organizaciones.nombre', 'organizaciones.municipio', 'departamentos.departamento', 'organizaciones.comunidad')->get();
         return $organizaciones;
     }
     /**
@@ -30,6 +30,7 @@ class OrganizacionController extends Controller
         $organizacion->IdDepartamento = $request->IdDepartamento;
         $organizacion->nombre = $request->nombre;
         $organizacion->municipio = $request->municipio;
+        $organizacion->comunidad = $request->comunidad;
         if($organizacion->save()) {
             return response()->json(array('success' => true, 'id' => $organizacion->IdOrganizacion), 200);
         } else {
@@ -57,6 +58,7 @@ class OrganizacionController extends Controller
         $organizacion->IdDepartamento = $request->IdDepartamento;
         $organizacion->nombre = $request->nombre;
         $organizacion->municipio = $request->municipio;
+        $organizacion->comunidad = $request->comunidad;
         if($organizacion->save()) {
             return response()->json(array('success' => true, 'id' => $organizacion->IdOrganizacion), 200);
         } else {

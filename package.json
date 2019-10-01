@@ -22,6 +22,8 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "@ckeditor/ckeditor5-build-classic": "^12.4.0",
+        "@ckeditor/ckeditor5-vue": "^1.0.0",
         "Buttons": "github:alexwolfe/Buttons",
         "Flot": "https://github.com/flot/flot.git",
         "LC-switch": "https://github.com/LCweb-ita/LC-switch.git",
