@@ -1,117 +1,14 @@
 webpackJsonp([93],{
 
-/***/ 2260:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(2261);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("4d9512fe", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 2261:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/*pricing table 1*/\n.span-btn, .span-btn:hover {\n    color: #666;\n    background-color: #DCDCDC;\n    border-color: #DCDCDC;\n}\n.span-btn.active, .span-btn.active:hover {\n    color: #fff;\n    background-color: #376ea4;\n    border-color: #2d5986;\n}\n/*table styles*/\n.modal-1 {\n    border         : 1px solid #B6D1CC;\n    border-radius  : 3px;\n    margin-top     : 20px;\n    margin-bottom  : 10px;\n    padding-bottom : 25px;\n}\n.modal-1 .pack-heading {\n    background-color : #E1EFEF;\n    padding          : 2px 0;\n    height           : 145px;\n}\n.pack-heading p {\n    color  : #555;\n    margin : 13px 0;\n}\n.modal-1 .pack-title {\n    font-size : 22px;\n    color     : #677777;\n}\n.modal-1 .pack-price {\n    font-size : 36px;\n    position  : relative;\n}\n.modal-1 .pack-price span {\n    font-size : 18px;\n    color     : #777;\n}\n.modal-1 .pack-price .dollar {\n    font-size : 22px;\n    color     : #777;\n    top       : -20px;\n    display   : inline;\n}\n.modal-1 .section-head {\n    font-size   : 15px;\n    font-weight : bold;\n    color       : #60B6A3;\n    margin      : 40px 0 15px;\n}\n.modal-1 .pack-details li {\n    line-height : 38px;\n    color       : #555;\n    font-size   : 14px;\n}\n.modal-1 .pack-details li.text-dummy {\n    color : #999;\n}\n.modal-1 .btn-getit {\n    -webkit-border-radius : 3px;\n    -moz-border-radius    : 3px;\n    border-radius         : 3px;\n    padding               : 5px 17px;\n    margin-top            : 30px;\n}\n.modal-1 .trending-tag {\n    height   : 79px;\n    overflow : hidden;\n    position : absolute;\n    left     : 15px;\n    top      : 20px;\n    width    : 80px;\n}\n.tag-design {\n    font              : bold 12px Noto Sans;\n    background-color  : #3AAE97;\n    padding-top       : 22px;\n    position          : relative;\n    text-align        : center;\n    top               : -12px;\n    left              : -40px;\n    -webkit-transform : rotate(-45deg);\n    -moz-transform    : rotate(-45deg);\n    -ms-transform     : rotate(-45deg);\n    -o-transform      : rotate(-45deg);\n    transform         : rotate(-45deg);\n    width             : 116px;\n    height            : 61px;\n}\n.pro-option {\n    font-size   : 24px;\n    line-height : 24px;\n    margin      : 25px 0;\n}\n.contact-info {\n    font-size     : 14px;\n    margin-bottom : 20px;\n}\n.btn-contact {\n    color         : #4080bf;\n    border        : 1px solid #4080bf;\n    padding       : 6px 25px;\n    border-radius : 20px;\n}\n.btn-contact:hover {\n    background-color : #4080bf;\n    color            : #fff;\n}\n@media screen and (max-width : 767px) {\n.modal-1 .trending-tag {\n        top :20px;\n}\n}\n@media(max-width: 320px){\n.modal-1 .trending-tag{\n        top:20px;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 2262:
+/***/ 2329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
 //
@@ -185,540 +82,524 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: "Estadistica",
     data: function data() {
         return {
-            isActive: 1,
-            selected: "monthly"
+            search: '',
+            dialog: false,
+            error: 0,
+            errorMsj: [],
+            headers: [{
+                text: 'Id',
+                align: 'left',
+                value: 'id'
+            }, { text: 'Nombre', value: 'nombre' }],
+            estadisticas: [],
+            editedIndex: -1,
+            editedItem: {
+                id: 0,
+                nombre: ''
+            },
+            defaultItem: {
+                id: 0,
+                nombre: ''
+            }
         };
     },
 
+    computed: {
+        formTitle: function formTitle() {
+            return this.editedIndex === -1 ? 'Nueva Estadistica' : 'Editar Estadistica';
+        }
+    },
+
+    watch: {
+        dialog: function dialog(val) {
+            val || this.close();
+        }
+    },
+
+    created: function created() {
+        this.initialize();
+    },
+
+
     methods: {
-        number: function number() {
-            this.isActive = 1;
+        validate: function validate() {
+            this.error = 0;
+            this.errorMsj = [];
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+            if (this.errorMsj.length) this.error = 1;
+            return this.error;
         },
-        numbers: function numbers() {
-            this.isActive = 0;
+        initialize: function initialize() {
+            var _this = this;
+
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/Estadistica').then(function (response) {
+                _this.estadisticas = response.data;
+            }).catch(function (errors) {
+                console.log(errors);
+            });
+        },
+        editItem: function editItem(item) {
+            this.editedIndex = this.estadisticas.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+            this.dialog = true;
+        },
+        deleteItem: function deleteItem(item) {
+            var me = this;
+            swal.fire({
+                title: 'Quieres eliminar esta estadistica?',
+                text: "No podras revertir la eliminacion!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, Eliminalo!',
+                cancelButtonText: "Cancelar"
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Estadistica/' + item.id + '/delete').then(function (response) {
+                        me.initialize();
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: response.data,
+                            showConfirmButton: false,
+                            timer: 1500 });
+                    }).catch(function (error) {
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'error',
+                            title: error.response.data.error,
+                            showConfirmButton: true });
+                    });
+                }
+            });
+        },
+        close: function close() {
+            var _this2 = this;
+
+            this.error = 0;
+            this.dialog = false;
+            setTimeout(function () {
+                _this2.editedItem = Object.assign({}, _this2.defaultItem);
+                _this2.editedIndex = -1;
+            }, 300);
+        },
+        save: function save() {
+            var me = this;
+            if (this.validate()) {
+                return;
+            }
+            if (this.editedIndex > -1) {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'put',
+                    url: '/Estadistica/editar',
+                    data: {
+                        id: this.editedItem.id,
+                        nombre: this.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            } else {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'post',
+                    url: '/Estadistica/nuevo',
+                    data: {
+                        nombre: me.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            }
         }
     }
 });
 
 /***/ }),
 
-/***/ 2263:
+/***/ 2330:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row text-center" }, [
-      _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
+  return _c("div", { staticClass: "row user-list" }, [
+    _c(
+      "div",
+      { staticClass: "col-lg-12" },
+      [
         _c(
-          "div",
-          { staticClass: "btn-group", attrs: { "data-toggle": "buttons" } },
+          "b-card",
+          {
+            staticClass: "bg-primary-card",
+            attrs: { header: "Tipo de Actividades", "header-tag": "h4" }
+          },
           [
             _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn monthly ",
-                class: { active: _vm.isActive == 1 },
-                on: { click: _vm.number }
-              },
+              "div",
+              { staticClass: "table-responsive" },
               [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
+                _c(
+                  "v-toolbar",
+                  { attrs: { flat: "", color: "white" } },
+                  [
+                    _c("v-text-field", {
+                      attrs: {
+                        "append-icon": "search",
+                        label: "Buscar",
+                        "single-line": "",
+                        "hide-details": ""
+                      },
+                      model: {
+                        value: _vm.search,
+                        callback: function($$v) {
+                          _vm.search = $$v
+                        },
+                        expression: "search"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("v-spacer"),
+                    _vm._v(" "),
+                    _c(
+                      "v-dialog",
+                      {
+                        attrs: { "max-width": "600px" },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "activator",
+                            fn: function(ref) {
+                              var on = ref.on
+                              return [
+                                _c(
+                                  "v-btn",
+                                  _vm._g(
+                                    {
+                                      staticClass: "mb-2",
+                                      attrs: {
+                                        color: "green darken-1",
+                                        dark: ""
+                                      }
+                                    },
+                                    on
+                                  ),
+                                  [_vm._v("Nueva Estadistica")]
+                                )
+                              ]
+                            }
+                          }
+                        ]),
+                        model: {
+                          value: _vm.dialog,
+                          callback: function($$v) {
+                            _vm.dialog = $$v
+                          },
+                          expression: "dialog"
+                        }
+                      },
+                      [
+                        _vm._v(" "),
+                        _c(
+                          "v-card",
+                          [
+                            _c("v-card-title", [
+                              _c("span", { staticClass: "headline" }, [
+                                _vm._v(_vm._s(_vm.formTitle))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-text",
+                              [
+                                _c(
+                                  "v-container",
+                                  { attrs: { "grid-list-md": "" } },
+                                  [
+                                    _c(
+                                      "v-layout",
+                                      { attrs: { wrap: "" } },
+                                      [
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md12: ""
+                                            }
+                                          },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: {
+                                                label:
+                                                  "Nombre de la estadistica"
+                                              },
+                                              model: {
+                                                value: _vm.editedItem.nombre,
+                                                callback: function($$v) {
+                                                  _vm.$set(
+                                                    _vm.editedItem,
+                                                    "nombre",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "editedItem.nombre"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _vm.error
+                              ? [
+                                  _c("v-divider"),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "text-xs-center" },
+                                    [
+                                      _vm._l(_vm.errorMsj, function(e) {
+                                        return _c("strong", {
+                                          key: e,
+                                          staticClass:
+                                            "red--text text--lighten-1",
+                                          domProps: { textContent: _vm._s(e) }
+                                        })
+                                      }),
+                                      _vm._v(" "),
+                                      _c("br")
+                                    ],
+                                    2
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-divider")
+                                ]
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-actions",
+                              [
+                                _c("v-spacer"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "blue darken-1", flat: "" },
+                                    on: { click: _vm.close }
+                                  },
+                                  [_vm._v("Cancelar")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "blue darken-1", flat: "" },
+                                    on: { click: _vm.save }
+                                  },
+                                  [_vm._v("Guardar")]
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          2
+                        )
+                      ],
+                      1
+                    )
                   ],
-                  staticClass: "d-none",
+                  1
+                ),
+                _vm._v(" "),
+                _c("v-data-table", {
+                  staticClass: "elevation-1",
                   attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option2",
-                    autocomplete: "off",
-                    value: "monthly",
-                    checked: ""
+                    headers: _vm.headers,
+                    items: _vm.estadisticas,
+                    search: _vm.search
                   },
-                  domProps: { checked: _vm._q(_vm.selected, "monthly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "monthly"
-                    }
-                  }
-                }),
-                _vm._v(" Monthly Tariff\n                ")
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn yearly",
-                class: { active: _vm.isActive == 0 },
-                on: { click: _vm.numbers }
-              },
-              [
-                _c("input", {
-                  directives: [
+                  scopedSlots: _vm._u([
                     {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
+                      key: "items",
+                      fn: function(props) {
+                        return [
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.id))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.nombre))
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "td",
+                            { staticClass: "justify-center layout px-0" },
+                            [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-2",
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.editItem(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                edit\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-icon",
+                                {
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.deleteItem(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                delete\n                            "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      }
+                    },
+                    {
+                      key: "no-data",
+                      fn: function() {
+                        return [
+                          _c(
+                            "v-btn",
+                            {
+                              attrs: { color: "primary" },
+                              on: { click: _vm.initialize }
+                            },
+                            [_vm._v("Recargar")]
+                          )
+                        ]
+                      },
+                      proxy: true
+                    },
+                    {
+                      key: "no-results",
+                      fn: function() {
+                        return [
+                          _c(
+                            "v-alert",
+                            {
+                              attrs: {
+                                value: true,
+                                color: "error",
+                                icon: "warning"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                '\n                            No hay resultados de "' +
+                                  _vm._s(_vm.search) +
+                                  '".\n                        '
+                              )
+                            ]
+                          )
+                        ]
+                      },
+                      proxy: true
                     }
-                  ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option3",
-                    autocomplete: "off",
-                    value: "yearly"
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "yearly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "yearly"
-                    }
-                  }
-                }),
-                _vm._v("  Yearly Tariff\n                ")
-              ]
+                  ])
+                })
+              ],
+              1
             )
           ]
         )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("49"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("540"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$45/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(2),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(3),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(5),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("99"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1104"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$92/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(8),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6  col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(9),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("159"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1788"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$149/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(10),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(11),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(13),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("399"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack " }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("4620"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$385/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(14),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(15),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(16),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(17)
-    ])
+      ],
+      1
+    )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Basic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("300")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Branded Reports")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5 Keywords Reports")])]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("2")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "trending-tag" }, [
-      _c("div", { staticClass: "tag-design bg-primary text-white" }, [
-        _vm._v("Best\n                        "),
-        _c("br"),
-        _vm._v(" Package")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Econamic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("750")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("500,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("5,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Premium")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,700")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,125,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("12,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("50")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Enterprise")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("100")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("7,500")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("30,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("90")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-      _c("p", { staticClass: "pro-option" }, [
-        _vm._v("Want to be a PRO User?")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "contact-info" }, [
-        _vm._v("We have larger and the best plans designed for you.")
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-contact",
-          attrs: { href: "javascript:void(0)" }
-        },
-        [_vm._v("Contact Us")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6d17cc0c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-e6fdb9a2", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 500:
+/***/ 551:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(2260)
-}
-var normalizeComponent = __webpack_require__(42)
+var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2262)
+var __vue_script__ = __webpack_require__(2329)
 /* template */
-var __vue_template__ = __webpack_require__(2263)
+var __vue_template__ = __webpack_require__(2330)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -731,7 +612,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/pricing.vue"
+Component.options.__file = "resources/components/pages/src/estadistica.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -740,9 +621,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d17cc0c", Component.options)
+    hotAPI.createRecord("data-v-e6fdb9a2", Component.options)
   } else {
-    hotAPI.reload("data-v-6d17cc0c", Component.options)
+    hotAPI.reload("data-v-e6fdb9a2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

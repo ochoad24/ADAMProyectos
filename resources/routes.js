@@ -1,6 +1,9 @@
 const routes = [{
     path: '/',
     component: resolve => require(['./fixed_header.vue'], resolve),
+    meta:{
+        auth: true
+    },
     children: [
         {
             path: '',
@@ -1416,49 +1419,58 @@ const routes = [{
     component: resolve => require(['./components/pages/500.vue'], resolve),
     meta: {
         title: '500',
-        breadcrumb: ``
+        breadcrumb: ``,
+        auth: false
     }
 }, {
     path: '/login',
     component: resolve => require(['./components/pages/login.vue'], resolve),
     meta: {
         title: 'Login',
-        breadcrumb: ``
+        breadcrumb: ``,
+        meta:{
+            auth: false
+        }
     }
 }, {
     path: '/register',
     component: resolve => require(['./components/pages/register.vue'], resolve),
     meta: {
         title: 'Register',
-        breadcrumb: ``
+        breadcrumb: ``,
+        auth: false
     }
 }, {
     path: '/lockscreen',
     component: resolve => require(['./components/pages/lockscreen.vue'], resolve),
     meta: {
         title: 'Lockscreen',
-        breadcrumb: ``
+        breadcrumb: ``,
+        auth: false
     }
 }, {
     path: '/forgot_password',
     component: resolve => require(['./components/pages/forgot_password.vue'], resolve),
     meta: {
         title: 'Forgot Password',
-        breadcrumb: ``
+        breadcrumb: ``,
+        auth: false
     }
 }, {
     path: '/reset_password',
     component: resolve => require(['./components/pages/reset_pass.vue'], resolve),
     meta: {
         title: 'Reset Password',
-        breadcrumb: ``
+        breadcrumb: ``,
+        auth: false
     }
 }, {
     path: '*',
     component: resolve => require(['./components/pages/404.vue'], resolve),
     meta: {
         title: '404',
-        breadcrumb: ``
+        breadcrumb: ``,
+        auth: false
     }
 },
 ]

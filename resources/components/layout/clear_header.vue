@@ -72,14 +72,14 @@
                         </b-dropdown-item>
                         <!-- Menu Footer-->
                         <b-dropdown-item class="dropdown-footer">
-                            <div class="float-left">
+                            <!-- <div class="float-left">
                                 <router-link to="/lockscreen" exact>
                                     <i class="fa fa-fw ti-lock"></i> Lock
                                 </router-link>
-                            </div>
+                            </div> -->
                             <div class="float-right">
-                                <router-link to="/login" exact>
-                                    <i class="fa fa-fw ti-shift-right"></i> Logout
+                                <router-link :to="to" @click.native="$auth.logout()">
+                                    <i class="fa fa-fw ti-shift-right"></i> Cerrar Sesión
                                 </router-link>
                             </div>
                         </b-dropdown-item>
@@ -99,6 +99,7 @@
             multiselect
         },
         data: () => ({
+            to:'',
             search: '',
             dialog: false,
             proyectos: [],
@@ -158,7 +159,7 @@
             },
             cargarProyecto() {
                 let me=this;
-                fetch('/proyecto/select')
+                fetch('api/v1/proyecto/select')
                 .then(function(response) {
                     return response.json();
                 })

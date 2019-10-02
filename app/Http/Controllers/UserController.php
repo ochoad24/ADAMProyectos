@@ -9,8 +9,17 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    public function index(Request $request){
-        return User::join('roles','roles.id','=','users.idRol')->select('users.id','users.nombre','users.apellido','users.usuario','users.estado','users.idRol','roles.nombre as rol')->orderBy('users.created_at', 'desc')->get();
+    // public function index(Request $request){
+    //     return User::join('roles','roles.id','=','users.idRol')->select('users.id','users.nombre','users.apellido','users.usuario','users.estado','users.idRol','roles.nombre as rol')->orderBy('users.created_at', 'desc')->get();
+    // }
+    public function index()
+    {
+        $users = User::all();
+        return response()->json(
+            [
+                'status' => 'success',
+                'users' => $users->toArray()
+            ], 200);
     }
     public function activate(Request $request){
         $id=$request->id;
@@ -67,6 +76,15 @@ class UserController extends Controller
         }
     }
     public function select(Request $request){
-        return User::select('id',DB::raw("CONCAT(nombre,' ',apellido) as nombre"))->where('idRol','2')->get();
+        return User::select('id','name')->where('role','1')->get();
+    }
+    public function show($id)
+    {
+        $user = User::find($id);
+        return response()->json(
+            [
+                'status' => 'success',
+                'user' => $user->toArray()
+            ], 200);
     }
 }
