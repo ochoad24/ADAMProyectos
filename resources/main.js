@@ -13,15 +13,24 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 
 Vue.use(window.VueCharts);
-Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.use(vuetify)
+
+
+Vue.use(VueRouter)
+
+Vue.use(VueAxios, axios)
+axios.defaults.baseURL='http://localhost:8000/api/v1';
+
+
+
 window.swal = swal;
 
 const router = new VueRouter({
     routes,
     linkActiveClass: 'active'
 })
+
 
 router.beforeEach((to, from, next) => {
     store.commit("routeChange", "start");
@@ -37,6 +46,10 @@ router.afterEach((to, from) => {
         store.commit('left_menu', "open");
     }
 })
+
+
+Vue.router = router;
+Vue.use(VueAuth, auth);
 new Vue({
     el:"#app",
     router,

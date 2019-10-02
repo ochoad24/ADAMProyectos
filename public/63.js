@@ -1,12 +1,12 @@
 webpackJsonp([63],{
 
-/***/ 2345:
+/***/ 2348:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2346);
+var content = __webpack_require__(2349);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2346:
+/***/ 2349:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "/*!\r\n * BootstrapValidator (http://bootstrapvalidator
 
 /***/ }),
 
-/***/ 2347:
+/***/ 2350:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2348);
+var content = __webpack_require__(2351);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2348:
+/***/ 2351:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General 
 
 /***/ }),
 
-/***/ 2349:
+/***/ 2352:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2350);
+var content = __webpack_require__(2353);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2350:
+/***/ 2353:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -119,14 +119,14 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 6.5%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    overflow-y: auto;\n}\n", ""]);
+exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 6.5%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    /* background: url('../../img/pr.jpg'); */\n    overflow-y: auto;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2351:
+/***/ 2354:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -136,16 +136,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(620);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_form__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(621);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -235,7 +225,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
                 email: "",
                 password: ""
 
-            }
+            },
+            success: false,
+            has_error: false,
+            error: ''
         };
     },
 
@@ -244,7 +237,30 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
             if (this.formstate.$invalid) {
                 return;
             } else {
-                this.$router.push("/");
+                var redirect = this.$auth.redirect();
+                var app = this;
+
+                this.$auth.login({
+                    data: {
+                        email: app.model.email,
+                        password: app.model.password
+                    },
+                    success: function success() {
+                        // handle redirection
+                        app.success = true;
+
+                        var redirectTo = redirect ? redirect.from.name : this.$auth.user().role === -1 ? '/' : '/';
+                        // const redirectTo = 'dashboard'
+                        // this.$router.push({ name: redirectTo })
+                        window.location.href = "/#/Tarea";
+                    },
+                    error: function error() {
+                        app.has_error = true;
+                        app.error = res.response.data.error;
+                    },
+                    rememberMe: true,
+                    fetchUser: true
+                });
             }
         }
     },
@@ -254,7 +270,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 /***/ }),
 
-/***/ 2352:
+/***/ 2355:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -270,10 +286,7 @@ var render = function() {
           [
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
-                attrs: {
-                  src: __webpack_require__(643),
-                  alt: "Logo"
-                }
+                attrs: { src: __webpack_require__(2356), alt: "Logo" }
               })
             ]),
             _vm._v(" "),
@@ -321,7 +334,7 @@ var render = function() {
                                         type: "email",
                                         required: "",
                                         autofocus: "",
-                                        placeholder: "E-mail"
+                                        placeholder: "Ingrese su correo"
                                       },
                                       domProps: { value: _vm.model.email },
                                       on: {
@@ -354,7 +367,11 @@ var render = function() {
                                             attrs: { slot: "required" },
                                             slot: "required"
                                           },
-                                          [_vm._v("Email is a required field")]
+                                          [
+                                            _vm._v(
+                                              "El correo electrónico es un campo\n                                                        obligatorio"
+                                            )
+                                          ]
                                         ),
                                         _vm._v(" "),
                                         _c(
@@ -363,7 +380,7 @@ var render = function() {
                                             attrs: { slot: "email" },
                                             slot: "email"
                                           },
-                                          [_vm._v("Email is not valid")]
+                                          [_vm._v("El correo no es válido")]
                                         )
                                       ]
                                     )
@@ -399,7 +416,7 @@ var render = function() {
                                         id: "password",
                                         type: "password",
                                         required: "",
-                                        placeholder: "Password",
+                                        placeholder: "Ingrese su contraseña",
                                         minlength: "6",
                                         maxlength: "10"
                                       },
@@ -434,7 +451,7 @@ var render = function() {
                                             attrs: { slot: "required" },
                                             slot: "required"
                                           },
-                                          [_vm._v("Password is required")]
+                                          [_vm._v("Se requiere contraseña")]
                                         ),
                                         _vm._v(" "),
                                         _c(
@@ -445,7 +462,7 @@ var render = function() {
                                           },
                                           [
                                             _vm._v(
-                                              "Password should be atleast 6 characters long"
+                                              "La contraseña debe tener al menos 6\n                                                        caracteres"
                                             )
                                           ]
                                         ),
@@ -458,7 +475,7 @@ var render = function() {
                                           },
                                           [
                                             _vm._v(
-                                              "Password should be atmost 10 characters long"
+                                              "La contraseña debe tener como máximo 10\n                                                        caracteres"
                                             )
                                           ]
                                         )
@@ -483,20 +500,32 @@ var render = function() {
                                   }
                                 }),
                                 _vm._v(
-                                  "  Remember Me\n                                            "
+                                  " \n                                                Recuerdame\n                                            "
                                 )
                               ])
                             ])
                           ]),
                           _vm._v(" "),
+                          _vm.has_error && !_vm.success
+                            ? _c("div", { staticClass: "alert alert-danger" }, [
+                                _vm.error == "login_error"
+                                  ? _c("p", [_vm._v("Validation Errors.")])
+                                  : _c("p", [
+                                      _vm._v(
+                                        "Error, unable to connect with these credentials."
+                                      )
+                                    ])
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
                           _c("input", {
                             staticClass: "btn btn-primary btn-block mb-3",
-                            attrs: { type: "submit", value: "Sign In" }
+                            attrs: { type: "submit", value: "Iniciar Sesión" }
                           }),
                           _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "col-sm-6" },
+                            { staticClass: "col-sm-12" },
                             [
                               _c(
                                 "router-link",
@@ -504,36 +533,22 @@ var render = function() {
                                   staticClass: "float-left",
                                   attrs: { to: "/forgot_password", exact: "" }
                                 },
-                                [_vm._v("Forgot Password ? ")]
+                                [
+                                  _vm._v(
+                                    "¿Olvide mi\n                                            contraseña? "
+                                  )
+                                ]
                               )
                             ],
                             1
-                          ),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c(
-                              "span",
-                              { staticClass: "float-right sign-up" },
-                              [
-                                _vm._v("New ?  "),
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: "/register", exact: "" } },
-                                  [_vm._v("Sign Up")]
-                                )
-                              ],
-                              1
-                            )
-                          ])
+                          )
                         ])
                       ]
                     )
                   ],
                   1
                 )
-              ]),
-              _vm._v(" "),
-              _vm._m(0)
+              ])
             ])
           ]
         )
@@ -541,44 +556,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row text-center social" }, [
-      _c("div", { staticClass: "col-12" }, [
-        _c("p", { staticClass: "alter" }, [_vm._v("Sign in with")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row m-auto" }, [
-        _c("div", { staticClass: "col-4" }, [
-          _c(
-            "a",
-            { staticClass: "btn btn-lg btn-facebook", attrs: { href: "#" } },
-            [_c("i", { staticClass: "ti-facebook" })]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-4" }, [
-          _c(
-            "a",
-            { staticClass: "btn btn-lg btn-twitter", attrs: { href: "#" } },
-            [_c("i", { staticClass: "ti-twitter-alt" })]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-4" }, [
-          _c(
-            "a",
-            { staticClass: "btn btn-lg btn-google", attrs: { href: "#" } },
-            [_c("i", { staticClass: "ti-google" })]
-          )
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -590,21 +568,28 @@ if (false) {
 
 /***/ }),
 
+/***/ 2356:
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
+
+/***/ }),
+
 /***/ 521:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2345)
-  __webpack_require__(2347)
-  __webpack_require__(2349)
+  __webpack_require__(2348)
+  __webpack_require__(2350)
+  __webpack_require__(2352)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2351)
+var __vue_script__ = __webpack_require__(2354)
 /* template */
-var __vue_template__ = __webpack_require__(2352)
+var __vue_template__ = __webpack_require__(2355)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1990,13 +1975,6 @@ var options = {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (options);
-
-/***/ }),
-
-/***/ 643:
-/***/ (function(module, exports) {
-
-module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";
 
 /***/ })
 

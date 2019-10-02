@@ -1,12 +1,12 @@
 webpackJsonp([72],{
 
-/***/ 1822:
+/***/ 1825:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1823);
+var content = __webpack_require__(1826);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1823:
+/***/ 1826:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,14 +42,14 @@ exports.push([module.i, "\n@media(min-width: 320px) and(max-width: 425px){\n.cha
 
 /***/ }),
 
-/***/ 1824:
+/***/ 1827:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_frappe_charts_dist_frappe_charts_min_esm__ = __webpack_require__(1825);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_frappe_charts_dist_frappe_charts_min_esm__ = __webpack_require__(1828);
 //
 //
 //
@@ -293,7 +293,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1825:
+/***/ 1828:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -302,7 +302,7 @@ function __$styleInject(t,e){if("undefined"==typeof document)return e;t=t||"";va
 
 /***/ }),
 
-/***/ 1826:
+/***/ 1829:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -518,13 +518,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1822)
+  __webpack_require__(1825)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1824)
+var __vue_script__ = __webpack_require__(1827)
 /* template */
-var __vue_template__ = __webpack_require__(1826)
+var __vue_template__ = __webpack_require__(1829)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

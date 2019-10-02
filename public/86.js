@@ -1,12 +1,12 @@
 webpackJsonp([86],{
 
-/***/ 2368:
+/***/ 2372:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2369);
+var content = __webpack_require__(2373);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2369:
+/***/ 2373:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,12 +42,12 @@ exports.push([module.i, "\nhtml {\n    height : 100%;\n}\nbody {\n    font-famil
 
 /***/ }),
 
-/***/ 2370:
+/***/ 2374:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(738);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(737);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__);
 //
 //
@@ -121,7 +121,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2371:
+/***/ 2375:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -241,13 +241,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2368)
+  __webpack_require__(2372)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2370)
+var __vue_script__ = __webpack_require__(2374)
 /* template */
-var __vue_template__ = __webpack_require__(2371)
+var __vue_template__ = __webpack_require__(2375)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -10659,7 +10659,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 738:
+/***/ 737:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!function(e){"use strict";var t=function(e,t){this.init("magnify",e,t)};t.prototype={constructor:t,init:function(t,n,r){var i="mousemove",s="mouseleave";this.type=t;this.$element=e(n);this.options=this.getOptions(r);this.nativeWidth=0;this.nativeHeight=0;this.$element.wrap('<div class="magnify" >');this.$element.parent(".magnify").append('<div class="magnify-large" >');this.$element.siblings(".magnify-large").css("background","url('"+this.$element.attr("src")+"') no-repeat");this.$element.parent(".magnify").on(i+"."+this.type,e.proxy(this.check,this));this.$element.parent(".magnify").on(s+"."+this.type,e.proxy(this.check,this))},getOptions:function(t){t=e.extend({},e.fn[this.type].defaults,t,this.$element.data());t.delay&&typeof t.delay=="number"&&(t.delay={show:t.delay,hide:t.delay});return t},check:function(t){var n=e(t.currentTarget),r=n.children("img"),i=n.children(".magnify-large");if(!this.nativeWidth&&!this.nativeHeight){var s=new Image;s.src=r.attr("src");this.nativeWidth=s.width;this.nativeHeight=s.height}else{var o=n.offset(),u=t.pageX-o.left,a=t.pageY-o.top;u<n.width()&&a<n.height()&&u>0&&a>0?i.fadeIn(100):i.fadeOut(100);if(i.is(":visible")){var f=Math.round(u/n.width()*this.nativeWidth-i.width()/2)*-1,l=Math.round(a/n.height()*this.nativeHeight-i.height()/2)*-1,c=f+"px "+l+"px",h=u-i.width()/2,p=a-i.height()/2;i.css({left:h,top:p,backgroundPosition:c})}}}};e.fn.magnify=function(n){return this.each(function(){var r=e(this),i=r.data("magnify"),s=typeof n=="object"&&n;i||r.data("tooltip",i=new t(this,s));typeof n=="string"&&i[n]()})};e.fn.magnify.Constructor=t;e.fn.magnify.defaults={delay:0};e(window).on("load",function(){e('[data-toggle="magnify"]').each(function(){var t=e(this);t.magnify()})})}(__webpack_provided_window_dot_jQuery);

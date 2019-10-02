@@ -1,12 +1,12 @@
 webpackJsonp([44],{
 
-/***/ 2044:
+/***/ 2047:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2045);
+var content = __webpack_require__(2048);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2045:
+/***/ 2048:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.aden{-webkit-filter:hue-rotate(-20deg) contrast(.9) 
 
 /***/ }),
 
-/***/ 2046:
+/***/ 2049:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2047);
+var content = __webpack_require__(2050);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2047:
+/***/ 2050:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\
 
 /***/ }),
 
-/***/ 2048:
+/***/ 2051:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2049);
+var content = __webpack_require__(2052);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2049:
+/***/ 2052:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -126,7 +126,7 @@ exports.push([module.i, "\n.pagination figure {\n    max-width : 100px;\n}\n.pag
 
 /***/ }),
 
-/***/ 2050:
+/***/ 2053:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -234,7 +234,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2051:
+/***/ 2054:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -274,7 +274,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "temp_path1 img-fluid",
                             attrs: {
-                              src: __webpack_require__(663),
+                              src: __webpack_require__(662),
                               alt: "hudson image"
                             }
                           })
@@ -306,7 +306,7 @@ var render = function() {
                                 _c("img", {
                                   staticClass: "temp_path1 img-fluid",
                                   attrs: {
-                                    src: __webpack_require__(663),
+                                    src: __webpack_require__(662),
                                     height: "75",
                                     alt: "hudson image"
                                   }
@@ -351,7 +351,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "temp_path2 img-fluid",
                             attrs: {
-                              src: __webpack_require__(662),
+                              src: __webpack_require__(661),
                               alt: "inkwell image"
                             }
                           })
@@ -392,7 +392,7 @@ var render = function() {
                                   _c("img", {
                                     staticClass: "temp_path2 img-fluid",
                                     attrs: {
-                                      src: __webpack_require__(662),
+                                      src: __webpack_require__(661),
                                       alt: "inkwell image"
                                     }
                                   }),
@@ -436,7 +436,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "temp_path3 img-fluid",
                             attrs: {
-                              src: __webpack_require__(660),
+                              src: __webpack_require__(659),
                               alt: "rise image"
                             }
                           })
@@ -474,7 +474,7 @@ var render = function() {
                                   _c("img", {
                                     staticClass: "temp_path3 img-fluid",
                                     attrs: {
-                                      src: __webpack_require__(660),
+                                      src: __webpack_require__(659),
                                       height: "75",
                                       alt: "rise image"
                                     }
@@ -518,15 +518,15 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2044)
-  __webpack_require__(2046)
-  __webpack_require__(2048)
+  __webpack_require__(2047)
+  __webpack_require__(2049)
+  __webpack_require__(2051)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2050)
+var __vue_script__ = __webpack_require__(2053)
 /* template */
-var __vue_template__ = __webpack_require__(2051)
+var __vue_template__ = __webpack_require__(2054)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -767,21 +767,21 @@ if (false) {
 
 /***/ }),
 
-/***/ 660:
+/***/ 659:
 /***/ (function(module, exports) {
 
 module.exports = "/images/5.jpg?5ad19bfbbd192c4ca5acea1f6d146bd2";
 
 /***/ }),
 
-/***/ 662:
+/***/ 661:
 /***/ (function(module, exports) {
 
 module.exports = "/images/15.jpg?a176a96269cb19d1b1605704e10c2526";
 
 /***/ }),
 
-/***/ 663:
+/***/ 662:
 /***/ (function(module, exports) {
 
 module.exports = "/images/16.jpg?d78ebf13dc5e6fac474dc1074782e557";
