@@ -1,12 +1,12 @@
 webpackJsonp([19],{
 
-/***/ 1619:
+/***/ 1622:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1620);
+var content = __webpack_require__(1623);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1620:
+/***/ 1623:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.ih-item{position:relative;-webkit-transition:all 0.3
 
 /***/ }),
 
-/***/ 1621:
+/***/ 1624:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1622);
+var content = __webpack_require__(1625);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1622:
+/***/ 1625:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "\n.ct-label {\n  fill: rgba(0, 0, 0, 0.4);\n  color: rg
 
 /***/ }),
 
-/***/ 1623:
+/***/ 1626:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1624);
+var content = __webpack_require__(1627);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1624:
+/***/ 1627:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -126,13 +126,13 @@ exports.push([module.i, "\n.img_space, .img_widget {\n    border-radius : 50%;\n
 
 /***/ }),
 
-/***/ 1625:
+/***/ 1628:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1626);
+var content = __webpack_require__(1629);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -153,7 +153,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1626:
+/***/ 1629:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -168,7 +168,7 @@ exports.push([module.i, "\n.anime i{\n    margin:auto;\n    padding: 0;\n}\n@key
 
 /***/ }),
 
-/***/ 1627:
+/***/ 1630:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -641,7 +641,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_6_vue_
 
 /***/ }),
 
-/***/ 1628:
+/***/ 1631:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -765,7 +765,7 @@ var render = function() {
             _c("img", {
               staticClass: "thumb-lg rounded-circle img-thumbnail",
               attrs: {
-                src: __webpack_require__(1629),
+                src: __webpack_require__(1632),
                 alt: "img",
                 height: "95",
                 width: "95"
@@ -869,7 +869,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-fluid",
                       attrs: {
-                        src: __webpack_require__(1630),
+                        src: __webpack_require__(1633),
                         alt: "img"
                       }
                     })
@@ -1476,14 +1476,14 @@ if (false) {
 
 /***/ }),
 
-/***/ 1629:
+/***/ 1632:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?6cfa3642f0c51d6eb1dd45b7ddbdf9a0";
 
 /***/ }),
 
-/***/ 1630:
+/***/ 1633:
 /***/ (function(module, exports) {
 
 module.exports = "/images/38.jpg?849eb59863d1f704233d7e2e5601cee2";
@@ -1496,16 +1496,16 @@ module.exports = "/images/38.jpg?849eb59863d1f704233d7e2e5601cee2";
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1619)
-  __webpack_require__(1621)
-  __webpack_require__(1623)
-  __webpack_require__(1625)
+  __webpack_require__(1622)
+  __webpack_require__(1624)
+  __webpack_require__(1626)
+  __webpack_require__(1628)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1627)
+var __vue_script__ = __webpack_require__(1630)
 /* template */
-var __vue_template__ = __webpack_require__(1628)
+var __vue_template__ = __webpack_require__(1631)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

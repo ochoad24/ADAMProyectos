@@ -185,7 +185,7 @@ class ProyectoController extends Controller
 
 
     public function selectProject(Request $request) {
-        $proyecto = Proyecto::select('proyectos.IdProyecto', 'proyectos.Titulo', 'proyectos.Descripcion', 'proyectos.FechaInicio', 'proyectos.FechaFin')
+        $proyecto = Proyecto::select('proyectos.IdProyecto', 'proyectos.Titulo', 'proyectos.Descripcion', 'proyectos.FechaInicio', 'proyectos.FechaFin', 'proyectos.actividades', 'proyectos.actividadesCompletadas')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         //join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
         //->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
@@ -194,7 +194,7 @@ class ProyectoController extends Controller
 
     public function selectActividad(Request $request) {
         $actividades = Proyecto::join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
-        ->select('actividades.id', 'actividades.actividad', 'actividades.fechaInicio', 'actividades.fechaFinal', 'actividades.idProyecto')
+        ->select('actividades.id', 'actividades.actividad', 'actividades.codigo_actividad', 'actividades.descripcion', 'actividades.fechaInicio', 'actividades.fechaFinal', 'actividades.idProyecto', 'actividades.tareas', 'actividades.tareasCompletadas')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $actividades;
     }
@@ -202,7 +202,7 @@ class ProyectoController extends Controller
     public function selectTareas(Request $request) {
         $proyecto = Proyecto::join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
         ->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
-        ->select('tarea.id', 'tarea.descripcion', 'tarea.fechaInicio', 'tarea.fechaFinal', 'tarea.idActividad')
+        ->select('tarea.id', 'tarea.tarea', 'tarea.fechaInicio', 'tarea.fechaFinal', 'tarea.idActividad', 'tarea.estado')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $proyecto;
     }

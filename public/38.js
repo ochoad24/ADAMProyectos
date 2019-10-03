@@ -1,12 +1,12 @@
 webpackJsonp([38],{
 
-/***/ 1801:
+/***/ 1804:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1802);
+var content = __webpack_require__(1805);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1802:
+/***/ 1805:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.flotChart {\n    width    : 100%;\n    height   : 32
 
 /***/ }),
 
-/***/ 1803:
+/***/ 1806:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53,17 +53,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__ = __webpack_require__(674);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__ = __webpack_require__(1804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__ = __webpack_require__(1807);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__ = __webpack_require__(675);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__ = __webpack_require__(676);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__ = __webpack_require__(1805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__ = __webpack_require__(1808);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__ = __webpack_require__(1806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__ = __webpack_require__(1809);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_Flot_jquery_flot_time_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__ = __webpack_require__(1807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__ = __webpack_require__(1810);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_Flot_jquery_flot_pie_js__);
 //
 //
@@ -697,7 +697,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1804:
+/***/ 1807:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for plotting textual data or categories.
@@ -895,7 +895,7 @@ as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
 
 /***/ }),
 
-/***/ 1805:
+/***/ 1808:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*
@@ -1509,7 +1509,7 @@ as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
 
 /***/ }),
 
-/***/ 1806:
+/***/ 1809:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* Pretty handling of time axes.
@@ -1949,7 +1949,7 @@ API.txt for details.
 
 /***/ }),
 
-/***/ 1807:
+/***/ 1810:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for rendering pie charts.
@@ -2777,7 +2777,7 @@ More detail and specific examples can be found in the included HTML file.
 
 /***/ }),
 
-/***/ 1808:
+/***/ 1811:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3017,13 +3017,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1801)
+  __webpack_require__(1804)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1803)
+var __vue_script__ = __webpack_require__(1806)
 /* template */
-var __vue_template__ = __webpack_require__(1808)
+var __vue_template__ = __webpack_require__(1811)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

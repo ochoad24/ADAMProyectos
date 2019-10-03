@@ -1,12 +1,12 @@
 webpackJsonp([27],{
 
-/***/ 2038:
+/***/ 2041:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2039);
+var content = __webpack_require__(2042);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2039:
+/***/ 2042:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n@charset \"UTF-8\";\r\n/*!\r\n * ImageHover.css - htt
 
 /***/ }),
 
-/***/ 2040:
+/***/ 2043:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2041);
+var content = __webpack_require__(2044);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2041:
+/***/ 2044:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,7 +84,7 @@ exports.push([module.i, "\n[class^='imghvr-'],\n[class*=' imghvr-'] {\n    backg
 
 /***/ }),
 
-/***/ 2042:
+/***/ 2045:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -261,7 +261,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2043:
+/***/ 2046:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -673,14 +673,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2038)
-  __webpack_require__(2040)
+  __webpack_require__(2041)
+  __webpack_require__(2043)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2042)
+var __vue_script__ = __webpack_require__(2045)
 /* template */
-var __vue_template__ = __webpack_require__(2043)
+var __vue_template__ = __webpack_require__(2046)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
