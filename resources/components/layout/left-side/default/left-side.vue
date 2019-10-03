@@ -8,31 +8,23 @@
                     <profile></profile>
                 </div>
                 <vmenu>
-                    <vmenu-item link="/" icon="fa fa-fw fa-desktop">
+                    <vmenu-item link="/" icon="fa fa-fw fa-desktop" v-if="this.$store.state.user.role==0">
                         Inicio
                     </vmenu-item>
                     <vmenu-item link="/Gantt" icon="fa fa-fw fa-tasks">
                         Proyectos
                     </vmenu-item>
-                     <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-tasks">
-                        Crear Nuevo Proyecto
+                     <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-plus" v-if="this.$store.state.user.role==0">
+                        Nuevo Proyecto
                     </vmenu-item>
-                    <vsub-menu title="Usuarios" icon="fa fa-fw fa-user" class="menufold-bottom">
-                        <vmenu-item link="/Roles" icon="fa fa-fw fa-users">
-                            Roles
-                        </vmenu-item>
-                        <vmenu-item link="/Permisos" icon="fa fa-fw fa-list">
-                            Permisos
-                        </vmenu-item>
-                        <vmenu-item link="/Usuarios" icon="fa fa-fw fa-user">
+                    <vmenu-item link="/Usuarios" icon="fa fa-fw fa-user" v-if="this.$store.state.user.role==0">
                             Usuarios
-                        </vmenu-item>
-                    </vsub-menu>
+                    </vmenu-item>
                     <vsub-menu title="Proyectos" icon="fa fa-fw fa-folder" class="menufold-bottom">
-                        <vmenu-item link="/Organizaciones" icon="fa fa-fw fa-globe">
+                        <vmenu-item link="/Organizaciones" icon="fa fa-fw fa-globe" v-if="this.$store.state.user.role==0">
                             Organizaciones
                         </vmenu-item>
-                        <vmenu-item link="/Proyectos" icon="fa fa-fw fa-folder">
+                        <vmenu-item link="/Proyectos" icon="fa fa-fw fa-folder" >
                             Proyectos
                         </vmenu-item>
                         <vmenu-item link="/GanttProyecto" icon="fa fa-fw fa-tasks">
@@ -40,7 +32,7 @@
                         </vmenu-item>
                     </vsub-menu>
                     <vsub-menu title="Actividades" icon="fa fa-fw fa-code-fork" class="menufold-bottom">
-                        <vmenu-item link="/Actividades" icon="fa fa-fw fa-code-fork">
+                        <vmenu-item link="/Actividades" icon="fa fa-fw fa-code-fork" >
                             Actividades
                         </vmenu-item>
                         
@@ -52,10 +44,10 @@
                         </vmenu-item>
                     </vsub-menu>
                     <vsub-menu title="Ajustes" icon="fa fa-fw fa-gear" class="menufold-bottom">
-                        <vmenu-item link="/TipoActividad" icon="fa fa-fw fa-list">
+                        <vmenu-item link="/TipoActividad" icon="fa fa-fw fa-list" v-if="this.$store.state.user.role==0">
                             Tipo Actividades
                         </vmenu-item>
-                        <vmenu-item link="/Estadistica" icon="fa fa-fw fa-paste">
+                        <vmenu-item link="/Estadistica" icon="fa fa-fw fa-paste" v-if="this.$store.state.user.role==0">
                             Estadisticas
                         </vmenu-item>
                     </vsub-menu>
@@ -82,6 +74,6 @@ export default {
         vsubMenu,
         vmenuItem,
         profile
-    },    
+    },   
 }
 </script>

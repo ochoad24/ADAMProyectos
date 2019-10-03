@@ -87,6 +87,7 @@ use Illuminate\Http\Request;
 
         // Rutas para los Usuarios
         Route::get('/User', 'UserController@index');
+        Route::get('/User/load', 'UserController@load');
         Route::post('/User/nuevo', 'UserController@store');
         Route::delete('/User/{usuario}/delete', 'UserController@drop');
         Route::put('/User/activar', 'UserController@activate');

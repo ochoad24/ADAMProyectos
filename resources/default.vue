@@ -2,7 +2,8 @@
     <div>
         <clear_header></clear_header>
         <div class="wrapper">
-            <left_side v-show="this.$store.state.left_open"></left_side>
+            <left_side v-show="this.$store.state.left_open && this.$store.state.user.role===0"></left_side>
+            <left_side_tecnico v-show="this.$store.state.left_open && this.$store.state.user.role===1"></left_side_tecnico>
             <right_side>
                 <router-view></router-view>
             </right_side>
@@ -12,6 +13,7 @@
 </template>
 <script>
     import clear_header from "./components/layout/clear_header";
+    import left_side_tecnico from './components/layout/left-side/default/left-side-tecnico';
     import left_side from "./components/layout/left-side/default/left-side";
     import right_side from "./components/layout/right-side";
     export default {
@@ -19,7 +21,8 @@
         components: {
             clear_header,
             left_side,
-            right_side
+            right_side,
+            left_side_tecnico
         },
         created: function() {},
         methods: {

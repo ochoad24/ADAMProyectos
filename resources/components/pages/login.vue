@@ -55,7 +55,7 @@
                                         </div>
                                         <div class="alert alert-danger" v-if="has_error && !success">
                                             <p v-if="error == 'login_error'">Validation Errors.</p>
-                                            <p v-else>Error, unable to connect with these credentials.</p>
+                                            <p v-else>Error, no se puede conectar con estas credenciales.</p>
                                         </div>
                                         <input type="submit" value="Iniciar Sesión"
                                             class="btn btn-primary btn-block mb-3" />
@@ -113,7 +113,14 @@
                             const redirectTo = redirect ? redirect.from.name : this.$auth.user().role === -1 ? '/' : '/'
                             // const redirectTo = 'dashboard'
                             // this.$router.push({ name: redirectTo })
-                            window.location.href="/#/Tarea";
+                            var Usuario=new Object();
+                            Usuario.name=this.$auth.user().nombre+' '+this.$auth.user().apellido;
+                            Usuario.job=this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
+                            Usuario.role=this.$auth.user().role;
+
+                            this.$store.commit('changeUser',Usuario);
+                            console.log(Usuario);
+                            window.location.href="/#/";
                         },
                         error: function () {
                             app.has_error = true

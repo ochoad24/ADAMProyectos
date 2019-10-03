@@ -386,7 +386,8 @@
                 val || this.close2()
             },
             actividad(val) {
-                this.initialize();
+                if(val!=null)
+                    this.initialize();
             },
             seleccion: {
                 deep: true,

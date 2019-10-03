@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use App\User;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -21,29 +21,10 @@ class UserController extends Controller
                 'users' => $users->toArray()
             ], 200);
     }
-    public function activate(Request $request){
-        $id=$request->id;
-        try{
-            $usuario=User::findOrFail($id);
-            $usuario->estado='1';
-            $usuario->save();
-            return 'Se ha activado correctamente';
-        }catch(\Exception $e){
-            $response['error'] = $e->getMessage();
-            return response()->json($response, 500);
-        }
-    }
-    public function desactivate(Request $request){
-        $id=$request->id;
-        try{
-            $usuario=User::findOrFail($id);
-            $usuario->estado='0';
-            $usuario->save();
-            return 'Se ha desactivado correctamente';
-        }catch(\Exception $e){
-            $response['error'] = $e->getMessage();
-            return response()->json($response, 500);
-        }
+    public function load()
+    {
+        $users = User::all();
+        return $users;
     }
     public function drop (User $usuario){
         try{
@@ -55,19 +36,13 @@ class UserController extends Controller
         }
     }
     public function store(Request $request){
-        $nombre=$request->nombre;
-        $apellido=$request->apellido;
-        $user=$request->usuario;
-        $password= Hash::make($request->password);
-        $idRol=$request->idRol;
         try{
             $usuario=new User();
-            $usuario->nombre=$nombre;
-            $usuario->apellido=$apellido;
-            $usuario->usuario=$user;
-            $usuario->password=$password;
-            $usuario->estado='1';
-            $usuario->idRol=$idRol;
+            $usuario->nombre=$request->nombre;
+            $usuario->apellido=$request->apellido;
+            $usuario->email=$request->email;
+            $usuario->password=Hash::make($request->password);
+            $usuario->role=$request->role;
             $usuario->save();
             return 'Se ha agregado el usuario correctamente';
         }catch(\Exception $e){
@@ -76,7 +51,7 @@ class UserController extends Controller
         }
     }
     public function select(Request $request){
-        return User::select('id','name')->where('role','1')->get();
+        return User::select('id','nombre')->where('role','1')->get();
     }
     public function show($id)
     {

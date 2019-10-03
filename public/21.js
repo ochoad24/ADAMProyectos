@@ -1,22 +1,22 @@
 webpackJsonp([21],{
 
-/***/ 1411:
+/***/ 2063:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1412);
+var content = __webpack_require__(2064);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("3ef27faf", content, false, {});
+var update = __webpack_require__(27)("1d437f0c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./prettyCheckable.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./prettyCheckable.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48258a4e\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-magnify.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48258a4e\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-magnify.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,46 +27,38 @@ if(false) {
 
 /***/ }),
 
-/***/ 1412:
+/***/ 2064:
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(28);
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(18)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.clearfix:before,.clearfix:after{content:\"\";display:table\n}\n.clearfix:after{clear:both\n}\n.clearfix{*zoom:1\n}\n.prettycheckbox,.prettyradio{display:inline-block;padding:0;margin:0\n}\n.prettycheckbox>a,.prettyradio>a{height:30px;width:30px;display:block;float:left;cursor:pointer;margin:0;background:url(" + escape(__webpack_require__(1413)) + ")\n}\n.prettycheckbox>a:focus,.prettyradio>a:focus{outline:0 none\n}\n.prettycheckbox label,.prettyradio label{display:block;float:left;margin:6px 5px;cursor:pointer\n}\n.prettycheckbox a.disabled,.prettycheckbox label.disabled,.prettyradio a.disabled,.prettyradio label.disabled{cursor:not-allowed\n}\n.prettycheckbox>a{background-position:0 0\n}\n.prettycheckbox>a:focus{background-position:-30px 0\n}\n.prettycheckbox>a.checked{background-position:-60px 0\n}\n.prettycheckbox>a.checked:focus{background-position:-90px 0\n}\n.prettycheckbox>a.checked.disabled{background-position:-150px 0\n}\n.prettycheckbox>a.disabled{background-position:-120px 0\n}\n.prettyradio>a{background-position:-180px 0\n}\n.prettyradio>a:focus{background-position:-210px 0\n}\n.prettyradio>a.checked{background-position:-240px 0\n}\n.prettyradio>a.checked:focus{background-position:-270px 0\n}\n.prettyradio>a.checked.disabled{background-position:-330px 0\n}\n.prettyradio>a.disabled{background-position:-300px 0\n}\r\n", ""]);
+exports.push([module.i, "\n.magnify{position:relative;cursor:none\n}\n.magnify-large{position:absolute;display:none;width:175px;height:175px;-webkit-box-shadow:0 0 0 7px rgba(255,255,255,0.85),0 0 7px 7px rgba(0,0,0,0.25),inset 0 0 40px 2px rgba(0,0,0,0.25);-moz-box-shadow:0 0 0 7px rgba(255,255,255,0.85),0 0 7px 7px rgba(0,0,0,0.25),inset 0 0 40px 2px rgba(0,0,0,0.25);box-shadow:0 0 0 7px rgba(255,255,255,0.85),0 0 7px 7px rgba(0,0,0,0.25),inset 0 0 40px 2px rgba(0,0,0,0.25);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1413:
-/***/ (function(module, exports) {
-
-module.exports = "/images/vendor/prettyCheckable/sprites-sfa68604977.png?6ce57f9a2b9fc926827a9b37f338c4f1";
-
-/***/ }),
-
-/***/ 1414:
+/***/ 2065:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1415);
+var content = __webpack_require__(2066);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("7e06d477", content, false, {});
+var update = __webpack_require__(27)("ee361048", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery-labelauty.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery-labelauty.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48258a4e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./image_magnifier.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-48258a4e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./image_magnifier.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -77,160 +69,30 @@ if(false) {
 
 /***/ }),
 
-/***/ 1415:
+/***/ 2066:
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(28);
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(18)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*!\n * LABELAUTY jQuery Plugin Styles\n *\n * @file: jquery-labelauty.css\n * @author: Francisco Neves (@fntneves)\n * @site: www.francisconeves.com\n * @license: MIT License\n */\n\n/* Prevent text and blocks selection */\ninput.labelauty + label ::selection { background-color: rgba(255, 255, 255, 0);\n}\ninput.labelauty + label ::-moz-selection { background-color: rgba(255, 255, 255, 0);\n}\n\n/* Hide original checkboxes. They are ugly! */\ninput.labelauty { display: none !important;\n}\n\n/*\n * Let's style the input\n * Feel free to work with it as you wish!\n */\ninput.labelauty + label\n{\n\tdisplay: table;\n\tfont-size: 11px;\n\tpadding: 10px;\n\tbackground-color: #efefef;\n\tcolor: #b3b3b3;\n\tcursor: pointer;\n\n\tborder-radius: 3px 3px 3px 3px;\n\t-moz-border-radius: 3px 3px 3px 3px;\n\t-webkit-border-radius: 3px 3px 3px 3px;\n\n\n\ttransition: background-color 0.25s;\n\t-moz-transition: background-color 0.25s;\n\t-webkit-transition: background-color 0.25s;\n\t-o-transition: background-color 0.25s;\n\n\t-moz-user-select: none;\n\t-khtml-user-select: none;\n\t-webkit-user-select: none;\n\t-o-user-select: none;\n}\n\n/* Stylish text inside label */\ninput.labelauty + label > span.labelauty-unchecked,\ninput.labelauty + label > span.labelauty-checked\n{\n\tdisplay: inline-block;\n\tline-height: 16px;\n\tvertical-align: bottom;\n}\n\n/* Stylish icons inside label */\ninput.labelauty + label > span.labelauty-unchecked-image,\ninput.labelauty + label > span.labelauty-checked-image\n{\n\tdisplay: inline-block;\n\twidth: 16px;\n\theight: 16px;\n\tvertical-align: bottom;\n\tbackground-repeat: no-repeat;\n\tbackground-position: left center;\n\n\ttransition: background-image 0.5s linear;\n\t-moz-transition: background-image 0.5s linear;\n\t-webkit-transition: background-image 0.5s linear;\n\t-o-transition: background-image 0.5s linear;\n}\n\n/* When there's a label, add a little margin to the left */\ninput.labelauty + label > span.labelauty-unchecked-image + span.labelauty-unchecked,\ninput.labelauty + label > span.labelauty-checked-image + span.labelauty-checked\n{\n\tmargin-left: 7px;\n}\n\n/* When not Checked */\ninput.labelauty:not(:checked):not([disabled]) + label:hover\n{\n\tbackground-color: #eaeaea;\n\tcolor: #a7a7a7;\n}\ninput.labelauty:not(:checked) + label > span.labelauty-checked-image\n{\n\tdisplay: none;\n}\ninput.labelauty:not(:checked) + label > span.labelauty-checked\n{\n\tdisplay: none;\n}\n\n/* When Checked */\ninput.labelauty:checked + label\n{\n\tbackground-color: #3498db;\n\tcolor: #ffffff;\n}\ninput.labelauty:checked:not([disabled]) + label:hover\n{\n\tbackground-color: #72c5fd;\n}\ninput.labelauty:checked + label > span.labelauty-unchecked-image\n{\n\tdisplay: none;\n}\ninput.labelauty:checked + label > span.labelauty-unchecked\n{\n\tdisplay: none;\n}\ninput.labelauty:checked + label > span.labelauty-checked\n{\n\tdisplay: inline-block;\n}\ninput.labelauty.no-label:checked + label > span.labelauty-checked\n{\n\tdisplay: block;\n}\n\n/* When Disabled */\ninput.labelauty[disabled] + label\n{\n\topacity: 0.5;\n}\n\n/* Add a background to (un)checked images */\ninput.labelauty + label > span.labelauty-unchecked-image\n{\n\tbackground-image: url(" + escape(__webpack_require__(709)) + ");\n}\ninput.labelauty + label > span.labelauty-checked-image\n{\n\tbackground-image: url(" + escape(__webpack_require__(839)) + ");\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*image overlapping in magification*/\n.magnify .magnify {\n    z-index: 2;\n}\n.magnify .magnify-large {\n    z-index:4;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1416:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1417);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("38592c0a", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css", function() {
-     var newContent = require("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1417:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@charset \"UTF-8\";\n.abc-checkbox {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-checkbox label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-checkbox label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -1.25rem;\n  border: 1px solid #ced4da;\n  border-radius: 3px;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;\n}\n.abc-checkbox label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  left: 0;\n  top: 2px;\n  margin-left: -1.25rem;\n  padding-left: 3px;\n  padding-top: 1px;\n  font-size: 11px;\n  color: #495057;\n}\n.abc-checkbox input[type=\"checkbox\"],\n.abc-checkbox input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-checkbox input[type=\"checkbox\"]:focus + label::before,\n.abc-checkbox input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-checkbox input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox input[type=\"radio\"]:checked + label::after {\n  font-family: \"FontAwesome\";\n  content: \"\\F00C\";\n}\n.abc-checkbox input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox input[type=\"radio\"]:indeterminate + label::after {\n  display: block;\n  content: \"\";\n  width: 10px;\n  height: 3px;\n  background-color: #555555;\n  border-radius: 2px;\n  margin-left: -16.5px;\n  margin-top: 7px;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label,\n.abc-checkbox input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::before,\n.abc-checkbox input[type=\"radio\"]:disabled + label::before {\n  background-color: #e9ecef;\n  cursor: not-allowed;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::after,\n.abc-checkbox input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-checkbox.abc-checkbox-circle label::before {\n  border-radius: 50%;\n}\n.abc-checkbox.checkbox-inline {\n  margin-top: 0;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-radio {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-radio label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-radio label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -20px;\n  border: 1px solid #ced4da;\n  border-radius: 50%;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out;\n}\n.abc-radio label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  content: \" \";\n  width: 11px;\n  height: 11px;\n  left: 3px;\n  top: 5px;\n  margin-left: -20px;\n  border-radius: 50%;\n  background-color: #495057;\n  transform: scale(0, 0);\n  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);\n}\n.abc-radio input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-radio input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-radio input[type=\"radio\"]:checked + label::after {\n  transform: scale(1, 1);\n}\n.abc-radio input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::before {\n  cursor: not-allowed;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-radio.radio-inline {\n  margin-top: 0;\n}\n.abc-radio-primary input[type=\"radio\"] + label::after {\n  background-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::before {\n  border-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::after {\n  background-color: #007bff;\n}\n.abc-radio-danger input[type=\"radio\"] + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::before {\n  border-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-info input[type=\"radio\"] + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::before {\n  border-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-warning input[type=\"radio\"] + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::before {\n  border-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-success input[type=\"radio\"] + label::after {\n  background-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::before {\n  border-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::after {\n  background-color: #28a745;\n}\nlabel .was-validated .form-check-input:invalid .abc-checkbox:before, label\n.was-validated .form-check-input:invalid .abc-radio:before, label .form-check-input.is-invalid .abc-checkbox:before, label\n.form-check-input.is-invalid .abc-radio:before {\n  border-color: #dc3545;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1418:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1419);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("634b94b0", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./radio_checkbox.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b0b4f71\",\"scoped\":false,\"hasInlineConfig\":true}!./radio_checkbox.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1419:
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(28);
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.m-l-10 {\n    margin-left : 10px;\n}\ninput.labelauty + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(709)) + ");\n}\ninput.labelauty + label > span.labelauty-checked-image {\n    background-image : url(" + escape(__webpack_require__(839)) + ");\n}\ninput.labelauty.check-icon + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(648)) + ");\n}\ninput.labelauty.synch-icon + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(1420)) + ");\n}\ninput.labelauty.synch-icon + label > span.labelauty-checked-image {\n    background-image : url(" + escape(__webpack_require__(1421)) + ");\n}\ninput.labelauty.terms-icon + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(1422)) + ");\n}\ninput.labelauty.terms-icon + label > span.labelauty-checked-image {\n    background-image : url(" + escape(__webpack_require__(1423)) + ");\n}\ninput.labelauty.disabled-icon + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(648)) + ");\n}\ninput.labelauty.disabled-icon + label > span.labelauty-checked-image {\n    background-image : url(" + escape(__webpack_require__(648)) + ");\n}\ninput.labelauty + label {\n    display : inline-block;\n}\ninput.labelauty.synch-icon1 + label > span.labelauty-checked-image {\n    background-image : url(" + escape(__webpack_require__(1424)) + ");\n}\ninput.labelauty.synch-icon2 + label > span.labelauty-checked-image {\n    background-image : url(" + escape(__webpack_require__(1425)) + ");\n}\ninput.labelauty.synch-icon1 + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(648)) + ");\n}\ninput.labelauty.synch-icon2 + label > span.labelauty-unchecked-image {\n    background-image : url(" + escape(__webpack_require__(709)) + ");\n}\ninput.labelauty:checked + label,\n.checkbox-primary input[type=\"checkbox\"]:checked + label::before,\n.checkbox-primary input[type=\"radio\"]:checked + label::before {\n    background-color : #428bca;\n}\n.checkbox-info input[type=\"checkbox\"]:checked + label::before,\n.checkbox-info input[type=\"radio\"]:checked + label::before,\n.radio-info input[type=\"radio\"]:checked + label::after {\n    background-color : #4fc1e9;\n}\n.checkbox-danger input[type=\"checkbox\"]:checked + label::before,\n.checkbox-danger input[type=\"radio\"]:checked + label::before,\n.radio-danger input[type=\"radio\"]:checked + label::after {\n    background-color : #fb8678;\n}\n.checkbox-success input[type=\"checkbox\"]:checked + label::before,\n.checkbox-success input[type=\"radio\"]:checked + label::before {\n    background-color : #22d69d;\n}\n.checkbox-warning input[type=\"checkbox\"]:checked + label::before,\n.checkbox-warning input[type=\"radio\"]:checked + label::before {\n    background-color : #ffb65f;\n}\n.checkbox-default input[type=\"checkbox\"]:checked + label::before,\n.checkbox-default input[type=\"radio\"]:checked + label::before {\n    background-color : #dcdcdc;\n}\n.checkbox-success input[type=\"checkbox\"]:indeterminate + label::before, .checkbox-success input[type=\"radio\"]:indeterminate + label::before {\n    background-color : #22d69d;\n    border-color     : #22d69d;\n}\n.checkbox-danger input[type=\"checkbox\"]:indeterminate + label::before, .checkbox-danger input[type=\"radio\"]:indeterminate + label::before {\n    background-color : #fb8678;\n    border-color     : #fb8678;\n}\n.checkbox-default input[type=\"checkbox\"]:indeterminate + label::before, .checkbox-default input[type=\"radio\"]:indeterminate + label::before {\n    background-color : #DCDCDC;\n    border-color     : #DCDCDC;\n}\n.checkbox-primary input[type=\"checkbox\"]:checked + label::before, .checkbox-primary input[type=\"radio\"]:checked + label::before {\n    background-color : #428BCA;\n    border-color     : #428BCA;\n}\n.checkbox-info input[type=\"checkbox\"]:checked + label::before, .checkbox-info input[type=\"radio\"]:checked + label::before {\n    background-color : #4FC1E9;\n    border-color     : #4FC1E9;\n}\n.checkbox-warning input[type=\"checkbox\"]:checked + label::before, .checkbox-warning input[type=\"radio\"]:checked + label::before {\n    background-color : #FFB65F;\n    border-color     : #FFB65F;\n}\n.checkbox-primary input[type=\"checkbox\"]:indeterminate + label::before, .checkbox-primary input[type=\"radio\"]:indeterminate + label::before {\n    background-color : #428BCA;\n    border-color     : #428BCA;\n}\ninput.labelauty:checked:not([disabled]) + label:hover {\n    background-color : #4FC1E9;\n}\n.radio,\n.checkbox {\n    display       : block;\n    min-height    : 0;\n    margin-top    : 10px;\n    margin-bottom : 10px;\n}\n.radio.radio-inline {\n    margin-left : 23px;\n}\n/*pretty checkable*/\n.test_radio {\n    display : block;\n}\n.awesomeradio_grid_sep {\n    border-right : 1px solid #ccc;\n}\n@media screen and (max-width : 767px) {\n.awesomeradio_grid_sep {\n        border-right : 0;\n}\n}\n/*search radio and checkbox code*/\n.searchable-container {\n    margin : 13px 0 30px 0;\n}\n.searchable-container label.btn-secondary.active {\n    background-color : #4d80b2 !important;\n    color            : #FFF !important;\n    box-shadow: none !important;\n}\n.searchable-container label.btn-secondary {\n    width      : 90%;\n    border     : 1px solid #dcdcdc;\n    box-shadow : 5px 8px 8px 0 #ccc;\n}\n.searchable-container label .bizcontent {\n    width : 100%;\n}\n.searchable-container .btn-group {\n    width : 90%\n}\n.searchable-container .btn span.glyphicon {\n    opacity : 0;\n}\n.searchable-container .btn.active span.glyphicon {\n    opacity : 1;\n}\n.bizmoduleselect .btn-secondary{\n    background-color:#dcdcdc;\n    color:#333;\n}\n\n/*awesome inline checkbox*/\n@media(min-width: 768px) and (max-width:1024px){\n.inline-response {\n        padding-left: 10px;\n}\n}\n@media(max-width:768px){\ndiv.radio{\n        margin-left: 0 !important;\n}\n}\n[for~=checkbox4]{\n    padding-left: 8px;\n    padding-right: 12px;\n}\n.custom-control-indicator{\n    height: 30px;\n    width: 30px;\n}\n.custom-control-description{\n    margin-left: 15px;\n    font-size: 14px;\n}\n.custom-controls-stacked .custom-control{\n    min-height: 2.3rem;\n}\n.custom-checkbox .custom-control-description,.custom-radio .custom-control-description{\n    margin-top: 7px;\n}\n.disabled,input[disabled=\"disabled\"]{\n    cursor: not-allowed;\n}\n.checkbox{\n    padding-left: 0;\n}\n.radio{\n    padding-left: 0;\n}\n.inline-response label{\n    padding-left: 0;\n}\n@media(max-width: 320px){\n.check_btn{\n        margin-left: -15px;\n}\n}\n.custom-control-label{\n    margin-left: 1rem;\n    margin-top: 5px;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1420:
-/***/ (function(module, exports) {
-
-module.exports = "/images/synch-unchecked.png?d4534885b11731cf9a518a13f617e603";
-
-/***/ }),
-
-/***/ 1421:
-/***/ (function(module, exports) {
-
-module.exports = "/images/synch-checked.png?57653d0bdfad754d6cb63a247c44f178";
-
-/***/ }),
-
-/***/ 1422:
-/***/ (function(module, exports) {
-
-module.exports = "/images/terms-unchecked.png?e0782805b518cb561df358425853f68e";
-
-/***/ }),
-
-/***/ 1423:
-/***/ (function(module, exports) {
-
-module.exports = "/images/terms-checked.png?fa8a6baf54d660d2f279aa5c233ca338";
-
-/***/ }),
-
-/***/ 1424:
-/***/ (function(module, exports) {
-
-module.exports = "/images/au.png?6fa83fa93d1c0639742961bf8a70fe34";
-
-/***/ }),
-
-/***/ 1425:
-/***/ (function(module, exports) {
-
-module.exports = "/images/us.png?4d9877ce99764a83ea3c3967c0f79b4a";
-
-/***/ }),
-
-/***/ 1426:
+/***/ 2067:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(563);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prettyCheckable_dist_prettyCheckable_min_js__ = __webpack_require__(1427);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prettyCheckable_dist_prettyCheckable_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prettyCheckable_dist_prettyCheckable_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_labelauty_source_jquery_labelauty_js__ = __webpack_require__(1428);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_labelauty_source_jquery_labelauty_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_labelauty_source_jquery_labelauty_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(745);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js__);
 //
 //
 //
@@ -363,585 +225,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "radio_check",
+    name: "image_magnifier",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            selected: [],
-            options: [{ text: 'Checkbox1', value: 'checkbox1' }, { text: 'Checkbox2', value: 'checkbox2' }, { text: 'Checkbox3', value: 'checkbox3' }],
-            options_buttons: [{ text: 'Button1', value: 'button_checkbox1' }, { text: 'Button2', value: 'button_checkbox2' }, { text: 'Button3', value: 'button_ checkbox3' }],
-            btn_stacked_options: [{ text: 'Button1', value: 'stacked_btn_check1' }, { text: 'Button2', value: 'stacked_btn_check2' }, { text: 'Button3', value: 'stacked_btn_ check3' }],
-            radio_options: [{ text: 'Radio1', value: 'radiobutton1' }, { text: 'Radio2', value: 'radiobutton2' }, { text: 'Radio3', value: 'radiobutton3' }],
-            stacked_radio_options: [{ text: 'Radio1', value: 'radio1' }, { text: 'Radio2', value: 'radio2' }, { text: 'Radio3', value: 'radio3' }],
-            btn_radio_stacked: [{ text: 'Radio1', value: 'stacked_btn_radio1' }, { text: 'Radio2', value: 'stacked_btn_radio2' }, { text: 'Radio3', value: 'stacked_btn_radio3' }],
-            message: '',
-            search: '',
-            isActive: false,
-            drinks: [{
-                name: 'Coffee',
-                active: false
-            }, {
-                name: 'Tea',
-                active: false
-            }, {
-                name: 'Milk',
-                active: false
-            }, {
-                name: 'Juice',
-                active: false
-            }, {
-                name: 'Milk shakes',
-                active: false
-            }, {
-                name: 'Cool Drink',
-                active: false
-            }, {
-                name: 'Water',
-                active: false
-            }, {
-                name: 'Butter Milk',
-                active: false
-            }]
-        };
-    },
+    mounted: function mounted() {
+        "use strict";
 
-    mounted: function mounted() {},
-    destroyed: function destroyed() {},
-    methods: {
-        changeState: function changeState() {
-            var el = document.getElementById("indeterminateCheckbox");
-            if (el.readOnly) el.checked = el.readOnly = false;else if (!el.checked) el.readOnly = el.indeterminate = true;
-        }
+        $('[data-toggle="magnify"]').magnify();
     },
-    computed: {
-        allDrinks: function allDrinks() {
-            var self = this;
-            return this.drinks.filter(function (drinky) {
-                return drinky.name.toLowerCase().indexOf(self.search.toLowerCase()) >= 0;
-            });
-            //return this.customers;
-        }
-    }
+    destroyed: function destroyed() {}
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(561)))
 
 /***/ }),
 
-/***/ 1427:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {!function(a,b,c,d){"use strict";var e="prettyCheckable",f="plugin_"+e,g={label:"",labelPosition:"right",customClass:"",color:"blue"},h=function(c){b.ko&&a(c).on("change",function(b){if(b.preventDefault(),b.originalEvent===d){var c=a(this).closest(".clearfix"),e=a(c).find("a:first"),f=e.hasClass("checked");f===!0?e.addClass("checked"):e.removeClass("checked")}}),c.find("a:first, label").on("touchstart click",function(c){c.preventDefault();var d=a(this).closest(".clearfix"),e=d.find("input"),f=d.find("a:first");f.hasClass("disabled")!==!0&&("radio"===e.prop("type")&&a('input[name="'+e.attr("name")+'"]').each(function(b,c){a(c).prop("checked",!1).parent().find("a:first").removeClass("checked")}),b.ko?ko.utils.triggerEvent(e[0],"click"):e.prop("checked")?e.prop("checked",!1).change():e.prop("checked",!0).change(),f.toggleClass("checked"))}),c.find("a:first").on("keyup",function(b){32===b.keyCode&&a(this).click()})},i=function(b){this.element=b,this.options=a.extend({},g)};i.prototype={init:function(b){a.extend(this.options,b);var c=a(this.element);c.parent().addClass("has-pretty-child"),c.css("display","none");var e=c.data("type")!==d?c.data("type"):c.attr("type"),f=null,g=c.attr("id");if(g!==d){var i=a("label[for="+g+"]");i.length>0&&(f=i.text(),i.remove())}""===this.options.label&&(this.options.label=f),f=c.data("label")!==d?c.data("label"):this.options.label;var j=c.data("labelposition")!==d?"label"+c.data("labelposition"):"label"+this.options.labelPosition,k=c.data("customclass")!==d?c.data("customclass"):this.options.customClass,l=c.data("color")!==d?c.data("color"):this.options.color,m=c.prop("disabled")===!0?"disabled":"",n=["pretty"+e,j,k,l].join(" ");c.wrap('<div class="clearfix '+n+'"></div>').parent().html();var o=[],p=c.prop("checked")?"checked":"";"labelright"===j?(o.push('<a href="#" class="'+p+" "+m+'"></a>'),o.push('<label for="'+c.attr("id")+'">'+f+"</label>")):(o.push('<label for="'+c.attr("id")+'">'+f+"</label>"),o.push('<a href="#" class="'+p+" "+m+'"></a>')),c.parent().append(o.join("\n")),h(c.parent())},check:function(){"radio"===a(this.element).prop("type")&&a('input[name="'+a(this.element).attr("name")+'"]').each(function(b,c){a(c).prop("checked",!1).attr("checked",!1).parent().find("a:first").removeClass("checked")}),a(this.element).prop("checked",!0).attr("checked",!0).parent().find("a:first").addClass("checked")},uncheck:function(){a(this.element).prop("checked",!1).attr("checked",!1).parent().find("a:first").removeClass("checked")},enable:function(){a(this.element).removeAttr("disabled").parent().find("a:first").removeClass("disabled")},disable:function(){a(this.element).attr("disabled","disabled").parent().find("a:first").addClass("disabled")},destroy:function(){var b=a(this.element),c=b.clone(),e=b.attr("id");if(e!==d){var f=a("label[for="+e+"]");f.length>0&&f.insertBefore(b.parent())}c.removeAttr("style").insertAfter(f),b.parent().remove()}},a.fn[e]=function(b){var c,d;if(this.data(f)instanceof i||this.data(f,new i(this)),d=this.data(f),d.element=this,"undefined"==typeof b||"object"==typeof b)"function"==typeof d.init&&d.init(b);else{if("string"==typeof b&&"function"==typeof d[b])return c=Array.prototype.slice.call(arguments,1),d[b].apply(d,c);a.error("Method "+b+" does not exist on jQuery."+e)}}}(jQuery,window,document);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(528)))
-
-/***/ }),
-
-/***/ 1428:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*!
- * LABELAUTY jQuery Plugin
- *
- * @file: jquery-labelauty.js
- * @author: Francisco Neves (@fntneves)
- * @site: www.francisconeves.com
- * @license: MIT License
- */
-
-(function( $ ){
-
-	$.fn.labelauty = function( options )
-	{
-		/*
-		 * Our default settings
-		 * Hope you don't need to change anything, with these settings
-		 */
-		var settings = $.extend(
-		{
-			// Development Mode
-			// This will activate console debug messages
-			development: false,
-
-			// Trigger Class
-			// This class will be used to apply styles
-			class: "labelauty",
-
-			// Use icon?
-			// If false, then only a text label represents the input
-			icon: true,
-
-			// Use text label ?
-			// If false, then only an icon represents the input
-			label: true,
-
-			// Separator between labels' messages
-			// If you use this separator for anything, choose a new one
-			separator: "|",
-
-			// Default Checked Message
-			// This message will be visible when input is checked
-			checked_label: "Checked",
-
-			// Default UnChecked Message
-			// This message will be visible when input is unchecked
-			unchecked_label: "Unchecked",
-
-			// Force random ID's
-			// Replace original ID's with random ID's,
-			force_random_id: false,
-
-			// Minimum Label Width
-			// This value will be used to apply a minimum width to the text labels
-			minimum_width: false,
-
-			// Use the greatest width between two text labels ?
-			// If this has a true value, then label width will be the greatest between labels
-			same_width: true
-		}, options);
-
-		/*
-		 * Let's create the core function
-		 * It will try to cover all settings and mistakes of using
-		 */
-		return this.each(function()
-		{
-			var $object = $( this );
-			var selected = $object.is(':checked');
-			var type = $object.attr('type');
-			var use_icons = true;
-			var use_labels = true;
-			var labels;
-			var labels_object;
-			var input_id;
-			
-			//Get the aria label from the input element
-			var aria_label = $object.attr( "aria-label" );
-			
-			// Hide the object form screen readers
-			$object.attr( "aria-hidden", true );
-			
-			// Test if object is a check input
-			// Don't mess me up, come on
-			if( $object.is( ":checkbox" ) === false && $object.is( ":radio" ) === false )
-				return this;
-
-			// Add "labelauty" class to all checkboxes
-			// So you can apply some custom styles
-			$object.addClass( settings.class );
-			
-			// Get the value of "data-labelauty" attribute
-			// Then, we have the labels for each case (or not, as we will see)
-			labels = $object.attr( "data-labelauty" );
-			
-			use_labels = settings.label;
-			use_icons = settings.icon;
-
-			// It's time to check if it's going to the right way
-			// Null values, more labels than expected or no labels will be handled here
-			if( use_labels === true )
-			{
-				if( labels == null || labels.length === 0 )
-				{
-					// If attribute has no label and we want to use, then use the default labels
-					labels_object = [settings.unchecked_label, settings.checked_label]
-				}
-				else
-				{
-					// Ok, ok, it's time to split Checked and Unchecked labels
-					// We split, by the "settings.separator" option
-					labels_object = labels.split( settings.separator );
-
-					// Now, let's check if exist _only_ two labels
-					// If there's more than two, then we do not use labels :(
-					// Else, do some additional tests
-					if( labels_object.length > 2 )
-					{
-						use_labels = false;
-						debug( settings.development, "There's more than two labels. LABELAUTY will not use labels." );
-					}
-					else
-					{
-						// If there's just one label (no split by "settings.separator"), it will be used for both cases
-						// Here, we have the possibility of use the same label for both cases
-						if( labels_object.length === 1 )
-							debug( settings.development, "There's just one label. LABELAUTY will use this one for both cases." );
-					}
-				}
-			}
-
-			/*
-			 * Let's begin the beauty
-			 */
-
-			// Start hiding ugly checkboxes
-			// Obviously, we don't need native checkboxes :O
-			$object.css({ display : "none" });
-						
-			// We don't need more data-labelauty attributes!
-			// Ok, ok, it's just for beauty improvement
-			$object.removeAttr( "data-labelauty" );
-			
-			// Now, grab checkbox ID Attribute for "label" tag use
-			// If there's no ID Attribute, then generate a new one
-			input_id = $object.attr( "id" );
-
-			if( settings.force_random_id || input_id == null || input_id.trim() === "")
-			{
-				var input_id_number = 1 + Math.floor( Math.random() * 1024000 );
-				input_id = "labelauty-" + input_id_number;
-
-				// Is there any element with this random ID ?
-				// If exists, then increment until get an unused ID
-				while( $( input_id ).length !== 0 )
-				{
-					input_id_number++;
-					input_id = "labelauty-" + input_id_number;
-					debug( settings.development, "Holy crap, between 1024 thousand numbers, one raised a conflict. Trying again." );
-				}
-
-				$object.attr( "id", input_id );
-			}
-
-			// Now, add necessary tags to make this work
-			// Here, we're going to test some control variables and act properly
-			
-			var element = jQuery(create( input_id, aria_label, selected, type, labels_object, use_labels, use_icons ));
-			
-			element.click(function(){
-				if($object.is(':checked')){
-					$(element).attr('aria-checked', false);
-				}else{
-					$(element).attr('aria-checked', true);
-				}
-			});
-			
-			element.keypress(function(event){
-				event.preventDefault();
-				if(event.keyCode === 32 || event.keyCode === 13){		
-					if($object.is(':checked')){
-						$object.prop('checked', false);
-						$(element).attr('aria-checked',false);
-					}else{
-						$object.prop('checked', true);
-						$(element).attr('aria-checked', true);
-					}
-				}
-			});
-			
-			$object.after(element);
-			
-			// Now, add "min-width" to label
-			// Let's say the truth, a fixed width is more beautiful than a variable width
-			if( settings.minimum_width !== false )
-				$object.next( "label[for=" + input_id + "]" ).css({ "min-width": settings.minimum_width });
-
-			// Now, add "min-width" to label
-			// Let's say the truth, a fixed width is more beautiful than a variable width
-			if( settings.same_width != false && settings.label == true )
-			{
-				var label_object = $object.next( "label[for=" + input_id + "]" );
-				var unchecked_width = getRealWidth(label_object.find( "span.labelauty-unchecked" ));
-				var checked_width = getRealWidth(label_object.find( "span.labelauty-checked" ));
-
-				if( unchecked_width > checked_width )
-					label_object.find( "span.labelauty-checked" ).width( unchecked_width );
-				else
-					label_object.find( "span.labelauty-unchecked" ).width( checked_width );
-			}
-		});
-	};
-
-	/*
-	 * Tricky code to work with hidden elements, like tabs.
-	 * Note: This code is based on jquery.actual plugin.
-	 * https://github.com/dreamerslab/jquery.actual
-	 */
-	function getRealWidth( element )
-	{
-		var width = 0;
-		var $target = element;
-		var css_class = 'hidden_element';
-
-		$target = $target.clone().attr('class', css_class).appendTo('body');
-		width = $target.width(true);
-		$target.remove();
-
-		return width;
-	}
-
-	function debug( debug, message )
-	{
-		if( debug && window.console && window.console.log )
-			window.console.log( "jQuery-LABELAUTY: " + message );
-	}
-
-	function create( input_id, aria_label, selected, type, messages_object, label, icon )
-	{	
-		var block;
-		var unchecked_message;
-		var checked_message;
-		var aria = "";
-		
-		if( messages_object == null )
-			unchecked_message = checked_message = "";
-		else
-		{
-			unchecked_message = messages_object[0];
-
-			// If checked message is null, then put the same text of unchecked message
-			if( messages_object[1] == null )
-				checked_message = unchecked_message;
-			else
-				checked_message = messages_object[1];
-		}
-		
-		if(aria_label == null)
-			aria = "";	
-		else
-			aria = 'tabindex="0" role="' + type + '" aria-checked="' + selected + '" aria-label="' + aria_label + '"';
-		
-		if( label == true && icon == true)
-		{
-			block = '<label for="' + input_id + '" ' + aria + '>' +
-						'<span class="labelauty-unchecked-image"></span>' +
-						'<span class="labelauty-unchecked">' + unchecked_message + '</span>' +
-						'<span class="labelauty-checked-image"></span>' +
-						'<span class="labelauty-checked">' + checked_message + '</span>' +
-					'</label>';
-		}
-		else if( label == true )
-		{
-			block = '<label for="' + input_id + '" ' + aria + '>' +
-				'<span class="labelauty-unchecked">' + unchecked_message + '</span>' +
-				'<span class="labelauty-checked">' + checked_message + '</span>' +
-				'</label>';
-		}
-		else
-		{
-			block = '<label for="' + input_id + '" ' + aria + '>' +
-						'<span class="labelauty-unchecked-image"></span>' +
-						'<span class="labelauty-checked-image"></span>' +
-					'</label>';
-		}
-		
-		return block;
-	}
-
-}( jQuery ));
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(528)))
-
-/***/ }),
-
-/***/ 1429:
+/***/ 2068:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -952,947 +255,269 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12" },
+        { staticClass: "col-lg-12" },
         [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='fa fa-fw ti-check-box'></i> Multiple Select with Search Option"
-              }
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "row" },
-                [
-                  _c("div", { staticClass: "col-sm-12 col-md-12 col-lg-12" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.search,
-                          expression: "search"
-                        }
-                      ],
-                      staticClass: "form-control",
+          _c("card", { attrs: { title: "Image Magnifier" } }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                _c("a", { staticClass: "mag img-fluid" }, [
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "mag-style img-fluid",
+                    attrs: {
+                      "data-toggle": "magnify",
+                      src: __webpack_require__(643),
+                      alt: "image"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                _c("a", { staticClass: "mag img-fluid" }, [
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "mag-style img-fluid",
+                    attrs: {
+                      "data-toggle": "magnify",
+                      src: __webpack_require__(606),
+                      alt: "image"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                _c("a", { staticClass: "mag img-fluid" }, [
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "mag-style img-fluid",
+                    attrs: {
+                      "data-toggle": "magnify",
+                      src: __webpack_require__(616),
+                      alt: "image"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                _c("a", { staticClass: "mag img-fluid" }, [
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "mag-style img-fluid",
+                    attrs: {
+                      "data-toggle": "magnify",
+                      src: __webpack_require__(605),
+                      alt: "image"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row", staticStyle: { "margin-top": "40px" } },
+              [
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
                       attrs: {
-                        type: "search",
-                        id: "search",
-                        placeholder: "Add your options.."
-                      },
-                      domProps: { value: _vm.search },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.search = $event.target.value
-                        }
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(605),
+                        alt: "image"
                       }
                     })
-                  ]),
-                  _vm._v(" "),
-                  _vm._l(_vm.allDrinks, function(drink) {
-                    return _c(
-                      "div",
-                      { staticClass: "col-12 col-sm-6 col-md-4" },
-                      [
-                        _c("div", { staticClass: "pull-left" }, [
-                          _c("i", { staticClass: "fa fa-tags" })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "searchable-container" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass: "btn-group bizmoduleselect",
-                              attrs: { "data-toggle": "buttons" }
-                            },
-                            [
-                              _c(
-                                "label",
-                                {
-                                  staticClass: "btn btn-secondary",
-                                  class: { active: drink.active },
-                                  on: {
-                                    click: function($event) {
-                                      drink.active = !drink.active
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("div", { staticClass: "bizcontent" }, [
-                                    _c("input", {
-                                      staticClass: "d-none",
-                                      attrs: {
-                                        type: "checkbox",
-                                        name: "var_id[]",
-                                        autocomplete: "off",
-                                        value: ""
-                                      },
-                                      on: {
-                                        click: function($event) {
-                                          $event.stopPropagation()
-                                          $event.preventDefault()
-                                        }
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c("i", {
-                                      staticClass: "fa",
-                                      class: { "fa-check": drink.active }
-                                    }),
-                                    _vm._v(" "),
-                                    _c("h5", [_vm._v(_vm._s(drink.name))])
-                                  ])
-                                ]
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    )
-                  })
-                ],
-                2
-              )
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='fa fa-fw ti-check-box'></i> Bootstrap Vue Checkboxes"
-              }
-            },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-12 col-lg-12" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Default Checkboxes")]),
-                      _vm._v(" "),
-                      _c("b-form-checkbox"),
-                      _vm._v(" "),
-                      _c("b-form-checkbox"),
-                      _vm._v(" "),
-                      _c("b-form-checkbox", {
-                        staticClass: "disabled",
-                        attrs: { disabled: true }
-                      })
-                    ],
-                    1
-                  )
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-12 col-lg-12" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Button Group checkbox")]),
-                      _vm._v(" "),
-                      _c("b-form-checkbox-group", {
-                        staticClass: "check_btn",
-                        attrs: {
-                          buttons: "",
-                          "button-variant": "success",
-                          name: "butons1",
-                          options: _vm.options_buttons
-                        },
-                        model: {
-                          value: _vm.selected,
-                          callback: function($$v) {
-                            _vm.selected = $$v
-                          },
-                          expression: "selected"
-                        }
-                      })
-                    ],
-                    1
-                  )
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(604),
+                        alt: "image"
+                      }
+                    })
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-12 col-lg-6" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Stacked Checkboxes")]),
-                      _vm._v(" "),
-                      _c("b-form-checkbox-group", {
-                        attrs: { stacked: "", options: _vm.options },
-                        model: {
-                          value: _vm.selected,
-                          callback: function($$v) {
-                            _vm.selected = $$v
-                          },
-                          expression: "selected"
-                        }
-                      })
-                    ],
-                    1
-                  )
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(672),
+                        alt: "image"
+                      }
+                    })
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "col-md-12 col-lg-6" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Stacked Button Group checkbox")]),
-                      _vm._v(" "),
-                      _c("b-form-checkbox-group", {
-                        attrs: {
-                          buttons: "",
-                          "button-variant": "primary",
-                          stacked: "",
-                          options: _vm.btn_stacked_options
-                        },
-                        model: {
-                          value: _vm.selected,
-                          callback: function($$v) {
-                            _vm.selected = $$v
-                          },
-                          expression: "selected"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-md-6" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='fa fa-fw ti-check'></i> Bootstrap Vue Radio Buttons"
-              }
-            },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-12 col-lg-12" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Default Radios")]),
-                      _vm._v(" "),
-                      _c("b-form-radio", {
-                        attrs: { value: "default1", name: "default" }
-                      }),
-                      _vm._v(" "),
-                      _c("b-form-radio", {
-                        attrs: { value: "default2", name: "default" }
-                      }),
-                      _vm._v(" "),
-                      _c("b-form-radio", {
-                        staticClass: "disabled",
-                        attrs: {
-                          value: "default3",
-                          name: "default",
-                          disabled: true
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-12 col-lg-12" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Radio Buttons")]),
-                      _vm._v(" "),
-                      _c("b-form-radio-group", {
-                        attrs: {
-                          id: "btnradios1",
-                          buttons: "",
-                          options: _vm.radio_options,
-                          name: "radiosBtnDefault",
-                          "button-variant": "success"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-12 col-lg-6" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Stacked Radios")]),
-                      _vm._v(" "),
-                      _c("b-form-radio-group", {
-                        attrs: {
-                          options: _vm.stacked_radio_options,
-                          stacked: "",
-                          name: "radiosStacked"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-12 col-lg-6" }, [
-                  _c(
-                    "div",
-                    { staticClass: "p-3" },
-                    [
-                      _c("h5", [_vm._v("Stacked Button Radios")]),
-                      _vm._v(" "),
-                      _c("b-form-radio-group", {
-                        attrs: {
-                          id: "btnradios3",
-                          buttons: "",
-                          stacked: "",
-                          options: _vm.btn_radio_stacked,
-                          name: "radioBtnStacked",
-                          "button-variant": "primary"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-12" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title:
-                  "<i class='fa fa-fw ti-arrow-circle-up'></i> Awesome Radio & Checkbox"
-              }
-            },
-            [
-              _c("div", { staticClass: "box-body" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-sm-6 awesomeradio_grid_sep" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-12 " }, [
-                        _c("h5", [_vm._v("Checkboxes")]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "row  text-left text-lg-right text-xl-left"
-                          },
-                          [
-                            _c("div", { staticClass: "col-6 col-sm-4" }, [
-                              _c(
-                                "div",
-                                { staticClass: "checkbox checkbox-default" },
-                                [
-                                  _c("input", {
-                                    staticClass: "styled styled1",
-                                    attrs: { id: "checkbox1", type: "checkbox" }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("label", { attrs: { for: "checkbox1" } }, [
-                                    _vm._v("Default")
-                                  ])
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-6 col-sm-4" }, [
-                              _c(
-                                "div",
-                                { staticClass: "checkbox checkbox-primary" },
-                                [
-                                  _c("input", {
-                                    staticClass: "styled styled1",
-                                    attrs: { id: "checkbox2", type: "checkbox" }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "label",
-                                    {
-                                      staticClass: "marginTop",
-                                      attrs: { for: "checkbox2" }
-                                    },
-                                    [_vm._v("Primary")]
-                                  )
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-6 col-sm-4" }, [
-                              _c(
-                                "div",
-                                { staticClass: "checkbox checkbox-success" },
-                                [
-                                  _c("input", {
-                                    staticClass: "styled styled1",
-                                    attrs: { id: "checkbox3", type: "checkbox" }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "label",
-                                    {
-                                      staticClass: "marginTop",
-                                      attrs: { for: "checkbox3" }
-                                    },
-                                    [_vm._v("Success")]
-                                  )
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "col-6 col-sm-4 col-lg-4" },
-                              [
-                                _c(
-                                  "div",
-                                  { staticClass: "checkbox checkbox-info" },
-                                  [
-                                    _c("input", {
-                                      staticClass: "styled styled1",
-                                      attrs: {
-                                        id: "checkbox4",
-                                        type: "checkbox"
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "checkbox4" } },
-                                      [_vm._v("Info   ")]
-                                    )
-                                  ]
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-6 col-sm-4 " }, [
-                              _c(
-                                "div",
-                                { staticClass: "checkbox checkbox-warning" },
-                                [
-                                  _c("input", {
-                                    staticClass: "styled styled1",
-                                    attrs: { id: "checkbox5", type: "checkbox" }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "label",
-                                    {
-                                      staticClass: "marginTop",
-                                      attrs: { for: "checkbox5" }
-                                    },
-                                    [_vm._v("Warning")]
-                                  )
-                                ]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-6 col-sm-4" }, [
-                              _c(
-                                "div",
-                                { staticClass: "checkbox checkbox-danger" },
-                                [
-                                  _c("input", {
-                                    staticClass: "styled styled1",
-                                    attrs: { id: "checkbox6", type: "checkbox" }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "label",
-                                    {
-                                      staticClass: "marginTop",
-                                      attrs: { for: "checkbox6" }
-                                    },
-                                    [_vm._v("Danger")]
-                                  )
-                                ]
-                              )
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-12" }, [
-                            _c("h5", [_vm._v("Inline checkboxes")]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "row  text-left text-lg-right text-xl-left"
-                              },
-                              [
-                                _c("div", { staticClass: "col-6 col-sm-4" }, [
-                                  _c("div", { staticClass: "checkbox " }, [
-                                    _c("input", {
-                                      staticClass: "styled",
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "inlineCheckbox1",
-                                        value: "option1"
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "inlineCheckbox1" } },
-                                      [_vm._v("Inline 1")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-6 col-sm-4" }, [
-                                  _c("div", { staticClass: "checkbox  " }, [
-                                    _c("input", {
-                                      staticClass: "styled",
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "inlineCheckbox2",
-                                        value: "option1"
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "inlineCheckbox2" } },
-                                      [_vm._v("Inline 2")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-6 col-sm-4" }, [
-                                  _c("div", { staticClass: "checkbox " }, [
-                                    _c("input", {
-                                      staticClass: "styled",
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "inlineCheckbox3",
-                                        value: "option1"
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "inlineCheckbox3" } },
-                                      [_vm._v("Inline 3")]
-                                    )
-                                  ])
-                                ])
-                              ]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-12" }, [
-                            _c("h5", [
-                              _vm._v(
-                                "\n                                            Disabled\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "inline-response" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: "col-6 col-sm-4" }, [
-                                  _c("div", { staticClass: "checkbox" }, [
-                                    _c("input", {
-                                      staticClass: "styled",
-                                      attrs: {
-                                        id: "checkbox9",
-                                        type: "checkbox",
-                                        disabled: ""
-                                      }
-                                    }),
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "checkbox9" } },
-                                      [_vm._v("Disabled")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-6 col-sm-4" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "checkbox checkbox-success "
-                                    },
-                                    [
-                                      _c("input", {
-                                        staticClass: "styled styled",
-                                        attrs: {
-                                          id: "checkbox10",
-                                          type: "checkbox",
-                                          disabled: "",
-                                          checked: "true"
-                                        }
-                                      }),
-                                      _c(
-                                        "label",
-                                        { attrs: { for: "checkbox10" } },
-                                        [_vm._v("This too")]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-6 col-sm-4" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "checkbox checkbox-warning checkbox-circle"
-                                    },
-                                    [
-                                      _c("input", {
-                                        staticClass: "styled",
-                                        attrs: {
-                                          id: "checkbox11",
-                                          type: "checkbox",
-                                          disabled: "",
-                                          checked: "true"
-                                        }
-                                      }),
-                                      _c(
-                                        "label",
-                                        { attrs: { for: "checkbox11" } },
-                                        [
-                                          _vm._v(
-                                            "And this\n                                                    "
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-6" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-12" }, [
-                        _c("h5", [_vm._v("Radios")]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c("div", { staticClass: "radio" }, [
-                              _c("input", {
-                                attrs: {
-                                  type: "radio",
-                                  name: "radio1",
-                                  id: "radio1",
-                                  value: "option1"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("label", { attrs: { for: "radio1" } }, [
-                                _vm._v("Small")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "radio" }, [
-                              _c("input", {
-                                attrs: {
-                                  type: "radio",
-                                  name: "radio1",
-                                  id: "radio2",
-                                  value: "option2"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("label", { attrs: { for: "radio2" } }, [
-                                _vm._v("Big")
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c("div", { staticClass: "radio radio-danger" }, [
-                              _c("input", {
-                                attrs: {
-                                  type: "radio",
-                                  name: "radio2",
-                                  id: "radio3",
-                                  value: "option1"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("label", { attrs: { for: "radio3" } }, [
-                                _vm._v("Next")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "radio radio-danger" }, [
-                              _c("input", {
-                                attrs: {
-                                  type: "radio",
-                                  name: "radio2",
-                                  id: "radio4",
-                                  value: "option2"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _c("label", { attrs: { for: "radio4" } }, [
-                                _vm._v("One")
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-md-12 mb-3" }, [
-                            _c("h5", [
-                              _vm._v(
-                                "\n                                            Disabled state\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "row" }, [
-                              _c("div", { staticClass: "col-md-6" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "radio radio-danger" },
-                                  [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "radio",
-                                        name: "radio3",
-                                        id: "radio5",
-                                        value: "option1",
-                                        disabled: ""
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c("label", { attrs: { for: "radio5" } }, [
-                                      _vm._v("Next")
-                                    ])
-                                  ]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "col-md-6" }, [
-                                _c("div", { staticClass: "radio" }, [
-                                  _c("input", {
-                                    attrs: {
-                                      type: "radio",
-                                      name: "radio3",
-                                      id: "radio6",
-                                      value: "option2",
-                                      checked: "true",
-                                      disabled: ""
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("label", { attrs: { for: "radio6" } }, [
-                                    _vm._v(
-                                      "\n                                                         One\n                                                    "
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-md-12 mb-3" }, [
-                            _c("h5", [_vm._v("Inline radios")]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "inline-response" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c("div", { staticClass: "col-md-6" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "radio radio-info radio-inline m-l-18"
-                                    },
-                                    [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "radio",
-                                          id: "inlineRadio1",
-                                          value: "option1",
-                                          name: "radioInline"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "label",
-                                        { attrs: { for: "inlineRadio1" } },
-                                        [_vm._v("  Inline One ")]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "col-md-6" }, [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "radio radio-inline m-l-18"
-                                    },
-                                    [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "radio",
-                                          id: "inlineRadio2",
-                                          value: "option2",
-                                          name: "radioInline"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "label",
-                                        { attrs: { for: "inlineRadio2" } },
-                                        [_vm._v("  Inline Two ")]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-md-12 mb-3" }, [
-                            _c("h5", [
-                              _vm._v(
-                                "\n                                            Radio As Checkboxes\n                                        "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "checkbox  checkbox-inline checkbox-default"
-                              },
-                              [
-                                _c("input", {
-                                  attrs: {
-                                    type: "radio",
-                                    name: "radio4",
-                                    id: "radio7",
-                                    value: "option1",
-                                    checked: "true"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("label", { attrs: { for: "radio7" } }, [
-                                  _vm._v(
-                                    "\n                                                 Default\n                                            "
-                                  )
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "checkbox  checkbox-inline checkbox-success"
-                              },
-                              [
-                                _c("input", {
-                                  attrs: {
-                                    type: "radio",
-                                    name: "radio4",
-                                    id: "radio8",
-                                    value: "option2"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("label", { attrs: { for: "radio8" } }, [
-                                  _c("span", [_vm._v("Success")])
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "checkbox  checkbox-inline checkbox-danger"
-                              },
-                              [
-                                _c("input", {
-                                  attrs: {
-                                    type: "radio",
-                                    name: "radio4",
-                                    id: "radio9",
-                                    value: "option3"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c("label", { attrs: { for: "radio9" } }, [
-                                  _vm._v(
-                                    "\n                                                 "
-                                  ),
-                                  _c("span", [_vm._v("Danger")])
-                                ])
-                              ]
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(616),
+                        alt: "image"
+                      }
+                    })
                   ])
                 ])
-              ])
-            ]
-          )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row", staticStyle: { "margin-top": "40px" } },
+              [
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(606),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(644),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(615),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(604),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row", staticStyle: { "margin-top": "40px" } },
+              [
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(672),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(604),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(606),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
+                        src: __webpack_require__(605),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ])
+              ]
+            )
+          ])
         ],
         1
       )
@@ -1905,28 +530,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1b0b4f71", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-48258a4e", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 447:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1411)
-  __webpack_require__(1414)
-  __webpack_require__(1416)
-  __webpack_require__(1418)
+  __webpack_require__(2063)
+  __webpack_require__(2065)
 }
-var normalizeComponent = __webpack_require__(42)
+var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1426)
+var __vue_script__ = __webpack_require__(2067)
 /* template */
-var __vue_template__ = __webpack_require__(1429)
+var __vue_template__ = __webpack_require__(2068)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1943,7 +566,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/radio_checkboxes.vue"
+Component.options.__file = "resources/components/pages/image_magnifier.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1952,9 +575,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1b0b4f71", Component.options)
+    hotAPI.createRecord("data-v-48258a4e", Component.options)
   } else {
-    hotAPI.reload("data-v-1b0b4f71", Component.options)
+    hotAPI.reload("data-v-48258a4e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1966,7 +589,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12338,19 +10961,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 530:
+/***/ 563:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(531)
+  __webpack_require__(564)
 }
-var normalizeComponent = __webpack_require__(42)
+var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(533)
+var __vue_script__ = __webpack_require__(566)
 /* template */
-var __vue_template__ = __webpack_require__(534)
+var __vue_template__ = __webpack_require__(567)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12390,17 +11013,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 531:
+/***/ 564:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(532);
+var content = __webpack_require__(565);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("d6b775a8", content, false, {});
+var update = __webpack_require__(27)("d6b775a8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -12417,10 +11040,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 565:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(18)(false);
 // imports
 
 
@@ -12432,7 +11055,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 533:
+/***/ 566:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12477,7 +11100,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 534:
+/***/ 567:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12539,24 +11162,67 @@ if (false) {
 
 /***/ }),
 
-/***/ 648:
+/***/ 604:
 /***/ (function(module, exports) {
 
-module.exports = "/images/input-disabled.png?bd5638b44911a17f2bf460b97e04225f";
+module.exports = "/images/8.jpg?ea2b6d40598c6861a574cdef28bee95e";
 
 /***/ }),
 
-/***/ 709:
+/***/ 605:
 /***/ (function(module, exports) {
 
-module.exports = "/images/input-unchecked.png?b96b35f79cf720e6e62fc6686cb1e12a";
+module.exports = "/images/29.jpg?dba7e72ffb341c2682464560c98b1788";
 
 /***/ }),
 
-/***/ 839:
+/***/ 606:
 /***/ (function(module, exports) {
 
-module.exports = "/images/input-checked.png?61f5683c6a4823b5eb8aad1d0ac61e9d";
+module.exports = "/images/30.jpg?2002855a1fb468b267975e83697f0eeb";
+
+/***/ }),
+
+/***/ 615:
+/***/ (function(module, exports) {
+
+module.exports = "/images/17.jpg?6d3cc3fd9122d4f52d698096733ec37b";
+
+/***/ }),
+
+/***/ 616:
+/***/ (function(module, exports) {
+
+module.exports = "/images/20.jpg?07b859bc73b54be32996cc610504505a";
+
+/***/ }),
+
+/***/ 643:
+/***/ (function(module, exports) {
+
+module.exports = "/images/24.jpg?9ab5a6f8d08b10ff992c033457ecde05";
+
+/***/ }),
+
+/***/ 644:
+/***/ (function(module, exports) {
+
+module.exports = "/images/32.jpg?1a676da167dfc017310a39f20f320476";
+
+/***/ }),
+
+/***/ 672:
+/***/ (function(module, exports) {
+
+module.exports = "/images/31.jpg?e53101bee6810dfb1ba9913040b36f2e";
+
+/***/ }),
+
+/***/ 745:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!function(e){"use strict";var t=function(e,t){this.init("magnify",e,t)};t.prototype={constructor:t,init:function(t,n,r){var i="mousemove",s="mouseleave";this.type=t;this.$element=e(n);this.options=this.getOptions(r);this.nativeWidth=0;this.nativeHeight=0;this.$element.wrap('<div class="magnify" >');this.$element.parent(".magnify").append('<div class="magnify-large" >');this.$element.siblings(".magnify-large").css("background","url('"+this.$element.attr("src")+"') no-repeat");this.$element.parent(".magnify").on(i+"."+this.type,e.proxy(this.check,this));this.$element.parent(".magnify").on(s+"."+this.type,e.proxy(this.check,this))},getOptions:function(t){t=e.extend({},e.fn[this.type].defaults,t,this.$element.data());t.delay&&typeof t.delay=="number"&&(t.delay={show:t.delay,hide:t.delay});return t},check:function(t){var n=e(t.currentTarget),r=n.children("img"),i=n.children(".magnify-large");if(!this.nativeWidth&&!this.nativeHeight){var s=new Image;s.src=r.attr("src");this.nativeWidth=s.width;this.nativeHeight=s.height}else{var o=n.offset(),u=t.pageX-o.left,a=t.pageY-o.top;u<n.width()&&a<n.height()&&u>0&&a>0?i.fadeIn(100):i.fadeOut(100);if(i.is(":visible")){var f=Math.round(u/n.width()*this.nativeWidth-i.width()/2)*-1,l=Math.round(a/n.height()*this.nativeHeight-i.height()/2)*-1,c=f+"px "+l+"px",h=u-i.width()/2,p=a-i.height()/2;i.css({left:h,top:p,backgroundPosition:c})}}}};e.fn.magnify=function(n){return this.each(function(){var r=e(this),i=r.data("magnify"),s=typeof n=="object"&&n;i||r.data("tooltip",i=new t(this,s));typeof n=="string"&&i[n]()})};e.fn.magnify.Constructor=t;e.fn.magnify.defaults={delay:0};e(window).on("load",function(){e('[data-toggle="magnify"]').each(function(){var t=e(this);t.magnify()})})}(__webpack_provided_window_dot_jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(561)))
 
 /***/ })
 

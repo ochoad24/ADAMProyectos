@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es_GT',
 
     /*
     |--------------------------------------------------------------------------
@@ -172,6 +172,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Laraveles\Spanish\SpanishServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,

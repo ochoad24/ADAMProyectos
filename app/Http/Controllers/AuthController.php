@@ -19,7 +19,8 @@ class AuthController extends Controller
     public function register(Request $request)
     {
         $v = Validator::make($request->all(), [
-            'name' => 'required|min:3',
+            'nombre' => 'required|min:3',
+            'apellido' => 'required|min:3',
             'email' => 'required|email|unique:users',
             'password'  => 'required|min:3|confirmed',
         ]);
@@ -31,9 +32,11 @@ class AuthController extends Controller
             ], 422);
         }
         $user = new User();
-        $user->name = $request->name;
+        $user->nombre = $request->nombre;
+        $user->apellido = $request->apellido;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
+        $user->role=$request->role;
         $user->save();
         return response()->json(['status' => 'success'], 200);
     }

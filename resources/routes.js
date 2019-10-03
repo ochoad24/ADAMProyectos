@@ -1193,40 +1193,6 @@ const routes = [{
             }
         },
         {
-            path: 'Roles',
-            component: resolve => require(['./components/pages/src/rol.vue'], resolve),
-            meta: {
-                title: 'Roles',
-                breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
-                    href: '#/',
-                }, {
-                    html: 'Usuarios',
-                    href: '#',
-                }, {
-                    html: 'Roles',
-                    href: '#/Roles'
-                }]
-            }
-        },
-        {
-            path: 'Permisos',
-            component: resolve => require(['./components/pages/src/permiso.vue'], resolve),
-            meta: {
-                title: 'Permisos',
-                breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
-                    href: '#/',
-                }, {
-                    html: 'Usuarios',
-                    href: '#',
-                }, {
-                    html: 'Permisos',
-                    href: '#/Permisos'
-                }]
-            }
-        },
-        {
             path: 'Usuarios',
             component: resolve => require(['./components/pages/src/usuario.vue'], resolve),
             meta: {

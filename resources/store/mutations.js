@@ -36,6 +36,11 @@ let mutations = {
     },
     changeProject(state,id){
         state.proyecto=id;
+    },
+    changeUser(state,Usuario){
+        state.user.name=Usuario.name;
+        state.user.job=Usuario.job;
+        state.user.role=Usuario.role;
     }
 }
 export default mutations
