@@ -1,22 +1,22 @@
 webpackJsonp([53],{
 
-/***/ 1530:
+/***/ 1585:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1531);
+var content = __webpack_require__(1586);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6a5646ee", content, false, {});
+var update = __webpack_require__(26)("4962c08f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweetalert2.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweetalert2.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1531:
+/***/ 1586:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,30 +35,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n@-webkit-keyframes swal2-show {\n0% {\n    transform: scale(0.7);\n}\n45% {\n    transform: scale(1.05);\n}\n80% {\n    transform: scale(0.95);\n}\n100% {\n    transform: scale(1);\n}\n}\n@keyframes swal2-show {\n0% {\n    transform: scale(0.7);\n}\n45% {\n    transform: scale(1.05);\n}\n80% {\n    transform: scale(0.95);\n}\n100% {\n    transform: scale(1);\n}\n}\n@-webkit-keyframes swal2-hide {\n0% {\n    transform: scale(1);\n    opacity: 1;\n}\n100% {\n    transform: scale(0.5);\n    opacity: 0;\n}\n}\n@keyframes swal2-hide {\n0% {\n    transform: scale(1);\n    opacity: 1;\n}\n100% {\n    transform: scale(0.5);\n    opacity: 0;\n}\n}\n@-webkit-keyframes swal2-animate-success-line-tip {\n0% {\n    top: 1.1875em;\n    left: 0.0625em;\n    width: 0;\n}\n54% {\n    top: 1.0625em;\n    left: 0.125em;\n    width: 0;\n}\n70% {\n    top: 2.1875em;\n    left: -0.375em;\n    width: 3.125em;\n}\n84% {\n    top: 3em;\n    left: 1.3125em;\n    width: 1.0625em;\n}\n100% {\n    top: 2.8125em;\n    left: 0.875em;\n    width: 1.5625em;\n}\n}\n@keyframes swal2-animate-success-line-tip {\n0% {\n    top: 1.1875em;\n    left: 0.0625em;\n    width: 0;\n}\n54% {\n    top: 1.0625em;\n    left: 0.125em;\n    width: 0;\n}\n70% {\n    top: 2.1875em;\n    left: -0.375em;\n    width: 3.125em;\n}\n84% {\n    top: 3em;\n    left: 1.3125em;\n    width: 1.0625em;\n}\n100% {\n    top: 2.8125em;\n    left: 0.875em;\n    width: 1.5625em;\n}\n}\n@-webkit-keyframes swal2-animate-success-line-long {\n0% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n}\n65% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n}\n84% {\n    top: 2.1875em;\n    right: 0;\n    width: 3.4375em;\n}\n100% {\n    top: 2.375em;\n    right: 0.5em;\n    width: 2.9375em;\n}\n}\n@keyframes swal2-animate-success-line-long {\n0% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n}\n65% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n}\n84% {\n    top: 2.1875em;\n    right: 0;\n    width: 3.4375em;\n}\n100% {\n    top: 2.375em;\n    right: 0.5em;\n    width: 2.9375em;\n}\n}\n@-webkit-keyframes swal2-rotate-success-circular-line {\n0% {\n    transform: rotate(-45deg);\n}\n5% {\n    transform: rotate(-45deg);\n}\n12% {\n    transform: rotate(-405deg);\n}\n100% {\n    transform: rotate(-405deg);\n}\n}\n@keyframes swal2-rotate-success-circular-line {\n0% {\n    transform: rotate(-45deg);\n}\n5% {\n    transform: rotate(-45deg);\n}\n12% {\n    transform: rotate(-405deg);\n}\n100% {\n    transform: rotate(-405deg);\n}\n}\n@-webkit-keyframes swal2-animate-error-x-mark {\n0% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n}\n50% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n}\n80% {\n    margin-top: -0.375em;\n    transform: scale(1.15);\n}\n100% {\n    margin-top: 0;\n    transform: scale(1);\n    opacity: 1;\n}\n}\n@keyframes swal2-animate-error-x-mark {\n0% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n}\n50% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n}\n80% {\n    margin-top: -0.375em;\n    transform: scale(1.15);\n}\n100% {\n    margin-top: 0;\n    transform: scale(1);\n    opacity: 1;\n}\n}\n@-webkit-keyframes swal2-animate-error-icon {\n0% {\n    transform: rotateX(100deg);\n    opacity: 0;\n}\n100% {\n    transform: rotateX(0deg);\n    opacity: 1;\n}\n}\n@keyframes swal2-animate-error-icon {\n0% {\n    transform: rotateX(100deg);\n    opacity: 0;\n}\n100% {\n    transform: rotateX(0deg);\n    opacity: 1;\n}\n}\nbody.swal2-toast-shown .swal2-container {\n  background-color: transparent;\n}\nbody.swal2-toast-shown .swal2-container.swal2-shown {\n  background-color: transparent;\n}\nbody.swal2-toast-shown .swal2-container.swal2-top {\n  top: 0;\n  right: auto;\n  bottom: auto;\n  left: 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .swal2-container.swal2-top-right {\n  top: 0;\n  right: 0;\n  bottom: auto;\n  left: auto;\n}\nbody.swal2-toast-shown .swal2-container.swal2-top-start, body.swal2-toast-shown .swal2-container.swal2-top-left {\n  top: 0;\n  right: auto;\n  bottom: auto;\n  left: 0;\n}\nbody.swal2-toast-shown .swal2-container.swal2-center-start, body.swal2-toast-shown .swal2-container.swal2-center-left {\n  top: 50%;\n  right: auto;\n  bottom: auto;\n  left: 0;\n  transform: translateY(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-center {\n  top: 50%;\n  right: auto;\n  bottom: auto;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-center-end, body.swal2-toast-shown .swal2-container.swal2-center-right {\n  top: 50%;\n  right: 0;\n  bottom: auto;\n  left: auto;\n  transform: translateY(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom-start, body.swal2-toast-shown .swal2-container.swal2-bottom-left {\n  top: auto;\n  right: auto;\n  bottom: 0;\n  left: 0;\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom {\n  top: auto;\n  right: auto;\n  bottom: 0;\n  left: 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown .swal2-container.swal2-bottom-right {\n  top: auto;\n  right: 0;\n  bottom: 0;\n  left: auto;\n}\nbody.swal2-toast-column .swal2-toast {\n  flex-direction: column;\n  align-items: stretch;\n}\nbody.swal2-toast-column .swal2-toast .swal2-actions {\n  flex: 1;\n  align-self: stretch;\n  height: 2.2em;\n  margin-top: 0.3125em;\n}\nbody.swal2-toast-column .swal2-toast .swal2-loading {\n  justify-content: center;\n}\nbody.swal2-toast-column .swal2-toast .swal2-input {\n  height: 2em;\n  margin: 0.3125em auto;\n  font-size: 1em;\n}\nbody.swal2-toast-column .swal2-toast .swal2-validation-message {\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast {\n  flex-direction: row;\n  align-items: center;\n  width: auto;\n  padding: 0.625em;\n  overflow-y: hidden;\n  box-shadow: 0 0 0.625em #d9d9d9;\n}\n.swal2-popup.swal2-toast .swal2-header {\n  flex-direction: row;\n}\n.swal2-popup.swal2-toast .swal2-title {\n  flex-grow: 1;\n  justify-content: flex-start;\n  margin: 0 0.6em;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-footer {\n  margin: 0.5em 0 0;\n  padding: 0.5em 0 0;\n  font-size: 0.8em;\n}\n.swal2-popup.swal2-toast .swal2-close {\n  position: static;\n  width: 0.8em;\n  height: 0.8em;\n  line-height: 0.8;\n}\n.swal2-popup.swal2-toast .swal2-content {\n  justify-content: flex-start;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-icon {\n  width: 2em;\n  min-width: 2em;\n  height: 2em;\n  margin: 0;\n}\n.swal2-popup.swal2-toast .swal2-icon::before {\n  display: flex;\n  align-items: center;\n  font-size: 2em;\n  font-weight: bold;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n.swal2-popup.swal2-toast .swal2-icon::before {\n    font-size: 0.25em;\n}\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {\n  width: 2em;\n  height: 2em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {\n  top: 0.875em;\n  width: 1.375em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {\n  left: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {\n  right: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-actions {\n  flex-basis: auto !important;\n  width: auto;\n  height: auto;\n  margin: 0 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-styled {\n  margin: 0 0.3125em;\n  padding: 0.3125em 0.625em;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-styled:focus {\n  box-shadow: 0 0 0 0.0625em #fff, 0 0 0 0.125em rgba(50, 100, 150, 0.4);\n}\n.swal2-popup.swal2-toast .swal2-success {\n  border-color: #a5dc86;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {\n  position: absolute;\n  width: 1.6em;\n  height: 3em;\n  transform: rotate(45deg);\n  border-radius: 50%;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {\n  top: -0.8em;\n  left: -0.5em;\n  transform: rotate(-45deg);\n  transform-origin: 2em 2em;\n  border-radius: 4em 0 0 4em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {\n  top: -0.25em;\n  left: 0.9375em;\n  transform-origin: 0 1.5em;\n  border-radius: 0 4em 4em 0;\n}\n.swal2-popup.swal2-toast .swal2-success .swal2-success-ring {\n  width: 2em;\n  height: 2em;\n}\n.swal2-popup.swal2-toast .swal2-success .swal2-success-fix {\n  top: 0;\n  left: 0.4375em;\n  width: 0.4375em;\n  height: 2.6875em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {\n  height: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {\n  top: 1.125em;\n  left: 0.1875em;\n  width: 0.75em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {\n  top: 0.9375em;\n  right: 0.1875em;\n  width: 1.375em;\n}\n.swal2-popup.swal2-toast.swal2-show {\n  -webkit-animation: swal2-toast-show 0.5s;\n          animation: swal2-toast-show 0.5s;\n}\n.swal2-popup.swal2-toast.swal2-hide {\n  -webkit-animation: swal2-toast-hide 0.1s forwards;\n          animation: swal2-toast-hide 0.1s forwards;\n}\n.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip {\n  -webkit-animation: swal2-toast-animate-success-line-tip 0.75s;\n          animation: swal2-toast-animate-success-line-tip 0.75s;\n}\n.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long {\n  -webkit-animation: swal2-toast-animate-success-line-long 0.75s;\n          animation: swal2-toast-animate-success-line-long 0.75s;\n}\n@-webkit-keyframes swal2-toast-show {\n0% {\n    transform: translateY(-0.625em) rotateZ(2deg);\n}\n33% {\n    transform: translateY(0) rotateZ(-2deg);\n}\n66% {\n    transform: translateY(0.3125em) rotateZ(2deg);\n}\n100% {\n    transform: translateY(0) rotateZ(0deg);\n}\n}\n@keyframes swal2-toast-show {\n0% {\n    transform: translateY(-0.625em) rotateZ(2deg);\n}\n33% {\n    transform: translateY(0) rotateZ(-2deg);\n}\n66% {\n    transform: translateY(0.3125em) rotateZ(2deg);\n}\n100% {\n    transform: translateY(0) rotateZ(0deg);\n}\n}\n@-webkit-keyframes swal2-toast-hide {\n100% {\n    transform: rotateZ(1deg);\n    opacity: 0;\n}\n}\n@keyframes swal2-toast-hide {\n100% {\n    transform: rotateZ(1deg);\n    opacity: 0;\n}\n}\n@-webkit-keyframes swal2-toast-animate-success-line-tip {\n0% {\n    top: 0.5625em;\n    left: 0.0625em;\n    width: 0;\n}\n54% {\n    top: 0.125em;\n    left: 0.125em;\n    width: 0;\n}\n70% {\n    top: 0.625em;\n    left: -0.25em;\n    width: 1.625em;\n}\n84% {\n    top: 1.0625em;\n    left: 0.75em;\n    width: 0.5em;\n}\n100% {\n    top: 1.125em;\n    left: 0.1875em;\n    width: 0.75em;\n}\n}\n@keyframes swal2-toast-animate-success-line-tip {\n0% {\n    top: 0.5625em;\n    left: 0.0625em;\n    width: 0;\n}\n54% {\n    top: 0.125em;\n    left: 0.125em;\n    width: 0;\n}\n70% {\n    top: 0.625em;\n    left: -0.25em;\n    width: 1.625em;\n}\n84% {\n    top: 1.0625em;\n    left: 0.75em;\n    width: 0.5em;\n}\n100% {\n    top: 1.125em;\n    left: 0.1875em;\n    width: 0.75em;\n}\n}\n@-webkit-keyframes swal2-toast-animate-success-line-long {\n0% {\n    top: 1.625em;\n    right: 1.375em;\n    width: 0;\n}\n65% {\n    top: 1.25em;\n    right: 0.9375em;\n    width: 0;\n}\n84% {\n    top: 0.9375em;\n    right: 0;\n    width: 1.125em;\n}\n100% {\n    top: 0.9375em;\n    right: 0.1875em;\n    width: 1.375em;\n}\n}\n@keyframes swal2-toast-animate-success-line-long {\n0% {\n    top: 1.625em;\n    right: 1.375em;\n    width: 0;\n}\n65% {\n    top: 1.25em;\n    right: 0.9375em;\n    width: 0;\n}\n84% {\n    top: 0.9375em;\n    right: 0;\n    width: 1.125em;\n}\n100% {\n    top: 0.9375em;\n    right: 0.1875em;\n    width: 1.375em;\n}\n}\nbody.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {\n  overflow: hidden;\n}\nbody.swal2-height-auto {\n  height: auto !important;\n}\nbody.swal2-no-backdrop .swal2-shown {\n  top: auto;\n  right: auto;\n  bottom: auto;\n  left: auto;\n  max-width: calc(100% - 0.625em * 2);\n  background-color: transparent;\n}\nbody.swal2-no-backdrop .swal2-shown > .swal2-modal {\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-top {\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-top-start, body.swal2-no-backdrop .swal2-shown.swal2-top-left {\n  top: 0;\n  left: 0;\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-top-end, body.swal2-no-backdrop .swal2-shown.swal2-top-right {\n  top: 0;\n  right: 0;\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-center {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-center-start, body.swal2-no-backdrop .swal2-shown.swal2-center-left {\n  top: 50%;\n  left: 0;\n  transform: translateY(-50%);\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-center-end, body.swal2-no-backdrop .swal2-shown.swal2-center-right {\n  top: 50%;\n  right: 0;\n  transform: translateY(-50%);\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-bottom {\n  bottom: 0;\n  left: 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-bottom-start, body.swal2-no-backdrop .swal2-shown.swal2-bottom-left {\n  bottom: 0;\n  left: 0;\n}\nbody.swal2-no-backdrop .swal2-shown.swal2-bottom-end, body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {\n  right: 0;\n  bottom: 0;\n}\n.swal2-container {\n  display: flex;\n  position: fixed;\n  z-index: 1060;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  padding: 0.625em;\n  overflow-x: hidden;\n  background-color: transparent;\n  -webkit-overflow-scrolling: touch;\n}\n.swal2-container.swal2-top {\n  align-items: flex-start;\n}\n.swal2-container.swal2-top-start, .swal2-container.swal2-top-left {\n  align-items: flex-start;\n  justify-content: flex-start;\n}\n.swal2-container.swal2-top-end, .swal2-container.swal2-top-right {\n  align-items: flex-start;\n  justify-content: flex-end;\n}\n.swal2-container.swal2-center {\n  align-items: center;\n}\n.swal2-container.swal2-center-start, .swal2-container.swal2-center-left {\n  align-items: center;\n  justify-content: flex-start;\n}\n.swal2-container.swal2-center-end, .swal2-container.swal2-center-right {\n  align-items: center;\n  justify-content: flex-end;\n}\n.swal2-container.swal2-bottom {\n  align-items: flex-end;\n}\n.swal2-container.swal2-bottom-start, .swal2-container.swal2-bottom-left {\n  align-items: flex-end;\n  justify-content: flex-start;\n}\n.swal2-container.swal2-bottom-end, .swal2-container.swal2-bottom-right {\n  align-items: flex-end;\n  justify-content: flex-end;\n}\n.swal2-container.swal2-bottom > :first-child, .swal2-container.swal2-bottom-start > :first-child, .swal2-container.swal2-bottom-left > :first-child, .swal2-container.swal2-bottom-end > :first-child, .swal2-container.swal2-bottom-right > :first-child {\n  margin-top: auto;\n}\n.swal2-container.swal2-grow-fullscreen > .swal2-modal {\n  display: flex !important;\n  flex: 1;\n  align-self: stretch;\n  justify-content: center;\n}\n.swal2-container.swal2-grow-row > .swal2-modal {\n  display: flex !important;\n  flex: 1;\n  align-content: center;\n  justify-content: center;\n}\n.swal2-container.swal2-grow-column {\n  flex: 1;\n  flex-direction: column;\n}\n.swal2-container.swal2-grow-column.swal2-top, .swal2-container.swal2-grow-column.swal2-center, .swal2-container.swal2-grow-column.swal2-bottom {\n  align-items: center;\n}\n.swal2-container.swal2-grow-column.swal2-top-start, .swal2-container.swal2-grow-column.swal2-center-start, .swal2-container.swal2-grow-column.swal2-bottom-start, .swal2-container.swal2-grow-column.swal2-top-left, .swal2-container.swal2-grow-column.swal2-center-left, .swal2-container.swal2-grow-column.swal2-bottom-left {\n  align-items: flex-start;\n}\n.swal2-container.swal2-grow-column.swal2-top-end, .swal2-container.swal2-grow-column.swal2-center-end, .swal2-container.swal2-grow-column.swal2-bottom-end, .swal2-container.swal2-grow-column.swal2-top-right, .swal2-container.swal2-grow-column.swal2-center-right, .swal2-container.swal2-grow-column.swal2-bottom-right {\n  align-items: flex-end;\n}\n.swal2-container.swal2-grow-column > .swal2-modal {\n  display: flex !important;\n  flex: 1;\n  align-content: center;\n  justify-content: center;\n}\n.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen) > .swal2-modal {\n  margin: auto;\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n.swal2-container .swal2-modal {\n    margin: 0 !important;\n}\n}\n.swal2-container.swal2-fade {\n  transition: background-color 0.1s;\n}\n.swal2-container.swal2-shown {\n  background-color: rgba(0, 0, 0, 0.4);\n}\n.swal2-popup {\n  display: none;\n  position: relative;\n  box-sizing: border-box;\n  flex-direction: column;\n  justify-content: center;\n  width: 32em;\n  max-width: 100%;\n  padding: 1.25em;\n  border: none;\n  border-radius: 0.3125em;\n  background: #fff;\n  font-family: inherit;\n  font-size: 1rem;\n}\n.swal2-popup:focus {\n  outline: none;\n}\n.swal2-popup.swal2-loading {\n  overflow-y: hidden;\n}\n.swal2-header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.swal2-title {\n  position: relative;\n  max-width: 100%;\n  margin: 0 0 0.4em;\n  padding: 0;\n  color: #595959;\n  font-size: 1.875em;\n  font-weight: 600;\n  text-align: center;\n  text-transform: none;\n  word-wrap: break-word;\n}\n.swal2-actions {\n  display: flex;\n  z-index: 1;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  margin: 1.25em auto 0;\n}\n.swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {\n  opacity: 0.4;\n}\n.swal2-actions:not(.swal2-loading) .swal2-styled:hover {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));\n}\n.swal2-actions:not(.swal2-loading) .swal2-styled:active {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));\n}\n.swal2-actions.swal2-loading .swal2-styled.swal2-confirm {\n  box-sizing: border-box;\n  width: 2.5em;\n  height: 2.5em;\n  margin: 0.46875em;\n  padding: 0;\n  -webkit-animation: swal2-rotate-loading 1.5s linear 0s infinite normal;\n          animation: swal2-rotate-loading 1.5s linear 0s infinite normal;\n  border: 0.25em solid transparent;\n  border-radius: 100%;\n  border-color: transparent;\n  background-color: transparent !important;\n  color: transparent;\n  cursor: default;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.swal2-actions.swal2-loading .swal2-styled.swal2-cancel {\n  margin-right: 30px;\n  margin-left: 30px;\n}\n.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after {\n  content: \"\";\n  display: inline-block;\n  width: 15px;\n  height: 15px;\n  margin-left: 5px;\n  -webkit-animation: swal2-rotate-loading 1.5s linear 0s infinite normal;\n          animation: swal2-rotate-loading 1.5s linear 0s infinite normal;\n  border: 3px solid #999999;\n  border-radius: 50%;\n  border-right-color: transparent;\n  box-shadow: 1px 1px 1px #fff;\n}\n.swal2-styled {\n  margin: 0.3125em;\n  padding: 0.625em 2em;\n  box-shadow: none;\n  font-weight: 500;\n}\n.swal2-styled:not([disabled]) {\n  cursor: pointer;\n}\n.swal2-styled.swal2-confirm {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #3085d6;\n  color: #fff;\n  font-size: 1.0625em;\n}\n.swal2-styled.swal2-cancel {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #aaa;\n  color: #fff;\n  font-size: 1.0625em;\n}\n.swal2-styled:focus {\n  outline: none;\n  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(50, 100, 150, 0.4);\n}\n.swal2-styled::-moz-focus-inner {\n  border: 0;\n}\n.swal2-footer {\n  justify-content: center;\n  margin: 1.25em 0 0;\n  padding: 1em 0 0;\n  border-top: 1px solid #eee;\n  color: #545454;\n  font-size: 1em;\n}\n.swal2-image {\n  max-width: 100%;\n  margin: 1.25em auto;\n}\n.swal2-close {\n  position: absolute;\n  z-index: 2;\n  /* 1617 */\n  top: 0;\n  right: 0;\n  justify-content: center;\n  width: 1.2em;\n  height: 1.2em;\n  padding: 0;\n  overflow: hidden;\n  transition: color 0.1s ease-out;\n  border: none;\n  border-radius: 0;\n  outline: initial;\n  background: transparent;\n  color: #cccccc;\n  font-family: serif;\n  font-size: 2.5em;\n  line-height: 1.2;\n  cursor: pointer;\n}\n.swal2-close:hover {\n  transform: none;\n  background: transparent;\n  color: #f27474;\n}\n.swal2-content {\n  z-index: 1;\n  justify-content: center;\n  margin: 0;\n  padding: 0;\n  color: #545454;\n  font-size: 1.125em;\n  font-weight: normal;\n  line-height: normal;\n  text-align: center;\n  word-wrap: break-word;\n}\n.swal2-input,\n.swal2-file,\n.swal2-textarea,\n.swal2-select,\n.swal2-radio,\n.swal2-checkbox {\n  margin: 1em auto;\n}\n.swal2-input,\n.swal2-file,\n.swal2-textarea {\n  box-sizing: border-box;\n  width: 100%;\n  transition: border-color 0.3s, box-shadow 0.3s;\n  border: 1px solid #d9d9d9;\n  border-radius: 0.1875em;\n  background: inherit;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);\n  color: inherit;\n  font-size: 1.125em;\n}\n.swal2-input.swal2-inputerror,\n.swal2-file.swal2-inputerror,\n.swal2-textarea.swal2-inputerror {\n  border-color: #f27474 !important;\n  box-shadow: 0 0 2px #f27474 !important;\n}\n.swal2-input:focus,\n.swal2-file:focus,\n.swal2-textarea:focus {\n  border: 1px solid #b4dbed;\n  outline: none;\n  box-shadow: 0 0 3px #c4e6f5;\n}\n.swal2-input::-webkit-input-placeholder,\n.swal2-file::-webkit-input-placeholder,\n.swal2-textarea::-webkit-input-placeholder {\n  color: #cccccc;\n}\n.swal2-input::-moz-placeholder,\n.swal2-file::-moz-placeholder,\n.swal2-textarea::-moz-placeholder {\n  color: #cccccc;\n}\n.swal2-input:-ms-input-placeholder,\n.swal2-file:-ms-input-placeholder,\n.swal2-textarea:-ms-input-placeholder {\n  color: #cccccc;\n}\n.swal2-input::-ms-input-placeholder,\n.swal2-file::-ms-input-placeholder,\n.swal2-textarea::-ms-input-placeholder {\n  color: #cccccc;\n}\n.swal2-input::placeholder,\n.swal2-file::placeholder,\n.swal2-textarea::placeholder {\n  color: #cccccc;\n}\n.swal2-range {\n  margin: 1em auto;\n  background: inherit;\n}\n.swal2-range input {\n  width: 80%;\n}\n.swal2-range output {\n  width: 20%;\n  color: inherit;\n  font-weight: 600;\n  text-align: center;\n}\n.swal2-range input,\n.swal2-range output {\n  height: 2.625em;\n  padding: 0;\n  font-size: 1.125em;\n  line-height: 2.625em;\n}\n.swal2-input {\n  height: 2.625em;\n  padding: 0 0.75em;\n}\n.swal2-input[type=number] {\n  max-width: 10em;\n}\n.swal2-file {\n  background: inherit;\n  font-size: 1.125em;\n}\n.swal2-textarea {\n  height: 6.75em;\n  padding: 0.75em;\n}\n.swal2-select {\n  min-width: 50%;\n  max-width: 100%;\n  padding: 0.375em 0.625em;\n  background: inherit;\n  color: inherit;\n  font-size: 1.125em;\n}\n.swal2-radio,\n.swal2-checkbox {\n  align-items: center;\n  justify-content: center;\n  background: inherit;\n  color: inherit;\n}\n.swal2-radio label,\n.swal2-checkbox label {\n  margin: 0 0.6em;\n  font-size: 1.125em;\n}\n.swal2-radio input,\n.swal2-checkbox input {\n  margin: 0 0.4em;\n}\n.swal2-validation-message {\n  display: none;\n  align-items: center;\n  justify-content: center;\n  padding: 0.625em;\n  overflow: hidden;\n  background: #f0f0f0;\n  color: #666666;\n  font-size: 1em;\n  font-weight: 300;\n}\n.swal2-validation-message::before {\n  content: \"!\";\n  display: inline-block;\n  width: 1.5em;\n  min-width: 1.5em;\n  height: 1.5em;\n  margin: 0 0.625em;\n  zoom: normal;\n  border-radius: 50%;\n  background-color: #f27474;\n  color: #fff;\n  font-weight: 600;\n  line-height: 1.5em;\n  text-align: center;\n}\n@supports (-ms-accelerator: true) {\n.swal2-range input {\n    width: 100% !important;\n}\n.swal2-range output {\n    display: none;\n}\n}\n@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {\n.swal2-range input {\n    width: 100% !important;\n}\n.swal2-range output {\n    display: none;\n}\n}\n@-moz-document url-prefix() {\n.swal2-close:focus {\n    outline: 2px solid rgba(50, 100, 150, 0.4);\n}\n}\n.swal2-icon {\n  position: relative;\n  box-sizing: content-box;\n  justify-content: center;\n  width: 5em;\n  height: 5em;\n  margin: 1.25em auto 1.875em;\n  zoom: normal;\n  border: 0.25em solid transparent;\n  border-radius: 50%;\n  font-family: inherit;\n  line-height: 5em;\n  cursor: default;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.swal2-icon::before {\n  display: flex;\n  align-items: center;\n  height: 92%;\n  font-size: 3.75em;\n}\n.swal2-icon.swal2-error {\n  border-color: #f27474;\n}\n.swal2-icon.swal2-error .swal2-x-mark {\n  position: relative;\n  flex-grow: 1;\n}\n.swal2-icon.swal2-error [class^=swal2-x-mark-line] {\n  display: block;\n  position: absolute;\n  top: 2.3125em;\n  width: 2.9375em;\n  height: 0.3125em;\n  border-radius: 0.125em;\n  background-color: #f27474;\n}\n.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {\n  left: 1.0625em;\n  transform: rotate(45deg);\n}\n.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {\n  right: 1em;\n  transform: rotate(-45deg);\n}\n.swal2-icon.swal2-warning {\n  border-color: #facea8;\n  color: #f8bb86;\n}\n.swal2-icon.swal2-warning::before {\n  content: \"!\";\n}\n.swal2-icon.swal2-info {\n  border-color: #9de0f6;\n  color: #3fc3ee;\n}\n.swal2-icon.swal2-info::before {\n  content: \"i\";\n}\n.swal2-icon.swal2-question {\n  border-color: #c9dae1;\n  color: #87adbd;\n}\n.swal2-icon.swal2-question::before {\n  content: \"?\";\n}\n.swal2-icon.swal2-question.swal2-arabic-question-mark::before {\n  content: \"\\61F\";\n}\n.swal2-icon.swal2-success {\n  border-color: #a5dc86;\n}\n.swal2-icon.swal2-success [class^=swal2-success-circular-line] {\n  position: absolute;\n  width: 3.75em;\n  height: 7.5em;\n  transform: rotate(45deg);\n  border-radius: 50%;\n}\n.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {\n  top: -0.4375em;\n  left: -2.0635em;\n  transform: rotate(-45deg);\n  transform-origin: 3.75em 3.75em;\n  border-radius: 7.5em 0 0 7.5em;\n}\n.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {\n  top: -0.6875em;\n  left: 1.875em;\n  transform: rotate(-45deg);\n  transform-origin: 0 3.75em;\n  border-radius: 0 7.5em 7.5em 0;\n}\n.swal2-icon.swal2-success .swal2-success-ring {\n  position: absolute;\n  z-index: 2;\n  top: -0.25em;\n  left: -0.25em;\n  box-sizing: content-box;\n  width: 100%;\n  height: 100%;\n  border: 0.25em solid rgba(165, 220, 134, 0.3);\n  border-radius: 50%;\n}\n.swal2-icon.swal2-success .swal2-success-fix {\n  position: absolute;\n  z-index: 1;\n  top: 0.5em;\n  left: 1.625em;\n  width: 0.4375em;\n  height: 5.625em;\n  transform: rotate(-45deg);\n}\n.swal2-icon.swal2-success [class^=swal2-success-line] {\n  display: block;\n  position: absolute;\n  z-index: 2;\n  height: 0.3125em;\n  border-radius: 0.125em;\n  background-color: #a5dc86;\n}\n.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip] {\n  top: 2.875em;\n  left: 0.875em;\n  width: 1.5625em;\n  transform: rotate(45deg);\n}\n.swal2-icon.swal2-success [class^=swal2-success-line][class$=long] {\n  top: 2.375em;\n  right: 0.5em;\n  width: 2.9375em;\n  transform: rotate(-45deg);\n}\n.swal2-progress-steps {\n  align-items: center;\n  margin: 0 0 1.25em;\n  padding: 0;\n  background: inherit;\n  font-weight: 600;\n}\n.swal2-progress-steps li {\n  display: inline-block;\n  position: relative;\n}\n.swal2-progress-steps .swal2-progress-step {\n  z-index: 20;\n  width: 2em;\n  height: 2em;\n  border-radius: 2em;\n  background: #3085d6;\n  color: #fff;\n  line-height: 2em;\n  text-align: center;\n}\n.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {\n  background: #3085d6;\n}\n.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {\n  background: #add8e6;\n  color: #fff;\n}\n.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {\n  background: #add8e6;\n}\n.swal2-progress-steps .swal2-progress-step-line {\n  z-index: 10;\n  width: 2.5em;\n  height: 0.4em;\n  margin: 0 -1px;\n  background: #3085d6;\n}\n[class^=swal2] {\n  -webkit-tap-highlight-color: transparent;\n}\n.swal2-show {\n  -webkit-animation: swal2-show 0.3s;\n          animation: swal2-show 0.3s;\n}\n.swal2-show.swal2-noanimation {\n  -webkit-animation: none;\n          animation: none;\n}\n.swal2-hide {\n  -webkit-animation: swal2-hide 0.15s forwards;\n          animation: swal2-hide 0.15s forwards;\n}\n.swal2-hide.swal2-noanimation {\n  -webkit-animation: none;\n          animation: none;\n}\n.swal2-rtl .swal2-close {\n  right: auto;\n  left: 0;\n}\n.swal2-animate-success-icon .swal2-success-line-tip {\n  -webkit-animation: swal2-animate-success-line-tip 0.75s;\n          animation: swal2-animate-success-line-tip 0.75s;\n}\n.swal2-animate-success-icon .swal2-success-line-long {\n  -webkit-animation: swal2-animate-success-line-long 0.75s;\n          animation: swal2-animate-success-line-long 0.75s;\n}\n.swal2-animate-success-icon .swal2-success-circular-line-right {\n  -webkit-animation: swal2-rotate-success-circular-line 4.25s ease-in;\n          animation: swal2-rotate-success-circular-line 4.25s ease-in;\n}\n.swal2-animate-error-icon {\n  -webkit-animation: swal2-animate-error-icon 0.5s;\n          animation: swal2-animate-error-icon 0.5s;\n}\n.swal2-animate-error-icon .swal2-x-mark {\n  -webkit-animation: swal2-animate-error-x-mark 0.5s;\n          animation: swal2-animate-error-x-mark 0.5s;\n}\n@-webkit-keyframes swal2-rotate-loading {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}\n@keyframes swal2-rotate-loading {\n0% {\n    transform: rotate(0deg);\n}\n100% {\n    transform: rotate(360deg);\n}\n}\n@media print {\nbody.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {\n    overflow-y: scroll !important;\n}\nbody.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) > [aria-hidden=true] {\n    display: none;\n}\nbody.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {\n    position: static !important;\n}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1532:
+/***/ 1587:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1533);
+var content = __webpack_require__(1588);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("4a04624a", content, false, {});
+var update = __webpack_require__(26)("0ac92dbe", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./fontawesome_icons.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a7f2703\",\"scoped\":false,\"hasInlineConfig\":true}!./fontawesome_icons.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweet_alert2.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-66b6d801\",\"scoped\":false,\"hasInlineConfig\":true}!./sweet_alert2.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1533:
+/***/ 1588:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,1880 +77,22 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.fa-icon {\n    text-align: center;\n    padding: 20px 0;\n    margin: 10px 0;\n    height: 89px;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.fa-icon:hover {\n    background-color: #dcdcdc;\n    padding: 15px 0;\n    transition: all .2s linear;\n    -o-transition: all .2s linear;\n    -moz-transition: all .2s linear;\n    -webkit-transition: all .2s linear;\n}\n.fa-icon:hover i {\n    font-size: 30px;\n}\n.fa-icon:hover .text-muted {\n    color: #888;\n}\n.fa-icon i {\n    font-size: 24px;\n    color: #428bca;\n    margin-bottom: 10px;\n}\ninput[type=\"range\"] {\n    cursor: pointer;\n}\n.input-group {\n    width: 100%;\n    margin-bottom: 10px;\n}\n.input-group-addon.icon-sizeshow {\n    border: none;\n    background-color: transparent;\n}\n.input-group input[type=\"range\"] {\n    border: none;\n    box-shadow: none;\n}\n#icon-search {\n    border-radius: 17px !important;\n}\nform {\n    text-align: center;\n    padding: 10px;\n}\n.iconoption_toggle {\n    border-radius: 5px 0 0 5px;\n    border: 1px solid rgba(0, 0, 0, 0.298039);\n    border-right: none;\n    position: fixed;\n    top: 188px;\n    right: 0;\n    background-color: rgba(238, 238, 238, 0.4);\n    padding: 7px;\n    z-index: 999998;\n    cursor: pointer;\n}\n.iconoption_toggle i {\n    color: rgb(119, 119, 119);\n    font-size: 20px;\n}\n.right_175 {\n    right: 175px;\n}\n.iconoptions {\n    position: fixed;\n    padding: 6px;\n    height: 240px;\n    width: 175px;\n    background-color: #fff;\n    z-index: 9999999;\n    top: 100px;\n    right: -175px;\n    border: 2px solid #428bca;\n}\n.right_0 {\n    right: 0;\n}\n.iconoptions > button {\n    border: none;\n    border-radius: 4px;\n    margin-top: 10px;\n    display: block;\n}\n.iconoptions .active,\n.iconoptions .active:focus,\n.iconoptions .active:hover {\n    background-color: #ffb65f !important;\n}\n", ""]);
+exports.push([module.i, "\n.m-a-10 {\n    margin : 40px;\n}\n.swal2-modal h2 {\n    font-weight : 500;\n    line-height : 50px;\n}\n.swal2-container.in {\n    z-index : 10009;\n}\n.swal2-modal .swal2-content {\n    font-size : 13px;\n}\n.swal2-cancel {\n    background-color : #ff6666 !important;\n    font-size        : 14px !important;\n    margin-bottom    : 5px !important;\n}\n.swal2-modal {\n    background-color : #fff;\n    font-family      : \"Open Sans\", \"sans-serif\";\n    border-radius    : 0;\n}\n#swal2-checkbox {\n    margin : 0 5px 0;\n}\n/* Sweep To Right */\n.hvr-sweep-to-right {\n    display                     : inline-block;\n    vertical-align              : middle;\n    -webkit-transform           : translateZ(0);\n    transform                   : translateZ(0);\n    box-shadow                  : 0 0 1px rgba(0, 0, 0, 0);\n    -webkit-backface-visibility : hidden;\n    backface-visibility         : hidden;\n    -moz-osx-font-smoothing     : grayscale;\n    position                    : relative;\n    -webkit-transition-property : color;\n    transition-property         : color;\n    -webkit-transition-duration : 0.3s;\n    transition-duration         : 0.3s;\n    width                       : 100%;\n}\n.hvr-sweep-to-right:before {\n    content                            : \"\";\n    position                           : absolute;\n    z-index                            : -1;\n    top                                : 0;\n    left                               : 0;\n    right                              : 0;\n    bottom                             : 0;\n    background                         : #6699cc;\n    -webkit-transform                  : scaleX(0);\n    transform                          : scaleX(0);\n    -webkit-transform-origin           : 0 50%;\n    transform-origin                   : 0 50%;\n    -webkit-transition-property        : transform;\n    transition-property                : transform;\n    -webkit-transition-duration        : 0.3s;\n    transition-duration                : 0.3s;\n    -webkit-transition-timing-function : ease-out;\n    transition-timing-function         : ease-out;\n}\n.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {\n    color  : #ffffff;\n    cursor : pointer;\n}\n.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {\n    -webkit-transform : scaleX(1);\n    transform         : scaleX(1);\n}\n.swal2-confirm {\n    font-size     : 14px !important;\n    margin-bottom : 5px !important;\n}\n.btn-success {\n    border-left-color  : #66cc99 !important;\n    border-right-color : #66cc99 !important;\n    background-color   : #66cc99 !important;\n}\n.btn-primary {\n    border-left-color  : #6699cc !important;\n    border-right-color : #6699cc !important;\n    background-color   : #6699cc !important;\n}\n.btn-warning {\n    border-left-color  : #f0ad4e !important;\n    border-right-color : #f0ad4e !important;\n    background-color   : #f0ad4e !important;\n}\n.btn-info {\n    border-left-color  : #66ccff !important;\n    border-right-color : #66ccff !important;\n    background-color   : #66ccff !important;\n}\n.btn-danger {\n    border-left-color  : #ff6666 !important;\n    border-right-color : #ff6666 !important;\n    background-color   : #ff6666 !important;\n}\n.swal2-container.fade{\n    opacity: 1 !important;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1534:
+/***/ 1589:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(jQuery, $) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(589);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__ = __webpack_require__(705);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__);
 //
 //
 //
@@ -2061,4448 +203,463 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "fontawesome_icons",
+    name: "sweet_alert",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    mounted: function mounted() {
-        "use strict";
-
-        jQuery.fn.outerHTML = function () {
-            return jQuery('<div />').append(this.eq(0).clone()).html();
-        };
-        $(document).ready(function () {
-
-            $(".fa-icon").each(function () {
-                $(this).find("i").after("<br />");
+    methods: {
+        basicalert: function basicalert(e) {
+            e.preventDefault();
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                confirmButtonColor: "#ff6666"
             });
-            $(".iconoptions button").on("click", function () {
-                if (!$(this).hasClass("active")) {
-                    __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.info('Changes Made, Hover on any icon to see effect');
+        },
+        success_alert: function success_alert(e) {
+            e.preventDefault();
+            swal({
+                title: "Success",
+                text: "You have successfully clicked",
+                type: "success",
+                confirmButtonColor: "#66cc99"
+            });
+        },
+        ok_message: function ok_message(e) {
+            swal({
+                title: 'Are you sure?',
+                text: "You will not be able to recover this imaginary file!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#66cc99',
+                cancelButtonColor: '#ff6666',
+                confirmButtonText: 'Yes, delete it!',
+                cancelButtonText: 'No, cancel!',
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger'
+            }).then(function () {
+                swal('Deleted!', 'Your file has been deleted.', 'success');
+            }, function (dismiss) {
+                // dismiss can be 'cancel', 'overlay',
+                // 'close', and 'timer'
+                if (dismiss === 'cancel') {
+                    swal('Cancelled', 'Your imaginary file is safe :)', 'error');
                 }
-                $(".iconoptions").find(".active").removeClass("active");
-                $(this).addClass("active");
             });
-            $(".fa-icon").hover(function () {
-                if ($(".iconoptions").find('.active').attr("data-faclass") != undefined) {
-                    $(this).find("i").toggleClass($(".iconoptions .active").attr("data-faclass"));
+        },
+        custom_icon: function custom_icon(e) {
+            e.preventDefault();
+            swal({
+                title: "Sweet!",
+                text: "Here's a custom image.",
+                imageUrl: __webpack_require__(567),
+                imageWidth: 100,
+                imageHeight: 100,
+                animation: false
+            });
+        },
+        custom_html: function custom_html(e) {
+            e.preventDefault();
+            swal({
+                title: "HTML Title!",
+                text: 'A custom <span style="color:#F8BB86">html<span> message.',
+                html: true
+            });
+        },
+        auto_close: function auto_close(e) {
+            e.preventDefault();
+            swal({
+                title: "Auto close alert!",
+                text: "I will close in 3 seconds.",
+                timer: 3000,
+                showConfirmButton: false
+            });
+        },
+        prom_alert: function prom_alert(e) {
+            swal({
+                title: 'Input something',
+                input: 'text',
+                showCancelButton: true,
+                inputPlaceholder: 'write something!',
+                inputValidator: function inputValidator(value) {
+                    return new Promise(function (resolve, reject) {
+                        if (value) {
+                            resolve();
+                        } else {
+                            reject('You need to write something!');
+                        }
+                    });
                 }
-            }).on("click", function () {
-                var x = $(this).find("i").outerHTML();
-                copyTextToClipboard(x);
-            });
-            $('#icon-search').on("input", function () {
-                $(".fa-icon").each(function () {
-                    var regex = new RegExp($("#icon-search").val().trim().toLowerCase());
-                    var x = $(this).clone().children().remove().end().text();
-                    var res = x.match(regex, "i");
-                    if (res == null) {
-                        $(this).hide();
-                    } else {
-                        $(this).show();
-                    }
+            }).then(function (result) {
+                swal({
+                    type: 'success',
+                    html: 'You entered text is: ' + result
                 });
             });
-            var icon_size = $("#icon-size");
-            icon_size.on("input", function () {
-                var x = parseInt(icon_size.val()) + parseInt(6);
-                $(".fontnormal").html(".fa-icon i{font-size:" + icon_size.val() + "px;}.fa-icon:hover i{font-size:" + x + "px;}");
-                $(".icon-sizeshow").text(icon_size.val() + "px");
+        },
+        ip_alert: function ip_alert(e) {
+            swal.queue([{
+                title: 'Your IP Address',
+                confirmButtonText: 'Show my IP',
+                text: 'Your public IP will be received ' + 'via  request',
+                showLoaderOnConfirm: true,
+                preConfirm: function preConfirm() {
+                    return new Promise(function (resolve) {
+                        $.get('https://api.ipify.org?format=json').done(function (data) {
+                            swal.insertQueueStep(data.ip);
+                            resolve();
+                        });
+                    });
+                }
+            }]).then(function () {
+                swal('Good job!', 'Successfully checked your Ip', 'success');
             });
-            $("head").append("<style class='fontnormal'></style>");
-        });
-
-        function copyTextToClipboard(text) {
-            var textArea = document.createElement("textarea");
-            textArea.value = text;
-            document.body.appendChild(textArea).select();
-            var successful = document.execCommand('copy');
-            document.body.removeChild(textArea);
-            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.success('Element Copied to Clipboard. Now you can use it anywhere.');
+        },
+        info_alert: function info_alert(e) {
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "info",
+                confirmButtonClass: 'btn btn-info',
+                confirmButtonText: 'Info!'
+            });
+        },
+        success_alert_two: function success_alert_two(e) {
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "success",
+                confirmButtonClass: 'btn btn-success',
+                confirmButtonText: 'Success!'
+            });
+        },
+        warning_alert: function warning_alert(e) {
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "warning",
+                confirmButtonClass: 'btn btn-warning',
+                confirmButtonText: 'Warning!'
+            });
+        },
+        danger_alert: function danger_alert(e) {
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "error",
+                confirmButtonClass: 'btn btn-danger',
+                confirmButtonText: 'Danger!'
+            });
         }
-        $(".iconoption_toggle").on("click", function () {
-            $(this).toggleClass("right_175");
-            $(this).find("i").toggleClass("fa-flip-horizontal");
-            $(".iconoptions").toggleClass("right_0");
-        });
     },
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528), __webpack_require__(528)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(529)))
 
 /***/ }),
 
-/***/ 1535:
+/***/ 1590:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    { staticClass: "content" },
-    [
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
       _c(
-        "card",
-        { attrs: { title: "<i class='fa fa-fw ti-ink-pen'></i> Font Icons" } },
+        "div",
+        { staticClass: "col-md-12" },
         [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("section", { attrs: { id: "web-application" } }, [
-                _c("div", { staticClass: "iconoption_toggle" }, [
-                  _c("i", {
-                    staticClass: "fa fa-fw fa-fighter-jet fa-flip-horizontal"
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "iconoptions text-center" }, [
-                  _c(
-                    "button",
-                    { staticClass: "active btn btn-info btn-block" },
-                    [_vm._v("No Options")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-block",
-                      attrs: { "data-faclass": "fa-spin" }
-                    },
-                    [_vm._v("Spin")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-block",
-                      attrs: { "data-faclass": "fa-flip-horizontal" }
-                    },
-                    [
-                      _vm._v(
-                        "Flip\n                            Horizontally\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-block",
-                      attrs: { "data-faclass": "fa-flip-vertical" }
-                    },
-                    [
-                      _vm._v(
-                        "Flip\n                            Vertically\n                        "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("h4", [_vm._v("Rotate")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "btn-group" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "" }
-                      },
-                      [_vm._v("0")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "fa-rotate-90" }
-                      },
-                      [_vm._v("90")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "fa-rotate-180" }
-                      },
-                      [_vm._v("180")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-info btn-sm",
-                        attrs: { "data-faclass": "fa-rotate-270" }
-                      },
-                      [_vm._v("270")]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
+          _c(
+            "card",
+            {
+              attrs: {
+                title:
+                  " <i class='ti-bell' aria-hidden='true'></i> Sweet Alerts"
+              }
+            },
+            [
+              _c("div", { staticClass: "row m-a-10" }, [
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
                   _c(
                     "div",
-                    { staticClass: "col-md-6 col-md-offset-3 m-auto" },
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
                     [
-                      _c("form", { attrs: { role: "form" } }, [
-                        _c("div", { staticClass: "input-group" }, [
-                          _c(
-                            "label",
-                            {
-                              staticClass: "sr-only",
-                              attrs: { for: "icon-search" }
-                            },
-                            [_vm._v("Search")]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              name: "icon-search",
-                              id: "icon-search",
-                              placeholder: "Search Icon"
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group" }, [
-                          _c(
-                            "label",
-                            {
-                              staticClass: "sr-only",
-                              attrs: { for: "icon-size" }
-                            },
-                            [_vm._v("Size")]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "range",
-                              name: "icon-size",
-                              id: "icon-size",
-                              min: "24",
-                              max: "40",
-                              value: "24"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "span",
-                            { staticClass: "input-group-addon icon-sizeshow" },
-                            [_vm._v("24px")]
-                          )
-                        ])
-                      ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body success_alert text-center",
+                          on: { click: _vm.success_alert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Success Alert "),
+                            _c("i", { staticClass: "fa fa-check-circle-o" })
+                          ])
+                        ]
+                      )
                     ]
                   )
                 ]),
                 _vm._v(" "),
-                _c("h4", { staticClass: "text-center" }, [
-                  _vm._v("Click on any icon to copy its code to clipboard.")
-                ]),
-                _vm._v(" "),
-                _c("h4", { staticClass: "page-header" }, [
-                  _vm._v(
-                    "\n                        Web Application Icons\n                    "
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body ok_message text-center",
+                          on: { click: _vm.ok_message }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Ok Message "),
+                            _c("i", { staticClass: "fa fa-thumbs-o-up" })
+                          ])
+                        ]
+                      )
+                    ]
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-adjust" }),
-                    _vm._v(" fa-adjust\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-anchor" }),
-                    _vm._v(" fa-anchor\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-archive" }),
-                    _vm._v(" fa-archive\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-arrows" }),
-                    _vm._v(" fa-arrows\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-arrows-h" }),
-                    _vm._v(" fa-arrows-h\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-arrows-v" }),
-                    _vm._v(" fa-arrows-v\n                        ")
-                  ])
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body basicalert text-center ",
+                          on: { click: _vm.basicalert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Alert "),
+                            _c("i", { staticClass: "fa fa-bell-o" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-asterisk" }),
-                    _vm._v(" fa-asterisk\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ban" }),
-                    _vm._v(" fa-ban\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bar-chart-o" }),
-                    _vm._v(" fa-bar-chart-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-barcode" }),
-                    _vm._v(" fa-barcode\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bars" }),
-                    _vm._v(" fa-bars\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-beer" }),
-                    _vm._v(" fa-beer\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bell" }),
-                    _vm._v(" fa-bell\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bell-o" }),
-                    _vm._v(" fa-bell-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bolt" }),
-                    _vm._v(" fa-bolt\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-book" }),
-                    _vm._v(" fa-book\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bookmark" }),
-                    _vm._v(" fa-bookmark\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bookmark-o" }),
-                    _vm._v(" fa-bookmark-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-briefcase" }),
-                    _vm._v(" fa-briefcase\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bug" }),
-                    _vm._v(" fa-bug\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-building-o" }),
-                    _vm._v(" fa-building-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bullhorn" }),
-                    _vm._v(" fa-bullhorn\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-bullseye" }),
-                    _vm._v(" fa-bullseye\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-calendar" }),
-                    _vm._v(" fa-calendar\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-calendar-o" }),
-                    _vm._v(" fa-calendar-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-camera" }),
-                    _vm._v(" fa-camera\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-camera-retro" }),
-                    _vm._v(" fa-camera-retro\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-caret-square-o-down" }),
-                    _vm._v(" fa-caret-square-o-down\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-caret-square-o-left" }),
-                    _vm._v(" fa-caret-square-o-left\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", {
-                      staticClass: "fa fa-fw fa-caret-square-o-right"
-                    }),
-                    _vm._v(" fa-caret-square-o-right\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-caret-square-o-up" }),
-                    _vm._v(" fa-caret-square-o-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-certificate" }),
-                    _vm._v(" fa-certificate\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check" }),
-                    _vm._v(" fa-check\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-circle" }),
-                    _vm._v(" fa-check-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-circle-o" }),
-                    _vm._v(" fa-check-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square" }),
-                    _vm._v(" fa-check-square\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square-o" }),
-                    _vm._v(" fa-check-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle" }),
-                    _vm._v(" fa-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle-o" }),
-                    _vm._v(" fa-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-clock-o" }),
-                    _vm._v(" fa-clock-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cloud" }),
-                    _vm._v(" fa-cloud\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cloud-download" }),
-                    _vm._v(" fa-cloud-download\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cloud-upload" }),
-                    _vm._v(" fa-cloud-upload\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-code" }),
-                    _vm._v(" fa-code\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-code-fork" }),
-                    _vm._v(" fa-code-fork\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-coffee" }),
-                    _vm._v(" fa-coffee\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cog" }),
-                    _vm._v(" fa-cog\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cogs" }),
-                    _vm._v(" fa-cogs\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comment" }),
-                    _vm._v(" fa-comment\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comment-o" }),
-                    _vm._v(" fa-comment-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comments" }),
-                    _vm._v(" fa-comments\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-comments-o" }),
-                    _vm._v(" fa-comments-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-compass" }),
-                    _vm._v(" fa-compass\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-credit-card" }),
-                    _vm._v(" fa-credit-card\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-crop" }),
-                    _vm._v(" fa-crop\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-move" }),
-                    _vm._v(" fa-crosshairs\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-cutlery" }),
-                    _vm._v(" fa-cutlery\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-dashboard" }),
-                    _vm._v(" fa-dashboard\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-desktop" }),
-                    _vm._v(" fa-desktop\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-                    _vm._v(" fa-dot-circle-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-download" }),
-                    _vm._v(" fa-download\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-edit" }),
-                    _vm._v(" fa-edit\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ellipsis-h" }),
-                    _vm._v(" fa-ellipsis-h\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ellipsis-v" }),
-                    _vm._v(" fa-ellipsis-v\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-envelope" }),
-                    _vm._v(" fa-envelope\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-envelope-o" }),
-                    _vm._v(" fa-envelope-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-eraser" }),
-                    _vm._v(" fa-eraser\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-hand-o-left" }),
-                    _vm._v(" fa-exchange\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-exclamation" }),
-                    _vm._v(" fa-exclamation\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-exclamation-circle" }),
-                    _vm._v(" fa-exclamation-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", {
-                      staticClass: "fa fa-fw fa-exclamation-triangle"
-                    }),
-                    _vm._v(" fa-exclamation-triangle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-external-link" }),
-                    _vm._v(" fa-external-link\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", {
-                      staticClass: "fa fa-fw fa-external-link-square"
-                    }),
-                    _vm._v(" fa-external-link-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-eye" }),
-                    _vm._v(" fa-eye\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-eye-slash" }),
-                    _vm._v(" fa-eye-slash\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-female" }),
-                    _vm._v(" fa-female\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-fighter-jet" }),
-                    _vm._v(" fa-fighter-jet\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-film" }),
-                    _vm._v(" fa-film\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-filter" }),
-                    _vm._v(" fa-filter\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-cup" }),
-                    _vm._v(" fa-fire\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-fire-extinguisher" }),
-                    _vm._v(" fa-fire-extinguisher\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flag" }),
-                    _vm._v(" fa-flag\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flag-checkered" }),
-                    _vm._v(" fa-flag-checkered\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flag-o" }),
-                    _vm._v(" fa-flag-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flash" }),
-                    _vm._v(" fa-flash\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-flask" }),
-                    _vm._v(" fa-flask\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder" }),
-                    _vm._v(" fa-folder\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder-o" }),
-                    _vm._v(" fa-folder-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder-open" }),
-                    _vm._v(" fa-folder-open\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-folder-open-o" }),
-                    _vm._v(" fa-folder-open-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-frown-o" }),
-                    _vm._v(" fa-frown-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gamepad" }),
-                    _vm._v(" fa-gamepad\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gavel" }),
-                    _vm._v(" fa-gavel\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-settings" }),
-                    _vm._v(" fa-gear\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gears" }),
-                    _vm._v(" fa-gears\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-gift" }),
-                    _vm._v(" fa-gift\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-glass" }),
-                    _vm._v(" fa-glass\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-globe" }),
-                    _vm._v(" fa-globe\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-group" }),
-                    _vm._v(" fa-group\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-hdd-o" }),
-                    _vm._v(" fa-hdd-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-headphones" }),
-                    _vm._v(" fa-headphones\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-heart" }),
-                    _vm._v(" fa-heart\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-heart-o" }),
-                    _vm._v(" fa-heart-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-home" }),
-                    _vm._v(" fa-home\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-inbox" }),
-                    _vm._v(" fa-inbox\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-info" }),
-                    _vm._v(" fa-info\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-info-circle" }),
-                    _vm._v(" fa-info-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-key" }),
-                    _vm._v(" fa-key\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-keyboard-o" }),
-                    _vm._v(" fa-keyboard-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-laptop" }),
-                    _vm._v(" fa-laptop\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-leaf" }),
-                    _vm._v(" fa-leaf\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-legal" }),
-                    _vm._v(" fa-legal\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-lemon-o" }),
-                    _vm._v(" fa-lemon-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-level-down" }),
-                    _vm._v(" fa-level-down\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-level-up" }),
-                    _vm._v(" fa-level-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-lightbulb-o" }),
-                    _vm._v(" fa-lightbulb-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-location-arrow" }),
-                    _vm._v(" fa-location-arrow\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-lock" }),
-                    _vm._v(" fa-lock\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-magic" }),
-                    _vm._v(" fa-magic\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-magnet" }),
-                    _vm._v(" fa-magnet\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mail-forward" }),
-                    _vm._v(" fa-mail-forward\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mail-reply" }),
-                    _vm._v(" fa-mail-reply\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mail-reply-all" }),
-                    _vm._v(" fa-mail-reply-all\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-male" }),
-                    _vm._v(" fa-male\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-map-marker" }),
-                    _vm._v(" fa-map-marker\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-meh-o" }),
-                    _vm._v(" fa-meh-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-microphone" }),
-                    _vm._v(" fa-microphone\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-microphone-slash" }),
-                    _vm._v(" fa-microphone-slash\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus" }),
-                    _vm._v(" fa-minus\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-circle" }),
-                    _vm._v(" fa-minus-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square" }),
-                    _vm._v(" fa-minus-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square-o" }),
-                    _vm._v(" fa-minus-square-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mobile" }),
-                    _vm._v(" fa-mobile\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-mobile-phone" }),
-                    _vm._v(" fa-mobile-phone\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-money" }),
-                    _vm._v(" fa-money\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-moon-o" }),
-                    _vm._v(" fa-moon-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-music" }),
-                    _vm._v(" fa-music\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-pencil" }),
-                    _vm._v(" fa-pencil\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-pencil-square" }),
-                    _vm._v(" fa-pencil-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-pencil-square-o" }),
-                    _vm._v(" fa-pencil-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-phone" }),
-                    _vm._v(" fa-phone\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-phone-square" }),
-                    _vm._v(" fa-phone-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-picture-o" }),
-                    _vm._v(" fa-picture-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plane" }),
-                    _vm._v(" fa-plane\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus" }),
-                    _vm._v(" fa-plus\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-circle" }),
-                    _vm._v(" fa-plus-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square" }),
-                    _vm._v(" fa-plus-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square-o" }),
-                    _vm._v(" fa-plus-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-power-off" }),
-                    _vm._v(" fa-power-off\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-print" }),
-                    _vm._v(" fa-print\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-puzzle-piece" }),
-                    _vm._v(" fa-puzzle-piece\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-qrcode" }),
-                    _vm._v(" fa-qrcode\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-question" }),
-                    _vm._v(" fa-question\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-question-circle" }),
-                    _vm._v(" fa-question-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-quote-left" }),
-                    _vm._v(" fa-quote-left\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-quote-right" }),
-                    _vm._v(" fa-quote-right\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-random" }),
-                    _vm._v(" fa-random\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-refresh" }),
-                    _vm._v(" fa-refresh\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-reply" }),
-                    _vm._v(" fa-reply\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-reply-all" }),
-                    _vm._v(" fa-reply-all\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-retweet" }),
-                    _vm._v(" fa-retweet\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-road" }),
-                    _vm._v(" fa-road\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-rocket" }),
-                    _vm._v(" fa-rocket\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-rss" }),
-                    _vm._v(" fa-rss\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-rss-square" }),
-                    _vm._v(" fa-rss-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-search" }),
-                    _vm._v(" fa-search\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-search-minus" }),
-                    _vm._v(" fa-search-minus\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-search-plus" }),
-                    _vm._v(" fa-search-plus\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-share" }),
-                    _vm._v(" fa-share\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-share-square" }),
-                    _vm._v(" fa-share-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-share-square-o" }),
-                    _vm._v(" fa-share-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-shield" }),
-                    _vm._v(" fa-shield\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-shopping-cart" }),
-                    _vm._v(" fa-shopping-cart\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sign-in" }),
-                    _vm._v(" fa-sign-in\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-shift-right" }),
-                    _vm._v(" fa-sign-out\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-signal" }),
-                    _vm._v(" fa-signal\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sitemap" }),
-                    _vm._v(" fa-sitemap\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-smile-o" }),
-                    _vm._v(" fa-smile-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort" }),
-                    _vm._v(" fa-sort\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-alpha-asc" }),
-                    _vm._v(" fa-sort-alpha-asc\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-alpha-desc" }),
-                    _vm._v(" fa-sort-alpha-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-amount-asc" }),
-                    _vm._v(" fa-sort-amount-asc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-amount-desc" }),
-                    _vm._v(" fa-sort-amount-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-asc" }),
-                    _vm._v(" fa-sort-asc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-desc" }),
-                    _vm._v(" fa-sort-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-down" }),
-                    _vm._v(" fa-sort-down\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-numeric-asc" }),
-                    _vm._v(" fa-sort-numeric-asc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-numeric-desc" }),
-                    _vm._v(" fa-sort-numeric-desc\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sort-up" }),
-                    _vm._v(" fa-sort-up\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-spinner" }),
-                    _vm._v(" fa-spinner\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square" }),
-                    _vm._v(" fa-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square-o" }),
-                    _vm._v(" fa-square-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star" }),
-                    _vm._v(" fa-star\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half" }),
-                    _vm._v(" fa-star-half\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half-empty" }),
-                    _vm._v(" fa-star-half-empty\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half-full" }),
-                    _vm._v(" fa-star-half-full\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-half-o" }),
-                    _vm._v(" fa-star-half-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-star-o" }),
-                    _vm._v(" fa-star-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-subscript" }),
-                    _vm._v(" fa-subscript\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-suitcase" }),
-                    _vm._v(" fa-suitcase\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-sun-o" }),
-                    _vm._v(" fa-sun-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-superscript" }),
-                    _vm._v(" fa-superscript\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tablet" }),
-                    _vm._v(" fa-tablet\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tachometer" }),
-                    _vm._v(" fa-tachometer\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tag" }),
-                    _vm._v(" fa-tag\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tags" }),
-                    _vm._v(" fa-tags\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tasks" }),
-                    _vm._v(" fa-tasks\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-terminal" }),
-                    _vm._v(" fa-terminal\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumb-tack" }),
-                    _vm._v(" fa-thumb-tack\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-down" }),
-                    _vm._v(" fa-thumbs-down\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-o-down" }),
-                    _vm._v(" fa-thumbs-o-down\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-o-up" }),
-                    _vm._v(" fa-thumbs-o-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-thumbs-up" }),
-                    _vm._v(" fa-thumbs-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-ticket" }),
-                    _vm._v(" fa-ticket\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-times" }),
-                    _vm._v(" fa-times\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-times-circle" }),
-                    _vm._v(" fa-times-circle\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-times-circle-o" }),
-                    _vm._v(" fa-times-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-tint" }),
-                    _vm._v(" fa-tint\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-down" }),
-                    _vm._v(" fa-toggle-down\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-left" }),
-                    _vm._v(" fa-toggle-left\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-right" }),
-                    _vm._v(" fa-toggle-right\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-toggle-up" }),
-                    _vm._v(" fa-toggle-up\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-trash-o" }),
-                    _vm._v(" fa-trash-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-trophy" }),
-                    _vm._v(" fa-trophy\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-truck" }),
-                    _vm._v(" fa-truck\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-umbrella" }),
-                    _vm._v(" fa-umbrella\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-unlock" }),
-                    _vm._v(" fa-unlock\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-unlock-alt" }),
-                    _vm._v(" fa-unlock-alt\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-unsorted" }),
-                    _vm._v(" fa-unsorted\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-upload" }),
-                    _vm._v(" fa-upload\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw ti-user" }),
-                    _vm._v(" fa-user\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-users" }),
-                    _vm._v(" fa-users\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-video-camera" }),
-                    _vm._v(" fa-video-camera\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-volume-down" }),
-                    _vm._v(" fa-volume-down\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-volume-off" }),
-                    _vm._v(" fa-volume-off\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-volume-up" }),
-                    _vm._v(" fa-volume-up\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-warning" }),
-                    _vm._v(" fa-warning\n                            "),
-                    _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("(alias)")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-wheelchair" }),
-                    _vm._v(" fa-wheelchair\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-wrench" }),
-                    _vm._v(" fa-wrench\n                        ")
-                  ])
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body ip_alert text-center",
+                          on: { click: _vm.ip_alert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Ip Alert "),
+                            _c("i", { staticClass: "fa fa-info-circle" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
                 ])
               ]),
               _vm._v(" "),
-              _c("section", { attrs: { id: "form-control" } }, [
-                _c("h4", { staticClass: "page-header" }, [
-                  _vm._v(
-                    "\n                        Form Control Icons\n                    "
+              _c("div", { staticClass: "row m-a-10" }, [
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body custom_icon text-center",
+                          on: { click: _vm.custom_icon }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Custom Image "),
+                            _c("i", { staticClass: "fa fa-picture-o" })
+                          ])
+                        ]
+                      )
+                    ]
                   )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square" }),
-                    _vm._v(" fa-check-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-check-square-o" }),
-                    _vm._v(" fa-check-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle" }),
-                    _vm._v(" fa-circle\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-circle-o" }),
-                    _vm._v(" fa-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-dot-circle-o" }),
-                    _vm._v(" fa-dot-circle-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square" }),
-                    _vm._v(" fa-minus-square\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-minus-square-o" }),
-                    _vm._v(" fa-minus-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square" }),
-                    _vm._v(" fa-plus-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-plus-square-o" }),
-                    _vm._v(" fa-plus-square-o\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square" }),
-                    _vm._v(" fa-square\n                        ")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                    _c("i", { staticClass: "fa fa-fw fa-square-o" }),
-                    _vm._v(" fa-square-o\n                        ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("section", { attrs: { id: "currency" } }, [
-                  _c("h4", { staticClass: "page-header" }, [
-                    _vm._v(
-                      "\n                            Currency Icons\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-bitcoin" }),
-                      _vm._v(" fa-bitcoin\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-btc" }),
-                      _vm._v(" fa-btc\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-cny" }),
-                      _vm._v(" fa-cny\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-dollar" }),
-                      _vm._v(" fa-dollar\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-eur" }),
-                      _vm._v(" fa-eur\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-euro" }),
-                      _vm._v(" fa-euro\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-gbp" }),
-                      _vm._v(" fa-gbp\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-inr" }),
-                      _vm._v(" fa-inr\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-jpy" }),
-                      _vm._v(" fa-jpy\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-krw" }),
-                      _vm._v(" fa-krw\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-money" }),
-                      _vm._v(" fa-money\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rmb" }),
-                      _vm._v(" fa-rmb\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rouble" }),
-                      _vm._v(" fa-rouble\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rub" }),
-                      _vm._v(" fa-rub\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-ruble" }),
-                      _vm._v(" fa-ruble\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rupee" }),
-                      _vm._v(" fa-rupee\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-try" }),
-                      _vm._v(" fa-try\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-turkish-lira" }),
-                      _vm._v(
-                        " fa-turkish-lira\n                                "
-                      ),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-usd" }),
-                      _vm._v(" fa-usd\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-won" }),
-                      _vm._v(" fa-won\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-yen" }),
-                      _vm._v(" fa-yen\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("section", { attrs: { id: "text-editor" } }, [
-                  _c("h4", { staticClass: "page-header" }, [
-                    _vm._v(
-                      "\n                            Text Editor Icons\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-center" }),
-                      _vm._v(" fa-align-center\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-justify" }),
-                      _vm._v(" fa-align-justify\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-left" }),
-                      _vm._v(" fa-align-left\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-align-right" }),
-                      _vm._v(" fa-align-right\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-bold" }),
-                      _vm._v(" fa-bold\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-chain" }),
-                      _vm._v(" fa-chain\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-chain-broken" }),
-                      _vm._v(" fa-chain-broken\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-clipboard" }),
-                      _vm._v(" fa-clipboard\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-columns" }),
-                      _vm._v(" fa-columns\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-copy" }),
-                      _vm._v(" fa-copy\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-cut" }),
-                      _vm._v(" fa-cut\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-dedent" }),
-                      _vm._v(" fa-dedent\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-eraser" }),
-                      _vm._v(" fa-eraser\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-file" }),
-                      _vm._v(" fa-file\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-file-o" }),
-                      _vm._v(" fa-file-o\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-file-text" }),
-                      _vm._v(" fa-file-text\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw ti-pencil" }),
-                      _vm._v(" fa-file-text-o\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-files-o" }),
-                      _vm._v(" fa-files-o\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-floppy-o" }),
-                      _vm._v(" fa-floppy-o\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-font" }),
-                      _vm._v(" fa-font\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-indent" }),
-                      _vm._v(" fa-indent\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-italic" }),
-                      _vm._v(" fa-italic\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-link" }),
-                      _vm._v(" fa-link\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list" }),
-                      _vm._v(" fa-list\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list-alt" }),
-                      _vm._v(" fa-list-alt\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list-ol" }),
-                      _vm._v(" fa-list-ol\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-list-ul" }),
-                      _vm._v(" fa-list-ul\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-outdent" }),
-                      _vm._v(" fa-outdent\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-paperclip" }),
-                      _vm._v(" fa-paperclip\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-paste" }),
-                      _vm._v(" fa-paste\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-repeat" }),
-                      _vm._v(" fa-repeat\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rotate-left" }),
-                      _vm._v(
-                        " fa-rotate-left\n                                "
-                      ),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-rotate-right" }),
-                      _vm._v(
-                        " fa-rotate-right\n                                "
-                      ),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-save" }),
-                      _vm._v(" fa-save\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-scissors" }),
-                      _vm._v(" fa-scissors\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-strikethrough" }),
-                      _vm._v(" fa-strikethrough\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-table" }),
-                      _vm._v(" fa-table\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-text-height" }),
-                      _vm._v(" fa-text-height\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-text-width" }),
-                      _vm._v(" fa-text-width\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-th" }),
-                      _vm._v(" fa-th\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-th-large" }),
-                      _vm._v(" fa-th-large\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-th-list" }),
-                      _vm._v(" fa-th-list\n                            ")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-underline" }),
-                      _vm._v(" fa-underline\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-undo" }),
-                      _vm._v(" fa-undo\n                            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                      _c("i", { staticClass: "fa fa-fw fa-unlink" }),
-                      _vm._v(" fa-unlink\n                                "),
-                      _c("span", { staticClass: "text-muted" }, [
-                        _vm._v("(alias)")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("section", { attrs: { id: "directional" } }, [
-                    _c("h4", { staticClass: "page-header" }, [
-                      _vm._v(
-                        "\n                                Directional Icons\n                            "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-angle-double-down"
-                        }),
-                        _vm._v(
-                          " fa-angle-double-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-angle-double-left"
-                        }),
-                        _vm._v(
-                          " fa-angle-double-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-angle-double-right"
-                        }),
-                        _vm._v(
-                          " fa-angle-double-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-double-up" }),
-                        _vm._v(
-                          " fa-angle-double-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-down" }),
-                        _vm._v(
-                          " fa-angle-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-left" }),
-                        _vm._v(
-                          " fa-angle-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-right" }),
-                        _vm._v(
-                          " fa-angle-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-angle-up" }),
-                        _vm._v(" fa-angle-up\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-down"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-left"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-down"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-left"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-right"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-o-up"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-o-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-arrow-circle-right"
-                        }),
-                        _vm._v(
-                          " fa-arrow-circle-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-circle-up" }),
-                        _vm._v(
-                          " fa-arrow-circle-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-down" }),
-                        _vm._v(
-                          " fa-arrow-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-left" }),
-                        _vm._v(
-                          " fa-arrow-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-right" }),
-                        _vm._v(
-                          " fa-arrow-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrow-up" }),
-                        _vm._v(" fa-arrow-up\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows" }),
-                        _vm._v(" fa-arrows\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows-alt" }),
-                        _vm._v(
-                          " fa-arrows-alt\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows-h" }),
-                        _vm._v(" fa-arrows-h\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-arrows-v" }),
-                        _vm._v(" fa-arrows-v\n                                ")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-down" }),
-                        _vm._v(
-                          " fa-caret-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-left" }),
-                        _vm._v(
-                          " fa-caret-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-right" }),
-                        _vm._v(
-                          " fa-caret-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-down"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-left"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-right"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-right\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-caret-square-o-up"
-                        }),
-                        _vm._v(
-                          " fa-caret-square-o-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-caret-up" }),
-                        _vm._v(" fa-caret-up\n                                ")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-down"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-left"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-right"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-chevron-circle-up"
-                        }),
-                        _vm._v(
-                          " fa-chevron-circle-up\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-chevron-down" }),
-                        _vm._v(
-                          " fa-chevron-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-chevron-left" }),
-                        _vm._v(
-                          " fa-chevron-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-chevron-right" }),
-                        _vm._v(
-                          " fa-chevron-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw ti-angle-up clickable"
-                        }),
-                        _vm._v(
-                          " fa-chevron-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-down" }),
-                        _vm._v(
-                          " fa-hand-o-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-left" }),
-                        _vm._v(
-                          " fa-hand-o-left\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-right" }),
-                        _vm._v(
-                          " fa-hand-o-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-hand-o-up" }),
-                        _vm._v(
-                          " fa-hand-o-up\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-long-arrow-down" }),
-                        _vm._v(
-                          " fa-long-arrow-down\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-long-arrow-left" }),
-                        _vm._v(
-                          " fa-long-arrow-left\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-long-arrow-right"
-                        }),
-                        _vm._v(
-                          " fa-long-arrow-right\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-long-arrow-up" }),
-                        _vm._v(
-                          " fa-long-arrow-up\n                                "
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-down" }),
-                        _vm._v(
-                          " fa-toggle-down\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-left" }),
-                        _vm._v(
-                          " fa-toggle-left\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-right" }),
-                        _vm._v(
-                          " fa-toggle-right\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-2 col-sm-4 fa-icon" }, [
-                        _c("i", { staticClass: "fa fa-fw fa-toggle-up" }),
-                        _vm._v(
-                          " fa-toggle-up\n                                    "
-                        ),
-                        _c("span", { staticClass: "text-muted" }, [
-                          _vm._v("(alias)")
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("section", { attrs: { id: "video-player" } }, [
-                      _c("h4", { staticClass: "page-header" }, [
-                        _vm._v(
-                          "\n                                    Video Player Icons\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-arrows-alt" }),
-                            _vm._v(
-                              " fa-arrows-alt\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-backward" }),
-                            _vm._v(
-                              " fa-backward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-compress" }),
-                            _vm._v(
-                              " fa-compress\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-eject" }),
-                            _vm._v(
-                              " fa-eject\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-expand" }),
-                            _vm._v(
-                              " fa-expand\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-fast-backward"
-                            }),
-                            _vm._v(
-                              " fa-fast-backward\n                                    "
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-fast-forward"
-                            }),
-                            _vm._v(
-                              " fa-fast-forward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-forward" }),
-                            _vm._v(
-                              " fa-forward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-pause" }),
-                            _vm._v(
-                              " fa-pause\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-play" }),
-                            _vm._v(
-                              " fa-play\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-play-circle" }),
-                            _vm._v(
-                              " fa-play-circle\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-play-circle-o"
-                            }),
-                            _vm._v(
-                              " fa-play-circle-o\n                                    "
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-step-backward"
-                            }),
-                            _vm._v(
-                              " fa-step-backward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-step-forward"
-                            }),
-                            _vm._v(
-                              " fa-step-forward\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", { staticClass: "fa fa-fw fa-stop" }),
-                            _vm._v(
-                              " fa-stop\n                                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                          [
-                            _c("i", {
-                              staticClass: "fa fa-fw fa-youtube-play"
-                            }),
-                            _vm._v(
-                              " fa-youtube-play\n                                    "
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("section", { attrs: { id: "brand" } }, [
-                        _c("h4", { staticClass: "page-header" }, [
-                          _vm._v(
-                            "\n                                        Brand Icons\n                                    "
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-adn" }),
-                              _vm._v(
-                                " fa-adn\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-android" }),
-                              _vm._v(
-                                " fa-android\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-apple" }),
-                              _vm._v(
-                                " fa-apple\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-bitbucket" }),
-                              _vm._v(
-                                " fa-bitbucket\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-bitbucket-square"
-                              }),
-                              _vm._v(
-                                " fa-bitbucket-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-bitcoin" }),
-                              _vm._v(
-                                " fa-bitcoin\n                                            "
-                              ),
-                              _c("span", { staticClass: "text-muted" }, [
-                                _vm._v("(alias)")
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-btc" }),
-                              _vm._v(
-                                " fa-btc\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-css3" }),
-                              _vm._v(
-                                " fa-css3\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-dribbble" }),
-                              _vm._v(
-                                " fa-dribbble\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-dropbox" }),
-                              _vm._v(
-                                " fa-dropbox\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-facebook" }),
-                              _vm._v(
-                                " fa-facebook\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-facebook-square"
-                              }),
-                              _vm._v(
-                                " fa-facebook-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-flickr" }),
-                              _vm._v(
-                                " fa-flickr\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-foursquare"
-                              }),
-                              _vm._v(
-                                " fa-foursquare\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-github" }),
-                              _vm._v(
-                                " fa-github\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-github-alt"
-                              }),
-                              _vm._v(
-                                " fa-github-alt\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-github-square"
-                              }),
-                              _vm._v(
-                                " fa-github-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-gittip" }),
-                              _vm._v(
-                                " fa-gittip\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-google-plus"
-                              }),
-                              _vm._v(
-                                " fa-google-plus\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-google-plus-square"
-                              }),
-                              _vm._v(
-                                " fa-google-plus-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-html5" }),
-                              _vm._v(
-                                " fa-html5\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-instagram" }),
-                              _vm._v(
-                                " fa-instagram\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-linkedin" }),
-                              _vm._v(
-                                " fa-linkedin\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-linkedin-square"
-                              }),
-                              _vm._v(
-                                " fa-linkedin-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-linux" }),
-                              _vm._v(
-                                " fa-linux\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-maxcdn" }),
-                              _vm._v(
-                                " fa-maxcdn\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-pagelines" }),
-                              _vm._v(
-                                " fa-pagelines\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-pinterest" }),
-                              _vm._v(
-                                " fa-pinterest\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-pinterest-square"
-                              }),
-                              _vm._v(
-                                " fa-pinterest-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-renren" }),
-                              _vm._v(
-                                " fa-renren\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-skype" }),
-                              _vm._v(
-                                " fa-skype\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-stack-exchange"
-                              }),
-                              _vm._v(
-                                " fa-stack-exchange\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-stack-overflow"
-                              }),
-                              _vm._v(
-                                " fa-stack-overflow\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-trello" }),
-                              _vm._v(
-                                " fa-trello\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-tumblr" }),
-                              _vm._v(
-                                " fa-tumblr\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-tumblr-square"
-                              }),
-                              _vm._v(
-                                " fa-tumblr-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-twitter" }),
-                              _vm._v(
-                                " fa-twitter\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-twitter-square"
-                              }),
-                              _vm._v(
-                                " fa-twitter-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-vimeo-square"
-                              }),
-                              _vm._v(
-                                " fa-vimeo-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-vk" }),
-                              _vm._v(
-                                " fa-vk\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-weibo" }),
-                              _vm._v(
-                                " fa-weibo\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-windows" }),
-                              _vm._v(
-                                " fa-windows\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-xing" }),
-                              _vm._v(
-                                " fa-xing\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-xing-square"
-                              }),
-                              _vm._v(
-                                " fa-xing-square\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", { staticClass: "fa fa-fw fa-youtube" }),
-                              _vm._v(
-                                " fa-youtube\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-youtube-play"
-                              }),
-                              _vm._v(
-                                " fa-youtube-play\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                            [
-                              _c("i", {
-                                staticClass: "fa fa-fw fa-youtube-square"
-                              }),
-                              _vm._v(
-                                " fa-youtube-square\n                                        "
-                              )
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("section", { attrs: { id: "medical" } }, [
-                          _c("h4", { staticClass: "page-header" }, [
-                            _vm._v(
-                              "\n                                            Medical Icons\n                                        "
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", { staticClass: "col-12 col-md-12" }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-ambulance"
-                                    }),
-                                    _vm._v(
-                                      " fa-ambulance\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-h-square"
-                                    }),
-                                    _vm._v(
-                                      " fa-h-square\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-hospital-o"
-                                    }),
-                                    _vm._v(
-                                      " fa-hospital-o\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-medkit"
-                                    }),
-                                    _vm._v(
-                                      " fa-medkit\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-plus-square"
-                                    }),
-                                    _vm._v(
-                                      " fa-plus-square\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-stethoscope"
-                                    }),
-                                    _vm._v(
-                                      " fa-stethoscope\n                                                    "
-                                    )
-                                  ]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "row" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-user-md"
-                                    }),
-                                    _vm._v(
-                                      " fa-user-md\n                                                    "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-2 col-sm-4 fa-icon" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa fa-fw fa-wheelchair"
-                                    }),
-                                    _vm._v(
-                                      " fa-wheelchair\n                                                    "
-                                    )
-                                  ]
-                                )
-                              ])
-                            ])
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body custom_html text-center",
+                          on: { click: _vm.custom_html }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Custom Html "),
+                            _c("i", { staticClass: "fa fa-code" })
                           ])
-                        ])
-                      ])
-                    ])
-                  ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body auto_close text-center",
+                          on: { click: _vm.auto_close }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Alert Auto Close "),
+                            _c("i", { staticClass: "fa fa-magic" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body prom_alert text-center",
+                          on: { click: _vm.prom_alert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Prompt Alert "),
+                            _c("i", { staticClass: "fa fa-tree" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row m-a-10" }, [
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body text-center",
+                          attrs: { id: "info-alert" },
+                          on: { click: _vm.info_alert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Info Alert "),
+                            _c("i", { staticClass: "fa fa-info" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body text-center",
+                          attrs: { id: "success-alert" },
+                          on: { click: _vm.success_alert_two }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Successfully "),
+                            _c("i", { staticClass: "fa fa-check" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body text-center",
+                          attrs: { id: "warning-alert" },
+                          on: { click: _vm.warning_alert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Warning Alert "),
+                            _c("i", { staticClass: "fa fa-exclamation" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "card  card-default hvr-sweep-to-right" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-body text-center",
+                          attrs: { id: "danger-alert" },
+                          on: { click: _vm.danger_alert }
+                        },
+                        [
+                          _c("h5", [
+                            _vm._v(" Danger Alert "),
+                            _c("i", { staticClass: "fa fa-times" })
+                          ])
+                        ]
+                      )
+                    ]
+                  )
                 ])
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "right" } }, [
-              _c("div", { attrs: { id: "right-slim" } }, [
-                _c("div", { staticClass: "rightsidebar-right" }, [
-                  _c("div", { staticClass: "rightsidebar-right-content" }, [
-                    _c("div", { staticClass: "panel-tabs" }, [
-                      _c(
-                        "ul",
-                        {
-                          staticClass: "nav nav-tabs nav-float",
-                          attrs: { role: "tablist" }
-                        },
-                        [
-                          _c("li", { staticClass: "nav-item text-center" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link active ",
-                                attrs: {
-                                  href: "#r_tab1",
-                                  role: "tab",
-                                  "data-toggle": "tab"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-fw ti-comments" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "text-center nav-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link",
-                                attrs: {
-                                  href: "#r_tab2",
-                                  role: "tab",
-                                  "data-toggle": "tab"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-fw ti-bell" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "text-center nav-item" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "nav-link",
-                                attrs: {
-                                  href: "#r_tab3",
-                                  role: "tab",
-                                  "data-toggle": "tab"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-fw ti-settings" })]
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "tab-content" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "tab-pane active",
-                          attrs: { id: "r_tab1" }
-                        },
-                        [
-                          _c("div", { attrs: { id: "slim_t1" } }, [
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "menu-icon  fa fa-fw ti-user"
-                                }),
-                                _vm._v(
-                                  "\n                                            Contacts\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              { staticClass: "list-unstyled margin-none" },
-                              [
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-primary"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Annette\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-primary"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Jordan\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-primary"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Stewart\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-warning"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Alfred\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-danger"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Eileen\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-muted"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Robert\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  {
-                                    staticClass: "rightsidebar-contact-wrapper"
-                                  },
-                                  [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "rightsidebar-contact",
-                                        attrs: { href: "#" }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-circle text-xs text-muted"
-                                        }),
-                                        _vm._v(
-                                          "\n                                                    Cassandra\n                                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", { staticClass: "fa fa-fw ti-export" }),
-                                _vm._v(
-                                  "\n                                            Recent Updates\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", [
-                              _c("ul", { staticClass: "list-unstyled" }, [
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-comments-smiley fa-fw text-primary"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        New Comment\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-twitter-alt fa-fw text-success"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        3 New Followers\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-email fa-fw text-info"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Message Sent\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-write fa-fw text-warning"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        New Task\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-export fa-fw text-danger"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Server Rebooted\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-info-alt fa-fw text-primary"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Server Not Responding\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-shopping-cart fa-fw text-success"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        New Order Placed\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "rightsidebar-notification" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa ti-money fa-fw text-info"
-                                      }),
-                                      _vm._v(
-                                        "\n                                                        Payment Received\n                                                    "
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ])
-                            ])
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "tab-pane fade",
-                          attrs: { id: "r_tab2" }
-                        },
-                        [
-                          _c("div", { attrs: { id: "slim_t2" } }, [
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", { staticClass: "fa fa-fw ti-bell" }),
-                                _vm._v(
-                                  "\n                                            Notifications\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "list-unstyled m-t-15 notifications"
-                              },
-                              [
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "message icon-not striped-col",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("John Doe")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        5 members joined today\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("Just now")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "message icon-not",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("Tony")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        likes a photo of you\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("5 min")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "message icon-not striped-col",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("John")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        Dont forgot to call...\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("11 min")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "message icon-not",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [_vm._v("Jenny Kerry")]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        Done with it...\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("1 Hour")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass:
-                                        "message icon-not striped-col",
-                                      attrs: { href: "" }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        { staticClass: "message-body" },
-                                        [
-                                          _c("strong", [
-                                            _vm._v("Ernest Kerry")
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("br"),
-                                          _vm._v(
-                                            "\n                                                        2 members joined today\n                                                        "
-                                          ),
-                                          _c("br"),
-                                          _vm._v(" "),
-                                          _c(
-                                            "small",
-                                            { staticClass: "noti-date" },
-                                            [_vm._v("3 Days")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c(
-                                  "li",
-                                  { staticClass: "text-right noti-footer" },
-                                  [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("View All Notifications "),
-                                      _c("i", { staticClass: "ti-arrow-right" })
-                                    ])
-                                  ]
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "fa fa-fw ti-check-box"
-                                }),
-                                _vm._v(
-                                  "\n                                            Tasks\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("ul", { staticClass: "list-unstyled m-t-15" }, [
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [_vm._v("Button Design")]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("40%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "progress progress-xs  active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-success progress-bar-striped",
-                                          staticStyle: { width: "40%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "40",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("40% Complete (success)")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [_vm._v("Theme Creation")]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("20%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "progress progress-xs  active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-info progress-bar-striped",
-                                          staticStyle: { width: "20%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "20",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("20% Complete")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [_vm._v("XYZ Task To Do")]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("60%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "progress progress-xs  active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-warning progress-bar-striped",
-                                          staticStyle: { width: "60%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "60",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("60% Complete (warning)")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c("div", [
-                                  _c("p", [
-                                    _c("span", [
-                                      _vm._v("Transitions Creation")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c(
-                                      "small",
-                                      { staticClass: "float-right text-muted" },
-                                      [_vm._v("80%")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "progress progress-xs active"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "progress-bar bg-danger progress-bar-striped",
-                                          staticStyle: { width: "80%" },
-                                          attrs: {
-                                            role: "progressbar",
-                                            "aria-valuenow": "80",
-                                            "aria-valuemin": "0",
-                                            "aria-valuemax": "100"
-                                          }
-                                        },
-                                        [
-                                          _c(
-                                            "span",
-                                            { staticClass: "sr-only" },
-                                            [_vm._v("80% Complete (danger)")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("li", { staticClass: "text-right" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _vm._v("View All Tasks "),
-                                  _c("i", { staticClass: "ti-arrow-right" })
-                                ])
-                              ])
-                            ])
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "tab-pane fade",
-                          attrs: { id: "r_tab3" }
-                        },
-                        [
-                          _c("div", { attrs: { id: "slim_t3" } }, [
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase gen-sett-m-t text-xs"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "fa fa-fw ti-settings"
-                                }),
-                                _vm._v(
-                                  "\n                                            General\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "list-unstyled settings-list m-t-10"
-                              },
-                              [
-                                _c("li", [
-                                  _c("label", { attrs: { for: "status" } }, [
-                                    _vm._v("Available")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "status",
-                                        name: "my-checkbox",
-                                        checked: ""
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "email-auth" } },
-                                    [_vm._v("Login with Email")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "email-auth",
-                                        name: "my-checkbox"
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("label", { attrs: { for: "update" } }, [
-                                    _vm._v("Auto Update")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "update",
-                                        name: "my-checkbox"
-                                      }
-                                    })
-                                  ])
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "h5",
-                              {
-                                staticClass:
-                                  "rightsidebar-right-heading text-uppercase text-xs"
-                              },
-                              [
-                                _c("i", { staticClass: "fa fa-fw ti-volume" }),
-                                _vm._v(
-                                  "\n                                            Sound & Notification\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "list-unstyled settings-list m-t-10"
-                              },
-                              [
-                                _c("li", [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "chat-sound" } },
-                                    [_vm._v("Chat Sound")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "chat-sound",
-                                        name: "my-checkbox",
-                                        checked: ""
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "noti-sound" } },
-                                    [_vm._v("Notification Sound")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "noti-sound",
-                                        name: "my-checkbox"
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("label", { attrs: { for: "remain" } }, [
-                                    _vm._v("Remainder ")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("span", { staticClass: "float-right" }, [
-                                    _c("input", {
-                                      attrs: {
-                                        type: "checkbox",
-                                        id: "remain",
-                                        name: "my-checkbox",
-                                        checked: ""
-                                      }
-                                    })
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("li", [
-                                  _c("label", { attrs: { for: "vol" } }, [
-                                    _vm._v("Volume")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    attrs: {
-                                      type: "range",
-                                      id: "vol",
-                                      min: "0",
-                                      max: "100",
-                                      value: "15"
-                                    }
-                                  })
-                                ])
-                              ]
-                            )
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "background-overlay" })
-        ]
+            ]
+          )
+        ],
+        1
       )
-    ],
-    1
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -6510,26 +667,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4a7f2703", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-66b6d801", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 462:
+/***/ 470:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1530)
-  __webpack_require__(1532)
+  __webpack_require__(1585)
+  __webpack_require__(1587)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1534)
+var __vue_script__ = __webpack_require__(1589)
 /* template */
-var __vue_template__ = __webpack_require__(1535)
+var __vue_template__ = __webpack_require__(1590)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -6546,7 +703,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/fontawesome_icons.vue"
+Component.options.__file = "resources/components/pages/sweet_alert.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -6555,9 +712,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4a7f2703", Component.options)
+    hotAPI.createRecord("data-v-66b6d801", Component.options)
   } else {
-    hotAPI.reload("data-v-4a7f2703", Component.options)
+    hotAPI.reload("data-v-66b6d801", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -6569,7 +726,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -16941,19 +11098,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(531)
+  __webpack_require__(532)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(533)
+var __vue_script__ = __webpack_require__(534)
 /* template */
-var __vue_template__ = __webpack_require__(534)
+var __vue_template__ = __webpack_require__(535)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -16993,13 +11150,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(532);
+var content = __webpack_require__(533);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -17020,7 +11177,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -17035,7 +11192,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 533:
+/***/ 534:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17080,7 +11237,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 534:
+/***/ 535:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -17142,22 +11299,2918 @@ if (false) {
 
 /***/ }),
 
-/***/ 589:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 567:
+/***/ (function(module, exports) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(528)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(590));
-//# sourceMappingURL=toastr.js.map
-
+module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 590:
-/***/ (function(module, exports) {
+/***/ 705:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = function() {
-	throw new Error("define cannot be used indirect");
+/*!
+* sweetalert2 v8.17.1
+* Released under the MIT License.
+*/
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.Sweetalert2 = factory());
+}(this, (function () { 'use strict';
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _construct(Parent, args, Class) {
+  if (isNativeReflectConstruct()) {
+    _construct = Reflect.construct;
+  } else {
+    _construct = function _construct(Parent, args, Class) {
+      var a = [null];
+      a.push.apply(a, args);
+      var Constructor = Function.bind.apply(Parent, a);
+      var instance = new Constructor();
+      if (Class) _setPrototypeOf(instance, Class.prototype);
+      return instance;
+    };
+  }
+
+  return _construct.apply(null, arguments);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _superPropBase(object, property) {
+  while (!Object.prototype.hasOwnProperty.call(object, property)) {
+    object = _getPrototypeOf(object);
+    if (object === null) break;
+  }
+
+  return object;
+}
+
+function _get(target, property, receiver) {
+  if (typeof Reflect !== "undefined" && Reflect.get) {
+    _get = Reflect.get;
+  } else {
+    _get = function _get(target, property, receiver) {
+      var base = _superPropBase(target, property);
+
+      if (!base) return;
+      var desc = Object.getOwnPropertyDescriptor(base, property);
+
+      if (desc.get) {
+        return desc.get.call(receiver);
+      }
+
+      return desc.value;
+    };
+  }
+
+  return _get(target, property, receiver || target);
+}
+
+var consolePrefix = 'SweetAlert2:';
+/**
+ * Filter the unique values into a new array
+ * @param arr
+ */
+
+var uniqueArray = function uniqueArray(arr) {
+  var result = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    if (result.indexOf(arr[i]) === -1) {
+      result.push(arr[i]);
+    }
+  }
+
+  return result;
 };
+/**
+ * Returns the array ob object values (Object.values isn't supported in IE11)
+ * @param obj
+ */
+
+var objectValues = function objectValues(obj) {
+  return Object.keys(obj).map(function (key) {
+    return obj[key];
+  });
+};
+/**
+ * Convert NodeList to Array
+ * @param nodeList
+ */
+
+var toArray = function toArray(nodeList) {
+  return Array.prototype.slice.call(nodeList);
+};
+/**
+ * Standardise console warnings
+ * @param message
+ */
+
+var warn = function warn(message) {
+  console.warn("".concat(consolePrefix, " ").concat(message));
+};
+/**
+ * Standardise console errors
+ * @param message
+ */
+
+var error = function error(message) {
+  console.error("".concat(consolePrefix, " ").concat(message));
+};
+/**
+ * Private global state for `warnOnce`
+ * @type {Array}
+ * @private
+ */
+
+var previousWarnOnceMessages = [];
+/**
+ * Show a console warning, but only if it hasn't already been shown
+ * @param message
+ */
+
+var warnOnce = function warnOnce(message) {
+  if (!(previousWarnOnceMessages.indexOf(message) !== -1)) {
+    previousWarnOnceMessages.push(message);
+    warn(message);
+  }
+};
+/**
+ * Show a one-time console warning about deprecated params/methods
+ */
+
+var warnAboutDepreation = function warnAboutDepreation(deprecatedParam, useInstead) {
+  warnOnce("\"".concat(deprecatedParam, "\" is deprecated and will be removed in the next major release. Please use \"").concat(useInstead, "\" instead."));
+};
+/**
+ * If `arg` is a function, call it (with no arguments or context) and return the result.
+ * Otherwise, just pass the value through
+ * @param arg
+ */
+
+var callIfFunction = function callIfFunction(arg) {
+  return typeof arg === 'function' ? arg() : arg;
+};
+var isPromise = function isPromise(arg) {
+  return arg && Promise.resolve(arg) === arg;
+};
+
+var DismissReason = Object.freeze({
+  cancel: 'cancel',
+  backdrop: 'backdrop',
+  close: 'close',
+  esc: 'esc',
+  timer: 'timer'
+});
+
+var argsToParams = function argsToParams(args) {
+  var params = {};
+
+  switch (_typeof(args[0])) {
+    case 'object':
+      _extends(params, args[0]);
+
+      break;
+
+    default:
+      ['title', 'html', 'type'].forEach(function (name, index) {
+        switch (_typeof(args[index])) {
+          case 'string':
+            params[name] = args[index];
+            break;
+
+          case 'undefined':
+            break;
+
+          default:
+            error("Unexpected type of ".concat(name, "! Expected \"string\", got ").concat(_typeof(args[index])));
+        }
+      });
+  }
+
+  return params;
+};
+
+var swalPrefix = 'swal2-';
+var prefix = function prefix(items) {
+  var result = {};
+
+  for (var i in items) {
+    result[items[i]] = swalPrefix + items[i];
+  }
+
+  return result;
+};
+var swalClasses = prefix(['container', 'shown', 'height-auto', 'iosfix', 'popup', 'modal', 'no-backdrop', 'toast', 'toast-shown', 'toast-column', 'fade', 'show', 'hide', 'noanimation', 'close', 'title', 'header', 'content', 'actions', 'confirm', 'cancel', 'footer', 'icon', 'image', 'input', 'file', 'range', 'select', 'radio', 'checkbox', 'label', 'textarea', 'inputerror', 'validation-message', 'progress-steps', 'active-progress-step', 'progress-step', 'progress-step-line', 'loading', 'styled', 'top', 'top-start', 'top-end', 'top-left', 'top-right', 'center', 'center-start', 'center-end', 'center-left', 'center-right', 'bottom', 'bottom-start', 'bottom-end', 'bottom-left', 'bottom-right', 'grow-row', 'grow-column', 'grow-fullscreen', 'rtl']);
+var iconTypes = prefix(['success', 'warning', 'info', 'question', 'error']);
+
+var states = {
+  previousBodyPadding: null
+};
+var hasClass = function hasClass(elem, className) {
+  return elem.classList.contains(className);
+};
+var applyCustomClass = function applyCustomClass(elem, customClass, className) {
+  // Clean up previous custom classes
+  toArray(elem.classList).forEach(function (className) {
+    if (!(objectValues(swalClasses).indexOf(className) !== -1) && !(objectValues(iconTypes).indexOf(className) !== -1)) {
+      elem.classList.remove(className);
+    }
+  });
+
+  if (customClass && customClass[className]) {
+    addClass(elem, customClass[className]);
+  }
+};
+function getInput(content, inputType) {
+  if (!inputType) {
+    return null;
+  }
+
+  switch (inputType) {
+    case 'select':
+    case 'textarea':
+    case 'file':
+      return getChildByClass(content, swalClasses[inputType]);
+
+    case 'checkbox':
+      return content.querySelector(".".concat(swalClasses.checkbox, " input"));
+
+    case 'radio':
+      return content.querySelector(".".concat(swalClasses.radio, " input:checked")) || content.querySelector(".".concat(swalClasses.radio, " input:first-child"));
+
+    case 'range':
+      return content.querySelector(".".concat(swalClasses.range, " input"));
+
+    default:
+      return getChildByClass(content, swalClasses.input);
+  }
+}
+var focusInput = function focusInput(input) {
+  input.focus(); // place cursor at end of text in text input
+
+  if (input.type !== 'file') {
+    // http://stackoverflow.com/a/2345915
+    var val = input.value;
+    input.value = '';
+    input.value = val;
+  }
+};
+var toggleClass = function toggleClass(target, classList, condition) {
+  if (!target || !classList) {
+    return;
+  }
+
+  if (typeof classList === 'string') {
+    classList = classList.split(/\s+/).filter(Boolean);
+  }
+
+  classList.forEach(function (className) {
+    if (target.forEach) {
+      target.forEach(function (elem) {
+        condition ? elem.classList.add(className) : elem.classList.remove(className);
+      });
+    } else {
+      condition ? target.classList.add(className) : target.classList.remove(className);
+    }
+  });
+};
+var addClass = function addClass(target, classList) {
+  toggleClass(target, classList, true);
+};
+var removeClass = function removeClass(target, classList) {
+  toggleClass(target, classList, false);
+};
+var getChildByClass = function getChildByClass(elem, className) {
+  for (var i = 0; i < elem.childNodes.length; i++) {
+    if (hasClass(elem.childNodes[i], className)) {
+      return elem.childNodes[i];
+    }
+  }
+};
+var applyNumericalStyle = function applyNumericalStyle(elem, property, value) {
+  if (value || parseInt(value) === 0) {
+    elem.style[property] = typeof value === 'number' ? value + 'px' : value;
+  } else {
+    elem.style.removeProperty(property);
+  }
+};
+var show = function show(elem) {
+  var display = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'flex';
+  elem.style.opacity = '';
+  elem.style.display = display;
+};
+var hide = function hide(elem) {
+  elem.style.opacity = '';
+  elem.style.display = 'none';
+};
+var toggle = function toggle(elem, condition, display) {
+  condition ? show(elem, display) : hide(elem);
+}; // borrowed from jquery $(elem).is(':visible') implementation
+
+var isVisible = function isVisible(elem) {
+  return !!(elem && (elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length));
+};
+var isScrollable = function isScrollable(elem) {
+  return !!(elem.scrollHeight > elem.clientHeight);
+}; // borrowed from https://stackoverflow.com/a/46352119
+
+var hasCssAnimation = function hasCssAnimation(elem) {
+  var style = window.getComputedStyle(elem);
+  var animDuration = parseFloat(style.getPropertyValue('animation-duration') || '0');
+  var transDuration = parseFloat(style.getPropertyValue('transition-duration') || '0');
+  return animDuration > 0 || transDuration > 0;
+};
+var contains = function contains(haystack, needle) {
+  if (typeof haystack.contains === 'function') {
+    return haystack.contains(needle);
+  }
+};
+
+var getContainer = function getContainer() {
+  return document.body.querySelector('.' + swalClasses.container);
+};
+var elementBySelector = function elementBySelector(selectorString) {
+  var container = getContainer();
+  return container ? container.querySelector(selectorString) : null;
+};
+
+var elementByClass = function elementByClass(className) {
+  return elementBySelector('.' + className);
+};
+
+var getPopup = function getPopup() {
+  return elementByClass(swalClasses.popup);
+};
+var getIcons = function getIcons() {
+  var popup = getPopup();
+  return toArray(popup.querySelectorAll('.' + swalClasses.icon));
+};
+var getIcon = function getIcon() {
+  var visibleIcon = getIcons().filter(function (icon) {
+    return isVisible(icon);
+  });
+  return visibleIcon.length ? visibleIcon[0] : null;
+};
+var getTitle = function getTitle() {
+  return elementByClass(swalClasses.title);
+};
+var getContent = function getContent() {
+  return elementByClass(swalClasses.content);
+};
+var getImage = function getImage() {
+  return elementByClass(swalClasses.image);
+};
+var getProgressSteps = function getProgressSteps() {
+  return elementByClass(swalClasses['progress-steps']);
+};
+var getValidationMessage = function getValidationMessage() {
+  return elementByClass(swalClasses['validation-message']);
+};
+var getConfirmButton = function getConfirmButton() {
+  return elementBySelector('.' + swalClasses.actions + ' .' + swalClasses.confirm);
+};
+var getCancelButton = function getCancelButton() {
+  return elementBySelector('.' + swalClasses.actions + ' .' + swalClasses.cancel);
+};
+var getActions = function getActions() {
+  return elementByClass(swalClasses.actions);
+};
+var getHeader = function getHeader() {
+  return elementByClass(swalClasses.header);
+};
+var getFooter = function getFooter() {
+  return elementByClass(swalClasses.footer);
+};
+var getCloseButton = function getCloseButton() {
+  return elementByClass(swalClasses.close);
+}; // https://github.com/jkup/focusable/blob/master/index.js
+
+var focusable = "\n  a[href],\n  area[href],\n  input:not([disabled]),\n  select:not([disabled]),\n  textarea:not([disabled]),\n  button:not([disabled]),\n  iframe,\n  object,\n  embed,\n  [tabindex=\"0\"],\n  [contenteditable],\n  audio[controls],\n  video[controls],\n  summary\n";
+var getFocusableElements = function getFocusableElements() {
+  var focusableElementsWithTabindex = toArray(getPopup().querySelectorAll('[tabindex]:not([tabindex="-1"]):not([tabindex="0"])')) // sort according to tabindex
+  .sort(function (a, b) {
+    a = parseInt(a.getAttribute('tabindex'));
+    b = parseInt(b.getAttribute('tabindex'));
+
+    if (a > b) {
+      return 1;
+    } else if (a < b) {
+      return -1;
+    }
+
+    return 0;
+  });
+  var otherFocusableElements = toArray(getPopup().querySelectorAll(focusable)).filter(function (el) {
+    return el.getAttribute('tabindex') !== '-1';
+  });
+  return uniqueArray(focusableElementsWithTabindex.concat(otherFocusableElements)).filter(function (el) {
+    return isVisible(el);
+  });
+};
+var isModal = function isModal() {
+  return !isToast() && !document.body.classList.contains(swalClasses['no-backdrop']);
+};
+var isToast = function isToast() {
+  return document.body.classList.contains(swalClasses['toast-shown']);
+};
+var isLoading = function isLoading() {
+  return getPopup().hasAttribute('data-loading');
+};
+
+// Detect Node env
+var isNodeEnv = function isNodeEnv() {
+  return typeof window === 'undefined' || typeof document === 'undefined';
+};
+
+var sweetHTML = "\n <div aria-labelledby=\"".concat(swalClasses.title, "\" aria-describedby=\"").concat(swalClasses.content, "\" class=\"").concat(swalClasses.popup, "\" tabindex=\"-1\">\n   <div class=\"").concat(swalClasses.header, "\">\n     <ul class=\"").concat(swalClasses['progress-steps'], "\"></ul>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.error, "\">\n       <span class=\"swal2-x-mark\"><span class=\"swal2-x-mark-line-left\"></span><span class=\"swal2-x-mark-line-right\"></span></span>\n     </div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.question, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.warning, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.info, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.success, "\">\n       <div class=\"swal2-success-circular-line-left\"></div>\n       <span class=\"swal2-success-line-tip\"></span> <span class=\"swal2-success-line-long\"></span>\n       <div class=\"swal2-success-ring\"></div> <div class=\"swal2-success-fix\"></div>\n       <div class=\"swal2-success-circular-line-right\"></div>\n     </div>\n     <img class=\"").concat(swalClasses.image, "\" />\n     <h2 class=\"").concat(swalClasses.title, "\" id=\"").concat(swalClasses.title, "\"></h2>\n     <button type=\"button\" class=\"").concat(swalClasses.close, "\"></button>\n   </div>\n   <div class=\"").concat(swalClasses.content, "\">\n     <div id=\"").concat(swalClasses.content, "\"></div>\n     <input class=\"").concat(swalClasses.input, "\" />\n     <input type=\"file\" class=\"").concat(swalClasses.file, "\" />\n     <div class=\"").concat(swalClasses.range, "\">\n       <input type=\"range\" />\n       <output></output>\n     </div>\n     <select class=\"").concat(swalClasses.select, "\"></select>\n     <div class=\"").concat(swalClasses.radio, "\"></div>\n     <label for=\"").concat(swalClasses.checkbox, "\" class=\"").concat(swalClasses.checkbox, "\">\n       <input type=\"checkbox\" />\n       <span class=\"").concat(swalClasses.label, "\"></span>\n     </label>\n     <textarea class=\"").concat(swalClasses.textarea, "\"></textarea>\n     <div class=\"").concat(swalClasses['validation-message'], "\" id=\"").concat(swalClasses['validation-message'], "\"></div>\n   </div>\n   <div class=\"").concat(swalClasses.actions, "\">\n     <button type=\"button\" class=\"").concat(swalClasses.confirm, "\">OK</button>\n     <button type=\"button\" class=\"").concat(swalClasses.cancel, "\">Cancel</button>\n   </div>\n   <div class=\"").concat(swalClasses.footer, "\">\n   </div>\n </div>\n").replace(/(^|\n)\s*/g, '');
+
+var resetOldContainer = function resetOldContainer() {
+  var oldContainer = getContainer();
+
+  if (!oldContainer) {
+    return;
+  }
+
+  oldContainer.parentNode.removeChild(oldContainer);
+  removeClass([document.documentElement, document.body], [swalClasses['no-backdrop'], swalClasses['toast-shown'], swalClasses['has-column']]);
+};
+
+var oldInputVal; // IE11 workaround, see #1109 for details
+
+var resetValidationMessage = function resetValidationMessage(e) {
+  if (Swal.isVisible() && oldInputVal !== e.target.value) {
+    Swal.resetValidationMessage();
+  }
+
+  oldInputVal = e.target.value;
+};
+
+var addInputChangeListeners = function addInputChangeListeners() {
+  var content = getContent();
+  var input = getChildByClass(content, swalClasses.input);
+  var file = getChildByClass(content, swalClasses.file);
+  var range = content.querySelector(".".concat(swalClasses.range, " input"));
+  var rangeOutput = content.querySelector(".".concat(swalClasses.range, " output"));
+  var select = getChildByClass(content, swalClasses.select);
+  var checkbox = content.querySelector(".".concat(swalClasses.checkbox, " input"));
+  var textarea = getChildByClass(content, swalClasses.textarea);
+  input.oninput = resetValidationMessage;
+  file.onchange = resetValidationMessage;
+  select.onchange = resetValidationMessage;
+  checkbox.onchange = resetValidationMessage;
+  textarea.oninput = resetValidationMessage;
+
+  range.oninput = function (e) {
+    resetValidationMessage(e);
+    rangeOutput.value = range.value;
+  };
+
+  range.onchange = function (e) {
+    resetValidationMessage(e);
+    range.nextSibling.value = range.value;
+  };
+};
+
+var getTarget = function getTarget(target) {
+  return typeof target === 'string' ? document.querySelector(target) : target;
+};
+
+var setupAccessibility = function setupAccessibility(params) {
+  var popup = getPopup();
+  popup.setAttribute('role', params.toast ? 'alert' : 'dialog');
+  popup.setAttribute('aria-live', params.toast ? 'polite' : 'assertive');
+
+  if (!params.toast) {
+    popup.setAttribute('aria-modal', 'true');
+  }
+};
+
+var setupRTL = function setupRTL(targetElement) {
+  if (window.getComputedStyle(targetElement).direction === 'rtl') {
+    addClass(getContainer(), swalClasses.rtl);
+  }
+};
+/*
+ * Add modal + backdrop to DOM
+ */
+
+
+var init = function init(params) {
+  // Clean up the old popup container if it exists
+  resetOldContainer();
+  /* istanbul ignore if */
+
+  if (isNodeEnv()) {
+    error('SweetAlert2 requires document to initialize');
+    return;
+  }
+
+  var container = document.createElement('div');
+  container.className = swalClasses.container;
+  container.innerHTML = sweetHTML;
+  var targetElement = getTarget(params.target);
+  targetElement.appendChild(container);
+  setupAccessibility(params);
+  setupRTL(targetElement);
+  addInputChangeListeners();
+};
+
+var parseHtmlToContainer = function parseHtmlToContainer(param, target) {
+  // DOM element
+  if (param instanceof HTMLElement) {
+    target.appendChild(param); // JQuery element(s)
+  } else if (_typeof(param) === 'object') {
+    handleJqueryElem(target, param); // Plain string
+  } else if (param) {
+    target.innerHTML = param;
+  }
+};
+
+var handleJqueryElem = function handleJqueryElem(target, elem) {
+  target.innerHTML = '';
+
+  if (0 in elem) {
+    for (var i = 0; i in elem; i++) {
+      target.appendChild(elem[i].cloneNode(true));
+    }
+  } else {
+    target.appendChild(elem.cloneNode(true));
+  }
+};
+
+var animationEndEvent = function () {
+  // Prevent run in Node env
+
+  /* istanbul ignore if */
+  if (isNodeEnv()) {
+    return false;
+  }
+
+  var testEl = document.createElement('div');
+  var transEndEventNames = {
+    WebkitAnimation: 'webkitAnimationEnd',
+    OAnimation: 'oAnimationEnd oanimationend',
+    animation: 'animationend'
+  };
+
+  for (var i in transEndEventNames) {
+    if (Object.prototype.hasOwnProperty.call(transEndEventNames, i) && typeof testEl.style[i] !== 'undefined') {
+      return transEndEventNames[i];
+    }
+  }
+
+  return false;
+}();
+
+// Measure width of scrollbar
+// https://github.com/twbs/bootstrap/blob/master/js/modal.js#L279-L286
+var measureScrollbar = function measureScrollbar() {
+  var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+  if (supportsTouch) {
+    return 0;
+  }
+
+  var scrollDiv = document.createElement('div');
+  scrollDiv.style.width = '50px';
+  scrollDiv.style.height = '50px';
+  scrollDiv.style.overflow = 'scroll';
+  document.body.appendChild(scrollDiv);
+  var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+  document.body.removeChild(scrollDiv);
+  return scrollbarWidth;
+};
+
+var renderActions = function renderActions(instance, params) {
+  var actions = getActions();
+  var confirmButton = getConfirmButton();
+  var cancelButton = getCancelButton(); // Actions (buttons) wrapper
+
+  if (!params.showConfirmButton && !params.showCancelButton) {
+    hide(actions);
+  } // Custom class
+
+
+  applyCustomClass(actions, params.customClass, 'actions'); // Render confirm button
+
+  renderButton(confirmButton, 'confirm', params); // render Cancel Button
+
+  renderButton(cancelButton, 'cancel', params);
+
+  if (params.buttonsStyling) {
+    handleButtonsStyling(confirmButton, cancelButton, params);
+  } else {
+    removeClass([confirmButton, cancelButton], swalClasses.styled);
+    confirmButton.style.backgroundColor = confirmButton.style.borderLeftColor = confirmButton.style.borderRightColor = '';
+    cancelButton.style.backgroundColor = cancelButton.style.borderLeftColor = cancelButton.style.borderRightColor = '';
+  }
+
+  if (params.reverseButtons) {
+    confirmButton.parentNode.insertBefore(cancelButton, confirmButton);
+  }
+};
+
+function handleButtonsStyling(confirmButton, cancelButton, params) {
+  addClass([confirmButton, cancelButton], swalClasses.styled); // Buttons background colors
+
+  if (params.confirmButtonColor) {
+    confirmButton.style.backgroundColor = params.confirmButtonColor;
+  }
+
+  if (params.cancelButtonColor) {
+    cancelButton.style.backgroundColor = params.cancelButtonColor;
+  } // Loading state
+
+
+  var confirmButtonBackgroundColor = window.getComputedStyle(confirmButton).getPropertyValue('background-color');
+  confirmButton.style.borderLeftColor = confirmButtonBackgroundColor;
+  confirmButton.style.borderRightColor = confirmButtonBackgroundColor;
+}
+
+function renderButton(button, buttonType, params) {
+  toggle(button, params['showC' + buttonType.substring(1) + 'Button'], 'inline-block');
+  button.innerHTML = params[buttonType + 'ButtonText']; // Set caption text
+
+  button.setAttribute('aria-label', params[buttonType + 'ButtonAriaLabel']); // ARIA label
+  // Add buttons custom classes
+
+  button.className = swalClasses[buttonType];
+  applyCustomClass(button, params.customClass, buttonType + 'Button');
+  addClass(button, params[buttonType + 'ButtonClass']);
+}
+
+function handleBackdropParam(container, backdrop) {
+  if (typeof backdrop === 'string') {
+    container.style.background = backdrop;
+  } else if (!backdrop) {
+    addClass([document.documentElement, document.body], swalClasses['no-backdrop']);
+  }
+}
+
+function handlePositionParam(container, position) {
+  if (position in swalClasses) {
+    addClass(container, swalClasses[position]);
+  } else {
+    warn('The "position" parameter is not valid, defaulting to "center"');
+    addClass(container, swalClasses.center);
+  }
+}
+
+function handleGrowParam(container, grow) {
+  if (grow && typeof grow === 'string') {
+    var growClass = 'grow-' + grow;
+
+    if (growClass in swalClasses) {
+      addClass(container, swalClasses[growClass]);
+    }
+  }
+}
+
+var renderContainer = function renderContainer(instance, params) {
+  var container = getContainer();
+
+  if (!container) {
+    return;
+  }
+
+  handleBackdropParam(container, params.backdrop);
+
+  if (!params.backdrop && params.allowOutsideClick) {
+    warn('"allowOutsideClick" parameter requires `backdrop` parameter to be set to `true`');
+  }
+
+  handlePositionParam(container, params.position);
+  handleGrowParam(container, params.grow); // Custom class
+
+  applyCustomClass(container, params.customClass, 'container');
+
+  if (params.customContainerClass) {
+    // @deprecated
+    addClass(container, params.customContainerClass);
+  }
+};
+
+/**
+ * This module containts `WeakMap`s for each effectively-"private  property" that a `Swal` has.
+ * For example, to set the private property "foo" of `this` to "bar", you can `privateProps.foo.set(this, 'bar')`
+ * This is the approach that Babel will probably take to implement private methods/fields
+ *   https://github.com/tc39/proposal-private-methods
+ *   https://github.com/babel/babel/pull/7555
+ * Once we have the changes from that PR in Babel, and our core class fits reasonable in *one module*
+ *   then we can use that language feature.
+ */
+var privateProps = {
+  promise: new WeakMap(),
+  innerParams: new WeakMap(),
+  domCache: new WeakMap()
+};
+
+var inputTypes = ['input', 'file', 'range', 'select', 'radio', 'checkbox', 'textarea'];
+var renderInput = function renderInput(instance, params) {
+  var content = getContent();
+  var innerParams = privateProps.innerParams.get(instance);
+  var rerender = !innerParams || params.input !== innerParams.input;
+  inputTypes.forEach(function (inputType) {
+    var inputClass = swalClasses[inputType];
+    var inputContainer = getChildByClass(content, inputClass); // set attributes
+
+    setAttributes(inputType, params.inputAttributes); // set class
+
+    setClass(inputContainer, inputClass, params);
+
+    if (rerender) {
+      hide(inputContainer);
+    }
+  });
+
+  if (params.input && rerender) {
+    showInput(params);
+  }
+};
+
+var showInput = function showInput(params) {
+  if (!renderInputType[params.input]) {
+    return error("Unexpected type of input! Expected \"text\", \"email\", \"password\", \"number\", \"tel\", \"select\", \"radio\", \"checkbox\", \"textarea\", \"file\" or \"url\", got \"".concat(params.input, "\""));
+  }
+
+  var input = renderInputType[params.input](params);
+  show(input); // input autofocus
+
+  setTimeout(function () {
+    focusInput(input);
+  });
+};
+
+var removeAttributes = function removeAttributes(input) {
+  for (var i = 0; i < input.attributes.length; i++) {
+    var attrName = input.attributes[i].name;
+
+    if (!(['type', 'value', 'style'].indexOf(attrName) !== -1)) {
+      input.removeAttribute(attrName);
+    }
+  }
+};
+
+var setAttributes = function setAttributes(inputType, inputAttributes) {
+  var input = getInput(getContent(), inputType);
+
+  if (!input) {
+    return;
+  }
+
+  removeAttributes(input);
+
+  for (var attr in inputAttributes) {
+    // Do not set a placeholder for <input type="range">
+    // it'll crash Edge, #1298
+    if (inputType === 'range' && attr === 'placeholder') {
+      continue;
+    }
+
+    input.setAttribute(attr, inputAttributes[attr]);
+  }
+};
+
+var setClass = function setClass(inputContainer, inputClass, params) {
+  inputContainer.className = inputClass;
+
+  if (params.inputClass) {
+    addClass(inputContainer, params.inputClass);
+  }
+
+  if (params.customClass) {
+    addClass(inputContainer, params.customClass.input);
+  }
+};
+
+var setInputPlaceholder = function setInputPlaceholder(input, params) {
+  if (!input.placeholder || params.inputPlaceholder) {
+    input.placeholder = params.inputPlaceholder;
+  }
+};
+
+var renderInputType = {};
+
+renderInputType.text = renderInputType.email = renderInputType.password = renderInputType.number = renderInputType.tel = renderInputType.url = function (params) {
+  var input = getChildByClass(getContent(), swalClasses.input);
+
+  if (typeof params.inputValue === 'string' || typeof params.inputValue === 'number') {
+    input.value = params.inputValue;
+  } else if (!isPromise(params.inputValue)) {
+    warn("Unexpected type of inputValue! Expected \"string\", \"number\" or \"Promise\", got \"".concat(_typeof(params.inputValue), "\""));
+  }
+
+  setInputPlaceholder(input, params);
+  input.type = params.input;
+  return input;
+};
+
+renderInputType.file = function (params) {
+  var input = getChildByClass(getContent(), swalClasses.file);
+  setInputPlaceholder(input, params);
+  input.type = params.input;
+  return input;
+};
+
+renderInputType.range = function (params) {
+  var range = getChildByClass(getContent(), swalClasses.range);
+  var rangeInput = range.querySelector('input');
+  var rangeOutput = range.querySelector('output');
+  rangeInput.value = params.inputValue;
+  rangeInput.type = params.input;
+  rangeOutput.value = params.inputValue;
+  return range;
+};
+
+renderInputType.select = function (params) {
+  var select = getChildByClass(getContent(), swalClasses.select);
+  select.innerHTML = '';
+
+  if (params.inputPlaceholder) {
+    var placeholder = document.createElement('option');
+    placeholder.innerHTML = params.inputPlaceholder;
+    placeholder.value = '';
+    placeholder.disabled = true;
+    placeholder.selected = true;
+    select.appendChild(placeholder);
+  }
+
+  return select;
+};
+
+renderInputType.radio = function () {
+  var radio = getChildByClass(getContent(), swalClasses.radio);
+  radio.innerHTML = '';
+  return radio;
+};
+
+renderInputType.checkbox = function (params) {
+  var checkbox = getChildByClass(getContent(), swalClasses.checkbox);
+  var checkboxInput = getInput(getContent(), 'checkbox');
+  checkboxInput.type = 'checkbox';
+  checkboxInput.value = 1;
+  checkboxInput.id = swalClasses.checkbox;
+  checkboxInput.checked = Boolean(params.inputValue);
+  var label = checkbox.querySelector('span');
+  label.innerHTML = params.inputPlaceholder;
+  return checkbox;
+};
+
+renderInputType.textarea = function (params) {
+  var textarea = getChildByClass(getContent(), swalClasses.textarea);
+  textarea.value = params.inputValue;
+  setInputPlaceholder(textarea, params);
+
+  if ('MutationObserver' in window) {
+    // #1699
+    var initialPopupWidth = parseInt(window.getComputedStyle(getPopup()).width);
+    var popupPadding = parseInt(window.getComputedStyle(getPopup()).paddingLeft) + parseInt(window.getComputedStyle(getPopup()).paddingRight);
+
+    var outputsize = function outputsize() {
+      var contentWidth = textarea.offsetWidth + popupPadding;
+
+      if (contentWidth > initialPopupWidth) {
+        getPopup().style.width = contentWidth + 'px';
+      } else {
+        getPopup().style.width = null;
+      }
+    };
+
+    new MutationObserver(outputsize).observe(textarea, {
+      attributes: true,
+      attributeFilter: ['style']
+    });
+  }
+
+  return textarea;
+};
+
+var renderContent = function renderContent(instance, params) {
+  var content = getContent().querySelector('#' + swalClasses.content); // Content as HTML
+
+  if (params.html) {
+    parseHtmlToContainer(params.html, content);
+    show(content, 'block'); // Content as plain text
+  } else if (params.text) {
+    content.textContent = params.text;
+    show(content, 'block'); // No content
+  } else {
+    hide(content);
+  }
+
+  renderInput(instance, params); // Custom class
+
+  applyCustomClass(getContent(), params.customClass, 'content');
+};
+
+var renderFooter = function renderFooter(instance, params) {
+  var footer = getFooter();
+  toggle(footer, params.footer);
+
+  if (params.footer) {
+    parseHtmlToContainer(params.footer, footer);
+  } // Custom class
+
+
+  applyCustomClass(footer, params.customClass, 'footer');
+};
+
+var renderCloseButton = function renderCloseButton(instance, params) {
+  var closeButton = getCloseButton();
+  closeButton.innerHTML = params.closeButtonHtml; // Custom class
+
+  applyCustomClass(closeButton, params.customClass, 'closeButton');
+  toggle(closeButton, params.showCloseButton);
+  closeButton.setAttribute('aria-label', params.closeButtonAriaLabel);
+};
+
+var renderIcon = function renderIcon(instance, params) {
+  var innerParams = privateProps.innerParams.get(instance); // if the icon with the given type already rendered,
+  // apply the custom class without re-rendering the icon
+
+  if (innerParams && params.type === innerParams.type && getIcon()) {
+    applyCustomClass(getIcon(), params.customClass, 'icon');
+    return;
+  }
+
+  hideAllIcons();
+
+  if (!params.type) {
+    return;
+  }
+
+  adjustSuccessIconBackgoundColor();
+
+  if (Object.keys(iconTypes).indexOf(params.type) !== -1) {
+    var icon = elementBySelector(".".concat(swalClasses.icon, ".").concat(iconTypes[params.type]));
+    show(icon); // Custom class
+
+    applyCustomClass(icon, params.customClass, 'icon'); // Animate icon
+
+    toggleClass(icon, "swal2-animate-".concat(params.type, "-icon"), params.animation);
+  } else {
+    error("Unknown type! Expected \"success\", \"error\", \"warning\", \"info\" or \"question\", got \"".concat(params.type, "\""));
+  }
+};
+
+var hideAllIcons = function hideAllIcons() {
+  var icons = getIcons();
+
+  for (var i = 0; i < icons.length; i++) {
+    hide(icons[i]);
+  }
+}; // Adjust success icon background color to match the popup background color
+
+
+var adjustSuccessIconBackgoundColor = function adjustSuccessIconBackgoundColor() {
+  var popup = getPopup();
+  var popupBackgroundColor = window.getComputedStyle(popup).getPropertyValue('background-color');
+  var successIconParts = popup.querySelectorAll('[class^=swal2-success-circular-line], .swal2-success-fix');
+
+  for (var i = 0; i < successIconParts.length; i++) {
+    successIconParts[i].style.backgroundColor = popupBackgroundColor;
+  }
+};
+
+var renderImage = function renderImage(instance, params) {
+  var image = getImage();
+
+  if (!params.imageUrl) {
+    return hide(image);
+  }
+
+  show(image); // Src, alt
+
+  image.setAttribute('src', params.imageUrl);
+  image.setAttribute('alt', params.imageAlt); // Width, height
+
+  applyNumericalStyle(image, 'width', params.imageWidth);
+  applyNumericalStyle(image, 'height', params.imageHeight); // Class
+
+  image.className = swalClasses.image;
+  applyCustomClass(image, params.customClass, 'image');
+
+  if (params.imageClass) {
+    addClass(image, params.imageClass);
+  }
+};
+
+var createStepElement = function createStepElement(step) {
+  var stepEl = document.createElement('li');
+  addClass(stepEl, swalClasses['progress-step']);
+  stepEl.innerHTML = step;
+  return stepEl;
+};
+
+var createLineElement = function createLineElement(params) {
+  var lineEl = document.createElement('li');
+  addClass(lineEl, swalClasses['progress-step-line']);
+
+  if (params.progressStepsDistance) {
+    lineEl.style.width = params.progressStepsDistance;
+  }
+
+  return lineEl;
+};
+
+var renderProgressSteps = function renderProgressSteps(instance, params) {
+  var progressStepsContainer = getProgressSteps();
+
+  if (!params.progressSteps || params.progressSteps.length === 0) {
+    return hide(progressStepsContainer);
+  }
+
+  show(progressStepsContainer);
+  progressStepsContainer.innerHTML = '';
+  var currentProgressStep = parseInt(params.currentProgressStep === null ? Swal.getQueueStep() : params.currentProgressStep);
+
+  if (currentProgressStep >= params.progressSteps.length) {
+    warn('Invalid currentProgressStep parameter, it should be less than progressSteps.length ' + '(currentProgressStep like JS arrays starts from 0)');
+  }
+
+  params.progressSteps.forEach(function (step, index) {
+    var stepEl = createStepElement(step);
+    progressStepsContainer.appendChild(stepEl);
+
+    if (index === currentProgressStep) {
+      addClass(stepEl, swalClasses['active-progress-step']);
+    }
+
+    if (index !== params.progressSteps.length - 1) {
+      var lineEl = createLineElement(step);
+      progressStepsContainer.appendChild(lineEl);
+    }
+  });
+};
+
+var renderTitle = function renderTitle(instance, params) {
+  var title = getTitle();
+  toggle(title, params.title || params.titleText);
+
+  if (params.title) {
+    parseHtmlToContainer(params.title, title);
+  }
+
+  if (params.titleText) {
+    title.innerText = params.titleText;
+  } // Custom class
+
+
+  applyCustomClass(title, params.customClass, 'title');
+};
+
+var renderHeader = function renderHeader(instance, params) {
+  var header = getHeader(); // Custom class
+
+  applyCustomClass(header, params.customClass, 'header'); // Progress steps
+
+  renderProgressSteps(instance, params); // Icon
+
+  renderIcon(instance, params); // Image
+
+  renderImage(instance, params); // Title
+
+  renderTitle(instance, params); // Close button
+
+  renderCloseButton(instance, params);
+};
+
+var renderPopup = function renderPopup(instance, params) {
+  var popup = getPopup(); // Width
+
+  applyNumericalStyle(popup, 'width', params.width); // Padding
+
+  applyNumericalStyle(popup, 'padding', params.padding); // Background
+
+  if (params.background) {
+    popup.style.background = params.background;
+  } // Default Class
+
+
+  popup.className = swalClasses.popup;
+
+  if (params.toast) {
+    addClass([document.documentElement, document.body], swalClasses['toast-shown']);
+    addClass(popup, swalClasses.toast);
+  } else {
+    addClass(popup, swalClasses.modal);
+  } // Custom class
+
+
+  applyCustomClass(popup, params.customClass, 'popup');
+
+  if (typeof params.customClass === 'string') {
+    addClass(popup, params.customClass);
+  } // CSS animation
+
+
+  toggleClass(popup, swalClasses.noanimation, !params.animation);
+};
+
+var render = function render(instance, params) {
+  renderPopup(instance, params);
+  renderContainer(instance, params);
+  renderHeader(instance, params);
+  renderContent(instance, params);
+  renderActions(instance, params);
+  renderFooter(instance, params);
+
+  if (typeof params.onRender === 'function') {
+    params.onRender(getPopup());
+  }
+};
+
+/*
+ * Global function to determine if SweetAlert2 popup is shown
+ */
+
+var isVisible$1 = function isVisible$$1() {
+  return isVisible(getPopup());
+};
+/*
+ * Global function to click 'Confirm' button
+ */
+
+var clickConfirm = function clickConfirm() {
+  return getConfirmButton() && getConfirmButton().click();
+};
+/*
+ * Global function to click 'Cancel' button
+ */
+
+var clickCancel = function clickCancel() {
+  return getCancelButton() && getCancelButton().click();
+};
+
+function fire() {
+  var Swal = this;
+
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _construct(Swal, args);
+}
+
+/**
+ * Returns an extended version of `Swal` containing `params` as defaults.
+ * Useful for reusing Swal configuration.
+ *
+ * For example:
+ *
+ * Before:
+ * const textPromptOptions = { input: 'text', showCancelButton: true }
+ * const {value: firstName} = await Swal.fire({ ...textPromptOptions, title: 'What is your first name?' })
+ * const {value: lastName} = await Swal.fire({ ...textPromptOptions, title: 'What is your last name?' })
+ *
+ * After:
+ * const TextPrompt = Swal.mixin({ input: 'text', showCancelButton: true })
+ * const {value: firstName} = await TextPrompt('What is your first name?')
+ * const {value: lastName} = await TextPrompt('What is your last name?')
+ *
+ * @param mixinParams
+ */
+function mixin(mixinParams) {
+  var MixinSwal =
+  /*#__PURE__*/
+  function (_this) {
+    _inherits(MixinSwal, _this);
+
+    function MixinSwal() {
+      _classCallCheck(this, MixinSwal);
+
+      return _possibleConstructorReturn(this, _getPrototypeOf(MixinSwal).apply(this, arguments));
+    }
+
+    _createClass(MixinSwal, [{
+      key: "_main",
+      value: function _main(params) {
+        return _get(_getPrototypeOf(MixinSwal.prototype), "_main", this).call(this, _extends({}, mixinParams, params));
+      }
+    }]);
+
+    return MixinSwal;
+  }(this);
+
+  return MixinSwal;
+}
+
+// private global state for the queue feature
+var currentSteps = [];
+/*
+ * Global function for chaining sweetAlert popups
+ */
+
+var queue = function queue(steps) {
+  var Swal = this;
+  currentSteps = steps;
+
+  var resetAndResolve = function resetAndResolve(resolve, value) {
+    currentSteps = [];
+    document.body.removeAttribute('data-swal2-queue-step');
+    resolve(value);
+  };
+
+  var queueResult = [];
+  return new Promise(function (resolve) {
+    (function step(i, callback) {
+      if (i < currentSteps.length) {
+        document.body.setAttribute('data-swal2-queue-step', i);
+        Swal.fire(currentSteps[i]).then(function (result) {
+          if (typeof result.value !== 'undefined') {
+            queueResult.push(result.value);
+            step(i + 1, callback);
+          } else {
+            resetAndResolve(resolve, {
+              dismiss: result.dismiss
+            });
+          }
+        });
+      } else {
+        resetAndResolve(resolve, {
+          value: queueResult
+        });
+      }
+    })(0);
+  });
+};
+/*
+ * Global function for getting the index of current popup in queue
+ */
+
+var getQueueStep = function getQueueStep() {
+  return document.body.getAttribute('data-swal2-queue-step');
+};
+/*
+ * Global function for inserting a popup to the queue
+ */
+
+var insertQueueStep = function insertQueueStep(step, index) {
+  if (index && index < currentSteps.length) {
+    return currentSteps.splice(index, 0, step);
+  }
+
+  return currentSteps.push(step);
+};
+/*
+ * Global function for deleting a popup from the queue
+ */
+
+var deleteQueueStep = function deleteQueueStep(index) {
+  if (typeof currentSteps[index] !== 'undefined') {
+    currentSteps.splice(index, 1);
+  }
+};
+
+/**
+ * Show spinner instead of Confirm button and disable Cancel button
+ */
+
+var showLoading = function showLoading() {
+  var popup = getPopup();
+
+  if (!popup) {
+    Swal.fire('');
+  }
+
+  popup = getPopup();
+  var actions = getActions();
+  var confirmButton = getConfirmButton();
+  var cancelButton = getCancelButton();
+  show(actions);
+  show(confirmButton);
+  addClass([popup, actions], swalClasses.loading);
+  confirmButton.disabled = true;
+  cancelButton.disabled = true;
+  popup.setAttribute('data-loading', true);
+  popup.setAttribute('aria-busy', true);
+  popup.focus();
+};
+
+var RESTORE_FOCUS_TIMEOUT = 100;
+
+var globalState = {};
+var focusPreviousActiveElement = function focusPreviousActiveElement() {
+  if (globalState.previousActiveElement && globalState.previousActiveElement.focus) {
+    globalState.previousActiveElement.focus();
+    globalState.previousActiveElement = null;
+  } else if (document.body) {
+    document.body.focus();
+  }
+}; // Restore previous active (focused) element
+
+
+var restoreActiveElement = function restoreActiveElement() {
+  return new Promise(function (resolve) {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    globalState.restoreFocusTimeout = setTimeout(function () {
+      focusPreviousActiveElement();
+      resolve();
+    }, RESTORE_FOCUS_TIMEOUT); // issues/900
+
+    if (typeof x !== 'undefined' && typeof y !== 'undefined') {
+      // IE doesn't have scrollX/scrollY support
+      window.scrollTo(x, y);
+    }
+  });
+};
+
+/**
+ * If `timer` parameter is set, returns number of milliseconds of timer remained.
+ * Otherwise, returns undefined.
+ */
+
+var getTimerLeft = function getTimerLeft() {
+  return globalState.timeout && globalState.timeout.getTimerLeft();
+};
+/**
+ * Stop timer. Returns number of milliseconds of timer remained.
+ * If `timer` parameter isn't set, returns undefined.
+ */
+
+var stopTimer = function stopTimer() {
+  return globalState.timeout && globalState.timeout.stop();
+};
+/**
+ * Resume timer. Returns number of milliseconds of timer remained.
+ * If `timer` parameter isn't set, returns undefined.
+ */
+
+var resumeTimer = function resumeTimer() {
+  return globalState.timeout && globalState.timeout.start();
+};
+/**
+ * Resume timer. Returns number of milliseconds of timer remained.
+ * If `timer` parameter isn't set, returns undefined.
+ */
+
+var toggleTimer = function toggleTimer() {
+  var timer = globalState.timeout;
+  return timer && (timer.running ? timer.stop() : timer.start());
+};
+/**
+ * Increase timer. Returns number of milliseconds of an updated timer.
+ * If `timer` parameter isn't set, returns undefined.
+ */
+
+var increaseTimer = function increaseTimer(n) {
+  return globalState.timeout && globalState.timeout.increase(n);
+};
+/**
+ * Check if timer is running. Returns true if timer is running
+ * or false if timer is paused or stopped.
+ * If `timer` parameter isn't set, returns undefined
+ */
+
+var isTimerRunning = function isTimerRunning() {
+  return globalState.timeout && globalState.timeout.isRunning();
+};
+
+var defaultParams = {
+  title: '',
+  titleText: '',
+  text: '',
+  html: '',
+  footer: '',
+  type: null,
+  toast: false,
+  customClass: '',
+  customContainerClass: '',
+  target: 'body',
+  backdrop: true,
+  animation: true,
+  heightAuto: true,
+  allowOutsideClick: true,
+  allowEscapeKey: true,
+  allowEnterKey: true,
+  stopKeydownPropagation: true,
+  keydownListenerCapture: false,
+  showConfirmButton: true,
+  showCancelButton: false,
+  preConfirm: null,
+  confirmButtonText: 'OK',
+  confirmButtonAriaLabel: '',
+  confirmButtonColor: null,
+  confirmButtonClass: '',
+  cancelButtonText: 'Cancel',
+  cancelButtonAriaLabel: '',
+  cancelButtonColor: null,
+  cancelButtonClass: '',
+  buttonsStyling: true,
+  reverseButtons: false,
+  focusConfirm: true,
+  focusCancel: false,
+  showCloseButton: false,
+  closeButtonHtml: '&times;',
+  closeButtonAriaLabel: 'Close this dialog',
+  showLoaderOnConfirm: false,
+  imageUrl: null,
+  imageWidth: null,
+  imageHeight: null,
+  imageAlt: '',
+  imageClass: '',
+  timer: null,
+  width: null,
+  padding: null,
+  background: null,
+  input: null,
+  inputPlaceholder: '',
+  inputValue: '',
+  inputOptions: {},
+  inputAutoTrim: true,
+  inputClass: '',
+  inputAttributes: {},
+  inputValidator: null,
+  validationMessage: null,
+  grow: false,
+  position: 'center',
+  progressSteps: [],
+  currentProgressStep: null,
+  progressStepsDistance: null,
+  onBeforeOpen: null,
+  onOpen: null,
+  onRender: null,
+  onClose: null,
+  onAfterClose: null,
+  scrollbarPadding: true
+};
+var updatableParams = ['title', 'titleText', 'text', 'html', 'type', 'customClass', 'showConfirmButton', 'showCancelButton', 'confirmButtonText', 'confirmButtonAriaLabel', 'confirmButtonColor', 'confirmButtonClass', 'cancelButtonText', 'cancelButtonAriaLabel', 'cancelButtonColor', 'cancelButtonClass', 'buttonsStyling', 'reverseButtons', 'imageUrl', 'imageWidth', 'imageHeigth', 'imageAlt', 'imageClass', 'progressSteps', 'currentProgressStep'];
+var deprecatedParams = {
+  customContainerClass: 'customClass',
+  confirmButtonClass: 'customClass',
+  cancelButtonClass: 'customClass',
+  imageClass: 'customClass',
+  inputClass: 'customClass'
+};
+var toastIncompatibleParams = ['allowOutsideClick', 'allowEnterKey', 'backdrop', 'focusConfirm', 'focusCancel', 'heightAuto', 'keydownListenerCapture'];
+/**
+ * Is valid parameter
+ * @param {String} paramName
+ */
+
+var isValidParameter = function isValidParameter(paramName) {
+  return Object.prototype.hasOwnProperty.call(defaultParams, paramName);
+};
+/**
+ * Is valid parameter for Swal.update() method
+ * @param {String} paramName
+ */
+
+var isUpdatableParameter = function isUpdatableParameter(paramName) {
+  return updatableParams.indexOf(paramName) !== -1;
+};
+/**
+ * Is deprecated parameter
+ * @param {String} paramName
+ */
+
+var isDeprecatedParameter = function isDeprecatedParameter(paramName) {
+  return deprecatedParams[paramName];
+};
+
+var checkIfParamIsValid = function checkIfParamIsValid(param) {
+  if (!isValidParameter(param)) {
+    warn("Unknown parameter \"".concat(param, "\""));
+  }
+};
+
+var checkIfToastParamIsValid = function checkIfToastParamIsValid(param) {
+  if (toastIncompatibleParams.indexOf(param) !== -1) {
+    warn("The parameter \"".concat(param, "\" is incompatible with toasts"));
+  }
+};
+
+var checkIfParamIsDeprecated = function checkIfParamIsDeprecated(param) {
+  if (isDeprecatedParameter(param)) {
+    warnAboutDepreation(param, isDeprecatedParameter(param));
+  }
+};
+/**
+ * Show relevant warnings for given params
+ *
+ * @param params
+ */
+
+
+var showWarningsForParams = function showWarningsForParams(params) {
+  for (var param in params) {
+    checkIfParamIsValid(param);
+
+    if (params.toast) {
+      checkIfToastParamIsValid(param);
+    }
+
+    checkIfParamIsDeprecated();
+  }
+};
+
+
+
+var staticMethods = Object.freeze({
+	isValidParameter: isValidParameter,
+	isUpdatableParameter: isUpdatableParameter,
+	isDeprecatedParameter: isDeprecatedParameter,
+	argsToParams: argsToParams,
+	isVisible: isVisible$1,
+	clickConfirm: clickConfirm,
+	clickCancel: clickCancel,
+	getContainer: getContainer,
+	getPopup: getPopup,
+	getTitle: getTitle,
+	getContent: getContent,
+	getImage: getImage,
+	getIcon: getIcon,
+	getIcons: getIcons,
+	getCloseButton: getCloseButton,
+	getActions: getActions,
+	getConfirmButton: getConfirmButton,
+	getCancelButton: getCancelButton,
+	getHeader: getHeader,
+	getFooter: getFooter,
+	getFocusableElements: getFocusableElements,
+	getValidationMessage: getValidationMessage,
+	isLoading: isLoading,
+	fire: fire,
+	mixin: mixin,
+	queue: queue,
+	getQueueStep: getQueueStep,
+	insertQueueStep: insertQueueStep,
+	deleteQueueStep: deleteQueueStep,
+	showLoading: showLoading,
+	enableLoading: showLoading,
+	getTimerLeft: getTimerLeft,
+	stopTimer: stopTimer,
+	resumeTimer: resumeTimer,
+	toggleTimer: toggleTimer,
+	increaseTimer: increaseTimer,
+	isTimerRunning: isTimerRunning
+});
+
+/**
+ * Enables buttons and hide loader.
+ */
+
+function hideLoading() {
+  var innerParams = privateProps.innerParams.get(this);
+  var domCache = privateProps.domCache.get(this);
+
+  if (!innerParams.showConfirmButton) {
+    hide(domCache.confirmButton);
+
+    if (!innerParams.showCancelButton) {
+      hide(domCache.actions);
+    }
+  }
+
+  removeClass([domCache.popup, domCache.actions], swalClasses.loading);
+  domCache.popup.removeAttribute('aria-busy');
+  domCache.popup.removeAttribute('data-loading');
+  domCache.confirmButton.disabled = false;
+  domCache.cancelButton.disabled = false;
+}
+
+function getInput$1(instance) {
+  var innerParams = privateProps.innerParams.get(instance || this);
+  var domCache = privateProps.domCache.get(instance || this);
+
+  if (!domCache) {
+    return null;
+  }
+
+  return getInput(domCache.content, innerParams.input);
+}
+
+var fixScrollbar = function fixScrollbar() {
+  // for queues, do not do this more than once
+  if (states.previousBodyPadding !== null) {
+    return;
+  } // if the body has overflow
+
+
+  if (document.body.scrollHeight > window.innerHeight) {
+    // add padding so the content doesn't shift after removal of scrollbar
+    states.previousBodyPadding = parseInt(window.getComputedStyle(document.body).getPropertyValue('padding-right'));
+    document.body.style.paddingRight = states.previousBodyPadding + measureScrollbar() + 'px';
+  }
+};
+var undoScrollbar = function undoScrollbar() {
+  if (states.previousBodyPadding !== null) {
+    document.body.style.paddingRight = states.previousBodyPadding + 'px';
+    states.previousBodyPadding = null;
+  }
+};
+
+/* istanbul ignore next */
+
+var iOSfix = function iOSfix() {
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+  if (iOS && !hasClass(document.body, swalClasses.iosfix)) {
+    var offset = document.body.scrollTop;
+    document.body.style.top = offset * -1 + 'px';
+    addClass(document.body, swalClasses.iosfix);
+    lockBodyScroll();
+  }
+};
+
+var lockBodyScroll = function lockBodyScroll() {
+  // #1246
+  var container = getContainer();
+  var preventTouchMove;
+
+  container.ontouchstart = function (e) {
+    preventTouchMove = e.target === container || !isScrollable(container) && e.target.tagName !== 'INPUT' // #1603
+    ;
+  };
+
+  container.ontouchmove = function (e) {
+    if (preventTouchMove) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  };
+};
+/* istanbul ignore next */
+
+
+var undoIOSfix = function undoIOSfix() {
+  if (hasClass(document.body, swalClasses.iosfix)) {
+    var offset = parseInt(document.body.style.top, 10);
+    removeClass(document.body, swalClasses.iosfix);
+    document.body.style.top = '';
+    document.body.scrollTop = offset * -1;
+  }
+};
+
+var isIE11 = function isIE11() {
+  return !!window.MSInputMethodContext && !!document.documentMode;
+}; // Fix IE11 centering sweetalert2/issues/933
+
+/* istanbul ignore next */
+
+
+var fixVerticalPositionIE = function fixVerticalPositionIE() {
+  var container = getContainer();
+  var popup = getPopup();
+  container.style.removeProperty('align-items');
+
+  if (popup.offsetTop < 0) {
+    container.style.alignItems = 'flex-start';
+  }
+};
+/* istanbul ignore next */
+
+
+var IEfix = function IEfix() {
+  if (typeof window !== 'undefined' && isIE11()) {
+    fixVerticalPositionIE();
+    window.addEventListener('resize', fixVerticalPositionIE);
+  }
+};
+/* istanbul ignore next */
+
+var undoIEfix = function undoIEfix() {
+  if (typeof window !== 'undefined' && isIE11()) {
+    window.removeEventListener('resize', fixVerticalPositionIE);
+  }
+};
+
+// Adding aria-hidden="true" to elements outside of the active modal dialog ensures that
+// elements not within the active modal dialog will not be surfaced if a user opens a screen
+// reader’s list of elements (headings, form controls, landmarks, etc.) in the document.
+
+var setAriaHidden = function setAriaHidden() {
+  var bodyChildren = toArray(document.body.children);
+  bodyChildren.forEach(function (el) {
+    if (el === getContainer() || contains(el, getContainer())) {
+      return;
+    }
+
+    if (el.hasAttribute('aria-hidden')) {
+      el.setAttribute('data-previous-aria-hidden', el.getAttribute('aria-hidden'));
+    }
+
+    el.setAttribute('aria-hidden', 'true');
+  });
+};
+var unsetAriaHidden = function unsetAriaHidden() {
+  var bodyChildren = toArray(document.body.children);
+  bodyChildren.forEach(function (el) {
+    if (el.hasAttribute('data-previous-aria-hidden')) {
+      el.setAttribute('aria-hidden', el.getAttribute('data-previous-aria-hidden'));
+      el.removeAttribute('data-previous-aria-hidden');
+    } else {
+      el.removeAttribute('aria-hidden');
+    }
+  });
+};
+
+/**
+ * This module containts `WeakMap`s for each effectively-"private  property" that a `Swal` has.
+ * For example, to set the private property "foo" of `this` to "bar", you can `privateProps.foo.set(this, 'bar')`
+ * This is the approach that Babel will probably take to implement private methods/fields
+ *   https://github.com/tc39/proposal-private-methods
+ *   https://github.com/babel/babel/pull/7555
+ * Once we have the changes from that PR in Babel, and our core class fits reasonable in *one module*
+ *   then we can use that language feature.
+ */
+var privateMethods = {
+  swalPromiseResolve: new WeakMap()
+};
+
+/*
+ * Instance method to close sweetAlert
+ */
+
+function removePopupAndResetState(instance, container, isToast, onAfterClose) {
+  if (isToast) {
+    triggerOnAfterCloseAndDispose(instance, onAfterClose);
+  } else {
+    restoreActiveElement().then(function () {
+      return triggerOnAfterCloseAndDispose(instance, onAfterClose);
+    });
+    globalState.keydownTarget.removeEventListener('keydown', globalState.keydownHandler, {
+      capture: globalState.keydownListenerCapture
+    });
+    globalState.keydownHandlerAdded = false;
+  }
+
+  if (container.parentNode) {
+    container.parentNode.removeChild(container);
+  }
+
+  if (isModal()) {
+    undoScrollbar();
+    undoIOSfix();
+    undoIEfix();
+    unsetAriaHidden();
+  }
+
+  removeBodyClasses();
+}
+
+function removeBodyClasses() {
+  removeClass([document.documentElement, document.body], [swalClasses.shown, swalClasses['height-auto'], swalClasses['no-backdrop'], swalClasses['toast-shown'], swalClasses['toast-column']]);
+}
+
+function disposeSwal(instance) {
+  // Unset this.params so GC will dispose it (#1569)
+  delete instance.params; // Unset globalState props so GC will dispose globalState (#1569)
+
+  delete globalState.keydownHandler;
+  delete globalState.keydownTarget; // Unset WeakMaps so GC will be able to dispose them (#1569)
+
+  unsetWeakMaps(privateProps);
+  unsetWeakMaps(privateMethods);
+}
+
+function close(resolveValue) {
+  var popup = getPopup();
+
+  if (!popup || hasClass(popup, swalClasses.hide)) {
+    return;
+  }
+
+  var innerParams = privateProps.innerParams.get(this);
+
+  if (!innerParams) {
+    return;
+  }
+
+  var swalPromiseResolve = privateMethods.swalPromiseResolve.get(this);
+  removeClass(popup, swalClasses.show);
+  addClass(popup, swalClasses.hide);
+  handlePopupAnimation(this, popup, innerParams); // Resolve Swal promise
+
+  swalPromiseResolve(resolveValue || {});
+}
+
+var handlePopupAnimation = function handlePopupAnimation(instance, popup, innerParams) {
+  var container = getContainer(); // If animation is supported, animate
+
+  var animationIsSupported = animationEndEvent && hasCssAnimation(popup);
+  var onClose = innerParams.onClose,
+      onAfterClose = innerParams.onAfterClose;
+
+  if (onClose !== null && typeof onClose === 'function') {
+    onClose(popup);
+  }
+
+  if (animationIsSupported) {
+    animatePopup(instance, popup, container, onAfterClose);
+  } else {
+    // Otherwise, remove immediately
+    removePopupAndResetState(instance, container, isToast(), onAfterClose);
+  }
+};
+
+var animatePopup = function animatePopup(instance, popup, container, onAfterClose) {
+  globalState.swalCloseEventFinishedCallback = removePopupAndResetState.bind(null, instance, container, isToast(), onAfterClose);
+  popup.addEventListener(animationEndEvent, function (e) {
+    if (e.target === popup) {
+      globalState.swalCloseEventFinishedCallback();
+      delete globalState.swalCloseEventFinishedCallback;
+    }
+  });
+};
+
+var unsetWeakMaps = function unsetWeakMaps(obj) {
+  for (var i in obj) {
+    obj[i] = new WeakMap();
+  }
+};
+
+var triggerOnAfterCloseAndDispose = function triggerOnAfterCloseAndDispose(instance, onAfterClose) {
+  setTimeout(function () {
+    if (onAfterClose !== null && typeof onAfterClose === 'function') {
+      onAfterClose();
+    }
+
+    if (!getPopup()) {
+      disposeSwal(instance);
+    }
+  });
+};
+
+function setButtonsDisabled(instance, buttons, disabled) {
+  var domCache = privateProps.domCache.get(instance);
+  buttons.forEach(function (button) {
+    domCache[button].disabled = disabled;
+  });
+}
+
+function setInputDisabled(input, disabled) {
+  if (!input) {
+    return false;
+  }
+
+  if (input.type === 'radio') {
+    var radiosContainer = input.parentNode.parentNode;
+    var radios = radiosContainer.querySelectorAll('input');
+
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].disabled = disabled;
+    }
+  } else {
+    input.disabled = disabled;
+  }
+}
+
+function enableButtons() {
+  setButtonsDisabled(this, ['confirmButton', 'cancelButton'], false);
+}
+function disableButtons() {
+  setButtonsDisabled(this, ['confirmButton', 'cancelButton'], true);
+} // @deprecated
+
+function enableConfirmButton() {
+  warnAboutDepreation('Swal.enableConfirmButton()', "Swal.getConfirmButton().removeAttribute('disabled')");
+  setButtonsDisabled(this, ['confirmButton'], false);
+} // @deprecated
+
+function disableConfirmButton() {
+  warnAboutDepreation('Swal.disableConfirmButton()', "Swal.getConfirmButton().setAttribute('disabled', '')");
+  setButtonsDisabled(this, ['confirmButton'], true);
+}
+function enableInput() {
+  return setInputDisabled(this.getInput(), false);
+}
+function disableInput() {
+  return setInputDisabled(this.getInput(), true);
+}
+
+function showValidationMessage(error) {
+  var domCache = privateProps.domCache.get(this);
+  domCache.validationMessage.innerHTML = error;
+  var popupComputedStyle = window.getComputedStyle(domCache.popup);
+  domCache.validationMessage.style.marginLeft = "-".concat(popupComputedStyle.getPropertyValue('padding-left'));
+  domCache.validationMessage.style.marginRight = "-".concat(popupComputedStyle.getPropertyValue('padding-right'));
+  show(domCache.validationMessage);
+  var input = this.getInput();
+
+  if (input) {
+    input.setAttribute('aria-invalid', true);
+    input.setAttribute('aria-describedBy', swalClasses['validation-message']);
+    focusInput(input);
+    addClass(input, swalClasses.inputerror);
+  }
+} // Hide block with validation message
+
+function resetValidationMessage$1() {
+  var domCache = privateProps.domCache.get(this);
+
+  if (domCache.validationMessage) {
+    hide(domCache.validationMessage);
+  }
+
+  var input = this.getInput();
+
+  if (input) {
+    input.removeAttribute('aria-invalid');
+    input.removeAttribute('aria-describedBy');
+    removeClass(input, swalClasses.inputerror);
+  }
+}
+
+function getProgressSteps$1() {
+  warnAboutDepreation('Swal.getProgressSteps()', "const swalInstance = Swal.fire({progressSteps: ['1', '2', '3']}); const progressSteps = swalInstance.params.progressSteps");
+  var innerParams = privateProps.innerParams.get(this);
+  return innerParams.progressSteps;
+}
+function setProgressSteps(progressSteps) {
+  warnAboutDepreation('Swal.setProgressSteps()', 'Swal.update()');
+  var innerParams = privateProps.innerParams.get(this);
+
+  var updatedParams = _extends({}, innerParams, {
+    progressSteps: progressSteps
+  });
+
+  renderProgressSteps(this, updatedParams);
+  privateProps.innerParams.set(this, updatedParams);
+}
+function showProgressSteps() {
+  var domCache = privateProps.domCache.get(this);
+  show(domCache.progressSteps);
+}
+function hideProgressSteps() {
+  var domCache = privateProps.domCache.get(this);
+  hide(domCache.progressSteps);
+}
+
+var Timer =
+/*#__PURE__*/
+function () {
+  function Timer(callback, delay) {
+    _classCallCheck(this, Timer);
+
+    this.callback = callback;
+    this.remaining = delay;
+    this.running = false;
+    this.start();
+  }
+
+  _createClass(Timer, [{
+    key: "start",
+    value: function start() {
+      if (!this.running) {
+        this.running = true;
+        this.started = new Date();
+        this.id = setTimeout(this.callback, this.remaining);
+      }
+
+      return this.remaining;
+    }
+  }, {
+    key: "stop",
+    value: function stop() {
+      if (this.running) {
+        this.running = false;
+        clearTimeout(this.id);
+        this.remaining -= new Date() - this.started;
+      }
+
+      return this.remaining;
+    }
+  }, {
+    key: "increase",
+    value: function increase(n) {
+      var running = this.running;
+
+      if (running) {
+        this.stop();
+      }
+
+      this.remaining += n;
+
+      if (running) {
+        this.start();
+      }
+
+      return this.remaining;
+    }
+  }, {
+    key: "getTimerLeft",
+    value: function getTimerLeft() {
+      if (this.running) {
+        this.stop();
+        this.start();
+      }
+
+      return this.remaining;
+    }
+  }, {
+    key: "isRunning",
+    value: function isRunning() {
+      return this.running;
+    }
+  }]);
+
+  return Timer;
+}();
+
+var defaultInputValidators = {
+  email: function email(string, validationMessage) {
+    return /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid email address');
+  },
+  url: function url(string, validationMessage) {
+    // taken from https://stackoverflow.com/a/3809435 with a small change from #1306
+    return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid URL');
+  }
+};
+
+function setDefaultInputValidators(params) {
+  // Use default `inputValidator` for supported input types if not provided
+  if (!params.inputValidator) {
+    Object.keys(defaultInputValidators).forEach(function (key) {
+      if (params.input === key) {
+        params.inputValidator = defaultInputValidators[key];
+      }
+    });
+  }
+}
+
+function validateCustomTargetElement(params) {
+  // Determine if the custom target element is valid
+  if (!params.target || typeof params.target === 'string' && !document.querySelector(params.target) || typeof params.target !== 'string' && !params.target.appendChild) {
+    warn('Target parameter is not valid, defaulting to "body"');
+    params.target = 'body';
+  }
+}
+/**
+ * Set type, text and actions on popup
+ *
+ * @param params
+ * @returns {boolean}
+ */
+
+
+function setParameters(params) {
+  setDefaultInputValidators(params); // showLoaderOnConfirm && preConfirm
+
+  if (params.showLoaderOnConfirm && !params.preConfirm) {
+    warn('showLoaderOnConfirm is set to true, but preConfirm is not defined.\n' + 'showLoaderOnConfirm should be used together with preConfirm, see usage example:\n' + 'https://sweetalert2.github.io/#ajax-request');
+  } // params.animation will be actually used in renderPopup.js
+  // but in case when params.animation is a function, we need to call that function
+  // before popup (re)initialization, so it'll be possible to check Swal.isVisible()
+  // inside the params.animation function
+
+
+  params.animation = callIfFunction(params.animation);
+  validateCustomTargetElement(params); // Replace newlines with <br> in title
+
+  if (typeof params.title === 'string') {
+    params.title = params.title.split('\n').join('<br />');
+  }
+
+  init(params);
+}
+
+function swalOpenAnimationFinished(popup, container) {
+  popup.removeEventListener(animationEndEvent, swalOpenAnimationFinished);
+  container.style.overflowY = 'auto';
+}
+/**
+ * Open popup, add necessary classes and styles, fix scrollbar
+ *
+ * @param {Array} params
+ */
+
+
+var openPopup = function openPopup(params) {
+  var container = getContainer();
+  var popup = getPopup();
+
+  if (typeof params.onBeforeOpen === 'function') {
+    params.onBeforeOpen(popup);
+  }
+
+  addClasses(container, popup, params); // scrolling is 'hidden' until animation is done, after that 'auto'
+
+  setScrollingVisibility(container, popup);
+
+  if (isModal()) {
+    fixScrollContainer(container, params.scrollbarPadding);
+  }
+
+  if (!isToast() && !globalState.previousActiveElement) {
+    globalState.previousActiveElement = document.activeElement;
+  }
+
+  if (typeof params.onOpen === 'function') {
+    setTimeout(function () {
+      return params.onOpen(popup);
+    });
+  }
+};
+
+var setScrollingVisibility = function setScrollingVisibility(container, popup) {
+  if (animationEndEvent && hasCssAnimation(popup)) {
+    container.style.overflowY = 'hidden';
+    popup.addEventListener(animationEndEvent, swalOpenAnimationFinished.bind(null, popup, container));
+  } else {
+    container.style.overflowY = 'auto';
+  }
+};
+
+var fixScrollContainer = function fixScrollContainer(container, scrollbarPadding) {
+  iOSfix();
+  IEfix();
+  setAriaHidden();
+
+  if (scrollbarPadding) {
+    fixScrollbar();
+  } // sweetalert2/issues/1247
+
+
+  setTimeout(function () {
+    container.scrollTop = 0;
+  });
+};
+
+var addClasses = function addClasses(container, popup, params) {
+  if (params.animation) {
+    addClass(popup, swalClasses.show);
+    addClass(container, swalClasses.fade);
+  }
+
+  show(popup);
+  addClass([document.documentElement, document.body, container], swalClasses.shown);
+
+  if (params.heightAuto && params.backdrop && !params.toast) {
+    addClass([document.documentElement, document.body], swalClasses['height-auto']);
+  }
+};
+
+var handleInputOptionsAndValue = function handleInputOptionsAndValue(instance, params) {
+  if (params.input === 'select' || params.input === 'radio') {
+    handleInputOptions(instance, params);
+  } else if (['text', 'email', 'number', 'tel', 'textarea'].indexOf(params.input) !== -1 && isPromise(params.inputValue)) {
+    handleInputValue(instance, params);
+  }
+};
+
+var handleInputOptions = function handleInputOptions(instance, params) {
+  var content = getContent();
+
+  var processInputOptions = function processInputOptions(inputOptions) {
+    return populateInputOptions[params.input](content, formatInputOptions(inputOptions), params);
+  };
+
+  if (isPromise(params.inputOptions)) {
+    showLoading();
+    params.inputOptions.then(function (inputOptions) {
+      instance.hideLoading();
+      processInputOptions(inputOptions);
+    });
+  } else if (_typeof(params.inputOptions) === 'object') {
+    processInputOptions(params.inputOptions);
+  } else {
+    error("Unexpected type of inputOptions! Expected object, Map or Promise, got ".concat(_typeof(params.inputOptions)));
+  }
+};
+
+var handleInputValue = function handleInputValue(instance, params) {
+  var input = instance.getInput();
+  hide(input);
+  params.inputValue.then(function (inputValue) {
+    input.value = params.input === 'number' ? parseFloat(inputValue) || 0 : inputValue + '';
+    show(input);
+    input.focus();
+    instance.hideLoading();
+  })["catch"](function (err) {
+    error('Error in inputValue promise: ' + err);
+    input.value = '';
+    show(input);
+    input.focus();
+    instance.hideLoading();
+  });
+};
+
+var populateInputOptions = {
+  select: function select(content, inputOptions, params) {
+    var select = getChildByClass(content, swalClasses.select);
+    inputOptions.forEach(function (inputOption) {
+      var optionValue = inputOption[0];
+      var optionLabel = inputOption[1];
+      var option = document.createElement('option');
+      option.value = optionValue;
+      option.innerHTML = optionLabel;
+
+      if (params.inputValue.toString() === optionValue.toString()) {
+        option.selected = true;
+      }
+
+      select.appendChild(option);
+    });
+    select.focus();
+  },
+  radio: function radio(content, inputOptions, params) {
+    var radio = getChildByClass(content, swalClasses.radio);
+    inputOptions.forEach(function (inputOption) {
+      var radioValue = inputOption[0];
+      var radioLabel = inputOption[1];
+      var radioInput = document.createElement('input');
+      var radioLabelElement = document.createElement('label');
+      radioInput.type = 'radio';
+      radioInput.name = swalClasses.radio;
+      radioInput.value = radioValue;
+
+      if (params.inputValue.toString() === radioValue.toString()) {
+        radioInput.checked = true;
+      }
+
+      var label = document.createElement('span');
+      label.innerHTML = radioLabel;
+      label.className = swalClasses.label;
+      radioLabelElement.appendChild(radioInput);
+      radioLabelElement.appendChild(label);
+      radio.appendChild(radioLabelElement);
+    });
+    var radios = radio.querySelectorAll('input');
+
+    if (radios.length) {
+      radios[0].focus();
+    }
+  }
+  /**
+   * Converts `inputOptions` into an array of `[value, label]`s
+   * @param inputOptions
+   */
+
+};
+
+var formatInputOptions = function formatInputOptions(inputOptions) {
+  var result = [];
+
+  if (typeof Map !== 'undefined' && inputOptions instanceof Map) {
+    inputOptions.forEach(function (value, key) {
+      result.push([key, value]);
+    });
+  } else {
+    Object.keys(inputOptions).forEach(function (key) {
+      result.push([key, inputOptions[key]]);
+    });
+  }
+
+  return result;
+};
+
+var handleConfirmButtonClick = function handleConfirmButtonClick(instance, innerParams) {
+  instance.disableButtons();
+
+  if (innerParams.input) {
+    handleConfirmWithInput(instance, innerParams);
+  } else {
+    confirm(instance, innerParams, true);
+  }
+};
+var handleCancelButtonClick = function handleCancelButtonClick(instance, dismissWith) {
+  instance.disableButtons();
+  dismissWith(DismissReason.cancel);
+};
+
+var handleConfirmWithInput = function handleConfirmWithInput(instance, innerParams) {
+  var inputValue = getInputValue(instance, innerParams);
+
+  if (innerParams.inputValidator) {
+    instance.disableInput();
+    var validationPromise = Promise.resolve().then(function () {
+      return innerParams.inputValidator(inputValue, innerParams.validationMessage);
+    });
+    validationPromise.then(function (validationMessage) {
+      instance.enableButtons();
+      instance.enableInput();
+
+      if (validationMessage) {
+        instance.showValidationMessage(validationMessage);
+      } else {
+        confirm(instance, innerParams, inputValue);
+      }
+    });
+  } else if (!instance.getInput().checkValidity()) {
+    instance.enableButtons();
+    instance.showValidationMessage(innerParams.validationMessage);
+  } else {
+    confirm(instance, innerParams, inputValue);
+  }
+};
+
+var succeedWith = function succeedWith(instance, value) {
+  instance.closePopup({
+    value: value
+  });
+};
+
+var confirm = function confirm(instance, innerParams, value) {
+  if (innerParams.showLoaderOnConfirm) {
+    showLoading(); // TODO: make showLoading an *instance* method
+  }
+
+  if (innerParams.preConfirm) {
+    instance.resetValidationMessage();
+    var preConfirmPromise = Promise.resolve().then(function () {
+      return innerParams.preConfirm(value, innerParams.validationMessage);
+    });
+    preConfirmPromise.then(function (preConfirmValue) {
+      if (isVisible(getValidationMessage()) || preConfirmValue === false) {
+        instance.hideLoading();
+      } else {
+        succeedWith(instance, typeof preConfirmValue === 'undefined' ? value : preConfirmValue);
+      }
+    });
+  } else {
+    succeedWith(instance, value);
+  }
+};
+
+var getInputValue = function getInputValue(instance, innerParams) {
+  var input = instance.getInput();
+
+  if (!input) {
+    return null;
+  }
+
+  switch (innerParams.input) {
+    case 'checkbox':
+      return getCheckboxValue(input);
+
+    case 'radio':
+      return getRadioValue(input);
+
+    case 'file':
+      return getFileValue(input);
+
+    default:
+      return innerParams.inputAutoTrim ? input.value.trim() : input.value;
+  }
+};
+
+var getCheckboxValue = function getCheckboxValue(input) {
+  return input.checked ? 1 : 0;
+};
+
+var getRadioValue = function getRadioValue(input) {
+  return input.checked ? input.value : null;
+};
+
+var getFileValue = function getFileValue(input) {
+  return input.files.length ? input.files[0] : null;
+};
+
+var addKeydownHandler = function addKeydownHandler(instance, globalState, innerParams, dismissWith) {
+  if (globalState.keydownTarget && globalState.keydownHandlerAdded) {
+    globalState.keydownTarget.removeEventListener('keydown', globalState.keydownHandler, {
+      capture: globalState.keydownListenerCapture
+    });
+    globalState.keydownHandlerAdded = false;
+  }
+
+  if (!innerParams.toast) {
+    globalState.keydownHandler = function (e) {
+      return keydownHandler(instance, e, innerParams, dismissWith);
+    };
+
+    globalState.keydownTarget = innerParams.keydownListenerCapture ? window : getPopup();
+    globalState.keydownListenerCapture = innerParams.keydownListenerCapture;
+    globalState.keydownTarget.addEventListener('keydown', globalState.keydownHandler, {
+      capture: globalState.keydownListenerCapture
+    });
+    globalState.keydownHandlerAdded = true;
+  }
+}; // Focus handling
+
+var setFocus = function setFocus(innerParams, index, increment) {
+  var focusableElements = getFocusableElements(innerParams.focusCancel); // search for visible elements and select the next possible match
+
+  for (var i = 0; i < focusableElements.length; i++) {
+    index = index + increment; // rollover to first item
+
+    if (index === focusableElements.length) {
+      index = 0; // go to last item
+    } else if (index === -1) {
+      index = focusableElements.length - 1;
+    }
+
+    return focusableElements[index].focus();
+  } // no visible focusable elements, focus the popup
+
+
+  getPopup().focus();
+};
+var arrowKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Left', 'Right', 'Up', 'Down' // IE11
+];
+var escKeys = ['Escape', 'Esc' // IE11
+];
+
+var keydownHandler = function keydownHandler(instance, e, innerParams, dismissWith) {
+  if (innerParams.stopKeydownPropagation) {
+    e.stopPropagation();
+  } // ENTER
+
+
+  if (e.key === 'Enter') {
+    handleEnter(instance, e, innerParams); // TAB
+  } else if (e.key === 'Tab') {
+    handleTab(e, innerParams); // ARROWS - switch focus between buttons
+  } else if (arrowKeys.indexOf(e.key) !== -1) {
+    handleArrows(); // ESC
+  } else if (escKeys.indexOf(e.key) !== -1) {
+    handleEsc(e, innerParams, dismissWith);
+  }
+};
+
+var handleEnter = function handleEnter(instance, e, innerParams) {
+  // #720 #721
+  if (e.isComposing) {
+    return;
+  }
+
+  if (e.target && instance.getInput() && e.target.outerHTML === instance.getInput().outerHTML) {
+    if (['textarea', 'file'].indexOf(innerParams.input) !== -1) {
+      return; // do not submit
+    }
+
+    clickConfirm();
+    e.preventDefault();
+  }
+};
+
+var handleTab = function handleTab(e, innerParams) {
+  var targetElement = e.target;
+  var focusableElements = getFocusableElements(innerParams.focusCancel);
+  var btnIndex = -1;
+
+  for (var i = 0; i < focusableElements.length; i++) {
+    if (targetElement === focusableElements[i]) {
+      btnIndex = i;
+      break;
+    }
+  }
+
+  if (!e.shiftKey) {
+    // Cycle to the next button
+    setFocus(innerParams, btnIndex, 1);
+  } else {
+    // Cycle to the prev button
+    setFocus(innerParams, btnIndex, -1);
+  }
+
+  e.stopPropagation();
+  e.preventDefault();
+};
+
+var handleArrows = function handleArrows() {
+  var confirmButton = getConfirmButton();
+  var cancelButton = getCancelButton(); // focus Cancel button if Confirm button is currently focused
+
+  if (document.activeElement === confirmButton && isVisible(cancelButton)) {
+    cancelButton.focus(); // and vice versa
+  } else if (document.activeElement === cancelButton && isVisible(confirmButton)) {
+    confirmButton.focus();
+  }
+};
+
+var handleEsc = function handleEsc(e, innerParams, dismissWith) {
+  if (callIfFunction(innerParams.allowEscapeKey)) {
+    e.preventDefault();
+    dismissWith(DismissReason.esc);
+  }
+};
+
+var handlePopupClick = function handlePopupClick(domCache, innerParams, dismissWith) {
+  if (innerParams.toast) {
+    handleToastClick(domCache, innerParams, dismissWith);
+  } else {
+    // Ignore click events that had mousedown on the popup but mouseup on the container
+    // This can happen when the user drags a slider
+    handleModalMousedown(domCache); // Ignore click events that had mousedown on the container but mouseup on the popup
+
+    handleContainerMousedown(domCache);
+    handleModalClick(domCache, innerParams, dismissWith);
+  }
+};
+
+var handleToastClick = function handleToastClick(domCache, innerParams, dismissWith) {
+  // Closing toast by internal click
+  domCache.popup.onclick = function () {
+    if (innerParams.showConfirmButton || innerParams.showCancelButton || innerParams.showCloseButton || innerParams.input) {
+      return;
+    }
+
+    dismissWith(DismissReason.close);
+  };
+};
+
+var ignoreOutsideClick = false;
+
+var handleModalMousedown = function handleModalMousedown(domCache) {
+  domCache.popup.onmousedown = function () {
+    domCache.container.onmouseup = function (e) {
+      domCache.container.onmouseup = undefined; // We only check if the mouseup target is the container because usually it doesn't
+      // have any other direct children aside of the popup
+
+      if (e.target === domCache.container) {
+        ignoreOutsideClick = true;
+      }
+    };
+  };
+};
+
+var handleContainerMousedown = function handleContainerMousedown(domCache) {
+  domCache.container.onmousedown = function () {
+    domCache.popup.onmouseup = function (e) {
+      domCache.popup.onmouseup = undefined; // We also need to check if the mouseup target is a child of the popup
+
+      if (e.target === domCache.popup || domCache.popup.contains(e.target)) {
+        ignoreOutsideClick = true;
+      }
+    };
+  };
+};
+
+var handleModalClick = function handleModalClick(domCache, innerParams, dismissWith) {
+  domCache.container.onclick = function (e) {
+    if (ignoreOutsideClick) {
+      ignoreOutsideClick = false;
+      return;
+    }
+
+    if (e.target === domCache.container && callIfFunction(innerParams.allowOutsideClick)) {
+      dismissWith(DismissReason.backdrop);
+    }
+  };
+};
+
+function _main(userParams) {
+  showWarningsForParams(userParams); // Check if there is another Swal closing
+
+  if (getPopup() && globalState.swalCloseEventFinishedCallback) {
+    globalState.swalCloseEventFinishedCallback();
+    delete globalState.swalCloseEventFinishedCallback;
+  } // Check if there is a swal disposal defer timer
+
+
+  if (globalState.deferDisposalTimer) {
+    clearTimeout(globalState.deferDisposalTimer);
+    delete globalState.deferDisposalTimer;
+  }
+
+  var innerParams = _extends({}, defaultParams, userParams);
+
+  setParameters(innerParams);
+  Object.freeze(innerParams); // clear the previous timer
+
+  if (globalState.timeout) {
+    globalState.timeout.stop();
+    delete globalState.timeout;
+  } // clear the restore focus timeout
+
+
+  clearTimeout(globalState.restoreFocusTimeout);
+  var domCache = populateDomCache(this);
+  render(this, innerParams);
+  privateProps.innerParams.set(this, innerParams);
+  return swalPromise(this, domCache, innerParams);
+}
+
+var swalPromise = function swalPromise(instance, domCache, innerParams) {
+  return new Promise(function (resolve) {
+    // functions to handle all closings/dismissals
+    var dismissWith = function dismissWith(dismiss) {
+      instance.closePopup({
+        dismiss: dismiss
+      });
+    };
+
+    privateMethods.swalPromiseResolve.set(instance, resolve);
+    setupTimer(globalState, innerParams, dismissWith);
+
+    domCache.confirmButton.onclick = function () {
+      return handleConfirmButtonClick(instance, innerParams);
+    };
+
+    domCache.cancelButton.onclick = function () {
+      return handleCancelButtonClick(instance, dismissWith);
+    };
+
+    domCache.closeButton.onclick = function () {
+      return dismissWith(DismissReason.close);
+    };
+
+    handlePopupClick(domCache, innerParams, dismissWith);
+    addKeydownHandler(instance, globalState, innerParams, dismissWith);
+
+    if (innerParams.toast && (innerParams.input || innerParams.footer || innerParams.showCloseButton)) {
+      addClass(document.body, swalClasses['toast-column']);
+    } else {
+      removeClass(document.body, swalClasses['toast-column']);
+    }
+
+    handleInputOptionsAndValue(instance, innerParams);
+    openPopup(innerParams);
+    initFocus(domCache, innerParams); // Scroll container to top on open (#1247)
+
+    domCache.container.scrollTop = 0;
+  });
+};
+
+var populateDomCache = function populateDomCache(instance) {
+  var domCache = {
+    popup: getPopup(),
+    container: getContainer(),
+    content: getContent(),
+    actions: getActions(),
+    confirmButton: getConfirmButton(),
+    cancelButton: getCancelButton(),
+    closeButton: getCloseButton(),
+    validationMessage: getValidationMessage(),
+    progressSteps: getProgressSteps()
+  };
+  privateProps.domCache.set(instance, domCache);
+  return domCache;
+};
+
+var setupTimer = function setupTimer(globalState$$1, innerParams, dismissWith) {
+  if (innerParams.timer) {
+    globalState$$1.timeout = new Timer(function () {
+      dismissWith('timer');
+      delete globalState$$1.timeout;
+    }, innerParams.timer);
+  }
+};
+
+var initFocus = function initFocus(domCache, innerParams) {
+  if (innerParams.toast) {
+    return;
+  }
+
+  if (!callIfFunction(innerParams.allowEnterKey)) {
+    return blurActiveElement();
+  }
+
+  if (innerParams.focusCancel && isVisible(domCache.cancelButton)) {
+    return domCache.cancelButton.focus();
+  }
+
+  if (innerParams.focusConfirm && isVisible(domCache.confirmButton)) {
+    return domCache.confirmButton.focus();
+  }
+
+  setFocus(innerParams, -1, 1);
+};
+
+var blurActiveElement = function blurActiveElement() {
+  if (document.activeElement && typeof document.activeElement.blur === 'function') {
+    document.activeElement.blur();
+  }
+};
+
+/**
+ * Updates popup parameters.
+ */
+
+function update(params) {
+  var validUpdatableParams = {}; // assign valid params from `params` to `defaults`
+
+  Object.keys(params).forEach(function (param) {
+    if (Swal.isUpdatableParameter(param)) {
+      validUpdatableParams[param] = params[param];
+    } else {
+      warn("Invalid parameter to update: \"".concat(param, "\". Updatable params are listed here: https://github.com/sweetalert2/sweetalert2/blob/master/src/utils/params.js"));
+    }
+  });
+  var innerParams = privateProps.innerParams.get(this);
+
+  var updatedParams = _extends({}, innerParams, validUpdatableParams);
+
+  render(this, updatedParams);
+  privateProps.innerParams.set(this, updatedParams);
+  Object.defineProperties(this, {
+    params: {
+      value: _extends({}, this.params, params),
+      writable: false,
+      enumerable: true
+    }
+  });
+}
+
+
+
+var instanceMethods = Object.freeze({
+	hideLoading: hideLoading,
+	disableLoading: hideLoading,
+	getInput: getInput$1,
+	close: close,
+	closePopup: close,
+	closeModal: close,
+	closeToast: close,
+	enableButtons: enableButtons,
+	disableButtons: disableButtons,
+	enableConfirmButton: enableConfirmButton,
+	disableConfirmButton: disableConfirmButton,
+	enableInput: enableInput,
+	disableInput: disableInput,
+	showValidationMessage: showValidationMessage,
+	resetValidationMessage: resetValidationMessage$1,
+	getProgressSteps: getProgressSteps$1,
+	setProgressSteps: setProgressSteps,
+	showProgressSteps: showProgressSteps,
+	hideProgressSteps: hideProgressSteps,
+	_main: _main,
+	update: update
+});
+
+var currentInstance; // SweetAlert constructor
+
+function SweetAlert() {
+  // Prevent run in Node env
+
+  /* istanbul ignore if */
+  if (typeof window === 'undefined') {
+    return;
+  } // Check for the existence of Promise
+
+  /* istanbul ignore if */
+
+
+  if (typeof Promise === 'undefined') {
+    error('This package requires a Promise library, please include a shim to enable it in this browser (See: https://github.com/sweetalert2/sweetalert2/wiki/Migration-from-SweetAlert-to-SweetAlert2#1-ie-support)');
+  }
+
+  currentInstance = this;
+
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  var outerParams = Object.freeze(this.constructor.argsToParams(args));
+  Object.defineProperties(this, {
+    params: {
+      value: outerParams,
+      writable: false,
+      enumerable: true,
+      configurable: true
+    }
+  });
+
+  var promise = this._main(this.params);
+
+  privateProps.promise.set(this, promise);
+} // `catch` cannot be the name of a module export, so we define our thenable methods here instead
+
+
+SweetAlert.prototype.then = function (onFulfilled) {
+  var promise = privateProps.promise.get(this);
+  return promise.then(onFulfilled);
+};
+
+SweetAlert.prototype["finally"] = function (onFinally) {
+  var promise = privateProps.promise.get(this);
+  return promise["finally"](onFinally);
+}; // Assign instance methods from src/instanceMethods/*.js to prototype
+
+
+_extends(SweetAlert.prototype, instanceMethods); // Assign static methods from src/staticMethods/*.js to constructor
+
+
+_extends(SweetAlert, staticMethods); // Proxy to instance methods to constructor, for now, for backwards compatibility
+
+
+Object.keys(instanceMethods).forEach(function (key) {
+  SweetAlert[key] = function () {
+    if (currentInstance) {
+      var _currentInstance;
+
+      return (_currentInstance = currentInstance)[key].apply(_currentInstance, arguments);
+    }
+  };
+});
+SweetAlert.DismissReason = DismissReason;
+SweetAlert.version = '8.17.1';
+
+var Swal = SweetAlert;
+Swal["default"] = Swal;
+
+return Swal;
+
+})));
+if (typeof this !== 'undefined' && this.Sweetalert2){  this.swal = this.sweetAlert = this.Swal = this.SweetAlert = this.Sweetalert2}
 
 
 /***/ })

@@ -1,22 +1,22 @@
 webpackJsonp([61],{
 
-/***/ 1819:
+/***/ 1488:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1820);
+var content = __webpack_require__(1489);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("21b941be", content, false, {});
+var update = __webpack_require__(26)("fc4199fc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-751e8c25\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./trend_bar.vue");
+   module.hot.accept("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css", function() {
+     var newContent = require("!!../css-loader/index.js!../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":false,\"hasInlineConfig\":true}!./awesome-bootstrap-checkbox.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1820:
+/***/ 1489:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,24 +35,87 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.trendvue svg path{\nstroke-width:2px;\n}\n.card svg{\n    height: 40vh;\n}\n", ""]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n.abc-checkbox {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-checkbox label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-checkbox label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -1.25rem;\n  border: 1px solid #ced4da;\n  border-radius: 3px;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;\n}\n.abc-checkbox label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  left: 0;\n  top: 2px;\n  margin-left: -1.25rem;\n  padding-left: 3px;\n  padding-top: 1px;\n  font-size: 11px;\n  color: #495057;\n}\n.abc-checkbox input[type=\"checkbox\"],\n.abc-checkbox input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-checkbox input[type=\"checkbox\"]:focus + label::before,\n.abc-checkbox input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-checkbox input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox input[type=\"radio\"]:checked + label::after {\n  font-family: \"FontAwesome\";\n  content: \"\\F00C\";\n}\n.abc-checkbox input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox input[type=\"radio\"]:indeterminate + label::after {\n  display: block;\n  content: \"\";\n  width: 10px;\n  height: 3px;\n  background-color: #555555;\n  border-radius: 2px;\n  margin-left: -16.5px;\n  margin-top: 7px;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label,\n.abc-checkbox input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::before,\n.abc-checkbox input[type=\"radio\"]:disabled + label::before {\n  background-color: #e9ecef;\n  cursor: not-allowed;\n}\n.abc-checkbox input[type=\"checkbox\"]:disabled + label::after,\n.abc-checkbox input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-checkbox.abc-checkbox-circle label::before {\n  border-radius: 50%;\n}\n.abc-checkbox.checkbox-inline {\n  margin-top: 0;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-info input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::before,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:checked + label::after,\n.abc-checkbox-success input[type=\"radio\"]:checked + label::after {\n  color: #fff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #007bff;\n  border-color: #007bff;\n}\n.abc-checkbox-primary input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-primary input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #dc3545;\n  border-color: #dc3545;\n}\n.abc-checkbox-danger input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-danger input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #17a2b8;\n  border-color: #17a2b8;\n}\n.abc-checkbox-info input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-info input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #ffc107;\n  border-color: #ffc107;\n}\n.abc-checkbox-warning input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-warning input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::before,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::before {\n  background-color: #28a745;\n  border-color: #28a745;\n}\n.abc-checkbox-success input[type=\"checkbox\"]:indeterminate + label::after,\n.abc-checkbox-success input[type=\"radio\"]:indeterminate + label::after {\n  background-color: #fff;\n}\n.abc-radio {\n  cursor: default;\n  padding-left: 4px;\n}\n.abc-radio label {\n  cursor: pointer;\n  display: inline;\n  vertical-align: top;\n  position: relative;\n  padding-left: 5px;\n}\n.abc-radio label::before {\n  cursor: pointer;\n  content: \"\";\n  display: inline-block;\n  position: absolute;\n  width: 17px;\n  height: 17px;\n  top: 2px;\n  left: 0;\n  margin-left: -20px;\n  border: 1px solid #ced4da;\n  border-radius: 50%;\n  background-color: #fff;\n  transition: border 0.15s ease-in-out;\n}\n.abc-radio label::after {\n  cursor: pointer;\n  display: inline-block;\n  position: absolute;\n  content: \" \";\n  width: 11px;\n  height: 11px;\n  left: 3px;\n  top: 5px;\n  margin-left: -20px;\n  border-radius: 50%;\n  background-color: #495057;\n  transform: scale(0, 0);\n  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);\n}\n.abc-radio input[type=\"radio\"] {\n  position: static;\n  margin-left: 0;\n  cursor: pointer;\n  opacity: 0;\n  z-index: 1;\n}\n.abc-radio input[type=\"radio\"]:focus + label::before {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.abc-radio input[type=\"radio\"]:checked + label::after {\n  transform: scale(1, 1);\n}\n.abc-radio input[type=\"radio\"]:disabled + label {\n  opacity: 0.65;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::before {\n  cursor: not-allowed;\n}\n.abc-radio input[type=\"radio\"]:disabled + label::after {\n  cursor: not-allowed;\n}\n.abc-radio.radio-inline {\n  margin-top: 0;\n}\n.abc-radio-primary input[type=\"radio\"] + label::after {\n  background-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::before {\n  border-color: #007bff;\n}\n.abc-radio-primary input[type=\"radio\"]:checked + label::after {\n  background-color: #007bff;\n}\n.abc-radio-danger input[type=\"radio\"] + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::before {\n  border-color: #dc3545;\n}\n.abc-radio-danger input[type=\"radio\"]:checked + label::after {\n  background-color: #dc3545;\n}\n.abc-radio-info input[type=\"radio\"] + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::before {\n  border-color: #17a2b8;\n}\n.abc-radio-info input[type=\"radio\"]:checked + label::after {\n  background-color: #17a2b8;\n}\n.abc-radio-warning input[type=\"radio\"] + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::before {\n  border-color: #ffc107;\n}\n.abc-radio-warning input[type=\"radio\"]:checked + label::after {\n  background-color: #ffc107;\n}\n.abc-radio-success input[type=\"radio\"] + label::after {\n  background-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::before {\n  border-color: #28a745;\n}\n.abc-radio-success input[type=\"radio\"]:checked + label::after {\n  background-color: #28a745;\n}\nlabel .was-validated .form-check-input:invalid .abc-checkbox:before, label\n.was-validated .form-check-input:invalid .abc-radio:before, label .form-check-input.is-invalid .abc-checkbox:before, label\n.form-check-input.is-invalid .abc-radio:before {\n  border-color: #dc3545;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1821:
+/***/ 1490:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(1491);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("3e4bee86", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./vscroll.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11f2ea77\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./vscroll.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1491:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.radio[data-v-11f2ea77],\n.checkbox[data-v-11f2ea77] {\n    display: block;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 1492:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetrend__ = __webpack_require__(1822);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuebars__ = __webpack_require__(1823);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -85,643 +148,335 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuetrend__["a" /* default */]);
-
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_3_vuebars__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "blank",
+    name: "vscroll_demo",
     components: {
-        card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
+        vScroll: __WEBPACK_IMPORTED_MODULE_0__components_plugins_scroll_vScroll_vue___default.a
     },
     data: function data() {
-        return {};
-    },
-
-    methods: {}
+        return {
+            bar_color: "#428bca",
+            height: "300px",
+            bar_width: "10px",
+            visible: false
+        };
+    }
 });
 
 /***/ }),
 
-/***/ 1822:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function int (value) {
-  return parseInt(value, 10)
-}
-
-/**
- * https://en.wikipedia.org/wiki/Collinearity
- * x=(x1+x2)/2
- * y=(y1+y2)/2
- */
-function checkCollinear (p0, p1, p2) {
-  return (
-    int(p0.x + p2.x) === int(2 * p1.x) && int(p0.y + p2.y) === int(2 * p1.y)
-  )
-}
-
-function getDistance (p1, p2) {
-  return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2))
-}
-
-function moveTo (to, from, radius) {
-  var vector = { x: to.x - from.x, y: to.y - from.y };
-  var length = Math.sqrt(vector.x * vector.x + vector.y * vector.y);
-  var unitVector = { x: vector.x / length, y: vector.y / length };
-
-  return {
-    x: from.x + unitVector.x * radius,
-    y: from.y + unitVector.y * radius
-  }
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (arr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  arr = arr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001
-    }
-  })
-}
-
-/**
- * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
- */
-function genPath (points, radius) {
-  var start = points.shift();
-
-  return (
-    "M" + (start.x) + " " + (start.y) +
-    points
-      .map(function (point, index) {
-        var next = points[index + 1];
-        var prev = points[index - 1] || start;
-        var isCollinear = next && checkCollinear(next, point, prev);
-
-        if (!next || isCollinear) {
-          return ("L" + (point.x) + " " + (point.y))
-        }
-
-        var threshold = Math.min(
-          getDistance(prev, point),
-          getDistance(next, point)
-        );
-        var isTooCloseForRadius = threshold / 2 < radius;
-        var radiusForPoint = isTooCloseForRadius ? threshold / 2 : radius;
-
-        var before = moveTo(prev, point, radiusForPoint);
-        var after = moveTo(next, point, radiusForPoint);
-
-        return ("L" + (before.x) + " " + (before.y) + "S" + (point.x) + " " + (point.y) + " " + (after.x) + " " + (after.y))
-      })
-      .join('')
-  )
-}
-
-var Path = {
-  props: ['smooth', 'data', 'boundary', 'radius', 'id', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var smooth = ref.smooth;
-    var boundary = ref.boundary;
-    var radius = ref.radius;
-    var id = ref.id;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min });
-    var d = genPath(points, smooth ? radius : 0);
-
-    return h('path', {
-      attrs: { d: d, fill: 'none', stroke: ("url(#" + id + ")") }
-    })
-  }
-};
-
-var Gradient = {
-  props: ['gradient', 'id'],
-
-  render: function render (h) {
-    var ref = this;
-    var gradient = ref.gradient;
-    var id = ref.id;
-    var len = gradient.length - 1 || 1;
-    var stops = gradient
-      .slice()
-      .reverse()
-      .map(function (color, index) { return h('stop', {
-          attrs: {
-            offset: index / len,
-            'stop-color': color
-          }
-        }); }
-      );
-
-    return h('defs', [
-      h(
-        'linearGradient',
-        {
-          attrs: {
-            id: id,
-            x1: 0,
-            y1: 0,
-            x2: 0,
-            y2: 1
-          }
-        },
-        stops
-      )
-    ])
-  }
-};
-
-var Trend$1 = {
-  name: 'Trend',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    autoDrawDuration: {
-      type: Number,
-      default: 2000
-    },
-    autoDrawEasing: {
-      type: String,
-      default: 'ease'
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    },
-    radius: {
-      type: Number,
-      default: 10
-    },
-    smooth: Boolean
-  },
-
-  watch: {
-    data: {
-      immediate: true,
-      handler: function handler (val) {
-        var this$1 = this;
-
-        this.$nextTick(function () {
-          if (this$1.$isServer || !this$1.$refs.path || !this$1.autoDraw) {
-            return
-          }
-
-          var path = this$1.$refs.path.$el;
-          var length = path.getTotalLength();
-
-          path.style.transition = 'none';
-          path.style.strokeDasharray = length + ' ' + length;
-          path.style.strokeDashoffset = Math.abs(
-            length - (this$1.lastLength || 0)
-          );
-          path.getBoundingClientRect();
-          path.style.transition = "stroke-dashoffset " + (this$1.autoDrawDuration) + "ms " + (this$1.autoDrawEasing);
-          path.style.strokeDashoffset = 0;
-          this$1.lastLength = length;
-        });
-      }
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-trend-' + this._uid;
-    return h(
-      'svg',
-      {
-        attrs: {
-          width: width || '100%',
-          height: height || '25%',
-          viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-        }
-      },
-      [
-        h(Gradient, { props: props }),
-        h(Path, {
-          props: props,
-          ref: 'path'
-        })
-      ]
-    )
-  }
-};
-
-Trend$1.install = function (Vue) {
-  Vue.component(Trend$1.name, Trend$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Trend$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Trend$1);
-
-
-/***/ }),
-
-/***/ 1823:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function transitionColor(from, to, count) {
-  count = count + 1;
-  var int = parseInt(from, 16); // 100
-  var intTo = parseInt(to, 16); // 50
-  var list = []; // 5
-  var diff = int - intTo; // 50
-  var isNegative = diff < 0; // false
-  var one = diff / count; // 10
- 
-  list.push(from);
-  for (var i = 1; i <= count; i++) {
-    list.push(Math.floor(int - (one * i)).toString(16));
-  }
- 
-  return list
-}
- 
-function transition(from, to, count) {
-  count = count || 3;
-  var r = from.slice(0, 2), g = from.slice(2, 4), b = from.slice(4, 6);
-  var rt = to.slice(0, 2), gt = to.slice(2, 4), bt = to.slice(4, 6);
-  var allR = transitionColor(r, rt, count);
-  var allG = transitionColor(g, gt, count);
-  var allB = transitionColor(b, bt, count);
-  var list = [];
- 
-  allR.forEach(function(_, i) {
-    list.push('' + allR[i] + allG[i] + allB[i]);
-  });
- 
-  return list
-}
- 
-function generateGradientStepsCss(from, to, count) {
-  from = from.replace('#', '');
-  to = to.replace('#', '');
-  var values = transition(from, to, count);
-  var total = 100 / (count + 1);
-  var obj = [];
-  for (var i = 0; i <= count + 1; i++) {
-    obj.push({percentage: Math.floor(total * i), value: values[i]});
-  }
-  return obj.map(function(value) {
-    return '#' + value.value
-  })
-}
-
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
-function genPoints (inArr, ref, ref$1) {
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var max = ref$1.max;
-  var min = ref$1.min;
-
-  var arr = inArr.map(function (item) { return (typeof item === 'number' ? item : item.value); });
-  var minValue = Math.min.apply(Math, arr.concat( [min] )) - 0.001;
-  var gridX = (maxX - minX) / (arr.length - 1);
-  var gridY = (maxY - minY) / (Math.max.apply(Math, arr.concat( [max] )) + 0.001 - minValue);
-
-  return arr.map(function (value, index) {
-    var title = typeof inArr[index] === 'number' ? inArr[index] : inArr[index].title;
-    return {
-      x: index * gridX + minX,
-      y:
-        maxY -
-        (value - minValue) * gridY +
-        +(index === arr.length - 1) * 0.00001 -
-        +(index === 0) * 0.00001,
-      v: title
-    }
-  })
-}
-
-function genBars (_this, arr, h) {
-  var ref = _this.boundary;
-  var minX = ref.minX;
-  var minY = ref.minY;
-  var maxX = ref.maxX;
-  var maxY = ref.maxY;
-  var totalWidth = (maxX) / (arr.length-1);
-  if (!_this.barWidth) {
-    _this.barWidth = totalWidth - (_this.padding || 5);
-  }
-  if (!_this.rounding) {
-    _this.rounding = 2;
-  }
-
-  var gradients = 0;
-  if (_this.gradient && _this.gradient.length > 1) {
-    gradients = generateGradientStepsCss(_this.gradient[0], _this.gradient[1], (arr.length-1));
-  }
-  var offsetX = (totalWidth - _this.barWidth) / 2;
-
-  return arr.map(function (item, index) {
-    return h('rect', {
-      attrs: {
-        id: ("bar-id-" + index),
-        fill: (gradients ? gradients[index] : (_this.gradient[0] ? _this.gradient[0] : '#000')),
-        x: item.x - offsetX,
-        y: 0,
-        width: _this.barWidth,
-        height: (maxY - item.y),
-        rx: _this.rounding,
-        ry: _this.rounding
-      }
-    }, [
-      h('animate', {
-        attrs: {
-          attributeName: 'height',
-          from: 0,
-          to: (maxY - item.y),
-          dur: ((_this.growDuration) + "s"),
-          fill: 'freeze'
-        }
-      }),
-      h('title', {}, [item.v])
-    ])
-  })
-}
-
-var Path = {
-  props: ['data', 'boundary', 'barWidth', 'id', 'gradient', 'growDuration', 'max', 'min'],
-
-  render: function render (h) {
-    var ref = this;
-    var data = ref.data;
-    var boundary = ref.boundary;
-    var max = ref.max;
-    var min = ref.min;
-    var points = genPoints(data, boundary, { max: max, min: min } );
-    var bars = genBars(this, points, h);
-
-    return h('g', {
-      attrs: {
-        transform: ("scale(1,-1) translate(0,-" + (this.boundary.maxY) + ")")
-      }
-    }, bars)
-  }
-};
-
-var Bars$1 = {
-  name: 'Bars',
-
-  props: {
-    data: {
-      type: Array,
-      required: true
-    },
-    autoDraw: Boolean,
-    barWidth: {
-      type: Number,
-      default: 8
-    },
-    growDuration: {
-      type: Number,
-      default: 0.5
-    },
-    gradient: {
-      type: Array,
-      default: function () { return ['#000']; }
-    },
-    max: {
-      type: Number,
-      default: -Infinity
-    },
-    min: {
-      type: Number,
-      default: Infinity
-    },
-    height: Number,
-    width: Number,
-    padding: {
-      type: Number,
-      default: 8
-    }
-  },
-
-  render: function render (h) {
-    if (!this.data || this.data.length < 2) { return }
-    var ref = this;
-    var width = ref.width;
-    var height = ref.height;
-    var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
-    var boundary = {
-      minX: padding,
-      minY: padding,
-      maxX: viewWidth - padding,
-      maxY: viewHeight - padding
-    };
-    var props = this.$props;
-
-    props.boundary = boundary;
-    props.id = 'vue-bars-' + this._uid;
-
-    return h('svg', {
-      attrs: {
-        width: width || '100%',
-        height: height || '25%',
-        viewBox: ("0 0 " + viewWidth + " " + viewHeight)
-      }
-    }, [
-      h(Path, {
-        props: props,
-        ref: 'path'
-      })
-    ])
-  }
-};
-
-Bars$1.install = function (Vue) {
-  Vue.component(Bars$1.name, Bars$1);
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Bars$1);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Bars$1);
-
-
-/***/ }),
-
-/***/ 1824:
+/***/ 1493:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Trend chart" } },
-          [
-            _c("trend", {
-              attrs: {
-                data: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-                gradient: ["#6fa8dc", "#42b983", "#f27a09", "#ff5454"],
-                smooth: ""
+  return _c(
+    "div",
+    [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", [_vm._v("Bar Color (Any valid css color)")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.bar_color,
+                  expression: "bar_color"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "color", placeholder: "Any valid css color" },
+              domProps: { value: _vm.bar_color },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.bar_color = $event.target.value
+                }
               }
             })
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "col-sm-6" },
-      [
-        _c(
-          "card",
-          { attrs: { title: "Vue-bar chart" } },
-          [
-            _c("bars", {
-              attrs: {
-                data: [
-                  1,
-                  2,
-                  5,
-                  9,
-                  5,
-                  10,
-                  3,
-                  5,
-                  8,
-                  12,
-                  1,
-                  8,
-                  2,
-                  9,
-                  10,
-                  2,
-                  9,
-                  4,
-                  5,
-                  6,
-                  7,
-                  3,
-                  2,
-                  3,
-                  5
-                ],
-                gradient: ["#ffbe88", "#ff93df"],
-                barWidth: 5,
-                growDuration: 1
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", [_vm._v("Height")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.height,
+                  expression: "height"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "Height of container" },
+              domProps: { value: _vm.height },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.height = $event.target.value
+                }
               }
             })
-          ],
-          1
-        )
-      ],
-      1
-    )
-  ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", [_vm._v("Bar Width")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.bar_width,
+                  expression: "bar_width"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "width of bar" },
+              domProps: { value: _vm.bar_width },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.bar_width = $event.target.value
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("label", { attrs: { for: "visible" } }, [
+            _vm._v("Always Visible")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "checkbox checkbox-success" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.visible,
+                  expression: "visible"
+                }
+              ],
+              staticClass: "checkbox",
+              attrs: { type: "checkbox", id: "visible" },
+              domProps: {
+                checked: Array.isArray(_vm.visible)
+                  ? _vm._i(_vm.visible, null) > -1
+                  : _vm.visible
+              },
+              on: {
+                change: function($event) {
+                  var $$a = _vm.visible,
+                    $$el = $event.target,
+                    $$c = $$el.checked ? true : false
+                  if (Array.isArray($$a)) {
+                    var $$v = null,
+                      $$i = _vm._i($$a, $$v)
+                    if ($$el.checked) {
+                      $$i < 0 && (_vm.visible = $$a.concat([$$v]))
+                    } else {
+                      $$i > -1 &&
+                        (_vm.visible = $$a
+                          .slice(0, $$i)
+                          .concat($$a.slice($$i + 1)))
+                    }
+                  } else {
+                    _vm.visible = $$c
+                  }
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "visible" } })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "v-scroll",
+        {
+          attrs: {
+            height: _vm.height,
+            color: _vm.bar_color,
+            "max-height": "100%",
+            "min-height": "120px",
+            "bar-width": _vm.bar_width,
+            alwaysvisible: _vm.visible
+          }
+        },
+        [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            )
+          ])
+        ]
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12" }, [
+      _c("p", [_vm._v("Available props")]),
+      _vm._v(" "),
+      _c("pre", [
+        _vm._v(
+          '"Height","min-height","max-height","color","bar-width","alwaysvisible"'
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-751e8c25", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-11f2ea77", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 481:
+/***/ 455:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1819)
+  __webpack_require__(1488)
+  __webpack_require__(1490)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1821)
+var __vue_script__ = __webpack_require__(1492)
 /* template */
-var __vue_template__ = __webpack_require__(1824)
+var __vue_template__ = __webpack_require__(1493)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-11f2ea77"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/vscroll.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-11f2ea77", Component.options)
+  } else {
+    hotAPI.reload("data-v-11f2ea77", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 645:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(678)
+}
+var normalizeComponent = __webpack_require__(42)
+/* script */
+var __vue_script__ = __webpack_require__(680)
+/* template */
+var __vue_template__ = __webpack_require__(681)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -738,7 +493,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/trend_bar.vue"
+Component.options.__file = "resources/components/plugins/scroll/vScroll.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -747,9 +502,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-751e8c25", Component.options)
+    hotAPI.createRecord("data-v-6ba02bfe", Component.options)
   } else {
-    hotAPI.reload("data-v-751e8c25", Component.options)
+    hotAPI.reload("data-v-6ba02bfe", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -761,75 +516,23 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 530:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(531)
-}
-var normalizeComponent = __webpack_require__(42)
-/* script */
-var __vue_script__ = __webpack_require__(533)
-/* template */
-var __vue_template__ = __webpack_require__(534)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/components/pages/card/card.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-15e33d3a", Component.options)
-  } else {
-    hotAPI.reload("data-v-15e33d3a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 531:
+/***/ 678:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(532);
+var content = __webpack_require__(679);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("d6b775a8", content, false, {});
+var update = __webpack_require__(26)("58ec1348", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ba02bfe\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./vScroll.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ba02bfe\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./vScroll.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -840,7 +543,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 679:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -848,14 +551,14 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
+exports.push([module.i, "\n.ss-wrapper {\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    position: relative;\n    z-index: 1;\n    float: left;\n}\n.ss-content {\n    height: 100%;\n    width: 100%;\n    padding: 0 32px 0 0;\n    position: relative;\n    right: -18px;\n    overflow: auto;\n    box-sizing: border-box;\n}\n.ss-scroll {\n    position: relative;\n    background: rgba(0, 0, 0, 0.1);\n    width: 9px;\n    border-radius: 4px;\n    top: 0;\n    z-index: 2;\n    cursor: pointer;\n    opacity: 0;\n    transition: opacity 0.25s linear;\n}\n.ss-hidden {\n    display: none;\n}\n.ss-container:hover .ss-scroll,\n.ss-scroll.ss-grabbed,\n.ss-scroll.visible {\n    opacity: 1;\n}\n.ss-grabbed {\n    -o-user-select: none;\n    -ms-user-select: none;\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    user-select: none;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 533:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -870,85 +573,114 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'card',
+    props: {
+        height: null,
+        minHeight: null,
+        maxHeight: null,
+        color: null,
+        barWidth: null,
+        alwaysvisible: Boolean
+    },
+    mounted: function mounted() {
+        this.dragDealer();
+        this.moveBar();
+    },
     data: function data() {
         return {
-            show: true,
-            isActive: false
+            scrollRatio: 0,
+            grabbed: false
         };
     },
 
     methods: {
-        hide: function hide() {
-            this.isActive = true;
+        // Mouse drag handler
+        dragDealer: function dragDealer() {
+            var _this = this;
+
+            var t = this;
+            var lastPageY;
+            this.$refs.bar.addEventListener('mousedown', function (e) {
+                lastPageY = e.pageY;
+                _this.grabbed = true;
+                document.body.classList.add('ss-grabbed');
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('mouseup', stop);
+                return false;
+
+                function drag(e) {
+                    var delta = e.pageY - lastPageY;
+                    lastPageY = e.pageY;
+                    t.$refs.content.scrollTop += delta / t.scrollRatio;
+                }
+
+                function stop() {
+                    t.grabbed = false;
+                    document.body.classList.remove('ss-grabbed');
+                    document.removeEventListener('mousemove', drag);
+                    document.removeEventListener('mouseup', stop);
+                }
+            });
+        },
+        moveBar: function moveBar() {
+            var content = this.$refs.content;
+            var bar = this.$refs.bar;
+            var totalHeight = content.scrollHeight,
+                ownHeight = content.clientHeight;
+            this.scrollRatio = ownHeight / totalHeight;
+            // Hide scrollbar if no scrolling is possible
+            if (this.scrollRatio >= 1) {
+                bar.classList.add('ss-hidden');
+            } else {
+                bar.classList.remove('ss-hidden');
+                bar.style.cssText = 'height:' + this.scrollRatio * 100 + '%; top:' + content.scrollTop / totalHeight * 100 + '%;right:-' + (this.$refs.vscroll.clientWidth - bar.clientWidth) + 'px;background-color:' + this.color + ';width:' + this.barWidth;
+            }
         }
-    },
-    mounted: function mounted() {},
-    props: {
-        title: {
-            required: false
-        }
-    },
-    destroy: function destroy() {}
+    }
 });
 
 /***/ }),
 
-/***/ 534:
+/***/ 681:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h3", {
-        staticClass: "card-title",
-        domProps: { innerHTML: _vm._s(_vm.title) }
-      }),
-      _vm._v(" "),
-      _c("span", { staticClass: "float-right" }, [
-        _c("i", {
-          staticClass: "fa fa-fw ti-angle-up",
-          class: { rotate: _vm.show },
-          on: {
-            click: function($event) {
-              _vm.show = !_vm.show
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("i", {
-          staticClass: "fa fa-fw ti-close removecard",
-          on: { click: _vm.hide }
-        })
-      ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        directives: [
+  return _c(
+    "div",
+    {
+      ref: "vscroll",
+      staticClass: "ss-container",
+      style: {
+        height: _vm.height,
+        "min-height": _vm.minHeight,
+        "max-height": _vm.maxHeight
+      }
+    },
+    [
+      _c("div", { staticClass: "ss-wrapper" }, [
+        _c(
+          "div",
           {
-            name: "show",
-            rawName: "v-show",
-            value: _vm.show,
-            expression: "show"
-          }
-        ],
-        staticClass: "card-body"
-      },
-      [_vm._t("default")],
-      2
-    )
-  ])
+            ref: "content",
+            staticClass: "ss-content",
+            on: { scroll: _vm.moveBar, mouseenter: _vm.moveBar }
+          },
+          [_vm._t("default")],
+          2
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", {
+        ref: "bar",
+        staticClass: "ss-scroll",
+        class: { "ss-grabbed": _vm.grabbed, visible: _vm.alwaysvisible }
+      })
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -956,7 +688,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-6ba02bfe", module.exports)
   }
 }
 

@@ -14,8 +14,11 @@
                     <vmenu-item link="/Gantt" icon="fa fa-fw fa-tasks">
                         Proyectos
                     </vmenu-item>
-                     <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-tasks">
+                    <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-tasks">
                         Crear Nuevo Proyecto
+                    </vmenu-item>
+                    <vmenu-item link="/Reportes" icon="fa fa-fw fa-tasks">
+                        Reportes
                     </vmenu-item>
                     <vsub-menu title="Usuarios" icon="fa fa-fw fa-user" class="menufold-bottom">
                         <vmenu-item link="/Roles" icon="fa fa-fw fa-users">

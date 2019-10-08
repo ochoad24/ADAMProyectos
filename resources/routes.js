@@ -1275,6 +1275,20 @@ const routes = [{
             }
         },
         {
+            path: '/Reportes',
+            component: resolve => require(['./components/pages/src/reportes.vue'], resolve),
+            meta: {
+                title: '',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Dashboard',
+                    href: '#/',
+                }, {
+                    html: 'Reportes',
+                    href: '#/Reportes'
+                }]
+            }
+        },
+        {
             path: 'Proyectos',
             component: resolve => require(['./components/pages/src/proyecto.vue'], resolve),
             meta: {
@@ -1380,7 +1394,7 @@ const routes = [{
             path: '/Gantt',
             component: resolve => require(['./components/pages/src/Gantt.vue'], resolve),
             meta: {
-                title: 'Gantt',
+                title: 'Progreso general de proyectos',
                 breadcrumb: [{
                     html: '<i class="ti-home"></i> Dashboard',
                     href: '#/',
@@ -1394,17 +1408,14 @@ const routes = [{
             }
         },
         {
-            path: '/GanttProyecto',
+            path: '/GanttProyecto/:id',
             component: resolve => require(['./components/pages/src/GanttProyecto.vue'], resolve),
             meta: {
-                title: 'PROGRESO',
+                title: `Gantt`,
                 breadcrumb: [{
                     html: '<i class="ti-home"></i> Dashboard',
                     href: '#/',
-                }, {
-                    html: 'Proyecto',
-                    href: '#',
-                }, {
+                },{
                     html: 'Proyecto',
                     href: '#/GanttProyecto'
                 }]

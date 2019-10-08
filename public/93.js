@@ -1,22 +1,22 @@
 webpackJsonp([93],{
 
-/***/ 2263:
+/***/ 2386:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2264);
+var content = __webpack_require__(2387);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("4d9512fe", content, false, {});
+var update = __webpack_require__(26)("5353e3eb", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-46d3e86c\",\"scoped\":false,\"hasInlineConfig\":true}!./404.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-46d3e86c\",\"scoped\":false,\"hasInlineConfig\":true}!./404.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,22 +27,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 2264:
+/***/ 2387:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);", ""]);
 
 // module
-exports.push([module.i, "/*pricing table 1*/\n.span-btn, .span-btn:hover {\n    color: #666;\n    background-color: #DCDCDC;\n    border-color: #DCDCDC;\n}\n.span-btn.active, .span-btn.active:hover {\n    color: #fff;\n    background-color: #376ea4;\n    border-color: #2d5986;\n}\n/*table styles*/\n.modal-1 {\n    border         : 1px solid #B6D1CC;\n    border-radius  : 3px;\n    margin-top     : 20px;\n    margin-bottom  : 10px;\n    padding-bottom : 25px;\n}\n.modal-1 .pack-heading {\n    background-color : #E1EFEF;\n    padding          : 2px 0;\n    height           : 145px;\n}\n.pack-heading p {\n    color  : #555;\n    margin : 13px 0;\n}\n.modal-1 .pack-title {\n    font-size : 22px;\n    color     : #677777;\n}\n.modal-1 .pack-price {\n    font-size : 36px;\n    position  : relative;\n}\n.modal-1 .pack-price span {\n    font-size : 18px;\n    color     : #777;\n}\n.modal-1 .pack-price .dollar {\n    font-size : 22px;\n    color     : #777;\n    top       : -20px;\n    display   : inline;\n}\n.modal-1 .section-head {\n    font-size   : 15px;\n    font-weight : bold;\n    color       : #60B6A3;\n    margin      : 40px 0 15px;\n}\n.modal-1 .pack-details li {\n    line-height : 38px;\n    color       : #555;\n    font-size   : 14px;\n}\n.modal-1 .pack-details li.text-dummy {\n    color : #999;\n}\n.modal-1 .btn-getit {\n    -webkit-border-radius : 3px;\n    -moz-border-radius    : 3px;\n    border-radius         : 3px;\n    padding               : 5px 17px;\n    margin-top            : 30px;\n}\n.modal-1 .trending-tag {\n    height   : 79px;\n    overflow : hidden;\n    position : absolute;\n    left     : 15px;\n    top      : 20px;\n    width    : 80px;\n}\n.tag-design {\n    font              : bold 12px Noto Sans;\n    background-color  : #3AAE97;\n    padding-top       : 22px;\n    position          : relative;\n    text-align        : center;\n    top               : -12px;\n    left              : -40px;\n    -webkit-transform : rotate(-45deg);\n    -moz-transform    : rotate(-45deg);\n    -ms-transform     : rotate(-45deg);\n    -o-transform      : rotate(-45deg);\n    transform         : rotate(-45deg);\n    width             : 116px;\n    height            : 61px;\n}\n.pro-option {\n    font-size   : 24px;\n    line-height : 24px;\n    margin      : 25px 0;\n}\n.contact-info {\n    font-size     : 14px;\n    margin-bottom : 20px;\n}\n.btn-contact {\n    color         : #4080bf;\n    border        : 1px solid #4080bf;\n    padding       : 6px 25px;\n    border-radius : 20px;\n}\n.btn-contact:hover {\n    background-color : #4080bf;\n    color            : #fff;\n}\n@media screen and (max-width : 767px) {\n.modal-1 .trending-tag {\n        top :20px;\n}\n}\n@media(max-width: 320px){\n.modal-1 .trending-tag{\n        top:20px;\n}\n}\n", ""]);
+exports.push([module.i, "/*404 and 500 pages css*/\nbody {\n    font-family: 'Open Sans', sans-serif;\n}\n\n\n/*404*/\n.error_img img {\n    width: 100%;\n}\n.error_img {\n    margin-top: 10%;\n}\n\n\n/*500*/\n.bg-500 {\n    background-color: #C79D6F;\n}\n.error_msg img {\n    width: 100%;\n}\n@media screen and (max-width: 470px) {\n.error_msg img {\n        margin-top: 7%;\n}\n}\n.seperator {\n    border: 0;\n    height: 1px;\n    margin: 20px 0;\n    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));\n}\n.link-home {\n    border-radius: 30px;\n}\n\n\n/* ===== Preloader =====*/\n.preloader {\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 100000;\n    backface-visibility: hidden;\n    background: #ffffff;\n}\n.loader_img {\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    background-position: center;\n    margin: -25px 0 0 -25px;\n}\n.container{\n    min-height: 100vh;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2265:
+/***/ 2388:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62,659 +62,79 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            isActive: 1,
-            selected: "monthly"
-        };
-    },
-
-    methods: {
-        number: function number() {
-            this.isActive = 1;
-        },
-        numbers: function numbers() {
-            this.isActive = 0;
-        }
-    }
+    name: "err404",
+    mounted: function mounted() {},
+    destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 2266:
+/***/ 2389:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row text-center" }, [
-      _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-        _c(
-          "div",
-          { staticClass: "btn-group", attrs: { "data-toggle": "buttons" } },
-          [
-            _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn monthly ",
-                class: { active: _vm.isActive == 1 },
-                on: { click: _vm.number }
-              },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
-                  ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option2",
-                    autocomplete: "off",
-                    value: "monthly",
-                    checked: ""
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "monthly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "monthly"
-                    }
-                  }
-                }),
-                _vm._v(" Monthly Tariff\n                ")
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn yearly",
-                class: { active: _vm.isActive == 0 },
-                on: { click: _vm.numbers }
-              },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
-                  ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option3",
-                    autocomplete: "off",
-                    value: "yearly"
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "yearly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "yearly"
-                    }
-                  }
-                }),
-                _vm._v("  Yearly Tariff\n                ")
-              ]
-            )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("49"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("540"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$45/mo If you get yearly Pack.")])
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-6 mx-auto col-sm-8 col-sm-offset-2" }, [
+        _c("div", { staticClass: "text-center" }, [
+          _c("div", { staticClass: "error_img" }, [
+            _c("img", {
+              attrs: {
+                src: __webpack_require__(2390),
+                alt: "404 error image"
+              }
+            })
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(2),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(3),
+          _c("hr", { staticClass: "seperator" }),
           _vm._v(" "),
           _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
+            "a",
+            { staticClass: "btn btn-primary link-home", attrs: { href: "/" } },
+            [_vm._v("Go Home")]
           )
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(5),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("99"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1104"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$92/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(8),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6  col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(9),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("159"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1788"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$149/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(10),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(11),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(13),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("399"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack " }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("4620"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$385/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(14),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(15),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(16),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(17)
+      ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Basic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("300")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Branded Reports")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5 Keywords Reports")])]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("2")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "trending-tag" }, [
-      _c("div", { staticClass: "tag-design bg-primary text-white" }, [
-        _vm._v("Best\n                        "),
-        _c("br"),
-        _vm._v(" Package")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Econamic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("750")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("500,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("5,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Premium")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,700")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,125,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("12,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("50")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Enterprise")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("100")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("7,500")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("30,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("90")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-      _c("p", { staticClass: "pro-option" }, [
-        _vm._v("Want to be a PRO User?")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "contact-info" }, [
-        _vm._v("We have larger and the best plans designed for you.")
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-contact",
-          attrs: { href: "javascript:void(0)" }
-        },
-        [_vm._v("Contact Us")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6d17cc0c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-46d3e86c", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 500:
+/***/ 2390:
+/***/ (function(module, exports) {
+
+module.exports = "/images/404.gif?62518dc1baaf8959c992559807c35ac3";
+
+/***/ }),
+
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2263)
+  __webpack_require__(2386)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2265)
+var __vue_script__ = __webpack_require__(2388)
 /* template */
-var __vue_template__ = __webpack_require__(2266)
+var __vue_template__ = __webpack_require__(2389)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -731,7 +151,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/pricing.vue"
+Component.options.__file = "resources/components/pages/404.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -740,9 +160,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d17cc0c", Component.options)
+    hotAPI.createRecord("data-v-46d3e86c", Component.options)
   } else {
-    hotAPI.reload("data-v-6d17cc0c", Component.options)
+    hotAPI.reload("data-v-46d3e86c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

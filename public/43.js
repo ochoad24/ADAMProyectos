@@ -1,22 +1,22 @@
 webpackJsonp([43],{
 
-/***/ 1402:
+/***/ 1591:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1403);
+var content = __webpack_require__(1592);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("c701bec2", content, false, {});
+var update = __webpack_require__(26)("35096bdc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1403:
+/***/ 1592:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,30 +35,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*\n *  Bootstrap TouchSpin - v3.1.1\n *  A mobile and touch friendly input spinner component for Bootstrap 3.\n *  http://www.virtuosoft.eu/code/bootstrap-touchspin/\n *\n *  Made by István Ujj-Mészáros\n *  Under Apache License v2.0 License\n */\n.bootstrap-touchspin .input-group-btn-vertical{position:relative;white-space:nowrap;width:1%;vertical-align:middle;display:table-cell\n}\n.bootstrap-touchspin .input-group-btn-vertical>.btn{display:block;float:none;width:100%;max-width:100%;padding:8px 10px;margin-left:-1px;position:relative\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up{border-radius:0;border-top-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{margin-top:-2px;border-radius:0;border-bottom-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical i{position:absolute;top:3px;left:5px;font-size:9px;font-weight:400\n}", ""]);
+exports.push([module.i, "\n.toast-title{font-weight:700\n}\n.toast-message{-ms-word-wrap:break-word;word-wrap:break-word\n}\n.toast-message a,.toast-message label{color:#FFF\n}\n.toast-message a:hover{color:#CCC;text-decoration:none\n}\n.toast-close-button{position:relative;right:-.3em;top:-.3em;float:right;font-size:20px;font-weight:700;color:#FFF;-webkit-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80);line-height:1\n}\n.toast-close-button:focus,.toast-close-button:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n.rtl .toast-close-button{left:-.3em;float:left;right:.3em\n}\nbutton.toast-close-button{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance:none\n}\n.toast-top-center{top:0;right:0;width:100%\n}\n.toast-bottom-center{bottom:0;right:0;width:100%\n}\n.toast-top-full-width{top:0;right:0;width:100%\n}\n.toast-bottom-full-width{bottom:0;right:0;width:100%\n}\n.toast-top-left{top:12px;left:12px\n}\n.toast-top-right{top:12px;right:12px\n}\n.toast-bottom-right{right:12px;bottom:12px\n}\n.toast-bottom-left{bottom:12px;left:12px\n}\n#toast-container{position:fixed;z-index:999999;pointer-events:none\n}\n#toast-container *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box\n}\n#toast-container>div{position:relative;pointer-events:auto;overflow:hidden;margin:0 0 6px;padding:15px 15px 15px 50px;width:300px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-position:15px center;background-repeat:no-repeat;-moz-box-shadow:0 0 12px #999;-webkit-box-shadow:0 0 12px #999;box-shadow:0 0 12px #999;color:#FFF;opacity:.8;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter:alpha(opacity=80)\n}\n#toast-container>div.rtl{direction:rtl;padding:15px 50px 15px 15px;background-position:right 15px center\n}\n#toast-container>div:hover{-moz-box-shadow:0 0 12px #000;-webkit-box-shadow:0 0 12px #000;box-shadow:0 0 12px #000;opacity:1;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);filter:alpha(opacity=100);cursor:pointer\n}\n#toast-container>.toast-info{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-error{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=)!important\n}\n#toast-container>.toast-success{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==)!important\n}\n#toast-container>.toast-warning{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=)!important\n}\n#toast-container.toast-bottom-center>div,#toast-container.toast-top-center>div{width:300px;margin-left:auto;margin-right:auto\n}\n#toast-container.toast-bottom-full-width>div,#toast-container.toast-top-full-width>div{width:96%;margin-left:auto;margin-right:auto\n}\n.toast{background-color:#030303\n}\n.toast-success{background-color:#51A351\n}\n.toast-error{background-color:#BD362F\n}\n.toast-info{background-color:#2F96B4\n}\n.toast-warning{background-color:#F89406\n}\n.toast-progress{position:absolute;left:0;bottom:0;height:4px;background-color:#000;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);filter:alpha(opacity=40)\n}\n@media all and (max-width:240px){\n#toast-container>div{padding:8px 8px 8px 50px;width:11em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:241px) and (max-width:480px){\n#toast-container>div{padding:8px 8px 8px 50px;width:18em\n}\n#toast-container>div.rtl{padding:8px 50px 8px 8px\n}\n#toast-container .toast-close-button{right:-.2em;top:-.2em\n}\n#toast-container .rtl .toast-close-button{left:-.2em;right:.2em\n}\n}\n@media all and (min-width:481px) and (max-width:768px){\n#toast-container>div{padding:15px 15px 15px 50px;width:25em\n}\n#toast-container>div.rtl{padding:15px 50px 15px 15px\n}\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1404:
+/***/ 1593:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1405);
+var content = __webpack_require__(1594);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("7ca792c8", content, false, {});
+var update = __webpack_require__(26)("2d1df132", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-datetimepicker.min.css", function() {
-     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-datetimepicker.min.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr_notificatons.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!./toastr_notificatons.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1405:
+/***/ 1594:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,30 +77,30 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*!\r\n * Datetimepicker for Bootstrap 3\r\n * version : 4.17.47\r\n * https://github.com/Eonasdan/bootstrap-datetimepicker/\r\n */\n.bootstrap-datetimepicker-widget{list-style:none\n}\n.bootstrap-datetimepicker-widget.dropdown-menu{display:block;margin:2px 0;padding:4px;width:19em\n}\n@media (min-width:768px){\n.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em\n}\n}\n@media (min-width:992px){\n.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em\n}\n}\n@media (min-width:1200px){\n.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em\n}\n}\n.bootstrap-datetimepicker-widget.dropdown-menu:before,.bootstrap-datetimepicker-widget.dropdown-menu:after{content:'';display:inline-block;position:absolute\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);top:-7px;left:7px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid white;top:-6px;left:8px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.top:before{border-left:7px solid transparent;border-right:7px solid transparent;border-top:7px solid #ccc;border-top-color:rgba(0,0,0,0.2);bottom:-7px;left:6px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.top:after{border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid white;bottom:-6px;left:7px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before{left:auto;right:6px\n}\n.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after{left:auto;right:7px\n}\n.bootstrap-datetimepicker-widget .list-unstyled{margin:0\n}\n.bootstrap-datetimepicker-widget a[data-action]{padding:6px 0\n}\n.bootstrap-datetimepicker-widget a[data-action]:active{box-shadow:none\n}\n.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:54px;font-weight:bold;font-size:1.2em;margin:0\n}\n.bootstrap-datetimepicker-widget button[data-action]{padding:6px\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"incrementHours\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Increment Hours\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"incrementMinutes\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Increment Minutes\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"decrementHours\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Decrement Hours\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"decrementMinutes\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Decrement Minutes\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"showHours\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Show Hours\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"showMinutes\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Show Minutes\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"togglePeriod\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Toggle AM/PM\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"clear\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Clear the picker\"\n}\n.bootstrap-datetimepicker-widget .btn[data-action=\"today\"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Set the date to today\"\n}\n.bootstrap-datetimepicker-widget .picker-switch{text-align:center\n}\n.bootstrap-datetimepicker-widget .picker-switch::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Toggle Date and Time Screens\"\n}\n.bootstrap-datetimepicker-widget .picker-switch td{padding:0;margin:0;height:auto;width:auto;line-height:inherit\n}\n.bootstrap-datetimepicker-widget .picker-switch td span{line-height:2.5;height:2.5em;width:100%\n}\n.bootstrap-datetimepicker-widget table{width:100%;margin:0\n}\n.bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th{text-align:center;border-radius:4px\n}\n.bootstrap-datetimepicker-widget table th{height:20px;line-height:20px;width:20px\n}\n.bootstrap-datetimepicker-widget table th.picker-switch{width:145px\n}\n.bootstrap-datetimepicker-widget table th.disabled,.bootstrap-datetimepicker-widget table th.disabled:hover{background:none;color:#777;cursor:not-allowed\n}\n.bootstrap-datetimepicker-widget table th.prev::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Previous Month\"\n}\n.bootstrap-datetimepicker-widget table th.next::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:\"Next Month\"\n}\n.bootstrap-datetimepicker-widget table thead tr:first-child th{cursor:pointer\n}\n.bootstrap-datetimepicker-widget table thead tr:first-child th:hover{background:#eee\n}\n.bootstrap-datetimepicker-widget table td{height:54px;line-height:54px;width:54px\n}\n.bootstrap-datetimepicker-widget table td.cw{font-size:.8em;height:20px;line-height:20px;color:#777\n}\n.bootstrap-datetimepicker-widget table td.day{height:20px;line-height:20px;width:20px\n}\n.bootstrap-datetimepicker-widget table td.day:hover,.bootstrap-datetimepicker-widget table td.hour:hover,.bootstrap-datetimepicker-widget table td.minute:hover,.bootstrap-datetimepicker-widget table td.second:hover{background:#eee;cursor:pointer\n}\n.bootstrap-datetimepicker-widget table td.old,.bootstrap-datetimepicker-widget table td.new{color:#777\n}\n.bootstrap-datetimepicker-widget table td.today{position:relative\n}\n.bootstrap-datetimepicker-widget table td.today:before{content:'';display:inline-block;border:solid transparent;border-width:0 0 7px 7px;border-bottom-color:#337ab7;border-top-color:rgba(0,0,0,0.2);position:absolute;bottom:4px;right:4px\n}\n.bootstrap-datetimepicker-widget table td.active,.bootstrap-datetimepicker-widget table td.active:hover{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)\n}\n.bootstrap-datetimepicker-widget table td.active.today:before{border-bottom-color:#fff\n}\n.bootstrap-datetimepicker-widget table td.disabled,.bootstrap-datetimepicker-widget table td.disabled:hover{background:none;color:#777;cursor:not-allowed\n}\n.bootstrap-datetimepicker-widget table td span{display:inline-block;width:54px;height:54px;line-height:54px;margin:2px 1.5px;cursor:pointer;border-radius:4px\n}\n.bootstrap-datetimepicker-widget table td span:hover{background:#eee\n}\n.bootstrap-datetimepicker-widget table td span.active{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)\n}\n.bootstrap-datetimepicker-widget table td span.old{color:#777\n}\n.bootstrap-datetimepicker-widget table td span.disabled,.bootstrap-datetimepicker-widget table td span.disabled:hover{background:none;color:#777;cursor:not-allowed\n}\n.bootstrap-datetimepicker-widget.usetwentyfour td.hour{height:27px;line-height:27px\n}\n.bootstrap-datetimepicker-widget.wider{width:21em\n}\n.bootstrap-datetimepicker-widget .datepicker-decades .decade{line-height:1.8em !important\n}\n.input-group.date .input-group-addon{cursor:pointer\n}\n.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0\n}", ""]);
+exports.push([module.i, "\n.btn {\n    padding: 6px 4px;\n}\n.btn.clear {\n    color: #333;\n}\n.toast-success {\n    background-color: #66cc99;\n}\n.toast-info {\n    background-color: #66ccff;\n}\n.toast-error {\n    background-color: #ff6666;\n}\n.toast-warning {\n    background-color: #f0ad4e;\n}\n.text-info.message {\n    margin-bottom: 20px;\n}\n\n\n/* buttons xs responsive*/\n@media only screen and (max-width: 480px) {\n.toastrshow {\n        margin-top: 10px;\n}\n}\n\n\n/*notification.html*/\n.notify_page .btn {\n    margin-top: 20px;\n}\ntextarea {\n    resize: vertical;\n}\n\n\n/*outline buttons*/\n.btn-outline-default,\n.btn-outline-default:hover,\n.btn-outline-default:focus {\n    background-color: rgba(220, 220, 220, .1);\n    border: 1px solid #dcdcdc;\n    color: #dcdcdc;\n    border-radius: 2px;\n}\n.btn-outline-primary,\n.btn-outline-primary:hover,\n.btn-outline-primary:focus {\n    background-color: rgba(66, 139, 202, .1);\n    border: 1px solid #6699cc;\n    color: #6699cc;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-primary {\n    background-color: rgba(102, 153, 204, 1);\n    border: 1px solid #0069C4;\n}\n.btn-outline-success,\n.btn-outline-success:hover,\n.btn-outline-success:focus {\n    background-color: rgba(34, 214, 157, .1);\n    border: 1px solid #66cc99;\n    color: #66cc99;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-success {\n    background-color: rgba(102, 204, 153, 1);\n    border: 1px solid #66cc99;\n}\n.btn-outline-info,\n.btn-outline-info:hover,\n.btn-outline-info:focus {\n    background-color: rgba(79, 193, 233, .1);\n    border: 1px solid #66ccff;\n    color: #66ccff;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-info {\n    background-color: rgba(102, 204, 255, 1);\n    border: 1px solid #66ccff;\n}\n.btn-outline-danger,\n.btn-outline-danger:hover,\n.btn-outline-danger:focus {\n    background-color: rgba(251, 134, 120, .1);\n    border: 1px solid #ff6666;\n    color: #ff6666;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-danger {\n    background-color: rgba(255, 102, 102, 1);\n    border: 1px solid #ff6666;\n}\n.btn-outline-warning,\n.btn-outline-warning:hover,\n.btn-outline-warning:focus {\n    background-color: rgba(255, 182, 95, .1);\n    border: 1px solid #ffcc66;\n    color: #ffcc66;\n    border-radius: 2px;\n}\n.ui-pnotify .alert-warning {\n    background-color: rgba(240, 173, 78, 1);\n    border: 1px solid #f0ad4e;\n}\n.source {\n    width: 80%;\n}\n.notif-types {\n    margin: 0 0 18px 0;\n    border: 1px solid #eee;\n    padding-bottom: 19px;\n    border-radius: 2px;\n}\n.m-t-30 {\n    margin-top: 30px;\n}\n.m-t-35 {\n    margin-top: 35px;\n}\n.ui-pnotify.translucent.ui-pnotify-fade-in {\n    opacity: .8;\n}\n\n\n/* Notification Responsive */\n@media only screen and (max-width: 767px) {\nhtml > body > .ui-pnotify {\n        bottom: auto !important;\n        left: 0 !important;\n        margin: 0 !important;\n        right: 0 !important;\n        top: 60px !important;\n        width: auto !important;\n}\nhtml > body > .ui-pnotify .notification {\n        border-radius: 0 !important;\n        height: auto !important;\n        position: static !important;\n        width: 100%;\n}\nhtml > body > .ui-pnotify .notification .ui-pnotify-title,\n    html > body > .ui-pnotify .notification .ui-pnotify-text {\n        padding-right: 35px !important;\n}\nhtml > body > .ui-pnotify .notification .ui-pnotify-sticker {\n        display: none !important;\n}\nhtml > body > .ui-pnotify .notification .ui-pnotify-closer {\n        display: block !important;\n        font-size: 24px !important;\n        visibility: visible !important;\n}\n}\n.btn:active{\n    color: #fff !important;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1406:
+/***/ 1595:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1407);
+var content = __webpack_require__(1596);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("c1bbbc3c", content, false, {});
+var update = __webpack_require__(26)("1dc85e7a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./realtime_form.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4cfc4168\",\"scoped\":false,\"hasInlineConfig\":true}!./realtime_form.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./toastr_notifications.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18f35a50\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./toastr_notifications.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1407:
+/***/ 1596:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -119,323 +119,22 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.trip-type, .trip-type-multi {\n    background-color: rgba(0, 0, 0, .35);\n    border-radius: 50%;\n    width: 36px;\n    height: 36px;\n    margin: 21px auto 0;\n    padding: 7px;\n}\n.trip-type .icon, .trip-type-multi .icon {\n    color     : #FFF;\n    font-size : 20px;\n}\n#adult:focus, #adult-multi:focus,\n#child:focus, #child-multi:focus,\n#infant:focus, #infant-multi:focus {\n    border-color : #CCC;\n    outline      : 0;\n    box-shadow   : none;\n}\n.multi-flight-data {\n    padding-top: 10px;\n    padding-bottom: 7px;\n    border-bottom : 1px dashed #EEEEEE;\n}\n#nonsingle-stop .remove-flight {\n    position: absolute;\n    right: 5px;\n    bottom: 27px;\n    background-color: #ff6666;\n    color: #fff;\n    padding: 2px;\n    border-radius: 50px;\n}\n.price-alert {\n    margin-top : 10px;\n}\n.radio-inline, .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {\n    padding-top: 7px;\n    margin-left: 18px;\n}\n@media screen and (max-width : 767px) {\n.trip-type {\n        margin : 41px auto -60px;\n        background: 0;\n}\n.trip-type .icon, .trip-type-multi .icon {\n        color: rgba(0, 0, 0, .35);\n}\n}\n/*cab booking*/\n.ride-time .ride-on {\n    background-color : #C5E043;\n    display          : inline-block;\n    padding          : 5px 10px;\n}\n.ride-time input[type=radio] {\n    display : none\n}\n.ride-time input[type=radio]:checked + .ride-on {\n    background-color : #241009;\n    color            : #C5E043;\n}\n.cab-types .cab-type {\n    background-color : #eee;\n    display          : inline-block;\n    padding: 4% 10%;\n}\n.cab-types input[type=radio] {\n    display : none\n}\n.cab-types input[type=radio]:checked + .cab-type {\n    background-color : #241009;\n    color            : #eee;\n}\n.fund_text{\n    font-size: 16px;\n    font-weight: 700;\n    line-height: 18px;\n    color: #333333;\n}\n/*gmaps*/\n.gmap {\n    width  : 100%;\n    height : 300px;\n    margin : 5px auto;\n}\n.chooseon-map {\n    margin-top: 24px;\n    background-color: #fff;\n    border: 1px solid #ccc;\n}\n@media screen and (min-width : 768px) {\n.m-l-16 {\n        margin-left: -16px;\n}\n}\n@media screen and (max-width : 767px) {\n.m-r-20 {\n        margin-right: 21px;\n}\n}\n.btn-default{\n    color:#333;\n}\n.control-label{\n    width: 100%;\n}\n@media(max-width:768px){\n#multi-air{\n        margin-bottom: 10px;\n}\n}\n.prev .glyphicon-chevron-left:before{\n    content: \"\\E64A\";\n    font-family: \"themify\";\n}\n.next .glyphicon-chevron-right:before{\n    content: \"\\E649\";\n    font-family: \"themify\";\n}\n.dropdown-menu.usetwentyfour{\n    z-index: 99;\n}\n.btn{\n    cursor: pointer;\n}\n@media(min-width: 320px) and (max-width: 425px)\n{\n#nonsingle-stop .remove-flight{\n        bottom: 8px;\n        right:-20px;\n}\n}\n@media(max-width:320px){\n.bootstrap-datetimepicker-widget{\n      left: 10px !important;\n}\n}\n.btn:active{\n    color: #fff !important;\n}\n.bootstrap-datetimepicker-widget{\n    bottom:0;\n}\n.multi-flight-data label.m-l-16{\n    margin-bottom: 0;\n}\n@media(max-width: 1024px){\n.boxed .bootstrap-datetimepicker-widget{\n        left: -100px !important;\n}\n}\n.popover-container{\n    padding: 0;\n    z-index: inherit !important;\n}\n#single-stop .popover-origin{\n    z-index: 99 !important;\n}\n#single-stop .popover-container input{\n    padding: 0.35rem 0.75rem;\n    width:100%;\n    border:none;\n}\n#single-stop .popover-container input:focus{\n    outline: none;\n}\n#single-stop .popover-container input:focus{\n    border: 1px solid #7EC4E7 !important;\n}\n.realtime_forms #multistop_departure:focus,.realtime_forms #multistop_departure2:focus,.realtime_forms #departure_date:focus,.realtime_forms #return_date:focus{\n    border-top-right-radius: 3px;\n    border-bottom-right-radius: 3px;\n}\n\n/*bootstrap 3 overrides*/\n#nonsingle-stop .bootstrap-touchspin-down,#nonsingle-stop .bootstrap-touchspin-up,#single-stop .bootstrap-touchspin-down,#single-stop .bootstrap-touchspin-up{\n    border-radius: 0;\n}", ""]);
+exports.push([module.i, "\n@media(max-width:320px){\nbody #app .header .navbar-nav .messages-menu > .dropdown-menu{\n    transform: translate3d(-80px, 55px, 0px) !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1408:
+/***/ 1597:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(709);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_eonasdan_bootstrap_datetimepicker_build_js_bootstrap_datetimepicker_min_js__ = __webpack_require__(1409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_eonasdan_bootstrap_datetimepicker_build_js_bootstrap_datetimepicker_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_eonasdan_bootstrap_datetimepicker_build_js_bootstrap_datetimepicker_min_js__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js__);
 //
 //
 //
@@ -605,87 +304,109 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-var moment = __webpack_require__(0);
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "blank",
+    name: "toastr_notification",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
     data: function data() {
         return {
-            get: '',
-            selected: 'option3',
-            inputs: []
-
+            selected: '',
+            lasttoast: "",
+            toastCount: 0,
+            msg: "Gnome &amp; Growl type non-blocking notifications",
+            title: "Toastr Notifications",
+            type: "success",
+            showDuration: "1000",
+            hideDuration: "1000",
+            timeOut: "5000",
+            extendedTimeOut: "1000",
+            closeButton: true,
+            newestOnTop: false,
+            progressBar: false,
+            preventDuplicates: false,
+            positionClass: "toast-top-right",
+            showEasing: "swing",
+            hideEasing: "swing",
+            showMethod: "show",
+            hideMethod: "hide"
         };
     },
 
-    methods: {
-        addRow: function addRow() {
-            if (this.inputs.length < 4) {
-                this.inputs.push({
-                    one: '',
-                    two: ''
-                });
-                setTimeout(function () {
-                    $(".departure_date").datetimepicker({
-                        format: 'DD/MM/YYYY'
-                    });
-                });
-            }
-        },
-        deleteRow: function deleteRow(index) {
-            this.inputs.splice(index, 1);
+    computed: {
+        toastrOptions: function toastrOptions() {
+            return 'Command: toastr["' + this.type + '"]("' + this.msg + (this.title ? '", "' + this.title : '') + '")\n\ntoastr.options = ' + JSON.stringify(__WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options, null, 2);
         }
     },
-    mounted: function mounted() {
-        "use strict";
+    methods: {
+        show_toast: function show_toast() {
+            this.toastCount++;
 
-        $("#departure_date,#return_date,.departure_date,#checkin_date,#checkout_date").datetimepicker({
-            format: 'DD/MM/YYYY'
-        });
+            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options = {
+                closeButton: this.closeButton,
+                newestOnTop: this.newestOnTop,
+                progressBar: this.progressBar,
+                positionClass: this.positionClass,
+                preventDuplicates: this.preventDuplicates,
+                onclick: null
+            };
 
-        // touchspin initialisation
-        $("input[name='adult_count']").TouchSpin({
-            initval: 1,
-            min: 1,
-            max: 9,
-            mousewheel: false
-        });
-        $("input[name='child_count']").TouchSpin({
-            initval: 0,
-            min: 0,
-            max: 9,
-            mousewheel: false
-        });
-        $("input[name='infant_count']").TouchSpin({
-            initval: 0,
-            min: 0,
-            max: 4,
-            mousewheel: false
-        });
+            if (this.showDuration) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.showDuration = this.showDuration;
+            }
+            if (this.timeOut) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.timeOut = this.timeOut;
+            }
+
+            if (this.extendedTimeOut) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.extendedTimeOut = this.extendedTimeOut;
+            }
+            if (this.hideDuration) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.hideDuration = this.hideDuration;
+            }
+            if (this.showEasing) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.showEasing = this.showEasing;
+            }
+
+            if (this.hideEasing) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.hideEasing = this.hideEasing;
+            }
+
+            if (this.showMethod) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.showMethod = this.showMethod;
+            }
+
+            if (this.hideMethod) {
+                __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.options.hideMethod = this.hideMethod;
+            }
+
+            var $toast = __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a[this.type](this.msg, this.title); // Wire up an event handler to a button in the toast, if it exists
+            this.lasttoast = $toast;
+
+            if (typeof $toast === 'undefined') {
+                return;
+            }
+        },
+        getLastToast: function getLastToast() {
+            return this.lasttoast;
+        },
+        clearlast: function clearlast() {
+            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.clear(this.getLastToast());
+        },
+        clearall: function clearall() {
+            __WEBPACK_IMPORTED_MODULE_1_toastr_build_toastr_min_js___default.a.clear();
+        }
     },
+    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 1409:
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(a){"use strict";if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(528),__webpack_require__(0)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else if("object"==typeof exports)module.exports=a(require("jquery"),require("moment"));else{if("undefined"==typeof jQuery)throw"bootstrap-datetimepicker requires jQuery to be loaded first";if("undefined"==typeof moment)throw"bootstrap-datetimepicker requires Moment.js to be loaded first";a(jQuery,moment)}}(function(a,b){"use strict";if(!b)throw new Error("bootstrap-datetimepicker requires Moment.js to be loaded first");var c=function(c,d){var e,f,g,h,i,j,k,l={},m=!0,n=!1,o=!1,p=0,q=[{clsName:"days",navFnc:"M",navStep:1},{clsName:"months",navFnc:"y",navStep:1},{clsName:"years",navFnc:"y",navStep:10},{clsName:"decades",navFnc:"y",navStep:100}],r=["days","months","years","decades"],s=["top","bottom","auto"],t=["left","right","auto"],u=["default","top","bottom"],v={up:38,38:"up",down:40,40:"down",left:37,37:"left",right:39,39:"right",tab:9,9:"tab",escape:27,27:"escape",enter:13,13:"enter",pageUp:33,33:"pageUp",pageDown:34,34:"pageDown",shift:16,16:"shift",control:17,17:"control",space:32,32:"space",t:84,84:"t",delete:46,46:"delete"},w={},x=function(){return void 0!==b.tz&&void 0!==d.timeZone&&null!==d.timeZone&&""!==d.timeZone},y=function(a){var c;return c=void 0===a||null===a?b():b.isDate(a)||b.isMoment(a)?b(a):x()?b.tz(a,j,d.useStrict,d.timeZone):b(a,j,d.useStrict),x()&&c.tz(d.timeZone),c},z=function(a){if("string"!=typeof a||a.length>1)throw new TypeError("isEnabled expects a single character string parameter");switch(a){case"y":return i.indexOf("Y")!==-1;case"M":return i.indexOf("M")!==-1;case"d":return i.toLowerCase().indexOf("d")!==-1;case"h":case"H":return i.toLowerCase().indexOf("h")!==-1;case"m":return i.indexOf("m")!==-1;case"s":return i.indexOf("s")!==-1;default:return!1}},A=function(){return z("h")||z("m")||z("s")},B=function(){return z("y")||z("M")||z("d")},C=function(){var b=a("<thead>").append(a("<tr>").append(a("<th>").addClass("prev").attr("data-action","previous").append(a("<span>").addClass(d.icons.previous))).append(a("<th>").addClass("picker-switch").attr("data-action","pickerSwitch").attr("colspan",d.calendarWeeks?"6":"5")).append(a("<th>").addClass("next").attr("data-action","next").append(a("<span>").addClass(d.icons.next)))),c=a("<tbody>").append(a("<tr>").append(a("<td>").attr("colspan",d.calendarWeeks?"8":"7")));return[a("<div>").addClass("datepicker-days").append(a("<table>").addClass("table-condensed").append(b).append(a("<tbody>"))),a("<div>").addClass("datepicker-months").append(a("<table>").addClass("table-condensed").append(b.clone()).append(c.clone())),a("<div>").addClass("datepicker-years").append(a("<table>").addClass("table-condensed").append(b.clone()).append(c.clone())),a("<div>").addClass("datepicker-decades").append(a("<table>").addClass("table-condensed").append(b.clone()).append(c.clone()))]},D=function(){var b=a("<tr>"),c=a("<tr>"),e=a("<tr>");return z("h")&&(b.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.incrementHour}).addClass("btn").attr("data-action","incrementHours").append(a("<span>").addClass(d.icons.up)))),c.append(a("<td>").append(a("<span>").addClass("timepicker-hour").attr({"data-time-component":"hours",title:d.tooltips.pickHour}).attr("data-action","showHours"))),e.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.decrementHour}).addClass("btn").attr("data-action","decrementHours").append(a("<span>").addClass(d.icons.down))))),z("m")&&(z("h")&&(b.append(a("<td>").addClass("separator")),c.append(a("<td>").addClass("separator").html(":")),e.append(a("<td>").addClass("separator"))),b.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.incrementMinute}).addClass("btn").attr("data-action","incrementMinutes").append(a("<span>").addClass(d.icons.up)))),c.append(a("<td>").append(a("<span>").addClass("timepicker-minute").attr({"data-time-component":"minutes",title:d.tooltips.pickMinute}).attr("data-action","showMinutes"))),e.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.decrementMinute}).addClass("btn").attr("data-action","decrementMinutes").append(a("<span>").addClass(d.icons.down))))),z("s")&&(z("m")&&(b.append(a("<td>").addClass("separator")),c.append(a("<td>").addClass("separator").html(":")),e.append(a("<td>").addClass("separator"))),b.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.incrementSecond}).addClass("btn").attr("data-action","incrementSeconds").append(a("<span>").addClass(d.icons.up)))),c.append(a("<td>").append(a("<span>").addClass("timepicker-second").attr({"data-time-component":"seconds",title:d.tooltips.pickSecond}).attr("data-action","showSeconds"))),e.append(a("<td>").append(a("<a>").attr({href:"#",tabindex:"-1",title:d.tooltips.decrementSecond}).addClass("btn").attr("data-action","decrementSeconds").append(a("<span>").addClass(d.icons.down))))),h||(b.append(a("<td>").addClass("separator")),c.append(a("<td>").append(a("<button>").addClass("btn btn-primary").attr({"data-action":"togglePeriod",tabindex:"-1",title:d.tooltips.togglePeriod}))),e.append(a("<td>").addClass("separator"))),a("<div>").addClass("timepicker-picker").append(a("<table>").addClass("table-condensed").append([b,c,e]))},E=function(){var b=a("<div>").addClass("timepicker-hours").append(a("<table>").addClass("table-condensed")),c=a("<div>").addClass("timepicker-minutes").append(a("<table>").addClass("table-condensed")),d=a("<div>").addClass("timepicker-seconds").append(a("<table>").addClass("table-condensed")),e=[D()];return z("h")&&e.push(b),z("m")&&e.push(c),z("s")&&e.push(d),e},F=function(){var b=[];return d.showTodayButton&&b.push(a("<td>").append(a("<a>").attr({"data-action":"today",title:d.tooltips.today}).append(a("<span>").addClass(d.icons.today)))),!d.sideBySide&&B()&&A()&&b.push(a("<td>").append(a("<a>").attr({"data-action":"togglePicker",title:d.tooltips.selectTime}).append(a("<span>").addClass(d.icons.time)))),d.showClear&&b.push(a("<td>").append(a("<a>").attr({"data-action":"clear",title:d.tooltips.clear}).append(a("<span>").addClass(d.icons.clear)))),d.showClose&&b.push(a("<td>").append(a("<a>").attr({"data-action":"close",title:d.tooltips.close}).append(a("<span>").addClass(d.icons.close)))),a("<table>").addClass("table-condensed").append(a("<tbody>").append(a("<tr>").append(b)))},G=function(){var b=a("<div>").addClass("bootstrap-datetimepicker-widget dropdown-menu"),c=a("<div>").addClass("datepicker").append(C()),e=a("<div>").addClass("timepicker").append(E()),f=a("<ul>").addClass("list-unstyled"),g=a("<li>").addClass("picker-switch"+(d.collapse?" accordion-toggle":"")).append(F());return d.inline&&b.removeClass("dropdown-menu"),h&&b.addClass("usetwentyfour"),z("s")&&!h&&b.addClass("wider"),d.sideBySide&&B()&&A()?(b.addClass("timepicker-sbs"),"top"===d.toolbarPlacement&&b.append(g),b.append(a("<div>").addClass("row").append(c.addClass("col-md-6")).append(e.addClass("col-md-6"))),"bottom"===d.toolbarPlacement&&b.append(g),b):("top"===d.toolbarPlacement&&f.append(g),B()&&f.append(a("<li>").addClass(d.collapse&&A()?"collapse in":"").append(c)),"default"===d.toolbarPlacement&&f.append(g),A()&&f.append(a("<li>").addClass(d.collapse&&B()?"collapse":"").append(e)),"bottom"===d.toolbarPlacement&&f.append(g),b.append(f))},H=function(){var b,e={};return b=c.is("input")||d.inline?c.data():c.find("input").data(),b.dateOptions&&b.dateOptions instanceof Object&&(e=a.extend(!0,e,b.dateOptions)),a.each(d,function(a){var c="date"+a.charAt(0).toUpperCase()+a.slice(1);void 0!==b[c]&&(e[a]=b[c])}),e},I=function(){var b,e=(n||c).position(),f=(n||c).offset(),g=d.widgetPositioning.vertical,h=d.widgetPositioning.horizontal;if(d.widgetParent)b=d.widgetParent.append(o);else if(c.is("input"))b=c.after(o).parent();else{if(d.inline)return void(b=c.append(o));b=c,c.children().first().after(o)}if("auto"===g&&(g=f.top+1.5*o.height()>=a(window).height()+a(window).scrollTop()&&o.height()+c.outerHeight()<f.top?"top":"bottom"),"auto"===h&&(h=b.width()<f.left+o.outerWidth()/2&&f.left+o.outerWidth()>a(window).width()?"right":"left"),"top"===g?o.addClass("top").removeClass("bottom"):o.addClass("bottom").removeClass("top"),"right"===h?o.addClass("pull-right"):o.removeClass("pull-right"),"static"===b.css("position")&&(b=b.parents().filter(function(){return"static"!==a(this).css("position")}).first()),0===b.length)throw new Error("datetimepicker component should be placed within a non-static positioned container");o.css({top:"top"===g?"auto":e.top+c.outerHeight(),bottom:"top"===g?b.outerHeight()-(b===c?0:e.top):"auto",left:"left"===h?b===c?0:e.left:"auto",right:"left"===h?"auto":b.outerWidth()-c.outerWidth()-(b===c?0:e.left)})},J=function(a){"dp.change"===a.type&&(a.date&&a.date.isSame(a.oldDate)||!a.date&&!a.oldDate)||c.trigger(a)},K=function(a){"y"===a&&(a="YYYY"),J({type:"dp.update",change:a,viewDate:f.clone()})},L=function(a){o&&(a&&(k=Math.max(p,Math.min(3,k+a))),o.find(".datepicker > div").hide().filter(".datepicker-"+q[k].clsName).show())},M=function(){var b=a("<tr>"),c=f.clone().startOf("w").startOf("d");for(d.calendarWeeks===!0&&b.append(a("<th>").addClass("cw").text("#"));c.isBefore(f.clone().endOf("w"));)b.append(a("<th>").addClass("dow").text(c.format("dd"))),c.add(1,"d");o.find(".datepicker-days thead").append(b)},N=function(a){return d.disabledDates[a.format("YYYY-MM-DD")]===!0},O=function(a){return d.enabledDates[a.format("YYYY-MM-DD")]===!0},P=function(a){return d.disabledHours[a.format("H")]===!0},Q=function(a){return d.enabledHours[a.format("H")]===!0},R=function(b,c){if(!b.isValid())return!1;if(d.disabledDates&&"d"===c&&N(b))return!1;if(d.enabledDates&&"d"===c&&!O(b))return!1;if(d.minDate&&b.isBefore(d.minDate,c))return!1;if(d.maxDate&&b.isAfter(d.maxDate,c))return!1;if(d.daysOfWeekDisabled&&"d"===c&&d.daysOfWeekDisabled.indexOf(b.day())!==-1)return!1;if(d.disabledHours&&("h"===c||"m"===c||"s"===c)&&P(b))return!1;if(d.enabledHours&&("h"===c||"m"===c||"s"===c)&&!Q(b))return!1;if(d.disabledTimeIntervals&&("h"===c||"m"===c||"s"===c)){var e=!1;if(a.each(d.disabledTimeIntervals,function(){if(b.isBetween(this[0],this[1]))return e=!0,!1}),e)return!1}return!0},S=function(){for(var b=[],c=f.clone().startOf("y").startOf("d");c.isSame(f,"y");)b.push(a("<span>").attr("data-action","selectMonth").addClass("month").text(c.format("MMM"))),c.add(1,"M");o.find(".datepicker-months td").empty().append(b)},T=function(){var b=o.find(".datepicker-months"),c=b.find("th"),g=b.find("tbody").find("span");c.eq(0).find("span").attr("title",d.tooltips.prevYear),c.eq(1).attr("title",d.tooltips.selectYear),c.eq(2).find("span").attr("title",d.tooltips.nextYear),b.find(".disabled").removeClass("disabled"),R(f.clone().subtract(1,"y"),"y")||c.eq(0).addClass("disabled"),c.eq(1).text(f.year()),R(f.clone().add(1,"y"),"y")||c.eq(2).addClass("disabled"),g.removeClass("active"),e.isSame(f,"y")&&!m&&g.eq(e.month()).addClass("active"),g.each(function(b){R(f.clone().month(b),"M")||a(this).addClass("disabled")})},U=function(){var a=o.find(".datepicker-years"),b=a.find("th"),c=f.clone().subtract(5,"y"),g=f.clone().add(6,"y"),h="";for(b.eq(0).find("span").attr("title",d.tooltips.prevDecade),b.eq(1).attr("title",d.tooltips.selectDecade),b.eq(2).find("span").attr("title",d.tooltips.nextDecade),a.find(".disabled").removeClass("disabled"),d.minDate&&d.minDate.isAfter(c,"y")&&b.eq(0).addClass("disabled"),b.eq(1).text(c.year()+"-"+g.year()),d.maxDate&&d.maxDate.isBefore(g,"y")&&b.eq(2).addClass("disabled");!c.isAfter(g,"y");)h+='<span data-action="selectYear" class="year'+(c.isSame(e,"y")&&!m?" active":"")+(R(c,"y")?"":" disabled")+'">'+c.year()+"</span>",c.add(1,"y");a.find("td").html(h)},V=function(){var a,c=o.find(".datepicker-decades"),g=c.find("th"),h=b({y:f.year()-f.year()%100-1}),i=h.clone().add(100,"y"),j=h.clone(),k=!1,l=!1,m="";for(g.eq(0).find("span").attr("title",d.tooltips.prevCentury),g.eq(2).find("span").attr("title",d.tooltips.nextCentury),c.find(".disabled").removeClass("disabled"),(h.isSame(b({y:1900}))||d.minDate&&d.minDate.isAfter(h,"y"))&&g.eq(0).addClass("disabled"),g.eq(1).text(h.year()+"-"+i.year()),(h.isSame(b({y:2e3}))||d.maxDate&&d.maxDate.isBefore(i,"y"))&&g.eq(2).addClass("disabled");!h.isAfter(i,"y");)a=h.year()+12,k=d.minDate&&d.minDate.isAfter(h,"y")&&d.minDate.year()<=a,l=d.maxDate&&d.maxDate.isAfter(h,"y")&&d.maxDate.year()<=a,m+='<span data-action="selectDecade" class="decade'+(e.isAfter(h)&&e.year()<=a?" active":"")+(R(h,"y")||k||l?"":" disabled")+'" data-selection="'+(h.year()+6)+'">'+(h.year()+1)+" - "+(h.year()+12)+"</span>",h.add(12,"y");m+="<span></span><span></span><span></span>",c.find("td").html(m),g.eq(1).text(j.year()+1+"-"+h.year())},W=function(){var b,c,g,h=o.find(".datepicker-days"),i=h.find("th"),j=[],k=[];if(B()){for(i.eq(0).find("span").attr("title",d.tooltips.prevMonth),i.eq(1).attr("title",d.tooltips.selectMonth),i.eq(2).find("span").attr("title",d.tooltips.nextMonth),h.find(".disabled").removeClass("disabled"),i.eq(1).text(f.format(d.dayViewHeaderFormat)),R(f.clone().subtract(1,"M"),"M")||i.eq(0).addClass("disabled"),R(f.clone().add(1,"M"),"M")||i.eq(2).addClass("disabled"),b=f.clone().startOf("M").startOf("w").startOf("d"),g=0;g<42;g++)0===b.weekday()&&(c=a("<tr>"),d.calendarWeeks&&c.append('<td class="cw">'+b.week()+"</td>"),j.push(c)),k=["day"],b.isBefore(f,"M")&&k.push("old"),b.isAfter(f,"M")&&k.push("new"),b.isSame(e,"d")&&!m&&k.push("active"),R(b,"d")||k.push("disabled"),b.isSame(y(),"d")&&k.push("today"),0!==b.day()&&6!==b.day()||k.push("weekend"),J({type:"dp.classify",date:b,classNames:k}),c.append('<td data-action="selectDay" data-day="'+b.format("L")+'" class="'+k.join(" ")+'">'+b.date()+"</td>"),b.add(1,"d");h.find("tbody").empty().append(j),T(),U(),V()}},X=function(){var b=o.find(".timepicker-hours table"),c=f.clone().startOf("d"),d=[],e=a("<tr>");for(f.hour()>11&&!h&&c.hour(12);c.isSame(f,"d")&&(h||f.hour()<12&&c.hour()<12||f.hour()>11);)c.hour()%4===0&&(e=a("<tr>"),d.push(e)),e.append('<td data-action="selectHour" class="hour'+(R(c,"h")?"":" disabled")+'">'+c.format(h?"HH":"hh")+"</td>"),c.add(1,"h");b.empty().append(d)},Y=function(){for(var b=o.find(".timepicker-minutes table"),c=f.clone().startOf("h"),e=[],g=a("<tr>"),h=1===d.stepping?5:d.stepping;f.isSame(c,"h");)c.minute()%(4*h)===0&&(g=a("<tr>"),e.push(g)),g.append('<td data-action="selectMinute" class="minute'+(R(c,"m")?"":" disabled")+'">'+c.format("mm")+"</td>"),c.add(h,"m");b.empty().append(e)},Z=function(){for(var b=o.find(".timepicker-seconds table"),c=f.clone().startOf("m"),d=[],e=a("<tr>");f.isSame(c,"m");)c.second()%20===0&&(e=a("<tr>"),d.push(e)),e.append('<td data-action="selectSecond" class="second'+(R(c,"s")?"":" disabled")+'">'+c.format("ss")+"</td>"),c.add(5,"s");b.empty().append(d)},$=function(){var a,b,c=o.find(".timepicker span[data-time-component]");h||(a=o.find(".timepicker [data-action=togglePeriod]"),b=e.clone().add(e.hours()>=12?-12:12,"h"),a.text(e.format("A")),R(b,"h")?a.removeClass("disabled"):a.addClass("disabled")),c.filter("[data-time-component=hours]").text(e.format(h?"HH":"hh")),c.filter("[data-time-component=minutes]").text(e.format("mm")),c.filter("[data-time-component=seconds]").text(e.format("ss")),X(),Y(),Z()},_=function(){o&&(W(),$())},aa=function(a){var b=m?null:e;if(!a)return m=!0,g.val(""),c.data("date",""),J({type:"dp.change",date:!1,oldDate:b}),void _();if(a=a.clone().locale(d.locale),x()&&a.tz(d.timeZone),1!==d.stepping)for(a.minutes(Math.round(a.minutes()/d.stepping)*d.stepping).seconds(0);d.minDate&&a.isBefore(d.minDate);)a.add(d.stepping,"minutes");R(a)?(e=a,f=e.clone(),g.val(e.format(i)),c.data("date",e.format(i)),m=!1,_(),J({type:"dp.change",date:e.clone(),oldDate:b})):(d.keepInvalid?J({type:"dp.change",date:a,oldDate:b}):g.val(m?"":e.format(i)),J({type:"dp.error",date:a,oldDate:b}))},ba=function(){var b=!1;return o?(o.find(".collapse").each(function(){var c=a(this).data("collapse");return!c||!c.transitioning||(b=!0,!1)}),b?l:(n&&n.hasClass("btn")&&n.toggleClass("active"),o.hide(),a(window).off("resize",I),o.off("click","[data-action]"),o.off("mousedown",!1),o.remove(),o=!1,J({type:"dp.hide",date:e.clone()}),g.blur(),f=e.clone(),l)):l},ca=function(){aa(null)},da=function(a){return void 0===d.parseInputDate?(!b.isMoment(a)||a instanceof Date)&&(a=y(a)):a=d.parseInputDate(a),a},ea={next:function(){var a=q[k].navFnc;f.add(q[k].navStep,a),W(),K(a)},previous:function(){var a=q[k].navFnc;f.subtract(q[k].navStep,a),W(),K(a)},pickerSwitch:function(){L(1)},selectMonth:function(b){var c=a(b.target).closest("tbody").find("span").index(a(b.target));f.month(c),k===p?(aa(e.clone().year(f.year()).month(f.month())),d.inline||ba()):(L(-1),W()),K("M")},selectYear:function(b){var c=parseInt(a(b.target).text(),10)||0;f.year(c),k===p?(aa(e.clone().year(f.year())),d.inline||ba()):(L(-1),W()),K("YYYY")},selectDecade:function(b){var c=parseInt(a(b.target).data("selection"),10)||0;f.year(c),k===p?(aa(e.clone().year(f.year())),d.inline||ba()):(L(-1),W()),K("YYYY")},selectDay:function(b){var c=f.clone();a(b.target).is(".old")&&c.subtract(1,"M"),a(b.target).is(".new")&&c.add(1,"M"),aa(c.date(parseInt(a(b.target).text(),10))),A()||d.keepOpen||d.inline||ba()},incrementHours:function(){var a=e.clone().add(1,"h");R(a,"h")&&aa(a)},incrementMinutes:function(){var a=e.clone().add(d.stepping,"m");R(a,"m")&&aa(a)},incrementSeconds:function(){var a=e.clone().add(1,"s");R(a,"s")&&aa(a)},decrementHours:function(){var a=e.clone().subtract(1,"h");R(a,"h")&&aa(a)},decrementMinutes:function(){var a=e.clone().subtract(d.stepping,"m");R(a,"m")&&aa(a)},decrementSeconds:function(){var a=e.clone().subtract(1,"s");R(a,"s")&&aa(a)},togglePeriod:function(){aa(e.clone().add(e.hours()>=12?-12:12,"h"))},togglePicker:function(b){var c,e=a(b.target),f=e.closest("ul"),g=f.find(".in"),h=f.find(".collapse:not(.in)");if(g&&g.length){if(c=g.data("collapse"),c&&c.transitioning)return;g.collapse?(g.collapse("hide"),h.collapse("show")):(g.removeClass("in"),h.addClass("in")),e.is("span")?e.toggleClass(d.icons.time+" "+d.icons.date):e.find("span").toggleClass(d.icons.time+" "+d.icons.date)}},showPicker:function(){o.find(".timepicker > div:not(.timepicker-picker)").hide(),o.find(".timepicker .timepicker-picker").show()},showHours:function(){o.find(".timepicker .timepicker-picker").hide(),o.find(".timepicker .timepicker-hours").show()},showMinutes:function(){o.find(".timepicker .timepicker-picker").hide(),o.find(".timepicker .timepicker-minutes").show()},showSeconds:function(){o.find(".timepicker .timepicker-picker").hide(),o.find(".timepicker .timepicker-seconds").show()},selectHour:function(b){var c=parseInt(a(b.target).text(),10);h||(e.hours()>=12?12!==c&&(c+=12):12===c&&(c=0)),aa(e.clone().hours(c)),ea.showPicker.call(l)},selectMinute:function(b){aa(e.clone().minutes(parseInt(a(b.target).text(),10))),ea.showPicker.call(l)},selectSecond:function(b){aa(e.clone().seconds(parseInt(a(b.target).text(),10))),ea.showPicker.call(l)},clear:ca,today:function(){var a=y();R(a,"d")&&aa(a)},close:ba},fa=function(b){return!a(b.currentTarget).is(".disabled")&&(ea[a(b.currentTarget).data("action")].apply(l,arguments),!1)},ga=function(){var b,c={year:function(a){return a.month(0).date(1).hours(0).seconds(0).minutes(0)},month:function(a){return a.date(1).hours(0).seconds(0).minutes(0)},day:function(a){return a.hours(0).seconds(0).minutes(0)},hour:function(a){return a.seconds(0).minutes(0)},minute:function(a){return a.seconds(0)}};return g.prop("disabled")||!d.ignoreReadonly&&g.prop("readonly")||o?l:(void 0!==g.val()&&0!==g.val().trim().length?aa(da(g.val().trim())):m&&d.useCurrent&&(d.inline||g.is("input")&&0===g.val().trim().length)&&(b=y(),"string"==typeof d.useCurrent&&(b=c[d.useCurrent](b)),aa(b)),o=G(),M(),S(),o.find(".timepicker-hours").hide(),o.find(".timepicker-minutes").hide(),o.find(".timepicker-seconds").hide(),_(),L(),a(window).on("resize",I),o.on("click","[data-action]",fa),o.on("mousedown",!1),n&&n.hasClass("btn")&&n.toggleClass("active"),I(),o.show(),d.focusOnShow&&!g.is(":focus")&&g.focus(),J({type:"dp.show"}),l)},ha=function(){return o?ba():ga()},ia=function(a){var b,c,e,f,g=null,h=[],i={},j=a.which,k="p";w[j]=k;for(b in w)w.hasOwnProperty(b)&&w[b]===k&&(h.push(b),parseInt(b,10)!==j&&(i[b]=!0));for(b in d.keyBinds)if(d.keyBinds.hasOwnProperty(b)&&"function"==typeof d.keyBinds[b]&&(e=b.split(" "),e.length===h.length&&v[j]===e[e.length-1])){for(f=!0,c=e.length-2;c>=0;c--)if(!(v[e[c]]in i)){f=!1;break}if(f){g=d.keyBinds[b];break}}g&&(g.call(l,o),a.stopPropagation(),a.preventDefault())},ja=function(a){w[a.which]="r",a.stopPropagation(),a.preventDefault()},ka=function(b){var c=a(b.target).val().trim(),d=c?da(c):null;return aa(d),b.stopImmediatePropagation(),!1},la=function(){g.on({change:ka,blur:d.debug?"":ba,keydown:ia,keyup:ja,focus:d.allowInputToggle?ga:""}),c.is("input")?g.on({focus:ga}):n&&(n.on("click",ha),n.on("mousedown",!1))},ma=function(){g.off({change:ka,blur:blur,keydown:ia,keyup:ja,focus:d.allowInputToggle?ba:""}),c.is("input")?g.off({focus:ga}):n&&(n.off("click",ha),n.off("mousedown",!1))},na=function(b){var c={};return a.each(b,function(){var a=da(this);a.isValid()&&(c[a.format("YYYY-MM-DD")]=!0)}),!!Object.keys(c).length&&c},oa=function(b){var c={};return a.each(b,function(){c[this]=!0}),!!Object.keys(c).length&&c},pa=function(){var a=d.format||"L LT";i=a.replace(/(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,function(a){var b=e.localeData().longDateFormat(a)||a;return b.replace(/(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,function(a){return e.localeData().longDateFormat(a)||a})}),j=d.extraFormats?d.extraFormats.slice():[],j.indexOf(a)<0&&j.indexOf(i)<0&&j.push(i),h=i.toLowerCase().indexOf("a")<1&&i.replace(/\[.*?\]/g,"").indexOf("h")<1,z("y")&&(p=2),z("M")&&(p=1),z("d")&&(p=0),k=Math.max(p,k),m||aa(e)};if(l.destroy=function(){ba(),ma(),c.removeData("DateTimePicker"),c.removeData("date")},l.toggle=ha,l.show=ga,l.hide=ba,l.disable=function(){return ba(),n&&n.hasClass("btn")&&n.addClass("disabled"),g.prop("disabled",!0),l},l.enable=function(){return n&&n.hasClass("btn")&&n.removeClass("disabled"),g.prop("disabled",!1),l},l.ignoreReadonly=function(a){if(0===arguments.length)return d.ignoreReadonly;if("boolean"!=typeof a)throw new TypeError("ignoreReadonly () expects a boolean parameter");return d.ignoreReadonly=a,l},l.options=function(b){if(0===arguments.length)return a.extend(!0,{},d);if(!(b instanceof Object))throw new TypeError("options() options parameter should be an object");return a.extend(!0,d,b),a.each(d,function(a,b){if(void 0===l[a])throw new TypeError("option "+a+" is not recognized!");l[a](b)}),l},l.date=function(a){if(0===arguments.length)return m?null:e.clone();if(!(null===a||"string"==typeof a||b.isMoment(a)||a instanceof Date))throw new TypeError("date() parameter must be one of [null, string, moment or Date]");return aa(null===a?null:da(a)),l},l.format=function(a){if(0===arguments.length)return d.format;if("string"!=typeof a&&("boolean"!=typeof a||a!==!1))throw new TypeError("format() expects a string or boolean:false parameter "+a);return d.format=a,i&&pa(),l},l.timeZone=function(a){if(0===arguments.length)return d.timeZone;if("string"!=typeof a)throw new TypeError("newZone() expects a string parameter");return d.timeZone=a,l},l.dayViewHeaderFormat=function(a){if(0===arguments.length)return d.dayViewHeaderFormat;if("string"!=typeof a)throw new TypeError("dayViewHeaderFormat() expects a string parameter");return d.dayViewHeaderFormat=a,l},l.extraFormats=function(a){if(0===arguments.length)return d.extraFormats;if(a!==!1&&!(a instanceof Array))throw new TypeError("extraFormats() expects an array or false parameter");return d.extraFormats=a,j&&pa(),l},l.disabledDates=function(b){if(0===arguments.length)return d.disabledDates?a.extend({},d.disabledDates):d.disabledDates;if(!b)return d.disabledDates=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledDates() expects an array parameter");return d.disabledDates=na(b),d.enabledDates=!1,_(),l},l.enabledDates=function(b){if(0===arguments.length)return d.enabledDates?a.extend({},d.enabledDates):d.enabledDates;if(!b)return d.enabledDates=!1,_(),l;if(!(b instanceof Array))throw new TypeError("enabledDates() expects an array parameter");return d.enabledDates=na(b),d.disabledDates=!1,_(),l},l.daysOfWeekDisabled=function(a){if(0===arguments.length)return d.daysOfWeekDisabled.splice(0);if("boolean"==typeof a&&!a)return d.daysOfWeekDisabled=!1,_(),l;if(!(a instanceof Array))throw new TypeError("daysOfWeekDisabled() expects an array parameter");if(d.daysOfWeekDisabled=a.reduce(function(a,b){return b=parseInt(b,10),b>6||b<0||isNaN(b)?a:(a.indexOf(b)===-1&&a.push(b),a)},[]).sort(),d.useCurrent&&!d.keepInvalid){for(var b=0;!R(e,"d");){if(e.add(1,"d"),31===b)throw"Tried 31 times to find a valid date";b++}aa(e)}return _(),l},l.maxDate=function(a){if(0===arguments.length)return d.maxDate?d.maxDate.clone():d.maxDate;if("boolean"==typeof a&&a===!1)return d.maxDate=!1,_(),l;"string"==typeof a&&("now"!==a&&"moment"!==a||(a=y()));var b=da(a);if(!b.isValid())throw new TypeError("maxDate() Could not parse date parameter: "+a);if(d.minDate&&b.isBefore(d.minDate))throw new TypeError("maxDate() date parameter is before options.minDate: "+b.format(i));return d.maxDate=b,d.useCurrent&&!d.keepInvalid&&e.isAfter(a)&&aa(d.maxDate),f.isAfter(b)&&(f=b.clone().subtract(d.stepping,"m")),_(),l},l.minDate=function(a){if(0===arguments.length)return d.minDate?d.minDate.clone():d.minDate;if("boolean"==typeof a&&a===!1)return d.minDate=!1,_(),l;"string"==typeof a&&("now"!==a&&"moment"!==a||(a=y()));var b=da(a);if(!b.isValid())throw new TypeError("minDate() Could not parse date parameter: "+a);if(d.maxDate&&b.isAfter(d.maxDate))throw new TypeError("minDate() date parameter is after options.maxDate: "+b.format(i));return d.minDate=b,d.useCurrent&&!d.keepInvalid&&e.isBefore(a)&&aa(d.minDate),f.isBefore(b)&&(f=b.clone().add(d.stepping,"m")),_(),l},l.defaultDate=function(a){if(0===arguments.length)return d.defaultDate?d.defaultDate.clone():d.defaultDate;if(!a)return d.defaultDate=!1,l;"string"==typeof a&&(a="now"===a||"moment"===a?y():y(a));var b=da(a);if(!b.isValid())throw new TypeError("defaultDate() Could not parse date parameter: "+a);if(!R(b))throw new TypeError("defaultDate() date passed is invalid according to component setup validations");return d.defaultDate=b,(d.defaultDate&&d.inline||""===g.val().trim())&&aa(d.defaultDate),l},l.locale=function(a){if(0===arguments.length)return d.locale;if(!b.localeData(a))throw new TypeError("locale() locale "+a+" is not loaded from moment locales!");return d.locale=a,e.locale(d.locale),f.locale(d.locale),i&&pa(),o&&(ba(),ga()),l},l.stepping=function(a){return 0===arguments.length?d.stepping:(a=parseInt(a,10),(isNaN(a)||a<1)&&(a=1),d.stepping=a,l)},l.useCurrent=function(a){var b=["year","month","day","hour","minute"];if(0===arguments.length)return d.useCurrent;if("boolean"!=typeof a&&"string"!=typeof a)throw new TypeError("useCurrent() expects a boolean or string parameter");if("string"==typeof a&&b.indexOf(a.toLowerCase())===-1)throw new TypeError("useCurrent() expects a string parameter of "+b.join(", "));return d.useCurrent=a,l},l.collapse=function(a){if(0===arguments.length)return d.collapse;if("boolean"!=typeof a)throw new TypeError("collapse() expects a boolean parameter");return d.collapse===a?l:(d.collapse=a,o&&(ba(),ga()),l)},l.icons=function(b){if(0===arguments.length)return a.extend({},d.icons);if(!(b instanceof Object))throw new TypeError("icons() expects parameter to be an Object");return a.extend(d.icons,b),o&&(ba(),ga()),l},l.tooltips=function(b){if(0===arguments.length)return a.extend({},d.tooltips);if(!(b instanceof Object))throw new TypeError("tooltips() expects parameter to be an Object");return a.extend(d.tooltips,b),o&&(ba(),ga()),l},l.useStrict=function(a){if(0===arguments.length)return d.useStrict;if("boolean"!=typeof a)throw new TypeError("useStrict() expects a boolean parameter");return d.useStrict=a,l},l.sideBySide=function(a){if(0===arguments.length)return d.sideBySide;if("boolean"!=typeof a)throw new TypeError("sideBySide() expects a boolean parameter");return d.sideBySide=a,o&&(ba(),ga()),l},l.viewMode=function(a){if(0===arguments.length)return d.viewMode;if("string"!=typeof a)throw new TypeError("viewMode() expects a string parameter");if(r.indexOf(a)===-1)throw new TypeError("viewMode() parameter must be one of ("+r.join(", ")+") value");return d.viewMode=a,k=Math.max(r.indexOf(a),p),L(),l},l.toolbarPlacement=function(a){if(0===arguments.length)return d.toolbarPlacement;if("string"!=typeof a)throw new TypeError("toolbarPlacement() expects a string parameter");if(u.indexOf(a)===-1)throw new TypeError("toolbarPlacement() parameter must be one of ("+u.join(", ")+") value");return d.toolbarPlacement=a,o&&(ba(),ga()),l},l.widgetPositioning=function(b){if(0===arguments.length)return a.extend({},d.widgetPositioning);if("[object Object]"!=={}.toString.call(b))throw new TypeError("widgetPositioning() expects an object variable");if(b.horizontal){if("string"!=typeof b.horizontal)throw new TypeError("widgetPositioning() horizontal variable must be a string");if(b.horizontal=b.horizontal.toLowerCase(),t.indexOf(b.horizontal)===-1)throw new TypeError("widgetPositioning() expects horizontal parameter to be one of ("+t.join(", ")+")");d.widgetPositioning.horizontal=b.horizontal}if(b.vertical){if("string"!=typeof b.vertical)throw new TypeError("widgetPositioning() vertical variable must be a string");if(b.vertical=b.vertical.toLowerCase(),s.indexOf(b.vertical)===-1)throw new TypeError("widgetPositioning() expects vertical parameter to be one of ("+s.join(", ")+")");d.widgetPositioning.vertical=b.vertical}return _(),l},l.calendarWeeks=function(a){if(0===arguments.length)return d.calendarWeeks;if("boolean"!=typeof a)throw new TypeError("calendarWeeks() expects parameter to be a boolean value");return d.calendarWeeks=a,_(),l},l.showTodayButton=function(a){if(0===arguments.length)return d.showTodayButton;if("boolean"!=typeof a)throw new TypeError("showTodayButton() expects a boolean parameter");return d.showTodayButton=a,o&&(ba(),ga()),l},l.showClear=function(a){if(0===arguments.length)return d.showClear;if("boolean"!=typeof a)throw new TypeError("showClear() expects a boolean parameter");return d.showClear=a,o&&(ba(),ga()),l},l.widgetParent=function(b){if(0===arguments.length)return d.widgetParent;if("string"==typeof b&&(b=a(b)),null!==b&&"string"!=typeof b&&!(b instanceof a))throw new TypeError("widgetParent() expects a string or a jQuery object parameter");return d.widgetParent=b,o&&(ba(),ga()),l},l.keepOpen=function(a){if(0===arguments.length)return d.keepOpen;if("boolean"!=typeof a)throw new TypeError("keepOpen() expects a boolean parameter");return d.keepOpen=a,l},l.focusOnShow=function(a){if(0===arguments.length)return d.focusOnShow;if("boolean"!=typeof a)throw new TypeError("focusOnShow() expects a boolean parameter");return d.focusOnShow=a,l},l.inline=function(a){if(0===arguments.length)return d.inline;if("boolean"!=typeof a)throw new TypeError("inline() expects a boolean parameter");return d.inline=a,l},l.clear=function(){return ca(),l},l.keyBinds=function(a){return 0===arguments.length?d.keyBinds:(d.keyBinds=a,l)},l.getMoment=function(a){return y(a)},l.debug=function(a){if("boolean"!=typeof a)throw new TypeError("debug() expects a boolean parameter");return d.debug=a,l},l.allowInputToggle=function(a){if(0===arguments.length)return d.allowInputToggle;if("boolean"!=typeof a)throw new TypeError("allowInputToggle() expects a boolean parameter");return d.allowInputToggle=a,l},l.showClose=function(a){if(0===arguments.length)return d.showClose;if("boolean"!=typeof a)throw new TypeError("showClose() expects a boolean parameter");return d.showClose=a,l},l.keepInvalid=function(a){if(0===arguments.length)return d.keepInvalid;if("boolean"!=typeof a)throw new TypeError("keepInvalid() expects a boolean parameter");
-return d.keepInvalid=a,l},l.datepickerInput=function(a){if(0===arguments.length)return d.datepickerInput;if("string"!=typeof a)throw new TypeError("datepickerInput() expects a string parameter");return d.datepickerInput=a,l},l.parseInputDate=function(a){if(0===arguments.length)return d.parseInputDate;if("function"!=typeof a)throw new TypeError("parseInputDate() sholud be as function");return d.parseInputDate=a,l},l.disabledTimeIntervals=function(b){if(0===arguments.length)return d.disabledTimeIntervals?a.extend({},d.disabledTimeIntervals):d.disabledTimeIntervals;if(!b)return d.disabledTimeIntervals=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledTimeIntervals() expects an array parameter");return d.disabledTimeIntervals=b,_(),l},l.disabledHours=function(b){if(0===arguments.length)return d.disabledHours?a.extend({},d.disabledHours):d.disabledHours;if(!b)return d.disabledHours=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledHours() expects an array parameter");if(d.disabledHours=oa(b),d.enabledHours=!1,d.useCurrent&&!d.keepInvalid){for(var c=0;!R(e,"h");){if(e.add(1,"h"),24===c)throw"Tried 24 times to find a valid date";c++}aa(e)}return _(),l},l.enabledHours=function(b){if(0===arguments.length)return d.enabledHours?a.extend({},d.enabledHours):d.enabledHours;if(!b)return d.enabledHours=!1,_(),l;if(!(b instanceof Array))throw new TypeError("enabledHours() expects an array parameter");if(d.enabledHours=oa(b),d.disabledHours=!1,d.useCurrent&&!d.keepInvalid){for(var c=0;!R(e,"h");){if(e.add(1,"h"),24===c)throw"Tried 24 times to find a valid date";c++}aa(e)}return _(),l},l.viewDate=function(a){if(0===arguments.length)return f.clone();if(!a)return f=e.clone(),l;if(!("string"==typeof a||b.isMoment(a)||a instanceof Date))throw new TypeError("viewDate() parameter must be one of [string, moment or Date]");return f=da(a),K(),l},c.is("input"))g=c;else if(g=c.find(d.datepickerInput),0===g.length)g=c.find("input");else if(!g.is("input"))throw new Error('CSS class "'+d.datepickerInput+'" cannot be applied to non input element');if(c.hasClass("input-group")&&(n=0===c.find(".datepickerbutton").length?c.find(".input-group-addon"):c.find(".datepickerbutton")),!d.inline&&!g.is("input"))throw new Error("Could not initialize DateTimePicker without an input element");return e=y(),f=e.clone(),a.extend(!0,d,H()),l.options(d),pa(),la(),g.prop("disabled")&&l.disable(),g.is("input")&&0!==g.val().trim().length?aa(da(g.val().trim())):d.defaultDate&&void 0===g.attr("placeholder")&&aa(d.defaultDate),d.inline&&ga(),l};return a.fn.datetimepicker=function(b){b=b||{};var d,e=Array.prototype.slice.call(arguments,1),f=!0,g=["destroy","hide","show","toggle"];if("object"==typeof b)return this.each(function(){var d,e=a(this);e.data("DateTimePicker")||(d=a.extend(!0,{},a.fn.datetimepicker.defaults,b),e.data("DateTimePicker",c(e,d)))});if("string"==typeof b)return this.each(function(){var c=a(this),g=c.data("DateTimePicker");if(!g)throw new Error('bootstrap-datetimepicker("'+b+'") method was called on an element that is not using DateTimePicker');d=g[b].apply(g,e),f=d===g}),f||a.inArray(b,g)>-1?this:d;throw new TypeError("Invalid arguments for DateTimePicker: "+b)},a.fn.datetimepicker.defaults={timeZone:"",format:!1,dayViewHeaderFormat:"MMMM YYYY",extraFormats:!1,stepping:1,minDate:!1,maxDate:!1,useCurrent:!0,collapse:!0,locale:b.locale(),defaultDate:!1,disabledDates:!1,enabledDates:!1,icons:{time:"glyphicon glyphicon-time",date:"glyphicon glyphicon-calendar",up:"glyphicon glyphicon-chevron-up",down:"glyphicon glyphicon-chevron-down",previous:"glyphicon glyphicon-chevron-left",next:"glyphicon glyphicon-chevron-right",today:"glyphicon glyphicon-screenshot",clear:"glyphicon glyphicon-trash",close:"glyphicon glyphicon-remove"},tooltips:{today:"Go to today",clear:"Clear selection",close:"Close the picker",selectMonth:"Select Month",prevMonth:"Previous Month",nextMonth:"Next Month",selectYear:"Select Year",prevYear:"Previous Year",nextYear:"Next Year",selectDecade:"Select Decade",prevDecade:"Previous Decade",nextDecade:"Next Decade",prevCentury:"Previous Century",nextCentury:"Next Century",pickHour:"Pick Hour",incrementHour:"Increment Hour",decrementHour:"Decrement Hour",pickMinute:"Pick Minute",incrementMinute:"Increment Minute",decrementMinute:"Decrement Minute",pickSecond:"Pick Second",incrementSecond:"Increment Second",decrementSecond:"Decrement Second",togglePeriod:"Toggle Period",selectTime:"Select Time"},useStrict:!1,sideBySide:!1,daysOfWeekDisabled:!1,calendarWeeks:!1,viewMode:"days",toolbarPlacement:"default",showTodayButton:!1,showClear:!1,showClose:!1,widgetPositioning:{horizontal:"auto",vertical:"auto"},widgetParent:null,ignoreReadonly:!1,keepOpen:!1,focusOnShow:!0,inline:!1,keepInvalid:!1,datepickerInput:".datepickerinput",keyBinds:{up:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().subtract(7,"d")):this.date(b.clone().add(this.stepping(),"m"))}},down:function(a){if(!a)return void this.show();var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().add(7,"d")):this.date(b.clone().subtract(this.stepping(),"m"))},"control up":function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().subtract(1,"y")):this.date(b.clone().add(1,"h"))}},"control down":function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().add(1,"y")):this.date(b.clone().subtract(1,"h"))}},left:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().subtract(1,"d"))}},right:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().add(1,"d"))}},pageUp:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().subtract(1,"M"))}},pageDown:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().add(1,"M"))}},enter:function(){this.hide()},escape:function(){this.hide()},"control space":function(a){a&&a.find(".timepicker").is(":visible")&&a.find('.btn[data-action="togglePeriod"]').click()},t:function(){this.date(this.getMoment())},delete:function(){this.clear()}},debug:!1,allowInputToggle:!1,disabledTimeIntervals:!1,disabledHours:!1,enabledHours:!1,viewDate:!1},a.fn.datetimepicker});
-
-/***/ }),
-
-/***/ 1410:
+/***/ 1598:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -693,7 +414,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row mt-3" }, [
+    _c("div", { staticClass: "row" }, [
       _c(
         "div",
         { staticClass: "col-md-12" },
@@ -701,1481 +422,969 @@ var render = function() {
           _c(
             "card",
             {
-              staticClass: "realtime_forms",
-              attrs: {
-                title: "<i class='fa fa-fw ti-user'></i> Book Flight Tickets"
-              }
+              attrs: { title: "<i class='ti-bell'></i> Toastr Notifications" }
             },
             [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-12 text-sm-center" }, [
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { staticClass: "radio-inline iradio m-l-18" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.selected,
-                            expression: "selected"
-                          }
-                        ],
-                        attrs: {
-                          type: "radio",
-                          id: "one_way",
-                          name: "trip-type",
-                          value: "option1"
-                        },
-                        domProps: { checked: _vm._q(_vm.selected, "option1") },
-                        on: {
-                          change: function($event) {
-                            _vm.selected = "option1"
-                          }
-                        }
-                      }),
-                      _vm._v(" One Way\n                                ")
-                    ]),
-                    _vm._v(" "),
-                    _c("label", { staticClass: "radio-inline iradio m-l-18" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.selected,
-                            expression: "selected"
-                          }
-                        ],
-                        attrs: {
-                          type: "radio",
-                          id: "round_trip",
-                          name: "trip-type",
-                          value: "option2"
-                        },
-                        domProps: { checked: _vm._q(_vm.selected, "option2") },
-                        on: {
-                          change: function($event) {
-                            _vm.selected = "option2"
-                          }
-                        }
-                      }),
-                      _vm._v(" Round trip\n                                ")
-                    ]),
-                    _vm._v(" "),
-                    _c("label", { staticClass: "radio-inline iradio m-l-18" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.selected,
-                            expression: "selected"
-                          }
-                        ],
-                        attrs: {
-                          type: "radio",
-                          id: "multi_stops",
-                          name: "trip-type",
-                          value: "option3"
-                        },
-                        domProps: { checked: _vm._q(_vm.selected, "option3") },
-                        on: {
-                          change: function($event) {
-                            _vm.selected = "option3"
-                          }
-                        }
-                      }),
-                      _vm._v(" Multi Stops\n                                ")
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.selected == "option1" || _vm.selected == "option2"
-                          ? true
-                          : false,
-                      expression:
-                        "(selected=='option1' || selected=='option2')?true:false"
-                    }
-                  ],
-                  attrs: { id: "single-stop" }
-                },
-                [
-                  _c("div", { staticClass: "row m-t-10" }, [
-                    _c("div", { staticClass: "trip-type d-sm-none" }, [
+              _c("div", { staticClass: "portlet-body" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("h4", [
                       _c("i", {
-                        staticClass: "fa-rotate-90 fa ti-exchange-vertical icon"
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-5 col-xs-6" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "origin" }
-                          },
-                          [_vm._v("From")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "origin",
-                            placeholder: "Origin City"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-2" }, [
-                      _c("div", { staticClass: "trip-type" }, [
-                        (_vm.selected == "option2"
-                        ? true
-                        : false)
-                          ? _c("i", {
-                              staticClass:
-                                "fa-rotate-90 fa ti-exchange-vertical icon"
-                            })
-                          : _c("i", { staticClass: "fa ti-arrow-right icon" })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-5 col-xs-6" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "control-label",
-                            attrs: { for: "destination" }
-                          },
-                          [_vm._v("To")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "destination",
-                            placeholder: "Destination City"
-                          }
-                        })
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row m-t-10" }, [
-                    _c("div", { staticClass: "col-sm-6" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c("label", { attrs: { for: "departure_date" } }, [
-                              _vm._v("Departure")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "input-group" }, [
-                              _c(
-                                "div",
-                                { staticClass: "input-group-prepend" },
-                                [
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass: "input-group-text bg-white"
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-fw ti-calendar"
-                                      })
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: {
-                                  type: "text",
-                                  id: "departure_date",
-                                  placeholder: "Select Date"
-                                }
-                              })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("br", { staticClass: "d-sm-none" }),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c("label", { attrs: { for: "return_date" } }, [
-                              _vm._v("Return")
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "input-group" }, [
-                              _c(
-                                "div",
-                                { staticClass: "input-group-prepend" },
-                                [
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass: "input-group-text bg-white"
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-fw ti-calendar"
-                                      })
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: {
-                                  id: "return_date",
-                                  placeholder: "Select Date",
-                                  disabled:
-                                    _vm.selected == "option1" ? true : false
-                                }
-                              })
-                            ])
-                          ])
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-6" }, [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c("label", { attrs: { for: "class-type" } }, [
-                              _vm._v("Class")
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "select",
-                              {
-                                staticClass: "form-control",
-                                attrs: { name: "class", id: "class-type" }
-                              },
-                              [
-                                _c("option", { attrs: { value: "" } }, [
-                                  _vm._v("Economy")
-                                ]),
-                                _vm._v(" "),
-                                _c("option", { attrs: { value: "" } }, [
-                                  _vm._v("Business")
-                                ]),
-                                _vm._v(" "),
-                                _c("option", { attrs: { value: "" } }, [
-                                  _vm._v("First")
-                                ]),
-                                _vm._v(" "),
-                                _c("option", { attrs: { value: "" } }, [
-                                  _vm._v("Premium Economy")
-                                ])
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("br", { staticClass: "d-sm-none" }),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-6" }, [
-                            _c(
-                              "label",
-                              {
-                                staticClass: "control-label",
-                                attrs: { for: "pref-Air" }
-                              },
-                              [
-                                _vm._v(
-                                  "Preferred Airline\n                                            "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("input", {
-                              staticClass: "form-control",
-                              attrs: {
-                                type: "text",
-                                id: "pref-Air",
-                                placeholder: "Airline name"
-                              }
-                            })
-                          ])
-                        ])
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row m-t-10" }, [
-                    _c(
-                      "div",
-                      { staticClass: "col-sm-8 col-md-10 col-lg-8 mx-auto" },
-                      [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-sm-4" }, [
-                            _c("div", { staticClass: "form-group" }, [
-                              _c("label", { attrs: { for: "adult" } }, [
-                                _vm._v("Adult")
-                              ]),
-                              _vm._v(" "),
-                              _c("input", {
-                                attrs: {
-                                  id: "adult",
-                                  type: "text",
-                                  value: "1",
-                                  readonly: "",
-                                  name: "adult_count"
-                                }
-                              })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-4" }, [
-                            _c("div", { staticClass: "form-group" }, [
-                              _c("label", { attrs: { for: "child" } }, [
-                                _vm._v("Child")
-                              ]),
-                              _vm._v(" "),
-                              _c("input", {
-                                attrs: {
-                                  id: "child",
-                                  type: "text",
-                                  value: "0",
-                                  readonly: "",
-                                  name: "child_count"
-                                }
-                              })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-4" }, [
-                            _c("div", { staticClass: "form-group" }, [
-                              _c("label", { attrs: { for: "infant" } }, [
-                                _vm._v("Infant")
-                              ]),
-                              _vm._v(" "),
-                              _c("input", {
-                                attrs: {
-                                  id: "infant",
-                                  type: "text",
-                                  value: "0",
-                                  readonly: "",
-                                  name: "infant_count"
-                                }
-                              })
-                            ])
-                          ])
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row m-t-10" }, [
-                    _c("div", { staticClass: "col-sm-8" }, [
-                      _c("div", { staticClass: "form-group icheck-element" }, [
-                        _c("label", { staticClass: "price-alert" }, [
-                          _c("input", {
-                            attrs: {
-                              type: "checkbox",
-                              name: "c1",
-                              id: "c1",
-                              value: ""
-                            }
-                          }),
-                          _vm._v(
-                            " Alert me when price changes\n                                    "
-                          )
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "col-sm-4" }, [
-                      _c(
-                        "button",
-                        { staticClass: "btn btn-warning btn-block" },
-                        [_vm._v("Search Flights")]
+                        staticClass: "fa fa-fw ti-info-alt text-info message"
+                      }),
+                      _vm._v(
+                        " When changing\n                                toastr position clear all toasts to see the effect"
                       )
                     ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "form",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.selected == "option1" || _vm.selected == "option2"
-                          ? false
-                          : true,
-                      expression:
-                        "(selected=='option1' || selected=='option2')?false:true"
-                    }
-                  ],
-                  attrs: { id: "nonsingle-stop" }
-                },
-                [
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-sm-12" }, [
-                      _c(
-                        "div",
-                        { staticClass: "flight-count" },
-                        [
-                          _c("div", { staticClass: "row multi-flight-data" }, [
-                            _c("div", { staticClass: "trip-type d-sm-none" }, [
-                              _c("i", { staticClass: "fa ti-arrow-right icon" })
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
-                              _c("div", { staticClass: "form-group" }, [
-                                _c("label", { staticClass: "control-label" }, [
-                                  _vm._v(
-                                    "From\n                                                    "
-                                  ),
-                                  _c("input", {
-                                    staticClass: "form-control",
-                                    attrs: {
-                                      type: "text",
-                                      placeholder: "Origin City"
-                                    }
-                                  })
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-1 hidden-xs" }, [
-                              _c("div", { staticClass: "trip-type-multi" }, [
-                                _c("i", {
-                                  staticClass: "fa ti-arrow-right icon"
-                                })
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
-                              _c("div", { staticClass: "form-group" }, [
-                                _c("label", { staticClass: "control-label" }, [
-                                  _vm._v(
-                                    "To\n                                                    "
-                                  ),
-                                  _c("input", {
-                                    staticClass: "form-control",
-                                    attrs: {
-                                      type: "text",
-                                      placeholder: "Destination City"
-                                    }
-                                  })
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-sm-3 col-sm-offset-0 col-xs-12"
-                              },
-                              [
-                                _c(
-                                  "label",
-                                  {
-                                    staticClass: "m-l-16",
-                                    attrs: { for: "multistop_departure" }
-                                  },
-                                  [_vm._v("Departure")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "input-group m-l-16" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "input-group-prepend" },
-                                      [
-                                        _c(
-                                          "span",
-                                          {
-                                            staticClass:
-                                              "input-group-text bg-white"
-                                          },
-                                          [
-                                            _c("i", {
-                                              staticClass:
-                                                "fa fa-fw ti-calendar"
-                                            })
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("input", {
-                                      staticClass:
-                                        "form-control departure_date",
-                                      attrs: {
-                                        type: "text",
-                                        id: "multistop_departure",
-                                        placeholder: "Select Date"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "row multi-flight-data" }, [
-                            _c("div", { staticClass: "trip-type d-sm-none" }, [
-                              _c("i", { staticClass: "fa ti-arrow-right icon" })
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
-                              _c("div", { staticClass: "form-group" }, [
-                                _c("label", { staticClass: "control-label" }, [
-                                  _vm._v(
-                                    "From\n                                                    "
-                                  ),
-                                  _c("input", {
-                                    staticClass: "form-control",
-                                    attrs: {
-                                      type: "text",
-                                      placeholder: "Origin City"
-                                    }
-                                  })
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-1 hidden-xs" }, [
-                              _c("div", { staticClass: "trip-type-multi" }, [
-                                _c("i", {
-                                  staticClass: "fa ti-arrow-right icon"
-                                })
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "col-sm-4 col-xs-6" }, [
-                              _c("div", { staticClass: "form-group" }, [
-                                _c("label", { staticClass: "control-label" }, [
-                                  _vm._v(
-                                    "To\n                                                    "
-                                  ),
-                                  _c("input", {
-                                    staticClass: "form-control",
-                                    attrs: {
-                                      type: "text",
-                                      placeholder: "Destination City"
-                                    }
-                                  })
-                                ])
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-sm-3 col-sm-offset-0 col-xs-12"
-                              },
-                              [
-                                _c(
-                                  "label",
-                                  {
-                                    staticClass: "m-l-16",
-                                    attrs: { for: "multistop_departure2" }
-                                  },
-                                  [_vm._v("Departure")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "input-group m-l-16" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "input-group-prepend" },
-                                      [
-                                        _c(
-                                          "span",
-                                          {
-                                            staticClass:
-                                              "input-group-text bg-white"
-                                          },
-                                          [
-                                            _c("i", {
-                                              staticClass:
-                                                "fa fa-fw ti-calendar"
-                                            })
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("input", {
-                                      staticClass:
-                                        "form-control departure_date",
-                                      attrs: {
-                                        type: "text",
-                                        id: "multistop_departure2",
-                                        placeholder: "Select Date"
-                                      }
-                                    })
-                                  ]
-                                )
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _vm._l(_vm.inputs, function(input, index) {
-                            return _c(
-                              "div",
-                              { staticClass: "row multi-flight-data" },
-                              [
-                                _c(
-                                  "div",
-                                  { staticClass: "trip-type d-sm-none" },
-                                  [
-                                    _c("i", {
-                                      staticClass: "fa ti-arrow-right icon"
-                                    })
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-sm-4 col-xs-6" },
-                                  [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        { staticClass: "control-label" },
-                                        [
-                                          _vm._v(
-                                            "From\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          placeholder: "Origin City"
-                                        }
-                                      })
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-sm-1 hidden-xs" },
-                                  [
-                                    _c(
-                                      "div",
-                                      { staticClass: "trip-type-multi" },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa ti-arrow-right icon"
-                                        })
-                                      ]
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-sm-4 col-xs-6" },
-                                  [
-                                    _c("div", { staticClass: "form-group" }, [
-                                      _c(
-                                        "label",
-                                        { staticClass: "control-label" },
-                                        [
-                                          _vm._v(
-                                            "To\n                                                "
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          placeholder: "Destination City"
-                                        }
-                                      })
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "col-sm-3 col-sm-offset-0 col-11"
-                                  },
-                                  [
-                                    _c(
-                                      "label",
-                                      { staticClass: "m-l-16 mb-2" },
-                                      [_vm._v("Departure")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "input-group m-l-16" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass: "input-group-prepend"
-                                          },
-                                          [
-                                            _c(
-                                              "span",
-                                              {
-                                                staticClass:
-                                                  "input-group-text bg-white"
-                                              },
-                                              [
-                                                _c("i", {
-                                                  staticClass:
-                                                    "fa fa-fw ti-calendar"
-                                                })
-                                              ]
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("input", {
-                                          staticClass:
-                                            "form-control departure_date",
-                                          attrs: {
-                                            type: "text",
-                                            placeholder: "Select Date"
-                                          }
-                                        })
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "span",
-                                      {
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.deleteRow(index)
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fa fa-fw ti-minus remove-flight"
-                                        })
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ]
-                            )
-                          })
-                        ],
-                        2
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row m-t-10 mt-3" }, [
-                        _c("div", { staticClass: "col-sm-6" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "btn btn-secondary text-white mr-3",
-                              attrs: { id: "add-flight" },
-                              on: { click: _vm.addRow }
-                            },
-                            [
-                              _c("i", { staticClass: "fa fa-fw ti-plus" }),
-                              _vm._v(
-                                " Add flight\n                                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("label", [_vm._v("Add Flight(Upto 6)")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-sm-6" }, [
-                          _c("label", { attrs: { for: "class-type1" } }, [
-                            _vm._v("Class")
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "select",
-                            {
-                              staticClass: "form-control",
-                              attrs: { name: "class", id: "class-type1" }
-                            },
-                            [
-                              _c("option", { attrs: { value: "" } }, [
-                                _vm._v("Economy")
-                              ]),
-                              _vm._v(" "),
-                              _c("option", { attrs: { value: "" } }, [
-                                _vm._v("Business")
-                              ]),
-                              _vm._v(" "),
-                              _c("option", { attrs: { value: "" } }, [
-                                _vm._v("First")
-                              ]),
-                              _vm._v(" "),
-                              _c("option", { attrs: { value: "" } }, [
-                                _vm._v("Premium Economy")
-                              ])
-                            ]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row m-t-10" }, [
-                        _c(
-                          "div",
-                          { staticClass: "col-sm-8 col-md-10 col-lg-8" },
-                          [
-                            _c("div", { staticClass: "row" }, [
-                              _c("div", { staticClass: "col-sm-4" }, [
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "adult-multi" } },
-                                    [_vm._v("Adult")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    attrs: {
-                                      id: "adult-multi",
-                                      type: "text",
-                                      value: "1",
-                                      readonly: "",
-                                      name: "adult_count"
-                                    }
-                                  })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "col-sm-4" }, [
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "child-multi" } },
-                                    [_vm._v("Child")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    attrs: {
-                                      id: "child-multi",
-                                      type: "text",
-                                      value: "0",
-                                      readonly: "",
-                                      name: "child_count"
-                                    }
-                                  })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "col-sm-4" }, [
-                                _c("div", { staticClass: "form-group" }, [
-                                  _c(
-                                    "label",
-                                    { attrs: { for: "infant-multi" } },
-                                    [_vm._v("Infant")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("input", {
-                                    attrs: {
-                                      id: "infant-multi",
-                                      type: "text",
-                                      value: "0",
-                                      readonly: "",
-                                      name: "infant_count"
-                                    }
-                                  })
-                                ])
-                              ])
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "col-sm-4 col-md-2 col-lg-4" },
-                          [
-                            _c(
-                              "label",
-                              {
-                                staticClass: "control-label",
-                                attrs: { for: "multi-air" }
-                              },
-                              [
-                                _vm._v(
-                                  "Preferred Airline\n                                        "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("input", {
-                              staticClass: "form-control",
-                              attrs: {
-                                type: "text",
-                                id: "multi-air",
-                                placeholder: "Airline name"
-                              }
-                            })
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row m-t-10" }, [
-                        _c("div", { staticClass: "col-sm-8" }, [
-                          _c(
-                            "div",
-                            { staticClass: "form-group icheck-element" },
-                            [
-                              _c("label", { staticClass: "price-alert" }, [
-                                _c("input", {
-                                  attrs: {
-                                    type: "checkbox",
-                                    name: "price-alert",
-                                    value: ""
-                                  }
-                                }),
-                                _vm._v(
-                                  " Alert me when price changes\n                                            "
-                                )
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-sm-4" }, [
-                          _c(
-                            "button",
-                            { staticClass: "btn btn-warning btn-block" },
-                            [_vm._v("Search Flights")]
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]
-              )
-            ]
-          )
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-8" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='fa fa-fw ti-money'></i> Fund Transfer"
-              }
-            },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-sm-12" }, [
-                  _c(
-                    "form",
-                    {
-                      staticClass: "form-horizontal",
-                      attrs: { id: "form-validation" }
-                    },
-                    [
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-6 control-label",
-                            attrs: { for: "skill" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Select Account :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c(
-                            "select",
-                            {
-                              staticClass: "form-control",
-                              attrs: { id: "skill", name: "skill" }
-                            },
-                            [
-                              _c(
-                                "option",
-                                {
-                                  attrs: {
-                                    value: "",
-                                    disabled: "",
-                                    selected: ""
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                            Select account\n                                        "
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("option", { attrs: { value: "234" } }, [
-                                _vm._v("0000432187653456")
-                              ]),
-                              _vm._v(" "),
-                              _c("option", { attrs: { value: "345" } }, [
-                                _vm._v("0000891236543567")
-                              ])
-                            ]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "number" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Amount :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "number",
-                              name: "number",
-                              placeholder: "Enter amount",
-                              onkeypress: "return isNumber(event, this)"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "val-username" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Sender name :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "val-username",
-                              name: "firstName",
-                              placeholder: "Account holder name"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "fund_text mt-2 ml-3 mb-2" }, [
-                        _vm._v(
-                          "Information of the account you want to transfer fund"
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "holder-name" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Account Holder name :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "holder-name",
-                              name: "holderName",
-                              placeholder: "Account holder name"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "bank-name" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Name of the Bank :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "bank-name",
-                              name: "bankName",
-                              placeholder: "Bank name"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "swift-code" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    SWIFT Code :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "swift-code",
-                              name: "bankName",
-                              placeholder: "SWIFT code"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "acc-number" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Account Number/BAN :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "acc-number",
-                              name: "number",
-                              placeholder: "Account Number",
-                              onkeypress:
-                                "return event.charCode >= 48 && event.charCode <= 57"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "col-sm-5 control-label",
-                            attrs: { for: "purpose" }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                    Purpose (optional) :\n                                "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12" }, [
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: {
-                              type: "text",
-                              id: "purpose",
-                              name: "purpose",
-                              placeholder: "optional"
-                            }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group form-actions" }, [
-                        _c("div", { staticClass: "col-12 col-sm-offset-5" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-effect-ripple btn-primary",
-                              attrs: { type: "submit" }
-                            },
-                            [_vm._v("Transfer")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-effect-ripple btn-secondary reset_btn",
-                              attrs: { type: "reset" }
-                            },
-                            [
-                              _vm._v(
-                                "Reset\n                                    "
-                              )
-                            ]
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ])
-              ])
-            ]
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-md-4" },
-        [
-          _c(
-            "card",
-            {
-              attrs: {
-                title: "<i class='fa fa-fw ti-home'></i> Book your Stay"
-              }
-            },
-            [
-              _c("form", [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-sm-12" }, [
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-3" }, [
                     _c("div", { staticClass: "form-group" }, [
                       _c(
                         "label",
                         {
                           staticClass: "control-label",
-                          attrs: { for: "stay" }
+                          attrs: { for: "title" }
                         },
-                        [_vm._v("Name")]
+                        [_c("b", [_vm._v("Title")])]
                       ),
                       _vm._v(" "),
                       _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.title,
+                            expression: "title"
+                          }
+                        ],
                         staticClass: "form-control",
                         attrs: {
+                          id: "title",
                           type: "text",
-                          id: "stay",
-                          placeholder: "City, Area or Hotel"
+                          placeholder: "Enter a title ..."
+                        },
+                        domProps: { value: _vm.title },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.title = $event.target.value
+                          }
                         }
                       })
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-sm-12" }, [
+                    ]),
+                    _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "checkin_date" } }, [
-                        _vm._v("Check-In")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "span",
-                            { staticClass: "input-group-text bg-white" },
-                            [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "checkin_date",
-                            placeholder: "Select Check-in Date"
-                          }
-                        })
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-12" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "checkout_date" } }, [
-                        _vm._v("Check-Out")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "input-group" }, [
-                        _c("div", { staticClass: "input-group-prepend" }, [
-                          _c(
-                            "span",
-                            { staticClass: "input-group-text bg-white" },
-                            [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "text",
-                            id: "checkout_date",
-                            placeholder: "Select Check-out Date"
-                          }
-                        })
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-sm-6" }, [
-                    _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "adult-number" } }, [
-                        _vm._v("Adult")
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "select",
+                        "label",
                         {
-                          staticClass: "form-control",
-                          attrs: { name: "count", id: "adult-number" }
+                          staticClass: "control-label",
+                          attrs: { for: "message" }
+                        },
+                        [_c("b", [_vm._v("Message")])]
+                      ),
+                      _vm._v(" "),
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.msg,
+                            expression: "msg"
+                          }
+                        ],
+                        staticClass: "form-control resize_vertical",
+                        attrs: {
+                          id: "message",
+                          rows: "3",
+                          placeholder: "Enter a message ..."
+                        },
+                        domProps: { value: _vm.msg },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.msg = $event.target.value
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("form", [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group",
+                          attrs: { id: "positionGroup" }
                         },
                         [
-                          _c("option", { attrs: { value: "0" } }, [
-                            _vm._v("1")
-                          ]),
+                          _c(
+                            "label",
+                            {
+                              staticClass: "position-type",
+                              attrs: { for: "position-change" }
+                            },
+                            [_c("b", [_vm._v("Toaster Position")])]
+                          ),
                           _vm._v(" "),
-                          _c("option", { attrs: { value: "1" } }, [
-                            _vm._v("2")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "2" } }, [
-                            _vm._v("3")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "3" } }, [
-                            _vm._v("4")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "4" } }, [_vm._v("5")])
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.positionClass,
+                                  expression: "positionClass"
+                                }
+                              ],
+                              staticClass: "form-control",
+                              attrs: {
+                                name: "toast-position",
+                                id: "position-change"
+                              },
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.positionClass = $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                }
+                              }
+                            },
+                            [
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-top-left" } },
+                                [_vm._v("Top Left")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-top-right" } },
+                                [_vm._v("Top Right")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-top-center" } },
+                                [_vm._v("Top Center")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-top-full-width" } },
+                                [_vm._v("Top Full Width")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-bottom-left" } },
+                                [_vm._v("Bottom Left")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-bottom-right" } },
+                                [_vm._v("Bottom Right")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-bottom-center" } },
+                                [_vm._v("Bottom Center")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "toast-bottom-full-width" } },
+                                [_vm._v("Bottom Full Width")]
+                              )
+                            ]
+                          )
                         ]
                       )
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-6" }, [
+                  _c("div", { staticClass: "col-md-3 " }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "form-group",
+                        attrs: { id: "toastTypeGroup" }
+                      },
+                      [
+                        _c("label", { staticClass: "toast-type" }, [
+                          _vm._v("Toast Type")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", [
+                          _c("label", { staticClass: "text-success" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.type,
+                                  expression: "type"
+                                }
+                              ],
+                              staticClass: "custom-radio",
+                              attrs: {
+                                type: "radio",
+                                name: "toasts",
+                                value: "success"
+                              },
+                              domProps: {
+                                checked: _vm._q(_vm.type, "success")
+                              },
+                              on: {
+                                change: function($event) {
+                                  _vm.type = "success"
+                                }
+                              }
+                            }),
+                            _vm._v(
+                              " Success\n                                    "
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", [
+                          _c("label", { staticClass: "text-info" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.type,
+                                  expression: "type"
+                                }
+                              ],
+                              staticClass: "custom-radio",
+                              attrs: {
+                                type: "radio",
+                                name: "toasts",
+                                value: "info"
+                              },
+                              domProps: { checked: _vm._q(_vm.type, "info") },
+                              on: {
+                                change: function($event) {
+                                  _vm.type = "info"
+                                }
+                              }
+                            }),
+                            _vm._v(
+                              " Info\n                                    "
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", [
+                          _c("label", { staticClass: "text-warning" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.type,
+                                  expression: "type"
+                                }
+                              ],
+                              staticClass: "custom-radio",
+                              attrs: {
+                                type: "radio",
+                                name: "toasts",
+                                value: "warning"
+                              },
+                              domProps: {
+                                checked: _vm._q(_vm.type, "warning")
+                              },
+                              on: {
+                                change: function($event) {
+                                  _vm.type = "warning"
+                                }
+                              }
+                            }),
+                            _vm._v(
+                              " Warning\n                                    "
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", [
+                          _c("label", { staticClass: "text-danger" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.type,
+                                  expression: "type"
+                                }
+                              ],
+                              staticClass: "custom-radio",
+                              attrs: {
+                                type: "radio",
+                                name: "toasts",
+                                value: "error"
+                              },
+                              domProps: { checked: _vm._q(_vm.type, "error") },
+                              on: {
+                                change: function($event) {
+                                  _vm.type = "error"
+                                }
+                              }
+                            }),
+                            _vm._v(
+                              " Error\n                                    "
+                            )
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _c("label", { attrs: { for: "child-number" } }, [
-                        _vm._v("Child")
+                      _c("div", [
+                        _c("label", { attrs: { for: "closeButton" } }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.closeButton,
+                                expression: "closeButton"
+                              }
+                            ],
+                            staticClass: "input-small custom-checkbox",
+                            attrs: { id: "closeButton", type: "checkbox" },
+                            domProps: {
+                              checked: Array.isArray(_vm.closeButton)
+                                ? _vm._i(_vm.closeButton, null) > -1
+                                : _vm.closeButton
+                            },
+                            on: {
+                              change: function($event) {
+                                var $$a = _vm.closeButton,
+                                  $$el = $event.target,
+                                  $$c = $$el.checked ? true : false
+                                if (Array.isArray($$a)) {
+                                  var $$v = null,
+                                    $$i = _vm._i($$a, $$v)
+                                  if ($$el.checked) {
+                                    $$i < 0 &&
+                                      (_vm.closeButton = $$a.concat([$$v]))
+                                  } else {
+                                    $$i > -1 &&
+                                      (_vm.closeButton = $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1)))
+                                  }
+                                } else {
+                                  _vm.closeButton = $$c
+                                }
+                              }
+                            }
+                          }),
+                          _vm._v(
+                            " Close Button\n                                    "
+                          )
+                        ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "select",
-                        {
-                          staticClass: "form-control",
-                          attrs: { name: "count", id: "child-number" }
-                        },
-                        [
-                          _c("option", { attrs: { value: "0" } }, [
-                            _vm._v("0")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "1" } }, [
-                            _vm._v("1")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "2" } }, [
-                            _vm._v("2")
-                          ]),
-                          _vm._v(" "),
-                          _c("option", { attrs: { value: "3" } }, [_vm._v("3")])
-                        ]
-                      )
+                      _c("div", [
+                        _c("label", { attrs: { for: "progressBar" } }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.progressBar,
+                                expression: "progressBar"
+                              }
+                            ],
+                            staticClass: "input-small custom-checkbox",
+                            attrs: { id: "progressBar", type: "checkbox" },
+                            domProps: {
+                              checked: Array.isArray(_vm.progressBar)
+                                ? _vm._i(_vm.progressBar, null) > -1
+                                : _vm.progressBar
+                            },
+                            on: {
+                              change: function($event) {
+                                var $$a = _vm.progressBar,
+                                  $$el = $event.target,
+                                  $$c = $$el.checked ? true : false
+                                if (Array.isArray($$a)) {
+                                  var $$v = null,
+                                    $$i = _vm._i($$a, $$v)
+                                  if ($$el.checked) {
+                                    $$i < 0 &&
+                                      (_vm.progressBar = $$a.concat([$$v]))
+                                  } else {
+                                    $$i > -1 &&
+                                      (_vm.progressBar = $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1)))
+                                  }
+                                } else {
+                                  _vm.progressBar = $$c
+                                }
+                              }
+                            }
+                          }),
+                          _vm._v(
+                            " Progress Bar\n                                    "
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("label", { attrs: { for: "preventDuplicates" } }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.preventDuplicates,
+                                expression: "preventDuplicates"
+                              }
+                            ],
+                            staticClass: "input-small custom-checkbox",
+                            attrs: {
+                              id: "preventDuplicates",
+                              type: "checkbox"
+                            },
+                            domProps: {
+                              checked: Array.isArray(_vm.preventDuplicates)
+                                ? _vm._i(_vm.preventDuplicates, null) > -1
+                                : _vm.preventDuplicates
+                            },
+                            on: {
+                              change: function($event) {
+                                var $$a = _vm.preventDuplicates,
+                                  $$el = $event.target,
+                                  $$c = $$el.checked ? true : false
+                                if (Array.isArray($$a)) {
+                                  var $$v = null,
+                                    $$i = _vm._i($$a, $$v)
+                                  if ($$el.checked) {
+                                    $$i < 0 &&
+                                      (_vm.preventDuplicates = $$a.concat([
+                                        $$v
+                                      ]))
+                                  } else {
+                                    $$i > -1 &&
+                                      (_vm.preventDuplicates = $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1)))
+                                  }
+                                } else {
+                                  _vm.preventDuplicates = $$c
+                                }
+                              }
+                            }
+                          }),
+                          _vm._v(
+                            " Prevent Duplicates\n                                    "
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("label", { attrs: { for: "newestOnTop" } }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.newestOnTop,
+                                expression: "newestOnTop"
+                              }
+                            ],
+                            staticClass: "input-small custom-checkbox",
+                            attrs: { id: "newestOnTop", type: "checkbox" },
+                            domProps: {
+                              checked: Array.isArray(_vm.newestOnTop)
+                                ? _vm._i(_vm.newestOnTop, null) > -1
+                                : _vm.newestOnTop
+                            },
+                            on: {
+                              change: function($event) {
+                                var $$a = _vm.newestOnTop,
+                                  $$el = $event.target,
+                                  $$c = $$el.checked ? true : false
+                                if (Array.isArray($$a)) {
+                                  var $$v = null,
+                                    $$i = _vm._i($$a, $$v)
+                                  if ($$el.checked) {
+                                    $$i < 0 &&
+                                      (_vm.newestOnTop = $$a.concat([$$v]))
+                                  } else {
+                                    $$i > -1 &&
+                                      (_vm.newestOnTop = $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1)))
+                                  }
+                                } else {
+                                  _vm.newestOnTop = $$c
+                                }
+                              }
+                            }
+                          }),
+                          _vm._v(
+                            " Newest on top\n                                    "
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-3" }, [
+                    _c("div", { staticClass: "controls" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "showEasing" }
+                          },
+                          [_vm._v("Show Easing")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.showEasing,
+                                expression: "showEasing"
+                              }
+                            ],
+                            staticClass: "form-control input-small",
+                            attrs: { id: "showEasing" },
+                            on: {
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.showEasing = $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              }
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "swing" } }, [
+                              _vm._v("swing")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "linear" } }, [
+                              _vm._v("linear")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "hideEasing" }
+                          },
+                          [_vm._v("Hide Easing")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.hideEasing,
+                                expression: "hideEasing"
+                              }
+                            ],
+                            staticClass: "form-control input-small",
+                            attrs: { id: "hideEasing" },
+                            on: {
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.hideEasing = $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              }
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "swing" } }, [
+                              _vm._v("swing")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "linear" } }, [
+                              _vm._v("linear")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "showMethod" }
+                          },
+                          [_vm._v("Show Method")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.showMethod,
+                                expression: "showMethod"
+                              }
+                            ],
+                            staticClass: "form-control input-small",
+                            attrs: { id: "showMethod" },
+                            on: {
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.showMethod = $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              }
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "show" } }, [
+                              _vm._v("show")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "fadeIn" } }, [
+                              _vm._v("fadeIn")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "slideDown" } }, [
+                              _vm._v("slideDown")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "hideMethod" }
+                          },
+                          [_vm._v("Hide Method")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "select",
+                          {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.hideMethod,
+                                expression: "hideMethod"
+                              }
+                            ],
+                            staticClass: "form-control input-small",
+                            attrs: { id: "hideMethod" },
+                            on: {
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.hideMethod = $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              }
+                            }
+                          },
+                          [
+                            _c("option", { attrs: { value: "hide" } }, [
+                              _vm._v("hide")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "fadeOut" } }, [
+                              _vm._v("fadeOut")
+                            ]),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "slideUp" } }, [
+                              _vm._v("slideUp")
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-3" }, [
+                    _c("div", { staticClass: "controls" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "showDuration" }
+                          },
+                          [_vm._v("Show Duration")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.showDuration,
+                              expression: "showDuration"
+                            }
+                          ],
+                          staticClass: "form-control input-small",
+                          attrs: {
+                            id: "showDuration",
+                            type: "text",
+                            placeholder: "ms"
+                          },
+                          domProps: { value: _vm.showDuration },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.showDuration = $event.target.value
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "hideDuration" }
+                          },
+                          [_vm._v("Hide Duration")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.hideDuration,
+                              expression: "hideDuration"
+                            }
+                          ],
+                          staticClass: "form-control input-small",
+                          attrs: {
+                            id: "hideDuration",
+                            type: "text",
+                            placeholder: "ms"
+                          },
+                          domProps: { value: _vm.hideDuration },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.hideDuration = $event.target.value
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "timeOut" }
+                          },
+                          [_vm._v("Time out")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.timeOut,
+                              expression: "timeOut"
+                            }
+                          ],
+                          staticClass: "form-control input-small",
+                          attrs: {
+                            id: "timeOut",
+                            type: "text",
+                            placeholder: "ms"
+                          },
+                          domProps: { value: _vm.timeOut },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.timeOut = $event.target.value
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "control-label",
+                            attrs: { for: "extendedTimeOut" }
+                          },
+                          [_vm._v("Extended time out")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.extendedTimeOut,
+                              expression: "extendedTimeOut"
+                            }
+                          ],
+                          staticClass: "form-control input-small",
+                          attrs: {
+                            id: "extendedTimeOut",
+                            type: "text",
+                            placeholder: "ms"
+                          },
+                          domProps: { value: _vm.extendedTimeOut },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.extendedTimeOut = $event.target.value
+                            }
+                          }
+                        })
+                      ])
                     ])
                   ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-sm-12" }, [
-                    _c("div", { staticClass: "form-group icheck-element" }, [
-                      _c("label", { staticClass: "guest-rooms" }, [
-                        _c("input", {
-                          attrs: {
-                            type: "checkbox",
-                            name: "price-alert",
-                            value: ""
-                          }
-                        }),
-                        _vm._v(" Guest Rooms\n                                ")
-                      ])
-                    ])
+                  _c("div", { staticClass: "col-12 col-sm-4" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success btn-raised toastrshow",
+                        attrs: { type: "button", id: "showtoast" },
+                        on: { click: _vm.show_toast }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Show Toast\n                            "
+                        )
+                      ]
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-12" }, [
-                    _c("button", { staticClass: "btn btn-warning btn-block" }, [
-                      _vm._v("Search Hotels")
-                    ])
+                  _c("div", { staticClass: "col-12 col-sm-4" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger btn-raised toastrshow",
+                        attrs: { type: "button", id: "cleartoasts" },
+                        on: { click: _vm.clearall }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Clear Toasts\n                            "
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-12 col-sm-4" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-warning btn-raised toastrshow",
+                        attrs: { type: "button", id: "clearlasttoast" },
+                        on: { click: _vm.clearlast }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Clear Last Toast\n                            "
+                        )
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row margin-top-10" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("pre", {
+                      attrs: { id: "toastrOptions" },
+                      model: {
+                        value: _vm.toastrOptions,
+                        callback: function($$v) {
+                          _vm.toastrOptions = $$v
+                        },
+                        expression: "toastrOptions"
+                      }
+                    })
                   ])
                 ])
               ])
@@ -2193,27 +1402,27 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4cfc4168", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-18f35a50", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 446:
+/***/ 471:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1402)
-  __webpack_require__(1404)
-  __webpack_require__(1406)
+  __webpack_require__(1591)
+  __webpack_require__(1593)
+  __webpack_require__(1595)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1408)
+var __vue_script__ = __webpack_require__(1597)
 /* template */
-var __vue_template__ = __webpack_require__(1410)
+var __vue_template__ = __webpack_require__(1598)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2230,7 +1439,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/realtime_form.vue"
+Component.options.__file = "resources/components/pages/toastr_notifications.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -2239,9 +1448,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4cfc4168", Component.options)
+    hotAPI.createRecord("data-v-18f35a50", Component.options)
   } else {
-    hotAPI.reload("data-v-4cfc4168", Component.options)
+    hotAPI.reload("data-v-18f35a50", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -2253,7 +1462,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12625,19 +11834,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(531)
+  __webpack_require__(532)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(533)
+var __vue_script__ = __webpack_require__(534)
 /* template */
-var __vue_template__ = __webpack_require__(534)
+var __vue_template__ = __webpack_require__(535)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12677,13 +11886,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(532);
+var content = __webpack_require__(533);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -12704,7 +11913,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -12719,7 +11928,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 533:
+/***/ 534:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12764,7 +11973,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 534:
+/***/ 535:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -12826,19 +12035,23 @@ if (false) {
 
 /***/ }),
 
-/***/ 709:
+/***/ 590:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*
- *  Bootstrap TouchSpin - v3.1.1
- *  A mobile and touch friendly input spinner component for Bootstrap 3.
- *  http://www.virtuosoft.eu/code/bootstrap-touchspin/
- *
- *  Made by István Ujj-Mészáros
- *  Under Apache License v2.0 License
- */
-!function(a){"use strict";function b(a,b){return a+".touchspin_"+b}function c(c,d){return a.map(c,function(a){return b(a,d)})}var d=0;a.fn.TouchSpin=function(b){if("destroy"===b)return void this.each(function(){var b=a(this),d=b.data();a(document).off(c(["mouseup","touchend","touchcancel","mousemove","touchmove","scroll","scrollstart"],d.spinnerid).join(" "))});var e={min:0,max:100,initval:"",replacementval:"",step:1,decimals:0,stepinterval:100,forcestepdivisibility:"round",stepintervaldelay:500,verticalbuttons:!1,verticalupclass:"glyphicon glyphicon-chevron-up",verticaldownclass:"glyphicon glyphicon-chevron-down",prefix:"",postfix:"",prefix_extraclass:"",postfix_extraclass:"",booster:!0,boostat:10,maxboostedstep:!1,mousewheel:!0,buttondown_class:"btn btn-default",buttonup_class:"btn btn-default",buttondown_txt:"-",buttonup_txt:"+"},f={min:"min",max:"max",initval:"init-val",replacementval:"replacement-val",step:"step",decimals:"decimals",stepinterval:"step-interval",verticalbuttons:"vertical-buttons",verticalupclass:"vertical-up-class",verticaldownclass:"vertical-down-class",forcestepdivisibility:"force-step-divisibility",stepintervaldelay:"step-interval-delay",prefix:"prefix",postfix:"postfix",prefix_extraclass:"prefix-extra-class",postfix_extraclass:"postfix-extra-class",booster:"booster",boostat:"boostat",maxboostedstep:"max-boosted-step",mousewheel:"mouse-wheel",buttondown_class:"button-down-class",buttonup_class:"button-up-class",buttondown_txt:"button-down-txt",buttonup_txt:"button-up-txt"};return this.each(function(){function g(){if(!J.data("alreadyinitialized")){if(J.data("alreadyinitialized",!0),d+=1,J.data("spinnerid",d),!J.is("input"))return void console.log("Must be an input.");j(),h(),u(),m(),p(),q(),r(),s(),D.input.css("display","block")}}function h(){""!==B.initval&&""===J.val()&&J.val(B.initval)}function i(a){l(a),u();var b=D.input.val();""!==b&&(b=Number(D.input.val()),D.input.val(b.toFixed(B.decimals)))}function j(){B=a.extend({},e,K,k(),b)}function k(){var b={};return a.each(f,function(a,c){var d="bts-"+c;J.is("[data-"+d+"]")&&(b[a]=J.data(d))}),b}function l(b){B=a.extend({},B,b)}function m(){var a=J.val(),b=J.parent();""!==a&&(a=Number(a).toFixed(B.decimals)),J.data("initvalue",a).val(a),J.addClass("form-control"),b.hasClass("input-group")?n(b):o()}function n(b){b.addClass("bootstrap-touchspin");var c,d,e=J.prev(),f=J.next(),g='<span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+"</span>",h='<span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+"</span>";e.hasClass("input-group-btn")?(c='<button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button>",e.append(c)):(c='<span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button></span>",a(c).insertBefore(J)),f.hasClass("input-group-btn")?(d='<button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button>",f.prepend(d)):(d='<span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span>",a(d).insertAfter(J)),a(g).insertBefore(J),a(h).insertAfter(J),C=b}function o(){var b;b=B.verticalbuttons?'<div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn-vertical"><button class="'+B.buttondown_class+' bootstrap-touchspin-up" type="button"><i class="'+B.verticalupclass+'"></i></button><button class="'+B.buttonup_class+' bootstrap-touchspin-down" type="button"><i class="'+B.verticaldownclass+'"></i></button></span></div>':'<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+'</button></span><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span></div>",C=a(b).insertBefore(J),a(".bootstrap-touchspin-prefix",C).after(J),J.hasClass("input-sm")?C.addClass("input-group-sm"):J.hasClass("input-lg")&&C.addClass("input-group-lg")}function p(){D={down:a(".bootstrap-touchspin-down",C),up:a(".bootstrap-touchspin-up",C),input:a("input",C),prefix:a(".bootstrap-touchspin-prefix",C).addClass(B.prefix_extraclass),postfix:a(".bootstrap-touchspin-postfix",C).addClass(B.postfix_extraclass)}}function q(){""===B.prefix&&D.prefix.hide(),""===B.postfix&&D.postfix.hide()}function r(){J.on("keydown",function(a){var b=a.keyCode||a.which;38===b?("up"!==M&&(w(),z()),a.preventDefault()):40===b&&("down"!==M&&(x(),y()),a.preventDefault())}),J.on("keyup",function(a){var b=a.keyCode||a.which;38===b?A():40===b&&A()}),J.on("blur",function(){u()}),D.down.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("down"!==M&&(x(),y()),a.preventDefault())}),D.down.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.up.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("up"!==M&&(w(),z()),a.preventDefault())}),D.up.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.down.on("mousedown.touchspin",function(a){D.down.off("touchstart.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.down.on("touchstart.touchspin",function(a){D.down.off("mousedown.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.up.on("mousedown.touchspin",function(a){D.up.off("touchstart.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("touchstart.touchspin",function(a){D.up.off("mousedown.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),D.up.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),a(document).on(c(["mouseup","touchend","touchcancel"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),a(document).on(c(["mousemove","touchmove","scroll","scrollstart"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),J.on("mousewheel DOMMouseScroll",function(a){if(B.mousewheel&&J.is(":focus")){var b=a.originalEvent.wheelDelta||-a.originalEvent.deltaY||-a.originalEvent.detail;a.stopPropagation(),a.preventDefault(),0>b?x():w()}})}function s(){J.on("touchspin.uponce",function(){A(),w()}),J.on("touchspin.downonce",function(){A(),x()}),J.on("touchspin.startupspin",function(){z()}),J.on("touchspin.startdownspin",function(){y()}),J.on("touchspin.stopspin",function(){A()}),J.on("touchspin.updatesettings",function(a,b){i(b)})}function t(a){switch(B.forcestepdivisibility){case"round":return(Math.round(a/B.step)*B.step).toFixed(B.decimals);case"floor":return(Math.floor(a/B.step)*B.step).toFixed(B.decimals);case"ceil":return(Math.ceil(a/B.step)*B.step).toFixed(B.decimals);default:return a}}function u(){var a,b,c;return a=J.val(),""===a?void(""!==B.replacementval&&(J.val(B.replacementval),J.trigger("change"))):void(B.decimals>0&&"."===a||(b=parseFloat(a),isNaN(b)&&(b=""!==B.replacementval?B.replacementval:0),c=b,b.toString()!==a&&(c=b),b<B.min&&(c=B.min),b>B.max&&(c=B.max),c=t(c),Number(a).toString()!==c.toString()&&(J.val(c),J.trigger("change"))))}function v(){if(B.booster){var a=Math.pow(2,Math.floor(L/B.boostat))*B.step;return B.maxboostedstep&&a>B.maxboostedstep&&(a=B.maxboostedstep,E=Math.round(E/a)*a),Math.max(B.step,a)}return B.step}function w(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E+=b,E>B.max&&(E=B.max,J.trigger("touchspin.on.max"),A()),D.input.val(Number(E).toFixed(B.decimals)),a!==E&&J.trigger("change")}function x(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E-=b,E<B.min&&(E=B.min,J.trigger("touchspin.on.min"),A()),D.input.val(E.toFixed(B.decimals)),a!==E&&J.trigger("change")}function y(){A(),L=0,M="down",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startdownspin"),H=setTimeout(function(){F=setInterval(function(){L++,x()},B.stepinterval)},B.stepintervaldelay)}function z(){A(),L=0,M="up",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startupspin"),I=setTimeout(function(){G=setInterval(function(){L++,w()},B.stepinterval)},B.stepintervaldelay)}function A(){switch(clearTimeout(H),clearTimeout(I),clearInterval(F),clearInterval(G),M){case"up":J.trigger("touchspin.on.stopupspin"),J.trigger("touchspin.on.stopspin");break;case"down":J.trigger("touchspin.on.stopdownspin"),J.trigger("touchspin.on.stopspin")}L=0,M=!1}var B,C,D,E,F,G,H,I,J=a(this),K=J.data(),L=0,M=!1;g()})}}(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(528)))
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e){!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(529)], __WEBPACK_AMD_DEFINE_RESULT__ = (function(e){return function(){function t(e,t,n){return g({type:O.error,iconClass:m().iconClasses.error,message:e,optionsOverride:n,title:t})}function n(t,n){return t||(t=m()),v=e("#"+t.containerId),v.length?v:(n&&(v=d(t)),v)}function o(e,t,n){return g({type:O.info,iconClass:m().iconClasses.info,message:e,optionsOverride:n,title:t})}function s(e){C=e}function i(e,t,n){return g({type:O.success,iconClass:m().iconClasses.success,message:e,optionsOverride:n,title:t})}function a(e,t,n){return g({type:O.warning,iconClass:m().iconClasses.warning,message:e,optionsOverride:n,title:t})}function r(e,t){var o=m();v||n(o),u(e,o,t)||l(o)}function c(t){var o=m();return v||n(o),t&&0===e(":focus",t).length?void h(t):void(v.children().length&&v.remove())}function l(t){for(var n=v.children(),o=n.length-1;o>=0;o--)u(e(n[o]),t)}function u(t,n,o){var s=!(!o||!o.force)&&o.force;return!(!t||!s&&0!==e(":focus",t).length)&&(t[n.hideMethod]({duration:n.hideDuration,easing:n.hideEasing,complete:function(){h(t)}}),!0)}function d(t){return v=e("<div/>").attr("id",t.containerId).addClass(t.positionClass),v.appendTo(e(t.target)),v}function p(){return{tapToDismiss:!0,toastClass:"toast",containerId:"toast-container",debug:!1,showMethod:"fadeIn",showDuration:300,showEasing:"swing",onShown:void 0,hideMethod:"fadeOut",hideDuration:1e3,hideEasing:"swing",onHidden:void 0,closeMethod:!1,closeDuration:!1,closeEasing:!1,closeOnHover:!0,extendedTimeOut:1e3,iconClasses:{error:"toast-error",info:"toast-info",success:"toast-success",warning:"toast-warning"},iconClass:"toast-info",positionClass:"toast-top-right",timeOut:5e3,titleClass:"toast-title",messageClass:"toast-message",escapeHtml:!1,target:"body",closeHtml:'<button type="button">&times;</button>',closeClass:"toast-close-button",newestOnTop:!0,preventDuplicates:!1,progressBar:!1,progressClass:"toast-progress",rtl:!1}}function f(e){C&&C(e)}function g(t){function o(e){return null==e&&(e=""),e.replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function s(){c(),u(),d(),p(),g(),C(),l(),i()}function i(){var e="";switch(t.iconClass){case"toast-success":case"toast-info":e="polite";break;default:e="assertive"}I.attr("aria-live",e)}function a(){E.closeOnHover&&I.hover(H,D),!E.onclick&&E.tapToDismiss&&I.click(b),E.closeButton&&j&&j.click(function(e){e.stopPropagation?e.stopPropagation():void 0!==e.cancelBubble&&e.cancelBubble!==!0&&(e.cancelBubble=!0),E.onCloseClick&&E.onCloseClick(e),b(!0)}),E.onclick&&I.click(function(e){E.onclick(e),b()})}function r(){I.hide(),I[E.showMethod]({duration:E.showDuration,easing:E.showEasing,complete:E.onShown}),E.timeOut>0&&(k=setTimeout(b,E.timeOut),F.maxHideTime=parseFloat(E.timeOut),F.hideEta=(new Date).getTime()+F.maxHideTime,E.progressBar&&(F.intervalId=setInterval(x,10)))}function c(){t.iconClass&&I.addClass(E.toastClass).addClass(y)}function l(){E.newestOnTop?v.prepend(I):v.append(I)}function u(){if(t.title){var e=t.title;E.escapeHtml&&(e=o(t.title)),M.append(e).addClass(E.titleClass),I.append(M)}}function d(){if(t.message){var e=t.message;E.escapeHtml&&(e=o(t.message)),B.append(e).addClass(E.messageClass),I.append(B)}}function p(){E.closeButton&&(j.addClass(E.closeClass).attr("role","button"),I.prepend(j))}function g(){E.progressBar&&(q.addClass(E.progressClass),I.prepend(q))}function C(){E.rtl&&I.addClass("rtl")}function O(e,t){if(e.preventDuplicates){if(t.message===w)return!0;w=t.message}return!1}function b(t){var n=t&&E.closeMethod!==!1?E.closeMethod:E.hideMethod,o=t&&E.closeDuration!==!1?E.closeDuration:E.hideDuration,s=t&&E.closeEasing!==!1?E.closeEasing:E.hideEasing;if(!e(":focus",I).length||t)return clearTimeout(F.intervalId),I[n]({duration:o,easing:s,complete:function(){h(I),clearTimeout(k),E.onHidden&&"hidden"!==P.state&&E.onHidden(),P.state="hidden",P.endTime=new Date,f(P)}})}function D(){(E.timeOut>0||E.extendedTimeOut>0)&&(k=setTimeout(b,E.extendedTimeOut),F.maxHideTime=parseFloat(E.extendedTimeOut),F.hideEta=(new Date).getTime()+F.maxHideTime)}function H(){clearTimeout(k),F.hideEta=0,I.stop(!0,!0)[E.showMethod]({duration:E.showDuration,easing:E.showEasing})}function x(){var e=(F.hideEta-(new Date).getTime())/F.maxHideTime*100;q.width(e+"%")}var E=m(),y=t.iconClass||E.iconClass;if("undefined"!=typeof t.optionsOverride&&(E=e.extend(E,t.optionsOverride),y=t.optionsOverride.iconClass||y),!O(E,t)){T++,v=n(E,!0);var k=null,I=e("<div/>"),M=e("<div/>"),B=e("<div/>"),q=e("<div/>"),j=e(E.closeHtml),F={intervalId:null,hideEta:null,maxHideTime:null},P={toastId:T,state:"visible",startTime:new Date,options:E,map:t};return s(),r(),a(),f(P),E.debug&&console&&console.log(P),I}}function m(){return e.extend({},p(),b.options)}function h(e){v||(v=n()),e.is(":visible")||(e.remove(),e=null,0===v.children().length&&(v.remove(),w=void 0))}var v,C,w,T=0,O={error:"error",info:"info",success:"success",warning:"warning"},b={clear:r,remove:c,error:t,getContainer:n,info:o,options:{},subscribe:s,success:i,version:"2.1.4",warning:a};return b}()}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}(__webpack_require__(591));
+//# sourceMappingURL=toastr.js.map
+
+
+/***/ }),
+
+/***/ 591:
+/***/ (function(module, exports) {
+
+module.exports = function() {
+	throw new Error("define cannot be used indirect");
+};
+
 
 /***/ })
 
