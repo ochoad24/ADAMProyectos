@@ -77,6 +77,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -292,6 +295,10 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("div", { staticClass: "display-2 text-xs-center pa-5" }, [
+        _vm._v("\n      Progreso General de Proyectos\n  ")
+      ]),
+      _vm._v(" "),
       _c(
         "v-layout",
         [

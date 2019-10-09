@@ -1122,7 +1122,8 @@ var render = function() {
                                             {
                                               attrs: {
                                                 "no-title": "",
-                                                scrollable: ""
+                                                scrollable: "",
+                                                locale: "gt"
                                               },
                                               model: {
                                                 value: _vm.fechaI,
@@ -1265,7 +1266,8 @@ var render = function() {
                                             {
                                               attrs: {
                                                 "no-title": "",
-                                                scrollable: ""
+                                                scrollable: "",
+                                                locale: "gt"
                                               },
                                               model: {
                                                 value: _vm.fechaF,

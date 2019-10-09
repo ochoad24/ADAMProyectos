@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="display-2 text-xs-center pa-5">
+        Progreso General de Proyectos
+    </div>
     <v-layout>
         <v-flex>
             <v-card>

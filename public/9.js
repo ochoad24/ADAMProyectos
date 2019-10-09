@@ -918,18 +918,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1721,20 +1709,21 @@ var render = function() {
             [
               _c(
                 "vmenu-item",
-                { attrs: { link: "/", icon: "fa fa-fw fa-desktop" } },
-                [_vm._v("\n                    Inicio\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "vmenu-item",
                 { attrs: { link: "/Gantt", icon: "fa fa-fw fa-tasks" } },
-                [_vm._v("\n                    Proyectos\n                ")]
+                [
+                  _vm._v(
+                    "\n                    Progreso de proyectos\n                "
+                  )
+                ]
               ),
               _vm._v(" "),
               _c(
                 "vmenu-item",
                 {
-                  attrs: { link: "/CrearProyecto", icon: "fa fa-fw fa-tasks" }
+                  attrs: {
+                    link: "/CrearProyecto",
+                    icon: "fa fa-fw fa-plus-square"
+                  }
                 },
                 [
                   _vm._v(
@@ -1745,8 +1734,75 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "vmenu-item",
-                { attrs: { link: "/Reportes", icon: "fa fa-fw fa-tasks" } },
+                {
+                  attrs: { link: "/Reportes", icon: "fa fa-fw fa-file-text-o" }
+                },
                 [_vm._v("\n                    Reportes\n                ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "vsub-menu",
+                {
+                  staticClass: "menufold-bottom",
+                  attrs: {
+                    title: "Administrar proyectos",
+                    icon: "fa fa-fw fa-stack-overflow"
+                  }
+                },
+                [
+                  _c(
+                    "vmenu-item",
+                    {
+                      attrs: { link: "/Proyectos", icon: "fa fa-fw fa-sitemap" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Editar proyectos\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vmenu-item",
+                    {
+                      attrs: {
+                        link: "/Actividades",
+                        icon: "fa fa-fw fa-code-fork"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Editar actividades\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vmenu-item",
+                    { attrs: { link: "/Tarea", icon: "fa fa-fw fa-spinner" } },
+                    [
+                      _vm._v(
+                        "\n                        Editar tareas\n                    "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "vmenu-item",
+                    {
+                      attrs: {
+                        link: "/Organizaciones",
+                        icon: "fa fa-fw fa-globe"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Editar organizaciones\n                    "
+                      )
+                    ]
+                  )
+                ],
+                1
               ),
               _vm._v(" "),
               _c(
@@ -1790,105 +1846,13 @@ var render = function() {
               ),
               _vm._v(" "),
               _c(
-                "vsub-menu",
-                {
-                  staticClass: "menufold-bottom",
-                  attrs: { title: "Proyectos", icon: "fa fa-fw fa-folder" }
-                },
+                "vmenu-item",
+                { attrs: { link: "/Subir", icon: "fa fa-fw fa-upload" } },
                 [
-                  _c(
-                    "vmenu-item",
-                    {
-                      attrs: {
-                        link: "/Organizaciones",
-                        icon: "fa fa-fw fa-globe"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Organizaciones\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vmenu-item",
-                    {
-                      attrs: { link: "/Proyectos", icon: "fa fa-fw fa-folder" }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Proyectos\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vmenu-item",
-                    {
-                      attrs: {
-                        link: "/GanttProyecto",
-                        icon: "fa fa-fw fa-tasks"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Progreso de proyectos\n                    "
-                      )
-                    ]
+                  _vm._v(
+                    "\n                    Subir reporte\n                "
                   )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "vsub-menu",
-                {
-                  staticClass: "menufold-bottom",
-                  attrs: { title: "Actividades", icon: "fa fa-fw fa-code-fork" }
-                },
-                [
-                  _c(
-                    "vmenu-item",
-                    {
-                      attrs: {
-                        link: "/Actividades",
-                        icon: "fa fa-fw fa-code-fork"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Actividades\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vmenu-item",
-                    { attrs: { link: "/Tarea", icon: "fa fa-fw fa-tasks" } },
-                    [
-                      _vm._v(
-                        "\n                        Tareas\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "vmenu-item",
-                    {
-                      attrs: {
-                        link: "/Subir",
-                        icon: "fa fa-fw fa-location-arrow"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Subir Reporte\n                    "
-                      )
-                    ]
-                  )
-                ],
-                1
+                ]
               ),
               _vm._v(" "),
               _c(
@@ -1898,21 +1862,6 @@ var render = function() {
                   attrs: { title: "Ajustes", icon: "fa fa-fw fa-gear" }
                 },
                 [
-                  _c(
-                    "vmenu-item",
-                    {
-                      attrs: {
-                        link: "/TipoActividad",
-                        icon: "fa fa-fw fa-list"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Tipo Actividades\n                    "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
                   _c(
                     "vmenu-item",
                     {

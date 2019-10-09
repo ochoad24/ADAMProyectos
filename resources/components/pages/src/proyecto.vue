@@ -42,7 +42,7 @@
                                                         <v-text-field v-model="fechaI" label="Ingrese fecha de inicio"
                                                             prepend-icon="event" readonly v-on="on"></v-text-field>
                                                     </template>
-                                                    <v-date-picker v-model="fechaI" no-title scrollable>
+                                                    <v-date-picker v-model="fechaI" no-title scrollable locale="gt">
                                                         <v-spacer></v-spacer>
                                                         <v-btn flat color="primary" @click="menu = false">Cancelar
                                                         </v-btn>
@@ -62,7 +62,7 @@
                                                             label="Ingrese fecha de finalización" prepend-icon="event"
                                                             readonly v-on="on"></v-text-field>
                                                     </template>
-                                                    <v-date-picker v-model="fechaF" no-title scrollable>
+                                                    <v-date-picker v-model="fechaF" no-title scrollable locale="gt">
                                                         <v-spacer></v-spacer>
                                                         <v-btn flat color="primary" @click="menu2 = false">Cancelar
                                                         </v-btn>
@@ -221,6 +221,7 @@
     import Multiselect from 'vue-multiselect';
     import Vue from 'vue';
     import axios from 'axios';
+    import dayjs from "dayjs";
     export default {
         name: "Proyecto",
         components: {
