@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="display-2 text-xs-center pa-5">
-        Progreso General de Proyectos
+       <h1 style="color:#668c2d" > Progreso General de Proyectos</h1>
     </div>
     <v-layout>
         <v-flex>

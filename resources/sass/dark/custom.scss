@@ -241,7 +241,7 @@ body > #app .header .navbar-nav .user-dropdown .dropdown-toggle{
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
-    color: #555;
+    color: #000;
     background-color: #FFF;
     border-top: 3px solid #6699CC;
     border-bottom-color: transparent;
@@ -530,8 +530,8 @@ body.boxed {
     padding: 11px 20px 11px 45px;
 }
 .submenu.active >.submenu-header{
-    background-color: #EEEEEE;
-    color:#33CC99 !important;
+
+    color:#FFF !important;
 }
 .collapse-item.active .vuemenu .submenu-header{
     padding-left: 30px !important;

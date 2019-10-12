@@ -180,9 +180,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vee_validate__ = __webpack_require__(703);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_card__ = __webpack_require__(1371);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_card___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_card__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_form__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_form__ = __webpack_require__(620);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__validations_validations_js__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__validations_validations_js__ = __webpack_require__(621);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_password_strength_meter__ = __webpack_require__(1378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vue_password_strength_meter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vue_password_strength_meter__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_sweetalert2_dist_sweetalert2_js__ = __webpack_require__(705);
@@ -16827,7 +16827,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 621:
+/***/ 620:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -18156,7 +18156,7 @@ return VueForm;
 
 /***/ }),
 
-/***/ 622:
+/***/ 621:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

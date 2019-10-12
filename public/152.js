@@ -1,12 +1,12 @@
 webpackJsonp([152],{
 
-/***/ 1331:
+/***/ 1334:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1332);
+var content = __webpack_require__(1335);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1332:
+/***/ 1335:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.view-icons{\n    font-size: medium;\n}\n.product_box
 
 /***/ }),
 
-/***/ 1333:
+/***/ 1336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -110,56 +110,56 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             search: '',
             isActive: '',
             list: [{
-                src: __webpack_require__(576),
+                src: __webpack_require__(578),
                 price: "$800",
                 mrp: "$1000",
                 name: "US-Polo T-shirt",
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(648),
+                src: __webpack_require__(649),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
                 sale: "23%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(692),
+                src: __webpack_require__(693),
                 price: "$280",
                 mrp: "$350",
                 name: "Gift box",
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(693),
+                src: __webpack_require__(694),
                 price: "$1000",
                 mrp: "1500",
                 name: "Apple Macbook pro",
                 sale: "33%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(696),
+                src: __webpack_require__(697),
                 price: "$1000",
                 mrp: "1500",
                 name: "Vintage classic camera",
                 sale: "33%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(619),
+                src: __webpack_require__(620),
                 price: "$280",
                 mrp: "$350",
                 name: "Gray T-Shirt",
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(697),
+                src: __webpack_require__(698),
                 price: "$450.45",
                 mrp: "$585",
                 name: "Stereo headset",
                 sale: "23%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(695),
+                src: __webpack_require__(696),
                 price: "$800",
                 mrp: "$1000",
                 name: "Mobile phone",
@@ -189,7 +189,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1334:
+/***/ 1337:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -387,13 +387,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1331)
+  __webpack_require__(1334)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1333)
+var __vue_script__ = __webpack_require__(1336)
 /* template */
-var __vue_template__ = __webpack_require__(1334)
+var __vue_template__ = __webpack_require__(1337)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -433,56 +433,56 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 576:
+/***/ 578:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product.png?921f475804236cccb1e348d8ea00ae2a";
 
 /***/ }),
 
-/***/ 619:
+/***/ 620:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product7.png?f5f7429df68ef8bee2043875c2bb4586";
 
 /***/ }),
 
-/***/ 648:
+/***/ 649:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product2.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 692:
+/***/ 693:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product3.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 693:
+/***/ 694:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product4.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 695:
+/***/ 696:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product6.png?006ad5deb285a23818d1c8fff0c28bf3";
 
 /***/ }),
 
-/***/ 696:
+/***/ 697:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product5.png?e3c6ea40ba93e4b21feb50271e63d60b";
 
 /***/ }),
 
-/***/ 697:
+/***/ 698:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product8.png?2b7f1e8d1e4168dcd54c27e15a633aac";

@@ -857,10 +857,10 @@ __webpack_require__(1320);
     // ====component Data properties
     data: function data() {
         return {
-            thumbs: [__webpack_require__(577), __webpack_require__(1322), __webpack_require__(1323), __webpack_require__(1324)],
+            thumbs: [__webpack_require__(578), __webpack_require__(1322), __webpack_require__(1323), __webpack_require__(1324)],
             mag_data: {
                 thumb: '#thumb',
-                large: __webpack_require__(577),
+                large: __webpack_require__(578),
                 largeWrapper: 'preview',
                 mode: 'inside',
                 zoom: 3,
@@ -1625,7 +1625,7 @@ var render = function() {
                     staticClass: "img-fluid",
                     attrs: {
                       id: "thumb",
-                      src: __webpack_require__(577),
+                      src: __webpack_require__(578),
                       alt: "product"
                     }
                   })
@@ -2108,7 +2108,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
-                        src: __webpack_require__(567),
+                        src: __webpack_require__(565),
                         alt: "cust2"
                       }
                     })
@@ -2385,7 +2385,7 @@ var render = function() {
           _c("img", {
             staticClass: "img-fluid mb-2",
             attrs: {
-              src: __webpack_require__(620),
+              src: __webpack_require__(619),
               alt: "item1"
             }
           }),
@@ -2465,7 +2465,7 @@ var render = function() {
           _c("img", {
             staticClass: "img-fluid mb-2",
             attrs: {
-              src: __webpack_require__(620),
+              src: __webpack_require__(619),
               alt: "item5"
             }
           }),
@@ -2485,7 +2485,7 @@ var render = function() {
           _c("img", {
             staticClass: "img-fluid mb-2",
             attrs: {
-              src: __webpack_require__(620),
+              src: __webpack_require__(619),
               alt: "item6"
             }
           }),
@@ -2637,21 +2637,21 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 567:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 577:
+/***/ 578:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product.png?921f475804236cccb1e348d8ea00ae2a";
 
 /***/ }),
 
-/***/ 620:
+/***/ 619:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product7.png?f5f7429df68ef8bee2043875c2bb4586";

@@ -49,9 +49,9 @@ exports.push([module.i, "\n.timeline {\n    list-style : none;\n    padding    :
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js__ = __webpack_require__(687);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery_advanced_news_ticker_assets_js_jquery_newsTicker_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__ = __webpack_require__(591);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_animate_css_animate_min_css__);
 //
 //
@@ -765,7 +765,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(567),
+                              src: __webpack_require__(565),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -848,7 +848,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(565),
+                              src: __webpack_require__(566),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -886,7 +886,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(566),
+                              src: __webpack_require__(567),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -969,7 +969,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "rounded-circle float-right",
                             attrs: {
-                              src: __webpack_require__(565),
+                              src: __webpack_require__(566),
                               height: "36",
                               width: "36",
                               alt: "avatar-image"
@@ -11660,21 +11660,21 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 /***/ 565:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
 /***/ 566:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
 /***/ 567:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
@@ -11685,13 +11685,13 @@ module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 592:
+/***/ 591:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(593);
+var content = __webpack_require__(592);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -11717,7 +11717,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 593:
+/***/ 592:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11732,7 +11732,7 @@ exports.push([module.i, "@charset \"UTF-8\";\n\n/*!\n * animate.css -http://dane
 
 /***/ }),
 
-/***/ 688:
+/***/ 687:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*

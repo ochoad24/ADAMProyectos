@@ -252,7 +252,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             swal({
                 title: "Sweet!",
                 text: "Here's a custom image.",
-                imageUrl: __webpack_require__(567),
+                imageUrl: __webpack_require__(565),
                 imageWidth: 100,
                 imageHeight: 100,
                 animation: false
@@ -11299,7 +11299,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 567:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";

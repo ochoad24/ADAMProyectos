@@ -1,12 +1,12 @@
 webpackJsonp([167],{
 
-/***/ 2258:
+/***/ 2261:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2259);
+var content = __webpack_require__(2262);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2259:
+/***/ 2262:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,12 +42,12 @@ exports.push([module.i, "\n.invoice_bg {\n    margin  : 15px 0 30px;\n    paddin
 
 /***/ }),
 
-/***/ 2260:
+/***/ 2263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
 //
 //
@@ -226,7 +226,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2261:
+/***/ 2264:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -252,7 +252,7 @@ var render = function() {
                 _c("h4", [
                   _c("img", {
                     attrs: {
-                      src: __webpack_require__(2262),
+                      src: __webpack_require__(2265),
                       alt: "clear"
                     }
                   })
@@ -598,7 +598,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 2262:
+/***/ 2265:
 /***/ (function(module, exports) {
 
 module.exports = "/images/logoblue.png?9b09dfcfe9e03feaf0f425b6dcfd3e62";
@@ -611,13 +611,13 @@ module.exports = "/images/logoblue.png?9b09dfcfe9e03feaf0f425b6dcfd3e62";
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2258)
+  __webpack_require__(2261)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2260)
+var __vue_script__ = __webpack_require__(2263)
 /* template */
-var __vue_template__ = __webpack_require__(2261)
+var __vue_template__ = __webpack_require__(2264)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -657,19 +657,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(531)
+  __webpack_require__(532)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(533)
+var __vue_script__ = __webpack_require__(534)
 /* template */
-var __vue_template__ = __webpack_require__(534)
+var __vue_template__ = __webpack_require__(535)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -709,13 +709,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(532);
+var content = __webpack_require__(533);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -736,7 +736,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -751,7 +751,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 533:
+/***/ 534:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -796,7 +796,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 534:
+/***/ 535:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

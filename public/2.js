@@ -666,7 +666,7 @@ function getData() {
 "use strict";
 
 
-var _bus = __webpack_require__(651);
+var _bus = __webpack_require__(649);
 
 var _bus2 = _interopRequireDefault(_bus);
 
@@ -11667,7 +11667,7 @@ var _normal = __webpack_require__(856);
 
 var _normal2 = _interopRequireDefault(_normal);
 
-var _merge = __webpack_require__(574);
+var _merge = __webpack_require__(575);
 
 var _merge2 = _interopRequireDefault(_merge);
 
@@ -11675,16 +11675,16 @@ var _table = __webpack_require__(857);
 
 var _table2 = _interopRequireDefault(_table);
 
-var _data2 = __webpack_require__(865);
+var _data2 = __webpack_require__(864);
 
 var _data3 = _interopRequireDefault(_data2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _data = __webpack_require__(866);
-var _created = __webpack_require__(867);
+var _data = __webpack_require__(865);
+var _created = __webpack_require__(866);
 
-var template = __webpack_require__(868);
+var template = __webpack_require__(867);
 
 exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
 
@@ -11763,7 +11763,7 @@ exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
     computed: {
       q: __webpack_require__(1775),
       customQ: __webpack_require__(1776),
-      totalPages: __webpack_require__(871),
+      totalPages: __webpack_require__(870),
       filteredData: __webpack_require__(1777),
       hasMultiSort: function hasMultiSort() {
         return this.opts.clientMultiSorting;
@@ -11778,7 +11778,7 @@ exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
     methods: {
       transformDateStringsToMoment: __webpack_require__(1783),
       registerClientFilters: __webpack_require__(1784),
-      search: __webpack_require__(872),
+      search: __webpack_require__(871),
       defaultSort: __webpack_require__(1785),
       loadState: function loadState() {
 
@@ -23150,7 +23150,7 @@ module.exports = function () {
 "use strict";
 
 
-var merge = __webpack_require__(574);
+var merge = __webpack_require__(575);
 
 module.exports = function (defaults, globalOptions, localOptions) {
 
@@ -23355,7 +23355,7 @@ module.exports = function () {
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var merge = __webpack_require__(574);
+var merge = __webpack_require__(575);
 
 module.exports = function () {
 
@@ -23425,7 +23425,7 @@ module.exports = function () {
 "use strict";
 
 
-var merge = __webpack_require__(574);
+var merge = __webpack_require__(575);
 
 module.exports = function (filter) {
 
@@ -25254,7 +25254,7 @@ module.exports = function unique(arr) {
  */
 
 var expand = __webpack_require__(1690);
-var repeat = __webpack_require__(863);
+var repeat = __webpack_require__(862);
 var tokens = __webpack_require__(1700);
 
 /**
@@ -25711,7 +25711,7 @@ var isObject = __webpack_require__(1692);
 var isNumber = __webpack_require__(1693);
 var randomize = __webpack_require__(1695);
 var repeatStr = __webpack_require__(1699);
-var repeat = __webpack_require__(863);
+var repeat = __webpack_require__(862);
 
 /**
  * Expose `fillRange`
@@ -26162,7 +26162,7 @@ module.exports = function isNumber(num) {
 /***/ 1694:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isBuffer = __webpack_require__(862);
+var isBuffer = __webpack_require__(544);
 var toString = Object.prototype.toString;
 
 /**
@@ -26918,7 +26918,7 @@ module.exports = function isPosixBracket(str) {
  * Module dependencies
  */
 
-var isExtglob = __webpack_require__(652);
+var isExtglob = __webpack_require__(650);
 var re, cache = {};
 
 /**
@@ -27090,7 +27090,7 @@ function toRegex(pattern, contains, isNegated) {
 /***/ 1704:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isBuffer = __webpack_require__(862);
+var isBuffer = __webpack_require__(544);
 var toString = Object.prototype.toString;
 
 /**
@@ -27275,7 +27275,7 @@ function isSeparator(str, i) {
 
 
 var isObject = __webpack_require__(1708);
-var forOwn = __webpack_require__(864);
+var forOwn = __webpack_require__(863);
 
 module.exports = function omit(obj, keys) {
   if (!isObject(obj)) return {};
@@ -27367,9 +27367,9 @@ module.exports = function forIn(obj, fn, thisArg) {
 
 
 
-var isGlob = __webpack_require__(653);
+var isGlob = __webpack_require__(651);
 var findBase = __webpack_require__(1711);
-var extglob = __webpack_require__(652);
+var extglob = __webpack_require__(650);
 var dotfile = __webpack_require__(1713);
 
 /**
@@ -27533,7 +27533,7 @@ function unescape(str) {
 
 var path = __webpack_require__(717);
 var parent = __webpack_require__(1712);
-var isGlob = __webpack_require__(653);
+var isGlob = __webpack_require__(651);
 
 module.exports = function globBase(pattern) {
   if (typeof pattern !== 'string') {
@@ -27584,7 +27584,7 @@ function dirname(glob) {
 
 
 var path = __webpack_require__(717);
-var isglob = __webpack_require__(653);
+var isglob = __webpack_require__(651);
 
 module.exports = function globParent(str) {
 	str += 'a'; // preserves full path in case of trailing path separator
@@ -28074,7 +28074,7 @@ module.exports = function every(arr, cb, thisArg) {
 
 
 
-var forOwn = __webpack_require__(864);
+var forOwn = __webpack_require__(863);
 
 /**
  * Convert an argument into a valid iterator.
@@ -28399,7 +28399,7 @@ module.exports = function (e) {
 "use strict";
 
 
-var _bus = __webpack_require__(651);
+var _bus = __webpack_require__(649);
 
 var _bus2 = _interopRequireDefault(_bus);
 
@@ -29144,7 +29144,7 @@ exports.default = function (self) {
   return state;
 };
 
-var _merge = __webpack_require__(574);
+var _merge = __webpack_require__(575);
 
 var _merge2 = _interopRequireDefault(_merge);
 
@@ -29236,7 +29236,7 @@ exports.default = function (self) {
   }), _defineProperty(_merge$recursive, self.name + '/SORTED', function undefined(state, data) {}), _defineProperty(_merge$recursive, self.name + '/ROW_CLICK', function undefined(state, row) {}), _defineProperty(_merge$recursive, self.name + '/FILTER', function undefined(state, row) {}), _merge$recursive), extra);
 };
 
-var _merge = __webpack_require__(574);
+var _merge = __webpack_require__(575);
 
 var _merge2 = _interopRequireDefault(_merge);
 
@@ -29333,7 +29333,7 @@ module.exports = function (h, that) {
 "use strict";
 
 
-var debounce = __webpack_require__(869);
+var debounce = __webpack_require__(868);
 
 module.exports = function (h, that) {
 
@@ -29448,7 +29448,7 @@ module.exports = function (h, that) {
 "use strict";
 
 
-var _merge = __webpack_require__(574);
+var _merge = __webpack_require__(575);
 
 var _merge2 = _interopRequireDefault(_merge);
 
@@ -29528,7 +29528,7 @@ module.exports = function (h, that) {
 "use strict";
 
 
-var debounce = __webpack_require__(869);
+var debounce = __webpack_require__(868);
 
 module.exports = function (h, that) {
 
@@ -29651,7 +29651,7 @@ module.exports = function (h, that) {
 
   if (!that.opts.footerHeadings) return '';
 
-  var sortControl = __webpack_require__(870)(h, that);
+  var sortControl = __webpack_require__(869)(h, that);
 
   var footerHeadings = [];
 
@@ -29804,7 +29804,7 @@ module.exports = function (h, that) {
 
 module.exports = function (h, that) {
 
-  var sortControl = __webpack_require__(870)(h, that);
+  var sortControl = __webpack_require__(869)(h, that);
 
   var headings = [];
 
@@ -29948,7 +29948,7 @@ module.exports = function () {
 "use strict";
 
 
-var search = __webpack_require__(872);
+var search = __webpack_require__(871);
 var clone = __webpack_require__(1780);
 
 module.exports = function () {
@@ -30344,7 +30344,7 @@ module.exports = function () {
 "use strict";
 
 
-var _bus = __webpack_require__(651);
+var _bus = __webpack_require__(649);
 
 var _bus2 = _interopRequireDefault(_bus);
 
@@ -30415,11 +30415,11 @@ module.exports = function (column, ascending) {
 "use strict";
 
 
-var _merge = __webpack_require__(574);
+var _merge = __webpack_require__(575);
 
 var _merge2 = _interopRequireDefault(_merge);
 
-var _data2 = __webpack_require__(865);
+var _data2 = __webpack_require__(864);
 
 var _data3 = _interopRequireDefault(_data2);
 
@@ -30439,10 +30439,10 @@ var _vuePagination = __webpack_require__(853);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _data = __webpack_require__(866);
-var _created = __webpack_require__(867);
+var _data = __webpack_require__(865);
+var _created = __webpack_require__(866);
 
-var template = __webpack_require__(868);
+var template = __webpack_require__(867);
 
 exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
 
@@ -30579,7 +30579,7 @@ exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
       }
     },
     computed: {
-      totalPages: __webpack_require__(871),
+      totalPages: __webpack_require__(870),
       hasMultiSort: function hasMultiSort() {
         return this.opts.serverMultiSorting;
       }
@@ -30615,7 +30615,7 @@ module.exports = function () {
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var merge = __webpack_require__(574);
+var merge = __webpack_require__(575);
 
 module.exports = function (promiseOnly) {
   var _data;
@@ -30677,7 +30677,7 @@ module.exports = function (data) {
 "use strict";
 
 
-var _bus = __webpack_require__(651);
+var _bus = __webpack_require__(649);
 
 var _bus2 = _interopRequireDefault(_bus);
 
@@ -41242,7 +41242,35 @@ return jQuery;
 
 /***/ }),
 
-/***/ 574:
+/***/ 544:
+/***/ (function(module, exports) {
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
+
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
+
+
+/***/ }),
+
+/***/ 575:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {/*!
@@ -41424,7 +41452,7 @@ return jQuery;
 
 /***/ }),
 
-/***/ 651:
+/***/ 649:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41446,7 +41474,7 @@ exports.default = bus;
 
 /***/ }),
 
-/***/ 652:
+/***/ 650:
 /***/ (function(module, exports) {
 
 /*!
@@ -41464,7 +41492,7 @@ module.exports = function isExtglob(str) {
 
 /***/ }),
 
-/***/ 653:
+/***/ 651:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -41474,7 +41502,7 @@ module.exports = function isExtglob(str) {
  * Licensed under the MIT License.
  */
 
-var isExtglob = __webpack_require__(652);
+var isExtglob = __webpack_require__(650);
 
 module.exports = function isGlob(str) {
   return typeof str === 'string'
@@ -41516,8 +41544,8 @@ utils.unique = __webpack_require__(1688);
 utils.braces = __webpack_require__(1689);
 utils.brackets = __webpack_require__(1701);
 utils.extglob = __webpack_require__(1703);
-utils.isExtglob = __webpack_require__(652);
-utils.isGlob = __webpack_require__(653);
+utils.isExtglob = __webpack_require__(650);
+utils.isGlob = __webpack_require__(651);
 utils.typeOf = __webpack_require__(1704);
 utils.normalize = __webpack_require__(1705);
 utils.omit = __webpack_require__(1707);
@@ -43660,7 +43688,7 @@ exports.default = function (source) {
   }, extra);
 };
 
-var _merge = __webpack_require__(574);
+var _merge = __webpack_require__(575);
 
 var _merge2 = _interopRequireDefault(_merge);
 
@@ -45635,34 +45663,6 @@ module.exports = Array.isArray || function (arr) {
 /***/ }),
 
 /***/ 862:
-/***/ (function(module, exports) {
-
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-// The _isBuffer check is for Safari 5-7 support, because it's missing
-// Object.prototype.constructor. Remove this eventually
-module.exports = function (obj) {
-  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
-}
-
-function isBuffer (obj) {
-  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
-}
-
-// For Node v0.10 support. Remove this eventually.
-function isSlowBuffer (obj) {
-  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
-}
-
-
-/***/ }),
-
-/***/ 863:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45688,7 +45688,7 @@ module.exports = function repeat(ele, num) {
 
 /***/ }),
 
-/***/ 864:
+/***/ 863:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45715,7 +45715,7 @@ module.exports = function forOwn(obj, fn, thisArg) {
 
 /***/ }),
 
-/***/ 865:
+/***/ 864:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45756,7 +45756,7 @@ exports.default = function (useVuex, source) {
 
 /***/ }),
 
-/***/ 866:
+/***/ 865:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45782,7 +45782,7 @@ function makeId() {
 
 /***/ }),
 
-/***/ 867:
+/***/ 866:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45867,7 +45867,7 @@ function getDevice(val) {
 
 /***/ }),
 
-/***/ 868:
+/***/ 867:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45935,7 +45935,7 @@ module.exports = function (source) {
 
 /***/ }),
 
-/***/ 869:
+/***/ 868:
 /***/ (function(module, exports) {
 
 /**
@@ -46012,7 +46012,7 @@ module.exports = debounce;
 
 /***/ }),
 
-/***/ 870:
+/***/ 869:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46032,7 +46032,7 @@ module.exports = function (h, that) {
 
 /***/ }),
 
-/***/ 871:
+/***/ 870:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46044,7 +46044,7 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ 872:
+/***/ 871:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

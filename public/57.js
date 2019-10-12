@@ -49,7 +49,7 @@ exports.push([module.i, "/*-----------------------------------*\\\n  $RESET\n\\*
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_animate_css_animate_min_css__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_animate_css_animate_min_css__ = __webpack_require__(591);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_animate_css_animate_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_animate_css_animate_min_css__);
 //
 //
@@ -445,13 +445,13 @@ if (false) {
 
 /***/ }),
 
-/***/ 592:
+/***/ 591:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(593);
+var content = __webpack_require__(592);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -477,7 +477,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 593:
+/***/ 592:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);

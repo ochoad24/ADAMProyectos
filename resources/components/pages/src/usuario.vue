@@ -1,7 +1,7 @@
 <template>
     <div class="row user-list">
         <div class="col-lg-12">
-            <b-card header="Usuarios" header-tag="h4" class="bg-primary-card">
+            <b-card header="Usuarios" header-tag="h4" class="bg-primary-card" >
                 <div class="table-responsive">
                     <v-toolbar flat color="white">
                         <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
@@ -9,34 +9,36 @@
                         <v-spacer></v-spacer>
                         <v-dialog v-model="dialog" max-width="600px">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="primary" dark class="mb-2" v-on="on">Nuevo Usuario</v-btn>
+                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nuevo Usuario</v-btn>
                             </template>
                             <v-card>
-                                <v-card-title>
-                                    <span class="headline">{{ formTitle }}</span>
-                                </v-card-title>
-
+                                <v-toolbar dark color="#668c2d">
+                                <v-btn icon dark @click="dialog2 = false">
+                                    <v-icon col="white">clear</v-icon>
+                                </v-btn>
+                                <v-toolbar-title>Nuevo Usuario</v-toolbar-title>
+                            </v-toolbar>
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12 sm6 md6>
-                                                <v-text-field v-model="editedItem.nombre" label="Nombre"></v-text-field>
+                                                <v-text-field v-model="editedItem.nombre" label="Nombre"  :rules="[rules.required, rules.min]"></v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
-                                                <v-text-field v-model="editedItem.apellido" label="Apellido">
+                                                <v-text-field v-model="editedItem.apellido" label="Apellido" :rules="[rules.required, rules.min]">
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
-                                                <v-text-field v-model="editedItem.usuario" label="Usuario">
+                                                <v-text-field v-model="editedItem.usuario" label="Usuario" :rules="[rules.required, rules.min]">
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
                                                 <v-text-field v-model="editedItem.contrasena" label="Contraseña"
-                                                    :type="'password'"></v-text-field>
+                                                    :type="'password'" :rules="[rules.required, rules.min]" ></v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
                                                 <v-text-field v-model="editedItem.repetir" label="Repetir contraseña"
-                                                    :type="'password'"></v-text-field>
+                                                    :type="'password'" :rules="[rules.required, rules.min]"></v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
                                                 <multiselect v-model="idRol" :options="roles"
@@ -57,8 +59,8 @@
                                 </template>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" flat @click="save">Guardar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="save">Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -74,7 +76,7 @@
                             <td class="text-xs-left">{{ props.item.rol }}</td>
                             <td class="text-xs-left"><template>
                                     <div class="text-xs-left">
-                                        <v-chip color="green" text-color="white" v-if="props.item.estado">Activo
+                                        <v-chip color="#668c2d" text-color="white" v-if="props.item.estado">Activo
                                         </v-chip>
                                         <v-chip color="red" text-color="white" v-else>Desactivado</v-chip>
                                     </div>
@@ -92,7 +94,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -137,6 +139,14 @@
             error: 0,
             errorMsj: [],
             usuarios: [],
+             rules: {
+              required: value => !!value || 'Campo requerido.',
+              counter: value => value.length <= 20 || 'Max 20 characters',
+              email: value => {
+              const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+              return pattern.test(value) || 'Correo electrónico invalido.'
+              }
+            },
             roles: [],
             editedIndex: -1,
             editedItem: {

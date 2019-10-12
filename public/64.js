@@ -119,7 +119,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.login[data-v-624e51c6] {\r\n    padding-top: 6.5%;\r\n    padding-bottom: 2%;\r\n    width: 100%;\r\n    height: 100vh;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\r\n    overflow-y: auto;\n}\r\n", ""]);
+exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 6.5%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    overflow-y: auto;\n}\n", ""]);
 
 // exports
 
@@ -133,9 +133,9 @@ exports.push([module.i, "\n.login[data-v-624e51c6] {\r\n    padding-top: 6.5%;\r
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(620);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(621);
 //
 //
 //
@@ -271,7 +271,7 @@ var render = function() {
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
                 attrs: {
-                  src: __webpack_require__(644),
+                  src: __webpack_require__(643),
                   alt: "Logo"
                 }
               })
@@ -644,7 +644,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 621:
+/***/ 620:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -1973,7 +1973,7 @@ return VueForm;
 
 /***/ }),
 
-/***/ 622:
+/***/ 621:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1993,7 +1993,7 @@ var options = {
 
 /***/ }),
 
-/***/ 644:
+/***/ 643:
 /***/ (function(module, exports) {
 
 module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";

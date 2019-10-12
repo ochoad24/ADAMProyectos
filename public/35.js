@@ -3735,7 +3735,7 @@ var render = function() {
                             _c("b-img", {
                               staticClass: "img-fluid",
                               attrs: {
-                                src: __webpack_require__(567),
+                                src: __webpack_require__(565),
                                 rounded: "circle",
                                 alt: "Circle image"
                               }
@@ -3947,7 +3947,7 @@ var render = function() {
                             _c("b-img", {
                               staticClass: "img-fluid",
                               attrs: {
-                                src: __webpack_require__(648),
+                                src: __webpack_require__(692),
                                 rounded: "circle",
                                 alt: "Circle image"
                               }
@@ -4053,7 +4053,7 @@ var render = function() {
                             _c("b-img", {
                               staticClass: "img-fluid",
                               attrs: {
-                                src: __webpack_require__(566),
+                                src: __webpack_require__(567),
                                 rounded: "circle",
                                 alt: "Circle image"
                               }
@@ -14896,21 +14896,21 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 566:
-/***/ (function(module, exports) {
-
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
-
-/***/ }),
-
-/***/ 567:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 648:
+/***/ 567:
+/***/ (function(module, exports) {
+
+module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
+
+/***/ }),
+
+/***/ 692:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";

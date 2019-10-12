@@ -166,7 +166,7 @@ var render = function() {
         _c("h2", { staticClass: "text-center" }, [
           _c("img", {
             attrs: {
-              src: __webpack_require__(644),
+              src: __webpack_require__(643),
               alt: "Logo"
             }
           })
@@ -409,7 +409,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 644:
+/***/ 643:
 /***/ (function(module, exports) {
 
 module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";

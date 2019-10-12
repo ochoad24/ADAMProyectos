@@ -9,18 +9,21 @@
                         <v-spacer></v-spacer>
                         <v-dialog v-model="dialog" max-width="600px">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="green darken-1" dark class="mb-2" v-on="on">Nuevo Rol</v-btn>
+                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nuevo Rol</v-btn>
                             </template>
                             <v-card>
-                                <v-card-title>
-                                    <span class="headline">{{ formTitle }}</span>
-                                </v-card-title>
+                                <v-toolbar dark color="#668c2d">
+                                <v-btn icon dark @click="dialog2 = false">
+                                    <v-icon col="white">clear</v-icon>
+                                </v-btn>
+                                <v-toolbar-title>Nuevo Rol</v-toolbar-title>
+                            </v-toolbar>
 
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12 sm12 md12>
-                                                <v-text-field v-model="editedItem.nombre" label="Nombre Rol">
+                                                <v-text-field v-model="editedItem.nombre" label="Nombre Rol"  maxlength="100"  required :rules="nameRules" :counter="100">
                                                 </v-text-field>
                                             </v-flex>
                                         </v-layout>
@@ -37,8 +40,8 @@
                                 </template>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" flat @click="save">Guardar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="save">Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -57,7 +60,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -79,6 +82,11 @@
         data: () => ({
             search: '',
             dialog: false,
+               nameRules: [
+            v => !!v || 'El nombre del rol no puede estar vacio',
+            v => (v && v.length <= 99) || 'El nombre del rol no puede ser mayor a 100',
+
+            ],
             error: 0,
             errorMsj: [],
             headers: [

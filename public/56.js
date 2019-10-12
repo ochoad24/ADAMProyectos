@@ -110,14 +110,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             search: '',
             isActive: '',
             list: [{
-                src: __webpack_require__(577),
+                src: __webpack_require__(578),
                 price: "$800",
                 mrp: "$1000",
                 name: "US-Polo T-shirt",
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(649),
+                src: __webpack_require__(647),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
@@ -145,7 +145,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 sale: "33%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(620),
+                src: __webpack_require__(619),
                 price: "$280",
                 mrp: "$350",
                 name: "Gray T-Shirt",
@@ -433,21 +433,21 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 577:
+/***/ 578:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product.png?921f475804236cccb1e348d8ea00ae2a";
 
 /***/ }),
 
-/***/ 620:
+/***/ 619:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product7.png?f5f7429df68ef8bee2043875c2bb4586";
 
 /***/ }),
 
-/***/ 649:
+/***/ 647:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product2.png?8d301375df448ee3e714523880e4068a";
