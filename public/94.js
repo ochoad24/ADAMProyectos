@@ -1,12 +1,14 @@
 webpackJsonp([94],{
 
-/***/ 1509:
+/***/ 2340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
 //
@@ -82,618 +84,529 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "modals",
+    name: "Estadistica",
     data: function data() {
         return {
-            stop_close: false
+            search: '',
+            dialog: false,
+            nameRules: [function (v) {
+                return !!v || 'El nombre de la estadistica no puede estar vacio';
+            }, function (v) {
+                return v && v.length <= 19 || 'El nombre de la estadistica no puede ser mayor a 20';
+            }],
+            error: 0,
+            errorMsj: [],
+            headers: [{
+                text: 'Id',
+                align: 'left',
+                value: 'id'
+            }, { text: 'Nombre', value: 'nombre' }],
+            estadisticas: [],
+            editedIndex: -1,
+            editedItem: {
+                id: 0,
+                nombre: ''
+            },
+            defaultItem: {
+                id: 0,
+                nombre: ''
+            }
         };
     },
 
+    computed: {
+        formTitle: function formTitle() {
+            return this.editedIndex === -1 ? 'Nueva Estadistica' : 'Editar Estadistica';
+        }
+    },
+
+    watch: {
+        dialog: function dialog(val) {
+            val || this.close();
+        }
+    },
+
+    created: function created() {
+        this.initialize();
+    },
+
+
     methods: {
-        stop: function stop(e) {
-            if (!this.stop_close) {
-                return e.cancel();
+        validate: function validate() {
+            this.error = 0;
+            this.errorMsj = [];
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+            if (this.errorMsj.length) this.error = 1;
+            return this.error;
+        },
+        initialize: function initialize() {
+            var _this = this;
+
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/Estadistica').then(function (response) {
+                _this.estadisticas = response.data;
+            }).catch(function (errors) {
+                console.log(errors);
+            });
+        },
+        editItem: function editItem(item) {
+            this.editedIndex = this.estadisticas.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+            this.dialog = true;
+        },
+        deleteItem: function deleteItem(item) {
+            var me = this;
+            swal.fire({
+                title: 'Quieres eliminar esta estadistica?',
+                text: "No podras revertir la eliminacion!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, Eliminalo!',
+                cancelButtonText: "Cancelar"
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Estadistica/' + item.id + '/delete').then(function (response) {
+                        me.initialize();
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: response.data,
+                            showConfirmButton: false,
+                            timer: 1500 });
+                    }).catch(function (error) {
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'error',
+                            title: error.response.data.error,
+                            showConfirmButton: true });
+                    });
+                }
+            });
+        },
+        close: function close() {
+            var _this2 = this;
+
+            this.error = 0;
+            this.dialog = false;
+            setTimeout(function () {
+                _this2.editedItem = Object.assign({}, _this2.defaultItem);
+                _this2.editedIndex = -1;
+            }, 300);
+        },
+        save: function save() {
+            var me = this;
+            if (this.validate()) {
+                return;
             }
-        },
-        shown: function shown() {
-            alert("Modal opened");
-        },
-        open_modal: function open_modal() {
-            console.log(this.$refs);
-            this.$refs.modal21.show();
-        },
-        hidden: function hidden() {
-            alert("Modal Hidden");
-        },
-        success: function success() {
-            alert("OK Clicked");
-        },
-        cancel: function cancel() {
-            alert("Close Clicked");
+            if (this.editedIndex > -1) {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'put',
+                    url: '/Estadistica/editar',
+                    data: {
+                        id: this.editedItem.id,
+                        nombre: this.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            } else {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'post',
+                    url: '/Estadistica/nuevo',
+                    data: {
+                        nombre: me.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            }
         }
     }
-
 });
 
 /***/ }),
 
-/***/ 1510:
+/***/ 2341:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c(
-        "b-card",
-        {
-          staticClass: "bg-primary-card",
-          attrs: { header: "Modals", "header-tag": "h4" }
-        },
-        [
-          _c("div", { staticClass: "row" }, [
+  return _c("div", { staticClass: "row user-list" }, [
+    _c(
+      "div",
+      { staticClass: "col-lg-12" },
+      [
+        _c(
+          "b-card",
+          {
+            staticClass: "bg-primary-card",
+            attrs: { header: "Tipo de Actividades", "header-tag": "h4" }
+          },
+          [
             _c(
               "div",
-              { staticClass: "col-lg-12" },
+              { staticClass: "table-responsive" },
               [
                 _c(
-                  "b-card",
-                  { staticClass: "bg-primary-card" },
+                  "v-toolbar",
+                  { attrs: { flat: "", color: "white" } },
                   [
+                    _c("v-text-field", {
+                      attrs: {
+                        "append-icon": "search",
+                        label: "Buscar",
+                        "single-line": "",
+                        "hide-details": ""
+                      },
+                      model: {
+                        value: _vm.search,
+                        callback: function($$v) {
+                          _vm.search = $$v
+                        },
+                        expression: "search"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("v-spacer"),
+                    _vm._v(" "),
                     _c(
-                      "b-btn",
+                      "v-dialog",
                       {
-                        directives: [
+                        attrs: { "max-width": "600px" },
+                        scopedSlots: _vm._u([
                           {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal1",
-                            modifiers: { modal1: true }
+                            key: "activator",
+                            fn: function(ref) {
+                              var on = ref.on
+                              return [
+                                _c(
+                                  "v-btn",
+                                  _vm._g(
+                                    {
+                                      staticClass: "mb-2",
+                                      attrs: { color: "#668c2d", dark: "" }
+                                    },
+                                    on
+                                  ),
+                                  [_vm._v("Nueva Estadistica")]
+                                )
+                              ]
+                            }
                           }
-                        ],
-                        staticClass: "mt-3 mb-3"
-                      },
-                      [_vm._v("Launch demo modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        staticClass: "mt-3 mb-3",
-                        on: { click: _vm.open_modal }
-                      },
-                      [_vm._v("Launch modal with ref")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        ref: "modal1",
-                        attrs: { id: "modal1", title: "Modal" }
-                      },
-                      [_c("h1", [_vm._v("modal")])]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        ref: "modal21",
-                        attrs: { id: "modal21", title: "Modal" }
-                      },
-                      [_c("h1", [_vm._v("modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-12 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  { staticClass: "bg-info-card" },
-                  [
-                    _c("h4", [_vm._v("Stop closing on backdrop click")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal2",
-                            modifiers: { modal2: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Launch demo modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        ref: "modal2",
-                        attrs: {
-                          "no-close-on-backdrop": "",
-                          id: "modal2",
-                          title: "Modal"
+                        ]),
+                        model: {
+                          value: _vm.dialog,
+                          callback: function($$v) {
+                            _vm.dialog = $$v
+                          },
+                          expression: "dialog"
                         }
                       },
-                      [_c("h1", [_vm._v("modal")])]
+                      [
+                        _vm._v(" "),
+                        _c(
+                          "v-card",
+                          [
+                            _c(
+                              "v-toolbar",
+                              { attrs: { dark: "", color: "#668c2d" } },
+                              [
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { icon: "", dark: "" },
+                                    on: {
+                                      click: function($event) {
+                                        _vm.dialog2 = false
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("v-icon", { attrs: { col: "white" } }, [
+                                      _vm._v("clear")
+                                    ])
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("v-toolbar-title", [
+                                  _vm._v("Nueva estadistica")
+                                ])
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-text",
+                              [
+                                _c(
+                                  "v-container",
+                                  { attrs: { "grid-list-md": "" } },
+                                  [
+                                    _c(
+                                      "v-layout",
+                                      { attrs: { wrap: "" } },
+                                      [
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md12: ""
+                                            }
+                                          },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: {
+                                                label:
+                                                  "Nombre de la estadistica",
+                                                maxlength: "20",
+                                                required: "",
+                                                rules: _vm.nameRules,
+                                                counter: 20
+                                              },
+                                              model: {
+                                                value: _vm.editedItem.nombre,
+                                                callback: function($$v) {
+                                                  _vm.$set(
+                                                    _vm.editedItem,
+                                                    "nombre",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "editedItem.nombre"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _vm.error
+                              ? [
+                                  _c("v-divider"),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "text-xs-center" },
+                                    [
+                                      _vm._l(_vm.errorMsj, function(e) {
+                                        return _c("strong", {
+                                          key: e,
+                                          staticClass:
+                                            "red--text text--lighten-1",
+                                          domProps: { textContent: _vm._s(e) }
+                                        })
+                                      }),
+                                      _vm._v(" "),
+                                      _c("br")
+                                    ],
+                                    2
+                                  ),
+                                  _vm._v(" "),
+                                  _c("v-divider")
+                                ]
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c(
+                              "v-card-actions",
+                              [
+                                _c("v-spacer"),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "#668c2d", flat: "" },
+                                    on: { click: _vm.close }
+                                  },
+                                  [_vm._v("Cancelar")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "#668c2d", flat: "" },
+                                    on: { click: _vm.save }
+                                  },
+                                  [_vm._v("Guardar")]
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          2
+                        )
+                      ],
+                      1
                     )
                   ],
                   1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal4",
-                            modifiers: { modal4: true }
-                          }
+                ),
+                _vm._v(" "),
+                _c("v-data-table", {
+                  staticClass: "elevation-1",
+                  attrs: {
+                    headers: _vm.headers,
+                    items: _vm.estadisticas,
+                    search: _vm.search
+                  },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "items",
+                      fn: function(props) {
+                        return [
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.id))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.nombre))
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "td",
+                            { staticClass: "justify-center layout px-0" },
+                            [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-2",
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.editItem(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                edit\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-icon",
+                                {
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.deleteItem(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                delete\n                            "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      }
+                    },
+                    {
+                      key: "no-data",
+                      fn: function() {
+                        return [
+                          _c(
+                            "v-btn",
+                            {
+                              staticClass: "mb-2",
+                              attrs: { color: "#668c2d", dark: "" },
+                              on: { click: _vm.initialize }
+                            },
+                            [_vm._v("Recargar")]
+                          )
                         ]
                       },
-                      [_vm._v("Launch small modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal4",
-                          title: "Small Modal",
-                          size: "sm"
-                        }
-                      },
-                      [_c("h1", [_vm._v("modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal5",
-                            modifiers: { modal5: true }
-                          }
+                      proxy: true
+                    },
+                    {
+                      key: "no-results",
+                      fn: function() {
+                        return [
+                          _c(
+                            "v-alert",
+                            {
+                              attrs: {
+                                value: true,
+                                color: "error",
+                                icon: "warning"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                '\n                            No hay resultados de "' +
+                                  _vm._s(_vm.search) +
+                                  '".\n                        '
+                              )
+                            ]
+                          )
                         ]
                       },
-                      [_vm._v("Launch Normal modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal5",
-                          title: "Normal Modal",
-                          size: "md"
-                        }
-                      },
-                      [_c("h1", [_vm._v("modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal6",
-                            modifiers: { modal6: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Launch Large modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal6",
-                          title: "Large Modal",
-                          size: "lg"
-                        }
-                      },
-                      [_c("h1", [_vm._v("modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c("h4", [_vm._v("Background Primary Modal ")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal8",
-                            modifiers: { modal8: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Primary modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal8",
-                          title: "Priamry Modal",
-                          "header-bg-variant": "primary",
-                          "header-text-variant": "light",
-                          "footer-bg-variant": "primary",
-                          "footer-text-variant": "light",
-                          size: "md"
-                        }
-                      },
-                      [_c("h1", [_vm._v(" Primary modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c("h4", [_vm._v("Background Info Modal ")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal9",
-                            modifiers: { modal9: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Info modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal9",
-                          title: "Info Modal",
-                          "header-bg-variant": "info",
-                          "header-text-variant": "light",
-                          "footer-bg-variant": "info",
-                          "footer-text-variant": "light"
-                        }
-                      },
-                      [_c("h1", [_vm._v(" Info modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c("h4", [_vm._v("Background Warning Modal ")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal10",
-                            modifiers: { modal10: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Warning modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal10",
-                          title: "Warning Modal",
-                          "header-bg-variant": "warning",
-                          "header-text-variant": "light",
-                          "footer-bg-variant": "warning",
-                          "footer-text-variant": "light"
-                        }
-                      },
-                      [_c("h1", [_vm._v(" Warning modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c("h4", [_vm._v("Background Danger Modal ")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal11",
-                            modifiers: { modal11: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Danger Modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal11",
-                          title: "Danger Modal",
-                          "header-bg-variant": "danger",
-                          "header-text-variant": "light",
-                          "footer-bg-variant": "danger",
-                          "footer-text-variant": "light"
-                        }
-                      },
-                      [_c("h1", [_vm._v("Danger modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c("h4", [_vm._v("Background Success Modal ")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal12",
-                            modifiers: { modal12: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Success Modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal12",
-                          title: "Success Modal",
-                          "header-bg-variant": "success",
-                          "header-text-variant": "light",
-                          "footer-bg-variant": "success",
-                          "footer-text-variant": "light"
-                        }
-                      },
-                      [_c("h1", [_vm._v(" Success modal")])]
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-4 mt-3" },
-              [
-                _c(
-                  "b-card",
-                  [
-                    _c("h4", [_vm._v("Background Secondary Modal ")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-btn",
-                      {
-                        directives: [
-                          {
-                            name: "b-modal",
-                            rawName: "v-b-modal.modal13",
-                            modifiers: { modal13: true }
-                          }
-                        ]
-                      },
-                      [_vm._v("Secondary modal")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-modal",
-                      {
-                        attrs: {
-                          id: "modal13",
-                          title: "Deafult Modal",
-                          "header-bg-variant": "secondary",
-                          "header-text-variant": "light",
-                          "footer-bg-variant": "secondary",
-                          "footer-text-variant": "light"
-                        }
-                      },
-                      [_c("h1", [_vm._v("modal")])]
-                    )
-                  ],
-                  1
-                )
+                      proxy: true
+                    }
+                  ])
+                })
               ],
               1
             )
-          ])
-        ]
-      )
-    ],
-    1
-  )
+          ]
+        )
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -701,21 +614,21 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0c978dd7", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-e6fdb9a2", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 458:
+/***/ 552:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(42)
+var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1509)
+var __vue_script__ = __webpack_require__(2340)
 /* template */
-var __vue_template__ = __webpack_require__(1510)
+var __vue_template__ = __webpack_require__(2341)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -732,7 +645,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/advanced_modals.vue"
+Component.options.__file = "resources/components/pages/src/estadistica.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -741,9 +654,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0c978dd7", Component.options)
+    hotAPI.createRecord("data-v-e6fdb9a2", Component.options)
   } else {
-    hotAPI.reload("data-v-0c978dd7", Component.options)
+    hotAPI.reload("data-v-e6fdb9a2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

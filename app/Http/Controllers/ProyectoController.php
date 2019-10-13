@@ -30,6 +30,21 @@ class ProyectoController extends Controller
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $orgs;
     }
+
+    public function proyectoPdf(Request $request) {
+        $proyecto = Proyecto::select(DB::raw('proyectos.IdProyecto, proyectos.Titulo, proyectos.Descripcion, 
+        ((proyectos.actividadesCompletadas * 100) / proyectos.actividades) as completado,
+         proyectos.FechaInicio, proyectos.FechaFin'))
+        ->where('proyectos.IdProyecto', '=', $request->id)->get();
+
+        $actividades = Actividad::select(DB::raw('actividades.id, actividades.actividad, actividades.codigo_actividad, actividades.fechaInicio, actividades.fechaFinal,
+         ((actividades.tareasCompletadas * 100) / actividades.tareas) as completado'))
+        ->where('actividades.idProyecto', '=', $request->id)
+        ->orderBy('actividades.codigo_actividad', 'asc')->get();
+
+        $pdf = \PDF::loadView('pdf.proyecto', ['proyecto' => $proyecto, 'actividades' => $actividades]);
+        return $pdf->stream('reporte-'.$proyecto[0]->Titulo.'.pdf');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -185,7 +200,7 @@ class ProyectoController extends Controller
 
 
     public function selectProject(Request $request) {
-        $proyecto = Proyecto::select('proyectos.IdProyecto', 'proyectos.Titulo', 'proyectos.Descripcion', 'proyectos.FechaInicio', 'proyectos.FechaFin')
+        $proyecto = Proyecto::select('proyectos.IdProyecto', 'proyectos.Titulo', 'proyectos.Descripcion', 'proyectos.FechaInicio', 'proyectos.FechaFin', 'proyectos.actividades', 'proyectos.actividadesCompletadas')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         //join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
         //->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
@@ -194,7 +209,7 @@ class ProyectoController extends Controller
 
     public function selectActividad(Request $request) {
         $actividades = Proyecto::join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
-        ->select('actividades.id', 'actividades.actividad', 'actividades.fechaInicio', 'actividades.fechaFinal', 'actividades.idProyecto')
+        ->select('actividades.id', 'actividades.actividad', 'actividades.codigo_actividad', 'actividades.descripcion', 'actividades.fechaInicio', 'actividades.fechaFinal', 'actividades.idProyecto', 'actividades.tareas', 'actividades.tareasCompletadas')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $actividades;
     }
@@ -202,7 +217,7 @@ class ProyectoController extends Controller
     public function selectTareas(Request $request) {
         $proyecto = Proyecto::join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
         ->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
-        ->select('tarea.id', 'tarea.descripcion', 'tarea.fechaInicio', 'tarea.fechaFinal', 'tarea.idActividad')
+        ->select('tarea.id', 'tarea.tarea', 'tarea.fechaInicio', 'tarea.fechaFinal', 'tarea.idActividad', 'tarea.estado')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $proyecto;
     }

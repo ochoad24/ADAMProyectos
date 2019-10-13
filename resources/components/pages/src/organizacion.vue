@@ -9,19 +9,21 @@
                         </v-text-field>
                         <v-dialog v-model="dialog" persistent max-width="650px">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="primary" dark class="mb-2" v-on="on" @click="editar=0">Agregar
+                                <v-btn dark color="#668c2d" class="mb-2" v-on="on" @click="editar=0">Agregar
                                     Organización</v-btn>
                             </template>
                             <v-card>
-                                <v-card-title>
-                                    <span class="headline">{{ formTitle }}</span>
-                                </v-card-title>
-
+                <v-toolbar dark color="#668c2d">
+                                <v-btn icon dark @click="dialog2 = false">
+                                    <v-icon col="white">clear</v-icon>
+                                </v-btn>
+                                <v-toolbar-title>Nueva Organizacion</v-toolbar-title>
+                            </v-toolbar>
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12>
-                                                <v-text-field v-model="nombre" label="Nombre de la organización">
+                                                <v-text-field v-model="nombre" label="Nombre de la organización" maxlength="150"  required :rules="ornameRules" :counter="150">
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12>
@@ -32,7 +34,7 @@
                                             </v-flex>
                                             <v-flex xs12>
                                                 <v-text-field v-model="municipio"
-                                                    label="Municipio de ubucación de la organización"></v-text-field>
+                                                    label="Municipio de ubucación de la organización" maxlength="150"  required :rules="munnameRules" :counter="150"></v-text-field>
                                             </v-flex>
                                             <v-flex xs12>
                                                 <v-text-field v-model="comunidad" label="Ingrese comunidad">
@@ -54,10 +56,10 @@
 
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" v-if="editar===0" flat @click="registrarOrganizacion">
+                                    <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" v-if="editar===0" flat @click="registrarOrganizacion">
                                         Guardar</v-btn>
-                                    <v-btn color="blue darken-1" v-if="editar===1" flat @click="editarOrganizacion()">
+                                    <v-btn color="#668c2d" v-if="editar===1" flat @click="editarOrganizacion()">
                                         Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -79,7 +81,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -99,6 +101,16 @@
         name: "Organizacion",
         data: () => ({
             dialog: false,
+               ornameRules: [
+            v => !!v || 'El nombre de la organizacion no puede estar vacio',
+            v => (v && v.length <= 149) || 'El titulo del proyecto no puede ser mayor a 150',
+
+            ],
+             munnameRules: [
+            v => !!v || 'El nombre del municipio no puede estar vacio',
+            v => (v && v.length <= 149) || 'El nombre del municipio no puede ser mayor a 150',
+
+            ],
             error: 0,
             select: [],
             errorMsj: [],

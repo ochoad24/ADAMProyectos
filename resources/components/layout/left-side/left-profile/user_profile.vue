@@ -2,32 +2,16 @@
 <div class="nav_profile">
     <div class="media profile-left">
         <a class="float-left profile-thumb" href="javascript:void(0)">
-            <img :src="this.$store.state.user.picture" class="rounded-circle" alt="User Image">
+           
+        
         </a>
         <div class="content-profile">
-            <h4 class="media-heading user_name_max" v-text="this.$store.state.user.name"></h4>
+          
             <ul class="icon-list">
-                <li>
-                    <router-link to="/users_list" title="user" exact>
-                        <i class="ti-user"></i>
-                    </router-link>
-                </li>
-                <li>
-                    <router-link to="/lockscreen" title="lock" exact>
-                        <i class="ti-lock"></i>
-                    </router-link>
-                </li>
-                <li>
-                    <router-link to="/edit_user" title="settings" exact>
-                        <i class="ti-settings"></i>
-                    </router-link>
-                </li>
-                <li>
-                    <router-link to="/login" title="Logout" exact>
-                        <i class="ti-shift-right"></i>
-                    </router-link>
-                </li>
+             
             </ul>
+            <br>
+       <center> <h6 style="color:#668C2D">Gestion de Proyectos</h6></center>
         </div>
     </div>
 </div>

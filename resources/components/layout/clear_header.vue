@@ -5,10 +5,14 @@
             <router-link to="/" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 <!-- <img :src='require("../../img/logo7.png")' alt="logo"/> -->
-                <img :src='require("../../img/logo10.png")' alt="logo" />
+              
+ <!-- <img :src='require("../../img/logo10.png")' alt="logo"/>-->
+            <h1 class="text-white">ADAM</h1>
                 <!-- <h1 class="text-white">ADAM</h1> -->
             </router-link>
+               
             <div class="navbar-collapse">
+               
                 <!-- Sidebar toggle button -->
                 <div class="d-inline">
                     <a href="javascript:void(0)" class="navbar-btn sidebar-toggle" @click="toggle_left" role="button">
@@ -40,9 +44,7 @@
                     
                 </div>
             </div>
-            <div class="nav">
-                <ul class="ul"><h1>{{ this.$store.state.proyecto.nombre }}</h1></ul>
-            </div>
+          
             <!-- <h1 v-text="this.$store.state.proyecto"></h1>  -->
             <!-- <v-flex xs4 sm4 md4>
                 <multiselect v-model="proyecto" :options="proyectos" placeholder="Seleccione un Proyecto" label="nombre" track-by="nombre"></multiselect>
