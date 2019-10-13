@@ -270,21 +270,21 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2
             newrole: '',
             contacts: [{
                 name: 'Jon',
-                img: __webpack_require__(565),
+                img: __webpack_require__(567),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Doe',
-                img: __webpack_require__(566),
+                img: __webpack_require__(565),
                 email: 'doe@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Addison',
-                img: __webpack_require__(567),
+                img: __webpack_require__(566),
                 email: 'addison@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
@@ -298,7 +298,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2
                 location: 'Hyderabad'
             }, {
                 name: 'Doe',
-                img: __webpack_require__(565),
+                img: __webpack_require__(567),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
@@ -457,7 +457,7 @@ var render = function() {
                             staticClass:
                               "contact-profile d-inline-block rounded-circle",
                             attrs: {
-                              src: __webpack_require__(565),
+                              src: __webpack_require__(567),
                               alt: "user profile"
                             }
                           }),
@@ -1116,21 +1116,21 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 /***/ 565:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
 /***/ 566:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
 /***/ 567:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 

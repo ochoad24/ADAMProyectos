@@ -1,6 +1,9 @@
 <template>
     <div>
+        <center> <h1 style="color:#668c2d">proyecto   {{ this.proyecto.id }}</h1></center>
+        
         <v-layout row>
+           
             <v-flex>
                 <v-card v-if="!gantt">
                     <gantt-elastic

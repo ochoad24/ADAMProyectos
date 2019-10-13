@@ -71,11 +71,7 @@
                                 <i class="fa fa-fw ti-user"></i> My Profile
                             </router-link>
                         </b-dropdown-item>
-                        <b-dropdown-item>
-                            <router-link to="/edit_user" exact>
-                                <i class="fa fa-fw ti-settings"></i> Account Settings
-                            </router-link>
-                        </b-dropdown-item>
+                      
                         <!-- Menu Footer-->
                         <b-dropdown-item class="dropdown-footer">
                             <div class="float-left">

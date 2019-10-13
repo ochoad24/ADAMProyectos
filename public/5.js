@@ -36,6 +36,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
 
 
 
@@ -348,6 +351,12 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("center", [
+        _c("h1", { staticStyle: { color: "#668c2d" } }, [
+          _vm._v("proyecto   " + _vm._s(this.proyecto.id))
+        ])
+      ]),
+      _vm._v(" "),
       _c(
         "v-layout",
         { attrs: { row: "" } },

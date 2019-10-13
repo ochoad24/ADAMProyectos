@@ -1868,7 +1868,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(565),
+                    src: __webpack_require__(567),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1908,7 +1908,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(566),
+                    src: __webpack_require__(565),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1928,7 +1928,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(567),
+                    src: __webpack_require__(566),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -1968,7 +1968,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "rounded-circle float-right",
                   attrs: {
-                    src: __webpack_require__(566),
+                    src: __webpack_require__(565),
                     height: "36",
                     width: "36",
                     alt: "avatar-image"
@@ -14293,21 +14293,21 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 /***/ 565:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
 /***/ 566:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
 /***/ 567:
 /***/ (function(module, exports) {
 
-module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
+module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 

@@ -131,7 +131,7 @@ exports.push([module.i, "\n@media(max-width: 320px){\n.message_dropdown .dropdow
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuetify_dist_vuetify_min_css__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuetify_dist_vuetify_min_css__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuetify_dist_vuetify_min_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_layout_clear_header__ = __webpack_require__(1136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_layout_clear_header___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_layout_clear_header__);
@@ -321,10 +321,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(219);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-//
-//
-//
-//
 //
 //
 //
@@ -704,23 +700,6 @@ var render = function() {
                           [
                             _c("i", { staticClass: "fa fa-fw ti-user" }),
                             _vm._v(" My Profile\n                           ")
-                          ]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-dropdown-item",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: "/edit_user", exact: "" } },
-                          [
-                            _c("i", { staticClass: "fa fa-fw ti-settings" }),
-                            _vm._v(
-                              " Account Settings\n                           "
-                            )
                           ]
                         )
                       ],
@@ -2354,7 +2333,7 @@ var render = function() {
                                   _c("img", {
                                     staticClass: "rounded-circle float-right",
                                     attrs: {
-                                      src: __webpack_require__(566),
+                                      src: __webpack_require__(565),
                                       alt: "avatar-image"
                                     }
                                   }),
@@ -2385,7 +2364,7 @@ var render = function() {
                                   _c("img", {
                                     staticClass: "rounded-circle float-right",
                                     attrs: {
-                                      src: __webpack_require__(567),
+                                      src: __webpack_require__(566),
                                       alt: "avatar-image"
                                     }
                                   }),
@@ -2923,14 +2902,14 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 566:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 567:
+/***/ 566:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";

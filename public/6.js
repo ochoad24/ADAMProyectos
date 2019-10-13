@@ -885,7 +885,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "full",
                       attrs: {
-                        src: __webpack_require__(566),
+                        src: __webpack_require__(565),
                         alt: "2"
                       }
                     })
@@ -895,7 +895,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "full",
                       attrs: {
-                        src: __webpack_require__(567),
+                        src: __webpack_require__(566),
                         alt: "2"
                       }
                     })
@@ -1418,7 +1418,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             images: [__webpack_require__(681), __webpack_require__(682), __webpack_require__(839)],
             profile_name: ['Clinton Leo', 'Tony', 'Jenny Kerry'],
-            profile_pic: [__webpack_require__(691), __webpack_require__(564), __webpack_require__(566)],
+            profile_pic: [__webpack_require__(691), __webpack_require__(564), __webpack_require__(565)],
             desig: ['Designer,', 'Editor,', 'Tester,'],
             desigtag: ['Team Lead.', 'Manager.', 'Trainee.'],
             currentNumber: 0
@@ -25503,14 +25503,14 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 566:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 567:
+/***/ 566:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";

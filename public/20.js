@@ -897,7 +897,7 @@ var render = function() {
             _c("img", {
               staticClass: "thumb-lg rounded-circle img-thumbnail",
               attrs: {
-                src: __webpack_require__(566),
+                src: __webpack_require__(565),
                 alt: "img",
                 height: "95",
                 width: "95"
@@ -949,7 +949,7 @@ var render = function() {
           _c("div", { staticClass: "card-header text-center" }, [
             _c("img", {
               staticClass: "thumb-lg img-thumbnail rounded-circle",
-              attrs: { src: __webpack_require__(567), alt: "" }
+              attrs: { src: __webpack_require__(566), alt: "" }
             }),
             _vm._v(" "),
             _vm._m(11)
@@ -1552,14 +1552,14 @@ module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 566:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 567:
+/***/ 566:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
