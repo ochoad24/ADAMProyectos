@@ -50,6 +50,9 @@
                         <vmenu-item link="/Estadistica" icon="fa fa-fw fa-paste" v-if="this.$store.state.user.role==0">
                             Estadisticas
                         </vmenu-item>
+                        <vmenu-item link="/Estadistica" icon="fa fa-fw fa-gear">
+                            Usuario
+                        </vmenu-item>
                     </vsub-menu>
                 </vmenu>
                 <!-- / .navigation -->

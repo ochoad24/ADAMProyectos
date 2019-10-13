@@ -1,9 +1,12 @@
 <?php
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Auth;
 use Validator;
 use App\Models\User;
+
+use Mail;
 
 use Hash;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
@@ -13,6 +16,10 @@ use Illuminate\Auth\Events\PasswordReset;
 
 class AuthController extends Controller
 {
+    use SendsPasswordResetEmails, ResetsPasswords {
+        SendsPasswordResetEmails::broker insteadof ResetsPasswords;
+        ResetsPasswords::credentials insteadof SendsPasswordResetEmails;
+    }
     /**
      * Register a new user
      */
@@ -113,7 +120,7 @@ class AuthController extends Controller
     protected function sendResetLinkResponse(Request $request, $response)
     {
         return response()->json([
-            'message' => 'Password reset email sent.',
+            'message' => 'Se ha enviado el correo electrónico de restablecimiento de contraseña.',
             'data' => $response
         ]);
     }
@@ -127,7 +134,7 @@ class AuthController extends Controller
      */
     protected function sendResetLinkFailedResponse(Request $request, $response)
     {
-        return response()->json(['message' => 'Email could not be sent to this email address.']);
+        return response()->json(['message' => 'No se pudo enviar el correo electrónico a esta dirección de correo electrónico.']);
     }
 
     /**
@@ -161,7 +168,7 @@ class AuthController extends Controller
      */
     protected function sendResetResponse(Request $request, $response)
     {
-        return response()->json(['message' => 'Password reset successfully.']);
+        return response()->json(['message' => 'Restablecimiento de contraseña exitosamente.']);
     }
 
     /**
@@ -173,7 +180,13 @@ class AuthController extends Controller
      */
     protected function sendResetFailedResponse(Request $request, $response)
     {
-        return response()->json(['message' => 'Failed, Invalid Token.']);
+        return response()->json(['message' => 'Fallido, Token inválido.']);
     }
-    
+    // public function SendMail(){
+    //     $data = array('url'=>"http://adam.org.gt/wp-content/uploads/2015/09/logo-header.jpg");
+    //     Mail::send('mails.mail', $data, function($message){
+    //         $message->from('ochoad24@gmail.com', 'Daniel Ochoa');
+    //         $message->to("ochoad24@outlook.com")->subject("Daniel Ochoa");
+    //     });
+    // }
 }

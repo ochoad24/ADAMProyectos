@@ -1,12 +1,12 @@
 webpackJsonp([52],{
 
-/***/ 2348:
+/***/ 2347:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2349);
+var content = __webpack_require__(2348);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2349:
+/***/ 2348:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "/*!\r\n * BootstrapValidator (http://bootstrapvalidator
 
 /***/ }),
 
-/***/ 2350:
+/***/ 2349:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2351);
+var content = __webpack_require__(2350);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2351:
+/***/ 2350:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General 
 
 /***/ }),
 
-/***/ 2352:
+/***/ 2351:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2353);
+var content = __webpack_require__(2352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2353:
+/***/ 2352:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -126,7 +126,7 @@ exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 6.5%;\n  
 
 /***/ }),
 
-/***/ 2354:
+/***/ 2353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -256,7 +256,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
                         Usuario.name = this.$auth.user().nombre + ' ' + this.$auth.user().apellido;
                         Usuario.job = this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
                         Usuario.role = this.$auth.user().role;
-
+                        Usuario.id = this.$auth.user().id;
                         this.$store.commit('changeUser', Usuario);
                         console.log(Usuario);
                         window.location.href = "/#/";
@@ -277,7 +277,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 /***/ }),
 
-/***/ 2355:
+/***/ 2354:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -293,7 +293,7 @@ var render = function() {
           [
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
-                attrs: { src: __webpack_require__(2356), alt: "Logo" }
+                attrs: { src: __webpack_require__(651), alt: "Logo" }
               })
             ]),
             _vm._v(" "),
@@ -575,28 +575,21 @@ if (false) {
 
 /***/ }),
 
-/***/ 2356:
-/***/ (function(module, exports) {
-
-module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
-
-/***/ }),
-
 /***/ 555:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2348)
-  __webpack_require__(2350)
-  __webpack_require__(2352)
+  __webpack_require__(2347)
+  __webpack_require__(2349)
+  __webpack_require__(2351)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2354)
+var __vue_script__ = __webpack_require__(2353)
 /* template */
-var __vue_template__ = __webpack_require__(2355)
+var __vue_template__ = __webpack_require__(2354)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1982,6 +1975,13 @@ var options = {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (options);
+
+/***/ }),
+
+/***/ 651:
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
 
 /***/ })
 

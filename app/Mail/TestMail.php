@@ -10,7 +10,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
-
+    public $name = 'Daniel Ochoa';
     /**
      * Create a new message instance.
      *
@@ -18,7 +18,7 @@ class TestMail extends Mailable
      */
     public function __construct()
     {
-        //
+        $this->name='Daniel Ochoa';
     }
 
     /**
@@ -28,6 +28,18 @@ class TestMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        $address = 'ochoad24@gmail.com';
+        $name = 'Sistema';
+        $subject = 'Recuperacion Contraseña';
+        return $this->view('mails.mail')
+            ->from($address, $name)
+            ->cc($address, $name)
+            ->bcc($address, $name)
+            ->replyTo($address, $name)
+            ->subject($subject)
+            ->with([
+            'CustomOption' => 'CustomValue',
+            'CustomOption' => 'CustomValue'
+            ]);
     }
 }

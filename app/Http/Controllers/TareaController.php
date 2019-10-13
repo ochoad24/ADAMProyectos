@@ -23,7 +23,14 @@ class TareaController extends Controller
         return Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
         ->where('tarea.idActividad',$actividad)->get();
     }
+    public function select($usuario){
+
+        return Tarea::join('encargado','encargado.idTarea','=','tarea.id')->where('encargado.idEmpleado',$usuario)
+        ->select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion','encargado.estado as Permiso')
+        ->get();
+    }
     public function store(Request $request){
+        $comprobacion=false;
         try{
             DB::beginTransaction();
             for ($i=0; $i < $request->numero; $i++) { 
@@ -41,11 +48,18 @@ class TareaController extends Controller
                     $estadistica->valor=-1;
                     $estadistica->save();
                 }
+
+                if(count((array)$request->usuarios)>1)
+                    $comprobacion=true;
+
                 foreach($request->usuarios as $item){
                     $estadistica=new Encargado;
                     $estadistica->idTarea=$tarea->id;
                     $estadistica->idEmpleado=$item['id'];
-                    $estadistica->estado=$item['estado'];
+                    if($comprobacion==true)
+                        $estadistica->estado=$item['estado'];
+                    else
+                        $estadistica->estado=1;
                     $estadistica->save();
                 }
             }
@@ -140,6 +154,46 @@ class TareaController extends Controller
             $tarea=Tarea::where('id',$task)->delete();
             DB::commit();
             return 'Se ha eliminado la tarea correctamente';
+        }catch(\Exception $e){
+            DB::rollback();
+            $response['error'] = $e->getMessage();
+            return response()->json($response, 500);
+        }
+    }
+    public function cancelReport($tarea){
+        $ruta = public_path().'/uploads/';
+        try{
+            DB::beginTransaction();
+            $reporte=Tarea::findOrFail($tarea);
+            $reporte->descripcion=NULL;
+            $reporte->estado=0;
+            $reporte->fechaRealizacion=NULL;
+            $reporte->participantes=NULL;
+            $reporte->save();
+
+            $actividad = Actividad::findOrFail($reporte->idActividad); 
+            $actividad->tareasCompletadas = $actividad->tareasCompletadas - 1;
+            $actividad->tareasPendientes = $actividad->tareasPendientes + 1;
+            $actividad->save();
+
+            $proyecto = Proyecto::findOrFail($actividad->idProyecto);
+            if($actividad->tareasCompletadas == $actividad->tareas) {
+                $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas - 1;
+                $proyecto->actividadesPendientes = $proyecto->actividadesPendientes + 1;
+                $proyecto->save();
+            }
+            $esta=Estadistica::where('idTarea',$tarea)->get();
+            foreach($esta as $estadistica){
+                $estadistica->valor=-1;
+                $estadistica->save();
+            }
+            $fotos=Foto::where('idTarea',$tarea)->get();
+            foreach($fotos as $foto){
+                unlink($ruta.$foto->ruta);
+                $foto->delete();
+            }
+            DB::commit();
+            return 'Se ha cancelado su reporte con exito';   
         }catch(\Exception $e){
             DB::rollback();
             $response['error'] = $e->getMessage();

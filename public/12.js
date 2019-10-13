@@ -1,12 +1,12 @@
 webpackJsonp([12],{
 
-/***/ 1615:
+/***/ 1614:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1616);
+var content = __webpack_require__(1615);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1616:
+/***/ 1615:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,12 +42,12 @@ exports.push([module.i, "\n.listjs table td, table th {\n    padding:5px;\n}\n.l
 
 /***/ }),
 
-/***/ 1617:
+/***/ 1616:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_list_js__ = __webpack_require__(848);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_list_js__ = __webpack_require__(847);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_list_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_list_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue__ = __webpack_require__(563);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__card_card_vue__);
@@ -387,7 +387,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1618:
+/***/ 1617:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -519,7 +519,7 @@ module.exports = naturalCompare;
 
 /***/ }),
 
-/***/ 1619:
+/***/ 1618:
 /***/ (function(module, exports) {
 
 /**
@@ -552,7 +552,7 @@ module.exports = function(el, attr) {
 
 /***/ }),
 
-/***/ 1620:
+/***/ 1619:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -575,12 +575,12 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1621:
+/***/ 1620:
 /***/ (function(module, exports, __webpack_require__) {
 
-var classes = __webpack_require__(719),
-  events = __webpack_require__(718),
-  List = __webpack_require__(848);
+var classes = __webpack_require__(720),
+  events = __webpack_require__(719),
+  List = __webpack_require__(847);
 
 module.exports = function(list) {
 
@@ -675,12 +675,12 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1622:
+/***/ 1621:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function(list) {
 
-  var Item = __webpack_require__(854)(list);
+  var Item = __webpack_require__(853)(list);
 
   var getChildren = function(parent) {
     var nodes = parent.childNodes,
@@ -729,7 +729,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1623:
+/***/ 1622:
 /***/ (function(module, exports) {
 
 var Templater = function(list) {
@@ -910,7 +910,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1624:
+/***/ 1623:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1037,7 +1037,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1625:
+/***/ 1624:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1073,7 +1073,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1626:
+/***/ 1625:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1186,16 +1186,16 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1627:
+/***/ 1626:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var classes = __webpack_require__(719),
-  events = __webpack_require__(718),
-  extend = __webpack_require__(850),
-  toString = __webpack_require__(853),
-  getByClass = __webpack_require__(849),
-  fuzzy = __webpack_require__(1628);
+var classes = __webpack_require__(720),
+  events = __webpack_require__(719),
+  extend = __webpack_require__(849),
+  toString = __webpack_require__(852),
+  getByClass = __webpack_require__(848),
+  fuzzy = __webpack_require__(1627);
 
 module.exports = function(list, options) {
   options = options || {};
@@ -1260,7 +1260,7 @@ module.exports = function(list, options) {
 
 /***/ }),
 
-/***/ 1628:
+/***/ 1627:
 /***/ (function(module, exports) {
 
 module.exports = function(text, pattern, options) {
@@ -1390,7 +1390,7 @@ module.exports = function(text, pattern, options) {
 
 /***/ }),
 
-/***/ 1629:
+/***/ 1628:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2093,13 +2093,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1615)
+  __webpack_require__(1614)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1617)
+var __vue_script__ = __webpack_require__(1616)
 /* template */
-var __vue_template__ = __webpack_require__(1629)
+var __vue_template__ = __webpack_require__(1628)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12740,13 +12740,13 @@ module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 718:
+/***/ 719:
 /***/ (function(module, exports, __webpack_require__) {
 
 var bind = window.addEventListener ? 'addEventListener' : 'attachEvent',
     unbind = window.removeEventListener ? 'removeEventListener' : 'detachEvent',
     prefix = bind !== 'addEventListener' ? 'on' : '',
-    toArray = __webpack_require__(852);
+    toArray = __webpack_require__(851);
 
 /**
  * Bind `el` event `type` to `fn`.
@@ -12785,14 +12785,14 @@ exports.unbind = function(el, type, fn, capture){
 
 /***/ }),
 
-/***/ 719:
+/***/ 720:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Module dependencies.
  */
 
-var index = __webpack_require__(851);
+var index = __webpack_require__(850);
 
 /**
  * Whitespace regexp.
@@ -12956,26 +12956,26 @@ ClassList.prototype.contains = function(name){
 
 /***/ }),
 
-/***/ 848:
+/***/ 847:
 /***/ (function(module, exports, __webpack_require__) {
 
-var naturalSort = __webpack_require__(1618),
-  getByClass = __webpack_require__(849),
-  extend = __webpack_require__(850),
-  indexOf = __webpack_require__(851),
-  events = __webpack_require__(718),
-  toString = __webpack_require__(853),
-  classes = __webpack_require__(719),
-  getAttribute = __webpack_require__(1619),
-  toArray = __webpack_require__(852);
+var naturalSort = __webpack_require__(1617),
+  getByClass = __webpack_require__(848),
+  extend = __webpack_require__(849),
+  indexOf = __webpack_require__(850),
+  events = __webpack_require__(719),
+  toString = __webpack_require__(852),
+  classes = __webpack_require__(720),
+  getAttribute = __webpack_require__(1618),
+  toArray = __webpack_require__(851);
 
 module.exports = function(id, options, values) {
 
   var self = this,
     init,
-    Item = __webpack_require__(854)(self),
-    addAsync = __webpack_require__(1620)(self),
-    initPagination = __webpack_require__(1621)(self);
+    Item = __webpack_require__(853)(self),
+    addAsync = __webpack_require__(1619)(self),
+    initPagination = __webpack_require__(1620)(self);
 
   init = {
     start: function() {
@@ -13010,12 +13010,12 @@ module.exports = function(id, options, values) {
       if (!self.listContainer) { return; }
       self.list       = getByClass(self.listContainer, self.listClass, true);
 
-      self.parse        = __webpack_require__(1622)(self);
-      self.templater    = __webpack_require__(1623)(self);
-      self.search       = __webpack_require__(1624)(self);
-      self.filter       = __webpack_require__(1625)(self);
-      self.sort         = __webpack_require__(1626)(self);
-      self.fuzzySearch  = __webpack_require__(1627)(self, options.fuzzySearch);
+      self.parse        = __webpack_require__(1621)(self);
+      self.templater    = __webpack_require__(1622)(self);
+      self.search       = __webpack_require__(1623)(self);
+      self.filter       = __webpack_require__(1624)(self);
+      self.sort         = __webpack_require__(1625)(self);
+      self.fuzzySearch  = __webpack_require__(1626)(self, options.fuzzySearch);
 
       this.handlers();
       this.items();
@@ -13225,7 +13225,7 @@ module.exports = function(id, options, values) {
 
 /***/ }),
 
-/***/ 849:
+/***/ 848:
 /***/ (function(module, exports) {
 
 /**
@@ -13295,7 +13295,7 @@ module.exports = (function() {
 
 /***/ }),
 
-/***/ 850:
+/***/ 849:
 /***/ (function(module, exports) {
 
 /*
@@ -13320,7 +13320,7 @@ module.exports = function extend (object) {
 
 /***/ }),
 
-/***/ 851:
+/***/ 850:
 /***/ (function(module, exports) {
 
 var indexOf = [].indexOf;
@@ -13336,7 +13336,7 @@ module.exports = function(arr, obj){
 
 /***/ }),
 
-/***/ 852:
+/***/ 851:
 /***/ (function(module, exports) {
 
 /**
@@ -13376,7 +13376,7 @@ function isArray(arr) {
 
 /***/ }),
 
-/***/ 853:
+/***/ 852:
 /***/ (function(module, exports) {
 
 module.exports = function(s) {
@@ -13389,7 +13389,7 @@ module.exports = function(s) {
 
 /***/ }),
 
-/***/ 854:
+/***/ 853:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {

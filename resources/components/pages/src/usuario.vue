@@ -30,14 +30,6 @@
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
-                                                <v-text-field v-model="editedItem.contrasena" label="Contraseña"
-                                                    :type="'password'"></v-text-field>
-                                            </v-flex>
-                                            <v-flex xs12 sm6 md6>
-                                                <v-text-field v-model="editedItem.repetir" label="Repetir contraseña"
-                                                    :type="'password'"></v-text-field>
-                                            </v-flex>
-                                            <v-flex xs12 sm6 md6>
                                                 <v-select :items="roles" label="Seleccione un Rol" v-model="idRol"></v-select>
                                             </v-flex>
                                         </v-layout>
@@ -118,7 +110,6 @@
                 apellido: '',
                 usuario: '',
                 rol: 0,
-                contrasena: ''
             },
             defaultItem: {
                 id: 0,
@@ -126,7 +117,6 @@
                 apellido: '',
                 usuario: '',
                 rol: 0,
-                contrasena: ''
             },
             roles:[
                 {
@@ -134,7 +124,7 @@
                     value:0
                 },
                 {
-                    text:'Técnio',
+                    text:'Técnico',
                     value:1
                 }]
         }),
@@ -165,12 +155,6 @@
 
                 if (!this.editedItem.nombre)
                     this.errorMsj.push('El correo no puede estar vacio');
-
-                if (this.editedItem.contrasena != this.repetir)
-                    this.errorMsj.push('Las contraseñas deben ser iguales');
-
-                if (!this.editedItem.contrasena)
-                    this.errorMsj.push('La contraseña no puede estar vacia');
 
                 if (!this.idRol)
                     this.errorMsj.push('Se debe asignar un rol al usuario');
@@ -239,7 +223,6 @@
                         nombre: me.editedItem.nombre,
                         apellido: me.editedItem.apellido,
                         email: me.editedItem.usuario,
-                        password: me.editedItem.contrasena,
                         role: me.idRol
                     }
                 }).then(function (response) {
@@ -257,8 +240,8 @@
                     swal.fire({
                         position: 'top-end',
                         type: 'error',
-                        title: errose.data.error,
-                        showConfirmButton: r.respontrue
+                        title: error.response.data.error,
+                        showConfirmButton: true
                     });
                     me.initialize();
                     me.close();

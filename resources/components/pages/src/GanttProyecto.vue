@@ -1,23 +1,6 @@
 <template>
     <div>
         <v-layout row>
-            <v-flex xs12 sm12>
-                <v-card>
-                    <v-img
-                    src="/assets/images/ver.jpg"
-                    height="200px"
-                    >
-                    </v-img>
-
-                    <v-card-title primary-title>
-                        <div>
-                            <div class="headline">Proyecto {{ titulo }}</div>
-                        </div>
-                    </v-card-title>
-                </v-card>
-            </v-flex>   
-        </v-layout>
-        <v-layout row>
             <v-flex>
                 <v-card v-if="!gantt">
                     <gantt-elastic
@@ -28,14 +11,6 @@
                     >
                         <gantt-header slot="header"></gantt-header>
                     </gantt-elastic>
-                    <v-btn
-                        color="blue-grey"
-                        class="white--text"
-                        @click="addTask"
-                    >
-                        Add Task
-                        <v-icon right dark>add</v-icon>
-                    </v-btn>
                 </v-card>
             </v-flex>
         </v-layout>
@@ -220,6 +195,7 @@
         // },
         mounted() {
             this.proyecto=this.$store.state.proyecto;
+            console.log(this.proyecto);
             this.initialize();
         },
         methods: {
@@ -230,7 +206,6 @@
                 axios.get(`/proyecto/selectproject?id=${this.proyecto.id}`)
                 .then(function (response) {
                     me.project = response.data;
-                    console.log(response.data);
                     me.cargarActividades(me.proyecto.id);
                 })
                 .catch(function (error) {
@@ -272,26 +247,38 @@
                 let me = this;
                 array1.forEach((item) => {
                     let task = new Object();
+                    let per = 0;
+                    if(item.actividadesCompletadas === 0) {
+                        per = 0;
+                    } else {
+                        per = ((item.actividadesCompletadas * 100) / item.actividades); 
+                    }
                     task.id = 100;
                     task.label = item.Titulo;
                     me.titulo = item.Titulo;
-                    task.user = '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>';
+                    task.user = item.Descripcion;
                     task.start = Date.parse(item.FechaInicio);
                     task.end = Date.parse(item.FechaFin);
-                    task.percent = 10;
+                    task.percent = per;
                     task.type = "project";
                     me.tasks.splice(0, 1, task);
                 });
                 this.gantt = false;
                 array2.forEach((item) => {
                     let task = new Object();
+                    let per = 0;
+                    if(item.tareasCompletadas === 0) {
+                        per = 0;
+                    } else {
+                        per = ((item.tareasCompletadas * 100) / item.tareas);
+                    }
                     task.parentId = 100;
                     task.id = item.id;
-                    task.label = item.actividad;
-                    task.user = '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>';
+                    task.label = item.codigo_actividad + ' - ' + item.actividad;
+                    task.user = item.descripcion;
                     task.start = Date.parse(item.fechaInicio);
                     task.end = Date.parse(item.fechaFinal);
-                    task.percent = 50;
+                    task.percent = per;
                     task.type = "task";
                     task.dependentOn = [100];
                     task.style = {
@@ -304,12 +291,18 @@
                 });
                 array3.forEach((item) => {
                     let task = new Object();
+                    let per = 0;
+                    if(item.estado === 0) {
+                        per = 0;
+                    } else {
+                        per = 100;
+                    }
                     task.id = me.lastId++;
-                    task.label = item.descripcion;
-                    task.user = '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>';
+                    task.label = item.tarea;
+                    task.user = '<a style="color:#0077c0;">Tarea</a>';
                     task.start = Date.parse(item.fechaInicio);
                     task.end = Date.parse(item.fechaFinal);
-                    task.percent = 50;
+                    task.percent = per;
                     task.type = "milestone";
                     task.dependentOn = [item.idActividad];
                     task.parentId = item.idActividad;
@@ -320,20 +313,6 @@
                         }
                     };
                     me.tasks.push(task);
-                });
-            },
-            addTask() {
-                let me = this;
-                this.tasks.push({
-                    id: this.lastId++,
-                    label:
-                    '<a href="https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" target="_blank" style="color:#0077c0;">Yeaahh! you have added a task bro!</a>',
-                    user:
-                    '<a href="https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" target="_blank" style="color:#0077c0;">Awesome!</a>',
-                    start: getDate(24 * 3),
-                    duration: 1 * 24 * 60 * 60 * 1000,
-                    percent: 50,
-                    type: "project"
                 });
             },
             tasksUpdate(tasks) {

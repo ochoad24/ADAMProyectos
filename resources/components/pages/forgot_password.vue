@@ -4,26 +4,31 @@
             <div class="row">
                 <div class="col-lg-4 col-10 col-sm-6 m-auto  box animated fadeInUp">
                     <div class="text-center ">
-                        <img :src='require("../../img/logo.png")' class="img-fluid" alt="Clear logo">
+                        <img :src='require("../../img/logo8.png")' class="img-fluid" alt="Clear logo" @click="redireccionar">
                     </div>
-                    <h3 class="text-center">Forgot Password
+                    <h3 class="text-center">Se te olvidó tu contraseña
                     </h3>
                     <p class="text-center enter_email">
-                        Enter your Registered email
+                        Ingrese su correo electrónico registrado
                     </p>
-                    <p class="text-center check_email hidden">
-                        Check your email for Reset link
-                        <br><br>
-                        <u><a href="javascript:void(0)" class="reset-link">Resend the link</a></u>
-                    </p>
-                    <form  class="forgot_Form text-center" method="POST" id="forgot_password">
+                    <form class="forgot_Form text-center" method="POST" @submit.prevent="requestResetPassword"
+                        autocomplete="off">
                         <div class="form-group">
-                            <input type="email" class="form-control email pl-3" name="email" id="email" placeholder="Email">
+                            <input type="email" class="form-control email pl-3" v-model="email" id="email" required>
                         </div>
-                        <button type="submit" value="Reset Your Password" class="btn submit-btn">
-                            Retrieve Password
-                        </button>
+                        <!-- <v-btn class="ma-2" :loading="loading" :disabled="loading" color="success"
+                            @click="loader = 'loading'">
+                            Recuperar Contraseña
+                        </v-btn> -->
+                        <v-btn class="ma-2" :loading="loading" :disabled="loading" color="success"
+                            type="submit">
+                            Recuperar Contraseña
+                        </v-btn>
+                        <v-btn class="ma-2" color="warning" @click="redireccionar">
+                            Regresar
+                        </v-btn>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -32,49 +37,121 @@
 </template>
 <script>
     import magnify from "bootstrap-magnify/js/bootstrap-magnify.min.js"
+    import sweet from 'sweetalert2'
     export default {
         name: "image_magnifier",
-        mounted: function() {
-            "use strict"
-            $(document).ready(function () {
-
-
-                var input_field = $("input[name=email]");
-
-                $('button[type="submit"]').on('click', function (e) {
-                    e.preventDefault();
-
-                    if (input_field.val() != "") {
-                        $(".enter_email").addClass("hidden");
-                        $(".check_email").removeClass("hidden");
-                        $('#email, .signup-signin').addClass('hidden');
-                        $('.submit-btn').addClass('animated fadeInUp');
-                        $('button[type="submit"]').html("Reset Password")
-                            .removeClass("btn-primary btn-block")
-                            .addClass("btn-success").on('click', function () {
-                            window.location.href = '#/reset_password';
-                        });
-                    } else {
-                        var error_msg = "<p>Sorry, Enter Your Registered email</p>";
-                        $(".enter_email").addClass("err-text animated fadeInUp").html(error_msg);
-                    }
-
-                });
-
-                $("#email").on('keypress focus', function () {
-                    var element = 'Enter your Registered email';
-                    $(".enter_email").removeClass("text-danger animated fadeInUp").html(element);
-                });
-
-
-            });
-
-
+        data() {
+            return {
+                email: null,
+                has_error: false,
+                loader: null,
+                loading: false
+            }
         },
-        destroyed: function() {
+        watch: {
+            // loader() {
+            //     const l = this.loader
+            //     this[l] = !this[l]
+            //     this.$http.post("/auth/reset-password", { email: this.email }).then(result => {
+            //             this.response = result.data;
+            //             this[l] = false
+            //             swal.fire({
+            //                 position: 'center',
+            //                 type: 'success',
+            //                 title: result.data.message,
+            //                 showConfirmButton: false,
+            //                 timer: 3000
+            //             });
 
+            //             // console.log(result.data);
+            //         }, error => {
+            //             // console.error(error);
+            //             swal.fire({
+            //                 position: 'center',
+            //                 type: 'error',
+            //                 title: 'Algo paso mal vuelva a intentarlo',
+            //                 showConfirmButton: r.respontrue
+            //             });
+            //         });
+            //     this.loader = null;
+            //     this.loading=false;
+            // },
+        },
+        methods: {
+            requestResetPassword() {
+                this.loader = 'loading';
+                this.loading=true;
+                this.$http.post("/auth/reset-password", { email: this.email }).then(result => {
+                    this.response = result.data;
+                    console.log(result.data);
+                    swal.fire({
+                        position: 'center',
+                        type: 'success',
+                        title: result.data.message,
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+                    this.loader=null;
+                    this.loading=false;
+                    window.location.href="/#/";
+                }, error => {
+                    swal.fire({
+                        position: 'center',
+                        type: 'error',
+                        title: 'Algo paso mal vuelva a intentarlo',
+                        showConfirmButton: r.respontrue
+                    });
+                });
+            },
+            redireccionar(){
+                window.location.href="/#/";
+            }
         }
     }
 </script>
-<style src="../../css/custom_css/forgot_password.css"></style>
+<style>
+    .custom-loader {
+        animation: loader 1s infinite;
+        display: flex;
+    }
 
+    @-moz-keyframes loader {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes loader {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @-o-keyframes loader {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes loader {
+        from {
+            transform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>

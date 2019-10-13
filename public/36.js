@@ -1,12 +1,12 @@
 webpackJsonp([36],{
 
-/***/ 1820:
+/***/ 1819:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1821);
+var content = __webpack_require__(1820);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1821:
+/***/ 1820:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.nvd3 .nv-axis line,.nvd3 .nv-axis path{fill:none;sha
 
 /***/ }),
 
-/***/ 1822:
+/***/ 1821:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1823);
+var content = __webpack_require__(1822);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1823:
+/***/ 1822:
 /***/ (function(module, exports, __webpack_require__) {
 
 var escape = __webpack_require__(29);
@@ -78,21 +78,21 @@ exports = module.exports = __webpack_require__(18)(false);
 
 
 // module
-exports.push([module.i, "\n#chart1 svg,\n#chart2 svg,\n#chart3 svg,\n#chart4 svg {\n    height : 300px;\n}\n#chart5 svg,\n#chart6 svg,\n#chart7 svg {\n    height : 400px;\n}\n.bg-panel {\n    background : url(" + escape(__webpack_require__(1824)) + ");\n    height     : 100%;\n}\n.bg-panel-primary {\n    background : #66ccff;\n}\n#chart6 .nv-group {\n    fill-opacity : 0.5 !important;\n}\n#chart6 .nv-group.nv-series-2 {\n    fill-opacity : 0.7 !important;\n}\n@media screen and (max-width : 425px) {\n.nv-legendWrap,\n    .panel-heading .clickable {\n        display : none;\n}\n}\n.nvtooltip.xy-tooltip{\n    z-index: 99;\n}", ""]);
+exports.push([module.i, "\n#chart1 svg,\n#chart2 svg,\n#chart3 svg,\n#chart4 svg {\n    height : 300px;\n}\n#chart5 svg,\n#chart6 svg,\n#chart7 svg {\n    height : 400px;\n}\n.bg-panel {\n    background : url(" + escape(__webpack_require__(1823)) + ");\n    height     : 100%;\n}\n.bg-panel-primary {\n    background : #66ccff;\n}\n#chart6 .nv-group {\n    fill-opacity : 0.5 !important;\n}\n#chart6 .nv-group.nv-series-2 {\n    fill-opacity : 0.7 !important;\n}\n@media screen and (max-width : 425px) {\n.nv-legendWrap,\n    .panel-heading .clickable {\n        display : none;\n}\n}\n.nvtooltip.xy-tooltip{\n    z-index: 99;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1824:
+/***/ 1823:
 /***/ (function(module, exports) {
 
 module.exports = "/images/light_grey.png?42d38287e24de9c3864fab7dc8109b6b";
 
 /***/ }),
 
-/***/ 1825:
+/***/ 1824:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1432,7 +1432,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1826:
+/***/ 1825:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1639,14 +1639,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1820)
-  __webpack_require__(1822)
+  __webpack_require__(1819)
+  __webpack_require__(1821)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1825)
+var __vue_script__ = __webpack_require__(1824)
 /* template */
-var __vue_template__ = __webpack_require__(1826)
+var __vue_template__ = __webpack_require__(1825)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

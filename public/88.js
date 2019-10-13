@@ -1,6 +1,6 @@
 webpackJsonp([88],{
 
-/***/ 2305:
+/***/ 2304:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,14 +9,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -123,22 +115,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 nombre: '',
                 apellido: '',
                 usuario: '',
-                rol: 0,
-                contrasena: ''
+                rol: 0
             },
             defaultItem: {
                 id: 0,
                 nombre: '',
                 apellido: '',
                 usuario: '',
-                rol: 0,
-                contrasena: ''
+                rol: 0
             },
             roles: [{
                 text: 'Admnistrador',
                 value: 0
             }, {
-                text: 'Técnio',
+                text: 'Técnico',
                 value: 1
             }]
         };
@@ -168,10 +158,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (!this.editedItem.apellido) this.errorMsj.push('El apellido no puede estar vacio');
 
             if (!this.editedItem.nombre) this.errorMsj.push('El correo no puede estar vacio');
-
-            if (this.editedItem.contrasena != this.repetir) this.errorMsj.push('Las contraseñas deben ser iguales');
-
-            if (!this.editedItem.contrasena) this.errorMsj.push('La contraseña no puede estar vacia');
 
             if (!this.idRol) this.errorMsj.push('Se debe asignar un rol al usuario');
 
@@ -238,7 +224,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     nombre: me.editedItem.nombre,
                     apellido: me.editedItem.apellido,
                     email: me.editedItem.usuario,
-                    password: me.editedItem.contrasena,
                     role: me.idRol
                 }
             }).then(function (response) {
@@ -256,8 +241,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 swal.fire({
                     position: 'top-end',
                     type: 'error',
-                    title: errose.data.error,
-                    showConfirmButton: r.respontrue
+                    title: error.response.data.error,
+                    showConfirmButton: true
                 });
                 me.initialize();
                 me.close();
@@ -268,7 +253,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2306:
+/***/ 2305:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -450,70 +435,6 @@ var render = function() {
                                                   )
                                                 },
                                                 expression: "editedItem.usuario"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: {
-                                                label: "Contraseña",
-                                                type: "password"
-                                              },
-                                              model: {
-                                                value:
-                                                  _vm.editedItem.contrasena,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "contrasena",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression:
-                                                  "editedItem.contrasena"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: {
-                                                label: "Repetir contraseña",
-                                                type: "password"
-                                              },
-                                              model: {
-                                                value: _vm.editedItem.repetir,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "repetir",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression: "editedItem.repetir"
                                               }
                                             })
                                           ],
@@ -752,9 +673,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2305)
+var __vue_script__ = __webpack_require__(2304)
 /* template */
-var __vue_template__ = __webpack_require__(2306)
+var __vue_template__ = __webpack_require__(2305)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

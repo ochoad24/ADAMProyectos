@@ -117,7 +117,7 @@
                             Usuario.name=this.$auth.user().nombre+' '+this.$auth.user().apellido;
                             Usuario.job=this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
                             Usuario.role=this.$auth.user().role;
-
+                            Usuario.id=this.$auth.user().id;
                             this.$store.commit('changeUser',Usuario);
                             console.log(Usuario);
                             window.location.href="/#/";

@@ -1,12 +1,12 @@
 webpackJsonp([19],{
 
-/***/ 2209:
+/***/ 2208:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2210);
+var content = __webpack_require__(2209);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2210:
+/***/ 2209:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "/*!\n * jQVMap Version 1.0 \n *\n * http://jqvmap.com\n
 
 /***/ }),
 
-/***/ 2211:
+/***/ 2210:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2212);
+var content = __webpack_require__(2211);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2212:
+/***/ 2211:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "\n.jqvmap-zoomin,\n.jqvmap-zoomout {\n    box-sizing  :
 
 /***/ }),
 
-/***/ 2213:
+/***/ 2212:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2214);
+var content = __webpack_require__(2213);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2214:
+/***/ 2213:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -126,26 +126,26 @@ exports.push([module.i, "\n.map_size{\n    min-height:350px;\n}\n", ""]);
 
 /***/ }),
 
-/***/ 2215:
+/***/ 2214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(563);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jqvmap_jqvmap_jquery_vmap_min_js__ = __webpack_require__(2216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jqvmap_jqvmap_jquery_vmap_min_js__ = __webpack_require__(2215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jqvmap_jqvmap_jquery_vmap_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jqvmap_jqvmap_jquery_vmap_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jqvmap_jqvmap_maps_jquery_vmap_world_js__ = __webpack_require__(2217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jqvmap_jqvmap_maps_jquery_vmap_world_js__ = __webpack_require__(2216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jqvmap_jqvmap_maps_jquery_vmap_world_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jqvmap_jqvmap_maps_jquery_vmap_world_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jqvmap_jqvmap_maps_jquery_vmap_europe_js__ = __webpack_require__(2218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jqvmap_jqvmap_maps_jquery_vmap_europe_js__ = __webpack_require__(2217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jqvmap_jqvmap_maps_jquery_vmap_europe_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jqvmap_jqvmap_maps_jquery_vmap_europe_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jqvmap_jqvmap_maps_jquery_vmap_germany_js__ = __webpack_require__(2219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jqvmap_jqvmap_maps_jquery_vmap_germany_js__ = __webpack_require__(2218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jqvmap_jqvmap_maps_jquery_vmap_germany_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jqvmap_jqvmap_maps_jquery_vmap_germany_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jqvmap_jqvmap_maps_jquery_vmap_russia_js__ = __webpack_require__(2220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jqvmap_jqvmap_maps_jquery_vmap_russia_js__ = __webpack_require__(2219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_jqvmap_jqvmap_maps_jquery_vmap_russia_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_jqvmap_jqvmap_maps_jquery_vmap_russia_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jqvmap_jqvmap_maps_continents_jquery_vmap_asia_js__ = __webpack_require__(2221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jqvmap_jqvmap_maps_continents_jquery_vmap_asia_js__ = __webpack_require__(2220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jqvmap_jqvmap_maps_continents_jquery_vmap_asia_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jqvmap_jqvmap_maps_continents_jquery_vmap_asia_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_jqvmap_jqvmap_maps_continents_jquery_vmap_north_america_js__ = __webpack_require__(2222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_jqvmap_jqvmap_maps_continents_jquery_vmap_north_america_js__ = __webpack_require__(2221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_jqvmap_jqvmap_maps_continents_jquery_vmap_north_america_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_jqvmap_jqvmap_maps_continents_jquery_vmap_north_america_js__);
 //
 //
@@ -483,7 +483,7 @@ var sample_data = {
 
 /***/ }),
 
-/***/ 2216:
+/***/ 2215:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*!
@@ -503,7 +503,7 @@ var sample_data = {
 
 /***/ }),
 
-/***/ 2217:
+/***/ 2216:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/** Add World Map Data Points */
@@ -513,7 +513,7 @@ jQuery.fn.vectorMap('addMap', 'world_en', {"width":950,"height":550,"pathes":{"i
 
 /***/ }),
 
-/***/ 2218:
+/***/ 2217:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/** Add Europe Map Data Points */
@@ -523,7 +523,7 @@ jQuery.fn.vectorMap('addMap', 'europe_en', {"width":680,"height":520,"pathes":{"
 
 /***/ }),
 
-/***/ 2219:
+/***/ 2218:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/** Add Germany Map Data Points */
@@ -532,7 +532,7 @@ jQuery.fn.vectorMap('addMap', 'germany_en', {"width":592,"height":801,"pathes":{
 
 /***/ }),
 
-/***/ 2220:
+/***/ 2219:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/** Add Russia Map Data Points */
@@ -541,7 +541,7 @@ jQuery.fn.vectorMap('addMap','russia_en',{"width":959,"height":593,"pathes":{"da
 
 /***/ }),
 
-/***/ 2221:
+/***/ 2220:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/** Add World Map Data Points */
@@ -551,7 +551,7 @@ jQuery.fn.vectorMap('addMap', 'asia_en', {"width":950,"height":550,"pathes":{"id
 
 /***/ }),
 
-/***/ 2222:
+/***/ 2221:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/** Add World Map Data Points */
@@ -561,7 +561,7 @@ jQuery.fn.vectorMap('addMap', 'north-america_en', {"width":950,"height":550,"pat
 
 /***/ }),
 
-/***/ 2223:
+/***/ 2222:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -667,15 +667,15 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2209)
-  __webpack_require__(2211)
-  __webpack_require__(2213)
+  __webpack_require__(2208)
+  __webpack_require__(2210)
+  __webpack_require__(2212)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2215)
+var __vue_script__ = __webpack_require__(2214)
 /* template */
-var __vue_template__ = __webpack_require__(2223)
+var __vue_template__ = __webpack_require__(2222)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

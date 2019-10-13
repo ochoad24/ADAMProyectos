@@ -14,7 +14,8 @@ const store = new Vuex.Store({
             name: "Daniel Ochoa",
             picture: require('../img/authors/man.png'),
             job: "Administrador",
-            role:0
+            role:0,
+            id:0
         },
         proyecto:{
             id:0,

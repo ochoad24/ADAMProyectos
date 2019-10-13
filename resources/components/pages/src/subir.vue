@@ -2,11 +2,6 @@
     <div class="row user-list">
         <div class="col-lg-12">
             <b-card header="Tareas Pendientes" header-tag="h4" class="bg-primary-card">
-                <v-flex xs12 sm12 md12>
-                    <multiselect v-model="actividad" :options="actividades" placeholder="Seleccione una Actividad"
-                        label="nombre" track-by="nombre">
-                    </multiselect>
-                </v-flex>
                 <div class="table-responsive">
                     <v-toolbar flat color="white">
                         <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
@@ -24,7 +19,8 @@
                                 <v-card-text>
                                     <v-container grid-list-sm fluid>
                                         <v-flex xs12>
-                                            <v-textarea v-model="descripcion" label="Agregue observaciones de la actividad (opcional)">
+                                            <v-textarea v-model="descripcion"
+                                                label="Agregue observaciones de la actividad (opcional)">
                                             </v-textarea>
                                         </v-flex>
                                         <v-flex xs12
@@ -110,9 +106,14 @@
                                 </template>
                             </td>
 
-                            <td class="justify-center">
+                            <td class="justify-center" v-if="props.item.Permiso==1">
                                 <v-icon large class="mr-2" @click="editItem(props.item)">
                                     cloud_upload
+                                </v-icon>
+                            </td>
+                            <td class="justify-center" v-if="props.item.estado==1">
+                                <v-icon large class="mr-2" @click="cancelReport(props.item)">
+                                    delete
                                 </v-icon>
                             </td>
                         </template>
@@ -135,7 +136,7 @@
     import axios from 'axios';
     import Multiselect from 'vue-multiselect';
     import uni from 'uniqid';
-    import {mapGetters} from 'vuex';
+    import { mapGetters } from 'vuex';
     export default {
         name: "Subir",
         components: {
@@ -167,14 +168,9 @@
             menu: false,
             menu2: false,
             proyecto: {
-                id:0,
-                nombre:''
-            },
-            actividad: {
                 id: 0,
                 nombre: ''
             },
-            actividades: [],
             empleado: [],
             empleados: [],
             search: '',
@@ -223,10 +219,10 @@
             actividad(val) {
                 this.initialize();
             },
-            seleccion:{
-                deep:true,
-                handler(val){
-                    this.proyecto=val;
+            seleccion: {
+                deep: true,
+                handler(val) {
+                    this.proyecto = val;
                     this.initialize();
                     // console.log(this.proyecto);
                 }
@@ -237,10 +233,43 @@
             this.initialize()
         },
         mounted() {
-            this.proyecto=this.$store.state.proyecto;
+            this.proyecto = this.$store.state.proyecto;
             this.initialize();
         },
         methods: {
+            cancelReport(item) {
+                let me = this;
+                swal.fire({
+                    title: 'Quieres eliminar este reporte',
+                    text: "No podras revertir la eliminacion!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Si, Eliminalo!',
+                    cancelButtonText: "Cancelar"
+                }).then((result) => {
+                    if (result.value) {
+                        axios.delete(`/Tarea/cancelar/${item.id}`).then(response => {
+                            me.initialize();
+                            swal.fire({
+                                position: 'top-end',
+                                type: 'success',
+                                title: response.data,
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                        }).catch(error => {
+                            swal.fire({
+                                position: 'top-end',
+                                type: 'error',
+                                title: error.response.data.error,
+                                showConfirmButton: true
+                            });
+                        });
+                    }
+                });
+            },
             getIndex(list, id) {
                 return list.findIndex((e) => e.id == id)
             },
@@ -315,7 +344,7 @@
                 return this.error;
             },
             initialize() {
-                var url = '/Tarea/' + this.actividad.id;
+                var url = '/Tarea/select/' + this.$store.state.user.id;
                 axios.get(url)
                     .then(response => {
                         this.tareas = response.data;
@@ -323,19 +352,8 @@
                     .catch(errors => {
                         console.log(errors);
                     });
-                this.getActividaes();
                 this.getEstadistica();
                 this.getUsuario();
-            },
-            getActividaes() {
-                var url = '/Actividad/' + this.proyecto.id;
-                axios.get(url)
-                    .then(response => {
-                        this.actividades = response.data;
-                    })
-                    .catch(errors => {
-                        console.log(errors);
-                    });
             },
             getEstadistica(id) {
                 var url = '/Estadistica/select/' + id;
@@ -369,22 +387,22 @@
 
             save() {
                 let me = this;
-                var archivos=[];
+                var archivos = [];
                 this.files.forEach(element => {
                     archivos.push(element.file);
                 });
-                
-                var form = new  FormData();
-                 form.append('id', this.id);
-                 form.append('descripcion', this.descripcion);
-                 form.append('participantes', this.cantidad);
-                 for (var i = 0; i < this.files.length; i++) {
+
+                var form = new FormData();
+                form.append('id', this.id);
+                form.append('descripcion', this.descripcion);
+                form.append('participantes', this.cantidad);
+                for (var i = 0; i < this.files.length; i++) {
                     form.append('fotos[]', this.files[i].file);
-                 }
-                 form.append('estadisticas',JSON.stringify(this.estadisticas));
+                }
+                form.append('estadisticas', JSON.stringify(this.estadisticas));
                 const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
-                 axios.post('/Tarea/subir',form,ajuste).then(function (response) {
-                     console.log(response.data);
+                axios.post('/Tarea/subir', form, ajuste).then(function (response) {
+                    console.log(response.data);
                     swal.fire({
                         position: 'top-end',
                         type: 'success',

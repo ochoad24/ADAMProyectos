@@ -1,12 +1,12 @@
 webpackJsonp([28],{
 
-/***/ 1299:
+/***/ 1298:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1300);
+var content = __webpack_require__(1299);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1300:
+/***/ 1299:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.ct-label {\n  fill: rgba(0, 0, 0, 0.4);\n  color: rg
 
 /***/ }),
 
-/***/ 1301:
+/***/ 1300:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1302);
+var content = __webpack_require__(1301);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1302:
+/***/ 1301:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -84,7 +84,7 @@ exports.push([module.i, "\n.shipping_perc{\n     margin-top: 52px;\n     margin-
 
 /***/ }),
 
-/***/ 1303:
+/***/ 1302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -301,14 +301,14 @@ var unsub;
                 sale: "50%",
                 visits: "22,350"
             }, {
-                src: __webpack_require__(655),
+                src: __webpack_require__(656),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
                 sale: "23%",
                 visits: "11,260"
             }, {
-                src: __webpack_require__(699),
+                src: __webpack_require__(700),
                 price: "$280",
                 mrp: "$350",
                 name: "Gift box",
@@ -323,7 +323,7 @@ var unsub;
                 sale: "50%",
                 visits: "22,350"
             }, {
-                src: __webpack_require__(700),
+                src: __webpack_require__(701),
                 price: "$1000",
                 mrp: "1500",
                 name: "Apple Macbook pro",
@@ -331,7 +331,7 @@ var unsub;
                 visits: "16,234",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(655),
+                src: __webpack_require__(656),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
@@ -435,7 +435,7 @@ var unsub;
 
 /***/ }),
 
-/***/ 1304:
+/***/ 1303:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -940,14 +940,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1299)
-  __webpack_require__(1301)
+  __webpack_require__(1298)
+  __webpack_require__(1300)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1303)
+var __vue_script__ = __webpack_require__(1302)
 /* template */
-var __vue_template__ = __webpack_require__(1304)
+var __vue_template__ = __webpack_require__(1303)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -5569,21 +5569,21 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 655:
+/***/ 656:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product2.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 699:
+/***/ 700:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product3.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 700:
+/***/ 701:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product4.png?8d301375df448ee3e714523880e4068a";

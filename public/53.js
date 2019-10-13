@@ -1,12 +1,12 @@
 webpackJsonp([53],{
 
-/***/ 1584:
+/***/ 1583:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1585);
+var content = __webpack_require__(1584);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1585:
+/***/ 1584:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,14 +42,14 @@ exports.push([module.i, "\n.grid1 {\n    padding          : 50px 0;\n    backgro
 
 /***/ }),
 
-/***/ 1586:
+/***/ 1585:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(563);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Nestable_jquery_nestable_js__ = __webpack_require__(1587);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Nestable_jquery_nestable_js__ = __webpack_require__(1586);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Nestable_jquery_nestable_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Nestable_jquery_nestable_js__);
 //
 //
@@ -238,7 +238,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1587:
+/***/ 1586:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
@@ -730,7 +730,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1588:
+/***/ 1587:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1189,13 +1189,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1584)
+  __webpack_require__(1583)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1586)
+var __vue_script__ = __webpack_require__(1585)
 /* template */
-var __vue_template__ = __webpack_require__(1588)
+var __vue_template__ = __webpack_require__(1587)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

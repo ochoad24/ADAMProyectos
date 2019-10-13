@@ -1,12 +1,12 @@
 webpackJsonp([79],{
 
-/***/ 2330:
+/***/ 2329:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2331);
+var content = __webpack_require__(2330);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2331:
+/***/ 2330:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n
 
 /***/ }),
 
-/***/ 2332:
+/***/ 2331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53,11 +53,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_multiselect__ = __webpack_require__(570);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_multiselect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_uniqid__ = __webpack_require__(2333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_uniqid__ = __webpack_require__(2332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_uniqid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_uniqid__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuex__ = __webpack_require__(231);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+//
 //
 //
 //
@@ -231,11 +232,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 id: 0,
                 nombre: ''
             },
-            actividad: {
-                id: 0,
-                nombre: ''
-            },
-            actividades: [],
             empleado: [],
             empleados: [],
             search: '',
@@ -298,6 +294,39 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     },
 
     methods: {
+        cancelReport: function cancelReport(item) {
+            var me = this;
+            swal.fire({
+                title: 'Quieres eliminar este reporte',
+                text: "No podras revertir la eliminacion!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, Eliminalo!',
+                cancelButtonText: "Cancelar"
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Tarea/cancelar/' + item.id).then(function (response) {
+                        me.initialize();
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: response.data,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }).catch(function (error) {
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'error',
+                            title: error.response.data.error,
+                            showConfirmButton: true
+                        });
+                    });
+                }
+            });
+        },
         getIndex: function getIndex(list, id) {
             return list.findIndex(function (e) {
                 return e.id == id;
@@ -376,41 +405,30 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         initialize: function initialize() {
             var _this2 = this;
 
-            var url = '/Tarea/' + this.actividad.id;
+            var url = '/Tarea/select/' + this.$store.state.user.id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
                 _this2.tareas = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
-            this.getActividaes();
             this.getEstadistica();
             this.getUsuario();
         },
-        getActividaes: function getActividaes() {
-            var _this3 = this;
-
-            var url = '/Actividad/' + this.proyecto.id;
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
-                _this3.actividades = response.data;
-            }).catch(function (errors) {
-                console.log(errors);
-            });
-        },
         getEstadistica: function getEstadistica(id) {
-            var _this4 = this;
+            var _this3 = this;
 
             var url = '/Estadistica/select/' + id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
-                _this4.estadisticas = response.data;
+                _this3.estadisticas = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
         },
         getUsuario: function getUsuario() {
-            var _this5 = this;
+            var _this4 = this;
 
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/User/select').then(function (response) {
-                _this5.empleados = response.data;
+                _this4.empleados = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
@@ -468,7 +486,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 /***/ }),
 
-/***/ 2333:
+/***/ 2332:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/* 
@@ -518,7 +536,7 @@ function now(){
 
 /***/ }),
 
-/***/ 2334:
+/***/ 2333:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -537,29 +555,6 @@ var render = function() {
             attrs: { header: "Tareas Pendientes", "header-tag": "h4" }
           },
           [
-            _c(
-              "v-flex",
-              { attrs: { xs12: "", sm12: "", md12: "" } },
-              [
-                _c("multiselect", {
-                  attrs: {
-                    options: _vm.actividades,
-                    placeholder: "Seleccione una Actividad",
-                    label: "nombre",
-                    "track-by": "nombre"
-                  },
-                  model: {
-                    value: _vm.actividad,
-                    callback: function($$v) {
-                      _vm.actividad = $$v
-                    },
-                    expression: "actividad"
-                  }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
             _c(
               "div",
               { staticClass: "table-responsive" },
@@ -1083,30 +1078,59 @@ var render = function() {
                             2
                           ),
                           _vm._v(" "),
-                          _c(
-                            "td",
-                            { staticClass: "justify-center" },
-                            [
-                              _c(
-                                "v-icon",
-                                {
-                                  staticClass: "mr-2",
-                                  attrs: { large: "" },
-                                  on: {
-                                    click: function($event) {
-                                      return _vm.editItem(props.item)
-                                    }
-                                  }
-                                },
+                          props.item.Permiso == 1
+                            ? _c(
+                                "td",
+                                { staticClass: "justify-center" },
                                 [
-                                  _vm._v(
-                                    "\n                                cloud_upload\n                            "
+                                  _c(
+                                    "v-icon",
+                                    {
+                                      staticClass: "mr-2",
+                                      attrs: { large: "" },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.editItem(props.item)
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                cloud_upload\n                            "
+                                      )
+                                    ]
                                   )
-                                ]
+                                ],
+                                1
                               )
-                            ],
-                            1
-                          )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          props.item.estado == 1
+                            ? _c(
+                                "td",
+                                { staticClass: "justify-center" },
+                                [
+                                  _c(
+                                    "v-icon",
+                                    {
+                                      staticClass: "mr-2",
+                                      attrs: { large: "" },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.cancelReport(props.item)
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                delete\n                            "
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            : _vm._e()
                         ]
                       }
                     },
@@ -1156,8 +1180,7 @@ var render = function() {
               ],
               1
             )
-          ],
-          1
+          ]
         )
       ],
       1
@@ -1182,13 +1205,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2330)
+  __webpack_require__(2329)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2332)
+var __vue_script__ = __webpack_require__(2331)
 /* template */
-var __vue_template__ = __webpack_require__(2334)
+var __vue_template__ = __webpack_require__(2333)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

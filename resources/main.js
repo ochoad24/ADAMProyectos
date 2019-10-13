@@ -52,6 +52,15 @@ router.afterEach((to, from) => {
         store.commit('left_menu', "open");
     }
 })
+var url = window.location.href;
+var SwLocation='/sw.js';
+if(navigator.serviceWorker){
+    if(url.includes('localhost')){
+        SwLocation='/sw.js';    
+    }
+    navigator.serviceWorker.register(SwLocation);
+}
+
 
 
 Vue.router = router;

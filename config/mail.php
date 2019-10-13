@@ -15,7 +15,22 @@ return [
     |            "sparkpost", "postmark", "log", "array"
     |
     */
+    // "driver" => "smtp",
+    // "host" => "smtp.mailtrap.io",
+    // "port" => 2525,
+    // "from" => array(
+    //     "address" => "ADAM@adam.org.gt",
+    //     "name" => "ADAM"
+    // ),
+    // "username" => "fdf7c449a7b71e",
+    // "password" => "6ec7a966c09c73",
+    // "sendmail" => "/usr/sbin/sendmail -bs",
 
+    
+    // 'mailgun' => [
+    // 'domain' => env('MAILGUN_DOMAIN'),
+    // 'secret' => env('MAILGUN_PASS'),
+    // ],
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*

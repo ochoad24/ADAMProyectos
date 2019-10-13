@@ -41,6 +41,7 @@ let mutations = {
         state.user.name=Usuario.name;
         state.user.job=Usuario.job;
         state.user.role=Usuario.role;
+        state.user.id=Usuario.id;
     }
 }
 export default mutations

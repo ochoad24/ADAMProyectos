@@ -122,4 +122,8 @@ use Illuminate\Http\Request;
         Route::post('/Tarea/subir', 'TareaController@report');
         Route::get('Tarea/ver/{id}','TareaController@watch');
         Route::delete('Tarea/delete/{task}','TareaController@drop');
+
+        Route::get('/Tarea/select/{usuario}', 'TareaController@select');
+        Route::delete('Tarea/cancelar/{tarea}','TareaController@cancelReport');
+
     });

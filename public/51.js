@@ -1,12 +1,12 @@
 webpackJsonp([51],{
 
-/***/ 2357:
+/***/ 2355:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2358);
+var content = __webpack_require__(2356);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2358:
+/***/ 2356:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "/*!\r\n * BootstrapValidator (http://bootstrapvalidator
 
 /***/ }),
 
-/***/ 2359:
+/***/ 2357:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2360);
+var content = __webpack_require__(2358);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2360:
+/***/ 2358:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General 
 
 /***/ }),
 
-/***/ 2361:
+/***/ 2359:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2362);
+var content = __webpack_require__(2360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2362:
+/***/ 2360:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -126,7 +126,7 @@ exports.push([module.i, "\n.register[data-v-7b7bdec2] {\n    padding-top: 6.5%;\
 
 /***/ }),
 
-/***/ 2363:
+/***/ 2361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -289,7 +289,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 /***/ }),
 
-/***/ 2364:
+/***/ 2362:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -306,7 +306,7 @@ var render = function() {
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
                 attrs: {
-                  src: __webpack_require__(837),
+                  src: __webpack_require__(2363),
                   alt: "Logo"
                 }
               })
@@ -890,21 +890,28 @@ if (false) {
 
 /***/ }),
 
+/***/ 2363:
+/***/ (function(module, exports) {
+
+module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";
+
+/***/ }),
+
 /***/ 556:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+  __webpack_require__(2355)
   __webpack_require__(2357)
   __webpack_require__(2359)
-  __webpack_require__(2361)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2363)
+var __vue_script__ = __webpack_require__(2361)
 /* template */
-var __vue_template__ = __webpack_require__(2364)
+var __vue_template__ = __webpack_require__(2362)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2290,13 +2297,6 @@ var options = {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (options);
-
-/***/ }),
-
-/***/ 837:
-/***/ (function(module, exports) {
-
-module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";
 
 /***/ })
 

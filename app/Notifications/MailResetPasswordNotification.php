@@ -6,9 +6,10 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+
 use Illuminate\Auth\Notifications\ResetPassword;
 
-class MailResetPasswordNotification extends Notification
+class MailResetPasswordNotification extends ResetPassword
 {
     use Queueable;
 
@@ -41,13 +42,16 @@ class MailResetPasswordNotification extends Notification
      */
     public function toMail($notifiable)
     {
-        $link = url( "/reset-password/".$this->token );
-        return ( new MailMessage )
-            ->subject( 'Restablecer contraseña' )
-            ->line( "¡Hola! Recibió este correo electrónico porque recibimos una solicitud de restablecimiento de contraseña para su cuenta." )
-            ->action( 'Restablecer contraseña', $link )
-            ->line( "Este enlace de restablecimiento de contraseña caducará en ".config('auth.passwords.users.expire')." minutos" )
-            ->line( "Si no solicitó un restablecimiento de contraseña, no se requiere ninguna otra acción." );    
+        $link = url( "/#/reset_password?token=".$this->token );
+        // return ( new MailMessage )
+        //     ->subject( 'Restablecer contraseña' )
+        //     ->line( "¡Hola! Recibió este correo electrónico porque recibimos una solicitud de restablecimiento de contraseña para su cuenta." )
+        //     ->action( 'Restablecer contraseña', $link )
+        //     ->line( "Este enlace de restablecimiento de contraseña caducará en ".config('auth.passwords.users.expire')." minutos" )
+        //     ->line( "Si no solicitó un restablecimiento de contraseña, no se requiere ninguna otra acción." );
+        return (new MailMessage)
+        ->subject('Restablecer Contraseña')
+        ->markdown('mails.mail', ['url' => $link]);   
     }
 
     /**
@@ -62,4 +66,6 @@ class MailResetPasswordNotification extends Notification
             //
         ];
     }
+
+    
 }

@@ -1,12 +1,12 @@
 webpackJsonp([74],{
 
-/***/ 2307:
+/***/ 2306:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2308);
+var content = __webpack_require__(2307);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2308:
+/***/ 2307:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,18 +42,18 @@ exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n
 
 /***/ }),
 
-/***/ 2309:
+/***/ 2308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(570);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue__ = __webpack_require__(2310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue__ = __webpack_require__(2309);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic__ = __webpack_require__(2311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic__ = __webpack_require__(2310);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es__ = __webpack_require__(2312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es__ = __webpack_require__(2311);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue__);
@@ -682,7 +682,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2310:
+/***/ 2309:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -694,7 +694,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2311:
+/***/ 2310:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -706,14 +706,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2312:
+/***/ 2311:
 /***/ (function(module, exports) {
 
 (function(d){d['es']=Object.assign(d['es']||{},{a:"No se pudo cargar el archivo:",b:"Image toolbar",c:"Table toolbar",d:"Negrita",e:"Cursiva",f:"Entrecomillado",g:"Insertar imagen o archivo",h:"Elegir Encabezado",i:"Encabezado",j:"Widget de imagen",k:"Imagen a tamaño completo",l:"Imagen lateral",m:"Imagen alineada a la izquierda",n:"Imagen centrada",o:"Imagen alineada a la derecha",p:"Insertar imagen",q:"Lista numerada",r:"Lista de puntos",s:"Insertar tabla",t:"Columna de encabezado",u:"Insertar columna izquierda",v:"Insertar columna derecha",w:"Eliminar columna",x:"Columna",y:"Fila de encabezado",z:"Insertar fila debajo",aa:"Insertar fila encima",ab:"Eliminar fila",ac:"Fila",ad:"Combinar celda superior",ae:"Combinar celda derecha",af:"Combinar celda inferior",ag:"Combinar celda izquierda",ah:"Dividir celdas verticalmente",ai:"Dividir celdas horizontalmente",aj:"Combinar celdas",ak:"Introducir título de la imagen",al:"Fallo en la subida",am:"Widget multimedia",an:"Insertar multimedia",ao:"La URL no debe estar vacía",ap:"La URL de multimedia no está soportada",aq:"Enlace",ar:"No se puede acceder a la URL de la imagen redimensionada",as:"Fallo eligiendo imagen redimensionada",at:"No se puede insertar una imagen en la posición actual",au:"Error insertando imagen",av:"Widget toolbar",aw:"Subida en progreso",ax:"Abrir en una pestaña nueva ",ay:"Descargable",az:"Quitar enlace",ba:"Editar enlace",bb:"Abrir enlace en una pestaña nueva",bc:"Este enlace no tiene URL",bd:"Guardar",be:"Cancelar",bf:"URL del enlace",bg:"Pega la URL del contenido multimedia",bh:"Tip: pega la URL dentro del contenido para embeber más rápido",bi:"URL multimedia",bj:"Deshacer",bk:"Rehacer",bl:"Editor toolbar",bm:"Editor de Texto Enriquecido, %0",bn:"Editor de Texto Enriquecido",bo:"Dropdown toolbar",bp:"%0 de %1",bq:"Anterior",br:"Siguiente",bs:"Cambiar el texto alternativo de la imagen",bt:"Párrafo",bu:"Encabezado 1",bv:"Encabezado 2",bw:"Encabezado 3",bx:"Encabezado 4",by:"Encabezado 5",bz:"Encabezado 6",ca:"Texto alternativo"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
 
 /***/ }),
 
-/***/ 2313:
+/***/ 2312:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2396,13 +2396,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2307)
+  __webpack_require__(2306)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2309)
+var __vue_script__ = __webpack_require__(2308)
 /* template */
-var __vue_template__ = __webpack_require__(2313)
+var __vue_template__ = __webpack_require__(2312)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

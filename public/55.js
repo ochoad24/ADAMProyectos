@@ -1,12 +1,12 @@
 webpackJsonp([55],{
 
-/***/ 1438:
+/***/ 1437:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1439);
+var content = __webpack_require__(1438);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1439:
+/***/ 1438:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,14 +42,14 @@ exports.push([module.i, "\n@media(max-width:320px){\n.trumbowyg-dropdown{\n     
 
 /***/ }),
 
-/***/ 1440:
+/***/ 1439:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_trumbowyg__ = __webpack_require__(1441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_trumbowyg__ = __webpack_require__(1440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_trumbowyg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_trumbowyg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_trumbowyg_dist_ui_trumbowyg_css__ = __webpack_require__(1444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_trumbowyg_dist_ui_trumbowyg_css__ = __webpack_require__(1443);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_trumbowyg_dist_ui_trumbowyg_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_trumbowyg_dist_ui_trumbowyg_css__);
 //
 //
@@ -78,21 +78,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1441:
+/***/ 1440:
 /***/ (function(module, exports, __webpack_require__) {
 
-!function(e,t){ true?module.exports=t(__webpack_require__(561),__webpack_require__(1442),__webpack_require__(1443)):"function"==typeof define&&define.amd?define("VueTrumbowyg",["jquery","trumbowyg/dist/ui/icons.svg","trumbowyg"],t):"object"==typeof exports?exports.VueTrumbowyg=t(require("jquery"),require("trumbowyg/dist/ui/icons.svg"),require("trumbowyg")):e.VueTrumbowyg=t(e.jQuery,e["trumbowyg/dist/ui/icons.svg"],e.trumbowyg)}(window,function(e,t,n){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=3)}([function(t,n){t.exports=e},function(e,n){e.exports=t},function(e,t){e.exports=n},function(e,t,n){"use strict";n.r(t);var r=n(0),o=n.n(r),u=(n(2),n(1)),i=["init","focus","blur","change","resize","paste","openfullscreen","closefullscreen","close"],s=function(e,t,n,r,o,u,i,s){var l,c="function"==typeof e?e.options:e;if(t&&(c.render=t,c.staticRenderFns=[],c._compiled=!0),l)if(c.functional){c._injectStyles=l;var f=c.render;c.render=function(e,t){return l.call(t),f(e,t)}}else{var a=c.beforeCreate;c.beforeCreate=a?[].concat(a,l):[l]}return{exports:e,options:c}}({name:"trumbowyg",props:{value:{default:null,required:!0,validator:function(e){return null===e||"string"==typeof e||e instanceof String}},config:{type:Object,default:function(){return{}}},svgPath:{type:[String,Boolean],default:n.n(u).a}},data:function(){return{el:null}},mounted:function(){this.el||(this.el=o()(this.$el),this.el.trumbowyg(o.a.extend(!0,{},{svgPath:this.svgPath},this.config)),this.el.trumbowyg("html",this.value),this.el.on("tbwchange",this.onChange),this.el.on("tbwpaste",this.onChange),this.el.on("tbwblur",this.onBlur),this.registerEvents())},watch:{value:function(e){this.el&&e!==this.el.trumbowyg("html")&&this.el.trumbowyg("html",e)}},methods:{onChange:function(e){this.$emit("input",e.target.value)},onBlur:function(e){this.$emit("blur",e.target.value)},registerEvents:function(){var e=this;i.forEach(function(t){e.el.on("tbw"+t,function(){for(var n=arguments.length,r=Array(n),o=0;o<n;o++)r[o]=arguments[o];e.$emit.apply(e,["tbw-"+t].concat(r))})})}},beforeDestroy:function(){this.el&&(this.el.trumbowyg("destroy"),this.el=null)}},function(){var e=this.$createElement;return(this._self._c||e)("textarea")});s.options.__file="component.vue";var l=s.exports;n.d(t,"trumbowygPlugin",function(){return c}),n.d(t,"component",function(){return l});var c=function(e,t){var n="trumbowyg";"string"==typeof t&&(n=t),e.component(n,l)};l.install=c,t.default=l}])});
+!function(e,t){ true?module.exports=t(__webpack_require__(561),__webpack_require__(1441),__webpack_require__(1442)):"function"==typeof define&&define.amd?define("VueTrumbowyg",["jquery","trumbowyg/dist/ui/icons.svg","trumbowyg"],t):"object"==typeof exports?exports.VueTrumbowyg=t(require("jquery"),require("trumbowyg/dist/ui/icons.svg"),require("trumbowyg")):e.VueTrumbowyg=t(e.jQuery,e["trumbowyg/dist/ui/icons.svg"],e.trumbowyg)}(window,function(e,t,n){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=3)}([function(t,n){t.exports=e},function(e,n){e.exports=t},function(e,t){e.exports=n},function(e,t,n){"use strict";n.r(t);var r=n(0),o=n.n(r),u=(n(2),n(1)),i=["init","focus","blur","change","resize","paste","openfullscreen","closefullscreen","close"],s=function(e,t,n,r,o,u,i,s){var l,c="function"==typeof e?e.options:e;if(t&&(c.render=t,c.staticRenderFns=[],c._compiled=!0),l)if(c.functional){c._injectStyles=l;var f=c.render;c.render=function(e,t){return l.call(t),f(e,t)}}else{var a=c.beforeCreate;c.beforeCreate=a?[].concat(a,l):[l]}return{exports:e,options:c}}({name:"trumbowyg",props:{value:{default:null,required:!0,validator:function(e){return null===e||"string"==typeof e||e instanceof String}},config:{type:Object,default:function(){return{}}},svgPath:{type:[String,Boolean],default:n.n(u).a}},data:function(){return{el:null}},mounted:function(){this.el||(this.el=o()(this.$el),this.el.trumbowyg(o.a.extend(!0,{},{svgPath:this.svgPath},this.config)),this.el.trumbowyg("html",this.value),this.el.on("tbwchange",this.onChange),this.el.on("tbwpaste",this.onChange),this.el.on("tbwblur",this.onBlur),this.registerEvents())},watch:{value:function(e){this.el&&e!==this.el.trumbowyg("html")&&this.el.trumbowyg("html",e)}},methods:{onChange:function(e){this.$emit("input",e.target.value)},onBlur:function(e){this.$emit("blur",e.target.value)},registerEvents:function(){var e=this;i.forEach(function(t){e.el.on("tbw"+t,function(){for(var n=arguments.length,r=Array(n),o=0;o<n;o++)r[o]=arguments[o];e.$emit.apply(e,["tbw-"+t].concat(r))})})}},beforeDestroy:function(){this.el&&(this.el.trumbowyg("destroy"),this.el=null)}},function(){var e=this.$createElement;return(this._self._c||e)("textarea")});s.options.__file="component.vue";var l=s.exports;n.d(t,"trumbowygPlugin",function(){return c}),n.d(t,"component",function(){return l});var c=function(e,t){var n="trumbowyg";"string"==typeof t&&(n=t),e.component(n,l)};l.install=c,t.default=l}])});
 
 /***/ }),
 
-/***/ 1442:
+/***/ 1441:
 /***/ (function(module, exports) {
 
 module.exports = "/images/vendor/trumbowyg/dist/ui/icons.svg?a61f908579a2fc1a4ead0508c599dd2f";
 
 /***/ }),
 
-/***/ 1443:
+/***/ 1442:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/**
@@ -1925,13 +1925,13 @@ Object.defineProperty(jQuery.trumbowyg, 'defaultOptions', {
 
 /***/ }),
 
-/***/ 1444:
+/***/ 1443:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1445);
+var content = __webpack_require__(1444);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1957,7 +1957,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1445:
+/***/ 1444:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -1972,7 +1972,7 @@ exports.push([module.i, "/**\n * Trumbowyg v2.11.1 - A lightweight WYSIWYG edito
 
 /***/ }),
 
-/***/ 1446:
+/***/ 1445:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2017,13 +2017,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1438)
+  __webpack_require__(1437)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1440)
+var __vue_script__ = __webpack_require__(1439)
 /* template */
-var __vue_template__ = __webpack_require__(1446)
+var __vue_template__ = __webpack_require__(1445)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

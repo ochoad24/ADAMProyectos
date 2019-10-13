@@ -4,9 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Clear-Admin</title>
-    <link rel="shortcut icon" href="/img/favico.png"/>
+    <link rel="shortcut icon" type="image/ico" href="/img/favico.png"/>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6b8f00">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

@@ -1,12 +1,12 @@
 webpackJsonp([17],{
 
-/***/ 2246:
+/***/ 2245:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2247);
+var content = __webpack_require__(2246);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2247:
+/***/ 2246:
 /***/ (function(module, exports, __webpack_require__) {
 
 var escape = __webpack_require__(29);
@@ -43,13 +43,13 @@ exports.push([module.i, "\n@font-face {\n  font-family: 'simple-line-icons';\n  
 
 /***/ }),
 
-/***/ 2248:
+/***/ 2247:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2249);
+var content = __webpack_require__(2248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -70,7 +70,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2249:
+/***/ 2248:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -85,7 +85,7 @@ exports.push([module.i, "\nul[data-v-be554f9e] {\n    list-style : none;\n}\n.ta
 
 /***/ }),
 
-/***/ 2250:
+/***/ 2249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -764,7 +764,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2251:
+/***/ 2250:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1402,7 +1402,7 @@ var render = function() {
                                               staticClass:
                                                 "d-flex mr-3 img-thumbnail img-fluid",
                                               attrs: {
-                                                src: __webpack_require__(654),
+                                                src: __webpack_require__(655),
                                                 alt: "avatar image",
                                                 height: "60",
                                                 width: "60"
@@ -2179,7 +2179,7 @@ var render = function() {
                                             staticClass:
                                               "d-flex mr-3 img-thumbnail",
                                             attrs: {
-                                              src: __webpack_require__(654),
+                                              src: __webpack_require__(655),
                                               alt: "image",
                                               height: "80",
                                               width: "80"
@@ -2461,14 +2461,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2246)
-  __webpack_require__(2248)
+  __webpack_require__(2245)
+  __webpack_require__(2247)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(2250)
+var __vue_script__ = __webpack_require__(2249)
 /* template */
-var __vue_template__ = __webpack_require__(2251)
+var __vue_template__ = __webpack_require__(2250)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -2646,7 +2646,7 @@ module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.svg?2fe2efe6
 
 /***/ }),
 
-/***/ 654:
+/***/ 655:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";

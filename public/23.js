@@ -1,12 +1,12 @@
 webpackJsonp([23],{
 
-/***/ 1284:
+/***/ 1283:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1285);
+var content = __webpack_require__(1284);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1285:
+/***/ 1284:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.right {\n    float: right;\n    position: absolute;\
 
 /***/ }),
 
-/***/ 1286:
+/***/ 1285:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1287);
+var content = __webpack_require__(1286);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1287:
+/***/ 1286:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -84,15 +84,15 @@ exports.push([module.i, "\n.card .card-body[data-v-bdc9e4c6] {\n    padding: 0;\
 
 /***/ }),
 
-/***/ 1288:
+/***/ 1287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_slick__ = __webpack_require__(1289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__ = __webpack_require__(1290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_slick__ = __webpack_require__(1288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__ = __webpack_require__(1289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_slick_carousel_slick_slick_css__);
 //
 //
@@ -403,7 +403,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1289:
+/***/ 1288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3642,13 +3642,13 @@ var slick$1 = /*#__PURE__*/Object.freeze({
 
 /***/ }),
 
-/***/ 1290:
+/***/ 1289:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1291);
+var content = __webpack_require__(1290);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -3674,7 +3674,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1291:
+/***/ 1290:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -3689,7 +3689,7 @@ exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;
 
 /***/ }),
 
-/***/ 1292:
+/***/ 1291:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -3947,7 +3947,7 @@ var render = function() {
                             _c("b-img", {
                               staticClass: "img-fluid",
                               attrs: {
-                                src: __webpack_require__(654),
+                                src: __webpack_require__(655),
                                 rounded: "circle",
                                 alt: "Circle image"
                               }
@@ -4200,7 +4200,7 @@ var render = function() {
                       _c("b-img", {
                         staticClass: "img-fluid",
                         attrs: {
-                          src: __webpack_require__(1293),
+                          src: __webpack_require__(1292),
                           alt: "Circle image"
                         }
                       })
@@ -4235,7 +4235,7 @@ var render = function() {
                       _c("b-img", {
                         staticClass: "img-fluid",
                         attrs: {
-                          src: __webpack_require__(1294),
+                          src: __webpack_require__(1293),
                           alt: "Circle image"
                         }
                       })
@@ -4270,7 +4270,7 @@ var render = function() {
                       _c("b-img", {
                         staticClass: "img-fluid",
                         attrs: {
-                          src: __webpack_require__(1295),
+                          src: __webpack_require__(1294),
                           alt: "Circle image"
                         }
                       })
@@ -4305,7 +4305,7 @@ var render = function() {
                       _c("b-img", {
                         staticClass: "img-fluid",
                         attrs: {
-                          src: __webpack_require__(1296),
+                          src: __webpack_require__(1295),
                           alt: "Circle image"
                         }
                       })
@@ -4340,7 +4340,7 @@ var render = function() {
                       _c("b-img", {
                         staticClass: "img-fluid",
                         attrs: {
-                          src: __webpack_require__(1297),
+                          src: __webpack_require__(1296),
                           alt: "Circle image"
                         }
                       })
@@ -4375,7 +4375,7 @@ var render = function() {
                       _c("b-img", {
                         staticClass: "img-fluid",
                         attrs: {
-                          src: __webpack_require__(1298),
+                          src: __webpack_require__(1297),
                           alt: "Circle image"
                         }
                       })
@@ -4422,42 +4422,42 @@ if (false) {
 
 /***/ }),
 
-/***/ 1293:
+/***/ 1292:
 /***/ (function(module, exports) {
 
 module.exports = "/images/icons8-usa.png?2f571ec2fabfb42d3048347cb5d915e5";
 
 /***/ }),
 
-/***/ 1294:
+/***/ 1293:
 /***/ (function(module, exports) {
 
 module.exports = "/images/icons8-hungary.png?7b2413c61df5d2cfb38bb64bf4e523cc";
 
 /***/ }),
 
-/***/ 1295:
+/***/ 1294:
 /***/ (function(module, exports) {
 
 module.exports = "/images/icons8-france.png?fc7bfee4e22aaa96ade94d82743c361c";
 
 /***/ }),
 
-/***/ 1296:
+/***/ 1295:
 /***/ (function(module, exports) {
 
 module.exports = "/images/icons8-japan.png?be49868672d850f0d9a49057d010ec4d";
 
 /***/ }),
 
-/***/ 1297:
+/***/ 1296:
 /***/ (function(module, exports) {
 
 module.exports = "/images/icons8-china.png?a2e59bbc566b9949aeb1a2dce00be98d";
 
 /***/ }),
 
-/***/ 1298:
+/***/ 1297:
 /***/ (function(module, exports) {
 
 module.exports = "/images/ru.png?4ebdfc3eb99405fb83fb5bd80edc8280";
@@ -4470,14 +4470,14 @@ module.exports = "/images/ru.png?4ebdfc3eb99405fb83fb5bd80edc8280";
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1284)
-  __webpack_require__(1286)
+  __webpack_require__(1283)
+  __webpack_require__(1285)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1288)
+var __vue_script__ = __webpack_require__(1287)
 /* template */
-var __vue_template__ = __webpack_require__(1292)
+var __vue_template__ = __webpack_require__(1291)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -14910,7 +14910,7 @@ module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 654:
+/***/ 655:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";

@@ -10,13 +10,13 @@ var content = __webpack_require__(2373);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(27)("e466cbda", content, false, {});
+var update = __webpack_require__(27)("31433062", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!./forgot_password.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!./forgot_password.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./forgot_password.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fdd3442a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./forgot_password.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__(18)(false);
 
 
 // module
-exports.push([module.i, "\nhtml {\n    height : 100%;\n}\nbody {\n    font-family             : 'Open Sans', sans-serif;\n    background              : radial-gradient(ellipse at center, #63B9B4 0%, #008C83 100%);\n    -webkit-background-size : cover;\n    -moz-background-size    : cover;\n    -o-background-size      : cover;\n    background-size         : cover;\n    height                  : 100%;\n    padding-top             : 70px;\n    color : #fff;\n}\n.box {\n    padding          : 19px 15px;\n    margin-bottom    : 70px;\n}\n.box input[type='submit'] {\n    margin : 25px 0 20px 0;\n}\n.form-group {\n    margin-bottom: 25px;\n}\n.submit-btn {\n    background-color: rgba(255,255,255, .2);\n}\n.btn:hover, .btn:focus, .btn.focus {\n    color: #fff;\n}\n@media screen and (min-width : 450px) {\n.box {\n        padding : 36px 35px;\n}\n}\n.animated {\n    -webkit-animation-duration  : 1s;\n    animation-duration          : 1s;\n    -webkit-animation-fill-mode : both;\n    animation-fill-mode         : both;\n}\n@-webkit-keyframes fadeInUp {\n0% {\n        opacity           : 0;\n        -webkit-transform : translateY(20px);\n        transform         : translateY(20px);\n}\n100% {\n        opacity           : 1;\n        -webkit-transform : translateY(0);\n        transform         : translateY(0);\n}\n}\n@keyframes fadeInUp {\n0% {\n        opacity           : 0;\n        -webkit-transform : translateY(20px);\n        -ms-transform     : translateY(20px);\n        transform         : translateY(20px);\n}\n100% {\n        opacity           : 1;\n        -webkit-transform : translateY(0);\n        -ms-transform     : translateY(0);\n        transform         : translateY(0);\n}\n}\n.fadeInUp {\n    -webkit-animation-name : fadeInUp;\n    animation-name         : fadeInUp;\n    transition             : transform ease-in 200ms;\n}\n.checkbox label {\n    padding-left : 0;\n}\n.forgot_Form .email {\n    border-radius: 20px;\n}\n.enter_email, .check_email {\n    margin-top : 18px;\n}\n.help-block {\n    color : #fecfb0;\n}\n.btn-top {\n    margin-top : 20px !important;\n}\na:hover, a:focus {\n    text-decoration : none;\n}\n.has-error .help-block {\n    color : #C45555;\n    float : left;\n}\n.err-text {\n    color : #c15050;\n}\n.btn:focus, .btn:active:focus {\n    outline : 0;\n}\n.has-error .form-control, .has-error .form-control:focus {\n    border-color : #C45555;\n}\n.text-danger {\n    color: #ff6666;\n}\n.reset-link {\n    color: #ddd;\n}\n.reset-link:hover {\n    color: #eee;\n}\n.preloader {\n    position            : fixed;\n    width               : 100%;\n    height              : 100%;\n    top                 : 0;\n    left                : 0;\n    z-index             : 100000;\n    backface-visibility : hidden;\n    background          : #ffffff;\n}\n.loader_img {\n    width               : 50px;\n    height              : 50px;\n    position            : absolute;\n    left                : 50%;\n    top                 : 50%;\n    background-position : center;\n    margin              : -25px 0 0 -25px;\n}\n.box h3{\n    margin-top:20px;\n    margin-bottom:20px;\n}\n.submit-btn{\n    color:#fff;\n}\n.hidden{\n    display:none;\n}", ""]);
+exports.push([module.i, "\n.custom-loader {\n    animation: loader 1s infinite;\n    display: flex;\n}\n@-moz-keyframes loader {\nfrom {\n        transform: rotate(0);\n}\nto {\n        transform: rotate(360deg);\n}\n}\n@-webkit-keyframes loader {\nfrom {\n        transform: rotate(0);\n}\nto {\n        transform: rotate(360deg);\n}\n}\n@-o-keyframes loader {\nfrom {\n        transform: rotate(0);\n}\nto {\n        transform: rotate(360deg);\n}\n}\n@keyframes loader {\nfrom {\n        transform: rotate(0);\n}\nto {\n        transform: rotate(360deg);\n}\n}\n", ""]);
 
 // exports
 
@@ -47,8 +47,10 @@ exports.push([module.i, "\nhtml {\n    height : 100%;\n}\nbody {\n    font-famil
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(745);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(746);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap_magnify_js_bootstrap_magnify_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sweetalert2__);
 //
 //
 //
@@ -81,43 +83,87 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "image_magnifier",
-    mounted: function mounted() {
-        "use strict";
-
-        $(document).ready(function () {
-
-            var input_field = $("input[name=email]");
-
-            $('button[type="submit"]').on('click', function (e) {
-                e.preventDefault();
-
-                if (input_field.val() != "") {
-                    $(".enter_email").addClass("hidden");
-                    $(".check_email").removeClass("hidden");
-                    $('#email, .signup-signin').addClass('hidden');
-                    $('.submit-btn').addClass('animated fadeInUp');
-                    $('button[type="submit"]').html("Reset Password").removeClass("btn-primary btn-block").addClass("btn-success").on('click', function () {
-                        window.location.href = '#/reset_password';
-                    });
-                } else {
-                    var error_msg = "<p>Sorry, Enter Your Registered email</p>";
-                    $(".enter_email").addClass("err-text animated fadeInUp").html(error_msg);
-                }
-            });
-
-            $("#email").on('keypress focus', function () {
-                var element = 'Enter your Registered email';
-                $(".enter_email").removeClass("text-danger animated fadeInUp").html(element);
-            });
-        });
+    data: function data() {
+        return {
+            email: null,
+            has_error: false,
+            loader: null,
+            loading: false
+        };
     },
-    destroyed: function destroyed() {}
+
+    watch: {
+        // loader() {
+        //     const l = this.loader
+        //     this[l] = !this[l]
+        //     this.$http.post("/auth/reset-password", { email: this.email }).then(result => {
+        //             this.response = result.data;
+        //             this[l] = false
+        //             swal.fire({
+        //                 position: 'center',
+        //                 type: 'success',
+        //                 title: result.data.message,
+        //                 showConfirmButton: false,
+        //                 timer: 3000
+        //             });
+
+        //             // console.log(result.data);
+        //         }, error => {
+        //             // console.error(error);
+        //             swal.fire({
+        //                 position: 'center',
+        //                 type: 'error',
+        //                 title: 'Algo paso mal vuelva a intentarlo',
+        //                 showConfirmButton: r.respontrue
+        //             });
+        //         });
+        //     this.loader = null;
+        //     this.loading=false;
+        // },
+    },
+    methods: {
+        requestResetPassword: function requestResetPassword() {
+            var _this = this;
+
+            this.loader = 'loading';
+            this.loading = true;
+            this.$http.post("/auth/reset-password", { email: this.email }).then(function (result) {
+                _this.response = result.data;
+                console.log(result.data);
+                swal.fire({
+                    position: 'center',
+                    type: 'success',
+                    title: result.data.message,
+                    showConfirmButton: false,
+                    timer: 3000
+                });
+                _this.loader = null;
+                _this.loading = false;
+                window.location.href = "/#/";
+            }, function (error) {
+                swal.fire({
+                    position: 'center',
+                    type: 'error',
+                    title: 'Algo paso mal vuelva a intentarlo',
+                    showConfirmButton: r.respontrue
+                });
+            });
+        },
+        redireccionar: function redireccionar() {
+            window.location.href = "/#/";
+        }
+    }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(561)))
 
 /***/ }),
 
@@ -141,89 +187,102 @@ var render = function() {
             _c("div", { staticClass: "text-center " }, [
               _c("img", {
                 staticClass: "img-fluid",
-                attrs: { src: __webpack_require__(838), alt: "Clear logo" }
+                attrs: {
+                  src: __webpack_require__(651),
+                  alt: "Clear logo"
+                },
+                on: { click: _vm.redireccionar }
               })
             ]),
             _vm._v(" "),
             _c("h3", { staticClass: "text-center" }, [
-              _vm._v("Forgot Password\n                ")
+              _vm._v("Se te olvidó tu contraseña\n                ")
             ]),
             _vm._v(" "),
             _c("p", { staticClass: "text-center enter_email" }, [
               _vm._v(
-                "\n                    Enter your Registered email\n                "
+                "\n                    Ingrese su correo electrónico registrado\n                "
               )
             ]),
             _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1)
+            _c(
+              "form",
+              {
+                staticClass: "forgot_Form text-center",
+                attrs: { method: "POST", autocomplete: "off" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.requestResetPassword($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.email,
+                        expression: "email"
+                      }
+                    ],
+                    staticClass: "form-control email pl-3",
+                    attrs: { type: "email", id: "email", required: "" },
+                    domProps: { value: _vm.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.email = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "v-btn",
+                  {
+                    staticClass: "ma-2",
+                    attrs: {
+                      loading: _vm.loading,
+                      disabled: _vm.loading,
+                      color: "success",
+                      type: "submit"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        Recuperar Contraseña\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-btn",
+                  {
+                    staticClass: "ma-2",
+                    attrs: { color: "warning" },
+                    on: { click: _vm.redireccionar }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        Regresar\n                    "
+                    )
+                  ]
+                )
+              ],
+              1
+            )
           ]
         )
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "text-center check_email hidden" }, [
-      _vm._v(
-        "\n                    Check your email for Reset link\n                    "
-      ),
-      _c("br"),
-      _c("br"),
-      _vm._v(" "),
-      _c("u", [
-        _c(
-          "a",
-          { staticClass: "reset-link", attrs: { href: "javascript:void(0)" } },
-          [_vm._v("Resend the link")]
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "form",
-      {
-        staticClass: "forgot_Form text-center",
-        attrs: { method: "POST", id: "forgot_password" }
-      },
-      [
-        _c("div", { staticClass: "form-group" }, [
-          _c("input", {
-            staticClass: "form-control email pl-3",
-            attrs: {
-              type: "email",
-              name: "email",
-              id: "email",
-              placeholder: "Email"
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn submit-btn",
-            attrs: { type: "submit", value: "Reset Your Password" }
-          },
-          [
-            _vm._v(
-              "\n                        Retrieve Password\n                    "
-            )
-          ]
-        )
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -10659,18 +10718,18 @@ return jQuery;
 
 /***/ }),
 
-/***/ 745:
+/***/ 651:
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
+
+/***/ }),
+
+/***/ 746:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!function(e){"use strict";var t=function(e,t){this.init("magnify",e,t)};t.prototype={constructor:t,init:function(t,n,r){var i="mousemove",s="mouseleave";this.type=t;this.$element=e(n);this.options=this.getOptions(r);this.nativeWidth=0;this.nativeHeight=0;this.$element.wrap('<div class="magnify" >');this.$element.parent(".magnify").append('<div class="magnify-large" >');this.$element.siblings(".magnify-large").css("background","url('"+this.$element.attr("src")+"') no-repeat");this.$element.parent(".magnify").on(i+"."+this.type,e.proxy(this.check,this));this.$element.parent(".magnify").on(s+"."+this.type,e.proxy(this.check,this))},getOptions:function(t){t=e.extend({},e.fn[this.type].defaults,t,this.$element.data());t.delay&&typeof t.delay=="number"&&(t.delay={show:t.delay,hide:t.delay});return t},check:function(t){var n=e(t.currentTarget),r=n.children("img"),i=n.children(".magnify-large");if(!this.nativeWidth&&!this.nativeHeight){var s=new Image;s.src=r.attr("src");this.nativeWidth=s.width;this.nativeHeight=s.height}else{var o=n.offset(),u=t.pageX-o.left,a=t.pageY-o.top;u<n.width()&&a<n.height()&&u>0&&a>0?i.fadeIn(100):i.fadeOut(100);if(i.is(":visible")){var f=Math.round(u/n.width()*this.nativeWidth-i.width()/2)*-1,l=Math.round(a/n.height()*this.nativeHeight-i.height()/2)*-1,c=f+"px "+l+"px",h=u-i.width()/2,p=a-i.height()/2;i.css({left:h,top:p,backgroundPosition:c})}}}};e.fn.magnify=function(n){return this.each(function(){var r=e(this),i=r.data("magnify"),s=typeof n=="object"&&n;i||r.data("tooltip",i=new t(this,s));typeof n=="string"&&i[n]()})};e.fn.magnify.Constructor=t;e.fn.magnify.defaults={delay:0};e(window).on("load",function(){e('[data-toggle="magnify"]').each(function(){var t=e(this);t.magnify()})})}(__webpack_provided_window_dot_jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(561)))
-
-/***/ }),
-
-/***/ 838:
-/***/ (function(module, exports) {
-
-module.exports = "/images/logo.png?a7b4575e3769bae62092c494870b5d8a";
 
 /***/ })
 

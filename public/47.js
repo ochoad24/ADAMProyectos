@@ -1,12 +1,12 @@
 webpackJsonp([47],{
 
-/***/ 1519:
+/***/ 1518:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1520);
+var content = __webpack_require__(1519);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1520:
+/***/ 1519:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "/**\n * wenk - Lightweight tooltip for the greater good
 
 /***/ }),
 
-/***/ 1521:
+/***/ 1520:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1522);
+var content = __webpack_require__(1521);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1522:
+/***/ 1521:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -84,7 +84,7 @@ exports.push([module.i, "\n.faq-cat-content {\n    margin-top : 25px;\n}\n.faq-c
 
 /***/ }),
 
-/***/ 1523:
+/***/ 1522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -397,7 +397,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1524:
+/***/ 1523:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -873,7 +873,7 @@ var render = function() {
                         _c("template", { slot: "title" }, [
                           _c("img", {
                             attrs: {
-                              src: __webpack_require__(1525),
+                              src: __webpack_require__(1524),
                               alt: "Google",
                               width: "20",
                               height: "20"
@@ -1408,7 +1408,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 1525:
+/***/ 1524:
 /***/ (function(module, exports) {
 
 module.exports = "/images/football.jpg?7a3f7a7b1ed0c1c4471260384c3e46e0";
@@ -1421,14 +1421,14 @@ module.exports = "/images/football.jpg?7a3f7a7b1ed0c1c4471260384c3e46e0";
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1519)
-  __webpack_require__(1521)
+  __webpack_require__(1518)
+  __webpack_require__(1520)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(1523)
+var __vue_script__ = __webpack_require__(1522)
 /* template */
-var __vue_template__ = __webpack_require__(1524)
+var __vue_template__ = __webpack_require__(1523)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

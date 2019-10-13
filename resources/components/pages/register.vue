@@ -39,7 +39,7 @@
                                     <div class="form-group">
                                         <validate tag="div">
                                             <label for="email" class="sr-only"> E-mail</label>
-                                            <input v-model="model.email" id="email"name="email" type="email" required placeholder="E-mail" class="form-control" />
+                                            <input v-model="model.email" id="email" name="email" type="email" required placeholder="E-mail" class="form-control" />
                                             <field-messages name="email" show="$invalid && $submitted" class="text-danger">
                                                 <div slot="required">Email is a required field</div>
                                                 <div slot="email">Email is not valid</div>
