@@ -119,7 +119,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.register[data-v-7b7bdec2] {\n    padding-top: 6.5%;\n    width: 100%;\n    height:100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    overflow-y: auto;\n}\nlabel[for=\"terms\"][data-v-7b7bdec2]{\n        width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.register[data-v-7b7bdec2] {\r\n    padding-top: 6.5%;\r\n    width: 100%;\r\n    height:100vh;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\r\n    overflow-y: auto;\n}\nlabel[for=\"terms\"][data-v-7b7bdec2]{\r\n        width: 100%;\n}\r\n", ""]);
 
 // exports
 

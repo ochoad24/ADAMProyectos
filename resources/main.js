@@ -11,6 +11,11 @@ import swal from 'sweetalert2';
 import 'vuetify/dist/vuetify.min.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
+import axios from 'axios'
+import VueAuth from '@websanova/vue-auth'
+import VueAxios from 'vue-axios'
+import auth from './auth'
+import 'es6-promise/auto'
 
 Vue.use(window.VueCharts);
 Vue.use(BootstrapVue)

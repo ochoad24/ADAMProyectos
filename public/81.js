@@ -77,7 +77,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.container-fluid.reset[data-v-7644d2fd] {\n    padding-top: 6.5%;\n    width: 100%;\n    top: 0;\n    height:100vh;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    background-size: 100% 100%;\n    overflow-y: auto;\n}\n.help.is-danger[data-v-7644d2fd],.fa-warning[data-v-7644d2fd]{\n    font-size: 13px;\n}\n.input.is-danger[data-v-7644d2fd]{\n    border: 1px solid #ff6666;\n}\n.reset .btn[data-v-7644d2fd]{\n    box-shadow: none;\n}\n#authentication .input[data-v-7644d2fd]:focus{\n        border-color: #6699cc;\n        box-shadow: none;\n}\n", ""]);
+exports.push([module.i, "\n.container-fluid.reset[data-v-7644d2fd] {\r\n    padding-top: 6.5%;\r\n    width: 100%;\r\n    top: 0;\r\n    height:100vh;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\r\n    background-size: 100% 100%;\r\n    overflow-y: auto;\n}\n.help.is-danger[data-v-7644d2fd],.fa-warning[data-v-7644d2fd]{\r\n    font-size: 13px;\n}\n.input.is-danger[data-v-7644d2fd]{\r\n    border: 1px solid #ff6666;\n}\n.reset .btn[data-v-7644d2fd]{\r\n    box-shadow: none;\n}\n#authentication .input[data-v-7644d2fd]:focus{\r\n        border-color: #6699cc;\r\n        box-shadow: none;\n}\r\n", ""]);
 
 // exports
 
