@@ -1,14 +1,17 @@
 webpackJsonp([23],{
 
-/***/ 2327:
+/***/ 2260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(546);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(545);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+//
+//
+//
 //
 //
 //
@@ -86,11 +89,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "TipoActividad",
+    name: "Rol",
     data: function data() {
         return {
             search: '',
             dialog: false,
+            nameRules: [function (v) {
+                return !!v || 'El nombre del rol no puede estar vacio';
+            }, function (v) {
+                return v && v.length <= 99 || 'El nombre del rol no puede ser mayor a 100';
+            }],
             error: 0,
             errorMsj: [],
             headers: [{
@@ -98,7 +106,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 align: 'left',
                 value: 'id'
             }, { text: 'Nombre', value: 'nombre' }],
-            tipos: [],
+            roles: [],
             editedIndex: -1,
             editedItem: {
                 id: 0,
@@ -113,7 +121,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         formTitle: function formTitle() {
-            return this.editedIndex === -1 ? 'Nuevo Tipo de Actividad' : 'Editar Tipo de Actividad';
+            return this.editedIndex === -1 ? 'Nuevo Rol' : 'Editar Rol';
         }
     },
 
@@ -132,28 +140,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre del tipo de actividad no puede estar vacio');
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre del rol no puede estar vacio');
             if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
         initialize: function initialize() {
             var _this = this;
 
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/TipoActividad').then(function (response) {
-                _this.tipos = response.data;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/Rol').then(function (response) {
+                _this.roles = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
         },
         editItem: function editItem(item) {
-            this.editedIndex = this.tipos.indexOf(item);
+            this.editedIndex = this.roles.indexOf(item);
             this.editedItem = Object.assign({}, item);
             this.dialog = true;
         },
         deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
-                title: 'Quieres eliminar este tipo de Actividad?',
+                title: 'Quieres eliminar este Rol?',
                 text: "No podras revertir la eliminacion!",
                 type: 'warning',
                 showCancelButton: true,
@@ -163,7 +171,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 cancelButtonText: "Cancelar"
             }).then(function (result) {
                 if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/TipoActividad/' + item.id + '/delete').then(function (response) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Rol/' + item.id + '/delete').then(function (response) {
                         me.initialize();
                         swal.fire({
                             position: 'top-end',
@@ -199,7 +207,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (this.editedIndex > -1) {
                 __WEBPACK_IMPORTED_MODULE_1_axios___default()({
                     method: 'put',
-                    url: '/TipoActividad/editar',
+                    url: '/Rol/editar',
                     data: {
                         id: this.editedItem.id,
                         nombre: this.editedItem.nombre
@@ -225,7 +233,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             } else {
                 __WEBPACK_IMPORTED_MODULE_1_axios___default()({
                     method: 'post',
-                    url: '/TipoActividad/nuevo',
+                    url: '/Rol/nuevo',
                     data: {
                         nombre: me.editedItem.nombre
                     }
@@ -254,7 +262,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2328:
+/***/ 2261:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -270,7 +278,7 @@ var render = function() {
           "b-card",
           {
             staticClass: "bg-primary-card",
-            attrs: { header: "Tipo de Actividades", "header-tag": "h4" }
+            attrs: { header: "Roles", "header-tag": "h4" }
           },
           [
             _c(
@@ -314,14 +322,11 @@ var render = function() {
                                   _vm._g(
                                     {
                                       staticClass: "mb-2",
-                                      attrs: {
-                                        color: "green darken-1",
-                                        dark: ""
-                                      }
+                                      attrs: { color: "#668c2d", dark: "" }
                                     },
                                     on
                                   ),
-                                  [_vm._v("Nuevo tipo de actividad")]
+                                  [_vm._v("Nuevo Rol")]
                                 )
                               ]
                             }
@@ -340,11 +345,32 @@ var render = function() {
                         _c(
                           "v-card",
                           [
-                            _c("v-card-title", [
-                              _c("span", { staticClass: "headline" }, [
-                                _vm._v(_vm._s(_vm.formTitle))
-                              ])
-                            ]),
+                            _c(
+                              "v-toolbar",
+                              { attrs: { dark: "", color: "#668c2d" } },
+                              [
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { icon: "", dark: "" },
+                                    on: {
+                                      click: function($event) {
+                                        _vm.dialog2 = false
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("v-icon", { attrs: { col: "white" } }, [
+                                      _vm._v("clear")
+                                    ])
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("v-toolbar-title", [_vm._v("Nuevo Rol")])
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
                             _c(
                               "v-card-text",
@@ -369,8 +395,11 @@ var render = function() {
                                           [
                                             _c("v-text-field", {
                                               attrs: {
-                                                label:
-                                                  "Nombre del tipo de actividad"
+                                                label: "Nombre Rol",
+                                                maxlength: "100",
+                                                required: "",
+                                                rules: _vm.nameRules,
+                                                counter: 100
                                               },
                                               model: {
                                                 value: _vm.editedItem.nombre,
@@ -431,7 +460,7 @@ var render = function() {
                                 _c(
                                   "v-btn",
                                   {
-                                    attrs: { color: "blue darken-1", flat: "" },
+                                    attrs: { color: "#668c2d", flat: "" },
                                     on: { click: _vm.close }
                                   },
                                   [_vm._v("Cancelar")]
@@ -440,7 +469,7 @@ var render = function() {
                                 _c(
                                   "v-btn",
                                   {
-                                    attrs: { color: "blue darken-1", flat: "" },
+                                    attrs: { color: "#668c2d", flat: "" },
                                     on: { click: _vm.save }
                                   },
                                   [_vm._v("Guardar")]
@@ -462,7 +491,7 @@ var render = function() {
                   staticClass: "elevation-1",
                   attrs: {
                     headers: _vm.headers,
-                    items: _vm.tipos,
+                    items: _vm.roles,
                     search: _vm.search
                   },
                   scopedSlots: _vm._u([
@@ -529,7 +558,8 @@ var render = function() {
                           _c(
                             "v-btn",
                             {
-                              attrs: { color: "primary" },
+                              staticClass: "mb-2",
+                              attrs: { color: "#668c2d", dark: "" },
                               on: { click: _vm.initialize }
                             },
                             [_vm._v("Recargar")]
@@ -581,21 +611,21 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-552095d2", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5a444350", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 515:
+/***/ 507:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2327)
+var __vue_script__ = __webpack_require__(2260)
 /* template */
-var __vue_template__ = __webpack_require__(2328)
+var __vue_template__ = __webpack_require__(2261)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -612,7 +642,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/src/tipoactividad.vue"
+Component.options.__file = "resources/components/pages/src/rol.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -621,9 +651,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-552095d2", Component.options)
+    hotAPI.createRecord("data-v-5a444350", Component.options)
   } else {
-    hotAPI.reload("data-v-552095d2", Component.options)
+    hotAPI.reload("data-v-5a444350", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -635,14 +665,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var bind = __webpack_require__(538);
-var isBuffer = __webpack_require__(544);
+var bind = __webpack_require__(537);
+var isBuffer = __webpack_require__(543);
 
 /*global toString:true*/
 
@@ -946,14 +976,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 537:
+/***/ 536:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(528);
-var normalizeHeaderName = __webpack_require__(549);
+var utils = __webpack_require__(527);
+var normalizeHeaderName = __webpack_require__(548);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -969,10 +999,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(539);
+    adapter = __webpack_require__(538);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(539);
+    adapter = __webpack_require__(538);
   }
   return adapter;
 }
@@ -1051,7 +1081,7 @@ module.exports = defaults;
 
 /***/ }),
 
-/***/ 538:
+/***/ 537:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1070,19 +1100,19 @@ module.exports = function bind(fn, thisArg) {
 
 /***/ }),
 
-/***/ 539:
+/***/ 538:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var settle = __webpack_require__(550);
-var buildURL = __webpack_require__(552);
-var parseHeaders = __webpack_require__(553);
-var isURLSameOrigin = __webpack_require__(554);
-var createError = __webpack_require__(540);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(555);
+var utils = __webpack_require__(527);
+var settle = __webpack_require__(549);
+var buildURL = __webpack_require__(551);
+var parseHeaders = __webpack_require__(552);
+var isURLSameOrigin = __webpack_require__(553);
+var createError = __webpack_require__(539);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(554);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -1179,7 +1209,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(556);
+      var cookies = __webpack_require__(555);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -1258,13 +1288,13 @@ module.exports = function xhrAdapter(config) {
 
 /***/ }),
 
-/***/ 540:
+/***/ 539:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(551);
+var enhanceError = __webpack_require__(550);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -1284,7 +1314,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 /***/ }),
 
-/***/ 541:
+/***/ 540:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1297,7 +1327,7 @@ module.exports = function isCancel(value) {
 
 /***/ }),
 
-/***/ 542:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1324,7 +1354,7 @@ module.exports = Cancel;
 
 /***/ }),
 
-/***/ 544:
+/***/ 543:
 /***/ (function(module, exports) {
 
 /*!
@@ -1352,23 +1382,23 @@ function isSlowBuffer (obj) {
 
 /***/ }),
 
-/***/ 546:
+/***/ 545:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(547);
+module.exports = __webpack_require__(546);
 
 /***/ }),
 
-/***/ 547:
+/***/ 546:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var bind = __webpack_require__(538);
-var Axios = __webpack_require__(548);
-var defaults = __webpack_require__(537);
+var utils = __webpack_require__(527);
+var bind = __webpack_require__(537);
+var Axios = __webpack_require__(547);
+var defaults = __webpack_require__(536);
 
 /**
  * Create an instance of Axios
@@ -1401,15 +1431,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(542);
-axios.CancelToken = __webpack_require__(562);
-axios.isCancel = __webpack_require__(541);
+axios.Cancel = __webpack_require__(541);
+axios.CancelToken = __webpack_require__(561);
+axios.isCancel = __webpack_require__(540);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(563);
+axios.spread = __webpack_require__(562);
 
 module.exports = axios;
 
@@ -1419,16 +1449,16 @@ module.exports.default = axios;
 
 /***/ }),
 
-/***/ 548:
+/***/ 547:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(537);
-var utils = __webpack_require__(528);
-var InterceptorManager = __webpack_require__(557);
-var dispatchRequest = __webpack_require__(558);
+var defaults = __webpack_require__(536);
+var utils = __webpack_require__(527);
+var InterceptorManager = __webpack_require__(556);
+var dispatchRequest = __webpack_require__(557);
 
 /**
  * Create a new instance of Axios
@@ -1506,13 +1536,13 @@ module.exports = Axios;
 
 /***/ }),
 
-/***/ 549:
+/***/ 548:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -1526,13 +1556,13 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 /***/ }),
 
-/***/ 550:
+/***/ 549:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(540);
+var createError = __webpack_require__(539);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -1560,7 +1590,7 @@ module.exports = function settle(resolve, reject, response) {
 
 /***/ }),
 
-/***/ 551:
+/***/ 550:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1589,13 +1619,13 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 /***/ }),
 
-/***/ 552:
+/***/ 551:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -1663,13 +1693,13 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 /***/ }),
 
-/***/ 553:
+/***/ 552:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -1724,13 +1754,13 @@ module.exports = function parseHeaders(headers) {
 
 /***/ }),
 
-/***/ 554:
+/***/ 553:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -1800,7 +1830,7 @@ module.exports = (
 
 /***/ }),
 
-/***/ 555:
+/***/ 554:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1844,13 +1874,13 @@ module.exports = btoa;
 
 /***/ }),
 
-/***/ 556:
+/***/ 555:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -1905,13 +1935,13 @@ module.exports = (
 
 /***/ }),
 
-/***/ 557:
+/***/ 556:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -1965,18 +1995,18 @@ module.exports = InterceptorManager;
 
 /***/ }),
 
-/***/ 558:
+/***/ 557:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var transformData = __webpack_require__(559);
-var isCancel = __webpack_require__(541);
-var defaults = __webpack_require__(537);
-var isAbsoluteURL = __webpack_require__(560);
-var combineURLs = __webpack_require__(561);
+var utils = __webpack_require__(527);
+var transformData = __webpack_require__(558);
+var isCancel = __webpack_require__(540);
+var defaults = __webpack_require__(536);
+var isAbsoluteURL = __webpack_require__(559);
+var combineURLs = __webpack_require__(560);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -2059,13 +2089,13 @@ module.exports = function dispatchRequest(config) {
 
 /***/ }),
 
-/***/ 559:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 /**
  * Transform the data for a request or a response
@@ -2087,7 +2117,7 @@ module.exports = function transformData(data, headers, fns) {
 
 /***/ }),
 
-/***/ 560:
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2109,7 +2139,7 @@ module.exports = function isAbsoluteURL(url) {
 
 /***/ }),
 
-/***/ 561:
+/***/ 560:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2131,13 +2161,13 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 
-/***/ 562:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(542);
+var Cancel = __webpack_require__(541);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -2196,7 +2226,7 @@ module.exports = CancelToken;
 
 /***/ }),
 
-/***/ 563:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

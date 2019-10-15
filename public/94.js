@@ -1,52 +1,19 @@
 webpackJsonp([94],{
 
-/***/ 2267:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(2268);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("4d9512fe", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6d17cc0c\",\"scoped\":false,\"hasInlineConfig\":true}!./pricing_table.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 2268:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/*pricing table 1*/\n.span-btn, .span-btn:hover {\n    color: #666;\n    background-color: #DCDCDC;\n    border-color: #DCDCDC;\n}\n.span-btn.active, .span-btn.active:hover {\n    color: #fff;\n    background-color: #376ea4;\n    border-color: #2d5986;\n}\n/*table styles*/\n.modal-1 {\n    border         : 1px solid #B6D1CC;\n    border-radius  : 3px;\n    margin-top     : 20px;\n    margin-bottom  : 10px;\n    padding-bottom : 25px;\n}\n.modal-1 .pack-heading {\n    background-color : #E1EFEF;\n    padding          : 2px 0;\n    height           : 145px;\n}\n.pack-heading p {\n    color  : #555;\n    margin : 13px 0;\n}\n.modal-1 .pack-title {\n    font-size : 22px;\n    color     : #677777;\n}\n.modal-1 .pack-price {\n    font-size : 36px;\n    position  : relative;\n}\n.modal-1 .pack-price span {\n    font-size : 18px;\n    color     : #777;\n}\n.modal-1 .pack-price .dollar {\n    font-size : 22px;\n    color     : #777;\n    top       : -20px;\n    display   : inline;\n}\n.modal-1 .section-head {\n    font-size   : 15px;\n    font-weight : bold;\n    color       : #60B6A3;\n    margin      : 40px 0 15px;\n}\n.modal-1 .pack-details li {\n    line-height : 38px;\n    color       : #555;\n    font-size   : 14px;\n}\n.modal-1 .pack-details li.text-dummy {\n    color : #999;\n}\n.modal-1 .btn-getit {\n    -webkit-border-radius : 3px;\n    -moz-border-radius    : 3px;\n    border-radius         : 3px;\n    padding               : 5px 17px;\n    margin-top            : 30px;\n}\n.modal-1 .trending-tag {\n    height   : 79px;\n    overflow : hidden;\n    position : absolute;\n    left     : 15px;\n    top      : 20px;\n    width    : 80px;\n}\n.tag-design {\n    font              : bold 12px Noto Sans;\n    background-color  : #3AAE97;\n    padding-top       : 22px;\n    position          : relative;\n    text-align        : center;\n    top               : -12px;\n    left              : -40px;\n    -webkit-transform : rotate(-45deg);\n    -moz-transform    : rotate(-45deg);\n    -ms-transform     : rotate(-45deg);\n    -o-transform      : rotate(-45deg);\n    transform         : rotate(-45deg);\n    width             : 116px;\n    height            : 61px;\n}\n.pro-option {\n    font-size   : 24px;\n    line-height : 24px;\n    margin      : 25px 0;\n}\n.contact-info {\n    font-size     : 14px;\n    margin-bottom : 20px;\n}\n.btn-contact {\n    color         : #4080bf;\n    border        : 1px solid #4080bf;\n    padding       : 6px 25px;\n    border-radius : 20px;\n}\n.btn-contact:hover {\n    background-color : #4080bf;\n    color            : #fff;\n}\n@media screen and (max-width : 767px) {\n.modal-1 .trending-tag {\n        top :20px;\n}\n}\n@media(max-width: 320px){\n.modal-1 .trending-tag{\n        top:20px;\n}\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 2269:
+/***/ 1463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -185,540 +152,574 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: "modals",
     data: function data() {
         return {
-            isActive: 1,
-            selected: "monthly"
+            stop_close: false
         };
     },
 
     methods: {
-        number: function number() {
-            this.isActive = 1;
+        stop: function stop(e) {
+            if (!this.stop_close) {
+                return e.cancel();
+            }
         },
-        numbers: function numbers() {
-            this.isActive = 0;
+        shown: function shown() {
+            alert("Modal opened");
+        },
+        open_modal: function open_modal() {
+            console.log(this.$refs);
+            this.$refs.modal21.show();
+        },
+        hidden: function hidden() {
+            alert("Modal Hidden");
+        },
+        success: function success() {
+            alert("OK Clicked");
+        },
+        cancel: function cancel() {
+            alert("Close Clicked");
         }
     }
+
 });
 
 /***/ }),
 
-/***/ 2270:
+/***/ 1464:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row text-center" }, [
-      _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-        _c(
-          "div",
-          { staticClass: "btn-group", attrs: { "data-toggle": "buttons" } },
-          [
+  return _c(
+    "div",
+    [
+      _c(
+        "b-card",
+        {
+          staticClass: "bg-primary-card",
+          attrs: { header: "Modals", "header-tag": "h4" }
+        },
+        [
+          _c("div", { staticClass: "row" }, [
             _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn monthly ",
-                class: { active: _vm.isActive == 1 },
-                on: { click: _vm.number }
-              },
+              "div",
+              { staticClass: "col-lg-12" },
               [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
+                _c(
+                  "b-card",
+                  { staticClass: "bg-primary-card" },
+                  [
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal1",
+                            modifiers: { modal1: true }
+                          }
+                        ],
+                        staticClass: "mt-3 mb-3"
+                      },
+                      [_vm._v("Launch demo modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        staticClass: "mt-3 mb-3",
+                        on: { click: _vm.open_modal }
+                      },
+                      [_vm._v("Launch modal with ref")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        ref: "modal1",
+                        attrs: { id: "modal1", title: "Modal" }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        ref: "modal21",
+                        attrs: { id: "modal21", title: "Modal" }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    )
                   ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option2",
-                    autocomplete: "off",
-                    value: "monthly",
-                    checked: ""
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "monthly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "monthly"
-                    }
-                  }
-                }),
-                _vm._v(" Monthly Tariff\n                ")
-              ]
+                  1
+                )
+              ],
+              1
             ),
             _vm._v(" "),
             _c(
-              "label",
-              {
-                staticClass: "btn btn-default span-btn yearly",
-                class: { active: _vm.isActive == 0 },
-                on: { click: _vm.numbers }
-              },
+              "div",
+              { staticClass: "col-lg-12 mt-3" },
               [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.selected,
-                      expression: "selected"
-                    }
+                _c(
+                  "b-card",
+                  { staticClass: "bg-info-card" },
+                  [
+                    _c("h4", [_vm._v("Stop closing on backdrop click")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal2",
+                            modifiers: { modal2: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Launch demo modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        ref: "modal2",
+                        attrs: {
+                          "no-close-on-backdrop": "",
+                          id: "modal2",
+                          title: "Modal"
+                        }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    )
                   ],
-                  staticClass: "d-none",
-                  attrs: {
-                    type: "radio",
-                    name: "options",
-                    id: "option3",
-                    autocomplete: "off",
-                    value: "yearly"
-                  },
-                  domProps: { checked: _vm._q(_vm.selected, "yearly") },
-                  on: {
-                    change: function($event) {
-                      _vm.selected = "yearly"
-                    }
-                  }
-                }),
-                _vm._v("  Yearly Tariff\n                ")
-              ]
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal4",
+                            modifiers: { modal4: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Launch small modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal4",
+                          title: "Small Modal",
+                          size: "sm"
+                        }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal5",
+                            modifiers: { modal5: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Launch Normal modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal5",
+                          title: "Normal Modal",
+                          size: "md"
+                        }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal6",
+                            modifiers: { modal6: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Launch Large modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal6",
+                          title: "Large Modal",
+                          size: "lg"
+                        }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c("h4", [_vm._v("Background Primary Modal ")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal8",
+                            modifiers: { modal8: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Primary modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal8",
+                          title: "Priamry Modal",
+                          "header-bg-variant": "primary",
+                          "header-text-variant": "light",
+                          "footer-bg-variant": "primary",
+                          "footer-text-variant": "light",
+                          size: "md"
+                        }
+                      },
+                      [_c("h1", [_vm._v(" Primary modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c("h4", [_vm._v("Background Info Modal ")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal9",
+                            modifiers: { modal9: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Info modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal9",
+                          title: "Info Modal",
+                          "header-bg-variant": "info",
+                          "header-text-variant": "light",
+                          "footer-bg-variant": "info",
+                          "footer-text-variant": "light"
+                        }
+                      },
+                      [_c("h1", [_vm._v(" Info modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c("h4", [_vm._v("Background Warning Modal ")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal10",
+                            modifiers: { modal10: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Warning modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal10",
+                          title: "Warning Modal",
+                          "header-bg-variant": "warning",
+                          "header-text-variant": "light",
+                          "footer-bg-variant": "warning",
+                          "footer-text-variant": "light"
+                        }
+                      },
+                      [_c("h1", [_vm._v(" Warning modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c("h4", [_vm._v("Background Danger Modal ")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal11",
+                            modifiers: { modal11: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Danger Modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal11",
+                          title: "Danger Modal",
+                          "header-bg-variant": "danger",
+                          "header-text-variant": "light",
+                          "footer-bg-variant": "danger",
+                          "footer-text-variant": "light"
+                        }
+                      },
+                      [_c("h1", [_vm._v("Danger modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c("h4", [_vm._v("Background Success Modal ")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal12",
+                            modifiers: { modal12: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Success Modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal12",
+                          title: "Success Modal",
+                          "header-bg-variant": "success",
+                          "header-text-variant": "light",
+                          "footer-bg-variant": "success",
+                          "footer-text-variant": "light"
+                        }
+                      },
+                      [_c("h1", [_vm._v(" Success modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-lg-4 mt-3" },
+              [
+                _c(
+                  "b-card",
+                  [
+                    _c("h4", [_vm._v("Background Secondary Modal ")]),
+                    _vm._v(" "),
+                    _c(
+                      "b-btn",
+                      {
+                        directives: [
+                          {
+                            name: "b-modal",
+                            rawName: "v-b-modal.modal13",
+                            modifiers: { modal13: true }
+                          }
+                        ]
+                      },
+                      [_vm._v("Secondary modal")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-modal",
+                      {
+                        attrs: {
+                          id: "modal13",
+                          title: "Deafult Modal",
+                          "header-bg-variant": "secondary",
+                          "header-text-variant": "light",
+                          "footer-bg-variant": "secondary",
+                          "footer-text-variant": "light"
+                        }
+                      },
+                      [_c("h1", [_vm._v("modal")])]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
             )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("49"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("540"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$45/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(2),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(3),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(5),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("99"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1104"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$92/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(8),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6  col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(9),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("159"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("1788"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$149/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(10),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(11),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6 col-lg-6 col-xl-3" }, [
-        _c("div", { staticClass: "modal-1" }, [
-          _c("div", { staticClass: "pack-heading" }, [
-            _vm._m(13),
-            _vm._v(" "),
-            (_vm.selected == "monthly"
-            ? true
-            : false)
-              ? _c("div", { staticClass: "pack-price monthly-pack" }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("399"),
-                  _c("span", [_vm._v("/mo")])
-                ])
-              : _c("div", { staticClass: "pack-price yearly-pack " }, [
-                  _c("sup", { staticClass: "dollar" }, [_vm._v("$")]),
-                  _vm._v("4620"),
-                  _c("span", [_vm._v("/yr")])
-                ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("$385/mo If you get yearly Pack.")])
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("TRACKED CAMPAIGNS")
-          ]),
-          _vm._v(" "),
-          _vm._m(14),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [
-            _vm._v("KEYWORD EXPLORER")
-          ]),
-          _vm._v(" "),
-          _vm._m(15),
-          _vm._v(" "),
-          _c("p", { staticClass: "section-head" }, [_vm._v("USER ACCESS")]),
-          _vm._v(" "),
-          _vm._m(16),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-primary center-block btn-getit" },
-            [_vm._v("Get it now")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(17)
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Basic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("300")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Branded Reports")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("5 Keywords Reports")])]),
-      _vm._v(" "),
-      _c("li", { staticClass: "text-dummy" }, [_vm._v("No Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("2")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "trending-tag" }, [
-      _c("div", { staticClass: "tag-design bg-primary text-white" }, [
-        _vm._v("Best\n                        "),
-        _c("br"),
-        _vm._v(" Package")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Econamic")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("750")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("500,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("5,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("10")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Premium")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,700")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,125,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("12,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("50")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("25")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "pack-title" }, [
-      _c("strong", [_vm._v("Enterprise")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("100")]), _vm._v(" Campaigns")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("7,500")]), _vm._v(" Keyword Ranking")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("1,250,000")]), _vm._v(" Crawled Pages")]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("Branded Reports")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [
-        _c("strong", [_vm._v("30,000")]),
-        _vm._v(" Full Keywords Reports")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("strong", [_vm._v("90")]), _vm._v(" Full Keywords List")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "pack-details list-unstyled" }, [
-      _c("li", [_c("strong", [_vm._v("30")]), _vm._v(" Seats")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
-      _c("p", { staticClass: "pro-option" }, [
-        _vm._v("Want to be a PRO User?")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "contact-info" }, [
-        _vm._v("We have larger and the best plans designed for you.")
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-contact",
-          attrs: { href: "javascript:void(0)" }
-        },
-        [_vm._v("Contact Us")]
+          ])
+        ]
       )
-    ])
-  }
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6d17cc0c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-0c978dd7", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 500:
+/***/ 458:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(2267)
-}
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2269)
+var __vue_script__ = __webpack_require__(1463)
 /* template */
-var __vue_template__ = __webpack_require__(2270)
+var __vue_template__ = __webpack_require__(1464)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -731,7 +732,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/pricing.vue"
+Component.options.__file = "resources/components/pages/advanced_modals.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -740,9 +741,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d17cc0c", Component.options)
+    hotAPI.createRecord("data-v-0c978dd7", Component.options)
   } else {
-    hotAPI.reload("data-v-6d17cc0c", Component.options)
+    hotAPI.reload("data-v-0c978dd7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

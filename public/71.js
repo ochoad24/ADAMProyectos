@@ -1,22 +1,22 @@
 webpackJsonp([71],{
 
-/***/ 2262:
+/***/ 1520:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2263);
+var content = __webpack_require__(1521);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("5ee8b098", content, false, {});
+var update = __webpack_require__(26)("62d65e6e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3933b1e1\",\"scoped\":false,\"hasInlineConfig\":true}!./invoice.css", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3933b1e1\",\"scoped\":false,\"hasInlineConfig\":true}!./invoice.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-06f797f7\",\"scoped\":false,\"hasInlineConfig\":true}!./grids_layout.css", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-06f797f7\",\"scoped\":false,\"hasInlineConfig\":true}!./grids_layout.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,27 +27,28 @@ if(false) {
 
 /***/ }),
 
-/***/ 2263:
+/***/ 1521:
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(28);
 exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.invoice_bg {\n    margin  : 15px 0 30px;\n    padding : 20px;\n}\n.table {\n    border       : 1px solid #ccc;\n    table-layout : fixed;\n}\n.table tbody > tr {\n    height : 50px;\n}\n.table-responsive {\n    width : 100%;\n}\ntd,\nth {\n    width     : 40px;\n    word-wrap : break-word;\n}\n.terms_conditions {\n    list-style : initial;\n}\n.table-condensed > thead > tr > th {\n    padding : 15px 8px;\n    width   : 80px;\n}\n.table-condensed > thead > tr > th:first-child {\n    width : 180px;\n}\n.table-responsive > .table > tbody > tr > td,\n.table-responsive > .table > tfoot > tr > td {\n    padding     : 15px 8px;\n    white-space : normal;\n}\n#add_row i, .row_delete i {\n    cursor : pointer;\n}\n@media print {\n.btn-section,\n    .no-print,\n    .content-header,\n    .left-aside,\n    .header,\n    #customtable tr > td:last-child, #customtable tr > th:last-child {\n        display : none;\n}\n.table-responsive {\n        display : inline-table;\n        width   : 100%;\n}\n    /*#invoice-stmt {*/\n        /*width : 100%;*/\n    /*}*/\n.right-side {\n        margin-left : 0;\n}\n}\n#customtable thead tr th{\n    color: #fff;\n}", ""]);
+exports.push([module.i, "/*grid layouts*/\n.grid-property {\n    padding          : 1.5em 0;\n    background-color : #fff;\n    border           : 2px solid #888;\n    border-radius    : 3px;\n}\n.grid-section {\n    margin-top : 77px;\n}\n.grid-section h3 {\n    margin-left : 15px;\n}\n/*grid layout responsive*/\n@media only screen and (max-width : 768px) {\n.grid-selection2 {\n        margin-top : 22px;\n}\n}\n@media only screen and (max-width : 425px) {\n.grid-selection1 {\n        margin-top : 22px;\n}\n}\n/*grid-stack*/\n.grid-stack-item-content {\n    background : url(" + escape(__webpack_require__(567)) + ");\n    color      : #2c3e50;\n    text-align : center;\n    font-size  : 20px;\n}\n.grid-stack-item-content .fa {\n    font-size : 64px;\n    display   : block;\n    margin    : 20px 0 10px 0;\n}\n.grid-stack > .grid-stack-item > .grid-stack-item-content {\n    cursor : move;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2264:
+/***/ 1522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
 //
 //
@@ -197,394 +198,404 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "invoice",
+    name: "grid_layout",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
-    data: function data() {
-        return {
-            tr: [{ itemname: "Samsung Galaxy Grand", cost: "$700", qunatity: "1", total: "$700" }, { itemname: " Samsung Galaxy Core", cost: "$1110", qunatity: "1", total: "$1110" }, { itemname: "Screen Protector", cost: "$7", qunatity: "4", total: "$28" }]
-        };
-    },
-
-    methods: {
-        addRow: function addRow() {
-            this.tr.push({});
-        },
-        removeRow: function removeRow(index) {
-            this.tr.splice(index, 1);
-        }
-    },
-    mounted: function mounted() {
-        "use strict";
-    },
+    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 2265:
+/***/ 1523:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    { staticClass: "content p-l-r-15", attrs: { id: "invoice-stmt" } },
-    [
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
       _c(
-        "card",
-        { attrs: { title: "<i class='fa fa-fw ti-credit-card'></i> Invoice" } },
+        "div",
+        { staticClass: "col-md-12 " },
         [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-md-6 col-sm-12 col-12 col-lg-6 col-xl-6 invoice_bg"
-              },
-              [
-                _c("h4", [
-                  _c("img", {
-                    attrs: {
-                      src: __webpack_require__(2266),
-                      alt: "clear"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("h4", [_c("strong", [_vm._v("Billing Details:")])]),
-                _vm._v(" "),
-                _c("address", [
-                  _vm._v(
-                    "\n                    Lewis Doe\n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(" 6889 Lunette Street\n                    "),
-                  _c("br"),
-                  _vm._v(" Melbourne,Austria\n                    "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("strong", [_vm._v("Phone:")]),
-                  _vm._v("12-345-678\n                    "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("strong", [_vm._v("Mail Id:")]),
-                  _vm._v(" Adelle_Champlin@yahoo.com\n                ")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-md-6 col-sm-12 col-12 col-lg-6 col-xl-6 invoice_bg text-right"
-              },
-              [
-                _c("div", { staticClass: "float-right" }, [
-                  _c("h4", [_c("strong", [_vm._v("#678956 / 25 Sep 2016")])]),
-                  _vm._v(" "),
-                  _c("h4", [_c("strong", [_vm._v("Invoice Info:")])]),
-                  _vm._v(" "),
-                  _c("address", [
+          _c(
+            "card",
+            {
+              attrs: {
+                title:
+                  "<i class='ti-layout-menu-v'></i> Responsive Grid Examples"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-12" }, [
+                  _c("p", [
                     _vm._v(
-                      "\n                        Tom Percy\n                        "
-                    ),
-                    _c("br"),
-                    _vm._v(" 3946 Penn Street\n                        "),
-                    _c("br"),
-                    _vm._v(" Ohio,USA\n                        "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v("Phone:")]),
-                    _vm._v(" 32-666-756\n                        "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("strong", [_vm._v("Mail Id:")]),
-                    _vm._v(" Lucy_Maggio16@yahoo.com\n                    ")
+                      "\n                            This demostrates Bootstrap Grid system and how it responds to different screen\n                            sizes.\n                        "
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("span")
-                ])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("div", { staticClass: "table-responsive" }, [
-              _c(
-                "table",
-                {
-                  staticClass: "table table-striped table-condensed",
-                  attrs: { id: "customtable" }
-                },
-                [
-                  _c("thead", [
-                    _c("tr", { staticClass: "bg-primary" }, [
-                      _c("th", [_c("strong", [_vm._v("Item Name")])]),
-                      _vm._v(" "),
-                      _c("th", [_c("strong", [_vm._v("Unit Cost")])]),
-                      _vm._v(" "),
-                      _c("th", { staticClass: "text-center" }, [
-                        _c("strong", [
-                          _vm._v(
-                            "\n                                Quantity\n                            "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("th"),
-                      _vm._v(" "),
-                      _c("th", { staticClass: "text-right" }, [
-                        _c("strong", [_vm._v("Total")])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "th",
-                        {
-                          staticClass: "text-center",
-                          attrs: { id: "add_row" }
-                        },
-                        [
-                          _c("i", {
-                            staticClass: "fa fa-fw ti-plus",
-                            on: { click: _vm.addRow }
-                          })
-                        ]
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "tbody",
-                    _vm._l(_vm.tr, function(input, index) {
-                      return _c("tr", [
-                        _c(
-                          "td",
-                          {
-                            staticClass: "emptyrow",
-                            attrs: { contenteditable: "" }
-                          },
-                          [_vm._v(_vm._s(input.itemname))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "td",
-                          {
-                            staticClass: "emptyrow",
-                            attrs: { contenteditable: "" }
-                          },
-                          [_vm._v(_vm._s(input.cost))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "td",
-                          {
-                            staticClass: "emptyrow text-center",
-                            attrs: { contenteditable: "" }
-                          },
-                          [_vm._v(_vm._s(input.qunatity))]
-                        ),
-                        _vm._v(" "),
-                        _c("td", {
-                          staticClass: "emptyrow text-right",
-                          attrs: { contenteditable: "" }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "td",
-                          {
-                            staticClass: "emptyrow text-right",
-                            attrs: { contenteditable: "" }
-                          },
-                          [
-                            _vm._v(
-                              _vm._s(input.total) + "\n                        "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "text-center row_delete" }, [
-                          _c("i", {
-                            staticClass: "fa fa-fw ti-close",
-                            on: {
-                              click: function($event) {
-                                return _vm.removeRow(index)
-                              }
-                            }
-                          })
-                        ])
-                      ])
-                    }),
-                    0
-                  ),
-                  _vm._v(" "),
-                  _c("tfoot", [
-                    _c("tr", [
-                      _c("td", { staticClass: "highrow" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "highrow" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "highrow text-center" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "highrow text-right" }, [
-                        _c("strong", [
-                          _vm._v(
-                            "\n                                Sub Total:  \n                            "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "highrow text-right" }, [
-                        _c("strong", { attrs: { contenteditable: "" } }, [
-                          _vm._v("$1838")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("td")
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "emptyrow" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "emptyrow" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "emptyrow text-center" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "emptyrow text-right" }, [
-                        _c("strong", [
-                          _vm._v(
-                            "\n                                Vat:  \n                            "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "highrow text-right" }, [
-                        _c("strong", { attrs: { contenteditable: "" } }, [
-                          _vm._v("$20")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("td")
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "emptyrow" }, [
-                        _c("i", {
-                          staticClass: "livicon",
-                          attrs: {
-                            "data-name": "barcode",
-                            "data-size": "60",
-                            "data-loop": "true"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "emptyrow" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "emptyrow text-center" }),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "emptyrow text-right" }, [
-                        _c("strong", [
-                          _vm._v(
-                            "\n                                Total:  \n                            "
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "highrow text-right" }, [
-                        _c("strong", { attrs: { contenteditable: "" } }, [
-                          _vm._v("$1858")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("td")
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("h4", [_c("Strong", [_vm._v("Terms and conditions:")])], 1),
-            _vm._v(" "),
-            _c("ul", { staticClass: "terms_conditions" }, [
-              _c("li", [
-                _vm._v(
-                  "An invoice must accompany products returned for warantty"
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _vm._v(
-                  "Balance due within 10 days of invoice date,1.5% interest/month thereafter."
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _vm._v(
-                  "All goods returned for replacement/credit must be saleable condition with original\n                    packaging.\n                "
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "btn-section" }, [
-            _c("div", { staticClass: "col-md-12 col-sm-12 col-12" }, [
-              _c("span", { staticClass: "float-right" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "btn btn-responsive button-alignment btn-success mb-3",
-                    attrs: { type: "button", "data-toggle": "button" }
-                  },
-                  [
-                    _c("i", { staticClass: "fa fa-fw ti-money" }),
-                    _vm._v(" Pay Now\n                                        ")
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "btn btn-responsive button-alignment btn-primary mb-3",
-                    attrs: { type: "button", "data-toggle": "button" }
-                  },
-                  [
+                  _c("div", {}, [
                     _c(
-                      "span",
+                      "p",
+                      { staticClass: "d-lg-block d-md-none d-sm-none d-none" },
+                      [
+                        _vm._v(
+                          "\n                                lg indicates that the large grid displaying. The grid stacks horizontally\n                                < 1200px.\n                            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "d-md-block d-lg-none d-sm-none d-none" },
+                      [
+                        _vm._v(
+                          "\n                                md indicates that the medium grid displaying. The grid stacks horizontally\n                                < 992px.\n                            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "p",
                       {
-                        staticStyle: { color: "#fff" },
-                        attrs: { onclick: "javascript:window.print();" }
+                        staticClass:
+                          "d-sm-block d-md-none d-lg-none d-xl-none d-none"
                       },
                       [
-                        _c("i", { staticClass: "fa fa-fw ti-printer" }),
                         _vm._v(
-                          "\n                                            Print\n                                        "
+                          "\n                                sm indicates that the small grid displaying. The grid stacks horizontally\n                                < 768px.\n                            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      {
+                        staticClass:
+                          "d-block d-sm-none d-md-none d-lg-none d-xl-none"
+                      },
+                      [
+                        _vm._v(
+                          "\n                                xs indicates that the extra small grid displaying. This grid is always\n                                horizontal.\n                            "
                         )
                       ]
                     )
-                  ]
-                )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-12 grid-section" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      { staticClass: "col-lg-4 col-md-4 col-sm-3 col-4" },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-lg-block d-md-none d-sm-none d-none"
+                              },
+                              [_vm._v(".col-lg-4")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-md-block d-lg-none d-none d-sm-none"
+                              },
+                              [_vm._v(".col-md-4")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-sm-block d-md-none d-lg-none d-none"
+                              },
+                              [_vm._v(".col-sm-3")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-block d-md-none d-sm-none d-lg-none"
+                              },
+                              [_vm._v(".col-4")]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-lg-4 col-md-2 col-sm-3 col-4" },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-lg-block d-md-none d-sm-none d-none"
+                              },
+                              [_vm._v(".col-lg-4")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-md-block d-lg-none d-none d-sm-none"
+                              },
+                              [_vm._v(".col-md-2")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-sm-block d-md-none d-lg-none d-none"
+                              },
+                              [_vm._v(".col-sm-3")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-block d-md-none d-sm-none d-lg-none"
+                              },
+                              [_vm._v(".col-4")]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-lg-4 col-md-6 col-sm-6 col-4" },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-lg-block d-md-none d-sm-none d-none"
+                              },
+                              [_vm._v(".col-lg-4")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-md-block d-lg-none d-none d-sm-none"
+                              },
+                              [_vm._v(".col-md-6")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-sm-block d-md-none d-lg-none d-none"
+                              },
+                              [_vm._v(".col-sm-6")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "d-block d-md-none d-sm-none d-lg-none"
+                              },
+                              [_vm._v(".col-4")]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-12" }, [
+                  _c("div", { staticClass: "grid-section" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("label", { staticClass: "col-12" }, [
+                        _vm._v("xs Grid")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-4")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-4")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-4")])]
+                        )
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-12" }, [
+                  _c("div", { staticClass: "grid-section" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-sm-12" }, [
+                        _c("label", [_vm._v("sm Grid")])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-sm-2" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-sm-2")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-sm-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: " text-center grid-property " },
+                          [_c("span", [_vm._v(".col-sm-4")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-sm-6" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-sm-6")])]
+                        )
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-12" }, [
+                  _c("div", { staticClass: "grid-section" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-md-12" }, [
+                        _c("label", [_vm._v("md Grid")])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-2" }, [
+                        _c(
+                          "div",
+                          { staticClass: " text-center grid-property " },
+                          [_c("span", [_vm._v(".col-md-2")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-md-4")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-6" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-md-6")])]
+                        )
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-12" }, [
+                  _c("div", { staticClass: "grid-section" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-lg-12" }, [
+                        _c("label", [_vm._v("lg Grid")])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-lg-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: " text-center grid-property " },
+                          [_c("span", [_vm._v(".col-lg-4")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-lg-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-lg-4")])]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-lg-4" }, [
+                        _c(
+                          "div",
+                          { staticClass: "text-center grid-property " },
+                          [_c("span", [_vm._v(".col-lg-4")])]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
               ])
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "background-overlay" })
-    ],
-    1
-  )
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "background-overlay" })
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -592,32 +603,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3933b1e1", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-06f797f7", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 2266:
-/***/ (function(module, exports) {
-
-module.exports = "/images/logoblue.png?9b09dfcfe9e03feaf0f425b6dcfd3e62";
-
-/***/ }),
-
-/***/ 499:
+/***/ 467:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2262)
+  __webpack_require__(1520)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2264)
+var __vue_script__ = __webpack_require__(1522)
 /* template */
-var __vue_template__ = __webpack_require__(2265)
+var __vue_template__ = __webpack_require__(1523)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -634,7 +638,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/invoice.vue"
+Component.options.__file = "resources/components/pages/grid_layout.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -643,9 +647,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3933b1e1", Component.options)
+    hotAPI.createRecord("data-v-06f797f7", Component.options)
   } else {
-    hotAPI.reload("data-v-3933b1e1", Component.options)
+    hotAPI.reload("data-v-06f797f7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -657,19 +661,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 531:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(532)
+  __webpack_require__(531)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(534)
+var __vue_script__ = __webpack_require__(533)
 /* template */
-var __vue_template__ = __webpack_require__(535)
+var __vue_template__ = __webpack_require__(534)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -709,13 +713,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 532:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(533);
+var content = __webpack_require__(532);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -736,7 +740,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 533:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -751,7 +755,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 534:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -796,7 +800,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 535:
+/***/ 534:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -855,6 +859,13 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
   }
 }
+
+/***/ }),
+
+/***/ 567:
+/***/ (function(module, exports) {
+
+module.exports = "/images/brick-wall.png?effad1520fc39d8897385d7004d2dbf4";
 
 /***/ })
 
