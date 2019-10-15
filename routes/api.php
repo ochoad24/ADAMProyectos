@@ -63,12 +63,13 @@ use Illuminate\Http\Request;
         Route::put('/Permiso/editar','PermisoController@edit');
         Route::delete('/Permiso/{permiso}/delete', 'PermisoController@drop');
 
-        //Rutas para los proyectos 
+         //Rutas para los proyectos 
         Route::get('/proyecto', 'ProyectoController@index');
         Route::post('/proyecto/registrar', 'ProyectoController@store');
         Route::put('/proyecto/actualizar', 'ProyectoController@update');
         Route::get('/proyecto/select', 'ProyectoController@select');
-        
+        Route::get('/proyecto/pdf', 'ProyectoController@proyectoPdf')->name('proyecto_pdf');
+    
         Route::put('/proyecto/activate', 'ProyectoController@activate');
         Route::put('/proyecto/deactivate', 'ProyectoController@deactivate');
         Route::get('/proyecto/orgs', 'ProyectoController@orgs');
@@ -93,6 +94,8 @@ use Illuminate\Http\Request;
         Route::put('/User/activar', 'UserController@activate');
         Route::put('/User/desactivar', 'UserController@desactivate');
         Route::get('/User/select','UserController@select');
+        Route::get('/User/getUsers','UserController@getUsers');
+        Route::get('/User/pdf','UserController@responsablePdf')->name('responsable_pdf');
         // Rutas para los Usuarios
         // Rutas para las actividades
         Route::get('/Actividad', 'ActividadController@index');

@@ -17,6 +17,7 @@ import VueAxios from 'vue-axios'
 import auth from './auth'
 import 'es6-promise/auto'
 
+import alertify from 'alertifyjs';
 
 Vue.use(window.VueCharts);
 Vue.use(BootstrapVue)
@@ -52,6 +53,7 @@ router.afterEach((to, from) => {
         store.commit('left_menu', "open");
     }
 })
+
 var url = window.location.href;
 var SwLocation='/sw.js';
 if(navigator.serviceWorker){
@@ -62,6 +64,26 @@ if(navigator.serviceWorker){
 }
 
 
+// Ver si existe conexion a Internet
+function isOnline() {
+
+    if ( navigator.onLine ) {
+        // tenemos conexión
+        // console.log('online');
+        alertify.success('Acceso a internet');
+
+
+    } else{
+        // No tenemos conexión
+        alertify.error('Sin acceso a internet');
+    }
+
+}
+
+window.addEventListener('online', isOnline );
+window.addEventListener('offline', isOnline );
+
+isOnline();
 
 Vue.router = router;
 Vue.use(VueAuth, auth);

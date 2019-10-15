@@ -30,6 +30,21 @@ class ProyectoController extends Controller
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $orgs;
     }
+
+    public function proyectoPdf(Request $request) {
+        $proyecto = Proyecto::select(DB::raw('proyectos.IdProyecto, proyectos.Titulo, proyectos.Descripcion, 
+        ((proyectos.actividadesCompletadas * 100) / proyectos.actividades) as completado,
+         proyectos.FechaInicio, proyectos.FechaFin'))
+        ->where('proyectos.IdProyecto', '=', $request->id)->get();
+
+        $actividades = Actividad::select(DB::raw('actividades.id, actividades.actividad, actividades.codigo_actividad, actividades.fechaInicio, actividades.fechaFinal,
+         ((actividades.tareasCompletadas * 100) / actividades.tareas) as completado'))
+        ->where('actividades.idProyecto', '=', $request->id)
+        ->orderBy('actividades.codigo_actividad', 'asc')->get();
+
+        $pdf = \PDF::loadView('pdf.proyecto', ['proyecto' => $proyecto, 'actividades' => $actividades]);
+        return $pdf->stream('reporte-'.$proyecto[0]->Titulo.'.pdf');
+    }
     /**
      * Store a newly created resource in storage.
      *

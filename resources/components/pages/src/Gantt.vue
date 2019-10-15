@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="display-2 text-xs-center pa-5">
+       <h1 style="color:#668c2d" > Progreso General de Proyectos</h1>
+    </div>
     <v-layout>
         <v-flex>
             <v-card>
@@ -12,14 +15,6 @@
                 >
                 <gantt-header slot="header"></gantt-header>
                 </gantt-elastic>
-                <v-btn
-                    color="blue-grey"
-                    class="white--text"
-                    @click="addTask"
-                >
-                    Add Task
-                    <v-icon right dark>add</v-icon>
-                </v-btn>
             </v-card>
         </v-flex>
     </v-layout>
@@ -87,20 +82,15 @@ let options = {
     columns: [
       {
         id: 2,
-        label: "Description",
+        label: "Título",
         value: "label",
         width: 200,
         expander: true,
         html: true,
-        events: {
-          click({ data, column }) {
-            alert("description clicked!\n" + data.label);
-          }
-        }
       },
       {
         id: 3,
-        label: "Assigned to",
+        label: "Descripción",
         value: "user",
         width: 130,
         html: true
@@ -112,14 +102,8 @@ let options = {
         width: 78
       },
       {
-        id: 4,
-        label: "Type",
-        value: "type",
-        width: 68
-      },
-      {
         id: 5,
-        label: "%",
+        label: "% Completado",
         value: "progress",
         width: 130,
         style: {
@@ -198,31 +182,44 @@ export default {
     cargarDatos(proyectos1) {
       let array = proyectos1;
       let me = this;
-      array.forEach((item) => {
-        let task = new Object();
-        task.id = item.IdProyecto;
-        task.label = item.Titulo;
-        task.user = '<a href="https://www.google.com/search?q=Johnattan+Owens" target="_blank" style="color:#0077c0;">Johnattan Owens</a>';
-        task.start = Date.parse(item.FechaInicio);
-        task.end = Date.parse(item.FechaFin);
-        task.percent = 10;
-        task.type = "project";
-        me.tasks.push(task);
-      });
-    },
-
-    addTask() {
-      this.tasks.push({
-        id: this.lastId++,
-        label:
-          '<a href="https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" target="_blank" style="color:#0077c0;">Yeaahh! you have added a task bro!</a>',
-        user:
-          '<a href="https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" target="_blank" style="color:#0077c0;">Awesome!</a>',
-        start: getDate(24 * 3),
-        duration: 1 * 24 * 60 * 60 * 1000,
-        percent: 50,
-        type: "project"
-      });
+      for (let index = 0; index < array.length; index++) {
+        const item = array[index];
+        if(index === 0) {
+          let task = new Object();
+          let per = 0;
+          if(item.actividadesCompletadas === 0) {
+              per = 0;
+          } else {
+              per = ((item.actividadesCompletadas * 100) / item.actividades); 
+          }
+          task.id = item.IdProyecto;
+          task.label = `<a href="/#/GanttProyecto/${item.IdProyecto}" style="color:#0077c0;">${item.Titulo}</a>`;
+          task.user = item.Descripcion;
+          task.start = Date.parse(item.FechaInicio);
+          task.end = Date.parse(item.FechaFin);
+          task.percent = per;
+          task.type = "project";
+          me.tasks.splice(0, 1, task);
+        } else {
+          let task = new Object();
+          let per = 0;
+          if(item.actividadesCompletadas === 0) {
+              per = 0;
+          } else {
+              per = ((item.actividadesCompletadas * 100) / item.actividades); 
+          }
+          task.id = item.IdProyecto;
+          task.label =  `<a href="/#/GanttProyecto/${item.IdProyecto}" style="color:#0077c0;">${item.Titulo}</a>`;
+          task.user = item.Descripcion;
+          task.start = Date.parse(item.FechaInicio);
+          task.end = Date.parse(item.FechaFin);
+          task.percent = per;
+          task.type = "project";
+          me.tasks.push(task);
+        }
+      }
+      // console.log("LARGO" + this.tasks.length);
+      
     },
     tasksUpdate(tasks) {
       this.tasks = tasks;

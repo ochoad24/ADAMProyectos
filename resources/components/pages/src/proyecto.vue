@@ -12,11 +12,11 @@
             -->
                         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="green darken-1" dark class="mb-2" v-on="on" @click="editar=0">Nuevo
+                                <v-btn color="#668c2d" dark class="mb-2" v-on="on" @click="editar=0">Nuevo
                                     Proyecto</v-btn>
                             </template>
                             <v-card>
-                                <v-toolbar dark color="green darken-1">
+                                <v-toolbar dark color="#668c2d">
                                     <v-btn icon dark @click="dialog = false">
                                         <v-icon col="white">clear</v-icon>
                                     </v-btn>
@@ -26,11 +26,11 @@
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12>
-                                                <v-text-field v-model="titulo" label="Titulo del proyecto">
+                                                <v-text-field v-model="titulo" label="Titulo del proyecto" maxlength="100"  required :rules="nameRules" :counter="100" >
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12>
-                                                <v-textarea v-model="descripcion" label="Descripción del proyecto">
+                                                <v-textarea v-model="descripcion" label="Descripción del proyecto" maxlength="1000"  required :rules="desRules" :counter="1000">
                                                 </v-textarea>
                                             </v-flex>
                                             <v-flex xs12 sm12 md6>
@@ -42,7 +42,7 @@
                                                         <v-text-field v-model="fechaI" label="Ingrese fecha de inicio"
                                                             prepend-icon="event" readonly v-on="on"></v-text-field>
                                                     </template>
-                                                    <v-date-picker v-model="fechaI" no-title scrollable>
+                                                    <v-date-picker v-model="fechaI" no-title scrollable locale="gt">
                                                         <v-spacer></v-spacer>
                                                         <v-btn flat color="primary" @click="menu = false">Cancelar
                                                         </v-btn>
@@ -62,7 +62,7 @@
                                                             label="Ingrese fecha de finalización" prepend-icon="event"
                                                             readonly v-on="on"></v-text-field>
                                                     </template>
-                                                    <v-date-picker v-model="fechaF" no-title scrollable>
+                                                    <v-date-picker v-model="fechaF" no-title scrollable locale="gt">
                                                         <v-spacer></v-spacer>
                                                         <v-btn flat color="primary" @click="menu2 = false">Cancelar
                                                         </v-btn>
@@ -84,7 +84,7 @@
                                                 </multiselect>
                                             </v-flex>
                                             <v-flex xs12 sm12 md3>
-                                                <v-btn class="ma-2" color="green accent-3" dark @click="abrirOrg">
+                                                <v-btn class="ma-2" color="#668c2d" dark @click="abrirOrg">
                                                     <v-icon color="white" dark left>add_circle_outline</v-icon>Nueva
                                                     Organización
                                                 </v-btn>
@@ -118,8 +118,8 @@
 
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" v-if="editar===0" flat @click="registrarProyecto">
+                                    <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" v-if="editar===0" flat @click="registrarProyecto">
                                         Guardar
                                     </v-btn>
                                     <v-btn color="blue darken-1" v-if="editar===1" flat @click="editarProyecto()">
@@ -138,7 +138,7 @@
                             <td class="text-xs-right">
                                 <template>
                                     <div class="text-xs-right">
-                                        <v-chip color="green" text-color="white" v-if="props.item.Estado==1">Activo
+                                        <v-chip color="#668c2d" text-color="white" v-if="props.item.Estado==1">Activo
                                         </v-chip>
                                         <v-chip color="red" text-color="white" v-else>Inactivo</v-chip>
                                     </div>
@@ -159,7 +159,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" class="mb-2" dark @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -170,14 +170,17 @@
                     <!-- DIALOGO PARA CREAR ORGANIZACION -->
                     <v-dialog v-model="dialog_org" persistent max-width="650px">
                         <v-card>
-                            <v-card-title>
-                                <span class="headline">Nueva Organización</span>
-                            </v-card-title>
+                           <v-toolbar dark color="#668c2d">
+                                    <v-btn icon dark @click="dialog = false">
+                                        <v-icon col="white">clear</v-icon>
+                                    </v-btn>
+                                    <v-toolbar-title >Nueva Organizacion</v-toolbar-title>
+                                </v-toolbar>
                             <v-card-text>
                                 <v-container grid-list-md>
                                     <v-layout wrap>
                                         <v-flex xs12>
-                                            <v-text-field v-model="nombre" label="Nombre de la organización">
+                                            <v-text-field v-model="nombre" label="Nombre de la organización" maxlength="150"  required :rules="ornameRules" :counter="150">
                                             </v-text-field>
                                         </v-flex>
                                         <v-flex xs12>
@@ -188,7 +191,7 @@
                                         </v-flex>
                                         <v-flex xs12>
                                             <v-text-field v-model="municipio"
-                                                label="Municipio de ubucación de la organización"></v-text-field>
+                                                label="Municipio de ubucación de la organización" maxlength="150"  required :rules="munnameRules" :counter="150"></v-text-field>
                                         </v-flex>
                                     </v-layout>
                                 </v-container>
@@ -206,8 +209,8 @@
 
                             <v-card-actions>
                                 <v-spacer></v-spacer>
-                                <v-btn color="blue darken-1" flat @click="close_org">Cancelar</v-btn>
-                                <v-btn color="blue darken-1" flat @click="registrarOrganizacion">Guardar Organización
+                                <v-btn color="#668c2d" flat @click="close_org">Cancelar</v-btn>
+                                <v-btn color="#668c2d" flat @click="registrarOrganizacion">Guardar Organización
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
@@ -221,6 +224,7 @@
     import Multiselect from 'vue-multiselect';
     import Vue from 'vue';
     import axios from 'axios';
+    import dayjs from "dayjs";
     export default {
         name: "Proyecto",
         components: {
@@ -229,6 +233,32 @@
         data: () => ({
             dialog: false,
             dialog_org: false,
+               ornameRules: [
+            v => !!v || 'El nombre de la organizacion no puede estar vacio',
+            v => (v && v.length <= 149) || 'El titulo del proyecto no puede ser mayor a 150',
+
+            ],
+               munnameRules: [
+            v => !!v || 'El nombre del municipio no puede estar vacio',
+            v => (v && v.length <= 149) || 'El nombre del municipio no puede ser mayor a 150',
+
+            ],
+                  nameRules: [
+            v => !!v || 'El titulo del proyecto no puede estar vacio',
+            v => (v && v.length <= 99) || 'El titulo del proyecto no puede ser mayor a 100',
+
+            ],
+              desRules: [
+           v => !!v || 'La descripcion del proyecto no puede estar vacio',
+            v => (v && v.length <= 999) || 'La descripcion del proyecto no puede ser mayor a 1000',
+
+            ],
+               fechafRules:[
+            v => !!v || 'Debe seleccionar una fecha final',
+            ],
+            fechaiRules:[
+           v => !!v || 'Debe seleccionar una fecha inicial',
+            ],
             orgs: [],
             error1: 0,
             select: [],
@@ -246,12 +276,14 @@
             IdProyecto: 0,
             Estado: 1,
             editar: 0,
+          
             headers: [
                 { text: 'Titulo', value: 'Titulo', align: 'left' },
                 { text: 'Descripcion', value: 'Descripcion', align: 'right' },
                 { text: 'Fecha de inicio', value: 'FechaInicio', align: 'right' },
                 { text: 'Fecha de finalización', value: 'FechaFin', align: 'right' },
-                { text: 'Estado', value: 'Estado', align: 'right' }
+                { text: 'Estado', value: 'Estado', align: 'right' },
+                {text: 'Acciones'}
             ],
             headersOrg: [
                 { text: "Organizacion", value: 'nombre', align: 'right' },

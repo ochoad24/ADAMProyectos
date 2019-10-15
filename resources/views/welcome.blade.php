@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#6b8f00">
-    
+    <link rel="stylesheet" href="/css/alertify.min.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,7 +20,7 @@
 </head>
 
 <body class="skin-default">
-        <div id="app"></div>
+        <div id="app"></div>     
 <script type="text/javascript" src="{{ url(mix('js/main.js'))}}"></script>
 
 </body>

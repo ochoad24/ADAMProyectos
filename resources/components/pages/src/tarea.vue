@@ -14,7 +14,7 @@
                         <v-spacer></v-spacer>
                         <!-- Aqui Empieza el modal -->
                         <v-dialog v-model="dialog2" fullscreen hide-overlay transition="dialog-bottom-transition">
-                            <v-toolbar dark color="green darken-1">
+                            <v-toolbar dark color="#668c2d">
                                 <v-btn icon dark @click="dialog2 = false">
                                     <v-icon col="white">clear</v-icon>
                                 </v-btn>
@@ -111,9 +111,9 @@
                         </v-dialog>
                         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="green darken-1" dark class="mb-2" v-on="on">Nueva Tarea</v-btn>
+                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nueva Tarea</v-btn>
                             </template>
-                            <v-toolbar dark color="green darken-1">
+                            <v-toolbar dark color="#668c2d">
                                 <v-btn icon dark @click="dialog = false">
                                     <v-icon col="white">clear</v-icon>
                                 </v-btn>
@@ -124,11 +124,11 @@
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12>
-                                                <v-text-field v-model="tarea" label="Nombre de la tarea">
+                                                <v-text-field v-model="tarea" label="Nombre de la tarea" maxlength="240"  required :rules="nameRules" :counter="240">
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm12 md12>
-                                                <v-slider v-model="number" color="green darken-1"
+                                                <v-slider v-model="number" color="#668c2d"
                                                     label="Cantidad de Tareas" min="1" max="100" thumb-label></v-slider>
                                             </v-flex>
                                             <v-flex xs12 sm12 md6>
@@ -142,9 +142,9 @@
                                                     </template>
                                                     <v-date-picker v-model="fechaI" no-title scrollable>
                                                         <v-spacer></v-spacer>
-                                                        <v-btn flat color="primary" @click="menu = false">Cancelar
+                                                        <v-btn flat color="#668c2d" @click="menu = false">Cancelar
                                                         </v-btn>
-                                                        <v-btn flat color="primary" @click="$refs.menu.save(fechaI)">
+                                                        <v-btn flat color="#668c2d" @click="$refs.menu.save(fechaI)">
                                                             Guardar</v-btn>
                                                     </v-date-picker>
                                                 </v-menu>
@@ -163,9 +163,9 @@
                                                     </template>
                                                     <v-date-picker v-model="fechaF" no-title scrollable>
                                                         <v-spacer></v-spacer>
-                                                        <v-btn flat color="primary" @click="menu2 = false">Cancelar
+                                                        <v-btn flat color="#668c2d" @click="menu2 = false">Cancelar
                                                         </v-btn>
-                                                        <v-btn flat color="primary" @click="$refs.menu2.save(fechaF)">
+                                                        <v-btn flat color="#668c2d" @click="$refs.menu2.save(fechaF)">
                                                             Guardar</v-btn>
                                                     </v-date-picker>
                                                 </v-menu>
@@ -237,8 +237,8 @@
                                 </template>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" flat @click="save">Guardar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="save">Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -272,7 +272,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -302,6 +302,11 @@
             },
             estadisticas: [],
             estadistica: [],
+                 nameRules: [
+            v => !!v || 'El nombre de la tarea no puede estar vacia',
+            v => (v && v.length <= 239) || 'El nombre de la tarea no puede ser mayor a 240',
+
+            ],
             number: 0,
             users: [],
             tipos: [],

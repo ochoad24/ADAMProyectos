@@ -1,7 +1,7 @@
 <template>
     <div class="row user-list">
         <div class="col-lg-12">
-            <b-card header="Usuarios" header-tag="h4" class="bg-primary-card">
+            <b-card header="Usuarios" header-tag="h4" class="bg-primary-card" >
                 <div class="table-responsive">
                     <v-toolbar flat color="white">
                         <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
@@ -9,12 +9,15 @@
                         <v-spacer></v-spacer>
                         <v-dialog v-model="dialog" max-width="600px">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="primary" dark class="mb-2" v-on="on">Nuevo Usuario</v-btn>
+                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nuevo Usuario</v-btn>
                             </template>
                             <v-card>
-                                <v-card-title>
-                                    <span class="headline">{{ formTitle }}</span>
-                                </v-card-title>
+                                <v-toolbar dark color="#668c2d">
+                                <v-btn icon dark @click="dialog2 = false">
+                                    <v-icon col="white">clear</v-icon>
+                                </v-btn>
+                                <v-toolbar-title>Nuevo Usuario</v-toolbar-title>
+                            </v-toolbar>
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
@@ -46,8 +49,8 @@
                                 </template>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" flat @click="save">Guardar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="save">Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -66,7 +69,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -103,6 +106,7 @@
             error: 0,
             errorMsj: [],
             usuarios: [],
+            roles: [],
             editedIndex: -1,
             editedItem: {
                 id: 0,

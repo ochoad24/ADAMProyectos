@@ -168,6 +168,7 @@
             tasks,
             options,
             dynamicStyle: {},
+            id: -1,
         }),
 
         computed: {
@@ -195,23 +196,28 @@
         // },
         mounted() {
             this.proyecto=this.$store.state.proyecto;
+            this.id = this.$route.params.id;
             console.log(this.proyecto);
+            console.log("PARAM" + ' ' + this.$route.params.id);
             this.initialize();
         },
         methods: {
             initialize() {
-                console.log('Initialize');
-                let me = this;
-                tasks = [ {}, ];
-                axios.get(`/proyecto/selectproject?id=${this.proyecto.id}`)
-                .then(function (response) {
-                    me.project = response.data;
-                    me.cargarActividades(me.proyecto.id);
-                })
-                .catch(function (error) {
-                    console.log("Error " + error.response);
-                });
-
+                if(this.id === -1)
+                    this.gantt = false;
+                else {
+                    console.log('Initialize');
+                    let me = this;
+                    tasks = [ {}, ];
+                    axios.get(`/proyecto/selectproject?id=${this.id}`)
+                    .then(function (response) {
+                        me.project = response.data;
+                        me.cargarActividades(me.id);
+                    })
+                    .catch(function (error) {
+                        console.log("Error " + error.response);
+                    });
+                }
             },
             cargarActividades(id) {
                 let me = this;
@@ -219,7 +225,7 @@
                 .then(function (response) {
                     me.actividades = response.data;
                     console.log(response.data);
-                    me.cargarTareas(me.proyecto.id);
+                    me.cargarTareas(me.id);
                 })
                 .catch(function (error) {
                     console.log(error.response);
@@ -299,7 +305,7 @@
                     }
                     task.id = me.lastId++;
                     task.label = item.tarea;
-                    task.user = '<a style="color:#0077c0;">Tarea</a>';
+                    task.user = `<a style="color:#0077c0;">Tarea</a>`;
                     task.start = Date.parse(item.fechaInicio);
                     task.end = Date.parse(item.fechaFinal);
                     task.percent = per;

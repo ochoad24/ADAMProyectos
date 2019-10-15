@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use App\Tarea;
 use App\Notifications\CreateAccountNotification;
 use Illuminate\Support\Facades\Notification;
 
@@ -27,6 +28,41 @@ class UserController extends Controller
     {
         $users = User::all();
         return $users;
+    }
+    public function getUsers() {
+        $users = User::join('encargado', 'encargado.idEmpleado', '=', 'users.id')
+        ->select(DB::raw('users.id, CONCAT(users.nombre, " ",users.apellido) as nombreEmp'))
+        ->groupBy('users.id', 'users.nombre', 'users.apellido')->get();
+        return $users;
+    }
+
+    public function responsablePdf(Request $request) {
+        $responsable = User::select(DB::raw('users.id, CONCAT(users.nombre, " ",users.apellido) as nombreEmp'))
+        ->where('users.id', '=', $request->id)->get();
+
+        $tareas = Tarea::join('encargado', 'encargado.idTarea', '=', 'tarea.id')
+        ->join('users', 'users.id', '=', 'encargado.IdEmpleado')
+        ->join('actividades', 'actividades.id', '=', 'tarea.idActividad')
+        ->select(DB::raw('tarea.id, tarea.tarea, tarea.participantes, tarea.fechaRealizacion, tarea.estado, tarea.fechaFinal,
+         CONCAT(actividades.codigo_actividad, " ", actividades.actividad) as actividad'))
+        ->where('encargado.idEmpleado', '=', $request->id)
+        ->orderBy('actividad', 'asc')->get();
+
+        $pdf = \PDF::loadView('pdf.responsable', ['responsable' => $responsable, 'tareas' => $tareas]);
+        return $pdf->stream('reporte-'.$responsable[0]->id.'.pdf');
+    }
+
+    public function desactivate(Request $request){
+        $id=$request->id;
+        try{
+            $usuario=User::findOrFail($id);
+            $usuario->estado='0';
+            $usuario->save();
+            return 'Se ha desactivado correctamente';
+        }catch(\Exception $e){
+            $response['error'] = $e->getMessage();
+            return response()->json($response, 500);
+        }
     }
     public function drop (User $usuario){
         try{
