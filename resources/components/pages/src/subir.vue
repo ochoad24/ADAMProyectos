@@ -344,7 +344,7 @@
                 return this.error;
             },
             initialize() {
-                var url = '/Tarea/select/' + this.$store.state.user.id;
+                var url = '/Tarea/select/usuario/' + this.$store.state.user.id;
                 axios.get(url)
                     .then(response => {
                         this.tareas = response.data;

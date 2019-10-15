@@ -51,18 +51,6 @@ use Illuminate\Http\Request;
             
         });
 
-        // Otras Rutas
-        Route::get('/Rol','RolController@index');
-        Route::post('/Rol/nuevo','RolController@store');
-        Route::put('/Rol/editar','RolController@edit');
-        Route::delete('/Rol/{rol}/delete', 'RolController@drop');
-
-        // Rutas para los permisos
-        Route::get('/Permiso','PermisoController@index');
-        Route::post('/Permiso/nuevo','PermisoController@store');
-        Route::put('/Permiso/editar','PermisoController@edit');
-        Route::delete('/Permiso/{permiso}/delete', 'PermisoController@drop');
-
          //Rutas para los proyectos 
         Route::get('/proyecto', 'ProyectoController@index');
         Route::post('/proyecto/registrar', 'ProyectoController@store');
@@ -106,7 +94,7 @@ use Illuminate\Http\Request;
         Route::put('/actividad/delete', 'ActividadController@destroy');
         // Ruta para la seleccion de actividades
         Route::get('/Actividad/{id}', 'ActividadController@select');
-
+        Route::get('/actividad/selectActividad', 'ActividadController@selectAct');
         // Rutas para los tipos de actividades
         Route::get('/TipoActividad', 'TipoActividadController@index');
         Route::post('/TipoActividad/nuevo','TipoActividadController@store');
@@ -121,12 +109,14 @@ use Illuminate\Http\Request;
         Route::get('/Estadistica/select/{id}', 'EstadisticaController@select');
         // Rutas para las tareas
         Route::get('/Tarea/{actividad}', 'TareaController@index');
+        Route::get('/Tarea/select/{actividad}', 'TareaController@selectTarea');
+        Route::get('/tarea/pdf', 'TareaController@tareaPdf');
         Route::post('/Tarea/nuevo', 'TareaController@store');
         Route::post('/Tarea/subir', 'TareaController@report');
         Route::get('Tarea/ver/{id}','TareaController@watch');
         Route::delete('Tarea/delete/{task}','TareaController@drop');
 
-        Route::get('/Tarea/select/{usuario}', 'TareaController@select');
+        Route::get('/Tarea/select/usuario/{usuario}', 'TareaController@select');
         Route::delete('Tarea/cancelar/{tarea}','TareaController@cancelReport');
 
     });

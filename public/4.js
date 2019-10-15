@@ -54,7 +54,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 495:
+/***/ 498:
 /***/ (function(module, exports) {
 
 module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
@@ -1703,7 +1703,7 @@ var render = function() {
           [
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
-                attrs: { src: __webpack_require__(495), alt: "Logo" }
+                attrs: { src: __webpack_require__(498), alt: "Logo" }
               })
             ]),
             _vm._v(" "),

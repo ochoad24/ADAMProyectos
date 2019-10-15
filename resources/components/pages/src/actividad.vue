@@ -1,15 +1,15 @@
 <template>
     <div class="row user-list">
         <div class="col-lg-12">
-            <b-card header="Actividades" header-tag="h4" class="bg-primary-card">
+            <b-card header="Actividades" header-tag="h4" class="bg-primary-card" v-if="proyectoSelect === true">
                 <div class="table-responsive">
                     <v-toolbar flat color="white">
                         <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
                         </v-text-field>
                         <v-spacer></v-spacer>
-                        <!--    
-                DIALOGO PARA LA CREACION DE PROYECTO    
-            -->
+                                        <!--    
+                                DIALOGO PARA LA CREACION DE PROYECTO    
+                            -->
                         <v-dialog v-model="dialog" persistent max-width="60%" max-height="800">
                             <template v-slot:activator="{ on }">
                                 <v-btn color="#668c2d" class="mb-2" dark v-on="on" @click="editar=0">Nueva
@@ -25,9 +25,17 @@
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
-                                            <v-flex xs12>
+                                            <v-flex xs3>
+                                                <v-text-field v-model="codigo"
+                                                    label="Ingrese código de actividad"></v-text-field>
+                                            </v-flex>
+                                            <v-flex xs9>
                                                 <v-text-field v-model="actividad"
                                                     label="Ingrese nombre de la actividad" axlength="500"  required :rules="nameRules" :counter="500"></v-text-field>
+                                            </v-flex>
+                                            <v-flex xs12>
+                                                <v-textarea v-model="descripcionAct" label="Observaciones de la actividad   ">
+                                                </v-textarea>
                                             </v-flex>
                                             <v-flex xs12 sm12 md6>
                                                 <!-- DateTime Picker de Fecha Inicial -->
@@ -98,9 +106,7 @@
                     <v-data-table :headers="headers" :items="actividades" class="elevation-1" :search="search">
                         <template v-slot:items="props">
                             <td class="text-xs-right">{{ props.item.actividad }}</td>
-                            <td class="text-xs-right">{{ props.item.tareas }}</td>
-                            <td class="text-xs-right">{{ props.item.tareasCompletadas }}</td>
-                            <td class="text-xs-right">{{ props.item.tareasPendientes }}</td>
+                            <td class="text-xs-right">{{ Math.round(props.item.completado, 2) + ' %' }}</td>
                             <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
                             <td class="text-xs-right">{{ props.item.fechaFinal }}</td>
                             <td class="text-xs-center">
@@ -113,18 +119,34 @@
                                 </template>
                             </td>
                             <td class="justify-center">
-                                <v-icon small class="mr-2" @click="abrirEditar(props.item)">
-                                    edit
-                                </v-icon>
-                                <v-icon small class="mr-2" v-if="props.item.estado" @click="desactivar(props.item.id)">
-                                    block
-                                </v-icon>
-                                <v-icon small class="mr-2" v-else @click="activar(props.item.id)">
-                                    check_circle
-                                </v-icon>
-                                <v-icon small @click="deleteItem(props.item.id)">
-                                    delete
-                                </v-icon>
+                                <v-tooltip bottom>
+                                    <template v-slot:activator="{ on }">
+                                        <v-icon small class="mr-2" v-on="on" @click="abrirEditar(props.item)">
+                                            edit
+                                        </v-icon>
+                                    </template>
+                                    <span>Editar actividad</span>
+                                </v-tooltip>
+                                <v-tooltip bottom>
+                                    <template v-slot:activator="{ on }">
+                                        <v-icon small class="mr-2" v-if="props.item.estado" v-on="on" @click="desactivar(props.item.id)">
+                                            block
+                                        </v-icon>
+                                        <v-icon small class="mr-2" v-else v-on="on" @click="activar(props.item.id)">
+                                            check_circle
+                                        </v-icon>
+                                    </template>
+                                    <span v-if="props.item.estado">Desactivar actividad</span>
+                                    <span v-else>Activar actividad</span>
+                                </v-tooltip>
+                                <v-tooltip bottom>
+                                    <template v-slot:activator="{ on }">
+                                        <v-icon small v-on="on" @click="deleteItem(props.item.id)">
+                                            delete
+                                        </v-icon>
+                                    </template>
+                                    <span>Eliminar actividad</span>
+                                </v-tooltip>
                             </td>
                         </template>
                         <template v-slot:no-data>
@@ -138,6 +160,16 @@
                     </v-data-table>
                 </div>
             </b-card>
+            <v-alert
+            :value="true"
+            color="warning"
+            icon="priority_high"
+            outline
+            v-else
+            >
+            !Por favor seleccione proyecto! 
+            </v-alert>
+
         </div>
     </div>
 </template>
@@ -152,24 +184,20 @@
         },
         data: () => ({
             dialog: false,
-              nameRules: [
-            v => !!v || 'El nombre de la actividad no puede estar vacio',
-            v => (v && v.length <= 449) || 'El titulo del proyecto no puede ser mayor a 500',
-
-            ],
+            proyectoSelect: false,
             menu: false,
             menu2: false,
             idActividad: 0,
             editar: 0,
             actividad: '',
+            codigo: '',
+            descripcionAct: '',
             fechaInicio: new Date().toISOString().substr(0, 10),
             fechaFinal: new Date().toISOString().substr(0, 10),
             search: '',
             headers: [
                 { text: 'Actividad', value: 'actividad', align: 'right' },
-                { text: 'Total', value: 'tareas', align: 'right' },
-                { text: 'Completadas', value: 'tareasCompletadas', align: 'right' },
-                { text: 'Pendientes', value: 'tareasPendientes', align: 'right' },
+                { text: 'Completado', value: 'completado', align: 'right' },
                 { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' },
                 { text: 'Fecha de Finalización', value: 'fechaFinal', align: 'right' },
                 { text: 'Estado', value: 'estado', align: 'center' }
@@ -217,19 +245,24 @@
             seleccion:{
                 deep:true,
                 handler(val){
-                    this.proyecto=val;
-                    this.initialize();
+                    if(val.id === 0) {
+                        this.proyectoSelect = false;
+                    }
+                    else {
+                        this.proyectoSelect = true;
+                        this.proyecto=val;
+                        this.initialize();
+                    }
                 }
-            }
+            },
+
         },
 
         created() {
             this.initialize()
         },
         mounted() {
-            // console.log(this.$store.state.proyecto);
-            this.proyecto=this.$store.state.proyecto;
-            this.initialize();
+
         },
         methods: {
             validate() {
@@ -243,6 +276,8 @@
                     this.errorMsj.push('La fecha de inicio de la actividad no puede estar vacía');
                 if (!this.fechaFinal)
                     this.errorMsj.push('La fecha de finalización de la actividad no puede estar vacía');
+                if(Date.parse(this.fechaInicio) > Date.parse(this.fechaFinal) || Date.parse(this.fechaInicio) === Date.parse(this.fechaFinal))
+                    this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
                 if (this.errorMsj.length)
                     this.error = 1;
                 else
@@ -250,7 +285,7 @@
                 return this.error;
             },
             initialize() {
-                var url = '/Actividad?proyecto=' + this.proyecto.id;
+                var url = '/actividad?proyecto=' + this.proyecto.id;
                 axios.get(url)
                     .then(response => {
                         // console.log(response.data);
@@ -310,6 +345,8 @@
                     'actividad': me.actividad,
                     'fechaInicio': me.fechaInicio,
                     'fechaFinal': me.fechaFinal,
+                    'codigo': me.codigo,
+                    'descripcion': me.descripcionAct,
                     'idProyecto': me.proyecto.id,
                     'id': me.idActividad
                 })
@@ -467,8 +504,10 @@
                 this.editar = 1;
                 this.dialog = true;
                 this.actividad = item.actividad;
-                this.fechaInicio = item.fechaInicio;
-                this.fechaFinal = item.fechaFinal;
+                this.descripcionAct = item.descripcion;
+                this.codigo = item.codigo_actividad;
+                this.fechaInicio = item.fechaInicio.split("/").reverse().join("-");
+                this.fechaFinal = item.fechaFinal.split("/").reverse().join("-");
                 this.idActividad = item.id;
             },
             close() {

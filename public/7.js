@@ -59,7 +59,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 562:
+/***/ 495:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -71,7 +71,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 563:
+/***/ 496:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -83,7 +83,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 564:
+/***/ 497:
 /***/ (function(module, exports) {
 
 (function(d){d['es']=Object.assign(d['es']||{},{a:"No se pudo cargar el archivo:",b:"Image toolbar",c:"Table toolbar",d:"Negrita",e:"Cursiva",f:"Entrecomillado",g:"Insertar imagen o archivo",h:"Elegir Encabezado",i:"Encabezado",j:"Widget de imagen",k:"Imagen a tamaño completo",l:"Imagen lateral",m:"Imagen alineada a la izquierda",n:"Imagen centrada",o:"Imagen alineada a la derecha",p:"Insertar imagen",q:"Lista numerada",r:"Lista de puntos",s:"Insertar tabla",t:"Columna de encabezado",u:"Insertar columna izquierda",v:"Insertar columna derecha",w:"Eliminar columna",x:"Columna",y:"Fila de encabezado",z:"Insertar fila debajo",aa:"Insertar fila encima",ab:"Eliminar fila",ac:"Fila",ad:"Combinar celda superior",ae:"Combinar celda derecha",af:"Combinar celda inferior",ag:"Combinar celda izquierda",ah:"Dividir celdas verticalmente",ai:"Dividir celdas horizontalmente",aj:"Combinar celdas",ak:"Introducir título de la imagen",al:"Fallo en la subida",am:"Widget multimedia",an:"Insertar multimedia",ao:"La URL no debe estar vacía",ap:"La URL de multimedia no está soportada",aq:"Enlace",ar:"No se puede acceder a la URL de la imagen redimensionada",as:"Fallo eligiendo imagen redimensionada",at:"No se puede insertar una imagen en la posición actual",au:"Error insertando imagen",av:"Widget toolbar",aw:"Subida en progreso",ax:"Abrir en una pestaña nueva ",ay:"Descargable",az:"Quitar enlace",ba:"Editar enlace",bb:"Abrir enlace en una pestaña nueva",bc:"Este enlace no tiene URL",bd:"Guardar",be:"Cancelar",bf:"URL del enlace",bg:"Pega la URL del contenido multimedia",bh:"Tip: pega la URL dentro del contenido para embeber más rápido",bi:"URL multimedia",bj:"Deshacer",bk:"Rehacer",bl:"Editor toolbar",bm:"Editor de Texto Enriquecido, %0",bn:"Editor de Texto Enriquecido",bo:"Dropdown toolbar",bp:"%0 de %1",bq:"Anterior",br:"Siguiente",bs:"Cambiar el texto alternativo de la imagen",bt:"Párrafo",bu:"Encabezado 1",bv:"Encabezado 2",bw:"Encabezado 3",bx:"Encabezado 4",by:"Encabezado 5",bz:"Encabezado 6",ca:"Texto alternativo"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
@@ -139,11 +139,11 @@ exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect__ = __webpack_require__(489);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_multiselect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue__ = __webpack_require__(562);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue__ = __webpack_require__(495);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ckeditor_ckeditor5_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic__ = __webpack_require__(563);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic__ = __webpack_require__(496);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__ckeditor_ckeditor5_build_classic__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es__ = __webpack_require__(564);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es__ = __webpack_require__(497);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__ckeditor_ckeditor5_build_classic_build_translations_es__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue__);
@@ -151,6 +151,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_js_file_download__ = __webpack_require__(632);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_js_file_download___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_js_file_download__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -316,7 +347,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             e2: 0,
             responsable: [],
             responsables: [],
-            e3: 0
+            e3: 0,
+            actividad: [],
+            actividades: [],
+            headers: [{ text: 'Tarea', value: 'tarea', align: 'center' }, { text: 'Fecha realización', value: 'fechaRealizacion', align: 'center' }],
+            tareas: [],
+            search: ""
         };
     },
 
@@ -332,7 +368,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var me = this;
             switch (number) {
                 case 1:
-                    me.getProyectos();
                     me.proy = true;
                     me.act = false;
                     me.resp = false;
@@ -341,6 +376,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     me.e3 = 0;
                     me.proyectos = [];
                     me.proyecto = [];
+                    me.actividad = [];
+                    me.actividades = [];
+                    me.tareas = [];
+                    me.getProyectos();
                     break;
                 case 2:
                     me.e1 = 0;
@@ -348,22 +387,70 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     me.e3 = 1;
                     me.proyectos = [];
                     me.proyecto = [];
+                    me.actividad = [];
+                    me.actividades = [];
+                    me.tareas = [];
                     me.proy = false;
                     me.act = true;
                     me.resp = false;
+                    me.getProyectos();
                     break;
                 case 3:
-                    me.getReponsables();
                     me.e1 = 0;
                     me.e2 = 1;
                     me.e3 = 0;
                     me.proyectos = [];
                     me.proyecto = [];
+                    me.actividad = [];
+                    me.actividades = [];
+                    me.tareas = [];
                     me.proy = false;
                     me.act = false;
                     me.resp = true;
+                    me.getReponsables();
                     break;
             }
+        },
+        cargarActividades: function cargarActividades() {
+            var me = this;
+            if (me.proyecto.length === 0) {
+                swal.fire({
+                    type: 'warning',
+                    title: 'Por favor seleccione un proyecto',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            } else {
+                me.e3 = 2;
+                console.log('proyecto: ' + me.proyecto[0].IdProyecto);
+                __WEBPACK_IMPORTED_MODULE_5_axios___default.a.get('/actividad/selectActividad?id=' + me.proyecto[0].IdProyecto).then(function (response) {
+                    me.actividades = response.data;
+                }).catch(function (error) {
+                    console.log(error.response);
+                });
+            }
+        },
+        cargarTareas: function cargarTareas() {
+            var me = this;
+            if (me.actividad.length === 0) {
+                swal.fire({
+                    type: 'warning',
+                    title: 'Por favor seleccione una actividad',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            } else {
+                me.e3 = 3;
+                console.log('actividad' + me.actividad[0].id);
+                __WEBPACK_IMPORTED_MODULE_5_axios___default.a.get('/Tarea/select/' + me.actividad[0].id).then(function (response) {
+                    me.tareas = response.data;
+                }).catch(function (error) {
+                    console.log(error.response);
+                });
+            }
+        },
+        cargarReporte: function cargarReporte(id) {
+            window.open(window.location.origin + '/tarea/pdf?id=' + id + ',' + '_blank');
         },
         getReponsables: function getReponsables() {
             var me = this;
@@ -675,6 +762,352 @@ var render = function() {
           )
         : _vm._e(),
       _vm._v(" "),
+      _vm.act === true
+        ? _c(
+            "v-stepper",
+            {
+              model: {
+                value: _vm.e3,
+                callback: function($$v) {
+                  _vm.e3 = $$v
+                },
+                expression: "e3"
+              }
+            },
+            [
+              _c(
+                "v-stepper-header",
+                [
+                  _c(
+                    "v-stepper-step",
+                    { attrs: { complete: _vm.e3 > 1, step: "1" } },
+                    [_vm._v("Seleccionar proyecto")]
+                  ),
+                  _vm._v(" "),
+                  _c("v-divider"),
+                  _vm._v(" "),
+                  _c(
+                    "v-stepper-step",
+                    { attrs: { complete: _vm.e3 > 2, step: "2" } },
+                    [_vm._v("Seleccionar actividades")]
+                  ),
+                  _vm._v(" "),
+                  _c("v-divider"),
+                  _vm._v(" "),
+                  _c(
+                    "v-stepper-step",
+                    { attrs: { complete: _vm.e3 > 3, step: "3" } },
+                    [_vm._v("Seleccionar reporte")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-stepper-items",
+                [
+                  _c(
+                    "v-stepper-content",
+                    { attrs: { step: "1" } },
+                    [
+                      _c(
+                        "v-card",
+                        { staticClass: "mb-5" },
+                        [
+                          _c("v-divider"),
+                          _vm._v(" "),
+                          _c("multiselect", {
+                            attrs: {
+                              options: _vm.proyectos,
+                              multiple: true,
+                              taggable: false,
+                              "close-on-select": true,
+                              "clear-on-select": false,
+                              "preserve-search": true,
+                              placeholder: "Seleccione...",
+                              label: "Titulo",
+                              "track-by": "Titulo"
+                            },
+                            model: {
+                              value: _vm.proyecto,
+                              callback: function($$v) {
+                                _vm.proyecto = $$v
+                              },
+                              expression: "proyecto"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { color: "primary" },
+                          on: {
+                            click: function($event) {
+                              return _vm.cargarActividades()
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                Continuar\n                "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-stepper-content",
+                    { attrs: { step: "2" } },
+                    [
+                      _c(
+                        "v-card",
+                        [
+                          _c("multiselect", {
+                            attrs: {
+                              options: _vm.actividades,
+                              multiple: true,
+                              taggable: false,
+                              "close-on-select": true,
+                              "clear-on-select": false,
+                              "preserve-search": true,
+                              placeholder: "Seleccione...",
+                              label: "actividad",
+                              "track-by": "actividad"
+                            },
+                            model: {
+                              value: _vm.actividad,
+                              callback: function($$v) {
+                                _vm.actividad = $$v
+                              },
+                              expression: "actividad"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { color: "primary" },
+                          on: {
+                            click: function($event) {
+                              _vm.e3 = 1
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                    Atrás\n                "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { color: "primary" },
+                          on: {
+                            click: function($event) {
+                              return _vm.cargarTareas()
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                Continuar\n                "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-stepper-content",
+                    { attrs: { step: "3" } },
+                    [
+                      _c(
+                        "v-card",
+                        { staticClass: "mb-5" },
+                        [
+                          _c("v-data-table", {
+                            staticClass: "elevation-1",
+                            attrs: {
+                              headers: _vm.headers,
+                              items: _vm.tareas,
+                              search: _vm.search
+                            },
+                            scopedSlots: _vm._u(
+                              [
+                                {
+                                  key: "items",
+                                  fn: function(props) {
+                                    return [
+                                      _c(
+                                        "td",
+                                        { staticClass: "text-xs-center" },
+                                        [_vm._v(_vm._s(props.item.tarea))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        { staticClass: "text-xs-center" },
+                                        [
+                                          _vm._v(
+                                            _vm._s(props.item.fechaRealizacion)
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        {
+                                          staticClass:
+                                            "justify-center layout px-0"
+                                        },
+                                        [
+                                          _c(
+                                            "v-tooltip",
+                                            {
+                                              attrs: { bottom: "" },
+                                              scopedSlots: _vm._u(
+                                                [
+                                                  {
+                                                    key: "activator",
+                                                    fn: function(ref) {
+                                                      var on = ref.on
+                                                      return [
+                                                        _c(
+                                                          "v-icon",
+                                                          _vm._g(
+                                                            {
+                                                              staticClass:
+                                                                "mr-2",
+                                                              attrs: {
+                                                                small: ""
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  return _vm.cargarReporte(
+                                                                    props.item
+                                                                      .id
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            on
+                                                          ),
+                                                          [
+                                                            _vm._v(
+                                                              "\n                                            post_add\n                                        "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    }
+                                                  }
+                                                ],
+                                                null,
+                                                true
+                                              )
+                                            },
+                                            [
+                                              _vm._v(" "),
+                                              _c("span", [
+                                                _vm._v("Generar Reporte")
+                                              ])
+                                            ]
+                                          )
+                                        ],
+                                        1
+                                      )
+                                    ]
+                                  }
+                                },
+                                {
+                                  key: "no-results",
+                                  fn: function() {
+                                    return [
+                                      _c(
+                                        "v-alert",
+                                        {
+                                          attrs: {
+                                            value: true,
+                                            color: "error",
+                                            icon: "warning"
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            '\n                                No hay resultados de "' +
+                                              _vm._s(_vm.search) +
+                                              '".\n                            '
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  },
+                                  proxy: true
+                                }
+                              ],
+                              null,
+                              false,
+                              1510503700
+                            )
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        {
+                          attrs: { color: "primary" },
+                          on: {
+                            click: function($event) {
+                              _vm.e3 = 2
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                    Atrás\n                "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
       _vm.resp === true
         ? _c(
             "v-stepper",
@@ -694,13 +1127,7 @@ var render = function() {
                 [
                   _c(
                     "v-stepper-step",
-                    {
-                      attrs: {
-                        complete: _vm.e2 > 1,
-                        step: "1",
-                        color: "#668c2d"
-                      }
-                    },
+                    { attrs: { complete: _vm.e2 > 1, step: "1" } },
                     [_vm._v("Seleccionar responsable")]
                   )
                 ],
@@ -749,8 +1176,7 @@ var render = function() {
                       _c(
                         "v-btn",
                         {
-                          staticClass: "mb-2",
-                          attrs: { color: "#668c2d", dark: "" },
+                          attrs: { color: "primary" },
                           on: {
                             click: function($event) {
                               return _vm.reporteResponsable()
@@ -763,188 +1189,6 @@ var render = function() {
                           )
                         ]
                       ),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { color: "#668c2d", flat: "" } }, [
-                        _vm._v("Cancelar")
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.act === true
-        ? _c(
-            "v-stepper",
-            {
-              model: {
-                value: _vm.e3,
-                callback: function($$v) {
-                  _vm.e3 = $$v
-                },
-                expression: "e3"
-              }
-            },
-            [
-              _c(
-                "v-stepper-header",
-                [
-                  _c(
-                    "v-stepper-step",
-                    {
-                      attrs: {
-                        complete: _vm.e3 > 1,
-                        step: "1",
-                        color: "#668c2d"
-                      }
-                    },
-                    [_vm._v("Seleccionar responsable")]
-                  ),
-                  _vm._v(" "),
-                  _c("v-divider"),
-                  _vm._v(" "),
-                  _c(
-                    "v-stepper-step",
-                    {
-                      attrs: {
-                        complete: _vm.e3 > 2,
-                        step: "2",
-                        color: "#668c2d"
-                      }
-                    },
-                    [_vm._v("Seleccionar actividades")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-stepper-items",
-                [
-                  _c(
-                    "v-stepper-content",
-                    { attrs: { step: "1" } },
-                    [
-                      _c(
-                        "v-card",
-                        { staticClass: "mb-5" },
-                        [
-                          _c("v-divider"),
-                          _vm._v(" "),
-                          _c("br"),
-                          _vm._v(" "),
-                          _c("multiselect", {
-                            attrs: {
-                              options: _vm.proyectos,
-                              multiple: true,
-                              taggable: false,
-                              "close-on-select": true,
-                              "clear-on-select": false,
-                              "preserve-search": true,
-                              placeholder: "Seleccione...",
-                              label: "nombre",
-                              "track-by": "nombre"
-                            },
-                            model: {
-                              value: _vm.proyecto,
-                              callback: function($$v) {
-                                _vm.proyecto = $$v
-                              },
-                              expression: "proyecto"
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-btn",
-                        {
-                          staticClass: "mb-2",
-                          attrs: { color: "#668c2d", dark: "" },
-                          on: {
-                            click: function($event) {
-                              _vm.e3 = 2
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                Continuar\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { color: "#668c2d", flat: "" } }, [
-                        _vm._v("Cancelar")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-stepper-content",
-                    { attrs: { step: "2" } },
-                    [
-                      _c(
-                        "v-card",
-                        { staticClass: "mb-5" },
-                        [
-                          _c("v-divider"),
-                          _vm._v(" "),
-                          _c("br"),
-                          _vm._v(" "),
-                          _c("multiselect", {
-                            attrs: {
-                              options: _vm.proyectos,
-                              multiple: true,
-                              taggable: false,
-                              "close-on-select": true,
-                              "clear-on-select": false,
-                              "preserve-search": true,
-                              placeholder: "Seleccione...",
-                              label: "Titulo",
-                              "track-by": "nombre"
-                            },
-                            model: {
-                              value: _vm.proyecto,
-                              callback: function($$v) {
-                                _vm.proyecto = $$v
-                              },
-                              expression: "proyecto"
-                            }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-btn",
-                        {
-                          attrs: { color: "primary" },
-                          on: {
-                            click: function($event) {
-                              _vm.e3 = 1
-                            }
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                    Atrás\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { color: "primary" } }, [
-                        _vm._v(
-                          "\n                Generar reporte\n                "
-                        )
-                      ]),
                       _vm._v(" "),
                       _c("v-btn", { attrs: { flat: "" } }, [_vm._v("Cancelar")])
                     ],

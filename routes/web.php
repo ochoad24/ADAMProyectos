@@ -21,3 +21,4 @@ Route::get('/{any?}', function (){
 })->where('any', '^(?!api\/)[\/\w\.-]*');
 // Route::get('/testmail','AuthController@SendMail');
 
+
