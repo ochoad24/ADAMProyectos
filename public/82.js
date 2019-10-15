@@ -91,7 +91,7 @@ exports.push([module.i, "\n.container-fluid.reset[data-v-7644d2fd] {\n    paddin
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(703);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(706);
 //
 //
 //
@@ -166,7 +166,7 @@ var render = function() {
         _c("h2", { staticClass: "text-center" }, [
           _c("img", {
             attrs: {
-              src: __webpack_require__(644),
+              src: __webpack_require__(647),
               alt: "Logo"
             }
           })
@@ -409,14 +409,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 644:
+/***/ 647:
 /***/ (function(module, exports) {
 
 module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";
 
 /***/ }),
 
-/***/ 703:
+/***/ 706:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

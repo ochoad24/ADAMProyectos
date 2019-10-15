@@ -21,12 +21,18 @@ class ProyectoController extends Controller
     {
         //
         $proyectos = Proyecto::all();
+        foreach ($proyectos as &$p) {
+            $p->FechaInicio = \Carbon\Carbon::parse($p->FechaInicio)->format('d/m/Y');
+            $p->FechaFin = \Carbon\Carbon::parse($p->FechaFin)->format('d/m/Y');
+        }
         return $proyectos;
     }
 
     public function orgs(Request $request) {
         $orgs = Proyecto::join('organizaciones_proyecto', 'organizaciones_proyecto.idproyecto', '=', 'proyectos.IdProyecto')
         ->join('organizaciones', 'organizaciones.IdOrganizacion', '=', 'organizaciones_proyecto.idorganizacion')
+        ->join('departamentos', 'departamentos.id', '=', 'organizaciones.IdDepartamento')
+        ->select('departamentos.departamento', 'organizaciones.nombre', 'organizaciones.comunidad', 'organizaciones.municipio')
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         return $orgs;
     }
@@ -36,12 +42,18 @@ class ProyectoController extends Controller
         ((proyectos.actividadesCompletadas * 100) / proyectos.actividades) as completado,
          proyectos.FechaInicio, proyectos.FechaFin'))
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
-
+        foreach ($proyecto as &$p) {
+            $p->FechaInicio = \Carbon\Carbon::parse($p->FechaInicio)->format('d/m/Y');
+            $p->FechaFin = \Carbon\Carbon::parse($p->FechaFin)->format('d/m/Y');
+        }
         $actividades = Actividad::select(DB::raw('actividades.id, actividades.actividad, actividades.codigo_actividad, actividades.fechaInicio, actividades.fechaFinal,
          ((actividades.tareasCompletadas * 100) / actividades.tareas) as completado'))
         ->where('actividades.idProyecto', '=', $request->id)
         ->orderBy('actividades.codigo_actividad', 'asc')->get();
-
+        foreach ($actividades as &$a) {
+            $a->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');
+            $a->fechaFinal = \Carbon\Carbon::parse($p->fechaFinal)->format('d/m/Y');
+        }
         $pdf = \PDF::loadView('pdf.proyecto', ['proyecto' => $proyecto, 'actividades' => $actividades]);
         return $pdf->stream('reporte-'.$proyecto[0]->Titulo.'.pdf');
     }
@@ -145,17 +157,38 @@ class ProyectoController extends Controller
     public function update(Request $request)
     {
         //
-        $proyecto = Proyecto::findOrFail($request->id);
-        $proyecto->Titulo = $request->Titulo;
-        $proyecto->Descripcion = $request->Descripcion;
-        $proyecto->FechaInicio = Carbon::parse($request->FechaInicio);
-        $proyecto->FechaFin = Carbon::parse($request->FechaFin);
-        $proyecto->Estado = $request->Estado;
-        if($proyecto->save()) {
-            return response()->json(array('success' => true, 'id' => $proyecto->IdProyecto), 200);
-        } else {
-            return response()->json(array('success' => false), 200);
+        try {
+            $proyecto = Proyecto::findOrFail($request->id);
+            $proyecto->Titulo = $request->Titulo;
+            $proyecto->Descripcion = $request->Descripcion;
+            $proyecto->objetivos = $request->objetivos;
+            $proyecto->resultados_objetivo = $request->resultados_objetivo;
+            $proyecto->indicadores = $request->indicadores;
+            $proyecto->resultados_indicadores = $request->resultados_indicadores;
+            $proyecto->FechaInicio = Carbon::parse($request->FechaInicio);
+            $proyecto->FechaFin = Carbon::parse($request->FechaFin);
+            $proyecto->Estado = $request->Estado;
+            $proyecto->save();
+
+            $orgs = $request->data;//Array de las organizaciones
+
+            foreach($orgs as $ep=>$org) {
+                $org_proy = new OrganizacionProyecto();
+                $org_proy->idproyecto = $proyecto->IdProyecto;
+                $org_proy->idorganizacion = $org['IdOrganizacion'];
+                $org_proy->save();
+            }
+            DB::commit();
+        } catch(\Throwable $th) {
+            DB::rollback();
+            return ['error' => $th->getMessage()];
         }
+        
+        // if($proyecto->save()) {
+        //     return response()->json(array('success' => true, 'id' => $proyecto->IdProyecto), 200);
+        // } else {
+        //     return response()->json(array('success' => false), 200);
+        // }
     }
 
     /**
@@ -204,6 +237,10 @@ class ProyectoController extends Controller
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         //join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
         //->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
+        foreach ($proyecto as &$p) {
+            $p->FechaInicio = \Carbon\Carbon::parse($p->FechaInicio)->format('d/m/Y');
+            $p->FechaFin = \Carbon\Carbon::parse($p->FechaFin)->format('d/m/Y');
+        }
         return $proyecto;
     }
 

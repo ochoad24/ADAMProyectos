@@ -32,8 +32,8 @@ if(false) {
 
 exports = module.exports = __webpack_require__(17)(false);
 // imports
-exports.i(__webpack_require__(699), "");
-exports.i(__webpack_require__(700), "");
+exports.i(__webpack_require__(702), "");
+exports.i(__webpack_require__(703), "");
 
 // module
 exports.push([module.i, "\n/*The Wrapper*/\n\n\n\n", ""]);
@@ -134,7 +134,7 @@ exports.push([module.i, "\n.my-scrollbar{\n    width: 100%;\n    /*min-width: 30
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(704);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__);
 //
 //
@@ -1141,7 +1141,7 @@ module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 699:
+/***/ 702:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -1156,7 +1156,7 @@ exports.push([module.i, "\nbody {\n  background: #f9f9f9;\n  height: 1000px;\n}\
 
 /***/ }),
 
-/***/ 700:
+/***/ 703:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -1171,7 +1171,7 @@ exports.push([module.i, ".vue-scrollbar-transition, .vue-scrollbar__scrollbar-ve
 
 /***/ }),
 
-/***/ 701:
+/***/ 704:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!

@@ -863,7 +863,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "full",
                       attrs: {
-                        src: __webpack_require__(692),
+                        src: __webpack_require__(695),
                         alt: "1"
                       }
                     })
@@ -1370,7 +1370,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*chats profile*/\n.profile-page .cover-image[data-v-efd0b92c] {\n    width: 100%;\n    height: 114px;\n    background-image: url(" + escape(__webpack_require__(839)) + ");\n    background-size: cover;\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n}\n.profile-page .cover-image .change_pic[data-v-efd0b92c] {\n    background-color: rgba(225, 225, 225, .4);\n}\n.profile-page .cover-image .change_pic img[data-v-efd0b92c] {\n    height: 20px;\n}\n.profile-page .cover-image .profile-name[data-v-efd0b92c] {\n    top: 85px;\n    left: 174px;\n    position: absolute;\n    color: #fff;\n    font-size: 20px;\n}\n.profile-page .cover-image .follow-link[data-v-efd0b92c] {\n    position: absolute;\n    right: 30px;\n    top: 140px;\n    border: 1px solid #509DE0;\n    background-color: #509DE0;\n    border-radius: 4px;\n}\n.profile-page .cover-image .follow-link .btn[data-v-efd0b92c] {\n    font-size: 14px;\n    padding: 1px 9px;\n    color: #fff;\n}\n.profile-page .profile-pic[data-v-efd0b92c] {\n    width: 120px;\n    height: 120px;\n    background-image: url(" + escape(__webpack_require__(692)) + ");\n    background-size: cover;\n    border-radius: 50%;\n    border: 4px solid rgba(225, 225, 225, 1.5);\n    margin-top: -75px;\n    margin-left: 25px;\n}\n.profile-page .about[data-v-efd0b92c] {\n    min-height: 123px;\n    margin-top: -25px;\n}\n.profile-page .about .designation[data-v-efd0b92c] {\n    padding-top: 24px;\n    padding-left: 7%;\n    color: #555;\n}\n.profile-page .about .designation .new-task[data-v-efd0b92c],\n.profile-page .about .designation .new-task[data-v-efd0b92c]:active {\n    border-color: #509DE0;\n    color: #509DE0;\n    border-radius: 200px;\n    font-size: 14px;\n    padding: 3px 10px;\n}\n.profile-page .about .designation .new-task[data-v-efd0b92c]:hover {\n    color: #fff;\n    background-color: #509DE0;\n}\n.profile-page .about .brief[data-v-efd0b92c] {\n    overflow-y: hidden;\n    height: 100px;\n    padding: 5px 35px 5px 20px;\n    color: #777;\n}\n.profile-page .about .brief[data-v-efd0b92c]:before {\n    content: '';\n    height: 67%;\n    width: 1px;\n    position: absolute;\n    left: 0;\n    top: 26%;\n    background-color: #ccc;\n}\n.profile-page .about .brief h4[data-v-efd0b92c] {\n    font-weight: 700;\n}\n\n\n/*chats profile ends*/\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*chats profile*/\n.profile-page .cover-image[data-v-efd0b92c] {\n    width: 100%;\n    height: 114px;\n    background-image: url(" + escape(__webpack_require__(839)) + ");\n    background-size: cover;\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n}\n.profile-page .cover-image .change_pic[data-v-efd0b92c] {\n    background-color: rgba(225, 225, 225, .4);\n}\n.profile-page .cover-image .change_pic img[data-v-efd0b92c] {\n    height: 20px;\n}\n.profile-page .cover-image .profile-name[data-v-efd0b92c] {\n    top: 85px;\n    left: 174px;\n    position: absolute;\n    color: #fff;\n    font-size: 20px;\n}\n.profile-page .cover-image .follow-link[data-v-efd0b92c] {\n    position: absolute;\n    right: 30px;\n    top: 140px;\n    border: 1px solid #509DE0;\n    background-color: #509DE0;\n    border-radius: 4px;\n}\n.profile-page .cover-image .follow-link .btn[data-v-efd0b92c] {\n    font-size: 14px;\n    padding: 1px 9px;\n    color: #fff;\n}\n.profile-page .profile-pic[data-v-efd0b92c] {\n    width: 120px;\n    height: 120px;\n    background-image: url(" + escape(__webpack_require__(695)) + ");\n    background-size: cover;\n    border-radius: 50%;\n    border: 4px solid rgba(225, 225, 225, 1.5);\n    margin-top: -75px;\n    margin-left: 25px;\n}\n.profile-page .about[data-v-efd0b92c] {\n    min-height: 123px;\n    margin-top: -25px;\n}\n.profile-page .about .designation[data-v-efd0b92c] {\n    padding-top: 24px;\n    padding-left: 7%;\n    color: #555;\n}\n.profile-page .about .designation .new-task[data-v-efd0b92c],\n.profile-page .about .designation .new-task[data-v-efd0b92c]:active {\n    border-color: #509DE0;\n    color: #509DE0;\n    border-radius: 200px;\n    font-size: 14px;\n    padding: 3px 10px;\n}\n.profile-page .about .designation .new-task[data-v-efd0b92c]:hover {\n    color: #fff;\n    background-color: #509DE0;\n}\n.profile-page .about .brief[data-v-efd0b92c] {\n    overflow-y: hidden;\n    height: 100px;\n    padding: 5px 35px 5px 20px;\n    color: #777;\n}\n.profile-page .about .brief[data-v-efd0b92c]:before {\n    content: '';\n    height: 67%;\n    width: 1px;\n    position: absolute;\n    left: 0;\n    top: 26%;\n    background-color: #ccc;\n}\n.profile-page .about .brief h4[data-v-efd0b92c] {\n    font-weight: 700;\n}\n\n\n/*chats profile ends*/\n", ""]);
 
 // exports
 
@@ -1416,9 +1416,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
 
-            images: [__webpack_require__(682), __webpack_require__(683), __webpack_require__(839)],
+            images: [__webpack_require__(685), __webpack_require__(686), __webpack_require__(839)],
             profile_name: ['Clinton Leo', 'Tony', 'Jenny Kerry'],
-            profile_pic: [__webpack_require__(692), __webpack_require__(564), __webpack_require__(565)],
+            profile_pic: [__webpack_require__(695), __webpack_require__(564), __webpack_require__(565)],
             desig: ['Designer,', 'Editor,', 'Tester,'],
             desigtag: ['Team Lead.', 'Manager.', 'Trainee.'],
             currentNumber: 0
@@ -2619,7 +2619,7 @@ var render = function() {
                       ? _c("div", [
                           _c("img", {
                             attrs: {
-                              src: __webpack_require__(647),
+                              src: __webpack_require__(650),
                               alt: "image missing"
                             }
                           })
@@ -13959,7 +13959,7 @@ var render = function() {
                       ? _c("div", [
                           _c("img", {
                             attrs: {
-                              src: __webpack_require__(647),
+                              src: __webpack_require__(650),
                               alt: "image missing"
                             }
                           })
@@ -38296,9 +38296,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
 var disposed = false
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(689)
+var __vue_script__ = __webpack_require__(692)
 /* template */
-var __vue_template__ = __webpack_require__(691)
+var __vue_template__ = __webpack_require__(694)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -38338,33 +38338,33 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 647:
+/***/ 650:
 /***/ (function(module, exports) {
 
 module.exports = "/images/loader.gif?f4e2a79fc931eadd12e79698e3c84450";
 
 /***/ }),
 
-/***/ 682:
+/***/ 685:
 /***/ (function(module, exports) {
 
 module.exports = "/images/slider1.jpg?dc0298a39154e143cda85e96559224e0";
 
 /***/ }),
 
-/***/ 683:
+/***/ 686:
 /***/ (function(module, exports) {
 
 module.exports = "/images/slider2.jpg?5d3ef85deccaa6bf8059ed84b9e29b24";
 
 /***/ }),
 
-/***/ 689:
+/***/ 692:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(690);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(693);
 //
 //
 //
@@ -38472,7 +38472,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 690:
+/***/ 693:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38581,7 +38581,7 @@ function extend () {
 
 /***/ }),
 
-/***/ 691:
+/***/ 694:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -38615,7 +38615,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 692:
+/***/ 695:
 /***/ (function(module, exports) {
 
 module.exports = "/images/profile-pic.jpg?2bf04359593bef35efe6a567b373f42e";

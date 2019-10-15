@@ -66,7 +66,7 @@ Route::group(['middleware'=>['guest']],function(){
     Route::get('/User/pdf','UserController@responsablePdf')->name('responsable_pdf');;
     // Rutas para los Usuarios
     // Rutas para las actividades
-    Route::get('/Actividad', 'ActividadController@index');
+    Route::get('/actividad', 'ActividadController@index');
     Route::post('/actividad/registrar', 'ActividadController@store');
     Route::post('/actividad/actualizar', 'ActividadController@edit');
     Route::put('/actividad/activate', 'ActividadController@activate');
@@ -74,6 +74,7 @@ Route::group(['middleware'=>['guest']],function(){
     Route::put('/actividad/delete', 'ActividadController@destroy');
     // Ruta para la seleccion de actividades
     Route::get('/Actividad/{id}', 'ActividadController@select');
+    Route::get('/actividad/selectActividad', 'ActividadController@selectAct');
 
     // Rutas para los tipos de actividades
     Route::get('/TipoActividad', 'TipoActividadController@index');
@@ -89,6 +90,8 @@ Route::group(['middleware'=>['guest']],function(){
     Route::get('/Estadistica/select/{id}', 'EstadisticaController@select');
     // Rutas para las tareas
     Route::get('/Tarea/{actividad}', 'TareaController@index');
+    Route::get('/Tarea/select/{actividad}', 'TareaController@selectTarea');
+    Route::get('/tarea/pdf', 'TareaController@tareaPdf');
     Route::post('/Tarea/nuevo', 'TareaController@store');
     Route::post('/Tarea/subir', 'TareaController@report');
     Route::get('Tarea/ver/{id}','TareaController@watch');

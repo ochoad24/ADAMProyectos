@@ -49,15 +49,15 @@ exports.push([module.i, "\n.flotChart {\n    width    : 100%;\n    height   : 32
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__ = __webpack_require__(674);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__ = __webpack_require__(677);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_Flot_jquery_flot_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__ = __webpack_require__(675);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__ = __webpack_require__(678);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_jquery_flot_resize_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__ = __webpack_require__(1811);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_Flot_jquery_flot_categories_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__ = __webpack_require__(676);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__ = __webpack_require__(679);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_Flot_jquery_flot_stack_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__ = __webpack_require__(680);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_flot_spline_js_jquery_flot_spline_min_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__ = __webpack_require__(1812);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_jquery_flot_tooltip_js_jquery_flot_tooltip_js__);
@@ -13636,7 +13636,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 674:
+/***/ 677:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* Javascript plotting library for jQuery, version 0.8.3.
@@ -16812,7 +16812,7 @@ Licensed under the MIT license.
 
 /***/ }),
 
-/***/ 675:
+/***/ 678:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for automatically redrawing plots as the placeholder resizes.
@@ -16994,7 +16994,7 @@ can just fix the size of their placeholders.
 
 /***/ }),
 
-/***/ 676:
+/***/ 679:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* Flot plugin for stacking data sets rather than overlyaing them.
@@ -17190,7 +17190,7 @@ charts or filled areas).
 
 /***/ }),
 
-/***/ 677:
+/***/ 680:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {!function(a){"use strict";function b(a,b,c,d,e,f,g){var j,k,l,m,n,o,p,q,h=Math.pow,i=Math.sqrt;return j=i(h(c-a,2)+h(d-b,2)),k=i(h(e-c,2)+h(f-d,2)),l=g*j/(j+k),m=g-l,n=c+l*(a-e),o=d+l*(b-f),p=c-m*(a-e),q=d-m*(b-f),[n,o,p,q]}function d(b,c,d,e,f){var g=a.color.parse(f);g.a="number"==typeof e?e:.3,g.normalize(),g=g.toString(),c.beginPath(),c.moveTo(b[0][0],b[0][1]);for(var h=b.length,i=0;h>i;i++)c[b[i][3]].apply(c,b[i][2]);c.stroke(),c.lineWidth=0,c.lineTo(b[h-1][0],d),c.lineTo(b[0][0],d),c.closePath(),e!==!1&&(c.fillStyle=g,c.fill())}function e(a,b,d,e){(void 0===b||"bezier"!==b&&"quadratic"!==b)&&(b="quadratic"),b+="CurveTo",0==c.length?c.push([d[0],d[1],e.concat(d.slice(2)),b]):"quadraticCurveTo"==b&&2==d.length?(e=e.slice(0,2).concat(d),c.push([d[0],d[1],e,b])):c.push([d[2],d[3],e.concat(d.slice(2)),b])}function f(f,g,h){if(h.splines.show===!0){var k,l,m,i=[],j=h.splines.tension||.5,n=h.datapoints.points,o=h.datapoints.pointsize,p=f.getPlotOffset(),q=n.length,r=[];if(c=[],4>q/o)return a.extend(h.lines,h.splines),void 0;for(k=0;q>k;k+=o)l=n[k],m=n[k+1],null==l||l<h.xaxis.min||l>h.xaxis.max||m<h.yaxis.min||m>h.yaxis.max||r.push(h.xaxis.p2c(l)+p.left,h.yaxis.p2c(m)+p.top);for(q=r.length,k=0;q-2>k;k+=2)i=i.concat(b.apply(this,r.slice(k,k+6).concat([j])));for(g.save(),g.strokeStyle=h.color,g.lineWidth=h.splines.lineWidth,e(g,"quadratic",r.slice(0,4),i.slice(0,2)),k=2;q-3>k;k+=2)e(g,"bezier",r.slice(k,k+4),i.slice(2*k-2,2*k+2));e(g,"quadratic",r.slice(q-2,q),[i[2*q-10],i[2*q-9],r[q-4],r[q-3]]),d(c,g,f.height()+10,h.splines.fill,h.color),g.restore()}}var c=[];a.plot.plugins.push({init:function(a){a.hooks.drawSeries.push(f)},options:{series:{splines:{show:!1,lineWidth:2,tension:.5,fill:!1}}},name:"spline",version:"0.8.2"})}(jQuery);

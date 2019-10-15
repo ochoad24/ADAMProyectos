@@ -475,11 +475,9 @@
                 if (!this.descripcion)
                     this.errorMsj.push('La descripción del proyecto no puede estar vacía');
                 if (!this.fechaI)
-                    this.errorMsj.push('La fecha de inicio del proyecto no puede estar vacía');
-                if (!this.fechaF)
-                    this.errorMsj.push('La fecha de finalización del proyecto no puede estar vacía');
-                if (this.orgs.length <= 0)
                     this.errorMsj.push('Por favor seleccione una o más organizaciones');
+                if(Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF))
+                    this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
                 if (this.errorMsj.length)
                     this.error = 1;
                 else

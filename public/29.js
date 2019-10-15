@@ -1402,7 +1402,7 @@ var render = function() {
                                               staticClass:
                                                 "d-flex mr-3 img-thumbnail img-fluid",
                                               attrs: {
-                                                src: __webpack_require__(648),
+                                                src: __webpack_require__(651),
                                                 alt: "avatar image",
                                                 height: "60",
                                                 width: "60"
@@ -2179,7 +2179,7 @@ var render = function() {
                                             staticClass:
                                               "d-flex mr-3 img-thumbnail",
                                             attrs: {
-                                              src: __webpack_require__(648),
+                                              src: __webpack_require__(651),
                                               alt: "image",
                                               height: "80",
                                               width: "80"
@@ -2646,7 +2646,7 @@ module.exports = "/fonts/vendor/simple-line-icons/Simple-Line-Icons.svg?2fe2efe6
 
 /***/ }),
 
-/***/ 648:
+/***/ 651:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";

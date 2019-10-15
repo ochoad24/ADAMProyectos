@@ -3947,7 +3947,7 @@ var render = function() {
                             _c("b-img", {
                               staticClass: "img-fluid",
                               attrs: {
-                                src: __webpack_require__(648),
+                                src: __webpack_require__(651),
                                 rounded: "circle",
                                 alt: "Circle image"
                               }
@@ -14910,7 +14910,7 @@ module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 648:
+/***/ 651:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar8.jpg?ac60ef718e8f9765886e30ee907fea17";

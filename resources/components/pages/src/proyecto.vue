@@ -12,8 +12,6 @@
             -->
                         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="green darken-1" dark class="mb-2" v-on="on" @click="editar=0">Nuevo
-                                    Proyecto</v-btn>
                             </template>
                             <v-card>
                                 <v-toolbar dark color="green darken-1">
@@ -72,6 +70,79 @@
                                                 </v-menu>
                                                 <!-- Fin del date Time Picker -->
                                             </v-flex>
+                                            <v-flex xs6>
+                                                <v-card
+                                                >
+                                                    <v-card-title>
+                                                        <v-icon
+                                                            left
+                                                        >
+                                                            dns
+                                                        </v-icon>
+                                                        <span class="title font-weight-light">Objetivos</span>
+                                                    </v-card-title>
+
+                                                    <v-card-text class="headline font-weight-bold">
+                                                        <ckeditor :editor="editor" v-model="objetivos" :config="editorConfig"></ckeditor>
+                                                    </v-card-text>
+
+                                                </v-card>
+                                            </v-flex>
+                                            <v-flex xs6>
+                                                <v-card
+                                                >
+                                                    <v-card-title>
+                                                        <v-icon
+                                                            left
+                                                        >
+                                                            list
+                                                        </v-icon>
+                                                        <span class="title font-weight-light">Resultados por objetivo</span>
+                                                    </v-card-title>
+
+                                                    <v-card-text class="headline font-weight-bold">
+                                                        <ckeditor :editor="editor2" v-model="resultados_objetivo" :config="editorConfig"></ckeditor>
+                                                    </v-card-text>
+
+                                                </v-card>
+                                            </v-flex>
+                                    <!-- Indicadores y resultados -->
+                                            <v-flex xs6>
+                                                <v-card
+                                                >
+                                                    <v-card-title>
+                                                        <v-icon
+                                                            left
+                                                        >
+                                                            search
+                                                        </v-icon>
+                                                        <span class="title font-weight-light">Indicadores</span>
+                                                    </v-card-title>
+
+                                                    <v-card-text class="headline font-weight-bold">
+                                                        <ckeditor :editor="editor3" v-model="indicadores" :config="editorConfig"></ckeditor>
+                                                    </v-card-text>
+
+                                                </v-card>
+                                            </v-flex>
+                                            <v-flex xs6>
+                                                <v-card
+                                                >
+                                                    <v-card-title>
+                                                        <v-icon
+                                                            left
+                                                        >
+                                                            list
+                                                        </v-icon>
+                                                        <span class="title font-weight-light">Resultados por indicador</span>
+                                                    </v-card-title>
+
+                                                    <v-card-text class="headline font-weight-bold">
+                                                        <ckeditor :editor="editor4" v-model="resultados_indicadores" :config="editorConfig"></ckeditor>
+                                                    </v-card-text>
+
+                                                </v-card>
+                                            </v-flex>
                                             <v-flex xs12 sm12 md12 lg12>
                                                 <v-subheader color="black">Seleccione una o más organizaciones
                                                 </v-subheader>
@@ -93,13 +164,14 @@
                                                 <v-subheader>Organizaciones seleccionadas</v-subheader>
                                             </v-flex>
                                             <v-flex>
-                                                <v-data-table :headers="headersOrg" :items="orgs" class="elevation-1">
+                                                <v-data-table :headers="headersOrg" :items="orgs" class="elevation-1" hide-actions>
                                                     <v-progress-linear :indeterminate="true"
                                                         color="light-green accent-3"></v-progress-linear>
                                                     <template v-slot:items="props">
                                                         <td class="text-xs-right">{{ props.item.nombre }}</td>
                                                         <td class="text-xs-right">{{ props.item.departamento }}</td>
                                                         <td class="text-xs-right">{{ props.item.municipio }}</td>
+                                                        <td class="text-xs-right">{{ props.item.comunidad }}</td>
                                                     </template>
                                                 </v-data-table>
                                             </v-flex>
@@ -146,16 +218,27 @@
                             </td>
                             <td class="text-xs-right"></td>
                             <td class="justify-center layout px-0">
-                                <v-icon small class="mr-2" @click="abrirEditar(props.item)">
-                                    edit
-                                </v-icon>
-                                <v-icon small class="mr-2" v-if="props.item.Estado == 1"
-                                    @click="desactivar(props.item.IdProyecto)">
-                                    block
-                                </v-icon>
-                                <v-icon small class="mr-2" v-else @click="activar(props.item.IdProyecto)">
-                                    check_circle
-                                </v-icon>
+                                <v-tooltip bottom>
+                                    <template v-slot:activator="{ on }">
+                                        <v-icon small class="mr-2" v-on="on" @click="abrirEditar(props.item)">
+                                            edit
+                                        </v-icon>
+                                    </template>
+                                    <span>Editar proyecto</span>
+                                </v-tooltip>
+                                 <v-tooltip bottom>
+                                    <template v-slot:activator="{ on }">
+                                        <v-icon small class="mr-2" v-on="on" v-if="props.item.Estado === 1"
+                                            @click="desactivar(props.item.IdProyecto)">
+                                            block
+                                        </v-icon>
+                                        <v-icon small class="mr-2" v-on="on" v-else @click="activar(props.item.IdProyecto)">
+                                            check_circle
+                                        </v-icon>
+                                    </template>
+                                    <span v-if="props.item.Estado === 1">Desactivar proyecto</span>
+                                    <span v-else>Activar proyecto</span>
+                                </v-tooltip>
                             </td>
                         </template>
                         <template v-slot:no-data>
@@ -190,6 +273,10 @@
                                             <v-text-field v-model="municipio"
                                                 label="Municipio de ubucación de la organización"></v-text-field>
                                         </v-flex>
+                                        <v-flex xs12>
+                                            <v-text-field v-model="comunidad" label="Ingrese comunidad">
+                                            </v-text-field>
+                                        </v-flex>
                                     </v-layout>
                                 </v-container>
                             </v-card-text>
@@ -222,10 +309,14 @@
     import Vue from 'vue';
     import axios from 'axios';
     import dayjs from "dayjs";
+    import CKEditor from '@ckeditor/ckeditor5-vue';
+    import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+    import '@ckeditor/ckeditor5-build-classic/build/translations/es';
     export default {
         name: "Proyecto",
         components: {
-            Multiselect
+            Multiselect,
+            ckeditor: CKEditor.component
         },
         data: () => ({
             dialog: false,
@@ -233,10 +324,22 @@
             orgs: [],
             error1: 0,
             select: [],
+            editor: ClassicEditor,
+            objetivos: '',
+            editorConfig: {
+                language: 'es'
+            },
+            editor2: ClassicEditor,
+            resultados_objetivo: '',
+            editor3: ClassicEditor,
+            indicadores: '',
+            editor4: ClassicEditor,
+            resultados_indicadores: '',
             errorMsj1: [],
             org_temp: [],
             departamentos: [],
             IdOrganizacion: 0,
+            comunidad: '',
             IdDepartamento: -1,
             municipio: '',
             nombre: '',
@@ -257,7 +360,8 @@
             headersOrg: [
                 { text: "Organizacion", value: 'nombre', align: 'right' },
                 { text: "Departamento", value: 'departamento', align: 'right' },
-                { text: "Municipio", value: 'municipio', align: 'right' }
+                { text: "Municipio", value: 'municipio', align: 'right' },
+                { text: "Comunidad", value: 'comunidad', align: 'right' },
             ],
             menu: false,
             menu2: false,
@@ -323,12 +427,10 @@
                 this.errorMsj = [];
                 if (!this.titulo)
                     this.errorMsj.push('El título del proyecto no puede estar vacio');
-                if (!this.fechaI)
-                    this.errorMsj.push('La fecha de inicio del proyecto no puede estar vacía');
-                if (!this.fechaF)
-                    this.errorMsj.push('La fecha de finalización del proyecto no puede estar vacía');
                 if (this.orgs.length <= 0)
                     this.errorMsj.push('Por favor seleccione una o más organizaciones');
+                if(Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF) || Date.parse(this.fechaF) < Date.parse(this.fechaI))
+                    this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
                 if (this.errorMsj.length)
                     this.error = 1;
                 else
@@ -402,12 +504,17 @@
                     'id': me.IdProyecto,
                     'Titulo': me.titulo,
                     'Descripcion': me.descripcion,
+                    'objetivos': me.objetivos,
+                    'resultados_objetivo': me.resultados_objetivo,
+                    'indicadores': me.indicadores,
+                    'resultados_indicadores': me.resultados_indicadores,
                     'FechaInicio': me.fechaI,
                     'FechaFin': me.fechaF,
                     'Estado': me.Estado,
                     'data': me.orgs
                 })
                     .then(function (response) {
+                        console.log(response.data);
                         me.initialize();
                         me.close();
                     })
@@ -420,7 +527,6 @@
                 let me = this;
                 const swalWithBootstrapButtons = swal.mixin({
                     customClass: {
-                        confirmButton: 'btn btn-success',
                         cancelButton: 'btn btn-danger'
                     },
                     buttonsStyling: false,
@@ -429,8 +535,8 @@
                     title: '¿Quieres activar este proyecto?',
                     type: 'warning',
                     showCancelButton: true,
-                    confirmButton: 'Aceptar',
                     cancelButtonText: 'Cancelar',
+                    showConfirmButton: true,
                     reverseButtons: true
                 }).then((result) => {
                     if (result.value) {
@@ -461,8 +567,8 @@
                 let me = this;
                 const swalWithBootstrapButtons = swal.mixin({
                     customClass: {
-                        confirmButton: 'btn btn-success',
-                        cancelButton: 'btn btn-danger'
+                        ConfirmButton: 'btn btn-success',
+                        CancelButton: 'btn btn-danger'
                     },
                     buttonsStyling: false,
                 });
@@ -470,8 +576,8 @@
                     title: '¿Quieres desactivar este proyecto?',
                     type: 'warning',
                     showCancelButton: true,
-                    confirmButton: 'Aceptar',
-                    cancelButtonText: 'Cancelar',
+                    ConfirmButtonText: 'Aceptar',
+                    CancelButtonText: 'Cancelar',
                     reverseButtons: true
                 }).then((result) => {
                     if (result.value) {
@@ -499,20 +605,20 @@
                     }
                 });
             },
-            abrirEditar(item) {
+            abrirEditar(item) { 
                 this.editar = 1;
                 this.IdProyecto = item.IdProyecto;
                 this.dialog = true;
                 this.titulo = item.Titulo;
                 this.descripcion = item.Descripcion;
-                this.fechaI = item.FechaInicio;
-                this.fechaF = item.FechaFin;
+                this.fechaI = item.FechaInicio.split("/").reverse().join("-");
+                this.fechaF = item.FechaFin.split("/").reverse().join("-");
+                this.objetivos = item.objetivos;
+                this.resultados_objetivo = item.resultados_objetivo;
+                this.indicadores = item.indicadores;
+                this.resultados_indicadores = item.resultados_indicadores;
                 this.Estado = item.Estado;
                 this.orgs = this.getOrgProyecto(item.IdProyecto);
-            },
-            deleteItem(item) {
-                const index = this.desserts.indexOf(item)
-                confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1)
             },
             cargaDepartamentos() {
                 let me = this;
@@ -537,7 +643,8 @@
                 axios.post('org/registrar', {
                     'nombre': me.nombre,
                     'municipio': me.municipio,
-                    'IdDepartamento': me.select.id
+                    'IdDepartamento': me.select.id,
+                    'comunidad': me.comunidad
                 })
                     .then(function (response) {
                         console.log(response.data);
@@ -566,6 +673,10 @@
                 this.IdProyecto = 0;
                 this.titulo = "";
                 this.descripcion = '';
+                this.objetivos = '';
+                this.resultados_objetivo = '';
+                this.indicadores = '';
+                this.resultados_indicadores = '';
                 this.fechaI = '';
                 this.fechaF = '';
                 this.Estado = 0;
@@ -576,6 +687,7 @@
                 this.IdDepartamento = 0;
                 this.IdOrganizacion = 0;
                 this.nombre = "";
+                this.comunidad="";
                 this.municipio = '';
                 this.select = [];
                 this.error1 = 0;

@@ -352,7 +352,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _handsontable = __webpack_require__(724);
+var _handsontable = __webpack_require__(727);
 
 var _handsontable2 = _interopRequireDefault(_handsontable);
 
@@ -1863,7 +1863,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["propWatchFactory"] = propWatchFactory;
 /* harmony export (immutable) */ __webpack_exports__["updateHotSettings"] = updateHotSettings;
 /* harmony export (immutable) */ __webpack_exports__["updateBulkHotSettings"] = updateBulkHotSettings;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_handsontable__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_handsontable__ = __webpack_require__(727);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_handsontable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_handsontable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__settingsMapper__ = __webpack_require__(992);
 
@@ -17431,7 +17431,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 724:
+/***/ 727:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate, __webpack_provided_window_dot_jQuery) {/*!
@@ -88762,7 +88762,7 @@ return zhTw;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_handsontable__ = __webpack_require__(724);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_handsontable__ = __webpack_require__(727);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_handsontable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_handsontable__);
 
 

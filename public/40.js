@@ -294,21 +294,21 @@ var unsub;
             val3: 70,
             progress: 30,
             visited: [{
-                src: __webpack_require__(577),
+                src: __webpack_require__(578),
                 price: "$250",
                 mrp: "$500",
                 name: "US-Polo T-shirt",
                 sale: "50%",
                 visits: "22,350"
             }, {
-                src: __webpack_require__(649),
+                src: __webpack_require__(652),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
                 sale: "23%",
                 visits: "11,260"
             }, {
-                src: __webpack_require__(693),
+                src: __webpack_require__(696),
                 price: "$280",
                 mrp: "$350",
                 name: "Gift box",
@@ -316,14 +316,14 @@ var unsub;
                 visits: "10,360"
             }],
             trending: [{
-                src: __webpack_require__(577),
+                src: __webpack_require__(578),
                 price: "$250",
                 mrp: "$500",
                 name: "US-Polo T-shirt",
                 sale: "50%",
                 visits: "22,350"
             }, {
-                src: __webpack_require__(694),
+                src: __webpack_require__(697),
                 price: "$1000",
                 mrp: "1500",
                 name: "Apple Macbook pro",
@@ -331,7 +331,7 @@ var unsub;
                 visits: "16,234",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(649),
+                src: __webpack_require__(652),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
@@ -563,7 +563,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "img-fluid",
                   attrs: {
-                    src: __webpack_require__(577),
+                    src: __webpack_require__(578),
                     alt: "product"
                   }
                 })
@@ -995,7 +995,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 577:
+/***/ 578:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product.png?921f475804236cccb1e348d8ea00ae2a";
@@ -5569,21 +5569,21 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 649:
+/***/ 652:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product2.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 693:
+/***/ 696:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product3.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 694:
+/***/ 697:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product4.png?8d301375df448ee3e714523880e4068a";
