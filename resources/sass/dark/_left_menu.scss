@@ -2,10 +2,12 @@
 .left-aside {
     width: 240px;
     background: #FFF;
-    border-right: 5px solid #EEE;
+
+    -webkit-box-shadow: 1px 0 15px 0 #ECEFF1;
+          box-shadow: 1px 0 15px 0 #ECEFF1;
 }
 .submenu-header:hover{
-    color:#33CC99 !important;
+    color:#668C2D !important;
 }
 #menu {
     .navigation {
@@ -17,7 +19,7 @@
 
             a {
                 text-align: left;
-                color: #666;
+                color: #000;
                 position: relative;
                 transition: all 0.2s;
                 display: block;
@@ -27,13 +29,13 @@
                 text-decoration: none;
 
                 &.active {
-                    border-right: 3px solid #68DEB7;
+                    border-right: 3px solid #668C2D;
                     background: #EEEEEE;
-                    color: #33CC99;
+                    color: #668C2D;
                 }
             }
             a:hover{
-                color:#33CC99 !important;
+                color:#668C2D !important;
             }
 
         }
@@ -55,9 +57,9 @@
 
             &.active {
                 >  .submenu-header {
-                    border-right: 3px solid #68DEB7;
-                    background: #EEEEEE;
-                    color: #33CC99;
+                    border-right: 3px solid #668C2D;
+                    background-color: #668C2D;
+                    color: #EEEEEE;
 
                     > .submenu_icon {
                         transform: rotate(90deg);

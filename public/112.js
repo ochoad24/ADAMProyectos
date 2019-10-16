@@ -1,22 +1,22 @@
 webpackJsonp([112],{
 
-/***/ 2303:
+/***/ 2320:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2304);
+var content = __webpack_require__(2321);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("ae594292", content, false, {});
+var update = __webpack_require__(26)("70877e70", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2b81a092\",\"scoped\":false,\"hasInlineConfig\":true}!./vue-multiselect.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2b81a092\",\"scoped\":false,\"hasInlineConfig\":true}!./vue-multiselect.min.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-57226e4c\",\"scoped\":false,\"hasInlineConfig\":true}!./vue-multiselect.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-57226e4c\",\"scoped\":false,\"hasInlineConfig\":true}!./vue-multiselect.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2304:
+/***/ 2321:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n
 
 /***/ }),
 
-/***/ 2305:
+/***/ 2322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53,6 +53,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_dayjs__ = __webpack_require__(573);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_dayjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_dayjs__);
 //
 //
 //
@@ -160,56 +162,165 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "Usuario",
+    name: "Proyecto",
     components: {
         Multiselect: __WEBPACK_IMPORTED_MODULE_0_vue_multiselect___default.a
     },
     data: function data() {
         return {
             dialog: false,
-            idRol: {
-                id: 0,
-                nombre: ''
-            },
-            repetir: '',
-            search: '',
-            headers: [{
-                text: 'Id',
-                align: 'left',
-                value: 'id'
-            }, { text: 'Nombre', value: 'nombre' }, { text: 'Apellido', value: 'apellido' }, { text: 'Usuario', value: 'usuario' }, { text: 'Rol', value: 'rol' }, { text: 'Estado', value: 'estado' }],
+            dialog_org: false,
+            orgs: [],
+            error1: 0,
+            select: [],
+            errorMsj1: [],
+            org_temp: [],
+            departamentos: [],
+            IdOrganizacion: 0,
+            IdDepartamento: -1,
+            municipio: '',
+            nombre: '',
             error: 0,
             errorMsj: [],
-            usuarios: [],
-            roles: [],
-            editedIndex: -1,
-            editedItem: {
-                id: 0,
-                nombre: '',
-                apellido: '',
-                usuario: '',
-                rol: 0,
-                contrasena: ''
-            },
-            defaultItem: {
-                id: 0,
-                nombre: '',
-                apellido: '',
-                usuario: '',
-                rol: 0,
-                contrasena: ''
-            }
+            organizaciones: [],
+            search: "",
+            IdProyecto: 0,
+            Estado: 1,
+            editar: 0,
+            headers: [{ text: 'Titulo', value: 'Titulo', align: 'left' }, { text: 'Descripcion', value: 'Descripcion', align: 'right' }, { text: 'Fecha de inicio', value: 'FechaInicio', align: 'right' }, { text: 'Fecha de finalización', value: 'FechaFin', align: 'right' }, { text: 'Estado', value: 'Estado', align: 'right' }],
+            headersOrg: [{ text: "Organizacion", value: 'nombre', align: 'right' }, { text: "Departamento", value: 'departamento', align: 'right' }, { text: "Municipio", value: 'municipio', align: 'right' }],
+            menu: false,
+            menu2: false,
+            titulo: '',
+            descripcion: '',
+            fechaI: new Date().toISOString().substr(0, 10),
+            fechaF: new Date().toISOString().substr(0, 10),
+            estado: 0,
+            proyectos: []
         };
     },
 
     computed: {
         formTitle: function formTitle() {
-            return this.editedIndex === -1 ? 'Nuevo Usuario' : 'Editar Usuario';
+            return this.editar === 0 ? 'Nuevo Proyecto' : 'Editar Proyecto';
         }
     },
 
@@ -225,201 +336,260 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
     methods: {
+        initialize: function initialize() {
+            this.dialog = false;
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/proyecto').then(function (response) {
+                me.proyectos = response.data;
+                me.getOrg();
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        },
+        getOrg: function getOrg() {
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/org').then(function (response) {
+                me.organizaciones = response.data;
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        },
+        getOrgProyecto: function getOrgProyecto(id) {
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/proyecto/orgs?id=' + id).then(function (response) {
+                me.orgs = response.data;
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        },
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre no puede estar vacio');
-
-            if (!this.editedItem.apellido) this.errorMsj.push('El apellido no puede estar vacio');
-
-            if (!this.editedItem.nombre) this.errorMsj.push('El usuario no puede estar vacio');
-
-            if (this.editedItem.contrasena != this.repetir) this.errorMsj.push('Las contraseñas deben ser iguales');
-
-            if (!this.editedItem.contrasena) this.errorMsj.push('La contraseña no puede estar vacia');
-
-            if (!this.idRol) this.errorMsj.push('Se debe asignar un rol al permiso');
-
-            if (this.errorMsj.length) this.error = 1;
+            if (!this.titulo) this.errorMsj.push('El título del proyecto no puede estar vacio');
+            if (!this.fechaI) this.errorMsj.push('La fecha de inicio del proyecto no puede estar vacía');
+            if (!this.fechaF) this.errorMsj.push('La fecha de finalización del proyecto no puede estar vacía');
+            if (this.orgs.length <= 0) this.errorMsj.push('Por favor seleccione una o más organizaciones');
+            if (this.errorMsj.length) this.error = 1;else this.error = 0;
             return this.error;
         },
-        initialize: function initialize() {
-            var _this = this;
-
-            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/User').then(function (response) {
-                _this.usuarios = response.data;
-            }).catch(function (errors) {
-                console.log(errors);
-            });
-            this.select();
+        validate_org: function validate_org() {
+            this.error1 = 0;
+            this.errorMsj1 = [];
+            if (!this.nombre) this.errorMsj1.push('El nombre de la organización no puede estar vacio');
+            if (!this.municipio) this.errorMsj1.push('El municipio no puede estar vacío');
+            if (this.select.length > 0) this.errorMsj1.push('Por favor seleccione un departamento');
+            if (this.errorMsj1.length) this.error1 = 1;else this.error1 = 0;
+            return this.error1;
         },
-        select: function select() {
-            var _this2 = this;
-
-            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/Rol').then(function (response) {
-                _this2.roles = response.data;
-            }).catch(function (errors) {
-                console.log(errors);
-            });
-        },
-        activar: function activar(item) {
+        registrarProyecto: function registrarProyecto() {
             var me = this;
-            swal.fire({
-                title: 'Quieres activar a este Usuario?',
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Activalo!',
-                cancelButtonText: "Cancelar"
-            }).then(function (result) {
-                if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_2_axios___default()({
-                        method: 'put',
-                        url: '/User/activar',
-                        data: {
-                            id: item.id
-                        }
-                    }).then(function (response) {
-                        me.initialize();
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: response.data,
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                    }).catch(function (error) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'error',
-                            title: error.response.data.error,
-                            showConfirmButton: true
-                        });
-                    });
-                }
-            });
-        },
-        desactivar: function desactivar(item) {
-            var me = this;
-            swal.fire({
-                title: 'Quieres desactivar a este Usuario?',
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Desactivalo!',
-                cancelButtonText: "Cancelar"
-            }).then(function (result) {
-                if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_2_axios___default()({
-                        method: 'put',
-                        url: '/User/desactivar',
-                        data: {
-                            id: item.id
-                        }
-                    }).then(function (response) {
-                        me.initialize();
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: response.data,
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                    }).catch(function (error) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'error',
-                            title: error.response.data.error,
-                            showConfirmButton: true
-                        });
-                    });
-                }
-            });
-        },
-        deleteItem: function deleteItem(item) {
-            var me = this;
-            swal.fire({
-                title: 'Quieres eliminar este Usuario?',
-                text: "No podras revertir la eliminacion!",
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Eliminalo!',
-                cancelButtonText: "Cancelar"
-            }).then(function (result) {
-                if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.delete('/User/' + item.id + '/delete').then(function (response) {
-                        me.initialize();
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: response.data,
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                    }).catch(function (error) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'error',
-                            title: error.response.data.error,
-                            showConfirmButton: true
-                        });
-                    });
-                }
-            });
-        },
-        close: function close() {
-            var _this3 = this;
-
-            this.dialog = false;
-            setTimeout(function () {
-                _this3.editedItem = Object.assign({}, _this3.defaultItem);
-                _this3.editedIndex = -1;
-            }, 300);
-        },
-        save: function save() {
-            var me = this;
-            __WEBPACK_IMPORTED_MODULE_2_axios___default()({
-                method: 'post',
-                url: '/User/nuevo',
-                data: {
-                    nombre: me.editedItem.nombre,
-                    apellido: me.editedItem.apellido,
-                    usuario: me.editedItem.usuario,
-                    password: me.editedItem.contrasena,
-                    idRol: me.idRol.id
-                }
+            if (this.validate() === 1) {
+                return;
+            }
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('proyecto/registrar', {
+                'Titulo': me.titulo,
+                'Descripcion': me.descripcion,
+                'FechaInicio': me.fechaI,
+                'FechaFin': me.fechaF,
+                'data': me.orgs
             }).then(function (response) {
+                console.log(response.data);
+                if (!response.data) {
+                    swal.fire({
+                        type: 'success',
+                        title: 'Proyecto registrado!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                } else {
+                    swal.fire({
+                        type: 'error',
+                        title: 'Se ha producido un error!',
+                        text: 'Error al ingresar proyecto!'
+                    });
+                    me.close();
+                }
+
+                me.close();
+                me.initialize();
+            }).catch(function (error) {
+                console.log(error.response);
                 swal.fire({
-                    position: 'top-end',
-                    type: 'success',
-                    title: response.data,
-                    showConfirmButton: false,
-                    timer: 1500
+                    type: 'error',
+                    title: 'Se ha producido un error!',
+                    text: 'Error al ingresar proyecto: ' + error.response.data.message
                 });
+                me.close();
+            });
+        },
+        editarProyecto: function editarProyecto() {
+            var me = this;
+            if (this.validate() === 1) {
+                return;
+            }
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.put('/proyecto/actualizar', {
+                'id': me.IdProyecto,
+                'Titulo': me.titulo,
+                'Descripcion': me.descripcion,
+                'FechaInicio': me.fechaI,
+                'FechaFin': me.fechaF,
+                'Estado': me.Estado,
+                'data': me.orgs
+            }).then(function (response) {
                 me.initialize();
                 me.close();
             }).catch(function (error) {
                 console.log(error.response);
-                swal.fire({
-                    position: 'top-end',
-                    type: 'error',
-                    title: error.response.data.error,
-                    showConfirmButton: true
-                });
-                me.initialize();
                 me.close();
             });
+        },
+        activar: function activar(id) {
+            var me = this;
+            var swalWithBootstrapButtons = swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            });
+            swalWithBootstrapButtons.fire({
+                title: '¿Quieres activar este proyecto?',
+                type: 'warning',
+                showCancelButton: true,
+                confirmButton: 'Aceptar',
+                cancelButtonText: 'Cancelar',
+                reverseButtons: true
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.put('proyecto/activate', {
+                        'id': id
+                    }).then(function (response) {
+                        me.initialize();
+                        swalWithBootstrapButtons.fire('Activado', 'El proyecto ha sido activado!', 'success');
+                    }).catch(function (error) {
+                        swalWithBootstrapButtons.fire('Error', 'Error al activar proyecto!', 'error');
+                    });
+                } else {
+                    swalWithBootstrapButtons.fire('Cancelado :(');
+                }
+            });
+        },
+        desactivar: function desactivar(id) {
+            var me = this;
+            var swalWithBootstrapButtons = swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            });
+            swalWithBootstrapButtons.fire({
+                title: '¿Quieres desactivar este proyecto?',
+                type: 'warning',
+                showCancelButton: true,
+                confirmButton: 'Aceptar',
+                cancelButtonText: 'Cancelar',
+                reverseButtons: true
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.put('proyecto/deactivate', {
+                        'id': id
+                    }).then(function (response) {
+                        me.initialize();
+                        swalWithBootstrapButtons.fire('Desactivado', 'El proyecto ha sido desactivado!', 'success');
+                    }).catch(function (error) {
+                        console.log(error.response);
+                        swalWithBootstrapButtons.fire('Error', 'Error al desactivar proyecto!', 'error');
+                    });
+                } else {
+                    swalWithBootstrapButtons.fire('Cancelado :(');
+                }
+            });
+        },
+        abrirEditar: function abrirEditar(item) {
+            this.editar = 1;
+            this.IdProyecto = item.IdProyecto;
+            this.dialog = true;
+            this.titulo = item.Titulo;
+            this.descripcion = item.Descripcion;
+            this.fechaI = item.FechaInicio;
+            this.fechaF = item.FechaFin;
+            this.Estado = item.Estado;
+            this.orgs = this.getOrgProyecto(item.IdProyecto);
+        },
+        deleteItem: function deleteItem(item) {
+            var index = this.desserts.indexOf(item);
+            confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1);
+        },
+        cargaDepartamentos: function cargaDepartamentos() {
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('/org/dept').then(function (response) {
+                me.departamentos = response.data;
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        },
+        abrirOrg: function abrirOrg() {
+            this.dialog_org = true;
+            this.cargaDepartamentos();
+        },
+        registrarOrganizacion: function registrarOrganizacion() {
+            var me = this;
+            if (this.validate_org() === 1) {
+                return;
+            }
+            this.IdDepartamento = this.select.id;
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('org/registrar', {
+                'nombre': me.nombre,
+                'municipio': me.municipio,
+                'IdDepartamento': me.select.id
+            }).then(function (response) {
+                console.log(response.data);
+                swal.fire({
+                    type: 'success',
+                    title: 'Organización registrada!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                me.close_org();
+                me.getOrg();
+            }).catch(function (error) {
+                console.log(error.response);
+                swal.fire({
+                    type: 'error',
+                    title: 'Se ha producido un error!',
+                    text: 'Error al ingresar organizaci\xF3n: ' + error.response.data.message
+                });
+                me.close_org();
+            });
+        },
+        close: function close() {
+            this.dialog = false;
+            this.editar = 0;
+            this.IdProyecto = 0;
+            this.titulo = "";
+            this.descripcion = '';
+            this.fechaI = '';
+            this.fechaF = '';
+            this.Estado = 0;
+            this.orgs = [];
+        },
+        close_org: function close_org() {
+            this.dialog_org = false;
+            this.IdDepartamento = 0;
+            this.IdOrganizacion = 0;
+            this.nombre = "";
+            this.municipio = '';
+            this.select = [];
+            this.error1 = 0;
+            this.errorMsj1 = [];
         }
     }
 });
 
 /***/ }),
 
-/***/ 2306:
+/***/ 2323:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -467,7 +637,11 @@ var render = function() {
                     _c(
                       "v-dialog",
                       {
-                        attrs: { "max-width": "600px" },
+                        attrs: {
+                          fullscreen: "",
+                          "hide-overlay": "",
+                          transition: "dialog-bottom-transition"
+                        },
                         scopedSlots: _vm._u([
                           {
                             key: "activator",
@@ -479,11 +653,23 @@ var render = function() {
                                   _vm._g(
                                     {
                                       staticClass: "mb-2",
-                                      attrs: { color: "primary", dark: "" }
+                                      attrs: {
+                                        color: "green darken-1",
+                                        dark: ""
+                                      },
+                                      on: {
+                                        click: function($event) {
+                                          _vm.editar = 0
+                                        }
+                                      }
                                     },
                                     on
                                   ),
-                                  [_vm._v("Nuevo Usuario")]
+                                  [
+                                    _vm._v(
+                                      "Nuevo\n                                Proyecto"
+                                    )
+                                  ]
                                 )
                               ]
                             }
@@ -502,11 +688,34 @@ var render = function() {
                         _c(
                           "v-card",
                           [
-                            _c("v-card-title", [
-                              _c("span", { staticClass: "headline" }, [
-                                _vm._v(_vm._s(_vm.formTitle))
-                              ])
-                            ]),
+                            _c(
+                              "v-toolbar",
+                              { attrs: { dark: "", color: "green darken-1" } },
+                              [
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { icon: "", dark: "" },
+                                    on: {
+                                      click: function($event) {
+                                        _vm.dialog = false
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("v-icon", { attrs: { col: "white" } }, [
+                                      _vm._v("clear")
+                                    ])
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("v-toolbar-title", [
+                                  _vm._v(_vm._s(_vm.formTitle))
+                                ])
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
                             _c(
                               "v-card-text",
@@ -521,116 +730,39 @@ var render = function() {
                                       [
                                         _c(
                                           "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: { label: "Nombre" },
-                                              model: {
-                                                value: _vm.editedItem.nombre,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "nombre",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression: "editedItem.nombre"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: { label: "Apellido" },
-                                              model: {
-                                                value: _vm.editedItem.apellido,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "apellido",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression:
-                                                  "editedItem.apellido"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: { label: "Usuario" },
-                                              model: {
-                                                value: _vm.editedItem.usuario,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "usuario",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression: "editedItem.usuario"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
+                                          { attrs: { xs12: "" } },
                                           [
                                             _c("v-text-field", {
                                               attrs: {
-                                                label: "Contraseña",
-                                                type: "password"
+                                                label: "Titulo del proyecto"
                                               },
                                               model: {
-                                                value:
-                                                  _vm.editedItem.contrasena,
+                                                value: _vm.titulo,
                                                 callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "contrasena",
-                                                    $$v
-                                                  )
+                                                  _vm.titulo = $$v
                                                 },
-                                                expression:
-                                                  "editedItem.contrasena"
+                                                expression: "titulo"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c("v-textarea", {
+                                              attrs: {
+                                                label:
+                                                  "Descripción del proyecto"
+                                              },
+                                              model: {
+                                                value: _vm.descripcion,
+                                                callback: function($$v) {
+                                                  _vm.descripcion = $$v
+                                                },
+                                                expression: "descripcion"
                                               }
                                             })
                                           ],
@@ -642,28 +774,154 @@ var render = function() {
                                           {
                                             attrs: {
                                               xs12: "",
-                                              sm6: "",
+                                              sm12: "",
                                               md6: ""
                                             }
                                           },
                                           [
-                                            _c("v-text-field", {
-                                              attrs: {
-                                                label: "Repetir contraseña",
-                                                type: "password"
-                                              },
-                                              model: {
-                                                value: _vm.editedItem.repetir,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "repetir",
-                                                    $$v
-                                                  )
+                                            _c(
+                                              "v-menu",
+                                              {
+                                                ref: "menu",
+                                                attrs: {
+                                                  "close-on-content-click": false,
+                                                  "nudge-right": 40,
+                                                  "return-value": _vm.fechaI,
+                                                  lazy: "",
+                                                  transition:
+                                                    "scale-transition",
+                                                  "offset-y": "",
+                                                  "full-width": "",
+                                                  "min-width": "290px"
                                                 },
-                                                expression: "editedItem.repetir"
-                                              }
-                                            })
+                                                on: {
+                                                  "update:returnValue": function(
+                                                    $event
+                                                  ) {
+                                                    _vm.fechaI = $event
+                                                  },
+                                                  "update:return-value": function(
+                                                    $event
+                                                  ) {
+                                                    _vm.fechaI = $event
+                                                  }
+                                                },
+                                                scopedSlots: _vm._u([
+                                                  {
+                                                    key: "activator",
+                                                    fn: function(ref) {
+                                                      var on = ref.on
+                                                      return [
+                                                        _c(
+                                                          "v-text-field",
+                                                          _vm._g(
+                                                            {
+                                                              attrs: {
+                                                                label:
+                                                                  "Ingrese fecha de inicio",
+                                                                "prepend-icon":
+                                                                  "event",
+                                                                readonly: ""
+                                                              },
+                                                              model: {
+                                                                value:
+                                                                  _vm.fechaI,
+                                                                callback: function(
+                                                                  $$v
+                                                                ) {
+                                                                  _vm.fechaI = $$v
+                                                                },
+                                                                expression:
+                                                                  "fechaI"
+                                                              }
+                                                            },
+                                                            on
+                                                          )
+                                                        )
+                                                      ]
+                                                    }
+                                                  }
+                                                ]),
+                                                model: {
+                                                  value: _vm.menu,
+                                                  callback: function($$v) {
+                                                    _vm.menu = $$v
+                                                  },
+                                                  expression: "menu"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-date-picker",
+                                                  {
+                                                    attrs: {
+                                                      "no-title": "",
+                                                      scrollable: "",
+                                                      locale: "gt"
+                                                    },
+                                                    model: {
+                                                      value: _vm.fechaI,
+                                                      callback: function($$v) {
+                                                        _vm.fechaI = $$v
+                                                      },
+                                                      expression: "fechaI"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-spacer"),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-btn",
+                                                      {
+                                                        attrs: {
+                                                          flat: "",
+                                                          color: "primary"
+                                                        },
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            _vm.menu = false
+                                                          }
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "Cancelar\n                                                    "
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-btn",
+                                                      {
+                                                        attrs: {
+                                                          flat: "",
+                                                          color: "primary"
+                                                        },
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            return _vm.$refs.menu.save(
+                                                              _vm.fechaI
+                                                            )
+                                                          }
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                        Guardar"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ],
+                                                  1
+                                                )
+                                              ],
+                                              1
+                                            )
                                           ],
                                           1
                                         ),
@@ -673,27 +931,357 @@ var render = function() {
                                           {
                                             attrs: {
                                               xs12: "",
-                                              sm6: "",
+                                              sm12: "",
                                               md6: ""
+                                            }
+                                          },
+                                          [
+                                            _c(
+                                              "v-menu",
+                                              {
+                                                ref: "menu2",
+                                                attrs: {
+                                                  "close-on-content-click": false,
+                                                  "nudge-right": 40,
+                                                  "return-value": _vm.fechaF,
+                                                  lazy: "",
+                                                  transition:
+                                                    "scale-transition",
+                                                  "offset-y": "",
+                                                  "full-width": "",
+                                                  "min-width": "290px"
+                                                },
+                                                on: {
+                                                  "update:returnValue": function(
+                                                    $event
+                                                  ) {
+                                                    _vm.fechaF = $event
+                                                  },
+                                                  "update:return-value": function(
+                                                    $event
+                                                  ) {
+                                                    _vm.fechaF = $event
+                                                  }
+                                                },
+                                                scopedSlots: _vm._u([
+                                                  {
+                                                    key: "activator",
+                                                    fn: function(ref) {
+                                                      var on = ref.on
+                                                      return [
+                                                        _c(
+                                                          "v-text-field",
+                                                          _vm._g(
+                                                            {
+                                                              attrs: {
+                                                                label:
+                                                                  "Ingrese fecha de finalización",
+                                                                "prepend-icon":
+                                                                  "event",
+                                                                readonly: ""
+                                                              },
+                                                              model: {
+                                                                value:
+                                                                  _vm.fechaF,
+                                                                callback: function(
+                                                                  $$v
+                                                                ) {
+                                                                  _vm.fechaF = $$v
+                                                                },
+                                                                expression:
+                                                                  "fechaF"
+                                                              }
+                                                            },
+                                                            on
+                                                          )
+                                                        )
+                                                      ]
+                                                    }
+                                                  }
+                                                ]),
+                                                model: {
+                                                  value: _vm.menu2,
+                                                  callback: function($$v) {
+                                                    _vm.menu2 = $$v
+                                                  },
+                                                  expression: "menu2"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(" "),
+                                                _c(
+                                                  "v-date-picker",
+                                                  {
+                                                    attrs: {
+                                                      "no-title": "",
+                                                      scrollable: "",
+                                                      locale: "gt"
+                                                    },
+                                                    model: {
+                                                      value: _vm.fechaF,
+                                                      callback: function($$v) {
+                                                        _vm.fechaF = $$v
+                                                      },
+                                                      expression: "fechaF"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("v-spacer"),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-btn",
+                                                      {
+                                                        attrs: {
+                                                          flat: "",
+                                                          color: "primary"
+                                                        },
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            _vm.menu2 = false
+                                                          }
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "Cancelar\n                                                    "
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-btn",
+                                                      {
+                                                        attrs: {
+                                                          flat: "",
+                                                          color: "primary"
+                                                        },
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            return _vm.$refs.menu2.save(
+                                                              _vm.fechaF
+                                                            )
+                                                          }
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._v(
+                                                          "\n                                                        Guardar"
+                                                        )
+                                                      ]
+                                                    )
+                                                  ],
+                                                  1
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md12: "",
+                                              lg12: ""
+                                            }
+                                          },
+                                          [
+                                            _c(
+                                              "v-subheader",
+                                              { attrs: { color: "black" } },
+                                              [
+                                                _vm._v(
+                                                  "Seleccione una o más organizaciones\n                                            "
+                                                )
+                                              ]
+                                            )
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md9: ""
                                             }
                                           },
                                           [
                                             _c("multiselect", {
                                               attrs: {
-                                                options: _vm.roles,
-                                                placeholder:
-                                                  "Seleccione un Rol",
+                                                options: _vm.organizaciones,
+                                                multiple: true,
+                                                taggable: false,
+                                                "close-on-select": false,
+                                                "clear-on-select": false,
+                                                "preserve-search": true,
+                                                placeholder: "Seleccione...",
                                                 label: "nombre",
                                                 "track-by": "nombre"
                                               },
                                               model: {
-                                                value: _vm.idRol,
+                                                value: _vm.orgs,
                                                 callback: function($$v) {
-                                                  _vm.idRol = $$v
+                                                  _vm.orgs = $$v
                                                 },
-                                                expression: "idRol"
+                                                expression: "orgs"
                                               }
                                             })
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md3: ""
+                                            }
+                                          },
+                                          [
+                                            _c(
+                                              "v-btn",
+                                              {
+                                                staticClass: "ma-2",
+                                                attrs: {
+                                                  color: "green accent-3",
+                                                  dark: ""
+                                                },
+                                                on: { click: _vm.abrirOrg }
+                                              },
+                                              [
+                                                _c(
+                                                  "v-icon",
+                                                  {
+                                                    attrs: {
+                                                      color: "white",
+                                                      dark: "",
+                                                      left: ""
+                                                    }
+                                                  },
+                                                  [_vm._v("add_circle_outline")]
+                                                ),
+                                                _vm._v(
+                                                  "Nueva\n                                                Organización\n                                            "
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md12: "",
+                                              lg12: ""
+                                            }
+                                          },
+                                          [
+                                            _c("v-subheader", [
+                                              _vm._v(
+                                                "Organizaciones seleccionadas"
+                                              )
+                                            ])
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          [
+                                            _c(
+                                              "v-data-table",
+                                              {
+                                                staticClass: "elevation-1",
+                                                attrs: {
+                                                  headers: _vm.headersOrg,
+                                                  items: _vm.orgs
+                                                },
+                                                scopedSlots: _vm._u([
+                                                  {
+                                                    key: "items",
+                                                    fn: function(props) {
+                                                      return [
+                                                        _c(
+                                                          "td",
+                                                          {
+                                                            staticClass:
+                                                              "text-xs-right"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                props.item
+                                                                  .nombre
+                                                              )
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "td",
+                                                          {
+                                                            staticClass:
+                                                              "text-xs-right"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                props.item
+                                                                  .departamento
+                                                              )
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "td",
+                                                          {
+                                                            staticClass:
+                                                              "text-xs-right"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                props.item
+                                                                  .municipio
+                                                              )
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    }
+                                                  }
+                                                ])
+                                              },
+                                              [
+                                                _c("v-progress-linear", {
+                                                  attrs: {
+                                                    indeterminate: true,
+                                                    color:
+                                                      "light-green accent-3"
+                                                  }
+                                                })
+                                              ],
+                                              1
+                                            )
                                           ],
                                           1
                                         )
@@ -711,23 +1299,21 @@ var render = function() {
                               ? [
                                   _c("v-divider"),
                                   _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "text-xs-center" },
-                                    [
-                                      _vm._l(_vm.errorMsj, function(e) {
-                                        return _c("strong", {
-                                          key: e,
+                                  _vm._l(_vm.errorMsj, function(e) {
+                                    return _c(
+                                      "div",
+                                      { key: e, staticClass: "text-xs-center" },
+                                      [
+                                        _c("strong", {
                                           staticClass:
                                             "red--text text--lighten-1",
                                           domProps: { textContent: _vm._s(e) }
-                                        })
-                                      }),
-                                      _vm._v(" "),
-                                      _c("br")
-                                    ],
-                                    2
-                                  ),
+                                        }),
+                                        _vm._v(" "),
+                                        _c("br")
+                                      ]
+                                    )
+                                  }),
                                   _vm._v(" "),
                                   _c("v-divider")
                                 ]
@@ -747,14 +1333,45 @@ var render = function() {
                                   [_vm._v("Cancelar")]
                                 ),
                                 _vm._v(" "),
-                                _c(
-                                  "v-btn",
-                                  {
-                                    attrs: { color: "blue darken-1", flat: "" },
-                                    on: { click: _vm.save }
-                                  },
-                                  [_vm._v("Guardar")]
-                                )
+                                _vm.editar === 0
+                                  ? _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          color: "blue darken-1",
+                                          flat: ""
+                                        },
+                                        on: { click: _vm.registrarProyecto }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    Guardar\n                                "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.editar === 1
+                                  ? _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          color: "blue darken-1",
+                                          flat: ""
+                                        },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.editarProyecto()
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    Guardar\n                                "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e()
                               ],
                               1
                             )
@@ -772,7 +1389,7 @@ var render = function() {
                   staticClass: "elevation-1",
                   attrs: {
                     headers: _vm.headers,
-                    items: _vm.usuarios,
+                    items: _vm.proyectos,
                     search: _vm.search
                   },
                   scopedSlots: _vm._u([
@@ -780,36 +1397,30 @@ var render = function() {
                       key: "items",
                       fn: function(props) {
                         return [
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.id))
+                          _c("td", [_vm._v(_vm._s(props.item.Titulo))]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.Descripcion))
                           ]),
                           _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.nombre))
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.FechaInicio))
                           ]),
                           _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.apellido))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.usuario))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.rol))
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.FechaFin))
                           ]),
                           _vm._v(" "),
                           _c(
                             "td",
-                            { staticClass: "text-xs-left" },
+                            { staticClass: "text-xs-right" },
                             [
                               [
                                 _c(
                                   "div",
-                                  { staticClass: "text-xs-left" },
+                                  { staticClass: "text-xs-right" },
                                   [
-                                    props.item.estado
+                                    props.item.Estado == 1
                                       ? _c(
                                           "v-chip",
                                           {
@@ -832,7 +1443,7 @@ var render = function() {
                                               "text-color": "white"
                                             }
                                           },
-                                          [_vm._v("Desactivado")]
+                                          [_vm._v("Inactivo")]
                                         )
                                   ],
                                   1
@@ -842,11 +1453,31 @@ var render = function() {
                             2
                           ),
                           _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }),
+                          _vm._v(" "),
                           _c(
                             "td",
-                            { staticClass: "justify-left layout px-0" },
+                            { staticClass: "justify-center layout px-0" },
                             [
-                              props.item.estado
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-2",
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.abrirEditar(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                edit\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              props.item.Estado == 1
                                 ? _c(
                                     "v-icon",
                                     {
@@ -854,7 +1485,9 @@ var render = function() {
                                       attrs: { small: "" },
                                       on: {
                                         click: function($event) {
-                                          return _vm.desactivar(props.item)
+                                          return _vm.desactivar(
+                                            props.item.IdProyecto
+                                          )
                                         }
                                       }
                                     },
@@ -871,7 +1504,9 @@ var render = function() {
                                       attrs: { small: "" },
                                       on: {
                                         click: function($event) {
-                                          return _vm.activar(props.item)
+                                          return _vm.activar(
+                                            props.item.IdProyecto
+                                          )
                                         }
                                       }
                                     },
@@ -880,24 +1515,7 @@ var render = function() {
                                         "\n                                check_circle\n                            "
                                       )
                                     ]
-                                  ),
-                              _vm._v(" "),
-                              _c(
-                                "v-icon",
-                                {
-                                  attrs: { small: "" },
-                                  on: {
-                                    click: function($event) {
-                                      return _vm.deleteItem(props.item)
-                                    }
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                delete\n                            "
                                   )
-                                ]
-                              )
                             ],
                             1
                           )
@@ -946,7 +1564,178 @@ var render = function() {
                       proxy: true
                     }
                   ])
-                })
+                }),
+                _vm._v(" "),
+                _c(
+                  "v-dialog",
+                  {
+                    attrs: { persistent: "", "max-width": "650px" },
+                    model: {
+                      value: _vm.dialog_org,
+                      callback: function($$v) {
+                        _vm.dialog_org = $$v
+                      },
+                      expression: "dialog_org"
+                    }
+                  },
+                  [
+                    _c(
+                      "v-card",
+                      [
+                        _c("v-card-title", [
+                          _c("span", { staticClass: "headline" }, [
+                            _vm._v("Nueva Organización")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "v-card-text",
+                          [
+                            _c(
+                              "v-container",
+                              { attrs: { "grid-list-md": "" } },
+                              [
+                                _c(
+                                  "v-layout",
+                                  { attrs: { wrap: "" } },
+                                  [
+                                    _c(
+                                      "v-flex",
+                                      { attrs: { xs12: "" } },
+                                      [
+                                        _c("v-text-field", {
+                                          attrs: {
+                                            label: "Nombre de la organización"
+                                          },
+                                          model: {
+                                            value: _vm.nombre,
+                                            callback: function($$v) {
+                                              _vm.nombre = $$v
+                                            },
+                                            expression: "nombre"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-flex",
+                                      { attrs: { xs12: "" } },
+                                      [
+                                        _c("v-select", {
+                                          attrs: {
+                                            hint: "" + _vm.select.departamento,
+                                            items: _vm.departamentos,
+                                            "item-text": "departamento",
+                                            "item-value": "id",
+                                            label: "Seleccionar departamento",
+                                            "persistent-hint": "",
+                                            "return-object": "",
+                                            "single-line": ""
+                                          },
+                                          model: {
+                                            value: _vm.select,
+                                            callback: function($$v) {
+                                              _vm.select = $$v
+                                            },
+                                            expression: "select"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-flex",
+                                      { attrs: { xs12: "" } },
+                                      [
+                                        _c("v-text-field", {
+                                          attrs: {
+                                            label:
+                                              "Municipio de ubucación de la organización"
+                                          },
+                                          model: {
+                                            value: _vm.municipio,
+                                            callback: function($$v) {
+                                              _vm.municipio = $$v
+                                            },
+                                            expression: "municipio"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _vm.error1
+                          ? [
+                              _c("v-divider"),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "text-xs-center" },
+                                [
+                                  _vm._l(_vm.errorMsj1, function(e) {
+                                    return _c("strong", {
+                                      key: e,
+                                      staticClass: "red--text text--lighten-1",
+                                      domProps: { textContent: _vm._s(e) }
+                                    })
+                                  }),
+                                  _vm._v(" "),
+                                  _c("br")
+                                ],
+                                2
+                              ),
+                              _vm._v(" "),
+                              _c("v-divider")
+                            ]
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c(
+                          "v-card-actions",
+                          [
+                            _c("v-spacer"),
+                            _vm._v(" "),
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: { color: "blue darken-1", flat: "" },
+                                on: { click: _vm.close_org }
+                              },
+                              [_vm._v("Cancelar")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: { color: "blue darken-1", flat: "" },
+                                on: { click: _vm.registrarOrganizacion }
+                              },
+                              [
+                                _vm._v(
+                                  "Guardar Organización\n                            "
+                                )
+                              ]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                )
               ],
               1
             )
@@ -963,25 +1752,25 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2b81a092", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-57226e4c", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 509:
+/***/ 513:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2303)
+  __webpack_require__(2320)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2305)
+var __vue_script__ = __webpack_require__(2322)
 /* template */
-var __vue_template__ = __webpack_require__(2306)
+var __vue_template__ = __webpack_require__(2323)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -998,7 +1787,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/src/usuario.vue"
+Component.options.__file = "resources/components/pages/src/proyecto.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1007,9 +1796,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2b81a092", Component.options)
+    hotAPI.createRecord("data-v-57226e4c", Component.options)
   } else {
-    hotAPI.reload("data-v-2b81a092", Component.options)
+    hotAPI.reload("data-v-57226e4c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1021,14 +1810,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 527:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var bind = __webpack_require__(536);
-var isBuffer = __webpack_require__(548);
+var bind = __webpack_require__(538);
+var isBuffer = __webpack_require__(544);
 
 /*global toString:true*/
 
@@ -1204,13 +1993,9 @@ function trim(str) {
  *
  * react-native:
  *  navigator.product -> 'ReactNative'
- * nativescript
- *  navigator.product -> 'NativeScript' or 'NS'
  */
 function isStandardBrowserEnv() {
-  if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' ||
-                                           navigator.product === 'NativeScript' ||
-                                           navigator.product === 'NS')) {
+  if (typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
     return false;
   }
   return (
@@ -1292,32 +2077,6 @@ function merge(/* obj1, obj2, obj3, ... */) {
 }
 
 /**
- * Function equal to merge with the difference being that no reference
- * to original objects is kept.
- *
- * @see merge
- * @param {Object} obj1 Object to merge
- * @returns {Object} Result of all merge properties
- */
-function deepMerge(/* obj1, obj2, obj3, ... */) {
-  var result = {};
-  function assignValue(val, key) {
-    if (typeof result[key] === 'object' && typeof val === 'object') {
-      result[key] = deepMerge(result[key], val);
-    } else if (typeof val === 'object') {
-      result[key] = deepMerge({}, val);
-    } else {
-      result[key] = val;
-    }
-  }
-
-  for (var i = 0, l = arguments.length; i < l; i++) {
-    forEach(arguments[i], assignValue);
-  }
-  return result;
-}
-
-/**
  * Extends object a by mutably adding to it the properties of object b.
  *
  * @param {Object} a The object to be extended
@@ -1355,28 +2114,8 @@ module.exports = {
   isStandardBrowserEnv: isStandardBrowserEnv,
   forEach: forEach,
   merge: merge,
-  deepMerge: deepMerge,
   extend: extend,
   trim: trim
-};
-
-
-/***/ }),
-
-/***/ 536:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function bind(fn, thisArg) {
-  return function wrap() {
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-    return fn.apply(thisArg, args);
-  };
 };
 
 
@@ -1386,102 +2125,10 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-var utils = __webpack_require__(527);
-
-function encode(val) {
-  return encodeURIComponent(val).
-    replace(/%40/gi, '@').
-    replace(/%3A/gi, ':').
-    replace(/%24/g, '$').
-    replace(/%2C/gi, ',').
-    replace(/%20/g, '+').
-    replace(/%5B/gi, '[').
-    replace(/%5D/gi, ']');
-}
-
-/**
- * Build a URL by appending params to the end
- *
- * @param {string} url The base of the url (e.g., http://www.google.com)
- * @param {object} [params] The params to be appended
- * @returns {string} The formatted url
- */
-module.exports = function buildURL(url, params, paramsSerializer) {
-  /*eslint no-param-reassign:0*/
-  if (!params) {
-    return url;
-  }
-
-  var serializedParams;
-  if (paramsSerializer) {
-    serializedParams = paramsSerializer(params);
-  } else if (utils.isURLSearchParams(params)) {
-    serializedParams = params.toString();
-  } else {
-    var parts = [];
-
-    utils.forEach(params, function serialize(val, key) {
-      if (val === null || typeof val === 'undefined') {
-        return;
-      }
-
-      if (utils.isArray(val)) {
-        key = key + '[]';
-      } else {
-        val = [val];
-      }
-
-      utils.forEach(val, function parseValue(v) {
-        if (utils.isDate(v)) {
-          v = v.toISOString();
-        } else if (utils.isObject(v)) {
-          v = JSON.stringify(v);
-        }
-        parts.push(encode(key) + '=' + encode(v));
-      });
-    });
-
-    serializedParams = parts.join('&');
-  }
-
-  if (serializedParams) {
-    var hashmarkIndex = url.indexOf('#');
-    if (hashmarkIndex !== -1) {
-      url = url.slice(0, hashmarkIndex);
-    }
-
-    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-  }
-
-  return url;
-};
-
-
-/***/ }),
-
-/***/ 538:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function isCancel(value) {
-  return !!(value && value.__CANCEL__);
-};
-
-
-/***/ }),
-
-/***/ 539:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(527);
-var normalizeHeaderName = __webpack_require__(553);
+var utils = __webpack_require__(528);
+var normalizeHeaderName = __webpack_require__(549);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -1495,13 +2142,12 @@ function setContentTypeIfUnset(headers, value) {
 
 function getDefaultAdapter() {
   var adapter;
-  // Only Node.JS has a process variable that is of [[Class]] process
-  if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
-    // For node use HTTP adapter
-    adapter = __webpack_require__(540);
-  } else if (typeof XMLHttpRequest !== 'undefined') {
+  if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(540);
+    adapter = __webpack_require__(539);
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(539);
   }
   return adapter;
 }
@@ -1510,7 +2156,6 @@ var defaults = {
   adapter: getDefaultAdapter(),
 
   transformRequest: [function transformRequest(data, headers) {
-    normalizeHeaderName(headers, 'Accept');
     normalizeHeaderName(headers, 'Content-Type');
     if (utils.isFormData(data) ||
       utils.isArrayBuffer(data) ||
@@ -1581,18 +2226,38 @@ module.exports = defaults;
 
 /***/ }),
 
-/***/ 540:
+/***/ 538:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(527);
-var settle = __webpack_require__(554);
-var buildURL = __webpack_require__(537);
-var parseHeaders = __webpack_require__(556);
-var isURLSameOrigin = __webpack_require__(557);
-var createError = __webpack_require__(541);
+module.exports = function bind(fn, thisArg) {
+  return function wrap() {
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.apply(thisArg, args);
+  };
+};
+
+
+/***/ }),
+
+/***/ 539:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
+var settle = __webpack_require__(550);
+var buildURL = __webpack_require__(552);
+var parseHeaders = __webpack_require__(553);
+var isURLSameOrigin = __webpack_require__(554);
+var createError = __webpack_require__(540);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(555);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -1604,6 +2269,22 @@ module.exports = function xhrAdapter(config) {
     }
 
     var request = new XMLHttpRequest();
+    var loadEvent = 'onreadystatechange';
+    var xDomain = false;
+
+    // For IE 8/9 CORS support
+    // Only supports POST and GET calls and doesn't returns the response headers.
+    // DON'T do this for testing b/c XMLHttpRequest is mocked, not XDomainRequest.
+    if ("development" !== 'test' &&
+        typeof window !== 'undefined' &&
+        window.XDomainRequest && !('withCredentials' in request) &&
+        !isURLSameOrigin(config.url)) {
+      request = new window.XDomainRequest();
+      loadEvent = 'onload';
+      xDomain = true;
+      request.onprogress = function handleProgress() {};
+      request.ontimeout = function handleTimeout() {};
+    }
 
     // HTTP basic authentication
     if (config.auth) {
@@ -1618,8 +2299,8 @@ module.exports = function xhrAdapter(config) {
     request.timeout = config.timeout;
 
     // Listen for ready state
-    request.onreadystatechange = function handleLoad() {
-      if (!request || request.readyState !== 4) {
+    request[loadEvent] = function handleLoad() {
+      if (!request || (request.readyState !== 4 && !xDomain)) {
         return;
       }
 
@@ -1636,26 +2317,15 @@ module.exports = function xhrAdapter(config) {
       var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
       var response = {
         data: responseData,
-        status: request.status,
-        statusText: request.statusText,
+        // IE sends 1223 instead of 204 (https://github.com/axios/axios/issues/201)
+        status: request.status === 1223 ? 204 : request.status,
+        statusText: request.status === 1223 ? 'No Content' : request.statusText,
         headers: responseHeaders,
         config: config,
         request: request
       };
 
       settle(resolve, reject, response);
-
-      // Clean up request
-      request = null;
-    };
-
-    // Handle browser request cancellation (as opposed to a manual cancellation)
-    request.onabort = function handleAbort() {
-      if (!request) {
-        return;
-      }
-
-      reject(createError('Request aborted', config, 'ECONNABORTED', request));
 
       // Clean up request
       request = null;
@@ -1684,12 +2354,12 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(558);
+      var cookies = __webpack_require__(556);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
-        cookies.read(config.xsrfCookieName) :
-        undefined;
+          cookies.read(config.xsrfCookieName) :
+          undefined;
 
       if (xsrfValue) {
         requestHeaders[config.xsrfHeaderName] = xsrfValue;
@@ -1763,13 +2433,13 @@ module.exports = function xhrAdapter(config) {
 
 /***/ }),
 
-/***/ 541:
+/***/ 540:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(555);
+var enhanceError = __webpack_require__(551);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -1789,66 +2459,20 @@ module.exports = function createError(message, config, code, request, response) 
 
 /***/ }),
 
-/***/ 542:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(527);
-
-/**
- * Config-specific merge-function which creates a new config-object
- * by merging two configuration objects together.
- *
- * @param {Object} config1
- * @param {Object} config2
- * @returns {Object} New object resulting from merging config2 to config1
- */
-module.exports = function mergeConfig(config1, config2) {
-  // eslint-disable-next-line no-param-reassign
-  config2 = config2 || {};
-  var config = {};
-
-  utils.forEach(['url', 'method', 'params', 'data'], function valueFromConfig2(prop) {
-    if (typeof config2[prop] !== 'undefined') {
-      config[prop] = config2[prop];
-    }
-  });
-
-  utils.forEach(['headers', 'auth', 'proxy'], function mergeDeepProperties(prop) {
-    if (utils.isObject(config2[prop])) {
-      config[prop] = utils.deepMerge(config1[prop], config2[prop]);
-    } else if (typeof config2[prop] !== 'undefined') {
-      config[prop] = config2[prop];
-    } else if (utils.isObject(config1[prop])) {
-      config[prop] = utils.deepMerge(config1[prop]);
-    } else if (typeof config1[prop] !== 'undefined') {
-      config[prop] = config1[prop];
-    }
-  });
-
-  utils.forEach([
-    'baseURL', 'transformRequest', 'transformResponse', 'paramsSerializer',
-    'timeout', 'withCredentials', 'adapter', 'responseType', 'xsrfCookieName',
-    'xsrfHeaderName', 'onUploadProgress', 'onDownloadProgress', 'maxContentLength',
-    'validateStatus', 'maxRedirects', 'httpAgent', 'httpsAgent', 'cancelToken',
-    'socketPath'
-  ], function defaultToConfig2(prop) {
-    if (typeof config2[prop] !== 'undefined') {
-      config[prop] = config2[prop];
-    } else if (typeof config1[prop] !== 'undefined') {
-      config[prop] = config1[prop];
-    }
-  });
-
-  return config;
+module.exports = function isCancel(value) {
+  return !!(value && value.__CANCEL__);
 };
 
 
 /***/ }),
 
-/***/ 543:
+/***/ 542:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1875,6 +2499,34 @@ module.exports = Cancel;
 
 /***/ }),
 
+/***/ 544:
+/***/ (function(module, exports) {
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
+
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
+
+
+/***/ }),
+
 /***/ 545:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1895,11 +2547,10 @@ module.exports = __webpack_require__(547);
 "use strict";
 
 
-var utils = __webpack_require__(527);
-var bind = __webpack_require__(536);
-var Axios = __webpack_require__(549);
-var mergeConfig = __webpack_require__(542);
-var defaults = __webpack_require__(539);
+var utils = __webpack_require__(528);
+var bind = __webpack_require__(538);
+var Axios = __webpack_require__(548);
+var defaults = __webpack_require__(537);
 
 /**
  * Create an instance of Axios
@@ -1928,19 +2579,19 @@ axios.Axios = Axios;
 
 // Factory for creating new instances
 axios.create = function create(instanceConfig) {
-  return createInstance(mergeConfig(axios.defaults, instanceConfig));
+  return createInstance(utils.merge(defaults, instanceConfig));
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(543);
-axios.CancelToken = __webpack_require__(561);
-axios.isCancel = __webpack_require__(538);
+axios.Cancel = __webpack_require__(542);
+axios.CancelToken = __webpack_require__(562);
+axios.isCancel = __webpack_require__(541);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(562);
+axios.spread = __webpack_require__(563);
 
 module.exports = axios;
 
@@ -1951,34 +2602,15 @@ module.exports.default = axios;
 /***/ }),
 
 /***/ 548:
-/***/ (function(module, exports) {
-
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-module.exports = function isBuffer (obj) {
-  return obj != null && obj.constructor != null &&
-    typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
-}
-
-
-/***/ }),
-
-/***/ 549:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(527);
-var buildURL = __webpack_require__(537);
-var InterceptorManager = __webpack_require__(550);
-var dispatchRequest = __webpack_require__(551);
-var mergeConfig = __webpack_require__(542);
+var defaults = __webpack_require__(537);
+var utils = __webpack_require__(528);
+var InterceptorManager = __webpack_require__(557);
+var dispatchRequest = __webpack_require__(558);
 
 /**
  * Create a new instance of Axios
@@ -2002,14 +2634,13 @@ Axios.prototype.request = function request(config) {
   /*eslint no-param-reassign:0*/
   // Allow for axios('example/url'[, config]) a la fetch API
   if (typeof config === 'string') {
-    config = arguments[1] || {};
-    config.url = arguments[0];
-  } else {
-    config = config || {};
+    config = utils.merge({
+      url: arguments[0]
+    }, arguments[1]);
   }
 
-  config = mergeConfig(this.defaults, config);
-  config.method = config.method ? config.method.toLowerCase() : 'get';
+  config = utils.merge(defaults, {method: 'get'}, this.defaults, config);
+  config.method = config.method.toLowerCase();
 
   // Hook up interceptors middleware
   var chain = [dispatchRequest, undefined];
@@ -2028,11 +2659,6 @@ Axios.prototype.request = function request(config) {
   }
 
   return promise;
-};
-
-Axios.prototype.getUri = function getUri(config) {
-  config = mergeConfig(this.defaults, config);
-  return buildURL(config.url, config.params, config.paramsSerializer).replace(/^\?/, '');
 };
 
 // Provide aliases for supported request methods
@@ -2062,13 +2688,412 @@ module.exports = Axios;
 
 /***/ }),
 
+/***/ 549:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
+
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+  utils.forEach(headers, function processHeader(value, name) {
+    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+      headers[normalizedName] = value;
+      delete headers[name];
+    }
+  });
+};
+
+
+/***/ }),
+
 /***/ 550:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(527);
+var createError = __webpack_require__(540);
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */
+module.exports = function settle(resolve, reject, response) {
+  var validateStatus = response.config.validateStatus;
+  // Note: status is not exposed by XDomainRequest
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(createError(
+      'Request failed with status code ' + response.status,
+      response.config,
+      null,
+      response.request,
+      response
+    ));
+  }
+};
+
+
+/***/ }),
+
+/***/ 551:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */
+module.exports = function enhanceError(error, config, code, request, response) {
+  error.config = config;
+  if (code) {
+    error.code = code;
+  }
+  error.request = request;
+  error.response = response;
+  return error;
+};
+
+
+/***/ }),
+
+/***/ 552:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
+
+function encode(val) {
+  return encodeURIComponent(val).
+    replace(/%40/gi, '@').
+    replace(/%3A/gi, ':').
+    replace(/%24/g, '$').
+    replace(/%2C/gi, ',').
+    replace(/%20/g, '+').
+    replace(/%5B/gi, '[').
+    replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
+  }
+
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else if (utils.isURLSearchParams(params)) {
+    serializedParams = params.toString();
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
+      }
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      } else {
+        val = [val];
+      }
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+
+/***/ }),
+
+/***/ 553:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
+
+// Headers whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+var ignoreDuplicateOf = [
+  'age', 'authorization', 'content-length', 'content-type', 'etag',
+  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
+  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
+  'referer', 'retry-after', 'user-agent'
+];
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) { return parsed; }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
+        return;
+      }
+      if (key === 'set-cookie') {
+        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
+      } else {
+        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+      }
+    }
+  });
+
+  return parsed;
+};
+
+
+/***/ }),
+
+/***/ 554:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs have full support of the APIs needed to test
+  // whether the request URL is of the same origin as current location.
+  (function standardBrowserEnv() {
+    var msie = /(msie|trident)/i.test(navigator.userAgent);
+    var urlParsingNode = document.createElement('a');
+    var originURL;
+
+    /**
+    * Parse a URL to discover it's components
+    *
+    * @param {String} url The URL to be parsed
+    * @returns {Object}
+    */
+    function resolveURL(url) {
+      var href = url;
+
+      if (msie) {
+        // IE needs attribute set twice to normalize properties
+        urlParsingNode.setAttribute('href', href);
+        href = urlParsingNode.href;
+      }
+
+      urlParsingNode.setAttribute('href', href);
+
+      // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+      return {
+        href: urlParsingNode.href,
+        protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+        host: urlParsingNode.host,
+        search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+        hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+        hostname: urlParsingNode.hostname,
+        port: urlParsingNode.port,
+        pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+                  urlParsingNode.pathname :
+                  '/' + urlParsingNode.pathname
+      };
+    }
+
+    originURL = resolveURL(window.location.href);
+
+    /**
+    * Determine if a URL shares the same origin as the current location
+    *
+    * @param {String} requestURL The URL to test
+    * @returns {boolean} True if URL shares the same origin, otherwise false
+    */
+    return function isURLSameOrigin(requestURL) {
+      var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+      return (parsed.protocol === originURL.protocol &&
+            parsed.host === originURL.host);
+    };
+  })() :
+
+  // Non standard browser envs (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return function isURLSameOrigin() {
+      return true;
+    };
+  })()
+);
+
+
+/***/ }),
+
+/***/ 555:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+function E() {
+  this.message = 'String contains an invalid character';
+}
+E.prototype = new Error;
+E.prototype.code = 5;
+E.prototype.name = 'InvalidCharacterError';
+
+function btoa(input) {
+  var str = String(input);
+  var output = '';
+  for (
+    // initialize result and counter
+    var block, charCode, idx = 0, map = chars;
+    // if the next str index does not exist:
+    //   change the mapping table to "="
+    //   check if d has no fractional digits
+    str.charAt(idx | 0) || (map = '=', idx % 1);
+    // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+    output += map.charAt(63 & block >> 8 - idx % 1 * 8)
+  ) {
+    charCode = str.charCodeAt(idx += 3 / 4);
+    if (charCode > 0xFF) {
+      throw new E();
+    }
+    block = block << 8 | charCode;
+  }
+  return output;
+}
+
+module.exports = btoa;
+
+
+/***/ }),
+
+/***/ 556:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs support document.cookie
+  (function standardBrowserEnv() {
+    return {
+      write: function write(name, value, expires, path, domain, secure) {
+        var cookie = [];
+        cookie.push(name + '=' + encodeURIComponent(value));
+
+        if (utils.isNumber(expires)) {
+          cookie.push('expires=' + new Date(expires).toGMTString());
+        }
+
+        if (utils.isString(path)) {
+          cookie.push('path=' + path);
+        }
+
+        if (utils.isString(domain)) {
+          cookie.push('domain=' + domain);
+        }
+
+        if (secure === true) {
+          cookie.push('secure');
+        }
+
+        document.cookie = cookie.join('; ');
+      },
+
+      read: function read(name) {
+        var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+        return (match ? decodeURIComponent(match[3]) : null);
+      },
+
+      remove: function remove(name) {
+        this.write(name, '', Date.now() - 86400000);
+      }
+    };
+  })() :
+
+  // Non standard browser env (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return {
+      write: function write() {},
+      read: function read() { return null; },
+      remove: function remove() {}
+    };
+  })()
+);
+
+
+/***/ }),
+
+/***/ 557:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(528);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -2122,18 +3147,18 @@ module.exports = InterceptorManager;
 
 /***/ }),
 
-/***/ 551:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(527);
-var transformData = __webpack_require__(552);
-var isCancel = __webpack_require__(538);
-var defaults = __webpack_require__(539);
-var isAbsoluteURL = __webpack_require__(559);
-var combineURLs = __webpack_require__(560);
+var utils = __webpack_require__(528);
+var transformData = __webpack_require__(559);
+var isCancel = __webpack_require__(541);
+var defaults = __webpack_require__(537);
+var isAbsoluteURL = __webpack_require__(560);
+var combineURLs = __webpack_require__(561);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -2216,13 +3241,13 @@ module.exports = function dispatchRequest(config) {
 
 /***/ }),
 
-/***/ 552:
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(527);
+var utils = __webpack_require__(528);
 
 /**
  * Transform the data for a request or a response
@@ -2244,308 +3269,7 @@ module.exports = function transformData(data, headers, fns) {
 
 /***/ }),
 
-/***/ 553:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(527);
-
-module.exports = function normalizeHeaderName(headers, normalizedName) {
-  utils.forEach(headers, function processHeader(value, name) {
-    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
-      headers[normalizedName] = value;
-      delete headers[name];
-    }
-  });
-};
-
-
-/***/ }),
-
-/***/ 554:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var createError = __webpack_require__(541);
-
-/**
- * Resolve or reject a Promise based on response status.
- *
- * @param {Function} resolve A function that resolves the promise.
- * @param {Function} reject A function that rejects the promise.
- * @param {object} response The response.
- */
-module.exports = function settle(resolve, reject, response) {
-  var validateStatus = response.config.validateStatus;
-  if (!validateStatus || validateStatus(response.status)) {
-    resolve(response);
-  } else {
-    reject(createError(
-      'Request failed with status code ' + response.status,
-      response.config,
-      null,
-      response.request,
-      response
-    ));
-  }
-};
-
-
-/***/ }),
-
-/***/ 555:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Update an Error with the specified config, error code, and response.
- *
- * @param {Error} error The error to update.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The error.
- */
-module.exports = function enhanceError(error, config, code, request, response) {
-  error.config = config;
-  if (code) {
-    error.code = code;
-  }
-
-  error.request = request;
-  error.response = response;
-  error.isAxiosError = true;
-
-  error.toJSON = function() {
-    return {
-      // Standard
-      message: this.message,
-      name: this.name,
-      // Microsoft
-      description: this.description,
-      number: this.number,
-      // Mozilla
-      fileName: this.fileName,
-      lineNumber: this.lineNumber,
-      columnNumber: this.columnNumber,
-      stack: this.stack,
-      // Axios
-      config: this.config,
-      code: this.code
-    };
-  };
-  return error;
-};
-
-
-/***/ }),
-
-/***/ 556:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(527);
-
-// Headers whose duplicates are ignored by node
-// c.f. https://nodejs.org/api/http.html#http_message_headers
-var ignoreDuplicateOf = [
-  'age', 'authorization', 'content-length', 'content-type', 'etag',
-  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
-  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
-  'referer', 'retry-after', 'user-agent'
-];
-
-/**
- * Parse headers into an object
- *
- * ```
- * Date: Wed, 27 Aug 2014 08:58:49 GMT
- * Content-Type: application/json
- * Connection: keep-alive
- * Transfer-Encoding: chunked
- * ```
- *
- * @param {String} headers Headers needing to be parsed
- * @returns {Object} Headers parsed into an object
- */
-module.exports = function parseHeaders(headers) {
-  var parsed = {};
-  var key;
-  var val;
-  var i;
-
-  if (!headers) { return parsed; }
-
-  utils.forEach(headers.split('\n'), function parser(line) {
-    i = line.indexOf(':');
-    key = utils.trim(line.substr(0, i)).toLowerCase();
-    val = utils.trim(line.substr(i + 1));
-
-    if (key) {
-      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
-        return;
-      }
-      if (key === 'set-cookie') {
-        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
-      } else {
-        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-      }
-    }
-  });
-
-  return parsed;
-};
-
-
-/***/ }),
-
-/***/ 557:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(527);
-
-module.exports = (
-  utils.isStandardBrowserEnv() ?
-
-  // Standard browser envs have full support of the APIs needed to test
-  // whether the request URL is of the same origin as current location.
-    (function standardBrowserEnv() {
-      var msie = /(msie|trident)/i.test(navigator.userAgent);
-      var urlParsingNode = document.createElement('a');
-      var originURL;
-
-      /**
-    * Parse a URL to discover it's components
-    *
-    * @param {String} url The URL to be parsed
-    * @returns {Object}
-    */
-      function resolveURL(url) {
-        var href = url;
-
-        if (msie) {
-        // IE needs attribute set twice to normalize properties
-          urlParsingNode.setAttribute('href', href);
-          href = urlParsingNode.href;
-        }
-
-        urlParsingNode.setAttribute('href', href);
-
-        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-        return {
-          href: urlParsingNode.href,
-          protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-          host: urlParsingNode.host,
-          search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-          hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-          hostname: urlParsingNode.hostname,
-          port: urlParsingNode.port,
-          pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
-            urlParsingNode.pathname :
-            '/' + urlParsingNode.pathname
-        };
-      }
-
-      originURL = resolveURL(window.location.href);
-
-      /**
-    * Determine if a URL shares the same origin as the current location
-    *
-    * @param {String} requestURL The URL to test
-    * @returns {boolean} True if URL shares the same origin, otherwise false
-    */
-      return function isURLSameOrigin(requestURL) {
-        var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
-        return (parsed.protocol === originURL.protocol &&
-            parsed.host === originURL.host);
-      };
-    })() :
-
-  // Non standard browser envs (web workers, react-native) lack needed support.
-    (function nonStandardBrowserEnv() {
-      return function isURLSameOrigin() {
-        return true;
-      };
-    })()
-);
-
-
-/***/ }),
-
-/***/ 558:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(527);
-
-module.exports = (
-  utils.isStandardBrowserEnv() ?
-
-  // Standard browser envs support document.cookie
-    (function standardBrowserEnv() {
-      return {
-        write: function write(name, value, expires, path, domain, secure) {
-          var cookie = [];
-          cookie.push(name + '=' + encodeURIComponent(value));
-
-          if (utils.isNumber(expires)) {
-            cookie.push('expires=' + new Date(expires).toGMTString());
-          }
-
-          if (utils.isString(path)) {
-            cookie.push('path=' + path);
-          }
-
-          if (utils.isString(domain)) {
-            cookie.push('domain=' + domain);
-          }
-
-          if (secure === true) {
-            cookie.push('secure');
-          }
-
-          document.cookie = cookie.join('; ');
-        },
-
-        read: function read(name) {
-          var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-          return (match ? decodeURIComponent(match[3]) : null);
-        },
-
-        remove: function remove(name) {
-          this.write(name, '', Date.now() - 86400000);
-        }
-      };
-    })() :
-
-  // Non standard browser env (web workers, react-native) lack needed support.
-    (function nonStandardBrowserEnv() {
-      return {
-        write: function write() {},
-        read: function read() { return null; },
-        remove: function remove() {}
-      };
-    })()
-);
-
-
-/***/ }),
-
-/***/ 559:
+/***/ 560:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2567,7 +3291,7 @@ module.exports = function isAbsoluteURL(url) {
 
 /***/ }),
 
-/***/ 560:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2589,13 +3313,13 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 
-/***/ 561:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(543);
+var Cancel = __webpack_require__(542);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -2654,7 +3378,7 @@ module.exports = CancelToken;
 
 /***/ }),
 
-/***/ 562:
+/***/ 563:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2685,6 +3409,14 @@ module.exports = function spread(callback) {
     return callback.apply(null, arr);
   };
 };
+
+
+/***/ }),
+
+/***/ 573:
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(t,n){ true?module.exports=n():"function"==typeof define&&define.amd?define(n):t.dayjs=n()}(this,function(){"use strict";var t="millisecond",n="second",e="minute",r="hour",i="day",s="week",u="month",a="quarter",o="year",h=/^(\d{4})-?(\d{1,2})-?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d{1,3})?$/,f=/\[([^\]]+)]|Y{2,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,c=function(t,n,e){var r=String(t);return!r||r.length>=n?t:""+Array(n+1-r.length).join(e)+t},d={s:c,z:function(t){var n=-t.utcOffset(),e=Math.abs(n),r=Math.floor(e/60),i=e%60;return(n<=0?"+":"-")+c(r,2,"0")+":"+c(i,2,"0")},m:function(t,n){var e=12*(n.year()-t.year())+(n.month()-t.month()),r=t.clone().add(e,u),i=n-r<0,s=t.clone().add(e+(i?-1:1),u);return Number(-(e+(n-r)/(i?r-s:s-r))||0)},a:function(t){return t<0?Math.ceil(t)||0:Math.floor(t)},p:function(h){return{M:u,y:o,w:s,d:i,h:r,m:e,s:n,ms:t,Q:a}[h]||String(h||"").toLowerCase().replace(/s$/,"")},u:function(t){return void 0===t}},$={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_")},l="en",m={};m[l]=$;var y=function(t){return t instanceof v},M=function(t,n,e){var r;if(!t)return l;if("string"==typeof t)m[t]&&(r=t),n&&(m[t]=n,r=t);else{var i=t.name;m[i]=t,r=i}return e||(l=r),r},g=function(t,n,e){if(y(t))return t.clone();var r=n?"string"==typeof n?{format:n,pl:e}:n:{};return r.date=t,new v(r)},D=d;D.l=M,D.i=y,D.w=function(t,n){return g(t,{locale:n.$L,utc:n.$u})};var v=function(){function c(t){this.$L=this.$L||M(t.locale,null,!0),this.parse(t)}var d=c.prototype;return d.parse=function(t){this.$d=function(t){var n=t.date,e=t.utc;if(null===n)return new Date(NaN);if(D.u(n))return new Date;if(n instanceof Date)return new Date(n);if("string"==typeof n&&!/Z$/i.test(n)){var r=n.match(h);if(r)return e?new Date(Date.UTC(r[1],r[2]-1,r[3]||1,r[4]||0,r[5]||0,r[6]||0,r[7]||0)):new Date(r[1],r[2]-1,r[3]||1,r[4]||0,r[5]||0,r[6]||0,r[7]||0)}return new Date(n)}(t),this.init()},d.init=function(){var t=this.$d;this.$y=t.getFullYear(),this.$M=t.getMonth(),this.$D=t.getDate(),this.$W=t.getDay(),this.$H=t.getHours(),this.$m=t.getMinutes(),this.$s=t.getSeconds(),this.$ms=t.getMilliseconds()},d.$utils=function(){return D},d.isValid=function(){return!("Invalid Date"===this.$d.toString())},d.isSame=function(t,n){var e=g(t);return this.startOf(n)<=e&&e<=this.endOf(n)},d.isAfter=function(t,n){return g(t)<this.startOf(n)},d.isBefore=function(t,n){return this.endOf(n)<g(t)},d.$g=function(t,n,e){return D.u(t)?this[n]:this.set(e,t)},d.year=function(t){return this.$g(t,"$y",o)},d.month=function(t){return this.$g(t,"$M",u)},d.day=function(t){return this.$g(t,"$W",i)},d.date=function(t){return this.$g(t,"$D","date")},d.hour=function(t){return this.$g(t,"$H",r)},d.minute=function(t){return this.$g(t,"$m",e)},d.second=function(t){return this.$g(t,"$s",n)},d.millisecond=function(n){return this.$g(n,"$ms",t)},d.unix=function(){return Math.floor(this.valueOf()/1e3)},d.valueOf=function(){return this.$d.getTime()},d.startOf=function(t,a){var h=this,f=!!D.u(a)||a,c=D.p(t),d=function(t,n){var e=D.w(h.$u?Date.UTC(h.$y,n,t):new Date(h.$y,n,t),h);return f?e:e.endOf(i)},$=function(t,n){return D.w(h.toDate()[t].apply(h.toDate(),(f?[0,0,0,0]:[23,59,59,999]).slice(n)),h)},l=this.$W,m=this.$M,y=this.$D,M="set"+(this.$u?"UTC":"");switch(c){case o:return f?d(1,0):d(31,11);case u:return f?d(1,m):d(0,m+1);case s:var g=this.$locale().weekStart||0,v=(l<g?l+7:l)-g;return d(f?y-v:y+(6-v),m);case i:case"date":return $(M+"Hours",0);case r:return $(M+"Minutes",1);case e:return $(M+"Seconds",2);case n:return $(M+"Milliseconds",3);default:return this.clone()}},d.endOf=function(t){return this.startOf(t,!1)},d.$set=function(s,a){var h,f=D.p(s),c="set"+(this.$u?"UTC":""),d=(h={},h[i]=c+"Date",h.date=c+"Date",h[u]=c+"Month",h[o]=c+"FullYear",h[r]=c+"Hours",h[e]=c+"Minutes",h[n]=c+"Seconds",h[t]=c+"Milliseconds",h)[f],$=f===i?this.$D+(a-this.$W):a;if(f===u||f===o){var l=this.clone().set("date",1);l.$d[d]($),l.init(),this.$d=l.set("date",Math.min(this.$D,l.daysInMonth())).toDate()}else d&&this.$d[d]($);return this.init(),this},d.set=function(t,n){return this.clone().$set(t,n)},d.get=function(t){return this[D.p(t)]()},d.add=function(t,a){var h,f=this;t=Number(t);var c=D.p(a),d=function(n){var e=g(f);return D.w(e.date(e.date()+Math.round(n*t)),f)};if(c===u)return this.set(u,this.$M+t);if(c===o)return this.set(o,this.$y+t);if(c===i)return d(1);if(c===s)return d(7);var $=(h={},h[e]=6e4,h[r]=36e5,h[n]=1e3,h)[c]||1,l=this.valueOf()+t*$;return D.w(l,this)},d.subtract=function(t,n){return this.add(-1*t,n)},d.format=function(t){var n=this;if(!this.isValid())return"Invalid Date";var e=t||"YYYY-MM-DDTHH:mm:ssZ",r=D.z(this),i=this.$locale(),s=this.$H,u=this.$m,a=this.$M,o=i.weekdays,h=i.months,c=function(t,r,i,s){return t&&(t[r]||t(n,e))||i[r].substr(0,s)},d=function(t){return D.s(s%12||12,t,"0")},$=i.meridiem||function(t,n,e){var r=t<12?"AM":"PM";return e?r.toLowerCase():r},l={YY:String(this.$y).slice(-2),YYYY:this.$y,M:a+1,MM:D.s(a+1,2,"0"),MMM:c(i.monthsShort,a,h,3),MMMM:h[a]||h(this,e),D:this.$D,DD:D.s(this.$D,2,"0"),d:String(this.$W),dd:c(i.weekdaysMin,this.$W,o,2),ddd:c(i.weekdaysShort,this.$W,o,3),dddd:o[this.$W],H:String(s),HH:D.s(s,2,"0"),h:d(1),hh:d(2),a:$(s,u,!0),A:$(s,u,!1),m:String(u),mm:D.s(u,2,"0"),s:String(this.$s),ss:D.s(this.$s,2,"0"),SSS:D.s(this.$ms,3,"0"),Z:r};return e.replace(f,function(t,n){return n||l[t]||r.replace(":","")})},d.utcOffset=function(){return 15*-Math.round(this.$d.getTimezoneOffset()/15)},d.diff=function(t,h,f){var c,d=D.p(h),$=g(t),l=6e4*($.utcOffset()-this.utcOffset()),m=this-$,y=D.m(this,$);return y=(c={},c[o]=y/12,c[u]=y,c[a]=y/3,c[s]=(m-l)/6048e5,c[i]=(m-l)/864e5,c[r]=m/36e5,c[e]=m/6e4,c[n]=m/1e3,c)[d]||m,f?y:D.a(y)},d.daysInMonth=function(){return this.endOf(u).$D},d.$locale=function(){return m[this.$L]},d.locale=function(t,n){if(!t)return this.$L;var e=this.clone();return e.$L=M(t,n,!0),e},d.clone=function(){return D.w(this.toDate(),this)},d.toDate=function(){return new Date(this.$d)},d.toJSON=function(){return this.isValid()?this.toISOString():null},d.toISOString=function(){return this.$d.toISOString()},d.toString=function(){return this.$d.toUTCString()},c}();return g.prototype=v.prototype,g.extend=function(t,n){return t(n,v,g),g},g.locale=M,g.isDayjs=y,g.unix=function(t){return g(1e3*t)},g.en=m[l],g.Ls=m,g});
 
 
 /***/ })

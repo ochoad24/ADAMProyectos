@@ -17,11 +17,11 @@
                             <v-container grid-list-md>
                                 <v-layout wrap>
                                     <v-flex xs12>
-                                        <v-text-field v-model="titulo" label="Titulo del proyecto">
+                                        <v-text-field v-model="titulo" label="Titulo del proyecto" maxlength="100"  required :rules="nameRules" :counter="100">
                                         </v-text-field>
                                     </v-flex>
                                     <v-flex xs12>
-                                        <v-textarea v-model="descripcion" label="Descripción del proyecto">
+                                        <v-textarea v-model="descripcion" label="Descripción del proyecto" maxlength="1000"  required :rules="desRules" :counter="1000">
                                         </v-textarea>
                                     </v-flex>
                                     <!-- Objetivos y resultados -->
@@ -108,11 +108,11 @@
                                                 <v-text-field v-model="fechaI" label="Ingrese fecha de inicio"
                                                     prepend-icon="event" readonly v-on="on"></v-text-field>
                                             </template>
-                                            <v-date-picker v-model="fechaI" no-title scrollable locale="gt">
+                                            <v-date-picker v-model="fechaI" no-title scrollable locale="es-gt">
                                                 <v-spacer></v-spacer>
-                                                <v-btn flat color="primary" @click="menu = false">Cancelar
+                                                <v-btn flat color="#668c2d"  @click="menu = false">Cancelar
                                                 </v-btn>
-                                                <v-btn flat color="primary" @click="$refs.menu.save(fechaI)">
+                                                <v-btn flat color="#668c2d"  @click="$refs.menu.save(fechaI)">
                                                     Guardar</v-btn>
                                             </v-date-picker>
                                         </v-menu>
@@ -127,13 +127,13 @@
                                             <template v-slot:activator="{ on }">
                                                 <v-text-field v-model="fechaF"
                                                     label="Ingrese fecha de finalización" prepend-icon="event"
-                                                    readonly v-on="on"></v-text-field>
+                                                    readonly v-on="on" ></v-text-field>
                                             </template>
-                                            <v-date-picker v-model="fechaF" no-title scrollable locale="gt">
+                                            <v-date-picker v-model="fechaF" no-title scrollable locale="es-gt">
                                                 <v-spacer></v-spacer>
-                                                <v-btn flat color="primary" @click="menu2 = false">Cancelar
+                                                <v-btn flat color="#668c2d"  @click="menu2 = false">Cancelar
                                                 </v-btn>
-                                                <v-btn flat color="primary" @click="$refs.menu2.save(fechaF)">
+                                                <v-btn flat color="#668c2d"  @click="$refs.menu2.save(fechaF)">
                                                     Guardar</v-btn>
                                             </v-date-picker>
                                         </v-menu>
@@ -151,7 +151,7 @@
                                         </multiselect>
                                     </v-flex>
                                     <v-flex xs12 sm12 md3>
-                                        <v-btn class="ma-2" color="green accent-3" dark @click="abrirOrg">
+                                        <v-btn class="ma-2" color="#668c2d" dark @click="abrirOrg">
                                             <v-icon color="white" dark left>add_circle_outline</v-icon>Nueva
                                             Organización
                                         </v-btn>
@@ -162,7 +162,7 @@
                                     <v-flex>
                                         <v-data-table :headers="headersOrg" :items="orgs" class="elevation-1">
                                             <v-progress-linear :indeterminate="true"
-                                                color="light-green accent-3"></v-progress-linear>
+                                                color="#668c2d" ></v-progress-linear>
                                             <template v-slot:items="props">
                                                 <td class="text-xs-right">{{ props.item.nombre }}</td>
                                                 <td class="text-xs-right">{{ props.item.departamento }}</td>
@@ -187,14 +187,20 @@
                      <!-- DIALOGO PARA CREAR ORGANIZACION -->
                     <v-dialog v-model="dialog_org" persistent max-width="650px">
                         <v-card>
-                            <v-card-title>
-                                <span class="headline">Nueva Organización</span>
-                            </v-card-title>
+                         <v-toolbar dark color="#668c2d">
+                                    <v-btn icon dark @click="dialog = false">
+                                        <v-icon col="white">clear</v-icon>
+                                    </v-btn>
+                                    <v-toolbar-title >Nueva Organizacion</v-toolbar-title>
+                                </v-toolbar> 
+        
+                            
+                          
                             <v-card-text>
                                 <v-container grid-list-md>
                                     <v-layout wrap>
                                         <v-flex xs12>
-                                            <v-text-field v-model="nombre" label="Nombre de la organización">
+                                            <v-text-field v-model="nombre" label="Nombre de la organización" maxlength="150"  required :rules="ornameRules" :counter="150">
                                             </v-text-field>
                                         </v-flex>
                                         <v-flex xs12>
@@ -206,7 +212,7 @@
                                         </v-flex>
                                         <v-flex xs12>
                                             <v-text-field v-model="municipio"
-                                                label="Municipio de ubucación de la organización"></v-text-field>
+                                                label="Municipio de ubucación de la organización" maxlength="150"  required :rules="munnameRules" :counter="150"></v-text-field>
                                         </v-flex>
                                         <v-flex xs12>
                                             <v-text-field v-model="comunidad" label="Ingrese comunidad">
@@ -228,15 +234,15 @@
 
                             <v-card-actions>
                                 <v-spacer></v-spacer>
-                                <v-btn color="blue darken-1" flat @click="close_org">Cancelar</v-btn>
-                                <v-btn color="blue darken-1" flat @click="registrarOrganizacion">Guardar Organización
+                                <v-btn color="#668c2d" flat @click="close_org">Cancelar</v-btn>
+                                <v-btn color="#668c2d" flat @click="registrarOrganizacion">Guardar Organización
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
                     </v-dialog>
 
-                    <v-btn
-                        color="primary"
+                    <v-btn class="ma-2" dark
+                       color="#668c2d" 
                         @click="validateProject()"
                     >
                         Continuar
@@ -250,11 +256,11 @@
                                 <v-layout wrap>
                                     <v-flex xs3>
                                         <v-text-field v-model="codigo"
-                                            label="Ingrese código de actividad"></v-text-field>
+                                            label="Ingrese código de actividad" maxlength="50"  required :rules="codigoRules" :counter="50"></v-text-field>
                                     </v-flex>
                                     <v-flex xs9>
                                         <v-text-field v-model="actividad"
-                                            label="Ingrese nombre de la actividad"></v-text-field>
+                                            label="Ingrese nombre de la actividad" maxlength="500"  required :rules="actividadRules" :counter="500"> </v-text-field>
                                     </v-flex>
                                      <v-flex xs12>
                                         <v-textarea v-model="descripcionAct" label="Observaciones de la actividad   ">
@@ -272,9 +278,9 @@
                                             </template>
                                             <v-date-picker v-model="fechaInicio" no-title scrollable>
                                                 <v-spacer></v-spacer>
-                                                <v-btn flat color="primary" @click="menu3 = false">Cancelar
+                                                <v-btn flat color="#668c2d"  @click="menu3 = false">Cancelar
                                                 </v-btn>
-                                                <v-btn flat color="primary"
+                                                <v-btn flat color="#668c2d" 
                                                     @click="$refs.menu3.save(fechaInicio)">Guardar</v-btn>
                                             </v-date-picker>
                                         </v-menu>
@@ -292,9 +298,9 @@
                                             </template>
                                             <v-date-picker v-model="fechaFinal" no-title scrollable>
                                                 <v-spacer></v-spacer>
-                                                <v-btn flat color="primary" @click="menu4 = false">Cancelar
+                                                <v-btn flat color="#668c2d"  @click="menu4 = false">Cancelar
                                                 </v-btn>
-                                                <v-btn flat color="primary"
+                                                <v-btn flat color="#668c2d" 
                                                     @click="$refs.menu4.save(fechaFinal)">Guardar</v-btn>
                                             </v-date-picker>
                                         </v-menu>
@@ -305,7 +311,7 @@
                         </v-card-text>
                         <v-card-actions>
                             <v-spacer></v-spacer>
-                            <v-btn color="blue darken-1" @click="agregarActividad()">
+                            <v-btn color="#668c2d" class="ma-2" dark  @click="agregarActividad()">
                                 Agregar Actividad
                             </v-btn>
                         </v-card-actions>
@@ -323,7 +329,7 @@
                         <v-flex>
                             <v-data-table :headers="headersActividades" :items="acts" class="elevation-1">
                                 <v-progress-linear :indeterminate="true"
-                                    color="light-green accent-3">
+                                    color="#668c2d" >
                                 </v-progress-linear>
                                 <template v-slot:items="props">
                                     <td class="text-xs-right">{{ props.item.codigo }}</td>
@@ -342,20 +348,20 @@
                     </v-card>
 
                     <v-btn
-                    color="primary"
+                   color="#668c2d"  class="ma-2" dark
                     @click="e1 = 1"
                     >
                         Atrás
                     </v-btn>
 
                     <v-btn
-                    color="primary"
+                   color="#668c2d" class="ma-2" dark
                     @click="storeProyecto()"
                     >
                         Guardar
                     </v-btn>
 
-                    <v-btn flat>Cancel</v-btn>
+                    <v-btn color="#668c2d" class="ma-2" dark  flat>Cancel</v-btn>
                 </v-stepper-content>
             </v-stepper-items>
   </v-stepper>
@@ -380,6 +386,42 @@
             editorConfig: {
                 language: 'es'
             },
+             ornameRules: [
+            v => !!v || 'El nombre de la organizacion no puede estar vacio',
+            v => (v && v.length <= 149) || 'El titulo del proyecto no puede ser mayor a 150',
+
+            ],
+               munnameRules: [
+            v => !!v || 'El nombre del municipio no puede estar vacio',
+            v => (v && v.length <= 149) || 'El nombre del municipio no puede ser mayor a 150',
+
+            ],
+            nameRules: [
+            v => !!v || 'El titulo del proyecto no puede estar vacio',
+            v => (v && v.length <= 99) || 'El titulo del proyecto no puede ser mayor a 100',
+
+            ],
+              desRules: [
+           v => !!v || 'La descripcion del proyecto no puede estar vacio',
+            v => (v && v.length <= 999) || 'La descripcion del proyecto no puede ser mayor a 1000',
+
+            ],
+                codigoRules: [
+           v => !!v || 'El codigo del proyecto no puede estar vacio',
+            v => (v && v.length <= 50) || 'El codigo de la actividad no puede ser mayor a 50',
+
+            ],
+                actividadRules: [
+           v => !!v || 'La descripcion del proyecto no puede estar vacio',
+            v => (v && v.length <= 500) || 'El nombre de la actividad no puede ser mayor a 500',
+
+            ],
+            fechafRules:[
+            v => !!v || 'Debe seleccionar una fecha final',
+            ],
+            fechaiRules:[
+           v => !!v || 'Debe seleccionar una fecha inicial',
+            ],
             editor2: ClassicEditor,
             resultados_objetivo: '',
             editor3: ClassicEditor,

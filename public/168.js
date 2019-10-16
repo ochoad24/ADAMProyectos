@@ -1,12 +1,12 @@
 webpackJsonp([168],{
 
-/***/ 1565:
+/***/ 1568:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1566);
+var content = __webpack_require__(1569);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1566:
+/***/ 1569:
 /***/ (function(module, exports, __webpack_require__) {
 
 var escape = __webpack_require__(28);
@@ -36,19 +36,19 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*grid layouts*/\n.grid-property {\n    padding          : 1.5em 0;\n    background-color : #fff;\n    border           : 2px solid #888;\n    border-radius    : 3px;\n}\n.grid-section {\n    margin-top : 77px;\n}\n.grid-section h3 {\n    margin-left : 15px;\n}\n/*grid layout responsive*/\n@media only screen and (max-width : 768px) {\n.grid-selection2 {\n        margin-top : 22px;\n}\n}\n@media only screen and (max-width : 425px) {\n.grid-selection1 {\n        margin-top : 22px;\n}\n}\n/*grid-stack*/\n.grid-stack-item-content {\n    background : url(" + escape(__webpack_require__(567)) + ");\n    color      : #2c3e50;\n    text-align : center;\n    font-size  : 20px;\n}\n.grid-stack-item-content .fa {\n    font-size : 64px;\n    display   : block;\n    margin    : 20px 0 10px 0;\n}\n.grid-stack > .grid-stack-item > .grid-stack-item-content {\n    cursor : move;\n}", ""]);
+exports.push([module.i, "/*grid layouts*/\n.grid-property {\n    padding          : 1.5em 0;\n    background-color : #fff;\n    border           : 2px solid #888;\n    border-radius    : 3px;\n}\n.grid-section {\n    margin-top : 77px;\n}\n.grid-section h3 {\n    margin-left : 15px;\n}\n/*grid layout responsive*/\n@media only screen and (max-width : 768px) {\n.grid-selection2 {\n        margin-top : 22px;\n}\n}\n@media only screen and (max-width : 425px) {\n.grid-selection1 {\n        margin-top : 22px;\n}\n}\n/*grid-stack*/\n.grid-stack-item-content {\n    background : url(" + escape(__webpack_require__(568)) + ");\n    color      : #2c3e50;\n    text-align : center;\n    font-size  : 20px;\n}\n.grid-stack-item-content .fa {\n    font-size : 64px;\n    display   : block;\n    margin    : 20px 0 10px 0;\n}\n.grid-stack > .grid-stack-item > .grid-stack-item-content {\n    cursor : move;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1567:
+/***/ 1570:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
 //
 //
@@ -224,7 +224,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1568:
+/***/ 1571:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -615,13 +615,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1565)
+  __webpack_require__(1568)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1567)
+var __vue_script__ = __webpack_require__(1570)
 /* template */
-var __vue_template__ = __webpack_require__(1568)
+var __vue_template__ = __webpack_require__(1571)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -661,19 +661,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(531)
+  __webpack_require__(532)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(533)
+var __vue_script__ = __webpack_require__(534)
 /* template */
-var __vue_template__ = __webpack_require__(534)
+var __vue_template__ = __webpack_require__(535)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -713,13 +713,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(532);
+var content = __webpack_require__(533);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -740,7 +740,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -755,7 +755,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 533:
+/***/ 534:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -800,7 +800,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 534:
+/***/ 535:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -862,7 +862,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 567:
+/***/ 568:
 /***/ (function(module, exports) {
 
 module.exports = "/images/brick-wall.png?effad1520fc39d8897385d7004d2dbf4";

@@ -1,22 +1,22 @@
 webpackJsonp([91],{
 
-/***/ 2271:
+/***/ 2257:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2272);
+var content = __webpack_require__(2258);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("17b13166", content, false, {});
+var update = __webpack_require__(26)("a6b1c016", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ffd3ba44\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ffd3ba44\",\"scoped\":true,\"hasInlineConfig\":true}!./layouts.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cd28ef0\",\"scoped\":false,\"hasInlineConfig\":true}!./mini_sidebar.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7cd28ef0\",\"scoped\":false,\"hasInlineConfig\":true}!./mini_sidebar.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2272:
+/***/ 2258:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,14 +35,14 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.right-side[data-v-ffd3ba44] {\n    padding-top :0;\n}\n.movable-header .rightsidebar-without-nav[data-v-ffd3ba44] {\n    padding-top : 20px !important\n}\n@media screen and (max-width : 560px) {\nbody[data-v-ffd3ba44] {\n        padding-top : 0 !important;\n}\n    /*fixednav pages*/\n.fixednav_right[data-v-ffd3ba44] {\n        padding-top : 112px;\n}\n}\n@media screen and (max-width : 992px) {\n.fixed-menu #menu[data-v-ffd3ba44] {\n        padding-top : 0;\n}\n.movable-header #right[data-v-ffd3ba44] {\n        padding-top : 0;\n}\n}\n@media screen and (max-width : 560px) {\n.fixed-menu #menu[data-v-ffd3ba44] {\n        padding-top : 90px;\n}\n.movable-header .rightsidebar-without-nav-small[data-v-ffd3ba44] {\n        padding-top : 70px !important\n}\n}\n.movable-header #menu[data-v-ffd3ba44] {\n    padding-top : 0;\n}\n/*==== layout fixed ====*/\n.slimScrollBar[data-v-ffd3ba44] {\n    width      : 3px !important;\n    opacity    : 0.5 !important;\n    background : rgb(130, 194, 224) !important;\n}\n.menu_align[data-v-ffd3ba44] {\n    margin-bottom : 50px;\n}\n.full_img[data-v-ffd3ba44] {\n    width: 100%;\n    height: 150px;\n    border-radius: 5px;\n}\n/*movable header page*/\n.header_movable[data-v-ffd3ba44] {\n    position : relative !important;\n}\n\n/*====End of layout fixed ====*/\n", ""]);
+exports.push([module.i, "\nbody.mini #menu .navigation .menu-icon {\n    text-align: center;\n    font-size: 20px;\n}\nbody.mini #menu .navigation > li > a {\n    padding: 14px 24px;\n}\nbody.mini #menu .navigation a {\n    padding: 11px 24px;\n}\nbody.mini #menu .navigation a.index {\n    padding: 17px 24px 17px 40px;\n}\nbody.mini .left-side,\nbody.mini .sidebar,\nbody.mini .menu-dropdown > a,\nbody.mini #menu .navigation {\n    width: 80px;\n}\nbody.mini .right-side {\n    margin-left: 80px;\n}\n@media screen and (max-width: 992px) {\nbody.mini .right-side {\n        margin-left: 0;\n}\nbody.mini .relative .right-side {\n        margin-left: -160px;\n}\n}\n@media screen and (min-width: 992px) {\nbody.mini .right-side.strech {\n        margin-left: 0;\n}\n}\n@media screen and (width: 992px) {\nbody.mini .left-side {\n        top: 0;\n}\n}\n\n\n/* drop list open on hover */\nbody.mini .dropdown {\n    position: relative;\n    display: inline-block;\n}\nbody.mini .menu-dropdown,\nbody.mini #menu .navigation > li:not(.menu-dropdown) > a {\n    position: relative;\n    width: 80px;\n}\nbody.mini #menu .menu-dropdown > ul,\nbody.mini #menu .menu-dropdown-open-ul {\n    position: absolute;\n    width: 250px !important;\n    top: 0;\n    right: -250px;\n    z-index: 2;\n    display: none;\n    overflow-y: auto;\n}\nbody.mini #menu .navigation > li:hover > a {\n    background-color: #eee;\n    color: #33CC99;\n}\nbody.mini #menu .menu-dropdown:hover > ul,\nbody.mini #menu .menu-dropdown:hover > ul.collapse {\n    display: block;\n    height: auto;\n    z-index: 1000;\n    background-color: #fff;\n    box-shadow: 0 0 15px #CCC;\n}\nbody.mini #menu .menu-dropdown:hover > a:after {\n    position: absolute;\n    top: 17px;\n    right: 0;\n    width: 0;\n    height: 0;\n    content: \"\";\n    border-top: 10px solid transparent;\n    border-right: 10px solid #2E576B;\n    border-bottom: 10px solid transparent;\n    border-left: 0;\n}\nbody.mini #menu .navigation {\n    padding: 4px 0 15px;\n    border-bottom: 0;\n}\nbody.mini .nav_profile .profile-left {\n    padding: 7px 13px 7px;\n    border: 0;\n}\nbody.mini #menu>.navigation .menu-dropdown>a {\n    text-align: center;\n}\nbody.mini #menu .menu-dropdown .sidebarbottom {\n    top: auto;\n    bottom: 0;\n}\nbody.mini #menu>.navigation>li>a .mm-text,\nbody.mini #menu>.navigation>li>a .fa.arrow,\nbody.mini .content-profile {\n    display: none;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 2273:
+/***/ 2259:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -93,124 +93,117 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "boxed",
+    name: "mini_sidebar",
     mounted: function mounted() {
-        $("html").addClass("stylehtml");
-        $("body").addClass("boxed");
+        "use strict";
+
+        $(document).ready(function () {
+            $("body").addClass("mini_sidebar");
+            //leftmenu init
+            if ($(window).width() >= 992) {
+                $(".sidebar-toggle").on("click", function (e) {
+                    e.preventDefault();
+                    if ($("body").hasClass("mini")) {
+                        $("body").removeClass("mini");
+                        $("#menu").find("li").has("ul").children("a").off("click");
+                        $("#menu").find("li").has("ul").children("a").on("click", function (e) {
+                            e.preventDefault();
+                            $(this).parent("li").toggleClass("active").children("ul").collapse("toggle");
+                            $(this).parent("li").siblings().removeClass("active").children("ul.in").collapse("hide");
+                        });
+                    } else {
+                        $("body").addClass("mini");
+                        $(".sub-menu").css("height", "auto");
+                        $('.menu-dropdown>a').off("click").on("click", function (e) {
+                            e.preventDefault();
+                        });
+                        $("#menu").find('ul>.menu-dropdown').hover(function () {
+                            var sideoffset = $(".sidebar").offset();
+                            var submenuoffset = $(this).children("ul").offset();
+                            if (sideoffset.top + $(".sidebar").height() < submenuoffset.top + $(this).children("ul").height()) {
+                                $(this).children("ul").addClass("sidebarbottom");
+                            }
+                        });
+                    }
+                });
+            }
+        });
     },
     destroyed: function destroyed() {
-        $("html").removeClass("stylehtml");
-        $("body").removeClass("boxed");
         location.reload();
     }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(529)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 2274:
+/***/ 2260:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-lg-12" }, [
-      _c("p", { staticClass: "text-justify" }, [
-        _vm._v(
-          "\n                    Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                    Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque acilisis luctus adipiscing.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-justify" }, [
-        _c("img", {
-          staticClass: "img-responsive full_img",
-          attrs: {
-            src: __webpack_require__(568),
-            alt: "holder image"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                    Sed adipiscing justo tristique enim pharetra, nec ultricies metus sagittis.Duis varius id massa ut pellentesque. Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a purus.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                   Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "clearfix" }),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-justify" }, [
-        _c("img", {
-          staticClass: "img-responsive full_img",
-          attrs: {
-            src: __webpack_require__(568),
-            alt: "holder image"
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim pharetra, nec ultricies metus sagittis. Duis varius id massa ut pellentesque.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "    Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae. Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a purus.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "    Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat. Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare. Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac, pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n            "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "clearfix" })
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "outer" }, [
-      _c("div", { staticClass: "inner bg-light lter" }, [
-        _c("h2", [_vm._v("Code")]),
+    return _c("div", [
+      _c("div", { staticClass: "outer" }, [_c("pre", [_vm._v("code")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-lg-12" }, [
+        _c("p", { staticClass: "text-justify" }, [
+          _vm._v(
+            "\n                Sed sed blandit urna. Proin ac sem nisl. Mauris risus orci, tristique eget velit at,\n            congue euismod lacus. Curabitur id purus sit amet urna rutrum bibendum ac at quam. In hendrerit enim\n            eu turpis molestie, et euismod tellus viverra. Suspendisse molestie at leo sit amet volutpat.\n            Integer augue libero, scelerisque vitae luctus ac, consequat et arcu. Nullam malesuada turpis eu\n            ullamcorper tincidunt. Integer aliquam felis eget neque facilisis ornare.\n        "
+          )
+        ]),
         _vm._v(" "),
-        _c("pre", [
-          _c("code", { staticClass: "language-markup" }, [
-            _vm._v(
-              '<body class="boxed">\n    <nav class="navbar navbar-inverse navbar-fixed-top">\n    ...\n    </nav>\n</body>'
-            )
-          ])
-        ])
+        _c("p", [
+          _vm._v(
+            "\n                Integer pharetra vitae dolor vel elementum. In nisl risus, dignissim non fermentum ac,\n            pretium sit amet dui. Phasellus fringilla orci sapien, vel lacinia mi dapibus ut. Donec euismod\n            congue nulla, in porttitor sapien. Pellentesque facilisis luctus adipiscing.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-justify" }, [
+          _vm._v(
+            "\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut\n            imperdiet eget, laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis\n            gravida fringilla, velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac\n            eros commodo rutrum ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum\n            sit amet. Duis risus neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing\n            justo tristique enim pharetra, nec ultricies metus sagittis.Duis varius id massa ut pellentesque.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "     Nulla commodo erat eu mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper,\n            vel pharetra purus consequat. Suspendisse a neque quis nibh dictum posuere ac et enim. Aliquam sit\n            amet accumsan erat. Nullam euismod elit tellus, vel luctus enim luctus feugiat. Vestibulum quis\n            placerat ipsum, porta vehicula massa. Etiam nec risus ac lacus gravida tincidunt. Vivamus eu ante\n            vehicula, aliquam nisl et, suscipit ipsum. Vivamus velit nulla, tincidunt ac risus et, congue\n            lobortis mauris. In condimentum consectetur purus, vel adipiscing felis sollicitudin vitae.\n            Phasellus luctus, ligula eu tempor ullamcorper, lectus elit posuere augue, eget tempus lacus nibh a\n            purus. Ut risus velit, adipiscing eu leo quis, vestibulum porttitor nunc. Sed sed blandit urna.\n            Proin ac sem nisl.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "     Mauris risus orci, tristique eget velit at, congue euismod lacus. Curabitur id purus\n            sit amet urna rutrum bibendum ac at quam. In hendrerit enim eu turpis molestie, et euismod tellus\n            viverra. Suspendisse molestie at leo sit amet volutpat. et euismod tellus viverra.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "clearfix" }),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-justify" }, [
+          _vm._v(
+            "\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa eros, dictum ut imperdiet eget,\n            laoreet placerat orci. Aliquam eget neque neque. Donec dictum, enim convallis gravida fringilla,\n            velit sem condimentum nunc, in pretium libero est sit amet elit. Nam ut arcu ac eros commodo rutrum\n            ac nec purus. Fusce sodales pulvinar odio, vulputate fringilla ligula bibendum sit amet. Duis risus\n            neque, molestie tincidunt odio vel, sodales vulputate mauris. Sed adipiscing justo tristique enim\n            pharetra, nec ultricies metus sagittis. Duis varius id massa ut pellentesque. Nulla commodo erat eu\n            mi aliquet aliquam. Vivamus commodo massa et nunc ullamcorper, vel pharetra purus consequat.\n        "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "clearfix" })
       ])
     ])
   }
@@ -220,31 +213,31 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ffd3ba44", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7cd28ef0", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 501:
+/***/ 506:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2271)
+  __webpack_require__(2257)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2273)
+var __vue_script__ = __webpack_require__(2259)
 /* template */
-var __vue_template__ = __webpack_require__(2274)
+var __vue_template__ = __webpack_require__(2260)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-ffd3ba44"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -255,7 +248,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/boxed.vue"
+Component.options.__file = "resources/components/pages/mini_sidebar.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -264,9 +257,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ffd3ba44", Component.options)
+    hotAPI.createRecord("data-v-7cd28ef0", Component.options)
   } else {
-    hotAPI.reload("data-v-ffd3ba44", Component.options)
+    hotAPI.reload("data-v-7cd28ef0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -278,7 +271,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 529:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10647,13 +10640,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-
-/***/ 568:
-/***/ (function(module, exports) {
-
-module.exports = "/images/brick-wall.png?effad1520fc39d8897385d7004d2dbf4";
 
 /***/ })
 

@@ -1,6 +1,9 @@
 <template>
     <div>
+        <center> <h1 style="color:#668c2d" v-if="project.length > 0">Progreso de proyecto {{ project[0].Titulo }}  </h1></center>
+        
         <v-layout row>
+           
             <v-flex>
                 <v-card v-if="!gantt">
                     <gantt-elastic

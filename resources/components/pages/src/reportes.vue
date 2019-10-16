@@ -202,17 +202,12 @@
             tareas: [],
             search: "",
         }),
-
         computed: {
-
         },
-
         watch: {
         },
-
         created() {
         },
-
         methods: {
             changeScreen(number) {
                 let me = this;

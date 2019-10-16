@@ -1,13 +1,13 @@
 webpackJsonp([25],{
 
-/***/ 2315:
+/***/ 2289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(546);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
@@ -84,53 +84,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "Organizacion",
+    name: "Estadistica",
     data: function data() {
         return {
-            dialog: false,
-            error: 0,
-            select: [],
-            errorMsj: [],
-            departamentos: [],
             search: '',
-            IdOrganizacion: 0,
-            IdDepartamento: -1,
-            editar: 0,
-            headers: [{ text: 'Nombre', align: 'left', value: 'nombre' }, { text: 'Departamento', align: 'right', value: 'departamento' }, { text: 'Municipio', align: 'right', value: 'municipio' }, { text: 'Comunidad', align: 'right', value: 'comunidad' }],
-            municipio: '',
-            nombre: '',
-            comunidad: '',
-            organizaciones: [],
-            editedIndex: -1
+            dialog: false,
+            nameRules: [function (v) {
+                return !!v || 'El nombre de la estadistica no puede estar vacio';
+            }, function (v) {
+                return v && v.length <= 19 || 'El nombre de la estadistica no puede ser mayor a 20';
+            }],
+            error: 0,
+            errorMsj: [],
+            headers: [{
+                text: 'Id',
+                align: 'left',
+                value: 'id'
+            }, { text: 'Nombre', value: 'nombre' }],
+            estadisticas: [],
+            editedIndex: -1,
+            editedItem: {
+                id: 0,
+                nombre: ''
+            },
+            defaultItem: {
+                id: 0,
+                nombre: ''
+            }
         };
     },
 
     computed: {
         formTitle: function formTitle() {
-            return this.editar === 0 ? 'Nuevo Proyecto' : 'Editar Proyecto';
+            return this.editedIndex === -1 ? 'Nueva Estadistica' : 'Editar Estadistica';
         }
     },
 
@@ -141,164 +132,137 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     created: function created() {
-        this.cargaDepartamentos();
         this.initialize();
     },
 
 
     methods: {
-        initialize: function initialize() {
-            this.dialog = false;
-            var me = this;
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/org').then(function (response) {
-                console.log("busqueda");
-                var respuesta = response.data;
-                me.organizaciones = respuesta;
-            }).catch(function (error) {
-                console.log(error.response);
-            });
-        },
-        cargaDepartamentos: function cargaDepartamentos() {
-            var me = this;
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/org/dept').then(function (response) {
-                me.departamentos = response.data;
-            }).catch(function (error) {
-                console.log(error.response);
-            });
-        },
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.nombre) this.errorMsj.push('El nombre de la organización no puede estar vacio');
-            if (!this.municipio) this.errorMsj.push('El municipio no puede estar vacío');
-            if (this.select.length > 0) this.errorMsj.push('Por favor seleccione un departamento');
-            if (this.errorMsj.length) this.error = 1;else this.error = 0;
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+            if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
-        registrarOrganizacion: function registrarOrganizacion() {
-            var me = this;
-            if (this.validate() === 1) {
-                return;
-            }
-            this.IdDepartamento = this.select.id;
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('org/registrar', {
-                'nombre': me.nombre,
-                'municipio': me.municipio,
-                'IdDepartamento': me.select.id,
-                'comunidad': me.comunidad
-            }).then(function (response) {
-                console.log(response.data);
-                swal.fire({
-                    type: 'success',
-                    title: 'Organización registrada!',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-                me.close();
-                me.initialize();
-            }).catch(function (error) {
-                console.log(error.response);
-                swal.fire({
-                    type: 'error',
-                    title: 'Se ha producido un error!',
-                    text: 'Error al registrar organizaci\xF3n: ' + error.response.data.message
-                });
-                me.close();
+        initialize: function initialize() {
+            var _this = this;
+
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/Estadistica').then(function (response) {
+                _this.estadisticas = response.data;
+            }).catch(function (errors) {
+                console.log(errors);
             });
         },
-        editarOrganizacion: function editarOrganizacion() {
-            var me = this;
-            if (this.validate() === 1) {
-                return;
-            }
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.put('/org/actualizar', {
-                'id': me.IdOrganizacion,
-                'nombre': me.nombre,
-                'municipio': me.municipio,
-                'comunidad': me.comunidad,
-                'IdDepartamento': me.select.id
-            }).then(function (response) {
-                swal.fire({
-                    type: 'success',
-                    title: 'Organización editada!',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-                me.initialize();
-                me.close();
-            }).catch(function (error) {
-                console.log(error.response);
-                swal.fire({
-                    type: 'error',
-                    title: 'Se ha producido un error!',
-                    text: 'Error al editar organizaci\xF3n: ' + error.response.data.message
-                });
-                me.close();
-            });
-        },
-        abrirEditar: function abrirEditar(item) {
-            this.editar = 1;
-            this.IdOrganizacion = item.IdOrganizacion;
+        editItem: function editItem(item) {
+            this.editedIndex = this.estadisticas.indexOf(item);
+            this.editedItem = Object.assign({}, item);
             this.dialog = true;
-            this.nombre = item.nombre;
-            this.comunidad = item.comunidad;
-            this.municipio = item.municipio;
         },
-        deleteItem: function deleteItem(id) {
-            console.log(id);
+        deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
-                title: '¿Quieres eliminar esta organización?',
-                text: "Esta acción no se podrá revertir",
+                title: 'Quieres eliminar esta estadistica?',
+                text: "No podras revertir la eliminacion!",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Eliminar',
+                confirmButtonText: 'Si, Eliminalo!',
                 cancelButtonText: "Cancelar"
             }).then(function (result) {
                 if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.put('/org/delete', {
-                        'id': id
-                    }).then(function (response) {
-                        console.log(response.data);
-                        swal.fire({
-                            type: 'success',
-                            title: 'Organización Eliminada',
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/Estadistica/' + item.id + '/delete').then(function (response) {
                         me.initialize();
-                    }).catch(function (error) {
-                        console.log('catch encontrado');
-                        console.log(error);
                         swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: response.data,
+                            showConfirmButton: false,
+                            timer: 1500 });
+                    }).catch(function (error) {
+                        swal.fire({
+                            position: 'top-end',
                             type: 'error',
-                            title: 'Error al eliminar organizaci\xF3n: ' + error.response.data.message,
-                            showConfirmButton: true
-                        });
+                            title: error.response.data.error,
+                            showConfirmButton: true });
                     });
                 }
             });
         },
         close: function close() {
-            this.dialog = false;
-            this.editar = 0;
-            this.IdDepartamento = 0;
-            this.IdOrganizacion = 0;
-            this.nombre = "";
-            this.municipio = '';
-            this.comunidad = '';
-            this.select = [];
+            var _this2 = this;
+
             this.error = 0;
-            this.errorMsj = [];
+            this.dialog = false;
+            setTimeout(function () {
+                _this2.editedItem = Object.assign({}, _this2.defaultItem);
+                _this2.editedIndex = -1;
+            }, 300);
+        },
+        save: function save() {
+            var me = this;
+            if (this.validate()) {
+                return;
+            }
+            if (this.editedIndex > -1) {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'put',
+                    url: '/Estadistica/editar',
+                    data: {
+                        id: this.editedItem.id,
+                        nombre: this.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            } else {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'post',
+                    url: '/Estadistica/nuevo',
+                    data: {
+                        nombre: me.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
+                });
+            }
         }
     }
 });
 
 /***/ }),
 
-/***/ 2316:
+/***/ 2290:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -314,7 +278,7 @@ var render = function() {
           "b-card",
           {
             staticClass: "bg-primary-card",
-            attrs: { header: "Usuarios", "header-tag": "h4" }
+            attrs: { header: "Tipo de Actividades", "header-tag": "h4" }
           },
           [
             _c(
@@ -341,10 +305,12 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
+                    _c("v-spacer"),
+                    _vm._v(" "),
                     _c(
                       "v-dialog",
                       {
-                        attrs: { persistent: "", "max-width": "650px" },
+                        attrs: { "max-width": "600px" },
                         scopedSlots: _vm._u([
                           {
                             key: "activator",
@@ -356,20 +322,11 @@ var render = function() {
                                   _vm._g(
                                     {
                                       staticClass: "mb-2",
-                                      attrs: { color: "primary", dark: "" },
-                                      on: {
-                                        click: function($event) {
-                                          _vm.editar = 0
-                                        }
-                                      }
+                                      attrs: { color: "#668c2d", dark: "" }
                                     },
                                     on
                                   ),
-                                  [
-                                    _vm._v(
-                                      "Agregar\n                                Organización"
-                                    )
-                                  ]
+                                  [_vm._v("Nueva Estadistica")]
                                 )
                               ]
                             }
@@ -388,11 +345,34 @@ var render = function() {
                         _c(
                           "v-card",
                           [
-                            _c("v-card-title", [
-                              _c("span", { staticClass: "headline" }, [
-                                _vm._v(_vm._s(_vm.formTitle))
-                              ])
-                            ]),
+                            _c(
+                              "v-toolbar",
+                              { attrs: { dark: "", color: "#668c2d" } },
+                              [
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { icon: "", dark: "" },
+                                    on: {
+                                      click: function($event) {
+                                        _vm.dialog2 = false
+                                      }
+                                    }
+                                  },
+                                  [
+                                    _c("v-icon", { attrs: { col: "white" } }, [
+                                      _vm._v("clear")
+                                    ])
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("v-toolbar-title", [
+                                  _vm._v("Nueva estadistica")
+                                ])
+                              ],
+                              1
+                            ),
                             _vm._v(" "),
                             _c(
                               "v-card-text",
@@ -407,89 +387,33 @@ var render = function() {
                                       [
                                         _c(
                                           "v-flex",
-                                          { attrs: { xs12: "" } },
+                                          {
+                                            attrs: {
+                                              xs12: "",
+                                              sm12: "",
+                                              md12: ""
+                                            }
+                                          },
                                           [
                                             _c("v-text-field", {
                                               attrs: {
                                                 label:
-                                                  "Nombre de la organización"
+                                                  "Nombre de la estadistica",
+                                                maxlength: "20",
+                                                required: "",
+                                                rules: _vm.nameRules,
+                                                counter: 20
                                               },
                                               model: {
-                                                value: _vm.nombre,
+                                                value: _vm.editedItem.nombre,
                                                 callback: function($$v) {
-                                                  _vm.nombre = $$v
+                                                  _vm.$set(
+                                                    _vm.editedItem,
+                                                    "nombre",
+                                                    $$v
+                                                  )
                                                 },
-                                                expression: "nombre"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          { attrs: { xs12: "" } },
-                                          [
-                                            _c("v-select", {
-                                              attrs: {
-                                                hint:
-                                                  "" + _vm.select.departamento,
-                                                items: _vm.departamentos,
-                                                "item-text": "departamento",
-                                                "item-value": "id",
-                                                label:
-                                                  "Seleccionar departamento",
-                                                "persistent-hint": "",
-                                                "return-object": "",
-                                                "single-line": ""
-                                              },
-                                              model: {
-                                                value: _vm.select,
-                                                callback: function($$v) {
-                                                  _vm.select = $$v
-                                                },
-                                                expression: "select"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          { attrs: { xs12: "" } },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: {
-                                                label:
-                                                  "Municipio de ubucación de la organización"
-                                              },
-                                              model: {
-                                                value: _vm.municipio,
-                                                callback: function($$v) {
-                                                  _vm.municipio = $$v
-                                                },
-                                                expression: "municipio"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          { attrs: { xs12: "" } },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: {
-                                                label: "Ingrese comunidad"
-                                              },
-                                              model: {
-                                                value: _vm.comunidad,
-                                                callback: function($$v) {
-                                                  _vm.comunidad = $$v
-                                                },
-                                                expression: "comunidad"
+                                                expression: "editedItem.nombre"
                                               }
                                             })
                                           ],
@@ -539,51 +463,20 @@ var render = function() {
                                 _c(
                                   "v-btn",
                                   {
-                                    attrs: { color: "blue darken-1", flat: "" },
+                                    attrs: { color: "#668c2d", flat: "" },
                                     on: { click: _vm.close }
                                   },
                                   [_vm._v("Cancelar")]
                                 ),
                                 _vm._v(" "),
-                                _vm.editar === 0
-                                  ? _c(
-                                      "v-btn",
-                                      {
-                                        attrs: {
-                                          color: "blue darken-1",
-                                          flat: ""
-                                        },
-                                        on: { click: _vm.registrarOrganizacion }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                    Guardar"
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _vm.editar === 1
-                                  ? _c(
-                                      "v-btn",
-                                      {
-                                        attrs: {
-                                          color: "blue darken-1",
-                                          flat: ""
-                                        },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.editarOrganizacion()
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                    Guardar"
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e()
+                                _c(
+                                  "v-btn",
+                                  {
+                                    attrs: { color: "#668c2d", flat: "" },
+                                    on: { click: _vm.save }
+                                  },
+                                  [_vm._v("Guardar")]
+                                )
                               ],
                               1
                             )
@@ -601,7 +494,7 @@ var render = function() {
                   staticClass: "elevation-1",
                   attrs: {
                     headers: _vm.headers,
-                    items: _vm.organizaciones,
+                    items: _vm.estadisticas,
                     search: _vm.search
                   },
                   scopedSlots: _vm._u([
@@ -609,18 +502,12 @@ var render = function() {
                       key: "items",
                       fn: function(props) {
                         return [
-                          _c("td", [_vm._v(_vm._s(props.item.nombre))]),
-                          _vm._v(" "),
                           _c("td", { staticClass: "text-xs-right" }, [
-                            _vm._v(_vm._s(props.item.departamento))
+                            _vm._v(_vm._s(props.item.id))
                           ]),
                           _vm._v(" "),
                           _c("td", { staticClass: "text-xs-right" }, [
-                            _vm._v(_vm._s(props.item.municipio))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-right" }, [
-                            _vm._v(_vm._s(props.item.comunidad))
+                            _vm._v(_vm._s(props.item.nombre))
                           ]),
                           _vm._v(" "),
                           _c(
@@ -634,7 +521,7 @@ var render = function() {
                                   attrs: { small: "" },
                                   on: {
                                     click: function($event) {
-                                      return _vm.abrirEditar(props.item)
+                                      return _vm.editItem(props.item)
                                     }
                                   }
                                 },
@@ -651,9 +538,7 @@ var render = function() {
                                   attrs: { small: "" },
                                   on: {
                                     click: function($event) {
-                                      return _vm.deleteItem(
-                                        props.item.IdOrganizacion
-                                      )
+                                      return _vm.deleteItem(props.item)
                                     }
                                   }
                                 },
@@ -676,7 +561,8 @@ var render = function() {
                           _c(
                             "v-btn",
                             {
-                              attrs: { color: "primary" },
+                              staticClass: "mb-2",
+                              attrs: { color: "#668c2d", dark: "" },
                               on: { click: _vm.initialize }
                             },
                             [_vm._v("Recargar")]
@@ -728,21 +614,21 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-37061daa", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-e6fdb9a2", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 511:
+/***/ 516:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2315)
+var __vue_script__ = __webpack_require__(2289)
 /* template */
-var __vue_template__ = __webpack_require__(2316)
+var __vue_template__ = __webpack_require__(2290)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -759,7 +645,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/src/organizacion.vue"
+Component.options.__file = "resources/components/pages/src/estadistica.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -768,9 +654,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-37061daa", Component.options)
+    hotAPI.createRecord("data-v-e6fdb9a2", Component.options)
   } else {
-    hotAPI.reload("data-v-37061daa", Component.options)
+    hotAPI.reload("data-v-e6fdb9a2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -782,14 +668,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 528:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var bind = __webpack_require__(537);
-var isBuffer = __webpack_require__(549);
+var bind = __webpack_require__(536);
+var isBuffer = __webpack_require__(548);
 
 /*global toString:true*/
 
@@ -1124,7 +1010,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 537:
+/***/ 536:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1143,13 +1029,13 @@ module.exports = function bind(fn, thisArg) {
 
 /***/ }),
 
-/***/ 538:
+/***/ 537:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -1222,7 +1108,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 /***/ }),
 
-/***/ 539:
+/***/ 538:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1235,14 +1121,14 @@ module.exports = function isCancel(value) {
 
 /***/ }),
 
-/***/ 540:
+/***/ 539:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(528);
-var normalizeHeaderName = __webpack_require__(554);
+var utils = __webpack_require__(527);
+var normalizeHeaderName = __webpack_require__(553);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -1259,10 +1145,10 @@ function getDefaultAdapter() {
   // Only Node.JS has a process variable that is of [[Class]] process
   if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(541);
+    adapter = __webpack_require__(540);
   } else if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(541);
+    adapter = __webpack_require__(540);
   }
   return adapter;
 }
@@ -1342,18 +1228,18 @@ module.exports = defaults;
 
 /***/ }),
 
-/***/ 541:
+/***/ 540:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var settle = __webpack_require__(555);
-var buildURL = __webpack_require__(538);
-var parseHeaders = __webpack_require__(557);
-var isURLSameOrigin = __webpack_require__(558);
-var createError = __webpack_require__(542);
+var utils = __webpack_require__(527);
+var settle = __webpack_require__(554);
+var buildURL = __webpack_require__(537);
+var parseHeaders = __webpack_require__(556);
+var isURLSameOrigin = __webpack_require__(557);
+var createError = __webpack_require__(541);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -1445,7 +1331,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(559);
+      var cookies = __webpack_require__(558);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -1524,13 +1410,13 @@ module.exports = function xhrAdapter(config) {
 
 /***/ }),
 
-/***/ 542:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(556);
+var enhanceError = __webpack_require__(555);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -1550,13 +1436,13 @@ module.exports = function createError(message, config, code, request, response) 
 
 /***/ }),
 
-/***/ 543:
+/***/ 542:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 /**
  * Config-specific merge-function which creates a new config-object
@@ -1609,7 +1495,7 @@ module.exports = function mergeConfig(config1, config2) {
 
 /***/ }),
 
-/***/ 544:
+/***/ 543:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1636,24 +1522,24 @@ module.exports = Cancel;
 
 /***/ }),
 
-/***/ 547:
+/***/ 546:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(548);
+module.exports = __webpack_require__(547);
 
 /***/ }),
 
-/***/ 548:
+/***/ 547:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var bind = __webpack_require__(537);
-var Axios = __webpack_require__(550);
-var mergeConfig = __webpack_require__(543);
-var defaults = __webpack_require__(540);
+var utils = __webpack_require__(527);
+var bind = __webpack_require__(536);
+var Axios = __webpack_require__(549);
+var mergeConfig = __webpack_require__(542);
+var defaults = __webpack_require__(539);
 
 /**
  * Create an instance of Axios
@@ -1686,15 +1572,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(544);
-axios.CancelToken = __webpack_require__(562);
-axios.isCancel = __webpack_require__(539);
+axios.Cancel = __webpack_require__(543);
+axios.CancelToken = __webpack_require__(561);
+axios.isCancel = __webpack_require__(538);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(563);
+axios.spread = __webpack_require__(562);
 
 module.exports = axios;
 
@@ -1704,7 +1590,7 @@ module.exports.default = axios;
 
 /***/ }),
 
-/***/ 549:
+/***/ 548:
 /***/ (function(module, exports) {
 
 /*!
@@ -1722,17 +1608,17 @@ module.exports = function isBuffer (obj) {
 
 /***/ }),
 
-/***/ 550:
+/***/ 549:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var buildURL = __webpack_require__(538);
-var InterceptorManager = __webpack_require__(551);
-var dispatchRequest = __webpack_require__(552);
-var mergeConfig = __webpack_require__(543);
+var utils = __webpack_require__(527);
+var buildURL = __webpack_require__(537);
+var InterceptorManager = __webpack_require__(550);
+var dispatchRequest = __webpack_require__(551);
+var mergeConfig = __webpack_require__(542);
 
 /**
  * Create a new instance of Axios
@@ -1816,13 +1702,13 @@ module.exports = Axios;
 
 /***/ }),
 
-/***/ 551:
+/***/ 550:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -1876,18 +1762,18 @@ module.exports = InterceptorManager;
 
 /***/ }),
 
-/***/ 552:
+/***/ 551:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
-var transformData = __webpack_require__(553);
-var isCancel = __webpack_require__(539);
-var defaults = __webpack_require__(540);
-var isAbsoluteURL = __webpack_require__(560);
-var combineURLs = __webpack_require__(561);
+var utils = __webpack_require__(527);
+var transformData = __webpack_require__(552);
+var isCancel = __webpack_require__(538);
+var defaults = __webpack_require__(539);
+var isAbsoluteURL = __webpack_require__(559);
+var combineURLs = __webpack_require__(560);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -1970,13 +1856,13 @@ module.exports = function dispatchRequest(config) {
 
 /***/ }),
 
-/***/ 553:
+/***/ 552:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 /**
  * Transform the data for a request or a response
@@ -1998,13 +1884,13 @@ module.exports = function transformData(data, headers, fns) {
 
 /***/ }),
 
-/***/ 554:
+/***/ 553:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -2018,13 +1904,13 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 /***/ }),
 
-/***/ 555:
+/***/ 554:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(542);
+var createError = __webpack_require__(541);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -2051,7 +1937,7 @@ module.exports = function settle(resolve, reject, response) {
 
 /***/ }),
 
-/***/ 556:
+/***/ 555:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2101,13 +1987,13 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 /***/ }),
 
-/***/ 557:
+/***/ 556:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -2162,13 +2048,13 @@ module.exports = function parseHeaders(headers) {
 
 /***/ }),
 
-/***/ 558:
+/***/ 557:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -2238,13 +2124,13 @@ module.exports = (
 
 /***/ }),
 
-/***/ 559:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(528);
+var utils = __webpack_require__(527);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -2299,7 +2185,7 @@ module.exports = (
 
 /***/ }),
 
-/***/ 560:
+/***/ 559:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2321,7 +2207,7 @@ module.exports = function isAbsoluteURL(url) {
 
 /***/ }),
 
-/***/ 561:
+/***/ 560:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2343,13 +2229,13 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 
-/***/ 562:
+/***/ 561:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(544);
+var Cancel = __webpack_require__(543);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -2408,7 +2294,7 @@ module.exports = CancelToken;
 
 /***/ }),
 
-/***/ 563:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

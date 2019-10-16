@@ -12,15 +12,15 @@
                             -->
                         <v-dialog v-model="dialog" persistent max-width="60%" max-height="800">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="green darken-1" dark class="mb-2" v-on="on" @click="editar=0">Nueva
+                                <v-btn color="#668c2d" class="mb-2" dark v-on="on" @click="editar=0">Nueva
                                     Actividad</v-btn>
                             </template>
-                            <v-card>
-                                <v-toolbar dark color="green darken-1">
+                            <v-card> 
+                                <v-toolbar dark color="#668c2d">
                                     <v-btn icon dark @click="dialog = false">
                                         <v-icon col="white">clear</v-icon>
                                     </v-btn>
-                                    <v-toolbar-title>{{ formTitle }}</v-toolbar-title>
+                                    <v-toolbar-title >{{ formTitle }}</v-toolbar-title>
                                 </v-toolbar>
                                 <v-card-text>
                                     <v-container grid-list-md>
@@ -31,7 +31,7 @@
                                             </v-flex>
                                             <v-flex xs9>
                                                 <v-text-field v-model="actividad"
-                                                    label="Ingrese nombre de la actividad"></v-text-field>
+                                                    label="Ingrese nombre de la actividad" axlength="500"  required :rules="nameRules" :counter="500"></v-text-field>
                                             </v-flex>
                                             <v-flex xs12>
                                                 <v-textarea v-model="descripcionAct" label="Observaciones de la actividad   ">
@@ -69,9 +69,9 @@
                                                     </template>
                                                     <v-date-picker v-model="fechaFinal" no-title scrollable>
                                                         <v-spacer></v-spacer>
-                                                        <v-btn flat color="primary" @click="menu2 = false">Cancelar
+                                                        <v-btn flat color="#668c2d" class="mb-2" dark  @click="menu2 = false">Cancelar
                                                         </v-btn>
-                                                        <v-btn flat color="primary"
+                                                        <v-btn flat color="#668c2d" class="mb-2" dark
                                                             @click="$refs.menu2.save(fechaFinal)">Guardar</v-btn>
                                                     </v-date-picker>
                                                 </v-menu>
@@ -92,10 +92,10 @@
 
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="blue darken-1" v-if="editar===0" flat @click="registrarActividad">
+                                    <v-btn color="#668c2d" class="mb-2" dark flat @click="close">Cancelar</v-btn>
+                                    <v-btn color="#668c2d" class="mb-2" dark v-if="editar===0" flat @click="registrarActividad">
                                         Guardar</v-btn>
-                                    <v-btn color="blue darken-1" v-if="editar===1" flat @click="editarActividad()">
+                                    <v-btn color="#668c2d" class="mb-2" dark v-if="editar===1" flat @click="editarActividad()">
                                         Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -150,7 +150,7 @@
                             </td>
                         </template>
                         <template v-slot:no-data>
-                            <v-btn color="primary" @click="initialize">Recargar</v-btn>
+                            <v-btn color="#668c2d" class="mb-2" dark @click="initialize">Recargar</v-btn>
                         </template>
                         <template v-slot:no-results>
                             <v-alert :value="true" color="error" icon="warning">
@@ -184,11 +184,16 @@
         },
         data: () => ({
             dialog: false,
-            proyectoSelect: false,
+              nameRules: [
+            v => !!v || 'El nombre de la actividad no puede estar vacio',
+            v => (v && v.length <= 449) || 'El titulo del proyecto no puede ser mayor a 500',
+
+            ],
             menu: false,
             menu2: false,
             idActividad: 0,
             editar: 0,
+            proyectoSelect: false,
             actividad: '',
             codigo: '',
             descripcionAct: '',

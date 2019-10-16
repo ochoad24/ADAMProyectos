@@ -17,6 +17,11 @@ class ProyectoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function index2() {
+        $proyectos = Proyecto::all();
+        return $proyectos;
+    }
+
     public function index()
     {
         //
@@ -237,10 +242,6 @@ class ProyectoController extends Controller
         ->where('proyectos.IdProyecto', '=', $request->id)->get();
         //join('actividades', 'actividades.idProyecto', '=', 'proyectos.IdProyecto')
         //->join('tarea', 'tarea.idActividad', '=', 'actividades.id')
-        foreach ($proyecto as &$p) {
-            $p->FechaInicio = \Carbon\Carbon::parse($p->FechaInicio)->format('d/m/Y');
-            $p->FechaFin = \Carbon\Carbon::parse($p->FechaFin)->format('d/m/Y');
-        }
         return $proyecto;
     }
 

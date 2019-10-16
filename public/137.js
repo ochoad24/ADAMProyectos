@@ -1,12 +1,12 @@
 webpackJsonp([137],{
 
-/***/ 1341:
+/***/ 1344:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1342);
+var content = __webpack_require__(1345);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,13 +27,13 @@ if(false) {
 
 /***/ }),
 
-/***/ 1342:
+/***/ 1345:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
 // imports
-exports.i(__webpack_require__(698), "");
 exports.i(__webpack_require__(699), "");
+exports.i(__webpack_require__(700), "");
 
 // module
 exports.push([module.i, "\n/*The Wrapper*/\n\n\n\n", ""]);
@@ -43,13 +43,13 @@ exports.push([module.i, "\n/*The Wrapper*/\n\n\n\n", ""]);
 
 /***/ }),
 
-/***/ 1343:
+/***/ 1346:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1344);
+var content = __webpack_require__(1347);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -70,7 +70,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1344:
+/***/ 1347:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -85,13 +85,13 @@ exports.push([module.i, "\n.search[data-v-7542ea4f]{\n    border: 1px solid #bdb
 
 /***/ }),
 
-/***/ 1345:
+/***/ 1348:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1346);
+var content = __webpack_require__(1349);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -112,7 +112,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1346:
+/***/ 1349:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -127,14 +127,14 @@ exports.push([module.i, "\n.my-scrollbar{\n    width: 100%;\n    /*min-width: 30
 
 /***/ }),
 
-/***/ 1347:
+/***/ 1350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(700);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__ = __webpack_require__(701);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue2_scrollbar__);
 //
 //
@@ -270,42 +270,42 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2
             newrole: '',
             contacts: [{
                 name: 'Jon',
-                img: __webpack_require__(566),
+                img: __webpack_require__(567),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Doe',
-                img: __webpack_require__(564),
+                img: __webpack_require__(565),
                 email: 'doe@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Addison',
-                img: __webpack_require__(565),
+                img: __webpack_require__(566),
                 email: 'addison@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Jon',
-                img: __webpack_require__(568),
+                img: __webpack_require__(569),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Doe',
-                img: __webpack_require__(566),
+                img: __webpack_require__(567),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
                 location: 'Hyderabad'
             }, {
                 name: 'Jon',
-                img: __webpack_require__(563),
+                img: __webpack_require__(564),
                 email: 'jon@gmail.com',
                 contact_num: '0123456789',
                 role: 'Web developer',
@@ -393,7 +393,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue2
 
 /***/ }),
 
-/***/ 1348:
+/***/ 1351:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -457,7 +457,7 @@ var render = function() {
                             staticClass:
                               "contact-profile d-inline-block rounded-circle",
                             attrs: {
-                              src: __webpack_require__(566),
+                              src: __webpack_require__(567),
                               alt: "user profile"
                             }
                           }),
@@ -1058,15 +1058,15 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1341)
-  __webpack_require__(1343)
-  __webpack_require__(1345)
+  __webpack_require__(1344)
+  __webpack_require__(1346)
+  __webpack_require__(1348)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1347)
+var __vue_script__ = __webpack_require__(1350)
 /* template */
-var __vue_template__ = __webpack_require__(1348)
+var __vue_template__ = __webpack_require__(1351)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1106,42 +1106,42 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 563:
+/***/ 564:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 564:
+/***/ 565:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar2.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 565:
+/***/ 566:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar3.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 566:
+/***/ 567:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 568:
+/***/ 569:
 /***/ (function(module, exports) {
 
 module.exports = "/images/avatar4.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 698:
+/***/ 699:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -1156,7 +1156,7 @@ exports.push([module.i, "\nbody {\n  background: #f9f9f9;\n  height: 1000px;\n}\
 
 /***/ }),
 
-/***/ 699:
+/***/ 700:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -1171,7 +1171,7 @@ exports.push([module.i, ".vue-scrollbar-transition, .vue-scrollbar__scrollbar-ve
 
 /***/ }),
 
-/***/ 700:
+/***/ 701:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!

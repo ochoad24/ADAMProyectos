@@ -100,7 +100,7 @@
     .collapse-item {
         .submenu-header {
             cursor: pointer;
-            color: #666;
+            color: #000;
             padding: 11px 21px 11px 19px;
             .submenu-header-title {
                 vertical-align: text-bottom;

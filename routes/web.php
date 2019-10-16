@@ -34,6 +34,7 @@ Route::group(['middleware'=>['guest']],function(){
 
     //Rutas para los proyectos 
     Route::get('/proyecto', 'ProyectoController@index');
+    Route::get('/proyecto2', 'ProyectoController@index2');
     Route::post('/proyecto/registrar', 'ProyectoController@store');
     Route::put('/proyecto/actualizar', 'ProyectoController@update');
     Route::get('/proyecto/select', 'ProyectoController@select');

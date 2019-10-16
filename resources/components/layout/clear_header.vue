@@ -5,10 +5,14 @@
             <router-link to="/" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 <!-- <img :src='require("../../img/logo7.png")' alt="logo"/> -->
-                <img :src='require("../../img/logo10.png")' alt="logo" />
+              
+ <!-- <img :src='require("../../img/logo10.png")' alt="logo"/>-->
+            <h1 class="text-white">ADAM</h1>
                 <!-- <h1 class="text-white">ADAM</h1> -->
             </router-link>
+               
             <div class="navbar-collapse">
+               
                 <!-- Sidebar toggle button -->
                 <div class="d-inline">
                     <a href="javascript:void(0)" class="navbar-btn sidebar-toggle" @click="toggle_left" role="button">
@@ -16,11 +20,11 @@
                     </a>
                     <v-dialog v-model="dialog" max-width="600px">
                         <template v-slot:activator="{ on }">
-                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-search" v-on="on"></i>
+                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-clone" v-on="on"></i>
                         </template>
                         <v-card>
-                            <v-card-title>
-                                <span class="headline">Seleccione un Proyecto</span>
+                            <v-card-title  style="background-color:#668c2d">
+                                <span class="headline" dark style="color:#fff">Seleccione un Proyecto</span>
                             </v-card-title>
                             <v-card-text>
                                 <v-container grid-list-md>
@@ -33,16 +37,14 @@
                             </v-card-text>
                             <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cerrar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="close">Cerrar</v-btn>
                             </v-card-actions>
                         </v-card>
                     </v-dialog>
                     
                 </div>
             </div>
-            <div class="nav">
-                <ul class="ul"><h1>{{ this.$store.state.proyecto.nombre }}</h1></ul>
-            </div>
+          
             <!-- <h1 v-text="this.$store.state.proyecto"></h1>  -->
             <!-- <v-flex xs4 sm4 md4>
                 <multiselect v-model="proyecto" :options="proyectos" placeholder="Seleccione un Proyecto" label="nombre" track-by="nombre"></multiselect>
@@ -69,11 +71,7 @@
                                 <i class="fa fa-fw ti-user"></i> My Profile
                             </router-link>
                         </b-dropdown-item>
-                        <b-dropdown-item>
-                            <router-link to="/edit_user" exact>
-                                <i class="fa fa-fw ti-settings"></i> Account Settings
-                            </router-link>
-                        </b-dropdown-item>
+                      
                         <!-- Menu Footer-->
                         <b-dropdown-item class="dropdown-footer">
                             <div class="float-left">

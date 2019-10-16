@@ -4,138 +4,69 @@
 ?>
 <!DOCTYPE>
 <html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reporte por responsable</title>
-    <style>
+    <style type="text/css">
+        @page {
+            margin: 0px;
+        }
         body {
-        /*position: relative;*/
-        /*width: 16cm;  */
-        /*height: 29.7cm; */
-        /*margin: 0 auto; */
-        /*color: #555555;*/
-        /*background: #FFFFFF; */
-        font-family: Arial, sans-serif; 
-        font-size: 14px;
-        /*font-family: SourceSansPro;*/
+            margin: 0px;
         }
-
-        #logo{
-        float: left;
-        margin-top: 1%;
-        margin-left: 2%;
-        margin-right: 2%;
+        * {
+            font-family: Verdana, Arial, sans-serif;
         }
-
-        #imagen{
-        width: 100px;
+        a {
+            color: #000;
+            text-decoration: none;
         }
-
-        #datos{
-        float: left;
-        margin-top: 0%;
-        margin-left: 2%;
-        margin-right: 2%;
-        /*text-align: justify;*/
+        table {
+            font-size: x-small;
         }
-
-        #encabezado{
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 35%;
-        font-size: 15px;
+        tfoot tr td {
+            font-weight: bold;
+            font-size: x-small;
         }
-
-        #fact{
-        /*position: relative;*/
-        float: right;
-        margin-top: 2%;
-        margin-left: 2%;
-        margin-right: 2%;
-        font-size: 20px;
+        .invoice table {
+            margin: 25px;
+            border: 1px;
         }
-
-        section{
-        clear: left;
+        .invoice h3 {
+            margin-left: 15px;
         }
-
-        #cliente{
-        text-align: right;
+        .information {
+            background-color: #fff;
+            color: #000;
         }
-
-        #facliente{
-        width: 40%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        margin-bottom: 15px;
+        .informatio {
+            background-color: #668c2d;
+            color: #fff;
         }
-
-        #fac, #fv, #fa{
-        color: #FFFFFF;
-        font-size: 15px;
+        .information .logo {
+            margin: 5px;
         }
-
-        #facliente thead{
-        padding: 20px;
-        background: #2183E3;
-        text-align: right;
-        border-bottom: 1px solid #FFFFFF;  
+        .information table {
+         padding: 50px;
         }
-
-        #facvendedor{
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        margin-bottom: 15px;
+        .hrt{
+          background-color: #668c2d;
+          width:75%;
         }
-
-        #facvendedor thead{
-        padding: 20px;
-        background: #2183E3;
-        text-align: center;
-        border-bottom: 1px solid #FFFFFF;  
-        }
-
-        #facarticulo{
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        margin-bottom: 15px;
-        }
-
-        #facarticulo thead{
-        padding: 20px;
-        background: #2183E3;
-        text-align: right;
-        border-bottom: 1px solid #FFFFFF;  
-        }
-
-        #gracias{
-        text-align: center; 
-        }
-        .contenedor {
-            text-align:center;
-	    }
-        .contenedor>span {
-            display:inline-block;
-            vertical-align:middle;
-            line-height:normal;
-        }
-        .cont>span{
-            display:inline-block;
-            vertical-align:middle;
-            line-height:normal;
-        }
-        .hr{
-            width: 80%;
+        .th{
+            color:#fff;
         }
     </style>
     <body>
+    <br>
+<center><img src="../resources/img/adam.jpg" width="180" height="160"></center>
+<hr class="hrt">
         @foreach ($responsable as $r)
         <header>
-            <center><img src="assets/images/logo-dark.png" width="230" height="70"></center>
-                <hr class="hr">
+           
+       
                 <center> <h6>QUETZALTENANGO, GUATEMALA</h6>
                 <?php 
                     echo "<br>" . "Generado el día: ";
@@ -144,41 +75,26 @@
                     print_r($hoy["year"] . '<br>')
                 ?>
             </center>
+            
             <div class="contenedor">
-            <h1>Reporte de rendimiento</h1>
-            <hr class="hr">
+         
+          
         </div>
         </header>
         <br>
-        <section>
-            <div>
-                <table id="facliente">
-                    <thead>                        
-                        <tr>
-                            <th id="fac">Responsable</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th><p id="cliente"> {{$r->nombreEmp}}<br>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <center> <h3>Reporte de rendimiento {{$r->nombreEmp}}</h3>
         @endforeach
-        <br>
-        <section>
-            <div>
-                <table id="facarticulo">
-                    <thead>
+        
+            <div class="invoice">
+                <table width="100%"  class="table">
+                    <thead style="background-color:#668c2d">
                         <tr id="fa">
-                            <th>Actividad</th>
-                            <th>Tarea</th>
-                            <th>Realizado</th>
-                            <th>Fecha Límite</th>
-                            <th>Fecha Realización</th>
-                            <th>Participantes</th>
+                            <th class="th">Actividad</th>
+                            <th class="th">Tarea</th>
+                            <th class="th">Realizado</th>
+                            <th class="th">Fecha Límite</th>
+                            <th class="th">Fecha Realización</th>
+                            <th class="th">Participantes</th>
                         </tr>
                     </thead>
                     <tbody id="cliente">
@@ -198,5 +114,18 @@
         </section>
         <br>
         <br>
+        <div class="informatio" style="position: absolute; bottom: 0;">
+    <table width="100%">
+        <tr>
+            <td align="left" style="width: 60%;">
+                &copy; {{ date('Y') }} - 2019 ADAM · Asociación de Desarrollo Agrícola y Empresarial.
+            </td>
+            <td align="right" style="width: 40%;">
+              Tel. (502) 7767 4672 | info@adam.org.gt
+            </td>
+        </tr>
+
+    </table>
+</div>
     </body>
 </html>

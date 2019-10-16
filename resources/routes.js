@@ -4,11 +4,11 @@ const routes = [{
     children: [
         {
             path: '',
-            component: resolve => require(['./components/pages/index.vue'], resolve),
+            component: resolve => require(['./components/pages/src/Gantt.vue'], resolve),
             meta: {
-                title: 'Dashboard1',
+                title: 'Inicio',
                 breadcrumb: [{
-                    html:'<i class="ti-home"></i> Dashboard 1',
+                    html:'<i class="ti-home"></i> Inicio',
                     href: '/',
                 }]
             }
@@ -1195,7 +1195,7 @@ const routes = [{
             meta: {
                 title: 'Roles',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Usuarios',
@@ -1212,7 +1212,7 @@ const routes = [{
             meta: {
                 title: 'Permisos',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Usuarios',
@@ -1229,7 +1229,7 @@ const routes = [{
             meta: {
                 title: 'Usuarios',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Usuarios',
@@ -1246,7 +1246,7 @@ const routes = [{
             meta: {
                 title: 'Crear Nuevo Proyecto',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Proyectos',
@@ -1263,7 +1263,7 @@ const routes = [{
             meta: {
                 title: 'Organizaciones',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Proyectos',
@@ -1280,7 +1280,7 @@ const routes = [{
             meta: {
                 title: '',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Reportes',
@@ -1294,7 +1294,7 @@ const routes = [{
             meta: {
                 title: 'Editar proyectos',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Administrar proyectos',
@@ -1311,7 +1311,7 @@ const routes = [{
             meta: {
                 title: 'Actividades',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Actividades',
@@ -1328,7 +1328,7 @@ const routes = [{
             meta: {
                 title: 'Tipo de Actividades',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Actividades',
@@ -1345,7 +1345,7 @@ const routes = [{
             meta: {
                 title: 'Estadisticas',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Actividades',
@@ -1362,7 +1362,7 @@ const routes = [{
             meta: {
                 title: 'Tareas',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Actividades',
@@ -1379,7 +1379,7 @@ const routes = [{
             meta: {
                 title: 'Subir',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Actividades',
@@ -1396,7 +1396,7 @@ const routes = [{
             meta: {
                 title: 'Progreso',
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 }, {
                     html: 'Progreso',
@@ -1410,7 +1410,7 @@ const routes = [{
             meta: {
                 title: `Gantt`,
                 breadcrumb: [{
-                    html: '<i class="ti-home"></i> Dashboard',
+                    html: '<i class="ti-home"></i> Inicio',
                     href: '#/',
                 },{
                     html: 'Proyecto',

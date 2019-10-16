@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="display-2 text-xs-center pa-5">
-        Progreso General de Proyectos
+       <h1 style="color:#668c2d" > Progreso General de Proyectos</h1>
     </div>
     <v-layout>
         <v-flex>
@@ -169,7 +169,7 @@ export default {
     initialize() {
       let me = this;
       tasks =[ {}, ];
-      axios.get('/proyecto')
+      axios.get('/proyecto2')
         .then(function (response) {
             me.proyectos = response.data;
             me.cargarDatos(me.proyectos);
@@ -193,7 +193,7 @@ export default {
               per = ((item.actividadesCompletadas * 100) / item.actividades); 
           }
           task.id = item.IdProyecto;
-          task.label = `<a href="/#/GanttProyecto/${item.IdProyecto}" style="color:#0077c0;">${item.Titulo}</a>`;
+          task.label = `<a href="/#/GanttProyecto/${item.IdProyecto}"">${item.Titulo}</a>`;
           task.user = item.Descripcion;
           task.start = Date.parse(item.FechaInicio);
           task.end = Date.parse(item.FechaFin);
@@ -209,7 +209,7 @@ export default {
               per = ((item.actividadesCompletadas * 100) / item.actividades); 
           }
           task.id = item.IdProyecto;
-          task.label =  `<a href="/#/GanttProyecto/${item.IdProyecto}" style="color:#0077c0;">${item.Titulo}</a>`;
+          task.label =  `<a href="/#/GanttProyecto/${item.IdProyecto}"">${item.Titulo}</a>`;
           task.user = item.Descripcion;
           task.start = Date.parse(item.FechaInicio);
           task.end = Date.parse(item.FechaFin);
