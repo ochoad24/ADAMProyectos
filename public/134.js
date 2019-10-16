@@ -1,22 +1,22 @@
 webpackJsonp([134],{
 
-/***/ 1552:
+/***/ 1298:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1553);
+var content = __webpack_require__(1299);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("6a9e6c33", content, false, {});
+var update = __webpack_require__(26)("366d5d5c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./clockface.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./clockface.css");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./fileinput.min.css", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./fileinput.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,38 +27,46 @@ if(false) {
 
 /***/ }),
 
-/***/ 1553:
+/***/ 1299:
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(28);
 exports = module.exports = __webpack_require__(17)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.clearfix {\r\n  *zoom: 1;\n}\n.clearfix:before,\r\n.clearfix:after {\r\n  display: table;\r\n  content: \"\";\r\n  line-height: 0;\n}\n.clearfix:after {\r\n  clear: both;\n}\n.hide-text {\r\n  font: 0/0 a;\r\n  color: transparent;\r\n  text-shadow: none;\r\n  background-color: transparent;\r\n  border: 0;\n}\n.input-block-level {\r\n  display: block;\r\n  width: 100%;\r\n  min-height: 30px;\r\n  -webkit-box-sizing: border-box;\r\n  -moz-box-sizing: border-box;\r\n  box-sizing: border-box;\n}\n.clockface {\r\n  width: 160px;\r\n  padding: 3px;\r\n  text-align: center;\r\n  /*\r\n    .l3 .center span {\r\n    \tvertical-align: middle;\r\n\t\tdisplay: inline-block;\r\n\t\t.ie7-inline-block();  \r\n\t\tpadding: 0 2px;  \t\r\n    }\r\n    */\r\n\r\n  /*\r\n    input {\r\n    \twidth: 20px;\r\n    \tmargin: 0;\r\n    \tvertical-align: top; \r\n     }\t\r\n\r\n    a {\r\n    \ttext-decoration: none;\r\n    \tpadding: 0 3px;\r\n    \tvertical-align: top;\r\n    \tfont-size: 0.85em;\r\n    \t.border-radius(3px);\r\n\r\n    \t&.am {margin-right: 8px;}\t\r\n    \t\r\n    \t&.active,\r\n    \t&.active:hover {\r\n    \t\t.buttonBackground(@btnSuccessBackground, spin(@btnSuccessBackground, 20));\r\n    \t}\r\n    }\r\n    */\n}\n.clockface > div {\r\n  clear: both;\r\n  overflow: auto;\n}\n.clockface .outer,\r\n.clockface .inner {\r\n  width: 22px;\r\n  height: 22px;\r\n  line-height: 22px;\r\n  cursor: default;\r\n  -webkit-border-radius: 4px;\r\n  -moz-border-radius: 4px;\r\n  border-radius: 4px;\n}\n.clockface .outer.active,\r\n.clockface .inner.active,\r\n.clockface .outer.active:hover,\r\n.clockface .inner.active:hover {\r\n  color: #fff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\n}\n.clockface .outer:hover,\r\n.clockface .inner:hover {\r\n  background-color: #dcdcdc;\n}\n.clockface .outer {\r\n  color: gray;\r\n  font-size: 0.8em;\n}\n.clockface .outer.active,\r\n.clockface .outer.active:hover {\r\n  color: #ffffff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\r\n  background-color: #5bb75b;\r\n  background-image: -moz-linear-gradient(top, #62c462, #51a351);\r\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));\r\n  background-image: -webkit-linear-gradient(top, #62c462, #51a351);\r\n  background-image: -o-linear-gradient(top, #62c462, #51a351);\r\n  background-image: linear-gradient(to bottom, #62c462, #51a351);\r\n  background-repeat: repeat-x;\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);\r\n  border-color: #51a351 #51a351 #387038;\r\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n  *background-color: #51a351;\r\n  /* Darken IE7 buttons by default so they stand out more given they won't have borders */\r\n\r\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.clockface .outer.active:hover,\r\n.clockface .outer.active:hover:hover,\r\n.clockface .outer.active:active,\r\n.clockface .outer.active:hover:active,\r\n.clockface .outer.active.active,\r\n.clockface .outer.active:hover.active,\r\n.clockface .outer.active.disabled,\r\n.clockface .outer.active:hover.disabled,\r\n.clockface .outer.active[disabled],\r\n.clockface .outer.active:hover[disabled] {\r\n  color: #ffffff;\r\n  background-color: #51a351;\r\n  *background-color: #499249;\n}\n.clockface .outer.active:active,\r\n.clockface .outer.active:hover:active,\r\n.clockface .outer.active.active,\r\n.clockface .outer.active:hover.active {\r\n  background-color: #408140 \\9;\n}\n.clockface .inner.active,\r\n.clockface .inner.active:hover {\r\n  color: #ffffff;\r\n  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);\r\n  background-color: #006dcc;\r\n  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));\r\n  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: -o-linear-gradient(top, #0088cc, #0044cc);\r\n  background-image: linear-gradient(to bottom, #0088cc, #0044cc);\r\n  background-repeat: repeat-x;\r\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);\r\n  border-color: #0044cc #0044cc #002a80;\r\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);\r\n  *background-color: #0044cc;\r\n  /* Darken IE7 buttons by default so they stand out more given they won't have borders */\r\n\r\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.clockface .inner.active:hover,\r\n.clockface .inner.active:hover:hover,\r\n.clockface .inner.active:active,\r\n.clockface .inner.active:hover:active,\r\n.clockface .inner.active.active,\r\n.clockface .inner.active:hover.active,\r\n.clockface .inner.active.disabled,\r\n.clockface .inner.active:hover.disabled,\r\n.clockface .inner.active[disabled],\r\n.clockface .inner.active:hover[disabled] {\r\n  color: #ffffff;\r\n  background-color: #0044cc;\r\n  *background-color: #003bb3;\n}\n.clockface .inner.active:active,\r\n.clockface .inner.active:hover:active,\r\n.clockface .inner.active.active,\r\n.clockface .inner.active:hover.active {\r\n  background-color: #003399 \\9;\n}\n.clockface .l1 .cell,\r\n.clockface .l5 .cell {\r\n  width: 22px;\r\n  display: inline-block;\r\n  *display: inline;\r\n  /* IE7 inline-block hack */\r\n\r\n  *zoom: 1;\n}\n.clockface .l1 .outer {\r\n  margin-bottom: 3px;\n}\n.clockface .l5 .outer {\r\n  margin-top: 3px;\n}\n.clockface .l2 .outer,\r\n.clockface .l3 .outer,\r\n.clockface .l4 .outer,\r\n.clockface .l2 .inner,\r\n.clockface .l3 .inner,\r\n.clockface .l4 .inner {\r\n  display: inline-block;\r\n  *display: inline;\r\n  /* IE7 inline-block hack */\r\n\r\n  *zoom: 1;\r\n  vertical-align: middle;\n}\n.clockface .l2 .left,\r\n.clockface .l3 .left,\r\n.clockface .l4 .left {\r\n  float: left;\n}\n.clockface .l2 .left .outer,\r\n.clockface .l3 .left .outer,\r\n.clockface .l4 .left .outer {\r\n  margin-right: 3px;\n}\n.clockface .l2 .right,\r\n.clockface .l3 .right,\r\n.clockface .l4 .right {\r\n  float: right;\n}\n.clockface .l2 .right .outer,\r\n.clockface .l3 .right .outer,\r\n.clockface .l4 .right .outer {\r\n  margin-left: 3px;\n}\n.clockface .ampm {\r\n  font-size: 0.8em;\r\n  text-decoration: none;\r\n  border-bottom: dashed 1px;\n}\n.clockface .ampm:focus {\r\n  outline: 0;\r\n  outline: thin dotted \\9;\r\n  /* IE6-9 */\n}\r\n", ""]);
+exports.push([module.i, "/*!\r\n * bootstrap-fileinput v4.5.1\r\n * http://plugins.krajee.com/file-input\r\n *\r\n * Krajee default styling for bootstrap-fileinput.\r\n *\r\n * Author: Kartik Visweswaran\r\n * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com\r\n *\r\n * Licensed under the BSD 3-Clause\r\n * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md\r\n */\n.btn-file input[type=file],.file-caption-icon,.file-no-browse,.file-preview .fileinput-remove,.file-zoom-dialog .btn-navigate,.file-zoom-dialog .floating-buttons,.krajee-default .file-thumb-progress{position:absolute\n}\n.file-loading input[type=file],input[type=file].file-loading{width:0;height:0\n}\n.file-no-browse{left:50%;bottom:20%;width:1px;height:1px;font-size:0;opacity:0;border:none;background:0 0;outline:0;box-shadow:none\n}\n.file-caption-icon,.file-input-ajax-new .fileinput-remove-button,.file-input-ajax-new .fileinput-upload-button,.file-input-ajax-new .no-browse .input-group-btn,.file-input-new .close,.file-input-new .file-preview,.file-input-new .fileinput-remove-button,.file-input-new .fileinput-upload-button,.file-input-new .glyphicon-file,.file-input-new .no-browse .input-group-btn,.file-zoom-dialog .modal-header:after,.file-zoom-dialog .modal-header:before,.hide-content .kv-file-content,.kv-hidden{display:none\n}\n.btn-file,.file-caption,.file-input,.file-loading:before,.file-preview,.file-zoom-dialog .modal-dialog,.krajee-default .file-thumbnail-footer,.krajee-default.file-preview-frame{position:relative\n}\n.file-error-message pre,.file-error-message ul,.krajee-default .file-actions,.krajee-default .file-other-error{text-align:left\n}\n.file-error-message pre,.file-error-message ul{margin:0\n}\n.krajee-default .file-drag-handle,.krajee-default .file-upload-indicator{float:left;margin:5px 0 -5px;width:16px;height:16px\n}\n.krajee-default .file-thumb-progress .progress,.krajee-default .file-thumb-progress .progress-bar{height:11px;font-family:Verdana,Helvetica,sans-serif;font-size:9px\n}\n.krajee-default .file-caption-info,.krajee-default .file-size-info{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:160px;height:15px;margin:auto\n}\n.file-zoom-content>.file-object.type-flash,.file-zoom-content>.file-object.type-image,.file-zoom-content>.file-object.type-video{max-width:100%;max-height:100%;width:auto\n}\n.file-zoom-content>.file-object.type-flash,.file-zoom-content>.file-object.type-video{height:100%\n}\n.file-zoom-content>.file-object.type-default,.file-zoom-content>.file-object.type-html,.file-zoom-content>.file-object.type-pdf,.file-zoom-content>.file-object.type-text{width:100%\n}\n.file-loading:before{content:\" Loading...\";display:inline-block;padding-left:20px;line-height:16px;font-size:13px;font-variant:small-caps;color:#999;background:url(" + escape(__webpack_require__(745)) + ") top left no-repeat\n}\n.file-object{margin:0 0 -5px;padding:0\n}\n.btn-file{overflow:hidden\n}\n.btn-file input[type=file]{top:0;left:0;min-width:100%;min-height:100%;text-align:right;opacity:0;background:none;cursor:inherit;display:block\n}\n.btn-file ::-ms-browse{font-size:10000px;width:100%;height:100%\n}\n.file-caption .file-caption-name{width:100%;margin:0;padding:0;box-shadow:none;border:none;background:0 0;outline:0\n}\n.file-caption.icon-visible .file-caption-icon{display:inline-block\n}\n.file-caption.icon-visible .file-caption-name{padding-left:15px\n}\n.file-caption-icon{left:8px\n}\n.file-error-message{color:#a94442;background-color:#f2dede;margin:5px;border:1px solid #ebccd1;border-radius:4px;padding:15px\n}\n.file-error-message pre{margin:5px 0\n}\n.file-caption-disabled{background-color:#eee;cursor:not-allowed;opacity:1\n}\n.file-preview{border-radius:5px;border:1px solid #ddd;padding:8px;width:100%;margin-bottom:5px\n}\n.file-preview .btn-xs{padding:1px 5px;font-size:12px;line-height:1.5;border-radius:3px\n}\n.file-preview .fileinput-remove{top:1px;right:1px;line-height:10px\n}\n.file-preview .clickable{cursor:pointer\n}\n.file-preview-image{font:40px Impact,Charcoal,sans-serif;color:green\n}\n.krajee-default.file-preview-frame{margin:8px;border:1px solid rgba(0,0,0,.2);box-shadow:0 0 10px 0 rgba(0,0,0,.2);padding:6px;float:left;text-align:center\n}\n.krajee-default.file-preview-frame .kv-file-content{width:213px;height:160px\n}\n.krajee-default.file-preview-frame .kv-file-content.kv-pdf-rendered{width:400px\n}\n.krajee-default.file-preview-frame .file-thumbnail-footer{height:70px\n}\n.krajee-default.file-preview-frame:not(.file-preview-error):hover{border:1px solid rgba(0,0,0,.3);box-shadow:0 0 10px 0 rgba(0,0,0,.4)\n}\n.krajee-default .file-preview-text{display:block;color:#428bca;border:1px solid #ddd;font-family:Menlo,Monaco,Consolas,\"Courier New\",monospace;outline:0;padding:8px;resize:none\n}\n.krajee-default .file-preview-html{border:1px solid #ddd;padding:8px;overflow:auto\n}\n.krajee-default .file-other-icon{font-size:6em\n}\n.krajee-default .file-footer-buttons{float:right\n}\n.krajee-default .file-footer-caption{display:block;text-align:center;padding-top:4px;font-size:11px;color:#777;margin-bottom:15px\n}\n.krajee-default .file-preview-error{opacity:.65;box-shadow:none\n}\n.krajee-default .file-thumb-progress{height:11px;top:37px;left:0;right:0\n}\n.krajee-default.kvsortable-ghost{background:#e1edf7;border:2px solid #a1abff\n}\n.krajee-default .file-preview-other:hover{opacity:.8\n}\n.krajee-default .file-preview-frame:not(.file-preview-error) .file-footer-caption:hover{color:#000\n}\n.kv-upload-progress .progress{height:20px;margin:10px 0;overflow:hidden\n}\n.kv-upload-progress .progress-bar{height:20px;font-family:Verdana,Helvetica,sans-serif\n}\n.file-zoom-dialog .file-other-icon{font-size:22em;font-size:50vmin\n}\n.file-zoom-dialog .modal-dialog{width:auto\n}\n.file-zoom-dialog .modal-header{display:flex;align-items:center;justify-content:space-between\n}\n.file-zoom-dialog .btn-navigate{padding:0;margin:0;background:0 0;text-decoration:none;outline:0;opacity:.7;top:45%;font-size:4em;color:#1c94c4\n}\n.file-zoom-dialog .btn-navigate:not([disabled]):hover{outline:0;box-shadow:none;opacity:.6\n}\n.file-zoom-dialog .floating-buttons{top:5px;right:10px\n}\n.file-zoom-dialog .btn-navigate[disabled]{opacity:.3\n}\n.file-zoom-dialog .btn-prev{left:1px\n}\n.file-zoom-dialog .btn-next{right:1px\n}\n.file-zoom-dialog .kv-zoom-title{font-weight:300;color:#999;max-width:50%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis\n}\n.file-input-ajax-new .no-browse .form-control,.file-input-new .no-browse .form-control{border-top-right-radius:4px;border-bottom-right-radius:4px\n}\n.file-caption-main{width:100%\n}\n.file-thumb-loading{background:url(" + escape(__webpack_require__(745)) + ") center center no-repeat content-box!important\n}\n.file-drop-zone{border:1px dashed #aaa;border-radius:4px;height:100%;text-align:center;vertical-align:middle;margin:12px 15px 12px 12px;padding:5px\n}\n.file-drop-zone.clickable:hover{border:2px dashed #999\n}\n.file-drop-zone.clickable:focus{border:2px solid #5acde2\n}\n.file-drop-zone .file-preview-thumbnails{cursor:default\n}\n.file-drop-zone-title{color:#aaa;font-size:1.6em;padding:85px 10px;cursor:default\n}\n.file-highlighted{border:2px dashed #999!important;background-color:#eee\n}\n.file-uploading{background:url(" + escape(__webpack_require__(1300)) + ") center bottom 10px no-repeat;opacity:.65\n}\n.file-zoom-fullscreen .modal-dialog{min-width:100%;margin:0\n}\n.file-zoom-fullscreen .modal-content{border-radius:0;box-shadow:none;min-height:100vh\n}\n.file-zoom-fullscreen .modal-body{overflow-y:auto\n}\n.floating-buttons{z-index:3000\n}\n.floating-buttons .btn-kv{margin-left:3px;z-index:3000\n}\n.file-zoom-content{height:480px;text-align:center\n}\n.file-zoom-content .file-preview-image,.file-zoom-content .file-preview-video{max-height:100%\n}\n.file-zoom-content>.file-object.type-image{height:auto;min-height:inherit\n}\n.file-zoom-content>.file-object.type-audio{width:auto;height:30px\n}\n@media (min-width:576px){\n.file-zoom-dialog .modal-dialog{max-width:500px\n}\n}\n@media (min-width:992px){\n.file-zoom-dialog .modal-lg{max-width:800px\n}\n}\n@media (max-width:767px){\n.file-preview-thumbnails{display:flex;justify-content:center;align-items:center;flex-direction:column\n}\n.file-zoom-dialog .modal-header{flex-direction:column\n}\n}\n@media (max-width:350px){\n.krajee-default.file-preview-frame .kv-file-content{width:160px\n}\n}\n@media (max-width:420px){\n.krajee-default.file-preview-frame .kv-file-content.kv-pdf-rendered{width:100%\n}\n}\n.file-loading[dir=rtl]:before{background:url(" + escape(__webpack_require__(745)) + ") top right no-repeat;padding-left:0;padding-right:20px\n}\n.file-sortable .file-drag-handle{cursor:move;opacity:1\n}\n.file-sortable .file-drag-handle:hover{opacity:.7\n}\n.clickable .file-drop-zone-title{cursor:pointer\n}\n.kv-zoom-actions .btn-kv{margin-left:3px\n}\n.file-preview-initial.sortable-chosen{background-color:#d9edf7\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1554:
+/***/ 1300:
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/bootstrap-fileinput/loading-sm.gif?e5ad074b7969cc386b387f08dba4fcec";
+
+/***/ }),
+
+/***/ 1301:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1555);
+var content = __webpack_require__(1302);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("5722bc59", content, false, {});
+var update = __webpack_require__(26)("fcbba6e8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-clockpicker.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrap-clockpicker.min.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./formelements.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6360cc14\",\"scoped\":false,\"hasInlineConfig\":true}!./formelements.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -69,7 +77,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1555:
+/***/ 1302:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -77,110 +85,24 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "/*!\n * ClockPicker v0.0.7 for Bootstrap (http://weareoutman.github.io/clockpicker/)\n * Copyright 2014 Wang Shenwei.\n * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)\n */\n.clockpicker .input-group-addon{cursor:pointer\n}\n.clockpicker-moving{cursor:move\n}\n.clockpicker-align-left.popover>.arrow{left:25px\n}\n.clockpicker-align-top.popover>.arrow{top:17px\n}\n.clockpicker-align-right.popover>.arrow{left:auto;right:25px\n}\n.clockpicker-align-bottom.popover>.arrow{top:auto;bottom:6px\n}\n.clockpicker-popover .popover-title{background-color:#fff;color:#999;font-size:24px;font-weight:700;line-height:30px;text-align:center\n}\n.clockpicker-popover .popover-title span{cursor:pointer\n}\n.clockpicker-popover .popover-content{background-color:#f8f8f8;padding:12px\n}\n.popover-content:last-child{border-bottom-left-radius:5px;border-bottom-right-radius:5px\n}\n.clockpicker-plate{background-color:#fff;border:1px solid #ccc;border-radius:50%;width:200px;height:200px;overflow:visible;position:relative;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none\n}\n.clockpicker-canvas,.clockpicker-dial{width:200px;height:200px;position:absolute;left:-1px;top:-1px\n}\n.clockpicker-minutes{visibility:hidden\n}\n.clockpicker-tick{border-radius:50%;color:#666;line-height:26px;text-align:center;width:26px;height:26px;position:absolute;cursor:pointer\n}\n.clockpicker-tick.active,.clockpicker-tick:hover{background-color:#c0e5f7;background-color:rgba(0,149,221,.25)\n}\n.clockpicker-button{background-image:none;background-color:#fff;border-width:1px 0 0;border-top-left-radius:0;border-top-right-radius:0;margin:0;padding:10px 0\n}\n.clockpicker-button:hover{background-image:none;background-color:#ebebeb\n}\n.clockpicker-button:focus{outline:0!important\n}\n.clockpicker-dial{-webkit-transition:-webkit-transform 350ms,opacity 350ms;-moz-transition:-moz-transform 350ms,opacity 350ms;-ms-transition:-ms-transform 350ms,opacity 350ms;-o-transition:-o-transform 350ms,opacity 350ms;transition:transform 350ms,opacity 350ms\n}\n.clockpicker-dial-out{opacity:0\n}\n.clockpicker-hours.clockpicker-dial-out{-webkit-transform:scale(1.2,1.2);-moz-transform:scale(1.2,1.2);-ms-transform:scale(1.2,1.2);-o-transform:scale(1.2,1.2);transform:scale(1.2,1.2)\n}\n.clockpicker-minutes.clockpicker-dial-out{-webkit-transform:scale(.8,.8);-moz-transform:scale(.8,.8);-ms-transform:scale(.8,.8);-o-transform:scale(.8,.8);transform:scale(.8,.8)\n}\n.clockpicker-canvas{-webkit-transition:opacity 175ms;-moz-transition:opacity 175ms;-ms-transition:opacity 175ms;-o-transition:opacity 175ms;transition:opacity 175ms\n}\n.clockpicker-canvas-out{opacity:.25\n}\n.clockpicker-canvas-bearing,.clockpicker-canvas-fg{stroke:none;fill:#0095dd\n}\n.clockpicker-canvas-bg{stroke:none;fill:#c0e5f7\n}\n.clockpicker-canvas-bg-trans{fill:rgba(0,149,221,.25)\n}\n.clockpicker-canvas line{stroke:#0095dd;stroke-width:1;stroke-linecap:round\n}\n.clockpicker-button.am-button{margin:1px;padding:5px;border:1px solid rgba(0,0,0,.2);border-radius:4px\n}\n.clockpicker-button.pm-button{margin:1px 1px 1px 136px;padding:5px;border:1px solid rgba(0,0,0,.2);border-radius:4px\n}", ""]);
+exports.push([module.i, "\n.select2-container .select2-selection--single {\n    height: 34px;\n}\n.select2-container--default .select2-selection--multiple,\n.select2-container--default .select2-selection--single {\n    border-radius: 0;\n}\n.daterangepicker.opensleft:after {\n    display: none;\n}\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    margin-left: 0;\n}\n.btn-file{\n    border-bottom-right-radius: 0 !important;\n    border-top-right-radius: 0 !important;\n}\n.file-input .input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n    margin-left: -1px;\n}\n.file-error-message {\n    color: #FE5B5B;\n}\n.noresize {\n    resize: none;\n}\n.radio-inline + .radio-inline,\n.checkbox-inline + .checkbox-inline {\n    margin-left: 0;\n}\nimg.flag {\n    height: 16px;\n    width: 28px;\n    padding-right: 10px;\n}\n.file-preview-image {\n    max-width: 100% !important;\n}\n.m-b-10 {\n    margin-bottom: 10px !important;\n}\n.m-t-ng-8 {\n    margin-top: -8px;\n}\n#kvFileinputModal.file-zoom-fullscreen {\n    z-index: 10009;\n}\n.input-group-sm > .input-group-addon {\n    padding: 3px 10px;\n}\n.input-group-lg > .input-group-addon {\n    padding: 9px 16px;\n}\n.has-success .form-control{\n    border:1px solid #66cc99 !important;\n}\n.has-warning .form-control {\n    border-color: #f0ad4e;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-error .form-control {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.input-sm{\n    height: 30px;\n    padding: 5px 10px;\n    font-size: 12px;\n    line-height: 1.5;\n    border-radius: 3px;\n}\n.input-md{\n    height: 34px;\n    padding: 5px 10px;\n    font-size: 12px;\n    line-height: 1.5;\n    border-radius: 3px;\n}\n.input-lg{\n    height: 46px;\n    padding: 10px 16px;\n    font-size: 18px;\n    line-height: 1.33333;\n    border-radius: 6px;\n}\n.kv-upload-progress>.progress,.fileinput-cancel-button{\n    display: none;\n}\n.custom-checkbox,.custom-radio{\n    margin: 0;\n}\n.inline_radio .custom-radio,.inline_check .custom-checkbox{\n    padding-right: 50px;\n}\n.form-control:disabled{\n    cursor:not-allowed;\n}\n.content .card{\n    margin-top: 10px;\n}\n@media(min-width: 320px) and (max-width: 425px){\n.input-group,.file-input-new,.btn-modify{\n        margin-bottom: 10px;\n}\n.input-group-btn .hidden-xs{\n        display: none;\n}\n}\n@media (max-width:768px){\n.input-group{\n        margin-bottom: 10px;\n}\n}\n.inlineRadio .custom-radio{\n    margin-right: 10px !important;\n}\n.dropdown-menu.show{\n    margin-right: 20px;\n}\n#input-text-has-success:focus{\n    box-shadow: 0px 0px 5px 0.1px #66cc99;\n}\n#input-text-has-warning:focus{\n    box-shadow: 0px 0px 5px 0.1px #f0ad4e;\n}\n#input-text-has-error:focus{\n    box-shadow: 0px 0px 5px 0.1px #ff6666;\n}\n.kv-file-zoom,.file-upload-indicator{\n    display: none;\n}\n.file-caption-main .btn-default{\n    color: #333;\n}\n.btn:active{\n    color: #fff !important;\n}\n.input_height .btn-group.show .dropdown-toggle{\n    color: #fff;\n}\n#input-20{\n    margin-bottom: 10px;\n}\n.input-group-btn .dropdown-menu{\n    z-index: 99;\n}\n\n\n\n/*bootstrap3 ovverrides*/\n.file-input-section .input-group-append .btn-file,.file-input-section .file-input .btn-file{\n    border-top-right-radius: 0.25rem !important;\n    border-bottom-right-radius: 0.25rem !important;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1556:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1557);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("1f4be9ea", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./jquery.bootstrap-touchspin.min.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1557:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/*\n *  Bootstrap TouchSpin - v3.1.1\n *  A mobile and touch friendly input spinner component for Bootstrap 3.\n *  http://www.virtuosoft.eu/code/bootstrap-touchspin/\n *\n *  Made by István Ujj-Mészáros\n *  Under Apache License v2.0 License\n */\n.bootstrap-touchspin .input-group-btn-vertical{position:relative;white-space:nowrap;width:1%;vertical-align:middle;display:table-cell\n}\n.bootstrap-touchspin .input-group-btn-vertical>.btn{display:block;float:none;width:100%;max-width:100%;padding:8px 10px;margin-left:-1px;position:relative\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up{border-radius:0;border-top-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{margin-top:-2px;border-radius:0;border-bottom-right-radius:4px\n}\n.bootstrap-touchspin .input-group-btn-vertical i{position:absolute;top:3px;left:5px;font-size:9px;font-weight:400\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1558:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1559);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("7d84c737", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./pickers.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2c317c59\",\"scoped\":false,\"hasInlineConfig\":true}!./pickers.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1559:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#example28 + .btn-group > .multiselect {\n    min-width : 65px;\n}\n.bootstrap-touchspin-up, .bootstrap-touchspin-down {\n    border-radius : 0 !important;\n}\n.clockface > div {\n    overflow : hidden;\n}\n@media only screen and (min-width : 769px ) and (max-width : 1440px ) {\n#example28-values {\n        margin-top : 10px;\n}\n}\n@media (max-width : 320px ) {\n.bootstrap-datetimepicker-widget.dropdown-menu {\n        width : 100%;\n        left  : 30px !important;\n}\n}\n.btn-default,#toggle-btn{\n    color:#333;\n}\n.bootstrap-touchspin .input-group-btn-vertical{\n    width:5%;\n}\n@media(max-width: 768px){\n.bootstrap-touchspin .input-group-btn-vertical i{\n        left:7px;\n}\n.bootstrap-touchspin .input-group-btn-vertical{\n        width: 4%;\n}\n}\n@media(min-width: 320px) and (max-width: 425px){\n.bootstrap-touchspin .input-group-btn-vertical{\n        width: 8% !important;\n}\n}\n@media(max-width: 320px){\n.bootstrap-touchspin .input-group-btn-vertical i{\n        left:5px;\n}\n}\n.clockpicker-popover,.clockface{\n    z-index: 99;\n}\n.content .btn:hover{\n    color:#333;\n    background-color: #c3c3c3;\n}\n#button-a:hover{\n    background-color: #6699cc;\n    color:#fff;\n}\n.bootstrap-touchspin-prefix,.bootstrap-touchspin-postfix{\n    background-color: #ddd ;\n}\n\n\n/*touch spin bootstrap 3 version overrides*/\n.pickers .input-group-lg .bootstrap-touchspin-down,.pickers .input-group-lg .bootstrap-touchspin-up{\n    padding: 0.85rem 0.75rem;\n}\n.pickers .input-group-lg .btn, .pickers .input-group-sm .btn{\n    border-radius:0 ;\n}\n.pickers .bootstrap-touchspin-down,.pickers .bootstrap-touchspin-up{\n    padding: 0.39rem 0.75rem;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1560:
+/***/ 1303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(531);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__ = __webpack_require__(1561);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__ = __webpack_require__(1562);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(710);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js__ = __webpack_require__(1304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_fileinput_js_fileinput_min_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js__ = __webpack_require__(1305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap_fileinput_themes_fa_theme_min_js__);
 //
 //
 //
@@ -318,747 +240,644 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-var moment = __webpack_require__(0);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "pickers",
     components: {
         card: __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default.a
     },
+    data: function data() {
+        return {
+            selected: 'first',
+            options: [{ text: 'First radio', value: 'first' }, { text: 'Second radio', value: 'second' }, { text: 'Third radio', value: 'third' }],
+            radios: [{ text: 'First radio', value: 'first' }, { text: 'Second radio', value: 'second' }, { text: 'Third radio', value: 'third' }],
+            stacked_check: ['Checkbox 1', 'Checkbox 2', 'Checkbox 3'],
+            check: ['Checkbox 1', 'Checkbox 2', 'Checkbox 3']
+        };
+    },
+
+    name: "form-elements",
     mounted: function mounted() {
         "use strict";
 
-        $(document).ready(function () {
-
-            $('#t1').clockface();
-            $('#t3').clockface({
-                format: 'H:mm'
-            }).clockface('show', '14:30');
-
-            $('#t2').clockface({
-                format: 'HH:mm',
-                trigger: 'manual'
-            });
-
-            $('#toggle-btn').on('click', function (e) {
-                e.stopPropagation();
-                $('#t2').clockface('toggle');
-            });
-
-            var input = $('#input-a');
-            input.clockpicker({
-                autoclose: true
-            });
-
-            // Manual operations
-            $('#button-a').click(function (e) {
-                // Have to stop propagation here
-                e.stopPropagation();
-                input.clockpicker('show').clockpicker('toggleView', 'minutes');
-            });
-
-            //datetimepicker
-            $("input[name='demo1']").TouchSpin({
-                min: 0,
-                max: 100,
-                step: 0.1,
-                decimals: 2,
-                boostat: 5,
-                maxboostedstep: 10,
-                postfix: '%'
-            });
-
-            $("input[name='demo2']").TouchSpin({
-                min: -1000000000,
-                max: 1000000000,
-                stepinterval: 50,
-                maxboostedstep: 10000000,
-                prefix: '$'
-            });
-
-            $("input[name='demo_vertical']").TouchSpin({
-                verticalbuttons: true,
-                verticalupclass: 'ti-angle-up',
-                verticaldownclass: 'ti-angle-down'
-            });
-
-            $("input[name='demo_vertical2']").TouchSpin({
-                verticalbuttons: true,
-                verticalupclass: 'ti-plus',
-                verticaldownclass: 'ti-minus'
-            });
-
-            $("input[name='demo3']").TouchSpin();
-
-            $("input[name='demo3_21']").TouchSpin({
-                initval: 40
-            });
-
-            $("input[name='demo3_22']").TouchSpin({
-                initval: 40
-            });
-
-            $("input[name='demo4']").TouchSpin({
-                postfix: "a button",
-                postfix_extraclass: "btn btn-default"
-            });
-
-            $("input[name='demo4_2']").TouchSpin({
-                postfix: "a button",
-                postfix_extraclass: "btn btn-default"
-            });
-
-            $("input[name='demo5']").TouchSpin({
-                prefix: "pre",
-                postfix: "post"
-            });
-
-            $("input[name='demo6']").TouchSpin({
-                buttondown_class: "btn btn-link",
-                buttonup_class: "btn btn-link"
-            });
+        $("#input-43").fileinput({
+            browseClass: "btn btn-info",
+            showPreview: false,
+            allowedFileExtensions: ["zip", "rar", "gz", "tgz"],
+            elErrorContainer: "#errorBlock43",
+            theme: "fa"
+            // you can configure `msgErrorClass` and `msgInvalidFileExtension` as well
         });
-    },
-    destroyed: function destroyed() {}
+        $("#input-42").fileinput({
+            browseClass: "btn btn-warning",
+            maxFilesNum: 10,
+            allowedFileExtensions: ["jpg", "gif", "png", "txt"],
+            theme: "fa"
+        });
+        $("#input-41").fileinput({
+            browseClass: "btn btn-danger",
+            maxFileCount: 10,
+            allowedFileTypes: ["image", "video"],
+            theme: "fa"
+        });
+        $("#input-40,#input-22").fileinput({
+            theme: "fa"
+        });
+        $(".btn-modify").on("click", function () {
+
+            var $btn = $(this);
+            if ($btn.text() == "Modify") {
+                $("#input-40").fileinput("disable");
+                $btn.html("Revert");
+                alert("Hurray! I have disabled the input and hidden the upload button.");
+            } else {
+                $("#input-40").fileinput("enable");
+                $btn.html("Modify");
+                alert("Hurray! I have reverted back the input to enabled with the upload button.");
+            }
+        });
+        $("#input-23").fileinput({
+            browseClass: "btn btn-secondary",
+            showUpload: false,
+            mainTemplate: "{preview}\n" + "<div class='input-group {class}'>\n" + "   <div class='input-group-btn'>\n" + "       {browse}\n" + "       {upload}\n" + "       {remove}\n" + "   </div>\n" + "   {caption}\n" + "</div>",
+            theme: "fa"
+        });
+        $("#input-21").fileinput({
+            previewFileType: "image",
+            browseClass: "btn btn-success",
+            browseLabel: " Pick Image",
+
+            removeClass: "btn btn-danger",
+            removeLabel: "Delete",
+
+            uploadClass: "btn btn-info",
+            uploadLabel: " Upload",
+
+            theme: "fa"
+        });
+        $("#input-20").fileinput({
+            browseClass: "btn btn-info btn-block",
+            showCaption: false,
+            showRemove: false,
+            showUpload: false,
+            theme: "fa"
+        });
+        $("#input-4").fileinput({
+            browseClass: "btn btn-success",
+            showCaption: false
+        });
+        $("#input-5").fileinput({
+            browseClass: "btn btn-warning",
+            showUpload: false,
+            maxFileCount: 10,
+            mainClass: "input-group-lg"
+        });
+    }
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(529)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 1561:
+/***/ 1304:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
-* Clockface - v1.0.1
-* Clockface timepicker for Twitter Bootstrap
-*
-* Confusion with noon and midnight: 
-* http://en.wikipedia.org/wiki/12-hour_clock
-* Here considered '00:00 am' as midnight and '12:00 pm' as noon.
-*
-* Author: Vitaliy Potapov
-* Project page: http://github.com/vitalets/clockface
-* Copyright (c) 2012 Vitaliy Potapov. Released under MIT License.
-**/
-(function ($) {
-
-    var Clockface = function (element, options) {
-        this.$element = $(element);
-        this.options = $.extend({}, $.fn.clockface.defaults, options, this.$element.data());
-        this.init();  
-     };
-
-    Clockface.prototype = {
-        constructor: Clockface, 
-        init: function () {
-          //apply template
-          this.$clockface = $($.fn.clockface.template);
-          this.$clockface.find('.l1 .cell, .left.cell').html('<div class="outer"></div><div class="inner"></div>'); 
-          this.$clockface.find('.l5 .cell, .right.cell').html('<div class="inner"></div><div class="outer"></div>'); 
-          this.$clockface.hide();
-
-          this.$outer = this.$clockface.find('.outer');
-          this.$inner = this.$clockface.find('.inner');
-          this.$ampm = this.$clockface.find('.ampm');
-
-          //internal vars
-          this.ampm = null;
-          this.hour = null;
-          this.minute = null;
-          
-          //click am/pm 
-          this.$ampm.click($.proxy(this.clickAmPm, this));
-
-          //click cell
-          this.$clockface.on('click', '.cell', $.proxy(this.click, this));
-
-          this.parseFormat();
-          this.prepareRegexp();
-
-          //set ampm text
-          this.ampmtext = this.is24 ? {am: '12-23', pm: '0-11'} : {am: 'AM', pm: 'PM'};
-
-          this.isInline = this.$element.is('div');
-          if(this.isInline) {
-            this.$clockface.addClass('clockface-inline').appendTo(this.$element);
-          } else {
-            this.$clockface.addClass('dropdown-menu').appendTo('body');
-            if(this.options.trigger === 'focus') {
-              this.$element.on('focus.clockface', $.proxy(function(e) { this.show(); }, this));
-            }
-
-            // Click outside hide it. Register single handler for all clockface widgets
-            $(document).off('click.clockface').on('click.clockface', $.proxy(function (e) {
-                var $target = $(e.target);
-                //click inside some clockface --> do nothing
-                if ($target.closest('.clockface').length) {
-                  return;
-                }
-                //iterate all open clockface and close all except current
-                $('.clockface-open').each(function(){
-                  if(this === e.target) {
-                    return;
-                  }
-                  $(this).clockface('hide');
-                });
-            }, this));
-          }
-
-          //fill minutes once
-          this.fill('minute');
-        },
-
-        /*
-        Displays widget with specified value
-        */
-        show: function(value) {
-            if(this.$clockface.is(':visible')) {
-              return;
-            }
-            if(!this.isInline) {
-                if(value === undefined) {
-                  value = this.$element.val();
-                }
-                this.$element.addClass('clockface-open');
-                this.$element.on('keydown.clockface', $.proxy(this.keydown, this));
-                this.place();
-                $(window).on('resize.clockface', $.proxy(this.place, this));
-            }
-            this.$clockface.show();
-            this.setTime(value);
-
-            //trigger shown event
-            this.$element.triggerHandler('shown.clockface', this.getTime(true));
-        },
-        /*
-        hides widget
-        */
-        hide: function() {
-            this.$clockface.hide();
-            if(!this.isInline) {
-              this.$element.removeClass('clockface-open');  
-              this.$element.off('keydown.clockface');
-              $(window).off('resize.clockface');
-            }
-
-            //trigger hidden event
-            this.$element.triggerHandler('hidden.clockface', this.getTime(true));            
-        },
-
-        /*
-        toggles show/hide
-        */
-        toggle: function(value) {
-          if(this.$clockface.is(':visible')) {
-            this.hide();
-          } else {
-            this.show(value);
-          }
-        },
-
-         /*
-        Set time of clockface. Am/pm will be set automatically.
-        Value can be Date object or string
-        */
-        setTime: function(value) {
-          var res, hour, minute, ampm = 'am';
-
-          //no new value 
-          if(value === undefined) {
-            //if ampm null, it;s first showw, need to render hours ('am' by default)
-            if(this.ampm === null) {
-              this.setAmPm('am');
-            }
-            return;
-          }
-
-          //take value from Date object
-          if(value instanceof Date) {
-            hour = value.getHours();
-            minute = value.getMinutes();
-          }
-
-          //parse value from string
-          if(typeof value === 'string' && value.length) { 
-            res = this.parseTime(value);
-
-            //'24' always '0'
-            if(res.hour === 24) {
-              res.hour = 0;
-            }
-
-            hour = res.hour;             
-            minute = res.minute;             
-            ampm = res.ampm;             
-          }
-
-          //try to set ampm automatically
-          if(hour > 11 && hour < 24) {
-            ampm = 'pm';
-            //for 12h format substract 12 from value 
-            if(!this.is24 && hour > 12) {
-              hour -= 12;
-            }
-          } else if(hour >= 0 && hour < 11) {
-                //always set am for 24h and for '0' in 12h 
-                if(this.is24 || hour === 0) {
-                   ampm = 'am';
-               } 
-               //otherwise ampm should be defined in value itself and retrieved when parsing
-          }      
-
-          this.setAmPm(ampm);
-          this.setHour(hour);
-          this.setMinute(minute);
-        },   
-
-        /*
-        Set ampm and re-fill hours
-        */
-        setAmPm: function(value) {
-          if(value === this.ampm) {
-             return;
-          } else {
-             this.ampm = value === 'am' ? 'am' : 'pm';
-          }
-
-          //set link's text
-          this.$ampm.text(this.ampmtext[this.ampm]);
-
-          //re-fill and highlight hour
-          this.fill('hour');
-          this.highlight('hour');
-        },   
-        /*
-        Sets hour value and highlight if possible
-        */
-        setHour: function(value) {
-          value = parseInt(value, 10);
-          value = isNaN(value) ? null : value;
-          if(value < 0 || value > 23) {
-            value = null;
-          }
-
-          if(value === this.hour) {
-            return;
-          } else {
-            this.hour = value;
-          }
-
-          this.highlight('hour');
-        },
-
-        /*
-        Sets minute value and highlight
-        */
-        setMinute: function(value) {
-          value = parseInt(value, 10);
-          value = isNaN(value) ? null : value;
-          if(value < 0 || value > 59) {
-            value = null;
-          }
-
-          if(value === this.minute) {
-            return;
-          } else {
-            this.minute = value;
-          }
-
-          this.highlight('minute');
-        },        
-
-        /*
-        Highlights hour/minute
-        */
-        highlight: function(what) {
-          var index,
-              values = this.getValues(what),
-              value = what === 'minute' ? this.minute : this.hour,
-              $cells = what === 'minute' ? this.$outer : this.$inner;
-
-          $cells.removeClass('active');
-
-          //find index of value and highlight if possible
-          index = $.inArray(value, values);
-          if(index >= 0) {
-            $cells.eq(index).addClass('active');
-          }
-        },
-
-        /*
-        Fill values around
-        */ 
-        fill: function(what) {
-          var values = this.getValues(what),
-              $cells = what === 'minute' ? this.$outer : this.$inner,
-              leadZero = what === 'minute';           
-
-          $cells.each(function(i){
-            var v = values[i];
-            if(leadZero && v < 10) {
-              v = '0' + v;
-            }
-            $(this).text(v);
-          });
-        },          
-
-        /*
-        returns values of hours or minutes, depend on ampm and 24/12 format (0-11, 12-23, 00-55, etc)
-        param what: 'hour'/'minute'
-        */
-        getValues: function(what) {
-          var values = [11, 0, 1, 10, 2, 9, 3, 8, 4, 7, 6, 5],
-              result = values.slice();
-
-          //minutes
-          if(what === 'minute') {
-              $.each(values, function(i, v) { result[i] = v*5; });
-          } else {
-            //hours
-            if(!this.is24) {
-              result[1] = 12; //need this to show '12' instead of '00' for 12h am/pm
-            }
-            if(this.is24 && this.ampm === 'pm') {
-              $.each(values, function(i, v) { result[i] = v+12; });
-            }
-          }
-          return result;
-        },
-
-        /*
-        Click cell handler.
-        Stores hour/minute and highlights.
-        On second click deselect value
-        */
-        click: function(e) {
-          var $target = $(e.target),
-              value = $target.hasClass('active') ? null : $target.text();
-          if($target.hasClass('inner')) {
-            this.setHour(value);
-          } else {
-            this.setMinute(value);
-          }
-
-          //update value in input
-          if(!this.isInline) {
-            this.$element.val(this.getTime());
-          }          
-
-          //trigger pick event
-          this.$element.triggerHandler('pick.clockface', this.getTime(true));  
-        },
-
-        /*
-        Click handler on ampm link
-        */
-        clickAmPm: function(e) {
-          e.preventDefault();
-          //toggle am/pm
-          this.setAmPm(this.ampm === 'am' ? 'pm' : 'am');
-
-          //update value in input
-          if(!this.isInline && !this.is24) {
-            this.$element.val(this.getTime());
-          }    
-
-          //trigger pick event
-          this.$element.triggerHandler('pick.clockface', this.getTime(true));                  
-        },
-        
-
-        /*
-        Place widget below input
-        */
-        place: function(){
-          var zIndex = parseInt(this.$element.parents().filter(function() {
-                   return $(this).css('z-index') != 'auto';
-             }).first().css('z-index'), 10)+10,
-             offset = this.$element.offset();
-          this.$clockface.css({
-            top: offset.top + this.$element.outerHeight(),
-            left: offset.left,
-            zIndex: zIndex
-          });
-        },  
-
-        /*
-        keydown handler (for not inline mode)
-        */
-        keydown: function(e) {
-          //tab, escape, enter --> hide
-          if(/^(9|27|13)$/.test(e.which)) {
-            this.hide();
-            return;
-          } 
-
-          clearTimeout(this.timer);
-          this.timer = setTimeout($.proxy(function(){
-            this.setTime(this.$element.val());
-          }, this), 500);
-        },  
-
-        /*
-        Parse format from options and set this.is24
-        */
-        parseFormat: function() {
-          var format = this.options.format,
-              hFormat = 'HH',
-              mFormat = 'mm';
-
-          //hour format    
-          $.each(['HH', 'hh', 'H', 'h'], function(i, f){
-            if(format.indexOf(f) !== -1) {
-              hFormat = f;
-              return false;
-            }
-          });
-
-          //minute format
-          $.each(['mm', 'm'], function(i, f){
-            if(format.indexOf(f) !== -1) {
-              mFormat = f;
-              return false;
-            }
-          });          
-
-          //is 24 hour format
-          this.is24 = hFormat.indexOf('H') !== -1; 
-
-          this.hFormat = hFormat;
-          this.mFormat = mFormat;
-        },
-
-       
-
-        /*
-        Parse value passed as string or Date object
-        */
-        parseTime: function(value) {
-          var hour = null, 
-              minute = null, 
-              ampm = 'am', 
-              parts = [], digits;
-
-            value = $.trim(value);
-
-            //try parse time from string assuming separator exist
-            if(this.regexpSep) {
-                parts = value.match(this.regexpSep);
-            }
-
-            if(parts && parts.length) {
-              hour = parts[1] ? parseInt(parts[1], 10) : null;
-              minute = parts[2] ? parseInt(parts[2], 10): null;
-              ampm = (!parts[3] || parts[3].toLowerCase() === 'a') ? 'am' : 'pm';
-            } else {
-              //if parse with separator failed, search for 1,4-digit block and process it
-              //use reversed string to start from end (usefull with full dates)
-              //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
-              value = value.split('').reverse().join('').replace(/\s/g, '');
-              parts = value.match(this.regexpNoSep);
-              if(parts && parts.length) {
-                ampm = (!parts[1] || parts[1].toLowerCase() === 'a') ? 'am' : 'pm';
-                //reverse back
-                digits = parts[2].split('').reverse().join('');
-                //use smart analyzing to detect hours and minutes
-                switch(digits.length) {
-                  case 1:
-                    hour = parseInt(digits, 10); //e.g. '6'
-                  break;
-                  case 2:
-                    hour = parseInt(digits, 10); //e.g. '16'
-                    //if((this.is24 && hour > 24) || (!this.is24 && hour > 12)) { //e.g. 26
-                    if(hour > 24) { //e.g. 26
-                      hour = parseInt(digits[0], 10);
-                      minute = parseInt(digits[1], 10);
-                    }
-                  break;
-                  case 3:
-                    hour = parseInt(digits[0], 10);  //e.g. 105
-                    minute = parseInt(digits[1]+digits[2], 10); 
-                    if(minute > 59) { 
-                      hour = parseInt(digits[0]+digits[1], 10); //e.g. 195
-                      minute = parseInt(digits[2], 10); 
-                      if(hour > 24) {
-                        hour = null;
-                        minute = null;
-                      }
-                    }
-                  break;
-                  case 4:
-                    hour = parseInt(digits[0]+digits[1], 10); //e.g. 2006
-                    minute = parseInt(digits[2]+digits[3], 10);
-                    if(hour > 24) {
-                      hour = null;
-                    }
-                    if(minute > 59) {
-                      minute = null;
-                    }
-                }
-              }
-            }
-
-          return {hour: hour, minute: minute, ampm: ampm};
-        },
-
-        prepareRegexp: function() {
-            //take separator from format
-            var sep = this.options.format.match(/h\s*([^hm]?)\s*m/i); //HH-mm, HH:mm
-            if(sep && sep.length) {
-              sep = sep[1];
-            } 
-
-            //sep can be null for HH, and '' for HHmm 
-            this.separator = sep;
-    
-            //parse from string
-            //use reversed string and regexp to parse 2-digit minutes first
-            //see http://stackoverflow.com/questions/141348/what-is-the-best-way-to-parse-a-time-into-a-date-object-from-user-input-in-javas
-            //this.regexp = new RegExp('(a|p)?\\s*((\\d\\d?)' + sep + ')?(\\d\\d?)', 'i');
-
-            //regexp, used with separator
-            this.regexpSep = (this.separator && this.separator.length) ? new RegExp('(\\d\\d?)\\s*\\' + this.separator + '\\s*(\\d?\\d?)\\s*(a|p)?', 'i') : null;
-
-            //second regexp applied if previous has no result or separator is empty (to reversed string)
-            this.regexpNoSep = new RegExp('(a|p)?\\s*(\\d{1,4})', 'i');
-        },
-
-        /*
-        Returns time as string in specified format
-        */
-        getTime: function(asObject) {
-          if(asObject === true) {
-            return {
-              hour: this.hour,
-              minute: this.minute,
-              ampm: this.ampm
-            };
-          }
-
-          var hour = this.hour !== null ? this.hour + '' : '',
-              minute = this.minute !== null ? this.minute + '' : '',
-              result = this.options.format;
-
-          if(!hour.length && !minute.length) {
-            return '';
-          }   
-
-          if(this.hFormat.length > 1 && hour.length === 1) {
-            hour = '0' + hour;
-          }   
-
-          if(this.mFormat.length > 1 && minute.length === 1) {
-            minute = '0' + minute;
-          }
-
-          //delete separator if no minutes
-          if(!minute.length && this.separator) {
-            result = result.replace(this.separator, '');
-          }
-
-          result = result.replace(this.hFormat, hour).replace(this.mFormat, minute);
-          if(!this.is24) {
-            if(result.indexOf('A') !== -1) {
-               result = result.replace('A', this.ampm.toUpperCase());
-            } else {
-               result = result.replace('a', this.ampm);
-            }
-          }
-
-          return result;
-        },
-
-        /*
-        Removes widget and detach events
-        */
-        destroy: function() {
-          this.hide();
-          this.$clockface.remove();
-          if(!this.isInline && this.options.trigger === 'focus') {
-            this.$element.off('focus.clockface');
-          }          
-        }
-    };
-
-    $.fn.clockface = function ( option ) {
-        var d, args = Array.apply(null, arguments);
-        args.shift();
-
-        //getTime returns string (not jQuery onject)
-        if(option === 'getTime' && this.length && (d = this.eq(0).data('clockface'))) {
-          return d.getTime.apply(d, args);
-        }
-
-        return this.each(function () {
-            var $this = $(this),
-            data = $this.data('clockface'),
-            options = typeof option == 'object' && option;
-            if (!data) {
-                $this.data('clockface', (data = new Clockface(this, options)));
-            }
-            if (typeof option == 'string' && typeof data[option] == 'function') {
-                data[option].apply(data, args);
-            }
-        });
-    };  
-    
-    $.fn.clockface.defaults = {
-        //see http://momentjs.com/docs/#/displaying/format/
-        format: 'H:mm',
-        trigger: 'focus' //focus|manual
-    };
-   
-
- $.fn.clockface.template = ''+
-      '<div class="clockface">' +
-          '<div class="l1">' +
-              '<div class="cell"></div>' +
-              '<div class="cell"></div>' +
-              '<div class="cell"></div>' +
-          '</div>' +
-          '<div class="l2">' +
-                '<div class="cell left"></div>' +
-                '<div class="cell right"></div>' +
-          '</div>'+
-          '<div class="l3">' +
-                '<div class="cell left"></div>' +
-                '<div class="cell right"></div>' +
-                '<div class="center"><a href="#" class="ampm"></a></div>' +
-          '</div>'+
-          '<div class="l4">' +
-                '<div class="cell left"></div>' +
-                '<div class="cell right"></div>' +
-          '</div>'+
-          '<div class="l5">' +
-                '<div class="cell"></div>' +
-                '<div class="cell"></div>' +
-                '<div class="cell"></div>' +
-          '</div>'+
-      '</div>';  
-
-}(__webpack_provided_window_dot_jQuery));
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(529)))
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * bootstrap-fileinput v4.5.1
+ * http://plugins.krajee.com/file-input
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md
+ */
+!function(e){"use strict"; true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(528)], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof module&&module.exports?module.exports=e(require("jquery")):e(window.jQuery)}(function(e){"use strict";var t,i;e.fn.fileinputLocales={},e.fn.fileinputThemes={},String.prototype.setTokens=function(e){var t,i,a=this.toString();for(t in e)e.hasOwnProperty(t)&&(i=new RegExp("{"+t+"}","g"),a=a.replace(i,e[t]));return a},t={FRAMES:".kv-preview-thumb",SORT_CSS:"file-sortable",OBJECT_PARAMS:'<param name="controller" value="true" />\n<param name="allowFullScreen" value="true" />\n<param name="allowScriptAccess" value="always" />\n<param name="autoPlay" value="false" />\n<param name="autoStart" value="false" />\n<param name="quality" value="high" />\n',DEFAULT_PREVIEW:'<div class="file-preview-other">\n<span class="{previewFileIconClass}">{previewFileIcon}</span>\n</div>',MODAL_ID:"kvFileinputModal",MODAL_EVENTS:["show","shown","hide","hidden","loaded"],objUrl:window.URL||window.webkitURL,compare:function(e,t,i){return void 0!==e&&(i?e===t:e.match(t))},isIE:function(e){if("Microsoft Internet Explorer"!==navigator.appName)return!1;if(10===e)return new RegExp("msie\\s"+e,"i").test(navigator.userAgent);var t,i=document.createElement("div");return i.innerHTML="\x3c!--[if IE "+e+"]> <i></i> <![endif]--\x3e",t=i.getElementsByTagName("i").length,document.body.appendChild(i),i.parentNode.removeChild(i),t},canAssignFilesToInput:function(){var e=document.createElement("input");try{return e.type="file",e.files=null,!0}catch(e){return!1}},getDragDropFolders:function(e){var t,i,a=e.length,r=0;if(a>0&&e[0].webkitGetAsEntry())for(t=0;t<a;t++)(i=e[t].webkitGetAsEntry())&&i.isDirectory&&r++;return r},initModal:function(t){var i=e("body");i.length&&t.appendTo(i)},isEmpty:function(t,i){return null==t||0===t.length||i&&""===e.trim(t)},isArray:function(e){return Array.isArray(e)||"[object Array]"===Object.prototype.toString.call(e)},ifSet:function(e,t,i){return i=i||"",t&&"object"==typeof t&&e in t?t[e]:i},cleanArray:function(e){return e instanceof Array||(e=[]),e.filter(function(e){return null!=e})},spliceArray:function(t,i,a){var r,n,s=0,o=[];if(!(t instanceof Array))return[];for(n=e.extend(!0,[],t),a&&n.reverse(),r=0;r<n.length;r++)r!==i&&(o[s]=n[r],s++);return a&&o.reverse(),o},getNum:function(e,t){return t=t||0,"number"==typeof e?e:("string"==typeof e&&(e=parseFloat(e)),isNaN(e)?t:e)},hasFileAPISupport:function(){return!(!window.File||!window.FileReader)},hasDragDropSupport:function(){var e=document.createElement("div");return!t.isIE(9)&&(void 0!==e.draggable||void 0!==e.ondragstart&&void 0!==e.ondrop)},hasFileUploadSupport:function(){return t.hasFileAPISupport()&&window.FormData},hasBlobSupport:function(){try{return!!window.Blob&&Boolean(new Blob)}catch(e){return!1}},hasArrayBufferViewSupport:function(){try{return 100===new Blob([new Uint8Array(100)]).size}catch(e){return!1}},dataURI2Blob:function(e){var i,a,r,n,s,o,l=window.BlobBuilder||window.WebKitBlobBuilder||window.MozBlobBuilder||window.MSBlobBuilder,d=t.hasBlobSupport();if(!((d||l)&&window.atob&&window.ArrayBuffer&&window.Uint8Array))return null;for(i=e.split(",")[0].indexOf("base64")>=0?atob(e.split(",")[1]):decodeURIComponent(e.split(",")[1]),a=new ArrayBuffer(i.length),r=new Uint8Array(a),n=0;n<i.length;n+=1)r[n]=i.charCodeAt(n);return s=e.split(",")[0].split(":")[1].split(";")[0],d?new Blob([t.hasArrayBufferViewSupport()?r:a],{type:s}):((o=new l).append(a),o.getBlob(s))},arrayBuffer2String:function(e){if(window.TextDecoder)return new TextDecoder("utf-8").decode(e);var t,i,a,r,n=Array.prototype.slice.apply(new Uint8Array(e)),s="",o=0;for(t=n.length;o<t;)switch((i=n[o++])>>4){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:s+=String.fromCharCode(i);break;case 12:case 13:a=n[o++],s+=String.fromCharCode((31&i)<<6|63&a);break;case 14:a=n[o++],r=n[o++],s+=String.fromCharCode((15&i)<<12|(63&a)<<6|(63&r)<<0)}return s},isHtml:function(e){var t=document.createElement("div");t.innerHTML=e;for(var i=t.childNodes,a=i.length;a--;)if(1===i[a].nodeType)return!0;return!1},isSvg:function(e){return e.match(/^\s*<\?xml/i)&&(e.match(/<!DOCTYPE svg/i)||e.match(/<svg/i))},getMimeType:function(e,t,i){switch(e){case"ffd8ffe0":case"ffd8ffe1":case"ffd8ffe2":return"image/jpeg";case"89504E47":return"image/png";case"47494638":return"image/gif";case"49492a00":return"image/tiff";case"52494646":return"image/webp";case"66747970":return"video/3gp";case"4f676753":return"video/ogg";case"1a45dfa3":return"video/mkv";case"000001ba":case"000001b3":return"video/mpeg";case"3026b275":return"video/wmv";case"25504446":return"application/pdf";case"25215053":return"application/ps";case"504b0304":case"504b0506":case"504b0508":return"application/zip";case"377abcaf":return"application/7z";case"75737461":return"application/tar";case"7801730d":return"application/dmg";default:switch(e.substring(0,6)){case"435753":return"application/x-shockwave-flash";case"494433":return"audio/mp3";case"425a68":return"application/bzip";default:switch(e.substring(0,4)){case"424d":return"image/bmp";case"fffb":return"audio/mp3";case"4d5a":return"application/exe";case"1f9d":case"1fa0":return"application/zip";case"1f8b":return"application/gzip";default:return t&&!t.match(/[^\u0000-\u007f]/)?"application/text-plain":i}}}},addCss:function(e,t){e.removeClass(t).addClass(t)},getElement:function(i,a,r){return t.isEmpty(i)||t.isEmpty(i[a])?r:e(i[a])},uniqId:function(){return Math.round((new Date).getTime())+"_"+Math.round(100*Math.random())},htmlEncode:function(e,t){return void 0===e?t||null:e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;")},replaceTags:function(t,i){var a=t;return i?(e.each(i,function(e,t){"function"==typeof t&&(t=t()),a=a.split(e).join(t)}),a):a},cleanMemory:function(e){var i=e.is("img")?e.attr("src"):e.find("source").attr("src");t.objUrl.revokeObjectURL(i)},findFileName:function(e){var t=e.lastIndexOf("/");return-1===t&&(t=e.lastIndexOf("\\")),e.split(e.substring(t,t+1)).pop()},checkFullScreen:function(){return document.fullscreenElement||document.mozFullScreenElement||document.webkitFullscreenElement||document.msFullscreenElement},toggleFullScreen:function(e){var i=document,a=i.documentElement;a&&e&&!t.checkFullScreen()?a.requestFullscreen?a.requestFullscreen():a.msRequestFullscreen?a.msRequestFullscreen():a.mozRequestFullScreen?a.mozRequestFullScreen():a.webkitRequestFullscreen&&a.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT):i.exitFullscreen?i.exitFullscreen():i.msExitFullscreen?i.msExitFullscreen():i.mozCancelFullScreen?i.mozCancelFullScreen():i.webkitExitFullscreen&&i.webkitExitFullscreen()},moveArray:function(t,i,a,r){var n=e.extend(!0,[],t);if(r&&n.reverse(),a>=n.length)for(var s=a-n.length;1+s--;)n.push(void 0);return n.splice(a,0,n.splice(i,1)[0]),r&&n.reverse(),n},cleanZoomCache:function(e){var t=e.closest(".kv-zoom-cache-theme");t.length||(t=e.closest(".kv-zoom-cache")),t.remove()},closeButton:function(e){return'<button type="button" class="'+(e=e?"close "+e:"close")+'" aria-label="Close">\n  <span aria-hidden="true">&times;</span>\n</button>'},getRotation:function(e){switch(e){case 2:return"rotateY(180deg)";case 3:return"rotate(180deg)";case 4:return"rotate(180deg) rotateY(180deg)";case 5:return"rotate(270deg) rotateY(180deg)";case 6:return"rotate(90deg)";case 7:return"rotate(90deg) rotateY(180deg)";case 8:return"rotate(270deg)";default:return""}},setTransform:function(e,t){e&&(e.style.transform=t,e.style.webkitTransform=t,e.style["-moz-transform"]=t,e.style["-ms-transform"]=t,e.style["-o-transform"]=t)},setImageOrientation:function(e,i,a){if(e&&e.length){var r="load.fileinputimageorient";e.off(r).on(r,function(){var r=e.get(0),n=i&&i.length?i.get(0):null,s=r.offsetHeight,o=r.offsetWidth,l=t.getRotation(a);if(e.data("orientation",a),n&&i.data("orientation",a),a<5)return t.setTransform(r,l),void t.setTransform(n,l);var d=Math.atan(o/s),c=Math.sqrt(Math.pow(s,2)+Math.pow(o,2)),h=c?s/Math.cos(Math.PI/2+d)/c:1,p=" scale("+Math.abs(h)+")";t.setTransform(r,l+p),t.setTransform(n,l+p)})}}},(i=function(i,a){this.$element=e(i),this.$parent=this.$element.parent(),this._validate()&&(this.isPreviewable=t.hasFileAPISupport(),this.isIE9=t.isIE(9),this.isIE10=t.isIE(10),(this.isPreviewable||this.isIE9)&&(this._init(a),this._listen()),this.$element.removeClass("file-loading"))}).prototype={constructor:i,_cleanup:function(){this.reader=null,this.formdata={},this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.uploadAsyncCount=0,this.loadedImages=[],this.totalImagesCount=0,this.ajaxRequests=[],this.clearStack(),this.fileBatchCompleted=!0,this.isPreviewable||(this.showPreview=!1),this.isError=!1,this.ajaxAborted=!1,this.cancelling=!1},_init:function(i,a){var r,n,s,o,l=this,d=l.$element;l.options=i,e.each(i,function(e,i){switch(e){case"minFileCount":case"maxFileCount":case"minFileSize":case"maxFileSize":case"maxFilePreviewSize":case"resizeImageQuality":case"resizeIfSizeMoreThan":case"progressUploadThreshold":case"initialPreviewCount":case"zoomModalHeight":case"minImageHeight":case"maxImageHeight":case"minImageWidth":case"maxImageWidth":l[e]=t.getNum(i);break;default:l[e]=i}}),l.rtl&&(o=l.previewZoomButtonIcons.prev,l.previewZoomButtonIcons.prev=l.previewZoomButtonIcons.next,l.previewZoomButtonIcons.next=o),a||l._cleanup(),l.$form=d.closest("form"),l._initTemplateDefaults(),l.uploadFileAttr=t.isEmpty(d.attr("name"))?"file_data":d.attr("name"),s=l._getLayoutTemplate("progress"),l.progressTemplate=s.replace("{class}",l.progressClass),l.progressCompleteTemplate=s.replace("{class}",l.progressCompleteClass),l.progressErrorTemplate=s.replace("{class}",l.progressErrorClass),l.isDisabled=d.attr("disabled")||d.attr("readonly"),l.isDisabled&&d.attr("disabled",!0),l.isClickable=l.browseOnZoneClick&&l.showPreview&&(l.dropZoneEnabled||!t.isEmpty(l.defaultPreviewContent)),l.isAjaxUpload=t.hasFileUploadSupport()&&!t.isEmpty(l.uploadUrl),l.dropZoneEnabled=t.hasDragDropSupport()&&l.dropZoneEnabled,l.isAjaxUpload||(l.dropZoneEnabled=l.dropZoneEnabled&&t.canAssignFilesToInput()),l.slug="function"==typeof i.slugCallback?i.slugCallback:l._slugDefault,l.mainTemplate=l.showCaption?l._getLayoutTemplate("main1"):l._getLayoutTemplate("main2"),l.captionTemplate=l._getLayoutTemplate("caption"),l.previewGenericTemplate=l._getPreviewTemplate("generic"),!l.imageCanvas&&l.resizeImage&&(l.maxImageWidth||l.maxImageHeight)&&(l.imageCanvas=document.createElement("canvas"),l.imageCanvasContext=l.imageCanvas.getContext("2d")),t.isEmpty(d.attr("id"))&&d.attr("id",t.uniqId()),l.namespace=".fileinput_"+d.attr("id").replace(/-/g,"_"),void 0===l.$container?l.$container=l._createContainer():l._refreshContainer(),n=l.$container,l.$dropZone=n.find(".file-drop-zone"),l.$progress=n.find(".kv-upload-progress"),l.$btnUpload=n.find(".fileinput-upload"),l.$captionContainer=t.getElement(i,"elCaptionContainer",n.find(".file-caption")),l.$caption=t.getElement(i,"elCaptionText",n.find(".file-caption-name")),t.isEmpty(l.msgPlaceholder)||(r=d.attr("multiple")?l.filePlural:l.fileSingle,l.$caption.attr("placeholder",l.msgPlaceholder.replace("{files}",r))),l.$captionIcon=l.$captionContainer.find(".file-caption-icon"),l.$previewContainer=t.getElement(i,"elPreviewContainer",n.find(".file-preview")),l.$preview=t.getElement(i,"elPreviewImage",n.find(".file-preview-thumbnails")),l.$previewStatus=t.getElement(i,"elPreviewStatus",n.find(".file-preview-status")),l.$errorContainer=t.getElement(i,"elErrorContainer",l.$previewContainer.find(".kv-fileinput-error")),l._validateDisabled(),t.isEmpty(l.msgErrorClass)||t.addCss(l.$errorContainer,l.msgErrorClass),a?l._errorsExist()||l.$errorContainer.hide():(l.$errorContainer.hide(),l.previewInitId="preview-"+t.uniqId(),l._initPreviewCache(),l._initPreview(!0),l._initPreviewActions(),l.$parent.hasClass("file-loading")&&(l.$container.insertBefore(l.$parent),l.$parent.remove())),l._setFileDropZoneTitle(),d.attr("disabled")&&l.disable(),l._initZoom(),l.hideThumbnailContent&&t.addCss(l.$preview,"hide-content")},_initTemplateDefaults:function(){var i,a,r,n,s,o,l,d,c,h=this;i=t.closeButton("fileinput-remove"),a='<div id="'+t.MODAL_ID+'" class="file-zoom-dialog modal fade" tabindex="-1" aria-labelledby="'+t.MODAL_ID+'Label"></div>',r='<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}"',n='<video class="kv-preview-data file-preview-video" controls {style}>\n<source src="{data}" type="{type}">\n'+t.DEFAULT_PREVIEW+"\n</video>\n",s='\x3c!--suppress ALL --\x3e<audio class="kv-preview-data file-preview-audio" controls {style}>\n<source src="{data}" type="{type}">\n'+t.DEFAULT_PREVIEW+"\n</audio>\n",l='<embed class="kv-preview-data file-preview-pdf" src="{data}" type="application/pdf" {style}>\n',o='<object class="kv-preview-data file-preview-object file-object {typeCss}" data="{data}" type="{type}" {style}>\n<param name="movie" value="{caption}" />\n'+t.OBJECT_PARAMS+" "+t.DEFAULT_PREVIEW+"\n</object>\n",d='<div class="kv-preview-data file-preview-other-frame" {style}>\n'+t.DEFAULT_PREVIEW+"\n</div>\n",c={width:"100%",height:"100%","min-height":"480px"},h._isPdfRendered()&&(l=h.pdfRendererTemplate.replace("{renderer}",h.pdfRendererUrl)),h.defaults={layoutTemplates:{main1:'{preview}\n<div class="kv-upload-progress kv-hidden"></div><div class="clearfix"></div>\n<div class="input-group {class}">\n  {caption}\n<div class="input-group-btn input-group-append">\n      {remove}\n      {cancel}\n      {upload}\n      {browse}\n    </div>\n</div>',main2:'{preview}\n<div class="kv-upload-progress kv-hidden"></div>\n<div class="clearfix"></div>\n{remove}\n{cancel}\n{upload}\n{browse}\n',preview:'<div class="file-preview {class}">\n    {close}    <div class="{dropClass}">\n    <div class="file-preview-thumbnails">\n    </div>\n    <div class="clearfix"></div>    <div class="file-preview-status text-center text-success"></div>\n    <div class="kv-fileinput-error"></div>\n    </div>\n</div>',close:i,fileIcon:'<i class="glyphicon glyphicon-file"></i>',caption:'<div class="file-caption form-control {class}" tabindex="500">\n  <span class="file-caption-icon"></span>\n  <input class="file-caption-name" onkeydown="return false;" onpaste="return false;">\n</div>',modalMain:a,modal:'<div class="modal-dialog modal-lg{rtl}" role="document">\n  <div class="modal-content">\n    <div class="modal-header">\n      <h5 class="modal-title">{heading}</h5>\n      <span class="kv-zoom-title"></span>\n      <div class="kv-zoom-actions">{toggleheader}{fullscreen}{borderless}{close}</div>\n    </div>\n    <div class="modal-body">\n      <div class="floating-buttons"></div>\n      <div class="kv-zoom-body file-zoom-content {zoomFrameClass}"></div>\n{prev} {next}\n    </div>\n  </div>\n</div>\n',progress:'<div class="progress">\n    <div class="{class}" role="progressbar" aria-valuenow="{percent}" aria-valuemin="0" aria-valuemax="100" style="width:{percent}%;">\n        {status}\n     </div>\n</div>',size:" <samp>({sizeText})</samp>",footer:'<div class="file-thumbnail-footer">\n    <div class="file-footer-caption" title="{caption}">\n        <div class="file-caption-info">{caption}</div>\n        <div class="file-size-info">{size}</div>\n    </div>\n    {progress}\n{indicator}\n{actions}\n</div>',indicator:'<div class="file-upload-indicator" title="{indicatorTitle}">{indicator}</div>',actions:'<div class="file-actions">\n    <div class="file-footer-buttons">\n        {download} {upload} {delete} {zoom} {other}    </div>\n</div>\n{drag}\n<div class="clearfix"></div>',actionDelete:'<button type="button" class="kv-file-remove {removeClass}" title="{removeTitle}" {dataUrl}{dataKey}>{removeIcon}</button>\n',actionUpload:'<button type="button" class="kv-file-upload {uploadClass}" title="{uploadTitle}">{uploadIcon}</button>',actionDownload:'<a class="kv-file-download {downloadClass}" title="{downloadTitle}" href="{downloadUrl}" download="{caption}" target="_blank">{downloadIcon}</a>',actionZoom:'<button type="button" class="kv-file-zoom {zoomClass}" title="{zoomTitle}">{zoomIcon}</button>',actionDrag:'<span class="file-drag-handle {dragClass}" title="{dragTitle}">{dragIcon}</span>',btnDefault:'<button type="{type}" tabindex="500" title="{title}" class="{css}" {status}>{icon} {label}</button>',btnLink:'<a href="{href}" tabindex="500" title="{title}" class="{css}" {status}>{icon} {label}</a>',btnBrowse:'<div tabindex="500" class="{css}" {status}>{icon} {label}</div>',zoomCache:'<div class="kv-zoom-cache" style="display:none">{zoomContent}</div>'},previewMarkupTags:{tagBefore1:'<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}"><div class="kv-file-content">\n',tagBefore2:'<div class="file-preview-frame {frameClass}" id="{previewId}" data-fileindex="{fileindex}" data-template="{template}" title="{caption}"><div class="kv-file-content">\n',tagAfter:"</div>{footer}\n</div>\n"},previewContentTemplates:{generic:"{content}\n",html:'<div class="kv-preview-data file-preview-html" title="{caption}" {style}>{data}</div>\n',image:'<img src="{data}" class="file-preview-image kv-preview-data" title="{caption}" alt="{caption}" {style}>\n',text:'<textarea class="kv-preview-data file-preview-text" title="{caption}" readonly {style}>{data}</textarea>\n',office:'<iframe class="kv-preview-data file-preview-office" src="https://view.officeapps.live.com/op/embed.aspx?src={data}" {style}></iframe>',gdocs:'<iframe class="kv-preview-data file-preview-gdocs" src="https://docs.google.com/gview?url={data}&embedded=true" {style}></iframe>',video:n,audio:s,flash:'<embed class="kv-preview-data file-preview-flash" src="{data}" type="application/x-shockwave-flash" {style}>\n',object:o,pdf:l,other:d},allowedPreviewTypes:["image","html","text","video","audio","flash","pdf","object"],previewTemplates:{},previewSettings:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:{width:"213px",height:"160px"},text:{width:"213px",height:"160px"},office:{width:"213px",height:"160px"},gdocs:{width:"213px",height:"160px"},video:{width:"213px",height:"160px"},audio:{width:"100%",height:"30px"},flash:{width:"213px",height:"160px"},object:{width:"213px",height:"160px"},pdf:{width:"100%",height:"160px"},other:{width:"213px",height:"160px"}},previewSettingsSmall:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:{width:"100%",height:"160px"},text:{width:"100%",height:"160px"},office:{width:"100%",height:"160px"},gdocs:{width:"100%",height:"160px"},video:{width:"100%",height:"auto"},audio:{width:"100%",height:"30px"},flash:{width:"100%",height:"auto"},object:{width:"100%",height:"auto"},pdf:{width:"100%",height:"160px"},other:{width:"100%",height:"160px"}},previewZoomSettings:{image:{width:"auto",height:"auto","max-width":"100%","max-height":"100%"},html:c,text:c,office:{width:"100%",height:"100%","max-width":"100%","min-height":"480px"},gdocs:{width:"100%",height:"100%","max-width":"100%","min-height":"480px"},video:{width:"auto",height:"100%","max-width":"100%"},audio:{width:"100%",height:"30px"},flash:{width:"auto",height:"480px"},object:{width:"auto",height:"100%","max-width":"100%","min-height":"480px"},pdf:c,other:{width:"auto",height:"100%","min-height":"480px"}},fileTypeSettings:{image:function(e,i){return t.compare(e,"image.*")&&!t.compare(e,/(tiff?|wmf)$/i)||t.compare(i,/\.(gif|png|jpe?g)$/i)},html:function(e,i){return t.compare(e,"text/html")||t.compare(i,/\.(htm|html)$/i)},office:function(e,i){return t.compare(e,/(word|excel|powerpoint|office)$/i)||t.compare(i,/\.(docx?|xlsx?|pptx?|pps|potx?)$/i)},gdocs:function(e,i){return t.compare(e,/(word|excel|powerpoint|office|iwork-pages|tiff?)$/i)||t.compare(i,/\.(docx?|xlsx?|pptx?|pps|potx?|rtf|ods|odt|pages|ai|dxf|ttf|tiff?|wmf|e?ps)$/i)},text:function(e,i){return t.compare(e,"text.*")||t.compare(i,/\.(xml|javascript)$/i)||t.compare(i,/\.(txt|md|csv|nfo|ini|json|php|js|css)$/i)},video:function(e,i){return t.compare(e,"video.*")&&(t.compare(e,/(ogg|mp4|mp?g|mov|webm|3gp)$/i)||t.compare(i,/\.(og?|mp4|webm|mp?g|mov|3gp)$/i))},audio:function(e,i){return t.compare(e,"audio.*")&&(t.compare(i,/(ogg|mp3|mp?g|wav)$/i)||t.compare(i,/\.(og?|mp3|mp?g|wav)$/i))},flash:function(e,i){return t.compare(e,"application/x-shockwave-flash",!0)||t.compare(i,/\.(swf)$/i)},pdf:function(e,i){return t.compare(e,"application/pdf",!0)||t.compare(i,/\.(pdf)$/i)},object:function(){return!0},other:function(){return!0}},fileActionSettings:{showRemove:!0,showUpload:!0,showDownload:!0,showZoom:!0,showDrag:!0,removeIcon:'<i class="glyphicon glyphicon-trash"></i>',removeClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",removeErrorClass:"btn btn-sm btn-kv btn-danger",removeTitle:"Remove file",uploadIcon:'<i class="glyphicon glyphicon-upload"></i>',uploadClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",uploadTitle:"Upload file",uploadRetryIcon:'<i class="glyphicon glyphicon-repeat"></i>',uploadRetryTitle:"Retry upload",downloadIcon:'<i class="glyphicon glyphicon-download"></i>',downloadClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",downloadTitle:"Download file",zoomIcon:'<i class="glyphicon glyphicon-zoom-in"></i>',zoomClass:"btn btn-sm btn-kv btn-default btn-outline-secondary",zoomTitle:"View Details",dragIcon:'<i class="glyphicon glyphicon-move"></i>',dragClass:"text-info",dragTitle:"Move / Rearrange",dragSettings:{},indicatorNew:'<i class="glyphicon glyphicon-plus-sign text-warning"></i>',indicatorSuccess:'<i class="glyphicon glyphicon-ok-sign text-success"></i>',indicatorError:'<i class="glyphicon glyphicon-exclamation-sign text-danger"></i>',indicatorLoading:'<i class="glyphicon glyphicon-hourglass text-muted"></i>',indicatorNewTitle:"Not uploaded yet",indicatorSuccessTitle:"Uploaded",indicatorErrorTitle:"Upload Error",indicatorLoadingTitle:"Uploading ..."}},e.each(h.defaults,function(t,i){"allowedPreviewTypes"!==t?h[t]=e.extend(!0,{},i,h[t]):void 0===h.allowedPreviewTypes&&(h.allowedPreviewTypes=i)}),h._initPreviewTemplates()},_initPreviewTemplates:function(){var i,a=this,r=a.previewMarkupTags,n=r.tagAfter;e.each(a.previewContentTemplates,function(e,s){t.isEmpty(a.previewTemplates[e])&&(i=r.tagBefore2,"generic"!==e&&"image"!==e&&"html"!==e&&"text"!==e||(i=r.tagBefore1),a._isPdfRendered()&&"pdf"===e&&(i=i.replace("kv-file-content","kv-file-content kv-pdf-rendered")),a.previewTemplates[e]=i+s+n)})},_initPreviewCache:function(){var i=this;i.previewCache={data:{},init:function(){var e=i.initialPreview;e.length>0&&!t.isArray(e)&&(e=e.split(i.initialPreviewDelimiter)),i.previewCache.data={content:e,config:i.initialPreviewConfig,tags:i.initialPreviewThumbTags}},count:function(){return i.previewCache.data&&i.previewCache.data.content?i.previewCache.data.content.length:0},get:function(a,r){var n,s,o,l,d,c,h,p="init_"+a,u=i.previewCache.data,f=u.config[a],m=u.content[a],g=i.previewInitId+"-"+p,v=t.ifSet("previewAsData",f,i.initialPreviewAsData),w=function(e,a,r,n,s,o,l,d,c){return d=" file-preview-initial "+t.SORT_CSS+(d?" "+d:""),i._generatePreviewTemplate(e,a,r,n,s,!1,null,d,o,l,c)};return m?(r=void 0===r||r,o=t.ifSet("type",f,i.initialPreviewFileType||"generic"),d=t.ifSet("filename",f,t.ifSet("caption",f)),c=t.ifSet("filetype",f,o),l=i.previewCache.footer(a,r,f&&f.size||null),h=t.ifSet("frameClass",f),n=v?w(o,m,d,c,g,l,p,h):w("generic",m,d,c,g,l,p,h,o).setTokens({content:u.content[a]}),u.tags.length&&u.tags[a]&&(n=t.replaceTags(n,u.tags[a])),t.isEmpty(f)||t.isEmpty(f.frameAttr)||((s=e(document.createElement("div")).html(n)).find(".file-preview-initial").attr(f.frameAttr),n=s.html(),s.remove()),n):""},add:function(e,a,r,n){var s,o=i.previewCache.data;return t.isArray(e)||(e=e.split(i.initialPreviewDelimiter)),n?(s=o.content.push(e)-1,o.config[s]=a,o.tags[s]=r):(s=e.length-1,o.content=e,o.config=a,o.tags=r),i.previewCache.data=o,s},set:function(e,a,r,n){var s,o=i.previewCache.data;if(e&&e.length&&(t.isArray(e)||(e=e.split(i.initialPreviewDelimiter)),e.filter(function(e){return null!==e}).length)){if(void 0===o.content&&(o.content=[]),void 0===o.config&&(o.config=[]),void 0===o.tags&&(o.tags=[]),n){for(s=0;s<e.length;s++)e[s]&&o.content.push(e[s]);for(s=0;s<a.length;s++)a[s]&&o.config.push(a[s]);for(s=0;s<r.length;s++)r[s]&&o.tags.push(r[s])}else o.content=e,o.config=a,o.tags=r;i.previewCache.data=o}},unset:function(e){var a=i.previewCache.count(),r=i.reversePreviewOrder;if(a){if(1===a)return i.previewCache.data.content=[],i.previewCache.data.config=[],i.previewCache.data.tags=[],i.initialPreview=[],i.initialPreviewConfig=[],void(i.initialPreviewThumbTags=[]);i.previewCache.data.content=t.spliceArray(i.previewCache.data.content,e,r),i.previewCache.data.config=t.spliceArray(i.previewCache.data.config,e,r),i.previewCache.data.tags=t.spliceArray(i.previewCache.data.tags,e,r)}},out:function(){var e,t,a="",r=i.previewCache.count();if(0===r)return{content:"",caption:""};for(e=0;e<r;e++)t=i.previewCache.get(e),a=i.reversePreviewOrder?t+a:a+t;return{content:a,caption:i._getMsgSelected(r)}},footer:function(e,a,r){var n=i.previewCache.data||{};if(t.isEmpty(n.content))return"";(t.isEmpty(n.config)||t.isEmpty(n.config[e]))&&(n.config[e]={}),a=void 0===a||a;var s,o=n.config[e],l=t.ifSet("caption",o),d=t.ifSet("width",o,"auto"),c=t.ifSet("url",o,!1),h=t.ifSet("key",o,null),p=i.fileActionSettings,u=i.initialPreviewShowDelete||!1,f=o.downloadUrl||i.initialPreviewDownloadUrl||"",m=o.filename||o.caption||"",g=!!f,v=t.ifSet("showRemove",o,t.ifSet("showRemove",p,u)),w=t.ifSet("showDownload",o,t.ifSet("showDownload",p,g)),_=t.ifSet("showZoom",o,t.ifSet("showZoom",p,!0)),b=t.ifSet("showDrag",o,t.ifSet("showDrag",p,!0)),C=!1===c&&a;return w=w&&!1!==o.downloadUrl&&!!f,s=i._renderFileActions(!1,w,v,_,b,C,c,h,!0,f,m),i._getLayoutTemplate("footer").setTokens({progress:i._renderThumbProgress(),actions:s,caption:l,size:i._getSize(r),width:d,indicator:""})}},i.previewCache.init()},_isPdfRendered:function(){var e=this.usePdfRenderer;return("function"==typeof e?e():!!e)&&this.pdfRendererUrl},_handler:function(e,t,i){var a=this.namespace,r=t.split(" ").join(a+" ")+a;e&&e.length&&e.off(r).on(r,i)},_log:function(e){var t=this.$element.attr("id");t&&(e='"'+t+'": '+e),e="bootstrap-fileinput: "+e,void 0!==window.console.log?window.console.log(e):window.alert(e)},_validate:function(){var e="file"===this.$element.attr("type");return e||this._log('The input "type" must be set to "file" for initializing the "bootstrap-fileinput" plugin.'),e},_errorsExist:function(){var t;return!!this.$errorContainer.find("li").length||((t=e(document.createElement("div")).html(this.$errorContainer.html())).find(".kv-error-close").remove(),t.find("ul").remove(),!!e.trim(t.text()).length)},_errorHandler:function(e,t){var i=this,a=e.target.error,r=function(e){i._showError(e.replace("{name}",t))};a.code===a.NOT_FOUND_ERR?r(i.msgFileNotFound):a.code===a.SECURITY_ERR?r(i.msgFileSecured):a.code===a.NOT_READABLE_ERR?r(i.msgFileNotReadable):a.code===a.ABORT_ERR?r(i.msgFilePreviewAborted):r(i.msgFilePreviewError)},_addError:function(e){var t=this,i=t.$errorContainer;e&&i.length&&(i.html(t.errorCloseButton+e),t._handler(i.find(".kv-error-close"),"click",function(){setTimeout(function(){t.showPreview&&!t.getFrames().length&&t.clear(),i.fadeOut("slow")},10)}))},_setValidationError:function(e){e=(e?e+" ":"")+"has-error",this.$container.removeClass(e).addClass("has-error"),t.addCss(this.$captionContainer,"is-invalid")},_resetErrors:function(e){var t=this.$errorContainer;this.isError=!1,this.$container.removeClass("has-error"),this.$captionContainer.removeClass("is-invalid"),t.html(""),e?t.fadeOut("slow"):t.hide()},_showFolderError:function(e){var t,i=this.$errorContainer;e&&(this.isAjaxUpload||this._clearFileInput(),t=this.msgFoldersNotAllowed.replace("{n}",e),this._addError(t),this._setValidationError(),i.fadeIn(800),this._raise("filefoldererror",[e,t]))},_showUploadError:function(e,t,i){var a=this.$errorContainer,r=i||"fileuploaderror",n=t&&t.id?'<li data-file-id="'+t.id+'">'+e+"</li>":"<li>"+e+"</li>";return 0===a.find("ul").length?this._addError("<ul>"+n+"</ul>"):a.find("ul").append(n),a.fadeIn(800),this._raise(r,[t,e]),this._setValidationError("file-input-new"),!0},_showError:function(e,t,i){var a=this.$errorContainer,r=i||"fileerror";return(t=t||{}).reader=this.reader,this._addError(e),a.fadeIn(800),this._raise(r,[t,e]),this.isAjaxUpload||this._clearFileInput(),this._setValidationError("file-input-new"),this.$btnUpload.attr("disabled",!0),!0},_noFilesError:function(e){var t=this.minFileCount>1?this.filePlural:this.fileSingle,i=this.msgFilesTooLess.replace("{n}",this.minFileCount).replace("{files}",t),a=this.$errorContainer;this._addError(i),this.isError=!0,this._updateFileDetails(0),a.fadeIn(800),this._raise("fileerror",[e,i]),this._clearFileInput(),this._setValidationError()},_parseError:function(t,i,a,r){var n,s=e.trim(a+""),o=void 0!==i.responseJSON&&void 0!==i.responseJSON.error?i.responseJSON.error:i.responseText;return this.cancelling&&this.msgUploadAborted&&(s=this.msgUploadAborted),this.showAjaxErrorDetails&&o&&(n=(o=e.trim(o.replace(/\n\s*\n/g,"\n"))).length?"<pre>"+o+"</pre>":"",s+=s?n:o),s||(s=this.msgAjaxError.replace("{operation}",t)),this.cancelling=!1,r?"<b>"+r+": </b>"+s:s},_parseFileType:function(e,i){var a,r,n,s=this.allowedPreviewTypes||[];if("application/text-plain"===e)return"text";for(n=0;n<s.length;n++)if(r=s[n],a=(0,this.fileTypeSettings[r])(e,i)?r:"",!t.isEmpty(a))return a;return"other"},_getPreviewIcon:function(t){var i,a=this,r=null;return t&&t.indexOf(".")>-1&&(i=t.split(".").pop(),a.previewFileIconSettings&&(r=a.previewFileIconSettings[i]||a.previewFileIconSettings[i.toLowerCase()]||null),a.previewFileExtSettings&&e.each(a.previewFileExtSettings,function(e,t){a.previewFileIconSettings[e]&&t(i)&&(r=a.previewFileIconSettings[e])})),r},_parseFilePreviewIcon:function(e,t){var i=this._getPreviewIcon(t)||this.previewFileIcon,a=e;return a.indexOf("{previewFileIcon}")>-1&&(a=a.setTokens({previewFileIconClass:this.previewFileIconClass,previewFileIcon:i})),a},_raise:function(t,i){var a=e.Event(t);if(void 0!==i?this.$element.trigger(a,i):this.$element.trigger(a),a.isDefaultPrevented()||!1===a.result)return!1;switch(t){case"filebatchuploadcomplete":case"filebatchuploadsuccess":case"fileuploaded":case"fileclear":case"filecleared":case"filereset":case"fileerror":case"filefoldererror":case"fileuploaderror":case"filebatchuploaderror":case"filedeleteerror":case"filecustomerror":case"filesuccessremove":break;default:this.ajaxAborted||(this.ajaxAborted=a.result)}return!0},_listenFullScreen:function(e){var t,i,a=this.$modal;a&&a.length&&(t=a&&a.find(".btn-fullscreen"),i=a&&a.find(".btn-borderless"),t.length&&i.length&&(t.removeClass("active").attr("aria-pressed","false"),i.removeClass("active").attr("aria-pressed","false"),e?t.addClass("active").attr("aria-pressed","true"):i.addClass("active").attr("aria-pressed","true"),a.hasClass("file-zoom-fullscreen")?this._maximizeZoomDialog():e?this._maximizeZoomDialog():i.removeClass("active").attr("aria-pressed","false")))},_listen:function(){var i=this,a=i.$element,r=i.$form,n=i.$container;i._handler(a,"click",function(e){a.hasClass("file-no-browse")&&(a.data("zoneClicked")?a.data("zoneClicked",!1):e.preventDefault())}),i._handler(a,"change",e.proxy(i._change,i)),i.showBrowse&&i._handler(i.$btnFile,"click",e.proxy(i._browse,i)),i._handler(n.find(".fileinput-remove:not([disabled])"),"click",e.proxy(i.clear,i)),i._handler(n.find(".fileinput-cancel"),"click",e.proxy(i.cancel,i)),i._initDragDrop(),i._handler(r,"reset",e.proxy(i.clear,i)),i.isAjaxUpload||i._handler(r,"submit",e.proxy(i._submitForm,i)),i._handler(i.$container.find(".fileinput-upload"),"click",e.proxy(i._uploadClick,i)),i._handler(e(window),"resize",function(){i._listenFullScreen(screen.width===window.innerWidth&&screen.height===window.innerHeight)}),i._handler(e(document),"webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange",function(){i._listenFullScreen(t.checkFullScreen())}),i._autoFitContent(),i._initClickable(),i._refreshPreview()},_autoFitContent:function(){var t,i=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,a=this,r=i<400?a.previewSettingsSmall||a.defaults.previewSettingsSmall:a.previewSettings||a.defaults.previewSettings;e.each(r,function(e,i){t=".file-preview-frame .file-preview-"+e,a.$preview.find(t+".kv-preview-data,"+t+" .kv-preview-data").css(i)})},_scanDroppedItems:function(e,t,i){i=i||"";var a,r,n,s=this,o=function(e){s._log("Error scanning dropped files!"),s._log(e)};e.isFile?e.file(function(e){t.push(e)},o):e.isDirectory&&(r=e.createReader(),(n=function(){r.readEntries(function(r){if(r&&r.length>0){for(a=0;a<r.length;a++)s._scanDroppedItems(r[a],t,i+e.name+"/");n()}return null},o)})())},_initDragDrop:function(){var t=this.$dropZone;this.dropZoneEnabled&&this.showPreview&&(this._handler(t,"dragenter dragover",e.proxy(this._zoneDragEnter,this)),this._handler(t,"dragleave",e.proxy(this._zoneDragLeave,this)),this._handler(t,"drop",e.proxy(this._zoneDrop,this)),this._handler(e(document),"dragenter dragover drop",this._zoneDragDropInit))},_zoneDragDropInit:function(e){e.stopPropagation(),e.preventDefault()},_zoneDragEnter:function(i){var a=e.inArray("Files",i.originalEvent.dataTransfer.types)>-1;if(this._zoneDragDropInit(i),this.isDisabled||!a)return i.originalEvent.dataTransfer.effectAllowed="none",void(i.originalEvent.dataTransfer.dropEffect="none");t.addCss(this.$dropZone,"file-highlighted")},_zoneDragLeave:function(e){this._zoneDragDropInit(e),this.isDisabled||this.$dropZone.removeClass("file-highlighted")},_zoneDrop:function(e){var i,a=this,r=a.$element,n=e.originalEvent.dataTransfer,s=n.files,o=n.items,l=t.getDragDropFolders(o),d=function(){a.isAjaxUpload?a._change(e,s):(a.changeTriggered=!0,r.get(0).files=s,setTimeout(function(){a.changeTriggered=!1,r.trigger("change"+a.namespace)},10)),a.$dropZone.removeClass("file-highlighted")};if(e.preventDefault(),!a.isDisabled&&!t.isEmpty(s))if(l>0){if(!a.isAjaxUpload)return void a._showFolderError(l);for(s=[],i=0;i<o.length;i++){var c=o[i].webkitGetAsEntry();c&&a._scanDroppedItems(c,s)}setTimeout(function(){d()},500)}else d()},_uploadClick:function(e){var i,a=this.$container.find(".fileinput-upload"),r=!a.hasClass("disabled")&&t.isEmpty(a.attr("disabled"));e&&e.isDefaultPrevented()||(this.isAjaxUpload?(e.preventDefault(),r&&this.upload()):r&&"submit"!==a.attr("type")&&((i=a.closest("form")).length&&i.trigger("submit"),e.preventDefault()))},_submitForm:function(){return this._isFileSelectionValid()&&!this._abort({})},_clearPreview:function(){var i=this.$preview;(this.showUploadedThumbs?this.getFrames(":not(.file-preview-success)"):this.getFrames()).each(function(){var a=e(this);a.remove(),t.cleanZoomCache(i.find("#zoom-"+a.attr("id")))}),this.getFrames().length&&this.showPreview||this._resetUpload(),this._validateDefaultPreview()},_initSortable:function(){var i,a=this,r=a.$preview,n="."+t.SORT_CSS,s=a.reversePreviewOrder;window.KvSortable&&0!==r.find(n).length&&(i={handle:".drag-handle-init",dataIdAttr:"data-preview-id",scroll:!1,draggable:n,onSort:function(i){var r=i.oldIndex,n=i.newIndex,o=0;a.initialPreview=t.moveArray(a.initialPreview,r,n,s),a.initialPreviewConfig=t.moveArray(a.initialPreviewConfig,r,n,s),a.previewCache.init(),a.getFrames(".file-preview-initial").each(function(){e(this).attr("data-fileindex","init_"+o),o++}),a._raise("filesorted",{previewId:e(i.item).attr("id"),oldIndex:r,newIndex:n,stack:a.initialPreviewConfig})}},r.data("kvsortable")&&r.kvsortable("destroy"),e.extend(!0,i,a.fileActionSettings.dragSettings),r.kvsortable(i))},_setPreviewContent:function(e){this.$preview.html(e),this._autoFitContent()},_initPreview:function(e){var i,a=this.initialCaption||"";if(!this.previewCache.count())return this._clearPreview(),void(e?this._setCaption(a):this._initCaption());i=this.previewCache.out(),a=e&&this.initialCaption?this.initialCaption:i.caption,this._setPreviewContent(i.content),this._setInitThumbAttr(),this._setCaption(a),this._initSortable(),t.isEmpty(i.content)||this.$container.removeClass("file-input-new")},_getZoomButton:function(e){var t=this.previewZoomButtonIcons[e],i=this.previewZoomButtonClasses[e],a=' title="'+(this.previewZoomButtonTitles[e]||"")+'" '+("close"===e?' data-dismiss="modal" aria-hidden="true"':"");return"fullscreen"!==e&&"borderless"!==e&&"toggleheader"!==e||(a+=' data-toggle="button" aria-pressed="false" autocomplete="off"'),'<button type="button" class="'+i+" btn-"+e+'"'+a+">"+t+"</button>"},_getModalContent:function(){return this._getLayoutTemplate("modal").setTokens({rtl:this.rtl?" kv-rtl":"",zoomFrameClass:this.frameClass,heading:this.msgZoomModalHeading,prev:this._getZoomButton("prev"),next:this._getZoomButton("next"),toggleheader:this._getZoomButton("toggleheader"),fullscreen:this._getZoomButton("fullscreen"),borderless:this._getZoomButton("borderless"),close:this._getZoomButton("close")})},_listenModalEvent:function(e){var i=this,a=i.$modal;a.on(e+".bs.modal",function(r){var n=a.find(".btn-fullscreen"),s=a.find(".btn-borderless");i._raise("filezoom"+e,function(e){return{sourceEvent:e,previewId:a.data("previewId"),modal:a}}(r)),"shown"===e&&(s.removeClass("active").attr("aria-pressed","false"),n.removeClass("active").attr("aria-pressed","false"),a.hasClass("file-zoom-fullscreen")&&(i._maximizeZoomDialog(),t.checkFullScreen()?n.addClass("active").attr("aria-pressed","true"):s.addClass("active").attr("aria-pressed","true")))})},_initZoom:function(){var i,a=this,r=a._getLayoutTemplate("modalMain"),n="#"+t.MODAL_ID;a.showPreview&&(a.$modal=e(n),a.$modal&&a.$modal.length||(i=e(document.createElement("div")).html(r).insertAfter(a.$container),a.$modal=e(n).insertBefore(i),i.remove()),t.initModal(a.$modal),a.$modal.html(a._getModalContent()),e.each(t.MODAL_EVENTS,function(e,t){a._listenModalEvent(t)}))},_initZoomButtons:function(){var t,i,a=this.$modal.data("previewId")||"",r=this.getFrames().toArray(),n=r.length,s=this.$modal.find(".btn-prev"),o=this.$modal.find(".btn-next");if(r.length<2)return s.hide(),void o.hide();s.show(),o.show(),n&&(t=e(r[0]),i=e(r[n-1]),s.removeAttr("disabled"),o.removeAttr("disabled"),t.length&&t.attr("id")===a&&s.attr("disabled",!0),i.length&&i.attr("id")===a&&o.attr("disabled",!0))},_maximizeZoomDialog:function(){var t=this.$modal,i=t.find(".modal-header:visible"),a=t.find(".modal-footer:visible"),r=t.find(".modal-body"),n=e(window).height();t.addClass("file-zoom-fullscreen"),i&&i.length&&(n-=i.outerHeight(!0)),a&&a.length&&(n-=a.outerHeight(!0)),r&&r.length&&(n-=r.outerHeight(!0)-r.height()),t.find(".kv-zoom-body").height(n)},_resizeZoomDialog:function(e){var i=this.$modal,a=i.find(".btn-fullscreen"),r=i.find(".btn-borderless");if(i.hasClass("file-zoom-fullscreen"))t.toggleFullScreen(!1),e?a.hasClass("active")||(i.removeClass("file-zoom-fullscreen"),this._resizeZoomDialog(!0),r.hasClass("active")&&r.removeClass("active").attr("aria-pressed","false")):a.hasClass("active")?a.removeClass("active").attr("aria-pressed","false"):(i.removeClass("file-zoom-fullscreen"),this.$modal.find(".kv-zoom-body").css("height",this.zoomModalHeight));else{if(!e)return void this._maximizeZoomDialog();t.toggleFullScreen(!0)}i.focus()},_setZoomContent:function(i,a){var r,n,s,o,l,d,c,h,p=this,u=i.attr("id"),f=p.$modal,m=f.find(".btn-prev"),g=f.find(".btn-next"),v=f.find(".btn-fullscreen"),w=f.find(".btn-borderless"),_=f.find(".btn-toggleheader"),b=p.$preview.find("#zoom-"+u);n=b.attr("data-template")||"generic",s=(r=b.find(".kv-file-content")).length?r.html():"",o=(i.data("caption")||"")+" "+(i.data("size")||""),f.find(".kv-zoom-title").attr("title",e("<div/>").html(o).text()).html(o),l=f.find(".kv-zoom-body"),f.removeClass("kv-single-content"),a?(h=l.addClass("file-thumb-loading").clone().insertAfter(l),l.html(s).hide(),h.fadeOut("fast",function(){l.fadeIn("fast",function(){l.removeClass("file-thumb-loading")}),h.remove()})):l.html(s),(c=p.previewZoomSettings[n])&&(d=l.find(".kv-preview-data"),t.addCss(d,"file-zoom-detail"),e.each(c,function(e,t){d.css(e,t),(d.attr("width")&&"width"===e||d.attr("height")&&"height"===e)&&d.removeAttr(e)})),f.data("previewId",u),p._handler(m,"click",function(){p._zoomSlideShow("prev",u)}),p._handler(g,"click",function(){p._zoomSlideShow("next",u)}),p._handler(v,"click",function(){p._resizeZoomDialog(!0)}),p._handler(w,"click",function(){p._resizeZoomDialog(!1)}),p._handler(_,"click",function(){var e,t=f.find(".modal-header"),i=f.find(".modal-body .floating-buttons"),a=t.find(".kv-zoom-actions"),r=function(e){var i=p.$modal.find(".kv-zoom-body"),a=p.zoomModalHeight;f.hasClass("file-zoom-fullscreen")&&(a=i.outerHeight(!0),e||(a-=t.outerHeight(!0))),i.css("height",e?a+e:a)};t.is(":visible")?(e=t.outerHeight(!0),t.slideUp("slow",function(){a.find(".btn").appendTo(i),r(e)})):(i.find(".btn").appendTo(a),t.slideDown("slow",function(){r()})),f.focus()}),p._handler(f,"keydown",function(e){var t=e.which||e.keyCode;37!==t||m.attr("disabled")||p._zoomSlideShow("prev",u),39!==t||g.attr("disabled")||p._zoomSlideShow("next",u)})},_zoomPreview:function(e){var i,a=this.$modal;if(!e.length)throw"Cannot zoom to detailed preview!";t.initModal(a),a.html(this._getModalContent()),i=e.closest(t.FRAMES),this._setZoomContent(i),a.modal("show"),this._initZoomButtons()},_zoomSlideShow:function(t,i){var a,r,n,s=this.$modal.find(".kv-zoom-actions .btn-"+t),o=this.getFrames().toArray(),l=o.length;if(!s.attr("disabled")){for(r=0;r<l;r++)if(e(o[r]).attr("id")===i){n="prev"===t?r-1:r+1;break}n<0||n>=l||!o[n]||((a=e(o[n])).length&&this._setZoomContent(a,!0),this._initZoomButtons(),this._raise("filezoom"+t,{previewId:i,modal:this.$modal}))}},_initZoomButton:function(){var t=this;t.$preview.find(".kv-file-zoom").each(function(){var i=e(this);t._handler(i,"click",function(){t._zoomPreview(i)})})},_inputFileCount:function(){return this.$element.get(0).files.length},_refreshPreview:function(){var e;this._inputFileCount()&&this.showPreview&&this.isPreviewable&&(this.isAjaxUpload?(e=this.getFileStack(),this.filestack=[],e.length?this._clearFileInput():e=this.$element.get(0).files):e=this.$element.get(0).files,e&&e.length&&(this.readFiles(e),this._setFileDropZoneTitle()))},_clearObjects:function(t){t.find("video audio").each(function(){this.pause(),e(this).remove()}),t.find("img object div").each(function(){e(this).remove()})},_clearFileInput:function(){var t,i,a,r=this.$element;this._inputFileCount()&&(t=r.closest("form"),i=e(document.createElement("form")),a=e(document.createElement("div")),r.before(a),t.length?t.after(i):a.after(i),i.append(r).trigger("reset"),a.before(r).remove(),i.remove())},_resetUpload:function(){this.uploadCache={content:[],config:[],tags:[],append:!0},this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.uploadAsyncCount=0,this.loadedImages=[],this.totalImagesCount=0,this.$btnUpload.removeAttr("disabled"),this._setProgress(0),this.$progress.hide(),this._resetErrors(!1),this.ajaxAborted=!1,this.ajaxRequests=[],this._resetCanvas(),this.cacheInitialPreview={},this.overwriteInitial&&(this.initialPreview=[],this.initialPreviewConfig=[],this.initialPreviewThumbTags=[],this.previewCache.data={content:[],config:[],tags:[]})},_resetCanvas:function(){this.canvas&&this.imageCanvasContext&&this.imageCanvasContext.clearRect(0,0,this.canvas.width,this.canvas.height)},_hasInitialPreview:function(){return!this.overwriteInitial&&this.previewCache.count()},_resetPreview:function(){var e,t;this.previewCache.count()?(e=this.previewCache.out(),this._setPreviewContent(e.content),this._setInitThumbAttr(),t=this.initialCaption?this.initialCaption:e.caption,this._setCaption(t)):(this._clearPreview(),this._initCaption()),this.showPreview&&(this._initZoom(),this._initSortable())},_clearDefaultPreview:function(){this.$preview.find(".file-default-preview").remove()},_validateDefaultPreview:function(){this.showPreview&&!t.isEmpty(this.defaultPreviewContent)&&(this._setPreviewContent('<div class="file-default-preview">'+this.defaultPreviewContent+"</div>"),this.$container.removeClass("file-input-new"),this._initClickable())},_resetPreviewThumbs:function(e){var t;if(e)return this._clearPreview(),void this.clearStack();this._hasInitialPreview()?(t=this.previewCache.out(),this._setPreviewContent(t.content),this._setInitThumbAttr(),this._setCaption(t.caption),this._initPreviewActions()):this._clearPreview()},_getLayoutTemplate:function(e){var i=this.layoutTemplates[e];return t.isEmpty(this.customLayoutTags)?i:t.replaceTags(i,this.customLayoutTags)},_getPreviewTemplate:function(e){var i=this.previewTemplates[e];return t.isEmpty(this.customPreviewTags)?i:t.replaceTags(i,this.customPreviewTags)},_getOutData:function(e,t,i){return e=e||{},t=t||{},i=i||this.filestack.slice(0)||{},{form:this.formdata,files:i,filenames:this.filenames,filescount:this.getFilesCount(),extra:this._getExtraData(),response:t,reader:this.reader,jqXHR:e}},_getMsgSelected:function(e){var t=1===e?this.fileSingle:this.filePlural;return e>0?this.msgSelected.replace("{n}",e).replace("{files}",t):this.msgNoFilesSelected},_getFrame:function(t){var i=e("#"+t);return i.length?i:(this._log('Invalid thumb frame with id: "'+t+'".'),null)},_getThumbs:function(e){return e=e||"",this.getFrames(":not(.file-preview-initial)"+e)},_getExtraData:function(e,t){var i=this.uploadExtraData;return"function"==typeof this.uploadExtraData&&(i=this.uploadExtraData(e,t)),i},_initXhr:function(e,t,i){var a=this;return e.upload&&e.upload.addEventListener("progress",function(e){var r=0,n=e.total,s=e.loaded||e.position;e.lengthComputable&&(r=Math.floor(s/n*100)),t?a._setAsyncUploadStatus(t,r,i):a._setProgress(r)},!1),e},_initAjaxSettings:function(){this._ajaxSettings=e.extend(!0,{},this.ajaxSettings),this._ajaxDeleteSettings=e.extend(!0,{},this.ajaxDeleteSettings)},_mergeAjaxCallback:function(e,t,i){var a,r=this._ajaxSettings,n=this.mergeAjaxCallbacks;"delete"===i&&(r=this._ajaxDeleteSettings,n=this.mergeAjaxDeleteCallbacks),a=r[e],r[e]=n&&"function"==typeof a?"before"===n?function(){a.apply(this,arguments),t.apply(this,arguments)}:function(){t.apply(this,arguments),a.apply(this,arguments)}:t},_ajaxSubmit:function(t,i,a,r,n,s){var o,l=this;l._raise("filepreajax",[n,s])&&(l._uploadExtra(n,s),l._initAjaxSettings(),l._mergeAjaxCallback("beforeSend",t),l._mergeAjaxCallback("success",i),l._mergeAjaxCallback("complete",a),l._mergeAjaxCallback("error",r),o=e.extend(!0,{},{xhr:function(){var t=e.ajaxSettings.xhr();return l._initXhr(t,n,l.getFileStack().length)},url:s&&l.uploadUrlThumb?l.uploadUrlThumb:l.uploadUrl,type:"POST",dataType:"json",data:l.formdata,cache:!1,processData:!1,contentType:!1},l._ajaxSettings),l.ajaxRequests.push(e.ajax(o)))},_mergeArray:function(e,i){var a=t.cleanArray(this[e]),r=t.cleanArray(i);this[e]=a.concat(r)},_initUploadSuccess:function(i,a,r){var n,s,o,l,d,c,h,p,u,f=this;f.showPreview&&"object"==typeof i&&!e.isEmptyObject(i)&&void 0!==i.initialPreview&&i.initialPreview.length>0&&(f.hasInitData=!0,c=i.initialPreview||[],h=i.initialPreviewConfig||[],p=i.initialPreviewThumbTags||[],n=void 0===i.append||i.append,c.length>0&&!t.isArray(c)&&(c=c.split(f.initialPreviewDelimiter)),f._mergeArray("initialPreview",c),f._mergeArray("initialPreviewConfig",h),f._mergeArray("initialPreviewThumbTags",p),void 0!==a?r?(u=a.attr("data-fileindex"),f.uploadCache.content[u]=c[0],f.uploadCache.config[u]=h[0]||[],f.uploadCache.tags[u]=p[0]||[],f.uploadCache.append=n):(o=f.previewCache.add(c,h[0],p[0],n),s=f.previewCache.get(o,!1),(d=(l=e(document.createElement("div")).html(s).hide().insertAfter(a)).find(".kv-zoom-cache"))&&d.length&&d.insertAfter(a),a.fadeOut("slow",function(){var e=l.find(".file-preview-frame");e&&e.length&&e.insertBefore(a).fadeIn("slow").css("display:inline-block"),f._initPreviewActions(),f._clearFileInput(),t.cleanZoomCache(f.$preview.find("#zoom-"+a.attr("id"))),a.remove(),l.remove(),f._initSortable()})):(f.previewCache.set(c,h,p,n),f._initPreview(),f._initPreviewActions()))},_initSuccessThumbs:function(){var i=this;i.showPreview&&i._getThumbs(t.FRAMES+".file-preview-success").each(function(){var a=e(this),r=i.$preview,n=a.find(".kv-file-remove");n.removeAttr("disabled"),i._handler(n,"click",function(){var e=a.attr("id"),n=i._raise("filesuccessremove",[e,a.attr("data-fileindex")]);t.cleanMemory(a),!1!==n&&a.fadeOut("slow",function(){t.cleanZoomCache(r.find("#zoom-"+e)),a.remove(),i.getFrames().length||i.reset()})})})},_checkAsyncComplete:function(){var t,i;for(i=0;i<this.filestack.length;i++)if(this.filestack[i]&&(t=this.previewInitId+"-"+i,-1===e.inArray(t,this.uploadLog)))return!1;return this.uploadAsyncCount===this.uploadLog.length},_uploadExtra:function(t,i){var a=this,r=a._getExtraData(t,i);0!==r.length&&e.each(r,function(e,t){a.formdata.append(e,t)})},_uploadSingle:function(i,a){var r,n,s,o,l,d,c,h,p,u,f,m=this,g=m.getFileStack().length,v=new FormData,w=m.previewInitId+"-"+i,_=m.filestack.length>0||!e.isEmptyObject(m.uploadExtraData),b=e("#"+w).find(".file-thumb-progress"),C={id:w,index:i};m.formdata=v,m.showPreview&&(n=e("#"+w+":not(.file-preview-initial)"),o=n.find(".kv-file-upload"),l=n.find(".kv-file-remove"),b.show()),0===g||!_||o&&o.hasClass("disabled")||m._abort(C)||(f=function(e,t){d||m.updateStack(e,void 0),m.uploadLog.push(t),m._checkAsyncComplete()&&(m.fileBatchCompleted=!0)},s=function(){var e,i,a,r=m.uploadCache,n=0,s=m.cacheInitialPreview;m.fileBatchCompleted&&(s&&s.content&&(n=s.content.length),setTimeout(function(){var o=0===m.getFileStack(!0).length;if(m.showPreview){if(m.previewCache.set(r.content,r.config,r.tags,r.append),n){for(i=0;i<r.content.length;i++)a=i+n,s.content[a]=r.content[i],s.config.length&&(s.config[a]=r.config[i]),s.tags.length&&(s.tags[a]=r.tags[i]);m.initialPreview=t.cleanArray(s.content),m.initialPreviewConfig=t.cleanArray(s.config),m.initialPreviewThumbTags=t.cleanArray(s.tags)}else m.initialPreview=r.content,m.initialPreviewConfig=r.config,m.initialPreviewThumbTags=r.tags;m.cacheInitialPreview={},m.hasInitData&&(m._initPreview(),m._initPreviewActions())}m.unlock(o),o&&m._clearFileInput(),e=m.$preview.find(".file-preview-initial"),m.uploadAsync&&e.length&&(t.addCss(e,t.SORT_CSS),m._initSortable()),m._raise("filebatchuploadcomplete",[m.filestack,m._getExtraData()]),m.uploadCount=0,m.uploadStatus={},m.uploadLog=[],m._setProgress(101),m.ajaxAborted=!1},100))},c=function(s){r=m._getOutData(s),m.fileBatchCompleted=!1,a||(m.ajaxAborted=!1),m.showPreview&&(n.hasClass("file-preview-success")||(m._setThumbStatus(n,"Loading"),t.addCss(n,"file-uploading")),o.attr("disabled",!0),l.attr("disabled",!0)),a||m.lock(),m._raise("filepreupload",[r,w,i]),e.extend(!0,C,r),m._abort(C)&&(s.abort(),a||(m._setThumbStatus(n,"New"),n.removeClass("file-uploading"),o.removeAttr("disabled"),l.removeAttr("disabled"),m.unlock()),m._setProgressCancelled())},h=function(s,l,c){var h=m.showPreview&&n.attr("id")?n.attr("id"):w;r=m._getOutData(c,s),e.extend(!0,C,r),setTimeout(function(){t.isEmpty(s)||t.isEmpty(s.error)?(m.showPreview&&(m._setThumbStatus(n,"Success"),o.hide(),m._initUploadSuccess(s,n,a),m._setProgress(101,b)),m._raise("fileuploaded",[r,h,i]),a?f(i,h):m.updateStack(i,void 0)):(d=!0,m._showUploadError(s.error,C),m._setPreviewError(n,i,m.filestack[i],m.retryErrorUploads),m.retryErrorUploads||o.hide(),a&&f(i,h),m._setProgress(101,e("#"+h).find(".file-thumb-progress"),m.msgUploadError))},100)},p=function(){setTimeout(function(){m.showPreview&&(o.removeAttr("disabled"),l.removeAttr("disabled"),n.removeClass("file-uploading")),a?s():(m.unlock(!1),m._clearFileInput()),m._initSuccessThumbs()},100)},u=function(t,r,s){var l=m.ajaxOperations.uploadThumb,c=m._parseError(l,t,s,a&&m.filestack[i].name?m.filestack[i].name:null);d=!0,setTimeout(function(){a&&f(i,w),m.uploadStatus[w]=100,m._setPreviewError(n,i,m.filestack[i],m.retryErrorUploads),m.retryErrorUploads||o.hide(),e.extend(!0,C,m._getOutData(t)),m._setProgress(101,b,m.msgAjaxProgressError.replace("{operation}",l)),m._setProgress(101,e("#"+w).find(".file-thumb-progress"),m.msgUploadError),m._showUploadError(c,C)},100)},v.append(m.uploadFileAttr,m.filestack[i],m.filenames[i]),v.append("file_id",i),m._ajaxSubmit(c,h,p,u,w,i))},_uploadBatch:function(){var i,a,r,n,s,o=this,l=o.filestack,d=l.length,c=o.filestack.length>0||!e.isEmptyObject(o.uploadExtraData);o.formdata=new FormData,0!==d&&c&&!o._abort({})&&(s=function(){e.each(l,function(e){o.updateStack(e,void 0)}),o._clearFileInput()},i=function(i){o.lock();var a=o._getOutData(i);o.ajaxAborted=!1,o.showPreview&&o._getThumbs().each(function(){var i=e(this),a=i.find(".kv-file-upload"),r=i.find(".kv-file-remove");i.hasClass("file-preview-success")||(o._setThumbStatus(i,"Loading"),t.addCss(i,"file-uploading")),a.attr("disabled",!0),r.attr("disabled",!0)}),o._raise("filebatchpreupload",[a]),o._abort(a)&&(i.abort(),o._getThumbs().each(function(){var t=e(this),i=t.find(".kv-file-upload"),a=t.find(".kv-file-remove");t.hasClass("file-preview-loading")&&(o._setThumbStatus(t,"New"),t.removeClass("file-uploading")),i.removeAttr("disabled"),a.removeAttr("disabled")}),o._setProgressCancelled())},a=function(i,a,r){var n=o._getOutData(r,i),l=0,d=o._getThumbs(":not(.file-preview-success)"),c=t.isEmpty(i)||t.isEmpty(i.errorkeys)?[]:i.errorkeys;t.isEmpty(i)||t.isEmpty(i.error)?(o._raise("filebatchuploadsuccess",[n]),s(),o.showPreview?(d.each(function(){var t=e(this);o._setThumbStatus(t,"Success"),t.removeClass("file-uploading"),t.find(".kv-file-upload").hide().removeAttr("disabled")}),o._initUploadSuccess(i)):o.reset(),o._setProgress(101)):(o.showPreview&&(d.each(function(){var t=e(this),i=t.attr("data-fileindex");t.removeClass("file-uploading"),t.find(".kv-file-upload").removeAttr("disabled"),t.find(".kv-file-remove").removeAttr("disabled"),0===c.length||-1!==e.inArray(l,c)?(o._setPreviewError(t,i,o.filestack[i],o.retryErrorUploads),o.retryErrorUploads||(t.find(".kv-file-upload").hide(),o.updateStack(i,void 0))):(t.find(".kv-file-upload").hide(),o._setThumbStatus(t,"Success"),o.updateStack(i,void 0)),t.hasClass("file-preview-error")&&!o.retryErrorUploads||l++}),o._initUploadSuccess(i)),o._showUploadError(i.error,n,"filebatchuploaderror"),o._setProgress(101,o.$progress,o.msgUploadError))},n=function(){o.unlock(),o._initSuccessThumbs(),o._clearFileInput(),o._raise("filebatchuploadcomplete",[o.filestack,o._getExtraData()])},r=function(t,i,a){var r=o._getOutData(t),n=o.ajaxOperations.uploadBatch,s=o._parseError(n,t,a);o._showUploadError(s,r,"filebatchuploaderror"),o.uploadFileCount=d-1,o.showPreview&&(o._getThumbs().each(function(){var t=e(this),i=t.attr("data-fileindex");t.removeClass("file-uploading"),void 0!==o.filestack[i]&&o._setPreviewError(t)}),o._getThumbs().removeClass("file-uploading"),o._getThumbs(" .kv-file-upload").removeAttr("disabled"),o._getThumbs(" .kv-file-delete").removeAttr("disabled"),o._setProgress(101,o.$progress,o.msgAjaxProgressError.replace("{operation}",n)))},e.each(l,function(e,i){t.isEmpty(l[e])||o.formdata.append(o.uploadFileAttr,i,o.filenames[e])}),o._ajaxSubmit(i,a,n,r))},_uploadExtraOnly:function(){var e,i,a,r,n=this,s={};n.formdata=new FormData,n._abort(s)||(e=function(e){n.lock();var t=n._getOutData(e);n._raise("filebatchpreupload",[t]),n._setProgress(50),s.data=t,s.xhr=e,n._abort(s)&&(e.abort(),n._setProgressCancelled())},i=function(e,i,a){var r=n._getOutData(a,e);t.isEmpty(e)||t.isEmpty(e.error)?(n._raise("filebatchuploadsuccess",[r]),n._clearFileInput(),n._initUploadSuccess(e),n._setProgress(101)):n._showUploadError(e.error,r,"filebatchuploaderror")},a=function(){n.unlock(),n._clearFileInput(),n._raise("filebatchuploadcomplete",[n.filestack,n._getExtraData()])},r=function(e,t,i){var a=n._getOutData(e),r=n.ajaxOperations.uploadExtra,o=n._parseError(r,e,i);s.data=a,n._showUploadError(o,a,"filebatchuploaderror"),n._setProgress(101,n.$progress,n.msgAjaxProgressError.replace("{operation}",r))},n._ajaxSubmit(e,i,a,r))},_deleteFileIndex:function(i){var a=i.attr("data-fileindex"),r=this.reversePreviewOrder;"init_"===a.substring(0,5)&&(a=parseInt(a.replace("init_","")),this.initialPreview=t.spliceArray(this.initialPreview,a,r),this.initialPreviewConfig=t.spliceArray(this.initialPreviewConfig,a,r),this.initialPreviewThumbTags=t.spliceArray(this.initialPreviewThumbTags,a,r),this.getFrames().each(function(){var t=e(this),i=t.attr("data-fileindex");"init_"===i.substring(0,5)&&(i=parseInt(i.replace("init_","")))>a&&(i--,t.attr("data-fileindex","init_"+i))}),this.uploadAsync&&(this.cacheInitialPreview=this.getPreview()))},_initFileActions:function(){var i=this,a=i.$preview;i.showPreview&&(i._initZoomButton(),i.getFrames(" .kv-file-remove").each(function(){var r,n,s,o=e(this),l=o.closest(t.FRAMES),d=l.attr("id"),c=l.attr("data-fileindex");i._handler(o,"click",function(){if(!1===i._raise("filepreremove",[d,c])||!i._validateMinCount())return!1;r=l.hasClass("file-preview-error"),t.cleanMemory(l),l.fadeOut("slow",function(){t.cleanZoomCache(a.find("#zoom-"+d)),i.updateStack(c,void 0),i._clearObjects(l),l.remove(),d&&r&&i.$errorContainer.find('li[data-file-id="'+d+'"]').fadeOut("fast",function(){e(this).remove(),i._errorsExist()||i._resetErrors()}),i._clearFileInput();var o=i.getFileStack(!0),h=i.previewCache.count(),p=o.length,u=i.showPreview&&i.getFrames().length;0!==p||0!==h||u?(s=(n=h+p)>1?i._getMsgSelected(n):o[0]?i._getFileNames()[0]:"",i._setCaption(s)):i.reset(),i._raise("fileremoved",[d,c])})})}),i.getFrames(" .kv-file-upload").each(function(){var a=e(this);i._handler(a,"click",function(){var e=a.closest(t.FRAMES),r=e.attr("data-fileindex");i.$progress.hide(),e.hasClass("file-preview-error")&&!i.retryErrorUploads||i._uploadSingle(r,!1)})}))},_initPreviewActions:function(){var i=this,a=i.$preview,r=i.deleteExtraData||{},n=t.FRAMES+" .kv-file-remove",s=i.fileActionSettings,o=s.removeClass,l=s.removeErrorClass,d=function(){var e=i.isAjaxUpload?i.previewCache.count():i._inputFileCount();a.find(t.FRAMES).length||e||(i._setCaption(""),i.reset(),i.initialCaption="")};i._initZoomButton(),a.find(n).each(function(){var n,s,c,h=e(this),p=h.data("url")||i.deleteUrl,u=h.data("key");if(!t.isEmpty(p)&&void 0!==u){var f,m,g,v,w=h.closest(t.FRAMES),_=i.previewCache.data,b=w.attr("data-fileindex");b=parseInt(b.replace("init_","")),g=t.isEmpty(_.config)&&t.isEmpty(_.config[b])?null:_.config[b],"function"==typeof(v=t.isEmpty(g)||t.isEmpty(g.extra)?r:g.extra)&&(v=v()),m={id:h.attr("id"),key:u,extra:v},n=function(e){i.ajaxAborted=!1,i._raise("filepredelete",[u,e,v]),i._abort()?e.abort():(h.removeClass(l),t.addCss(w,"file-uploading"),t.addCss(h,"disabled "+o))},s=function(e,r,n){var s,c;if(!t.isEmpty(e)&&!t.isEmpty(e.error))return m.jqXHR=n,m.response=e,i._showError(e.error,m,"filedeleteerror"),w.removeClass("file-uploading"),h.removeClass("disabled "+o).addClass(l),void d();w.removeClass("file-uploading").addClass("file-deleted"),w.fadeOut("slow",function(){b=parseInt(w.attr("data-fileindex").replace("init_","")),i.previewCache.unset(b),i._deleteFileIndex(w),s=i.previewCache.count(),c=s>0?i._getMsgSelected(s):"",i._setCaption(c),i._raise("filedeleted",[u,n,v]),t.cleanZoomCache(a.find("#zoom-"+w.attr("id"))),i._clearObjects(w),w.remove(),d()})},c=function(e,t,a){var r=i.ajaxOperations.deleteThumb,n=i._parseError(r,e,a);m.jqXHR=e,m.response={},i._showError(n,m,"filedeleteerror"),w.removeClass("file-uploading"),h.removeClass("disabled "+o).addClass(l),d()},i._initAjaxSettings(),i._mergeAjaxCallback("beforeSend",n,"delete"),i._mergeAjaxCallback("success",s,"delete"),i._mergeAjaxCallback("error",c,"delete"),f=e.extend(!0,{},{url:p,type:"POST",dataType:"json",data:e.extend(!0,{},{key:u},v)},i._ajaxDeleteSettings),i._handler(h,"click",function(){if(!i._validateMinCount())return!1;i.ajaxAborted=!1,i._raise("filebeforedelete",[u,v]),i.ajaxAborted instanceof Promise?i.ajaxAborted.then(function(t){t||e.ajax(f)}):i.ajaxAborted||e.ajax(f)})}})},_hideFileIcon:function(){this.overwriteInitial&&this.$captionContainer.removeClass("icon-visible")},_showFileIcon:function(){t.addCss(this.$captionContainer,"icon-visible")},_getSize:function(t){var i,a,r,n=parseFloat(t),s=this.fileSizeGetter;return e.isNumeric(t)&&e.isNumeric(n)?("function"==typeof s?r=s(n):0===n?r="0.00 B":(i=Math.floor(Math.log(n)/Math.log(1024)),a=["B","KB","MB","GB","TB","PB","EB","ZB","YB"],r=1*(n/Math.pow(1024,i)).toFixed(2)+" "+a[i]),this._getLayoutTemplate("size").replace("{sizeText}",r)):""},_generatePreviewTemplate:function(i,a,r,n,s,o,l,d,c,h,p){var u,f=this,m=f.slug(r),g="",v="",w=(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)<400?f.previewSettingsSmall[i]||f.defaults.previewSettingsSmall[i]:f.previewSettings[i]||f.defaults.previewSettings[i],_=c||f._renderFileFooter(m,l,"auto",o),b=f._getPreviewIcon(r),C="type-default",y=b&&f.preferIconicPreview,x=b&&f.preferIconicZoomPreview;return w&&e.each(w,function(e,t){v+=e+":"+t+";"}),u=function(a,o,l,c){var u=l?"zoom-"+s:s,g=f._getPreviewTemplate(a),w=(d||"")+" "+c;return f.frameClass&&(w=f.frameClass+" "+w),l&&(w=w.replace(" "+t.SORT_CSS,"")),g=f._parseFilePreviewIcon(g,r),"text"===a&&(o=t.htmlEncode(o)),"object"!==i||n||e.each(f.defaults.fileTypeSettings,function(e,t){"object"!==e&&"other"!==e&&t(r,n)&&(C="type-"+e)}),g.setTokens({previewId:u,caption:m,frameClass:w,type:n,fileindex:h,typeCss:C,footer:_,data:o,template:p||i,style:v?'style="'+v+'"':""})},h=h||s.slice(s.lastIndexOf("-")+1),f.fileActionSettings.showZoom&&(g=u(x?"other":i,a,!0,"kv-zoom-thumb")),g="\n"+f._getLayoutTemplate("zoomCache").replace("{zoomContent}",g),u(y?"other":i,a,!1,"kv-preview-thumb")+g},_addToPreview:function(e,t){return this.reversePreviewOrder?e.prepend(t):e.append(t)},_previewDefault:function(i,a,r){var n=this.$preview;if(this.showPreview){var s,o=i?i.name:"",l=i?i.type:"",d=i.size||0,c=this.slug(o),h=!0===r&&!this.isAjaxUpload,p=t.objUrl.createObjectURL(i);this._clearDefaultPreview(),s=this._generatePreviewTemplate("other",p,o,l,a,h,d),this._addToPreview(n,s),this._setThumbAttr(a,c,d),!0===r&&this.isAjaxUpload&&this._setThumbStatus(e("#"+a),"Error")}},_previewFile:function(e,t,i,a,r,n){if(this.showPreview){var s,o=t?t.name:"",l=n.type,d=n.name,c=this._parseFileType(l,o),h=this.allowedPreviewTypes,p=this.allowedPreviewMimeTypes,u=this.$preview,f=t.size||0,m=h&&h.indexOf(c)>=0,g=p&&-1!==p.indexOf(l),v="text"===c||"html"===c||"image"===c?i.target.result:r;if("html"===c&&this.purifyHtml&&window.DOMPurify&&(v=window.DOMPurify.sanitize(v)),m||g){s=this._generatePreviewTemplate(c,v,o,l,a,!1,f),this._clearDefaultPreview(),this._addToPreview(u,s);var w=u.find("#"+a+" img");this._validateImageOrientation(w,t,a,d,l,f,v)}else this._previewDefault(t,a);this._setThumbAttr(a,d,f),this._initSortable()}},_setThumbAttr:function(t,i,a){var r=e("#"+t);r.length&&(a=a&&a>0?this._getSize(a):"",r.data({caption:i,size:a}))},_setInitThumbAttr:function(){var e,i,a,r,n=this.previewCache.data,s=this.previewCache.count();if(0!==s)for(var o=0;o<s;o++)e=n.config[o],r=this.previewInitId+"-init_"+o,i=t.ifSet("caption",e,t.ifSet("filename",e)),a=t.ifSet("size",e),this._setThumbAttr(r,i,a)},_slugDefault:function(e){return t.isEmpty(e)?"":String(e).replace(/[\[\]\/\{}:;#%=\(\)\*\+\?\\\^\$\|<>&"']/g,"_")},_updateFileDetails:function(e){var i=this.$element,a=this.getFileStack(),r=t.isIE(9)&&t.findFileName(i.val())||i[0].files[0]&&i[0].files[0].name||a.length&&a[0].name||"",n=this.slug(r),s=this.isAjaxUpload?a.length:e,o=this.previewCache.count()+s,l=1===s?n:this._getMsgSelected(o);this.isError?(this.$previewContainer.removeClass("file-thumb-loading"),this.$previewStatus.html(""),this.$captionContainer.removeClass("icon-visible")):this._showFileIcon(),this._setCaption(l,this.isError),this.$container.removeClass("file-input-new file-input-ajax-new"),1===arguments.length&&this._raise("fileselect",[e,n]),this.previewCache.count()&&this._initPreviewActions()},_setThumbStatus:function(e,t){if(this.showPreview){var i="indicator"+t,a=i+"Title",r="file-preview-"+t.toLowerCase(),n=e.find(".file-upload-indicator"),s=this.fileActionSettings;e.removeClass("file-preview-success file-preview-error file-preview-loading"),"Success"===t&&e.find(".file-drag-handle").remove(),n.html(s[i]),n.attr("title",s[a]),e.addClass(r),"Error"!==t||this.retryErrorUploads||e.find(".kv-file-upload").attr("disabled",!0)}},_setProgressCancelled:function(){this._setProgress(101,this.$progress,this.msgCancelled)},_setProgress:function(e,i,a){var r,n=Math.min(e,100),s=this.progressUploadThreshold,o=e<=100?this.progressTemplate:this.progressCompleteTemplate,l=n<100?this.progressTemplate:a?this.progressErrorTemplate:o;i=i||this.$progress,t.isEmpty(l)||(r=s&&n>s&&e<=100?l.setTokens({percent:s,status:this.msgUploadThreshold}):l.setTokens({percent:n,status:e>100?this.msgUploadEnd:n+"%"}),i.html(r),a&&i.find('[role="progressbar"]').html(a))},_setFileDropZoneTitle:function(){var e,i=this.$container.find(".file-drop-zone"),a=this.dropZoneTitle;this.isClickable&&(e=t.isEmpty(this.$element.attr("multiple"))?this.fileSingle:this.filePlural,a+=this.dropZoneClickTitle.replace("{files}",e)),i.find("."+this.dropZoneTitleClass).remove(),!this.showPreview||0===i.length||this.getFileStack().length>0||!this.dropZoneEnabled||!this.isAjaxUpload&&this.$element.files||(0===i.find(t.FRAMES).length&&t.isEmpty(this.defaultPreviewContent)&&i.prepend('<div class="'+this.dropZoneTitleClass+'">'+a+"</div>"),this.$container.removeClass("file-input-new"),t.addCss(this.$container,"file-input-ajax-new"))},_setAsyncUploadStatus:function(t,i,a){var r=0;this._setProgress(i,e("#"+t).find(".file-thumb-progress")),this.uploadStatus[t]=i,e.each(this.uploadStatus,function(e,t){r+=t}),this._setProgress(Math.floor(r/a))},_validateMinCount:function(){var e=this.isAjaxUpload?this.getFileStack().length:this._inputFileCount();return!(this.validateInitialCount&&this.minFileCount>0&&this._getFileCount(e-1)<this.minFileCount)||(this._noFilesError({}),!1)},_getFileCount:function(e){return this.validateInitialCount&&!this.overwriteInitial&&(e+=this.previewCache.count()),e},_getFileId:function(e){var t,i=this.generateFileId;return"function"==typeof i?i(e,event):e&&(t=String(e.webkitRelativePath||e.fileName||e.name||null))?e.size+"-"+t.replace(/[^0-9a-zA-Z_-]/gim,""):null},_getFileName:function(e){return e&&e.name?this.slug(e.name):void 0},_getFileIds:function(e){return this.fileids.filter(function(t){return e?void 0!==t:null!=t})},_getFileNames:function(e){return this.filenames.filter(function(t){return e?void 0!==t:null!=t})},_setPreviewError:function(e,t,i,a){void 0!==t&&this.updateStack(t,i),this.showPreview&&(!this.removeFromPreviewOnError||a?(this._setThumbStatus(e,"Error"),this._refreshUploadButton(e,a)):e.remove())},_refreshUploadButton:function(e,t){var i=e.find(".kv-file-upload"),a=this.fileActionSettings,r=a.uploadIcon,n=a.uploadTitle;i.length&&(t&&(r=a.uploadRetryIcon,n=a.uploadRetryTitle),i.attr("title",n).html(r))},_checkDimensions:function(e,i,a,r,n,s,o){var l,d,c,h=this[("Small"===i?"min":"max")+"Image"+s];!t.isEmpty(h)&&a.length&&(c=a[0],d="Width"===s?c.naturalWidth||c.width:c.naturalHeight||c.height,("Small"===i?d>=h:d<=h)||(l=this["msgImage"+s+i].setTokens({name:n,size:h}),this._showUploadError(l,o),this._setPreviewError(r,e,null)))},_getExifObj:function(e){var t=null;try{t=window.piexif?window.piexif.load(e):null}catch(e){t=null}return t||this._log("Error loading the piexif.js library."),t},_validateImageOrientation:function(e,i,a,r,n,s,o){var l,d;(d=(l=e.length&&this.autoOrientImage?this._getExifObj(o):null)?l["0th"][piexif.ImageIFD.Orientation]:null)?(t.setImageOrientation(e,this.$preview.find("#zoom-"+a+" img"),d),this._raise("fileimageoriented",{$img:e,file:i}),this._validateImage(a,r,n,s,o,l)):this._validateImage(a,r,n,s,o,l)},_validateImage:function(t,i,a,r,n,s){var o,l,d,c=this,h=c.$preview,p=h.find("#"+t),u=p.attr("data-fileindex"),f=p.find("img");i=i||"Untitled",f.one("load",function(){l=p.width(),d=h.width(),l>d&&f.css("width","100%"),o={ind:u,id:t},c._checkDimensions(u,"Small",f,p,i,"Width",o),c._checkDimensions(u,"Small",f,p,i,"Height",o),c.resizeImage||(c._checkDimensions(u,"Large",f,p,i,"Width",o),c._checkDimensions(u,"Large",f,p,i,"Height",o)),c._raise("fileimageloaded",[t]),c.loadedImages.push({ind:u,img:f,thumb:p,pid:t,typ:a,siz:r,validated:!1,imgData:n,exifObj:s}),p.data("exif",s),c._validateAllImages()}).one("error",function(){c._raise("fileimageloaderror",[t])}).each(function(){this.complete?e(this).trigger("load"):this.error&&e(this).trigger("error")})},_validateAllImages:function(){var e,t,i,a={val:0},r=this.loadedImages.length,n=this.resizeIfSizeMoreThan;if(r===this.totalImagesCount&&(this._raise("fileimagesloaded"),this.resizeImage))for(e=0;e<this.loadedImages.length;e++)(t=this.loadedImages[e]).validated||((i=t.siz)&&i>1e3*n&&this._getResizedImage(t,a,r),this.loadedImages[e].validated=!0)},_getResizedImage:function(i,a,r){var n,s,o,l,d,c,h=this,p=e(i.img)[0],u=p.naturalWidth,f=p.naturalHeight,m=1,g=h.maxImageWidth||u,v=h.maxImageHeight||f,w=!(!u||!f),_=h.imageCanvas,b=h.imageCanvasContext,C=i.typ,y=i.pid,x=i.ind,T=i.thumb,E=i.exifObj;if(d=function(e,t,i){h.isAjaxUpload?h._showUploadError(e,t,i):h._showError(e,t,i),h._setPreviewError(T,x)},h.filestack[x]&&w&&!(u<=g&&f<=v)||(w&&h.filestack[x]&&h._raise("fileimageresized",[y,x]),a.val++,a.val===r&&h._raise("fileimagesresized"),w)){C=C||h.resizeDefaultImageType,s=u>g,o=f>v,m="width"===h.resizePreference?s?g/u:o?v/f:1:o?v/f:s?g/u:1,h._resetCanvas(),u*=m,f*=m,_.width=u,_.height=f;try{b.drawImage(p,0,0,u,f),l=_.toDataURL(C,h.resizeQuality),E&&(c=window.piexif.dump(E),l=window.piexif.insert(c,l)),n=t.dataURI2Blob(l),h.filestack[x]=n,h._raise("fileimageresized",[y,x]),a.val++,a.val===r&&h._raise("fileimagesresized",[void 0,void 0]),n instanceof Blob||d(h.msgImageResizeError,{id:y,index:x},"fileimageresizeerror")}catch(e){a.val++,a.val===r&&h._raise("fileimagesresized",[void 0,void 0]),d(h.msgImageResizeException.replace("{errors}",e.message),{id:y,index:x},"fileimageresizeexception")}}else d(h.msgImageResizeError,{id:y,index:x},"fileimageresizeerror")},_initBrowse:function(e){var i=this.$element;this.showBrowse?this.$btnFile=e.find(".btn-file").append(i):(i.appendTo(e).attr("tabindex",-1),t.addCss(i,"file-no-browse"))},_initClickable:function(){var i,a,r=this;r.isClickable&&(i=r.$dropZone,r.isAjaxUpload||(a=r.$preview.find(".file-default-preview")).length&&(i=a),t.addCss(i,"clickable"),i.attr("tabindex",-1),r._handler(i,"click",function(t){var a=e(t.target);e(r.elErrorContainer+":visible").length||a.parents(".file-preview-thumbnails").length&&!a.parents(".file-default-preview").length||(r.$element.data("zoneClicked",!0).trigger("click"),i.blur())}))},_initCaption:function(){var e=this.initialCaption||"";return this.overwriteInitial||t.isEmpty(e)?(this.$caption.val(""),!1):(this._setCaption(e),!0)},_setCaption:function(i,a){var r,n,s,o,l,d=this.getFileStack();if(this.$caption.length){if(this.$captionContainer.removeClass("icon-visible"),a)r=e("<div>"+this.msgValidationError+"</div>").text(),l=(o=d.length)?1===o&&d[0]?this._getFileNames()[0]:this._getMsgSelected(o):this._getMsgSelected(this.msgNo),n=t.isEmpty(i)?l:i,s='<span class="'+this.msgValidationErrorClass+'">'+this.msgValidationErrorIcon+"</span>";else{if(t.isEmpty(i))return;n=r=e("<div>"+i+"</div>").text(),s=this._getLayoutTemplate("fileIcon")}this.$captionContainer.addClass("icon-visible"),this.$caption.attr("title",r).val(n),this.$captionIcon.html(s)}},_createContainer:function(){var t={class:"file-input file-input-new"+(this.rtl?" kv-rtl":"")},i=e(document.createElement("div")).attr(t).html(this._renderMain());return i.insertBefore(this.$element),this._initBrowse(i),this.theme&&i.addClass("theme-"+this.theme),i},_refreshContainer:function(){var e=this.$container;this.$element.insertAfter(e),e.html(this._renderMain()),this._initBrowse(e),this._validateDisabled()},_validateDisabled:function(){this.$caption.attr({readonly:this.isDisabled})},_renderMain:function(){var e=this.dropZoneEnabled?" file-drop-zone":"file-drop-disabled",t=this.showClose?this._getLayoutTemplate("close"):"",i=this.showPreview?this._getLayoutTemplate("preview").setTokens({class:this.previewClass,dropClass:e}):"",a=this.isDisabled?this.captionClass+" file-caption-disabled":this.captionClass,r=this.captionTemplate.setTokens({class:a+" kv-fileinput-caption"});return this.mainTemplate.setTokens({class:this.mainClass+(!this.showBrowse&&this.showCaption?" no-browse":""),preview:i,close:t,caption:r,upload:this._renderButton("upload"),remove:this._renderButton("remove"),cancel:this._renderButton("cancel"),browse:this._renderButton("browse")})},_renderButton:function(e){var i=this._getLayoutTemplate("btnDefault"),a=this[e+"Class"],r=this[e+"Title"],n=this[e+"Icon"],s=this[e+"Label"],o=this.isDisabled?" disabled":"",l="button";switch(e){case"remove":if(!this.showRemove)return"";break;case"cancel":if(!this.showCancel)return"";a+=" kv-hidden";break;case"upload":if(!this.showUpload)return"";this.isAjaxUpload&&!this.isDisabled?i=this._getLayoutTemplate("btnLink").replace("{href}",this.uploadUrl):l="submit";break;case"browse":if(!this.showBrowse)return"";i=this._getLayoutTemplate("btnBrowse");break;default:return""}return a+="browse"===e?" btn-file":" fileinput-"+e+" fileinput-"+e+"-button",t.isEmpty(s)||(s=' <span class="'+this.buttonLabelClass+'">'+s+"</span>"),i.setTokens({type:l,css:a,title:r,status:o,icon:n,label:s})},_renderThumbProgress:function(){return'<div class="file-thumb-progress kv-hidden">'+this.progressTemplate.setTokens({percent:"0",status:this.msgUploadBegin})+"</div>"},_renderFileFooter:function(e,i,a,r){var n,s=this.fileActionSettings,o=s.showRemove,l=s.showDrag,d=s.showUpload,c=s.showZoom,h=this._getLayoutTemplate("footer"),p=this._getLayoutTemplate("indicator"),u=r?s.indicatorError:s.indicatorNew,f=r?s.indicatorErrorTitle:s.indicatorNewTitle,m=p.setTokens({indicator:u,indicatorTitle:f});return i=this._getSize(i),n=this.isAjaxUpload?h.setTokens({actions:this._renderFileActions(d,!1,o,c,l,!1,!1,!1),caption:e,size:i,width:a,progress:this._renderThumbProgress(),indicator:m}):h.setTokens({actions:this._renderFileActions(!1,!1,!1,c,l,!1,!1,!1),caption:e,size:i,width:a,progress:"",indicator:m}),n=t.replaceTags(n,this.previewThumbTags)},_renderFileActions:function(e,t,i,a,r,n,s,o,l,d,c){if(!(e||t||i||a||r))return"";var h,p=!1===s?"":' data-url="'+s+'"',u=!1===o?"":' data-key="'+o+'"',f="",m="",g="",v="",w="",_=this._getLayoutTemplate("actions"),b=this.fileActionSettings,C=this.otherActionButtons.setTokens({dataKey:u,key:o}),y=n?b.removeClass+" disabled":b.removeClass;return i&&(f=this._getLayoutTemplate("actionDelete").setTokens({removeClass:y,removeIcon:b.removeIcon,removeTitle:b.removeTitle,dataUrl:p,dataKey:u,key:o})),e&&(m=this._getLayoutTemplate("actionUpload").setTokens({uploadClass:b.uploadClass,uploadIcon:b.uploadIcon,uploadTitle:b.uploadTitle})),t&&(g=(g=this._getLayoutTemplate("actionDownload").setTokens({downloadClass:b.downloadClass,downloadIcon:b.downloadIcon,downloadTitle:b.downloadTitle,downloadUrl:d||this.initialPreviewDownloadUrl})).setTokens({filename:c,key:o})),a&&(v=this._getLayoutTemplate("actionZoom").setTokens({zoomClass:b.zoomClass,zoomIcon:b.zoomIcon,zoomTitle:b.zoomTitle})),r&&l&&(h="drag-handle-init "+b.dragClass,w=this._getLayoutTemplate("actionDrag").setTokens({dragClass:h,dragTitle:b.dragTitle,dragIcon:b.dragIcon})),_.setTokens({delete:f,upload:m,download:g,zoom:v,drag:w,other:C})},_browse:function(e){e&&e.isDefaultPrevented()||!this._raise("filebrowse")||(this.isError&&!this.isAjaxUpload&&this.clear(),this.$captionContainer.focus())},_filterDuplicate:function(e,t,i){var a=this._getFileId(e);a&&i&&i.indexOf(a)>-1||(i||(i=[]),t.push(e),i.push(a))},_change:function(i){var a=this;if(!a.changeTriggered){var r,n,s,o,l,d,c,h,p,u,f,m=a.$element,g=arguments.length>1,v=a.isAjaxUpload,w=[],_=g?arguments[1]:m.get(0).files,b=!v&&t.isEmpty(m.attr("multiple"))?1:a.maxFileCount,C=a.filestack.length,y=t.isEmpty(m.attr("multiple"))&&C>0,x=a._getFileIds();if(a.reader=null,a._resetUpload(),a._hideFileIcon(),a.dropZoneEnabled&&a.$container.find(".file-drop-zone ."+a.dropZoneTitleClass).remove(),v?e.each(_,function(e,t){a._filterDuplicate(t,w,x)}):(_=i.target&&void 0===i.target.files?i.target.value?[{name:i.target.value.replace(/^.+\\/,"")}]:[]:i.target.files||{},w=_),t.isEmpty(w)||0===w.length)return v||a.clear(),void a._raise("fileselectnone");if(a._resetErrors(),n=w.length,r=a._getFileCount(v?a.getFileStack().length+n:n),b>0&&r>b){if(!a.autoReplace||n>b)return s=a.autoReplace&&n>b?n:r,o=b,f=a.msgFilesTooMany.replace("{m}",o).replace("{n}",s),a.isError=(l=f,d=null,c=null,h=null,p=e.extend(!0,{},a._getOutData({},{},_),{id:c,index:h}),u={id:c,index:h,file:d,files:_},v?a._showUploadError(l,p):a._showError(l,u)),a.$captionContainer.removeClass("icon-visible"),a._setCaption("",!0),void a.$container.removeClass("file-input-new file-input-ajax-new");r>b&&a._resetPreviewThumbs(v)}else!v||y?(a._resetPreviewThumbs(!1),y&&a.clearStack()):!v||0!==C||a.previewCache.count()&&!a.overwriteInitial||a._resetPreviewThumbs(!0);a.isPreviewable?a.readFiles(w):a._updateFileDetails(1)}},_abort:function(t){var i;return this.ajaxAborted&&"object"==typeof this.ajaxAborted&&void 0!==this.ajaxAborted.message?((i=e.extend(!0,{},this._getOutData(),t)).abortData=this.ajaxAborted.data||{},i.abortMessage=this.ajaxAborted.message,this._setProgress(101,this.$progress,this.msgCancelled),this._showUploadError(this.ajaxAborted.message,i,"filecustomerror"),this.cancel(),!0):!!this.ajaxAborted},_resetFileStack:function(){var i=this,a=0,r=[],n=[],s=[];i._getThumbs().each(function(){var o=e(this),l=o.attr("data-fileindex"),d=i.filestack[l],c=o.attr("id");"-1"!==l&&-1!==l&&(void 0!==d?(r[a]=d,n[a]=i._getFileName(d),s[a]=i._getFileId(d),o.attr({id:i.previewInitId+"-"+a,"data-fileindex":a}),a++):o.attr({id:"uploaded-"+t.uniqId(),"data-fileindex":"-1"}),i.$preview.find("#zoom-"+c).attr({id:"zoom-"+o.attr("id"),"data-fileindex":o.attr("data-fileindex")}))}),i.filestack=r,i.filenames=n,i.fileids=s},_isFileSelectionValid:function(e){return e=e||0,this.required&&!this.getFilesCount()?(this.$errorContainer.html(""),this._showUploadError(this.msgFileRequired),!1):!(this.minFileCount>0&&this._getFileCount(e)<this.minFileCount)||(this._noFilesError({}),!1)},clearStack:function(){return this.filestack=[],this.filenames=[],this.fileids=[],this.$element},updateStack:function(e,t){return this.filestack[e]=t,this.filenames[e]=this._getFileName(t),this.fileids[e]=t&&this._getFileId(t)||null,this.$element},addToStack:function(e){return this.filestack.push(e),this.filenames.push(this._getFileName(e)),this.fileids.push(this._getFileId(e)),this.$element},getFileStack:function(e){return this.filestack.filter(function(t){return e?void 0!==t:null!=t})},getFilesCount:function(){var e=this.isAjaxUpload?this.getFileStack().length:this._inputFileCount();return this._getFileCount(e)},readFiles:function(i){this.reader=new FileReader;var a,r=this,n=r.$element,s=r.$preview,o=r.reader,l=r.$previewContainer,d=r.$previewStatus,c=r.msgLoading,h=r.msgProgress,p=r.previewInitId,u=i.length,f=r.fileTypeSettings,m=r.filestack.length,g=r.allowedFileTypes,v=g?g.length:0,w=r.allowedFileExtensions,_=t.isEmpty(w)?"":w.join(", "),b=r.maxFilePreviewSize&&parseFloat(r.maxFilePreviewSize),C=s.length&&(!b||isNaN(b)),y=function(t,n,s,o){var l,d=e.extend(!0,{},r._getOutData({},{},i),{id:s,index:o}),c={id:s,index:o,file:n,files:i};r._previewDefault(n,s,!0),r.isAjaxUpload?(r.addToStack(void 0),setTimeout(function(){a(o+1)},100)):u=0,r._initFileActions(),(l=e("#"+s)).find(".kv-file-upload").hide(),r.removeFromPreviewOnError&&l.remove(),r.isError=r.isAjaxUpload?r._showUploadError(t,d):r._showError(t,c),r._updateFileDetails(u)};r.loadedImages=[],r.totalImagesCount=0,e.each(i,function(e,t){var i=r.fileTypeSettings.image;i&&i(t.type)&&r.totalImagesCount++}),(a=function(x){if(t.isEmpty(n.attr("multiple"))&&(u=1),x>=u)return r.isAjaxUpload&&r.filestack.length>0?r._raise("filebatchselected",[r.getFileStack()]):r._raise("filebatchselected",[i]),l.removeClass("file-thumb-loading"),void d.html("");var T,E,S,k,F,P,I,A,D,z,$,j,U=p+"-"+(m+x),B=i[x],R=f.text,O=f.image,L=f.html,M=B&&B.name?r.slug(B.name):"",Z=(B&&B.size||0)/1e3,N="",H=B?t.objUrl.createObjectURL(B):null,W=0,q="",V=0,K=function(){var e=h.setTokens({index:x+1,files:u,percent:50,name:M});setTimeout(function(){d.html(e),r._updateFileDetails(u),a(x+1)},100),r._raise("fileloaded",[B,U,x,o])};if(B){if(v>0)for(E=0;E<v;E++)P=g[E],I=r.msgFileTypes[P]||P,q+=0===E?I:", "+I;if(!1!==M){if(0===M.length)return S=r.msgInvalidFileName.replace("{name}",t.htmlEncode(B.name,"[unknown]")),void y(S,B,U,x);if(t.isEmpty(w)||(N=new RegExp("\\.("+w.join("|")+")$","i")),T=Z.toFixed(2),r.maxFileSize>0&&Z>r.maxFileSize)return S=r.msgSizeTooLarge.setTokens({name:M,size:T,maxSize:r.maxFileSize}),void y(S,B,U,x);if(null!==r.minFileSize&&Z<=t.getNum(r.minFileSize))return S=r.msgSizeTooSmall.setTokens({name:M,size:T,minSize:r.minFileSize}),void y(S,B,U,x);if(!t.isEmpty(g)&&t.isArray(g)){for(E=0;E<g.length;E+=1)k=g[E],W+=(A=f[k])&&"function"==typeof A&&A(B.type,B.name)?1:0;if(0===W)return S=r.msgInvalidFileType.setTokens({name:M,types:q}),void y(S,B,U,x)}if(0===W&&!t.isEmpty(w)&&t.isArray(w)&&!t.isEmpty(N)&&(F=t.compare(M,N),0===(W+=t.isEmpty(F)?0:F.length)))return S=r.msgInvalidFileExtension.setTokens({name:M,extensions:_}),void y(S,B,U,x);if(!r.showPreview)return r.isAjaxUpload&&r.addToStack(B),setTimeout(function(){a(x+1),r._updateFileDetails(u)},100),void r._raise("fileloaded",[B,U,x,o]);if(!C&&Z>b)return r.addToStack(B),l.addClass("file-thumb-loading"),r._previewDefault(B,U),r._initFileActions(),r._updateFileDetails(u),void a(x+1);s.length&&void 0!==FileReader?(D=R(B.type,M),z=L(B.type,M),$=O(B.type,M),d.html(c.replace("{index}",x+1).replace("{files}",u)),l.addClass("file-thumb-loading"),o.onerror=function(e){r._errorHandler(e,M)},o.onload=function(i){var a,n,s,l,d,c,h,p,u=[];if(n={name:M,type:B.type},e.each(f,function(e,t){"object"!==e&&"other"!==e&&t(B.type,M)&&V++}),0===V){for(s=new Uint8Array(i.target.result),E=0;E<s.length;E++)l=s[E].toString(16),u.push(l);if(a=u.join("").toLowerCase().substring(0,8),c=t.getMimeType(a,"",""),t.isEmpty(c)&&(d=t.arrayBuffer2String(o.result),c=t.isSvg(d)?"image/svg+xml":t.getMimeType(a,d,B.type)),n={name:M,type:c},D=R(c,""),z=L(c,""),$=O(c,""),(j=D||z)||$)return h=j,(p=new FileReader).onerror=function(e){r._errorHandler(e,M)},p.onload=function(e){r._previewFile(x,B,e,U,H,n),r._initFileActions(),K()},void(h?p.readAsText(B,r.textEncoding):p.readAsDataURL(B))}r._previewFile(x,B,i,U,H,n),r._initFileActions(),K()},o.onprogress=function(e){if(e.lengthComputable){var t=e.loaded/e.total*100,i=Math.ceil(t);S=h.setTokens({index:x+1,files:u,percent:i,name:M}),setTimeout(function(){d.html(S)},100)}},D||z?o.readAsText(B,r.textEncoding):$?o.readAsDataURL(B):o.readAsArrayBuffer(B)):(r._previewDefault(B,U),setTimeout(function(){a(x+1),r._updateFileDetails(u)},100),r._raise("fileloaded",[B,U,x,o])),r.addToStack(B)}else a(x+1)}})(0),r._updateFileDetails(u,!1)},lock:function(){return this._resetErrors(),this.disable(),this.showRemove&&this.$container.find(".fileinput-remove").hide(),this.showCancel&&this.$container.find(".fileinput-cancel").show(),this._raise("filelock",[this.filestack,this._getExtraData()]),this.$element},unlock:function(e){return void 0===e&&(e=!0),this.enable(),this.showCancel&&this.$container.find(".fileinput-cancel").hide(),this.showRemove&&this.$container.find(".fileinput-remove").show(),e&&this._resetFileStack(),this._raise("fileunlock",[this.filestack,this._getExtraData()]),this.$element},cancel:function(){var t,i=this,a=i.ajaxRequests,r=a.length;if(r>0)for(t=0;t<r;t+=1)i.cancelling=!0,a[t].abort();return i._setProgressCancelled(),i._getThumbs().each(function(){var t=e(this),a=t.attr("data-fileindex");t.removeClass("file-uploading"),void 0!==i.filestack[a]&&(t.find(".kv-file-upload").removeClass("disabled").removeAttr("disabled"),t.find(".kv-file-remove").removeClass("disabled").removeAttr("disabled")),i.unlock()}),i.$element},clear:function(){var i,a=this;if(a._raise("fileclear"))return a.$btnUpload.removeAttr("disabled"),a._getThumbs().find("video,audio,img").each(function(){t.cleanMemory(e(this))}),a._clearFileInput(),a._resetUpload(),a.clearStack(),a._resetErrors(!0),a._hasInitialPreview()?(a._showFileIcon(),a._resetPreview(),a._initPreviewActions(),a.$container.removeClass("file-input-new")):(a._getThumbs().each(function(){a._clearObjects(e(this))}),a.isAjaxUpload&&(a.previewCache.data={}),a.$preview.html(""),i=!a.overwriteInitial&&a.initialCaption.length>0?a.initialCaption:"",a.$caption.attr("title","").val(i),t.addCss(a.$container,"file-input-new"),a._validateDefaultPreview()),0===a.$container.find(t.FRAMES).length&&(a._initCaption()||a.$captionContainer.removeClass("icon-visible")),a._hideFileIcon(),a._raise("filecleared"),a.$captionContainer.focus(),a._setFileDropZoneTitle(),a.$element},reset:function(){if(this._raise("filereset"))return this._resetPreview(),this.$container.find(".fileinput-filename").text(""),t.addCss(this.$container,"file-input-new"),(this.getFrames().length||this.dropZoneEnabled)&&this.$container.removeClass("file-input-new"),this.clearStack(),this.formdata={},this._setFileDropZoneTitle(),this.$element},disable:function(){return this.isDisabled=!0,this._raise("filedisabled"),this.$element.attr("disabled","disabled"),this.$container.find(".kv-fileinput-caption").addClass("file-caption-disabled"),this.$container.find(".fileinput-remove, .fileinput-upload, .file-preview-frame button").attr("disabled",!0),t.addCss(this.$container.find(".btn-file"),"disabled"),this._initDragDrop(),this.$element},enable:function(){return this.isDisabled=!1,this._raise("fileenabled"),this.$element.removeAttr("disabled"),this.$container.find(".kv-fileinput-caption").removeClass("file-caption-disabled"),this.$container.find(".fileinput-remove, .fileinput-upload, .file-preview-frame button").removeAttr("disabled"),this.$container.find(".btn-file").removeClass("disabled"),this._initDragDrop(),this.$element},upload:function(){var i,a,r,n=this.getFileStack().length,s=!e.isEmptyObject(this._getExtraData());if(this.isAjaxUpload&&!this.isDisabled&&this._isFileSelectionValid(n))if(this._resetUpload(),0!==n||s)if(this.$progress.show(),this.uploadCount=0,this.uploadStatus={},this.uploadLog=[],this.lock(),this._setProgress(2),0===n&&s)this._uploadExtraOnly();else{if(r=this.filestack.length,this.hasInitData=!1,!this.uploadAsync)return this._uploadBatch(),this.$element;for(a=this._getOutData(),this._raise("filebatchpreupload",[a]),this.fileBatchCompleted=!1,this.uploadCache={content:[],config:[],tags:[],append:!0},this.uploadAsyncCount=this.getFileStack().length,i=0;i<r;i++)this.uploadCache.content[i]=null,this.uploadCache.config[i]=null,this.uploadCache.tags[i]=null;for(this.$preview.find(".file-preview-initial").removeClass(t.SORT_CSS),this._initSortable(),this.cacheInitialPreview=this.getPreview(),i=0;i<r;i++)this.filestack[i]&&this._uploadSingle(i,!0)}else this._showUploadError(this.msgUploadEmpty)},destroy:function(){var t=this.$form,i=this.$container,a=this.$element,r=this.namespace;return e(document).off(r),e(window).off(r),t&&t.length&&t.off(r),this.isAjaxUpload&&this._clearFileInput(),this._cleanup(),this._initPreviewCache(),a.insertBefore(i).off(r).removeData(),i.off().remove(),a},refresh:function(i){var a=this.$element;return i="object"!=typeof i||t.isEmpty(i)?this.options:e.extend(!0,{},this.options,i),this._init(i,!0),this._listen(),a},zoom:function(e){var i=this._getFrame(e),a=this.$modal;i&&(t.initModal(a),a.html(this._getModalContent()),this._setZoomContent(i),a.modal("show"),this._initZoomButtons())},getExif:function(e){var t=this._getFrame(e);return t&&t.data("exif")||null},getFrames:function(i){var a;return i=i||"",a=this.$preview.find(t.FRAMES+i),this.reversePreviewOrder&&(a=e(a.get().reverse())),a},getPreview:function(){return{content:this.initialPreview,config:this.initialPreviewConfig,tags:this.initialPreviewThumbTags}}},e.fn.fileinput=function(a){if(t.hasFileAPISupport()||t.isIE(9)){var r=Array.apply(null,arguments),n=[];switch(r.shift(),this.each(function(){var s,o=e(this),l=o.data("fileinput"),d="object"==typeof a&&a,c=d.theme||o.data("theme"),h={},p={},u=d.language||o.data("language")||e.fn.fileinput.defaults.language||"en";l||(c&&(p=e.fn.fileinputThemes[c]||{}),"en"===u||t.isEmpty(e.fn.fileinputLocales[u])||(h=e.fn.fileinputLocales[u]||{}),s=e.extend(!0,{},e.fn.fileinput.defaults,p,e.fn.fileinputLocales.en,h,d,o.data()),l=new i(this,s),o.data("fileinput",l)),"string"==typeof a&&n.push(l[a].apply(l,r))}),n.length){case 0:return this;case 1:return n[0];default:return n}}},e.fn.fileinput.defaults={language:"en",showCaption:!0,showBrowse:!0,showPreview:!0,showRemove:!0,showUpload:!0,showCancel:!0,showClose:!0,showUploadedThumbs:!0,browseOnZoneClick:!1,autoReplace:!1,autoOrientImage:!1,required:!1,rtl:!1,hideThumbnailContent:!1,generateFileId:null,previewClass:"",captionClass:"",frameClass:"krajee-default",mainClass:"file-caption-main",mainTemplate:null,purifyHtml:!0,fileSizeGetter:null,initialCaption:"",initialPreview:[],initialPreviewDelimiter:"*$$*",initialPreviewAsData:!1,initialPreviewFileType:"image",initialPreviewConfig:[],initialPreviewThumbTags:[],previewThumbTags:{},initialPreviewShowDelete:!0,initialPreviewDownloadUrl:"",removeFromPreviewOnError:!1,deleteUrl:"",deleteExtraData:{},overwriteInitial:!0,previewZoomButtonIcons:{prev:'<i class="glyphicon glyphicon-triangle-left"></i>',next:'<i class="glyphicon glyphicon-triangle-right"></i>',toggleheader:'<i class="glyphicon glyphicon-resize-vertical"></i>',fullscreen:'<i class="glyphicon glyphicon-fullscreen"></i>',borderless:'<i class="glyphicon glyphicon-resize-full"></i>',close:'<i class="glyphicon glyphicon-remove"></i>'},previewZoomButtonClasses:{prev:"btn btn-navigate",next:"btn btn-navigate",toggleheader:"btn btn-sm btn-kv btn-default btn-outline-secondary",fullscreen:"btn btn-sm btn-kv btn-default btn-outline-secondary",borderless:"btn btn-sm btn-kv btn-default btn-outline-secondary",close:"btn btn-sm btn-kv btn-default btn-outline-secondary"},previewTemplates:{},previewContentTemplates:{},preferIconicPreview:!1,preferIconicZoomPreview:!1,allowedPreviewTypes:void 0,allowedPreviewMimeTypes:null,allowedFileTypes:null,allowedFileExtensions:null,defaultPreviewContent:null,customLayoutTags:{},customPreviewTags:{},previewFileIcon:'<i class="glyphicon glyphicon-file"></i>',previewFileIconClass:"file-other-icon",previewFileIconSettings:{},previewFileExtSettings:{},buttonLabelClass:"hidden-xs",browseIcon:'<i class="glyphicon glyphicon-folder-open"></i>&nbsp;',browseClass:"btn btn-primary",removeIcon:'<i class="glyphicon glyphicon-trash"></i>',removeClass:"btn btn-default btn-secondary",cancelIcon:'<i class="glyphicon glyphicon-ban-circle"></i>',cancelClass:"btn btn-default btn-secondary",uploadIcon:'<i class="glyphicon glyphicon-upload"></i>',uploadClass:"btn btn-default btn-secondary",uploadUrl:null,uploadUrlThumb:null,uploadAsync:!0,uploadExtraData:{},zoomModalHeight:480,minImageWidth:null,minImageHeight:null,maxImageWidth:null,maxImageHeight:null,resizeImage:!1,resizePreference:"width",resizeQuality:.92,resizeDefaultImageType:"image/jpeg",resizeIfSizeMoreThan:0,minFileSize:0,maxFileSize:0,maxFilePreviewSize:25600,minFileCount:0,maxFileCount:0,validateInitialCount:!1,msgValidationErrorClass:"text-danger",msgValidationErrorIcon:'<i class="glyphicon glyphicon-exclamation-sign"></i> ',msgErrorClass:"file-error-message",progressThumbClass:"progress-bar bg-success progress-bar-success progress-bar-striped active",progressClass:"progress-bar bg-success progress-bar-success progress-bar-striped active",progressCompleteClass:"progress-bar bg-success progress-bar-success",progressErrorClass:"progress-bar bg-danger progress-bar-danger",progressUploadThreshold:99,previewFileType:"image",elCaptionContainer:null,elCaptionText:null,elPreviewContainer:null,elPreviewImage:null,elPreviewStatus:null,elErrorContainer:null,errorCloseButton:t.closeButton("kv-error-close"),slugCallback:null,dropZoneEnabled:!0,dropZoneTitleClass:"file-drop-zone-title",fileActionSettings:{},otherActionButtons:"",textEncoding:"UTF-8",ajaxSettings:{},ajaxDeleteSettings:{},showAjaxErrorDetails:!0,mergeAjaxCallbacks:!1,mergeAjaxDeleteCallbacks:!1,retryErrorUploads:!0,reversePreviewOrder:!1},e.fn.fileinputLocales.en={fileSingle:"file",filePlural:"files",browseLabel:"Browse &hellip;",removeLabel:"Remove",removeTitle:"Clear selected files",cancelLabel:"Cancel",cancelTitle:"Abort ongoing upload",uploadLabel:"Upload",uploadTitle:"Upload selected files",msgNo:"No",msgNoFilesSelected:"No files selected",msgCancelled:"Cancelled",msgPlaceholder:"Select {files}...",msgZoomModalHeading:"Detailed Preview",msgFileRequired:"You must select a file to upload.",msgSizeTooSmall:'File "{name}" (<b>{size} KB</b>) is too small and must be larger than <b>{minSize} KB</b>.',msgSizeTooLarge:'File "{name}" (<b>{size} KB</b>) exceeds maximum allowed upload size of <b>{maxSize} KB</b>.',msgFilesTooLess:"You must select at least <b>{n}</b> {files} to upload.",msgFilesTooMany:"Number of files selected for upload <b>({n})</b> exceeds maximum allowed limit of <b>{m}</b>.",msgFileNotFound:'File "{name}" not found!',msgFileSecured:'Security restrictions prevent reading the file "{name}".',msgFileNotReadable:'File "{name}" is not readable.',msgFilePreviewAborted:'File preview aborted for "{name}".',msgFilePreviewError:'An error occurred while reading the file "{name}".',msgInvalidFileName:'Invalid or unsupported characters in file name "{name}".',msgInvalidFileType:'Invalid type for file "{name}". Only "{types}" files are supported.',msgInvalidFileExtension:'Invalid extension for file "{name}". Only "{extensions}" files are supported.',msgFileTypes:{image:"image",html:"HTML",text:"text",video:"video",audio:"audio",flash:"flash",pdf:"PDF",object:"object"},msgUploadAborted:"The file upload was aborted",msgUploadThreshold:"Processing...",msgUploadBegin:"Initializing...",msgUploadEnd:"Done",msgUploadEmpty:"No valid data available for upload.",msgUploadError:"Error",msgValidationError:"Validation Error",msgLoading:"Loading file {index} of {files} &hellip;",msgProgress:"Loading file {index} of {files} - {name} - {percent}% completed.",msgSelected:"{n} {files} selected",msgFoldersNotAllowed:"Drag & drop files only! {n} folder(s) dropped were skipped.",msgImageWidthSmall:'Width of image file "{name}" must be at least {size} px.',msgImageHeightSmall:'Height of image file "{name}" must be at least {size} px.',msgImageWidthLarge:'Width of image file "{name}" cannot exceed {size} px.',msgImageHeightLarge:'Height of image file "{name}" cannot exceed {size} px.',msgImageResizeError:"Could not get the image dimensions to resize.",msgImageResizeException:"Error while resizing the image.<pre>{errors}</pre>",msgAjaxError:"Something went wrong with the {operation} operation. Please try again later!",msgAjaxProgressError:"{operation} failed",ajaxOperations:{deleteThumb:"file delete",uploadThumb:"file upload",uploadBatch:"batch file upload",uploadExtra:"form data upload"},dropZoneTitle:"Drag & drop files here &hellip;",dropZoneClickTitle:"<br>(or click to select {files})",previewZoomButtonTitles:{prev:"View previous file",next:"View next file",toggleheader:"Toggle header",fullscreen:"Toggle full screen",borderless:"Toggle borderless mode",close:"Close detailed preview"},usePdfRenderer:function(){return!!navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/i)},pdfRendererUrl:"",pdfRendererTemplate:'<iframe class="kv-preview-data file-preview-pdf" src="{renderer}?file={data}" {style}></iframe>'},e.fn.fileinput.Constructor=i,e(document).ready(function(){var t=e("input.file[type=file]");t.length&&t.fileinput()})});
 
 /***/ }),
 
-/***/ 1562:
+/***/ 1305:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
- * ClockPicker v0.0.7 (http://weareoutman.github.io/clockpicker/)
- * Copyright 2014 Wang Shenwei.
- * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/gh-pages/LICENSE)
- */
-!function(){function t(t){return document.createElementNS(p,t)}function i(t){return(10>t?"0":"")+t}function e(t){var i=++m+"";return t?t+i:i}function s(s,r){function p(t,i){var e=u.offset(),s=/^touch/.test(t.type),o=e.left+b,n=e.top+b,p=(s?t.originalEvent.touches[0]:t).pageX-o,h=(s?t.originalEvent.touches[0]:t).pageY-n,k=Math.sqrt(p*p+h*h),v=!1;if(!i||!(g-y>k||k>g+y)){t.preventDefault();var m=setTimeout(function(){c.addClass("clockpicker-moving")},200);l&&u.append(x.canvas),x.setHand(p,h,!i,!0),a.off(d).on(d,function(t){t.preventDefault();var i=/^touch/.test(t.type),e=(i?t.originalEvent.touches[0]:t).pageX-o,s=(i?t.originalEvent.touches[0]:t).pageY-n;(v||e!==p||s!==h)&&(v=!0,x.setHand(e,s,!1,!0))}),a.off(f).on(f,function(t){a.off(f),t.preventDefault();var e=/^touch/.test(t.type),s=(e?t.originalEvent.changedTouches[0]:t).pageX-o,l=(e?t.originalEvent.changedTouches[0]:t).pageY-n;(i||v)&&s===p&&l===h&&x.setHand(s,l),"hours"===x.currentView?x.toggleView("minutes",A/2):r.autoclose&&(x.minutesView.addClass("clockpicker-dial-out"),setTimeout(function(){x.done()},A/2)),u.prepend(j),clearTimeout(m),c.removeClass("clockpicker-moving"),a.off(d)})}}var h=n(V),u=h.find(".clockpicker-plate"),v=h.find(".clockpicker-hours"),m=h.find(".clockpicker-minutes"),T=h.find(".clockpicker-am-pm-block"),C="INPUT"===s.prop("tagName"),H=C?s:s.find("input"),P=s.find(".input-group-addon"),x=this;if(this.id=e("cp"),this.element=s,this.options=r,this.isAppended=!1,this.isShown=!1,this.currentView="hours",this.isInput=C,this.input=H,this.addon=P,this.popover=h,this.plate=u,this.hoursView=v,this.minutesView=m,this.amPmBlock=T,this.spanHours=h.find(".clockpicker-span-hours"),this.spanMinutes=h.find(".clockpicker-span-minutes"),this.spanAmPm=h.find(".clockpicker-span-am-pm"),this.amOrPm="PM",r.twelvehour){{var S=['<div class="clockpicker-am-pm-block">','<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-am-button">',"AM</button>",'<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-pm-button">',"PM</button>","</div>"].join("");n(S)}n('<button type="button" class="btn btn-sm btn-default clockpicker-button am-button">AM</button>').on("click",function(){x.amOrPm="AM",n(".clockpicker-span-am-pm").empty().append("AM")}).appendTo(this.amPmBlock),n('<button type="button" class="btn btn-sm btn-default clockpicker-button pm-button">PM</button>').on("click",function(){x.amOrPm="PM",n(".clockpicker-span-am-pm").empty().append("PM")}).appendTo(this.amPmBlock)}r.autoclose||n('<button type="button" class="btn btn-sm btn-default btn-block clockpicker-button">'+r.donetext+"</button>").click(n.proxy(this.done,this)).appendTo(h),"top"!==r.placement&&"bottom"!==r.placement||"top"!==r.align&&"bottom"!==r.align||(r.align="left"),"left"!==r.placement&&"right"!==r.placement||"left"!==r.align&&"right"!==r.align||(r.align="top"),h.addClass(r.placement),h.addClass("clockpicker-align-"+r.align),this.spanHours.click(n.proxy(this.toggleView,this,"hours")),this.spanMinutes.click(n.proxy(this.toggleView,this,"minutes")),H.on("focus.clockpicker click.clockpicker",n.proxy(this.show,this)),P.on("click.clockpicker",n.proxy(this.toggle,this));var E,D,I,B,z=n('<div class="clockpicker-tick"></div>');if(r.twelvehour)for(E=1;13>E;E+=1)D=z.clone(),I=E/6*Math.PI,B=g,D.css("font-size","120%"),D.css({left:b+Math.sin(I)*B-y,top:b-Math.cos(I)*B-y}),D.html(0===E?"00":E),v.append(D),D.on(k,p);else for(E=0;24>E;E+=1){D=z.clone(),I=E/6*Math.PI;var O=E>0&&13>E;B=O?w:g,D.css({left:b+Math.sin(I)*B-y,top:b-Math.cos(I)*B-y}),O&&D.css("font-size","120%"),D.html(0===E?"00":E),v.append(D),D.on(k,p)}for(E=0;60>E;E+=5)D=z.clone(),I=E/30*Math.PI,D.css({left:b+Math.sin(I)*g-y,top:b-Math.cos(I)*g-y}),D.css("font-size","120%"),D.html(i(E)),m.append(D),D.on(k,p);if(u.on(k,function(t){0===n(t.target).closest(".clockpicker-tick").length&&p(t,!0)}),l){var j=h.find(".clockpicker-canvas"),L=t("svg");L.setAttribute("class","clockpicker-svg"),L.setAttribute("width",M),L.setAttribute("height",M);var U=t("g");U.setAttribute("transform","translate("+b+","+b+")");var W=t("circle");W.setAttribute("class","clockpicker-canvas-bearing"),W.setAttribute("cx",0),W.setAttribute("cy",0),W.setAttribute("r",2);var N=t("line");N.setAttribute("x1",0),N.setAttribute("y1",0);var X=t("circle");X.setAttribute("class","clockpicker-canvas-bg"),X.setAttribute("r",y);var Y=t("circle");Y.setAttribute("class","clockpicker-canvas-fg"),Y.setAttribute("r",3.5),U.appendChild(N),U.appendChild(X),U.appendChild(Y),U.appendChild(W),L.appendChild(U),j.append(L),this.hand=N,this.bg=X,this.fg=Y,this.bearing=W,this.g=U,this.canvas=j}o(this.options.init)}function o(t){t&&"function"==typeof t&&t()}var c,n=__webpack_provided_window_dot_jQuery,r=n(window),a=n(document),p="http://www.w3.org/2000/svg",l="SVGAngle"in window&&function(){var t,i=document.createElement("div");return i.innerHTML="<svg/>",t=(i.firstChild&&i.firstChild.namespaceURI)==p,i.innerHTML="",t}(),h=function(){var t=document.createElement("div").style;return"transition"in t||"WebkitTransition"in t||"MozTransition"in t||"msTransition"in t||"OTransition"in t}(),u="ontouchstart"in window,k="mousedown"+(u?" touchstart":""),d="mousemove.clockpicker"+(u?" touchmove.clockpicker":""),f="mouseup.clockpicker"+(u?" touchend.clockpicker":""),v=navigator.vibrate?"vibrate":navigator.webkitVibrate?"webkitVibrate":null,m=0,b=100,g=80,w=54,y=13,M=2*b,A=h?350:1,V=['<div class="popover clockpicker-popover">','<div class="arrow"></div>','<div class="popover-title">','<span class="clockpicker-span-hours text-primary"></span>'," : ",'<span class="clockpicker-span-minutes"></span>','<span class="clockpicker-span-am-pm"></span>',"</div>",'<div class="popover-content">','<div class="clockpicker-plate">','<div class="clockpicker-canvas"></div>','<div class="clockpicker-dial clockpicker-hours"></div>','<div class="clockpicker-dial clockpicker-minutes clockpicker-dial-out"></div>',"</div>",'<span class="clockpicker-am-pm-block">',"</span>","</div>","</div>"].join("");s.DEFAULTS={"default":"",fromnow:0,placement:"bottom",align:"left",donetext:"完成",autoclose:!1,twelvehour:!1,vibrate:!0},s.prototype.toggle=function(){this[this.isShown?"hide":"show"]()},s.prototype.locate=function(){var t=this.element,i=this.popover,e=t.offset(),s=t.outerWidth(),o=t.outerHeight(),c=this.options.placement,n=this.options.align,r={};switch(i.show(),c){case"bottom":r.top=e.top+o;break;case"right":r.left=e.left+s;break;case"top":r.top=e.top-i.outerHeight();break;case"left":r.left=e.left-i.outerWidth()}switch(n){case"left":r.left=e.left;break;case"right":r.left=e.left+s-i.outerWidth();break;case"top":r.top=e.top;break;case"bottom":r.top=e.top+o-i.outerHeight()}i.css(r)},s.prototype.show=function(){if(!this.isShown){o(this.options.beforeShow);var t=this;this.isAppended||(c=n(document.body).append(this.popover),r.on("resize.clockpicker"+this.id,function(){t.isShown&&t.locate()}),this.isAppended=!0);var e=((this.input.prop("value")||this.options["default"]||"")+"").split(":");if("now"===e[0]){var s=new Date(+new Date+this.options.fromnow);e=[s.getHours(),s.getMinutes()]}this.hours=+e[0]||0,this.minutes=+e[1]||0,this.spanHours.html(i(this.hours)),this.spanMinutes.html(i(this.minutes)),this.toggleView("hours"),this.locate(),this.isShown=!0,a.on("click.clockpicker."+this.id+" focusin.clockpicker."+this.id,function(i){var e=n(i.target);0===e.closest(t.popover).length&&0===e.closest(t.addon).length&&0===e.closest(t.input).length&&t.hide()}),a.on("keyup.clockpicker."+this.id,function(i){27===i.keyCode&&t.hide()}),o(this.options.afterShow)}},s.prototype.hide=function(){o(this.options.beforeHide),this.isShown=!1,a.off("click.clockpicker."+this.id+" focusin.clockpicker."+this.id),a.off("keyup.clockpicker."+this.id),this.popover.hide(),o(this.options.afterHide)},s.prototype.toggleView=function(t,i){var e=!1;"minutes"===t&&"visible"===n(this.hoursView).css("visibility")&&(o(this.options.beforeHourSelect),e=!0);var s="hours"===t,c=s?this.hoursView:this.minutesView,r=s?this.minutesView:this.hoursView;this.currentView=t,this.spanHours.toggleClass("text-primary",s),this.spanMinutes.toggleClass("text-primary",!s),r.addClass("clockpicker-dial-out"),c.css("visibility","visible").removeClass("clockpicker-dial-out"),this.resetClock(i),clearTimeout(this.toggleViewTimer),this.toggleViewTimer=setTimeout(function(){r.css("visibility","hidden")},A),e&&o(this.options.afterHourSelect)},s.prototype.resetClock=function(t){var i=this.currentView,e=this[i],s="hours"===i,o=Math.PI/(s?6:30),c=e*o,n=s&&e>0&&13>e?w:g,r=Math.sin(c)*n,a=-Math.cos(c)*n,p=this;l&&t?(p.canvas.addClass("clockpicker-canvas-out"),setTimeout(function(){p.canvas.removeClass("clockpicker-canvas-out"),p.setHand(r,a)},t)):this.setHand(r,a)},s.prototype.setHand=function(t,e,s,o){var c,r=Math.atan2(t,-e),a="hours"===this.currentView,p=Math.PI/(a||s?6:30),h=Math.sqrt(t*t+e*e),u=this.options,k=a&&(g+w)/2>h,d=k?w:g;if(u.twelvehour&&(d=g),0>r&&(r=2*Math.PI+r),c=Math.round(r/p),r=c*p,u.twelvehour?a?0===c&&(c=12):(s&&(c*=5),60===c&&(c=0)):a?(12===c&&(c=0),c=k?0===c?12:c:0===c?0:c+12):(s&&(c*=5),60===c&&(c=0)),this[this.currentView]!==c&&v&&this.options.vibrate&&(this.vibrateTimer||(navigator[v](10),this.vibrateTimer=setTimeout(n.proxy(function(){this.vibrateTimer=null},this),100))),this[this.currentView]=c,this[a?"spanHours":"spanMinutes"].html(i(c)),!l)return void this[a?"hoursView":"minutesView"].find(".clockpicker-tick").each(function(){var t=n(this);t.toggleClass("active",c===+t.html())});o||!a&&c%5?(this.g.insertBefore(this.hand,this.bearing),this.g.insertBefore(this.bg,this.fg),this.bg.setAttribute("class","clockpicker-canvas-bg clockpicker-canvas-bg-trans")):(this.g.insertBefore(this.hand,this.bg),this.g.insertBefore(this.fg,this.bg),this.bg.setAttribute("class","clockpicker-canvas-bg"));var f=Math.sin(r)*d,m=-Math.cos(r)*d;this.hand.setAttribute("x2",f),this.hand.setAttribute("y2",m),this.bg.setAttribute("cx",f),this.bg.setAttribute("cy",m),this.fg.setAttribute("cx",f),this.fg.setAttribute("cy",m)},s.prototype.done=function(){o(this.options.beforeDone),this.hide();var t=this.input.prop("value"),e=i(this.hours)+":"+i(this.minutes);this.options.twelvehour&&(e+=this.amOrPm),this.input.prop("value",e),e!==t&&(this.input.triggerHandler("change"),this.isInput||this.element.trigger("change")),this.options.autoclose&&this.input.trigger("blur"),o(this.options.afterDone)},s.prototype.remove=function(){this.element.removeData("clockpicker"),this.input.off("focus.clockpicker click.clockpicker"),this.addon.off("click.clockpicker"),this.isShown&&this.hide(),this.isAppended&&(r.off("resize.clockpicker"+this.id),this.popover.remove())},n.fn.clockpicker=function(t){var i=Array.prototype.slice.call(arguments,1);return this.each(function(){var e=n(this),o=e.data("clockpicker");if(o)"function"==typeof o[t]&&o[t].apply(o,i);else{var c=n.extend({},s.DEFAULTS,e.data(),"object"==typeof t&&t);e.data("clockpicker",new s(e,c))}})}}();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(529)))
+ * bootstrap-fileinput v4.5.1
+ * http://plugins.krajee.com/file-input
+ *
+ * Font Awesome icon theme configuration for bootstrap-fileinput. Requires font awesome assets to be loaded.
+ *
+ * Author: Kartik Visweswaran
+ * Copyright: 2014 - 2018, Kartik Visweswaran, Krajee.com
+ *
+ * Licensed under the BSD 3-Clause
+ * https://github.com/kartik-v/bootstrap-fileinput/blob/master/LICENSE.md
+ */!function(a){"use strict";a.fn.fileinputThemes.fa={fileActionSettings:{removeIcon:'<i class="fa fa-trash"></i>',uploadIcon:'<i class="fa fa-upload"></i>',uploadRetryIcon:'<i class="fa fa-repeat"></i>',downloadIcon:'<i class="fa fa-download"></i>',zoomIcon:'<i class="fa fa-search-plus"></i>',dragIcon:'<i class="fa fa-arrows"></i>',indicatorNew:'<i class="fa fa-plus-circle text-warning"></i>',indicatorSuccess:'<i class="fa fa-check-circle text-success"></i>',indicatorError:'<i class="fa fa-exclamation-circle text-danger"></i>',indicatorLoading:'<i class="fa fa-hourglass text-muted"></i>'},layoutTemplates:{fileIcon:'<i class="fa fa-file kv-caption-icon"></i> '},previewZoomButtonIcons:{prev:'<i class="fa fa-caret-left fa-lg"></i>',next:'<i class="fa fa-caret-right fa-lg"></i>',toggleheader:'<i class="fa fa-fw fa-arrows-v"></i>',fullscreen:'<i class="fa fa-fw fa-arrows-alt"></i>',borderless:'<i class="fa fa-fw fa-external-link"></i>',close:'<i class="fa fa-fw fa-remove"></i>'},previewFileIcon:'<i class="fa fa-file"></i>',browseIcon:'<i class="fa fa-folder-open"></i>',removeIcon:'<i class="fa fa-trash"></i>',cancelIcon:'<i class="fa fa-ban"></i>',uploadIcon:'<i class="fa fa-upload"></i>',msgValidationErrorIcon:'<i class="fa fa-exclamation-circle"></i> '}}(__webpack_provided_window_dot_jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 1563:
+/***/ 1306:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1066,180 +885,862 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row pickers" }, [
+    _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-lg-6" },
+        { staticClass: "col-md-12" },
         [
           _c(
             "card",
-            { attrs: { title: "<i class='ti-pin'></i> Bootstrap TouchSpin" } },
+            {
+              attrs: {
+                title: "<i class='fa fa-fw ti-move'></i> General Elements"
+              }
+            },
             [
-              _c("div", { staticClass: "box-body" }, [
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo1" } }, [_vm._v("Postfix")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      id: "demo1",
-                      type: "text",
-                      value: "55",
-                      name: "demo1"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo2" } }, [_vm._v("Prefix")]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        id: "demo2",
-                        type: "text",
-                        value: "0",
-                        name: "demo2"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo_vertical" } }, [
-                    _vm._v(
-                      "\n                            Vertical button alignment\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo_vertical",
-                        type: "text",
-                        value: "",
-                        name: "demo_vertical"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo_vertical2" } }, [
-                    _vm._v(
-                      "\n                            Vertical buttons with custom icons\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo_vertical2",
-                        type: "text",
-                        value: "",
-                        name: "demo_vertical2"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo3" } }, [
-                    _vm._v(
-                      "\n                            Init with empty value\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo3",
-                        type: "text",
-                        value: "",
-                        name: "demo3"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo3_21" } }, [
-                    _vm._v(
-                      "\n                            Value attribute is not set (applying settings.initval)\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      attrs: {
-                        id: "demo3_21",
-                        type: "text",
-                        value: "",
-                        name: "demo3_21"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo4" } }, [
-                    _vm._v(
-                      "\n                            Button postfix (small)\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      staticClass: "input-sm",
-                      attrs: {
-                        id: "demo4",
-                        type: "text",
-                        value: "",
-                        name: "demo4"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo4_2" } }, [
-                    _vm._v(
-                      "\n                            Button postfix (large)\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("input", {
-                      staticClass: "form-control input-lg",
-                      attrs: {
-                        id: "demo4_2",
-                        type: "text",
-                        value: "",
-                        name: "demo4_2"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", { attrs: { for: "demo5" } }, [
-                    _vm._v(
-                      "\n                            Button group\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("div", { staticClass: "input-group" }, [
+              _c(
+                "form",
+                { staticClass: "form-horizontal", attrs: { role: "form" } },
+                [
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "input-text" }
+                        },
+                        [_vm._v("Input text")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
                       _c("input", {
                         staticClass: "form-control",
                         attrs: {
-                          id: "demo5",
                           type: "text",
-                          name: "demo5",
-                          value: "50"
+                          id: "input-text",
+                          placeholder: "Input text"
                         }
                       })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "inputPassword" }
+                        },
+                        [_vm._v("Password")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "password",
+                          id: "inputPassword",
+                          placeholder: "Password"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            " control-label float-md-right txt_media1",
+                          attrs: { for: "input-text-disabled" }
+                        },
+                        [_vm._v("Disabled")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          id: "input-text-disabled",
+                          placeholder: "Input text",
+                          disabled: ""
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "color" }
+                        },
+                        [_vm._v("Color")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9 form_control" }, [
+                      _c("input", {
+                        staticClass: "form-control form_control",
+                        attrs: { type: "color", id: "color" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "url" }
+                        },
+                        [_vm._v("Url")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "url",
+                          id: "url",
+                          placeholder: "URL",
+                          value: "http://getbootstrap.com"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right txt_media1",
+                          attrs: { for: "range" }
+                        },
+                        [_vm._v("Range")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control ",
+                        attrs: { type: "range", id: "range", value: "50" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right m-t-ng-8 txt_media1"
+                        },
+                        [_vm._v("Radio Buttons")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-radio-group", {
+                          staticClass: "inline_radio",
+                          attrs: { options: _vm.options, stacked: "" }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right m-t-ng-8 txt_media1"
+                        },
+                        [_vm._v("Checkbox")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-checkbox-group", {
+                          attrs: { stacked: "", options: _vm.stacked_check }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Inline Radio\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-radio-group", {
+                          staticClass: "inlineRadio",
+                          attrs: { options: _vm.radios }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Inline Checkbox\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-9" },
+                      [
+                        _c("b-form-checkbox-group", {
+                          staticClass: "inline_check",
+                          attrs: { options: _vm.check }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group has-success" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "form-control-label float-md-right text-success txt_media1",
+                          attrs: { for: "input-text-has-success" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Success\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control brdr_success",
+                        attrs: { type: "text", id: "input-text-has-success" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group has-warning" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label float-md-right text-warning txt_media1",
+                          attrs: { for: "input-text-has-warning" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Warning\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control brdr_warn",
+                        attrs: { type: "text", id: "input-text-has-warning" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group has-error" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "control-label text-danger float-md-right txt_media1",
+                          attrs: { for: "input-text-has-error" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Error\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control brdr_danger",
+                        attrs: { type: "text", id: "input-text-has-error" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [_vm._v("Input Size")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control input-sm ipt_size",
+                        attrs: { type: "text", placeholder: "input-sm" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control ipt_size1 input-md",
+                        attrs: { type: "text", placeholder: "input-md" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control input-lg ipt_size2",
+                        attrs: { type: "text", placeholder: "input-lg" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Input Group\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "span",
+                            {
+                              staticClass: "input-group-text bg-white",
+                              attrs: { id: "basic-addon1" }
+                            },
+                            [_vm._v("@")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            placeholder: "Username",
+                            "aria-label": "Username",
+                            "aria-describedby": "basic-addon1"
+                          }
+                        })
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text", placeholder: "Currency" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group-append" }, [
+                          _c(
+                            "span",
+                            { staticClass: "input-group-text bg-white" },
+                            [_vm._v(".00")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: " control-label float-md-right txt_media"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "input-group" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "span",
+                            { staticClass: "input-group-text bg-white" },
+                            [_vm._v("$")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text", placeholder: "Currency" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group-append" }, [
+                          _c(
+                            "span",
+                            { staticClass: "input-group-text bg-white" },
+                            [_vm._v(".00")]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-6 m-b-10" }, [
+                          _c("div", { staticClass: "input-group" }, [
+                            _c("div", { staticClass: "input-group-prepend" }, [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-text bg-white" },
+                                [_c("b-form-checkbox")],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-6 m-b-10" }, [
+                          _c("div", { staticClass: "input-group" }, [
+                            _c("div", { staticClass: "input-group-prepend" }, [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-text bg-white" },
+                                [
+                                  _c("b-form-radio", {
+                                    attrs: { checked: "false" }
+                                  })
+                                ],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: { type: "text" }
+                            })
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-prepend" },
+                                [
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass: "btn btn-warning",
+                                      attrs: { type: "button" }
+                                    },
+                                    [_vm._v("Go!")]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              }),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "input-group-append" }, [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass: "btn btn-warning",
+                                    attrs: { type: "button" }
+                                  },
+                                  [_vm._v("Go!")]
+                                )
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: " control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c(
+                                "div",
+                                { staticClass: "input-group-prepend" },
+                                [
+                                  _c(
+                                    "b-dropdown",
+                                    {
+                                      attrs: { text: "Action", variant: "info" }
+                                    },
+                                    [
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("another action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("something else here")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-divider"),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _c("a", { attrs: { href: "#" } }, [
+                                          _vm._v("seperated link here")
+                                        ])
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-6 m-b-10" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group input_height" },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "text" }
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "input-group-append" },
+                                [
+                                  _c(
+                                    "b-dropdown",
+                                    {
+                                      attrs: { text: "Action", variant: "info" }
+                                    },
+                                    [
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("another action")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _vm._v("something else here")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-divider"),
+                                      _vm._v(" "),
+                                      _c("b-dropdown-item-button", [
+                                        _c("a", { attrs: { href: "#" } }, [
+                                          _vm._v("seperated link here")
+                                        ])
+                                      ])
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c(
+                        "label",
+                        {
+                          staticClass: "control-label float-md-right txt_media1"
+                        },
+                        [
+                          _vm._v(
+                            "\n                                Text Area\n                            "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("textarea", {
+                        staticClass: "form-control resize_vertical",
+                        attrs: { rows: "4", placeholder: "Basic" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right txt_media"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("textarea", {
+                        staticClass: "form-control resize_vertical",
+                        attrs: { rows: "4", disabled: "" }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row form-group" }, [
+                    _c("div", { staticClass: "col-md-3" }, [
+                      _c("label", {
+                        staticClass: "control-label float-md-right"
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("textarea", {
+                        staticClass: "form-control noresize",
+                        attrs: { rows: "4", placeholder: "No resize" }
+                      })
+                    ])
+                  ])
+                ]
+              )
+            ]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title:
+                  "<i class='fa fa-fw ti-pencil'></i> Grid sizing of Form Elements"
+              }
+            },
+            [
+              _c("form", [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-3" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-4" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-5" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-3" }, [
+                    _c("textarea", {
+                      staticClass: "form-control resize_vertical"
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-4" }, [
+                    _c("textarea", {
+                      staticClass: "form-control resize_vertical"
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-5" }, [
+                    _c("textarea", {
+                      staticClass: "form-control resize_vertical"
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-3" }, [
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("Select")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-4" }, [
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("Select")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-5" }, [
+                    _c("select", { staticClass: "form-control" }, [
+                      _c("option", [_vm._v("Select")])
                     ])
                   ])
                 ])
@@ -1252,99 +1753,246 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "col-lg-6" },
+        { staticClass: "col-md-6" },
         [
           _c(
             "card",
             {
               attrs: {
-                title: "<i class=ti-alarm-clock'></i> Clock Face Picker"
+                title:
+                  "<i class='fa fa-fw ti-pencil'></i> Height Sizing of Input Groups"
               }
             },
             [
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticClass: "control-label", attrs: { for: "t1" } },
-                  [
-                    _vm._v(
-                      "\n                        Default clock\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control input-small",
-                  attrs: {
-                    id: "t1",
-                    value: "2:30 PM",
-                    "data-format": "hh:mm A",
-                    type: "text"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticClass: "control-label", attrs: { for: "t2" } },
-                  [_vm._v("Button")]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group" }, [
-                  _c("input", {
-                    staticClass: "form-control input-small",
-                    attrs: {
-                      type: "text",
-                      id: "t2",
-                      value: "14:30",
-                      readonly: ""
-                    }
-                  }),
-                  _vm._v(" "),
+              _c("form", [
+                _c("div", { staticClass: "row" }, [
                   _c(
-                    "button",
-                    {
-                      staticClass: "btn input-group-append",
-                      attrs: { type: "button", id: "toggle-btn" }
-                    },
-                    [_c("i", { staticClass: "fa fa-fw fa-clock-o" })]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c(
-                  "label",
-                  { staticClass: "control-label", attrs: { for: "input-a" } },
-                  [
-                    _vm._v(
-                      "\n                        Clock picker\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group form-inline" }, [
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      id: "input-a",
-                      value: "",
-                      "data-default": "20:48"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn input-group-append bg-primary",
-                      attrs: { type: "button", id: "button-a" }
-                    },
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
                     [
-                      _vm._v(
-                        "\n                            Pick your time\n                        "
-                      )
+                      _c("div", { staticClass: "input-group input-group-lg" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-fw ti-user",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-lg" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [_c("b-form-checkbox")],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-lg" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("b-form-radio", {
+                                attrs: { checked: "false" }
+                              })
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group mb-2" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-fw ti-user",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group mb-2" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [_c("b-form-checkbox")],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group mb-2" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("b-form-radio", {
+                                attrs: { checked: "false" }
+                              })
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-sm" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-fw ti-user",
+                                attrs: { "aria-hidden": "true" }
+                              })
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-sm" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [_c("b-form-checkbox")],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-12 col-lg-4 col-12 m-t-10" },
+                    [
+                      _c("div", { staticClass: "input-group input-group-sm" }, [
+                        _c("div", { staticClass: "input-group-prepend" }, [
+                          _c(
+                            "div",
+                            { staticClass: "input-group-text bg-white" },
+                            [
+                              _c("b-form-radio", {
+                                attrs: { checked: "false" }
+                              })
+                            ],
+                            1
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: { type: "text" }
+                        })
+                      ])
                     ]
                   )
                 ])
@@ -1356,7 +2004,314 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "background-overlay" })
+    _c("div", { staticClass: "row file-input-section" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-12" },
+        [
+          _c(
+            "card",
+            {
+              attrs: {
+                title:
+                  "<i class='fa fa-fw ti-download'></i> Advanced File Input"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-20" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-20", type: "file" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "alert alert-info small m-t-10 alert_pad mt-2 mt-sm-0"
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Display the widget as a single block button\n                        "
+                      )
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-21" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-21", type: "file", accept: "image/*" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Show only image files for selection & preview. Control button labels, styles,\n                            and icons for the Pick Image, upload, and delete buttons.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-22" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: {
+                      id: "input-22",
+                      type: "file",
+                      accept: "text/plain",
+                      "data-preview-file-type": "text",
+                      "data-preview-class": "bg-warning"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Preview section control. Change preview background and display only text files\n                            content within the preview window.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8 " }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-23" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: {
+                      id: "input-23",
+                      type: "file",
+                      "data-show-preview": "false"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Advanced customization using templates. For example, Hide file preview\n                            thumbnails.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-40" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-40", type: "file" }
+                  }),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-warning btn-modify",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Modify")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Using plugin methods to alter input at runtime. For example, click the Modify\n                            button to disable the plugin and change plugin options.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-41" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-41", type: "file" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Allow only image and video file types to be uploaded. You can configure the\n                            condition for validating the file types using\n                            "
+                    ),
+                    _c("code", [_vm._v("fileTypeSettings")]),
+                    _vm._v(" .\n                        ")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-42" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-42", type: "file" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Allow only specific( jpg, gif, png, txt ) file extensions.\n                        "
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-sm-8" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label txt_media",
+                      attrs: { for: "input-43" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Select File\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "file-loading",
+                    attrs: { id: "input-43", type: "file" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "help-block",
+                    attrs: { idfirst: "errorBlock43" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4" }, [
+                  _c("div", { staticClass: "alert alert-info small m-t-10" }, [
+                    _vm._v(
+                      "\n                            Disable preview and customize your own error container and messages.\n                        "
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -1365,28 +2320,26 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2c317c59", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-6360cc14", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 465:
+/***/ 441:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1552)
-  __webpack_require__(1554)
-  __webpack_require__(1556)
-  __webpack_require__(1558)
+  __webpack_require__(1298)
+  __webpack_require__(1301)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1560)
+var __vue_script__ = __webpack_require__(1303)
 /* template */
-var __vue_template__ = __webpack_require__(1563)
+var __vue_template__ = __webpack_require__(1306)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -1403,7 +2356,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/pickers.vue"
+Component.options.__file = "resources/components/pages/form-elements.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1412,9 +2365,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2c317c59", Component.options)
+    hotAPI.createRecord("data-v-6360cc14", Component.options)
   } else {
-    hotAPI.reload("data-v-2c317c59", Component.options)
+    hotAPI.reload("data-v-6360cc14", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1426,7 +2379,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 529:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11798,19 +12751,19 @@ return jQuery;
 
 /***/ }),
 
-/***/ 531:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(532)
+  __webpack_require__(531)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(534)
+var __vue_script__ = __webpack_require__(533)
 /* template */
-var __vue_template__ = __webpack_require__(535)
+var __vue_template__ = __webpack_require__(534)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11850,13 +12803,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 532:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(533);
+var content = __webpack_require__(532);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -11877,7 +12830,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 533:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -11892,7 +12845,7 @@ exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transfo
 
 /***/ }),
 
-/***/ 534:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11937,7 +12890,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 535:
+/***/ 534:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -11999,19 +12952,10 @@ if (false) {
 
 /***/ }),
 
-/***/ 710:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 745:
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*
- *  Bootstrap TouchSpin - v3.1.1
- *  A mobile and touch friendly input spinner component for Bootstrap 3.
- *  http://www.virtuosoft.eu/code/bootstrap-touchspin/
- *
- *  Made by István Ujj-Mészáros
- *  Under Apache License v2.0 License
- */
-!function(a){"use strict";function b(a,b){return a+".touchspin_"+b}function c(c,d){return a.map(c,function(a){return b(a,d)})}var d=0;a.fn.TouchSpin=function(b){if("destroy"===b)return void this.each(function(){var b=a(this),d=b.data();a(document).off(c(["mouseup","touchend","touchcancel","mousemove","touchmove","scroll","scrollstart"],d.spinnerid).join(" "))});var e={min:0,max:100,initval:"",replacementval:"",step:1,decimals:0,stepinterval:100,forcestepdivisibility:"round",stepintervaldelay:500,verticalbuttons:!1,verticalupclass:"glyphicon glyphicon-chevron-up",verticaldownclass:"glyphicon glyphicon-chevron-down",prefix:"",postfix:"",prefix_extraclass:"",postfix_extraclass:"",booster:!0,boostat:10,maxboostedstep:!1,mousewheel:!0,buttondown_class:"btn btn-default",buttonup_class:"btn btn-default",buttondown_txt:"-",buttonup_txt:"+"},f={min:"min",max:"max",initval:"init-val",replacementval:"replacement-val",step:"step",decimals:"decimals",stepinterval:"step-interval",verticalbuttons:"vertical-buttons",verticalupclass:"vertical-up-class",verticaldownclass:"vertical-down-class",forcestepdivisibility:"force-step-divisibility",stepintervaldelay:"step-interval-delay",prefix:"prefix",postfix:"postfix",prefix_extraclass:"prefix-extra-class",postfix_extraclass:"postfix-extra-class",booster:"booster",boostat:"boostat",maxboostedstep:"max-boosted-step",mousewheel:"mouse-wheel",buttondown_class:"button-down-class",buttonup_class:"button-up-class",buttondown_txt:"button-down-txt",buttonup_txt:"button-up-txt"};return this.each(function(){function g(){if(!J.data("alreadyinitialized")){if(J.data("alreadyinitialized",!0),d+=1,J.data("spinnerid",d),!J.is("input"))return void console.log("Must be an input.");j(),h(),u(),m(),p(),q(),r(),s(),D.input.css("display","block")}}function h(){""!==B.initval&&""===J.val()&&J.val(B.initval)}function i(a){l(a),u();var b=D.input.val();""!==b&&(b=Number(D.input.val()),D.input.val(b.toFixed(B.decimals)))}function j(){B=a.extend({},e,K,k(),b)}function k(){var b={};return a.each(f,function(a,c){var d="bts-"+c;J.is("[data-"+d+"]")&&(b[a]=J.data(d))}),b}function l(b){B=a.extend({},B,b)}function m(){var a=J.val(),b=J.parent();""!==a&&(a=Number(a).toFixed(B.decimals)),J.data("initvalue",a).val(a),J.addClass("form-control"),b.hasClass("input-group")?n(b):o()}function n(b){b.addClass("bootstrap-touchspin");var c,d,e=J.prev(),f=J.next(),g='<span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+"</span>",h='<span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+"</span>";e.hasClass("input-group-btn")?(c='<button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button>",e.append(c)):(c='<span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+"</button></span>",a(c).insertBefore(J)),f.hasClass("input-group-btn")?(d='<button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button>",f.prepend(d)):(d='<span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span>",a(d).insertAfter(J)),a(g).insertBefore(J),a(h).insertAfter(J),C=b}function o(){var b;b=B.verticalbuttons?'<div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn-vertical"><button class="'+B.buttondown_class+' bootstrap-touchspin-up" type="button"><i class="'+B.verticalupclass+'"></i></button><button class="'+B.buttonup_class+' bootstrap-touchspin-down" type="button"><i class="'+B.verticaldownclass+'"></i></button></span></div>':'<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="'+B.buttondown_class+' bootstrap-touchspin-down" type="button">'+B.buttondown_txt+'</button></span><span class="input-group-addon bootstrap-touchspin-prefix">'+B.prefix+'</span><span class="input-group-addon bootstrap-touchspin-postfix">'+B.postfix+'</span><span class="input-group-btn"><button class="'+B.buttonup_class+' bootstrap-touchspin-up" type="button">'+B.buttonup_txt+"</button></span></div>",C=a(b).insertBefore(J),a(".bootstrap-touchspin-prefix",C).after(J),J.hasClass("input-sm")?C.addClass("input-group-sm"):J.hasClass("input-lg")&&C.addClass("input-group-lg")}function p(){D={down:a(".bootstrap-touchspin-down",C),up:a(".bootstrap-touchspin-up",C),input:a("input",C),prefix:a(".bootstrap-touchspin-prefix",C).addClass(B.prefix_extraclass),postfix:a(".bootstrap-touchspin-postfix",C).addClass(B.postfix_extraclass)}}function q(){""===B.prefix&&D.prefix.hide(),""===B.postfix&&D.postfix.hide()}function r(){J.on("keydown",function(a){var b=a.keyCode||a.which;38===b?("up"!==M&&(w(),z()),a.preventDefault()):40===b&&("down"!==M&&(x(),y()),a.preventDefault())}),J.on("keyup",function(a){var b=a.keyCode||a.which;38===b?A():40===b&&A()}),J.on("blur",function(){u()}),D.down.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("down"!==M&&(x(),y()),a.preventDefault())}),D.down.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.up.on("keydown",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&("up"!==M&&(w(),z()),a.preventDefault())}),D.up.on("keyup",function(a){var b=a.keyCode||a.which;(32===b||13===b)&&A()}),D.down.on("mousedown.touchspin",function(a){D.down.off("touchstart.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.down.on("touchstart.touchspin",function(a){D.down.off("mousedown.touchspin"),J.is(":disabled")||(x(),y(),a.preventDefault(),a.stopPropagation())}),D.up.on("mousedown.touchspin",function(a){D.up.off("touchstart.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("touchstart.touchspin",function(a){D.up.off("mousedown.touchspin"),J.is(":disabled")||(w(),z(),a.preventDefault(),a.stopPropagation())}),D.up.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mouseout touchleave touchend touchcancel",function(a){M&&(a.stopPropagation(),A())}),D.down.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),D.up.on("mousemove touchmove",function(a){M&&(a.stopPropagation(),a.preventDefault())}),a(document).on(c(["mouseup","touchend","touchcancel"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),a(document).on(c(["mousemove","touchmove","scroll","scrollstart"],d).join(" "),function(a){M&&(a.preventDefault(),A())}),J.on("mousewheel DOMMouseScroll",function(a){if(B.mousewheel&&J.is(":focus")){var b=a.originalEvent.wheelDelta||-a.originalEvent.deltaY||-a.originalEvent.detail;a.stopPropagation(),a.preventDefault(),0>b?x():w()}})}function s(){J.on("touchspin.uponce",function(){A(),w()}),J.on("touchspin.downonce",function(){A(),x()}),J.on("touchspin.startupspin",function(){z()}),J.on("touchspin.startdownspin",function(){y()}),J.on("touchspin.stopspin",function(){A()}),J.on("touchspin.updatesettings",function(a,b){i(b)})}function t(a){switch(B.forcestepdivisibility){case"round":return(Math.round(a/B.step)*B.step).toFixed(B.decimals);case"floor":return(Math.floor(a/B.step)*B.step).toFixed(B.decimals);case"ceil":return(Math.ceil(a/B.step)*B.step).toFixed(B.decimals);default:return a}}function u(){var a,b,c;return a=J.val(),""===a?void(""!==B.replacementval&&(J.val(B.replacementval),J.trigger("change"))):void(B.decimals>0&&"."===a||(b=parseFloat(a),isNaN(b)&&(b=""!==B.replacementval?B.replacementval:0),c=b,b.toString()!==a&&(c=b),b<B.min&&(c=B.min),b>B.max&&(c=B.max),c=t(c),Number(a).toString()!==c.toString()&&(J.val(c),J.trigger("change"))))}function v(){if(B.booster){var a=Math.pow(2,Math.floor(L/B.boostat))*B.step;return B.maxboostedstep&&a>B.maxboostedstep&&(a=B.maxboostedstep,E=Math.round(E/a)*a),Math.max(B.step,a)}return B.step}function w(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E+=b,E>B.max&&(E=B.max,J.trigger("touchspin.on.max"),A()),D.input.val(Number(E).toFixed(B.decimals)),a!==E&&J.trigger("change")}function x(){u(),E=parseFloat(D.input.val()),isNaN(E)&&(E=0);var a=E,b=v();E-=b,E<B.min&&(E=B.min,J.trigger("touchspin.on.min"),A()),D.input.val(E.toFixed(B.decimals)),a!==E&&J.trigger("change")}function y(){A(),L=0,M="down",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startdownspin"),H=setTimeout(function(){F=setInterval(function(){L++,x()},B.stepinterval)},B.stepintervaldelay)}function z(){A(),L=0,M="up",J.trigger("touchspin.on.startspin"),J.trigger("touchspin.on.startupspin"),I=setTimeout(function(){G=setInterval(function(){L++,w()},B.stepinterval)},B.stepintervaldelay)}function A(){switch(clearTimeout(H),clearTimeout(I),clearInterval(F),clearInterval(G),M){case"up":J.trigger("touchspin.on.stopupspin"),J.trigger("touchspin.on.stopspin");break;case"down":J.trigger("touchspin.on.stopdownspin"),J.trigger("touchspin.on.stopspin")}L=0,M=!1}var B,C,D,E,F,G,H,I,J=a(this),K=J.data(),L=0,M=!1;g()})}}(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(529)))
+module.exports = "/images/vendor/bootstrap-fileinput/loading.gif?13630905267b809161e71d0f8a0c017b";
 
 /***/ })
 

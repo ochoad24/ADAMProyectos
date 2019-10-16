@@ -1,22 +1,22 @@
 webpackJsonp([138],{
 
-/***/ 1395:
+/***/ 1421:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1396);
+var content = __webpack_require__(1422);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(26)("1ff85e82", content, false, {});
+var update = __webpack_require__(26)("24f644bd", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11858814\",\"scoped\":true,\"hasInlineConfig\":true}!./gridforms.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11858814\",\"scoped\":true,\"hasInlineConfig\":true}!./gridforms.css");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e6af6c5\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./advanced_date_pickers.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e6af6c5\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./advanced_date_pickers.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1396:
+/***/ 1422:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -35,355 +35,28 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n.grid-form *[data-v-11858814], .grid-form *[data-v-11858814]:before, .grid-form *[data-v-11858814]:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;\n}\n.grid-form input[type=\"text\"][data-v-11858814], .grid-form input[type=\"email\"][data-v-11858814], .grid-form input[type=\"number\"][data-v-11858814], .grid-form input[type=\"password\"][data-v-11858814], .grid-form input[type=\"search\"][data-v-11858814], .grid-form input[type=\"tel\"][data-v-11858814], .grid-form input[type=\"url\"][data-v-11858814], .grid-form input[type=\"color\"][data-v-11858814], .grid-form input[type=\"date\"][data-v-11858814], .grid-form input[type=\"datetime\"][data-v-11858814], .grid-form input[type=\"datetime-local\"][data-v-11858814], .grid-form input[type=\"month\"][data-v-11858814], .grid-form input[type=\"time\"][data-v-11858814], .grid-form input[type=\"week\"][data-v-11858814], .grid-form textarea[data-v-11858814], .grid-form select[data-v-11858814] { font-size: 18px; padding: 0; margin: 0; width: 100%;\n}\n.grid-form input[type=\"text\"][data-v-11858814], .grid-form input[type=\"email\"][data-v-11858814], .grid-form input[type=\"number\"][data-v-11858814], .grid-form input[type=\"password\"][data-v-11858814], .grid-form input[type=\"search\"][data-v-11858814], .grid-form input[type=\"tel\"][data-v-11858814], .grid-form input[type=\"url\"][data-v-11858814], .grid-form input[type=\"color\"][data-v-11858814], .grid-form input[type=\"date\"][data-v-11858814], .grid-form input[type=\"datetime\"][data-v-11858814], .grid-form input[type=\"datetime-local\"][data-v-11858814], .grid-form input[type=\"month\"][data-v-11858814], .grid-form input[type=\"time\"][data-v-11858814], .grid-form input[type=\"week\"][data-v-11858814], .grid-form textarea[data-v-11858814] { border: 0; background: transparent;\n}\n.grid-form input[type=\"text\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"email\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"number\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"password\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"search\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"tel\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"url\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"color\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"date\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"datetime\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"datetime-local\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"month\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"time\"][data-v-11858814]::-webkit-input-placeholder, .grid-form input[type=\"week\"][data-v-11858814]::-webkit-input-placeholder, .grid-form textarea[data-v-11858814]::-webkit-input-placeholder { font-weight: 100; color: #595959;\n}\n.grid-form input[type=\"text\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"email\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"number\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"password\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"search\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"tel\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"url\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"color\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"date\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"datetime\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"datetime-local\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"month\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"time\"][data-v-11858814]:-moz-placeholder, .grid-form input[type=\"week\"][data-v-11858814]:-moz-placeholder, .grid-form textarea[data-v-11858814]:-moz-placeholder { font-weight: 100; color: #595959;\n}\n.grid-form input[type=\"text\"][data-v-11858814]:focus, .grid-form input[type=\"email\"][data-v-11858814]:focus, .grid-form input[type=\"number\"][data-v-11858814]:focus, .grid-form input[type=\"password\"][data-v-11858814]:focus, .grid-form input[type=\"search\"][data-v-11858814]:focus, .grid-form input[type=\"tel\"][data-v-11858814]:focus, .grid-form input[type=\"url\"][data-v-11858814]:focus, .grid-form input[type=\"color\"][data-v-11858814]:focus, .grid-form input[type=\"date\"][data-v-11858814]:focus, .grid-form input[type=\"datetime\"][data-v-11858814]:focus, .grid-form input[type=\"datetime-local\"][data-v-11858814]:focus, .grid-form input[type=\"month\"][data-v-11858814]:focus, .grid-form input[type=\"time\"][data-v-11858814]:focus, .grid-form input[type=\"week\"][data-v-11858814]:focus, .grid-form textarea[data-v-11858814]:focus { outline: none;\n}\n.grid-form fieldset[data-v-11858814] { border: none; padding: 0; margin: 0;\n}\n.grid-form fieldset legend[data-v-11858814] { border: none; border-bottom: 4px solid #404040; color: #404040; font-size: 18px; font-weight: bold; padding-bottom: 5px; position: static; width: 100%;\n}\n.grid-form fieldset fieldset legend[data-v-11858814] { border-bottom: 2px solid #404040; font-weight: normal;\n}\n.grid-form fieldset fieldset fieldset legend[data-v-11858814] { border-bottom: 1px solid #404040; font-weight: normal; font-size: 15px;\n}\n.grid-form [data-row-span][data-v-11858814] { border-bottom: 1px solid #333; width: 100%; zoom: 1;\n}\n.grid-form [data-row-span][data-v-11858814]:before, .grid-form [data-row-span][data-v-11858814]:after { content: \"\"; display: table;\n}\n.grid-form [data-row-span][data-v-11858814]:after { clear: both;\n}\n@media only screen and (min-width: 0) and (max-width: 700px) {\n.grid-form [data-row-span][data-v-11858814] { border-bottom: none;\n}\n}\n.grid-form [data-row-span] [data-field-span][data-v-11858814] { padding: 8px; float: left;\n}\n@media only screen and (min-width: 0) and (max-width: 700px) {\n.grid-form [data-row-span] [data-field-span][data-v-11858814] { border-bottom: 1px solid #333; width: 100% !important;\n}\n}\n@media only screen and (min-width: 700px) {\n.grid-form [data-row-span] [data-field-span][data-v-11858814] { border-right: 1px solid #333; display: block;\n}\n}\n.grid-form [data-row-span] [data-field-span] label[data-v-11858814]:first-child { margin-top: 0; text-transform: uppercase; letter-spacing: 1px; font-size: 10px; color: #333; display: block; margin-bottom: 4px;\n}\n.grid-form [data-row-span] [data-field-span] label[data-v-11858814]:first-child:hover { cursor: text;\n}\n.grid-form [data-row-span] [data-field-span][data-v-11858814]:last-child { border-right: none;\n}\n.grid-form [data-row-span] [data-field-span].focus[data-v-11858814] { background: #fffad4;\n}\n.grid-form [data-row-span] [data-field-span].focus label[data-v-11858814] { color: #262626;\n}\n.grid-form [data-row-span] [data-field-span][data-v-11858814]:hover { background: #fffded; cursor: text;\n}\n@media print {\n.grid-form [data-row-span][data-v-11858814] { display: table; height: 56px; page-break-inside: avoid;\n}\n.grid-form [data-row-span] [data-field-span][data-v-11858814] { border-right: 1px solid #333333; display: table-cell; float: none;\n}\n.grid-form [data-row-span] [data-field-span].focus[data-v-11858814], .grid-form [data-row-span] [data-field-span][data-v-11858814]:hover { background: none;\n}\n.grid-form [data-row-span] [data-field-span] label[data-v-11858814]:first-child { letter-spacing: 0;\n}\n}\n.grid-form [data-row-span=\"1\"] > [data-field-span=\"1\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"2\"] > [data-field-span=\"1\"][data-v-11858814] { width: 50%;\n}\n.grid-form [data-row-span=\"2\"] > [data-field-span=\"2\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"3\"] > [data-field-span=\"1\"][data-v-11858814] { width: 33.33333%;\n}\n.grid-form [data-row-span=\"3\"] > [data-field-span=\"2\"][data-v-11858814] { width: 66.66667%;\n}\n.grid-form [data-row-span=\"3\"] > [data-field-span=\"3\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"4\"] > [data-field-span=\"1\"][data-v-11858814] { width: 25%;\n}\n.grid-form [data-row-span=\"4\"] > [data-field-span=\"2\"][data-v-11858814] { width: 50%;\n}\n.grid-form [data-row-span=\"4\"] > [data-field-span=\"3\"][data-v-11858814] { width: 75%;\n}\n.grid-form [data-row-span=\"4\"] > [data-field-span=\"4\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"5\"] > [data-field-span=\"1\"][data-v-11858814] { width: 20%;\n}\n.grid-form [data-row-span=\"5\"] > [data-field-span=\"2\"][data-v-11858814] { width: 40%;\n}\n.grid-form [data-row-span=\"5\"] > [data-field-span=\"3\"][data-v-11858814] { width: 60%;\n}\n.grid-form [data-row-span=\"5\"] > [data-field-span=\"4\"][data-v-11858814] { width: 80%;\n}\n.grid-form [data-row-span=\"5\"] > [data-field-span=\"5\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"6\"] > [data-field-span=\"1\"][data-v-11858814] { width: 16.66667%;\n}\n.grid-form [data-row-span=\"6\"] > [data-field-span=\"2\"][data-v-11858814] { width: 33.33333%;\n}\n.grid-form [data-row-span=\"6\"] > [data-field-span=\"3\"][data-v-11858814] { width: 50%;\n}\n.grid-form [data-row-span=\"6\"] > [data-field-span=\"4\"][data-v-11858814] { width: 66.66667%;\n}\n.grid-form [data-row-span=\"6\"] > [data-field-span=\"5\"][data-v-11858814] { width: 83.33333%;\n}\n.grid-form [data-row-span=\"6\"] > [data-field-span=\"6\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"1\"][data-v-11858814] { width: 14.28571%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"2\"][data-v-11858814] { width: 28.57143%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"3\"][data-v-11858814] { width: 42.85714%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"4\"][data-v-11858814] { width: 57.14286%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"5\"][data-v-11858814] { width: 71.42857%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"6\"][data-v-11858814] { width: 85.71429%;\n}\n.grid-form [data-row-span=\"7\"] > [data-field-span=\"7\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"1\"][data-v-11858814] { width: 12.5%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"2\"][data-v-11858814] { width: 25%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"3\"][data-v-11858814] { width: 37.5%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"4\"][data-v-11858814] { width: 50%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"5\"][data-v-11858814] { width: 62.5%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"6\"][data-v-11858814] { width: 75%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"7\"][data-v-11858814] { width: 87.5%;\n}\n.grid-form [data-row-span=\"8\"] > [data-field-span=\"8\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"1\"][data-v-11858814] { width: 11.11111%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"2\"][data-v-11858814] { width: 22.22222%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"3\"][data-v-11858814] { width: 33.33333%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"4\"][data-v-11858814] { width: 44.44444%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"5\"][data-v-11858814] { width: 55.55556%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"6\"][data-v-11858814] { width: 66.66667%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"7\"][data-v-11858814] { width: 77.77778%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"8\"][data-v-11858814] { width: 88.88889%;\n}\n.grid-form [data-row-span=\"9\"] > [data-field-span=\"9\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"1\"][data-v-11858814] { width: 10%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"2\"][data-v-11858814] { width: 20%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"3\"][data-v-11858814] { width: 30%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"4\"][data-v-11858814] { width: 40%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"5\"][data-v-11858814] { width: 50%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"6\"][data-v-11858814] { width: 60%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"7\"][data-v-11858814] { width: 70%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"8\"][data-v-11858814] { width: 80%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"9\"][data-v-11858814] { width: 90%;\n}\n.grid-form [data-row-span=\"10\"] > [data-field-span=\"10\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"1\"][data-v-11858814] { width: 9.09091%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"2\"][data-v-11858814] { width: 18.18182%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"3\"][data-v-11858814] { width: 27.27273%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"4\"][data-v-11858814] { width: 36.36364%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"5\"][data-v-11858814] { width: 45.45455%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"6\"][data-v-11858814] { width: 54.54545%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"7\"][data-v-11858814] { width: 63.63636%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"8\"][data-v-11858814] { width: 72.72727%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"9\"][data-v-11858814] { width: 81.81818%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"10\"][data-v-11858814] { width: 90.90909%;\n}\n.grid-form [data-row-span=\"11\"] > [data-field-span=\"11\"][data-v-11858814] { width: 100%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"1\"][data-v-11858814] { width: 8.33333%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"2\"][data-v-11858814] { width: 16.66667%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"3\"][data-v-11858814] { width: 25%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"4\"][data-v-11858814] { width: 33.33333%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"5\"][data-v-11858814] { width: 41.66667%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"6\"][data-v-11858814] { width: 50%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"7\"][data-v-11858814] { width: 58.33333%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"8\"][data-v-11858814] { width: 66.66667%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"9\"][data-v-11858814] { width: 75%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"10\"][data-v-11858814] { width: 83.33333%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"11\"][data-v-11858814] { width: 91.66667%;\n}\n.grid-form [data-row-span=\"12\"] > [data-field-span=\"12\"][data-v-11858814] { width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.vdp-datepicker input {\n    padding: 0;\n}\nhtml{\n    background-color: #fff;\n}\n@media(max-width: 320px){\n#datepickers-container .datepicker.active{\n        left: 60px !important;\n}\n}\n.form-group{\n    margin-bottom: 0.5rem;\n}\n.date_picker input,.clockpicker-with-callbacks .date_picker div{\n    width: 100%;\n    border:none;\n}\n.date_picker input:focus{\n    outline: none;\n}\n.vdp-datepicker__calendar .cell.selected{\n    background-color: #428bca !important;\n    color:#fff;\n}\n.content{\n    min-height: 145vh;\n}\n.popover-container,.input-group .form-control{\n    z-index: inherit !important;\n}\n.picker .popover-origin,.flatpickr-calendar.open{\n    z-index: 99 !important;\n}\n.flatpickr-day.selected{\n    background-color: #428bca !important;\n}\n.flatpickr-input[readonly=\"readonly\"]{\n    background-color: #fff;\n}\n.clockpicker-with-callbacks .date_picker div{\n    width: 100%;\n    left:-18px;\n}\n@media(max-width: 320px){\n.popover-origin.direction-bottom.align-left{\n        left: -47px !important;\n}\n.clockpicker-with-callbacks .date_picker .vdp-datepicker__calendar{\n        width: 270px;\n}\n.flatpickr-calendar.open{\n        right:6px !important;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 1397:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1398);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("5eb1ee48", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11858814\",\"scoped\":false,\"hasInlineConfig\":true}!./vue-multiselect.min.css", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11858814\",\"scoped\":false,\"hasInlineConfig\":true}!./vue-multiselect.min.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1398:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\nfieldset[disabled] .multiselect{pointer-events:none\n}\n.multiselect__spinner{position:absolute;right:1px;top:1px;width:48px;height:35px;background:#fff;display:block\n}\n.multiselect__spinner:after,.multiselect__spinner:before{position:absolute;content:\"\";top:50%;left:50%;margin:-8px 0 0 -8px;width:16px;height:16px;border-radius:100%;border-color:#41b883 transparent transparent;border-style:solid;border-width:2px;box-shadow:0 0 0 1px transparent\n}\n.multiselect__spinner:before{animation:a 2.4s cubic-bezier(.41,.26,.2,.62);animation-iteration-count:infinite\n}\n.multiselect__spinner:after{animation:a 2.4s cubic-bezier(.51,.09,.21,.8);animation-iteration-count:infinite\n}\n.multiselect__loading-enter-active,.multiselect__loading-leave-active{transition:opacity .4s ease-in-out;opacity:1\n}\n.multiselect__loading-enter,.multiselect__loading-leave-active{opacity:0\n}\n.multiselect,.multiselect__input,.multiselect__single{font-family:inherit;font-size:14px;-ms-touch-action:manipulation;touch-action:manipulation\n}\n.multiselect{box-sizing:content-box;display:block;position:relative;width:100%;min-height:40px;text-align:left;color:#35495e\n}\n.multiselect *{box-sizing:border-box\n}\n.multiselect:focus{outline:none\n}\n.multiselect--disabled{opacity:.6\n}\n.multiselect--active{z-index:1\n}\n.multiselect--active:not(.multiselect--above) .multiselect__current,.multiselect--active:not(.multiselect--above) .multiselect__input,.multiselect--active:not(.multiselect--above) .multiselect__tags{border-bottom-left-radius:0;border-bottom-right-radius:0\n}\n.multiselect--active .multiselect__select{transform:rotate(180deg)\n}\n.multiselect--above.multiselect--active .multiselect__current,.multiselect--above.multiselect--active .multiselect__input,.multiselect--above.multiselect--active .multiselect__tags{border-top-left-radius:0;border-top-right-radius:0\n}\n.multiselect__input,.multiselect__single{position:relative;display:inline-block;min-height:20px;line-height:20px;border:none;border-radius:5px;background:#fff;padding:1px 0 0 5px;width:100%;transition:border .1s ease;box-sizing:border-box;margin-bottom:8px\n}\n.multiselect__tag~.multiselect__input,.multiselect__tag~.multiselect__single{width:auto\n}\n.multiselect__input:hover,.multiselect__single:hover{border-color:#cfcfcf\n}\n.multiselect__input:focus,.multiselect__single:focus{border-color:#a8a8a8;outline:none\n}\n.multiselect__single{padding-left:6px;margin-bottom:8px\n}\n.multiselect__tags-wrap{display:inline\n}\n.multiselect__tags{min-height:40px;display:block;padding:8px 40px 0 8px;border-radius:5px;border:1px solid #e8e8e8;background:#fff\n}\n.multiselect__tag{position:relative;display:inline-block;padding:4px 26px 4px 10px;border-radius:5px;margin-right:10px;color:#fff;line-height:1;background:#41b883;margin-bottom:8px;white-space:nowrap\n}\n.multiselect__tag-icon{cursor:pointer;margin-left:7px;position:absolute;right:0;top:0;bottom:0;font-weight:700;font-style:normal;width:22px;text-align:center;line-height:22px;transition:all .2s ease;border-radius:5px\n}\n.multiselect__tag-icon:after{content:\"\\D7\";color:#266d4d;font-size:14px\n}\n.multiselect__tag-icon:focus,.multiselect__tag-icon:hover{background:#369a6e\n}\n.multiselect__tag-icon:focus:after,.multiselect__tag-icon:hover:after{color:#fff\n}\n.multiselect__current{min-height:40px;overflow:hidden;padding:8px 12px 0;padding-right:30px;white-space:nowrap;border-radius:5px;border:1px solid #e8e8e8\n}\n.multiselect__current,.multiselect__select{line-height:16px;box-sizing:border-box;display:block;margin:0;text-decoration:none;cursor:pointer\n}\n.multiselect__select{position:absolute;width:40px;height:38px;right:1px;top:1px;padding:4px 8px;text-align:center;transition:transform .2s ease\n}\n.multiselect__select:before{position:relative;right:0;top:65%;color:#999;margin-top:4px;border-style:solid;border-width:5px 5px 0;border-color:#999 transparent transparent;content:\"\"\n}\n.multiselect__placeholder{color:#adadad;display:inline-block;margin-bottom:10px;padding-top:2px\n}\n.multiselect--active .multiselect__placeholder{display:none\n}\n.multiselect__content-wrapper{position:absolute;display:block;background:#fff;width:100%;max-height:240px;overflow:auto;border:1px solid #e8e8e8;border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;z-index:1;-webkit-overflow-scrolling:touch\n}\n.multiselect__content{list-style:none;display:inline-block;padding:0;margin:0;min-width:100%;vertical-align:top\n}\n.multiselect--above .multiselect__content-wrapper{bottom:100%;border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom:none;border-top:1px solid #e8e8e8\n}\n.multiselect__content::webkit-scrollbar{display:none\n}\n.multiselect__element{display:block\n}\n.multiselect__option{display:block;padding:12px;min-height:40px;line-height:16px;text-decoration:none;text-transform:none;vertical-align:middle;position:relative;cursor:pointer;white-space:nowrap\n}\n.multiselect__option:after{top:0;right:0;position:absolute;line-height:40px;padding-right:12px;padding-left:20px\n}\n.multiselect__option--highlight{background:#41b883;outline:none;color:#fff\n}\n.multiselect__option--highlight:after{content:attr(data-select);background:#41b883;color:#fff\n}\n.multiselect__option--selected{background:#f3f3f3;color:#35495e;font-weight:700\n}\n.multiselect__option--selected:after{content:attr(data-selected);color:silver\n}\n.multiselect__option--selected.multiselect__option--highlight{background:#ff6a6a;color:#fff\n}\n.multiselect__option--selected.multiselect__option--highlight:after{background:#ff6a6a;content:attr(data-deselect);color:#fff\n}\n.multiselect--disabled{background:#ededed;pointer-events:none\n}\n.multiselect--disabled .multiselect__current,.multiselect--disabled .multiselect__select,.multiselect__option--disabled{background:#ededed;color:#a6a6a6\n}\n.multiselect__option--disabled{cursor:text;pointer-events:none\n}\n.multiselect__option--disabled.multiselect__option--highlight{background:#dedede!important\n}\n.multiselect-enter-active,.multiselect-leave-active{transition:all .15s ease\n}\n.multiselect-enter,.multiselect-leave-active{opacity:0\n}\n.multiselect__strong{margin-bottom:10px;display:inline-block\n}\n[dir=rtl] .multiselect{text-align:right\n}\n[dir=rtl] .multiselect__select{right:auto;left:1px\n}\n[dir=rtl] .multiselect__tags{padding:8px 8px 0 40px\n}\n[dir=rtl] .multiselect__content{text-align:right\n}\n[dir=rtl] .multiselect__option:after{right:auto;left:0\n}\n[dir=rtl] .multiselect__clear{right:auto;left:12px\n}\n[dir=rtl] .multiselect__spinner{right:auto;left:1px\n}\n@keyframes a{\n0%{transform:rotate(0)\n}\nto{transform:rotate(2turn)\n}\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1399:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(1400);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(26)("ddc3d868", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11858814\",\"scoped\":false,\"hasInlineConfig\":true}!./complex_forms.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-11858814\",\"scoped\":false,\"hasInlineConfig\":true}!./complex_forms.css");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 1400:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(17)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#complex-form {\n    border           : 1px solid #aaa;\n    background-color : #fff;\n    border-radius    : 3px;\n    padding-top      : 20px;\n    padding-bottom   : 20px;\n}\n.grid-form h3 {\n    font-size : 22px;\n}\n.grid-form fieldset legend {\n    border-bottom : 2px solid #777;\n    color         : #666;\n    margin-bottom : 0;\n    font-size: 16px;\n}\n.grid-form [data-row-span] [data-field-span] label:first-child {\n    font-size      : small;\n    letter-spacing : 0.5px;\n}\n.grid-form [data-row-span] [data-field-span]:hover,\n.grid-form [data-row-span] [data-field-span].focus {\n    background-color : #f5f5f5;\n}\n.select2-container {\n    vertical-align : middle;\n    border         : 1px solid #ccc;\n    border-radius  : 2px;\n}\n.select2-container--bootstrap .select2-selection {\n    background-color : #EBF1F6;\n}\n.select2-container--bootstrap:hover .select2-selection {\n    background-color : #fff;\n}\n.grid-form .custom-checkbox{\n    cursor: default !important;\n}\n.select2-container{\n    width: 100% !important;\n}\n.select2-dropdown,.dd-w.dd-bottom{\n    z-index: 99;\n}\n.complex-dob{\n    padding-bottom: 25px !important;\n}\n.picker.dob{\n    width: 100%;\n}\n.multiselect .multiselect__tags{\n    padding-top: 4px;\n   min-height: 30px;\n   height: 33px;\n}\n.flatpickr-calendar.open{\n    z-index: 99 !important;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 1401:
+/***/ 1423:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gridforms_gridforms_gridforms_js__ = __webpack_require__(1402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gridforms_gridforms_gridforms_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_gridforms_gridforms_gridforms_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect__ = __webpack_require__(545);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_multiselect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component__ = __webpack_require__(706);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__card_card_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component__ = __webpack_require__(749);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css__ = __webpack_require__(708);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css__ = __webpack_require__(751);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_flatpickr_dist_flatpickr_css__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -507,143 +180,51 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "complex_forms",
-    components: {
-        Multiselect: __WEBPACK_IMPORTED_MODULE_1_vue_multiselect___default.a,
-        flatPickr: __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component___default.a
-    },
+    name: "advanced_date_pickers",
     data: function data() {
         return {
+            datebasic: new Date(),
+            datetwo: new Date(),
+            multiple: new Date(),
+            datetime: new Date(),
             date: new Date(),
-            fromPage: null,
-            toPage: null,
-            value: { name: 'Country', language: 'lang' },
-            options: [{ name: 'India', language: 'India' }, { name: 'America', language: 'America' }, { name: 'Germany', language: 'Germany' }, { name: 'Japan', language: 'Japan' }, { name: 'England', language: 'England' }]
+            configbasic: {
+                dateFormat: 'd-m-y'
+            },
+            config: {
+                enableTime: true,
+                dateFormat: 'd-m-y h:i'
+            },
+            configtwo: {
+                minDate: "today",
+                maxDate: new Date().fp_incr(14)
+            },
+            configmultiple: {
+                mode: "multiple",
+                dateFormat: "Y-m-d"
+            },
+            range: {
+                mode: "range"
+            },
+            disable: {
+                disable: ["2018-01-30", "2018-01-21", "2018-01-08", new Date(2018, 1, 1)],
+                dateFormat: "Y-m-d"
+            }
         };
     },
 
+    components: {
+        card: __WEBPACK_IMPORTED_MODULE_1__card_card_vue___default.a,
+        Datepicker: __WEBPACK_IMPORTED_MODULE_2_vuejs_datepicker___default.a,
+        flatPickr: __WEBPACK_IMPORTED_MODULE_3_vue_flatpickr_component___default.a
+    },
     mounted: function mounted() {},
-    methods: {},
     destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 1402:
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {//
-//  Grid Forms
-//  Copyright (c) 2013 Kumail Hunaid
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
-//
-
-$(function() {
-    var GridForms = {
-        el: {
-            fieldsRows: $('[data-row-span]'),
-            fieldsContainers: $('[data-field-span]'),
-            focusableFields: $('input, textarea, select', '[data-field-span]'),
-            window: $(window)
-        },
-        init: function() {
-            this.focusField(this.el.focusableFields.filter(':focus'));
-            this.equalizeFieldHeights();
-            this.events();
-        },
-        focusField: function(currentField) {
-            currentField.closest('[data-field-span]').addClass('focus');
-        },
-        removeFieldFocus: function() {
-            this.el.fieldsContainers.removeClass('focus');
-        },
-        events: function() {
-            var that = this;
-            that.el.fieldsContainers.click(function(event) {
-                var focusableFields = that.el.focusableFields.selector;
-                
-                if (!$(event.target).is(focusableFields)) {
-                    $(this).find('input[type="text"], textarea, select').first().focus();
-                }
-            });
-            that.el.focusableFields.focus(function() {
-                that.focusField($(this));
-            });
-            that.el.focusableFields.blur(function() {
-                that.removeFieldFocus();
-            });
-            that.el.window.resize(function() {
-                that.equalizeFieldHeights();
-            });
-
-        },
-        equalizeFieldHeights: function() {
-            this.el.fieldsContainers.css("height", "auto");
-
-            var fieldsRows = this.el.fieldsRows;
-            var fieldsContainers = this.el.fieldsContainers;
-
-            // Make sure that the fields aren't stacked
-            if (!this.areFieldsStacked()) {
-                fieldsRows.each(function() {
-                    // Get the height of the row (thus the tallest element's height)
-                    var fieldRow = $(this);
-                    var rowHeight = fieldRow.css('height');
-                    
-                    // Singleton textarea rows should determine their row height
-                    var rowInputs = fieldRow.children();
-                    var textAreas = rowInputs.children("textarea");
-                    if (rowInputs.length === 1 && textAreas.length === 1) return;
-
-                    // Set the height for each field in the row...
-                    fieldRow.find(fieldsContainers).css('height', rowHeight);
-                });
-            }
-        },
-        areFieldsStacked: function() {
-            // Get the first row 
-            // which does not only contain one field 
-            var firstRow = this.el.fieldsRows
-                .not('[data-row-span="1"]')
-                .first();
-
-            // Get to the total width 
-            // of each field witin the row
-            var totalWidth = 0;
-            firstRow.children().each(function() {
-                totalWidth += $(this).width();
-            });
-
-            // Determine whether fields are stacked or not
-            return firstRow.width() <= totalWidth;
-        }
-    };
-    GridForms.init();
-    window.GridForms = GridForms;
-});
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(529)))
-
-/***/ }),
-
-/***/ 1403:
+/***/ 1424:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -651,859 +232,304 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row", attrs: { id: "complex-form" } }, [
-      _c("div", { staticClass: "col-lg-12" }, [
-        _c("form", { staticClass: "grid-form" }, [
-          _c("div", { staticClass: "text-center" }, [
-            _c("img", {
-              attrs: {
-                src: __webpack_require__(1404),
-                alt: "bank name",
-                width: "200"
-              }
-            }),
-            _vm._v(" "),
-            _c("h3", [_vm._v("ACCOUNT OPENING FORM")])
-          ]),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
-          _c("fieldset", [
-            _c("legend", [
-              _vm._v("Personal Details (Sole/First Accountholder/Minor)")
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { "data-row-span": "4" } }, [
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _c("label", [_vm._v("Title")]),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { checked: "false", name: "prefix" } },
-                    [_vm._v(" Mr.")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { checked: "false", name: "prefix" } },
-                    [_vm._v(" Mrs.")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { checked: "false", name: "prefix" } },
-                    [_vm._v(" Ms.")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(1)
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { "data-row-span": "2" } }, [
-              _c(
-                "div",
-                {
-                  staticClass: "complex-dob",
-                  attrs: { "data-field-span": "1" }
-                },
-                [
-                  _c("label", [_vm._v("Date of birth")]),
-                  _vm._v(" "),
-                  _c("flat-pickr", {
-                    staticClass: "form-control",
-                    model: {
-                      value: _vm.date,
-                      callback: function($$v) {
-                        _vm.date = $$v
-                      },
-                      expression: "date"
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _vm._m(2),
-                  _vm._v(" "),
-                  _c("multiselect", {
-                    attrs: {
-                      options: _vm.options,
-                      placeholder: "Select one",
-                      label: "name",
-                      "track-by": "name"
-                    },
-                    model: {
-                      value: _vm.value,
-                      callback: function($$v) {
-                        _vm.value = $$v
-                      },
-                      expression: "value"
-                    }
-                  })
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _vm._m(5)
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("fieldset", [
-            _c("legend", [_vm._v("Account Details")]),
-            _vm._v(" "),
-            _c("div", { attrs: { "data-row-span": "2" } }, [
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _c("label", [_vm._v("Choice of account")]),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "account-type", checked: "false" } },
-                    [_vm._v("Savings")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "account-type", checked: "false" } },
-                    [_vm._v("Current")]
-                  ),
-                  _vm._v(" \n                            "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "account-type", checked: "false" } },
-                    [_vm._v("Fixed Deposit")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _c("label", [_vm._v("Mode of funding")]),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "transfer-type", checked: "false" } },
-                    [_vm._v("Cash")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "transfer-type", checked: "false" } },
-                    [_vm._v("Cheque")]
-                  ),
-                  _vm._v(" \n                            "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "transfer-type", checked: "false" } },
-                    [_vm._v("NEFT")]
-                  )
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(8),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("fieldset", [
-              _c("legend", [_vm._v("Details of Fixed Deposit")]),
-              _vm._v(" "),
-              _c("div", { attrs: { "data-row-span": "2" } }, [
-                _c(
-                  "div",
-                  { attrs: { "data-field-span": "1" } },
-                  [
-                    _c("label", [_vm._v("Types of deposit")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-radio",
-                      { attrs: { name: "deposit-type", checked: "false" } },
-                      [_vm._v("Ordinary")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-radio",
-                      { attrs: { name: "deposit-type", checked: "false" } },
-                      [_vm._v("Cumulative")]
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c(
+            "card",
+            { attrs: { title: "<i class='ti-calendar'></i>  Date Picker" } },
+            [
+              _c("div", { staticClass: "box-body" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Date Picker:\n                        "
                     )
-                  ],
-                  1
-                ),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        model: {
+                          value: _vm.datebasic,
+                          callback: function($$v) {
+                            _vm.datebasic = $$v
+                          },
+                          expression: "datebasic"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { attrs: { "data-field-span": "1" } },
-                  [
-                    _c("label", [_vm._v("Mode of funding")]),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-radio",
-                      { attrs: { name: "fund-type", checked: "false" } },
-                      [_vm._v("Cash")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-radio",
-                      { attrs: { name: "fund-type", checked: "false" } },
-                      [_vm._v("Cheque")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-radio",
-                      { attrs: { name: "fund-type", checked: "false" } },
-                      [_vm._v("NEFT")]
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Multiple Date Picker:\n                        "
                     )
-                  ],
-                  1
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(9)
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("fieldset", [
-            _vm._m(10),
-            _vm._v(" "),
-            _c("div", { attrs: { "data-row-span": "12" } }, [
-              _c(
-                "div",
-                { attrs: { "data-field-span": "2" } },
-                [_c("b-form-checkbox", [_vm._v("Non-executive")])],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "2" } },
-                [_c("b-form-checkbox", [_vm._v("Non-executive")])],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "2" } },
-                [_c("b-form-checkbox", [_vm._v("Housewife")])],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "2" } },
-                [_c("b-form-checkbox", [_vm._v(" Student")])],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "2" } },
-                [_c("b-form-checkbox", [_vm._v(" Other")])],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "2" } },
-                [_c("b-form-checkbox", [_vm._v("Unemployed")])],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(11),
-            _vm._v(" "),
-            _vm._m(12),
-            _vm._v(" "),
-            _c("div", { attrs: { "data-row-span": "2" } }, [
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _c("label", [_vm._v("Education")]),
+                  ]),
                   _vm._v(" "),
                   _c(
-                    "b-form-radio",
-                    { attrs: { name: "education-type", checked: "false" } },
-                    [_vm._v("Under Graduate")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "education-type", checked: "false" } },
-                    [_vm._v("Graduate")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "education-type", checked: "false" } },
-                    [_vm._v("Others")]
+                    "div",
+                    {
+                      staticClass: "input-group clockpicker",
+                      attrs: {
+                        "data-placement": "left",
+                        "data-align": "top",
+                        "data-autoclose": "true"
+                      }
+                    },
+                    [
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.configmultiple },
+                        model: {
+                          value: _vm.multiple,
+                          callback: function($$v) {
+                            _vm.multiple = $$v
+                          },
+                          expression: "multiple"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ])
+                    ],
+                    1
                   )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _c("label", [_vm._v("Monthly Income")]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Year and Month selection:\n                        "
+                    )
+                  ]),
                   _vm._v(" "),
                   _c(
-                    "b-form-radio",
-                    { attrs: { name: "income", checked: "false" } },
-                    [_vm._v("Zero Income")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "income", checked: "false" } },
-                    [_vm._v("Less than $10,000")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "income", checked: "false" } },
-                    [_vm._v(" $10,000+")]
+                    "div",
+                    { staticClass: "input-group clockpicker-with-callbacks" },
+                    [
+                      _c("datepicker", {
+                        staticClass: "form-control date_picker",
+                        attrs: {
+                          minimumView: "month",
+                          maximumView: "year",
+                          initialView: "year",
+                          readonly: false
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ])
+                    ],
+                    1
                   )
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { "data-row-span": "2" } }, [
-              _c(
-                "div",
-                { attrs: { "data-field-span": "1" } },
-                [
-                  _c("label", [_vm._v("Maritial Status")]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Minimum and Maximum Dates:\n                        "
+                    )
+                  ]),
                   _vm._v(" "),
                   _c(
-                    "b-form-radio",
-                    { attrs: { name: "marital-status", checked: "false" } },
-                    [_vm._v("Married")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-radio",
-                    { attrs: { name: "marital-status", checked: "false" } },
-                    [_vm._v("Single")]
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-time" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.configtwo, readonly: false },
+                        model: {
+                          value: _vm.datetwo,
+                          callback: function($$v) {
+                            _vm.datetwo = $$v
+                          },
+                          expression: "datetwo"
+                        }
+                      })
+                    ],
+                    1
                   )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(13)
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _vm._m(14)
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(15),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(16)
-        ])
-      ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Date and Time Picker:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.config, readonly: false },
+                        model: {
+                          value: _vm.datetime,
+                          callback: function($$v) {
+                            _vm.datetime = $$v
+                          },
+                          expression: "datetime"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Range of Dates:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.range, readonly: false },
+                        model: {
+                          value: _vm.date,
+                          callback: function($$v) {
+                            _vm.date = $$v
+                          },
+                          expression: "date"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [
+                    _vm._v(
+                      "\n                            Disable Days of Week:\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group" },
+                    [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          { staticClass: "input-group-text bg-white" },
+                          [_c("i", { staticClass: "fa fa-fw ti-calendar" })]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("flat-pickr", {
+                        staticClass: "form-control",
+                        attrs: { config: _vm.disable, readonly: false },
+                        model: {
+                          value: _vm.date,
+                          callback: function($$v) {
+                            _vm.date = $$v
+                          },
+                          expression: "date"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]
+          )
+        ],
+        1
+      )
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [_vm._v("Please open an account at")]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "1" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Branch Name")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text", autofocus: "" } })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-field-span": "3" } }, [
-      _c("label", [_vm._v("Full Name")]),
-      _vm._v(" "),
-      _c("input", { attrs: { type: "text" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "typo__label mb-0" }, [
-      _c("h6", { staticClass: "mb-1" }, [_vm._v("Nationality")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-row-span": "4" } }, [
-      _c(
-        "div",
-        {
-          attrs: {
-            "data-field-span": "2",
-            "data-field-error": "Please enter a valid email address"
-          }
-        },
-        [
-          _c("label", [_vm._v("E-mail")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Mobile No.")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Existing Bank Account No. (if any)")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-row-span": "2" } }, [
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [
-          _vm._v(
-            "In case of a minor please provide details (Name of parent and natural\n                                guardian)\n                            "
-          )
-        ]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Name of father/spouse")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [_vm._v("Residential address")]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "2" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Flat no. and bldg. name")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Road no./name")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "4" } }, [
-        _c("div", { attrs: { "data-field-span": "3" } }, [
-          _c("label", [_vm._v("Area and landmark")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("City")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "4" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Telephone Residence")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Office")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Fax")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Pin code")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [
-        _vm._v(
-          "Mailing Address (If different from the First Accountholder's address)\n                    "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "1" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [
-            _vm._v("Company name and department/ Flat no. and bldg. name")
-          ]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "4" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Road no./name")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Area and landmark")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("City")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Pin Code")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "4" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Telephone Residence")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Office")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Fax")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Mobile No.")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "1" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("E-mail")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [
-        _vm._v("Details of Introduction by Existing Customer (If applicable)")
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "2" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Customer Name")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Account No.")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "1" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Introducer's signature")]),
-          _vm._v(" "),
-          _c("textarea", { staticClass: "resize_vertical" })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-row-span": "1" } }, [
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Amount")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-row-span": "4" } }, [
-      _c("div", { attrs: { "data-field-span": "2" } }, [
-        _c("label", [_vm._v("Amount")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("No. of deposits")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Individual Deposit Amount")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("legend", [
-      _vm._v("Personal Details\n                        "),
-      _c("small", [_vm._v("(Occupation)")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-row-span": "1" } }, [
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Job Title")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-row-span": "2" } }, [
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Department")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-field-span": "1" } }, [
-        _c("label", [_vm._v("Nature of business")]),
-        _vm._v(" "),
-        _c("input", { attrs: { type: "text" } })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { "data-field-span": "1" } }, [
-      _c("label", [_vm._v("Spouse name")]),
-      _vm._v(" "),
-      _c("input", { attrs: { type: "text" } })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [_vm._v("Other existing bank accounts, if any")]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "2" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Name of the Bank / branch")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Name of the Bank / branch")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [_vm._v("Reason for Account opening")]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "1" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label", [_vm._v("Please specify")]),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text" } })
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("fieldset", [
-      _c("legend", [_vm._v("Terms And Conditions")]),
-      _vm._v(" "),
-      _c("div", { attrs: { "data-row-span": "1" } }, [
-        _c("div", { attrs: { "data-field-span": "1" } }, [
-          _c("label"),
-          _vm._v(" "),
-          _c("label", [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(
-              " I/We confirm having read and understood the account\n                                rules of The Banking Corporation Limited ('the Bank'), and hereby agree to be\n                                bound by the terms and conditions and amendments governing the account(s) issued\n                                by the Bank from time-to-time."
-            )
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-11858814", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1e6af6c5", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 1404:
-/***/ (function(module, exports) {
-
-module.exports = "/images/complexform1.png?e8a770c8d98b813a9a59f8449456da4a";
-
-/***/ }),
-
-/***/ 445:
+/***/ 452:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1395)
-  __webpack_require__(1397)
-  __webpack_require__(1399)
+  __webpack_require__(1421)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1401)
+var __vue_script__ = __webpack_require__(1423)
 /* template */
-var __vue_template__ = __webpack_require__(1403)
+var __vue_template__ = __webpack_require__(1424)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-11858814"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -1514,7 +540,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/complex_forms.vue"
+Component.options.__file = "resources/components/pages/advanced_date_pickers.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -1523,9 +549,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-11858814", Component.options)
+    hotAPI.createRecord("data-v-1e6af6c5", Component.options)
   } else {
-    hotAPI.reload("data-v-11858814", Component.options)
+    hotAPI.reload("data-v-1e6af6c5", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -1537,7 +563,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 529:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11909,19 +10935,220 @@ return jQuery;
 
 /***/ }),
 
-/***/ 545:
+/***/ 530:
 /***/ (function(module, exports, __webpack_require__) {
 
-!function(t,e){ true?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.VueMultiselect=e():t.VueMultiselect=e()}(this,function(){return function(t){function e(n){if(i[n])return i[n].exports;var s=i[n]={i:n,l:!1,exports:{}};return t[n].call(s.exports,s,s.exports,e),s.l=!0,s.exports}var i={};return e.m=t,e.c=i,e.i=function(t){return t},e.d=function(t,i,n){e.o(t,i)||Object.defineProperty(t,i,{configurable:!1,enumerable:!0,get:n})},e.n=function(t){var i=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(i,"a",i),i},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/",e(e.s=4)}([function(t,e,i){"use strict";function n(t,e,i){return e in t?Object.defineProperty(t,e,{value:i,enumerable:!0,configurable:!0,writable:!0}):t[e]=i,t}function s(t){return 0!==t&&(!(!Array.isArray(t)||0!==t.length)||!t)}function l(t,e){return void 0===t&&(t="undefined"),null===t&&(t="null"),!1===t&&(t="false"),-1!==t.toString().toLowerCase().indexOf(e.trim())}function o(t,e,i,n){return t.filter(function(t){return l(n(t,i),e)})}function r(t){return t.filter(function(t){return!t.$isLabel})}function a(t,e){return function(i){return i.reduce(function(i,n){return n[t]&&n[t].length?(i.push({$groupLabel:n[e],$isLabel:!0}),i.concat(n[t])):i},[])}}function u(t,e,i,s,l){return function(r){return r.map(function(r){var a;if(!r[i])return console.warn("Options passed to vue-multiselect do not contain groups, despite the config."),[];var u=o(r[i],t,e,l);return u.length?(a={},n(a,s,r[s]),n(a,i,u),a):[]})}}Object.defineProperty(e,"__esModule",{value:!0});var c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},h=i(2),p=function(t){return t&&t.__esModule?t:{default:t}}(h),d=function(){for(var t=arguments.length,e=Array(t),i=0;i<t;i++)e[i]=arguments[i];return function(t){return e.reduce(function(t,e){return e(t)},t)}};e.default={data:function(){return{search:"",isOpen:!1,prefferedOpenDirection:"below",optimizedHeight:this.maxHeight,internalValue:this.value||0===this.value?(0,p.default)(Array.isArray(this.value)?this.value:[this.value]):[]}},props:{internalSearch:{type:Boolean,default:!0},options:{type:Array,required:!0},multiple:{type:Boolean,default:!1},value:{type:null,default:function(){return[]}},trackBy:{type:String},label:{type:String},searchable:{type:Boolean,default:!0},clearOnSelect:{type:Boolean,default:!0},hideSelected:{type:Boolean,default:!1},placeholder:{type:String,default:"Select option"},allowEmpty:{type:Boolean,default:!0},resetAfter:{type:Boolean,default:!1},closeOnSelect:{type:Boolean,default:!0},customLabel:{type:Function,default:function(t,e){return s(t)?"":e?t[e]:t}},taggable:{type:Boolean,default:!1},tagPlaceholder:{type:String,default:"Press enter to create a tag"},max:{type:[Number,Boolean],default:!1},id:{default:null},optionsLimit:{type:Number,default:1e3},groupValues:{type:String},groupLabel:{type:String},blockKeys:{type:Array,default:function(){return[]}},preserveSearch:{type:Boolean,default:!1}},mounted:function(){this.multiple||this.clearOnSelect||console.warn("[Vue-Multiselect warn]: ClearOnSelect and Multiple props can’t be both set to false."),!this.multiple&&this.max&&console.warn("[Vue-Multiselect warn]: Max prop should not be used when prop Multiple equals false.")},computed:{filteredOptions:function(){var t=this.search||"",e=t.toLowerCase(),i=this.options.concat();return i=this.internalSearch?this.groupValues?this.filterAndFlat(i,e,this.label):o(i,e,this.label,this.customLabel):this.groupValues?a(this.groupValues,this.groupLabel)(i):i,i=this.hideSelected?i.filter(this.isNotSelected):i,this.taggable&&e.length&&!this.isExistingOption(e)&&i.unshift({isTag:!0,label:t}),i.slice(0,this.optionsLimit)},valueKeys:function(){var t=this;return this.trackBy?this.internalValue.map(function(e){return e[t.trackBy]}):this.internalValue},optionKeys:function(){var t=this;return(this.groupValues?this.flatAndStrip(this.options):this.options).map(function(e){return t.customLabel(e,t.label).toString().toLowerCase()})},currentOptionLabel:function(){return this.multiple?this.searchable?"":this.placeholder:this.internalValue[0]?this.getOptionLabel(this.internalValue[0]):this.searchable?"":this.placeholder}},watch:{internalValue:function(t,e){this.resetAfter&&this.internalValue.length&&(this.search="",this.internalValue=[])},search:function(){this.$emit("search-change",this.search,this.id)},value:function(t){this.internalValue=this.getInternalValue(t)}},methods:{getValue:function(){return this.multiple?(0,p.default)(this.internalValue):0===this.internalValue.length?null:(0,p.default)(this.internalValue[0])},getInternalValue:function(t){return null===t||void 0===t?[]:this.multiple?(0,p.default)(t):(0,p.default)([t])},filterAndFlat:function(t,e,i){return d(u(e,i,this.groupValues,this.groupLabel,this.customLabel),a(this.groupValues,this.groupLabel))(t)},flatAndStrip:function(t){return d(a(this.groupValues,this.groupLabel),r)(t)},updateSearch:function(t){this.search=t},isExistingOption:function(t){return!!this.options&&this.optionKeys.indexOf(t)>-1},isSelected:function(t){var e=this.trackBy?t[this.trackBy]:t;return this.valueKeys.indexOf(e)>-1},isNotSelected:function(t){return!this.isSelected(t)},getOptionLabel:function(t){if(s(t))return"";if(t.isTag)return t.label;if(t.$isLabel)return t.$groupLabel;var e=this.customLabel(t,this.label);return s(e)?"":e},select:function(t,e){if(!(-1!==this.blockKeys.indexOf(e)||this.disabled||t.$isLabel||t.$isDisabled)&&(!this.max||!this.multiple||this.internalValue.length!==this.max)&&("Tab"!==e||this.pointerDirty)){if(t.isTag)this.$emit("tag",t.label,this.id),this.search="",this.closeOnSelect&&!this.multiple&&this.deactivate();else{if(this.isSelected(t))return void("Tab"!==e&&this.removeElement(t));this.multiple?this.internalValue.push(t):this.internalValue=[t],this.$emit("select",(0,p.default)(t),this.id),this.$emit("input",this.getValue(),this.id),this.clearOnSelect&&(this.search="")}this.closeOnSelect&&this.deactivate()}},removeElement:function(t){var e=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];if(!this.disabled){if(!this.allowEmpty&&this.internalValue.length<=1)return void this.deactivate();var i="object"===(void 0===t?"undefined":c(t))?this.valueKeys.indexOf(t[this.trackBy]):this.valueKeys.indexOf(t);this.internalValue.splice(i,1),this.$emit("remove",(0,p.default)(t),this.id),this.$emit("input",this.getValue(),this.id),this.closeOnSelect&&e&&this.deactivate()}},removeLastElement:function(){-1===this.blockKeys.indexOf("Delete")&&0===this.search.length&&Array.isArray(this.internalValue)&&this.removeElement(this.internalValue[this.internalValue.length-1],!1)},activate:function(){var t=this;this.isOpen||this.disabled||(this.adjustPosition(),this.groupValues&&0===this.pointer&&this.filteredOptions.length&&(this.pointer=1),this.isOpen=!0,this.searchable?(this.preserveSearch||(this.search=""),this.$nextTick(function(){return t.$refs.search.focus()})):this.$el.focus(),this.$emit("open",this.id))},deactivate:function(){this.isOpen&&(this.isOpen=!1,this.searchable?this.$refs.search.blur():this.$el.blur(),this.preserveSearch||(this.search=""),this.$emit("close",this.getValue(),this.id))},toggle:function(){this.isOpen?this.deactivate():this.activate()},adjustPosition:function(){if("undefined"!=typeof window){var t=this.$el.getBoundingClientRect().top,e=window.innerHeight-this.$el.getBoundingClientRect().bottom;e>this.maxHeight||e>t||"below"===this.openDirection||"bottom"===this.openDirection?(this.prefferedOpenDirection="below",this.optimizedHeight=Math.min(e-40,this.maxHeight)):(this.prefferedOpenDirection="above",this.optimizedHeight=Math.min(t-40,this.maxHeight))}}}}},function(t,e,i){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default={data:function(){return{pointer:0,pointerDirty:!1}},props:{showPointer:{type:Boolean,default:!0},optionHeight:{type:Number,default:40}},computed:{pointerPosition:function(){return this.pointer*this.optionHeight},visibleElements:function(){return this.optimizedHeight/this.optionHeight}},watch:{filteredOptions:function(){this.pointerAdjust()},isOpen:function(){this.pointerDirty=!1}},methods:{optionHighlight:function(t,e){return{"multiselect__option--highlight":t===this.pointer&&this.showPointer,"multiselect__option--selected":this.isSelected(e)}},addPointerElement:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"Enter",e=t.key;this.filteredOptions.length>0&&this.select(this.filteredOptions[this.pointer],e),this.pointerReset()},pointerForward:function(){this.pointer<this.filteredOptions.length-1&&(this.pointer++,this.$refs.list.scrollTop<=this.pointerPosition-(this.visibleElements-1)*this.optionHeight&&(this.$refs.list.scrollTop=this.pointerPosition-(this.visibleElements-1)*this.optionHeight),this.filteredOptions[this.pointer].$isLabel&&this.pointerForward()),this.pointerDirty=!0},pointerBackward:function(){this.pointer>0?(this.pointer--,this.$refs.list.scrollTop>=this.pointerPosition&&(this.$refs.list.scrollTop=this.pointerPosition),this.filteredOptions[this.pointer].$isLabel&&this.pointerBackward()):this.filteredOptions[0].$isLabel&&this.pointerForward(),this.pointerDirty=!0},pointerReset:function(){this.closeOnSelect&&(this.pointer=0,this.$refs.list&&(this.$refs.list.scrollTop=0))},pointerAdjust:function(){this.pointer>=this.filteredOptions.length-1&&(this.pointer=this.filteredOptions.length?this.filteredOptions.length-1:0)},pointerSet:function(t){this.pointer=t,this.pointerDirty=!0}}}},function(t,e,i){"use strict";function n(t){if(Array.isArray(t))return t.map(n);if(t&&"object"===(void 0===t?"undefined":s(t))){for(var e={},i=Object.keys(t),l=0,o=i.length;l<o;l++){var r=i[l];e[r]=n(t[r])}return e}return t}Object.defineProperty(e,"__esModule",{value:!0});var s="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t};e.default=n},function(t,e,i){i(6);var n=i(7)(i(5),i(8),null,null);t.exports=n.exports},function(t,e,i){"use strict";function n(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0}),e.deepClone=e.pointerMixin=e.multiselectMixin=e.Multiselect=void 0;var s=i(3),l=n(s),o=i(0),r=n(o),a=i(1),u=n(a),c=i(2),h=n(c);e.default=l.default,e.Multiselect=l.default,e.multiselectMixin=r.default,e.pointerMixin=u.default,e.deepClone=h.default},function(t,e,i){"use strict";function n(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var s=i(0),l=n(s),o=i(1),r=n(o);e.default={name:"vue-multiselect",mixins:[l.default,r.default],props:{name:{type:String,default:""},selectLabel:{type:String,default:"Press enter to select"},selectedLabel:{type:String,default:"Selected"},deselectLabel:{type:String,default:"Press enter to remove"},showLabels:{type:Boolean,default:!0},limit:{type:Number,default:99999},maxHeight:{type:Number,default:300},limitText:{type:Function,default:function(t){return"and "+t+" more"}},loading:{type:Boolean,default:!1},disabled:{type:Boolean,default:!1},openDirection:{type:String,default:""},showNoResults:{type:Boolean,default:!0},tabindex:{type:Number,default:0}},computed:{visibleValue:function(){return this.multiple?this.internalValue.slice(0,this.limit):[]},deselectLabelText:function(){return this.showLabels?this.deselectLabel:""},selectLabelText:function(){return this.showLabels?this.selectLabel:""},selectedLabelText:function(){return this.showLabels?this.selectedLabel:""},inputStyle:function(){if(this.multiple&&this.value&&this.value.length)return this.isOpen?{width:"auto"}:{display:"none"}},contentStyle:function(){return this.options.length?{display:"inline-block"}:{display:"block"}},isAbove:function(){return"above"===this.openDirection||"top"===this.openDirection||"below"!==this.openDirection&&"bottom"!==this.openDirection&&"above"===this.prefferedOpenDirection}}}},function(t,e){},function(t,e){t.exports=function(t,e,i,n){var s,l=t=t||{},o=typeof t.default;"object"!==o&&"function"!==o||(s=t,l=t.default);var r="function"==typeof l?l.options:l;if(e&&(r.render=e.render,r.staticRenderFns=e.staticRenderFns),i&&(r._scopeId=i),n){var a=Object.create(r.computed||null);Object.keys(n).forEach(function(t){var e=n[t];a[t]=function(){return e}}),r.computed=a}return{esModule:s,exports:l,options:r}}},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("div",{staticClass:"multiselect",class:{"multiselect--active":t.isOpen,"multiselect--disabled":t.disabled,"multiselect--above":t.isAbove},attrs:{tabindex:t.tabindex},on:{focus:function(e){t.activate()},blur:function(e){!t.searchable&&t.deactivate()},keydown:[function(e){return"button"in e||!t._k(e.keyCode,"down",40)?e.target!==e.currentTarget?null:(e.preventDefault(),void t.pointerForward()):null},function(e){return"button"in e||!t._k(e.keyCode,"up",38)?e.target!==e.currentTarget?null:(e.preventDefault(),void t.pointerBackward()):null},function(e){return"button"in e||!t._k(e.keyCode,"enter",13)||!t._k(e.keyCode,"tab",9)?(e.stopPropagation(),e.target!==e.currentTarget?null:void t.addPointerElement(e)):null}],keyup:function(e){if(!("button"in e)&&t._k(e.keyCode,"esc",27))return null;t.deactivate()}}},[t._t("caret",[i("div",{staticClass:"multiselect__select",on:{mousedown:function(e){e.preventDefault(),e.stopPropagation(),t.toggle()}}})],{toggle:t.toggle}),t._v(" "),t._t("clear",null,{search:t.search}),t._v(" "),i("div",{ref:"tags",staticClass:"multiselect__tags"},[i("div",{directives:[{name:"show",rawName:"v-show",value:t.visibleValue.length>0,expression:"visibleValue.length > 0"}],staticClass:"multiselect__tags-wrap"},[t._l(t.visibleValue,function(e){return[t._t("tag",[i("span",{staticClass:"multiselect__tag"},[i("span",{domProps:{textContent:t._s(t.getOptionLabel(e))}}),t._v(" "),i("i",{staticClass:"multiselect__tag-icon",attrs:{"aria-hidden":"true",tabindex:"1"},on:{keydown:function(i){if(!("button"in i)&&t._k(i.keyCode,"enter",13))return null;i.preventDefault(),t.removeElement(e)},mousedown:function(i){i.preventDefault(),t.removeElement(e)}}})])],{option:e,search:t.search,remove:t.removeElement})]})],2),t._v(" "),t.internalValue&&t.internalValue.length>t.limit?[i("strong",{staticClass:"multiselect__strong",domProps:{textContent:t._s(t.limitText(t.internalValue.length-t.limit))}})]:t._e(),t._v(" "),i("transition",{attrs:{name:"multiselect__loading"}},[t._t("loading",[i("div",{directives:[{name:"show",rawName:"v-show",value:t.loading,expression:"loading"}],staticClass:"multiselect__spinner"})])],2),t._v(" "),t.searchable?i("input",{ref:"search",staticClass:"multiselect__input",style:t.inputStyle,attrs:{name:t.name,id:t.id,type:"text",autocomplete:"off",placeholder:t.placeholder,disabled:t.disabled},domProps:{value:t.isOpen?t.search:t.currentOptionLabel},on:{input:function(e){t.updateSearch(e.target.value)},focus:function(e){e.preventDefault(),t.activate()},blur:function(e){e.preventDefault(),t.deactivate()},keyup:function(e){if(!("button"in e)&&t._k(e.keyCode,"esc",27))return null;t.deactivate()},keydown:[function(e){if(!("button"in e)&&t._k(e.keyCode,"down",40))return null;e.preventDefault(),t.pointerForward()},function(e){if(!("button"in e)&&t._k(e.keyCode,"up",38))return null;e.preventDefault(),t.pointerBackward()},function(e){return"button"in e||!t._k(e.keyCode,"enter",13)?(e.preventDefault(),e.stopPropagation(),e.target!==e.currentTarget?null:void t.addPointerElement(e)):null},function(e){if(!("button"in e)&&t._k(e.keyCode,"delete",[8,46]))return null;e.stopPropagation(),t.removeLastElement()}]}}):t._e(),t._v(" "),t.searchable?t._e():i("span",{staticClass:"multiselect__single",domProps:{textContent:t._s(t.currentOptionLabel)},on:{mousedown:function(e){e.preventDefault(),t.toggle(e)}}})],2),t._v(" "),i("transition",{attrs:{name:"multiselect"}},[i("div",{directives:[{name:"show",rawName:"v-show",value:t.isOpen,expression:"isOpen"}],ref:"list",staticClass:"multiselect__content-wrapper",style:{maxHeight:t.optimizedHeight+"px"},on:{focus:t.activate,mousedown:function(t){t.preventDefault()}}},[i("ul",{staticClass:"multiselect__content",style:t.contentStyle},[t._t("beforeList"),t._v(" "),t.multiple&&t.max===t.internalValue.length?i("li",[i("span",{staticClass:"multiselect__option"},[t._t("maxElements",[t._v("Maximum of "+t._s(t.max)+" options selected. First remove a selected option to select another.")])],2)]):t._e(),t._v(" "),!t.max||t.internalValue.length<t.max?t._l(t.filteredOptions,function(e,n){return i("li",{key:n,staticClass:"multiselect__element"},[e&&(e.$isLabel||e.$isDisabled)?t._e():i("span",{staticClass:"multiselect__option",class:t.optionHighlight(n,e),attrs:{"data-select":e&&e.isTag?t.tagPlaceholder:t.selectLabelText,"data-selected":t.selectedLabelText,"data-deselect":t.deselectLabelText},on:{click:function(i){i.stopPropagation(),t.select(e)},mouseenter:function(e){if(e.target!==e.currentTarget)return null;t.pointerSet(n)}}},[t._t("option",[i("span",[t._v(t._s(t.getOptionLabel(e)))])],{option:e,search:t.search})],2),t._v(" "),e&&(e.$isLabel||e.$isDisabled)?i("span",{staticClass:"multiselect__option multiselect__option--disabled",class:t.optionHighlight(n,e)},[t._t("option",[i("span",[t._v(t._s(t.getOptionLabel(e)))])],{option:e,search:t.search})],2):t._e()])}):t._e(),t._v(" "),i("li",{directives:[{name:"show",rawName:"v-show",value:t.showNoResults&&0===t.filteredOptions.length&&t.search&&!t.loading,expression:"showNoResults && (filteredOptions.length === 0 && search && !loading)"}]},[i("span",{staticClass:"multiselect__option"},[t._t("noResult",[t._v("No elements found. Consider changing the search query.")])],2)]),t._v(" "),t._t("afterList")],2)])])],2)},staticRenderFns:[]}}])});
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(531)
+}
+var normalizeComponent = __webpack_require__(42)
+/* script */
+var __vue_script__ = __webpack_require__(533)
+/* template */
+var __vue_template__ = __webpack_require__(534)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/card/card.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-15e33d3a", Component.options)
+  } else {
+    hotAPI.reload("data-v-15e33d3a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 
-/***/ 706:
+/***/ 531:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(532);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(26)("d6b775a8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15e33d3a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./card.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 532:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(17)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dNone{\n    display: none;\n}\n.rotate{\n    transform:rotate(180deg);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 533:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'card',
+    data: function data() {
+        return {
+            show: true,
+            isActive: false
+        };
+    },
+
+    methods: {
+        hide: function hide() {
+            this.isActive = true;
+        }
+    },
+    mounted: function mounted() {},
+    props: {
+        title: {
+            required: false
+        }
+    },
+    destroy: function destroy() {}
+});
+
+/***/ }),
+
+/***/ 534:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card", class: { dNone: _vm.isActive } }, [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", {
+        staticClass: "card-title",
+        domProps: { innerHTML: _vm._s(_vm.title) }
+      }),
+      _vm._v(" "),
+      _c("span", { staticClass: "float-right" }, [
+        _c("i", {
+          staticClass: "fa fa-fw ti-angle-up",
+          class: { rotate: _vm.show },
+          on: {
+            click: function($event) {
+              _vm.show = !_vm.show
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "fa fa-fw ti-close removecard",
+          on: { click: _vm.hide }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.show,
+            expression: "show"
+          }
+        ],
+        staticClass: "card-body"
+      },
+      [_vm._t("default")],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-15e33d3a", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 590:
+/***/ (function(module, exports) {
+
+module.exports=function(e){function t(i){if(n[i])return n[i].exports;var r=n[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,t),r.l=!0,r.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,i){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:i})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="/",t(t.s=76)}([function(e,t){var n=e.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(e,t){var n={}.hasOwnProperty;e.exports=function(e,t){return n.call(e,t)}},function(e,t,n){var i=n(53),r=n(14);e.exports=function(e){return i(r(e))}},function(e,t,n){e.exports=!n(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(e,t,n){var i=n(5),r=n(11);e.exports=n(3)?function(e,t,n){return i.f(e,t,r(1,n))}:function(e,t,n){return e[t]=n,e}},function(e,t,n){var i=n(7),r=n(30),a=n(23),o=Object.defineProperty;t.f=n(3)?Object.defineProperty:function(e,t,n){if(i(e),t=a(t,!0),i(n),r)try{return o(e,t,n)}catch(e){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(e[t]=n.value),e}},function(e,t,n){var i=n(21)("wks"),r=n(12),a=n(0).Symbol,o="function"==typeof a;(e.exports=function(e){return i[e]||(i[e]=o&&a[e]||(o?a:r)("Symbol."+e))}).store=i},function(e,t,n){var i=n(9);e.exports=function(e){if(!i(e))throw TypeError(e+" is not an object!");return e}},function(e,t){e.exports=function(e){try{return!!e()}catch(e){return!0}}},function(e,t){e.exports=function(e){return"object"==typeof e?null!==e:"function"==typeof e}},function(e,t,n){var i=n(35),r=n(15);e.exports=Object.keys||function(e){return i(e,r)}},function(e,t){e.exports=function(e,t){return{enumerable:!(1&e),configurable:!(2&e),writable:!(4&e),value:t}}},function(e,t){var n=0,i=Math.random();e.exports=function(e){return"Symbol(".concat(void 0===e?"":e,")_",(++n+i).toString(36))}},function(e,t){var n=e.exports={version:"2.4.0"};"number"==typeof __e&&(__e=n)},function(e,t){e.exports=function(e){if(void 0==e)throw TypeError("Can't call method on  "+e);return e}},function(e,t){e.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(e,t){e.exports={}},function(e,t){e.exports=!0},function(e,t){t.f={}.propertyIsEnumerable},function(e,t,n){var i=n(5).f,r=n(1),a=n(6)("toStringTag");e.exports=function(e,t,n){e&&!r(e=n?e:e.prototype,a)&&i(e,a,{configurable:!0,value:t})}},function(e,t,n){var i=n(21)("keys"),r=n(12);e.exports=function(e){return i[e]||(i[e]=r(e))}},function(e,t,n){var i=n(0),r=i["__core-js_shared__"]||(i["__core-js_shared__"]={});e.exports=function(e){return r[e]||(r[e]={})}},function(e,t){var n=Math.ceil,i=Math.floor;e.exports=function(e){return isNaN(e=+e)?0:(e>0?i:n)(e)}},function(e,t,n){var i=n(9);e.exports=function(e,t){if(!i(e))return e;var n,r;if(t&&"function"==typeof(n=e.toString)&&!i(r=n.call(e)))return r;if("function"==typeof(n=e.valueOf)&&!i(r=n.call(e)))return r;if(!t&&"function"==typeof(n=e.toString)&&!i(r=n.call(e)))return r;throw TypeError("Can't convert object to primitive value")}},function(e,t,n){var i=n(0),r=n(13),a=n(17),o=n(25),s=n(5).f;e.exports=function(e){var t=r.Symbol||(r.Symbol=a?{}:i.Symbol||{});"_"==e.charAt(0)||e in t||s(t,e,{value:o.f(e)})}},function(e,t,n){t.f=n(6)},function(e,t,n){"use strict";t.a={translations:{af:{language:"Afrikaans",months:{original:["Januarie","Februarie","Maart","April","Mei","Junie","Julie","Augustus","September","Oktober","November","Desember"],abbr:["Jan","Feb","Mrt","Apr","Mei","Jun","Jul","Aug","Sep","Okt","Nov","Des"]},days:["So.","Ma.","Di.","Wo.","Do.","Vr.","Sa."]},ar:{language:"Arabic",rtl:!0,months:{original:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوڤمبر","ديسمبر"],abbr:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوڤمبر","ديسمبر"]},days:["أحد","إثنين","ثلاثاء","أربعاء","خميس","جمعة","سبت"]},bg:{language:"Bulgarian",months:{original:["Януари","Февруари","Март","Април","Май","Юни","Юли","Август","Септември","Октомври","Ноември","Декември"],abbr:["Ян","Фев","Мар","Апр","Май","Юни","Юли","Авг","Сеп","Окт","Ное","Дек"]},days:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"]},bs:{language:"Bosnian",months:{original:["Januar","Februar","Mart","April","Maj","Juni","Juli","Avgust","Septembar","Oktobar","Novembar","Decembar"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"]},days:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"]},cs:{language:"Czech",months:{original:["leden","únor","březen","duben","květen","červen","červenec","srpen","září","říjen","listopad","prosinec"],abbr:["led","úno","bře","dub","kvě","čer","čec","srp","zář","říj","lis","pro"]},days:["ne","po","út","st","čt","pá","so"]},da:{language:"Danish",months:{original:["Januar","Februar","Marts","April","Maj","Juni","Juli","August","September","Oktober","November","December"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec"]},days:["Sø","Ma","Ti","On","To","Fr","Lø"]},de:{language:"German",months:{original:["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],abbr:["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]},days:["So.","Mo.","Di.","Mi.","Do.","Fr.","Sa."]},ee:{language:"Estonian",months:{original:["Jaanuar","Veebruar","Märts","Aprill","Mai","Juuni","Juuli","August","September","Oktoober","November","Detsember"],abbr:["Jaan","Veebr","Märts","Apr","Mai","Juuni","Juuli","Aug","Sept","Okt","Nov","Dets"]},days:["P","E","T","K","N","R","L"]},el:{language:"Greek",months:{original:["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάϊος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"],abbr:["Ιαν","Φεβ","Μαρ","Απρ","Μαι","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"]},days:["Κυρ","Δευ","Τρι","Τετ","Πεμ","Παρ","Σατ"]},en:{language:"English",months:{original:["January","February","March","April","May","June","July","August","September","October","November","December"],abbr:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},days:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},es:{language:"Spanish",months:{original:["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],abbr:["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"]},days:["Dom","Lun","Mar","Mié","Jue","Vie","Sab"]},ca:{language:"Catalan",months:{original:["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"],abbr:["Gen","Feb","Mar","Abr","Mai","Jun","Jul","Ago","Set","Oct","Nov","Des"]},days:["Diu","Dil","Dmr","Dmc","Dij","Div","Dis"]},fi:{language:"Finish",months:{original:["tammikuu","helmikuu","maaliskuu","huhtikuu","toukokuu","kesäkuu","heinäkuu","elokuu","syyskuu","lokakuu","marraskuu","joulukuu"],abbr:["tammi","helmi","maalis","huhti","touko","kesä","heinä","elo","syys","loka","marras","joulu"]},days:["su","ma","ti","ke","to","pe","la"]},fr:{language:"French",months:{original:["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],abbr:["Jan","Fév","Mar","Avr","Mai","Juin","Juil","Août","Sep","Oct","Nov","Déc"]},days:["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"]},ge:{language:"Georgia",months:{original:["იანვარი","თებერვალი","მარტი","აპრილი","მაისი","ივნისი","ივლისი","აგვისტო","სექტემბერი","ოქტომბერი","ნოემბერი","დეკემბერი"],abbr:["იან","თებ","მარ","აპრ","მაი","ივნ","ივლ","აგვ","სექ","ოქტ","ნოე","დეკ"]},days:["კვი","ორშ","სამ","ოთხ","ხუთ","პარ","შაბ"]},ja:{language:"Japanese",ymd:!0,months:{original:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],abbr:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]},days:["日","月","火","水","木","金","土"]},he:{language:"Hebrew",rtl:!0,months:{original:["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"],abbr:["ינו","פבר","מרץ","אפר","מאי","יונ","יול","אוג","ספט","אוק","נוב","דצמ"]},days:["א","ב","ג","ד","ה","ו","ש"]},hu:{language:"Hungarian",ymd:!0,months:{original:["Január","Február","Március","Április","Május","Június","Július","Augusztus","Szeptember","Október","November","December"],abbr:["Jan","Febr","Márc","Ápr","Máj","Jún","Júl","Aug","Szept","Okt","Nov","Dec"]},days:["Vas","Hét","Ke","Sze","Csü","Pén","Szo"]},hr:{language:"Croatian",months:{original:["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpanj","Kolovoz","Rujan","Listopad","Studeni","Prosinac"],abbr:["Sij","Velj","Ožu","Tra","Svi","Lip","Srp","Kol","Ruj","Lis","Stu","Pro"]},days:["Ned","Pon","Uto","Sri","Čet","Pet","Sub"]},id:{language:"Indonesian",months:{original:["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"],abbr:["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"]},days:["Min","Sen","Sel","Rab","Kam","Jum","Sab"]},it:{language:"Italian",months:{original:["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"],abbr:["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"]},days:["Dom","Lun","Mar","Mer","Gio","Ven","Sab"]},is:{language:"Icelandic",months:{original:["Janúar","Febrúar","Mars","Apríl","Maí","Júní","Júlí","Ágúst","September","Október","Nóvember","Desember"],abbr:["Jan","Feb","Mars","Apr","Maí","Jún","Júl","Ágú","Sep","Okt","Nóv","Des"]},days:["Sun","Mán","Þri","Mið","Fim","Fös","Lau"]},fa:{language:"Persian",months:{original:["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"],abbr:["فرو","ارد","خرد","تیر","مرد","شهر","مهر","آبا","آذر","دی","بهم","اسف"]},days:["یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه","شنبه"]},ko:{language:"Korean",ymd:!0,months:{original:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],abbr:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]},days:["일","월","화","수","목","금","토"]},lb:{language:"Luxembourgish",months:{original:["Januar","Februar","Mäerz","Abrëll","Mäi","Juni","Juli","August","September","Oktober","November","Dezember"],abbr:["Jan","Feb","Mäe","Abr","Mäi","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]},days:["So.","Mé.","Dë.","Më.","Do.","Fr.","Sa."]},lt:{language:"Lithuanian",ymd:!0,months:{original:["Sausis","Vasaris","Kovas","Balandis","Gegužė","Birželis","Liepa","Rugpjūtis","Rugsėjis","Spalis","Lapkritis","Gruodis"],abbr:["Sau","Vas","Kov","Bal","Geg","Bir","Lie","Rugp","Rugs","Spa","Lap","Gru"]},days:["Sek","Pir","Ant","Tre","Ket","Pen","Šeš"]},lv:{language:"Latvian",months:{original:["Janvāris","Februāris","Marts","Aprīlis","Maijs","Jūnijs","Jūlijs","Augusts","Septembris","Oktobris","Novembris","Decembris"],abbr:["Jan","Feb","Mar","Apr","Mai","Jūn","Jūl","Aug","Sep","Okt","Nov","Dec"]},days:["Sv","Pr","Ot","Tr","Ce","Pk","Se"]},mn:{language:"Mongolia",ymd:!0,months:{original:["1 дүгээр сар","2 дугаар сар","3 дугаар сар","4 дүгээр сар","5 дугаар сар","6 дугаар сар","7 дугаар сар","8 дугаар сар","9 дүгээр сар","10 дугаар сар","11 дүгээр сар","12 дугаар сар"],abbr:["1-р сар","2-р сар","3-р сар","4-р сар","5-р сар","6-р сар","7-р сар","8-р сар","9-р сар","10-р сар","11-р сар","12-р сар"]},days:["Ня","Да","Мя","Лх","Пү","Ба","Бя"]},nl:{language:"Dutch",months:{original:["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"],abbr:["jan","feb","maa","apr","mei","jun","jul","aug","sep","okt","nov","dec"]},days:["zo","ma","di","wo","do","vr","za"]},"nb-no":{language:"Norwegian Bokmål",months:{original:["Januar","Februar","Mars","April","Mai","Juni","Juli","August","September","Oktober","November","Desember"],abbr:["Jan","Feb","Mar","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Des"]},days:["Sø","Ma","Ti","On","To","Fr","Lø"]},pl:{language:"Polish",months:{original:["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"],abbr:["Sty","Lut","Mar","Kwi","Maj","Cze","Lip","Sie","Wrz","Paź","Lis","Gru"]},days:["Nd","Pn","Wt","Śr","Czw","Pt","Sob"]},"pt-br":{language:"Brazilian",months:{original:["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],abbr:["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"]},days:["Dom","Seg","Ter","Qua","Qui","Sex","Sab"]},ro:{language:"Romanian",months:{original:["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"],abbr:["Ian","Feb","Mar","Apr","Mai","Iun","Iul","Aug","Sep","Oct","Noi","Dec"]},days:["D","L","Ma","Mi","J","V","S"]},ru:{language:"Russian",months:{original:["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"],abbr:["Янв","Февр","Март","Апр","Май","Июнь","Июль","Авг","Сент","Окт","Нояб","Дек"]},days:["Вс","Пн","Вт","Ср","Чт","Пт","Сб"]},sv:{language:"Swedish",months:{original:["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec"]},days:["Sön","Mån","Tis","Ons","Tor","Fre","Lör"]},sk:{language:"Slovakian",months:{original:["január","február","marec","apríl","máj","jún","júl","august","september","október","november","december"],abbr:["jan","feb","mar","apr","máj","jún","júl","aug","sep","okt","nov","dec"]},days:["ne","po","ut","st","št","pi","so"]},"sl-si":{language:"Sloveian",months:{original:["Januar","Februar","Marec","April","Maj","Junij","Julij","Avgust","September","Oktober","November","December"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"]},days:["Ned","Pon","Tor","Sre","Čet","Pet","Sob"]},sr:{language:"Serbian",months:{original:["Januar","Februar","Mart","April","Maj","Jun","Jul","Avgust","Septembar","Oktobar","Novembar","Decembar"],abbr:["Jan","Feb","Mar","Apr","Maj","Jun","Jul","Avg","Sep","Okt","Nov","Dec"]},days:["Ned","Pon","Uto","Sre","Čet","Pet","Sub"]},"sr-Cyrl":{language:"Serbian in Cyrillic script",months:{original:["Јануар","Фебруар","Март","Април","Мај","Јун","Јул","Август","Септембар","Октобар","Новембар","Децембар"],abbr:["Јан","Феб","Мар","Апр","Мај","Јун","Јул","Авг","Сеп","Окт","Нов","Дец"]},days:["Нед","Пон","Уто","Сре","Чет","Пет","Суб"]},th:{language:"Thai",months:{original:["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"],abbr:["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."]},days:["อา","จ","อ","พ","พฤ","ศ","ส"]},tr:{language:"Turkish",months:{original:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],abbr:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"]},days:["Paz","Pzt","Sal","Çar","Per","Cum","Cmt"]},uk:{language:"Ukraine",months:{original:["Січень","Лютий","Березень","Квітень","Травень","Червень","Липень","Серпень","Вересень","Жовтень","Листопад","Грудень"],abbr:["Січ","Лют","Бер","Квіт","Трав","Чер","Лип","Серп","Вер","Жовт","Лист","Груд"]},days:["Нд","Пн","Вт","Ср","Чт","Пт","Сб"]},ur:{language:"Urdu",rtl:!0,months:{original:["جنوری","فروری","مارچ","اپریل","مئی","جون","جولائی","اگست","سپتمبر","اکتوبر","نومبر","دسمبر"],abbr:["جنوری","فروری","مارچ","اپریل","مئی","جون","جولائی","اگست","سپتمبر","اکتوبر","نومبر","دسمبر"]},days:["اتوار","پیر","منگل","بدھ","جمعرات","جمعہ","ہفتہ"]},vi:{language:"Vientnamese",months:{original:["Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12"],abbr:["T 01","T 02","T 03","T 04","T 05","T 06","T 07","T 08","T 09","T 10","T 11","T 12"]},days:["CN","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"]},zh:{language:"Chinese",ymd:!0,months:{original:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],abbr:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]},days:["日","一","二","三","四","五","六"]}}}},function(e,t){var n={}.toString;e.exports=function(e){return n.call(e).slice(8,-1)}},function(e,t,n){var i=n(9),r=n(0).document,a=i(r)&&i(r.createElement);e.exports=function(e){return a?r.createElement(e):{}}},function(e,t,n){var i=n(0),r=n(13),a=n(50),o=n(4),s=function(e,t,n){var l,u,c,d=e&s.F,h=e&s.G,p=e&s.S,f=e&s.P,g=e&s.B,b=e&s.W,m=h?r:r[t]||(r[t]={}),v=m.prototype,y=h?i:p?i[t]:(i[t]||{}).prototype;h&&(n=t);for(l in n)(u=!d&&y&&void 0!==y[l])&&l in m||(c=u?y[l]:n[l],m[l]=h&&"function"!=typeof y[l]?n[l]:g&&u?a(c,i):b&&y[l]==c?function(e){var t=function(t,n,i){if(this instanceof e){switch(arguments.length){case 0:return new e;case 1:return new e(t);case 2:return new e(t,n)}return new e(t,n,i)}return e.apply(this,arguments)};return t.prototype=e.prototype,t}(c):f&&"function"==typeof c?a(Function.call,c):c,f&&((m.virtual||(m.virtual={}))[l]=c,e&s.R&&v&&!v[l]&&o(v,l,c)))};s.F=1,s.G=2,s.S=4,s.P=8,s.B=16,s.W=32,s.U=64,s.R=128,e.exports=s},function(e,t,n){e.exports=!n(3)&&!n(8)(function(){return 7!=Object.defineProperty(n(28)("div"),"a",{get:function(){return 7}}).a})},function(e,t,n){"use strict";var i=n(17),r=n(29),a=n(36),o=n(4),s=n(1),l=n(16),u=n(55),c=n(19),d=n(62),h=n(6)("iterator"),p=!([].keys&&"next"in[].keys()),f=function(){return this};e.exports=function(e,t,n,g,b,m,v){u(n,t,g);var y,D,M,S=function(e){if(!p&&e in x)return x[e];switch(e){case"keys":case"values":return function(){return new n(this,e)}}return function(){return new n(this,e)}},w=t+" Iterator",_="values"==b,k=!1,x=e.prototype,O=x[h]||x["@@iterator"]||b&&x[b],J=O||S(b),F=b?_?S("entries"):J:void 0,A="Array"==t?x.entries||O:O;if(A&&(M=d(A.call(new e)))!==Object.prototype&&(c(M,w,!0),i||s(M,h)||o(M,h,f)),_&&O&&"values"!==O.name&&(k=!0,J=function(){return O.call(this)}),i&&!v||!p&&!k&&x[h]||o(x,h,J),l[t]=J,l[w]=f,b)if(y={values:_?J:S("values"),keys:m?J:S("keys"),entries:F},v)for(D in y)D in x||a(x,D,y[D]);else r(r.P+r.F*(p||k),t,y);return y}},function(e,t,n){var i=n(7),r=n(59),a=n(15),o=n(20)("IE_PROTO"),s=function(){},l=function(){var e,t=n(28)("iframe"),i=a.length;for(t.style.display="none",n(52).appendChild(t),t.src="javascript:",e=t.contentWindow.document,e.open(),e.write("<script>document.F=Object<\/script>"),e.close(),l=e.F;i--;)delete l.prototype[a[i]];return l()};e.exports=Object.create||function(e,t){var n;return null!==e?(s.prototype=i(e),n=new s,s.prototype=null,n[o]=e):n=l(),void 0===t?n:r(n,t)}},function(e,t,n){var i=n(35),r=n(15).concat("length","prototype");t.f=Object.getOwnPropertyNames||function(e){return i(e,r)}},function(e,t){t.f=Object.getOwnPropertySymbols},function(e,t,n){var i=n(1),r=n(2),a=n(49)(!1),o=n(20)("IE_PROTO");e.exports=function(e,t){var n,s=r(e),l=0,u=[];for(n in s)n!=o&&i(s,n)&&u.push(n);for(;t.length>l;)i(s,n=t[l++])&&(~a(u,n)||u.push(n));return u}},function(e,t,n){e.exports=n(4)},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=n(41),r=n(26);t.default={props:{value:{validator:function(e){return null===e||e instanceof Date||"string"==typeof e||"number"==typeof e}},name:String,refName:String,id:String,format:{type:[String,Function],default:"dd MMM yyyy"},language:{type:String,default:"en"},openDate:{validator:function(e){return null===e||e instanceof Date||"string"==typeof e}},fullMonthName:Boolean,disabled:Object,highlighted:Object,placeholder:String,inline:Boolean,calendarClass:[String,Object],inputClass:[String,Object],wrapperClass:[String,Object],mondayFirst:Boolean,clearButton:Boolean,clearButtonIcon:String,calendarButton:Boolean,calendarButtonIcon:String,calendarButtonIconContent:String,bootstrapStyling:Boolean,initialView:String,disabledPicker:Boolean,required:Boolean,minimumView:{type:String,default:"day"},maximumView:{type:String,default:"year"}},data:function(){return{pageTimestamp:(this.openDate?new Date(this.openDate):new Date).setDate(1),selectedDate:null,showDayView:!1,showMonthView:!1,showYearView:!1,calendarHeight:0}},watch:{value:function(e){this.setValue(e)},openDate:function(){this.setPageDate()},initialView:function(){this.setInitialView()}},computed:{computedInitialView:function(){return this.initialView?this.initialView:this.minimumView},pageDate:function(){return new Date(this.pageTimestamp)},formattedValue:function(){return this.selectedDate?"function"==typeof this.format?this.format(this.selectedDate):i.a.formatDate(new Date(this.selectedDate),this.format,this.translation):null},translation:function(){return r.a.translations[this.language]},currMonthName:function(){var e=this.fullMonthName?this.translation.months.original:this.translation.months.abbr;return i.a.getMonthNameAbbr(this.pageDate.getMonth(),e)},currYear:function(){return this.pageDate.getFullYear()},blankDays:function(){var e=this.pageDate,t=new Date(e.getFullYear(),e.getMonth(),1,e.getHours(),e.getMinutes());return this.mondayFirst?t.getDay()>0?t.getDay()-1:6:t.getDay()},daysOfWeek:function(){if(this.mondayFirst){var e=this.translation.days.slice();return e.push(e.shift()),e}return this.translation.days},days:function(){for(var e=this.pageDate,t=[],n=new Date(e.getFullYear(),e.getMonth(),1,e.getHours(),e.getMinutes()),r=i.a.daysInMonth(n.getFullYear(),n.getMonth()),a=0;a<r;a++)t.push({date:n.getDate(),timestamp:n.getTime(),isSelected:this.isSelectedDate(n),isDisabled:this.isDisabledDate(n),isHighlighted:this.isHighlightedDate(n),isHighlightStart:this.isHighlightStart(n),isHighlightEnd:this.isHighlightEnd(n),isToday:n.toDateString()===(new Date).toDateString(),isWeekend:0===n.getDay()||6===n.getDay(),isSaturday:6===n.getDay(),isSunday:0===n.getDay()}),n.setDate(n.getDate()+1);return t},months:function(){for(var e=this.pageDate,t=[],n=new Date(e.getFullYear(),0,e.getDate(),e.getHours(),e.getMinutes()),r=0;r<12;r++)t.push({month:i.a.getMonthName(r,this.translation.months.original),timestamp:n.getTime(),isSelected:this.isSelectedMonth(n),isDisabled:this.isDisabledMonth(n)}),n.setMonth(n.getMonth()+1);return t},years:function(){for(var e=this.pageDate,t=[],n=new Date(10*Math.floor(e.getFullYear()/10),e.getMonth(),e.getDate(),e.getHours(),e.getMinutes()),i=0;i<10;i++)t.push({year:n.getFullYear(),timestamp:n.getTime(),isSelected:this.isSelectedYear(n),isDisabled:this.isDisabledYear(n)}),n.setFullYear(n.getFullYear()+1);return t},calendarStyle:function(){return{position:this.isInline?"static":void 0}},isOpen:function(){return this.showDayView||this.showMonthView||this.showYearView},isInline:function(){return!!this.inline},isRtl:function(){return!0===this.translation.rtl},isYmd:function(){return!0===this.translation.ymd}},methods:{close:function(e){this.showDayView=this.showMonthView=this.showYearView=!1,this.isInline||(e&&this.$emit("closed"),document.removeEventListener("click",this.clickOutside,!1))},resetDefaultDate:function(){if(null===this.selectedDate)return void this.setPageDate();this.setPageDate(this.selectedDate)},showCalendar:function(){return!this.disabledPicker&&!this.isInline&&(this.isOpen?this.close(!0):(this.setInitialView(),void(this.isInline||this.$emit("opened"))))},setInitialView:function(){var e=this.computedInitialView;if(!this.allowedToShowView(e))throw new Error("initialView '"+this.initialView+"' cannot be rendered based on minimum '"+this.minimumView+"' and maximum '"+this.maximumView+"'");switch(e){case"year":this.showYearCalendar();break;case"month":this.showMonthCalendar();break;default:this.showDayCalendar()}},allowedToShowView:function(e){var t=["day","month","year"],n=t.indexOf(this.minimumView),i=t.indexOf(this.maximumView),r=t.indexOf(e);return r>=n&&r<=i},showDayCalendar:function(){if(!this.allowedToShowView("day"))return!1;this.close(),this.showDayView=!0,this.addOutsideClickListener()},showMonthCalendar:function(){if(!this.allowedToShowView("month"))return!1;this.close(),this.showMonthView=!0,this.addOutsideClickListener()},showYearCalendar:function(){if(!this.allowedToShowView("year"))return!1;this.close(),this.showYearView=!0,this.addOutsideClickListener()},addOutsideClickListener:function(){var e=this;this.isInline||setTimeout(function(){document.addEventListener("click",e.clickOutside,!1)},100)},setDate:function(e){var t=new Date(e);this.selectedDate=new Date(t),this.setPageDate(t),this.$emit("selected",new Date(t)),this.$emit("input",new Date(t))},clearDate:function(){this.selectedDate=null,this.$emit("selected",null),this.$emit("input",null),this.$emit("cleared")},selectDate:function(e){if(e.isDisabled)return this.$emit("selectedDisabled",e),!1;this.setDate(e.timestamp),this.isInline||this.close(!0)},selectMonth:function(e){if(e.isDisabled)return!1;var t=new Date(e.timestamp);this.allowedToShowView("day")?(this.setPageDate(t),this.$emit("changedMonth",e),this.showDayCalendar()):(this.setDate(t),this.isInline||this.close(!0))},selectYear:function(e){if(e.isDisabled)return!1;var t=new Date(e.timestamp);this.allowedToShowView("month")?(this.setPageDate(t),this.$emit("changedYear",e),this.showMonthCalendar()):(this.setDate(t),this.isInline||this.close(!0))},getPageDate:function(){return this.pageDate.getDate()},getPageMonth:function(){return this.pageDate.getMonth()},getPageYear:function(){return this.pageDate.getFullYear()},getPageDecade:function(){var e=10*Math.floor(this.pageDate.getFullYear()/10);return e+" - "+(e+9)},changeMonth:function(e){var t=this.pageDate;t.setMonth(t.getMonth()+e),this.setPageDate(t),this.$emit("changedMonth",t)},previousMonth:function(){this.previousMonthDisabled()||this.changeMonth(-1)},previousMonthDisabled:function(){if(!this.disabled||!this.disabled.to)return!1;var e=this.pageDate;return this.disabled.to.getMonth()>=e.getMonth()&&this.disabled.to.getFullYear()>=e.getFullYear()},nextMonth:function(){this.nextMonthDisabled()||this.changeMonth(1)},nextMonthDisabled:function(){if(!this.disabled||!this.disabled.from)return!1;var e=this.pageDate;return this.disabled.from.getMonth()<=e.getMonth()&&this.disabled.from.getFullYear()<=e.getFullYear()},changeYear:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"changedYear",n=this.pageDate;n.setYear(n.getFullYear()+e),this.setPageDate(n),this.$emit(t,n)},previousYear:function(){this.previousYearDisabled()||this.changeYear(-1)},previousYearDisabled:function(){return!(!this.disabled||!this.disabled.to)&&this.disabled.to.getFullYear()>=this.pageDate.getFullYear()},nextYear:function(){this.nextYearDisabled()||this.changeYear(1)},nextYearDisabled:function(){return!(!this.disabled||!this.disabled.from)&&this.disabled.from.getFullYear()<=this.pageDate.getFullYear()},previousDecade:function(){this.previousDecadeDisabled()||this.changeYear(-10,"changeDecade")},previousDecadeDisabled:function(){return!(!this.disabled||!this.disabled.to)&&10*Math.floor(this.disabled.to.getFullYear()/10)>=10*Math.floor(this.pageDate.getFullYear()/10)},nextDecade:function(){this.nextDecadeDisabled()||this.changeYear(10,"changeDecade")},nextDecadeDisabled:function(){return!(!this.disabled||!this.disabled.from)&&10*Math.ceil(this.disabled.from.getFullYear()/10)<=10*Math.ceil(this.pageDate.getFullYear()/10)},isSelectedDate:function(e){return this.selectedDate&&this.selectedDate.toDateString()===e.toDateString()},isDisabledDate:function(e){var t=!1;return void 0!==this.disabled&&(void 0!==this.disabled.dates&&this.disabled.dates.forEach(function(n){if(e.toDateString()===n.toDateString())return t=!0,!0}),void 0!==this.disabled.to&&this.disabled.to&&e<this.disabled.to&&(t=!0),void 0!==this.disabled.from&&this.disabled.from&&e>this.disabled.from&&(t=!0),void 0!==this.disabled.ranges&&this.disabled.ranges.forEach(function(n){if(void 0!==n.from&&n.from&&void 0!==n.to&&n.to&&e<n.to&&e>n.from)return t=!0,!0}),void 0!==this.disabled.days&&-1!==this.disabled.days.indexOf(e.getDay())&&(t=!0),void 0!==this.disabled.daysOfMonth&&-1!==this.disabled.daysOfMonth.indexOf(e.getDate())&&(t=!0),"function"==typeof this.disabled.customPredictor&&this.disabled.customPredictor(e)&&(t=!0),t)},isHighlightedDate:function(e){if((!this.highlighted||!this.highlighted.includeDisabled)&&this.isDisabledDate(e))return!1;var t=!1;return void 0!==this.highlighted&&(void 0!==this.highlighted.dates&&this.highlighted.dates.forEach(function(n){if(e.toDateString()===n.toDateString())return t=!0,!0}),this.isDefined(this.highlighted.from)&&this.isDefined(this.highlighted.to)&&(t=e>=this.highlighted.from&&e<=this.highlighted.to),void 0!==this.highlighted.days&&-1!==this.highlighted.days.indexOf(e.getDay())&&(t=!0),void 0!==this.highlighted.daysOfMonth&&-1!==this.highlighted.daysOfMonth.indexOf(e.getDate())&&(t=!0),"function"==typeof this.highlighted.customPredictor&&this.highlighted.customPredictor(e)&&(t=!0),t)},isHighlightStart:function(e){return this.isHighlightedDate(e)&&this.highlighted.from instanceof Date&&this.highlighted.from.getFullYear()===e.getFullYear()&&this.highlighted.from.getMonth()===e.getMonth()&&this.highlighted.from.getDate()===e.getDate()},isHighlightEnd:function(e){return this.isHighlightedDate(e)&&this.highlighted.to instanceof Date&&this.highlighted.to.getFullYear()===e.getFullYear()&&this.highlighted.to.getMonth()===e.getMonth()&&this.highlighted.to.getDate()===e.getDate()},isDefined:function(e){return void 0!==e&&e},isSelectedMonth:function(e){return this.selectedDate&&this.selectedDate.getFullYear()===e.getFullYear()&&this.selectedDate.getMonth()===e.getMonth()},isDisabledMonth:function(e){var t=!1;return void 0!==this.disabled&&(void 0!==this.disabled.to&&this.disabled.to&&(e.getMonth()<this.disabled.to.getMonth()&&e.getFullYear()<=this.disabled.to.getFullYear()||e.getFullYear()<this.disabled.to.getFullYear())&&(t=!0),void 0!==this.disabled.from&&this.disabled.from&&(this.disabled.from&&e.getMonth()>this.disabled.from.getMonth()&&e.getFullYear()>=this.disabled.from.getFullYear()||e.getFullYear()>this.disabled.from.getFullYear())&&(t=!0),t)},isSelectedYear:function(e){return this.selectedDate&&this.selectedDate.getFullYear()===e.getFullYear()},isDisabledYear:function(e){var t=!1;return!(void 0===this.disabled||!this.disabled)&&(void 0!==this.disabled.to&&this.disabled.to&&e.getFullYear()<this.disabled.to.getFullYear()&&(t=!0),void 0!==this.disabled.from&&this.disabled.from&&e.getFullYear()>this.disabled.from.getFullYear()&&(t=!0),t)},setValue:function(e){if("string"==typeof e||"number"==typeof e){var t=new Date(e);e=isNaN(t.valueOf())?null:t}if(!e)return this.setPageDate(),void(this.selectedDate=null);this.selectedDate=e,this.setPageDate(e)},setPageDate:function(e){e||(e=this.openDate?new Date(this.openDate):new Date),this.pageTimestamp=new Date(e).setDate(1)},clickOutside:function(e){if(this.$el&&!this.$el.contains(e.target)){if(this.isInline)return this.showDayCalendar();this.resetDefaultDate(),this.close(!0),document.removeEventListener("click",this.clickOutside,!1)}},dayClasses:function(e){return{selected:e.isSelected,disabled:e.isDisabled,highlighted:e.isHighlighted,today:e.isToday,weekend:e.isWeekend,sat:e.isSaturday,sun:e.isSunday,"highlight-start":e.isHighlightStart,"highlight-end":e.isHighlightEnd}},init:function(){this.value&&this.setValue(this.value),this.isInline&&this.setInitialView()}},mounted:function(){this.init()}}},function(e,t){e.exports=function(e,t,n,i,r){var a,o=e=e||{},s=typeof e.default;"object"!==s&&"function"!==s||(a=e,o=e.default);var l="function"==typeof o?o.options:o;t&&(l.render=t.render,l.staticRenderFns=t.staticRenderFns),i&&(l._scopeId=i);var u;if(r?(u=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),n&&n.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(r)},l._ssrRegister=u):n&&(u=n),u){var c=l.functional,d=c?l.render:l.beforeCreate;c?l.render=function(e,t){return u.call(t),d(e,t)}:l.beforeCreate=d?[].concat(d,u):[u]}return{esModule:a,exports:o,options:l}}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"vdp-datepicker",class:[e.wrapperClass,e.isRtl?"rtl":""]},[n("div",{class:{"input-group":e.bootstrapStyling}},[e.calendarButton?n("span",{staticClass:"vdp-datepicker__calendar-button",class:{"input-group-addon":e.bootstrapStyling},style:{"cursor:not-allowed;":e.disabledPicker},on:{click:e.showCalendar}},[n("i",{class:e.calendarButtonIcon},[e._v("\n        "+e._s(e.calendarButtonIconContent)+"\n        "),e.calendarButtonIcon?e._e():n("span",[e._v("…")])])]):e._e(),e._v(" "),n("input",{ref:e.refName,class:[e.inputClass,{"form-control":e.bootstrapStyling}],attrs:{type:e.inline?"hidden":"text",name:e.name,id:e.id,"open-date":e.openDate,placeholder:e.placeholder,"clear-button":e.clearButton,disabled:e.disabledPicker,required:e.required,readonly:""},domProps:{value:e.formattedValue},on:{click:e.showCalendar}}),e._v(" "),e.clearButton&&e.selectedDate?n("span",{staticClass:"vdp-datepicker__clear-button",class:{"input-group-addon":e.bootstrapStyling},on:{click:function(t){e.clearDate()}}},[n("i",{class:e.clearButtonIcon},[e.clearButtonIcon?e._e():n("span",[e._v("×")])])]):e._e()]),e._v(" "),e.allowedToShowView("day")?[n("div",{directives:[{name:"show",rawName:"v-show",value:e.showDayView,expression:"showDayView"}],class:[e.calendarClass,"vdp-datepicker__calendar"],style:e.calendarStyle},[n("header",[n("span",{staticClass:"prev",class:{disabled:e.isRtl?e.nextMonthDisabled(e.pageTimestamp):e.previousMonthDisabled(e.pageTimestamp)},on:{click:function(t){e.isRtl?e.nextMonth():e.previousMonth()}}},[e._v("<")]),e._v(" "),n("span",{class:e.allowedToShowView("month")?"up":"",on:{click:e.showMonthCalendar}},[e._v(e._s(e.isYmd?e.currYear:e.currMonthName)+" "+e._s(e.isYmd?e.currMonthName:e.currYear))]),e._v(" "),n("span",{staticClass:"next",class:{disabled:e.isRtl?e.previousMonthDisabled(e.pageTimestamp):e.nextMonthDisabled(e.pageTimestamp)},on:{click:function(t){e.isRtl?e.previousMonth():e.nextMonth()}}},[e._v(">")])]),e._v(" "),n("div",{class:e.isRtl?"flex-rtl":""},[e._l(e.daysOfWeek,function(t){return n("span",{key:t.timestamp,staticClass:"cell day-header"},[e._v(e._s(t))])}),e._v(" "),e.blankDays>0?e._l(e.blankDays,function(e){return n("span",{key:e.timestamp,staticClass:"cell day blank"})}):e._e(),e._l(e.days,function(t){return n("span",{key:t.timestamp,staticClass:"cell day",class:e.dayClasses(t),attrs:{"track-by":"timestamp"},on:{click:function(n){e.selectDate(t)}}},[e._v(e._s(t.date))])})],2)])]:e._e(),e._v(" "),e.allowedToShowView("month")?[n("div",{directives:[{name:"show",rawName:"v-show",value:e.showMonthView,expression:"showMonthView"}],class:[e.calendarClass,"vdp-datepicker__calendar"],style:e.calendarStyle},[n("header",[n("span",{staticClass:"prev",class:{disabled:e.previousYearDisabled(e.pageTimestamp)},on:{click:e.previousYear}},[e._v("<")]),e._v(" "),n("span",{class:e.allowedToShowView("year")?"up":"",on:{click:e.showYearCalendar}},[e._v(e._s(e.getPageYear()))]),e._v(" "),n("span",{staticClass:"next",class:{disabled:e.nextYearDisabled(e.pageTimestamp)},on:{click:e.nextYear}},[e._v(">")])]),e._v(" "),e._l(e.months,function(t){return n("span",{key:t.timestamp,staticClass:"cell month",class:{selected:t.isSelected,disabled:t.isDisabled},attrs:{"track-by":"timestamp"},on:{click:function(n){n.stopPropagation(),e.selectMonth(t)}}},[e._v(e._s(t.month))])})],2)]:e._e(),e._v(" "),e.allowedToShowView("year")?[n("div",{directives:[{name:"show",rawName:"v-show",value:e.showYearView,expression:"showYearView"}],class:[e.calendarClass,"vdp-datepicker__calendar"],style:e.calendarStyle},[n("header",[n("span",{staticClass:"prev",class:{disabled:e.previousDecadeDisabled(e.pageTimestamp)},on:{click:e.previousDecade}},[e._v("<")]),e._v(" "),n("span",[e._v(e._s(e.getPageDecade()))]),e._v(" "),n("span",{staticClass:"next",class:{disabled:e.nextMonthDisabled(e.pageTimestamp)},on:{click:e.nextDecade}},[e._v(">")])]),e._v(" "),e._l(e.years,function(t){return n("span",{key:t.timestamp,staticClass:"cell year",class:{selected:t.isSelected,disabled:t.isDisabled},attrs:{"track-by":"timestamp"},on:{click:function(n){n.stopPropagation(),e.selectYear(t)}}},[e._v(e._s(t.year))])})],2)]:e._e()],2)},staticRenderFns:[]}},function(e,t,n){var i=n(74);"string"==typeof i&&(i=[[e.i,i,""]]),i.locals&&(e.exports=i.locals);n(77)("7da62ad4",i,!0)},function(e,t,n){"use strict";var i=n(44),r=n.n(i),a=n(26);t.a={isValidDate:function(e){return"[object Date]"===Object.prototype.toString.call(e)&&!isNaN(e.getTime())},getDayNameAbbr:function(e,t){if("object"!==(void 0===e?"undefined":r()(e)))throw TypeError("Invalid Type");return t[e.getDay()]},getMonthName:function(e,t){if(!t)throw Error("missing 2nd parameter Months array");if("object"===(void 0===e?"undefined":r()(e)))return t[e.getMonth()];if("number"==typeof e)return t[e];throw TypeError("Invalid type")},getMonthNameAbbr:function(e,t){if(!t)throw Error("missing 2nd paramter Months array");if("object"===(void 0===e?"undefined":r()(e)))return t[e.getMonth()];if("number"==typeof e)return t[e];throw TypeError("Invalid type")},daysInMonth:function(e,t){return/8|3|5|10/.test(t)?30:1===t?(e%4||!(e%100))&&e%400?28:29:31},getNthSuffix:function(e){switch(e){case 1:case 21:case 31:return"st";case 2:case 22:return"nd";case 3:case 23:return"rd";default:return"th"}},formatDate:function(e,t,n){n=n||a.a.translations.en;var i=e.getFullYear(),r=e.getMonth()+1,o=e.getDate();return t.replace(/dd/,("0"+o).slice(-2)).replace(/d/,o).replace(/yyyy/,i).replace(/yy/,String(i).slice(2)).replace(/MMMM/,this.getMonthName(e.getMonth(),n.months.original)).replace(/MMM/,this.getMonthNameAbbr(e.getMonth(),n.months.abbr)).replace(/MM/,("0"+r).slice(-2)).replace(/M(?!a|ä|e)/,r).replace(/su/,this.getNthSuffix(e.getDate())).replace(/D(?!e|é|i)/,this.getDayNameAbbr(e,n.days))},createDateArray:function(e,t){for(var n=[];e<=t;)n.push(new Date(e)),e=new Date(e).setDate(new Date(e).getDate()+1);return n}}},function(e,t,n){e.exports={default:n(45),__esModule:!0}},function(e,t,n){e.exports={default:n(46),__esModule:!0}},function(e,t,n){"use strict";function i(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var r=n(43),a=i(r),o=n(42),s=i(o),l="function"==typeof s.default&&"symbol"==typeof a.default?function(e){return typeof e}:function(e){return e&&"function"==typeof s.default&&e.constructor===s.default&&e!==s.default.prototype?"symbol":typeof e};t.default="function"==typeof s.default&&"symbol"===l(a.default)?function(e){return void 0===e?"undefined":l(e)}:function(e){return e&&"function"==typeof s.default&&e.constructor===s.default&&e!==s.default.prototype?"symbol":void 0===e?"undefined":l(e)}},function(e,t,n){n(70),n(68),n(71),n(72),e.exports=n(13).Symbol},function(e,t,n){n(69),n(73),e.exports=n(25).f("iterator")},function(e,t){e.exports=function(e){if("function"!=typeof e)throw TypeError(e+" is not a function!");return e}},function(e,t){e.exports=function(){}},function(e,t,n){var i=n(2),r=n(65),a=n(64);e.exports=function(e){return function(t,n,o){var s,l=i(t),u=r(l.length),c=a(o,u);if(e&&n!=n){for(;u>c;)if((s=l[c++])!=s)return!0}else for(;u>c;c++)if((e||c in l)&&l[c]===n)return e||c||0;return!e&&-1}}},function(e,t,n){var i=n(47);e.exports=function(e,t,n){if(i(e),void 0===t)return e;switch(n){case 1:return function(n){return e.call(t,n)};case 2:return function(n,i){return e.call(t,n,i)};case 3:return function(n,i,r){return e.call(t,n,i,r)}}return function(){return e.apply(t,arguments)}}},function(e,t,n){var i=n(10),r=n(34),a=n(18);e.exports=function(e){var t=i(e),n=r.f;if(n)for(var o,s=n(e),l=a.f,u=0;s.length>u;)l.call(e,o=s[u++])&&t.push(o);return t}},function(e,t,n){e.exports=n(0).document&&document.documentElement},function(e,t,n){var i=n(27);e.exports=Object("z").propertyIsEnumerable(0)?Object:function(e){return"String"==i(e)?e.split(""):Object(e)}},function(e,t,n){var i=n(27);e.exports=Array.isArray||function(e){return"Array"==i(e)}},function(e,t,n){"use strict";var i=n(32),r=n(11),a=n(19),o={};n(4)(o,n(6)("iterator"),function(){return this}),e.exports=function(e,t,n){e.prototype=i(o,{next:r(1,n)}),a(e,t+" Iterator")}},function(e,t){e.exports=function(e,t){return{value:t,done:!!e}}},function(e,t,n){var i=n(10),r=n(2);e.exports=function(e,t){for(var n,a=r(e),o=i(a),s=o.length,l=0;s>l;)if(a[n=o[l++]]===t)return n}},function(e,t,n){var i=n(12)("meta"),r=n(9),a=n(1),o=n(5).f,s=0,l=Object.isExtensible||function(){return!0},u=!n(8)(function(){return l(Object.preventExtensions({}))}),c=function(e){o(e,i,{value:{i:"O"+ ++s,w:{}}})},d=function(e,t){if(!r(e))return"symbol"==typeof e?e:("string"==typeof e?"S":"P")+e;if(!a(e,i)){if(!l(e))return"F";if(!t)return"E";c(e)}return e[i].i},h=function(e,t){if(!a(e,i)){if(!l(e))return!0;if(!t)return!1;c(e)}return e[i].w},p=function(e){return u&&f.NEED&&l(e)&&!a(e,i)&&c(e),e},f=e.exports={KEY:i,NEED:!1,fastKey:d,getWeak:h,onFreeze:p}},function(e,t,n){var i=n(5),r=n(7),a=n(10);e.exports=n(3)?Object.defineProperties:function(e,t){r(e);for(var n,o=a(t),s=o.length,l=0;s>l;)i.f(e,n=o[l++],t[n]);return e}},function(e,t,n){var i=n(18),r=n(11),a=n(2),o=n(23),s=n(1),l=n(30),u=Object.getOwnPropertyDescriptor;t.f=n(3)?u:function(e,t){if(e=a(e),t=o(t,!0),l)try{return u(e,t)}catch(e){}if(s(e,t))return r(!i.f.call(e,t),e[t])}},function(e,t,n){var i=n(2),r=n(33).f,a={}.toString,o="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],s=function(e){try{return r(e)}catch(e){return o.slice()}};e.exports.f=function(e){return o&&"[object Window]"==a.call(e)?s(e):r(i(e))}},function(e,t,n){var i=n(1),r=n(66),a=n(20)("IE_PROTO"),o=Object.prototype;e.exports=Object.getPrototypeOf||function(e){return e=r(e),i(e,a)?e[a]:"function"==typeof e.constructor&&e instanceof e.constructor?e.constructor.prototype:e instanceof Object?o:null}},function(e,t,n){var i=n(22),r=n(14);e.exports=function(e){return function(t,n){var a,o,s=String(r(t)),l=i(n),u=s.length;return l<0||l>=u?e?"":void 0:(a=s.charCodeAt(l),a<55296||a>56319||l+1===u||(o=s.charCodeAt(l+1))<56320||o>57343?e?s.charAt(l):a:e?s.slice(l,l+2):o-56320+(a-55296<<10)+65536)}}},function(e,t,n){var i=n(22),r=Math.max,a=Math.min;e.exports=function(e,t){return e=i(e),e<0?r(e+t,0):a(e,t)}},function(e,t,n){var i=n(22),r=Math.min;e.exports=function(e){return e>0?r(i(e),9007199254740991):0}},function(e,t,n){var i=n(14);e.exports=function(e){return Object(i(e))}},function(e,t,n){"use strict";var i=n(48),r=n(56),a=n(16),o=n(2);e.exports=n(31)(Array,"Array",function(e,t){this._t=o(e),this._i=0,this._k=t},function(){var e=this._t,t=this._k,n=this._i++;return!e||n>=e.length?(this._t=void 0,r(1)):"keys"==t?r(0,n):"values"==t?r(0,e[n]):r(0,[n,e[n]])},"values"),a.Arguments=a.Array,i("keys"),i("values"),i("entries")},function(e,t){},function(e,t,n){"use strict";var i=n(63)(!0);n(31)(String,"String",function(e){this._t=String(e),this._i=0},function(){var e,t=this._t,n=this._i;return n>=t.length?{value:void 0,done:!0}:(e=i(t,n),this._i+=e.length,{value:e,done:!1})})},function(e,t,n){"use strict";var i=n(0),r=n(1),a=n(3),o=n(29),s=n(36),l=n(58).KEY,u=n(8),c=n(21),d=n(19),h=n(12),p=n(6),f=n(25),g=n(24),b=n(57),m=n(51),v=n(54),y=n(7),D=n(2),M=n(23),S=n(11),w=n(32),_=n(61),k=n(60),x=n(5),O=n(10),J=k.f,F=x.f,A=_.f,j=i.Symbol,T=i.JSON,N=T&&T.stringify,Y=p("_hidden"),C=p("toPrimitive"),P={}.propertyIsEnumerable,V=c("symbol-registry"),E=c("symbols"),I=c("op-symbols"),L=Object.prototype,z="function"==typeof j,B=i.QObject,R=!B||!B.prototype||!B.prototype.findChild,H=a&&u(function(){return 7!=w(F({},"a",{get:function(){return F(this,"a",{value:7}).a}})).a})?function(e,t,n){var i=J(L,t);i&&delete L[t],F(e,t,n),i&&e!==L&&F(L,t,i)}:F,G=function(e){var t=E[e]=w(j.prototype);return t._k=e,t},$=z&&"symbol"==typeof j.iterator?function(e){return"symbol"==typeof e}:function(e){return e instanceof j},U=function(e,t,n){return e===L&&U(I,t,n),y(e),t=M(t,!0),y(n),r(E,t)?(n.enumerable?(r(e,Y)&&e[Y][t]&&(e[Y][t]=!1),n=w(n,{enumerable:S(0,!1)})):(r(e,Y)||F(e,Y,S(1,{})),e[Y][t]=!0),H(e,t,n)):F(e,t,n)},K=function(e,t){y(e);for(var n,i=m(t=D(t)),r=0,a=i.length;a>r;)U(e,n=i[r++],t[n]);return e},W=function(e,t){return void 0===t?w(e):K(w(e),t)},q=function(e){var t=P.call(this,e=M(e,!0));return!(this===L&&r(E,e)&&!r(I,e))&&(!(t||!r(this,e)||!r(E,e)||r(this,Y)&&this[Y][e])||t)},X=function(e,t){if(e=D(e),t=M(t,!0),e!==L||!r(E,t)||r(I,t)){var n=J(e,t);return!n||!r(E,t)||r(e,Y)&&e[Y][t]||(n.enumerable=!0),n}},Q=function(e){for(var t,n=A(D(e)),i=[],a=0;n.length>a;)r(E,t=n[a++])||t==Y||t==l||i.push(t);return i},Z=function(e){for(var t,n=e===L,i=A(n?I:D(e)),a=[],o=0;i.length>o;)!r(E,t=i[o++])||n&&!r(L,t)||a.push(E[t]);return a};z||(j=function(){if(this instanceof j)throw TypeError("Symbol is not a constructor!");var e=h(arguments.length>0?arguments[0]:void 0),t=function(n){this===L&&t.call(I,n),r(this,Y)&&r(this[Y],e)&&(this[Y][e]=!1),H(this,e,S(1,n))};return a&&R&&H(L,e,{configurable:!0,set:t}),G(e)},s(j.prototype,"toString",function(){return this._k}),k.f=X,x.f=U,n(33).f=_.f=Q,n(18).f=q,n(34).f=Z,a&&!n(17)&&s(L,"propertyIsEnumerable",q,!0),f.f=function(e){return G(p(e))}),o(o.G+o.W+o.F*!z,{Symbol:j});for(var ee="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),te=0;ee.length>te;)p(ee[te++]);for(var ee=O(p.store),te=0;ee.length>te;)g(ee[te++]);o(o.S+o.F*!z,"Symbol",{for:function(e){return r(V,e+="")?V[e]:V[e]=j(e)},keyFor:function(e){if($(e))return b(V,e);throw TypeError(e+" is not a symbol!")},useSetter:function(){R=!0},useSimple:function(){R=!1}}),o(o.S+o.F*!z,"Object",{create:W,defineProperty:U,defineProperties:K,getOwnPropertyDescriptor:X,getOwnPropertyNames:Q,getOwnPropertySymbols:Z}),T&&o(o.S+o.F*(!z||u(function(){var e=j();return"[null]"!=N([e])||"{}"!=N({a:e})||"{}"!=N(Object(e))})),"JSON",{stringify:function(e){if(void 0!==e&&!$(e)){for(var t,n,i=[e],r=1;arguments.length>r;)i.push(arguments[r++]);return t=i[1],"function"==typeof t&&(n=t),!n&&v(t)||(t=function(e,t){if(n&&(t=n.call(this,e,t)),!$(t))return t}),i[1]=t,N.apply(T,i)}}}),j.prototype[C]||n(4)(j.prototype,C,j.prototype.valueOf),d(j,"Symbol"),d(Math,"Math",!0),d(i.JSON,"JSON",!0)},function(e,t,n){n(24)("asyncIterator")},function(e,t,n){n(24)("observable")},function(e,t,n){n(67);for(var i=n(0),r=n(4),a=n(16),o=n(6)("toStringTag"),s=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],l=0;l<5;l++){var u=s[l],c=i[u],d=c&&c.prototype;d&&!d[o]&&r(d,o,u),a[u]=a.Array}},function(e,t,n){t=e.exports=n(75)(!1),t.push([e.i,'.rtl{direction:rtl}.vdp-datepicker{position:relative;text-align:left}.vdp-datepicker *{box-sizing:border-box}.vdp-datepicker__calendar{position:absolute;z-index:100;background:#fff;width:300px;border:1px solid #ccc}.vdp-datepicker__calendar header{display:block;line-height:40px}.vdp-datepicker__calendar header span{display:inline-block;text-align:center;width:71.42857142857143%;float:left}.vdp-datepicker__calendar header .next,.vdp-datepicker__calendar header .prev{width:14.285714285714286%;float:left;text-indent:-10000px;position:relative}.vdp-datepicker__calendar header .next:after,.vdp-datepicker__calendar header .prev:after{content:"";position:absolute;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);border:6px solid transparent}.vdp-datepicker__calendar header .prev:after{border-right:10px solid #000;margin-left:-5px}.vdp-datepicker__calendar header .prev.disabled:after{border-right:10px solid #ddd}.vdp-datepicker__calendar header .next:after{border-left:10px solid #000;margin-left:5px}.vdp-datepicker__calendar header .next.disabled:after{border-left:10px solid #ddd}.vdp-datepicker__calendar header .next:not(.disabled),.vdp-datepicker__calendar header .prev:not(.disabled),.vdp-datepicker__calendar header .up:not(.disabled){cursor:pointer}.vdp-datepicker__calendar header .next:not(.disabled):hover,.vdp-datepicker__calendar header .prev:not(.disabled):hover,.vdp-datepicker__calendar header .up:not(.disabled):hover{background:#eee}.vdp-datepicker__calendar .disabled{color:#ddd;cursor:default}.vdp-datepicker__calendar .flex-rtl{display:-webkit-box;display:-ms-flexbox;display:flex;width:inherit;-ms-flex-wrap:wrap;flex-wrap:wrap}.vdp-datepicker__calendar .cell{display:inline-block;padding:0 5px;width:14.285714285714286%;height:40px;line-height:40px;text-align:center;vertical-align:middle;border:1px solid transparent}.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year{cursor:pointer}.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover{border:1px solid #4bd}.vdp-datepicker__calendar .cell.selected,.vdp-datepicker__calendar .cell.selected.highlighted,.vdp-datepicker__calendar .cell.selected:hover{background:#4bd}.vdp-datepicker__calendar .cell.highlighted{background:#cae5ed}.vdp-datepicker__calendar .cell.highlighted.disabled{color:#a3a3a3}.vdp-datepicker__calendar .cell.grey{color:#888}.vdp-datepicker__calendar .cell.grey:hover{background:inherit}.vdp-datepicker__calendar .cell.day-header{font-size:75%;white-space:no-wrap;cursor:inherit}.vdp-datepicker__calendar .cell.day-header:hover{background:inherit}.vdp-datepicker__calendar .month,.vdp-datepicker__calendar .year{width:33.333%}.vdp-datepicker__calendar-button,.vdp-datepicker__clear-button{cursor:pointer;font-style:normal}.vdp-datepicker__calendar-button.disabled,.vdp-datepicker__clear-button.disabled{color:#999;cursor:default}',""])},function(e,t){function n(e,t){var n=e[1]||"",r=e[3];if(!r)return n;if(t&&"function"==typeof btoa){var a=i(r);return[n].concat(r.sources.map(function(e){return"/*# sourceURL="+r.sourceRoot+e+" */"})).concat([a]).join("\n")}return[n].join("\n")}function i(e){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(e))))+" */"}e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var i=n(t,e);return t[2]?"@media "+t[2]+"{"+i+"}":i}).join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var i={},r=0;r<this.length;r++){var a=this[r][0];"number"==typeof a&&(i[a]=!0)}for(r=0;r<e.length;r++){var o=e[r];"number"==typeof o[0]&&i[o[0]]||(n&&!o[2]?o[2]=n:n&&(o[2]="("+o[2]+") and ("+n+")"),t.push(o))}},t}},function(e,t,n){function i(e){n(40)}var r=n(38)(n(37),n(39),i,null,null);e.exports=r.exports},function(e,t,n){function i(e){for(var t=0;t<e.length;t++){var n=e[t],i=c[n.id];if(i){i.refs++;for(var r=0;r<i.parts.length;r++)i.parts[r](n.parts[r]);for(;r<n.parts.length;r++)i.parts.push(a(n.parts[r]));i.parts.length>n.parts.length&&(i.parts.length=n.parts.length)}else{for(var o=[],r=0;r<n.parts.length;r++)o.push(a(n.parts[r]));c[n.id]={id:n.id,refs:1,parts:o}}}}function r(){var e=document.createElement("style");return e.type="text/css",d.appendChild(e),e}function a(e){var t,n,i=document.querySelector('style[data-vue-ssr-id~="'+e.id+'"]');if(i){if(f)return g;i.parentNode.removeChild(i)}if(b){var a=p++;i=h||(h=r()),t=o.bind(null,i,a,!1),n=o.bind(null,i,a,!0)}else i=r(),t=s.bind(null,i),n=function(){i.parentNode.removeChild(i)};return t(e),function(i){if(i){if(i.css===e.css&&i.media===e.media&&i.sourceMap===e.sourceMap)return;t(e=i)}else n()}}function o(e,t,n,i){var r=n?"":i.css;if(e.styleSheet)e.styleSheet.cssText=m(t,r);else{var a=document.createTextNode(r),o=e.childNodes;o[t]&&e.removeChild(o[t]),o.length?e.insertBefore(a,o[t]):e.appendChild(a)}}function s(e,t){var n=t.css,i=t.media,r=t.sourceMap;if(i&&e.setAttribute("media",i),r&&(n+="\n/*# sourceURL="+r.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(r))))+" */"),e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}var l="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!l)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var u=n(78),c={},d=l&&(document.head||document.getElementsByTagName("head")[0]),h=null,p=0,f=!1,g=function(){},b="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());e.exports=function(e,t,n){f=n;var r=u(e,t);return i(r),function(t){for(var n=[],a=0;a<r.length;a++){var o=r[a],s=c[o.id];s.refs--,n.push(s)}t?(r=u(e,t),i(r)):r=[];for(var a=0;a<n.length;a++){var s=n[a];if(0===s.refs){for(var l=0;l<s.parts.length;l++)s.parts[l]();delete c[s.id]}}}};var m=function(){var e=[];return function(t,n){return e[t]=n,e.filter(Boolean).join("\n")}}()},function(e,t){e.exports=function(e,t){for(var n=[],i={},r=0;r<t.length;r++){var a=t[r],o=a[0],s=a[1],l=a[2],u=a[3],c={id:e+":"+r,css:s,media:l,sourceMap:u};i[o]?i[o].parts.push(c):n.push(i[o]={id:o,parts:[c]})}return n}}]);
+
+/***/ }),
+
+/***/ 749:
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
-		module.exports = factory(__webpack_require__(707));
+		module.exports = factory(__webpack_require__(750));
 	else if(typeof define === 'function' && define.amd)
 		define("VueFlatpickr", ["flatpickr"], factory);
 	else if(typeof exports === 'object')
@@ -12320,7 +11547,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 
 /***/ }),
 
-/***/ 707:
+/***/ 750:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/* flatpickr v4.5.2, @license MIT */
@@ -14498,17 +13725,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(529)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(528)))
 
 /***/ }),
 
-/***/ 708:
+/***/ 751:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(709);
+var content = __webpack_require__(752);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -14534,7 +13761,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 709:
+/***/ 752:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);

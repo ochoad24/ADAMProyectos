@@ -20,7 +20,7 @@
                     </a>
                     <v-dialog v-model="dialog" max-width="600px">
                         <template v-slot:activator="{ on }">
-                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-clone" v-on="on"></i>
+                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-database" v-on="on"></i>
                         </template>
                         <v-card>
                             <v-card-title  style="background-color:#668c2d">
