@@ -1,12 +1,12 @@
 webpackJsonp([36],{
 
-/***/ 1504:
+/***/ 1505:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1505);
+var content = __webpack_require__(1506);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1505:
+/***/ 1506:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.clearfix {\r\n  *zoom: 1;\n}\n.clearfix:before,\r\n.
 
 /***/ }),
 
-/***/ 1506:
+/***/ 1507:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1507);
+var content = __webpack_require__(1508);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1507:
+/***/ 1508:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,13 +84,13 @@ exports.push([module.i, "/*!\n * ClockPicker v0.0.7 for Bootstrap (http://weareo
 
 /***/ }),
 
-/***/ 1508:
+/***/ 1509:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1509);
+var content = __webpack_require__(1510);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -111,7 +111,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1509:
+/***/ 1510:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -126,13 +126,13 @@ exports.push([module.i, "/*\n *  Bootstrap TouchSpin - v3.1.1\n *  A mobile and 
 
 /***/ }),
 
-/***/ 1510:
+/***/ 1511:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1511);
+var content = __webpack_require__(1512);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -153,7 +153,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1511:
+/***/ 1512:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -168,18 +168,18 @@ exports.push([module.i, "\n#example28 + .btn-group > .multiselect {\n    min-wid
 
 /***/ }),
 
-/***/ 1512:
+/***/ 1513:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__ = __webpack_require__(1513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__ = __webpack_require__(1514);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_clockface_js_clockface_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__ = __webpack_require__(1514);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__ = __webpack_require__(1515);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_clockpicker_dist_bootstrap_clockpicker_min_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(753);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__ = __webpack_require__(756);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_touchspin_dist_jquery_bootstrap_touchspin_min_js__);
 //
 //
@@ -429,7 +429,7 @@ var moment = __webpack_require__(0);
 
 /***/ }),
 
-/***/ 1513:
+/***/ 1514:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
@@ -1045,7 +1045,7 @@ var moment = __webpack_require__(0);
 
 /***/ }),
 
-/***/ 1514:
+/***/ 1515:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/*!
@@ -1058,7 +1058,7 @@ var moment = __webpack_require__(0);
 
 /***/ }),
 
-/***/ 1515:
+/***/ 1516:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1377,16 +1377,16 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1504)
-  __webpack_require__(1506)
-  __webpack_require__(1508)
-  __webpack_require__(1510)
+  __webpack_require__(1505)
+  __webpack_require__(1507)
+  __webpack_require__(1509)
+  __webpack_require__(1511)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1512)
+var __vue_script__ = __webpack_require__(1513)
 /* template */
-var __vue_template__ = __webpack_require__(1515)
+var __vue_template__ = __webpack_require__(1516)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11999,7 +11999,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 753:
+/***/ 756:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {/*

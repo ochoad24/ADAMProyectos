@@ -1,12 +1,12 @@
 webpackJsonp([51],{
 
-/***/ 1536:
+/***/ 1537:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1537);
+var content = __webpack_require__(1538);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1537:
+/***/ 1538:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n@charset \"UTF-8\";\n@-webkit-keyframes swal2-show {\
 
 /***/ }),
 
-/***/ 1538:
+/***/ 1539:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1539);
+var content = __webpack_require__(1540);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1539:
+/***/ 1540:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,14 +84,14 @@ exports.push([module.i, "\n.m-a-10 {\n    margin : 40px;\n}\n.swal2-modal h2 {\n
 
 /***/ }),
 
-/***/ 1540:
+/***/ 1541:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__ = __webpack_require__(748);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__ = __webpack_require__(751);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sweetalert2_dist_sweetalert2_js__);
 //
 //
@@ -358,7 +358,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1541:
+/***/ 1542:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -679,14 +679,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1536)
-  __webpack_require__(1538)
+  __webpack_require__(1537)
+  __webpack_require__(1539)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1540)
+var __vue_script__ = __webpack_require__(1541)
 /* template */
-var __vue_template__ = __webpack_require__(1541)
+var __vue_template__ = __webpack_require__(1542)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11306,7 +11306,7 @@ module.exports = "/images/avatar1.jpg?ac60ef718e8f9765886e30ee907fea17";
 
 /***/ }),
 
-/***/ 748:
+/***/ 751:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!

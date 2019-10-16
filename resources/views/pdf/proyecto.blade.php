@@ -106,6 +106,8 @@
     </table>
 </div>
 
+    </table>
+</div>
 
 <br/>
 

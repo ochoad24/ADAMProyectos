@@ -1,12 +1,12 @@
 webpackJsonp([55],{
 
-/***/ 1280:
+/***/ 1281:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1281);
+var content = __webpack_require__(1282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1281:
+/***/ 1282:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.view-icons{\n    font-size: medium;\n}\n.product_box
 
 /***/ }),
 
-/***/ 1282:
+/***/ 1283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -117,28 +117,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(637),
+                src: __webpack_require__(640),
                 price: "$450.45",
                 mrp: "$585",
                 name: "US-Polo Red Shirt",
                 sale: "23%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(736),
+                src: __webpack_require__(739),
                 price: "$280",
                 mrp: "$350",
                 name: "Gift box",
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(737),
+                src: __webpack_require__(740),
                 price: "$1000",
                 mrp: "1500",
                 name: "Apple Macbook pro",
                 sale: "33%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(740),
+                src: __webpack_require__(743),
                 price: "$1000",
                 mrp: "1500",
                 name: "Vintage classic camera",
@@ -152,14 +152,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 sale: "20%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(741),
+                src: __webpack_require__(744),
                 price: "$450.45",
                 mrp: "$585",
                 name: "Stereo headset",
                 sale: "23%",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate earum esse harum illo necessitatibus officia ullam vitae! Cum dolor tempore ut vero. Debitis dolor enim ex harum minima necessitatibus quae."
             }, {
-                src: __webpack_require__(739),
+                src: __webpack_require__(742),
                 price: "$800",
                 mrp: "$1000",
                 name: "Mobile phone",
@@ -189,7 +189,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1283:
+/***/ 1284:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -387,13 +387,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1280)
+  __webpack_require__(1281)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1282)
+var __vue_script__ = __webpack_require__(1283)
 /* template */
-var __vue_template__ = __webpack_require__(1283)
+var __vue_template__ = __webpack_require__(1284)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -447,42 +447,42 @@ module.exports = "/images/product7.png?f5f7429df68ef8bee2043875c2bb4586";
 
 /***/ }),
 
-/***/ 637:
+/***/ 640:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product2.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 736:
+/***/ 739:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product3.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 737:
+/***/ 740:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product4.png?8d301375df448ee3e714523880e4068a";
 
 /***/ }),
 
-/***/ 739:
+/***/ 742:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product6.png?006ad5deb285a23818d1c8fff0c28bf3";
 
 /***/ }),
 
-/***/ 740:
+/***/ 743:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product5.png?e3c6ea40ba93e4b21feb50271e63d60b";
 
 /***/ }),
 
-/***/ 741:
+/***/ 744:
 /***/ (function(module, exports) {
 
 module.exports = "/images/product8.png?2b7f1e8d1e4168dcd54c27e15a633aac";

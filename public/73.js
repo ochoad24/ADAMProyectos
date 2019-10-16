@@ -1,12 +1,12 @@
 webpackJsonp([73],{
 
-/***/ 1516:
+/***/ 1517:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1517);
+var content = __webpack_require__(1518);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1517:
+/***/ 1518:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.new_color .vc-material{\n    height:120px;\n}\n.new_
 
 /***/ }),
 
-/***/ 1518:
+/***/ 1519:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -191,7 +191,7 @@ var defaultProps = {
 
 /***/ }),
 
-/***/ 1519:
+/***/ 1520:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -704,13 +704,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1516)
+  __webpack_require__(1517)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1518)
+var __vue_script__ = __webpack_require__(1519)
 /* template */
-var __vue_template__ = __webpack_require__(1519)
+var __vue_template__ = __webpack_require__(1520)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

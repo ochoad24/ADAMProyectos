@@ -19,7 +19,7 @@
                     <br>
                     
                        
-                       <center> <h4 style="color: #668C2D"> proyecto {{ this.$store.state.proyecto.nombre }}</h4></center>
+                       <center> <h4 style="color: #668C2D" v-if="this.$store.state.proyecto.id !== 0"> Proyecto seleccionado: {{ this.$store.state.proyecto.nombre }} </h4></center>
                    <center><hr class="hrt"></center>
                    <br>
         

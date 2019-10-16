@@ -146,4 +146,35 @@ class TareaController extends Controller
             return response()->json($response, 500);
         }
     }
+
+    public function selectTarea($actividad){
+        return Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
+        ->where([
+            'tarea.idActividad' => $actividad,
+            'tarea.estado' => '1'
+            ])->get();
+    }
+
+    public function tareaPdf(Request $request) {
+        $estadisticas = Tarea::join('estadistica', 'estadistica.idTarea', '=', 'tarea.id')
+        ->join('nombre_estadistica', 'nombre_estadistica.id', '=', 'estadistica.idNombreEstadistica')
+        ->select('nombre_estadistica.nombre', 'estadistica.valor')
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $fotos = Tarea::join('foto', 'foto.idTarea', '=', 'tarea.id')
+        ->select('foto.ruta')
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $encargado = Tarea::join('encargado', 'encargado.idTarea', '=', 'tarea.id')
+        ->join('users', 'users.id', '=', 'encargado.idEmpleado')
+        ->select(DB::raw('CONCAT(users.nombre, " ", users.apellido) as nombre'))
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $tarea = Tarea::select('tarea.tarea', 'tarea.fechaRealizacion', 'tarea.participantes')
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $pdf = \PDF::loadView('pdf.actividad', ['tarea' => $tarea, 'encargado' => $encargado, 'estadisticas' => $estadisticas, 'fotos' => $fotos]);
+        return $pdf->stream('reporte-'.$tarea[0]->tarea.'.pdf');
+
+    }
 }

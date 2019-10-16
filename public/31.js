@@ -1,12 +1,12 @@
 webpackJsonp([31],{
 
-/***/ 2018:
+/***/ 2019:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2019);
+var content = __webpack_require__(2020);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2019:
+/***/ 2020:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.magnify{position:relative;cursor:none\n}\n.magnify-l
 
 /***/ }),
 
-/***/ 2020:
+/***/ 2021:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2021);
+var content = __webpack_require__(2022);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2021:
+/***/ 2022:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,14 +84,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 2022:
+/***/ 2023:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue__ = __webpack_require__(530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__card_card_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(782);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js__ = __webpack_require__(785);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap_magnify_js_bootstrap_magnify_min_js__);
 //
 //
@@ -244,7 +244,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2023:
+/***/ 2024:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -362,7 +362,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(654),
+                        src: __webpack_require__(657),
                         alt: "image"
                       }
                     })
@@ -464,7 +464,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(654),
+                        src: __webpack_require__(657),
                         alt: "image"
                       }
                     })
@@ -542,14 +542,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2018)
-  __webpack_require__(2020)
+  __webpack_require__(2019)
+  __webpack_require__(2021)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2022)
+var __vue_script__ = __webpack_require__(2023)
 /* template */
-var __vue_template__ = __webpack_require__(2023)
+var __vue_template__ = __webpack_require__(2024)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11211,14 +11211,14 @@ module.exports = "/images/32.jpg?1a676da167dfc017310a39f20f320476";
 
 /***/ }),
 
-/***/ 654:
+/***/ 657:
 /***/ (function(module, exports) {
 
 module.exports = "/images/31.jpg?e53101bee6810dfb1ba9913040b36f2e";
 
 /***/ }),
 
-/***/ 782:
+/***/ 785:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {!function(e){"use strict";var t=function(e,t){this.init("magnify",e,t)};t.prototype={constructor:t,init:function(t,n,r){var i="mousemove",s="mouseleave";this.type=t;this.$element=e(n);this.options=this.getOptions(r);this.nativeWidth=0;this.nativeHeight=0;this.$element.wrap('<div class="magnify" >');this.$element.parent(".magnify").append('<div class="magnify-large" >');this.$element.siblings(".magnify-large").css("background","url('"+this.$element.attr("src")+"') no-repeat");this.$element.parent(".magnify").on(i+"."+this.type,e.proxy(this.check,this));this.$element.parent(".magnify").on(s+"."+this.type,e.proxy(this.check,this))},getOptions:function(t){t=e.extend({},e.fn[this.type].defaults,t,this.$element.data());t.delay&&typeof t.delay=="number"&&(t.delay={show:t.delay,hide:t.delay});return t},check:function(t){var n=e(t.currentTarget),r=n.children("img"),i=n.children(".magnify-large");if(!this.nativeWidth&&!this.nativeHeight){var s=new Image;s.src=r.attr("src");this.nativeWidth=s.width;this.nativeHeight=s.height}else{var o=n.offset(),u=t.pageX-o.left,a=t.pageY-o.top;u<n.width()&&a<n.height()&&u>0&&a>0?i.fadeIn(100):i.fadeOut(100);if(i.is(":visible")){var f=Math.round(u/n.width()*this.nativeWidth-i.width()/2)*-1,l=Math.round(a/n.height()*this.nativeHeight-i.height()/2)*-1,c=f+"px "+l+"px",h=u-i.width()/2,p=a-i.height()/2;i.css({left:h,top:p,backgroundPosition:c})}}}};e.fn.magnify=function(n){return this.each(function(){var r=e(this),i=r.data("magnify"),s=typeof n=="object"&&n;i||r.data("tooltip",i=new t(this,s));typeof n=="string"&&i[n]()})};e.fn.magnify.Constructor=t;e.fn.magnify.defaults={delay:0};e(window).on("load",function(){e('[data-toggle="magnify"]').each(function(){var t=e(this);t.magnify()})})}(__webpack_provided_window_dot_jQuery);
