@@ -1,12 +1,12 @@
 webpackJsonp([54],{
 
-/***/ 2001:
+/***/ 2000:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2002);
+var content = __webpack_require__(2001);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2002:
+/***/ 2001:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.dropify-wrapper,\n.dropify-wrapper .dropify-clear {\
 
 /***/ }),
 
-/***/ 2003:
+/***/ 2002:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,7 +133,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2004:
+/***/ 2003:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -243,13 +243,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2001)
+  __webpack_require__(2000)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2003)
+var __vue_script__ = __webpack_require__(2002)
 /* template */
-var __vue_template__ = __webpack_require__(2004)
+var __vue_template__ = __webpack_require__(2003)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

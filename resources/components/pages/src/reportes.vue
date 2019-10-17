@@ -6,26 +6,27 @@
                 Reportes
             </div>
             <v-bottom-nav :value="true" absolute color="transparent">
-                <v-btn color="teal" flat v-model="proy" @click="changeScreen(1)">
+                <v-btn color="#668C2D" flat v-model="proy" @click="changeScreen(1)">
                     <span>Reporte por proyecto</span>
                     <v-icon>group_work</v-icon>
                 </v-btn>
 
-                <v-btn color="teal" flat @click="changeScreen(2)">
+                <v-btn color="#668C2D" flat @click="changeScreen(2)">
                     <span>Reporte por actividad</span>
                     <v-icon>account_tree</v-icon>
                 </v-btn>
 
-                <v-btn color="teal"  flat @click="changeScreen(3)">
+                <v-btn color="#668C2D"  flat @click="changeScreen(3)">
                     <span>Reporte por responsable</span>
                     <v-icon>face</v-icon>
                 </v-btn>
             </v-bottom-nav>
         </v-card>
+        
         <!-- REPORTE POR PROYECTO -->
         <v-stepper v-model="e1" v-if="proy === true" vertical>
             <v-stepper-header>
-                <v-stepper-step :complete="e1 > 1" step="1">Seleccionar proyecto</v-stepper-step>
+                <v-stepper-step :complete="e1 > 1" step="1"    color="#668C2D">Seleccionar proyecto</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>
@@ -41,24 +42,24 @@
                 </v-card>
 
                 <v-btn
-                color="primary"
+                color="#668C2D" dark class="mb-2"
                 @click="generarReporteProyecto()"
                 >
                 Generar reporte
                 </v-btn>
 
-                <v-btn flat @click="limpiarProyecto()">Cancelar</v-btn>
+                <v-btn    color="#668C2D" flat @click="limpiarProyecto()">Cancelar</v-btn>
             </v-stepper-content>
             </v-stepper-items>
         </v-stepper>
          <!-- REPORTES POR ACTIVIDAD -->
         <v-stepper v-model="e3" v-if="act === true">
             <v-stepper-header>
-                <v-stepper-step :complete="e3 > 1" step="1">Seleccionar proyecto</v-stepper-step>
+                <v-stepper-step    color="#668C2D" :complete="e3 > 1" step="1">Seleccionar proyecto</v-stepper-step>
                  <v-divider></v-divider>
-                <v-stepper-step :complete="e3 > 2" step="2">Seleccionar actividades</v-stepper-step>
+                <v-stepper-step    color="#668C2D" :complete="e3 > 2" step="2">Seleccionar actividades</v-stepper-step>
                 <v-divider></v-divider>
-                <v-stepper-step :complete="e3 > 3" step="3">Seleccionar reporte</v-stepper-step>
+                <v-stepper-step    color="#668C2D" :complete="e3 > 3" step="3">Seleccionar reporte</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>
@@ -74,7 +75,7 @@
                     </v-card>
                     <br><br><br><br><br><br>
                     <v-btn
-                    color="primary"
+                   color="#668C2D" dark class="mb-2"
                     @click="cargarActividades()"
                     >
                     Continuar
@@ -91,14 +92,14 @@
                     </v-card>
                     <br><br><br><br><br><br>
                     <v-btn
-                    color="primary"
+                   color="#668C2D" dark class="mb-2"
                     @click="e3 = 1"
                     >
                         Atrás
                     </v-btn>    
 
                     <v-btn
-                    color="primary"
+                  color="#668C2D" dark class="mb-2"
                     @click="cargarTareas()"
                     >
                     Continuar
@@ -131,7 +132,7 @@
                     </v-card>
                     
                     <v-btn
-                    color="primary"
+                     color="#668C2D" dark class="mb-2"
                     @click="e3 = 2"
                     >
                         Atrás
@@ -142,7 +143,7 @@
         <!-- REPORTE POR RESPONSABLE -->
         <v-stepper v-model="e2" v-if="resp === true" vertical>
             <v-stepper-header>
-                <v-stepper-step :complete="e2 > 1" step="1">Seleccionar responsable</v-stepper-step>
+                <v-stepper-step color="#668C2D" :complete="e2 > 1" step="1">Seleccionar responsable</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>
@@ -157,14 +158,14 @@
                         </multiselect>
                     </v-card>
 
-                    <v-btn
-                    color="primary"
+                    <v-btn color="#668C2D" dark class="mb-2"
+                   
                     @click="reporteResponsable()"
                     >
                     Generar reporte
                     </v-btn>
 
-                    <v-btn flat >Cancelar</v-btn>
+                    <v-btn color="#668C2D" flat >Cancelar</v-btn>
                 </v-stepper-content>
             </v-stepper-items>
         </v-stepper>

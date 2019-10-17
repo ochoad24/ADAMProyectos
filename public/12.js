@@ -1,12 +1,12 @@
 webpackJsonp([12],{
 
-/***/ 1563:
+/***/ 1562:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1564);
+var content = __webpack_require__(1563);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1564:
+/***/ 1563:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.listjs table td, table th {\n    padding:5px;\n}\n.l
 
 /***/ }),
 
-/***/ 1565:
+/***/ 1564:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -387,7 +387,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 1566:
+/***/ 1565:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -519,7 +519,7 @@ module.exports = naturalCompare;
 
 /***/ }),
 
-/***/ 1567:
+/***/ 1566:
 /***/ (function(module, exports) {
 
 /**
@@ -552,7 +552,7 @@ module.exports = function(el, attr) {
 
 /***/ }),
 
-/***/ 1568:
+/***/ 1567:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -575,7 +575,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1569:
+/***/ 1568:
 /***/ (function(module, exports, __webpack_require__) {
 
 var classes = __webpack_require__(759),
@@ -675,7 +675,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1570:
+/***/ 1569:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function(list) {
@@ -729,7 +729,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1571:
+/***/ 1570:
 /***/ (function(module, exports) {
 
 var Templater = function(list) {
@@ -910,7 +910,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1572:
+/***/ 1571:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1037,7 +1037,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1573:
+/***/ 1572:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1073,7 +1073,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1574:
+/***/ 1573:
 /***/ (function(module, exports) {
 
 module.exports = function(list) {
@@ -1186,7 +1186,7 @@ module.exports = function(list) {
 
 /***/ }),
 
-/***/ 1575:
+/***/ 1574:
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -1195,7 +1195,7 @@ var classes = __webpack_require__(759),
   extend = __webpack_require__(822),
   toString = __webpack_require__(825),
   getByClass = __webpack_require__(821),
-  fuzzy = __webpack_require__(1576);
+  fuzzy = __webpack_require__(1575);
 
 module.exports = function(list, options) {
   options = options || {};
@@ -1260,7 +1260,7 @@ module.exports = function(list, options) {
 
 /***/ }),
 
-/***/ 1576:
+/***/ 1575:
 /***/ (function(module, exports) {
 
 module.exports = function(text, pattern, options) {
@@ -1390,7 +1390,7 @@ module.exports = function(text, pattern, options) {
 
 /***/ }),
 
-/***/ 1577:
+/***/ 1576:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -2093,13 +2093,13 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1563)
+  __webpack_require__(1562)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1565)
+var __vue_script__ = __webpack_require__(1564)
 /* template */
-var __vue_template__ = __webpack_require__(1577)
+var __vue_template__ = __webpack_require__(1576)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -12959,14 +12959,14 @@ ClassList.prototype.contains = function(name){
 /***/ 820:
 /***/ (function(module, exports, __webpack_require__) {
 
-var naturalSort = __webpack_require__(1566),
+var naturalSort = __webpack_require__(1565),
   getByClass = __webpack_require__(821),
   extend = __webpack_require__(822),
   indexOf = __webpack_require__(823),
   events = __webpack_require__(758),
   toString = __webpack_require__(825),
   classes = __webpack_require__(759),
-  getAttribute = __webpack_require__(1567),
+  getAttribute = __webpack_require__(1566),
   toArray = __webpack_require__(824);
 
 module.exports = function(id, options, values) {
@@ -12974,8 +12974,8 @@ module.exports = function(id, options, values) {
   var self = this,
     init,
     Item = __webpack_require__(826)(self),
-    addAsync = __webpack_require__(1568)(self),
-    initPagination = __webpack_require__(1569)(self);
+    addAsync = __webpack_require__(1567)(self),
+    initPagination = __webpack_require__(1568)(self);
 
   init = {
     start: function() {
@@ -13010,12 +13010,12 @@ module.exports = function(id, options, values) {
       if (!self.listContainer) { return; }
       self.list       = getByClass(self.listContainer, self.listClass, true);
 
-      self.parse        = __webpack_require__(1570)(self);
-      self.templater    = __webpack_require__(1571)(self);
-      self.search       = __webpack_require__(1572)(self);
-      self.filter       = __webpack_require__(1573)(self);
-      self.sort         = __webpack_require__(1574)(self);
-      self.fuzzySearch  = __webpack_require__(1575)(self, options.fuzzySearch);
+      self.parse        = __webpack_require__(1569)(self);
+      self.templater    = __webpack_require__(1570)(self);
+      self.search       = __webpack_require__(1571)(self);
+      self.filter       = __webpack_require__(1572)(self);
+      self.sort         = __webpack_require__(1573)(self);
+      self.fuzzySearch  = __webpack_require__(1574)(self, options.fuzzySearch);
 
       this.handlers();
       this.items();

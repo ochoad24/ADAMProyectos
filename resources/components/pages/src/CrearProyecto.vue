@@ -3,9 +3,9 @@
         <v-stepper v-model="e1">
             <v-stepper-header>
                 <!-- Pasos para la creacion del proyecto -->
-                <v-stepper-step :complete="e1 > 1" step="1">Crear proyecto</v-stepper-step>
+                <v-stepper-step color="#668C2D" :complete="e1 > 1" step="1">Crear proyecto</v-stepper-step>
                 <v-divider></v-divider>
-                <v-stepper-step :complete="e1 > 2" step="2">Crear actividades</v-stepper-step>
+                <v-stepper-step color="#668C2D" :complete="e1 > 2" step="2">Crear actividades</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>

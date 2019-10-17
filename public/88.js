@@ -1,12 +1,12 @@
 webpackJsonp([88],{
 
-/***/ 1551:
+/***/ 1550:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1552);
+var content = __webpack_require__(1551);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1552:
+/***/ 1551:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "/***Portlet custom css***/\n.portlet {\n    clear: both
 
 /***/ }),
 
-/***/ 1553:
+/***/ 1552:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1554);
+var content = __webpack_require__(1553);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1554:
+/***/ 1553:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,14 +84,14 @@ exports.push([module.i, "\nbody{font-family:Helvetica,sans-serif\n}\n.playground
 
 /***/ }),
 
-/***/ 1555:
+/***/ 1554:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_awe_dnd__ = __webpack_require__(1556);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_awe_dnd__ = __webpack_require__(1555);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_awe_dnd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_awe_dnd__);
 //
 //
@@ -146,7 +146,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_awe_
 
 /***/ }),
 
-/***/ 1556:
+/***/ 1555:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -483,7 +483,7 @@ return vueDragging;
 
 /***/ }),
 
-/***/ 1557:
+/***/ 1556:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -554,14 +554,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1551)
-  __webpack_require__(1553)
+  __webpack_require__(1550)
+  __webpack_require__(1552)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1555)
+var __vue_script__ = __webpack_require__(1554)
 /* template */
-var __vue_template__ = __webpack_require__(1557)
+var __vue_template__ = __webpack_require__(1556)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */

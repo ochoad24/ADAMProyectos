@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Reporte por actividad</title>
     <style>
         body {
@@ -20,126 +21,51 @@
         font-size: 14px;
         /*font-family: SourceSansPro;*/
         }
-
-        #logo{
-        float: left;
-        margin-top: 1%;
-        margin-left: 2%;
-        margin-right: 2%;
+        .th{
+            color:#fff;
         }
-
-        #imagen{
-        width: 100px;
+        .information {
+            background-color: #fff;
+            color: #000;
         }
-
-        #datos{
-        float: left;
-        margin-top: 0%;
-        margin-left: 2%;
-        margin-right: 2%;
-        /*text-align: justify;*/
+        .informatio {
+            background-color: #668c2d;
+            color: #fff;
         }
-
-        #encabezado{
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 35%;
-        font-size: 15px;
+        .information .logo {
+            margin: 5px;
         }
-
-        #fact{
-        /*position: relative;*/
-        float: right;
-        margin-top: 2%;
-        margin-left: 2%;
-        margin-right: 2%;
-        font-size: 20px;
+        .information table {
+         padding: 50px;
         }
+    
+     
+
+      
 
         section{
         clear: left;
         }
 
-        #cliente{
-        text-align: right;
-        }
 
-        #facliente{
-        width: 40%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        margin-bottom: 15px;
-        }
 
-        #fac, #fv, #fa{
-        color: #FFFFFF;
-        font-size: 15px;
-        text-align: center;
-        }
-
-        #facliente thead{
-        padding: 20px;
-        background: #2183E3;
-        text-align: right;
-        border-bottom: 1px solid #FFFFFF;  
-        }
-
-        #facvendedor{
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        margin-bottom: 15px;
-        }
-
-        #facvendedor thead{
-        padding: 20px;
-        background: #2183E3;
-        text-align: center;
-        border-bottom: 1px solid #FFFFFF;  
-        }
-
-        #facarticulo{
-        width: 100%;
-        border-collapse: collapse;
-        border-spacing: 0;
-        margin-bottom: 15px;
-        }
-
-        #facarticulo thead{
-        padding: 20px;
-        background: #2183E3;
-        text-align: right;
-        border-bottom: 1px solid #FFFFFF;  
-        }
-
-        #gracias{
-        text-align: center; 
-        }
-        .left{
-            text-align: left;
-        }
-        .contenedor {
-            text-align:center;
-	    }
-        .contenedor>span {
-            display:inline-block;
-            vertical-align:middle;
-            line-height:normal;
-        }
-        .cont>span{
-            display:inline-block;
-            vertical-align:middle;
-            line-height:normal;
-        }
         .hr{
             width: 80%;
+        }
+        table {
+            font-size: x-small;
+        }
+        tfoot tr td {
+            font-weight: bold;
+            font-size: x-small;
         }
     </style>
     <body>
         @foreach ($tarea as $t)
         <header>
-            <center><img src="assets/images/logo-dark.png" width="230" height="70"></center>
-                <hr class="hr">
+        <br>
+<center><img src="../resources/img/adam.jpg" width="180" height="160"></center>
+<hr class="hrt">
                 <center> <h6>QUETZALTENANGO, GUATEMALA</h6>
                 <?php 
                     echo "<br>" . "Generado el día: ";
@@ -148,30 +74,37 @@
                     print_r($hoy["year"] . '<br>')
                 ?>
             </center>
-            <div class="contenedor">
-            <h1>Reporte de actividad</h1>
+            <br>
+            <div>
+        <center>    <h2 style="color:#668c2d">Reporte de actividad</h2></center>
             <hr class="hr">
         </div>
         </header>
         <br>
         <section>
-            <div>
-                <table id="facliente">
-                    <thead>                        
+            <div >
+                <table width="100%" class="table">
+                    <thead  style="background-color:#668c2d">                        
                         <tr>
-                            <th id="fac">Datos</th>
+                            
+                            <th class="th">Actividad</th>
+                            <th class="th">Fecha</th>
+                            <th class="th">Responsable</th>
+                            <th class="th">Participantes</th>
+                            <th class="th">Hombres</th>
+                            <th class="th">Mujeres</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="left">
-                            <th id=""><p>{{$t->tarea}}<br>
-                            Fecha realización: {{$t->fechaRealizacion}}<br>
+                        <tr>
+                            <th id=""><p>{{$t->tarea}}<br></th>
+                           <th>  {{$t->fechaRealizacion}}</th>
                             @foreach ($encargado as $e)
-                                Responsable: {{$e->nombre}}<br>
+                           <th>  {{$e->nombre}}</th>
                             @endforeach
-                            Participantes: {{$t->participantes}}<br>
+                             <th>{{$t->participantes}}</th>
                             @foreach ($estadisticas as $es)
-                                {{$es->nombre}}: {{round($es->valor,2)}}<br></p></th>
+                              <th>  {{$es->nombre}}: {{round($es->valor,2)}}<br></p></th>
                             @endforeach
                         </tr>
                     </tbody>
@@ -181,13 +114,21 @@
         @endforeach
         <br>
         <section>
-            <div>
+  
+          
+            
                 @foreach ($fotos as $f)
-                    <center><img src="uploads/{{ $f->ruta }}" width="400" height="400"></center><br>
+           
+        
+                <center> <img src="uploads/{{ $f->ruta }}" width="500" height="500" class="img-thumbnail"></center> <br>
+                   
+             
                 @endforeach
-            </div>
+             
+       
         </section>
         <br>
         <br>
+ 
     </body>
 </html>

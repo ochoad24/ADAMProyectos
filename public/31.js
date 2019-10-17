@@ -1,12 +1,12 @@
 webpackJsonp([31],{
 
-/***/ 2019:
+/***/ 2018:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2020);
+var content = __webpack_require__(2019);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2020:
+/***/ 2019:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.magnify{position:relative;cursor:none\n}\n.magnify-l
 
 /***/ }),
 
-/***/ 2021:
+/***/ 2020:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2022);
+var content = __webpack_require__(2021);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2022:
+/***/ 2021:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,7 +84,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 2023:
+/***/ 2022:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -244,7 +244,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2024:
+/***/ 2023:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -542,14 +542,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2019)
-  __webpack_require__(2021)
+  __webpack_require__(2018)
+  __webpack_require__(2020)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2023)
+var __vue_script__ = __webpack_require__(2022)
 /* template */
-var __vue_template__ = __webpack_require__(2024)
+var __vue_template__ = __webpack_require__(2023)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
