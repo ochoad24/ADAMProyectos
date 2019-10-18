@@ -96,5 +96,5 @@ Route::group(['middleware'=>['guest']],function(){
     Route::post('/Tarea/nuevo', 'TareaController@store');
     Route::post('/Tarea/subir', 'TareaController@report');
     Route::get('Tarea/ver/{id}','TareaController@watch');
-    Route::delete('Tarea/delete/{task}','TareaController@drop');
+    Route::delete('tarea/delete/{task}','TareaController@drop');
 });

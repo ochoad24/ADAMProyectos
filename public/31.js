@@ -1,12 +1,12 @@
 webpackJsonp([31],{
 
-/***/ 2018:
+/***/ 2019:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2019);
+var content = __webpack_require__(2020);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2019:
+/***/ 2020:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.magnify{position:relative;cursor:none\n}\n.magnify-l
 
 /***/ }),
 
-/***/ 2020:
+/***/ 2021:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2021);
+var content = __webpack_require__(2022);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2021:
+/***/ 2022:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,7 +84,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 2022:
+/***/ 2023:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -244,7 +244,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2023:
+/***/ 2024:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -282,7 +282,7 @@ var render = function() {
                     staticClass: "mag-style img-fluid",
                     attrs: {
                       "data-toggle": "magnify",
-                      src: __webpack_require__(600),
+                      src: __webpack_require__(598),
                       alt: "image"
                     }
                   })
@@ -297,7 +297,7 @@ var render = function() {
                     staticClass: "mag-style img-fluid",
                     attrs: {
                       "data-toggle": "magnify",
-                      src: __webpack_require__(606),
+                      src: __webpack_require__(604),
                       alt: "image"
                     }
                   })
@@ -312,7 +312,7 @@ var render = function() {
                     staticClass: "mag-style img-fluid",
                     attrs: {
                       "data-toggle": "magnify",
-                      src: __webpack_require__(599),
+                      src: __webpack_require__(597),
                       alt: "image"
                     }
                   })
@@ -332,7 +332,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(599),
+                        src: __webpack_require__(597),
                         alt: "image"
                       }
                     })
@@ -347,7 +347,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(598),
+                        src: __webpack_require__(596),
                         alt: "image"
                       }
                     })
@@ -377,7 +377,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(606),
+                        src: __webpack_require__(604),
                         alt: "image"
                       }
                     })
@@ -398,7 +398,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(600),
+                        src: __webpack_require__(598),
                         alt: "image"
                       }
                     })
@@ -428,7 +428,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(605),
+                        src: __webpack_require__(603),
                         alt: "image"
                       }
                     })
@@ -443,7 +443,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(598),
+                        src: __webpack_require__(596),
                         alt: "image"
                       }
                     })
@@ -479,6 +479,21 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
+                        src: __webpack_require__(596),
+                        alt: "image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
+                  _c("a", { staticClass: "mag img-fluid" }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "mag-style img-fluid",
+                      attrs: {
+                        "data-toggle": "magnify",
                         src: __webpack_require__(598),
                         alt: "image"
                       }
@@ -494,22 +509,7 @@ var render = function() {
                       staticClass: "mag-style img-fluid",
                       attrs: {
                         "data-toggle": "magnify",
-                        src: __webpack_require__(600),
-                        alt: "image"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-6 col-lg-3 col-sm-6" }, [
-                  _c("a", { staticClass: "mag img-fluid" }, [
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("img", {
-                      staticClass: "mag-style img-fluid",
-                      attrs: {
-                        "data-toggle": "magnify",
-                        src: __webpack_require__(599),
+                        src: __webpack_require__(597),
                         alt: "image"
                       }
                     })
@@ -542,14 +542,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2018)
-  __webpack_require__(2020)
+  __webpack_require__(2019)
+  __webpack_require__(2021)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2022)
+var __vue_script__ = __webpack_require__(2023)
 /* template */
-var __vue_template__ = __webpack_require__(2023)
+var __vue_template__ = __webpack_require__(2024)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -11162,35 +11162,35 @@ if (false) {
 
 /***/ }),
 
-/***/ 598:
+/***/ 596:
 /***/ (function(module, exports) {
 
 module.exports = "/images/8.jpg?ea2b6d40598c6861a574cdef28bee95e";
 
 /***/ }),
 
-/***/ 599:
+/***/ 597:
 /***/ (function(module, exports) {
 
 module.exports = "/images/29.jpg?dba7e72ffb341c2682464560c98b1788";
 
 /***/ }),
 
-/***/ 600:
+/***/ 598:
 /***/ (function(module, exports) {
 
 module.exports = "/images/30.jpg?2002855a1fb468b267975e83697f0eeb";
 
 /***/ }),
 
-/***/ 605:
+/***/ 603:
 /***/ (function(module, exports) {
 
 module.exports = "/images/17.jpg?6d3cc3fd9122d4f52d698096733ec37b";
 
 /***/ }),
 
-/***/ 606:
+/***/ 604:
 /***/ (function(module, exports) {
 
 module.exports = "/images/20.jpg?07b859bc73b54be32996cc610504505a";

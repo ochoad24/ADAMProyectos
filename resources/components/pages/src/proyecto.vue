@@ -59,7 +59,7 @@
                                                     transition="scale-transition" offset-y full-width min-width="290px">
                                                     <template v-slot:activator="{ on }">
                                                         <v-text-field v-model="fechaF"
-                                                            label="Ingrese fecha de finalización" prepend-icon="event"
+                                                            label="Ingrese fecha límite" prepend-icon="event"
                                                             readonly v-on="on"></v-text-field>
                                                     </template>
                                                     <v-date-picker v-model="fechaF" no-title scrollable locale="gt">
@@ -72,7 +72,7 @@
                                                 </v-menu>
                                                 <!-- Fin del date Time Picker -->
                                             </v-flex>
-                                            <v-flex xs6>
+                                            <v-flex xs12 sm12 md6>
                                                 <v-card
                                                 >
                                                     <v-card-title>
@@ -90,7 +90,7 @@
 
                                                 </v-card>
                                             </v-flex>
-                                            <v-flex xs6>
+                                            <v-flex xs12 sm12 md6>
                                                 <v-card
                                                 >
                                                     <v-card-title>
@@ -109,7 +109,7 @@
                                                 </v-card>
                                             </v-flex>
                                     <!-- Indicadores y resultados -->
-                                            <v-flex xs6>
+                                            <v-flex xs12 sm12 md6>
                                                 <v-card
                                                 >
                                                     <v-card-title>
@@ -127,7 +127,7 @@
 
                                                 </v-card>
                                             </v-flex>
-                                            <v-flex xs6>
+                                            <v-flex xs12 sm12 md6>
                                                 <v-card
                                                 >
                                                     <v-card-title>
@@ -196,7 +196,7 @@
                                     <v-btn color="#668c2d" v-if="editar===0" flat @click="registrarProyecto">
                                         Guardar
                                     </v-btn>
-                                    <v-btn color="blue darken-1" v-if="editar===1" flat @click="editarProyecto()">
+                                    <v-btn color="blue darken-1" v-if="editar===1" flat @click="editarProyecto()" :loading="loading" :disabled="loading">
                                         Guardar
                                     </v-btn>
                                 </v-card-actions>
@@ -381,14 +381,14 @@
             IdProyecto: 0,
             Estado: 1,
             editar: 0,
-          
+            loader: null,
+            loading: false,
             headers: [
                 { text: 'Titulo', value: 'Titulo', align: 'left' },
                 { text: 'Descripcion', value: 'Descripcion', align: 'right' },
                 { text: 'Fecha de inicio', value: 'FechaInicio', align: 'right' },
                 { text: 'Fecha de finalización', value: 'FechaFin', align: 'right' },
                 { text: 'Estado', value: 'Estado', align: 'right' },
-                {text: 'Acciones'}
             ],
             headersOrg: [
                 { text: "Organizacion", value: 'nombre', align: 'right' },
@@ -530,6 +530,8 @@
             },
             editarProyecto() {
                 let me = this;
+                this.loader = 'loading';
+                this.loading=true;
                 if (this.validate() === 1) {
                     return;
                 }
@@ -547,12 +549,25 @@
                     'data': me.orgs
                 })
                     .then(function (response) {
-                        console.log(response.data);
+                        me.loader=null;
+                        me.loading=false;
+                        swal.fire({
+                            type: 'success',
+                            title: '¡Proyecto editado correctamente!',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
                         me.initialize();
                         me.close();
                     })
                     .catch(function (error) {
-                        console.log(error.response);
+                        me.loader=null;
+                        me.loading=false;
+                        swalWithBootstrapButtons.fire(
+                            'Error',
+                            '¡Error al editar el proyecto!',
+                            'error'
+                        )
                         me.close();
                     })
             },
@@ -579,13 +594,13 @@
                             me.initialize();
                             swalWithBootstrapButtons.fire(
                                 'Activado',
-                                'El proyecto ha sido activado!',
+                                '¡El proyecto ha sido activado!',
                                 'success'
                             )
                         }).catch(function (error) {
                             swalWithBootstrapButtons.fire(
                                 'Error',
-                                'Error al activar proyecto!',
+                                '¡Error al activar proyecto!',
                                 'error'
                             )
                         });
@@ -620,14 +635,14 @@
                             me.initialize();
                             swalWithBootstrapButtons.fire(
                                 'Desactivado',
-                                'El proyecto ha sido desactivado!',
+                                '¡El proyecto ha sido desactivado!',
                                 'success'
                             )
                         }).catch(function (error) {
                             console.log(error.response);
                             swalWithBootstrapButtons.fire(
                                 'Error',
-                                'Error al desactivar proyecto!',
+                                '¡Error al desactivar proyecto!',
                                 'error'
                             )
                         });
@@ -683,7 +698,7 @@
                         console.log(response.data);
                         swal.fire({
                             type: 'success',
-                            title: 'Organización registrada!',
+                            title: '¡Organización registrada!',
                             showConfirmButton: false,
                             timer: 1500
                         });
@@ -694,7 +709,7 @@
                         console.log(error.response);
                         swal.fire({
                             type: 'error',
-                            title: 'Se ha producido un error!',
+                            title: '¡Se ha producido un error!',
                             text: `Error al ingresar organización: ${error.response.data.message}`
                         })
                         me.close_org();

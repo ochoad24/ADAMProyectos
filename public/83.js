@@ -1,12 +1,12 @@
 webpackJsonp([83],{
 
-/***/ 1797:
+/***/ 1798:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1798);
+var content = __webpack_require__(1799);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1798:
+/***/ 1799:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,13 +42,13 @@ exports.push([module.i, "\n.ct-label {\n  fill: rgba(0, 0, 0, 0.4);\n  color: rg
 
 /***/ }),
 
-/***/ 1799:
+/***/ 1800:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1800);
+var content = __webpack_require__(1801);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -69,7 +69,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 1800:
+/***/ 1801:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -84,12 +84,12 @@ exports.push([module.i, "\n.piechart .ct-label{\n    fill:#fff;\n}\n.ct-series-a
 
 /***/ }),
 
-/***/ 1801:
+/***/ 1802:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_chartist__ = __webpack_require__(611);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_chartist__ = __webpack_require__(609);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_v_chartist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_v_chartist__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_chartist__ = __webpack_require__(580);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_chartist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_chartist__);
@@ -427,7 +427,7 @@ var unsub;
 
 /***/ }),
 
-/***/ 1802:
+/***/ 1803:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -720,14 +720,14 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(1797)
-  __webpack_require__(1799)
+  __webpack_require__(1798)
+  __webpack_require__(1800)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(1801)
+var __vue_script__ = __webpack_require__(1802)
 /* template */
-var __vue_template__ = __webpack_require__(1802)
+var __vue_template__ = __webpack_require__(1803)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -5263,7 +5263,7 @@ return Chartist;
 
 /***/ }),
 
-/***/ 611:
+/***/ 609:
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(e,t){ true?module.exports=t(__webpack_require__(580)):"function"==typeof define&&define.amd?define(["Chartist"],t):"object"==typeof exports?exports.VueChartist=t(require("chartist")):e.VueChartist=t(e.Chartist)}(this,function(e){return function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=2)}([function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(1),o=n.n(r),i=n(4),s=n(3),u=s(o.a,i.a,null,null,null);u.options.__file="src/vue-chartist.vue",u.esModule&&Object.keys(u.esModule).some(function(e){return"default"!==e&&"__"!==e.substr(0,2)})&&console.error("named exports are not supported in *.vue files."),u.options.functional&&console.error("[vue-loader] vue-chartist.vue: functional components are not supported with templates, they should use render functions."),t.default=u.exports},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(5),o=function(e){return e&&e.__esModule?e:{default:e}}(r);t.default={name:"vue-chartist",props:{type:{type:String,validator:function(e){return"Pie"===e||"Line"===e||"Bar"===e},default:function(){return"Line"}},data:{type:Object,required:!0},options:{type:Object},listener:{type:Object},responsiveOptions:{type:Array}},data:function(){return{chartist:void 0}},methods:{updateEventListener:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"on";e=e||{};for(var n in e)e.hasOwnProperty(n)&&this.chartist[t](n,e[n])},renderChart:function(){var e=this.data,t=this.options?this.options:{},n=this.responsiveOptions?this.responsiveOptions:[];this.chartist?this.chartist.update(e,t,n):(this.chartist=new o.default[this.type](this.$el,e,t,n),this.updateEventListener(this.listener,"on"))}},watch:{data:{handler:"renderChart",deep:!0},options:{handler:"renderChart",deep:!0},responsiveOptions:{handler:"renderChart",deep:!0},listener:function(e,t){this.updateEventListener(t,"off"),this.updateEventListener(e,"on")}},mounted:function(){this.renderChart()},destroyed:function(){this.chartist&&this.chartist.detach()}}},function(e,t,n){"use strict";var r=n(0),o=function(e){return e&&e.__esModule?e:{default:e}}(r);e.exports=o.default},function(e,t){e.exports=function(e,t,n,r,o){var i,s=e=e||{},u=typeof e.default;"object"!==u&&"function"!==u||(i=e,s=e.default);var a="function"==typeof s?s.options:s;t&&(a.render=t.render,a.staticRenderFns=t.staticRenderFns),r&&(a._scopeId=r);var c;if(o?(c=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),n&&n.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(o)},a._ssrRegister=c):n&&(c=n),c){var d=a.functional,p=d?a.render:a.beforeCreate;d?a.render=function(e,t){return c.call(t),p(e,t)}:a.beforeCreate=p?[].concat(p,c):[c]}return{esModule:i,exports:s,options:a}}},function(e,t,n){"use strict";var r=function(){var e=this,t=e.$createElement;return(e._self._c||t)("div",{staticClass:"v-chartist-container"})},o=[];r._withStripped=!0;var i={render:r,staticRenderFns:o};t.a=i},function(t,n){t.exports=e}])});

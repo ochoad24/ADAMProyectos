@@ -64,7 +64,7 @@
                                                     transition="scale-transition" offset-y full-width min-width="290px">
                                                     <template v-slot:activator="{ on }">
                                                         <v-text-field v-model="fechaFinal"
-                                                            label="Ingrese fecha de finalización" prepend-icon="event"
+                                                            label="Ingrese fecha límite" prepend-icon="event"
                                                             readonly v-on="on"></v-text-field>
                                                     </template>
                                                     <v-date-picker v-model="fechaFinal" no-title scrollable>
@@ -95,7 +95,7 @@
                                     <v-btn color="#668c2d" class="mb-2" dark flat @click="close">Cancelar</v-btn>
                                     <v-btn color="#668c2d" class="mb-2" dark v-if="editar===0" flat @click="registrarActividad">
                                         Guardar</v-btn>
-                                    <v-btn color="#668c2d" class="mb-2" dark v-if="editar===1" flat @click="editarActividad()">
+                                    <v-btn color="#668c2d" class="mb-2" dark v-if="editar===1" flat @click="editarActividad()" :loading="loading" :disabled="loading">
                                         Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -105,6 +105,7 @@
 
                     <v-data-table :headers="headers" :items="actividades" class="elevation-1" :search="search">
                         <template v-slot:items="props">
+                            <td class="text-xs-right">{{ props.item.codigo_actividad }}</td>
                             <td class="text-xs-right">{{ props.item.actividad }}</td>
                             <td class="text-xs-right">{{ Math.round(props.item.completado, 2) + ' %' }}</td>
                             <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
@@ -160,14 +161,8 @@
                     </v-data-table>
                 </div>
             </b-card>
-            <v-alert
-            :value="true"
-            color="warning"
-            icon="priority_high"
-            outline
-            v-else
-            >
-            !Por favor seleccione proyecto! 
+            <v-alert :value="true" color="warning" icon="priority_high" outline v-else >
+                ¡Por favor seleccione proyecto! 
             </v-alert>
 
         </div>
@@ -201,6 +196,7 @@
             fechaFinal: new Date().toISOString().substr(0, 10),
             search: '',
             headers: [
+                { text: 'Código', value: 'codigo_actividad', align: 'right' },
                 { text: 'Actividad', value: 'actividad', align: 'right' },
                 { text: 'Completado', value: 'completado', align: 'right' },
                 { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' },
@@ -214,6 +210,8 @@
                 id:0,
                 nombre:''
             },
+            loader: null,
+            loading: false,
             editedIndex: -1,
             editedItem: {
                 id: 0,
@@ -267,7 +265,14 @@
             this.initialize()
         },
         mounted() {
-
+            if(this.$store.state.proyecto.id === 0) {
+                        this.proyectoSelect = false;
+            }
+            else {
+                this.proyectoSelect = true;
+                this.proyecto=this.$store.state.proyecto;
+                this.initialize();
+            }
         },
         methods: {
             validate() {
@@ -309,6 +314,8 @@
                     'actividad': me.actividad,
                     'fechaInicio': me.fechaInicio,
                     'fechaFinal': me.fechaFinal,
+                    'codigo': me.codigo,
+                    'descripcion': me.descripcionAct,
                     'idProyecto': me.proyecto.id
                 })
                     .then(function (response) {
@@ -316,9 +323,11 @@
                             swal.fire({
                                 type: 'success',
                                 title: 'Actividad Registrada!',
+                                text: `Por favor crea tareas para la actividad.`,
                                 showConfirmButton: false,
-                                timer: 1500
+                                timer: 2500
                             });
+                            window.location.href="/#/Tarea";
                         } else {
                             swal.fire({
                                 type: 'error',
@@ -343,6 +352,8 @@
             },
             editarActividad() {
                 let me = this;
+                this.loader = 'loading';
+                this.loading=true;
                 if (this.validate() === 1) {
                     return;
                 }
@@ -357,6 +368,8 @@
                 })
                     .then(function (response) {
                         // console.log(response.data);
+                        me.loader=null;
+                        me.loading=false;
                         if (!response.data) {
                             swal.fire({
                                 type: 'success',
@@ -376,6 +389,8 @@
                         me.initialize();
                     })
                     .catch(function (error) {
+                        me.loader=null;
+                        me.loading=false;
                         console.log(error.response);
                         swal.fire({
                             type: 'error',

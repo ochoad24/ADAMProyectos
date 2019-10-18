@@ -57,6 +57,8 @@ class ActividadController extends Controller
             $actividad->idProyecto = $request->idProyecto;
             $actividad->fechaInicio = Carbon::parse($request->fechaInicio);
             $actividad->fechaFinal = Carbon::parse($request->fechaFin);
+            $actividad->codigo_actividad = $request->codigo;
+            $actividad->descripcion = $request->descripcion;
             $actividad->tareas = 0;
             $actividad->tareasCompletadas = 0;
             $actividad->tareasPendientes = 0;
@@ -106,7 +108,7 @@ class ActividadController extends Controller
     }
     
     public function select($id) {
-        return Actividad::select('id','actividad as nombre')->where('idProyecto',$id)->get();
+        return Actividad::select(DB::raw('id, CONCAT(codigo_actividad, " ", actividad) as nombre'))->where('idProyecto',$id)->get();
     }
 
     public function selectAct(Request $request) {

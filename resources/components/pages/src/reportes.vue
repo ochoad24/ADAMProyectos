@@ -30,26 +30,27 @@
             </v-stepper-header>
 
             <v-stepper-items>
-            <v-stepper-content step="1">
-                <v-card class="mb-5">
-                    <v-divider></v-divider>
-                    <br>
-                     <multiselect v-model="proyecto" :options="proyectos" :multiple="true"
-                        :taggable="false" :close-on-select="true" :clear-on-select="false"
-                        :preserve-search="true" placeholder="Seleccione..." label="Titulo"
-                        track-by="nombre">
-                    </multiselect>
-                </v-card>
-
-                <v-btn
-                color="#668C2D" dark class="mb-2"
-                @click="generarReporteProyecto()"
-                >
-                Generar reporte
-                </v-btn>
-
-                <v-btn    color="#668C2D" flat @click="limpiarProyecto()">Cancelar</v-btn>
-            </v-stepper-content>
+                <v-stepper-content step="1">
+                    <v-card class="mb-5">
+                        <v-data-table :headers="headersPro" :items="proyectos" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.Titulo }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="generarReporteProyecto(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>picture_as_pdf</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Generar reporte</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
+                    </v-card>
+                </v-stepper-content>
             </v-stepper-items>
         </v-stepper>
          <!-- REPORTES POR ACTIVIDAD -->
@@ -66,44 +67,49 @@
                 <!-- PASO 1 -->
                 <v-stepper-content step="1">
                     <v-card class="mb-5">
-                        <v-divider></v-divider>
-                        <multiselect v-model="proyecto" :options="proyectos" :multiple="true"
-                            :taggable="false" :close-on-select="true" :clear-on-select="false"
-                            :preserve-search="true" placeholder="Seleccione..." label="Titulo"
-                            track-by="Titulo">
-                        </multiselect>
+                        <v-data-table :headers="headersPro" :items="proyectos" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.Titulo }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="proyectoSelect(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>done</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Seleccionar proyecto</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
                     </v-card>
-                    <br><br><br><br><br><br>
-                    <v-btn
-                   color="#668C2D" dark class="mb-2"
-                    @click="cargarActividades()"
-                    >
-                    Continuar
-                    </v-btn>
                 </v-stepper-content>
                 <!-- PASO 2 -->
                 <v-stepper-content step="2">
                     <v-card>
-                        <multiselect v-model="actividad" :options="actividades" :multiple="true"
-                            :taggable="false" :close-on-select="true" :clear-on-select="false"
-                            :preserve-search="true" placeholder="Seleccione..." label="actividad"
-                            track-by="actividad">
-                        </multiselect>
+                        <v-data-table :headers="headersAct" :items="actividades" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.actividad }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="actividadSelect(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>done</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Seleccionar actividad</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
                     </v-card>
-                    <br><br><br><br><br><br>
-                    <v-btn
-                   color="#668C2D" dark class="mb-2"
-                    @click="e3 = 1"
-                    >
+                    <v-btn color="#668C2D" dark class="mb-2" @click="e3 = 1">
                         Atrás
                     </v-btn>    
-
-                    <v-btn
-                  color="#668C2D" dark class="mb-2"
-                    @click="cargarTareas()"
-                    >
-                    Continuar
-                    </v-btn>
                 </v-stepper-content>
                 <!-- PASO 3 -->
                 <v-stepper-content step="3">
@@ -116,7 +122,7 @@
                                      <v-tooltip bottom>
                                         <template v-slot:activator="{ on }">
                                             <v-icon small class="mr-2" v-on="on" @click="cargarReporte(props.item.id)">
-                                                post_add
+                                                picture_as_pdf
                                             </v-icon>
                                         </template>
                                         <span>Generar Reporte</span>
@@ -149,23 +155,24 @@
             <v-stepper-items>
                 <v-stepper-content step="1">
                     <v-card class="mb-5">
-                        <v-divider></v-divider>
-                        <br>
-                        <multiselect v-model="responsable" :options="responsables" :multiple="true"
-                            :taggable="false" :close-on-select="true" :clear-on-select="false"
-                            :preserve-search="true" placeholder="Seleccione..." label="nombreEmp"
-                            track-by="nombreEmp">
-                        </multiselect>
+                        <v-data-table :headers="headersEmp" :items="responsables" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.nombreEmp }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="reporteResponsable(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>picture_as_pdf</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Generar reporte</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
                     </v-card>
-
-                    <v-btn color="#668C2D" dark class="mb-2"
-                   
-                    @click="reporteResponsable()"
-                    >
-                    Generar reporte
-                    </v-btn>
-
-                    <v-btn color="#668C2D" flat >Cancelar</v-btn>
                 </v-stepper-content>
             </v-stepper-items>
         </v-stepper>
@@ -199,6 +206,15 @@
             headers: [
                 { text: 'Tarea', value: 'tarea', align: 'center' },
                 { text: 'Fecha realización', value: 'fechaRealizacion', align: 'center' },
+            ],
+            headersPro: [
+                { text: 'Título', value: 'Titulo', align: 'center' },
+            ],
+            headersAct: [
+                { text: 'Actividad', value: 'actividad', align: 'center' },
+            ],
+            headersEmp: [
+                { text: 'Responsable', value: 'nombreEmp', align: 'center' },
             ],
             tareas: [],
             search: "",
@@ -257,49 +273,27 @@
                         break;
                 }
             },
-            cargarActividades() {
-                let me = this;
-                if(me.proyecto.length === 0) {
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Por favor seleccione un proyecto',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }
-                else {
-                    me.e3 = 2;
-                    console.log('proyecto: ' + me.proyecto[0].IdProyecto);
-                    axios.get(`/actividad/selectActividad?id=${me.proyecto[0].IdProyecto}`)
-                    .then(function (response) {
-                        me.actividades = response.data;
-                    })
-                    .catch(function (error) {
-                        console.log(error.response);
-                    });
-                }
+            proyectoSelect(item) {
+                let me = this;  
+                me.e3 = 2;
+                axios.get(`/actividad/selectActividad?id=${item.IdProyecto}`)
+                .then(function (response) {
+                    me.actividades = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error.response);
+                });
             },
-            cargarTareas() {
+            actividadSelect(item) {
                 let me = this;
-                if(me.actividad.length === 0) {
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Por favor seleccione una actividad',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }
-                else {
-                    me.e3 = 3;
-                    console.log('actividad' + me.actividad[0].id);
-                    axios.get(`/Tarea/select/${me.actividad[0].id}`)
-                    .then(function (response) {
-                        me.tareas = response.data;
-                    })
-                    .catch(function (error) {
-                        console.log(error.response);
-                    });
-                }
+                me.e3 = 3;
+                axios.get(`/Tarea/select/${item.id}`)
+                .then(function (response) {
+                    me.tareas = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error.response);
+                });
             },
             cargarReporte(id) {
                 window.open(window.location.origin + '/tarea/pdf?id=' + id + ',' + '_blank')
@@ -324,33 +318,11 @@
                     console.log(error.response);
                 });
             },
-            generarReporteProyecto() {
-                let me = this;
-                if(this.proyecto.length === 0) {
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Por favor seleccione un proyecto',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }
-                else {
-                    window.open(window.location.origin + '/proyecto/pdf?id=' + me.proyecto[0].IdProyecto + ',' + '_blank')
-                }
+            generarReporteProyecto(item) {
+                window.open(window.location.origin + '/proyecto/pdf?id=' + item.IdProyecto + ',' + '_blank');
             },
-            reporteResponsable() {
-                let me = this;
-                if(this.responsable.length === 0) {
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Por favor seleccione a un responsable',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }
-                else {
-                    window.open(window.location.origin + '/User/pdf?id=' + me.responsable[0].id + ',' + '_blank')
-                }
+            reporteResponsable(item) {
+                window.open(window.location.origin + '/User/pdf?id=' + item.id + ',' + '_blank');
             },
             limpiarProyecto() {
                 this.proy = false;

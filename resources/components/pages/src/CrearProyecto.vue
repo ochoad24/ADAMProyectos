@@ -25,7 +25,7 @@
                                         </v-textarea>
                                     </v-flex>
                                     <!-- Objetivos y resultados -->
-                                    <v-flex xs6>
+                                    <v-flex xs12 sm12 md6>
                                             <v-card
                                             >
                                                 <v-card-title>
@@ -43,7 +43,7 @@
 
                                             </v-card>
                                     </v-flex>
-                                    <v-flex xs6>
+                                    <v-flex xs12 sm12 md6>
                                             <v-card
                                             >
                                                 <v-card-title>
@@ -62,7 +62,7 @@
                                             </v-card>
                                     </v-flex>
                                     <!-- Indicadores y resultados -->
-                                    <v-flex xs6>
+                                    <v-flex xs12 sm12 md6>
                                             <v-card
                                             >
                                                 <v-card-title>
@@ -80,7 +80,7 @@
 
                                             </v-card>
                                     </v-flex>
-                                    <v-flex xs6>
+                                    <v-flex xs12 sm12 md6>
                                             <v-card
                                             >
                                                 <v-card-title>
@@ -126,7 +126,7 @@
                                             transition="scale-transition" offset-y full-width min-width="290px">
                                             <template v-slot:activator="{ on }">
                                                 <v-text-field v-model="fechaF"
-                                                    label="Ingrese fecha de finalización" prepend-icon="event"
+                                                    label="Ingrese fecha límite" prepend-icon="event"
                                                     readonly v-on="on" ></v-text-field>
                                             </template>
                                             <v-date-picker v-model="fechaF" no-title scrollable locale="es-gt">
@@ -235,7 +235,7 @@
                             <v-card-actions>
                                 <v-spacer></v-spacer>
                                 <v-btn color="#668c2d" flat @click="close_org">Cancelar</v-btn>
-                                <v-btn color="#668c2d" flat @click="registrarOrganizacion">Guardar Organización
+                                <v-btn color="#668c2d" flat @click="registrarOrganizacion" :loading="loading1" :disabled="loading1">Guardar Organización
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
@@ -293,7 +293,7 @@
                                             transition="scale-transition" offset-y full-width min-width="290px">
                                             <template v-slot:activator="{ on }">
                                                 <v-text-field v-model="fechaFinal"
-                                                    label="Ingrese fecha de finalización" prepend-icon="event"
+                                                    label="Ingrese fecha límite" prepend-icon="event"
                                                     readonly v-on="on"></v-text-field>
                                             </template>
                                             <v-date-picker v-model="fechaFinal" no-title scrollable>
@@ -311,8 +311,8 @@
                         </v-card-text>
                         <v-card-actions>
                             <v-spacer></v-spacer>
-                            <v-btn color="#668c2d" class="ma-2" dark  @click="agregarActividad()">
-                                Agregar Actividad
+                            <v-btn color="#668c2d" class="ma-2" dark @click="agregarActividad()">
+                                Agregar actividad
                             </v-btn>
                         </v-card-actions>
                         <v-flex xs12 sm12 md12 lg12>
@@ -347,17 +347,11 @@
                         </v-flex>
                     </v-card>
 
-                    <v-btn
-                   color="#668c2d"  class="ma-2" dark
-                    @click="e1 = 1"
-                    >
+                    <v-btn color="#668c2d"  class="ma-2" dark @click="e1 = 1">
                         Atrás
                     </v-btn>
 
-                    <v-btn
-                   color="#668c2d" class="ma-2" dark
-                    @click="storeProyecto()"
-                    >
+                    <v-btn color="#668c2d" class="ma-2" dark @click="storeProyecto()" :loading="loading" :disabled="loading">
                         Guardar
                     </v-btn>
 
@@ -432,6 +426,10 @@
             orgs: [],
             acts: [],
             organizaciones: [],
+            loader: null,
+            loading: false,
+            loader1: null,
+            loading1: false,
             departamentos: [],
             comunidad: '',
             select: [],
@@ -516,7 +514,7 @@
                     this.errorMsj.push('El título del proyecto no puede estar vacio');
                 if (!this.descripcion)
                     this.errorMsj.push('La descripción del proyecto no puede estar vacía');
-                if (!this.fechaI)
+                if (!this.orgs)
                     this.errorMsj.push('Por favor seleccione una o más organizaciones');
                 if(Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF))
                     this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
@@ -569,10 +567,8 @@
                     this.errorMsj.push('El nombre de la actividad no puede estar vacío');
                 if (!this.descripcionAct)
                     this.errorMsj.push('La descripción de la actividad no puede estar vacía');
-                if (!this.fechaInicio)
-                    this.errorMsj.push('La fecha de inicio de la actividad no puede estar vacía');
-                if (!this.fechaFinal)
-                    this.errorMsj.push('La fecha de finalización de la actividad no puede estar vacía');
+                if(Date.parse(this.fechaInicio) > Date.parse(this.fechaFinal) || Date.parse(this.fechaInicio) === Date.parse(this.fechaFinal))
+                    this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
                 if (this.errorMsj.length)
                     this.error = 1;
                 else
@@ -623,6 +619,8 @@
             },
             storeProyecto() {
                 let me = this;
+                this.loader = 'loading';
+                this.loading=true;
                 axios.post('proyecto/storeProject', {
                     'Titulo': me.titulo,
                     'Descripcion': me.descripcion,
@@ -636,9 +634,9 @@
                     'data': me.acts
                 })
                     .then(function (response) {
-                        console.log(response.data);
                         if (response.data) {
-                            console.log(response.data);
+                            me.loader=null;
+                            me.loading=false;
                             me.proyecto.id=response.data.id;
                             me.proyecto.nombre=response.data.nombre;
                             me.$store.commit('changeProject',me.proyecto);
@@ -650,6 +648,8 @@
                             });
                             window.location.href="/#/Tarea";
                         } else {
+                            me.loader=null;
+                            me.loading=false;
                             swal.fire({
                                 type: 'error',
                                 title: 'Se ha producido un error!',
@@ -659,7 +659,8 @@
                         me.initialize();
                     })
                     .catch(function (error) {
-                        console.log(error.response);
+                        me.loader=null;
+                        me.loading=false;
                         swal.fire({
                             type: 'error',
                             title: 'Se ha producido un error!',

@@ -20,8 +20,15 @@ use Illuminate\Support\Facades\Storage;
 class TareaController extends Controller
 {
     public function index($actividad){
-        return Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
+        $tareas = Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
         ->where('tarea.idActividad',$actividad)->get();
+        foreach ($tareas as &$p) {
+            $p->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');
+            $p->fechaFinal = \Carbon\Carbon::parse($p->fechaFinal)->format('d/m/Y');
+            if($p->fechaRealizacion !== null)
+                    $p->fechaRealizacion = \Carbon\Carbon::parse($p->fechaRealizacion)->format('d/m/Y');
+        }
+        return $tareas;
     }
     public function store(Request $request){
         try{
@@ -69,11 +76,9 @@ class TareaController extends Controller
             $reporte->save();
 
             $actividad = Actividad::findOrFail($reporte->idActividad);
-            echo($actividad);
             $actividad->tareasCompletadas = $actividad->tareasCompletadas + 1;
             $actividad->tareasPendientes = $actividad->tareasPendientes - 1;
             $actividad->save();
-            echo($actividad);
 
             $proyecto = Proyecto::findOrFail($actividad->idProyecto);
             if($actividad->tareasCompletadas == $actividad->tareas) {
@@ -137,7 +142,17 @@ class TareaController extends Controller
                 unlink($ruta.$foto->ruta);
                 $foto->delete();
             }
-            $tarea=Tarea::where('id',$task)->delete();
+
+            $tarea = Tarea::where('tarea.id', '=', $task)->first();
+            $actividad = Actividad::findOrFail($tarea->idActividad);
+            $actividad->tareas = $actividad->tareas - 1;
+            if($tarea->estado == 1) {
+                $actividad->tareasCompletadas = $actividad->tareasCompletadas - 1;
+            } else {
+                $actividad->tareasPendientes = $actividad->tareasPendientes - 1;
+            }
+            $actividad->save();
+            $tarea->delete();   
             DB::commit();
             return 'Se ha eliminado la tarea correctamente';
         }catch(\Exception $e){

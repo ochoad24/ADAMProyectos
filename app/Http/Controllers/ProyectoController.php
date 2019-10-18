@@ -176,8 +176,8 @@ class ProyectoController extends Controller
             $proyecto->save();
 
             $orgs = $request->data;//Array de las organizaciones
-
-            foreach($orgs as $ep=>$org) {
+            OrganizacionProyecto::where('organizaciones_proyecto.idproyecto', '=', $proyecto->IdProyecto)->delete();
+            foreach($orgs as &$org) {
                 $org_proy = new OrganizacionProyecto();
                 $org_proy->idproyecto = $proyecto->IdProyecto;
                 $org_proy->idorganizacion = $org['IdOrganizacion'];

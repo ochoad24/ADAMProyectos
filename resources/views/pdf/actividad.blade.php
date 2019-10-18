@@ -4,11 +4,13 @@
 ?>
 <!DOCTYPE>
 <html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Reporte por actividad</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         body {
         /*position: relative;*/
@@ -17,20 +19,61 @@
         /*margin: 0 auto; */
         /*color: #555555;*/
         /*background: #FFFFFF; */
-        font-family: Arial, sans-serif; 
+        font-family: 'Roboto Condensed', sans-serif;; 
         font-size: 14px;
         /*font-family: SourceSansPro;*/
         }
-        .th{
-            color:#fff;
+.th{color:#fff;}
+        #logo{
+        float: left;
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
         }
-        .information {
-            background-color: #fff;
-            color: #000;
+
+        #imagen{
+        width: 100px;
         }
-        .informatio {
-            background-color: #668c2d;
-            color: #fff;
+     
+       
+
+        #datos{
+        float: left;
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-right: 2%;
+        /*text-align: justify;*/
+        }
+
+        #encabezado{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 35%;
+        font-size: 15px;
+        }
+
+        #fact{
+        /*position: relative;*/
+        float: right;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 20px;
+        }
+
+        section{
+        clear: left;
+        }
+
+        #cliente{
+        text-align: right;
+        }
+
+        #facliente{
+        width: 50%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 15px;
         }
         .information .logo {
             margin: 5px;
@@ -38,97 +81,180 @@
         .information table {
          padding: 50px;
         }
-    
-     
-
-      
-
-        section{
-        clear: left;
+        #fac, #fv, #fa{
+        color: #FFFFFF;
+        font-size: 15px;
+        text-align: center;
+        }
+       
+        #facliente thead{
+        padding: 20px;
+        background: #668c2d;
+        text-align: right;
+        border-bottom: 1px solid #FFFFFF;  
         }
 
+        #facvendedor{
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 15px;
+        }
 
+        #facvendedor thead{
+        padding: 20px;
+        background: #2183E3;
+        text-align: center;
+        border-bottom: 1px solid #FFFFFF;  
+        }
 
+        #facarticulo{
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 15px;
+        }
+
+        #facarticulo thead{
+        padding: 20px;
+        background: #2183E3;
+        text-align: right;
+        border-bottom: 1px solid #FFFFFF;  
+        }
+
+        
+        .left{
+            text-align: left;
+        }
+        .contenedor {
+            text-align:center;
+	    }
+        .contenedor>span {
+            display:inline-block;
+            vertical-align:middle;
+            line-height:normal;
+        }
+        .cont>span{
+            display:inline-block;
+            vertical-align:middle;
+            line-height:normal;
+        }
         .hr{
             width: 80%;
         }
-        table {
-            font-size: x-small;
+        .hrt{
+          background-color: #668c2d;
+          width:75%;
         }
-        tfoot tr td {
-            font-weight: bold;
-            font-size: x-small;
+        .invoice table {
+            margin: 25px;
+            border: 1px;
         }
+        .invoice h3 {
+            margin-left: 15px;
+        }
+        .tabla{
+            text-align:center;
+        }
+        .tablas{
+         
+        }
+    
     </style>
+    </head>
     <body>
         @foreach ($tarea as $t)
         <header>
-        <br>
+ 
 <center><img src="../resources/img/adam.jpg" width="180" height="160"></center>
 <hr class="hrt">
-                <center> <h6>QUETZALTENANGO, GUATEMALA</h6>
-                <?php 
+<center><h5>Asociación de Desarrollo Agrícola y Microempresarial</h5>
+<h5 style="color:#668c2d">  {{$t->tarea}} </h5>
+                            <div class="information">
+<table width="100%">
+        <tr>
+        
+            <td align="left" style="width: 40%;">
+            @foreach ($encargado as $e)
+                                Responsable: {{$e->nombre}}
+                            @endforeach
+            <?php 
                     echo "<br>" . "Generado el día: ";
                     print_r($hoy["mday"] . '/');
                     print_r($hoy["mon"] . '/');
                     print_r($hoy["year"] . '<br>')
                 ?>
+
+       
+            </td>
+         
+            <td align="right" style="width: 40%;">
+             
+              
+                    <?php 
+                      print_r($hoy["mday"] . '/');
+                      print_r($hoy["mon"] . '/');
+                      print_r($hoy["year"] . '<br>');
+                    ?>
+                   
+                    https://www.adam.org.gt
+                    11 calle 19-08 A
+                    Zona 3
+                    Quetzaltenango, Guatemala 
+                
+            </td>
+        </tr>
+
+    </table>
+                
+             </div>  
             </center>
-            <br>
-            <div>
-        <center>    <h2 style="color:#668c2d">Reporte de actividad</h2></center>
+            <div class="contenedor">
+            <center><h3>Reporte de Actividades</h3></center>
+          
             <hr class="hr">
         </div>
         </header>
-        <br>
         <section>
-            <div >
-                <table width="100%" class="table">
-                    <thead  style="background-color:#668c2d">                        
+        <div class="invoice">
+           
+          
+            <div class="tabla ">
+             <table class="tablas"  style="margin: 0 auto"  width="55%">
+                    <thead>                        
                         <tr>
-                            
-                            <th class="th">Actividad</th>
-                            <th class="th">Fecha</th>
-                            <th class="th">Responsable</th>
-                            <th class="th">Participantes</th>
-                            <th class="th">Hombres</th>
-                            <th class="th">Mujeres</th>
+                            <th class="th" style="background-color:#668c2d"><center>Datos</center></th> 
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th id=""><p>{{$t->tarea}}<br></th>
-                           <th>  {{$t->fechaRealizacion}}</th>
+                        <tr >
+                            <th><p>{{$t->tarea}}<br>
+                            Fecha realización: {{$t->fechaRealizacion}}<br>
                             @foreach ($encargado as $e)
-                           <th>  {{$e->nombre}}</th>
+                                Responsable: {{$e->nombre}}<br>
                             @endforeach
-                             <th>{{$t->participantes}}</th>
+                            Participantes: {{$t->participantes}}<br>
                             @foreach ($estadisticas as $es)
-                              <th>  {{$es->nombre}}: {{round($es->valor,2)}}<br></p></th>
+                                {{$es->nombre}}: {{round($es->valor,2)}}<br></p></th>
                             @endforeach
                         </tr>
                     </tbody>
                 </table>
+            
+            
             </div>
         </section>
         @endforeach
-        <br>
         <section>
-  
-          
-            
+            <div>
                 @foreach ($fotos as $f)
-           
-        
-                <center> <img src="uploads/{{ $f->ruta }}" width="500" height="500" class="img-thumbnail"></center> <br>
-                   
-             
+                    <center><img src="uploads/{{ $f->ruta }}" width="300" height="300"  class="img-fluid img-thumbnail"></center><br>
                 @endforeach
-             
-       
+            </div>
         </section>
-        <br>
-        <br>
- 
+  
+
+
+
     </body>
 </html>

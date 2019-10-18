@@ -1,12 +1,12 @@
 webpackJsonp([70],{
 
-/***/ 2221:
+/***/ 2222:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2222);
+var content = __webpack_require__(2223);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -27,7 +27,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 2222:
+/***/ 2223:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(17)(false);
@@ -42,7 +42,7 @@ exports.push([module.i, "\n.invoice_bg {\n    margin  : 15px 0 30px;\n    paddin
 
 /***/ }),
 
-/***/ 2223:
+/***/ 2224:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -226,7 +226,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 2224:
+/***/ 2225:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -252,7 +252,7 @@ var render = function() {
                 _c("h4", [
                   _c("img", {
                     attrs: {
-                      src: __webpack_require__(2225),
+                      src: __webpack_require__(2226),
                       alt: "clear"
                     }
                   })
@@ -598,7 +598,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 2225:
+/***/ 2226:
 /***/ (function(module, exports) {
 
 module.exports = "/images/logoblue.png?9b09dfcfe9e03feaf0f425b6dcfd3e62";
@@ -611,13 +611,13 @@ module.exports = "/images/logoblue.png?9b09dfcfe9e03feaf0f425b6dcfd3e62";
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(2221)
+  __webpack_require__(2222)
 }
 var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(2223)
+var __vue_script__ = __webpack_require__(2224)
 /* template */
-var __vue_template__ = __webpack_require__(2224)
+var __vue_template__ = __webpack_require__(2225)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
