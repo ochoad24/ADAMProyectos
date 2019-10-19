@@ -51,24 +51,14 @@ use Illuminate\Http\Request;
             
         });
 
-        // Otras Rutas
-        Route::get('/Rol','RolController@index');
-        Route::post('/Rol/nuevo','RolController@store');
-        Route::put('/Rol/editar','RolController@edit');
-        Route::delete('/Rol/{rol}/delete', 'RolController@drop');
-
-        // Rutas para los permisos
-        Route::get('/Permiso','PermisoController@index');
-        Route::post('/Permiso/nuevo','PermisoController@store');
-        Route::put('/Permiso/editar','PermisoController@edit');
-        Route::delete('/Permiso/{permiso}/delete', 'PermisoController@drop');
-
          //Rutas para los proyectos 
-        Route::get('/proyecto', 'ProyectoController@index');
-        Route::post('/proyecto/registrar', 'ProyectoController@store');
-        Route::put('/proyecto/actualizar', 'ProyectoController@update');
-        Route::get('/proyecto/select', 'ProyectoController@select');
-        Route::get('/proyecto/pdf', 'ProyectoController@proyectoPdf')->name('proyecto_pdf');
+        //Rutas para los proyectos 
+    Route::get('/proyecto', 'ProyectoController@index');
+    Route::get('/proyecto2', 'ProyectoController@index2');
+    Route::post('/proyecto/registrar', 'ProyectoController@store');
+    Route::put('/proyecto/actualizar', 'ProyectoController@update');
+    Route::get('/proyecto/select', 'ProyectoController@select');
+    Route::get('/proyecto/pdf', 'ProyectoController@proyectoPdf')->name('proyecto_pdf');
     
         Route::put('/proyecto/activate', 'ProyectoController@activate');
         Route::put('/proyecto/deactivate', 'ProyectoController@deactivate');
@@ -106,12 +96,7 @@ use Illuminate\Http\Request;
         Route::put('/actividad/delete', 'ActividadController@destroy');
         // Ruta para la seleccion de actividades
         Route::get('/Actividad/{id}', 'ActividadController@select');
-
-        // Rutas para los tipos de actividades
-        Route::get('/TipoActividad', 'TipoActividadController@index');
-        Route::post('/TipoActividad/nuevo','TipoActividadController@store');
-        Route::put('/TipoActividad/editar','TipoActividadController@edit');
-        Route::delete('/TipoActividad/{tipoactividad}/delete', 'TipoActividadController@drop');
+        Route::get('/actividad/selectActividad', 'ActividadController@selectAct');
         
         // Rutas para estadisticas
         Route::get('/Estadistica', 'NombreEstadisticaController@index');
@@ -121,6 +106,8 @@ use Illuminate\Http\Request;
         Route::get('/Estadistica/select/{id}', 'EstadisticaController@select');
         // Rutas para las tareas
         Route::get('/Tarea/{actividad}', 'TareaController@index');
+        Route::get('/Tarea/select/{actividad}', 'TareaController@selectTarea');
+        Route::get('/tarea/pdf', 'TareaController@tareaPdf');
         Route::post('/Tarea/nuevo', 'TareaController@store');
         Route::post('/Tarea/subir', 'TareaController@report');
         Route::get('Tarea/ver/{id}','TareaController@watch');

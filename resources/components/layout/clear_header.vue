@@ -20,11 +20,11 @@
                     </a>
                     <v-dialog v-model="dialog" max-width="600px">
                         <template v-slot:activator="{ on }">
-                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-search" v-on="on"></i>
+                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-database" v-on="on"></i>
                         </template>
                         <v-card>
-                            <v-card-title>
-                                <span class="headline">Seleccione un Proyecto</span>
+                            <v-card-title  style="background-color:#668c2d">
+                                <span class="headline" dark style="color:#fff">Seleccione un Proyecto</span>
                             </v-card-title>
                             <v-card-text>
                                 <v-container grid-list-md>
@@ -37,7 +37,7 @@
                             </v-card-text>
                             <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="blue darken-1" flat @click="close">Cerrar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="close">Cerrar</v-btn>
                             </v-card-actions>
                         </v-card>
                     </v-dialog>
@@ -71,11 +71,7 @@
                                 <i class="fa fa-fw ti-user"></i> My Profile
                             </router-link>
                         </b-dropdown-item>
-                        <b-dropdown-item>
-                            <router-link to="/edit_user" exact>
-                                <i class="fa fa-fw ti-settings"></i> Account Settings
-                            </router-link>
-                        </b-dropdown-item>
+                      
                         <!-- Menu Footer-->
                         <b-dropdown-item class="dropdown-footer">
                             <!-- <div class="float-left">

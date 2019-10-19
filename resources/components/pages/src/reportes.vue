@@ -2,138 +2,177 @@
     <div>
         <!-- Menu de opciones para los reportes -->
        <v-card height="200px" flat>
-            <div class="display-2 text-xs-center pa-5" >
-               <h1 style="color:#668c2d" > Reportes </h1>
+            <div class="display-2 text-xs-center pa-5">
+                Reportes
             </div>
             <v-bottom-nav :value="true" absolute color="transparent">
-                <v-btn color="teal" flat v-model="proy" @click="changeScreen(1)">
+                <v-btn color="#668C2D" flat v-model="proy" @click="changeScreen(1)">
                     <span>Reporte por proyecto</span>
                     <v-icon>group_work</v-icon>
                 </v-btn>
 
-                <v-btn color="teal" flat @click="changeScreen(2)">
+                <v-btn color="#668C2D" flat @click="changeScreen(2)">
                     <span>Reporte por actividad</span>
                     <v-icon>account_tree</v-icon>
                 </v-btn>
 
-                <v-btn color="teal"  flat @click="changeScreen(3)">
+                <v-btn color="#668C2D"  flat @click="changeScreen(3)">
                     <span>Reporte por responsable</span>
                     <v-icon>face</v-icon>
                 </v-btn>
             </v-bottom-nav>
         </v-card>
+        
         <!-- REPORTE POR PROYECTO -->
         <v-stepper v-model="e1" v-if="proy === true" vertical>
             <v-stepper-header>
-                <v-stepper-step :complete="e1 > 1" step="1" color="#668c2d">Seleccionar proyecto</v-stepper-step>
+                <v-stepper-step :complete="e1 > 1" step="1"    color="#668C2D">Seleccionar proyecto</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>
-            <v-stepper-content step="1">
-                <v-card class="mb-5">
-                    <v-divider></v-divider>
-                    <br>
-                     <multiselect v-model="proyecto" :options="proyectos" :multiple="true"
-                        :taggable="false" :close-on-select="true" :clear-on-select="false"
-                        :preserve-search="true" placeholder="Seleccione..." label="Titulo"
-                        track-by="nombre">
-                    </multiselect>
-                </v-card>
+                <v-stepper-content step="1">
+                    <v-card class="mb-5">
+                        <v-data-table :headers="headersPro" :items="proyectos" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.Titulo }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="generarReporteProyecto(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>picture_as_pdf</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Generar reporte</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
+                    </v-card>
+                </v-stepper-content>
+            </v-stepper-items>
+        </v-stepper>
+         <!-- REPORTES POR ACTIVIDAD -->
+        <v-stepper v-model="e3" v-if="act === true">
+            <v-stepper-header>
+                <v-stepper-step    color="#668C2D" :complete="e3 > 1" step="1">Seleccionar proyecto</v-stepper-step>
+                 <v-divider></v-divider>
+                <v-stepper-step    color="#668C2D" :complete="e3 > 2" step="2">Seleccionar actividades</v-stepper-step>
+                <v-divider></v-divider>
+                <v-stepper-step    color="#668C2D" :complete="e3 > 3" step="3">Seleccionar reporte</v-stepper-step>
+            </v-stepper-header>
 
-                <v-btn
-               color="#668c2d" dark class="mb-2"
-                @click="generarReporteProyecto()"
-                >
-                Generar reporte
-                </v-btn>
-
-                <v-btn color="#668c2d"  flat @click="limpiarProyecto()">Cancelar</v-btn>
-            </v-stepper-content>
+            <v-stepper-items>
+                <!-- PASO 1 -->
+                <v-stepper-content step="1">
+                    <v-card class="mb-5">
+                        <v-data-table :headers="headersPro" :items="proyectos" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.Titulo }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="proyectoSelect(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>done</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Seleccionar proyecto</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
+                    </v-card>
+                </v-stepper-content>
+                <!-- PASO 2 -->
+                <v-stepper-content step="2">
+                    <v-card>
+                        <v-data-table :headers="headersAct" :items="actividades" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.actividad }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="actividadSelect(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>done</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Seleccionar actividad</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
+                    </v-card>
+                    <v-btn color="#668C2D" dark class="mb-2" @click="e3 = 1">
+                        Atrás
+                    </v-btn>    
+                </v-stepper-content>
+                <!-- PASO 3 -->
+                <v-stepper-content step="3">
+                    <v-card class="mb-5">
+                        <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.tarea }}</td>
+                                <td class="text-xs-center">{{props.item.fechaRealizacion}}</td>
+                                <td class="justify-center layout px-0">
+                                     <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-icon small class="mr-2" v-on="on" @click="cargarReporte(props.item.id)">
+                                                picture_as_pdf
+                                            </v-icon>
+                                        </template>
+                                        <span>Generar Reporte</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                            <template v-slot:no-results>
+                                <v-alert :value="true" color="error" icon="warning">
+                                    No hay resultados de "{{ search }}".
+                                </v-alert>
+                            </template>
+                        </v-data-table>
+                    </v-card>
+                    
+                    <v-btn
+                     color="#668C2D" dark class="mb-2"
+                    @click="e3 = 2"
+                    >
+                        Atrás
+                    </v-btn>    
+                </v-stepper-content>
             </v-stepper-items>
         </v-stepper>
         <!-- REPORTE POR RESPONSABLE -->
         <v-stepper v-model="e2" v-if="resp === true" vertical>
             <v-stepper-header>
-                <v-stepper-step :complete="e2 > 1" step="1" color="#668c2d">Seleccionar responsable</v-stepper-step>
+                <v-stepper-step color="#668C2D" :complete="e2 > 1" step="1">Seleccionar responsable</v-stepper-step>
             </v-stepper-header>
 
             <v-stepper-items>
                 <v-stepper-content step="1">
                     <v-card class="mb-5">
-                        <v-divider></v-divider>
-                        <br>
-                        <multiselect v-model="responsable" :options="responsables" :multiple="true"
-                            :taggable="false" :close-on-select="true" :clear-on-select="false"
-                            :preserve-search="true" placeholder="Seleccione..." label="nombreEmp"
-                            track-by="nombreEmp">
-                        </multiselect>
+                        <v-data-table :headers="headersEmp" :items="responsables" class="elevation-1" hide-actions>
+                            <v-progress-linear :indeterminate="true"
+                                color="#668c2d" ></v-progress-linear>
+                            <template v-slot:items="props">
+                                <td class="text-xs-center">{{ props.item.nombreEmp }}</td>
+                                <td class="justify-center layout px-0">
+                                    <v-tooltip bottom>
+                                        <template v-slot:activator="{ on }">
+                                            <v-btn icon v-on="on" @click="reporteResponsable(props.item)" color="#7CB342" dark class="mb-2">
+                                                <v-icon>picture_as_pdf</v-icon>
+                                            </v-btn>
+                                        </template>
+                                        <span>Generar reporte</span>
+                                    </v-tooltip>
+                                </td>
+                            </template>
+                        </v-data-table>
                     </v-card>
-
-                    <v-btn
-                  color="#668c2d" dark class="mb-2"
-                    @click="reporteResponsable()"
-                    >
-                    Generar reporte
-                    </v-btn>
-
-                    <v-btn color="#668c2d" flat >Cancelar</v-btn>
-                </v-stepper-content>
-            </v-stepper-items>
-        </v-stepper>
-        <!-- REPORTES POR ACTIVIDAD -->
-        <v-stepper v-model="e3" v-if="act === true">
-            <v-stepper-header>
-                <v-stepper-step :complete="e3 > 1" step="1" color="#668c2d">Seleccionar responsable</v-stepper-step>
-                 <v-divider></v-divider>
-                <v-stepper-step :complete="e3 > 2" step="2" color="#668c2d">Seleccionar actividades</v-stepper-step>
-            </v-stepper-header>
-
-            <v-stepper-items>
-                <v-stepper-content step="1">
-                    <v-card class="mb-5">
-                        <v-divider></v-divider>
-                        <br>
-                        <multiselect v-model="proyecto" :options="proyectos" :multiple="true"
-                            :taggable="false" :close-on-select="true" :clear-on-select="false"
-                            :preserve-search="true" placeholder="Seleccione..." label="nombre"
-                            track-by="nombre">
-                        </multiselect>
-                    </v-card>
-
-                    <v-btn
-                    color="#668c2d" dark class="mb-2"
-                    @click="e3 = 2"
-                    >
-                    Continuar
-                    </v-btn>
-
-                    <v-btn color="#668c2d" flat >Cancelar</v-btn>
-                </v-stepper-content>
-                <v-stepper-content step="2">
-                    <v-card class="mb-5">
-                        <v-divider></v-divider>
-                        <br>
-                        <multiselect v-model="proyecto" :options="proyectos" :multiple="true"
-                            :taggable="false" :close-on-select="true" :clear-on-select="false"
-                            :preserve-search="true" placeholder="Seleccione..." label="Titulo"
-                            track-by="nombre">
-                        </multiselect>
-                    </v-card>
-                    
-                    <v-btn
-                    color="primary"
-                    @click="e3 = 1"
-                    >
-                        Atrás
-                    </v-btn>    
-
-                    <v-btn
-                    color="primary"
-                    >
-                    Generar reporte
-                    </v-btn>
-
-                    <v-btn flat >Cancelar</v-btn>
                 </v-stepper-content>
             </v-stepper-items>
         </v-stepper>
@@ -163,24 +202,35 @@
             responsable: [],
             responsables: [],
             e3: 0,
+            actividad: [],
+            actividades: [],
+            headers: [
+                { text: 'Tarea', value: 'tarea', align: 'center' },
+                { text: 'Fecha realización', value: 'fechaRealizacion', align: 'center' },
+            ],
+            headersPro: [
+                { text: 'Título', value: 'Titulo', align: 'center' },
+            ],
+            headersAct: [
+                { text: 'Actividad', value: 'actividad', align: 'center' },
+            ],
+            headersEmp: [
+                { text: 'Responsable', value: 'nombreEmp', align: 'center' },
+            ],
+            tareas: [],
+            search: "",
         }),
-
         computed: {
-
         },
-
         watch: {
         },
-
         created() {
         },
-
         methods: {
             changeScreen(number) {
                 let me = this;
                 switch(number) {
                     case 1:
-                        me.getProyectos();
                         me.proy = true;
                         me.act = false;
                         me.resp = false;
@@ -189,6 +239,10 @@
                         me.e3 = 0;
                         me.proyectos = [];
                         me.proyecto = [];
+                        me.actividad = [];
+                        me.actividades = [];
+                        me.tareas = [];
+                        me.getProyectos();
                         break;
                     case 2:
                         me.e1 = 0;
@@ -196,22 +250,54 @@
                         me.e3 = 1;
                         me.proyectos = [];
                         me.proyecto = [];
+                        me.actividad = [];
+                        me.actividades = [];
+                        me.tareas = [];
                         me.proy = false;
                         me.act = true;
                         me.resp = false;
+                        me.getProyectos();
                         break;
                     case 3:
-                        me.getReponsables();
                         me.e1 = 0;
                         me.e2 = 1;
                         me.e3 = 0;
                         me.proyectos = [];
                         me.proyecto = [];
+                        me.actividad = [];
+                        me.actividades = [];
+                        me.tareas = [];
                         me.proy = false;
                         me.act = false;
                         me.resp = true;
+                        me.getReponsables();
                         break;
                 }
+            },
+            proyectoSelect(item) {
+                let me = this;  
+                me.e3 = 2;
+                axios.get(`/actividad/selectActividad?id=${item.IdProyecto}`)
+                .then(function (response) {
+                    me.actividades = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error.response);
+                });
+            },
+            actividadSelect(item) {
+                let me = this;
+                me.e3 = 3;
+                axios.get(`/Tarea/select/${item.id}`)
+                .then(function (response) {
+                    me.tareas = response.data;
+                })
+                .catch(function (error) {
+                    console.log(error.response);
+                });
+            },
+            cargarReporte(id) {
+                window.open(window.location.origin + '/tarea/pdf?id=' + id + ',' + '_blank')
             },
             getReponsables() {
                 let me = this;
@@ -233,53 +319,12 @@
                     console.log(error.response);
                 });
             },
-            generarReporteProyecto() {
-                let me = this;
-                if(this.proyecto.length === 0) {
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Por favor seleccione un proyecto',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }
-                else {
-                    
-                    var url='/proyecto/pdf?id=' + me.proyecto[0].IdProyecto;
-                    // axios.get(url)
-                    // .then((response) => {
-                    //         FileDownload(response.data, 'Proyecto.pdf');
-                    // });
-                    // window.open(window.location.origin + '/proyecto/pdf?id=' + me.proyecto[0].IdProyecto + ',' + '_blank')
-                    axios.get(url)
-                .then(response => {
-                console.log(response)
-
-                let blob = new Blob([response.data], { type: 'application/pdf' }),
-                    url = window.URL.createObjectURL(blob)
-
-                window.open(url) // Mostly the same, I was just experimenting with different approaches, tried link.click, iframe and other solutions
-                })
-                }
+            generarReporteProyecto(item) {
+                // window.open(window.location.origin + '/proyecto/pdf?id=' + item.IdProyecto + ',' + '_blank');
+                
             },
-            reporteResponsable() {
-                let me = this;
-                if(this.responsable.length === 0) {
-                    swal.fire({
-                        type: 'warning',
-                        title: 'Por favor seleccione a un responsable',
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                }
-                else {
-                    var url='/User/pdf?id=' + me.responsable[0].id;
-                    axios.get(url)
-                    .then((response) => {
-                            FileDownload(response.data, 'Proyecto.pdf');
-                    });
-                    // window.open(window.location.origin + '/User/pdf?id=' + me.responsable[0].id + ',' + '_blank')
-                }
+            reporteResponsable(item) {
+                window.open(window.location.origin + '/User/pdf?id=' + item.id + ',' + '_blank');
             },
             limpiarProyecto() {
                 this.proy = false;

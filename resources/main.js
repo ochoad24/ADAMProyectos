@@ -8,6 +8,7 @@ import "chart.js";
 import "hchs-vue-charts";
 import vuetify from 'vuetify'
 import swal from 'sweetalert2';
+import es from 'vuetify/es5/locale/es';
 import 'vuetify/dist/vuetify.min.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
@@ -21,8 +22,6 @@ import alertify from 'alertifyjs';
 
 Vue.use(window.VueCharts);
 Vue.use(BootstrapVue)
-Vue.use(vuetify)
-
 
 Vue.use(VueRouter)
 
@@ -31,6 +30,12 @@ axios.defaults.baseURL='http://localhost:8000/api/v1';
 
 
 
+Vue.use(vuetify, {
+    lang: {
+        locales: { es },
+        current: 'es'
+    }
+})
 window.swal = swal;
 
 const router = new VueRouter({

@@ -4,12 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Actividad;
+use App\Proyecto;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 class ActividadController extends Controller
 {
     public function index(Request $request){
         $proyecto=$request->proyecto;
-        return Actividad::join('proyectos','proyectos.IdProyecto','=','actividades.idProyecto')->select('actividades.id','actividades.actividad','actividades.tareas','actividades.tareasCompletadas','actividades.tareasPendientes','actividades.fechaInicio','actividades.fechaFinal','actividades.estado')->where('actividades.idProyecto',$proyecto)->orderBy('actividades.created_at', 'desc')->get();
+        $actividades = Actividad::join('proyectos','proyectos.IdProyecto','=','actividades.idProyecto')
+        ->select(DB::raw('actividades.id, actividades.actividad, ((actividades.tareasCompletadas * 100) / actividades.tareas) as completado, actividades.fechaInicio,
+        actividades.fechaFinal, actividades.estado, actividades.descripcion, actividades.codigo_actividad'))
+        ->where('actividades.idProyecto',$proyecto)->orderBy('actividades.created_at', 'desc')->get();
+        foreach ($actividades as &$p) {
+            $p->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');
+            $p->fechaFinal = \Carbon\Carbon::parse($p->fechaFinal)->format('d/m/Y');
+        }
+        return $actividades;
     }
     public function edit(Request $request){
         $id=$request->id;
@@ -17,6 +27,8 @@ class ActividadController extends Controller
             $actividad = Actividad::findOrFail($id);
             $actividad->actividad = $request->actividad;
             $actividad->idProyecto = $request->idProyecto;
+            $actividad->codigo_actividad = $request->codigo;
+            $actividad->descripcion = $request->descripcion;
             $actividad->fechaInicio = Carbon::parse($request->fechaInicio);
             $actividad->fechaFinal = Carbon::parse($request->fechaFinal);
             $actividad->tareas = 0;
@@ -46,6 +58,8 @@ class ActividadController extends Controller
             $actividad->idProyecto = $request->idProyecto;
             $actividad->fechaInicio = Carbon::parse($request->fechaInicio);
             $actividad->fechaFinal = Carbon::parse($request->fechaFin);
+            $actividad->codigo_actividad = $request->codigo;
+            $actividad->descripcion = $request->descripcion;
             $actividad->tareas = 0;
             $actividad->tareasCompletadas = 0;
             $actividad->tareasPendientes = 0;
@@ -85,8 +99,16 @@ class ActividadController extends Controller
 
     public function destroy(Request $request) {
         //
-        $actividad = Actividad::findOrFail($request->id);
         try {
+            $actividad = Actividad::findOrFail($request->id);
+            $proyecto = Proyecto::findOrFail('proyectos.IdProyecto', '=', $actividad->idProyecto);
+            $proyecto->actividades = $proyecto->actividades - 1;
+            if($actividad->tareasCompletadas == $actividad->tareas) {
+                $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas - 1;
+            } else {
+                $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
+            }
+            $proyecto->save();
             $actividad->delete();
             return response()->json(array('success' => true, 'id' => $org->IdOrganizacion), 200);
         } catch (\Throwable $th) {
@@ -95,6 +117,12 @@ class ActividadController extends Controller
     }
     
     public function select($id) {
-        return Actividad::select('id','actividad as nombre')->where('idProyecto',$id)->get();
+        return Actividad::select(DB::raw('id, CONCAT(codigo_actividad, " ", actividad) as nombre'))->where('idProyecto',$id)->get();
+    }
+
+    public function selectAct(Request $request) {
+        $actividades = Actividad::select(DB::raw('CONCAT(actividades.codigo_actividad, " ", actividades.actividad) as actividad, actividades.id'))
+        ->where('actividades.idProyecto', '=', $request->id)->orderBy('actividad', 'asc')->get();
+        return $actividades;
     }
 }

@@ -15,9 +15,8 @@
 //      Route::post('/login','Auth\LoginController@login')->name('login');
 //  });
  
-
+Route::get('/User/pdf','UserController@responsablePdf')->name('responsable_pdf');
 Route::get('/{any?}', function (){
     return view('welcome');
 })->where('any', '^(?!api\/)[\/\w\.-]*');
 // Route::get('/testmail','AuthController@SendMail');
-

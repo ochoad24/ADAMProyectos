@@ -20,8 +20,15 @@ use Illuminate\Support\Facades\Storage;
 class TareaController extends Controller
 {
     public function index($actividad){
-        return Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
+        $tareas = Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
         ->where('tarea.idActividad',$actividad)->get();
+        foreach ($tareas as &$p) {
+            $p->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');
+            $p->fechaFinal = \Carbon\Carbon::parse($p->fechaFinal)->format('d/m/Y');
+            if($p->fechaRealizacion !== null)
+                    $p->fechaRealizacion = \Carbon\Carbon::parse($p->fechaRealizacion)->format('d/m/Y');
+        }
+        return $tareas;
     }
     public function select($usuario){
 
@@ -153,7 +160,16 @@ class TareaController extends Controller
                 unlink($ruta.$foto->ruta);
                 $foto->delete();
             }
-            $tarea=Tarea::where('id',$task)->delete();
+            $tarea = Tarea::where('tarea.id', '=', $task)->first();
+            $actividad = Actividad::findOrFail($tarea->idActividad);
+            $actividad->tareas = $actividad->tareas - 1;
+            if($tarea->estado == 1) {
+                $actividad->tareasCompletadas = $actividad->tareasCompletadas - 1;
+            } else {
+                $actividad->tareasPendientes = $actividad->tareasPendientes - 1;
+            }
+            $actividad->save();
+            $tarea->delete();   
             DB::commit();
             return 'Se ha eliminado la tarea correctamente';
         }catch(\Exception $e){
@@ -201,5 +217,35 @@ class TareaController extends Controller
             $response['error'] = $e->getMessage();
             return response()->json($response, 500);
         }
+    }
+    public function selectTarea($actividad){
+        return Tarea::select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion')
+        ->where([
+            'tarea.idActividad' => $actividad,
+            'tarea.estado' => '1'
+            ])->get();
+    }
+
+    public function tareaPdf(Request $request) {
+        $estadisticas = Tarea::join('estadistica', 'estadistica.idTarea', '=', 'tarea.id')
+        ->join('nombre_estadistica', 'nombre_estadistica.id', '=', 'estadistica.idNombreEstadistica')
+        ->select('nombre_estadistica.nombre', 'estadistica.valor')
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $fotos = Tarea::join('foto', 'foto.idTarea', '=', 'tarea.id')
+        ->select('foto.ruta')
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $encargado = Tarea::join('encargado', 'encargado.idTarea', '=', 'tarea.id')
+        ->join('users', 'users.id', '=', 'encargado.idEmpleado')
+        ->select(DB::raw('CONCAT(users.nombre, " ", users.apellido) as nombre'))
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $tarea = Tarea::select('tarea.tarea', 'tarea.fechaRealizacion', 'tarea.participantes')
+        ->where('tarea.id', '=', $request->id)->get();
+
+        $pdf = \PDF::loadView('pdf.actividad', ['tarea' => $tarea, 'encargado' => $encargado, 'estadisticas' => $estadisticas, 'fotos' => $fotos]);
+        return $pdf->stream('reporte-'.$tarea[0]->tarea.'.pdf');
+
     }
 }
