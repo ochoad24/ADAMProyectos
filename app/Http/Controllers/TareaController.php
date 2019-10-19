@@ -142,7 +142,6 @@ class TareaController extends Controller
                 unlink($ruta.$foto->ruta);
                 $foto->delete();
             }
-
             $tarea = Tarea::where('tarea.id', '=', $task)->first();
             $actividad = Actividad::findOrFail($tarea->idActividad);
             $actividad->tareas = $actividad->tareas - 1;

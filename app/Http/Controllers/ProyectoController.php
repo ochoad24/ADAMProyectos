@@ -18,7 +18,8 @@ class ProyectoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index2() {
-        $proyectos = Proyecto::all();
+        $proyectos = Proyecto::select('proyectos.*')->where('proyectos.estado', '=', 1)->get();
+        //Where estado == 1
         return $proyectos;
     }
 

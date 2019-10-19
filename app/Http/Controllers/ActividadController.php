@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Actividad;
+use App\Proyecto;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 class ActividadController extends Controller
@@ -98,8 +99,16 @@ class ActividadController extends Controller
 
     public function destroy(Request $request) {
         //
-        $actividad = Actividad::findOrFail($request->id);
         try {
+            $actividad = Actividad::findOrFail($request->id);
+            $proyecto = Proyecto::findOrFail('proyectos.IdProyecto', '=', $actividad->idProyecto);
+            $proyecto->actividades = $proyecto->actividades - 1;
+            if($actividad->tareasCompletadas == $actividad->tareas) {
+                $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas - 1;
+            } else {
+                $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
+            }
+            $proyecto->save();
             $actividad->delete();
             return response()->json(array('success' => true, 'id' => $org->IdOrganizacion), 200);
         } catch (\Throwable $th) {
