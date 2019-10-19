@@ -464,6 +464,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         initialize: function initialize() {
             var _this2 = this;
 
+            this.descripcion = '';
+            this.cantidad = '';
+            this.estadistica = [];
+
             var url = '/Tarea/select/' + this.$store.state.user.id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
                 _this2.tareas = response.data;
@@ -500,9 +504,17 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         close: function close() {
             this.error = 0;
             this.dialog = false;
-            this.fotos = [];
         },
         save: function save() {
+            var lat = void 0,
+                lng = void 0;
+            navigator.geolocation.getCurrentPosition(function (pos) {
+
+                console.log(pos);
+
+                lat = pos.coords.latitude;
+                lng = pos.coords.longitude;
+            });
             var me = this;
             var archivos = [];
             this.files.forEach(function (element) {
@@ -516,25 +528,31 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             for (var i = 0; i < this.files.length; i++) {
                 form.append('fotos[]', this.files[i].file);
             }
-            form.append('estadisticas', JSON.stringify(this.estadisticas));
+
+            this.estadisticas.forEach(function (element) {
+                var Esta = new Object();
+                Esta.id = element.id.toString();
+                Esta.nombre = element.nombre;
+                Esta.value = element.value;
+                me.estadistica.push(Esta);
+            });
+            form.append('estadisticas', JSON.stringify(this.estadistica));
             var ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
+
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/Tarea/subir', form, ajuste).then(function (response) {
                 console.log(response.data);
-                swal.fire({
-                    position: 'top-end',
-                    type: 'success',
-                    title: response.data,
-                    showConfirmButton: false
-                });
-                me.initialize();
-                me.close();
-            }).catch(function (error) {
-                swal.fire({
-                    position: 'top-end',
-                    type: 'error',
-                    title: error,
-                    showConfirmButton: true
-                });
+                // let respuesta;
+                // if(response.data.offline==true)
+                //     respuesta=response.data.data;
+                // else
+                //     respuesta=response.data;
+                // // swal.fire({
+                // //     position: 'top-end',
+                // //     type: 'success',
+                // //     title: respuesta,
+                // //     showConfirmButton: false,
+                // // });
+                // console.log(respuesta);
                 me.initialize();
                 me.close();
             });

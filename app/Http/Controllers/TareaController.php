@@ -83,11 +83,10 @@ class TareaController extends Controller
             $reporte->save();
 
             $actividad = Actividad::findOrFail($reporte->idActividad);
-            echo($actividad);
             $actividad->tareasCompletadas = $actividad->tareasCompletadas + 1;
             $actividad->tareasPendientes = $actividad->tareasPendientes - 1;
             $actividad->save();
-            echo($actividad);
+            
 
             $proyecto = Proyecto::findOrFail($actividad->idProyecto);
             if($actividad->tareasCompletadas == $actividad->tareas) {
@@ -96,9 +95,9 @@ class TareaController extends Controller
                 $proyecto->save();
             }
             
-            $esta=json_decode($request->estadisticas);
-            foreach($esta as $value){
-                // return $value-;
+            $esta=$request->estadisticas;
+            $data= json_decode($esta);
+            foreach($data as $value){
                 $estadistica=Estadistica::findOrFail($value->id);
                 $estadistica->valor=$value->value;
                 $estadistica->save();
@@ -106,7 +105,7 @@ class TareaController extends Controller
             foreach($request->fotos as $value){
                 $imagenOriginal = $value;
                 $imagen = Image::make($imagenOriginal);
-                $temp_name = $this->random_string() . '.' . $imagenOriginal->getClientOriginalExtension();
+                $temp_name = $this->getToken(15) . '.' . 'jpg';
                 $imagen->save($ruta . $temp_name, 100);
                 $foto=new Foto;
                 $foto->idTarea=$request->id;
@@ -114,23 +113,26 @@ class TareaController extends Controller
                 $foto->save();
             }
             DB::commit();
-            return 'Se ha subido su reporte con exito';   
+            return 'Se ha subido el reporte con exito';   
         }catch(\Exception $e){
             DB::rollback();
             $response['error'] = $e->getMessage();
             return response()->json($response, 500);
+            
         }
     }
-    protected function random_string()
-    {
-        $key = '';
-        $keys = array_merge( range('a','z'), range(0,9) );
-    
-        for($i=0; $i<10; $i++)
-        {
-            $key .= $keys[array_rand($keys)];
-        }
-        return $key;
+    protected function getToken($length){
+        $token = "";
+        $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $codeAlphabet.= "abcdefghijklmnopqrstuvwxyz";
+        $codeAlphabet.= "0123456789";
+        $max = strlen($codeAlphabet); // edited
+   
+       for ($i=0; $i < $length; $i++) {
+           $token .= $codeAlphabet[random_int(0, $max-1)];
+       }
+   
+       return $token;
     }
     public function watch($id){
         $ruta = public_path().'/uploads/';

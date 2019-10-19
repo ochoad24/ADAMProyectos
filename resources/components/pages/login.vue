@@ -124,7 +124,7 @@
                         },
                         error: function () {
                             app.has_error = true
-                            app.error = res.response.data.error
+                            
                         },
                         rememberMe: true,
                         fetchUser: true

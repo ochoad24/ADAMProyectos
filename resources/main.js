@@ -72,7 +72,6 @@ function isOnline() {
         // console.log('online');
         alertify.success('Acceso a internet');
 
-
     } else{
         // No tenemos conexión
         alertify.error('Sin acceso a internet');
@@ -84,6 +83,11 @@ window.addEventListener('online', isOnline );
 window.addEventListener('offline', isOnline );
 
 isOnline();
+
+// Obtener GeoLocalizacion
+navigator.geolocation.getCurrentPosition((pos)=>{
+    console.log(pos);
+});
 
 Vue.router = router;
 Vue.use(VueAuth, auth);

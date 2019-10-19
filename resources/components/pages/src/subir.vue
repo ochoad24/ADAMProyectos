@@ -344,6 +344,10 @@
                 return this.error;
             },
             initialize() {
+                this.descripcion='';
+                this.cantidad='';
+                this.estadistica=[];
+                
                 var url = '/Tarea/select/' + this.$store.state.user.id;
                 axios.get(url)
                     .then(response => {
@@ -382,10 +386,18 @@
             close() {
                 this.error = 0;
                 this.dialog = false;
-                this.fotos = [];
             },
 
             save() {
+                let lat,lng;
+                navigator.geolocation.getCurrentPosition( pos => {
+
+                    console.log( pos );
+                    
+                    lat = pos.coords.latitude;
+                    lng = pos.coords.longitude;
+
+                });
                 let me = this;
                 var archivos = [];
                 this.files.forEach(element => {
@@ -399,25 +411,31 @@
                 for (var i = 0; i < this.files.length; i++) {
                     form.append('fotos[]', this.files[i].file);
                 }
-                form.append('estadisticas', JSON.stringify(this.estadisticas));
+    
+                this.estadisticas.forEach(element => {
+                    var Esta=new Object();
+                    Esta.id=element.id.toString();
+                    Esta.nombre=element.nombre;
+                    Esta.value=element.value;
+                    me.estadistica.push(Esta);
+                });
+                form.append('estadisticas', JSON.stringify(this.estadistica));
                 const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
-                axios.post('/Tarea/subir', form, ajuste).then(function (response) {
+                
+                axios.post('/Tarea/subir',form, ajuste).then(function (response) {
                     console.log(response.data);
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'success',
-                        title: response.data,
-                        showConfirmButton: false,
-                    });
-                    me.initialize();
-                    me.close();
-                }).catch(function (error) {
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'error',
-                        title: error,
-                        showConfirmButton: true
-                    });
+                    // let respuesta;
+                    // if(response.data.offline==true)
+                    //     respuesta=response.data.data;
+                    // else
+                    //     respuesta=response.data;
+                    // // swal.fire({
+                    // //     position: 'top-end',
+                    // //     type: 'success',
+                    // //     title: respuesta,
+                    // //     showConfirmButton: false,
+                    // // });
+                    // console.log(respuesta);
                     me.initialize();
                     me.close();
                 });

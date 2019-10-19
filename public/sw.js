@@ -1,22 +1,11 @@
+importScripts('js/pouchdb.min.js')
+importScripts('js/axios.min.js')
+importScripts('js/sw-db.js');
+importScripts('js/sw-utils.js');
 
 const STATIC_CACHE    = 'static-v3';
 const DYNAMIC_CACHE   = 'dynamic-v3';
 const INMUTABLE_CACHE = 'inmutable-v3';
-
-const CACHE_DYNAMIC_LIMIT = 200;
-
-function limpiarCache( cacheName, numeroItems ) {
-    caches.open( cacheName )
-        .then( cache => {
-            return cache.keys()
-                .then( keys => {
-                    if ( keys.length > numeroItems ) {
-                        cache.delete( keys[0] )
-                            .then( limpiarCache(cacheName, numeroItems) );
-                    }
-                });
-        });
-}
 
 const APP_SHELL = [
     '/',
@@ -60,7 +49,8 @@ const APP_SHELL_INMUTABLE = [
     '/images/avatar7.jpg?ac60ef718e8f9765886e30ee907fea17',
     '/fonts/vendor/material-design-icons-icondist/MaterialIcons-Regular.woff2?0509ab09c1b0d2200a4135803c91d6ce',
     '/images/logo8.png?18b455a04afa612acc4ac795c286b5b1',
-    'https://cdn.jsdelivr.net/npm/pouchdb@7.1.1/dist/pouchdb.min.js'
+    'js/pouchdb.min.js',
+    'js/axios.min.js'
 ];
 
 self.addEventListener('install', e => {
@@ -71,6 +61,8 @@ self.addEventListener('install', e => {
 
     const cacheInmutable = caches.open( INMUTABLE_CACHE ).then(cache => 
         cache.addAll( APP_SHELL_INMUTABLE ));
+
+
 
     e.waitUntil( Promise.all([ cacheStatic, cacheInmutable ])  );
 
@@ -99,24 +91,56 @@ self.addEventListener('activate', e => {
 
 });
 
+
+
+
+
 self.addEventListener( 'fetch', e => {
 
-    const respuesta = fetch( e.request ).then( res => {
+    let respuesta;
 
-        if ( !res ) return caches.match( e.request );
+    if ( e.request.url.includes('/api') ) {
 
-        caches.open( DYNAMIC_CACHE )
-            .then( cache => {
-                cache.put( e.request, res );
-                limpiarCache( DYNAMIC_CACHE, CACHE_DYNAMIC_LIMIT );
-            });
+        // return respuesta????
+        respuesta = manejoApiMensajes( DYNAMIC_CACHE, e.request );
 
-        return res.clone();
+    } else {
 
-    }).catch( err =>{
-        return caches.match( e.request );
-    });
+        respuesta = caches.match( e.request ).then( res => {
+
+            if ( res ) {
+                
+                actualizaCacheStatico( STATIC_CACHE, e.request, APP_SHELL_INMUTABLE );
+                return res;
+                
+            } else {
+    
+                return fetch( e.request ).then( newRes => {
+    
+                    return actualizaCacheDinamico( DYNAMIC_CACHE, e.request, newRes );
+    
+                });
+    
+            }
+    
+        });
+
+    }
+
     e.respondWith( respuesta );
 
+});
+
+
+// tareas asíncronas
+self.addEventListener('sync', e => {
+
+    console.log('SW: Sync');
+
+    if ( e.tag === 'nuevo-post' ) {
+        // postear a BD cuando hay conexión
+        const respuesta = postearMensajes();
+        e.waitUntil( respuesta );
+    }
 });
 
