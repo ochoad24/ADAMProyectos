@@ -21,6 +21,7 @@ const store = new Vuex.Store({
             id:0,
             nombre:''
         },
+        notificacion:false
     },
     mutations,
     getters:{

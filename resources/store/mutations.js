@@ -42,6 +42,9 @@ let mutations = {
         state.user.job=Usuario.job;
         state.user.role=Usuario.role;
         state.user.id=Usuario.id;
+    },
+    changeNotificacion(state,notificacion){
+        state.notificacion=notificacion;
     }
 }
 export default mutations

@@ -1,26 +1,26 @@
 webpackJsonp([3],{
 
-/***/ 485:
+/***/ 484:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(671)
-  __webpack_require__(673)
-  __webpack_require__(675)
+  __webpack_require__(663)
+  __webpack_require__(665)
+  __webpack_require__(667)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(677)
+var __vue_script__ = __webpack_require__(670)
 /* template */
-var __vue_template__ = __webpack_require__(678)
+var __vue_template__ = __webpack_require__(671)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-7b7bdec2"
+var __vue_scopeId__ = "data-v-624e51c6"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -31,7 +31,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/register.vue"
+Component.options.__file = "resources/components/pages/login.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -40,9 +40,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7b7bdec2", Component.options)
+    hotAPI.createRecord("data-v-624e51c6", Component.options)
   } else {
-    hotAPI.reload("data-v-7b7bdec2", Component.options)
+    hotAPI.reload("data-v-624e51c6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51,6 +51,13 @@ if (false) {(function () {
 
 module.exports = Component.exports
 
+
+/***/ }),
+
+/***/ 499:
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
 
 /***/ }),
 
@@ -1403,23 +1410,23 @@ var options = {
 
 /***/ }),
 
-/***/ 671:
+/***/ 663:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(672);
+var content = __webpack_require__(664);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(27)("79bdb306", content, false, {});
+var update = __webpack_require__(27)("63a6ae73", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b7bdec2\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrapValidator.min.css", function() {
-     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b7bdec2\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrapValidator.min.css");
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrapValidator.min.css", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrapValidator.min.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -1430,7 +1437,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 672:
+/***/ 664:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -1445,23 +1452,23 @@ exports.push([module.i, "/*!\r\n * BootstrapValidator (http://bootstrapvalidator
 
 /***/ }),
 
-/***/ 673:
+/***/ 665:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(674);
+var content = __webpack_require__(666);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(27)("3606b3c5", content, false, {});
+var update = __webpack_require__(27)("6afdcb8a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b7bdec2\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b7bdec2\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -1472,7 +1479,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 674:
+/***/ 666:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -1480,30 +1487,30 @@ exports = module.exports = __webpack_require__(18)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);", ""]);
 
 // module
-exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General style\n----------------------------*/\nbody[data-v-7b7bdec2] {\n    font-family: 'Open Sans', sans-serif;\n    height: 100%;\n    padding: 6.5% 0;\n}\n#sign-in[data-v-7b7bdec2],\n#sign-up[data-v-7b7bdec2] {\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n}\n.login-form[data-v-7b7bdec2] {\n    background-color: rgba(255, 255, 255, .9);\n    border-radius: 4px;\n    padding-top: 15px;\n    padding-bottom: 15px;\n}\n.btn-primary[data-v-7b7bdec2],\n.primary[data-v-7b7bdec2],\n.tags a.primary[data-v-7b7bdec2] {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.btn[data-v-7b7bdec2]{\n    cursor: pointer;\n}\n.btn-primary[data-v-7b7bdec2]:hover {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.icheckbox_minimal-blue[data-v-7b7bdec2] {\n    background-position: -20px 0;\n}\na[data-v-7b7bdec2]:hover,\na[data-v-7b7bdec2]:focus {\n    text-decoration: none;\n}\n.social a[data-v-7b7bdec2] {\n    border-radius: 50px;\n    padding: 10px 12px 2px 12px;\n    font-size: 25px;\n}\n.btn-facebook[data-v-7b7bdec2],\n.btn-facebook[data-v-7b7bdec2]:hover,\n.btn-facebook[data-v-7b7bdec2]:focus {\n    color: #5F7AB3;\n    border: 1px solid #5F7AB3;\n}\n.btn-twitter[data-v-7b7bdec2],\n.btn-twitter[data-v-7b7bdec2]:hover,\n.btn-twitter[data-v-7b7bdec2]:focus {\n    background: #3BACF2;\n    color: rgba(255, 255, 255, .85);\n    border: 1px solid #3BACF2;\n}\n.has-error .help-block[data-v-7b7bdec2],\n.has-error .control-label[data-v-7b7bdec2],\n.has-error .radio[data-v-7b7bdec2],\n.has-error .checkbox[data-v-7b7bdec2],\n.has-error .radio-inline[data-v-7b7bdec2],\n.has-error .checkbox-inline[data-v-7b7bdec2] {\n    color: #ff6666;\n}\n.has-error.radio label[data-v-7b7bdec2],\n.has-error.checkbox label[data-v-7b7bdec2],\n.has-success.radio label[data-v-7b7bdec2],\n.has-success.checkbox label[data-v-7b7bdec2] {\n    color: #333;\n}\n.radio[data-v-7b7bdec2],\n.checkbox[data-v-7b7bdec2] {\n    display: block;\n}\n.has-error .form-control[data-v-7b7bdec2],\n.has-error .form-control[data-v-7b7bdec2]:focus {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-success .form-control[data-v-7b7bdec2],\n.has-success .form-control[data-v-7b7bdec2]:focus {\n    border-color: #66cc99;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.btn-google[data-v-7b7bdec2],\n.btn-google[data-v-7b7bdec2]:hover,\n.btn-google[data-v-7b7bdec2]:focus {\n    color: #dd4b39;\n    border: 1px solid #dd4b39;\n}\n.social .alter[data-v-7b7bdec2] {\n    font-size: 21px;\n    color: #666;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n#forgot[data-v-7b7bdec2]:hover {\n    color: #2a6496 !important;\n}\n@media screen and (max-width: 400px) {\n.mar-left5[data-v-7b7bdec2] {\n        margin-left: 18px !important;\n        margin-top: -10px;\n}\n.mar-top4[data-v-7b7bdec2] {\n        margin-top: -10px;\n}\n.mar-left[data-v-7b7bdec2] {\n        margin-left: -5px !important;\n}\n.sign-up[data-v-7b7bdec2] {\n        float: left !important;\n}\n#forgot[data-v-7b7bdec2]::after {\n        content: \"\\A\";\n        white-space: pre;\n}\n}\n\n\n/* Chrome, Safari, Opera */\n@-webkit-keyframes CAnimation-data-v-7b7bdec2 {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n\n\n/* Standard syntax */\n@keyframes CAnimation-data-v-7b7bdec2 {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n.forgot[data-v-7b7bdec2] {\n    color: #428BCA !important;\n}\na[data-v-7b7bdec2]:hover {\n    text-decoration: none;\n}\n.radio label[data-v-7b7bdec2],\n.checkbox label[data-v-7b7bdec2] {\n    padding-left: 0;\n}\n@media (min-width: 768px) {\n.form_width[data-v-7b7bdec2] {\n        margin-left: 12%;\n}\n}\n\n\n/* ===== Preloader =====*/\n.preloader[data-v-7b7bdec2] {\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 100000;\n    backface-visibility: hidden;\n    background: #ffffff;\n}\n.loader_img[data-v-7b7bdec2] {\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    background-position: center;\n    margin: -25px 0 0 -25px;\n}\n", ""]);
+exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General style\n----------------------------*/\nbody[data-v-624e51c6] {\n    font-family: 'Open Sans', sans-serif;\n    height: 100%;\n    padding: 6.5% 0;\n}\n#sign-in[data-v-624e51c6],\n#sign-up[data-v-624e51c6] {\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n}\n.login-form[data-v-624e51c6] {\n    background-color: rgba(255, 255, 255, .9);\n    border-radius: 4px;\n    padding-top: 15px;\n    padding-bottom: 15px;\n}\n.btn-primary[data-v-624e51c6],\n.primary[data-v-624e51c6],\n.tags a.primary[data-v-624e51c6] {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.btn[data-v-624e51c6]{\n    cursor: pointer;\n}\n.btn-primary[data-v-624e51c6]:hover {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.icheckbox_minimal-blue[data-v-624e51c6] {\n    background-position: -20px 0;\n}\na[data-v-624e51c6]:hover,\na[data-v-624e51c6]:focus {\n    text-decoration: none;\n}\n.social a[data-v-624e51c6] {\n    border-radius: 50px;\n    padding: 10px 12px 2px 12px;\n    font-size: 25px;\n}\n.btn-facebook[data-v-624e51c6],\n.btn-facebook[data-v-624e51c6]:hover,\n.btn-facebook[data-v-624e51c6]:focus {\n    color: #5F7AB3;\n    border: 1px solid #5F7AB3;\n}\n.btn-twitter[data-v-624e51c6],\n.btn-twitter[data-v-624e51c6]:hover,\n.btn-twitter[data-v-624e51c6]:focus {\n    background: #3BACF2;\n    color: rgba(255, 255, 255, .85);\n    border: 1px solid #3BACF2;\n}\n.has-error .help-block[data-v-624e51c6],\n.has-error .control-label[data-v-624e51c6],\n.has-error .radio[data-v-624e51c6],\n.has-error .checkbox[data-v-624e51c6],\n.has-error .radio-inline[data-v-624e51c6],\n.has-error .checkbox-inline[data-v-624e51c6] {\n    color: #ff6666;\n}\n.has-error.radio label[data-v-624e51c6],\n.has-error.checkbox label[data-v-624e51c6],\n.has-success.radio label[data-v-624e51c6],\n.has-success.checkbox label[data-v-624e51c6] {\n    color: #333;\n}\n.radio[data-v-624e51c6],\n.checkbox[data-v-624e51c6] {\n    display: block;\n}\n.has-error .form-control[data-v-624e51c6],\n.has-error .form-control[data-v-624e51c6]:focus {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-success .form-control[data-v-624e51c6],\n.has-success .form-control[data-v-624e51c6]:focus {\n    border-color: #66cc99;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.btn-google[data-v-624e51c6],\n.btn-google[data-v-624e51c6]:hover,\n.btn-google[data-v-624e51c6]:focus {\n    color: #dd4b39;\n    border: 1px solid #dd4b39;\n}\n.social .alter[data-v-624e51c6] {\n    font-size: 21px;\n    color: #666;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n#forgot[data-v-624e51c6]:hover {\n    color: #2a6496 !important;\n}\n@media screen and (max-width: 400px) {\n.mar-left5[data-v-624e51c6] {\n        margin-left: 18px !important;\n        margin-top: -10px;\n}\n.mar-top4[data-v-624e51c6] {\n        margin-top: -10px;\n}\n.mar-left[data-v-624e51c6] {\n        margin-left: -5px !important;\n}\n.sign-up[data-v-624e51c6] {\n        float: left !important;\n}\n#forgot[data-v-624e51c6]::after {\n        content: \"\\A\";\n        white-space: pre;\n}\n}\n\n\n/* Chrome, Safari, Opera */\n@-webkit-keyframes CAnimation-data-v-624e51c6 {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n\n\n/* Standard syntax */\n@keyframes CAnimation-data-v-624e51c6 {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n.forgot[data-v-624e51c6] {\n    color: #428BCA !important;\n}\na[data-v-624e51c6]:hover {\n    text-decoration: none;\n}\n.radio label[data-v-624e51c6],\n.checkbox label[data-v-624e51c6] {\n    padding-left: 0;\n}\n@media (min-width: 768px) {\n.form_width[data-v-624e51c6] {\n        margin-left: 12%;\n}\n}\n\n\n/* ===== Preloader =====*/\n.preloader[data-v-624e51c6] {\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 100000;\n    backface-visibility: hidden;\n    background: #ffffff;\n}\n.loader_img[data-v-624e51c6] {\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    background-position: center;\n    margin: -25px 0 0 -25px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 675:
+/***/ 667:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(676);
+var content = __webpack_require__(668);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(27)("659d9dfa", content, false, {});
+var update = __webpack_require__(27)("9bc21c8e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b7bdec2\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./register.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b7bdec2\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./register.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./login.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -1514,22 +1521,30 @@ if(false) {
 
 /***/ }),
 
-/***/ 676:
+/***/ 668:
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(29);
 exports = module.exports = __webpack_require__(18)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n.register[data-v-7b7bdec2] {\r\n    padding-top: 6.5%;\r\n    width: 100%;\r\n    height:100vh;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\r\n    overflow-y: auto;\n}\nlabel[for=\"terms\"][data-v-7b7bdec2]{\r\n        width: 100%;\n}\r\n", ""]);
+exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 6.5%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    /* background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%); */\n    background: url(" + escape(__webpack_require__(669)) + ");\n    overflow-y: auto;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 677:
+/***/ 669:
+/***/ (function(module, exports) {
+
+module.exports = "/images/LoginBackgroud.jpg?02f195da18a24877d526f4faadf7051f";
+
+/***/ }),
+
+/***/ 670:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1614,67 +1629,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_form___default.a, __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "register",
+    name: "login",
     data: function data() {
         return {
             formstate: {},
             model: {
-                firstname: "",
-                lastname: '',
                 email: "",
-                password: '',
-                repeatPassword: '',
-                terms: false
-            }
+                password: ""
+
+            },
+            success: false,
+            has_error: false,
+            error: ''
         };
     },
 
@@ -1683,620 +1655,340 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
             if (this.formstate.$invalid) {
                 return;
             } else {
-                this.$router.push("/");
+                var redirect = this.$auth.redirect();
+                var app = this;
+
+                this.$auth.login({
+                    data: {
+                        email: app.model.email,
+                        password: app.model.password
+                    },
+                    success: function success() {
+                        // handle redirection
+                        app.success = true;
+
+                        var redirectTo = redirect ? redirect.from.name : this.$auth.user().role === -1 ? '/' : '/';
+                        // const redirectTo = 'dashboard'
+                        // this.$router.push({ name: redirectTo })
+                        var Usuario = new Object();
+                        Usuario.name = this.$auth.user().nombre + ' ' + this.$auth.user().apellido;
+                        Usuario.job = this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
+                        Usuario.role = this.$auth.user().role;
+                        Usuario.id = this.$auth.user().id;
+                        this.$store.commit('changeUser', Usuario);
+                        console.log(Usuario);
+                        window.location.href = "/#/";
+                    },
+                    error: function error() {
+                        app.has_error = true;
+                    },
+                    rememberMe: true,
+                    fetchUser: true
+                });
             }
         }
     },
+    mounted: function mounted() {},
     destroyed: function destroyed() {}
 });
 
 /***/ }),
 
-/***/ 678:
+/***/ 671:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid register" }, [
+  return _c("div", { staticClass: "container-fluid login" }, [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c(
           "div",
-          { staticClass: "col-lg-4  col-10 col-sm-8 m-auto login-form" },
+          { staticClass: "col-lg-4 col-10 col-sm-8 mx-auto login-form" },
           [
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
-                attrs: {
-                  src: __webpack_require__(679),
-                  alt: "Logo"
-                }
+                attrs: { src: __webpack_require__(499), alt: "Logo" }
               })
             ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "card-body" },
-              [
+            _c("div", { staticClass: "card-body" }, [
+              _c("div", { staticClass: "row" }, [
                 _c(
-                  "vue-form",
-                  {
-                    attrs: { state: _vm.formstate },
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.onSubmit($event)
-                      }
-                    }
-                  },
+                  "div",
+                  { staticClass: "col-12" },
                   [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-12 col-sm-6" }, [
-                        _c(
-                          "div",
-                          { staticClass: "form-group" },
-                          [
+                    _c(
+                      "vue-form",
+                      {
+                        attrs: { state: _vm.formstate },
+                        on: {
+                          submit: function($event) {
+                            $event.preventDefault()
+                            return _vm.onSubmit($event)
+                          }
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-sm-12 mt-3 " }, [
                             _c(
-                              "validate",
-                              { attrs: { tag: "div" } },
+                              "div",
+                              { staticClass: "form-group" },
                               [
                                 _c(
-                                  "label",
-                                  {
-                                    staticClass: "sr-only",
-                                    attrs: { for: "first" }
-                                  },
-                                  [_vm._v(" First Name")]
-                                ),
-                                _vm._v(" "),
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.model.firstname,
-                                      expression: "model.firstname"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    id: "first",
-                                    name: "firstname",
-                                    type: "text",
-                                    required: "",
-                                    autofocus: "",
-                                    placeholder: "First Name"
-                                  },
-                                  domProps: { value: _vm.model.firstname },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.$set(
-                                        _vm.model,
-                                        "firstname",
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "field-messages",
-                                  {
-                                    staticClass: "text-danger",
-                                    attrs: {
-                                      name: "firstname",
-                                      show: "$invalid && $submitted"
-                                    }
-                                  },
+                                  "validate",
+                                  { attrs: { tag: "div" } },
                                   [
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "required" },
-                                        slot: "required"
+                                    _c("input", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.model.email,
+                                          expression: "model.email"
+                                        }
+                                      ],
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        name: "email",
+                                        id: "email",
+                                        type: "email",
+                                        required: "",
+                                        autofocus: "",
+                                        placeholder: "Ingrese su correo"
                                       },
-                                      [_vm._v("Firstname is a required field")]
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-12 col-sm-6" }, [
-                        _c(
-                          "div",
-                          { staticClass: "form-group" },
-                          [
-                            _c(
-                              "validate",
-                              { attrs: { tag: "div" } },
-                              [
-                                _c(
-                                  "label",
-                                  {
-                                    staticClass: "sr-only",
-                                    attrs: { for: "last" }
-                                  },
-                                  [_vm._v(" Last Name")]
-                                ),
-                                _vm._v(" "),
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.model.lastname,
-                                      expression: "model.lastname"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    id: "last",
-                                    name: "lastname",
-                                    type: "text",
-                                    required: "",
-                                    autofocus: "",
-                                    placeholder: "Last Name"
-                                  },
-                                  domProps: { value: _vm.model.lastname },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
+                                      domProps: { value: _vm.model.email },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.model,
+                                            "email",
+                                            $event.target.value
+                                          )
+                                        }
                                       }
-                                      _vm.$set(
-                                        _vm.model,
-                                        "lastname",
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "field-messages",
-                                  {
-                                    staticClass: "text-danger",
-                                    attrs: {
-                                      name: "lastname",
-                                      show: "$invalid && $submitted"
-                                    }
-                                  },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "required" },
-                                        slot: "required"
-                                      },
-                                      [_vm._v("Lastname is a required field")]
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-12" }, [
-                        _c(
-                          "div",
-                          { staticClass: "form-group" },
-                          [
-                            _c(
-                              "validate",
-                              { attrs: { tag: "div" } },
-                              [
-                                _c(
-                                  "label",
-                                  {
-                                    staticClass: "sr-only",
-                                    attrs: { for: "email" }
-                                  },
-                                  [_vm._v(" E-mail")]
-                                ),
-                                _vm._v(" "),
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.model.email,
-                                      expression: "model.email"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    id: "email",
-                                    name: "email",
-                                    type: "email",
-                                    required: "",
-                                    placeholder: "E-mail"
-                                  },
-                                  domProps: { value: _vm.model.email },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.$set(
-                                        _vm.model,
-                                        "email",
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "field-messages",
-                                  {
-                                    staticClass: "text-danger",
-                                    attrs: {
-                                      name: "email",
-                                      show: "$invalid && $submitted"
-                                    }
-                                  },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "required" },
-                                        slot: "required"
-                                      },
-                                      [_vm._v("Email is a required field")]
-                                    ),
+                                    }),
                                     _vm._v(" "),
                                     _c(
-                                      "div",
+                                      "field-messages",
                                       {
-                                        attrs: { slot: "email" },
-                                        slot: "email"
-                                      },
-                                      [_vm._v("Email is not valid")]
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-12" }, [
-                        _c(
-                          "div",
-                          { staticClass: "form-group" },
-                          [
-                            _c(
-                              "validate",
-                              { attrs: { tag: "div" } },
-                              [
-                                _c(
-                                  "label",
-                                  {
-                                    staticClass: "sr-only",
-                                    attrs: { for: "password" }
-                                  },
-                                  [_vm._v(" Password")]
-                                ),
-                                _vm._v(" "),
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.model.password,
-                                      expression: "model.password"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    id: "password",
-                                    name: "password",
-                                    type: "password",
-                                    required: "",
-                                    placeholder: "Password",
-                                    minlength: "6",
-                                    maxlength: "10"
-                                  },
-                                  domProps: { value: _vm.model.password },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.$set(
-                                        _vm.model,
-                                        "password",
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "field-messages",
-                                  {
-                                    staticClass: "text-danger",
-                                    attrs: {
-                                      name: "password",
-                                      show: "$invalid && $submitted"
-                                    }
-                                  },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "required" },
-                                        slot: "required"
-                                      },
-                                      [_vm._v("Password is required")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "minlength" },
-                                        slot: "minlength"
+                                        staticClass: "text-danger",
+                                        attrs: {
+                                          name: "email",
+                                          show: "$invalid && $submitted"
+                                        }
                                       },
                                       [
-                                        _vm._v(
-                                          "Password should be atleast 6 characters long"
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "maxlength" },
-                                        slot: "maxlength"
-                                      },
-                                      [
-                                        _vm._v(
-                                          "Password should be atmost 10 characters long"
+                                        _c(
+                                          "div",
+                                          {
+                                            attrs: { slot: "required" },
+                                            slot: "required"
+                                          },
+                                          [
+                                            _vm._v(
+                                              "El correo electrónico es un campo\n                                                        obligatorio"
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            attrs: { slot: "email" },
+                                            slot: "email"
+                                          },
+                                          [_vm._v("El correo no es válido")]
                                         )
                                       ]
                                     )
-                                  ]
+                                  ],
+                                  1
                                 )
                               ],
                               1
                             )
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-12" }, [
-                        _c(
-                          "div",
-                          { staticClass: "form-group" },
-                          [
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-12" }, [
                             _c(
-                              "validate",
-                              { attrs: { tag: "div" } },
+                              "div",
+                              { staticClass: "form-group" },
                               [
                                 _c(
-                                  "label",
-                                  {
-                                    staticClass: "sr-only",
-                                    attrs: { for: "confirm_password" }
-                                  },
-                                  [_vm._v(" Confirm Password")]
-                                ),
-                                _vm._v(" "),
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.model.repeatPassword,
-                                      expression: "model.repeatPassword"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    name: "repeatpassword",
-                                    id: "confirm_password",
-                                    type: "password",
-                                    required: "",
-                                    placeholder: "Confirm Password",
-                                    sameas: _vm.model.password
-                                  },
-                                  domProps: { value: _vm.model.repeatPassword },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.$set(
-                                        _vm.model,
-                                        "repeatPassword",
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "field-messages",
-                                  {
-                                    staticClass: "text-danger",
-                                    attrs: {
-                                      name: "repeatpassword",
-                                      show: "$invalid && $submitted"
-                                    }
-                                  },
+                                  "validate",
+                                  { attrs: { tag: "div" } },
                                   [
-                                    _c(
-                                      "div",
-                                      {
-                                        attrs: { slot: "required" },
-                                        slot: "required"
+                                    _c("input", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.model.password,
+                                          expression: "model.password"
+                                        }
+                                      ],
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        name: "password",
+                                        id: "password",
+                                        type: "password",
+                                        required: "",
+                                        placeholder: "Ingrese su contraseña",
+                                        minlength: "6",
+                                        maxlength: "10"
                                       },
-                                      [
-                                        _vm._v(
-                                          "Password confirmatoin is required"
-                                        )
-                                      ]
-                                    ),
+                                      domProps: { value: _vm.model.password },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.model,
+                                            "password",
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
+                                    }),
                                     _vm._v(" "),
                                     _c(
-                                      "div",
+                                      "field-messages",
                                       {
-                                        attrs: { slot: "sameas" },
-                                        slot: "sameas"
+                                        staticClass: "text-danger",
+                                        attrs: {
+                                          name: "password",
+                                          show: "$invalid && $submitted"
+                                        }
                                       },
                                       [
-                                        _vm._v(
-                                          "Password and Confirm password should match"
+                                        _c(
+                                          "div",
+                                          {
+                                            attrs: { slot: "required" },
+                                            slot: "required"
+                                          },
+                                          [_vm._v("Se requiere contraseña")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            attrs: { slot: "minlength" },
+                                            slot: "minlength"
+                                          },
+                                          [
+                                            _vm._v(
+                                              "La contraseña debe tener al menos 6\n                                                        caracteres"
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            attrs: { slot: "maxlength" },
+                                            slot: "maxlength"
+                                          },
+                                          [
+                                            _vm._v(
+                                              "La contraseña debe tener como máximo 10\n                                                        caracteres"
+                                            )
+                                          ]
                                         )
                                       ]
                                     )
-                                  ]
+                                  ],
+                                  1
                                 )
                               ],
                               1
                             )
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-12" }, [
-                        _c("div", { staticClass: "form-group checkbox" }, [
-                          _c("label", { attrs: { for: "terms" } }, [
-                            _c("input", {
-                              attrs: {
-                                type: "checkbox",
-                                name: "terms",
-                                id: "terms"
-                              }
-                            }),
-                            _vm._v("  I accept the "),
-                            _c("a", { attrs: { href: "javascript:void(0)" } }, [
-                              _vm._v("terms & Conditions")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-sm-12" }, [
+                            _c("div", { staticClass: "form-group checkbox" }, [
+                              _c("label", { attrs: { for: "remember" } }, [
+                                _c("input", {
+                                  attrs: {
+                                    type: "checkbox",
+                                    name: "remember",
+                                    id: "remember"
+                                  }
+                                }),
+                                _vm._v(
+                                  " \n                                                Recuerdame\n                                            "
+                                )
+                              ])
                             ])
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-12" }, [
-                        _c("div", { staticClass: "form-group" }, [
+                          ]),
+                          _vm._v(" "),
+                          _vm.has_error && !_vm.success
+                            ? _c("div", { staticClass: "alert alert-danger" }, [
+                                _vm.error == "login_error"
+                                  ? _c("p", [_vm._v("Validation Errors.")])
+                                  : _c("p", [
+                                      _vm._v(
+                                        "Error, no se puede conectar con estas credenciales."
+                                      )
+                                    ])
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
                           _c("input", {
-                            staticClass: "btn btn-primary btn-block",
-                            attrs: { type: "submit", value: "Sign Up" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "span",
-                          { staticClass: "sign-in" },
-                          [
-                            _vm._v("Already a member?  "),
-                            _c(
-                              "router-link",
-                              { attrs: { to: "/login", exact: "" } },
-                              [_vm._v("Sign In")]
-                            )
-                          ],
-                          1
-                        )
-                      ])
-                    ])
-                  ]
+                            staticClass: "btn btn-primary btn-block mb-3",
+                            attrs: { type: "submit", value: "Iniciar Sesión" }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "col-sm-12" },
+                            [
+                              _c(
+                                "router-link",
+                                {
+                                  staticClass: "float-left",
+                                  attrs: { to: "/forgot_password", exact: "" }
+                                },
+                                [
+                                  _vm._v(
+                                    "¿Olvide mi\n                                            contraseña? "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ])
+                      ]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _vm._m(0)
+              ])
+            ])
           ]
         )
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row text-center social" }, [
-      _c("div", { staticClass: "col-xl-12" }, [
-        _c("p", { staticClass: "alter" }, [_vm._v("Sign Up with")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row m-auto" }, [
-        _c("div", { staticClass: "col-4" }, [
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-lg btn-facebook",
-              attrs: { href: "javascript:void(0)" }
-            },
-            [_c("i", { staticClass: "ti-facebook" })]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-4" }, [
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-lg btn-twitter",
-              attrs: { href: "javascript:void(0)" }
-            },
-            [_c("i", { staticClass: "ti-twitter-alt" })]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-4" }, [
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-lg btn-google",
-              attrs: { href: "javascript:void(0)" }
-            },
-            [_c("i", { staticClass: "ti-google" })]
-          )
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7b7bdec2", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-624e51c6", module.exports)
   }
 }
-
-/***/ }),
-
-/***/ 679:
-/***/ (function(module, exports) {
-
-module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";
 
 /***/ })
 

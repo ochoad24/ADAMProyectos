@@ -21,6 +21,7 @@
 
 <body class="skin-default">
         <div id="app"></div>
+        <script src="{{ asset('js/push.js') }}" defer></script>
 <script type="text/javascript" src="{{ url(mix('js/main.js'))}}"></script>
 
 </body>

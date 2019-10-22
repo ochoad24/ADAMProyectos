@@ -115,5 +115,6 @@ use Illuminate\Http\Request;
 
         Route::get('/Tarea/select/usuario/{usuario}', 'TareaController@select');
         Route::delete('Tarea/cancelar/{tarea}','TareaController@cancelReport');
-
+        Route::post('/push','PushController@store');
+        Route::get('/push','PushController@push')->name('push');
     });

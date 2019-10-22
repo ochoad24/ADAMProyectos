@@ -61,11 +61,28 @@ router.afterEach((to, from) => {
 
 var url = window.location.href;
 var SwLocation='/sw.js';
+var swReg;
+
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
         SwLocation='/sw.js';    
     }
-    navigator.serviceWorker.register(SwLocation);
+    window.addEventListener('load', function() {
+
+        navigator.serviceWorker.register( SwLocation ).then( function(reg){
+
+            swReg = reg;
+            swReg.pushManager.getSubscription().then( (activo)=>{
+                if(activo){
+                    store.commit('changeNotificacion',true)
+                }else{
+                    store.commit('changeNotificacion',false)
+                }
+            });
+
+        });
+
+    });
 }
 
 

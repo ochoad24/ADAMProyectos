@@ -151,8 +151,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);
-        /* background: url('../../img/pr.jpg'); */
+        /* background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%); */
+        background: url('../../img/LoginBackgroud.jpg');
         overflow-y: auto;
     }
 </style>
