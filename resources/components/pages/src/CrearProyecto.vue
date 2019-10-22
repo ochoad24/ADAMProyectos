@@ -160,7 +160,7 @@
                                         <v-subheader>Organizaciones seleccionadas</v-subheader>
                                     </v-flex>
                                     <v-flex>
-                                        <v-data-table :headers="headersOrg" :items="orgs" class="elevation-1">
+                                        <v-data-table :headers="headersOrg" :items="orgs" class="elevation-1" hide-actions>
                                             <v-progress-linear :indeterminate="true"
                                                 color="#668c2d" ></v-progress-linear>
                                             <template v-slot:items="props">
@@ -318,14 +318,6 @@
                         <v-flex xs12 sm12 md12 lg12>
                             <v-subheader>Actividades Agregadas</v-subheader>
                         </v-flex>
-                        <template v-if="errorAct">
-                            <v-divider></v-divider>
-                            <div class="text-xs-center" v-for="e in errorMsj2" :key="e">
-                                <strong class="red--text text--lighten-1" v-text="e"></strong>
-                                <br>
-                            </div>
-                            <v-divider></v-divider>
-                        </template>
                         <v-flex>
                             <v-data-table :headers="headersActividades" :items="acts" class="elevation-1">
                                 <v-progress-linear :indeterminate="true"
@@ -345,17 +337,23 @@
                                 </template>
                             </v-data-table>
                         </v-flex>
+                        
                     </v-card>
-
+                    <template v-if="errorAct">
+                        <v-divider></v-divider>
+                        <div class="text-xs-center" v-for="e in errorMsj2" :key="e">
+                            <strong class="red--text text--lighten-1" v-text="e"></strong>
+                            <br>
+                        </div>
+                        <v-divider></v-divider>
+                    </template>
                     <v-btn color="#668c2d"  class="ma-2" dark @click="e1 = 1">
                         Atrás
                     </v-btn>
 
-                    <v-btn color="#668c2d" class="ma-2" dark @click="storeProyecto()" :loading="loading" :disabled="loading">
+                    <v-btn color="#668c2d" class="ma-2" dark @click="storeProyecto()">
                         Guardar
                     </v-btn>
-
-                    <v-btn color="#668c2d" class="ma-2" dark  flat>Cancel</v-btn>
                 </v-stepper-content>
             </v-stepper-items>
   </v-stepper>
@@ -426,8 +424,6 @@
             orgs: [],
             acts: [],
             organizaciones: [],
-            loader: null,
-            loading: false,
             loader1: null,
             loading1: false,
             departamentos: [],
@@ -514,7 +510,7 @@
                     this.errorMsj.push('El título del proyecto no puede estar vacio');
                 if (!this.descripcion)
                     this.errorMsj.push('La descripción del proyecto no puede estar vacía');
-                if (!this.orgs)
+                if (this.orgs.length === 0)
                     this.errorMsj.push('Por favor seleccione una o más organizaciones');
                 if(Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF))
                     this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
@@ -564,16 +560,22 @@
                 this.errorAct = 0;
                 this.errorMsj2 = [];
                 if (!this.actividad)
-                    this.errorMsj.push('El nombre de la actividad no puede estar vacío');
-                if (!this.descripcionAct)
-                    this.errorMsj.push('La descripción de la actividad no puede estar vacía');
+                    this.errorMsj2.push('El nombre de la actividad no puede estar vacío');
                 if(Date.parse(this.fechaInicio) > Date.parse(this.fechaFinal) || Date.parse(this.fechaInicio) === Date.parse(this.fechaFinal))
-                    this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
-                if (this.errorMsj.length)
-                    this.error = 1;
+                    this.errorMsj2.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.')
+                if(Date.parse(this.fechaInicio) < Date.parse(this.fechaI) || Date.parse(this.fechaFinal) > Date.parse(this.fechaF)) {
+                    this.errorMsj2.push('Fechas incorrectas.');
+                    swal.fire({
+                        type: 'warning',
+                        title: 'Advertencia',
+                        text: `Las fechas de la actividad están fuera del rango de las fechas del proyecto.`
+                    });
+                }
+                if (this.errorMsj2.length)
+                    this.errorAct = 1;
                 else
-                    this.error = 0;
-                return this.error;
+                    this.errorAct = 0;
+                return this.errorAct;
             },
             registrarOrganizacion() {
                 let me = this;
@@ -619,54 +621,62 @@
             },
             storeProyecto() {
                 let me = this;
-                this.loader = 'loading';
-                this.loading=true;
-                axios.post('proyecto/storeProject', {
-                    'Titulo': me.titulo,
-                    'Descripcion': me.descripcion,
-                    'objetivos': me.objetivos,
-                    'resultados_objetivo': me.resultados_objetivo,
-                    'indicadores': me.indicadores,
-                    'resultados_indicadores': me.resultados_indicadores,
-                    'FechaInicio': me.fechaI,
-                    'FechaFin': me.fechaF,
-                    'data1': me.orgs,
-                    'data': me.acts
-                })
-                    .then(function (response) {
-                        if (response.data) {
-                            me.loader=null;
-                            me.loading=false;
-                            me.proyecto.id=response.data.id;
-                            me.proyecto.nombre=response.data.nombre;
-                            me.$store.commit('changeProject',me.proyecto);
-                            swal.fire({
-                                type: 'success',
-                                title: 'Proyecto registrado!',
-                                showConfirmButton: false,
-                                timer: 1500
-                            });
-                            window.location.href="/#/Tarea";
+                swal.fire({
+                    title: '¿Quiere guardar el proyecto?',
+                    text: "Esta acción te llevará a crear tareas.",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Sí',
+                    cancelButtonText: 'No'
+                    }).then((result) => {
+                        if (result.value) {
+                           axios.post('proyecto/storeProject', {
+                                'Titulo': me.titulo,
+                                'Descripcion': me.descripcion,
+                                'objetivos': me.objetivos,
+                                'resultados_objetivo': me.resultados_objetivo,
+                                'indicadores': me.indicadores,
+                                'resultados_indicadores': me.resultados_indicadores,
+                                'FechaInicio': me.fechaI,
+                                'FechaFin': me.fechaF,
+                                'data1': me.orgs,
+                                'data': me.acts
+                            })
+                            .then(function (response) {
+                                if (response.data) {
+                                    me.proyecto.id=response.data.id;
+                                    me.proyecto.nombre=response.data.nombre;
+                                    me.$store.commit('changeProject',me.proyecto);
+                                    swal.fire({
+                                        type: 'success',
+                                        title: 'Proyecto registrado!',
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                    });
+                                    window.location.href="/#/Tarea";
+                                } else {
+                                    swal.fire({
+                                        type: 'error',
+                                        title: 'Se ha producido un error!',
+                                        text: `Error al ingresar proyecto!`
+                                    });
+                                }
+                                me.initialize();
+                            })
+                            .catch(function (error) {
+                                swal.fire({
+                                    type: 'error',
+                                    title: 'Se ha producido un error!',
+                                    text: `Error al ingresar proyecto: ${error.response.data.message}`
+                                });
+                             });
                         } else {
-                            me.loader=null;
-                            me.loading=false;
-                            swal.fire({
-                                type: 'error',
-                                title: 'Se ha producido un error!',
-                                text: `Error al ingresar proyecto!`
-                            });
+                            return;
                         }
-                        me.initialize();
                     })
-                    .catch(function (error) {
-                        me.loader=null;
-                        me.loading=false;
-                        swal.fire({
-                            type: 'error',
-                            title: 'Se ha producido un error!',
-                            text: `Error al ingresar proyecto: ${error.response.data.message}`
-                        });
-                    });
+                
             },
             agregarActividad() {
                 let me = this;

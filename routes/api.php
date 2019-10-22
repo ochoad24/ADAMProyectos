@@ -88,7 +88,7 @@ use Illuminate\Http\Request;
         Route::get('/User/pdf','UserController@responsablePdf')->name('responsable_pdf');
         // Rutas para los Usuarios
         // Rutas para las actividades
-        Route::get('/Actividad', 'ActividadController@index');
+        Route::get('/actividad', 'ActividadController@index');
         Route::post('/actividad/registrar', 'ActividadController@store');
         Route::post('/actividad/actualizar', 'ActividadController@edit');
         Route::put('/actividad/activate', 'ActividadController@activate');

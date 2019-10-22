@@ -77,10 +77,26 @@ class ProyectoController extends Controller
             $proyecto = new Proyecto();
             $proyecto->Titulo = $request->Titulo;
             $proyecto->Descripcion = $request->Descripcion;
-            $proyecto->objetivos = $request->objetivos;
-            $proyecto->resultados_objetivo = $request->resultados_objetivo;
-            $proyecto->indicadores = $request->indicadores;
-            $proyecto->resultados_indicadores = $request->resultados_indicadores;
+            if($request->objetivos == null) {
+                $proyecto->objetivos = " ";
+            } else {
+                $proyecto->objetivos = $request->objetivos;
+            }
+            if($request->resultados_objetivo == null) {
+                $proyecto->resultados_objetivo = " ";
+            } else {
+                $proyecto->resultados_objetivo = $request->resultados_objetivo;
+            }
+            if($request->indicadores == null) {
+                $proyecto->indicadores = " ";
+            } else {
+                $proyecto->indicadores = $request->indicadores;
+            }
+            if($request->resultados_indicadores == null) {
+                $proyecto->resultados_indicadores = " ";
+            } else {
+                $proyecto->resultados_indicadores = $request->resultados_indicadores;
+            }
             $proyecto->FechaInicio = Carbon::parse($request->FechaInicio);
             $proyecto->FechaFin = Carbon::parse($request->FechaFin);
             $proyecto->save();
@@ -108,10 +124,26 @@ class ProyectoController extends Controller
             $proyecto = new Proyecto();
             $proyecto->Titulo = $request->Titulo;
             $proyecto->Descripcion = $request->Descripcion;
-            $proyecto->objetivos = $request->objetivos;
-            $proyecto->resultados_objetivo = $request->resultados_objetivo;
-            $proyecto->indicadores = $request->indicadores;
-            $proyecto->resultados_indicadores = $request->resultados_indicadores;
+            if($request->objetivos == null) {
+                $proyecto->objetivos = " ";
+            } else {
+                $proyecto->objetivos = $request->objetivos;
+            }
+            if($request->resultados_objetivo == null) {
+                $proyecto->resultados_objetivo = " ";
+            } else {
+                $proyecto->resultados_objetivo = $request->resultados_objetivo;
+            }
+            if($request->indicadores == null) {
+                $proyecto->indicadores = " ";
+            } else {
+                $proyecto->indicadores = $request->indicadores;
+            }
+            if($request->resultados_indicadores == null) {
+                $proyecto->resultados_indicadores = " ";
+            } else {
+                $proyecto->resultados_indicadores = $request->resultados_indicadores;
+            }
             $proyecto->FechaInicio = Carbon::parse($request->FechaInicio);
             $proyecto->actividades = 0;
             $proyecto->actividadesCompletadas = 0;
