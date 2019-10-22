@@ -1,14 +1,14 @@
 webpackJsonp([17],{
 
-/***/ 472:
+/***/ 478:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(46)
+var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(622)
+var __vue_script__ = __webpack_require__(641)
 /* template */
-var __vue_template__ = __webpack_require__(623)
+var __vue_template__ = __webpack_require__(642)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -25,7 +25,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/src/usuario.vue"
+Component.options.__file = "resources/components/pages/src/tipoactividad.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -34,9 +34,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2b81a092", Component.options)
+    hotAPI.createRecord("data-v-552095d2", Component.options)
   } else {
-    hotAPI.reload("data-v-2b81a092", Component.options)
+    hotAPI.reload("data-v-552095d2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48,148 +48,120 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 622:
+/***/ 641:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "Usuario",
+    name: "TipoActividad",
     data: function data() {
-        return _defineProperty({
-            dialog: false,
-            idRol: 0,
-            repetir: '',
+        return {
             search: '',
+            dialog: false,
+            error: 0,
+            errorMsj: [],
             headers: [{
                 text: 'Id',
                 align: 'left',
                 value: 'id'
-            }, { text: 'Nombre', value: 'nombre' }, { text: 'Apellido', value: 'apellido' }, { text: 'Email', value: 'email' }, { text: 'Rol', value: 'rol' }],
-            error: 0,
-            errorMsj: [],
-            usuarios: [],
-            roles: [],
+            }, { text: 'Nombre', value: 'nombre' }],
+            tipos: [],
             editedIndex: -1,
             editedItem: {
                 id: 0,
-                nombre: '',
-                apellido: '',
-                usuario: '',
-                rol: 0
+                nombre: ''
             },
             defaultItem: {
                 id: 0,
-                nombre: '',
-                apellido: '',
-                usuario: '',
-                rol: 0
+                nombre: ''
             }
-        }, 'roles', [{
-            text: 'Admnistrador',
-            value: 0
-        }, {
-            text: 'Técnico',
-            value: 1
-        }]);
+        };
     },
 
     computed: {
         formTitle: function formTitle() {
-            return this.editedIndex === -1 ? 'Nuevo Usuario' : 'Editar Usuario';
+            return this.editedIndex === -1 ? 'Nuevo Tipo de Actividad' : 'Editar Tipo de Actividad';
         }
     },
 
@@ -198,38 +170,38 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             val || this.close();
         }
     },
-    mounted: function mounted() {
+
+    created: function created() {
         this.initialize();
     },
+
 
     methods: {
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre no puede estar vacio');
-
-            if (!this.editedItem.apellido) this.errorMsj.push('El apellido no puede estar vacio');
-
-            if (!this.editedItem.nombre) this.errorMsj.push('El correo no puede estar vacio');
-
-            if (!this.idRol) this.errorMsj.push('Se debe asignar un rol al usuario');
-
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre del tipo de actividad no puede estar vacio');
             if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
         initialize: function initialize() {
             var _this = this;
 
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/User/load').then(function (response) {
-                _this.usuarios = response.data;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/TipoActividad').then(function (response) {
+                _this.tipos = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
         },
+        editItem: function editItem(item) {
+            this.editedIndex = this.tipos.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+            this.dialog = true;
+        },
         deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
-                title: 'Quieres eliminar este Usuario?',
+                title: 'Quieres eliminar este tipo de Actividad?',
                 text: "No podras revertir la eliminacion!",
                 type: 'warning',
                 showCancelButton: true,
@@ -239,22 +211,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 cancelButtonText: "Cancelar"
             }).then(function (result) {
                 if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/User/' + item.id + '/delete').then(function (response) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/TipoActividad/' + item.id + '/delete').then(function (response) {
                         me.initialize();
                         swal.fire({
                             position: 'top-end',
                             type: 'success',
                             title: response.data,
                             showConfirmButton: false,
-                            timer: 1500
-                        });
+                            timer: 1500 });
                     }).catch(function (error) {
                         swal.fire({
                             position: 'top-end',
                             type: 'error',
                             title: error.response.data.error,
-                            showConfirmButton: true
-                        });
+                            showConfirmButton: true });
                     });
                 }
             });
@@ -262,6 +232,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         close: function close() {
             var _this2 = this;
 
+            this.error = 0;
             this.dialog = false;
             setTimeout(function () {
                 _this2.editedItem = Object.assign({}, _this2.defaultItem);
@@ -270,43 +241,68 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         },
         save: function save() {
             var me = this;
-            __WEBPACK_IMPORTED_MODULE_1_axios___default()({
-                method: 'post',
-                url: '/User/nuevo',
-                data: {
-                    nombre: me.editedItem.nombre,
-                    apellido: me.editedItem.apellido,
-                    email: me.editedItem.usuario,
-                    role: me.idRol
-                }
-            }).then(function (response) {
-                swal.fire({
-                    position: 'top-end',
-                    type: 'success',
-                    title: response.data,
-                    showConfirmButton: false,
-                    timer: 1500
+            if (this.validate()) {
+                return;
+            }
+            if (this.editedIndex > -1) {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'put',
+                    url: '/TipoActividad/editar',
+                    data: {
+                        id: this.editedItem.id,
+                        nombre: this.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
                 });
-                me.initialize();
-                me.close();
-            }).catch(function (error) {
-                console.log(error.response);
-                swal.fire({
-                    position: 'top-end',
-                    type: 'error',
-                    title: error.response.data.error,
-                    showConfirmButton: true
+            } else {
+                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                    method: 'post',
+                    url: '/TipoActividad/nuevo',
+                    data: {
+                        nombre: me.editedItem.nombre
+                    }
+                }).then(function (response) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500 });
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true });
+                    me.initialize();
+                    me.close();
                 });
-                me.initialize();
-                me.close();
-            });
+            }
         }
     }
 });
 
 /***/ }),
 
-/***/ 623:
+/***/ 642:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -322,7 +318,7 @@ var render = function() {
           "b-card",
           {
             staticClass: "bg-primary-card",
-            attrs: { header: "Usuarios", "header-tag": "h4" }
+            attrs: { header: "Tipo de Actividades", "header-tag": "h4" }
           },
           [
             _c(
@@ -366,11 +362,14 @@ var render = function() {
                                   _vm._g(
                                     {
                                       staticClass: "mb-2",
-                                      attrs: { color: "#668c2d", dark: "" }
+                                      attrs: {
+                                        color: "green darken-1",
+                                        dark: ""
+                                      }
                                     },
                                     on
                                   ),
-                                  [_vm._v("Nuevo Usuario")]
+                                  [_vm._v("Nuevo tipo de actividad")]
                                 )
                               ]
                             }
@@ -389,32 +388,11 @@ var render = function() {
                         _c(
                           "v-card",
                           [
-                            _c(
-                              "v-toolbar",
-                              { attrs: { dark: "", color: "#668c2d" } },
-                              [
-                                _c(
-                                  "v-btn",
-                                  {
-                                    attrs: { icon: "", dark: "" },
-                                    on: {
-                                      click: function($event) {
-                                        _vm.dialog2 = false
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("v-icon", { attrs: { col: "white" } }, [
-                                      _vm._v("clear")
-                                    ])
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c("v-toolbar-title", [_vm._v("Nuevo Usuario")])
-                              ],
-                              1
-                            ),
+                            _c("v-card-title", [
+                              _c("span", { staticClass: "headline" }, [
+                                _vm._v(_vm._s(_vm.formTitle))
+                              ])
+                            ]),
                             _vm._v(" "),
                             _c(
                               "v-card-text",
@@ -432,13 +410,16 @@ var render = function() {
                                           {
                                             attrs: {
                                               xs12: "",
-                                              sm6: "",
-                                              md6: ""
+                                              sm12: "",
+                                              md12: ""
                                             }
                                           },
                                           [
                                             _c("v-text-field", {
-                                              attrs: { label: "Nombre" },
+                                              attrs: {
+                                                label:
+                                                  "Nombre del tipo de actividad"
+                                              },
                                               model: {
                                                 value: _vm.editedItem.nombre,
                                                 callback: function($$v) {
@@ -449,93 +430,6 @@ var render = function() {
                                                   )
                                                 },
                                                 expression: "editedItem.nombre"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: { label: "Apellido" },
-                                              model: {
-                                                value: _vm.editedItem.apellido,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "apellido",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression:
-                                                  "editedItem.apellido"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: {
-                                                type: "email",
-                                                label: "Ingrese su email"
-                                              },
-                                              model: {
-                                                value: _vm.editedItem.usuario,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "usuario",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression: "editedItem.usuario"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-select", {
-                                              attrs: {
-                                                items: _vm.roles,
-                                                label: "Seleccione un Rol"
-                                              },
-                                              model: {
-                                                value: _vm.idRol,
-                                                callback: function($$v) {
-                                                  _vm.idRol = $$v
-                                                },
-                                                expression: "idRol"
                                               }
                                             })
                                           ],
@@ -585,7 +479,7 @@ var render = function() {
                                 _c(
                                   "v-btn",
                                   {
-                                    attrs: { color: "#668c2d", flat: "" },
+                                    attrs: { color: "blue darken-1", flat: "" },
                                     on: { click: _vm.close }
                                   },
                                   [_vm._v("Cancelar")]
@@ -594,7 +488,7 @@ var render = function() {
                                 _c(
                                   "v-btn",
                                   {
-                                    attrs: { color: "#668c2d", flat: "" },
+                                    attrs: { color: "blue darken-1", flat: "" },
                                     on: { click: _vm.save }
                                   },
                                   [_vm._v("Guardar")]
@@ -616,7 +510,7 @@ var render = function() {
                   staticClass: "elevation-1",
                   attrs: {
                     headers: _vm.headers,
-                    items: _vm.usuarios,
+                    items: _vm.tipos,
                     search: _vm.search
                   },
                   scopedSlots: _vm._u([
@@ -624,36 +518,36 @@ var render = function() {
                       key: "items",
                       fn: function(props) {
                         return [
-                          _c("td", { staticClass: "text-xs-left" }, [
+                          _c("td", { staticClass: "text-xs-right" }, [
                             _vm._v(_vm._s(props.item.id))
                           ]),
                           _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
+                          _c("td", { staticClass: "text-xs-right" }, [
                             _vm._v(_vm._s(props.item.nombre))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.apellido))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.email))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(
-                              _vm._s(
-                                props.item.role != 1
-                                  ? "Admnistrador"
-                                  : "Técnico"
-                              )
-                            )
                           ]),
                           _vm._v(" "),
                           _c(
                             "td",
-                            { staticClass: "justify-center" },
+                            { staticClass: "justify-center layout px-0" },
                             [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-2",
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.editItem(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                edit\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
                               _c(
                                 "v-icon",
                                 {
@@ -683,8 +577,7 @@ var render = function() {
                           _c(
                             "v-btn",
                             {
-                              staticClass: "mb-2",
-                              attrs: { color: "#668c2d", dark: "" },
+                              attrs: { color: "primary" },
                               on: { click: _vm.initialize }
                             },
                             [_vm._v("Recargar")]
@@ -736,7 +629,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2b81a092", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-552095d2", module.exports)
   }
 }
 

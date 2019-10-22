@@ -320,7 +320,7 @@
                 });
             },
             generarReporteProyecto(item) {
-                // window.open(window.location.origin + '/proyecto/pdf?id=' + item.IdProyecto + ',' + '_blank');
+                window.open(window.location.origin + '/proyecto/pdf?id=' + item.IdProyecto + ',' + '_blank');
                 
             },
             reporteResponsable(item) {
