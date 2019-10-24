@@ -472,7 +472,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
 
 
 
@@ -568,7 +567,9 @@ var render = function() {
       { staticClass: "navbar navbar-expand-lg navbar-light" },
       [
         _c("router-link", { staticClass: "logo", attrs: { to: "/" } }, [
-          _c("h1", { staticClass: "text-white" }, [_vm._v("ADAM")])
+          _c("img", {
+            attrs: { src: __webpack_require__(708), alt: "logo" }
+          })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "navbar-collapse" }, [
@@ -731,9 +732,9 @@ var render = function() {
                     _vm._v(" "),
                     _c("span", { staticClass: "user_name_max" }, [
                       _vm._v(
-                        "\n                               " +
+                        "\n                            " +
                           _vm._s(this.$store.state.user.name) +
-                          "\n                           "
+                          "\n                        "
                       )
                     ])
                   ])
@@ -768,7 +769,7 @@ var render = function() {
                           { attrs: { to: "/user_profile", exact: "" } },
                           [
                             _c("i", { staticClass: "fa fa-fw ti-user" }),
-                            _vm._v(" My Profile\n                           ")
+                            _vm._v(" My Profile\n                        ")
                           ]
                         )
                       ],
@@ -795,7 +796,7 @@ var render = function() {
                                 staticClass: "fa fa-fw ti-shift-right"
                               }),
                               _vm._v(
-                                " Cerrar Sesión\n                               "
+                                " Cerrar Sesión\n                            "
                               )
                             ]
                           )
@@ -2925,6 +2926,13 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-ba724920", module.exports)
   }
 }
+
+/***/ }),
+
+/***/ 708:
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo10.png?44d2a7f60abc34524f43d5db344dac19";
 
 /***/ })
 

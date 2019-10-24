@@ -531,7 +531,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                     __WEBPACK_IMPORTED_MODULE_1_axios___default.a.put('/actividad/delete', {
                         'id': id
                     }).then(function (response) {
-                        // console.log(response.data);
+                        console.log(response.data);
                         swal.fire({
                             type: 'success',
                             title: 'Actividad eliminada',
@@ -540,8 +540,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         });
                         me.initialize();
                     }).catch(function (error) {
-                        console.log('catch encontrado');
-                        console.log(error);
+                        console.log(error.response.data);
                         swal.fire({
                             type: 'error',
                             title: 'Error al eliminar actividad: ' + error.response.data.message,

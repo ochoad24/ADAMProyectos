@@ -228,6 +228,14 @@
                                     </template>
                                     <span>Editar proyecto</span>
                                 </v-tooltip>
+                                <v-tooltip bottom>
+                                    <template v-slot:activator="{ on }">
+                                        <v-icon small class="mr-2" v-on="on" @click="borrarProyecto(props.item.IdProyecto)">
+                                            delete
+                                        </v-icon>
+                                    </template>
+                                    <span>Borrar proyecto</span>
+                                </v-tooltip>
                                  <v-tooltip bottom>
                                     <template v-slot:activator="{ on }">
                                         <v-icon small class="mr-2" v-on="on" v-if="props.item.Estado === 1"
@@ -527,6 +535,40 @@
                         });
                         me.close();
                     });
+            },
+            borrarProyecto(proyecto) {
+                let me = this;
+                swal.fire({
+                    title: '¿Quieres eliminar este proyecto?',
+                    text: "Esta acción no se podrá revertir",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Sí',
+                    cancelButtonText: "Cancelar"
+                }).then((result) => {
+                    if (result.value) {
+                        axios.delete(`/proyecto/drop/${proyecto}`).then(response => {
+                            console.log(response.data);
+                            swal.fire({
+                                type: 'success',
+                                title: 'Proyecto eliminado',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            me.initialize();
+                        }).catch(error => {
+                            console.log(error.response.data)
+                            swal.fire({
+                                position: 'top-end',
+                                type: 'error',
+                                title: error.response.data.error,
+                                showConfirmButton: true
+                            });
+                        });
+                    }
+                });
             },
             editarProyecto() {
                 let me = this;

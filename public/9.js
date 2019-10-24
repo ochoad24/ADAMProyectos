@@ -510,8 +510,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -578,8 +576,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             orgs: [],
             acts: [],
             organizaciones: [],
-            loader: null,
-            loading: false,
             loader1: null,
             loading1: false,
             departamentos: [],
@@ -653,7 +649,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.errorMsj = [];
             if (!this.titulo) this.errorMsj.push('El título del proyecto no puede estar vacio');
             if (!this.descripcion) this.errorMsj.push('La descripción del proyecto no puede estar vacía');
-            if (!this.orgs) this.errorMsj.push('Por favor seleccione una o más organizaciones');
+            if (this.orgs.length === 0) this.errorMsj.push('Por favor seleccione una o más organizaciones');
             if (Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF)) this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
             if (this.errorMsj.length) this.error = 1;else this.error = 0;
             return this.error;
@@ -689,11 +685,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate_actividad: function validate_actividad() {
             this.errorAct = 0;
             this.errorMsj2 = [];
-            if (!this.actividad) this.errorMsj.push('El nombre de la actividad no puede estar vacío');
-            if (!this.descripcionAct) this.errorMsj.push('La descripción de la actividad no puede estar vacía');
-            if (Date.parse(this.fechaInicio) > Date.parse(this.fechaFinal) || Date.parse(this.fechaInicio) === Date.parse(this.fechaFinal)) this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
-            if (this.errorMsj.length) this.error = 1;else this.error = 0;
-            return this.error;
+            if (!this.actividad) this.errorMsj2.push('El nombre de la actividad no puede estar vacío');
+            if (Date.parse(this.fechaInicio) > Date.parse(this.fechaFinal) || Date.parse(this.fechaInicio) === Date.parse(this.fechaFinal)) this.errorMsj2.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
+            if (Date.parse(this.fechaInicio) < Date.parse(this.fechaI) || Date.parse(this.fechaFinal) > Date.parse(this.fechaF)) {
+                this.errorMsj2.push('Fechas incorrectas.');
+                swal.fire({
+                    type: 'warning',
+                    title: 'Advertencia',
+                    text: 'Las fechas de la actividad est\xE1n fuera del rango de las fechas del proyecto.'
+                });
+            }
+            if (this.errorMsj2.length) this.errorAct = 1;else this.errorAct = 0;
+            return this.errorAct;
         },
         registrarOrganizacion: function registrarOrganizacion() {
             var me = this;
@@ -737,51 +740,58 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         storeProyecto: function storeProyecto() {
             var me = this;
-            this.loader = 'loading';
-            this.loading = true;
-            __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('proyecto/storeProject', {
-                'Titulo': me.titulo,
-                'Descripcion': me.descripcion,
-                'objetivos': me.objetivos,
-                'resultados_objetivo': me.resultados_objetivo,
-                'indicadores': me.indicadores,
-                'resultados_indicadores': me.resultados_indicadores,
-                'FechaInicio': me.fechaI,
-                'FechaFin': me.fechaF,
-                'data1': me.orgs,
-                'data': me.acts
-            }).then(function (response) {
-                if (response.data) {
-                    me.loader = null;
-                    me.loading = false;
-                    me.proyecto.id = response.data.id;
-                    me.proyecto.nombre = response.data.nombre;
-                    me.$store.commit('changeProject', me.proyecto);
-                    swal.fire({
-                        type: 'success',
-                        title: 'Proyecto registrado!',
-                        showConfirmButton: false,
-                        timer: 1500
+            swal.fire({
+                title: '¿Quiere guardar el proyecto?',
+                text: "Esta acción te llevará a crear tareas.",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Sí',
+                cancelButtonText: 'No'
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('proyecto/storeProject', {
+                        'Titulo': me.titulo,
+                        'Descripcion': me.descripcion,
+                        'objetivos': me.objetivos,
+                        'resultados_objetivo': me.resultados_objetivo,
+                        'indicadores': me.indicadores,
+                        'resultados_indicadores': me.resultados_indicadores,
+                        'FechaInicio': me.fechaI,
+                        'FechaFin': me.fechaF,
+                        'data1': me.orgs,
+                        'data': me.acts
+                    }).then(function (response) {
+                        if (response.data) {
+                            me.proyecto.id = response.data.id;
+                            me.proyecto.nombre = response.data.nombre;
+                            me.$store.commit('changeProject', me.proyecto);
+                            swal.fire({
+                                type: 'success',
+                                title: 'Proyecto registrado!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            window.location.href = "/#/Tarea";
+                        } else {
+                            swal.fire({
+                                type: 'error',
+                                title: 'Se ha producido un error!',
+                                text: 'Error al ingresar proyecto!'
+                            });
+                        }
+                        me.initialize();
+                    }).catch(function (error) {
+                        swal.fire({
+                            type: 'error',
+                            title: 'Se ha producido un error!',
+                            text: 'Error al ingresar proyecto: ' + error.response.data.message
+                        });
                     });
-                    window.location.href = "/#/Tarea";
                 } else {
-                    me.loader = null;
-                    me.loading = false;
-                    swal.fire({
-                        type: 'error',
-                        title: 'Se ha producido un error!',
-                        text: 'Error al ingresar proyecto!'
-                    });
+                    return;
                 }
-                me.initialize();
-            }).catch(function (error) {
-                me.loader = null;
-                me.loading = false;
-                swal.fire({
-                    type: 'error',
-                    title: 'Se ha producido un error!',
-                    text: 'Error al ingresar proyecto: ' + error.response.data.message
-                });
             });
         },
         agregarActividad: function agregarActividad() {
@@ -1590,7 +1600,8 @@ var render = function() {
                                           staticClass: "elevation-1",
                                           attrs: {
                                             headers: _vm.headersOrg,
-                                            items: _vm.orgs
+                                            items: _vm.orgs,
+                                            "hide-actions": ""
                                           },
                                           scopedSlots: _vm._u([
                                             {
@@ -2373,29 +2384,6 @@ var render = function() {
                         1
                       ),
                       _vm._v(" "),
-                      _vm.errorAct
-                        ? [
-                            _c("v-divider"),
-                            _vm._v(" "),
-                            _vm._l(_vm.errorMsj2, function(e) {
-                              return _c(
-                                "div",
-                                { key: e, staticClass: "text-xs-center" },
-                                [
-                                  _c("strong", {
-                                    staticClass: "red--text text--lighten-1",
-                                    domProps: { textContent: _vm._s(e) }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("br")
-                                ]
-                              )
-                            }),
-                            _vm._v(" "),
-                            _c("v-divider")
-                          ]
-                        : _vm._e(),
-                      _vm._v(" "),
                       _c(
                         "v-flex",
                         [
@@ -2486,8 +2474,31 @@ var render = function() {
                         1
                       )
                     ],
-                    2
+                    1
                   ),
+                  _vm._v(" "),
+                  _vm.errorAct
+                    ? [
+                        _c("v-divider"),
+                        _vm._v(" "),
+                        _vm._l(_vm.errorMsj2, function(e) {
+                          return _c(
+                            "div",
+                            { key: e, staticClass: "text-xs-center" },
+                            [
+                              _c("strong", {
+                                staticClass: "red--text text--lighten-1",
+                                domProps: { textContent: _vm._s(e) }
+                              }),
+                              _vm._v(" "),
+                              _c("br")
+                            ]
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("v-divider")
+                      ]
+                    : _vm._e(),
                   _vm._v(" "),
                   _c(
                     "v-btn",
@@ -2511,12 +2522,7 @@ var render = function() {
                     "v-btn",
                     {
                       staticClass: "ma-2",
-                      attrs: {
-                        color: "#668c2d",
-                        dark: "",
-                        loading: _vm.loading,
-                        disabled: _vm.loading
-                      },
+                      attrs: { color: "#668c2d", dark: "" },
                       on: {
                         click: function($event) {
                           return _vm.storeProyecto()
@@ -2528,18 +2534,9 @@ var render = function() {
                         "\n                      Guardar\n                  "
                       )
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "ma-2",
-                      attrs: { color: "#668c2d", dark: "", flat: "" }
-                    },
-                    [_vm._v("Cancel")]
                   )
                 ],
-                1
+                2
               )
             ],
             1

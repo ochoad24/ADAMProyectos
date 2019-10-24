@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Actividad;
 use App\Proyecto;
+use App\Tarea;
+use App\Estadistica;
+use App\Encargado;
+use App\Foto;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 class ActividadController extends Controller
@@ -100,18 +104,35 @@ class ActividadController extends Controller
     public function destroy(Request $request) {
         //
         try {
+            DB::beginTransaction();
             $actividad = Actividad::findOrFail($request->id);
-            $proyecto = Proyecto::findOrFail('proyectos.IdProyecto', '=', $actividad->idProyecto);
+            $proyecto = Proyecto::findOrFail($actividad->idProyecto);
             $proyecto->actividades = $proyecto->actividades - 1;
             if($actividad->tareasCompletadas == $actividad->tareas) {
                 $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas - 1;
             } else {
                 $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
             }
+            $tareas = Tarea::where('tarea.idActividad', '=', $actividad->id)->get();
+            foreach ($tareas as $t) {
+                $ruta = public_path().'\\uploads\\';
+                $estadistica=Estadistica::where('idTarea', $t->id)->delete();
+                $empleado=Encargado::where('idTarea', $t->id)->delete();
+                $fotos=Foto::where('idTarea', $t->id)->get();
+                if(!empty($fotos)) {
+                    foreach($fotos as $foto) {
+                        unlink($ruta.$foto->ruta);
+                        $foto->delete();
+                    }
+                }
+            }
+            $tareas2 = Tarea::where('tarea.idActividad', '=', $actividad->id)->delete();
             $proyecto->save();
             $actividad->delete();
+            DB::commit();
             return response()->json(array('success' => true, 'id' => $org->IdOrganizacion), 200);
         } catch (\Throwable $th) {
+            DB::rollback();
             return ['error' => $th->getMessage()];
         }
     }

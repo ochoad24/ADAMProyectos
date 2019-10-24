@@ -62,6 +62,7 @@ use Illuminate\Http\Request;
     
         Route::put('/proyecto/activate', 'ProyectoController@activate');
         Route::put('/proyecto/deactivate', 'ProyectoController@deactivate');
+        Route::delete('/proyecto/drop/{proyecto}', 'ProyectoController@drop');
         Route::get('/proyecto/orgs', 'ProyectoController@orgs');
         Route::get('/proyecto/selectproject', 'ProyectoController@selectProject');
         Route::get('/proyecto/selectactividad', 'ProyectoController@selectActividad');
@@ -88,7 +89,7 @@ use Illuminate\Http\Request;
         
         // Rutas para los Usuarios
         // Rutas para las actividades
-        Route::get('/Actividad', 'ActividadController@index');
+        Route::get('/actividad', 'ActividadController@index');
         Route::post('/actividad/registrar', 'ActividadController@store');
         Route::post('/actividad/actualizar', 'ActividadController@edit');
         Route::put('/actividad/activate', 'ActividadController@activate');
