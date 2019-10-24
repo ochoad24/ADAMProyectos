@@ -141,6 +141,5 @@ self.addEventListener('sync', e => {
         // postear a BD cuando hay conexión
         const respuesta = postearMensajes();
         e.waitUntil( respuesta );
-        location.reload();
     }
 });

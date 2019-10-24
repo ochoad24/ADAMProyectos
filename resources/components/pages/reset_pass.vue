@@ -91,10 +91,24 @@
                             password_confirmation: this.password_confirmation
                         })
                             .then(result => {
-                                // console.log(result.data);
-                                this.$router.push({ name: 'login' })
+                                swal.fire({
+                                    position: 'center',
+                                    type: 'success',
+                                    title: 'Se ha cambiado la contraseña',
+                                    showConfirmButton: false,
+                                    timer: 3000
+                                });
+                                window.location.href="/#/";
                             }, error => {
-                                console.error(error);
+                                swal.fire({
+                                    position: 'center',
+                                    type: 'error',
+                                    title: 'Algo paso mal vuelva a intentarlo',
+                                    showConfirmButton: false,
+                                    timer: 3000
+                                });
+                                window.location.href="/#/";
+                                window.location.href="/#/";
                             });
                     }
                 });

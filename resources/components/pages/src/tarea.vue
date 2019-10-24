@@ -5,22 +5,24 @@
                 <v-flex xs12 sm12 md12>
                     <v-stepper v-model="e1">
                         <v-stepper-header>
-                            <v-stepper-step :complete="e1 > 1" step="1"    color="#668C2D">Seleccionar actividad</v-stepper-step>
-                            <v-stepper-step :complete="e1 > 2" step="2"    color="#668C2D">Editar tareas</v-stepper-step>
+                            <v-stepper-step :complete="e1 > 1" step="1" color="#668C2D">Seleccionar actividad
+                            </v-stepper-step>
+                            <v-stepper-step :complete="e1 > 2" step="2" color="#668C2D">Editar tareas</v-stepper-step>
                         </v-stepper-header>
 
                         <v-stepper-items>
                             <v-stepper-content step="1">
                                 <v-card class="mb-5">
-                                    <v-data-table :headers="headersAct" :items="actividades" class="elevation-1" hide-actions>
-                                        <v-progress-linear :indeterminate="true"
-                                            color="#668c2d" ></v-progress-linear>
+                                    <v-data-table :headers="headersAct" :items="actividades" class="elevation-1"
+                                        hide-actions>
+                                        <v-progress-linear :indeterminate="true" color="#668c2d"></v-progress-linear>
                                         <template v-slot:items="props">
                                             <td class="text-xs-center">{{ props.item.nombre }}</td>
                                             <td class="justify-center layout px-0">
                                                 <v-tooltip bottom>
                                                     <template v-slot:activator="{ on }">
-                                                        <v-btn icon v-on="on" @click="Siguiente(props.item)" color="#7CB342" dark class="mb-2">
+                                                        <v-btn icon v-on="on" @click="Siguiente(props.item)"
+                                                            color="#7CB342" dark class="mb-2">
                                                             <v-icon>done</v-icon>
                                                         </v-btn>
                                                     </template>
@@ -34,11 +36,13 @@
                             <v-stepper-content step="2">
                                 <div class="table-responsive" v-if="sActividad === true">
                                     <v-toolbar flat color="white">
-                                        <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
+                                        <v-text-field v-model="search" append-icon="search" label="Buscar" single-line
+                                            hide-details>
                                         </v-text-field>
                                         <v-spacer></v-spacer>
                                         <!-- Aqui Empieza el modal -->
-                                        <v-dialog v-model="dialog2" fullscreen hide-overlay transition="dialog-bottom-transition">
+                                        <v-dialog v-model="dialog2" fullscreen hide-overlay
+                                            transition="dialog-bottom-transition">
                                             <v-toolbar dark color="#668c2d">
                                                 <v-btn icon dark @click="dialog2 = false">
                                                     <v-icon col="white">clear</v-icon>
@@ -50,24 +54,28 @@
                                                     <v-container grid-list-md>
                                                         <v-layout wrap>
                                                             <v-flex xs12>
-                                                                <v-textarea v-model="descripcionShow" label="Observaciones de la tarea"
-                                                                    disabled readonly>
+                                                                <v-textarea v-model="descripcionShow"
+                                                                    label="Observaciones de la tarea" disabled readonly>
                                                                 </v-textarea>
                                                             </v-flex>
                                                             <v-flex xs12>
-                                                                <v-card
-                                                                >
+                                                                <v-card>
                                                                     <v-card-title>
-                                                                        <span class="title font-weight-light">Responsables asignados a esta tarea</span>
+                                                                        <span
+                                                                            class="title font-weight-light">Responsables
+                                                                            asignados a esta tarea</span>
                                                                     </v-card-title>
 
                                                                     <v-card-text class="headline font-weight-bold">
-                                                                        <v-data-table :headers="headers2" :items="empleadoShow"
-                                                                            class="elevation-1" hide-actions>
+                                                                        <v-data-table :headers="headers2"
+                                                                            :items="empleadoShow" class="elevation-1"
+                                                                            hide-actions>
                                                                             <v-progress-linear :indeterminate="true"
-                                                                                color="light-green accent-3"></v-progress-linear>
+                                                                                color="light-green accent-3">
+                                                                            </v-progress-linear>
                                                                             <template v-slot:items="props">
-                                                                                <td class="text-xs-left">{{ props.item.nombre }}</td>
+                                                                                <td class="text-xs-left">
+                                                                                    {{ props.item.nombre }}</td>
                                                                             </template>
                                                                         </v-data-table>
                                                                     </v-card-text>
@@ -76,47 +84,60 @@
                                                             <v-flex xs12>
                                                                 <v-card>
                                                                     <v-card-title>
-                                                                        <span class="title font-weight-light">Estadísticas de esta tarea</span>
+                                                                        <span
+                                                                            class="title font-weight-light">Estadísticas
+                                                                            de esta tarea</span>
                                                                     </v-card-title>
 
                                                                     <v-card-text class="headline font-weight-bold">
-                                                                        <v-data-table :headers="headers3" :items="estadisticaShow"
-                                                                            class="elevation-1" hide-actions>
+                                                                        <v-data-table :headers="headers3"
+                                                                            :items="estadisticaShow" class="elevation-1"
+                                                                            hide-actions>
                                                                             <v-progress-linear :indeterminate="true"
-                                                                                color="light-green accent-3"></v-progress-linear>
+                                                                                color="light-green accent-3">
+                                                                            </v-progress-linear>
                                                                             <template v-slot:items="props">
-                                                                                <td class="text-xs-left">{{ props.item.nombre }}</td>
-                                                                                <td class="text-xs-left">{{ props.item.valor }}</td>
+                                                                                <td class="text-xs-left">
+                                                                                    {{ props.item.nombre }}</td>
+                                                                                <td class="text-xs-left">
+                                                                                    {{ props.item.valor }}</td>
                                                                             </template>
                                                                         </v-data-table>
                                                                     </v-card-text>
                                                                 </v-card>
                                                             </v-flex>
                                                             <v-flex xs12>
-                                                                <v-text-field v-model="cantidadShow" label="Total de participantes"
-                                                                    type="number" disabled readonly>
+                                                                <v-text-field v-model="cantidadShow"
+                                                                    label="Total de participantes" type="number"
+                                                                    disabled readonly>
                                                                 </v-text-field>
                                                             </v-flex>
                                                             <v-layout row wrap>
                                                                 <v-flex v-for="n in fotoShow" :key="n.url" xs2 d-flex>
                                                                     <v-card flat tile class="d-flex">
                                                                         <v-hover>
-                                                                            <v-img :src="n.url" :lazy-src="n.url" aspect-ratio="1"
-                                                                                class="grey lighten-2" slot-scope="{ hover }">
+                                                                            <v-img :src="n.url" :lazy-src="n.url"
+                                                                                aspect-ratio="1" class="grey lighten-2"
+                                                                                slot-scope="{ hover }">
                                                                                 <template v-slot:placeholder>
-                                                                                    <v-layout fill-height align-center justify-center
-                                                                                        ma-0>
-                                                                                        <v-progress-circular indeterminate
+                                                                                    <v-layout fill-height align-center
+                                                                                        justify-center ma-0>
+                                                                                        <v-progress-circular
+                                                                                            indeterminate
                                                                                             color="grey lighten-5">
                                                                                         </v-progress-circular>
                                                                                     </v-layout>
                                                                                 </template>
                                                                                 <v-expand-transition>
-                                                                                    <v-layout fill-height align-center justify-center
-                                                                                        ma-0 v-if="hover">
-                                                                                        <v-btn icon dark color="blue darken-1"
-                                                                                            v-bind:href="n.url" target="_blank">
-                                                                                            <v-icon dark>arrow_downward</v-icon>
+                                                                                    <v-layout fill-height align-center
+                                                                                        justify-center ma-0
+                                                                                        v-if="hover">
+                                                                                        <v-btn icon dark
+                                                                                            color="blue darken-1"
+                                                                                            v-bind:href="n.url"
+                                                                                            target="_blank">
+                                                                                            <v-icon dark>arrow_downward
+                                                                                            </v-icon>
                                                                                         </v-btn>
                                                                                     </v-layout>
                                                                                 </v-expand-transition>
@@ -134,7 +155,8 @@
                                                 </v-card-actions>
                                             </v-card>
                                         </v-dialog>
-                                        <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+                                        <v-dialog v-model="dialog" fullscreen hide-overlay
+                                            transition="dialog-bottom-transition">
                                             <template v-slot:activator="{ on }">
                                                 <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nueva Tarea</v-btn>
                                             </template>
@@ -149,27 +171,36 @@
                                                     <v-container grid-list-md>
                                                         <v-layout wrap>
                                                             <v-flex xs12>
-                                                                <v-text-field v-model="tarea" label="Nombre de la tarea" maxlength="240"  required :rules="nameRules" :counter="240">
+                                                                <v-text-field v-model="tarea" label="Nombre de la tarea"
+                                                                    maxlength="240" required :rules="nameRules"
+                                                                    :counter="240">
                                                                 </v-text-field>
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md12>
                                                                 <v-slider v-model="number" color="#668c2d"
-                                                                    label="Cantidad de Tareas" min="1" max="100" thumb-label></v-slider>
+                                                                    label="Cantidad de Tareas" min="1" max="100"
+                                                                    thumb-label></v-slider>
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md6>
                                                                 <!-- DateTime Picker de Fecha Inicial -->
-                                                                <v-menu ref="menu" v-model="menu" :close-on-content-click="false"
-                                                                    :nudge-right="40" :return-value.sync="fechaI" lazy
-                                                                    transition="scale-transition" offset-y full-width min-width="290px">
+                                                                <v-menu ref="menu" v-model="menu"
+                                                                    :close-on-content-click="false" :nudge-right="40"
+                                                                    :return-value.sync="fechaI" lazy
+                                                                    transition="scale-transition" offset-y full-width
+                                                                    min-width="290px">
                                                                     <template v-slot:activator="{ on }">
-                                                                        <v-text-field v-model="fechaI" label="Ingrese fecha de inicio"
-                                                                            prepend-icon="event" readonly v-on="on"></v-text-field>
+                                                                        <v-text-field v-model="fechaI"
+                                                                            label="Ingrese fecha de inicio"
+                                                                            prepend-icon="event" readonly v-on="on">
+                                                                        </v-text-field>
                                                                     </template>
                                                                     <v-date-picker v-model="fechaI" no-title scrollable>
                                                                         <v-spacer></v-spacer>
-                                                                        <v-btn flat color="#668c2d" @click="menu = false">Cancelar
+                                                                        <v-btn flat color="#668c2d"
+                                                                            @click="menu = false">Cancelar
                                                                         </v-btn>
-                                                                        <v-btn flat color="#668c2d" @click="$refs.menu.save(fechaI)">
+                                                                        <v-btn flat color="#668c2d"
+                                                                            @click="$refs.menu.save(fechaI)">
                                                                             Guardar</v-btn>
                                                                     </v-date-picker>
                                                                 </v-menu>
@@ -178,38 +209,52 @@
 
                                                             <v-flex xs12 sm12 md6>
                                                                 <!-- DateTime Picker de Fecha Inicial -->
-                                                                <v-menu ref="menu2" v-model="menu2" :close-on-content-click="false"
-                                                                    :nudge-right="40" :return-value.sync="fechaF" lazy
-                                                                    transition="scale-transition" offset-y full-width min-width="290px">
+                                                                <v-menu ref="menu2" v-model="menu2"
+                                                                    :close-on-content-click="false" :nudge-right="40"
+                                                                    :return-value.sync="fechaF" lazy
+                                                                    transition="scale-transition" offset-y full-width
+                                                                    min-width="290px">
                                                                     <template v-slot:activator="{ on }">
                                                                         <v-text-field v-model="fechaF"
-                                                                            label="Ingrese fecha de finalización" prepend-icon="event"
-                                                                            readonly v-on="on"></v-text-field>
+                                                                            label="Ingrese fecha de finalización"
+                                                                            prepend-icon="event" readonly v-on="on">
+                                                                        </v-text-field>
                                                                     </template>
                                                                     <v-date-picker v-model="fechaF" no-title scrollable>
                                                                         <v-spacer></v-spacer>
-                                                                        <v-btn flat color="#668c2d" @click="menu2 = false">Cancelar
+                                                                        <v-btn flat color="#668c2d"
+                                                                            @click="menu2 = false">Cancelar
                                                                         </v-btn>
-                                                                        <v-btn flat color="#668c2d" @click="$refs.menu2.save(fechaF)">
+                                                                        <v-btn flat color="#668c2d"
+                                                                            @click="$refs.menu2.save(fechaF)">
                                                                             Guardar</v-btn>
                                                                     </v-date-picker>
+
                                                                 </v-menu>
                                                                 <!-- Fin del date Time Picker -->
+
                                                             </v-flex>
-                                                            <v-flex xs12 sm12 md12>
-                                                                <v-subheader color="black">Configuracion de Estadisticas</v-subheader>
-                                                                <multiselect v-model="estadistica" :options="estadisticas"
-                                                                    :multiple="true" :taggable="false" :close-on-select="false"
+                                                            <v-switch :color="color" v-model="verificacion"
+                                                                :label="`Estadisticas: ${verificacion=='true'?'Mostrar':'No Mostrar'}`">
+                                                            </v-switch>
+                                                            <v-flex xs12 sm12 md12 v-if="verificacion">
+                                                                <v-subheader color="black">Configuracion de Estadisticas
+                                                                </v-subheader>
+                                                                <multiselect v-model="estadistica"
+                                                                    :options="estadisticas" :multiple="true"
+                                                                    :taggable="false" :close-on-select="false"
                                                                     :clear-on-select="false" :preserve-search="true"
-                                                                    placeholder="Seleccione..." label="nombre" track-by="nombre">
+                                                                    placeholder="Seleccione..." label="nombre"
+                                                                    track-by="nombre">
                                                                 </multiselect>
                                                             </v-flex>
-                                                            <v-flex xs12 sm12 md9>
+                                                            <v-flex xs12 sm12 md12>
                                                                 <v-subheader>Asignacion de tareas</v-subheader>
-                                                                <multiselect v-model="empleado" :options="empleados" :multiple="true"
-                                                                    :taggable="false" :close-on-select="false" :clear-on-select="false"
-                                                                    :preserve-search="true" placeholder="Seleccione..." label="nombre"
-                                                                    track-by="nombre">
+                                                                <multiselect v-model="empleado" :options="empleados"
+                                                                    :multiple="true" :taggable="false"
+                                                                    :close-on-select="false" :clear-on-select="false"
+                                                                    :preserve-search="true" placeholder="Seleccione..."
+                                                                    label="nombre" track-by="nombre">
                                                                 </multiselect>
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md12 lg12>
@@ -219,24 +264,31 @@
                                                                 <v-data-table :headers="headersUsers" :items="empleado"
                                                                     class="elevation-1" hide-actions>
                                                                     <v-progress-linear :indeterminate="true"
-                                                                        color="light-green accent-3"></v-progress-linear>
+                                                                        color="light-green accent-3">
+                                                                    </v-progress-linear>
                                                                     <template v-slot:items="props">
-                                                                        <td class="text-xs-right">{{ props.item.id }}</td>
-                                                                        <td class="text-xs-right">{{ props.item.nombre }}</td>
+                                                                        <td class="text-xs-right">{{ props.item.id }}
+                                                                        </td>
+                                                                        <td class="text-xs-right">
+                                                                            {{ props.item.nombre }}</td>
                                                                         <td class="text-xs-right">
                                                                             <template>
                                                                                 <div class="text-xs-right">
-                                                                                    <v-chip color="green" text-color="white"
-                                                                                        v-if="props.item.estado==1">
+                                                                                    <v-chip color="green"
+                                                                                        text-color="white"
+                                                                                        v-if="props.item.estado==1 || empleado.length==1">
                                                                                         Si</v-chip>
-                                                                                    <v-chip color="red" text-color="white" v-else>No
+                                                                                    <v-chip color="red"
+                                                                                        text-color="white" v-else>No
                                                                                     </v-chip>
 
                                                                                 </div>
                                                                             </template>
                                                                         </td>
                                                                         <td class="text-xs-right">
-                                                                            <v-btn color="blue" class="white--text" @click="superior(props.item.id)">
+                                                                            <v-btn color="blue" class="white--text"
+                                                                                @click="superior(props.item.id)"
+                                                                                v-if="empleado.length>1">
                                                                                 Encargado
                                                                                 <v-icon right dark>how_to_reg</v-icon>
                                                                             </v-btn>
@@ -253,9 +305,8 @@
 
                                                 <template v-if="error">
                                                     <v-divider></v-divider>
-                                                    <div class="text-xs-center">
-                                                        <strong class="red--text text--lighten-1" v-for="e in errorMsj" :key="e"
-                                                            v-text="e"></strong>
+                                                    <div class="text-xs-center" v-for="e in errorMsj" :key="e">
+                                                        <strong class="red--text text--lighten-1" v-text="e"></strong>
                                                         <br>
                                                     </div>
                                                     <v-divider></v-divider>
@@ -263,13 +314,15 @@
                                                 <v-card-actions>
                                                     <v-spacer></v-spacer>
                                                     <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
-                                                    <v-btn color="#668c2d" flat @click="save" :loading="loading" :disabled="loading">Guardar</v-btn>
+                                                    <v-btn color="#668c2d" flat @click="save" :loading="loading"
+                                                        :disabled="loading">Guardar</v-btn>
                                                 </v-card-actions>
                                             </v-card>
                                         </v-dialog>
                                         <!-- Termina el modal -->
                                     </v-toolbar>
-                                    <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
+                                    <v-data-table :headers="headers" :items="tareas" class="elevation-1"
+                                        :search="search">
                                         <template v-slot:items="props">
                                             <td class="text-xs-right">{{ props.item.tarea }}</td>
                                             <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
@@ -278,9 +331,11 @@
                                             <td class="text-xs-center">
                                                 <template>
                                                     <div class="text-xs-center">
-                                                        <v-chip color="amber accent-4" text-color="white" v-if="props.item.estado==0">En
+                                                        <v-chip color="amber accent-4" text-color="white"
+                                                            v-if="props.item.estado==0">En
                                                             Proceso</v-chip>
-                                                        <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
+                                                        <v-chip color="green" text-color="white"
+                                                            v-else-if="props.item.estado==1">
                                                             Completado</v-chip>
                                                         <v-chip color="red" text-color="white" v-else>Atrasado</v-chip>
                                                     </div>
@@ -288,7 +343,8 @@
                                             </td>
 
                                             <td class="justify-center layout px-0">
-                                                <v-icon v-if="props.item.estado==1" class="mr-2" @click="watchTask(props.item.id)">
+                                                <v-icon v-if="props.item.estado==1" class="mr-2"
+                                                    @click="watchTask(props.item.id)">
                                                     visibility
                                                 </v-icon>
                                                 <v-icon class="mr-2" @click="deleteItem(props.item)">
@@ -297,7 +353,8 @@
                                             </td>
                                         </template>
                                         <template v-slot:no-data>
-                                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
+                                            <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar
+                                            </v-btn>
                                         </template>
                                         <template v-slot:no-results>
                                             <v-alert :value="true" color="error" icon="warning">
@@ -306,7 +363,7 @@
                                         </template>
                                     </v-data-table>
                                 </div>
-                                <v-alert :value="true" color="warning" icon="priority_high" outline v-else >
+                                <v-alert :value="true" color="warning" icon="priority_high" outline v-else>
                                     Seleccione una actividad
                                 </v-alert>
                                 <v-btn color="#668C2D" dark class="mb-2" @click="e1 = 1">
@@ -317,8 +374,8 @@
                     </v-stepper>
                 </v-flex>
             </b-card>
-            <v-alert :value="true" color="warning" icon="priority_high" outline v-else >
-                ¡Por favor seleccione proyecto! 
+            <v-alert :value="true" color="warning" icon="priority_high" outline v-else>
+                ¡Por favor seleccione proyecto!
             </v-alert>
         </div>
     </div>
@@ -338,6 +395,9 @@
                 id: 0,
                 nombre: ''
             },
+            color: 'green',
+            verificacion: true,
+            verify:false,
             e1: 0,
             loader: null,
             loading: false,
@@ -345,12 +405,12 @@
             sProyecto: false,
             estadisticas: [],
             estadistica: [],
-                 nameRules: [
-            v => !!v || 'El nombre de la tarea no puede estar vacia',
-            v => (v && v.length <= 239) || 'El nombre de la tarea no puede ser mayor a 240',
+            nameRules: [
+                v => !!v || 'El nombre de la tarea no puede estar vacia',
+                v => (v && v.length <= 239) || 'El nombre de la tarea no puede ser mayor a 240',
 
             ],
-            number: 0,
+            number: 1,
             users: [],
             fechaI: new Date().toISOString().substr(0, 10),
             fechaF: new Date().toISOString().substr(0, 10),
@@ -435,18 +495,18 @@
                 val || this.close2()
             },
             actividad(val) {
-                if(val!=null)
+                if (val != null)
                     this.initialize();
             },
             seleccion: {
                 deep: true,
                 handler(val) {
-                    if(val.id === 0) {
+                    if (val.id === 0) {
                         this.sProyecto = false;
                     }
                     else {
                         this.sProyecto = true;
-                        this.proyecto=val;
+                        this.proyecto = val;
                         this.initialize();
                     }
                     // console.log(this.proyecto);
@@ -459,17 +519,18 @@
         },
         mounted() {
             // console.log(this.proyecto);
-            if(this.$store.state.proyecto.id === 0) {
+            if (this.$store.state.proyecto.id === 0) {
                 this.sProyecto = false;
             }
             else {
                 this.sProyecto = true;
-                this.proyecto=this.$store.state.proyecto;
+                this.proyecto = this.$store.state.proyecto;
                 this.initialize();
             }
         },
         methods: {
             superior(id) {
+                this.verify=true;
                 let me = this;
                 this.users = [];
                 this.empleado.forEach(element => {
@@ -490,8 +551,16 @@
             validate() {
                 this.error = 0;
                 this.errorMsj = [];
-                if (!this.editedItem.nombre)
-                    this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+                if (!this.tarea)
+                    this.errorMsj.push('La tarea no puede estar vacia.');
+                if (this.empleado.length < 1)
+                    this.errorMsj.push('Debe almenos seleccionar a un encargado.');
+                if ((this.empleado.length > 1) && (this.verify==false))
+                    this.errorMsj.push('Uno de los responsables debe ser el encargado.');
+                if (Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF))
+                    this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
+                if (this.verificacion == true && this.estadistica.length  < 1)
+                    this.errorMsj.push('Debe almenos seleccionar una estadistica.');
                 if (this.errorMsj.length)
                     this.error = 1;
                 return this.error;
@@ -508,7 +577,7 @@
                 this.getActividaes();
                 this.getEstadistica();
                 this.getUsuario();
-                this.estadistica=this.estadisticas;  
+                this.estadistica = this.estadisticas;
             },
             getActividaes() {
                 var url = '/Actividad/' + this.proyecto.id;
@@ -575,13 +644,13 @@
                         axios.delete(`/tarea/delete/${item.id}`).then(response => {
                             me.initialize();
                             console.log(response.data);
-                            // swal.fire({
-                            //     position: 'top-end',
-                            //     type: 'success',
-                            //     title: response.data,
-                            //     showConfirmButton: false,
-                            //     timer: 2500
-                            // });
+                            swal.fire({
+                                position: 'top-end',
+                                type: 'success',
+                                title: response.data,
+                                showConfirmButton: false,
+                                timer: 2500
+                            });
                         }).catch(error => {
                             swal.fire({
                                 position: 'top-end',
@@ -596,7 +665,14 @@
 
             close() {
                 this.error = 0;
+                this.fechaI=new Date().toISOString().substr(0, 10),
+                this.fechaF=new Date().toISOString().substr(0, 10),
+                this.tarea='';
+                this.verificacion=true;
+                this.number=1;
                 this.dialog = false;
+                this.empleado=[];
+                this.verify=false;
                 setTimeout(() => {
                     this.editedItem = Object.assign({}, this.defaultItem)
                     this.editedIndex = -1
@@ -607,78 +683,49 @@
             },
 
             save() {
+                if (this.validate()) {
+                    return;
+                }
                 let me = this;
                 this.loader = 'loading';
-                this.loading=true;
-                // if (this.validate()) {
-                //     return;
-                // }
-                if (this.editedIndex > -1) {
-                    axios({
-                        method: 'put',
-                        url: '/Estadistica/editar',
-                        data: {
-                            id: this.editedItem.id,
-                            nombre: this.editedItem.nombre
-                        }
-                    }).then(function (response) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: response.data,
-                            showConfirmButton: false,
-                            timer: 2500
-                        });
-                        me.initialize();
-                        me.close();
-                    }).catch(function (error) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'error',
-                            title: error.response.data.error,
-                            showConfirmButton: true
-                        });
-                        me.initialize();
-                        me.close();
+                this.loading = true;
+                axios({
+                    method: 'post',
+                    url: '/Tarea/nuevo',
+                    data: {
+                        fechaInicio: this.fechaI,
+                        fechaFinal: this.fechaF,
+                        idActividad: this.actividad.id,
+                        tarea: this.tarea,
+                        verificacion: this.verificacion,
+                        estadisticas: this.estadistica,
+                        numero: this.number,
+                        usuarios: this.empleado
+                    }
+                }).then(function (response) {
+                    me.loader = null;
+                    me.loading = false;
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: response.data,
+                        showConfirmButton: false,
+                        timer: 1500
                     });
-                } else {
-                    axios({
-                        method: 'post',
-                        url: '/Tarea/nuevo',
-                        data: {
-                            fechaInicio: this.fechaI,
-                            fechaFinal: this.fechaF,
-                            idActividad: this.actividad.id,
-                            tarea: this.tarea,
-                            estadisticas: this.estadistica,
-                            numero: this.number,
-                            usuarios: this.empleado
-                        }
-                    }).then(function (response) {
-                        me.loader=null;
-                        me.loading=false;
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: response.data,
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                        me.initialize();
-                        me.close();
-                    }).catch(function (error) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'error',
-                            title: error.response.data.error,
-                            showConfirmButton: true
-                        });
-                        me.loader=null;
-                        me.loading=false;
-                        me.initialize();
-                        me.close();
+                    me.initialize();
+                    me.close();
+                }).catch(function (error) {
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'error',
+                        title: error.response.data.error,
+                        showConfirmButton: true
                     });
-                }
+                    me.loader = null;
+                    me.loading = false;
+                    me.initialize();
+                    me.close();
+                });
             }
         }
     }

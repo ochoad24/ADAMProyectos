@@ -248,10 +248,24 @@ __WEBPACK_IMPORTED_MODULE_2_vee_validate__["a" /* Validator */].localize("es", _
                         password: _this.password,
                         password_confirmation: _this.password_confirmation
                     }).then(function (result) {
-                        // console.log(result.data);
-                        _this.$router.push({ name: 'login' });
+                        swal.fire({
+                            position: 'center',
+                            type: 'success',
+                            title: 'Se ha cambiado la contraseña',
+                            showConfirmButton: false,
+                            timer: 3000
+                        });
+                        window.location.href = "/#/";
                     }, function (error) {
-                        console.error(error);
+                        swal.fire({
+                            position: 'center',
+                            type: 'error',
+                            title: 'Algo paso mal vuelva a intentarlo',
+                            showConfirmButton: false,
+                            timer: 3000
+                        });
+                        window.location.href = "/#/";
+                        window.location.href = "/#/";
                     });
                 }
             });

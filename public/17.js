@@ -179,7 +179,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 rol: 0
             }
         }, 'roles', [{
-            text: 'Admnistrador',
+            text: 'Administrador',
             value: 0
         }, {
             text: 'Técnico',
@@ -644,7 +644,7 @@ var render = function() {
                             _vm._v(
                               _vm._s(
                                 props.item.role != 1
-                                  ? "Admnistrador"
+                                  ? "Administrador"
                                   : "Técnico"
                               )
                             )

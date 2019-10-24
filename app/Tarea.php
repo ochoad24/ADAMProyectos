@@ -14,5 +14,8 @@ class Tarea extends Model
                             'estado',
                             'participantes',
                             'fechaRealizacion',
-                            'idActividad'];
+                            'idActividad',
+                            'verificacion',
+                            'latitud',
+                            'longitud'];
 }

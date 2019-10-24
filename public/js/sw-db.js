@@ -31,6 +31,8 @@ function postearMensajes() {
                 form.append('id', doc.id);
                 form.append('descripcion', doc.descripcion);
                 form.append('participantes', doc.participantes);
+                form.append('latitud', doc.latitud);
+                form.append('longitud', doc.longitud);
                 form.append('fotos[]', doc.fotos);
                 form.append('estadisticas', doc.estadisticas);
                 const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };

@@ -440,6 +440,63 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -456,6 +513,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 id: 0,
                 nombre: ''
             },
+            color: 'green',
+            verificacion: true,
+            verify: false,
             e1: 0,
             loader: null,
             loading: false,
@@ -468,7 +528,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             }, function (v) {
                 return v && v.length <= 239 || 'El nombre de la tarea no puede ser mayor a 240';
             }],
-            number: 0,
+            number: 1,
             users: [],
             fechaI: new Date().toISOString().substr(0, 10),
             fechaF: new Date().toISOString().substr(0, 10),
@@ -569,6 +629,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
     methods: {
         superior: function superior(id) {
+            this.verify = true;
             var me = this;
             this.users = [];
             this.empleado.forEach(function (element) {
@@ -589,7 +650,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+            if (!this.tarea) this.errorMsj.push('La tarea no puede estar vacia.');
+            if (this.empleado.length < 1) this.errorMsj.push('Debe almenos seleccionar a un encargado.');
+            if (this.empleado.length > 1 && this.verify == false) this.errorMsj.push('Uno de los responsables debe ser el encargado.');
+            if (Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF)) this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
+            if (this.verificacion == true && this.estadistica.length < 1) this.errorMsj.push('Debe almenos seleccionar una estadistica.');
             if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
@@ -672,13 +737,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                     __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/tarea/delete/' + item.id).then(function (response) {
                         me.initialize();
                         console.log(response.data);
-                        // swal.fire({
-                        //     position: 'top-end',
-                        //     type: 'success',
-                        //     title: response.data,
-                        //     showConfirmButton: false,
-                        //     timer: 2500
-                        // });
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: response.data,
+                            showConfirmButton: false,
+                            timer: 2500
+                        });
                     }).catch(function (error) {
                         swal.fire({
                             position: 'top-end',
@@ -694,7 +759,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             var _this6 = this;
 
             this.error = 0;
+            this.fechaI = new Date().toISOString().substr(0, 10), this.fechaF = new Date().toISOString().substr(0, 10), this.tarea = '';
+            this.verificacion = true;
+            this.number = 1;
             this.dialog = false;
+            this.empleado = [];
+            this.verify = false;
             setTimeout(function () {
                 _this6.editedItem = Object.assign({}, _this6.defaultItem);
                 _this6.editedIndex = -1;
@@ -704,78 +774,49 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.dialog2 = false;
         },
         save: function save() {
+            if (this.validate()) {
+                return;
+            }
             var me = this;
             this.loader = 'loading';
             this.loading = true;
-            // if (this.validate()) {
-            //     return;
-            // }
-            if (this.editedIndex > -1) {
-                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
-                    method: 'put',
-                    url: '/Estadistica/editar',
-                    data: {
-                        id: this.editedItem.id,
-                        nombre: this.editedItem.nombre
-                    }
-                }).then(function (response) {
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'success',
-                        title: response.data,
-                        showConfirmButton: false,
-                        timer: 2500
-                    });
-                    me.initialize();
-                    me.close();
-                }).catch(function (error) {
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'error',
-                        title: error.response.data.error,
-                        showConfirmButton: true
-                    });
-                    me.initialize();
-                    me.close();
+            __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                method: 'post',
+                url: '/Tarea/nuevo',
+                data: {
+                    fechaInicio: this.fechaI,
+                    fechaFinal: this.fechaF,
+                    idActividad: this.actividad.id,
+                    tarea: this.tarea,
+                    verificacion: this.verificacion,
+                    estadisticas: this.estadistica,
+                    numero: this.number,
+                    usuarios: this.empleado
+                }
+            }).then(function (response) {
+                me.loader = null;
+                me.loading = false;
+                swal.fire({
+                    position: 'top-end',
+                    type: 'success',
+                    title: response.data,
+                    showConfirmButton: false,
+                    timer: 1500
                 });
-            } else {
-                __WEBPACK_IMPORTED_MODULE_1_axios___default()({
-                    method: 'post',
-                    url: '/Tarea/nuevo',
-                    data: {
-                        fechaInicio: this.fechaI,
-                        fechaFinal: this.fechaF,
-                        idActividad: this.actividad.id,
-                        tarea: this.tarea,
-                        estadisticas: this.estadistica,
-                        numero: this.number,
-                        usuarios: this.empleado
-                    }
-                }).then(function (response) {
-                    me.loader = null;
-                    me.loading = false;
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'success',
-                        title: response.data,
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
-                    me.initialize();
-                    me.close();
-                }).catch(function (error) {
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'error',
-                        title: error.response.data.error,
-                        showConfirmButton: true
-                    });
-                    me.loader = null;
-                    me.loading = false;
-                    me.initialize();
-                    me.close();
+                me.initialize();
+                me.close();
+            }).catch(function (error) {
+                swal.fire({
+                    position: 'top-end',
+                    type: 'error',
+                    title: error.response.data.error,
+                    showConfirmButton: true
                 });
-            }
+                me.loader = null;
+                me.loading = false;
+                me.initialize();
+                me.close();
+            });
         }
     }
 });
@@ -830,7 +871,11 @@ var render = function() {
                                   color: "#668C2D"
                                 }
                               },
-                              [_vm._v("Seleccionar actividad")]
+                              [
+                                _vm._v(
+                                  "Seleccionar actividad\n                        "
+                                )
+                              ]
                             ),
                             _vm._v(" "),
                             _c(
@@ -1173,7 +1218,7 @@ var render = function() {
                                                                               },
                                                                               [
                                                                                 _vm._v(
-                                                                                  "Responsables asignados a esta tarea"
+                                                                                  "Responsables\n                                                                        asignados a esta tarea"
                                                                                 )
                                                                               ]
                                                                             )
@@ -1219,11 +1264,12 @@ var render = function() {
                                                                                             },
                                                                                             [
                                                                                               _vm._v(
-                                                                                                _vm._s(
-                                                                                                  props
-                                                                                                    .item
-                                                                                                    .nombre
-                                                                                                )
+                                                                                                "\n                                                                                " +
+                                                                                                  _vm._s(
+                                                                                                    props
+                                                                                                      .item
+                                                                                                      .nombre
+                                                                                                  )
                                                                                               )
                                                                                             ]
                                                                                           )
@@ -1233,7 +1279,7 @@ var render = function() {
                                                                                   ],
                                                                                   null,
                                                                                   false,
-                                                                                  142934874
+                                                                                  3743280163
                                                                                 )
                                                                               },
                                                                               [
@@ -1282,7 +1328,7 @@ var render = function() {
                                                                               },
                                                                               [
                                                                                 _vm._v(
-                                                                                  "Estadísticas de esta tarea"
+                                                                                  "Estadísticas\n                                                                        de esta tarea"
                                                                                 )
                                                                               ]
                                                                             )
@@ -1328,11 +1374,12 @@ var render = function() {
                                                                                             },
                                                                                             [
                                                                                               _vm._v(
-                                                                                                _vm._s(
-                                                                                                  props
-                                                                                                    .item
-                                                                                                    .nombre
-                                                                                                )
+                                                                                                "\n                                                                                " +
+                                                                                                  _vm._s(
+                                                                                                    props
+                                                                                                      .item
+                                                                                                      .nombre
+                                                                                                  )
                                                                                               )
                                                                                             ]
                                                                                           ),
@@ -1347,11 +1394,12 @@ var render = function() {
                                                                                             },
                                                                                             [
                                                                                               _vm._v(
-                                                                                                _vm._s(
-                                                                                                  props
-                                                                                                    .item
-                                                                                                    .valor
-                                                                                                )
+                                                                                                "\n                                                                                " +
+                                                                                                  _vm._s(
+                                                                                                    props
+                                                                                                      .item
+                                                                                                      .valor
+                                                                                                  )
                                                                                               )
                                                                                             ]
                                                                                           )
@@ -1361,7 +1409,7 @@ var render = function() {
                                                                                   ],
                                                                                   null,
                                                                                   false,
-                                                                                  3678897126
+                                                                                  3054057894
                                                                                 )
                                                                               },
                                                                               [
@@ -1586,7 +1634,7 @@ var render = function() {
                                                                                                                 },
                                                                                                                 [
                                                                                                                   _vm._v(
-                                                                                                                    "arrow_downward"
+                                                                                                                    "arrow_downward\n                                                                                        "
                                                                                                                   )
                                                                                                                 ]
                                                                                                               )
@@ -2252,65 +2300,96 @@ var render = function() {
                                                                   1
                                                                 ),
                                                                 _vm._v(" "),
-                                                                _c(
-                                                                  "v-flex",
-                                                                  {
-                                                                    attrs: {
-                                                                      xs12: "",
-                                                                      sm12: "",
-                                                                      md12: ""
-                                                                    }
+                                                                _c("v-switch", {
+                                                                  attrs: {
+                                                                    color:
+                                                                      _vm.color,
+                                                                    label:
+                                                                      "Estadisticas: " +
+                                                                      (_vm.verificacion ==
+                                                                      "true"
+                                                                        ? "Mostrar"
+                                                                        : "No Mostrar")
                                                                   },
-                                                                  [
-                                                                    _c(
-                                                                      "v-subheader",
+                                                                  model: {
+                                                                    value:
+                                                                      _vm.verificacion,
+                                                                    callback: function(
+                                                                      $$v
+                                                                    ) {
+                                                                      _vm.verificacion = $$v
+                                                                    },
+                                                                    expression:
+                                                                      "verificacion"
+                                                                  }
+                                                                }),
+                                                                _vm._v(" "),
+                                                                _vm.verificacion
+                                                                  ? _c(
+                                                                      "v-flex",
                                                                       {
                                                                         attrs: {
-                                                                          color:
-                                                                            "black"
+                                                                          xs12:
+                                                                            "",
+                                                                          sm12:
+                                                                            "",
+                                                                          md12:
+                                                                            ""
                                                                         }
                                                                       },
                                                                       [
-                                                                        _vm._v(
-                                                                          "Configuracion de Estadisticas"
-                                                                        )
-                                                                      ]
-                                                                    ),
-                                                                    _vm._v(" "),
-                                                                    _c(
-                                                                      "multiselect",
-                                                                      {
-                                                                        attrs: {
-                                                                          options:
-                                                                            _vm.estadisticas,
-                                                                          multiple: true,
-                                                                          taggable: false,
-                                                                          "close-on-select": false,
-                                                                          "clear-on-select": false,
-                                                                          "preserve-search": true,
-                                                                          placeholder:
-                                                                            "Seleccione...",
-                                                                          label:
-                                                                            "nombre",
-                                                                          "track-by":
-                                                                            "nombre"
-                                                                        },
-                                                                        model: {
-                                                                          value:
-                                                                            _vm.estadistica,
-                                                                          callback: function(
-                                                                            $$v
-                                                                          ) {
-                                                                            _vm.estadistica = $$v
+                                                                        _c(
+                                                                          "v-subheader",
+                                                                          {
+                                                                            attrs: {
+                                                                              color:
+                                                                                "black"
+                                                                            }
                                                                           },
-                                                                          expression:
-                                                                            "estadistica"
-                                                                        }
-                                                                      }
+                                                                          [
+                                                                            _vm._v(
+                                                                              "Configuracion de Estadisticas\n                                                            "
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "multiselect",
+                                                                          {
+                                                                            attrs: {
+                                                                              options:
+                                                                                _vm.estadisticas,
+                                                                              multiple: true,
+                                                                              taggable: false,
+                                                                              "close-on-select": false,
+                                                                              "clear-on-select": false,
+                                                                              "preserve-search": true,
+                                                                              placeholder:
+                                                                                "Seleccione...",
+                                                                              label:
+                                                                                "nombre",
+                                                                              "track-by":
+                                                                                "nombre"
+                                                                            },
+                                                                            model: {
+                                                                              value:
+                                                                                _vm.estadistica,
+                                                                              callback: function(
+                                                                                $$v
+                                                                              ) {
+                                                                                _vm.estadistica = $$v
+                                                                              },
+                                                                              expression:
+                                                                                "estadistica"
+                                                                            }
+                                                                          }
+                                                                        )
+                                                                      ],
+                                                                      1
                                                                     )
-                                                                  ],
-                                                                  1
-                                                                ),
+                                                                  : _vm._e(),
                                                                 _vm._v(" "),
                                                                 _c(
                                                                   "v-flex",
@@ -2318,7 +2397,7 @@ var render = function() {
                                                                     attrs: {
                                                                       xs12: "",
                                                                       sm12: "",
-                                                                      md9: ""
+                                                                      md12: ""
                                                                     }
                                                                   },
                                                                   [
@@ -2426,7 +2505,8 @@ var render = function() {
                                                                                           props
                                                                                             .item
                                                                                             .id
-                                                                                        )
+                                                                                        ) +
+                                                                                          "\n                                                                    "
                                                                                       )
                                                                                     ]
                                                                                   ),
@@ -2441,11 +2521,12 @@ var render = function() {
                                                                                     },
                                                                                     [
                                                                                       _vm._v(
-                                                                                        _vm._s(
-                                                                                          props
-                                                                                            .item
-                                                                                            .nombre
-                                                                                        )
+                                                                                        "\n                                                                        " +
+                                                                                          _vm._s(
+                                                                                            props
+                                                                                              .item
+                                                                                              .nombre
+                                                                                          )
                                                                                       )
                                                                                     ]
                                                                                   ),
@@ -2470,7 +2551,11 @@ var render = function() {
                                                                                             props
                                                                                               .item
                                                                                               .estado ==
-                                                                                            1
+                                                                                              1 ||
+                                                                                            _vm
+                                                                                              .empleado
+                                                                                              .length ==
+                                                                                              1
                                                                                               ? _c(
                                                                                                   "v-chip",
                                                                                                   {
@@ -2520,50 +2605,55 @@ var render = function() {
                                                                                         "text-xs-right"
                                                                                     },
                                                                                     [
-                                                                                      _c(
-                                                                                        "v-btn",
-                                                                                        {
-                                                                                          staticClass:
-                                                                                            "white--text",
-                                                                                          attrs: {
-                                                                                            color:
-                                                                                              "blue"
-                                                                                          },
-                                                                                          on: {
-                                                                                            click: function(
-                                                                                              $event
-                                                                                            ) {
-                                                                                              return _vm.superior(
-                                                                                                props
-                                                                                                  .item
-                                                                                                  .id
-                                                                                              )
-                                                                                            }
-                                                                                          }
-                                                                                        },
-                                                                                        [
-                                                                                          _vm._v(
-                                                                                            "\n                                                                            Encargado\n                                                                            "
-                                                                                          ),
-                                                                                          _c(
-                                                                                            "v-icon",
+                                                                                      _vm
+                                                                                        .empleado
+                                                                                        .length >
+                                                                                      1
+                                                                                        ? _c(
+                                                                                            "v-btn",
                                                                                             {
+                                                                                              staticClass:
+                                                                                                "white--text",
                                                                                               attrs: {
-                                                                                                right:
-                                                                                                  "",
-                                                                                                dark:
-                                                                                                  ""
+                                                                                                color:
+                                                                                                  "blue"
+                                                                                              },
+                                                                                              on: {
+                                                                                                click: function(
+                                                                                                  $event
+                                                                                                ) {
+                                                                                                  return _vm.superior(
+                                                                                                    props
+                                                                                                      .item
+                                                                                                      .id
+                                                                                                  )
+                                                                                                }
                                                                                               }
                                                                                             },
                                                                                             [
                                                                                               _vm._v(
-                                                                                                "how_to_reg"
+                                                                                                "\n                                                                            Encargado\n                                                                            "
+                                                                                              ),
+                                                                                              _c(
+                                                                                                "v-icon",
+                                                                                                {
+                                                                                                  attrs: {
+                                                                                                    right:
+                                                                                                      "",
+                                                                                                    dark:
+                                                                                                      ""
+                                                                                                  }
+                                                                                                },
+                                                                                                [
+                                                                                                  _vm._v(
+                                                                                                    "how_to_reg"
+                                                                                                  )
+                                                                                                ]
                                                                                               )
-                                                                                            ]
+                                                                                            ],
+                                                                                            1
                                                                                           )
-                                                                                        ],
-                                                                                        1
-                                                                                      )
+                                                                                        : _vm._e()
                                                                                     ],
                                                                                     1
                                                                                   )
@@ -2573,7 +2663,7 @@ var render = function() {
                                                                           ],
                                                                           null,
                                                                           false,
-                                                                          3565349664
+                                                                          2419852417
                                                                         )
                                                                       },
                                                                       [
@@ -2607,35 +2697,31 @@ var render = function() {
                                                       ? [
                                                           _c("v-divider"),
                                                           _vm._v(" "),
-                                                          _c(
-                                                            "div",
-                                                            {
-                                                              staticClass:
-                                                                "text-xs-center"
-                                                            },
-                                                            [
-                                                              _vm._l(
-                                                                _vm.errorMsj,
-                                                                function(e) {
-                                                                  return _c(
-                                                                    "strong",
-                                                                    {
-                                                                      key: e,
-                                                                      staticClass:
-                                                                        "red--text text--lighten-1",
-                                                                      domProps: {
-                                                                        textContent: _vm._s(
-                                                                          e
-                                                                        )
-                                                                      }
+                                                          _vm._l(
+                                                            _vm.errorMsj,
+                                                            function(e) {
+                                                              return _c(
+                                                                "div",
+                                                                {
+                                                                  key: e,
+                                                                  staticClass:
+                                                                    "text-xs-center"
+                                                                },
+                                                                [
+                                                                  _c("strong", {
+                                                                    staticClass:
+                                                                      "red--text text--lighten-1",
+                                                                    domProps: {
+                                                                      textContent: _vm._s(
+                                                                        e
+                                                                      )
                                                                     }
-                                                                  )
-                                                                }
-                                                              ),
-                                                              _vm._v(" "),
-                                                              _c("br")
-                                                            ],
-                                                            2
+                                                                  }),
+                                                                  _vm._v(" "),
+                                                                  _c("br")
+                                                                ]
+                                                              )
+                                                            }
                                                           ),
                                                           _vm._v(" "),
                                                           _c("v-divider")
@@ -2916,7 +3002,11 @@ var render = function() {
                                                           click: _vm.initialize
                                                         }
                                                       },
-                                                      [_vm._v("Recargar")]
+                                                      [
+                                                        _vm._v(
+                                                          "Recargar\n                                        "
+                                                        )
+                                                      ]
                                                     )
                                                   ]
                                                 },
@@ -2950,7 +3040,7 @@ var render = function() {
                                             ],
                                             null,
                                             false,
-                                            454418005
+                                            1682258343
                                           )
                                         })
                                       ],
@@ -3017,7 +3107,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n            ¡Por favor seleccione proyecto! \n        "
+                  "\n            ¡Por favor seleccione proyecto!\n        "
                 )
               ]
             )

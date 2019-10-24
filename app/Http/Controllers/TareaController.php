@@ -33,7 +33,7 @@ class TareaController extends Controller
     public function select($usuario){
 
         $tareas = Tarea::join('encargado','encargado.idTarea','=','tarea.id')->where('encargado.idEmpleado',$usuario)
-        ->select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion','encargado.estado as Permiso')
+        ->select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion','tarea.verificacion','encargado.estado as Permiso')
         ->get();
         foreach ($tareas as $p) {
             $p->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');
@@ -50,32 +50,34 @@ class TareaController extends Controller
             DB::beginTransaction();
             for ($i=0; $i < $request->numero; $i++) { 
                 $tarea=new Tarea;
-                $tarea->fechaInicio=$request->fechaInicio;
-                $tarea->fechaFinal=$request->fechaFinal;
+                $tarea->fechaInicio=Carbon::parse($request->fechaInicio);
+                $tarea->fechaFinal=Carbon::parse($request->fechaFinal);
                 $tarea->estado=0;
                 $tarea->tarea = $request->tarea;
                 $tarea->idActividad=$request->idActividad;
+                $tarea->verificacion=$request->verificacion;
                 $tarea->save();
-                foreach($request->estadisticas as $item){
-                    $estadistica=new Estadistica;
-                    $estadistica->idNombreEstadistica=$item['id'];
-                    $estadistica->idTarea=$tarea->id;
-                    $estadistica->valor=-1;
-                    $estadistica->save();
-                }
-
+                if($request->verificacion==true){
+                    foreach($request->estadisticas as $item){
+                        $estadistica=new Estadistica;
+                        $estadistica->idNombreEstadistica=$item['id'];
+                        $estadistica->idTarea=$tarea->id;
+                        $estadistica->valor=-1;
+                        $estadistica->save();
+                    }
+                }   
                 if(count((array)$request->usuarios)>1)
                     $comprobacion=true;
 
                 foreach($request->usuarios as $item){
-                    $estadistica=new Encargado;
-                    $estadistica->idTarea=$tarea->id;
-                    $estadistica->idEmpleado=$item['id'];
+                    $encargado=new Encargado;
+                    $encargado->idTarea=$tarea->id;
+                    $encargado->idEmpleado=$item['id'];
                     if($comprobacion==true)
-                        $estadistica->estado=$item['estado'];
+                        $encargado->estado=$item['estado'];
                     else
-                        $estadistica->estado=1;
-                    $estadistica->save();
+                        $encargado->estado=1;
+                    $encargado->save();
                 }
             }
             DB::commit();
@@ -94,7 +96,11 @@ class TareaController extends Controller
             $reporte->descripcion=$request->descripcion;
             $reporte->estado=1;
             $reporte->fechaRealizacion=Carbon::now();
-            $reporte->participantes=$request->participantes;
+            if($reporte->verificacion==true){
+                $reporte->participantes=$request->participantes;
+            }
+            $reporte->latitud=$request->latitud;
+            $reporte->longitud=$request->longitud;
             $reporte->save();
 
             $actividad = Actividad::findOrFail($reporte->idActividad);
@@ -109,23 +115,26 @@ class TareaController extends Controller
                 $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
                 $proyecto->save();
             }
-            
-            $esta=$request->estadisticas;
-            $data= json_decode($esta);
-            foreach($data as $value){
-                $estadistica=Estadistica::findOrFail($value->id);
-                $estadistica->valor=$value->value;
-                $estadistica->save();
+            if($reporte->verificacion==true){
+                $esta=$request->estadisticas;
+                $data= json_decode($esta);
+                foreach($data as $value){
+                    $estadistica=Estadistica::findOrFail($value->id);
+                    $estadistica->valor=$value->value;
+                    $estadistica->save();
+                }
             }
-            foreach($request->fotos as $value){
-                $imagenOriginal = $value;
-                $imagen = Image::make($imagenOriginal);
-                $temp_name = $this->getToken(15) . '.' . 'jpg';
-                $imagen->save($ruta . $temp_name, 100);
-                $foto=new Foto;
-                $foto->idTarea=$request->id;
-                $foto->ruta=$temp_name;
-                $foto->save();
+            if(!empty($request->fotos)){
+                foreach($request->fotos as $value){
+                    $imagenOriginal = $value;
+                    $imagen = Image::make($imagenOriginal);
+                    $temp_name = $this->getToken(15) . '.' . 'jpg';
+                    $imagen->save($ruta . $temp_name, 100);
+                    $foto=new Foto;
+                    $foto->idTarea=$request->id;
+                    $foto->ruta=$temp_name;
+                    $foto->save();
+                }
             }
             DB::commit();
             return 'Se ha subido el reporte con exito';   

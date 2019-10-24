@@ -23,8 +23,9 @@ class CreateTareaTable extends Migration
             $table->tinyInteger('estado');
             $table->Integer('participantes')->nullable();
             $table->date('fechaRealizacion')->nullable();
-            
-
+            $table->tinyInteger('verificacion'); 
+            $table->string('latitud')->nullable();
+            $table->string('longitud')->nullable();
             $table->bigInteger('idActividad')->unsigned();
             $table->foreign('idActividad')->references('id')->on('actividades'); 
             

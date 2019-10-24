@@ -99,8 +99,10 @@
                         position: 'center',
                         type: 'error',
                         title: 'Algo paso mal vuelva a intentarlo',
-                        showConfirmButton: r.respontrue
+                        showConfirmButton: false,
+                        timer: 3000
                     });
+                    window.location.href="/#/";
                 });
             },
             redireccionar(){

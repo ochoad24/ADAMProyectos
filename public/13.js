@@ -250,6 +250,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
 
 
 
@@ -263,6 +266,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     },
     data: function data() {
         return {
+            index: 0,
+            item: {},
+            verificacion: '',
             cantidad: 0,
             id: 0,
             imageName: '',
@@ -348,11 +354,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         this.initialize();
     },
     mounted: function mounted() {
-        this.proyecto = this.$store.state.proyecto;
         this.initialize();
     },
 
     methods: {
+        Reload: function Reload() {
+            this.initialize();
+        },
         cancelReport: function cancelReport(item) {
             var me = this;
             swal.fire({
@@ -393,6 +401,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         },
         deleteFoto: function deleteFoto(item) {
             var index = this.fotos.indexOf(item);
+            this.item = item;
             if (index > -1) {
                 this.fotos.splice(index, 1);
                 this.files.splice(index, 1);
@@ -496,61 +505,71 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             });
         },
         editItem: function editItem(item) {
+            this.index = this.tareas.indexOf(item);
+            item.estado = 2;
             this.id = item.id;
             this.getEstadistica(item.id);
+            this.verificacion = item.verificacion;
             this.dialog = true;
         },
         close: function close() {
             this.error = 0;
             this.dialog = false;
+            this.descripcion = '';
+            this.cantidad = '';
+            this.files = [];
+            this.fotos = [];
+            this.estadisticas = [];
+            this.estadistica = [];
         },
         save: function save() {
-            var lat = void 0,
-                lng = void 0;
-            navigator.geolocation.getCurrentPosition(function (pos) {
+            var _this5 = this;
 
-                console.log(pos);
-
-                lat = pos.coords.latitude;
-                lng = pos.coords.longitude;
-            });
+            var lat = '';
+            var lng = '';
             var me = this;
             var archivos = [];
             this.files.forEach(function (element) {
                 archivos.push(element.file);
             });
 
-            var form = new FormData();
-            form.append('id', this.id);
-            form.append('descripcion', this.descripcion);
-            form.append('participantes', this.cantidad);
-            for (var i = 0; i < this.files.length; i++) {
-                form.append('fotos[]', this.files[i].file);
-            }
-
-            this.estadisticas.forEach(function (element) {
-                var Esta = new Object();
-                Esta.id = element.id.toString();
-                Esta.nombre = element.nombre;
-                Esta.value = element.value;
-                me.estadistica.push(Esta);
-            });
-            form.append('estadisticas', JSON.stringify(this.estadistica));
-            var ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
-
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/Tarea/subir', form, ajuste).then(function (response) {
-                console.log(response.data);
-                var respuesta = void 0;
-                if (response.data.offline == true) respuesta = response.data.data;else respuesta = response.data;
-                swal.fire({
-                    position: 'top-end',
-                    type: 'success',
-                    title: respuesta,
-                    showConfirmButton: false
+            navigator.geolocation.getCurrentPosition(function (pos) {
+                lat = pos.coords.latitude;
+                lng = pos.coords.longitude;
+                var form = new FormData();
+                form.append('id', _this5.id);
+                form.append('descripcion', _this5.descripcion);
+                form.append('participantes', _this5.cantidad);
+                form.append('latitud', lat);
+                form.append('longitud', lng);
+                for (var i = 0; i < _this5.files.length; i++) {
+                    form.append('fotos[]', _this5.files[i].file);
+                }
+                _this5.estadisticas.forEach(function (element) {
+                    var Esta = new Object();
+                    Esta.id = element.id.toString();
+                    Esta.nombre = element.nombre;
+                    Esta.value = element.value;
+                    me.estadistica.push(Esta);
                 });
-                console.log(respuesta);
-                me.initialize();
-                me.close();
+                form.append('estadisticas', JSON.stringify(_this5.estadistica));
+                var ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
+
+                __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/Tarea/subir', form, ajuste).then(function (response) {
+                    console.log(response.data);
+                    var respuesta = void 0;
+                    if (response.data.offline == true) respuesta = response.data.data;else respuesta = response.data;
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: respuesta,
+                        showConfirmButton: false
+                    });
+                    console.log(respuesta);
+                    me.initialize();
+                    me.tareas.splice(me.index, 1, me.item);
+                    me.close();
+                });
             });
         }
     }
@@ -981,19 +1000,21 @@ var render = function() {
                                       "v-flex",
                                       { attrs: { xs12: "" } },
                                       [
-                                        _c("v-text-field", {
-                                          attrs: {
-                                            label: "Total de participantes",
-                                            type: "number"
-                                          },
-                                          model: {
-                                            value: _vm.cantidad,
-                                            callback: function($$v) {
-                                              _vm.cantidad = $$v
-                                            },
-                                            expression: "cantidad"
-                                          }
-                                        })
+                                        _vm.verificacion == true
+                                          ? _c("v-text-field", {
+                                              attrs: {
+                                                label: "Total de participantes",
+                                                type: "number"
+                                              },
+                                              model: {
+                                                value: _vm.cantidad,
+                                                callback: function($$v) {
+                                                  _vm.cantidad = $$v
+                                                },
+                                                expression: "cantidad"
+                                              }
+                                            })
+                                          : _vm._e()
                                       ],
                                       1
                                     )
@@ -1065,6 +1086,15 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
+                _c(
+                  "v-btn",
+                  {
+                    attrs: { color: "#668c2d", flat: "" },
+                    on: { click: _vm.Reload }
+                  },
+                  [_vm._v("Recargar")]
+                ),
+                _vm._v(" "),
                 _c("v-data-table", {
                   staticClass: "elevation-1",
                   attrs: {
@@ -1132,6 +1162,21 @@ var render = function() {
                                             )
                                           ]
                                         )
+                                      : props.item.estado == 2
+                                      ? _c(
+                                          "v-chip",
+                                          {
+                                            attrs: {
+                                              color: "blue",
+                                              "text-color": "white"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        En Proceso de subida"
+                                            )
+                                          ]
+                                        )
                                       : _c(
                                           "v-chip",
                                           {
@@ -1150,7 +1195,7 @@ var render = function() {
                             2
                           ),
                           _vm._v(" "),
-                          props.item.Permiso == 1
+                          props.item.Permiso == 1 && props.item.estado == 0
                             ? _c(
                                 "td",
                                 { staticClass: "justify-center" },
@@ -1177,7 +1222,7 @@ var render = function() {
                               )
                             : _vm._e(),
                           _vm._v(" "),
-                          props.item.estado == 1
+                          props.item.estado == 1 && props.item.estado == 1
                             ? _c(
                                 "td",
                                 { staticClass: "justify-center" },

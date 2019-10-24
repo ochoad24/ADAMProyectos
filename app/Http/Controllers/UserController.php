@@ -91,7 +91,7 @@ class UserController extends Controller
         }
     }
     public function select(Request $request){
-        return User::select('id','nombre')->where('role','1')->get();
+        return User::select(DB::raw('users.id, CONCAT(users.nombre, " ",users.apellido) as nombre'))->where('role','1')->get();
     }
     public function show($id)
     {

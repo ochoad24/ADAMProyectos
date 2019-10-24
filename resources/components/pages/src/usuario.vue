@@ -61,7 +61,7 @@
                             <td class="text-xs-left">{{ props.item.nombre }}</td>
                             <td class="text-xs-left">{{ props.item.apellido }}</td>
                             <td class="text-xs-left">{{ props.item.email }}</td>
-                            <td class="text-xs-left">{{ props.item.role != 1 ? 'Admnistrador':'Técnico' }}</td>
+                            <td class="text-xs-left">{{ props.item.role != 1 ? 'Administrador':'Técnico' }}</td>
                             <td class="justify-center">
                                 <v-icon small @click="deleteItem(props.item)">
                                     delete
@@ -124,7 +124,7 @@
             },
             roles:[
                 {
-                    text:'Admnistrador',
+                    text:'Administrador',
                     value:0
                 },
                 {

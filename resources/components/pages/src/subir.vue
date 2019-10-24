@@ -64,7 +64,7 @@
                                         </v-flex>
                                         <v-flex xs12>
                                             <v-text-field v-model="cantidad" label="Total de participantes"
-                                                type="number">
+                                                type="number" v-if="verificacion==true">
                                             </v-text-field>
                                         </v-flex>
                                     </v-container>
@@ -88,6 +88,7 @@
                         </v-dialog>
                         <!-- Termina el modal -->
                     </v-toolbar>
+                    <v-btn color="#668c2d" flat @click="Reload">Recargar</v-btn>
                     <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
                         <template v-slot:items="props">
                             <td class="text-xs-right">{{ props.item.tarea }}</td>
@@ -101,17 +102,19 @@
                                             Proceso</v-chip>
                                         <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
                                             Completado</v-chip>
+                                        <v-chip color="blue" text-color="white" v-else-if="props.item.estado==2">
+                                            En Proceso de subida</v-chip>
                                         <v-chip color="red" text-color="white" v-else>Atrasado</v-chip>
                                     </div>
                                 </template>
                             </td>
 
-                            <td class="justify-center" v-if="props.item.Permiso==1">
+                            <td class="justify-center" v-if="props.item.Permiso==1 && props.item.estado==0" >
                                 <v-icon large class="mr-2" @click="editItem(props.item)">
                                     cloud_upload
                                 </v-icon>
                             </td>
-                            <td class="justify-center" v-if="props.item.estado==1">
+                            <td class="justify-center" v-if="props.item.estado==1 && props.item.estado==1">
                                 <v-icon large class="mr-2" @click="cancelReport(props.item)">
                                     delete
                                 </v-icon>
@@ -143,6 +146,9 @@
             Multiselect
         },
         data: () => ({
+            index:0,
+            item:{},
+            verificacion:'',
             cantidad: 0,
             id: 0,
             imageName: '',
@@ -233,10 +239,12 @@
             this.initialize()
         },
         mounted() {
-            this.proyecto = this.$store.state.proyecto;
             this.initialize();
         },
         methods: {
+            Reload(){
+                this.initialize();
+            },
             cancelReport(item) {
                 let me = this;
                 swal.fire({
@@ -275,6 +283,7 @@
             },
             deleteFoto(item) {
                 var index = this.fotos.indexOf(item);
+                this.item=item;
                 if (index > -1) {
                     this.fotos.splice(index, 1);
                     this.files.splice(index, 1);
@@ -378,65 +387,74 @@
                     });
             },
             editItem(item) {
+                this.index=this.tareas.indexOf(item);
+                item.estado=2;
                 this.id = item.id;
                 this.getEstadistica(item.id);
-                this.dialog = true
+                this.verificacion=item.verificacion;
+                this.dialog = true;
+
             },
             close() {
                 this.error = 0;
                 this.dialog = false;
+                this.descripcion='';
+                this.cantidad='';
+                this.files=[];
+                this.fotos=[];
+                this.estadisticas=[];
+                this.estadistica=[];
             },
 
             save() {
-                let lat,lng;
-                navigator.geolocation.getCurrentPosition( pos => {
-
-                    console.log( pos );
-                    
-                    lat = pos.coords.latitude;
-                    lng = pos.coords.longitude;
-
-                });
+                var lat='';
+                var lng='';
                 let me = this;
                 var archivos = [];
                 this.files.forEach(element => {
                     archivos.push(element.file);
                 });
 
-                var form = new FormData();
-                form.append('id', this.id);
-                form.append('descripcion', this.descripcion);
-                form.append('participantes', this.cantidad);
-                for (var i = 0; i < this.files.length; i++) {
-                    form.append('fotos[]', this.files[i].file);
-                }
-    
-                this.estadisticas.forEach(element => {
-                    var Esta=new Object();
-                    Esta.id=element.id.toString();
-                    Esta.nombre=element.nombre;
-                    Esta.value=element.value;
-                    me.estadistica.push(Esta);
-                });
-                form.append('estadisticas', JSON.stringify(this.estadistica));
-                const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
-                
-                axios.post('/Tarea/subir',form, ajuste).then(function (response) {
-                    console.log(response.data);
-                    let respuesta;
-                    if(response.data.offline==true)
-                        respuesta=response.data.data;
-                    else
-                        respuesta=response.data;
-                    swal.fire({
-                        position: 'top-end',
-                        type: 'success',
-                        title: respuesta,
-                        showConfirmButton: false,
+                navigator.geolocation.getCurrentPosition( pos => {
+                    lat = pos.coords.latitude;
+                    lng = pos.coords.longitude;
+                    var form = new FormData();
+                    form.append('id', this.id);
+                    form.append('descripcion', this.descripcion);
+                    form.append('participantes', this.cantidad);
+                    form.append('latitud', lat);
+                    form.append('longitud', lng);
+                    for (var i = 0; i < this.files.length; i++) {
+                        form.append('fotos[]', this.files[i].file);
+                    }
+                    this.estadisticas.forEach(element => {
+                        var Esta=new Object();
+                        Esta.id=element.id.toString();
+                        Esta.nombre=element.nombre;
+                        Esta.value=element.value;
+                        me.estadistica.push(Esta);
                     });
-                    console.log(respuesta);
-                    me.initialize();
-                    me.close();
+                    form.append('estadisticas', JSON.stringify(this.estadistica));
+                    const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
+                
+                    axios.post('/Tarea/subir',form, ajuste).then(function (response) {
+                        console.log(response.data);
+                        let respuesta;
+                        if(response.data.offline==true)
+                            respuesta=response.data.data;
+                        else
+                            respuesta=response.data;
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'success',
+                            title: respuesta,
+                            showConfirmButton: false,
+                        });
+                        console.log(respuesta);
+                        me.initialize();
+                        me.tareas.splice(me.index,1,me.item);
+                        me.close();
+                    });
                 });
             }
         }
