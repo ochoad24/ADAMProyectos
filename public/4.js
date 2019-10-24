@@ -1,20 +1,20 @@
 webpackJsonp([4],{
 
-/***/ 485:
+/***/ 486:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(672)
-  __webpack_require__(674)
-  __webpack_require__(676)
+  __webpack_require__(684)
+  __webpack_require__(686)
+  __webpack_require__(688)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(678)
+var __vue_script__ = __webpack_require__(690)
 /* template */
-var __vue_template__ = __webpack_require__(679)
+var __vue_template__ = __webpack_require__(691)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -54,7 +54,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 566:
+/***/ 567:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
@@ -1383,7 +1383,7 @@ return VueForm;
 
 /***/ }),
 
-/***/ 567:
+/***/ 568:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1403,13 +1403,13 @@ var options = {
 
 /***/ }),
 
-/***/ 672:
+/***/ 684:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(673);
+var content = __webpack_require__(685);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1430,7 +1430,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 673:
+/***/ 685:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -1445,13 +1445,13 @@ exports.push([module.i, "/*!\r\n * BootstrapValidator (http://bootstrapvalidator
 
 /***/ }),
 
-/***/ 674:
+/***/ 686:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(675);
+var content = __webpack_require__(687);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1472,7 +1472,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 675:
+/***/ 687:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -1487,13 +1487,13 @@ exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General 
 
 /***/ }),
 
-/***/ 676:
+/***/ 688:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(677);
+var content = __webpack_require__(689);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -1514,7 +1514,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 677:
+/***/ 689:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -1529,16 +1529,16 @@ exports.push([module.i, "\n.register[data-v-7b7bdec2] {\r\n    padding-top: 6.5%
 
 /***/ }),
 
-/***/ 678:
+/***/ 690:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(566);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(567);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(568);
 //
 //
 //
@@ -1692,7 +1692,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 /***/ }),
 
-/***/ 679:
+/***/ 691:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -1709,7 +1709,7 @@ var render = function() {
             _c("h2", { staticClass: "text-center logo_h2" }, [
               _c("img", {
                 attrs: {
-                  src: __webpack_require__(680),
+                  src: __webpack_require__(692),
                   alt: "Logo"
                 }
               })
@@ -2293,7 +2293,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 680:
+/***/ 692:
 /***/ (function(module, exports) {
 
 module.exports = "/images/clear_black.png?af5ed424551cc55928ebf54b2c7e686d";

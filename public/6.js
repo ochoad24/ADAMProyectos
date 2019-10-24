@@ -1,19 +1,19 @@
 webpackJsonp([6],{
 
-/***/ 488:
+/***/ 489:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(696)
-  __webpack_require__(698)
+  __webpack_require__(708)
+  __webpack_require__(710)
 }
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(700)
+var __vue_script__ = __webpack_require__(712)
 /* template */
-var __vue_template__ = __webpack_require__(703)
+var __vue_template__ = __webpack_require__(715)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53,20 +53,20 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 499:
+/***/ 500:
 /***/ (function(module, exports) {
 
 module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
 
 /***/ }),
 
-/***/ 696:
+/***/ 708:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(697);
+var content = __webpack_require__(709);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -87,7 +87,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 697:
+/***/ 709:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -102,13 +102,13 @@ exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General 
 
 /***/ }),
 
-/***/ 698:
+/***/ 710:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(699);
+var content = __webpack_require__(711);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -129,7 +129,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 699:
+/***/ 711:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(18)(false);
@@ -144,16 +144,16 @@ exports.push([module.i, "\n.container-fluid.reset[data-v-7644d2fd] {\n    paddin
 
 /***/ }),
 
-/***/ 700:
+/***/ 712:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate_dist_locale_es__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate_dist_locale_es__ = __webpack_require__(713);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate_dist_locale_es___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vee_validate_dist_locale_es__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vee_validate__ = __webpack_require__(702);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vee_validate__ = __webpack_require__(714);
 //
 //
 //
@@ -262,14 +262,14 @@ __WEBPACK_IMPORTED_MODULE_2_vee_validate__["a" /* Validator */].localize("es", _
 
 /***/ }),
 
-/***/ 701:
+/***/ 713:
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(e,n){ true?module.exports=n():"function"==typeof define&&define.amd?define(n):(e.__vee_validate_locale__es=e.__vee_validate_locale__es||{},e.__vee_validate_locale__es.js=n())}(this,function(){"use strict";var e,n={name:"es",messages:{_default:function(e){return"El campo "+e+" no es válido."},after:function(e,n){var o=n[0];return"El campo "+e+" debe ser posterior "+(n[1]?"o igual ":"")+"a "+o+"."},alpha_dash:function(e){return"El campo "+e+" solo debe contener letras, números y guiones."},alpha_num:function(e){return"El campo "+e+" solo debe contener letras y números."},alpha_spaces:function(e){return"El campo "+e+" solo debe contener letras y espacios."},alpha:function(e){return"El campo "+e+" solo debe contener letras."},before:function(e,n){var o=n[0];return"El campo "+e+" debe ser anterior "+(n[1]?"o igual ":"")+"a "+o+"."},between:function(e,n){return"El campo "+e+" debe estar entre "+n[0]+" y "+n[1]+"."},confirmed:function(e){return"El campo "+e+" no coincide."},credit_card:function(e){return"El campo "+e+" es inválido."},date_between:function(e,n){return"El campo "+e+" debe estar entre "+n[0]+" y "+n[1]+"."},date_format:function(e,n){return"El campo "+e+" debe tener formato formato "+n[0]+"."},decimal:function(e,n){void 0===n&&(n=[]);var o=n[0];return void 0===o&&(o="*"),"El campo "+e+" debe ser númerico y contener "+("*"===o?"":o)+" puntos decimales."},digits:function(e,n){return"El campo "+e+" debe ser númerico y contener exactamente "+n[0]+" dígitos."},dimensions:function(e,n){return"El campo "+e+" debe ser de "+n[0]+" pixeles por "+n[1]+" pixeles."},email:function(e){return"El campo "+e+" debe ser un correo electrónico válido."},ext:function(e){return"El campo "+e+" debe ser un archivo válido."},image:function(e){return"El campo "+e+" debe ser una imagen."},in:function(e){return"El campo "+e+" debe ser un valor válido."},integer:function(e){return"El campo "+e+" debe ser un entero."},ip:function(e){return"El campo "+e+" debe ser una dirección ip válida."},length:function(e,n){var o=n[0],r=n[1];return r?"El largo del campo "+e+" debe estar entre "+o+" y "+r+".":"El largo del campo "+e+" debe ser "+o+"."},max:function(e,n){return"El campo "+e+" no debe ser mayor a "+n[0]+" caracteres."},max_value:function(e,n){return"El campo "+e+" debe de ser "+n[0]+" o menor."},mimes:function(e){return"El campo "+e+" debe ser un tipo de archivo válido."},min:function(e,n){return"El campo "+e+" debe tener al menos "+n[0]+" caracteres."},min_value:function(e,n){return"El campo "+e+" debe ser "+n[0]+" o superior."},not_in:function(e){return"El campo "+e+" debe ser un valor válido."},numeric:function(e){return"El campo "+e+" debe contener solo caracteres númericos."},regex:function(e){return"El formato del campo "+e+" no es válido."},required:function(e){return"El campo "+e+" es obligatorio."},size:function(e,n){var o,r,t,a=n[0];return"El campo "+e+" debe ser menor a "+(o=a,r=1024,t=0==(o=Number(o)*r)?0:Math.floor(Math.log(o)/Math.log(r)),1*(o/Math.pow(r,t)).toFixed(2)+" "+["Byte","KB","MB","GB","TB","PB","EB","ZB","YB"][t])+"."},url:function(e){return"El campo "+e+" no es una URL válida."}},attributes:{}};return"undefined"!=typeof VeeValidate&&VeeValidate.Validator.localize(((e={})[n.name]=n,e)),n});
 
 /***/ }),
 
-/***/ 702:
+/***/ 714:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5377,7 +5377,7 @@ var index_esm = {
 
 /***/ }),
 
-/***/ 703:
+/***/ 715:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -5389,7 +5389,7 @@ var render = function() {
       _c("div", { staticClass: "col-lg-4 col-sm-8 col-10 m-auto login-form" }, [
         _c("h2", { staticClass: "text-center" }, [
           _c("img", {
-            attrs: { src: __webpack_require__(499), alt: "Logo" }
+            attrs: { src: __webpack_require__(500), alt: "Logo" }
           })
         ]),
         _vm._v(" "),

@@ -164,7 +164,8 @@
     <body>
         @foreach ($tarea as $t)
         <header>
- 
+        
+        @endforeach
 <center><img src="../resources/img/adam.jpg" width="180" height="160"></center>
 <hr class="hrt">
 <center><h5>Asociación de Desarrollo Agrícola y Microempresarial</h5>
@@ -234,8 +235,9 @@
                             @endforeach
                             Participantes: {{$t->participantes}}<br>
                             @foreach ($estadisticas as $es)
-                                {{$es->nombre}}: {{round($es->valor,2)}}<br></p></th>
+                                {{$es->nombre}}: {{round($es->valor,2)}}<br>
                             @endforeach
+                            </p></th>
                         </tr>
                     </tbody>
                 </table>
@@ -243,7 +245,6 @@
             
             </div>
         </section>
-        @endforeach
         <section>
             <div>
                 @foreach ($fotos as $f)

@@ -347,7 +347,6 @@
                 this.descripcion='';
                 this.cantidad='';
                 this.estadistica=[];
-                
                 var url = '/Tarea/select/usuario/' + this.$store.state.user.id;
                 axios.get(url)
                     .then(response => {

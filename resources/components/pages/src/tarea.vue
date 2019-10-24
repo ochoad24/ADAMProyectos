@@ -352,7 +352,6 @@
             ],
             number: 0,
             users: [],
-            tipos: [],
             fechaI: new Date().toISOString().substr(0, 10),
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
@@ -401,7 +400,6 @@
             editedIndex: -1,
             editedItem: {
                 id: 0,
-                tipo: '',
                 fechaInicio: '',
                 fechaFinal: '',
                 fechaRealizacion: '',
@@ -508,7 +506,6 @@
                         console.log(errors);
                     });
                 this.getActividaes();
-                this.getTipos();
                 this.getEstadistica();
                 this.getUsuario();
                 this.estadistica=this.estadisticas;  
@@ -527,15 +524,6 @@
                 axios.get('/Estadistica')
                     .then(response => {
                         this.estadisticas = response.data;
-                    })
-                    .catch(errors => {
-                        console.log(errors);
-                    });
-            },
-            getTipos() {
-                axios.get('/TipoActividad')
-                    .then(response => {
-                        this.tipos = response.data;
                     })
                     .catch(errors => {
                         console.log(errors);
