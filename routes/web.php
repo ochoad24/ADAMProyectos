@@ -17,6 +17,7 @@
 Route::get('/User/pdf','UserController@responsablePdf')->name('responsable_pdf');
 Route::get('/tarea/pdf', 'TareaController@tareaPdf');
 Route::get('/proyecto/pdf', 'ProyectoController@proyectoPdf')->name('proyecto_pdf');
+Route::get('/proyecto/orgs', 'ProyectoController@orgs');
 Route::get('/', function (){
     return view('welcome');
 })->where('any', '^(?!api\/)[\/\w\.-]*');

@@ -253,6 +253,31 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -274,6 +299,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             imageName: '',
             imageUrl: '',
             imageFile: '',
+            fechaActual: new Date(),
             active: false,
             fotos: [],
             files: [],
@@ -293,6 +319,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
             menu2: false,
+            orgs: [],
             proyecto: {
                 id: 0,
                 nombre: ''
@@ -303,7 +330,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             dialog: false,
             error: 0,
             errorMsj: [],
-            headers: [{ text: 'Nombre', value: 'tarea', align: 'right' }, { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha Final', value: 'fechaFinal', align: 'right' }, { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' }, { text: 'Estado', value: 'estado', align: 'center' }],
+            headers: [{ text: 'Proyecto', value: 'proyecto', align: 'right' }, { text: 'Actividad', value: 'actividad', align: 'right' }, { text: 'Observaciones', value: 'observacion', align: 'right' }, { text: 'Nombre', value: 'tarea', align: 'right' }, { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha Final', value: 'fechaFinal', align: 'right' }, { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' }, { text: 'Estado', value: 'estado', align: 'center' }],
             tareas: [],
 
             editedIndex: -1,
@@ -394,6 +421,26 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 }
             });
         },
+        verOrgs: function verOrgs(id) {
+            var me = this;
+            var url = '/proyecto/orgs?id=' + id;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
+                var orgs1 = response.data;
+                var span = document.createElement("span");
+                orgs1.forEach(function (item) {
+                    span.innerHTML = item.departamento + ' - ' + item.municipio + ' - ' + item.comunidad + ' - ' + item.nombre + '<br>';
+                });
+                var texto = span.outerHTML;
+                swal.fire({
+                    type: 'info',
+                    title: 'Organizaciones',
+                    html: texto,
+                    showConfirmButton: true
+                });
+            }).catch(function (errors) {
+                console.log(errors);
+            });
+        },
         getIndex: function getIndex(list, id) {
             return list.findIndex(function (e) {
                 return e.id == id;
@@ -476,7 +523,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.descripcion = '';
             this.cantidad = '';
             this.estadistica = [];
-            var url = '/Tarea/select/usuario/' + this.$store.state.user.id;
+            this.fechaActual = new Date();
+            Date.parse(this.fechaActual);
+            var url = '/tarea/select/usuario/' + this.$store.state.user.id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
                 _this2.tareas = response.data;
             }).catch(function (errors) {
@@ -1110,6 +1159,18 @@ var render = function() {
                       fn: function(props) {
                         return [
                           _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.proyecto))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.actividad))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.observacion))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
                             _vm._v(_vm._s(props.item.tarea))
                           ]),
                           _vm._v(" "),
@@ -1134,7 +1195,19 @@ var render = function() {
                                   "div",
                                   { staticClass: "text-xs-right" },
                                   [
-                                    props.item.estado == 0
+                                    Date.parse(props.item.fechaFinal) <
+                                    _vm.fechaActual
+                                      ? _c(
+                                          "v-chip",
+                                          {
+                                            attrs: {
+                                              color: "red",
+                                              "text-color": "white"
+                                            }
+                                          },
+                                          [_vm._v("Atrasado")]
+                                        )
+                                      : props.item.estado == 0
                                       ? _c(
                                           "v-chip",
                                           {
@@ -1143,11 +1216,7 @@ var render = function() {
                                               "text-color": "white"
                                             }
                                           },
-                                          [
-                                            _vm._v(
-                                              "En\n                                        Proceso"
-                                            )
-                                          ]
+                                          [_vm._v("A tiempo")]
                                         )
                                       : props.item.estado == 1
                                       ? _c(
@@ -1175,20 +1244,11 @@ var render = function() {
                                           },
                                           [
                                             _vm._v(
-                                              "\n                                        En Proceso de subida"
+                                              "\n                                        En proceso de subida"
                                             )
                                           ]
                                         )
-                                      : _c(
-                                          "v-chip",
-                                          {
-                                            attrs: {
-                                              color: "red",
-                                              "text-color": "white"
-                                            }
-                                          },
-                                          [_vm._v("Atrasado")]
-                                        )
+                                      : _vm._e()
                                   ],
                                   1
                                 )
@@ -1199,55 +1259,143 @@ var render = function() {
                           _vm._v(" "),
                           props.item.Permiso == 1 && props.item.estado == 0
                             ? _c(
-                                "td",
-                                { staticClass: "justify-center" },
-                                [
-                                  _c(
-                                    "v-icon",
-                                    {
-                                      staticClass: "mr-2",
-                                      attrs: { large: "" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.editItem(props.item)
+                                "v-tooltip",
+                                {
+                                  attrs: { bottom: "" },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "activator",
+                                        fn: function(ref) {
+                                          var on = ref.on
+                                          return [
+                                            _c(
+                                              "v-icon",
+                                              _vm._g(
+                                                {
+                                                  staticClass: "mr-2",
+                                                  attrs: { large: "" },
+                                                  on: {
+                                                    click: function($event) {
+                                                      return _vm.editItem(
+                                                        props.item
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                on
+                                              ),
+                                              [
+                                                _vm._v(
+                                                  "\n                                    cloud_upload\n                                "
+                                                )
+                                              ]
+                                            )
+                                          ]
                                         }
                                       }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                cloud_upload\n                            "
-                                      )
-                                    ]
+                                    ],
+                                    null,
+                                    true
                                   )
-                                ],
-                                1
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("span", [_vm._v("Subir reporte")])
+                                ]
                               )
                             : _vm._e(),
                           _vm._v(" "),
+                          _c(
+                            "v-tooltip",
+                            {
+                              attrs: { bottom: "" },
+                              scopedSlots: _vm._u(
+                                [
+                                  {
+                                    key: "activator",
+                                    fn: function(ref) {
+                                      var on = ref.on
+                                      return [
+                                        _c(
+                                          "v-icon",
+                                          _vm._g(
+                                            {
+                                              staticClass: "mr-2",
+                                              attrs: { large: "" },
+                                              on: {
+                                                click: function($event) {
+                                                  return _vm.verOrgs(
+                                                    props.item.IdProyecto
+                                                  )
+                                                }
+                                              }
+                                            },
+                                            on
+                                          ),
+                                          [
+                                            _vm._v(
+                                              "\n                                    my_location\n                                "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    }
+                                  }
+                                ],
+                                null,
+                                true
+                              )
+                            },
+                            [_vm._v(" "), _c("span", [_vm._v("Ver ubicación")])]
+                          ),
+                          _vm._v(" "),
                           props.item.estado == 1 && props.item.estado == 1
                             ? _c(
-                                "td",
-                                { staticClass: "justify-center" },
-                                [
-                                  _c(
-                                    "v-icon",
-                                    {
-                                      staticClass: "mr-2",
-                                      attrs: { large: "" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.cancelReport(props.item)
+                                "v-tooltip",
+                                {
+                                  attrs: { bottom: "" },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "activator",
+                                        fn: function(ref) {
+                                          var on = ref.on
+                                          return [
+                                            _c(
+                                              "v-icon",
+                                              _vm._g(
+                                                {
+                                                  staticClass: "mr-2",
+                                                  attrs: { large: "" },
+                                                  on: {
+                                                    click: function($event) {
+                                                      return _vm.cancelReport(
+                                                        props.item
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                on
+                                              ),
+                                              [
+                                                _vm._v(
+                                                  "\n                                    delete\n                                "
+                                                )
+                                              ]
+                                            )
+                                          ]
                                         }
                                       }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                delete\n                            "
-                                      )
-                                    ]
+                                    ],
+                                    null,
+                                    true
                                   )
-                                ],
-                                1
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("span", [_vm._v("Borrar reporte")])
+                                ]
                               )
                             : _vm._e()
                         ]

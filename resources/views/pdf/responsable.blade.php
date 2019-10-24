@@ -94,7 +94,6 @@
                             <th class="th">Realizado</th>
                             <th class="th">Fecha Límite</th>
                             <th class="th">Fecha Realización</th>
-                            <th class="th">Participantes</th>
                         </tr>
                     </thead>
                     <tbody id="cliente">
@@ -105,7 +104,6 @@
                             <td>{{$t->estado?'Sí':'No'}}</td>
                             <td>{{$t->fechaFinal}}</td>
                             <td>{{$t->fechaRealizacion}}</td>
-                            <td>{{$t->participantes}}</td>
                         </tr>
                         @endforeach
                     </tbody>
