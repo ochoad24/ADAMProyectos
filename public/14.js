@@ -497,6 +497,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
 
 
 
@@ -1491,7 +1492,7 @@ var render = function() {
                                                                         "v-flex",
                                                                         {
                                                                           key:
-                                                                            n.url,
+                                                                            n.id,
                                                                           attrs: {
                                                                             xs2:
                                                                               "",
@@ -2307,7 +2308,7 @@ var render = function() {
                                                                     label:
                                                                       "Estadisticas: " +
                                                                       (_vm.verificacion ==
-                                                                      "true"
+                                                                      "1"
                                                                         ? "Mostrar"
                                                                         : "No Mostrar")
                                                                   },

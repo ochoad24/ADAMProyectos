@@ -113,7 +113,7 @@
                                                                 </v-text-field>
                                                             </v-flex>
                                                             <v-layout row wrap>
-                                                                <v-flex v-for="n in fotoShow" :key="n.url" xs2 d-flex>
+                                                                <v-flex v-for="n in fotoShow" :key="n.id" xs2 d-flex>
                                                                     <v-card flat tile class="d-flex">
                                                                         <v-hover>
                                                                             <v-img :src="n.url" :lazy-src="n.url"
@@ -145,6 +145,7 @@
                                                                         </v-hover>
                                                                     </v-card>
                                                                 </v-flex>
+                                                               
                                                             </v-layout>
                                                         </v-layout>
                                                     </v-container>
@@ -235,7 +236,7 @@
 
                                                             </v-flex>
                                                             <v-switch :color="color" v-model="verificacion"
-                                                                :label="`Estadisticas: ${verificacion=='true'?'Mostrar':'No Mostrar'}`">
+                                                                :label="`Estadisticas: ${verificacion=='1'?'Mostrar':'No Mostrar'}`">
                                                             </v-switch>
                                                             <v-flex xs12 sm12 md12 v-if="verificacion">
                                                                 <v-subheader color="black">Configuracion de Estadisticas

@@ -64,7 +64,7 @@
                                         </v-flex>
                                         <v-flex xs12>
                                             <v-text-field v-model="cantidad" label="Total de participantes"
-                                                type="number" v-if="verificacion==true">
+                                                type="number" v-if="verificacion==1">
                                             </v-text-field>
                                         </v-flex>
                                     </v-container>
@@ -148,7 +148,7 @@
         data: () => ({
             index:0,
             item:{},
-            verificacion:'',
+            verificacion:0,
             cantidad: 0,
             id: 0,
             imageName: '',
@@ -388,12 +388,11 @@
             },
             editItem(item) {
                 this.index=this.tareas.indexOf(item);
-                item.estado=2;
+                this.item=item;
                 this.id = item.id;
                 this.getEstadistica(item.id);
-                this.verificacion=item.verificacion;
+                this.verificacion=this.item.verificacion;
                 this.dialog = true;
-
             },
             close() {
                 this.error = 0;
@@ -419,22 +418,22 @@
                     lat = pos.coords.latitude;
                     lng = pos.coords.longitude;
                     var form = new FormData();
-                    form.append('id', this.id);
-                    form.append('descripcion', this.descripcion);
-                    form.append('participantes', this.cantidad);
+                    form.append('id', me.id);
+                    form.append('descripcion', me.descripcion);
+                    form.append('participantes', me.cantidad);
                     form.append('latitud', lat);
                     form.append('longitud', lng);
-                    for (var i = 0; i < this.files.length; i++) {
-                        form.append('fotos[]', this.files[i].file);
+                    for (var i = 0; i < me.files.length; i++) {
+                        form.append('fotos[]', me.files[i].file);
                     }
-                    this.estadisticas.forEach(element => {
+                    me.estadisticas.forEach(element => {
                         var Esta=new Object();
                         Esta.id=element.id.toString();
                         Esta.nombre=element.nombre;
                         Esta.value=element.value;
                         me.estadistica.push(Esta);
                     });
-                    form.append('estadisticas', JSON.stringify(this.estadistica));
+                    form.append('estadisticas', JSON.stringify(me.estadistica));
                     const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
                 
                     axios.post('/Tarea/subir',form, ajuste).then(function (response) {
@@ -451,8 +450,12 @@
                             showConfirmButton: false,
                         });
                         console.log(respuesta);
-                        me.initialize();
-                        me.tareas.splice(me.index,1,me.item);
+                         if ( navigator.onLine ) {
+                            me.initialize();
+                         }else{
+                             me.item.estado=2;
+                             me.tareas.splice(me.index,1,me.item);
+                         }
                         me.close();
                     });
                 });

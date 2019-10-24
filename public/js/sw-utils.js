@@ -50,7 +50,7 @@ function manejoApiMensajes( cacheName, req ) {
                         descripcion:'',
                         participantes:'',
                         estadisticas:'',
-                        fotos:'',
+                        fotos:[],
                         latitud:'',
                         longitud:''
                     }
@@ -69,7 +69,7 @@ function manejoApiMensajes( cacheName, req ) {
                         else if(pair[0]==='estadisticas')
                             myDoc.estadisticas=pair[1];
                         else if(pair[0]==='fotos[]')
-                            myDoc.fotos=pair[1];
+                            myDoc.fotos.push(pair[1]);
                                 
                         else
                             console.log(pair[0]+ ',' + pair[1]);

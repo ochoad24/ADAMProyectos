@@ -57,7 +57,7 @@ class TareaController extends Controller
                 $tarea->idActividad=$request->idActividad;
                 $tarea->verificacion=$request->verificacion;
                 $tarea->save();
-                if($request->verificacion==true){
+                if($request->verificacion==1){
                     foreach($request->estadisticas as $item){
                         $estadistica=new Estadistica;
                         $estadistica->idNombreEstadistica=$item['id'];
@@ -96,7 +96,7 @@ class TareaController extends Controller
             $reporte->descripcion=$request->descripcion;
             $reporte->estado=1;
             $reporte->fechaRealizacion=Carbon::now();
-            if($reporte->verificacion==true){
+            if($reporte->verificacion==1){
                 $reporte->participantes=$request->participantes;
             }
             $reporte->latitud=$request->latitud;
@@ -115,7 +115,7 @@ class TareaController extends Controller
                 $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
                 $proyecto->save();
             }
-            if($reporte->verificacion==true){
+            if($reporte->verificacion==1){
                 $esta=$request->estadisticas;
                 $data= json_decode($esta);
                 foreach($data as $value){
@@ -163,7 +163,7 @@ class TareaController extends Controller
         $tarea=Tarea::select('descripcion','participantes')->where('id',$id)->get();
         $empleado=Encargado::join('users','users.id','=','encargado.idEmpleado')->select(DB::raw("CONCAT(nombre,' ',apellido) as nombre"),'encargado.estado')->where('idTarea',$id)->get();
         $estadistica=Estadistica::join('nombre_estadistica','nombre_estadistica.id','=','estadistica.idNombreEstadistica')->select('nombre_estadistica.nombre','estadistica.valor')->where('idTarea',$id)->get();
-        $fotos=Foto::select(DB::raw("CONCAT('/uploads/',ruta) as url"))->where('idTarea',$id)->get();
+        $fotos=Foto::select(DB::raw("id,CONCAT('/uploads/',ruta) as url"))->where('idTarea',$id)->get();
         return response::json(array('tarea'=>$tarea,'empleado'=>$empleado,'estadistica'=>$estadistica,'foto'=>$fotos));
     }
     public function drop($task){

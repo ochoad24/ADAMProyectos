@@ -33,7 +33,10 @@ function postearMensajes() {
                 form.append('participantes', doc.participantes);
                 form.append('latitud', doc.latitud);
                 form.append('longitud', doc.longitud);
-                form.append('fotos[]', doc.fotos);
+                for (var i = 0; i < doc.fotos.length; i++) {
+                    form.append('fotos[]', doc.fotos[i]);
+                }
+                // form.append('fotos[]', doc.fotos);
                 form.append('estadisticas', doc.estadisticas);
                 const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
                 // const fetchPom=axios.post('/Tarea/subir',form, ajuste).then(function (response) {

@@ -268,7 +268,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         return {
             index: 0,
             item: {},
-            verificacion: '',
+            verificacion: 0,
             cantidad: 0,
             id: 0,
             imageName: '',
@@ -506,10 +506,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         },
         editItem: function editItem(item) {
             this.index = this.tareas.indexOf(item);
-            item.estado = 2;
+            this.item = item;
             this.id = item.id;
             this.getEstadistica(item.id);
-            this.verificacion = item.verificacion;
+            this.verificacion = this.item.verificacion;
             this.dialog = true;
         },
         close: function close() {
@@ -523,8 +523,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.estadistica = [];
         },
         save: function save() {
-            var _this5 = this;
-
             var lat = '';
             var lng = '';
             var me = this;
@@ -537,22 +535,22 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 lat = pos.coords.latitude;
                 lng = pos.coords.longitude;
                 var form = new FormData();
-                form.append('id', _this5.id);
-                form.append('descripcion', _this5.descripcion);
-                form.append('participantes', _this5.cantidad);
+                form.append('id', me.id);
+                form.append('descripcion', me.descripcion);
+                form.append('participantes', me.cantidad);
                 form.append('latitud', lat);
                 form.append('longitud', lng);
-                for (var i = 0; i < _this5.files.length; i++) {
-                    form.append('fotos[]', _this5.files[i].file);
+                for (var i = 0; i < me.files.length; i++) {
+                    form.append('fotos[]', me.files[i].file);
                 }
-                _this5.estadisticas.forEach(function (element) {
+                me.estadisticas.forEach(function (element) {
                     var Esta = new Object();
                     Esta.id = element.id.toString();
                     Esta.nombre = element.nombre;
                     Esta.value = element.value;
                     me.estadistica.push(Esta);
                 });
-                form.append('estadisticas', JSON.stringify(_this5.estadistica));
+                form.append('estadisticas', JSON.stringify(me.estadistica));
                 var ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
 
                 __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/Tarea/subir', form, ajuste).then(function (response) {
@@ -566,8 +564,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         showConfirmButton: false
                     });
                     console.log(respuesta);
-                    me.initialize();
-                    me.tareas.splice(me.index, 1, me.item);
+                    if (navigator.onLine) {
+                        me.initialize();
+                    } else {
+                        me.item.estado = 2;
+                        me.tareas.splice(me.index, 1, me.item);
+                    }
                     me.close();
                 });
             });
@@ -1000,7 +1002,7 @@ var render = function() {
                                       "v-flex",
                                       { attrs: { xs12: "" } },
                                       [
-                                        _vm.verificacion == true
+                                        _vm.verificacion == 1
                                           ? _c("v-text-field", {
                                               attrs: {
                                                 label: "Total de participantes",
