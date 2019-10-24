@@ -166,6 +166,7 @@
         <header>
         
         @endforeach
+        
 <center><img src="../resources/img/adam.jpg" width="180" height="160"></center>
 <hr class="hrt">
 <center><h5>Asociación de Desarrollo Agrícola y Microempresarial</h5>
