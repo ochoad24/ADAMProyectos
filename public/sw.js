@@ -50,7 +50,9 @@ const APP_SHELL_INMUTABLE = [
     '/fonts/vendor/material-design-icons-icondist/MaterialIcons-Regular.woff2?0509ab09c1b0d2200a4135803c91d6ce',
     '/images/logo8.png?18b455a04afa612acc4ac795c286b5b1',
     'js/pouchdb.min.js',
-    'js/axios.min.js'
+    'js/axios.min.js',
+    '/img/login.jpg',
+    '/img/mobile.jpg'
 ];
 
 self.addEventListener('install', e => {
