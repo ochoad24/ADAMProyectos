@@ -456,8 +456,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
         generarReporteProyecto: function generarReporteProyecto(item) {
-            // window.open(window.location.origin + '/proyecto/pdf?id=' + item.IdProyecto + ',' + '_blank');
-
+            window.open(window.location.origin + '/proyecto/pdf?id=' + item.IdProyecto + ',' + '_blank');
         },
         reporteResponsable: function reporteResponsable(item) {
             window.open(window.location.origin + '/User/pdf?id=' + item.id + ',' + '_blank');

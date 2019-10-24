@@ -468,7 +468,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.cantidad = '';
             this.estadistica = [];
 
-            var url = '/Tarea/select/' + this.$store.state.user.id;
+            var url = '/Tarea/select/usuario/' + this.$store.state.user.id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
                 _this2.tareas = response.data;
             }).catch(function (errors) {

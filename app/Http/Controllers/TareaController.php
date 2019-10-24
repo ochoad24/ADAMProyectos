@@ -32,9 +32,17 @@ class TareaController extends Controller
     }
     public function select($usuario){
 
-        return Tarea::join('encargado','encargado.idTarea','=','tarea.id')->where('encargado.idEmpleado',$usuario)
+        $tareas = Tarea::join('encargado','encargado.idTarea','=','tarea.id')->where('encargado.idEmpleado',$usuario)
         ->select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion','encargado.estado as Permiso')
         ->get();
+        foreach ($tareas as $p) {
+            $p->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');
+            $p->fechaFinal = \Carbon\Carbon::parse($p->fechaFinal)->format('d/m/Y');
+            if ($p->fechaRealizacion != null) {
+                $p->fechaRealizacion = \Carbon\Carbon::parse($p->fechaRealizacion)->format('d/m/Y');
+            }
+        }
+        return $tareas;
     }
     public function store(Request $request){
         $comprobacion=false;

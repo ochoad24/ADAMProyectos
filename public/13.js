@@ -470,7 +470,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             }],
             number: 0,
             users: [],
-            tipos: [],
             fechaI: new Date().toISOString().substr(0, 10),
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
@@ -501,7 +500,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             editedIndex: -1,
             editedItem: {
                 id: 0,
-                tipo: '',
                 fechaInicio: '',
                 fechaFinal: '',
                 fechaRealizacion: '',
@@ -605,7 +603,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 console.log(errors);
             });
             this.getActividaes();
-            this.getTipos();
             this.getEstadistica();
             this.getUsuario();
             this.estadistica = this.estadisticas;
@@ -629,20 +626,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 console.log(errors);
             });
         },
-        getTipos: function getTipos() {
+        getUsuario: function getUsuario() {
             var _this4 = this;
 
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/TipoActividad').then(function (response) {
-                _this4.tipos = response.data;
-            }).catch(function (errors) {
-                console.log(errors);
-            });
-        },
-        getUsuario: function getUsuario() {
-            var _this5 = this;
-
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/User/select').then(function (response) {
-                _this5.empleados = response.data;
+                _this4.empleados = response.data;
             }).catch(function (errors) {
                 console.log(errors);
             });
@@ -654,16 +642,16 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.dialog = true;
         },
         watchTask: function watchTask(id) {
-            var _this6 = this;
+            var _this5 = this;
 
             var url = '/Tarea/ver/' + id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
-                _this6.descripcionShow = response.data.tarea[0].descripcion;
-                _this6.empleadoShow = response.data.empleado;
-                _this6.estadisticaShow = response.data.estadistica;
-                _this6.fotoShow = response.data.foto;
-                _this6.cantidadShow = response.data.tarea[0].participantes;
-                _this6.dialog2 = true;
+                _this5.descripcionShow = response.data.tarea[0].descripcion;
+                _this5.empleadoShow = response.data.empleado;
+                _this5.estadisticaShow = response.data.estadistica;
+                _this5.fotoShow = response.data.foto;
+                _this5.cantidadShow = response.data.tarea[0].participantes;
+                _this5.dialog2 = true;
             }).catch(function (errors) {
                 console.log(errors);
             });
@@ -703,13 +691,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             });
         },
         close: function close() {
-            var _this7 = this;
+            var _this6 = this;
 
             this.error = 0;
             this.dialog = false;
             setTimeout(function () {
-                _this7.editedItem = Object.assign({}, _this7.defaultItem);
-                _this7.editedIndex = -1;
+                _this6.editedItem = Object.assign({}, _this6.defaultItem);
+                _this6.editedIndex = -1;
             }, 300);
         },
         close2: function close2() {

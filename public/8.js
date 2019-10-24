@@ -470,6 +470,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -659,6 +667,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     text: 'Error al ingresar proyecto: ' + error.response.data.message
                 });
                 me.close();
+            });
+        },
+        borrarProyecto: function borrarProyecto(proyecto) {
+            var me = this;
+            swal.fire({
+                title: '¿Quieres eliminar este proyecto?',
+                text: "Esta acción no se podrá revertir",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Sí',
+                cancelButtonText: "Cancelar"
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.delete('/proyecto/drop/' + proyecto).then(function (response) {
+                        console.log(response.data);
+                        swal.fire({
+                            type: 'success',
+                            title: 'Proyecto eliminado',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        me.initialize();
+                    }).catch(function (error) {
+                        console.log(error.response.data);
+                        swal.fire({
+                            position: 'top-end',
+                            type: 'error',
+                            title: error.response.data.error,
+                            showConfirmButton: true
+                        });
+                    });
+                }
             });
         },
         editarProyecto: function editarProyecto() {
@@ -2077,6 +2119,53 @@ var render = function() {
                                 [
                                   _vm._v(" "),
                                   _c("span", [_vm._v("Editar proyecto")])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "v-tooltip",
+                                {
+                                  attrs: { bottom: "" },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "activator",
+                                        fn: function(ref) {
+                                          var on = ref.on
+                                          return [
+                                            _c(
+                                              "v-icon",
+                                              _vm._g(
+                                                {
+                                                  staticClass: "mr-2",
+                                                  attrs: { small: "" },
+                                                  on: {
+                                                    click: function($event) {
+                                                      return _vm.borrarProyecto(
+                                                        props.item.IdProyecto
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                on
+                                              ),
+                                              [
+                                                _vm._v(
+                                                  "\n                                        delete\n                                    "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    null,
+                                    true
+                                  )
+                                },
+                                [
+                                  _vm._v(" "),
+                                  _c("span", [_vm._v("Borrar proyecto")])
                                 ]
                               ),
                               _vm._v(" "),

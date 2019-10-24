@@ -7,6 +7,10 @@ use App\Proyecto;
 use App\OrganizacionProyecto;
 use App\Organizacion;
 use App\Actividad;
+use App\Estadistica;
+use App\Encargado;
+use App\Foto;
+use App\Tarea;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 
@@ -22,7 +26,37 @@ class ProyectoController extends Controller
         //Where estado == 1
         return $proyectos;
     }
-
+    public function drop($proyecto) {
+        try{
+            DB::beginTransaction();
+            $proyecto2 = Proyecto::findOrFail($proyecto);
+            $actividades = Actividad::where('actividades.idProyecto', '=', $proyecto)->get();
+            foreach ($actividades as $a) {
+                $tareas = Tarea::where('tarea.idActividad', '=', $a->id)->get();
+                foreach ($tareas as $t) {
+                    $ruta = public_path().'\\uploads\\';
+                    $estadistica=Estadistica::where('idTarea', $t->id)->delete();
+                    $empleado=Encargado::where('idTarea', $t->id)->delete();
+                    $fotos=Foto::where('idTarea', $t->id)->get();
+                    if(!empty($fotos)) {
+                        foreach($fotos as $foto) {
+                            unlink($ruta.$foto->ruta);
+                            $foto->delete();
+                        }
+                    }
+                }
+                $tareas2 = Tarea::where('tarea.idActividad', '=', $a->id)->delete();
+            }
+            $actividades2 = Actividad::where('actividades.idProyecto', '=', $proyecto)->delete();
+            $proyecto2->delete();
+            DB::commit();
+            return 'Se ha eliminado la tarea correctamente';
+        } catch(\Exception $e){
+            DB::rollback();
+            $response['error'] = $e->getMessage();
+            return response()->json($response, 500);
+        }
+    }
     public function index()
     {
         //

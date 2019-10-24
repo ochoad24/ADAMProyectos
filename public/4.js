@@ -1529,7 +1529,7 @@ exports = module.exports = __webpack_require__(18)(false);
 
 
 // module
-exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 6.5%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n    /* background: url('../../img/pr.jpg'); */\n    overflow-y: auto;\n}\n", ""]);
+exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 15%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    overflow-y: auto;\n}\n@media (min-width: 1001px) {\n#bg[data-v-624e51c6] {\n        position: fixed; \n        top: -50%; \n        left: -50%; \n        max-width: 100%; \n        max-height: auto;\n}\n#bg img[data-v-624e51c6] {\n        position: fixed; \n        top: 0; \n        left: 0; \n        right: 0; \n        bottom: 0; \n        margin: auto; \n        max-width: 100%;\n        max-height: auto;\n}\n.image_full[data-v-624e51c6]{\n        display:block;\n}\n.image_mobile[data-v-624e51c6]{\n        display:none;\n}\n}\n@media (max-width: 1000px) and (min-width: 320px){\n.image_full[data-v-624e51c6]{\n        display:none;\n}\n.image_mobile[data-v-624e51c6]{\n        display:block;\n}\n#bg[data-v-624e51c6] {\n    position: fixed; \n    top: -50%; \n    left: -50%; \n    max-width: auto; \n    max-height: 100%;\n}\n#bg img[data-v-624e51c6] {\n        position: fixed; \n        top: 0; \n        left: 0; \n        right: 0; \n        bottom: 0; \n        margin: auto; \n        max-width: auto;\n        max-height: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -1546,6 +1546,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(566);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_form__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(567);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1693,281 +1700,338 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid login" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-lg-4 col-10 col-sm-8 mx-auto login-form" },
-          [
-            _c("h2", { staticClass: "text-center logo_h2" }, [
-              _c("img", {
-                attrs: { src: __webpack_require__(499), alt: "Logo" }
+  return _c("div", [
+    _c("div", { attrs: { id: "bg" } }, [
+      _c(
+        "span",
+        { staticStyle: { display: "inline-block", padding: "2px 3px" } },
+        [
+          _c(
+            "svg",
+            {
+              staticStyle: {
+                height: "12px",
+                width: "auto",
+                position: "relative",
+                "vertical-align": "middle",
+                top: "-2px",
+                fill: "white"
+              },
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                viewBox: "0 0 32 32"
+              }
+            },
+            [
+              _c("title", [_vm._v("unsplash-logo")]),
+              _c("path", {
+                attrs: { d: "M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z" }
               })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-12" },
-                  [
-                    _c(
-                      "vue-form",
-                      {
-                        attrs: { state: _vm.formstate },
-                        on: {
-                          submit: function($event) {
-                            $event.preventDefault()
-                            return _vm.onSubmit($event)
+            ]
+          )
+        ]
+      ),
+      _c(
+        "span",
+        { staticStyle: { display: "inline-block", padding: "2px 3px" } },
+        [_vm._v("Michiel Ton")]
+      ),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "image_full",
+        attrs: { src: "img/login.jpg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "image_mobile",
+        attrs: { src: "img/mobile.jpg", alt: "" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid login" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-lg-4 col-10 col-sm-8 mx-auto login-form" },
+            [
+              _c("h2", { staticClass: "text-center logo_h2" }, [
+                _c("img", {
+                  attrs: { src: __webpack_require__(499), alt: "Logo" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-12" },
+                    [
+                      _c(
+                        "vue-form",
+                        {
+                          attrs: { state: _vm.formstate },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              return _vm.onSubmit($event)
+                            }
                           }
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-sm-12 mt-3 " }, [
-                            _c(
-                              "div",
-                              { staticClass: "form-group" },
-                              [
-                                _c(
-                                  "validate",
-                                  { attrs: { tag: "div" } },
-                                  [
-                                    _c("input", {
-                                      directives: [
-                                        {
-                                          name: "model",
-                                          rawName: "v-model",
-                                          value: _vm.model.email,
-                                          expression: "model.email"
-                                        }
-                                      ],
-                                      staticClass: "form-control",
-                                      attrs: {
-                                        name: "email",
-                                        id: "email",
-                                        type: "email",
-                                        required: "",
-                                        autofocus: "",
-                                        placeholder: "Ingrese su correo"
-                                      },
-                                      domProps: { value: _vm.model.email },
-                                      on: {
-                                        input: function($event) {
-                                          if ($event.target.composing) {
-                                            return
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-sm-12 mt-3 " }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group" },
+                                [
+                                  _c(
+                                    "validate",
+                                    { attrs: { tag: "div" } },
+                                    [
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.model.email,
+                                            expression: "model.email"
                                           }
-                                          _vm.$set(
-                                            _vm.model,
-                                            "email",
-                                            $event.target.value
-                                          )
-                                        }
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "field-messages",
-                                      {
-                                        staticClass: "text-danger",
+                                        ],
+                                        staticClass: "form-control",
                                         attrs: {
                                           name: "email",
-                                          show: "$invalid && $submitted"
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            attrs: { slot: "required" },
-                                            slot: "required"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "El correo electrónico es un campo\n                                                        obligatorio"
+                                          id: "email",
+                                          type: "email",
+                                          required: "",
+                                          autofocus: "",
+                                          placeholder: "Ingrese su correo"
+                                        },
+                                        domProps: { value: _vm.model.email },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.model,
+                                              "email",
+                                              $event.target.value
                                             )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          {
-                                            attrs: { slot: "email" },
-                                            slot: "email"
-                                          },
-                                          [_vm._v("El correo no es válido")]
-                                        )
-                                      ]
-                                    )
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-12" }, [
-                            _c(
-                              "div",
-                              { staticClass: "form-group" },
-                              [
-                                _c(
-                                  "validate",
-                                  { attrs: { tag: "div" } },
-                                  [
-                                    _c("input", {
-                                      directives: [
-                                        {
-                                          name: "model",
-                                          rawName: "v-model",
-                                          value: _vm.model.password,
-                                          expression: "model.password"
-                                        }
-                                      ],
-                                      staticClass: "form-control",
-                                      attrs: {
-                                        name: "password",
-                                        id: "password",
-                                        type: "password",
-                                        required: "",
-                                        placeholder: "Ingrese su contraseña",
-                                        minlength: "6",
-                                        maxlength: "10"
-                                      },
-                                      domProps: { value: _vm.model.password },
-                                      on: {
-                                        input: function($event) {
-                                          if ($event.target.composing) {
-                                            return
                                           }
-                                          _vm.$set(
-                                            _vm.model,
-                                            "password",
-                                            $event.target.value
-                                          )
                                         }
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "field-messages",
-                                      {
-                                        staticClass: "text-danger",
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "field-messages",
+                                        {
+                                          staticClass: "text-danger",
+                                          attrs: {
+                                            name: "email",
+                                            show: "$invalid && $submitted"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "required" },
+                                              slot: "required"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "El correo electrónico es un campo\n                                                            obligatorio"
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "email" },
+                                              slot: "email"
+                                            },
+                                            [_vm._v("El correo no es válido")]
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-12" }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group" },
+                                [
+                                  _c(
+                                    "validate",
+                                    { attrs: { tag: "div" } },
+                                    [
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.model.password,
+                                            expression: "model.password"
+                                          }
+                                        ],
+                                        staticClass: "form-control",
                                         attrs: {
                                           name: "password",
-                                          show: "$invalid && $submitted"
+                                          id: "password",
+                                          type: "password",
+                                          required: "",
+                                          placeholder: "Ingrese su contraseña",
+                                          minlength: "6",
+                                          maxlength: "10"
+                                        },
+                                        domProps: { value: _vm.model.password },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.model,
+                                              "password",
+                                              $event.target.value
+                                            )
+                                          }
                                         }
-                                      },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            attrs: { slot: "required" },
-                                            slot: "required"
-                                          },
-                                          [_vm._v("Se requiere contraseña")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          {
-                                            attrs: { slot: "minlength" },
-                                            slot: "minlength"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "La contraseña debe tener al menos 6\n                                                        caracteres"
-                                            )
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          {
-                                            attrs: { slot: "maxlength" },
-                                            slot: "maxlength"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "La contraseña debe tener como máximo 10\n                                                        caracteres"
-                                            )
-                                          ]
-                                        )
-                                      ]
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "field-messages",
+                                        {
+                                          staticClass: "text-danger",
+                                          attrs: {
+                                            name: "password",
+                                            show: "$invalid && $submitted"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "required" },
+                                              slot: "required"
+                                            },
+                                            [_vm._v("Se requiere contraseña")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "minlength" },
+                                              slot: "minlength"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "La contraseña debe tener al menos 6\n                                                            caractéres"
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "maxlength" },
+                                              slot: "maxlength"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "La contraseña debe tener como máximo 10\n                                                            caractéres"
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-12" }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group checkbox" },
+                                [
+                                  _c("label", { attrs: { for: "remember" } }, [
+                                    _c("input", {
+                                      attrs: {
+                                        type: "checkbox",
+                                        name: "remember",
+                                        id: "remember"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      " \n                                                    Recuerdame\n                                                "
                                     )
-                                  ],
-                                  1
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _vm.has_error && !_vm.success
+                              ? _c(
+                                  "div",
+                                  { staticClass: "alert alert-danger" },
+                                  [
+                                    _vm.error == "login_error"
+                                      ? _c("p", [_vm._v("Validation Errors.")])
+                                      : _c("p", [
+                                          _vm._v(
+                                            "Error, no se puede conectar con estas credenciales."
+                                          )
+                                        ])
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "btn btn-primary btn-block mb-3",
+                              attrs: { type: "submit", value: "Iniciar Sesión" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-sm-12" },
+                              [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "float-left",
+                                    attrs: { to: "/forgot_password", exact: "" }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "¿Olvide mi\n                                                contraseña? "
+                                    )
+                                  ]
                                 )
                               ],
                               1
                             )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-sm-12" }, [
-                            _c("div", { staticClass: "form-group checkbox" }, [
-                              _c("label", { attrs: { for: "remember" } }, [
-                                _c("input", {
-                                  attrs: {
-                                    type: "checkbox",
-                                    name: "remember",
-                                    id: "remember"
-                                  }
-                                }),
-                                _vm._v(
-                                  " \n                                                Recuerdame\n                                            "
-                                )
-                              ])
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _vm.has_error && !_vm.success
-                            ? _c("div", { staticClass: "alert alert-danger" }, [
-                                _vm.error == "login_error"
-                                  ? _c("p", [_vm._v("Validation Errors.")])
-                                  : _c("p", [
-                                      _vm._v(
-                                        "Error, no se puede conectar con estas credenciales."
-                                      )
-                                    ])
-                              ])
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "btn btn-primary btn-block mb-3",
-                            attrs: { type: "submit", value: "Iniciar Sesión" }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "col-sm-12" },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "float-left",
-                                  attrs: { to: "/forgot_password", exact: "" }
-                                },
-                                [
-                                  _vm._v(
-                                    "¿Olvide mi\n                                            contraseña? "
-                                  )
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ])
-                      ]
-                    )
-                  ],
-                  1
-                )
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
               ])
-            ])
-          ]
-        )
+            ]
+          )
+        ])
       ])
     ])
   ])
