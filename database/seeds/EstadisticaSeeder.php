@@ -21,7 +21,7 @@ class EstadisticaSeeder extends Seeder
                 array('nombre' => 'Xinca'),
                 array('nombre' => 'Ladino'),
                 array('nombre' => 'Indigena'),
-                array('nombre' => 'No Indigena'),
+                array('nombre' => 'Otro'),
         ));
     }
 }

@@ -91,6 +91,9 @@
                     <v-btn color="#668c2d" flat @click="Reload">Recargar</v-btn>
                     <v-data-table :headers="headers" :items="tareas" class="elevation-1" :search="search">
                         <template v-slot:items="props">
+                            <td class="text-xs-right">{{ props.item.proyecto }}</td>
+                            <td class="text-xs-right">{{ props.item.actividad }}</td>
+                            <td class="text-xs-right">{{ props.item.observacion }}</td>
                             <td class="text-xs-right">{{ props.item.tarea }}</td>
                             <td class="text-xs-right">{{ props.item.fechaInicio }}</td>
                             <td class="text-xs-right">{{ props.item.fechaFinal }}</td>
@@ -98,27 +101,49 @@
                             <td class="text-xs-right">
                                 <template>
                                     <div class="text-xs-right">
-                                        <v-chip color="amber accent-4" text-color="white" v-if="props.item.estado==0">En
-                                            Proceso</v-chip>
+                                        <v-chip color="red" text-color="white" v-if="Date.parse(props.item.fechaFinal) < fechaActual">Atrasado</v-chip>
+                                        <v-chip color="amber accent-4" text-color="white" v-else-if="props.item.estado==0">A tiempo</v-chip>
                                         <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
                                             Completado</v-chip>
                                         <v-chip color="blue" text-color="white" v-else-if="props.item.estado==2">
-                                            En Proceso de subida</v-chip>
-                                        <v-chip color="red" text-color="white" v-else>Atrasado</v-chip>
+                                            En proceso de subida</v-chip>
                                     </div>
                                 </template>
                             </td>
-
-                            <td class="justify-center" v-if="props.item.Permiso==1 && props.item.estado==0" >
+                            <v-tooltip bottom v-if="props.item.Permiso==1 && props.item.estado==0">
+                                <template v-slot:activator="{ on }">
+                                    <v-icon large class="mr-2" v-on="on" @click="editItem(props.item)">
+                                        cloud_upload
+                                    </v-icon>
+                                </template>
+                                <span>Subir reporte</span>
+                            </v-tooltip>
+                            <v-tooltip bottom>
+                                <template v-slot:activator="{ on }">
+                                    <v-icon large class="mr-2" v-on="on" @click="verOrgs(props.item.IdProyecto)">
+                                        my_location
+                                    </v-icon>
+                                </template>
+                                <span>Ver ubicación</span>
+                            </v-tooltip>
+                            <v-tooltip bottom v-if="props.item.estado==1 && props.item.estado==1">
+                                <template v-slot:activator="{ on }">
+                                    <v-icon large class="mr-2" v-on="on" @click="cancelReport(props.item)">
+                                        delete
+                                    </v-icon>
+                                </template>
+                                <span>Borrar reporte</span>
+                            </v-tooltip>
+                            <!-- <td class="justify-center">
                                 <v-icon large class="mr-2" @click="editItem(props.item)">
-                                    cloud_upload
+                                    map
                                 </v-icon>
                             </td>
                             <td class="justify-center" v-if="props.item.estado==1 && props.item.estado==1">
                                 <v-icon large class="mr-2" @click="cancelReport(props.item)">
                                     delete
                                 </v-icon>
-                            </td>
+                            </td> -->
                         </template>
                         <template v-slot:no-data>
                             <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
@@ -154,6 +179,7 @@
             imageName: '',
             imageUrl: '',
             imageFile: '',
+            fechaActual: new Date(),
             active: false,
             fotos: [],
             files: [],
@@ -173,6 +199,7 @@
             fechaF: new Date().toISOString().substr(0, 10),
             menu: false,
             menu2: false,
+            orgs: [],
             proyecto: {
                 id: 0,
                 nombre: ''
@@ -184,6 +211,9 @@
             error: 0,
             errorMsj: [],
             headers: [
+                { text: 'Proyecto', value: 'proyecto', align: 'right' },
+                { text: 'Actividad', value: 'actividad', align: 'right' },
+                { text: 'Observaciones', value: 'observacion', align: 'right' },
                 { text: 'Nombre', value: 'tarea', align: 'right' },
                 { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' },
                 { text: 'Fecha Final', value: 'fechaFinal', align: 'right' },
@@ -278,6 +308,28 @@
                     }
                 });
             },
+            verOrgs(id) {
+                let me = this;
+                var url = `/proyecto/orgs?id=${id}`;
+                axios.get(url)
+                .then(response => {
+                    var orgs1 = response.data;
+                    var span = document.createElement("span");
+                    orgs1.forEach((item) => {
+                        span.innerHTML=`${item.departamento} - ${item.municipio} - ${item.comunidad} - ${item.nombre}<br>`
+                    });
+                    var texto = span.outerHTML;
+                    swal.fire({
+                        type: 'info',
+                        title: 'Organizaciones',
+                        html: texto,
+                        showConfirmButton: true
+                    });
+                })
+                .catch(errors => {
+                    console.log(errors);
+                });
+            },
             getIndex(list, id) {
                 return list.findIndex((e) => e.id == id)
             },
@@ -356,7 +408,9 @@
                 this.descripcion='';
                 this.cantidad='';
                 this.estadistica=[];
-                var url = '/Tarea/select/usuario/' + this.$store.state.user.id;
+                this.fechaActual = new Date;
+                Date.parse(this.fechaActual);
+                var url = '/tarea/select/usuario/' + this.$store.state.user.id;
                 axios.get(url)
                     .then(response => {
                         this.tareas = response.data;

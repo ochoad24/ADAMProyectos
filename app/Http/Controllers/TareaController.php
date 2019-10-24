@@ -33,7 +33,11 @@ class TareaController extends Controller
     public function select($usuario){
 
         $tareas = Tarea::join('encargado','encargado.idTarea','=','tarea.id')->where('encargado.idEmpleado',$usuario)
-        ->select('tarea.id','tarea.tarea','tarea.fechaInicio','tarea.fechaFinal','tarea.estado','tarea.fechaRealizacion','tarea.verificacion','encargado.estado as Permiso')
+        ->join('actividades', 'actividades.id', '=', 'tarea.idActividad')
+        ->join('proyectos', 'proyectos.IdProyecto', '=', 'actividades.idProyecto')
+        ->select(DB::raw('tarea.id, tarea.tarea, tarea.fechaInicio, tarea.fechaFinal, tarea.estado,
+        tarea.fechaRealizacion, tarea.verificacion, encargado.estado as Permiso, CONCAT(actividades.codigo_actividad, " ", actividades.actividad) as actividad,
+        proyectos.Titulo as proyecto, actividades.descripcion as observacion, proyectos.IdProyecto'))
         ->get();
         foreach ($tareas as $p) {
             $p->fechaInicio = \Carbon\Carbon::parse($p->fechaInicio)->format('d/m/Y');

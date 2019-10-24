@@ -544,6 +544,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 nombre: ''
             },
             actividades: [],
+            fechaActual: new Date(),
             empleado: [],
             empleados: [],
             search: '',
@@ -661,6 +662,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         initialize: function initialize() {
             var _this = this;
 
+            this.fechaActual = new Date();
+            Date.parse(this.fechaActual);
             var url = '/Tarea/' + this.actividad.id;
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(url).then(function (response) {
                 _this.tareas = response.data;
@@ -2868,8 +2871,29 @@ var render = function() {
                                                                 "text-xs-center"
                                                             },
                                                             [
-                                                              props.item
-                                                                .estado == 0
+                                                              Date.parse(
+                                                                props.item
+                                                                  .fechaFinal
+                                                              ) <
+                                                              _vm.fechaActual
+                                                                ? _c(
+                                                                    "v-chip",
+                                                                    {
+                                                                      attrs: {
+                                                                        color:
+                                                                          "red",
+                                                                        "text-color":
+                                                                          "white"
+                                                                      }
+                                                                    },
+                                                                    [
+                                                                      _vm._v(
+                                                                        "Atrasado"
+                                                                      )
+                                                                    ]
+                                                                  )
+                                                                : props.item
+                                                                    .estado == 0
                                                                 ? _c(
                                                                     "v-chip",
                                                                     {
@@ -2882,7 +2906,7 @@ var render = function() {
                                                                     },
                                                                     [
                                                                       _vm._v(
-                                                                        "En\n                                                        Proceso"
+                                                                        "En\n                                                        proceso"
                                                                       )
                                                                     ]
                                                                   )
@@ -2904,22 +2928,7 @@ var render = function() {
                                                                       )
                                                                     ]
                                                                   )
-                                                                : _c(
-                                                                    "v-chip",
-                                                                    {
-                                                                      attrs: {
-                                                                        color:
-                                                                          "red",
-                                                                        "text-color":
-                                                                          "white"
-                                                                      }
-                                                                    },
-                                                                    [
-                                                                      _vm._v(
-                                                                        "Atrasado"
-                                                                      )
-                                                                    ]
-                                                                  )
+                                                                : _vm._e()
                                                             ],
                                                             1
                                                           )
@@ -3040,7 +3049,7 @@ var render = function() {
                                             ],
                                             null,
                                             false,
-                                            1682258343
+                                            485011283
                                           )
                                         })
                                       ],

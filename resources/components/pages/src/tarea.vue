@@ -331,13 +331,13 @@
                                             <td class="text-xs-center">
                                                 <template>
                                                     <div class="text-xs-center">
+                                                        <v-chip color="red" text-color="white" v-if="Date.parse(props.item.fechaFinal) < fechaActual">Atrasado</v-chip>
                                                         <v-chip color="amber accent-4" text-color="white"
-                                                            v-if="props.item.estado==0">En
-                                                            Proceso</v-chip>
+                                                            v-else-if="props.item.estado==0">En
+                                                            proceso</v-chip>
                                                         <v-chip color="green" text-color="white"
                                                             v-else-if="props.item.estado==1">
                                                             Completado</v-chip>
-                                                        <v-chip color="red" text-color="white" v-else>Atrasado</v-chip>
                                                     </div>
                                                 </template>
                                             </td>
@@ -426,6 +426,7 @@
                 nombre: ''
             },
             actividades: [],
+            fechaActual: new Date(),
             empleado: [],
             empleados: [],
             search: '',
@@ -566,6 +567,8 @@
                 return this.error;
             },
             initialize() {
+                this.fechaActual = new Date;
+                Date.parse(this.fechaActual);
                 var url = '/Tarea/' + this.actividad.id;
                 axios.get(url)
                     .then(response => {

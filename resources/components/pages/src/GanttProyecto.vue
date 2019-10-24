@@ -240,19 +240,15 @@
                 .then(function (response) {
                     me.tareas = response.data;
                     me.cargarDatos();
-                    console.log(response.data);
                 })
                 .catch(function (error) {
                     console.log(error.response);
                 });
             },
             cargarDatos() {
-                console.log("Cargar datos");
                 let array1 = this.project;
                 let array2 = this.actividades;
                 let array3 = this.tareas;
-                console.log(array1);
-                console.log(array2);
                 let me = this;
                 array1.forEach((item) => {
                     let task = new Object();

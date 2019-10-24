@@ -9744,18 +9744,14 @@ var options = {
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/proyecto/selecttareas?id=' + id).then(function (response) {
                 me.tareas = response.data;
                 me.cargarDatos();
-                console.log(response.data);
             }).catch(function (error) {
                 console.log(error.response);
             });
         },
         cargarDatos: function cargarDatos() {
-            console.log("Cargar datos");
             var array1 = this.project;
             var array2 = this.actividades;
             var array3 = this.tareas;
-            console.log(array1);
-            console.log(array2);
             var me = this;
             array1.forEach(function (item) {
                 var task = new Object();
