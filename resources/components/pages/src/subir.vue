@@ -101,7 +101,7 @@
                             <td class="text-xs-right">
                                 <template>
                                     <div class="text-xs-right">
-                                        <v-chip color="red" text-color="white" v-if="Date.parse(props.item.fechaFinal) < fechaActual">Atrasado</v-chip>
+                                        <v-chip color="red" text-color="white" v-if="Date.parse(props.item.fechaFinal) < fechaActual && props.item.estado != 1 && props.item.estado != 2">Atrasado</v-chip>
                                         <v-chip color="amber accent-4" text-color="white" v-else-if="props.item.estado==0">A tiempo</v-chip>
                                         <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
                                             Completado</v-chip>

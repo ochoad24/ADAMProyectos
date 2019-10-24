@@ -8,7 +8,7 @@ function guardarMensaje( mensaje ) {
 
         self.registration.sync.register('nuevo-post');
 
-        const newResp = { ok: true,offline:true ,data:'El reporte se subira cuando se tenga internet' };
+        const newResp = { ok: true,offline:true ,data:'Reporte subido exitosamente' };
         return new Response( JSON.stringify(newResp) );
 
     });

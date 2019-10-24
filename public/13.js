@@ -1196,7 +1196,9 @@ var render = function() {
                                   { staticClass: "text-xs-right" },
                                   [
                                     Date.parse(props.item.fechaFinal) <
-                                    _vm.fechaActual
+                                      _vm.fechaActual &&
+                                    props.item.estado != 1 &&
+                                    props.item.estado != 2
                                       ? _c(
                                           "v-chip",
                                           {
