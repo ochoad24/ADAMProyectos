@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([25],{
 
 /***/ 709:
 /***/ (function(module, exports, __webpack_require__) {
@@ -178,10 +178,10 @@ exports.push([module.i, "\nul[data-v-be554f9e] {\n    list-style : none;\n}\n.ta
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 //
 //
 //
@@ -255,6 +255,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
@@ -264,7 +266,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 apellido: '',
                 email: ''
             },
-            password: {
+            pass: {
                 oldpassword: '',
                 newpassword: '',
                 password: ''
@@ -279,7 +281,63 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        editUser: function editUser() {}
+        passwordUsuario: function passwordUsuario() {
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                method: 'post',
+                url: '/EditarUsuario/CambiarContrasena',
+                data: {
+                    id: me.user.id,
+                    password: me.pass.password,
+                    newPassword: me.pass.newpassword
+                }
+            }).then(function (response) {
+                swal.fire({
+                    position: 'top-end',
+                    type: 'success',
+                    title: response.data,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                me.$auth.logout();
+            }).catch(function (error) {
+                swal.fire({
+                    position: 'top-end',
+                    type: 'error',
+                    title: error.response.data.error,
+                    showConfirmButton: true
+                });
+            });
+        },
+        guardarUsuario: function guardarUsuario() {
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default()({
+                method: 'post',
+                url: '/EditarUsuario/CambiarUsuario',
+                data: {
+                    id: me.user.id,
+                    nombre: me.user.nombre,
+                    apellido: me.user.apellido,
+                    email: me.user.email
+                }
+            }).then(function (response) {
+                swal.fire({
+                    position: 'top-end',
+                    type: 'success',
+                    title: response.data,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                me.$auth.logout();
+            }).catch(function (error) {
+                swal.fire({
+                    position: 'top-end',
+                    type: 'error',
+                    title: error.response.data.error,
+                    showConfirmButton: true
+                });
+            });
+        }
     },
     filters: {
         moment: function (_moment) {
@@ -421,7 +479,8 @@ var render = function() {
                                         "v-btn",
                                         {
                                           staticClass: "ma-2",
-                                          attrs: { color: "#668c2d", dark: "" }
+                                          attrs: { color: "#668c2d", dark: "" },
+                                          on: { click: _vm.guardarUsuario }
                                         },
                                         [
                                           _vm._v(
@@ -447,19 +506,18 @@ var render = function() {
                                 [
                                   _c("v-text-field", {
                                     attrs: {
-                                      label: "Contraseña actual",
-                                      maxlength: "50",
-                                      required: "",
-                                      counter: 50
-                                    }
-                                  }),
-                                  _vm._v(" "),
-                                  _c("v-text-field", {
-                                    attrs: {
                                       label: "Nueva Contraseña",
                                       maxlength: "50",
                                       required: "",
-                                      counter: 50
+                                      counter: 50,
+                                      type: "password"
+                                    },
+                                    model: {
+                                      value: _vm.pass.password,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.pass, "password", $$v)
+                                      },
+                                      expression: "pass.password"
                                     }
                                   }),
                                   _vm._v(" "),
@@ -468,7 +526,15 @@ var render = function() {
                                       label: "Confirmar Contraseña",
                                       maxlength: "50",
                                       required: "",
-                                      counter: 50
+                                      counter: 50,
+                                      type: "password"
+                                    },
+                                    model: {
+                                      value: _vm.pass.newpassword,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.pass, "newpassword", $$v)
+                                      },
+                                      expression: "pass.newpassword"
                                     }
                                   }),
                                   _vm._v(" "),
@@ -476,7 +542,8 @@ var render = function() {
                                     "v-btn",
                                     {
                                       staticClass: "ma-2",
-                                      attrs: { color: "#668c2d", dark: "" }
+                                      attrs: { color: "#668c2d", dark: "" },
+                                      on: { click: _vm.passwordUsuario }
                                     },
                                     [
                                       _vm._v(

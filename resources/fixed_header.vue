@@ -26,8 +26,21 @@ export default {
     methods: {
         right_close() {
             this.$store.commit('rightside_bar', "close");
-        }
+        },
+        loadUser(){
+                var Usuario=new Object();
+                Usuario.nombre=this.$auth.user().nombre;
+                Usuario.apellido=this.$auth.user().apellido;
+                Usuario.job=this.$auth.user().role === 1 ? 'Administrador' : 'Técnico';
+                Usuario.role=this.$auth.user().role;
+                Usuario.id=this.$auth.user().id;
+                Usuario.email=this.$auth.user().email;
+                this.$store.commit('changeUser',Usuario);
+            }
     },
+    mounted(){
+        this.loadUser();   
+    }
 }
 </script>
 <style src="./css/custom_css/metisMenu.css"></style>

@@ -182,6 +182,35 @@ class AuthController extends Controller
     {
         return response()->json(['message' => 'Fallido, Token inválido.']);
     }
+    public function ChangePassword(Request $request){
+        $user = User::findOrFail($request->id);
+        if($request->newPassword!=$request->password)
+        {
+            $response['error'] = 'La contraseñas no coinciden.';
+            return response()->json($response, 500);
+        }
+        else{
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return 'Se ha cambiado la contraseña correctamente.';
+        }
+        $response['error'] = 'La contraseña no se ha cambiado.';
+        return response()->json($response, 500); 
+    }
+    public function ChangeUser(Request $request){
+        try{
+            $user = User::findOrFail($request->id);
+            $user->nombre=$request->nombre;
+            $user->apellido=$request->apellido;
+            $user->email=$request->email;
+            $user->save();
+            return 'Se ha cambiado el usuario correctamente.';
+        }catch(\Exception $e){
+            $response['error'] = $e->getMessage();
+            return response()->json($response, 500);
+        }
+    }
+    
     // public function SendMail(){
     //     $data = array('url'=>"http://adam.org.gt/wp-content/uploads/2015/09/logo-header.jpg");
     //     Mail::send('mails.mail', $data, function($message){

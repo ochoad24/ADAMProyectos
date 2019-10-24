@@ -148,6 +148,7 @@
             this.initialize();
         },
         methods: {
+            
             validate() {
                 this.error = 0;
                 this.errorMsj = [];

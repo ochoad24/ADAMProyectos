@@ -38,10 +38,12 @@ let mutations = {
         state.proyecto=id;
     },
     changeUser(state,Usuario){
-        state.user.name=Usuario.name;
+        state.user.nombre=Usuario.nombre;
+        state.user.apellido=Usuario.apellido;
         state.user.job=Usuario.job;
         state.user.role=Usuario.role;
         state.user.id=Usuario.id;
+        state.user.email=Usuario.email; 
     },
     changeNotificacion(state,notificacion){
         state.notificacion=notificacion;

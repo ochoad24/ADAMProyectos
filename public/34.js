@@ -1,4 +1,4 @@
-webpackJsonp([13],{
+webpackJsonp([34],{
 
 /***/ 481:
 /***/ (function(module, exports, __webpack_require__) {
@@ -541,18 +541,15 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/Tarea/subir', form, ajuste).then(function (response) {
                 console.log(response.data);
-                // let respuesta;
-                // if(response.data.offline==true)
-                //     respuesta=response.data.data;
-                // else
-                //     respuesta=response.data;
-                // // swal.fire({
-                // //     position: 'top-end',
-                // //     type: 'success',
-                // //     title: respuesta,
-                // //     showConfirmButton: false,
-                // // });
-                // console.log(respuesta);
+                var respuesta = void 0;
+                if (response.data.offline == true) respuesta = response.data.data;else respuesta = response.data;
+                swal.fire({
+                    position: 'top-end',
+                    type: 'success',
+                    title: respuesta,
+                    showConfirmButton: false
+                });
+                console.log(respuesta);
                 me.initialize();
                 me.close();
             });

@@ -1,14 +1,14 @@
-webpackJsonp([17],{
+webpackJsonp([40],{
 
-/***/ 472:
+/***/ 474:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(44)
 /* script */
-var __vue_script__ = __webpack_require__(622)
+var __vue_script__ = __webpack_require__(628)
 /* template */
-var __vue_template__ = __webpack_require__(623)
+var __vue_template__ = __webpack_require__(629)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -25,7 +25,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/components/pages/src/usuario.vue"
+Component.options.__file = "resources/components/pages/src/organizacion.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -34,9 +34,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2b81a092", Component.options)
+    hotAPI.createRecord("data-v-37061daa", Component.options)
   } else {
-    hotAPI.reload("data-v-2b81a092", Component.options)
+    hotAPI.reload("data-v-37061daa", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48,7 +48,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 622:
+/***/ 628:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57,8 +57,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -147,49 +157,40 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "Usuario",
+    name: "Organizacion",
     data: function data() {
-        return _defineProperty({
+        return {
             dialog: false,
-            idRol: 0,
-            repetir: '',
-            search: '',
-            headers: [{
-                text: 'Id',
-                align: 'left',
-                value: 'id'
-            }, { text: 'Nombre', value: 'nombre' }, { text: 'Apellido', value: 'apellido' }, { text: 'Email', value: 'email' }, { text: 'Rol', value: 'rol' }],
+            ornameRules: [function (v) {
+                return !!v || 'El nombre de la organizacion no puede estar vacio';
+            }, function (v) {
+                return v && v.length <= 149 || 'El titulo del proyecto no puede ser mayor a 150';
+            }],
+            munnameRules: [function (v) {
+                return !!v || 'El nombre del municipio no puede estar vacio';
+            }, function (v) {
+                return v && v.length <= 149 || 'El nombre del municipio no puede ser mayor a 150';
+            }],
             error: 0,
+            select: [],
             errorMsj: [],
-            usuarios: [],
-            roles: [],
-            editedIndex: -1,
-            editedItem: {
-                id: 0,
-                nombre: '',
-                apellido: '',
-                usuario: '',
-                rol: 0
-            },
-            defaultItem: {
-                id: 0,
-                nombre: '',
-                apellido: '',
-                usuario: '',
-                rol: 0
-            }
-        }, 'roles', [{
-            text: 'Admnistrador',
-            value: 0
-        }, {
-            text: 'Técnico',
-            value: 1
-        }]);
+            departamentos: [],
+            search: '',
+            IdOrganizacion: 0,
+            IdDepartamento: -1,
+            editar: 0,
+            headers: [{ text: 'Nombre', align: 'left', value: 'nombre' }, { text: 'Departamento', align: 'right', value: 'departamento' }, { text: 'Municipio', align: 'right', value: 'municipio' }, { text: 'Comunidad', align: 'right', value: 'comunidad' }],
+            municipio: '',
+            nombre: '',
+            comunidad: '',
+            organizaciones: [],
+            editedIndex: -1
+        };
     },
 
     computed: {
         formTitle: function formTitle() {
-            return this.editedIndex === -1 ? 'Nuevo Usuario' : 'Editar Usuario';
+            return this.editar === 0 ? 'Nuevo Proyecto' : 'Editar Proyecto';
         }
     },
 
@@ -198,92 +199,88 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             val || this.close();
         }
     },
-    mounted: function mounted() {
+
+    created: function created() {
+        this.cargaDepartamentos();
         this.initialize();
     },
 
+
     methods: {
+        initialize: function initialize() {
+            this.dialog = false;
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/org').then(function (response) {
+                console.log("busqueda");
+                var respuesta = response.data;
+                me.organizaciones = respuesta;
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        },
+        cargaDepartamentos: function cargaDepartamentos() {
+            var me = this;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/org/dept').then(function (response) {
+                me.departamentos = response.data;
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        },
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre no puede estar vacio');
-
-            if (!this.editedItem.apellido) this.errorMsj.push('El apellido no puede estar vacio');
-
-            if (!this.editedItem.nombre) this.errorMsj.push('El correo no puede estar vacio');
-
-            if (!this.idRol) this.errorMsj.push('Se debe asignar un rol al usuario');
-
-            if (this.errorMsj.length) this.error = 1;
+            if (!this.nombre) this.errorMsj.push('El nombre de la organización no puede estar vacio');
+            if (!this.municipio) this.errorMsj.push('El municipio no puede estar vacío');
+            if (this.select.length > 0) this.errorMsj.push('Por favor seleccione un departamento');
+            if (this.errorMsj.length) this.error = 1;else this.error = 0;
             return this.error;
         },
-        initialize: function initialize() {
-            var _this = this;
-
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/User/load').then(function (response) {
-                _this.usuarios = response.data;
-            }).catch(function (errors) {
-                console.log(errors);
+        registrarOrganizacion: function registrarOrganizacion() {
+            var me = this;
+            if (this.validate() === 1) {
+                return;
+            }
+            this.IdDepartamento = this.select.id;
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('org/registrar', {
+                'nombre': me.nombre,
+                'municipio': me.municipio,
+                'IdDepartamento': me.select.id,
+                'comunidad': me.comunidad
+            }).then(function (response) {
+                console.log(response.data);
+                swal.fire({
+                    type: 'success',
+                    title: 'Organización registrada!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                me.close();
+                me.initialize();
+            }).catch(function (error) {
+                console.log(error.response);
+                swal.fire({
+                    type: 'error',
+                    title: 'Se ha producido un error!',
+                    text: 'Error al registrar organizaci\xF3n: ' + error.response.data.message
+                });
+                me.close();
             });
         },
-        deleteItem: function deleteItem(item) {
+        editarOrganizacion: function editarOrganizacion() {
             var me = this;
-            swal.fire({
-                title: 'Quieres eliminar este Usuario?',
-                text: "No podras revertir la eliminacion!",
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Eliminalo!',
-                cancelButtonText: "Cancelar"
-            }).then(function (result) {
-                if (result.value) {
-                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.delete('/User/' + item.id + '/delete').then(function (response) {
-                        me.initialize();
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: response.data,
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                    }).catch(function (error) {
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'error',
-                            title: error.response.data.error,
-                            showConfirmButton: true
-                        });
-                    });
-                }
-            });
-        },
-        close: function close() {
-            var _this2 = this;
-
-            this.dialog = false;
-            setTimeout(function () {
-                _this2.editedItem = Object.assign({}, _this2.defaultItem);
-                _this2.editedIndex = -1;
-            }, 300);
-        },
-        save: function save() {
-            var me = this;
-            __WEBPACK_IMPORTED_MODULE_1_axios___default()({
-                method: 'post',
-                url: '/User/nuevo',
-                data: {
-                    nombre: me.editedItem.nombre,
-                    apellido: me.editedItem.apellido,
-                    email: me.editedItem.usuario,
-                    role: me.idRol
-                }
+            if (this.validate() === 1) {
+                return;
+            }
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.put('/org/actualizar', {
+                'id': me.IdOrganizacion,
+                'nombre': me.nombre,
+                'municipio': me.municipio,
+                'comunidad': me.comunidad,
+                'IdDepartamento': me.select.id
             }).then(function (response) {
                 swal.fire({
-                    position: 'top-end',
                     type: 'success',
-                    title: response.data,
+                    title: 'Organización editada!',
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -292,21 +289,76 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }).catch(function (error) {
                 console.log(error.response);
                 swal.fire({
-                    position: 'top-end',
                     type: 'error',
-                    title: error.response.data.error,
-                    showConfirmButton: true
+                    title: 'Se ha producido un error!',
+                    text: 'Error al editar organizaci\xF3n: ' + error.response.data.message
                 });
-                me.initialize();
                 me.close();
             });
+        },
+        abrirEditar: function abrirEditar(item) {
+            this.editar = 1;
+            this.IdOrganizacion = item.IdOrganizacion;
+            this.dialog = true;
+            this.nombre = item.nombre;
+            this.comunidad = item.comunidad;
+            this.municipio = item.municipio;
+        },
+        deleteItem: function deleteItem(id) {
+            console.log(id);
+            var me = this;
+            swal.fire({
+                title: '¿Quieres eliminar esta organización?',
+                text: "Esta acción no se podrá revertir",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: "Cancelar"
+            }).then(function (result) {
+                if (result.value) {
+                    __WEBPACK_IMPORTED_MODULE_1_axios___default.a.put('/org/delete', {
+                        'id': id
+                    }).then(function (response) {
+                        console.log(response.data);
+                        swal.fire({
+                            type: 'success',
+                            title: 'Organización Eliminada',
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        me.initialize();
+                    }).catch(function (error) {
+                        console.log('catch encontrado');
+                        console.log(error);
+                        swal.fire({
+                            type: 'error',
+                            title: 'Error al eliminar organizaci\xF3n: ' + error.response.data.message,
+                            showConfirmButton: true
+                        });
+                    });
+                }
+            });
+        },
+        close: function close() {
+            this.dialog = false;
+            this.editar = 0;
+            this.IdDepartamento = 0;
+            this.IdOrganizacion = 0;
+            this.nombre = "";
+            this.municipio = '';
+            this.comunidad = '';
+            this.select = [];
+            this.error = 0;
+            this.errorMsj = [];
         }
     }
 });
 
 /***/ }),
 
-/***/ 623:
+/***/ 629:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -349,12 +401,10 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _c("v-spacer"),
-                    _vm._v(" "),
                     _c(
                       "v-dialog",
                       {
-                        attrs: { "max-width": "600px" },
+                        attrs: { persistent: "", "max-width": "650px" },
                         scopedSlots: _vm._u([
                           {
                             key: "activator",
@@ -366,11 +416,20 @@ var render = function() {
                                   _vm._g(
                                     {
                                       staticClass: "mb-2",
-                                      attrs: { color: "#668c2d", dark: "" }
+                                      attrs: { dark: "", color: "#668c2d" },
+                                      on: {
+                                        click: function($event) {
+                                          _vm.editar = 0
+                                        }
+                                      }
                                     },
                                     on
                                   ),
-                                  [_vm._v("Nuevo Usuario")]
+                                  [
+                                    _vm._v(
+                                      "Agregar\n                                Organización"
+                                    )
+                                  ]
                                 )
                               ]
                             }
@@ -411,7 +470,9 @@ var render = function() {
                                   1
                                 ),
                                 _vm._v(" "),
-                                _c("v-toolbar-title", [_vm._v("Nuevo Usuario")])
+                                _c("v-toolbar-title", [
+                                  _vm._v("Nueva Organizacion")
+                                ])
                               ],
                               1
                             ),
@@ -429,86 +490,23 @@ var render = function() {
                                       [
                                         _c(
                                           "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: { label: "Nombre" },
-                                              model: {
-                                                value: _vm.editedItem.nombre,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "nombre",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression: "editedItem.nombre"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
-                                          [
-                                            _c("v-text-field", {
-                                              attrs: { label: "Apellido" },
-                                              model: {
-                                                value: _vm.editedItem.apellido,
-                                                callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "apellido",
-                                                    $$v
-                                                  )
-                                                },
-                                                expression:
-                                                  "editedItem.apellido"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
+                                          { attrs: { xs12: "" } },
                                           [
                                             _c("v-text-field", {
                                               attrs: {
-                                                type: "email",
-                                                label: "Ingrese su email"
+                                                label:
+                                                  "Nombre de la organización",
+                                                maxlength: "150",
+                                                required: "",
+                                                rules: _vm.ornameRules,
+                                                counter: 150
                                               },
                                               model: {
-                                                value: _vm.editedItem.usuario,
+                                                value: _vm.nombre,
                                                 callback: function($$v) {
-                                                  _vm.$set(
-                                                    _vm.editedItem,
-                                                    "usuario",
-                                                    $$v
-                                                  )
+                                                  _vm.nombre = $$v
                                                 },
-                                                expression: "editedItem.usuario"
+                                                expression: "nombre"
                                               }
                                             })
                                           ],
@@ -517,25 +515,72 @@ var render = function() {
                                         _vm._v(" "),
                                         _c(
                                           "v-flex",
-                                          {
-                                            attrs: {
-                                              xs12: "",
-                                              sm6: "",
-                                              md6: ""
-                                            }
-                                          },
+                                          { attrs: { xs12: "" } },
                                           [
                                             _c("v-select", {
                                               attrs: {
-                                                items: _vm.roles,
-                                                label: "Seleccione un Rol"
+                                                hint:
+                                                  "" + _vm.select.departamento,
+                                                items: _vm.departamentos,
+                                                "item-text": "departamento",
+                                                "item-value": "id",
+                                                label:
+                                                  "Seleccionar departamento",
+                                                "persistent-hint": "",
+                                                "return-object": "",
+                                                "single-line": ""
                                               },
                                               model: {
-                                                value: _vm.idRol,
+                                                value: _vm.select,
                                                 callback: function($$v) {
-                                                  _vm.idRol = $$v
+                                                  _vm.select = $$v
                                                 },
-                                                expression: "idRol"
+                                                expression: "select"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: {
+                                                label:
+                                                  "Municipio de ubucación de la organización",
+                                                maxlength: "150",
+                                                required: "",
+                                                rules: _vm.munnameRules,
+                                                counter: 150
+                                              },
+                                              model: {
+                                                value: _vm.municipio,
+                                                callback: function($$v) {
+                                                  _vm.municipio = $$v
+                                                },
+                                                expression: "municipio"
+                                              }
+                                            })
+                                          ],
+                                          1
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-flex",
+                                          { attrs: { xs12: "" } },
+                                          [
+                                            _c("v-text-field", {
+                                              attrs: {
+                                                label: "Ingrese comunidad"
+                                              },
+                                              model: {
+                                                value: _vm.comunidad,
+                                                callback: function($$v) {
+                                                  _vm.comunidad = $$v
+                                                },
+                                                expression: "comunidad"
                                               }
                                             })
                                           ],
@@ -591,14 +636,39 @@ var render = function() {
                                   [_vm._v("Cancelar")]
                                 ),
                                 _vm._v(" "),
-                                _c(
-                                  "v-btn",
-                                  {
-                                    attrs: { color: "#668c2d", flat: "" },
-                                    on: { click: _vm.save }
-                                  },
-                                  [_vm._v("Guardar")]
-                                )
+                                _vm.editar === 0
+                                  ? _c(
+                                      "v-btn",
+                                      {
+                                        attrs: { color: "#668c2d", flat: "" },
+                                        on: { click: _vm.registrarOrganizacion }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    Guardar"
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.editar === 1
+                                  ? _c(
+                                      "v-btn",
+                                      {
+                                        attrs: { color: "#668c2d", flat: "" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.editarOrganizacion()
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                    Guardar"
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e()
                               ],
                               1
                             )
@@ -616,7 +686,7 @@ var render = function() {
                   staticClass: "elevation-1",
                   attrs: {
                     headers: _vm.headers,
-                    items: _vm.usuarios,
+                    items: _vm.organizaciones,
                     search: _vm.search
                   },
                   scopedSlots: _vm._u([
@@ -624,43 +694,51 @@ var render = function() {
                       key: "items",
                       fn: function(props) {
                         return [
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.id))
+                          _c("td", [_vm._v(_vm._s(props.item.nombre))]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.departamento))
                           ]),
                           _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.nombre))
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.municipio))
                           ]),
                           _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.apellido))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(_vm._s(props.item.email))
-                          ]),
-                          _vm._v(" "),
-                          _c("td", { staticClass: "text-xs-left" }, [
-                            _vm._v(
-                              _vm._s(
-                                props.item.role != 1
-                                  ? "Admnistrador"
-                                  : "Técnico"
-                              )
-                            )
+                          _c("td", { staticClass: "text-xs-right" }, [
+                            _vm._v(_vm._s(props.item.comunidad))
                           ]),
                           _vm._v(" "),
                           _c(
                             "td",
-                            { staticClass: "justify-center" },
+                            { staticClass: "justify-center layout px-0" },
                             [
+                              _c(
+                                "v-icon",
+                                {
+                                  staticClass: "mr-2",
+                                  attrs: { small: "" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.abrirEditar(props.item)
+                                    }
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                edit\n                            "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
                               _c(
                                 "v-icon",
                                 {
                                   attrs: { small: "" },
                                   on: {
                                     click: function($event) {
-                                      return _vm.deleteItem(props.item)
+                                      return _vm.deleteItem(
+                                        props.item.IdOrganizacion
+                                      )
                                     }
                                   }
                                 },
@@ -736,7 +814,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-2b81a092", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-37061daa", module.exports)
   }
 }
 

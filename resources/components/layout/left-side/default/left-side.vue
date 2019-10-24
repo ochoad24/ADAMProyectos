@@ -16,8 +16,10 @@
                  
                     <br>
                     <center> <img src="/images/adam.jpg" width="100" height="100"></center>
-                    <br>  
+                    <template v-if="this.$store.state.user.role==0">
+                        <br>  
                        <center> <h4 style="color: #668C2D" v-text="this.$store.state.proyecto.nombre===''?'Proyecto: N/S':'Proyecto: '+this.$store.state.proyecto.nombre"></h4></center>
+                    </template>
                    <center><hr class="hrt"></center>
                    <br>
         

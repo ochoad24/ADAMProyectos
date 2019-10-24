@@ -424,18 +424,18 @@
                 
                 axios.post('/Tarea/subir',form, ajuste).then(function (response) {
                     console.log(response.data);
-                    // let respuesta;
-                    // if(response.data.offline==true)
-                    //     respuesta=response.data.data;
-                    // else
-                    //     respuesta=response.data;
-                    // // swal.fire({
-                    // //     position: 'top-end',
-                    // //     type: 'success',
-                    // //     title: respuesta,
-                    // //     showConfirmButton: false,
-                    // // });
-                    // console.log(respuesta);
+                    let respuesta;
+                    if(response.data.offline==true)
+                        respuesta=response.data.data;
+                    else
+                        respuesta=response.data;
+                    swal.fire({
+                        position: 'top-end',
+                        type: 'success',
+                        title: respuesta,
+                        showConfirmButton: false,
+                    });
+                    console.log(respuesta);
                     me.initialize();
                     me.close();
                 });

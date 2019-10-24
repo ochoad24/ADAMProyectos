@@ -114,12 +114,13 @@
                             // const redirectTo = 'dashboard'
                             // this.$router.push({ name: redirectTo })
                             var Usuario=new Object();
-                            Usuario.name=this.$auth.user().nombre+' '+this.$auth.user().apellido;
-                            Usuario.job=this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
+                            Usuario.nombre=this.$auth.user().nombre;
+                            Usuario.apellido=this.$auth.user().apellido;
+                            Usuario.job=this.$auth.user().role === 1 ? 'Administrador' : 'Técnico';
                             Usuario.role=this.$auth.user().role;
                             Usuario.id=this.$auth.user().id;
+                            Usuario.email=this.$auth.user().email;
                             this.$store.commit('changeUser',Usuario);
-                            console.log(Usuario);
                             window.location.href="/#/";
                         },
                         error: function () {
@@ -151,8 +152,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        /* background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%); */
-        background: url('../../img/LoginBackgroud.jpg');
+        background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);
+        /* background: url('../../img/LoginBackgroud.jpg'); */
         overflow-y: auto;
     }
 </style>

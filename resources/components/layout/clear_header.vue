@@ -18,9 +18,10 @@
                     <a href="javascript:void(0)" class="navbar-btn sidebar-toggle" @click="toggle_left" role="button">
                         <i class="fa fa-fw fa-bars"></i>
                     </a>
+                    <template v-if="this.$store.state.user.role==0">
                     <v-dialog v-model="dialog" max-width="600px">
                         <template v-slot:activator="{ on }">
-                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-database" v-on="on"></i>
+                            <i class="navbar-btn sidebar-toggle fa fa-fw fa-arrow-down" v-on="on"></i>
                         </template>
                         <v-card>
                             <v-card-title  style="background-color:#668c2d">
@@ -41,7 +42,7 @@
                             </v-card-actions>
                         </v-card>
                     </v-dialog>
-                    
+                    </template>
                 </div>
             </div>
           
@@ -56,19 +57,19 @@
                             <img :src="this.$store.state.user.picture" width="35"
                                 class="rounded-circle img-responsive float-left" height="35" alt="User Image">
                             <span class="user_name_max">
-                                {{ this.$store.state.user.name }}
+                                {{ this.$store.state.user.nombre +' '+ this.$store.state.user.apellido }}
                             </span>
                         </a>
                     </template>
                     <div class="dropdown-profile">
                         <li class="user-header">
                             <img :src="this.$store.state.user.picture" class="rounded-circle" alt="User Image">
-                            <p class="user_name_max" v-text="this.$store.state.user.name"></p>
+                            <p class="user_name_max" v-text="this.$store.state.user.nombre +' '+this.$store.state.user.apellido"></p>
                         </li>
                         <!-- Menu Body -->
                         <b-dropdown-item>
-                            <router-link to="/user_profile" exact>
-                                <i class="fa fa-fw ti-user"></i> My Profile
+                            <router-link to="/EditarPerfil" exact>
+                                <i class="fa fa-fw ti-user"></i> Mi Perfil
                             </router-link>
                         </b-dropdown-item>
                       
@@ -146,7 +147,8 @@
             }
         },
         methods: {
-            //Enable sidebar toggle
+            
+            //Enable sidebar toggle\
             close(){
               this.dialog=false;  
             },

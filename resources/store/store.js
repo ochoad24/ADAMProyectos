@@ -11,11 +11,13 @@ const store = new Vuex.Store({
         right_open: false,
         preloader: true,
         user: {
-            name: "Daniel Ochoa",
+            nombre: "Daniel",
+            apellido:"Ochoa",
             picture: require('../img/authors/man.png'),
             job: "Administrador",
             role:0,
-            id:0
+            id:0,
+            email:"",
         },
         proyecto:{
             id:0,

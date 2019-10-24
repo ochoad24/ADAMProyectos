@@ -20,6 +20,20 @@ const routes = [{
             }
         },
         {
+            path: 'EditarPerfil',
+            component: resolve => require(['./components/pages/user_profile'], resolve),
+            meta: {
+                title: 'Editar Pefil',
+                breadcrumb: [{
+                    html: '<i class="ti-home"></i> Inicio',
+                    href: '#/',
+                }, {
+                    html: 'Editar Perfil',
+                    href: '#/EditarPerfil'
+                }]
+            }
+        },
+        {
             path: 'Usuarios',
             component: resolve => require(['./components/pages/src/usuario.vue'], resolve),
             meta: {
@@ -213,7 +227,7 @@ const routes = [{
                     href: '#/GanttProyecto'
                 }]
             }
-        }
+        },
     ]
 }, {
     path: '/500',

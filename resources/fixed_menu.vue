@@ -25,7 +25,7 @@
         methods: {
             right_close() {
                 this.$store.commit('rightside_bar', "close");
-            }
+            },
         },
         mounted() {
             window.onscroll = function(event){
@@ -41,7 +41,7 @@
                 }
 
             }
-        }
+        },
     }
 </script>
 <style src="./css/custom_css/metisMenu.css"></style>
