@@ -1,7 +1,7 @@
-importScripts('js/pouchdb.min.js')
-importScripts('js/axios.min.js')
-importScripts('js/sw-db.js');
-importScripts('js/sw-utils.js');
+importScripts('/js/pouchdb.min.js')
+importScripts('/js/axios.min.js')
+importScripts('/js/sw-db.js');
+importScripts('/js/sw-utils.js');
 
 const STATIC_CACHE    = 'static-v3';
 const DYNAMIC_CACHE   = 'dynamic-v3';
@@ -9,9 +9,9 @@ const INMUTABLE_CACHE = 'inmutable-v3';
 
 const APP_SHELL = [
     '/',
-    'js/main.js',
-    'js/sw-utils.js',
-    'js/sw-db.js',
+    '/js/main.js',
+    '/js/sw-utils.js',
+    '/js/sw-db.js',
     '/0.js',
     '/1.js',
     '/2.js',
@@ -49,8 +49,8 @@ const APP_SHELL_INMUTABLE = [
     '/images/avatar7.jpg?ac60ef718e8f9765886e30ee907fea17',
     '/fonts/vendor/material-design-icons-icondist/MaterialIcons-Regular.woff2?0509ab09c1b0d2200a4135803c91d6ce',
     '/images/logo8.png?18b455a04afa612acc4ac795c286b5b1',
-    'js/pouchdb.min.js',
-    'js/axios.min.js',
+    '/js/pouchdb.min.js',
+    '/js/axios.min.js',
     '/img/login.jpg',
     '/img/mobile.jpg'
 ];
