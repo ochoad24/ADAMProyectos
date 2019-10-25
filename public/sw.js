@@ -1,5 +1,4 @@
 importScripts('/js/pouchdb.min.js')
-importScripts('/js/axios.min.js')
 importScripts('/js/sw-db.js');
 importScripts('/js/sw-utils.js');
 
@@ -32,6 +31,7 @@ const APP_SHELL = [
     '/17.js',
     '/18.js',
     '/19.js',
+    '/20.js'
 
 ];
 const APP_SHELL_INMUTABLE = [
@@ -50,7 +50,6 @@ const APP_SHELL_INMUTABLE = [
     '/fonts/vendor/material-design-icons-icondist/MaterialIcons-Regular.woff2?0509ab09c1b0d2200a4135803c91d6ce',
     '/images/logo8.png?18b455a04afa612acc4ac795c286b5b1',
     '/js/pouchdb.min.js',
-    '/js/axios.min.js',
     '/img/login.jpg',
     '/img/mobile.jpg'
 ];
