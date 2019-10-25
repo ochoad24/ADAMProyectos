@@ -8745,16 +8745,16 @@ var defaultStyle = {
 };
 var defaultOptions = {
   title: {
-    label: "gantt-elastic",
+    label: "",
     html: false
   },
   locale: {
-    Now: "Now",
-    "X-Scale": "Zoom-X",
-    "Y-Scale": "Zoom-Y",
-    "Task list width": "Task list",
-    "Before/After": "Expand",
-    "Display task list": "Show task list"
+    Now: "Ahora",
+    "X-Scale": "Zoom fechas",
+    "Y-Scale": "Ampliar Y",
+    "Task list width": "Ampliar X",
+    "Before/After": "Alejar",
+    "Display task list": "Ocultar"
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({

@@ -34,12 +34,13 @@ use Illuminate\Http\Request;
             // handle reset password form process
             Route::post('reset/password', 'AuthController@callResetPassword');
             
+            Route::post('logout', 'AuthController@logout');
             // Below mention routes are available only for the authenticated users.
             Route::middleware('auth:api')->group(function () {
                 // Get user info
                 Route::get('user', 'AuthController@user');
                 // Logout user from application
-                Route::post('logout', 'AuthController@logout');
+                
             });
         });
         
