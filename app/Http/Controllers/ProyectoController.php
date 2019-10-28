@@ -34,7 +34,7 @@ class ProyectoController extends Controller
             foreach ($actividades as $a) {
                 $tareas = Tarea::where('tarea.idActividad', '=', $a->id)->get();
                 foreach ($tareas as $t) {
-                    $ruta = public_path().'\\uploads\\';
+                    $ruta = public_path().'/uploads/';
                     $estadistica=Estadistica::where('idTarea', $t->id)->delete();
                     $empleado=Encargado::where('idTarea', $t->id)->delete();
                     $fotos=Foto::where('idTarea', $t->id)->get();

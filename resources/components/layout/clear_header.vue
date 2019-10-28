@@ -6,7 +6,7 @@
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 <!-- <img :src='require("../../img/logo7.png")' alt="logo"/> -->
               
-                <img :src='require("../../img/logo10.png")' alt="logo"/>
+                <img :src='require("../../img/logo5.png")' alt="logo"/>
                 <!-- <h1 class="text-white">ADAM</h1> -->
             </router-link>
                

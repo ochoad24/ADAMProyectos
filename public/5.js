@@ -1,1 +1,2051 @@
-webpackJsonp([5],{474:function(t,a){t.exports="/images/logo8.png?18b455a04afa612acc4ac795c286b5b1"},540:function(t,a,e){(function(a){var e;e=function(){"use strict";var t=/^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i,e=/^(http\:\/\/|https\:\/\/)(.{4,})$/,o=function(a,e,o){return t.test(a)};o._allowNulls=!0;var i=function(t,a,e){return!isNaN(t)};i._allowNulls=!0;var n=function(t,a,o){return e.test(t)};n._allowNulls=!0;var r={validators:{email:o,number:i,url:n,required:function(t,a,e){return!1===a||(0===t||(!(!(e.data.attrs&&void 0!==e.data.attrs.bool||e.componentOptions&&e.componentOptions.propsData&&void 0!==e.componentOptions.propsData.bool)||!1!==t)||(Array.isArray(t)?!!t.length:!!t)))},minlength:function(t,a){return t.length>=a},maxlength:function(t,a){return a>=t.length},pattern:function(t,a){return new RegExp("^"+a+"$").test(t)},min:function(t,a,e){return"number"==(e.data.attrs.type||"").toLowerCase()?+t>=+a:t>=a},max:function(t,a,e){return"number"==(e.data.attrs.type||"").toLowerCase()?+a>=+t:a>=t}},formComponent:"vueForm",formTag:"form",messagesComponent:"fieldMessages",messagesTag:"div",showMessages:"",validateComponent:"validate",validateTag:"div",fieldComponent:"field",fieldTag:"div",formClasses:{dirty:"vf-form-dirty",pristine:"vf-form-pristine",valid:"vf-form-valid",invalid:"vf-form-invalid",touched:"vf-form-touched",untouched:"vf-form-untouched",focused:"vf-form-focused",submitted:"vf-form-submitted",pending:"vf-form-pending"},validateClasses:{dirty:"vf-field-dirty",pristine:"vf-field-pristine",valid:"vf-field-valid",invalid:"vf-field-invalid",touched:"vf-field-touched",untouched:"vf-field-untouched",focused:"vf-field-focused",submitted:"vf-field-submitted",pending:"vf-field-pending"},inputClasses:{dirty:"vf-dirty",pristine:"vf-pristine",valid:"vf-valid",invalid:"vf-invalid",touched:"vf-touched",untouched:"vf-untouched",focused:"vf-focused",submitted:"vf-submitted",pending:"vf-pending"},Promise:"function"==typeof Promise?Promise:null},s=function(t,a){if(!(t instanceof a))throw new TypeError("Cannot call a class as a function")},d=function(){function t(t,a){for(var e=0;e<a.length;e++){var o=a[e];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,o.key,o)}}return function(a,e,o){return e&&t(a.prototype,e),o&&t(a,o),a}}(),l=function(t,a,e){return a in t?Object.defineProperty(t,a,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[a]=e,t},c=function(t,a){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!a||"object"!=typeof a&&"function"!=typeof a?t:a};function u(t,a){var e;return l(e={},t.dirty,a.$dirty),l(e,t.pristine,a.$pristine),l(e,t.valid,a.$valid),l(e,t.invalid,a.$invalid),l(e,t.touched,a.$touched),l(e,t.untouched,a.$untouched),l(e,t.focused,a.$focused),l(e,t.pending,a.$pending),l(e,t.submitted,a.$submitted),e}function f(t){return t.model?t.model.value:t.directives.filter(function(t){return"model"===t.name})[0].value}function m(t,a){var e={vModel:[],label:null,messages:null};if(!t)return e;return function t(o){for(var i=0;i<o.length;i++){var n=o[i];n.componentOptions&&n.componentOptions.tag===h(a.messagesComponent)&&(e.messages=n),"label"!==n.tag||e.label||(e.label=n),n.data&&(n.data.model?e.vModel.push(n):n.data.directives&&n.data.directives.filter(function(t){return"model"===t.name}).length&&e.vModel.push(n)),n.children?t(n.children):n.componentOptions&&n.componentOptions.children&&t(n.componentOptions.children)}}(t),e}function v(t){return t.data&&t.data.attrs&&t.data.attrs.name?t.data.attrs.name:t.componentOptions&&t.componentOptions.propsData&&t.componentOptions.propsData.name?t.componentOptions.propsData.name:void 0}var p=/([^-])([A-Z])/g;function h(t){return t.replace(p,"$1-$2").replace(p,"$1-$2").toLowerCase()}function b(){return Math.random().toString(36).substr(2,10)}var g="VueFormProviderConfig"+b(),_="VueFormProviderState"+b(),$="VueFormProviderParentForm"+b(),y=Object.prototype.hasOwnProperty,w=Object.prototype.toString,x=Object.defineProperty,C=Object.getOwnPropertyDescriptor,O=function(t){return"function"==typeof Array.isArray?Array.isArray(t):"[object Array]"===w.call(t)},k=function(t){if(!t||"[object Object]"!==w.call(t))return!1;var a,e=y.call(t,"constructor"),o=t.constructor&&t.constructor.prototype&&y.call(t.constructor.prototype,"isPrototypeOf");if(t.constructor&&!e&&!o)return!1;for(a in t);return void 0===a||y.call(t,a)},F=function(t,a){x&&"__proto__"===a.name?x(t,a.name,{enumerable:!0,configurable:!0,value:a.newValue,writable:!0}):t[a.name]=a.newValue},j=function(t,a){if("__proto__"===a){if(!y.call(t,a))return;if(C)return C(t,a).value}return t[a]},S=function t(){var a,e,o,i,n,r,s=arguments[0],d=1,l=arguments.length,c=!1;for("boolean"==typeof s&&(c=s,s=arguments[1]||{},d=2),(null==s||"object"!=typeof s&&"function"!=typeof s)&&(s={});d<l;++d)if(null!=(a=arguments[d]))for(e in a)o=j(s,e),s!==(i=j(a,e))&&(c&&i&&(k(i)||(n=O(i)))?(n?(n=!1,r=o&&O(o)?o:[]):r=o&&k(o)?o:{},F(s,{name:e,newValue:t(c,r,i)})):void 0!==i&&F(s,{name:e,newValue:i}));return s},V={render:function(t){var a=this,e={};return"undefined"!=typeof window&&(e.novalidate=""),t(this.tag||this.vueFormConfig.formTag,{on:{submit:function(t){a.state.$pending?(t.preventDefault(),a.vueFormConfig.Promise.all(a.promises).then(function(){a.state._submit(),a.$emit("submit",t),a.promises=[]})):(a.state._submit(),a.$emit("submit",t))},reset:function(t){a.state._reset(),a.$emit("reset",t)}},class:this.className,attrs:e},[this.$slots.default])},props:{state:{type:Object,required:!0},tag:String,showMessages:String},inject:{vueFormConfig:g},provide:function(){var t;return l(t={},_,this.state),l(t,$,this),t},data:function(){return{promises:[]}},created:function(){var t=this;if(this.state){var a={},e=this.state,o={$dirty:!1,$pristine:!0,$valid:!0,$invalid:!1,$submitted:!1,$touched:!1,$untouched:!0,$focused:!1,$pending:!1,$error:{},$submittedState:{},_id:"",_submit:function(){t.state.$submitted=!0,t.state._cloneState()},_cloneState:function(){var a=JSON.parse(JSON.stringify(e));delete a.$submittedState,Object.keys(a).forEach(function(e){t.$set(t.state.$submittedState,e,a[e])})},_addControl:function(o){a[o.$name]=o,t.$set(e,o.$name,o)},_removeControl:function(e){delete a[e.$name],t.$delete(t.state,e.$name),t.$delete(t.state.$error,e.$name)},_validate:function(){Object.keys(a).forEach(function(t){a[t]._validate()})},_reset:function(){e.$submitted=!1,e.$pending=!1,e.$submittedState={},Object.keys(a).forEach(function(t){var e=a[t];e._hasFocused=!1,e._setUntouched(),e._setPristine(),e.$submitted=!1,e.$pending=!1})}};Object.keys(o).forEach(function(a){t.$set(t.state,a,o[a])}),this.$watch("state",function(){var o=!1,i=!0,n=!1,r=!1,s=!1;Object.keys(a).forEach(function(d){var l=a[d];l.$submitted=e.$submitted,l.$dirty&&(o=!0),l.$touched&&(n=!0),l.$focused&&(r=!0),l.$pending&&(s=!0),l.$valid?t.$delete(e.$error,l.$name):(i=!1,t.$set(e.$error,l.$name,l))}),e.$dirty=o,e.$pristine=!o,e.$touched=n,e.$untouched=!n,e.$focused=r,e.$valid=i,e.$invalid=!i,e.$pending=s},{deep:!0,immediate:!0})}},computed:{className:function(){return u(this.vueFormConfig.formClasses,this.state)}},methods:{reset:function(){this.state._reset()},validate:function(){this.state._validate()}}},E="undefined"!=typeof window?window:void 0!==a?a:"undefined"!=typeof self?self:{};var N,P=(function(t){(function(){var a={}.hasOwnProperty,e=[].slice;t.exports=function(t,o){var i,n,r,s;for(i in n=[],s=[],o)a.call(o,i)&&(r=o[i],"this"!==i&&(n.push(i),s.push(r)));return Function.apply(null,e.call(n).concat(["return eval("+JSON.stringify(t)+")"])).apply(o.this,s)}}).call(E)}(N={exports:{}},N.exports),N.exports);function D(t){if(t)for(var a=0;a<t.length;a++){if("label"===t[a].tag)return t[a];if(t[a].children)return D(t[a].children)}}var L={inject:{vueFormConfig:g,vueFormState:_,vueFormParentForm:$},render:function(t){var a=this,e=[],o=this.formstate[this.fieldname];if(o&&o.$error&&this.isShown&&(Object.keys(o.$error).forEach(function(t){if(a.$slots[t]||a.$scopedSlots[t]){var i=a.$slots[t]||a.$scopedSlots[t](o);if(a.autoLabel){var n=D(i);n&&(n.data=n.data||{},n.data.attrs=n.data.attrs||{},n.data.attrs.for=o._id)}e.push(i)}}),!e.length&&o.$valid&&(this.$slots.default||this.$scopedSlots.default))){var i=this.$slots.default||this.$scopedSlots.default(o);if(this.autoLabel){var n=D(i);n&&(n.data=n.data||{},n.data.attrs=n.data.attrs||{},n.data.attrs.for=o._id)}e.push(i)}return t(this.tag||this.vueFormConfig.messagesTag,e)},props:{state:Object,name:String,show:{type:String,default:""},tag:{type:String},autoLabel:Boolean},data:function(){return{formstate:null,fieldname:""}},created:function(){this.fieldname=this.name,this.formstate=this.state||this.vueFormState},computed:{isShown:function(){var t=this.formstate[this.fieldname],a=this.show||this.vueFormParentForm.showMessages||this.vueFormConfig.showMessages;return!a||!t||P(a,t)}}},M={render:function(t){var a=this,e=m(this.$slots.default,this.vueFormConfig),o=e.vModel,i={for:null};if(o.length){if(this.name=v(o[0]),e.messages&&this.$nextTick(function(){var t=e.messages.componentInstance;t&&(t.fieldname=t.fieldname||a.name)}),this.autoLabel){var n=o[0].data.attrs.id||this.fieldstate._id;this.fieldstate._id=n,o[0].data.attrs.id=n,e.label?(e.label.data=e.label.data||{},e.label.data.attrs=e.label.data.attrs||{},e.label.data.attrs.for=n):"label"===this.tag&&(i.for=n)}o.forEach(function(t){t.data.directives||(t.data.directives=[]),t.data.directives.push({name:"vue-form-validator",value:{fieldstate:a.fieldstate,config:a.vueFormConfig}}),t.data.attrs["vue-form-validator"]="",t.data.attrs.debounce=a.debounce})}return t(this.tag||this.vueFormConfig.validateTag,{class:this.className,attrs:i},this.$slots.default)},props:{state:Object,custom:null,autoLabel:Boolean,tag:{type:String},debounce:Number},inject:{vueFormConfig:g,vueFormState:_,vueFormParentForm:$},data:function(){return{name:"",formstate:null,fieldstate:{}}},methods:{getClasses:function(t){var a=this.fieldstate;return Object.keys(a.$error).reduce(function(a,e){return a[t.invalid+"-"+h(e)]=!0,a},u(t,a))}},computed:{className:function(){return this.getClasses(this.vueFormConfig.validateClasses)},inputClassName:function(){return this.getClasses(this.vueFormConfig.inputClasses)}},mounted:function(){var t=this;this.fieldstate.$name=this.name,this.formstate._addControl(this.fieldstate);var a=this.$el.querySelectorAll("[vue-form-validator]");this.$watch("inputClassName",function(e,o){for(var i,n=void 0,r=function(t,a){o&&Object.keys(o).filter(function(t){return o[t]}).forEach(function(t){return function(t,a){t.classList?t.classList.remove(a):t.className=t.className.replace(new RegExp("(^|\\b)"+a.split(" ").join("|")+"(\\b|$)","gi")," ")}(a,t)}),n=[],Object.keys(e).filter(function(t){return e[t]}).forEach(function(t){n.push(t),function(t,a){t.classList?t.classList.add(a):t.className+=" "+a}(a,t)})},s=0;i=a[s++];)r(0,i);t.fieldstate._className=n},{deep:!0,immediate:!0}),this.$watch("name",function(a,e){t.formstate._removeControl(t.fieldstate),t.fieldstate.$name=a,t.formstate._addControl(t.fieldstate)})},created:function(){var t=this;this.formstate=this.state||this.vueFormState;var a=this,e=[],o=void 0;this.fieldstate={$name:"",$dirty:!1,$pristine:!0,$valid:!0,$invalid:!1,$touched:!1,$untouched:!0,$focused:!1,$pending:!1,$submitted:!1,$error:{},$attrs:{},_className:null,_id:"vf"+b(),_setValidatorValidity:function(t,e){e?a.$delete(this.$error,t):a.$set(this.$error,t,!0)},_setValidity:function(t){this.$valid=t,this.$invalid=!t},_setDirty:function(){this.$dirty=!0,this.$pristine=!1},_setPristine:function(){this.$dirty=!1,this.$pristine=!0},_setTouched:function(){this.$touched=!0,this.$untouched=!1},_setUntouched:function(){this.$touched=!1,this.$untouched=!0},_setFocused:function(t){this.$focused="boolean"==typeof t&&t,this.$focused?this._setHasFocused():this._setTouched()},_setHasFocused:function(){this._hasFocused=!0},_hasFocused:!1,_validators:{},_validate:function(t){var i=this;t?o=t:t=o,this.$pending=!0;var n=!0,r=f(t.data);r;var s={promises:[],names:[]};e.push(s);var d=t.data.attrs||{},l=t.componentInstance;l&&l._vfValidationData_&&(d=S({},d,l._vfValidationData_));var c=t.componentOptions&&t.componentOptions.propsData?t.componentOptions.propsData:{};Object.keys(this._validators).forEach(function(e){if((""===r||void 0===r||null===r)&&"required"!==e)return i._setValidatorValidity(e,!0),void!0;var o=void 0!==d[e]?d[e]:c[e],l="function"==typeof i._validators[e];if(!l||null!==o&&void 0!==o||i._validators[e]._allowNulls){o&&(i.$attrs[e]=o);var u=l?i._validators[e](r,o,t):a.custom[e];"boolean"==typeof u?u?i._setValidatorValidity(e,!0):(n=!1,i._setValidatorValidity(e,!1)):(s.promises.push(u),s.names.push(e),a.vueFormParentForm.promises.push(u))}}),s.promises.length?a.vueFormConfig.Promise.all(s.promises).then(function(t){s===e[e.length-1]&&(e=[],t.forEach(function(t,a){var e=s.names[a];t?i._setValidatorValidity(e,!0):(n=!1,i._setValidatorValidity(e,!1))}),i._setValidity(n),i.$pending=!1)}):(this._setValidity(n),this.$pending=!1)}},this.custom&&Object.keys(this.custom).forEach(function(a){"function"==typeof t.custom[a]?(t.custom[a]._allowNulls=!0,t.fieldstate._validators[a]=t.custom[a]):t.fieldstate._validators[a]=t.custom[a]}),this.$watch("custom",function(a,e){var o,i,n,r;e&&(o=a,i=e,n="",r="",Object.keys(o).sort().filter(function(t){return"function"!=typeof o[t]}).forEach(function(t){return n+=o[t]}),Object.keys(i).sort().filter(function(t){return"function"!=typeof o[t]}).forEach(function(t){return r+=i[t]}),n!==r&&t.fieldstate._validate())},{deep:!0})},destroyed:function(){this.formstate._removeControl(this.fieldstate)}},T={inject:{vueFormConfig:g},render:function(t){var a=m(this.$slots.default,this.vueFormConfig),e=a.vModel,o={for:null};if(e.length&&this.autoLabel){var i=e[0].data.attrs&&e[0].data.attrs.id||"vf"+b();e[0].data.attrs.id=i,a.label?(a.label.data=a.label.data||{},a.label.data.attrs=a.label.data.attrs={},a.label.data.attrs.for=i):"label"===this.tag&&(o.for=i)}return t(this.tag||this.vueFormConfig.fieldTag,{attrs:o},this.$slots.default)},props:{tag:{type:String},autoLabel:{type:Boolean,default:!0}}},z={};function A(t,a,e){Object.keys(t).forEach(function(o){var i="type"===o?t[o].toLowerCase():o.toLowerCase();a[i]&&!e[i]&&(e[i]=a[i])})}var q={name:"vue-form-validator",bind:function(t,a,e){var o=a.value.fieldstate,i=a.value.config.validators,n=e.data.attrs||{};if(v(e)){var r,s,d,l;n.debounce&&(z[o._id]=(r=function(t,a){t._hasFocused&&t._setDirty(),t._validate(a)},s=n.debounce,function(){var t=this,a=arguments,e=d&&!l;clearTimeout(l),l=setTimeout(function(){l=null,d||r.apply(t,a)},s),e&&r.apply(t,a)})),A(n,i,o._validators),e.componentOptions&&e.componentOptions.propsData&&A(e.componentOptions.propsData,i,o._validators),o._validate(e),t.addEventListener("blur",function(){o._setFocused(!1)},!1),t.addEventListener("focus",function(){o._setFocused(!0)},!1);var c=e.componentInstance;c&&(c.$on("blur",function(){o._setFocused(!1)}),c.$on("focus",function(){o._setFocused(!0)}),c.$once("vf:addFocusListeners",function(){t.addEventListener("focusout",function(){o._setFocused(!1)},!1),t.addEventListener("focusin",function(){o._setFocused(!0)},!1)}),c.$on("vf:validate",function(t){c._vfValidationData_||A(t,i,o._validators),c._vfValidationData_=t,o._validate(c.$vnode)}))}else console.warn("vue-form: name attribute missing")},update:function(t,a,e,o){var i=function(t,a,e){var o=!1,i=t.data.attrs||{},n=a.data.attrs||{},r={};if(f(t.data)!==f(a.data)&&(r.vModel=!0,o=!0),Object.keys(e).forEach(function(t){i[t]!==n[t]&&(r[t]=!0,o=!0)}),t.componentOptions&&t.componentOptions.propsData){var s=t.componentOptions.propsData,d=a.componentOptions.propsData;Object.keys(e).forEach(function(t){s[t]!==d[t]&&(r[t]=!0,o=!0)})}if(o)return r}(e,o,a.value.config.validators),n=a.value.fieldstate,r=e.data.attrs||{},s=e.componentInstance;s&&s._vfValidationData_&&(r=S({},r,s[s._vfValidationData_])),-1===e.elm.className.indexOf(n._className[0])&&(e.elm.className=e.elm.className+" "+n._className.join(" ")),i&&(i.vModel?r.debounce?(n.$pending=!0,z[n._id](n,e)):(n._hasFocused&&n._setDirty(),n._validate(e)):n._validate(e))}};function I(t){var a,e=S(!0,{},r,t);this.provide=function(){return l({},g,e)},this.components=(l(a={},e.formComponent,V),l(a,e.messagesComponent,L),l(a,e.validateComponent,M),l(a,e.fieldComponent,T),a),this.directives={vueFormValidator:q}}var B=function(t){function a(){return s(this,a),c(this,(a.__proto__||Object.getPrototypeOf(a)).apply(this,arguments))}return function(t,a){if("function"!=typeof a&&null!==a)throw new TypeError("Super expression must either be null or a function, not "+typeof a);t.prototype=Object.create(a&&a.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),a&&(Object.setPrototypeOf?Object.setPrototypeOf(t,a):t.__proto__=a)}(a,I),d(a,null,[{key:"install",value:function(t,a){t.mixin(new this(a))}},{key:"installed",get:function(){return!!this.install.done},set:function(t){this.install.done=t}}]),a}();return I.call(B),B.options=new B,B},t.exports=e()}).call(a,e(19))},541:function(t,a,e){"use strict";a.a={validators:{checkbox:function(t,a,e){return t},sameas:function(t,a,e){return t==a}}}},650:function(t,a,e){var o=e(651);"string"==typeof o&&(o=[[t.i,o,""]]),o.locals&&(t.exports=o.locals);e(27)("ddcca9d8",o,!0,{})},651:function(t,a,e){(t.exports=e(18)(!1)).push([t.i,"/*!\r\n * BootstrapValidator (http://bootstrapvalidator.com)\r\n * The best jQuery plugin to validate form fields. Designed to use with Bootstrap 3\r\n *\r\n * @version     v0.5.3, built on 2014-11-05 9:14:18 PM\r\n * @author      https://twitter.com/nghuuphuoc\r\n * @copyright   (c) 2013 - 2014 Nguyen Huu Phuoc\r\n * @license     Commercial: http://bootstrapvalidator.com/license/\r\n *              Non-commercial: http://creativecommons.org/licenses/by-nc-nd/3.0/\r\n */.bv-form .help-block{margin-bottom:0}.bv-form .tooltip-inner{text-align:left}.nav-tabs li.bv-tab-success>a{color:#3c763d}.nav-tabs li.bv-tab-error>a{color:#a94442}.bv-form .bv-icon-no-label{top:0}.bv-form .bv-icon-input-group{top:0;z-index:100}",""])},652:function(t,a,e){var o=e(653);"string"==typeof o&&(o=[[t.i,o,""]]),o.locals&&(t.exports=o.locals);e(27)("7d2969a0",o,!0,{})},653:function(t,a,e){(a=t.exports=e(18)(!1)).push([t.i,"@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);",""]),a.push([t.i,'body[data-v-d1615aca]{font-family:Open Sans,sans-serif;height:100%;padding:6.5% 0}#sign-in[data-v-d1615aca],#sign-up[data-v-d1615aca]{background:radial-gradient(ellipse at center,#5a93af 0,#004e74 100%)}.login-form[data-v-d1615aca]{background-color:hsla(0,0%,100%,.9);border-radius:4px;padding-top:15px;padding-bottom:15px}.btn-primary[data-v-d1615aca],.primary[data-v-d1615aca],.tags a.primary[data-v-d1615aca]{border-color:#509de0;background:#509de0!important}.btn[data-v-d1615aca]{cursor:pointer}.btn-primary[data-v-d1615aca]:hover{border-color:#509de0;background:#509de0!important}.icheckbox_minimal-blue[data-v-d1615aca]{background-position:-20px 0}a[data-v-d1615aca]:focus,a[data-v-d1615aca]:hover{text-decoration:none}.social a[data-v-d1615aca]{border-radius:50px;padding:10px 12px 2px;font-size:25px}.btn-facebook[data-v-d1615aca],.btn-facebook[data-v-d1615aca]:focus,.btn-facebook[data-v-d1615aca]:hover{color:#5f7ab3;border:1px solid #5f7ab3}.btn-twitter[data-v-d1615aca],.btn-twitter[data-v-d1615aca]:focus,.btn-twitter[data-v-d1615aca]:hover{background:#3bacf2;color:hsla(0,0%,100%,.85);border:1px solid #3bacf2}.has-error .checkbox-inline[data-v-d1615aca],.has-error .checkbox[data-v-d1615aca],.has-error .control-label[data-v-d1615aca],.has-error .help-block[data-v-d1615aca],.has-error .radio-inline[data-v-d1615aca],.has-error .radio[data-v-d1615aca]{color:#f66}.has-error.checkbox label[data-v-d1615aca],.has-error.radio label[data-v-d1615aca],.has-success.checkbox label[data-v-d1615aca],.has-success.radio label[data-v-d1615aca]{color:#333}.checkbox[data-v-d1615aca],.radio[data-v-d1615aca]{display:block}.has-error .form-control[data-v-d1615aca],.has-error .form-control[data-v-d1615aca]:focus{border-color:#f66;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.has-success .form-control[data-v-d1615aca],.has-success .form-control[data-v-d1615aca]:focus{border-color:#6c9;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}.btn-google[data-v-d1615aca],.btn-google[data-v-d1615aca]:focus,.btn-google[data-v-d1615aca]:hover{color:#dd4b39;border:1px solid #dd4b39}.social .alter[data-v-d1615aca]{font-size:21px;color:#666;margin-top:15px;margin-bottom:15px}#forgot[data-v-d1615aca]:hover{color:#2a6496!important}@media screen and (max-width:400px){.mar-left5[data-v-d1615aca]{margin-left:18px!important;margin-top:-10px}.mar-top4[data-v-d1615aca]{margin-top:-10px}.mar-left[data-v-d1615aca]{margin-left:-5px!important}.sign-up[data-v-d1615aca]{float:left!important}#forgot[data-v-d1615aca]:after{content:"\\A";white-space:pre}}@-webkit-keyframes CAnimation-data-v-d1615aca{0%{-webkit-filter:hue-rotate(0deg)}to{-webkit-filter:hue-rotate(-1turn)}}@keyframes CAnimation-data-v-d1615aca{0%{-webkit-filter:hue-rotate(0deg)}to{-webkit-filter:hue-rotate(-1turn)}}.forgot[data-v-d1615aca]{color:#428bca!important}a[data-v-d1615aca]:hover{text-decoration:none}.checkbox label[data-v-d1615aca],.radio label[data-v-d1615aca]{padding-left:0}@media (min-width:768px){.form_width[data-v-d1615aca]{margin-left:12%}}.preloader[data-v-d1615aca]{position:fixed;width:100%;height:100%;top:0;left:0;z-index:100000;backface-visibility:hidden;background:#fff}.loader_img[data-v-d1615aca]{width:50px;height:50px;position:absolute;left:50%;top:50%;background-position:50%;margin:-25px 0 0 -25px}',""])},654:function(t,a,e){var o=e(655);"string"==typeof o&&(o=[[t.i,o,""]]),o.locals&&(t.exports=o.locals);e(27)("f5c8907c",o,!0,{})},655:function(t,a,e){(t.exports=e(18)(!1)).push([t.i,".login[data-v-d1615aca]{padding-top:15%;padding-bottom:2%;width:100%;height:100vh;top:0;bottom:0;left:0;right:0;overflow-y:auto}@media (min-width:1001px){#bg[data-v-d1615aca]{position:fixed;top:-50%;left:-50%;max-width:100%;max-height:auto}#bg img[data-v-d1615aca]{position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;max-width:100%;max-height:auto}.image_full[data-v-d1615aca]{display:block}.image_mobile[data-v-d1615aca]{display:none}}@media (max-width:1000px) and (min-width:320px){.image_full[data-v-d1615aca]{display:none}.image_mobile[data-v-d1615aca]{display:block}#bg[data-v-d1615aca]{position:fixed;top:-50%;left:-50%;max-width:auto;max-height:100%}#bg img[data-v-d1615aca]{position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;max-width:auto;max-height:100%}}",""])},656:function(t,a,e){"use strict";Object.defineProperty(a,"__esModule",{value:!0});var o=e(28),i=e.n(o),n=e(540),r=e.n(n),s=e(541);i.a.use(r.a,s.a),a.default={name:"login",data:function(){return{formstate:{},model:{email:"",password:""},success:!1,has_error:!1,error:""}},methods:{onSubmit:function(){if(!this.formstate.$invalid){var t=this.$auth.redirect(),a=this;this.$auth.login({data:{email:a.model.email,password:a.model.password},success:function(){a.success=!0;t?t.from.name:this.$auth.user().role;var e=new Object;e.nombre=this.$auth.user().nombre,e.apellido=this.$auth.user().apellido,e.job=1===this.$auth.user().role?"Administrador":"Técnico",e.role=this.$auth.user().role,e.id=this.$auth.user().id,e.email=this.$auth.user().email,this.$store.commit("changeUser",e),window.location.href="/#/"},error:function(){a.has_error=!0},rememberMe:!0,fetchUser:!0})}}},mounted:function(){},destroyed:function(){}}},657:function(t,a,e){t.exports={render:function(){var t=this,a=t.$createElement,o=t._self._c||a;return o("div",[o("div",{attrs:{id:"bg"}},[o("span",{staticStyle:{display:"inline-block",padding:"2px 3px"}},[o("svg",{staticStyle:{height:"12px",width:"auto",position:"relative","vertical-align":"middle",top:"-2px",fill:"white"},attrs:{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 32 32"}},[o("title",[t._v("unsplash-logo")]),o("path",{attrs:{d:"M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"}})])]),o("span",{staticStyle:{display:"inline-block",padding:"2px 3px"}},[t._v("Michiel Ton")]),t._v(" "),o("img",{staticClass:"image_full",attrs:{src:"img/login.jpg",alt:""}}),t._v(" "),o("img",{staticClass:"image_mobile",attrs:{src:"img/mobile.jpg",alt:""}})]),t._v(" "),o("div",{staticClass:"container-fluid login"},[o("div",{staticClass:"container"},[o("div",{staticClass:"row"},[o("div",{staticClass:"col-lg-4 col-10 col-sm-8 mx-auto login-form"},[o("h2",{staticClass:"text-center logo_h2"},[o("img",{attrs:{src:e(474),alt:"Logo"}})]),t._v(" "),o("div",{staticClass:"card-body"},[o("div",{staticClass:"row"},[o("div",{staticClass:"col-12"},[o("vue-form",{attrs:{state:t.formstate},on:{submit:function(a){return a.preventDefault(),t.onSubmit(a)}}},[o("div",{staticClass:"row"},[o("div",{staticClass:"col-sm-12 mt-3 "},[o("div",{staticClass:"form-group"},[o("validate",{attrs:{tag:"div"}},[o("input",{directives:[{name:"model",rawName:"v-model",value:t.model.email,expression:"model.email"}],staticClass:"form-control",attrs:{name:"email",id:"email",type:"email",required:"",autofocus:"",placeholder:"Ingrese su correo"},domProps:{value:t.model.email},on:{input:function(a){a.target.composing||t.$set(t.model,"email",a.target.value)}}}),t._v(" "),o("field-messages",{staticClass:"text-danger",attrs:{name:"email",show:"$invalid && $submitted"}},[o("div",{attrs:{slot:"required"},slot:"required"},[t._v("El correo electrónico es un campo\n                                                            obligatorio")]),t._v(" "),o("div",{attrs:{slot:"email"},slot:"email"},[t._v("El correo no es válido")])])],1)],1)]),t._v(" "),o("div",{staticClass:"col-sm-12"},[o("div",{staticClass:"form-group"},[o("validate",{attrs:{tag:"div"}},[o("input",{directives:[{name:"model",rawName:"v-model",value:t.model.password,expression:"model.password"}],staticClass:"form-control",attrs:{name:"password",id:"password",type:"password",required:"",placeholder:"Ingrese su contraseña",minlength:"6",maxlength:"10"},domProps:{value:t.model.password},on:{input:function(a){a.target.composing||t.$set(t.model,"password",a.target.value)}}}),t._v(" "),o("field-messages",{staticClass:"text-danger",attrs:{name:"password",show:"$invalid && $submitted"}},[o("div",{attrs:{slot:"required"},slot:"required"},[t._v("Se requiere contraseña")]),t._v(" "),o("div",{attrs:{slot:"minlength"},slot:"minlength"},[t._v("La contraseña debe tener al menos 6\n                                                            caractéres")]),t._v(" "),o("div",{attrs:{slot:"maxlength"},slot:"maxlength"},[t._v("La contraseña debe tener como máximo 10\n                                                            caractéres")])])],1)],1)]),t._v(" "),o("div",{staticClass:"col-sm-12"},[o("div",{staticClass:"form-group checkbox"},[o("label",{attrs:{for:"remember"}},[o("input",{attrs:{type:"checkbox",name:"remember",id:"remember"}}),t._v(" \n                                                    Recuerdame\n                                                ")])])]),t._v(" "),t.has_error&&!t.success?o("div",{staticClass:"alert alert-danger"},["login_error"==t.error?o("p",[t._v("Validation Errors.")]):o("p",[t._v("Error, no se puede conectar con estas credenciales.")])]):t._e(),t._v(" "),o("input",{staticClass:"btn btn-primary btn-block mb-3",attrs:{type:"submit",value:"Iniciar Sesión"}}),t._v(" "),o("div",{staticClass:"col-sm-12"},[o("router-link",{staticClass:"float-left",attrs:{to:"/forgot_password",exact:""}},[t._v("¿Olvide mi\n                                                contraseña? ")])],1)])])],1)])])])])])])])},staticRenderFns:[]}},709:function(t,a,e){var o=e(44)(e(656),e(657),!1,function(t){e(650),e(652),e(654)},"data-v-d1615aca",null);t.exports=o.exports}});
+webpackJsonp([5],{
+
+/***/ 485:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(676)
+  __webpack_require__(678)
+  __webpack_require__(680)
+}
+var normalizeComponent = __webpack_require__(44)
+/* script */
+var __vue_script__ = __webpack_require__(682)
+/* template */
+var __vue_template__ = __webpack_require__(683)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-624e51c6"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/components/pages/login.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-624e51c6", Component.options)
+  } else {
+    hotAPI.reload("data-v-624e51c6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 500:
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo8.png?18b455a04afa612acc4ac795c286b5b1";
+
+/***/ }),
+
+/***/ 567:
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {(function (global, factory) {
+	 true ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.VueForm = factory());
+}(this, (function () { 'use strict';
+
+var emailRegExp = /^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i; // from angular
+var urlRegExp = /^(http\:\/\/|https\:\/\/)(.{4,})$/;
+
+var email = function email(value, attrValue, vnode) {
+  return emailRegExp.test(value);
+};
+email._allowNulls = true;
+
+var number = function number(value, attrValue, vnode) {
+  return !isNaN(value);
+};
+number._allowNulls = true;
+
+var url = function url(value, attrValue, vnode) {
+  return urlRegExp.test(value);
+};
+url._allowNulls = true;
+
+var validators = {
+  email: email,
+  number: number,
+  url: url,
+  required: function required(value, attrValue, vnode) {
+    if (attrValue === false) {
+      return true;
+    }
+
+    if (value === 0) {
+      return true;
+    }
+
+    if (vnode.data.attrs && typeof vnode.data.attrs.bool !== 'undefined' || vnode.componentOptions && vnode.componentOptions.propsData && typeof vnode.componentOptions.propsData.bool !== 'undefined') {
+      // bool attribute is present, allow false pass validation
+      if (value === false) {
+        return true;
+      }
+    }
+
+    if (Array.isArray(value)) {
+      return !!value.length;
+    }
+    return !!value;
+  },
+  minlength: function minlength(value, length) {
+    return value.length >= length;
+  },
+  maxlength: function maxlength(value, length) {
+    return length >= value.length;
+  },
+  pattern: function pattern(value, _pattern) {
+    var patternRegExp = new RegExp('^' + _pattern + '$');
+    return patternRegExp.test(value);
+  },
+  min: function min(value, _min, vnode) {
+    if ((vnode.data.attrs.type || '').toLowerCase() == 'number') {
+      return +value >= +_min;
+    }
+    return value >= _min;
+  },
+  max: function max(value, _max, vnode) {
+    if ((vnode.data.attrs.type || '').toLowerCase() == 'number') {
+      return +_max >= +value;
+    }
+    return _max >= value;
+  }
+};
+
+var config = {
+  validators: validators,
+  formComponent: 'vueForm',
+  formTag: 'form',
+  messagesComponent: 'fieldMessages',
+  messagesTag: 'div',
+  showMessages: '',
+  validateComponent: 'validate',
+  validateTag: 'div',
+  fieldComponent: 'field',
+  fieldTag: 'div',
+  formClasses: {
+    dirty: 'vf-form-dirty',
+    pristine: 'vf-form-pristine',
+    valid: 'vf-form-valid',
+    invalid: 'vf-form-invalid',
+    touched: 'vf-form-touched',
+    untouched: 'vf-form-untouched',
+    focused: 'vf-form-focused',
+    submitted: 'vf-form-submitted',
+    pending: 'vf-form-pending'
+  },
+  validateClasses: {
+    dirty: 'vf-field-dirty',
+    pristine: 'vf-field-pristine',
+    valid: 'vf-field-valid',
+    invalid: 'vf-field-invalid',
+    touched: 'vf-field-touched',
+    untouched: 'vf-field-untouched',
+    focused: 'vf-field-focused',
+    submitted: 'vf-field-submitted',
+    pending: 'vf-field-pending'
+  },
+  inputClasses: {
+    dirty: 'vf-dirty',
+    pristine: 'vf-pristine',
+    valid: 'vf-valid',
+    invalid: 'vf-invalid',
+    touched: 'vf-touched',
+    untouched: 'vf-untouched',
+    focused: 'vf-focused',
+    submitted: 'vf-submitted',
+    pending: 'vf-pending'
+  },
+  Promise: typeof Promise === 'function' ? Promise : null
+};
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+var defineProperty = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
+
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+
+
+
+
+
+
+
+
+
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+function getClasses(classConfig, state) {
+  var _ref;
+
+  return _ref = {}, defineProperty(_ref, classConfig.dirty, state.$dirty), defineProperty(_ref, classConfig.pristine, state.$pristine), defineProperty(_ref, classConfig.valid, state.$valid), defineProperty(_ref, classConfig.invalid, state.$invalid), defineProperty(_ref, classConfig.touched, state.$touched), defineProperty(_ref, classConfig.untouched, state.$untouched), defineProperty(_ref, classConfig.focused, state.$focused), defineProperty(_ref, classConfig.pending, state.$pending), defineProperty(_ref, classConfig.submitted, state.$submitted), _ref;
+}
+
+function addClass(el, className) {
+  if (el.classList) {
+    el.classList.add(className);
+  } else {
+    el.className += ' ' + className;
+  }
+}
+
+function removeClass(el, className) {
+  if (el.classList) {
+    el.classList.remove(className);
+  } else {
+    el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+  }
+}
+
+function vModelValue(data) {
+  if (data.model) {
+    return data.model.value;
+  }
+  return data.directives.filter(function (v) {
+    return v.name === 'model';
+  })[0].value;
+}
+
+function getVModelAndLabel(nodes, config) {
+  var foundVnodes = {
+    vModel: [],
+    label: null,
+    messages: null
+  };
+
+  if (!nodes) {
+    return foundVnodes;
+  }
+
+  function traverse(nodes) {
+    for (var i = 0; i < nodes.length; i++) {
+      var node = nodes[i];
+
+      if (node.componentOptions) {
+        if (node.componentOptions.tag === hyphenate(config.messagesComponent)) {
+          foundVnodes.messages = node;
+        }
+      }
+
+      if (node.tag === 'label' && !foundVnodes.label) {
+        foundVnodes.label = node;
+      }
+
+      if (node.data) {
+        if (node.data.model) {
+          // model check has to come first. If a component has
+          // a directive and v-model, the directive will be in .directives
+          // and v-modelstored in .model
+          foundVnodes.vModel.push(node);
+        } else if (node.data.directives) {
+          var match = node.data.directives.filter(function (v) {
+            return v.name === 'model';
+          });
+          if (match.length) {
+            foundVnodes.vModel.push(node);
+          }
+        }
+      }
+      if (node.children) {
+        traverse(node.children);
+      } else if (node.componentOptions && node.componentOptions.children) {
+        traverse(node.componentOptions.children);
+      }
+    }
+  }
+
+  traverse(nodes);
+
+  return foundVnodes;
+}
+
+function getName(vnode) {
+  if (vnode.data && vnode.data.attrs && vnode.data.attrs.name) {
+    return vnode.data.attrs.name;
+  } else if (vnode.componentOptions && vnode.componentOptions.propsData && vnode.componentOptions.propsData.name) {
+    return vnode.componentOptions.propsData.name;
+  }
+}
+
+var hyphenateRE = /([^-])([A-Z])/g;
+function hyphenate(str) {
+  return str.replace(hyphenateRE, '$1-$2').replace(hyphenateRE, '$1-$2').toLowerCase();
+}
+
+function randomId() {
+  return Math.random().toString(36).substr(2, 10);
+}
+
+// https://davidwalsh.name/javascript-debounce-function
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function () {
+    var context = this,
+        args = arguments;
+    var later = function later() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+function isShallowObjectDifferent(a, b) {
+  var aValue = '';
+  var bValue = '';
+  Object.keys(a).sort().filter(function (v) {
+    return typeof a[v] !== 'function';
+  }).forEach(function (v) {
+    return aValue += a[v];
+  });
+  Object.keys(b).sort().filter(function (v) {
+    return typeof a[v] !== 'function';
+  }).forEach(function (v) {
+    return bValue += b[v];
+  });
+  return aValue !== bValue;
+}
+
+var vueFormConfig = 'VueFormProviderConfig' + randomId();
+var vueFormState = 'VueFormProviderState' + randomId();
+var vueFormParentForm = 'VueFormProviderParentForm' + randomId();
+
+var hasOwn = Object.prototype.hasOwnProperty;
+var toStr = Object.prototype.toString;
+var defineProperty$1 = Object.defineProperty;
+var gOPD = Object.getOwnPropertyDescriptor;
+
+var isArray = function isArray(arr) {
+	if (typeof Array.isArray === 'function') {
+		return Array.isArray(arr);
+	}
+
+	return toStr.call(arr) === '[object Array]';
+};
+
+var isPlainObject = function isPlainObject(obj) {
+	if (!obj || toStr.call(obj) !== '[object Object]') {
+		return false;
+	}
+
+	var hasOwnConstructor = hasOwn.call(obj, 'constructor');
+	var hasIsPrototypeOf = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
+	// Not own constructor property must be Object
+	if (obj.constructor && !hasOwnConstructor && !hasIsPrototypeOf) {
+		return false;
+	}
+
+	// Own properties are enumerated firstly, so to speed up,
+	// if last one is own, then all properties are own.
+	var key;
+	for (key in obj) { /**/ }
+
+	return typeof key === 'undefined' || hasOwn.call(obj, key);
+};
+
+// If name is '__proto__', and Object.defineProperty is available, define __proto__ as an own property on target
+var setProperty = function setProperty(target, options) {
+	if (defineProperty$1 && options.name === '__proto__') {
+		defineProperty$1(target, options.name, {
+			enumerable: true,
+			configurable: true,
+			value: options.newValue,
+			writable: true
+		});
+	} else {
+		target[options.name] = options.newValue;
+	}
+};
+
+// Return undefined instead of __proto__ if '__proto__' is not an own property
+var getProperty = function getProperty(obj, name) {
+	if (name === '__proto__') {
+		if (!hasOwn.call(obj, name)) {
+			return void 0;
+		} else if (gOPD) {
+			// In early versions of node, obj['__proto__'] is buggy when obj has
+			// __proto__ as an own property. Object.getOwnPropertyDescriptor() works.
+			return gOPD(obj, name).value;
+		}
+	}
+
+	return obj[name];
+};
+
+var extend = function extend() {
+	var options, name, src, copy, copyIsArray, clone;
+	var target = arguments[0];
+	var i = 1;
+	var length = arguments.length;
+	var deep = false;
+
+	// Handle a deep copy situation
+	if (typeof target === 'boolean') {
+		deep = target;
+		target = arguments[1] || {};
+		// skip the boolean and the target
+		i = 2;
+	}
+	if (target == null || (typeof target !== 'object' && typeof target !== 'function')) {
+		target = {};
+	}
+
+	for (; i < length; ++i) {
+		options = arguments[i];
+		// Only deal with non-null/undefined values
+		if (options != null) {
+			// Extend the base object
+			for (name in options) {
+				src = getProperty(target, name);
+				copy = getProperty(options, name);
+
+				// Prevent never-ending loop
+				if (target !== copy) {
+					// Recurse if we're merging plain objects or arrays
+					if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
+						if (copyIsArray) {
+							copyIsArray = false;
+							clone = src && isArray(src) ? src : [];
+						} else {
+							clone = src && isPlainObject(src) ? src : {};
+						}
+
+						// Never move original objects, clone them
+						setProperty(target, { name: name, newValue: extend(deep, clone, copy) });
+
+					// Don't bring in undefined values
+					} else if (typeof copy !== 'undefined') {
+						setProperty(target, { name: name, newValue: copy });
+					}
+				}
+			}
+		}
+	}
+
+	// Return the modified object
+	return target;
+};
+
+var vueForm = {
+  render: function render(h) {
+    var _this = this;
+
+    var attrs = {};
+
+    if (typeof window !== 'undefined') {
+      attrs.novalidate = '';
+    }
+
+    return h(this.tag || this.vueFormConfig.formTag, {
+      on: {
+        submit: function submit(event) {
+          if (_this.state.$pending) {
+            event.preventDefault();
+            _this.vueFormConfig.Promise.all(_this.promises).then(function () {
+              _this.state._submit();
+              _this.$emit('submit', event);
+              _this.promises = [];
+            });
+          } else {
+            _this.state._submit();
+            _this.$emit('submit', event);
+          }
+        },
+        reset: function reset(event) {
+          _this.state._reset();
+          _this.$emit('reset', event);
+        }
+      },
+      class: this.className,
+      attrs: attrs
+    }, [this.$slots.default]);
+  },
+
+  props: {
+    state: {
+      type: Object,
+      required: true
+    },
+    tag: String,
+    showMessages: String
+  },
+  inject: { vueFormConfig: vueFormConfig },
+  provide: function provide() {
+    var _ref;
+
+    return _ref = {}, defineProperty(_ref, vueFormState, this.state), defineProperty(_ref, vueFormParentForm, this), _ref;
+  },
+
+  data: function data() {
+    return {
+      promises: []
+    };
+  },
+  created: function created() {
+    var _this2 = this;
+
+    if (!this.state) {
+      return;
+    }
+    var controls = {};
+    var state = this.state;
+    var formstate = {
+      $dirty: false,
+      $pristine: true,
+      $valid: true,
+      $invalid: false,
+      $submitted: false,
+      $touched: false,
+      $untouched: true,
+      $focused: false,
+      $pending: false,
+      $error: {},
+      $submittedState: {},
+      _id: '',
+      _submit: function _submit() {
+        _this2.state.$submitted = true;
+        _this2.state._cloneState();
+      },
+      _cloneState: function _cloneState() {
+        var cloned = JSON.parse(JSON.stringify(state));
+        delete cloned.$submittedState;
+        Object.keys(cloned).forEach(function (key) {
+          _this2.$set(_this2.state.$submittedState, key, cloned[key]);
+        });
+      },
+      _addControl: function _addControl(ctrl) {
+        controls[ctrl.$name] = ctrl;
+        _this2.$set(state, ctrl.$name, ctrl);
+      },
+      _removeControl: function _removeControl(ctrl) {
+        delete controls[ctrl.$name];
+        _this2.$delete(_this2.state, ctrl.$name);
+        _this2.$delete(_this2.state.$error, ctrl.$name);
+      },
+      _validate: function _validate() {
+        Object.keys(controls).forEach(function (key) {
+          controls[key]._validate();
+        });
+      },
+      _reset: function _reset() {
+        state.$submitted = false;
+        state.$pending = false;
+        state.$submittedState = {};
+        Object.keys(controls).forEach(function (key) {
+          var control = controls[key];
+          control._hasFocused = false;
+          control._setUntouched();
+          control._setPristine();
+          control.$submitted = false;
+          control.$pending = false;
+        });
+      }
+    };
+
+    Object.keys(formstate).forEach(function (key) {
+      _this2.$set(_this2.state, key, formstate[key]);
+    });
+
+    this.$watch('state', function () {
+      var isDirty = false;
+      var isValid = true;
+      var isTouched = false;
+      var isFocused = false;
+      var isPending = false;
+      Object.keys(controls).forEach(function (key) {
+        var control = controls[key];
+
+        control.$submitted = state.$submitted;
+
+        if (control.$dirty) {
+          isDirty = true;
+        }
+        if (control.$touched) {
+          isTouched = true;
+        }
+        if (control.$focused) {
+          isFocused = true;
+        }
+        if (control.$pending) {
+          isPending = true;
+        }
+        if (!control.$valid) {
+          isValid = false;
+          // add control to errors
+          _this2.$set(state.$error, control.$name, control);
+        } else {
+          _this2.$delete(state.$error, control.$name);
+        }
+      });
+
+      state.$dirty = isDirty;
+      state.$pristine = !isDirty;
+      state.$touched = isTouched;
+      state.$untouched = !isTouched;
+      state.$focused = isFocused;
+      state.$valid = isValid;
+      state.$invalid = !isValid;
+      state.$pending = isPending;
+    }, {
+      deep: true,
+      immediate: true
+    });
+
+    /* watch pristine? if set to true, set all children to pristine
+    Object.keys(controls).forEach((ctrl) => {
+      controls[ctrl].setPristine();
+    });*/
+  },
+
+  computed: {
+    className: function className() {
+      var classes = getClasses(this.vueFormConfig.formClasses, this.state);
+      return classes;
+    }
+  },
+  methods: {
+    reset: function reset() {
+      this.state._reset();
+    },
+    validate: function validate() {
+      this.state._validate();
+    }
+  }
+};
+
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+
+
+
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var scope_eval = createCommonjsModule(function (module) {
+// Generated by CoffeeScript 1.10.0
+(function() {
+  var hasProp = {}.hasOwnProperty,
+    slice = [].slice;
+
+  module.exports = function(source, scope) {
+    var key, keys, value, values;
+    keys = [];
+    values = [];
+    for (key in scope) {
+      if (!hasProp.call(scope, key)) continue;
+      value = scope[key];
+      if (key === 'this') {
+        continue;
+      }
+      keys.push(key);
+      values.push(value);
+    }
+    return Function.apply(null, slice.call(keys).concat(["return eval(" + (JSON.stringify(source)) + ")"])).apply(scope["this"], values);
+  };
+
+}).call(commonjsGlobal);
+});
+
+function findLabel(nodes) {
+  if (!nodes) {
+    return;
+  }
+  for (var i = 0; i < nodes.length; i++) {
+    var vnode = nodes[i];
+    if (vnode.tag === 'label') {
+      return nodes[i];
+    } else if (nodes[i].children) {
+      return findLabel(nodes[i].children);
+    }
+  }
+}
+
+var messages = {
+  inject: { vueFormConfig: vueFormConfig, vueFormState: vueFormState, vueFormParentForm: vueFormParentForm },
+  render: function render(h) {
+    var _this = this;
+
+    var children = [];
+    var field = this.formstate[this.fieldname];
+    if (field && field.$error && this.isShown) {
+      Object.keys(field.$error).forEach(function (key) {
+        if (_this.$slots[key] || _this.$scopedSlots[key]) {
+          var out = _this.$slots[key] || _this.$scopedSlots[key](field);
+          if (_this.autoLabel) {
+            var label = findLabel(out);
+            if (label) {
+              label.data = label.data || {};
+              label.data.attrs = label.data.attrs || {};
+              label.data.attrs.for = field._id;
+            }
+          }
+          children.push(out);
+        }
+      });
+      if (!children.length && field.$valid) {
+        if (this.$slots.default || this.$scopedSlots.default) {
+          var out = this.$slots.default || this.$scopedSlots.default(field);
+          if (this.autoLabel) {
+            var label = findLabel(out);
+            if (label) {
+              label.data = label.data || {};
+              label.data.attrs = label.data.attrs || {};
+              label.data.attrs.for = field._id;
+            }
+          }
+          children.push(out);
+        }
+      }
+    }
+    return h(this.tag || this.vueFormConfig.messagesTag, children);
+  },
+
+  props: {
+    state: Object,
+    name: String,
+    show: {
+      type: String,
+      default: ''
+    },
+    tag: {
+      type: String
+    },
+    autoLabel: Boolean
+  },
+  data: function data() {
+    return {
+      formstate: null,
+      fieldname: ''
+    };
+  },
+  created: function created() {
+    this.fieldname = this.name;
+    this.formstate = this.state || this.vueFormState;
+  },
+
+  computed: {
+    isShown: function isShown() {
+      var field = this.formstate[this.fieldname];
+      var show = this.show || this.vueFormParentForm.showMessages || this.vueFormConfig.showMessages;
+
+      if (!show || !field) {
+        return true;
+      }
+
+      return scope_eval(show, field);
+    }
+  }
+};
+
+var validate = {
+  render: function render(h) {
+    var _this = this;
+
+    var foundVnodes = getVModelAndLabel(this.$slots.default, this.vueFormConfig);
+    var vModelnodes = foundVnodes.vModel;
+    var attrs = {
+      for: null
+    };
+    if (vModelnodes.length) {
+      this.name = getName(vModelnodes[0]);
+
+      if (foundVnodes.messages) {
+        this.$nextTick(function () {
+          var messagesVm = foundVnodes.messages.componentInstance;
+          if (messagesVm) {
+            messagesVm.fieldname = messagesVm.fieldname || _this.name;
+          }
+        });
+      }
+
+      if (this.autoLabel) {
+        var id = vModelnodes[0].data.attrs.id || this.fieldstate._id;
+        this.fieldstate._id = id;
+        vModelnodes[0].data.attrs.id = id;
+        if (foundVnodes.label) {
+          foundVnodes.label.data = foundVnodes.label.data || {};
+          foundVnodes.label.data.attrs = foundVnodes.label.data.attrs || {};
+          foundVnodes.label.data.attrs.for = id;
+        } else if (this.tag === 'label') {
+          attrs.for = id;
+        }
+      }
+      vModelnodes.forEach(function (vnode) {
+        if (!vnode.data.directives) {
+          vnode.data.directives = [];
+        }
+        vnode.data.directives.push({ name: 'vue-form-validator', value: { fieldstate: _this.fieldstate, config: _this.vueFormConfig } });
+        vnode.data.attrs['vue-form-validator'] = '';
+        vnode.data.attrs['debounce'] = _this.debounce;
+      });
+    } else {
+      //console.warn('Element with v-model not found');
+    }
+    return h(this.tag || this.vueFormConfig.validateTag, { 'class': this.className, attrs: attrs }, this.$slots.default);
+  },
+
+  props: {
+    state: Object,
+    custom: null,
+    autoLabel: Boolean,
+    tag: {
+      type: String
+    },
+    debounce: Number
+  },
+  inject: { vueFormConfig: vueFormConfig, vueFormState: vueFormState, vueFormParentForm: vueFormParentForm },
+  data: function data() {
+    return {
+      name: '',
+      formstate: null,
+      fieldstate: {}
+    };
+  },
+
+  methods: {
+    getClasses: function getClasses$$1(classConfig) {
+      var s = this.fieldstate;
+      return Object.keys(s.$error).reduce(function (classes, error) {
+        classes[classConfig.invalid + '-' + hyphenate(error)] = true;
+        return classes;
+      }, getClasses(classConfig, s));
+    }
+  },
+  computed: {
+    className: function className() {
+      return this.getClasses(this.vueFormConfig.validateClasses);
+    },
+    inputClassName: function inputClassName() {
+      return this.getClasses(this.vueFormConfig.inputClasses);
+    }
+  },
+  mounted: function mounted() {
+    var _this2 = this;
+
+    this.fieldstate.$name = this.name;
+    this.formstate._addControl(this.fieldstate);
+
+    var vModelEls = this.$el.querySelectorAll('[vue-form-validator]');
+
+    // add classes to the input element
+    this.$watch('inputClassName', function (value, oldValue) {
+      var out = void 0;
+
+      var _loop = function _loop(i, el) {
+        if (oldValue) {
+          Object.keys(oldValue).filter(function (k) {
+            return oldValue[k];
+          }).forEach(function (k) {
+            return removeClass(el, k);
+          });
+        }
+        out = [];
+        Object.keys(value).filter(function (k) {
+          return value[k];
+        }).forEach(function (k) {
+          out.push(k);
+          addClass(el, k);
+        });
+      };
+
+      for (var i = 0, el; el = vModelEls[i++];) {
+        _loop(i, el);
+      }
+      _this2.fieldstate._className = out;
+    }, {
+      deep: true,
+      immediate: true
+    });
+
+    this.$watch('name', function (value, oldValue) {
+      _this2.formstate._removeControl(_this2.fieldstate);
+      _this2.fieldstate.$name = value;
+      _this2.formstate._addControl(_this2.fieldstate);
+    });
+  },
+  created: function created() {
+    var _this4 = this;
+
+    this.formstate = this.state || this.vueFormState;
+    var vm = this;
+    var pendingValidators = [];
+    var _val = void 0;
+    var prevVnode = void 0;
+    this.fieldstate = {
+      $name: '',
+      $dirty: false,
+      $pristine: true,
+      $valid: true,
+      $invalid: false,
+      $touched: false,
+      $untouched: true,
+      $focused: false,
+      $pending: false,
+      $submitted: false,
+      $error: {},
+      $attrs: {},
+      _className: null,
+      _id: 'vf' + randomId(),
+      _setValidatorValidity: function _setValidatorValidity(validator, isValid) {
+        if (isValid) {
+          vm.$delete(this.$error, validator);
+        } else {
+          vm.$set(this.$error, validator, true);
+        }
+      },
+      _setValidity: function _setValidity(isValid) {
+        this.$valid = isValid;
+        this.$invalid = !isValid;
+      },
+      _setDirty: function _setDirty() {
+        this.$dirty = true;
+        this.$pristine = false;
+      },
+      _setPristine: function _setPristine() {
+        this.$dirty = false;
+        this.$pristine = true;
+      },
+      _setTouched: function _setTouched() {
+        this.$touched = true;
+        this.$untouched = false;
+      },
+      _setUntouched: function _setUntouched() {
+        this.$touched = false;
+        this.$untouched = true;
+      },
+      _setFocused: function _setFocused(value) {
+        this.$focused = typeof value === 'boolean' ? value : false;
+        if (this.$focused) {
+          this._setHasFocused();
+        } else {
+          this._setTouched();
+        }
+      },
+      _setHasFocused: function _setHasFocused() {
+        this._hasFocused = true;
+      },
+
+      _hasFocused: false,
+      _validators: {},
+      _validate: function _validate(vnode) {
+        var _this3 = this;
+
+        if (!vnode) {
+          vnode = prevVnode;
+        } else {
+          prevVnode = vnode;
+        }
+        this.$pending = true;
+        var isValid = true;
+        var emptyAndRequired = false;
+        var value = vModelValue(vnode.data);
+        _val = value;
+
+        var pending = {
+          promises: [],
+          names: []
+        };
+
+        pendingValidators.push(pending);
+
+        var attrs = vnode.data.attrs || {};
+        var childvm = vnode.componentInstance;
+        if (childvm && childvm._vfValidationData_) {
+          attrs = extend({}, attrs, childvm._vfValidationData_);
+        }
+
+        var propsData = vnode.componentOptions && vnode.componentOptions.propsData ? vnode.componentOptions.propsData : {};
+
+        Object.keys(this._validators).forEach(function (validator) {
+          // when value is empty and current validator is not the required validator, the field is valid
+          if ((value === '' || value === undefined || value === null) && validator !== 'required') {
+            _this3._setValidatorValidity(validator, true);
+            emptyAndRequired = true;
+            // return early, required validator will
+            // fall through if it is present
+            return;
+          }
+
+          var attrValue = typeof attrs[validator] !== 'undefined' ? attrs[validator] : propsData[validator];
+          var isFunction = typeof _this3._validators[validator] === 'function';
+
+          // match vue behaviour, ignore if attribute is null or undefined. But for type=email|url|number and custom validators, the value will be null, so allow with _allowNulls
+          if (isFunction && (attrValue === null || typeof attrValue === 'undefined') && !_this3._validators[validator]._allowNulls) {
+            return;
+          }
+
+          if (attrValue) {
+            _this3.$attrs[validator] = attrValue;
+          }
+
+          var result = isFunction ? _this3._validators[validator](value, attrValue, vnode) : vm.custom[validator];
+
+          if (typeof result === 'boolean') {
+            if (result) {
+              _this3._setValidatorValidity(validator, true);
+            } else {
+              isValid = false;
+              _this3._setValidatorValidity(validator, false);
+            }
+          } else {
+            pending.promises.push(result);
+            pending.names.push(validator);
+            vm.vueFormParentForm.promises.push(result);
+          }
+        });
+
+        if (pending.promises.length) {
+          vm.vueFormConfig.Promise.all(pending.promises).then(function (results) {
+
+            // only concerned with the last promise results, in case
+            // async responses return out of order
+            if (pending !== pendingValidators[pendingValidators.length - 1]) {
+              //console.log('ignoring old promise', pending.promises);
+              return;
+            }
+
+            pendingValidators = [];
+
+            results.forEach(function (result, i) {
+              var name = pending.names[i];
+              if (result) {
+                _this3._setValidatorValidity(name, true);
+              } else {
+                isValid = false;
+                _this3._setValidatorValidity(name, false);
+              }
+            });
+            _this3._setValidity(isValid);
+            _this3.$pending = false;
+          });
+        } else {
+          this._setValidity(isValid);
+          this.$pending = false;
+        }
+      }
+    };
+
+    // add custom validators
+    if (this.custom) {
+      Object.keys(this.custom).forEach(function (prop) {
+        if (typeof _this4.custom[prop] === 'function') {
+          _this4.custom[prop]._allowNulls = true;
+          _this4.fieldstate._validators[prop] = _this4.custom[prop];
+        } else {
+          _this4.fieldstate._validators[prop] = _this4.custom[prop];
+        }
+      });
+    }
+
+    this.$watch('custom', function (v, oldV) {
+      if (!oldV) {
+        return;
+      }
+      if (isShallowObjectDifferent(v, oldV)) {
+        _this4.fieldstate._validate();
+      }
+    }, {
+      deep: true
+    });
+  },
+  destroyed: function destroyed() {
+    this.formstate._removeControl(this.fieldstate);
+  }
+};
+
+var field = {
+  inject: { vueFormConfig: vueFormConfig },
+  render: function render(h) {
+    var foundVnodes = getVModelAndLabel(this.$slots.default, this.vueFormConfig);
+    var vModelnodes = foundVnodes.vModel;
+    var attrs = {
+      for: null
+    };
+    if (vModelnodes.length) {
+      if (this.autoLabel) {
+        var id = vModelnodes[0].data.attrs && vModelnodes[0].data.attrs.id || 'vf' + randomId();
+        vModelnodes[0].data.attrs.id = id;
+        if (foundVnodes.label) {
+          foundVnodes.label.data = foundVnodes.label.data || {};
+          foundVnodes.label.data.attrs = foundVnodes.label.data.attrs = {};
+          foundVnodes.label.data.attrs.for = id;
+        } else if (this.tag === 'label') {
+          attrs.for = id;
+        }
+      }
+    }
+    return h(this.tag || this.vueFormConfig.fieldTag, { attrs: attrs }, this.$slots.default);
+  },
+
+  props: {
+    tag: {
+      type: String
+    },
+    autoLabel: {
+      type: Boolean,
+      default: true
+    }
+  }
+};
+
+var debouncedValidators = {};
+
+function addValidators(attrs, validators, fieldValidators) {
+  Object.keys(attrs).forEach(function (attr) {
+    var prop = attr === 'type' ? attrs[attr].toLowerCase() : attr.toLowerCase();
+
+    if (validators[prop] && !fieldValidators[prop]) {
+      fieldValidators[prop] = validators[prop];
+    }
+  });
+}
+
+function compareChanges(vnode, oldvnode, validators) {
+
+  var hasChanged = false;
+  var attrs = vnode.data.attrs || {};
+  var oldAttrs = oldvnode.data.attrs || {};
+  var out = {};
+
+  if (vModelValue(vnode.data) !== vModelValue(oldvnode.data)) {
+    out.vModel = true;
+    hasChanged = true;
+  }
+
+  Object.keys(validators).forEach(function (validator) {
+    if (attrs[validator] !== oldAttrs[validator]) {
+      out[validator] = true;
+      hasChanged = true;
+    }
+  });
+
+  // if is a component
+  if (vnode.componentOptions && vnode.componentOptions.propsData) {
+    var _attrs = vnode.componentOptions.propsData;
+    var _oldAttrs = oldvnode.componentOptions.propsData;
+    Object.keys(validators).forEach(function (validator) {
+      if (_attrs[validator] !== _oldAttrs[validator]) {
+        out[validator] = true;
+        hasChanged = true;
+      }
+    });
+  }
+
+  if (hasChanged) {
+    return out;
+  }
+}
+
+var vueFormValidator = {
+  name: 'vue-form-validator',
+  bind: function bind(el, binding, vnode) {
+    var fieldstate = binding.value.fieldstate;
+    var validators = binding.value.config.validators;
+
+    var attrs = vnode.data.attrs || {};
+    var inputName = getName(vnode);
+
+    if (!inputName) {
+      console.warn('vue-form: name attribute missing');
+      return;
+    }
+
+    if (attrs.debounce) {
+      debouncedValidators[fieldstate._id] = debounce(function (fieldstate, vnode) {
+        if (fieldstate._hasFocused) {
+          fieldstate._setDirty();
+        }
+        fieldstate._validate(vnode);
+      }, attrs.debounce);
+    }
+
+    // add validators
+    addValidators(attrs, validators, fieldstate._validators);
+
+    // if is a component, a validator attribute could be a prop this component uses
+    if (vnode.componentOptions && vnode.componentOptions.propsData) {
+      addValidators(vnode.componentOptions.propsData, validators, fieldstate._validators);
+    }
+
+    fieldstate._validate(vnode);
+
+    // native listeners
+    el.addEventListener('blur', function () {
+      fieldstate._setFocused(false);
+    }, false);
+    el.addEventListener('focus', function () {
+      fieldstate._setFocused(true);
+    }, false);
+
+    // component listeners
+    var vm = vnode.componentInstance;
+    if (vm) {
+      vm.$on('blur', function () {
+        fieldstate._setFocused(false);
+      });
+      vm.$on('focus', function () {
+        fieldstate._setFocused(true);
+      });
+
+      vm.$once('vf:addFocusListeners', function () {
+        el.addEventListener('focusout', function () {
+          fieldstate._setFocused(false);
+        }, false);
+        el.addEventListener('focusin', function () {
+          fieldstate._setFocused(true);
+        }, false);
+      });
+
+      vm.$on('vf:validate', function (data) {
+        if (!vm._vfValidationData_) {
+          addValidators(data, validators, fieldstate._validators);
+        }
+        vm._vfValidationData_ = data;
+        fieldstate._validate(vm.$vnode);
+      });
+    }
+  },
+  update: function update(el, binding, vnode, oldVNode) {
+    var validators = binding.value.config.validators;
+
+    var changes = compareChanges(vnode, oldVNode, validators);
+    var fieldstate = binding.value.fieldstate;
+
+
+    var attrs = vnode.data.attrs || {};
+    var vm = vnode.componentInstance;
+    if (vm && vm._vfValidationData_) {
+      attrs = extend({}, attrs, vm[vm._vfValidationData_]);
+    }
+
+    if (vnode.elm.className.indexOf(fieldstate._className[0]) === -1) {
+      vnode.elm.className = vnode.elm.className + ' ' + fieldstate._className.join(' ');
+    }
+
+    if (!changes) {
+      return;
+    }
+
+    if (changes.vModel) {
+      // re-validate all
+      if (attrs.debounce) {
+        fieldstate.$pending = true;
+        debouncedValidators[fieldstate._id](fieldstate, vnode);
+      } else {
+        if (fieldstate._hasFocused) {
+          fieldstate._setDirty();
+        }
+        fieldstate._validate(vnode);
+      }
+    } else {
+      // attributes have changed
+      // to do: loop through them and re-validate changed ones
+      //for(let prop in changes) {
+      //  fieldstate._validate(vnode, validator);
+      //}
+      // for now
+      fieldstate._validate(vnode);
+    }
+  }
+};
+
+function VueFormBase(options) {
+  var _components;
+
+  var c = extend(true, {}, config, options);
+  this.provide = function () {
+    return defineProperty({}, vueFormConfig, c);
+  };
+  this.components = (_components = {}, defineProperty(_components, c.formComponent, vueForm), defineProperty(_components, c.messagesComponent, messages), defineProperty(_components, c.validateComponent, validate), defineProperty(_components, c.fieldComponent, field), _components);
+  this.directives = { vueFormValidator: vueFormValidator };
+}
+
+var VueForm = function (_VueFormBase) {
+  inherits(VueForm, _VueFormBase);
+
+  function VueForm() {
+    classCallCheck(this, VueForm);
+    return possibleConstructorReturn(this, (VueForm.__proto__ || Object.getPrototypeOf(VueForm)).apply(this, arguments));
+  }
+
+  createClass(VueForm, null, [{
+    key: 'install',
+    value: function install(Vue, options) {
+      Vue.mixin(new this(options));
+    }
+  }, {
+    key: 'installed',
+    get: function get$$1() {
+      return !!this.install.done;
+    },
+    set: function set$$1(val) {
+      this.install.done = val;
+    }
+  }]);
+  return VueForm;
+}(VueFormBase);
+
+VueFormBase.call(VueForm);
+// temp fix for vue 2.3.0
+VueForm.options = new VueForm();
+
+return VueForm;
+
+})));
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(19)))
+
+/***/ }),
+
+/***/ 568:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var options = {
+    validators: {
+        checkbox: function checkbox(value, attrValue, vnode) {
+            // return true to set input as $valid, false to set as $invalid
+            return value;
+        },
+        sameas: function sameas(value, attrValue, vnode) {
+            return value == attrValue;
+        }
+    }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (options);
+
+/***/ }),
+
+/***/ 676:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(677);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(27)("63a6ae73", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrapValidator.min.css", function() {
+     var newContent = require("!!../../../css-loader/index.js!../../../vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":false,\"hasInlineConfig\":true}!./bootstrapValidator.min.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 677:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(18)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*!\r\n * BootstrapValidator (http://bootstrapvalidator.com)\r\n * The best jQuery plugin to validate form fields. Designed to use with Bootstrap 3\r\n *\r\n * @version     v0.5.3, built on 2014-11-05 9:14:18 PM\r\n * @author      https://twitter.com/nghuuphuoc\r\n * @copyright   (c) 2013 - 2014 Nguyen Huu Phuoc\r\n * @license     Commercial: http://bootstrapvalidator.com/license/\r\n *              Non-commercial: http://creativecommons.org/licenses/by-nc-nd/3.0/\r\n */\n.bv-form .help-block{margin-bottom:0\n}\n.bv-form .tooltip-inner{text-align:left\n}\n.nav-tabs li.bv-tab-success>a{color:#3c763d\n}\n.nav-tabs li.bv-tab-error>a{color:#a94442\n}\n.bv-form .bv-icon-no-label{top:0\n}\n.bv-form .bv-icon-input-group{top:0;z-index:100\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 678:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(679);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(27)("6afdcb8a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!./login.css");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 679:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(18)(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);", ""]);
+
+// module
+exports.push([module.i, "/* Fonts Imported from Google */\n\n/*   Core: General style\n----------------------------*/\nbody[data-v-624e51c6] {\n    font-family: 'Open Sans', sans-serif;\n    height: 100%;\n    padding: 6.5% 0;\n}\n#sign-in[data-v-624e51c6],\n#sign-up[data-v-624e51c6] {\n    background: radial-gradient(ellipse at center, #5A93AF 0%, #004E74 100%);\n}\n.login-form[data-v-624e51c6] {\n    background-color: rgba(255, 255, 255, .9);\n    border-radius: 4px;\n    padding-top: 15px;\n    padding-bottom: 15px;\n}\n.btn-primary[data-v-624e51c6],\n.primary[data-v-624e51c6],\n.tags a.primary[data-v-624e51c6] {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.btn[data-v-624e51c6]{\n    cursor: pointer;\n}\n.btn-primary[data-v-624e51c6]:hover {\n    border-color: #509DE0;\n    background: #509DE0 !important;\n}\n.icheckbox_minimal-blue[data-v-624e51c6] {\n    background-position: -20px 0;\n}\na[data-v-624e51c6]:hover,\na[data-v-624e51c6]:focus {\n    text-decoration: none;\n}\n.social a[data-v-624e51c6] {\n    border-radius: 50px;\n    padding: 10px 12px 2px 12px;\n    font-size: 25px;\n}\n.btn-facebook[data-v-624e51c6],\n.btn-facebook[data-v-624e51c6]:hover,\n.btn-facebook[data-v-624e51c6]:focus {\n    color: #5F7AB3;\n    border: 1px solid #5F7AB3;\n}\n.btn-twitter[data-v-624e51c6],\n.btn-twitter[data-v-624e51c6]:hover,\n.btn-twitter[data-v-624e51c6]:focus {\n    background: #3BACF2;\n    color: rgba(255, 255, 255, .85);\n    border: 1px solid #3BACF2;\n}\n.has-error .help-block[data-v-624e51c6],\n.has-error .control-label[data-v-624e51c6],\n.has-error .radio[data-v-624e51c6],\n.has-error .checkbox[data-v-624e51c6],\n.has-error .radio-inline[data-v-624e51c6],\n.has-error .checkbox-inline[data-v-624e51c6] {\n    color: #ff6666;\n}\n.has-error.radio label[data-v-624e51c6],\n.has-error.checkbox label[data-v-624e51c6],\n.has-success.radio label[data-v-624e51c6],\n.has-success.checkbox label[data-v-624e51c6] {\n    color: #333;\n}\n.radio[data-v-624e51c6],\n.checkbox[data-v-624e51c6] {\n    display: block;\n}\n.has-error .form-control[data-v-624e51c6],\n.has-error .form-control[data-v-624e51c6]:focus {\n    border-color: #ff6666;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.has-success .form-control[data-v-624e51c6],\n.has-success .form-control[data-v-624e51c6]:focus {\n    border-color: #66cc99;\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);\n}\n.btn-google[data-v-624e51c6],\n.btn-google[data-v-624e51c6]:hover,\n.btn-google[data-v-624e51c6]:focus {\n    color: #dd4b39;\n    border: 1px solid #dd4b39;\n}\n.social .alter[data-v-624e51c6] {\n    font-size: 21px;\n    color: #666;\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\n#forgot[data-v-624e51c6]:hover {\n    color: #2a6496 !important;\n}\n@media screen and (max-width: 400px) {\n.mar-left5[data-v-624e51c6] {\n        margin-left: 18px !important;\n        margin-top: -10px;\n}\n.mar-top4[data-v-624e51c6] {\n        margin-top: -10px;\n}\n.mar-left[data-v-624e51c6] {\n        margin-left: -5px !important;\n}\n.sign-up[data-v-624e51c6] {\n        float: left !important;\n}\n#forgot[data-v-624e51c6]::after {\n        content: \"\\A\";\n        white-space: pre;\n}\n}\n\n\n/* Chrome, Safari, Opera */\n@-webkit-keyframes CAnimation-data-v-624e51c6 {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n\n\n/* Standard syntax */\n@keyframes CAnimation-data-v-624e51c6 {\nfrom {\n        -webkit-filter: hue-rotate(0deg);\n}\nto {\n        -webkit-filter: hue-rotate(-360deg);\n}\n}\n.forgot[data-v-624e51c6] {\n    color: #428BCA !important;\n}\na[data-v-624e51c6]:hover {\n    text-decoration: none;\n}\n.radio label[data-v-624e51c6],\n.checkbox label[data-v-624e51c6] {\n    padding-left: 0;\n}\n@media (min-width: 768px) {\n.form_width[data-v-624e51c6] {\n        margin-left: 12%;\n}\n}\n\n\n/* ===== Preloader =====*/\n.preloader[data-v-624e51c6] {\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 100000;\n    backface-visibility: hidden;\n    background: #ffffff;\n}\n.loader_img[data-v-624e51c6] {\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    background-position: center;\n    margin: -25px 0 0 -25px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 680:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(681);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(27)("9bc21c8e", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./login.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-624e51c6\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=2!./login.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 681:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(18)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.login[data-v-624e51c6] {\n    padding-top: 15%;\n    padding-bottom: 2%;\n    width: 100%;\n    height: 100vh;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    overflow-y: auto;\n}\n@media (min-width: 1001px) {\n#bg[data-v-624e51c6] {\n        position: fixed; \n        top: -50%; \n        left: -50%; \n        max-width: 100%; \n        max-height: auto;\n}\n#bg img[data-v-624e51c6] {\n        position: fixed; \n        top: 0; \n        left: 0; \n        right: 0; \n        bottom: 0; \n        margin: auto; \n        max-width: 100%;\n        max-height: auto;\n}\n.image_full[data-v-624e51c6]{\n        display:block;\n}\n.image_mobile[data-v-624e51c6]{\n        display:none;\n}\n}\n@media (max-width: 1000px) and (min-width: 320px){\n.image_full[data-v-624e51c6]{\n        display:none;\n}\n.image_mobile[data-v-624e51c6]{\n        display:block;\n}\n#bg[data-v-624e51c6] {\n    position: fixed; \n    top: -50%; \n    left: -50%; \n    max-width: auto; \n    max-height: 100%;\n}\n#bg img[data-v-624e51c6] {\n        position: fixed; \n        top: 0; \n        left: 0; \n        right: 0; \n        bottom: 0; \n        margin: auto; \n        max-width: auto;\n        max-height: 100%;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 682:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form__ = __webpack_require__(567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_form__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__ = __webpack_require__(568);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_form___default.a, __WEBPACK_IMPORTED_MODULE_2__validations_validations_js__["a" /* default */]);
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "login",
+    data: function data() {
+        return {
+            formstate: {},
+            model: {
+                email: "",
+                password: ""
+
+            },
+            success: false,
+            has_error: false,
+            error: ''
+        };
+    },
+
+    methods: {
+        onSubmit: function onSubmit() {
+            if (this.formstate.$invalid) {
+                return;
+            } else {
+                var redirect = this.$auth.redirect();
+                var app = this;
+
+                this.$auth.login({
+                    data: {
+                        email: app.model.email,
+                        password: app.model.password
+                    },
+                    success: function success() {
+                        // handle redirection
+                        app.success = true;
+
+                        var redirectTo = redirect ? redirect.from.name : this.$auth.user().role === -1 ? '/' : '/';
+                        // const redirectTo = 'dashboard'
+                        // this.$router.push({ name: redirectTo })
+                        var Usuario = new Object();
+                        Usuario.name = this.$auth.user().nombre + ' ' + this.$auth.user().apellido;
+                        Usuario.job = this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
+                        Usuario.role = this.$auth.user().role;
+                        Usuario.id = this.$auth.user().id;
+                        this.$store.commit('changeUser', Usuario);
+                        console.log(Usuario);
+                        window.location.href = "/#/";
+                    },
+                    error: function error() {
+                        app.has_error = true;
+                    },
+                    rememberMe: true,
+                    fetchUser: true
+                });
+            }
+        }
+    },
+    mounted: function mounted() {},
+    destroyed: function destroyed() {}
+});
+
+/***/ }),
+
+/***/ 683:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { attrs: { id: "bg" } }, [
+      _c(
+        "span",
+        { staticStyle: { display: "inline-block", padding: "2px 3px" } },
+        [
+          _c(
+            "svg",
+            {
+              staticStyle: {
+                height: "12px",
+                width: "auto",
+                position: "relative",
+                "vertical-align": "middle",
+                top: "-2px",
+                fill: "white"
+              },
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                viewBox: "0 0 32 32"
+              }
+            },
+            [
+              _c("title", [_vm._v("unsplash-logo")]),
+              _c("path", {
+                attrs: { d: "M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z" }
+              })
+            ]
+          )
+        ]
+      ),
+      _c(
+        "span",
+        { staticStyle: { display: "inline-block", padding: "2px 3px" } },
+        [_vm._v("Michiel Ton")]
+      ),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "image_full",
+        attrs: { src: "img/login.jpg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "image_mobile",
+        attrs: { src: "img/login-m.jpg", alt: "" }
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid login" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-lg-4 col-10 col-sm-8 mx-auto login-form" },
+            [
+              _c("h2", { staticClass: "text-center logo_h2" }, [
+                _c("img", {
+                  attrs: { src: __webpack_require__(500), alt: "Logo" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-12" },
+                    [
+                      _c(
+                        "vue-form",
+                        {
+                          attrs: { state: _vm.formstate },
+                          on: {
+                            submit: function($event) {
+                              $event.preventDefault()
+                              return _vm.onSubmit($event)
+                            }
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-sm-12 mt-3 " }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group" },
+                                [
+                                  _c(
+                                    "validate",
+                                    { attrs: { tag: "div" } },
+                                    [
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.model.email,
+                                            expression: "model.email"
+                                          }
+                                        ],
+                                        staticClass: "form-control",
+                                        attrs: {
+                                          name: "email",
+                                          id: "email",
+                                          type: "email",
+                                          required: "",
+                                          autofocus: "",
+                                          placeholder: "Ingrese su correo"
+                                        },
+                                        domProps: { value: _vm.model.email },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.model,
+                                              "email",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "field-messages",
+                                        {
+                                          staticClass: "text-danger",
+                                          attrs: {
+                                            name: "email",
+                                            show: "$invalid && $submitted"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "required" },
+                                              slot: "required"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "El correo electrónico es un campo\n                                                            obligatorio"
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "email" },
+                                              slot: "email"
+                                            },
+                                            [_vm._v("El correo no es válido")]
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-12" }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group" },
+                                [
+                                  _c(
+                                    "validate",
+                                    { attrs: { tag: "div" } },
+                                    [
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.model.password,
+                                            expression: "model.password"
+                                          }
+                                        ],
+                                        staticClass: "form-control",
+                                        attrs: {
+                                          name: "password",
+                                          id: "password",
+                                          type: "password",
+                                          required: "",
+                                          placeholder: "Ingrese su contraseña",
+                                          minlength: "6",
+                                          maxlength: "10"
+                                        },
+                                        domProps: { value: _vm.model.password },
+                                        on: {
+                                          input: function($event) {
+                                            if ($event.target.composing) {
+                                              return
+                                            }
+                                            _vm.$set(
+                                              _vm.model,
+                                              "password",
+                                              $event.target.value
+                                            )
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "field-messages",
+                                        {
+                                          staticClass: "text-danger",
+                                          attrs: {
+                                            name: "password",
+                                            show: "$invalid && $submitted"
+                                          }
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "required" },
+                                              slot: "required"
+                                            },
+                                            [_vm._v("Se requiere contraseña")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "minlength" },
+                                              slot: "minlength"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "La contraseña debe tener al menos 6\n                                                            caractéres"
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              attrs: { slot: "maxlength" },
+                                              slot: "maxlength"
+                                            },
+                                            [
+                                              _vm._v(
+                                                "La contraseña debe tener como máximo 10\n                                                            caractéres"
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-12" }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group checkbox" },
+                                [
+                                  _c("label", { attrs: { for: "remember" } }, [
+                                    _c("input", {
+                                      attrs: {
+                                        type: "checkbox",
+                                        name: "remember",
+                                        id: "remember"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      " \n                                                    Recuerdame\n                                                "
+                                    )
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _vm.has_error && !_vm.success
+                              ? _c(
+                                  "div",
+                                  { staticClass: "alert alert-danger" },
+                                  [
+                                    _vm.error == "login_error"
+                                      ? _c("p", [_vm._v("Validation Errors.")])
+                                      : _c("p", [
+                                          _vm._v(
+                                            "Error, no se puede conectar con estas credenciales."
+                                          )
+                                        ])
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "btn btn-primary btn-block mb-3",
+                              attrs: { type: "submit", value: "Iniciar Sesión" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-sm-12" },
+                              [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "float-left",
+                                    attrs: { to: "/forgot_password", exact: "" }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "¿Olvide mi\n                                                contraseña? "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            )
+                          ])
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-624e51c6", module.exports)
+  }
+}
+
+/***/ })
+
+});

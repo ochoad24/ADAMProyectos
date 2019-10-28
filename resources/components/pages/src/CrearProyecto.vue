@@ -623,7 +623,7 @@
                 let me = this;
                 swal.fire({
                     title: '¿Quiere guardar el proyecto?',
-                    text: "Esta acción te llevará a crear tareas.",
+                    text: "Esta acción lo llevará a crear tareas.",
                     type: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',

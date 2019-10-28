@@ -174,6 +174,7 @@ class TareaController extends Controller
         $ruta = public_path().'/uploads/';
         try{
             DB::beginTransaction();
+            $completada = false;
             $estadistica=Estadistica::where('idTarea',$task)->delete();
             $empleado=Encargado::where('idTarea',$task)->delete();
             $fotos=Foto::where('idTarea',$task)->get();
@@ -183,12 +184,21 @@ class TareaController extends Controller
             }
             $tarea = Tarea::where('tarea.id', '=', $task)->first();
             $actividad = Actividad::findOrFail($tarea->idActividad);
+            $proyecto = Proyecto::findOrFail($actividad->idProyecto);
+            if($actividad->tareasCompletadas == $actividad->tareas) {
+                $completada = true;
+            }
             $actividad->tareas = $actividad->tareas - 1;
             if($tarea->estado == 1) {
                 $actividad->tareasCompletadas = $actividad->tareasCompletadas - 1;
             } else {
                 $actividad->tareasPendientes = $actividad->tareasPendientes - 1;
             }
+            if($actividad->tareasCompletadas == $actividad->tareas && $completada == false) {
+                $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas + 1;
+                $proyecto->actividadesPendientes = $proyecto->actividadesPendientes - 1;
+                $proyecto->save();
+            } 
             $actividad->save();
             $tarea->delete();   
             DB::commit();
@@ -211,16 +221,17 @@ class TareaController extends Controller
             $reporte->save();
 
             $actividad = Actividad::findOrFail($reporte->idActividad); 
-            $actividad->tareasCompletadas = $actividad->tareasCompletadas - 1;
-            $actividad->tareasPendientes = $actividad->tareasPendientes + 1;
-            $actividad->save();
-
             $proyecto = Proyecto::findOrFail($actividad->idProyecto);
             if($actividad->tareasCompletadas == $actividad->tareas) {
                 $proyecto->actividadesCompletadas = $proyecto->actividadesCompletadas - 1;
                 $proyecto->actividadesPendientes = $proyecto->actividadesPendientes + 1;
                 $proyecto->save();
-            }
+            } 
+
+            $actividad->tareasCompletadas = $actividad->tareasCompletadas - 1;
+            $actividad->tareasPendientes = $actividad->tareasPendientes + 1;
+            $actividad->save();
+
             $esta=Estadistica::where('idTarea',$tarea)->get();
             foreach($esta as $estadistica){
                 $estadistica->valor=-1;

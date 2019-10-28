@@ -9,7 +9,7 @@
                         <v-spacer></v-spacer>
                         <!-- Aqui Empieza el modal -->
                         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-                            <v-toolbar dark color="green darken-1">
+                            <v-toolbar dark color="light-green darken-2">
                                 <v-btn icon dark @click="dialog = false">
                                     <v-icon col="white">clear</v-icon>
                                 </v-btn>
@@ -280,7 +280,7 @@
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Si, Eliminalo!',
+                    confirmButtonText: 'Eliminar',
                     cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.value) {
