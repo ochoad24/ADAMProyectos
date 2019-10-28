@@ -237,7 +237,9 @@
                             @foreach ($estadisticas as $es)
                                 {{$es->nombre}}: {{round($es->valor,2)}}<br>
                             @endforeach
-                            </p></th>
+                            <a href="https://www.google.com/maps/@?api=1&map_action=map&center={{$t->latitud}},{{$t->longitud}}&zoom=18" target="_blank">Ubicación</a>
+                            </p>
+                            </th>
                         </tr>
                     </tbody>
                 </table>

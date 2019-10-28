@@ -111,6 +111,9 @@
                                                                     label="Total de participantes" type="number"
                                                                     disabled readonly>
                                                                 </v-text-field>
+                                                                <v-btn icon v-bind:href="'https://www.google.com/maps/@?api=1&map_action=map&center='+latitud+','+longitud+'&zoom=18'" target="_blank">
+                                                                    <v-icon>map</v-icon> Abrir Mapa
+                                                                </v-btn>
                                                             </v-flex>
                                                             <v-layout row wrap>
                                                                 <v-flex v-for="n in fotoShow" :key="n.id" xs2 d-flex>
@@ -386,12 +389,16 @@
     import axios from 'axios';
     import Multiselect from 'vue-multiselect';
     import { mapGetters } from 'vuex';
+    
     export default {
         name: "Tarea",
         components: {
             Multiselect
         },
         data: () => ({
+            api:'',
+            latitud:'',
+            longitud:'',
             tipo: {
                 id: 0,
                 nombre: ''
@@ -626,6 +633,8 @@
                         this.estadisticaShow = response.data.estadistica;
                         this.fotoShow = response.data.foto;
                         this.cantidadShow = response.data.tarea[0].participantes;
+                        this.latitud=response.data.tarea[0].latitud;
+                        this.longitud=response.data.tarea[0].longitud;
                         this.dialog2 = true;
                     })
                     .catch(errors => {

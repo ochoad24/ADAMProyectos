@@ -72,9 +72,8 @@
 
                                 <template v-if="error">
                                     <v-divider></v-divider>
-                                    <div class="text-xs-center">
-                                        <strong class="red--text text--lighten-1" v-for="e in errorMsj" :key="e"
-                                            v-text="e"></strong>
+                                    <div class="text-xs-center" v-for="e in errorMsj" :key="e">
+                                        <strong class="red--text text--lighten-1" v-text="e"></strong>
                                         <br>
                                     </div>
                                     <v-divider></v-divider>
@@ -82,7 +81,8 @@
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
                                     <v-btn color="#668c2d" flat @click="close">Cancelar</v-btn>
-                                    <v-btn color="#668c2d" flat @click="save">Guardar</v-btn>
+                                    <v-btn color="#668c2d" flat @click="save" :loading="loading" :disabled="loading">
+                                        Guardar</v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
@@ -101,8 +101,11 @@
                             <td class="text-xs-right">
                                 <template>
                                     <div class="text-xs-right">
-                                        <v-chip color="red" text-color="white" v-if="Date.parse(props.item.fechaFinal) < fechaActual && props.item.estado != 1 && props.item.estado != 2">Atrasado</v-chip>
-                                        <v-chip color="amber accent-4" text-color="white" v-else-if="props.item.estado==0">A tiempo</v-chip>
+                                        <v-chip color="red" text-color="white"
+                                            v-if="Date.parse(props.item.fechaFinal) < fechaActual && props.item.estado != 1 && props.item.estado != 2">
+                                            Atrasado</v-chip>
+                                        <v-chip color="amber accent-4" text-color="white"
+                                            v-else-if="props.item.estado==0">A tiempo</v-chip>
                                         <v-chip color="green" text-color="white" v-else-if="props.item.estado==1">
                                             Completado</v-chip>
                                         <v-chip color="blue" text-color="white" v-else-if="props.item.estado==2">
@@ -126,7 +129,7 @@
                                 </template>
                                 <span>Ver ubicación</span>
                             </v-tooltip>
-                            <v-tooltip bottom v-if="props.item.estado==1 && props.item.estado==1">
+                            <v-tooltip bottom v-if="props.item.Permiso==1 && props.item.estado==1">
                                 <template v-slot:activator="{ on }">
                                     <v-icon large class="mr-2" v-on="on" @click="cancelReport(props.item)">
                                         delete
@@ -134,16 +137,6 @@
                                 </template>
                                 <span>Borrar reporte</span>
                             </v-tooltip>
-                            <!-- <td class="justify-center">
-                                <v-icon large class="mr-2" @click="editItem(props.item)">
-                                    map
-                                </v-icon>
-                            </td>
-                            <td class="justify-center" v-if="props.item.estado==1 && props.item.estado==1">
-                                <v-icon large class="mr-2" @click="cancelReport(props.item)">
-                                    delete
-                                </v-icon>
-                            </td> -->
                         </template>
                         <template v-slot:no-data>
                             <v-btn color="#668c2d" dark class="mb-2" @click="initialize">Recargar</v-btn>
@@ -171,9 +164,11 @@
             Multiselect
         },
         data: () => ({
-            index:0,
-            item:{},
-            verificacion:0,
+            loader: null,
+            loading: false,
+            index: 0,
+            item: {},
+            verificacion: 0,
             cantidad: 0,
             id: 0,
             imageName: '',
@@ -243,7 +238,8 @@
 
         computed: {
             formTitle() {
-                return this.editedIndex === -1 ? 'Nueva Tarea' : 'Editar Tarea'
+                if (this.editedIndex === -1)
+                    return this.item.tarea;
             },
             ...mapGetters(["seleccion"])
         },
@@ -272,7 +268,7 @@
             this.initialize();
         },
         methods: {
-            Reload(){
+            Reload() {
                 this.initialize();
             },
             cancelReport(item) {
@@ -312,30 +308,30 @@
                 let me = this;
                 var url = `/proyecto/orgs?id=${id}`;
                 axios.get(url)
-                .then(response => {
-                    var orgs1 = response.data;
-                    var span = document.createElement("span");
-                    orgs1.forEach((item) => {
-                        span.innerHTML=`${item.departamento} - ${item.municipio} - ${item.comunidad} - ${item.nombre}<br>`
+                    .then(response => {
+                        var orgs1 = response.data;
+                        var span = document.createElement("span");
+                        orgs1.forEach((item) => {
+                            span.innerHTML = `${item.departamento} - ${item.municipio} - ${item.comunidad} - ${item.nombre}<br>`
+                        });
+                        var texto = span.outerHTML;
+                        swal.fire({
+                            type: 'info',
+                            title: 'Organizaciones',
+                            html: texto,
+                            showConfirmButton: true
+                        });
+                    })
+                    .catch(errors => {
+                        console.log(errors);
                     });
-                    var texto = span.outerHTML;
-                    swal.fire({
-                        type: 'info',
-                        title: 'Organizaciones',
-                        html: texto,
-                        showConfirmButton: true
-                    });
-                })
-                .catch(errors => {
-                    console.log(errors);
-                });
             },
             getIndex(list, id) {
                 return list.findIndex((e) => e.id == id)
             },
             deleteFoto(item) {
                 var index = this.fotos.indexOf(item);
-                this.item=item;
+                this.item = item;
                 if (index > -1) {
                     this.fotos.splice(index, 1);
                     this.files.splice(index, 1);
@@ -398,16 +394,23 @@
             validate() {
                 this.error = 0;
                 this.errorMsj = [];
-                if (!this.editedItem.nombre)
-                    this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+                if (this.verificacion == 1) {
+                    this.estadisticas.forEach(element => {
+                        if (element.value == null||element.value=='')
+                            this.errorMsj.push(`La estadistica ${element.nombre} se debe ingresar`);
+                    });
+                }
+                if(this.verificacion==1)
+                    if(this.cantidad==null)
+                        this.errorMsj.push('El total de participantes se debe ingresar');
                 if (this.errorMsj.length)
                     this.error = 1;
                 return this.error;
             },
             initialize() {
-                this.descripcion='';
-                this.cantidad='';
-                this.estadistica=[];
+                this.descripcion = '';
+                this.cantidad = '';
+                this.estadistica = [];
                 this.fechaActual = new Date;
                 Date.parse(this.fechaActual);
                 var url = '/tarea/select/usuario/' + this.$store.state.user.id;
@@ -441,78 +444,136 @@
                     });
             },
             editItem(item) {
-                this.index=this.tareas.indexOf(item);
-                this.item=item;
+                this.index = this.tareas.indexOf(item);
+                this.item = item;
                 this.id = item.id;
                 this.getEstadistica(item.id);
-                this.verificacion=this.item.verificacion;
+                this.verificacion = this.item.verificacion;
                 this.dialog = true;
             },
             close() {
                 this.error = 0;
                 this.dialog = false;
-                this.descripcion='';
-                this.cantidad='';
-                this.files=[];
-                this.fotos=[];
-                this.estadisticas=[];
-                this.estadistica=[];
+                this.descripcion = '';
+                this.cantidad = '';
+                this.files = [];
+                this.fotos = [];
+                this.estadisticas = [];
+                this.estadistica = [];
             },
 
             save() {
-                var lat='';
-                var lng='';
+                if (this.validate()) {
+                    return;
+                }
+                this.loader = 'loading';
+                this.loading = true;
+                var lat = '';
+                var lng = '';
                 let me = this;
                 var archivos = [];
                 this.files.forEach(element => {
                     archivos.push(element.file);
                 });
 
-                navigator.geolocation.getCurrentPosition( pos => {
-                    lat = pos.coords.latitude;
-                    lng = pos.coords.longitude;
-                    var form = new FormData();
-                    form.append('id', me.id);
-                    form.append('descripcion', me.descripcion);
-                    form.append('participantes', me.cantidad);
-                    form.append('latitud', lat);
-                    form.append('longitud', lng);
-                    for (var i = 0; i < me.files.length; i++) {
-                        form.append('fotos[]', me.files[i].file);
-                    }
-                    me.estadisticas.forEach(element => {
-                        var Esta=new Object();
-                        Esta.id=element.id.toString();
-                        Esta.nombre=element.nombre;
-                        Esta.value=element.value;
-                        me.estadistica.push(Esta);
+                var getPosition = function (options) {
+                    return new Promise(function (resolve, reject) {
+                        navigator.geolocation.getCurrentPosition(resolve, reject, options);
                     });
-                    form.append('estadisticas', JSON.stringify(me.estadistica));
-                    const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
-                
-                    axios.post('/Tarea/subir',form, ajuste).then(function (response) {
-                        console.log(response.data);
-                        let respuesta;
-                        if(response.data.offline==true)
-                            respuesta=response.data.data;
-                        else
-                            respuesta=response.data;
-                        swal.fire({
-                            position: 'top-end',
-                            type: 'success',
-                            title: respuesta,
-                            showConfirmButton: false,
+                }
+                getPosition()
+                    .then((position) => {
+                        lat = position.coords.latitude;
+                        lng = position.coords.longitude;
+                        var form = new FormData();
+                        form.append('id', me.id);
+                        form.append('descripcion', me.descripcion);
+                        form.append('participantes', me.cantidad);
+                        form.append('latitud', lat);
+                        form.append('longitud', lng);
+                        for (var i = 0; i < me.files.length; i++) {
+                            form.append('fotos[]', me.files[i].file);
+                        }
+                        me.estadisticas.forEach(element => {
+                            var Esta = new Object();
+                            Esta.id = element.id.toString();
+                            Esta.nombre = element.nombre;
+                            Esta.value = element.value;
+                            me.estadistica.push(Esta);
                         });
-                        console.log(respuesta);
-                         if ( navigator.onLine ) {
-                            me.initialize();
-                         }else{
-                             me.item.estado=2;
-                             me.tareas.splice(me.index,1,me.item);
-                         }
-                        me.close();
+                        form.append('estadisticas', JSON.stringify(me.estadistica));
+                        const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
+
+                        axios.post('/Tarea/subir', form, ajuste).then(function (response) {
+                            me.loader = null;
+                            me.loading = false;
+                            console.log(response.data);
+                            let respuesta;
+                            if (response.data.offline == true)
+                                respuesta = response.data.data;
+                            else
+                                respuesta = response.data;
+                            swal.fire({
+                                position: 'top-end',
+                                type: 'success',
+                                title: respuesta,
+                                showConfirmButton: false,
+                            });
+                            console.log(respuesta);
+                            if (navigator.onLine) {
+                                me.initialize();
+                            } else {
+                                me.item.estado = 2;
+                                me.tareas.splice(me.index, 1, me.item);
+                            }
+                            me.close();
+                        });
+                    })
+                    .catch((err) => {
+                        var form = new FormData();
+                        form.append('id', me.id);
+                        form.append('descripcion', me.descripcion);
+                        form.append('participantes', me.cantidad);
+                        form.append('latitud', lat);
+                        form.append('longitud', lng);
+                        for (var i = 0; i < me.files.length; i++) {
+                            form.append('fotos[]', me.files[i].file);
+                        }
+                        me.estadisticas.forEach(element => {
+                            var Esta = new Object();
+                            Esta.id = element.id.toString();
+                            Esta.nombre = element.nombre;
+                            Esta.value = element.value;
+                            me.estadistica.push(Esta);
+                        });
+                        form.append('estadisticas', JSON.stringify(me.estadistica));
+                        const ajuste = { headers: { 'Content-Type': 'multipart/form-data' } };
+
+                        axios.post('/Tarea/subir', form, ajuste).then(function (response) {
+                            me.loader = null;
+                            me.loading = false;
+                            console.log(response.data);
+                            let respuesta;
+                            if (response.data.offline == true)
+                                respuesta = response.data.data;
+                            else
+                                respuesta = response.data;
+                            swal.fire({
+                                position: 'top-end',
+                                type: 'success',
+                                title: respuesta,
+                                showConfirmButton: false,
+                            });
+                            console.log(respuesta);
+                            if (navigator.onLine) {
+                                me.initialize();
+                            } else {
+                                me.item.estado = 2;
+                                me.tareas.splice(me.index, 1, me.item);
+                            }
+                            me.close();
+                        });
                     });
-                });
             }
         }
     }

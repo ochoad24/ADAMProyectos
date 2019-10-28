@@ -1138,13 +1138,6 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^5.8.0:
-  version "5.8.38"
-  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-5.8.38.tgz#1c0b02eb63312f5f087ff20450827b425c9d4c19"
-  integrity sha1-HAsC62MxL18If/IEUIJ7QlydTBk=
-  dependencies:
-    core-js "^1.0.0"
-
 babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -2418,11 +2411,6 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
-
-core-js@^1.0.0:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
-  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.7"
@@ -6534,11 +6522,6 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
-
-marker-clusterer-plus@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/marker-clusterer-plus/-/marker-clusterer-plus-2.1.4.tgz#f8eff74d599dab3b7d0e3fed5264ea0e704f5d67"
-  integrity sha1-+O/3TVmdqzt9Dj/tUmTqDnBPXWc=
 
 masonry-layout@^4.1.0:
   version "4.2.2"
@@ -11130,14 +11113,6 @@ vue2-dropzone@^3.0.3:
   integrity sha512-cigwZLe2USiIdxHEUKHNuJcbrGDNwuyqSE/FnYXQpG27cxCFtbyo1b8ZxRTa0sTY3czcrFtIZTox67VMahA7cg==
   dependencies:
     dropzone "^5.5.0"
-
-vue2-google-maps@^0.8.4:
-  version "0.8.12"
-  resolved "https://registry.yarnpkg.com/vue2-google-maps/-/vue2-google-maps-0.8.12.tgz#71100265dbbd4a02da2d94aac803abe02afff21e"
-  integrity sha512-tMyn+3X0ekAAccuHzLho7/gJGZDzQ+1CQy5FFfcDIc18wPdcDBKOAfBhqvbebTkfZeURZ7b61D+pN2fbdOvyuw==
-  dependencies:
-    babel-runtime "^5.8.0"
-    marker-clusterer-plus "^2.1.4"
 
 vue2-scrollbar@^0.0.3:
   version "0.0.3"

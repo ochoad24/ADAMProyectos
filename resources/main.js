@@ -28,7 +28,7 @@ Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
 axios.defaults.baseURL='http://localhost:8000/api/v1';
 
-
+Vue.config.productionTip = true;
 
 Vue.use(vuetify, {
     lang: {
@@ -36,6 +36,7 @@ Vue.use(vuetify, {
         current: 'es'
     }
 })
+
 window.swal = swal;
 
 const router = new VueRouter({
@@ -59,32 +60,21 @@ router.afterEach((to, from) => {
     }
 })
 
+
 var url = window.location.href;
-var SwLocation='/sw.js';
-var swReg;
+var swLocation = '/sw.js';
 
-if(navigator.serviceWorker){
-    if(url.includes('localhost')){
-        SwLocation='/sw.js';    
+
+if ( navigator.serviceWorker ) {
+
+
+    if ( url.includes('localhost') ) {
+        swLocation = '/sw.js';
     }
-    window.addEventListener('load', function() {
 
-        navigator.serviceWorker.register( SwLocation ).then( function(reg){
 
-            swReg = reg;
-            swReg.pushManager.getSubscription().then( (activo)=>{
-                if(activo){
-                    store.commit('changeNotificacion',true)
-                }else{
-                    store.commit('changeNotificacion',false)
-                }
-            });
-
-        });
-
-    });
+    navigator.serviceWorker.register( swLocation );
 }
-
 
 // Ver si existe conexion a Internet
 function isOnline() {
@@ -105,11 +95,6 @@ window.addEventListener('online', isOnline );
 window.addEventListener('offline', isOnline );
 
 isOnline();
-
-// Obtener GeoLocalizacion
-navigator.geolocation.getCurrentPosition((pos)=>{
-    console.log(pos);
-});
 
 Vue.router = router;
 Vue.use(VueAuth, auth);

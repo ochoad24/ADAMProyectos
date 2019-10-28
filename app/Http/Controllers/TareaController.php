@@ -164,7 +164,7 @@ class TareaController extends Controller
     }
     public function watch($id){
         $ruta = public_path().'/uploads/';
-        $tarea=Tarea::select('descripcion','participantes')->where('id',$id)->get();
+        $tarea=Tarea::select('descripcion','participantes','latitud','longitud')->where('id',$id)->get();
         $empleado=Encargado::join('users','users.id','=','encargado.idEmpleado')->select(DB::raw("CONCAT(nombre,' ',apellido) as nombre"),'encargado.estado')->where('idTarea',$id)->get();
         $estadistica=Estadistica::join('nombre_estadistica','nombre_estadistica.id','=','estadistica.idNombreEstadistica')->select('nombre_estadistica.nombre','estadistica.valor')->where('idTarea',$id)->get();
         $fotos=Foto::select(DB::raw("id,CONCAT('/uploads/',ruta) as url"))->where('idTarea',$id)->get();
@@ -262,7 +262,7 @@ class TareaController extends Controller
         ->select(DB::raw('CONCAT(users.nombre, " ", users.apellido) as nombre'))
         ->where('tarea.id', '=', $request->id)->get();
 
-        $tarea = Tarea::select('tarea.tarea', 'tarea.fechaRealizacion', 'tarea.participantes')
+        $tarea = Tarea::select('tarea.tarea', 'tarea.fechaRealizacion', 'tarea.participantes','tarea.longitud','tarea.latitud')
         ->where('tarea.id', '=', $request->id)->get();
 
         $pdf = \PDF::loadView('pdf.actividad', ['tarea' => $tarea, 'encargado' => $encargado, 'estadisticas' => $estadisticas, 'fotos' => $fotos]);
