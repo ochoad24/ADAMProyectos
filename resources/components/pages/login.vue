@@ -3,7 +3,7 @@
         <div id="bg">
             <span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Michiel Ton</span>
             <img src="img/login.jpg" alt="" class="image_full">
-            <img src="img/login-m.jpg" alt="" class="image_mobile">
+            <img src="img/mobile.jpg" alt="" class="image_mobile">
         </div>
         <div class="container-fluid login">
             <div class="container">
