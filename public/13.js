@@ -742,7 +742,9 @@ var render = function() {
                       [
                         _c(
                           "v-toolbar",
-                          { attrs: { dark: "", color: "green darken-1" } },
+                          {
+                            attrs: { dark: "", color: "light-green darken-2" }
+                          },
                           [
                             _c(
                               "v-btn",

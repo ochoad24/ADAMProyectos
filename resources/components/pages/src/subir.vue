@@ -9,7 +9,7 @@
                         <v-spacer></v-spacer>
                         <!-- Aqui Empieza el modal -->
                         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-                            <v-toolbar dark color="green darken-1">
+                            <v-toolbar dark color="light-green darken-2">
                                 <v-btn icon dark @click="dialog = false">
                                     <v-icon col="white">clear</v-icon>
                                 </v-btn>

@@ -3,7 +3,7 @@
         <div id="bg">
             <span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Michiel Ton</span>
             <img src="img/login.jpg" alt="" class="image_full">
-            <img src="img/mobile.jpg" alt="" class="image_mobile">
+            <img src="img/login-m.jpg" alt="" class="image_mobile">
         </div>
         <div class="container-fluid login">
             <div class="container">
@@ -121,13 +121,12 @@
                             // const redirectTo = 'dashboard'
                             // this.$router.push({ name: redirectTo })
                             var Usuario=new Object();
-                            Usuario.nombre=this.$auth.user().nombre;
-                            Usuario.apellido=this.$auth.user().apellido;
-                            Usuario.job=this.$auth.user().role === 1 ? 'Administrador' : 'Técnico';
+                            Usuario.name=this.$auth.user().nombre+' '+this.$auth.user().apellido;
+                            Usuario.job=this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
                             Usuario.role=this.$auth.user().role;
                             Usuario.id=this.$auth.user().id;
-                            Usuario.email=this.$auth.user().email;
                             this.$store.commit('changeUser',Usuario);
+                            console.log(Usuario);
                             window.location.href="/#/";
                         },
                         error: function () {

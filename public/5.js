@@ -1670,13 +1670,12 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
                         // const redirectTo = 'dashboard'
                         // this.$router.push({ name: redirectTo })
                         var Usuario = new Object();
-                        Usuario.nombre = this.$auth.user().nombre;
-                        Usuario.apellido = this.$auth.user().apellido;
-                        Usuario.job = this.$auth.user().role === 1 ? 'Administrador' : 'Técnico';
+                        Usuario.name = this.$auth.user().nombre + ' ' + this.$auth.user().apellido;
+                        Usuario.job = this.$auth.user().role === 1 ? 'Admnistrador' : 'Técnico';
                         Usuario.role = this.$auth.user().role;
                         Usuario.id = this.$auth.user().id;
-                        Usuario.email = this.$auth.user().email;
                         this.$store.commit('changeUser', Usuario);
+                        console.log(Usuario);
                         window.location.href = "/#/";
                     },
                     error: function error() {
@@ -1745,7 +1744,7 @@ var render = function() {
       _vm._v(" "),
       _c("img", {
         staticClass: "image_mobile",
-        attrs: { src: "img/mobile.jpg", alt: "" }
+        attrs: { src: "img/login-m.jpg", alt: "" }
       })
     ]),
     _vm._v(" "),
