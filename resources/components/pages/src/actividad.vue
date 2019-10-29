@@ -162,7 +162,7 @@
                 </div>
             </b-card>
             <v-alert :value="true" color="warning" icon="priority_high" outline v-else >
-                ¡Por favor seleccione proyecto! 
+                Por favor seleccione un proyecto 
             </v-alert>
 
         </div>
@@ -180,8 +180,8 @@
         data: () => ({
             dialog: false,
               nameRules: [
-            v => !!v || 'El nombre de la actividad no puede estar vacio',
-            v => (v && v.length <= 449) || 'El titulo del proyecto no puede ser mayor a 500',
+            v => !!v || 'El nombre de la actividad no puede estar vacío',
+            v => (v && v.length <= 449) || 'El título del proyecto no puede ser mayor a 500',
 
             ],
             menu: false,

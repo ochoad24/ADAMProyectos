@@ -125,7 +125,7 @@
                                                 picture_as_pdf
                                             </v-icon>
                                         </template>
-                                        <span>Generar Reporte</span>
+                                        <span>Generar reporte</span>
                                     </v-tooltip>
                                 </td>
                             </template>

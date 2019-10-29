@@ -9843,7 +9843,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "display-2 text-xs-center pa-5" }, [
       _c("h1", { staticStyle: { color: "#668c2d" } }, [
-        _vm._v(" Progreso General de Proyectos")
+        _vm._v(" Progreso general de proyectos")
       ])
     ])
   }

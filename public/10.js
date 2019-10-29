@@ -531,32 +531,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 language: 'es'
             },
             ornameRules: [function (v) {
-                return !!v || 'El nombre de la organizacion no puede estar vacio';
+                return !!v || 'El nombre de la organizacion no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 149 || 'El titulo del proyecto no puede ser mayor a 150';
             }],
             munnameRules: [function (v) {
-                return !!v || 'El nombre del municipio no puede estar vacio';
+                return !!v || 'El nombre del municipio no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 149 || 'El nombre del municipio no puede ser mayor a 150';
             }],
             nameRules: [function (v) {
-                return !!v || 'El titulo del proyecto no puede estar vacio';
+                return !!v || 'El titulo del proyecto no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 99 || 'El titulo del proyecto no puede ser mayor a 100';
             }],
             desRules: [function (v) {
-                return !!v || 'La descripcion del proyecto no puede estar vacio';
+                return !!v || 'La descripcion del proyecto no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 999 || 'La descripcion del proyecto no puede ser mayor a 1000';
             }],
             codigoRules: [function (v) {
-                return !!v || 'El codigo del proyecto no puede estar vacio';
+                return !!v || 'El codigo del proyecto no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 50 || 'El codigo de la actividad no puede ser mayor a 50';
             }],
             actividadRules: [function (v) {
-                return !!v || 'La descripcion del proyecto no puede estar vacio';
+                return !!v || 'La descripcion del proyecto no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 500 || 'El nombre de la actividad no puede ser mayor a 500';
             }],
@@ -606,7 +606,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             menu2: false,
             menu3: false,
             menu4: false,
-            headersOrg: [{ text: "Organizacion", value: 'nombre', align: 'right' }, { text: "Departamento", value: 'departamento', align: 'right' }, { text: "Municipio", value: 'municipio', align: 'right' }, { text: "Comunidad", value: 'comunidad', align: 'right' }],
+            headersOrg: [{ text: "Organización", value: 'nombre', align: 'right' }, { text: "Departamento", value: 'departamento', align: 'right' }, { text: "Municipio", value: 'municipio', align: 'right' }, { text: "Comunidad", value: 'comunidad', align: 'right' }],
             headersActividades: [{ text: 'Código', value: 'codigo', align: 'right' }, { text: 'Actividad', value: 'actividad', align: 'right' }, { text: 'Observaciones', value: 'descripcion', align: 'right' }, { text: 'Fecha de Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha de Finalización', value: 'fechaFinal', align: 'right' }],
             proyecto: {
                 id: 0,
@@ -647,7 +647,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.titulo) this.errorMsj.push('El título del proyecto no puede estar vacio');
+            if (!this.titulo) this.errorMsj.push('El título del proyecto no puede estar vacío');
             if (!this.descripcion) this.errorMsj.push('La descripción del proyecto no puede estar vacía');
             if (this.orgs.length === 0) this.errorMsj.push('Por favor seleccione una o más organizaciones');
             if (Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF)) this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
@@ -676,7 +676,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate_org: function validate_org() {
             this.error1 = 0;
             this.errorMsj1 = [];
-            if (!this.nombre) this.errorMsj1.push('El nombre de la organización no puede estar vacio');
+            if (!this.nombre) this.errorMsj1.push('El nombre de la organización no puede estar vacío');
             if (!this.municipio) this.errorMsj1.push('El municipio no puede estar vacío');
             if (this.select.length > 0) this.errorMsj1.push('Por favor seleccione un departamento');
             if (this.errorMsj1.length) this.error1 = 1;else this.error1 = 0;
@@ -1761,7 +1761,7 @@ var render = function() {
                               ),
                               _vm._v(" "),
                               _c("v-toolbar-title", [
-                                _vm._v("Nueva Organizacion")
+                                _vm._v("Nueva Organización")
                               ])
                             ],
                             1

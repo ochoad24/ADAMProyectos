@@ -553,8 +553,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             editar: 0,
             loader: null,
             loading: false,
-            headers: [{ text: 'Titulo', value: 'Titulo', align: 'left' }, { text: 'Descripcion', value: 'Descripcion', align: 'right' }, { text: 'Fecha de inicio', value: 'FechaInicio', align: 'right' }, { text: 'Fecha de finalización', value: 'FechaFin', align: 'right' }, { text: 'Estado', value: 'Estado', align: 'right' }],
-            headersOrg: [{ text: "Organizacion", value: 'nombre', align: 'right' }, { text: "Departamento", value: 'departamento', align: 'right' }, { text: "Municipio", value: 'municipio', align: 'right' }, { text: "Comunidad", value: 'comunidad', align: 'right' }],
+            headers: [{ text: 'Título', value: 'Titulo', align: 'left' }, { text: 'Descripción', value: 'Descripcion', align: 'right' }, { text: 'Fecha de inicio', value: 'FechaInicio', align: 'right' }, { text: 'Fecha de finalización', value: 'FechaFin', align: 'right' }, { text: 'Estado', value: 'Estado', align: 'right' }],
+            headersOrg: [{ text: "Organización", value: 'nombre', align: 'right' }, { text: "Departamento", value: 'departamento', align: 'right' }, { text: "Municipio", value: 'municipio', align: 'right' }, { text: "Comunidad", value: 'comunidad', align: 'right' }],
             menu: false,
             menu2: false,
             titulo: '',
@@ -761,12 +761,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         'id': id
                     }).then(function (response) {
                         me.initialize();
-                        swalWithBootstrapButtons.fire('Activado', '¡El proyecto ha sido activado!', 'success');
+                        swalWithBootstrapButtons.fire('Activado', 'El proyecto ha sido activado', 'success');
                     }).catch(function (error) {
-                        swalWithBootstrapButtons.fire('Error', '¡Error al activar proyecto!', 'error');
+                        swalWithBootstrapButtons.fire('Error', 'Error al activar proyecto', 'error');
                     });
                 } else {
-                    swalWithBootstrapButtons.fire('Cancelado :(');
+                    swalWithBootstrapButtons.fire('Cancelado');
                 }
             });
         },
@@ -1033,7 +1033,7 @@ var render = function() {
                                           [
                                             _c("v-text-field", {
                                               attrs: {
-                                                label: "Titulo del proyecto",
+                                                label: "Título del proyecto",
                                                 maxlength: "100",
                                                 required: "",
                                                 rules: _vm.nameRules,
@@ -2166,86 +2166,6 @@ var render = function() {
                                 [
                                   _vm._v(" "),
                                   _c("span", [_vm._v("Borrar proyecto")])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-tooltip",
-                                {
-                                  attrs: { bottom: "" },
-                                  scopedSlots: _vm._u(
-                                    [
-                                      {
-                                        key: "activator",
-                                        fn: function(ref) {
-                                          var on = ref.on
-                                          return [
-                                            props.item.Estado === 1
-                                              ? _c(
-                                                  "v-icon",
-                                                  _vm._g(
-                                                    {
-                                                      staticClass: "mr-2",
-                                                      attrs: { small: "" },
-                                                      on: {
-                                                        click: function(
-                                                          $event
-                                                        ) {
-                                                          return _vm.desactivar(
-                                                            props.item
-                                                              .IdProyecto
-                                                          )
-                                                        }
-                                                      }
-                                                    },
-                                                    on
-                                                  ),
-                                                  [
-                                                    _vm._v(
-                                                      "\n                                        block\n                                    "
-                                                    )
-                                                  ]
-                                                )
-                                              : _c(
-                                                  "v-icon",
-                                                  _vm._g(
-                                                    {
-                                                      staticClass: "mr-2",
-                                                      attrs: { small: "" },
-                                                      on: {
-                                                        click: function(
-                                                          $event
-                                                        ) {
-                                                          return _vm.activar(
-                                                            props.item
-                                                              .IdProyecto
-                                                          )
-                                                        }
-                                                      }
-                                                    },
-                                                    on
-                                                  ),
-                                                  [
-                                                    _vm._v(
-                                                      "\n                                        check_circle\n                                    "
-                                                    )
-                                                  ]
-                                                )
-                                          ]
-                                        }
-                                      }
-                                    ],
-                                    null,
-                                    true
-                                  )
-                                },
-                                [
-                                  _vm._v(" "),
-                                  props.item.Estado === 1
-                                    ? _c("span", [
-                                        _vm._v("Desactivar proyecto")
-                                      ])
-                                    : _c("span", [_vm._v("Activar proyecto")])
                                 ]
                               )
                             ],

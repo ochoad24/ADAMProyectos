@@ -242,7 +242,7 @@ __WEBPACK_IMPORTED_MODULE_2_vee_validate__["a" /* Validator */].localize("es", _
 
             this.$validator.validateAll(scope).then(function (result) {
                 if (result) {
-                    _this.$http.post("/auth/reset/password/", {
+                    _this.$http.post("php/auth/reset/password/", {
                         token: _this.$route.query.token,
                         email: _this.email,
                         password: _this.password,

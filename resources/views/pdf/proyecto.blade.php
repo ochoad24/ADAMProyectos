@@ -94,8 +94,8 @@
                       print_r($hoy["mon"] . '/');
                       print_r($hoy["year"] . '<br>');
                     ?>
-                   
                     https://www.adam.org.gt
+                    <br>
                     11 calle 19-08 A
                     Zona 3
                     Quetzaltenango, Guatemala 
@@ -119,8 +119,8 @@
         <tr>
           <th class="th">Código</th>
           <th class="th">Actividad</th>
-          <th class="th">Fecha Inicio</th>    
-          <th class="th">Fecha Finalización</th>
+          <th class="th">Fecha inicio</th>    
+          <th class="th">Fecha límite</th>
           <th class="th">% Completado</th>
         </tr>
         </thead>
@@ -142,7 +142,7 @@
     <table width="100%">
         <tr>
             <td align="left" style="width: 60%;">
-                &copy; {{ date('Y') }} - 2019 ADAM · Asociación de Desarrollo Agrícola y Empresarial.
+                &copy; {{ date('Y') }} ADAM · Asociación de Desarrollo Agrícola y Empresarial.
             </td>
             <td align="right" style="width: 40%;">
               Tel. (502) 7767 4672 | info@adam.org.gt

@@ -26,7 +26,7 @@
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12>
-                                                <v-text-field v-model="titulo" label="Titulo del proyecto" maxlength="100"  required :rules="nameRules" :counter="100" >
+                                                <v-text-field v-model="titulo" label="Título del proyecto" maxlength="100"  required :rules="nameRules" :counter="100" >
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12>
@@ -236,7 +236,7 @@
                                     </template>
                                     <span>Borrar proyecto</span>
                                 </v-tooltip>
-                                 <v-tooltip bottom>
+                                 <!-- <v-tooltip bottom>
                                     <template v-slot:activator="{ on }">
                                         <v-icon small class="mr-2" v-on="on" v-if="props.item.Estado === 1"
                                             @click="desactivar(props.item.IdProyecto)">
@@ -248,7 +248,7 @@
                                     </template>
                                     <span v-if="props.item.Estado === 1">Desactivar proyecto</span>
                                     <span v-else>Activar proyecto</span>
-                                </v-tooltip>
+                                </v-tooltip> -->
                             </td>
                         </template>
                         <template v-slot:no-data>
@@ -392,14 +392,14 @@
             loader: null,
             loading: false,
             headers: [
-                { text: 'Titulo', value: 'Titulo', align: 'left' },
-                { text: 'Descripcion', value: 'Descripcion', align: 'right' },
+                { text: 'Título', value: 'Titulo', align: 'left' },
+                { text: 'Descripción', value: 'Descripcion', align: 'right' },
                 { text: 'Fecha de inicio', value: 'FechaInicio', align: 'right' },
                 { text: 'Fecha de finalización', value: 'FechaFin', align: 'right' },
                 { text: 'Estado', value: 'Estado', align: 'right' },
             ],
             headersOrg: [
-                { text: "Organizacion", value: 'nombre', align: 'right' },
+                { text: "Organización", value: 'nombre', align: 'right' },
                 { text: "Departamento", value: 'departamento', align: 'right' },
                 { text: "Municipio", value: 'municipio', align: 'right' },
                 { text: "Comunidad", value: 'comunidad', align: 'right' },
@@ -636,19 +636,19 @@
                             me.initialize();
                             swalWithBootstrapButtons.fire(
                                 'Activado',
-                                '¡El proyecto ha sido activado!',
+                                'El proyecto ha sido activado',
                                 'success'
                             )
                         }).catch(function (error) {
                             swalWithBootstrapButtons.fire(
                                 'Error',
-                                '¡Error al activar proyecto!',
+                                'Error al activar proyecto',
                                 'error'
                             )
                         });
                     } else {
                         swalWithBootstrapButtons.fire(
-                            'Cancelado :('
+                            'Cancelado'
                         )
                     }
                 });

@@ -47,6 +47,10 @@ class UserController extends Controller
          CONCAT(actividades.codigo_actividad, " ", actividades.actividad) as actividad'))
         ->where('encargado.idEmpleado', '=', $request->id)
         ->orderBy('actividad', 'asc')->get();
+        foreach ($tareas as &$p) {
+            $p->fechaRealizacion = \Carbon\Carbon::parse($p->fechaRealizacion)->format('d/m/Y');
+            $p->fechaFinal = \Carbon\Carbon::parse($p->fechaFinal)->format('d/m/Y');
+        }
 
         $pdf = \PDF::loadView('pdf.responsable', ['responsable' => $responsable, 'tareas' => $tareas]);
         return $pdf->stream('reporte-'.$responsable[0]->id.'.pdf');

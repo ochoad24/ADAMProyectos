@@ -162,12 +162,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             dialog: false,
             ornameRules: [function (v) {
-                return !!v || 'El nombre de la organizacion no puede estar vacio';
+                return !!v || 'El nombre de la organizacion no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 149 || 'El titulo del proyecto no puede ser mayor a 150';
             }],
             munnameRules: [function (v) {
-                return !!v || 'El nombre del municipio no puede estar vacio';
+                return !!v || 'El nombre del municipio no puede estar vacío';
             }, function (v) {
                 return v && v.length <= 149 || 'El nombre del municipio no puede ser mayor a 150';
             }],
@@ -229,7 +229,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.nombre) this.errorMsj.push('El nombre de la organización no puede estar vacio');
+            if (!this.nombre) this.errorMsj.push('El nombre de la organización no puede estar vacío');
             if (!this.municipio) this.errorMsj.push('El municipio no puede estar vacío');
             if (this.select.length > 0) this.errorMsj.push('Por favor seleccione un departamento');
             if (this.errorMsj.length) this.error = 1;else this.error = 0;

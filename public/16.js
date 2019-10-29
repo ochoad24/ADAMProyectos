@@ -250,9 +250,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         return {
             dialog: false,
             nameRules: [function (v) {
-                return !!v || 'El nombre de la actividad no puede estar vacio';
+                return !!v || 'El nombre de la actividad no puede estar vacío';
             }, function (v) {
-                return v && v.length <= 449 || 'El titulo del proyecto no puede ser mayor a 500';
+                return v && v.length <= 449 || 'El título del proyecto no puede ser mayor a 500';
             }],
             menu: false,
             menu2: false,
@@ -1602,7 +1602,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n            ¡Por favor seleccione proyecto! \n        "
+                  "\n            Por favor seleccione un proyecto \n        "
                 )
               ]
             )

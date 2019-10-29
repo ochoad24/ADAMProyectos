@@ -143,9 +143,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             search: '',
             dialog: false,
             nameRules: [function (v) {
-                return !!v || 'El nombre de la estadistica no puede estar vacio';
+                return !!v || 'El nombre de la estadística no puede estar vacío';
             }, function (v) {
-                return v && v.length <= 19 || 'El nombre de la estadistica no puede ser mayor a 20';
+                return v && v.length <= 19 || 'El nombre de la estadística no puede ser mayor a 20';
             }],
             error: 0,
             errorMsj: [],
@@ -169,7 +169,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         formTitle: function formTitle() {
-            return this.editedIndex === -1 ? 'Nueva Estadistica' : 'Editar Estadistica';
+            return this.editedIndex === -1 ? 'Nueva Estadística' : 'Editar Estadística';
         }
     },
 
@@ -188,7 +188,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+            if (!this.editedItem.nombre) this.errorMsj.push('El nombre de la estadística no puede estar vacío');
             if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
@@ -209,13 +209,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
-                title: 'Quieres eliminar esta estadistica?',
-                text: "No podras revertir la eliminacion!",
+                title: '¿Quieres eliminar esta estadística?',
+                text: "No podras revertir esta acción",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, Eliminalo!',
+                confirmButtonText: 'Eliminar',
                 cancelButtonText: "Cancelar"
             }).then(function (result) {
                 if (result.value) {
@@ -326,7 +326,7 @@ var render = function() {
           "b-card",
           {
             staticClass: "bg-primary-card",
-            attrs: { header: "Tipo de Actividades", "header-tag": "h4" }
+            attrs: { header: "Estadísticas", "header-tag": "h4" }
           },
           [
             _c(
@@ -374,7 +374,7 @@ var render = function() {
                                     },
                                     on
                                   ),
-                                  [_vm._v("Nueva Estadistica")]
+                                  [_vm._v("Nueva estadística")]
                                 )
                               ]
                             }
@@ -416,7 +416,7 @@ var render = function() {
                                 ),
                                 _vm._v(" "),
                                 _c("v-toolbar-title", [
-                                  _vm._v("Nueva estadistica")
+                                  _vm._v("Nueva estadística")
                                 ])
                               ],
                               1
@@ -446,7 +446,7 @@ var render = function() {
                                             _c("v-text-field", {
                                               attrs: {
                                                 label:
-                                                  "Nombre de la estadistica",
+                                                  "Nombre de la estadística",
                                                 maxlength: "20",
                                                 required: "",
                                                 rules: _vm.nameRules,

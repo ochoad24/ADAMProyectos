@@ -84,7 +84,7 @@
             validateForm(scope) {
                 this.$validator.validateAll(scope).then((result) => {
                     if (result) {
-                        this.$http.post("/auth/reset/password/", {
+                        this.$http.post("php/auth/reset/password/", {
                             token: this.$route.query.token,
                             email: this.email,
                             password: this.password,

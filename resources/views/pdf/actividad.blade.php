@@ -190,14 +190,9 @@
          
             <td align="right" style="width: 40%;">
              
-              
-                    <?php 
-                      print_r($hoy["mday"] . '/');
-                      print_r($hoy["mon"] . '/');
-                      print_r($hoy["year"] . '<br>');
-                    ?>
                    
                     https://www.adam.org.gt
+                    <br>
                     11 calle 19-08 A
                     Zona 3
                     Quetzaltenango, Guatemala 
@@ -210,7 +205,7 @@
              </div>  
             </center>
             <div class="contenedor">
-            <center><h3>Reporte de Actividades</h3></center>
+            <center><h3>Reporte de tarea</h3></center>
           
             <hr class="hr">
         </div>

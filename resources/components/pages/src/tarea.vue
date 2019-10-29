@@ -162,7 +162,7 @@
                                         <v-dialog v-model="dialog" fullscreen hide-overlay
                                             transition="dialog-bottom-transition">
                                             <template v-slot:activator="{ on }">
-                                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nueva Tarea</v-btn>
+                                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nueva tarea</v-btn>
                                             </template>
                                             <v-toolbar dark color="#668c2d">
                                                 <v-btn icon dark @click="dialog = false">
@@ -182,7 +182,7 @@
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md12>
                                                                 <v-slider v-model="number" color="#668c2d"
-                                                                    label="Cantidad de Tareas" min="1" max="100"
+                                                                    label="Cantidad de tareas" min="1" max="100"
                                                                     thumb-label></v-slider>
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md6>
@@ -239,10 +239,10 @@
 
                                                             </v-flex>
                                                             <v-switch :color="color" v-model="verificacion"
-                                                                :label="`Estadisticas: ${verificacion=='1'?'Mostrar':'No Mostrar'}`">
+                                                                :label="`Estadísticas: ${verificacion=='1'?'Mostrar':'No mostrar'}`">
                                                             </v-switch>
                                                             <v-flex xs12 sm12 md12 v-if="verificacion">
-                                                                <v-subheader color="black">Configuracion de Estadisticas
+                                                                <v-subheader color="black">Configuración de estadísticas
                                                                 </v-subheader>
                                                                 <multiselect v-model="estadistica"
                                                                     :options="estadisticas" :multiple="true"
@@ -253,7 +253,7 @@
                                                                 </multiselect>
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md12>
-                                                                <v-subheader>Asignacion de tareas</v-subheader>
+                                                                <v-subheader>Asignación de tareas</v-subheader>
                                                                 <multiselect v-model="empleado" :options="empleados"
                                                                     :multiple="true" :taggable="false"
                                                                     :close-on-select="false" :clear-on-select="false"
@@ -262,7 +262,7 @@
                                                                 </multiselect>
                                                             </v-flex>
                                                             <v-flex xs12 sm12 md12 lg12>
-                                                                <v-subheader>Responsables Asignados</v-subheader>
+                                                                <v-subheader>Responsables asignados</v-subheader>
                                                             </v-flex>
                                                             <v-flex>
                                                                 <v-data-table :headers="headersUsers" :items="empleado"
@@ -379,7 +379,7 @@
                 </v-flex>
             </b-card>
             <v-alert :value="true" color="warning" icon="priority_high" outline v-else>
-                ¡Por favor seleccione proyecto!
+                Por favor seleccione un proyecto
             </v-alert>
         </div>
     </div>
@@ -414,7 +414,7 @@
             estadisticas: [],
             estadistica: [],
             nameRules: [
-                v => !!v || 'El nombre de la tarea no puede estar vacia',
+                v => !!v || 'El nombre de la tarea no puede estar vacía',
                 v => (v && v.length <= 239) || 'El nombre de la tarea no puede ser mayor a 240',
 
             ],
@@ -444,9 +444,9 @@
             errorMsj: [],
             headers: [
                 { text: 'Nombre', value: 'tarea', align: 'right' },
-                { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' },
-                { text: 'Fecha Final', value: 'fechaFinal', align: 'right' },
-                { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' },
+                { text: 'Fecha inicio', value: 'fechaInicio', align: 'right' },
+                { text: 'Fecha final', value: 'fechaFinal', align: 'right' },
+                { text: 'Fecha realización', value: 'fechaRealizacion', align: 'right' },
                 { text: 'Estado', value: 'estado', align: 'center' },
             ],
             headers2: [
@@ -456,7 +456,7 @@
                 { text: 'Actividad', value: 'nombre', align: 'center' }
             ],
             headers3: [
-                { text: 'Estadistica', value: 'nombre', align: 'left' },
+                { text: 'Estadística', value: 'nombre', align: 'left' },
                 { text: 'Valor', value: 'valor', align: 'left' }
             ],
             headersUsers: [
@@ -561,7 +561,7 @@
                 this.error = 0;
                 this.errorMsj = [];
                 if (!this.tarea)
-                    this.errorMsj.push('La tarea no puede estar vacia.');
+                    this.errorMsj.push('La tarea no puede estar vacía.');
                 if (this.empleado.length < 1)
                     this.errorMsj.push('Debe almenos seleccionar a un encargado.');
                 if ((this.empleado.length > 1) && (this.verify==false))
@@ -569,7 +569,7 @@
                 if (Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF))
                     this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
                 if (this.verificacion == true && this.estadistica.length  < 1)
-                    this.errorMsj.push('Debe almenos seleccionar una estadistica.');
+                    this.errorMsj.push('Debe almenos seleccionar una estadística.');
                 if (this.errorMsj.length)
                     this.error = 1;
                 return this.error;
@@ -644,8 +644,8 @@
             deleteItem(item) {
                 let me = this;
                 swal.fire({
-                    title: 'Quieres eliminar esta tarea?',
-                    text: "No podras revertir la eliminacion!",
+                    title: '¿Quieres eliminar esta tarea?',
+                    text: "No podras revertir esta acción",
                     type: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',

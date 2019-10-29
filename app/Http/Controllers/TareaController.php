@@ -85,7 +85,7 @@ class TareaController extends Controller
                 }
             }
             DB::commit();
-            return 'Se han creado la tareas con exito';   
+            return 'Se han creado la tareas con éxito';   
         }catch(\Exception $e){
             DB::rollback();
             $response['error'] = $e->getMessage();
@@ -141,7 +141,7 @@ class TareaController extends Controller
                 }
             }
             DB::commit();
-            return 'Se ha subido el reporte con exito';   
+            return 'Se ha subido el reporte con éxito';   
         }catch(\Exception $e){
             DB::rollback();
             $response['error'] = $e->getMessage();
@@ -243,7 +243,7 @@ class TareaController extends Controller
                 $foto->delete();
             }
             DB::commit();
-            return 'Se ha cancelado su reporte con exito';   
+            return 'Se ha cancelado su reporte con éxito';   
         }catch(\Exception $e){
             DB::rollback();
             $response['error'] = $e->getMessage();

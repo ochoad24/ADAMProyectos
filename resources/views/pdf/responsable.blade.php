@@ -82,7 +82,7 @@
         </div>
         </header>
         <br>
-        <center> <h3>Reporte de rendimiento {{$r->nombreEmp}}</h3>
+        <center> <h3>Reporte de rendimiento de {{$r->nombreEmp}}</h3>
         @endforeach
         
             <div class="invoice">
@@ -92,8 +92,8 @@
                             <th class="th">Actividad</th>
                             <th class="th">Tarea</th>
                             <th class="th">Realizado</th>
-                            <th class="th">Fecha Límite</th>
-                            <th class="th">Fecha Realización</th>
+                            <th class="th">Fecha límite</th>
+                            <th class="th">Fecha realización</th>
                         </tr>
                     </thead>
                     <tbody id="cliente">
@@ -116,7 +116,7 @@
     <table width="100%">
         <tr>
             <td align="left" style="width: 60%;">
-                &copy; {{ date('Y') }} - 2019 ADAM · Asociación de Desarrollo Agrícola y Empresarial.
+                &copy; {{ date('Y') }} ADAM · Asociación de Desarrollo Agrícola y Empresarial.
             </td>
             <td align="right" style="width: 40%;">
               Tel. (502) 7767 4672 | info@adam.org.gt

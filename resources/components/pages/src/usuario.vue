@@ -29,11 +29,11 @@
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
-                                                <v-text-field :type="'email'" v-model="editedItem.usuario" label="Ingrese su email">
+                                                <v-text-field :type="'email'" v-model="editedItem.usuario" label="Email">
                                                 </v-text-field>
                                             </v-flex>
                                             <v-flex xs12 sm6 md6>
-                                                <v-select :items="roles" label="Seleccione un Rol" v-model="idRol"></v-select>
+                                                <v-select :items="roles" label="Seleccione un rol" v-model="idRol"></v-select>
                                             </v-flex>
                                         </v-layout>
                                     </v-container>

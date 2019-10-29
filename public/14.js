@@ -532,7 +532,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             estadisticas: [],
             estadistica: [],
             nameRules: [function (v) {
-                return !!v || 'El nombre de la tarea no puede estar vacia';
+                return !!v || 'El nombre de la tarea no puede estar vacía';
             }, function (v) {
                 return v && v.length <= 239 || 'El nombre de la tarea no puede ser mayor a 240';
             }],
@@ -560,10 +560,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             dialog2: false,
             error: 0,
             errorMsj: [],
-            headers: [{ text: 'Nombre', value: 'tarea', align: 'right' }, { text: 'Fecha Inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha Final', value: 'fechaFinal', align: 'right' }, { text: 'Fecha Realizacion', value: 'fechaRealizacion', align: 'right' }, { text: 'Estado', value: 'estado', align: 'center' }],
+            headers: [{ text: 'Nombre', value: 'tarea', align: 'right' }, { text: 'Fecha inicio', value: 'fechaInicio', align: 'right' }, { text: 'Fecha final', value: 'fechaFinal', align: 'right' }, { text: 'Fecha realización', value: 'fechaRealizacion', align: 'right' }, { text: 'Estado', value: 'estado', align: 'center' }],
             headers2: [{ text: 'Responsables', value: 'nombre', align: 'left' }],
             headersAct: [{ text: 'Actividad', value: 'nombre', align: 'center' }],
-            headers3: [{ text: 'Estadistica', value: 'nombre', align: 'left' }, { text: 'Valor', value: 'valor', align: 'left' }],
+            headers3: [{ text: 'Estadística', value: 'nombre', align: 'left' }, { text: 'Valor', value: 'valor', align: 'left' }],
             headersUsers: [{ text: 'Id', value: 'id', align: 'right' }, { text: 'Nombre', value: 'nombre', align: 'right' }, { text: 'Estado', value: 'estado', align: 'right' }, { text: 'Encargado', value: 'encargado', align: 'right' }],
             tareas: [],
             editedIndex: -1,
@@ -659,11 +659,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         validate: function validate() {
             this.error = 0;
             this.errorMsj = [];
-            if (!this.tarea) this.errorMsj.push('La tarea no puede estar vacia.');
+            if (!this.tarea) this.errorMsj.push('La tarea no puede estar vacía.');
             if (this.empleado.length < 1) this.errorMsj.push('Debe almenos seleccionar a un encargado.');
             if (this.empleado.length > 1 && this.verify == false) this.errorMsj.push('Uno de los responsables debe ser el encargado.');
             if (Date.parse(this.fechaI) > Date.parse(this.fechaF) || Date.parse(this.fechaI) === Date.parse(this.fechaF)) this.errorMsj.push('Formato de fechas incorrecto. Por favor revise las fechas ingresadas.');
-            if (this.verificacion == true && this.estadistica.length < 1) this.errorMsj.push('Debe almenos seleccionar una estadistica.');
+            if (this.verificacion == true && this.estadistica.length < 1) this.errorMsj.push('Debe almenos seleccionar una estadística.');
             if (this.errorMsj.length) this.error = 1;
             return this.error;
         },
@@ -737,8 +737,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         deleteItem: function deleteItem(item) {
             var me = this;
             swal.fire({
-                title: 'Quieres eliminar esta tarea?',
-                text: "No podras revertir la eliminacion!",
+                title: '¿Quieres eliminar esta tarea?',
+                text: "No podras revertir esta acción",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
@@ -1785,7 +1785,7 @@ var render = function() {
                                                             ),
                                                             [
                                                               _vm._v(
-                                                                "Nueva Tarea"
+                                                                "Nueva tarea"
                                                               )
                                                             ]
                                                           )
@@ -1795,7 +1795,7 @@ var render = function() {
                                                   ],
                                                   null,
                                                   false,
-                                                  304480696
+                                                  1930678616
                                                 ),
                                                 model: {
                                                   value: _vm.dialog,
@@ -1932,7 +1932,7 @@ var render = function() {
                                                                           color:
                                                                             "#668c2d",
                                                                           label:
-                                                                            "Cantidad de Tareas",
+                                                                            "Cantidad de tareas",
                                                                           min:
                                                                             "1",
                                                                           max:
@@ -2350,11 +2350,11 @@ var render = function() {
                                                                     color:
                                                                       _vm.color,
                                                                     label:
-                                                                      "Estadisticas: " +
+                                                                      "Estadísticas: " +
                                                                       (_vm.verificacion ==
                                                                       "1"
                                                                         ? "Mostrar"
-                                                                        : "No Mostrar")
+                                                                        : "No mostrar")
                                                                   },
                                                                   model: {
                                                                     value:
@@ -2393,7 +2393,7 @@ var render = function() {
                                                                           },
                                                                           [
                                                                             _vm._v(
-                                                                              "Configuracion de Estadisticas\n                                                            "
+                                                                              "Configuración de estadísticas\n                                                            "
                                                                             )
                                                                           ]
                                                                         ),
@@ -2450,7 +2450,7 @@ var render = function() {
                                                                       "v-subheader",
                                                                       [
                                                                         _vm._v(
-                                                                          "Asignacion de tareas"
+                                                                          "Asignación de tareas"
                                                                         )
                                                                       ]
                                                                     ),
@@ -2505,7 +2505,7 @@ var render = function() {
                                                                       "v-subheader",
                                                                       [
                                                                         _vm._v(
-                                                                          "Responsables Asignados"
+                                                                          "Responsables asignados"
                                                                         )
                                                                       ]
                                                                     )
@@ -3158,7 +3158,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  "\n            ¡Por favor seleccione proyecto!\n        "
+                  "\n            Por favor seleccione un proyecto\n        "
                 )
               ]
             )

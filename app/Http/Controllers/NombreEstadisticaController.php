@@ -18,7 +18,7 @@ class NombreEstadisticaController extends Controller
             $estadistica=NombreEstadistica::findOrFail($id);
             $estadistica->nombre=$nombre;
             $estadistica->save();
-            return 'Se ha modificado la estadistica correctamente';
+            return 'Se ha modificado la estadística correctamente';
         }catch(\Exception $e){
             $response['error'] = $e->getMessage();
             return response()->json($response, 500);
@@ -27,7 +27,7 @@ class NombreEstadisticaController extends Controller
     public function drop(NombreEstadistica $estadistica){
         try{
             $estadistica->delete();
-            return 'Se ha eliminado la estadistica correctamente';
+            return 'Se ha eliminado la estadística correctamente';
         }catch(\Exception $e){
             $response['error'] = $e->getMessage();
             return response()->json($response, 500);
@@ -40,7 +40,7 @@ class NombreEstadisticaController extends Controller
             $estadistica=new NombreEstadistica;
             $estadistica->nombre=$nombre;
             $estadistica->save();
-            return 'Se ha agregado la estadistica correctamente';
+            return 'Se ha agregado la estadística correctamente';
         }catch(\Exception $e){
             $response['error'] = $e->getMessage();
             return response()->json($response, 500);

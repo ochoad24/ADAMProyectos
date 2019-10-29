@@ -1,7 +1,7 @@
 <template>
     <div class="row user-list">
         <div class="col-lg-12">
-            <b-card header="Tipo de Actividades" header-tag="h4" class="bg-primary-card">
+            <b-card header="Estadísticas" header-tag="h4" class="bg-primary-card">
                 <div class="table-responsive">
                     <v-toolbar flat color="white">
                         <v-text-field v-model="search" append-icon="search" label="Buscar" single-line hide-details>
@@ -9,21 +9,21 @@
                         <v-spacer></v-spacer>
                         <v-dialog v-model="dialog" max-width="600px">
                             <template v-slot:activator="{ on }">
-                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nueva Estadistica</v-btn>
+                                <v-btn color="#668c2d" dark class="mb-2" v-on="on">Nueva estadística</v-btn>
                             </template>
                             <v-card>
                                  <v-toolbar dark color="#668c2d">
                                 <v-btn icon dark @click="dialog2 = false">
                                     <v-icon col="white">clear</v-icon>
                                 </v-btn>
-                                <v-toolbar-title>Nueva estadistica</v-toolbar-title>
+                                <v-toolbar-title>Nueva estadística</v-toolbar-title>
                             </v-toolbar>
 
                                 <v-card-text>
                                     <v-container grid-list-md>
                                         <v-layout wrap>
                                             <v-flex xs12 sm12 md12>
-                                                <v-text-field v-model="editedItem.nombre" label="Nombre de la estadistica" maxlength="20"  required :rules="nameRules" :counter="20">
+                                                <v-text-field v-model="editedItem.nombre" label="Nombre de la estadística" maxlength="20"  required :rules="nameRules" :counter="20">
                                                 </v-text-field>
                                             </v-flex>
                                         </v-layout>
@@ -83,8 +83,8 @@
             search: '',
             dialog: false,
                    nameRules: [
-            v => !!v || 'El nombre de la estadistica no puede estar vacio',
-            v => (v && v.length <= 19) || 'El nombre de la estadistica no puede ser mayor a 20',
+            v => !!v || 'El nombre de la estadística no puede estar vacío',
+            v => (v && v.length <= 19) || 'El nombre de la estadística no puede ser mayor a 20',
 
             ],
             error: 0,
@@ -111,7 +111,7 @@
 
         computed: {
             formTitle() {
-                return this.editedIndex === -1 ? 'Nueva Estadistica' : 'Editar Estadistica'
+                return this.editedIndex === -1 ? 'Nueva Estadística' : 'Editar Estadística'
             }
         },
 
@@ -130,7 +130,7 @@
                 this.error = 0;
                 this.errorMsj = [];
                 if (!this.editedItem.nombre)
-                    this.errorMsj.push('El nombre de la estadistica no puede estar vacio');
+                    this.errorMsj.push('El nombre de la estadística no puede estar vacío');
                 if (this.errorMsj.length)
                     this.error = 1;
                 return this.error;
@@ -154,13 +154,13 @@
             deleteItem(item) {
                 let me=this;
                 swal.fire({
-                    title: 'Quieres eliminar esta estadistica?',
-                    text: "No podras revertir la eliminacion!",
+                    title: '¿Quieres eliminar esta estadística?',
+                    text: "No podras revertir esta acción",
                     type: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Si, Eliminalo!',
+                    confirmButtonText: 'Eliminar',
                     cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.value) {

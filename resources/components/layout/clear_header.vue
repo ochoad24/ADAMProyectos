@@ -24,13 +24,13 @@
                         </template>
                         <v-card>
                             <v-card-title  style="background-color:#668c2d">
-                                <span class="headline" dark style="color:#fff">Seleccione un Proyecto</span>
+                                <span class="headline" dark style="color:#fff">Seleccione un proyecto</span>
                             </v-card-title>
                             <v-card-text>
                                 <v-container grid-list-md>
                                     <v-layout wrap>
                                         <v-flex xs12 sm12 md12>
-                                                <multiselect v-model="proyecto" :options="proyectos" placeholder="Seleccione un Proyecto" label="nombre" track-by="nombre"></multiselect>
+                                                <multiselect v-model="proyecto" :options="proyectos" placeholder="Seleccione un proyecto" label="nombre" track-by="nombre"></multiselect>
                                         </v-flex>
                                     </v-layout>
                                 </v-container>

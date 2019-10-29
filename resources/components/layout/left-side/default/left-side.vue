@@ -31,22 +31,22 @@
                     </vmenu-item>
                     <hr v-if="this.$store.state.user.role==0">
                     <vmenu-item link="/CrearProyecto" icon="fa fa-fw fa-plus-square" v-if="this.$store.state.user.role==0">
-                        Crear Nuevo Proyecto
+                        Crear nuevo proyecto
                     </vmenu-item>
                     <hr v-if="this.$store.state.user.role==0">
                    
                     <vsub-menu title="Administrar proyectos" icon="fa fa-fw fa-stack-overflow" class="menufold-bottom" v-if="this.$store.state.user.role==0"> 
                         <vmenu-item link="/Proyectos" icon="fa fa-fw fa-sitemap">
-                            Editar proyectos
+                            Proyectos
                         </vmenu-item>
                         <vmenu-item link="/Actividades" icon="fa fa-fw fa-code-fork">
-                            Editar actividades
+                            Actividades
                         </vmenu-item>
                         <vmenu-item link="/Tarea" icon="fa fa-fw fa-spinner">
-                            Editar tareas
+                            Tareas
                         </vmenu-item>
                         <vmenu-item link="/Organizaciones" icon="fa fa-fw fa-globe">
-                            Editar organizaciones
+                            Organizaciones
                         </vmenu-item>
                     </vsub-menu>
                     <hr v-if="this.$store.state.user.role==0">
@@ -65,7 +65,7 @@
                   
                     <vsub-menu title="Ajustes" icon="fa fa-fw fa-gear" class="menufold-bottom" v-if="this.$store.state.user.role==0">
                         <vmenu-item link="/Estadistica" icon="fa fa-fw fa-paste">
-                            Estadisticas
+                            Estadísticas
                         </vmenu-item>
                     </vsub-menu>
                     <hr v-if="this.$store.state.user.role==0">

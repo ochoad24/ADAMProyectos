@@ -1744,7 +1744,7 @@ var render = function() {
       _vm._v(" "),
       _c("img", {
         staticClass: "image_mobile",
-        attrs: { src: "img/login-m.jpg", alt: "" }
+        attrs: { src: "img/mobile.jpg", alt: "" }
       })
     ]),
     _vm._v(" "),

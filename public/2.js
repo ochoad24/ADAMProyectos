@@ -659,7 +659,7 @@ var render = function() {
                                     staticStyle: { color: "#fff" },
                                     attrs: { dark: "" }
                                   },
-                                  [_vm._v("Seleccione un Proyecto")]
+                                  [_vm._v("Seleccione un proyecto")]
                                 )
                               ]
                             ),
@@ -689,7 +689,7 @@ var render = function() {
                                               attrs: {
                                                 options: _vm.proyectos,
                                                 placeholder:
-                                                  "Seleccione un Proyecto",
+                                                  "Seleccione un proyecto",
                                                 label: "nombre",
                                                 "track-by": "nombre"
                                               },
@@ -1863,7 +1863,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                    Crear Nuevo Proyecto\n                "
+                        "\n                    Crear nuevo proyecto\n                "
                       )
                     ]
                   )
@@ -1892,7 +1892,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Editar proyectos\n                    "
+                            "\n                        Proyectos\n                    "
                           )
                         ]
                       ),
@@ -1907,7 +1907,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Editar actividades\n                    "
+                            "\n                        Actividades\n                    "
                           )
                         ]
                       ),
@@ -1919,7 +1919,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Editar tareas\n                    "
+                            "\n                        Tareas\n                    "
                           )
                         ]
                       ),
@@ -1934,7 +1934,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Editar organizaciones\n                    "
+                            "\n                        Organizaciones\n                    "
                           )
                         ]
                       )
@@ -2002,7 +2002,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        Estadisticas\n                    "
+                            "\n                        Estadísticas\n                    "
                           )
                         ]
                       )

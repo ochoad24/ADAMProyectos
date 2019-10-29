@@ -1177,7 +1177,7 @@ var render = function() {
                                             [
                                               _vm._v(" "),
                                               _c("span", [
-                                                _vm._v("Generar Reporte")
+                                                _vm._v("Generar reporte")
                                               ])
                                             ]
                                           )
@@ -1215,7 +1215,7 @@ var render = function() {
                               ],
                               null,
                               false,
-                              1958495966
+                              274702526
                             )
                           })
                         ],

@@ -120,7 +120,7 @@ class AuthController extends Controller
     protected function sendResetLinkResponse(Request $request, $response)
     {
         return response()->json([
-            'message' => 'Se ha enviado el correo electrónico de restablecimiento de contraseña.',
+            'message' => 'Se ha enviado el correo electrónico para restablecer la contraseña.',
             'data' => $response
         ]);
     }
@@ -134,7 +134,7 @@ class AuthController extends Controller
      */
     protected function sendResetLinkFailedResponse(Request $request, $response)
     {
-        return response()->json(['message' => 'No se pudo enviar el correo electrónico a esta dirección de correo electrónico.']);
+        return response()->json(['message' => 'No se pudo enviar el correo electrónico a esta dirección.']);
     }
 
     /**
@@ -168,7 +168,7 @@ class AuthController extends Controller
      */
     protected function sendResetResponse(Request $request, $response)
     {
-        return response()->json(['message' => 'Restablecimiento de contraseña exitosamente.']);
+        return response()->json(['message' => 'Restablecimiento de contraseña exitoso.']);
     }
 
     /**
@@ -180,7 +180,7 @@ class AuthController extends Controller
      */
     protected function sendResetFailedResponse(Request $request, $response)
     {
-        return response()->json(['message' => 'Fallido, Token inválido.']);
+        return response()->json(['message' => 'Fallido, token inválido.']);
     }
     public function ChangePassword(Request $request){
         $user = User::findOrFail($request->id);

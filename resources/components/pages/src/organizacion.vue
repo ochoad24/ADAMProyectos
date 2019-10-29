@@ -102,12 +102,12 @@
         data: () => ({
             dialog: false,
                ornameRules: [
-            v => !!v || 'El nombre de la organizacion no puede estar vacio',
+            v => !!v || 'El nombre de la organizacion no puede estar vacío',
             v => (v && v.length <= 149) || 'El titulo del proyecto no puede ser mayor a 150',
 
             ],
              munnameRules: [
-            v => !!v || 'El nombre del municipio no puede estar vacio',
+            v => !!v || 'El nombre del municipio no puede estar vacío',
             v => (v && v.length <= 149) || 'El nombre del municipio no puede ser mayor a 150',
 
             ],
@@ -178,7 +178,7 @@
                 this.error = 0;
                 this.errorMsj = [];
                 if (!this.nombre)
-                    this.errorMsj.push('El nombre de la organización no puede estar vacio');
+                    this.errorMsj.push('El nombre de la organización no puede estar vacío');
                 if (!this.municipio)
                     this.errorMsj.push('El municipio no puede estar vacío');
                 if (this.select.length > 0)

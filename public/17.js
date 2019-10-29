@@ -497,7 +497,7 @@ var render = function() {
                                             _c("v-text-field", {
                                               attrs: {
                                                 type: "email",
-                                                label: "Ingrese su email"
+                                                label: "Email"
                                               },
                                               model: {
                                                 value: _vm.editedItem.usuario,
@@ -528,7 +528,7 @@ var render = function() {
                                             _c("v-select", {
                                               attrs: {
                                                 items: _vm.roles,
-                                                label: "Seleccione un Rol"
+                                                label: "Seleccione un rol"
                                               },
                                               model: {
                                                 value: _vm.idRol,
