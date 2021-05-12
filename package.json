@@ -41,7 +41,7 @@
         "bootstrap-vue": "^2.0.0-rc.14",
         "bootstrapValidator": "https://github.com/nghuuphuoc/bootstrapvalidator.git",
         "card": "^2.4.0",
-        "chart.js": "2.3.0",
+        "chart.js": "2.9.4",
         "chartist": "^0.11.0",
         "clockface": "https://github.com/jetapps-eu/clockface.git",
         "clockpicker": "^0.0.7",
