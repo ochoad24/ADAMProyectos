@@ -58,7 +58,7 @@
         "fuse.js": "^3.2.0",
         "granim": "^1.1.0",
         "gridforms": "^1.0.6",
-        "handsontable": "^6.0.1",
+        "handsontable": "^10.0.0",
         "hchs-vue-charts": "^1.2.8",
         "hover.css": "^2.3.0",
         "ihover": "https://github.com/gudh/ihover.git",
